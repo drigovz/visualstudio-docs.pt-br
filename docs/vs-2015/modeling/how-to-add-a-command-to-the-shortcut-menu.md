@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300889"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850410"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300889"
 
 3. [Escreva métodos na classe commandSet](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando faça.
 
-   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](https://www.visualstudio.com/).
 
 > [!NOTE]
 > Também é possível modificar o comportamento de alguns comandos existentes, tais como Recortar, Colar, Selecionar Tudo e Imprimir substituindo métodos em CommandSet.cs. Para obter mais informações, consulte [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)

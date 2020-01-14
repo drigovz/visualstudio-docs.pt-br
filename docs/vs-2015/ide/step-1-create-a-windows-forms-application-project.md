@@ -9,19 +9,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295791"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851604"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de aplicativo do Windows Forms.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Para criar um projeto de aplicativo do Windows Forms
 

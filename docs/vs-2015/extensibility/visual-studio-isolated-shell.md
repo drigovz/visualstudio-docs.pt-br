@@ -14,24 +14,24 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 36491d9d590a45256e297654f71652ab5de5cd98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299728"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919198"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolado do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Shell isolado do Visual Studio permite que você crie aplicativos autônomos que podem ser executados lado a lado com outras versões do Visual Studio. Ele é usado principalmente para hospedar ferramentas especializadas que podem usar os serviços do Visual Studio, mas também ter uma aparência e marca personalizadas. Os recursos do Visual Studio e os grupos de comandos de menu podem ser ativados e desativados facilmente. Os títulos de aplicativos, os ícones de aplicativos e as telas de abertura são totalmente personalizáveis. Para obter uma lista de recursos personalizáveis, consulte [Personalizando o Shell isolado](../extensibility/customizing-the-isolated-shell.md).  
+O shell isolado do Visual Studio permite criar aplicativos autônomos que podem ser executados lado a lado com outras versões do Visual Studio. Ele é usado principalmente para hospedar ferramentas especializadas que podem usar os serviços do Visual Studio, mas também ter uma aparência e marca personalizadas. Os recursos do Visual Studio e os grupos de comandos de menu podem ser ativados e desativados facilmente. Os títulos de aplicativos, os ícones de aplicativos e as telas de abertura são totalmente personalizáveis. Para obter uma lista de recursos personalizáveis, consulte [Personalizando o Shell isolado](../extensibility/customizing-the-isolated-shell.md).  
   
  Para trabalhar com um projeto de shell isolado, você deve instalar o SDK do Visual Studio. A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Para criar um aplicativo de shell isolado, comece com um projeto isolado do shell do Visual Studio. Este projeto contém tudo o que você precisa para desenvolver e testar seu próprio aplicativo de shell isolado. Quando estiver pronto para escrever o programa de instalação que implanta seu aplicativo, você deverá obter o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote redistribuível](https://go.microsoft.com/fwlink/?LinkId=616022).  
+ Para criar um aplicativo de shell isolado, comece com um projeto isolado do shell do Visual Studio. Este projeto contém tudo o que você precisa para desenvolver e testar seu próprio aplicativo de shell isolado. Quando estiver pronto para escrever o programa de instalação que implanta seu aplicativo, você deverá obter o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote redistribuível](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
-> Antes de poder acessar o pacote redistribuível do Shell isolado, você será solicitado a preencher uma breve pesquisa do cliente.  Depois de preencher a pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download de pacote redistribuível.  Você pode encontrar os links de download em visitas posteriores ao site do Visual Studio Connect na guia  **&#124; programas Visual Studio 2015 integrado e Shell isolado** .  
+> Antes de poder acessar o pacote redistribuível do Shell isolado, você será solicitado a preencher uma breve pesquisa do cliente.  Após o preenchimento da pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download para pacotes redistribuíveis.  Você pode encontrar os links de download em visitas posteriores ao site do Visual Studio Connect na guia  **&#124; programas Visual Studio 2015 integrado e Shell isolado** .  
   
 > [!NOTE]
 > Para obter mais informações sobre como implantar um aplicativo baseado em shell isolado, consulte [Walkthrough: Criando um aplicativo de shell isolado básico](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
@@ -56,12 +56,12 @@ O Shell isolado do Visual Studio permite que você crie aplicativos autônomos q
   
 |Categoria de Recurso|Recurso|  
 |----------------------|-------------|  
-|Recursos do IDE|Configurações de importação/exportação<br /><br /> Instalador de controle de caixa de ferramentas<br /><br /> Lista de Tarefas & Lista de Erros<br /><br /> Janela Saída<br /><br /> Start Page<br /><br /> Janela Propriedades<br /><br /> Caixa de ferramentas<br /><br /> Gerenciador de Soluções<br /><br /> Janela de Indicadores<br /><br /> Modo de exibição de classe<br /><br /> Navegador de objeto<br /><br /> Janela Comando<br /><br /> {1&gt;Estrutura de Tópicos de Documento&lt;1}<br /><br /> Modo de Exibição de Recursos<br /><br /> Ferramenta externa<br /><br /> Windows Communication Foundation (WCF) Adicionar Referência de Serviço<br /><br /> Suporte para LINQ (consulta integrada à linguagem)|  
-|Editor/Designer|Ferramentas de navegação de código (localização unificada, definição de origem, herança)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gerenciador de Snippets de Código<br /><br /> Snippets de código<br /><br /> Refatoração<br /><br /> Lista de estilos<br /><br /> Filtragem do IntelliSense<br /><br /> Janela de definição de código<br /><br /> Designer de aplicativos<br /><br /> Designer de Formulários do Windows<br /><br /> Designer de Windows Presentation Foundation (WPF)|  
-|Depuração|C#Avaliador de expressão<br /><br /> Depuração local<br /><br /> Depuração gerenciada<br /><br /> Editar e Continuar<br /><br /> Depuração entre threads<br /><br /> Visualizações<br /><br /> DataTips<br /><br /> Depuração nativa<br /><br /> Depuração de scripts<br /><br /> Depuração de interoperabilidade<br /><br /> Depuração Just-in-time (JIT)<br /><br /> Depuração de vários processos<br /><br /> Depuração de XSLT<br /><br /> Anexar ao processo local<br /><br /> Pontos de rastreamento<br /><br /> Restrições de ponto de interrupção|  
+|Recursos do IDE|Configurações de importação/exportação<br /><br /> Instalador de controle de caixa de ferramentas<br /><br /> Lista de Tarefas & Lista de Erros<br /><br /> Janela Saída<br /><br /> Página inicial<br /><br /> Janela de Propriedades<br /><br /> Caixa de ferramentas<br /><br /> Gerenciador de soluções<br /><br /> Janela de Indicadores<br /><br /> Modo de exibição de classe<br /><br /> Navegador de objeto<br /><br /> Janela Comando<br /><br /> {1&gt;Estrutura de Tópicos de Documento&lt;1}<br /><br /> Modo de Exibição de Recursos<br /><br /> Ferramenta externa<br /><br /> Windows Communication Foundation (WCF) Adicionar Referência de Serviço<br /><br /> Suporte para LINQ (consulta integrada à linguagem)|  
+|Editor/Designer|Ferramentas de navegação de código (localização unificada, definição de origem, herança)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gerenciador de Snippets de Código<br /><br /> Snippets de código<br /><br /> Refatoração<br /><br /> Lista de estilos<br /><br /> Filtragem do IntelliSense<br /><br /> Janela de Definição de Código<br /><br /> Designer de aplicativos<br /><br /> Designer de Formulários do Windows<br /><br /> Designer de Windows Presentation Foundation (WPF)|  
+|{1&gt;Depuração&lt;1}|C#Avaliador de expressão<br /><br /> Depuração local<br /><br /> Depuração gerenciada<br /><br /> {1&gt;Editar e Continuar&lt;1}<br /><br /> Depuração entre threads<br /><br /> Visualizações<br /><br /> DataTips<br /><br /> Depuração nativa<br /><br /> Depuração de scripts<br /><br /> Depuração de interoperabilidade<br /><br /> Depuração Just-in-time (JIT)<br /><br /> Depuração de vários processos<br /><br /> Depuração de XSLT<br /><br /> Anexar ao processo local<br /><br /> Pontos de rastreamento<br /><br /> Restrições de ponto de interrupção|  
 |Dados|Gerenciador de Servidores (somente dados simplificados)<br /><br /> Associação de dados a dados locais (. MDF ou. MDB<br /><br /> Vinculação de dados ao objeto<br /><br /> Associação de dados ao serviço Web<br /><br /> Conjunto completo de controles de dados<br /><br /> Editor de XML<br /><br /> Ligação de dados com o servidor de banco local<br /><br /> janela Fontes de Dados|  
-|Web|Editor de HTML<br /><br /> Navegador da Web<br /><br /> O Web Forms designer<br /><br /> Projeto de site<br /><br /> Projeto de aplicativo Web|  
+|Web|{1&gt;Editor de HTML&lt;1}<br /><br /> Navegador da Web<br /><br /> O Web Forms designer<br /><br /> Projeto de site<br /><br /> Projeto de aplicativo Web|  
 |Extensibilidade|Consome componentes VSPackages e MEF|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Shell (isolado ou integrado)](../extensibility/shell-isolated-or-integrated.md)

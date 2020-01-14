@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0839c69a95df4419781ece2a163071ae0e3e6930
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293691"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915649"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
 Quando você precisa solucionar problemas de uma máquina virtual ou serviço de nuvem do Azure, pode usar o Visual Studio para configurar mais facilmente o Diagnóstico do Azure. O diagnóstico captura dados do sistema e dados de log em máquinas virtuais e instâncias de máquinas virtuais que executam o serviço de nuvem. Dados de diagnóstico são transferidos para uma conta de armazenamento que você escolhe. Para obter mais informações sobre o registro em log de diagnóstico no Azure, consulte [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -38,7 +38,7 @@ A cadeia de conexão funciona de maneira diferente de algumas maneiras principai
 * No SDK do Azure 2.4 e anteriores, a cadeia de conexão é usada como um runtime pelo plug-in de diagnóstico para obter as informações de conta de armazenamento para transferir os logs de diagnóstico.
 * No SDK do Azure 2.6 e posteriores, o Visual Studio usa a cadeia de conexão de diagnóstico para configurar a Extensão de Diagnóstico do Azure com as informações da conta de armazenamento apropriadas durante a publicação. Você pode usar a cadeia de conexão para definir diferentes contas de armazenamento para diferentes configurações de serviço que o Visual Studio usa durante a publicação. No entanto, como o plug-in de diagnóstico não está disponível (após o SDK do Azure 2.5), o arquivo .cscfg sozinho por si só não é capaz de configurar a extensão de diagnóstico. Você deve configurar a extensão separadamente usando ferramentas como Visual Studio ou PowerShell.
 * Para simplificar o processo de configuração da extensão de diagnóstico usando o PowerShell, a saída do pacote do Visual Studio inclui o XML de configuração pública para a extensão de diagnóstico para cada função. O Visual Studio usa a cadeia de conexão de diagnóstico para preencher as informações da conta de armazenamento na configuração pública. Os arquivos de configuração pública são criados na pasta Extensões. Os arquivos de configuração pública usam o padrão de nomenclatura PaaSDiagnostics.&lt;nome da função\>.PubConfig.xml. Quaisquer implantações baseadas em PowerShell podem usar esse padrão para mapear cada configuração para uma função.
-* O [portal do Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040) usa a cadeia de conexão no arquivo .cscfg para acessar os dados de diagnóstico. Os dados são exibidos na guia **monitoramento** . A cadeia de conexão é necessária para definir o serviço para mostrar dados de monitoramento detalhados no Portal.
+* O [portal do Azure](https://portal.azure.com/) usa a cadeia de conexão no arquivo .cscfg para acessar os dados de diagnóstico. Os dados são exibidos na guia **monitoramento** . A cadeia de conexão é necessária para definir o serviço para mostrar dados de monitoramento detalhados no Portal.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migre projetos para o SDK do Azure 2.6 e posteriores
 Ao migrar do SDK do Azure 2.5 para o SDK do Azure 2.6 ou posterior, se você tiver uma conta de armazenamento de diagnóstico especificada no arquivo .wadcfgx, a conta de armazenamento permanecerá naquele arquivo. Para aproveitar a flexibilidade de usar diferentes contas de armazenamento para diferentes configurações de armazenamento, adicione manualmente a cadeia de conexão ao seu projeto. Se estiver migrando um projeto do SDK do Azure 2.4 ou anterior para o SDK do Azure 2.6, as cadeias de conexão de diagnóstico preservadas. No entanto, observe as alterações em como cadeias de caracteres de conexão são tratadas no SDK do Azure 2.6, descritas na seção anterior.
@@ -82,7 +82,7 @@ No Visual Studio, você pode coletar dados de diagnóstico para funções execut
    * Se você selecionar **Emulador de armazenamento do Microsoft Azure**, a cadeia de conexão será definida como `UseDevelopmentStorage=true`.
    * Se você selecionar **Sua assinatura**, você poderá selecionar a assinatura do Azure que você deseja usar e digitar um nome de conta. Para gerenciar suas assinaturas do Azure, selecione **Gerenciar Contas**.
    * Se você selecionar **Credenciais inseridas manualmente**, digite o nome e a chave da conta do Azure que você deseja usar.
-5. Para exibir a caixa de diálogo **Configuração de diagnóstico**, selecione **Configurar**. Exceto por **Geral** e **Diretórios de log**, cada guia representa uma fonte de dados de diagnóstico que você pode coletar. A guia **geral** padrão oferece as seguintes opções de coleta de dados de diagnóstico: **somente erros**, **todas as informações**e **plano personalizado**. A opção padrão **Somente erros** usa a menor quantidade de armazenamento porque não transfere avisos nem mensagens de rastreamento. A opção **Todas as informações** transfere a maioria das informações, usa o máximo de armazenamento e, portanto, é a opção mais cara.
+5. Para exibir a caixa de diálogo **Configuração de diagnóstico**, selecione **Configurar**. Exceto por **Geral** e **Diretórios de log**, cada guia representa uma fonte de dados de diagnóstico que você pode coletar. A guia padrão **Geral** oferece as seguintes opções de coleta de dados de diagnóstico: **Somente erros**, **Todas as informações** e **Plano personalizado**. A opção padrão **Somente erros** usa a menor quantidade de armazenamento porque não transfere avisos nem mensagens de rastreamento. A opção **Todas as informações** transfere a maioria das informações, usa o máximo de armazenamento e, portanto, é a opção mais cara.
 
    > [!NOTE]
    > Tamanho mínimo com suporte para "Cota de disco em MB" é de 4GB. No entanto, se você estiver coletando os despejos de memória, aumente isso para um valor mais alto, como 10GB.
@@ -110,7 +110,7 @@ No Visual Studio, você pode coletar dados de diagnóstico para máquinas virtua
     ![Instalar uma extensão de máquina virtual do Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Outras extensões de diagnóstico estão disponíveis para as máquinas virtuais. Para obter mais informações, consulte [Recursos e extensões da máquina virtual para Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Outras extensões de diagnóstico estão disponíveis para as máquinas virtuais. Para obter mais informações, consulte [Recursos e extensões da máquina virtual para Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Para adicionar a extensão e exibir sua caixa de diálogo **Configuração de diagnóstico**, selecione **Adicionar**.
@@ -120,7 +120,7 @@ No Visual Studio, você pode coletar dados de diagnóstico para máquinas virtua
 
     ![Habilitar a configuração e diagnóstico do Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    A guia padrão, **geral**, oferece as seguintes opções de coleta de dados de diagnóstico: **somente erros**, **todas as informações**e **plano personalizado**. A opção padrão, **Somente erros**, traz a menor quantidade de armazenamento porque não transfere avisos ou mensagens de rastreamento. A opção **Todas as informações** transfere a maioria das informações e é, portanto, a opção mais cara em termos de armazenamento.
+    A guia padrão, **Geral**, oferece as seguintes opções de coleta de dados de diagnóstico: **Somente erros**, **Todas as informações** e **Plano personalizado**. A opção padrão, **Somente erros**, traz a menor quantidade de armazenamento porque não transfere avisos ou mensagens de rastreamento. A opção **Todas as informações** transfere a maioria das informações e é, portanto, a opção mais cara em termos de armazenamento.
 7. Neste exemplo, selecione a opção **Plano personalizado** , assim você pode personalizar os dados coletados.
 8. A caixa **Cota de disco em MB** especifica a quantidade de espaço que você deseja alocar na sua conta de armazenamento para dados de diagnóstico. Você pode alterar o valor padrão se desejar.
 9. Em cada guia de dados de diagnóstico que você deseja coletar, selecione a caixa de seleção **Habilitar Transferência de \<tipo de log\>** .
@@ -196,7 +196,7 @@ Os processos que estão sendo rastreados no momento são listados na seguinte ca
 
 ![Despejos de falhas](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Para obter mais informações, consulte [assuma o controle de log e rastreamento no Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [diagnóstico do Microsoft Azure parte 4: componentes de registro em log personalizados e diagnóstico do Azure alterações 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Para obter mais informações, consulte [Tomar controle do registro em log e rastreamento no Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Diagnóstico do Microsoft Azure parte 4: componentes de registro de log personalizados e alterações do Diagnóstico do Azure 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Exibir os dados de diagnóstico
 Depois de coletar os dados de diagnóstico para um serviço de nuvem ou uma máquina virtual, você poderá exibi-los.
@@ -273,8 +273,8 @@ O período de transferência é a quantidade de tempo que decorreu as capturas d
 
 Os carimbos de data/hora estão no fuso horário local do data center que hospeda o serviço de nuvem. As três colunas de carimbo de data/hora a seguir nas tabelas de log são usadas:
 
-* **PreciseTimeStamp**: o carimbo de data/hora ETW do evento. Ou seja, a hora em que o evento é registrado no cliente.
-* **Timestamp**: o valor de **PreciseTimeStamp** arredondado para baixo até o limite de frequência de carregamento. Portanto, se a frequência de upload for de 5 minutos e a hora do evento for 00:17:12, TIMESTAMP será 00:15:00.
+* **PreciseTimeStamp**: o carimbo de data/hora de ETW do evento. Ou seja, a hora em que o evento é registrado no cliente.
+* **TIMESTAMP**: o valor para **PreciseTimeStamp** arredondado para baixo até o limite de frequência de upload. Portanto, se a frequência de upload for de 5 minutos e a hora do evento for 00:17:12, TIMESTAMP será 00:15:00.
 * **Timestamp**: o carimbo de data/hora em que a entidade foi criada na tabela do Azure.
 
 **Como gerenciar custos ao coletar informações de diagnóstico?**
@@ -285,7 +285,7 @@ As configurações padrão (**Nível de log** definido como **Erro** e **Períod
 
 Por padrão, o IIS não coleta logs de solicitação com falha. Você pode configurar o IIS para coletar logs de solicitação com falha editando o arquivo web.config para sua função web.
 
-**Não estou obtendo informações de rastreamento de métodos RoleEntryPoint como OnStart. Qual é o problema?**
+**Não estou obtendo informações de rastreamento de métodos RoleEntryPoint como OnStart. O que está errado?**
 
 Os métodos de **RoleEntryPoint** são chamados no contexto de WAIISHost.exe, não em IIS. As informações de configuração no web.config que normalmente habilitam o rastreamento não se aplicam. Para resolver esse problema, adicione um arquivo .config ao seu projeto de função web e nomeie o arquivo para corresponder ao assembly de saída que contém o código **RoleEntryPoint**. No projeto de função Web padrão, o nome do arquivo. config deve ser WAIISHost. exe. config. Adicione as seguintes linhas a este arquivo:
 
@@ -303,5 +303,5 @@ Os métodos de **RoleEntryPoint** são chamados no contexto de WAIISHost.exe, n�
 
 Na janela **Propriedades**, defina a propriedade **Copiar para Diretório de Saída** como **Copiar sempre**.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Para saber mais sobre o registro em log de diagnósticos no Azure, consulte [Habilitar o diagnóstico em máquinas virtuais e Serviços de Nuvem do Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics) e [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).

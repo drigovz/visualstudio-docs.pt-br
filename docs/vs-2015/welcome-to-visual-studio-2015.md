@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 53e3c5fe30acf3221d52b0f6bd0e85aa9bb01085
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537955"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851200"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 >
 > Clique aqui para obter as notas de versão do [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Baixe o [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para começar a codificar agora mesmo. Se desejar fazer desenvolvimento multiplataforma, não deixe de instalar os pacotes opcionais. (Você pode obter mais recursos com [outras edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/).)
+ Baixe o [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) gratuitamente para começar a codificar agora mesmo. Se desejar fazer desenvolvimento multiplataforma, não deixe de instalar os pacotes opcionais. (Você pode obter mais recursos com [outras edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/).)
 
  Vá diretamente, crie um novo projeto e comece a escrever código. Escolha o tipo de aplicativo que você deseja criar. Ou você pode [fazer um tour](./ide/visual-studio-ide.md) pelo IDE do Visual Studio para se familiarizar com as ferramentas.
 
@@ -84,7 +84,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 ### <a name="build-your-app"></a>Compile seu aplicativo
  Você pode [compilar seu aplicativo localmente](./ide/compiling-and-building-in-visual-studio.md) e verificar se ele funciona de maneira correta. Em seguida, use as [ferramentas de depuração](./debugger/debugging-in-visual-studio.md) para corrigir os problemas com o aplicativo. Ou você pode compilar projetos em servidores de builds compartilhados ou na nuvem. Automatize o processo do build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito.
 
-### <a name="test-your-app"></a>Testar seu aplicativo
+### <a name="test-your-app"></a>Testar o app
  [Crie testes de unidade](./test/unit-test-your-code.md) para melhorar a qualidade do aplicativo. Esses testes podem ser executados sempre que você faz check-in e como parte do seu build.
 
  Planeje, crie e execute testes manuais e automatizados para seu aplicativo. Os planos, os conjuntos, os casos e os resultados de teste são armazenados na nuvem com o Visual Studio Team Services ou localmente com o Team Foundation Server. Saiba mais sobre como [testar o aplicativo](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).

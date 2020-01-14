@@ -11,28 +11,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb35e807c467b64a89f48705c555d4083ceef7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08005b69a1af16b07212cb29547875fad89e1d6a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328851"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848948"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarquias no Visual Studio
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) exibe um projeto como um *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, onde cada nó tem um conjunto de propriedades associadas. Um *hierarquia de projeto* é um contêiner que mantém os itens do projeto, as relações dos itens e propriedades associadas dos itens e comandos.
+O ambiente de desenvolvimento integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) exibe um projeto como uma *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, em que cada nó tem um conjunto de propriedades associadas. Uma *hierarquia de projeto* é um contêiner que contém os itens do projeto, as relações dos itens e as propriedades e os comandos associados aos itens.
 
- Na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você gerencia hierarquias de projeto usando a interface de hierarquia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface redireciona você invocar de itens de projeto para a janela de hierarquia apropriada, em vez do manipulador de comandos padrão de comandos.
+ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você gerencia hierarquias de projeto usando a interface de hierarquia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. A interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> redireciona os comandos que você invoca dos itens de projeto para a janela de hierarquia apropriada em vez do manipulador de comandos padrão.
 
 ## <a name="project-hierarchies"></a>Hierarquias de projeto
- Cada hierarquia do projeto contém itens que você pode exibir e editar. Esses itens variam dependendo do tipo de projeto. Por exemplo, um projeto de banco de dados pode conter procedimentos armazenados, exibições de banco de dados e tabelas de banco de dados. Um projeto de linguagem de programação, por outro lado, provavelmente incluirá arquivos de origem e arquivos de recurso para caixas de diálogo e bitmaps. Hierarquias podem ser aninhadas, que oferece alguns maior flexibilidade quando você cria uma hierarquia do projeto.
+ Cada hierarquia de projeto contém itens que você pode exibir e editar. Esses itens variam de acordo com o tipo de projeto. Por exemplo, um projeto de banco de dados pode conter procedimentos armazenados, exibições de banco de dados e tabelas de banco de dados. Um projeto de linguagem de programação, por outro lado, provavelmente incluirá arquivos de origem e arquivos de recursos para bitmaps e caixas de diálogo. As hierarquias podem ser aninhadas, o que oferece uma flexibilidade adicional quando você cria uma hierarquia de projeto.
 
- Quando você cria um novo tipo de projeto, o tipo de projeto controla o conjunto completo de itens que podem ser editadas nele. No entanto, os projetos podem conter itens para os quais não têm suporte de edição. Por exemplo, os projetos do Visual C++ podem conter arquivos HTML, mesmo que o Visual C++ não fornece qualquer editor personalizado para o tipo de arquivo HTML.
+ Quando você cria um novo tipo de projeto, o tipo de projeto controla o conjunto completo de itens que podem ser editados nele. No entanto, os projetos podem conter itens para os quais não têm suporte para edição. Por exemplo, os C++ projetos visuais podem conter arquivos HTML, embora o C++ Visual não forneça nenhum editor personalizado para o tipo de arquivo HTML.
 
- Hierarquias de gerenciam a persistência dos itens que contidos nelas. A implementação da hierarquia deve controlar as propriedades especiais que afetam a persistência dos itens dentro da hierarquia. Por exemplo, se os itens representam os objetos em um repositório em vez de arquivos, a implementação de hierarquia deve controlar a persistência desses objetos. O próprio IDE direciona a hierarquia para salvar os itens em conformidade com a entrada do usuário, mas o IDE não controla as ações necessárias para salvar esses itens. Em vez disso, o projeto está no controle.
+ As hierarquias gerenciam a persistência dos itens que elas contêm. A implementação da hierarquia deve controlar todas as propriedades especiais que afetam a persistência dos itens dentro da hierarquia. Por exemplo, se os itens representam objetos em um repositório em vez de arquivos, a implementação da hierarquia deve controlar a persistência desses objetos. O IDE em si direciona a hierarquia para salvar os itens em conformidade com a entrada do usuário, mas o IDE não controla as ações necessárias para salvar esses itens. Em vez disso, o projeto está no controle.
 
- Quando um usuário abre um item em um editor, a hierarquia que controla esse item é selecionada e se torna a hierarquia do Active Directory. A hierarquia selecionada determina o conjunto de comandos disponíveis para atuar no item. Acompanhamento de foco do usuário dessa maneira permite que a hierarquia refletir o contexto do usuário atual.
+ Quando um usuário abre um item em um editor, a hierarquia que controla esse item é selecionada e torna-se a hierarquia ativa. A hierarquia selecionada determina o conjunto de comandos disponíveis para agir no item. Controlar o foco do usuário dessa maneira permite que a hierarquia reflita o contexto atual do usuário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tipos de projeto](../../extensibility/internals/project-types.md)
 - [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Exemplos de VSSDK](https://aka.ms/vs2015sdksamples)
+- [Exemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

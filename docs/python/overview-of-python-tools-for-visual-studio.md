@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061159"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845665"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -56,7 +56,7 @@ A janela **Ambientes do Python** do Visual Studio (mostrada abaixo em uma exibi�
 
 Use o comando **Abrir janela interativa** para executar o Python de maneira interativa no contexto do Visual Studio. Use o comando **Abrir no PowerShell** para abrir uma janela Comando separada na pasta do ambiente selecionado. Nessa janela Comando, você pode executar qualquer script de Python.
 
-Para saber mais:
+Para obter mais informações: ,
 
 - [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
 - [Referência aos ambientes do Python](python-environments-window-tab-reference.md)
@@ -67,7 +67,7 @@ O Visual Studio oferece um editor de Python de primeira classe, incluindo colora
 
 ![Preenchimento de código para código Python no Visual Studio](media/code-editing-completions-simple.png)
 
-Para saber mais:
+Para obter mais informações: ,
 
 - Docs: [Editar o código Python](editing-python-code-in-visual-studio.md)
 - Docs: [Formatar o código](formatting-python-code.md)
@@ -85,7 +85,7 @@ O Visual Studio também fornece uma forte integração entre o editor de código
 
 O Visual Studio também é compatível com IPython/Jupyter no REPL, incluindo gráficos embutidos, .NET e WPF (Windows Presentation Foundation).
 
-Para saber mais:
+Para obter mais informações: ,
 
 - [Janela Interativa](python-interactive-repl-in-visual-studio.md)
 - [IPython no Visual Studio](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Modelos de projeto e de item automatizam o processo de configuração de diferen
 
 [![Modelos de projeto e de item do Python no Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-Para saber mais:
+Para obter mais informações: ,
 
 - Docs: [Gerenciar projetos Python](managing-python-projects-in-visual-studio.md)
 - Documentos: [referência de modelos de item](python-item-templates.md)
@@ -124,7 +124,7 @@ Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python es
 No Visual Studio 2019, é possível executar e depurar código sem a necessidade de um arquivo de projeto do Visual Studio. Consulte [início rápido: Abra e execute o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md) para obter um exemplo.
 ::: moniker-end
 
-Para saber mais:
+Para obter mais informações: ,
 
 - Docs: [Depurar o Python](debugging-python-in-visual-studio.md)
 - Docs: [Depuração de modo misto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,7 +137,7 @@ A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Vi
 
 [![Resultados do criador de perfil do Visual Studio para um projeto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-Para saber mais:
+Para obter mais informações: ,
 
 - Docs: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
 - Docs de recursos gerais do Visual Studio: [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
@@ -148,7 +148,7 @@ Descubra, execute e gerencie testes no **Gerenciador de Testes** do Visual Studi
 
 ![Depurando um teste de unidade do Python no Visual Studio](media/unit-test-debugging.png)
 
-Para saber mais:
+Para obter mais informações: ,
 
 - Docs: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
 - Docs de recursos gerais do Visual Studio: [Execute teste de unidade no código](../test/unit-test-your-code.md).
@@ -194,7 +194,7 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 > [!Important]
 > Somente há suporte e manutenção completos para os recursos na versão mais recente do Visual Studio. Os recursos estão disponíveis nas versões mais antigas, mas não recebem manutenção ativa.
 
-|          Suporte para Python          |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|          Suporte a Python          |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |   Gerenciar vários interpretadores   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Detecção automática de interpretadores populares | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -222,7 +222,7 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 |  Modo de exibição de classe/pesquisador de objetos   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Barra de navegação        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Ir para Definição       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
-|         Navegar para          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Navegue até          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |     Localizar Todas as Referências      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Recuo automático       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Formatação de código        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -240,7 +240,7 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 
 <br/>
 
-|               Desktop               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               Área de Trabalho               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Aplicativo de console/do Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | WPF do IronPython (com o designer XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -262,7 +262,7 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 |   Implantar no site da Web   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   Implantar na função Web   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
 | Implantar na função de trabalho  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
-| Execução no emulador do Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Executar no emulador do Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
 |    Depuração remota    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
 | Anexar o Gerenciador de Servidores | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
 
@@ -270,15 +270,15 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 
 |           Modelos do Django           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
-|              Depuração               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|              {1&gt;Depuração&lt;1}               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            Preenchimento automático             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
 | Preenchimento automático para CSS e JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
 
-|                  Depuração                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  {1&gt;Depuração&lt;1}                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
-|                  Depuração                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|                  {1&gt;Depuração&lt;1}                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         Depuração sem um projeto         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Depuração – anexação à edição        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |            Depuração de modo misto             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -295,7 +295,7 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 
 <br/>
 
-|     Teste      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     {1&gt;Testar&lt;1}      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Gerenciador de testes | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 |   Executar teste    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -305,17 +305,17 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 
 1. O suporte do Git para o Visual Studio 2012 está disponível na extensão Ferramentas do Visual Studio para Git, disponível no [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. A implantação no Site do Azure exige o [SDK do Azure para .NET 2.1 – Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Versões posteriores não dão suporte ao Visual Studio 2010.
+1. A implantação no Site do Azure exige o [SDK do Azure para .NET 2.1 – Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids). Versões posteriores não dão suporte ao Visual Studio 2010.
 
-1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) ou posterior.
+1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) ou posterior.
 
-1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou posterior.
 
 1. O editor de modelos do Django no Visual Studio 2013 apresenta alguns problemas conhecidos que foram resolvidos com a instalação da Atualização 2.
 
-1. Exige o Windows 8 ou posterior. O Visual Studio 2013 Express para Web não tem a caixa de diálogo **Anexar ao Processo**, mas a depuração remota do Site do Azure ainda é possível com o comando **Anexar Depurador (Python)** no **Gerenciador de Servidores**. A depuração remota exige o [SDK do Azure para .NET 2.3 – Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. Exige o Windows 8 ou posterior. O Visual Studio 2013 Express para Web não tem a caixa de diálogo **Anexar ao Processo**, mas a depuração remota do Site do Azure ainda é possível com o comando **Anexar Depurador (Python)** no **Gerenciador de Servidores**. A depuração remota exige o [SDK do Azure para .NET 2.3 – Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou posterior.
 
-1. Exige o Windows 8 ou posterior. O comando **Anexar Depurador (Python)** no **Gerenciador de Servidores** exige o [SDK do Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. Exige o Windows 8 ou posterior. O comando **Anexar Depurador (Python)** no **Gerenciador de Servidores** exige o [SDK do Azure para .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou posterior.
 
 1. Exige o Windows 8 ou posterior.
 ::: moniker-end

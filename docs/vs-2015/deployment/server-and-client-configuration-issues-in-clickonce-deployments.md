@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295213"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918809"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,9 +133,7 @@ Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e
   
  Se você estiver usando o IIS, poderá habilitar facilmente a compactação HTTP. No entanto, quando você habilita a compactação HTTP, ela só é habilitada para determinados tipos de arquivo, ou seja, HTML e arquivos de texto. Para habilitar a compactação para assemblies (. dll), XML (. xml), manifestos de implantação (. Application) e manifestos de aplicativo (. manifest), você deve adicionar esses tipos de arquivo à lista de tipos para que o IIS seja compactado. Até que você adicione os tipos de arquivo à sua implantação, somente arquivos de texto e HTML serão compactados.  
   
- Para obter instruções detalhadas sobre o IIS, consulte [como especificar tipos de documento adicionais para a compactação http](https://go.microsoft.com/fwlink/?LinkId=178459).  
-  
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Solução de problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Pré-requisitos de implantação de aplicativos](../deployment/application-deployment-prerequisites.md)

@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590417"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919017"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -25,6 +25,8 @@ O *VSTest.Console.exe* é a ferramenta de linha de comando para execução de te
 > O adaptador MSTest no Visual Studio também funciona no modo herdado (equivalente à execução de testes com *mstest.exe*) para compatibilidade. No modo herdado, ele não pode aproveitar o recurso TestCaseFilter. O adaptador pode alternar para o modo herdado quando um arquivo *testsettings* é especificado, **forcelegacymode** é definido como **true** em um arquivo *runsettings* ou usando atributos como **HostType**.
 >
 > Para executar testes automatizados em um computador baseado na arquitetura ARM, use o *VSTest.Console.exe*.
+
+Abra um [prompt de comando do desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) para usar a ferramenta de linha de comando ou você pode encontrar a ferramenta em *% arquivos de programas (x86)% \ Microsoft Visual Studio\\< versão\>\\< edition\>\Common7\ide\CommonExtensions\\< plataforma | Microsoft >* .
 
 ## <a name="general-command-line-options"></a>Opções gerais de linha de comando
 
@@ -44,7 +46,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Exemplos de valores são `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` e `.NETCoreApp,Version=v1.1`.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
-|**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: para registrar em log os resultados em um Arquivo de Resultados do Teste do Visual Studio (TRX), use **/Logger:trx**.<br />Exemplo: para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=\<O padrão é "Any CPU">]**<br />**[;Flavor=\<O padrão é "Debug">]**<br />**[;RunTitle=<título\>]**|
+|**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: para registrar os resultados em um arquivo de Resultados de Teste do Visual Studio (TRX), use<br />**/Logger: TRX**<br />**[; LogFilename =\<usa como padrão o nome de arquivo exclusivo >]**<br />Exemplo: para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=\<O padrão é "Any CPU">]**<br />**[;Flavor=\<O padrão é "Debug">]**<br />**[;RunTitle=<título\>]**<br />Observação: o TfsPublisher logger foi preterido no Visual Studio 2017 e não tem suporte em versões posteriores do Visual Studio. Para esses cenários, use um agente de log personalizado. Esse agente alterna o agente para o modo herdado.|
 |**/ListTests:[*nome do arquivo*]**|Lista testes descobertos do contêiner de teste fornecido.|
 |**/ListDiscoverers**|Lista detectores de testes instalados.|
 |**/ListExecutors**|Lista executores de testes instalados.|
@@ -55,7 +57,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/ResultsDirectory:[*caminho*]**|O diretório de resultados de teste será criado no caminho especificado, se não existir.<br />Exemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*IDProcessoPai*]**|ID do Processo Pai responsável por iniciar o processo atual.|
 |**/Port:[*porta*]**|A porta para a conexão de soquete e recebimento das mensagens do evento.|
-|**/Collect:[*NomeAmigável ColetorDados*]**|Habilita o coletor de dados para a execução de teste. [Mais informações](https://aka.ms/vstest-collect).|
+|**/Collect:[*NomeAmigável ColetorDados*]**|Habilita o coletor de dados para a execução de teste. [Mais informações](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > As opções e os valores não diferenciam maiúsculas de minúsculas.

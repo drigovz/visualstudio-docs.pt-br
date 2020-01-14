@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298938"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850431"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Como adicionar um manipulador de evento de arrastar e soltar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "74298938"
 
  Este tópico discute gestos de arrastar e soltar originados em outros diagramas. Para mover e copiar eventos dentro de um único diagrama, considere a alternativa de definir uma subclasse de `ElementOperations`. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md). Também poderá ser possível personalizar a definição da DSL.
 
-## <a name="in-this-topic"></a>Neste tópico
+## <a name="in-this-topic"></a>{1&gt;Neste tópico&lt;1}
 
 - As duas primeiras seções descrevem métodos alternativos para definir um manipulador de gestos:
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Torne a DSL de origem acessível pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus:
 
-    1. Faça o download e instale a extensão Visual Studio Model Bus, se ainda não estiver instalada. Para obter mais informações, consulte [visualização e SDK de modelagem](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Faça o download e instale a extensão Visual Studio Model Bus, se ainda não estiver instalada. Para obter mais informações, consulte [SDK de visualização e modelagem](https://www.visualstudio.com/).
 
-    2. Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique com o botão direito do mouse na superfície de design e clique em **habilitar ModelBus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
+    2. Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique duas vezes na superfície de design e, em seguida, clique em **habilitar Modelbus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
 
     3. Clique em **transformar todos os modelos** e recompilar a solução.
 
@@ -587,5 +587,5 @@ namespace Company.CompartmentDrag  // EDIT.
 
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md) [implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)

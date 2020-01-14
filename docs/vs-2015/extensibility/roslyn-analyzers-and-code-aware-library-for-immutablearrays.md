@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9fbba44ef5ac0e531198b3569008a260118aefcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fd54c5e730f757a0e198ad7cf1d8577e686b9ea9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298380"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845873"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores Roslyn e biblioteca com reconhecimento de código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Você precisa do seguinte para compilar este exemplo:
 
 - [SDK do Visual Studio](../extensibility/visual-studio-sdk.md). Você também pode, ao instalar o Visual Studio, verificar Ferramentas de Extensibilidade do Visual Studio em ferramentas comuns para instalar o SDK ao mesmo tempo. Se você já tiver instalado o Visual Studio, também poderá instalar esse SDK acessando o arquivo C#  **&#124; de menu principal &#124;novo projeto...** , escolha no painel de navegação à esquerda e, em seguida, escolhendo extensibilidade. Quando você escolhe o modelo de projeto de navegação estrutural "**instalar o ferramentas de extensibilidade do Visual Studio**", ele solicita que você baixe e instale o SDK.
 
-- [SDK do .net Compiler Platform ("Roslyn")](https://aka.ms/roslynsdktemplates). Você também pode instalar esse SDK indo até o arquivo **C#**  **&#124; de menu principal novo &#124; projeto...** , escolha no painel de navegação à esquerda e, em seguida, escolhendo extensibilidade. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Essa ferramenta extremamente útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
+- [SDK do .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Você também pode instalar esse SDK indo até o arquivo **C#**  **&#124; de menu principal novo &#124; projeto...** , escolha no painel de navegação à esquerda e, em seguida, escolhendo extensibilidade. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Essa ferramenta extremamente útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
 
 ## <a name="whats-the-problem"></a>Qual é o problema?
 Imagine que você forneça uma biblioteca com suporte a ImmutableArray (por exemplo, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>). C#os desenvolvedores têm muita experiência com as matrizes .NET. No entanto, devido à natureza das técnicas de ImmutableArrays e otimização usadas na implementação C# , as intuições do desenvolvedor fazem com que os usuários da sua biblioteca escrevam código quebrado, conforme explicado abaixo. Além disso, os usuários não veem seus erros até o tempo de execução, que não é a experiência de qualidade em que eles são usados no Visual Studio com o .NET.
@@ -102,7 +102,7 @@ Para que seu analisador seja exibido na interface do usuário do Visual Studio a
 internal const string Category = "Naming";
 ```
 
-Altere `"Naming"` para `"API Guidance"`.
+Alteração `"Naming"` para `"API Guidance"`.
 
 Em seguida, localize e abra o arquivo Resources. resx em seu projeto usando o **Gerenciador de soluções**. Você pode inserir uma descrição para seu analisador, título, etc. Você pode alterar o valor de todos eles para `“Don’t use ImmutableArray<T> constructor”` por enquanto. Você pode colocar argumentos de formatação de cadeia de caracteres em sua cadeia de caracteres ({0}, {1}, etc.) e, posteriormente, ao chamar `Diagnostic.Create()`, você pode fornecer uma matriz params de argumentos a serem passados.
 
@@ -309,7 +309,7 @@ Você pode ver este exemplo desenvolvido e abordado mais adiante nesta [conversa
 
 Você pode ver todo o código concluído [aqui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). As subpastas DoNotUseImmutableArrayCollectionInitializer e DoNotUseImmutableArrayCtor têm um C# arquivo para encontrar problemas e um C# arquivo que implementa as correções de código que aparecem na interface do usuário do Visual Studio Light lâmpada. Observe que o código concluído tem um pouco mais de abstração para evitar buscar o objeto de tipo ImmutableArray\<T > repetidamente. Ele usa ações registradas aninhadas para salvar o objeto de tipo em um contexto que está disponível sempre que as subações (analisar criação de objeto e as inicializações de coleção de análise) são executadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [\\\Build 2015 talk](https://channel9.msdn.com/events/Build/2015/3-725)
 [código concluído no GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers) 
 [vários exemplos no GitHub, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md) 

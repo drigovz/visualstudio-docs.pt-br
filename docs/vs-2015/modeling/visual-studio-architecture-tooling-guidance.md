@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301331"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851392"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Orientação de ferramentas de arquitetura do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,4 +23,4 @@ Neste guia de ferramentas de arquitetura é um pacote que pode ser baixado de di
 
  O conteúdo foi criado pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, um grupo especial que tem membros da equipe de produto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], serviços da Microsoft, MVPs (Microsoft Most Valuable Professionals) e clientes potenciais da Comunidade [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- [Clique aqui para baixar as diretrizes de ferramentas de arquitetura.](https://go.microsoft.com/fwlink/?LinkID=191984)
+ [Clique aqui para baixar as diretrizes de ferramentas de arquitetura.](https://archive.codeplex.com/?p=vsarchitectureguide)

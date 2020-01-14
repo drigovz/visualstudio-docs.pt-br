@@ -14,22 +14,22 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295955"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918858"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0001: usar StringBuilder para concatenações](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0001: usar StringBuilder para concatenações](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
 |Id da Regra|DA0001|  
-|Category|Uso do .NET Framework|  
+|Categoria|Uso do .NET Framework|  
 |Métodos de criação de perfil|Amostragem<br /><br /> Instrumentação|  
 |Mensagem|Considere o uso de StringBuilder para concatenações de cadeias de caracteres|  
 |Tipo de mensagem|Aviso|  
@@ -45,4 +45,4 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0001
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de perfil de amostragem. Encontre as seções do programa que fazem o uso mais frequente da concatenação de cadeia de caracteres. Use a classe StringBuilder para manipulações de cadeias de caracteres complexas, incluindo operações de concatenação de cadeia de caracteres frequentes.  
   
- Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](https://go.microsoft.com/fwlink/?LinkId=177816) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](https://go.microsoft.com/fwlink/?LinkId=177817) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).
+ Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](https://msdn.microsoft.com/library/ms998547.aspx) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).

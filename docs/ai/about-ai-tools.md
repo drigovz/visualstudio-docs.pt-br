@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777458"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915963"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Ferramentas do Visual Studio para IA
 
 As Ferramentas do Visual Studio para IA são uma extensão para build, testes e implantação de soluções de aprendizagem profunda/IA. Elas se integram perfeitamente ao Azure Machine Learning proporcionando funcionalidades de experimentação robustas, incluindo, entre outros, o envio trabalhos de preparação de dados e de treinamento de modelos de modo transparente para diferentes destinos de computação. Além disso, elas oferecem suporte para métricas personalizadas e acompanhamento do histórico de execuções, possibilitando a reprodução e a auditoria da ciência de dados. Colaboração pronta para a empresa, que permite trabalhar de forma segura em projetos com outras pessoas.
 
-Comece na aprendizagem profunda usando o [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), o [Google TensorFlow](https://www.tensorflow.org) ou outras estruturas de aprendizagem profunda atuais.
+Comece na aprendizagem profunda usando o [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/), o [Google TensorFlow](https://www.tensorflow.org) ou outras estruturas de aprendizagem profunda atuais.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Desenvolver, depurar e implantar modelos de aprendizagem profunda e soluções de IA
 Use os recursos de produtividade do Visual Studio para acelerar a inovação em IA hoje. Use recursos do editor de código interno como realce de sintaxe, IntelliSense e formatação automática de texto. É possível testar de forma interativa seu aplicativo de aprendizagem profunda no ambiente local usando o passo a passo de depuração em variáveis locais e modelos.
@@ -45,5 +45,5 @@ Essa extensão facilita o treinamento de modelos no computador local ou o envio 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 No momento, essa extensão dá suporte aos sistemas operacionais Windows de 64 bits.
 
-## <a name="support"></a>Suporte
+## <a name="support"></a>Suporte do
 O suporte para essa extensão é fornecido no [GitHub Issue Tracker](https://github.com/Microsoft/vs-tools-for-ai/issues) (Rastreador de Problemas GitHub). É possível enviar um relatório de bugs ou uma sugestão de recurso e participar das discussões.

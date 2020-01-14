@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296791"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917781"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
 
  ![Caixa de diálogo Alterar autenticação para ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Para obter mais informações sobre os diferentes tipos de autenticação no ASP.NET, consulte [Creating ASP.NET Web Projects in Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (as informações sobre autenticação ainda são relevantes para o Visual Studio 2015).
+ Para obter mais informações sobre os diferentes tipos de autenticação no ASP.NET, consulte [Creating ASP.NET Web Projects in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (as informações sobre autenticação ainda são relevantes para o Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Acessar sua conta do Visual Studio Team Services
  No menu principal, escolha **Equipe > Conectar-se ao Team Foundation Server** para mostrar a janela do **Team Explorer**. Clique em **Selecionar Projetos de Equipe**e, em seguida, na caixa de listagem em **Selecionar um Team Foundation Server**, você verá a URL de sua conta do Visual Studio Team Services. Ao selecionar a URL você será conectado sem precisar reinserir suas credenciais.

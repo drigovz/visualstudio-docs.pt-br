@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299781"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851923"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.  
   
-    3. Clique em **Continuar**.  
+    3. Clique em **Continue**.  
   
          A caixa de diálogo Recursos do Windows é exibida.  
   
@@ -117,7 +117,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)** .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Depuração de aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticação do Microsoft Digest](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Autenticação do Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Executando aplicativos Web no Windows Vista com o IIS 7,0 e o Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

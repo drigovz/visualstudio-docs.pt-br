@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295665"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918873"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir um perfil para estender UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Você pode definir um *perfil UML* para personalizar os elementos do modelo padr
 6. Envie o arquivo de extensão para outros usuários do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instalar em seus computadores.
 
 ## <a name="AddProfile"></a>Como adicionar um perfil a uma extensão do Visual Studio
- Para instalar um perfil e permitir que você o envie a outros usuários, você deve adicionar o perfil a uma extensão do Visual Studio. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Para instalar um perfil e permitir que você o envie a outros usuários, você deve adicionar o perfil a uma extensão do Visual Studio. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Para definir um perfil em uma nova extensão do Visual Studio
 
@@ -196,7 +196,7 @@ Você pode definir um *perfil UML* para personalizar os elementos do modelo padr
     > [!NOTE]
     > Se você estiver criando a extensão usando um projeto de extensão do Visual Studio, use Gerenciador de Soluções para adicionar uma nova pasta ao projeto.
 
-3. Altere o nome do novo diretório para o código ISO curto para a cultura localizada, como `bg` para búlgaro ou `fr` para francês. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa de códigos de cultura.
+3. Altere o nome do novo diretório para o código ISO curto para a cultura localizada, como `bg` para búlgaro ou `fr` para francês. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que fornece uma lista completa de códigos de cultura.
 
 4. Adicione uma cópia do seu perfil padrão ao novo diretório. Não altere seu nome de arquivo.
 
@@ -220,7 +220,8 @@ Você pode definir um *perfil UML* para personalizar os elementos do modelo padr
 7. Crie a extensão do Visual Studio, seja criando o projeto de extensão ou compactando todos os arquivos, conforme descrito nas seções anteriores.
 
 ## <a name="Schema"></a>A estrutura de um perfil
- O arquivo XSD para perfis UML pode ser encontrado no exemplo a seguir: [Configurando estereótipos e perfis XSD](https://go.microsoft.com/fwlink/?LinkID=213811). Para ajudá-lo a editar os arquivos de perfil, instale o arquivo de `.xsd` em:
+
+ Para ajudá-lo a editar os arquivos de perfil, instale o arquivo de `.xsd` em:
 
  **%ProgramFiles%\Microsoft Visual Studio [versão] \Xml\Schemas**
 
@@ -349,7 +350,7 @@ Você precisa selecionar seu perfil em um pacote ou modelo. Os estereótipos ser
 
 3. Verifique se a sintaxe é descrita aqui e, conforme demonstrado em _unidade_ **: \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
 
-4. Desinstale a extensão com falha. No menu **ferramentas** , clique em **extensões e atualizações**.
+4. Desinstale a extensão com falha. No menu **Ferramentas**, clique em **Extensões e Atualizações**.
 
    - Se a extensão não aparecer, consulte o próximo item.
 
@@ -364,5 +365,6 @@ Você precisa selecionar seu perfil em um pacote ou modelo. Os estereótipos ser
 
 6. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Consulte também
- [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [padrões de estereótipos para modelos UML](../modeling/standard-stereotypes-for-uml-models.md) [exemplo: colorir elementos UML por](https://go.microsoft.com/fwlink/?LinkID=213841) [amostra de estereótipo: definindo estereótipos, perfis XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+## <a name="see-also"></a>Veja também
+ [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [padrões de estereótipos para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

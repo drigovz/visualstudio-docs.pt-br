@@ -15,23 +15,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 526f0333cc4a233996c00576e3439bac4593c29f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669210"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919170"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: os identificadores não devem conter sublinhados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1707: identificadores não devem conter sublinhados](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1707: identificadores não devem conter sublinhados](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Categoria|Microsoft. Naming|
+|Categoria|Microsoft.Naming|
 |Alteração Significativa|Quebra-quando elevado em assemblies<br /><br /> Não separável-quando elevado em parâmetros de tipo|
 
 ## <a name="cause"></a>Causa

@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301420"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851163"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Os tipos de shim** são uma das duas tecnologias usadas pelo Microsoft Fakes Fra
 
  Para obter uma visão geral e início rápido, confira [Isolamento de código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  Confira [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+  Confira [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Exemplo: o bug do milênio
  Vamos considerar um método que gera uma exceção em 1º de janeiro de 2000:
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>{1&gt;Orientação&lt;1}
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Consulte também
- [Isolamento de código sob teste com o blog do Microsoft falsificates](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost: vídeo de shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(1H16): testando código não-retestado com falsificações no Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>Veja também
+ [Isolamento de código sob teste com o blog do Microsoft falsificates](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost: vídeo de shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(1H16): testando código não-retestado com falsificações no Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

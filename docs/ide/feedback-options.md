@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853484"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847455"
 ---
 # <a name="visual-studio-feedback-options"></a>Opções de comentários do Visual Studio
 
@@ -75,12 +75,12 @@ Há duas maneiras de nos ajudar a melhorar a documentação:
 
 ## <a name="contact-microsoft-support"></a>Entrar em contato com o suporte da Microsoft
 
-Para obter informações de suporte do Visual Studio, confira a página de [Ciclo de vida e manutenção do produto](/visualstudio/releases/2019/servicing/). Para outros produtos e serviços Microsoft, veja [Suporte da Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
+Para obter informações de suporte do Visual Studio, confira a página de [Ciclo de vida e manutenção do produto](/visualstudio/releases/2019/servicing/). Para outros produtos e serviços Microsoft, veja [Suporte da Microsoft](https://support.microsoft.com/) para obter ajuda online.
 
 > [!NOTE]
 > O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, veja [Sites Internacionais da Microsoft](https://www.microsoft.com/worldwide/).
 
-Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Empresarial. Para saber mais, confira [Soluções de suporte empresarial da Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Empresarial. Para saber mais, confira [Soluções de suporte empresarial da Microsoft](https://www.microsoft.com/industry/services/support).
 
 Se o produto veio instalado em um novo computador ou dispositivo, o fabricante de hardware fornecerá suporte técnico e assistência para esse software. Contate o fabricante diretamente para obter suporte.
 
@@ -96,7 +96,7 @@ Se quiser compartilhar perguntas e respostas com outros desenvolvedores, conside
 
 Você também pode exibir o código de outros desenvolvedores e compartilhar seus próprios exemplos na página [procurar exemplos de código](/samples/browse/) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Solucionar problemas de instalação e problemas de atualização](../install/troubleshooting-installation-issues.md)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

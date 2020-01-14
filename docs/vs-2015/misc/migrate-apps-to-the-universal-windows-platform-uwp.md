@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299477"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919134"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicativos para a UWP (Plataforma Universal do Windows)
 Faça as alterações manuais necessárias em seus arquivos de projeto existentes para aplicativos da Windows Store 8,1, Windows Phone aplicativos 8,1 ou aplicativos universais do Windows criados com o Visual Studio 2015 RC, para que possam ser usados com o Visual Studio 2015 RTM. (Se você tiver um aplicativo Windows 8.1 universal com um projeto de aplicativo do Windows e Windows Phone projeto, será necessário seguir as etapas para migrar cada projeto.)
@@ -370,7 +370,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
    </Dependencies>
    ```
 
-4. **Somente para Windows Store:** Você precisa adicionar um elemento filho \<MP: PhoneIdentity > ao elemento > do pacote de \<. Adicione um atributo PhoneProductId e um atributo PhonePublisherId. Defina PhoneProductId para ter o mesmo valor que o atributo Name no elemento \<Identity >. Defina o valor de PhonePublishedId como: 00000000-0000-0000-0000-000000000000. Assim:
+4. **Somente para Windows Store:** Você precisa adicionar um elemento filho \<MP: PhoneIdentity > ao elemento > do pacote de \<. Adicione um atributo PhoneProductId e um atributo PhonePublisherId. Defina PhoneProductId para ter o mesmo valor que o atributo Name no elemento \<Identity >. Defina o valor de PhonePublishedId como: 00000000-0000-0000-0000-000000000000. Desta forma:
 
    ```xml
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />
@@ -507,7 +507,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 13. Substitua as tarefas de tipo de plano de fundo gattCharacteristicNotification e rfcommConnection por uma tarefa de tipo Bluetooth. Por exemplo:
 
-     **ANTIGO**
+     **OLD:**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -530,7 +530,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 14. Substitua os recursos de dispositivo Bluetooth Bluetooth. RFCOMM e Bluetooth. genericAttributeProfile por um recurso Bluetooth genérico. Por exemplo:
 
-     **ANTIGO**
+     **OLD:**
 
     ```xml
     <Capabilities>
@@ -691,7 +691,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
    ```
 
-8. Localize o > \<rowgroup que tem \<referência > elementos filhos aos pacotes NuGet. Anote os pacotes NuGet que são referenciados, pois você precisará dessas informações para uma etapa futura. Uma diferença significativa entre o formato de projeto do Windows 10 entre o Visual Studio 2015 RC e o Visual Studio 2015 RTM é que o formato RTM usa o [NuGet](https://docs.microsoft.com/nuget/) versão 3.
+8. Localize o > \<rowgroup que tem \<referência > elementos filhos aos pacotes NuGet. Anote os pacotes NuGet que são referenciados, pois você precisará dessas informações para uma etapa futura. Uma diferença significativa entre o formato de projeto do Windows 10 entre o Visual Studio 2015 RC e o Visual Studio 2015 RTM é que o formato RTM usa o [NuGet](/nuget/) versão 3.
 
     Remova o > \<rowgroup e todos os seus filhos. Por exemplo, um projeto UWP criado com o Visual Studio RC terá os seguintes pacotes NuGet que precisam ser removidos:
 
@@ -731,7 +731,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 13. Abra o arquivo Package. appxmanifest em seu projeto.
 
-    1. Localize o elemento \<TargetDeviceFamily >. Altere seus atributos MinVersion e MaxVersionTested para corresponder à versão de Plataforma Universal do Windows que você instalou. Assim:
+    1. Localize o elemento \<TargetDeviceFamily >. Altere seus atributos MinVersion e MaxVersionTested para corresponder à versão de Plataforma Universal do Windows que você instalou. Desta forma:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -739,7 +739,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
     2. Salve as alterações.
 
-14. Use o Gerenciador do NuGet para adicionar os pacotes que você excluiu na etapa anterior. Uma diferença significativa entre o formato de projeto do Windows 10 entre o Visual Studio 2015 RC e o Visual Studio 2015 RTM é que o formato RTM usa o [NuGet](https://docs.microsoft.com/nuget/) versão 3.
+14. Use o Gerenciador do NuGet para adicionar os pacotes que você excluiu na etapa anterior. Uma diferença significativa entre o formato de projeto do Windows 10 entre o Visual Studio 2015 RC e o Visual Studio 2015 RTM é que o formato RTM usa o [NuGet](/nuget/) versão 3.
 
     Agora você pode codificar, criar e depurar seu aplicativo.
 
@@ -800,7 +800,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 7. Abra o arquivo Package. appxmanifest em seu projeto.
 
-    1. Localize o elemento \<TargetDeviceFamily >. Altere seus atributos MinVersion e MaxVersionTested para corresponder à versão de Plataforma Universal do Windows que você instalou. Assim:
+    1. Localize o elemento \<TargetDeviceFamily >. Altere seus atributos MinVersion e MaxVersionTested para corresponder à versão de Plataforma Universal do Windows que você instalou. Desta forma:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />

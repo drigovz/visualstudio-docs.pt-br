@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295724"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851527"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nessa etapa, você adiciona controles como um controle `PictureBox` e um controle `CheckBox` em seu formulário. Em seguida, você adiciona botões ao seu formulário.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Para adicionar controles ao seu formulário
 

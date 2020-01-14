@@ -37,23 +37,23 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300254"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852015"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário para os quais seu sistema de software deve dar suporte. Por exemplo, para descrever e comunicar os requisitos do usuário, você pode usar os diagramas de caso de uso, atividade, classe e sequência do Unified Modeling Language (UML). Para descrever e comunicar a funcionalidade do seu sistema, você pode usar os diagramas de componente, classe, atividade e Sequência UML.
+Diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos do usuário aos quais seu sistema de software deve dar suporte. Por exemplo, para descrever e comunicar os requisitos do usuário, você pode usar os diagramas de caso de uso, atividade, classe e sequência do Unified Modeling Language (UML). Para descrever e comunicar a funcionalidade de seu sistema, é possível usar o componente, a classe, a atividade e os diagramas de sequência UML.
 
- Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Você pode criar os seguintes diagramas UML nesta versão:
 
-|**Organograma**|**programas**|
+|**Diagrama**|**programas**|
 |-----------------|---------------|
 |[Diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md)|Fluxo de trabalho entre ações e participantes em um processo de negócios|
 |[Diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)|Componentes de um sistema, suas interfaces, portas e relações|
@@ -65,7 +65,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
  Para visualizar a arquitetura de um sistema ou de um código existente, crie os seguintes diagramas:
 
-|**Organograma**|**programas**|
+|**Diagrama**|**programas**|
 |-----------------|---------------|
 |[Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
 |Mapas de código<br /><br /> [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dependências e outras relações no código existente|
@@ -96,6 +96,6 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 ## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |

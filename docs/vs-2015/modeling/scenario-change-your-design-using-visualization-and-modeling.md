@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70cc3c81c426ec55d0afb36360155786ec97d937
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296025"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918975"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 ## <a name="ModelingDiagramsTools"></a>Funções de diagramas de arquitetura e modelagem no desenvolvimento de software
  A tabela a seguir descreve as funções que essas ferramentas podem reproduzir durante vários e vários estágios do ciclo de vida do desenvolvimento de software:
 
-||**Modelagem de requisitos de usuário**|**Modelagem de processos de negócios**|**Arquitetura do sistema & Design**|**Visualização de código & exploração**|**Verificado**|
+||**Modelagem de requisitos de usuário**|**Modelagem de processos de negócios**|**Arquitetura do sistema & Design**|**Visualização de código & exploração**|**Verificação**|
 |------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
 |Diagrama de caso de uso (UML)|√|√|||√|
 |Diagrama de atividade (UML)|√|√|√||√|
@@ -168,7 +168,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 ### <a name="UnderstandingBPMandSystemDesign"></a>Compreendendo a função do sistema no processo de negócios
  A Lucerne quer saber mais sobre o processo de negócios do jantar agora. Eles criam os diagramas a seguir para esclarecer sua compreensão com o jantar agora com mais facilidade:
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-----------------|-------------------|
 |*Diagrama de caso de uso (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de caso de uso de UML -   : referência](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de caso de uso de UML -   : diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|-As atividades que o jantar agora suporta<br />-As pessoas e os sistemas externos que executam as atividades<br />-Os principais componentes do sistema que oferecem suporte a cada atividade<br />-As partes do processo comercial que estão fora do escopo do sistema atual, por exemplo, entrega de alimentos|
 |*Diagrama de atividade (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de atividade de UML -   : referência](../modeling/uml-activity-diagrams-reference.md)<br />[diagramas de atividade de UML -   : diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|O fluxo de etapas que ocorrem quando um cliente cria um pedido|
@@ -195,7 +195,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 ### <a name="DescribingURM"></a>Descrevendo os requisitos de usuário novos ou atualizados
  A Lucerne deseja adicionar funcionalidade ao sistema de jantar agora para que os clientes possam ler e contribuir com revisões de restaurantes. Eles atualizam os diagramas a seguir para que eles possam descrever e discutir esse novo requisito com o jantar agora:
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-----------------|-------------------|
 |*Diagrama de caso de uso (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de caso de uso de UML -   : referência](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de caso de uso de UML -   : diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|Um novo caso de uso para "escrever uma revisão de restaurante"|
 |*Diagrama de atividade (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de atividade de UML -   : referência](../modeling/uml-activity-diagrams-reference.md)<br />[diagramas de atividade de UML -   : diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|As etapas que ocorrem quando um cliente deseja escrever uma revisão de restaurante|
@@ -283,7 +283,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 ### <a name="ValidatingCode"></a>Mantendo o código consistente com o design
  Agora, o jantar deve garantir que o código atualizado permaneça consistente com o design. Eles criam diagramas de camada que descrevem as camadas de funcionalidade no sistema, especificam as dependências permitidas entre elas e associam os artefatos de solução a essas camadas.
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-----------------|-------------------|
 |*Diagrama de camada*<br /><br /> Consulte:<br /><br /> -   [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de camada de -   : referência](../modeling/layer-diagrams-reference.md)<br />[diagramas de camada de -   : diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de camada organiza e mapeia os artefatos em uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, as tarefas ou as funções que esses artefatos executam no sistema.<br /><br /> Os diagramas de camada são úteis para descrever o design pretendido do sistema e validar o código em evolução nesse design.<br /><br /> Para criar camadas, arraste itens de Gerenciador de Soluções, mapas de código, Modo de Exibição de Classe e pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com o botão direito do mouse na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com o botão direito do mouse na superfície do diagrama de camadas e clique em **gerar dependências**. Para especificar as dependências pretendidas, desenhe novas dependências.|
 
@@ -363,7 +363,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
 
-- [Usar o controle de versão](https://go.microsoft.com/fwlink/?LinkID=525605)
+- [Usar o controle de versão](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Compilar o aplicativo](/azure/devops/pipelines/index)
 
@@ -457,7 +457,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-----------------|-------------------|
 |Diagrama de atividade|O fluxo de etapas em um caso de uso e aqueles que executam essas etapas nesse caso de uso.<br /><br /> Os nomes dos casos de uso freqüentemente espelham as etapas em um diagrama de atividade. Os diagramas de atividade dão suporte a elementos como decisões, mesclagens, entradas e saídas, fluxos simultâneos e assim por diante.<br /><br /> Consulte:<br /><br /> [diagramas de atividade de UML -   : referência](../modeling/uml-activity-diagrams-reference.md)<br />[diagramas de atividade de UML -   : diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|
 |Diagrama de sequência|A sequência de interações entre os participantes em um caso de uso.<br /><br /> Consulte:<br /><br /> -   [diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)|
@@ -514,7 +514,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-----------------|---------------------|
 |Diagrama de caso de uso|Resuma as atividades que cada ator executa.<br /><br /> Consulte:<br /><br /> [diagramas de caso de uso de UML -   : referência](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de caso de uso de UML -   : diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Diagrama de componente|Visualize o sistema como uma coleção de partes reutilizáveis que fornecem ou consomem o comportamento por meio de um conjunto bem definido de interfaces.<br /><br /> Consulte:<br /><br /> -   [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)|
@@ -588,7 +588,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-----------------|---------------------|
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para identificar os candidatos aos componentes, crie um mapa de código e agrupe os itens por sua função no sistema.<br /><br /> Consulte:<br /><br /> -   [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)|
 |Diagrama de sequência|Visualize a sequência de interações entre componentes ou as partes dentro de um componente.<br /><br /> Para criar uma linha de vida em um diagrama de sequência de um componente, clique com o botão direito do mouse no componente e clique em **Criar linha de vida**.<br /><br /> Consulte:<br /><br /> -   [diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)|
@@ -660,7 +660,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-----------------|-------------------|
 |Diagrama de camada|A arquitetura lógica do sistema. Use a validação de camada para garantir que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar camadas existentes ou camadas pretendidas, crie um mapa de código e itens relacionados ao grupo. Para criar um diagrama de camada, consulte:<br /><br /> -   [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de camada de -   : diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de componente|Componentes, suas interfaces e suas relações.<br /><br /> Para ajudá-lo a identificar componentes, crie um mapa de código e agrupe itens por sua função no sistema.<br /><br /> Consulte:<br /><br /> -   [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)|
@@ -716,7 +716,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-----------------|---------------------|
 |Diagrama de classe (UML)|Defina as classes que as linhas de vida representam e os parâmetros e valores de retorno que são usados em mensagens enviadas entre linhas de vida.<br /><br /> Para criar uma classe de uma linha de vida, clique com o botão direito do mouse na linha da vida e clique em **criar classe** ou **criar interface**. Para criar uma linha de vida de um tipo em um diagrama de classe, clique com o botão direito do mouse no tipo e clique em **Criar linha de vida**.<br /><br /> Consulte:<br /><br /> -   [diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)|
 |Diagrama de componente|Descreva os componentes que as linhas de vida representam e as interfaces que fornecem e consomem o comportamento representado pelas mensagens.<br /><br /> Para criar uma linha de vida de um diagrama de componente, clique com o botão direito do mouse no componente e clique em **Criar linha de vida**.<br /><br /> Consulte:<br /><br /> -   [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)|
@@ -797,7 +797,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-----------------|---------------------|
 |Diagrama de caso de uso|Defina os tipos que são usados para descrever as metas e as etapas em casos de uso.<br /><br /> Consulte:<br /><br /> [diagramas de caso de uso de UML -   : referência](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de caso de uso de UML -   : diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Diagrama de atividade|Defina os tipos de dados que passam nós de objeto, Pins de entrada, Pins de saída e nós de parâmetro de atividade.<br /><br /> Consulte:<br /><br /> [diagramas de atividade de UML -   : referência](../modeling/uml-activity-diagrams-reference.md)<br />[diagramas de atividade de UML -   : diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|
@@ -873,16 +873,16 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-----------------|---------------------|
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para criar camadas, gere um mapa de código e agrupe itens no mapa como camadas potenciais. Arraste os grupos do mapa para o diagrama de camada.<br /><br /> Consulte:<br /><br /> -   [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
 |Diagrama de componente|Descreva os componentes, suas interfaces e suas relações.<br /><br /> Para visualizar camadas, crie um diagrama de componente que descreva a funcionalidade de diferentes componentes no sistema.<br /><br /> Consulte:<br /><br /> -   [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)|
 
 ## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Visualize](../modeling/visualize-code.md) os [modelos de criação de código para seus](../modeling/create-models-for-your-app.md) [modelos de uso de aplicativo no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md) [usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [validar seu sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

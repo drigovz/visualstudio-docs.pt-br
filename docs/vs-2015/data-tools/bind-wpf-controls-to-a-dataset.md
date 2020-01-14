@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299428"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852151"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://codeplex.com/SqlServerSamples).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
@@ -70,7 +70,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 4. Selecione o modelo de projeto **Aplicativo WPF**.
 
-5. Na caixa **nome** , digite `AdventureWorksProductsEditor` e clique em **OK**.
+5. Na caixa **Nome**, digite `AdventureWorksProductsEditor` e clique em **OK**.
 
      O Visual Studio cria o projeto `AdventureWorksProductsEditor`.
 
@@ -101,11 +101,11 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 7. Na página **Escolher Objetos do Banco de Dados**, expanda **Tabelas** e selecione a tabela **Produto (SalesLT)** .
 
-8. Clique em **Concluir**.
+8. Clique em **Finalizar**.
 
      O Visual Studio adiciona um novo arquivo AdventureWorksLTDataSet. xsd ao projeto e adiciona um item **AdventureWorksLTDataSet** correspondente à janela fontes de **dados** . O arquivo AdventureWorksLTDataSet.xsd define um conjunto de dados tipado nomeado `AdventureWorksLTDataSet` e um TableAdapter nomeado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
 
-9. Compile o projeto.
+9. Crie o projeto.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Editar o método Fill padrão do TableAdapter
  Para preencher o conjunto de dados com dados, use o método `Fill` do `ProductTableAdapter`. Por padrão, o método `Fill` preenche o `ProductDataTable` no `AdventureWorksLTDataSet` com todas as linhas de dados da tabela Produto. Você pode modificar esse método para retornar apenas um subconjunto das linhas. Para este passo a passo, modifique o método `Fill` para retornar somente linhas de produtos com fotos.
@@ -126,7 +126,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Clique em **Concluir**.
+4. Clique em **Finalizar**.
 
 ## <a name="define-the-user-interface"></a>Definir a interface do usuário
  Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir neste passo a passo, você adicionará o código que permite aos usuários navegar e salvar alterações nos registros de produtos, usando esses botões.
@@ -149,7 +149,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Compile o projeto.
+3. Crie o projeto.
 
 ## <a name="createdata-bound-controls"></a>Controles vinculados a createdata
  Crie controles que exibam os registros do cliente arrastando a tabela `Product` da janela **fontes de dados** para o designer do WPF.
@@ -256,5 +256,5 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associar controles do WPF a dados em ferramentas de](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) conjunto de dados do Visual Studio [no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [WPF e](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) visão geral de [Associação de dado](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) visão geral do Silverlight designer

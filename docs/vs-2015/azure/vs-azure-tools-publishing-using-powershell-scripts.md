@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5af4fc76fa20148495ca44cc7e9b74d4b95ecb7c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 264647dbb22e90d722bc8a80a5b05c08d6e8366b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298108"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917485"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste
 
@@ -24,15 +24,15 @@ Quando você cria um aplicativo Web no Visual Studio, pode gerar um script do Wi
 
 Usando esses scripts, você pode provisionar versões personalizadas (também conhecidas como ambientes de desenvolvimento e teste) do seu site para uso temporário. Por exemplo, você pode configurar uma versão específica do seu site em uma máquina virtual do Azure ou no slot de preparo em um site para executar um conjunto de testes, reproduzir um bug, testar uma correção de bug, avaliar uma alteração de proposta ou configurar um ambiente personalizado para uma demonstração ou apresentação. Depois de criar um script que publica seu projeto, você pode recriar ambientes idênticos ao executar novamente o script conforme necessário ou executar o script com seu próprio build do aplicativo Web para criar um ambiente personalizado de teste.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
-* SDK 2.3 do Azure ou posterior. Veja [Downloads do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=624384). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
+* SDK 2.3 do Azure ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) ou posterior.
+* [Windows PowerShell 3.0](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) ou posterior.
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
-Estão disponíveis ferramentas e recursos adicionais para trabalhar com o PowerShell no Visual Studio para desenvolvimento do Azure. Consulte [Ferramentas do PowerShell para Visual Studio](https://go.microsoft.com/fwlink/?LinkId=404012).
+Estão disponíveis ferramentas e recursos adicionais para trabalhar com o PowerShell no Visual Studio para desenvolvimento do Azure. Consulte [Ferramentas do PowerShell para Visual Studio](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597).
 
 ## <a name="generating-the-publish-scripts"></a>Gerando scripts de publicação
 
@@ -40,7 +40,7 @@ Você pode gerar scripts de publicação para uma máquina virtual que hospeda s
 
 ## <a name="scripts-that-visual-studio-generates"></a>Scripts gerados pelo Visual Studio
 
-O Visual Studio gera uma pasta de nível de solução chamada **PublishScripts** que contém dois arquivos do Windows PowerShell, um script de publicação para sua máquina virtual ou site, e um módulo que contém funções que você pode usar nos scripts. O Visual Studio também gera um arquivo no formato JSON que especifica os detalhes do projeto que você está implantando.
+O Visual Studio gera uma pasta de nível de solução chamada **PublishScripts** que contém dois arquivos do Windows PowerShell, um script de publicação para sua máquina virtual ou site e um módulo que contém funções que você pode usar nos scripts. O Visual Studio também gera um arquivo no formato JSON que especifica os detalhes do projeto que você está implantando.
 
 ### <a name="windows-powershell-publish-script"></a>Script de publicação do Windows PowerShell
 
@@ -52,7 +52,7 @@ O módulo do Windows PowerShell que o Visual Studio gera contém funções que o
 
 ### <a name="json-configuration-file"></a>Arquivo de configuração JSON
 
-O arquivo JSON é criado na pasta **Configurações** e contém dados de configuração que especificam exatamente quais recursos implementar no Azure. O nome do arquivo que o Visual Studio gera é project-name-WAWS-dev.json se você tiver criado um site, ou o projeto name-VM-dev.json se você tiver criado uma máquina virtual. Aqui está um exemplo de um arquivo de configuração JSON é gerado quando você cria um site. A maior parte dos valores é autoexplicativa. O nome do site é gerado pelo Azure, portanto não pode coincidir com o nome do projeto.
+O arquivo JSON é criado na pasta **Configurações** pasta e contém dados de configuração que especificam exatamente quais recursos implantar no Azure. O nome do arquivo que o Visual Studio gera é project-name-WAWS-dev.json se você tiver criado um site, ou o projeto name-VM-dev.json se você tiver criado uma máquina virtual. Aqui está um exemplo de um arquivo de configuração JSON é gerado quando você cria um site. A maior parte dos valores é autoexplicativa. O nome do site é gerado pelo Azure, portanto não pode coincidir com o nome do projeto.
 
 ```json
 {
@@ -154,9 +154,9 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
 1. Crie o pacote de implantação na Web para seu projeto. Um pacote de implantação na Web é um arquivo compactado (arquivo .zip) que contêm arquivos que você deseja copiar em seu site ou máquina virtual. Você pode criar pacotes de implantação na Web no Visual Studio para qualquer aplicativo Web.
 
-   ![Criar pacote de implantação na Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Criar pacote de implantação da Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obter mais informações, consulte [como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
+   Consulte [Como criar um pacote de implantação na Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
 1. No **Gerenciador de Soluções**, abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
 1. Se você estiver executando os scripts do Windows PowerShell neste computador pela primeira vez, abra uma janela de prompt de comando com privilégios de administrador e digite o seguinte comando:
@@ -252,7 +252,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
         #Write a function to build and package your web application
     ```
 
-    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte Referência de linha de comando do MSBuild em: [http://go.microsoft.com/fwlink/?LinkId=391339](https://go.microsoft.com/fwlink/?LinkId=391339)
+    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte Referência de linha de comando do MSBuild em: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -349,5 +349,5 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Publish-WebApplication |Cria e implanta aplicativos Web, máquinas virtuais, bancos de dados SQL e contas de armazenamento para um projeto Web do Visual Studio. |
 | Test-WebApplication |Essa função não está implementada. Você pode adicionar comandos a essa função para testar o aplicativo. |
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Saiba mais sobre os scripts do PowerShell ao ler [Criando scripts com o Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) e confira outros scripts do Azure PowerShell no [Script Center](https://azure.microsoft.com/documentation/scripts/).

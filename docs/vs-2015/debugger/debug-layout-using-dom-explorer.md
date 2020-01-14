@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298392"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850071"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png "windows_and_phone_content")  
   
- A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://go.microsoft.com/fwlink/?LinkID=238778) do elemento selecionado em um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
+ A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://www.w3.org/TR/CSS2/box.html) do elemento selecionado em um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
   
 > [!TIP]
 > As alterações feitas na guia **layout** não são permanentes. Você pode fazer alterações permanentes em seu código-fonte e, em seguida, atualizar seu aplicativo usando o botão **Atualizar aplicativo do Windows** (somente para aplicativos da Windows Store e da Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
@@ -126,7 +126,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na guia **computada** sob a regra Margin-Left.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar estilos CSS usando o explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)

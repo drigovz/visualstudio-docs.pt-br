@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300175"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916689"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adicionando armazenamento do Azure usando os serviços conectados do Visual Studio
 Com o Visual Studio, você pode conectar qualquer um dos seguintes Armazenamentos do Azure usando a caixa de diálogo **Adicionar Serviços Conectados**:
@@ -63,12 +63,12 @@ Após a conclusão, a caixa de diálogo **Adicionar Serviços Conectados** exibe
 ## <a name="how-your-project-is-modified"></a>Como o projeto é modificado
 Quando você acaba de fazer suas escolhas na caixa de diálogo, o Visual Studio adiciona referências e modifica determinados arquivos de configuração. As alterações específicas dependem do tipo de projeto:
 
-- Projeto ASP.NET — [O que aconteceu — projetos ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126)
-- Projeto de Núcleo ASP.NET — [O que aconteceu — projetos ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Projeto de serviço de nuvem (funções Web e funções de trabalho) — [O que aconteceu — projetos Serviço de Nuvem](https://go.microsoft.com/fwlink/p/?LinkId=516965)
+- Projeto ASP.NET — [O que aconteceu — projetos ASP.NET](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- Projeto de Núcleo ASP.NET — [O que aconteceu — projetos ASP.NET 5](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- Projeto de serviço de nuvem (funções Web e funções de trabalho) — [O que aconteceu — projetos Serviço de Nuvem](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - Projetos de Trabalho Web — [O que aconteceu — projetos de Trabalho Web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>Próximas etapas
-- [Fórum do MSDN: armazenamento do Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+- [Fórum do MSDN: Armazenamento do Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog da equipe do Armazenamento do Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Documentação do Armazenamento do Azure](https://docs.microsoft.com/azure/storage/)
+- [Documentação do Armazenamento do Azure](/azure/storage/)

@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6db11d583818f1ea63c490cd8f588cb005b50a8d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295937"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918484"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Exceções da política de ciclo de vida do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ O Visual Studio inclui um conjunto de compiladores, linguagens, runtimes, ambien
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|SDK do .NET 3.5<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|SDK do .NET 4.5|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|Pacote multiplataforma do .NET 4.5.1 (Clássico)<br /><br /> Pacote multiplataforma do NET 4.5.1 (Repositório)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> Pacote Redistribuível do .NET 4.5.1<br /><br /> Pacotes de idiomas do .NET 4.5.1 Redist<br /><br /> SDK do .NET 4.5.1|  
-|[ASP.NET Web Stack](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> Páginas da Web do ASP.NET 2<br /><br /> Páginas da Web do ASP.NET 3|  
-|[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
-|[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Serviços Web do Exchange|  
-|[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web Developer Tools 2013](https://go.microsoft.com/fwlink/?LinkId=328952)|Ferramentas de Desenvolvimento na Web da Microsoft 2013|  
-|As atualizações desses componentes são distribuídas pelo NuGet e não seguem as políticas padrão de ciclo de vida da Microsoft.  Veja [http://docs.nuget.org/](https://docs.microsoft.com/nuget/) para obter mais informações.|Manipulador de Token Web JSON para o Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
-|[ODataLib](https://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
+|[ASP.NET Web Stack](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> Páginas da Web do ASP.NET 2<br /><br /> Páginas da Web do ASP.NET 3|  
+|[Entity Framework 6](https://support.microsoft.com/kb/2902020)|Entity Framework 6|  
+|[Exchange 2013](https://support.microsoft.com/kb/2902020)|Serviços Web do Exchange|  
+|[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
+|[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Ferramentas de Desenvolvimento na Web da Microsoft 2013|  
+|As atualizações desses componentes são distribuídas pelo NuGet e não seguem as políticas padrão de ciclo de vida da Microsoft.  Veja [http://docs.nuget.org/](/nuget/) para obter mais informações.|Manipulador de Token Web JSON para o Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
+|[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[Política do Online Services](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|SDK do Microsoft Ads|  
 |[SharePoint 2013](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|Componente cliente do SharePoint<br /><br /> SharePoint Foundation 2013<br /><br /> Windows Identity Foundation Extensions|  
@@ -44,7 +44,7 @@ O Visual Studio inclui um conjunto de compiladores, linguagens, runtimes, ambien
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Utilitários de linha de comando SQL<br /><br /> Serviço de Linguagem SQL – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> SQL System CLR Types (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Utilitários de linha de comando SQL<br /><br /> Serviço de Linguagem SQL – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL System CLR Types (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[Serviços RIA do WCF v1.0 SP2](https://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[Serviços RIA do WCF v1.0 SP2](https://support.microsoft.com/kb/2902020)|WCF RIA Services v1.0 SP2|  
 |[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Serviços Web do Windows (WWS) para Windows Server 2008|  
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|SDK do Windows 7|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|SDK do Windows 8|  

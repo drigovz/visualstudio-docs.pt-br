@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292148"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919055"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Adicionando extensões a definições de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ A extensão de definição de DSL permite que você crie um pacote de extensões
 
   Um usuário de um DSL estendido pode criar e salvar um modelo que contém instâncias dos recursos adicionais, e eles podem ser lidos por outros usuários que instalaram a extensão apropriada. Os usuários que não instalaram a extensão não podem usar os recursos adicionais, mas eles podem atualizar e salvar um modelo sem perder os recursos adicionais.
 
-  Para obter um exemplo de código e mais informações sobre esse recurso, consulte o site Visual [Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128) .
+  Para obter um exemplo de código e mais informações sobre esse recurso, consulte o site Visual [Studio Visualization and Modeling SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) .
 
-## <a name="see-also"></a>Consulte também
- [SDK de visualização e modelagem do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>Veja também
+ [SDK de visualização e modelagem do Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

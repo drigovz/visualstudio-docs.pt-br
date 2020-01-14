@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297805"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851630"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 
  É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 
-|Category|Atalho|Descrição do atalho|
+|Categoria|Atalho|Descrição do atalho|
 |--------------|--------------|--------------------------|
 |Usados Recentemente|@mru<br /><br /> Por exemplo, `@mru font`|Exibe até cinco dos itens que foram **Usados Recentemente**.|
-|Menus|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
+|{1&gt;Menus&lt;1}|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
 |Opções|@opt<br /><br /> Por exemplo, `@opt font`|Limita a pesquisa a configurações na caixa de diálogo **Opções**.|
 |{1&gt;Documentos&lt;1}|@doc<br /><br /> Por exemplo, `@doc font`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
@@ -47,7 +47,7 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
  Por padrão, o termo de pesquisa que você inserir não persiste entre sessões de pesquisa. A cadeia de caracteres de pesquisa é apagada se você pesquisar um termo, mover o cursor para fora da área de **Início Rápido** e, depois, voltar. Para manter os resultados da pesquisa, acesse a caixa de diálogo **Opções**, escolha **Início Rápido** e, em seguida, marque a caixa de seleção **Mostrar resultados da pesquisa anterior quando o Início Rápido estiver ativado.** . Na próxima vez em que fizer uma pesquisa, deixe a área de Início Rápido e volte, o Início Rápido manterá o termo de pesquisa usado pela última vez e mostrará os resultados da pesquisa.
 
- Para ver as dicas e truques mais recentes sobre o uso do **Início Rápido**, consulte [O Blog do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
+ Para ver as dicas e truques mais recentes sobre o uso do **Início Rápido**, consulte [O Blog do Visual Studio](https://blogs.msdn.com/b/visualstudio/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Caixa de diálogo opções](../../ide/reference/environment-options-dialog-box.md) [gerais de ambiente de elementos da interface do usuário (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)

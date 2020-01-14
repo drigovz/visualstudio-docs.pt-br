@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295852"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852389"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -447,7 +447,7 @@ Este artigo descreve usos típicos de anotações para parâmetros de função s
   
      O resultado deve ser válido em pós-Estado, mas pode ser nulo no estado de post. Aponta para um buffer válido de `s` bytes de elementos válidos.  
   
-## <a name="return-values"></a>Valores de retorno  
+## <a name="return-values"></a>Valores de Retorno  
  O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas está em um nível diferente de de referência, e você não precisa considerar o conceito do ponteiro para o resultado.  Para as seguintes anotações, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma struct ou um ponteiro para um buffer. Essas anotações têm a mesma semântica que a anotação de `_Out_` correspondente.  
   
 |||  
@@ -493,9 +493,9 @@ Este artigo descreve usos típicos de anotações para parâmetros de função s
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog da equipe de análise de código](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog da equipe de análise de código](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Usando anotações de sal para reduzir os defeitosC++ de C/código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Compreendendo o SAL](../code-quality/understanding-sal.md)   
  [Comportamento de função de anotação](../code-quality/annotating-function-behavior.md)   

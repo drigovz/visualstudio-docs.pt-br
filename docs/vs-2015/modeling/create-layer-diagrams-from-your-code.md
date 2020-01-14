@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300276"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852073"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Criar diagramas de camada por meio de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,5 +135,5 @@ Para visualizar a arquitetura lógica de alto nível do sistema de software, cri
 
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Consulte também
- [Vídeo do Channel 9: design e validação de sua arquitetura usando](https://go.microsoft.com/fwlink/?LinkID=252073) diagramas de camada Diagrams de camada [:](../modeling/layer-diagrams-reference.md) [diagramas de camada de referência: diretrizes](../modeling/layer-diagrams-guidelines.md) [validam código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md) [Visualizar código](../modeling/visualize-code.md)
+## <a name="see-also"></a>Veja também
+ [Vídeo do Channel 9: design e validação de sua arquitetura usando](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture) diagramas de camada Diagrams de camada [:](../modeling/layer-diagrams-reference.md) [diagramas de camada de referência: diretrizes](../modeling/layer-diagrams-guidelines.md) [validam código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md) [Visualizar código](../modeling/visualize-code.md)

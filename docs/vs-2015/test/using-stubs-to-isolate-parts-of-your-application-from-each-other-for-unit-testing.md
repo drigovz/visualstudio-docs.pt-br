@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301398"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851197"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso de Shims para isolar partes do seu aplicativo para testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ Os tipos de stub* são uma das duas tecnologias fornecidas pelo Microsoft Fakes 
 
  No diagrama, o componente StockAnalyzer é aquele que desejamos testar. Ele geralmente usa outro componente, RealStockFeed. Mas RealStockFeed retorna resultados diferentes sempre que seus métodos são chamados, dificultando o teste do StockAnalyzer.  Durante o teste, nós o substituímos por uma classe diferente, StubStockFeed.
 
- ![As classes reais e de stub estão em conformidade com uma interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como System.dll, você normalmente usaria shims. Confira o artigo [Uso de shims para isolar o seu aplicativo de outros assemblies para o teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>{1&gt;Orientação&lt;1}
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Isolando código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

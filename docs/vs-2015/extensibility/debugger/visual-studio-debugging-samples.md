@@ -12,12 +12,12 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f1dab6be397028917976c9827e48a6748ba78bd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 73af28d8cb84e30f053000b601cb497ed052b310
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295993"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917571"
 ---
 # <a name="visual-studio-debugging-samples"></a>Amostras de depuração do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,4 +26,4 @@ Dois exemplos mostram como estender o depurador do Visual Studio usando [!INCLUD
   
 - O exemplo do avaliador de expressão do depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Na janela [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], clique na guia **exemplos** , clique em **tudo** ou **C#** na lista de idiomas e clique em **depurador**.  
   
-- O exemplo de mecanismo de depuração do Visual Studio, para idiomas nativos, está disponível na Galeria de códigos do MSDN. Para obter mais informações, consulte esta página no site da Microsoft: [exemplo do mecanismo de depuração do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).
+- O exemplo de mecanismo de depuração do Visual Studio, para idiomas nativos, está disponível na Galeria de códigos do MSDN. Para obter mais informações, consulte o exemplo no GitHub: [exemplo do mecanismo de depuração do Visual Studio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Visual%20Studio%20Debug%20Engine%20Sample).

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299799"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844326"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](https://go.microsoft.c
   
 - Emuladores do Windows Phone e o Emulador do Microsoft Visual Studio para Android requerem um computador que possa executar o Hyper-V. O recurso do Hyper-V do Windows deve ser habilitado antes que você possa instalar e executar os emuladores. Para obter mais informações, consulte os [requisitos de sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) do emulador.  
   
-- Os emuladores de Android x86 que vêm com o SDK do Android funcionam melhor em computadores que executam o driver Intel HAXM. Este driver requer um processador Intel x64 com VT-x e suporte para Execute Disable Bit. Para obter mais informações, consulte [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385) (Instruções para instalação do Intel® Hardware Accelerated Execution Manager – Microsoft Windows).  
+- Os emuladores de Android x86 que vêm com o SDK do Android funcionam melhor em computadores que executam o driver Intel HAXM. Este driver requer um processador Intel x64 com VT-x e suporte para Execute Disable Bit. Para obter mais informações, consulte [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://github.com/intel/haxm) (Instruções para instalação do Intel® Hardware Accelerated Execution Manager – Microsoft Windows).  
   
 - Compilar código para iOS requer uma Apple ID, uma conta do Programa de Desenvolvedores de iOS e um computador Mac que possa executar o [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) ou posterior versões OS X Mavericks ou posteriores. Para ver etapas de instalação simples, consulte [Instalar ferramentas para iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a> Obter as ferramentas  
- O Visual C++ para Desenvolvimento Móvel de Multiplataforma é um componente instalável incluído nas edições Enterprise, Professional e Community do Visual Studio. Para obter o Visual Studio, vá até a página de [Downloads do Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) e baixe o Visual Studio 2015 com a Atualização 2 ou posterior.  
+ O Visual C++ para Desenvolvimento Móvel de Multiplataforma é um componente instalável incluído nas edições Enterprise, Professional e Community do Visual Studio. Para obter o Visual Studio, vá até a página de [Downloads do Visual Studio 2015](https://visualstudio.microsoft.com/downloads/) e baixe o Visual Studio 2015 com a Atualização 2 ou posterior.  
   
 ## <a name="InstallTheTools"></a> Instalar as ferramentas  
  O instalador do Visual Studio 2015 inclui uma opção para instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma. Isso instala os modelos, componentes e ferramentas de linguagem C++ necessários para o Visual Studio, os conjuntos de ferramentas GCC e Clang necessários para compilação e depuração de Android, e componentes para se comunicar com um Mac para desenvolvimento de iOS. Ele também instala todas as ferramentas de terceiros e kits de desenvolvimento de software que são necessários para dar suporte ao desenvolvimento de aplicativos Android e iOS. A maioria dessas ferramentas de terceiros são softwares livres necessários para dar suporte à plataforma Android.  
@@ -133,6 +133,6 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](https://go.microsoft.c
   
 4. Escolha **OK** para salvar os locais de pasta da ferramenta personalizada.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Instalar e configurar ferramentas para criação usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ em plataforma cruzada móvel](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

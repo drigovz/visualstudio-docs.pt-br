@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297981"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851275"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar automação de interface do usuário para testar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
 
  O CUIT Test Builder especializado e o editor facilitam a criação e a edição de testes de IU codificados mesmo que suas habilidades principais estejam concentradas em testes, e não em codificação. Mas, se você for um desenvolvedor e quiser estender o teste de maneira mais avançada, o código será estruturado para simplificar a cópia e a adaptação. Por exemplo, convém registrar um teste para comprar algo em um site e editar o código gerado para adicionar um loop que compre muitos itens.
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -465,24 +465,24 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter diretrizes adicionais, consulte [Teste para Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizando os Testes de Sistema](https://go.microsoft.com/fwlink/?LinkID=255196). Para obter mais informações sobre testes manuais, consulte [&#91;retired&#93; Criar Casos de Testes Manuais por meio do Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obter mais informações sobre testes de sistemas automatizados, consulte [Criar Testes Automatizados por meio do Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter diretrizes adicionais, consulte [Teste para Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizando os Testes de Sistema](https://msdn.microsoft.com/library/jj159335.aspx). Para obter mais informações sobre testes manuais, consulte [&#91;retired&#93; Criar Casos de Testes Manuais por meio do Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obter mais informações sobre testes de sistemas automatizados, consulte [Criar Testes Automatizados por meio do Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Recursos Externos
 
 ### <a name="guidance"></a>{1&gt;Orientação&lt;1}
-- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Perguntas Frequentes
-- [Perguntas frequentes sobre testes de IU codificados – 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Perguntas frequentes
+- [Perguntas frequentes sobre testes de IU codificados – 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [Perguntas frequentes sobre testes de IU codificados – 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [Perguntas frequentes sobre testes de IU codificados – 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Fórum
-- [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

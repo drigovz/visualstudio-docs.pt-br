@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300662"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852163"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multithread de mau comportamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.  
   
- Para obter mais informações, consulte "Performance Pattern 1: Identifying Lock Contention (Padrão de desempenho 1: identificando a contenção de bloqueio)" no blog de Hazim Shafi [Parallel Performance Tools For Windows (Ferramentas de desempenho paralelo para Windows)](https://go.microsoft.com/fwlink/?LinkID=160569) no site da Web do blog do MSDN.  
+ Para obter mais informações, consulte "Performance Pattern 1: Identifying Lock Contention (Padrão de desempenho 1: identificando a contenção de bloqueio)" no blog de Hazim Shafi [Parallel Performance Tools For Windows (Ferramentas de desempenho paralelo para Windows)](https://blogs.msdn.com/hshafi) no site da Web do blog do MSDN.  
   
  ![Contenção de bloqueio](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -66,5 +66,5 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Comboios de bloqueio ocorrem quando o aplicativo adquire bloqueios em ordem de chegada e quando a taxa de chegada no bloqueio é maior que a taxa de aquisição. A combinação dessas duas condições faz com que as solicitações do bloqueio comecem a fazer backup. Uma maneira de combater esse problema é usar bloqueios “desleais” ou bloqueios que dão acesso ao primeiro thread para localizá-los em estados desbloqueados. A ilustração anterior mostra o comportamento desse comboio. Para resolver o problema, experimente reduzir a contenção dos objetos de sincronização e usar bloqueios desleais.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

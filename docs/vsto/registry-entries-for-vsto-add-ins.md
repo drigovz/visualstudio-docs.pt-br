@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955043"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919127"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas de registro para suplementos do VSTO
   Você deve criar um conjunto específico de entradas de registro ao implantar suplementos do VSTO que são criados usando o Visual Studio. Essas entradas de registro fornecem informações que permitem que o aplicativo Microsoft Office descubra e carregue o suplemento do VSTO.
@@ -62,7 +62,7 @@ ms.locfileid: "74955043"
 >
 >Se o instalador estiver direcionando para o usuário atual, ele não precisará ser instalado no WOW6432Node porque o caminho de HKEY_CURRENT_USER \Software é compartilhado.
 >
->Para obter mais informações, consulte [dados de aplicativos de 32 bits e de 64 bits no registro](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
+>Para obter mais informações, consulte [dados de aplicativos de 32 bits e de 64 bits no registro](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  A tabela a seguir lista as entradas nessa chave do registro.
 
@@ -99,7 +99,7 @@ ms.locfileid: "74955043"
 |9|Carregado|Carregar sob demanda|O suplemento do VSTO será carregado somente quando o aplicativo exigir, como quando um usuário clicar em um elemento da interface do usuário que usa a funcionalidade no suplemento do VSTO (por exemplo, um botão personalizado na faixa de bits).<br /><br /> Se o aplicativo carregar o suplemento do VSTO com êxito, o valor **LoadBehavior** permanecerá em 9, mas o status do suplemento do VSTO na caixa de diálogo **suplementos do com** será atualizado para indicar que o suplemento do VSTO está carregado no momento. Se ocorrer um erro ao carregar o suplemento do VSTO, o valor **LoadBehavior** será alterado para 8.|
 |16|Carregado|Carregar pela primeira vez e carregar sob demanda|Defina esse valor se desejar que seu suplemento do VSTO seja carregado sob demanda. O aplicativo carrega o suplemento do VSTO quando o usuário executa o aplicativo pela primeira vez. Na próxima vez que o usuário executar o aplicativo, o aplicativo carregará todos os elementos da interface do usuário que são definidos pelo suplemento do VSTO, mas o suplemento do VSTO não será carregado até que o usuário clique em um elemento de interface de usuário associado ao suplemento do VSTO.<br /><br /> Quando o aplicativo carrega o suplemento do VSTO com êxito pela primeira vez, o valor **LoadBehavior** permanece 16 enquanto o suplemento do VSTO é carregado. Depois que o aplicativo é fechado, o valor **LoadBehavior** muda para 9.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Criar soluções do Office](../vsto/building-office-solutions.md)

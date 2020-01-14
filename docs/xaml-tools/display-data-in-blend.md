@@ -9,16 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f273294d9da0c0cf71f96ae3bde8e5e0457259c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592969"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886450"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Exibir dados no Blend para Visual Studio
 
 É possível exibir dados de exemplo no designer ao personalizar o layout de páginas. É possível gerar dados de exemplo do zero ou usando uma classe existente. Você também pode se conectar aos *Dados dinâmicos* que aparecem no aplicativo quando você o executa.
+
+> [!NOTE]
+> O painel de **dados** no Blend tem suporte apenas para projetos direcionados .NET Framework. Não há suporte para projetos UWP ou projetos destinados ao .NET Core. 
 
 ## <a name="generate-sample-data"></a>Gerar dados de exemplo
 

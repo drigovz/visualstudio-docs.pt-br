@@ -13,29 +13,29 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302851"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846326"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
 Este tópico descreve como usar a caixa de diálogo **Editor de condição de regra** no [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Você cria e modifica condições declarativas de regra usando a caixa de diálogo **Editor de condição de regra** . Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
   Você acessa a caixa de diálogo **Editor de condição de regra** usando a caixa de [diálogo Selecionar condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
@@ -44,7 +44,7 @@ Este tópico descreve como usar a caixa de diálogo **Editor de condição de re
 |Elemento da interface|Descrição|
 |----------------|-----------------|
 |**Problema**|Insira a expressão para a condição de regra.|
-|**Okey**|Clique para salvar a condição de regra.|
+|**OK**|Clique para salvar a condição de regra.|
 
 ## <a name="entering-condition-expressions"></a>Inserindo expressões de condição
  Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu semelhante ao IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são **==** , **>** , **\<** , **>=** e **<=** . Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.
@@ -79,7 +79,7 @@ Este tópico descreve como usar a caixa de diálogo **Editor de condição de re
 
   == 1U de this.i (resoluções como um unsigned int)
 
-  Para obter mais informações sobre condições, consulte [usando condições em fluxos de trabalho](https://go.microsoft.com/fwlink?LinkID=65009).
+  Para obter mais informações sobre condições, consulte [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>Consulte também
- [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [caixa de diálogo de seleção de condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md) [usando condições em fluxos de trabalho](https://go.microsoft.com/fwlink?LinkID=65009) [Designer herdado para ajuda da interface do usuário Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>Veja também
+ [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [caixa de diálogo de seleção de condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md) [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx) [Designer herdado para ajuda da interface do usuário Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

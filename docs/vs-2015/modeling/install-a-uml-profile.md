@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298917"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850660"
 ---
 # <a name="install-a-uml-profile"></a>Instalar um perfil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Você pode estender o Visual Studio com um perfil UML. Um perfil permite adicion
 
  Se você receber um modelo UML que foi criado usando perfis, algumas propriedades não serão exibidas, a menos que você instale os mesmos perfis.
 
- Um perfil é distribuído dentro de uma extensão do Visual Studio. Uma extensão também pode conter outros recursos, como comandos de menu. Para obter mais informações, consulte [Gerenciando extensões do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
+ Um perfil é distribuído dentro de uma extensão do Visual Studio. Uma extensão também pode conter outros recursos, como comandos de menu. Para obter mais informações, consulte [Gerenciando extensões do Visual Studio](https://msdn.microsoft.com/library/dd293638(VS.100).aspx).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Para instalar um perfil UML em seu computador
 
@@ -45,5 +45,5 @@ Você pode estender o Visual Studio com um perfil UML. Um perfil permite adicion
 
 2. Clique na extensão que você deseja remover e, em seguida, clique em **desabilitar** ou **desinstalar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [defina um perfil para estender o UML](../modeling/define-a-profile-to-extend-uml.md)

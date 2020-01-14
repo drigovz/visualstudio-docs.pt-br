@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594052"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845806"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis com testes de IU codificados e gravações de ação
 
@@ -54,7 +54,7 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | {1&gt;Sem suporte.&lt;1} |
 | Chrome<br /><br /> Firefox | Não há suporte para a gravação de etapas de ação. Os testes de IU codificados podem ser executados novamente nos navegadores Chrome e Firefox com a Atualização 4 do Visual Studio 2012 ou posterior. Acesse [aqui](using-different-web-browsers-with-coded-ui-tests.md) para obter mais detalhes. |
 | Opera<br /><br /> Safari | {1&gt;Sem suporte.&lt;1} |
-| Silverlight | {1&gt;Sem suporte.&lt;1}<br /><br /> No entanto, para o Visual Studio 2013, é possível baixar o [Plug-in do teste de IU codificado do Microsoft Visual Studio 2013 para Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) na Galeria do Visual Studio. |
+| Silverlight | {1&gt;Sem suporte.&lt;1}<br /><br /> No entanto, para o Visual Studio 2013, é possível baixar o [Plug-in do teste de IU codificado do Microsoft Visual Studio 2013 para Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) na Galeria do Visual Studio. |
 | Flash/Java | {1&gt;Sem suporte.&lt;1} |
 | Windows Forms 2.0 e posterior | Suporte total. **Observação:** os controles NetFx têm suporte completo, mas nem todos os controles de terceiros têm suporte. |
 | WPF 3.5 e posterior | Suporte total.<br /><br /> **Observação** Os controles NetFx têm suporte completo, mas nem todos os controles de terceiros têm suporte. |

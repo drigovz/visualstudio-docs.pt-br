@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295749"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851559"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Em seguida, use a janela **Propriedades** para alterar a aparência do seu formulário.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Para definir suas propriedades de formulário
 

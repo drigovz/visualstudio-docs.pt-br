@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296913"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847821"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  Continue na [visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md) para saber mais sobre o que o Visual Studio diagnóstico de gráficos oferece.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
+ [Visão Geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Apresenta o fluxo de trabalho e as ferramentas de Diagnóstico de Gráficos.  
   
  [Introdução](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
@@ -81,7 +81,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
   
 ## <a name="related-sections"></a>Seções Relacionadas  
   
-|Título|Descrição|  
+|Cargo|Descrição|  
 |-----------|-----------------|  
 |[Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)|Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Gráficos e jogos do DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Fornece artigos que discutem as tecnologias de gráficos do DirectX.|
+|[Elementos gráficos e jogos do DirectX](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Fornece artigos que discutem as tecnologias de gráficos do DirectX.|

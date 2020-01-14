@@ -1,16 +1,16 @@
 ---
 title: Visão geral do XAML
-ms.date: 07/31/2019
+ms.date: 01/10/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a5f366e81a0ef3c13c3ca1c39ccc3bf44257b6e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2556387f523769bba93708a9c00d1f7c62429c0f
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592900"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886423"
 ---
 # <a name="overview-of-xaml"></a>Visão geral do XAML
 
@@ -30,9 +30,13 @@ O XAML também é usado para definir fluxos de trabalho em [aplicativos do WF (W
 
 ## <a name="xaml-designer"></a>XAML Designer
 
-O Visual Studio e o Blend para Visual Studio fornecem um Designer XAML que ajuda a criar interfaces do usuário (IU) para aplicativos WPF, UWP e Xamarin.Forms. Você pode arrastar controles das janelas Caixa de ferramentas ou Ativos e definir propriedades na janela Propriedades. Quando você executa essas ações, o Visual Studio e o Blend para Visual Studio criam o código XAML correspondente. Se você preferir, também poderá editar diretamente o código XAML.
+O Visual Studio e o Blend para Visual Studio fornecem um Designer XAML que ajuda a criar interfaces do usuário (IU) para aplicativos WPF, UWP e Xamarin.Forms. Você pode arrastar controles das janelas Caixa de ferramentas ou Ativos e definir propriedades na janela Propriedades. Quando você faz isso, o Visual Studio e o Blend para Visual Studio criam o código XAML correspondente. Se você preferir, também poderá editar diretamente o código XAML.
 
 Os artigos neste conjunto de documentação discutem o Designer XAML no Visual Studio e no Blend para Visual Studio.
+
+## <a name="whats-new"></a>O que há de novo
+
+Para obter as informações mais recentes, consulte as novidades [em ferramentas de desenvolvedor XAML na](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) postagem de blog do visual Studio 2019 e os [novos recursos XAML no vídeo do Visual Studio](https://youtu.be/yI9OyA4ZM2E) sobre o YouTube.
 
 ## <a name="see-also"></a>Veja também
 

@@ -16,21 +16,21 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6111900fb4c7b12a6238046fd27c3f6dad9d15ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294239"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848338"
 ---
-# <a name="maintaining-security"></a>Mantendo segurança
+# <a name="maintaining-security"></a>Mantendo a segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Costuma-se dizer que o preço da segurança é a vigilância constante. Apesar da sua dedicação à segurança durante o design e desenvolvimento de seu aplicativo, você deve supor que as falhas na segurança surgirão após a implantação. Ao auditar seu aplicativo e analisar os logs de evento, você pode descobrir algumas falhas anteriormente ocultas.
 
  Além de ser vigilante com seu próprio aplicativo, você também deve se manter atualizado sobre as ameaças e falhas de segurança da plataforma na qual seu aplicativo é executado e de outros produtos dos quais seu aplicativo depende.
 
- [Segurança, privacidade e contas](https://go.microsoft.com/fwlink/?LinkId=72881) Obtenha ajuda com as contas de segurança, privacidade e usuário, incluindo informações sobre vírus, senhas, controles dos pais, firewalls e criptografia de unidade.
+ [Segurança, privacidade e contas](https://windows.microsoft.com/windows/security-privacy-accounts-help#security-privacy-accounts-help=windows-8&v0h=winrttab1&v1h=win8tab1&v2h=win7tab1&v3h=winvistatab1) Obtenha ajuda com as contas de segurança, privacidade e usuário, incluindo informações sobre vírus, senhas, controles dos pais, firewalls e criptografia de unidade.
 
  [Pesquisa do boletim de segurança da Microsoft](/security-updates/) Esta página facilita a localização de boletins lançados anteriormente. Destinados aos profissionais de TI, os boletins de segurança fornecem informações detalhadas sobre atualizações de segurança.
 

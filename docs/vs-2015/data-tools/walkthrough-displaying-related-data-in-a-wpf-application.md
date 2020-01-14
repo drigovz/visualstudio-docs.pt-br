@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299575"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850249"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Instruções passo a passo: exibindo dados relacionados em um aplicativo WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://codeplex.com/SqlServerSamples).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
@@ -106,9 +106,9 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    - **SalesOrderHeader**
 
-7. Clique em **Concluir**.
+7. Clique em **Finalizar**.
 
-8. Compile o projeto.
+8. Crie o projeto.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Criando controles vinculados a dados que exibem os pedidos
  Crie controles que exibam registros de pedidos arrastando a entidade `SalesOrderHeaders` da janela **fontes de dados** para o designer do WPF.
@@ -143,7 +143,7 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    - **TaxAmt**
 
-   - **Despacha**
+   - **Freight**
 
    - **rowguid**
 
@@ -205,5 +205,5 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 ## <a name="next-steps"></a>Próximas etapas
  Depois de concluir este passo a passos, saiba como usar a janela **fontes de dados** no Visual Studio para associar controles WPF a outros tipos de fontes de dados. Para obter mais informações, consulte [associar controles WPF a um WCF Data Service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) e [associar controles WPF a um conjunto](../data-tools/bind-wpf-controls-to-a-dataset.md)de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [exibir dados relacionados em aplicativos do WPF](../data-tools/display-related-data-in-wpf-applications.md)

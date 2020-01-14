@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295650"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852281"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Um pacote VSIX é um arquivo. vsix que contém uma ou mais extensões do Visual 
   
  Por padrão, a instalação se aplica somente ao usuário atual, pois% LocalAppData% é um diretório específico do usuário. No entanto, se você definir o elemento [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) do manifesto como `True`, a extensão será instalada em..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions e estará disponível para todos os usuários do computador.  
   
-## <a name="content_typesxml"></a>[Content_Types]. xml  
+## <a name="content_typesxml"></a>[Content_Types].xml  
  O arquivo [Content_Types]. xml identifica os tipos de arquivo no arquivo. vsix expandido. O Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o próprio arquivo. Para obter mais informações sobre esse arquivo, consulte [a estrutura do arquivo Content_types\]. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Um arquivo [Content_Types]. xml é exigido pelo padrão OPC (Open Packaging Conventions). Para obter mais informações sobre o OPC, consulte [OPC: um novo padrão para empacotar seus dados](https://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.
+ Um arquivo [Content_Types]. xml é exigido pelo padrão OPC (Open Packaging Conventions). Para obter mais informações sobre o OPC, consulte [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx) no site do MSDN.

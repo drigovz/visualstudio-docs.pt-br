@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291882"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848460"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O SAL (código-fonte de nota) da Microsoft fornece um conjunto de anotações que você pode usar para descrever como uma função usa seus parâmetros, as suposições que ele faz sobre eles e as garantias que ele faz quando é concluído. As anotações são definidas no arquivo de cabeçalho `<sal.h>`. A análise de código do C++ Visual Studio para usa anotações sal para modificar sua análise de funções. Para obter mais informações sobre o SAL 2,0 para o desenvolvimento de drivers do Windows, consulte [sal 2,0 anotações para drivers do Windows](https://go.microsoft.com/fwlink/?LinkId=250979).  
+O SAL (código-fonte de nota) da Microsoft fornece um conjunto de anotações que você pode usar para descrever como uma função usa seus parâmetros, as suposições que ele faz sobre eles e as garantias que ele faz quando é concluído. As anotações são definidas no arquivo de cabeçalho `<sal.h>`. A análise de código do C++ Visual Studio para usa anotações sal para modificar sua análise de funções. Para obter mais informações sobre o SAL 2,0 para o desenvolvimento de drivers do Windows, consulte [sal 2,0 anotações para drivers do Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  Nativamente, C e C++ fornecem apenas maneiras limitadas para os desenvolvedores expressem consistentemente a intenção e a invariância. Usando anotações SAL, você pode descrever suas funções com mais detalhes para que os desenvolvedores que as estejam consumindo possam entender melhor como usá-las.  
   
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Noções básicas sobre SAL  
  O SAL define quatro tipos básicos de parâmetros, que são categorizados por padrão de uso.  
   
-|Category|Anotação de parâmetro|Descrição|  
+|Categoria|Anotação de parâmetro|Descrição|  
 |--------------|--------------------------|-----------------|  
 |**Entrada para a função chamada**|`_In_`|Os dados são passados para a função chamada e são tratados como somente leitura.|  
 |**Entrada para a função chamada e saída para o chamador**|`_Inout_`|Os dados utilizáveis são passados para a função e potencialmente são modificados.|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  Esta seção mostra exemplos de código para as anotações SAL básicas.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Usando a ferramenta de análise de Visual Studio Code para encontrar defeitos  
- Nos exemplos, a ferramenta de análise de Visual Studio Code é usada junto com anotações SAL para encontrar defeitos de código. Veja como fazer isso.  
+ Nos exemplos, a ferramenta de análise de Visual Studio Code é usada junto com anotações SAL para encontrar defeitos de código. Veja a seguir como fazer isso.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Para usar as ferramentas de análise de código do Visual Studio e o SAL  
   
@@ -409,9 +409,9 @@ bool GetValue(_Out_ int *pInt, bool flag)
   Ou você pode anotar todos os parâmetros para que sua intenção fique mais clara e para facilitar a verificação de que as anotações foram feitas.  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog da equipe de análise de código](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Blog da equipe de análise de código](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Usando anotações de sal para reduzir os defeitosC++ de C/código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)   
  [Comportamento de função de anotação](../code-quality/annotating-function-behavior.md)   

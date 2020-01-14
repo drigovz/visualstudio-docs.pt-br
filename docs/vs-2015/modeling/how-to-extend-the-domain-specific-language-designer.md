@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300899"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916795"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode fazer extensões para o designer que você usa para Editar definições de DSL. Os tipos de extensão que você pode fazer incluem adicionar comandos de menu, adicionar manipuladores para gestos de arrastar e clicar duas vezes e regras que são disparadas quando determinados tipos de valores ou relações são alterados. As extensões podem ser empacotadas como um VSIX (extensão de integração do Visual Studio) e distribuídas a outros usuários.
-
- Para obter um exemplo de código e mais informações sobre esse recurso, consulte o site Visual Studio [Visualization and Modeling SDK (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 ## <a name="setting-up-the-solution"></a>Configurando a solução
  Configure um projeto que contém o código de sua extensão e um projeto VSIX que exporta o projeto. Sua solução pode conter outros projetos que são incorporados ao mesmo VSIX.
@@ -71,7 +69,7 @@ Você pode fazer extensões para o designer que você usa para Editar definiçõ
 
  Para implantar as extensões no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e em outros computadores, siga estas etapas:
 
-1. Localize o arquivo de instalação do VSIX, em seu projeto VSIX no bin\\*\\\*. vsix
+1. Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix
 
 2. Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou no explorador de arquivos), clique duas vezes nele.
 

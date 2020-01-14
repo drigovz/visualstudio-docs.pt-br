@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568830"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848585"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integrar novos recursos ao Visual Studio. Você pode distribuir suas extensões para outros usuários, bem como para a Visual Studio Marketplace. A seguir estão algumas das maneiras pelas quais você pode estender o Visual Studio:
@@ -60,7 +60,7 @@ O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integ
  Você pode encontrar a referência de API do SDK do Visual Studio na [referência do SDK do Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Exemplos do SDK do Visual Studio
- Você pode encontrar exemplos de software livre de extensões do SDK do VS no GitHub em [exemplos do Visual Studio](https://aka.ms/vs2015sdksamples). Este repositório do GitHub contém exemplos que ilustram vários recursos extensíveis no Visual Studio.
+ Você pode encontrar exemplos de software livre de extensões do SDK do VS no GitHub em [exemplos do Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Este repositório do GitHub contém exemplos que ilustram vários recursos extensíveis no Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Outros recursos do SDK do Visual Studio
  Se você tiver dúvidas sobre o VSSDK ou quiser compartilhar suas experiências desenvolvendo extensões, poderá usar o fórum de [extensibilidade do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) ou o [ExtendVS Gitter chatroom](https://gitter.im/Microsoft/extendvs).
@@ -73,7 +73,7 @@ O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integ
 
 - [Estendendo o Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

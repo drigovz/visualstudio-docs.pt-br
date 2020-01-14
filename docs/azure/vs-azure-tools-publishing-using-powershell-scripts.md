@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573307"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916015"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste
 
@@ -26,7 +26,7 @@ Usando esses scripts, você pode provisionar versões personalizadas (também co
 
 * O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou posterior.
+* [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou posterior.
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
