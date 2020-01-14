@@ -30,6 +30,8 @@
       items:
         - name: Analisar o uso de memória
           href: analyze-memory-usage.md
+        - name: Analisar o uso de memória para objetos do .NET
+          href: dotnet-alloc-tool.md
         - name: Eventos de heap de ETW nativos personalizados
           href: custom-native-etw-heap-events.md
         - name: Uso de memória sem o depurador
@@ -144,7 +146,7 @@
               href: how-to-specify-the-binary-to-start.md
             - name: Definir opções de nome de arquivo de dados de desempenho
               href: how-to-set-performance-data-file-name-options.md
-            - name: Especificar o tempo de execução do .NET Framework
+            - name: Especificar o runtime do .NET Framework
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Controlar a coleta de dados
           items:
