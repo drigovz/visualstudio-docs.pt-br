@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299281"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850967"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erros e avisos de Editar e Continuar (C#)
 Você fez uma edição em uma seção do código que não é permitido em Editar e Continuar do Visual C#.  
@@ -75,7 +75,7 @@ Você fez uma edição em uma seção do código que não é permitido em Editar
   
  As edições declarativas de código que afetam a estrutura pública de uma classe são proibidas em geral, e algumas edições que você pode fazer em um método, corpo da propriedade ou declarações privadas dentro de uma classe não são permitidas. Sempre que possível, Editar e Continuar marca o código que não pode ser editado como cinza claro e exibe uma mensagem de erro.  
   
- Para obter mais informações sobre edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [alterações de códigoC#com suporte ()](../debugger/supported-code-changes-csharp.md). Se precisar de mais informações sobre um erro ou aviso específico, você poderá pesquisar ou postar no fórum do [msdn C# Visual IDE](https://go.microsoft.com/fwlink/?LinkId=214693).  
+ Para obter mais informações sobre edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [alterações de códigoC#com suporte ()](../debugger/supported-code-changes-csharp.md). Se precisar de mais informações sobre um erro ou aviso específico, você poderá pesquisar ou postar no fórum do [msdn C# Visual IDE](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
@@ -85,5 +85,5 @@ Você fez uma edição em uma seção do código que não é permitido em Editar
   
 2. Pare a sessão de depuração, faça as edições e inicie uma nova sessão de depuração.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

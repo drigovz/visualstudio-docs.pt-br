@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295815"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918853"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ A API de imutabilidade do SDK de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vi
 > [!NOTE]
 > Uma política de bloqueio pode ser contornada usando a reflexão. Ele fornece um limite claro para desenvolvedores de terceiros, mas não fornece segurança forte.
 
- Mais informações e exemplos estão disponíveis no site [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [visualização e na modelagem do SDK](https://go.microsoft.com/fwlink/?LinkId=186128) .
+ Mais informações estão disponíveis no site [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [visualização e SDK de modelagem](https://www.microsoft.com/download/details.aspx?id=48148) .
 
 ## <a name="setting-and-getting-locks"></a>Configurando e obtendo bloqueios
  Você pode definir bloqueios no repositório, em uma partição ou em um elemento individual. Por exemplo, essa instrução impedirá que um elemento de modelo seja excluído e também impedirá que suas propriedades sejam alteradas:
@@ -55,7 +55,7 @@ partition.SetLocks(Locks.Delete);
 
  Um bloqueio que é definido no repositório se aplica a todos os seus elementos, independentemente das configurações desse bloqueio nas partições e nos elementos.
 
-### <a name="using-locks"></a>Usando bloqueios
+### <a name="using-locks"></a>Como usar LongTask
  Você pode usar bloqueios para implementar esquemas, como os exemplos a seguir:
 
 - Não permitir alterações em todos os elementos e relações, exceto aqueles que representam comentários. Isso permite que os usuários anotem um modelo sem alterá-lo.
@@ -77,16 +77,16 @@ partition.SetLocks(Locks.Delete);
 
   Você não pode definir um bloqueio em uma partição ou repositório e, ao mesmo tempo, desabilitar o bloqueio em um elemento individual.
 
-|Valor|Significando se `IsLocked(Value)` é true|
+|Value|Significando se `IsLocked(Value)` é true|
 |-----------|------------------------------------------|
-|Nenhum|Sem restrição.|
-|Propriedade|As propriedades de domínio de elementos não podem ser alteradas. Isso não se aplica a propriedades que são geradas pela função de uma classe de domínio em uma relação.|
-|Adicionar|Novos elementos e links não podem ser criados em uma partição ou repositório.<br /><br /> Não aplicável a `ModelElement`.|
+|{1&gt;Nenhum&lt;1}|Sem restrição.|
+|propriedade|As propriedades de domínio de elementos não podem ser alteradas. Isso não se aplica a propriedades que são geradas pela função de uma classe de domínio em uma relação.|
+|{1&gt;{2&gt;Adicionar&lt;2}&lt;1}|Novos elementos e links não podem ser criados em uma partição ou repositório.<br /><br /> Não aplicável a `ModelElement`.|
 |Mover|O elemento não poderá ser movido entre partições se `element.IsLocked(Move)` for true ou se `targetPartition.IsLocked(Move)` for true.|
 |Excluir|Um elemento não poderá ser excluído se esse bloqueio for definido no próprio elemento ou em qualquer um dos elementos para os quais a exclusão seria propagada, como elementos e formas inseridos.<br /><br /> Você pode usar `element.CanDelete()` para descobrir se um elemento pode ser excluído.|
 |Reordenar|A ordenação de links em um roleplayer não pode ser alterada.|
 |RolePlayer|O conjunto de links que são originados neste elemento não pode ser alterado. Por exemplo, novos elementos não podem ser inseridos sob este elemento. Isso não afeta os links para os quais esse elemento é o destino.<br /><br /> Se esse elemento for um link, sua origem e destino não serão afetados.|
-|Tudo|Or de bits or dos outros valores.|
+|{1&gt;Todos&lt;1}|Or de bits or dos outros valores.|
 
 ## <a name="locking-policies"></a>Políticas de bloqueio
  Como autor de uma DSL, você pode definir uma *política de bloqueio*. Uma política de bloqueio modera a operação de setlocks (), para que você possa impedir que bloqueios específicos sejam definidos ou mandatos que os bloqueios específicos devem ser definidos. Normalmente, você usaria uma política de bloqueio para desencorajar os usuários ou desenvolvedores de contravening acidentalmente o uso pretendido de uma DSL, da mesma maneira que você pode declarar uma variável `private`.

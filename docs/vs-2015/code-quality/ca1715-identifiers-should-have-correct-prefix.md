@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669111"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919184"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: os identificadores devem ter o prefixo correto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1715: identificadores devem ter o prefixo correto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1715: identificadores devem ter o prefixo correto](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Categoria|Microsoft. Naming|
+|Categoria|Microsoft.Naming|
 |Alteração Significativa|Quebra-quando acionado em interfaces.<br /><br /> Não separável-quando gerado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
  O nome de uma interface visível externamente não começa com ' I ' em letras maiúsculas.
 
- \- ou -
+ - ou -
 
  O nome de um parâmetro de tipo genérico em um tipo ou método visível externamente não começa com uma letra maiúscula ' T'.
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429607"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848418"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Como selecionar um ambiente do Python para um projeto
 
@@ -26,7 +26,7 @@ Todos os novos projetos Python no Visual Studio são inicialmente configurados p
 ![O ambiente de Python global padrão mostrado no Gerenciador de Soluções](media/environments/environments-project.png)
 
 ::: moniker range="vs-2017"
-Para alterar o ambiente de um projeto, clique com o botão direito do mouse no nó **Ambientes de Python** e escolha **Adiconar/Remover Ambientes de Python**. Na lista exibida, que inclui ambientes global, virtual e conda, selecione todos os que devem aparecer no nó **Ambientes do Python**:
+Para alterar o ambiente de um projeto, clique com o botão direito do mouse no nó **Ambientes de Python** e escolha **Adiconar/Remover Ambientes de Python**. Na lista exibida, que inclui ambientes globais, virtuais e Conda, selecione todos aqueles que você deseja que apareçam sob o nó **ambientes Python** :
 
 ![Caixa de diálogo Adicionar/Remover Ambientes do Python](media/environments/environments-add-remove.png)
 
@@ -38,11 +38,11 @@ Para ativar rapidamente outro ambiente, clique com o botão direito do mouse no 
 
 O menu de contexto no nó **Ambientes do Python** também fornece comandos adicionais:
 
-| Comando | Descrição |
+| {1&gt;Comando&lt;1} | Descrição |
 | --- | --- |
 | **Adicionar ambiente virtual** | Inicia o processo de criação de um novo ambiente virtual no projeto. Confira [Criar um ambiente virtual](#create-a-virtual-environment). |
 | **Adicionar um ambiente virtual existente** | Solicita que você selecione uma pasta que contém um ambiente virtual e o adiciona à lista em **Ambientes do Python**, mas não o ativa. Confira [Ativar um ambiente virtual existente](#activate-an-existing-virtual-environment). |
-| **Criar ambiente do Conda** | Alterna para a *janela* **Ambientes do Python**, em que você insere um nome para o ambiente e especifica o interpretador de base. Confira [Ambientes do Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Criar ambiente do Conda** | Alterna para a *janela* de ambientes do Python na qual você insere um nome para o ambiente e especifica seu interpretador base. Confira [Ambientes do Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -61,7 +61,7 @@ Se você já adicionou um ambiente diferente do padrão global a um projeto, tal
 
 Um ambiente virtual é uma combinação exclusiva de um intérprete Python específico e um conjunto específico de bibliotecas diferente de outros ambientes conda e globais. Um ambiente virtual é específico a um projeto e é mantido em uma pasta do projeto. Essa pasta contém as bibliotecas instaladas do ambiente e um arquivo *pyvenv.cfg* que especifica o caminho do *interpretador de base* do ambiente em outro lugar no sistema de arquivos. Ou seja, um ambiente virtual não contém uma cópia do interpretador, apenas um link para ele.
 
-Um benefício de usar um ambiente virtual é que, à medida que você desenvolve um projeto ao longo do tempo, o ambiente virtual sempre reflete as dependências exatas do projeto. (Um ambiente compartilhado global, por outro lado, contém qualquer número de bibliotecas, não importa se você as usa no projeto ou não.) É possível criar facilmente um arquivo *requirements.txt* pelo ambiente virtual, que é usado para reinstalar essas dependências em outro computador de desenvolvimento ou produção. Para saber mais, confira [Gerenciar pacotes necessários com requirements.txt](managing-required-packages-with-requirements-txt.md).
+Um benefício de usar um ambiente virtual é que, à medida que você desenvolve um projeto ao longo do tempo, o ambiente virtual sempre reflete as dependências exatas do projeto. (Um ambiente global compartilhado, por outro lado, contém qualquer número de bibliotecas, independentemente de você usá-las em seu projeto ou não). Você pode criar facilmente um arquivo *requirements. txt* do ambiente virtual, que é usado para reinstalar as dependências em outro computador de desenvolvimento ou de produção. Para saber mais, confira [Gerenciar pacotes necessários com requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 Quando você abre um projeto no Visual Studio que contém um arquivo *requirements.txt*, o Visual Studio oferece automaticamente a opção de recriar o ambiente virtual. Em computadores em que o Visual Studio não está instalado, você pode usar `pip install -r requirements.txt` para restaurar os pacotes.
 
@@ -169,9 +169,9 @@ Saiba que as entradas exibidas podem não ser precisas e a instalação e desins
 Observe também que o Visual Studio não oferece suporte no momento ao uso de `conda` para instalar os pacotes em um ambiente conda. Use `conda` na linha de comando.
 
 > [!Tip]
-> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **Erro: Não é possível localizar vcvarsall.bat**. O `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
+> Uma situação comum em que o PIP não conseguirá instalar um pacote ocorrerá quando o pacote incluir o código-fonte para componentes nativos em arquivos *\*.pyd*. Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. O `easy_install` consegue baixar os binários pré-compilados e é possível baixar um compilador adequado para versões mais antigas do Python em [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266). Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)

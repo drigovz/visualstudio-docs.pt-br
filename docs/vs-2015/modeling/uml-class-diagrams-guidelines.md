@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297282"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850196"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramas de classe UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ No Visual Studio, você pode usar um *diagrama de classe UML* para descrever tip
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classes, que é possível criar e usar para visualizar o código do programa. Consulte [criando e exibindo classes e tipos](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classes, que é possível criar e usar para visualizar o código do programa. Consulte [criando e exibindo classes e tipos](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="Using"></a>Usando diagramas de classe UML
  É possível usar um diagrama de classes UML com várias finalidades:
@@ -194,7 +194,7 @@ No Visual Studio, você pode usar um *diagrama de classe UML* para descrever tip
 
  `[1]`
 
- Um valor do tipo indicado. Esse é o padrão.
+ Um valor do tipo indicado. Este é o padrão.
 
  `[0..1]`
 
@@ -300,7 +300,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `unique`
 
- **É exclusivo**
+ **É Exclusivo**
 
  Não há valores duplicados na coleção. Aplica-se a tipos com multiplicidade maior que 1.
 
@@ -472,5 +472,5 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
      Para obter mais informações sobre como definir essas propriedades e personalizar os modelos fornecidos, consulte [gerar código de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Editar modelos UML e](../modeling/edit-uml-models-and-diagrams.md) diagramas [diagramas de classes UML:](../modeling/uml-class-diagrams-reference.md) [requisitos de usuário do modelo](../modeling/model-user-requirements.md) de referência [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md) [diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md) diagramas de [caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md) [diagramas de componentes UML: referência](../modeling/uml-component-diagrams-reference.md)

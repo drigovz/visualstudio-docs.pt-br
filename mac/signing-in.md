@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983662"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844268"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Entrar no Visual Studio para Mac
 
 Para [ativar sua assinatura](enable-subscription.md), basta fazer login no Visual Studio para Mac. Ao baixar o Visual Studio para Mac, você sempre obtém a edição Community por padrão. Se você tem uma [licença Professional ou Enterprise](https://visualstudio.microsoft.com/vs/compare/), faça login na primeira execução para desbloquear quaisquer recursos adicionais. Além disso, você obtém o seguinte:
 
-* **Acesso ao programa Visual Studio Dev Essentials**: este programa inclui ofertas de software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
+* **Acesso ao programa Visual Studio Dev Essentials**: este programa inclui ofertas de software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 * **Conexão automática ao Azure** no IDE sem solicitar credenciais da mesma conta novamente.
 
@@ -61,7 +61,7 @@ Para adicionar contas de usuário adicionais, escolha o menu **Visual Studio > C
 
 3. Quando terminar, escolha **Salvar alterações**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Trabalhar com várias contas de usuário (Visual Studio no Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

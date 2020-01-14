@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297902"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850744"
 ---
 # <a name="network-usage"></a>Uso da Rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 3. O botão de impressão de resposta (dentro da guia Corpo) pode ajudá-lo a analisar as cargas de resposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando a legibilidade do conteúdo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Executar ferramentas de criação de perfil sem depuração](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog do Visual Studio: Apresentando o inspetor de rede do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog do Visual Studio: Apresentando o inspetor de rede do Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Vídeo do Channel 9: ferramentas de diagnóstico do VS – novo criador de perfil de rede](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

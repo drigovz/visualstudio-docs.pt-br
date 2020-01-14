@@ -12,23 +12,23 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588867"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846900"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas de build usando o iOS
 
-Você pode usar o Visual Studio com o **desenvolvimento móvel C++**  de plataforma cruzada com ferramentas para editar, depurar e implantar o código Ios no simulador do Ios ou em um dispositivo IOS. Mas, devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.
+Você pode usar o Visual Studio com o **desenvolvimento móvel C++**  de plataforma cruzada com ferramentas para editar, depurar e implantar o código Ios no simulador do Ios ou em um dispositivo IOS. Mas, devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](https://www.npmjs.com/package/vcremote), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.
 
 > [!NOTE]
 > Para saber mais sobre como usar os serviços hospedados em nuvem do Mac, em vez de um Mac, confira [Configurar o Visual Studio para se conectar ao seu Mac hospedado na nuvem](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). As instruções são para compilação usando as Ferramentas do Visual Studio para Apache Cordova. Para usar as instruções para compilar usando C++, substitua `vcremote` para `remotebuild`.
 
 Depois de instalar as ferramentas para criar usando o iOS, consulte este artigo para obter maneiras de configurar e atualizar rapidamente o agente remoto para o desenvolvimento do iOS no Visual Studio e no seu Mac.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para instalar e usar o agente remoto para desenvolver código para iOS, é necessário primeiro ter estes pré-requisitos:
 
@@ -68,7 +68,7 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
 ## <a name="Install"></a> Instalar o agente remoto para iOS
 
-Quando você instala o desenvolvimento móvel com C++ carga de trabalho, o Visual Studio pode se comunicar com o [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac para transferir arquivos, compilar e executar seu aplicativo Ios e enviar comandos de depuração.
+Quando você instala o desenvolvimento móvel com C++ carga de trabalho, o Visual Studio pode se comunicar com o [vcremote](https://www.npmjs.com/package/vcremote), um agente remoto em execução no seu Mac para transferir arquivos, compilar e executar seu aplicativo Ios e enviar comandos de depuração.
 
 Antes de instalar o agente remoto, verifique se você satisfez os [pré-requisitos](#prerequisites) e concluiu as etapas de instalação em [instalar o desenvolvimento móvel de plataforma cruzada com C++ ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)o.
 
@@ -125,7 +125,7 @@ Depois de iniciar o agente remoto, você pode usá-lo no Visual Studio até par�
 
 #### <a name="to-stop-the-remote-agent"></a>Para parar o agente remoto
 
-- Na janela do terminal `vcremote` está em execução no, digite **Control** +**C**.
+- Na janela do terminal `vcremote` está em execução no, digite **Control**+**C**.
 
 ## <a name="ConfigureVS"></a> Configurar o agente remoto no Visual Studio
 
@@ -278,6 +278,6 @@ Se `ideviceinstaller` erros de que ele não pode acessar a pasta `/var/db/lockdo
     
 Em seguida, verifique novamente se `ideviceinstaller` pode se comunicar com o dispositivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar o desenvolvimento móvel de plataforma cruzada com oC++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

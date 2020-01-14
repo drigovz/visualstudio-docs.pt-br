@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299593"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844196"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Instruções passo a passo: criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 - Gravar código para preencher as tabelas de dados.
 
-  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [vídeo como criar um aplicativo de dados de N camadas](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [vídeo como criar um aplicativo de dados de N camadas](https://msdn2.microsoft.com/library/cc178916.aspx).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Para concluir esta explicação passo a passo, será necessário:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -185,7 +185,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 6. Na página **Escolher Métodos a Serem Gerados**, digite **GetCustomers** para o **Nome do método** na seção **Retornar uma DataTable**.
 
-7. Clique em **Concluir**.
+7. Clique em **Finalizar**.
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Para criar um método na camada de acesso a dados que retorna a tabela Pedidos
 
@@ -199,7 +199,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 5. Na página **Escolher Métodos a Serem Gerados**, digite **GetOrders** para o **Nome do método** na seção **Retornar uma DataTable**.
 
-6. Clique em **Concluir**.
+6. Clique em **Finalizar**.
 
 7. No menu **Compilar**, clique em **Compilar Solução**.
 
@@ -374,7 +374,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 #### <a name="to-test-the-application"></a>Para testar o aplicativo
 
-1. Pressione F5.
+1. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1}
 
 2. Os dados das tabelas Clientes e Pedidos são recuperados a partir do serviço de dados e exibidos no formulário.
 
@@ -385,5 +385,5 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 - Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Trabalhar com conjuntos de dados em aplicativos de n camadas](../data-tools/work-with-datasets-in-n-tier-applications.md) [atualizações hierárquicas](../data-tools/hierarchical-update.md) [acessando o Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

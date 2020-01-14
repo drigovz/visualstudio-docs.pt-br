@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301042"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849798"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
  A equipe de ferramentas da Fabrikam faz uma série de aprimoramentos para ajudar as equipes de desenvolvimento. As seções a seguir descrevem os diferentes tipos de extensões que você pode definir. Você pode combinar várias dessas técnicas em uma extensão do Visual Studio.
 
- Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[msdn how da Series: ferramentas e extensibilidade UML](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[msdn how da Series: ferramentas e extensibilidade UML](https://msdn.microsoft.com/vstudio/ff859492).
 
 ## <a name="Requirements"></a> Requisitos
 
@@ -106,17 +106,17 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
  Para obter mais informações, consulte [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="domain-specific-languages"></a>Linguagens específicas de domínio
+## <a name="domain-specific-languages"></a>Linguagens específicas do domínio
  Onde você usa com frequência um tipo específico de modelo, pode ser útil criar uma linguagem específica de domínio. Isso pode ser feito para atender às suas necessidades de negócios de forma mais próxima do que um modelo UML, mas requer mais esforço para compilá-lo e mantê-lo. Para obter mais informações, consulte [SDK de modelagem para Visual Studio-linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Criar modelos para a](../modeling/create-models-for-your-app.md) [referência de API de seu aplicativo para EXTENSIBILIDADE de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

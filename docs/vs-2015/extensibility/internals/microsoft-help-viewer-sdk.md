@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300722"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851912"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Este artigo contém as seguintes tarefas para integradores do Visualizador da aj
 
 - CPlusPlus ou Visual c++ + + ou c++
 
-- JScript
+- jscript
 
 - VisualBasic ou VB
 
@@ -312,13 +312,13 @@ some F# code
 
    - Para sistemas operacionais de 32 bits:
 
-      Namespace de <em>< de\\</em> de HKEY_LOCAL_MACHINE \software\microsoft\help\v2.1\partner\>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "local" = "offline"
 
    - Para sistemas operacionais de 64 bits:
 
-      Namespace de <em>< de\\</em> de HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.1\partner\>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "local" = "offline"
 
@@ -432,23 +432,23 @@ some F# code
 
   Observação: as variáveis indicadas por "{n}" têm dependências de código – remover ou alterar esses valores causará erros e possivelmente falha do aplicativo. Os identificadores de localização (por exemplo _locID = "CodeSnippet. n") estão incluídos no pacote de identidade Visual Studio.
 
-  **Identidade visual. xml**
+  **Branding.xml**
 
 |||
 |-|-|
 |Recurso:|**CollapsibleArea**|
 |Use:|Expande recolhe o texto de controle de conteúdo|
 |**Elemento**|**Value**|
-|ExpandText|Expand|
+|ExpandText|{1&gt;Expandir&lt;1}|
 |CollapseText|Recolher|
 |Recurso:|**CodeSnippet**|
 |Use:|Texto de controle de trecho de código.  Observação: o conteúdo do trecho de código com espaço "não separável" será alterado para espaço.|
 |**Elemento**|**Value**|
 |CopyToClipboard|Copiar para a Área de Transferência|
-|ViewColorizedText|Exibir colorido|
-|CombinedVBTabDisplayLanguage|Visual Basic (exemplo)|
+|ViewColorizedText|Exibir Colorido|
+|CombinedVBTabDisplayLanguage|Visual Basic (Exemplo)|
 |VBDeclaration|Declaração|
-|VBUsage|Uso|
+|VBUsage|Medição de|
 |Recurso:|**Comentários, rodapé e logotipo**|
 |Use:|Forneça um controle de comentários para que o cliente forneça comentários sobre o tópico atual por email.  Texto de direitos autorais do conteúdo.  Definição do logotipo.|
 |**Elemento**|**Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)**|
@@ -458,7 +458,7 @@ some F# code
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
-|Recurso:|**Enção**|
+|Recurso:|**Aviso de isenção de responsabilidade**|
 |Use:|Um conjunto de isenções de responsabilidade específicas para conteúdo traduzido do computador.|
 |**Elemento**|**Value**|
 |MT_Editable|Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
@@ -467,7 +467,7 @@ some F# code
 |MT_QualityNonEditable|Este artigo foi traduzido manualmente. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_BetaContents|Este artigo foi traduzido por máquina para uma versão preliminar. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_BetaRecycledContents|Este artigo foi traduzido manualmente para uma versão preliminar. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
-|Recurso:|**Linktable**|
+|Recurso:|**LinkTable**|
 |Use:|Suporte para links de tópico online|
 |**Elemento**|**Value**|
 |LinkTableTitle|Vincular tabela|
@@ -512,7 +512,7 @@ some F# code
 |HomePageHelpSettingsText|\<p > sua configuração atual é a ajuda local. O Visualizador da ajuda exibe o conteúdo que você instalou em seu computador.\<br/> para alterar a fonte do conteúdo da ajuda, na barra de menus do Visual Studio, escolha \<span Style = "{0}" > ajuda, defina preferência de ajuda\</span >.\<br/>\</p >|
 |MegaByte|MB|
 
- **branding. js**
+ **branding.js**
 
  O arquivo Branding. js contém o JavaScript usado pelos elementos de identidade Visual Studio Help Viewer.  Abaixo está uma lista dos elementos de identidade visual e a função JavaScript de suporte.  Todas as cadeias de caracteres a serem localizadas para esse arquivo são definidas na seção "cadeias de caracteres localizáveis" na parte superior deste arquivo.  O arquivo ICL foi criado para as cadeias de caracteres Loc no arquivo de identidade visual. js.
 
@@ -524,7 +524,7 @@ some F# code
 |Definir e obter valores de cookie|GetCookie, SetCookie||
 |Membro herdado|changeMembersLabel|Expandir/recolher membro herdado|
 |Quando SelfBranded = false|onLoad|Leia a cadeia de caracteres de consulta para verificar se é uma solicitação de impressão.  Defina todos os trechos para focalizar a guia preferencial do usuário.  Se for uma solicitação de impressão, defina isPrinterFriendly como true. Verifique o modo de alto contraste.|
-|Trecho de código|addSpecificTextLanguageTagSet||
+|Trechos de Código|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
 ||setCodesnippetLang||
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Arquivo**|**Utilizá**|**Fonte de conteúdo exibida**|
+|**Arquivo**|**Usar**|**Fonte de conteúdo exibida**|
 |homepage.htm|Esta é uma página que exibe o conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Esse arquivo tem o atributo de metadados adicional "Microsoft.Help.Id" content = "-1", que coloca esse conteúdo na parte superior do Sumário de conteúdo local.||
 ||<META_HOME_PAGE_TITLE_ADD />|Branding. xml, marca \<HomePageTitle >|
 ||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding. xml, marca \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Arquivo**|**Utilizá**|**Exemplos**|
+|**Arquivo**|**Usar**|**Exemplos**|
 |clear.gif|Usado para renderizar a área recolhível||
 |footer_slice.gif|Apresentação de rodapé||
 |info_icon.gif|Usado ao exibir informações|Aviso de isenção de responsabilidade|
@@ -690,13 +690,13 @@ some F# code
 
  Este tutorial demonstra como incorporar o conteúdo da ajuda em um aplicativo de shell do Visual Studio e, em seguida, implantá-lo.
 
- **Requisitos**
+ **Requirements**
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
 2. [Redistribuição de shell isolado Visual Studio 2013](https://aka.ms/VS2013/IsoShell-LP/all)
 
-   **Visão geral**
+   **Visão Geral**
 
    O Shell do [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] é uma versão do [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE na qual você pode basear um aplicativo. Esses aplicativos contêm o Shell isolado junto com as extensões que você cria. Use os modelos de projeto de shell isolados, que estão incluídos no SDK do [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], para criar extensões.
 
@@ -767,7 +767,7 @@ some F# code
 
 6. No Gerenciador de Soluções, no menu de contexto da solução ContosoHelpShell, escolha o item de menu **Propriedades** . Em **Propriedades de configuração**, selecione **Configuration Manager**. Na coluna **configuração** , altere cada valor de "debug" para "Release".
 
-7. Compile a solução. Isso cria um conjunto de arquivos em uma pasta de liberação, que será usada na próxima seção.
+7. {1&gt;Compile a solução.&lt;1} Isso cria um conjunto de arquivos em uma pasta de liberação, que será usada na próxima seção.
 
    Para testar isso como se fosse implantado:
 
@@ -824,4 +824,4 @@ Para a API de tempo de execução, consulte [API de ajuda do Windows](https://ms
 
 Para obter mais informações sobre como aproveitar a API de ajuda, consulte [exemplos de código do Help Viewer](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Para obter atualizações sobre problemas de interrupção, consulte o [Leiame do Help Viewer](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409).
+Para obter atualizações sobre problemas de interrupção, consulte o [Leiame do Help Viewer](https://go.microsoft.com/fwlink/?LinkId=255960).

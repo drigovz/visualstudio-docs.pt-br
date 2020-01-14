@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538980"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919249"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
  Ferramentas do Visual Studio para Apache Cordova é o resultado da colaboração de fechamento entre a Microsoft e a comunidade de Apache Cordova de código aberto. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou typescript). Você pode direcionar para Android, iOS e Windows com uma única base de código e aproveitar a riqueza do IDE do Visual Studio, incluindo JavaScript IntelliSense, explorador do DOM, console do JavaScript, pontos de interrupção, inspeções, locais, Apenas Meu Código e muito mais.  Com Ferramentas do Visual Studio para Apache Cordova, seus aplicativos têm acesso aos recursos do dispositivo nativo em todas as plataformas por meio de plug-ins que fornecem uma API JavaScript comum. Para começar, consulte Introdução [ao ferramentas do Visual Studio para Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jogos móveis de plataforma cruzada C# no Unity
- O Unity é uma plataforma amplamente usada para desenvolvimento de jogos 2D e 3D de várias plataformas. Você pode escrever seu jogo em C# e executá-lo nativamente no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que integra o Unity ao IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e do depurador, além de recursos de produtividade projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2,0 Preview 2 adiciona suporte para o Visual Studio 2015, além de vários novos recursos, como uma visualização melhor para objetos nas janelas locais e de inspeção. A Microsoft adquiriu recentemente SyntaxTree, os criadores de Ferramentas do Visual Studio para Unity. Para baixar Ferramentas do Visual Studio para Unity 2,0 Preview 2 e para obter mais informações sobre Ferramentas do Visual Studio para Unity, consulte [Ferramentas do Visual Studio para Unity 2,0](https://aka.ms/vstu).
+ O Unity é uma plataforma amplamente usada para desenvolvimento de jogos 2D e 3D de várias plataformas. Você pode escrever seu jogo em C# e executá-lo nativamente no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que integra o Unity ao IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e do depurador, além de recursos de produtividade projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2,0 Preview 2 adiciona suporte para o Visual Studio 2015, além de vários novos recursos, como uma visualização melhor para objetos nas janelas locais e de inspeção. A Microsoft adquiriu recentemente SyntaxTree, os criadores de Ferramentas do Visual Studio para Unity. Para baixar Ferramentas do Visual Studio para Unity 2,0 Preview 2 e para obter mais informações sobre Ferramentas do Visual Studio para Unity, consulte [Ferramentas do Visual Studio para Unity 2,0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplicativos e bibliotecas de plataforma cruzada para nativoC++
  C++o é um idioma disponível nativamente na maioria dos dispositivos móveis. Você pode usá-lo para escrever bibliotecas de código compartilhado entre plataformas que podem ser criadas para vários destinos da plataforma móvel. Você pode até mesmo criar aplicativos móveis inteiros C++no. O C++ Visual fornece as ferramentas para editar, compilar, implantar e depurar o código de plataforma cruzada. Além dos modelos para aplicativos do Windows, você pode criar projetos de modelos para aplicativos de atividade nativa do Android, aplicativos iOS ou projetos de biblioteca de código compartilhado para várias plataformas que incluem aplicativos do Xamarin híbrido. O IntelliSense específico da plataforma permite que você explore as APIs e gere o código correto para destinos do Android, iOS ou Windows. Você pode configurar sua compilação para plataformas x86 ou ARM nativo e implantar seu código em um simulador de iOS ou em dispositivos iOS em um Mac anexado à rede, para dispositivos Android conectados diretamente ou usar o Emulador do Microsoft Visual Studio para Android de alto desempenho para teste. Você pode definir pontos de interrupção, inspecionar variáveis, exibir a pilha e C++ percorrer o código no depurador do Visual Studio. Você pode compartilhar tudo, exceto o código mais específico da plataforma em várias plataformas de aplicativos, e compilar para todos eles com uma solução no Visual Studio.
@@ -129,7 +129,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
 
 - **C# /Xamarin**. Use o [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, Ios e Android no Visual Studio com C#o.
 
-     A [depuração](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (Ios) e a [depuração no dispositivo](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) nos [guias de desenvolvedor do Xamarin](https://docs.microsoft.com/xamarin/) descrevem a experiência de depuração.
+     A [depuração](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (Ios) e a [depuração no dispositivo](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) nos [guias de desenvolvedor do Xamarin](/xamarin/) descrevem a experiência de depuração.
 
 - **C++ /Android**. Use o [Visual C++ para modelos de desenvolvimento móvel de plataforma cruzada](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) junto com ferramentas de terceiros como o [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
@@ -252,7 +252,7 @@ A seguir estão as ferramentas novas ou aprimoradas que executam diferentes tipo
 
  Basta clicar no rosto de Smiley amarelo na barra de título, nos dizer o que você gostou e clicar no botão **enviar um Smiley** .
 
- E pronto! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
+ Isso é tudo! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
 
 ### <a name="send-a-frown"></a>Enviar um Rosto Triste
  Ouvir onde precisamos fazer melhorias no produto nos ajuda a gerenciar nossa lista de pendências concentrando-se primeiro nas coisas mais importantes para nossos clientes. Se houver algo que esteja sendo depurado, conte-nos sobre ele usando o recurso **enviar um rosto triste** diretamente dentro do IDE. Também fizemos isso um processo extremamente simples:
@@ -264,7 +264,7 @@ A seguir estão as ferramentas novas ou aprimoradas que executam diferentes tipo
 
  Primeiro, envie um rosto triste conforme descrito acima. Na caixa de diálogo exibida, você pode marcar seus comentários com uma das marcas padrão ou criar sua própria marca. As marcas nos ajudam a rotear seus comentários para a equipe de recursos apropriada. Na lista suspensa **escolher uma categoria** , selecione a opção que representa o problema que você está relatando e siga as etapas para reproduzir o problema. Também estão disponíveis etapas detalhadas sobre como usar o Visual Studio para relatar comentários. Para obter mais informações, consulte [o Visual Studio enviar instruções de Smiley](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Criar aplicativos multiplataforma com o Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

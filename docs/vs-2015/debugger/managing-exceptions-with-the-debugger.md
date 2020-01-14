@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301096"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918952"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,14 +150,14 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
 3. Você pode alterar essa configuração para uma exceção específica (selecione a exceção, clique com o botão direito do mouse e selecione/desmarque a opção **continuar quando não for tratado no código do usuário**) ou para uma categoria inteira de exceções (por exemplo, todas as exceções de Common Language Runtime).  
   
-   Por exemplo, aplicativos Web ASP.NET lidam com exceções convertendo-as em um código de status HTTP 500 ([tratamento de exceção na API ASP.net](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), o que pode não ajudá-lo a determinar a origem da exceção. No exemplo a seguir, o código do usuário faz uma chamada para `String.Format()` que gera um <xref:System.FormatException>. A execução é interrompida da seguinte maneira:  
+   Por exemplo, aplicativos Web ASP.NET lidam com exceções convertendo-as em um código de status HTTP 500 ([tratamento de exceção na API ASP.net](/aspnet/web-api/overview/error-handling/exception-handling)), o que pode não ajudá-lo a determinar a origem da exceção. No exemplo a seguir, o código do usuário faz uma chamada para `String.Format()` que gera um <xref:System.FormatException>. A execução é interrompida da seguinte maneira:  
   
    ![quebras na&#45;exceção de unhanlded do usuário](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Adicionando e excluindo exceções  
  Você pode adicionar e excluir exceções. Você pode excluir qualquer tipo de exceção de qualquer categoria, selecionando a exceção e clicando no botão **excluir** (o sinal de subtração) na barra de ferramentas **configurações de exceção** ou clicando com o botão direito do mouse na exceção e selecionando **excluir** no menu de contexto. Excluir uma exceção tem o mesmo efeito que ter a exceção desmarcada, o que é que o depurador não será interrompido quando for gerado.  
   
- Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System. UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
+ Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System.UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
   
  Se desejar adicionar uma exceção às exceções de acesso à memória da GPU, às exceções de tempo de execução do JavaScript ou às categorias de exceções Win32, você precisará incluir o código de erro, bem como a descrição.  
   
@@ -181,7 +181,7 @@ public class GenericException<T> : Exception
   
  ![adicionando exceção genérica](../debugger/media/addgenericexception.png "Addgenéricaexception")  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Continuando a execução após uma exceção](../debugger/continuing-execution-after-an-exception.md)   
  [Como examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Como: usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   

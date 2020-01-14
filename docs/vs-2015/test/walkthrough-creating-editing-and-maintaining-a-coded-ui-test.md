@@ -8,19 +8,19 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302055"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851228"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Instruções passo a passo: criando, editando e mantendo um teste de IU codificado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Neste passo a passo, você criará um aplicativo simples do Windows Presentation Foundation (WPF) para demonstrar como criar, editar e manter um teste de IU codificado. O passo a passo fornece soluções para corrigir os testes que foram interrompidos por vários problemas de timing e refatoração de controle.
 
-## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Para este passo a passo, será necessário:
 
 - Visual Studio Enterprise
@@ -41,7 +41,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 6. Escolha a pasta em que você salvará o projeto. Na caixa de texto **Local**, digite o nome da pasta.
 
-7. Escolha **OK**.
+7. Clique em **OK**.
 
      O WPF Designer for Visual Studio abre e exibe a MainWindow do projeto.
 
@@ -133,7 +133,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 5. No painel central, selecione o modelo **Projeto de Teste de Interface de Usuário Codificado**.
 
-6. Escolha **OK**.
+6. Clique em **OK**.
 
      No Gerenciador de Soluções, o novo projeto de teste de IU codificado chamado **CodedUITestProject1** é adicionado à solução.
 
@@ -369,22 +369,22 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 ## <a name="external-resources"></a>Recursos Externos
 
 ### <a name="videos"></a>Vídeos
- ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode1-gettingstarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode1-gettingstarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode2-MaintainenceAndDebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode3-HandCoding](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Laboratório prático
- [Laboratório Virtual do MSDN: Introdução à criação de testes de IU codificados com o Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [Laboratório Virtual do MSDN: Introdução à criação de testes de IU codificados com o Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
-### <a name="faq"></a>Perguntas Frequentes
- [Perguntas frequentes sobre testes de IU codificados – 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Perguntas frequentes
+ [Perguntas frequentes sobre testes de IU codificados – 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Perguntas frequentes sobre testes de IU codificados – 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Perguntas frequentes sobre testes de IU codificados – 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Fórum
- [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [introdução com as](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configurações e plataformas com suporte do WPF Designer para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [editando testes de interface do usuário codificados usando o editor de teste de IU codificado](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300153"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852085"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "74300153"
 - Procurar, com o subgrupo Recente.
 
 ## <a name="assemblies-tab"></a>Guia Assemblies
- A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração do Local da Cópia. Para obter mais informações, consulte [Referências do projeto](https://go.microsoft.com/fwlink/?LinkId=238512).
+ A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração do Local da Cópia. Para obter mais informações, consulte [Referências do projeto](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Ao adicionar manualmente uma referência a qualquer namespace EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a ou EnvDTE100), defina a propriedade de Inserir Tipos Interop da referência como Falso na janela Propriedades. Definir essa propriedade como Verdadeiro poderá causar problemas de compilação devido a determinadas propriedades de EnvDTE que não podem ser inseridas.
 
@@ -141,7 +141,7 @@ ms.locfileid: "74300153"
 ## <a name="solution-tab"></a>Guia Solução
  A guia Solução lista todos os projetos compatíveis dentro da solução atual, na subguia Projetos.
 
- Um projeto pode referenciar outro projeto que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um projeto que tenha como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], mas que faça referência a um assembly que foi criado para o .NET Framework 2. Porém, o projeto do .NET Framework 2 não pode referenciar um projeto do [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obter mais informações, consulte [Definindo uma versão específica do .NET Framework como destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Um projeto pode referenciar outro projeto que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um projeto que tenha como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], mas que faça referência a um assembly que foi criado para o .NET Framework 2. Porém, o projeto do .NET Framework 2 não pode referenciar um projeto do [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Um projeto que tem como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] é incompatível com um projeto que tenha como destino o [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].
 
@@ -188,7 +188,7 @@ ms.locfileid: "74300153"
 ## <a name="browse-button"></a>Botão Procurar
  É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
- Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um aplicativo que tem como destino o .NET Framework 4 Client Profile, que referencia um componente que tem como destino o .NET Framework 2. Para obter mais informações, consulte [Definindo uma versão específica do .NET Framework como destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um aplicativo que tem como destino o .NET Framework 4 Client Profile, que referencia um componente que tem como destino o .NET Framework 2. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa tática torna o desenvolvimento em equipe mais fácil, permitindo um melhor gerenciamento das bibliotecas de classes criadas em seus projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
@@ -215,5 +215,5 @@ ms.locfileid: "74300153"
 ## <a name="search"></a>Pesquisar
  A barra de pesquisa na caixa de diálogo **Gerenciador de Referências** opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contém “Sistema”.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência,](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

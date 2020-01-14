@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296332"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847625"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
  **Aqui estão alguns vídeos**:
 
-- [Entenda suas dependências de código por meio de visualização](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [Entenda suas dependências de código por meio de visualização](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [Visualizar o impacto de uma alteração](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [Visualizar o impacto de uma alteração](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [Compreendendo o código complexo com mapas de código](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [Compreendendo o código complexo com mapas de código](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a>Introdução aos mapas de código
  **Para usar mapas de código, você precisará**de:
@@ -181,7 +181,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
      ![Selecionar itens para exibir as relações](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
-    Confira também:
+    Consulte também:
 
 - [Procurar e reorganizar mapas de códigos](../modeling/browse-and-rearrange-code-maps.md)
 
@@ -307,7 +307,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
   Esses problemas podem ocorrer quando você cria mapas de código para C C++ e código:
 
-|**Lo**|**Causa possível**|**Resolução**|
+|**Problema**|**Possível causa**|**Resolução**|
 |---------------|------------------------|--------------------|
 |Falha ao gerar o mapa de códigos.|Nenhum projeto na solução foi compilado com êxito.|Corrija os erros de compilação que ocorreram e, em seguida, gere o mapa novamente.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deixa de responder quando você tenta gerar um mapa de código no menu **arquitetura** .|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|
@@ -329,7 +329,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 - Desative a adição automática de itens pai com o botão **incluir pais** na barra de ferramentas do mapa de códigos.
 
-- Edite o arquivo de mapa de código diretamente para remover nós e links desnecessários. A alteração do mapa não afeta o código subjacente. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edite o arquivo de mapa de código diretamente para remover nós e links desnecessários. A alteração do mapa não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Ignorar os botões criar e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
@@ -373,7 +373,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 2. Navegue para onde você deseja salvar o arquivo.
 
-3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS (\*. XPS)** . Escolha **salvar**.
+3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS (\*. XPS)** . Selecione **Salvar**.
 
 ## <a name="what-else-can-i-do"></a>O que mais posso fazer?
 

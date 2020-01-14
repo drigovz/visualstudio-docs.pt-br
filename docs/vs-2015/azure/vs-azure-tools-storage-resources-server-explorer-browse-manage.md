@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291228"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849865"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
 
 Se você instalou as ferramentas do Azure para Microsoft Visual Studio, você pode exibir dados de blob, de fila e de tabela de suas contas de armazenamento do Azure. O nó de **Armazenamento** do Azure no Gerenciador de Servidores mostra os dados que estão em sua conta do emulador de armazenamento local e outras contas de armazenamento do Azure.
 
@@ -78,7 +78,7 @@ Você pode executar as seguintes operações com blobs usando os botões no cant
 
 1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)** .
 
-   ![Carregar um arquivo em uma pasta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Carregando um arquivo em uma pasta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    Você pode adicionar as subpastas nas pastas de contêiner, seguindo as mesmas etapas. Se você não especificar um nome de pasta, o arquivo será carregado para o nível superior do contêiner de blob. O arquivo aparece na pasta especificada no contêiner.
 
@@ -110,7 +110,7 @@ No Gerenciador de nuvem, use qualquer um dos seguintes métodos:
 * Escolha o nome do blob e selecione o botão **Abrir**.
 * Clique duas vezes no nome do blob.
 
-O andamento do download de um blob é exibido na janela **Log de Atividades do Azure**.
+O andamento do download de um blob aparece na janela **Log de atividades do Azure** .
 
 O blob é aberto no editor padrão desse tipo de arquivo. Se o sistema operacional reconhecer o tipo de arquivo, o arquivo será aberto em um aplicativo instalado localmente. Caso contrário, será solicitado que você escolha um aplicativo apropriado para o tipo de arquivo do blob. O arquivo local criado quando você baixa um blob está marcado como somente leitura.
 
@@ -122,7 +122,7 @@ Por padrão, um blob é baixado para um diretório temporário. Para baixar blob
 
 Para carregar os blobs, selecione o botão **Carregar Blob** quando o contêiner for aberto para visualização na exibição do contêiner de blob.
 
-Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
+Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Para exibir os logs transferidos para os blobs
 
@@ -142,7 +142,7 @@ O arquivo é baixado para um local temporário e aberto no computador local. Voc
 
 ## <a name="work-with-queue-resources"></a>Trabalhar com recursos de fila
 
-Filas de serviços de armazenamento são hospedadas em uma conta de armazenamento do Azure. Você pode usá-las para permitir que suas funções do serviço de nuvem se comuniquem entre si e com outros serviços por um mecanismo de transmissão de mensagens. Você pode acessar a fila programaticamente por meio de um serviço de nuvem e em um serviço Web para clientes externos. Você também pode acessar a fila diretamente, usando o Gerenciador de Servidores no Visual Studio.
+Filas de serviços de armazenamento são hospedadas em uma conta de armazenamento do Azure. Você pode usá-las para permitir que suas funções do serviço de nuvem se comuniquem entre si e com outros serviços por um mecanismo de transmissão de mensagens. Você pode acessar a fila programaticamente por meio de um serviço de nuvem e em um serviço Web para clientes externos. Você também pode acessar a fila diretamente usando o Gerenciador de Servidores no Visual Studio.
 
 Ao desenvolver um serviço de nuvem que usa filas, talvez você queira usar o Visual Studio para criar filas e trabalhar interativamente com elas enquanto desenvolve e testa seu código.
 
@@ -157,7 +157,7 @@ A imagem a seguir mostra uma fila que contém duas mensagens:
 
 ![Exibindo uma fila](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](https://go.microsoft.com/fwlink/?LinkId=264788). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [Filas do barramento de serviço, tópicos e assinaturas](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -213,7 +213,7 @@ Você pode personalizar o conjunto de entidades que aparecem em uma tabela, se u
 1. Para abrir o construtor de consultas, abra uma tabela para exibir.
 1. Escolha o botão **Construtor de Consultas** na barra de ferramentas de exibição de tabela.
 
-    A caixa de diálogo **Construtor de Consultas** aparece. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
+    A caixa de diálogo **Construtor de Consultas** é exibida. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
 
     ![Construtor de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Após criar a consulta, feche a caixa de diálogo. O formulário de texto resultante da consulta aparece em uma caixa de texto como um filtro do WCF Data Services.
@@ -293,6 +293,6 @@ Se você excluir uma conta de armazenamento, qualquer informação de chave salv
 
 Se você excluir uma conta de armazenamento do Gerenciador de Servidores, isto não afetará sua conta de armazenamento nem nenhum dos os dados que ela contém. Isso simplesmente remove a referência do Gerenciador de Servidores. Para excluir permanentemente uma conta de armazenamento, use o [Portal do Azure](https://portal.azure.com/).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Para saber mais sobre como usar os serviços de armazenamento do Azure, confira [introdução ao armazenamento do Azure](/azure/storage/common/storage-introduction).

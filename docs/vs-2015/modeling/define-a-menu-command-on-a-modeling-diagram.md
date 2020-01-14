@@ -11,19 +11,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299262"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918843"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode definir itens de menu adicionais nos menus de atalho de um diagrama UML. Você pode controlar se o comando de menu é exibido e está habilitado no menu de atalho de qualquer elemento no diagrama e pode escrever o código que é executado quando o usuário escolhe o item de menu. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-las a outros usuários do Visual Studio.
+No Visual Studio, você pode definir itens de menu adicionais nos menus de atalho de um diagrama UML. Você pode controlar se o comando de menu é exibido e está habilitado no menu de atalho de qualquer elemento no diagrama e pode escrever o código que é executado quando o usuário escolhe o item de menu. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) e distribuí-las a outros usuários do Visual Studio.
 
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
+## <a name="requirements"></a>Requisitos do
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo de:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versão] \Extensions**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="MenuExample"></a> Exemplo
  O exemplo a seguir mostra o código de um comando de menu que vai trocar os nomes de dois elementos em um diagrama de classe. Esse código deve ser compilado em um projeto de extensão [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e instalado conforme descrito nas seções anteriores.
@@ -362,5 +362,6 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>Consulte também
- [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definir um item da caixa de ferramentas de modelagem personalizado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [Editar diagramas de sequência UML usando a programação de API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [com o exemplo de API UML](../modeling/programming-with-the-uml-api.md) [: comando para alinhar formas em um diagrama UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>Veja também
+ [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definir um item da caixa de ferramentas de modelagem personalizado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [Editar diagramas de sequência UML usando a programação de API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [com a API UML](../modeling/programming-with-the-uml-api.md)
+ 

@@ -7,25 +7,25 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188728"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846938"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Como exibir e diagnosticar contêineres e imagens no Visual Studio
 
 Você pode exibir o que está acontecendo dentro dos contêineres que hospedam seu aplicativo usando a janela **contêineres** . Se você estiver acostumado a usar o prompt de comando para executar comandos do Docker para exibir e diagnosticar o que está acontecendo com seus contêineres, essa janela fornece uma maneira mais conveniente de monitorar seus contêineres sem sair do IDE do Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual studio 2019 versão 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou posterior, ou se você estiver usando uma versão anterior do Visual Studio 2019, instale a [extensão da janela contêineres](https://aka.ms/vscontainerspreview).
+- [Visual studio 2019 versão 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou posterior, ou se você estiver usando uma versão anterior do Visual Studio 2019, instale a [extensão da janela contêineres](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Exibir informações sobre seus contêineres
 
-A janela **contêineres** é aberta automaticamente quando você inicia um projeto .net em contêiner. Para exibir seus contêineres no Visual Studio a qualquer momento, use **Ctrl** +**Q** para ativar a caixa de pesquisa do visual Studio e digite `Containers` e escolha o primeiro item. Você também pode abrir a janela **contêineres** no menu principal. Use a **exibição** caminho do menu  >  outros**contêineres**de  >  do**Windows** .  
+A janela **contêineres** é aberta automaticamente quando você inicia um projeto .net em contêiner. Para exibir seus contêineres no Visual Studio a qualquer momento, use **Ctrl**+**Q** para ativar a caixa de pesquisa do visual Studio e digite `Containers` e escolha o primeiro item. Você também pode abrir a janela **contêineres** no menu principal. Use a **exibição** caminho do menu > outros **contêineres**de > do **Windows** .  
 
 ![Captura de tela da guia ambiente na janela contêineres](media/view-and-diagnose-containers/container-window.png)
 
@@ -60,7 +60,7 @@ A guia **logs** mostra os resultados do comando `docker logs`. Por padrão, a gu
 Para limpar os logs, use o botão **limpar** na guia **logs** .  Para obter todos os logs, use o botão **Atualizar** .
 
 > [!NOTE]
-> O Visual Studio redireciona automaticamente stdout e stderr para a janela de **saída** quando você executa sem depuração com contêineres do Windows, de modo que contêineres do Windows iniciados no Visual Studio usando **Ctrl** +**F5** não exibirão logs em Esta guia; em vez disso, use a janela **saída** .
+> O Visual Studio redireciona automaticamente stdout e stderr para a janela de **saída** quando você executa sem depuração com contêineres do Windows, de modo que contêineres do Windows iniciados no Visual Studio usando **Ctrl**+**F5** não exibirão logs nesta guia; em vez disso, use a janela **saída** .
 
 ## <a name="view-the-filesystem"></a>Exibir o sistema de arquivos
 
@@ -104,11 +104,11 @@ Você também pode exibir imagens no computador local usando a guia **imagens** 
 
 Para remover uma imagem, clique com o botão direito do mouse na imagem no modo de exibição de árvore e escolha **remover**ou selecione a imagem e use o botão **remover** na barra de ferramentas.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Saiba mais sobre as ferramentas de contêiner disponíveis no Visual Studio lendo a [visão geral das ferramentas de contêiner](overview.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Desenvolvimento de contêiner no Visual Studio](/visualstudio/containers)
 

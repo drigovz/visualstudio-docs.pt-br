@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298193"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918773"
 ---
 # <a name="getting-started-with-python"></a>Introdução ao Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Para saber mais sobre a linguagem, comece com [Python para iniciantes](https://w
 
 Para instalar o Python em si, visite [https://www.python.org/download/](https://www.python.org/download/).
 
-## <a name="python-tools-for-visual-studio"></a>Ferramentas Python para o Visual Studio
+## <a name="python-tools-for-visual-studio"></a>{1&gt;{2&gt;Ferramentas Python para Visual Studio&lt;2}&lt;1}
   
 O Ferramentas Python para Visual Studio, que você pode instalar do [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), fornece os seguintes recursos:  
   
@@ -73,7 +73,7 @@ A principal oferta para criar uma interface do usuário com Python é o [projeto
   
 O SDK do Azure para Python, que dá suporte a Windows, Mac e Linux, facilita o consumo e o gerenciamento de Serviços do Microsoft Azure. Consulte os recursos a seguir para obter detalhes: 
 
-- Para instalar o SDK, use o [Índice de pacote Python](https://pypi.python.org/pypi/azure) ou siga [Instalar o Python e o SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) na documentação do Azure. 
+- Para instalar o SDK, use o [Índice de pacote Python](https://pypi.python.org/pypi/azure) ou siga [Instalar o Python e o SDK](/azure/python/python-sdk-azure-install) na documentação do Azure. 
 - A [Central de desenvolvedores do SDK do Azure para Python](https://azure.microsoft.com/develop/python/) tem muita ajuda, da instalação à documentação, com tutoriais.  Veja alguns destaques:  
 - Guias de instruções:
   - [Armazenamento de blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
@@ -89,7 +89,7 @@ Além de todas as bibliotecas de cientistas de dados do Python, as Ferramentas P
 
 É recomendável obter bibliotecas do IPython e de computação científica (matplotlib, scipy, numpy etc.) da [Universidade da Califórnia, Irvine](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
 
 [Introdução ao PTVS: instalando o Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [Introdução ao PTVS: iniciar a codificação (projetos)](../python/getting-started-with-ptvs-start-coding-projects.md)

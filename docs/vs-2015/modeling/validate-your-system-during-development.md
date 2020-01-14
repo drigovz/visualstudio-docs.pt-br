@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301340"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845389"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ O Visual Studio pode ajudar a manter seu software consistente com os requisitos 
 
 ## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Vídeos**|![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug sete: compreensão de código e design do sistema com o Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: Arquitetando um aplicativo usando um diagrama de camada](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: como validar o código usando diagramas de camada](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Blog -   Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vídeos**|![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug sete: compreensão de código e design do sistema com o Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: Arquitetando um aplicativo usando um diagrama de camada](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: como validar o código usando diagramas de camada](https://msdn.microsoft.com/vstudio/gg501755)|
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
+|**Blogs**|[Blog -   Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [estender modelos UML e diagramas](../modeling/extend-uml-models-and-diagrams.md) [modelo requisitos de usuário](../modeling/model-user-requirements.md) [análise e arquitetura de modelagem](../modeling/analyze-and-model-your-architecture.md)

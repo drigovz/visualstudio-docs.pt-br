@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888542"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850062"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
 
@@ -143,7 +143,7 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
      Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-2. Execute o [Instalador de serviços do R](https://aka.ms/rtvs-services) e reinicie quando solicitado. O instalador faz o seguinte:
+2. Execute o [Instalador de serviços do R](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md) e reinicie quando solicitado. O instalador faz o seguinte:
 
     - Crie uma pasta em *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* e copie todos os binários necessários.
     - Instala `RHostBrokerService` e `RUserProfileService` e configura para iniciar automaticamente.

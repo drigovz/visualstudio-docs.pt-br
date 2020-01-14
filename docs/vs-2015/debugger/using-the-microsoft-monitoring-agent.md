@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d92fd478e4106afd9b61a15146a68f279a358fb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d1c63b866b35ef9b029364002360d29fa72f2b9b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297107"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918965"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usando o Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [usando o Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [usando o Microsoft Monitoring Agent](/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
 Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e os aplicativos do SharePoint 2010 ou 2013 em busca de erros, problemas de desempenho ou outros problemas usando o **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o arquivo de log em Visual Studio Enterprise (mas não em edições Professional ou Community) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e dados de método executando o agente em modo **Rastrear**. Microsoft Monitoring Agent pode ser integrado com o [Application insights](/azure/azure-monitor/app/app-insights-overview) e o [System Center Operations Manager](https://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
   
@@ -53,7 +53,7 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
     - Você desinstalou alguma versão anterior do Microsoft Monitoring Agent.  
   
-2. [Baixe o Microsoft Monitoring Agent gratuitamente](https://go.microsoft.com/fwlink/?LinkId=320384), na versão 32 bits **MMASetup-i386.exe** ou na versão 64 bits **MMASetup-AMD64.exe**, do Centro de Download da Microsoft para o servidor Web.  
+2. [Baixe o Microsoft Monitoring Agent gratuitamente](https://go.microsoft.com/fwlink/?LinkID=309771), na versão 32 bits **MMASetup-i386.exe** ou na versão 64 bits **MMASetup-AMD64.exe**, do Centro de Download da Microsoft para o servidor Web.  
   
 3. Execute o executável baixado para iniciar o assistente de instalação.  
   
@@ -106,22 +106,22 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
   5. Na caixa **Digite os nomes de objeto a serem selecionados**, adicione o pool de aplicativos do aplicativo Web ou do aplicativo do SharePoint.  
   
-  6. Escolha **Verificar Nomes** para resolver o nome. Escolha **OK**.  
+  6. Escolha **Verificar Nomes** para resolver o nome. Clique em **OK**.  
   
   7. Verifique se o pool de aplicativos tem permissões de **Leitura e execução**.  
   
 ## <a name="MonitorEvents"></a> Etapa 2: Iniciar o monitoramento do aplicativo  
- Use o comando [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) do Windows PowerShell para iniciar o monitoramento do aplicativo. Se você usar o System Center 2012, confira [Monitorando aplicativos Web com o Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
+ Use o comando [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) do Windows PowerShell para iniciar o monitoramento do aplicativo. Se você usar o System Center 2012, confira [Monitorando aplicativos Web com o Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. No servidor Web, abra uma janela de prompt de comando do **Windows PowerShell** ou do **ISE do Windows PowerShell** como administrador.  
   
      ![Abrir o Windows PowerShell como administrador](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
-2. Execute o comando [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) para iniciar o monitoramento do aplicativo. Isso reiniciará todos os aplicativos Web no servidor Web.  
+2. Execute o comando [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) para iniciar o monitoramento do aplicativo. Isso reiniciará todos os aplicativos Web no servidor Web.  
   
      Aqui está a sintaxe abreviada:  
   
-     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
+     **Start-WebApplicationMonitoring** *"\<appName >"* *\<monitormode >* *"\<outputPath >"* *\<UInt32 >* *"\<collectionPlanPathAndFileName >"*  
   
      Aqui está um exemplo que usa apenas o nome do aplicativo Web e o modo de **Monitor** leve:  
   
@@ -137,15 +137,15 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
     |||  
     |-|-|  
-    |*"\<appName >"*|Especifique o caminho para o site e o nome do aplicativo Web no IIS. Você também poderá incluir o caminho do IIS, se preferir.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - ou -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Você pode encontrar esse caminho no Gerenciador do IIS. Por exemplo:<br /><br /> ![Caminho para o site do IIS e para o aplicativo Web](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> Você também pode usar os comandos [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx).|  
+    |*"\<appName >"*|Especifique o caminho para o site e o nome do aplicativo Web no IIS. Você também poderá incluir o caminho do IIS, se preferir.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - ou -<br /><br /> **"IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Você pode encontrar esse caminho no Gerenciador do IIS. Por exemplo:<br /><br /> ![Caminho para o site do IIS e para o aplicativo Web](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Você também pode usar os comandos [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx).|  
     |*\<monitoringMode>*|Especifique o modo de monitoramento:<br /><br /> <ul><li>**Monitor**: Registre os detalhes mínimos sobre eventos de exceção e eventos de desempenho. Esse modo usa o plano de coleta padrão.</li><li>**Rastreamento**: registre detalhes no nível da função ou monitore aplicativos do SharePoint 2010 e do SharePoint 2013, usando o plano de coleta especificado. Esse modo pode fazer o aplicativo ser executado mais lentamente.<br /><br /> <ul><li>[P: Como configuro permissões para o pool de aplicativos?](#FullPermissionsITLog)</li><li>[P: Como obtenho o máximo de dados sem deixar meu aplicativo mais lento?](#Minimizing)</li></ul><br />     Esse exemplo registra eventos de um aplicativo do SharePoint hospedado em um site do SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Arquivos de Programas\microsoft Monitoring Agent\Agent\IntelliTraceCollector\ collection_plan. ASP. NET. default. xml" "C:\IntelliTraceLogs"**</li><li>**Personalizado**: Registre detalhes personalizados usando o plano de coleta personalizado especificado. Você precisará reiniciar o monitoramento se editar o plano de coleta depois que o monitoramento já tiver começado.</li></ul>|  
     |*"\<outputPath>"*|Especifique o caminho do diretório completo para armazenar os logs do IntelliTrace. Não se esqueça de criar esse diretório antes de começar o monitoramento.|  
     |*\<UInt32>*|Especifique o tamanho máximo para o log do IntelliTrace. O tamanho máximo padrão do log do IntelliTrace é de 250 MB.<br /><br /> Quando o log atinge esse limite, o agent substitui as entradas mais antigas para liberar espaço para mais entradas. Para alterar esse limite, use a opção **-MaximumFileSizeInMegabytes** ou edite o atributo `MaximumLogFileSize` no plano de coleta.|  
-    |*"\<collectionPlanPathAndFileName>"*|Especifique o caminho completo ou relativo e o nome de arquivo do plano de coleta. Esse plano é um arquivo .xml que define configurações do agente.<br /><br /> Esses planos são incluídos no agente e funcionam com aplicativos Web e aplicativos do SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Coleta apenas eventos, como exceções, eventos de desempenho, chamadas de banco de dados e solicitações do servidor Web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Coleta chamadas no nível da função, mais todos os dados no plano de coleta padrão. Esse plano é bom para análise detalhada, mas pode deixar seu aplicativo mais lento.<br /><br /> Você pode encontrar versões localizadas desses planos nas subpastas do agente. Você também pode [personalizar esses planos ou criar planos próprios](https://go.microsoft.com/fwlink/?LinkId=227871) para evitar que seu aplicativo fique lento. Coloque todos os planos personalizados no mesmo local seguro do agente.<br /><br /> [P: Como obtenho o máximo de dados sem deixar meu aplicativo mais lento?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName>"*|Especifique o caminho completo ou relativo e o nome de arquivo do plano de coleta. Esse plano é um arquivo .xml que define configurações do agente.<br /><br /> Esses planos são incluídos no agente e funcionam com aplicativos Web e aplicativos do SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Coleta apenas eventos, como exceções, eventos de desempenho, chamadas de banco de dados e solicitações do servidor Web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Coleta chamadas no nível da função, mais todos os dados no plano de coleta padrão. Esse plano é bom para análise detalhada, mas pode deixar seu aplicativo mais lento.<br /><br /> Você pode encontrar versões localizadas desses planos nas subpastas do agente. Você também pode [personalizar esses planos ou criar planos próprios](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) para evitar que seu aplicativo fique lento. Coloque todos os planos personalizados no mesmo local seguro do agente.<br /><br /> [P: Como obtenho o máximo de dados sem deixar meu aplicativo mais lento?](#Minimizing)|  
   
      Para obter mais informações sobre a sintaxe completa e outros exemplos, execute o comando **Get-Help Start-WebApplicationMonitoring – detailed** ou o comando **Get-Help Start-WebApplicationMonitoring – examples** .  
   
-3. Para verificar o status de todos os aplicativos Web monitorados, execute o comando [Get-WebApplicationMonitoringStatus](https://go.microsoft.com/fwlink/?LinkID=313685).  
+3. Para verificar o status de todos os aplicativos Web monitorados, execute o comando [Get-WebApplicationMonitoringStatus](https://technet.microsoft.com/library/dn472751(v=sc.20).aspx).  
   
 ### <a name="q--a"></a>Perguntas e respostas  
   
@@ -238,13 +238,13 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
 1. No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
   
-2. Execute o comando [Checkpoint-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313684) para salvar um instantâneo do log do IntelliTrace:  
+2. Execute o comando [Checkpoint-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472750(v=sc.20).aspx) para salvar um instantâneo do log do IntelliTrace:  
   
-    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
     \- ou -  
   
-    **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
     Por exemplo:  
   
@@ -268,13 +268,13 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
 1. No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
   
-2. Execute o comando [Stop-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313687) para criar o log do IntelliTrace e pare o monitoramento de um aplicativo Web específico:  
+2. Execute o comando [Stop-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472753(v=sc.20).aspx) para criar o log do IntelliTrace e pare o monitoramento de um aplicativo Web específico:  
   
-    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
     \- ou -  
   
-    **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
     Ou pare o monitoramento de todos os aplicativos Web:  
   
@@ -301,7 +301,7 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
 #### <a name="blogs"></a>Blogs  
  [Apresentando o Microsoft Monitoring Agent](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent-2/)  
   
- [Como otimizar a coleta do IntelliTrace em servidores de produção](https://go.microsoft.com/fwlink/?LinkId=255233)  
+ [Como otimizar a coleta do IntelliTrace em servidores de produção](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)  
   
 #### <a name="forums"></a>Fóruns  
- [Diagnóstico do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnóstico do Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

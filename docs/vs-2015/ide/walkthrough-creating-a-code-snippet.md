@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296831"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845574"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Instruções passo a passo: criando um snippet de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296831"
 Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Você pode adicionar o snippet à instalação do Visual Studio usando o botão Importar no Gerenciador de Snippets de Código (**Ferramentas/Gerenciador de Snippets de Código**).
 
 > [!TIP]
-> Para obter informações sobre como escrever snippets de código mais facilmente, pesquise o site da CodePlex para ferramentas da comunidade, como [Editor de Snippet](https://go.microsoft.com/fwlink/?LinkId=251033).
+> Para obter informações sobre como escrever snippets de código mais facilmente, pesquise o site da CodePlex para ferramentas da comunidade, como [Editor de Snippet](https://snippeteditor.codeplex.com/).
 
 ## <a name="snippet-template"></a>Modelo de Snippet
  A seguir está o modelo básico de snippet:
@@ -261,5 +261,5 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
 
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297143"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850130"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de sequência UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>Neste tópico
+## <a name="in-this-topic"></a>{1&gt;Neste tópico&lt;1}
  [Usando diagramas de sequência UML](#Using)
 
  [Etapas básicas para desenhar diagramas de sequência](#BasicSteps)
@@ -262,7 +262,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 |**Para essa finalidade**|**Usar este formato**|
 |--------------------------|-------------------------|
 |Instância anônima de um tipo.<br /><br /> Use-a se você tiver apenas uma linha da vida de cada tipo.|*typeName*|
-|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectname*:*TypeName*|
+|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Criando linhas de vida de tipos
  Você pode criar novas linhas de vida de classes que você já definiu, por exemplo, em um diagrama de classe.
@@ -442,5 +442,5 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 5. Para adicionar novas mensagens a um fragmento, use as ferramentas de mensagem ou copie e Cole.
 
-## <a name="see-also"></a>Consulte também
- [Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classe UML: referenciar](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: o esboço de interações usando diagramas](https://go.microsoft.com/fwlink/?LinkId=201113)
+## <a name="see-also"></a>Veja também
+ [Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classe UML: referenciar](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: o esboço de interações usando diagramas](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

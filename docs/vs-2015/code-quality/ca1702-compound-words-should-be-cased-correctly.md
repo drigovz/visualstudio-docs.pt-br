@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669251"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919246"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: palavras compostas devem ter maiúsculas e minúsculas corretas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1702: as palavras compostas devem estar em maiúsculas e minúsculas](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1702: as palavras compostas devem estar em maiúsculas e minúsculas](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
 |||
 |-|-|
 |NomeDoTipo|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Categoria|Microsoft. Naming|
+|Categoria|Microsoft.Naming|
 |Alteração Significativa|Quebra-quando acionada em assemblies.<br /><br /> Não separável-quando acionado em parâmetros de tipo.|
 
 ## <a name="cause"></a>Causa
@@ -55,5 +55,5 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1702
 
  [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Diretrizes de nomenclatura](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) [convenções de capitalização](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

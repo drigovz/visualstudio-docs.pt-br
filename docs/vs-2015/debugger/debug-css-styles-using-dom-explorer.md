@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299501"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852431"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos CSS com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
     > [!TIP]
     > Após o aplicativo ser exibido no Simulador, posicione o Simulador diretamente ao lado da janela do Visual Studio para verificar imediatamente os resultados de suas seleções e alterações nos estilos de CSS.  
   
-6. Alterne para o Visual Studio e clique em **selecionar elemento** no explorador do dom (ou pressione CTRL + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique. Aqui está o botão **selecionar elemento** . ![Botão Selecionar elemento no explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Alterne para o Visual Studio e clique em **selecionar elemento** no explorador do dom (ou pressione CTRL + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique. Aqui está o botão **selecionar elemento** . ![Botão Selecionar elemento no explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > Você também pode selecionar elementos HTML diretamente no Explorador de DOMs. Para obter mais informações sobre como selecionar elementos, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -146,7 +146,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 11. Você também pode editar manualmente os valores de estilo CSS e ver o resultado imediato usando a guia **estilos** .  
   
-12. Selecione a guia **estilos** .  
+12. Selecione a guia **Estilos**.  
   
 13. Abra o seletor de estilo de `.itemspage .itemslist .item .item-overlay .item-title`.  
   
@@ -156,8 +156,8 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 16. Para fazer alterações no arquivo CSS de origem, clique no link **itens. css** na guia **estilos** . Isso abre o Items. CSS, onde você pode alterar o valor do estilo de `color` no código do aplicativo. Para atualizar o aplicativo sem interromper e reiniciar o depurador, clique no botão ![Atualizar aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Atualizar aplicativo do Windows**) na barra de ferramentas **depurar** .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar o layout usando o explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Exibir ouvintes de evento DOM](../debugger/view-dom-event-listeners.md)   
- [Suporte ao produto e acessibilidade](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [Suporte ao produto e acessibilidade](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

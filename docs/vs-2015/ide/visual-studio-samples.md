@@ -11,17 +11,17 @@ caps.latest.revision: 58
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67d19e5eb12b756353a261ceba8974b38a7ffe8a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296839"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918092"
 ---
 # <a name="visual-studio-samples"></a>Amostras do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível encontrar exemplos do Visual Studio no site da [Galeria de Códigos do MSDN](https://go.microsoft.com/fwlink/?LinkID=127810).
+É possível encontrar exemplos do Visual Studio no site da [Galeria de Códigos do MSDN](https://code.msdn.microsoft.com/).
 
  Você pode usar a caixa de diálogo **Novo Projeto** para procurar exemplos. (Para abrir a caixa de diálogo, na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**).
 
@@ -30,16 +30,16 @@ ms.locfileid: "74296839"
 
 |Área|Descrição|
 |----------|-----------------|
-|[Exemplos do Centro de Desenvolvedores Windows](https://go.microsoft.com/fwlink/?LinkID=255278)|Mostra como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
-|[Exemplos do .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Mostra diversos aspectos do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em C# e no Visual Basic.|
-|[Exemplos do C#](https://docs.microsoft.com/samples/browse/?languages=csharp)|Mostra como usar recursos diferentes de C#.|
-|[Exemplos do Visual Basic](https://docs.microsoft.com/samples/browse/?languages=vb)|Mostra como usar recursos diferentes de Visual Basic.|
-|[Exemplos do F#](https://docs.microsoft.com/samples/browse/?languages=fsharp)|Mostra como usar recursos diferentes de F#.|
-|[Exemplos de JavaScript](https://docs.microsoft.com/samples/browse/?languages=javascript)|Mostra como usar recursos diferentes no JavaScript.|
-|[Exemplos de C++](https://docs.microsoft.com/samples/browse/?languages=cpp)|Mostra como usar recursos diferentes no C++.|
-|[Exemplos do DirectX](https://docs.microsoft.com/samples/browse/?products=xbox)|Mostra como usar DirectX.|
-|[Exemplos de Desenvolvimento do Office](https://docs.microsoft.com/samples/browse/?products=office)|Mostra como usar as ferramentas de desenvolvimento do Office no Visual Studio. Para os exemplos mais recentes, consulte [Exemplos de desenvolvedor do MSDN: aprender com o código](https://go.microsoft.com/fwlink/?LinkID=248199).|
-|[Exemplos de VSSDK](https://aka.ms/vs2015sdksamples)|Mostra como estender o Visual Studio.|
+|[Exemplos do Centro de Desenvolvedores Windows](https://code.msdn.microsoft.com/windowsapps/)|Mostra como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
+|[Exemplos do .NET Framework](/samples/browse/?products=dotnet)|Mostra diversos aspectos do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em C# e no Visual Basic.|
+|[Exemplos do C#](/samples/browse/?languages=csharp)|Mostra como usar recursos diferentes de C#.|
+|[Exemplos do Visual Basic](/samples/browse/?languages=vb)|Mostra como usar recursos diferentes de Visual Basic.|
+|[Exemplos do F#](/samples/browse/?languages=fsharp)|Mostra como usar recursos diferentes de F#.|
+|[Exemplos de JavaScript](/samples/browse/?languages=javascript)|Mostra como usar recursos diferentes no JavaScript.|
+|[Exemplos de C++](/samples/browse/?languages=cpp)|Mostra como usar recursos diferentes no C++.|
+|[Exemplos do DirectX](/samples/browse/?products=xbox)|Mostra como usar DirectX.|
+|[Exemplos de Desenvolvimento do Office](/samples/browse/?products=office)|Mostra como usar as ferramentas de desenvolvimento do Office no Visual Studio. |
+|[Exemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)|Mostra como estender o Visual Studio.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Introdução ao Visual C# e ao Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

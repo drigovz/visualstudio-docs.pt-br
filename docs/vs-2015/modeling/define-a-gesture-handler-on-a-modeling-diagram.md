@@ -12,21 +12,21 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299305"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850488"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir um manipulador de gestos em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode definir comandos que são executados quando o usuário clica duas vezes ou arrasta itens para um diagrama UML. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-las a outros usuários do Visual Studio.
+No Visual Studio, você pode definir comandos que são executados quando o usuário clica duas vezes ou arrasta itens para um diagrama UML. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) e distribuí-las a outros usuários do Visual Studio.
 
  Se já houver um comportamento interno para o tipo de diagrama e o tipo de elemento que você deseja arrastar, talvez você não consiga adicionar ou substituir esse comportamento.
 
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
+## <a name="requirements"></a>Requisitos do
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo de:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versão] \Extensions**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="DragExample"></a> Exemplo
  O exemplo a seguir mostra como criar linhas de vida em um diagrama de sequência, com base nas partes e portas de um componente, arrastados de um diagrama de componente.
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  O código de `GetModelElementsFromDragEvent()` é descrito em [obter elementos de modelo UML do IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir restrições de validação para programação de modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [com a API UML](../modeling/programming-with-the-uml-api.md)

@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301166"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851706"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalar um aplicativo de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
   
 - Crie um bootstrapper de instalação.  
   
-  Todo o código de exemplo deste documento é proveniente do [exemplo de implantação do Shell](https://go.microsoft.com/fwlink/?LinkId=262245), que pode ser baixado na Galeria de códigos do site do MSDN. O exemplo mostra os resultados da execução de cada uma dessas etapas.  
+  Todo o código de exemplo deste documento é proveniente do [exemplo de implantação do Shell](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7), que pode ser baixado na Galeria de códigos do site do MSDN. O exemplo mostra os resultados da execução de cada uma dessas etapas.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}  
  Para executar os procedimentos descritos neste tópico, as ferramentas a seguir devem ser instaladas em seu computador.  
   
 - O SDK do Visual Studio  
   
-- O [conjunto de ferramentas XML Windows Installer](https://go.microsoft.com/fwlink/?LinkId=82720) versão 3,6  
+- O [conjunto de ferramentas XML Windows Installer](http://wix.sourceforge.net/) versão 3,6  
   
   O exemplo também requer o SDK de modelagem e visualização da Microsoft, que nem todos os shells exigem.  
   
@@ -54,7 +54,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
 2. Para cada projeto que contém um manifesto do VSIX, edite as tarefas de compilação para gerar o conteúdo para o local do qual o MSI será instalado. Inclua o manifesto do VSIX na saída da compilação, mas não crie um arquivo. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Criando um MSI para o Shell  
- Para criar seu pacote MSI, recomendamos que você use o [conjunto de ferramentas Windows Installer XML](https://go.microsoft.com/fwlink/?LinkId=82720) porque ele oferece maior flexibilidade do que um projeto de instalação padrão.  
+ Para criar seu pacote MSI, recomendamos que você use o [conjunto de ferramentas Windows Installer XML](http://wix.sourceforge.net/) porque ele oferece maior flexibilidade do que um projeto de instalação padrão.  
   
  No arquivo Product. wxs, defina os blocos de detecção e o layout dos componentes do Shell.  
   
@@ -176,10 +176,10 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
   
 5. Para cada entrada de registro no *ProjectName*. reg, adicione um bloco de registro correspondente, como mostra os exemplos a seguir.  
   
-    |*ProjectName*. reg|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE PhotoStudio"|\<RegistryKey ID = ' DteClsidRegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) \LocalServer32 ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE PhotoStudio"|\<RegistryKey ID = ' DteClsidRegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) \LocalServer32 ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey>|  
   
      Neste exemplo, var. DteClsidRegKey resolve para a chave do registro na linha superior. Var. ShortProductName resolve para `PhotoStudio`.  
   
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

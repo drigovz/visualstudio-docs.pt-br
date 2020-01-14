@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298277"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917559"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * é uma tecnologia da Microsoft que usa a criptografia padrão da 
 ## <a name="authenticode-and-code-signing"></a>Authenticode e assinatura de código  
  Um *certificado digital* é um arquivo que contém um par de chaves públicas/privadas de criptografia, junto com os metadados que descrevem o editor para o qual o certificado foi emitido e a agência que emitiu o certificado.  
   
- Há vários tipos de certificados Authenticode. Cada uma está configurada para diferentes tipos de assinatura. Para aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você deve ter um certificado Authenticode válido para assinatura de código. Se você tentar assinar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] com outro tipo de certificado, como um certificado de email digital, ele não funcionará. Para obter mais informações, consulte [introdução à assinatura de código](https://go.microsoft.com/fwlink/?LinkId=179452).  
+ Há vários tipos de certificados Authenticode. Cada uma está configurada para diferentes tipos de assinatura. Para aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você deve ter um certificado Authenticode válido para assinatura de código. Se você tentar assinar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] com outro tipo de certificado, como um certificado de email digital, ele não funcionará. Para saber mais, veja [Introdução à assinatura de código](https://msdn.microsoft.com/library/ms537361.aspx).  
   
  Você pode obter um certificado para a assinatura de código de uma das três maneiras:  
   
@@ -65,13 +65,13 @@ Authenticode * é uma tecnologia da Microsoft que usa a criptografia padrão da 
   
 - Desinstale o aplicativo e reinstale uma nova versão com um certificado válido.  
   
-- Crie um assembly de linha de comando que atualize o certificado. Informações passo a passo sobre esse processo podem ser encontradas em [suporte da Microsoft artigo 925521](https://go.microsoft.com/fwlink/?LinkId=179454).  
+- Crie um assembly de linha de comando que atualize o certificado.  
   
 ### <a name="storing-certificates"></a>Armazenando certificados  
   
 - Você pode armazenar certificados como um arquivo. pfx no sistema de arquivos ou pode armazená-los dentro de um contêiner de chave. Um usuário em um domínio do Windows pode ter um número de contêineres de chave. Por padrão, MakeCert. exe armazenará certificados em seu contêiner de chave pessoal, a menos que você especifique que ele deve salvá-lo em um. pfx em vez disso. O Mage. exe e o MageUI. exe, as ferramentas de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] para criar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantações, permitem que você use certificados armazenados de qualquer maneira.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   

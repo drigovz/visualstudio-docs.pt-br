@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301185"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918915"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Em uma linguagem específica de domínio (DSL) criada com o SDK de Visualizaçã
  **Habilitar ou desabilitar copiar, recortar e colar.**
 No Gerenciador de DSL, defina a propriedade **habilitar copiar colar** do nó do **Editor** .
 
- **Copiar links para o mesmo destino.** Por exemplo, para ter uma caixa de comentário copiada vinculada ao mesmo elemento Subject.
+ **Copiar links para o mesmo destino.** Por exemplo, para copiar uma caixa de comentários vinculada ao mesmo elemento de assunto.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia somente para vincular**. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
  Copie os elementos vinculados. Por exemplo, quando você copia um novo elemento, cópias de todas as caixas de comentários vinculadas também são feitas.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia para o link e**o representante da função oposto. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
- **Duplique rapidamente os elementos copiando e colando.** Normalmente, o item que você acabou de copiar ainda está selecionado e não é possível colar o mesmo tipo de elemento nele.
+ **Duplique rapidamente os elementos copiando e colando.** Normalmente, o item que você acabou de copiar ainda fica selecionado e você não pode colar o mesmo tipo de elemento nele.
 Adicione uma Diretiva Element Merge à classe de domínio e configure-a para encaminhar mesclagens para a classe pai. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Crie links adicionais quando o usuário colar em um destino selecionado.** Por exemplo, quando uma caixa de comentário é colada em um elemento, é feito um vínculo entre elas.
+ **Crie links adicionais quando o usuário colar em um destino selecionado.** Por exemplo, quando uma caixa de comentários é colada em um elemento, um link é estabelecido entre eles.
 Adicione uma Diretiva Element Merge à classe de domínio de destino e configure-a para processar a mesclagem, adicionando links. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -91,7 +91,7 @@ Substitua *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto Dsl
 Substitua *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
 
  **Preserve o layout de forma por meio de copiar e colar.**
-Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada pelo exemplo em [VMSDK: exemplo de diagramas de circuito](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. 
 
  Para conseguir esse efeito, adicione as formas e conectores ao ElementGroupPrototype copiado. O método mais conveniente para substituir é o ElementOperations.CreateElementGroupPrototype(). Para fazer isso, adicione o seguinte código ao projeto Dsl:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Colar formas em um local escolhido, como a posição atual do cursor.**
-Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada pelo exemplo em [VMSDK: exemplo de diagramas de circuito](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas.
 
  Para conseguir esse efeito, substitua `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar a versão específica do local do `ElementOperations.Merge()`. Para fazer isso, adicione o seguinte código ao projeto DslPackage:
 
@@ -244,7 +244,7 @@ Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-t
 
  ![Diagrama de sequência da operação colar](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
 
-#### <a name="to-define-your-own-elementoperations"></a>Para definir seu próprio ElementOperations
+#### <a name="to-define-your-own-elementoperations"></a>Para definir seus próprios ElementOperations
 
 1. Em um novo arquivo no seu projeto DSL, crie uma classe que derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
@@ -563,5 +563,6 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>Consulte também
- [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) , [Personalizando](../modeling/customizing-deletion-behavior.md) o exemplo de comportamento de exclusão [: exemplo de diagramas de circuito VMSDK](https://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>Veja também
+ [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) , [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)
+ 

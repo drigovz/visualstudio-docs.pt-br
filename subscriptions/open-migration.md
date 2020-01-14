@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Saiba como os parceiros gerenciam as assinaturas do Visual Studio para seus clientes.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000908"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850555"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Parceiros que gerenciam assinaturas em nome dos clientes
 Para gerenciar assinaturas no [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com), há algumas etapas que os parceiros e os clientes precisarão seguir. O processo será:
@@ -50,10 +50,10 @@ Esse cenário se aplica a novos parceiros que já fizeram novos pedidos de Open 
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.
 
 ## <a name="resources"></a>Recursos
-- [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
+- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Visite o [portal de administração de assinaturas](https://manage.visualstudio.com) do Visual Studio para gerenciar as assinaturas.
 - Precisa de ajuda? Contatar o [Suporte à administração e às assinaturas](https://visualstudio.microsoft.com/support/support-overview-vs) do Visual Studio

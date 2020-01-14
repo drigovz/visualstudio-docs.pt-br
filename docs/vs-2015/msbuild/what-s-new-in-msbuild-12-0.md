@@ -9,17 +9,17 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301293"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844463"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Novidades do MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O MSBuild agora é instalado como parte do Visual Studio e não como parte do .NET Framework. O número de versão atual do MSBuild é 12.0. Se desejar instalar o MSBuild separadamente, baixe o pacote de instalação em [MSBuild Download](https://go.microsoft.com/fwlink/?LinkId=309745) (Download do MSBuild).  
+O MSBuild agora é instalado como parte do Visual Studio e não como parte do .NET Framework. O número de versão atual do MSBuild é 12.0. Se desejar instalar o MSBuild separadamente, baixe o pacote de instalação em [MSBuild Download](https://www.microsoft.com/download/details.aspx?id=40760) (Download do MSBuild).  
   
 ## <a name="changed-path"></a>Caminho alterado  
  O MSBuild agora é instalado diretamente em *%ProgramFiles%* , por exemplo, em C:\Arquivos de Programas\MSBuild\\.  
@@ -41,5 +41,5 @@ O MSBuild agora é instalado como parte do Visual Studio e não como parte do .N
   
 - `MSBuildToolsPath` e `MSBuildFrameworkToolsPath` têm equivalentes de 32 bits – `MSBuildToolsPath32` e `MSBuildFrameworkToolsPath32`– que sempre apontam para o local de 32 bits, independentemente se está sendo usado o MSBuild de 32 bits ou o de 64 bits.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 [MSBuild](msbuild.md)

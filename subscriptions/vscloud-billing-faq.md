@@ -6,19 +6,19 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491269"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851416"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
 
 ## <a name="general-purchasing-questions"></a>Perguntas gerais sobre compras
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>P: Posso comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra?
-R: Não. Todas as assinaturas de nuvem do Visual Studio precisam ser compradas usando uma assinatura do Azure. (Considere isso como sua conta de cobrança do Azure.)
+{1&gt;R:&lt;1} Não. Todas as assinaturas de nuvem do Visual Studio precisam ser compradas usando uma assinatura do Azure. (Considere isso como sua conta de cobrança do Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>P: Quais tipos de assinaturas do Azure podem ser usadas para comprar assinaturas de nuvem do Visual Studio?
 R: A maioria das assinaturas do Azure podem ser usadas – damos suporte a assinaturas do Azure conectadas ao seu [EA (Enterprise Agreement)](https://azure.microsoft.com/pricing/enterprise-agreement/), assinaturas do Azure configuradas por CSPs (provedores de solução de nuvem), assinaturas do Azure configuradas por meio de revendedores Microsoft Open License e assinaturas do Azure pagas conforme o uso.
@@ -37,7 +37,7 @@ R: O método mais fácil de determinar se você tem os privilégios corretos é 
 Você precisa selecionar uma assinatura do Azure (que é uma conta de cobrança) em uma lista apresentada de assinaturas do Azure que estão vinculadas ao seu logon no momento.
 Como o nome da assinatura do Azure assume como padrão o tipo de conta de cobrança ("Pago Conforme o Uso", "Contrato Enterprise", etc.), geralmente fica claro se a assinatura do Azure faz parte do Contrato Enterprise.
 
-Outro método é tentar visitar o [Azure Enterprise Portal](https://ea.azure.com).  Se você conseguir acessá-lo com êxito, significará que você já tem a função de admin corporativo ou de proprietário da conta. Somente os proprietários da conta podem configurar novas contas de cobrança do Azure em um Contrato Enterprise. Se você não conseguir acessar o Azure Enterprise Portal, descubra na sua organização quem é o admin corporativo e solicite que ele o adicione como proprietário da conta no Azure Enterprise Portal.  Se não for possível encontrar essa pessoa, [envie um tíquete de suporte](https://aka.ms/AzureEntSupport) e solicite as informações de contato.  É necessário o nome da sua organização e o número de registro do Contrato Enterprise para o tíquete de suporte.
+Outro método é tentar visitar o [Azure Enterprise Portal](https://ea.azure.com).  Se você conseguir acessá-lo com êxito, significará que você já tem a função de admin corporativo ou de proprietário da conta. Somente os proprietários da conta podem configurar novas contas de cobrança do Azure em um Contrato Enterprise. Se você não conseguir acessar o Azure Enterprise Portal, descubra na sua organização quem é o admin corporativo e solicite que ele o adicione como proprietário da conta no Azure Enterprise Portal.  Se não for possível encontrar essa pessoa, [envie um tíquete de suporte](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) e solicite as informações de contato.  É necessário o nome da sua organização e o número de registro do Contrato Enterprise para o tíquete de suporte.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar os fundos do compromisso monetário do Azure do meu Contrato Enterprise para comprar assinaturas de nuvem do Visual Studio?
 R: Não, esses fundos pré-pagos não são qualificados para comprar as assinaturas de nuvem do Visual Studio. Quando você escolher uma assinatura do Azure criada para o EA para comprar assinaturas de nuvem do Visual Studio, os encargos serão exibidos na sua próxima fatura "excedente". Normalmente, isso ocorre mensalmente, mas devido às regras do histórico de alguns clientes do EA, é possível que uma fatura excedente não seja emitida por vários meses. Consulte um especialista em licenciamento do EA se você precisar saber qual valor de compras adicionais (compras que não são qualificadas para o compromisso monetário do Azure) emitirá uma fatura excedente.
@@ -95,7 +95,7 @@ R: Sim, você pode, se o revendedor participar do programa CSP (provedor de solu
 - [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Comprar assinaturas de nuvem agora
 - [Visual Studio Professional mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [Visual Studio Enterprise mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777777"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916873"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desenvolvimento móvel multiplataforma no Visual Studio
 
@@ -27,7 +27,7 @@ Se você desejar criar um jogo ou aplicativo gráfico imersivo, instale as ferra
 
 ## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Compilar um aplicativo para Android, iOS e Windows (.NET Framework)
 
-![Pseudodispositivos](../cross-platform/media/homedevices.png "HomeDevices")
+![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
 Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o iOS e o Windows como destino na mesma solução, compartilhando o código e, até mesmo, a interface do usuário.
 
@@ -166,8 +166,8 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 |[Assista a um vídeo de introdução à Visualização das Ferramentas do Visual Studio para Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Vídeo)|
 |[Saiba mais sobre o Unity](https://unity.com/) (site do Unity)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Adicionar APIs do Office 365 a um projeto do Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
+- [Adicionar APIs do Office 365 a um projeto do Visual Studio](/office/developer-program/office-365-developer-program)
 - [Serviços de Aplicativos do Azure – Aplicativos Móveis](https://azure.microsoft.com/services/app-service/mobile/)
-- [Visual Studio App Center](https://docs.microsoft.com/appcenter)
+- [Visual Studio App Center](/appcenter)

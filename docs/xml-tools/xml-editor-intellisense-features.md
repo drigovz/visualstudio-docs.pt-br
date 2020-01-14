@@ -3,17 +3,17 @@ title: Recursos do IntelliSense do editor de XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592380"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 
@@ -87,7 +87,7 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 ## <a name="brace-matching"></a>Correspondência de chaves
 
-O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl** + **]** ) para saltar de uma chave para a chave correspondente.
+O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl**+ **]** ) para saltar de uma chave para a chave correspondente.
 
 O editor XML faz isso para os seguintes itens:
 
@@ -107,14 +107,14 @@ O editor XML faz isso para os seguintes itens:
 
 ## <a name="modify-the-intellisense-options"></a>Modificar as opções do IntelliSense
 
-Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas **ferramentas**  >  configurações de**Opções** .
+Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas **ferramentas** > configurações de **Opções** .
 
 A seção **inserção automática** da página **diversos** controla o seguinte comportamento:
 
-|Name|Descrição|
+|{1&gt;Nome&lt;1}|Descrição|
 |-|-----------------|
 |Fechar marcas|Insere fechar marcas para novos elementos.|
-|Aspas de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
+|Citações de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
 |Outra marcação|Comentários, CDATA termina, DOCTYPE, instruções de processamento, e outras declarações de marcação.|
 
 ### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático

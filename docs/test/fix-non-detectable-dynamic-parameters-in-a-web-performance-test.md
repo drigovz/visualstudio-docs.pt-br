@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664974"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589637"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
 
@@ -25,7 +25,7 @@ Alguns sites usam parâmetros dinâmicos para processar algumas de suas solicita
 
 - Valores de parâmetro dinâmicos que são definidos nos campos ocultos em páginas HTML, como o estado de exibição do ASP.NET. Esses são tratados automaticamente pelo registrador, que adiciona regras ocultas de extração de campo ao teste.
 
-- Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
+- Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho na Web.
 
 Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâmico não detectado irá fazer com que seu teste de desempenho na Web falhe porque o valor dinâmico provavelmente será diferente sempre que o teste for executado. Para manipular corretamente esses parâmetros, você pode adicionar regras de extração aos parâmetros dinâmicos em seu teste de desempenho na Web manualmente.
 

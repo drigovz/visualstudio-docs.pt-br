@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299936"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917698"
 ---
 # <a name="talk-to-us"></a>Fale conosco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [Fale conosco](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [Fale conosco](/visualstudio/ide/feedback-options).
 
 Estamos interessados em suas ideias para melhorar a nossa documentação. Não podemos responder a cada pessoa, mas faremos com que seus comentários cheguem à pessoa certa.
 
@@ -38,17 +38,17 @@ Estamos interessados em suas ideias para melhorar a nossa documentação. Não p
  Versões de pré-lançamento do Visual Studio têm um item de menu **Classificar este produto** que permite que você envie comentários sobre a qualidade do build que você está executando. Você não verá isso em versões de lançamento do produto.
 
 ## <a name="i-need-help"></a>Preciso de ajuda!
- Consulte [suporte da Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
+ Consulte [suporte da Microsoft](https://support.microsoft.com/) para obter ajuda online.
 
  O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, consulte [Sites Internacionais da Microsoft](https://www.microsoft.com/worldwide/).
 
  Para obter mais opções, consulte [visão geral do suporte](https://visualstudio.microsoft.com/support/).
 
- Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Premier. Para obter mais informações, consulte [Suporte Premier dos Serviços Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+ Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Premier. Para obter mais informações, consulte [Suporte Premier dos Serviços Microsoft](https://www.microsoft.com/industry/services/support).
 
  Se o produto veio instalado em um novo computador ou dispositivo, o fabricante de hardware fornecerá suporte técnico e assistência para esse software. Contate o fabricante diretamente para obter suporte.
 
  Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condições vigentes. Os preços, termos e condições estão sujeitos à alteração sem aviso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Como relatar um problema com o Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

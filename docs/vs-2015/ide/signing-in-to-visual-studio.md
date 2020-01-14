@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301226"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851618"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Por que devo me registrar no Visual Studio?
  Você obtém os seguintes benefícios entrando no Visual Studio:
 
-- **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
+- **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 - **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

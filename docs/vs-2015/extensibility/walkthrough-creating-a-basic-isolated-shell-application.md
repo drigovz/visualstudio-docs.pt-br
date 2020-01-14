@@ -12,19 +12,19 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291262"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850344"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Walkthrough: Criando um aplicativo de shell isolado básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial mostra como criar uma solução de shell isolada, personalizar a ajuda sobre a janela de ferramentas e criar um programa de instalação que instala o Shell isolado.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}  
  Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Para implantar o Shell isolado, você também deve usar o pacote redistribuível do shell do Visual Studio (isolado).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Criando uma solução de shell isolado  
@@ -115,7 +115,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 2. Remova a marca de comentário da seguinte linha:  
   
-     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Recompile a solução e inicie a depuração do Shell isolado. Abra um arquivo XML, por exemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verifique se as palavras-chave XML no arquivo não estão coloridas e se a digitação de "<" em uma linha não traz dicas de ferramenta XML.  
   
@@ -163,7 +163,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
 6. Recompile a solução e inicie a depuração do Shell isolado. A caixa de ajuda/sobre deve ser aproximadamente quadrada.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Antes de implantar o aplicativo de shell isolado  
- Seu aplicativo de shell isolado pode ser instalado em qualquer computador que tenha o pacote redistribuível do shell do Visual Studio (isolado). Para obter mais informações sobre o pacote redistribuível, consulte o site de [downloads de extensibilidade do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Seu aplicativo de shell isolado pode ser instalado em qualquer computador que tenha o pacote redistribuível do shell do Visual Studio (isolado). Para obter mais informações sobre o pacote redistribuível, consulte o site de [downloads de extensibilidade do Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Implantando o aplicativo de shell isolado  
  Você implanta o aplicativo de shell isolado em um computador de destino criando um projeto de instalação. Você deve especificar essas coisas:  

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251708"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590638"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos (os arquivos estão especificados no atributo `Include`). Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.
@@ -53,9 +53,9 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 - A partir do .NET Framework 3.5, os elementos `Target` podem conter elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que podem conter elementos de item.
 
 ## <a name="reference-items-in-a-project-file"></a>Referenciar itens em um arquivo de projeto
- Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(\<ItemType>). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, confira [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
+ Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(\<ItemType>). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, confira [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
 
- Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Use a sintaxe @(\<ItemType>, '\<separator>') para especificar um separador diferente do padrão. Para obter mais informações, confira [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Use a sintaxe @(\<ItemType>, '\<separator>') para especificar um separador diferente do padrão. Para obter mais informações, confira [Como exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
 ## <a name="use-wildcards-to-specify-items"></a>Usar curingas para especificar itens
 
@@ -79,7 +79,7 @@ O seguinte elemento seleciona todos os arquivos `.vb` na unidade `D:`:
 
 Para incluir caracteres literais `*` ou `?` em um item sem expansão de curinga, você deve [usar o escape para os caracteres curinga](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Para obter mais informações sobre caracteres curinga, confira [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
+Para obter mais informações sobre caracteres curinga, confira [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
 
 ## <a name="use-the-exclude-attribute"></a>Usar o atributo Exclude
  Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo *.cs* no diretório ao tipo de item CSFile, exceto o arquivo *DoNotBuild.cs*.
@@ -97,7 +97,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como: Seleciona
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
- Para obter mais informações, confira [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).
+ Para obter mais informações, confira [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).
 
 ## <a name="item-metadata"></a>Metadados do item
  Os itens que podem conter metadados, além das informações nos atributos `Include` e `Exclude`. Esses metadados podem ser usados por tarefas que exigem mais informações sobre os itens ou para os destinos e tarefas de lote. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).
@@ -157,7 +157,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como: Seleciona
  Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md).
 
 ## <a name="item-definitions"></a>Definições de item
- A partir do .NET Framework 3.5, você pode adicionar metadados padrão a qualquer tipo de item usando o [elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Como metadados conhecidos, os metadados padrão estão associados a todos os itens do tipo de item especificado. Você pode substituir explicitamente metadados padrão em uma definição de item. Por exemplo, o XML a seguir fornece aos itens `Compile` *one.cs* e *three.cs* os metadados `BuildDay` com o valor "Monday". O código fornece ao item *two.cs* os metadados `BuildDay` com o valor "Tuesday".
+ A partir do .NET Framework 3.5, você pode adicionar metadados padrão a qualquer tipo de item usando o [elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Como metadados conhecidos, os metadados padrão estão associados a todos os itens do tipo de item especificado. Você pode substituir explicitamente metadados padrão em uma definição de item. Por exemplo, o XML a seguir fornece aos itens `Compile`*one.cs* e *three.cs* os metadados `BuildDay` com o valor "Monday". O código fornece ao item *two.cs* os metadados `BuildDay` com o valor "Tuesday".
 
 ```xml
 <ItemDefinitionGroup>
@@ -326,8 +326,8 @@ Output:
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)
-- [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Como: Exibir uma lista de itens separados por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
+- [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)
+- [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Como exibir uma lista de itens separados por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Definições de item](../msbuild/item-definitions.md)
 - [Envio em lote](../msbuild/msbuild-batching.md)

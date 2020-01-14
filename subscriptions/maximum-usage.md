@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491725"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852335"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usar o recurso de Uso Máximo para controlar o número de assinaturas atribuídas
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 
@@ -42,10 +42,10 @@ Por exemplo, na tabela acima, você pode ver que no dia 13/12/2018 havia 123 ass
 R: as informações na visão geral mostram as atribuições *atuais* e as assinaturas disponíveis para cada nível de assinatura.  Isso pode ser muito diferente do número máximo de assinaturas atribuídas para o contrato durante o ano atual ou a vida útil do contrato.  O recurso de uso máximo permite que você veja quando os níveis máximos de atribuição foram atingidos e quais são os níveis.  Essa é uma distinção importante, já que a cobrança de assinaturas durante a adequação ("true-up") é baseada no número máximo de assinaturas atribuídas a qualquer momento ao longo do ano. 
 
 ## <a name="resources"></a>Recursos
-- [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
+- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Se você tiver alguma dúvida sobre atribuições de assinatura ou em outros aspectos do portal de administração, entre em contato com https://visualstudio.microsoft.com/subscriptions/support/ para obter assistência. 
 - Saiba mais sobre o que fazer se você atribuir mais assinaturas que comprou, chamadas de [superalocações](handle-overclaimed-license.md).

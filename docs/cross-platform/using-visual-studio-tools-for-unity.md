@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253048"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916575"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
@@ -45,7 +45,7 @@ O preenchimento de código Intellisense facilita a implementação de mensagens 
 
 3. Após digitar as letras "**ont**", uma lista de sugestões do IntelliSense será exibida.
 
-   ![Usando IntelliSense](media/vstu_intellisense1.png)
+   ![Usando o IntelliSense](media/vstu_intellisense1.png)
 
 4. A seleção na lista pode ser alterada de três maneiras:
 
@@ -83,17 +83,17 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
 6. Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.
 
-   ![A caixa de diálogo Assistente de monobehavior. ](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![A caixa de diálogo do assistente de monocomportamento.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Gerenciador de Projetos do Unity
 
-![A janela do Gerenciador de Projetos do Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![A janela Explorador de projeto do Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 O Gerenciador de Projetos do Unity exibe todos os seus arquivos e diretórios de projeto do Unity da mesma maneira que o Editor do Unity. Isso é diferente de navegar nos scripts do Unity com a solução normal do Gerenciador de Soluções do Visual Studio, que os organiza em projetos e em uma solução gerada pelo Visual Studio.
 
 - No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt**+**Shift**+**E**
 
-   ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Exiba a janela Explorador de projeto do Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Depuração do Unity
 
@@ -145,17 +145,17 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 2. Na janela Configurações de Build, marque as caixas de seleção **Build de Desenvolvimento** e **Depuração de Script**.
 
-   ![Defina as configurações de build do Unity para depuração. ](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+   ![Defina as configurações de Build do Unity para depuração.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>Selecione uma instância do Unity à qual anexar o depurador
 
 - No Visual Studio, no menu principal, escolha **Depurar > Anexar Depurador do Unity**.
 
-   ![Anexe o depurador do Unity. ](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Anexe o depurador do Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.
 
-   ![Escolha uma instância do Unity à qual se conectar. ](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Escolha uma instância do Unity ao qual se conectar.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Projeto**
 
@@ -163,7 +163,7 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
    **Computador** O nome do computador ou dispositivo no qual essa instância do Unity está em execução.
 
-   **Tipo** **Editor** se esta instância do Unity for executada como parte do Editor do Unity; **Player** se esta instância do Unity for um player autônomo.
+   **Editor** de tipos se esta instância do Unity estiver sendo executada como parte do editor do Unity; **Player** se esta instância do Unity for um player autônomo.
 
    **Porta** O número da porta do soquete UDP pela qual esta instância do Unity está se comunicando.
 
@@ -181,18 +181,18 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar um projeto de DLL gerenciado usado em seu projeto do Unity
 
-1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, confira [Como: Adicionar projetos a uma solução](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![Adicione o projeto DLL existente à solução.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    Em ambos os casos, as Ferramentas do Visual Studio para Unity mantêm a referência de projeto, mesmo se ele tiver de gerar novamente os arquivos de projeto e solução novamente, então, você precisa executar essas etapas de uma vez.
 
 2. Faça referência ao perfil de framework do Unity correto no projeto de DLL. No Visual Studio, nas propriedades do projeto DLL, defina a propriedade **Estrutura de destino** para a versão do framework do Unity que você está usando. Essa é a Biblioteca de classes base di Unity que corresponde à compatibilidade de API que seu projeto tenha como alvo, como bibliotecas de classes base completas, micro ou da Web. Isso impede que a DLL chame métodos do framework que existem em outros frameworks ou níveis de compatibilidade, mas que podem não existir na versão de framework do Unity que você está usando.
 
 > [!NOTE]
-> O seguinte só é necessário se você estiver usando o tempo de execução herdado do Unity. Se você estiver usando o novo tempo de execução do Unity, não precisará mais usar esses perfis dedicados do 3.5. Use um perfil do .NET 4.x compatível com sua versão do Unity.
+> O seguinte só é necessário se você estiver usando o runtime herdado do Unity. Se você estiver usando o novo runtime do Unity, não precisará mais usar esses perfis dedicados do 3.5. Use um perfil do .NET 4.x compatível com sua versão do Unity.
 
-   ![Defina a estrutura de destino da DLL para o framework do Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Defina a estrutura de destino da DLL para o Unity Framework.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copie a DLL para a pasta Ativos do seu projeto do Unity. No Unity, ativos são arquivos que são empacotados e implantados juntos com seu aplicativo do Unity para que eles possam ser carregados no tempo de execução. Como as DLLs são vinculadas em tempo de execução, as DLLs devem ser implantadas como ativos. Para serem implantadas como um ativo, o Editor do Unity exige que as DLLs sejam colocadas dentro da pasta Ativos em seu projeto do Unity. Há duas formas de fazer isso:
 
@@ -200,9 +200,9 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
    - Modifique as configurações de build do seu projeto de DLL para definir a pasta de saída como a pasta **Ativos** do seu projeto do Unity. Arquivos DLL e PDB serão colocados na pasta **Ativos**.
 
-   Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. Se você tem como objetivo o tempo de execução herdado, as Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity herdado. Se você tem como objetivo o novo tempo de execução e usa o Portable-PDB, o Ferramentas do Visual Studio para Unity não tentará fazer nenhuma conversão de símbolo, pois o novo tempo de execução do Unity é capaz de consumir nativamente PDBs portáteis.
+   Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. Se você tem como objetivo o runtime herdado, as Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity herdado. Se você tem como objetivo o novo runtime e usa o Portable-PDB, o Ferramentas do Visual Studio para Unity não tentará fazer nenhuma conversão de símbolo, pois o novo runtime do Unity é capaz de consumir nativamente PDBs portáteis.
 
-   Veja mais informações sobre a geração de PDB [aqui](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se você tem como objetivo o novo tempo de execução, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o tempo de execução herdado, precisará usar "Full".
+   Veja mais informações sobre a geração de PDB [aqui](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se você tem como objetivo o novo runtime, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o runtime herdado, precisará usar "Full".
 
 4. Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
 
@@ -210,7 +210,7 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
 Você pode acessar rapidamente a funcionalidade Ferramentas do Unity para Visual Studio usando seus atalhos de teclado. Este é um resumo dos atalhos que estão disponíveis.
 
-|Comando|Atalho|Nome de comando de atalho|
+|{1&gt;Comando&lt;1}|Atalho|Nome de comando de atalho|
 |-------------|--------------|---------------------------|
 |Abrir o Assistente do MonoBehavior|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Abrir o Gerenciador de Projetos do Unity|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|

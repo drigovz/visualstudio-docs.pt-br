@@ -14,12 +14,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b74222804e9ed42e6f8263cbe6ad0daf19cda81f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300323"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918731"
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Os assemblies de extensão não precisam ser assinados antes que possam ser exec
   
 1. Adicione seu VSIX a um projeto.  
   
-2. Clique com o botão direito do mouse no nó do projeto em Gerenciador de Soluções, selecione **Adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre o NuGet e adicionar pacotes NuGet, consulte [visão geral do NuGet](https://docs.microsoft.com/nuget/) e [gerenciar pacotes NuGet usando a caixa de diálogo](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).  
+2. Clique com o botão direito do mouse no nó do projeto em Gerenciador de Soluções, selecione **Adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre o NuGet e adicionar pacotes NuGet, consulte [visão geral do NuGet](/nuget/) e [gerenciar pacotes NuGet usando a caixa de diálogo](/nuget/consume-packages/install-use-packages-visual-studio).  
   
 3. Procure VSIXSignTool de VisualStudioExtensibility e instale o pacote NuGet.  
   
@@ -48,5 +48,5 @@ Os assemblies de extensão não precisam ser assinados antes que possam ser exec
   
    VSIXSignTool. exe sinal/f \<CertFile >/p \<senha > \<VSIXfile >  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

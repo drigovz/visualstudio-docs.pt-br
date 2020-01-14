@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291893"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848306"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Usando anotações de SAL para reduzir defeitos de código do C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SAL é a linguagem de anotação de código-fonte da Microsoft. Usando as anota�
      Fornece exemplos que mostram como usar anotações SAL. Também explica armadilhas comuns.  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog da equipe de análise de código](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog da equipe de análise de código](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>Consulte também  
- [Anotações de SAL 2,0 para drivers do Windows](https://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>Veja também  
+ [Anotações de SAL 2,0 para drivers do Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

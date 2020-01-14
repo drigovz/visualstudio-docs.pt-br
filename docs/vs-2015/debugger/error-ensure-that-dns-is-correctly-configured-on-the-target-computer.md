@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6815e21d0fe7af3a24f2fc36a4f448ec420c89de
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 35c258a018bec8bd38f8b43690c18b37ee9d6c39
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299744"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851928"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Erro: verifique se o DNS está configurado corretamente no computador de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +36,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Para obter informações sobre como exibir sua configuração de DNS em Windows 8.1, vista, Windows 7, Windows Server 2012, Windows Server 2008 ou Windows Server 2008 R2, faça o seguinte: no menu **Iniciar** , escolha **ajuda e suporte**e, em seguida, procure **alterar configurações TCP/IP**.  
   
-- Para obter mais informações, vá para o [site do Microsoft Windows](https://go.microsoft.com/fwlink/?LinkId=252720) e pesquise **Alterar configurações de TCP/IP**.  
+- Para obter mais informações, vá para o [site do Microsoft Windows](https://windows.microsoft.com/) e pesquise **Alterar configurações de TCP/IP**.  
   
   Se você não conseguir resolver o problema de DNS, tente executar o Depurador Remoto em uma conta diferente. Esse erro ocorre somente quando você está executando o Depurador Remoto sob a conta Serviço de Rede ou Sistema Local. Se você executar o Depurador Remoto em outra conta, ele poderá usar a autenticação NTLM, que não exige DNS. . Para o procedimento, consulte [erro: o serviço de depurador remoto do Visual Studio no computador de destino não pode se conectar de volta a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
