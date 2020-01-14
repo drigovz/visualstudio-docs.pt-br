@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851706"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944257"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalar um aplicativo de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
   
 - O SDK do Visual Studio  
   
-- O [conjunto de ferramentas XML Windows Installer](http://wix.sourceforge.net/) versão 3,6  
+- O [conjunto de ferramentas XML Windows Installer](https://documentation.help/WiX-Toolset/index.html/) versão 3,6  
   
   O exemplo também requer o SDK de modelagem e visualização da Microsoft, que nem todos os shells exigem.  
   
@@ -54,7 +54,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
 2. Para cada projeto que contém um manifesto do VSIX, edite as tarefas de compilação para gerar o conteúdo para o local do qual o MSI será instalado. Inclua o manifesto do VSIX na saída da compilação, mas não crie um arquivo. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Criando um MSI para o Shell  
- Para criar seu pacote MSI, recomendamos que você use o [conjunto de ferramentas Windows Installer XML](http://wix.sourceforge.net/) porque ele oferece maior flexibilidade do que um projeto de instalação padrão.  
+ Para criar seu pacote MSI, recomendamos que você use o [conjunto de ferramentas Windows Installer XML](https://documentation.help/WiX-Toolset/index.html) porque ele oferece maior flexibilidade do que um projeto de instalação padrão.  
   
  No arquivo Product. wxs, defina os blocos de detecção e o layout dos componentes do Shell.  
   
