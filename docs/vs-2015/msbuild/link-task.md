@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295873"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850994"
 ---
 # <a name="link-task"></a>Tarefa Link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifica atributos que serão colocados na seção `dependency` do arquivo de manifesto.  
   
-   Para obter mais informações, consulte [/MANIFESTDEPENDENCY (Especificar Dependências de Manifesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte também os "Arquivos de Configuração do Distribuidor" no site do [MSDN](https://go.microsoft.com/fwlink/?LinkId=737).  
+   Para obter mais informações, consulte [/MANIFESTDEPENDENCY (Especificar Dependências de Manifesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte também os "Arquivos de Configuração do Distribuidor" no site do [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   
@@ -926,5 +926,5 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Para obter mais informações, consulte [/VERSION (Informações de Versão)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)
