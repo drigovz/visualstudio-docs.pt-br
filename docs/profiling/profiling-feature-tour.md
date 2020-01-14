@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189416"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929246"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
 
@@ -38,7 +38,7 @@ A janela **Ferramentas de Diagnóstico** costuma ser a maneira preferencial para
 
 ## <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
-A ferramenta Uso da CPU é um bom lugar para começar a analisar o desempenho do aplicativo. Ela informará mais sobre os recursos de CPU que o aplicativo está consumindo. Para obter uma explicação mais detalhada da ferramenta Uso da CPU, confira [Guia do iniciante para criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md).
+A ferramenta Uso da CPU é um bom lugar para começar a analisar o desempenho do aplicativo. Ela informará mais sobre os recursos de CPU que o aplicativo está consumindo. Para obter uma explicação mais detalhada da ferramenta de uso da CPU, consulte [medir o desempenho do aplicativo analisando o uso da CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 Na exibição **Resumo** das Ferramentas de Diagnóstico, escolha **Habilitar Criação de Perfil da CPU** (é necessário estar em uma sessão de depuração).
 
@@ -70,7 +70,7 @@ Se você clicar no link à esquerda, na exibição **Uso de Memória**, a exibi�
 
 ## <a name="examine-performance-events"></a>Examinar eventos de desempenho
 
-A exibição **Eventos** das Ferramentas de Diagnóstico mostra diferentes eventos que ocorrem durante a depuração, como a configuração de um ponto de interrupção ou uma operação de execução de código em etapas. É possível verificar informações como a duração do evento (medido da última pausa do depurador ou da inicialização do aplicativo). Por exemplo, se você executar o código em etapas (F10, F11), a exibição **Eventos** mostrará a duração de tempo de execução do aplicativo da operação de etapa anterior à etapa atual.
+A exibição **Eventos** das Ferramentas de Diagnóstico mostra diferentes eventos que ocorrem durante a depuração, como a configuração de um ponto de interrupção ou uma operação de execução de código em etapas. É possível verificar informações como a duração do evento (medido da última pausa do depurador ou da inicialização do aplicativo). Por exemplo, se você executar o código em etapas (F10, F11), a exibição **Eventos** mostrará a duração de runtime do aplicativo da operação de etapa anterior à etapa atual.
 
 ![Exibição de eventos de Ferramentas de Diagnóstico](../profiling/media/prof-tour-events.png "Ferramentas de Diagnóstico exibir eventos")
 
@@ -91,7 +91,7 @@ Nos aplicativos UWP, é possível habilitar a **Análise de interface do usuári
 
 As ferramentas de criação de perfil como Uso da CPU e Uso da Memória podem ser usadas com o depurador (veja as seções anteriores) ou é possível executar ferramentas de criação de perfil post-mortem usando o Criador de Perfil de Desempenho, cuja função é fornecer análise para builds de **Versão**. No Criador de Perfil de Desempenho, é possível coletar informações de diagnóstico durante a execução do aplicativo e, em seguida, examinar as informações coletadas depois que o aplicativo é interrompido. Para obter mais informações sobre essas diferentes abordagens, confira [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-![Criador de perfil de desempenho](../profiling/media/prof-tour-performance-profiler.png "Criador de perfil de desempenho")
+![Criador de perfil de desempenho](../profiling/media/prof-tour-performance-profiler.png "Criador de Perfil de Desempenho")
 
 Abra o Criador de Perfil de Desempenho escolhendo **Depurar** > **Criador de Perfil de Desempenho**.
 
@@ -185,5 +185,5 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 ::: moniker-end
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Depurando no Visual Studio](../debugger/debugger-feature-tour.md)

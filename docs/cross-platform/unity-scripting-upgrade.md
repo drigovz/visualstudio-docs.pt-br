@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01f604de756ca86e40426a97776f1a1d43b024f1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916845"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944229"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
@@ -346,6 +346,6 @@ A amostra contém exemplos de vários recursos do .NET 4.x. Você pode baixar o 
 * [Blog do Unity – aprimoramentos de runtime de script no Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [Histórico da linguagem C#](/dotnet/csharp/whats-new/csharp-version-history)
 * [Novidades no C# 6](/dotnet/csharp/whats-new/csharp-6)
-* [Programação assíncrona no Unity, usando co-rotina e TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [Programação assíncrona no Unity, usando co-rotina e TAP](/archive/blogs/appconsult/unity-coroutine-tap-en-us)
 * [Async-Await em vez de corrotinas no Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Fórum do Unity – visualizações de script Experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/)
