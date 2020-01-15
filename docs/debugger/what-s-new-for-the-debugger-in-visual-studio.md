@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210597"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944223"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novidades do depurador no Visual Studio 2017
 
@@ -44,9 +44,9 @@ O depurador inclui estes novos recursos:
 
     É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas Depurar. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**.
 
-    ![Botões Voltar e Avançar Etapa](../debugger/media/intellitrace-step-back-icons-description.png  "Botões Voltar e Avançar Etapa")
+    ![Botões voltar e avançar da etapa](../debugger/media/intellitrace-step-back-icons-description.png  "Botões voltar e avançar da etapa")
 
-    Para obter mais informações, confira a página [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
+    Para obter mais informações, confira a página [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](view-historical-application-state.md).
 
 - O **auxiliar de exceção** substitui o assistente de exceção e aparece em uma caixa de diálogo não modal onde ocorreu o erro. O **auxiliar de exceção** fornece acesso mais rápido a quaisquer exceções internas, análise adicional pelo depurador (se disponível) e acesso imediato às configurações de **exceção** para a exceção. O auxiliar de exceção também pode ser arrastado para uma exibição flutuante se estiver bloqueando algo que você precisa ver.
 
@@ -54,7 +54,7 @@ O depurador inclui estes novos recursos:
 
     ![Auxiliar de exceção do depurador](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    Para obter mais informações, consulte a postagem de blog [Usando o novo Auxiliar de Exceção no Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
+    Para obter mais informações, consulte a postagem de blog [Usando o novo Auxiliar de Exceção no Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 - Agora você pode executar em uma linha de código enquanto estiver em pausa no depurador, selecionando o ícone de seta **executar execução para aqui** verde (você vê o ícone ao passar o mouse sobre uma linha de código). Isso elimina a necessidade de definir pontos de interrupção temporários.
 
@@ -68,9 +68,9 @@ O depurador inclui estes novos recursos:
 
     ![Pesquisar em anexo ao processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obter mais informações sobre esses novos recursos, consulte as [notas de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]versão do ](/visualstudio/releasenotes/vs2017-relnotes).
+Para obter mais informações sobre esses novos recursos, consulte as [notas de versão para [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74485480"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75927773"
 ---
 Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicativos em contêineres .NET, ASP.NET e ASP.NET Core e publicá-los no ACR (registro de contêiner do Azure), no Hub do Docker, no serviço de Azure App ou no seu próprio registro de contêiner. Neste artigo, publicaremos um aplicativo ASP.NET Core no ACR.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
@@ -67,7 +67,7 @@ O *Dockerfile* anterior baseia-se na imagem [microsoft/aspnetcore](https://hub.d
 
 Quando a caixa de seleção **Configurar para HTTPS** do novo projeto estiver marcada, o *Dockerfile* exibirá duas portas. Uma porta é usada para o tráfego HTTP; a outra porta é usada para o HTTPS. Se a caixa de seleção não estiver marcada, uma única porta (80) será exposta para o tráfego HTTP.
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuração
 
 Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e inicie a depuração do aplicativo. Poderá aparecer uma mensagem com um aviso sobre a confiança em um certificado, escolha confiar no certificado para continuar.
 
@@ -102,7 +102,7 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
     | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a usar. |
     | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Padrão | Camada de serviço do registro de contêiner  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
     | **Local do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]
