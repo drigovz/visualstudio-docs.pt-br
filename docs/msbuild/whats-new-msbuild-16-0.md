@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3e6ecfc1c08f30eb0232f230d955967d95bc32ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
+ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566963"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022338"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novidades no MSBuild 16.0
 
-Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. Nas notas sobre a versão detalhadas (somente rascunho), consulte [ MSBuild 16.0](https://gist.github.com/rainersigwald/009627466f03964d0028e16fda633d9c).
+Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. Para obter as notas de versão detalhadas, consulte [MSBuild 16,0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831).
 
 ## <a name="changed-path"></a>Caminho alterado
 
