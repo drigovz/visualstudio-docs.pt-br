@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147: Marcar manipuladores de verbo com ValidateAntiForgeryToken'
                   href: ca3147.md
+                - name: 'CA5358: Não usar modos de criptografia não seguros'
+                  href: ca5358.md
                 - name: 'CA5361: Não desabilite o uso de criptografia forte do SChannel'
                   href: ca5361.md
                 - name: 'CA5363: Não desabilitar a validação de solicitação'
