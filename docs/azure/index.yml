@@ -71,8 +71,14 @@ landingContent:
             url: /azure/key-vault/vs-key-vault-add-connected-service
           - text: Azure Active Directory
             url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-          - text: Serviços Cognitivos
-            url: /visualstudio/azure/cognitive-services-connected-services
+          - text: Serviços Cognitivos – Análise de Texto
+            url: /azure/cognitive-services/text-analytics/vs-text-connected-service
+          - text: Serviços Cognitivos – Pesquisa de Notícias do Bing
+            url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+          - text: Serviços Cognitivos – API de Detecção Facial
+            url: /azure/cognitive-services/face/vs-face-connected-service
+          - text: Serviços Cognitivos – Pesquisa Visual Computacional
+            url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
   - title: Serviços de Nuvem do Azure
     linkLists:
       - linkListType: how-to-guide
