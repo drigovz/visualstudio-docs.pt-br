@@ -3,19 +3,19 @@ title: IDs de carga de trabalho e de componente do Visual Studio Enterprise 2019
 titleSuffix: ''
 description: Use as IDs de carga de trabalho e de componente para instalar o Visual Studio usando a linha de comando ou para especificar como uma dependência em um manifesto do VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 58c7d8775a1db09d2628eb6946924ae3543b80e4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9edadea9109fcd3c543ca3bd3cd777fbd488351a
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795917"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159535"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Editor principal do Visual Studio (incluído no Visual Studio Enterprise 2019)
 
@@ -76,7 +76,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessário
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Necessário
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Necessário
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessário
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Necessário
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Necessário
@@ -162,7 +162,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Recomendado
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Recomendado
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Recomendado
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Recomendado
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Recomendado
@@ -271,7 +271,7 @@ Microsoft.VisualStudio.Component.PortableLibrary | Pacote de direcionamento da B
 Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Opcional
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Opcional
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Opcional
 Microsoft.VisualStudio.Component.Wcf.Tooling | {1&gt;{2&gt;Windows Communication Foundation&lt;2}&lt;1} | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Opcional
@@ -482,7 +482,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessário
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Necessário
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Necessário
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessário
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Necessário
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.4.29318.151 | Necessário
@@ -579,7 +579,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessário
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Necessário
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Necessário
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessário
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Necessário
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Necessário
@@ -691,7 +691,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Necessário
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessário
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Necessário
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Necessário
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessário
 Microsoft. VisualStudio. Component. TypeScript. 3.7 | SDK do TypeScript 3,7 | 16.0.29429.68 | Necessário
 Microsoft.VisualStudio.Component.Wcf.Tooling | {1&gt;{2&gt;Windows Communication Foundation&lt;2}&lt;1} | 16.0.28625.61 | Necessário
@@ -766,7 +766,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | runtime do SQL ADAL | 16.0.28517.75 
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 16.3.29207.166 | Opcional
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.3.29207.166 | Opcional
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Ferramentas de criação de perfil do C++ | 16.4.29429.68 | Opcional
