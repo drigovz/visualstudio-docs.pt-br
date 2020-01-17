@@ -3,17 +3,17 @@ title: Como criar um sombreador de textura em escala de cinza
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8217cc83004be3d4a15ff26743724d553f70d44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635565"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112618"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Como criar um sombreador de textura em escala de cinza
 
@@ -47,7 +47,7 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
 Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para saber mais sobre a visualização de sombreadores no Designer de Sombreador, confira [Designer de Sombreador](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Como exportar um sombreador](../designers/how-to-export-a-shader.md)

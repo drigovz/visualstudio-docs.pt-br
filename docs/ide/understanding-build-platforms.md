@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925825"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115068"
 ---
 # <a name="understand-build-platforms"></a>Noções básicas sobre plataformas de build
 
@@ -30,14 +30,14 @@ Você pode armazenar versões diferentes de propriedades de solução e de proje
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Como: configurar projetos destinados a plataformas](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explica como configurar um projeto para se destinar a uma plataforma específica.
 
-[Como: configurar projetos destinados a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Como: configurar projetos para direcionar várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explica como configurar um projeto para se destinar a várias plataformas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

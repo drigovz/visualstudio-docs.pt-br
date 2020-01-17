@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar eventos de build (Visual Basic)'
+title: Como especificar eventos de build (Visual Basic)
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461507"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115098"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
 
 Eventos de build no Visual Basic podem ser usados para executar scripts, macros ou outras ações como parte do processo de compilação. Eventos de pré-build ocorrem antes da compilação; eventos de pós-build ocorrem após a compilação.
 
@@ -49,7 +49,7 @@ Eventos de build são especificados na caixa de diálogo **Eventos de Build**, d
     > [!NOTE]
     > Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemplo: Como alterar informações de manifesto usando um evento de pós-build
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemplo: como alterar informações de manifesto usando um evento de pós-build
 
 O procedimento a seguir mostra como definir a versão mínima do sistema operacional no manifesto do aplicativo usando um comando *.exe* chamado de um evento de pós-build (o arquivo *.exe.manifest* no diretório do projeto). A versão mínima do sistema operacional é um número de quatro partes, como 4.10.0.0. Para fazer isso, o comando alterará a seção `<dependentOS>` do manifesto:
 
@@ -163,9 +163,9 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Página de compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Página de Publicação, Designer de Projeto](../ide/reference/publish-page-project-designer.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md)

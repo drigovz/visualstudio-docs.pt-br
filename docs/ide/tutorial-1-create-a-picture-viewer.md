@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516626"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115087"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -46,7 +46,7 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Comece criando um projeto de aplicativo Windows Forms.|
 |[Etapa 2: executar o aplicativo visualizador de imagens](../ide/step-2-run-your-program.md)|Execute o projeto de aplicativo Windows Forms que você criou na etapa anterior.|
@@ -62,11 +62,11 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 Também há excelentes recursos de aprendizado de vídeo gratuitos disponíveis para você. Para saber mais sobre programação no C#, consulte [ C# conceitos básicos: desenvolvimento para iniciantes absolutos](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Para saber mais sobre programação no Visual Basic, veja [Visual Basic Fundamentals: Development for Absolute Beginners (Conceitos básicos do Visual Basic: desenvolvimento para iniciantes absolutos)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Para iniciar o tutorial, comece com a **[etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Mais C# tutoriais](/visualstudio/get-started/csharp/)
 * [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)

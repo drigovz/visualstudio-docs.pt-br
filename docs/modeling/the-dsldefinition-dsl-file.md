@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605985"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114927"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Os exemplos neste tópico são obtidos a partir do modelo de solução Diagrama 
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Seções do Arquivo DslDefinition.dsl
 
-O elemento raiz é \<Dsl >, e seus atributos identificam o nome da linguagem específica do domínio, o namespace e os números de versão principal e secundária para controle de versão. O esquema `DslDefinitionModel` define o conteúdo e a estrutura de um arquivo DslDefinition.dsl válido.
+O elemento raiz é \<> DSL e seus atributos identificam o nome da linguagem específica do domínio, o namespace e os números de versão principal e secundária para controle de versão. O esquema `DslDefinitionModel` define o conteúdo e a estrutura de um arquivo DslDefinition.dsl válido.
 
-Os elementos filho do elemento raiz do \<Dsl > são os seguintes:
+Os elementos filho do elemento raiz de > \<DSL são os seguintes:
 
 ### <a name="classes"></a>Classes
 
@@ -40,7 +40,7 @@ Esta seção define cada relação do modelo. A origem e o destino representam o
 
 ### <a name="types"></a>Tipos
 
-Esta seção define cada tipo e seu namespace. As propriedades do domínio possuem dois tipos. `DomainEnumerations` são definidas no modelo e geram tipos no DomainModel.cs. `ExternalTypes` refere-se a tipos que são definidos em qualquer lugar (tal como `String` ou `Int32`) e não geram coisa alguma.
+Esta seção define cada tipo e seu namespace. As propriedades do domínio possuem dois tipos. `DomainEnumerations` são definidas no modelo e geram tipos em DomainModel.cs. `ExternalTypes` se referem a tipos que são definidos em outro lugar (como `String` ou `Int32`) e não geram nada.
 
 ### <a name="shapes"></a>Formas
 
@@ -148,7 +148,7 @@ Cada classe tem um conjunto de propriedades e pode ter uma classe base. No exemp
 </DomainClass>
 ```
 
-`NamedElement` é a base de muitas das outras classes, tais como `Component`, que possui suas próprias propriedades, além da propriedade `Name`, que é herdada de `NamedElement`. O nó filho BaseClass contém uma referência de moniker. Como a classe referenciada está no mesmo namespace, somente seu nome é necessário no moniker:
+`NamedElement` é a base de várias das outras classes, como `Component`, que tem suas próprias propriedades, além da propriedade `Name`, que ela herdou do `NamedElement`. O nó filho BaseClass contém uma referência de moniker. Como a classe referenciada está no mesmo namespace, somente seu nome é necessário no moniker:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -188,7 +188,7 @@ Cada classe de domínio (incluindo relações, formas, conectores e diagramas) p
 
 - Uma classe C# é gerada para cada classe de domínio listada na seção `Classes`. As classes C# são geradas em Dsl\GeneratedCode\DomainClasses.cs.
 
-### <a name="properties"></a>Propriedades
+### <a name="properties"></a>{1&gt;Propriedades&lt;1}
 
 Cada propriedade de domínio possui um nome e um tipo. O nome deve ser exclusivo dentro da classe de domínio e suas bases transitivas.
 
@@ -212,7 +212,7 @@ Cada propriedade de domínio pode ter também estes atributos:
 
 - **IsElementName**. Se esse atributo estiver configurado como true, seu valor será configurado automaticamente como um valor exclusivo quando uma instância da classe pai for criada. Este atributo pode ser configurado como true para somente uma propriedade em cada classe, que deve ter um tipo de cadeia de caracteres. No exemplo de Diagrama de Componente, a propriedade `Name` em `NamedElement` possui o `IsElementName` configurado como true. Sempre que um usuário cria um elemento `Component` (que herda do `NamedElement`), o nome é automaticamente inicializado para algo como "Component6."
 
-- `DefaultValue` Se você tiver especificado este atributo, o valor especificado será atribuído a ele para novas instâncias desta classe. Se `IsElementName` estiver configurado, o atributo DefaultValue especifica a parte inicial da nova cadeia de caracteres.
+- `DefaultValue`. Se você tiver especificado este atributo, o valor especificado será atribuído a ele para novas instâncias desta classe. Se `IsElementName` estiver configurado, o atributo DefaultValue especifica a parte inicial da nova cadeia de caracteres.
 
 - **Categoria** é o cabeçalho sob o qual a propriedade aparecerá na janela **Propriedades** .
 
@@ -261,7 +261,7 @@ Todo relacionamento contém funções de origem e de destino que possuem os segu
 
 Além disso, para os atributos e nós filho que estão disponíveis para todas as classes, cada relação possui estes atributos:
 
-- **Isinserção**. Este atributo booliano especifica se o relacionamento faz parte da árvore inserida. Cada modelo deve formar uma árvore com as relações inseridas. Cada classe de domínio deve, portanto, ser o destino de pelo menos uma relação inserida, a menos que seja a raiz de um modelo.
+- **IsEmbedding**. Este atributo booliano especifica se o relacionamento faz parte da árvore inserida. Cada modelo deve formar uma árvore com as relações inseridas. Cada classe de domínio deve, portanto, ser o destino de pelo menos uma relação inserida, a menos que seja a raiz de um modelo.
 
 - **AllowsDuplicates**. Este atributo booliano, que é false por padrão, aplica-se somente a relações que tenham uma multiplicidade "many" tanto na origem como no destino. Ele determina se os usuários da linguagem podem se conectar a um único par de elementos de origem e de destino por mais de um link da mesma relação.
 
@@ -498,7 +498,7 @@ O arquivo DslDefinition.dsl é por si só um arquivo serializado e em conformida
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators é a relação inserida entre `Connector` e `Decorator`. `UseFullForm` foi configurado para que o nome da relação apareça com sua lista de propriedades de cada link do objeto Conector. No entanto, `OmitElement` também foi configurado para que nenhum `RoleElementName` inclua os vários links que são inseridos dentro do `Connector`:
+- ConnectorHasDecorators é a relação inserida entre `Connector` e `Decorator`. `UseFullForm` foi definido para que o nome da relação apareça com sua lista de propriedades para cada link do objeto do conector. No entanto, `OmitElement` também foi configurado para que nenhum `RoleElementName` inclua os vários links que são inseridos dentro do `Connector`:
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -577,7 +577,7 @@ O mapa do conector mínimo faz referência a um conector e a um relacionamento:
 
 Os mapas do conector também podem conter mapas do decorador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)

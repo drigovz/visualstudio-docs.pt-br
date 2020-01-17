@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748532"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115191"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma DSL (linguagem específica de domínio) podem ser exibidas para o usuário no diagrama e no seu Gerenciador de idiomas e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes na forma como os valores são armazenados.
@@ -26,7 +26,7 @@ Todas as propriedades de domínio em uma DSL (linguagem específica de domínio)
 |-|-|
 |**Padrão** (padrão)|Uma propriedade de domínio que é salva na *loja* e serializada para o arquivo.|
 |**Calculado**|Uma propriedade de domínio somente leitura que não é salva no repositório, mas é calculada a partir de outros valores.<br /><br /> Por exemplo, `Person.Age` poderia ser calculado a partir de `Person.BirthDate`.<br /><br /> Você precisa fornecer o código que executa o cálculo. Normalmente, você calcula o valor de outras propriedades de domínio. No entanto, você também pode usar recursos externos.|
-|**Armazenamento personalizado**|Uma propriedade de domínio que não é salva diretamente no repositório, mas pode ser Get e Set.<br /><br /> Você precisa fornecer os métodos que obtêm e definem o valor.<br /><br /> Por exemplo, `Person.FullAddress` pode ser armazenado em `Person.StreetAddress`, `Person.City` e `Person.PostalCode`.<br /><br /> Você também pode acessar recursos externos, por exemplo, para obter e definir valores de um banco de dados.<br /><br /> Seu código não deve definir valores no repositório quando `Store.InUndoRedoOrRollback` for true. Confira [Transações e setters personalizados](#setters).|
+|**Armazenamento personalizado**|Uma propriedade de domínio que não é salva diretamente no repositório, mas pode ser Get e Set.<br /><br /> Você precisa fornecer os métodos que obtêm e definem o valor.<br /><br /> Por exemplo, `Person.FullAddress` pode ser armazenado em `Person.StreetAddress`, `Person.City`e `Person.PostalCode`.<br /><br /> Você também pode acessar recursos externos, por exemplo, para obter e definir valores de um banco de dados.<br /><br /> Seu código não deve definir valores no repositório quando `Store.InUndoRedoOrRollback` for true. Confira [Transações e setters personalizados](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fornecendo o código para uma propriedade de armazenamento calculada ou personalizada
  Se você definir o tipo de uma propriedade de domínio para armazenamento calculado ou personalizado, precisará fornecer métodos de acesso. Quando você cria sua solução, um relatório de erros informa o que é necessário.
@@ -52,7 +52,7 @@ Todas as propriedades de domínio em uma DSL (linguagem específica de domínio)
     > [!NOTE]
     > Esse arquivo é gerado de DslDefinition. DSL. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.
 
-6. Crie ou abra um arquivo de classe em uma pasta separada, por exemplo, CustomCode \\*YourDomainClass*. cs.
+6. Crie ou abra um arquivo de classe em uma pasta separada, por exemplo, CustomCode\\*YourDomainClass*. cs.
 
      Certifique-se de que o namespace seja o mesmo que o código gerado.
 
@@ -107,7 +107,7 @@ void SetAgeValue(int value)
 
  Para obter mais informações sobre transações, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Propriedades das propriedades de domínio](../modeling/properties-of-domain-properties.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Analysis page in Project Designer
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de941e6b1a07873c2c160351cce561721e845cdb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609850"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113779"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 
@@ -62,7 +62,7 @@ Habilita ou desabilita as regras de segurança. Você também pode expandir essa
 Regras de Uso\
 Habilita ou desabilita as regras de uso. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Avisos da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Visão geral da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-overview.md)

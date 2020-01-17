@@ -2,17 +2,17 @@
 title: Gerar e configurar o aplicativo por meio de modelos
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748396"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114891"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
@@ -20,7 +20,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
  O modelo representa os requisitos mais diretamente do que o código. Ao derivar o comportamento do aplicativo diretamente do modelo, você pode responder a requisitos alterados de forma muito mais rápida e confiável do que ao atualizar o código. Embora seja necessário algum trabalho inicial para configurar a derivação, esse investimento é retornado se você espera alterações nos requisitos ou se planeja fazer várias variantes do produto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Gerando o código do seu aplicativo a partir de um modelo
- A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma solução do Visual Studio na qual você mantém o modelo. Para obter mais informações, consulte:
+ A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma solução do Visual Studio na qual você mantém o modelo. Para obter mais informações, consulte .
 
 - [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
   No entanto, se você começar com um aplicativo existente, poderá descobrir que muita refatoração é necessária para separar os diferentes comportamentos governados pelo modelo para que eles possam ser variados independentemente. Recomendamos que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configurando seu aplicativo a partir de um modelo
- Se você quiser variar o comportamento do aplicativo em tempo de execução, não poderá usar a geração de código, que gera o código-fonte antes da compilação do aplicativo. Em vez disso, você pode criar seu aplicativo para ler o modelo e variar seu comportamento de acordo. Para obter mais informações, consulte:
+ Se você quiser variar o comportamento do aplicativo em tempo de execução, não poderá usar a geração de código, que gera o código-fonte antes da compilação do aplicativo. Em vez disso, você pode criar seu aplicativo para ler o modelo e variar seu comportamento de acordo. Para obter mais informações, consulte .
 
 - [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -70,7 +70,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
 
      Por exemplo, um diagrama de classes UML é uma coleção de caixas e setas; com essa notação, você pode, teoricamente, definir qualquer coisa. Mas não recomendamos que você use o diagrama de classe, exceto onde você está, na verdade, descrevendo um conjunto de tipos. Por exemplo, você poderia adaptar os diagramas de classe para descrever diferentes tipos de páginas da Web.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)

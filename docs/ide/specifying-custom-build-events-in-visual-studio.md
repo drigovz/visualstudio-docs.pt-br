@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918905"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115332"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
@@ -24,9 +24,9 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
 Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
-- Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic – [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# e F# – [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# e F # – [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ – [Especificar eventos de build](/cpp/build/specifying-build-events).
 
@@ -55,9 +55,9 @@ Para obter melhores resultados, siga estas dicas de formatação:
   > [!NOTE]
   > `%I` no código acima deve ser `%%I` em scripts em lote.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md)
-- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)

@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d52dd064e895b1e35230b93c85a7a8499032943e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591483"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114829"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -54,7 +54,7 @@ Por exemplo, você pode ter uma conexão com a Internet não confiável ou que t
 
 ::: moniker range="vs-2019"
 
-Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
+Depois de baixar o instalador da Web, selecione a opção **baixar tudo e instalar** no instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -81,7 +81,7 @@ Para obter um bootstrapper para o Visual Studio 2017, consulte a página de down
 
 O executável da instalação&mdash;ou para ser mais específico, o arquivo bootstrapper&mdash;deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Nome de arquivo |
+| Edição | Nome do Arquivo |
 |-------------|-----------------------|
 |Comunidade Visual Studio | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
@@ -94,7 +94,7 @@ O executável da instalação&mdash;ou para ser mais específico, o arquivo boot
 
 Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Studio escolhida. O arquivo de instalação, ou bootstrapper, corresponderá ou será semelhante a um dos listados a seguir.
 
-| Edição                    | Arquivo                                                                    |
+| Edição                    | File                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Comunidade Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
@@ -202,12 +202,12 @@ Para obter mais exemplos de como usar [parâmetros de linha de comando](use-comm
 | pt-BR | Português - Brasil |
 | ru-RU | Russo |
 | tr-TR | Turco |
-| zh-CN | Chinês - Simplificado |
-| zh-TW | Chinês - Tradicional |
+| zh-CN | Chinês – Simplificado |
+| zh-TW | Chinês – Tradicional |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar uma instalação de rede do Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)

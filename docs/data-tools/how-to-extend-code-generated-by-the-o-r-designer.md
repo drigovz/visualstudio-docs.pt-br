@@ -3,17 +3,17 @@ title: Como estender o código gerado pelo Designer Relacional de Objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89410d224adf0980e51c691dbf581655cc2ff3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 588eb0f61dbc16fb1625752417ac5257bf48320f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648354"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113687"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Como estender o código gerado pelo Designer Relacional de Objetos
 O código gerado pelo o **/R Designer** é regenerado quando são feitas alterações nas classes de entidade e outros objetos na superfície do designer. Devido a essa regeneração de código, qualquer código que você adicionar ao código gerado seja substituído normalmente quando o código de regenerados de designer. O o **/R Designer** fornece a capacidade de gerar arquivos de classe parciais nos quais você pode adicionar código que não é substituído. Um exemplo de adição de seu próprio código ao código gerado pelo o **/R Designer** é adicionar validação de dados a classes LINQ to SQL (entidade). Para obter mais informações, consulte [como: Adicionar validação a classes de entidade](../data-tools/how-to-add-validation-to-entity-classes.md).
@@ -44,7 +44,7 @@ O código gerado pelo o **/R Designer** é regenerado quando são feitas altera�
 
 3. Adicione o código na declaração de classe parcial para o DataContext.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
