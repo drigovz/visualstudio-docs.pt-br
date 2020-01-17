@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650016"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114756"
 ---
 # <a name="rethrow-activity-designer"></a>Designer de atividade de Relançar
 
@@ -33,12 +33,12 @@ Acesse o designer de atividade **Rethrow** na categoria **tratamento de erros** 
 
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Rethrow> e descreve como elas são usadas no designer:
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Rethrow> . O padrão é Relançar.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Coleção](../workflow-designer/collection-activity-designers.md)
+- [Coleta](../workflow-designer/collection-activity-designers.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

@@ -3,17 +3,17 @@ title: Designers de atividade de fluxo de controle de Designer de Fluxo de Traba
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189769"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114676"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 
@@ -43,7 +43,7 @@ O Designer de Fluxo de Trabalho inclui várias atividades fornecidas pelo sistem
 
  <xref:System.Activities.Statements.While>
 
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas
 
 Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
@@ -53,7 +53,7 @@ Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
  [Primitives](../workflow-designer/primitives-activity-designers.md)
 
@@ -63,6 +63,6 @@ Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 - [Usando os designers de atividade](control-flow-activity-designers.md)

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596522"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114563"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
@@ -38,7 +38,7 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar e limpar projetos e soluções no Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 

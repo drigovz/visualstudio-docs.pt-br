@@ -10,17 +10,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff9b2bab755a341d512669578c40ae71f554c235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 426399022c2484dca28bb4f4e1f26c14783a3d19
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648881"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113314"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 Adicionar validação a um conjunto de um DataSet que é separado em uma solução de n camadas é basicamente o mesmo que adicionar validação a um conjunto de um único arquivo (um conjunto de um DataSet em um único projeto). O local sugerido para executar a validação nos dados é durante o <xref:System.Data.DataTable.ColumnChanging> e/ou <xref:System.Data.DataTable.RowChanging> eventos de uma tabela de dados.
@@ -166,7 +166,7 @@ Crie um manipulador de eventos para o evento <xref:System.Data.DataTable.RowChan
     }
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

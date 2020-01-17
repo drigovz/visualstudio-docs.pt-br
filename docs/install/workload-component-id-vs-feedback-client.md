@@ -3,8 +3,8 @@ title: IDs de carga de trabalho e de componente do Feedback Client do Visual Stu
 titleSuffix: ''
 description: Use IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Azure DevOps Services ou o Team Foundation Server
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960743"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113837"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio
 
@@ -34,7 +34,7 @@ Além disso, observe o seguinte sobre a página:
 * Se preferir, também será possível instalar os componentes **Recomendados** e **Opcionais**.
 * Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
 
-Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, confira a página [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, consulte a página [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obter mais informações sobre como usar essas IDs, consulte a página [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Além disso, para obter uma lista de IDs de carga de trabalho e de componente para outros produtos, consulte a página [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md).
 
@@ -42,25 +42,25 @@ Para obter mais informações sobre como usar essas IDs, consulte a página [Usa
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descrição:** O Feedback Client permite que os Stakeholders forneçam comentários detalhados para o Azure DevOps Services ou o Team Foundation Server.
+**Descrição:** o Feedback Client permite que os stakeholders forneçam comentários detalhados para o Azure DevOps Services ou o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 
-ID do componente | Nome | Versão | Tipo de dependência
+ID do componente | Name | Versão do | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Necessária
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Necessário
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
 Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
 
-ID do componente | Nome | Versão
+ID do componente | Name | Versão do
 --- | --- | ---
 N/D | N/D | N/D
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, adding browsers
 - load tests, removing browsers
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3f80da91181e4cb555d0ce96a5b4d2fb797eb0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664982"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114528"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar os tipos de navegadores da Web em um cenário de teste de carga
 
@@ -81,6 +81,6 @@ Também é possível digitar os valores de percentual diretamente na coluna **%*
 
 Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)

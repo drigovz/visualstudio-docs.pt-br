@@ -2,20 +2,20 @@
 title: Diretrizes de ferramentas de arquitetura
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7ca51504ab1ac76003fb8452f43b0491100ea1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 026fe95eb9e32e335832e782ffde72c93f89dc67
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663720"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111404"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Orientação de ferramentas de arquitetura do Visual Studio
 
-Essas diretrizes de ferramentas de arquitetura são um pacote para download de diretrizes práticas sobre o uso das ferramentas de modelagem no Visual Studio 2010. Ele apresenta uma visão de alto nível de como usar todas as ferramentas de modelagem de maneira integrada e discute os cenários mais comuns nos quais as ferramentas são usadas.
+Neste guia de ferramentas de arquitetura é um pacote que pode ser baixado de diretrizes práticas sobre o uso das ferramentas de modelagem no Visual Studio 2010. Ele apresenta uma visão geral de como usar as ferramentas de modelagem de maneira integrada e aborda os cenários mais comuns em que as ferramentas são usadas.
 
-O conteúdo foi criado pelo Visual Studio ALM Rangers, um grupo especial que tem membros da equipe do produto Visual Studio, serviços da Microsoft, MVPs (Microsoft Most Valuable Professionals) e leads da Comunidade do Visual Studio.
+O conteúdo foi criado com o Visual Studio ALM Rangers, um grupo especial que tem membros na equipe de produto do Visual Studio, Microsoft Services, Microsoft Most Valued Professionals (MVPs) e leva do Visual Studio Community.

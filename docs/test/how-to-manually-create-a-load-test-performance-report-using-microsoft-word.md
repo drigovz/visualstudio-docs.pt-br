@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 715086a2c0d9196680dd1f332ee9b5122e144e5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653488"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113434"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
 
@@ -44,7 +44,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 1. Se a exibição de grafos não estiver sendo mostrada nos **Resultados do Teste de Carga**, escolha **Grafos** na barra de ferramentas.
 
-2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
@@ -55,7 +55,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
     > [!WARNING]
     > Não é possível copiar o gráfico de uma área de trabalho remota e colá-lo em outro computador, pois somente as informações da tabela associada ao gráfico serão copiadas, e não a imagem do gráfico. A imagem do gráfico é armazenada no diretório temporário do computador do qual ela foi copiada e o segundo computador não pode desreferenciar esse diretório.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)
 - [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

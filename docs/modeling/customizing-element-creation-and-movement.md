@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747609"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114248"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -38,7 +38,7 @@ Embora as operações de criação possam parecer diferentes das operações de 
 
 A responsabilidade de um EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser instanciadas para vincular o grupo mesclado ao modelo. Você também pode personalizá-lo para definir propriedades e criar objetos adicionais.
 
-![Mesclagem&#95;de EMD de DSL&#45;](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Um EMD é gerado automaticamente quando você define uma relação de incorporação. Esse EMD padrão cria uma instância da relação quando os usuários adicionam novas instâncias filho ao pai. Você pode modificar esses EMDs padrão, por exemplo, adicionando código personalizado.
 
@@ -48,7 +48,7 @@ Você também pode adicionar seu próprio EMDs na definição de DSL, para permi
 
 Você pode adicionar diretivas de mesclagem de elementos a classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicioná-los ou localizá-los no Gerenciador de DSL na classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e para o qual o elemento novo ou copiado será mesclado.
 
-![Detalhes&#45;de&#95;EMD de DSL](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 A **classe de indexação** é a classe de domínio dos elementos que podem ser mesclados em membros da classe de recebimento. As instâncias de subclasses da classe de indexação também serão mescladas por esse EMD, a menos que você defina **aplica-se a subclasses** como false.
 
@@ -71,7 +71,7 @@ Você pode adicionar código personalizado para mesclar diretivas:
 > [!NOTE]
 > Se você escrever um código de mesclagem personalizado, ele afetará somente as mesclagens executadas usando esse EMD. Se houver outros EMDs que mesclam o mesmo tipo de objeto, ou se houver outro código personalizado que crie esses objetos sem usar o EMD, eles não serão afetados pelo seu código de mesclagem personalizado.
 >
-> Se você quiser garantir que um novo elemento ou uma nova relação seja sempre processada pelo seu código personalizado, considere definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+> Se você quiser garantir que um novo elemento ou uma nova relação seja sempre processada pelo seu código personalizado, considere definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemplo: definindo um EMD sem código personalizado
 
@@ -109,7 +109,7 @@ Os usuários também podem colar elementos em outros elementos.
 
       Você pode usar a ferramenta de navegação de caminho para criar cada caminho:
 
-      1. Em **mesclar processo, criando links em caminhos**, clique em **\<add caminho >** .
+      1. Em **mesclar processo, criando links em caminhos**, clique em **\<Adicionar caminho >** .
 
       2. Clique na seta suspensa à direita do item de lista. Uma exibição de árvore é exibida.
 
@@ -214,7 +214,7 @@ No código de mesclagem personalizado, você pode definir o que acontece quando 
 
 2. Substitua o método `MergeRelate` e, opcionalmente, o método `MergeDisconnect`. Para fazer isso, você deve definir a propriedade **derivada dupla** da classe de domínio. Seu código pode chamar o código de mesclagem gerado na classe base. Use esta opção se você quiser executar operações adicionais depois que a mesclagem tiver sido executada.
 
-   Essas abordagens afetam apenas as mesclagens que são executadas usando esse EMD. Se você quiser afetar todas as maneiras em que o elemento mesclado pode ser criado, uma alternativa é definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio mesclado. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   Essas abordagens afetam apenas as mesclagens que são executadas usando esse EMD. Se você quiser afetar todas as maneiras em que o elemento mesclado pode ser criado, uma alternativa é definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio mesclado. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="to-override-mergerelate"></a>Para substituir MergeRelate
 
@@ -272,7 +272,7 @@ No código de mesclagem personalizado, você pode definir o que acontece quando 
 
 4. Escreva os métodos em uma definição de classe parcial em um arquivo de código separado. Os exemplos inspecionados anteriormente devem sugerir o que você precisa.
 
-   O código de mesclagem personalizado não afetará o código que cria objetos e relações diretamente e não afetará outros EMDs. Para certificar-se de que suas alterações adicionais sejam implementadas independentemente de como o elemento é criado, considere escrever um `AddRule` e um `DeleteRule` em vez disso. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   O código de mesclagem personalizado não afetará o código que cria objetos e relações diretamente e não afetará outros EMDs. Para certificar-se de que suas alterações adicionais sejam implementadas independentemente de como o elemento é criado, considere escrever um `AddRule` e um `DeleteRule` em vez disso. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Redirecionando uma operação de mesclagem
 
@@ -304,7 +304,7 @@ Você pode criar uma diretiva de mesclagem direta na solução de modelo de comp
 
     O novo caminho deve ser semelhante a este:
 
-    **Componente ComponentHasPorts. Component/!**
+    **ComponentHasPorts.Component/!Component**
 
 9. Salve a solução e, em seguida, transforme os modelos clicando no botão mais à direita na barra de ferramentas **Gerenciador de soluções** .
 
@@ -316,7 +316,7 @@ Você pode criar uma diretiva de mesclagem direta na solução de modelo de comp
 
      Você não verá o ponteiro indisponível e poderá descartar a nova **porta de entrada** no existente. Selecione a nova **porta de entrada** e arraste-a para outro ponto no **componente**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md)

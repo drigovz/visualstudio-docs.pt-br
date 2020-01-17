@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986289"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115047"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 
@@ -122,21 +122,21 @@ Tipos diferentes de diagrama são úteis para descrever o design em diferentes n
 
 |Nível de design|Tipos de diagrama|
 |-|-|
-|Processo comercial<br /><br /> A compreensão do contexto no qual seu sistema será usado ajuda você a entender o que os usuários precisam dele.|-Os diagramas de classe conceitual descrevem os conceitos de negócios usados no processo de negócios.|
+|Processo empresarial<br /><br /> A compreensão do contexto no qual seu sistema será usado ajuda você a entender o que os usuários precisam dele.|-Os diagramas de classe conceitual descrevem os conceitos de negócios usados no processo de negócios.|
 |Requisitos do usuário<br /><br /> Definição do que os usuários precisam do seu sistema.|-As regras de negócios e os requisitos de qualidade de serviço podem ser descritos em documentos separados.|
 |Design de alto nível<br /><br /> A estrutura geral do sistema: os principais componentes e como eles se juntam.|-Diagramas de dependência descrevem como o sistema é estruturado em partes interdependentes. Você pode validar o código do programa em relação a diagramas de dependência para garantir que ele esteja de acordo com a arquitetura.|
 |Análise de código<br /><br /> Os diagramas podem ser gerados a partir do código.|-Diagramas de dependência mostram as dependências entre classes. O código atualizado pode ser validado em relação a um diagrama de dependência.<br />-Os diagramas de classe mostram as classes no código.|
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |-|-|
 |**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif) [vídeos como faço para do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> link do ![para vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML com o Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [série como faço para o MSDN: ferramentas e EXTENSIBILIDADE UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) - <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) - |
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) - <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) - |
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648929"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113323"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Adicionar código a TableAdapters em aplicativos de n camadas
 Você pode estender a funcionalidade de um TableAdapter criando um arquivo de classe parcial para o TableAdapter e adicionando código a ele (em vez de adicionar código ao arquivo *DataSetName. DataSet. designer* ). As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [parcial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -65,7 +65,7 @@ Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultad
     }
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Como adicionar código a conjuntos de dados em aplicativos de N camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

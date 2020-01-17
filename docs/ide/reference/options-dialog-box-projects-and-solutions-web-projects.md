@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919200"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114474"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 
@@ -33,7 +33,7 @@ Selecione esta opção para usar o IIS Express, em vez do Visual Studio Developm
 
 Se essa opção for definida, você será avisado se tentar executar o aplicativo Web quando ele não for compilado sem erros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Opções, Projetos e Soluções](projects-and-solutions-options-dialog-box.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](options-dialog-box-projects-and-solutions-web-projects.md)

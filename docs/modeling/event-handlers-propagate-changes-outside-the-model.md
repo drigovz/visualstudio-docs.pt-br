@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747561"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114598"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Usar eventos para fazer ajustes desfeitos na loja
 
-Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 No entanto, você pode usar um manipulador de eventos para fazer atualizações adicionais na loja, se quiser que o usuário consiga desfazer as atualizações adicionais separadamente do evento original. Por exemplo, suponha que caracteres minúsculos sejam a Convenção comum para títulos de álbuns. Você poderia escrever um manipulador de eventos de armazenamento que corrija o título para letras minúsculas depois que o usuário o tiver digitado em letras maiúsculas. Mas o usuário pode usar o comando Desfazer para cancelar a correção, restaurando os caracteres em maiúsculas. Uma segunda desfazer removeria a alteração do usuário.
 
@@ -184,7 +184,7 @@ Cada tipo de evento corresponde a uma coleção em Store. EventManagerDirectory.
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)
 - [Código de exemplo: diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

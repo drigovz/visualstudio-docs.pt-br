@@ -1,5 +1,5 @@
 ---
-title: 'Como: Configurar projetos para se destinarem a várias plataformas'
+title: Como configurar projetos para terem várias plataformas como destino
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4281315c8d18388cfbd4cf9bbe6b321e9e07c32b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416721"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114457"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como: Configurar projetos para se destinarem a várias plataformas
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como configurar projetos para terem várias plataformas como destino
 
 O Visual Studio fornece uma maneira de uma solução se destinar a várias plataformas ou arquiteturas de CPU ao mesmo tempo. As propriedades para defini-las são acessadas por meio da caixa de diálogo **Configuration Manager**.
 
@@ -51,7 +51,7 @@ Uma vez que pode alterar as configurações com base na combinação de definiç
 
 2. Selecione a plataforma a que deseja se destinar na lista **Plataforma da solução ativa**.
 
-3. Compile a solução.
+3. {1&gt;Compile a solução.&lt;1}
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Para criar várias configurações de solução de uma vez
 
@@ -61,8 +61,8 @@ Uma vez que pode alterar as configurações com base na combinação de definiç
 
    É possível ter uma plataforma de solução definida como, por exemplo, [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], e não ter projetos na solução destinados à mesma plataforma. Também é possível ter vários projetos em sua solução, cada um destinado a plataformas diferentes. É recomendável que, se tiver uma dessas situações, você crie uma nova configuração com um nome descritivo para evitar confusão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
+- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

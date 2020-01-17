@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644369"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115182"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como adicionar e excluir contadores em gráficos em resultados de teste de carga
 
@@ -82,7 +82,7 @@ Para saber mais, confira [Como especificar a propriedade de armazenamento dos de
     > [!NOTE]
     > Você também pode optar por colocar um contador de desempenho na legenda, mas não no gráfico, usando o comando **Adicionar contador na legenda**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)

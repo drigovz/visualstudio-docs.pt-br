@@ -2,17 +2,17 @@
 title: Criando uma linguagem específica do domínio baseada no Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654103"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114887"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Criar uma linguagem específica de domínio baseada em Windows Forms
 
@@ -33,13 +33,13 @@ O modelo DSL **mínimo do WinForm designer** cria uma DSL mínima que você pode
    | | |
    |-|-|
    | Nome da solução e DSL | FarmApp |
-   | espaço de nome | Company. FarmApp |
+   | Namespace | Company.FarmApp |
 
 2. Experimente o exemplo inicial que o modelo fornece:
 
    1. Transforme todos os modelos.
 
-   2. Compile e execute o exemplo (**Ctrl** +**F5**).
+   2. Compile e execute o exemplo (**Ctrl**+**F5**).
 
    3. Na instância experimental do Visual Studio, abra o arquivo `Sample` no projeto de depuração.
 
@@ -53,7 +53,7 @@ O modelo DSL **mínimo do WinForm designer** cria uma DSL mínima que você pode
 
 - `DslDefinition.dsl` não contém elementos de diagrama. Isso ocorre porque você não usará diagramas de DSL para exibir modelos de instância dessa DSL. Em vez disso, você associará um formulário do Windows ao modelo e os elementos no formulário exibirão o modelo.
 
-- Além dos projetos `Dsl` e `DslPackage`, a solução contém um terceiro projeto chamado `UI.` projeto de**interface do usuário** contém a definição de um controle de Windows Forms. `DslPackage` depende `UI` e `UI` depende `Dsl`.
+- Além dos projetos `Dsl` e `DslPackage`, a solução contém um terceiro projeto chamado `UI.`projeto de **interface do usuário** contém a definição de um controle de Windows Forms. `DslPackage` depende `UI`e `UI` depende `Dsl`.
 
 - No projeto `DslPackage`, `UI\DocView.cs` contém o código que exibe o controle de Windows Forms que é definido no projeto `UI`.
 
@@ -71,7 +71,7 @@ Ao atualizar o arquivo de definição de DSL para definir sua própria DSL, voc�
 
 A definição de DSL a seguir é usada neste passo a passos.
 
-![WPF&#45;&#45;de DSL 1](../modeling/media/dsl-wpf-1.png)
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Abra DslDefinition. DSL no designer de DSL.
 
@@ -162,7 +162,7 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
      Defina a propriedade **DataMember** como **animais** ou **Fields**.
 
-10. Defina as propriedades de **DataSource** de `AnimalGridView` como `AnimalBinding` e de `FieldGridView` como `FieldBinding`.
+10. Defina as propriedades de **DataSource** de `AnimalGridView` como `AnimalBinding`e de `FieldGridView` como `FieldBinding`.
 
 11. Ajuste o layout do controle de farm para o seu gosto.
 
@@ -174,7 +174,7 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
 - Isso garante que, quando o usuário selecionar uma linha, a janela Propriedades exibirá as propriedades do elemento de modelo correspondente, em vez da linha de grade de dados.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) esquema de links entre fontes de dados e exibições.
+  ![DslWpf4](../modeling/media/dslwpf4.png) esquema de links entre fontes de dados e exibições.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Concluir as associações para a DSL
 
@@ -300,7 +300,7 @@ A solução DSL agora pode ser criada e executada, embora você queira adicionar
 
     Você deve ser capaz de editar o nome do elemento no modo de exibição de grade de dados. Você também pode excluí-lo de lá.
 
-   ![WPF&#45;&#45;de DSL 2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sobre o código para adicionar um elemento
 
@@ -321,7 +321,7 @@ No entanto, esse código não define um nome padrão para o novo item. Ele não 
 
 Portanto, recomendamos que você use <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para criar novos elementos. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

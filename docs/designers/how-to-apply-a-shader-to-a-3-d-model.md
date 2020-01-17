@@ -3,17 +3,17 @@ title: Como aplicar um sombreador a um modelo 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 445829c3171eeae3b483055688dcf5f77be67330
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637178"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112761"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Como aplicar um sombreador a um modelo 3D
 
@@ -35,7 +35,7 @@ Este é um modelo ao qual o efeito de cor básico foi aplicado:
 
 Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências ( **...** ).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
 - [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)

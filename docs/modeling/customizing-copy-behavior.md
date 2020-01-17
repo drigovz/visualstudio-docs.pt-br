@@ -2,17 +2,17 @@
 title: Personalizando o comportamento da operação de copiar
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4e3ab9a30b373e2421607f6dd1609b13adad3087
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984299"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115357"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma DSL (linguagem específica de domínio) criada com o SDK de visualização e modelagem do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -42,13 +42,13 @@ Em uma DSL (linguagem específica de domínio) criada com o SDK de visualizaçã
  **Habilitar ou desabilitar copiar, recortar e colar.**
 No Gerenciador de DSL, defina a propriedade **habilitar copiar colar** do nó do **Editor** .
 
- **Copiar links para o mesmo destino.** Por exemplo, para ter uma caixa de comentário copiada vinculada ao mesmo elemento Subject.
+ **Copiar links para o mesmo destino.** Por exemplo, para copiar uma caixa de comentários vinculada ao mesmo elemento de assunto.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia somente para vincular**. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
  Copie os elementos vinculados. Por exemplo, quando você copia um novo elemento, cópias de todas as caixas de comentários vinculadas também são feitas.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia para o link e**o representante da função oposto. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
- **Duplique rapidamente os elementos copiando e colando.** Normalmente, o item que você acabou de copiar ainda está selecionado e não é possível colar o mesmo tipo de elemento nele.
+ **Duplique rapidamente os elementos copiando e colando.** Normalmente, o item que você acabou de copiar ainda fica selecionado e você não pode colar o mesmo tipo de elemento nele.
 Adicione uma Diretiva Element Merge à classe de domínio e configure-a para encaminhar mesclagens para a classe pai. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -72,7 +72,7 @@ partial class MyDslClipboardCommandSet
 } }
 ```
 
- **Crie links adicionais quando o usuário colar em um destino selecionado.** Por exemplo, quando uma caixa de comentário é colada em um elemento, é feito um vínculo entre elas.
+ **Crie links adicionais quando o usuário colar em um destino selecionado.** Por exemplo, quando uma caixa de comentários é colada em um elemento, um link é estabelecido entre eles.
 Adicione uma Diretiva Element Merge à classe de domínio de destino e configure-a para processar a mesclagem, adicionando links. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -80,10 +80,10 @@ Adicione uma Diretiva Element Merge à classe de domínio de destino e configure
  Substitua `ClipboardCommandSet.ProcessOnPasteCommand()` para criar os links adicionais depois de chamar o método base.
 
  **Personalize os formatos nos quais os elementos podem ser copiados** para aplicativos externos, por exemplo, para adicionar uma borda ao formulário de bitmap.
-Substitua *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto DslPackage.
+Substitua *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto DslPackage.
 
  **Personalize como os elementos são copiados para a área de transferência pelo comando de cópia, mas não em uma operação de arrastar.**
-Substitua *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
+Substitua *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
 
  **Preserve o layout de forma por meio de copiar e colar.**
 Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada pelo exemplo em [VMSDK: exemplo de diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Defina dois métodos em sua classe ElementOperations:
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma, conector ou diagrama de destino.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma de destino, o conector ou o diagrama.
 
 - `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina o elemento de origem no destino.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()` é chamado para determinar o feedback que será dado ao usuário conforme o mouse se move pelo diagrama. Os parâmetros para o método são o elemento sobre o qual o mouse está passando, e os dados sobre a origem a partir da qual a operação de arrastar foi realizada. O usuário pode arrastar a partir de qualquer lugar na tela. Portanto, o objeto de origem pode ser de muitos tipos diferentes e pode ser serializado em diferentes formatos. Se a origem for um modelo DSL ou UML, o parâmetro de dados é a serialização de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. As operações de arrastar, copiar e da caixa de ferramentas usam o ElementGroupPrototypes para representar fragmentos de modelos.
+ `CanMerge()` é chamado para determinar os comentários que devem ser fornecidos ao usuário à medida que o mouse se move pelo diagrama. Os parâmetros para o método são o elemento sobre o qual o mouse está passando, e os dados sobre a origem a partir da qual a operação de arrastar foi realizada. O usuário pode arrastar a partir de qualquer lugar na tela. Portanto, o objeto de origem pode ser de muitos tipos diferentes e pode ser serializado em diferentes formatos. Se a origem for um modelo DSL ou UML, o parâmetro de dados é a serialização de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. As operações de arrastar, copiar e da caixa de ferramentas usam o ElementGroupPrototypes para representar fragmentos de modelos.
 
  Um Element Group Prototype pode conter qualquer número de elementos e links. Os tipos de elementos podem ser identificados pelas suas Guids. A GUID é da forma que foi arrastada, e não o elemento do modelo subjacente. No seguinte exemplo, `CanMerge()` retorna true se a forma de uma classe de um diagrama UML for arrastada para esse diagrama.
 
@@ -367,7 +367,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  Quando o usuário pressiona CTRL+C ou usa o comando Copiar, o método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> é chamado. Você pode ver como isso é configurado em **DslPackage\Generated Code\CommandSet.cs**. Para obter mais informações sobre como os comandos são configurados, consulte [como adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Você pode substituir ProcessOnMenuCopyCommand adicionando uma definição de classe parcial de *MyDsl* `ClipboardCommandSet` no projeto DslPackage.
+ Você pode substituir ProcessOnMenuCopyCommand adicionando uma definição de classe parcial de *MyDsl*`ClipboardCommandSet` no projeto DslPackage.
 
 ```csharp
 using System.Collections.Generic;
@@ -552,7 +552,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)

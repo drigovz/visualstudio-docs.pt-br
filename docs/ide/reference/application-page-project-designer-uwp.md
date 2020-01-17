@@ -6,17 +6,17 @@ f1_keywords:
 - AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 01edb1871388cdc31f6c92ff25d10c876dfebc64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651950"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114396"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
 
@@ -46,7 +46,7 @@ Você pode definir a versão de destino e a versão mínima do Windows 10 para s
 
 Para obter informações sobre o direcionamento de plataforma no Visual Studio, confira [Direcionamento de plataforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar seu primeiro aplicativo UWP](/windows/uwp/get-started/your-first-app)
 - [Escolher uma versão de UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

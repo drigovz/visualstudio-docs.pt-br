@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653138"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112536"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
 
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Não é possível concretizar a solução
 
-Esse erro geralmente é a consequência de um erro anterior. O IntelliTest usa um [solver de restrição](input-generation.md#constraint-solver) para determinar novas entradas de teste. Às vezes, as entradas de teste propostas pelo [solver de restrição](input-generation.md#constraint-solver) são inválidas. Isso pode ocorrer quando:
+Esse erro geralmente é a consequência de um erro anterior. O IntelliTest usa um [solver de restrição](input-generation.md#constraint-solver) para determinar novas entradas de teste. Às vezes, as entradas de teste propostas pelo [solver de restrição](input-generation.md#constraint-solver) são inválidas. Isso pode acontecer sob estas circunstâncias:
 
 * determinadas restrições não são conhecidas
 * se os valores forem criados de forma definida pelo usuário, causando erros no código do usuário

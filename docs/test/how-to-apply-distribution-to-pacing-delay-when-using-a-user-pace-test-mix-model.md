@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664837"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114497"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes
 
@@ -52,7 +52,7 @@ O valor de **Aplicar distribuição à definição dos atrasos** pode ser defini
 
 5. Selecione **Arquivo** > **Salvar**. Agora, você pode executar o teste de carga usando o novo valor de **Aplicar Distribuição à Definição dos Atrasos**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
