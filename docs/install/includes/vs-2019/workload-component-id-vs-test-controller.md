@@ -3,19 +3,19 @@ title: IDs de carga de trabalho e de componente do Test Controller do Visual Stu
 titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para distribuir testes automatizados para vários computadores
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 5517f67481e45c8a441c88be4f6de2edc55bc2c6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 5f7a003d11f9db26e9c2deb95deb641ee2e730a7
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74796143"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159326"
 ---
 ## <a name="test-controller"></a>Controlador de teste
 

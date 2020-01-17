@@ -3,19 +3,19 @@ title: IDs de carga de trabalho e de componente das Ferramentas de Build do Visu
 titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para criar aplicativos clássicos baseados no Windows
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9fa33bbd8604f4260b61767f69b85e3263198b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74796122"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159709"
 ---
 ## <a name="azure-development-build-tools"></a>Ferramentas de build de desenvolvimento do Azure
 
