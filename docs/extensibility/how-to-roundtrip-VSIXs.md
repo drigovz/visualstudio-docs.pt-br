@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316497"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269058"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: tornar as extensões compatíveis com o Visual Studio 2017 e o Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Como: tornar as extensões compatíveis com o Visual Studio 2019/2017 e o Visual Studio 2015
 
-Este documento explica como fazer a viagem de ida e volta dos projetos de extensibilidade entre o Visual Studio 2015 e o Visual Studio 2017. Depois de concluir essa atualização, um projeto poderá abrir, compilar, instalar e executar no Visual Studio 2015 e no Visual Studio 2017. Como referência, algumas extensões que podem ser viajadas entre o Visual Studio 2015 e o Visual Studio 2017 podem ser encontradas nos [exemplos de extensibilidade do SDK do vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+Este documento explica como fazer a viagem de ida e volta dos projetos de extensibilidade entre o Visual Studio 2015 e o Visual Studio 2019 ou o Visual Studio 2017. Depois de concluir essa atualização, um projeto poderá abrir, compilar, instalar e executar o Visual Studio 2015 e o Visual Studio 2019 ou 2017. Como referência, algumas extensões que podem ser viajadas entre o Visual Studio 2015 e o Visual Studio 2019 ou 2017 podem ser encontradas nos [exemplos de extensibilidade do vs SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Se você pretende apenas criar no Visual Studio 2017, mas quer que o VSIX de saída seja executado no Visual Studio 2015 e no Visual Studio 2017, consulte o [documento de migração de extensão](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Se você pretende apenas criar no Visual Studio 2019/2017, mas quer que o VSIX de saída seja executado no Visual Studio 2015 e no Visual Studio 2019/2017, consulte o [documento de migração de extensão](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 > [!NOTE]
 > Devido a alterações no Visual Studio entre versões, algumas coisas que trabalharam em uma versão não funcionam em outra. Verifique se os recursos que você está tentando acessar estão disponíveis em ambas as versões ou se a extensão terá resultados inesperados.
@@ -29,25 +29,25 @@ Aqui está uma descrição das etapas que você concluirá neste documento para 
 1. Importe pacotes NuGet corretos.
 2. Atualizar manifesto de extensão:
     * Destino da instalação
-    * Pré-requisitos
+    * {1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 3. Atualizar CSProj:
     * Atualizar `<MinimumVisualStudioVersion>`.
-    * Adicione a propriedade `<VsixType>`.
+    * Adicionar a propriedade `<VsixType>`.
     * Adicione a propriedade de depuração `($DevEnvDir)` 3 vezes.
     * Adicione condições para importar ferramentas de Build e destinos.
 
-4. Compilar e testar
+4. Criar e testar
 
-## <a name="environment-setup"></a>Configuração do ambiente
+## <a name="environment-setup"></a>Configuração de ambiente
 
 Este documento pressupõe que você tenha o seguinte instalado em seu computador:
 
 * Visual Studio 2015 com o SDK do VS instalado
-* Visual Studio 2017 com a carga de trabalho de extensibilidade instalada
+* Visual Studio 2019 ou 2017 com a carga de trabalho de extensibilidade instalada
 
 ## <a name="recommended-approach"></a>Abordagem recomendada
 
-É altamente recomendável iniciar essa atualização com o Visual Studio 2015, em vez do Visual Studio 2017. O principal benefício do desenvolvimento no Visual Studio 2015 é garantir que você não referencie assemblies que não estão disponíveis no Visual Studio 2015. Se você fizer o desenvolvimento no Visual Studio 2017, haverá um risco de que você possa introduzir uma dependência em um assembly que existe apenas no Visual Studio 2017.
+É altamente recomendável iniciar essa atualização com o Visual Studio 2015, em vez do Visual Studio 2019 ou 2017. O principal benefício do desenvolvimento no Visual Studio 2015 é garantir que você não referencie assemblies que não estão disponíveis no Visual Studio 2015. Se você fizer o desenvolvimento no Visual Studio 2019 ou 2017, haverá um risco de que você possa introduzir uma dependência em um assembly que existe apenas no Visual Studio 2019 ou 2017.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Verifique se não há nenhuma referência a Project. JSON
 
@@ -67,12 +67,12 @@ Se o seu projeto contiver um arquivo *Project. JSON* :
 
 Precisamos ter certeza de adicionar ferramentas de Build que nos permitirão criar e depurar adequadamente. A Microsoft criou um assembly para isso chamado Microsoft. VisualStudio. Sdk. BuildTasks.
 
-Para criar e implantar um VSIXv3 no Visual Studio 2015 e 2017, você precisará dos seguintes pacotes NuGet:
+Para criar e implantar um VSIXv3 no Visual Studio 2015 e 2019/2017, você precisará dos seguintes pacotes NuGet:
 
-Version | Ferramentas criadas
+Versão do | Ferramentas criadas
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2019 ou 2017 | Microsoft.VSSDK.BuildTool
 
 Para fazer isso:
 
@@ -112,7 +112,7 @@ Para fazer isso manualmente:
 * Salve e feche o arquivo.
 
 > [!NOTE]
-> Talvez seja necessário editar manualmente a versão de pré-requisito para garantir que ela seja compatível com todas as versões do Visual Studio 2017. Isso ocorre porque o designer irá inserir a versão mínima como sua versão atual do Visual Studio (por exemplo, 15.0.26208.0). No entanto, como outros usuários podem ter uma versão anterior, convém editá-lo manualmente para 15,0.
+> Talvez seja necessário editar manualmente a versão de pré-requisito para garantir que ela seja compatível com todas as versões do Visual Studio 2019 ou 2017. Isso ocorre porque o designer irá inserir a versão mínima como sua versão atual do Visual Studio (por exemplo, 15.0.26208.0). No entanto, como outros usuários podem ter uma versão anterior, convém editá-lo manualmente para 15,0.
 
 Neste ponto, o arquivo de manifesto deve ser semelhante a este:
 
@@ -195,9 +195,10 @@ Por exemplo:
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Salve o arquivo csproj e feche-o.
+* Salve o arquivo csproj e feche-o. 
+  * Observe que, se você estiver usando mais de um projeto na solução, defina este projeto como projeto de inicialização usando "definir como projeto de inicialização" no menu de contexto do projeto). Isso garante que o Visual Studio reabra esse projeto depois de descarregá-lo.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Testar as instalações de extensão no Visual Studio 2015 e no Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Testar as instalações de extensão no Visual Studio 2015 e no Visual Studio 2019 ou 2017
 
 Neste ponto, seu projeto deve estar pronto para criar um VSIXv3 que possa ser instalado no Visual Studio 2015 e no Visual Studio 2017.
 
@@ -205,7 +206,7 @@ Neste ponto, seu projeto deve estar pronto para criar um VSIXv3 que possa ser in
 * Compile seu projeto e confirme na saída que um VSIX cria corretamente.
 * Navegue até o diretório do projeto.
 * Abra a pasta *\bin\Debug* .
-* Clique duas vezes no arquivo VSIX e instale sua extensão no Visual Studio 2015 e no Visual Studio 2017.
+* Clique duas vezes no arquivo VSIX e instale sua extensão no Visual Studio 2015 e no Visual Studio 2019/2017.
 * Verifique se você pode ver a extensão em **ferramentas** > **extensões e atualizações** na seção **instalada** .
 * Tente executar/usar a extensão para verificar se ela funciona.
 
