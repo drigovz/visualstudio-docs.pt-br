@@ -12,26 +12,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8cb2a8a7a1711b01bcb167fceb13faa30e571c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114715"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269096"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
-Quando você compila o código-fonte, o mecanismo de build cria assemblies e aplicativos executáveis. De modo geral, o processo de compilação é muito semelhante entre vários tipos de projeto diferentes, como Windows, ASP.NET, aplicativos móveis e outros. O processo de build também é semelhante entre as linguagens de programação, como C#, Visual Basic, C++, e F#.
-
-Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos, ao compilar e executar versões de depuração do código.
-
-Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.yml) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
+Para obter uma introdução à compilação com o IDE, veja [Passo a passo: Criação de um aplicativo](walkthrough-building-an-application.md).
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 
 | Método de build | Benefícios |
 | --- |--- | --- |
 | {1&gt;IDE&lt;1} |– Criar compilações imediatamente e testá-las em um depurador.<br />– Executar builds em multiprocessador para projetos C++ e C#.<br />– Personalizar diferentes aspectos do sistema de build. |
+| CMake | -Compilar projetos usando a ferramenta CMake<br />-Use o mesmo sistema de compilação em plataformas Linux e Windows. |
 | Linha de comando do MSBuild| – Criar projetos sem instalar o Visual Studio.<br />– Executar builds em multiprocessador para todos os tipos de projeto.<br />– Personalizar a maioria das áreas do sistema de build.|
 | Azure Pipelines | – Automatizar o processo de build como parte de um pipeline de integração contínua/entrega contínua.<br />– Aplicar testes automatizados com cada compilação.<br />– Empregar recursos baseados em nuvem praticamente ilimitados para processos de build.<br />– Modificar o fluxo de trabalho de compilação e, conforme necessário, criar atividades de compilação para realizar tarefas profundamente personalizadas.|
 
@@ -60,3 +57,4 @@ A partir daí, você pode explorar uma variedade de outras tarefas:
 
 - [Criar (compilar) projetos de site](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Compilar e criar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
+- [Projetos do CMake no Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

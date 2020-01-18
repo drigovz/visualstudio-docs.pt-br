@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632525"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269074"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Walkthrough: exibir a conclusão da instrução
 Você pode implementar a conclusão da instrução baseada em linguagem definindo os identificadores para os quais você deseja fornecer a conclusão e, em seguida, disparando uma sessão de conclusão. Você pode definir a conclusão da instrução no contexto de um serviço de idioma, definir sua própria extensão de nome de arquivo e tipo de conteúdo e, em seguida, exibir a conclusão apenas para esse tipo. Ou, você pode disparar a conclusão para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este tutorial mostra como disparar a conclusão da instrução para o tipo de conteúdo "texto não criptografado", que é o tipo de conteúdo dos arquivos de texto. O tipo de conteúdo "text" é o ancestral de todos os outros tipos de conteúdo, incluindo arquivos de código e XML.
@@ -27,7 +27,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
  Este tutorial mostra como implementar a conclusão de uma instrução para um conjunto embutido de identificadores. Em implementações completas, o serviço de idioma e a documentação do idioma são responsáveis por fornecer esse conteúdo.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  A partir do Visual Studio 2015, você não instala o SDK do Visual Studio do centro de download. Ele está incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Criar um projeto do MEF
@@ -42,17 +42,17 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
 4. Adicione as seguintes referências ao projeto e verifique se **CopyLocal** está definido como `false`:
 
-     Microsoft. VisualStudio. editor
+     Microsoft.VisualStudio.Editor
 
-     Microsoft. VisualStudio. Language. IntelliSense
+     Microsoft.VisualStudio.Language.Intellisense
 
-     Microsoft. VisualStudio. OLE. Interop
+     Microsoft.VisualStudio.OLE.Interop
 
-     Microsoft. VisualStudio. Shell. 14.0
+     Microsoft. VisualStudio. Shell. 15.0
 
-     Microsoft. VisualStudio. Shell. imutável. 10.0
+     Microsoft.VisualStudio.Shell.Immutable.10.0
 
-     Microsoft. VisualStudio. Textmanager. Interop
+     Microsoft.VisualStudio.TextManager.Interop
 
 ## <a name="implement-the-completion-source"></a>Implementar a origem de conclusão
  A fonte de conclusão é responsável por coletar o conjunto de identificadores e adicionar o conteúdo à janela de conclusão quando um usuário digita um gatilho de conclusão, como as primeiras letras de um identificador. Neste exemplo, os identificadores e suas descrições são embutidos em código no método <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>. Na maioria dos usos do mundo real, você usaria o analisador de seu idioma para obter os tokens para preencher a lista de conclusão.
@@ -117,7 +117,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
 
 ## <a name="implement-the-completion-command-handler-provider"></a>Implementar o provedor do manipulador de comandos de conclusão
- O provedor do manipulador de comandos de conclusão é derivado de um <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, que escuta um evento de criação de exibição de texto e converte a exibição de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> — que permite a adição do comando à cadeia de comandos do shell do Visual Studio — a um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Como essa classe é uma exportação de MEF, você também pode usá-la para importar os serviços exigidos pelo próprio manipulador de comandos.
+ O provedor do manipulador de comandos de conclusão é derivado de um <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, que escuta um evento de criação de exibição de texto e converte a exibição de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>— que permite a adição do comando à cadeia de comandos do shell do Visual Studio — a um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Como essa classe é uma exportação de MEF, você também pode usá-la para importar os serviços exigidos pelo próprio manipulador de comandos.
 
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Para implementar o provedor do manipulador de comandos de conclusão
 
@@ -133,7 +133,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importe o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite a conversão de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> em um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, um <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> e um <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que permite o acesso aos serviços padrão do Visual Studio.
+4. Importe o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite a conversão de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> em um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, um <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>e um <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que permite o acesso aos serviços padrão do Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
@@ -196,7 +196,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Para compilar e testar a solução CompletionTest
 
-1. Compile a solução.
+1. {1&gt;Compile a solução.&lt;1}
 
 2. Quando você executa esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
 
@@ -204,5 +204,5 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
 4. Conforme você digita o primeiro "a" e, em seguida, "d", uma lista que contém "adição" e "adaptação" deve aparecer. Observe que a adição está selecionada. Quando você digita outro "d", a lista deve conter apenas "adição", que agora é selecionada. Você pode confirmar "adição" pressionando a **barra de espaços**, a **guia**ou a tecla **Enter** , ou descartar a lista digitando ESC ou qualquer outra chave.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
