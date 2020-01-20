@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491674"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281692"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 
@@ -47,7 +47,7 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 
-Os parceiros que têm uma competência não são qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
+Os parceiros com uma competência estão qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
 
 Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)** . O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
 
@@ -75,6 +75,6 @@ Nas assinaturas de nuvem do Visual Studio oferecidas pelo MPN, o usuário licenc
 - [Atribuir assinaturas do Visual Studio para funcionários do MPN](manage-mpn-subscriptions.md)
 - [Termos de uso](https://www.microsoft.com/useterms/) – as assinaturas do Visual Studio oferecidas por meio do MPN estão sujeitas aos termos de licença das assinaturas do Visual Studio NFR (Proibida a revenda).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Aprenda a [gerenciar assinaturas do Visual Studio](manage-mpn-subscriptions.md) oferecidas pelo Microsoft Partner Network.
