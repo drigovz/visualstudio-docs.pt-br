@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
-  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
+  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/25/2019
-  ms.locfileid: "74474008"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76256470"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -178,7 +178,7 @@ additionalContent:
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Desenvolvimento para Office/Sharepoint
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: Desktop e móvel
       links:
       - text: Desenvolvimento de área de trabalho do .NET
         url: /dotnet/framework/develop-client-apps
@@ -186,17 +186,17 @@ additionalContent:
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: Desenvolvimento para Windows com C++
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: Celular e jogos
-      links:
       - text: Desenvolvimento mobile com .NET (Xamarin)
         url: /xamarin/
-      - text: Desenvolvimento de jogos com Unity
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: Desenvolvimento móvel com C++
+        url: /visualstudio/cross-platform/
       - text: Desenvolvimento móvel com JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (apenas Visual Studio 2017 e 2015)
-      - text: Desenvolvimento móvel com C++
-        url: /visualstudio/cross-platform/
+    - title: Jogos
+      links:
+      - text: Desenvolvimento de jogos com Unity
+        url: ../cross-platform/visual-studio-tools-for-unity.md
       - text: Desenvolvimento de jogos com C++
         url: /windows/uwp/gaming/e2e
     - title: Outros conjuntos de ferramentas

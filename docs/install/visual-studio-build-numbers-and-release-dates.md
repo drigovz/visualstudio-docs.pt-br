@@ -2,22 +2,21 @@
 title: Números de build e datas de lançamento do Visual Studio
 titleSuffix: ''
 description: Uma lista com as versões lançadas e números de build do Visual Studio, classificadas por data.
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/15/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590885"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114183"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +28,8 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.3 | Versão | 14 de janeiro de 2020 | 16.4.29709.97 |
+| 16.0.11 | Versão | 14 de janeiro de 2020 | 16.0.28803.653 |
 | 16.4.2 | Versão | 17 de dezembro de 2019 | 16.4.29613.14 |
 | 16.4.1 | Versão | 10 de dezembro de 2019 | 16.4.29609.76 |
 | 16.0.10 | Versão | 10 de dezembro de 2019 | 16.0.28803.631 |
@@ -119,6 +120,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | Versão | 14 de janeiro de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Versão | 11 de dezembro de 2019 | 15.0.26228.102 |
 | 15.9.18 | Versão | 10 de dezembro de 2019 | 15.9.28307.960 |
 | 15.9.17 | Versão | 15 de outubro de 2019 | 15.9.28307.905 |
