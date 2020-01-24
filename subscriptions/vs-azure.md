@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405302"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542666"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -110,7 +110,7 @@ Se você acha que recebeu este email por engano, contate o [atendimento ao clien
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de Ajuda com o Azure?  Confira estes recursos:
   - Suporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-  - [Documentação do Azure](/azure/)
+  - [Dicas do Azure & truques](https://microsoft.github.io/AzureTipsAndTricks/ "Dicas do Azure & truques") 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
