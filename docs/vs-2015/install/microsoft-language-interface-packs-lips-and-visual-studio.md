@@ -20,7 +20,7 @@ ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63433005"

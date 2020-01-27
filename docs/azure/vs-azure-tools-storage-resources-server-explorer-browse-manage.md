@@ -257,7 +257,7 @@ Há duas maneiras de adicionar contas de armazenamento usando o Gerenciador de S
 
    * A assinatura do Azure à qual você deseja adicionar a conta de armazenamento.
    * O nome que você deseja usar para a nova conta de armazenamento.
-   * A região ou o grupo de afinidade (como Oeste dos EUA ou Leste Asiático).
+   * A região ou o grupo de afinidade (como Oeste dos EUA ou Leste da Ásia).
    * O tipo de replicação que você deseja usar para a conta de armazenamento, tal como localmente redundante.
 
    ![Criar uma conta de armazenamento do Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)

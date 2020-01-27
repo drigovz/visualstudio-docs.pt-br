@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: df27ca8ccae6795750dbd1f10b5e1f0199c17330
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829979"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726042"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: aprenda a depurar código do Visual Basic usando o Visual Studio
 
@@ -63,18 +63,46 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. {1&gt;Abra o Visual Studio.&lt;1}
+Primeiro, você criará um projeto de aplicativo de console do .NET Core. O tipo de projeto inclui todos os arquivos de modelo que você precisará, mesmo sem adicionar nada!
 
-    ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Visual Basic**, escolha **modelos**e, em seguida, escolha **criar novo projeto de aplicativo de console (.NET Core)** ou **crie um novo projeto de aplicativo de console (.NET Framework)** . Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual Basic**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** . Em seguida, digite um nome como **get-started-debugging** e clique em **OK**.
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    Caso não veja o modelo de projeto **Aplicativo de Console (.NET Framework)** , acesse **Ferramentas** > **Obter Ferramentas e Recursos...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e, em seguida, selecione **Modificar**.
+1. Abra o Visual Studio 2017.
 
-    O Visual Studio cria o projeto.
+2. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
+
+3. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o projeto de introdução à *depuração*.
+
+     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)** , escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**.
+
+     O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+   Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
+
+   ![Escolha o C# modelo para o aplicativo de console (.NET Core)](../../debugger/media/vs-2019/get-started-create-console-project-vb.png)
+
+   > [!NOTE]
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)** , você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
+
+1. Na janela **configurar seu novo projeto** , digite ou digite *Get-Started-Debugging* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+
+   O Visual Studio abre seu novo projeto.
+
+::: moniker-end
+
+## <a name="create-the-application"></a>Criar o aplicativo
 
 1. No *Module1. vb*, substitua todo o código padrão
 
@@ -214,6 +242,8 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 2. Pare o depurador pressionando o botão vermelho parar ![parar depuração](../../debugger/media/dbg-tour-stop-debugging.png "Parar a depuração") .
 
+3. Feche a janela do console.
+
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
 1. No loop `For Each` da função `Main`, defina um ponto de interrupção clicando na margem esquerda da seguinte linha de código:
@@ -254,6 +284,8 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
+1. Clique com o botão direito do mouse no ponto de interrupção definido anteriormente e escolha **excluir ponto de interrupção** (ou pressione **Ctrl** + **Shift** + **F9** para excluir todos os pontos de interrupção).
+
 1. No editor de código, role para baixo e passe o mouse sobre o método `Console.WriteLine` na classe `Triangle` até que a **execução verde clique** no botão ![Executar para clicar à](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") esquerda. A dica de ferramenta para o botão mostra "Realizar a execução até aqui".
 
      ![Usar o recurso executar para clicar](../visual-basic/media/get-started-run-to-click-vb.png "Executar com um Clique")
@@ -288,11 +320,13 @@ Digamos que você termine de examinar o método `Draw` na classe `Triangle` e qu
 
      Você deve ter voltado ao loop `For Each` no método `Main`. Caso contrário, pressione **Shift** + **F11** uma segunda vez.
 
+1. Clique na margem esquerda para adicionar um novo ponto de interrupção no loop de `for`.
+
 ## <a name="restart-your-app-quickly"></a>Reinicie o aplicativo rapidamente
 
 Clique no botão **reiniciar** ![aplicativo de reinicialização](../../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
-Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
+Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é atingido pela execução do código.
 
 O depurador para novamente no ponto de interrupção definido por você no método `shape.Draw()`.
 

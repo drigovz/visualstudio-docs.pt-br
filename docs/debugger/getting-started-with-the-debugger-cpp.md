@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: aeef905b2372b22be7aee157c4d0249109ea3749
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179815"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76725853"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código C++ usando o Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C++ usando o Visual Studio
 
 Este artigo apresenta os recursos do depurador do Visual Studio passo a passo. Caso deseje obter uma exibição de nível superior das funcionalidades do depurador, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md). Quando você *depura seu aplicativo*, isso normalmente significa executar o aplicativo com o depurador anexado. Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código, ver se um branch de código está em execução e assim por diante. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
 
@@ -33,7 +33,7 @@ Neste tutorial, você irá:
 > * Inspecionar variáveis em dicas de dados e janelas do depurador
 > * Examinar a pilha de chamadas
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 ::: moniker range=">=vs-2019"
 
@@ -52,18 +52,43 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. Abra o Visual Studio.
+::: moniker range="vs-2017"
 
-    ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **c++** , escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console**. Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C++** , escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console do Windows**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
-    ::: moniker-end
+1. Abra o Visual Studio 2017.
 
-    Caso não veja o modelo de projeto **Aplicativo Console do Windows**, acesse **Ferramentas** > **Obter Ferramentas e Recursos**, que abre o Instalador do Visual Studio. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+2. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
-    O Visual Studio cria o projeto.
+3. Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **Visual C++** e escolha área de **trabalho do Windows**. No painel central, escolha **aplicativo de console do Windows**. Em seguida, nomeie o projeto de introdução à *depuração*.
+
+   > [!NOTE]
+   > Caso não veja o modelo de projeto **Aplicativo Console do Windows**, acesse **Ferramentas** > **Obter Ferramentas e Recursos**, que abre o Instalador do Visual Studio. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C++** escolha na lista idioma e, em seguida, escolha **Windows** na lista plataforma. 
+
+   Depois de aplicar os filtros de idioma e plataforma, escolha o modelo de **aplicativo de console** e escolha **Avançar**.
+
+   ![Escolha o C# modelo para o aplicativo de console (.NET Core)](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
+
+   > [!NOTE]
+   > Se você não vir o modelo de **aplicativo de console** , poderá instalá-lo na janela **criar um novo projeto** . Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, na instalador do Visual Studio, escolha o **desenvolvimento de desktop C++ com** carga de trabalho.
+
+1. Na janela **configurar seu novo projeto** , digite ou digite *Get-Started-Debugging* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+
+   O Visual Studio abre seu novo projeto.
+
+::: moniker-end
+
+## <a name="create-the-application"></a>Criar o aplicativo
 
 1. Em *get-started-debugging.cpp*, substitua o código a seguir
 
@@ -170,7 +195,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 ## <a name="start-the-debugger"></a>Inicie o depurador.
 
-1. Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
+1. Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração") na barra de ferramentas Depurar.
 
      **F5** inicia o aplicativo com o depurador anexado ao processo do aplicativo, mas nós ainda não fizemos nada de especial para examinar o código. Portanto, o aplicativo apenas é carregado e a saída do console é exibida.
 
@@ -185,7 +210,9 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
      Neste tutorial, vamos analisar melhor esse aplicativo usando o depurador e analisar os recursos do depurador.
 
-2. Pare o depurador pressionando o botão de parada vermelho ![Parar Depuração](../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração").
+2. Pare o depurador pressionando o botão vermelho parar ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "Parar a depuração") .
+
+3. Feche a janela do console.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
@@ -201,7 +228,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
     ![Definir e atingir um ponto de interrupção](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
-    A seta amarela representa a instrução na qual o depurador está em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
+    A seta amarela representa a instrução na qual o depurador ficou em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
 
      Se o aplicativo ainda não estiver em execução, **F5** iniciará o depurador e o interromperá no primeiro ponto de interrupção. Caso contrário, **F5** continuará executando o aplicativo até o próximo ponto de interrupção.
 
@@ -213,26 +240,28 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 1. Enquanto estiver em pausa na chamada de método `shape->Draw` na função `main`, pressione **F11** (ou escolha **Depurar > Intervir**) para avançar no código até a classe `Rectangle`.
 
-     ![Usar F11 para intervir no código](../debugger/media/get-started-f11-cpp.png "F11 Intervir")
+     ![Use F11 para entrar no código](../debugger/media/get-started-f11-cpp.png "Depuração de F11 em")
 
-     F11 é o comando **Intervir**, que avança a execução do aplicativo uma instrução por vez. F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Também vamos mostrar algumas outras opções para percorrer o código com mais rapidez.) Por padrão, o depurador ignora as partes do código que não são do usuário (se quiser saber mais detalhes, confira [Apenas Meu Código](../debugger/just-my-code.md)).
+     F11 é o comando **Intervir**, que avança a execução do aplicativo uma instrução por vez. F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Para mover-se mais rapidamente pelo código, mostraremos algumas outras opções também.) Por padrão, o depurador ignora o código que não é do usuário (se você quiser obter mais detalhes, consulte [apenas meu código](../debugger/just-my-code.md)).
 
 2. Pressione **F10** (ou escolha **Depurar > Depuração Parcial**) algumas vezes até que o depurador pare na chamada de método `Shape::Draw`. Em seguida, pressione **F10** mais uma vez.
 
-     ![Usar F10 para Depuração Parcial do código](../debugger/media/get-started-step-over-cpp.png "F10 Depuração Parcial")
+     ![Use F10 para percorrer o código](../debugger/media/get-started-step-over-cpp.png "Passo F10")
 
      Observe neste momento que o depurador não intervém no método `Draw` da classe base (`Shape`). **F10** avança o depurador sem intervir em funções ou métodos no código do aplicativo (o código ainda é executado). Pressionando F10 na chamada de método `Shape::Draw` (em vez de **F11**), ignoramos o código de implementação de `Draw` na classe base (no qual talvez não estejamos interessados no momento).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
-1. No editor de códigos, role para baixo e passe o mouse sobre o `std::cout` na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda.
+1. Clique com o botão direito do mouse no ponto de interrupção definido anteriormente e escolha **excluir ponto de interrupção** (ou pressione **Ctrl** + **Shift** + **F9** para excluir todos os pontos de interrupção).
 
-     ![Usar o recurso Executar até o Clique](../debugger/media/get-started-run-to-click-cpp.png "Executar até o Clique")
+1. No editor de código, role para baixo e passe o mouse sobre o `std::cout` na classe `Triangle` até que a **execução verde clique** no botão ![Executar para](../debugger/media/dbg-tour-run-to-click.png "RunToClick") clicar em aparecer à esquerda.
+
+     ![Usar o recurso executar para clicar](../debugger/media/get-started-run-to-click-cpp.png "Executar com um Clique")
 
    > [!NOTE]
    > O botão **Executar com um Clique** está disponível no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] em diante. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
 
-2. Clique no botão **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Clique no botão **Executar para clicar** em ![Executar para clicar em](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     O uso desse botão é semelhante à configuração de um ponto de interrupção temporário. **Executar até o Clique** é útil para abranger rapidamente uma região visível do código do aplicativo (você pode clicar em qualquer arquivo aberto).
 
@@ -259,11 +288,13 @@ Digamos que você termine de examinar o método `Draw` na classe `Triangle` e qu
 
      Você deve ter voltado ao loop `for` no método `main`.
 
+1. Clique na margem esquerda para adicionar um novo ponto de interrupção no loop de `for`.
+
 ## <a name="restart-your-app-quickly"></a>Reinicie o aplicativo rapidamente
 
-Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
+Clique no botão **reiniciar** ![aplicativo de reinicialização](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
-Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
+Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é atingido pela execução do código.
 
 O depurador para novamente no ponto de interrupção definido por você no método `shape->Draw()`.
 
@@ -287,7 +318,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 1. Examine a janela **Autos** na parte inferior do editor de códigos.
 
-     ![Inspecionar variáveis na janela Autos](../debugger/media/get-started-autos-window-cpp.png "Janela Autos")
+     ![Inspecionar variáveis na janela de automóveis](../debugger/media/get-started-autos-window-cpp.png "Janela de automóveis")
 
     Na janela **Autos**, veja as variáveis e seus valores atuais. Para C++, a janela **Autos** mostra as variáveis nas três linhas de código anteriores.
 
@@ -320,7 +351,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Essa ação não avança o depurador.
 
-    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como: Examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
 
@@ -339,7 +370,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Parabéns por concluir este tutorial.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
