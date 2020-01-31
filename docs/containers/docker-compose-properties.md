@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916926"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826452"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose Propriedades de compilação
 
@@ -109,6 +109,20 @@ Use aspas duplas em volta dos valores, como no exemplo anterior, e use a barra i
 |com. Microsoft. VisualStudio. Depurando. killprogram|Esse comando é usado para parar o programa que está sendo depurado em execução dentro do contêiner (quando necessário).|
 |com. Microsoft. VisualStudio. Depurando. programa|O programa foi iniciado ao iniciar a depuração. Para aplicativos .NET Core, essa configuração normalmente é **dotnet**.|
 |com. Microsoft. VisualStudio. Depurando. WorkingDirectory|O diretório usado como o diretório inicial ao iniciar a depuração. Essa configuração normalmente é */app* para contêineres do Linux ou *C:\app* para contêineres do Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Personalizar o processo de inicialização do aplicativo
+
+Você pode executar um comando ou script personalizado antes de iniciar seu aplicativo usando a configuração `entrypoint` e tornando-o dependente da configuração. Por exemplo, se você precisar configurar um certificado somente no modo de **depuração** executando `update-ca-certificates`, mas não no modo de **liberação** , poderá adicionar o código a seguir somente em *Docker-Compose. vs. Debug. yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Se você omitir *Docker-Compose. vs. Release. yml* ou *Docker-Compose. vs. Debug. yml* , o Visual Studio gerará um com base nas configurações padrão.
 
 ## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
