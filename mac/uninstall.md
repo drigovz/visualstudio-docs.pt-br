@@ -6,18 +6,16 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 58c4395e1569f6ca444a8b1fdcd2b8906d3fdb75
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984071"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892162"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalando o Visual Studio para Mac
 
 Você pode usar este guia para desinstalar cada componente do Visual Studio para Mac individualmente navegando até a seção relevante ou usar os scripts fornecidos na seção [Script de Desinstalação](#uninstall-script) para desinstalar tudo.
-
-Se o Xamarin Studio já esteve instalado em seu computador, também poderá ser necessário seguir as instruções do guia de [desinstalação do Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), além das etapas a seguir.
 
 > [!NOTE]
 > Essas informações só removerão o Visual Studio 2019 ou 2017 para Mac do computador. para desinstalar o Visual Studio Code, confira [este problema](https://github.com/Microsoft/vscode/issues/52151) para obter detalhes.
@@ -245,6 +243,6 @@ Você também pode remover o arquivo plist Preview com o seguinte comando:
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Desinstalar Visual Studio (no Windows)](/visualstudio/install/uninstall-visual-studio)

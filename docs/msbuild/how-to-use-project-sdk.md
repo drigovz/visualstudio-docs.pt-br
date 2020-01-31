@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574451"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826465"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Como usar SDKs de projeto do MSBuild
 
-O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 introduziu o conceito de "SDK de projeto," que simplifica o uso de kits de desenvolvimento de software que exigem que propriedades e destinos sejam importados.
+O MSBuild 15,0 introduziu o conceito do "SDK do projeto", que simplifica o uso de kits de desenvolvimento de software que exigem Propriedades e destinos a serem importados.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 </Project>
 ```
 
-Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] adiciona importações implícitas nas partes superior e inferior do projeto:
+Durante a avaliação do projeto, o MSBuild adiciona importações implícitas na parte superior e inferior do arquivo de projeto:
 
 ```xml
 <Project>
@@ -46,9 +46,9 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
 
 ## <a name="reference-a-project-sdk"></a>Referenciar um SDK de projeto
 
- Há três maneiras de referenciar um SDK de projeto:
+Há três maneiras de referenciar um SDK de projeto:
 
-1. Use o atributo `Sdk` no elemento `<Project/>`:
+- Use o atributo `Sdk` no elemento `<Project/>`:
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -56,9 +56,9 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
     </Project>
     ```
 
-    Uma importação implícita é adicionada às partes superior e inferior do projeto, conforme descrito acima.
+    Uma importação implícita é adicionada à parte superior e inferior do projeto, conforme discutido anteriormente.
     
-    Para especificar uma versão do SDK, você poderá anexá-la ao atributo `Sdk`:
+    Para especificar uma versão específica do SDK, acrescente-a ao atributo `Sdk`:
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -69,7 +69,7 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
     > [!NOTE]
     > Isso atualmente é a única maneira com suporte para fazer referência a um projeto do SDK no Visual Studio para Mac.
 
-2. Use o elemento `<Sdk/>` de nível superior:
+- Use o elemento `<Sdk/>` de nível superior:
 
     ```xml
     <Project>
@@ -78,9 +78,11 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
     </Project>
    ```
 
-   Uma importação implícita é adicionada às partes superior e inferior do projeto, conforme descrito acima.  O atributo `Version` não é necessário.
+   Uma importação implícita é adicionada à parte superior e inferior do projeto, conforme discutido anteriormente.
+   
+   O atributo `Version` não é necessário.
 
-3. Use o elemento `<Import/>` em qualquer lugar no projeto:
+- Use o elemento `<Import/>` em qualquer lugar no projeto:
 
     ```xml
     <Project>
@@ -95,19 +97,23 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
 
    Incluir explicitamente as importações no projeto permite que você tenha controle total sobre a ordem.
 
-   Ao usar o elemento `<Import/>`, você também pode especificar um atributo `Version` opcional.  Por exemplo, você pode especificar `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
+   Ao usar o elemento `<Import/>`, você também pode especificar um atributo `Version` opcional. Por exemplo, você pode especificar `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Como os SDKs de projeto são resolvidos
 
-Ao avaliar a importação, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] resolve dinamicamente o caminho para o SDK de projeto com base no nome e na versão especificados.  O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] também tem uma lista de resolvedores de SDK registrados, que são plug-ins que localizam SDKs de projeto no computador.  Os plug-ins incluem:
+Ao avaliar a importação, o MSBuild resolve dinamicamente o caminho para o SDK do projeto com base no nome e na versão que você especificou.  O MSBuild também tem uma lista de resolvedores de SDK registrados, que são plug-ins que localizam SDKs de projeto em seu computador. Os plug-ins incluem:
 
-1. Um resolvedor baseado em NuGet que consulta os feeds de pacotes configurados para pacotes do NuGet que correspondem à ID e à versão do SDK que você especificou.<br/>
-   Esse resolvedor só estará ativo se você tiver especificado uma versão opcional e poderá ser usado para qualquer SDK de projeto personalizado.
-2. Um resolvedor de CLI do .NET que resolve SDKs instalados com a CLI do .NET.<br/>
-   Esse resolvedor localiza SDKs de projeto, como `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web`, que fazem parte do produto.
-3. Um resolvedor padrão que resolve SDKs instalados com o MSBuild.
+- Um resolvedor baseado em NuGet que consulta os feeds de pacotes configurados para pacotes do NuGet que correspondem à ID e à versão do SDK que você especificou.
 
-O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma versão em [global.json](/dotnet/core/tools/global-json) que permite que você controle a versão do SDK do projeto em um único local, em vez de em cada projeto:
+   Esse resolvedor só estará ativo se você tiver especificado uma versão opcional. Ele pode ser usado para qualquer SDK do projeto personalizado.
+   
+- Um resolvedor de CLI do .NET que resolve SDKs instalados com a [CLI do .net](/dotnet/core/tools/).
+
+   Esse resolvedor localiza SDKs do projeto, como `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web` que fazem parte do produto.
+   
+- Um resolvedor padrão que resolve SDKs instalados com o MSBuild.
+
+O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma versão no arquivo [global. JSON](/dotnet/core/tools/global-json) , que permite controlar a versão do SDK do projeto em um único lugar em vez de em cada projeto individual:
 
 ```json
 {
@@ -118,7 +124,7 @@ O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma vers�
 }
 ```
 
-Somente uma versão de cada SDK de projeto pode ser usada durante uma compilação.  Se você estiver fazendo referência a duas versões diferentes do mesmo SDK de projeto, o MSBuild emitirá um aviso.  É recomendável **não** especificar uma versão nos projetos caso uma versão seja especificada no *global.json*.
+Somente uma versão de cada SDK de projeto pode ser usada durante uma compilação. Se você fizer referência a duas versões diferentes do mesmo SDK do projeto, o MSBuild emitirá um aviso. É recomendável **não** especificar uma versão em seus projetos se uma versão for especificada no arquivo *global. JSON* .
 
 ## <a name="see-also"></a>Veja também
 

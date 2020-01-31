@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188785"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826543"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -21,7 +21,7 @@ Este tutorial orienta você pelo uso do Visual Studio para publicar seu aplicati
 
 Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) antes de começar.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para concluir este tutorial:
 
@@ -53,13 +53,13 @@ As etapas a seguir guiam você na criação de um aplicativo básico ASP.NET Cor
 1. Escolha **Aplicativo Web**.
 1. Escolha se deseja ou não suporte a SSL usando a caixa de seleção **Configurar para HTTPS**.
 1. Verifique a caixa de seleção **Habilitar o suporte do Docker**.
-1. Selecione o tipo de contêiner do **Linux** e clique em **criar**. Não há suporte para a implantação de contêineres do Windows no serviço Azure App como um contêiner.
+1. Selecione o tipo de contêiner e clique em **criar**. Não há suporte para a implantação de contêineres do Windows no serviço Azure App como um contêiner.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Implantar o contêiner no Azure
 
 1. Clique com o botão direito no projeto em **Gerenciador de Soluções** e escolha **Publicar**.
-1. Na caixa de diálogo Publicar destino, escolha **serviço de aplicativo Linux**.
+1. Na caixa de diálogo Publicar destino, escolha **serviço de aplicativo Linux** ou **serviço de aplicativo**. Esse é o sistema operacional que hospedará o servidor Web.
 1. Você pode publicar somente no serviço de aplicativo ou pode publicar no serviço de aplicativo e no ACR (registro de contêiner do Azure). Para publicar o contêiner em um ACR (registro de contêiner do Azure), escolha **criar novo serviço de aplicativo para contêineres**e clique em **publicar**.
 
    ![Captura de tela da caixa de diálogo publicar](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ As etapas a seguir guiam você na criação de um aplicativo básico ASP.NET Cor
    ![Captura de tela do aplicativo Web](media/deploy-app-service/web-application-running.png)
 
 1. O perfil de publicação é salvo com todos os detalhes selecionados, como o grupo de recursos e o registro de contêiner.
-1. Para implantar novamente com o mesmo perfil de publicação, use o botão **publicar** , o botão **publicar** na janela atividade de **publicação na Web** ou clique com o botão direito do mouse no projeto no **Gerenciador de soluções** e escolha o item **publicar** no menu de contexto.
+
+1. Para implantar novamente com o mesmo perfil de publicação, use o botão **publicar** , o botão **publicar** na janela atividade de **publicação na Web** ou clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e escolha o item **publicar** no menu de contexto.
+
+## <a name="view-container-settings"></a>Exibir configurações de contêiner
+
+No [portal do Azure](https://portal.azure.com), você pode abrir o serviço de aplicativo implantado.
+
+Você pode exibir as configurações do serviço de aplicativo implantado abrindo o menu **configurações de contêiner* (quando estiver usando o Visual Studio 2019 versão 16,4 ou posterior).
+
+![Captura de tela do menu de configurações de contêiner no portal do Azure](media/deploy-app-service/container-settings-menu.png)
+
+A partir daí, você pode exibir as informações do contêiner, exibir ou baixar logs ou configurar a implantação contínua. Confira [Azure app CI/CD de implantação contínua do serviço](/azure/app-service/containers/app-service-linux-ci-cd).
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 
@@ -87,10 +98,10 @@ Para remover todos os recursos do Azure associados a este tutorial, exclua o gru
 
 No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto e escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
+Saiba mais sobre o [Azure app Service Linux](/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Implantar no registro de contêiner do Azure](hosting-web-apps-in-docker.md)
