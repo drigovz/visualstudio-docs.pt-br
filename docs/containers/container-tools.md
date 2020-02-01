@@ -1,19 +1,19 @@
 ---
-title: Ferramentas do Visual Studio para Contêineres com ASP.NET Core
+title: Ferramentas de contêiner do Visual Studio com ASP.NET
 author: ghogen
 description: Saiba como usar as Ferramentas do Visual Studio para Contêineres e o Docker for Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: c7d09f3a318049e8392f744d946138e59509470a
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: bfe26a663e2c79a040f66daa2ebeecaf89b80a94
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "70312112"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922989"
 ---
-# <a name="quickstart-docker-in-visual-studio"></a>Início Rápido: Docker no Visual Studio
+# <a name="quickstart-docker-in-visual-studio"></a>Início rápido: Docker no Visual Studio
 
 ::: moniker range="vs-2017"
 
