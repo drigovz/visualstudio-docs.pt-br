@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596860"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923263"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 
@@ -65,6 +65,12 @@ Define TRACE como um símbolo em todos os arquivos de código-fonte do aplicativ
 Especifica o processador de destino do arquivo de saída. Escolha **x86** para qualquer processador compatível com Intel de 32 bits, **x64** para qualquer processador compatível com Intel de 64 bits, **ARM** para processadores ARM ou **Qualquer CPU** para especificar que qualquer processador é aceitável. **Qualquer CPU** é o valor padrão para projetos, pois permite que o aplicativo seja executado em uma ampla variedade de hardwares.
 
 Para obter mais informações, consulte [/platform (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Anula**
+
+Especifica o contexto anulável em C# todo o projeto. Essa opção de interface do usuário foi introduzida no Visual Studio 16,5 e só é habilitada C# para projetos que usam 8,0 ou posterior.
+
+Para obter mais informações, consulte [contextos anuláveis](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferir 32 bits**
 
