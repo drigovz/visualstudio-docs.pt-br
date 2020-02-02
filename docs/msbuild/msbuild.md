@@ -11,23 +11,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e93e7d30a194df70260ef010b81c3026299f8565
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595053"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923317"
 ---
 # <a name="msbuild"></a>{1&gt;MSBuild&lt;1}
-O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas ele não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
+
+O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas o MSBuild não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
 
  O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
 
  Para obter informações sobre o C++MSBuild para, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
- Os exemplos a seguir ilustram quando você deve executar builds usando uma linha de comando do MSBuild em vez do IDE do Visual Studio.
+ Os exemplos a seguir ilustram quando você pode executar compilações invocando o MSBuild da linha de comando em vez do IDE do Visual Studio.
 
-- O Visual Studio não está instalado. ([baixar o MSBuild sem o Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- O Visual Studio não está instalado. ([Baixe o MSBuild sem o Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools).)
 
 - Você deseja usar a versão de 64 bits do MSBuild. Esta versão do MSBuild normalmente não é necessária, mas permite que o MSBuild acesse mais memória.
 
@@ -43,12 +44,12 @@ O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] �
 
   - Realizar uma etapa de pós-processamento. Por exemplo, convém marcar um assembly com uma versão diferente.
 
-Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode compilar o código no IDE em um computador de desenvolvimento, mas usar uma linha de comando do MSBuild para compilar o código integrado de vários desenvolvedores.
+Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode criar código no IDE em um computador de desenvolvimento, mas executar o MSBuild na linha de comando para compilar o código que é integrado a vários desenvolvedores. Você também pode usar a [CLI (interface de linha de comando) do .NET Core](/dotnet/core/tools/), que usa o MSBuild, para compilar projetos do .NET Core.
 
 > [!NOTE]
-> Você pode usar o Team Foundation Build para compilar, testar e implantar seu aplicativo automaticamente. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). O Team Foundation Build compila seu código usando o MSBuild. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> Você pode usar Azure Pipelines para compilar, testar e implantar automaticamente seu aplicativo. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). Azure Pipelines compila seu código usando o MSBuild. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
- Este tópico fornece uma visão geral do MSBuild. Para um tutorial de introdução, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).
+Este artigo fornece uma visão geral do MSBuild. Para um tutorial de introdução, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Usar MSBuild em um prompt de comando
  Para executar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] em um prompt de comando, passe um arquivo de projeto para *MSBuild.exe*, junto com as opções de linha de comando apropriadas. As opções de linha de comando permitem que você defina propriedades, execute destinos específicos e defina outras opções que controlam o processo de build. Por exemplo, você usaria a seguinte sintaxe de linha de comando para criar o arquivo *MyProj.proj* com a propriedade `Configuration` definida como `Debug`.
@@ -87,7 +88,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 ### <a name="BKMK_Items"></a> Itens
- Os itens são entradas no sistema de build e normalmente representam arquivos. Os itens são agrupados em tipos de item com base em seus nomes de item definidos pelo usuário. Esses tipos de item podem ser usados como parâmetros para tarefas, que usam os itens individuais para executar as etapas do processo de build.
+ Os itens são entradas no sistema de build e normalmente representam arquivos. Os itens são agrupados em tipos de item com base em nomes de itens definidos pelo usuário. Esses tipos de item podem ser usados como parâmetros para tarefas, que usam os itens individuais para executar as etapas do processo de build.
 
  Os itens são declarados no arquivo de projeto, criando um elemento que tem o nome do tipo de item como um filho de um elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Por exemplo, o código a seguir cria um tipo de item chamado `Compile`, que inclui dois arquivos.
 
@@ -116,7 +117,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  A lógica de execução de uma tarefa é escrita em código gerenciado e mapeada para [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usando o elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Você pode escrever sua própria tarefa por meio da criação de um tipo gerenciado que implementa a interface <xref:Microsoft.Build.Framework.ITask>. Para saber mais sobre como escrever tarefas, consulte [Produção de tarefas](../msbuild/task-writing.md).
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui tarefas comuns que você pode modificar para atender às suas necessidades.  Os exemplos são [Copy](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios e [Csc](../msbuild/csc-task.md), que compila os arquivos de código-fonte do Visual C#. Para obter uma lista das tarefas disponíveis juntamente com as informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui tarefas comuns que você pode modificar para atender às suas necessidades. Os exemplos são [Copy](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios e [Csc](../msbuild/csc-task.md), que compila os arquivos de código-fonte do Visual C#. Para obter uma lista das tarefas disponíveis juntamente com as informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).
 
  Uma tarefa é executada em um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] criando um elemento que tem o nome da tarefa como um filho de um elemento [Target](../msbuild/target-element-msbuild.md). As tarefas normalmente aceitam parâmetros, que são passados como atributos do elemento. As propriedades e itens do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podem ser usados como parâmetros. Por exemplo, o código a seguir chama a tarefa [MakeDir](../msbuild/makedir-task.md) e passa para ela o valor da propriedade `BuildDir` que foi declarada em um exemplo anterior.
 
@@ -150,17 +151,17 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  Para obter um tutorial sobre como usar o MSBuild no Visual Studio, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="BKMK_Multitargeting"></a> Multiplataforma
- Usando o Visual Studio, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework. Por exemplo, você pode compilar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado no .NET Framework 4.5 em uma plataforma de 64 bits. A capacidade de compilar para mais de uma estrutura é chamada de multiplataforma.
+ Usando o Visual Studio, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework. Por exemplo, você pode compilar um aplicativo para ser executado no .NET Framework 2,0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado em .NET Framework 4,5 em uma plataforma de 64 bits. A capacidade de compilar para mais de uma estrutura é chamada de multiplataforma.
 
  Estes são alguns dos benefícios de multiplataforma:
 
-- Você pode desenvolver aplicativos destinados a versões anteriores do .NET Framework, por exemplo, versões 2.0, 3.0 e 3.5.
+- Você pode desenvolver aplicativos destinados a versões anteriores do .NET Framework, por exemplo, versões 2,0, 3,0 e 3,5.
 
-- Você pode direcionar estruturas que não sejam o .NET Framework, por exemplo, o Silverlight.
+- Você pode direcionar estruturas diferentes de .NET Framework, por exemplo, Silverlight.
 
 - Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.
 
-- Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.
+- Se uma service pack para a versão atual do .NET Framework for lançada, você poderá direcioná-la.
 
 - A multiplataforma garante que um aplicativo use apenas a funcionalidade que está disponível na estrutura de destino e na plataforma.
 
@@ -183,6 +184,8 @@ Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-mul
 | [Recursos adicionais](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Lista os recursos de comunidade e suporte para obter mais informações sobre o MSBuild. |
 
 ## <a name="reference"></a>Referência
-- [Referência do MSBuild](../msbuild/msbuild-reference.md) Links para tópicos que contêm informações de referência.
+- [Referência do MSBuild](../msbuild/msbuild-reference.md)\
+ Links para tópicos que contêm informações de referência.
 
-- [Glossário](msbuild-glossary.md) Define termos comuns do MSBuild.
+- \ de [Glossário](msbuild-glossary.md)
+ Define termos comuns do MSBuild.
