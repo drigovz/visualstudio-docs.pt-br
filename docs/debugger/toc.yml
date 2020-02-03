@@ -52,6 +52,8 @@
       items:
         - name: Inspecionar dados nas janelas do depurador
           href: debugger-windows.md
+        - name: Inspecionar exceções
+          href: exception-helper.md
         - name: Inspecionar variáveis
           href: autos-and-locals-windows.md
         - name: Inspecionar variáveis
