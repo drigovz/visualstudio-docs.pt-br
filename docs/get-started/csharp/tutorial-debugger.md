@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
+ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923224"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77001519"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C# usando o Visual Studio
 
@@ -187,7 +187,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
      `SendMessage(name, a[i]);`
 
-2. Pressione **F11** mais uma vez para entrar no método `SendMessage`.
+1. Pressione **F11** mais uma vez para entrar no método `SendMessage`.
 
      O ponteiro amarelo avança para o método `SendMessage`.
 
@@ -203,7 +203,9 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
      Você deve voltar ao loop `for` no método `Main`, em pausa na chamada do método `SendMessage`.
 
-3. Enquanto estiver em pausa na chamada do método, pressione **F10** (ou escolha **Depurar > etapas**) uma vez.
+1. Pressione **F11** tempo até voltar para a chamada do método `SendMessage` novamente.
+
+1. Enquanto estiver em pausa na chamada do método, pressione **F10** (ou escolha **Depurar > etapas**) uma vez.
 
      ![Use F10 para percorrer o código](../csharp/media/get-started-step-over.png "Passo F10")
 
@@ -262,7 +264,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 1. Expanda a variável `letters` para mostrar os elementos que ela contém.
 
-     ![Inspecionar variáveis na janela de automóveis](../csharp/media/get-started-locals-window.png "Janela de automóveis")
+     ![Inspecionar variáveis na janela locais](../csharp/media/get-started-locals-window.png "A janela locais")
 
     A janela **Locais** mostra as variáveis que estão no [escopo](https://www.wikipedia.org/wiki/Scope_(computer_science)) atual, ou seja, o contexto de execução atual.
 
