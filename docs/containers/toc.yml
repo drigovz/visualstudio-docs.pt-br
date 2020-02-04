@@ -7,7 +7,7 @@
     - name: Guia de Início Rápido
       expanded: true
       items:
-        - name: Aplicativo ASP.NET Core em um contêiner
+        - name: Aplicativo ASP.NET em um contêiner
           href: container-tools.md
         - name: Aplicativo de página única do React.js em um contêiner
           href: container-tools-react.md
