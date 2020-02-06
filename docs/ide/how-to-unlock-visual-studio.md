@@ -4,19 +4,19 @@ description: Saiba como estender uma avaliação gratuita do Visual Studio, usar
 ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: db0f75b3e4c2f066b7a9d79976a50efd3364d7bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591366"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027575"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Estender uma versão de avaliação ou atualizar uma licença
 
@@ -35,7 +35,7 @@ Para continuar usando o Visual Studio após o término de um período de avalia�
 
 Para obter mais informações sobre as assinaturas do Visual Studio e como elas funcionam, consulte a página de [perguntas frequentes de suporte a assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) .
 
-## <a name="enter-a-product-key"></a>Inserir uma chave do produto
+## <a name="enter-a-product-key"></a>Insira uma chave do produto
 
 1. Selecione **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e, em seguida, escolha o link **Licenciar com uma Chave de Produto**.
 
@@ -68,14 +68,14 @@ Se você não inserir novamente suas credenciais, o token começará a ficar obs
 
 Se sua assinatura tiver expirado e você não tiver mais direitos de acesso ao Visual Studio, você deverá renovar sua assinatura ou adicionar outra conta que tenha uma assinatura. Para obter mais informações sobre a licença que você está usando, acesse **Arquivo** > **Configurações de Conta** e examine as informações de licença no lado direito da caixa de diálogo. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista **Todas as Contas** no lado esquerdo da caixa de diálogo selecionando o link **Adicionar uma conta**.
 
-## <a name="get-support"></a>Obter suporte
+## <a name="get-support"></a>Obtenha suporte
 
 Às vezes, as coisas dão errado. Se você tiver um problema, aqui estão algumas opções de suporte:
 
 * Relate problemas do produto usando o [relatório uma ferramenta problemática](how-to-report-a-problem-with-visual-studio.md) .
 * Encontre respostas para perguntas sobre assinaturas, contas e cobrança nas [perguntas frequentes de suporte às assinaturas](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Entrar no Visual Studio](../ide/signing-in-to-visual-studio.md)
 * [Compare as edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/)

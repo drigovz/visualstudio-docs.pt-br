@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596184"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027625"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos *.targets* fornecidos pelo MSBuild.
@@ -32,7 +32,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propriedades e parâmetros comuns
 
-| Nome da propriedade ou do parâmetro | Descrição |
+| Nome da propriedade ou do parâmetro | DESCRIÇÃO |
 |------------------------------------| - |
 | AdditionalLibPaths | Especifica as pastas adicionais nas quais os compiladores devem procurar assemblies de referência. |
 | AddModules | Faz com que o compilador verifique todos os tipos de informações de arquivos disponíveis para o projeto que você está compilando. Essa propriedade é equivalente à opção do compilador `/addModules`. |
@@ -50,7 +50,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | CleanFile | O nome do arquivo que será usado como o "cache limpo". O cache limpo é uma lista dos arquivos gerados que serão excluídos durante a operação de limpeza. O arquivo é colocado no caminho de saída intermediária pelo processo de build.<br /><br /> Esta propriedade especifica apenas os nomes de arquivo que não têm informações de caminho. |
 | CodePage | Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Essa propriedade é equivalente à opção do compilador `/codepage`. |
 | CompilerResponseFile | Um arquivo de resposta opcional que pode ser passado para as tarefas do compilador. |
-| Configuração do | A configuração que você está criando, "Depurar" ou "Versão". |
+| Configuração | A configuração que você está criando, "Depurar" ou "Versão". |
 | CscToolPath | O caminho do *csc.exe*, o compilador [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | O nome de um arquivo de projeto ou arquivo de destino a ser importado automaticamente antes da importação de destinos comuns. |
 | DebugSymbols | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração de **-p:DebugSymbols=false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados de programa ( *.pdb*). |
@@ -59,7 +59,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | DefineDebug | Um valor booliano que indica se você deseja que a constante DEBUG seja definida. |
 | DefineTrace | Um valor booliano que indica se você deseja que a constante TRACE seja definida. |
 | DelaySign | Um valor booliano que indica se você deseja atrasar a assinatura do assembly em vez de fazer a assinatura completa. |
-| Determinista | Um valor booliano que indica se o compilador deve gerar assemblies idênticos para entradas idênticas. Esse parâmetro corresponde à opção `/deterministic` dos compiladores *vbc.exe* e *csc.exe*. |
+| Determinística | Um valor booliano que indica se o compilador deve gerar assemblies idênticos para entradas idênticas. Esse parâmetro corresponde à opção `/deterministic` dos compiladores *vbc.exe* e *csc.exe*. |
 | DisabledWarnings | Suprime os avisos especificados. Somente a parte numérica do identificador de aviso deve ser especificada. Vários avisos são separados por ponto e vírgula. Esse parâmetro corresponde à opção `/nowarn` do compilador *vbc.exe*. |
 | DisableFastUpToDateCheck | Um valor booliano que se aplica apenas a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. O gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa um processo chamado FastUpToDateCheck para determinar se um projeto deve ser reconstruído para ser atualizado. Esse processo é mais rápido que usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar isso. Configurar a propriedade DisableFastUpToDateCheck para `true` permite ignorar o gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e forçá-lo a usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar se o projeto está atualizado. |
 | DocumentationFile | O nome do arquivo que é gerado como o arquivo de documentação XML. Esse nome inclui o nome de arquivo e não tem nenhuma informação de caminho. |
@@ -83,12 +83,13 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | OptionExplicit | Um valor booliano que, quando definido como `true`, exige a declaração explícita de variáveis no código-fonte. Essa propriedade é equivalente à opção do compilador `/optionexplicit`. |
 | OptionInfer | Um valor booliano que, quando definido como `true`, habilita a inferência de tipos de variáveis. Essa propriedade é equivalente à opção do compilador `/optioninfer`. |
 | OptionStrict | Um valor booliano que, quando definido como `true`, faz com que a tarefa de build para impor a semântica de tipo estrito restrinja conversões de tipo implícito. Essa propriedade é equivalente à opção `/optionstrict` do compilador *vbc.exe*. |
+| OutDir | Indica o local de saída final para o projeto ou solução. Ao criar uma solução, o OutDir pode ser usado para reunir várias saídas de projeto em um único local. Além disso, o OutDir está incluído em AssemblySearchPaths usado para resolver referências. Por exemplo, *bin\Debug*. |
 | OutputPath | Especifica o caminho para o diretório de saída, relativo ao diretório do projeto, por exemplo, *bin\Debug*. |
 | OutputType | Especifica o formato do arquivo de saída. Esse parâmetro pode ter um dos seguintes valores:<br /><br /> -   Library. Cria uma biblioteca de códigos. (Valor padrão.)<br />-   Exe. Crie um aplicativo de console.<br />-   Module. Cria um módulo.<br />-   Winexe. Cria um programa baseado em Windows.<br /><br /> Essa propriedade é equivalente à opção `/target` do compilador *vbc.exe*. |
 | OverwriteReadOnlyFiles | Um valor booliano que indica se você deseja habilitar o build para substituir arquivos somente leitura ou disparar um erro. |
 | PathMap | Especifica como mapear caminhos físicos para nomes de caminho de origem emitidos pelo compilador. Essa propriedade é equivalente à opção `/pathmap` do compilador *csc.exe*. |
 | PdbFile | O nome do arquivo *.pdb* que está sendo emitido. Essa propriedade é equivalente à opção `/pdb` do compilador *csc.exe*. |
-| Platform | O sistema operacional que você está compilando. Os valores válidos são "Any CPU", "x86" e "x64". |
+| Plataforma | O sistema operacional que você está compilando. Os valores válidos são "Any CPU", "x86" e "x64". |
 | ProduceReferenceAssembly | Um valor booliano que, quando definido como `true`, permite a produção de [assemblies de referência](/dotnet/standard/assembly/reference-assemblies) para o assembly atual. `Deterministic` deve ser `true` ao usar esse recurso. Essa propriedade corresponde à opção `/refout` dos compiladores *vbc.exe* e *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Um valor booliano que instrui o compilador a emitir apenas um assembly de referência ao invés do código compilado. Não pode ser usado em conjunto com `ProduceReferenceAssembly`.  Essa propriedade corresponde à opção `/refonly` dos compiladores *vbc.exe* e *csc.exe*. |
 | RemoveIntegerChecks | Um valor booliano que indica se é necessário desabilitar a verificação de erro de estouro de inteiro. O valor padrão é `false`. Essa propriedade é equivalente à opção `/removeintchecks` do compilador *vbc.exe*. |
@@ -124,11 +125,11 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Utf8Output | Um parâmetro booliano que, se `true`, registra a saída do compilador usando a codificação UTF-8. Esse parâmetro é equivalente à opção do compilador `/utf8Output`. |
 | VbcToolPath | Um caminho opcional que indica outro local para *vbc.exe* quando a versão atual de *vbc.exe* é substituída. |
 | VbcVerbosity | Especifica o nível de detalhes da saída do compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Os valores válidos são "Quiet," "Normal" (o valor padrão) ou "Verbose". |
-| VisualStudioVersion | Especifica a versão do Visual Studio sob a qual este projeto deve ser considerado para estar em execução. Se esta propriedade não for especificada, o MSBuild a definirá como um valor padrão razoável.<br /><br /> Essa propriedade é usada em vários tipos de projeto para especificar o conjunto de destinos que são usados para o build. Se `ToolsVersion` é definido como 4.0 ou superior para um projeto, `VisualStudioVersion` é usado para especificar o subconjunto de ferramentas que será usado. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md). |
+| VisualStudioVersion | Especifica a versão do Visual Studio sob a qual este projeto deve ser considerado para estar em execução. Se esta propriedade não for especificada, o MSBuild a definirá como um valor padrão razoável.<br /><br /> Essa propriedade é usada em vários tipos de projeto para especificar o conjunto de destinos que são usados para o build. Se `ToolsVersion` é definido como 4.0 ou superior para um projeto, `VisualStudioVersion` é usado para especificar o subconjunto de ferramentas que será usado. Para saber mais, veja [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md). |
 | WarningsAsErrors | Especifica uma lista de avisos a serem tratados como erros. Esse parâmetro é equivalente à opção do compilador `/warnaserror`. |
 | WarningsNotAsErrors | Especifica uma lista de avisos que não são tratados como erros. Esse parâmetro é equivalente à opção do compilador `/warnaserror`. |
 | Win32Manifest | O nome do arquivo de manifesto deve ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32Manifest`. |
 | Win32Resource | O nome do arquivo do recurso do Win32 a ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32resource`. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

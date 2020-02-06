@@ -1,6 +1,6 @@
 ---
 title: Noções sobre configurações de build
-ms.date: 11/04/2016
+ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269181"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027612"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
@@ -48,7 +48,7 @@ Você pode criar suas próprias configurações de compilação no nível da sol
 
 Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
 
-![Gerenciador de Configurações](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com as configurações para desenvolvedores do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -91,10 +91,10 @@ O Visual Studio usa os seguintes critérios para atribuir configurações de sol
 
 - Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>* .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Passo a passo: criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Noções básicas sobre plataformas de Build](understanding-build-platforms.md)
