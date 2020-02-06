@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826543"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027287"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -21,7 +21,7 @@ Este tutorial orienta você pelo uso do Visual Studio para publicar seu aplicati
 
 Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) antes de começar.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 Para concluir este tutorial:
 
@@ -29,7 +29,7 @@ Para concluir este tutorial:
 - Instale a última versão do [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com a carga de trabalho "ASP.NET e desenvolvimento para a Web"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com a ASP.net e a carga de trabalho de *desenvolvimento da Web* .
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com a carga de trabalho de *desenvolvimento Web e do ASP.NET*.
 ::: moniker-end
 - Instalar o [Docker desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -70,7 +70,7 @@ As etapas a seguir guiam você na criação de um aplicativo básico ASP.NET Cor
 
    ![Captura de tela das configurações de publicação](media/deploy-app-service/publish-app-service-linux2.png)
 
-1. Escolha **criar**. O contêiner é implantado no Azure no grupo de recursos e no registro de contêiner que você selecionou. Esse processo leva um pouco de tempo. Quando ela for concluída, a guia **publicar** mostrará informações sobre o que foi publicado, incluindo a URL do site.
+1. Escolha **Criar**. O contêiner é implantado no Azure no grupo de recursos e no registro de contêiner que você selecionou. Esse processo leva um pouco de tempo. Quando ela for concluída, a guia **publicar** mostrará informações sobre o que foi publicado, incluindo a URL do site.
 
    ![Captura de tela da guia publicar](media/deploy-app-service/publish-succeeded.PNG)
 
@@ -92,16 +92,16 @@ Você pode exibir as configurações do serviço de aplicativo implantado abrind
 
 A partir daí, você pode exibir as informações do contêiner, exibir ou baixar logs ou configurar a implantação contínua. Confira [Azure app CI/CD de implantação contínua do serviço](/azure/app-service/containers/app-service-linux-ci-cd).
 
-## <a name="clean-up-resources"></a>Limpar recursos
+## <a name="clean-up-resources"></a>Limpar os recursos
 
 Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **exibir** > outra **atividade de publicação da web**do **Windows** > e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
 
 No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto e escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre o [Azure app Service Linux](/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Implantar no registro de contêiner do Azure](hosting-web-apps-in-docker.md)

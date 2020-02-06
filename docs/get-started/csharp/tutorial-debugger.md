@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
-ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
+ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "77001519"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027248"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C# usando o Visual Studio
 
@@ -36,7 +36,7 @@ Neste tutorial, você irá:
 > * Inspecionar variáveis em dicas de dados e janelas do depurador
 > * Examinar a pilha de chamadas
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range=">=vs-2019"
 
@@ -98,7 +98,7 @@ Primeiro, você criará um projeto de aplicativo de console do .NET Core. O tipo
    > [!NOTE]
    > Se não vir o modelo **Aplicativo de Console (.NET Core)** , você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
 
-1. Na janela **configurar seu novo projeto** , digite ou digite *Get-Started-Debugging* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+1. Na janela **configurar seu novo projeto** , digite ou insira *GetStartedDebugging* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
 
    O Visual Studio abre seu novo projeto.
    
@@ -134,7 +134,7 @@ Primeiro, você criará um projeto de aplicativo de console do .NET Core. O tipo
 
 ## <a name="start-the-debugger"></a>Inicie o depurador.
 
-1. Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração") na barra de ferramentas Depurar.
+1. Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
 
      **F5** inicia o aplicativo com o depurador anexado ao processo do aplicativo, mas nós ainda não fizemos nada de especial para examinar o código. Portanto, o aplicativo apenas é carregado e a saída do console é exibida.
 
@@ -153,7 +153,7 @@ Primeiro, você criará um projeto de aplicativo de console do .NET Core. O tipo
 
      Neste tutorial, vamos analisar melhor esse aplicativo usando o depurador e analisar os recursos do depurador.
 
-2. Pare o depurador pressionando o botão vermelho parar ![parar depuração](../../debugger/media/dbg-tour-stop-debugging.png "Parar a depuração") (**Shift** + **F5**).
+2. Pare o depurador pressionando o botão vermelho parar ![parar depuração](../../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração") (**Shift** + **F5**).
 
 3. Na janela do console, pressione uma tecla para fechar a janela do console.
 
@@ -163,15 +163,15 @@ Primeiro, você criará um projeto de aplicativo de console do .NET Core. O tipo
 
     `name += letters[i];`
 
-    Um ponto de ![interrupção](../../debugger/media/dbg-breakpoint.png "Ponto de Interrupção") de círculo vermelho aparece onde você define o ponto de interrupção.
+    Um ponto de ![interrupção](../../debugger/media/dbg-breakpoint.png "Ponto de interrupção") de círculo vermelho aparece onde você define o ponto de interrupção.
 
     Os pontos de interrupção são um dos recursos mais básicos e essenciais da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
-2. Pressione **F5** ou o botão **Iniciar Depuração** ![inicie a depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração"), o aplicativo é iniciado e o depurador é executado na linha de código em que você define o ponto de interrupção.
+2. Pressione **F5** ou o botão **Iniciar Depuração** ![inicie a depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração"), o aplicativo é iniciado e o depurador é executado na linha de código em que você define o ponto de interrupção.
 
     ![Definir e atingir um ponto de interrupção](../csharp/media/get-started-set-breakpoint.png)
 
-    A seta amarela representa a instrução na qual o depurador ficou em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
+    A seta amarela representa a instrução na qual o depurador está em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
 
      Se o aplicativo ainda não estiver em execução, **F5** iniciará o depurador e o interromperá no primeiro ponto de interrupção. Caso contrário, **F5** continuará executando o aplicativo até o próximo ponto de interrupção.
 
@@ -203,7 +203,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
      Você deve voltar ao loop `for` no método `Main`, em pausa na chamada do método `SendMessage`.
 
-1. Pressione **F11** tempo até voltar para a chamada do método `SendMessage` novamente.
+1. Pressione **F11** várias vezes até voltar para a chamada do método `SendMessage` novamente.
 
 1. Enquanto estiver em pausa na chamada do método, pressione **F10** (ou escolha **Depurar > etapas**) uma vez.
 
@@ -213,7 +213,9 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
-1. No editor de código, role para baixo e passe o mouse sobre o método `Console.WriteLine` na mensagem `SendMessage` até que a **execução verde clique** no botão ![Executar para clicar](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") na esquerda. A dica de ferramenta para o botão mostra "Realizar a execução até aqui".
+1. Pressione **F5** para avançar para o ponto de interrupção novamente.
+
+1. No editor de código, role para baixo e passe o mouse sobre o método `Console.WriteLine` no método `SendMessage` até que a **execução verde clique** no botão ![Executar para](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") clicar em aparecer à esquerda. A dica de ferramenta para o botão mostra "Realizar a execução até aqui".
 
      ![Usar o recurso executar para clicar](../csharp/media/get-started-run-to-click.png "Executar com um Clique")
 
@@ -230,7 +232,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 Clique no botão **reiniciar** ![aplicativo de reinicialização](../../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
-Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é atingido pela execução do código.
+Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
 
 O depurador para novamente no ponto de interrupção que você definiu anteriormente dentro do loop de `for`.
 
@@ -264,7 +266,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 1. Expanda a variável `letters` para mostrar os elementos que ela contém.
 
-     ![Inspecionar variáveis na janela locais](../csharp/media/get-started-locals-window.png "A janela locais")
+     ![Inspecionar variáveis na janela locais](../csharp/media/get-started-locals-window.png "Janela Locais")
 
     A janela **Locais** mostra as variáveis que estão no [escopo](https://www.wikipedia.org/wiki/Scope_(computer_science)) atual, ou seja, o contexto de execução atual.
 
@@ -316,7 +318,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Parabéns por concluir este tutorial.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 

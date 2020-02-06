@@ -4,21 +4,21 @@ description: Descreve como melhorar sua capacidade de depurar e diagnosticar seu
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846938"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027301"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Como exibir e diagnosticar contêineres e imagens no Visual Studio
 
 Você pode exibir o que está acontecendo dentro dos contêineres que hospedam seu aplicativo usando a janela **contêineres** . Se você estiver acostumado a usar o prompt de comando para executar comandos do Docker para exibir e diagnosticar o que está acontecendo com seus contêineres, essa janela fornece uma maneira mais conveniente de monitorar seus contêineres sem sair do IDE do Visual Studio.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual studio 2019 versão 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou posterior, ou se você estiver usando uma versão anterior do Visual Studio 2019, instale a [extensão da janela contêineres](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
@@ -104,11 +104,11 @@ Você também pode exibir imagens no computador local usando a guia **imagens** 
 
 Para remover uma imagem, clique com o botão direito do mouse na imagem no modo de exibição de árvore e escolha **remover**ou selecione a imagem e use o botão **remover** na barra de ferramentas.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre as ferramentas de contêiner disponíveis no Visual Studio lendo a [visão geral das ferramentas de contêiner](overview.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Desenvolvimento de contêiner no Visual Studio](/visualstudio/containers)
 

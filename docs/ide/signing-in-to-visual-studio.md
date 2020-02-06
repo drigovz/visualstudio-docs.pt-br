@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845898"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027592"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -62,11 +62,11 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 1. Quando terminar, escolha **Salvar alterações**.
 
-## <a name="troubleshooting"></a>Solução de problemas
+## <a name="troubleshooting"></a>solução de problemas
 
 Se você encontrar problemas ao entrar, confira a página [Suporte para contas](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)

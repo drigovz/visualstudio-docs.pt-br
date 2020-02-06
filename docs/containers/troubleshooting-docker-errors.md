@@ -1,6 +1,6 @@
 ---
 title: Solução de problemas de erros de cliente do Docker no Windows | Microsoft Docs
-description: Solucionar problemas que você encontrar ao usar o Visual Studio para criar e implantar aplicativos Web no Docker no Windows usando o Visual Studio.
+description: Solucione os problemas encontrados na utilização do Visual Studio para criar e implantar aplicativos Web no Docker ou no Windows usando o Visual Studio.
 ms.technology: vs-azure
 author: ghogen
 manager: jillfra
@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923029"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027275"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Solucionar problemas de desenvolvimento do Visual Studio com o Docker
 
@@ -24,7 +24,7 @@ Quando você estiver trabalhando com as ferramentas de contêiner do Visual Stud
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Compartilhamento de volume não está habilitado. Habilite o compartilhamento de volume nas configurações do Docker CE para Windows (somente contêineres do Linux)
 
-Para resolver esse problema:
+Para resolver o problema:
 
 1. Clique com o botão direito do mouse em **Docker para Windows** na área de notificação e selecione **Configurações**.
 1. Selecione **Unidades Compartilhadas** e compartilhe a unidade do sistema junto com a unidade na qual o projeto reside.
