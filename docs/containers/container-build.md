@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916934"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027270"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Como o Visual Studio cria aplicativos em contêineres
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-As linhas no Dockerfile começam com a imagem do nano Server do registro de contêiner da Microsoft (mcr.microsoft.com) e criam uma imagem intermediária `base` que expõe as portas 80 e 443 e define o diretório de trabalho como `/app`.
+As linhas no Dockerfile começam com a imagem Debian do registro de contêiner da Microsoft (mcr.microsoft.com) e criam uma imagem intermediária `base` que expõe as portas 80 e 443 e define o diretório de trabalho como `/app`.
 
 O próximo estágio é `build`, que aparece da seguinte maneira:
 
@@ -64,7 +64,7 @@ O estágio final inicia novamente de `base`e inclui o `COPY --from=publish` para
 
 Se você quiser criar fora do Visual Studio, poderá usar `docker build` ou `MSBuild` para criar a partir da linha de comando.
 
-### <a name="docker-build"></a>docker build
+### <a name="docker-build"></a>Build do Docker
 
 Para criar uma solução em contêiner a partir da linha de comando, você geralmente pode usar o comando `docker build <context>` para cada projeto na solução. Você fornece o argumento de *contexto de compilação* . O *contexto de compilação* para um Dockerfile é a pasta no computador local que é usada como a pasta de trabalho para gerar a imagem. Por exemplo, é a pasta da qual você copia arquivos quando você copia para o contêiner.  Em projetos do .NET Core, use a pasta que contém o arquivo de solução (. sln).  Expresso como um caminho relativo, esse argumento normalmente é ".." para um Dockerfile em uma pasta de projeto e o arquivo de solução em sua pasta pai.  Para projetos .NET Framework, o contexto de compilação é a pasta do projeto, não a pasta da solução.
 
@@ -72,7 +72,7 @@ Para criar uma solução em contêiner a partir da linha de comando, você geral
 docker build -f Dockerfile ..
 ```
 
-### <a name="msbuild"></a>{1&gt;MSBuild&lt;1}
+### <a name="msbuild"></a>MSBuild
 
 Dockerfiles criados pelo Visual Studio para projetos de .NET Framework (e para projetos do .NET Core criados com versões do Visual Studio anteriores ao Visual Studio 2017 atualização 4) não são Dockerfiles de vários estágios.  As etapas nesses Dockerfiles não compilam seu código.  Em vez disso, quando o Visual Studio cria um .NET Framework Dockerfile, ele primeiro compila seu projeto usando o MSBuild.  Quando isso for executado com sucesso, o Visual Studio criará o Dockerfile, que simplesmente copia a saída da compilação do MSBuild para a imagem do Docker resultante.  Como as etapas para compilar seu código não estão incluídas no Dockerfile, você não pode criar .NET Framework Dockerfiles usando `docker build` da linha de comando. Você deve usar o MSBuild para compilar esses projetos.
 
@@ -144,7 +144,7 @@ Se sua configuração der suporte a compilações em contêiner e não contêine
 
 Para obter mais informações sobre como usar o SSL com aplicativos ASP.NET Core em contêineres, consulte [hospedando imagens ASP.NET Core com o Docker via HTTPS](/aspnet/core/security/docker-https)).
 
-## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+## <a name="debugging"></a>Depuração
 
 Ao criar na configuração de **depuração** , há várias otimizações que o Visual Studio faz para ajudar com o desempenho do processo de compilação para projetos em contêineres. O processo de compilação para aplicativos em contêineres não é tão simples quanto a simples seguir as etapas descritas no Dockerfile. A criação de um contêiner é muito mais lenta do que a criação no computador local.  Portanto, quando você cria a configuração de **depuração** , o Visual Studio realmente cria seus projetos no computador local e compartilha a pasta de saída para o contêiner usando a montagem de volume. Uma compilação com essa otimização habilitada é chamada de compilação de modo *rápido* .
 
@@ -185,12 +185,12 @@ O Visual Studio usa um ponto de entrada de contêiner personalizado dependendo d
 
 O ponto de entrada de contêiner só pode ser modificado em projetos de composição de Docker, não em projetos de contêiner único.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como personalizar ainda mais suas compilações definindo propriedades adicionais do MSBuild em seus arquivos de projeto. Consulte [Propriedades do MSBuild para projetos de contêiner](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [MSBuild](../msbuild/msbuild.md)
-[ Dockerfile em contêineres Linux do Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-[ no Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[Dockerfile em](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile) contêineres do Windows
+[Linux no Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)

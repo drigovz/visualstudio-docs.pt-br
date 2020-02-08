@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888637"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071941"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
@@ -91,7 +91,7 @@ Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. O
 > [!NOTE]
 > No momento, não damos suporte à criação de perfil de testes nem à cobertura de código.
 
-### <a name="run-tests-from-the-command-line"></a>Executar testes da linha de comando
+### <a name="run-tests-from-the-command-line"></a>Executar testes na linha de comando
 
 Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) do Visual Studio 2017 usando o seguinte comando:
 
@@ -99,7 +99,7 @@ Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tool
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-Esse comando mostra uma saída semelhante à seguinte:
+Esse comando exibe uma saída semelhante à seguinte:
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -173,3 +173,5 @@ Além das propriedades acima, também será necessário instalar o pacote [Micro
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+Algumas estruturas de teste podem exigir pacotes NPM adicionais para detecção de teste. Por exemplo, Jest requer o pacote Jest-editor-support NPM. Se necessário, verifique a documentação da estrutura específica.
