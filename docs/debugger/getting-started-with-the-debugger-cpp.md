@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027347"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091802"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C++ usando o Visual Studio
 
@@ -35,7 +35,7 @@ Neste tutorial, você irá:
 > * Inspecionar variáveis em dicas de dados e janelas do depurador
 > * Examinar a pilha de chamadas
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 ::: moniker range=">=vs-2019"
 
@@ -74,9 +74,11 @@ Primeiro, você criará um C++ projeto de aplicativo de console. O tipo de proje
 
 3. Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **Visual C++**  e escolha **área de trabalho do Windows**. No painel central, escolha **aplicativo de console do Windows**. Em seguida, nomeie o projeto de introdução à *depuração*.
 
-     Se você não vir o modelo de projeto de **aplicativo de console** , escolha o link **abrir instalador do Visual Studio** no painel esquerdo da caixa de diálogo **novo projeto** .
+     Se você não vir o modelo de projeto de **aplicativo de console** , escolha o link **abrir instalador do Visual Studio** no painel esquerdo da caixa de diálogo **novo projeto** . O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-     O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
+4. Clique em **OK**.
+
+   O Visual Studio abre seu novo projeto.
 
 ::: moniker-end
 
@@ -166,7 +168,7 @@ Primeiro, você criará um C++ projeto de aplicativo de console. O tipo de proje
 
     `name += letters[i];`
 
-    Um ponto de ![interrupção](../debugger/media/dbg-breakpoint.png "Ponto de interrupção") de círculo vermelho aparece onde você define o ponto de interrupção.
+    Um ponto de ![interrupção](../debugger/media/dbg-breakpoint.png "Ponto de Interrupção") de círculo vermelho aparece onde você define o ponto de interrupção.
 
     Os pontos de interrupção são um dos recursos mais básicos e essenciais da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
@@ -321,7 +323,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Parabéns por concluir este tutorial.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405206"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091776"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Criar exibições personalizadas C++ de objetos no depurador usando a estrutura Natvis
 
@@ -602,7 +602,7 @@ Por exemplo, o tipo de ponteiro inteligente `auto_ptr<vector<int>>` normalmente 
 </Type>
 ```
 
- ![expansão&#95;de&#60;ExpandedItem&#60;de&#62; &#62; vetor int de auto PTR](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "{1&gt;Expansão de ExpandedItem&lt;1}")
+ ![expansão&#95;de&#60;ExpandedItem&#60;de&#62; &#62; vetor int de auto PTR](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "Expansão de ExpandedItem")
 
 O exemplo a seguir mostra como agregar Propriedades da classe base em uma classe derivada. Suponha que a classe `CPanel` seja derivada de `CFrameworkElement`. Em vez de repetir as propriedades que vêm da classe base `CFrameworkElement`, a visualização `ExpandedItem` nó acrescenta essas propriedades à lista filho da classe `CPanel`.
 
@@ -690,3 +690,9 @@ Cada tipo definido no arquivo *. natvis* deve listar explicitamente qualquer vis
 É muito mais trabalho escrever um visualizador personalizado do que uma definição de Natvis XML, mas você está livre de restrições sobre o que o Natvis faz ou não dá suporte. Visualizadores personalizados têm acesso ao conjunto completo de APIs de extensibilidade do depurador, que podem consultar e modificar o processo de depuração ou se comunicar com outras partes do Visual Studio.
 
  Você pode usar os atributos `Condition`, `IncludeView`e `ExcludeView` nos elementos `CustomVisualizer`.
+
+ ## <a name="limitations"></a>Limitações
+
+As personalizações de Natvis funcionam com classes e estruturas, mas não com TYPEDEFs.
+
+O Natvis não oferece suporte a visualizadores para tipos primitivos (por exemplo, `int`, `bool`) ou para ponteiros para tipos primitivos. Nesse cenário, uma opção é usar o [especificador de formato](../debugger/format-specifiers-in-cpp.md) apropriado para seu caso de uso. Por exemplo, se você usar `double* mydoublearray` em seu código, poderá usar um especificador de formato de matriz na janela **Watch** do depurador, como a expressão `mydoublearray, [100]`, que mostra os primeiros 100 elementos.

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f717c4bdccd662764b73530d3ae416f8b95b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649284"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091750"
 ---
 # <a name="interoperability-warnings"></a>Avisos de interoperabilidade
 
@@ -35,7 +35,7 @@ Os avisos de interoperabilidade dão suporte à interação com clientes COM.
 | [CA1403: os tipos de layout automático não devem ser visíveis em COM](../code-quality/ca1403.md) | Um tipo de valor visível COM é marcado usando o atributo System. Runtime. InteropServices. StructLayoutAttribute definido como LayoutKind. auto. O layout desses tipos pode ser alterado entre as versões do .NET, o que interromperá clientes COM que esperam um layout específico. |
 | [CA1404: chamar GetLastError logo depois de P/Invoke](../code-quality/ca1404.md) | É feita uma chamada para o método Marshal. GetLastWin32Error ou o equivalente [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] função GetLastError, e a chamada imediatamente anterior não é um método de invocação de plataforma. |
 | [CA1405: os tipos base de tipo visível em COM devem ser visíveis em COM](../code-quality/ca1405.md) | Um tipo visível por COM deriva de um tipo que não é visível por COM. |
-| [CA1406: evitar argumentos Int64 para clientes do Visual Basic 6](../code-quality/ca1406.md) | Os clientes COM Visual Basic 6 não podem acessar os inteiros de 64 bits. |
+| [CA1406: evitar argumentos Int64 para clientes do Visual Basic 6](../code-quality/ca1406.md) | Os clientes COM do Visual Basic 6 não podem acessar inteiros de 64 bits. |
 | [CA1407: evitar membros estáticos em tipos visíveis em COM](../code-quality/ca1407.md) | COM não dá suporte para métodos estáticos. |
 | [CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408.md) | Tipos que usam uma interface dupla permitem que clientes sejam associados a um layout de interface específico. Todas as alterações feitas em uma versão futura do layout do tipo ou de qualquer tipo de base interromperão clientes COM associados à interface. Por padrão, se o atributo ClassInterfaceAttribute não for especificado, será usada uma interface somente de expedição. |
 | [CA1409: os tipos visíveis em Com devem ser criáveis](../code-quality/ca1409.md) | Um tipo de referência marcado especificamente como visível para COM contém um construtor parametrizado público, mas não contém um construtor padrão público (sem parâmetros). Um tipo sem um construtor padrão público não pode ser criado por clientes COM. |
