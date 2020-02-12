@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911568"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144792"
 ---
 # <a name="debugging-gpu-code"></a>Depurando código de GPU
 Você pode depurar código C++ que está sendo executado na unidade de processamento gráfico (GPU). O suporte à depuração de GPU no Visual Studio inclui a detecção de concorrência, início de processos e anexação a eles, e a integração nas janelas de depuração.
 
-## <a name="supported-platforms"></a>Plataformas compatíveis
- A depuração tem suporte no [!INCLUDE[win7](../debugger/includes/win7_md.md)], no [!INCLUDE[win8](../debugger/includes/win8_md.md)], no [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] e no [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Para depurar no emulador de software, é necessário o [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Para depurar no hardware, você deve instalar os drivers para a sua placa gráfica. Nem todos os fornecedores de hardware implementam todos os recursos do depurador. Consulte a documentação do fornecedor para conhecer as restrições.
+## <a name="supported-platforms"></a>Plataformas com suporte
+ Há suporte para a depuração em [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10, [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] e Windows Server 2016. Para a depuração no emulador de software, [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10 ou [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], o Windows Server 2016 é necessário. Para depurar no hardware, você deve instalar os drivers para a sua placa gráfica. Nem todos os fornecedores de hardware implementam todos os recursos do depurador. Consulte a documentação do fornecedor para conhecer as restrições.
 
 > [!NOTE]
 > Fornecedores de hardware independentes que desejam oferecer suporte à depuração de GPU no Visual Studio devem criar uma DLL que implementa a interface do VSD3DDebug e destinam-se a seus próprios drivers.
@@ -65,7 +65,7 @@ Você pode depurar código C++ que está sendo executado na unidade de processam
 ## <a name="troubleshooting"></a>Solução de problemas
 
 ### <a name="specifying-an-accelerator"></a>Especificando um acelerador
- Os pontos de interrupção no código de GPU serão atingidos apenas se o código estiver em execução no acelerador [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Se você não especificar um acelerador em seu código, o acelerador REF será selecionado automaticamente como o **Tipo de Acelerador de Depuração** nas propriedades do projeto. Se seu código selecionar explicitamente um acelerador, o acelerador REF não será usado durante a depuração e os pontos de interrupção não serão atingidos a menos que seu hardware de GPU tiver suporte à depuração. Você pode solucionar isso escrevendo seu código de forma que use um acelerador REF durante a depuração. Para obter mais informações, consulte Propriedades do projeto e [uso de objetos Accelerator e accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) e [configurações C++ de projeto para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Os pontos de interrupção no código de GPU serão atingidos apenas se o código estiver em execução no acelerador [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Se você não especificar um acelerador em seu código, o acelerador REF será selecionado automaticamente como o **Tipo de Acelerador de Depuração** nas propriedades do projeto. Se seu código selecionar explicitamente um acelerador, o acelerador REF não será usado durante a depuração e os pontos de interrupção não serão atingidos a menos que seu hardware de GPU tiver suporte à depuração. Você pode solucionar isso escrevendo seu código de forma que use um acelerador REF durante a depuração. Para obter mais informações, consulte Project Properties e [using Accelerator and Accelerator_view Objects](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) and [Project Settings C++ for a Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Pontos de interrupção condicionais
  Os pontos de interrupção condicionais no código de GPU têm suporte, mas nem todas as expressões podem ser avaliadas no dispositivo. Quando uma expressão não pode ser avaliada no dispositivo, ela será avaliada no depurador. O depurador provavelmente será executado com mais lentidão do que no dispositivo.

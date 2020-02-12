@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587271"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144768"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Visão geral dos analisadores de código-fonte
 
@@ -28,7 +28,7 @@ Os analisadores de código do .NET Compiler Platform ("Roslyn" C# ) inspecionam 
 - Você pode instalar analisadores adicionais como um pacote NuGet ou uma extensão do Visual Studio. Por exemplo:
 
   - [Analisadores do FxCop](../code-quality/install-fxcop-analyzers.md), analisadores de qualidade de código recomendados pela Microsoft
-  - Analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - Analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 Se violações de regra forem encontradas por um analisador, elas serão relatadas no editor de códigos (como um *rabisco* no código incorreto) e na janela de lista de erros.
 
@@ -73,7 +73,7 @@ Os analisadores de código Roslyn podem ser instalados por projeto por meio de u
 
 Se você instalar analisadores como uma extensão do Visual Studio, eles serão aplicados no nível da solução e em todas as instâncias do Visual Studio. Se você instalar os analisadores como um pacote NuGet, que é o método preferencial, eles serão aplicáveis somente ao projeto em que o pacote NuGet foi instalado. Em ambientes de equipe, os analisadores instalados como pacotes NuGet estão no escopo para *todos os desenvolvedores* que trabalham nesse projeto.
 
-### <a name="build-errors"></a>Erros de build
+### <a name="build-errors"></a>Erros de compilação
 
 Para que as regras sejam impostas no tempo de build, incluindo por meio da linha de comando ou como parte de uma build de CI (integração contínua), instale os analisadores como um pacote NuGet. Os erros e avisos do analisador não serão exibidos no relatório de build se você instalar os analisadores como uma extensão.
 
@@ -93,7 +93,7 @@ Você não pode configurar a severidade de regras de analisadores que foram inst
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)

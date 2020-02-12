@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406713"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125358"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -59,7 +59,7 @@ Há muitas refatorações novas e altamente úteis no C# que facilitam a organiz
 
    ![Animação da nova experiência de refatorações do Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Basta invocar as refatorações pressionando **Ctrl+** e selecionar a ação desejada.
+Basta invocar as refatorações pressionando **Ctrl+.** e selecionar a ação desejada.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -114,13 +114,13 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 
 Para obter mais informações, consulte a postagem no blog [anunciando o .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Colaboração
+## <a name="collaborate"></a>Colaborar
 
 Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Tamanho do vídeo: 4,22 minutos*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>Fluxo de trabalho na nuvem
+### <a name="git-first-workflow"></a>Fluxo de trabalho do git-First
 
 Você observará a nova janela de início quando abrir o Visual Studio 2019.
 
@@ -218,7 +218,7 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 * Se você tiver um travamento, uma falha ou outro problema de desempenho, você poderá compartilhar facilmente conosco as etapas de reprodução e os arquivos de suporte usando a ferramenta [Relatar um Problema](how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)

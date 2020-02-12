@@ -2,7 +2,7 @@
 title: Modificar o Visual Studio
 titleSuffix: ''
 description: Saiba como modificar o Visual Studio, passo a passo.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922887"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125345"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -124,6 +124,9 @@ Veja como.
 
  As cargas de trabalho contêm os recursos necessários para a linguagem de programação ou plataforma que você está usando. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
 
+ > [!TIP]
+>Para obter mais informações sobre quais pacotes de ferramentas e componentes são necessários para o desenvolvimento, consulte [cargas de trabalho do Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
+
 1. No na Instalador do Visual Studio, escolha a guia **cargas de trabalho** e, em seguida, marque ou desmarque as cargas de trabalho desejadas.
 
     ![Caixa de diálogo de instalação do Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Escolha uma carga de trabalho no Visual Studio 2019")
@@ -153,7 +156,7 @@ Por padrão, o instalador corresponde ao idioma do sistema operacional quando el
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Lista de IDs de componente e carga de trabalho do Visual Studio](workload-and-component-ids.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

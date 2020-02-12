@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091929"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144784"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Gerar código-fonte de assemblies do .NET durante a depuração
 
@@ -80,8 +80,27 @@ Ao depurar o código que foi descompilado de um assembly que foi compilado usand
 - Os pontos de interrupção nem sempre podem ser associados ao local de fornecimento correspondente.
 - A depuração pode nem sempre passar para o local correto.
 - As variáveis locais podem não ter nomes precisos.
+- Algumas variáveis podem não estar disponíveis para avaliação.
 
 Mais detalhes podem ser encontrados no problema do GitHub: [integração do IChsarpCompiler. decompilador ao depurador do vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="decompilation-reliability"></a>Confiabilidade de descompilação
+
+Uma porcentagem relativamente pequena de tentativas de descompilação pode resultar em falha. Isso ocorre devido a um erro de referência nula de ponto de sequência em ILSpy.  Reduzimos a falha ao detectar esses problemas e, normalmente, falha na tentativa de descompilação.
+
+Mais detalhes podem ser encontrados no problema do GitHub: [integração do IChsarpCompiler. decompilador ao depurador do vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="limitations-with-async-code"></a>Limitações com código assíncrono
+
+Os resultados de descompilação de módulos com padrões de código Async/Await podem estar incompletos ou falhar inteiramente. A implementação ILSpy de Async/Await e yield State-Machines é implementada apenas parcialmente. 
+
+Mais detalhes podem ser encontrados no problema do GitHub: [status do gerador de PDB](https://github.com/icsharpcode/ILSpy/issues/1422).
+
+### <a name="just-my-code"></a>{1&gt;Apenas Meu Código&lt;1}
+
+As configurações de [apenas meu código (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permitem que o Visual Studio Percorra o sistema, a estrutura, a biblioteca e outras chamadas que não são de usuário. Durante uma sessão de depuração, a janela **módulos** mostra quais módulos de código o depurador está tratando como meu código (código do usuário).
+
+A descompilação de módulos otimizados ou de versão produz código que não é de usuário. Se o depurador interromper o código de não-usuário descompilado, por exemplo, a janela **nenhuma fonte** será exibida. Para desabilitar Apenas Meu Código, navegue até **ferramentas** > **Opções** (ou **depure** > **Opções**) > **depuração** > **geral**e, em seguida, desmarque **habilitar apenas meu código**.
 
 ### <a name="extracted-sources"></a>Fontes extraídas
 
