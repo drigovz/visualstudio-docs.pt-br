@@ -5,18 +5,18 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 01/31/2020
+ms.date: 02/11/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 978ea63149223738e39be7035b5af6a5f7087591
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 5be0303d89ba33a56c22f8a149e42c107094a04b
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922927"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155209"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -28,6 +28,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.5 | Versão | 11 de fevereiro de 2020 | 16.4.29806.167 |
 | 16.4.4 | Versão | 31 de janeiro de 2020 | 16.4.29728.190 |
 | 16.5.0 | Preview 2 | 22 de janeiro de 2020 | 16.5.29721.120 |
 | 16.4.3 | Versão | 14 de janeiro de 2020 | 16.4.29709.97 |
@@ -122,6 +123,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.20 | Versão | 11 de fevereiro de 2020 | 15.9.28307.1033 |
 | 15.9.19 | Versão | 14 de janeiro de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Versão | 11 de dezembro de 2019 | 15.0.26228.102 |
 | 15.9.18 | Versão | 10 de dezembro de 2019 | 15.9.28307.960 |
