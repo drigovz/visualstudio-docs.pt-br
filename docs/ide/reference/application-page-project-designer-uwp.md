@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114396"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173083"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
 
@@ -38,7 +38,7 @@ Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.
 
 **Informações do Assembly**&mdash;Este botão exibe a [caixa de diálogo Informações do Assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifesto do Pacote**&mdash;Este botão abre o designer de manifesto. O designer de manifesto também pode ser acessado escolhendo o arquivo _Package.appxmanifest_ no **Gerenciador de Soluções**. Para saber mais, confira [Configurar um pacote com o designer de manifesto](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifesto do Pacote**&mdash;Este botão abre o designer de manifesto. O designer de manifesto também pode ser acessado escolhendo o arquivo _Package.appxmanifest_ no **Gerenciador de Soluções**. Para saber mais, confira [Configurar um pacote com o designer de manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Seção de direcionamento
 
@@ -46,7 +46,7 @@ Você pode definir a versão de destino e a versão mínima do Windows 10 para s
 
 Para obter informações sobre o direcionamento de plataforma no Visual Studio, confira [Direcionamento de plataforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar seu primeiro aplicativo UWP](/windows/uwp/get-started/your-first-app)
 - [Escolher uma versão de UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)
