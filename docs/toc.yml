@@ -64,7 +64,7 @@
               href: install/automated-installation-with-response-file.md
             - name: Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
-            - name: Definir padrões para implantações empresariais do Visual Studio
+            - name: Definir padrões para implantações corporativas do Visual Studio
               href: install/set-defaults-for-enterprise-deployments.md
             - name: Implantar o Help Viewer
               items:
@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Inverter instrução if
                   href: ide/reference/invert-if-statement.md
+                - name: Opções de refatoração de função local estática
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Mover declaração para perto da referência
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Mover o tipo para o arquivo correspondente
@@ -581,7 +583,7 @@
           items:
             - name: Visão geral do Designer de Formulários do Windows
               href: designers/windows-forms-designer-overview.md
-            - name: introdução ao Designer de Formulários do Windows
+            - name: Introdução ao Designer de Formulários do Windows
               href: designers/walkthrough-windows-forms-designer.md
             - name: Organizar controles >>
               href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
@@ -684,7 +686,7 @@
               items:
                 - name: Trabalhar com texturas e imagens
                   href: designers/working-with-textures-and-images.md
-                - name: Editor de imagem
+                - name: Editor de imagens
                   href: designers/image-editor.md
                 - name: Exemplos de editor de imagens
                   items:
@@ -756,7 +758,7 @@
                   href: designers/how-to-export-a-texture-that-contains-mipmaps.md
                 - name: Exportar uma textura que tenha o alfa pré-multiplicado
                   href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
-                - name: exportar uma textura para uso com aplicativos Direct2D ou JavaScript
+                - name: Exportar uma textura para uso com aplicativos Direct2D ou JavaScript
                   href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
         - name: Arquivos XAML >>
           href: xaml-tools/index.yml
@@ -941,7 +943,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Comando Alias
           href: ide/reference/alias-command.md
-        - name: comando Avaliar Instrução
+        - name: Comando Avaliar Instrução
           href: ide/reference/evaluate-statement-command.md
         - name: Comando Localizar
           href: ide/reference/find-command.md
@@ -1028,7 +1030,7 @@
           href: ide/reference/miscellaneous-files.md
         - name: Opções
           items:
-            - name: caixa de diálogo Opções
+            - name: Caixa de diálogo Opções
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Ambiente
               items:
@@ -1178,7 +1180,7 @@
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
-        - name: janela Saída
+        - name: Janela de Saída
           href: ide/reference/output-window.md
         - name: Propriedades do projeto
           items:
@@ -1247,7 +1249,7 @@
               href: ide/reference/signing-page-project-designer.md
         - name: 'Páginas de Propriedade, JavaScript'
           href: ide/reference/property-pages-javascript.md
-        - name: Janela de Propriedades
+        - name: Janela Propriedades
           href: ide/reference/properties-window.md
         - name: Referência do Team Explorer
           href: ide/reference/team-explorer-reference.md
@@ -1367,17 +1369,17 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Novidades no Visual Studio 2019
       href: ide/whats-new-visual-studio-2019.md
-    - name: Notas de versão e requisitos do sistema
+    - name: Notas sobre a versão e requisitos do sistema
       items:
         - name: Ritmo de lançamento
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: Notas de versão atuais
+            - name: Notas sobre a versão atuais
               href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: Notas de versão da versão prévia
+            - name: Notas sobre a versão prévia
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: Histórico de notas de versão
+            - name: Histórico de notas sobre a versão
               href: /visualstudio/releasenotes/vs2017-relnotes-history/
             - name: Código distribuível
               href: /visualstudio/productinfo/2017-redistribution-vs/
@@ -1387,11 +1389,11 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: Notas de versão atuais
+            - name: Notas sobre a versão atual
               href: /visualstudio/releases/2019/release-notes/
-            - name: Notas de versão da versão prévia
+            - name: Notas sobre a versão prévia
               href: /visualstudio/releases/2019/release-notes-preview/
-            - name: Histórico de notas de versão
+            - name: Histórico de notas sobre a versão
               href: /visualstudio/releases/2019/release-notes-history/
             - name: Código distribuível
               href: /visualstudio/releases/2019/redistribution/
@@ -1432,5 +1434,5 @@
           href: ide/report-a-problem-perfview.md
     - name: Sugerir um recurso
       href: ide/suggest-a-feature.md
-    - name: Privacidade de dados da Comunidade de Desenvolvedores
+    - name: Privacidade de dados da Developer Community
       href: ide/developer-community-privacy.md
