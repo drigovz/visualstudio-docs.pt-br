@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706996"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192410"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -50,23 +50,23 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 7. Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
 
-8. É só isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+8. É isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
 ## <a name="eligibility"></a>Elegibilidade
 
-|                          Nível de Assinatura                          |     Canais      |    Benefícios do    |   Renovável?   |
+|                          Nível de Assinatura                          |     Canais      |    Benefício    |   Renovável?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   Seis meses    | Sim<sup>2</sup> |
-|          Visual Studio Enterprise com GitHub Enterprise          | VL  |   Seis meses    | Sim<sup>2</sup> |
+|          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 meses    | Sim<sup>2</sup> |
+|          Visual Studio Enterprise com GitHub Enterprise          | VL  |   6 meses    | Sim<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 meses    | Sim<sup>2</sup> |
 |         Visual Studio Professional com GitHub Enterprise          | VL  |   3 meses    | Sim<sup>2</sup> |
-|              Visual Studio Test Professional (Padrão)              |    VL, Retail     |   3 meses    | Sim<sup>2</sup>  |
-|                      Plataformas MSDN (Padrão)                       |    VL, Retail     |   3 meses    | Sim<sup>2</sup>  |
+|              Visual Studio Test Professional (Padrão)              |    VL, Retail     |   Não disponível    | NA  |
+|                      Plataformas MSDN (Padrão)                       |    VL, Retail     |   Não disponível    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) |       Azure       | Não disponível |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Não disponível |       NA       |
 ||
 
-<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, MVP (Most Valuable Professional), RD (regional Director), Microsoft Partner Network (MPN), FTE, imagine.*
+<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), BizSpark, MCT software & Services Developer, MCT software &AMP; Service, MVP (Most Valuable Professional), RD (regional Director), Microsoft Partner Network (MPN), FTE, imagine.*
 
 <sup>2</sup>  *o benefício da Pluralsight nas assinaturas do Visual Studio selecionadas renova quando sua assinatura renova. Por exemplo, se você tiver uma assinatura anual renovada a cada ano, o benefício estará disponível a cada ano quando você renovar. Se você tiver uma assinatura de vários anos, o benefício da Pluralsight estará disponível para você uma vez durante o período da assinatura.  Se você renovar uma assinatura de vários anos, o benefício estará disponível novamente após a renovação.*
 
