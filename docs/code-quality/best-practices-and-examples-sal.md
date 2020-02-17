@@ -2,24 +2,24 @@
 title: Práticas recomendadas e exemplos (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789790"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265143"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de aproveitar ao máximo a SAL (linguagem de anotação de código-fonte) e evitar alguns problemas comuns.
 
 ## <a name="_in_"></a>\_In\_
 
-Se a função deve gravar no elemento, use `_Inout_` em vez de `_In_`. Isso é particularmente relevante em casos de conversão automatizada de macros antigas para SAL. Antes do SAL, muitos programadores usaram macros como comentários — macros nomeadas `IN`, `OUT`, `IN_OUT`ou variantes desses nomes. Embora seja recomendável converter essas macros em SAL, também recomendamos que você tenha cuidado ao convertê-las porque o código pode ter sido alterado desde que o protótipo original foi escrito e a macro antiga pode não refletir mais o que o código faz. Tenha cuidado especialmente com a macro de comentário `OPTIONAL` porque ela é freqüentemente colocada incorretamente — por exemplo, no lado errado de uma vírgula.
+Se a função deve gravar no elemento, use `_Inout_` em vez de `_In_`. Isso é particularmente relevante em casos de conversão automatizada de macros antigas para SAL. Antes do SAL, muitos programadores usaram macros como comentários — macros nomeadas `IN`, `OUT`, `IN_OUT`ou variantes desses nomes. Embora seja recomendável converter essas macros em SAL, também recomendamos que você tenha cuidado ao convertê-las porque o código pode ter sido alterado desde que o protótipo original foi escrito e a macro antiga pode não refletir mais o que o código faz. Tenha cuidado especialmente com a macro de comentário `OPTIONAL` porque ela é colocada incorretamente, por exemplo, no lado errado de uma vírgula.
 
 ```cpp
 
@@ -63,7 +63,7 @@ void Func2(_Out_ int *p1)
 
 ## <a name="_pre_defensive_-and-_post_defensive_"></a>\_pré\_\_ defensiva e \_postar\_defensiva\_
 
-Se uma função aparecer em um limite de confiança, recomendamos que você use a anotação `_Pre_defensive_`.  O modificador "defensiva" modifica certas anotações para indicar que, no ponto de chamada, a interface deve ser marcada estritamente, mas no corpo da implementação, ela deve assumir que os parâmetros incorretos podem ser passados. Nesse caso, `_In_ _Pre_defensive_` é preferencial em um limite de confiança para indicar que, embora um chamador receba um erro se ele tentar passar NULL, o corpo da função será analisado como se o parâmetro fosse nulo e qualquer tentativa de fazer referência ao ponteiro sem primeiro a verificação de NULL será sinalizada.  Uma anotação `_Post_defensive_` também está disponível, para uso em retornos de chamada, em que a parte confiável é considerada como o chamador e o código não confiável é o código chamado.
+Se uma função aparecer em um limite de confiança, recomendamos que você use a anotação `_Pre_defensive_`.  O modificador "defensiva" modifica certas anotações para indicar que, no ponto de chamada, a interface deve ser marcada estritamente, mas no corpo da implementação, ela deve assumir que os parâmetros incorretos podem ser passados. Nesse caso, `_In_ _Pre_defensive_` é preferencial em um limite de confiança para indicar que, embora um chamador receba um erro se ele tentar passar NULL, o corpo da função será analisado como se o parâmetro fosse nulo e qualquer tentativa de fazer a referência ao ponteiro sem primeiro verificá-lo como NULL será sinalizada.  Uma anotação `_Post_defensive_` também está disponível, para uso em retornos de chamada, em que a parte confiável é considerada como o chamador e o código não confiável é o código chamado.
 
 ## <a name="_out_writes_"></a>\_\_gravações\_
 
@@ -126,7 +126,7 @@ void Func1(_In_ WCHAR* wszFileName);
 void Func2(_In_ PWSTR wszFileName);
 ```
 
-A especificação apropriada de terminação nula não é comum. Use a versão `STR` apropriada para substituir o tipo, conforme mostrado no exemplo a seguir.
+A especificação apropriada de terminação nula não é comum. Use a versão de `STR` apropriada para substituir o tipo, conforme mostrado no exemplo a seguir.
 
 ```cpp
 
