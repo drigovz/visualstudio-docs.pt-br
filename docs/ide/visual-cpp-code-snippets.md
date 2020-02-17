@@ -2,19 +2,19 @@
 title: Snippets de código do Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461631"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277834"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
 
@@ -52,7 +52,7 @@ Para usar um snippet de código para envolver o código selecionado, selecione u
 
 - Usando o teclado, pressione: **Ctrl**+**K**+**S**
 
-Selecione **#if**. Você deve ver algo parecido com isso:
+Selecione **#if**. Você deverá ver algo assim:
 
 ```cpp
 #if 0
@@ -170,6 +170,6 @@ Se você tentar inserir o snippet de destruidor fora de uma classe, ele fornecer
 {
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../ide/code-snippets.md)

@@ -2,17 +2,17 @@
 title: Configurar um projeto do C++ para o IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748589"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279320"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
@@ -76,7 +76,7 @@ Os erros de analisador de marca são exibidos na janela **Lista de Erros**.
 
 Para verificar se o compilador do IntelliSense está usando as opções adequadas do compilador, incluindo os caminhos de inclusão e os macros pré-processadores, ative o Log de diagnóstico das linhas de comando do IntelliSense em **Ferramentas > Opções > Editor de texto > C/C++ > Avançado > Log de diagnóstico**. Defina como True **Habilitar registro em log**, 5 (mais detalhado) para **Nível de log** e 8 (registro em log do IntelliSense) para **Filtro de registro em log**.
 
-A Janela de Saída passará a mostrar as linhas de comando que são passadas para o compilador do IntelliSense. Veja um exemplo de saída:
+A Janela de Saída passará a mostrar as linhas de comando que são passadas para o compilador do IntelliSense. Aqui está uma amostra de saída:
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32

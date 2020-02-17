@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585438"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278523"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -57,7 +57,7 @@ Você pode executar a maior parte do trabalho de encontrar, organizar e executar
 ### <a name="run-tests"></a>Executar testes
 
 ::: moniker range="vs-2017"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Siga um destes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
@@ -70,7 +70,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 A **barra de aprovação/reprovação** na parte superior da janela do **Gerenciador de Testes** é animada conforme os testes são executados. Na conclusão da execução de teste, a **barra de aprovação/reprovação** ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Siga um destes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
 - Para executar todos os testes de uma solução, escolha o ícone **Executar Todos**.
 
@@ -83,7 +83,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 ::: moniker range="vs-2017"
-|Botão|Descrição|
+|Botão|DESCRIÇÃO|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -151,22 +151,22 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
 ::: moniker range="vs-2017"
-|Grupo|Descrição|
+|Agrupar|DESCRIÇÃO|
 |-|-----------------|
-|**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
+|**Duration**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
 |**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Agrupa teste por nome dos projetos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Grupo|Descrição|
+|Agrupar|DESCRIÇÃO|
 |-|-----------------|
-|**Duração**|Agrupa testes por tempo de execução: **rápido**, **médio**e **lento**.|
-|**Estado**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
+|**Duration**|Agrupa testes por tempo de execução: **rápido**, **médio**e **lento**.|
+|**State**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
 |**Estrutura de destino** | Agrupa testes pela estrutura de seus projetos de destino |
 |**Namespace**|Agrupa testes pelo namespace contido.|
 |**Projeto**|Agrupa testes pelo projeto contido.|
-|**Class**|Agrupa testes pela classe contida.|
+|**Classe**|Agrupa testes pela classe contida.|
 ::: moniker-end
 
 ### <a name="traits"></a>Características
@@ -177,7 +177,7 @@ Uma característica é geralmente um par de nome/valor de categoria, mas também
 
 Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, você define um par nome/valor de característica no atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. A estrutura de teste também contém essas características predefinidas:
 
-|Característica|Descrição|
+|Característica|DESCRIÇÃO|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
@@ -266,26 +266,26 @@ Para filtrar por um critério diferente:
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
 ::: moniker range="vs-2017"
-|Qualificador|Descrição|
+|Qualificador|DESCRIÇÃO|
 |-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
-|**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
+|**Caminho do Arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Saída**|Procura as mensagens de erro definidas pelo usuário que são gravadas para a saída padrão (stdout) ou erro padrão (stderr). A sintaxe para especificar mensagens de saúde é definida pela estrutura de teste de unidade.|
 |**Resultado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualificador|Descrição|
+|Qualificador|DESCRIÇÃO|
 |-|-----------------|
-|**Estado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
+|**State**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
 |**Estrutura de destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Namespace**|Pesquisa os namespaces de teste para encontrar correspondências.|
-|**Class**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
+|**Classe**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
 ::: moniker-end
 
 Para excluir um subconjunto dos resultados de um filtro, use a seguinte sintaxe:
@@ -300,7 +300,7 @@ Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes 
 
 Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
-1. {1&gt;No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar. &lt;1}
+1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
 
     > [!NOTE]
     > {1&gt;Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.&lt;1}
@@ -311,7 +311,7 @@ Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração 
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de desempenho do método de teste
 
-Para diagnosticar por que um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Analisar o Teste Selecionado** no menu de clique com o botão direito. Consulte [Gerenciador de Desempenho](../profiling/performance-explorer.md).
+Para diagnosticar por que um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Analisar o Teste Selecionado** no menu de clique com o botão direito. Consulte [relatório de criação de perfil de instrumentação](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analisar a cobertura de código de teste de unidade
 
@@ -345,7 +345,7 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 
 Os testes podem ser executados no Gerenciador de testes clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os atalhos padrão do [Gerenciador de testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
 
-|Comandos frequentes| Atalhos de teclado|
+|Comandos frequentes| Atalhos do teclado|
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
@@ -355,7 +355,7 @@ Os testes podem ser executados no Gerenciador de testes clicando com o botão di
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)

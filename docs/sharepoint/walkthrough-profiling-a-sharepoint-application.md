@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189129"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277654"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Walkthrough: criar perfil de um aplicativo do SharePoint
   Este tutorial mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que degrada o desempenho do receptor de evento de recurso. O criador de perfil do Visual Studio permite que você localize e elimine a parte mais cara (com desempenho mais lento) do projeto, também conhecida como o *caminho quente*.
 
  Este tutorial demonstra as seguintes tarefas:
 
-- [Addg um receptor de evento e](#add-a-feature-and-feature-event-receiver)recurso.
+- [Adicione um receptor de evento de recurso e recurso](#add-a-feature-and-feature-event-receiver).
 
 - [Configure e implante o aplicativo do SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -38,18 +38,18 @@ ms.locfileid: "73189129"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - Edições com suporte do Microsoft Windows e do SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Criar um projeto do SharePoint
  Primeiro, crie um projeto do SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Para criar um projeto do SharePoint
 
-1. Na barra de menus, escolha **arquivo**  > **novo** **projeto** de  >  para exibir a caixa de diálogo **novo projeto** .
+1. Na barra de menus, escolha **arquivo** > **novo** **projeto** de > para exibir a caixa de diálogo **novo projeto** .
 
 2. Expanda o nó do **SharePoint** sob o  **C# Visual** ou **Visual Basic**e escolha o nó **2010** .
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189129"
 
     No momento, você só pode criar o perfil de soluções de farm. Para obter mais informações sobre soluções em área restrita versus soluções de farm, consulte [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Escolha o botão **concluir** . O projeto aparece no **Gerenciador de soluções**.
+7. Escolha o botão **Concluir** . O projeto aparece no **Gerenciador de soluções**.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Adicionar um receptor de evento de recurso e recurso
  Em seguida, adicione um recurso ao projeto junto com um receptor de evento para o recurso. Esse receptor de evento conterá o código a ser criado para o perfil.
@@ -186,7 +186,7 @@ ms.locfileid: "73189129"
 
      A seleção dessa configuração de implantação permite que você ative manualmente o recurso mais tarde no SharePoint.
 
-9. Salvar o projeto.
+9. Salve o projeto.
 
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Configurar e implantar o aplicativo do SharePoint
  Agora que o projeto do SharePoint está pronto, configure-o e implante-o no servidor do SharePoint.
@@ -260,7 +260,7 @@ ms.locfileid: "73189129"
 
 1. No código do receptor de evento de recurso, comente a chamada do método `TimeCounter` em `FeatureActivated` para impedir que ela seja chamada.
 
-2. Salvar o projeto.
+2. Salve o projeto.
 
 3. No **Gerenciador de desempenho**, abra a pasta destinos e escolha o nó **ProfileTest** .
 
@@ -272,8 +272,7 @@ ms.locfileid: "73189129"
 
      O recurso deve ser ativado muito mais rapidamente agora que a chamada para o loop ocioso foi eliminada. O relatório de criação de perfil de exemplo deve refletir isso.
 
-## <a name="see-also"></a>Consulte também
-- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Confira também
 - [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
 - [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)
 - [Encontre afunilamentos de aplicativos com o criador de perfil do Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)

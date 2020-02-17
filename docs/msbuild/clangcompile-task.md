@@ -13,26 +13,26 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ClangCompile task
 - ClangCompile task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747336"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275469"
 ---
 # <a name="clangcompile-task"></a>Tarefa ClangCompile
 
 Encapsula a ferramenta de C++ compilador da Microsoft, Clang. exe.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **ClangCompile**.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parâmetro opcional **String[]** .<br/><br/>Especifica um ou mais diretórios a serem adicionados ao caminho de inclusão, separados por ponto e vírgula no caso de mais de um.<br/><br/>Use `-I[path]`.|
 |**AdditionalOptions**|Parâmetro **string** opcional.|
@@ -64,11 +64,11 @@ A tabela a seguir descreve os parâmetros da tarefa **ClangCompile**.
 |**PrecompiledHeaderFile**|Parâmetro **string** opcional.<br/><br/>Especifica o nome do arquivo de cabeçalho a ser usado para o arquivo de cabeçalho pré-compilado. Esse arquivo também será adicionado a **Arquivos de Inclusão Forçados** durante o build.|
 |**PrecompiledHeaderOutputFileDirectory**|Parâmetro **string** opcional.<br/><br/>Especifica o diretório para o cabeçalho pré-compilado gerado. Este diretório também será adicionado a **Diretórios de Inclusão Adicionais** durante o build.|
 |**PrecompiledHeaderCompileAs**|Parâmetro **string** opcional.<br/><br/>Selecione a opção de linguagem de compilação para o arquivo de cabeçalho pré-compilado.<br/><br/>Use `-x c-header`, `-x c++-header`.|
-|**PreprocessorDefinitions**|Parâmetro opcional **String[]** .<br/><br/>Define símbolos de pré-processamento para o arquivo de origem.<br/><br/>Use `-D`.|
+|**PreprocessorDefinitions**|Parâmetro opcional **String[]** .<br/><br/>Defina símbolos de pré-processamento para seu arquivo de origem.<br/><br/>Use `-D`.|
 |**RuntimeLibrary**|Parâmetro **string** opcional.<br/><br/>Especifique a biblioteca de runtime para vinculação.<br/><br/>Use as opções `MSVC /MT`, `/MTd`, `/MD`, `/MDd`.<br/><br/>**MultiThreaded**, faz com que seu aplicativo utilize a versão multithread e estática da biblioteca em tempo de execução.<br/>**MultiThreadedDebug**, define _DEBUG e _MT. Essa opção também faz com que o compilador coloque o nome da biblioteca LIBCMTD.lib no arquivo .obj para que o vinculador use LIBCMTD.lib para resolver símbolos externos.<br/>**MultiThreadedDLL**, faz com que o aplicativo use a versão específica de multithread e a versão específica de DLL da biblioteca em tempo de execução. Define _MT e _DLL e faz com que o compilador coloque o nome da biblioteca MSVCRT.lib no arquivo .obj.<br/>**MultiThreadedDebugDLL**, define _DEBUG, _MT e _DLL e faz com que o aplicativo use a versão específica de multithread e a versão específica de DLL da biblioteca em tempo de execução. Também faz com que o compilador coloque o nome da biblioteca MSVCRTD.lib no arquivo .obj.|
 |**RuntimeTypeInfo**|Parâmetro opcional **bool**.<br/><br/>Adiciona um código para verificar os tipos de objeto C++ no runtime (informações de tipo de runtime).<br/><br/>Use `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Parâmetro opcional **bool**.<br/><br/>Gera uma lista de arquivos de inclusão com a saída do compilador.<br/><br/>Use `-H`.|
-|**Sources**|Parâmetro obrigatório **ITaskItem[]** .|
+|**Fontes**|Parâmetro obrigatório **ITaskItem[]** .|
 |**StrictAliasing**|Parâmetro opcional **bool**.<br/><br/>Considere as regras de alias mais rígidas. Um objeto de um tipo nunca será considerado como residente do mesmo endereço que um objeto de um tipo diferente.|
 |**Sysroot**|Parâmetro **string** opcional.<br/><br/>Caminho da pasta para o diretório raiz para cabeçalhos e bibliotecas.|
 |**TargetArch**|Parâmetro **string** opcional.<br/><br/>Arquitetura de Destino.|
@@ -79,9 +79,9 @@ A tabela a seguir descreve os parâmetros da tarefa **ClangCompile**.
 |**UndefineAllPreprocessorDefinitions**|Parâmetro opcional **bool**.<br/><br/>Exclua as definições de todos os valores do pré-processador definidos anteriormente.<br/><br/>Use `-undef`.|
 |**UseMultiToolTask**|Parâmetro opcional **bool**.<br/><br/>Compilação de multiprocessador.|
 |**UseShortEnums**|Parâmetro opcional **bool**.<br/><br/>O tipo enum usa somente o número de bytes exigido pelo conjunto de entrada de valores possíveis.|
-|**Verbose**|Parâmetro opcional **bool**.<br/><br/>Mostrar os comandos a serem executados e usar a saída detalhada.|
+|**Detalhado**|Parâmetro opcional **bool**.<br/><br/>Mostrar os comandos a serem executados e usar a saída detalhada.|
 |**WarningLevel**|Parâmetro **string** opcional.<br/><br/>Selecione o rigor que você deseja que o compilador aplique aos erros de código. Outros sinalizadores devem ser adicionados diretamente às **Opções Adicionais** (se `/w`, `/Weverything`).<br/><br/>**TurnOffAllWarnings**, desabilita todos os avisos do compilador (use `w`).<br/>**EnableAllWarnings**, habilita todos os avisos, incluindo os que estão desabilitados por padrão (use `Wall`).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)
