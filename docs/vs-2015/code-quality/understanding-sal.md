@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278445"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Noções básicas sobre SAL  
  O SAL define quatro tipos básicos de parâmetros, que são categorizados por padrão de uso.  
   
-|Categoria|Anotação de parâmetro|Descrição|  
+|Categoria|Anotação de parâmetro|DESCRIÇÃO|  
 |--------------|--------------------------|-----------------|  
 |**Entrada para a função chamada**|`_In_`|Os dados são passados para a função chamada e são tratados como somente leitura.|  
 |**Entrada para a função chamada e saída para o chamador**|`_Inout_`|Os dados utilizáveis são passados para a função e potencialmente são modificados.|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  Esta seção mostra exemplos de código para as anotações SAL básicas.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Usando a ferramenta de análise de Visual Studio Code para encontrar defeitos  
- Nos exemplos, a ferramenta de análise de Visual Studio Code é usada junto com anotações SAL para encontrar defeitos de código. Veja a seguir como fazer isso.  
+ Nos exemplos, a ferramenta de análise de Visual Studio Code é usada junto com anotações SAL para encontrar defeitos de código. Veja como fazer isso.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Para usar as ferramentas de análise de código do Visual Studio e o SAL  
   
@@ -411,7 +411,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>Recursos relacionados  
  [Blog da equipe de análise de código](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Usando anotações de sal para reduzir os defeitosC++ de C/código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)   
  [Comportamento de função de anotação](../code-quality/annotating-function-behavior.md)   

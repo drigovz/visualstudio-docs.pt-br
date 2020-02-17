@@ -1,6 +1,6 @@
 ---
 title: Introdução ao teste de unidade
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596470"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279323"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -26,16 +26,18 @@ Esta seção descreve, em um alto nível, como criar um projeto de teste de unid
 
 1. Abra o projeto que você deseja testar no Visual Studio.
 
-   Para fins de demonstração em um exemplo de teste de unidade, este artigo testa um projeto "Olá, Mundo" simples. O código do exemplo para um projeto desse tipo é o seguinte:
+   Para fins de demonstração de um exemplo de teste de unidade, este artigo testa um projeto simples de "Olá, Mundo" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **Arquivo** > **Adicionar** > **Novo Projeto**.
@@ -70,14 +72,48 @@ Esta seção descreve, em um alto nível, como criar um projeto de teste de unid
 
 1. Adicione código ao método de teste de unidade.
 
-   ![Adicionar código ao método de teste de unidade no Visual Studio](media/vs-2019/unit-test-method.png)
+   Por exemplo, para um projeto de teste MSTest ou NUnit, você pode usar o código a seguir.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > Confira uma explicação mais detalhada da criação de testes de unidade em [Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
-1. Abra o [Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) escolhendo **Teste** > **Windows** > **Gerenciador de Testes** na barra de menus superior.
+1. Abra o [Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
+
+   ::: moniker range=">=vs-2019"
+   Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador de testes** na barra de menus superior.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Para abrir o Gerenciador de testes, escolha **testar** > o **Windows** > **Test Explorer** na barra de menus superior.
+   ::: moniker-end
 
 1. Execute seus testes de unidade clicando em **Executar Tudo**.
 
@@ -174,7 +210,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)

@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), FXC task
 - FXC task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747333"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279291"
 ---
 # <a name="fxc-task"></a>Tarefa FXC
 
@@ -53,7 +53,7 @@ A tabela a seguir descreve os parâmetros da tarefa **FXC**.
 |**SetRootSignature**|Parâmetro **string** opcional.<br/><br/>Anexe a assinatura raiz ao código de bytes do sombreador. Disponível para Shader Model 5.0 e posterior.<br/><br/>Use `/setrootsignature`.|
 |**ShaderModel**|Parâmetro **string** opcional.<br/><br/>Especifica o modelo de sombreador. Alguns tipos de sombreador podem ser usados apenas com modelos de sombreador recentes.<br/><br/>Use `/T [type]_[model]`.|
 |**ShaderType**|Parâmetro **string** opcional.<br/><br/>Especifica o tipo de sombreador.<br/><br/>Use `/T [type]_[model]`.<br/><br/>**Effect**, use `fx`.<br/>**Vertex**, use `vs`.<br/>**Pixel**, use `ps`.<br/>**Geometry**, use `gs`.<br/>**Hull**, use `hs`.<br/>**Domain**, use `ds`.<br/>**Compute**, use `cs`.<br/>**Library**, use `lib`.<br/>**RootSignature**, gere o Objeto de Assinatura Raiz.|
-|**Source**|Parâmetro obrigatório **ITaskItem**.|
+|**Origem**|Parâmetro obrigatório **ITaskItem**.|
 |**SuppressStartupBanner**|Parâmetro opcional **bool**.<br/><br/>Suprime a exibição da faixa de inicialização e das mensagens informativas.<br/><br/>Use `/nologo`.|
 |**TrackerLogDirectory**|Parâmetro **string** opcional.|
 |**TreatWarningAsError**|Parâmetro opcional **bool**.<br/><br/>Trata todos os avisos do compilador como erros.<br/><br/>Para um novo projeto, talvez seja melhor usar `/WX` em todas as compilações. Resolver todos os avisos assegurará o menor número possível de defeitos de código difíceis de localizar.|

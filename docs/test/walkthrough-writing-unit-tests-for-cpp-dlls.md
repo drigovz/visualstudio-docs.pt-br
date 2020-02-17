@@ -1,20 +1,20 @@
 ---
-title: 'Como: Escrever testes de unidade para DLLs C++'
+title: Como gravar testes de unidade para DLLs em C++
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+author: corob-msft
+ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661902"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275429"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Como: Escrever testes de unidade para DLLs C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Como gravar testes de unidade para DLLs em C++
 
 Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a metodologia de teste primeiro. As etapas básicas são as seguintes:
 
@@ -38,8 +38,8 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-     **Visual Studio 2017 e versões anteriores**: Expanda **Instalado** > **Modelos** > **Visual C++**  > **Teste**.
-     **Visual Studio 2019**: Defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa.
+     **Visual Studio 2017 e anterior**: expanda **modelos** de > **instalados** > **teste**do **Visual C++**  > .
+     **Visual Studio 2019**: defina o idioma C++ como e digite "teste" na caixa de pesquisa.
 
      Escolha o modelo de **Projeto de Teste de Unidade Nativo** ou qualquer estrutura instalada de sua preferência. Se você escolher outro modelo, como Google Test ou Boost.Test, os princípios básicos são os mesmos, embora alguns detalhes serão diferentes.
 
@@ -53,7 +53,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
     - Cada teste é definido usando `TEST_METHOD(YourTestName){...}`.
 
-         Você não precisa gravar uma assinatura de função convencional. A assinatura é criada pela macro TEST_METHOD. A macro gera uma função de instância que retorna void. Também gera uma função estática que retorna informações sobre o método de teste. Essas informações permitem que o Gerenciador de Testes encontrem o método.
+         Você não precisa gravar uma assinatura de função convencional. A assinatura é criada pela macro TEST_METHOD. A macro gera uma função de instância que retorna void. Também gera uma função estática que retorna informações sobre o método de teste. Essas informações permitem que o Gerenciador de Testes localize o método.
 
     - Os métodos de teste são agrupados em classes usando `TEST_CLASS(YourClassName){...}`.
 
@@ -61,7 +61,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 3. Verifique se o testes são executados no Gerenciador de Testes:
 
-    1. Insira algum código de teste:
+    1. {1&gt;Insira algum código de teste:&lt;1}
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -88,7 +88,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2019.
 
-1. Crie um projeto C++ usando o **Assistente de área de trabalho do Windows**: Clique com o botão direito do mouse no nome da solução em **Gerenciador de Soluções** e escolha **Adicionar** > **Novo projeto**. Defina a **Linguagem de programação** como C++ e, em seguida, digite "windows" na caixa de pesquisa. Escolha **Assistente de área de trabalho do Windows** na lista de resultados.
+1. Criar um C++ projeto usando o **Assistente de área de trabalho do Windows**: clique com o botão direito do mouse no nome da solução em **Gerenciador de soluções** e escolha **Adicionar** > **novo projeto**. Defina a **Linguagem de programação** como C++ e, em seguida, digite "windows" na caixa de pesquisa. Escolha **Assistente de área de trabalho do Windows** na lista de resultados.
 
      Nestas instruções passo a passo, o projeto é chamado `RootFinder`.
 
@@ -192,11 +192,11 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
     ![Gerenciador de Testes de Unidade &#8211; Teste básico aprovado](../test/media/utecpp10.png)
 
-   Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
+   Você configurou o teste e os projetos de código e verificou que pode executar testes que executam funções no projeto de código. Agora você pode começar a escrever testes e códigos reais.
 
 ## <a name="iterate"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados
 
-1. Adicione um novo teste:
+1. {1&gt;Adicione um novo teste:&lt;1}
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -213,7 +213,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
     > [!TIP]
     > É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.
     >
-    > Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.
+    > Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar um por vez da mesma maneira incremental.
 
 2. Compile a solução e, em seguida, no **Gerenciador de Testes**, escolha **Executar Todos**.
 
@@ -222,7 +222,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
      ![Falha de RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.
+    > Verifique se cada teste falha imediatamente após escrevê-los. Isso ajuda a evitar o erro comum de escrever um teste que nunca falha.
 
 3. Aprimore o código DLL para que o novo teste seja aprovado:
 
@@ -250,7 +250,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
      ![Gerenciador de Testes de Unidade &#8211; Teste de intervalo aprovado](../test/media/utecpp12.png)
 
     > [!TIP]
-    > Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.
+    > Desenvolva o código adicionando um teste de cada vez. Verifique se todos os testes são aprovados após cada iteração.
 
 ## <a name="debug"></a> Depurar um teste que falhou
 
@@ -295,13 +295,13 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
      ![Falha de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4. Para ver o motivo da falha do teste, percorra a função:
+4. {1&gt;Para ver o motivo da falha do teste, percorra a função:&lt;1}
 
     1. Defina o ponto de interrupção no início da função SquareRoot.
 
     2. No menu de atalho do teste com falha, escolha **Depurar Testes Selecionados**.
 
-         Quando a execução for interrompida no ponto de interrupção, percorra o código.
+         {4&gt;Quando a execução for interrompida no ponto de interrupção, percorra o código.&lt;4}
 
 5. Insira o código na função que você está desenvolvendo:
 
@@ -319,7 +319,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
     ```
 
-6. Todos os testes agora foram aprovados.
+6. {1&gt;Todos os testes agora foram aprovados.&lt;1}
 
    ![Todos os testes serão aprovados](../test/media/ute_ult_alltestspass.png)
 
@@ -366,7 +366,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
    Você também pode exigir um nível mínimo de cobertura de código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar testes de unidade a aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

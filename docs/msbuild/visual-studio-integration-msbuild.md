@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594416"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277708"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.
@@ -83,7 +83,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 - As condições listadas na seção [Compiladores em processo](#in-process-compilers) devem ser cumpridas.
 
-## <a name="build-solutions"></a>Soluções de compilação
+## <a name="build-solutions"></a>Compilar soluções
  Dentro do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], as ordens do arquivo de solução e do build de projeto são controladas pelo próprio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ao compilar uma solução com o *msbuild.exe* na linha de comando, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analisa o arquivo de solução e ordena os builds de projeto. Em ambos os casos, os projetos são compilados individualmente em ordem de dependência e as referências projeto a projeto não são percorridas. Por outro lado, quando projetos individuais são compilados com o *msbuild.exe*, as referências projeto a projeto são percorridas.
 
  Ao compilar em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a propriedade `$(BuildingInsideVisualStudio)` será definida como `true`. Isso pode ser usado no projeto ou em arquivos *.targets* para fazer com que o build se comporte de maneira diferente.
@@ -111,6 +111,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+> [!NOTE]
+> Os metadados de `Visible` são ignorados por C++ **Gerenciador de soluções** para projetos. Os itens sempre serão mostrados mesmo se `Visible` estiver definido como false.
+
  Os itens declarados em arquivos importados para o projeto não serão exibidos por padrão. Os itens criados durante o processo de build nunca serão exibidos no **Gerenciador de Soluções**.
 
 ## <a name="conditions-on-items-and-properties"></a>Condições em itens e propriedades
@@ -120,7 +123,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  As expressões condicionais de itens sempre serão ignoradas com a finalidade de decidir se o item deve ser exibido no **Gerenciador de Soluções**.
 
-## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+## <a name="debugging"></a>Depuração
  Para localizar e iniciar o assembly de saída e anexar o depurador, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] precisa que as propriedades `OutputPath`, `AssemblyName` e `OutputType` estejam definidas corretamente. Não será possível anexar o depurador se o processo de build não fizer com que o compilador gere um arquivo *.pdb*.
 
 ## <a name="design-time-target-execution"></a>Execução de destino do tempo de design
@@ -180,7 +183,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Iniciar um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Registrar extensões do .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)

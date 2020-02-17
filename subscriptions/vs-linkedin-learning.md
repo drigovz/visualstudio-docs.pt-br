@@ -3,15 +3,15 @@ title: Benefício do LinkedIn Learning em assinaturas do Visual Studio | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 02/12/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099641"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278842"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -22,7 +22,7 @@ Assinaturas selecionadas do Visual Studio incluem uma assinatura do LinkedIn Pre
 
 ## <a name="activation-steps"></a>Etapas de ativação
 Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning:
-1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do LinkedIn Learning na categoria Educação e clique no link **Obter código**.
    > [!div class="mx-imgBorder"]
@@ -49,7 +49,7 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 
 12. Com base nas preferências e informações pessoais que fornecidas até agora, você verá uma seleção de conexões recomendadas para começar a criar sua rede.  Você pode optar por adicionar conexões ou ignorar esta etapa.
 
-13. Para adicionar uma foto ao seu perfil, clique em **Carregar foto**.  Caso contrário, ignore esta etapa.  Sempre é possível adicionar uma foto mais tarde.
+13. Para adicionar uma foto ao seu perfil, clique em **Carregar foto**.  Caso contrário, ignore essa etapa.  Sempre é possível adicionar uma foto mais tarde.
 
 14. É possível baixar o aplicativo do LinkedIn para o seu celular, para ter acesso à sua rede em qualquer lugar.  É possível enviar um link para seu celular ou baixar diretamente na App Store ou no Google Play.  Também é possível clicar em **Próximo** par ignorar esta etapa agora e baixar o aplicativo mais tarde.
 
@@ -66,16 +66,16 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![Página inicial do LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | Seis meses       |  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Professional com GitHub Enterprise | VL | 3 meses      | Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Nº  Disponível apenas para novos assinantes         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              | Nº  Disponível apenas para novos assinantes         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Não.  Disponível apenas para novos assinantes         |
+| Visual Studio Professional com GitHub Enterprise | VL | 3 meses      | Não.  Disponível apenas para novos assinantes         |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA         |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
 <sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP).  Exclui: Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark, imagine, profissional mais valioso (MVP), diretor regional (RD).  MCT software & Services.*

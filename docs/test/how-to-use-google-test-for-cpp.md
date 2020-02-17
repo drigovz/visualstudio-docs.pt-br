@@ -3,17 +3,17 @@ title: Como usar o Google Test para C++
 description: Use o Google Test para criar testes de unidade do C++ no Visual Studio.
 ms.date: 05/06/2017
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: corob-msft
+ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926747"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279302"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Como usar o Google Test para C++ no Visual Studio
 
@@ -25,7 +25,7 @@ No Visual Studio 2017 e versões posteriores, o Google Test está integrado ao I
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Adicionar um projeto do Google Test no Visual Studio 2019
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **Novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **novo projeto**.
 2. Defina **Linguagem de programação** como **C++** e digite **teste** na caixa de pesquisa. Na lista de resultados, escolha **Projeto do Google Test**.
 3. Dê um nome ao projeto de teste e clique em **OK**.
 
@@ -37,8 +37,8 @@ No Visual Studio 2017 e versões posteriores, o Google Test está integrado ao I
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Adicionar um projeto do Google Test no Visual Studio 2017
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **Novo projeto**.
-2. No painel esquerdo, escolha **Visual C++** > **Teste** e, em seguida, escolha **Projeto do Google Test** no painel central.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **novo projeto**.
+2. No painel esquerdo, escolha **teste** do  **C++ Visual** > e, em seguida, escolha **Google Test projeto** no painel central.
 3. Dê um nome ao projeto de teste e clique em **OK**.
 
 ![Novo projeto do Google Test](media/cpp-gtest-new-project.png)

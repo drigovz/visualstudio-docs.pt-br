@@ -9,22 +9,22 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201430"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277890"
 ---
 # <a name="demo-sample"></a>Amostra de demonstração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Analisando código C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:  
+Os procedimentos a seguir mostram como criar o exemplo para [explicação: analisando C/C++ Code quanto a defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:  
   
-- Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução chamada CppDemo.  
+- Uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chamada CppDemo.  
   
 - Um projeto de biblioteca estática denominado CodeDefects.  
   
@@ -66,7 +66,7 @@ Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Anal
   
 3. Na caixa **Nome**, digite **Bug.cpp** e clique em **Adicionar**.  
   
-4. Copie o código a seguir e cole-o na **Bug.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie o código a seguir e cole-o no arquivo **bug. cpp** no editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Anal
   
 7. Na caixa **Nome**, digite **Bug.cpp** e clique em **Adicionar**.  
   
-8. Copie o código a seguir e cole-o no arquivo Bug.h do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie o código a seguir e cole-o no arquivo Bug. h no editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Anal
   
 3. Na caixa de texto **Nome**, digite **annotations.h** e clique em **Adicionar**.  
   
-4. Copie o código a seguir e cole-o na **annotations.h** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie o código a seguir e cole-o no arquivo **Annotations. h** no editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Anal
   
 7. Na caixa de texto **Nome**, digite **annotations.cpp** e clique em **Adicionar**.  
   
-8. Copie o código a seguir e cole-o na **annotations.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie o código a seguir e cole-o no arquivo **Annotations. cpp** no editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

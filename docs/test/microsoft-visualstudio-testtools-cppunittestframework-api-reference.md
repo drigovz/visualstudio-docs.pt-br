@@ -2,23 +2,23 @@
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 09/27/2019
 ms.topic: reference
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - multiple
-author: mikeblome
-ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720509"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278655"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::CppUnitTestFramework`. Use essas APIs para gravar testes de unidade do C++ com base em Microsoft Native Unit Test Framework. Há um [Exemplo de Uso](#example) no final do tópico.
 
-Os arquivos de cabeçalho e lib estão localizados na *pasta de instalação do \<Visual Studio > \VC\Auxiliary\VS\UnitTest*.
+Os arquivos de cabeçalho e lib estão localizados em *\<pasta de instalação do Visual Studio > \VC\Auxiliary\VS\UnitTest*.
 
 Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de teste nativo.
 
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)

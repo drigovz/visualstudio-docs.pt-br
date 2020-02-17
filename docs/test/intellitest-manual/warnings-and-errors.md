@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112536"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275441"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112536"
 * **Solução de restrição**
   * [Não é Possível Concretizar a Solução](#cannot-concretize-solution)
 
-* **Domínios**
+* **Domínios ou tempo de execução**
   * [Precisa de Ajuda para Construir o Objeto](#help-construct)
   * [Precisa de Ajuda para Encontrar Tipos](#help-types)
   * [Tipo Utilizável Estimado](#usable-type-guessed)
@@ -254,7 +254,7 @@ Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam
 
 O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Quando um tipo é abstrato ou uma interface, o IntelliTest deve escolher uma implementação específica desse tipo. Para fazer essa escolha, é necessário saber quais são os tipos existentes.
 
-Quando este aviso é exibido, ele indica que o IntelliTest procurava algum dos assemblies referenciados e encontrou um tipo de implementação, mas não tem certeza de se ele deve usar esse tipo ou se já tipos mais adequados disponíveis em outro lugar. IntelliTest simplesmente escolhe um tipo que pareceu promissor.
+Quando esse aviso é mostrado, ele indica que o IntelliTest examinou alguns dos assemblies referenciados e encontrou um tipo de implementação, mas não tem certeza se ele deve usar esse tipo ou se há mais tipos apropriados disponíveis em outro lugar. IntelliTest simplesmente escolhe um tipo que pareceu promissor.
 
 Para evitar este aviso, você pode aceitar a escolha de tipo do IntelliTest ou ajudar o IntelliTest no uso de outros tios adicionando um [PexUseType](attribute-glossary.md#pexusetype) correspondente.
 
@@ -301,7 +301,7 @@ O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execu�
 Esse aviso aparece porque, durante a execução do seu caso de teste, foi chamado um método que se comporta de forma não determinística ou interage com o ambiente. Os exemplos são métodos de **System.Random** e **System.IO.File**. Se quiser que o IntelliTest crie entradas de teste significativas, você deverá simular os métodos que o IntelliTest sinaliza como problemas de capacidade de teste.
 
 <a name="limitation"></a>
-## <a name="limitation"></a>Limitação
+## <a name="limitation"></a>Limitações
 
 O IntelliTest [gera as entradas de teste](input-generation.md) usando um [solver de restrição](input-generation.md#constraint-solver).
 No entanto, existem algumas operações que estão além do escopo do [solver de restrição](input-generation.md#constraint-solver).
