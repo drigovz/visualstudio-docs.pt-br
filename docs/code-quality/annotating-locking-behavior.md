@@ -27,17 +27,17 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ae15230557ee0c415082f981a7ad3588694eadea
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265127"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma disciplina de bloqueio apropriada e use anotações SAL.
@@ -117,7 +117,7 @@ Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam s
 |`_Swaps_locks_(left, right)`|Descreve o comportamento de `swap` padrão, que pressupõe que os objetos `left` e `right` trocam seu estado. O estado trocado inclui a contagem de bloqueios e o destino de alias, se houver. Os aliases que apontam para os objetos `left` e `right` permanecem inalterados.|
 |`_Detaches_lock_(detached, lock)`|Descreve um cenário no qual um tipo de wrapper de bloqueio permite dissociação com seu recurso contido. Isso é semelhante a como `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extraem o ponteiro e deixem seu contêiner de ponteiro inteligente em um estado limpo. A lógica semelhante é suportada pelo `std::unique_lock` e pode ser implementada em invólucros de bloqueio personalizados. O bloqueio desanexado mantém seu estado (contagem de bloqueios e destino de alias, se houver), enquanto o wrapper é redefinido para conter zero contagem de bloqueios e nenhum destino de alias, enquanto retém seus próprios aliases. Não há nenhuma operação em contagens de bloqueio (liberando e adquirindo). Essa anotação se comporta exatamente como `_Moves_lock_`, exceto pelo fato de que o argumento desanexado deve ser `return` em vez de `this`.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Noções básicas de SAL](../code-quality/understanding-sal.md)
