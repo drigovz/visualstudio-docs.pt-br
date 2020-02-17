@@ -2,17 +2,17 @@
 title: Como testar uma C++ dll para aplicativos UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748083"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77274450"
 ---
 # <a name="how-to-test-a-c-dll"></a>Como testar uma C++ dll
 
@@ -48,11 +48,11 @@ Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** >
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Observe que:
+     {1&gt;Observe que:&lt;1}
 
     - Cada teste é definido usando `TEST_METHOD(YourTestName){...}`.
 
-         Você não precisa gravar uma assinatura de função convencional. A assinatura é criada pela macro TEST_METHOD. A macro gera uma função de instância que retorna void. Também gera uma função estática que retorna informações sobre o método de teste. Essas informações permitem que o Gerenciador de Testes encontrem o método.
+         Você não precisa gravar uma assinatura de função convencional. A assinatura é criada pela macro TEST_METHOD. A macro gera uma função de instância que retorna void. Também gera uma função estática que retorna informações sobre o método de teste. Essas informações permitem que o Gerenciador de Testes localize o método.
 
     - Os métodos de teste são agrupados em classes usando `TEST_CLASS(YourClassName){...}`.
 
@@ -60,7 +60,7 @@ Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** >
 
 ## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes
 
-1. Insira algum código de teste:
+1. {1&gt;Insira algum código de teste:&lt;1}
 
     ```cpp
     TEST_METHOD(TestMethod1)
@@ -122,7 +122,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
      A classe `CRooterLib` declara um construtor e o método avaliador `SqareRoot`.
 
-3. Adicione o símbolo ROOTERLIB_EXPORTS à linha de comando.
+3. {1&gt;Adicione o símbolo ROOTERLIB_EXPORTS à linha de comando.&lt;1}
 
     1. No **Gerenciador de Soluções**, escolha o projeto **RooterLib** e, em seguida, escolha **Propriedades** no menu de atalho.
 
@@ -150,7 +150,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
 ## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Tornar as funções de dll visíveis para o código de teste
 
-1. Adicione RooterLib ao projeto RooterLibTests.
+1. {1&gt;Adicione RooterLib ao projeto RooterLibTests.&lt;1}
 
    1. No **Gerenciador de Soluções**, escolha o projeto **RooterLibTests** e, em seguida, escolha **Adicionar** > **Referência** no menu de atalho.
 
@@ -186,7 +186,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
    }
    ```
 
-4. Compile a solução.
+4. {1&gt;Compile a solução.&lt;1}
 
     O novo teste é exibido no **Gerenciador de Testes**, no nó **Não Executar Testes**.
 
@@ -194,11 +194,11 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
     ![Êxito no Teste básico](../test/media/ute_cpp_testexplorer_basictest.png)
 
-   Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
+   Você configurou o teste e os projetos de código e verificou que pode executar testes que executam funções no projeto de código. Agora você pode começar a escrever testes e códigos reais.
 
 ## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados
 
-1. Adicione um novo teste:
+1. {1&gt;Adicione um novo teste:&lt;1}
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -217,18 +217,19 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
     > [!TIP]
     > É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.
     >
-    > Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.
+    > Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar um por vez da mesma maneira incremental.
 
 2. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-3. O teste falhará.
+3. {1&gt;O teste falha.&lt;1}
 
      ![Falha de RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.
+    > Verifique se cada teste falha imediatamente após escrevê-los. Isso ajuda a evitar o erro comum de escrever um teste que nunca falha.
 
-4. Aprimore o código sob teste para que o novo teste seja aprovado. Adicione o seguinte ao *RooterLib.cpp*:
+4. {1&gt;&lt;1}
+  Aprimore o código em teste para que o novo teste seja aprovado. Adicione o seguinte ao *RooterLib.cpp*:
 
     ```cpp
     #include <math.h>
@@ -254,7 +255,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
      Ambos os testes são aprovados.
 
 > [!TIP]
-> Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.
+> Desenvolva o código adicionando um teste de cada vez. Verifique se todos os testes são aprovados após cada iteração.
 
 ## <a name="Debug_a_failing_test"></a> Depurar um teste que falhou
 
@@ -291,17 +292,17 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
 2. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-    O teste falhará. Escolha o nome do teste no **Gerenciador de Testes**. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do **Gerenciador de Testes**.
+    {1&gt;O teste falha.&lt;1} Escolha o nome do teste no **Gerenciador de Testes**. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do **Gerenciador de Testes**.
 
     ![Falha de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-3. Para ver o motivo da falha do teste, percorra a função:
+3. {1&gt;Para ver o motivo da falha do teste, percorra a função:&lt;1}
 
    1. Defina o ponto de interrupção no início da função `SquareRoot`.
 
    2. No menu de atalho do teste com falha, escolha **Depurar Testes Selecionados**.
 
-        Quando a execução for interrompida no ponto de interrupção, percorra o código.
+        {4&gt;Quando a execução for interrompida no ponto de interrupção, percorra o código.&lt;4}
 
    3. Adicione código ao *RooterLib.cpp* para capturar a exceção:
 
@@ -321,7 +322,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
    1. No **Gerenciador de Testes**, escolha **Executar Tudo** para testar o método corrigido e ter certeza de que você não introduziu uma regressão.
 
-   Todos os testes agora foram aprovados.
+   {1&gt;Todos os testes agora foram aprovados.&lt;1}
 
    ![Todos os testes serão aprovados](../test/media/ute_ult_alltestspass.png)
 
@@ -339,6 +340,6 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 2. Escolha **Executar Tudo** para testar o método refatorado e ter certeza de que você não introduziu uma regressão.
 
     > [!TIP]
-    > Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.
+    > {1&gt;Um conjunto estável de testes de unidade aprovados garante que você não tenha introduzido bugs ao alterar o código.&lt;1}
     >
     > Mantenha a refatoração separada das outras alterações.

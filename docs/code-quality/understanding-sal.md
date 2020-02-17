@@ -3,17 +3,17 @@ title: Noções básicas de SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807096"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271828"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 
@@ -45,7 +45,7 @@ Você pode dizer o que essa função faz? Quando uma função é implementada ou
 
 A documentação contém alguns bits de informações que sugerem que seu código tem de manter determinadas propriedades para garantir a exatidão do programa:
 
-- `memcpy` copia o `count` de bytes do buffer de origem para o buffer de destino.
+- `memcpy` copia a `count` de bytes do buffer de origem para o buffer de destino.
 
 - O buffer de destino deve ser pelo menos tão grande quanto o buffer de origem.
 
@@ -82,7 +82,7 @@ Essa implementação contém um erro comum fora de um. Felizmente, o autor do c�
 ### <a name="sal-basics"></a>Noções básicas sobre SAL
 O SAL define quatro tipos básicos de parâmetros, que são categorizados por padrão de uso.
 
-|Categoria|Anotação de parâmetro|Descrição|
+|Categoria|Anotação de parâmetro|DESCRIÇÃO|
 |--------------|--------------------------|-----------------|
 |**Entrada para a função chamada**|`_In_`|Os dados são passados para a função chamada e são tratados como somente leitura.|
 |**Entrada para a função chamada e saída para o chamador**|`_Inout_`|Os dados utilizáveis são passados para a função e potencialmente são modificados.|
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-Se você usar a análise de Visual Studio Code neste exemplo, ele validará que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt`. Nesse caso, o ponteiro `pInt` não pode ser nulo.
+Se você usar a análise de Visual Studio Code neste exemplo, ele validará que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt`. Nesse caso, `pInt` ponteiro não pode ser nulo.
 
 ### <a name="example-the-_in_opt_-annotation"></a>Exemplo: a \_na anotação\_opt\_
 
@@ -235,7 +235,7 @@ void OutOptCaller()
 }
 ```
 
-A análise de Visual Studio Code valida que essa função verifica se há nulo antes que `pInt` seja cancelado, e se `pInt` não for nulo, se o buffer for inicializado pela função antes de retornar.
+A análise de Visual Studio Code valida que essa função verifica a existência de NULL antes que `pInt` seja desreferenciada e, se `pInt` não for NULL, o buffer será inicializado pela função antes de retornar.
 
 ### <a name="example-the-_inout_-annotation"></a>Exemplo: a anotação de\_ \_InOut
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-A análise de Visual Studio Code valida que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt` e que, antes do retorno, `pInt` ainda é não nulo e o buffer é inicializado.
+A análise de Visual Studio Code valida que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt`e que, antes de retornar, `pInt` ainda é não nulo e o buffer é inicializado.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Exemplo: a anotação de\_ opt\_\_InOut
 
@@ -295,7 +295,7 @@ void InOutOptCaller()
 }
 ```
 
-A análise de Visual Studio Code valida que essa função verifica se há NULL antes de acessar o buffer e, se `pInt` não for NULL, o buffer será inicializado pela função antes de retornar.
+A análise de Visual Studio Code valida que essa função verifica se há NULL antes de acessar o buffer e, se `pInt` não for NULL, se o buffer for inicializado pela função antes de retornar.
 
 ### <a name="example-the-_outptr_-annotation"></a>Exemplo: a anotação \_Outptr\_
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-A análise de Visual Studio Code valida que o chamador passa um ponteiro não nulo para `*pInt` e que o buffer é inicializado pela função antes de retornar.
+A análise de Visual Studio Code valida que o chamador passa um ponteiro não nulo para `*pInt`e que o buffer é inicializado pela função antes de retornar.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Exemplo: a anotação \_Outptr\_opt\_
 
@@ -357,7 +357,7 @@ void OutPtrOptCaller()
 }
 ```
 
-A análise de Visual Studio Code valida que essa função verifica se há NULL antes que `*pInt` seja cancelado e que o buffer seja inicializado pela função antes de retornar.
+A análise de Visual Studio Code valida que essa função verifica se há um NULL antes que `*pInt` seja cancelada e que o buffer seja inicializado pela função antes de retornar.
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Exemplo: a anotação \_êxito\_ em combinação com \_out\_
 
@@ -404,7 +404,7 @@ Ou você pode anotar todos os parâmetros para que sua intenção fique mais cla
 
 [Blog da equipe de análise de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)

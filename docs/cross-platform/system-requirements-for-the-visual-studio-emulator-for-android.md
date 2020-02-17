@@ -1,6 +1,7 @@
 ---
 title: Requisitos do sistema para o emulador do Visual Studio para Android | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916816"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272044"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o Emulador do Visual Studio para Android
 
@@ -126,7 +128,7 @@ Quando definições do computador e do BIOS já estiverem configuradas para dar 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Não há suporte para a execução do emulador por meio de um VHD inicializável
  Se você tentar executar um aplicativo no Emulador do Visual Studio para Android enquanto estiver executando o Windows por meio de um VHD inicializável, normalmente, o emulador levará vários minutos para ser iniciado ou não será iniciado. Quando o emulador falha ao iniciar, você recebe a seguinte mensagem: Falha na implantação do aplicativo. Tente novamente.
 
- Essa configuração não tem suporte. Para obter informações sobre problemas relacionados, confira [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
+ Não há suporte para essa configuração. Para obter informações sobre problemas relacionados, confira [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
 ## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>O Hyper-V exige arquivos descompactados e não criptografados
  Em um disco rígido configurado com o sistema de arquivos NTFS, os arquivos do disco rígido virtual usados pelo Hyper-V devem ser descompactados e descriptografados. Verifique se os seguintes diretórios não estão compactados nem criptografados:
@@ -145,6 +147,6 @@ No sistema de arquivos ReFS, os arquivos do disco rígido virtual não devem ter
 
 Para que o emulador emule chamadas à GPU, como aquelas usadas pelo OpenGL ES, o computador deve ter uma GPU compatível com DirectX com drivers DirectX apropriados instalados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

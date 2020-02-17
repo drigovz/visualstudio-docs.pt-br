@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3856c658c4d3d2598b69cc9bf77f95c219b187b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271177"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para saber mais, confira [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md).
@@ -74,7 +74,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
      <ParameterGroup />
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage("Hello, world!", MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, "Hello, world!");
        </Code>
      </Task>
    </UsingTask>
@@ -121,7 +121,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
      </ParameterGroup>
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage(Text, MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, Text);
        </Code>
      </Task>
    </UsingTask>
@@ -256,7 +256,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 </Code>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Destinos](../msbuild/msbuild-targets.md)

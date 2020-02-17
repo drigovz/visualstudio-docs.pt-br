@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271081"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve usos típicos de anotações para parâmetros de função simples – escalares e ponteiros para estruturas e classes – e a maioria dos tipos de buffers.  Este artigo também mostra padrões de uso comuns para anotações. Para anotações adicionais relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md).
@@ -430,7 +430,7 @@ Um uso comum do parâmetro de referência é para parâmetros de saída.  Para p
 
      O resultado deve ser válido em pós-Estado, mas pode ser nulo no estado de post. Aponta para um buffer válido de `s` bytes de elementos válidos.
 
-## <a name="return-values"></a>Valores de Retorno
+## <a name="return-values"></a>Valores de retorno
 
 O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas está em um nível diferente de de referência, e você não precisa considerar o conceito do ponteiro para o resultado.  Para as seguintes anotações, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma struct ou um ponteiro para um buffer. Essas anotações têm a mesma semântica que a anotação de `_Out_` correspondente.
 
@@ -528,7 +528,7 @@ O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas es
 
 [Blog da equipe de análise de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Noções básicas de SAL](../code-quality/understanding-sal.md)

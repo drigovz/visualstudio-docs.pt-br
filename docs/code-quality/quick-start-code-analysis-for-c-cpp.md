@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445638"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272326"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
 
@@ -36,7 +36,7 @@ Você pode melhorar a qualidade do seu aplicativo executando a análise de códi
 
 O Visual Studio inclui dois conjuntos padrão de regras para código nativo:
 
-|Conjunto de regras|Descrição|
+|Conjunto de regras|DESCRIÇÃO|
 |--------------|-----------------|
 |Regras recomendadas mínimas do Microsoft Native|Esse conjunto de regras enfoca os problemas mais críticos em seu código nativo, incluindo falhas potenciais de segurança e falhas do aplicativo. Você deve incluir esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para seus projetos nativos.|
 |Regras nativas recomendadas da Microsoft|Esse conjunto de regras aborda uma ampla gama de problemas. Ele inclui todas as regras nas regras recomendadas do mínimo nativo da Microsoft.|
@@ -101,12 +101,12 @@ Você pode usar o recurso de acompanhamento de item de trabalho para registrar b
 
 ## <a name="search-and-filter-code-analysis-results"></a>Pesquisar e filtrar resultados da análise de código
 
-Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.
+{1&gt;Você pode pesquisar listas longas de mensagens de aviso e filtrar avisos em soluções multiprojeto.&lt;1}
 
 - **Para filtrar avisos por ID de aviso ou título**: Insira a palavra-chave na caixa de pesquisa.
 
 - **Para filtrar avisos por severidade**: por padrão, as mensagens de análise de código recebem uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em um conjunto de regras personalizadas. Na coluna **severidade** da **lista de erros**, escolha a seta suspensa e, em seguida, o ícone de filtro. Escolha **aviso** ou **erro** para exibir apenas as mensagens que recebem a respectiva severidade. Escolha **selecionar tudo** para exibir todas as mensagens.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Análise de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

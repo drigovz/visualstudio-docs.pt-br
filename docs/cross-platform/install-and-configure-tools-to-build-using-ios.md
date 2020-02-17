@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846900"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272286"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas de build usando o iOS
 
@@ -28,7 +28,7 @@ Você pode usar o Visual Studio com o **desenvolvimento móvel C++**  de platafo
 
 Depois de instalar as ferramentas para criar usando o iOS, consulte este artigo para obter maneiras de configurar e atualizar rapidamente o agente remoto para o desenvolvimento do iOS no Visual Studio e no seu Mac.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 Para instalar e usar o agente remoto para desenvolver código para iOS, é necessário primeiro ter estes pré-requisitos:
 
@@ -62,9 +62,9 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
    Se quiser fazer a assinatura manual, você precisará criar um perfil de provisionamento para seu aplicativo. Para obter informações detalhadas sobre como criar Perfis de provisionamento, consulte [Criar um perfil de provisionamento de desenvolvimento](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-- [Node.js](https://nodejs.org/) versão 8.11.3 e npm versão 5.6.0
+- [Node. js](https://nodejs.org/) versão 12.14.1 e NPM versão 6.13.4
 
-   Instale a versão 8.11.3 do Node.js no seu Mac. Se você instalar o pacote do Node.js, ele deverá aparecer com o npm versão 5.6.0. Outras versões do node. js e do NPM podem não dar suporte a alguns módulos usados no agente remoto `vcremote`, o que pode causar falha na instalação do `vcremote`.
+   Instale a versão 12.14.1 do node. js no seu Mac. Se você instalar o pacote node. js, ele deverá vir com o NPM versão 6.13.4. Outras versões do node. js e do NPM podem não dar suporte a alguns módulos usados no agente remoto `vcremote`, o que pode causar falha na instalação do `vcremote`. Recomendamos que você instale o Node. js usando um Gerenciador de pacotes, como o [node versão Manager](https://nodejs.org/en/download/package-manager/#nvm). Evite usar o `sudo` de comando para instalar o Node. js, pois alguns módulos podem falhar ao serem instalados ao usar o `sudo`.
 
 ## <a name="Install"></a> Instalar o agente remoto para iOS
 
@@ -74,11 +74,17 @@ Antes de instalar o agente remoto, verifique se você satisfez os [pré-requisit
 
 ### <a name="DownloadInstall"></a> Para baixar e instalar o agente remoto
 
-- No aplicativo Terminal no seu Mac, insira:
+- No aplicativo de terminal no seu Mac, verifique se a versão do node. js atualmente em uso é a versão necessária 12.14.1. Para verificar a versão, execute o comando:
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  Se não for a versão correta, talvez seja necessário seguir as instruções de instalação do node. js nos pré-requisitos. Em seguida, reinicie o Node. js.
 
-   O comutador da instalação global ( **-g**) é recomendado, mas não é obrigatório.
+- Depois de verificar se o Node. js necessário está em uso, execute este comando para instalar o vcremote sob essa versão do node. js:
+
+   `npm install -g --unsafe-perm vcremote`
+
+   A opção de instalação global ( **-g**) é recomendada, mas não é necessária. Se você não usar a opção de instalação global, o vcremote será instalado no caminho ativo atual no aplicativo de terminal.
 
    Durante a instalação, o `vcremote` é instalado e o modo de desenvolvedor é ativado no seu Mac. [Homebrew](https://brew.sh/) e dois pacotes npm, `vcremote-lib` e `vcremote-utils`, também são instalados. Após a conclusão da instalação, ignore os avisos sobre dependências opcionais ignoradas.
 
@@ -278,6 +284,6 @@ Se `ideviceinstaller` erros de que ele não pode acessar a pasta `/var/db/lockdo
     
 Em seguida, verifique novamente se `ideviceinstaller` pode se comunicar com o dispositivo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar o desenvolvimento móvel de plataforma cruzada com oC++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

@@ -3,17 +3,17 @@ title: C++Avisos de diretrizes principais
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
-author: mblome
-ms.author: mblome
+author: corob
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4bcd32d633c2b88bba53aa79b670a59bda1ebef3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807113"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271401"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -64,7 +64,7 @@ Este exemplo demonstra alguns dos avisos que as regras de C++ verificação prin
 
 - C26485 é associado à regra. 3: nenhum decaimento de matriz para ponteiro.
 
-- C26481 são limites de regra. 1: não use aritmética de ponteiro. Use `span` em seu lugar.
+- C26481 são limites de regra. 1: não use aritmética de ponteiro. Use `span` em vez disso.
 
 Se os C++ conjuntos de regras de análise de código de verificação principal estiverem instalados e habilitados quando você compilar esse código, os dois primeiros avisos serão gerados, mas o terceiro será suprimido. Aqui está a saída da compilação do código de exemplo:
 
@@ -78,7 +78,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o atributo `gsl::suppress` para manter C++ a verificação principal de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites escrevendo `[[gsl::suppress(bounds)]]` sem incluir um número de regra específico.
+As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o atributo `gsl::suppress` para impedir C++ que a verificação principal detecte e relate qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites escrevendo `[[gsl::suppress(bounds)]]` sem incluir um número de regra específico.
 
 ## <a name="supported-rule-sets"></a>Conjuntos de regras com suporte
 
@@ -167,7 +167,7 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 5. Vá para o arquivo que você deseja analisar com o C++ verificador de diretrizes principais e abra suas propriedades.
 6. Escolha **as opçõesC++de linha C/\Command** e adicione `/analyze:plugin EspXEngine.dll`
 7. Desabilite o uso do cabeçalho pré-compilado (**cabeçalhos C/C++\Precompiled**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas do cabeçalho pré-compilado e, se o último tiver sido compilado com opções de projeto padrão, ele não será compatível.
-8. Recompilar o projeto. As verificações PREfast comuns devem ser executadas em todos os arquivos. Como o C++ verificador de diretrizes principais não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
+8. Recompile o projeto. As verificações PREfast comuns devem ser executadas em todos os arquivos. Como o C++ verificador de diretrizes principais não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de C++ diretrizes principais fora do Visual Studio
 Você pode usar as C++ principais verificações de diretrizes em compilações automatizadas.
@@ -186,7 +186,7 @@ O PREfast (verificador de análise de código) nativo é integrado ao ambiente d
 
 Certifique-se de adicionar essas propriedades antes da importação do arquivo Microsoft. cpp. targets. Você pode escolher conjuntos de regras específicos ou criar um conjunto de regras personalizado ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
-Você pode executar o C++ verificador principal somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#corecheck_per_file), mas usando arquivos MSBuild. As variáveis de ambiente podem ser definidas usando o item `BuildMacro`:
+Você pode executar o C++ verificador principal somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#corecheck_per_file), mas usando arquivos MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
 
 ```xml
 <ItemGroup>
@@ -213,7 +213,7 @@ Se você usar um sistema de compilação que não dependa do MSBuild, ainda pode
 Você precisará definir algumas variáveis de ambiente e usar as opções de linha de comando adequadas para o compilador. É melhor trabalhar no ambiente "prompt de comando de ferramentas nativas" para que você não precise procurar caminhos específicos para o compilador, incluir diretórios, etc.
 
 1. **Variáveis de ambiente**
-   - `set esp.extensions=cppcorecheck.dll` diz ao mecanismo para carregar o C++ módulo de diretrizes básicas.
+   - `set esp.extensions=cppcorecheck.dll` isso diz ao mecanismo para carregar o C++ módulo de diretrizes básicas.
    - `set esp.annotationbuildlevel=ignore` isso desabilita a lógica que processa as anotações SAL. As anotações não afetam a análise de código C++ no verificador de diretrizes principais, mas seu processamento leva tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendável.
    - `set caexcludepath=%include%` é altamente recomendável que você desabilite os avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
 2. **Opções de linha de comando**
@@ -222,7 +222,7 @@ Você precisará definir algumas variáveis de ambiente e usar as opções de li
 
 ## <a name="use-the-guideline-support-library"></a>Usar a biblioteca de suporte de diretrizes
 
-A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um par `T*, length` de parâmetros pelo tipo `span<T>`. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de software livre, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um `T*, length` par de parâmetros pelo tipo de `span<T>`. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de software livre, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Use as C++ diretrizes de verificação principal nos projetos do Visual Studio 2015
 

@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850165"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271597"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="locking-annotations"></a>Anotações de bloqueio  
  A tabela a seguir lista as anotações de bloqueio.  
   
-|Annotation|Descrição|  
+|Anotação|DESCRIÇÃO|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios exclusiva do objeto de bloqueio nomeado por `expr`.|  
 |`_Acquires_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios do objeto de bloqueio nomeado por `expr`.|  
@@ -91,7 +91,7 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>SAL intrínseco para objetos de bloqueio não expostos  
  Determinados objetos de bloqueio não são expostos pela implementação das funções de bloqueio associadas.  A tabela a seguir lista as variáveis intrínsecas SAL que habilitam anotações em funções que operam nesses objetos de bloqueio não expostos.  
   
-|Annotation|Descrição|  
+|Anotação|DESCRIÇÃO|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Descreve o cancelamento do bloqueio de rotação.|  
 |`_Global_critical_region_`|Descreve a região crítica.|  
@@ -101,14 +101,14 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="shared-data-access-annotations"></a>Anotações de acesso a dados compartilhados  
  A tabela a seguir lista as anotações para acesso a dados compartilhados.  
   
-|Annotation|Descrição|  
+|Anotação|DESCRIÇÃO|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é acessada, a contagem de bloqueios do objeto de bloqueio nomeado por `expr` é pelo menos uma.|  
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|  
 |`_Interlocked_operand_`|O parâmetro de função anotada é o operando de destino de uma das várias funções interbloqueadas.  Esses operandos devem ter propriedades adicionais específicas.|  
 |`_Write_guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é modificada, a contagem de bloqueios do objeto de bloqueio nomeado por `expr` é pelo menos uma.|  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Usando anotações de sal para reduzir os defeitosC++ de C/código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Compreendendo o SAL](../code-quality/understanding-sal.md)   
  [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)   
