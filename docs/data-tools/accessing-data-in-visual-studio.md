@@ -1,5 +1,5 @@
 ---
-title: Acesso a dados e ferramentas
+title: Trabalhar com dados no Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916714"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272081"
 ---
-# <a name="access-data-in-visual-studio"></a>Acessar dados no Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Trabalhar com dados no Visual Studio
 
 No Visual Studio, você pode criar aplicativos que se conectam a dados em praticamente qualquer produto ou serviço de banco de dado, em qualquer formato, em qualquer lugar — em um computador local, em uma rede local ou em uma nuvem pública, privada ou híbrida.
 
 Para aplicativos em JavaScript, Python, PHP, Ruby ou C++, você se conecta a dados como faz qualquer outra coisa, obtendo bibliotecas e escrevendo código. Para aplicativos .NET, o Visual Studio fornece ferramentas que você pode usar para explorar fontes de dados, criar modelos de objeto para armazenar e manipular dados na memória e associar dados à interface do usuário. O Microsoft Azure fornece SDKs para .NET, Java, Node. js, PHP, Python, Ruby e aplicativos móveis, e ferramentas no Visual Studio para se conectar ao armazenamento do Azure.
 
+::: moniker range="vs-2017"
 As listas a seguir mostram apenas alguns dos vários sistemas de banco de dados e de armazenamento que podem ser usados no Visual Studio. As ofertas de [Microsoft Azure](https://azure.microsoft.com/) são serviços de dados que incluem todo o provisionamento e a administração do armazenamento de dados subjacente. A carga de trabalho de **desenvolvimento do Azure** no [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) permite que você trabalhe com armazenamentos de dados do Azure diretamente do Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+As listas a seguir mostram apenas alguns dos vários sistemas de banco de dados e de armazenamento que podem ser usados no Visual Studio. As ofertas de [Microsoft Azure](https://azure.microsoft.com/) são serviços de dados que incluem todo o provisionamento e a administração do armazenamento de dados subjacente. A carga de trabalho de **desenvolvimento do Azure** no [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) permite que você trabalhe com armazenamentos de dados do Azure diretamente do Visual Studio.
+::: moniker-end
 
 ![Carga de trabalho de desenvolvimento do Azure](media/azure-development-workload.png)
 
@@ -33,7 +38,7 @@ A maioria dos outros produtos de banco de dados SQL e NoSQL listados aqui pode s
 
 **Microsoft Azure**
 
-- Banco de dados SQL
+- Banco de Dados SQL
 - Azure Cosmos DB
 - Armazenamento (BLOBs, tabelas, filas, arquivos)
 - SQL Data Warehouse
@@ -106,7 +111,7 @@ No .NET, você tem três opções para modelar e manipular dados na memória dep
 
 Não há nenhum requisito para usar nenhuma dessas tecnologias. Em alguns cenários, especialmente onde o desempenho é crítico, você pode simplesmente usar um objeto DataReader para ler do banco de dados e copiar os valores necessários para um objeto de coleção, como List\<T >.
 
-## <a name="native-c"></a>C++ Nativo
+## <a name="native-c"></a>C++ nativo
 
 C++os aplicativos que se conectam ao SQL Server devem usar o [driver ODBC do Microsoft® 13,1 para SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) na maioria dos casos. Se os servidores estiverem vinculados, OLE DB será necessário e para que você use o [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Você pode acessar outros bancos de dados usando os drivers [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) ou OLE DB diretamente. O ODBC é a interface de banco de dados padrão atual, mas a maioria dos sistemas de banco de dados fornece uma funcionalidade personalizada que não pode ser acessada pela interface ODBC. OLE DB é uma tecnologia de acesso a dados COM herdada que ainda é suportada, mas não é recomendada para novos aplicativos. Para obter mais informações, consulte [acesso a dados C++no Visual ](/cpp/data/data-access-in-cpp).
 

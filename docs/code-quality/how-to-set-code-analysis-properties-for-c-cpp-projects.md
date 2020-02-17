@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c517674bb3aba58caa865a02b384e9d90af8a10
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448909"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271702"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como definir propriedades de análise de código para projetos do C/C++
 
@@ -45,9 +45,9 @@ A análise de código foi projetada para ajudá-lo a melhorar a qualidade do seu
 
 ## <a name="cmake-configuration"></a>Configuração do CMake
 
-Em projetos CMake, altere o valor das chaves `enableMicrosoftCodeAnalysis` e `enableClangTidyCodeAnalysis` dentro de `CMakeSettings.json` para habilitar ou desabilitar a análise de código. Consulte [usando o Clang no Visual Studio](../code-quality/clang-tidy.md) para obter mais informações.
+Em projetos CMake, altere o valor da `enableMicrosoftCodeAnalysis` e `enableClangTidyCodeAnalysis` chaves dentro de `CMakeSettings.json` para habilitar ou desabilitar a análise de código. Consulte [usando o Clang no Visual Studio](../code-quality/clang-tidy.md) para obter mais informações.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a qualidade do código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)
 - [Análise de código para avisos do C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

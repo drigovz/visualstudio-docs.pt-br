@@ -1,8 +1,8 @@
 ---
-title: 'Etapa 4: Expor uma API Web do seu aplicativo ASP.NET Core'
+title: 'Etapa 4: expondo uma API Web do seu aplicativo ASP.NET Core'
 description: Adicionar uma API Web ao seu aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553842"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271497"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Etapa 4: Expor uma API Web do seu aplicativo ASP.NET Core
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Etapa 4: expor uma API Web do seu aplicativo ASP.NET Core
 
 Siga estas etapas para adicionar uma API Web ao seu aplicativo ASP.NET Core existente.
 
@@ -187,7 +187,7 @@ Por fim, uma rota `[HttpDelete]` é usada com uma ID para excluir um registro. S
 
 ## <a name="adding-swagger"></a>Adicionar o Swagger
 
-O Swagger é uma ferramenta de documentação e testes da API que pode ser adicionada como um conjunto de serviços e middleware a um aplicativo ASP.NET Core. Para isso, clique com o botão direito do mouse no projeto e escolha **Gerenciar pacotes NuGet**. Clique em **Procurar**, pesquise por `Swashbuckle.AspNetCore` e instale o pacote correspondente.
+O Swagger é uma ferramenta de documentação e testes da API que pode ser adicionada como um conjunto de serviços e middleware a um aplicativo ASP.NET Core. Para isso, clique com o botão direito do mouse no projeto e escolha **Gerenciar pacotes NuGet**. Em seguida, clique em **procurar**, procure `Swashbuckle.AspNetCore`e instale a versão 4.0.1.
 
 ![Adicionar Swashbuckle do Nuget no Visual Studio de 2019](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -226,9 +226,9 @@ Clique em um ponto de extremidade em Jogos, depois em `Try it out` e `Execute` p
 
 No próximo vídeo, você aprenderá como implantar seu aplicativo no Azure.
 
-[Etapa 5: Implantar o aplicativo ASP.NET Core no Azure](tutorial-aspnet-core-ef-step-05.md)
+[Etapa 5: implantando seu aplicativo ASP.NET Core no Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Introdução ao Swashbuckle e ao ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
 - [Páginas de ajuda da API Web ASP.NET Core com o Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)

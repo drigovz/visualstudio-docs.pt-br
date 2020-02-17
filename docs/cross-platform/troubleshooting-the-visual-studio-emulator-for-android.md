@@ -1,6 +1,7 @@
 ---
 title: Solução de problemas do emulador do Visual Studio para Android | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 author: conceptdev
 ms.author: crdun
 manager: crdun
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777807"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272075"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solução de problemas do Emulador do Visual Studio para Android
 Este tópico contém informações para ajudá-lo a resolver problemas que podem ocorrer ao usar o Emulador do Visual Studio para Android.
@@ -23,9 +25,9 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 > [!WARNING]
 > Quando o emulador está instalado, o programa de instalação verifica os pré-requisitos para executar o software. Ele exibe avisos se os pré-requisitos não estiverem presentes, mas os requisitos não são necessários na instalação.
 
- Este tópico contém as seções a seguir.
+ Este tópico inclui as seções a seguir.
 
-- [Antes de começar](#BeforeYouStart)
+- [Antes de iniciar](#BeforeYouStart)
 
 - [Falha na instalação do emulador](#NoInstall)
 
@@ -59,7 +61,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 - [Recursos de suporte](#Support)
 
-## <a name="BeforeYouStart"></a> Antes de começar
+## <a name="BeforeYouStart"></a> Antes de iniciar
  Antes de iniciar a solução de problemas, pode ser útil examinar os tópicos a seguir:
 
 - [Requisitos do sistema para o Emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -103,7 +105,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 ## <a name="SlowStart"></a> O emulador inicia lentamente, falha ao iniciar devido a um tempo limite ou devido a erros na implantação do aplicativo
  Sob certas condições, o emulador leva vários minutos para iniciar ou não pode ser iniciado devido a um tempo limite. Quando o emulador falha ao iniciar, você vê a seguinte mensagem: `App deployment failed. Please try again`. As seguintes condições podem resultar neste erro.
 
-- Executando o emulador do Visual Studio para Android de um VHD inicializável. Essa configuração não tem suporte.
+- Executando o emulador do Visual Studio para Android de um VHD inicializável. Não há suporte para essa configuração.
 
 - Um disco rígido com defeito. Considere a possibilidade de executar o programa chkdsk.
 
@@ -221,17 +223,17 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
      - Agendador de pacotes QoS
 
-     - Compartilhamento de arquivos e impressoras para redes da Microsoft
+     - Compartilhamento de arquivos e impressora para redes Microsoft
 
      - Driver de protocolo LLDP da Microsoft
 
-     - Driver de E/S do mapeador de descoberta de topologia de camada de link
+     - Unidade de E/S do mapeador de descoberta de topologia de camada vinculada
 
-     - Respondente de descoberta de topologia de camada de link
+     - Dispositivo de resposta de descoberta da topologia de camada vinculada
 
-     - Protocolo IP versão 6 (TCP/IPv6)
+     - Versão 6 do protocolo da Internet (TCP/IPv6)
 
-     - Protocolo IP versão 4 (TCP/IPv4)
+     - Versão 4 do protocolo da Internet (TCP/IPv4)
 
   4. Cancele a seleção de todos os outros itens.
 

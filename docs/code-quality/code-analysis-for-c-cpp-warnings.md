@@ -13,22 +13,22 @@ helpviewer_keywords:
 - native code analysis
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efcb6c5aeb60062dea75906969b71e65ac4912bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7b7de6eb7a46f849437f7917509c4b191043d320
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745969"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271196"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Análise de código para avisos do C/C++
 Esta seção lista os avisosC++ de análise C/Code, exceto aqueles que são gerados pelos [ C++ verificadores de diretrizes principais](code-analysis-for-cpp-corecheck.md). Para obter informações sobre a análise de código, consulte [/Analyze (análise de código)](/cpp/build/reference/analyze-code-analysis) e [início rápido: análiseC++de código para C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a qualidade do código do C/C++ usando a análise de código](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

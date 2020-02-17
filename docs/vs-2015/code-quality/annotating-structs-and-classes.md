@@ -1,5 +1,5 @@
 ---
-title: Anotando estruturas e Classes | Microsoft Docs
+title: Anotando structs e classes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -21,44 +21,44 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157073"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271573"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode anotar os membros de classe e struct usando anotações que atuam como as invariáveis — elas são presumidos como verdadeiro em qualquer chamada de função ou entrada/saída da função que envolve a estrutura de inclusão como um parâmetro ou um valor de resultado.  
+Você pode anotar os membros de struct e de classe usando anotações que agem como invariáveis – eles devem ser verdadeiros em qualquer chamada de função ou entrada/saída de função que envolva a estrutura delimitadora como um parâmetro ou um valor de resultado.  
   
-## <a name="struct-and-class-annotations"></a>Anotações de classe e struct  
+## <a name="struct-and-class-annotations"></a>Anotações de struct e classe  
   
 - `_Field_range_(low, high)`  
   
-     O campo está no intervalo (inclusivo) de `low` para `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado ao objeto anotado usando as condições apropriadas de pré ou pós-implantação.  
+     O campo está no intervalo (inclusivo) de `low` para `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado ao objeto anotado usando as condições anteriores ou posteriores.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`.  
+     Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size`.  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)``_Field_size_bytes_part_opt_(size, count)`  
   
-     Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`e o `count` desses elementos (bytes) que são legíveis.  
+     Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size`e o `count` desses elementos (bytes) que são legíveis.  
   
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     Um campo que tem o tamanho legível e gravável em elementos (ou bytes) como especificado pelo `size`.  
+     Um campo que tem o tamanho legível e gravável em elementos (ou bytes) conforme especificado por `size`.  
   
 - `_Struct_size_bytes_(size)`  
   
-     Um campo que tem o tamanho legível e gravável em elementos (ou bytes) como especificado pelo `size`.  
+     Um campo que tem o tamanho legível e gravável em elementos (ou bytes) conforme especificado por `size`.  
   
-     Aplica-se a declaração de classe ou struct.  Indica que um objeto válido desse tipo pode ser maior do que o tipo declarado, com o número de bytes especificado pela `size`.  Por exemplo:  
+     Aplica-se à declaração struct ou Class.  Indica que um objeto válido desse tipo pode ser maior que o tipo declarado, com o número de bytes sendo especificado por `size`.  Por exemplo:  
   
     ```cpp  
   
@@ -70,17 +70,17 @@ Você pode anotar os membros de classe e struct usando anotações que atuam com
   
     ```  
   
-     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` , em seguida, será tomado como:  
+     O tamanho do buffer, em bytes de um parâmetro `pM` do tipo `MyStruct *`, é então usado como:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Usando anotações de SAL para reduzir defeitos de código C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Noções básicas de SAL](../code-quality/understanding-sal.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Usando anotações de sal para reduzir os defeitosC++ de C/código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Compreendendo o SAL](../code-quality/understanding-sal.md)   
  [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Anotando o comportamento da função](../code-quality/annotating-function-behavior.md)   
+ [Comportamento de função de anotação](../code-quality/annotating-function-behavior.md)   
  [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)   
  [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funções intrínsecas](../code-quality/intrinsic-functions.md)   
