@@ -33,7 +33,7 @@ Além de anotar os [parâmetros de função e valores de retorno](../code-qualit
 ## <a name="function-annotations"></a>Anotações de função
 As anotações a seguir se aplicam à função como um todo e descrevem como ela se comporta ou o que espera ser verdadeiro.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Called_from_function_class_(name)`|Não se destina a ser autônomo; em vez disso, é um predicado a ser usado com a anotação `_When_`. Para obter mais informações, consulte [especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> O parâmetro `name` é uma cadeia de caracteres arbitrária que também aparece em uma anotação `_Function_class_` na declaração de algumas funções.  `_Called_from_function_class_` retornará zero se a função que está sendo analisada estiver anotada usando `_Function_class_` que tenha o mesmo valor de `name`; caso contrário, retornará zero.|
 |`_Check_return_`|Anota um valor de retorno e declara que o chamador deve inspecioná-lo. O verificador relatará um erro se a função for chamada em um contexto void.|
@@ -46,14 +46,14 @@ As anotações a seguir se aplicam à função como um todo e descrevem como ela
 ## <a name="successfailure-annotations"></a>Anotações de êxito/falha
 Uma função pode falhar e, quando isso acontecer, seus resultados poderão estar incompletos ou diferentes dos resultados quando a função for bem-sucedida.  As anotações na lista a seguir fornecem maneiras de expressar o comportamento de falha.  Para usar essas anotações, você deve habilitá-las para determinar o sucesso; Portanto, uma anotação `_Success_` é necessária.  Observe que `NTSTATUS` e `HRESULT` já têm uma anotação `_Success_` incorporada a eles; no entanto, se você especificar sua própria anotação de `_Success_` em `NTSTATUS` ou `HRESULT`, ela substituirá a anotação interna.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Always_(anno_list)`|Equivalente a `anno_list _On_failure_(anno_list)`; ou seja, as anotações em `anno_list` se aplicam se a função foi concluída com sucesso ou não.|
 |`_On_failure_(anno_list)`|Para ser usado somente quando `_Success_` também é usado para anotar a função, seja explicitamente ou implicitamente por meio de `_Return_type_success_` em um typedef. Quando a anotação de `_On_failure_` está presente em um parâmetro de função ou valor de retorno, cada anotação no `anno_list` (Anno) se comporta como se fosse codificada como `_When_(!expr, anno)`, onde `expr` é o parâmetro para a anotação de `_Success_` necessária. Isso significa que a aplicação implícita de `_Success_` a todas as pós-condições não se aplica para `_On_failure_`.|
 |`_Return_type_success_(expr)`|Pode ser aplicado a um typedef. Indica que todas as funções que retornam esse tipo e não possuem `_Success_` explicitamente são anotadas como se tivessem `_Success_(expr)`. `_Return_type_success_` não pode ser usado em uma função ou um typedef de ponteiro de função.|
 |`_Success_(expr)`|`expr` é uma expressão que produz um Rvalue. Quando a anotação de `_Success_` está presente em uma declaração ou definição de função, cada anotação (`anno`) na função e em pós-condição se comporta como se fosse codificada como `_When_(expr, anno)`. A anotação `_Success_` pode ser usada somente em uma função, não em seus parâmetros ou tipo de retorno. Pode haver no máximo uma anotação de `_Success_` em uma função e não pode estar em nenhuma `_When_`, `_At_`ou `_Group_`. Para obter mais informações, consulte [especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Noções básicas de SAL](../code-quality/understanding-sal.md)

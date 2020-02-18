@@ -64,7 +64,7 @@ Algumas regras de Propriedade do thread a serem consideradas:
 ## <a name="locking-annotations"></a>Anotações de bloqueio
 A tabela a seguir lista as anotações de bloqueio.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios exclusiva do objeto de bloqueio nomeado por `expr`.|
 |`_Acquires_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios do objeto de bloqueio nomeado por `expr`.|
@@ -88,7 +88,7 @@ A tabela a seguir lista as anotações de bloqueio.
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>SAL intrínseco para objetos de bloqueio não expostos
 Determinados objetos de bloqueio não são expostos pela implementação das funções de bloqueio associadas.  A tabela a seguir lista as variáveis intrínsecas SAL que habilitam anotações em funções que operam nesses objetos de bloqueio não expostos.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Descreve o cancelamento do bloqueio de rotação.|
 |`_Global_critical_region_`|Descreve a região crítica.|
@@ -98,7 +98,7 @@ Determinados objetos de bloqueio não são expostos pela implementação das fun
 ## <a name="shared-data-access-annotations"></a>Anotações de acesso a dados compartilhados
 A tabela a seguir lista as anotações para acesso a dados compartilhados.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é acessada, a contagem de bloqueios do objeto de bloqueio nomeado por `expr` é pelo menos uma.|
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|
@@ -108,7 +108,7 @@ A tabela a seguir lista as anotações para acesso a dados compartilhados.
 ## <a name="smart-lock-and-raii-annotations"></a>Anotações de Smart Lock e RAII
 Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam seu tempo de vida. A tabela a seguir lista as anotações que podem ser usadas com bloqueios inteligentes e padrões de codificação RAII com suporte para semântica de `move`.
 
-|Annotation|Descrição|
+|Anotação|DESCRIÇÃO|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Instrui o analisador a assumir que um bloqueio inteligente foi adquirido. Esta anotação espera um tipo de bloqueio de referência como seu parâmetro.|
 |`_Analysis_assume_smart_lock_released_`|Instrui o analisador a assumir que um bloqueio inteligente foi liberado. Esta anotação espera um tipo de bloqueio de referência como seu parâmetro.|
@@ -117,7 +117,7 @@ Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam s
 |`_Swaps_locks_(left, right)`|Descreve o comportamento de `swap` padrão, que pressupõe que os objetos `left` e `right` trocam seu estado. O estado trocado inclui a contagem de bloqueios e o destino de alias, se houver. Os aliases que apontam para os objetos `left` e `right` permanecem inalterados.|
 |`_Detaches_lock_(detached, lock)`|Descreve um cenário no qual um tipo de wrapper de bloqueio permite dissociação com seu recurso contido. Isso é semelhante a como `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extraem o ponteiro e deixem seu contêiner de ponteiro inteligente em um estado limpo. A lógica semelhante é suportada pelo `std::unique_lock` e pode ser implementada em invólucros de bloqueio personalizados. O bloqueio desanexado mantém seu estado (contagem de bloqueios e destino de alias, se houver), enquanto o wrapper é redefinido para conter zero contagem de bloqueios e nenhum destino de alias, enquanto retém seus próprios aliases. Não há nenhuma operação em contagens de bloqueio (liberando e adquirindo). Essa anotação se comporta exatamente como `_Moves_lock_`, exceto pelo fato de que o argumento desanexado deve ser `return` em vez de `this`.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Noções básicas de SAL](../code-quality/understanding-sal.md)
