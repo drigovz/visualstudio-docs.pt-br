@@ -169,7 +169,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 1. No **Gerenciador de Testes**, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)

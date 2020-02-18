@@ -120,6 +120,6 @@ Se você definir a variável de ambiente TRACEDESIGNTIME como true e reiniciar o
 
 Saiba mais sobre a variável de ambiente TRACEDESIGNTIME em [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) e [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). As informações neste artigo são relevantes para projetos do C++.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)
