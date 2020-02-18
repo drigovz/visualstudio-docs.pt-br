@@ -28,11 +28,11 @@ ms.locfileid: "77279291"
 
 Use os compiladores de sombreador HLSL no processo de compilação.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **FXC**.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parâmetro opcional **String[]** .<br/><br/>Especifica um ou mais diretórios a serem adicionados ao caminho de inclusão, separados por ponto e vírgula no caso de mais de um.<br/><br/>Use `/I[path]`.|
 |**AdditionalOptions**|Parâmetro **string** opcional.|
@@ -59,6 +59,6 @@ A tabela a seguir descreve os parâmetros da tarefa **FXC**.
 |**TreatWarningAsError**|Parâmetro opcional **bool**.<br/><br/>Trata todos os avisos do compilador como erros.<br/><br/>Para um novo projeto, talvez seja melhor usar `/WX` em todas as compilações. Resolver todos os avisos assegurará o menor número possível de defeitos de código difíceis de localizar.|
 |**VariableName**|Parâmetro **string** opcional.<br/><br/>Especifica um nome para o nome de variável no arquivo de cabeçalho.<br/><br/>Use `/Vn [name]`.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)

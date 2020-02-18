@@ -210,7 +210,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)

@@ -2,7 +2,7 @@
 title: Aprenda a depurar aplicativos multithread
 description: Depurar usando as pilhas paralelas e as janelas de inspeção paralelas no Visual Studio
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091785"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416392"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução à depuração de aplicativos multissegmentados (C#, Visual Basic,) C++
 
@@ -34,7 +34,7 @@ Esses dois tópicos fornecem informações adicionais sobre como usar outras fer
 
 - Para obter um exemplo que usa <xref:System.Threading.Tasks.Task> (código gerenciado) e o runtime de simultaneidade (C++), consulte [passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md). Para obter dicas gerais de depuração que se aplicam à maioria dos tipos de aplicativos multithread, leia esse tópico e este.
 
-Primeiro, você precisará de um projeto de aplicativo multi-threaded. Veja um exemplo.
+Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um exemplo a seguir.
 
 ## <a name="create-a-multithreaded-app-project"></a>Criar um projeto de aplicativo multithread
 
@@ -360,7 +360,7 @@ Você pode definir pontos de interrupção em condições diferentes, como o nom
     > [!NOTE]
     > Quando você avança o depurador, todos os threads serão executados. No entanto, o depurador não interromperá o código em outros threads, a menos que um dos outros threads atinja um ponto de interrupção.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
