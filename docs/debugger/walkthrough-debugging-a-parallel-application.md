@@ -1,7 +1,7 @@
 ---
 title: Depurar um aplicativo paralelo | Microsoft Docs
 description: Depurar usando as tarefas paralelas e as janelas de pilhas paralelas no Visual Studio
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728592"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416419"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Walkthrough: Depurando um aplicativo paralelo no VisualC#Studio (, C++Visual Basic,)
 
@@ -48,7 +48,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 ## <a name="prerequisites"></a>Prerequisites
  Este tutorial pressupõe que **apenas meu código** esteja habilitado (ele é habilitado por padrão em versões mais recentes do Visual Studio). No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
 
-## <a name="c-sample"></a>Exemplo do C#
+## <a name="c-sample"></a>Exemplo de C#
  Se você usar o exemplo do C#, este passo a passo também pressuporá que o código externo está oculto. Para ativar ou desativar a exibição do código externo, clique com o botão direito do mouse no cabeçalho de tabela **Nome** da janela **Pilha de Chamadas** e, depois, marque ou desmarque **Mostrar Código Externo**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
 
 ## <a name="c-sample"></a>Exemplo do C++
@@ -64,25 +64,37 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 1. Abra o Visual Studio e crie um projeto.
 
-    ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c++** ), escolha **modelos**e, em seguida:
+   ::: moniker range=">=vs-2019"
 
-    - Para C# o C# ou Visual Basic, escolha **criar novo projeto de aplicativo de console (.NET Framework)** para ou Visual Basic. Na caixa de diálogo que aparece, escolha **Criar**.
-    - Para C++, escolha **criar novo projeto de aplicativo** de C++console para. Na caixa de diálogo que aparece, escolha **Criar**.
+   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
 
-    Em seguida, digite um nome ou use o nome padrão e clique em **criar**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
+   Na tela Iniciar, selecione **Criar um novo projeto**.
 
-    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
-    - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
-    - Para um C++ aplicativo, em **Visual C++** , escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
+   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C#** escolha **C++** , ou **Visual Basic** na lista idioma e, em seguida, escolha **Windows** na lista plataforma. 
 
-    Em seguida, digite um nome ou use o nome padrão e clique em **OK**.
-    ::: moniker-end
+   Depois de aplicar os filtros de idioma e plataforma, escolha **o aplicativo de console (.NET Core)** ou C++, para, modelo de **aplicativo de console** e escolha **Avançar**.
 
-    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+   > [!NOTE]
+   > Se você não vir o modelo correto, vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+   Na janela **configurar seu novo projeto** , digite um nome ou use o nome padrão na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
+
+   - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
+   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
+   - Para um C++ aplicativo, em **Visual C++** , escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
+
+   Se você não vir o **aplicativo de console (.NET Core)** ou, C++para, o modelo de projeto de **aplicativo de Console** , vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+   Em seguida, digite um nome ou use o nome padrão e clique em **OK**.
+
+   Selecione **OK**.
+   ::: moniker-end
+
+   Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem será exibido.
 
 1. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
 
@@ -92,14 +104,14 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. No menu **Arquivo**, clique em **Salvar tudo**.
+1. No menu **Arquivo** , clique em **Salvar Tudo**.
 
 1. No menu **Compilar**, clique em **Recompilar Solução**.
 
     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: exibição de Threads
- No menu **Depuração**, clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
+ No menu **Depurar** , clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para exibir a pilha de chamadas de um único thread
 
@@ -244,7 +256,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      ![Duas tarefas em espera na janela tarefas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas**  > **atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
+     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas** > **atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
 
      ![Tarefa de espera e dica de ferramenta na janela tarefas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -311,11 +323,11 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 ## <a name="summary"></a>Resumo
  Este passo a passo demonstrou as janelas do depurador **Tarefas Paralelas** e **Pilhas Paralelas**. Use essas janelas em projetos reais que utilizam código multi-threaded. Você pode examinar o código paralelo escrito no C++, no C# ou no Visual Basic.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depuração de aplicativos multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Programação paralela](/dotnet/standard/parallel-programming/index)
-- [Tempo de Execução de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)
+- [Runtime de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)
 - [Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)
 - [Usando a janela Tarefas](../debugger/using-the-tasks-window.md)

@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481971"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439109"
 ---
 # <a name="verifyfilehash-task"></a>Tarefa VerifyFileHash
 
-Verifica se um arquivo corresponde ao hash do arquivo esperado.
+Verifica se um arquivo corresponde ao hash do arquivo esperado. Se o hash não corresponder, a tarefa falhará.
 
 Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) a ser usada para as versões do MSBuild inferiores a 16.0.
 
@@ -32,12 +32,12 @@ Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https
 
  A tabela a seguir descreve os parâmetros da tarefa `VerifyFileHash`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`File`|Parâmetro `String` obrigatório.<br /><br />O arquivo com hash e validação.|
 |`Hash`|Parâmetro `String` obrigatório.<br /><br />O hash esperado do arquivo.|
 |`Algorithm`|Parâmetro `String` opcional.<br /><br />O algoritmo. Valores permitidos: `SHA256`, `SHA384`, `SHA512`. Padrão = `SHA256`.|
-|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Assume o padrão de `hex`. Valores permitidos = `hex`, `base64`.|
+|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Usa `hex` como padrão. Valores permitidos = `hex`, `base64`.|
 
 ## <a name="example"></a>Exemplo
 
@@ -61,7 +61,31 @@ O exemplo a seguir usa a tarefa `VerifyFileHash` para verificar sua própria som
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+No MSBuild 16,5 e posterior, se você não quiser que a compilação falhe quando o hash não corresponder, como se você estiver usando a comparação de hash como uma condição para o fluxo de controle, poderá fazer o downgrade do aviso para uma mensagem usando o seguinte código:
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
+```
+
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

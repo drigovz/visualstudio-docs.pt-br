@@ -3,15 +3,15 @@ title: Como ativar assinaturas do Visual Studio adquiridas na Microsoft Store | 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba como ativar assinaturas do Visual Studio compradas na Microsoft Store.
-ms.openlocfilehash: d03b5137a904b68fc848e4058069c89252b94d38
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377780"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439147"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Como ativar uma assinatura adquirida na Microsoft Store?
 Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft Store, as etapas de ativação poderão ser iniciadas na "Página de Confirmação" ou no "Email de Confirmação" de pagamento recebido após a compra.
@@ -33,3 +33,9 @@ Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft S
 
 ## <a name="next-steps"></a>Próximas etapas
 Acesse a página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) para ver todas as ferramentas, serviços, treinamento e benefícios de suporte incluídos em sua assinatura.  É recomendável configurar o [Visual Studio](vs-ide-benefit.md) e o [Azure DevOps](vs-azure-devops.md) para começar. 
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)

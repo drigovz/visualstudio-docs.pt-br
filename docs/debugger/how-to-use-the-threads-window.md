@@ -1,7 +1,7 @@
 ---
 title: Depurar um aplicativo multithread
-description: Depurar usando a janela Threads e a barra de ferramentas do local de depuração no Visual Studio
-ms.date: 11/21/2018
+description: Depurar usando a janela threads e a barra de ferramentas Debug Location no Visual Studio
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,48 +17,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb7b7850d8d7582110152d248683f89981933215
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846870"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416367"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Passo a passo: Depurar um aplicativo multithread usando a janela de Threads (C#, Visual Basic, C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Walkthrough: Depurar um aplicativo multithread usando a janela threads (C#, Visual Basic, C++)
 
-Vários elementos de interface do usuário Visual Studio ajudam a depurar aplicativos multithread. Este artigo apresenta os recursos de depuração multithread na janela do editor de código **local de depuração** barra de ferramentas, e **Threads** janela. Para obter informações sobre outras ferramentas para depurar aplicativos multi-threaded, consulte [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md).
+Vários elementos da interface do usuário do Visual Studio ajudam você a depurar aplicativos multithread. Este artigo apresenta recursos de depuração multithread na janela do editor de código, na barra de ferramentas **local de depuração** e na janela **threads** . Para obter informações sobre outras ferramentas para depurar aplicativos multithread, consulte [introdução à depuração de aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md).
 
-Concluir este tutorial leva apenas alguns minutos e familiariza você com as Noções básicas de depuração de aplicativos multithread.
+A conclusão deste tutorial leva apenas alguns minutos e o familiariza com os conceitos básicos da depuração de aplicativos multissegmentados.
 
 ## <a name="create-a-multithreaded-app-project"></a>Criar um projeto de aplicativo multithread
 
-Crie o seguinte projeto de aplicativo de vários threads para usar neste tutorial:
+Crie o seguinte projeto de aplicativo multithread para usar neste tutorial:
 
 1. Abra o Visual Studio e crie um projeto.
 
-    ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +** ), escolha **modelos**e, em seguida:
+   ::: moniker range=">=vs-2019"
 
-    - Para C#, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para C#. Na caixa de diálogo que aparece, escolha **Criar**.
-    - Para C++, escolha **criar novo projeto de aplicativo de Console**. Na caixa de diálogo que aparece, escolha **Criar**.
+   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
 
-    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **criar**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
-    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)** .
-    - Para um C++ aplicativo, em **Visual C++** , escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
+   Na tela Iniciar, selecione **Criar um novo projeto**.
 
-    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **Okey**.
-    ::: moniker-end
+   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C#** escolha **C++** ou na lista idioma e, em seguida, escolha **Windows** na lista plataforma. 
 
-    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+   Depois de aplicar os filtros de idioma e plataforma, escolha **o aplicativo de console (.NET Core)** ou C++, para, modelo de **aplicativo de console** e escolha **Avançar**.
 
-    O novo projeto aparece na **Gerenciador de soluções**, e um arquivo de origem chamado *Program.cs* ou *mythreadwalkthroughapp. cpp* é aberto na janela de código de origem.
+   > [!NOTE]
+   > Se você não vir o modelo correto, vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
-1. Substitua o código no arquivo de origem com o C# ou C++ exemplo de código [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md).
+   Na janela **configurar seu novo projeto** , digite ou insira *MyThreadWalkthroughApp* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
 
-1. Selecione **arquivo** > **Salvar tudo**.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
+
+   - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
+   - Para um C++ aplicativo, em **Visual C++** , escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
+
+   Se você não vir o **aplicativo de console (.NET Core)** ou, C++para, o modelo de projeto de **aplicativo de Console** , vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+   Em seguida, digite um nome como *MyThreadWalkthroughApp* e clique em **OK**.
+
+   Selecione **OK**.
+   ::: moniker-end
+
+   Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem será exibido. Dependendo do idioma escolhido, o arquivo de origem pode ser chamado *Program.cs*, *MyThreadWalkthroughApp. cpp*ou *Module1. vb*.
+
+1. Substitua o código no arquivo de origem pelo código C# de C++ exemplo ou de introdução [depuração de aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md).
+
+1. Selecione **Arquivo** > **Salvar Todos**.
 
 ## <a name="start-debugging"></a>Iniciar a depuração
 
@@ -74,128 +85,128 @@ Crie o seguinte projeto de aplicativo de vários threads para usar neste tutoria
    Console.WriteLine();
    ```
 
-1. Defina um ponto de interrupção a `Console.WriteLine();` linha clicando na medianiz esquerda, ou selecionar a linha e pressionando **F9**.
+1. Defina um ponto de interrupção na linha `Console.WriteLine();` clicando na medianiz esquerda ou selecionando a linha e pressionando **F9**.
 
    O ponto de interrupção aparece como um círculo vermelho na medianiz esquerda ao lado da linha de código.
 
-1. Selecione **Debug** > **iniciar depuração**, ou pressione **F5**.
+1. Selecione **depurar** > **Iniciar Depuração**ou pressione **F5**.
 
    O aplicativo é iniciado no modo de depuração e pausa no ponto de interrupção.
 
-1. No modo de interrupção, abra o **Threads** janela selecionando **Debug** > **Windows** > **Threads**. Você deve ser em uma sessão de depuração para abrir ou consulte os **Threads** e outras janelas de depuração.
+1. No modo de interrupção, abra a janela **threads** selecionando **depurar** > **threads**do **Windows** > . Você deve estar em uma sessão de depuração para abrir ou Ver os **threads** e outras janelas de depuração.
 
-## <a name="examine-thread-markers"></a>Examine os marcadores de thread
+## <a name="examine-thread-markers"></a>Examinar marcadores de thread
 
-1. No código-fonte, localize o `Console.WriteLine();` linha.
+1. No código-fonte, localize a linha de `Console.WriteLine();`.
 
-   1. Com o botão direito no **Threads** janela e selecione **Mostrar Threads em origem** ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no menu.
+   1. Clique com o botão direito do mouse na janela **threads** e selecione **Mostrar threads em origem** ![Mostrar threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no menu.
 
-   A medianiz ao lado do código-fonte da linha agora exibe uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "marcador de Thread"). O marcador de thread indica que um thread está parado nesse local. Se não houver mais de um thread parado no local, o ![vários threads](../debugger/media/dbg-multithreaded-show-threads.png "vários threads") ícone é exibido.
+   A medianiz ao lado da linha de código-fonte agora exibe um ![marcador](../debugger/media/dbg-thread-marker.png "Marcador de thread")de thread com ícone de *marcador de thread* . O marcador de thread indica que um thread está parado nesse local. Se houver mais de um thread parado no local, o ícone ![vários threads](../debugger/media/dbg-multithreaded-show-threads.png "vários threads") será exibido.
 
-1. Passe o ponteiro sobre o marcador de thread. Um DataTip aparece, mostrando o número de ID de thread e nome para o thread parado ou threads. Os nomes de thread podem ser `<No Name>`.
+1. Passe o ponteiro sobre o marcador de thread. Um DataTip é exibido, mostrando o nome e o número de ID do thread para o thread ou threads interrompidos. Os nomes de thread podem ser `<No Name>`.
 
    >[!TIP]
-   >Para ajudar a identificar threads sem nome, você pode renomeá-los de **Threads** janela. O thread com o botão direito e selecione **Renomear**.
+   >Para ajudar a identificar os threads sem nome, você pode renomeá-los na janela **threads** . Clique com o botão direito do mouse no thread e selecione **renomear**.
 
-1. Clique com botão direito o marcador de thread no código-fonte para ver as opções disponíveis no menu de atalho.
+1. Clique com o botão direito do mouse no marcador de thread no código-fonte para ver as opções disponíveis no menu de atalho.
 
 ## <a name="flag-and-unflag-threads"></a>Sinalizar e remover sinalizador de threads
 
-Você pode sinalizar os threads para manter o controle de threads que você deseja prestar atenção especial ao.
+Você pode sinalizar threads para acompanhar os threads para os quais você deseja prestar atenção especial.
 
-Sinalizar e remover sinalização de threads do editor de código fonte ou do **Threads** janela. Escolha se deseja exibir somente sinalizados threads ou todos os threads, do **local de depuração** ou **Threads** barras de ferramentas da janela. As seleções feitas em qualquer local afetam todos os locais.
+Sinalizar e remover o sinalizador de threads do editor de código-fonte ou da janela **threads** . Escolha se deseja exibir somente threads sinalizados ou todos os threads, das barras de ferramentas **local de depuração** ou janela **threads** . As seleções feitas de qualquer local afetam todos os locais.
 
-### <a name="flag-and-unflag-threads-in-source-code"></a>Sinalizar e remover sinalização de threads no código-fonte
+### <a name="flag-and-unflag-threads-in-source-code"></a>Sinalizar e remover o sinalizador de threads no código-fonte
 
-1. Abra o **local de depuração** barra de ferramentas selecionando **exibição** > **barras de ferramentas** > **local de depuração**. Você pode também com o botão direito na área de barra de ferramentas e selecione **local de depuração**.
+1. Abra a barra de ferramentas **local de depuração** selecionando **Exibir** > **barras de ferramentas** > local de **depuração**. Você também pode clicar com o botão direito do mouse na área da barra de ferramentas e selecionar **local de depuração**.
 
-1. O **local de depuração** barra de ferramentas tem três campos: **Processo**, **Thread**, e **quadro de pilha**. Lista suspensa a **Thread** listar e observe quantos threads lá. No **Thread** lista, o thread em execução no momento é marcado por um **>** símbolo.
+1. A barra de ferramentas do **local de depuração** tem três campos: **processo**, **thread**e registro de **ativação**. Solte a lista de **threads** e observe quantos threads existem. Na lista de **threads** , o thread atualmente em execução é marcado por um símbolo de **>** .
 
-1. Na janela de código fonte, passe o mouse sobre um ícone de marcador de thread na medianiz e selecione o ícone de sinalizador (ou um dos ícones de sinalizador vazia) no DataTip. O ícone de sinalizador fica vermelho.
+1. Na janela código-fonte, passe o mouse sobre um ícone de marcador de thread na medianiz e selecione o ícone de sinalizador (ou um dos ícones de sinalizador vazios) no DataTip. O ícone de sinalizador fica vermelho.
 
-   Você pode também com o botão direito um ícone de marcador de thread, aponte para **sinalizador**e, em seguida, selecione um thread para sinalizar no menu de atalho.
+   Você também pode clicar com o botão direito do mouse em um ícone de marcador de thread, apontar para **sinalizador**e, em seguida, selecionar um thread para sinalizar no menu de atalho.
 
-1. Sobre o **local de depuração** barra de ferramentas, selecione a **Mostrar somente Threads sinalizados** ícone ![Mostrar Threads sinalizados](../debugger/media/dbg-threads-show-flagged.png "Mostrar Threads sinalizados"), para o à direita do **Thread** campo. O ícone está esmaecido, a menos que um ou mais threads sinalizados.
+1. Na barra de ferramentas **local de depuração** , selecione o ícone **Mostrar somente threads sinalizados** ![Mostrar threads sinalizados](../debugger/media/dbg-threads-show-flagged.png "Mostrar threads sinalizados"), à direita do campo **thread** . O ícone fica esmaecido, a menos que um ou mais threads sejam sinalizados.
 
-   Somente o thread sinalizado agora aparece na **Thread** lista suspensa na barra de ferramentas. Para mostrar todos os threads novamente, selecione a **Mostrar somente Threads sinalizados** ícone novamente.
+   Somente o thread sinalizado agora aparece no menu suspenso **thread** na barra de ferramentas. Para mostrar todos os threads novamente, selecione o ícone **Mostrar somente threads sinalizados** novamente.
 
    >[!TIP]
-   >Após você sinalizou alguns threads, você pode colocar o cursor no editor de códigos, clique com botão direito e selecione **executar Threads sinalizados Cursor**. Certifique-se de escolher entrará em código que todos os threads sinalizados. **Executar Threads sinalizados até o Cursor** segmentos na linha de código, tornando mais fácil controlar a ordem de execução pelo selecionada fará uma pausa [congelando e Descongelando threads](#bkmk_freeze).
+   >Depois de sinalizar alguns threads, você pode posicionar o cursor no editor de códigos, clicar com o botão direito do mouse e selecionar **executar threads sinalizados para o cursor**. Verifique se você escolheu o código que todos os threads sinalizados atingirão. **Executar threads sinalizados para o cursor** pausará threads na linha de código selecionada, facilitando o controle da ordem de execução [congelando e descongelando threads](#bkmk_freeze).
 
-1. Para alternar o status de sinalizado ou sem sinalização do thread em execução no momento, selecione o único sinalizador **estado atual threads sinalizados** botão de barra de ferramentas, à esquerda do **Mostrar somente Threads sinalizados** botão. Sinalizar o thread atual é útil para localizar o thread atual, quando apenas threads sinalizados estão sendo exibidos.
+1. Para alternar o status sinalizado ou não sinalizado do thread em execução no momento, marque o botão de barra de ferramentas de alternância de sinalizador único **thread atual marcado** para a esquerda do botão **Mostrar somente threads sinalizados** . A sinalização do thread atual é útil para localizar o thread atual quando apenas threads sinalizados são mostrados.
 
-1. Para remover a sinalização de um thread, passe o mouse sobre o marcador de thread no código-fonte e selecione o ícone de sinalizador vermelho desmarcá-la, ou o marcador de thread com o botão direito e selecione **Remover sinalização**.
+1. Para remover o sinalizador de um thread, passe o mouse sobre o marcador de thread no código-fonte e selecione o ícone de sinalizador vermelho para limpá-lo ou clique com o botão direito do mouse no marcador de thread e selecione **desmarcar**.
 
-### <a name="flag-and-unflag-threads-in-the-threads-window"></a>Sinalizar e remover sinalização de threads na janela Threads
+### <a name="flag-and-unflag-threads-in-the-threads-window"></a>Sinalizar e remover o sinalizador de threads na janela threads
 
-No **Threads** janela, o thread sinalizado possui vermelho sinalizador ícones ao lado deles, enquanto os threads sem sinalização, se mostrado, têm ícones vazios.
+Na janela **threads** , os threads sinalizados têm ícones de sinalizador vermelhos ao lado deles, enquanto os threads não sinalizados, se mostrados, têm ícones vazios.
 
-![Janela Threads](../debugger/media/dbg-threads-window.png "janela Threads")
+![Janela Threads](../debugger/media/dbg-threads-window.png "Janela Threads")
 
-Selecione um ícone de sinalizador para alterar o estado de thread sinalizado ou sem sinalização, dependendo do seu estado atual.
+Selecione um ícone de sinalizador para alterar o estado do thread para sinalizado ou não sinalizado, dependendo de seu estado atual.
 
-Você pode também uma linha com o botão direito e selecione **sinalizador**, **Remover sinalização**, ou **Remover sinalização de todos os Threads** no menu de atalho.
+Você também pode clicar com o botão direito do mouse em uma linha e selecionar **sinalizar**, **desmarcar**ou **desmarcar todos os threads** no menu de atalho.
 
-O **Threads** barra de ferramentas da janela também tem um **Mostrar somente Threads sinalizados** botão, que é à direita, um dos ícones de sinalizador de dois. Funciona da mesma maneira como o botão sobre o **local de depuração** barra de ferramentas e um dos botões controla a exibição em ambos os locais.
+A barra de ferramentas da janela **threads** também tem um botão **Mostrar somente threads sinalizados** , que é o righthand um dos dois ícones de sinalizador. Ele funciona da mesma forma que o botão na barra de ferramentas **local de depuração** e o botão controla a exibição em ambos os locais.
 
-### <a name="other-threads-window-features"></a>Outros recursos da janela de Threads
+### <a name="other-threads-window-features"></a>Outros recursos da janela threads
 
-No **Threads** janela, selecione o cabeçalho de qualquer coluna para classificar os threads por essa coluna. Selecione novamente para inverter a ordem de classificação. Se todos os threads estão sendo exibidos, selecionando a coluna de ícone de sinalizador classifica os threads por status sinalizado ou sem sinalização.
+Na janela **threads** , selecione o cabeçalho de qualquer coluna para classificar os threads por essa coluna. Selecione novamente para inverter a ordem de classificação. Se todos os threads estiverem sendo mostrados, a seleção da coluna ícone de sinalizador classificará os threads por status sinalizado ou não sinalizado.
 
-A segunda coluna dos **Threads** janela (com nenhum cabeçalho) é a **do Thread atual** coluna. Uma seta amarela nesta coluna marca o ponto de execução atual.
+A segunda coluna da janela **threads** (sem cabeçalho) é a coluna **thread atual** . Uma seta amarela nesta coluna marca o ponto de execução atual.
 
-O **local** coluna mostra onde cada thread aparece no código-fonte. Selecione a seta de expansão ao lado de **local** entrada ou passe o mouse sobre a entrada, para mostrar uma pilha de chamadas parcial para esse thread.
+A coluna **local** mostra onde cada thread aparece no código-fonte. Selecione a seta de expansão ao lado da entrada **local** ou passe o mouse sobre a entrada para mostrar uma pilha de chamadas parcial para esse thread.
 
 >[!TIP]
->Para obter uma exibição gráfica das pilhas de chamada para threads, use o [pilhas paralelas](../debugger/using-the-parallel-stacks-window.md) janela. Para abrir a janela durante a depuração, selecione **Debug**> **Windows** > **pilhas paralelas**.
+>Para uma exibição gráfica das pilhas de chamadas para threads, use a janela [pilhas paralelas](../debugger/using-the-parallel-stacks-window.md) . Para abrir a janela, durante a depuração, selecione **depurar**> **pilhas paralelas**do **Windows** > .
 
-Além **sinalizador**, **Remover sinalização**, e **Remover sinalização de todos os Threads**, o menu de contexto para **Thread** tem itens da janela:
+Além de **sinalizar**, **desmarcar**e remover **sinalizador de todos os threads**, o menu de contexto de clique com o botão direito do mouse para itens da janela de **thread** tem:
 
-- O **Mostrar Threads em origem** botão.
-- **Exibição hexadecimal**, as alterações que o **ID do Thread**s no **Threads** janela de decimal para o formato hexadecimal.
-- [Alternar para Thread](#switch-to-another-thread), que mudará imediatamente a execução para esse thread.
-- **Renomear**, que permite que você altere o nome do thread.
+- O botão **Mostrar threads no código-fonte** .
+- **Exibição hexadecimal**, que altera a **ID do thread**s na janela **threads** do formato decimal para hexadecimal.
+- [Alterne para thread](#switch-to-another-thread), que imediatamente alterna a execução para esse thread.
+- **Renomear**, que permite alterar o nome do thread.
 - [Congelar e descongelar](#bkmk_freeze) comandos.
 
-## <a name="bkmk_freeze"></a> Congelar e descongelar a execução de thread
+## <a name="bkmk_freeze"></a>Congelar e descongelar a execução do thread
 
-Você pode congelar e descongelar, ou suspender e retomar os threads para controlar a ordem na qual os threads de executam o trabalho. Congelando e Descongelando threads podem ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
+Você pode congelar e descongelar, ou suspender e retomar, threads para controlar a ordem na qual os threads executam o trabalho. Congelar e descongelar Threads pode ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
 
 > [!TIP]
-> Para seguir um único thread sem congelamento de outros threads, que também é um cenário comum de depuração, consulte [começar a depurar aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
+> Para seguir um único thread sem congelar outros threads, que também é um cenário de depuração comum, consulte Introdução à [depuração de aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
 
 **Para congelar e descongelar threads:**
 
-1. No **Threads** janela, clique em qualquer thread e, em seguida, selecione **congelar**. Um **pausa** ícone na **Thread atual** coluna indica que o thread está congelado.
+1. Na janela **threads** , clique com o botão direito do mouse em qualquer thread e selecione **congelar**. Um ícone de **pausa** na coluna **thread atual** indica que o thread está congelado.
 
-1. Selecione **colunas** na **Threads** barra de ferramentas da janela e, em seguida, selecione **contagem suspensa** para exibir o **contagem suspensa** coluna. É o valor de contagem suspensa para o thread congelado **1**.
+1. Selecione **colunas** na barra de ferramentas da janela **threads** e selecione **contagem suspensa** para exibir a coluna **contagem suspensa** . O valor da contagem suspensa para o thread congelado é **1**.
 
-1. Clique com botão direito no thread congelado e selecione **descongelar**.
+1. Clique com o botão direito do mouse no thread congelado e selecione **descongelar**.
 
-   O **pausa** ícone desaparece e o **contagem suspensa** valor muda para **0**.
+   O ícone de **pausa** desaparece e o valor da **contagem suspensa** é alterado para **0**.
 
-## <a name="switch-to-another-thread"></a>Mudar para outro thread
+## <a name="switch-to-another-thread"></a>Alternar para outro thread
 
-Você poderá ver uma **o aplicativo está no modo de interrupção** janela quando você tentar mudar para outro thread. Esta janela indica que o thread não tem qualquer código que o depurador atual pode exibir. Por exemplo, você pode depurar o código gerenciado, mas o thread é o código nativo. A janela oferece sugestões para resolver o problema.
+Você pode ver que **o aplicativo está na** janela de modo de interrupção quando você tenta alternar para outro thread. Essa janela informa que o thread não tem nenhum código que o depurador atual possa exibir. Por exemplo, você pode estar Depurando código gerenciado, mas o thread é código nativo. A janela oferece sugestões para resolver o problema.
 
 **Para alternar para outro thread:**
 
-1. No **Threads** janela, anote a ID do thread atual, que é o thread com uma seta amarela na **Thread atual** coluna. Você vai querer voltar para esse thread para continuar seu aplicativo.
+1. Na janela **threads** , anote a ID do thread atual, que é o thread com uma seta amarela na coluna **thread atual** . Você desejará voltar para este thread para continuar seu aplicativo.
 
-1. Um thread diferente com o botão direito e selecione **alternar para Thread** no menu de contexto.
+1. Clique com o botão direito do mouse em um thread diferente e selecione **alternar para thread** no menu de contexto.
 
-1. Observe que o local de seta amarela foi alterado na **Threads** janela. O marcador de thread atual original também permanece, como uma estrutura de tópicos.
+1. Observe que o local da seta amarela foi alterado na janela **threads** . O marcador de thread atual original também permanece como um contorno.
 
-   Examine a dica de ferramenta sobre o marcador de thread no editor de código fonte e a lista na **Thread** lista suspensa a **local de depuração** barra de ferramentas. Observe que o thread atual também foi alterado lá.
+   Examine a dica de ferramenta no marcador de thread no editor de código-fonte e a lista no menu suspenso **thread** na barra de ferramentas **local de depuração** . Observe que o thread atual também foi alterado lá.
 
-1. Sobre o **local de depuração** barra de ferramentas, selecione um thread diferente do **Thread** lista. Observe que o thread atual também será alterada em dois locais.
+1. Na barra de ferramentas **local de depuração** , selecione um thread diferente na lista **thread** . Observe que o thread atual também é alterado nos outros dois locais.
 
-1. No editor de código fonte, clique com botão direito um marcador de thread, aponte para **alternar para Thread**e selecione outro thread na lista. Observe que o thread atual é alterado em todos os três locais.
+1. No editor de código-fonte, clique com o botão direito do mouse em um marcador de thread, aponte para **alternar para thread**e selecione outro thread na lista. Observe que o thread atual é alterado em todos os três locais.
 
-Com o marcador de thread no código-fonte, você pode alternar somente para threads que pararam nesse local. Ao usar a janela **Threads** e a barra de ferramentas **Localização de Depuração**, você pode alternar para qualquer thread.
+Com o marcador de thread no código-fonte, você pode alternar somente para threads que são interrompidos nesse local. Ao usar a janela **Threads** e a barra de ferramentas **Localização de Depuração**, você pode alternar para qualquer thread.
 
-Você aprendeu as Noções básicas de depuração de aplicativos multithread. Você pode observar, sinalizar e remover sinalização e congelar e descongelar threads usando a **Threads** janela, o **Thread** listar no **local de depuração** barra de ferramentas ou marcadores de thread no editor de código fonte.
+Agora você aprendeu os conceitos básicos da depuração de aplicativos multissegmentados. Você pode observar, sinalizar e desmarcar e congelar e descongelar Threads usando a janela **threads** , a lista de **threads** na barra de ferramentas **local de depuração** ou marcadores de thread no editor de código-fonte.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
