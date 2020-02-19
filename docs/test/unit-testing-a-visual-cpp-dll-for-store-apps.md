@@ -48,7 +48,7 @@ Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** >
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     {1&gt;Observe que:&lt;1}
+     Observe que:
 
     - Cada teste é definido usando `TEST_METHOD(YourTestName){...}`.
 
@@ -186,7 +186,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
    }
    ```
 
-4. {1&gt;Compile a solução.&lt;1}
+4. Compile a solução.
 
     O novo teste é exibido no **Gerenciador de Testes**, no nó **Não Executar Testes**.
 

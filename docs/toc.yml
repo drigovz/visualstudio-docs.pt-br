@@ -64,7 +64,7 @@
               href: install/automated-installation-with-response-file.md
             - name: Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
-            - name: Definir padrões para implantações corporativas do Visual Studio
+            - name: Definir padrões para implantações empresariais do Visual Studio
               href: install/set-defaults-for-enterprise-deployments.md
             - name: Implantar o Help Viewer
               items:
@@ -360,8 +360,10 @@
                   href: ide/reference/convert-get-method-to-property.md
                 - name: Converter função local em método
                   href: ide/reference/convert-local-function-method.md
-                - name: Converter o loop foreach ao LINQ
+                - name: Converter o loop foreach em LINQ
                   href: ide/reference/convert-foreach-linq.md
+                - name: Converter instrução if em instrução switch ou em expressão switch
+                  href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Converter a consulta LINQ em uma instrução foreach
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: Converter instrução switch em expressão switch
@@ -398,6 +400,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Renomear
                   href: ide/reference/rename.md
+                - name: Simplificar a interpolação da cadeia de caracteres
+                  href: ide/reference/simplify-string-interpolation.md
                 - name: Classificar usos
                   href: ide/reference/sort-usings.md
                 - name: Dividir ou mesclar instruções if
@@ -583,7 +587,7 @@
           items:
             - name: Visão geral do Designer de Formulários do Windows
               href: designers/windows-forms-designer-overview.md
-            - name: Introdução ao Designer de Formulários do Windows
+            - name: introdução ao Designer de Formulários do Windows
               href: designers/walkthrough-windows-forms-designer.md
             - name: Organizar controles >>
               href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
@@ -686,7 +690,7 @@
               items:
                 - name: Trabalhar com texturas e imagens
                   href: designers/working-with-textures-and-images.md
-                - name: Editor de imagens
+                - name: Editor de imagem
                   href: designers/image-editor.md
                 - name: Exemplos de editor de imagens
                   items:
@@ -758,7 +762,7 @@
                   href: designers/how-to-export-a-texture-that-contains-mipmaps.md
                 - name: Exportar uma textura que tenha o alfa pré-multiplicado
                   href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
-                - name: Exportar uma textura para uso com aplicativos Direct2D ou JavaScript
+                - name: exportar uma textura para uso com aplicativos Direct2D ou JavaScript
                   href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
         - name: Arquivos XAML >>
           href: xaml-tools/index.yml
@@ -943,7 +947,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Comando Alias
           href: ide/reference/alias-command.md
-        - name: Comando Avaliar Instrução
+        - name: comando Avaliar Instrução
           href: ide/reference/evaluate-statement-command.md
         - name: Comando Localizar
           href: ide/reference/find-command.md
@@ -1030,7 +1034,7 @@
           href: ide/reference/miscellaneous-files.md
         - name: Opções
           items:
-            - name: Caixa de diálogo Opções
+            - name: caixa de diálogo Opções
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Ambiente
               items:
@@ -1180,7 +1184,7 @@
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
-        - name: Janela de Saída
+        - name: janela Saída
           href: ide/reference/output-window.md
         - name: Propriedades do projeto
           items:
@@ -1249,7 +1253,7 @@
               href: ide/reference/signing-page-project-designer.md
         - name: 'Páginas de Propriedade, JavaScript'
           href: ide/reference/property-pages-javascript.md
-        - name: Janela Propriedades
+        - name: Janela de Propriedades
           href: ide/reference/properties-window.md
         - name: Referência do Team Explorer
           href: ide/reference/team-explorer-reference.md
@@ -1369,17 +1373,17 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Novidades no Visual Studio 2019
       href: ide/whats-new-visual-studio-2019.md
-    - name: Notas sobre a versão e requisitos do sistema
+    - name: Notas de versão e requisitos do sistema
       items:
         - name: Ritmo de lançamento
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: Notas sobre a versão atuais
+            - name: Notas de versão atuais
               href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: Notas sobre a versão prévia
+            - name: Notas de versão da versão prévia
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: Histórico de notas sobre a versão
+            - name: Histórico de notas de versão
               href: /visualstudio/releasenotes/vs2017-relnotes-history/
             - name: Código distribuível
               href: /visualstudio/productinfo/2017-redistribution-vs/
@@ -1389,11 +1393,11 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: Notas sobre a versão atual
+            - name: Notas de versão atuais
               href: /visualstudio/releases/2019/release-notes/
-            - name: Notas sobre a versão prévia
+            - name: Notas de versão da versão prévia
               href: /visualstudio/releases/2019/release-notes-preview/
-            - name: Histórico de notas sobre a versão
+            - name: Histórico de notas de versão
               href: /visualstudio/releases/2019/release-notes-history/
             - name: Código distribuível
               href: /visualstudio/releases/2019/redistribution/
@@ -1434,5 +1438,5 @@
           href: ide/report-a-problem-perfview.md
     - name: Sugerir um recurso
       href: ide/suggest-a-feature.md
-    - name: Privacidade de dados da Developer Community
+    - name: Privacidade de dados da Comunidade de Desenvolvedores
       href: ide/developer-community-privacy.md

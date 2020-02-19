@@ -67,6 +67,6 @@ No arquivo *.cpp* de teste, adicione as diretivas `#include` necessárias para q
 
 Agora, você está pronto para gravar e executar testes no Google Test. Confira a [Prévia do Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) para obter informações sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)

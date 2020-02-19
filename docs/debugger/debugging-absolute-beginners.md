@@ -1,7 +1,7 @@
 ---
 title: Depurando código para iniciantes absolutos
 description: Se você estiver depurando pela primeira vez, conheça alguns princípios para ajudá-lo a executar seu aplicativo no modo de depuração com o Visual Studio
-ms.date: 07/06/2018
+ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679381"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416387"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -54,7 +54,7 @@ Antes de investigar um bug ou um erro, pense nas suposições que fizeram você 
 * Você conhece a intenção do código? Geralmente é mais difícil depurar o código de outra pessoa. Se não for seu código, poderá ser que você precise passar um tempo aprendendo exatamente o que o código faz antes de poder depurá-lo efetivamente.
 
     > [!TIP]
-    > Ao escrever o código, comece aos poucos e com um código que funciona! (Um bom código de exemplo é útil aqui.) Às vezes, é mais fácil corrigir um conjunto de código grande ou complicado começando com um pequeno trecho de código que demonstra a tarefa principal que você está tentando alcançar. Em seguida, será possível modificar ou adicionar código de forma incremental, testando se há erros em cada ponto.
+    > Ao escrever o código, comece aos poucos e com um código que funciona! (Um bom código de exemplo é útil aqui.) Às vezes, é mais fácil corrigir um conjunto de código grande ou complicado, começando com uma pequena parte do código que demonstra a tarefa principal que você está tentando atingir. Em seguida, será possível modificar ou adicionar código de forma incremental, testando se há erros em cada ponto.
 
 Questionando suas suposições, você pode reduzir o tempo que leva para encontrar um problema em seu código. Você também pode reduzir o tempo necessário para corrigir um problema.
 
@@ -64,7 +64,7 @@ Quando normalmente você executa um aplicativo, você vê erros e resultados inc
 
 Executar um aplicativo dentro do depurador, também chamado de *modo de depuração*, significa que o depurador monitora ativamente tudo que está acontecendo conforme o programa é executado. Isso também permite pausar o aplicativo a qualquer momento para examinar seu estado e percorrer seu código linha por linha para observar todos os detalhes à medida que acontecem.
 
-No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
+No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando **debug** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![inicia a depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 Se você não recebeu uma exceção, você provavelmente tem uma boa ideia de onde procurar o problema em seu código. É aí que você usa os *pontos de interrupção* com o depurador para ter uma oportunidade de examinar o código mais cuidadosamente. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica onde o Visual Studio deve pausar seu código em execução para você poder examinar os valores das variáveis ou o comportamento da memória ou a sequência na qual o código é executado.
 
@@ -85,13 +85,13 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 1. Abra o Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Na tela Iniciar, selecione **Criar um novo projeto**. Digite **console** na caixa de pesquisa e, em seguida, escolha **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)**. Escolha **Avançar**. Digite um nome de projeto como **ConsoleApp-FirstApp** e clique em **Criar**.
+    Na tela Iniciar, selecione **Criar um novo projeto**. Digite **console** na caixa de pesquisa e escolha o **aplicativo de console (.NET Core)** ou o **aplicativo de console (.NET Framework)** . Selecione **Avançar**. Digite um nome de projeto como **ConsoleApp-FirstApp** e clique em **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Aplicativo de Console** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)**. Digite um nome como **ConsoleApp-FirstApp** e clique em **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#** , escolha **Aplicativo de Console** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)** . Digite um nome como **ConsoleApp-FirstApp** e clique em **OK**.
     ::: moniker-end
 
-    Caso não veja o modelo de projeto **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)**, acesse **Ferramentas** > **Obter Ferramentas e Recursos**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para Desktop do .NET** ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core** e, em seguida, escolha **Modificar**.
+    Caso não veja o modelo de projeto **Aplicativo de Console (.NET Framework)** ou **Aplicativo de Console (.NET Core)** , acesse **Ferramentas** > **Obter Ferramentas e Recursos**, que abre o Instalador do Visual Studio. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de desktop .net** e escolha **Modificar**.
 
     O Visual Studio criará o console do projeto, que será aberto no Gerenciador de Soluções no painel direito.
 
@@ -182,9 +182,9 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
 ### <a name="run-the-app"></a>Executar o aplicativo
 
-1. Pressione **F5** ou o botão **Iniciar depuração** ![Iniciar depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuração") na Barra de ferramentas de Depuração, localizada em cima do editor de códigos.
+1. Pressione **F5** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas depurar, localizada acima do editor de códigos.
 
-    O aplicativo é iniciado e não há exceções mostradas pelo depurador. No entanto, a saída que você vê na janela do console é não o que você espera. Veja a saída esperada:
+    O aplicativo é iniciado e não há exceções mostradas pelo depurador. No entanto, a saída que você vê na janela do console é não o que você espera. Esta é a saída esperada:
 
     ```
     Tadpole  400,  Spiral
@@ -223,7 +223,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
     Como vemos um problema na saída, começaremos a depuração examinando o código anterior que define a saída no depurador.
 
-1. Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
+1. Clique no botão **reiniciar** ![aplicativo de reinicialização](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
     O aplicativo fará uma pausa no ponto de interrupção que você definir. O realce amarelo indica onde o depurador está em pausa (a linha de código amarela ainda não foi executada).
 
@@ -255,7 +255,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
     public GType GalaxyType { get; set; }
     ```
 
-1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para recompilar o código e reiniciar.
+1. Clique no botão **reiniciar** ![aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") de reinicialização na barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para recompilar o código e reiniciar.
 
     Agora, quando o depurador for pausado no `Console.WriteLine`, será possível focalizar `theGalaxy.GalaxyType.MyGType` e ver que o valor foi devidamente definido.
 
@@ -280,7 +280,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
     Esse código é onde o tipo de galáxia foi definido, portanto, queremos examiná-la mais de perto.
 
-1. Clique no botão **Reiniciar** ![Reiniciar aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na Barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para reiniciar.
+1. Clique no botão **reiniciar** ![aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") de reinicialização na barra de ferramentas de depuração (**Ctrl** + **Shift** + **F5**) para reiniciar.
 
     O depurador é pausado na linha de código em que você definiu o ponto de interrupção.
 

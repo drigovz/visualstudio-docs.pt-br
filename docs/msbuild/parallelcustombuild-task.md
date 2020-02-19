@@ -28,17 +28,17 @@ ms.locfileid: "77279259"
 
 Executar instâncias paralelas da [tarefa CustomBuild](../msbuild/custombuild-task.md).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **ParallelCustomBuild**.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Parâmetro opcional **bool**.|
 |**MaxItemsInBatch**|Parâmetro **int** opcional.|
 |**MaxProcesses**|Parâmetro **int** opcional.|
 |**Fontes**|Parâmetro obrigatório **ITaskItem[]** .|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)

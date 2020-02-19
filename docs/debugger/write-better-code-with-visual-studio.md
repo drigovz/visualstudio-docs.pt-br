@@ -4,7 +4,7 @@ description: Escreva código melhor com menos bugs usando o Visual Studio para c
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000167"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416380"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ferramentas e técnicas de depuração para ajudá-lo a escrever código melhor
 
@@ -42,14 +42,26 @@ O código a seguir tem alguns bugs que você pode corrigir usando o IDE do Visua
 
 Para criar o aplicativo:
 
-1. Abra o Visual Studio e escolha **arquivo** > **novo** **projeto**de > . Em **Visual C#** , escolha **Windows Desktop** ou **.NET Core**e, no painel central, escolha um **aplicativo de console**.
+1. Você deve ter o Visual Studio instalado e o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de desktop .net** instalada, dependendo do tipo de aplicativo que você deseja criar.
 
-    > [!NOTE]
-    > Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e escolha **Modificar**.
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
 
-2. No campo **nome** , digite **Console_Parse_JSON** e clique em **OK**. O Visual Studio cria o projeto.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de área de trabalho .net** e escolha **Modificar**.
 
-3. Substitua o código padrão no arquivo *Program.cs* do projeto pelo código de exemplo abaixo.
+1. Abra o Visual Studio.
+
+    ::: moniker range=">=vs-2019"
+    Na tela Iniciar, selecione **Criar um novo projeto**. Digite **console** na caixa de pesquisa e escolha o **aplicativo de console (.NET Core)** ou o **aplicativo de console (.NET Framework)** . Selecione **Avançar**. Digite um nome de projeto como **Console_Parse_JSON** e clique em **criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , em **Visual C#** , escolha **aplicativo de console**e, no painel central, escolha o **aplicativo de console (.NET Core)** ou **aplicativo de console (.NET Framework)** . Digite um nome como **Console_Parse_JSON** e clique em **OK**.
+    ::: moniker-end
+
+    Se você não vir o modelo de projeto **aplicativo de console (.NET Core)** ou **aplicativo de console (.NET Framework)** , vá para **ferramentas** > **obter ferramentas e recursos**, o que abre o instalador do Visual Studio. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de desktop .net** e escolha **Modificar**.
+
+    O Visual Studio criará o console do projeto, que será aberto no Gerenciador de Soluções no painel direito.
+
+1. Substitua o código padrão no arquivo *Program.cs* do projeto pelo código de exemplo abaixo.
 
 ```csharp
 using System;
@@ -241,7 +253,7 @@ O rabisco verde desaparece.
 
 Quando você tiver corrigido todos os rabiscos vermelhos e resolvidos, ou pelo menos investigado, todos os rabiscos verdes, você estará pronto para iniciar o depurador e executar o aplicativo.
 
-Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
+Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
 
 Neste ponto, o aplicativo de exemplo gera uma exceção de `SerializationException` (um erro de tempo de execução). Ou seja, o aplicativo obstru os dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (depurador anexado), o auxiliar de exceção do depurador leva você diretamente ao código que gerou a exceção e fornece uma mensagem de erro útil.
 
@@ -251,7 +263,7 @@ A mensagem de erro instrui você que o valor `4o` não pode ser analisado como u
 
 Ao chegar a uma exceção, você precisa fazer (e responder) algumas perguntas:
 
-* Essa exceção é apenas um bug que você pode corrigir? Ou
+* Essa exceção é apenas um bug que você pode corrigir? Ou,
 
 * Essa exceção é algo que os usuários podem encontrar?
 
@@ -261,7 +273,7 @@ Se for o primeiro, corrija o bug. (No aplicativo de exemplo, isso significa corr
 users = ser.ReadObject(ms) as User[];
 ```
 
-com este código:
+por este código:
 
 ```csharp
 try
@@ -300,7 +312,7 @@ Para o aplicativo de exemplo, corrija o `SerializationException` no método `Get
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Esclarecer sua intenção de código usando Assert
 
-Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**). Isso reinicia o aplicativo em menos etapas. Você verá a seguinte saída na janela do console.
+Clique no botão **reiniciar** ![aplicativo de reinicialização](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**). Isso reinicia o aplicativo em menos etapas. Você verá a seguinte saída na janela do console.
 
 ![Valor nulo na saída](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +348,7 @@ Ao adicionar `assert` instruções como essa às suas funções durante o proces
 
 Ao especificar a intenção dessa forma, você impõe suas necessidades. Esse é um método simples e útil que você pode usar para surgir bugs durante o desenvolvimento. (`assert` instruções também são usadas como o elemento principal em testes de unidade.)
 
-Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
+Clique no botão **reiniciar** ![aplicativo de reinicialização](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
 > O código de `assert` está ativo somente em uma compilação de depuração.
@@ -358,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-com este código:
+por este código:
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)

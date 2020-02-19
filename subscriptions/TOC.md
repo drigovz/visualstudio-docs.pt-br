@@ -27,7 +27,7 @@
 ### Ferramentas
 #### [Crédito individual do Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure Pay-As-You-Go](vs-azure-payg.md)
+#### [Pagamento Conforme o Uso do Azure DevTest](vs-azure-payg.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [Superalocações](handle-overclaimed-license.md)
 ### [Uso máximo](maximum-usage.md)
 ### [Assinaturas expiradas](handle-expired-license.md)
-### [Assinantes que usam aliases](aliasing.md)
+### [Cenários de conexão do assinante ](aliasing.md)
 ### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ### [Gerenciando o Visual Studio com o GitHub Enterprise](assign-github.md)
 # Recursos
