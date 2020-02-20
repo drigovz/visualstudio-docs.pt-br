@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657436"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476913"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para a designer de formulários do Windows, uma consideração especial entra em cena: os nomes de coluna nos rótulos de legenda são reformatados em uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas como concatenadas Unido. Você pode personalizar a maneira como esses rótulos são criados, definindo os valores **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** no **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** chave do registro de data designers.
+Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para a designer de formulários do Windows, uma consideração especial entra em cena: os nomes de coluna nos rótulos de legenda são reformatados em uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas para serem concatenadas juntas. Você pode personalizar a maneira como esses rótulos são criados, definindo os valores **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** na chave de registro **HKEY_CURRENT_USER designers do \software\microsoft\visualstudio\10.0\data** .
 
 > [!NOTE]
 > Essa chave do registro não existe até que você a crie.
@@ -39,7 +39,7 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
  A tabela a seguir descreve os valores de registro que controlam os rótulos de legenda.
 
-|Item do registro|Descrição|
+|Item do registro|DESCRIÇÃO|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|A expressão regular usada para corresponder seus padrões.|
 |**SmartCaptionReplacement**|O formato para exibir todos os grupos correspondentes na **SmartCaptionExpression**.|
@@ -49,14 +49,12 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
 |Item do registro|Valor padrão|Explicação|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Corresponde a um caractere minúsculo seguido por um caractere maiúsculo ou um sublinhado.|
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Corresponde a um caractere minúsculo seguido por um caractere maiúsculo ou um sublinhado.|
 |**SmartCaptionReplacement**|$1 $2|O $1 representa os caracteres correspondentes nos primeiros parênteses da expressão, e o $2 representa os caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e a segunda correspondência.|
 |**SmartCaptionSuffix**|:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo a tornará `Company Name:`|
 
 > [!CAUTION]
 > Você deve ter muito cuidado ao fazer qualquer coisa no editor do registro. Faça backup do registro antes de editá-lo. Se você usar o editor do registro incorretamente, poderá causar sérios problemas que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que os problemas que você causa usando o editor do registro incorretamente possam ser resolvidos. Use o Editor do Registro por sua conta e risco.
->
-> O artigo da base de conhecimento a seguir contém instruções para fazer backup, editar e restaurar o registro: [Descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de legenda inteligente da janela fontes de dados
 
@@ -126,5 +124,5 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
      Na próxima vez que você arrastar itens da janela **fontes de dados** , os rótulos de legenda serão criados com legendas não modificadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

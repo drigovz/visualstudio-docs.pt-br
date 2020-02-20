@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba mais sobre a nova oferta do Visual Studio + GitHub
-ms.openlocfilehash: d8507667f214430513ba2ad84bbe787e5a042899
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439134"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476746"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introdução às assinaturas do Visual Studio com o GitHub Enterprise  
 
@@ -81,8 +81,8 @@ R: junto com uma assinatura do GitHub Enterprise, você recebe uma assinatura co
 Se você for novo no GitHub, confira o [Laboratório de Aprendizagem do GitHub](https://lab.github.com/), que mostra uma série de projetos divertidos e práticos, compartilhando comentários úteis.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](/visualstudio/)
-- [Documentação do Azure DevOps](/azure/devops/)
-- [Documentação do Azure](/azure/)
-- [Documentação do Microsoft 365](/microsoft-365/)
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

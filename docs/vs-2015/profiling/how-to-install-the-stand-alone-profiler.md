@@ -1,5 +1,5 @@
 ---
-title: 'Como: Instalar o criador de perfil independente | Microsoft Docs'
+title: Como instalar o criador de perfil autônomo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432728"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476792"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Como: Instalar o Profiler autônomo
+# <a name="how-to-install-the-stand-alone-profiler"></a>Como instalar o criador de perfil autônomo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece uma linha de comando baseada no criador de perfil autônomo que pode ser executado sem instalar o IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Essa situação ocorre quando um computador não tiver ou não puder ter um ambiente de desenvolvimento instalado. Por exemplo, você não deve instalar um ambiente de desenvolvimento em um servidor Web de produção.  
@@ -41,20 +41,20 @@ ms.locfileid: "63432728"
     > [!NOTE]
     > Se as informações de uso para vsinstr.exe forem exibidas, tudo está configurado corretamente. Se você vir um erro que afirme vsinstr.exe ou uma de suas dependências não for encontrada, certifique-se de que você tenha seus caminhos configurados corretamente, conforme descrito na etapa 2.  
   
-4. Configure o servidor de símbolos definindo sua variável **NT_SYMBOL_PATH** como **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
+4. Configure o servidor de símbolos definindo sua variável de **_NT_SYMBOL_PATH** como `symsrv*symsrv.dll*c:\localcache* https://msdl.microsoft.com/download/symbols`  
   
-5. Depois de configurar o servidor de símbolo usando as variáveis de ambiente do sistema, execute as ferramentas do criador de perfil de linha de comando em um novo prompt de comando. Isso permite que as novas variáveis de ambiente entrem em vigor. Na janela de prompt de comando, digite o seguinte comando:  
+5. Depois de configurar o servidor de símbolo usando as variáveis de ambiente do sistema, execute as ferramentas do criador de perfil de linha de comando em um novo prompt de comando. Isso permite que as novas variáveis de ambiente entrem em vigor. Na janela do prompt de comando, digite o seguinte comando:  
   
      **start %COMSPEC%**  
   
     > [!NOTE]
-    > Para obter instruções detalhadas sobre como configurar o pacote do servidor de símbolos, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Para obter instruções detalhadas sobre como configurar o pacote de servidor de símbolos, consulte [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para serializar os símbolos no arquivo de dados (.vsp) de criação de perfil. Use a opção **VSPerfReport /summary:all /packsymbols**. Se você não tiver símbolos inseridos no arquivo de dados, certifique-se de que tenha o conjunto de variáveis de ambiente NT_SYMBOL_PATH.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Passo a passo: Criação de perfil usando amostragem de linha de comando](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Passo a passo: Linha de comando usando instrumentação de criação de perfil](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Como: Informações de símbolo do Windows de referência](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Passo a passo: criação de perfil de linha de comando usando amostragem](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Passo a passo: criação de perfil de linha de comando usando instrumentação](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

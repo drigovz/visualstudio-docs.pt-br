@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587167"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506460"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de regras para agrupar regras de análise de código
 
@@ -24,7 +24,7 @@ Ao configurar a análise de código no Visual Studio, você pode escolher em uma
 
 Você pode personalizar um conjunto de regras adicionando ou excluindo regras ou alterando severidades de regra para que apareçam como avisos ou erros no **lista de erros**. Conjuntos de regras personalizados podem atender a uma necessidade de seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, o editor de conjunto de regras fornece ferramentas de pesquisa e filtragem para ajudá-lo no processo.
 
-Os conjuntos de regras estão disponíveis para [análise de código gerenciado](analyzer-rule-sets.md), [análise herdada de código gerenciado](how-to-configure-code-analysis-for-a-managed-code-project.md)e [ C++ análise de código](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+Os conjuntos de regras estão disponíveis para [análise de código gerenciado](analyzer-rule-sets.md), [análise herdada de código gerenciado](how-to-configure-code-analysis-for-a-managed-code-project.md)e [ C++ análise de código](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Formato do conjunto de regras
 
@@ -67,6 +67,6 @@ O conjunto de regras para um projeto é especificado pela propriedade **CodeAnal
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)

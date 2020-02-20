@@ -1,5 +1,5 @@
 ---
-title: Limitações na depuração de Script | Microsoft Docs
+title: Limitações na depuração de script | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160627"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476812"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitações na depuração de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte à depuração de scr
   
 - Os pontos de interrupção devem ser definidos dentro dos blocos de `<script>`. Não é possível mapear pontos de interrupção em scripts embutidos ou em blocos de `<% %>`.  
   
-- A URL do navegador da página deve conter o nome da página. Por exemplo, http://microsoft.com/default.apsx. Mapeamento de ponto de interrupção não é possível reconhecer um redirecionamento de um endereço como http://microsoft.com para a página padrão.  
+- A URL do navegador da página deve conter o nome da página. Por exemplo, `http://microsoft.com/default.apsx`. O mapeamento de ponto de interrupção não pode reconhecer um redirecionamento de um endereço como `http://microsoft.com` para a página padrão.  
   
 - O ponto de interrupção deve ser definido na página especificada na URL do navegador, não em um arquivo de controle ASPX (ascx), uma página mestre ou outro arquivo incluído por essa página. Não é possível mapear pontos de interrupção definidos em páginas incluídas.  
   

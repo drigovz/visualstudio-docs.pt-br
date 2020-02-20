@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476866"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -78,7 +78,7 @@ O Visual Studio inclui um conjunto interno de [analisadores do .NET Compiler Pla
 
 ### <a name="c-code-analysis"></a>Análise de código C++
 
-Para analisar o código C++, execute a [análise de código estático](../code-quality/quick-start-code-analysis-for-c-cpp.md). Crie o hábito de executá-lo depois de limpar os erros óbvios que impediam um build bem-sucedido e reserve um tempo para resolver os avisos que ele pode produzir. Você evitará algumas dores de cabeça no futuro, bem como aprenderá algumas técnicas de estilo de código.
+Para analisar o código C++, execute a [análise de código estático](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). Crie o hábito de executá-lo depois de limpar os erros óbvios que impediam um build bem-sucedido e reserve um tempo para resolver os avisos que ele pode produzir. Você evitará algumas dores de cabeça no futuro, bem como aprenderá algumas técnicas de estilo de código.
 
 Pressione **Alt**+**F11** (ou selecione **Analisar** > **Executar Análise de Código na Solução** no menu superior) para iniciar a análise de código estático.
 
@@ -166,7 +166,7 @@ Para começar, leia [Gerar testes de unidade para seu código com IntelliTest](.
 
 Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajudá-lo a criar código de melhor qualidade, leia [Noções básicas de teste de unidade](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Saiba mais sobre como usar o depurador](../debugger/index.yml)

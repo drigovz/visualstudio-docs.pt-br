@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718709"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506404"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas para resolver os problemas.
@@ -66,7 +66,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
    1. Localize o CLSID do VSPackage na seção pacotes do registro:
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<versão >* \Packages
 
    2. Verifique se o caminho fornecido pela subchave SatelliteDll está correto.
 
@@ -76,7 +76,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
      Bons pontos de partida para depuração são o construtor e o método de inicialização. Você também pode definir pontos de interrupção na área que deseja avaliar, como um comando de menu. Para habilitar pontos de interrupção, você deve executar sob o depurador.
 
-    1. No menu **Projeto**, clique em **Propriedades**.
+    1. No menu **Projeto** , clique em **Propriedades**.
 
     2. Na caixa de diálogo **páginas de propriedades** , selecione a guia **depurar** .
 
@@ -99,7 +99,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
     2. Adicionar este **arquivo de símbolo (. pdb) local**:
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Para melhorar o desempenho, especifique uma pasta de cache de símbolos, por exemplo:
 
@@ -111,7 +111,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
 1. Para código gerenciado, verifique se os caminhos de referência estão corretos.
 
-   1. No menu **Projeto**, clique em **Propriedades**.
+   1. No menu **Projeto** , clique em **Propriedades**.
 
    2. Selecione a guia **referências** na caixa de diálogo **páginas de propriedades** e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **pesquisador de objeto** para procurar os objetos referenciados.
 
@@ -119,9 +119,9 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
 2. Para código não gerenciado, localize o CLSID do VSPackage no nó do registro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<versão >* \CLSID
 
    Verifique se a entrada InprocServer32 tem o caminho correto da dll VSPackage.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [VSPackages](../extensibility/internals/vspackages.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento LocalizedName (esquema de pacote de idiomas do VSIX) | Microsoft Docs
+title: Elemento localizadaname (esquema do pacote de idiomas do VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686147"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477032"
 ---
-# <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (esquema de pacote de idiomas do VSIX)
+# <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento localizadaname (esquema do pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Necessário. O nome localizado da extensão a ser instalado.  
+Obrigatórios. O nome localizado da extensão a ser instalada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -27,39 +27,39 @@ Necessário. O nome localizado da extensão a ser instalado.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
- As seções a seguir descrevem atributos, elementos filho e elementos pai.  
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.  
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
+|Atributo|DESCRIÇÃO|  
 |---------------|-----------------|  
 |Nenhum||  
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
 |Nenhum||  
   
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos Pai  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
-|[Elemento LanguagePack do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Necessário. Fornece o elemento raiz para um pacote de idiomas do VSIX.|  
+|[Elemento LanguagePack do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obrigatórios. Fornece o elemento raiz para um pacote de idiomas do VSIX.|  
   
-## <a name="text-value"></a>Valor de texto  
- Necessário. O nome do pacote de idiomas no idioma de destino.  
+## <a name="text-value"></a>Valor de Texto  
+ Obrigatórios. O nome do pacote de idiomas no idioma de destino.  
   
-## <a name="element-information"></a>Informações do elemento  
+## <a name="element-information"></a>Informações sobre o elemento  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Nome do esquema   |                 Esquema de pacote de idiomas do VSIX                 |
+|    Namespace    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nome do Esquema   |                 Esquema do pacote de idiomas do VSIX                 |
 | Arquivo de validação |                VSIXLanguagePackSchema.xsd                 |
-|  Pode ser vazio   |                      Não aplicável                       |
+|  Pode estar vazio   |                      Não aplicável                       |
   
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema do pacote de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localizar pacotes VSIX](../extensibility/localizing-vsix-packages.md)   
- [Referência de esquema 1.0 de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de esquema do pacote de idiomas VSX](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Localizando pacotes VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110))

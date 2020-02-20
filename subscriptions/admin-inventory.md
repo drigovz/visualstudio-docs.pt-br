@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
-ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439108"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476736"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
 As assinaturas do Visual Studio simplificam o gerenciamento de ativos ao contar usuários em vez de dispositivos.
@@ -37,7 +37,8 @@ Saiba mais as políticas dos administradores:
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](/visualstudio/)
-- [Documentação do Azure DevOps](/azure/devops/)
-- [Documentação do Azure](/azure/)
-- [Documentação do Microsoft 365](/microsoft-365/)
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
