@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a43c5dd9bec88ca7e972b4d681bc25c47a86bf0d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115205"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453376"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
 
@@ -40,7 +40,7 @@ Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Stud
 * Passe `--norestart` na linha de comando. A partir dessa gravação, tentar reiniciar um contêiner do Windows dentro do contêiner retorna `ERROR_TOO_MANY_OPEN_FILES` para o host.
 * Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Por exemplo, ao compilar com o MSBuild, você poderá ver um erro semelhante ao seguinte:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): erro MSB6003: Não foi possível executar o executável da tarefa especificado "csc.exe". Não foi possível carregar o arquivo ou assembly “System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): erro MSB6003: Não foi possível executar o executável da tarefa especificado "csc.exe". Não foi possível carregar o arquivo ou assembly “System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
 
 ::: moniker range="vs-2017"
 
@@ -54,11 +54,15 @@ Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramen
 
 * O IntelliTrace pode não funcionar em [alguns cenários](https://github.com/Microsoft/vstest/issues/940) dentro de um contêiner.
 * Em versões mais antigas do Docker for Windows, o tamanho da imagem de contêiner padrão é de apenas 20 GB e não cabe nas Ferramentas de Criação. Siga as [instruções para alterar o tamanho da imagem](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) para 127 GB ou mais.
-
+Para confirmar um problema de espaço em disco, verifique os arquivos de log para obter mais informações. O arquivo de `vslogs\dd_setup_<timestamp>_errors.log` incluirá o seguinte se você ficar sem espaço em disco: 
+```
+Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
+Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
+```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar ferramentas de build em um contêiner](build-tools-container.md)
+* [Instalar ferramentas de compilação em um contêiner](build-tools-container.md)
 * [Exemplo avançado para contêineres](advanced-build-tools-container.md)
 * [IDs de carga de trabalho e de componente das Ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md)
