@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439160"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476833"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
 
 > [!NOTE]
 > Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura Visual Studio Enterprise e uma assinatura de Visual Studio Professional associadas à mesma ID de entrada, os downloads mostrados serão os incluídos na assinatura do Enterprise, mesmo que você esteja exibindo no momento seus benefícios de assinatura profissional.
+
+> [!NOTE]
+> Estamos cientes de um problema em relação à disponibilidade das chaves de produto do Office 365.  Estamos investigando a causa e atualizaremos este artigo quando o problema for resolvido. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante?
 Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página.
@@ -53,7 +56,8 @@ Para saber mais sobre como localizar, reivindicar e exportar chaves do produto (
 - [Localizar e reivindicar chaves](find-keys.md)
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](/visualstudio/)
-- [Documentação do Azure DevOps](/azure/devops/)
-- [Documentação do Azure](/azure/)
-- [Documentação do Microsoft 365](/microsoft-365/)
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+

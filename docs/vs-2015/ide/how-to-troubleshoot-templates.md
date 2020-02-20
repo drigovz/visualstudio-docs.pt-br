@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670606"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477093"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 5. Verifique se o XML do arquivo .vstemplate está de acordo com o esquema de modelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações sobre o esquema .vstemplate, consulte [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Para obter suporte do IntelliSense durante a criação do arquivo .vstemplate, adicione um atributo `xmlns` ao elemento `VSTemplate` e atribua a ele um valor igual a http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Para obter suporte do IntelliSense durante a criação do arquivo .vstemplate, adicione um atributo `xmlns` ao elemento `VSTemplate` e atribua a ele um valor igual a `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 6. Salve e feche o arquivo .vstemplate.
 
@@ -62,5 +62,5 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 
 4. Clique duas vezes em um evento de modelo para exibir o erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando modelos](../ide/customizing-project-and-item-templates.md) [criando referência de esquema de modelo de projeto e item modelos](../ide/creating-project-and-item-templates.md) do [Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

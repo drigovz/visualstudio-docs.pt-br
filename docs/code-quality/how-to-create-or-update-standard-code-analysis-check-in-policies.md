@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587531"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506497"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -29,7 +29,7 @@ As políticas de check-in de análise de código são definidas nas configuraç�
 
 - Para código gerenciado, você define a política de check-in especificando um *conjunto de regras* que contém um subconjunto das regras de análise de código.
 
-- Para C/C++ Code, no Visual Studio 2017 versão 15,6 e anterior, a política de check-in requer que todas as regras de análise de código sejam executadas. Você pode adicionar diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais em seu projeto DevOps do Azure. No 15,7 e posterior, você pode usar **/analyze: RuleSet** para especificar quais regras executar. Para obter mais informações, consulte [usando conjuntos de regras para C++ especificar as regras a serem executadas](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Para C/C++ Code, no Visual Studio 2017 versão 15,6 e anterior, a política de check-in requer que todas as regras de análise de código sejam executadas. Você pode adicionar diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais em seu projeto DevOps do Azure. No 15,7 e posterior, você pode usar **/analyze: RuleSet** para especificar quais regras executar. Para obter mais informações, consulte [usando conjuntos de regras para C++ especificar as regras a serem executadas](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 Depois de especificar uma política de check-in para código gerenciado, os membros da equipe podem sincronizar suas configurações de análise de código para projetos de código para as configurações de política de projeto DevOps do Azure.
 
@@ -39,7 +39,7 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
 1. Na caixa de diálogo **controle do código-fonte** , selecione a guia **política de check-in** .
 
-1. Siga um destes procedimentos:
+1. Realize um dos seguintes procedimentos:
 
     - Clique em **Adicionar** para criar uma nova política de check-in.
 
@@ -49,7 +49,7 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
 Marque ou desmarque as seguintes opções:
 
-|Opção|Descrição|
+|Opção|DESCRIÇÃO|
 |------------|-----------------|
 |**Impor check-in para conter somente arquivos que fazem parte da solução atual.**|A análise de código pode ser executada somente em arquivos especificados nos arquivos de configuração da solução e do projeto. Essa política garante que todo o código que faz parte de uma solução seja analisado.|
 |**Impor a análiseC++ de C/Code (/Analyze)**|Requer que todos os projetos C++ C ou sejam compilados com a opção de compilador/analyze para executar a análise de código antes que eles possam ser verificados.|
@@ -67,6 +67,6 @@ Na lista **executar este conjunto de regras** , use um dos seguintes métodos:
 
 Para obter mais informações sobre como criar e implementar um conjunto de regras de política de check-in personalizado, consulte [implementar políticas de check-in personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Implementar políticas de check-in de análise de código personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

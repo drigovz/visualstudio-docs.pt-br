@@ -2,7 +2,7 @@
 title: 'Tutorial: criar um aplicativo C# de console simples'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830005"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476718"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo C# de console simples no Visual Studio
 
@@ -65,11 +65,11 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-   ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 
-1. Cancele a caixa de diálogo **Novo Projeto**; em seguida, vá até a barra de menus superior e escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
+1. Cancele a caixa de diálogo **novo projeto** e, na barra de menus superior, escolha **ferramentas** > **obter ferramentas e recursos**.
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
@@ -96,7 +96,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    > 
    > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
    >
-   > ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
 
@@ -133,6 +133,9 @@ Vamos começar com alguns cálculos matemáticos básicos de inteiro em C#.
     ```
 
     Observe que quando você faz isso, o recurso IntelliSense no Visual Studio oferece a opção de preencher automaticamente a entrada.
+
+    > [!NOTE]
+    > A animação a seguir não se destina a duplicar o código anterior. Destina-se apenas a mostrar como o recurso de preenchimento automático funciona.
 
     ![Animação de código de matemática de inteiro que mostra o recurso de preenchimento automático do IntelliSense no IDE do Visual Studio](./media/integer-math-intellisense.gif)
 
@@ -242,7 +245,7 @@ Vamos corrigir o código para que ele identifique decimais.
 
 1. Altere cada instância da variável `int` para `float`.
 
-   Verifique se ativou/desativou as opções **Diferenciar maiúsculas de minúsculas** (**Alt**+**C**) e **Coincidir palavra inteira** (**Alt** + **W**) no controle **Localizar e substituir**.
+   Verifique se ativou/desativou as opções **Diferenciar maiúsculas de minúsculas** (**Alt**+**C**) e **Coincidir palavra inteira** (**Alt**+**W**) no controle **Localizar e substituir**.
 
     ![Animação do controle Localizar e Substituir que mostra como alterar a variável int para float](./media/find-replace-control-animation.gif)
 
@@ -268,18 +271,21 @@ No entanto, o aplicativo produz apenas um resultado decimal. Vamos fazer mais al
 
 Melhoramos nosso aplicativo de calculadora básica, mas ele ainda não é à prova de falhas para tratar exceções, como erros de entrada do usuário.
 
-Por exemplo, se você tentar dividir um número por zero ou inserir um caractere alfa quando o aplicativo esperar um caractere numérico (ou vice-versa), o aplicativo parará de funcionar e retornará um erro.
+Por exemplo, se você tentar dividir um número por zero ou inserir um caractere alfa quando o aplicativo espera um caractere numérico (ou vice-versa), o aplicativo pode parar de funcionar, retornar um erro ou retornar um resultado não numérico inesperado.
 
-Vamos percorrer alguns erros comuns de entrada de usuário, localizá-los no depurador e corrigi-los no código.
+Vamos examinar alguns erros comuns de entrada do usuário, localizá-los no depurador se eles aparecerem e corrigi-los no código.
 
->[!TIP]
->Para obter mais informações sobre o depurador e como ele funciona, confira a página [Introdução ao depurador do Visual Studio](../../debugger/debugger-feature-tour.md).
+> [!TIP]
+> Para obter mais informações sobre o depurador e como ele funciona, confira a página [Introdução ao depurador do Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Corrigir o erro de "divisão por zero"
 
-Quando você tenta dividir um número por zero, o aplicativo de console congela. Em seguida, o Visual Studio mostra o que há de errado no editor de códigos.
+Quando você tenta dividir um número por zero, o aplicativo de console pode congelar e, em seguida, mostrar o que há de errado no editor de código.
 
    ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> Às vezes, o aplicativo não congela e o depurador não mostrará um erro de divisão por zero. Em vez disso, o aplicativo pode retornar um resultado não numérico inesperado, como um símbolo de infinito. A correção de código a seguir ainda se aplica.
 
 Vamos alterar o código para tratar esse erro.
 
@@ -592,14 +598,14 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutoriais a seguir.
 
 > [!div class="nextstepaction"]
 > [Continuar com mais tutoriais do C#](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

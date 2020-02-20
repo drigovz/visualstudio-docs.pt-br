@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667960"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476982"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer com que instalem os snippets em seus próprios computadores usando o Gerenciador de Snippets de Código. No entanto, se você tiver vários snippets para distribuir ou gostaria de distribuí-los mais amplamente, inclua seu arquivo de snippet em uma extensão do Visual Studio, que usuários do Visual Studio podem instalar.
 
- Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [downloads do visual studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).
+ Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localize a versão do VSSDK que corresponde à sua instalação do Visual Studio em [downloads do visual studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="setting-up-the-extension"></a>Configurando a extensão
  Neste procedimento, usaremos o mesmo snippet de código Hello World criado no [Passo a passo: criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Forneceremos o texto .snippet, portanto, você não precisa voltar e criar um.
 
 1. Crie um novo projeto do VSIX chamado **TestSnippet**. (**Arquivo/Novo/Projeto/Visual C# (ou Visual Basic/Extensibilidade**)
 
-2. No projeto **TestSnippet**, adicione um novo arquivo XML e chame-o de **VBCodeSnippet.snippet**. Substitua o conteúdo pelo seguinte:
+2. No projeto **TestSnippet**, adicione um novo arquivo XML e chame-o de **VBCodeSnippet.snippet**. Substitua o conteúdo com o seguinte:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -102,5 +102,5 @@ Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer 
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Snippets de código](../ide/code-snippets.md)
