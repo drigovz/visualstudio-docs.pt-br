@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 129a5551d04e8e9552b6d788f066c7c9df636f67
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
-ms.translationtype: HT
+ms.openlocfilehash: 4058c75b2282b6fb77c3026c3667a470d6b9fd92
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453363"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476884"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -92,7 +92,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | DESCRIÇÃO |
 | - | - | - | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
-| Start Page | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
+| Página inicial | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
 | Destino<br> Notification <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |
@@ -109,9 +109,9 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Linters da Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Modelo do<br>Explorador do Cookiecutter<br>descoberta <br><br>Modelo do <br>Explorador do Cookiecutter<br> criação | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
 | Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Novo <br>Python <br> project <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br>Usada para resolver os seguintes novos modelos de projeto do Python para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
-| Web do Office <br>add-in <br> Manifesto <br>Verificação <br>Serviço | verificationservice.osi.office.net | HTTPS | 443 | Usada para validar os manifestos de suplementos de Web do Office |
+| Web do Office <br>suplemento <br> Manifesto <br>Verificação <br>Serviço | verificationservice.osi.office.net | HTTPS | 443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>e do Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | HTTPS | 443 | Usado para publicar e testar os suplementos do SharePoint e do Office no SharePoint Online e no Office 365 |
-| Serviço de teste do <br>Gerenciador de Fluxo de Trabalho<br> Host | | http | 12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
+| Workflow Manager <br>Gerenciador de Fluxo de Trabalho<br> Host | | http | 12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
 | Estatísticas de confiabilidade <br>coletadas automaticamente <br>e outros <br>CEIP (Programa de Aperfeiçoamento da <br>Experiência do Usuário)<br> para o SDK do Azure <br>para Ferramentas do SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | HTTPS | 443 | Usada para enviar as estatísticas de confiabilidade (dados de travamento ou falha) do usuário à Microsoft. Os despejos de travamento/falha reais ainda serão carregados se o Relatório de Erros do Windows estiver habilitado, apenas informações estatísticas serão suprimidas; <br>Usada para revelar padrões de uso anônimos para a extensão do SDK de Ferramentas do Azure para o Visual Studio e para padrões de uso para ferramentas do SQL para Visual Studio |
 | Visual Studio <br> CEIP (Programa de Aperfeiçoamento da <br>Experiência do Usuário) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | HTTPS | 443 | Usada para coletar logs de erro e padrões de uso anônimos <br><br>Usada para rastrear problemas de congelamento da interface do usuário |
 | Criação e<br>Gerenciamento de <br>Recursos do Azure | management.azure.com <br>management.core.windows.net | HTTPS | 443 | Usada para criar sites do Azure ou outros recursos para dar suporte à publicação de aplicativos Web, Azure Functions ou WebJobs |
@@ -135,7 +135,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Visual Studio Online | \*. online.visualstudio.com | HTTPS | 443 | Usado para chamar as APIs do Visual Studio online |
 | Aquisição de tipo automático de JavaScript | registry.npmjs.org | HTTPS | 443 | Usado para instalar definições de tipo TypeScript para fornecer IntelliSense para bibliotecas JavaScript populares |
 | Serviço de licenciamento de assinaturas do Visual Studio | app.vssps.visualstudio.com/apis/Licensing/ClientRights | HTTPS | 443 | Licenciamento para ativação online |
-| Depurador | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | HTTPS | 443 | 1. <br>Usado para baixar bits do depurador para depuração do .NET Core em UNIX/MacOS por SSH <br><br>2. <br>Usado para baixar bits do depurador para depuração remota de contêiner do Docker do Windows<br><br> 3. usado para depuração de origem do .NET Framework <br><br> 4. <br>(Se o usuário optar por ele) Usado para baixar símbolos publicados no servidor de símbolos nuget.org.<br><br> 5. (se o usuário optar por usar) para baixar símbolos e binários do MS, também pode ser necessário para depurar código gerenciado em despejos |
+| Depurador | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | HTTPS | 443 | 1. <br>Usado para baixar bits do depurador para depuração do .NET Core em UNIX/MacOS por SSH <br><br>2. <br>Usado para baixar bits do depurador para depuração remota de contêiner do Docker do Windows<br><br> 3. usado para depuração de origem do .NET Framework <br><br> 4. <br>(Se o usuário optar por ele) Usado para baixar símbolos publicados no servidor de símbolos nuget.org.<br><br> 5. (se o usuário optar por usar) para baixar símbolos e binários do MS, também pode ser necessário para depurar código gerenciado em despejos |
 | Visual Studio Online| \*. online.visualstudio.com | HTTPS | 443 | Usado para chamar as APIs do Visual Studio online |
 | Publicação de aplicativo do Xamarin Android | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | HTTPS | 443 | Usado para interagir com Google Play Store serviço para publicar/carregar aplicativos do Xamarin Android diretamente do Visual Studio. |
 | Registro de Contêiner do Azure | *. azurecr.io | HTTPS | 443 | Acessar registros de contêiner hospedados no Azure, para configuração de pipelines do CICD |
