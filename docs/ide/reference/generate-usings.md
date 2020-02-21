@@ -1,5 +1,5 @@
 ---
-title: Gerar usos
+title: Gerar instruções using
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610887"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544549"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Adicionar usos ausentes no Visual Studio
 
@@ -26,7 +26,7 @@ Esta geração de código aplica-se a:
 
 **O que:** Permite adicionar imediatamente as importações necessárias ou o [uso de diretivas](/dotnet/csharp/language-reference/keywords/using-directive) para o código de cópia e colagem.
 
-**Quando:** É uma prática comum copiar o código de locais diferentes em seu projeto ou outras fontes e colá-lo no novo código. Essa ação rápida localiza diretivas de importações ausentes para código de cópia e colagem e, em seguida, solicita que você as adicione.
+**Quando:** É uma prática comum copiar o código de locais diferentes em seu projeto ou outras fontes e colá-lo no novo código. Essa ação rápida localiza diretivas de importações ausentes para código de cópia e colagem e, em seguida, solicita que você as adicione. Essa correção de código também pode adicionar referências do projeto ao projeto.
 
 **Por que:** Como a ação rápida adiciona automaticamente as importações necessárias, você não precisa copiar manualmente as diretivas de `using` que seu código precisa.
 
@@ -39,13 +39,13 @@ Esta geração de código aplica-se a:
 
 2. Selecione Ctrl+. para abrir o menu **Ações Rápidas e Refatorações**.
 
-    ![Gerar usos](media/generate-using-codefix.png)
+    ![Gerar instruções using](media/generate-using-codefix.png)
 
 3. Selecione **using \<sua referência\>;** para adicionar a referência ausente.
 
     ![Gerar o resultado de instruções using](media/generate-using-result.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)
