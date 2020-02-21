@@ -3,17 +3,17 @@ title: Exportar informações de assinatura | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Saiba como exportar uma lista de assinantes e os detalhes de suas atribuições de assinatura.
-ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: ddf466e314190b8c91d35aad522da14f4c4af69f
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491730"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520846"
 ---
-# <a name="export-subscription-information"></a>Exportar informações de assinatura
+# <a name="export-subscription-information"></a>Exportar informações da assinatura
 No [portal de administração](https://manage.visualstudio.com)das assinaturas do Visual Studio, você pode exportar uma lista de seus assinantes e detalhes sobre suas atribuições. Essas informações incluem nome, endereço de email, endereço de email alternativo, nível da assinatura, data de atribuição, status de ativação, data do término, campo de referência, se os downloads estão habilitados, país, idioma, status da assinatura e GUID da assinatura.  A lista é exportada como um arquivo CSV e pode ser facilmente aberta no Microsoft Excel para a criação de gráficos, tabelas dinâmicas e outros artefatos.
 
 Ter todas as informações do assinante em um único lugar pode ajudar você a fazer coisas como:
@@ -36,3 +36,9 @@ Para executar a exportação:
     - [Superalocações](handle-overclaimed-license.md)
     - [Uso máximo](maximum-usage.md)
 - Precisa de assistência com algum aspecto do gerenciamento de assinaturas?  Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
