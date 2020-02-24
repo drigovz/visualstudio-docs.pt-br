@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Adicionar parâmetro a um método
                   href: ide/reference/add-parameter.md
+                - name: Gerar campo particular do construtor
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Gerar substituição
                   href: ide/reference/generate-override.md
                 - name: Gerar substituições de método Equals e GetHashCode
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: Extrair método
                   href: ide/reference/extract-method.md
+                - name: Extrair função local
+                  href: ide/reference/extract-local-function.md
                 - name: Gerar o parâmetro
                   href: ide/reference/generate-parameter.md
                 - name: Variável temporária embutida
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Opções de refatoração de função local estática
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Tornar membro estático
+                  href: ide/reference/make-member-static.md
                 - name: Mover declaração para perto da referência
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Mover o tipo para o arquivo correspondente
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Parâmetros, variáveis e atribuições de valor não usados'
                   href: ide/reference/unused-values-parameters.md
-                - name: Encapsular e alinhar cadeias de chamadas
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Encapsular, recuar e alinhar parâmetros'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Encapsular, recuar e alinhar refatoração'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'Passo a passo: Gerar código por meio do uso'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
