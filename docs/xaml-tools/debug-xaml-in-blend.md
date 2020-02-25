@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188898"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558186"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 
@@ -103,13 +103,13 @@ Quando são detectados erros de XAML, a superfície de design exibe um alerta in
 
 1. Clique duas vezes no primeiro erro da lista. A descrição é "O valor '<' não é um válido em um atributo". Quando você clica duas vezes no erro, o ponteiro encontra o local correspondente no código. O `<` que precede `Button` é válido e não um atributo, conforme sugerido na mensagem de erro. Se você observar a linha de código precedente, notará que as marcas de aspas de fechamento para o atributo `Top` estão faltando. Digite as marcas de aspas de fechamento. Observe que a lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.
 
-2. Clique duas vezes na descrição "' 0 ' não é válida no início de um nome." `Margin="0,149,0,0"` parece estar bem formado. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.
+2. Clique duas vezes na descrição "' 0 ' não é válida no início de um nome." `Margin="0,149,0,0"` parece estar bem formada. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.
 
 3. Clique duas vezes no erro restante, "A marca XML de fechamento 'Button' é discrepante." O ponteiro está localizado na tag **Grid** de fechamento (`</Grid>`), sugerindo que o erro está dentro do objeto `Grid`. Observe que o segundo objeto `Button` está sem a marcação de fechamento. Depois de adicionar a `/` de fechamento, a lista de painéis dos **Resultados** é atualizada. Agora que esses erros iniciais foram resolvidos, dois erros adicionais foram identificados.
 
 4. Clique duas vezes em "O membro 'content' não é reconhecido nem acessível." O `c` em `content` deve estar em maiúsculas. Substitua o "c" minúsculo pelo "c" maiúsculo.
 
-5. Clique duas vezes em "a propriedade ' Mame ' não existe no namespace ' <http://schemas.microsoft.com/winfx/2006/xaml> '." O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.
+5. Clique duas vezes em "a propriedade ' Mame ' não existe no namespace `http://schemas.microsoft.com/winfx/2006/xaml`". O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.
 
     ![Depurando XAML no Blend para Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 

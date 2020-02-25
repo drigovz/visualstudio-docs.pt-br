@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab4c18006834cc1bef6841864e42609e09bc3a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3fe19549f61d646e08117198903b3ad9c1fd90dc
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585828"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557812"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.
@@ -30,12 +30,13 @@ ms.locfileid: "75585828"
 ## <a name="reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas
  A tabela a seguir descreve as propriedades predefinidas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-| propriedade | Reservadas ou conhecidas | Descrição |
+| propriedade | Reservadas ou conhecidas | DESCRIÇÃO |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Reservado | O caminho absoluto da pasta na qual os binários do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usados no momento estão localizados (por exemplo, *C:\Windows\Microsoft.Net\Framework\\\<versionNumber>* ). Essa propriedade será útil se você precisar fazer referência a arquivos no diretório [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> Não inclua a barra invertida final nessa propriedade. |
 | `MSBuildExtensionsPath` | Conhecidas | Apresentado no .NET Framework 4: não há diferença entre os valores padrão de `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. Você pode definir a variável de ambiente `MSBUILDLEGACYEXTENSIONSPATH` como um valor não nulo para habilitar o comportamento do valor padrão de `MSBuildExtensionsPath` em versões anteriores.<br /><br /> No .NET Framework 3.5 e anterior, o valor padrão de `MSBuildExtensionsPath` aponta para o caminho da subpasta MSBuild na pasta *\Program Files\\* ou *\Program Files (x86)* , dependendo do número de bit do processo atual. Por exemplo, para um processo de 32 bits em um computador de 64 bits, essa propriedade aponta para a pasta *\Program Files (x86)* . Para um processo de 64 bits em um computador de 64 bits, essa propriedade aponta para a pasta *\Program Files*.<br /><br /> Não inclua a barra invertida final nessa propriedade.<br /><br /> Esse local é um local útil para colocar os arquivos de destino personalizados. Por exemplo, os arquivos de destino podem ser instalados em *\Program Files\MSBuild\MyFiles\Northwind.targets* e, em seguida, importados em arquivos de projeto usando este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
 | `MSBuildExtensionsPath32` | Conhecidas | O caminho da subpasta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na pasta *\Program Files* ou *\Program Files (x86)* . O caminho sempre aponta para a pasta *\Arquivos de Programas (x86)* de 32 bits em um computador de 32 bits e para *\Arquivos de Programas* em um computador de 64 bits. Consulte também `MSBuildExtensionsPath` e `MSBuildExtensionsPath64`.<br /><br /> Não inclua a barra invertida final nessa propriedade. |
 | `MSBuildExtensionsPath64` | Conhecidas | O caminho da subpasta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na pasta *\Program Files*. Para um computador de 64 bits, esse caminho sempre aponta para a pasta *\Program Files*. Para uma máquina de 32 bits, esse caminho fica em branco. Consulte também `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`.<br /><br /> Não inclua a barra invertida final nessa propriedade. |
+| `MSBuildInteractive` | Reservado | `true` se o MSBuild estiver em execução interativamente, permitindo a entrada do usuário. Essa configuração é controlada pela opção de linha de comando `-interactive`. |
 | `MSBuildLastTaskResult` | Reservado | `true` se a tarefa anterior foi concluída sem erros (mesmo se houver avisos) ou `false` se a tarefa anterior tiver erros. Normalmente, quando ocorre um erro em uma tarefa, o erro é a última coisa que ocorre nesse projeto. Portanto, o valor dessa propriedade nunca é `false`, exceto nestes cenários:<br /><br /> - Quando o atributo `ContinueOnError` do [elemento Task (MSBuild)](../msbuild/task-element-msbuild.md) é definido como `WarnAndContinue` (ou `true`) ou `ErrorAndContinue`.<br /><br /> - Quando o `Target` tem um [elemento OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) como um elemento filho. |
 | `MSBuildNodeCount` | Reservado | O número máximo de processos simultâneos que são usados durante a compilação. Esse é o valor especificado para **-maxcpucount** na linha de comando. Se você especificou **-maxcpucount** sem especificar um valor, então `MSBuildNodeCount` especificará o número de processadores no computador. Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md) e [Compilar vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |
 | `MSBuildProgramFiles32` | Reservado | O local da pasta do programa de 32 bits; por exemplo, *C:\Program Files (x86)* .<br /><br /> Não inclua a barra invertida final nessa propriedade. |
@@ -75,7 +76,7 @@ Além do citado acima, os nomes que correspondem a elementos da linguagem do MSB
 * When
 * Otherwise
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)

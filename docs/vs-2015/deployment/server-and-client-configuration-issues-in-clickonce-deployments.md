@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f8e5054b4da0122c40c3ad62cfebcace973f7b20
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918809"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558013"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticação de proxy e ClickOnce  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornece suporte para autenticação de proxy integrado do Windows a partir do .NET Framework 3,5. Nenhuma das diretivas Machine. config específicas são necessárias. o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] não oferece suporte a outros protocolos de autenticação, como Basic ou Digest.  
   
- Você também pode aplicar um hotfix para .NET Framework 2,0 para habilitar esse recurso. Para obter mais informações, consulte https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Você também pode aplicar um hotfix para .NET Framework 2,0 para habilitar esse recurso. Para obter mais informações, consulte [corrigir: mensagem de erro ao tentar instalar um aplicativo ClickOnce criado no .NET Framework 2,0 em um computador cliente configurado para usar um servidor proxy: "autenticação de proxy necessária"](https://support.microsoft.com/en-in/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that). 
   
  Para obter mais informações, consulte [\<elemento defaultProxy > (configurações de rede)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -97,7 +97,7 @@ Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP sem suporte para instalar aplicativos  
  o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dá suporte à instalação de aplicativos de qualquer servidor Web HTTP 1,1 ou servidor de arquivos. O FTP, o protocolo FTP, não tem suporte para instalar aplicativos. Você pode usar o FTP para publicar somente aplicativos. A tabela a seguir resume essas diferenças:  
   
-|Tipo de URL|Descrição|  
+|Tipo de URL|DESCRIÇÃO|  
 |--------------|-----------------|  
 |ftp://|Você pode publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando esse protocolo.|  
 |http://|Você pode instalar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando esse protocolo.|  
@@ -121,7 +121,7 @@ Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e
   
 - Se você criar um tipo MIME com a extensão "*" e o tipo MIME "application/octet-stream", ele permitirá que os arquivos de tipo de arquivo desbloqueado sejam baixados. (No entanto, os tipos de arquivo bloqueados, como. aspx e. asmx, não podem ser baixados.)  
   
-  Para obter instruções específicas sobre como configurar tipos MIME no Windows Server, consulte o artigo KB326965 da base de dados de conhecimento Microsoft, "o IIS 6,0 não atende aos tipos MIME desconhecidos" em [https://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Para obter instruções específicas sobre como configurar tipos MIME no Windows Server, consulte [como adicionar um tipo de MIME a um site ou aplicativo da Web](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).  
   
 ## <a name="content-type-mappings"></a>Mapeamentos de tipo de conteúdo  
  Ao publicar por HTTP, o tipo de conteúdo (também conhecido como tipo MIME) para o arquivo. Application deve ser "application/x-MS-Application". Se você tiver [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] instalado no servidor, isso será definido para você automaticamente. Se não estiver instalado, você precisará criar uma associação de tipo MIME para a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo vroot (ou servidor inteiro).  

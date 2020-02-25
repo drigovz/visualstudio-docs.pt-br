@@ -1,6 +1,6 @@
 ---
 title: Configurações de convenção de codificação do .NET para o EditorConfig
-ms.date: 06/14/2018
+ms.date: 02/21/2020
 ms.topic: reference
 helpviewer_keywords:
 - coding conventions [EditorConfig]
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2c93a6e86ba82a75dabb8b2be77d2a82a3b4d599
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3ca9ed577fd253c81919f49a67c8286fbe28255
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566235"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557795"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
-Você pode definir e manter um estilo de código consistente em sua base de código com o uso de um arquivo [EditorConfig](../ide/create-portable-custom-editor-options.md). O EditorConfig inclui várias propriedades de formatação de núcleo, como `indent_style` e `indent_size`. No Visual Studio, as definições de convenções de codificação do .NET também podem ser configuradas usando um arquivo EditorConfig. É possível habilitar ou desabilitar convenções individuais de codificação do .NET e configurar o grau de imposição de cada regra por meio de um nível de gravidade.
+Você pode definir e manter o estilo de código consistente em sua codebase usando um arquivo [EditorConfig](../ide/create-portable-custom-editor-options.md) . O EditorConfig inclui várias propriedades de formatação de núcleo, como `indent_style` e `indent_size`. No Visual Studio, as definições de convenções de codificação do .NET também podem ser configuradas usando um arquivo EditorConfig. É possível habilitar ou desabilitar convenções individuais de codificação do .NET e configurar o grau de imposição de cada regra por meio de um nível de gravidade.
 
 > [!TIP]
 > - Ao definir convenções de codificação em um arquivo EditorConfig, você está configurando como deseja que os [analisadores de estilo de código](../code-quality/roslyn-analyzers-overview.md) que são criados no Visual Studio analisem seu código. O arquivo EditorConfig é o arquivo de configuração para esses analisadores.
@@ -46,7 +46,7 @@ Há três categorias de convenção de codificação .NET com suporte:
 
 ## <a name="example-editorconfig-file"></a>Exemplo de arquivo EditorConfig
 
-Para ajudá-lo a começar, este é um arquivo *.editorconfig* de exemplo com as opções padrão:
+Para ajudá-lo a começar, veja um exemplo de arquivo *. editorconfig* com as opções padrão. No Visual Studio, você pode gerar esse arquivo e salvá-lo em um projeto **em ferramentas** > **Opções** > o editor de**C#** **texto** > [ou **Basic**] > **estilo de código** > **geral**. Em seguida, clique no botão **gerar arquivo. editorconfig de configurações** . Para obter mais informações, consulte [preferências de estilo de código](code-styles-and-code-cleanup.md).
 
 ```ini
 ###############################
@@ -70,9 +70,9 @@ charset = utf-8-bom
 ###############################
 
 [*.{cs,vb}]
+
 # Organize usings
 dotnet_sort_system_directives_first = true
-dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:silent
@@ -113,8 +113,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 # Style Definitions
 dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
-
-# Use PascalCase for constant fields
+# Use PascalCase for constant fields  
 dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
@@ -123,10 +122,11 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Code Style Rules         #
+# C# Coding Conventions       #
 ###############################
 
 [*.cs]
+
 # var preferences
 csharp_style_var_for_built_in_types = true:silent
 csharp_style_var_when_type_is_apparent = true:silent
@@ -140,7 +140,7 @@ csharp_style_expression_bodied_properties = true:silent
 csharp_style_expression_bodied_indexers = true:silent
 csharp_style_expression_bodied_accessors = true:silent
 
-# Pattern-matching preferences
+# Pattern matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -188,24 +188,24 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
-csharp_space_after_comma = true
-csharp_space_after_dot = false
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-##################################
-# Visual Basic Code Style Rules  #
-##################################
+###############################
+# VB Coding Conventions       #
+###############################
 
 [*.vb]
+
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ações rápidas](../ide/quick-actions.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
-- [Arquivo .editorconfig da plataforma do compilador do .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET Compiler Platform arquivo "Roslyn". editorconfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Arquivo .NET Compiler Platform Runtime. editorconfig](https://github.com/dotnet/runtime/blob/master/.editorconfig)

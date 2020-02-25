@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especifique o local onde os usuários finais instalarão | Microsoft Docs'
+title: Como especificar o local para onde os usuários finais serão instalados | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,32 +17,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3ce7e405a69dccd759e4c52bac84c28e431a4a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 993c654ccd16f2d51d86a46a716edd611ae154dd
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890559"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557606"
 ---
-# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como: Especificar a localização da qual os usuários finais instalarão
-Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, o local onde os usuários irão baixar e instalar o aplicativo não é necessariamente o local em que você publica o aplicativo inicialmente. Por exemplo, em algumas organizações, um desenvolvedor pode publicar um aplicativo em um servidor de preparo e, em seguida, um administrador seria mover o aplicativo para um servidor Web.
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como especificar o local de onde os usuários finais instalarão
+Ao publicar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], o local em que os usuários acessam baixar e instalar o aplicativo não é necessariamente o local onde você publicará o aplicativo inicialmente. Por exemplo, em algumas organizações, um desenvolvedor pode publicar um aplicativo em um servidor de preparo e, em seguida, um administrador moveria o aplicativo para um servidor Web.
 
-Nesse caso, você pode usar o `Installation URL` propriedade para especificar o servidor Web onde os usuários irão baixar o aplicativo. Isso é necessário para que o manifesto do aplicativo saiba onde procurar por atualizações.
+Nesse caso, você pode usar a propriedade `Installation URL` para especificar o servidor Web onde os usuários vão baixar o aplicativo. Isso é necessário para que o manifesto do aplicativo saiba onde procurar atualizações.
 
-O `Installation URL` propriedade pode ser definida na **Publish** página da **Designer de projeto**.
+A propriedade `Installation URL` pode ser definida na página **publicar** do designer de **projeto**.
 
 > [!NOTE]
-> O `Installation URL` propriedade também pode ser definida usando o **PublishWizard**. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> A propriedade `Installation URL` também pode ser definida usando o **PublishWizard**. Para obter mais informações, consulte [como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>Para especificar uma URL de instalação
 
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2. Clique o **publicar** guia.
+2. Clique na guia **Publicar**.
 
-3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato *http://www.microsoft.com/ApplicationName* , ou um caminho UNC usando o formato  *\\ \Server\ApplicationName*.
+3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato `https://www.contoso.com/ApplicationName`ou um caminho UNC usando o formato `\Server\ApplicationName`.
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Especificar onde o Visual Studio copiará os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Como especificar para onde o Visual Studio copia os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

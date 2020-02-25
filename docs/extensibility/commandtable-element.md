@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandTable | Microsoft Docs
+title: Elemento commandtable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f577b52ad2a9b1fd66ed9c24fb2737621aa8554c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341813"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557782"
 ---
-# <a name="commandtable-element"></a>Elemento CommandTable
-CommandTable é o elemento raiz do *VSCT* arquivo. Esse é o arquivo que define o layout real e o tipo dos comandos a um VSPackage fornece ao IDE. Comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+# <a name="commandtable-element"></a>Elemento commandtable
+Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que define o layout real e o tipo dos comandos que um VSPackage fornece para o IDE. Os comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,30 +44,30 @@ CommandTable é o elemento raiz do *VSCT* arquivo. Esse é o arquivo que define 
 
 ### <a name="attributes"></a>Atributos
 
-| Atributo | Descrição |
+| Atributo | DESCRIÇÃO |
 |-----------| - |
-| xmlns | Necessário. Namespaces XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
-| linguagem | Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> language="en-us" |
+| xmlns | Necessário. Namespaces XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = "<http://www.w3.org/2001/XMLSchema>" |
+| linguagem | Opcional. O atributo language pode ser usado para especificar o idioma padrão de todas as cadeias de caracteres de \<> elementos na tabela de comandos.  Se o idioma não for especificado, o idioma do processo atual será usado:<br /><br /> language="en-us" |
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
-|[Elemento extern](../extensibility/extern-element.md)|Opcional. Contém as diretivas de pré-processador para o compilador.|
-|[Incluir elemento](../extensibility/include-element.md)|Opcional. Contém os caminhos para todos os arquivos para incluir na compilação.|
-|[Definir o elemento](../extensibility/define-element.md)|Opcional. Define um símbolo informado seu nome e valor.|
-|[Elemento Commands](../extensibility/commands-element.md)|Opcional. O elemento pai definindo todos os comandos para o VSPackage que contém todos os outros elementos.|
-|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Opcional. Define onde os comandos na barra de comandos devem ser colocados.|
-|[Element visibilityconstraints](../extensibility/visibilityconstraints-element.md)|Opcional. Determina a visibilidade estática de comandos e barras de ferramentas.|
-|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Opcional. Especifica as combinações de teclas de atalho, se houver, para os comandos.|
-|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Opcional. Permite que um VSPackage, opcionalmente, implementar sua própria versão da funcionalidade de outros VSPackages originalmente com suporte.|
-|[Elemento Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Opcional. Contém os dados de símbolo – GUIDs, IDs e assim por diante – para o compilador.|
+|[Elemento externo](../extensibility/extern-element.md)|Opcional. Contém diretivas de pré-processador para o compilador.|
+|[Elemento include](../extensibility/include-element.md)|Opcional. Contém caminhos para todos os arquivos a serem incluídos na compilação.|
+|[Definir elemento](../extensibility/define-element.md)|Opcional. Define um símbolo de acordo com seu nome e valor.|
+|[Elemento Commands](../extensibility/commands-element.md)|Opcional. O elemento pai que define todos os comandos para o VSPackage que contém todos os outros elementos.|
+|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Opcional. Define onde na barra de comandos os comandos devem ser colocados.|
+|[Elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Opcional. Determina a visibilidade estática de comandos e barras de ferramentas.|
+|[Elemento keybindings](../extensibility/keybindings-element.md)|Opcional. Especifica as combinações de teclas de atalho, se houver, para os comandos.|
+|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Opcional. Permite que um VSPackage implemente opcionalmente sua própria versão de funcionalidade originalmente suportada por outros VSPackages.|
+|[Elemento Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Opcional. Contém quaisquer dados de símbolo--GUIDs, IDs e assim por diante – para o compilador.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |Nenhum||
 
 ## <a name="see-also"></a>Consulte também
-- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

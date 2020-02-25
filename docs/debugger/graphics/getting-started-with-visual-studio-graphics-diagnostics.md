@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735708"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557924"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introdução ao Diagnóstico de Gráficos do Visual Studio
 Nesta seção, você se preparará para usar Diagnóstico de Gráficos pela primeira vez e, em seguida, capturará quadros de um aplicativo do Direct3D e os examinará no analisador de gráficos.
@@ -35,18 +35,18 @@ Nesta seção, você se preparará para usar Diagnóstico de Gráficos pela prim
 
 1. Em pesquisa, digite **aplicativos e recursos** e, em seguida, abra os **aplicativos &** configurações de recursos.
 
-2. No lado direito da caixa de diálogo **aplicativos & recursos** , escolha **gerenciar recursos opcionais** (em **aplicativos & recursos**).
+2. No lado direito dos **aplicativos &** configurações de recursos, escolha **recursos opcionais** (em **aplicativos & recursos**).
 
-   A caixa de diálogo **gerenciar recursos opcionais** é exibida.
+   As configurações de **recursos opcionais** são exibidas.
 
-3. Na caixa de diálogo **gerenciar recursos opcionais** , escolha **Adicionar um recurso**. É exibida uma lista de recursos opcionais que você pode instalar.
+3. Nas configurações de **recursos opcionais** , escolha **Adicionar um recurso**. É exibida uma lista de recursos opcionais que você pode instalar.
 
 4. Selecione **ferramentas de gráficos** na lista de recursos e escolha **instalar**.
 
    O recurso ferramentas de gráficos também é instalado automaticamente quando você instala o SDK do Windows 10.
 
 > [!TIP]
-> O recurso ferramentas gráficas opcionais do Windows 10 fornece funcionalidade de captura e reprodução leves, como o programa de captura de linha de comando **dxcap. exe**— que pode ser usado em cenários de suporte, teste e diagnóstico em computadores em que o desenvolvedor as ferramentas não estão instaladas. Para obter mais informações, consulte o tópico [ferramenta de captura de linha de comando](command-line-capture-tool.md) .
+> O recurso ferramentas gráficas opcionais do Windows 10 fornece funcionalidade leve de captura e reprodução, como o programa de captura de linha de comando **dxcap. exe**, que pode ser usado em cenários de suporte, teste e diagnóstico em computadores em que as ferramentas de desenvolvedor não estão instaladas. Para obter mais informações, consulte o tópico [ferramenta de captura de linha de comando](command-line-capture-tool.md) .
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Usando Diagnóstico de Gráficos pela primeira vez
  Agora que você tem tudo o que precisa, você está pronto para começar a usar Diagnóstico de Gráficos. Siga estas etapas.

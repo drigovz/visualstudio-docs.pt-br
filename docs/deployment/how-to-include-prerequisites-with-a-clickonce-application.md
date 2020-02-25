@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727903"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557637"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como incluir pré-requisitos com um aplicativo ClickOnce
 Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primeiro você deverá baixar os pacotes de instalador desses pré-requisitos em seu computador de desenvolvimento. Quando você publicar um aplicativo e escolher **Baixar pré-requisitos da mesma localização que meu aplicativo baixa**, ocorrerá um erro se os pacotes de instalador não estiverem na pasta **Pacotes**.
@@ -31,10 +31,10 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
 
 3. No Bloco de Notas, abra o arquivo *Package.xml*.
 
-4. Localize o elemento **Name** que contém **http://go.microsoft.com/fwlink** e copie a URL. Inclua a parte **LinkID**.
+4. Localize o elemento **Name** que contém `http://go.microsoft.com/fwlink`e copie a URL. Inclua a parte **LinkID**.
 
    > [!NOTE]
-   > Se nenhum elemento **Name** contiver **http://go.microsoft.com/fwlink** , abra o arquivo **Product. xml** na pasta raiz para obter o pré-requisito e localize a cadeia de caracteres **fwlink** .
+   > Se nenhum elemento **Name** contiver `http://go.microsoft.com/fwlink`, abra o arquivo **Product. xml** na pasta raiz para obter o pré-requisito e localize a cadeia de caracteres **fwlink** .
 
    > [!IMPORTANT]
    > Alguns pré-requisitos têm vários pacotes de instalador (por exemplo, para sistemas de 32 bits ou 64 bits). Se vários elementos **Name** contiverem **fwlink**, você deverá repetir as etapas restantes para cada um deles.

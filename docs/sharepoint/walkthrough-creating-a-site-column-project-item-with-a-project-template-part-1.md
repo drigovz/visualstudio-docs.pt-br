@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189163"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557849"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associando-os a um modelo de projeto. Neste tutorial, você definirá um tipo de item de projeto para criar uma coluna de site e, em seguida, criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto de coluna de site.
@@ -40,7 +40,7 @@ ms.locfileid: "73189163"
 > [!NOTE]
 > Para obter uma série de fluxos de trabalho de exemplo, consulte [exemplos de fluxo de trabalho do SharePoint](/sharepoint/dev/general-development/sharepoint-workflow-samples).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passos:
 
 - Edições com suporte do Microsoft Windows, SharePoint e [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -68,7 +68,7 @@ ms.locfileid: "73189163"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+2. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
 3. Na parte superior da caixa de diálogo **novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
@@ -111,7 +111,7 @@ ms.locfileid: "73189163"
 
     - *Settings. designer. vb*
 
-    - Settings. Settings
+    - Settings.settings
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189163"
 
    - Adiciona elementos `ProjectItem` para cada fileproject incluído em cada instância de projeto.
 
-   - Usa o namespace "<http://schemas.microsoft.com/developer/vstemplate/2005>". Outros arquivos de projeto nesta solução usam o namespace "<http://schemas.microsoft.com/developer/msbuild/2003>". Portanto, as mensagens de aviso do esquema XML serão geradas, mas você poderá desconsiderar-as neste passo a passos.
+   - Usa o `http://schemas.microsoft.com/developer/vstemplate/2005`de namespace. Outros arquivos de projeto nesta solução usam o namespace `http://schemas.microsoft.com/developer/msbuild/2003`. Portanto, as mensagens de aviso do esquema XML serão geradas, mas você poderá desconsiderar-as neste passo a passos.
 
      Para obter mais informações sobre o conteúdo de arquivos *. vstemplate* , consulte [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 

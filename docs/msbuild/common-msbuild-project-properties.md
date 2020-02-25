@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275495"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557878"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos *.targets* fornecidos pelo MSBuild.
@@ -59,7 +59,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | DefineDebug | Um valor booliano que indica se você deseja que a constante DEBUG seja definida. |
 | DefineTrace | Um valor booliano que indica se você deseja que a constante TRACE seja definida. |
 | DelaySign | Um valor booliano que indica se você deseja atrasar a assinatura do assembly em vez de fazer a assinatura completa. |
-| Determinística | Um valor booliano que indica se o compilador deve gerar assemblies idênticos para entradas idênticas. Esse parâmetro corresponde à opção `/deterministic` dos compiladores *vbc.exe* e *csc.exe*. |
+| Determinista | Um valor booliano que indica se o compilador deve gerar assemblies idênticos para entradas idênticas. Esse parâmetro corresponde à opção `/deterministic` dos compiladores *vbc.exe* e *csc.exe*. |
 | DisabledWarnings | Suprime os avisos especificados. Somente a parte numérica do identificador de aviso deve ser especificada. Vários avisos são separados por ponto e vírgula. Esse parâmetro corresponde à opção `/nowarn` do compilador *vbc.exe*. |
 | DisableFastUpToDateCheck | Um valor booliano que se aplica apenas a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. O gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa um processo chamado FastUpToDateCheck para determinar se um projeto deve ser reconstruído para ser atualizado. Esse processo é mais rápido que usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar isso. Configurar a propriedade DisableFastUpToDateCheck para `true` permite ignorar o gerenciador de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e forçá-lo a usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar se o projeto está atualizado. |
 | DocumentationFile | O nome do arquivo que é gerado como o arquivo de documentação XML. Esse nome inclui o nome de arquivo e não tem nenhuma informação de caminho. |
@@ -68,6 +68,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | FileAlignment | Especifica, em bytes, onde alinhar as seções do arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096, 8192. Essa propriedade é equivalente à opção do compilador `/filealignment`. |
 | FrameworkPathOverride | Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll*. Esse parâmetro é equivalente à opção `/sdkpath` do compilador *vbc.exe*. |
 | GenerateDocumentation | (C#, Visual Basic) Um parâmetro booliano que indica se a documentação é gerada pela compilação. Se ele for `true`, o build gerará informações sobre a documentação e as colocará em um arquivo *.xml* junto com o nome do arquivo executável ou a biblioteca criada pela tarefa de build. |
+| GenerateFullPaths | (C#) Gerar caminhos completos para nomes de FileNames na saída usando a opção de compilador [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) . |
 | GenerateSerializationAssemblies | Indica se os assemblies de serialização XML devem ser gerados por *SGen.exe*, que pode ser definido como ativado, automático ou desativado. Essa propriedade é usada para assemblies destinados exclusivamente ao .NET Framework. Para gerar assemblies de serialização de XML para assemblies do .NET Standard ou .NET Core, faça referência ao pacote do NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, *\obj\debug\\* . |
 | KeyContainerName | O nome do contêiner de chave de nome forte. |
@@ -131,5 +132,5 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Win32Manifest | O nome do arquivo de manifesto deve ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32Manifest`. |
 | Win32Resource | O nome do arquivo do recurso do Win32 a ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32resource`. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
