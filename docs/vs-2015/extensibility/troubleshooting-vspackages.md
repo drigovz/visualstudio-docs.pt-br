@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477001"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557980"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
      Bons pontos de partida para depuração são o construtor e o método de inicialização. Você também pode definir pontos de interrupção na área que deseja avaliar, como um comando de menu. Para habilitar pontos de interrupção, você deve executar sob o depurador.  
   
-    1. No menu **Projeto** , clique em **Propriedades**.  
+    1. No menu **Projeto**, clique em **Propriedades**.  
   
     2. Na caixa de diálogo **páginas de propriedades** , selecione a guia **depurar** .  
   
@@ -101,23 +101,21 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
     2. Adicionar este **arquivo de símbolo (. pdb) local**:  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Para melhorar o desempenho, especifique uma pasta de cache de símbolos, por exemplo:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Para solucionar um VSPackage ausente ou uma de suas dependências  
   
 1. Para código gerenciado, verifique se os caminhos de referência estão corretos.  
   
-   1. No menu **Projeto** , clique em **Propriedades**.  
+   1. No menu **Projeto**, clique em **Propriedades**.  
   
    2. Selecione a guia **referências** na caixa de diálogo **páginas de propriedades** e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **pesquisador de objeto** para procurar os objetos referenciados.  
   
-        Para código gerenciado, você pode usar o [Fuslogvw. exe (Visualizador de log de associação de assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de cargas de assembly com falha.  
+        Para código gerenciado, você pode usar o [Fuslogvw. exe (Visualizador de log de associação de assembly)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para exibir os detalhes de cargas de assembly com falha.  
   
 2. Para código não gerenciado, localize o CLSID do VSPackage no nó do registro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
   
@@ -125,5 +123,5 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
    Verifique se a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="see-also"></a>Veja também  
  [VSPackages](../extensibility/internals/vspackages.md)

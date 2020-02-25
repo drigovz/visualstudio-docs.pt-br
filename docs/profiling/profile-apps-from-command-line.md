@@ -1,8 +1,8 @@
 ---
-title: Medir o uso da CPU na linha de comando
-description: Medir o desempenho da CPU em seu aplicativo na linha de comando.
+title: Medir o desempenho da linha de comando
+description: Meça o desempenho da CPU e o uso da memória gerenciada em seu aplicativo na linha de comando.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972402"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558128"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
 
@@ -74,7 +74,7 @@ Para sua conveniência, você pode armazenar essas informações em um arquivo d
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * Configurações de CpuUsage (Base/Alta/Baixa), que corresponde aos dados coletados para a ferramenta de criação de perfil [Uso da CPU](../profiling/cpu-usage.md).
-* Configurações de DotNetObjectAlloc (Base/Baixa), que correspondem aos dados coletados para a [ferramenta de Alocação de Objeto .NET](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling).
+* Configurações de DotNetObjectAlloc (Base/Baixa), que correspondem aos dados coletados para a [ferramenta de Alocação de Objeto .NET](../profiling/dotnet-alloc-tool.md).
 
 As configurações Base/Baixa/Alta referem-se à taxa de amostragem. Por exemplo, Baixa representa 100 amostras/segundo e Alta, 4.000 amostras/segundo.
 

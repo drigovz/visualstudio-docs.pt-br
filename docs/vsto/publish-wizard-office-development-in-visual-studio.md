@@ -18,50 +18,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447063"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558180"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.
 
- Para acessar esse assistente, no **construir** menu, escolha **Publish** *SolutionName*. Você também pode acessar o **Assistente de publicação** partir **Gerenciador de soluções**. Abra o menu de atalho do nó do projeto e, em seguida, escolha **publicar**.
+ Para acessar esse assistente, no menu **Compilar** , escolha **publicar** *SolutionName*. Você também pode acessar o **Assistente de publicação** do **Gerenciador de soluções**. Abra o menu de atalho para o nó do projeto e escolha **publicar**.
 
- As seções a seguir descreve uma página do assistente.
+ Cada seção abaixo descreve uma página do assistente.
 
 ## <a name="where-do-you-want-to-publish-the-application"></a>Onde você deseja publicar o aplicativo?
- **Especifique o local para publicar este aplicativo** necessária. O local de publicação é o diretório onde o **Assistente de publicação** copia os arquivos de solução, como os manifestos, assemblies, certificado temporário e outros arquivos do build. Você deve ter acesso de gravação a esse diretório.
+ **Especifique o local para publicar este aplicativo** Necessário. O local de publicação é o diretório em que o **Assistente de publicação** copia os arquivos da solução, como manifestos, assemblies, certificado temporário e outros arquivos da compilação. Você deve ter acesso de gravação a esse diretório.
 
- Digite o local como um caminho de disco, compartilhamento de arquivos, site FTP ou URL do site da web ou clique a **procurar** botão para procurar o local. O caminho pode ser nos seguintes formatos:
+ Digite o local como um caminho de disco, compartilhamento de arquivos, site FTP ou URL do site ou clique no botão **procurar** para procurar o local. O caminho pode estar nestes formatos:
 
-- Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.
+- Um caminho relativo ou absoluto no formato padrão do Windows, como *C:\deploy\myapplication* ou *\MyApplication*.
 
-- Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\* .
+- Um caminho UNC (Convenção de nomenclatura universal), como *\\\ServerName\MyApplication\\* .
 
-- Uma URL de uma web site, como http://www.microsoft.com/MyApplication.
+- Uma URL de um site da Web, como `http://www.contoso.com/MyApplication`.
 
-  Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.
+  Por padrão, o local de publicação será *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório Publish \ se não tiver o IIS instalado.
 
 > [!NOTE]
-> Existem considerações mais se o computador de destino está executando o Windows Vista. Você deve ser um administrador no computador Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o *publique\\*  diretório, independentemente de você ter instalado o IIS.
+> Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório *publish\\* , independentemente de você ter o IIS instalado.
 
-## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>O que é o caminho de instalação padrão em computadores de usuários finais?
- O caminho de instalação é opcional. Se você preferir, você pode definir o caminho de instalação mais tarde. Para obter detalhes, confira [Como: Alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual é o caminho de instalação padrão nos computadores dos usuários finais?
+ O caminho de instalação é opcional. Você pode definir o caminho de instalação mais tarde, se preferir. Para obter detalhes, consulte [como alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
 
- O caminho de instalação é o diretório do qual o usuário final instalará a personalização. Também é o caminho que a solução usará para verificar se há atualizações. O **Assistente de publicação** não implanta a solução para esse local, a menos que o caminho é o mesmo que você digitou na **especifique o local para publicar este aplicativo** caixa da página anterior.
+ O caminho de instalação é o diretório do qual o usuário final irá instalar a personalização. Ele também é o caminho que será usado pela solução para verificar se há atualizações. O **Assistente de publicação** não implantará a solução nesse local, a menos que o caminho seja o mesmo que você inseriu na caixa **especificar o local para publicar este aplicativo** na página anterior.
 
- **De um site** especificar a URL que os usuários finais seguirá para instalar a solução.
+ **De um site da Web** Especifique a URL que os usuários finais seguirão para instalar a solução.
 
- **De um compartilhamento de arquivo ou caminho UNC** especifique o caminho UNC que os usuários finais seguirá para instalar a solução.
+ **De um caminho UNC ou compartilhamento de arquivos** Especifique o caminho UNC que os usuários finais seguirão para instalar a solução.
 
- **De um CD-ROM ou DVD-ROM** essa opção não exige um caminho de instalação.
+ **De um CD-ROM ou DVD-ROM** Essa opção não requer um caminho de instalação.
 
- Visual Studio não gravar o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.
+ O Visual Studio não grava o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.
 
 ## <a name="see-also"></a>Consulte também
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Página de publicação, Designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Publicar página, desenvolvimento do &#40;Project Designer Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

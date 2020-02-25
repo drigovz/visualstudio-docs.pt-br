@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476901"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557993"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como especificar o local de onde os usuários finais instalarão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
   
 2. Clique na guia **Publicar**.  
   
-3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato https://www.microsoft.com/ApplicationNameou um caminho UNC usando o formato \\\Server\ApplicationName.  
+3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato `https://www.contoso.com/ApplicationName`ou um caminho UNC usando o formato `\\Server\ApplicationName`.  
   
-## <a name="see-also"></a>Consulte Também  
+## <a name="see-also"></a>Veja também  
  [Como especificar o local em que o Visual Studio copiará os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

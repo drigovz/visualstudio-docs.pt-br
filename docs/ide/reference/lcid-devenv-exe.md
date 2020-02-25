@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595521"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557939"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Necessária. O identificador de localidade (LCID) do idioma que você especificar.
+  Necessário. O identificador de localidade (LCID) do idioma que você especificar.
 
 ## <a name="remarks"></a>Comentários
 
@@ -49,17 +49,22 @@ Se o idioma especificado não estiver disponível em seu sistema, a opção `/LC
 
 A tabela a seguir lista os LCIDs dos idiomas para os quais o Visual Studio oferece suporte.
 
-|{1&gt;Idioma&lt;1}|LCID|
+|Linguagem|LCID|
 |--------------|----------|
 |Chinês (simplificado)|2052|
 |Chinês (tradicional)|1028|
+|Tcheco|1029|
 |Inglês|1033|
 |Francês|1036|
 |Alemão|1031|
 |Italiano|1040|
 |Japonês|1041|
 |Coreano|1042|
+|Polonês|1045|
+|Português (Brasil)|1046|
+|Russo|1049|
 |Espanhol|3082|
+|Turco|1055
 
 ## <a name="example"></a>Exemplo
 
@@ -69,7 +74,7 @@ Este exemplo carrega o IDE com cadeias de caracteres de recursos em inglês.
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Caixa de diálogo Configurações Internacionais, Ambiente, Opções](../../ide/reference/international-settings-environment-options-dialog-box.md)
