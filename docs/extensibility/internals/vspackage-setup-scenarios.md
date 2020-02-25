@@ -74,7 +74,7 @@ Nesse caso, o VSPackage é um VSPackage gerenciado instalado no GAC (cache de as
 
 ![Instalador de atualização de pacote vs lado a lado](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo a dll inferno com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo o inferno de DDLs com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Consulte também
 
