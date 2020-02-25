@@ -51,7 +51,7 @@ Descrições de nível de produto: expanda **planos de suporte indisponíveis**.
 4. Depois que o processo for concluído, você receberá um email contendo a **ID do Contrato** e a **ID de Acesso** que você usará ao criar um incidente de suporte.  Ele também fornecerá instruções para enviar incidentes de suporte usando sua nova ID de acesso e a ID de contrato. 
 
 > [!NOTE]
-> Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).
+> Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país/região [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Como enviar um incidente usando seu benefício
 Depois de configurar a **ID do Contrato** e a **ID de Acesso**, você poderá usá-las para enviar um incidente de Suporte Técnico [online](https://support.microsoft.com/oas/) (entrada necessária), por meio do [portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou ligando para o número de suporte técnico de seu país. Se você enviar seu incidente online, terá a opção de receber uma chamada do analista de Suporte da Microsoft.
