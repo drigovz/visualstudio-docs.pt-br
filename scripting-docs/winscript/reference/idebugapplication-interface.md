@@ -46,6 +46,6 @@ Expõe métodos de depuração não remota para uso por hosts e mecanismos de li
 |[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Dispara um evento genérico para o depurador `IApplicationDebugger` interface.|  
 |[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Faz com que o thread atual bloquear e envia uma notificação de erro para o IDE do depurador.|  
 |[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Determina se um depurador do just-in-time (JIT) está registrado.|  
-|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Determina se um depurador JIT está registrado para hosts burros de depuração automática.|  
+|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Determina se um depurador JIT está registrado para hosts não inteligentes de depuração automática.|  
 |[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Adiciona um provedor de contexto de expressão global para este aplicativo.|  
 |[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Remove um provedor de contexto de expressão global desse aplicativo.|
