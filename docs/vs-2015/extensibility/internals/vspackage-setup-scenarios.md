@@ -74,7 +74,7 @@ Instalador de VSPackage lado a lado
  ![Lado do VS&#45;por&#45;gráfico de atualização de pacote do VS lado](../../extensibility/internals/media/vs-sbys-packageupdate.gif "VS_SbyS_PackageUpdate")  
 Instalador de atualização de VSPackage lado a lado  
   
- **Observação** para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo inferno da DLL com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).  
+ **Observação** para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo o inferno de DLLs com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).  
   
 ## <a name="see-also"></a>Consulte também  
  [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
