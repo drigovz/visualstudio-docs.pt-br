@@ -9,23 +9,23 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864757"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579987"
 ---
-# <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Criar um aplicativo simples com o C\#
+# <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: criar um aplicativo simples com o C\#
 
 Ao concluir este tutorial, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo "Olá, Mundo", projetar a interface do usuário, adicionar código e depurar erros enquanto aprende sobre o trabalho no [IDE](visual-studio-ide.md) (ambiente de desenvolvimento integrado).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range="vs-2017"
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?) para instalá-lo gratuitamente.
@@ -46,7 +46,7 @@ Ao abrir o Visual Studio pela primeira vez, você será solicitado a entrar. Est
 
 Depois que o Visual Studio for iniciado, você verá as janelas de ferramentas, os menus e as barras de ferramentas, bem como o espaço da Janela principal. As janelas de ferramentas estão encaixadas nos lados esquerdo e direito da janela do aplicativo, com **Início Rápido**, a barra de menus e a barra de ferramentas padrão na parte superior. No centro da janela do aplicativo está a **Página Inicial**. Ao carregar uma solução ou um projeto, os editores e designers são exibidos no espaço em que a **Página Inicial** está localizada. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
 
-![IDE do Visual Studio 2017 com configurações gerais aplicadas](../media/exploreide-idewithgeneralsettings.png "Captura de tela do IDE do Visual Studio 2017 com configurações gerais aplicadas")
+![IDE do Visual Studio 2017 com configurações gerais aplicadas](../media/exploreide-idewithgeneralsettings.png "Captura de tela do IDE do Visual Studio 2017 com as configurações gerais aplicadas")
 
 ::: moniker-end
 
@@ -62,13 +62,13 @@ Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma so
 
 ::: moniker range="vs-2017"
 
-1. Crie um novo projeto. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Criar um novo projeto. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
-     ![Na barra de menus, escolha Arquivo, Novo, Projeto](../media/exploreide-filenewproject.png "Captura de tela da barra de menus onde você escolhe Arquivo, Novo, Projeto")
+     ![Na barra de menus, escolha Arquivo, Novo, Projeto](../media/exploreide-filenewproject.png "Captura de tela da barra de menus onde você escolhe arquivo, novo, projeto")
 
 1. Na caixa de diálogo **Novo Projeto**, selecione a categoria **Instalado** > **Visual C#**  > **Área de Trabalho do Windows** e, em seguida, selecione o modelo **Aplicativo WPF (.NET Framework)** . Nomeie o projeto como **HelloWPFApp** e selecione **OK**.
 
-     ![Modelo de aplicativo do WPF na caixa de diálogo Novo Projeto do Visual Studio](media/exploreide-newprojectcsharp.png "Captura de tela do modelo de aplicativo do WPF na caixa de diálogo Novo Projeto")
+     ![Modelo de aplicativo do WPF na caixa de diálogo novo projeto do Visual Studio](media/exploreide-newprojectcsharp.png "Captura de tela do modelo de aplicativo do WPF na caixa de diálogo novo projeto")
 
 ::: moniker-end
 
@@ -78,18 +78,18 @@ Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma so
 
 1. Na tela Iniciar, selecione **Criar projeto**.
 
-   ![Exibir a janela 'Criar um novo projeto'](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de tela da janela “Criar um novo projeto”")
+   ![Exibir a janela ' criar um novo projeto '](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de tela da janela ' criar um novo projeto '")
 
 1. Na tela **criar um novo projeto** , pesquise "WPF", escolha **aplicativo WPF (.NET Core)** e, em seguida, escolha **Avançar**.
 
-   ![Modelo de aplicativo do WPF na caixa de diálogo “Criar um novo projeto”](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de tela do modelo de aplicativo do WPF na caixa de diálogo “Criar um novo projeto”")
+   ![O modelo de aplicativo do WPF na caixa de diálogo ' criar um novo projeto '](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de tela do modelo de aplicativo do WPF na caixa de diálogo ' criar um novo projeto '")
 
    > [!NOTE]
    > Você pode encontrar dois modelos de área de trabalho do WPF, um para .NET Framework e outro para o .NET Core. O modelo .NET Core está disponível no Visual Studio 2019 versão 16,3 e posterior. Você pode usar qualquer um para este tutorial, mas recomendamos o .NET Core para o novo desenvolvimento.
 
 1. Na próxima tela, dê o nome **HelloWPFApp** ao projeto e escolha **Criar**.
 
-   ![Nomeie o projeto como 'HelloWPFApp'](./media/vs-2019/exploreide-nameproject.png "Captura de tela da janela em que você nomeia seu projeto")
+   ![Nomeie seu projeto ' HelloWPFApp '](./media/vs-2019/exploreide-nameproject.png "Captura de tela da janela na qual você nomeou seu projeto")
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ O Visual Studio cria o projeto e a solução HelloWPFApp e o **Gerenciador de So
 
 Depois de criar o projeto, você poderá personalizá-lo. Para tanto, escolha **Janela de Propriedades** do menu **Exibir**, ou pressione **F4**. Em seguida, você pode exibir e alterar opções de itens de projeto, controles e outros itens em um aplicativo.
 
-   ![Janela de Propriedades](../media/exploreide-hellowpfappfiles.png "Captura de tela da janela Propriedades com nomes de aplicativos de arquivos do WPF")   
+   ![Janela Propriedades](../media/exploreide-hellowpfappfiles.png "Captura de tela da janela Propriedades com nomes de aplicativo de arquivo do WPF")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Alterar o nome de MainWindow.xaml
 
@@ -120,13 +120,13 @@ Adicionaremos três tipos de controles a este aplicativo: um controle <xref:Syst
 
 1. No **Caixa de Ferramentas**, expanda o nó **Controles Comuns do WPF** para ver o controle TextBlock.
 
-     ![Caixa de Ferramentas com o controle TextBlock destacado](../media/exploreide-textblocktoolbox.png "Captura de tela da janela Caixa de Ferramentas com o controle TextBlock destacado")
+     ![Caixa de ferramentas com o controle TextBlock realçado](../media/exploreide-textblocktoolbox.png "Captura de tela da janela caixa de ferramentas com o controle TextBlock realçado")
 
 1. Adicione um controle TextBlock à superfície de design escolhendo o item **TextBlock** e arrastando-o para a janela na superfície de design. Centralize o controle próximo à parte superior da janela. No Visual Studio 2019 e posterior, você pode usar as diretrizes vermelhas para centralizar o controle.
 
     Sua janela deve se parecer com a ilustração a seguir:
 
-    ![Controle TextBlock no formulário Greetings](../media/exploreide-greetingswithtextblockonly.png "Captura de tela do controle TextBlock no formulário Greetings")
+    ![Controle TextBlock no formulário Saudações](../media/exploreide-greetingswithtextblockonly.png "Captura de tela do controle TextBlock no formulário Greetings")
 
    A marcação XAML deve ter uma aparência semelhante ao exemplo a seguir:
 
@@ -156,17 +156,17 @@ Em seguida, você adicionará dois controles [RadioButton](/dotnet/framework/wpf
 
 1. Na **Caixa de Ferramentas**, localize o controle **RadioButton**.
 
-     ![Janela Caixa de Ferramentas com o controle RadioButton selecionado](../media/exploreide-radiobuttontoolbox.png "Captura de tela da janela Caixa de Ferramentas com o controle RadioButton selecionado")
+     ![Janela de ferramentas com o controle RadioButton selecionado](../media/exploreide-radiobuttontoolbox.png "Captura de tela da janela caixa de ferramentas com o controle RadioButton selecionado")
 
 1. Adicione dois controles RadioButton à superfície de design escolhendo o item **RadioButton** e arrastando-o para a janela na superfície de design. Mova os botões (selecionando-os e usando as teclas de direção) para que os botões sejam exibidos lado a lado sob o controle TextBlock. Use as diretrizes vermelhas para alinhar os controles.
 
    A sua janela deve se parecer com esta:
 
-   ![Formulário Greetings com TextBlock e dois botões de opção](../media/exploreide-greetingswithradiobuttons.png "Captura de tela do formulário Greetings com TextBlock e dois botões de opção")
+   ![Formulário de saudações com TextBlock e dois botões de opção](../media/exploreide-greetingswithradiobuttons.png "Captura de tela do formulário de saudações com TextBlock e dois botões de opção")
 
 1. Na janela **Propriedades** do controle RadioButton esquerdo, altere a propriedade **Nome** (a propriedade na parte superior da janela **Propriedades**) para `HelloButton`.
 
-    ![Janela de propriedades RadioButton](../media/exploreide-buttonproperties.png "Captura de tela da janela de propriedades RadioButton")
+    ![Janela Propriedades do botão de opção](../media/exploreide-buttonproperties.png "Captura de tela da janela Propriedades do botão de opção")
 
 1. Na janela **Propriedades** do controle RadioButton direito, altere a propriedade **Name** para `GoodbyeButton` e, em seguida, salve as alterações.
 
@@ -174,7 +174,7 @@ Em seguida, adicione o texto de exibição para cada controle RadioButton. O pro
 
 ### <a name="add-display-text-for-each-radio-button"></a>Adicionar o texto de exibição de cada botão de opção
 
-1. Atualize o atributo de **conteúdo** para `HelloButton` o `GoodbyeButton` e `"Hello"` para `"Goodbye"` e no XAML. A marcação XAML deve agora ser semelhante ao exemplo a seguir:
+1. Atualize o atributo de **conteúdo** para o `HelloButton` e `GoodbyeButton` para `"Hello"` e `"Goodbye"` no XAML. A marcação XAML deve agora ser semelhante ao exemplo a seguir:
 
    ```xaml
    <Grid>
@@ -212,7 +212,7 @@ O elemento final da interface do usuário que você adicionará é um controle d
 
      Sua janela deve se parecer com a ilustração a seguir.
 
-     ![Formulário Greetings com rótulos de controle](media/exploreide-greetingswithcontrollabels-cs.png "Captura de tela do formulário Greetings com rótulos de controle")
+     ![Formulário Saudações com rótulos de controle](media/exploreide-greetingswithcontrollabels-cs.png "Captura de tela do formulário de saudações com rótulos de controle")
 
    A marcação XAML deve agora ser semelhante ao exemplo a seguir:
 
@@ -267,9 +267,9 @@ Nesta etapa, você encontrará o erro que causamos anteriormente alterando o nom
 
 1. Inicie o depurador pressionando **F5** ou selecionando **Depurar** e depois **Iniciar Depuração**.
 
-   Uma janela **Modo de Interrupção** é exibida e a janela de **Saída** indica que ocorreu uma IOException: Não é possível localizar o recurso 'mainwindow.xaml'.
+   Uma janela de **Modo de Interrupção** é exibida e a janela **Saída** indica que houve uma IOException: não é possível localizar o recurso 'mainwindow.xaml'.
 
-   ![Mensagem IOException](../media/exploreide-ioexception.png "Captura de tela da mensagem IOException")
+   ![Mensagem IOException](../media/exploreide-ioexception.png "Captura de tela da mensagem de IOException")
 
 1. Interrompa o depurador escolhendo **Depurador** > **Interromper a Depuração**.
 
@@ -312,7 +312,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
     A linha `MessageBox.Show("Hello.")` é realçada em amarelo. Na parte inferior do IDE, as janelas Automáticos, Locais e Inspeção estão encaixadas juntas no lado esquerdo e as janelas Pilha de Chamadas, Pontos de Interrupção, Configurações de Exceção, Comando, Imediato e Saída estão encaixadas no lado direito.
 
-    ![Ponto de interrupção no depurador](media/exploreide-debugbreakpoint.png "Captura de tela do ponto de interrupção no depurador")
+    ![Ponto de interrupção no depurador](media/exploreide-debugbreakpoint.png "Captura de tela de ponto de interrupção no depurador")
 
 1. Na barra de menus, escolha **Depurar** > **Depuração Circular**.
 
@@ -355,6 +355,6 @@ Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutori
 > [!div class="nextstepaction"]
 > [Continuar com mais tutoriais do WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Dicas de produtividade](../../ide/productivity-features.md)

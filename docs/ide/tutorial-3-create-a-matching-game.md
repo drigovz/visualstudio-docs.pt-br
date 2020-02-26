@@ -4,17 +4,17 @@ ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3039207cd36e1fcfedef95830fec9ebb91686491
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590261"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579711"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Criar um jogo da memória
 
@@ -41,7 +41,7 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
-|Cargo|Descrição|
+|Title|DESCRIÇÃO|
 |-----------|-----------------|
 |[Etapa 1: Criar um projeto e adicionar uma tabela ao formulário](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Comece criando o projeto e adicionando um controle `TableLayoutPanel` para manter os controles devidamente alinhados.|
 |[Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Adicione um objeto `Random` e um objeto `List` para criar uma lista de ícones.|
@@ -55,11 +55,11 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 Também há excelentes recursos de aprendizado de vídeo gratuitos disponíveis para você. Para saber mais sobre programação no C#, consulte [ C# conceitos básicos: desenvolvimento para iniciantes absolutos](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Para saber mais sobre programação no Visual Basic, veja [Visual Basic Fundamentals: Development for Absolute Beginners (Conceitos básicos do Visual Basic: desenvolvimento para iniciantes absolutos)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Para iniciar o tutorial, comece com a **[etapa 1: criar um projeto e adicionar uma tabela ao formulário](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Mais C# tutoriais](/visualstudio/get-started/csharp/)
 * [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)

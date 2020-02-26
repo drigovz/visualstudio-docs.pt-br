@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599310"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578951"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -33,7 +33,7 @@ Se você tem um arquivo aberto no editor de código, é possível definir um pon
 
 ![Definir um ponto de interrupção](../debugger/media/dbg-tour-set-a-breakpoint.gif "Definir um ponto de interrupção")
 
-Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração") na barra de ferramentas depurar e o depurador será executado para o primeiro ponto de interrupção que encontrar. Se o aplicativo ainda não estiver em execução, F5 iniciará o depurador e o interromperá no primeiro ponto de interrupção.
+Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas depurar e o depurador será executado para o primeiro ponto de interrupção que encontrar. Se o aplicativo ainda não estiver em execução, F5 iniciará o depurador e o interromperá no primeiro ponto de interrupção.
 
 Os pontos de interrupção são um recurso útil quando você sabe qual linha ou seção de código deseja examinar em detalhes.
 
@@ -45,7 +45,7 @@ Para iniciar seu aplicativo com o depurador anexado, pressione **F11** (**Depura
 
 ![Depuração de F11 em](../debugger/media/dbg-tour-f11.png "Depuração de F11 em")
 
-A seta amarela representa a instrução na qual o depurador ficou em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
+A seta amarela representa a instrução na qual o depurador está em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
 
 F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Para mover-se mais rapidamente pelo código, mostraremos algumas outras opções também.) Por padrão, o depurador ignora o código que não é do usuário (se você quiser obter mais detalhes, consulte [apenas meu código](../debugger/just-my-code.md)).
 
@@ -93,7 +93,7 @@ Este comando retoma a execução do aplicativo (e avança o depurador) até que 
 
 ## <a name="run-to-cursor"></a>Executar até o cursor
 
-Pare o depurador pressionando o botão **parar depuração** vermelho ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "Para a depuração") ou **Shift**  + **F5**.
+Pare o depurador pressionando o botão **parar depuração** vermelho ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração") ou **Shift** + **F5**.
 
 Clique com o botão direito do mouse em uma linha de código do seu aplicativo e escolha **Executar até o Cursor**. Esse comando inicia a depuração e define um ponto de interrupção temporário na linha de código atual.
 
@@ -114,7 +114,7 @@ Clique no botão **reiniciar** ![aplicativo](../debugger/media/dbg-tour-restart.
 
 Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
 
-Se você quiser interromper o depurador e voltar para o editor de código, poderá pressionar o botão vermelho parar ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "Para a depuração") em vez de **reiniciar**.
+Se você quiser interromper o depurador e voltar para o editor de código, poderá pressionar o botão vermelho parar ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração") em vez de **reiniciar**.
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Editar seu código e continuar a depuraçãoC#(, VB C++,, XAML)
 
@@ -147,14 +147,14 @@ Durante a depuração, examine a janela **Autos** na parte inferior do editor de
 
 ![Janela de automóveis](../debugger/media/dbg-tour-autos-window.png "Janela Autos")
 
-Na janela **Autos**, veja as variáveis, bem como seus valores atuais e os respectivos tipos. A janela **Autos** mostra todas as variáveis usadas na linha atual ou na linha anterior (No C++, a janela mostra as variáveis nas três linhas de código anteriores. Verifique a documentação para saber o comportamento específico a uma linguagem).
+Na janela **Autos**, veja as variáveis, bem como seus valores atuais e os respectivos tipos. A janela **Autos** mostra todas as variáveis usadas na linha atual ou na linha anterior (em C++, a janela mostra as variáveis nas três linhas de código anteriores. Verifique a documentação para saber o comportamento específico a uma linguagem).
 
 > [!NOTE]
-> Em JavaScript, há compatibilidade com a janela **Locais**, mas não com a janela **Autos**.
+> Em JavaScript, há suporte para a janela **Locais**, mas não para a janela **Autos**.
 
 Em seguida, examine a janela **Locais**. A janela **Locais** mostra as variáveis que estão no escopo no momento.
 
-![Janela locais](../debugger/media/dbg-tour-locals-window.png "Janela Locais")
+![Janela Locais](../debugger/media/dbg-tour-locals-window.png "Janela Locais")
 
 Neste exemplo, o objeto `this` e o objeto `f` estão no escopo. Para obter mais informações, confira [Inspecionar variáveis nas janelas Locais e Autos](../debugger/autos-and-locals-windows.md).
 
@@ -164,7 +164,7 @@ Você pode usar uma janela **Inspeção** para especificar uma variável (ou uma
 
 Durante a depuração, clique com o botão direito do mouse em um objeto e escolha **Adicionar Inspeção**.
 
-![Janela de inspeção](../debugger/media/dbg-tour-watch-window.png "Janela Inspecionar")
+![Janela Inspeção](../debugger/media/dbg-tour-watch-window.png "Janela Inspecionar")
 
 Neste exemplo, há uma inspeção definida no objeto `f` e você pode ver seu valor sendo alterado, conforme percorre o depurador. Ao contrário das outras janelas de variáveis, a janela **Inspeção** sempre mostra as variáveis que você está inspecionando (eles ficam esmaecidas quando estão fora do escopo).
 
@@ -208,7 +208,7 @@ Você pode configurar seu projeto para compilar como uma [configuração de depu
 
 As propriedades de depuração são específicas para cada tipo de projeto. Por exemplo, você pode especificar um argumento para passar ao aplicativo ao iniciá-lo. Você pode acessar as propriedades específicas do projeto clicando com o botão direito do mouse no projeto em Gerenciador de Soluções e selecionando **Propriedades**. As propriedades de depuração normalmente aparecem na guia **Compilar** ou **depurar** , dependendo do tipo de projeto específico.
 
-![Propriedades do projeto](../debugger/media/dbg-tour-project-properties.png "Propriedades de projeto")
+![Propriedades do projeto](../debugger/media/dbg-tour-project-properties.png "Propriedades do projeto")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicativos ASP.NET dinâmicos no Serviço de Aplicativo do Azure
 
@@ -229,6 +229,10 @@ O **retrocesso do IntelliTrace** tira automaticamente um instantâneo do seu apl
 ![Botões voltar e avançar da etapa](../debugger/media/intellitrace-step-back-icons-description.png  "Botões voltar e avançar da etapa")
 
 Para obter mais informações, confira a página [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
+
+## <a name="debug-performance-issues"></a>Problemas de desempenho de depuração
+
+Se seu aplicativo for executado muito lentamente ou usar muita memória, talvez seja necessário testar seu aplicativo com as ferramentas de criação de perfil no início. Para obter mais informações sobre ferramentas de criação de perfil, como a ferramenta de uso da CPU e o analisador de memória, consulte [primeira análise das ferramentas de criação de perfil](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 5: Implantar o aplicativo ASP.NET Core no Azure'
+title: 'Etapa 5: implantando seu aplicativo ASP.NET Core no Azure'
 description: Implante seu aplicativo Web ASP.NET Core no Azure com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970910"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580022"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Etapa 5: Implantar o aplicativo ASP.NET Core no Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Etapa 5: implantar seu aplicativo ASP.NET Core no Azure
 
 Siga estas etapas para implantar seu aplicativo ASP.NET Core e seu banco de dados no Azure.
 
@@ -55,9 +55,9 @@ Depois que o serviço de aplicativo for criado, seu site será iniciado em um na
 
 ![Opções do Serviço de Aplicativo do Azure](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 
-### <a name="scalability"></a>Dimensionamento
+### <a name="scalability"></a>Escalabilidade
 
-Você pode examinar as opções para escalar verticalmente o aplicativo, bem como horizontalmente. Escalar verticalmente refere-se ao aumento dos recursos fornecidos para cada instância que hospeda seu aplicativo. Escalar horizontalmente refere-se ao aumento do número de instâncias que hospedam seu aplicativo. Você pode configurar o dimensionamento automático para seu aplicativo, o que aumenta automaticamente o número de instâncias usadas para hospedar seu aplicativo em resposta ao carregamento, depois as reduz quando a carga diminuiu.
+Você pode examinar as opções para dimensionar o aplicativo para cima e para fora. Escalar verticalmente refere-se ao aumento dos recursos fornecidos para cada instância que hospeda seu aplicativo. Escalar horizontalmente refere-se ao aumento do número de instâncias que hospedam seu aplicativo. Você pode configurar o dimensionamento automático para seu aplicativo, o que aumenta automaticamente o número de instâncias usadas para hospedar seu aplicativo em resposta ao carregamento, depois as reduz quando a carga diminuiu.
 
 ### <a name="security-and-compliance"></a>Segurança e conformidade
 
@@ -83,6 +83,6 @@ Saiba mais sobre como projetar aplicativos ASP.NET Core com esses recursos gratu
 
 [Arquitetura do aplicativo ASP.NET Core](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Publicar um aplicativo ASP.NET Core no Azure com o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

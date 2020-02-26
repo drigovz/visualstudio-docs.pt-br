@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599288"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578775"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Localizar sua tarefa de depuração no Visual Studio
 
@@ -26,7 +26,7 @@ Se você precisar de ajuda para mapear sua tarefa de depuração para o recurso 
 
 ### <a name="pause-running-code-to-inspect-a-line-of-code-that-may-contain-a-bug"></a>Pausar o código em execução para inspecionar uma linha de código que pode conter um bug
 
-Definir um ponto de interrupção. Para obter mais informações, consulte [usando pontos de interrupção](using-breakpoints.md).
+{2&gt;Defina um ponto de interrupção.&lt;2} Para obter mais informações, consulte [usando pontos de interrupção](using-breakpoints.md).
 
 ### <a name="pause-and-inspect-your-app-when-it-reaches-a-specific-state"></a>Pausar e inspecionar seu aplicativo quando ele atingir um estado específico
 
@@ -75,7 +75,7 @@ Você pode fazer isso [definindo um ponto de interrupção na janela de desmonta
 
 Para obter mais informações, consulte [navegar pelo código com o depurador](navigating-through-code-with-the-debugger.md).
 
-## <a name="inspect-data"></a>Inspecionar dados
+## <a name="inspect-data"></a>Inspecionar os dados
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Verificar o valor das variáveis ao executar seu aplicativo
 
@@ -130,3 +130,7 @@ Consulte [anexar a um processo em execução](attach-to-running-processes-with-t
 ### <a name="debug-multithreaded-applications"></a>Depurar aplicativos multi-threaded
 
 Consulte [depurar aplicativos multissegmentados](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Corrigir problemas de desempenho
+
+Veja [a primeira olhada nas ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

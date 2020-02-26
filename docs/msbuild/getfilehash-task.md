@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - GetFileHash task [MSBuild]
 - MSBuild, GetFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977497"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578654"
 ---
 # <a name="getfilehash-task"></a>Tarefa GetFileHash
 
@@ -32,14 +32,14 @@ Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https
 
  A tabela a seguir descreve os parâmetros da tarefa `GetFileHash`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`Files`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br />Os arquivos destinados a sofrer hashing.|
 |`Items`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />A entrada `Files` com metadados adicionais definidos como o hash do arquivo.|
 |`Hash`|Parâmetro de saída `String`.<br /><br />O hash do arquivo. Essa saída é definida somente se exatamente um item foi passado.|
 |`Algorithm`|Parâmetro `String` opcional.<br /><br />O algoritmo. Valores permitidos: `SHA256`, `SHA384`, `SHA512`. Padrão = `SHA256`.|
-|`MetadataName`|Parâmetro `String` opcional.<br /><br />O nome de metadados em que o hash é armazenado em cada item. Assume o padrão de `FileHash`.|
-|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Assume o padrão de `hex`. Valores permitidos = `hex`, `base64`.|
+|`MetadataName`|Parâmetro `String` opcional.<br /><br />O nome de metadados em que o hash é armazenado em cada item. Usa `FileHash` como padrão.|
+|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Usa `hex` como padrão. Valores permitidos = `hex`, `base64`.|
 
 ## <a name="example"></a>Exemplo
 
@@ -63,7 +63,7 @@ O exemplo a seguir usa a tarefa `GetFileHash` para determinar e imprimir a soma 
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 

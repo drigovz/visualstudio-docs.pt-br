@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 3: Trabalhar com dados em aplicativo ASP.NET Core'
+title: 'Etapa 3: trabalhando com dados em seu aplicativo ASP.NET Core'
 description: Comece a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300584"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580073"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: Trabalhar com dados usando o Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: trabalhar com dados usando Entity Framework
 
 Siga estas etapas para começar a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core.
 
@@ -58,7 +58,7 @@ Agora clique com o botão direito do mouse em Jogos e escolha **Adicionar** > **
 
 ![Adicionar páginas geradas por scaffold do ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-add-scaffold.png)
 
-Selecione sua classe de modelo Jogo e use o ícone “+” para adicionar uma nova classe de contexto de dados. Nomeie-o como `AppDbContext`. Mantenha os outros padrões e clique em **Adicionar**.
+Selecione sua classe de modelo Jogo e use o ícone “+” para adicionar uma nova classe de contexto de dados. Nomeie-o `AppDbContext`. Mantenha os outros padrões e clique em **Adicionar**.
 
 Você verá que as seguintes Razor Pages adicionadas à pasta Jogos:
 
@@ -131,9 +131,9 @@ Isso é o necessário para começar a trabalhar com dados em um aplicativo ASP.N
 
 No próximo vídeo, você aprenderá como adicionar suporte à API Web em seu aplicativo.
 
-[Etapa 4: Expor uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Etapa 4: expondo uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Razor Pages com o Entity Framework Core no ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [Razor Pages do ASP.NET Core com EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

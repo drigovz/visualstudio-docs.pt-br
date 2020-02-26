@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829989"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579941"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introdução ao Visual Basic no Visual Studio
 
@@ -45,7 +45,7 @@ Primeiro, criaremos um projeto de aplicativo do Visual Basic. O tipo de projeto 
 
 1. Abra o Visual Studio 2017.
 
-2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+2. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
 3. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o projeto *WhatIsYourName*.
 
@@ -63,11 +63,11 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-   ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](../media/tutorial-aspnet-workload.png)
+   ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../media/tutorial-aspnet-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 
-1. Cancele a caixa de diálogo **Novo Projeto**; em seguida, vá até a barra de menus superior e escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
+1. Cancele a caixa de diálogo **novo projeto** e, na barra de menus superior, escolha **ferramentas** > **obter ferramentas e recursos**.
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
@@ -97,7 +97,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    > 
    > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
    >
-   > ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
 
@@ -138,7 +138,7 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
    ![Janela do console mostrando Qual é o seu nome, a data e hora, e Pressione qualquer tecla para continuar a mensagem](media/vb-console-what-name.png)
 
-1. Pressione qualquer tecla para fechar a janela de console.
+1. Pressione qualquer tecla para fechar a janela do console.
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
    ![Janela do console mostrando Qual é o seu nome, a data e hora, e Pressione qualquer tecla para continuar a mensagem](media/vb-console-what-name.png)
 
-1. Pressione qualquer tecla para fechar a janela de console.
+1. Pressione qualquer tecla para fechar a janela do console.
 
  ::: moniker-end
 
@@ -173,7 +173,7 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio 2017 e, na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Abra o Visual Studio 2017 e, na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
 1. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o arquivo como *CalculateThis*.
 
@@ -261,14 +261,14 @@ Um aplicativo de console obtém a entrada e exibe a saída em uma janela de linh
 
 O .NET Core é o próximo passo na evolução do .NET Framework. Enquanto o .NET Framework pode compartilhar o código entre linguagens de programação, o .NET Core agrega a capacidade de compartilhar o código entre plataformas. Melhor ainda, ele é um software livre. (Tanto o .NET Framework quanto o .NET Core incluem bibliotecas de funcionalidade predefinidas, bem como um CLR (Common Language Runtime), que atua como uma máquina virtual na qual o código será executado.)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Parabéns por concluir este tutorial. Para saber ainda mais, confira o tutorial a seguir.
 
 > [!div class="nextstepaction"]
 > [Criar uma biblioteca com o Visual Basic e o SDK do .NET Core no Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Instruções passo a passo sobre a linguagem do Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Referência da linguagem Visual Basic](/dotnet/visual-basic/language-reference/index)

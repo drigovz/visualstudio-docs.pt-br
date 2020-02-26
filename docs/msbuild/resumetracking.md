@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6bb4663013a73d88ed7c2118816007705834162c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996689"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578443"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Retoma o acompanhamento no contexto atual.
@@ -35,7 +35,7 @@ HRESULT WINAPI ResumeTracking();
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido retomado. **E_FAIL** será retornado se não for possível continuar o acompanhamento porque o contexto não estava disponível.
 
 ## <a name="requirements"></a>Requisitos
- **Cabeçalho:** *FileTracker.h*
+ **Cabeçalho:** *FileTracker. h*
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [SuspendTracking](../msbuild/suspendtracking.md)

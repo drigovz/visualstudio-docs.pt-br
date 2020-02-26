@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588766"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579426"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 
@@ -53,7 +53,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 4. Considere por que em Visual Basic uma matriz temporária deve ser criada primeiro, mas C#no, a lista pode ser criada com uma instrução. Isso ocorre porque o C# idioma tem *inicializadores de coleção*, que preparam a lista para aceitar valores. No Visual Basic, você pode usar um inicializador de coleção. No entanto, para compatibilidade com a versão anterior do Visual Basic, é recomendável usar o código anterior.
 
-     Quando você usa um inicializador de coleção com uma instrução `new`, depois que o novo objeto de lista é criado, o programa o preenche com os dados fornecidos entre chaves. Nesse caso, você obtém uma lista de cadeias de caracteres denominadas ícones, e essa lista será inicializada para que contenha dezesseis cadeias de caracteres. Cada uma dessas cadeias de caracteres é uma única letra e elas correspondem aos ícones que estarão nos rótulos. Desse modo, o jogo terá um par de pontos de exclamação, um par de letras N maiúsculas, um par de vírgulas, e assim por diante. (Quando esses caracteres são definidos como a fonte Webdings, eles aparecerão como símbolos, como um barramento, uma bicicleta, um aranha e assim por diante.) O objeto de lista terá dezesseis cadeias de caracteres, uma para cada célula no painel TableLayoutPanel.
+     Quando você usa um inicializador de coleção com uma instrução `new`, depois que o novo objeto de lista é criado, o programa o preenche com os dados fornecidos entre chaves. Nesse caso, você obtém uma lista de cadeias de caracteres denominadas ícones e essa lista será inicializada para que contenha dezesseis cadeias de caracteres. Cada uma dessas cadeias de caracteres é uma única letra e elas correspondem aos ícones que estarão nos rótulos. Desse modo, o jogo terá um par de pontos de exclamação, um par de letras N maiúsculas, um par de vírgulas, e assim por diante. (Quando esses caracteres são definidos como a fonte Webdings, eles aparecerão como símbolos, como um barramento, uma bicicleta, um aranha e assim por diante.) O objeto de lista terá dezesseis cadeias de caracteres, uma para cada célula no painel TableLayoutPanel.
 
     > [!NOTE]
     > No Visual Basic, você obtém o mesmo resultado, mas primeiro as cadeias de caracteres são colocadas em uma matriz temporária, que é então convertida em um objeto de lista. Uma matriz é semelhante a uma lista, exceto, por exemplo, as matrizes que são criadas com um tamanho fixo. As listas podem ser reduzidas e aumentadas, conforme a necessidade, que é importante nesse programa.

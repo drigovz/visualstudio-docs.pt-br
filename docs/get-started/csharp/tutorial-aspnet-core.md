@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Introdução ao C# e ao ASP.NET Core'
+title: 'Tutorial: introdução ao C# e ASP.NET Core'
 titleSuffix: ''
 description: Saiba como criar um aplicativo Web do ASP.NET Core no Visual Studio com C#, passo a passo.
 ms.custom: seodec18, get-started
@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252468"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580056"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
@@ -29,7 +29,7 @@ Neste tutorial para desenvolvimento em C# com ASP.NET Core usando o Visual Studi
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-### <a name="install-visual-studio"></a>Instalar o Visual Studio
+### <a name="install-visual-studio"></a>Instalar Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +59,7 @@ Primeiro, você criará um projeto ASP.NET Core. O tipo de projeto vem com todos
 
 1. Abra o Visual Studio 2017.
 
-2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+2. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
 3. Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda **Visual C#** , expanda **Web** e escolha **.NET Core**. No painel central, escolha **Aplicativo Web ASP.NET Core**. Em seguida, nomeie o arquivo *MyCoreApp* e escolha **OK**.
 
@@ -69,7 +69,7 @@ Primeiro, você criará um projeto ASP.NET Core. O tipo de projeto vem com todos
 
 Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento ASP.NET e Web**. Você pode adicionar essa carga de trabalho de uma das duas maneiras, dependendo de quais atualizações do Visual Studio 2017 estão instaladas no seu computador.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: Usar a caixa de diálogo Novo Projeto
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: usar a caixa de diálogo Novo Projeto
 
 1. Clique no link **Abrir o Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. (Dependendo das suas configurações de exibição, talvez seja necessário rolar para vê-la.)
 
@@ -81,7 +81,7 @@ Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, voc�
 
    (Talvez você precise fechar o Visual Studio antes de continuar a instalar a nova carga de trabalho.)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: Usar a barra de menus Ferramentas
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 
 1. Cancele a caixa de diálogo **Novo Projeto**. Em seguida, na barra de menus superior, escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
 
@@ -298,7 +298,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
 1. Retorne ao Visual Studio e pressione **Shift+F5** para interromper o modo de Depuração. Isso também fecha o projeto na janela do navegador.
 
-1. No Visual Studio, abra **privacy. cshtml** para edição. Em seguida, exclua as palavras _Use esta página para detalhar a política de privacidade do site_ e, em seu lugar, adicione as palavras _que esta @ViewDatapágina está em construção a partir de ["timestamp"]_ .
+1. No Visual Studio, abra **privacy. cshtml** para edição. Em seguida, exclua as palavras _Use esta página para detalhar a política de privacidade do site_ e, em seu lugar, adicione as palavras _em que esta página está em construção a partir de @ViewData["timestamp"]_ .
 
     ![Alterar o texto no arquivo privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
@@ -312,7 +312,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
    ![Visualizar alterações](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   Escolha **aplicar**. O Visual Studio exclui as diretivas `using` desnecessárias do arquivo.
+   Escolha **Aplicar**. O Visual Studio exclui as diretivas `using` desnecessárias do arquivo.
 
 1. Em seguida, no método `OnGet()`, altere o corpo para o código a seguir:
 
@@ -368,6 +368,6 @@ Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pou
 > [!div class="nextstepaction"]
 > [Criar um aplicativo Web Páginas Razor com o ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

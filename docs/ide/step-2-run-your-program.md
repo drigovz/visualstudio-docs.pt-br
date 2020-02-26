@@ -5,17 +5,17 @@ ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588740"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579408"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Etapa 2: executar o aplicativo visualizador de imagens
 
@@ -57,13 +57,13 @@ Veja como executar seu aplicativo.
     > [!NOTE]
     > Quando você executa seu aplicativo de dentro do IDE, ele é chamado de depuração porque você normalmente faz isso para localizar e corrigir bugs (erros) no aplicativo. Embora esse aplicativo seja pequeno e ainda não faça muito, ele ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 3: definir suas propriedades de formulário](../ide/step-3-set-your-form-properties.md)** .
 
 * Para retornar à etapa anterior do tutorial, consulte [etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

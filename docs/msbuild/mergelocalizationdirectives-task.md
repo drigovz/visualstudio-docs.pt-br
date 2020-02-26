@@ -13,26 +13,26 @@ helpviewer_keywords:
 - MergeLocalizationDirectives task [WPF MSBuild]
 - moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 86c689122ac0ddfd9441122fdead64ecd8049e72
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817714"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579630"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Tarefa MergeLocalizationDirectives
 A tarefa <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> mescla os atributos de localização e comentários de um ou mais [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] arquivos de formato binário em um único arquivo para todo o assembly.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
-| Parâmetro | Descrição |
+| Parâmetro | DESCRIÇÃO |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de diretivas de localização de arquivos individuais no formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `GeneratedLocalizationFiles` | Parâmetro obrigatório **ITaskItem[]** .<br /><br /> Especifica a lista de arquivos de diretivas de localização de arquivos individuais no formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `OutputFile` | Parâmetro de saída da **cadeia de caracteres** necessário.<br /><br /> Especifica o caminho de saída do assembly de diretivas de localização compilado. |
 
 ## <a name="remarks"></a>Comentários
@@ -54,7 +54,7 @@ O exemplo a seguir mescla os comentários de localização de vários arquivos d
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

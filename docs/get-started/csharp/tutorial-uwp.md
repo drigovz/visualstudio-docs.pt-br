@@ -7,21 +7,21 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186845"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580004"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Criar seu primeiro aplicativo da Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: criar seu primeiro aplicativo Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
 Nesta introdução ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo "Olá, Mundo" que poderá ser executado em qualquer dispositivo Windows 10. Para fazer isso, você usará um modelo de projeto da UWP (Plataforma Universal do Windows), a linguagem XAML e a linguagem de programação C#.
 
@@ -39,7 +39,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 ::: moniker range="vs-2017"
 1. Abra o Visual Studio.
 
-1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
 1. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e, em seguida, escolha **Universal do Windows**. No painel do meio, escolha **Aplicativo em Branco (Universal do Windows)** . Em seguida, nomeie o projeto como *HelloWorld* e escolha **OK**.
 
@@ -91,7 +91,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
    ![Abra o MainPage.xaml no Gerenciador de Soluções](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   Há dois painéis: O **Designer XAML**, que inclui uma tela de design, e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.
+   Existem dois painéis: o **Designer XAML**, que inclui uma tela de design e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.
 
    ![O painel Designer XAML no editor de XAML](media/uwp-xaml-editor.png)
 
@@ -166,7 +166,7 @@ O código usa algumas APIs do Windows para criar um objeto de sintetização de 
 
    ![Clique em um Computador Local para iniciar e depurar o aplicativo UWP](media/uwp-start-or-debug.png)
 
-   (Como alternativa, você pode escolher **depurar** > **Iniciar Depuração** na barra de menus ou pressionar F5 para iniciar seu aplicativo.)
+   (Como alternativa, você pode escolher **Debug** > **iniciar a depuração** na barra de menus ou pressionar F5 para iniciar seu aplicativo.)
 
 1. Veja o aplicativo, que aparece logo depois que uma tela inicial desaparece. O aplicativo deve ser semelhante a este:
 
@@ -186,7 +186,7 @@ O código usa algumas APIs do Windows para criar um objeto de sintetização de 
 
    ![Clique em um Computador Local para iniciar e depurar o aplicativo UWP](media/uwp-start-or-debug.png)
 
-   (Como alternativa, você pode escolher **depurar** > **Iniciar Depuração** na barra de menus ou pressionar F5 para iniciar seu aplicativo.)
+   (Como alternativa, você pode escolher **Debug** > **iniciar a depuração** na barra de menus ou pressionar F5 para iniciar seu aplicativo.)
 
 1. Veja o aplicativo, que aparece logo depois que uma tela inicial desaparece. O aplicativo deve ser semelhante a este:
 
@@ -207,7 +207,7 @@ Parabéns por concluir este tutorial. Esperamos que você tenha aprendido alguma
 > [!div class="nextstepaction"]
 > [Criar uma interface do usuário](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do UWP](/windows/uwp/get-started/universal-application-platform-guide)
 - [Obter exemplos de aplicativos UWP](/windows/uwp/get-started/get-uwp-app-samples)
