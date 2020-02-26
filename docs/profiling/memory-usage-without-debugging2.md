@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910354"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578348"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
 A ferramenta **Uso de Memória** monitora o uso de memória do seu aplicativo. É possível usar a ferramenta para estudar os efeitos de memória em tempo real de cenários que você está desenvolvendo ativamente no Visual Studio. É possível tirar instantâneos detalhados dos estados de memória do aplicativo e compará-los para encontrar as causas raiz de problemas de memória.
 
 A ferramenta **Uso de Memória** pode ser executada com ou sem o depurador. As instruções a seguir mostram como usar a ferramenta **Uso de Memória** sem o depurador no **Criador de Perfil de Desempenho** do Visual Studio.
-
->[!NOTE]
->- Para medir o uso de memória de um aplicativo .NET Core, é necessário usar a ferramenta **Uso de Memória** com o depurador. Para obter instruções, confira [Profile memory usage in Visual Studio](memory-usage.md) (Uso de memória de perfil no Visual Studio).
->- Para analisar o uso da memória em aplicativos UWP JavaScript ou HTML, use a ferramenta [Memória do JavaScript](../profiling/javascript-memory.md) no **Criador de Perfil de Desempenho**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessões de diagnóstico de Uso de memória
 
@@ -133,7 +129,7 @@ A árvore de **Heap Gerenciado** em um relatório de detalhes do instantâneo te
 |||
 |-|-|
 |**Tipo de objeto**|O nome do tipo ou instância de objeto.|
-|**Contagem**|O número de instâncias do objeto do tipo. **Contagem** é sempre 1 para uma instância.|
+|**Count**|O número de instâncias do objeto do tipo. **Contagem** é sempre 1 para uma instância.|
 |**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo no instantâneo, menos o tamanho dos objetos contidos nas instâncias.<br /><br /> No caso de uma instância, o tamanho do objeto, menos o tamanho dos objetos contidos na instância. |
 |**Tamanho Inclusivo (Bytes)**|O tamanho das instâncias do tipo ou o tamanho de uma única instância, incluindo o tamanho dos objetos contidos.|
 |**Módulo**|O módulo que contém o objeto.|
@@ -179,7 +175,7 @@ A árvore de **Heap Gerenciado** em um relatório de diferenças de instantâneo
 |||
 |-|-|
 |**Tipo de objeto**|O nome do tipo ou instância de objeto.|
-|**Contagem**|O número de instâncias de um tipo no instantâneo primário. **Contagem** é sempre 1 para uma instância.|
+|**Count**|O número de instâncias de um tipo no instantâneo primário. **Contagem** é sempre 1 para uma instância.|
 |**Dif. de Contagem**|No caso de um tipo, a diferença no número de instâncias do tipo entre o instantâneo primário e o instantâneo anterior. O campo fica em branco no caso de uma instância.|
 |**Tamanho (bytes)**|O tamanho dos objetos no instantâneo primário, menos o tamanho dos objetos nos objetos. No caso de um tipo, **Tamanho (Bytes)** e **Tamanho Inclusivo (Bytes)** são os totais dos tamanhos das instâncias de tipo.|
 |**Dif. de Tamanho Total (Bytes)**|No caso de um tipo, a diferença no tamanho total de instâncias do tipo entre o instantâneo primário e o instantâneo anterior, menos o tamanho dos objetos nas instâncias. O campo fica em branco no caso de uma instância.|
@@ -214,7 +210,7 @@ Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâ
 |**Diferença de Tamanho Inclusivo (Bytes)**|No caso de um tipo, a diferença no tamanho de todas as instâncias do tipo entre o instantâneo primário e o instantâneo anterior, incluindo o tamanho dos objetos nos objetos.|
 |**Módulo**|O módulo que contém o objeto.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Memória JavaScript](../profiling/javascript-memory.md)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

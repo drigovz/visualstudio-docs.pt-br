@@ -5,17 +5,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588779"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579907"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: criar um projeto de aplicativo Windows Forms
 
@@ -25,7 +25,7 @@ Quando você cria um visualizador de imagens, a primeira etapa é criar um proje
 
 ## <a name="open-visual-studio-2017"></a>Abra o Visual Studio 2017
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
+1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
 
      ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>*Caixa de diálogo* ***novo projeto***
 
@@ -109,13 +109,13 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
 
      O Visual Studio preenche automaticamente o nome da pasta e o nome do projeto e, em seguida, salva o projeto na sua pasta de projeto.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 2: executar seu aplicativo](../ide/step-2-run-your-program.md)** .
 
 * Para retornar ao tópico de visão geral, veja [Tutorial 1: Criar um visualizador de imagens](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

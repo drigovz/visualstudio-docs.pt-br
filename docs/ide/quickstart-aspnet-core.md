@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
-ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
+ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754009"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579968"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -27,7 +27,7 @@ Nesta introdução de 5 a 10 minutos que mostra como usar o Visual Studio, você
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-### <a name="install-visual-studio"></a>Instalar o Visual Studio
+### <a name="install-visual-studio"></a>Instalar Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -53,7 +53,7 @@ Para começar, você criará um projeto de aplicativo Web ASP.NET Core. O tipo d
 
 1. Abra o Visual Studio 2017.
 
-1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
 
 1. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo Web ASP.NET Core**. <br/><br/>Em seguida, nomeie o arquivo `HelloWorld` e escolha **OK**.
 
@@ -161,9 +161,9 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
    ![Exibir a página Sobre atualizada que inclui o texto alterado](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
-1. Feche o navegador da Web.
+1. Feche o navegador da web.
 
-### <a name="review-your-work"></a>Revisar seu trabalho
+### <a name="review-your-work"></a>Examinar seu trabalho
 
 Exiba a animação a seguir para verificar o trabalho que você concluiu a seção anterior.
 
@@ -202,7 +202,7 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
 
    ![Exibir a página inicial atualizada que inclui as alterações feitas](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
 
-1. Feche o navegador da Web.
+1. Feche o navegador da web.
 
 ::: moniker-end
 
@@ -213,6 +213,6 @@ Para saber mais, continue com o tutorial a seguir:
 > [!div class="nextstepaction"]
 > [Introdução ao C# e ao ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../deployment/quickstart-deploy-to-azure.md)

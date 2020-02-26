@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7c64f0079a03b730fb700cfbc6320c5dffa05d7a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778437"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579510"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Grava logs de acompanhamento para todos os threads e os contextos.
@@ -31,7 +31,7 @@ Grava logs de acompanhamento para todos os threads e os contextos.
 HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
 [in] `intermediateDirectory`
 
  O diretório no qual deseja armazenar o log de acompanhamento.
@@ -44,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o contexto de acompanhamento foi criado.
 
 ## <a name="requirements"></a>Requisitos
- **Cabeçalho:** *FileTracker.h*
+ **Cabeçalho:** *FileTracker. h*
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [WriteContextTLogs](../msbuild/writecontexttlogs.md)

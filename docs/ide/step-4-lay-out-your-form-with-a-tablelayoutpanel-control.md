@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590014"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579387"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 
@@ -83,18 +83,18 @@ Janela ***Propriedades*** *com* ***preenchimento*** *selecionado*
 
 1. Na lista suspensa **Mostrar** na parte superior da janela de estilos de **coluna e linha** , escolha **linhas**. Defina **Row1** como 90% e **Row2** como 10%.
 
-1. Escolha o botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. (Você pode redimensionar as linhas e colunas no TableLayoutPanel escolhendo **tableLayoutPanel1** no formulário e arrastando suas bordas de linha e coluna.)
+1. Escolha o botão **OK** . O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. (Você pode redimensionar as linhas e colunas no TableLayoutPanel escolhendo **tableLayoutPanel1** no formulário e arrastando suas bordas de linha e coluna.)
 
      ![Form1 com TableLayoutPanel redimensionado](../ide/media/vs_formafterlayoutpanel.png)<br>
 ***Form1*** *(Visualizador de imagens) com TableLayoutPanel redimensionado*
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 5: adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md)** .
 
 * Para retornar à etapa anterior do tutorial, veja [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

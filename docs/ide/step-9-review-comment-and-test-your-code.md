@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572476"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579750"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
 
@@ -48,7 +48,7 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   As instruções fazem com que seus programas funcionem. No C#, uma instrução sempre termina em um ponto e vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Não é necessário um ponto e vírgula no Visual Basic.) A instrução anterior informa o controle <xref:System.Windows.Forms.PictureBox> para carregar o arquivo selecionado pelo usuário com o componente **OpenFileDialog** .
+   As instruções fazem com que seus programas funcionem. No C#, uma instrução sempre termina em um ponto e vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Não é necessário um ponto e vírgula no Visual Basic.) A instrução anterior informa o controle de <xref:System.Windows.Forms.PictureBox> para carregar o arquivo selecionado pelo usuário com o componente **OpenFileDialog** .
 
 ## <a name="to-add-comments"></a>Para adicionar comentários
 
@@ -60,12 +60,12 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você diz ao seu aplicativo, "Marque esta coisa e, se for verdadeira, execute estas ações". Nesse caso, você informa ao aplicativo para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em **PictureBox**.
+    O manipulador de eventos do botão **showButton**<xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você diz ao seu aplicativo, "Marque esta coisa e, se for verdadeira, execute estas ações". Nesse caso, você informa ao aplicativo para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em **PictureBox**.
 
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.
     >
-    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas** > **Gerenciador de Snippets de Código**. Para C#, o trecho de `if` está **no C# Visual** . Por Visual Basic, os trechos de `if` estão em **padrões de código**  > **condicionais e loops**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
+    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas** > **Gerenciador de Snippets de Código**. Para C#, o trecho de `if` está **no C# Visual** . Por Visual Basic, os trechos de `if` estão em **padrões de código** > **condicionais e loops**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
     >
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla **Tab**. Muitos snippets aparecem na janela **IntelliSense** e é por isso que você escolhe a tecla **Tab** duas vezes: primeiro para marcar o snippet na janela do **IntelliSense** e, depois, para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
 
@@ -99,7 +99,7 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
 
 - Para voltar à etapa anterior do tutorial, confira [Etapa 8: Escrever código para o manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

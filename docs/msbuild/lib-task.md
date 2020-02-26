@@ -20,25 +20,25 @@ helpviewer_keywords:
 - MSBuild (C++), LIB task
 - LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748088"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578534"
 ---
 # <a name="lib-task"></a>tarefa LIB
 Encapsula a ferramenta Gerenciador de Biblioteca de 32 bits da Microsoft, *lib.exe*. O Gerenciador de Biblioteca cria e gerencia uma biblioteca de arquivos-objetos de formato COFF. O Gerenciador de Biblioteca também pode criar arquivos de exportação e importar bibliotecas para referenciar definições exportadas. Para obter mais informações, confira [Referência de LIB](/cpp/build/reference/lib-reference) e [Executando LIB](/cpp/build/reference/running-lib).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
  A tabela a seguir descreve os parâmetros da tarefa **LIB**. A maioria dos parâmetros de tarefa corresponde a uma opção de linha de comando.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**AdditionalDependencies**|Parâmetro **String[]** opcional.<br /><br /> Especifica itens adicionais para adicionar à linha de comando.|
 |**AdditionalLibraryDirectories**|Parâmetro **String[]** opcional.<br /><br /> Substitui o caminho da biblioteca de ambiente. Especifique um nome de diretório.<br /><br /> Para obter mais informações, consulte [/LIBPATH (Libpath Adicional)](/cpp/build/reference/libpath-additional-libpath).|
@@ -56,14 +56,14 @@ Encapsula a ferramenta Gerenciador de Biblioteca de 32 bits da Microsoft, *lib.e
 |**Nome**|Parâmetro **String** opcional.<br /><br /> Ao compilar uma biblioteca de importação, especifica o nome da DLL para a qual a biblioteca de importação está sendo compilada.<br /><br /> Esse parâmetro corresponde à opção **/NAME** de *lib.exe*, que usa um argumento `filename`.|
 |**OutputFile**|Parâmetro **String** opcional.<br /><br /> Substitui o nome padrão e o local do programa criado pelo *lib.exe*.<br /><br /> Esse parâmetro corresponde à opção **/OUT** de *lib.exe*, que usa um argumento `filename`.|
 |**RemoveObjects**|Parâmetro **String[]** opcional.<br /><br /> Omite o objeto especificado da biblioteca de saída. *Lib.exe* cria uma biblioteca de saída combinando todos os objetos (sejam em arquivos-objeto sejam em bibliotecas) e, em seguida, excluindo os objetos especificados por essa opção.<br /><br /> Esse parâmetro corresponde à opção **/REMOVE** de *lib.exe*, que usa um argumento `membername`.|
-|**Sources**|Parâmetro `ITaskItem[]` obrigatório.<br /><br /> Especifica uma lista de arquivos de origem separados por espaços.|
+|**Fontes**|Parâmetro `ITaskItem[]` obrigatório.<br /><br /> Especifica uma lista de arquivos de origem separados por espaços.|
 |**SubSystem**|Parâmetro **String** opcional.<br /><br /> Especifica o ambiente para o executável. A escolha do subsistema afeta o símbolo do ponto de entrada ou a função de ponto de entrada.<br /><br /> Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.<br /><br /> -   **Console** -  **/SUBSYSTEM:CONSOLE**<br />-   **Windows** -  **/SUBSYSTEM:WINDOWS**<br />-   **Nativo** -  **/SUBSYSTEM:NATIVE**<br />-   **Aplicativo EFI** -  **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Driver de Serviço de Inicialização EFI** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**<br />-   **Tempo de Execução de EFI** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** -  **/SUBSYSTEM:POSIX**<br /><br /> Para obter mais informações, confira [/SUBSYSTEM (Especificar subsistema)](/cpp/build/reference/subsystem-specify-subsystem).|
 |**SuppressStartupBanner**|Parâmetro **Boolean** opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para obter mais informações, consulte a opção **/NOLOGO** em [Executando LIB](/cpp/build/reference/running-lib).|
 |**TargetMachine**|Parâmetro **String** opcional.<br /><br /> Especifica a plataforma de destino para o programa ou DLL.<br /><br /> Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.<br /><br /> -   **MachineARM** -  **/MACHINE:ARM**<br />-   **MachineEBC** -  **/MACHINE:EBC**<br />-   **MachineIA64** -  **/MACHINE:IA64**<br />-   **MachineMIPS** -  **/MACHINE:MIPS**<br />-   **MachineMIPS16** -  **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** -  **/MACHINE:SH4**<br />-   **MachineTHUMB** -  **/MACHINE:THUMB**<br />-   **MachineX64** -  **/MACHINE:X64**<br />-   **MachineX86** -  **/MACHINE:X86**<br /><br /> Para obter mais informações, confira [/MACHINE (Especificar plataforma de destino)](/cpp/build/reference/machine-specify-target-platform).|
 |**TrackerLogDirectory**|Parâmetro **String** opcional.<br /><br /> Especifica o diretório de log de rastreamento.|
 |**TreatLibWarningAsErrors**|Parâmetro **Boolean** opcional.<br /><br /> Se ele for `true`, fará com que a tarefa **LIB** não gere um arquivo de saída se *lib.exe* gerar um aviso. Se `false`, um arquivo de saída será gerado.<br /><br /> Para obter mais informações, consulte a opção **/WX** em [Executando LIB](/cpp/build/reference/running-lib).|
 |**UseUnicodeResponseFiles**|Parâmetro **Boolean** opcional.<br /><br /> Se `true`, instruirá o sistema do projeto a gerar arquivos de resposta UNICODE quando o bibliotecário for gerado. Especifique `true` quando os arquivos no projeto tiverem caminhos UNICODE.|
-|**Verbose**|Parâmetro **Boolean** opcional.<br /><br /> Se ele for `true`, exibirá detalhes sobre o progresso da sessão; isso inclui os nomes dos arquivos *.obj* que estão sendo adicionados. A informação é enviada para uma saída padrão e pode ser redirecionada para um arquivo.<br /><br /> Para obter mais informações, consulte a opção **/VERBOSE** em [Executando LIB](/cpp/build/reference/running-lib).|
+|**Detalhado**|Parâmetro **Boolean** opcional.<br /><br /> Se ele for `true`, exibirá detalhes sobre o progresso da sessão; isso inclui os nomes dos arquivos *.obj* que estão sendo adicionados. A informação é enviada para uma saída padrão e pode ser redirecionada para um arquivo.<br /><br /> Para obter mais informações, consulte a opção **/VERBOSE** em [Executando LIB](/cpp/build/reference/running-lib).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

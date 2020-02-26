@@ -1,25 +1,25 @@
 ---
-title: 'Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos'
+title: 'Etapa 11: executar o aplicativo do Visualizador de imagens e experimentar outros recursos'
 ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118791"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579894"
 ---
-# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Etapa 11: executar o aplicativo do Visualizador de imagens e experimentar outros recursos
 
-Seu aplicativo visualizador de imagens foi concluído e está pronto para ser executado. Você pode executar seu aplicativo e definir a cor do plano de <xref:System.Windows.Forms.PictureBox>fundo do. Para saber mais, tente melhorar o aplicativo alterando a cor do formulário, personalizando os botões e a caixa de seleção e alterando as propriedades do formulário.
+Seu aplicativo visualizador de imagens foi concluído e está pronto para ser executado. Você pode executar seu aplicativo e definir a cor do plano de fundo do <xref:System.Windows.Forms.PictureBox>. Para saber mais, tente melhorar o aplicativo alterando a cor do formulário, personalizando os botões e a caixa de seleção e alterando as propriedades do formulário.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Como executar seu aplicativo e definir a cor do plano de fundo
 
@@ -28,9 +28,9 @@ Seu aplicativo visualizador de imagens foi concluído e está pronto para ser ex
 1. Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
 
      ![Caixa de diálogo Cor](../ide/media/express_colordialog.png)<br/>
-***Cor*** do *caixa de diálogo*
+*Caixa de diálogo* cor
 
-1. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine com mais detalhes `backgroundButton_Click()` o método ( `BackgroundButton_Click()`ou,) para entender como ele funciona.
+1. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine com mais detalhes o método `backgroundButton_Click()` (ou, `BackgroundButton_Click()`) para entender como ele funciona.
 
     > [!NOTE]
     > Você pode carregar uma imagem da Internet colando sua URL na caixa de diálogo **Abrir Arquivo**. Tente localizar uma imagem com um plano de fundo transparente, para que sua cor do plano de fundo seja exibida.
@@ -52,11 +52,11 @@ Seu aplicativo visualizador de imagens foi concluído e está pronto para ser ex
 Para saber mais, continue com o tutorial a seguir:
 
 > [!div class="nextstepaction"]
-> [Tutorial 2: Criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> [Tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-Para retornar à etapa anterior do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+Para retornar à etapa anterior do tutorial, veja [Etapa 10: Escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Mais C# tutoriais](/visualstudio/get-started/csharp/)
 * [Mais tutoriais Visual Basic](/visualstudio/get-started/visual-basic/)

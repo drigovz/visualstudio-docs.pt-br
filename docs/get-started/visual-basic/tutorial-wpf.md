@@ -9,19 +9,19 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864710"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579956"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: como criar um aplicativo simples com o Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: criar um aplicativo simples com Visual Basic
 
 Ao concluir este tutorial, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo "Olá, Mundo", projetar a interface do usuário, adicionar código e depurar erros enquanto aprende sobre o trabalho no [IDE](visual-studio-ide.md) (ambiente de desenvolvimento integrado).
 
@@ -63,7 +63,7 @@ Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma so
 
 ::: moniker range="vs-2017"
 
-1. Crie um novo projeto. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Criar um novo projeto. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
      ![Na barra de menus, escolha Arquivo, Novo, Projeto](../media/exploreide-filenewproject.png)
 
@@ -162,7 +162,7 @@ Agora você pode adicionar o texto de exibição para cada controle RadioButton.
 
 ### <a name="add-display-text-for-each-radio-button"></a>Adicionar o texto de exibição de cada botão de opção
 
-Atualize o atributo de **conteúdo** para `HelloButton` o `GoodbyeButton` e `"Hello"` para `"Goodbye"` e no XAML. A marcação XAML deve agora ser semelhante ao exemplo a seguir:
+Atualize o atributo de **conteúdo** para o `HelloButton` e `GoodbyeButton` para `"Hello"` e `"Goodbye"` no XAML. A marcação XAML deve agora ser semelhante ao exemplo a seguir:
 
    ```xaml
    <Grid>
@@ -234,7 +234,7 @@ Nesta etapa, você encontrará o erro que causamos anteriormente alterando o nom
 
 1. Inicie o depurador pressionando **F5** ou selecionando **Depurar** e depois **Iniciar Depuração**.
 
-   Uma janela **Modo de Interrupção** é exibida e a janela de **Saída** indica que ocorreu uma IOException: Não é possível localizar o recurso 'mainwindow.xaml'.
+   Uma janela de **Modo de Interrupção** é exibida e a janela **Saída** indica que houve uma IOException: não é possível localizar o recurso 'mainwindow.xaml'.
 
    ![Captura de tela da mensagem de IOException](../media/exploreide-ioexception.png)
 
@@ -315,7 +315,7 @@ Agora que você verificou que tudo está funcionando, já pode preparar um build
 
 Parabéns por concluir este tutorial. Encontre o *.exe* compilado na solução e no diretório do projeto ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 ::: moniker range="vs-2017"
 
