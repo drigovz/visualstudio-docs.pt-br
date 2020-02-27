@@ -3,18 +3,18 @@ title: Inspecionar propriedades XAML durante a depuração | Microsoft Docs
 ms.date: 11/12/2019
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 61893e06f79b14b95ebb5b923eca581b047d979b
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072755"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706407"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração 
 
@@ -25,7 +25,7 @@ Você pode usar essas ferramentas nas seguintes configurações:
 |Tipo de aplicativo|Sistema operacional e ferramentas|
 |-----------------|--------------------------------|
 |Aplicativos Windows Presentation Foundation (4,0 e superior)|Windows 7 e posterior|
-|Aplicativos Universais do Windows|Windows 10 e posterior, com o [SDK do Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Aplicativos universais Windows|Windows 10 e posterior, com o [SDK do Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Examinar elementos na árvore visual ao vivo
 
@@ -110,7 +110,7 @@ Vamos começar com um aplicativo WPF muito simples que tem um modo de exibição
 
 1. Agora, vamos examinar as propriedades de um dos itens da caixa de listagem.
 
-   Selecione o primeiro item da caixa de listagem na **árvore visual ao vivo** e clique no ícone **mostrar propriedades** na barra de ferramentas. O **Gerenciador de propriedades ao vivo** deve aparecer. Observe que o campo de **conteúdo** é "Item1" e o campo de**cor**  >  **em segundo plano**é **#FFFFFFE0**.
+   Selecione o primeiro item da caixa de listagem na **árvore visual ao vivo** e clique no ícone **mostrar propriedades** na barra de ferramentas. O **Gerenciador de propriedades ao vivo** deve aparecer. Observe que o campo de **conteúdo** é "Item1" e o campo de **cor** de > **em segundo plano** é **#FFFFFFE0**.
    
 1. Volte para a **árvore visual ao vivo** e selecione o segundo item da caixa de listagem. O **Gerenciador de propriedades ao vivo** deve mostrar que o campo de **conteúdo** é "Item2" e o campo de **cor** de > **em segundo plano** é **#FFD3D3D3** (dependendo do tema).
 
@@ -151,6 +151,6 @@ Você pode usar essas ferramentas XAML mesmo quando não tiver o código-fonte. 
 
 4. Na segunda instância do Visual Studio, abra a **árvore visual ao vivo** (**depuração > árvore visual do Windows > Live**). Você deve ver os elementos da interface do usuário do **TestXaml** , e você deve ser capaz de manipulá-los como fez ao depurar o aplicativo diretamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](xaml-hot-reload.md)

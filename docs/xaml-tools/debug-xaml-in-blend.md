@@ -3,18 +3,18 @@ title: Depurar XAML no Blend | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558186"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706367"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 
@@ -115,7 +115,7 @@ Quando são detectados erros de XAML, a superfície de design exibe um alerta in
 
     Pressione **Ctrl**+**Shift**+**B** para compilar seu projeto e confirmar que não há erros restantes.
 
-## <a name="debug-in-visual-studio"></a>Depurar no Visual Studio
+## <a name="debug-in-visual-studio"></a>Depuração no Visual Studio
 
 Você pode abrir projetos de Blend no Visual Studio para depurar com mais facilidade o código em seu aplicativo. Para abrir um projeto do Blend no Visual Studio, clique com o botão direito do mouse no projeto no painel **projetos** e clique em **Editar no Visual Studio**. Depois de concluir a sessão de depuração no Visual Studio, pressione Ctrl + Shift + S para salvar todas as suas alterações e, em seguida, volte para o Blend. Você será solicitado a recarregar o projeto. Clique em **Sim para todos** para continuar trabalhando no Blend.
 

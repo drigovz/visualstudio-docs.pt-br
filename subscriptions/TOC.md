@@ -32,7 +32,7 @@
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
+#### [Desenvolvedor do Microsoft 365](vs-m365.md)
 #### [Assinatura do Office 365](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
