@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567288"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631075"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 
@@ -160,7 +160,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
 
  Ao alternar entre o editor de códigos e a janela Comando, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.
 
-## <a name="build-properties"></a>Propriedades de build
+## <a name="build-properties"></a>Compilar propriedades
 
  As propriedades de build são pares nome-valor que guiam o build. Várias propriedades de build já estão definidas na parte superior do arquivo de projeto:
 
@@ -183,7 +183,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
 
  define a propriedade chamada TargetFrameworkVersion fornecendo a ela o valor de cadeia de caracteres "v15.0".
 
- As propriedades de build podem ser redefinidas a qualquer momento. If
+ As propriedades de build podem ser redefinidas a qualquer momento. Se
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -192,6 +192,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
  aparecer mais adiante no arquivo de projeto ou em um arquivo importado posteriormente no arquivo de projeto, a TargetFrameworkVersion usará o novo valor "v3.5".
 
 ## <a name="examine-a-property-value"></a>Examinar um valor da propriedade
+
  Para obter o valor de uma propriedade, use a seguinte sintaxe, em que PropertyName é o nome da propriedade:
 
 ```xml
@@ -219,7 +220,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):
+4. Examine a saída. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):
 
     ::: moniker range=">=vs-2019"
 
@@ -255,11 +256,11 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>Propriedades reservadas
 
- O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para saber mais, confira [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para obter mais informações, confira [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variáveis de ambiente
 
- Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para saber mais, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para obter mais informações, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Definir propriedades na linha de comando
 
@@ -273,7 +274,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2. Examine o resultado. Você deverá ver esta linha:
+2. Examine a saída. Você deverá ver esta linha:
 
     ```
     Configuration is Release.
@@ -303,7 +304,7 @@ O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver esta linha:
+4. Examine a saída. Você deverá ver esta linha:
 
     ```
     $(Configuration) is "Debug"
@@ -367,7 +368,7 @@ Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver esta linha longa:
+4. Examine a saída. Você deverá ver esta linha longa:
 
     ```
     Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -399,7 +400,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver estas linhas:
+4. Examine a saída. Você deverá ver estas linhas:
 
     ```
     Compile item type contains Form1.cs
@@ -411,6 +412,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Incluir, excluir e curingas
+
  Você pode usar os curingas "*", "\*\*" e "?" com o atributo Include para adicionar itens a um tipo de item. Por exemplo,
 
 ```xml
@@ -479,13 +481,14 @@ não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento do item ante
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-5. Examine o resultado. Você deverá ver esta linha:
+5. Examine a saída. Você deverá ver esta linha:
 
     ```
     XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx
     ```
 
 ## <a name="item-metadata"></a>Metadados do item
+
  Além das informações coletadas pelos atributos Include e Exclude, os itens podem conter metadados. Esses metadados podem ser usados por tarefas que exigem mais informações sobre os itens que apenas o valor do item.
 
  Os metadados de item são declarados no arquivo de projeto criando um elemento com o nome dos metadados como um elemento filho do item. Um item pode ter zero ou mais valores de metadados. Por exemplo, o seguinte item CSFile tem metadados Culture com um valor de "Fr":
@@ -520,7 +523,7 @@ não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento do item ante
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver estas linhas:
+4. Examine a saída. Você deverá ver estas linhas:
 
     ```
     Compile.DependentUpon:
@@ -551,7 +554,7 @@ Observe que "Compile.DependentUpon" aparece várias vezes. O uso de metadados co
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver estas linhas:
+4. Examine a saída. Você deverá ver estas linhas:
 
     ```
     Compile Filename: Form1
@@ -590,7 +593,7 @@ Por exemplo, uma lista de itens dos arquivos de origem pode ser transformada em 
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Examine o resultado. Você deverá ver esta linha:
+4. Examine a saída. Você deverá ver esta linha:
 
     ```
     Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak
@@ -602,7 +605,7 @@ Observe que os metadados expressados nesta sintaxe não causam o envio em lote.
 
  Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

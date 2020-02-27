@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557962"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634273"
 ---
 # <a name="delete-task"></a>tarefa Delete
+
 Exclui os arquivos especificados.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
 A tabela a seguir descreve os parâmetros da tarefa `Delete`.
 
 |Parâmetro|DESCRIÇÃO|
@@ -38,12 +40,14 @@ A tabela a seguir descreve os parâmetros da tarefa `Delete`.
 |`TreatErrorsAsWarnings`|Parâmetro opcional `Boolean`<br /><br /> Se `true`, os erros são registrados como avisos. O valor padrão é `false`.|
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
 > Tenha cuidado ao usar curingas com a tarefa de `Delete`. Você pode excluir facilmente os arquivos errados com expressões como `$(SomeProperty)\**\*.*` ou `$(SomeProperty)/**/*.*`, especialmente se a propriedade for avaliada como uma cadeia de caracteres vazia; nesse caso, o parâmetro `Files` pode avaliar a raiz da unidade e excluir muito mais do que você queria excluir.
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir exclui o arquivo *MyApp.pdb*.
 
 ```xml
@@ -59,6 +63,7 @@ O exemplo a seguir exclui o arquivo *MyApp.pdb*.
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

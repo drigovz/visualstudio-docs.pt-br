@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee4620e845205a936bbdf48a9872c4dec3305ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596028"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634195"
 ---
 # <a name="file-tracking"></a>Acompanhamento de arquivos
+
 O acompanhamento de arquivo registra chamadas no sistema de arquivos do Windows para um processo e seus processos filho. Ao chamar as funções listadas abaixo, os programas controlam quando ativar e desativar esse registro e especificar o arquivo de log a ser usado.
 
 - [EndTrackingContext](../msbuild/endtrackingcontext.md) Interrompa o acompanhamento do contexto atual.

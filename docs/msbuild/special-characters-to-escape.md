@@ -16,21 +16,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686640cbe3c93cbe3d938cd3025a77129c829bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595105"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632245"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
+
 Caracteres especiais devem ser de escape somente se tiverem um significado especial no contexto em que eles estiverem sendo usados. Por exemplo, o asterisco (*) é um caractere especial somente nos atributos "Incluir" e "Excluir" de uma definição de item ou em uma chamada para <xref:Microsoft.Build.Tasks.CreateItem>. Em outros casos, o asterisco é tratado como um asterisco literal. Embora você não precise que os asteriscos sejam de escape em todos os arquivos de projeto, fazer isso não é prejudicial.
 
  Use a notação %\<xx> no lugar do caractere especial, em que \<xx> representa o valor hexadecimal do caractere ASCII. Por exemplo, para usar um asterisco (*) como um caractere literal, use o valor `%2A`.
 
  Veja a seguir a lista completa de caracteres especiais de escape:
 
-|Caractere|Descrição|
+|Caractere|DESCRIÇÃO|
 |---------------|-----------------|
 |%|Sinal de porcentagem, usado para fazer referência a metadados.|
 |$|Cifrão, usado para fazer referência a propriedades.|
@@ -44,6 +45,7 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 > [!NOTE]
 > Em alguns cenários, talvez seja necessário escapar dos caracteres de aspas duplas ("), como ao usar dentro de uma tarefa de `Exec`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Como: escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

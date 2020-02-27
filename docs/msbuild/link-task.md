@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592198"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633571"
 ---
 # <a name="link-task"></a>tarefa de vinculação
+
 Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  Veja a seguir uma descrição dos parâmetros da tarefa **Link**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalDependencies**
@@ -111,7 +113,7 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   Parâmetro **Booliano** implícito.
 
-  Habilita um acompanhamento de arquivos mais profundo a fim de capturar o comportamento incremental do link. Sempre retorna `true`.
+  Habilita um acompanhamento de arquivos mais profundo a fim de capturar o comportamento incremental do link. Retorna sempre `true`.
 
 - **BaseAddress**
 
@@ -497,7 +499,7 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   - **PGUpdate**
 
-    \- **/LTCG: PGUpdate**
+    \- **/LTCG:PGUpdate**
 
   Para obter mais informações, confira [/LTCG (Geração de código durante o tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation).
 
@@ -697,7 +699,7 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   Para obter mais informações, confira [/VERBOSE (Imprimir mensagens de progresso)](/cpp/build/reference/verbose-print-progress-messages).
 
-- **Sources**
+- **Fontes**
 
   Parâmetro `ITaskItem[]` obrigatório.
 
@@ -923,5 +925,6 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   Para obter mais informações, confira [/VERSION (Informações de versão)](/cpp/build/reference/version-version-information).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

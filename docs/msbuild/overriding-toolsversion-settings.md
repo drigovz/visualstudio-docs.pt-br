@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590482"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633012"
 ---
 # <a name="override-toolsversion-settings"></a>Substituir as configurações de ToolsVersion
+
 Você pode alterar o conjunto de ferramentas para projetos e soluções de uma entre três maneiras:
 
 1. Usando a opção `-ToolsVersion` (ou `-tv`, de forma abreviada) quando você compila o projeto ou solução por meio da linha de comando.
@@ -28,6 +29,7 @@ Você pode alterar o conjunto de ferramentas para projetos e soluções de uma e
 3. Configurando a propriedade `$(ProjectToolsVersion)` em um projeto dentro de uma solução. Isso permite criar um projeto em uma solução com a versão do conjunto de ferramentas que difere daquela de outros projetos.
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Substituir as configurações de ToolsVersion de projetos e soluções em builds da linha de comando
+
  Embora os projetos do Visual Studio normalmente sejam compilados com o ToolsVersion especificado no arquivo de projeto, você pode usar a opção `-ToolsVersion` (ou `-tv`) na linha de comando para substituir esse valor e compilar todos os projetos e suas dependências de projeto para o projeto com um conjunto de ferramentas diferente. Por exemplo:
 
 ```cmd
@@ -39,6 +41,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
  Ao usar a opção `-tv` na linha de comando, você pode usar a propriedade `$(ProjectToolsVersion)` em projetos individuais para compilá-los com um valor de ToolsVersion diferente dos outros projetos na solução.
 
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Substituir as configurações de ToolsVersion usando o parâmetro ToolsVersion da tarefa MSBuild
+
  A tarefa do MSBuild é o principal meio para um projeto compilar outro. Para habilitar a tarefa do MSBuild para criar um projeto com um ToolsVersion diferente daquele especificado no projeto, ela fornece um parâmetro de tarefa opcional chamado `ToolsVersion`. O exemplo a seguir demonstra como usar esse parâmetro:
 
 1. Crie um arquivo chamado *projectA.proj* que contém o código a seguir:
@@ -95,6 +98,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     ```
 
 ## <a name="order-of-precedence"></a>Ordem de precedência
+
  A ordem de precedência, em ordem decrescente, usada para determinar a `ToolsVersion` é:
 
 1. O atributo `ToolsVersion` na tarefa MSBuild usado para compilar o projeto, se houver.
@@ -123,7 +127,8 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. Caso contrário, use a `ToolsVersion` atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

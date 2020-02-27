@@ -24,23 +24,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595024"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633051"
 ---
 # <a name="mt-task"></a>tarefa MT
+
 Encapsula a Ferramenta de Manifesto da Microsoft, *mt.exe*. Para saber mais, confira [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa **MT**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 > [!NOTE]
 > A documentação da *mt.exe* usa um hífen ( **-** ) como prefixo para opções de linha de comando, mas este tópico usa uma barra ( **/** ). Qualquer um desses prefixos é aceitável.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|Parâmetro **String[]** opcional.<br /><br /> Especifica o nome de um ou mais arquivos de manifesto.<br /><br /> Para saber mais, confira a opção **/manifest** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**AdditionalOptions**|Parâmetro **String** opcional.<br /><br /> Uma lista de opções de linha de comando. Por exemplo, /\<option1> /\<option2> /\<option#>. Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa **MT**.<br /><br /> Para saber mais, confira [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
@@ -59,7 +61,7 @@ Encapsula a Ferramenta de Manifesto da Microsoft, *mt.exe*. Para saber mais, con
 |**RegistrarScriptFile**|Parâmetro **String** opcional.<br /><br /> Especifica o nome do arquivo de script de registrador ( *.rgs*) a ser usado para suporte ao manifesto COM sem registro.<br /><br /> Para saber mais, confira a opção **/rgs** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**ReplacementsFile**|Parâmetro **String** opcional.<br /><br /> Especifica o arquivo que contém valores para cadeias de caracteres substituíveis no arquivo registrador ( *.rgs*).<br /><br /> Para saber mais, confira a opção **/replacements** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**ResourceOutputFileName**|Parâmetro **String** opcional.<br /><br /> Especifica o arquivo de recurso de saída usado para inserir o manifesto na saída do projeto.|
-|**Sources**|Parâmetro `ITaskItem[]` opcional.<br /><br /> Especifica uma lista de arquivos de manifesto de origem separados por espaços.<br /><br /> Para saber mais, confira a opção **/manifest** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
+|**Fontes**|Parâmetro `ITaskItem[]` opcional.<br /><br /> Especifica uma lista de arquivos de manifesto de origem separados por espaços.<br /><br /> Para saber mais, confira a opção **/manifest** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**SuppressDependencyElement**|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, gera um manifesto sem elementos de dependência. Se esse parâmetro for `true`, o parâmetro de tarefa **ManifestFromManagedAssemblyMT** também deverá ser especificado.<br /><br /> Para saber mais, confira a opção **/nodependency** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**SuppressStartupBanner**|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para saber mais, confira a opção **/nologo** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**TrackerLogDirectory**|Parâmetro `String` opcional.<br /><br /> Especifica o diretório intermediário em que os logs de rastreamento para essa tarefa são armazenados.|
@@ -68,5 +70,6 @@ Encapsula a Ferramenta de Manifesto da Microsoft, *mt.exe*. Para saber mais, con
 |**UpdateFileHashesSearchPath**|Parâmetro `String` opcional.<br /><br /> Especifica o caminho de pesquisa a ser usado quando os hashes de arquivo são atualizados. Use esse parâmetro com o parâmetro de tarefa **UpdateFileHashesMT**.<br /><br /> Para obter mais informações, consulte o parâmetro **UpdateFileHashes** nesta tabela.|
 |**VerboseOutput**|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, exibe informações de depuração detalhadas.<br /><br /> Para saber mais, confira a opção **/verbose** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

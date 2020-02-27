@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595144"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632557"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolver assemblies em tempo de design
+
 Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência**, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.NET** lista assemblies de referência que correspondem aos assemblies de runtime do .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de runtime nas pastas AssemblyFoldersEx registradas que são usados por terceiros.
 
 ## <a name="multi-targeting"></a>Multiplataforma
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] permite que você use como destino as versões do .NET Framework que executam no CLR (Common Language Runtime) versão 2.0 ou versão 4. Entre as versões estão as versões do .NET Framework 2.0, 3.0, 3.5, 4, 4.5 e 4.5.1, e as versões do Silverlight 1.0, 2.0 e 3.0. Se uma nova versão do .NET Framework que se baseia na versão 2.0 versão 4 do CLR for lançada, o Framework poderá ser instalado usando um pacote de direcionamento e ele será automaticamente exibido como um destino no Visual Studio.
+
+ O Visual Studio permite que você direcione versões do .NET Framework que são executadas em várias versões do .NET Framework. Quando uma nova versão do .NET Framework for lançada, a estrutura poderá ser instalada usando um pacote de direcionamento e será mostrada automaticamente como um destino no Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Como funciona a resolução de tipo
+
  Em tempo de execução, o CLR resolve os tipos no assembly procurando no GAC, no diretório *bin* e em quaisquer caminhos de investigação. Isso é manipulado pelo carregador de fusão. Mas como o carregador de fusão sabe o que está procurando? Isso depende de uma resolução feita no tempo de design, quando o aplicativo é compilado.
 
  Durante o build, o compilador resolve tipos de aplicativos usando os assemblies de referência. Nas versões 2.0, 3.0, 3.5, 4, 4.5 e 4.5.1 do .NET Framework, os assemblies de referência são instalados quando o .NET Framework é instalado.
@@ -36,5 +39,5 @@ Quando você adiciona uma referência a um assembly por meio da guia **.NET** da
 
  O pacote de direcionamento que agora é fornecido com o SDK do .NET Framework inclui uma lista de todos os assemblies de runtime nessa versão do Framework, denominada lista de redistribuição (redist), impossibilitando ao sistema de build resolver tipos contra a versão errada do assembly.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

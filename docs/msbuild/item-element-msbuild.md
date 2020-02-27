@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3da51c16645d0c44128b0a5fe1b19053062673c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573658"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633688"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
-Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como o filho de um elemento `ItemGroup`.
+
+Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto do MSBuild deve ser especificado como um filho de um elemento `ItemGroup`.
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -41,6 +42,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>Especificar metadados como atributos
+
 No MSBuild 15.1 ou posterior, os metadados com um nome que não entra em conflito com a lista atual de atributos podem opcionalmente ser expressos como um atributo.
 
 Por exemplo, para especificar uma lista de pacotes NuGet, você normalmente usará algo parecido com a sintaxe a seguir.
@@ -62,11 +64,12 @@ No entanto, é possível passar os metadados `Version` como um atributo, como na
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|
+|Atributo|DESCRIÇÃO|
 |---------------|-----------------|
 |`Include`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|
 |`Exclude`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser excluído da lista de itens.|
@@ -77,26 +80,28 @@ No entanto, é possível passar os metadados `Version` como um atributo, como na
 |`RemoveMetadata`|Atributo opcional.<br /><br /> Os metadados dos itens de origem que não serão transferidos para os itens de destino. Todos os metadados são transferidos de um item de origem para um item de destino, exceto metadados cujos nomes estejam contidos na lista de nomes separados por ponto e vírgula. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).<br /><br /> Esse atributo será válido apenas se for especificado para um item em uma `ItemGroup` que esteja em um `Target`.|
 |`Update`|Atributo opcional. (Disponível somente para projetos do .NET Core no Visual Studio 2017 ou posterior.)<br /><br /> Permite modificar os metadados de um arquivo que foi incluído com o uso de um glob.<br /><br /> Esse atributo será válido apenas se for especificado para um item em um `ItemGroup` que não esteja em um `Target`.|
 
-### <a name="child-elements"></a>Child elements
+### <a name="child-elements"></a>Elementos filho
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Uma chave de metadados de item definido pelo usuário, que contém o valor de metadados do item. Pode ser que não haja nenhum ou mais de um elemento `ItemMetadata` em um item.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping para itens.|
 
 ## <a name="remarks"></a>Comentários
+
 Os elementos `Item` definem entradas no sistema de compilação e são agrupados em coleções de itens com base em seus nomes de coleção definida pelo usuário. Essas coleções de itens podem ser usadas como parâmetros para [tarefas](../msbuild/msbuild-tasks.md), que usam os itens individuais nas coleções para executar as etapas do processo de build. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 O uso da notação @(\<myType>) permite que uma coleção de itens do tipo \<myType> seja expandida em uma lista de cadeias de caracteres delimitadas por ponto e vírgula e passada para um parâmetro. Se o parâmetro for do tipo `string`, então o valor do parâmetro será a lista de elementos, separados por ponto e vírgula. Se o parâmetro for uma matriz de cadeias de caracteres (`string[]`), então cada elemento será inserido na matriz com base na localização dos pontos e vírgulas. Se o parâmetro de tarefa for do tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, então o valor é o conteúdo da coleção de itens juntamente com quaisquer metadados anexados. Para delimitar cada item usando um caractere que não seja ponto e vírgula, use a sintaxe @(\<myType>, '\<separator>').
 
-O mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode avaliar curingas como `*` e `?`, bem como curingas recursivos como */\*\*/\*.cs*. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
+O mecanismo do MSBuild pode avaliar curingas, como `*` e `?` e caracteres curinga recursivos, como */\*\*/\*. cs*. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemplos
+
 O exemplo de código a seguir mostra como declarar dois itens do tipo `CSFile`. O segundo item declarado contém metadados que possuem `MyMetadata` definidos como `HelloWorld`.
 
 ```xml
@@ -118,7 +123,8 @@ O exemplo de código a seguir mostra como usar o atributo `Update` para modifica
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Itens](../msbuild/msbuild-items.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)

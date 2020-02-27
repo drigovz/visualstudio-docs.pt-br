@@ -22,22 +22,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26891fa67616b1796499722e03a764da2a8fd7d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589260"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633376"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructos condicionais do MSBuild
-O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um mecanismo para processamento de um/ou outro com os elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) e [Otherwise](../msbuild/otherwise-element-msbuild.md).
+
+O MSBuild fornece um mecanismo para processamento ou/ou com os elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [otherwise](../msbuild/otherwise-element-msbuild.md) .
 
 ## <a name="use-the-choose-element"></a>Usar o elemento Choose
+
  O elemento `Choose` contém uma série de elementos de `When` com atributos `Condition` que são testados na ordem de cima para baixo até que um seja avaliado como `true`. Se mais de um elemento `When` for avaliado como `true`, somente o primeiro será usado. Um elemento `Otherwise`, se presente, será avaliado se nenhuma condição em um elemento `When` for avaliada como `true`.
 
  Os elementos `Choose` podem ser usados como elementos filhos dos elementos `Project`, `When` e `Otherwise`. Os elementos `When` e `Otherwise` podem ter elementos filho `ItemGroup`, `PropertyGroup` ou `Choose`.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir usa os elementos `Choose` e `When` para processamento de um/ou outro. As propriedades e os itens do projeto são definidos dependendo do valor da propriedade `Configuration`.
 
 ```xml
@@ -76,7 +79,8 @@ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)

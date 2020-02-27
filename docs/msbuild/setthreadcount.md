@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579596"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632323"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
+
 Define a contagem de thread global e atribui valores para o thread atual.
 
 ## <a name="syntax"></a>Sintaxe
@@ -32,12 +33,15 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>parâmetros
+
 [in] `threadCount`
 
  O número máximo de threads.
 
 ## <a name="return-value"></a>Valor retornado
+
  Um **HRESULT** com o conjunto de bit **SUCCEEDED** se a contagem de thread foi atualizada.
 
 ## <a name="requirements"></a>Requisitos
+
  **Cabeçalho:** *FileTracker. h*

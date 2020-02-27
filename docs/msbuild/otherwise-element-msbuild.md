@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594836"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633038"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
+
 Especifica o bloco de código a executar se e somente se as condições de todos os elementos `When` forem avaliadas como `false`.
 
  \<projeto > \<escolha > \<quando > \<escolha >... \<caso contrário > \<escolha >...
@@ -41,14 +42,16 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
- Nenhuma.
+### <a name="attributes"></a>Atributos
 
-### <a name="child-elements"></a>Child elements
+ Nenhum.
 
-|Elemento|Descrição|
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um elemento `Otherwise`.|
@@ -56,16 +59,18 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
 
 ## <a name="remarks"></a>Comentários
+
  Pode haver apenas um elemento `Otherwise` em um elemento `Choose` e ele deve ser o último elemento.
 
- Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
+ Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar diversas alternativas possíveis. Para saber mais, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Exemplo
+
  O seguinte projeto usa o `Choose` elemento para selecionar o conjunto de valores de propriedades no elemento `When` a ser definido. Se os `Condition` atributos de ambos `When` elementos são avaliadas como `false`, os valores de propriedades no elemento `Otherwise` são definidos.
 
 ```xml
@@ -113,6 +118,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

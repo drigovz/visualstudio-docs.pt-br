@@ -13,22 +13,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b196ae92b7388e8b9f4e1cee60a62b3839a9c120
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585226"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633935"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como criar os mesmos arquivos de origem com opções diferentes
-Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], você usa propriedades e condições para criar as diferentes configurações de build.
 
-## <a name="use-properties-to-modify-projects"></a>Usar propriedades para modificar projetos
-O elemento `Property` define uma variável que é referenciada várias vezes em um arquivo de projeto, como o local de um diretório temporário ou para definir os valores de propriedades que são usadas em várias configurações, como um build de Depuração e um build de Versão. Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
+Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode criar um projeto para ser executado em uma plataforma específica, como x86 ou x64. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com o MSBuild, você usa as propriedades e as condições para criar as diferentes configurações de compilação.
 
-Você pode usar propriedades para alterar a configuração de seu build sem precisar alterar o arquivo de projeto. O atributo `Condition` do elemento `Property` e do elemento `PropertyGroup` permite alterar o valor de propriedades. Para obter mais informações sobre as condições de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Condições](../msbuild/msbuild-conditions.md).
+## <a name="use-properties-to-control-build-settings"></a>Usar propriedades para controlar as configurações de compilação
 
-#### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Para definir um grupo de propriedades com base em outra propriedade
+O elemento `Property` define uma variável que é referenciada várias vezes em um arquivo de projeto, como o local de um diretório temporário ou para definir os valores de propriedades que são usadas em várias configurações, como um build de Depuração e um build de Versão. Para saber mais sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
+
+Você pode usar propriedades para alterar a configuração de seu build sem precisar alterar o arquivo de projeto. O atributo `Condition` do elemento `Property` e do elemento `PropertyGroup` permite alterar o valor de propriedades. Para obter mais informações sobre as condições do MSBuild, consulte [condições](../msbuild/msbuild-conditions.md).
+
+### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>Para definir um grupo de propriedades que depende de outra propriedade
 
 - Use um atributo `Condition` em um elemento `PropertyGroup`, semelhante ao seguinte:
 
@@ -39,7 +41,7 @@ Você pode usar propriedades para alterar a configuração de seu build sem prec
   </PropertyGroup>
   ```
 
-#### <a name="to-define-a-property-based-on-another-property"></a>Para definir uma propriedade com base em outra propriedade
+### <a name="to-define-a-property-that-depends-on-another-property"></a>Para definir uma propriedade que depende de outra propriedade
 
 - Use um atributo `Condition` em um elemento `Property`, semelhante ao seguinte:
 
@@ -48,9 +50,10 @@ Você pode usar propriedades para alterar a configuração de seu build sem prec
   ```
 
 ## <a name="specify-properties-on-the-command-line"></a>Especificar propriedades na linha de comando
-Quando o arquivo de projeto é escrito para aceitar várias configurações, você precisa ter a capacidade de alterar essas configurações sempre que compilar o projeto. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece essa capacidade, permitindo que propriedades sejam especificadas na linha de comando usando o comutador **-property** ou **-p**.
 
-#### <a name="to-set-a-project-property-at-the-command-line"></a>Para definir uma propriedade de projeto na linha de comando
+Quando o arquivo de projeto é escrito para aceitar várias configurações, você precisa ter a capacidade de alterar essas configurações sempre que compilar o projeto. O MSBuild fornece essa capacidade, permitindo que as propriedades sejam especificadas na linha de comando usando a opção **-Property** ou **-p** .
+
+### <a name="to-set-a-project-property-at-the-command-line"></a>Para definir uma propriedade de projeto na linha de comando
 
 - Use a opção **-property** com a propriedade e o valor da propriedade. Por exemplo:
 
@@ -64,7 +67,7 @@ Quando o arquivo de projeto é escrito para aceitar várias configurações, voc
   Msbuild file.proj -p:Flavor=Debug
   ```
 
-#### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Para especificar mais de uma propriedade de projeto na linha de comando
+### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Para especificar mais de uma propriedade de projeto na linha de comando
 
 - Use a opção **-property** ou **-p** várias vezes com a propriedade e os valores de propriedade ou use uma opção **-property** ou **-p** e separe várias propriedades com ponto e vírgula (;). Por exemplo:
 
@@ -78,13 +81,14 @@ Quando o arquivo de projeto é escrito para aceitar várias configurações, voc
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter mais informações sobre como usar variáveis de ambiente, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+  As variáveis de ambiente também são tratadas como propriedades e são automaticamente incorporadas pelo MSBuild. Para obter mais informações sobre como usar variáveis de ambiente, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
   O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.
 
   É possível alterar esse comportamento usando o atributo `TreatAsLocalProperty` em uma marca de projeto. Para nomes de propriedades listados com esse atributo, o valor da propriedade especificado na linha de comando não tem precedência sobre o valor no arquivo de projeto. Veja um exemplo mais adiante neste tópico.
 
 ## <a name="example"></a>Exemplo
+
 O exemplo de código seguinte, o projeto "Hello World", contém dois novos grupos de propriedade que podem ser usados para criar um build de Depuração e um build de Versão.
 
 Para compilar a versão de depuração do projeto, digite:
@@ -103,7 +107,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 <Project DefaultTargets = "Compile"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <!-- Sets the default flavor of an environment variable called
+    <!-- Sets the default flavor if an environment variable called
     Flavor is not set or specified on the command line -->
     <PropertyGroup>
         <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
@@ -152,6 +156,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 ```
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir mostra como usar o atributo `TreatAsLocalProperty`. A propriedade `Color` tem um valor de `Blue` no arquivo de projeto e `Green` na linha de comando. Com `TreatAsLocalProperty="Color"` na marca de projeto, a propriedade de linha de comando (`Green`) não substitui a propriedade definida no arquivo de projeto (`Blue`).
 
 Para compilar o projeto, digite o seguinte comando:
@@ -182,7 +187,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579645"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634000"
 ---
 # <a name="getframeworkpath-task"></a>Tarefa GetFrameworkPath
+
+Recupera o caminho para os assemblies .NET Framework.
 Recupera o caminho para os assemblies .NET Framework.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
+
 A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
 
 |Parâmetro|DESCRIÇÃO|
@@ -41,11 +44,13 @@ A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
 |`Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework mais recentes, se estiverem disponíveis. Caso contrário, retornará `null`.|
 
 ## <a name="remarks"></a>Comentários
-Se várias versões do .NET Framework estiverem instaladas, essa tarefa retornará a versão na qual o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] foi projetado para ser executado.
+
+Se várias versões do .NET Framework estiverem instaladas, essa tarefa retornará a versão em que o MSBuild foi projetado para ser executado.
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir usa a tarefa `GetFrameworkPath` para armazenar o caminho para o .NET Framework na propriedade `FrameworkPath`.
 
 ```xml
@@ -61,5 +66,6 @@ O exemplo a seguir usa a tarefa `GetFrameworkPath` para armazenar o caminho para
 ```
 
 ## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

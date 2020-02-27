@@ -18,34 +18,38 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567132"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631088"
 ---
 # <a name="warning-task"></a>tarefa Warning
+
 Registra um aviso durante um build com base em uma instrução condicional avaliada.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `Warning`.
 
-| Parâmetro | Descrição |
+| Parâmetro | DESCRIÇÃO |
 |---------------| - |
 | `Code` | Parâmetro `String` opcional.<br /><br /> O código de erro que será associado ao aviso. |
 | `File` | Parâmetro `String` opcional.<br /><br /> Especifica o arquivo relevante, se houver. Se nenhum arquivo for fornecido, o arquivo que contém a tarefa de aviso será usado. |
 | `HelpKeyword` | Parâmetro `String` opcional.<br /><br /> A palavra-chave Ajuda que será associada ao aviso. |
-| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de aviso que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] registra se o parâmetro `Condition` resultar em `true`. |
+| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de aviso que o MSBuild registra se o parâmetro `Condition` é avaliado como `true`. |
 
 ## <a name="remarks"></a>Comentários
- A tarefa `Warning` permite que projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifiquem a presença de uma configuração necessária ou propriedade antes de continuar com a próxima etapa de build.
+
+ A tarefa `Warning` permite que os projetos do MSBuild verifiquem a presença de uma configuração ou propriedade necessária antes de prosseguir com a próxima etapa de compilação.
 
  Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se não existir um parâmetro `Condition`, o texto de aviso será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir verifica as propriedades que são definidas na linha de comando. Se nenhuma propriedade estiver definida, o projeto gerará um evento de aviso e registrará o valor do parâmetro `Text` da tarefa `Warning`.
 
 ```xml
@@ -62,6 +66,7 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

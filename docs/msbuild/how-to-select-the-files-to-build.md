@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574607"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633805"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
+
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.
 
 ## <a name="specify-inputs"></a>Especificar entradas
+
 Os itens representam as entradas para um build. Para obter mais informações sobre os itens, consulte [Itens](../msbuild/msbuild-items.md).
 
-Para incluir arquivos para um build, eles devem ser incluídos em uma lista de itens no arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Vários arquivos podem ser adicionados a listas de itens incluindo os arquivos individualmente ou usando caracteres curinga para incluir vários arquivos ao mesmo tempo.
+Para incluir arquivos para uma compilação, eles devem ser incluídos em uma lista de itens no arquivo de projeto do MSBuild. Vários arquivos podem ser adicionados a listas de itens incluindo os arquivos individualmente ou usando caracteres curinga para incluir vários arquivos ao mesmo tempo.
 
 #### <a name="to-declare-items-individually"></a>Para declarar itens individualmente
 
@@ -51,6 +53,7 @@ Para incluir arquivos para um build, eles devem ser incluídos em uma lista de i
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Especificar entradas com curingas
+
 Você também pode usar caracteres curinga para incluir recursivamente todos os arquivos ou apenas arquivos específicos de subdiretórios como entradas para um build. Para obter mais informações sobre caracteres curinga, consulte [Itens](../msbuild/msbuild-items.md)
 
 Os seguintes exemplos baseiam-se em um projeto que contém arquivos de elementos gráficos nos seguintes diretórios e subdiretórios, com o arquivo de projeto localizado no diretório *Project*:
@@ -84,6 +87,7 @@ Os seguintes exemplos baseiam-se em um projeto que contém arquivos de elementos
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Passar itens para uma tarefa
+
 Em um arquivo de projeto, você pode usar a notação @() em tarefas para especificar uma lista completa de itens como a entrada para um build. Você pode usar essa notação se listar todos os arquivos separadamente ou usar caracteres curinga.
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual c# ou Visual Basic como entradas
@@ -97,11 +101,12 @@ Em um arquivo de projeto, você pode usar a notação @() em tarefas para especi
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Use curingas com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
+> Você deve usar caracteres curinga com itens para especificar as entradas para uma compilação; Você não pode especificar as entradas usando o atributo `Sources` em tarefas do MSBuild, como [CSC](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Exemplo
+
 O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de entrada separadamente.
 
 ```xml
@@ -136,6 +141,7 @@ O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de 
 ```
 
 ## <a name="example"></a>Exemplo
+
 O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs*.
 
 ```xml
@@ -169,6 +175,7 @@ O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Itens](../msbuild/msbuild-items.md)

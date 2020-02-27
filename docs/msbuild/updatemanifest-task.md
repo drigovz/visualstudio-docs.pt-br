@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 215092d7fbcee8ec30210dd8332bc6ae5b7ad412
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578283"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631336"
 ---
 # <a name="updatemanifest-task"></a>Tarefa UpdateManifest
+
 Atualiza as propriedades selecionadas em um manifesto e assina-as novamente.
 
 ## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `UpdateManifest`.
 
 |Parâmetro|DESCRIÇÃO|
@@ -37,8 +39,10 @@ Atualiza as propriedades selecionadas em um manifesto e assina-as novamente.
 |`OutputManifest`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o manifesto que contém propriedades atualizadas.|
 
 ## <a name="remarks"></a>Comentários
+
  Além de ter os parâmetros listados na tabela, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base Task](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

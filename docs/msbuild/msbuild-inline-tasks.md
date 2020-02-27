@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593649"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633311"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
+
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
  A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Isso facilita o controle do código-fonte e a implantação da tarefa. O código-fonte é integrado ao script.
 
  No MSBuild 15.8, foi adicionada a [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), que pode criar tarefas embutidas multiplataforma do .NET Standard.  Caso precise usar tarefas embutidas no .NET Core, use a RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>A estrutura de uma tarefa embutida
+
  Uma tarefa em linha é contida por um elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Normalmente, a tarefa embutida e o elemento `UsingTask` que a contém são incluídos em um arquivo *.targets* e importados para outros arquivos de projeto conforme a necessidade. Veja uma tarefa básica em linha. Observe que ela não faz nada.
 
 ```xml
@@ -68,6 +70,7 @@ Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha p
 > Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.
 
 ### <a name="code-element"></a>Elemento de código
+
  O último elemento filho a aparecer no elemento `Task` é o elemento `Code`. O elemento `Code` contém ou localiza o código que você deseja compilar em uma tarefa. O que é colocado no elemento `Code` depende de como você deseja escrever a tarefa.
 
  O atributo `Language` especifica a linguagem em que seu código é escrito. Os valores aceitáveis são `cs` para C#, `vb` para Visual Basic.
@@ -88,6 +91,7 @@ Como alternativa, você pode usar o atributo `Source` do elemento `Code` para es
 > Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.
 
 ## <a name="helloworld"></a>HelloWorld
+
  Vejamos uma tarefa em linha mais robusta. A tarefa HelloWorld exibe "Hello, world!" no dispositivo de registro de erros em log padrão, que é normalmente o console do sistema ou a janela **Saída** do Visual Studio. O elemento `Reference` no exemplo é incluído apenas para ilustração.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Parâmetros de entrada e de saída
+
  Os parâmetros de tarefa em linha são elementos filhos de um elemento `ParameterGroup`. Cada parâmetro tem o nome do elemento que o define. O código a seguir define o parâmetro `Text`.
 
 ```xml
@@ -162,6 +167,7 @@ define esses três parâmetros:
 Se o elemento `Code` tem o atributo `Type` de `Fragment` ou `Method`, as propriedades são criadas automaticamente para cada parâmetro. Caso contrário, as propriedades devem ser declaradas explicitamente no código-fonte da tarefa e devem coincidir exatamente com suas definições de parâmetro.
 
 ## <a name="example"></a>Exemplo
+
  A tarefa em linha a seguir substitui todas as ocorrências de um token no arquivo especificado pelo valor especificado.
 
 ```xml
@@ -189,6 +195,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Passo a passo: Criar uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)

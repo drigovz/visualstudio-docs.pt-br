@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4305f27435d97c346ce623a21b37f011fd8da0cd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595118"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632297"
 ---
 # <a name="sgen-task"></a>tarefa SGen
+
 Cria um assembly de serialização de XML para tipos no assembly especificado. A tarefa encapsula a Ferramenta geradora de serializador de XML (*Sgen.exe*). Para saber mais, confira [Ferramenta geradora de serializador de XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `SGen`.
 
-| Parâmetro | Descrição |
+| Parâmetro | DESCRIÇÃO |
 |-----------------------------| - |
 | `BuildAssemblyName` | Parâmetro `String` obrigatório.<br /><br /> Defina o assembly para o qual gerar código de serialização. |
 | `BuildAssemblyPath` | Parâmetro `String` obrigatório.<br /><br /> O caminho para o assembly para o qual gerar código de serialização. |
@@ -44,15 +46,17 @@ Cria um assembly de serialização de XML para tipos no assembly especificado. A
 | `SerializationAssembly` | Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém o assembly de serialização gerado. |
 | `SerializationAssemblyName` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do assembly de serialização gerado. |
 | `ShouldGenerateSerializer` | Parâmetro `Boolean` obrigatório.<br /><br /> Se `true`, a tarefa SGen deve gerar um assembly de serialização. |
-| `Timeout` | Parâmetro `Int32` opcional.<br /><br /> Especifica a quantidade de tempo em milissegundos após o qual o executável da tarefa é encerrado. O valor padrão é `Int.MaxValue`, indicando que não há período de tempo limite. |
-| `ToolPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de onde tarefa carregará o arquivo executável subjacente (*sgen.exe*). Se esse parâmetro não for especificado, a tarefa usará o caminho de instalação do SDK correspondente à versão da estrutura que está executando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `Timeout` | Parâmetro `Int32` opcional.<br /><br /> Especifica a quantidade de tempo, em milissegundos, cujo executável da tarefa é encerrado. O valor padrão é `Int.MaxValue`, indicando que não há período de tempo limite. |
+| `ToolPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de onde tarefa carregará o arquivo executável subjacente (*sgen.exe*). Se esse parâmetro não for especificado, a tarefa usará o caminho de instalação do SDK correspondente à versão do Framework que está executando o MSBuild. |
 | `Types` | Parâmetro `String[]` opcional.<br /><br /> Obtém ou define uma lista de tipos específicos para os quais gerar código de serialização. O SGen gerará o código de serialização somente para esses tipos. |
 | `UseProxyTypes` | Parâmetro `Boolean` obrigatório.<br /><br /> Se `true`, a tarefa SGen gera o código de serialização somente para os tipos de proxy de serviço Web XML. |
 
 ## <a name="remarks"></a>Comentários
+
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

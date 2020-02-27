@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8707371fac876586d38f12a797aaee7228b5f729
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593454"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634572"
 ---
 # <a name="aspnetcompiler-task"></a>Tarefa AspNetCompiler
-A tarefa `AspNetCompiler` encapsula *aspnet_compiler.exe*, um utilitário para pré-compilar aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+A tarefa `AspNetCompiler` encapsula *aspnet_compiler. exe*, um utilitário para pré-compilar ASP.NET Applications.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
+
 A tabela a seguir descreve os parâmetros da tarefa `AspNetCompiler`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|Parâmetro `Boolean` opcional.<br /><br /> Se esse parâmetro for `true`, o assembly de nome forte permitirá chamadores parcialmente confiáveis.|
 |`Clean`|Parâmetro opcional `Boolean`<br /><br /> Se esse parâmetro for `true`, o aplicativo pré-compilado será compilado limpo. Todos os componentes compilados anteriormente serão recompilados. O valor padrão é `false`. Esse parâmetro corresponde à opção **-c** do *aspnet_compiler.exe*.|
@@ -49,10 +51,12 @@ A tabela a seguir descreve os parâmetros da tarefa `AspNetCompiler`.
 |`VirtualPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho virtual do aplicativo a ser compilado. Se `PhysicalPath` for especificado, o caminho físico será usado para localizar o aplicativo. Caso contrário, a metabase do IIS será usada e será considerado que o aplicativo está no site padrão. Esse parâmetro corresponde à opção **-v** do *aspnet_compiler.exe*.|
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
-O exemplo de código a seguir usa a tarefa `AspNetCompiler` para pré-compilar um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+O exemplo de código a seguir usa a tarefa `AspNetCompiler` para pré-compilar um aplicativo ASP.NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -68,6 +72,7 @@ O exemplo de código a seguir usa a tarefa `AspNetCompiler` para pré-compilar u
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 * [Tarefas](../msbuild/msbuild-tasks.md)
 * [Referência de tarefas](../msbuild/msbuild-task-reference.md)

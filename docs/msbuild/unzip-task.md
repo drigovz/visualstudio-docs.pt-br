@@ -22,33 +22,37 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594897"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631504"
 ---
 # <a name="unzip-task"></a>Tarefa de descompactação
+
 Descompacta um arquivo *.zip* no local especificado.
 
 >[!NOTE]
 >A tarefa `Unzip` está disponível apenas no MSBuild 15.8 e superiores.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `Unzip`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> Especifica a pasta de destino para descompactar o arquivo.|
-|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. Assume o padrão de `false`.|
-|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. Assume o padrão de `true`. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
+|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. Usa `false` como padrão.|
+|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. Usa `true` como padrão. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
 |`SourceFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica um ou mais arquivos a serem descompactados. Quando vários arquivos são especificados, eles são descompactados em ordem na mesma pasta.|
 
 ## <a name="remarks"></a>Comentários
+
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir descompacta um arquivo morto e substitui os arquivos somente leitura.
 
 ```xml
@@ -65,6 +69,7 @@ Descompacta um arquivo *.zip* no local especificado.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

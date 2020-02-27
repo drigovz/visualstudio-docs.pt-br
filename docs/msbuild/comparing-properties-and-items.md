@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596119"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634403"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
+
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.
 
 - Propriedades são pares nome-valor. Para obter mais informações, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
@@ -25,9 +26,11 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 - Itens são objetos que normalmente representam arquivos. Objetos de item podem ter coleções de metadados associadas. Metadados são pares nome-valor. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Escalares e vetores
+
 Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar*. Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor*. No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.
 
 ### <a name="target-dependency-injection"></a>Injeção de dependência de destino
+
 Para ver como as propriedades podem representar vários valores, considere um padrão de uso comum para adicionar um destino a uma lista de destinos a ser criada. Normalmente, essa lista é representada por um valor da propriedade com os nomes de destino separados por ponto-e-vírgula.
 
 ```xml
@@ -53,9 +56,10 @@ A propriedade `BuildDependsOn` normalmente é usada como o argumento de um atrib
 
 adiciona o destino CustomBuild à lista de destinos, dando a `BuildDependsOn` o valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.
 
-A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).
+A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversões entre cadeias de caracteres e listas de itens
+
 O MSBuild executa conversões em e de tipos de item e valores de cadeias de caracteres conforme necessário. Para ver como uma lista de itens pode se tornar um valor de cadeia de caracteres, considere o que acontece quando um tipo de item é usado como o valor de uma propriedade do MSBuild:
 
 ```xml
@@ -70,6 +74,7 @@ O MSBuild executa conversões em e de tipos de item e valores de cadeias de cara
 O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: KeyFiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".
 
 ## <a name="properties-and-items-in-tasks"></a>Propriedades e itens em tarefas
+
 As propriedades e os itens são usados como entradas e saídas para tarefas do MSBuild. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
 Propriedades são passadas para tarefas como atributos. Dentro da tarefa, uma propriedade do MSBuild é representada por um tipo de propriedade cujo valor pode ser convertido em ou de uma cadeia de caracteres. Os tipos de propriedade compatíveis incluem `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualquer tipo que <xref:System.Convert.ChangeType%2A> possa manipular.
@@ -79,6 +84,7 @@ Os itens são passados para tarefas como objetos <xref:Microsoft.Build.Framework
 A lista de itens de um tipo de item pode ser passada como uma matriz de objetos `ITaskItem`. A partir do .NET Framework 3.5, os itens podem ser removidos de uma lista de itens em um destino usando o atributo `Remove`. Como os itens podem ser removidos de uma lista de itens, é possível que um tipo de item tenha zero itens. Se uma lista de itens é passada para uma tarefa, o código na tarefa deve verificar essa possibilidade.
 
 ## <a name="property-and-item-evaluation-order"></a>Ordem de avaliação de itens e propriedades
+
 Durante a fase de avaliação de um build, os arquivos importados são incorporados ao build na ordem em que são exibidos. As propriedades e os itens são definidos em três passos na seguinte ordem:
 
 - As propriedades são definidas e modificadas na ordem em que são exibidas.
@@ -104,6 +110,7 @@ No entanto, essa não é a história completa. Quando uma propriedade, definiç�
   - As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efeitos sutis da ordem de avaliação
+
 Na fase de avaliação de um build, a avaliação da propriedade precede a avaliação do item. No entanto, as propriedades podem ter valores que parecem depender de valores de item. Considere o script a seguir.
 
 ```xml
@@ -178,5 +185,6 @@ O valor de `KeyFileVersion` é definido como "1.0.0.3" e não como "\@(KeyFile->
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

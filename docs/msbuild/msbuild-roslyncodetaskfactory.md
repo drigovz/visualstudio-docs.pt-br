@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585893"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633220"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tarefas embutidas do MSBuild com RoslynCodeTaskFactory
+
 Semelhante ao [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), o RoslynCodeTaskFactory usa os compiladores Roslyn multiplataforma para gerar assemblies de tarefa na memória a serem usados como tarefas embutidas.  As tarefas do RoslynCodeTaskFactory são direcionadas ao .NET Standard e podem trabalhar nos runtimes do .NET Framework e do .NET Core, bem como no de outras plataformas, como Linux e Mac OS.
 
 >[!NOTE]
 >O RoslynCodeTaskFactory está disponível apenas no MSBuild 15.8 e superiores.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>A estrutura de uma tarefa embutida com RoslynCodeTaskFactory
+
  As tarefas embutidas do RoslynCodeTaskFactory são declaradas de forma idêntica às do [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), a única diferença é que elas são direcionadas ao .NET Standard.  Normalmente, a tarefa embutida e o elemento `UsingTask` que a contém são incluídos em um arquivo *.targets* e importados para outros arquivos de projeto conforme a necessidade. Veja uma tarefa básica em linha. Observe que ela não faz nada.
 
 ```xml
@@ -68,6 +70,7 @@ Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha p
 > Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.
 
 ### <a name="code-element"></a>Elemento de código
+
 O último elemento filho a aparecer no elemento `Task` é o elemento `Code`. O elemento `Code` contém ou localiza o código que você deseja compilar em uma tarefa. O que é colocado no elemento `Code` depende de como você deseja escrever a tarefa.
 
 O atributo `Language` especifica a linguagem em que seu código é escrito. Os valores aceitáveis são `cs` para C#, `vb` para Visual Basic.
@@ -87,7 +90,8 @@ Como alternativa, você pode usar o atributo `Source` do elemento `Code` para es
 > [!NOTE]
 > Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.
 
-## <a name="hello-world"></a>Hello World
+## <a name="hello-world"></a>Olá, Mundo
+
  Aqui está uma tarefa embutida mais robusta com RoslynCodeTaskFactory. A tarefa HelloWorld exibe "Hello, world!" no dispositivo de registro de erros em log padrão, que é normalmente o console do sistema ou a janela **Saída** do Visual Studio. O elemento `Reference` no exemplo é incluído apenas para ilustração.
 
 ```xml
@@ -125,6 +129,7 @@ Salve a tarefa HelloWorld em um arquivo chamado *HelloWorld.targets* e, em segui
 ```
 
 ## <a name="input-and-output-parameters"></a>Parâmetros de entrada e de saída
+
  Os parâmetros de tarefa em linha são elementos filhos de um elemento `ParameterGroup`. Cada parâmetro tem o nome do elemento que o define. O código a seguir define o parâmetro `Text`.
 
 ```xml
@@ -162,6 +167,7 @@ define esses três parâmetros:
 Se o elemento `Code` tem o atributo `Type` de `Fragment` ou `Method`, as propriedades são criadas automaticamente para cada parâmetro. Caso contrário, as propriedades devem ser declaradas explicitamente no código-fonte da tarefa e devem coincidir exatamente com suas definições de parâmetro.
 
 ## <a name="example"></a>Exemplo
+
  A seguinte tarefa embutida registra algumas mensagens e retorna uma cadeia de caracteres.
 
 ```xml
@@ -253,6 +259,7 @@ Essas tarefas embutidas podem combinar caminhos e obter o nome do arquivo.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Passo a passo: Criar uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)

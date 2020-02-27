@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 28d6def203a819d41a420899663d1a974612c631
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596730"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632986"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
+
 Contém uma lista opcional de parâmetros que estarão presentes na tarefa que é gerada por um `UsingTask` `TaskFactory`. Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
@@ -35,24 +36,27 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
- Nenhuma.
+### <a name="attributes"></a>Atributos
 
-### <a name="child-elements"></a>Child elements
+ Nenhum.
 
-|Elemento|Descrição|
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[Parâmetro](../msbuild/parameter-element.md)|Contém informações sobre um parâmetro específico para uma tarefa que é gerada por um `UsingTask` `TaskFactory`. O nome do elemento é o nome do parâmetro.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornece uma maneira para registrar tarefas em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pode ser que não haja nenhum ou mais de um elemento `UsingTask` em um projeto. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornece uma maneira de registrar tarefas no MSBuild. Pode ser que não haja nenhum ou mais de um elemento `UsingTask` em um projeto. |
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir mostra como usar o elemento `ParameterGroup`.
 
 ```xml
@@ -68,7 +72,8 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

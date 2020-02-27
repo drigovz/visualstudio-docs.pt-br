@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595079"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632115"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Iniciar um build pelo IDE
+
 Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este artigo descreve as razões para esse requisito e descreve o procedimento.
 
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelos que exigem a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build de dentro dos retornos de chamada.
+
+ O Visual Studio permite compilações paralelas, o que exige a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build de dentro dos retornos de chamada.
 
  Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Esse requisito significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.
 
 ## <a name="use-ivsbuildmanageraccessor"></a>Usar o IVSBuildManagerAccessor
+
  O código a seguir descreve um método que um sistema de projeto pode usar para iniciar um build:
 
 ```csharp

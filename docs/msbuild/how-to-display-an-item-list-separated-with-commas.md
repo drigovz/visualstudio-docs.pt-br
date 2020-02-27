@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596327"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633896"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Como exibir uma lista de itens separados por vírgulas
-Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), às vezes, é útil exibir o conteúdo dessas listas de itens de uma maneira que seja fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.
+
+Quando você trabalha com listas de itens no Microsoft Build Engine (MSBuild), às vezes é útil exibir o conteúdo dessas listas de itens de forma que seja fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar itens em uma lista com vírgulas
-Por padrão, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa o ponto e vírgula para separar itens em uma lista. Por exemplo, considere um elemento `Message` com o seguinte valor:
+
+Por padrão, o MSBuild usa ponto e vírgula para separar itens em uma lista. Por exemplo, considere um elemento `Message` com o seguinte valor:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
@@ -43,6 +45,7 @@ O separador pode ser um único caractere ou uma cadeia de caracteres e deve ser 
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Exemplo
+
 Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo *Phrases.txt*. No comando findstr, as cadeias de caracteres de pesquisas literais são indicadas pela opção **-c:** , portanto, o separador de item, `-c:` é inserido entre os itens na lista de itens de `@(Phrase)`.
 
 Neste exemplo, a linha de comando equivalente é:
@@ -66,6 +69,7 @@ Neste exemplo, a linha de comando equivalente é:
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

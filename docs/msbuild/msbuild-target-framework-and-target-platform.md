@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596769"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633194"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
+
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
 
 > [!IMPORTANT]
 > Este artigo mostra a maneira antiga de especificar uma estrutura de destino. Os projetos no estilo SDK permitem TargetFrameworks diferentes, como o netstandard. Para obter mais informações, confira [Estruturas de destino](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Perfil e estrutura de destino
+
  Uma estrutura de destino é a versão específica do .NET Framework na qual o projeto foi criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
 
  Atualmente, as seguintes versões do .NET Framework estão disponíveis para uso:
 
 - O .NET Framework 2.0 (incluído no Visual Studio 2005)
 
-- O .NET Framework 3.0 (incluído no [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- O .NET Framework 3,0 (incluído no Windows Vista)
 
-- O .NET Framework 3.5 (incluído no [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- O .NET Framework 3,5 (incluído no Visual Studio 2008)
 
 - O .NET Framework 4.5.2
 
-- O .NET Framework 4.6 (incluído no [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- O .NET Framework 4,6 (incluído no Visual Studio 2015)
 
 - O .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 ```
 
 ## <a name="target-platform"></a>Plataforma de destino
+
  A *plataforma* é a combinação de hardware e software que define um ambiente de runtime específico. Por exemplo,
 
 - `x86` designa um sistema operacional Windows de 32 bits em execução em um processador Intel 80x86 ou equivalente.
@@ -96,5 +99,6 @@ Uma *configuração de destino* é um subconjunto de uma plataforma de destino. 
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
