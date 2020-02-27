@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594794"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634052"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
+
 Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e arquivos *.resources* binários do Common Language Runtime que podem ser inseridos em um executável binário do tempo de execução ou compilados em assemblies satélite. Essa tarefa geralmente é usada para converter arquivos *.txt* ou *.resx* em arquivos *.resources*. A tarefa `GenerateResource` é funcionalmente semelhante a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
 A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`AdditionalInputs`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém entradas adicionais para a verificação de dependência realizada por tarefa. Por exemplo, os arquivos de projeto e de destino normalmente devem ser entradas, de modo que se eles forem atualizados, todos os recursos serão regenerados.|
 |`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma matriz de pares nome-valor das variáveis de ambiente que devem ser passados para o *resgen.exe* gerado, além (ou substituindo seletivamente) do bloco de ambiente comum.|
@@ -48,7 +50,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 |`StateFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o caminho para um arquivo de cache opcional usado para acelerar a verificação de dependência de links em arquivos de entrada *.resx*.|
 |`StronglyTypedClassName`|Parâmetro `String` opcional.<br /><br /> Especifica o nome de classe para a classe de recurso fortemente tipada. Se esse parâmetro não for especificado, o nome base do arquivo de recurso será usado.|
 |`StronglyTypedFilename`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo para o arquivo de origem. Se esse parâmetro não for especificado, o nome de classe será usado como o nome de arquivo base, com a extensão dependendo da linguagem. Por exemplo: *MyClass.cs*.|
-|`StronglyTypedLanguage`|Parâmetro `String` opcional.<br /><br /> Especifica a linguagem a ser usada ao gerar a fonte de classe para o recurso fortemente tipado. Esse parâmetro deve corresponder exatamente uma das linguagens usadas por CodeDomProvider. Por exemplo `VB` ou `C#`.<br /><br /> Ao passar um valor para esse parâmetro, você instrui a tarefa a gerar recursos fortemente tipados.|
+|`StronglyTypedLanguage`|Parâmetro `String` opcional.<br /><br /> Especifica a linguagem a ser usada ao gerar a fonte de classe para o recurso fortemente tipado. Esse parâmetro deve corresponder exatamente uma das linguagens usadas por CodeDomProvider. Por exemplo: `VB` ou `C#`.<br /><br /> Ao passar um valor para esse parâmetro, você instrui a tarefa a gerar recursos fortemente tipados.|
 |`StronglyTypedManifestPrefix`|Parâmetro `String` opcional.<br /><br /> Especifica o prefixo de manifesto ou namespace de recurso para usar na origem de classe gerada para o recurso fortemente tipado.|
 |`StronglyTypedNamespace`|Parâmetro `String` opcional.<br /><br /> Especifica o namespace para usar na origem de classe gerada para o recurso fortemente tipado. Se esse parâmetro não for especificado, todos os recursos fortemente tipados estarão no namespace global.|
 |`TLogReadFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` somente leitura opcional.<br /><br /> Obtém uma matriz de itens que representam os logs de acompanhamento de leitura.|
@@ -61,6 +63,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 |`UseSourcePath`|Parâmetro `Boolean` opcional.<br /><br /> Se é `true`, especifica que o diretório do arquivo de entrada deve ser usado para resolver caminhos de arquivo relativos.|
 
 ## <a name="remarks"></a>Comentários
+
 Já que arquivos *.resx* podem conter links para outros arquivos de recurso, não é suficiente apenas comparar carimbos de data/hora de arquivos *.resx* e *.resources* para ver se as saídas estão atualizadas. Em vez disso, a tarefa `GenerateResource` segue os links nos arquivos *.resx* e verifica também os carimbos de data/hora dos arquivos vinculados. Isso significa que, geralmente, você não deve usar os atributos `Inputs` e `Outputs` no destino que contém a tarefa `GenerateResource`, pois isso pode fazer com que ela seja ignorada quando, na verdade, ela deve ser executada.
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <x
 Ao usar o MSBuild 4.0 para projetos de destino do .NET 3.5, o build pode falhar em recursos x86. Para contornar esse problema, é possível criar o destino como um assembly AnyCPU.
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir usa a tarefa `GenerateResource` para gerar arquivos *.resources* com base nos arquivos especificados pela coleção de itens `Resx`.
 
 ```xml
@@ -94,6 +98,7 @@ Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recur
 
 Sem os metadados de \<LogicalName>, o recurso é nomeado *myAssembly.myResource.resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

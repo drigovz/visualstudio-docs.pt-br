@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576050"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633857"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Como excluir arquivos do build
+
 Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build. No entanto, pode haver um arquivo no diretório ou um diretório em um conjunto aninhado de diretórios que você não deseja incluir como entrada para um build. Você pode excluir explicitamente esse arquivo ou diretório da lista de entradas. Também pode haver um arquivo em um projeto que você deseja incluir somente em determinadas condições. Você pode declarar explicitamente as condições sob as quais um arquivo é incluído em um build.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Excluir um arquivo ou um diretório das entradas para um build
+
  Listas de itens são os arquivos de entrada para um build. Os itens que você deseja incluir são declarados separadamente ou como um grupo usando o atributo `Include`. Por exemplo:
 
 ```xml
@@ -76,6 +78,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     > Você deve especificar o caminho para os dois atributos. Se você usar um caminho absoluto para especificar locais de arquivo no atributo `Include`, também é necessário usar um caminho absoluto no atributo `Exclude`. Se você usar um caminho relativo no atributo `Include`, também deverá usar um caminho relativo no atributo `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Usar condições para excluir um arquivo ou um diretório das entradas para um build
+
  Se houver itens que você deseja incluir, por exemplo, em um build de depuração, mas não em um build de versão, você poderá usar o atributo `Condition` para especificar as condições sob as quais o item será incluído.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir o arquivo *Formula.vb* somente em builds de Versão
@@ -89,6 +92,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     ```
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir cria um projeto com todos os arquivos *.cs* no diretório, exceto *Form2.cs*.
 
 ```xml
@@ -122,7 +126,8 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Itens](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)

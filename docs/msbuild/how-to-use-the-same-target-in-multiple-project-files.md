@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a4b756e0f0926e6c0ccd1a68ab44b7bc13e25c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574052"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633753"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Como usar o mesmo destino em vários arquivos de projeto
-Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], talvez você tenha descoberto que precisa usar as mesmas tarefas e destinos em diferentes arquivos de projeto. Em vez de incluir a descrição completa dessas tarefas ou destinos em todos os arquivos de projeto, você pode salvar um destino em um arquivo de projeto separado e, em seguida, importar o projeto para qualquer outro projeto que precise usar o destino.
 
+Se você criou vários arquivos de projeto do MSBuild, talvez tenha descoberto que precisa usar as mesmas tarefas e destinos em arquivos de projeto diferentes. Em vez de incluir a descrição completa dessas tarefas ou destinos em todos os arquivos de projeto, você pode salvar um destino em um arquivo de projeto separado e, em seguida, importar o projeto para qualquer outro projeto que precise usar o destino.
 ## <a name="use-the-import-element"></a>Usar o elemento Import
- O elemento `Import` é usado para inserir um arquivo de projeto em outro arquivo de projeto. O arquivo de projeto que está sendo importado deve ser um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] válido e conter XML bem formado. O atributo `Project` especifica o caminho para o arquivo de projeto importado. Para obter mais informações sobre o elemento `Import`, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
+
+ O elemento `Import` é usado para inserir um arquivo de projeto em outro arquivo de projeto. O arquivo de projeto que está sendo importado deve ser um arquivo de projeto MSBuild válido e conter XML bem formado. O atributo `Project` especifica o caminho para o arquivo de projeto importado. Para obter mais informações sobre o elemento `Import`, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
+O elemento `Import` é usado para inserir um arquivo de projeto em outro arquivo de projeto. O arquivo de projeto que está sendo importado deve ser um arquivo de projeto MSBuild válido e conter XML bem formado. O atributo `Project` especifica o caminho para o arquivo de projeto importado. Para obter mais informações sobre o elemento `Import`, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Para importar um projeto
 
@@ -35,7 +37,8 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 3. Após o elemento `Import`, defina todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
 
 ## <a name="order-of-evaluation"></a>Ordem de avaliação
- Quando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atinge um elemento `Import`, o projeto importado é inserido efetivamente no projeto para o qual está sendo realizada a importação, no local do elemento `Import`. Portanto, o local do elemento `Import` pode afetar os valores de propriedades e de itens. É importante entender as propriedades e os itens que são definidos pelo projeto importado e as propriedades e itens usados pelo projeto importado.
+
+ Quando o MSBuild atinge um elemento `Import`, o projeto importado é efetivamente inserido no projeto de importação no local do elemento `Import`. Portanto, o local do elemento `Import` pode afetar os valores de propriedades e de itens. É importante entender as propriedades e os itens que são definidos pelo projeto importado e as propriedades e itens usados pelo projeto importado.
 
  Quando o projeto é compilado, todas as propriedades são avaliadas primeiro, seguidas dos itens. Por exemplo, o seguinte XML define o arquivo de projeto importado *MyCommon.targets*:
 
@@ -81,6 +84,7 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 3. Defina, no arquivo de projeto, todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir mostra o arquivo *MyCommon.targets*, importado pelo segundo exemplo de código. O arquivo *.targets* avalia propriedades do projeto de importação para configurar o build.
 
 ```xml
@@ -99,6 +103,7 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 ```
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir importa o arquivo *MyCommon.targets*.
 
 ```xml
@@ -111,6 +116,7 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)
 - [Destinos](../msbuild/msbuild-targets.md)

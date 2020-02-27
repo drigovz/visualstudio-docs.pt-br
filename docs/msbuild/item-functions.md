@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573788"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633675"
 ---
 # <a name="item-functions"></a>funções de item
-Começando com o MSBuild 4.0, o código em tarefas e destinos pode chamar funções de item para obter informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens.
+
+O código em tarefas e destinos pode chamar funções de item para obter informações sobre os itens no projeto (no MSBuild 4,0 e posterior). Essas funções simplificam a obtenção de itens distintos e são mais rápidas do que o loop pelos itens.
 
 ## <a name="string-item-functions"></a>Funções de item de cadeia de caracteres
+
 É possível usar métodos e propriedades de cadeia de caracteres no .NET Framework para operar em qualquer valor de item. Para métodos <xref:System.String>, especifique o nome do método. Para propriedades <xref:System.String>, especifique o nome da propriedade após "get_".
 
 Para itens que têm várias cadeias de caracteres, o método ou propriedade da cadeia de caracteres será executado em cada cadeia de caracteres.
@@ -49,9 +51,10 @@ O exemplo a seguir mostra como usar essas funções de item de cadeia de caracte
 ```
 
 ## <a name="intrinsic-item-functions"></a>Funções de item intrínsecas
+
 A tabela a seguir lista as funções intrínsecas disponíveis para itens.
 
-|Função|{1&gt;Exemplo&lt;1}|Descrição|
+|Função|Exemplo|DESCRIÇÃO|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Retorna a contagem dos itens.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retorna o equivalente de `Path.DirectoryName` para cada item.|
@@ -99,5 +102,6 @@ O exemplo a seguir mostra como usar funções intrínsecas de item.
   -->
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
+
 - [Itens](../msbuild/msbuild-items.md)

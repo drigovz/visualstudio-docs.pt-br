@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592185"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633545"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
+
 O registro em logs oferece uma maneira de monitorar o andamento de um build. O registro em logs captura eventos de build, mensagens, avisos e erros em um arquivo de log.
 
 ## <a name="in-this-section"></a>Nesta seção
+
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Descreve os vários aspectos de registro em logs em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Descreve os vários aspectos de registro em log no MSBuild.
 
 - [Agentes de build](../msbuild/build-loggers.md)
 
@@ -41,5 +43,6 @@ O registro em logs oferece uma maneira de monitorar o andamento de um build. O r
 
  Descreve como criar agentes personalizados de encaminhamento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Criar vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Descreve como criar vários projetos mais rapidamente executando-os em paralelo.

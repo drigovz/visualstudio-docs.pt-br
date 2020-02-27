@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567274"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631023"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novidades no MSBuild 15
 
@@ -39,6 +39,7 @@ Agora o MSBuild está disponível como parte do [SDK do .NET Core](https://www.m
 - As propriedades `SDK35ToolsPath` e `SDK40ToolsPath` apontam para o SDK do .NET Framework que é empacotado com esta versão do Visual Studio (por exemplo, 10.0A para as ferramentas 4.X).
 
 ## <a name="updates"></a>Atualizações
+
 - O [elemento Project](../msbuild/project-element-msbuild.md) tem um novo atributo `SDK`. Além disso, agora o atributo `Xmlns` é opcional. Para saber mais sobre o atributo `SDK`, confira [Como usar SDKs de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacotes, metapacotes e estruturas](/dotnet/core/packages) e [Adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
 - O [elemento Item](../msbuild/item-element-msbuild.md) fora dos destinos tem um novo atributo `Update`. Além disso, a restrição no atributo `Remove` foi eliminada.
 - *Directory.Build.props* é um arquivo definido pelo usuário que fornece personalizações de projetos em um diretório. Esse arquivo é importado automaticamente de *Microsoft.Common.props*, a menos que a propriedade `ImportDirectoryBuildTargets` seja definida como **false**. *Directory.Build.targets* é importado por *Microsoft.Common.targets*.
@@ -51,5 +52,6 @@ Agora o MSBuild está disponível como parte do [SDK do .NET Core](https://www.m
 - `NormalizeDirectory` combina elementos de caminho, garante uma barra à direita e garante que a cadeia de caracteres de saída tem os caracteres separadores de diretório corretos do sistema operacional atual.
 - `GetPathOfFileAbove` retorna o caminho do arquivo imediatamente anterior a esse. É funcionalmente equivalente a chamar `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [MSBuild](../msbuild/msbuild.md)

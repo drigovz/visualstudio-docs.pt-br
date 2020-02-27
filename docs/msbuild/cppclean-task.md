@@ -19,20 +19,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596067"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634338"
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
+
 Exclui os arquivos temporários que o MSBuild cria C++ quando um projeto é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa **CPPClean**.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |**DeletedFiles**|Parâmetro de saída `ITaskItem[]` opcional.<br /><br /> Define uma matriz de itens de arquivo de saída do MSBuild que pode ser consumida e emitida por tarefas.|
 |**DoDelete**|Parâmetro **Boolean** opcional.<br /><br /> Se `true`, limpará arquivos de build temporários.|
@@ -40,5 +42,6 @@ Exclui os arquivos temporários que o MSBuild cria C++ quando um projeto é comp
 |**FilesExcludedFromClean**|Parâmetro `String` opcional.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de arquivos que não serão limpos.|
 |**FoldersToClean**|Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. É possível especificar um caminho completo ou relativo e esse caminho pode conter o símbolo curinga (*).|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

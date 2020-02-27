@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bc50379563a85ce9c76f3d45b9d70c1f784eaf5a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565260"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631244"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
+
 Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-element-msbuild.md) para o assembly que contém a implementação de tarefas.
 
  \<Project> \<UsingTask>
@@ -43,11 +44,12 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 > Ao contrário de propriedades e itens, o *primeiro* elemento `UsingTask` que se aplica a uma `TaskName` será usado; para substituir tarefas, você deve definir um novo `UsingTask` *antes* do existente.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
-|Atributo|Descrição|
+### <a name="attributes"></a>Atributos
+
+|Atributo|DESCRIÇÃO|
 |---------------|-----------------|
 |`AssemblyName`|O atributo `AssemblyName` ou o `AssemblyFile` é necessário.<br /><br /> O nome do assembly a ser carregado. O atributo `AssemblyName` aceita os assemblies de nomes fortes, embora não seja necessário com nomes fortes. Usar esse atributo é equivalente a carregar um assembly usando o método <xref:System.Reflection.Assembly.Load%2A> no .NET.<br /><br /> Você não poderá usar esse atributo se o atributo `AssemblyFile` for usado.|
 |`AssemblyFile`|O atributo `AssemblyName` ou `AssemblyFile` é necessário.<br /><br /> O caminho do arquivo do assembly. Esse atributo aceita caminhos completos ou caminhos relativos. Caminhos relativos são relativos ao diretório do arquivo de projeto ou arquivo de destino no qual o elemento `UsingTask` é declarado. Usar esse atributo é equivalente a carregar um assembly usando o método <xref:System.Reflection.Assembly.LoadFrom%2A> no .NET.<br /><br /> Você não poderá usar esse atributo se o atributo `AssemblyName` for usado.|
@@ -55,20 +57,21 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 |`TaskName`|Atributo obrigatório.<br /><br /> O nome da tarefa para referência de um assembly. Se for possível usar ambiguidades, esse atributo sempre deverá especificar namespaces completos. Se houver ambiguidades, o MSBuild escolherá uma correspondência arbitrária, que poderá produzir resultados inesperados.|
 |`Condition`|Atributo opcional.<br /><br /> A condição que será avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Child elements
+### <a name="child-elements"></a>Elementos filho
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|O conjunto de parâmetros que aparecem na tarefa que é gerada pelo `TaskFactory` especificado.|
 |[Tarefa](../msbuild/task-element-msbuild.md)|Os dados que são passados para o `TaskFactory` para gerar uma instância da tarefa.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
+
  Variáveis de ambiente, propriedades de linha de comando, propriedades no nível do projeto e itens no nível do projeto podem ser referenciadas no elemento `UsingTask` incluído no arquivo de projeto, explicitamente ou por meio de um arquivo de projeto importado. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
@@ -77,6 +80,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
  No MSBuild 4.0, usar tarefas pode ser carregado a partir de arquivos *.overridetask*.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir mostra como usar o elemento `UsingTask` com um atributo `AssemblyName`.
 
 ```xml
@@ -93,6 +97,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 ```
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir mostra como usar o elemento `UsingTask` com um atributo `AssemblyFile`.
 
 ```xml
@@ -100,7 +105,8 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

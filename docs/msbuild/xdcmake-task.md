@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578124"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630646"
 ---
 # <a name="xdcmake-task"></a>tarefa XDCMake
+
 Encapsula a ferramenta de Documentação XML (*xdcmake.exe*), que mescla arquivos de comentário ( *.xdc*) do documento XML com um arquivo *.xml*.
 
  Um arquivo *. xdc* é criado quando você fornece comentários de documentação em C++ seu código-fonte e compila usando a opção de compilador [/Doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) . Para saber mais, consulte [Referência XDCMake](/cpp/build/reference/xdcmake-reference), [Páginas de Propriedade da Ferramenta Geradora de Documento XML](/cpp/build/reference/xml-document-generator-tool-property-pages) e a opção de ajuda de linha de comando ( **/?** ) para *xdcmake.exe*.
 
 ## <a name="remarks"></a>Comentários
+
  Por padrão, a ferramenta *xdcmake.exe* dá suporte a algumas opções de linha de comando. Opções adicionais terão suporte quando a opção de linha de comando **/old** for especificada.
 
 ## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa **XDCMake**.
 
 |Parâmetro|DESCRIÇÃO|
@@ -50,4 +53,5 @@ Encapsula a ferramenta de Documentação XML (*xdcmake.exe*), que mescla arquivo
 |**TrackerLogDirectory**|Parâmetro **String** opcional.<br /><br /> Especifica o diretório do log de rastreamento.|
 
 ## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

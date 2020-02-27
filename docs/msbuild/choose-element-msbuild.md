@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593363"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634468"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
+
 Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/ou `PropertyGroup` a ser avaliado.
 
  \<projeto > \<escolha > \<quando > \<escolha >... \<caso contrário > \<escolha >...
@@ -41,30 +42,34 @@ Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
- Nenhuma.
+### <a name="attributes"></a>Atributos
 
-### <a name="child-elements"></a>Child elements
+ Nenhum.
 
-|Elemento|Descrição|
+### <a name="child-elements"></a>Elementos filho
+
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento opcional.<br /><br /> Especifica o bloco de código `PropertyGroup` e os elementos `ItemGroup` para avaliar se as condições de todos os elementos `When` correspondem a `false`. Pode haver um zero ou um elemento `Otherwise` em um elemento `Choose`, e ele deve ser o último elemento.|
-|[When](../msbuild/when-element-msbuild.md)|Elemento obrigatório.<br /><br /> Especifica um possível bloco de códigos para o elemento `Choose` selecionar. Pode haver um ou mais elementos `When` em um elemento `Choose`.|
+|[When](../msbuild/when-element-msbuild.md)|Elemento necessário.<br /><br /> Especifica um possível bloco de código a ser selecionado pelo elemento `Choose`. Pode haver um ou mais elementos `When` em um elemento `Choose`.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | Especifica o bloco de código a ser executado se as condições de todos os elementos `When` forem avaliadas como `false`. |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
-| [When](../msbuild/when-element-msbuild.md) | Especifica um possível bloco de códigos para o elemento `Choose` selecionar. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
+| [When](../msbuild/when-element-msbuild.md) | Especifica um possível bloco de código a ser selecionado pelo elemento `Choose`. |
 
 ## <a name="remarks"></a>Comentários
- Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
+
+ Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar diversas alternativas possíveis. Para saber mais, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Exemplo
+
  O seguinte projeto usa o `Choose` elemento para selecionar o conjunto de valores de propriedades no elemento `When` a ser definido. Se os `Condition` atributos de ambos `When` elementos são avaliadas como `false`, os valores de propriedades no elemento `Otherwise` são definidos.
 
 ```xml
@@ -112,6 +117,7 @@ Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

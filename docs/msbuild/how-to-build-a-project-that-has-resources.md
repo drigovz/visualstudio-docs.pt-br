@@ -13,18 +13,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 626db2638912c9eaa49ea74e702c9ba24f6fd33f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576336"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633948"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Como criar um projeto que tem recursos
+
 Se você estiver compilando versões localizadas de um projeto, todos os elementos da interface do usuário devem ser separados em arquivos de recursos para os diferentes idiomas. Se o projeto usar somente cadeias de caracteres, os arquivos de recursos poderão usar arquivos de texto. Como alternativa, você pode usar arquivos *.resx* como os arquivos de recurso.
 
 ## <a name="compile-resources-with-msbuild"></a>Compilar recursos com o MSBuild
-A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa `GenerateResource` que você pode usar para compilar recursos em arquivos *.resx* ou de texto. Esta tarefa inclui o parâmetro `Sources` para especificar quais arquivos de recurso compilar e o parâmetro `OutputResources` para especificar nomes para os arquivos de recurso de saída. Para obter mais informações sobre a tarefa `GenerateResource`, confira [Tarefa GenerateResource](../msbuild/generateresource-task.md).
+
+A biblioteca de tarefas comuns que é fornecida com o MSBuild inclui uma tarefa `GenerateResource` que você pode usar para compilar recursos em arquivos *. resx* ou de texto. Esta tarefa inclui o parâmetro `Sources` para especificar quais arquivos de recurso compilar e o parâmetro `OutputResources` para especificar nomes para os arquivos de recurso de saída. Para obter mais informações sobre a tarefa `GenerateResource`, confira [Tarefa GenerateResource](../msbuild/generateresource-task.md).
 
 #### <a name="to-compile-resources-with-msbuild"></a>Para compilar recursos com o MSBuild
 
@@ -37,6 +39,7 @@ A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extens
 4. Use o item criado do elemento `Output` como uma entrada em outra tarefa.
 
 ## <a name="example"></a>Exemplo
+
 O exemplo de código a seguir mostra como o elemento `Output` especifica que o atributo `OutputResources` da tarefa `GenerateResource` conterá os arquivos de recurso compilados *alpha.resources* e *beta.resources* e que esses dois arquivos serão colocados na lista de itens `Resources`. Identificando esses arquivos *.resources* como uma coleção de itens de mesmo nome, você pode usá-los com facilidade como entradas para outra tarefa, como a tarefa [Csc](../msbuild/csc-task.md).
 
 Essa tarefa é equivalente a usar o comutador **/compile** para [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):
@@ -53,6 +56,7 @@ Essa tarefa é equivalente a usar o comutador **/compile** para [Resgen.exe](/do
 ```
 
 ## <a name="example"></a>Exemplo
+
 O exemplo de projeto a seguir contém duas tarefas: a tarefa `GenerateResource` para compilar recursos e a tarefa `Csc` para compilar os arquivos de código-fonte e os arquivos de recurso compilados. Os arquivos de recurso compilados pela tarefa `GenerateResource` são armazenados no item `Resources` e passados para a tarefa `Csc`.
 
 ```xml
@@ -76,7 +80,8 @@ O exemplo de projeto a seguir contém duas tarefas: a tarefa `GenerateResource` 
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Tarefa GenerateResource](../msbuild/generateresource-task.md)
 - [Tarefa Csc](../msbuild/csc-task.md)

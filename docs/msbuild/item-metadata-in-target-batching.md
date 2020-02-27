@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75577272"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633662"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadados de item no envio de destinos em lote
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tem a capacidade de executar a análise de dependência em entradas e saídas de um destino de build. Se for determinado que as entradas ou as saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.
 
-Se um destino contiver uma tarefa que usa itens em lotes como entradas ou saídas, o elemento `Target` do destino deve usar o envio em lote nos aributos `Inputs` ou `Outputs` para habilitar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a ignorar lotes de itens que já estão atualizados.
+O MSBuild tem a capacidade de executar a análise de dependência nas entradas e saídas de um destino de compilação. Se for determinado que as entradas ou as saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.
+
+Se um destino contiver uma tarefa que usa itens em lote como entradas ou saídas, o elemento `Target` do destino deverá usar o envio em lote em seus `Inputs` ou `Outputs` atributos para permitir que o MSBuild ignore lotes de itens já atualizados.
 
 ## <a name="batch-targets"></a>Destinos em lotes
-O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em dois lotes baseados nos metadados de item `Culture`. Cada um desses lotes é passada para a tarefa `AL`, que cria um assembly de saída para cada lote. Ao usar o envio em lote no atributo `Outputs` do elemento `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode determinar se cada um dos lotes individuais está atualizado antes de executar o destino. Sem o uso do envio em lote de destino, ambos os lotes de itens seriam executados pela tarefa toda vez que o destino fosse executado.
+
+O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em dois lotes baseados nos metadados de item `Culture`. Cada um desses lotes é passada para a tarefa `AL`, que cria um assembly de saída para cada lote. Usando o envio em lote no atributo `Outputs` do elemento `Target`, o MSBuild pode determinar se cada um dos lotes individuais está atualizado antes de executar o destino. Sem o uso do envio em lote de destino, ambos os lotes de itens seriam executados pela tarefa toda vez que o destino fosse executado.
 
 ```xml
 <Project
@@ -65,7 +67,8 @@ O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em do
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)
 - [Envio em lote](../msbuild/msbuild-batching.md)
 - [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)

@@ -22,36 +22,40 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590469"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634247"
 ---
 # <a name="downloadfile-task"></a>Tarefa DownloadFile
+
 Baixa os arquivos especificados usando o protocolo HTTP.
 
 >[!NOTE]
 >A tarefa DownloadFile está disponível somente no MSBuild 15.8 e superior.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
 A tabela a seguir descreve os parâmetros da tarefa `DownloadFile`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`DestinationFileName`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> O nome a ser usado para o arquivo baixado.  Por padrão, o nome de arquivo é derivado da `SourceUrl` ou do servidor remoto.|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica a pasta de destino na qual baixar o arquivo.  Se a pasta será criada, caso ela não exista.|
 |`DownloadedFile`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o arquivo baixado.|
 |`Retries`|Parâmetro `Int32` opcional.<br /><br /> Especifica o número de tentativas de download, se todas as tentativas anteriores falharam. Usa zero como padrão.|
 |`RetryDelayMilliseconds`|Parâmetro `Int32` opcional.<br /><br /> Especifica o atraso em milissegundos entre as repetições necessárias. Usa 5.000 como padrão.|
-|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará o download de arquivos inalterados. Assume o padrão de `true`. A tarefa `DownloadFile` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação, de acordo com o servidor remoto. <br /><br />**Observação:** nem todos os servidores HTTP indicam que a data da última modificação dos arquivos fará com que o arquivo seja baixado novamente.|
+|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará o download de arquivos inalterados. Usa `true` como padrão. A tarefa `DownloadFile` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação, de acordo com o servidor remoto. <br /><br />**Observação:** nem todos os servidores HTTP indicam que a data da última modificação dos arquivos fará com que o arquivo seja baixado novamente.|
 |`SourceUrl`|Parâmetro `String` obrigatório.<br /><br /> Especifica a URL a ser baixada.|
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir baixa um arquivo e inclui-o nos itens `Content` antes de compilar o projeto.
 
 ```xml
@@ -72,6 +76,7 @@ O exemplo a seguir baixa um arquivo e inclui-o nos itens `Content` antes de comp
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

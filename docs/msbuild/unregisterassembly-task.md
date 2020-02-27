@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22be291184ebf02ae0455f5b4656b1dec976dc89
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578295"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631491"
 ---
 # <a name="unregisterassembly-task"></a>Tarefa UnregisterAssembly
+
 Cancela o registro os assemblies especificados para fins de interoperabilidade COM. Executa o inverso da [tarefa RegisterAssembly](../msbuild/registerassembly-task.md).
 
 ## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `UnregisterAssembly`.
 
 |Parâmetro|DESCRIÇÃO|
@@ -38,11 +40,13 @@ Cancela o registro os assemblies especificados para fins de interoperabilidade C
 |`TypeLibFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Cancela o registro da biblioteca de tipos especificada do assembly especificado. **Observação:** esse parâmetro só é necessário se o nome de arquivo de biblioteca de tipos é diferente do nome do assembly.|
 
 ## <a name="remarks"></a>Comentários
+
  Não é necessário que o assembly exista para que esta tarefa seja bem-sucedida. Se você tentar cancelar o registro de um assembly que não existe, a tarefa terá êxito com um aviso. Isso ocorre porque é o trabalho dessa tarefa remover o registro do assembly do Registro. Se o assembly não existir, ele não estará no Registro e, portanto, a tarefa terá sido bem-sucedida.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>, que herda da classe <xref:System.MarshalByRefObject>. A classe `MarshalByRefObject` fornece a mesma funcionalidade que a classe <xref:Microsoft.Build.Utilities.Task>, mas ela pode ser instanciada em seu próprio domínio do aplicativo.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir usa a tarefa `UnregisterAssembly` para cancelar o registro do assembly no caminho especificado pelas propriedades `OutputPath` e `FileName`, se ele existir.
 
 ```xml
@@ -61,6 +65,7 @@ Cancela o registro os assemblies especificados para fins de interoperabilidade C
 ```
 
 ## <a name="see-also"></a>Confira também
+
 - [Tarefa RegisterAssembly](../msbuild/registerassembly-task.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

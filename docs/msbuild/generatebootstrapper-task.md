@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589286"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634078"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
+
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
+
 Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
 
 - `ApplicationFile`
@@ -76,7 +78,7 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
   </BootstrapperItem>
   ```
 
-   O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] necessários, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.
+   O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são necessários aos parâmetros de entrada do MSBuild, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.
 
    Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.
 
@@ -149,9 +151,11 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
    Se for `true`, o bootstrapper executará a validação do XSD nos itens de entrada do bootstrapper especificados. O valor padrão desse parâmetro é `false`.
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>{1&gt;Exemplo&lt;1}
+## <a name="example"></a>Exemplo
+
 O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que precisa ter o .NET Framework 2.0 instalado como pré-requisito.
 
 ```xml
@@ -175,6 +179,7 @@ O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicati
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

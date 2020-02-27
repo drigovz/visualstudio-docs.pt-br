@@ -18,26 +18,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592172"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633480"
 ---
 # <a name="message-task"></a>tarefa de mensagem
-Registra uma mensagem durante a compilação.
 
-## <a name="parameters"></a>Parâmetros
+Registra uma mensagem em log durante um build.
+
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `Message`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
-|`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor igual a `high`, `normal` ou `low`. O valor padrão é `normal`.|
+|`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor de `high`, `normal` ou `low`. O valor padrão é `normal`.|
 |`Text`|Parâmetro `String` opcional.<br /><br /> O texto de erro do log.|
 
 ## <a name="remarks"></a>Comentários
- A tarefa `Message` permite o envio de mensagens de problema para os agentes de log em diferentes etapas no processo de compilação de projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+ A tarefa `Message` permite que os projetos do MSBuild emitam mensagens para os agentes em diferentes etapas no processo de compilação.
 
  Se o parâmetro `Condition` avaliar para o `true`, o valor do parâmetro `Text` será registrado e a compilação dará continuidade à execução. Se um parâmetro `Condition` não existir, o texto da mensagem será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -46,6 +49,7 @@ Registra uma mensagem durante a compilação.
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir registra mensagens para todos os agentes de log registrados.
 
 ```xml
@@ -58,6 +62,7 @@ Registra uma mensagem durante a compilação.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)

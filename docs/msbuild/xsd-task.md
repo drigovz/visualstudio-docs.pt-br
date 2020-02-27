@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565780"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630776"
 ---
 # <a name="xsd-task"></a>tarefa XSD
+
 Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera arquivos de classe ou de esquema com base em uma origem.
 
 > [!NOTE]
 > A partir do Visual Studio 2017, o suporte a projetos em C++ para *xsd.exe* foi preterido. Você ainda pode usar as APIs **Microsoft.VisualC.CppCodeProvider** manualmente adicionando *CppCodeProvider.dll* ao cache de assembly global.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa **XSD**.
 
 - **AdditionalOptions**
@@ -54,7 +56,7 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
   - **dataset** -  **/dataset**
 
-- **Linguagem**
+- **Idioma**
 
      Parâmetro **String** opcional.
 
@@ -68,7 +70,7 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
      Especifica o namespace de runtime para os tipos gerados.
 
-- **Sources**
+- **Fontes**
 
      Parâmetro `ITaskItem[]` obrigatório.
 
@@ -86,5 +88,6 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
      Especifica o diretório do log de rastreamento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

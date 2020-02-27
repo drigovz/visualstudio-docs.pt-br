@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826582"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633727"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
+
   
 Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
@@ -42,27 +43,29 @@ Contém uma coleção de elementos `Import` que são agrupados em uma condição
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|
+|Atributo|DESCRIÇÃO|
 |---------------|-----------------|
 |`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Child elements
+### <a name="child-elements"></a>Elementos filho
 
-|Elemento|Descrição|
+|Elemento|DESCRIÇÃO|
 |-------------|-----------------|
-|[Import](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|
+|[Importaçãoação](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir mostra o elemento `ImportGroup`.
 
 ```xml
@@ -75,7 +78,7 @@ Contém uma coleção de elementos `Import` que são agrupados em uma condição
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

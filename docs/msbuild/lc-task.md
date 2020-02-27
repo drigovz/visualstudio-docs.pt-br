@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86525b2c4ddcf36ca85feee31f89f0003f1f9775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590820"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633597"
 ---
 # <a name="lc-task"></a>tarefa LC
+
 Encapsula *LC.exe*, que gera um arquivo *.license* com base em um arquivo *.licx*. Para obter mais informações sobre *LC.exe*, confira [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
 A tabela a seguir descreve os parâmetros da tarefa `LC`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`LicenseTarget`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o executável para o qual os arquivos *.licenses* são gerados.|
 |`NoLogo`|Parâmetro `Boolean` opcional.<br /><br /> Suprime a exibição do banner de inicialização da Microsoft.|
@@ -44,6 +46,7 @@ A tabela a seguir descreve os parâmetros da tarefa `LC`.
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir usa a tarefa `LC` para compilar licenças.
 
 ```xml
@@ -66,6 +69,7 @@ O exemplo a seguir usa a tarefa `LC` para compilar licenças.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

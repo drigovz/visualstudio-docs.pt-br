@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e3526f130a8717dec2dafeef794375ceffc37c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579614"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633974"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Tarefa GetReferenceAssemblyPaths
+
 Retorna os caminhos do assembly de referência de diversas estruturas.
 
 ## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `GetReferenceAssemblyPaths`.
 
 |Parâmetro|DESCRIÇÃO|
@@ -36,8 +38,10 @@ Retorna os caminhos do assembly de referência de diversas estruturas.
 |`TargetFrameworkMonikerDisplayName`|Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome de exibição do moniker da estrutura de destino.|
 
 ## <a name="remarks"></a>Comentários
+
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

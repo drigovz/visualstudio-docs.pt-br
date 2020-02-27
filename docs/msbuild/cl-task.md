@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593350"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634455"
 ---
 # <a name="cl-task"></a>tarefa CL
+
 Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador produz arquivos executáveis ( *.exe*), arquivos de biblioteca de vínculo dinâmico ( *.dll*) ou arquivos de módulo de código ( *.netmodule*). Para obter mais informações, confira [Opções do compilador](/cpp/build/reference/compiler-options).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A lista a seguir descreve os parâmetros da tarefa **CL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalIncludeDirectories**
@@ -624,7 +626,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Para obter mais informações, confira a opção **/RTCc** em [/RTC (Verificações de erro em tempo de execução)](/cpp/build/reference/rtc-run-time-error-checks).
 
-- **Sources**
+- **Fontes**
 
    Parâmetro `ITaskItem[]` obrigatório.
 
@@ -800,5 +802,6 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Para obter mais informações, consulte os parâmetros **TLogReadFiles** e **TLogWriteFiles** nesta tabela.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

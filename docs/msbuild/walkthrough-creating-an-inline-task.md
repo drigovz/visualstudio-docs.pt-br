@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271177"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631153"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
+
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para saber mais, confira [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md).
 
  Este passo a passo mostra como criar e executar essas tarefas embutidas:
@@ -40,13 +41,12 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 3. Use a **Janela de Prompt de Comando** para compilar o projeto e examinar os resultados.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Criar e modificar um projeto do MSBuild
+
  O sistema de projetos do Visual Studio é baseado no MSBuild. Portanto, você pode criar um arquivo de projeto de build usando o Visual Studio. Nesta seção, você criará um arquivo de projeto do Visual C#. (Em vez disso, você também pode criar um arquivo de projeto do Visual Basic. No contexto deste tutorial, a diferença entre os dois arquivos de projeto é secundária.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Para criar e modificar um arquivo de projeto
 
-1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
-
-2. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do **Visual C#** e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\* . Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks**.
+1. No Visual Studio, crie um novo projeto usando o C# modelo de **aplicativo Windows Forms** . Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\* . Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks**.
 
 3. Clique em **OK** para criar o arquivo de projeto.
 
@@ -57,6 +57,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
      O arquivo de projeto aparecerá no editor de códigos.
 
 ## <a name="add-a-basic-hello-task"></a>Adicionar uma tarefa básica Hello
+
  Agora, adicione o arquivo de projeto uma tarefa básica que exibe a mensagem "Olá, mundo!" Também adicione um destino de TestBuild padrão para invocar a tarefa.
 
 #### <a name="to-add-a-basic-hello-task"></a>Para adicionar uma tarefa básica Hello
@@ -88,6 +89,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    Esse código cria uma tarefa embutida chamada Hello e não tem parâmetros, referências nem diretivas de `Using`. A tarefa Olá contém apenas uma linha de código, que exibe uma mensagem de saudação do dispositivo de registro em log padrão, normalmente a janela do console.
 
 ### <a name="run-the-hello-task"></a>Executar a tarefa Hello
+
  Execute o MSBuild com a **janela Prompt de comando** para construir a tarefa Olá e processar o destino TestBuild que a invoca.
 
 ##### <a name="to-run-the-hello-task"></a>Para executar a tarefa Olá
@@ -108,6 +110,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    Ao alternar entre o editor de códigos e a **janela do Prompt de Comando**, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.
 
 ## <a name="define-the-echo-task"></a>Definir a tarefa Echo
+
  Crie uma tarefa embutida que aceita um parâmetro de cadeia de caracteres e exibe a cadeia de caracteres no dispositivo de registro em log padrão.
 
 #### <a name="to-define-the-echo-task"></a>Para definir a tarefa Echo
@@ -139,6 +142,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    Esse código define uma tarefa embutida chamada Echo e tem apenas um parâmetro de entrada Text necessário. Por padrão, os parâmetros são do tipo System.String. O valor do parâmetro Text é definido quando o destino TestBuild invoca a tarefa de Echo.
 
 ## <a name="define-the-adder-task"></a>Definir a tarefa Adder
+
  Crie uma tarefa embutida que adiciona dois parâmetros inteiros e emite sua soma como uma propriedade de MSBuild.
 
 #### <a name="to-define-the-adder-task"></a>Para definir a tarefa Adder
@@ -175,6 +179,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    Esse código define uma tarefa embutida chamada Adder e tem dois parâmetros necessários de entrada de inteiro, A e B, além de um parâmetro de saída inteiro, C. A tarefa adicionador adiciona dois parâmetros de entrada e retorna a soma no parâmetro de saída. A soma é emitida como a propriedade `Sum` do MSBuild. Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa Adder.
 
 ## <a name="define-the-regx-task"></a>Definir a tarefa RegX
+
  Crie uma tarefa embutida que aceite um grupo de itens e uma expressão regular e retorne uma lista de todos os itens que tenham conteúdo do arquivo que corresponda à expressão.
 
 #### <a name="to-define-the-regx-task"></a>Para definir a tarefa RegX
@@ -244,6 +249,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
   Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa RegX. A tarefa RegX lê todos os arquivos e retorna a lista de arquivos que correspondem à expressão regular. Essa lista é retornada como o parâmetro de saída `Result`, que é emitido como o item `MatchedFiles` do MSBuild.
 
 ### <a name="handle-reserved-characters"></a>Gerenciar caracteres reservados
+
  O analisador de MSBuild processa tarefas embutidas como XML. Caracteres que têm significado reservado em XML, por exemplo, "\<" e ">", são detectados e manipulados como se fossem XML e não código-fonte .NET. Para incluir os caracteres reservados em expressões de código como `Files.Length > 0`, escreva o elemento `Code` para que seu conteúdo fique contido em uma expressão CDATA, da seguinte maneira:
 
  ```xml
@@ -257,6 +263,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 ```
 
 ## <a name="see-also"></a>Confira também
+
 - [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Destinos](../msbuild/msbuild-targets.md)

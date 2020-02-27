@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b84753974eeecb8dca85035d50635d0bee47645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595040"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632102"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
+
 Inicie um contexto de acompanhamento.
 
 ## <a name="syntax"></a>Sintaxe
@@ -31,7 +32,8 @@ Inicie um contexto de acompanhamento.
 HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
+
 [in] `intermediateDirectory`
 
  O diretório no qual deseja armazenar o log de acompanhamento.
@@ -41,7 +43,9 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  Identifica o contexto de acompanhamento. Esse nome é usado para criar o nome de arquivo de log.
 
 ## <a name="return-value"></a>Valor retornado
+
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o contexto de acompanhamento foi criado.
 
-## <a name="requirements"></a>Requisitos do
+## <a name="requirements"></a>Requisitos
+
  **Cabeçalho:** *FileTracker. h*

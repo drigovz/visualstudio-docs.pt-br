@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c0793cc6d9f11cd1074c5cd0091687b154c069
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579465"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630699"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
+
 Grava arquivos de log para o contexto atual.
 
 ## <a name="syntax"></a>Sintaxe
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>parâmetros
+
 [in] `intermediateDirectory`
 
  O diretório no qual deseja armazenar o log de acompanhamento.
@@ -41,10 +43,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  O nome raiz do nome do arquivo de log.
 
 ## <a name="return-value"></a>Valor retornado
+
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o contexto de acompanhamento foi criado.
 
 ## <a name="requirements"></a>Requisitos
+
  **Cabeçalho:** *FileTracker. h*
 
 ## <a name="see-also"></a>Confira também
+
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

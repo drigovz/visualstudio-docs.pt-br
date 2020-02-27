@@ -18,28 +18,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0827e05b2c295df2922c5f58d6a47d52e9a50e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595989"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632791"
 ---
 # <a name="removedir-task"></a>Tarefa RemoveDir
+
 Remove os diretórios especificados e todos os seus arquivos e subdiretórios.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa `RemoveDir`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`Directories`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os diretórios que serão excluídos.|
 |`RemovedDirectories`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os diretórios que foram excluídos com êxito.|
 
 ## <a name="remarks"></a>Comentários
+
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir remove os diretórios especificados pelas propriedades `OutputDirectory` e `DebugDirectory`. Esses caminhos são tratados como relativos ao diretório do projeto.
 
 ```xml
@@ -58,6 +62,7 @@ Remove os diretórios especificados e todos os seus arquivos e subdiretórios.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

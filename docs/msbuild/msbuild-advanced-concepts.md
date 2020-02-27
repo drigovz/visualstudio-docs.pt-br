@@ -10,19 +10,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592120"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633441"
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceitos avançados do MSBuild
+
 Os documentos desta seção descrevem como usar técnicas avançadas para aprimorar builds executados usando o MSBuild.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Cargo|Descrição|
+|Title|DESCRIÇÃO|
 |-----------|-----------------|
 |[Envio em lote](../msbuild/msbuild-batching.md)|Descreve como enviar em lote destinos de build e tarefas baseadas em metadados de item.|
 |[Transformações](../msbuild/msbuild-transforms.md)|Explica como usar transformações para habilitar a análise de dependência.|
@@ -31,6 +32,7 @@ Os documentos desta seção descrevem como usar técnicas avançadas para aprimo
 |[Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)|Descreve como compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework.|
 |[Práticas recomendadas](../msbuild/msbuild-best-practices.md)|Recomenda as melhores práticas para escrever scripts MSBuild.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Registrando em log no MSBuild](../msbuild/logging-in-msbuild.md)

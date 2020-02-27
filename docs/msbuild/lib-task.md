@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578534"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633584"
 ---
 # <a name="lib-task"></a>tarefa LIB
+
 Encapsula a ferramenta Gerenciador de Biblioteca de 32 bits da Microsoft, *lib.exe*. O Gerenciador de Biblioteca cria e gerencia uma biblioteca de arquivos-objetos de formato COFF. O Gerenciador de Biblioteca também pode criar arquivos de exportação e importar bibliotecas para referenciar definições exportadas. Para obter mais informações, confira [Referência de LIB](/cpp/build/reference/lib-reference) e [Executando LIB](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>parâmetros
+
  A tabela a seguir descreve os parâmetros da tarefa **LIB**. A maioria dos parâmetros de tarefa corresponde a uma opção de linha de comando.
 
 |Parâmetro|DESCRIÇÃO|
@@ -66,4 +68,5 @@ Encapsula a ferramenta Gerenciador de Biblioteca de 32 bits da Microsoft, *lib.e
 |**Detalhado**|Parâmetro **Boolean** opcional.<br /><br /> Se ele for `true`, exibirá detalhes sobre o progresso da sessão; isso inclui os nomes dos arquivos *.obj* que estão sendo adicionados. A informação é enviada para uma saída padrão e pode ser redirecionada para um arquivo.<br /><br /> Para obter mais informações, consulte a opção **/VERBOSE** em [Executando LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

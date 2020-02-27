@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593844"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633181"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 
@@ -105,6 +105,7 @@ Reference: 4.0
  Se todos os itens de saída estiverem atualizados, o MSBuild ignora o destino, o que melhora significativamente a velocidade de build. Isso é chamado de build incremental do destino. Se apenas alguns arquivos forem atualizados, o MSBuild executa o destino sem os itens atualizados. Isso é chamado de build incremental parcial do destino. Para obter mais informações, confira [Builds incrementais](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinos de compilação padrão
+
 O seguinte lista os destinos públicos em Microsoft. Common. CurrentVersion. targets.
 
 ```
@@ -1011,7 +1012,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
     DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

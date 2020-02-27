@@ -15,23 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593870"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633155"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 
-Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é instalado, há tarefas adicionais disponíveis, que são usadas para compilar projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obter mais informações, consulte [ C++ tarefas](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas no MSBuild. Quando a C++ carga de trabalho é instalada, são disponibilizadas tarefas adicionais que são C++ usadas para compilar projetos. Para obter mais informações, consulte [ C++ tarefas](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também tem os parâmetros a seguir:
 
-| Parâmetro | Descrição |
+| Parâmetro | DESCRIÇÃO |
 |-------------------| - |
-| `Condition` | Parâmetro `String` opcional.<br /><br /> A expressão `Boolean` que o mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa para determinar se essa tarefa será executada. Para obter informações sobre as condições que são suportadas pelo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], confira [Condições](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para saber mais, confira [Como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `Condition` | Parâmetro `String` opcional.<br /><br /> Uma `Boolean` expressão que o mecanismo MSBuild usa para determinar se essa tarefa será executada. Para obter informações sobre as condições com suporte pelo MSBuild, consulte [condições](../msbuild/msbuild-conditions.md). |
+| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **verdadeiro**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para saber mais, confira [Como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -85,7 +85,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Cria um nome de manifesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] com base em um nome de arquivo *.resx* fornecido ou em outro recurso.
+ Cria um C#nome de manifesto de estilo a partir de um determinado nome de arquivo *. resx* ou outro recurso.
 
 - [Tarefa CreateItem](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Cria um nome de manifesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] com base em um nome de arquivo *.resx* fornecido ou em outro recurso.
+ Cria um nome de manifesto estilo Visual Basic a partir de um determinado nome de arquivo *. resx* ou outro recurso.
 
 - [Tarefa Csc](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
 
- Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Gera um manifesto de aplicativo ClickOnce ou um manifesto nativo.
 
 - [Tarefa GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 
- Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Gera um manifesto de implantação do ClickOnce.
 
 - [Tarefa GenerateResource](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 
- Recupera o caminho para o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+ Recupera o caminho para o SDK (Software Development Kit) do Windows.
 
 - [Tarefa GetReferenceAssemblyPaths](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -189,7 +189,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa Message](../msbuild/message-task.md)
 
- Registra uma mensagem durante a compilação.
+ Registra uma mensagem em log durante um build.
 
 - [Tarefa Move](../msbuild/move-task.md)
 
@@ -197,7 +197,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa MSBuild](../msbuild/msbuild-task.md)
 
- Compila projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de outro projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Cria projetos do MSBuild de outro projeto do MSBuild.
 
 - [Tarefa ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)
 
@@ -221,7 +221,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - Tarefa ResGen
 
- {1&gt;{2&gt;Obsoleta. &lt;2}&lt;1} Use a [Tarefa GenerateResource](../msbuild/generateresource-task.md) para converter arquivos *.txt* e *.resx* em arquivos *.resources* binários do Common Language Runtime.
+ Obsoleto. Use a [Tarefa GenerateResource](../msbuild/generateresource-task.md) para converter arquivos *.txt* e *.resx* em arquivos *.resources* binários do Common Language Runtime.
 
 - [Tarefa ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)
 
@@ -307,7 +307,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
  Cria um arquivo *.zip* do conteúdo de um diretório.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Produção de tarefas](../msbuild/task-writing.md)

@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a80fcde7aeab601791c033bd21effce175b2cb9
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: ee30bf031761fa7920dadad04d8f17a1bcc0b3a2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579566"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631985"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
+
 Interrompe o acompanhamento e libera a memória usada pela sessão de acompanhamento.
 
 ## <a name="syntax"></a>Sintaxe
@@ -32,10 +33,13 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ```
 
 ## <a name="return-value"></a>Valor retornado
+
  Retorna um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido interrompido.
 
 ## <a name="requirements"></a>Requisitos
+
  **Cabeçalho:** *FileTracker. h*
 
 ## <a name="see-also"></a>Confira também
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

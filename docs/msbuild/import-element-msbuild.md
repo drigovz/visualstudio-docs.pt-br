@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573987"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633740"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
+
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 
 \<Project> \<Import>
@@ -38,40 +39,44 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descrição|
+|Atributo|DESCRIÇÃO|
 |---------------|-----------------|
 |`Project`|Atributo obrigatório.<br /><br /> O caminho do arquivo de projeto para importar. O caminho pode incluir caracteres curinga. Os arquivos correspondentes são importados na ordem de classificação. Usando esse recurso, você pode adicionar o código a um projeto simplesmente adicionando o arquivo de código para um diretório.|
 |`Condition`|Atributo opcional.<br /><br /> Uma condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 |`Sdk`| Atributo opcional.<br /><br /> Faz referência a um projeto do SDK.|
 
-### <a name="child-elements"></a>Child elements
- {1&gt;Nenhum&lt;1}
+### <a name="child-elements"></a>Elementos filho
+
+ Nenhum
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contém uma coleção de elementos `Import` agrupados em uma condição opcional. |
 
 ## <a name="remarks"></a>Comentários
+
  Ao usar o elemento `Import`, você pode reutilizar o código que é comum a vários arquivos de projeto. Isso facilita a manutenção do código porque as atualizações feitas no código compartilhado são propagadas a todos os projetos o importam.
 
- Por convenção, os arquivos de projeto importados compartilhados são salvos como arquivos *.targets*, mas são arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] padrão. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] não impede a importação de um projeto que tem uma extensão de nome de arquivo diferente, mas recomendamos que você use a extensão *.targets* para manter a consistência.
+ Por convenção, os arquivos de projeto importados compartilhados são salvos como arquivos *. targets* , mas são arquivos de projeto padrão do MSBuild. O MSBuild não impede a importação de um projeto que tenha uma extensão de nome de arquivo diferente, mas recomendamos que você use a extensão *. targets* para fins de consistência.
 
  Caminhos relativos em projetos importados são interpretados em relação ao diretório do projeto de importação. Portanto, se um arquivo de projeto for importado em vários arquivos de projeto em locais diferentes, os caminhos relativos no arquivo de projeto importado serão interpretados de maneira diferente para cada projeto importado.
 
- Todas as propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reservadas relacionadas ao arquivo de projeto, por exemplo, `MSBuildProjectDirectory` e `MSBuildProjectFile`, que sejam referenciadas em um projeto importado são valores atribuídos com base no arquivo de projeto de importação.
+ Todas as propriedades reservadas do MSBuild relacionadas ao arquivo de projeto, por exemplo, `MSBuildProjectDirectory` e `MSBuildProjectFile`, que são referenciadas em um projeto importado são valores atribuídos com base no arquivo de projeto de importação.
 
- Se o projeto importado não tiver um atributo `DefaultTargets`, os projetos importados serão inspecionados na ordem em que forem importados e o valor do primeiro atributo `DefaultTargets` descoberto será usado. Por exemplo, se ProjectA importa ProjectB e ProjectC (nessa ordem) e ProjectB importa ProjectD, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] procura primeiro pelo `DefaultTargets` especificado em ProjectA, em seguida, ProjectB, depois, ProjectD e, finalmente, ProjectC.
+ Se o projeto importado não tiver um atributo `DefaultTargets`, os projetos importados serão inspecionados na ordem em que forem importados e o valor do primeiro atributo `DefaultTargets` descoberto será usado. Por exemplo, se projecta importa ProjectB e ProjectC (nessa ordem) e as importações de ProjectB projetadas, o MSBuild primeiro procura `DefaultTargets` especificado no projecta, em seguida, ProjectB, Projetod e, por fim, ProjectC.
 
- O esquema de um projeto importado é idêntico ao de um projeto padrão. Embora [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] possa criar um projeto importado, isso é improvável porque um projeto importado normalmente não contém informações sobre quais propriedades configurar ou a ordem na qual executar os destinos. O projeto importado depende do projeto para o qual ele é importado para fornecer essas informações.
+ O esquema de um projeto importado é idêntico ao de um projeto padrão. Embora o MSBuild possa ser capaz de criar um projeto importado, é improvável que um projeto importado normalmente não contenha informações sobre quais propriedades definir ou a ordem na qual executar destinos. O projeto importado depende do projeto para o qual ele é importado para fornecer essas informações.
 
 ## <a name="wildcards"></a>Curingas
+
  No .NET Framework 4, o MSBuild permite caracteres curinga no atributo Projeto. Quando houver caracteres curinga, todas as correspondências encontradas são classificadas (para capacidade de reprodução) e, em seguida, elas são importadas na ordem como se a ordem tivesse sido definida explicitamente.
 
  Isso é útil se você quiser oferecer um ponto de extensibilidade para que outra pessoa possa importar um arquivo sem exigir que você adicione explicitamente o nome do arquivo ao arquivo de importação. Para essa finalidade, o *Microsoft.Common.Targets* contém a linha a seguir na parte superior do arquivo.
@@ -81,6 +86,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 ```
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir mostra um projeto que tem vários itens e propriedades e importa um arquivo de projeto geral.
 
 ```xml
@@ -106,6 +112,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

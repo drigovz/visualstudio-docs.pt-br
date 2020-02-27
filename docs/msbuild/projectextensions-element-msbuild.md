@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1057743732c8dfc7ebb05bc9cbc108d61b2e234c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597406"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632960"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
-Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contenham informações não [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tudo dentro de um elemento `ProjectExtensions` será ignorado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Permite que os arquivos de projeto do MSBuild contenham informações não MSBuild. Qualquer coisa dentro de um elemento `ProjectExtensions` será ignorada pelo MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -39,24 +40,29 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/interna
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
- {1&gt;Nenhum&lt;1}
+### <a name="attributes"></a>Atributos
 
-### <a name="child-elements"></a>Child elements
- {1&gt;Nenhum&lt;1}
+ Nenhum
+
+### <a name="child-elements"></a>Elementos filho
+
+ Nenhum
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | Descrição |
+| Elemento | DESCRIÇÃO |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
- Apenas um elemento `ProjectExtensions` pode ser usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+ Somente um elemento `ProjectExtensions` pode ser usado em um projeto do MSBuild.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir mostra informações do ambiente de desenvolvimento integrado que estão sendo armazenado em um elemento `ProjectExtensions`.
 
 ```xml
@@ -71,6 +77,7 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/interna
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

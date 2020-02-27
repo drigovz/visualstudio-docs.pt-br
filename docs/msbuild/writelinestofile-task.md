@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7f36d0876b1f757dee1a752c8461745783a21e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595326"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630659"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
+
 Grava os caminhos dos itens especificados no arquivo de texto especificado.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
+
  A tabela a seguir descreve os parâmetros da tarefa `WriteLinestoFile`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`File`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o arquivo no qual os itens serão gravados.|
 |`Lines`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os itens a serem gravados no arquivo.|
@@ -40,11 +42,13 @@ Grava os caminhos dos itens especificados no arquivo de texto especificado.
 |`WriteOnlyWhenDifferent`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o arquivo de destino especificado, se ele existir, será lido primeiro para comparar o que a tarefa teria gravado. Se idêntico, o arquivo não será gravado no disco, e o carimbo de data e hora será preservado.|
 
 ## <a name="remarks"></a>Comentários
+
  Se `Overwrite` for `true`, criará um novo arquivo, gravará os conteúdos nele e o fechará. Se o arquivo de destino já existir, ele será substituído. Se `Overwrite` for `false`, acrescentará os conteúdos ao arquivo, criando um arquivo de destino, caso ele ainda não exista.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir usa a tarefa `WriteLinesToFile` para gravar os caminhos dos itens na coleção de itens `MyItems` no arquivo especificado pela coleção de itens `MyTextFile`.
 
 ```xml
@@ -91,6 +95,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

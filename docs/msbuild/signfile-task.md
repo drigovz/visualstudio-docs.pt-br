@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579573"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632284"
 ---
 # <a name="signfile-task"></a>Tarefa SignFile
 
@@ -74,5 +74,6 @@ Assina o arquivo especificado usando o certificado especificado.
 > A impressão digital do certificado é o hash SHA-1 do certificado. Para saber mais, confira [Obter o hash SHA-1 de um certificado de autoridade de certificação raiz confiável](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Se você copiar e colar a impressão digital dos detalhes do certificado, não inclua o caractere invisível extra (3F), que pode impedir `SignFile` de encontrar o certificado.
 
 ## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

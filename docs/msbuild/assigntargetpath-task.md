@@ -13,29 +13,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593428"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634533"
 ---
 # <a name="assigntargetpath-task"></a>Tarefa AssignTargetPath
+
 Essa tarefa aceita uma lista de arquivos e adiciona atributos `<TargetPath>`, caso eles ainda não estiverem especificados.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
+
 A tabela a seguir descreve os parâmetros da tarefa `AssignTargetPath`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`RootFolder`|Parâmetro de entrada de `string` opcional.<br /><br /> Contém o caminho para a pasta que contém os links de destino.|
 |`Files`|Parâmetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de entrada de arquivos.|
 |`AssignedFiles`|Opcional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parâmetro de saída.<br /><br /> Contém a lista resultante de arquivos.|
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir executa a tarefa `AssignTargetPath` para configurar um projeto.
 
 ```xml
@@ -51,6 +55,7 @@ RootFolder="Resources"
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

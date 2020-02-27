@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
-ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
+ms.openlocfilehash: abd8ba039f9f6a19f5c028e05c03151c090e304c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76022338"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630997"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novidades no MSBuild 16.0
 
@@ -35,5 +35,6 @@ Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. 
 
 O MSBuild (e o Visual Studio) agora destina-se ao .NET Framework 4.7.2. Se você quiser usar os novos recursos de API do MSBuild, deverá atualizar também o seu assembly, mas o código existente continuará a funcionar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [MSBuild](../msbuild/msbuild.md)

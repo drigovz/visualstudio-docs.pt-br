@@ -18,28 +18,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cac0af3371a5c4ae385cc19367b360b8e8f608fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590053"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634312"
 ---
 # <a name="createproperty-task"></a>Tarefa CreateProperty
+
 Popula as propriedades com os valores passados. Isso permite que os valores sejam copiados de uma propriedade ou cadeia de caracteres para outra.
 
-## <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+## <a name="attributes"></a>Atributos
+
 A tabela a seguir descreve os parâmetros da tarefa `CreateProperty`.
 
-| Parâmetro | Descrição |
+| Parâmetro | DESCRIÇÃO |
 |------------------| - |
 | `Value` | Parâmetro de saída `String` opcional.<br /><br /> Especifica o valor a ser copiado para a nova propriedade. |
-| `ValueSetByTask` | Parâmetro de saída `String` opcional.<br /><br /> Contém o mesmo valor que o parâmetro `Value`. Use esse parâmetro somente para evitar que a propriedade de saída seja definida por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] quando ela ignora o destino delimitador porque as saídas estão atualizadas. |
+| `ValueSetByTask` | Parâmetro de saída `String` opcional.<br /><br /> Contém o mesmo valor que o parâmetro `Value`. Use esse parâmetro somente quando desejar evitar que a propriedade de saída seja definida pelo MSBuild quando ignorar o destino delimitador porque as saídas estão atualizadas. |
 
 ## <a name="remarks"></a>Comentários
+
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir usa a tarefa `CreateProperty` para criar a propriedade `NewFile` usando a combinação dos valores das propriedades `SourceFilename` e `SourceFileExtension`.
 
 ```xml
@@ -66,6 +70,7 @@ O exemplo a seguir usa a tarefa `CreateProperty` para criar a propriedade `NewFi
 
 Depois de executar o projeto, o valor da propriedade `NewFile` será *Module1.vb*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

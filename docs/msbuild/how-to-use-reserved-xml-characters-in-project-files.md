@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574321"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633766"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Como usar caracteres XML reservados em arquivos de projeto
+
 Quando você cria arquivos de projeto, talvez seja necessário usar caracteres XML reservados, por exemplo, nos valores de propriedade ou em valores de parâmetro de tarefa. No entanto, alguns caracteres reservados devem ser substituídos por uma entidade nomeada para que o arquivo de projeto possa ser analisado.
 
 ## <a name="use-reserved-characters"></a>Usar caracteres reservados
+
  A tabela a seguir descreve os caracteres XML reservados que devem ser substituídos pela entidade nomeada correspondente para que o arquivo de projeto possa ser analisado.
 
 |Caractere reservado|Entidade nomeada|
@@ -41,6 +43,7 @@ Quando você cria arquivos de projeto, talvez seja necessário usar caracteres X
     ```
 
 ## <a name="example"></a>Exemplo
+
  No exemplo de código a seguir, as aspas duplas são usadas para realçar o nome de arquivo na mensagem gerada pelo arquivo de projeto.
 
 ```xml
@@ -70,6 +73,7 @@ Quando você cria arquivos de projeto, talvez seja necessário usar caracteres X
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574412"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633779"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Como usar variáveis de ambiente em um build
+
 Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.
 
 ## <a name="reference-environment-variables"></a>Referenciar variáveis de ambiente
- Todas as variáveis de ambiente estão disponíveis para o arquivo de projeto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) como propriedades.
+
+ Todas as variáveis de ambiente estão disponíveis para o arquivo de projeto Microsoft Build Engine (MSBuild) como propriedades.
 
 > [!NOTE]
 > Se o arquivo de projeto contiver uma definição explícita de uma propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no arquivo de projeto substituirá os valores de uma variável de ambiente.
@@ -46,6 +48,7 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
     > Os nomes de propriedade não diferenciam maiúsculas de minúsculas então `$(ToolsPath)` e `$(TOOLSPATH)` fazem referência à mesma variável de ambiente ou propriedade.
 
 ## <a name="example"></a>Exemplo
+
  O arquivo de projeto a seguir usa variáveis de ambiente para especificar o local dos diretórios.
 
 ```xml
@@ -62,7 +65,8 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
 - [Como criar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585213"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633909"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
-Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).
+
+Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. 
 
 ## <a name="create-a-directory-for-output-items"></a>Criar um diretório para itens de saída
+
  Por padrão, o arquivo *.exe* criado quando você compila um projeto é colocado no mesmo diretório dos arquivos de projeto e de origem. No entanto, normalmente, itens de saída são criados em um diretório separado.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Para criar um diretório para itens de saída
+### <a name="to-create-a-directory-for-output-items"></a>Para criar um diretório para itens de saída
 
 1. Use o elemento `Property` para definir o local e o nome do diretório. Por exemplo, crie um diretório chamado *BuiltApp* no diretório que contém os arquivos de projeto e de origem:
 
@@ -40,6 +42,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
      ```
 
 ## <a name="remove-the-output-items"></a>Remover os itens de saída
+
  Antes de criar novas instâncias dos arquivos de saída e intermediários, é possível limpar todas as instâncias anteriores dos arquivos de saída e intermediários. Use a tarefa [RemoveDir](../msbuild/removedir-task.md) para excluir um diretório e todos os arquivos e diretórios que ele contém de um disco.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para remover um diretório e todos os arquivos contidos no diretório
@@ -49,6 +52,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Exemplo
+
  O seguinte exemplo de projeto de código contém um novo destino, `Clean`, que usa a tarefa `RemoveDir` para excluir um diretório e todos os arquivos e diretórios que ele contém. Também no exemplo, o destino `Compile` cria um diretório separado para os itens de saída que são excluídos quando o build for removida.
 
  `Compile` é definido como o destino padrão e, portanto, é usado automaticamente a menos que você especifique um ou mais destinos diferentes. Use a opção de linha de comando **-target** para especificar um destino diferente. Por exemplo:
@@ -99,8 +103,8 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
-- [Tarefa Exec](../msbuild/exec-task.md)
+## <a name="see-also"></a>Confira também
+
 - [Tarefa MakeDir](../msbuild/makedir-task.md)
 - [Tarefa RemoveDir](../msbuild/removedir-task.md)
 - [Tarefa Csc](../msbuild/csc-task.md)
