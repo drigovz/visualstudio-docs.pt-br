@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265563"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77904055"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -150,7 +150,7 @@ additionalContent:
       url: ../profiling/index.yml
     - title: Estender
       summary: Adicione sua própria funcionalidade ao IDE do Visual Studio para melhorar sua experiência de desenvolvimento.
-      url: ../extensibility/index.md
+      url: ../extensibility/index.yml
     - title: Dados
       summary: Crie aplicativos de dados que se conectem a qualquer banco de dados ou serviço e em qualquer lugar – no local ou na nuvem.
       url: ../data-tools/accessing-data-in-visual-studio.md
@@ -202,7 +202,7 @@ additionalContent:
     - title: Outros conjuntos de ferramentas
       links:
       - text: Desenvolvimento de extensões do Visual Studio
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: Desenvolvimento de Linux com C++
         url: /cpp/linux/
       - text: Desenvolvimento de plataforma cruzada do .NET Core
