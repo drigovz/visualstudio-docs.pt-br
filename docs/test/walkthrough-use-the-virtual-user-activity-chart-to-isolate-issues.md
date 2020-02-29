@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091841"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169372"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Passo a passo: Usando o Gráfico de Atividade de Usuário Virtual para isolar problemas
 
@@ -24,7 +24,7 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir a solução ColorWebApp criada nos passo a passo anteriores
 
-1. {1&gt;Abra o Visual Studio.&lt;1}
+1. Abra o Visual Studio.
 
 2. Abra a solução **ColorWebApp** que contém o *LoadTest1.loadtest*. Este teste de carga é resultado da execução das etapas nas três explicações passo a passo listadas no início deste tópico na seção de pré-requisitos.
 
@@ -103,7 +103,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
      É possível usar várias configurações nos painéis **Legenda de detalhes** e **Filtrar resultados** para ajudar a isolar problemas de desempenho e erros nos testes de carga. Experimente essas configurações e a ferramenta **Zoom para o período de tempo** para ver como os dados do usuário virtual são apresentados no **Gráfico de atividade do usuário virtual**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

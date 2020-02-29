@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585880"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169359"
 ---
-# <a name="template-parameters"></a>Parâmetros do Modelo
+# <a name="template-parameters"></a>Parâmetros de modelo
 
 Você poderá substituir os valores do modelo quando for criada uma instância dele. Para configurar essa funcionalidade, use *parâmetros de modelo*. Os parâmetros de modelo podem ser usados para substituir valores, como nomes de classes e namespaces, no modelo. O assistente de modelo que é executado em segundo plano quando um usuário adiciona um novo item ou projeto substitui esses parâmetros.
 
@@ -47,7 +47,7 @@ Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados por qualquer modelo:
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |clrversion|Versão atual do CLR (Common Language Runtime).|
 |ext_*|Adicione o prefixo `ext_` a qualquer parâmetro para se referir às variáveis do modelo pai. Por exemplo, `ext_safeprojectname`.|
@@ -58,14 +58,14 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
 |safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
-|safeitemrootname|Mesmo que `safeitemname`.|
+|safeitemrootname|Igual a `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
-|hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
-|specifiedSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedSolutionName` estará em branco.|
+|time|A hora atual no formato DD/MM/AAAA 00:00:00.|
+|specifiedsolutionname|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedsolutionname` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedsolutionname` estará em branco.|
 |userdomain|O domínio do usuário atual.|
-|username|O nome de usuário atual.|
+|Nome de Usuário|O nome de usuário atual.|
 |webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
-|ano|O ano atual no formato AAAA.|
+|year|O ano atual no formato AAAA.|
 
 > [!NOTE]
 > Parâmetros de modelo diferenciam maiúsculas de minúsculas.
@@ -117,7 +117,7 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)

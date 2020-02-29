@@ -9,24 +9,24 @@ helpviewer_keywords:
 - managed code analysis warnings, portability warnings
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61efbc2022b2c0cd60e005936e148bbaf1d900a4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f48cef7ffaf08fc26566fdd04bee15a3e3e1b85f
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091724"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167567"
 ---
 # <a name="portability-warnings"></a>Avisos de portabilidade
 Os avisos de portabilidade dão suporte à portabilidade em diferentes sistemas operacionais.
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Regra|Descrição|
+|Regra|DESCRIÇÃO|
 |----------|-----------------|
 |[CA1900: os campos de tipo de valor devem ser móveis](../code-quality/ca1900.md)|Essa regra verifica se as estruturas declaradas usando um atributo de layout explícito serão alinhadas corretamente quando marshaled para código não gerenciado em sistemas operacionais de 64 bits.|
 |[CA1901: as declarações P/Invoke devem ser portáteis](../code-quality/ca1901.md)|Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke e verifica se seu tamanho está correto quando realizado marshaling em código não gerenciado em sistemas operacionais de 32 bits e 64 bits.|
