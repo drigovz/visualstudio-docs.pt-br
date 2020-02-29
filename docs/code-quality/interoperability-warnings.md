@@ -9,17 +9,17 @@ helpviewer_keywords:
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: e18b8ccbdc688586004a363f16360ace1bb488c9
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091750"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167592"
 ---
 # <a name="interoperability-warnings"></a>Avisos de interoperabilidade
 
@@ -27,7 +27,7 @@ Os avisos de interoperabilidade dão suporte à interação com clientes COM.
 
 ## <a name="in-this-section"></a>Nesta seção
 
-| Regra | Descrição |
+| Regra | DESCRIÇÃO |
 | - | - |
 | [CA1400: os pontos de entrada de P-Invoke devem existir](../code-quality/ca1400.md) | Um método público ou protegido é marcado usando-se o atributo System.Runtime.InteropServices.DllImportAttribute. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. |
 | [CA1401: os P/Invokes não devem estar visíveis](../code-quality/ca1401.md) | Um método público ou protegido em um tipo público tem o atributo System. Runtime. InteropServices. DllImportAttribute (também implementado pela palavra-chave declare no Visual Basic). Esses métodos não devem ser expostos. |

@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587440"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167618"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos de análise de código
 
@@ -78,7 +78,7 @@ As propriedades do atributo incluem:
 
 - **Escopo** -o destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele será definido como o destino do atributo. Os [escopos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) com suporte incluem o seguinte:
 
-  - `module`-esse escopo suprime avisos em um assembly. É uma supressão global que se aplica a todo o projeto.
+  - [`module`](#module-suppression-scope) -esse escopo suprime avisos em um assembly. É uma supressão global que se aplica a todo o projeto.
 
   - `resource`-(somente[FxCop herdado](../code-quality/static-code-analysis-for-managed-code-overview.md) ) esse escopo suprime avisos em informações de diagnóstico gravadas em arquivos de recursos que fazem parte do módulo (assembly). Esse escopo não é lido/respeitado C#nos compiladores do/vb para diagnóstico do Roslyn Analyzer, que analisa apenas os arquivos de origem.
 
@@ -174,11 +174,19 @@ As supressões de nível global são a única maneira de suprimir mensagens que 
 > [!NOTE]
 > `Target` sempre contém o nome do item totalmente qualificado.
 
-## <a name="global-suppression-file"></a>Arquivo de supressão global
+### <a name="global-suppression-file"></a>Arquivo de supressão global
 
 O arquivo de supressão global mantém supressões que são supressões de nível global ou supressões que não especificam um destino. Por exemplo, as supressões para violações no nível do assembly são armazenadas nesse arquivo. Além disso, algumas supressões ASP.NET são armazenadas nesse arquivo porque as configurações no nível do projeto não estão disponíveis para o código por trás de um formulário. Um arquivo de supressão global é criado e adicionado ao projeto na primeira vez que você seleciona a opção **no arquivo de supressão do projeto** do comando **suprimir** na janela **lista de erros** .
 
-## <a name="see-also"></a>Veja também
+### <a name="module-suppression-scope"></a>Escopo de supressão de módulo
+
+Você pode suprimir violações de qualidade de código para todo o assembly usando o escopo do **módulo** .
+
+Por exemplo, o seguinte atributo em seu arquivo de projeto _GlobalSuppressions_ irá suprimir a violação de ConfigureAwait para um projeto de ASP.NET Core:
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

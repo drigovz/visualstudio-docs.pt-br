@@ -1,5 +1,5 @@
 ---
-title: 'Como: Compilar várias configurações simultaneamente'
+title: Como criar várias configurações simultaneamente
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416765"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904081"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Como: Compilar várias configurações simultaneamente
+# <a name="how-to-build-multiple-configurations-simultaneously"></a>Como criar várias configurações simultaneamente
 
 É possível compilar a maioria dos tipos de projetos com várias, ou até mesmo todas, as configurações de build ao mesmo tempo usando a caixa de diálogo **Build em Lotes**. No entanto, não é possível compilar os seguintes tipos de projetos em várias configurações de build ao mesmo tempo:
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416765"
 
 2. Todos os projetos do Visual Basic.
 
+Se uma solução contiver qualquer projeto desses dois tipos de projeto, a **compilação em lote** não estará disponível para essa solução. Nesse caso, o comando não aparece no menu **Compilar** .
+
    Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Para compilar um projeto em várias configurações de build
 
-1. Na barra de menus, escolha **Criar** > **Criação em Lotes**.
+1. Na barra de menus, escolha **Criar** > **Criação em Lotes**. Ou pressione **Ctrl**+**Q** para abrir a caixa de pesquisa e procure `Batch Build`.
 
 2. Na coluna **Build**, marque as caixas de seleção para as configurações com as quais você deseja compilar um projeto.
 
@@ -37,8 +39,8 @@ ms.locfileid: "68416765"
 
 3. Escolha os botões **Build** ou **Recompilar** para compilar o projeto com as configurações especificadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
+- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
 - [Criar vários projetos paralelamente](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

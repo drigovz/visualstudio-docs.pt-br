@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027612"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904159"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
@@ -44,7 +44,7 @@ Você precisará de configurações de compilação quando precisar compilar seu
 
 A configuração e o controle de plataforma onde os arquivos de saída criados são armazenados. Normalmente, quando o Visual Studio cria seu projeto, a saída é colocada em uma subpasta do projeto chamada com a configuração ativa (por exemplo, *bin/Debug/x86*), mas você pode alterá-la.
 
-Você pode criar suas próprias configurações de compilação no nível da solução e do projeto. A configuração da solução determina quais projetos são incluídos na compilação quando essa configuração está ativa. Somente os projetos especificados na configuração da solução ativa serão criados. A configuração do projeto determina quais configurações de compilação e opções de compilador são usadas quando você cria o projeto.
+Você pode criar suas próprias configurações de compilação no nível da solução e do projeto. A configuração da solução determina quais projetos são incluídos na compilação quando essa configuração está ativa. Somente os projetos especificados na configuração da solução ativa serão criados. Se várias plataformas de destino forem selecionadas no Configuration Manager, todos os projetos que se aplicam a essa plataforma serão criados. A configuração do projeto determina quais configurações de compilação e opções de compilador são usadas quando você cria o projeto.
 
 Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
 
@@ -70,6 +70,12 @@ A configuração da solução ativa também fornece contexto ao IDE. Por exemplo
 A configuração e a plataforma para as quais um projeto se destina são usadas em conjunto para especificar as configurações de compilação e as opções de compilador a serem usadas quando ele é compilado. Um projeto pode ter configurações diferentes para cada combinação de configuração e plataforma. Para modificar as propriedades de um projeto, abra o menu de atalho do projeto no **Gerenciador de soluções**e, em seguida, escolha **Propriedades**.  Na parte superior da guia **Build** do designer de projeto, escolha uma configuração ativa para editar suas configurações de compilação.
 
 ![Configurações do designer de projeto](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>Criando várias configurações
+
+Quando você cria uma solução usando o comando **build** > **Compilar solução** , o Visual Studio cria apenas a configuração ativa. Todos os projetos especificados na configuração da solução são criados e a única configuração de projeto criada é aquela especificada na configuração da solução ativa e na plataforma de solução ativa, que é mostrada na barra de ferramentas no Visual Studio. Por exemplo, **debug** e **x86**. Outras configurações e plataformas definidas não são criadas.
+
+Se você quiser criar várias configurações e plataformas em uma ação, poderá usar a opção **build** > **lote Build** no Visual Studio. Para acessar esse recurso, pressione **Ctrl**+**Q** para abrir a caixa de pesquisa e digite `Batch build`. A compilação em lotes não está disponível para todos os tipos de projeto. Consulte [como: Compilar várias configurações simultaneamente](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Como o Visual Studio atribui configurações de projeto
 

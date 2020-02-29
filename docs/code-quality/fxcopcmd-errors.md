@@ -6,16 +6,16 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
-author: jillre
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091763"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167605"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erros da ferramenta FxCopCmd
 
@@ -23,7 +23,7 @@ FxCopCmd não considera que todos os erros sejam fatais. Se FxCopCmd tiver infor
 
 A tabela a seguir descreve os códigos de erro retornados por FxCopCmd:
 
-|Error|Valor numérico|
+|Erro|Valor numérico|
 |-----------|-------------------|
 |Nenhum erro|0x0|
 |Erro de análise|0x1|
@@ -52,6 +52,6 @@ O **erro de análise** é retornado para erros fatais. Isso indica que a anális
 > [!NOTE]
 > O assembly de código de retorno FxCopCmd **referencia o erro** 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que há referências indiretas ausentes, mas que FxCopCmd foi capaz de tratá-las. O aviso significa que há uma possibilidade de que alguns resultados da análise possam ter sido comprometidos. Tratar **erro de referências de assembly** como um erro quando ele é combinado com qualquer outro código de retorno.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)
