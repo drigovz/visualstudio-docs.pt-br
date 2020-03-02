@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580020"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215431"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo C# de console simples no Visual Studio
 
@@ -329,15 +329,15 @@ A classe `Calculator` fará a maior parte do trabalho de cálculo e a classe `Pr
 
 Vamos começar.
 
-1. Exclua tudo *após* o seguinte bloco de código:
+1. Exclua tudo no namespace `Calculator` entre suas chaves de abertura e fechamento:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Depois, adicione uma nova classe `Calculator`, da seguinte maneira:
@@ -598,14 +598,14 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutoriais a seguir.
 
 > [!div class="nextstepaction"]
 > [Continuar com mais tutoriais do C#](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)
