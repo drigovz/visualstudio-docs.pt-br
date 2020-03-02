@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Depuração remota do ASP.NET em um computador com IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Depuração remota do ASP.NET no Azure
+        - name: Depuração remota do ASP.NET Core no Azure
           href: remote-debugging-azure.md
         - name: 'Depuração remota de um projeto C# ou Visual Basic'
           href: remote-debugging-csharp.md
         - name: Depuração remota de um projeto C++
           href: remote-debugging-cpp.md
+        - name: Depuração remota do ASP.NET Core no Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Atribuições de porta do depurador remoto
           href: remote-debugger-port-assignments.md
         - name: Configurar o Firewall do Windows para depuração remota
