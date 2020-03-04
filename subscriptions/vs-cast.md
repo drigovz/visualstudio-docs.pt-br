@@ -3,30 +3,31 @@ title: O benefício CAST Highlight para as assinaturas do Visual Studio | Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983746"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257170"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
-Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o CAST Highlight, assinantes do Visual Studio Enterprise podem rapidamente digitalizar seu código-fonte para identificar o nível de preparação de seus aplicativos para a nuvem em uma migração para o Azure, além de poderem monitorar o progresso de seu aplicativo durante e após uma migração.
+Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o realce de conversão, os assinantes do Visual Studio podem examinar rapidamente o código-fonte do aplicativo para identificar a preparação da nuvem de seus aplicativos para migração para o Azure e monitorar o progresso de seus aplicativo durante e após uma migração.
 
-Assinantes do Visual Studio Enterprise podem obter uma assinatura do CAST Highlight gratuita de um mês, com todas as funcionalidades, para até cinco aplicativos por assinante.
+- Visual Studio Enterprise assinantes podem obter uma assinatura gratuita de três meses de recursos completos para converter o realce que permite aos usuários avaliar até cinco aplicativos.
+- Visual Studio Professional assinantes podem obter uma assinatura semelhante que permite a avaliação de um aplicativo por três meses.
 
 ## <a name="activation-steps"></a>Etapas de ativação
-1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício CAST Highlight na categoria "Ferramentas" e clique em **Obter código**.
 
    > [!div class="mx-imgBorder"]
    > ![Bloco do benefício CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Você verá uma mensagem informando que seu código foi recuperado com êxito.  Clique em **Ativar** para ser redirecionado à página do CAST Highlight, na qual você poderá continuar o processo de ativação.  (Se não optar por ativar agora, você poderá sempre voltar para o bloco do CAST Highlight no portal de assinatura.  O link "Obter código" será alterado para "Ativar", e clicar nele retomará o processo de ativação.)
+0. Você verá uma mensagem informando que seu código foi recuperado com êxito.  Clique em **Ativar**. (Se não optar por ativar agora, você poderá sempre voltar para o bloco do CAST Highlight no portal de assinatura.  O link "Obter código" será alterado para "Ativar", e clicar nele retomará o processo de ativação.)
 
 0. Você será redirecionado para a página do CAST Highlight, na qual poderá explorar os recursos de sua assinatura.  Quando você estiver pronto para criar sua conta, bastará fornecer suas informações de contato no formulário da Web e clicar em **Enviar**.
 
@@ -40,7 +41,7 @@ Assinantes do Visual Studio Enterprise podem obter uma assinatura do CAST Highli
 
 0. A equipe da CAST avaliará a sua solicitação e entrará em contato com você para finalizar a criação da sua conta.
 
-0. Você também receberá o email a seguir da CAST, confirmando o recebimento da solicitação.
+0. Você também receberá o email a seguir da CAST, confirmando o recebimento da solicitação.  (Este exemplo mostra o email recebido por assinantes corporativos.)
 
    > *Agradecemos a sua solicitação para ativar o acesso de 30 dias para o CAST Highlight – uma oferta exclusiva para os clientes do Microsoft Visual Studio Enterprise!*
    >
@@ -75,10 +76,10 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
 ## <a name="eligibility"></a>Elegibilidade
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por 30 dias|  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Avaliar 5 aplicativos por 30 dias|  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                             |  {1&gt;N/A&lt;1}          |
-| Visual Studio Professional com GitHub Enterprise | VL                                       | Não disponível                                                             |  {1&gt;N/A&lt;1}          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por três meses|  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Avaliar 5 aplicativos por três meses|  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Avaliar 1 aplicativo por três meses                                                             |  Não.  Disponível apenas para novos assinantes                  |
+| Visual Studio Professional com GitHub Enterprise | VL                                       | Avaliar 1 aplicativo por três meses                                                            |  Não.  Disponível apenas para novos assinantes                  |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  {1&gt;N/A&lt;1}           |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  {1&gt;N/A&lt;1}          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | {1&gt;N/A&lt;1} |
@@ -99,7 +100,13 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.
 
 E não se esqueça de conferir a demonstração, o guia do usuário e vídeos de tutorial mencionados no email de Paulo.

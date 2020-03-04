@@ -1,6 +1,6 @@
 ---
 title: Expressões no depurador | Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736211"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234997"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
@@ -59,7 +59,7 @@ new Date(2,3,1985)
 ```
 
 #### <a name="preprocessor-macros"></a>Macros de pré-processador
-Não há suporte para macros de pré-processador no depurador. Por exemplo, se uma constante `VALUE` for declarada como: `#define VALUE 3`, você não poderá usar `VALUE` na janela de **Observação** . Para evitar essa limitação, você deve substituir `#define` com enums e funções sempre que possível.
+Não há suporte para macros de pré-processador no depurador. Por exemplo, se uma constante `VALUE` for declarada como: `#define VALUE 3`, você não poderá usar `VALUE` na janela de **Observação** . Para evitar essa limitação, você deve substituir `#define`com enums e funções sempre que possível.
 
 ### <a name="using-namespace-declarations"></a>usando declarações de namespace
 Você não pode usar declarações de `using namespace`.  Para acessar um nome de tipo ou variável fora do namespace atual, você deve usar o nome totalmente qualificado.
@@ -101,10 +101,10 @@ Funções intrínsecas do depurador:
 |----------|-------------------------|
 |**Comprimento da cadeia de caracteres**|strlen, wcslen, strnlen, wcsnlen|
 |**Comparação de cadeias de caracteres**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Pesquisa de cadeias de caracteres**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
-|**Diversos**|__log2<br /><br /> Retorna a base 2 de log de um inteiro especificado, arredondada para o menor inteiro próximo.|
+|**Pesquisa de cadeias de caracteres**|strchr, wcschr, memchr, wmemchr, strstr, wcsstr|
+|**Win32**|GetLastError, TlsGetValue|
+|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
+|**Diversos**|__log2//retorna a base de log 2 de um inteiro especificado, arredondado para o número inteiro mais próximo.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa uma nova passagem de árvore<br /><br />TreeTraverse_Next//retorna nós em uma árvore<br /><br />TreeTraverse_Skip//ignora nós em uma árvore de percurso pendente '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI-expressões sem suporte
 
@@ -125,7 +125,7 @@ Você pode usar variáveis em expressões de depurador que são digitadas estati
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=` e `*=`
+- Os operadores compostos `+=`, `-=`, `%=`, `/=`e `*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -149,7 +149,7 @@ Você pode usar variáveis em expressões de depurador que são digitadas estati
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=` e `*=`
+- Os operadores compostos `+=`, `-=`, `%=`, `/=`e `*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -172,7 +172,7 @@ Não há suporte para aliases de importação.
 ### <a name="variable-declarations"></a>Declarações de variável
 Você não pode declarar novas variáveis explícitas nas janelas do depurador. No entanto, você pode atribuir novas variáveis implícitas dentro da janela **imediata** . Essas variáveis implícitas têm como escopo a sessão de depuração e não podem ser acessadas fora do depurador. Por exemplo, a instrução `o = 5` Cria implicitamente uma nova variável `o` e atribui o valor 5 a ela. Essas variáveis implícitas são do tipo **Object** , a menos que o tipo possa ser inferido pelo depurador.
 
-### <a name="unsupported-keywords"></a>Palavras-chave sem suporte
+### <a name="unsupported-keywords"></a>{1&gt;Palavras-chave sem suporte&lt;1}
 
 - `AddressOf`
 

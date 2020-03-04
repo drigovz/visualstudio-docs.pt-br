@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428777"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235074"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -58,7 +58,7 @@ npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes fac
 
 O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Express permite que você use e escolha diferentes estruturas front-end para criar uma interface do usuário, como o Pug (anteriormente chamado de Jade). O Pug é usado neste tutorial.
 
-## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -75,7 +75,9 @@ O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servid
 
 * Você precisa ter o runtime do Node.js instalado.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um runtime instalado, você poderá configurar seu projeto para fazer referência ao runtime instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se você não o tiver instalado, recomendamos que instale a versão LTS do site do [node. js](https://nodejs.org/en/download/) para obter a melhor compatibilidade com estruturas e bibliotecas externas. O Node. js é criado para arquiteturas de 32 bits e de 64 bits. As ferramentas do node. js no Visual Studio, incluídas na carga de trabalho do node. js, dão suporte a ambas as versões. Apenas uma é necessária e o instalador do node. js dá suporte apenas a uma instalada de cada vez.
+    
+    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades**e defina o **caminho do node. exe**). Você pode usar uma instalação global do node. js ou pode especificar o caminho para um intérprete local em cada um dos seus projetos do node. js. 
 
     Este tutorial foi testado com o Node.js 8.10.0.
 
@@ -85,7 +87,7 @@ O Visual Studio gerencia arquivos de um único aplicativo em um *projeto*. O pro
 
 Neste tutorial, você começará com um projeto simples que contém o código para um aplicativo Node.js e Express.
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 1. Crie um novo projeto.
 
@@ -245,7 +247,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
     ![Aplicativo em execução no navegador](../javascript/media/tutorial-nodejs-running-in-browser.png)
 
-1. Feche o navegador da Web.
+1. Feche o navegador da web.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Opcional) Publicar no Serviço de Aplicativo do Azure
 
@@ -267,7 +269,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
 Parabéns por concluir este tutorial.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)

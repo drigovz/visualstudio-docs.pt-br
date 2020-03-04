@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181128"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257183"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio a um processo em execução em um computador local ou remoto. Depois que o processo estiver em execução, selecione **depurar** > **anexar ao processo** ou pressione **Ctrl**+**ALT**+**P** no Visual Studio e use a caixa de diálogo **anexar ao processo** para anexar o depurador ao processo.
@@ -229,7 +229,7 @@ Para selecionar rapidamente um processo em execução para anexar ao, no Visual 
 |Depurar script do lado do cliente em um servidor IIS local, para tipos de aplicativos com suporte |Usar **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|A depuração de script deve ser habilitada. Para o Chrome, você também deve executar o Chrome no modo de depuração e selecionar o **código WebKit** no campo **anexar a** .|
 |Depurar um C#, Visual Basic ou C++ aplicativo no computador local|Usar a depuração padrão (**F5**) ou **anexar ao processo**|*\<nomedoaplicativo>.exe*|Na maioria dos cenários, use a depuração padrão e não **anexe ao processo**.|
 |Depuração remota de um aplicativo de área de trabalho do Windows|Ferramentas remotas|{1&gt;N/A&lt;1}| Consulte [depuração remota a C# ou Visual Basic aplicativo](../debugger/remote-debugging-csharp.md) ou [depuração remota de C++ um aplicativo](../debugger/remote-debugging-cpp.md)|
-|Depurar o .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe*|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para usar um contêiner do Docker do Linux, consulte [anexar a um processo em execução em um contêiner do Docker do Linux](#BKMK_Docker_Attach).|
+|Depurar o .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe*|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Usar **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo seja carregado mais rapidamente, como (por exemplo) durante a criação de perfil. |
 |Depurar outros tipos de aplicativos com suporte em um processo de servidor|Se o servidor for remoto, use as ferramentas remotas e **anexe ao processo**|*Chrome. exe*, *iexplore. exe*ou outros processos|Se necessário, use Monitor de Recursos para ajudar a identificar o processo. Confira [Depuração remota](../debugger/remote-debugging.md).|
 |Depuração remota de um aplicativo universal do Windows (UWP), OneCore, HoloLens ou aplicativo de IoT|Depurar pacote do aplicativo instalado|{1&gt;N/A&lt;1}|Confira [depurar um pacote do aplicativo instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|

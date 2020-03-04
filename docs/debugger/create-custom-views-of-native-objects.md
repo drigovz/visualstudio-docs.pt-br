@@ -1,7 +1,7 @@
 ---
 title: Criar exibições personalizadas dos objetos de C++
 description: Use a estrutura Natvis para personalizar a forma como o Visual Studio exibe tipos nativos no depurador
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167748"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234963"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Criar exibições personalizadas C++ de objetos no depurador usando a estrutura Natvis
 
@@ -537,7 +537,10 @@ O depurador avalia a `NextPointer` e `ValueNode` expressões no contexto do elem
 `ValueNode` pode ser deixado em branco ou usar `this` para fazer referência ao nó de `LinkedListItems` em si.
 
 #### <a name="customlistitems-expansion"></a>Expansão de CustomListItems
+
 A expansão de `CustomListItems` permite que você escreva uma lógica personalizada para percorrer uma estrutura de dados, como uma tabela de hash. Use `CustomListItems` para visualizar estruturas de dados que podem C++ usar expressões para tudo que você precisa avaliar, mas não se ajustam perfeitamente ao molde para `ArrayItems`, `IndexListItems`ou `LinkedListItems`.
+
+Você pode usar `Exec` para executar o código dentro de uma expansão de `CustomListItems`, usando as variáveis e os objetos definidos na expansão. Você pode usar operadores lógicos, operadores aritméticos e operadores de atribuição com `Exec`. Você não pode usar `Exec` para avaliar funções, exceto para [funções intrínsecas](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) do depurador C++ com suporte pelo avaliador de expressão.
 
 O seguinte visualizador para `CAtlMap` é um excelente exemplo em que `CustomListItems` é apropriado.
 
@@ -569,24 +572,6 @@ O seguinte visualizador para `CAtlMap` é um excelente exemplo em que `CustomLis
     </Expand>
 </Type>
 ```
-
-Você pode usar `Exec` para executar o código dentro de uma expansão de `CustomListItems`, usando as variáveis e os objetos definidos na expansão. Você pode usar operadores lógicos, operadores aritméticos e operadores de atribuição com `Exec`. Você não pode usar `Exec` para avaliar funções.
-
-o `CustomListItems` dá suporte às seguintes funções intrínsecas:
-
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> Expansão de TreeItems
  Se o tipo visualizado representa uma árvore, o depurador pode percorrer a árvore e exibir seus filhos usando um nó `TreeItems`. Esta é a visualização para o tipo de `std::map` usando um nó de `TreeItems`:

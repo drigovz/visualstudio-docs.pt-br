@@ -3,110 +3,105 @@ title: A entrada nas assinaturas do Visual Studio pode falhar ao usar aliases | 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/14/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
-ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77276627"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235114"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
+# <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Entrar em assinaturas do Visual Studio pode falhar ao usar aliases
 Dependendo do tipo de conta usado para entrar, é possível que as assinaturas disponíveis não sejam exibidas corretamente ao entrar no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
 
 ## <a name="what-is-aliasing"></a>O que é um alias?
 O termo "alias" refere-se a usuários com identidades diferentes para entrar no Windows (ou no Active Directory) e para acessar o email.
 
-Os aliases podem ser encontrados quando uma empresa tem um Serviço Online da Microsoft para a entrada no diretório, como ‘olivia@contoso.com’, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como ‘OliviaG@contoso.com’. Verifique se os usuários estão se conectando usando o "endereço de email de entrada", conforme listado no portal de administração de assinaturas do Visual Studio em https://manage.visualstudio.com para acessar suas assinaturas
+Os aliases podem ser encontrados quando uma empresa tem um Serviço Online da Microsoft para a entrada no diretório, como ‘JohnD@contoso.com’, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como ‘John.Doe@contoso.com’. Para muitos clientes que gerenciam as assinaturas pelo VLSC (Centro de Serviços de Licenciamento por Volume da Microsoft), isso pode resultar em uma experiência de logon malsucedida, pois o endereço de email fornecido ('John.Doe@contoso.com') não coincide com o endereço do diretório ('JohnD@contoso.com') necessário para a autenticação bem-sucedida por meio da opção "Conta corporativa ou de estudante".  Verifique se os usuários estão usando o "endereço de email de entrada", conforme listado no portal de administração em https://manage.visualstudio.com para acessar suas assinaturas. 
 
-## <a name="as-an-administrator-what-options-do-i-have"></a>Como administrador, quais opções tenho?
+## <a name="what-are-the-potential-issues"></a>Quais são os problemas potenciais?
 
-Dependendo do tipo de conta do Assinante, localize a solução aplicável abaixo:
+Dependendo do tipo de conta do Assinante, eles podem encontrar um dos dois problemas. 
 
-### <a name="work-or-school-account-upn-mismatch-issue"></a>Problema de incompatibilidade de UPN da conta corporativa ou de estudante
+### <a name="work-or-school-account-upn-mismatch-issue"></a>Problema de incompatibilidade de UPN da conta corporativa ou de estudante 
+Uma incompatibilidade de UPN pode ser encontrada quando uma empresa tem uma Active Directory configurada onde o UserPrincipalName (UPN) não é o mesmo que o endereço SMTP primário. 
 
-Uma incompatibilidade de UPN (nome principal do usuário) pode ser encontrada quando um compnay tem um Directory ativo configurado onde o UPN não é o mesmo que o endereço SMTP primário. 
+#### <a name="how-to-detect-if-your-sign-in-address-is-impacted-by-a-upn-mismatch"></a>Como detectar se o endereço de entrada é afetado por uma incompatibilidade de UPN 
 
-#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>Como detectar se o endereço de entrada de um usuário tem uma incompatibilidade de UPN
+1. Entre https://my.visualstudio.com/subscriptions usando o endereço de entrada mencionado em seu email de atribuição de assinatura.
 
-Faça o usuário concluir as seguintes etapas:
+2. Verifique se o endereço de email de entrada listado no canto superior direito da página corresponde ao endereço usado para entrar.  Se não tiver, seu UPN não corresponde e você não poderá exibir sua assinatura. 
 
-1. Entre no https://my.visualstudio.com usando o endereço de entrada mencionado em seu email de atribuição de assinatura.  
+> [!div class="mx-imgBorder"]
+> ![endereço de email de entrada](_img//aliasing/sign-in-email.png)
 
-    > [!NOTE]
-    > Se eles não tiverem seu email de atribuição de assinatura, você poderá reenviá-lo a eles de dentro do portal de administração.  
+#### <a name="how-to-fix-a-upn-mismatch"></a>Como corrigir uma incompatibilidade de UPN
 
-2. Clique na guia **Assinaturas**.
-3. Verifique se o endereço de email exibido no canto superior direito, onde diz "você está conectado como..." é o mesmo que o endereço de email de entrada em seu email de atribuição de assinatura.  Se não estiver, eles não poderão acessar seus benefícios de assinatura. 
+1. Acesse o portal de gerenciamento de administração do Visual Studio https://manage.visualstudio.com 
 
-   > [!div class="mx-imgBorder"]
-   > página de assinaturas do ![](_img/aliasing/aliasing-subscriptions-page.png)
+2. Localize o Assinante que tem o problema de incompatibilidade de UPN. (O recurso de [filtro](search-license.md) pode facilitar a localização de um assinante.)
 
-#### <a name="how-to-correct-the-upn-mismatch"></a>Como corrigir a incompatibilidade de UPN
+3. Alterar o endereço de email de entrada para o UPN do assinante 
 
-1. Acesse o portal de gerenciamento da administração do Visual Studio em https://manage.visualstudio.com 
+0. Salvar as alterações 
 
-2. Localize o usuário que tem o problema de incompatibilidade de UPN.  O recurso de [filtro](search-license.md) pode facilitar essa tarefa se você tiver muitas assinaturas. 
-
-3. Altere o endereço de email de entrada para o UPN do usuário.
-
-4. Salvar as alterações 
-
-5. Peça ao usuário para fazer logoff do portal do assinante e entrar novamente usando o UPN.   
+0. Informe o Assinante para sair do portal do assinante e acessar novamente usando o UPN 
 
 ### <a name="personal-account-aliasing-issue"></a>Problema de alias de conta pessoal
 
-Problemas de alias também podem afetar contas pessoais. 
+As contas de assinatura pessoal também poderão enfrentar problemas se o endereço de email usado para entrar no portal de assinaturas do Visual Studio não corresponder ao endereço de email associado à assinatura. 
 
-#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>Como detectar se uma conta pessoal tem um problema de alias
+#### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Como detectar se sua conta de assinatura pessoal é afetada por um problema de alias
 
-1. https://my.visualstudio.comde entrada.
+1. Entrar no https://my.visualstudio.com/subscriptions
 
-2. Clique na guia **assinaturas** e verifique o endereço com o qual você está conectado. 
+0. Verifique se o endereço de email de entrada listado no canto superior direito da página corresponde ao endereço usado para entrar.  Se o endereço de email conectado não for o mesmo que o endereço de email usado para acessar o site, haverá um conflito entre sua conta e o alias.
 
-3. Se o endereço de email conectado não for o mesmo que o endereço de email usado para acessar o site, haverá um conflito entre sua conta e o alias. 
+#### <a name="how-to-fix-an-alias-issue"></a>Como corrigir um problema de alias
 
-#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>Como corrigir um problema de alias de conta pessoal
+A plataforma do Visual Studio prioriza o alias principal para mostrar os detalhes da assinatura. 
 
-A plataforma de assinaturas do Visual Studio prioriza o alias principal para mostrar os detalhes da assinatura.  Para resolver o problema, você precisa fazer um alias de email diferente de seu alias principal para entrar. 
+1. Vá para **gerenciar como entrar na Microsoft**. Entre em seu conta Microsoft, se solicitado. 
 
-1. Vá para [gerenciar como entrar na Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842796).
-2. Entre em seu conta Microsoft, se solicitado. 
-3. Em aliases de conta, selecione **tornar primário** ao lado do endereço de email usado para atribuir a assinatura. 
-4. Em aliases de conta, selecione tornar primário ao lado do endereço de email usado para atribuir a assinatura. 
-5. Saia do portal de assinante do Visual Studio (https://my.visualstudio.com) 
-6. Acesse o portal novamente usando o novo alias primário. 
+2. Em aliases de conta, selecione **tornar primário** ao lado do endereço de email usado para atribuir a assinatura. 
 
-### <a name="ensure-a-successful-experience-for-your-users"></a>Garantir uma experiência bem-sucedida para seus usuários
+> [!div class="mx-imgBorder"]
+> ![definir o endereço de email principal](_img//aliasing/account-aliases.png)
 
-Como administrador, há duas opções para garantir que seus assinantes tenham uma experiência de entrada bem-sucedida em https://my.visualstudio.com. 
+3. Saia do portal de assinaturas do Visual Studio (https://my.visualstudio.com) 
 
-- A primeira opção (recomendado) é aproveitar a conta do diretório como o endereço de entrada em https://manage.visualstudio.com.
-- A segunda opção, que é menos segura, a segunda opção (menos segura) é permitir que seus assinantes entrem usando um endereço de email diferente do seu endereço de email do diretório.
+4. Entre novamente usando a conta usada para atribuir a assinatura que agora deve ser configurada como alias principal. 
 
-Ambas as opções são configuradas no portal de administração ao concluir as seguintes etapas:
+## <a name="preventing-aliasing-issues"></a>Impedindo problemas de alias
 
+Como administrador, há duas opções para garantir que os assinantes entrem no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sucesso.
+- A primeira opção (recomendada) é aproveitar a conta de diretório como a entrada para o portal de assinaturas do Visual Studio em https://my.visualstudio.com.  
+- A segunda opção (menos segura) é permitir que seus assinantes entrem usando um endereço de email diferente do seu endereço de email do diretório.
+
+Ambas as opções são configuradas no portal de administração ao concluir as seguintes etapas:  
 1. Entrar https://manage.visualstudio.com 
 
-2. Se você estiver alterando um único usuário, selecione esse usuário na tabela e clique com o botão direito do mouse para editar. Isso abrirá um painel em que você pode modificar o endereço de email de entrada.  
+0. Se você estiver alterando um único usuário, selecione esse usuário na tabela e clique com o botão direito do mouse para editar. Isso abrirá um painel em que você pode modificar o endereço de email de entrada. Faça as atualizações necessárias no campo endereço de email de entrada. Clique em salvar e as alterações entrarão em vigor.  
 
-3. Faça as atualizações necessárias no campo endereço de email de entrada. 
+0. Se você precisar fazer essas alterações em uma grande quantidade de usuários, poderá utilizar o recurso de edição em massa. Leia o artigo [Editar vários assinantes usando a edição em massa](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) para obter mais informações.
 
-4. Clique em salvar e as alterações entrarão em vigor.  
-Se você precisar fazer essas alterações em uma grande quantidade de usuários, poderá utilizar o recurso de edição em massa. Leia a seção **Editar vários assinantes usando edição em massa** do nosso artigo [editar assinaturas]] (edit-License.MD) para obter mais informações sobre esse processo.  
+> [!NOTE]
+> Para alterações individuais e em massa, os Assinantes receberão um email com instruções de que seu endereço de email de entrada foi alterado e precisarão entrar usando o endereço de email atualizado. Também é importante observar que, se o assinante ativou anteriormente os benefícios do outro endereço de entrada, eles precisarão continuar usando o outro endereço de entrada para acessá-los.  
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Atribuir assinaturas individuais](assign-license.md)
 - [Atribuir várias assinaturas](assign-license-bulk.md)
 - [Editar assinaturas](edit-license.md)
-- [Excluir assinaturas](delete-license.md)
 - [Determinar o uso máximo](maximum-usage.md)
 
-## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](/visualstudio/)
-- [Documentação do Azure DevOps](/azure/devops/)
-- [Documentação do Azure](/azure/)
-- [Documentação do Microsoft 365](/microsoft-365/)
+
