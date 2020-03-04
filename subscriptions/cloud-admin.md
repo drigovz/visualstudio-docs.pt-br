@@ -1,38 +1,38 @@
 ---
-title: Configuração de administradores para assinaturas de nuvem | Microsoft Docs
+title: Configurando administradores para assinaturas mensais | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
-description: Configuração de administradores para assinaturas de nuvem
-ms.openlocfilehash: 62a350e6061444e3c75878dfd89739011c4641d5
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
-ms.translationtype: HT
+description: Configurando administradores para assinaturas mensais
+ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315214"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235206"
 ---
-# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configure administradores para assinaturas de nuvem do Visual Studio
+# <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
 
-As assinaturas de nuvem do Visual Studio são gerenciadas por administradores. Essas pessoas podem atribuir assinaturas, editar atribuições, adicionar ou excluir assinaturas e executar outras tarefas de gerenciamento de assinatura.
+As assinaturas mensais do Visual Studio são gerenciadas por administradores. Essas pessoas podem atribuir assinaturas, editar atribuições, adicionar ou excluir assinaturas e executar outras tarefas de gerenciamento de assinatura.
 
 ## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>O proprietário da assinatura do Azure é o primeiro administrador
 
-Ao comprar assinaturas de nuvem do Visual Studio, como o proprietário da assinatura do Azure usado para fazer as compras, você é configurado automaticamente como administrador dessas assinaturas.
+Quando você adquire assinaturas mensais do Visual Studio, como o proprietário da assinatura do Azure usada para fazer as compras, você é automaticamente configurado como um administrador para essas assinaturas.
 
-Você pode comprar assinaturas de nuvem por meio do [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) ou contatando um Provedor de Soluções na Nuvem. Se comprar por meio do Visual Studio Marketplace, no final da experiência de compra, você terá a oportunidade de gerenciar usuários. Ao escolher essa opção, você será levado para o Portal de Administração de assinaturas do Visual Studio – [https://manage.visualstudio.com](https://manage.visualstudio.com).
+Você pode adquirir assinaturas mensais por meio do [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)ou contatando um provedor de soluções na nuvem. Se comprar por meio do Visual Studio Marketplace, no final da experiência de compra, você terá a oportunidade de gerenciar usuários. Escolher essa opção levará você para o portal de administração de assinaturas do Visual Studio- [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-Depois de comprar assinaturas, será possível acessar o [Portal de Administração](https://manage.visualstudio.com) a qualquer momento. Basta entrar no portal e selecionar a assinatura do Azure apropriada no canto superior esquerdo.
+Depois de comprar assinaturas, será possível acessar o [Portal de Administração](https://manage.visualstudio.com) a qualquer momento. Basta entrar no portal e selecionar a assinatura apropriada do Azure no canto superior esquerdo.
 
-Como o proprietário da assinatura do Azure usado para comprar as assinaturas de nuvem, você também pode atribuir outros administradores.
+Como o proprietário da assinatura do Azure usado para comprar as assinaturas mensais, você também pode atribuir administradores adicionais.
 
 ## <a name="add-administrators"></a>Adicionar administradores
 
 Para adicionar administradores:
 
 1. Conecte-se ao Portal do Azure em [portal.azure.com](https://portal.azure.com).
-2. Entre com a conta usada para comprar as assinaturas de nuvem do Visual Studio.
+2. Entre com a conta que você usou para comprar as assinaturas mensais do Visual Studio.
 3. No painel de navegação esquerdo, role para baixo até **Gerenciamento de Custos + Cobrança**.
 4. Na lista **Minhas assinaturas**, escolha a assinatura do Azure que você usou para fazer a compra.
 5. Clique em **Controle de acesso**, que está localizado na parte superior da lista no painel de navegação esquerdo.
@@ -40,12 +40,28 @@ Para adicionar administradores:
 7. Clique em **Adicionar atribuição de função**.
 8. No painel de submenu à direita, clique na lista suspensa **Função** na parte superior do painel, role para baixo e selecione **Administrador de Acesso do Usuário**.
 9. Na lista de usuários role para baixo até o usuário que você deseja tornar administrador e selecione-o. 
-10. Clique em **Salvar**.
+10. Clique em **Save** (Salvar).
 11. Clique na guia **Atribuições de função** para verificar se o usuário selecionado é exibido como um Administrador de Acesso do Usuário.
 
-Agora, o novo administrador pode entrar no [Portal de Administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas de nuvem na lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
+Agora, o novo administrador pode entrar no [portal de administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas mensais da lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
 
 > [!NOTE]
-> Se você vir os usuários com acesso para editar suas assinaturas de nuvem que você não estabeleceu como administradores, isso poderá significar que eles têm funções na assinatura do Azure subjacente que lhes permite gerenciar assinaturas. Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador. Para obter mais informações, visite [Add billing managers](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts) (Adicionar gerenciadores de cobrança).
+> Se você vir os usuários com acesso para editar suas assinaturas mensais que você não estabeleceu como administradores, eles podem ter funções na assinatura subjacente do Azure que permitem gerenciar assinaturas. Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador. Para obter mais informações, visite [Adicionar gerentes de cobrança](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
 
-Para saber mais sobre assinaturas de nuvem do Visual Studio, confira a [Visão geral](vscloud-overview.md) em Comprar assinaturas. Para comprar assinaturas de nuvem do Visual Studio, visite o Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
+Para obter informações sobre assinaturas mensais do Visual Studio, consulte a [visão geral](vscloud-overview.md) em comprando assinaturas. Para comprar as assinaturas mensais do Visual Studio, visite o Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
+
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+Saiba mais sobre como gerenciar assinaturas do Visual Studio.
+- [Atribuir assinaturas individuais](assign-license.md)
+- [Atribuir várias assinaturas](assign-license-bulk.md)
+- [Editar assinaturas](edit-license.md)
+- [Determinar o uso máximo](maximum-usage.md)
+
+
+

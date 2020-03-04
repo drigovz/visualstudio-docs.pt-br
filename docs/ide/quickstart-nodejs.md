@@ -1,5 +1,5 @@
 ---
-title: 'Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js'
+title: 'Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js'
 description: Neste guia de início rápido, você cria um aplicativo Node.js no Visual Studio
 ms.date: 06/27/2018
 ms.technology: vs-javascript
@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4995c6b95ba12eb776130b17dab1911c47988871
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: f716421da3b9f888dbb7656c55db6814de88332b
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180333"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235048"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js
 
 Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -39,19 +39,21 @@ Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integra
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Você precisa ter o tempo de execução do Node.js instalado.
+* Você precisa ter o runtime do Node.js instalado.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se você não o tiver instalado, recomendamos que instale a versão LTS do site do [node. js](https://nodejs.org/en/download/) para obter a melhor compatibilidade com estruturas e bibliotecas externas. O Node. js é criado para arquiteturas de 32 bits e de 64 bits. As ferramentas do node. js no Visual Studio, incluídas na carga de trabalho do node. js, dão suporte a ambas as versões. Apenas uma é necessária e o instalador do node. js dá suporte apenas a uma instalada de cada vez.
+    
+    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades**e defina o **caminho do node. exe**). Você pode usar uma instalação global do node. js ou pode especificar o caminho para um intérprete local em cada um dos seus projetos do node. js. 
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, você criará um projeto de aplicativo Web Node.js.
 
-1. Se não tiver o tempo de execução do Node.js instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/).
+1. Se não tiver o runtime do Node.js instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/).
 
-    Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Para obter mais informações, consulte os pré-requisitos.
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 1. Crie um novo projeto.
 
@@ -103,11 +105,11 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
 1. Na janela do navegador, você verá “Olá, Mundo”, além do número da porta local.
 
-1. Feche o navegador da Web.
+1. Feche o navegador da web.
 
 Parabéns por concluir este Início Rápido! Nele, você se familiarizou com o IDE do Visual Studio e o Node.js. Caso deseje se aprofundar mais nas funcionalidades, continue com um tutorial na seção **Tutoriais** do sumário.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)

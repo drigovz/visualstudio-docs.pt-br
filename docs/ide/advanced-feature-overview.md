@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591730"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235193"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -84,7 +84,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 - Crie jogos 2D e 3D em C# usando [Ferramentas do Visual Studio para Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Compile aplicativos C++ nativos para dispositivos iOS, Android e Windows. Compartilhe código comum em bibliotecas criadas para iOS, Android e Windows usando [C++ para desenvolvimento multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Compile aplicativos C++ nativos para dispositivos iOS, Android e Windows. Compartilhe código comum em bibliotecas criadas para iOS, Android e Windows usando [C++ para desenvolvimento multiplataforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
 - Implante, teste e depure aplicativos Android com o [Android Emulator](../cross-platform/visual-studio-emulator-for-android.md).
 
@@ -136,7 +136,7 @@ Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o
 
 Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
