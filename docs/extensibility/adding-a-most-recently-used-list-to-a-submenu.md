@@ -30,7 +30,7 @@ Este passo a passo cria uma lista MRU de quatro itens que alterar sua ordem toda
 
 Para obter mais informações sobre menus e *VSCT* arquivos, consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Criar uma extensão

@@ -25,7 +25,7 @@ ms.locfileid: "68201975"
 
 Este passo a passo mostra como publicar uma extensão do Visual Studio em Galeria do Visual Studio. Quando você adiciona sua extensão na galeria, os desenvolvedores podem usar **extensões e atualizações** procure lá extensões novas e atualizadas.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-a-visual-studio-extension"></a>Criar uma extensão do Visual Studio

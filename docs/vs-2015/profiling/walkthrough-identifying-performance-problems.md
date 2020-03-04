@@ -38,7 +38,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 - Analise os resultados da criação de perfil instrumentada para localizar e corrigir um problema de desempenho.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
   
 - Compreensão intermediária de C#.  
   
@@ -67,7 +67,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 5. Certifique-se de que a **Amostragem de CPU (recomendada)** está selecionada e clique em **Avançar**.  
   
-6. Em **Para qual aplicativo o perfil deve ser criado?**, selecione PeopleTrax e clique em **Avançar**.  
+6. Em **Para qual aplicativo o perfil deve ser criado?** , selecione PeopleTrax e clique em **Avançar**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] compila o projeto e inicia a criação de perfil do aplicativo. A janela do aplicativo **PeopleTrax** é exibida.  
   

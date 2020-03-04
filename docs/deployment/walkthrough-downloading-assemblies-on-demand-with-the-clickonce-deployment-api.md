@@ -29,7 +29,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 > [!NOTE]
 > Seu aplicativo precisará executar em confiança total para usar este procedimento.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Será necessário um dos seguintes componentes para concluir este passo a passo:
 
 - O SDK do Windows. O SDK do Windows pode ser baixado do Microsoft Download Center.

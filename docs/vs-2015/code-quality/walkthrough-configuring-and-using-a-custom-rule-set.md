@@ -38,7 +38,7 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
 
 - Execute a análise de código e veja como funciona o comportamento de personalização do conjunto de regras.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsPro](../includes/vspro-md.md)]
 

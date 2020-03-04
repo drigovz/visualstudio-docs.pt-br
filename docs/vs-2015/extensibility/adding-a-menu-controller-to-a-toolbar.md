@@ -28,7 +28,7 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
   
  Controladores de menu podem aparecer nos menus, mas são mais comumente usadas nas barras de ferramentas.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-menu-controller"></a>Criando um controlador de Menu  

@@ -26,7 +26,7 @@ Ajuda da assinatura (também conhecido como *informações de parâmetro*) exibe
   
  Este passo a passo mostra como implementar a Ajuda de assinatura para um conjunto de identificadores de embutido em código. Em implementações completas, a linguagem é responsável por fornecer esse conteúdo.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  

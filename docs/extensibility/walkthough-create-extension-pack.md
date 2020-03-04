@@ -21,7 +21,7 @@ ms.locfileid: "66322803"
 
 Um pacote de extensão é um conjunto de extensões que podem ser instalados juntos. Pacotes de extensão permitem que você facilmente compartilhar suas extensões favoritas com outros usuários ou agrupar um conjunto de extensões em conjunto para um cenário específico.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 A partir do Visual Studio 2015, o SDK do Visual Studio é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 

@@ -24,7 +24,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
 
 - [Para criar um aplicativo de exemplo que usa a biblioteca de classes](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="createClassLibrary"></a> Para criar o nativo e bibliotecas de tempo de execução do Windows
