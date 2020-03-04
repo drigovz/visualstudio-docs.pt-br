@@ -29,7 +29,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
   
  Este passo a passo cria um submenu em um menu na barra de menus do Visual Studio e coloca um novo comando no submenu. O passo a passo também implementa o novo comando.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Adicionando um submenu a um menu  

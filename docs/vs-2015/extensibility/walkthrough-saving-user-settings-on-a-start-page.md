@@ -26,7 +26,7 @@ Você pode persistir as configurações do usuário para sua página inicial. Se
   
  Para obter mais informações sobre como persistir configurações, consulte [opções e configurações do usuário estendendo](../extensibility/extending-user-settings-and-options.md).  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
   
 > [!NOTE]
 > Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  

@@ -31,7 +31,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - Visual Studio 2010.

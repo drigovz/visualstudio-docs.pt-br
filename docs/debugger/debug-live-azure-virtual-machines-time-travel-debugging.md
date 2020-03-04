@@ -35,7 +35,7 @@ Neste tutorial, você irá:
 > * Defina um snappoint e coletar de um tempo de viagem gravação
 > * Inicie a depuração de um tempo de gravação de viagem
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Depuração em tempo de viagem para as máquinas virtuais (VM) do Azure só está disponível para o Visual Studio 2019 Enterprise ou superior com o **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 

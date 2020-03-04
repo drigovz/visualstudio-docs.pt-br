@@ -31,7 +31,7 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
 > [!NOTE]
 > Use arquivos de tabela de comando de XML (. VSCT) em vez de arquivos de configuração (. ctc) da tabela de comando para definir como os menus e comandos são exibidos no seu VSPackages. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de menu  

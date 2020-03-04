@@ -40,7 +40,7 @@ ms.locfileid: "67825797"
 
 - Depurando e testando a propriedade do projeto.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:
 
 - Edições do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint e [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].

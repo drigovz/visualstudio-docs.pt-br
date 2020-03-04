@@ -35,7 +35,7 @@ ms.locfileid: "63409554"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.
@@ -334,7 +334,7 @@ ms.locfileid: "63409554"
 
 14. Repita as etapas 11 a 13 com outros documentos na lista de documentos compartilhados. (O número exato de documentos não é importante.)
 
-15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a seguinte URL em um navegador da Web: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a seguinte URL em um navegador da Web: **http://** <em>SystemName</em> **/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      A página Resumo do relatório de despesas lista todos os relatórios de despesas que excedeu a quantidade alocada, a quantidade que foi excedido pelo e o valor total para todos os relatórios.
 

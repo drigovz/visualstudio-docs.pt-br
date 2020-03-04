@@ -37,7 +37,7 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
     > [!NOTE]
     > Seu computador pode mostrar diferentes nomes ou localizações para alguns elementos da interface do usuário para o Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 

@@ -47,7 +47,7 @@ ms.locfileid: "71253922"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -186,7 +186,7 @@ ms.locfileid: "71253922"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Anexar o esquema XML ao documento
  Você deve anexar o esquema XML ao documento para associar os <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> valores válidos `title` do elemento.
 
-### <a name="to-attach-the-xml-schema-to-the-document--includeword_15_shortvstoincludesword-15-short-mdmd"></a>Para anexar o esquema XML ao documento ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])
+### <a name="to-attach-the-xml-schema-to-the-document--word_15_short"></a>Para anexar o esquema XML ao documento ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])
 
 1. Ative **EmployeeControls. docx** no designer.
 

@@ -20,7 +20,7 @@ ms.locfileid: "66312740"
 # <a name="walkthrough-create-a-margin-glyph"></a>Passo a passo: Criar um glifo de margem
 Você pode personalizar a aparência das margens do editor ao usar extensões de editor personalizado. Este passo a passo coloca um glifo personalizado na margem do indicador, sempre que a palavra "todo" aparece em um comentário de código.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Criar um projeto MEF

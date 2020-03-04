@@ -20,7 +20,7 @@ ms.locfileid: "66312530"
 # <a name="walkthrough-display-matching-braces"></a>Passo a passo: Exibir chaves correspondentes
 Implemente recursos de baseada na linguagem, por exemplo, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto para as chaves correspondentes, quando o cursor está em uma das chaves a correspondência de chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e aplicar as marcas para apenas esse tipo ou aplicam as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Criar um projeto de Managed Extensibility Framework (MEF)

@@ -20,12 +20,12 @@ ms.locfileid: "65679924"
 
 Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 e Windows Phone 8.1, permitindo que os desenvolvedores usem o código e outros ativos nas duas plataformas. O código compartilhado e os recursos são mantidos em um projeto compartilhado, enquanto o código específico da plataforma e recursos são mantidos em projetos separados, um para Windows e outro para Windows Phone. Para obter mais informações sobre aplicativos universais do Windows, consulte [aplicativos universais do Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Extensões do Visual Studio que gerenciam projetos devem estar cientes de que os projetos de aplicativo universal do Windows tem uma estrutura que é diferente de aplicativos de plataforma única. Este passo a passo mostra como navegar de projeto compartilhado e gerenciar os itens compartilhados.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="navigate-the-shared-project"></a>Navegue de projeto compartilhado  
   
-1. Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio c#, extensibilidade,**). Adicionar um **comando Custom** modelo de item de projeto (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Add / Novo Item**, em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.  
+1. Crie um projeto de VSIX em C# chamado **TestUniversalProject**. (**Arquivo, novo, projeto** e, em seguida **pacote do Visual Studio c#, extensibilidade,** ). Adicionar um **comando Custom** modelo de item de projeto (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Add / Novo Item**, em seguida, vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.  
   
 2. Adicione uma referência ao Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (na **extensões** seção).  
   
