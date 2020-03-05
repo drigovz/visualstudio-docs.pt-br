@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633415"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263143"
 ---
 # <a name="msbuild-best-practices"></a>Melhores práticas do MSBuild
 
@@ -30,7 +30,7 @@ Recomendamos as seguintes práticas recomendadas para escrever scripts MSBuild:
 </MyProperty>
 ```
 
-- Evite curingas ao selecionar itens. Em vez disso, especifique os arquivos explicitamente. Isso torna mais fácil controlar os erros que podem ocorrer quando você adiciona ou exclui arquivos.
+- Em geral, evite o uso de curingas ao selecionar itens. Em vez disso, especifique os arquivos explicitamente. Isso ocorre porque, na maioria dos tipos de projetos, o MSBuild expande curingas em vários momentos, como ao adicionar ou remover itens, o que pode levar a um comportamento inesperado. Uma exceção a isso está em projetos de SDK do .NET Core estilo, que processam caracteres curinga corretamente.
 
 ## <a name="see-also"></a>Confira também
 

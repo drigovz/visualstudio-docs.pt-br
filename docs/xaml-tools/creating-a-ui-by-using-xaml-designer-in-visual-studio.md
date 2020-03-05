@@ -1,6 +1,6 @@
 ---
 title: Visão geral do Designer XAML
-ms.date: 07/31/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,12 +12,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592997"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263351"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
@@ -25,15 +25,18 @@ No Visual Studio e no Blend para Visual Studio, o Designer XAML fornece uma inte
 
 Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
+> [!NOTE]
+> O Xamarin. Forms não dá suporte a um designer XAML. Para exibir as UIs do XAML do Xamarin. Forms e editá-las enquanto o aplicativo estiver em execução, use o Hot recarregamento XAML para Xamarin. Forms. Para obter mais informações, consulte a página o [recarregamento de XAML para Xamarin. Forms (versão prévia)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+
 ## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML
 
 O workspace no Designer XAML consiste em vários elementos da interface visual. Isso inclui a *prancheta* (que é a superfície de design visual), o editor XAML, a janela Estrutura de Tópicos do Documento (janela Objetos e Linha do Tempo no Blend para Visual Studio) e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer**.
 
 O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio ou no Blend para Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis**![botão Alternar Painéis no Designer XAML](media/swap-panes.PNG) para mudar qual janela é exibida na parte superior: a prancheta ou o Editor XAML.
 
-### <a name="design-view"></a>O modo design
+### <a name="design-view"></a>Modo de exibição de Design
 
-No modo Design, a janela que contém o artboard é a janela ativa. Você pode usá-la como superfície de trabalho primária. É possível usá-la para criar visualmente uma página em seu aplicativo ao adicionar, desenhar ou modificar elementos. Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
+No modo de exibição de Design, a janela ativa é a que contém a prancheta, e você pode usá-la como a principal superfície de trabalho. É possível usá-la para criar visualmente uma página em seu aplicativo ao adicionar, desenhar ou modificar elementos. Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
 
 ![Modo de exibição de Design do Designer XAML](media/xaml-artboard.png)
 
@@ -87,7 +90,7 @@ Exibe ou oculta a grade de ajuste que mostra as linhas de grade. As linhas de gr
 
 **Ativar/desativar ajuste às linhas de grade**
 
-Se a opção de **ajuste às linhas de grade** estiver habilitada quando você arrastar um elemento na prancheta, a tendência será o elemento alinhar-se às linhas de grade horizontais e verticais mais próximas.
+Se o **ajuste para linhas de grade** estiver habilitado, um elemento tende a se alinhar com as linhas de grade horizontais e verticais mais próximas ao arrastá-lo para a prancheta.
 
 **Alternar plano de fundo da prancheta**
 
@@ -113,7 +116,7 @@ A janela Estrutura de Tópicos do Documento no Visual Studio é semelhante à ja
 
 - Exibir a estrutura hierárquica de todos os elementos no artboard.
 
-- Selecionar elementos para que você possa modificá-los (por exemplo, para movê-los na hierarquia ou definir suas propriedades na janela Propriedades). Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Selecione elementos para que você possa modificá-los. Por exemplo, você pode movê-los na hierarquia ou definir suas propriedades na janela Propriedades. Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Criar e modificar modelos para elementos que são controles.
 
@@ -124,7 +127,7 @@ Para exibir a janela Objetos e Linha do Tempo no Blend para Visual Studio, na ba
 
 ![Janela Estrutura de Tópicos do Documento no Visual Studio](media/document-outline-window.png)
 
-O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. Estas são as opções disponíveis nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo:
+O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. As opções a seguir estão disponíveis na janela estrutura de tópicos/Objetos e Linha do Tempo do documento:
 
 **Mostrar/ocultar**
 
@@ -138,11 +141,11 @@ Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não pod
 
 A opção na parte superior das janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo, que mostra um símbolo de seta para cima, retorna ao escopo anterior. O controle de escopo só é aplicável quando você está no escopo de um estilo ou modelo.
 
-## <a name="properties-window"></a>Janela de Propriedades
+## <a name="properties-window"></a>Janela Propriedades
 
-A janela **Propriedades** permite definir valores de propriedade em controles. Veja como é sua aparência:
+A janela **Propriedades** permite definir valores de propriedade em controles. Veja como ela se parece:
 
-![Janela de Propriedades](media/xaml-designer-properties-window.png)
+![Janela Propriedades](media/xaml-designer-properties-window.png)
 
 Há várias opções na parte superior da janela **Propriedades**:
 
@@ -158,7 +161,7 @@ Algumas propriedades permitem que você defina propriedades avançadas seleciona
 
 Para obter mais informações sobre como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)
