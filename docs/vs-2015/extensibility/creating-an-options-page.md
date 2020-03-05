@@ -26,7 +26,7 @@ Este passo a passo cria uma página Ferramentas/opções simples que usa uma gra
   
  MPF fornece classes para ajudá-lo a criar páginas de opções de ferramentas, o <xref:Microsoft.VisualStudio.Shell.Package> classe e o <xref:Microsoft.VisualStudio.Shell.DialogPage> classe. Você criar um VSPackage para fornecer um contêiner para essas páginas através de subclasses da classe de pacote. Você pode criar cada página de opções de ferramentas, derivando da classe de DialogPage.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-tools-options-grid-page"></a>Criando uma página de grade de opções de ferramentas  

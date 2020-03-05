@@ -46,7 +46,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
   
 - Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  Este passo a passo pressupõe que **Just My Code** está habilitado. No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
   
 ## <a name="c-sample"></a>Exemplo do C#  

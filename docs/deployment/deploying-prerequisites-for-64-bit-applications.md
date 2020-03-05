@@ -28,7 +28,7 @@ ms.locfileid: "62928881"
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Implantar pré-requisitos para aplicativos de 64 bits
 A implantação do ClickOnce oferece suporte à instalação de aplicativos em plataformas de 64 bits. As plataformas de destino são plataformas **x86** para 32 bits, **x64** para máquinas compatíveis com o conjunto de instruções AMD64 e EM64T e Itanium para o processador **Itanium** de 64 bits.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  A tabela a seguir lista os redistribuíveis que você pode usar como pré-requisitos para a instalação do seu aplicativo de 64 bits.
 
  Se você selecionar um pré-requisito que não tem componentes de 64 bits, poderá ver um aviso informando que os pacotes selecionados não estão disponíveis para a plataforma de 64 bits.
@@ -36,8 +36,8 @@ A implantação do ClickOnce oferece suporte à instalação de aplicativos em p
 | Redistribuível | Suporte a x64 | Suporte a IA64 |
 | - |-------------|--------------|
 | [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | Sim | Não |
-| Bibliotecas de tempo de execução do Visual C++ 2010 (IA64) | Não | Sim |
-| Bibliotecas de Tempo de Execução do Visual C++ 2010 (x64) | Sim | Não |
+| Bibliotecas de runtime do Visual C++ 2010 (IA64) | Não | Sim |
+| Bibliotecas de Runtime do Visual C++ 2010 (x64) | Sim | Não |
 | Microsoft .NET Framework 4 (x86 e x64) | Sim | |
 | Perfil de cliente do Microsoft .NET Framework 4 (x86 e x64) | Sim | |
 

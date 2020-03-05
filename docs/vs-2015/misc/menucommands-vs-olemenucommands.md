@@ -23,7 +23,7 @@ Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Desi
   
  Os comandos que um VSPackage disponibiliza para o IDE deve ser visível e habilitado antes que um usuário podem usá-los. Quando os comandos são criados em um arquivo. VSCT, usando o modelo de projeto do Visual Studio Package, eles são visíveis e habilitados por padrão. Definir alguns sinalizadores de comando, como `DynamicItemStart`, pode alterar o comportamento padrão. A visibilidade, status habilitado e outras propriedades de um comando também podem ser alteradas no código em tempo de execução acessando o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto que está associado com o comando.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Locais de modelo para o modelo de pacote do Visual Studio  

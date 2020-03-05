@@ -37,7 +37,7 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 > [!NOTE]
 > Neste passo a passo é cria implantações manualmente usando a ferramenta de linha de comando *Mage.exe* ou a ferramenta gráfica *MageUI.exe*. Para obter mais informações sobre implantações manuais, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Para executar as etapas neste passo a passo, você precisa do seguinte:
 
 - Um aplicativo de formulários do Windows que você está pronto para implantar. Este aplicativo será referenciado como *WindowsFormsApp1*.

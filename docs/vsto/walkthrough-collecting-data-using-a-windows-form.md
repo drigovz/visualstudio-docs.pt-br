@@ -29,7 +29,7 @@ ms.locfileid: "63438585"
 
  Embora este passo a passo usa um projeto de nível de documento para Excel, especificamente, os conceitos demonstrados pelo passo a passo são aplicáveis a outros projetos do Office.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]

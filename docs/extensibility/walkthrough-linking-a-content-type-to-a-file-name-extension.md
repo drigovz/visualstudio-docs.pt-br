@@ -20,7 +20,7 @@ ms.locfileid: "66320670"
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo
 Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de nome de arquivo a ela usando as extensões do editor Managed Extensibility Framework (MEF). Em alguns casos, a extensão de nome de arquivo já está definida por um serviço de linguagem. Mas, para usá-lo com o MEF, você deve ainda vinculá-lo para um tipo de conteúdo.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Criar um projeto MEF
