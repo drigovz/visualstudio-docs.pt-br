@@ -42,7 +42,7 @@ O ambiente de vários computadores não pode ser usado para compilar estes tipos
 - Aplicativos UWP. Para compilar aplicativos UWP, instale o Visual Studio no computador de build.
 - Aplicativos de área de trabalho voltados para o .NET Framework 4 ou anterior. Para criar esses tipos de aplicativos, instale o Visual Studio ou Assemblies e Ferramentas do .NET Reference (do SDK do Windows 7.1) no computador de build.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 O Visual Studio com a carga de trabalho instalada para **desenvolvimento de área de trabalho .NET**.
 
@@ -63,7 +63,7 @@ Esta seção aborda a cópia de arquivos específicos, compiladores, ferramentas
 - Em um computador x86, a localização padrão é *C:\Arquivos de Programas\Microsoft Visual Studio*
 - Em um computador x64, a localização padrão é *C:\Arquivos de Programas (x86)\Microsoft Visual Studio*
 
-Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)* . Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%* .
+Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)*. Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%*.
 
 > [!NOTE]
 > No computador de build, todos os arquivos relevantes precisam estar na mesma unidade. No entanto, a letra da unidade para essa unidade pode ser diferente da letra da unidade para a unidade na qual o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.
@@ -130,7 +130,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\vsvars32.bat
 
-4. As seguintes bibliotecas de tempo de execução do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x86* ou na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x64*, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
+4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x86* ou na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x64*, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -333,7 +333,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 2. Copie os diretórios e arquivos, conforme descrito na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo, mas cole-os no diretório *%Depot%* recém-criado. Por exemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* para *%Depot%\Windows Kits\8.0\bin*.
 
-3. Quando os arquivos forem colados em *%Depot%* , faça estas alterações:
+3. Quando os arquivos forem colados em *%Depot%*, faça estas alterações:
 
     - Em %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\, altere todas as instâncias de
 
