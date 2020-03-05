@@ -3,21 +3,20 @@ title: Atribuir licenças a grupos de usuários para assinaturas do Visual Studi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652814"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263338"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
 
 Para adicionar grandes grupos de usuários, você pode usar o recurso adição em massa ou, se sua organização estiver usando Microsoft Azure Active Directory (Azure AD), você poderá usar grupos do Azure AD. Este artigo explicará o processo para ambas as opções. 
-
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Usar adição em massa para atribuir assinaturas
 1. Entre no portal de administração de assinaturas do Visual Studio em https://manage.visualstudio.com.
@@ -59,19 +58,16 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
    > [!div class="mx-imgBorder"]
    > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](media/bulk-add-template-success.png)
 
-## <a name="use-azure-ad-groups-to-assign-subscriptions"></a>Usar grupos do Azure AD para atribuir assinaturas 
-O uso desse recurso facilita a permanência de suas atribuições de assinatura. Você pode adicionar grupos de segurança do Azure AD no portal de administração de assinaturas, o que garantirá que todos os indivíduos do grupo sejam atribuídos a uma assinatura. E para facilitar, quando as pessoas deixam sua organização e são removidas do Azure AD, seu acesso a assinaturas também é removido.
-
-> [!NOTE]
-> Esse recurso está sendo implantado em fases, portanto, pode não ser a disponibilidade imediata para sua organização.   
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usar grupos de Azure Active Directory para atribuir assinaturas 
+O uso desse recurso facilita a permanência de suas atribuições de assinatura. Você pode adicionar Azure Active Directory grupos de segurança no portal de administração de assinaturas, o que garantirá que todos os indivíduos do grupo sejam atribuídos a uma assinatura. E para facilitar, quando as pessoas deixam sua organização e são removidas da Azure Active Directory, o acesso às assinaturas também é removido. 
 
 > [!IMPORTANT]
 > As seguintes limitações se aplicam ao uso de grupos do Azure AD para adicionar assinantes:
 > - Os grupos devem conter pelo menos um membro.  Não há suporte para grupos vazios.
-> - Os grupos devem ter menos de 1.000 usuários.
-> - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados.
-> - Somente contratos confiáveis têm suporte.
-> - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD.
+> - Os grupos devem ter menos de 1.000 usuários 
+> - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados
+> - Somente contratos confiáveis têm suporte
+> - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD
 
 
 1. Entre no portal de administração de assinaturas do Visual Studio em [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -117,6 +113,4 @@ R: dependendo de como sua organização tiver configurado o Azure AD, você pode
 ## <a name="next-steps"></a>Próximas etapas
 - Há apenas um ou dois assinantes para adicionar?  Confira [Adicionar usuários únicos](assign-license.md)
 - Precisa de ajuda? Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-
 

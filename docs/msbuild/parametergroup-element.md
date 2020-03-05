@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d6def203a819d41a420899663d1a974612c631
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77632986"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263065"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 
@@ -37,7 +37,7 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
@@ -66,9 +66,9 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
              ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 

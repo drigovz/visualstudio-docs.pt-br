@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631101"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263130"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criar um arquivo de projeto do MSBuild do zero
 
@@ -154,8 +154,6 @@ As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tare
 > ```xml
 > <Compile Include="*.cs" />
 > ```
->
-> No entanto, não recomendamos o uso de caracteres curinga, pois eles tornam a depuração e o direcionamento seletivo mais difícil se arquivos de origem forem adicionados ou excluídos.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Estender o caminho para incluir o MSBuild
 
