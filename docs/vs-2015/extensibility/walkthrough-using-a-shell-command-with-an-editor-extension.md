@@ -24,7 +24,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
  Este passo a passo demonstra o uso de um VSPackage junto com uma parte do componente de Managed Extensibility Framework (MEF). Você deve usar um VSPackage para registrar o comando de menu com o shell do Visual Studio, e você pode usar o comando para acessar a parte do componente MEF.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de menu  
@@ -40,7 +40,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>Adicionando uma extensão do MEF para a extensão de comando  
   
-1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
+1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#** , em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
   
 2. Porque este projeto irá interagir com o assembly de nome forte de VSPackage, você deve assinar o assembly. Você pode reutilizar o arquivo de chave já criado para o assembly de VSPackage.  
   

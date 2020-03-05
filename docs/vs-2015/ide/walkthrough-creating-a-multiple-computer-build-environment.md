@@ -14,7 +14,7 @@ ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
 ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72672306"
@@ -66,7 +66,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 
 - [Criando o ambiente de build para que se possa verificá-lo no controle do código-fonte](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Uma cópia licenciada do Visual Studio Ultimate, do Visual Studio Premium ou do Visual Studio Professional
 
@@ -157,7 +157,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 
    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
 
-4. As seguintes bibliotecas de tempo de execução do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ou %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta \Windows\System32\. Em sistemas x64, copie os binários x86 para a pasta Windows\SysWOW64\ e os binários x64 para a pasta Windows\System32\.
+4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ou %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta \Windows\System32\. Em sistemas x64, copie os binários x86 para a pasta Windows\SysWOW64\ e os binários x64 para a pasta Windows\System32\.
 
    - \Microsoft.VC110.ATL\atl110.dll
 

@@ -192,7 +192,7 @@ Para resolver o "images/testlogo.png" no exemplo anterior, um usuário pode forn
 
 ## <a name="publishing-walkthrough"></a>Instruções passo a passo publicação
 
-### <a name="prerequisites"></a>Pré-requisitos
+### <a name="prerequisites"></a>Prerequisites
 
 Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 

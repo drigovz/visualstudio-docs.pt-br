@@ -29,7 +29,7 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 * Reconhecimento do atributo `lang` em arquivos *.vue*
 * Modelos de projeto e de arquivo Vue.js
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * É necessário ter o Visual Studio 2017 versão 15.8 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
 
@@ -47,9 +47,9 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 
 * Para criar o projeto ASP.NET Core, é necessário ter instaladas as cargas de trabalho de desenvolvimento do ASP.NET e para a Web e de desenvolvimento multiplataforma do .NET Core.
 
-* Você precisa ter o tempo de execução do Node.js instalado.
+* Você precisa ter o runtime do Node.js instalado.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar o projeto para referenciar o tempo de execução instalado na página de propriedades. (Depois de criar um projeto, clique com o botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um runtime instalado, você poderá configurar o projeto para referenciar o runtime instalado na página de propriedades. (Depois de criar um projeto, clique com o botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
 ## <a name="create-a-vuejs-project-using-a-template"></a>Criar um projeto Vue.js usando um modelo
 

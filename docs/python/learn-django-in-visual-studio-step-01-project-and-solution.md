@@ -13,7 +13,7 @@ ms.workload:
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62962087"
@@ -32,7 +32,7 @@ Neste tutorial, você aprenderá como:
 > - Autenticar usuários (etapa 5)
 > - Usar o modelo Pesquisas Projeto Web do Django para criar um aplicativo que usa modelos, migrações de banco de dados e personalizações na interface administrativa (etapa 6)
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio 2017 ou posteriores no Windows com as seguintes opções:
   - A carga de trabalho **desenvolvimento do Python** (guia **Carga de Trabalho** no instalador). Para obter instruções, confira [Instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md).
@@ -133,7 +133,7 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
 1. Caso seja solicitado, concorde com os privilégios de administrador e aguarde alguns minutos enquanto o Visual Studio faz o download e instala pacotes. Para o Django isso significa expandir vários milhares de arquivos em muitas subpastas! Você pode ver o progresso na janela **Saída** no Visual Studio. Enquanto você aguarda, analise as seções de perguntas a seguir.
 
-1. Nos controles do GIT do Visual Studio (na barra de status), selecione o indicador de alterações (mostrando **99&#42;**) que abre a página **Alterações** no **Team Explorer**.
+1. Nos controles do GIT do Visual Studio (na barra de status), selecione o indicador de alterações (mostrando **99&#42;** ) que abre a página **Alterações** no **Team Explorer**.
 
     A criação do ambiente virtual apresentou milhares de alterações, mas nenhuma delas precisará ser incluída no controle do código-fonte já que você (ou qualquer outra pessoa que venha a clonar o projeto) poderá sempre recriar o ambiente com base em *requirements.txt*.
 

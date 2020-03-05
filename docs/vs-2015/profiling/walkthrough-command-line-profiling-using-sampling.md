@@ -33,7 +33,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo usando ferram
   
 - Analise os resultados da criação de perfil amostrada para localizar e corrigir problemas de desempenho.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ou [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   

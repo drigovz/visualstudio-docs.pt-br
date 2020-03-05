@@ -22,7 +22,7 @@ ms.locfileid: "65687643"
 
 Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal quando um arquivo que tem a extensão de nome de arquivo .myext é carregado.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto de pacote do Visual Studio  

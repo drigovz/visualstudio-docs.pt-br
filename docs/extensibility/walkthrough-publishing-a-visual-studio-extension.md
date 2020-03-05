@@ -22,7 +22,7 @@ ms.locfileid: "66337919"
 
 Este passo a passo mostra como publicar uma extensão do Visual Studio no Visual Studio Marketplace. Quando você adiciona sua extensão no Marketplace, os desenvolvedores podem usar **extensões e atualizações** para navegar pelas extensões novas e atualizadas.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -88,7 +88,7 @@ Este artigo usa uma extensão de VSPackage padrão, mas as etapas são válidas 
 
     * **Suporte para versões do Visual Studio** permite que você escolha quais versões do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas versões.
 
-    * * * Suporte para o Visual Studio edition permite que você escolha quais edições do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas edições.
+    * \* * Suporte para o Visual Studio edition permite que você escolha quais edições do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas edições.
 
     * **Tipo**. O tipo mais comum de extensões são **ferramentas**.
 

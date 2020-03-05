@@ -23,7 +23,7 @@ Os módulos escritos em C++ (ou em C) são geralmente usados para estender as fu
 
 - Módulos de acelerador: como o Python é uma linguagem interpretada, algumas partes do código podem ser escritas em C++ para um desempenho mais alto.
 - Módulos de wrapper: expõem interfaces C/C++ existentes para o código Python ou expõem uma API mais "Pythonic" fácil de usar do Python.
-- Módulos de acesso de baixo nível do sistema: criados para acessar os recursos de baixo nível do tempo de execução CPython, do sistema operacional ou do hardware subjacente.
+- Módulos de acesso de baixo nível do sistema: criados para acessar os recursos de baixo nível do runtime CPython, do sistema operacional ou do hardware subjacente.
 
 Este artigo explica como criar um módulo de extensão C++ para CPython que calcula uma tangente hiperbólica e faz uma chamada a ela do código Python. A rotina é implementada primeiro em Python para demonstrar o ganho de desempenho relativo da implementação da mesma rotina em C++.
 
@@ -36,7 +36,7 @@ Há uma comparação entre esses e outros meios em [abordagens alternativas](#al
 
 O exemplo completo deste passo a passo pode ser encontrado em [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio 2017 ou posterior com as cargas de trabalho **Desenvolvimento para Desktop com C++** e **Desenvolvimento do Python** instaladas com as opções padrão.
 - Na carga de trabalho **Desenvolvimento Python**, marque também a caixa à direita para **Ferramentas de desenvolvimento nativo em Python**. Essa opção define a maior parte da configuração descrita neste artigo. (Essa opção também inclui a carga de trabalho do C++ automaticamente.)
@@ -134,7 +134,7 @@ Siga as instruções nesta seção para criar dois projetos de C++ idênticos ch
     > Se a guia C/C++ não for exibida nas propriedades do projeto, isso indicará que o projeto não contém nenhum arquivo que ele identifica como arquivos de origem do C/C++. Essa condição poderá ocorrer se você criar um arquivo de origem sem uma extensão *.c* ou *.cpp*. Por exemplo, se você inseriu `module.coo` em vez de `module.cpp` acidentalmente na nova caixa de diálogo de item anteriormente, o Visual Studio criará o arquivo, mas não definirá o tipo de arquivo como “Código C/C+”, que é o que ativa a guia de propriedades do C/C++. Essa identificação incorreta continuará acontecendo mesmo se você renomear o arquivo com `.cpp`. Para configurar o tipo de arquivo corretamente, clique com o botão direito do mouse no arquivo no **Gerenciador de Soluções**, escolha **Propriedades** e, em seguida, defina **Tipo de Arquivo** como **Código C/C++** .
 
     > [!Warning]
-    > Sempre defina a opção **C/C++**  > **Geração de Código** > **Biblioteca de Tempo de Execução** para **DLL multithread (/MD)** , mesmo para uma configuração de depuração, porque os binários Python que não são de depuração são criados com essa configuração. Se, por acaso, em CPython você definir a opção **DLL de Depuração de Multithread (/MDd)** , compilar uma configuração de **Depuração** produzirá o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, com Py_TRACE_REFS e com Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` (que é necessário com CPython, mas não em PyBind11) para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
+    > Sempre defina a opção **C/C++**  > **Geração de Código** > **Biblioteca de Runtime**  para **DLL multithread (/MD)** , mesmo para uma configuração de depuração, porque os binários Python que não são de depuração são criados com essa configuração. Se, por acaso, em CPython você definir a opção **DLL de Depuração de Multithread (/MDd)** , compilar uma configuração de **Depuração** produzirá o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, com Py_TRACE_REFS e com Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` (que é necessário com CPython, mas não em PyBind11) para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
     >
     > A opção /MDd é usada para criar os binários de depuração Python (como *python_d.exe*), mas marcá-la para uma DLL de extensão ainda causará o erro de build com `Py_LIMITED_API`.
 
@@ -284,7 +284,7 @@ O primeiro método funcionará se o projeto Python e o projeto C++ estiverem na 
 
 O método alternativo, descrito nas etapas a seguir, instala o módulo no ambiente Python global, tornando-o disponível para outros projetos Python também. (Fazer isso normalmente requer que você atualize o banco de dados de preenchimento do IntelliSense para esse ambiente no Visual Studio 2017 versão 15.5 e anterior. A atualização também é necessária ao remover o módulo do ambiente.)
 
-1. Se estiver usando o Visual Studio 2017 ou posterior, execute o instalador do Visual Studio, escolha **Modificar** e escolha **Componentes Individuais** > **Compiladores, ferramentas de build e tempos de execução** > **conjunto de ferramentas do Visual C++ 2015.3 v140**. Essa etapa é necessária porque o Python (para o Windows) foi criado com o Visual Studio 2015 (versão 14.0) e espera que essas ferramentas estejam disponíveis durante o build de uma extensão por meio do método descrito aqui. (Observe que talvez seja necessário instalar uma versão de 32 bits do Python e direcionar a DLL para o Win32 e não para o x64).
+1. Se estiver usando o Visual Studio 2017 ou posterior, execute o instalador do Visual Studio, escolha **Modificar** e escolha **Componentes Individuais** > **Compiladores, ferramentas de build e runtimes** > **conjunto de ferramentas do Visual C++ 2015.3 v140**. Essa etapa é necessária porque o Python (para o Windows) foi criado com o Visual Studio 2015 (versão 14.0) e espera que essas ferramentas estejam disponíveis durante o build de uma extensão por meio do método descrito aqui. (Observe que talvez seja necessário instalar uma versão de 32 bits do Python e direcionar a DLL para o Win32 e não para o x64).
 
 1. Crie um arquivo chamado *setup.py* em seu projeto de C++ clicando com o botão direito do mouse no projeto e selecionando **Adicionar** > **Novo Item**. Em seguida, escolha **Arquivo do C++ (.cpp)** , nomeie o arquivo como `setup.py` e escolha **OK** (nomear o arquivo com a extensão *.py* faz com que o Visual Studio o reconheça como Python, apesar do uso do modelo do C++). Quando o arquivo for exibido no editor, cole o seguinte código nele conforme for adequado ao método de extensão:
 

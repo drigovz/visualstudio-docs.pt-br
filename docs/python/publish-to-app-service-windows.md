@@ -13,7 +13,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62784585"
@@ -30,7 +30,7 @@ O processo de publicação difere entre o Visual Studio 2017 e posterior e o Vis
 > [!Note]
 > Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017 e posterior, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para este passo a passo, você precisa de um projeto de aplicativo Web com base nas estruturas Bottle, Flask ou Django. Se você ainda não tem um projeto e deseja ver como funciona o processo de publicação, crie um projeto de teste simples da seguinte maneira:
 
@@ -79,7 +79,7 @@ Se desejar, você também pode instalar o pacote `bottle` usando o processo naqu
 
 A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017 e posterior copia somente os arquivos do seu projeto para o servidor. Portanto, é necessário criar os arquivos pertinentes para configurar o ambiente de servidor.
 
-1. No **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse no projeto e selecione **Adicionar > Novo Item...**. Na caixa de diálogo que é exibida, selecione o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz do seu projeto.
+1. No **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse no projeto e selecione **Adicionar > Novo Item...** . Na caixa de diálogo que é exibida, selecione o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz do seu projeto.
 
 1. Modifique a entrada `PythonHandler` em `web.config` para que o caminho corresponda à instalação do Python no servidor (consulte [Referência de configuração do IIS](https://www.iis.net/configreference) (iis.net) para obter detalhes exatos). Por exemplo, para o Python 3.6.1 x64, a entrada deve ser semelhante ao seguinte:
 
@@ -200,7 +200,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
   ![Publicar no Azure etapa 2](media/tutorials-common-publish-2.png)
 
-1. Selecione **Avançar >**, conforme necessário, para examinar as configurações adicionais.
+1. Selecione **Avançar >** , conforme necessário, para examinar as configurações adicionais.
 
 1. Selecione **Publicar**. Depois que o aplicativo for implantado no Azure, o navegador padrão será aberto nesse site.
 

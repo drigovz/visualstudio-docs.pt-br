@@ -33,7 +33,7 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
 - Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para gerar relatórios com base em arquivo dos dados de criação de perfil.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
   
 - [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   

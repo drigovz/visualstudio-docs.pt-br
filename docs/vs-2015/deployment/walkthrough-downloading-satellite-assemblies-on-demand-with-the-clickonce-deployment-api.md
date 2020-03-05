@@ -41,7 +41,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
 > [!NOTE]
 > Para fins de teste, o exemplo de código a seguir por meio de programação define a cultura para `ja-JP`. Consulte a seção "Próximas etapas" mais adiante neste tópico para obter informações sobre como ajustar esse código para um ambiente de produção.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  Este tópico pressupõe que você saiba como adicionar recursos localizados ao seu aplicativo usando o Visual Studio. Para obter instruções detalhadas, consulte [passo a passo: Localizando Windows Forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Para baixar os assemblies satélite por demanda  
@@ -57,7 +57,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
 4. Clique o **arquivos** guia.  
   
-5. Clique o **reticências** botão (**...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando Resgen.exe do seu aplicativo. (Um assembly satélite terá um nome na forma *isoCode*\ApplicationName.resources.dll, onde *isoCode* é um identificador de idioma no formato RFC 1766.)  
+5. Clique o **reticências** botão ( **...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando Resgen.exe do seu aplicativo. (Um assembly satélite terá um nome na forma *isoCode*\ApplicationName.resources.dll, onde *isoCode* é um identificador de idioma no formato RFC 1766.)  
   
 6. Clique em **popular** para adicionar os arquivos para sua implantação.  
   
