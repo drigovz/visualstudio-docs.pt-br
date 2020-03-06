@@ -31,7 +31,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
 - Criando um senso de espaço refletindo o ambiente.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes e habilidades para concluir este passo a passo:
 
 - Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.
