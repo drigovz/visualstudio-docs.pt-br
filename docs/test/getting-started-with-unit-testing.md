@@ -1,6 +1,6 @@
 ---
 title: Introdução ao teste de unidade
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279323"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289848"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -22,7 +22,7 @@ Use o Visual Studio para definir e executar testes de unidade para manter a inte
 
 ## <a name="create-unit-tests"></a>Criar testes de unidade
 
-Esta seção descreve, em um alto nível, como criar um projeto de teste de unidade.
+Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Abra o projeto que você deseja testar no Visual Studio.
 
@@ -72,7 +72,7 @@ Esta seção descreve, em um alto nível, como criar um projeto de teste de unid
 
 1. Adicione código ao método de teste de unidade.
 
-   Por exemplo, para um projeto de teste MSTest ou NUnit, você pode usar o código a seguir.
+   Por exemplo, para um projeto MSTest, você pode usar o código a seguir.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ Esta seção descreve, em um alto nível, como criar um projeto de teste de unid
    }
    ```
 
+   Ou, para um projeto NUnit, você pode usar o código a seguir.
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Confira uma explicação mais detalhada da criação de testes de unidade em [Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Para obter mais detalhes sobre como criar testes de unidade, consulte [criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
@@ -210,7 +244,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)
