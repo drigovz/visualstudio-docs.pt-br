@@ -3,15 +3,15 @@ title: Configurando administradores para assinaturas mensais | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Configurando administradores para assinaturas mensais
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235206"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289835"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
 
@@ -33,14 +33,22 @@ Para adicionar administradores:
 
 1. Conecte-se ao Portal do Azure em [portal.azure.com](https://portal.azure.com).
 2. Entre com a conta que você usou para comprar as assinaturas mensais do Visual Studio.
-3. No painel de navegação esquerdo, role para baixo até **Gerenciamento de Custos + Cobrança**.
+3. Em **Serviços do Azure**, escolha **Gerenciamento de custos + cobrança**.
+   > [!div class="mx-imgBorder"]
+   > ![escolha gerenciamento de custos + cobrança em serviços do Azure](_img/cloud-admin/azure-cost-billing.png)
 4. Na lista **Minhas assinaturas**, escolha a assinatura do Azure que você usou para fazer a compra.
-5. Clique em **Controle de acesso**, que está localizado na parte superior da lista no painel de navegação esquerdo.
+   > [!div class="mx-imgBorder"]
+   > ![escolher assinatura](_img/cloud-admin/subscription-list.png)
+5. Clique em **controle de acesso (iam)** , que está localizado próximo à parte superior da lista no painel de navegação esquerdo.
 6. Clique na guia **Adicionar** na parte superior da página.
 7. Clique em **Adicionar atribuição de função**.
+   > [!div class="mx-imgBorder"]
+   > ![escolher controle de acesso, adicionar, adicionar atribuição de função](_img/cloud-admin/access-control-add.png)
 8. No painel de submenu à direita, clique na lista suspensa **Função** na parte superior do painel, role para baixo e selecione **Administrador de Acesso do Usuário**.
 9. Na lista de usuários role para baixo até o usuário que você deseja tornar administrador e selecione-o. 
-10. Clique em **Save** (Salvar).
+   > [!div class="mx-imgBorder"]
+   > ![escolher função, administrador de acesso do usuário](_img/cloud-admin/add-role-user-access-admin.png)
+10. Clique em **Salvar**.
 11. Clique na guia **Atribuições de função** para verificar se o usuário selecionado é exibido como um Administrador de Acesso do Usuário.
 
 Agora, o novo administrador pode entrar no [portal de administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas mensais da lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
