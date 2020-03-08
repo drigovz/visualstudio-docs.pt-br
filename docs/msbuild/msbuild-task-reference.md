@@ -15,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633155"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865317"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 
-Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas no MSBuild. Quando a C++ carga de trabalho é instalada, são disponibilizadas tarefas adicionais que são C++ usadas para compilar projetos. Para obter mais informações, consulte [ C++ tarefas](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Tarefas fornecem o código que é executado durante o processo de build. As tarefas na lista a seguir são incluídas no MSBuild. Quando a C++ carga de trabalho é instalada, são disponibilizadas tarefas adicionais que são C++ usadas para compilar projetos. Para obter mais informações, consulte [ C++ tarefas](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também tem os parâmetros a seguir:
 
@@ -37,15 +37,15 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Classe base Task](../msbuild/task-base-class.md)
 
- Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Utilities.Task>.
+ Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Utilities.Task>. Não se destina a ser usado diretamente.
 
 - [Classe base TaskExtension](../msbuild/taskextension-base-class.md)
 
- Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Tasks.TaskExtension>. Não se destina a ser usado diretamente.
 
 - [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Adiciona vários parâmetros para as tarefas que derivam da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Não se destina a ser usado diretamente.
 
 - [Tarefa AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)
 

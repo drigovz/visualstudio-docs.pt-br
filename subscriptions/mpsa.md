@@ -3,20 +3,20 @@ title: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: e4416bfab95bd7d1c38c392bfbf9efee9a06fc7f
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605853"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410261"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 Quando você compra as assinaturas do Visual Studio por meio do programa MPSA, há algumas coisas a serem consideradas antes que você possa se tornar um administrador de assinaturas do Visual Studio e atribuir assinaturas a seus usuários. Se você já tiver sido configurado como administrador, acesse diretamente o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio.
 
-Os clientes do MPSA agora gerenciam ativos adquiridos por meio do MPSA em um novo portal chamado de [Centro de Empresas](https://businessaccount.microsoft.com/Customer), que dá suporte a funcionalidades semelhantes às do VLSC (Centro de Serviços de Licenciamento por Volume). Isso inclui exibir o resumo das licenças, os pedidos, os downloads, as chaves, os usuários, etc. No entanto, as assinaturas do Visual Studio no MPSA têm um comportamento semelhante aos dos serviços de nuvem. O Centro de Empresas também usa contas corporativas para entrar, em vez de contas da Microsoft (MSA). Se sua organização usar serviços de nuvem, como o Office 365 ou Azure Active Directory e seu email fizer parte de um desses dois serviços, ela já será uma conta corporativa. Isso permitirá que você se registre no Centro de Empresas com sua senha existente. Se sua organização não estiver usando serviços de nuvem e seu email não for de uma conta corporativa, você poderá usá-lo para se registrar no Centro de Empresas.
+Os clientes do MPSA agora gerenciam ativos adquiridos por meio do MPSA em um novo portal chamado de [Centro de Empresas](https://businessaccount.microsoft.com/Customer), que dá suporte a funcionalidades semelhantes às do VLSC (Centro de Serviços de Licenciamento por Volume). Isso inclui a exibição de seu resumo de licenças, pedidos, downloads, chaves, usuários, etc. No entanto, as assinaturas do Visual Studio no MPSA se comportam de maneira muito semelhante aos serviços de nuvem. O Centro de Empresas também usa contas corporativas para entrar, em vez de contas da Microsoft (MSA). Se sua organização usar serviços de nuvem, como o Office 365 ou Azure Active Directory e seu email fizer parte de um desses dois serviços, ela já será uma conta corporativa. Isso permitirá que você se registre no Centro de Empresas com sua senha existente. Se sua organização não estiver usando serviços de nuvem e seu email não for de uma conta corporativa, você poderá usá-lo para se registrar no Centro de Empresas.
 
 Além disso, o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio é onde as assinaturas são atribuídas aos assinantes depois que você se torna um administrador de assinaturas do Visual Studio. No MPSA, as assinaturas do Visual Studio precisam ser provisionadas no respectivo portal de gerenciamento, que é o portal de administração de assinaturas do Visual Studio. Para fazer isso, você precisa associar sua conta de compra a um locatário (por exemplo, contoso.onmicrosoft.com).
 
@@ -43,7 +43,12 @@ Depois de atender aos critérios acima, você poderá associar sua conta de comp
 4. Selecione o **locatário** (por exemplo, contoso.onmicrosoft.com).
 5. Clique em **Associar Domínio**.
 
-Após a associação, todos os usuários que atenderem aos critérios serão provisionados como administradores de assinaturas do Visual Studio em questão de minutos. No entanto, às vezes isso pode levar até 24 horas. Após o provisionamento do locatário, você poderá acessar o portal de administração de assinaturas do Visual Studio. Se esse processo levar mais de 24 horas, contate o suporte do MPSA.
+Após a associação, todos os usuários que atenderem aos critérios serão provisionados como administradores de assinaturas do Visual Studio em questão de minutos. No entanto, às vezes isso pode levar até 24 horas. Após o provisionamento do locatário, você poderá acessar o portal de administração de assinaturas do Visual Studio. Se isso demorar mais de 24 horas, entre em contato com o suporte do MPSA usando estas etapas:
+1. Conectar-se ao https://www.microsoft.com/licensing/mpsa/default
+2. Clique no menu **mais** na parte superior da página. 
+3. Escolha o **suporte**
+4. Escolher **suporte de licenciamento**
+5. Selecione a opção de suporte que melhor atenda às suas necessidades. 
 
 > [!NOTE]
 > Se novos usuários atenderem aos critérios das etapas 2 e 5 (após a associação), você precisará contatar o suporte do MPSA. O suporte do MPSA fornecerá assistência para provisionar novos administradores de assinaturas do Visual Studio.
@@ -51,7 +56,21 @@ Após a associação, todos os usuários que atenderem aos critérios serão pro
 ## <a name="tenant-association-unmanaged"></a>Associação do locatário (não gerenciado)
 Se você se registrou no Centro de Empresas com um email que não era de uma conta corporativa [não registrado no Azure AD (Azure Active Directory)], como explicado acima, a associação do locatário será um pouco diferente. Você precisará executar o que chamamos de "tomada de controle de domínio". Durante esse processo, você se tornará o administrador global que vai alterar o locatário de não gerenciado para gerenciado.
 
-Para obter uma explicação mais detalhada desse processo, use os [guias de Início Rápido](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Baixe o guia chamado *"Instalação e uso de serviços online"* que o mostrará como realizar uma tomada de controle de domínio. Quando esse processo for concluído, sua conta de compra também estará associada ao locatário.
+Para obter uma explicação mais detalhada desse processo, use os [guias de Início Rápido](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Baixe o guia chamado *"Instalação e uso de serviços online"* que o mostrará como realizar uma tomada de controle de domínio. Quando esse processo for concluído, sua conta de compra também estará associada ao locatário.
 
 > [!NOTE]
 > Depois de concluir o processo de tomada de controle de domínio, você precisará atender aos critérios das cinco etapas na seção Pré-associação do locatário (gerenciado). Quando os critérios forem atendidos, bastará contatar o suporte do MPSA para provisionar outros administradores de assinaturas do Visual Studio.
+
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+Saiba mais sobre como gerenciar assinaturas do Visual Studio.
+- [Atribuir assinaturas individuais](assign-license.md)
+- [Atribuir várias assinaturas](assign-license-bulk.md)
+- [Editar assinaturas](edit-license.md)
+- [Excluir assinaturas](delete-license.md)
+- [Determinar o uso máximo](maximum-usage.md)

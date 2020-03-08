@@ -3,24 +3,28 @@ title: Lidar com licenças superalocadas | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver excesso de alocações de assinaturas
-ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605514"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410282"
 ---
 # <a name="overallocated-subscriptions"></a>Assinaturas superalocadas
-Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Isso é chamado de "superalocação".  Quando isso ocorre, a guia Assinantes mostra um alerta e fornece mais informações sobre quantas assinaturas foram superalocadas.
+Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Isso é chamado de "superalocação".  
+
+Para ver as alocações de sua assinatura, clique no ícone superior à esquerda para abrir o painel alocações.  
 
 > [!NOTE]
 > Superalocações não são permitidos em programas Open License.  Além disso, outros programas podem exibir essas informações no portal de maneira diferente.
 >
 > [!div class="mx-imgBorder"]
 > ![Aviso de assinaturas solicitadas em excesso](_img/over-claimed/over-claimed-alert.png)
+
+Observe que a exibição usa uma barra com hash para indicar assinaturas Superalocadas.  O número de sobrealocações em todos os tipos de assinatura está incluído na seção de visão geral na parte superior e cada nível de assinatura também exibe seu próprio status de alocação.  
 
 ## <a name="resolve-overallocated-subscriptions"></a>Resolver assinaturas superalocadas
 Há várias maneiras de resolver superalocações:
@@ -36,6 +40,12 @@ Se sua organização tiver um EA (Contrato Enterprise), os administradores poder
 >
 > É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja uma assinatura correspondente do Visual Studio com o GitHub atribuída no portal de gerenciamento para permanecer em conformidade com os requisitos de licenciamento para este assinatura.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Saiba mais sobre como gerenciar [Assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
