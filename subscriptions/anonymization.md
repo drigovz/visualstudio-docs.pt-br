@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Saiba como os dados de assinante são anonimizados quando o acesso às assinaturas é perdido.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520833"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894414"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimização de informações de assinante do Visual Studio
 Quando ocorre um evento que bloqueia o uso de uma assinatura pelo assinante, como o término de uma assinatura ou a exclusão da conta de logon de um assinante, as informações pessoais do usuário, como nome e a conta de logon, são essencialmente embaralhadas para torná-las inutilizáveis.  Isso é feito para proteger as informações pessoais do assinante.
@@ -19,9 +19,9 @@ Quando ocorre um evento que bloqueia o uso de uma assinatura pelo assinante, com
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
 ## <a name="when-does-anonymization-occur"></a>Quando a anonimização ocorre?
-Eventos que inutilizam uma assinatura para um assinante dispararão a anonimização.  A rapidez com que a anonimização ocorre depende do tipo de assinatura e do evento de disparo. Consulte a tabela abaixo para obter mais informações.
+Eventos que inutilizam uma assinatura para um assinante dispararão a anonimização.  A rapidez com que a anonimização ocorre depende do tipo de assinatura e do evento de disparo. Confira a tabela abaixo para obter mais informações.
 
-| Tipo de Assinatura                                                                                                                       | Anonimização do gatilho de evento                                                                                                     | Quando a anonimização ocorre |
+| Tipo de assinatura                                                                                                                       | Anonimização do gatilho de evento                                                                                                     | Quando a anonimização ocorre |
 |-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------|
 | Visual Studio Dev Essentials                                                                                                            | O assinante recusa o programa ou não aceita os termos de uso                                    | 30 dias               |
 | Assinaturas do Visual Studio compradas por meio da Microsoft Store (varejo)                                                                      | A assinatura expira ou não é ativada                                                                   | 360 dias                  |
@@ -29,7 +29,7 @@ Eventos que inutilizam uma assinatura para um assinante dispararão a anonimiza�
 | Todas as assinaturas                                                                                                                       | Uma conta do Azure Active Directory ou MSA (Conta da Microsoft) usada para entrar na assinatura está fechada | Imediatamente               |
 | Todas as assinaturas                                                                                                                       | Um assinante é removido do locatário associado à conta do Azure Active Directory                                | Imediatamente               |
 
-## <a name="faq"></a>Perguntas frequentes
+## <a name="faq"></a>Perguntas Frequentes
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P: A anonimização das informações pessoais do assinante fará com que ele perca o acesso à assinatura?
 R: Não.  A anonimização é em resposta a um evento que ocasiona a perda de acesso à assinatura, mas não ocasiona a falta de acesso.
 
@@ -41,11 +41,13 @@ R: há duas maneiras de evitar o problema:
 - Implante um sistema de gerenciamento de identidades único, MSA ou AAD, mas não ambos.  
 - Associe as identidades do AAD e MSA por meio do locatário. 
 
-## <a name="next-steps"></a>Próximas etapas
-Saiba como impedir a anonimato ao [associar as identidades do MSA e do AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Saiba como impedir a anonimato ao [associar as identidades do MSA e do AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+

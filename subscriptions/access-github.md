@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba mais sobre a nova oferta do Visual Studio + GitHub
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476746"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894390"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introdução às assinaturas do Visual Studio com o GitHub Enterprise  
 
@@ -77,12 +77,14 @@ R: junto com uma assinatura do GitHub Enterprise, você recebe uma assinatura co
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenha [suporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
-## <a name="next-steps"></a>Próximas etapas
-Se você for novo no GitHub, confira o [Laboratório de Aprendizagem do GitHub](https://lab.github.com/), que mostra uma série de projetos divertidos e práticos, compartilhando comentários úteis.
-
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Se você for novo no GitHub, confira o [Laboratório de Aprendizagem do GitHub](https://lab.github.com/), que mostra uma série de projetos divertidos e práticos, compartilhando comentários úteis.
+
+
 
