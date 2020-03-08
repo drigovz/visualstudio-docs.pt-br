@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730320"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409403"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuração remota de C++ um projeto no Visual Studio
 Para depurar um aplicativo do Visual Studio em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implante e execute seu aplicativo.
@@ -31,7 +31,7 @@ Para depurar um aplicativo do Visual Studio em um computador diferente, instale 
 
 Para obter informações sobre a depuração remota de aplicativos do Windows universal (UWP), consulte [depurar um pacote do aplicativo instalado](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
 
 O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de telefone) e do Windows Server a partir do Windows Server 2008 Service Pack 2. Para obter uma lista completa dos requisitos, consulte [requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -67,13 +67,13 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 5. Faça as seguintes alterações nas propriedades:
 
-   |Configuração|Valor|
+   |Configuração|{1&gt;Valor&lt;1}|
    |-|-|
    |Comando remoto|C:\remotetemp\mymfc.exe|
-   |Diretório de trabalho|C:\remotetemp|
+   |Diretório de Trabalho|C:\remotetemp|
    |Nome do servidor remoto|MJO-DL:*PortNumber*|
    |Conexão|Remoto sem Autenticação do Windows|
-   |Tipo de Depurador|Somente Nativo|
+   |{1&gt;{2&gt;Tipo de Depurador&lt;2}&lt;1}|{1&gt;{2&gt;Somente Nativo&lt;2}&lt;1}|
    |Diretório de implantação|C:\remotetemp.|
    |Arquivos adicionais a implantar|C:\data\mymfcdata.txt.|
 
@@ -91,7 +91,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 10. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.
 
-     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, juntamente com a senha correta.
+     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, junto com a senha correta.
 
 11. No computador do Visual Studio, você deve ver que a execução é interrompida no ponto de interrupção.
 

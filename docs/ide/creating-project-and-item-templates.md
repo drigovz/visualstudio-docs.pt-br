@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589754"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409060"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -67,7 +67,7 @@ Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta
 
 Para obter mais informações sobre pastas de modelo, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Como criar modelos de item](../ide/how-to-create-item-templates.md)

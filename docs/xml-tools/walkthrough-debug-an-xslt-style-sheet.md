@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592471"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410107"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Walkthrough: Depurar uma folha de estilos XSLT
 
@@ -155,6 +155,6 @@ Os seguintes dois arquivos são usados por passo a passo.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
