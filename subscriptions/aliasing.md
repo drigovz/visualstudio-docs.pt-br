@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 53b277296e6923bb78717bb76a0c20d2861c29ce
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235114"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865382"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Entrar em assinaturas do Visual Studio pode falhar ao usar aliases
 Dependendo do tipo de conta usado para entrar, é possível que as assinaturas disponíveis não sejam exibidas corretamente ao entrar no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
@@ -39,7 +39,7 @@ Uma incompatibilidade de UPN pode ser encontrada quando uma empresa tem uma Acti
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Como corrigir uma incompatibilidade de UPN
 
-1. Acesse o portal de gerenciamento de administração do Visual Studio https://manage.visualstudio.com 
+1. Acesse o portal de gerenciamento de administração do Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. Localize o Assinante que tem o problema de incompatibilidade de UPN. (O recurso de [filtro](search-license.md) pode facilitar a localização de um assinante.)
 
@@ -55,7 +55,7 @@ As contas de assinatura pessoal também poderão enfrentar problemas se o endere
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Como detectar se sua conta de assinatura pessoal é afetada por um problema de alias
 
-1. Entrar no https://my.visualstudio.com/subscriptions
+1. Entrar no [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Verifique se o endereço de email de entrada listado no canto superior direito da página corresponde ao endereço usado para entrar.  Se o endereço de email conectado não for o mesmo que o endereço de email usado para acessar o site, haverá um conflito entre sua conta e o alias.
 
@@ -81,7 +81,7 @@ Como administrador, há duas opções para garantir que os assinantes entrem no 
 - A segunda opção (menos segura) é permitir que seus assinantes entrem usando um endereço de email diferente do seu endereço de email do diretório.
 
 Ambas as opções são configuradas no portal de administração ao concluir as seguintes etapas:  
-1. Entrar https://manage.visualstudio.com 
+1. Entrar [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. Se você estiver alterando um único usuário, selecione esse usuário na tabela e clique com o botão direito do mouse para editar. Isso abrirá um painel em que você pode modificar o endereço de email de entrada. Faça as atualizações necessárias no campo endereço de email de entrada. Clique em salvar e as alterações entrarão em vigor.  
 
@@ -90,14 +90,14 @@ Ambas as opções são configuradas no portal de administração ao concluir as 
 > [!NOTE]
 > Para alterações individuais e em massa, os Assinantes receberão um email com instruções de que seu endereço de email de entrada foi alterado e precisarão entrar usando o endereço de email atualizado. Também é importante observar que, se o assinante ativou anteriormente os benefícios do outro endereço de entrada, eles precisarão continuar usando o outro endereço de entrada para acessá-los.  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Atribuir assinaturas individuais](assign-license.md)
 - [Atribuir várias assinaturas](assign-license-bulk.md)

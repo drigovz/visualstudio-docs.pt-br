@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633220"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865369"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tarefas embutidas do MSBuild com RoslynCodeTaskFactory
 
 Semelhante ao [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), o RoslynCodeTaskFactory usa os compiladores Roslyn multiplataforma para gerar assemblies de tarefa na memória a serem usados como tarefas embutidas.  As tarefas do RoslynCodeTaskFactory são direcionadas ao .NET Standard e podem trabalhar nos runtimes do .NET Framework e do .NET Core, bem como no de outras plataformas, como Linux e Mac OS.
 
 >[!NOTE]
->O RoslynCodeTaskFactory está disponível apenas no MSBuild 15.8 e superiores.
+>O RoslynCodeTaskFactory está disponível apenas no MSBuild 15.8 e superiores. As versões do MSBuild seguem versões do Visual Studio, portanto, o RoslynCodeTaskFactory está disponível no Visual Studio 15,8 e superior.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>A estrutura de uma tarefa embutida com RoslynCodeTaskFactory
 
@@ -164,7 +164,7 @@ define esses três parâmetros:
 
 - `Tally`é um parâmetro de saída do tipo System.Int32.
 
-Se o elemento `Code` tem o atributo `Type` de `Fragment` ou `Method`, as propriedades são criadas automaticamente para cada parâmetro. Caso contrário, as propriedades devem ser declaradas explicitamente no código-fonte da tarefa e devem coincidir exatamente com suas definições de parâmetro.
+Se o elemento `Code` tem o atributo `Type` de `Fragment` ou `Method`, as propriedades são criadas automaticamente para cada parâmetro.  Em RoslynCodeTaskFactory, se o elemento `Code` tiver o atributo `Type` de `Class`, você não precisará especificar o `ParameterGroup`, já que ele é inferido do código-fonte (essa é uma diferença de `CodeTaskFactory`). Caso contrário, as propriedades devem ser declaradas explicitamente no código-fonte da tarefa e devem coincidir exatamente com suas definições de parâmetro.
 
 ## <a name="example"></a>Exemplo
 

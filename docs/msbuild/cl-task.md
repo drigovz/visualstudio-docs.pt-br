@@ -21,16 +21,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634455"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865330"
 ---
 # <a name="cl-task"></a>tarefa CL
 
-Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador produz arquivos executáveis ( *.exe*), arquivos de biblioteca de vínculo dinâmico ( *.dll*) ou arquivos de módulo de código ( *.netmodule*). Para obter mais informações, confira [Opções do compilador](/cpp/build/reference/compiler-options).
+Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador produz arquivos executáveis ( *.exe*), arquivos de biblioteca de vínculo dinâmico ( *.dll*) ou arquivos de módulo de código ( *.netmodule*). Para obter mais informações, consulte [Opções do compilador](/cpp/build/reference/compiler-options) e usar o [MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas da Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>parâmetros
 

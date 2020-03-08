@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633480"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865356"
 ---
 # <a name="message-task"></a>tarefa de mensagem
 
@@ -44,7 +44,7 @@ Registra uma mensagem em log durante um build.
 
  Se o parâmetro `Condition` avaliar para o `true`, o valor do parâmetro `Text` será registrado e a compilação dará continuidade à execução. Se um parâmetro `Condition` não existir, o texto da mensagem será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Por padrão, a mensagem é enviada para o agente de log de console do MSBuild. Isso pode ser alterado configurando o parâmetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. O agente de log interpreta o parâmetro `Importance`. Normalmente, uma mensagem definida como `high` é enviada quando o detalhe do agente está definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` ou superior. Uma mensagem definida como `low` é enviada quando o detalhamento do agente está definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
+ Por padrão, a mensagem é enviada a todos os agentes de log registrados. O agente de log interpreta o parâmetro `Importance`. Normalmente, uma mensagem definida como `high` é enviada quando o detalhe do agente é definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` ou posterior. Uma mensagem definida como `low` é enviada quando o detalhe do agente é definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed`.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 

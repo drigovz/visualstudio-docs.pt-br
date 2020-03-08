@@ -3,15 +3,15 @@ title: Introdução ao portal de administração de assinaturas | Visual Studio 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/07/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cc8a815317f46e01260f38e3ba974f89d928e49a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408947"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
 
@@ -25,7 +25,7 @@ Lembre-se desses pontos ao usar o Portal de Administração de Assinaturas do Vi
 - **Não compartilhe assinaturas entre assinantes.** As assinaturas devem ser atribuídas a indivíduos nomeados.  A atribuição de assinaturas a equipes não é permitida.  Você deverá atribuir uma assinatura a qualquer pessoa que usar completa ou parcialmente os benefícios da assinatura (software para desenvolvimento e teste, Microsoft Azure, e-learning, etc.).
 
 ## <a name="the-subscribers-page"></a>A página Assinantes
-Depois que você atribuir as assinaturas, a guia Assinantes fornecerá informações detalhadas sobre seus assinantes, incluindo:
+Depois de atribuir assinaturas, a guia Gerenciar assinantes fornece informações detalhadas sobre seus assinantes, incluindo:
 - O nome e o sobrenome de cada assinante.
 - O endereço de email deste usuário.
 - O nível de assinatura que foi atribuído.
@@ -37,12 +37,14 @@ Depois que você atribuir as assinaturas, a guia Assinantes fornecerá informaç
 - A preferência de idioma para o email de comunicação de atribuição do portal de administração.
 - Um campo opcional para um endereço de email diferente usado para comunicações de conexão.
 
-No lado esquerdo dessa página, são exibidas informações adicionais sobre o número de licenças de assinatura compradas, atribuídas e ainda disponíveis na organização para cada contrato.
+No canto superior esquerdo da página, há vários ícones que você pode selecionar para revelar uma visão geral da atribuição de assinatura, os detalhes do contrato e o relatório de uso máximo.
+
+Para ver informações adicionais sobre o número de licenças de assinatura adquiridas, atribuídas e ainda disponíveis em sua organização para cada contrato, clique no ícone superior para habilitar o painel de deslizamento.
 > [!div class="mx-imgBorder"]
 > ![Página Assinantes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>A página Detalhes
-Para obter mais informações sobre o contrato que você está exibindo, selecione a guia detalhes. Ele mostra o status do contrato, a conta de compra, os detalhes da organização, os superadministradores e outras informações pertinentes.
+Para obter mais informações sobre o contrato que você está exibindo, selecione o segundo ícone para ver a guia detalhes do contrato. O painel deslizante mostra o status do contrato, a conta de compra, os detalhes da organização, os superadministradores e outras informações pertinentes.
 > [!div class="mx-imgBorder"]
 > ![Página Detalhes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/details-page.png)
 
@@ -52,10 +54,17 @@ Para obter mais informações sobre o contrato que você está exibindo, selecio
 - [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>Consulte também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Saiba mais as políticas dos administradores:
 - [Visão geral das responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
+
