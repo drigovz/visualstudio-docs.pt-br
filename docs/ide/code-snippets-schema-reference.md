@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585425"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410135"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -104,13 +104,13 @@ A seguir está a estrutura do Elemento de código:
 
 Um valor de texto é obrigatório. Esse texto especifica o código, juntamente como os literais e objetos, que você pode usar quando esse snippet de código é inserido em um arquivo de código.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+### <a name="attributes"></a>Atributos
 
 Há três atributos disponíveis para o Elemento de código:
 
 - **Language** - Atributo _requerido_ que especifica a linguagem do snippet de código. O valor pode ser um dos seguintes:
 
-   |Value|Descrição|
+   |{1&gt;Valor&lt;1}|Descrição|
    |-----|-----------|
    |`VB`|Identifica um snippet de código Visual Basic.|
    |`CSharp`|Identifica um snippet de código C#.|
@@ -123,7 +123,7 @@ Há três atributos disponíveis para o Elemento de código:
 
 - O atributo **Tipo** - _Opcional_ que especifica o tipo de código que o snippet contém. O valor pode ser um dos seguintes:
 
-   |Value|Descrição|
+   |{1&gt;Valor&lt;1}|Descrição|
    |-----|-----------|
    |`method body`|Especifica que o snippet de código é um corpo de método e, portanto, deve ser inserido em uma declaração de método.|
    |`method decl`|Especifica que o snippet de código é um método e, portanto, deve ser inserido em uma classe ou um módulo.|
@@ -657,7 +657,7 @@ Especifica uma URL que fornece mais informações sobre o assembly referenciado.
 
 Um valor de texto é obrigatório. Esse texto especifica uma URL com mais informações sobre o assembly referenciado. Essa URL é exibida quando a referência não pode ser adicionada ao projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../ide/code-snippets.md)
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)

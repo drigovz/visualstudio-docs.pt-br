@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849798"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409505"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
  Para obter mais informações, consulte [integrar modelos UML com outros modelos e ferramentas](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Geração
+## <a name="generation"></a>Generation
  A partir de um modelo, você pode gerar código de programa, scripts, configurações, documentos, novos modelos ou outros artefatos.
 
  Nos sistemas bagagem que a Fabrikam projeta, grande parte do código do programa é a mesma de um projeto para o outro. O principal aspecto variável é o plano do fluxo de bagagem em todo o aeroporto. Depois que a equipe de design teve a experiência de seus primeiros projetos, os desenvolvedores de ferramentas criam um modelo que gera, do modelo de fluxo bagagem, grande parte do código de programa variável e outros arquivos, como documentos de usuário. Isso reduz consideravelmente o tempo de desenvolvimento e a taxa de erros para cada novo projeto.
@@ -106,7 +106,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
  Para obter mais informações, consulte [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="domain-specific-languages"></a>Linguagens específicas do domínio
+## <a name="domain-specific-languages"></a>Linguagens específicas de domínio
  Onde você usa com frequência um tipo específico de modelo, pode ser útil criar uma linguagem específica de domínio. Isso pode ser feito para atender às suas necessidades de negócios de forma mais próxima do que um modelo UML, mas requer mais esforço para compilá-lo e mantê-lo. Para obter mais informações, consulte [SDK de modelagem para Visual Studio-linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Recursos Externos

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594169"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410121"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -160,7 +160,7 @@ Se você pressionar a **Guia**, o IntelliSense criará um stub de um método com
 > [!NOTE]
 > Use o comando **Navegação Regressiva** no menu **Exibir** (**Ctrl**+ **-** ) para retornar à declaração de vínculo de evento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Usar o IntelliSense](../ide/using-intellisense.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

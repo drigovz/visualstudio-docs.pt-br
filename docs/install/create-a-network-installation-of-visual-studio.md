@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115380"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410095"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -41,7 +41,7 @@ Para obter um bootstrapper para o Visual Studio 2017, consulte a página de down
 
 O executável da instalação&mdash;ou para ser mais específico, o arquivo bootstrapper&mdash;deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Nome do Arquivo |
+| Edição | Nome de arquivo |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -284,7 +284,7 @@ Oferecemos também uma opção de suporte por meio de [**chat ao vivo**](https:/
 
 Também temos outras opções de suporte disponíveis. Para obter uma lista, confira nossa página de [comentários](../ide/feedback-options.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 - [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
