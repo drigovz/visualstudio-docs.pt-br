@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4dec93101cb7399da3cd493af38c0559f0ed9dee
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476736"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894373"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
 As assinaturas do Visual Studio simplificam o gerenciamento de ativos ao contar usuários em vez de dispositivos.
@@ -29,16 +29,18 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Próximas etapas
-Saiba mais as políticas dos administradores:
-- [Responsabilidades do administrador](admin-responsibilities.md)
-- [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
-- Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
-
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Saiba mais as políticas dos administradores:
+- [Responsabilidades do administrador](admin-responsibilities.md)
+- [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
+
+
 
