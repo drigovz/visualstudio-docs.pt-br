@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822397"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409921"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela Interativa do Python
 
@@ -25,16 +25,16 @@ O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impress�
 
 O Visual Studio tem diversos modos REPL do Python à sua disposição:
 
-| REPL | DESCRIÇÃO | Edição | Depuração | Imagens |
+| REPL | Descrição | Edição | Depuração | Imagens |
 | --- | --- | --- | --- | --- |
-| Padrão | REPL padrão, que se comunica com o Python diretamente | Edição padrão (várias linhas etc.). | Sim, por meio de `$attach` | Não |
-| Depurar | REPL padrão, que se comunica com o processo depurado do Python | Edição padrão | Somente depuração | Não |
+| Standard | REPL padrão, que se comunica com o Python diretamente | Edição padrão (várias linhas etc.). | Sim, por meio de `$attach` | Não |
+| Depuração | REPL padrão, que se comunica com o processo depurado do Python | Edição padrão | Somente depuração | Não |
 | IPython | O REPL se comunica com o back-end do IPython | Comandos do IPython, funcionalidades do Pylab | Não | Sim, embutido no REPL |
 | IPython sem Pylab | O REPL se comunica com o back-end do IPython | IPython padrão | Não | Sim, em uma janela separada |
 
 Este artigo descreve os modos REPL **Padrão** e **Depuração**. Para obter detalhes sobre os modos do IPython, confira [Usar o REPL do IPython](interactive-repl-ipython.md).
 
-Para obter um passo a passo detalhado com exemplos, incluindo as interações com o editor, como **Ctrl**+**Enter**, confira [Etapa 3 do Tutorial: Usar a janela Interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Para um passo a passo detalhado com exemplos, incluindo as interações com o editor, como **Ctrl**+**Enter**, confira [Etapa 3 do tutorial: usar a janela Interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Abrir uma janela Interativa
 
@@ -73,7 +73,7 @@ A exceção é quando as linhas de código adicionais são necessárias para faz
 
 <a name="meta-commands"></a> A janela **Interativa** também dá suporte a vários metacomandos. Todos os metacomandos começam com `$` e é possível digitar `$help` para obter uma lista dos metacomandos e `$help <command>` para obter detalhes de uso de um comando específico.
 
-| Metacomando | DESCRIÇÃO |
+| Metacomando | Descrição |
 | --- | --- |
 | `$$` | Insere um comentário, que é útil para comentar o código ao longo da sessão. |
 | `$attach` | Anexa o depurador do Visual Studio ao processo da janela REPL para habilitar a depuração. |
@@ -104,10 +104,10 @@ Além de poder trabalhar na janela **Interativa** diretamente, é possível esco
 
 ![Comando de menu Enviar para interativa](media/interactive-send-to.png)
 
-Esse comando é útil para o desenvolvimento de código iterativo ou evolucionário, incluindo o teste do código durante o desenvolvimento. Por exemplo, depois de enviar um trecho de código para a janela **Interativa** e ver sua saída, é possível pressionar a seta para cima para exibir o código novamente, modificá-lo e testá-lo rapidamente pressionando **Ctrl**+**Enter**. (Pressionar **Enter** no final da entrada o executa, mas pressionar **Enter** no meio da entrada insere uma nova linha.) Depois de obter o código desejado, é possível copiá-lo novamente com facilidade para o arquivo de projeto.
+Esse comando é útil para o desenvolvimento de código iterativo ou evolucionário, incluindo o teste do código durante o desenvolvimento. Por exemplo, depois de enviar um trecho de código para a janela **Interativa** e ver sua saída, é possível pressionar a seta para cima para exibir o código novamente, modificá-lo e testá-lo rapidamente pressionando **Ctrl**+**Enter**. (Pressionar **Enter** no final da entrada a executa, mas pressionar **Enter** no meio da entrada insere uma nova linha.) Depois de ter o código desejado, você poderá copiá-lo facilmente de volta para o arquivo de projeto.
 
 > [!Tip]
-> Por padrão, o Visual Studio remove **>>>** e **...** O REPL emite um prompt ao colar o código da janela **Interativa** no editor. Você pode alterar esse comportamento na guia **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Avançado** usando a opção **Colar remove os prompts REPL**. Consulte [Opções – Opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Por padrão, o Visual Studio remove **>>>** e **..** . O REPL solicita ao colar o código da janela **interativa** no editor. Você pode alterar esse comportamento na guia **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Avançado** usando a opção **Colar remove os prompts REPL**. Consulte [Opções – Opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 

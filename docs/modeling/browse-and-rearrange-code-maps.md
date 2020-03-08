@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e38308c5bb94028fa17e78740da2b0df2779447
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590599"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409483"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procurar e reorganizar mapas de código
 
@@ -35,7 +35,7 @@ Reorganize os itens em mapas de código para torná-los mais fáceis de ler e me
 
 Você pode personalizar mapas de código sem afetar o código subjacente em uma solução. Isso é útil quando você deseja se concentrar em elementos de código-chave ou comunicar ideias sobre o código. Por exemplo, para realçar áreas interessantes, você pode selecionar elementos de código no mapa e filtrá-los, alterar o estilo de elementos de código e links, ocultar ou excluir elementos de código e organizar elementos de código usando propriedades, categorias ou grupos.
 
- **Requirements**
+ **Requisitos**
 
 - Para criar mapas de código, você deve ter Visual Studio Enterprise.
 
@@ -108,7 +108,7 @@ Os mapas de código mostram estes tipos de links:
 |-|-|
 |Veja mais informações sobre um nó ou um link.|Mova o ponteiro do mouse sobre o nó ou o link até que uma dica de ferramenta seja exibida.<br /><br /> A dica de ferramenta para um link agregado lista as dependências individuais que ela representa.<br /><br /> - ou -<br /><br /> Abra o menu de atalho para o nó ou o link. Escolha **Editar**, **Propriedades**.|
 |Mostrar ou ocultar o conteúdo de um grupo.|-Para expandir um grupo, abra o menu de atalho para o nó e escolha **Agrupar**, **expanda**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre a parte superior do nó até que o botão de divisa (seta para baixo) seja exibido. Clique neste botão para expandir o grupo. Teclado: para expandir ou recolher o grupo selecionado, pressione a tecla de **adição** ( **+** ) ou a tecla **menos** ( **-** ).<br />-Para recolher um grupo, abra o menu de atalho do nó e escolha **Agrupar**, **recolher**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre o início de um grupo até que o botão de divisa (seta para cima) seja exibido. Clique neste botão para recolher o grupo.<br />-Para expandir todos os grupos, pressione **CTRL** + **a** para selecionar todos os nós. Abra o menu de atalho para o mapa e escolha **Agrupar**, **expanda**. **Observação:**      Esse comando não estará disponível se a expansão de todos os grupos gerar um mapeamento inutilizável ou problemas de memória. É recomendável que você expanda o mapa somente para o nível de detalhe sobre o qual você se preocupa.<br />-Para recolher todos os grupos, abra o menu de atalho para um nó ou para o mapa. Escolha **grupo**, **recolher tudo**.|
-|Consulte a definição de código para um namespace, tipo ou membro.|Abra o menu de atalho para o nó e escolha **ir para definição**.<br /><br /> - ou -<br /><br /> Clique duas vezes no nó. Para grupos expandidos, clique duas vezes no cabeçalho do grupo.<br /><br /> - ou -<br /><br /> Selecione o nó e pressione **F12**.<br /><br /> Por exemplo:<br /><br /> -Para um namespace que contém uma classe, o arquivo de código para a classe é aberto para mostrar a definição dessa classe. Em outros casos, a janela **Localizar resultados de símbolo** mostra uma lista de arquivos de código. **Observação:**      Quando você executa essa tarefa em um namespace Visual Basic, o arquivo de código por trás do namespace não abre. Esse problema também ocorre quando você executa essa tarefa em um grupo de nós selecionados que incluem um namespace Visual Basic. Para contornar esse problema, navegue manualmente até o arquivo de código por trás do namespace ou omita o nó do namespace da sua seleção.<br />-Para uma classe ou uma classe parcial, o arquivo de código para essa classe é aberto para mostrar a definição de classe.<br />-Para um método, o arquivo de código para a classe pai é aberto para mostrar a definição do método.|
+|Consulte a definição de código para um namespace, tipo ou membro.|Abra o menu de atalho para o nó e escolha **ir para definição**.<br /><br /> \- ou -<br /><br /> Clique duas vezes no nó. Para grupos expandidos, clique duas vezes no cabeçalho do grupo.<br /><br /> \- ou -<br /><br /> Selecione o nó e pressione **F12**.<br /><br /> Por exemplo:<br /><br /> -Para um namespace que contém uma classe, o arquivo de código para a classe é aberto para mostrar a definição dessa classe. Em outros casos, a janela **Localizar resultados de símbolo** mostra uma lista de arquivos de código. **Observação:**      Quando você executa essa tarefa em um namespace Visual Basic, o arquivo de código por trás do namespace não abre. Esse problema também ocorre quando você executa essa tarefa em um grupo de nós selecionados que incluem um namespace Visual Basic. Para contornar esse problema, navegue manualmente até o arquivo de código por trás do namespace ou omita o nó do namespace da sua seleção.<br />-Para uma classe ou uma classe parcial, o arquivo de código para essa classe é aberto para mostrar a definição de classe.<br />-Para um método, o arquivo de código para a classe pai é aberto para mostrar a definição do método.|
 |Examine as dependências e os itens que participam de um link de agregação.|Selecione os links nos quais você está interessado e abra o menu de atalho para sua seleção. Escolha **Mostrar links contribuintes** ou **Mostrar links contribuintes no novo mapa de código**.<br /><br /> O Visual Studio expande os grupos em ambas as extremidades do link e mostra apenas esses itens e dependências que participam do link. **Observação:**  Ao examinar as dependências entre os itens em grupos parciais, você poderá ver esse comportamento: <ul><li>Os links para itens que não participam de seu exame desaparecem do mapa, embora esses links ainda existam.</li><li>Suponha que você examine um link para um item em um grupo parcial e, posteriormente, examine um link diferente para o mesmo item. Durante o segundo exame, o grupo de destino parcial mostra apenas os itens de seu primeiro exame. Os links e itens de destino que não participaram de seu primeiro exame, mas que participam do segundo exame não aparecem.</li></ul> Para ver os itens ausentes de um grupo, escolha **rebuscar filhos**![ícone de rebusca de filhos](../modeling/media/dependencygraph_deletednodesicon.png) (que indica que nem todos os membros de um grupo aparecem no mapa). Você também pode tentar desfazer suas ações (teclado: pressione **Ctrl + Z**) e examine as dependências em um novo mapa.|
 |Examine as dependências em vários nós em grupos diferentes.|Expanda os grupos para que você possa ver todos os seus filhos. Selecione todos os nós que lhe interessam, incluindo seus filhos. O mapa mostra os links entre grupos entre os nós selecionados.<br /><br /> Para selecionar todos os nós em um grupo, pressione e mantenha pressionada a **tecla Shift** e o botão esquerdo do mouse enquanto desenha um retângulo em volta desse grupo. Para selecionar todos os nós em um mapa, pressione **CTRL**+**a**. **Dica:**  Para mostrar os links entre grupos em todos os momentos, escolha **layout** na barra de ferramentas do mapa, **avançado**, **Mostrar todos os links entre grupos**.|
 |Consulte os itens referenciados por um nó ou link.|Abra o menu de atalho para o nó e escolha **Localizar todas as referências**. **Observação:**  Isso se aplica somente quando o atributo `Reference` é definido para o nó ou link no arquivo. dgml do mapa. Para adicionar referências a itens de nós ou links, consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
@@ -195,7 +195,7 @@ Você pode exibir mais ou menos itens em um mapa para fazer uma busca detalhada 
 
 4. Tab para e selecione o elemento de código de destino para o link.
 
-5. Pressione **ENTER**.
+5. Pressione **Enter**.
 
 ### <a name="AddComments"></a>
 
@@ -283,7 +283,7 @@ Você pode alterar os ícones em elementos de código e as cores de elementos de
     |Cor do plano de fundo|**Tela de Fundo**|
     |Cor do contorno|**Pincel**|
     |Cor do texto (uma letra "f" é exibida para mostrar o resultado)|**Frente**|
-    |Ícone|**Ícones**|
+    |ícone|**Ícones**|
 
      A caixa de diálogo **seletor de conjunto de cores** ou **seletor de conjunto de ícones** é exibida para que você selecione uma cor ou um ícone.
 
@@ -326,7 +326,7 @@ Você pode mesclar mapas copiando e colando elementos de código entre mapas. Se
 
 Como alternativa, você pode arrastar esses assemblies ou binários para o mesmo mapa dessa pasta.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

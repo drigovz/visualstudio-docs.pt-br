@@ -9,11 +9,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 843829c56fcbd2f5c558d7c4a8b14a660a431eac
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558227"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410540"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "77558227"
 
 ### <a name="style-details"></a>Detalhes do estilo
 
-#### <a name="layout"></a>Layout
+#### <a name="layout"></a>{1&gt;Layout&lt;1}
  Elementos de pilha, conforme mostrado nos ícones de 16x16 padrão:
 
  ![Pilha de layout para ícones 16x16](../../extensibility/ux-guidelines/media/0404-15-layoutstack.png "0404-15_LayoutStack")
@@ -306,7 +306,7 @@ ms.locfileid: "77558227"
 ### <a name="base-palette"></a>Paleta de base
  Todos os ícones padrão contêm três cores de base. Os ícones não contêm gradientes ou sombras projetadas, com uma ou duas exceções para ícones de ferramenta 3D.
 
-|Uso|Nome|Valor (tema claro)|Essas|Exemplo|
+|Uso|{1&gt;Nome&lt;1}|Valor (tema claro)|Essas|{1&gt;Exemplo&lt;1}|
 |-----------|----------|---------------------------|------------|-------------|
 |Plano de fundo/escuro|VS BG|424242 / 66,66,66|![Amostra 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![Exemplo de paleta de base](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primeiro plano/luz|VS FG|F0EFF1 / 240,239,241|![F0EFF1 de amostra](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
@@ -319,7 +319,7 @@ ms.locfileid: "77558227"
 #### <a name="action-modifiers"></a>Modificadores de ação
  As quatro cores abaixo indicam os tipos de ações exigidas pelos modificadores de ação:
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Positivo|Ação VS verde|388A34 / 56,138,52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
 |Negativo|Ação VS vermelho|A1260D/161, 38, 13|![A1260D de amostra](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
@@ -360,21 +360,21 @@ ms.locfileid: "77558227"
 
 ### <a name="code-hierarchy-palette"></a>Paleta de hierarquia de código
 
-#### <a name="folder"></a>Pasta
+#### <a name="folder"></a>Folder
 
-|Uso|Nome|Valor (todos os temas)|Essas|Exemplo|
+|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|{1&gt;Exemplo&lt;1}|
 |-----------|----------|--------------------------|------------|-------------|
-|Pastas|Pasta|DCB67A / 220,182,122|![DCB67A de amostra](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Ícone de cor da pasta](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
+|Folders|Folder|DCB67A / 220,182,122|![DCB67A de amostra](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Ícone de cor da pasta](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguagens do Visual Studio
  Cada um dos idiomas ou plataformas comuns disponíveis no Visual Studio tem uma cor associada. Essas cores são usadas no ícone base ou em modificadores de idioma que aparecem no canto superior direito dos ícones compostos.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML ASP WPF azul|0095D7/0149.215|![0095D7 de amostra](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|CPP roxo|9B4F96 / 155,79,150|![9B4F96 de amostra](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
 |C#|CS verde (VS ação verde)|388A34 / 56,138,52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|CSS|CSS vermelho|BD1E2D / 189,30,45|![BD1E2D de amostra](../../extensibility/ux-guidelines/media/0405-bd1e2d.png "0405_BD1E2D")|
+|{1&gt;CSS&lt;1}|CSS vermelho|BD1E2D / 189,30,45|![BD1E2D de amostra](../../extensibility/ux-guidelines/media/0405-bd1e2d.png "0405_BD1E2D")|
 |F#|Roxo de FS|672878 / 103,40,120|![Amostra 672878](../../extensibility/ux-guidelines/media/0405-672878.png "0405_672878")|
 |JavaScript|Laranja do JS|F16421/241100, 33|![F16421 de amostra](../../extensibility/ux-guidelines/media/0405-f16421.png "0405_F16421")|
 |VB|VB azul (VS Action azul)|00539C/0, 83156|![00539C de amostra](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
@@ -391,12 +391,12 @@ ms.locfileid: "77558227"
 #### <a name="intellisense"></a>IntelliSense
  Os ícones do IntelliSense usam uma paleta de cores exclusiva. Essas cores são usadas para ajudar os usuários a distinguir rapidamente entre os diferentes itens na lista de pop-ups do IntelliSense.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Classe, evento|Ação do VS laranja|C27D1A/194125, 26|![C27D1A de amostra](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |Método de extensão, método, módulo, delegado|Ação VS roxa|652D90/101, 45144|![652D90 de amostra](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
 |Campo, item de enumeração, macro, estrutura, tipo de valor Union, operador, interface|Azul de ação VS|00539C/0, 83156|![00539C de amostra](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
-|Objeto|Ação VS verde|388A34 / 56,138,52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|Object|Ação VS verde|388A34 / 56,138,52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
 |Constante, exceção, item de enumeração, mapa, item de mapa, namespace, modelo, definição de tipo|Plano de fundo (VS BG)|424242 / 66,66,66|![Amostra 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|
 
 ##### <a name="examples-of-intellisense-icons"></a>Exemplos de ícones do IntelliSense
@@ -409,7 +409,7 @@ ms.locfileid: "77558227"
 ### <a name="notifications"></a>Notificações
  As notificações no Visual Studio são usadas para indicar o status. A paleta de notificação usa as quatro cores a seguir, bem como opções de preenchimento de primeiro plano preto ou branco, para definir notificações com os seguintes níveis de status.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Status: neutro|Notificação azul (VS. azul)|1BA1E2/27.161.226|![1BA1E2 de amostra](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |Status: positivo|Notificação verde (VS verde)|339933 / 51,153,51|![Amostra 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -427,26 +427,26 @@ ms.locfileid: "77558227"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Em geral, o Visual Studio online consiste em recursos hospedados em um navegador. A cor varia em ambientes diferentes, mas o estilo permanece o mesmo.
 
-|Grupo|Uso|Nome|Valor (todos os temas)|Essas|
+|Grupo|Uso|{1&gt;Nome&lt;1}|Valor (todos os temas)|Essas|
 |-----------|-----------|----------|--------------------------|------------|
-|TFS|Informações preliminares|BG TFSO|656565/ 101, 101, 101|![Amostra 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
+|TFS|Tela de fundo|BG TFSO|656565/ 101, 101, 101|![Amostra 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Contorno|TFSO OUT|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Napa|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Mônaco|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|Informações preliminares|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|Normal|Grey_Primary F12|555555 / 85, 85, 85|![Amostra 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
-|F12|Hover|Blue_Hover F12|2279BF/34.121.191|![2279BF de amostra](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Disabled|F12 LtGrey_Disabled|ABABAC/171.171.172|![ABABAC de amostra](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
-|F12|Plano de fundo em foco|Focalizar BG|D9EBF7 / 217,235,247|![D9EBF7 de amostra](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
-|F12|Plano de fundo pressionado|BG pressionado|B2D7F0 / 178,215,240|![B2D7F0 de amostra](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
-|F12|Contorno|VS OUT|F6F6F6 / 246,246,246|![F6F6F6 de amostra](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
-|F12|Informações|Informações|00BCF2/0188.242|![00BCF2 de amostra](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
-|F12|Aviso|Aviso|F28300 / 242,131,0|![F28300 de amostra](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
-|F12|Erro/negativo|Error_Negative|E81123/232, 17, 35|![E81123 de amostra](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
-|F12|Iniciar/positivo|Start_Positive|009E49 / 0,158,73|![009E49 de amostra](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|
-|F12|Tipo de interrupção|Tipo de interrupção|9B4F96 / 155,79,150|![9B4F96 de amostra](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
-|F12|Marca de evento|Marca de evento|A51F00 / 165,31,0|![A51F00 de amostra](../../extensibility/ux-guidelines/media/0405-a51f00.png "0405_A51F00")|
-|F12|Marca do usuário|Marca do usuário|F16220/241, 98, 32|![F16220 de amostra](../../extensibility/ux-guidelines/media/0405-f16220.png "0405_F16220")|
+|Napa|Tela de fundo|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Mônaco|Tela de fundo|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|{1&gt;F12&lt;1}|Tela de fundo|Branco|FFFFFF / 255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|{1&gt;F12&lt;1}|Normal|Grey_Primary F12|555555 / 85, 85, 85|![Amostra 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
+|{1&gt;F12&lt;1}|Hover|Blue_Hover F12|2279BF/34.121.191|![2279BF de amostra](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
+|{1&gt;F12&lt;1}|Desabilitado|F12 LtGrey_Disabled|ABABAC/171.171.172|![ABABAC de amostra](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|{1&gt;F12&lt;1}|Plano de fundo em foco|Focalizar BG|D9EBF7 / 217,235,247|![D9EBF7 de amostra](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
+|{1&gt;F12&lt;1}|Plano de fundo pressionado|BG pressionado|B2D7F0 / 178,215,240|![B2D7F0 de amostra](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
+|{1&gt;F12&lt;1}|Contorno|VS OUT|F6F6F6 / 246,246,246|![F6F6F6 de amostra](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
+|{1&gt;F12&lt;1}|{1&gt;Informações&lt;1}|{1&gt;Informações&lt;1}|00BCF2/0188.242|![00BCF2 de amostra](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
+|{1&gt;F12&lt;1}|Aviso|Aviso|F28300 / 242,131,0|![F28300 de amostra](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
+|{1&gt;F12&lt;1}|Erro/negativo|Error_Negative|E81123/232, 17, 35|![E81123 de amostra](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
+|{1&gt;F12&lt;1}|Iniciar/positivo|Start_Positive|009E49 / 0,158,73|![009E49 de amostra](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|
+|{1&gt;F12&lt;1}|Tipo de interrupção|Tipo de interrupção|9B4F96 / 155,79,150|![9B4F96 de amostra](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
+|{1&gt;F12&lt;1}|Marca de evento|Marca de evento|A51F00 / 165,31,0|![A51F00 de amostra](../../extensibility/ux-guidelines/media/0405-a51f00.png "0405_A51F00")|
+|{1&gt;F12&lt;1}|Marca do usuário|Marca do usuário|F16220/241, 98, 32|![F16220 de amostra](../../extensibility/ux-guidelines/media/0405-f16220.png "0405_F16220")|
 
 #### <a name="examples-of-visual-studio-online-icons"></a>Exemplos de ícones do Visual Studio online
 
@@ -462,6 +462,6 @@ ms.locfileid: "77558227"
 |------------|-|-|-|
 |**Arquivos** de ![ícone de arquivos Mônaco](../../extensibility/ux-guidelines/media/0405-57-monacofiles.png "0405-57_MonacoFiles")|![Ícone de git de Mônaco](../../extensibility/ux-guidelines/media/0405-58-monacogit.png "0405-58_MonacoGit") **git**|![](../../extensibility/ux-guidelines/media/0405-59-monacosearch.png "0405-59_MonacoSearch") **Pesquisa** de ícone de pesquisa de Mônaco|**Texto** do ![ícone de texto Mônaco](../../extensibility/ux-guidelines/media/0405-60-monacotext.png "0405-60_MonacoText")|
 
-|F12||||
+|{1&gt;F12&lt;1}||||
 |---------|-|-|-|
 |![Ícone de código de boa](../../extensibility/ux-guidelines/media/0405-61-f12prettycode.png "0405-61_F12PrettyCode") **-código** F12|**Aviso** de ![ícone de aviso F12](../../extensibility/ux-guidelines/media/0405-62-f12warning.png "0405-62_F12Warning")|**Emular** ![ícone de emulação F12](../../extensibility/ux-guidelines/media/0405-63-f12emulate.png "0405-63_F12Emulate")|
