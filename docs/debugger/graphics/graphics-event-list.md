@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911498"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409328"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio para explorar os eventos do Direct3D que foram registrados durante a renderização de um quadro de seu jogo ou aplicativo.
@@ -52,7 +52,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 - Na janela **lista de eventos de gráficos** , acima da lista de eventos, localize o menu suspenso **exibição** e escolha o modo de exibição de **linha do tempo** ou o modo de exibição de **trabalho GPU** .
 
 ### <a name="filtering-events"></a>Filtrando eventos
- É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas, como `Vertex`, conforme mostrado na ilustração anterior — ou várias palavras-chave usando uma lista delimitada por ponto-e-vírgula, como `Draw;Primitive` — que corresponde a eventos que têm `Draw` ou `Primitive` em seus nomes. As pesquisas são sensíveis ao espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.
+ É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas, como `Vertex`, conforme mostrado na ilustração anterior — ou várias palavras-chave usando uma lista delimitada por ponto-e-vírgula, como `Draw;Primitive`— que corresponde a eventos que têm `Draw` ou `Primitive` em seus nomes. As pesquisas são sensíveis ao espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.
 
 ### <a name="moving-between-draw-calls"></a>Alternando entre chamadas de desenho
  Como o exame de chamadas `Draw` é especialmente importante, é possível usar os botões **Ir para a próxima chamada de desenho** e **Ir para a chamada de desenho anterior**, localizados no canto superior esquerdo da janela **Lista de Eventos de Gráficos**, para encontrar e alternar rapidamente entre chamadas de desenho.
@@ -63,7 +63,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 ## <a name="kinds-of-events-and-event-markers"></a>Tipos de eventos e marcadores de eventos
  Os eventos exibidos na lista de eventos são organizados em quatro categorias: eventos gerais, eventos de desenho, grupos de eventos definidos pelo usuário e marcadores de evento definidos pelo usuário. Exceto no caso de eventos em geral, cada evento é exibido com um ícone que indica a categoria a que pertence.
 
-|Ícone|Descrição do evento|
+|ícone|Descrição do evento|
 |----------|-----------------------|
 |(sem ícone)|Evento em geral<br /> Qualquer evento que não seja um evento definido pelo usuário, um grupo de eventos definido pelo usuário ou um evento de desenho.|
 |![O ícone de evento de desenho](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de desenho<br /> Marca um evento de desenho ocorrido durante o quadro capturado.|
@@ -105,7 +105,7 @@ O Visual Studio 2017 e superior contêm a janela **histórico de recursos** .  S
 
 Esta janela permite que você exiba o histórico do item selecionado na lista de eventos.  A lista suspensa na parte superior pode ser usada para selecionar outros itens para exibir o histórico.  A metade superior da janela contém os **eventos de configuração do quadro**.  Esses são os eventos que se enquadram na categoria *criar* tipo e são chamadas que normalmente inicializam e criam o recurso.  A metade inferior da janela contém a seção de **eventos de quadro** .  Esses são os eventos de leitura e gravação normais que ocorrem durante o uso do recurso.
 
-| Column | Descrição |
+| Coluna | Descrição |
 |-----------| - |
 | **Tipo** | Mostra o tipo da entrada, normalmente *criar*, *ler* e *gravar*. |
 | **Exibir** | Mostra uma miniatura do recurso naquele momento no tempo.  Clique duas vezes na miniatura para abrir uma exibição de detalhes do recurso nesse momento. |

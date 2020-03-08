@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542653"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408484"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
 
@@ -50,7 +50,7 @@ Para cada convenção de linguagem, você pode especificar um valor que define s
 
 Uma severidade de convenção de linguagem especifica o nível no qual impor esse estilo. A tabela a seguir lista os valores possíveis de gravidade e seus efeitos:
 
-Severidade | Efeito
+Severity | Efeito
 :------- | ------
 `error` | Quando esta regra de estilo for violada, deverá ser exibido um erro do compilador.
 `warning` | Quando esta regra de estilo for violada, deverá ser exibido um aviso do compilador.
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Convenções de formatação](editorconfig-formatting-conventions.md)
 - [Convenções de nomenclatura](editorconfig-naming-conventions.md)

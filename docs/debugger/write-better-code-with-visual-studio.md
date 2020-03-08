@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416380"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409238"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ferramentas e técnicas de depuração para ajudá-lo a escrever código melhor
 
@@ -48,10 +48,10 @@ Para criar o aplicativo:
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de área de trabalho .net** e escolha **Modificar**.
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
     ::: moniker range=">=vs-2019"
-    Na tela Iniciar, selecione **Criar um novo projeto**. Digite **console** na caixa de pesquisa e escolha o **aplicativo de console (.NET Core)** ou o **aplicativo de console (.NET Framework)** . Selecione **Avançar**. Digite um nome de projeto como **Console_Parse_JSON** e clique em **criar**.
+    Na tela Iniciar, selecione **Criar um novo projeto**. Digite **console** na caixa de pesquisa e escolha o **aplicativo de console (.NET Core)** ou o **aplicativo de console (.NET Framework)** . Escolha **Avançar**. Digite um nome de projeto como **Console_Parse_JSON** e clique em **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , em **Visual C#** , escolha **aplicativo de console**e, no painel central, escolha o **aplicativo de console (.NET Core)** ou **aplicativo de console (.NET Framework)** . Digite um nome como **Console_Parse_JSON** e clique em **OK**.
@@ -253,7 +253,7 @@ O rabisco verde desaparece.
 
 Quando você tiver corrigido todos os rabiscos vermelhos e resolvidos, ou pelo menos investigado, todos os rabiscos verdes, você estará pronto para iniciar o depurador e executar o aplicativo.
 
-Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
+Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração") na barra de ferramentas Depurar.
 
 Neste ponto, o aplicativo de exemplo gera uma exceção de `SerializationException` (um erro de tempo de execução). Ou seja, o aplicativo obstru os dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (depurador anexado), o auxiliar de exceção do depurador leva você diretamente ao código que gerou a exceção e fornece uma mensagem de erro útil.
 
@@ -263,7 +263,7 @@ A mensagem de erro instrui você que o valor `4o` não pode ser analisado como u
 
 Ao chegar a uma exceção, você precisa fazer (e responder) algumas perguntas:
 
-* Essa exceção é apenas um bug que você pode corrigir? Ou,
+* Essa exceção é apenas um bug que você pode corrigir? Ou
 
 * Essa exceção é algo que os usuários podem encontrar?
 
@@ -273,7 +273,7 @@ Se for o primeiro, corrija o bug. (No aplicativo de exemplo, isso significa corr
 users = ser.ReadObject(ms) as User[];
 ```
 
-por este código:
+com este código:
 
 ```csharp
 try
@@ -370,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-por este código:
+com este código:
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
@@ -417,7 +417,7 @@ Para saber como usar os recursos essenciais do depurador, consulte [Depurando pa
 
 Os bugs de outro tipo incluem código ineficiente que faz com que seu aplicativo seja executado lentamente ou use muita memória. Em geral, otimizar o desempenho é algo que você faz mais tarde no desenvolvimento de seu aplicativo. No entanto, você pode encontrar problemas de desempenho antecipadamente (por exemplo, você vê que alguma parte do seu aplicativo está em execução lenta), e talvez seja necessário testar seu aplicativo com as ferramentas de criação de perfil no início. Para obter mais informações sobre ferramentas de criação de perfil, como a ferramenta de uso da CPU e o analisador de memória, consulte [primeira análise das ferramentas de criação de perfil](../profiling/profiling-feature-tour.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste artigo, você aprendeu como evitar e corrigir muitos bugs comuns em seu código e quando usar o depurador. Em seguida, saiba mais sobre como usar o depurador do Visual Studio para corrigir bugs.
 

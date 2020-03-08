@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988804"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408553"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Configurar as Ferramentas do Visual Studio para Mac para Unity
 
@@ -55,7 +55,7 @@ Caso você já tenha o Unity 5.6.1 ou superior, mas não tenha o Visual Studio p
 
 Embora a extensão das Ferramentas do Visual Studio para Mac para Unity devem ser habilitadas por padrão, você pode confirmar isso e verificar o número de versão instalada:
 
-1. No menu do Visual Studio, escolha **Extensões...**.
+1. No menu do Visual Studio, escolha **Extensões...** .
 
    ![Selecionar Extensões](media/setup-vsmac-tools-unity-image1.png)
 
@@ -73,7 +73,7 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 2. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
 
-3. Na lista suspensa do Editor de script externo, escolha **Visual Studio** se ele estiver listado, caso contrário, selecione **Procurar...**.
+3. Na lista suspensa do Editor de script externo, escolha **Visual Studio** se ele estiver listado, caso contrário, selecione **Procurar...** .
 
    ![Selecionar o Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
