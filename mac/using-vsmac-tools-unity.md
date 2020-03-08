@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406666"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410532"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Usando as Ferramentas do Visual Studio para Mac para Unity
 
@@ -39,7 +39,7 @@ No entanto, as Ferramentas do Visual Studio para Mac para Unity estende sua func
 
 3. Depois que as letras “**ont**” forem digitadas, será exibida uma lista de sugestões do IntelliSense.
 
-   ![Usando o IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Usando IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4. A seleção na lista pode ser alterada de três maneiras:
 

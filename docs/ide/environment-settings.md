@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588571"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408372"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Configurações do ambiente do Visual Studio
 
@@ -23,7 +23,7 @@ As seguintes coleções de configurações estão disponíveis:
 - Geral
 - JavaScript
 - Visual Basic
-- Visual c#
+- Visual C#
 - Visual C++
 - Desenvolvimento para a Web
 - Desenvolvimento para a Web (Somente Código)
@@ -46,7 +46,7 @@ Para alterar as configurações de desenvolvimento depois de abrir o Visual Stud
 
 1. Na página **Redefinição Concluída**, selecione **Fechar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Sincronizar configurações em vários computadores](synchronized-settings-in-visual-studio.md)
 - [Personalizar o IDE do Visual Studio](personalizing-the-visual-studio-ide.md)
