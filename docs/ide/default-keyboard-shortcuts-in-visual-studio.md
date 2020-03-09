@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596275"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409868"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -34,11 +34,11 @@ Para obter mais informações sobre acessibilidade no Visual Studio, consulte [d
 
 |||||
 |-|-|-|-|
-|[Analisar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Editarar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projeto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Teste](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+|[Analise](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Editar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projeto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Arquitetura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus de Contexto do Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus de Contexto de Projeto e Solução](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Arquivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refatoração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Ferramentas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
+|[Compilar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Arquivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refatorar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Ferramentas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menus de Contexto do Modo de Exibição de Classe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Ajuda](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Gerenciador de Soluções](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Exibir](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Depuração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de Carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Depurar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de Carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menus de Contexto do Depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Outros Menus de Contexto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus de Contexto do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de Diagnóstico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
@@ -48,20 +48,20 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_analyze"></a> Analisar
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
 ### <a name="bkmk_architecture"></a> Arquitetura
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
 ### <a name="bkmk_build"></a> Build
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl+Shift+B**|
@@ -71,13 +71,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
 ### <a name="bkmk_debug"></a> Depurar
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Debug.ApplyCodeChanges|**Alt+F10**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
@@ -146,7 +146,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_debugger"></a> Menus de contexto do depurador
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |DebuggerContextMenus.BreakpointsWindow.Delete|**Alt+F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
@@ -154,18 +154,18 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_diagnostics"></a> Hub de Diagnóstico
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
 ### <a name="bkmk_edit"></a> Editar
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------|-|
 |Edit.Copy|**Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+Ins**|
 |Edit.Cut|**Ctrl+X**<br /><br /> ou<br /><br /> **Shift+Delete**|
 |Edit.CycleClipboardRing|**Ctrl+Shift+V**<br /><br /> ou<br /><br /> **Ctrl+Shift+Ins**|
-|Edit.Delete|**Excluir**|
+|Edit.Delete|**Delete (excluir)**|
 |Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
@@ -184,13 +184,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.GoToPrevLocation|**Shift+F8** (erro anterior na Lista de Erros ou na janela Saída)|
 |Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
-|Edit.MoveControlDownGrid|**Seta para baixo**|
+|Edit.MoveControlDownGrid|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|
 |Edit.MoveControlLeftGrid|**Seta para a esquerda**|
 |Edit.MoveControlRight|**Ctrl+Seta para a direita**|
 |Edit.MoveControlRightGrid|**Seta para a direita**|
 |Edit.MoveControlUp|**Ctrl+seta para cima**|
-|Edit.MoveControlUpGrid|**Seta para cima**|
+|Edit.MoveControlUpGrid|**Seta para Cima**|
 |Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Shift+K, Ctrl+Shift+N**|
 |Edit.OpenFile|**Ctrl+Shift+G** (abre o nome do arquivo sob o cursor)|
@@ -220,7 +220,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_editorContext"></a> Menus de contexto do editor
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**Ctrl+`**|
@@ -231,7 +231,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_file"></a> Arquivo
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |File.Exit|**Alt+F4**|
 |File.NewFile|**Ctrl+N**|
@@ -247,7 +247,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_help"></a> Ajuda
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Help.AddandRemoveHelpContent|**Ctrl+Alt+F1**|
 |Help.F1Help|**F1**|
@@ -256,19 +256,19 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_loadtest"></a> Teste de carga
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
 ### <a name="bkmk_otherContext"></a> Outros menus de contexto
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
-|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserir**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserção**|
 
 ### <a name="bkmk_project"></a> Projeto
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Project.AddExistingItem|**Shift+Alt+A**|
 |Project.AddNewItem|**Ctrl+Shift+A**|
@@ -280,14 +280,14 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_projectContext"></a> Menus de contexto de projeto e solução
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Seta para baixo**|
-|ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Seta para cima**|
+|ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Up Arrow**|
 
 ### <a name="bkmk_refactor"></a> Refatoração
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Refactor.EncapsulateField|**Ctrl+R, Ctrl+E**|
 |Refactor.ExtractInterface|**Ctrl+R, Ctrl+I**|
@@ -298,7 +298,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+O** (letra "O")|
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+P**|
@@ -306,7 +306,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_team"></a> Equipe
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Team.Git.GoToGitBranches|**Ctrl+0** (zero), **Ctrl+N**<br /><br /> ou<br /><br /> **Ctrl+0, N**|
 |Team.Git.GoToGitChanges|**Ctrl+0** (zero), **Ctrl+G**<br /><br /> ou<br /><br /> **Ctrl+0, G**|
@@ -315,7 +315,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0** (zero), **Ctrl+B**<br /><br /> ou<br /><br /> **Ctrl+0, B**|
 |TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0** (zero), **Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+0, C**|
@@ -330,14 +330,14 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_test"></a> Teste
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
 ### <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R, Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
@@ -351,7 +351,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_tools"></a> Ferramentas
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
@@ -359,7 +359,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_view"></a> Modo de Exibição
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
@@ -409,7 +409,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_window"></a> Janela
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Window.ActivateDocumentWindow|**Esc**|
 |Window.AddTabtoSelection|**Ctrl+Shift+Alt+Espaço**|
@@ -440,20 +440,20 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ### <a name="bkmk_windowsazure"></a> Azure
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*, Ctrl+D**|
 
 ## <a name="adonet-entity-data-model-designer"></a>{1&gt;Designer de Modelo de Dados de Entidade ADO.NET&lt;1}
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**Alt+Seta para baixo**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**Alt+PgDn**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt+End**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**Alt+Home**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**Alt+Seta para cima**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**Alt+Up Arrow**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**Alt+PgUp**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**Ctrl+R, R**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|**Shift+Del**|
@@ -462,19 +462,19 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="class-diagram"></a>Diagrama de classe
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |ClassDiagram.Collapse|**Num -**|
 |ClassDiagram.Expand|**Num +**|
 |Edit.Delete|**Ctrl+Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
-|Edit.RemovefromDiagram|**Excluir**|
+|Edit.RemovefromDiagram|**Delete (excluir)**|
 |View.ViewCode|**Enter**|
 
 ## <a name="coded-ui-test-editor"></a>Editor de Testes de Interface de Usuário Codificada
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl+Alt+D**|
@@ -485,14 +485,14 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="dataset-editor"></a>Editor de Conjunto de Dados
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|OtherContextMenus.ColumnContext.InsertColumn|**Inserir**|
+|OtherContextMenus.ColumnContext.InsertColumn|**Inserção**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
 ## <a name="difference-viewer"></a>Visualizador de Diferenças
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Diff.IgnoreTrimWhitespace|**Ctrl+\\, Ctrl+Barra de espaço**|
 |Diff.InlineView|**Ctrl+\\, Ctrl+1**|
@@ -508,7 +508,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="dom-explorer"></a>Explorador do DOM
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**Ctrl+B**|
@@ -516,27 +516,27 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="f-interactive"></a>F# interativo
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
 ## <a name="graph-document-editor"></a>Editor de Documento Gráfico
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Inserir**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Inserção**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Shift+K**<br /><br /> ou<br /><br /> **Ctrl+E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Excluir**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete (excluir)**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ## <a name="graphics-diagnostics"></a>Diagnóstico de gráfico
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|{1&gt;Nenhum&lt;1}|
+|Debug.Graphics.CaptureFrame|Nenhum|
 |Gráficos.MoverSeleçãoDePixelParaBaixo|**Shift+Alt+Seta para baixo**|
 |Gráficos.MoverSeleçãoDePixelParaEsquerda|**Shift+Alt+Seta para a esquerda**|
 |Gráficos.MoverSeleçãoDePixelParaDireita|**Shift+Alt+Seta para a direita**|
@@ -548,13 +548,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="html-editor"></a>{1&gt;Editor de HTML&lt;1}
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
 ## <a name="html-editor-design-view"></a>Exibição de Design do Editor HTML
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlUp|**Ctrl+seta para cima**|
@@ -577,7 +577,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="html-editor-source-view"></a>Modo Código-Fonte do Editor de HTML
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 |View.NextView|**Ctrl+PgDn**|
@@ -587,16 +587,16 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="layer-diagram"></a>Diagrama de camada
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |Edit.Delete|**Shift+Delete**|
 
 ## <a name="managed-resources-editor"></a>Editor de Recursos Gerenciados
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Excluir**|
+|Edit.Remove|**Delete (excluir)**|
 |Edit.RemoveRow|**Ctrl+Delete**|
 |Edit.SelectionCancel|**Escape**|
 |Resources.Audio|**Ctrl+4**|
@@ -608,7 +608,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="merge-editor-window"></a>Janela do Editor de Mesclagem
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**Alt+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
@@ -616,7 +616,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparação de Esquemas
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |SQL.SSDTSchemaCompareCompare|**Shift+Alt+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**Shift+Alt+G**|
@@ -627,7 +627,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Designer de Tabela
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+E**|
@@ -638,7 +638,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExecuteWithDebugger|**Alt+F5**|
@@ -659,7 +659,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>{1&gt;Microsoft SQL Server Data Tools, Editor T-SQL PDW&lt;1}
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |SQL.TSqlEditorCancelQuery|**Alt+Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl+Shift+E**|
@@ -674,13 +674,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="page-inspector"></a>{1&gt;Inspetor de Página&lt;1}
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ## <a name="query-designer"></a>Designer de Consulta
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
@@ -693,15 +693,15 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="query-results"></a>Resultados da consulta
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |SQL.QueryResultsNewRow|**Alt+End**|
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
 
-## <a name="report-designer"></a>Designer de Relatório
+## <a name="report-designer"></a>Designer de Relatórios
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Seta para a esquerda**|
@@ -709,9 +709,9 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.CharRight|**Seta para a direita**|
 |Edit.CharRightExtend|**Shift+Seta para a direita**|
 |Edit.InsertTab|**Tab**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift+Seta para baixo**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift+Seta para cima**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|
@@ -727,36 +727,36 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="sequence-diagram"></a>Diagrama de sequência
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
 ## <a name="settings-designer"></a>Designer de Configurações
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**Ctrl+Delete**|
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Gerenciador de soluções
+## <a name="solution-explorer"></a>Gerenciador de Soluções
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
 ## <a name="team-explorer"></a>Team Explorer
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do Teclado|
 |-------------| - |
-|Edit.Delete|**Excluir**|
+|Edit.Delete|**Delete (excluir)**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+Seta para baixo**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0** (zero)|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+Seta para cima**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+Up Arrow**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**Alt+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**Alt+2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content|**Alt+3**|
@@ -766,21 +766,21 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content|**Alt+7**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content|**Alt+8**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content|**Alt+9**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**Alt+Seta para a esquerda**|
-|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt+Seta para a direita**|
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward|**Alt+Left Arrow**|
+|TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt+Right Arrow**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift+Alt+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
 |View.Refresh|**F5**|
 
 ## <a name="test-explorer"></a>Gerenciador de Testes
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>{1&gt;Editor de Texto&lt;1}
+## <a name="text-editor"></a>Editor de Texto
 
-| Comandos | Atalhos de teclado |
+| Comandos | Atalhos do teclado |
 | - | - |
 | Edit.BreakLine | **Enter**<br /><br /> ou<br /><br /> **Shift+Enter** |
 | Edit.CharLeft | **Seta para a esquerda** |
@@ -796,7 +796,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
 | Edit.ContractSelection | **Shift+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
-| Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita** |
+| Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Right Arrow** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
 | Edit.DecreaseFilterLevel | **Alt+,** |
 | Edit.DeleteBackwards | **Backspace**<br /><br /> ou<br /><br /> **Shift+Bkspce** |
@@ -825,28 +825,28 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Shift+L** |
-| Edit.LineDown | **Seta para baixo** |
+| Edit.LineDown | **Seta para Baixo** |
 | Edit.LineDownExtend | **Shift+Seta para baixo** |
 | Edit.LineDownExtendColumn | **Shift+Alt+Seta para baixo** |
-| Edit.LineEnd | **End** |
+| Edit.LineEnd | **Término** |
 | Edit.LineEndExtend | **Shift+End** |
 | Edit.LineEndExtendColumn | **Shift+Alt+End** |
 | Edit.LineOpenAbove | **Ctrl+Enter** |
 | Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
-| Edit.LineStart | **Início** |
+| Edit.LineStart | **Página Inicial** |
 | Edit.LineStartExtend | **Shift+Home** |
 | Edit.LineStartExtendColumn | **Shift+Alt+Home** |
 | Edit.LineTranspose | **Shift+Alt+T** |
-| Edit.LineUp | **Seta para cima** |
+| Edit.LineUp | **Seta para Cima** |
 | Edit.LineUpExtend | **Shift+Seta para cima** |
 | Edit.LineUpExtendColumn | **Shift+Alt+Seta para cima** |
 | Edit.ListMembers | **Ctrl+J** |
 | Edit.MakeLowercase | **Ctrl+U** |
 | Edit.MakeUppercase | **Ctrl+Shift+U** |
 | Edit.MoveSelectedLinesDown | **Alt+Seta para baixo** |
-| Edit.MoveSelectedLinesUp | **Alt+Seta para cima** |
+| Edit.MoveSelectedLinesUp | **Alt+Up Arrow** |
 | Edit.NextHighlightedReference | **Ctrl+Shift+Seta para baixo** |
-| Edit.OvertypeMode | **Inserir** |
+| Edit.OvertypeMode | **Inserção** |
 | Edit.PageDown | **PgDn** |
 | Edit.PageDownExtend | **Shift+PgDn** |
 | Edit.PageUp | **PgUp** |
@@ -899,43 +899,43 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="uml-activity-diagram"></a>Diagrama de atividade UML
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
 ## <a name="uml-class-diagram"></a>Diagrama de classe UML
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ## <a name="uml-component-diagram"></a>Diagrama de componente UML
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ## <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ## <a name="vc-accelerator-editor"></a>Editor de Tecla Aceleradora do VC
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.NewAccelerator|**Inserir**|
+|Edit.NewAccelerator|**Inserção**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
 ## <a name="vc-dialog-editor"></a>Editor de Caixa de Diálogo do VC
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.MoveControlDown|**Seta para baixo**|
+|Edit.MoveControlDown|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Seta para a esquerda**|
 |Edit.MoveControlRight|**Seta para a direita**|
-|Edit.MoveControlUp|**Seta para cima**|
+|Edit.MoveControlUp|**Seta para Cima**|
 |Edit.ScrollColumnLeft|**Ctrl+Seta para a esquerda**|
 |Edit.ScrollColumnRight|**Ctrl+Seta para a direita**|
 |Edit.ScrollLineDown|**Ctrl+Seta para baixo**|
@@ -956,15 +956,15 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Format.CenterVertical|**Ctrl+F9**|
 |Format.CheckMnemonics|**Ctrl+M**|
 |Format.SizetoContent|**Shift+F7**|
-|Format.SpaceAcross|**Alt+Seta para a direita**<br /><br /> ou<br /><br /> **Alt+Seta para a esquerda**|
-|Format.SpaceDown|**Alt+Seta para cima**<br /><br /> ou<br /><br /> **Alt+Seta para baixo**|
+|Format.SpaceAcross|**Alt+Right Arrow**<br /><br /> ou<br /><br /> **Alt+Left Arrow**|
+|Format.SpaceDown|**Alt+Up Arrow**<br /><br /> ou<br /><br /> **Alt+Seta para baixo**|
 |Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
 ## <a name="vc-image-editor"></a>Editor de Imagem do VC
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Image.AirbrushTool|**Ctrl+A**|
 |Image.BrushTool|**Ctrl+B**|
@@ -982,7 +982,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Image.LineTool|**Ctrl+L**|
 |Image.MagnificationTool|**Ctrl+M**|
 |Image.Magnify|**Ctrl+Shift+M**|
-|Image.NewImageType|**Inserir**|
+|Image.NewImageType|**Inserção**|
 |Image.NextColor|**Ctrl+]**<br /><br /> ou<br /><br /> **Ctrl+Seta para a direita**|
 |Image.NextRightColor|**Ctrl+Shift+]**<br /><br /> ou<br /><br /> **Ctrl+Shift+Seta para a direita**|
 |Image.OutlinedEllipseTool|**Shift+Alt+P**|
@@ -1006,13 +1006,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="vc-string-editor"></a>{1&gt;Editor de Cadeia de Caracteres do VC&lt;1}
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
-|Edit.NewString|**Inserir**|
+|Edit.NewString|**Inserção**|
 
-## <a name="view-designer"></a>Designer de Modo de Exibição
+## <a name="view-designer"></a>Designer de Exibição
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
@@ -1023,29 +1023,29 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-## <a name="visual-studio"></a>{1&gt;Visual Studio&lt;1}
+## <a name="visual-studio"></a>Visual Studio
 
-|{1&gt;Comando&lt;1}|Atalho de teclado|
+|Comando|Atalho do teclado|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
 ## <a name="windows-forms-designer"></a>Designer de Formulários do Windows
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Seta para a esquerda**|
 |Edit.CharLeftExtend|**Shift+Seta para a esquerda**|
 |Edit.CharRight|**Seta para a direita**|
 |Edit.CharRightExtend|**Shift+Seta para a direita**|
-|Edit.DocumentEnd|**End**|
+|Edit.DocumentEnd|**Término**|
 |Edit.DocumentEndExtend|**Shift+End**|
-|Edit.DocumentStart|**Início**|
+|Edit.DocumentStart|**Página Inicial**|
 |Edit.DocumentStartExtend|**Shift+Home**|
 |Edit.InsertTab|**Tab**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift+Seta para cima**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift+Seta para baixo**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a esquerda**|
@@ -1060,7 +1060,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="work-item-editor"></a>Editor de Itens de Trabalho
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.RefreshWorkItem|**F5**|
@@ -1068,7 +1068,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="work-item-query-view"></a>Exibição de Consulta de Item de Trabalho
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+Seta para a direita**|
@@ -1079,7 +1079,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="work-item-results-view"></a>{1&gt;Exibição de Resultados de Item de Trabalho&lt;1}
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+Seta para a direita**|
@@ -1090,11 +1090,11 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-## <a name="workflow-designer"></a>Designer de fluxo de trabalho
+## <a name="workflow-designer"></a>Designer de Fluxo de Trabalho
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.CompleteWord|**Ctrl+K, W**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+Barra de espaços**<br /><br /> ou<br /><br /> **Alt+Seta para a direita**|
+|Edit.CompleteWord|**Ctrl+K, W**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+Barra de espaços**<br /><br /> ou<br /><br /> **Alt+Right Arrow**|
 |Edit.DecreaseFilterLevel|**Alt+,**|
 |Edit.IncreaseFilterLevel|**Alt+.**|
 |Edit.ListMembers|**Ctrl+K, L**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+L**<br /><br /> ou<br /><br /> **Ctrl+J**|
@@ -1120,7 +1120,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="xaml-ui-designer"></a>XAML Designer
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |Design.FitAll|**Ctrl+0** (zero)|
 |Design.ShowHandles|**F9**|
@@ -1142,24 +1142,24 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="xml-text-editor"></a>Editor XML (Texto)
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
 ## <a name="xml-schema-designer"></a>Designer de Esquema XML
 
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |--------------| - |
-|GraphView.BottomtoTop|**Alt+Seta para cima**|
-|GraphView.LefttoRight|**Alt+Seta para a direita**|
-|GraphView.RighttoLeft|**Alt+Seta para a esquerda**|
+|GraphView.BottomtoTop|**Alt+Up Arrow**|
+|GraphView.LefttoRight|**Alt+Right Arrow**|
+|GraphView.RighttoLeft|**Alt+Left Arrow**|
 |GraphView.ToptoBottom|**Alt+Seta para baixo**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Excluir**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Delete (excluir)**|
 |XsdDesigner.ShowContentModelView|**Ctrl+2**|
 |XsdDesigner.ShowGraphView|**Ctrl+3**|
 |XsdDesigner.ShowStartView|**Ctrl+1**|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](reference/visual-studio-commands.md)
