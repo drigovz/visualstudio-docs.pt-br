@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784946"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409971"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -44,7 +44,7 @@ Fornece informações básicas e comandos para o ambiente:
 ![Guia Visão Geral de Ambientes do Python](media/environments/environments-overview-tab-2019.png)
 ::: moniker-end
 
-| Comando | Descrição |
+| Comando | DESCRIÇÃO |
 | --- | --- |
 | **Tornar este ambiente padrão para novos projetos** | Definir o ambiente ativo, o que pode fazer com que o Visual Studio (2017 versão 15.5 e anteriores) pare de responder brevemente enquanto carrega o banco de dados do IntelliSense. Ambientes com muitos pacotes podem parar de responder por um período maior. |
 | **Visitar o site do distribuidor** | Abre um navegador para a URL fornecida para a distribuição de Python. Python 3. x, por exemplo, vai para python.org. |
@@ -60,7 +60,7 @@ Como você janelas interativas no fluxo de trabalho diário, provavelmente desen
 
 Os scripts de inicialização contêm o código que a janela **Interativa** carrega e executa automaticamente, incluindo importações, definições de função e literalmente qualquer outra coisa. Esses scripts são referenciados de duas maneiras:
 
-1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio \<versão>\Python Scripts\\\<ambiente>*, em que &lt;versão&gt; é a versão do Visual Studio (tal como 2017 ou 2019) e &lt;ambiente&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
+1. Quando você instala um ambiente, o Visual Studio cria uma pasta *Documents\Visual Studio \<versão>\Python Scripts\\\<ambiente>* , em que &lt;versão&gt; é a versão do Visual Studio (tal como 2017 ou 2019) e &lt;ambiente&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela **Interativa** para esse ambiente, ela carrega e executa qualquer arquivo *.py* que for encontrado aqui em ordem alfabética.
 
 1. O controle **Scripts** na guia **Ferramentas** > **Opções** > **Python** > **Janelas Interativas** (confira [Opções de janelas Interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
 
@@ -75,7 +75,7 @@ Se estiver disponível, a guia **Configurar** conterá detalhes, conforme descri
 ![Guia Configurar de Ambientes do Python](media/environments/environments-configure-tab-2019.png)
 ::: moniker-end
 
-| Campo | Descrição |
+| Campo | DESCRIÇÃO |
 | --- | --- |
 | **Descrição** | O nome a ser fornecido para o ambiente. |
 | **Caminho do prefixo** | A localização da pasta base do interpretador. Ao preencher esse valor e clicar em **Detecção Automática**, o Visual Studio tenta preencher os outros campos para você. |
@@ -90,7 +90,7 @@ Se estiver disponível, a guia **Configurar** conterá detalhes, conforme descri
 
 *Também chamada de "pip" em versões anteriores.*
 
-Gerencia os pacotes instalados no ambiente usando pip (a guia **Pacotes (PyPI)**) ou o conda (a guia **Pacotes (Conda)**, para ambientes do conda no Visual Studio 2017 versão 15.7 e posteriores). Nessa guia, você também pode procurar e instalar novos pacotes, incluindo as dependências dele.
+Gerencia os pacotes instalados no ambiente usando pip (a guia **Pacotes (PyPI)** ) ou o conda (a guia **Pacotes (Conda)** , para ambientes do conda no Visual Studio 2017 versão 15.7 e posteriores). Nessa guia, você também pode procurar e instalar novos pacotes, incluindo as dependências dele.
 
 Os pacotes que já estão instalados são exibidos com controles para atualizar (uma seta para cima) e desinstalar (X em um círculo) o pacote:
 
@@ -105,7 +105,7 @@ Inserir um termo de pesquisa filtra a lista de pacotes instalados, bem como os p
 ![Guia de pacotes de ambientes do Python com uma pesquisa em "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Como você pode ver na imagem acima, os resultados da pesquisa mostram vários pacotes que correspondem ao termo de pesquisa. A primeira entrada na lista, no entanto, é um comando para executar **pip install \<name>** diretamente. Caso esteja na guia **Pacotes (Conda)**, você verá **conda install \<name>**:
+Como você pode ver na imagem acima, os resultados da pesquisa mostram vários pacotes que correspondem ao termo de pesquisa. A primeira entrada na lista, no entanto, é um comando para executar **pip install \<name>** diretamente. Caso esteja na guia **Pacotes (Conda)** , você verá **conda install \<name>** :
 
 ::: moniker range="vs-2017"
 ![Guia Pacotes do Conda mostrando um comando conda install](media/environments/environments-conda-tab-install.png)
@@ -131,7 +131,7 @@ Ao instalar os pacotes em um ambiente que está localizado em uma área protegid
 
 ![Solicitação de elevação para a instalação do pacote](media/environments/environments-pip-elevate.png)
 
-**Elevar agora** concede privilégios administrativos para executar o PIP para uma única operação, sujeita também a qualquer prompt de permissão do sistema operacional. A seleção de **Continuar sem privilégios de Administrador** tenta instalar o pacote, mas o PIP falha ao tentar criar pastas com um resultado como **Erro: não foi possível criar 'C:\Arquivos de Programas\Anaconda3\Lib\site-packages\png.py': Permissão negada.**
+**Elevar agora** concede privilégios administrativos para executar o PIP para uma única operação, sujeita também a qualquer prompt de permissão do sistema operacional. Escolher **Continuar sem privilégios de administrador** tenta instalar o pacote, mas o PIP falha ao tentar criar pastas com uma saída como **erro: não foi possível criar 'C:\Arquivos de Programas\Anaconda3\Lib\site-packages\png.py': permissão negada.**
 
 Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas** > **Opções** > **Python** > **Geral** e escolha o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**.
 
@@ -143,7 +143,7 @@ Ao usar o Python 2.6, 3.1 e 3.2, o Visual Studio mostra o aviso **Devido a restr
 
 ![Mensagem sobre as restrições de pip install com a versão mais antiga do Python](media/environments/environments-old-version-restriction.png)
 
-O motivo para o aviso é que, com essas versões mais antigas do Python, `pip install` não contém suporte para o protocolo TLS 1.2, que é necessário para baixar pacotes da origem do pacote, pypi.org. Os builds personalizados do Python podem dar suporte ao TLS 1.2; nesse caso, `pip install` poderá funcionar.
+O motivo do aviso é que, com essas versões anteriores do Python, o `pip install` não contém suporte para a camada de segurança de transporte (TLS) 1,2, que é necessária para baixar pacotes da origem do pacote, pypi.org. As compilações personalizadas do Python podem dar suporte a TLS 1,2, caso em que `pip install` pode funcionar.
 
 É possível baixar o *get-pip.py* apropriado para um pacote em [bootstrap.pypa.io](https://bootstrap.pypa.io/), fazer o download manual de um pacote em [pypi.org](https://pypi.org/) e, em seguida, instalar o pacote dessa cópia local.
 
@@ -157,15 +157,15 @@ Mostra o status atual do banco de dados de preenchimento do IntelliSense:
 ![Guia IntelliSense de Ambientes do Python](media/environments/environments-intellisense-tab.png)
 
 - No Visual Studio 2017 versão 15.5 e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código.
-- O Visual Studio 2017 versão 15.6 e versões posteriores usam um método mais rápido para fornecer conclusões que não dependem do banco de dados por padrão. Por esse motivo, a guia é rotulada **IntelliSense [banco de dados desabilitado]**. É possível habilitar o banco de dados desmarcando a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar novo estilo de IntelliSense para ambientes**.
+- O Visual Studio 2017 versão 15.6 e versões posteriores usam um método mais rápido para fornecer conclusões que não dependem do banco de dados por padrão. Por esse motivo, a guia é rotulada **IntelliSense [banco de dados desabilitado]** . É possível habilitar o banco de dados desmarcando a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar novo estilo de IntelliSense para ambientes**.
 
-Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (O Anaconda, por exemplo, é fornecido com várias bibliotecas e leva algum tempo para compilar o banco de dados.) Depois de concluído, você obtém um IntelliSense detalhado não precisa atualizar o banco de dados novamente (com o botão **Atualizar Banco de Dados**) quando instalar mais bibliotecas.
+Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (Anaconda, por exemplo, vem com muitas bibliotecas e demora algum tempo para compilar o banco de dados.) Depois de concluído, você obtém o IntelliSense detalhado e não precisa atualizar o banco de dados novamente (com o botão **Atualizar BD** ) até instalar mais bibliotecas.
 
-As bibliotecas para as quais os dados não foram compilados serão marcadas com um **!**; se o banco de dados de um ambiente não estiver concluído, um **!** também é exibido ao lado da lista do ambiente principal.
+As bibliotecas para as quais os dados não foram compilados serão marcadas com um **!** ; se o banco de dados de um ambiente não estiver concluído, um **!** também é exibido ao lado da lista do ambiente principal.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)

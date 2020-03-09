@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254209"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409055"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -31,7 +31,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> O Visual Studio 2019 dá suporte à abertura de uma pasta que contém o código do Python e à execução do código sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, confira [Início Rápido: Abrir e executar código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md). No entanto, há benefícios em usar um arquivo de projeto, conforme explicado nesta seção.
+> O Visual Studio 2019 dá suporte à abertura de uma pasta que contém o código do Python e à execução do código sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, consulte [início rápido: abrir e executar o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md). No entanto, há benefícios em usar um arquivo de projeto, conforme explicado nesta seção.
 ::: moniker-end
 
 > [!Tip]
@@ -41,7 +41,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Aprofunde-se: Use o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (YouTube.com, 55s de 8 m). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 
@@ -77,7 +77,7 @@ O Visual Studio fornece várias maneiras para configurar um projeto do Python, d
 
 A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 e posterior (nem todos os modelos estão disponíveis em todas as versões anteriores):
 
-| Modelo | Descrição |
+| Modelo | DESCRIÇÃO |
 | --- | --- |
 | [**Com base em um código existente do Python**](#create-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
 | **Aplicativo do Python** | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](selecting-a-python-environment-for-a-project.md). |
