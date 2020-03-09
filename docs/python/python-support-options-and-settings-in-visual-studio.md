@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661916"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409965"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -44,13 +44,13 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 (Guia **Ferramentas** > **Opções** > **Python**.)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Mostrar a Janela de Saída ao criar ambientes virtuais**| On | Desmarque essa opção para impedir que a janela **Saída** seja exibida. |
 | **Mostrar a Janela de Saída ao instalar ou remover pacotes** | On | Desmarque essa opção para impedir que a janela **Saída** seja exibida. |
 | **Mostrar barra de notificações para criar ambientes** | On | *Somente Visual Studio 2019.* Quando essa opção é configurada e o usuário abre um projeto que contém um arquivo *requirements.txt* ou *environment.yml*, o Visual Studio exibe uma barra de informações com sugestões para criar um ambiente virtual ou ambiente conda, respectivamente, em vez de usar o ambiente global padrão. |
 | **Mostrar barra de notificações para instalar pacotes** | On | *Somente Visual Studio 2019.* Quando essa opção é configurada e o usuário abre um projeto que contém um arquivo *requirements.txt* (e não está usando o ambiente global padrão), o Visual Studio compara esses requisitos com pacotes instalados no ambiente atual. Se houver pacotes ausentes, o Visual Studio exibirá um prompt para instalar essas dependências. |
-| **Sempre executar gerenciadores de pacotes como administrador** | Off | Sempre eleva `pip install` e operações semelhantes de gerenciador de pacote para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como *c:\Program Files*. Nesse prompt, você pode optar por sempre elevar o comando de instalação apenas para esse ambiente específico. Confira [guia Pacotes](python-environments-window-tab-reference.md#packages-tab). |
+| **Sempre executar gerenciadores de pacotes como administrador** | Desativar | Sempre eleva `pip install` e operações semelhantes de gerenciador de pacote para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como *c:\Program Files*. Nesse prompt, você pode optar por sempre elevar o comando de instalação apenas para esse ambiente específico. Confira [guia Pacotes](python-environments-window-tab-reference.md#packages-tab). |
 | **Gerar automaticamente o BD de conclusão no primeiro uso** | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Confira mais informações na [guia IntelliSense](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
 | **Ignorar variáveis PYTHONPATH de todo o sistema** | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Confira [Caminhos de pesquisa](search-paths.md) para obter detalhes. |
 | **Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados** | On | Quando definido, adicionar um [arquivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](search-paths.md) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
@@ -69,9 +69,9 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 ::: moniker range=">=vs-2019"
 ## <a name="conda-options"></a>Opções do Conda
 
-(Guia **Ferramentas** > **Opções** > **Python** > **Conda**.)
+(**Ferramentas** > **Opções** > guia **python** > **Conda** .)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Caminho do executável do Conda** | (blank) | Especifica um caminho exato para o arquivo executável *conda.exe*, em vez de contar com a instalação do Miniconda padrão incluído com a carga de trabalho do Python. Se outro caminho for fornecido aqui, ele terá precedência sobre a instalação padrão e outros executáveis conda.exe especificados no registro. Essa configuração poderá ser alterada se você instalar manualmente uma versão mais recente do Anaconda ou do Miniconda ou se desejar usar uma distribuição de 32 bits em vez da distribuição padrão de 64 bits. |
 
@@ -83,15 +83,15 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 (Guia **Ferramentas** > **Opções** > **Python** > **Depuração**.)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Perguntar antes de executar quando houver erros** | On | Quando definido, solicita que você confirme que deseja executar o código que contém erros. Desmarque esta opção para desabilitar o aviso. |
 | **Aguardar pela entrada quando o processo for encerrado de forma anormal**<br/><br/>**Aguardar pela entrada quando o processo for encerrado normalmente** | Ativo (para os dois) | Um programa de Python iniciado no Visual Studio é executado em sua própria janela de console. Por padrão, a janela espera que você pressione uma tecla antes de fechá-la, independentemente de como o programa é encerrado. Para remover este prompt e fechar a janela automaticamente, desmarque uma ou ambas as opções. |
 | **A saída do programa para Depurar a janela de Saída** | On | Exibe a saída do programa em uma janela separada do console e na janela de **Saída** do Visual Studio. Desmarque esta opção para mostrar a saída somente na janela do console separado. |
-| **Interromper a exceção SystemExit com código de saída zero** | Off | Se definido, interrompe o depurador nessa exceção. Quando desmarcado, o depurador sai sem interromper. |
-| **Habilitar a depuração da biblioteca padrão do Python** | Off | Torna possível intervir no código-fonte da biblioteca padrão durante a depuração, mas aumenta o tempo necessário para iniciar o depurador.|
+| **Interromper a exceção SystemExit com código de saída zero** | Desativar | Se definido, interrompe o depurador nessa exceção. Quando desmarcado, o depurador sai sem interromper. |
+| **Habilitar a depuração da biblioteca padrão do Python** | Desativar | Torna possível intervir no código-fonte da biblioteca padrão durante a depuração, mas aumenta o tempo necessário para iniciar o depurador.|
 | **Mostrar o valor retornado da função** | On | *Somente Visual Studio 2019.* Exibe os valores retornados de função na janela **Locals**, em seguida, passa uma chamada de função no depurador (F10) |
-| **Usar depurador herdado** | Off | *Somente Visual Studio 2019.* Instrui o Visual Studio a usar o depurador herdado por padrão. Confira mais informações em [Depuração – Usar o depurador herdado](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
+| **Usar depurador herdado** | Desativar | *Somente Visual Studio 2019.* Instrui o Visual Studio a usar o depurador herdado por padrão. Confira mais informações em [Depuração – Usar o depurador herdado](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
 ::: moniker range="vs-2017"
 ![Caixa de diálogo de opções do Python, guia Depuração](media/options-debugging.png)
@@ -104,7 +104,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 (Guia **Ferramentas** > **Opções** > **Python** > **Diagnóstico**.)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Incluir logs de análise** | On | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
 | Botão **Salvar o diagnóstico no arquivo** | N/D | Solicita um nome de arquivo e salva o log em um arquivo de texto. |
@@ -116,23 +116,23 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 (Guia **Ferramentas** > **Opções** > **Python** > **Janelas Interativas**.)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Scripts** | N/D | Especifica uma pasta geral para scripts de inicialização que serão aplicados às janelas **Interativas** de todos os ambientes. Consulte [Scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
 | **As setas para cima e para baixo navegam o histórico** | On | Usa as teclas de direção para navegar no histórico na janela **Interativa**. Desmarque essa configuração para usar as teclas de direção para navegar na saída da janela **Interativa**. |
 | **Modo de Conclusão** | **Avaliar somente expressões sem chamadas de função** | O processo de determinar os membros disponíveis em uma expressão na janela **Interativa** pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão **Avaliar somente expressões sem função chamadas** exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  **Nunca avaliar expressões** impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. **Avaliar todas as expressões** avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
-| **Ocultar sugestões de análise estática** | Off | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o valor do **Modo de Conclusão** **Nunca avaliar expressões**, nenhuma conclusão útil será exibida na janela **Interativa**. |
+| **Ocultar sugestões de análise estática** | Desativar | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o valor do **Modo de Conclusão** **Nunca avaliar expressões**, nenhuma conclusão útil será exibida na janela **Interativa**. |
 
 ![Caixa de diálogo de opções do Python, guia Janelas Interativas](media/options-interactive-windows.png)
 
 ::: moniker range=">=vs-2019"
 ## <a name="language-server-options"></a>Opções de servidor de linguagem
 
-(Guia **Ferramentas** > **Opções** > **Python** > **Servidor de linguagem**.)
+(**Ferramentas** > **Opções** > guia servidor **python** > **Language** .)
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
-| **Desabilitar conclusões do Typeshed** | Off | O Visual Studio IntelliSense normalmente usa uma versão agrupada do Typeshed (um conjunto de arquivos *.pyi*) para encontrar dicas de tipo de biblioteca padrão e bibliotecas de terceiros para o Python 2 e o Python 3. Essa opção desabilita o comportamento do TypeShed agrupado. |
+| **Desabilitar conclusões do Typeshed** | Desativar | O Visual Studio IntelliSense normalmente usa uma versão agrupada do Typeshed (um conjunto de arquivos *.pyi*) para encontrar dicas de tipo de biblioteca padrão e bibliotecas de terceiros para o Python 2 e o Python 3. Essa opção desabilita o comportamento do TypeShed agrupado. |
 | **Caminho de Typeshed personalizado** | (blank) | Se definido, o Visual Studio usa os arquivos de Typeshed nesse caminho, em vez de sua versão agrupada. Ignore caso a opção **Desabilitar conclusões do Typeshed** esteja definida. |
 
 ![Caixa de diálogo de opções do Python, guia do Servidor de linguagem](media/options-language-server.png)
@@ -145,23 +145,23 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 ### <a name="completion-results"></a>Resultados de Conclusão
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
-| **A conclusão de membros exibe a interseção de membros** | Off | Quando definido, mostra apenas conclusões que têm suporte por todos os tipos possíveis. |
+| **A conclusão de membros exibe a interseção de membros** | Desativar | Quando definido, mostra apenas conclusões que têm suporte por todos os tipos possíveis. |
 | **Lista de filtro com base na cadeia de pesquisa** | On | Aplica a filtragem de sugestões de preenchimento conforme você digita (o padrão é marcado). |
 | **Mostrar automaticamente conclusões para todos os identificadores** | On | Desmarque esta opção para desabilitar as conclusões no editor e nas janelas **Interativas**. |
 
 ### <a name="selection-in-completion-list"></a>Seleção em listas de conclusão
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Confirmado pela digitação dos seguintes caracteres** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Esses caracteres normalmente seguem um identificador que pode ser selecionado em uma lista de conclusão, portanto, é conveniente confirmar a conclusão digitando um caractere. Você pode remover ou adicionar caracteres específicos à lista conforme desejado.  |
 | **Inserir a conclusão atual de confirmação** | On | Quando definido, a tecla **Enter** escolhe e aplica a conclusão escolhida no momento, assim como acontece com os caracteres acima (mas obviamente, não há um caractere para **Enter** portanto, ele não pode entrar diretamente para essa lista!). |
-| **Adicionar uma nova linha ao pressionar Enter após o fim da palavra totalmente digitada** | Off | Por padrão, se você digitar a palavra inteira que aparece no pop-up de conclusão e pressionar **Enter**, você confirmará a conclusão. Ao definir essa opção, você realmente confirma as conclusões quando termina de digitar o identificador, de modo que **Enter** insere uma nova linha. |
+| **Adicionar uma nova linha ao pressionar Enter após o fim da palavra totalmente digitada** | Desativar | Por padrão, se você digitar a palavra inteira que aparece no pop-up de conclusão e pressionar **Enter**, você confirmará a conclusão. Ao definir essa opção, você realmente confirma as conclusões quando termina de digitar o identificador, de modo que **Enter** insere uma nova linha. |
 
 ### <a name="miscellaneous-options"></a>Opções diversas
 
-| Opção | Padrão | Descrição |
+| {1&gt;Opção&lt;1} | Padrão | Descrição |
 | --- | --- | --- |
 | **Entrar no modo de estrutura de tópicos na abertura dos arquivos** | On | Ative automaticamente o recurso de estrutura de tópicos do Visual Studio no editor ao abrir o arquivo de código do Python. |
 | **Colar prompts REPL removidos** | On | Remove **>>>** e **...** do texto colado, permitindo a transferência fácil do código da janela **Interativa** para o editor. Desmarque essa opção se você precisar manter esses caracteres ao colar de outras fontes. |
