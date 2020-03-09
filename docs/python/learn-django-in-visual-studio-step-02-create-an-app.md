@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678981"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409419"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Django com exibição e modelos de página
 
@@ -52,7 +52,7 @@ Usando qualquer método, crie um aplicativo com o nome "HelloDjangoApp". O resul
 | --- | --- |
 | **\_\_init\_\_.py** | O arquivo que identifica o aplicativo como um pacote. |
 | **migrations** | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são abordadas na etapa 6; no momento, a pasta contém apenas um arquivo *\_\_init\_\_.py* (o que indica que a pasta define seu próprio pacote do Python). |
-| **templates** | Uma pasta para modelos de página do Django que contém um único arquivo *index.html* dentro de uma pasta que corresponde ao nome do aplicativo. (No Visual Studio 2017 15,7 e anterior, o arquivo está contido diretamente em *modelos* e a etapa 2-4 instrui você a criar a subpasta.) Os modelos são blocos de HTML nos quais as exibições podem adicionar informações para renderizar dinamicamente uma página. "Variáveis" de modelos de página, como `{{ content }}` em *index.html*, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
+| **modelos** | Uma pasta para modelos de página do Django que contém um único arquivo *index.html* dentro de uma pasta que corresponde ao nome do aplicativo. (No Visual Studio 2017 15,7 e anterior, o arquivo está contido diretamente em *modelos* e a etapa 2-4 instrui você a criar a subpasta.) Os modelos são blocos de HTML nos quais as exibições podem adicionar informações para renderizar dinamicamente uma página. "Variáveis" de modelos de página, como `{{ content }}` em *index.html*, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
 | **admin.py** | O arquivo Python no qual você estende a interface administrativa do aplicativo (veja a etapa 6), que é usada para propagar e editar dados em um banco de dados. Inicialmente, esse arquivo contém apenas a instrução `from django.contrib import admin`. Por padrão, o Django inclui uma interface administrativa padrão por meio de entradas no arquivo *settings.py* do projeto do Django, que você pode ativar removendo a marca de comentário das entradas existentes em *urls.py*. |
 | **apps.py** | Um arquivo Python que define uma classe de configuração para o aplicativo (veja abaixo, depois desta tabela). |
 | **models.py** | Modelos são objetos de dados, identificados por funções, por meio dos quais os modos de exibição interagem com o banco de dados subjacente do aplicativo (veja a etapa 6). O Django fornece a camada de conexão de banco de dados para que os aplicativos não precisem se preocupar com esses detalhes. O arquivo *models.py* é um local padrão no qual criar os modelos e, inicialmente, contém apenas a instrução `from django.db import models`. |
