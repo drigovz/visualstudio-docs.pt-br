@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263309"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409359"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -79,7 +79,7 @@ Para obter informações adicionais, consulte a [comparação detalhada](https:/
 
 A implantação no sistema de arquivos significa simplesmente copiar os arquivos do seu aplicativo para uma pasta específica em seu próprio computador. Isso geralmente é usado para fins de teste ou para implantar o aplicativo para uso por um número limitado de pessoas, caso o computador também esteja executando um servidor. Se a pasta de destino for compartilhada em uma rede, a implantação no sistema de arquivos poderá disponibilizar os arquivos do aplicativo Web para outras pessoas que poderão, por sua vez, implantá-la em servidores específicos.
 
-Todas os computadores locais que estão executando um servidor podem disponibilizar seu aplicativo através da Internet ou de uma Intranet, dependendo de como estiver configurado e das redes às quais estiver conectado. (Se você conectar um computador diretamente à Internet, seja muito cuidado protegendo-o contra ameaças externas.) Como você gerencia esses computadores, você está no controle total das configurações de hardware e software.
+Todas os computadores locais que estão executando um servidor podem disponibilizar seu aplicativo através da Internet ou de uma Intranet, dependendo de como estiver configurado e das redes às quais estiver conectado. (Se você conectar um computador diretamente à Internet, seja especialmente cuidadoso para protegê-lo contra ameaças de segurança externas.) Como você gerencia essas máquinas, você tem controle total sobre as configurações de software e hardware.
 
 Observe que se, por algum motivo (como acesso ao computador), não for possível usar os serviços de nuvem como o Serviço de Aplicativo do Azure ou as Máquinas Virtuais do Azure, você poderá usar o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) em seu próprio datacenter. O Azure Stack permite gerenciar e usar recursos de computação por meio do Serviço de Aplicativo do Azure e das Máquinas Virtuais do Azure e ainda manter tudo localmente.
 
@@ -112,7 +112,7 @@ Ao escolher um destino personalizado, o Visual Studio solicitará um nome de per
 
 Para saber mais, confira [Início Rápido – Implantar em um site](quickstart-deploy-to-a-web-site.md)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Tutoriais:
 

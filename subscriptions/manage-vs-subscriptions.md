@@ -7,11 +7,11 @@ ms.date: 07/17/2019
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
 ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706977"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408879"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 

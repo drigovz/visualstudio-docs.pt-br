@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748961"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409107"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto e ajuda da interface do usuário para o Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a>Texto e terminologia da interface do usuário
@@ -164,7 +164,7 @@ ms.locfileid: "72748961"
 
 ## <a name="error-messages"></a>Mensagens de erro
 
-### <a name="overview"></a>Visão Geral
+### <a name="overview"></a>Visão geral
  Ocorreram erros. A definição de limitações sobre o que o usuário pode fazer é uma primeira etapa sensata na prevenção de mensagens de erro podem ser evitados. No entanto, quando ocorre um erro, uma mensagem de erro bem escrita pode dar um longo caminho para atenuar o problema. As mensagens de erro são, sem dúvida, um dos tipos mais importantes de notificação que o usuário vê, pois elas são síncronas e indicam um problema que precisa ser resolvido. Mensagens de erro mal gravadas deixam os usuários por conta própria para decidir a causa dos erros e de quaisquer soluções possíveis.
 
  Os usuários podem parar de prestar atenção às mensagens de erro mais usadas ou confusas; portanto, grave somente as mensagens necessárias que agregam valor à experiência do usuário. Se a mensagem for simplesmente uma notificação, use uma apresentação alternativa.
@@ -253,13 +253,13 @@ ms.locfileid: "72748961"
 
 ### <a name="error-message-examples"></a>Exemplos de mensagem de erro
 
-|Bom|Satisfatório|
+|Bom|Defeituoso|
 |----------|---------|
-|"O número que você está discado não está mais em serviço. Verifique o número e disque novamente ou disque 0 para o operador. "|-"Erro (449): número inválido"<br />-"Esse erro de exceção sem tratamento indica que a operação foi concluída com êxito".<br /><br /> ![Mensagem de erro inadequada no Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog ")|
+|"O número que você está discado não está mais em serviço. Verifique o número e disque novamente ou disque 0 para o operador. "|-"Erro (449): número inválido"<br />-"Esse erro de exceção sem tratamento indica que a operação foi concluída com êxito".<br /><br /> ![Mensagem de erro inadequada no Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Acessando a ajuda
 
-### <a name="overview"></a>Visão Geral
+### <a name="overview"></a>Visão geral
  Além da documentação no MSDN, um usuário do Visual Studio tem vários pontos de acesso para auxiliar o usuário na interface do usuário. Para garantir que esses pontos de acesso estejam consistentemente disponíveis, as equipes de recursos precisam aproveitar o sistema de ajuda oferecido pelo ambiente. Estes pontos de acesso são:
 
 - **Texto instrutivo e suplementar em caixas de diálogo.** Texto estático que fornece direção ou explicação, na superfície da interface do usuário ou disponível ao passar o mouse sobre um ícone de InfoTip.
@@ -302,7 +302,7 @@ ms.locfileid: "72748961"
 
  Especificamente, a função **VBDialogBoxParam** examina o modelo de caixa de diálogo para um botão cuja ID é **IDHELP** (9) ou o rótulo é **ajuda** ou **& ajuda**. Se um botão de ajuda for encontrado, ele ficará oculto e o estilo de **WS_EX_CONTEXTHELP** será adicionado à caixa de diálogo, que colocará o **?** na barra de título da caixa de diálogo.
 
- Quando a caixa de diálogo é criada, ela envia por push o procedimento de caixa de diálogo para uma pilha e invoca a caixa de diálogo com um procedimento de caixa de diálogo de pré-processamento chamado **DialogPreProc**. Quando o **?** o botão é clicado, ele envia um **WM_SYSCOMMAND** de **SC_CONTEXTHELP** para a caixa de diálogo. O **DialogPreProc** captura esse comando e o altera para uma mensagem **WM_HELP** , que é passada para o procedimento de caixa de diálogo original.
+ Quando a caixa de diálogo é criada, ela envia por push o procedimento de caixa de diálogo para uma pilha e invoca a caixa de diálogo com um procedimento de caixa de diálogo de pré-processamento chamado **DialogPreProc**. Quando o **?** o botão é clicado, ele envia uma **WM_SYSCOMMAND** de **SC_CONTEXTHELP** para a caixa de diálogo. O **DialogPreProc** captura esse comando e o altera para uma **WM_HELP** mensagem, que é passada para o procedimento de caixa de diálogo original.
 
  A maioria das caixas de diálogo criadas pelo ambiente tem um botão ajuda na caixa de diálogo. Quando a caixa de diálogo é exibida, o botão ajuda é ocultado automaticamente e apenas o **?** botão funciona. Se o **?** o botão é removido ou alterado no Windows, essa solução permite que você avance rapidamente para os botões de ajuda originais.
 
@@ -376,7 +376,7 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 ```
 
 ##### <a name="help-buttons-in-managed-code"></a>Botões de ajuda no código gerenciado
- Substituir o comportamento padrão do botão de ajuda da barra de título da janela é fácil no código gerenciado. Veja abaixo um aplicativo de demonstração completo que demonstra esse comportamento. Em essência, você precisa substituir o método **WndProc** do seu formulário e, em seguida, disparar F1 solicitações de ajuda quando uma mensagem **SC_CONTEXTHELP** é interceptada.
+ Substituir o comportamento padrão do botão de ajuda da barra de título da janela é fácil no código gerenciado. Veja abaixo um aplicativo de demonstração completo que demonstra esse comportamento. Em essência, você precisa substituir o método **WndProc** do seu formulário e, em seguida, disparar as solicitações de ajuda F1 quando uma mensagem de **SC_CONTEXTHELP** for interceptada.
 
 ```
 using System;

@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917379"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409925"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -79,7 +79,7 @@ Ao implantar o Serviço de Aplicativo do Microsoft Azure, selecione uma versão 
 
 Os Serviços de Nuvem do Microsoft Azure *dão* suporte ao arquivo *requirements.txt*. Consulte [Azure cloud service projects](python-azure-cloud-service-project-template.md) (Projetos do Serviço de Nuvem do Azure) para obter detalhes.
 
-## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+## <a name="debugging"></a>Depuração
 
 Quando um projeto Web é iniciado para depuração, o Visual Studio inicia um servidor Web local em uma porta aleatória e abre seu navegador padrão para esse endereço e porta. Para especificar opções adicionais, clique com o botão direito do mouse no projeto, selecione **Propriedades** e selecione a guia **Inicializador da Web**:
 
@@ -145,7 +145,7 @@ O comando **Converter em Projeto do Serviço de Nuvem do Microsoft Azure** (imag
 
 ![Comando Converter em projeto do serviço de nuvem do Microsoft Azure](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de modelos de item do Python](python-item-templates.md)
 - [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
