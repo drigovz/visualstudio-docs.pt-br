@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985205"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409836"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -38,7 +38,7 @@ No decorrer dessas etapas, você criará uma única solução do Visual Studio q
 > [!Note]
 > Este tutorial é diferente do [Início Rápido do Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) no qual você saberá mais sobre o Flask e como usar os diferentes modelos de projeto do Flask que fornecem um ponto de início mais amplo para seus próprios projetos. Por exemplo, os modelos de projeto instalam automaticamente o pacote do Flask ao criar um projeto, em vez de precisar instalar o pacote manualmente, conforme mostrado no Início Rápido.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Visual Studio 2017 ou posteriores no Windows com as seguintes opções:
   - A carga de trabalho **desenvolvimento do Python** (guia **Carga de Trabalho** no instalador). Para obter instruções, confira [Instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md).

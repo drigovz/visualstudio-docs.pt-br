@@ -9,45 +9,45 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824062"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409908"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
- Todas as fontes no Visual Studio devem ser expostas ao usuário para personalização. Isso é feito principalmente através de **fontes e cores** página na **Ferramentas > Opções** caixa de diálogo. As três principais categorias de configurações de fonte são:
+## <a name="BKMK_TheEnvironmentFont"></a>A fonte do ambiente
+ Todas as fontes no Visual Studio devem ser expostas ao usuário para personalização. Isso é feito principalmente por meio da página **fontes e cores** na caixa de diálogo **Ferramentas > opções** . As três principais categorias de configurações de fonte são:
 
-- **Fonte de ambiente** — a fonte primária para o IDE (ambiente de desenvolvimento integrado), usada para todos os elementos de interface, incluindo caixas de diálogo, menus, janelas de ferramentas e janelas de documento. Por padrão, a fonte de ambiente é vinculada a uma fonte de sistema que é exibido como 9 pt Segoe da interface do usuário em versões atuais do Windows. Usando uma fonte para todos os elementos de interface ajuda a garantir uma aparência consistente fonte por meio do IDE.
+- **Fonte do ambiente** — a fonte principal do IDE (ambiente de desenvolvimento integrado), usada para todos os elementos da interface, incluindo caixas de diálogo, menus, janelas de ferramentas e janelas de documentos. Por padrão, a fonte do ambiente está vinculada a uma fonte do sistema que aparece como 9 pt Segoe UI nas versões atuais do Windows. O uso de uma fonte para todos os elementos de interface ajuda a garantir uma aparência de fonte consistente em todo o IDE.
 
-- **Editor de texto** — que superfície no código e outros editores baseados em texto podem ser personalizadas no Editor de texto de elementos de página na **Ferramentas > Opções**.
+- **Editor de texto** — elementos que a superfície no código e outros editores baseados em texto podem ser personalizados na página Editor de texto em **Ferramentas > opções**.
 
-- **Coleções específicas** — as janelas de designer que oferecem a personalização de seus elementos de interface do usuário pode expor fontes específicas para seu design de superfície na própria página de configurações na **Ferramentas > Opções**.
+- **Coleções específicas** — as janelas de designer que oferecem a personalização do usuário de seus elementos de interface podem expor fontes específicas à sua superfície de design em suas próprias páginas de configurações em **Ferramentas > opções**.
 
-### <a name="editor-font-customization-and-resizing"></a>Personalização do Editor de fonte e redimensionamento
- Os usuários geralmente serão ampliar ou reduzir o tamanho e/ou a cor do texto no editor de acordo com suas preferências, independente da interface do usuário geral. Como a fonte de ambiente é usada em elementos que podem aparecer dentro ou como parte de um designer/editor, é importante observar o comportamento esperado quando uma destas classificações de fonte é alterada.
+### <a name="editor-font-customization-and-resizing"></a>Personalização e redimensionamento de fontes do editor
+ Os usuários geralmente aumentam ou ampliam o tamanho e/ou a cor do texto no editor de acordo com sua preferência, independentemente da interface geral do usuário. Como a fonte de ambiente é usada em elementos que podem aparecer dentro ou como parte de um editor/designer, é importante observar o comportamento esperado quando uma dessas classificações de fontes é alterada.
 
- Ao criar elementos de interface do usuário que aparecem no editor, mas são não fazem parte dos *conteúdo*, é importante usar a fonte de ambiente e não a fonte do texto, para que elementos redimensionar de forma previsível.
+ Ao criar elementos de interface do usuário que aparecem no editor, mas que não fazem parte do *conteúdo*, é importante usar a fonte do ambiente e não a fonte do texto para que os elementos redimensionem de forma previsível.
 
-1. Para o texto do código no editor, redimensionada com a configuração de fonte do texto de código e responder a nível de zoom do texto do editor.
+1. Para texto de código no editor, redimensione com a configuração fonte de texto de código e responda ao nível de zoom do texto do editor.
 
-2. Todos os outros elementos da interface devem ser vinculados à configuração de fonte de ambiente e respondem às alterações no ambiente globais. Isso inclui (mas não está limitado a):
+2. Todos os outros elementos da interface devem estar vinculados à configuração de fonte do ambiente e responder a quaisquer alterações globais no ambiente. Isso inclui (mas não se limita a):
 
     - Texto em menus de contexto
 
-    - Encontrar o painel do editor de texto em um adorno de editor, como o texto do menu de lâmpada, rápido e navegue até o painel
+    - Texto em uma Adornment do editor, como texto do menu de lâmpada, painel de localização rápida e navegação para o painel
 
-    - Rótulo de texto nas caixas de diálogo, como localizar em arquivos ou Refatorar
+    - Texto do rótulo em caixas de diálogo, como localizar em arquivos ou refatorar
 
-### <a name="accessing-the-environment-font"></a>Acessar a fonte de ambiente
- No código nativo ou WinForms, a fonte de ambiente pode ser acessada, chamando o método **IUIHostLocale::GetDialogFont** depois de consultar a interface do serviço SID_SUIHostLocale.
+### <a name="accessing-the-environment-font"></a>Acessando a fonte do ambiente
+ No código nativo ou WinForms, a fonte do ambiente pode ser acessada chamando o método **IUIHostLocale:: GetDialogFont** depois de consultar a interface do serviço de SID_SUIHostLocale.
 
- Para o Windows Presentation Foundation (WPF), derivar a classe de janela de caixa de diálogo do shell **DialogWindow** classe, em vez do WPF **janela** classe.
+ Para Windows Presentation Foundation (WPF), derive a classe da janela da caixa de diálogo da classe **DialogWindow** do Shell em vez da classe **Window** do WPF.
 
- No XAML, o código tem esta aparência:
+ Em XAML, o código tem esta aparência:
 
 ```
 <ui:DialogWindow
@@ -68,11 +68,11 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
 ```
 
- (Substitua `Microsoft.VisualStudio.Shell.11.0` com a versão atual da dll MPF.)
+ (Substitua `Microsoft.VisualStudio.Shell.11.0` pela versão atual da dll do MPF.)
 
- Para exibir a caixa de diálogo, chame "**ShowModal()** " na classe pela **ShowDialog()** . **ShowModal()** define o estado modal correto no shell, garante que a caixa de diálogo é centralizada na janela pai e assim por diante.
+ Para exibir a caixa de diálogo, chame "**userjanelarestrita ()** " na classe acima de **ShowDialog ()** . **Setjanelarestrita ()** define o estado modal correto no Shell, garante que a caixa de diálogo seja centralizada na janela pai e assim por diante.
 
- O código é da seguinte maneira:
+ O código é o seguinte:
 
 ```
 MyWindow window = new MyWindow();
@@ -80,9 +80,9 @@ window.ShowModal()
 
 ```
 
- **ShowModal** retorna um bool? (booliano anulável) com o **DialogResult**, que pode ser usado se necessário. O valor retornado será true se a caixa de diálogo foi fechada com **Okey**.
+ **Setjanelarestrita** retorna um bool? (booliano anulável) com o **DialogResult**, que pode ser usado se necessário. O valor de retorno será true se a caixa de diálogo tiver sido fechada com **OK**.
 
- Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio **HwndSource**, como uma janela pop-up ou uma janela do WPF filho de uma janela de janela Win32/WinForms pai, você precisará definir o **FontFamily**e **FontSize** no elemento raiz do elemento do WPF. (O shell define as propriedades na janela principal, mas eles não serão herdados após um HWND). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:
+ Se você precisar exibir alguma interface do usuário do WPF que não seja uma caixa de diálogo e esteja hospedada em seu próprio **HWND**, como uma janela pop-up ou uma janela filho do WPF de uma janela de janela pai Win32/WinForms, será necessário definir **FontFamily** e **FontSize** no elemento raiz do elemento WPF. (O Shell define as propriedades na janela principal, mas elas não serão herdadas após um HWND). O Shell fornece recursos aos quais as propriedades podem ser associadas, desta forma:
 
 ```
 <Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />
@@ -90,26 +90,26 @@ window.ShowModal()
 
 ```
 
-### <a name="BKMK_Formatting"></a> Formatação de referência (dimensionamento/negrito)
- Algumas caixas de diálogo exigem um determinado texto em negrito ou um tamanho diferente de fonte de ambiente. Anteriormente, fontes maiores do que a fonte de ambiente foram codificados como "fonte do ambiente + 2" ou semelhante. Usar os trechos de código fornecido, dar suporte a monitores com alto DPI e certifique-se de que o texto de exibição sempre aparece no peso (como Light ou Semilight) e no tamanho correto.
+### <a name="BKMK_Formatting"></a>Referência de formatação (dimensionamento/negrito)
+ Algumas caixas de diálogo exigem que o texto específico seja negrito ou um tamanho diferente da fonte do ambiente. Anteriormente, as fontes maiores do que a fonte do ambiente eram codificadas como "fonte de ambiente + 2" ou semelhantes. Usar os trechos de código fornecidos dará suporte a monitores de alto DPI e garantirá que o texto de exibição sempre apareça no tamanho e peso corretos (como Light ou Semilight).
 
-> **Observação: Antes de aplicar formatação, verifique se você estiver seguindo as diretrizes encontradas nas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> **Observação: antes de aplicar a formatação, verifique se você está seguindo as orientações encontradas em [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
 
- Para dimensionar a fonte de ambiente, defina o estilo do TextBlock ou rótulo conforme indicado. Cada um desses trechos de código, quando usados corretamente, irá gerar a fonte correta, incluindo as variações de tamanho e peso apropriadas.
+ Para dimensionar a fonte do ambiente, defina o estilo do TextBlock ou do rótulo, conforme indicado. Cada um desses trechos de código, usados corretamente, gerará a fonte correta, incluindo as variações de tamanho e peso apropriadas.
 
- Onde "vsui internos" é uma referência ao namespace Microsoft.VisualStudio.Shell:
+ Em que "vsui" é uma referência ao namespace Microsoft. VisualStudio. Shell:
 
 ```
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 
 ```
 
-#### <a name="375-environment-font--light"></a>Fonte de ambiente % 375 + luz
- **É exibida como:** 34 pt Segoe UI Light
+#### <a name="375-environment-font--light"></a>375% de fonte do ambiente + claro
+ **Aparece como:** 34 pt Segoe UI Light
 
- **Use para:** (raro) exclusivo com marca interface do usuário, como a página de início
+ **Use for:** (raro) interface do usuário com marca exclusiva, como na página inicial
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -119,7 +119,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -127,12 +127,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="310-environment-font--light"></a>Fonte de ambiente % 310 + luz
- **É exibida como:** 28 pt Segoe UI Light
+#### <a name="310-environment-font--light"></a>310% de fonte do ambiente + claro
+ **Aparece como:** 28 pt Segoe UI Light
 
- **Use para:** títulos de caixa de diálogo assinatura grandes, principais de cabeçalho em relatórios
+ **Use para: títulos de caixa de diálogo de** assinatura grande, título principal em relatórios
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -142,7 +142,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
@@ -150,12 +150,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="200-environment-font--semilight"></a>Fonte do ambiente de 200% + Semilight
- **É exibida como:** 18 pt Segoe UI Semilight
+#### <a name="200-environment-font--semilight"></a>200% de fonte de ambiente + Semilight
+ **Aparece como:** 18 pt Segoe UI Semilight
 
- **Use para:** subtítulos, títulos de caixas de diálogo de pequenas e médias
+ **Use for:** subtítulos, títulos em caixas de diálogo pequenas e médias
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -165,7 +165,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
@@ -173,12 +173,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="155-environment-font"></a>Fonte de ambiente % 155
- **É exibida como:** Segoe 14 pt da interface do usuário
+#### <a name="155-environment-font"></a>fonte de 155% de ambiente
+ **Aparece como:** 14 pt Segoe UI
 
- **Use para:** títulos de seção no documento bem relatórios ou interface do usuário
+ **Use para:** títulos de seção em relatórios de interface do usuário
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -188,7 +188,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
@@ -196,12 +196,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="133-environment-font"></a>Fonte de ambiente % 133
- **É exibida como:** 12 pt Segoe da interface do usuário
+#### <a name="133-environment-font"></a>fonte de 133% de ambiente
+ **Aparece como:** 12 pt Segoe UI
 
- **Use para:** subtítulos menores no documento e caixas de diálogo de assinatura bem da interface do usuário
+ **Use para:** subtítulos menores em caixas de diálogo de assinatura e interface do usuário bem para documentos
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -211,7 +211,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
@@ -219,12 +219,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="122-environment-font"></a>Fonte de ambiente % 122
- **É exibida como:** 11 pt Segoe da interface do usuário
+#### <a name="122-environment-font"></a>fonte de 122% de ambiente
+ **Aparece como:** 11 pt Segoe UI
 
- **Use para:** seção títulos em caixas de diálogo de assinatura, superior nós na exibição de árvore, navegação de tabulação vertical
+ **Use para:** títulos de seção em caixas de diálogo de assinatura, nós principais no modo de exibição de árvore, navegação de guia vertical
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -234,7 +234,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
@@ -242,12 +242,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="environment-font--bold"></a>Fonte de ambiente + em negrito
- **Aparece como:** em negrito 9 pt Segoe da interface do usuário
+#### <a name="environment-font--bold"></a>Fonte do ambiente + negrito
+ **Aparece como:** 9 pt em negrito Segoe UI
 
- **Use para:** rótulos e subtítulos em caixas de diálogo de assinatura, relatórios e documentos bem da interface do usuário
+ **Use para:** rótulos e subtítulos em caixas de diálogo de assinatura, relatórios e interface do usuário bem para documentos
 
- **Código de procedimento:** Onde "textBlock" é um TextBlock e um "label" definido anteriormente é um rótulo definido anteriormente.
+ **Código de procedimento:** Onde "textBlock" é um TextBlock definido anteriormente e "Label" é um rótulo definido anteriormente.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -257,7 +257,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Defina o estilo do TextBlock ou rótulo conforme mostrado.
+ **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
@@ -265,10 +265,10 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-### <a name="localizable-styles"></a>Estilos de localizáveis
- Em alguns casos, os localizadores precisará modificar os estilos de fonte para localidades diferentes, como a remoção de negrito do texto para idiomas do Leste Asiático. Para possibilitar a localização dos estilos de fonte, esses estilos devem ser dentro do arquivo. resx. É a melhor maneira de fazer isso e ainda Editar estilos de fonte no designer de formulários do Visual Studio definir explicitamente os estilos de fonte em tempo de design. Embora isso cria um objeto de fonte completa e pode parecer que quebrem a herança de fontes do pai, apenas a propriedade FontStyle é usada para definir a fonte.
+### <a name="localizable-styles"></a>Estilos localizáveis
+ Em alguns casos, os localizadores precisarão modificar estilos de fonte para localidades diferentes, como remover o texto em negrito para idiomas do leste asiático. Para tornar possível a localização de estilos de fonte, esses estilos devem estar dentro do arquivo. resx. A melhor maneira de fazer isso e ainda editar os estilos de fonte no designer de formulário do Visual Studio é definir explicitamente os estilos de fonte em tempo de design. Embora isso crie um objeto de fonte completo e pareça quebrar a herança de fontes pai, somente a Propriedade FontStyle é usada para definir a fonte.
 
- A solução é o formulário de caixa de diálogo de gancho **FontChanged** eventos. No **FontChanged** percorrer todos os controles de evento e verifique se a fonte está definida. Se ele for definido, você deve alterá-lo para uma nova fonte com base na fonte do formulário e estilo de fonte do controle anterior. Um exemplo no código é:
+ A solução é vincular o evento **FontChanged** do formulário de diálogo. No evento **FontChanged** , percorra todos os controles e verifique se sua fonte está definida. Se estiver definido, altere-o para uma nova fonte com base na fonte do formulário e no estilo de fonte anterior do controle. Um exemplo disso no código é:
 
 ```
 private void Form1_FontChanged(object sender, System.EventArgs e)
@@ -304,192 +304,192 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 }
 ```
 
- Usar esse código garante que quando a fonte do formulário é atualizada, as fontes dos controles também atualizará. Esse método também deve ser chamado do construtor do formulário, porque a caixa de diálogo pode não conseguir obter uma instância de **IUIService** e o **FontChanged** evento nunca será acionado. Vinculando **FontChanged** permitirá que as caixas de diálogo Selecionar a nova fonte dinamicamente, mesmo se a caixa de diálogo já está aberta.
+ O uso desse código garante que quando a fonte do formulário for atualizada, as fontes de controles também serão atualizadas. Esse método também deve ser chamado a partir do construtor do formulário, porque a caixa de diálogo pode falhar ao obter uma instância de **IUIService** e o evento **FontChanged** nunca será acionado. A conexão do **FontChanged** permitirá que as caixas de diálogo selecionem a nova fonte dinamicamente, mesmo que a caixa de diálogo já esteja aberta.
 
-### <a name="testing-the-environment-font"></a>Teste a fonte de ambiente
- Para garantir que sua interface do usuário está usando a fonte de ambiente e respeita as configurações de tamanho, abra **Ferramentas > Opções > ambiente > fontes e cores** e selecione "Fonte de ambiente" sob a "Mostrar configurações de:" menu suspenso.
+### <a name="testing-the-environment-font"></a>Testando a fonte do ambiente
+ Para garantir que sua interface do usuário esteja usando a fonte do ambiente e respeita as configurações de tamanho, abra **ferramentas > opções > ambiente > fontes e cores** e selecione "fonte do ambiente" no menu suspenso "Mostrar configurações para:".
 
- ![Página de fontes e cores nas ferramentas do &#62; caixa de diálogo Opções](../../extensibility/ux-guidelines/media/0201-a-optionsfonts.png "a_OptionsFonts 0201")
+ ![Página fontes e cores na caixa &#62; de diálogo opções de ferramentas](../../extensibility/ux-guidelines/media/0201-a-optionsfonts.png "0201-a_OptionsFonts")
 
- **Configurações de fontes e cores nas Ferramentas > caixa de diálogo Opções**
+ **Configurações de fontes e cores na caixa de diálogo Ferramentas > opções**
 
- Defina a fonte para algo muito diferente do padrão. Para tornar óbvio que não atualiza a interface do usuário, escolha uma fonte com serifas (como "Times New Roman") e defina um tamanho muito grande. Em seguida, teste sua interface do usuário para garantir que ele respeita o ambiente. Aqui está um exemplo usando a caixa de diálogo de licença:
+ Defina a fonte como algo muito diferente do padrão. Para tornar claro que a interface do usuário não é atualizada, escolha uma fonte com serifas (como "Times New Roman") e defina um tamanho muito grande. Em seguida, teste sua interface do usuário para garantir que ela respeita o ambiente. Veja um exemplo de como usar a caixa de diálogo de licença:
 
- ![Exemplo de caixa de diálogo não usando a fonte de ambiente](../../extensibility/ux-guidelines/media/0201-b-wrongfontdialog.png "b_WrongFontDialog 0201")
+ ![Exemplo de caixa de diálogo que não usa a fonte do ambiente](../../extensibility/ux-guidelines/media/0201-b-wrongfontdialog.png "0201-b_WrongFontDialog")
 
- **Exemplo de texto de interface do usuário que não respeita a fonte de ambiente**
+ **Exemplo de texto da interface do usuário que não respeita a fonte do ambiente**
 
- Nesse caso, "Informações de usuário" e "Informações do produto" são não respeitam a fonte. Em alguns casos, isso pode ser uma escolha de design explícita, mas ele pode ser um bug, se a fonte explícita não for especificada como parte das especificações redline.
+ Nesse caso, "informações do usuário" e "informações do produto" não estão respeitando a fonte. Em alguns casos, essa pode ser uma opção de design explícita, mas pode ser um bug se a fonte explícita não for especificada como parte das especificações de Redline.
 
- Para redefinir a fonte, clique em "Padrões de uso" em **Ferramentas > Opções > ambiente > fontes e cores**.
+ Para redefinir a fonte, clique em "usar padrões" em **ferramentas > opções > ambiente > fontes e cores**.
 
-## <a name="BKMK_TextStyle"></a> Estilo de texto
- Estilo de texto se refere ao uso de maiusculas, peso e tamanho da fonte. Para obter diretrizes de implementação, consulte [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+## <a name="BKMK_TextStyle"></a>Estilo de texto
+ O estilo de texto se refere ao tamanho da fonte, peso e capitalização. Para obter diretrizes de implementação, consulte [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-### <a name="text-casing"></a>Uso de maiusculas e minúsculas do texto
+### <a name="text-casing"></a>Capitalização de texto
 
-#### <a name="all-caps"></a>Todas em maiusculas
- Não use todas em maiusculas para títulos ou rótulos no Visual Studio.
+#### <a name="all-caps"></a>Todas as maiúsculas
+ Não use todos os limites para títulos ou rótulos no Visual Studio.
 
-#### <a name="all-lowercase"></a>Tudo em minúsculas
+#### <a name="all-lowercase"></a>Todas as letras minúsculas
  Não use todas as letras minúsculas para títulos ou rótulos no Visual Studio.
 
-#### <a name="sentence-and-title-case"></a>Caso de frase e título
- Texto do Visual Studio deve usar a capitalização de título ou diferenciam maiusculas de minúsculas, dependendo da situação.
+#### <a name="sentence-and-title-case"></a>Sentença e caso de título
+ O texto no Visual Studio deve usar o caso de título ou de sentença, dependendo da situação.
 
-|Use a capitalização de título para:|Use diferenciam maiusculas de minúsculas para:|
+|Usar caso de título para:|Usar caso de sentença para:|
 |-------------------------|----------------------------|
 |Títulos de caixa de diálogo|Rótulos|
 |Caixas de grupo|Caixas de seleção|
 |Itens de menu|Botões de opção|
-|Itens de menu de contexto|Itens de caixa de lista|
+|Itens de menu de contexto|Itens da caixa de listagem|
 |Botões|Barras de status|
 |Rótulos de tabela||
-|Cabeçalhos de coluna||
-|Dicas de ferramenta||
+|Cabeçalhos da coluna||
+|Dicas||
 
 ##### <a name="title-case"></a>Capitalização de título
- Capitalização de título é um estilo no qual as primeiras letras da maioria ou todas as palavras dentro de uma frase estão em maiusculas. No Visual Studio, capitalização de título é usada para vários itens, incluindo:
+ A caixa de título é um estilo no qual as primeiras letras da maioria ou todas as palavras em uma frase são capitalizadas. No Visual Studio, o caso de título é usado para muitos itens, incluindo:
 
-- **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"
+- **Dicas.** Exemplo: "Visualizar itens selecionados"
 
-- **Cabeçalhos de coluna.** Exemplo: "Resposta do sistema"
+- **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"
 
-- **Itens de menu.** Exemplo: "Salvar tudo"
+- **Itens de menu.** Exemplo: "salvar tudo"
 
-  Ao usar a capitalização de título, estas são as diretrizes para quando colocar em maiuscula palavras e deixá-los em minúsculas:
+  Ao usar o caso de título, essas são as diretrizes para quando colocar palavras em maiúsculas e quando deixá-las em minúsculas:
 
 |Maiúsculas|Comentários e exemplos|
 |---------------|---------------------------|
 |Todos os substantivos||
-|Todos os verbos|Incluindo "Is" e outras formas de "ser"|
-|Todos os advérbios|Incluindo "Que" e "Quando"|
-|Todos os adjetivos|Incluindo "This" e "Que"|
-|Todos os pronomes|Incluindo o caso seja "Seu", bem como "É," uma contração dos pronomes "it" e o verbo "é"|
+|Todos os verbos|Incluindo "is" e outras formas de "a ser"|
+|Todos os advérbios|Incluindo "de" e "quando"|
+|Todos os adjetivos|Incluindo "This" e "que"|
+|Todos os substantivos|Incluindo o Possessive "seu", bem como "é", uma contratação do pronoun "It" e o verbo "is"|
 |Primeira e última palavras, independentemente de partes da fala||
-|Preposições que fazem parte de uma frase verbal|"Fechando-Out de todos os Windows" ou "Desligamento do sistema"|
+|Preposições que fazem parte de uma frase verbal|"Fechar todas as janelas" ou "desligar o sistema"|
 |Todas as letras de um acrônimo|HTML, XML, URL, IDE, RGB|
-|O segundo word em uma palavra composta, caso se trate de um substantivo ou um adjetivo adequada, ou se as palavras têm o mesmo peso|Acesso de leitura/gravação de referência cruzada, Software de pré-Microsoft, tempo de execução|
+|A segunda palavra em uma palavra composta, se for um substantivo ou um adjetivo apropriado, ou se as palavras tiverem um peso igual|Referência cruzada, software anterior da Microsoft, acesso de leitura/gravação, tempo de execução|
 
 |Minúsculas|Exemplos|
 |---------------|--------------|
-|A segunda palavra em uma palavra composta, se for um particípio modificando a primeira palavra ou outra parte da fala|Instruções, fora Take|
-|Artigos, a menos que um é a primeira palavra no título|um, uma,|
-|Associações de coordenadas|e, mas, para, nem, ou|
-|Preposições com palavras de quatro ou menos letras fora de uma frase verbal|em, no, como para fora da, na parte superior do|
-|"Para" quando usado em uma frase infinita|"Como formatar o disco rígido"|
+|A segunda palavra em uma palavra composta se ela for outra parte da fala ou de um particípio modificando a primeira palavra|Como fazer, tirar|
+|Artigos, a menos que uma seja a primeira palavra no título|a, a, a|
+|Coordenar conconjuntos|e, mas, para, ou ou|
+|Preposições com palavras de quatro ou menos letras fora de uma frase verbal|para, até, para, de, em cima de|
+|"Para" quando usado em uma frase infinita|"Como formatar seu disco rígido"|
 
-##### <a name="sentence-case"></a>Diferenciam maiusculas de minúsculas
- Diferenciam maiusculas de minúsculas é o método padrão de maiusculas e minúsculas para gravação no qual apenas a primeira palavra da sentença está em maiusculas, junto com qualquer substantivos e os pronomes "I". Em geral, diferenciam maiusculas de minúsculas é mais fácil para um público mundial ler, especialmente quando o conteúdo será convertido por uma máquina. Use diferenciam maiusculas de minúsculas para:
+##### <a name="sentence-case"></a>Caso de sentença
+ O caso de sentença é o método de capitalização padrão para escrever no qual apenas a primeira palavra da frase é capitalizada, junto com quaisquer substantivos próprios e o pronoun "I". Em geral, o caso de sentença é mais fácil para um público mundial ler, especialmente quando o conteúdo será traduzido por um computador. Usar caso de sentença para:
 
-1. **Mensagens da barra de status.** Esses são simples, resumo e fornecem apenas informações de status. Exemplo: "Carregamento de arquivo de projeto"
+1. **Mensagens da barra de status.** Elas são simples, curtas e fornecem apenas informações de status. Exemplo: "Carregando arquivo de projeto"
 
-2. **Todos os outros elementos de interface do usuário**, incluindo rótulos, caixas de seleção, botões de opção e listar itens de caixa. Exemplo: "Selecionar todos os itens na lista"
+2. **Todos os outros elementos da interface do usuário**, incluindo rótulos, caixas de seleção, botões de opção e itens da caixa de listagem. Exemplo: "selecionar todos os itens na lista"
 
 ### <a name="text-formatting"></a>Formatação de texto
- Texto do padrão de formatação no Visual Studio 2013 é controlado por um [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Esse serviço ajuda a garantir uma aparência consistente fonte por meio do IDE (ambiente de desenvolvimento integrado), e você deve usá-lo para garantir uma experiência consistente para seus usuários.
+ A formatação de texto padrão no Visual Studio 2013 é controlada por uma [fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Esse serviço ajuda a garantir uma aparência de fonte consistente em todo o IDE (ambiente de desenvolvimento integrado) e você deve usá-la para garantir uma experiência consistente para seus usuários.
 
- O tamanho padrão usado pelo serviço da fonte do Visual Studio vem do Windows e é exibido como 9 pt.
+ O tamanho padrão usado pelo serviço de fontes do Visual Studio é proveniente do Windows e aparece como 9 pt.
 
- Você pode aplicar a formatação para a fonte de ambiente. Este tópico aborda como e onde usar estilos. Para obter informações de implementação, consulte [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+ Você pode aplicar a formatação à fonte do ambiente. Este tópico aborda como e onde usar os estilos. Para obter informações de implementação, consulte [a fonte do ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 #### <a name="bold-text"></a>Texto em negrito
- Texto em negrito é usado com moderação no Visual Studio e deve ser reservado para:
+ O texto em negrito é usado com moderação no Visual Studio e deve ser reservado para:
 
 - rótulos de pergunta em assistentes
 
-- designando o projeto ativo no Gerenciador de soluções
+- designando o projeto ativo no Gerenciador de Soluções
 
-- valores substituídos na janela da ferramenta propriedades
+- valores substituídos na janela de ferramentas Propriedades
 
-- determinados eventos nas listas suspensas Visual Basic editor
+- determinados eventos nas listas suspensas do editor de Visual Basic
 
-- conteúdo gerado pelo servidor na estrutura de tópicos de documento para páginas da web
+- conteúdo gerado pelo servidor na estrutura de tópicos do documento para páginas da Web
 
-- cabeçalhos de seção na caixa de diálogo complexa ou designer de interface do usuário
+- cabeçalhos de seção em interface de usuário ou designer de caixa de diálogo complexa
 
 #### <a name="italics"></a>Itálico
- Visual Studio não usa o texto em itálico itálico ou negrito.
+ O Visual Studio não usa texto em itálico itálico ou negrito.
 
 #### <a name="color"></a>Cor
 
-- Azul é reservado para hiperlinks (navegação e comandos) e nunca deve ser usado para a orientação.
+- O azul é reservado para hiperlinks (navegação e comando) e nunca deve ser usado para orientação.
 
-- Títulos maiores (fonte de ambiente x 155% ou maior) podem ser coloridos para essas finalidades:
+- Títulos maiores (fonte de ambiente x 155% ou superior) podem ser coloridos para essas finalidades:
 
-  - Para fornecer o apelo visual a assinatura de IU do Visual Studio
+  - Para fornecer apelo visual para assinatura da interface do usuário do Visual Studio
 
   - Para chamar a atenção para uma área específica
 
-  - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
+  - Para oferecer o alívio da cor de texto do ambiente cinza-escuro padrão/preto
 
-- Cor nos títulos deve utilizar o Visual Studio marca cores existentes, principalmente a principal roxa, #FF68217A.
+- A cor dos títulos deve aproveitar as cores de marca existentes do Visual Studio, principalmente o principal roxo, #FF68217A.
 
-- Ao usar cor em títulos, você deve seguir a [diretrizes de cores do Windows](https://msdn.microsoft.com/library/dn742482.aspx), incluindo a taxa de contraste e outras considerações de acessibilidade.
+- Ao usar cores em títulos, você deve aderir às [diretrizes de cores do Windows](https://msdn.microsoft.com/library/dn742482.aspx), incluindo a taxa de contraste e outras considerações sobre acessibilidade.
 
 ### <a name="font-size"></a>Tamanho da fonte
- Design do Visual Studio da interface do usuário apresenta uma aparência mais clara com mais espaço em branco. Sempre que possível, as barras de título e chrome foram reduzidas ou removidas. Enquanto a densidade de informações é um requisito no Visual Studio, tipografia continua sendo importante, com ênfase em mais aberto de espaçamento entre linhas e uma variação de tamanhos de fonte e pesos.
+ O design da interface do usuário do Visual Studio apresenta uma aparência mais clara com mais espaço em branco. Sempre que possível, as barras Chrome e title foram reduzidas ou removidas. Embora a densidade das informações seja um requisito no Visual Studio, a tipografia continua sendo importante, com ênfase em mais espaçamento de linha aberta e uma variação de tamanhos e pesos de fontes.
 
- As tabelas a seguir inclui detalhes de design e exemplos visuais para as fontes de exibição usados no Visual Studio. Algumas variações de fonte de exibição tem o tamanho e o peso, como Semilight ou luz, codificados em sua aparência.
+ As tabelas a seguir incluem detalhes de design e exemplos visuais para as fontes de exibição usadas no Visual Studio. Algumas variações de fonte de vídeo têm o tamanho e o peso, como Semilight ou Light, codificados em sua aparência.
 
- Trechos de código de implementação para todas as fontes de exibição podem ser encontrados na [formatação (dimensionamento/negrito) referência](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).
+ Trechos de código de implementação para todas as fontes de exibição podem ser encontrados na [referência de formatação (dimensionamento/negrito)](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).
 
-#### <a name="375-environment-font--light"></a>Fonte de ambiente % 375 + luz
-
-|||
-|-|-|
-|**Uso:** Raros. Exclusivo com marca somente interface do usuário.<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 34 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> *Não usado atualmente. Pode ser usada na página inicial.*|
-
-#### <a name="310-environment-font--light"></a>Fonte de ambiente % 310 + luz
+#### <a name="375-environment-font--light"></a>375% de fonte do ambiente + claro
 
 |||
 |-|-|
-|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use leve<br /><br /> **Não:**<br /><br /> -Use para interface do usuário que não seja da interface do usuário, como página inicial de assinatura<br />-Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 28 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente % 310 &#43; título claro](../../extensibility/ux-guidelines/media/0202-a-ef310.png "a_EF310 0202")|
+|**Uso:** Encontrar. Somente interface do usuário com marca exclusiva.<br /><br /> **Coincide**<br /><br /> -Usar caso de sentença<br />-Sempre usar peso leve<br /><br /> **Não:**<br /><br /> -Use para a interface do usuário que não seja a interface do usuário da assinatura, como página inicial<br />– Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nas janelas de ferramentas|**Aparece como:** 34 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> *Não usado no momento. Pode ser usado na página inicial.*|
 
-#### <a name="200-environment-font--semilight"></a>Fonte do ambiente de 200% + Semilight
-
-|||
-|-|-|
-|**Uso:**<br /><br /> -Subtítulos<br />-Títulos de caixas de diálogo de pequenas e médias<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />-Sempre use Semilight peso<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Use nas janelas de ferramentas|**É exibida como:** 18 pt Segoe UI Semillight<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente de 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "b_EF200 0202")|
-
-#### <a name="155-environment-font"></a>Fonte de ambiente % 155
+#### <a name="310-environment-font--light"></a>310% de fonte do ambiente + claro
 
 |||
 |-|-|
-|**Uso:**<br /><br /> -Os títulos de seção documento bem da interface do usuário<br />-Relatórios<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** Segoe 14 pt da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 155](../../extensibility/ux-guidelines/media/0202-c-ef155.png "c_EF155 0202")|
+|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Coincide**<br /><br /> -Usar caso de sentença<br />-Sempre usar peso leve<br /><br /> **Não:**<br /><br /> -Use para a interface do usuário que não seja a interface do usuário da assinatura, como página inicial<br />– Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nas janelas de ferramentas|**Aparece como:** 28 pt Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título da fonte &#43; de ambiente de 310%](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
 
-#### <a name="133-environment-font"></a>Fonte de ambiente % 133
-
-|||
-|-|-|
-|**Uso:**<br /><br /> -Subtítulos menores nas caixas de diálogo de assinatura<br />-Subtítulos menores no documento bem da interface do usuário<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** 12 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 133](../../extensibility/ux-guidelines/media/0202-d-ef133.png "d_EF133 0202")|
-
-#### <a name="122-environment-font"></a>Fonte de ambiente % 122
+#### <a name="200-environment-font--semilight"></a>200% de fonte de ambiente + Semilight
 
 |||
 |-|-|
-|**Uso:**<br /><br /> -Títulos de seção nas caixas de diálogo de assinatura<br />-Nós superior no modo de exibição de árvore<br />-Navegação pela tecla tab vertical<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:**<br /><br /> -Em negrito, itálico ou negrito, itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**É exibida como:** 11 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente % 122](../../extensibility/ux-guidelines/media/0202-e-ef122.png "e_EF122 0202")|
+|**Uso:**<br /><br /> -Subtítulos<br />-Títulos em caixas de diálogo pequenas e médias<br /><br /> **Coincide**<br /><br /> -Usar caso de sentença<br />-Sempre usar peso Semilight<br /><br /> **Não:**<br /><br /> – Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nas janelas de ferramentas|**Aparece como:** 18 pt Segoe UI Semillight<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de 200% de fonte &#43; de ambiente Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
 
-#### <a name="environment-font--bold"></a>Fonte de ambiente + em negrito
-
-|||
-|-|-|
-|**Uso:**<br /><br /> -Rótulos e subtítulos nas caixas de diálogo de assinatura<br />-Rótulos e subtítulos em relatórios<br />-Rótulos e subtítulos no documento da interface do usuário<br /><br /> **Faça:**<br /><br /> -Use diferenciam maiusculas de minúsculas<br />– Use o peso de negrito<br /><br /> **Não:**<br /><br /> -Itálico ou negrito itálico<br />-Use para o corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Use nas janelas de ferramentas|**Aparece como:** em negrito 9 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente &#43; cabeçalho em negrito](../../extensibility/ux-guidelines/media/0202-f-efb.png "f_EFB 0202")|
-
-#### <a name="environment-font"></a>Fonte de ambiente
+#### <a name="155-environment-font"></a>fonte de 155% de ambiente
 
 |||
 |-|-|
-|**Uso:** Todos os outros tipos de texto<br /><br /> **Faça:** Usar diferenciam maiusculas de minúsculas<br /><br /> **Não:** Itálico ou negrito itálico|**É exibida como:** 9 pt Segoe da interface do usuário<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente](../../extensibility/ux-guidelines/media/0202-g-ef.png "g_EF 0202")|
+|**Uso:**<br /><br /> -Títulos de seção na interface do usuário bem-documentação<br />-Relatórios<br /><br /> **Fazer:** Usar caso de sentença<br /><br /> **Não:**<br /><br /> – Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nos controles padrão do Visual Studio<br />-Usar nas janelas de ferramentas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente de 155%](../../extensibility/ux-guidelines/media/0202-c-ef155.png "0202-c_EF155")|
 
-### <a name="padding-and-spacing"></a>Preenchimento e espaçamento
- Títulos exigem espaço em torno deles para fornecer-lhes a ênfase apropriada. Esse espaço varia dependendo do tamanho do ponto e o que mais é quase o título, como uma régua horizontal ou uma linha de texto na fonte de ambiente.
+#### <a name="133-environment-font"></a>fonte de 133% de ambiente
 
-- O preenchimento ideal para um título por si só deve ser 90% do espaço de altura de capital de caractere. Por exemplo, um título de Segoe UI Light pt 28 possui uma altura de limite de 26 pt, e o preenchimento deve ser aproximadamente 23 pt ou aproximadamente 31 pixels.
+|||
+|-|-|
+|**Uso:**<br /><br /> -Subtítulos menores em caixas de diálogo de assinatura<br />-Subtítulos menores na interface do usuário bem de documentos<br /><br /> **Fazer:** Usar caso de sentença<br /><br /> **Não:**<br /><br /> – Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nos controles padrão do Visual Studio<br />-Usar nas janelas de ferramentas|**Aparece como:** 12 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente de 133%](../../extensibility/ux-guidelines/media/0202-d-ef133.png "0202-d_EF133")|
 
-- O espaço mínimo em torno de um título deve ser 50% da altura do caractere de capital. Menos espaço pode ser usado quando um cabeçalho é acompanhado por uma regra ou outro elemento de ajuste uma forte.
+#### <a name="122-environment-font"></a>fonte de 122% de ambiente
 
-- Texto de fonte de ambiente em negrito deve seguir o preenchimento e o espaçamento de altura de linha padrão.
+|||
+|-|-|
+|**Uso:**<br /><br /> -Títulos de seção em caixas de diálogo de assinatura<br />-Nós principais no modo de exibição de árvore<br />-Navegação de guia vertical<br /><br /> **Fazer:** Usar caso de sentença<br /><br /> **Não:**<br /><br /> – Negrito, itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nos controles padrão do Visual Studio<br />-Usar nas janelas de ferramentas|**Aparece como:** 11 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de título de fonte de ambiente de 122%](../../extensibility/ux-guidelines/media/0202-e-ef122.png "0202-e_EF122")|
 
-## <a name="see-also"></a>Consulte também
- [MSDN: Fontes (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN: Texto da Interface do usuário (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+#### <a name="environment-font--bold"></a>Fonte do ambiente + negrito
+
+|||
+|-|-|
+|**Uso:**<br /><br /> -Rótulos e subtítulos em caixas de diálogo de assinatura<br />-Rótulos e subtítulos em relatórios<br />-Rótulos e subtítulos na interface do usuário bem-sudirecionada<br /><br /> **Coincide**<br /><br /> -Usar caso de sentença<br />-Usar peso em negrito<br /><br /> **Não:**<br /><br /> -Itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar nos controles padrão do Visual Studio<br />-Usar nas janelas de ferramentas|**Aparece como:** 9 pt em negrito Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de cabeçalho de &#43; fonte de ambiente em negrito](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
+
+#### <a name="environment-font"></a>Fonte do ambiente
+
+|||
+|-|-|
+|**Uso:** Todos os outros textos<br /><br /> **Fazer:** Usar caso de sentença<br /><br /> Não **:** Itálico ou negrito itálico|**Aparece como:** 9 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente](../../extensibility/ux-guidelines/media/0202-g-ef.png "0202-g_EF")|
+
+### <a name="padding-and-spacing"></a>Enchimento e espaçamento
+ Os títulos exigem espaço em relação a eles para dar a eles a ênfase apropriada. Esse espaço varia dependendo do tamanho do ponto e do que mais está próximo ao título, como uma regra horizontal ou uma linha de texto na fonte do ambiente.
+
+- O preenchimento ideal para um título por si só deve ser de 90% do espaço de altura de caractere maiúsculo. Por exemplo, um título de Segoe UI de 28 pt tem uma altura de 26 pt e o preenchimento deve ser de aproximadamente 23 pt ou cerca de 31 pixels.
+
+- O espaço mínimo em volta de um cabeçalho deve ser 50% da altura do caractere maiúsculo. Menos espaço pode ser usado quando um título é acompanhado por uma regra ou outro elemento de ajuste rígido.
+
+- O texto da fonte do ambiente em negrito deve seguir o espaçamento e o preenchimento da altura de linha padrão.
+
+## <a name="see-also"></a>Veja também
+ [Msdn: fonts (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [msdn: texto da interface do usuário (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)
