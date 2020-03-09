@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824558"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408782"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 
@@ -67,7 +67,7 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 2. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
 
-3. Na lista suspensa **Editor de Script Externo**, escolha sua versão preferida do Visual Studio, se ela estiver listada, caso contrário, selecione **Procurar....**.
+3. Na lista suspensa **Editor de Script Externo**, escolha sua versão preferida do Visual Studio, se ela estiver listada, caso contrário, selecione **Procurar....** .
 
    ![Selecionar o Visual Studio](media/vstu_unity-external-tools.png)
 
@@ -91,6 +91,6 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 > As Ferramentas do Visual Studio para Unity exigem o Unity 5.2 e superiores, além de uma versão do Visual Studio que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. Para verificar se as Ferramentas do Visual Studio para Unity estão habilitadas na sua instalação do Unity, selecione **Sobre o Unity** no menu do **Ajuda** e procure o texto “Ferramentas do Microsoft Visual Studio para Unity habilitadas” na parte inferior esquerda da caixa de diálogo.
 > ![Sobre o Unity](media/vstu_about-unity.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
  Para saber como trabalhar com o projeto do Unity no Visual Studio e como depurá-lo, confira [Ferramentas do Visual Studio para Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

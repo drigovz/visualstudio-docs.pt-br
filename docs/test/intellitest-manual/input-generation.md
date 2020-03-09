@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591588"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409541"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -36,7 +36,7 @@ O [solver de restrição](#constraint-solver) do IntelliTest pode lidar com valo
 
 * [Inteiros](#integers-and-floats) e [Floats](#integers-and-floats)
 * [Objetos](#objects)
-* [Estruturas](#structs)
+* [Structs](#structs)
 * [Matrizes](#arrays-and-strings) e [Cadeias de Caracteres](#arrays-and-strings)
 
 O IntelliTest filtra entradas que violam as suposições indicadas.
@@ -61,7 +61,7 @@ Posteriormente na análise, conforme mais métodos acessíveis forem descobertos
 
 O [solver de restrição](#constraint-solver) do IntelliTest determina os valores de entrada de teste de tipos primitivos como **byte**, **int**, **float** e outros para disparar diferentes caminhos de execução diferentes para o teste e o programa em teste.
 
-## <a name="objects"></a>Objetos do
+## <a name="objects"></a>Objetos
 
 O IntelliTest pode [criar instâncias de classes do .NET existentes](#existing-classes) ou você pode usar o IntelliTest para automaticamente [criar objetos fictícios](#parameterized-mocks) que implementam uma interface específica e se comportam de maneiras diferentes dependendo do uso.
 
