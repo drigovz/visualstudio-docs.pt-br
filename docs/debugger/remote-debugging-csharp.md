@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730253"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409409"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de C# um ou Visual Basic projeto no Visual Studio
 Para depurar um aplicativo do Visual Studio que foi implantado em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, execute o aplicativo.
@@ -33,7 +33,7 @@ Para depurar um aplicativo do Visual Studio que foi implantado em um computador 
 
 Para obter informações sobre a depuração remota de aplicativos do Windows universal (UWP), consulte [depurar um pacote do aplicativo instalado](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
 
 O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de telefone) e do Windows Server a partir do Windows Server 2008 Service Pack 2. Para obter uma lista completa dos requisitos, consulte [requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -83,9 +83,9 @@ O depurador não pode implantar C# aplicativos de área de trabalho Visual ou Vi
 
 7. Verifique se **Habilitar depuração de código nativo** não está selecionado.
 
-8. Compile o projeto.
+8. Crie o projeto.
 
-9. Crie uma pasta no computador remoto que seja do mesmo caminho que a pasta de **depuração** no computador do Visual Studio: **\<source caminho > \MyWPF\MyWPF\bin\Debug**.
+9. Crie uma pasta no computador remoto que seja do mesmo caminho que a pasta de **depuração** no computador do Visual Studio: **\<caminho de origem > \MyWPF\MyWPF\bin\Debug**.
 
 10. Copie o executável que você acabou de criar do computador do Visual Studio para a pasta recém-criada no computador remoto.
 
@@ -102,7 +102,7 @@ O depurador não pode implantar C# aplicativos de área de trabalho Visual ou Vi
 
 13. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.
 
-     As credenciais necessárias variam de acordo com a configuração de segurança da rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, juntamente com a senha correta.
+     As credenciais necessárias variam de acordo com a configuração de segurança da rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, junto com a senha correta.
 
      Você deve ver que a janela principal do aplicativo WPF está aberta no computador remoto.
 
@@ -120,6 +120,6 @@ O depurador não pode implantar C# aplicativos de área de trabalho Visual ou Vi
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Configurar o Firewall do Windows para Depuração Remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md)
+- [Atribuições de Porta do Depurador Remoto](../debugger/remote-debugger-port-assignments.md)
 - [Depuração Remota de ASP.NET em um computador remoto IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911504"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409211"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador no Visual Studio
 
@@ -73,7 +73,7 @@ Na janela **configurações de exceção** (**depurar > configurações de exce�
 
 Se você selecionar uma exceção na janela **configurações de exceção** , a execução do depurador será interrompida sempre que a exceção for lançada, não importa se ela é tratada. Agora, a exceção é chamada de exceção de primeira chance. Por exemplo, aqui estão alguns cenários:
 
-- No aplicativo de C# console a seguir, o método Main gera um **AccessViolationException** dentro de um bloco`try/catch`.
+- No aplicativo de C# console a seguir, o método Main gera um **AccessViolationException** dentro de um bloco `try/catch`.
 
   ```csharp
   static void Main(string[] args)

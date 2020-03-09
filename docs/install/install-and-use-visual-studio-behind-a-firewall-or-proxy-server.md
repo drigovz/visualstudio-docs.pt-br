@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409516"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -135,7 +135,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Visual Studio Online | \*. online.visualstudio.com | https/443 | Usado para chamar as APIs do Visual Studio online |
 | Aquisição de tipo automático de JavaScript | registry.npmjs.org | https/443 | Usado para instalar definições de tipo TypeScript para fornecer IntelliSense para bibliotecas JavaScript populares |
 | Serviço de licenciamento de assinaturas do Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licenciamento/ClientRights | https/443 | Licenciamento para ativação online |
-| Depurador | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon.\*. zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Usado para baixar bits do depurador para depuração do .NET Core em UNIX/macOS por SSH <br><br>2. <br>Usado para baixar bits do depurador para depuração remota de contêiner do Docker do Windows<br><br> 3. usado para depuração de origem do .NET Framework <br><br> 4. <br>(Se o usuário optar por ele) Usado para baixar símbolos publicados no servidor de símbolos nuget.org.<br><br> 5. (se o usuário optar por usar) para baixar símbolos e binários do MS, também pode ser necessário para depurar código gerenciado em despejos |
+| Depurador | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Usado para baixar bits do depurador para depuração do .NET Core em UNIX/macOS por SSH <br><br>2. <br>Usado para baixar bits do depurador para depuração remota de contêiner do Docker do Windows<br><br> 3. usado para depuração de origem do .NET Framework <br><br> 4. <br>(Se o usuário optar por ele) Usado para baixar símbolos publicados no servidor de símbolos nuget.org.<br><br> 5. (se o usuário optar por usar) para baixar símbolos e binários do MS, também pode ser necessário para depurar código gerenciado em despejos |
 | Visual Studio Online| \*. online.visualstudio.com | https/443 | Usado para chamar as APIs do Visual Studio online |
 | Publicação de aplicativo do Xamarin Android | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Usado para interagir com Google Play Store serviço para publicar/carregar aplicativos do Xamarin Android diretamente do Visual Studio. |
 | Registro de Contêiner do Azure | *. azurecr.io | https/443 | Acessar registros de contêiner hospedados no Azure, para configuração de pipelines do CICD |
