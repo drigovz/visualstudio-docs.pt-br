@@ -1,5 +1,5 @@
 ---
-title: 'Como: Crie um. Arquivo vsct | Microsoft Docs'
+title: 'Como: criar um. Arquivo vsct | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924178"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409087"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Como: Criar um arquivo. vsct
+# <a name="how-to-create-a-vsct-file"></a>Como criar um arquivo. vsct
 
 Há várias maneiras de criar um arquivo de configuração de tabela de comando ( *. vsct*) do Visual Studio baseado em XML.
 
-- Você pode criar um novo VSPackage no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelo de pacote.
+- Você pode criar um novo VSPackage no modelo de pacote [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 - Você pode usar o compilador de configuração de tabela de comando baseado em XML, *vsct. exe*, para gerar um arquivo de um arquivo *. CTC* existente.
 
@@ -35,7 +35,7 @@ Há várias maneiras de criar um arquivo de configuração de tabela de comando 
 
 1. Inicie o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. Sobre o **arquivo** , aponte para **New**e, em seguida, clique em **arquivo**.
+2. No menu **Arquivo** , aponte para **Novo**e clique em **Arquivo**.
 
 3. No painel **modelos** , clique em **arquivo XML** e, em seguida, clique em **abrir**.
 
@@ -53,23 +53,23 @@ Há várias maneiras de criar um arquivo de configuração de tabela de comando 
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Como: Criar um arquivo. vsct de um arquivo. CTC existente
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Como: criar um arquivo. vsct de um arquivo. CTC existente
 
-Você pode criar um arquivo *. vsct* baseado em XML de um arquivo de origem *. CTC* de tabela de comandos existente. Ao fazer isso, você pode aproveitar o novo formato de compilador vsct ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tabela de comandos com base em XML).
+Você pode criar um arquivo *. vsct* baseado em XML de um arquivo de origem *. CTC* de tabela de comandos existente. Ao fazer isso, você pode aproveitar o novo formato de compilador VSCT (tabela de comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) baseado em XML.
 
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Para criar um arquivo. vsct de um arquivo. CTC
 
 1. Obtenha uma cópia da linguagem Perl.
 
-2. Obtenha uma cópia do script Perl *ConvertCTCToVSCT.pl*, normalmente localizada no caminho de  *\<instalação do SDK do Visual Studio > pasta \VisualStudioIntegration\Tools\bin*
+2. Obtenha uma cópia do script Perl *ConvertCTCToVSCT.pl*, normalmente localizada no caminho de *instalação do SDK do\<Visual Studio > pasta \VisualStudioIntegration\Tools\bin* .
 
 3. Obtenha uma cópia do arquivo de origem *. CTC* que você deseja converter.
 
 4. Coloque os arquivos no mesmo diretório.
 
-5. Na janela do prompt de comando,navegueatéodiretório.[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
+5. Na janela do prompt de comando do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], navegue até o diretório.
 
-6. Tipo
+6. Type
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -84,7 +84,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo de origem *. C
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Como: Criar um arquivo. vsct de um arquivo. CTO existente
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Como: criar um arquivo. vsct de um arquivo. CTO existente
 
 Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CTO* existente. Isso permite que você aproveite o novo formato de compilador de tabela de comando. Esse processo funciona mesmo que o arquivo *. CTO* tenha sido compilado a partir de um arquivo *. CTC* . Você pode editar e compilar o arquivo *. vsct* em outro arquivo. CTO.
 
@@ -96,13 +96,13 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
 3. No prompt de comando do Visual Studio, vá para o diretório que contém os arquivos *. CTO* e *. ctsym* .
 
-4. Tipo
+4. Type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     em \<que\> ctofilename é o nome do arquivo *. CTO* , \<vsctfilename\> é o nome do arquivo *. vsct* que você deseja criar e \<symfilename\> é o nome de o arquivo *. ctsym* .
+     em que \<ctofilename\> é o nome do arquivo *. CTO* , \<vsctfilename\> é o nome do arquivo *. vsct* que você deseja criar e \<symfilename\> é o nome do arquivo *. ctsym* .
 
      Esse processo cria um novo arquivo de compilador de tabela de comandos XML *. vsct* . Você pode editar e compilar o arquivo com *vsct. exe*, o compilador vsct, como faria com qualquer outro arquivo *. vsct* .
 
@@ -113,7 +113,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
 1. Abra o arquivo de projeto no editor. Se o projeto for carregado, você deverá descarregá-lo primeiro.
 
-2. Adicione um [elemento do grupo](../../msbuild/itemgroup-element-msbuild.md) de itens que `VSCTCompile` contém um elemento, conforme mostrado no exemplo a seguir.
+2. Adicione um [elemento do grupo](../../msbuild/itemgroup-element-msbuild.md) de itens que contém um elemento `VSCTCompile`, conforme mostrado no exemplo a seguir.
 
     ```xml
     <ItemGroup>
@@ -124,9 +124,9 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
     ```
 
-     O `ResourceName` elemento sempre deve ser definido como `Menus.ctmenu`.
+     O elemento `ResourceName` sempre deve ser definido como `Menus.ctmenu`.
 
-3. Se o seu projeto contiver um arquivo *. resx* , `EmbeddedResource` adicione um elemento que `MergeWithCTO` contenha um elemento, conforme mostrado no exemplo a seguir:
+3. Se o seu projeto contiver um arquivo *. resx* , adicione um elemento `EmbeddedResource` que contém um elemento `MergeWithCTO`, conforme mostrado no exemplo a seguir:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,19 +136,19 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
     ```
 
-     Essa marcação deve estar dentro do `ItemGroup` elemento que contém recursos incorporados.
+     Essa marcação deve estar dentro do elemento `ItemGroup` que contém recursos incorporados.
 
-4. Abra o arquivo de pacote, normalmente  *\<chamado\>de ProjectName Package.cs* ou  *\<ProjectName\>Package. vb*, no editor.
+4. Abra o arquivo de pacote, geralmente denominado *\<ProjectName\>Package.cs* ou *\<ProjectName\>Package. vb*, no editor.
 
-5. Adicione um `ProvideMenuResource` atributo à classe de pacote, conforme mostrado no exemplo a seguir.
+5. Adicione um atributo `ProvideMenuResource` à classe de pacote, conforme mostrado no exemplo a seguir.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     O primeiro valor do parâmetro deve corresponder ao valor do `ResourceName` atributo que você definiu no arquivo do projeto.
+     O primeiro valor do parâmetro deve corresponder ao valor do atributo `ResourceName` que você definiu no arquivo de projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Arquivos Author. vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência de esquema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
