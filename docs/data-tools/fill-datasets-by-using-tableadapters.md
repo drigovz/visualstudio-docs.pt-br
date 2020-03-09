@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586621"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408751"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
@@ -35,7 +35,7 @@ Um componente TableAdapter preenche um DataSet com dados do banco de dados, com 
 
 Para obter informações detalhadas sobre as operações do TableAdapter, você pode pular diretamente para um destes tópicos:
 
-|Tópico|Descrição|
+|Tópico|DESCRIÇÃO|
 |-----------|-----------------|
 |[Criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Como usar os designers para criar e configurar TableAdapters|
 |[Criar consultas TableAdapter parametrizadas](../data-tools/create-parameterized-tableadapter-queries.md)|Como permitir que os usuários forneçam argumentos para procedimentos ou consultas do TableAdapter|
@@ -89,7 +89,7 @@ A classe TableAdapter não é um tipo .NET. Isso significa que você não pode p
 
 A seguir estão os métodos comumente usados e as propriedades de TableAdapters:
 
-|{1&gt;Membro&lt;1}|Descrição|
+|Membro|DESCRIÇÃO|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popula a tabela de dados associada do TableAdapter com os resultados do comando `SELECT` do TableAdapter.|
 |`TableAdapter.Update`|Envia as alterações de volta ao banco de dados e retorna um inteiro que representa o número de linhas afetadas pela atualização. Para obter mais informações, consulte [atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,7 +126,7 @@ A classe TableAdaptermanager não é um tipo .NET. Portanto, você não pode pro
 
 A seguir estão os métodos usados com frequência e as propriedades da classe `TableAdapterManager`:
 
-|{1&gt;Membro&lt;1}|Descrição|
+|Membro|DESCRIÇÃO|
 |------------|-----------------|
 |Método `UpdateAll`|Salva todos os dados de todas as tabelas de dados.|
 |Propriedade `BackUpDataSetBeforeUpdate`|Determina se deve ser criada uma cópia de backup do conjunto de um antes da execução do método `TableAdapterManager.UpdateAll`. Boolean.|
@@ -137,6 +137,6 @@ A seguir estão os métodos usados com frequência e as propriedades da classe `
 
 Quando você usa comandos de dados com uma propriedade CommandType definida como <xref:System.Data.CommandType.Text>, verifique cuidadosamente as informações enviadas de um cliente antes de passá-las para o banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas do conjunto de dados](../data-tools/dataset-tools-in-visual-studio.md)

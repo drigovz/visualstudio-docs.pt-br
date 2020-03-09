@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959660"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409928"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -66,7 +66,7 @@ Ao configurar condições, também é possível definir **Ação** e criar uma m
 
 Depois de interromper em um ponto de interrupção, você tem várias maneiras para executar o código em etapas ou executar blocos de código antes de interromper novamente. Esses comandos estão disponíveis em vários locais, incluindo a barra de ferramentas de depuração na parte superior, o menu **Depuração**, o menu de contexto acionado ao clicar com o botão direito do mouse no editor de códigos e por meio de atalhos de teclado (embora nem todos os comandos estejam em todos os locais):
 
-| Recurso | Pressionamento de tecla | Descrição |
+| Recurso | Pressionamento de tecla | DESCRIÇÃO |
 | --- | --- | --- |
 | **Continue** | **F5** | Executa o código até chegar ao próximo ponto de interrupção. |
 | **Intervir** | **F11** | Executa a próxima instrução e para. Se a próxima instrução for uma chamada a uma função, o depurador parará na primeira linha da função que está sendo chamada. |
@@ -74,7 +74,7 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 | **Depuração Circular** | **Shift**+**F11** | Executa o código até o final da função atual e, em seguida, executa em etapas até a instrução de chamada.  Esse comando é útil quando não é necessário depurar o restante da função atual. |
 | **Executar até o cursor** | **Ctrl**+**F10** | Executa o código até a localização do cursor no editor. Esse comando permite ignorar facilmente um segmento de código que não precisa ser depurado. |
 | **Definir Próxima Instrução** | **Ctrl**+**Shift**+**F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
-| **Mostrar Próxima Instrução** | **Alt**+**Num** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
+| **Mostrar Próxima Instrução** | **Alt**+**num** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
 
@@ -132,7 +132,7 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 
 ### <a name="launch-mode-options"></a>Opções de modo de inicialização
 
-| Opção | Descrição |
+| Opção | DESCRIÇÃO |
 | --- | --- |
 | **Inicializador padrão do Python** | Usa o código de depuração escrito no Python portátil que é compatível com o CPython, IronPython e variantes como o Stackless Python. Fornece a melhor experiência de depuração de código puro do Python. Quando você o anexa a um processo *python.exe* em execução, esse inicializador é usado. Esse iniciador também fornece a [depuração de modo misto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para o CPython, permitindo a execução em etapas direta entre o código do C/C++ e o código do Python. |
 | **Inicializador da Web** | Inicia o navegador padrão na inicialização e habilita a depuração de modelos. Consulte a seção [Depuração de modelos da Web](python-web-application-project-templates.md#debugging) para obter mais informações. |
@@ -141,7 +141,7 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opções de execução (caminhos de pesquisa, argumentos de inicialização e variáveis de ambiente)
 
-| Opção | Descrição |
+| Opção | DESCRIÇÃO |
 | --- | --- |
 | **Caminhos de Pesquisa** | Esses valores correspondem ao que é mostrado no nó **Caminhos de Pesquisa** do projeto no **Gerenciador de Soluções**. É possível modificar esse valor aqui, mas é mais fácil usar o **Gerenciador de Soluções**, que permite procurar pastas e converter os caminhos automaticamente no formato relativo. |
 | **Argumentos de Script** | Esses argumentos são adicionados ao comando usado para iniciar o script, aparecendo após o nome de arquivo do script. O primeiro item aqui está disponível para o script como `sys.argv[1]`, o segundo como `sys.argv[2]` e assim por diante. |
@@ -161,7 +161,7 @@ A janela **Interativa de Depuração do Python** (**Depurar** > **Janelas** > **
 
 A janela **Interativa de Depuração** dá suporte a metacomandos especiais, além dos [comandos REPL padrão](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Arguments | Descrição |
+| Comando | Arguments | DESCRIÇÃO |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Inicia a execução do programa da instrução atual. |
 | `$down`, `$d` | Move o quadro atual um nível para baixo no rastreamento de pilha. |
@@ -257,6 +257,6 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 
 1. Inicie a depuração e reproduza o problema novamente. Os logs de depurador podem ser encontrados em `%temp%\DebugAdapterHostLog.txt`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugger-feature-tour.md).
