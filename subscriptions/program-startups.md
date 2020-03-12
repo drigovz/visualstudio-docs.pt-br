@@ -3,15 +3,15 @@ title: Assinaturas do Visual Studio oferecidas para startups por meio do program
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes sobre as assinaturas são fornecidos por meio do programa Microsoft para Startups.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605745"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947105"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Assinaturas do Visual Studio oferecidas para startups
 As startups qualificadas que entram no programa Microsoft para Startups recebem cinco [assinaturas de nuvem mensais do Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -27,17 +27,23 @@ As assinaturas mensais renovam automaticamente e são cobradas
 Não são oferecidas chaves do produto (Product Keys) para desbloqueá-lo. A entrada é a única opção para executar o Visual Studio. O assinante do Visual Studio pode operar offline por até 30 dias antes que o Visual Studio deixe de funcionar. Durante o trabalho online, o Visual Studio atualiza silenciosamente o status de licença do usuário periodicamente para garantir que a assinatura ainda esteja válida.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como são processados os encargos mensais da assinatura na nuvem?
-R: Na primeira compra, é cobrada uma quantidade proporcional para cobrir os dias restantes do mês atual. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita em 15 de abril, serão cobradas 5 unidades porque resta 50% do mês (15 dias de um mês de 30 dias). Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: como os encargos mensais da assinatura em nuvem são processados?
+R: Na primeira compra, vamos cobrar uma quantidade proporcional para cobrir os dias restantes do mês em questão. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita em 15 de abril, serão cobradas 5 unidades porque resta 50% do mês (15 dias de um mês de 30 dias). Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
 
 Mais tarde, quando você aumentar a quantidade paga, o aumento de unidades também será cobrado proporcionalmente para cobrir os dias restantes do mês em questão. Ou seja, se você comprar uma assinatura de nuvem do Visual Studio Professional a mais em 10 de maio, serão cobradas aproximadamente 0,677 unidades (21 dias restantes no dia 31 do mês de maio).
 
 ### <a name="q-how-do-cancelations-work"></a>P: Como funcionam os cancelamentos?
-R: Ao cancelar uma assinatura na nuvem do Visual Studio, você está cancelando a renovação automática. A assinatura continuará até a data de renovação normal e, em seguida, simplesmente expirará. Após a expiração, o assinante do Visual Studio não poderá mais usar o Visual Studio nem os outros benefícios da assinatura.
+R: Ao cancelar uma assinatura de nuvem do Visual Studio, você está cancelando a renovação automática. A assinatura continuará até a data de renovação normal e, em seguida, simplesmente expirará. Após a expiração, o assinante do Visual Studio não poderá mais usar o Visual Studio nem os outros benefícios da assinatura.
 
 Com as assinaturas de nuvem mensais, os cancelamentos entram em vigor no primeiro dia do mês seguinte. Ao cancelar apenas algumas das assinaturas de nuvem mensais, você deverá remover os usuários no primeiro dia do próximo mês para garantir que as pessoas certas continuem com as assinaturas atribuídas ativas.
 
 Para assinaturas de nuvem anuais, os cancelamentos entram em vigor no primeiro dia do mês após 12 meses da compra original ou 12 meses do último encargo de renovação anual. Por exemplo, se você comprou uma assinatura na nuvem anual do Visual Studio Professional em 3 de janeiro de 2018, ela permanece ativa até 1º de fevereiro de 2019, quando será renovada automaticamente por mais um ano. Se você cancelar em algum momento entre esse período e primeiro de fevereiro de 2020 a assinatura expirará em primeiro de fevereiro de 2020. Não há nenhum reembolso para cancelamentos durante o ano da assinatura para as assinaturas de nuvem anuais.
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 [Saiba mais sobre o Microsoft para Startups](https://startups.microsoft.com)

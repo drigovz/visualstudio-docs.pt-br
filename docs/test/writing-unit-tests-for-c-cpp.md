@@ -1,19 +1,19 @@
 ---
 title: Escrever testes de unidade para C/C++
 description: Grave C++ testes de unidade no Visual Studio usando várias estruturas de teste, incluindo CTest, Boost. test e Google Test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755595"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937553"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -41,7 +41,7 @@ Os projetos de teste de unidade C++ são compatíveis com o [CodeLens](../ide/fi
 
 - **Boost.Test** está incluído como componente padrão da carga de trabalho **Desenvolvimento para área de trabalho com C++** . Ele está integrado ao **Gerenciador de testes**, mas atualmente não tem um modelo de projeto. Ele deve ser configurado manualmente. Para obter mais informações, consulte [como: usar Boost. Test no Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- O suporte para **CTest** está incluído no componente **Ferramentas CMake para C++** , que faz parte da carga de trabalho **Desenvolvimento para desktop com C++** . No entanto, o CTest ainda não está totalmente integrado ao **Gerenciador de testes** . Para obter mais informações, consulte [como: usar o CTest no Visual Studio](how-to-use-ctest-for-cpp.md).
+- O suporte para **CTest** está incluído no componente **Ferramentas CMake para C++** , que faz parte da carga de trabalho **Desenvolvimento para desktop com C++** . Para obter mais informações, consulte [como: usar o CTest no Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 e versões anteriores**
 
@@ -156,6 +156,6 @@ Clique no ícone para obter mais informações ou para executar ou depurar o tes
 
 ![Execução e depuração do CodeLens C++](media/cpp-test-codelens-run-debug.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Efetuar teste de unidade em seu código](unit-test-your-code.md)

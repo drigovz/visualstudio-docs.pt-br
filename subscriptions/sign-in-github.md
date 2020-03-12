@@ -3,15 +3,15 @@ title: Entrar em Assinaturas do Visual Studio com sua conta do GitHub | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta do GitHub.
-ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: a0a2f69ab3cbab3fdf6c35d9407a59a7c7d49eb1
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944193"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947087"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Entrar em assinaturas do Visual Studio com sua conta do GitHub 
 
@@ -63,5 +63,11 @@ R: Vá para a [guia Segurança](https://account.microsoft.com/security) do Accou
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>P: Eu tento usar minha conta do GitHub para entrar, mas sou solicitado que eu já tenha uma identidade da Microsoft que devo usar em vez disso.  O que está acontecendo?
 R: se você tiver um endereço de email Azure Active Directory em sua conta do GitHub, isso significa que você já tem uma identidade da Microsoft que pode acessar o Azure e executar pipelines de CI usando o código do GitHub. Usar essa conta garante que seus recursos do Azure e os pipelines de build permaneçam dentro de seus limites organizacionais. No entanto, se você estiver fazendo trabalho pessoal, é recomendável colocar um endereço de email pessoal em sua conta do GitHub, de modo que você sempre tenha acesso a ele. Depois de fazer isso, tente entrar novamente e escolha **Usar um endereço de email diferente** quando for solicitado que você entre em sua conta corporativa ou de estudante. Isso permitirá que você crie uma nova conta Microsoft usando esse endereço de email pessoal.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
 Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  

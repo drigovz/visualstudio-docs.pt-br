@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78234997"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78925304"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
@@ -99,12 +99,12 @@ Funções intrínsecas do depurador:
 
 |Área|Funções intrínsecas|
 |----------|-------------------------|
-|**Comprimento da cadeia de caracteres**|strlen, wcslen, strnlen, wcsnlen|
-|**Comparação de cadeias de caracteres**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Pesquisa de cadeias de caracteres**|strchr, wcschr, memchr, wmemchr, strstr, wcsstr|
-|**Win32**|GetLastError, TlsGetValue|
-|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
-|**Diversos**|__log2//retorna a base de log 2 de um inteiro especificado, arredondado para o número inteiro mais próximo.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa uma nova passagem de árvore<br /><br />TreeTraverse_Next//retorna nós em uma árvore<br /><br />TreeTraverse_Skip//ignora nós em uma árvore de percurso pendente '|
+|**Comprimento da cadeia de caracteres**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Comparação de cadeias de caracteres**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Pesquisa de cadeias de caracteres**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
+|**Diversos**|__log2//retorna a base de log 2 de um inteiro especificado, arredondado para o número inteiro mais próximo.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa uma nova passagem de árvore<br /><br />TreeTraverse_Next//retorna nós em uma árvore<br /><br />TreeTraverse_Skip//ignora nós em uma árvore de percurso pendente '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI-expressões sem suporte
 
@@ -204,7 +204,7 @@ Você não pode declarar novas variáveis explícitas nas janelas do depurador. 
 
 - Palavras-chave de namespace ou nível de módulo, como `End Sub` ou `Module`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)
 - [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
 - [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)

@@ -3,15 +3,15 @@ title: Gerenciar equipes grandes e prestadores de serviço externos | Visual Stu
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para equipes grandes, bem como para prestadores de gerenciamento externos.
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850045"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947056"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
 Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com software licenciado do Visual Studio seja licenciado adequadamente com sua própria assinatura do Visual Studio.
@@ -33,9 +33,15 @@ Os prestadores de serviço externos podem trazer licenças para se relacionar co
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
-- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

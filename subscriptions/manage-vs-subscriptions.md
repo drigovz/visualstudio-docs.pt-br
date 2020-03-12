@@ -3,21 +3,21 @@ title: Gerenciar assinaturas do Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408879"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78967833"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
 O [Portal do Assinante](https://my.visualstudio.com) do Visual Studio oferece a capacidade de gerenciar todas as suas assinaturas e associações a programas em um único local. Você pode fazer alterações no seu perfil, usar todos os benefícios incluídos nas assinaturas e mudar de assinatura com rapidez e facilidade.
 
-## <a name="managing-multiple-subscriptions"></a>Gerenciando várias assinaturas
+## <a name="managing-multiple-subscriptions"></a>Gerenciar várias assinaturas
 
 O portal de assinaturas do Visual Studio reúne todas as suas assinaturas e programas do Visual Studio em uma única experiência de portal aprimorada. Por exemplo, você pode ter uma assinatura padrão, como o Visual Studio Enterprise, para usar no trabalho e uma assinatura mensal do Visual Studio Professional ou uma associação ao Visual Studio Dev Essentials para usar em casa.
 
@@ -112,3 +112,17 @@ R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durant
 > [!NOTE]
 > - Se optar por fechar sua conta Microsoft ou o Azure AD, seus dados pessoais serão tornados anônimos imediatamente.
 > - Não removeremos completamente todos os seus dados pessoais se você tiver assinaturas ativas.
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Você gerencia assinaturas para sua organização?  Saiba mais sobre como gerenciar assinaturas do Visual Studio:
+- [Atribuir assinaturas individuais](assign-license.md)
+- [Atribuir várias assinaturas](assign-license-bulk.md)
+- [Editar assinaturas](edit-license.md)
+- [Excluir assinaturas](delete-license.md)
+- [Determinar o uso máximo](maximum-usage.md)
