@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9e506a2a0101449ef598734cece5b1330bcd2655
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125358"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947028"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -152,7 +152,7 @@ Estamos introduzindo uma nova extensão que você pode baixar para usar com o Vi
 
 Para obter mais informações, consulte a postagem no blog [Revisões de código usando a extensão Solicitações de Pull do Visual Studio](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
-## <a name="debug"></a>Depuração
+## <a name="debug"></a>Depurar
 
 Veja o vídeo a seguir para saber mais sobre como zerar com a segmentação precisa enquanto depura. <br><br>*Tamanho do vídeo: 3,54 minutos*
 
@@ -206,7 +206,7 @@ Para obter mais informações, consulte as [Propriedades fixas: Debug & exibir o
 
 ## <a name="whats-next"></a>O que vem a seguir
 
-O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Saiba mais sobre as inovações mais recentes no [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). E para descobrir o que já lançamos até agora na versão prévia, leia as [Notas da versão prévia](/visualstudio/releases/2019/release-notes-preview/).
+O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Saiba mais sobre as inovações mais recentes no [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). Para obter um registro do que lançamos em versão prévia até o momento, veja as [notas de versão de visualização](/visualstudio/releases/2019/release-notes-preview/). Para obter uma lista do que estamos planejando lançar em seguida, consulte o [mapa do Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
 Quer saber mais sobre as novidades do Visual Studio 2019? Confira o [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
@@ -218,10 +218,9 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 * Se você tiver um travamento, uma falha ou outro problema de desempenho, você poderá compartilhar facilmente conosco as etapas de reprodução e os arquivos de suporte usando a ferramenta [Relatar um Problema](how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Notas sobre a versão do Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Conferência Microsoft Build 2019](https://www.microsoft.com/build)
-* [Microsoft Connect(); conferência de 2018](https://www.microsoft.com/connectevent)
+* [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Conferência do Microsoft Build](https://www.microsoft.com/build)

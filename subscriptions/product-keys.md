@@ -3,15 +3,15 @@ title: Usar as chaves de produto | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/20/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
-ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 3cd4992a89f5cdd12e85d83e3ac8b525bd2fe7d4
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377705"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947120"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -36,14 +36,14 @@ A Microsoft tem o compromisso de proteger a integridade do programa de assinatur
 
 O limite diário de solicitação é de 10 chaves para todas as assinaturas do Visual Studio, incluindo aquelas oferecidas pelo MPN, BizSpark, MCT Software & Services e MCT, com a exceção do Visual Studio Professional (MPN), que tem um limite diário de solicitações de 7 chaves.
 
-Observação: Os limites de solicitação de chave estão sujeitos a alterações. Verifique aqui os limites atualizados.
+Observação: os limites de solicitação de chaves estão sujeitos a alterações. Verifique aqui os limites atualizados.
 
 Se você tiver solicitado o número máximo de chaves disponíveis para sua assinatura em um período de 24 horas, será exibida uma mensagem de erro informando que o limite foi atingido. O limite é reiniciado a cada 24 horas, começando às 00:01, Hora do Pacífico.
 
 Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluídas na assinatura é suficiente para a maioria dos assinantes. Se precisar de chaves adicionais, você poderá enviar uma solicitação por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/), que analisará cada caso individualmente.
 
 ## <a name="accessing-product-keys"></a>Acessar chaves do produto (Product Key)
-Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
+Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul **Obter Chave** de um produto específico na página [Downloads](https://my.visualstudio.com/downloads), conforme mostrado abaixo.  Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
@@ -59,10 +59,10 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 
 ### <a name="product-key-types"></a>Tipos de chave do produto (Product Key)
 
-|    Tipo de chave           |    DESCRIÇÃO                                                                                                                                                                                                           |
+|    Tipo de Chave           |    DESCRIÇÃO                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Não Aplicável                    |    Nenhuma chave é necessária para instalar este produto.                                                       |
-|    Comercial                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
+|    Varejo                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
 |    Ativação múltipla        |    Uma MAK (Chave de Ativação Múltipla) permite ativar várias instalações de um produto com a mesma chave. Normalmente, as MAKs são usadas com as versões de licenciamento por volume dos produtos. Geralmente, é fornecida somente uma chave MAK por assinatura.    |
 |    Chave de ativação estática    |    As chaves de ativação estática são fornecidas para produtos que não exigem ativação. Elas podem ser usadas para um número ilimitado de instalações.                                                                                                                  |
 |    Chave personalizada                 |    As chaves personalizadas permitem ações especiais ou fornecem informações para ativar ou instalar o produto.                                                                                                                                                                |
@@ -74,6 +74,12 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 |
 
 Você pode solicitar uma chave na página de download do produto ou pesquisar a chave que você precisa na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys).
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Para reivindicar chaves, acesse https://my.visualstudio.com/productkeys.  

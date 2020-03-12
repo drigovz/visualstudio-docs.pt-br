@@ -3,15 +3,15 @@ title: Parceiros que gerenciam assinaturas do Visual Studio para os clientes | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como os parceiros gerenciam as assinaturas do Visual Studio para seus clientes.
-ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850555"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947068"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Parceiros que gerenciam assinaturas em nome dos clientes
 Para gerenciar assinaturas no [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com), há algumas etapas que os parceiros e os clientes precisarão seguir. O processo será:
@@ -54,6 +54,12 @@ Esse cenário se aplica a novos parceiros que já fizeram novos pedidos de Open 
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
 - Visite o [portal de administração de assinaturas](https://manage.visualstudio.com) do Visual Studio para gerenciar as assinaturas.
 - Precisa de ajuda? Contatar o [Suporte à administração e às assinaturas](https://visualstudio.microsoft.com/support/support-overview-vs) do Visual Studio

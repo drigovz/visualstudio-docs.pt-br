@@ -3,15 +3,15 @@ title: Baixar títulos de software em assinaturas do Visual Studio | Microsoft D
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476833"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937488"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
@@ -50,14 +50,22 @@ Para obter uma chave do produto (Product Key) para o download, é possível clic
 > [!div class="mx-imgBorder"]
 > ![Reivindicar chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>Próximas etapas
-Para saber mais sobre como localizar, reivindicar e exportar chaves do produto (Product Keys), confira a documentação de chaves do produto (Product Keys):
-- [Visão geral das chaves do produto](product-keys.md)
-- [Localizar e reivindicar chaves](find-keys.md)
-
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Para saber mais sobre como localizar, reivindicar e exportar chaves de produto, confira a documentação de chaves de produto:
+- [Visão geral das chaves do produto](product-keys.md)
+- [Localizar e reivindicar chaves](find-keys.md)
+
+Saiba como aproveitar outros benefícios excelentes, como:
+- [Crédito individual do Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio IDE](vs-ide-benefit.md)
+
+
+
 

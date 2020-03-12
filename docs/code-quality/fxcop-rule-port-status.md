@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587583"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78945703"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
@@ -27,7 +27,7 @@ A [página de documentação gerada automaticamente](https://github.com/dotnet/r
 
 A partir da data desta página, a lista de regras do FxCop que foram modeladas para [analisadores de FxCop](install-fxcop-analyzers.md) inclui:
 
-ID da regra | Cargo
+ID da regra | Title
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Não declarar membros estáticos em tipos genéricos
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Tipos com campos descartáveis devem ser descartáveis
@@ -40,6 +40,7 @@ ID da regra | Cargo
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Marcar assemblies com ComVisible
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Marcar atributos com AttributeUsageAttribute
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Definir acessadores para argumentos de atributo
+[CA1021](ca1021.md) | Evitar parâmetros out
 [CA1024](ca1024-use-properties-where-appropriate.md) | Usar propriedades quando apropriado
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | Marcar enumerações com FlagsAttribute
 [CA1028](ca1028-enum-storage-should-be-int32.md) | O armazenamento de enumeração deve ser Int32
@@ -178,7 +179,7 @@ CA3061 | Não adicionar esquema por URL
 [CA3147](ca3147.md) | Marcar manipuladores de verbo com o token de antifalsificação de validação
 [CA5350](ca5350.md) | Não usar algoritmos de criptografia fracos
 [CA5351](ca5351.md) | Não usar algoritmos de criptografia desfeitos
-CA5358 | Não usar modos de codificação não seguros
+CA5358 | Não usar modos de criptografia não seguros
 CA5359 | Não desabilitar a validação de certificado
 CA5360 | Não chamar métodos perigosos na desserialização
 CA5361 | Não desabilitar o uso do SChannel de criptografia forte
@@ -344,6 +345,6 @@ As seguintes regras de análise herdada do FxCop foram preteridas e não serão 
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Regras Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
