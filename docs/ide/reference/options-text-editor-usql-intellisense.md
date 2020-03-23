@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666649"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opções, Editor de Texto, U-SQL, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para U-SQL. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **U-SQL** > **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para U-SQL. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**e, em seguida, escolha O Editor > de **Texto****U-SQL** > **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Configurações do IntelliSense
 
@@ -27,9 +27,9 @@ Marque uma caixa de seleção para habilitar **Informações Rápidas** ou **Int
 
 ## <a name="completion-lists"></a>Listas de Conclusão
 
-- **Mostrar lista de preenchimento depois que um caractere é digitado**
+- **Mostrar lista de conclusão depois que um caractere é digitado**
 
-   Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de preenchimento quando você começar a digitar. Quando essa opção não estiver selecionada, o preenchimento do IntelliSense ainda estará disponível no menu IntelliSense ou pressionando **Ctrl** + **Barra de espaços**.
+   Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de preenchimento quando você começar a digitar. Se você não selecionar essa opção, a conclusão do IntelliSense ainda está disponível no menu IntelliSense ou pressionando **ctrl** + **Spacebar**.
 
 - **Colocar palavras-chave em listas de preenchimento**
 
@@ -53,7 +53,7 @@ Marque uma caixa de seleção para habilitar **Informações Rápidas** ou **Int
 
    Quando essa opção estiver selecionada, uma nova linha será adicionada automaticamente e o cursor irá para a nova linha quando você digitar todos os caracteres de uma sugestão de lista de conclusão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

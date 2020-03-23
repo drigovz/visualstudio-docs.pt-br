@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777836"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
@@ -31,7 +31,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    LPCTSTR szComment);
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `dnTimestamp`
 
  Um inteiro de 64 bits que representa um valor de carimbo de data/hora.
@@ -70,12 +70,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 |||
 |-|-|
-|**Header**|Incluir *VSPerf.h*|
-|**Library**|Usar *VSPerf.lib*|
+|**Cabeçalho**|Incluir *VSPerf.h*|
+|**Biblioteca**|Usar *VSPerf.lib*|
 |**Unicode**|Implementado como CommentMarkAtProfileW (Unicode) e CommentMarkAtProfileA (ANSI).|
 
 ## <a name="example"></a>Exemplo
- O código a seguir ilustra o uso da chamada da função genérica de CommentMarkAtProfile. O exemplo pressupõe o uso de macros de cadeia de caracteres do Win32 e as configurações de compilador para ANSI para determinar se o código chama a função habilitada por ANSI.
+ O código a seguir ilustra o uso da chamada da função genérica de CommentMarkAtProfile. O exemplo pressupõe o uso de macros da cadeia de caracteres do Win32 e as configurações do compilador para ANSI para determinar se o código chama a função habilitada do ANSI.
 
 ```cpp
 void ExerciseCommentMarkAtProfile(void)
@@ -115,5 +115,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Referência da API do criador de perfil do Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Confira também
+- [Referência de API do Visual Studio Profiler (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

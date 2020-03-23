@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567639"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo opções: projetos e soluções \> geral
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo opções: Projetos e Soluções \> Gerais
 
-Use esta página para definir o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **Ferramentas** > **Opções**, expanda **Projetos e Soluções** e, em seguida, selecione **Geral**.
+Use esta página para definir o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **Opções de Ferramentas,** > **Options**expanda Projetos **e Soluções**e selecione **Geral.**
 
 As seguintes opções estão disponíveis na página **Geral**.
 
@@ -58,7 +58,7 @@ Se você tentar criar um novo projeto ou abrir um projeto existente em um local 
 
 ## <a name="show-output-window-when-build-starts"></a>Mostrar a Janela de Saída quando o build é iniciado
 
-Exibe automaticamente a [Janela de Saída](../../ide/reference/output-window.md) no IDE desde o início dos builds da solução.
+Exibe automaticamente a [janela Saída](../../ide/reference/output-window.md) no IDE no início das compilações de soluções.
 
 ## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Prompt para renomeação simbólica ao renomear arquivos
 
@@ -72,7 +72,7 @@ Quando selecionada, o Visual Studio exibe uma caixa de mensagem de confirmação
 
 Quando selecionada, os documentos que foram deixados abertos na última vez em que a solução foi fechada são abertos automaticamente quando a solução é aberta.
 
-Reabrir certos tipos de arquivos ou designers pode atrasar o carregamento da solução. Desmarque essa opção para [melhorar o desempenho do carregamento da solução](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) se você não quiser restaurar o contexto de anterior da solução.
+Reabrir certos tipos de arquivos ou designers pode atrasar o carregamento da solução. Desmarcar esta opção para melhorar o [desempenho da carga da solução](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) se você não quiser restaurar o contexto anterior da solução.
 
 ::: moniker range=">=vs-2019"
 
@@ -96,8 +96,8 @@ Se você não tiver essa opção selecionada e desejar editar um arquivo de proj
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Caixa de diálogo opções: projetos e soluções \> locais](projects-solutions-locations-options.md)
+- [Caixa de diálogo de \> opções: Locais de Projetos e Soluções](projects-solutions-locations-options.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Projetos Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

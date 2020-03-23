@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75406689"
 ---
 # <a name="set-multiple-startup-projects"></a>Definir vários projetos de inicialização
@@ -44,7 +44,7 @@ O Visual Studio para Mac permite especificar que mais de um projeto deve ser ini
 
    Você pode ver que os dois projetos estão configurados para iniciar, pois ambos os projetos estão em **negrito** no Painel de Soluções. Na barra de ferramentas, a nova configuração de execução é definida como a Configuração de Execução da Solução atual.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
-- [Compilação e criação no Visual Studio para Mac](compiling-and-building.md)
-- [Noções sobre configurações de compilação](configurations.md)
+- [Compilação e construção em Visual Studio para Mac](compiling-and-building.md)
+- [Entendendo as configurações de construção](configurations.md)

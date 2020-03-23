@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 2966d8b89a2609d3fbfc2b6b4561288433641ca1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67693108"
 ---
 # <a name="comments"></a>Comentários
@@ -30,7 +30,7 @@ Esses métodos podem ser usados para comentar ou remover a marca de comentário 
 
 Comentários também são úteis para documentar código para futuros desenvolvedores poderão vir a interagir com ele. Isso geralmente é feito na forma de comentário de várias linhas, que são adicionados da seguinte maneira em cada linguagem:
 
-**C#**
+**C #**
 
 ```csharp
 /*
@@ -39,7 +39,7 @@ Comentários também são úteis para documentar código para futuros desenvolve
 */
 ```
 
-**F#**
+**F #**
 
 ```fsharp
 (*
@@ -48,6 +48,6 @@ Comentários também são úteis para documentar código para futuros desenvolve
 *)
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Comentar o código (Visual Studio no Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

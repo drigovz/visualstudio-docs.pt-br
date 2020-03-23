@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67823167"
 ---
 # <a name="editor-behavior"></a>Comportamento do Editor
@@ -29,6 +29,6 @@ Comportamentos do editor podem ser definidos para permitir que o código seja fo
 
 Também é possível definir regras de formatação para XML, CSS, HTML e JSON.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Preferências de estilo de código (Visual Studio no Windows)](/visualstudio/ide/code-styles-and-quick-actions)

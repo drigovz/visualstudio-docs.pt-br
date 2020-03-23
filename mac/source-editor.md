@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68493268"
 ---
 # <a name="source-editor"></a>Editor de código-fonte
 
-Um editor de código-fonte confiável é essencial para escrever código eficiente sucintamente. O Visual Studio para Mac fornece um editor de código-fonte sofisticados que centraliza suas interações com o IDE. O editor de código-fonte fornece recursos que você pode esperar e dos quais pode precisar para fazer seu trabalho com facilidade: Desde itens básicos como realce de sintaxe, snippets de código e dobramento de código, até os benefícios da sua integração com o compilador Roslyn, como preenchimento de código do IntelliSense totalmente funcional.
+Um editor de código-fonte confiável é essencial para escrever código eficiente sucintamente. O Visual Studio para Mac fornece um editor de código-fonte sofisticados que centraliza suas interações com o IDE. O editor de código-fonte fornece os recursos que você pode esperar e precisa para realizar seu trabalho com facilidade: desde itens básicos como realce de sintaxe, snippets de código e dobramento de código, até os benefícios da sua integração com o compilador Roslyn, como preenchimento de código do IntelliSense totalmente funcional.
 
 O editor de código-fonte no Visual Studio para Mac proporciona uma experiência perfeita com todas as outras funcionalidades no IDE, como depuração, refatoração e integração de controle de versão.
 
@@ -30,7 +30,7 @@ O Visual Studio para Mac oferece muitos recursos poderosos para tornar o desenvo
 
 O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte grandes permitindo aos desenvolvedores mostrar ou ocultar seções completas do código, tal como o uso de diretivas, código clichê, comentários e instruções de #region. O dobramento de código é desativado por padrão no Visual Studio para Mac
 
-Para habilitar o dobramento de código, navegue para **Visual Studio > Preferências > Editor de Texto > Geral > Dobramento de código**:
+Para ativar o dobramento de código, navegue até **o Visual Studio > Preferências > Editor de Texto > Código geral de > Dobrando**:
 
 ![Opções de dobramento de código](media/source-neweditor-image1.png)
 
@@ -78,7 +78,7 @@ A cor de realce também útil para indicar que algo está sendo atribuído ou re
 
 ![exemplo mostrando a cor do realce](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código (Visual Studio no Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Estrutura de tópicos (Visual Studio no Windows)](/visualstudio/ide/outlining)

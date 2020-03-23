@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.openlocfilehash: 7d95c73b8d745826b256d515f161194ee9dbb587
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692378"
 ---
 # <a name="set-up-a-subversion-repository"></a>Configurar um repositório do Subversion
@@ -38,7 +38,7 @@ Após instalar o Subversion no computador, siga as etapas a seguir para publicar
 
 2. Abra ou crie um Projeto do Visual Studio para Mac.
 
-3. Clique com o botão direito do mouse no Projeto e selecione **Controle de versão > Publicar no Controle de versão...** :
+3. Clique com o botão direito do mouse no Projeto e selecione **Controle de versão > Publicar no Controle de versão...**:
 
     ![Iniciar a publicação do projeto](media/version-control-subversion2.png)
 
@@ -56,6 +56,6 @@ Após instalar o Subversion no computador, siga as etapas a seguir para publicar
 
 8. Todos os comandos de controle de versão disponíveis agora devem estar visíveis no menu de controle de versão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Trabalhando com o Subversion](working-with-subversion.md)

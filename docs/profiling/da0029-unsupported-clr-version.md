@@ -17,17 +17,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777509"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR não compatível
 
 |||
 |-|-|
-|Id da Regra|DA0029|
+|ID de regra|DA0029|
 |Categoria|Uso das ferramentas de criação de perfil|
 |Método de criação de perfil|Criação de perfil da linha de comando|
 |Mensagem|Uma versão do CLR sem suporte foi detectada durante a coleta. Talvez os símbolos gerenciados não resolvam corretamente.|
@@ -40,4 +40,4 @@ ms.locfileid: "74777509"
  Você recebeu este aviso porque as ferramentas de criação de perfil são incapazes de resolver os símbolos para o código gerenciado em execução no aplicativo. As ferramentas de criação de perfil não podem resolver os símbolos de código gerenciado para aplicativos que estão executando o [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Nenhuma.
+ Nenhum.

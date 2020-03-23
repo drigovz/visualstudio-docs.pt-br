@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772114"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
@@ -47,7 +47,7 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
@@ -69,7 +69,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
    - Para analisar um projeto que está aberto no momento no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selecione a opção **Um ou mais projetos disponíveis** e, em seguida, selecione o nome do projeto na lista.
 
-   - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)** .
+   - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.
 
 4. Clique em **Avançar**.
 
@@ -103,7 +103,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
     - Selecione **Inicializar a criação de perfil após a conclusão do assistente** para iniciar a criação de perfil imediatamente ou desmarque a caixa de seleção para iniciar a criação de perfil manualmente.
 
-10. Clique em **Finalizar**.
+10. Clique em **concluir**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Configurar as propriedades de criação de perfil HPC usando páginas de propriedade da sessão de desempenho
 
@@ -125,9 +125,9 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
-|**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|
+|**Nó de cabeçalho**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|
 |**Perfil na classificação**|Para analisar um processo específico no cluster, selecione a opção **Perfil na classificação** e, em seguida, selecione a classificação do processo na lista suspensa.|
 |**Perfil no nó**|Para analisar processos que são executados em um nó específico no cluster de HPC, selecione a opção **Perfil no nó** e, em seguida, selecione o nó da lista suspensa.|
@@ -136,11 +136,11 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="advanced-properties"></a>Propriedades avançadas
 
-| propriedade | Descrição |
+| Propriedade | Descrição |
 |---------------------------------------| - |
 | **Nome do projeto** | O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual. |
 | **Limpar quando o criador de perfil é interrompido** | Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE. |
-| **Arquivos adicionais a serem implantados** | Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências ( **...** ) para selecionar vários arquivos usando uma caixa de diálogo. |
+| **Arquivos adicionais a serem implantados** | Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências (**...**) para selecionar vários arquivos usando uma caixa de diálogo. |
 | **Comando Mpiexec** | Especifica o aplicativo que inicia o aplicativo MPI. O valor padrão é **mpiexec.exe** |
 | **Argumentos Mpiexec** | Especifica os argumentos para passar para o comando mpiexec.exe. |
 | **Nós solicitados no cluster** | Especifica o número de nós no cluster no qual executar o aplicativo. |

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888449"
 ---
 # <a name="work-with-sql-server-and-r"></a>Trabalhar com o SQL Server e R
@@ -26,17 +26,17 @@ O excelente suporte do Visual Studio para SQL Server ajuda os cientistas de dado
 
 |   |   |
 |---|---|
-| ![ícone de câmera de filme para vídeo](../install/media/video-icon.png "Assista a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) para obter uma visão geral do SQL Server e do R (3 m 03s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) para obter uma visão geral do SQL Server e do R (3 m 03s). |
 
 ## <a name="create-and-run-sql-queries"></a>Criar e executar consultas SQL
 
 As RTVS dão suporte para adição de consultas SQL em projetos R, permitindo que você desenvolva consultas SQL iterativamente em um contexto separado até obter os resultados que está procurando.
 
-Para adicionar um arquivo de consulta SQL, clique com o botão direito do mouse no projeto no Gerenciador de Soluções, selecione **Adicionar** > **Novo Item** e selecione o tipo de arquivo **Consulta SQL**:
+Para adicionar um arquivo de consulta SQL, clique com o botão direito do mouse no projeto no Solution Explorer, selecione **Adicionar** > **novo item**e selecione o tipo de arquivo **SQL Query:**
 
 ![Adicionar item de consulta SQL a um projeto](media/sql-add-item.png)
 
-Esse comando abre o arquivo no editor Transact-SQL do Visual Studio, que fornece o IntelliSense completo para SQL e a capacidade de executar consultas. Para que esses recursos funcionem, você precisa se conectar a um banco de dados usando o botão Conectar na barra de ferramentas do editor ou tentar executar uma consulta (**Ctrl**+**Shift**+**E**, que também funciona em uma seleção). As duas formas abrem a caixa de diálogo de conexão:
+Esse comando abre o arquivo no editor Transact-SQL do Visual Studio, que fornece o IntelliSense completo para SQL e a capacidade de executar consultas. Para que esses recursos funcionem, você precisa se conectar a um banco de dados usando o botão de conexão na barra de ferramentas do editor ou tentar executar uma consulta **(Ctrl**+**Shift**+**E,** que também funciona em uma seleção). As duas formas abrem a caixa de diálogo de conexão:
 
 ![Caixa de diálogo de conexão SQL](media/sql-connection-dialog.png)
 
@@ -45,7 +45,7 @@ Quando uma conexão é estabelecida, você pode executar consultas e ver os resu
 ![Resultados da consulta da janela SQL](media/sql-query-results.png)
 
 O editor Transact-SQL dá suporte a uma variedade de outros recursos, como exibir o plano de execução da consulta e um depurador de consulta.
-Para obter informações, consulte [Usar o Editor Transact-SQL para editar e executar scripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Para saber mais, confira [Usar o Editor Transact-SQL para editar e executar scripts](https://msdn.microsoft.com/library/hh272706.aspx).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Trabalhar com procedimentos armazenados do SQL Server
 
@@ -59,11 +59,11 @@ As RTVS simplificam o processo, que seria complicado e sujeito a erros, de combi
 
 |   |   |
 |---|---|
-| ![ícone de câmera de filme para vídeo](../install/media/video-icon.png "Assista a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) para obter uma visão geral de procedimentos armazenados de R e SQL (6 m 09s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) para obter uma visão geral de procedimentos armazenados de R e SQL (6 m 09s). |
 
 ### <a name="add-a-database-connection"></a>Adicionar uma conexão de banco de dados
 
-1. Selecione **Ferramentas do R** > **Dados** > **Adicionar Conexão de Banco de Dados** para exibir a caixa de diálogo **Propriedades da Conexão**. Aqui você especifica o nome da fonte de dados (SQL Server neste caso), o nome do servidor, o modo de autenticação e o nome do banco de dados. Selecione **Testar Conexão** para verificar sua entrada antes de fechar a caixa de diálogo.
+1. Selecione **R Ferramentas** > **Data** > **Add Database Connection** para trazer a caixa de diálogo Propriedades de **conexão.** Aqui você especifica o nome da fonte de dados (SQL Server neste caso), o nome do servidor, o modo de autenticação e o nome do banco de dados. Selecione **Testar Conexão** para verificar sua entrada antes de fechar a caixa de diálogo.
 
     ![Caixa de diálogo Conexão SQL](media/sql-connection-string-dialog.png)
 
@@ -73,7 +73,7 @@ As RTVS simplificam o processo, que seria complicado e sujeito a erros, de combi
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Escrever e testar um procedimento armazenado SQL
 
-Para adicionar um novo procedimento armazenado SQL, clique com o botão direito do mouse em seu projeto, selecione **Adicionar** > **Novo Item**, selecione **Procedimento Armazenado SQL com R** na lista de modelos, nomeie o arquivo e, em seguida, selecione **OK**. O nome de arquivo padrão é *SqlSProc.R*. Para facilitar a leitura, o nome de arquivo *StoredProcedure.R* é usado no restante desta seção. Quando há vários procedimentos armazenados, cada arquivo precisa ter um nome de arquivo exclusivo.
+Para adicionar um novo Procedimento Armazenado sQL, clique com o botão direito do mouse no projeto, selecione **Adicionar** > **novo item,** selecione **Procedimento armazenado em SQL com R** na lista de modelos, dê um nome ao arquivo e selecione **OK**. O nome de arquivo padrão é *SqlSProc.R*. Para facilitar a leitura, o nome de arquivo *StoredProcedure.R* é usado no restante desta seção. Quando há vários procedimentos armazenados, cada arquivo precisa ter um nome de arquivo exclusivo.
 
 As RTVS criam três arquivos para o procedimento armazenado: um arquivo *.R* para o código de R, um arquivo *.Query.sql* para o código SQL e um arquivo *.Template.sql* que combina os dois. Os dois últimos aparecem no Gerenciador de Soluções como filhos do arquivo *.R*:
 
@@ -143,12 +143,12 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 ### <a name="publish-a-sql-stored-procedure"></a>Publicar um procedimento armazenado SQL
 
-1. Selecione o comando de menu **Ferramentas do R** > **Dados** > **Publicar com Opções**.
+1. Selecione o comando **R Tools** > **Data** > **Publish With Options** menu.
 1. Na caixa de diálogo que aparece, altere **Publicar em:** para **Banco de Dados**, especifique o destino, selecione **Publicar** e as RTVS criam e publicam o procedimento armazenado:
 
     ![Caixa de diálogo Publicar procedimento armazenado](media/sql-publish-with-options.png)
 
-1. Para publicar todos os procedimentos armazenados em um projeto, você pode usar o comando **Ferramentas do R** > **Dados** > **Publicar Procedimentos Armazenados**, que também está disponível ao clicar com o botão direito do mouse no projeto no Gerenciador de Soluções.
+1. Para publicar todos os procedimentos armazenados em um projeto, você pode usar o comando **R Tools** > **Data** > **Publish Stored Procedures,** que também está disponível quando você clica com o botão direito do mouse no projeto no Solution Explorer.
 
 > [!Tip]
-> Se o Pesquisador de Objetos do SQL Server estiver aberto no Visual Studio, o procedimento armazenado publicado aparecerá na pasta **Programação** > **Procedimentos Armazenados** do banco de dados. Você também pode executá-lo do Pesquisador de Objetos clicando com o botão direito do mouse e selecionando **Executar Procedimento** ou chamando-o interativamente de uma janela de consulta *.sql*.
+> Se você tiver o SQL Server Object Explorer aberto no Visual Studio, seu procedimento armazenado publicado será exibido na pasta**Procedimentos armazenados** de **programação** > do seu banco de dados. Você também pode executá-lo do Pesquisador de Objetos clicando com o botão direito do mouse e selecionando **Executar Procedimento** ou chamando-o interativamente de uma janela de consulta *.sql*.

@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778135"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
 
 A criação de perfil de interação de camada fornece informações adicionais sobre os tempos de execução em funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Os dados são coletados apenas para chamadas de função síncronas.
 
-**Requirements**
+**Requisitos**
 
 - Visual Studio Enterprise
 
@@ -37,11 +37,11 @@ A Exibição Interações exibe os dados de interação de camada em dois painé
 
 ## <a name="master-pane"></a>Painel principal
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Nome**|- Para uma linha de nível superior, o nome do processo com perfil ou a página da Web.<br />- Para uma linha de conexão de banco de dados, o nome do servidor que hospeda o banco de dados.|
-|**Banco de dados**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
-|**Contagem**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|
+|**Database**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
+|**Contar**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|
 |**Tempo total decorrido**|O tempo total gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
@@ -49,7 +49,7 @@ A Exibição Interações exibe os dados de interação de camada em dois painé
 
 ## <a name="database-connection-details-pane"></a>Painel Detalhes de Conexão do Banco de Dados
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Texto do comando**|A consulta SQL da solicitação.|
 |**Contagem de consulta**|O número de vezes que a consulta foi executada.|

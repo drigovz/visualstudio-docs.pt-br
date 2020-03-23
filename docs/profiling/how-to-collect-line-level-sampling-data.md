@@ -12,16 +12,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776352"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível de linha
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.
 
-## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
+## <a name="overview"></a>Visão geral
  Para amostragem de nível de linha, o criador de perfil percorre a pilha de chamadas do programa em intervalos definidos e agrega os resultados. Esses resultados mostram quais instruções o processador estava executando quando as amostras foram obtidas. Em seguida, os dados coletados sobre amostras exclusivas são analisados para identificar as linhas de código e o IP (ponteiro de instrução).
 
  A amostragem de nível de linha funciona para código gerenciado e nativo. Os relatórios de desempenho que exibem esses dados incluem a exibição de Linhas e a exibição de Módulos.
@@ -52,10 +52,10 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 
 - Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.
 
-     – ou —
+     — ou —
 
-- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>** .
+- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.
 
-## <a name="see-also"></a>Consulte também
-- [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+## <a name="see-also"></a>Confira também
+- [Configure sessões de desempenho](../profiling/configuring-performance-sessions.md)
 - [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

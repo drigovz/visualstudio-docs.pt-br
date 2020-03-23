@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73636582"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
@@ -21,13 +21,13 @@ Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integra
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
 ::: moniker-end
 
-   O projeto é criado e um arquivo chamado *Server. js* é aberto na janela do **Editor** . O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
+   O projeto é criado e um arquivo chamado *server.js* é aberto na janela **Editor.** O **Editor** mostra o conteúdo dos arquivos, e é onde você fará a maior parte do seu trabalho de codificação no Visual Studio.
 
    ![Editor no Visual Studio](media/editor.png)
 
@@ -114,11 +114,11 @@ A **Lista de Erros** mostra erros, avisos e mensagens sobre o estado atual do c�
 
 ![Lista de Erros no Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>janela Saída
+## <a name="output-window"></a>Janela de Saída
 
 A janela de **Saída** mostra as mensagens de saída do build do projeto e do provedor de controle do código-fonte.
 
-Vamos criar o projeto para ver uma saída de build. No menu **Compilação**, escolha **Compilar Solução**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
+Vamos criar o projeto para ver uma saída de build. No menu **Build,** escolha **Build Solution**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
@@ -156,7 +156,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais recursos do Visual Studio 2017](../ide/advanced-feature-overview.md)

@@ -11,21 +11,21 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62962507"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
-O Visual Studio pode iniciar e depurar aplicativos Python local e remotamente em um computador Windows (consulte [Depuração remota](../debugger/remote-debugging.md)). Ela também pode depurar remotamente em um dispositivo ou sistema operacional diferente ou em uma implementação Python que não seja o CPython usando a [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
+O Visual Studio pode lançar e depurar aplicativos Python localmente e remotamente em um computador Windows (ver [depuração remota).](../debugger/remote-debugging.md) Ela também pode depurar remotamente em um dispositivo ou sistema operacional diferente ou em uma implementação Python que não seja o CPython usando a [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Ao usar a ptvsd, o código do Python que está sendo depurado hospeda o servidor de depuração ao qual o Visual Studio pode se anexar. Essa hospedagem exige uma pequena modificação no código para importar e habilitar o servidor e pode exigir configurações de rede ou de firewall no computador remoto para permitir conexões TCP.
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução à depuração remota, assista ao vídeo [Aprofundamento: Depuração remota multiplataforma](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6min22s), aplicável ao Visual Studio 2015 e 2017. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para uma introdução à depuração remota, consulte [Deep Dive: Depuração remota entre plataformas](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s), que é aplicável tanto ao Visual Studio 2015 quanto ao 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Configurar um computador Linux
 
@@ -89,13 +89,13 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
 
 1. (Opcional) Para ter o IntelliSense para ptvsd no computador local, instale o pacote de ptvsd em seu ambiente de Python.
 
-1. Selecione **Depurar** > **Anexar ao Processo**.
+1. Selecione **Depuração** > **Anexada ao Processo**.
 
 1. No diálogo **Anexar ao Processo** que será exibido, configure o **Tipo de Conexão** como **Python remoto (ptvsd)**. (Em versões anteriores do Visual Studio, esses comandos são denominados **Transporte** e **Depuração remota do Python**.)
 
 1. No campo **Destino da Conexão** (**Qualificador** em versões anteriores), insira `tcp://<ip_address>:5678`, em que `<ip_address>` é o do computador remoto (que pode ser um endereço explícito ou um nome como myvm.cloudapp.net) e `:5678` é o número da porta de depuração remota.
 
-1. Pressione **Enter** para popular a lista de processos do ptvsd disponíveis nesse computador:
+1. Pressione **Enter** para preencher a lista de processos ptvsd disponíveis nesse computador:
 
     ![Inserir o destino da conexão e listar processos](media/remote-debugging-qualifier.png)
 
@@ -173,10 +173,10 @@ Por padrão, a conexão com o servidor de depuração remota ptvsd 3.x é proteg
 
 1. O Visual Studio o avisará sobre possíveis problemas de certificado ao se conectar via SSL. É possível ignorar os avisos e continuar, porém, embora o canal ainda esteja criptografado contra interceptação, ele pode estar aberto a ataques man-in-the-middle.
 
-    1. Se o aviso **o certificado remoto não é confiável** abaixo for exibido, isso significará que o certificado não foi adicionado corretamente à AC Raiz Confiável. Verifique essas etapas e tente novamente.
+    1. Se você ver que o **certificado remoto não é um** aviso confiável abaixo, significa que você não adicionou corretamente o certificado à CA Raiz Confiável. Verifique essas etapas e tente novamente.
 
         ![Aviso de certificado SSL confiável](media/remote-debugging-ssl-warning.png)
 
-    1. Se o aviso **O nome do certificado remoto não corresponde ao nome do host** abaixo for exibido, isso significará que o nome do host ou o endereço IP correto não foi usado como o **Nome Comum** durante a criação do certificado.
+    1. Se você ver que o nome do **certificado remoto não corresponde ao** aviso de nome de host abaixo, significa que você não usou o nome de host ou endereço IP apropriado como nome **comum** ao criar o certificado.
 
         ![Aviso de nome de host do certificado SSL](media/remote-debugging-ssl-warning2.png)

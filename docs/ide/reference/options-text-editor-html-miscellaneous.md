@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666190"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opções, Editor de Texto, HTML (Web Forms), Diversos
 
-Use a página de opções **Diversos** para definir as preferências de como o editor de HTML lida com elementos colados na página. Para acessar essa página, na barra de menus, escolha **Ferramentas** > **Opções** e expanda **Editor de Texto** > **HTML (Web Forms** > **Diversos**.
+Use a página de opções **Diversos** para definir as preferências de como o editor de HTML lida com elementos colados na página. Para acessar esta página, na barra de menus, escolha **Opções de** > **ferramentas**e, em seguida, expanda **o Editor de** > texto**HTML (Formulários da Web)** > **Diversos**.
 
 ## <a name="miscellaneous-html-options"></a>Opções de HTML diversas
 
@@ -31,6 +31,6 @@ Use a página de opções **Diversos** para definir as preferências de como o e
 
    Quando essa caixa de seleção estiver marcada, a janela de conclusão de marca será exibida quando você digitar o caractere menor do que ("<").
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

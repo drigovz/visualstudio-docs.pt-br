@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62776771"
 ---
 # <a name="channels-threads-view"></a>Canais (exibição de threads)
@@ -31,7 +31,7 @@ A Visualização Simultânea mostra quatro tipos de canais: canais de thread, ca
 |Thread de trabalho|Um thread que foi criado pelo thread principal do aplicativo.|
 |Thread de trabalho CLR|Um thread de trabalho que foi criado pelo CLR (Common Language Runtime).|
 |Depurador Auxiliar|Um thread de trabalho que foi criado pelo depurador do Visual Studio.|
-|Thread ConcRT|Um thread que foi criado pelo Tempo de Execução de Simultaneidade Microsoft.|
+|Thread ConcRT|Um thread que foi criado pelo Runtime de Simultaneidade Microsoft.|
 |Thread GDI|Um thread que foi criado por GDIPlus.|
 |Thread OLE/RPC|Um thread que foi criado como um Thread de Trabalho do RPC.|
 |Thread RPC|Um thread que foi criado como um Thread do RPC.|
@@ -47,5 +47,5 @@ A Visualização Simultânea mostra quatro tipos de canais: canais de thread, ca
 ## <a name="gpu-channels"></a>Canais de GPU
  Canais da GPU exibem informações sobre a atividade do DirectX 11 no sistema.  Cada mecanismo DirectX associado à placa gráfica tem um canal separado.  Os segmentos individuais representam o tempo gasto no processamento de um pacote DMA.
 
-## <a name="see-also"></a>Consulte também
-- [Exibição de threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Confira também
+- [exibição Threads](../profiling/threads-view-parallel-performance.md)

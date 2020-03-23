@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62581156"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Bem-vindo às Ferramentas do R para Visual Studio
@@ -34,5 +34,5 @@ Obrigado por instalar às RTVS (Ferramentas do R para Visual Studio)! Confira e 
 As RTVS dão suporte ao CRAN R e às distribuições do Microsoft R, incluindo a versão do R que é distribuída no SQL Server 2016. Os links a seguir fornecem mais informações sobre as diferentes distribuições do Microsoft R:
 
 - [Microsoft R Open](https://mran.microsoft.com/download/)
-- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [Cliente do Microsoft R](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [Microsoft Machine Learning Server (anteriormente conhecido como R Server)](/machine-learning-server/)

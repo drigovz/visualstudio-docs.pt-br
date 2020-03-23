@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587020"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Aninhamento de arquivos no Gerenciador de Soluções
@@ -28,11 +28,11 @@ O **Gerenciador de Soluções** aninha arquivos relacionados para ajudar a organ
 
 As opções disponíveis para o aninhamento não personalizado de arquivos são:
 
-* **Desativado**: Essa opção fornece uma lista plana de arquivos sem nenhum aninhamento.
+* **Desativado**: essa opção fornece uma lista plana de arquivos sem nenhum aninhamento.
 
-* **Padrão**: Essa opção fornece o comportamento padrão do aninhamento de arquivos no **Gerenciador de Soluções**. Se não houver nenhuma configuração para um tipo de projeto fornecido, nenhum arquivo do projeto será aninhado. Se houver configurações, por exemplo, para um projeto Web, o aninhamento será aplicado.
+* **Padrão**: essa opção fornece o comportamento padrão do aninhamento de arquivos no **Gerenciador de Soluções**. Se não houver nenhuma configuração para um tipo de projeto fornecido, nenhum arquivo do projeto será aninhado. Se houver configurações, por exemplo, para um projeto Web, o aninhamento será aplicado.
 
-* **Web**: Essa opção aplica o comportamento **Web** de aninhamento de arquivos a todos os projetos da solução atual. Ela tem várias regras. Por isso, incentivamos você a conferi-la e enviar-nos sua opinião. A seguinte captura de tela destaca apenas alguns exemplos do comportamento de aninhamento de arquivos obtidos com essa opção:
+* **Web**: essa opção aplica o comportamento **Web** de aninhamento de arquivos a todos os projetos da solução atual. Ela tem várias regras. Por isso, incentivamos você a conferi-la e enviar-nos sua opinião. A seguinte captura de tela destaca apenas alguns exemplos do comportamento de aninhamento de arquivos obtidos com essa opção:
 
    ![Aninhamento de arquivos no Gerenciador de Soluções](media/filenesting.png)
 
@@ -48,17 +48,17 @@ Recomendamos que você use as configurações **Web** como ponto de partida porq
 
 Vamos nos concentrar no nó **dependentFileProviders** e em seus nós filho. Cada nó filho é um tipo de regra que pode ser usado pelo Visual Studio para aninhar arquivos. Por exemplo, **ter o mesmo nome de arquivo, mas uma extensão diferente** é um tipo de regra. As regras disponíveis são:
 
-* **extensionToExtension**: Use esse tipo de regra para aninhar *file.js* em *file.ts*
+* **extensionToExtension**: use esse tipo de regra para aninhar *file.js* em *file.ts*
 
-* **fileSuffixToExtension**: Use esse tipo de regra para aninhar *file-vsdoc.js* em *file.js*
+* **fileSuffixToExtension**: use esse tipo de regra para aninhar *file-vsdoc.js* em *file.js*
 
-* **addedExtension**: Use esse tipo de regra para aninhar *file.html.css* em *file.html*
+* **addedExtension**: use esse tipo de regra para aninhar *file.html.css* em *file.html*
 
-* **pathSegment**: Use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
+* **pathSegment**: use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
 
-* **allExtensions**: Use esse tipo de regra para aninhar *file.* * em *file.js*
+* **allExtensions**: use esse tipo de regra para aninhar *file.** em *file.js*
 
-* **fileToFile**: Use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
+* **fileToFile**: use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>O provedor extensionToExtension
 
@@ -178,7 +178,7 @@ Desabilite as regras globais existentes de aninhamento de arquivos para soluçõ
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalize o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Soluções e projetos no Visual Studio](solutions-and-projects-in-visual-studio.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128285"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
@@ -58,7 +58,7 @@ Veja a seguir as etapas básicas:
 
    O Visual Studio analisa os dados coletados e exibe os resultados.
 
-   ![Relatório do criador de perfil de linha do tempo](../profiling/media/timeline_base.png "TIMELINE_Base")
+   ![Relatório do profiler da linha do tempo](../profiling/media/timeline_base.png "TIMELINE_Base")
 
 ## <a name="analyze-timeline-profiling-data"></a>Analisar dados de criação de perfil de linha do tempo
 
@@ -66,33 +66,33 @@ Depois de coletar os dados para a criação de perfil, você pode usar estas eta
 
 1. Exiba as informações nos grafos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.
 
-2. Usando as informações nos grafos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)** , examine os detalhes na exibição **Detalhes da linha do tempo** para localizar as possíveis causas de qualquer aparente falta de capacidade de resposta.
+2. Usando as informações nos grafos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)**, examine os detalhes na exibição **Detalhes da linha do tempo** para localizar as possíveis causas de qualquer aparente falta de capacidade de resposta.
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Cenários, categorias e eventos de relatório
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> Cenários, categorias e eventos de relatório
 
 A ferramenta **Linha do Tempo do Aplicativo** exibe dados de tempo para cenários, categorias e eventos relacionados ao desempenho de XAML.
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Linha do tempo da sessão de diagnóstico
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> Linha do tempo da sessão de diagnóstico
 
-![Linha do tempo de Desempenho e Diagnóstico](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
+![Cronograma de desempenho e diagnóstico](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
 A régua na parte superior da página mostra a linha do tempo para informações com o perfil criado. Essa linha do tempo aplica-se ao gráfico **Utilização de thread de interface do usuário** e **Taxa de transferência visual**. Você pode restringir o escopo do relatório arrastando as barras de navegação na linha do tempo para selecionar um segmento da linha do tempo.
 
 A linha do tempo também exibe todas as marcas de usuário inseridas e os eventos de ciclo de vida de ativação do aplicativo.
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilização de thread da interface do usuário
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilização de thread da interface do usuário
 
-![Gráfico de utilização de CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
+![Gráfico de utilização da CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 O gráfico **Utilização do thread da interface do usuário (%)** é um gráfico de barras que exibe a quantidade relativa de tempo gasto em uma categoria durante um período de coleta.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de taxa de transferência visual (FPS)
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de taxa de transferência visual (FPS)
 
-![Gráfico de taxa de transferência Visual](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
+![Gráfico de taxa de transferência visual](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
 O gráfico de linhas **Taxa de transferência visual (FPS)** mostra FPS (quadros por segundo) na interface do usuário e no thread de composição para o aplicativo.
 
-### <a name="BKMK_Timeline_details_"></a> Detalhes da linha do tempo
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a> Detalhes da linha do tempo
 
 A exibição de detalhes é o ponto em que você passa a maior parte do tempo analisando o relatório. Ela mostra o uso da CPU por seu aplicativo categorizado pelo subsistema de Estrutura da Interface do Usuário ou pelo componente do sistema que consumiu a CPU.
 
@@ -102,28 +102,28 @@ Há suporte para os seguintes eventos:
 |-|-|
 |**Parsing**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados devido ao evento raiz. Essa dica permite identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|
 |**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Essa exibição pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride). Ele também cria as árvores visuais que participaram de uma passagem de layout. É possível usar essa visualização para determinar quais árvores lógicas serão removidas ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|
-|**Render**|Tempo gasto desenhando elementos XAML na tela.|
+|**Processar**|Tempo gasto desenhando elementos XAML na tela.|
 |**I/0**|Tempo gasto na recuperação de dados do disco local ou de recursos de rede acessados por meio da [API WinINet (Microsoft Windows Internet)](/windows/desktop/WinInet/portal).|
 |**Código do Aplicativo**|Tempo gasto executando código do aplicativo (usuário) que não está relacionado à análise ou ao layout.|
-|**Xaml Other**|Tempo gasto executando o código XAML no tempo de execução.|
+|**Xaml Other**|Tempo gasto executando o código XAML no runtime.|
 
 > [!TIP]
 > Escolha a ferramenta **Uso da CPU** junto com a ferramenta **Linha do Tempo do Aplicativo** ao começar a criar o perfil para exibir os métodos de aplicativo que são executados no thread da interface do usuário. Mover o código do aplicativo de execução longa em um thread em segundo plano pode melhorar a capacidade de resposta da interface do usuário.
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizando os detalhes da Linha do Tempo
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personalizando os detalhes da Linha do Tempo
 
 Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filtrar e especificar as anotações das entradas da exibição **Detalhes da linha do tempo**.
 
 |||
 |-|-|
 |**Classificar por**|Classifique por hora de início ou o duração de eventos.|
-|![Agrupar eventos por quadro](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|
-|![Filtrar lista de detalhes da linha do tempo](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra a lista pelas categorias selecionadas e a duração dos eventos.|
-|![Personalizar informações detalhadas da linha do tempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar as anotações para eventos.|
+|![Eventos de grupo por quadro](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|
+|![Lista de detalhes da linha do tempo do filtro](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra a lista pelas categorias selecionadas e a duração dos eventos.|
+|![Personalize as informações dos detalhes da linha do tempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar as anotações para eventos.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Blog da equipe do WPF: Nova ferramenta de análise de desempenho da interface do usuário para aplicativos WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog da equipe do WPF: Nova ferramenta de análise de desempenho da Interface do UI para aplicativos WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Melhores práticas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Otimizar o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)

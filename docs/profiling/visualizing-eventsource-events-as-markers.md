@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811541"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 A Visualização Simultânea pode exibir eventos do EventSource como marcadores e você pode controlar como os marcadores são exibidos. Para exibir os marcadores do EventSource, registre o GUID do provedor ETW usando a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A Visualização Simultânea tem convenções padrão para representar eventos do EventSource como [Marcadores de Sinalizador](../profiling/flag-markers.md), [Marcadores de Período](../profiling/span-markers.md) e [Marcadores de Mensagem](../profiling/message-markers.md). Você pode personalizar como os eventos EventSource são exibidos, adicionando campos personalizados aos eventos. Para obter mais informações sobre marcadores, consulte [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md). Para obter mais informações sobre eventos do EventSource, consulte <xref:System.Diagnostics.Tracing>.
@@ -42,7 +42,7 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |win:Verbose|Baixo|
 |Maior que win:verbose|Baixo|
 
-### <a name="series-name"></a>Nome da Série
+### <a name="series-name"></a>Nome da série
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.
 
 ### <a name="category"></a>Categoria
@@ -78,7 +78,7 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |5|Baixo|
 |Todos os outros valores|Baixo|
 
-### <a name="series-name"></a>Nome da Série
+### <a name="series-name"></a>Nome da série
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.
 
 ### <a name="category"></a>Categoria
@@ -93,5 +93,5 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 > [!NOTE]
 > O uso de SpanID para aninhar intervalos, permitir que eles parcialmente sobreponham o mesmo thread ou permitir que eles comecem em um thread e terminem em outro não tem suporte.
 
-## <a name="see-also"></a>Consulte também
-- [Marcadores do visualizador de simultaneidade](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Confira também
+- [Marcadores de visualizadores de concorrência](../profiling/concurrency-visualizer-markers.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772661"
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
@@ -32,7 +32,7 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
  Saiba os valores de dados que são relatados ao usar o método de criação de perfil de amostragem.
 
-- [Entender os valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
+- [Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
 
  Saiba os valores de dados que são relatados ao usar o método de criação de perfil de instrumentação.
 
@@ -40,15 +40,15 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
  Saiba os valores de dados que são relatados ao usar o método de criação de perfil de memória de .NET.
 
-- [Entender os valores de dados de contenção de recursos](../profiling/understanding-resource-contention-data-values.md)
+- [Noções básicas sobre valores de dados de contenção de recurso](../profiling/understanding-resource-contention-data-values.md)
 
  Saiba os valores de dados que são relatados ao usar o método de criação de perfil de simultaneidade.
 
-- [Janela do Gerenciador de Desempenho](../profiling/performance-explorer-window.md)
+- [Janela do Explorador de desempenho](../profiling/performance-explorer-window.md)
 
  Descreve a janela que é usada para configurar e iniciar sessões de desempenho.
 
-- [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)
+- [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)
 
  Saiba mais sobre os contadores de desempenho da CPU e do Windows que podem fornecer dados de desempenho adicionais em uma sessão de desempenho.
 
@@ -56,7 +56,7 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
  Conheça os problemas e as etapas necessárias para coletar dados de amostra e criar um perfil de sessão cruzada aplicativos em [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Começando](../profiling/getting-started-with-performance-tools.md)
 - [Gerenciador de Desempenho](../profiling/performance-explorer.md)

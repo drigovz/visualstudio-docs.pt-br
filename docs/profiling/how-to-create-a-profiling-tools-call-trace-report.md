@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778980"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil
@@ -27,18 +27,18 @@ O *relatório de rastreamento de chamada* para as Ferramentas de criação de pe
 
 ### <a name="to-create-a-call-trace-report"></a>Para criar um relatório de rastreamento de chamada
 
-1. Abra uma janela do **prompt de comando**.
+1. Abra uma janela **de comando prompt.**
 
-2. No prompt de comando, digite o seguinte comando:
+2. No prompt de comando, digite o comando a seguir:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
     |||
     |-|-|
     |*ToolsPath*|O caminho para as ferramentas de linha de comando das Ferramentas de Criação de Perfil. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|O arquivo de dados de criação de perfil (.*vsp* ou .*vsps*). Caminhos completos e parciais são aceitos.|
+    |*VSPFile*|Os dados de criação de perfil (.* vsp* ou . *vsps*) Arquivo. Caminhos completos e parciais são aceitos.|
     |Xml|Gera um relatório XML formatado.|
 
-## <a name="see-also"></a>Consulte também
-- [Como coletar dados do ETW (rastreamento de eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+## <a name="see-also"></a>Confira também
+- [Como: Coletar dados de Rastreamento de Eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)

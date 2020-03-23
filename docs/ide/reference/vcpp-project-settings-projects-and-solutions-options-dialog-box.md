@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918893"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
@@ -31,9 +31,9 @@ Esta caixa de diálogo permite que você defina o build de C++ e as configuraç�
 
 ## <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
-2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++** .
+2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.
 
 ## <a name="build-logging"></a>Log de build
 
@@ -41,7 +41,7 @@ Esta caixa de diálogo permite que você defina o build de C++ e as configuraç�
 
   Ativa a geração de arquivo de log de build. Essa opção gera o BuildLog.htm, que pode ser encontrado no diretório de arquivos intermediários do projeto. Cada novo build substitui o arquivo BuildLog.htm anterior.
 
- **No**
+ **Não**
 
   Desativa a geração de arquivo de log de build.
 
@@ -51,7 +51,7 @@ Esta caixa de diálogo permite que você defina o build de C++ e as configuraç�
 
 Lista as variáveis de ambiente no arquivo de log de build. Essa opção específica o eco para todas as variáveis de ambiente, durante os builds dos projetos C++, para o arquivo de log de build.
 
- **No**
+ **Não**
 
 Exclua as variáveis de ambiente do arquivo de log de build.
 
@@ -59,9 +59,9 @@ Exclua as variáveis de ambiente do arquivo de log de build.
 
  **Sim**
 
-  Ativa o tempo de build. Se selecionado, o tempo necessário para a conclusão do build é publicado na Janela de Saída. Para obter mais informações, consulte [Janela de Saída](../../ide/reference/output-window.md).
+  Ativa o tempo de build. Se selecionado, o tempo necessário para a conclusão do build é publicado na Janela de Saída. Para obter mais informações, consulte [Janela Saída](../../ide/reference/output-window.md).
 
- **No**
+ **Não**
 
 Desativa o tempo de build.
 
@@ -97,11 +97,11 @@ Configura o **Gerenciador de Soluções** para mostrar os arquivos no projeto e 
 
 Permite que o Visual Studio coloque em cache os dados do projeto, para que, quando você abrir o projeto na próxima vez, ele possa carregar esses dados armazenados em cache em vez de recalcular dos arquivos de projeto. Usar dados armazenados em cache pode acelerar significativamente o tempo de carregamento do projeto.
 
-**No**
+**Não**
 
 Não usar dados armazenados em cache do projeto. Analisar os arquivos de projeto cada vez que o projeto é carregado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Compilando programas do C/C++](/cpp/build/projects-and-build-systems-cpp)
+- [Compilando programas C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Referência de build C/C++](/cpp/build/reference/c-cpp-building-reference)

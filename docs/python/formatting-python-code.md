@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957523"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
 O Visual Studio permite que você reformate rapidamente o código para que ele corresponda às opções de formatação pré-configuradas.
 
-- Para formatar uma seleção: selecione **Editar** > **Avançado** > **Seleção de Formato** ou pressione **Ctrl**+**E** > **F**.
-- Para formatar todo o arquivo: selecione **Editar** > **Avançado** > **Formatar Documento** ou pressione **Ctrl**+**E** > **D**.
+- Para formatar uma seleção: selecione **Editar** > **seleção de formato** **avançado** > ou **pressione Ctrl**+**E** > **F**.
+- Para formatar todo o arquivo: selecione **Editar** > **documento de formato** **avançado** > ou **pressione Ctrl**+**E** > **D**.
 
-As opções são definidas por meio de **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Formatação** e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
+As opções são definidas através do Editor de**opções de** > **Text Editor** >  **ferramentas** > **Python** > **Formatação** e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
 
 ![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
 
@@ -42,7 +42,7 @@ O **espaçamento** controla o local em que espaços são inseridos ou removidos 
 
 Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
-| Opção de definições de classe | Selecionado | Limpo |
+| Opção de definições de classe | Verificado | Desmarcada |
 | --- | --- | --- |
 | **Inserir espaço entre o nome de uma declaração da classe e a lista de bases** | `class X (object): pass` | `class X(object): pass` |
 | **Inserir espaço dentro dos parênteses da lista de bases** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,7 +50,7 @@ Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 <br/>
 
-| Opção de definições de função | Selecionado | Limpo |
+| Opção de definições de função | Verificado | Desmarcada |
 | --- | --- | --- |
 | **Inserir espaço entre o nome de uma declaração da função e a lista de parâmetros** | `def X (): pass` | `def X(): pass` |
 | **Inserir espaço dentro dos parênteses da lista de parâmetros** | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -60,14 +60,14 @@ Exemplos para as várias opções são fornecidos nas tabelas a seguir:
 
 <br/>
 
-| Opção Operadores | Selecionado | Limpo |
+| Opção Operadores | Verificado | Desmarcada |
 | --- | --- | --- |
 | **Inserir espaços em torno de operadores binários** | `a + b` | `a+b` |
 | **Inserir espaços em torno de atribuições** | `a = b` | `a=b` |
 
 <br/>
 
-| Opção de espaçamento de expressão | Selecionado | Limpo |
+| Opção de espaçamento de expressão | Verificado | Desmarcada |
 | --- | --- | --- |
 | **Inserir espaço entre o nome de uma chamada de função e a lista de argumentos** | `X ()` | `X()` |
 | **Inserir espaço dentro dos parênteses da lista de argumentos vazia** | `X( )` | `X()` |
@@ -109,9 +109,9 @@ O **Encapsulamento** permite que você defina a **Largura máxima do comentário
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Preencher Parágrafo de Comentário
 
-A opção **Editar** > **Avançado** > **Preencher Parágrafo de Comentário** (**Ctrl**+**E** > **P**) reflui e formata o texto de comentário, combinando linhas curtas e dividindo as longas.
+**Editar** > **Parágrafo de comentário de preenchimento** **avançado** > **(Ctrl**+**E** > **P)** reflui e formata texto de comentário, combinando linhas curtas e quebrando longas.
 
-Por exemplo:
+Por exemplo: 
 
 ```python
 # foo

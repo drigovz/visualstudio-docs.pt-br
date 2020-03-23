@@ -8,27 +8,27 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566274"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Walkthrough: desenvolvimento orientado por testes usando o Gerenciador de testes
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Passo a passo: Desenvolvimento orientado por testes usando o Test Explorer
 
 Crie testes de unidade para ajudar a manter seu código funcionando corretamente por meio de alterações de código incrementais. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Para saber mais sobre como usar o **Gerenciador de Testes**, confira [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) e [Perguntas Frequentes do Gerenciador de Testes](test-explorer-faq.md).
 
-Este passo a passo demonstra como desenvolver um método testado em C# usando a MSTest (estrutura de teste da Microsoft). Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como a NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
+Este passo a passo demonstra como desenvolver um método testado em C# usando a MSTest (estrutura de teste da Microsoft). Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como a NUnit. Para obter mais informações, consulte [Instalar estruturas de teste de unidades de terceiros](install-third-party-unit-test-frameworks.md).
 
 ## <a name="create-a-test-and-generate-code"></a>Criar um teste e gerar código
 
 1. Crie um projeto de **Biblioteca de Classes (.NET Standard)** do C#. Esse projeto conterá o código que queremos testar. Nomeie o projeto **MyMath**.
 
-2. Na mesma solução, adicione um novo **projeto de teste do MSTest (.NET Core)** . Nomeie esse projeto de teste **MathTests**.
+2. Na mesma solução, adicione um novo **projeto de teste do MSTest (.NET Core)**. Nomeie esse projeto de teste **MathTests**.
 
    ![Novos projetos de teste e código](../test/media/test-driven-development-ide.png)
 
-3. Escreva um método de teste simples que verifique o resultado obtido para uma entrada específica. Adicione o seguinte código à classe `UnitTest1`:
+3. Escreva um método de teste simples que verifique o resultado obtido para uma entrada específica. Adicione o código a seguir à classe `UnitTest1`:
 
    ```csharp
    [TestMethod]
@@ -48,7 +48,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
 
 4. Gere um tipo com base no código de teste.
 
-   1. Coloque o cursor sobre `Rooter` e, no menu de lâmpada, escolha **Gerar tipo 'Rooter'**  > **Gerar novo tipo**.
+   1. Coloque o `Rooter`cursor ligado e, em seguida, no menu da lâmpada, escolha Gerar tipo **'Rooter'** > Gerar um novo**tipo**.
 
       ![Ação rápida Gerar novo tipo](media/test-driven-development-generate-new-type.png)
 
@@ -56,7 +56,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
 
       ![Caixa de diálogo Gerar Tipo no Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-5. Gere um método com base no código de teste. Coloque o cursor sobre `SquareRoot` e, no menu de lâmpada, escolha **Gerar método 'Rooter.SquareRoot'** .
+5. Gere um método com base no código de teste. Coloque o cursor sobre `SquareRoot` e, no menu de lâmpada, escolha **Gerar método 'Rooter.SquareRoot'**.
 
 6. Execute o teste de unidade.
 

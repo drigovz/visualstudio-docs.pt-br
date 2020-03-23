@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779474"
 ---
 # <a name="counter"></a>Contador
@@ -35,7 +35,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach PID} /Counter:Name[,Reload[,FriendlyNam
 VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[,Reload[,FriendlyName]]][Options]
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `Name` O nome do contador. Use a opção VSPerfCmd.exe **/QueryCounters** para listar os nomes de contadores disponíveis no computador.
 
  `Reload` O número de eventos de contador no intervalo de amostragem. Não use com o método de instrumentação.
@@ -45,11 +45,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opções obrigatórias
  A opção Counter só pode ser usada com uma das seguintes opções:
 
- **Iniciar:** `Trace` Inicializa o criador de perfil para usar o método de instrumentação.
+ **Início:** `Trace` Inicia o profiler para usar o método de instrumentação.
 
- **Iniciar:** `AppName` inicia o aplicativo especificado e o criador de perfil. O criador de perfil deve ser inicializado para usar o método de amostragem.
+ **Lançamento:** `AppName` Inicia o aplicativo especificado e o profiler. O criador de perfil deve ser inicializado para usar o método de amostragem.
 
- **Anexar:** `PID` inicia o criador de perfil e anexa-o ao processo especificado pela ID do processo. O criador de perfil deve ser inicializado para usar o método de amostragem.
+ **Anexar:** `PID` Inicia o profiler e anexa-o ao processo especificado pelo ID do processo. O criador de perfil deve ser inicializado para usar o método de amostragem.
 
 ## <a name="example"></a>Exemplo
  A amostra de método de amostragem demonstra como realizar a amostragem de um aplicativo a cada 1.000 ocorrências de NonHaltedCycles do contador genérico do criador de perfil.
@@ -65,8 +65,8 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"
 ```
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

@@ -1,6 +1,6 @@
 ---
 title: Usar o REPL do Node.js
-description: O Visual Studio fornece suporte para interação com o tempo de execução do Node.js
+description: O Visual Studio fornece suporte para interação com o runtime do Node.js
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840648"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Trabalhar com a janela interativa do Node.js
 
-As Ferramentas Node.js para Visual Studio incluem uma janela interativa para o tempo de execução do Node.js instalado. Essa janela permite que você insira o código JavaScript e veja os resultados imediatamente, bem como executar comandos npm para interagir com o projeto atual. A janela interativa também é conhecida como um REPL (**R**ead/**E**valuate/**P**rint **L**oop).
+As Ferramentas Node.js para Visual Studio incluem uma janela interativa para o runtime do Node.js instalado. Essa janela permite que você insira o código JavaScript e veja os resultados imediatamente, bem como executar comandos npm para interagir com o projeto atual. A janela interativa também é conhecida como um REPL (**R**ead/**E**valuate/**P**rint **L**oop).
 
 ## <a name="open-the-interactive-window"></a>Abrir a janela interativa
 
@@ -28,7 +28,7 @@ Abra a janela interativa clicando com o botão direito do mouse no nó do projet
 
 ![Janela interativa do Node.js no menu de contexto do projeto](../javascript/media/interactivewindow-open-from-project.png)
 
-As teclas de atalho padrão usadas para abrir a janela interativa do Node.js são **[CTRL] + K, N**. Se preferir, abra a janela na barra de ferramentas escolhendo **Exibir** > **Windows** > **Janela Interativa do Node.js**.
+As teclas de atalho padrão para abrir a janela interativa Node.js são **[CTRL] + K, N**. Ou, você pode abrir a janela da barra de ferramentas escolhendo **Exibir** > Janela Interativa do**Windows** > **Node.js**.
 
 ## <a name="use-the-repl"></a>Usar o REPL
 

@@ -16,15 +16,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776313"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 
-Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise para um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e, em seguida, selecione **Filtrar por** > **Marcas** no menu de atalho.
+Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise a um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e selecione **Filtrar por** > **marcas** no menu de atalho.
 
 > [!NOTE]
 > Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -37,7 +37,7 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
 
 3. Selecione a caixa de seleção **Coletar Contadores do Windows**.
 
-4. Na caixa de texto **Intervalo de coleta (ms)** , digite um intervalo de tempo.
+4. Na caixa de texto **Intervalo de coleta (ms)**, digite um intervalo de tempo.
 
 5. Selecione uma categoria da lista suspensa **Categoria de Contador**.
 
@@ -47,8 +47,8 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
 
 8. Clique em **Aplicar.**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)
-[Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)
+[Configure as sessões](../profiling/configuring-performance-sessions.md)
+de desempenho[Propriedades de sessão de](../profiling/performance-session-properties.md)
+desempenho[CPU e contadores do Windows](../profiling/cpu-and-windows-counters.md)

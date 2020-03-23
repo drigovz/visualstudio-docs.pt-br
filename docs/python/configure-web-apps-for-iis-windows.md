@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957366"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurar aplicativos Web do Python para o IIS
@@ -31,7 +31,7 @@ Para executar um aplicativo Web, primeiro instale a versão necessária do Pytho
 
 Registre o local do interpretador do `python.exe` para etapas posteriores. Para sua conveniência, você pode adicionar esse local à variável de ambiente PATH.
 
-## <a name="install-packages"></a>Instalar pacotes
+## <a name="install-packages"></a>Instalar Pacotes
 
 Ao usar um host dedicado, você pode usar o ambiente global do Python para executar o aplicativo, em vez de um ambiente virtual. Da mesma forma, você pode instalar todos os requisitos do aplicativo no ambiente global simplesmente executando `pip install -r requirements.txt` em um prompt de comando.
 
@@ -86,7 +86,7 @@ Em seguida, modifique o arquivo *web.config* do aplicativo para incluir os camin
     </system.webServer>
     ```
 
-1. Na seção `<appSettings>` de *web.config*, adicione chaves para `WSGI_HANDLER`, `WSGI_LOG` (opcional) e `PYTHONPATH`:
+1. Na `<appSettings>` seção *web.config,* adicione `WSGI_HANDLER` `WSGI_LOG` teclas para `PYTHONPATH`, (opcional) e :
 
     ```xml
     <appSettings>
@@ -112,14 +112,14 @@ Em seguida, modifique o arquivo *web.config* do aplicativo para incluir os camin
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no *runserver.py*. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
+    - **Flask**: altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do seu projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no *runserver.py*. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**: Duas alterações são necessárias em *web.config* para projetos do Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo *wsgi.py*):
+    - **Django**: duas alterações são necessárias no *web.config* para projetos Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo *wsgi.py*):
 
         ```xml
         <!-- Django apps only -->
@@ -132,14 +132,14 @@ Em seguida, modifique o arquivo *web.config* do aplicativo para incluir os camin
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Somente para aplicativos Django**: No arquivo *settings.py* do projeto do Django, adicione o domínio de URL do site ou o endereço IP a `ALLOWED_HOSTS`, conforme mostrado abaixo, substituindo '1.2.3.4' pela URL ou pelo endereço IP, obviamente:
+1. **Somente aplicativos do Django**: no arquivo *settings.py* do projeto do Django, adicione o domínio de URL do site ou o endereço IP para `ALLOWED_HOSTS`, conforme mostrado abaixo, substituindo '1.2.3.4' por endereço IP ou URL, claro:
 
     ```python
     # Change the URL or IP address to your specific site
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    A falha em adicionar a URL à matriz resultará no erro **DisallowedHost em / Cabeçalho HTTP_HOST inválido: '\<URL do site\>'. Talvez seja necessário adicionar a '\<URL do site\>' ao ALLOWED_HOSTS.**
+    Falha em adicionar sua URL ao array resulta no erro **DespermitidoHost at / Invalid HTTP_HOST header:\<' URL\>do site '. Você pode precisar\<adicionar\>' URL do site ' ao ALLOWED_HOSTS.**
 
     Observe que, quando a matriz estiver vazia, o Django permitirá automaticamente 'localhost' e '127.0.0.1', mas adicionar sua URL de produção removerá essas funcionalidades. Por esse motivo, talvez você queira manter cópias do *settings.py* de desenvolvimento e de produção separadas ou usar variáveis de ambiente para controlar os valores de tempo de execução.
 

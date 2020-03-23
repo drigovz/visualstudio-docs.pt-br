@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957973"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
@@ -46,7 +46,7 @@ Para usar um modelo, selecione o modelo desejado, especifique um nome para o arq
 
 Resposta: O arquivo de projeto do Visual Studio (*.pyproj*) contém um identificador de tipo de projeto que o marca como um projeto do Python. O Visual Studio usa esse identificador de tipo para mostrar apenas os modelos de item adequados para o tipo de projeto. Dessa forma, o Visual Studio pode fornecer um conjunto avançado de modelos de item para muitos tipos de projeto sem solicitar que você os classifique toda vez.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos por meio do aplicativo
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos do seu aplicativo
 
 Em um aplicativo Web criado com Python (usando qualquer estrutura), seus arquivos em Python sempre são executados no servidor do host da Web e nunca são transmitidos para o computador de um usuário. Mas outros arquivos, como CSS e JavaScript, são usados exclusivamente pelo navegador, de modo que o servidor do host simplesmente os entrega como estão sempre que são solicitados. Esses arquivos são chamados de "estáticos", e o Django pode fornecê-los automaticamente sem que você precise escrever algum código.
 
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Você pode organizar os arquivos usando qualquer estrutura de pastas desejada dentro de *static* e, em seguida, usar caminhos relativos dentro dessa pasta para referenciar os arquivos. Para demonstrar esse processo, as seguintes etapas adicionam um arquivo CSS ao aplicativo e, em seguida, usam essa folha de estilos no modelo *index.html*:
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na pasta **HelloDjangoApp** do projeto do Visual Studio, selecione **Adicionar** > **Nova pasta** e nomeie a pasta `static`.
+1. No **Solution Explorer,** clique com o botão direito do mouse na pasta **HelloDjangoApp** no projeto Visual Studio, selecione **Adicionar** > **nova pasta**e nomeie a pasta `static`.
 
-1. Clique com o botão direito do mouse na pasta **static** e selecione **Adicionar** > **Novo item**. Na caixa de diálogo exibida, selecione o modelo **Folha de estilos**, nomeie o arquivo `site.css` e selecione **OK**. O arquivo **site.css** é exibido no projeto e aberto no editor. A estrutura de pastas deve ser semelhante à imagem a seguir:
+1. Clique com o botão direito do mouse na pasta **static** e selecione **Adicionar** > **Novo item**. Na caixa de diálogo que aparece, selecione `site.css`o modelo **'Folha de estilos',** nomeie o arquivo e selecione **OK**. O arquivo **site.css** é exibido no projeto e aberto no editor. A estrutura de pastas deve ser semelhante à imagem a seguir:
 
     ![Estrutura de arquivos estáticos, conforme mostrado no Gerenciador de Soluções](media/django/step03-static-file-structure.png)
 
@@ -95,13 +95,13 @@ Você pode organizar os arquivos usando qualquer estrutura de pastas desejada de
 
 1. Execute o projeto para observar os resultados. Pare o servidor quando terminar e confirme as alterações no controle do código-fonte se desejar (conforme explicado na [etapa 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pergunta: Qual é a finalidade da tag {% load staticfiles %}?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pergunta: Qual é a finalidade da marcação {% load staticfiles %}?
 
 Resposta: A linha `{% load staticfiles %}` é necessária antes da referência a arquivos estáticos em elementos como `<head>` e `<body>`. No exemplo mostrado nesta seção, "staticfiles" se refere a um conjunto de marcações de modelo do Django personalizado que permite o uso da sintaxe `{% static %}` para se referir a arquivos estáticos.  Sem `{% load staticfiles %}`, você verá uma exceção quando o aplicativo for executado.
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pergunta: Há convenções para organizar arquivos estáticos?
 
-Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à pasta *static* como desejar. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos). Em cada caso, lembre-se de incluir essas pastas no caminho relativo para o arquivo nas referências `{% static %}`.
+Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à sua pasta *static* como quiser. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos). Em cada caso, lembre-se de incluir essas pastas no caminho relativo para o arquivo nas referências `{% static %}`.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Etapa 3-3: Adicionar uma página ao aplicativo
 
@@ -160,11 +160,11 @@ As etapas a seguir adicionam uma página "Sobre" ao projeto "HelloDjangoApp" e l
     <div><a href="about">About</a></div>
     ```
 
-1. Salve todos os arquivos usando o comando de menu **Arquivo** > **Salvar Tudo** ou apenas pressione **Ctrl**+**Shift**+**S**. (Tecnicamente, essa etapa não é necessária, pois a execução do projeto no Visual Studio salva os arquivos automaticamente. No entanto, é bom conhecer esse comando).
+1. Salve todos os arquivos usando o comando **File** > **Save All** menu ou apenas **pressione Ctrl**+**Shift**+**S**. (Tecnicamente, essa etapa não é necessária, pois a execução do projeto no Visual Studio salva os arquivos automaticamente. No entanto, é bom conhecer esse comando).
 
 1. Execute o projeto para observar os resultados e verificar a navegação entre as páginas. Feche o servidor ao terminar.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a home page, mas não funcionou. Por quê?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a página inicial, mas não funcionou. Por quê?
 
 Resposta: Embora a função de exibição em *views.py* seja nomeada `index`, os padrões de roteamento de URL no arquivo *urls.py* do projeto do Django não contêm uma expressão regular que corresponda à cadeia de caracteres "index". Para fazer a correspondência com essa cadeia de caracteres, você precisa adicionar outra entrada para o padrão `^index$`.
 

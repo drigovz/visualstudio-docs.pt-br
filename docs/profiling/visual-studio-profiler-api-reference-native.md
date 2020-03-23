@@ -15,14 +15,14 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778018"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referência da API do criador de perfil do Visual Studio (nativo)
-As APIs do criador de perfil do Visual Studio permitem que você controle de forma programática a quantidade de dados coletados e insira marcas de carimbo de data/hora e de perfil durante a criação de perfil. Para usar as APIs nativas, inclua o arquivo de cabeçalho *VSPerf.h* e adicione o *VSPerf.lib* ao projeto.
+As APIs do criador de perfil do Visual Studio permitem que você controle de forma programática a quantidade de dados coletados e insira marcas de carimbo de data/hora e de perfil durante a criação de perfil. Para usar APIs nativas, você inclui o arquivo de cabeçalho *VSPerf.h* e adiciona o *VSPerf.lib* em seu projeto.
 
 > [!NOTE]
 > Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
@@ -46,7 +46,7 @@ As APIs do criador de perfil do Visual Studio permitem que você controle de for
 
 [PROFILE_CURRENTID](../profiling/profile-currentid.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)
-- [Instruções passo a passo: usando APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)
+- [Passo a passo: usando APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772433"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
@@ -50,8 +50,8 @@ A janela do **Gerenciador de Desempenho** contém um controle de árvore que exi
 
 - **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Visões gerais](../profiling/overviews-performance-tools.md)
-[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Controlando a coleta de dados](../profiling/controlling-data-collection.md)
+[Visualizações gerais](../profiling/overviews-performance-tools.md)
+[configurando sessões](../profiling/configuring-performance-sessions.md)
+de desempenho[controlando a coleta de dados](../profiling/controlling-data-collection.md)

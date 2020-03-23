@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552925"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
@@ -61,14 +61,14 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Adicione o decorador `__declspec(allocator)` a qualquer função no gerenciador de heap personalizado que retorna um ponteiro para a memória de heap recém-alocada.  Esse decorador permite que a ferramenta identifique corretamente o tipo da memória que está sendo retornado.  Por exemplo:
+1. Adicione o decorador `__declspec(allocator)` a qualquer função no gerenciador de heap personalizado que retorna um ponteiro para a memória de heap recém-alocada.  Esse decorador permite que a ferramenta identifique corretamente o tipo da memória que está sendo retornado.  Por exemplo: 
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
 
    > [!NOTE]
-   > Esse decorador informará o compilador que essa função é uma chamada a um alocador.  Cada chamada à função gerará o endereço do site da chamada, o tamanho da instrução de chamada e a typeId do novo objeto para um novo símbolo `S_HEAPALLOCSITE`.  Quando uma pilha de chamadas for alocada, o Windows emitirá um evento ETW com essas informações.  A ferramenta de criador de perfil de memória percorre a pilha de chamadas em busca de uma correspondência de endereço de retorno com um símbolo `S_HEAPALLOCSITE` e as informações de typeId no símbolo são usadas para exibir o tipo de tempo de execução da alocação.
+   > Esse decorador informará o compilador que essa função é uma chamada a um alocador.  Cada chamada à função gerará o endereço do site da chamada, o tamanho da instrução de chamada e a typeId do novo objeto para um novo símbolo `S_HEAPALLOCSITE`.  Quando uma pilha de chamadas for alocada, o Windows emitirá um evento ETW com essas informações.  A ferramenta de criador de perfil de memória percorre a pilha de chamadas em busca de uma correspondência de endereço de retorno com um símbolo `S_HEAPALLOCSITE` e as informações de typeId no símbolo são usadas para exibir o tipo de runtime da alocação.
    >
    > Em resumo, isso significa que uma chamada parecida com `(B*)(A*)MyMalloc(sizeof(B))` será mostrada na ferramenta como sendo do tipo `B`, não `void` nem `A`.
 
@@ -135,7 +135,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="track-memory-usage"></a>Rastrear uso de memória
+## <a name="track-memory-usage"></a>Acompanhar o uso de memória
 Com essas chamadas implementadas, o uso de heap personalizado agora pode ser acompanhado usando a ferramenta padrão **Uso de Memória** no Visual Studio.  Para obter mais informações sobre como usar essa ferramenta, consulte a documentação [Uso de memória](../profiling/memory-usage.md). Verifique se você habilitou a de criação de perfil de heap com instantâneos; caso contrário, você não verá o uso de heap personalizado exibido.
 
 ![Habilitar a criação de perfil de heap](media/heap-enable-heap.png)
@@ -155,6 +155,6 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > [!TIP]
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
-## <a name="see-also"></a>Consulte também
-[Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
-[Uso da Memória](../profiling/memory-usage.md)
+## <a name="see-also"></a>Confira também
+[Primeira olhada nas ferramentas](../profiling/profiling-feature-tour.md)
+de criação de perfil[Uso de memória](../profiling/memory-usage.md)

@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62832129"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
 O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e posterior e pode ser instalado separadamente em versões anteriores do Visual Studio.
 
-O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador do Python enquanto o Visual Studio estiver em execução, clique no botão **Início** na barra de ferramentas do Cookiecutter para detectar o interpretador recém-instalado. (Consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md) para obter mais informações sobre ambientes em geral.)
+O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador Python enquanto o Visual Studio estiver em execução, clique no botão **Home** na barra de ferramentas do Cookiecutter para detectar o interpretador recém-instalado. (Consulte [ambientes Python](managing-python-environments-in-visual-studio.md) para saber mais sobre ambientes em geral.)
 
-Depois de instalado, escolha **Exibir** > **Cookiecutter Explorer** para abrir sua janela:
+Uma vez instalado, selecione **Exibir** > **Cookiecutter Explorer** para abrir sua janela:
 
 ![Janela principal do Cookiecutter](media/cookiecutter-overview.png)
 
@@ -35,7 +35,7 @@ Trabalhar com o Cookiecutter é um processo que inclui procurar e selecionar um 
 
 A home page do Cookiecutter exibe uma lista de modelos a serem escolhidos, organizados nos seguintes grupos:
 
-| Grupo | Descrição |
+| Agrupar | Descrição |
 | --- | --- |
 | **Instalado** | Modelos que foram instalados no computador local. Quando um modelo online é usado, seu repositório é clonado automaticamente em uma subpasta de *~/.cookiecutters*. É possível excluir um modelo instalado escolhido pressionando **Delete**. |
 | **Recomendado** | Modelos carregados do feed recomendado. O feed padrão é coletado pela Microsoft. Consulte [Opções do Cookiecutter](#cookiecutter-options) abaixo para obter detalhes sobre como personalizar o feed. |
@@ -65,7 +65,7 @@ Cada modelo do Cookiecutter define seu próprio conjunto de opções e especific
 
 Se o modelo especificar tarefas específicas do Visual Studio a serem executadas após a geração de código, uma opção adicional **Executar tarefas adicionais após a conclusão** será exibida, que permite recusar essas tarefas. O uso mais comum de tarefas é abrir um navegador da Web, abrir arquivos no editor, instalar dependências e assim por diante.
 
-### <a name="create"></a>Create
+### <a name="create"></a>Criar
 
 Depois de configurar as opções, selecione **Criar** para gerar o código (um aviso será exibido se a pasta de saída não estiver vazia). Se estiver familiarizado com a saída do modelo e não se incomodar em substituir arquivos, ignore o aviso. Caso contrário, selecione **Cancelar**, especifique uma pasta vazia e, em seguida, copie manualmente os arquivos criados para a pasta de saída não vazia.
 
@@ -75,13 +75,13 @@ Depois que os arquivos forem criados com êxito, o Cookiecutter fornecerá uma o
 
 ## <a name="cookiecutter-options"></a>Opções do Cookiecutter
 
-As opções do Cookiecutter estão disponíveis por meio de **Ferramenta** > **Opções** > **Cookiecutter**:
+As opções de cookiecutter estão disponíveis através do **Tools** > **Options** > **Cookiecutter**:
 
 ![Opções do Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opção | Descrição |
 | --- | --- |
-| **URL do feed recomendado** | A localização do feed recomendado dos modelos. Pode ser uma URL ou um caminho para um arquivo local. Deixe a URL vazia para usar o feed padrão coletado pela Microsoft. O feed fornece uma lista simples de localizações de modelos, separadas por novas linhas. Para solicitar alterações ao feed coletado, faça uma solicitação pull [na fonte, no GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **URL de feed recomendado** | A localização do feed recomendado dos modelos. Pode ser uma URL ou um caminho para um arquivo local. Deixe a URL vazia para usar o feed padrão coletado pela Microsoft. O feed fornece uma lista simples de localizações de modelos, separadas por novas linhas. Para solicitar alterações ao feed coletado, faça uma solicitação pull [na fonte, no GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Mostrar Ajuda** | Controla a visibilidade da barra de informações de ajuda na parte superior da janela do Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Otimizar modelos do Cookiecutter para o Visual Studio
@@ -90,17 +90,17 @@ Para obter noções básicas sobre como criar um modelo do Cookiecutter, consult
 
 A renderização padrão de uma variável de modelo depende do tipo de dados (cadeia de caracteres ou lista):
 
-- Cadeia de caracteres: Rótulo do nome da variável, caixa de texto para inserção do valor e uma marca-d'água mostrando o valor padrão. A dica de ferramenta na caixa de texto mostra o valor padrão.
-- Lista: Rótulo do nome da variável e caixa de combinação para seleção de um valor. A dica de ferramenta na caixa de combinação mostra o valor padrão.
+- Cadeia de caracteres: rótulo do nome da variável, caixa de texto para inserção do valor e uma marca-d'água mostrando o valor padrão. A dica de ferramenta na caixa de texto mostra o valor padrão.
+- Lista: rótulo do nome da variável e caixa de combinação para seleção de um valor. A dica de ferramenta na caixa de combinação mostra o valor padrão.
 
 É possível melhorar essa renderização especificando metadados adicionais no arquivo *cookiecutter.json* que são específicos ao Visual Studio (e ignorados pela CLI do Cookiecutter). Todas as propriedades são opcionais:
 
 | Propriedade | Descrição |
 | --- | --- |
-| Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
+| Rótulo | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
 | Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
 | URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. Se você clicar no hiperlink, o navegador padrão do usuário será aberto nessa URL. |
-| Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: Caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: Caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: Caixa de combinação para escolha entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um botão **...** que exibe uma caixa de diálogo de conexão de banco de dados.</li></ul> |
+| Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: caixa de combinação para escolher entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um **...** botão que traz à tona uma caixa de diálogo de conexão de banco de dados.</li></ul> |
 
 Exemplo:
 
@@ -156,7 +156,7 @@ Exemplo:
 ]
 ```
 
-Os comandos são especificados pelo nome e devem usar o nome não localizado (em inglês) para funcionar em instalações localizadas do Visual Studio. É possível testar e descobrir os nomes de comando na janela **Comando** do Visual Studio.
+Os comandos são especificados pelo nome e devem usar o nome não localizado (em inglês) para funcionar em instalações localizadas do Visual Studio. Você pode testar e descobrir nomes de comando na janela **do Comando do** Visual Studio.
 
 Se desejar passar um único argumento, especifique-o como uma cadeia de caracteres, como no exemplo anterior.
 
@@ -170,7 +170,7 @@ Se não precisar passar um argumento, deixe-o como uma cadeia de caracteres vazi
 ]
 ```
 
-Use uma matriz para vários argumentos. Para opções, divida a opção e seu valor em argumentos separados e use a delimitação correta. Por exemplo:
+Use uma matriz para vários argumentos. Para opções, divida a opção e seu valor em argumentos separados e use a delimitação correta. Por exemplo: 
 
 ```json
 "_visual_studio_post_cmds": [
@@ -187,7 +187,7 @@ Use uma matriz para vários argumentos. Para opções, divida a opção e seu va
 
 Os argumentos podem se referir a outras variáveis do Cookiecutter. Nos exemplos acima, a variável `_output_folder_path` interna é usada para formar um caminho absoluto para os arquivos gerados.
 
-Observe que o comando `Python.InstallProjectRequirements` apenas funciona ao adicionar arquivos a um projeto existente. Essa limitação existe porque o comando é processado pelo projeto Python no **Gerenciador de Soluções** e não há nenhum projeto para receber a mensagem no **Gerenciador de Soluções** - **Exibição de Pasta**. Esperamos remover a limitação em uma versão futura (e fornecer um melhor suporte à **Exibição de Pasta** em geral).
+Observe que o comando `Python.InstallProjectRequirements` apenas funciona ao adicionar arquivos a um projeto existente. Essa limitação existe porque o comando é processado pelo projeto Python no **Gerenciador de Soluções** e não há nenhum projeto para receber a mensagem no **Gerenciador de Soluções** - **Exibição de Pasta**. Esperamos remover a limitação para ganhar uma versão futura (e fornecer um melhor suporte **ao Folder View** em geral).
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
@@ -212,7 +212,7 @@ Falhas de clone:
 
 Falhas de carregamento:
 
-- **chrisdev/wagtail-cookiecutter-foundation** (usa um tipo booliano em *cookiecutter.json*)
+- **chrisdev/wagtail-cookiecutter-foundation** (usa um tipo booleano em *cookiecutter.json*)
 - **quintoandar/cookiecutter-android** (nenhuma pasta de modelos)
 
 Falhas de execução:

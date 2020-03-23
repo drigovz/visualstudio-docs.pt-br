@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531685"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Inverter expressões condicionais e operadores AND/OR condicionais
@@ -24,11 +24,11 @@ Esta refatoração aplica-se a:
 - C#
 - Visual Basic
 
-**O quê:** Permite inverter uma expressão condicional ou um operador AND/OR condicional.
+**O que é isso?** Permite inverter uma expressão condicional ou um operador condicional e/OR.
 
-**Quando:** Você tem uma expressão condicional ou um operador AND/OR condicional que será melhor compreendido se invertido.
+**Quando:** Você tem uma expressão condicional ou operador condicional e/OR que seria melhor compreendido se invertido.
 
-**Por que:** A inversão manual de uma expressão ou um operador AND/OR condicional pode levar muito mais tempo e, possivelmente, introduzir erros. Essa correção de código ajuda você a fazer a refatoração automaticamente.
+**Por que:** Inverter uma expressão ou operador condicional and/OR manualmente pode levar muito mais tempo e possivelmente introduzir erros. Essa correção de código ajuda você a fazer a refatoração automaticamente.
 
 ## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>Refatoração de inverter expressões condicionais e operadores AND/OR condicionais
 
@@ -40,7 +40,7 @@ Esta refatoração aplica-se a:
 
     ![Inverter condicional](media/invert-logical-operator.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Dicas para desenvolvedores de .NET](../csharp-developer-productivity.md)
+- [Dicas para desenvolvedores do .NET](../csharp-developer-productivity.md)

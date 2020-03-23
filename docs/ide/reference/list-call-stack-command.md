@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748717"
 ---
 # <a name="list-call-stack-command"></a>Comando Listar Pilha de Chamadas
@@ -33,7 +33,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowExternalCode:yes|no] [Thread:n] [index]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `index`\
 Opcional. Define o registro de ativação atual e não exibe nenhuma saída.
@@ -108,9 +108,9 @@ para definir o registro de ativação atual para o segundo quadro.
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)
+- [Comando Listar Desmontagem](../../ide/reference/list-disassembly-command.md)
 - [Comando List Threads](../../ide/reference/list-threads-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

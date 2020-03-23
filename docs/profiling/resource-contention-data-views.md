@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771524"
 ---
 # <a name="resource-contention-data-views"></a>Exibições de dados da contenção de recurso
@@ -27,7 +27,7 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Exibe uma linha de tempo gráfica dos dados de criação de perfil e lista as funções e os recursos que participaram dos eventos que mais bloqueiam.
 
-- [Modo de exibição de árvore de Chamadas](../profiling/call-tree-view-contention-data.md)
+- [Chamada Tree View](../profiling/call-tree-view-contention-data.md)
 
  Exibe uma árvore hierárquica que representa os caminhos de execução e os dados de contenção de recurso das funções na execução de criação de perfil.
 
@@ -39,15 +39,15 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os dados de contenção de recursos e thread para uma função selecionada e as funções que chamaram e foram chamadas pela função selecionada.
 
-- [Exibição de detalhes do recurso](../profiling/resource-details-view-contention-data.md)
+- [Exibição de detalhes dos recursos](../profiling/resource-details-view-contention-data.md)
 
  Exibe uma linha de tempo gráfica dos eventos de bloqueio para cada recurso disputado e lista a pilha de chamadas para os eventos de bloqueio.
 
-- [Exibição de detalhes do thread](../profiling/thread-details-view-contention-data.md)
+- [Exibição dos detalhes do segmento](../profiling/thread-details-view-contention-data.md)
 
  Exibe uma linha de tempo gráfica dos eventos de bloqueio para cada thread e lista a pilha de chamadas para os eventos de bloqueio.
 
-- [Exibição Funções](../profiling/functions-view-contention-data.md)
+- [Exibição de funções](../profiling/functions-view-contention-data.md)
 
  Lista os dados de contenção de recursos e thread por função.
 
@@ -55,7 +55,7 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os dados de contenção de recurso por recurso bloqueado.
 
-- [Exibição de Linhas](../profiling/lines-view-contention-data.md)
+- [Exibição de linhas](../profiling/lines-view-contention-data.md)
 
  Lista os dados de contenção de recurso por linha de código-fonte.
 
@@ -68,6 +68,6 @@ Esta seção contém informações de referência para as exibições e os relat
  Lista a contenção de recursos por thread e processo.
 
 ## <a name="reference"></a>Referência
-- [Exibição de Detalhes da Função](../profiling/function-details-view.md)
+- [Exibição de detalhes da função](../profiling/function-details-view.md)
 
  Exibe um gráfico da relação entre uma função selecionada e as funções que chamaram e foram chamadas pela função selecionada.

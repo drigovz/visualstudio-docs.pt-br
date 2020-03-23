@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553039"
 ---
 # <a name="cores-view-zoom-tool"></a>Ferramenta de zoom da exibição de núcleos
@@ -24,9 +24,9 @@ O controle de zoom é um controle deslizante que permite ampliar e reduzir a lin
 
 ## <a name="other-ways-to-zoom"></a>Outras formas de aplicar zoom
 
-- Ampliar o zoom: Arraste para selecionar uma área na exibição da linha do tempo. Ao soltar o botão do mouse, a exibição da linha do tempo ampliará o intervalo selecionado.
+- Aumentar o zoom: arraste para selecionar uma área na exibição da linha do tempo. Ao soltar o botão do mouse, a exibição da linha do tempo ampliará o intervalo selecionado.
 
-- Ampliar e reduzir o zoom: Focalize a linha do tempo e, em seguida, pressione **Ctrl** enquanto move a roda do mouse.
+- Ampliar e reduzir o zoom: focalize a linha do tempo e, em seguida, pressione **Ctrl** enquanto move a roda do mouse.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Exibição de núcleos](../profiling/cores-view.md)

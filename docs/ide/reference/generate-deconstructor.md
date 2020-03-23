@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531891"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Gerar um desconstrutor no Visual Studio
@@ -22,11 +22,11 @@ Esta geração de código aplica-se a:
 
 - C#
 
-**O quê:** Permite gerar imediatamente o stub de método para um novo desconstrutor.
+**O que é isso?** Permite que você gere imediatamente o stub de método para um novo desconstrutor.
 
-**Quando:** Você deseja desconstruir corretamente o tipo de forma automática.
+**Quando:** Você deseja desconstruir corretamente seu tipo automaticamente.
 
-**Por que:** você pode digitar manualmente um desconstrutor, mas essa funcionalidade gera o stub para você com os parâmetros de saída corretos.
+**Por que:** Você pode digitar manualmente um desconstrutor, mas este recurso gera o stub para você com os parâmetros corretos de saída.
 
 ## <a name="generate-a-deconstructor"></a>Gerar um desconstrutor
 
@@ -34,7 +34,7 @@ Esta geração de código aplica-se a:
 
    ![Erro de desconstrutor ausente](media/deconstruct.png)
 
-2. Realize uma das seguintes etapas:
+2. Siga uma destas etapas:
 
    - **Teclado**
       - Com o cursor na sua declaração, selecione Ctrl+. para acionar o menu **Ações e Refatorações Rápidas**.
@@ -48,8 +48,8 @@ Esta geração de código aplica-se a:
 
    ![Código resultante do desconstrutor](media/deconstruct-result.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)
-- [Dicas para desenvolvedores do .NET](../csharp-developer-productivity.md)
+- [Dicas para desenvolvedores .NET](../csharp-developer-productivity.md)

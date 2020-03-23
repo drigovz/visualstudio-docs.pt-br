@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774583"
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
@@ -36,7 +36,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Para criar uma conta de usuário que tenha permissões de Usuário
 
-1. Clique com botão direito do mouse em **Meu Computador** e, em seguida, clique em **Gerenciar**.
+1. Clique com o botão direito do mouse **em Meu computador** e clique em **Gerenciar**.
 
      A janela **Gerenciamento do Computador** é aberta.
 
@@ -48,7 +48,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 4. Preencha os campos nessa caixa de diálogo com as informações da conta de usuário que você está criando. Especifique uma senha. Opcionalmente, marque a caixa de seleção que exige que o usuário altere a senha no próximo logon.
 
-5. Clique em **Criar** e, em seguida, clique em **Fechar**.
+5. Clique **em Criar** e clique em **Fechar**.
 
      O novo usuário aparecerá no grupo Usuários, um grupo de usuários que não têm permissões de Administrador.
 
@@ -64,13 +64,13 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 2. Clique com botão direito do mouse na pasta e, em seguida, clique em **Propriedades**.
 
-     A caixa de diálogo **\<nome da pasta> Propriedades** é exibida.
+     O ** \<nome da pasta> caixa** de diálogo Propriedades é exibido.
 
 3. Clique na guia **Segurança**.
 
 4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.
 
-5. Na caixa **Permissões para \<nome de usuário>** , marque a caixa de seleção **Controle Total**.
+5. Na caixa **Permissões para \<nome de usuário>**, marque a caixa de seleção **Controle Total**.
 
 6. Clique em **OK**.
 
@@ -86,7 +86,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. Execute o seguinte comando:
+3. Execute o comando a seguir:
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
@@ -120,8 +120,8 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
    Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[VSPerfCmd](../profiling/vsperfcmd.md)
-[Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+[Configure as sessões de](../profiling/configuring-performance-sessions.md)
+desempenho[VSPerfCmd](../profiling/vsperfcmd.md)
+[Profiling e Windows Vista Security](../profiling/profiling-and-windows-vista-security.md)

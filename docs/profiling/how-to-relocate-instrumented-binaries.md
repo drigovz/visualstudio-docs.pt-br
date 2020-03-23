@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774894"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Como realocar binários instrumentados
@@ -28,7 +28,7 @@ Durante a instrumentação, as investigações são inseridas no binário para m
 
 ## <a name="to-relocate-instrumented-binary"></a>Para realocar binários instrumentados
 
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
+1. No **Performance Explorer**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
 
 2. Nas **Páginas de propriedades**, clique nas propriedades do **Binário**.
 
@@ -36,7 +36,7 @@ Durante a instrumentação, as investigações são inseridas no binário para m
 
 4. Especifique o local para o binário instrumentado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[VSInstr](../profiling/vsinstr.md)
+[Configure as sessões de](../profiling/configuring-performance-sessions.md)
+desempenho[VSInstr](../profiling/vsinstr.md)

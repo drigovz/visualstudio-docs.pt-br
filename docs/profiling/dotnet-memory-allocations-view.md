@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777371"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
@@ -39,14 +39,14 @@ A exibição de Alocações lista os tipos criados durante a execução de cria�
 
 - Para exibir o caminho mais ativo, clique com o botão direito do mouse no tipo ou na função e, em seguida, clique em **Expandir Afunilamento**.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Nome**|O nome do tipo alocado ou da função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
-|**Nome do Processo**|O nome do processo.|
-|**Nome do Módulo**|O nome do módulo que contém o tipo ou a função.|
+|**Nome do processo**|O nome do processo.|
+|**Nome do módulo**|O nome do módulo que contém o tipo ou a função.|
 |**Caminho do Módulo**|O caminho do módulo que contém o tipo ou a função.|
-|**Arquivo de Origem**|O arquivo de origem que contém a definição do tipo ou função.|
+|**Arquivo de origem**|O arquivo de origem que contém a definição do tipo ou função.|
 |**Número de linha da função**|O número de linha do início dessa definição de tipo ou função no arquivo de origem.|
 |**Nível**|Indica se os dados são de um tipo ou uma função.|
 |**Alocações Inclusivas**|– Para uma função, o número total de objetos do tipo pai criados pela função. Esse número inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|

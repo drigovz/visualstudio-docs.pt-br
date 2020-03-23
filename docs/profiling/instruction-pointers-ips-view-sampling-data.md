@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774250"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Exibição de IPs (ponteiros de instrução) – dados de amostragem
@@ -24,16 +24,16 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 > [!NOTE]
 > Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
-|**Nome do Processo**|O nome do processo.|
-|**Nome do Módulo**|O nome do módulo que contém a instrução.|
+|**Nome do processo**|O nome do processo.|
+|**Nome do módulo**|O nome do módulo que contém a instrução.|
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|
-|**Arquivo de Origem**|O arquivo de origem que contém a instrução.|
-|**Nome da Função**|O nome da função que contém a instrução.|
+|**Arquivo de origem**|O arquivo de origem que contém a instrução.|
+|**Nome da função**|O nome da função que contém a instrução.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço da Função**|O endereço de memória inicial da função no binário carregado.|
+|**Endereço de função**|O endereço de memória inicial da função no binário carregado.|
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que esse exemplo foi coletado.|
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que esse exemplo foi coletado.|
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que esse exemplo foi coletado.|
@@ -42,5 +42,5 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |**Amostras Exclusivas**|O número total de amostras coletadas durante a execução da instrução.|
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da instrução.|
 
-## <a name="see-also"></a>Consulte também
-- [Exibição de IPs (ponteiros de instrução) – amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+## <a name="see-also"></a>Confira também
+- [Ponteiros de instrução (IPs) Visualização - amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

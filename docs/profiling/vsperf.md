@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779929"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -52,12 +52,12 @@ Use a ferramenta de linha de comando **VsPerf** para:
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Coleta dados dos processos especificados.<br /><br /> Use o Gerenciador de Tarefas para exibir a PID (ID do Processo) e processar os nomes dos aplicativos em execução.|
 |**/file:{ReportName}**|Opcional. Especifica o arquivo de saída (substitui o arquivo existente).<br /><br /> Use somente com /package ou /attach.|
-|**/pause**|Pause a coleta de dados.|
-|**/resume**|Retome a coleta de dados.|
+|**/pausa**|Pause a coleta de dados.|
+|**/currículo**|Retome a coleta de dados.|
 |**/stop**|Pare a coleta de dados e encerre os processos de destino.|
-|**/detach**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|
+|**/desapego**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|
 |**/status**|Mostre status do criador de perfil.|
 
-## <a name="see-also"></a>Consulte também
-- [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
+## <a name="see-also"></a>Confira também
+- [Ferramentas de desempenho em aplicativos windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778044"
 ---
 # <a name="understand-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
@@ -50,7 +50,7 @@ O percentual do número total de amostras inclusivas na criação de perfil que 
 
 O percentual do número total de amostras exclusivas na criação de perfil que são amostras exclusivas do intervalo de dados ou função.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)
-[analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
+[Como: Escolher métodos](../profiling/how-to-choose-collection-methods.md)
+de coleta[Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

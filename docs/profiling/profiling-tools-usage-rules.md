@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 51c4f1384a58b19ad9a6a4f46ad0131158cc967c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778343"
 ---
 # <a name="profiling-tools-usage-rules"></a>Regras de uso das ferramentas de criação de perfil
@@ -21,7 +21,7 @@ As regras de desempenho na categoria de Uso de Ferramentas de Criação de Perfi
 
 | | |
 | - | - |
-| [DA0002: VSPerfCorProf.dll está ausente](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | A criação de perfil de linha de comando pode conter dados incompletos para binários do .NET Framework. Isso pode ser causado por não configurar variáveis de ambiente corretas. |
+| [DA0002: VSPerfCorProf.dll não foi encontrado](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | A criação de perfil de linha de comando pode conter dados incompletos para binários do .NET Framework. Isso pode ser causado por não configurar variáveis de ambiente corretas. |
 | [DA0003: muitas amostras de kernel](../profiling/da0003-many-kernel-samples.md) | Muitas amostras de criação de perfil que ocorreram fora da execução do binário de destino foram registrados. Para coletar dados mais precisos, considere usar o método de instrumentação. |
 | [DA0004: uso elevado do processador](../profiling/da0004-high-processor-usage.md) | Os dados de criação de perfil sugerem que seus processadores estavam consistentemente ocupados durante a criação de perfil. Para coletar dados mais precisos, considere usar o método de amostragem. |
 | [DA0008: poucas amostras coletadas](../profiling/da0008-few-samples-collected.md) | O número de amostras coletados na criação de perfil não foi alto o suficiente para ser estatisticamente significativo. Considere realizar uma nova criação de perfil e executar o aplicativo por mais tempo. Considere também usar o método de instrumentação para coletar dados. |

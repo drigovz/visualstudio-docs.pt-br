@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "66261121"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
@@ -25,7 +25,7 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Confirme que Editor Attaching está habilitado
 
-No menu do Unity, selecione **Edit > Preferences** (Editar > Preferências) e, em seguida, selecione a guia **External Tools** (Ferramentas externas). Confirme se a caixa de seleção **Editor Attaching** (Anexação do editor) está habilitada. Para saber mais, confira a [Documentação de preferências do Unity](https://docs.unity3d.com/Manual/Preferences.html).
+No Menu Unidade, **selecione Editar > Preferências** e, em seguida, selecione a guia **Ferramentas externas.** Confirme se a caixa de seleção **de anexo do editor** está ativada. Para saber mais, confira a [Documentação de preferências do Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Não é possível anexar
 
@@ -52,7 +52,7 @@ Isso deve corrigir o problema. Caso o problema persista, execute um prompt de co
 
 ## <a name="visual-studio-hangs"></a>O Visual Studio trava
 
-Vários plug-ins do Unity como Parse, FMOD, UMP (Player de Mídia Universal), ZFBrowser ou Embedded Browser usam threads nativos. Isso é um problema quando um plug-in acaba anexando um thread nativo ao tempo de execução, fazendo chamadas de bloqueio para o sistema operacional. Isso significa que o Unity não consegue interromper esse thread para o depurador (ou o recarregamento de domínio) e trava.
+Vários plug-ins do Unity como Parse, FMOD, UMP (Player de Mídia Universal), ZFBrowser ou Embedded Browser usam threads nativos. Isso é um problema quando um plug-in acaba anexando um thread nativo ao runtime, fazendo chamadas de bloqueio para o sistema operacional. Isso significa que o Unity não consegue interromper esse thread para o depurador (ou o recarregamento de domínio) e trava.
 
 Para o FMOD, há uma solução alternativa. Você pode passar o [sinalizador](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) de inicialização `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para desabilitar o processamento assíncrono e executar todo o processamento no thread principal.
 
@@ -68,9 +68,9 @@ Se você tiver recargas extras ou se o Visual Studio estiver perdendo todas as j
 
 ## <a name="the-debugger-does-not-break-on-exceptions"></a>O depurador não é interrompido quando há exceções
 
-Ao usar o tempo de execução do Unity herdado (equivalente ao .NET 3.5), o depurador sempre será interrompido quando uma exceção ficar sem tratamento (= fora de um bloco try/catch). Se a exceção for manipulada, o depurador usará a janela Configurações de Exceção para determinar se uma interrupção é necessária ou não.
+Ao usar o runtime do Unity herdado (equivalente ao .NET 3.5), o depurador sempre será interrompido quando uma exceção ficar sem tratamento (= fora de um bloco try/catch). Se a exceção for manipulada, o depurador usará a janela Configurações de Exceção para determinar se uma interrupção é necessária ou não.
 
-Com o novo tempo de execução (equivalente ao .NET 4.6), o Unity introduziu uma nova forma de gerenciar exceções de usuário e, como resultado, todas as exceções são vistas como "tratados pelo usuário", mesmo se estiverem fora de um bloco try/catch. Por isso, agora é necessário verificá-los explicitamente na janela Configurações de Exceção se você quiser que o depurador seja interrompido.
+Com o novo runtime (equivalente ao .NET 4.6), o Unity introduziu uma nova forma de gerenciar exceções de usuário e, como resultado, todas as exceções são vistas como "tratados pelo usuário", mesmo se estiverem fora de um bloco try/catch. Por isso, agora é necessário verificá-los explicitamente na janela Configurações de Exceção se você quiser que o depurador seja interrompido.
 
 Na janela Configurações de Exceção (Depurar > Windows > Configurações de Exceção), expanda o nó de uma categoria de exceções (por exemplo, Exceções de Common Language Runtime, ou seja, exceções de .NET) e marque a caixa de seleção referente à exceção específica que você deseja capturar nessa categoria (por exemplo, System.NullReferenceException). Você também pode selecionar uma categoria inteira de exceções.
 
@@ -78,7 +78,7 @@ Na janela Configurações de Exceção (Depurar > Windows > Configurações de E
 
 As Ferramentas do Visual Studio para Unity requerem o .NET Framework 3.5, que não está instalado por padrão no Windows 8 nem no 10. Para corrigir esse problema, siga as instruções para baixar e instalar o .NET Framework 3.5.
 
-Ao usar o novo tempo de execução do Unity, versão de pacotes de direcionamento do .NET 4.6 e 4.7.1 também são necessários. É possível usar o instalador do VS2017 para instalá-los rapidamente (modificar sua instalação do VS2017, componentes individuais, categoria do .NET, selecionar todos os pacotes de direcionamento 4.x).
+Ao usar o novo runtime do Unity, versão de pacotes de direcionamento do .NET 4.6 e 4.7.1 também são necessários. É possível usar o instalador do VS2017 para instalá-los rapidamente (modificar sua instalação do VS2017, componentes individuais, categoria do .NET, selecionar todos os pacotes de direcionamento 4.x).
 
 ## <a name="assembly-reference-issues"></a>Problemas de referência de assembly
 
@@ -168,4 +168,4 @@ Tente atualizar o Visual Studio 2015 para atualização 3.
     bt all
     ```
 
-Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
+Finalmente, envie o thread-dump para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), juntamente com uma descrição do que você estava fazendo quando o Visual Studio ficou congelado.

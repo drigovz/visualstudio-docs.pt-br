@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68787695"
 ---
 # <a name="code-snippets"></a>Snippets de código
@@ -28,7 +28,7 @@ Há algumas maneiras de adicionar snippets de código, algumas das quais são de
 
 - **Caixa de ferramentas** &ndash; Use o painel da caixa de ferramentas para exibir uma lista de todos os snippets de código. Arraste qualquer modelo da caixa de ferramentas para a posição correta no código-fonte:
 
-  [![Snippets de código na Caixa de ferramentas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
+  [![Trechos de código na caixa de ferramentas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
 - **Comando Inserir Modelos** &ndash; Atualmente, não há nenhuma associação de teclas definida para a inserção de modelos. Para criar uma, navegue até **Visual Studio > Preferências > Associações de teclas** e pesquise `template`. Isso permite adicionar a associação de teclas desejada no campo Editar associação e clicar em **Aplicar**:
 
@@ -46,7 +46,7 @@ Pressione os botões **Adicionar** ou **Editar** para criar ou editar snippets.
 
 Depois da inserção de um snippet de código no editor, as palavras-chave definidas são realçadas e podem ser editadas usando tabulações entre elas. Palavras-chave se comportam como uma "variável" no snippet de código. Para defini-las, coloca-se um sinal de cifrão `$` antes e após o nome da palavra-chave. 
 
-A janela **Editar modelo** é exibida abaixo, editando o snippet `prop` interno. O snippet contém duas palavras-chave &ndash; `$type$` e `$name$` &ndash; que podem ter mais um conjunto de propriedades, como um valor padrão e uma dica de ferramenta, no lado direito da janela:
+A janela **Editar modelo** é exibida abaixo, editando o snippet `prop` interno. O trecho contém duas &ndash; `$type$` palavras-chave e `$name$` &ndash; que podem ter outras propriedades definidas (como um valor padrão e uma dica de ferramenta) no lado direito da janela:
 
 ![Janela Editar modelo](media/source-editor-image12z.png)
 
@@ -82,10 +82,10 @@ Quando usado no editor, a tecla **Tab** alternará entre a primeira instância d
 Há duas palavras-chave reservadas que você pode usar em um snippet de código:
 
 - `$selected$` &ndash; Se o snippet tiver a opção **Modelo surround with** marcada, esta palavra-chave será substituída pelo texto que foi realçado no editor quando o snippet foi escolhido.
-- `$end$` &ndash; Quando o usuário concluir a edição de palavras-chave no snippet, o cursor será colocado no local da palavra-chave `$end$`.
+- `$end$`&ndash; Quando o usuário terminar de editar as palavras-chave em um trecho, o `$end$` cursor será colocado no local da palavra-chave.
 
 O snippet `for` da seção anterior é um exemplo de palavras-chave reservadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Snippets de código (Visual Studio no Windows)](/visualstudio/ide/code-snippets)
