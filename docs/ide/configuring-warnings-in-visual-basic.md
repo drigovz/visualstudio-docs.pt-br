@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114722"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
@@ -39,7 +39,7 @@ A opção de linha de comando **/warnaserror** do compilador também pode ser us
 |Opção de linha de comando|Especifica|
 | - |---------------|
 |`/warnaserror+`|Tratar todos os avisos como erros|
-|`/warnsaserror`-|Não trate avisos como erros. Este é o padrão.|
+|`/warnsaserror`-|Não trate avisos como erros. Esse é o padrão.|
 |`/warnaserror+:<warning list` `>`|Trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/warnaserror-:<warning list>`|Não trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/nowarn`|Não relate os avisos.|
@@ -50,7 +50,7 @@ A lista de avisos contém os números de ID de erro dos avisos que devem ser tra
 ## <a name="examples"></a>Exemplos
 Esta tabela de exemplos de argumentos de linha de comando descreve a ação de cada argumento.
 
-|Argument|Descrição|
+|Argumento|Descrição|
 |--------------|-----------------|
 |`vbc /warnaserror`|Especifica que todos os avisos devem ser tratado como erros.|
 |`vbc /warnaserror:42024`|Especifica que o aviso 42024 deve ser tratado como um erro.|
@@ -88,7 +88,7 @@ Gerados quando uma variável é usada antes de receber um valor. O padrão para 
 ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Aviso de variável local não utilizada
-Gerado quando uma variável local é declarada, mas nunca referenciada. O padrão é ativado.
+Gerado quando uma variável local é declarada, mas nunca referenciada. O padrão é habilitado.
 
 ID: 42024
 
@@ -117,11 +117,11 @@ Gerado quando um bloco `Catch` nunca é acessado devido à definição de sua re
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tipos de erro](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Instrução Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Tentar... Pegar... Finalmente declaração](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Página de compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avisos do compilador desativados por padrão](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Página de Compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Avisos do compilador que estão desligados por padrão](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

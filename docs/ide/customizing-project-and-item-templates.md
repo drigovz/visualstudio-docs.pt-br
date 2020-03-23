@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567548"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalizar modelos de projeto e de item
@@ -25,7 +25,7 @@ Por exemplo, é possível executar as seguintes tarefas:
 
 - Modifique e exporte um modelo existente como um modelo do usuário.
 
-   Para obter mais informações, consulte [Como atualizar modelos existentes](../ide/how-to-update-existing-templates.md).
+   Para obter mais informações, consulte [Como atualizar os modelos existentes.](../ide/how-to-update-existing-templates.md)
 
 - Passe parâmetros personalizados para um modelo para substituir os valores existentes.
 
@@ -33,13 +33,13 @@ Por exemplo, é possível executar as seguintes tarefas:
 
 - Personalize os assistentes que criam projetos com base em modelos.
 
-   Para obter mais informações, consulte [Como usar assistentes com modelos de projeto (extensibilidade)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Para obter mais informações, [consulte Como: Usar assistentes com modelos de projeto (extensibilidade)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como solucionar problemas de modelos](../ide/how-to-troubleshoot-templates.md)
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)
+- [Como: Solucionar problemas de modelos](../ide/how-to-troubleshoot-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de itens](../ide/how-to-create-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

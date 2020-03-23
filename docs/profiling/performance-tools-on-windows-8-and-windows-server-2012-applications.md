@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778421"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
@@ -67,7 +67,7 @@ Você pode usar duas ferramentas de linha de comando para coletar dados de cria�
 |Nome da ferramenta|Descrição|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Coleta dados de criação de perfil de aplicativos UWP e coleta dados de criação de perfil de amostra de aplicativos da área de trabalho do Windows 8 e aplicativos do Windows Server 2012.|
-|[VSPerfCmd](../profiling/vsperfcmd.md)|Coleta dados de criação de aplicativo de instrumentação, simultaneidade e interação entre camadas de aplicativos em execução na área de trabalho do Windows 8 ou do Windows Server 2012. Coleta todos os tipos de dados de perfil de versões anteriores do Windows.|
+|[Vsperfcmd](../profiling/vsperfcmd.md)|Coleta dados de criação de aplicativo de instrumentação, simultaneidade e interação entre camadas de aplicativos em execução na área de trabalho do Windows 8 ou do Windows Server 2012. Coleta todos os tipos de dados de perfil de versões anteriores do Windows.|
 
 Ambas as ferramentas são instaladas com o Visual Studio para uso no computador local.
 
@@ -110,7 +110,7 @@ Você deve adicionar a opção de coleta de dados de interação entre camadas p
 
 **Coletando dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** da pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar dados de interação de nível em uma máquina remota, você deve copiar a_\<plataforma _ **vs\_profiler\_** Plataforma>**\_** _ \<Linguagem>_ **.exe** do *%VSInstall%\Team Tools\Performance Tools\Setups* folder de uma máquina Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.
 
@@ -118,8 +118,8 @@ Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../p
 
 Os dados de interação entre camadas só podem ser exibidos no Microsoft Visual Studio Enterprise. Os relatórios de interação de camadas baseados em arquivo por meio de [VSPerfReport](../profiling/vsperfreport.md) não estão disponíveis.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Gerenciador de Desempenho](../profiling/performance-explorer.md)
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Criar perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Explorador de](../profiling/performance-explorer.md)
+desempenho Configure o perfil[das sessões](../profiling/configuring-performance-sessions.md)
+de desempenho[da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

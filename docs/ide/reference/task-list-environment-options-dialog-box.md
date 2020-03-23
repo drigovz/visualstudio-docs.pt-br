@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592003"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Caixa de diálogo opções: ambiente \> Lista de Tarefas
+# <a name="options-dialog-box-environment--task-list"></a>Caixa de diálogo \> opções: Lista de tarefas do ambiente
 
 Esta página Opções permite a você adicionar, excluir e alterar os tokens de comentário que geram lembretes da **Lista de Tarefas**. Para exibir essas configurações, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e escolha **Lista de Tarefas**.
 
@@ -61,7 +61,7 @@ Clique para fazer alterações em um token existente usando os valores inseridos
 > [!NOTE]
 > Não é possível renomear nem excluir o token de comentário padrão, mas é possível alterar seu nível de prioridade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a Lista de Tarefas](../../ide/using-the-task-list.md)
 - [Definir indicadores no código](../../ide/setting-bookmarks-in-code.md)

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779656"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
@@ -26,7 +26,7 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [How to: Attach the Profiler to an ASP.NET Application to Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [Como: Anexar o profiler a um aplicativo ASP.NET para coletar dados de concorrência](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="reference"></a>Referência
 - [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)
@@ -45,13 +45,13 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Criar o perfil de aplicativos autônomos (clientes)**|-   [Coletar dados de simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
-|**Profile services (Serviços de perfil)**|-   [Coletar dados de simultaneidade](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Criar o perfil de aplicativos autônomos (clientes)**|-   [Coletar dados de concorrência](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Profile services (Serviços de perfil)**|-   [Coletar dados de concorrência](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analisar modos de exibição e relatórios de Dados de Simultaneidade
-- [Exibições de dados da contenção de recurso](../profiling/resource-contention-data-views.md)
+- [Exibições de dados de contenção de recursos](../profiling/resource-contention-data-views.md)
 
-- [Visualização Simultânea](../profiling/concurrency-visualizer.md)
+- [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)
 
 ## <a name="reference"></a>Referência
 - [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)

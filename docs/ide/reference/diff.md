@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570083"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -29,15 +29,15 @@ Compara dois arquivos. As diferenças são exibidas em uma janela especial do Vi
 devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-- *SourceFile*
+- *Sourcefile*
 
-  Necessária. O caminho completo e o nome do primeiro arquivo a ser comparado.
+  Obrigatórios. O caminho completo e o nome do primeiro arquivo a ser comparado.
 
-- *TargetFile*
+- *Arquivo alvo*
 
-  Necessária. O caminho completo e o nome do segundo arquivo a ser comparado.
+  Obrigatórios. O caminho completo e o nome do segundo arquivo a ser comparado.
 
 - *SourceDisplayName*
 
@@ -65,6 +65,6 @@ devenv /diff File1.txt File2.txt "File One"
 devenv /diff File1.txt File2.txt "" FileTwo
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

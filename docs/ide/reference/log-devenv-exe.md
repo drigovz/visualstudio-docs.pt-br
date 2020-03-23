@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595456"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra toda a atividade no arquivo de log para resolução de problemas. Este arquivo aparece depois de você chamar `devenv /log` pelo menos uma vez. Por padrão, o arquivo de log está localizado aqui:
 
-**%APPDATA%\\Microsoft\\VisualStudio\\** \<Versão\> **\\ActivityLog.xml**
+**%APPDATA%\\\\Microsoft\\VisualStudio**\<Versão\>**\\ActivityLog.xml**
 
 em que \<Versão\> é a versão do Visual Studio. No entanto, você pode especificar um caminho e um nome de arquivo diferentes.
 
@@ -33,11 +33,11 @@ em que \<Versão\> é a versão do Visual Studio. No entanto, você pode especif
 devenv /Log NameOfLogFile
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 - *NameOfLogFile*
 
-  Necessária. O caminho completo e o nome do arquivo de log em que será salvo.
+  Obrigatórios. O caminho completo e o nome do arquivo de log em que será salvo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -53,6 +53,6 @@ Este exemplo direciona o registro de log para o arquivo `MyVSLog.xml` no diretó
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

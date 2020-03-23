@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278523"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
@@ -23,12 +23,12 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 
 O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. No entanto, o Gerenciador de Testes também pode executar qualquer estrutura de teste de unidade que implementou um adaptador de Gerenciador de Testes. Para obter mais informações sobre como instalar estruturas de teste de unidade de terceiros, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
-O **Gerenciador de Testes** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET, o projeto de teste pode ser escrito em qualquer linguagem que também seja direcionada ao .NET, independentemente da linguagem do código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++. Para obter mais informações, confira [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
+**Test Explorer** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET, o projeto de teste pode ser escrito em qualquer linguagem que também seja direcionada ao .NET, independentemente da linguagem do código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++. Para obter mais informações, confira [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Executar testes de unidade no Gerenciador de Testes
 
 
-Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
+Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
 
 
 ::: moniker range="vs-2017"
@@ -83,7 +83,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 ::: moniker range="vs-2017"
-|Botão|DESCRIÇÃO|
+|Botão|Descrição|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -111,21 +111,21 @@ Para exibir os detalhes de um teste individual, selecione o teste.
 
 O painel de detalhes de teste exibe as seguintes informações:
 
-- {1&gt;O nome do arquivo de origem e o número de linha do método de teste.&lt;1}
+- O nome do arquivo de origem e o número de linha do método de teste.
 
-- {1&gt;O status do teste.&lt;1}
+- O status do teste.
 
-- {1&gt;O tempo decorrido que o método de teste levou para ser executado.&lt;1}
+- O tempo decorrido que o método de teste levou para ser executado.
 
-{1&gt;Se o teste falhar, o painel de detalhes também exibe:&lt;1}
+Se o teste falhar, o painel de detalhes também exibe:
 
-- {1&gt;A mensagem retornada pela estrutura de teste de unidade para o teste.&lt;1}
+- A mensagem retornada pela estrutura de teste de unidade para o teste.
 
-- {1&gt;O rastreamento de pilha no momento em que o teste falhou.&lt;1}
+- O rastreamento de pilha no momento em que o teste falhou.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Exibir o código-fonte de um método de teste
 
-Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**).
+Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e escolha **Open Test** no menu com o botão direito do mouse (Teclado: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar e filtrar a lista de testes
 
@@ -151,21 +151,21 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
 ::: moniker range="vs-2017"
-|Agrupar|DESCRIÇÃO|
+|Agrupar|Descrição|
 |-|-----------------|
-|**Duration**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
+|**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
 |**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|**Projeto**|Agrupa teste por nome dos projetos.|
+|**Project**|Agrupa teste por nome dos projetos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Agrupar|DESCRIÇÃO|
+|Agrupar|Descrição|
 |-|-----------------|
-|**Duration**|Agrupa testes por tempo de execução: **rápido**, **médio**e **lento**.|
-|**State**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
-|**Estrutura de destino** | Agrupa testes pela estrutura de seus projetos de destino |
+|**Duração**|Testes em grupos por tempo de execução: **Rápido,** **Médio**e **Lento**.|
+|**Estado**|Testes em grupos por resultados de execução: **Testes falhos,** **testes ignorados,** **testes aprovados,** **não executados**|
+|**Quadro de destino** | Agrupa testes pela estrutura de seus projetos de destino |
 |**Namespace**|Agrupa testes pelo namespace contido.|
-|**Projeto**|Agrupa testes pelo projeto contido.|
+|**Project**|Agrupa testes pelo projeto contido.|
 |**Classe**|Agrupa testes pela classe contida.|
 ::: moniker-end
 
@@ -177,7 +177,7 @@ Uma característica é geralmente um par de nome/valor de categoria, mas também
 
 Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, você define um par nome/valor de característica no atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. A estrutura de teste também contém essas características predefinidas:
 
-|Característica|DESCRIÇÃO|
+|Característica|Descrição|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
@@ -196,26 +196,26 @@ Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-micr
 
 ![Escolher uma playlist](../test/media/ute_playlist.png)
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito, escolha **Adicionar à Lista de Reprodução** > **NewPlaylist**. Salve o arquivo com o nome e local que você especificar na caixa de diálogo **Criar nova lista de reprodução**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu com o botão direito do mouse, escolha **Adicionar à lista de reprodução** > **NewPlaylist**. Salve o arquivo com o nome e local que você especificar na caixa de diálogo **Criar nova lista de reprodução**.
 
 **Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito, escolha **Adicionar à Lista de Reprodução** e, em seguida, escolha a lista de reprodução à qual deseja adicionar os testes.
 
-**Para abrir uma lista de reprodução**, escolha **testar** > **lista de reprodução** no menu do Visual Studio e escolha na lista de listas de reprodução usadas recentemente ou escolha **abrir playlist** para especificar o nome e o local da playlist.
+**Para abrir uma playlist**, escolha **Teste** > **Playlist** no menu do Visual Studio e escolha uma opção na lista de playlists usadas recentemente ou escolha **Abrir Playlist** para especificar o nome e o local da playlist.
 
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes na lista são exibidos em uma nova guia do Gerenciador de testes. Você pode adicionar um teste a mais de uma lista de reprodução.
+É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma lista de reprodução, os testes na lista são exibidos em uma nova guia Do Explorador de Testes. Você pode adicionar um teste a mais de uma lista de reprodução.
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu com o botão direito do mouse, escolha **Adicionar à lista de reprodução** > nova lista de**reprodução**.
 
 ![Criar uma playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
-A lista de reprodução é aberta em uma nova guia do Gerenciador de testes. Você pode usar essa playlist uma vez e descartá-la, ou pode clicar no botão **salvar** na barra de ferramentas da janela da lista de reprodução e, em seguida, selecionar um nome e um local para salvar a lista de reprodução.
+A lista de reprodução é aberta em uma nova guia do Test Explorer. Você pode usar esta lista de reprodução uma vez e depois descartá-la, ou pode clicar no botão **Salvar** na barra de ferramentas da janela da lista de reprodução e, em seguida, selecionar um nome e local para salvar a lista de reprodução.
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. Clique com o botão direito do mouse e escolha **Adicionar à lista de reprodução** > Nova lista de**reprodução**.
 
 **Para abrir uma playlist**, escolha o ícone da playlist na barra de ferramentas do Visual Studio e selecione no menu um arquivo de playlist salvo anteriormente.
 ::: moniker-end
@@ -266,24 +266,24 @@ Para filtrar por um critério diferente:
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
 ::: moniker range="vs-2017"
-|Qualificador|DESCRIÇÃO|
+|Qualificador|Descrição|
 |-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|**Projeto**|Procura os nomes de projeto de teste para correspondências.|
+|**Project**|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
-|**Caminho do Arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
+|**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Saída**|Procura as mensagens de erro definidas pelo usuário que são gravadas para a saída padrão (stdout) ou erro padrão (stderr). A sintaxe para especificar mensagens de saúde é definida pela estrutura de teste de unidade.|
 |**Resultado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualificador|DESCRIÇÃO|
+|Qualificador|Descrição|
 |-|-----------------|
-|**State**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
+|**Estado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
-|**Projeto**|Procura os nomes de projeto de teste para correspondências.|
-|**Estrutura de destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
+|**Project**|Procura os nomes de projeto de teste para correspondências.|
+|**Quadro de destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Namespace**|Pesquisa os namespaces de teste para encontrar correspondências.|
 |**Classe**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
 ::: moniker-end
@@ -303,7 +303,7 @@ Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração 
 1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
 
     > [!NOTE]
-    > {1&gt;Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.&lt;1}
+    > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
 
 2. No Gerenciador de Testes, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu do clique com o botão direito.
 
@@ -311,7 +311,7 @@ Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração 
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de desempenho do método de teste
 
-Para diagnosticar por que um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Analisar o Teste Selecionado** no menu de clique com o botão direito. Consulte [relatório de criação de perfil de instrumentação](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Para diagnosticar por que um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Analisar o Teste Selecionado** no menu de clique com o botão direito. Consulte [o relatório de criação de perfil de instrumentação](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analisar a cobertura de código de teste de unidade
 
@@ -333,7 +333,7 @@ Para executar a cobertura de código para métodos de teste em uma solução:
 
 ::: moniker range=">=vs-2019"
 
-* Clique com o botão direito do mouse no Gerenciador de testes e selecione **analisar cobertura de código para testes selecionados**
+* Clique com o botão direito do mouse no Test Explorer e **selecione Analisar a cobertura de código para testes selecionados**
 
 ::: moniker-end
 
@@ -343,20 +343,20 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 
 ## <a name="test-shortcuts"></a>Atalhos de teste
 
-Os testes podem ser executados no Gerenciador de testes clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os atalhos padrão do [Gerenciador de testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
+Os testes podem ser executados a partir do Test Explorer clicando com o botão direito do mouse no editor de código em um teste e selecionando **executar o teste** ou usando os [atalhos](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) padrão do Test Explorer no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
 
 |Comandos frequentes| Atalhos do teclado|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
-|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
-|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R,** **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R,** **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R,** **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R,** **L**|
 
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
 ## <a name="see-also"></a>Confira também
 
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)
 - [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Perguntas Frequentes sobre o Gerenciador de Testes](test-explorer-faq.md)

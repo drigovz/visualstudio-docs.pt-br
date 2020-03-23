@@ -1,5 +1,5 @@
 ---
-title: 'Teste de carga: definir porcentagem de usuário virtual usando dados de cache da Web'
+title: 'Teste de carga: defina a porcentagem do usuário virtual usando dados de cache da Web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113365"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar o percentual de usuários virtuais que usam dados de cache da Web
@@ -21,9 +21,9 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-A propriedade **Percentual de novos Usuários** é definida na janela **Propriedades**. Edite as propriedades de cenário de teste de carga no **Editor de Teste de Carga**.
+A **porcentagem da nova** propriedade usuários é definida na janela **Propriedades.** Edite as propriedades de cenário de teste de carga no **Editor de Teste de Carga**.
 
-A propriedade **Percentual de novos usuários** afeta a maneira como o teste de carga simula o armazenamento em cache que seria executado por um navegador da Web. Por padrão, a propriedade de **Percentual de novos usuários** é definida como 0%. Se o valor da propriedade **Percentual de novos usuários** for definido como 100%, cada execução de teste de desempenho Web em um teste de carga será tratada como um usuário de primeira vez no site que não tem nenhum conteúdo do site no cache de visitas anteriores do navegador. Assim, todas as solicitações do teste na Web, incluindo todas as solicitações dependentes como imagens, são baixadas.
+A **porcentagem de nova** propriedade dos Usuários afeta a forma como o teste de carga simula o cache que seria realizado por um navegador da Web. Por padrão, a propriedade de **Percentual de novos usuários** é definida como 0%. Se o valor da propriedade **Percentual de novos usuários** for definido como 100%, cada execução de teste de desempenho Web em um teste de carga será tratada como um usuário de primeira vez no site que não tem nenhum conteúdo do site no cache de visitas anteriores do navegador. Assim, todas as solicitações do teste na Web, incluindo todas as solicitações dependentes como imagens, são baixadas.
 
 > [!NOTE]
 > Quando o mesmo recurso que pode ser armazenado em cache é solicitado mais de uma vez em um teste na Web, as solicitações não são baixadas.
@@ -42,14 +42,14 @@ Se você estiver testando a carga de um site que tem um número significativo de
 
      As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
-4. Defina o valor da propriedade **Percentual de Novos Usuários** digitando um número para o percentual de novos usuários.
+4. Defina o valor para a **porcentagem de propriedade novos usuários** inserindo um número para a porcentagem de novos usuários.
 
-5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Percentual de Novos Usuários**.
+5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando a nova porcentagem do valor **de novos usuários.**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
-- [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
+- [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
 - [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)

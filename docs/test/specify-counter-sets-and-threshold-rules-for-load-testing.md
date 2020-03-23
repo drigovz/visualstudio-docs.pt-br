@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596314"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
@@ -31,7 +31,7 @@ Os testes de carga oferecem conjuntos de contadores nomeados úteis para quando 
 
 Conjuntos de contadores são coletados em computadores que você especifica. A associação entre um conjunto de contadores e um computador que é usado durante um teste de carga é um *mapa do conjunto de contadores*. Por exemplo, o servidor Web que você está testando poderia ter mapeamentos de conjuntos de contadores do aplicativo ASP.NET, IIS e .NET.
 
-Por padrão, os contadores de desempenho são coletados no controlador e nos agentes. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
+Por padrão, os contadores de desempenho são coletados no controlador e nos agentes. Para obter mais informações, consulte [controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
 É importante que você adicione os servidores em teste à lista de computadores nos quais é para coletar contadores. Em seguida, todos os dados importantes do sistema são coletados e monitorados durante o teste de carga.
 
@@ -39,9 +39,9 @@ Por padrão, os contadores de desempenho são coletados no controlador e nos age
 
 |Tarefas|Tópicos associados|
 |-|-----------------------|
-|**Gerenciar conjuntos de contadores para o teste de carga:** depois de criar o teste de carga, você pode editar o conjunto de contadores definido no Editor de Teste de Carga. Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores dos quais você deseja coletar dados de desempenho e atribuir um conjunto de contadores para coletar de cada computador individual. Você gerencia os contadores no Editor de Testes de Carga.|-   [Como gerenciar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Gerenciar conjuntos de contadores para o teste de carga:** depois de criar o teste de carga, você pode editar o conjunto de contadores definido no Editor de Teste de Carga. Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores dos quais você deseja coletar dados de desempenho e atribuir um conjunto de contadores para coletar de cada computador individual. Você gerencia os contadores no Editor de testes de carga.|-   [Como: Gerenciar conjuntos de contra-ataques](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Adicionar conjuntos de contadores ao teste de carga:** quando você cria um teste de carga com o **Novo Assistente de Teste de Carga**, um conjunto inicial de contadores é adicionado. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Depois de criar um teste de carga, você pode adicionar novos contadores aos conjuntos de contadores existentes usando o Editor de testes de carga.|-   [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Como adicionar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Especificar uma regra de limite usando contadores para o teste de carga:** uma regra de limite é uma regra que é definida em um contador de desempenho individual para monitorar o uso de recursos do sistema durante um teste de carga. As definições de conjunto de contadores contêm regras de limite predefinidas para muitos contadores de desempenho importantes. As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.|-   [Como adicionar uma regra de limite](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Especificar uma regra de limite usando contadores para o teste de carga:** uma regra de limite é uma regra que é definida em um contador de desempenho individual para monitorar o uso de recursos do sistema durante um teste de carga. As definições de conjunto de contadores contêm regras de limite predefinidas para muitos contadores de desempenho importantes. As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.|-   [Como: Adicionar uma regra de limiar](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**Atribuir nomes amigáveis aos computadores para os quais conjuntos de contadores são mapeados:** você pode adicionar marcas do computador que permitem aplicar um nome com facilidade reconhecido a um computador. As marcas são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. Mais importante, as marcas são exibidas em relatórios do Excel que ajudam os participantes a identificar que função o computador tem no teste de carga, por exemplo, "Web Server1 em lab2" ou "SQL Server2 no escritório Phoenix".<br /><br /> Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usar conjuntos de contadores
@@ -69,7 +69,7 @@ A seguir estão algumas diretrizes para taxas de amostragem.
 |Duração do teste de carga|Taxa de amostragem recomendada|
 |-|-----------------------------|
 |\< 1 hora|5 segundos|
-|1 a 8 horas|15 segundos|
+|1 a 8 horas|15 s|
 |8−24 horas|30 segundos|
 |> 24 horas|60 segundos|
 
@@ -97,7 +97,7 @@ Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para ind
 
 Defina a propriedade **Alertar caso seja superado** como **Falso** para indicar que ficar abaixo de um limite é um problema. Por exemplo, se a regra de limite for definida em **Solicitações/s** e você quiser ser alertado se o valor estiver abaixo de 50, use o tipo de regra **Comparar constante**, defina o **Valor de limite crítico** como 50 e defina **Alertar caso seja superado** como **Falso**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como adicionar uma regra de limite](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -7,10 +7,10 @@ ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984802"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introdução à criação de jogos com o Unity no Visual Studio para Mac
@@ -24,16 +24,16 @@ As Ferramentas do Visual Studio para Mac para Unity é uma extensão gratuita, i
 > [!div class="checklist"]
 > * Saiba mais sobre o desenvolvimento do Unity com o Visual Studio para Mac
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
-- Visual Studio para Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
-- Unity 5.6.1 Personal Edition ou superior ([https://store.unity.com](https://store.unity.com/), exige uma conta do unity.com para execução)
+- Visual Studio para[https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac)Mac ( )
+- Unity 5.6.1 Edição Pessoal[https://store.unity.com](https://store.unity.com/)ou superior (, requer uma conta unity.com para executar)
 
-## <a name="intended-audience"></a>Público-Alvo
+## <a name="intended-audience"></a>Público-alvo
 
 Este laboratório destina-se a desenvolvedores que estão familiarizados com o C#, embora uma ampla experiência não seja necessária.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Tarefa 1: Criando um projeto de Unity básico
+## <a name="task-1-creating-a-basic-unity-project"></a>Tarefa 1: Criar um projeto básico de Unidade
 
 1. Inicie o **Unity**. Entre, se solicitado.
 
@@ -79,7 +79,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 13. Feche a janela **Localizador** e retorne ao **Unity**.
 
-14. A pasta **ativos** contém todos os seus ativos, código, áudio, etc. Ele está vazio agora, mas todos os arquivos que você colocar em seu projeto aparecerão aqui. Essa é sempre a pasta de nível superior no **Editor do Unity**. Porém, sempre adicione e remova arquivos por meio da interface do Unity (ou do Visual Studio para Mac) e nunca por meio do sistema de arquivos diretamente.
+14. A pasta **Ativos** contém todos os seus ativos-arte, código, áudio, etc. Está vazio agora, mas cada arquivo que você traz para o seu projeto vai aqui. Essa é sempre a pasta de nível superior no **Editor do Unity**. Porém, sempre adicione e remova arquivos por meio da interface do Unity (ou do Visual Studio para Mac) e nunca por meio do sistema de arquivos diretamente.
 
     ![pasta Ativos no Unity](media/unity-image10.png)
 
@@ -91,11 +91,11 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![propriedades do objeto de jogo](media/unity-image12.png)
 
-17. Renomeie o objeto **Cube**, que tem o nome **"Cube"** por padrão, como **"Enemy"** . Lembre-se de pressionar **Enter** para salvar a alteração. Esse será o cubo do inimigo em nosso jogo simples.
+17. Renomeie o objeto **Cube**, que tem o nome **"Cube"** por padrão, como **"Enemy"**. Lembre-se de pressionar **Enter** para salvar a alteração. Esse será o cubo do inimigo em nosso jogo simples.
 
     ![propriedade de renomeação do objeto Cube](media/unity-image13.png)
 
-18. Adicione outro objeto **Cube** à cena usando o mesmo processo descrito acima e nomeie-o **"Player"** .
+18. Adicione outro objeto **Cube** à cena usando o mesmo processo descrito acima e nomeie-o **"Player"**.
 
     ![renomear o segundo objeto Cube](media/unity-image14.png)
 
@@ -111,11 +111,11 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![como mover um cubo ao longo do eixo](media/unity-image17.png)
 
-22. Agora você pode adicionar um código para impulsionar a lógica do inimigo, de modo que ele persiga o jogador. Clique com o botão direito do mouse na pasta **Ativos** no painel **Projeto** e selecione **Criar > Script C#** .
+22. Agora você pode adicionar um código para impulsionar a lógica do inimigo, de modo que ele persiga o jogador. Clique com o botão direito do mouse na pasta **Ativos** no painel **Projeto** e selecione **Criar > Script C#**.
 
     ![Ação de contexto do script C#](media/unity-image18.png)
 
-23. Nomeie o novo script C# **"EnemyAI"** .
+23. Nomeie o novo script C# **"EnemyAI"**.
 
     ![Script C#](media/unity-image19.png)
 
@@ -123,13 +123,13 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![realce mostrando a adição de script ao objeto de jogo](media/unity-image20.png)
 
-25. Selecione **Arquivo > Salvar Cenas** para salvar a cena atual. Nomeie-a **"MyScene"** .
+25. Selecione **Arquivo > Salvar Cenas** para salvar a cena atual. Nomeie-a **"MyScene"**.
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Tarefa 2: trabalhando com as ferramentas de Visual Studio para Mac para o Unity
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Tarefa 2: Trabalhar com o Visual Studio para Ferramentas Mac para Unidade
 
 1. A melhor maneira de editar o código C# é usar o Visual Studio para Mac. Você pode configurar o Unity para usar o Visual Studio para Mac como seu manipulador padrão. Selecione **Unity > Preferências**.
 
-2. Selecione a guia **Ferramentas externas** . Na lista suspensa **Editor de scripts externos** , selecione **procurar** e selecione **aplicativos/Visual Studio. aplicativo**. Como alternativa, se já houver uma opção **Visual Studio**, bastará selecioná-la.
+2. Selecione a **guia Ferramentas externas.** Na parada do **Editor de scriptexterno,** selecione **Procurar** e selecionar **Aplicativos/Visual Studio.app**. Como alternativa, se já houver uma opção **Visual Studio**, bastará selecioná-la.
 
     ![guia Ferramentas Externas em Preferências](media/unity-image21.png)
 
@@ -189,7 +189,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 9. Salve as alterações no script do inimigo no **Visual Studio para Mac**.
 
-## <a name="task-3-debugging-the-unity-project"></a>Tarefa 3: Depurando o projeto do Unity
+## <a name="task-3-debugging-the-unity-project"></a>Tarefa 3: Depurar o projeto Unidade
 
 1. Defina um ponto de interrupção na primeira linha de código no método **Start**. Clique na margem do editor na linha de destino ou coloque o cursor na linha e pressione **F9**.
 
@@ -247,9 +247,9 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![como interromper a sessão de depuração no Visual Studio para Mac](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Tarefa 4: explorando recursos do Unity no Visual Studio para Mac
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Tarefa 4: Explorando recursos da Unity no Visual Studio para Mac
 
-1. O Visual Studio para Mac fornece acesso rápido à documentação do Unity no editor de código. Coloque o cursor em algum lugar no símbolo **Vector3** dentro do método **Update** e pressione **Comando ⌘ + '** .
+1. O Visual Studio para Mac fornece acesso rápido à documentação do Unity no editor de código. Coloque o cursor em algum lugar no símbolo **Vector3** dentro do método **Update** e pressione **Comando ⌘ + '**.
 
     ![como selecionar o método no editor do Visual Studio para Mac](media/unity-image38.png)
 
@@ -261,7 +261,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![ação de contexto do novo monobehaviour](media/unity-image40.png)
 
-4. A classe recém-criada fornece stubs para os métodos **Start** e **Update**. Após a chave de fechamento do método **Update**, comece a digitar **"onmouseup"** . Conforme você digita, observe que o IntelliSense do Visual Studio rapidamente converge para o método que você pretende implementar. Selecione-o na lista de preenchimento automático fornecida. Ele preencherá um stub de método para você, incluindo todos os parâmetros.
+4. A classe recém-criada fornece stubs para os métodos **Start** e **Update**. Após a chave de fechamento do método **Update**, comece a digitar **"onmouseup"**. Conforme você digita, observe que o IntelliSense do Visual Studio rapidamente converge para o método que você pretende implementar. Selecione-o na lista de preenchimento automático fornecida. Ele preencherá um stub de método para você, incluindo todos os parâmetros.
 
     ![IntelliSense no Visual Studio para Mac](media/unity-image41.png)
 
@@ -283,4 +283,4 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="summary"></a>Resumo
 
-Neste laboratório, você aprendeu a criar um jogo com o Unity e o Visual Studio para Mac. Confira [https://unity3d.com/learn](https://unity3d.com/learn) para saber mais sobre o Unity.
+Neste laboratório, você aprendeu a criar um jogo com o Unity e o Visual Studio para Mac. Veja [https://unity3d.com/learn](https://unity3d.com/learn) para saber mais sobre unidade.

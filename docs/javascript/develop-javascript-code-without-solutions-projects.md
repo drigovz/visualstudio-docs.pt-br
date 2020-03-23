@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888646"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549938"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
 Com o Visual Studio 2017 ou posterior, é possível [desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), o que permite que você abra uma pasta de códigos e comece a trabalhar imediatamente com o suporte avançado do editor, como IntelliSense, pesquisa, refatoração, depuração, entre outros. Além desses recursos, as Ferramentas Node.js para Visual Studio adicionam suporte para criação de arquivos TypeScript, o gerenciamento de pacotes npm e a execução de scripts npm.
 
-Para começar, selecione **Arquivo** > **Abrir** > **Pasta** na barra de ferramentas. O Gerenciador de Soluções exibe todos os arquivos na pasta, e você pode abrir qualquer um dos arquivos para começar a editar. Em segundo plano, o Visual Studio indexa os arquivos para habilitar recursos de npm, build e depuração.
+Para começar, selecione **'Pasta** > **de abertura** > **de arquivo'** na barra de ferramentas. O Gerenciador de Soluções exibe todos os arquivos na pasta, e você pode abrir qualquer um dos arquivos para começar a editar. Em segundo plano, o Visual Studio indexa os arquivos para habilitar recursos de npm, build e depuração.
 
 > [!IMPORTANT]
-> Muitos dos recursos descritos neste artigo, incluindo a integração com npm, exigem o Visual Studio 2017 versão 15.8 ou posterior.
+> Muitos dos recursos descritos neste artigo, incluindo a integração com npm, exigem o Visual Studio 2017 versão 15.8 ou posterior. A carga de trabalho de desenvolvimento do Visual **Studio Node.js** deve ser instalada.
 
 ## <a name="npm-integration"></a>Integração com npm
 
@@ -79,7 +79,7 @@ Se nenhuma das estruturas com suporte for reconhecida, o executor de teste padr�
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-Depois de abrir o Gerenciador de Testes (escolha **Teste** > **Windows** > **Gerenciador de Testes**), o Visual Studio detecta e exibe os testes.
+Após abrir o Test Explorer (escolha **Test** > **Windows** > **Test Explorer),** o Visual Studio descobre e exibe testes.
 
 > [!NOTE]
 > O executor de teste enumerará somente os arquivos JavaScript na raiz do teste. Se o aplicativo for escrito em TypeScript, você precisará criá-los primeiro.

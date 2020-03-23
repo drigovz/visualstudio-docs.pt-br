@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169346"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
-Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto do MSBuild deve ser especificado como um filho de um elemento `ItemGroup`.
+Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto MSBuild deve ser `ItemGroup` especificado como filho de um elemento.
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -64,11 +64,11 @@ No entanto, é possível passar os metadados `Version` como um atributo, como na
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Include`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|
 |`Exclude`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser excluído da lista de itens.|
@@ -81,13 +81,13 @@ No entanto, é possível passar os metadados `Version` como um atributo, como na
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Uma chave de metadados de item definido pelo usuário, que contém o valor de metadados do item. Pode ser que não haja nenhum ou mais de um elemento `ItemMetadata` em um item.|
+|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Uma chave de metadados de item definido pelo usuário, que contém o valor de metadados do item. Pode ser que não haja nenhum ou mais de um elemento `ItemMetadata` em um item.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping para itens.|
 
@@ -97,7 +97,7 @@ Os elementos `Item` definem entradas no sistema de compilação e são agrupados
 
 O uso da notação @(\<myType>) permite que uma coleção de itens do tipo \<myType> seja expandida em uma lista de cadeias de caracteres delimitadas por ponto e vírgula e passada para um parâmetro. Se o parâmetro for do tipo `string`, então o valor do parâmetro será a lista de elementos, separados por ponto e vírgula. Se o parâmetro for uma matriz de cadeias de caracteres (`string[]`), então cada elemento será inserido na matriz com base na localização dos pontos e vírgulas. Se o parâmetro de tarefa for do tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, então o valor é o conteúdo da coleção de itens juntamente com quaisquer metadados anexados. Para delimitar cada item usando um caractere que não seja ponto e vírgula, use a sintaxe @(\<myType>, '\<separator>').
 
-O mecanismo do MSBuild pode avaliar curingas, como `*` e `?` e caracteres curinga recursivos, como */\*\*/\*. cs*. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
+O motor MSBuild pode avaliar `*` `?` curingas como e curingas recursivas, como * / \* \* / \*.cs*. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,6 +125,6 @@ O exemplo de código a seguir mostra como usar o atributo `Update` para modifica
 ## <a name="see-also"></a>Confira também
 
 - [Itens](../msbuild/msbuild-items.md)
-- [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Itens comuns do projeto MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

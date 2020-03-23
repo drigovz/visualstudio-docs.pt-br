@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778239"
 ---
 # <a name="status"></a>Status
-A opção **Status** de *VSPerfCmd.exe* exibe informações sobre o estado do criador de perfil e todos os processos cujos perfis estão sendo criados.
+A opção *VSPerfCmd.exe* **Status** exibe informações sobre o estado do profiler e quaisquer processos que estão sendo perfilados.
 
- A opção **Status** deve ser a única opção especificada na linha de comando. O criador de perfil precisa ser inicializado com a opção **Status** de *VSPerfCmd.exe* antes que qualquer status possa ser exibido.
+ A opção **Status** deve ser a única opção especificada na linha de comando. O profiler deve ser inicializado com a opção *VSPerfCmd.exe* **Start** antes que qualquer status possa ser exibido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -27,8 +27,8 @@ A opção **Status** de *VSPerfCmd.exe* exibe informações sobre o estado do cr
 VSPerfCmd.exe /Status
 ```
 
-#### <a name="parameters"></a>Parâmetros
- {1&gt;Nenhum&lt;1}
+#### <a name="parameters"></a>parâmetros
+ Nenhum
 
 ## <a name="remarks"></a>Comentários
  A opção **Status** exibe as seguintes informações de estado para o criador de perfil.
@@ -59,8 +59,8 @@ VSPerfCmd.exe /Status
 
  **Usuários com direitos de acesso de monitoramento** Lista os nomes de usuários que têm acesso ao criador de perfil. Usuários adicionais podem ser concedidos acesso por meio da opção VSPerfCmd.exe **Admin**
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

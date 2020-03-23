@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570395"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -29,11 +29,11 @@ Executa o comando especificado depois de iniciar o IDE do Visual Studio.
 devenv /Command CommandName
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 *CommandName*
 
-Necessária. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
+Obrigatórios. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Comentários
 
@@ -45,7 +45,7 @@ Se você usar essa opção, o IDE não exibirá a Página Inicial na inicializa�
 
 ::: moniker-end
 
-Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [como: controlar suplementos usando o Gerenciador de suplementos](/previous-versions/xwdatdwh(v=vs.140)).
+Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como: Controlar os complementos usando o gerenciador de complementos](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Exemplo
 
@@ -63,8 +63,8 @@ devenv /command "navigate https://docs.microsoft.com/"
 devenv /command "nf some_file.cs"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-- [Janela Comando](command-window.md)
+- [Janela de comando](command-window.md)

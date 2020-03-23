@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776365"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
@@ -44,7 +44,7 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Colete dados de um ou mais contadores ao analisar por instrumentação.
 
-- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, confira [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md).
+- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, consulte [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para coletar dados de contador de desempenho de CPU ao analisar por instrumentação
 
@@ -59,9 +59,9 @@ Dois tipos de eventos do contador de CPU ocorrem:
     > [!NOTE]
     > **Contadores de desempenho disponíveis** estará habilitada somente se você selecionar a caixa de seleção **Coletar Contadores de CPU**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Propriedades de sessão de desempenho](../profiling/performance-session-properties.md)
-[contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)
-[como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+[Configure as sessões](../profiling/configuring-performance-sessions.md)
+de desempenho[Propriedades da sessão de desempenho CPU](../profiling/performance-session-properties.md)
+[e contadores](../profiling/cpu-and-windows-counters.md)
+do Windows[Como: Escolha eventos de amostragem](../profiling/how-to-choose-sampling-events.md)

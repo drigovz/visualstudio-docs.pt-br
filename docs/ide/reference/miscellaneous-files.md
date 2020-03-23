@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585291"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
@@ -48,8 +48,8 @@ Os menus, barras de ferramentas e os comandos que eles contêm mudam com base no
 
 Você pode definir opções de exibição para a pasta **Arquivos Diversos** para que ela seja exibida mesmo que você não tenha aberto nenhum arquivo diverso. O arquivo de solução não gerencia permanentemente uma lista de arquivos diversos. Ele usa um recurso opcional que permite que ele se lembre uma lista de arquivos MRU (recentemente usados) por usuário.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Desenvolver código no Visual Studio sem projetos ou soluções](../develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Desenvolver código no Visual Studio sem projetos nem soluções](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)
 - [Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)

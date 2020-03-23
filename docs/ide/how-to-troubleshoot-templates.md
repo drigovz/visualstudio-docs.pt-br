@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591379"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
@@ -36,7 +36,7 @@ Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de 
 
 1. Localize o arquivo *.zip* que contém o modelo.
 
-1. Extraia o arquivo *.zip*.
+1. Extrair o arquivo *.zip.*
 
 1. No menu **Arquivo** do Visual Studio, escolha **Abrir** > **Arquivo**.
 
@@ -49,19 +49,19 @@ Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de 
 
 1. Salve e feche o arquivo *vstemplate*.
 
-1. Selecione os arquivos incluídos no modelo, clique com o botão direito do mouse e escolha **Enviar para** > **Pasta compactada (zipada)** . Os arquivos selecionados são compactados em um arquivo *.zip*.
+1. Selecione os arquivos incluídos no modelo, clique com o botão direito do mouse e escolha **Enviar para a** > **pasta Compactado (fechado).** Os arquivos selecionados são compactados em um arquivo *.zip.*
 
 1. Insira o novo arquivo *.zip* no mesmo diretório do antigo arquivo *.zip*.
 
 1. Exclua os arquivos de modelo extraídos e o arquivo *.zip* de modelo antigo.
 
-## <a name="enable-diagnostic-logging"></a>Habilitar o registro em log de diagnóstico
+## <a name="enable-diagnostic-logging"></a>Habilitar registro em log de diagnóstico
 
 Você pode habilitar o registro em log de diagnóstico para a descoberta de modelo, seguindo as etapas em [Solucionando problemas de descoberta do modelo (extensibilidade)](../extensibility/troubleshooting-template-discovery.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Solucionar problemas de descoberta do modelo (extensibilidade)](../extensibility/troubleshooting-template-discovery.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
-- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criar modelos de projeto e itens](../ide/creating-project-and-item-templates.md)
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

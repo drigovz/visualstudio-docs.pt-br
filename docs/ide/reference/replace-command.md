@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596678"
 ---
 # <a name="replace-command"></a>Comando Substituir
@@ -31,16 +31,16 @@ Edit.Replace findwhat replacewith [/all] [/case]
 [/wild|/regex] [/word]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `findwhat`
 
-Necessária. O texto a ser correspondido.
+Obrigatórios. O texto a ser correspondido.
 
 `replacewith`
 
-Necessária. O texto a ser substituído pelo texto correspondido.
+Obrigatórios. O texto a ser substituído pelo texto correspondido.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /all ou /a
 
 Opcional. Substitui todas as ocorrências do texto da pesquisa pelo texto de substituição.
@@ -100,7 +100,7 @@ Este exemplo substitui `btnSend` por `btnSubmit` em todos os documentos abertos.
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)
 - [Janela Comando](../../ide/reference/command-window.md)

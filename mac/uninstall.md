@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892162"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalando o Visual Studio para Mac
@@ -35,9 +35,9 @@ Você pode desinstalar os componentes do Visual Studio e do Xamarin de uma só v
 
 Esse script de desinstalação contém a maioria dos comandos que você encontrará no artigo. Há três omissões principais do script que não estão incluídas devido a possíveis dependências externas. Para removê-las, vá para a seção relevante abaixo e remova manualmente:
 
-- **[Desinstalar o Mono](#uninstall-mono-sdk-mdk)**
-- **[Desinstalar o Android AVD](#uninstall-android-avd)**
-- **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**
+- **[Desinstalação do Mono](#uninstall-mono-sdk-mdk)**
+- **[Desinstalação do Android AVD](#uninstall-android-avd)**
+- **[Como desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**
 
 Para executar o script, execute as seguintes etapas:
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Talvez você queira remover o seguinte diretório que contém vários arquivos e pastas do Xamarin. No entanto, antes de fazer isso, esteja ciente de que esse diretório contém as chaves de assinatura do Android. Para saber mais, consulte a seção **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)** :
+Talvez você queira remover o seguinte diretório que contém vários arquivos e pastas do Xamarin. No entanto, antes de fazer isso, esteja ciente de que esse diretório contém as chaves de assinatura do Android. Para saber mais, consulte a seção **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**:
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -243,6 +243,6 @@ Você também pode remover o arquivo plist Preview com o seguinte comando:
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Desinstalar Visual Studio (no Windows)](/visualstudio/install/uninstall-visual-studio)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596886"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
@@ -28,7 +28,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 O Visual Studio gera os novos tipos e membros com uma interrupção mínima no seu fluxo de trabalho. Você pode criar stubs para tipos, métodos, propriedades, campos ou construtores sem sair do seu local atual no código. Quando você abre uma caixa de diálogo para especificar as opções para a geração de tipo, o foco retorna imediatamente para o arquivo aberto no momento quando a caixa de diálogo é fechada.
 
-O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integradas ao Visual Studio. A Estrutura de Teste de unidade da Microsoft é demonstrada neste tópico.
+O recurso **Gerar de Uso** pode ser usado com estruturas de teste que se integram ao Visual Studio. A Estrutura de Teste de unidade da Microsoft é demonstrada neste tópico.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integ
 
 2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar** > **Novo Projeto**.
 
-3. Crie um **projeto de Teste de Unidade (.NET Framework)** .
+3. Crie um **projeto de Teste de Unidade (.NET Framework)**.
 
    ::: moniker range="vs-2017"
 
@@ -60,7 +60,7 @@ O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integ
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Gerar uma nova classe com base em um teste de unidade
 
-1. O projeto de teste contém um arquivo chamado *UnitTest1*. Clique duas vezes neste arquivo no **Gerenciador de Soluções** para abri-lo no editor de código. Uma classe de teste e um método de teste foram gerados.
+1. O projeto de teste contém um arquivo chamado *UnitTest1*. Clique duas vezes neste arquivo no **Solution Explorer** para abri-lo no editor de código. Uma classe de teste e um método de teste foram gerados.
 
 2. Localize a declaração da classe `UnitTest1` e renomeie para `AutomobileTest`.
 
@@ -73,9 +73,9 @@ O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integ
 
     ![Ações rápidas em C&#35;](../ide/media/genclass_underline.png)
 
-4. Escolha ou clique na lâmpada **Ações Rápidas**. Você verá uma mensagem de erro afirmando que o tipo `Automobile` não está definido. Você também verá algumas possíveis soluções.
+4. Escolha ou clique na lâmpada **Ações Rápidas.** Você verá uma mensagem de erro afirmando que o tipo `Automobile` não está definido. Você também verá algumas possíveis soluções.
 
-5. Clique em **Gerar novo tipo** para abrir a caixa de diálogo **Gerar Tipo**. Essa caixa de diálogo fornece opções que incluem a geração de tipo em um projeto diferente.
+5. Clique **em Gerar novo tipo** para abrir a caixa de diálogo Gerar **tipo.** Essa caixa de diálogo fornece opções que incluem a geração de tipo em um projeto diferente.
 
 6. Na lista **Projetos**, clique em **GFUDemo\_VB** ou **GFUDemo_CS** para instruir o Visual Studio a adicionar o arquivo no projeto de biblioteca de classes em vez do projeto de teste. Se ainda não estiver selecionado, escolha **Criar novo arquivo** e nomeie-o *Automobile.cs* ou *Automobile.vb*.
 
@@ -83,7 +83,7 @@ O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integ
 
 7. Clique em **OK** para fechar a caixa de diálogo e criar o novo arquivo.
 
-8. No **Gerenciador de Soluções**, procure no nó de projeto **GFUDemo_VB** ou **GFUDemo_CS** para verificar se o novo arquivo *Automobile.vb* ou *Automobile.cs* está nesse local. No editor de código, o foco ainda estará em `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, o que permite que você continue a escrever o teste com um mínimo de interrupção.
+8. No **Solution Explorer,** procure o **nó de projeto GFUDemo_VB** ou **GFUDemo_CS** para verificar se o novo arquivo *Automobile.vb* ou *Automobile.cs* está lá. No editor de código, o foco ainda estará em `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, o que permite que você continue a escrever o teste com um mínimo de interrupção.
 
 ### <a name="generate-a-property-stub"></a>Gerar um stub de propriedade
 Suponha que a especificação de produto afirma que a classe `Automobile` tem duas propriedades públicas chamadas `Model` e `TopSpeed`. Essas propriedades devem ser inicializadas com valores padrão de `"Not specified"` e `-1` pelo construtor padrão. O seguinte teste de unidade verificará para que o construtor padrão defina as propriedades para seus valores padrão corretos.
@@ -93,7 +93,7 @@ Suponha que a especificação de produto afirma que a classe `Automobile` tem du
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Com o código faz referência a duas propriedades indefinidas em `Automobile`, um sublinhado ondulado aparecerá sob `Model` e `TopSpeed`. Passe o mouse sobre `Model`, escolha a lâmpada de erro **Ações Rápidas** e, em seguida, escolha **Gerar propriedade 'Automobile.Model'** .
+2. Com o código faz referência a duas propriedades indefinidas em `Automobile`, um sublinhado ondulado aparecerá sob `Model` e `TopSpeed`. Passe o mouse sobre `Model`, escolha a lâmpada de erro **Ações Rápidas** e, em seguida, escolha **Gerar propriedade 'Automobile.Model'**.
 
 3. Gere um stub de propriedade para a propriedade `TopSpeed` da mesma maneira.
 
@@ -107,11 +107,11 @@ Agora vamos criar um método de teste que gerará um stub de construtor para ini
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Clique na lâmpada de erro **Ações Rápidas** sob a linha ondulada vermelha e, em seguida, clique em **Gerar construtor em 'Automobile'** .
+2. Clique na lâmpada de erro **Ações Rápidas** sob a linha ondulada vermelha e, em seguida, clique em **Gerar construtor em 'Automobile'**.
 
      No arquivo de classe `Automobile`, observe que o novo construtor examinou os nomes das variáveis locais que são usadas na chamada do construtor, encontrou propriedades que têm os mesmos nomes na classe `Automobile` e forneceu código no corpo do construtor para armazenar os valores de argumento nas propriedades `Model` e `TopSpeed`.
 
-3. Depois de gerar o novo construtor, um sublinhado ondulado aparece sob a chamada para o construtor padrão em `DefaultAutomobileIsInitializedCorrectly`. A mensagem de erro informa que a classe `Automobile` não tem nenhum construtor que assuma zero argumentos. Para gerar um construtor padrão explícito que não tem parâmetros, clique na lâmpada de erro **Ações Rápidas** e, em seguida, clique em **Gerar construtor em 'Automobile'** .
+3. Depois de gerar o novo construtor, um sublinhado ondulado aparece sob a chamada para o construtor padrão em `DefaultAutomobileIsInitializedCorrectly`. A mensagem de erro informa que a classe `Automobile` não tem nenhum construtor que assuma zero argumentos. Para gerar um construtor padrão explícito que não tem parâmetros, clique na lâmpada de erro **Ações Rápidas** e, em seguida, clique em **Gerar construtor em 'Automobile'**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Gerar um stub para um método
 Suponha que a especificação afirme que um novo `Automobile` poderá ser colocado em um estado `IsRunning` se suas propriedades `Model` e `TopSpeed` forem definidas como algo diferente dos valores padrão.
@@ -121,9 +121,9 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Clique na lâmpada de erro **Ações Rápidas** para a chamada de método `myAuto.Start` e, em seguida, clique em **Gerar método 'Automobile.Start'** .
+2. Clique na lâmpada de erro **Ações Rápidas** para a chamada de método `myAuto.Start` e, em seguida, clique em **Gerar método 'Automobile.Start'**.
 
-3. Clique na lâmpada **Ações Rápidas** para a propriedade `IsRunning` e, em seguida, clique em **Gerar propriedade 'Automobile.IsRunning'** .
+3. Clique na lâmpada **Ações** `IsRunning` Rápidas para a propriedade e clique em **Gerar propriedade 'Automobile.IsRunning'**.
 
      Agora a classe `Automobile` contém um método chamado `Start()` e uma propriedade chamada `IsRunning`.
 
@@ -131,7 +131,7 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 
 1. No menu **Teste**, escolha **Executar** > **Todos os Testes**.
 
-     O comando **Executar** > **Todos os Testes** executa todos os testes nas estruturas de teste escritas para a solução atual. Nesse caso, há dois testes e ambos falham conforme o esperado. O teste `DefaultAutomobileIsInitializedCorrectly` falha porque a condição `Assert.IsTrue` retorna `False`. O teste `AutomobileWithModelNameCanStart` falha porque o método `Start` na classe `Automobile` lança uma exceção.
+     O comando **Executar** > **todos os testes** executa todos os testes em quaisquer estruturas de teste que sejam escritas para a solução atual. Nesse caso, há dois testes e ambos falham conforme o esperado. O teste `DefaultAutomobileIsInitializedCorrectly` falha porque a condição `Assert.IsTrue` retorna `False`. O teste `AutomobileWithModelNameCanStart` falha porque o método `Start` na classe `Automobile` lança uma exceção.
 
      A janela **Resultados do Teste** é mostrada na ilustração a seguir.
 
@@ -159,10 +159,10 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 
      ![Resultados de teste que foram aprovados](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Gerar com base no uso](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Gerar a partir do uso](../ide/visual-csharp-intellisense.md#generate-from-usage)
+- [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Usar o IntelliSense](../ide/using-intellisense.md)
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)
 - [Ações rápidas](../ide/quick-actions.md)

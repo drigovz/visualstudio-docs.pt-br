@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779227"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Exibição Funções – dados de instrumentação de memória do .NET
@@ -23,17 +23,17 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 
 ## <a name="general"></a>Geral
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
-|**Nome da Função**|O nome da função.|
-|**Endereço da Função**|O endereço da função.|
+|**Nome da função**|O nome da função.|
+|**Endereço de função**|O endereço da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Número de Chamadas**|O número total de chamadas que são feitas à função.|
-|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
-|**Nome do Módulo**|O nome do módulo que contém a função.|
+|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
-|**Nome do Processo**|O nome do processo.|
+|**Nome do processo**|O nome do processo.|
 |**Sobrecarga de Investigação Exclusiva de Tempo**|A sobrecarga de tempo para essa função causada pela instrumentação. A sobrecarga de investigação foi subtraída de todos os tempos exclusivos.|
 |**Sobrecarga de Investigação Inclusiva de Tempo**|A sobrecarga de tempo para essa função e suas funções filho causada pela instrumentação. A sobrecarga de investigação foi subtraída de todos os tempos inclusivos.|
 
@@ -42,7 +42,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 
  Os valores de memória exclusivos indicam o número e tamanho dos objetos que foram criados pela função e não por suas funções filho.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Alocações Inclusivas**|O número total de objetos que foram criados nesta função e em funções que foram chamadas por essa função.|
 |**% de Alocações Inclusivas**|O percentual de todos os objetos que foram alocados na execução da criação de perfil que eram alocações inclusivas dessa função.|
@@ -56,7 +56,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 ## <a name="elapsed-inclusive-values"></a>Valores inclusivos decorridos
  Os valores inclusivos decorridos indicam o tempo que uma função ficou na pilha de chamadas. O tempo inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Tempo Inclusivo Decorrido**|O tempo inclusivo decorrido total de todas as chamadas feitas a essa função.|
 |**% de Tempo Inclusivo Decorrido**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo decorrido dessa função.|
@@ -67,7 +67,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 ## <a name="elapsed-exclusive-values"></a>Valores exclusivos decorridos
  Valores exclusivos decorridos indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. O tempo inclui o tempo em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, mas não inclui o tempo gasto em funções filho.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Tempo Exclusivo Decorrido**|O tempo exclusivo decorrido total de todas as chamadas feitas a essa função.|
 |**% de Tempo Exclusivo Decorrido**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo decorrido total dessa função.|
@@ -78,7 +78,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 ## <a name="application-inclusive-values"></a>Valores inclusivos do aplicativo
  Os valores inclusivos do aplicativo indicam o tempo que uma função ficou na pilha de chamadas. O tempo não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, mas inclui o tempo gasto em funções filho.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Tempo Inclusivo do Aplicativo**|O tempo inclusivo do aplicativo total de todas as chamadas para essa função.|
 |**% de Tempo Inclusivo do Aplicativo**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo do aplicativo total dessa função.|
@@ -89,7 +89,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 ## <a name="application-exclusive-values"></a>Valores exclusivos do aplicativo
  Valores exclusivos do aplicativo indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. O tempo não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, nem o tempo gasto em funções filho.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Tempo Exclusivo do Aplicativo**|O tempo exclusivo do aplicativo total de todas as chamadas para essa função.|
 |**% de Tempo Exclusivo do Aplicativo**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo do aplicativo total dessa função.|
@@ -97,8 +97,8 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 |**Tempo Exclusivo Máximo do Aplicativo**|O tempo exclusivo máximo do aplicativo de uma chamada para essa função.|
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|
 
-## <a name="see-also"></a>Consulte também
-- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
-- [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
-- [Exibição Funções](../profiling/functions-view-instrumentation-data.md)
-- [Exibição Funções](../profiling/functions-view-sampling-data.md)
+## <a name="see-also"></a>Confira também
+- [Como: Personalizar colunas de exibição de relatórios](../profiling/how-to-customize-report-view-columns.md)
+- [Exibição de funções - amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Exibição de funções](../profiling/functions-view-instrumentation-data.md)
+- [Exibição de funções](../profiling/functions-view-sampling-data.md)

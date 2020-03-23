@@ -7,16 +7,16 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984973"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Tour do Visual Studio 2017 para Mac
 
 > [!NOTE]
-> O Visual Studio 2019 para Mac [já está disponível](installation.md).
+> Visual Studio 2019 para Mac já está [disponível](installation.md).
 
 O Visual Studio para Mac é um _ambiente de desenvolvimento integrado_ do .NET no Mac que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Além de recursos esperados, tais como o editor e o depurador padrão, o Visual Studio para Mac inclui compiladores, ferramentas de preenchimento de código, designers gráficos e controle do código-fonte para facilitar o processo de desenvolvimento de software.
 
@@ -52,7 +52,7 @@ Esta Tela de boas-vindas contém as seguintes seções:
 - **Soluções Recentes** – Fornece acesso rápido a soluções recém-abertas, bem como botões convenientes para abrir ou criar projetos.
 - **Notícias do Desenvolvedor** – um feed de notícias que mantém você atualizado sobre as informações mais recentes do desenvolvedor Microsoft.
 
-## <a name="solutions-and-projects"></a>Soluções e Projetos
+## <a name="solutions-and-projects"></a>Soluções e projetos
 
 A imagem abaixo mostra o Visual Studio para Mac com um aplicativo carregado:
 
@@ -98,7 +98,7 @@ As informações sobre como usar um pacote do NuGet em um aplicativo podem ser e
 
 O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: ações de contexto e análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+## <a name="debugging"></a>Depuração
 
 O Visual Studio para Mac tem um depurador nativo para dar suporte à depuração de aplicativos Xamarin.iOS, Xamarin.Mac e Xamarin.Android. O Visual Studio para Mac usa o Mono Soft Debugger, que foi implementado no runtime Mono, permitindo que o IDE depure código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
 
@@ -122,6 +122,6 @@ Para saber mais sobre como usar o controle de versão no Visual Studio, veja o a
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [IDE do Visual Studio (no Windows)](/visualstudio/ide/visual-studio-ide)

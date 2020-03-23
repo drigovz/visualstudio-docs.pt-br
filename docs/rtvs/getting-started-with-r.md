@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "63000598"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introdução às Ferramentas do R para Visual Studio
@@ -22,8 +22,8 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
 ## <a name="create-an-r-project"></a>Criar um projeto R
 
 1. Abra o Visual Studio.
-1. Escolha **Arquivo** > **Novo** > **Projeto** (**Ctrl**+**Shift**+**N**)
-1. Selecione "Projeto R" em **Modelos** > **R**, dê ao projeto um nome e um local e selecione **OK**:
+1. Escolha **o** > **novo** > projeto do**arquivo** **(Ctrl**+**Shift**+**N**)
+1. Selecione "Projeto R" em **Modelos** > **R,** dê ao projeto um nome e local e selecione **OK**:
 
    ![Caixa de diálogo Novo Projeto para R no Visual Studio (RTVS no VS2017)](media/getting-started-01-new-project.png)
 
@@ -34,7 +34,7 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
     - No canto inferior esquerdo estará a janela **R Interativo** na qual você pode desenvolver e testar o código de forma interativa.
 
 > [!Note]
-> Você pode usar a janela **R Interativo** sem abrir nenhum projeto e até mesmo quando um tipo de projeto diferente é carregado. Basta selecionar **Ferramentas do R** > **Windows** > **R Interativo** a qualquer momento.
+> Você pode usar a janela **R Interativo** sem abrir nenhum projeto e até mesmo quando um tipo de projeto diferente é carregado. Basta selecionar **Ferramentas** > R**Windows** > **R Interactive a** qualquer momento.
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>Explorar a janela interativa e o IntelliSense
 
@@ -84,14 +84,14 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. Para ver os resultados rapidamente, selecione todo o código (**Ctrl**+**A**) e, em seguida, pressione **Ctrl**+**Enter** ou clique com o botão direito do mouse e selecione **Executar em Interativo**. Todo o código selecionado é executado na janela interativa como se você o digitasse diretamente em uma janela de gráficos:
+1. Para ver rapidamente os resultados, selecione todo o código **(Ctrl**+**A),** em seguida,**pressione** **Ctrl**+Enter ou clique com o botão direito do mouse e selecione **Execute in Interactive**. Todo o código selecionado é executado na janela interativa como se você o digitasse diretamente em uma janela de gráficos:
 
     ![Exibição de um gráfico no Visual Studio](media/getting-started-08-plot1.png)
 
 1. Para uma única linha, basta pressionar **Ctrl**+**Enter** a qualquer momento para executar essa linha na janela interativa.
 
 > [!Tip]
-> Aprenda o padrão de fazer edições e pressionar **Ctrl**+**Enter** (ou selecionar tudo com **Ctrl**+**A** e, em seguida, pressionar **Ctrl**+**Enter**) para executar o código rapidamente. Fazer isso é muito mais eficiente do que usar o mouse para as mesmas operações.
+> Aprenda o padrão de fazer edições e pressionar **Ctrl**+**Enter** (ou selecionar tudo com **Ctrl**+**A** e, em seguida, pressionar **Ctrl**+**Enter**) para executar rapidamente o código. Fazer isso é muito mais eficiente do que usar o mouse para as mesmas operações.
 >
 > Além disso, você pode arrastar e soltar a janela de gráficos para fora do quadro do Visual Studio e colocá-la em qualquer lugar da tela que desejar. Você pode redimensionar a janela de gráficos para as dimensões desejadas e salve-a em uma imagem ou arquivo PDF.
 
@@ -125,7 +125,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
     lines(density(samp.means))
     ```
 
-1. **CTRL**+**A** e **Ctrl**+**Enter** novamente para ver o resultado:
+1. **Ctrl**+**A** e **Ctrl**+**Enter** novamente para ver o resultado:
 
     ![Gráfico dual atualizado no Visual Studio com a escala ajustada corretamente](media/getting-started-10-plot3.png)
 
@@ -135,7 +135,7 @@ Há mais coisas que você pode fazer no editor. Para obter detalhes, confira [Ed
 
 Uma das principais vantagens do Visual Studio é sua interface do usuário de depuração. As RTVS incrementam essa base sólida e adicionam uma interface do usuário inovadora como o [Gerenciador de Variáveis](variable-explorer.md). Aqui, vamos apenas dar uma primeira olhada na depuração.
 
-1. Para começar, redefina o workspace atual para limpar tudo o que fizemos até agora usando o comando de menu **Ferramentas do R** > **Sessão** > **Redefinir**. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do workspace.
+1. Para começar, reinicie o espaço de trabalho atual para limpar tudo o que você fez até agora usando o comando **R Tools** > **Session** > **Reset** menu. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do workspace.
 
 1. Com o arquivo *script.R* criado na seção anterior, defina um ponto de interrupção na linha que começa com `pop <-` colocando o cursor nessa linha e, em seguida, pressionando **F9** ou selecionando o comando de menu **Depurar** > **Alternar Ponto de Interrupção**. De forma alternativa, apenas clique na margem esquerda (ou medianiz) dessa linha em que o ponto de interrupção vermelho aparece:
 
@@ -149,7 +149,7 @@ Uma das principais vantagens do Visual Studio é sua interface do usuário de de
 
     ![Barra de ferramentas de depuração no Visual Studio](media/getting-started-13-debug3.png)
 
-1. Ao interromper no ponto de interrupção, você pode examinar os valores das variáveis. Localize a janela **Autos** no Visual Studio e selecione a guia na parte inferior chamada **Locais**. A janela **Locais** mostra as variáveis locais no ponto atual no programa. Se você tiver parado no ponto de interrupção definido anteriormente, verá que a variável `pop` ainda não está definido. Agora use o comando **Depurar** > **Depuração Parcial** (**F10**), e o valor de `pop` será exibido:
+1. Ao interromper no ponto de interrupção, você pode examinar os valores das variáveis. Localize a janela **Autos** no Visual Studio e selecione a guia na parte inferior chamada **Locais**. A janela **Locais** mostra as variáveis locais no ponto atual no programa. Se você tiver parado no ponto de interrupção definido anteriormente, verá que a variável `pop` ainda não está definido. Agora use o comando **Debug** > **Step Over** **(F10),** e veja o valor para `pop` aparecer:
 
     ![Janela Locais no Visual Studio](media/getting-started-14-debug4.png)
 
@@ -168,5 +168,5 @@ Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a
 - [Projetos de exemplo](getting-started-samples.md)
 - [Editando código](editing-r-code-in-visual-studio.md)
 - [Depuração](debugging-r-in-visual-studio.md)
-- [Workspaces](r-workspaces-in-visual-studio.md)
+- [Espaços](r-workspaces-in-visual-studio.md)
 - [Visualizando dados](visualizing-data-with-r-in-visual-studio.md)

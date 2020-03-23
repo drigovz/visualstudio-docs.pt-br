@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75844268"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Entrar no Visual Studio para Mac
@@ -29,7 +29,7 @@ Se você optar por não entrar imediatamente, poderá usar uma cópia de avalia�
 > [!TIP]
 > Verifique se você está conectado à Internet antes de entrar no Visual Studio para Mac. > As assinaturas só podem ser ativadas online. Se você não está conectado, escolha "Fazer isso mais tarde" e faça login pelo menu quando se conectar.
 
-Para entrar no Visual Studio para Mac na primeira inicialização, execute as seguintes etapas:
+Para entrar no Visual Studio para Mac no primeiro lançamento, faça as seguintes etapas:
 
 1. Clique no botão **Entrar com a Microsoft** na janela de entrada:
 
@@ -39,7 +39,7 @@ Para entrar no Visual Studio para Mac na primeira inicialização, execute as se
 
     ![Caixa de diálogo de credenciais da Microsoft](media/signing-in-image13.png)
 
-4. Depois de fazer logon, você verá uma opção para selecionar atalhos de teclado. Escolha a opção que deseja usar e **continue**. Em seguida, você será solicitado com a janela inicial do Visual Studio 2019 para Mac. Desse ponto, é possível abrir ou criar um projeto:
+4. Depois de fazer login, você verá uma opção para selecionar atalhos de teclado. Escolha a opção que deseja usar e **Continue**. Em seguida, você será solicitado com o Visual Studio 2019 para mac janela de partida. Desse ponto, é possível abrir ou criar um projeto:
 
     ![Você entrou com sucesso](media/signing-in-image14.png)
 
@@ -51,7 +51,7 @@ O Visual Studio para Mac dá suporte à adição de várias contas a sua conta d
 
 Para adicionar contas de usuário adicionais, escolha o menu **Visual Studio > Conta...** do Visual Studio para Mac. Clique no botão **Adicionar...** para inserir credenciais de conta adicionais.
 
-![Gerenciar contas](media/signing-in-image15.png)
+![Gerenciar Contas](media/signing-in-image15.png)
 
 ## <a name="view-or-change-your-profile-information"></a>Exibir ou alterar as informações do perfil
 
@@ -61,7 +61,7 @@ Para adicionar contas de usuário adicionais, escolha o menu **Visual Studio > C
 
 3. Quando terminar, escolha **Salvar alterações**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Trabalhar com várias contas de usuário (Visual Studio no Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

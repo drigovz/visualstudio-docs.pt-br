@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75587141"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
@@ -32,7 +32,7 @@ Pela primeira vez, o Windows foi refatorado para ter um núcleo comum em todas a
 
 A Plataforma Universal do Windows é simplesmente uma coleção de contratos e versões. Ela permite escolher o destino de execução do aplicativo. Você não direciona mais a um sistema operacional, agora você direciona a uma ou mais famílias de dispositivos. Para obter mais detalhes, leia [Introdução à Plataforma Universal do Windows](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Requisitos do
+## <a name="requirements"></a>Requisitos
 
 As ferramentas de desenvolvimento de Aplicativo Universal do Windows vêm com emuladores que podem ser usados para mostrar a aparência do aplicativo em diferentes dispositivos. Se você desejar usar esses emuladores, precisará instalar esse software em um computador físico. O computador físico deve executar o Windows 8.1 (x64) Professional Edition ou superior e ter um processador que dá suporte ao Cliente Hyper-V e à SLAT (Conversão de Endereços de Segundo Nível). Os emuladores não podem ser usados quando o Visual Studio está instalado em uma máquina virtual.
 
@@ -42,7 +42,7 @@ Esta é a lista de software de que você precisa:
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). O Visual Studio 2017 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/productinfo/vs2017-compatibility-vs) e [Requisitos de sistema](/visualstudio/productinfo/vs2017-system-requirements-vs) do Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
+- [Estúdio Visual](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
 
      ![Carga de trabalho da UWP](media/uwp_workload.png)
 
@@ -52,7 +52,7 @@ Esta é a lista de software de que você precisa:
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). O Visual Studio 2019 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/releases/2019/compatibility/) e [Requisitos de sistema](/visualstudio/releases/2019/system-requirements/) do Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
+- [Estúdio Visual](https://visualstudio.microsoft.com/downloads). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
 
      ![Carga de trabalho da UWP](media/uwp_workload.png)
 
@@ -68,6 +68,6 @@ Se você já tiver aplicativos da Windows Store 8.1, aplicativos Windows Phone 8
 
 Depois de criar o aplicativo universal do Windows, você deverá empacotá-lo para instalá-lo em um dispositivo Windows 10 ou enviá-lo para a Windows Store. Consulte [Empacotando aplicativos](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Desenvolvimento móvel multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

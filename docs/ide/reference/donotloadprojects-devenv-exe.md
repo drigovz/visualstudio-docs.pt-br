@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569849"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
@@ -30,11 +30,11 @@ Abre a solução especificada sem carregar projetos. Confira mais informações 
 devenv /DoNotLoadProjects SolutionName
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-*SolutionName*
+*Solutionname*
 
-Necessária. O caminho completo e o nome da solução a ser aberta.
+Obrigatórios. O caminho completo e o nome da solução a ser aberta.
 
 ## <a name="example"></a>Exemplo
 
@@ -44,7 +44,7 @@ O exemplo abre a solução MySln.sln sem carregar projetos.
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Soluções filtradas no Visual Studio](../filtered-solutions.md)
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

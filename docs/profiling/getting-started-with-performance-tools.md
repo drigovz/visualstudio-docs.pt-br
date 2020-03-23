@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779201"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às ferramentas de desempenho
@@ -27,13 +27,13 @@ O Visual Studio oferece várias maneiras de coletar, exibir e analisar dados de 
 
 - Os relatórios de desempenho fornecem exibições em diferentes níveis da estrutura, linhas de código-fonte e processos do seu aplicativo. Relatórios de desempenho mostram dados de execução do aplicativo, da chamada e funções chamadas de uma função específica à árvore de chamadas de todo o aplicativo.
 
-Para criar o perfil de um projeto, aplicativo ou site do ASP.NET rapidamente, selecione **Depurar** > **Criador de Perfil de Desempenho** e selecione **Assistente de Desempenho**. Para obter instruções detalhadas, confira [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: coletar dados de desempenho de um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Para fazer um perfil rápido de um projeto, aplicativo ou ASP.NET site, selecione **Debug** > **Performance Profiler**e selecione **Assistente de desempenho**. Para obter instruções detalhadas, confira [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: coletar dados de desempenho de um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
-Para especificar e configurar uma sessão de criação de perfil de desempenho manualmente, selecione **Depurar** > **Criador de Perfil** > **Gerenciador de Desempenho**. Use a pasta **Destinos** e as páginas **Propriedades** no **Gerenciador de Desempenho** para configurar sessões. Para obter instruções, confira [How to: Manually create performance sessions](../profiling/how-to-manually-create-performance-sessions.md) (Como criar sessões de desempenho manualmente).
+Para especificar manualmente e configurar uma sessão de criação de perfil de desempenho, selecione **Debug** > **Profiler** > **Performance Explorer**. Use a pasta **Destinos** e as páginas **Propriedades** no **Gerenciador de Desempenho** para configurar sessões. Para obter instruções, confira [How to: Manually create performance sessions](../profiling/how-to-manually-create-performance-sessions.md) (Como criar sessões de desempenho manualmente).
 
-**Confira também:**
+**Veja também:**
 
-- [Visões gerais das ferramentas de desempenho](../profiling/overviews-performance-tools.md)
+- [Visão geral de ferramentas de desempenho](../profiling/overviews-performance-tools.md)
 - [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
 - [Usando regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)
 - [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)

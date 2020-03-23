@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77277834"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
@@ -24,7 +24,7 @@ Você pode adicionar um snippet de código em um local específico no seu códig
 
 ## <a name="insert-a-code-snippet"></a>Inserir um snippet de código
 
-Para inserir um snippet de código, abra um arquivo de código C++ ( *.cpp* ou *.h*), clique em algum lugar dentro do arquivo e siga um destes procedimentos:
+Para inserir um trecho de código, abra um arquivo de código C++*(.cpp* ou *.h),* clique em algum lugar dentro do arquivo e faça um dos seguintes:
 
 - Clique com o botão direito do mouse para obter o menu de contexto e selecione **Inserir Snippet**
 
@@ -46,11 +46,11 @@ Em seguida, você pode substituir o **0** pela condição correta.
 
 Para usar um snippet de código para envolver o código selecionado, selecione uma linha (ou várias linhas) e siga um destes procedimentos:
 
-- Clique com o botão direito do mouse para obter o menu de contexto e selecione **Envolver Com**
+- Clique com o botão direito do mouse para obter o menu de contexto e selecione **Surround Com**
 
-- No menu **Editar** > **IntelliSense**, selecione **Envolver Com**
+- No **menu Editar** > **IntelliSense,** selecione **Surround com**
 
-- Usando o teclado, pressione: **Ctrl**+**K**+**S**
+- Usando um teclado, pressione: **Ctrl**+**K**+**S**
 
 Selecione **#if**. Você deverá ver algo assim:
 
@@ -64,7 +64,7 @@ Em seguida, você pode substituir o 0 pela condição correta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Onde posso encontrar uma lista completa dos snippets de código do C++?
 
-Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++** . Na janela abaixo, expanda **Visual C++** . Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
+Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++**. Na janela abaixo, expanda **Visual C++**. Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
 
 Os nomes da maioria dos snippets de código são auto-explicativos, mas alguns nomes podem ser confusos.
 
@@ -115,7 +115,7 @@ private:
 
 Há três snippets **for** diferentes que fornecem diferentes tipos de loops `for`.
 
-O snippet **rfor** fornece um loop for [baseado em intervalo](/cpp/cpp/range-based-for-statement-cpp) (link). Este constructo é preferível em relação aos loops `for` baseados em índice.
+O **trecho rfor** fornece um [loop (link) baseado em intervalo sinuoso.](/cpp/cpp/range-based-for-statement-cpp) Este constructo é preferível em relação aos loops `for` baseados em índice.
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-O snippet **for** fornece um loop `for` no qual a condição é baseada no comprimento (em `size_t`) de um objeto.
+O trecho **para** um `for` trecho fornece um loop no qual `size_t`a condição é baseada no comprimento (em ) de um objeto.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-O snippet **forr** fornece um loop `for` reverso em que a condição é baseada no comprimento (em inteiros) de um objeto.
+O trecho do **forr** `for` fornece um loop reverso no qual a condição é baseada no comprimento (inteiros) de um objeto.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>O snippet de destruidor (~)
 
-O snippet de destruidor ( **~** ) apresenta comportamento diferente em diferentes contextos. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
+O trecho destructor**~**() mostra comportamento diferente em diferentes contextos. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
 
 ```cpp
 class SomeClass {

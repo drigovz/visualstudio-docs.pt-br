@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779903"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -101,7 +101,7 @@ Para criar o perfil de um serviço gerenciado, como um aplicativo Web ASP .NET q
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Off**|Exclui as variáveis de ambiente para criação de perfil de .NET padrão. Use essa opção quando as opções de VSPerfClrEnv não globais foram usadas para definir as variáveis de ambiente do criador de perfil.|
+|**Fora**|Exclui as variáveis de ambiente para criação de perfil de .NET padrão. Use essa opção quando as opções de VSPerfClrEnv não globais foram usadas para definir as variáveis de ambiente do criador de perfil.|
 |**GlobalOff**|Exclui as variáveis de ambiente para criação de perfil do .NET global. Use essa opção quando o aplicativo foi iniciado pelo sistema operacional e não pelo criador de perfil.|
 
 ## <a name="remarks"></a>Comentários
@@ -110,6 +110,6 @@ Essas opções não serão necessárias para criar o perfil de um aplicativo ger
 
 Se o ambiente certo não foi definido durante a criação de perfil, um aviso será dado durante a análise e os nomes da função gerenciada não serão resolvidos corretamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595560"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: alterar fontes e cores para o editor no Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: Alterar fontes e cores para o editor no Visual Studio
 
-Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de primeiro plano e da tela de fundo de vários **Itens de exibição** de texto no editor de códigos. Ao alterar as configurações de fonte, lembre-se das seguintes informações:
+Você pode alterar a face da fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e de fundo para vários itens de texto **Exibir itens** no editor de código. Ao alterar as configurações de fonte, lembre-se das seguintes informações:
 
 - As configurações de **Fonte** e **Tamanho** são globais para todos os elementos de texto em todos os editores do Visual Studio.
 
@@ -33,7 +33,7 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Alterar o tipo da fonte padrão, o tamanho e as cores
 
-1. Selecione **Opções** no menu **Ferramentas**. Em **ambiente**, selecione [fontes e cores](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Selecione **Opções** no menu **Ferramentas**. Em **Ambiente,** [selecione Fontes e Cores](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. Em **Mostrar configurações de**, selecione **Editor de Texto**.
 
@@ -46,7 +46,7 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 5. Clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Como alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

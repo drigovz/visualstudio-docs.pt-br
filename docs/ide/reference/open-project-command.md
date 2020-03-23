@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565806"
 ---
 # <a name="open-project-command"></a>Comando Abrir projeto
@@ -32,11 +32,11 @@ Abre uma solução ou um projeto existente.
 File.OpenProject filename
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `filename`
 
-Necessária. O caminho completo e o nome do arquivo do projeto ou da solução a serem abertos.
+Obrigatórios. O caminho completo e o nome do arquivo do projeto ou da solução a serem abertos.
 
 > [!NOTE]
 > A sintaxe do argumento `filename` requer que os caminhos que contêm espaços usem aspas.
@@ -55,9 +55,9 @@ O exemplo a seguir abre o projeto do Visual Basic **Test1**:
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa de encontrar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

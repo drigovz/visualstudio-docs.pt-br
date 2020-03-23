@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584407"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
@@ -34,7 +34,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Para adicionar um agente de teste a um controlador de teste
 
-1. Escolha **Iniciar** > **Ferramenta de Configuração do Test Agent**.
+1. Escolha a**ferramenta de configuração do agente de teste** **Iniciar** > .
 
      A caixa de diálogo **Configurar Agente de Teste** é exibida.
 
@@ -43,7 +43,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
 
 2. São apresentadas duas opções para executar o agente de teste:
 
-   - **Serviço**: se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo quando o teste for executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
+   - **Serviço**: Se você não tiver que executar testes automatizados que interagem com a área de trabalho, como testes de iu de ui codificados ou criação de uma gravação de vídeo quando o teste é executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **a seguir**.
 
       Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
 
@@ -58,7 +58,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
         |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
         |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
 
-   - **Processo interativo**: se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
+   - **Processo Interativo**: Se você quiser executar testes automatizados que devem interagir com a área de trabalho, como testes de iu de usuário codificados ou criar uma gravação de vídeo quando o teste for executado, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
 
       Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
 
@@ -81,7 +81,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
     > [!NOTE]
     > O número de porta padrão é 6901.
 
-4. Para salvar suas alterações, escolha **Aplicar Configurações**. Feche a caixa de diálogo **Resumo da configuração** e, em seguida, feche a **Ferramenta de Configuração do Test Agent**.
+4. Para salvar suas alterações, escolha **Aplicar Configurações**. Feche a caixa de diálogo **de resumo de configuração** e feche a **ferramenta de configuração do agente de teste**.
 
 > [!WARNING]
 > Se o agente estiver configurado atualmente para ser executado em outro controlador de teste, você deverá remover o agente de teste desse controlador.
@@ -116,8 +116,8 @@ O status do agente de teste pode ser qualquer um dos seguintes valores:
 
 |Status|Descrição|
 |-|-----------------|
-|Executando teste|{1&gt;{2&gt;Executando testes&lt;2}&lt;1}|
-|Pronto|Disponível para executar testes ou coletar dados e diagnóstico|
+|Executando teste|Executando testes|
+|Ready|Disponível para executar testes ou coletar dados e diagnóstico|
 |Offline|Indisponível para executar testes ou coletar dados e diagnósticos|
 |Desconectado|O agente de teste não foi iniciado|
 
@@ -164,7 +164,7 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar um controlador de teste
 
-1. Para executar a ferramenta para reconfigurar o controlador de teste a qualquer momento, escolha **Iniciar** > **Ferramenta de Configuração do Controlador de Teste**.
+1. Para executar a ferramenta para reconfigurar o controlador de teste a qualquer momento, escolha **Iniciar a** > **ferramenta de configuração do controlador de teste**.
 
      A caixa de diálogo **Configurar controlador de teste** é exibida.
 
@@ -210,7 +210,7 @@ Ao adicionar funções para seu aplicativo às configurações de teste para Vis
 
 O controlador de teste e os agentes de teste podem apenas carregar assemblies de teste que tenham assinatura forte, ou assemblies sem assinatura. Alguns assemblies de teste são assinados com atraso porque precisam ter acesso aos assemblies de produção do aplicativo. No entanto, esses assemblies não são fortemente assinados porque são apenas assemblies de teste e não são distribuídos. Esses assemblies não podem ser carregados porque foram assinados com atraso, portanto você deve desabilitar a verificação de nome forte para esses assemblies em todos os computadores em que eles serão carregados, incluindo o computador do controlador de teste. Para desabilitar a verificação assinada com atraso, use *sn.exe*. O token de chave pública do assembly assinado com atraso para o qual a verificação de nome forte é solicitada para ser ignorada também pode precisar ser incluído.
 
-Use *Sn.exe* (ferramenta Nome Forte) para desabilitar a verificação assinada com atraso.
+Use *sn.exe* (ferramenta Nome forte) para desativar a verificação assinada por atraso.
 
 Isso desabilita a verificação de nome forte, para o conjunto especificado apenas, no computador em que você executa o comando. Você só poderá fazer isso se tiver permissões suficientes.
 
@@ -218,6 +218,6 @@ Após a execução de teste, habilite novamente a verificação de assinatura at
 
 Uma maneira recomendada de desabilitar e habilitar novamente a verificação de assinatura é usar os comandos do *SN.exe* nos scripts. Você pode desabilitar a verificação em um script de configuração e reativar a verificação em um script de limpeza.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

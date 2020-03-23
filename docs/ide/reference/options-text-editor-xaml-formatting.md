@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568237"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
@@ -62,7 +62,7 @@ A formatação automática ocorre quando você termina de digitar uma marca de f
 
 A formatação automática ocorre quando você termina de digitar uma marca de início.
 
-**Ao colar da área de transferência**
+**Na pasta da prancheta**
 
 A formatação automática ocorre quando você cola o XAML da área de transferência na exibição XAML.
 
@@ -90,7 +90,7 @@ Você pode especificar um comprimento de linha para disposição de marcação. 
 
 Especifica se as linhas são dispostas no comprimento de linha especificado por **Comprimento**.
 
-**Comprimento**
+**Duração**
 
 O número de caracteres que uma linha pode conter. Se necessário, algumas linhas XAML poderão exceder o comprimento de linha especificado.
 
@@ -174,6 +174,6 @@ Todas as linhas vazias no conteúdo do elemento são removidas.
 </Grid>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

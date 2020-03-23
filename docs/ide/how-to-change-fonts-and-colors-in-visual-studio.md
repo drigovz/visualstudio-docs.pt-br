@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588870"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como alterar fontes e cores no Visual Studio
@@ -27,9 +27,9 @@ ms.locfileid: "75588870"
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Alterar o tema de cores do IDE
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
-1. Na lista de opções, escolha **Ambiente** > **Geral**.
+1. Na lista de opções, escolha **Meio Ambiente** > **Geral**.
 
 1. Na lista **Tema de cores**, escolha o tema padrão **Azul**, **Escuro** ou **Claro**.
 
@@ -41,7 +41,7 @@ ms.locfileid: "75588870"
 
 ## <a name="use-windows-high-contrast-colors"></a>Usar as cores de alto contraste do Windows
 
-Escolha as teclas **Alt esquerdo**+**Shift esquerdo**+**PrtScn**.
+Escolha as **teclas**+**PrtScn** do Left Alt**Left Shift.**+
 
 > [!WARNING]
 > Essa opção define alto contraste para todos os aplicativos e para a interface do usuário no computador atual.
@@ -52,9 +52,9 @@ Escolha as teclas **Alt esquerdo**+**Shift esquerdo**+**PrtScn**.
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Para alterar a fonte e o tipo de todo o texto no IDE
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
-1. Na lista de opções, escolhe **Ambiente** > **Fontes e Cores**.
+1. Na lista de opções, escolha Fontes de **ambiente** > **e cores**.
 
 1. Na lista **Mostrar configurações de**, escolha **Fonte do Ambiente**.
 
@@ -65,7 +65,7 @@ Escolha as teclas **Alt esquerdo**+**Shift esquerdo**+**PrtScn**.
 
 1. Na lista **Tamanho**, escolha um tamanho de texto e, em seguida, escolha o botão **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Como alterar fontes e cores usadas no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027602"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
@@ -33,7 +33,7 @@ Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. V
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
 
-Para abrir o Gerenciador de Servidores, escolha **Exibir** > **Gerenciador de Servidores** (ou, se você está usando as [configurações de ambiente](../ide/environment-settings.md) "Geral", pressione **Ctrl**+**Alt**+**S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
+Para abrir o Server Explorer, escolha **O View** > **Server Explorer** (ou, se estiver usando as [configurações](../ide/environment-settings.md)do ambiente "Geral", pressione **Ctrl**+**Alt**+**S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
 
 ![Gerenciador de Servidores com o nó do Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -75,7 +75,7 @@ Para obter mais informações sobre os diferentes tipos de autenticação no ASP
 
 ### <a name="access-your-azure-devops-organization"></a>Acessar sua organização do Azure DevOps
 
-No menu principal, escolha **Team** > **Gerenciar Conexões** para abrir a janela **Team Explorer – Conectar**. Escolha **Gerenciar Conexões** > **Conectar-se a um Projeto**. Na caixa de diálogo **Conectar-se a um Projeto**, selecione um projeto da lista (ou selecione **Adicionar Servidor TFS** e insira a URL do servidor). Ao selecionar uma URL, você será conectado sem precisar reinserir suas credenciais.
+No menu principal, escolha **Team** > **Manage Connections** para abrir a janela **Team Explorer - Connect.** Escolha **Gerenciar conexões** > **Conectar a um projeto**. Na caixa de diálogo **Conectar-se a um Projeto**, selecione um projeto da lista (ou selecione **Adicionar Servidor TFS** e insira a URL do servidor). Ao selecionar uma URL, você será conectado sem precisar reinserir suas credenciais.
 
 Para obter mais informações, confira [Conectar-se a projetos no Team Explorer](connect-team-project.md).
 
@@ -83,13 +83,13 @@ Para obter mais informações, confira [Conectar-se a projetos no Team Explorer]
 
 Para adicionar outra conta ao Visual Studio:
 
-1. Escolha **Arquivo** > **Configurações da Conta**.
+1. Escolha**configurações da conta de** **arquivo** > .
 
 1. Em **Todas as Contas**, escolha **Adicionar uma conta**.
 
 1. Na página **Entrar em sua conta**, selecione a conta ou escolha **Usar outra conta**. Siga as solicitações para ingressar as credenciais da nova conta.
 
-(Opcional) Agora você pode acessar o **Gerenciador de Servidores** e ver os serviços do Azure associados à conta recém-adicionada. No **Gerenciador de Servidores**, clique com o botão direito do mouse no nó do **Azure** e escolha **Gerenciar e Filtrar Assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao Visual Studio com a segunda conta, você está conectado aos serviços e aos recursos dessa conta. O mesmo se aplica a **Projeto** > **Adicionar Serviço Conectado** e **Equipe** > **Conectar-se ao Team Foundation Server**.
+(Opcional) Agora você pode acessar o **Gerenciador de Servidores** e ver os serviços do Azure associados à conta recém-adicionada. No **Gerenciador de Servidores**, clique com o botão direito do mouse no nó do **Azure** e escolha **Gerenciar e Filtrar Assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao Visual Studio com a segunda conta, você está conectado aos serviços e aos recursos dessa conta. O mesmo vale para **o Project** > **Add Connected Service** e **o Team** > **Connect to Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Adicionar uma conta usando o fluxo de código do dispositivo
 
@@ -99,7 +99,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Abra a página [**Contas**](reference/accounts-environment-options-dialog-box.md) em **Ferramentas** > **Opções** > **Ambiente** e, em seguida, selecione **Habilitar fluxo de código do dispositivo ao adicionar ou reautenticar uma conta**. Escolha **OK** para fechar as páginas de opções.
 
-1. Escolha **Arquivo** > **Configurações da Conta** para abrir a página de gerenciamento de contas.
+1. Escolha**Configurações da conta de** **arquivo** > para abrir a página de gerenciamento da conta.
 
 1. Escolha **Adicionar uma conta** em **Todas as Contas**.
 

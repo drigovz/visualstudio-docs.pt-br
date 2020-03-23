@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565598"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
@@ -28,7 +28,7 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
 
 Para acessar a página **Referências**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Referências**.
 
-## <a name="uielement-list"></a>Lista de UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 As opções a seguir permitem selecionar ou remover referências e namespaces importados em seu projeto.
 
@@ -56,7 +56,7 @@ Escolha **Referência** para adicionar uma referência ao seu projeto usando a c
 
 Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
 
- **Removerr**
+ **Remover**
 
 Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
 
@@ -88,8 +88,8 @@ Selecione um namespace especificado pelo usuário na lista de namespaces, digite
 
 - Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
-- [Como adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Como: Adicionar ou Remover Espaços de Nomes Importados (Básico Visual)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Instrução Imports (Namespace de XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

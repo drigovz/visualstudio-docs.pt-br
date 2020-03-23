@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568471"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opções, Editor de texto,F#, CodeLens
 
-Use a página de opções **CodeLens** para modificar as configurações de CodeLens do editor de texto para F#. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **F#**  > **CodeLens**.
+Use a página de opções **CodeLens** para modificar as configurações de CodeLens do editor de texto para F#. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**e, em seguida, escolha Editor **de** > texto**F#** > **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 
@@ -38,7 +38,7 @@ Use a página de opções **CodeLens** para modificar as configurações de Code
 
    Você pode alterar o prefixo padrão usado nas anotações.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Localizar alterações de código e outro histórico com o CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

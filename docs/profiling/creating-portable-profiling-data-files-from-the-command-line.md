@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8caa1a4976da39b155edde36d538ca193bd1addd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779487"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Criar arquivos de dados de criação de perfil móveis por meio da linha de comando
@@ -22,7 +22,7 @@ Para facilitar o compartilhamento de dados de criação de perfil, use a ferrame
  Crie também um arquivo de dados de criação de perfil pré-analisado (.*vsps*) que é menor e mais rápido para ser carregado no IDE.
 
 > [!NOTE]
-> Verifique se os arquivos de símbolo (.*pdb*) estão disponíveis para **VSPerfReport**. Para saber mais, confira [Como especificar locais de arquivos de símbolo na linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
+> Verifique se os arquivos de símbolo (.*pdb*) estão disponíveis para **VSPerfReport**. Para obter mais informações, [consulte Como: Especificar locais de arquivo de símbolos da linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
 >
 > Para obter informações sobre o caminho para **VSReport**, confira [Especificar o caminho para as ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 >
@@ -40,6 +40,6 @@ Para facilitar o compartilhamento de dados de criação de perfil, use a ferrame
 
 - Em uma janela de prompt de comando, digite o seguinte comando:
 
-   \<Caminho><strong>VSPerfReport \<</strong>arquivo VSP > **/SummaryFile** [ **/Output:** \<nome do arquivo>]
+   \<Caminho><strong>VSPerfReport \<</strong>arquivo VSP > **/SummaryFile** [**/Output:**\<nome do arquivo>]
 
    Por padrão, o arquivo .*vsps* é nomeado com o nome base do arquivo .*vsp*. Você pode especificar um nome alternativo usando a opção **Saída**.

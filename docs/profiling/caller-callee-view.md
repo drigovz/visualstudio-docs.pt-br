@@ -17,13 +17,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779708"
 ---
-# <a name="callercallee-view"></a>{1&gt;Visualização Chamador/Receptor&lt;1}
+# <a name="callercallee-view"></a>exibição Chamador/Receptor
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades:
 
  **Função atual** é exibida na grade intermediária e mostra informações de criação de perfil para a função selecionada. Os valores incluem todas as chamadas para a função que foram coletadas na execução de criação de perfil.
@@ -36,11 +36,11 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
 
  Você pode selecionar uma função diferente para ser a Função Atual na parte do meio da exibição de Relatório clicando duas vezes em qualquer uma das funções listadas nas outras duas partes da exibição. A exibição de Relatório é atualizada automaticamente para refletir as alterações.
 
- Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para saber mais, confira [Como personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).
+ Você pode classificar os dados clicando em nomes de coluna. Colunas adicionais podem ser incluídas na exibição de Chamador/Computador Chamado. Para obter mais informações, consulte [Como: Personalizar colunas de exibição de relatórios](../profiling/how-to-customize-report-view-columns.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)
-- [Exibição do Chamador/Receptor – dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
-- [Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Exibição Chamador/Receptor – dados de amostragem de memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Exibição caller/Callee - dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
+- [Exibição de chamada/callee - dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Exibição caller/Callee - dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Exibição do Chamador/Receptor– dados de contenção](../profiling/caller-callee-view-contention-data.md)

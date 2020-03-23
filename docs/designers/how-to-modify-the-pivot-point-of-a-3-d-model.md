@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589936"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Como modificar o ponto dinâmico de um modelo 3D
@@ -42,7 +42,7 @@ Aqui está um modelo que tem um ponto dinâmico modificado:
 
 ![Um modelo de uma casa com um ponto dinâmico modificado](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor de modelos](../designers/model-editor.md)

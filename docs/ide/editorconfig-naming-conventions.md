@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588597"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
-As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_`. É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
+As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, você pode especificar que os membros públicos `_`devem ser capitalizados ou que os campos privados devem começar com . É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
 
 Para cada convenção de nomenclatura, é necessário especificar os símbolos aos quais ela se aplica, um estilo de nomenclatura e uma gravidade para impor a convenção, usando as propriedades descritas abaixo. A ordem das propriedades não é importante.
 
@@ -42,17 +42,17 @@ Para descrever o tipo de símbolos aos quais aplicar a regra de nomenclatura, es
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os símbolos)
-- Namespace
-- {1&gt;classe&lt;1}
-- {1&gt;struct&lt;1}
-- Interface
-- {1&gt;enum&lt;1}
-- {1&gt;propriedade&lt;1}
-- {1&gt;Método &lt;1}
-- campo
-- {1&gt;evento&lt;1}
-- {1&gt;delegado&lt;1}
-- Parâmetro
+- namespace
+- class
+- struct
+- interface
+- enum
+- propriedade
+- method
+- field
+- event
+- delegado
+- parâmetro
 - type_parameter
 - local
 - local_function
@@ -66,10 +66,10 @@ Para descrever os níveis de acessibilidade dos símbolos aos quais você deseja
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os níveis de acessibilidade)
-- {1&gt;públicos&lt;1}
+- público
 - interno ou amigo
-- particulares
-- protegidos
+- privado
+- protected
 - protected\_internal or protected_friend
 - privado\_protegido
 - local
@@ -155,7 +155,7 @@ Os valores permitidos para essa propriedade são:
 > [!NOTE]
 > É necessário especificar um estilo de uso de maiúsculas como parte do seu estilo de nomenclatura; caso contrário, o estilo de nomenclatura poderá ser ignorado.
 
-## <a name="severity"></a>Severidade
+## <a name="severity"></a>Severity
 
 Para descrever a gravidade de uma violação da sua regra de nomenclatura, especifique uma propriedade no seguinte formato:
 
@@ -163,13 +163,13 @@ Para descrever a gravidade de uma violação da sua regra de nomenclatura, espec
 
 A tabela a seguir mostra os valores de gravidade permitidos e o que eles significam:
 
-Severidade | Efeito
+Severity | Efeito
 ------------ | -------------
-nenhum | A regra foi completamente suprimida.
+none | A regra foi completamente suprimida.
 refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
-sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
-warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+suggestion | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
+aviso | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
+erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.
@@ -184,7 +184,7 @@ As convenções de nomenclatura devem ser ordenadas da mais específica para a m
 
 ::: moniker range=">=vs-2019"
 
-A partir do Visual Studio 2019 versão 16.2, não importa a ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig. Em vez disso, o Visual Studio ordena as regras de nomenclatura automaticamente de acordo com a definição das próprias regras. A [extensão de serviço de linguagem EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo EditorConfig e casos de relatório em que a ordenação de regra no arquivo é diferente do que o compilador usará em tempo de execução.
+A partir do Visual Studio 2019 versão 16.2, não importa a ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig. Em vez disso, o Visual Studio ordena as regras de nomenclatura automaticamente de acordo com a definição das próprias regras. A [extensão EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo do EditorConfig e relatar casos em que a ordem de regra no arquivo é diferente do que o compilador usará em tempo de execução.
 
 Se você estiver usando uma versão anterior do Visual Studio, as convenções de nomenclatura deverão ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
@@ -226,14 +226,14 @@ Agora vamos alterar a gravidade da violação para `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão sob a violação de nome, verá um rabisco verde e um aviso na Lista de Erros:
+Se você fechar e reabrir seu arquivo de código, em vez de ver a sugestão a violação de nome, você verá um squiggle verde e um aviso na Lista de erros:
 
 ![Aviso de regra de nomenclatura](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Convenções de linguagem](editorconfig-language-conventions.md)
 - [Convenções de formatação](editorconfig-formatting-conventions.md)
 - [Convenções de nomenclatura de Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
-- [Configurações de convenção de codificação do .NET para o EditorConfig](editorconfig-code-style-settings-reference.md)
+- [Configurações de convenção de codificação .NET para EditorConfig](editorconfig-code-style-settings-reference.md)

@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594715"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
@@ -42,7 +42,7 @@ Este artigo mostra como criar um modelo de item usando o **Assistente de Exporta
 
 1. Feche o Visual Studio e, em seguida, o reabra.
 
-1. Crie um novo projeto ou abra um projeto existente e, em seguida, escolha **Projeto** > **Adicionar Novo Item** ou pressione **Ctrl**+**Shift**+**A**.
+1. Crie um novo projeto ou abra um projeto existente e escolha **'Adicionar** > **novo item'** ou **pressione O**+**turno**+**A**.
 
    O modelo de item aparece na caixa de diálogo **Adicionar Novo Item**. Se você adicionou uma descrição no **Assistente para Exportar Modelo**, a descrição será exibida no lado direito da caixa de diálogo.
 
@@ -78,9 +78,9 @@ Você pode especificar que o modelo deve aparecer apenas para determinados subti
 
 1. Defina o valor de texto do elemento para um dos seguintes valores:
 
-    - Portal
+    - Windows
     - Office
-    - Banco de Dados
+    - Banco de dados
     - Web
 
 Por exemplo: `<ProjectSubType>Database</ProjectSubType>`.
@@ -119,7 +119,7 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 6. Salve o arquivo *.vstemplate* e feche-o.
 
-7. No **Windows Explorer**, selecione os arquivos que você deseja incluir no modelo. Clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** . Os arquivos selecionados são compactados em um arquivo *.zip*.
+7. No **Windows Explorer**, selecione os arquivos que você deseja incluir no modelo. Clique com o botão direito do mouse na seleção e escolha **Enviar para a** > **pasta Compactada (com zíper).** Os arquivos selecionados são compactados em um arquivo *.zip.*
 
 ::: moniker range="vs-2017"
 
@@ -133,8 +133,8 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criar modelos de projeto e itens](../ide/creating-project-and-item-templates.md)
 - [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)

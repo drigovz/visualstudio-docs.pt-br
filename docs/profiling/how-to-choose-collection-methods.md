@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776339"
 ---
 # <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
@@ -84,14 +84,14 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Para selecionar a coleta de dados de simultaneidade usando as propriedades da sessão de desempenho
 
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
+1. No **Performance Explorer**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
 
 2. Nas **Páginas de Propriedades**, clique em **Geral**.
 
 3. Clique em **Simultaneidade**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
-[Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)
+[Configure as sessões de](../profiling/configuring-performance-sessions.md)
+desempenho[Entenda os valores dos dados amostrais Propriedades](../profiling/understanding-sampling-data-values.md)
+[da sessão de desempenho](../profiling/performance-session-properties.md)

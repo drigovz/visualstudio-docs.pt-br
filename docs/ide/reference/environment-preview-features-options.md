@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595677"
 ---
-# <a name="options-dialog-box-environment--preview-features"></a>Caixa de diálogo opções: recursos de visualização de \> de ambiente
+# <a name="options-dialog-box-environment--preview-features"></a>Caixa de diálogo \> opções: Recursos de visualização de ambiente
 
 Use esta página da caixa de diálogo **Opções** para habilitar ou desabilitar versões prévias de recursos no Visual Studio. A página de opções de **Versões Prévias de Recursos** é alterada com frequência, já que versões prévias de recursos diferentes são disponibilizadas no Visual Studio.
 

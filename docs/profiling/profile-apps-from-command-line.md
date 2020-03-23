@@ -1,6 +1,6 @@
 ---
 title: Medir o desempenho da linha de comando
-description: Meça o desempenho da CPU e o uso da memória gerenciada em seu aplicativo na linha de comando.
+description: Meça o desempenho da CPU e o uso gerenciado de memória em seu aplicativo a partir da linha de comando.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558128"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
@@ -65,7 +65,7 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
 
 1. Acesse a saída de arquivo do comando anterior e abra-a no Visual Studio para examinar as informações coletadas.
 
-## <a name="config_file"></a> Arquivos de configuração do Agente
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Arquivos de configuração do Agente
 
 Os Agentes de Coleta são componentes intercambiáveis que coletam diferentes tipos de dados, dependendo do que você está tentando medir.
 

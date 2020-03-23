@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115001"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "76115001"
 
 Este guia de solução de problemas apresenta instruções passo a passo que resolvem a maioria dos problemas de instalação.
 
-## <a name="online-installations"></a>Instalações online
+## <a name="online-installations"></a>Instalações on-line
 
 As etapas a seguir são otimizadas para uma instalação online típica. Para um problema que afeta uma instalação offline, confira [Como solucionar problemas de uma instalação offline](#offline-installations).
 
@@ -62,7 +62,7 @@ O bootstrapper de instalação do Visual Studio é um executável leve mínimo q
 
 1. Fechar o instalador do Visual Studio.
 2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e clicando em **Baixar** para sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
+3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se você não encontrar esse aplicativo, você pode baixar o bootstrapper indo para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio e clicando em **Download** para a sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
 4. Tente instalar ou atualizar o Visual Studio. Se o Instalador continuar a falhar, vá para a próxima etapa.
 
 ::: moniker-end
@@ -71,7 +71,7 @@ O bootstrapper de instalação do Visual Studio é um executável leve mínimo q
 
 1. Fechar o instalador do Visual Studio.
 2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) e clicando em **Baixar** para sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
+3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se você não encontrar esse aplicativo, você pode baixar o bootstrapper indo para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio e clicando em **Download** para a sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
 4. Tente instalar ou atualizar o Visual Studio. Se o Instalador continuar a falhar, vá para a próxima etapa.
 
 ::: moniker-end
@@ -114,16 +114,16 @@ Se nenhuma das etapas anteriores ajudá-lo a instalar ou a atualizar o Visual St
 
 ## <a name="offline-installations"></a>Instalações offline
 
-Aqui está uma tabela de problemas conhecidos e algumas soluções alternativas que podem ajudá-lo quando você cria uma [instalação offline](create-an-offline-installation-of-visual-studio.md) e, em seguida, instala de um layout local.
+Aqui está uma tabela de problemas conhecidos e algumas soluçãos que podem ajudá-lo quando você criar uma [instalação offline](create-an-offline-installation-of-visual-studio.md) e, em seguida, instalar a partir de um layout local.
 
-| Problema       | Item                   | {1&gt;&lt;1} Solução |
+| Problema       | Item                   | Solução |
 | ----------- | ---------------------- | -------- |
-| Os usuários não têm acesso aos arquivos. | permissões (ACLs) | Lembre-se de ajustar as permissões (ACLs) para que elas concedam acesso de Leitura aos outros usuários *antes* de você compartilhar a instalação offline. |
+| Os usuários não têm acesso aos arquivos. | permissões (ACLs) | Certifique-se de ajustar as permissões (ACLs) para que elas concedam acesso ao Read a outros usuários *antes* de compartilhar a instalação off-line. |
 | Falha na instalação de novas cargas de trabalho, novos componentes ou idiomas.  | `--layout`  | Verifique se você tem acesso à Internet se estiver instalando com base em um layout parcial e selecione as cargas de trabalho, os componentes ou idiomas que não foram baixado anteriormente nesse layout parcial. |
 
-Para obter mais informações sobre como resolver problemas com uma [instalação de rede](create-a-network-installation-of-visual-studio.md), consulte [solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
+Para obter mais informações sobre como resolver problemas com uma instalação de [rede,](create-a-network-installation-of-visual-studio.md)consulte [Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
-## <a name="installation-logs"></a>Logs de instalação
+## <a name="installation-logs"></a>Registros de instalação
 
 Os logs de instalação são necessários para solucionar a maioria dos problemas de instalação. Quando você enviar um problema usando [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md) no Instalador do Visual Studio, esses logs serão incluídos automaticamente no relatório.
 
@@ -143,9 +143,9 @@ Para coletar os logs:
 
 Se as soluções listadas neste guia de solução de problemas não ajudarem a instalar ou atualizar o Visual Studio, use a nossa opção de suporte por [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para obter mais assistência.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Remover o Visual Studio](remove-visual-studio.md)
 * [Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)

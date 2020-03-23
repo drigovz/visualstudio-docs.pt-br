@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569433"
 ---
-# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo opções: ambiente \> geral
+# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo \> opções: Meio Ambiente Geral
 
 Use esta página para alterar temas de cores, configurações de barra de status e associações de extensões de arquivo, entre outras coisas, para o IDE (ambiente de desenvolvimento integrado). Você pode acessar a caixa de diálogo **Opções** abrindo o menu **Ferramentas**, escolhendo **Opções**, abrindo a pasta **Ambiente** e, em seguida, escolhendo a página **Geral**. Se essa página não aparecer na lista, marque a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
@@ -55,7 +55,7 @@ Esta opção habilita ou desabilita o reconhecimento de DPI (pontos por polegada
 
 ::: moniker-end
 
-**Ajustar autom. a experiência visual com base no desempenho do cliente**
+**Ajustar automaticamente a experiência visual com base no desempenho do cliente**
 
 Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se você a ajusta de maneira explícita. Esse ajuste pode alterar a exibição de cores de gradientes para cores simples ou pode restringir o uso de animações em menus ou janelas pop-up.
 
@@ -70,7 +70,7 @@ Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se
 
 Habilita a experiência visual completa do Visual Studio, incluindo animações e gradientes. Desmarque esta opção quando estiver usando conexões da Área de Trabalho Remota ou adaptadores de gráficos mais antigos, uma vez que esses recursos podem ter um desempenho ruim nesses casos. Essa opção fica disponível somente quando você desmarca a opção **Ajustar autom. a experiência visual com base no desempenho do cliente**.
 
-**Usar aceleração de elementos gráficos de hardware se disponível**
+**Usar aceleração de elementos gráficos de hardware, se disponível**
 
 Usa aceleração de elementos gráficos de hardware se estiver disponível, em vez de aceleração de software.
 
@@ -88,14 +88,14 @@ Personaliza o número de projetos e arquivos usados mais recentemente que aparec
 
 Exibe a barra de status. A barra de status fica localizada na parte inferior da janela do IDE e exibe informações sobre o progresso das operações em andamento.
 
-**Botão Fechar afeta apenas a janela da ferramenta ativa**
+**O botão Fechar afeta apenas a janela da ferramenta ativa**
 
 Especifica que, quando o botão **Fechar** é acionado, somente a janela da ferramenta que está em foco é fechada, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção é selecionada.
 
-**Botão Ocultar Automaticamente afeta apenas a janela da ferramenta ativa**
+**O botão Ocultar Automaticamente afeta apenas a janela da ferramenta ativa**
 
 Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela da ferramenta que está em foco é ocultada automaticamente, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

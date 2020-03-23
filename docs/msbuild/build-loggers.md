@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634520"
 ---
 # <a name="build-loggers"></a>Agentes de build
@@ -26,7 +26,7 @@ Agentes fornecem uma maneira de personalizar a saída do build e exibir mensagen
 Há duas abordagens que você pode usar ao implementar um agente:
 
 - Implemente a interface <xref:Microsoft.Build.Framework.ILogger> diretamente.
-- Derive a classe da classe auxiliar, <xref:Microsoft.Build.Utilities.Logger>, definida no assembly *Microsoft.Build.Utilities.dll*. O <xref:Microsoft.Build.Utilities.Logger> implementa o <xref:Microsoft.Build.Framework.ILogger> e fornece implementações padrão de alguns membros do <xref:Microsoft.Build.Framework.ILogger>.
+- Obtenha sua classe da classe <xref:Microsoft.Build.Utilities.Logger>helper, que é definida no conjunto *Microsoft.Build.Utilities.dll.* O <xref:Microsoft.Build.Utilities.Logger> implementa o <xref:Microsoft.Build.Framework.ILogger> e fornece implementações padrão de alguns membros do <xref:Microsoft.Build.Framework.ILogger>.
 
   Este tópico explicará como escrever um agente simples que deriva de <xref:Microsoft.Build.Utilities.Logger> e exibe mensagens no console em resposta a determinados eventos de build.
 
@@ -44,15 +44,15 @@ Agora que o agente está registrado para eventos específicos, ele precisa lidar
 
 ## <a name="respond-to-logger-verbosity-values"></a>Responder a valores de detalhes do agente
 
-Em alguns casos, talvez você queira registrar somente as informações de um evento se a opção MSBuild.exe **–verbosity** contiver um determinado valor. Neste exemplo, o manipulador de eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> registrará no log apenas uma mensagem se a propriedade <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, que é definida pela opção **–verbosity**, for igual a <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
+Em alguns casos, você pode querer apenas registrar informações de um evento se o switch MSBuild.exe **-verbosity** contiver um determinado valor. Neste exemplo, <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> o manipulador de eventos só <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> registra uma mensagem se a propriedade, definida <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`pelo switch **-verbosity,** for igual a .
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>Especificar um agente
 
-Depois que o agente é compilado em um assembly, você precisa dizer ao MSBuild para usar esse agente durante as compilações. Isso é feito usando a opção **–logger** com o *MSBuild.exe*. Para obter mais informações sobre as opções disponíveis para o *MSBuild.exe*, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
+Uma vez que o logger é compilado em um conjunto, você precisa dizer ao MSBuild para usar esse logger durante as compilações. Isso é feito usando o interruptor **-logger** com *mSBuild.exe*. Para obter mais informações sobre as opções disponíveis para o *MSBuild.exe*, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
-A linha de comando a seguir cria o projeto *MyProject.csproj* e usa a classe de agente implementada em *SimpleLogger.dll*. A opção **-nologomarca** oculta a faixa e a mensagem de direitos autorais e a opção **-noconsolelogger** desabilita o agente de log do MSBuild padrão.
+A linha de comando a seguir cria o projeto *MyProject.csproj* e usa a classe de agente implementada em *SimpleLogger.dll*. O **interruptor -nologo** oculta o banner e a mensagem de direitos autorais e o switch **-noconsolelogger** desativa o logger padrão do console MSBuild.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
@@ -66,7 +66,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>Exemplo
 
-### <a name="description"></a>DESCRIÇÃO
+### <a name="description"></a>Descrição
 
 O exemplo a seguir contém o código completo do agente.
 
@@ -76,7 +76,7 @@ O exemplo a seguir contém o código completo do agente.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="description"></a>DESCRIÇÃO
+### <a name="description"></a>Descrição
 
 O exemplo a seguir mostra como implementar um agente que grava o log de um arquivo em vez de exibi-lo na janela do console.
 

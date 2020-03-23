@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591327"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar e personalizar atalhos de teclado no Visual Studio
@@ -43,7 +43,7 @@ Se um atalho for atribuído a um comando no contexto *Global* e em mais nenhum o
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificar um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
 2. Expanda **Ambiente** e escolha **Teclado**.
 
@@ -63,7 +63,7 @@ Se um atalho for atribuído a um comando no contexto *Global* e em mais nenhum o
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizar um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
 2. Expanda **Ambiente** e escolha **Teclado**.
 
@@ -105,11 +105,11 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Para exportar apenas atalhos de teclado
 
-1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
+1. Na barra de menus, escolha**Configurações de importação e exportação de** **ferramentas** > .
 
 2. Escolha **Exportar configurações de ambiente selecionadas** e escolha **Avançar**.
 
-3. Em **Quais configurações você deseja exportar?** , desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
+3. Em **Quais configurações você deseja exportar?**, desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
 
 4. Marque a caixa de seleção **Teclado** e escolha **Avançar**.
 
@@ -119,7 +119,7 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 ::: moniker range="vs-2017"
 
-Por padrão, seus atalhos são salvos em um arquivo na pasta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. O nome do arquivo reflete a data de quando as configurações foram exportadas, e a extensão é *.vssettings*.
+Por padrão, seus atalhos são salvos em um arquivo na pasta *%USERPROFILE%\Documents\Visual Studio 2017\Configurações.* O nome do arquivo reflete a data de quando as configurações foram exportadas, e a extensão é *.vssettings*.
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ Por padrão, os atalhos são salvos em um arquivo na pasta *%USERPROFILE%\Docume
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Para importar apenas atalhos de teclado
 
-1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
+1. Na barra de menus, escolha**Configurações de importação e exportação de** **ferramentas** > .
 
 2. Escolha o botão de opção **Importar configurações de ambiente selecionadas** e **Avançar**.
 
@@ -139,14 +139,14 @@ Por padrão, os atalhos são salvos em um arquivo na pasta *%USERPROFILE%\Docume
 
 4. Em **Minhas Configurações**, escolha o arquivo que contém os atalhos que deseja importar, ou escolha o botão **Procurar** para localizar o arquivo correto.
 
-5. Escolha **Avançar**.
+5. Escolha **a seguir**.
 
-6. Em **Quais configurações você deseja importar?** , desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
+6. Em **Quais configurações você deseja importar?**, desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
 
 7. Marque a caixa de seleção **Teclado** e escolha **Concluir**.
 
    ![Importar apenas atalhos de teclado personalizados](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

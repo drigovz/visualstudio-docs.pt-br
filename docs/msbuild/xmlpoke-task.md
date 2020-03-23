@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588376"
 ---
 # <a name="xmlpoke-task"></a>Tarefa XmlPoke
 
 Define os valores conforme especificado por uma consulta de XPath em um arquivo XML.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `XmlPoke`.
 
@@ -79,7 +79,7 @@ Neste exemplo, se você quiser modificar `/Package/mp:PhoneIdentity/PhonePublish
 
 `dn` aqui é usado como um prefixo de namespace artificial para o namespace padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

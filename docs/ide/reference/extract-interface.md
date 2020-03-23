@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595664"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
@@ -27,9 +27,9 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O que:** Permite criar uma interface usando membros existentes de uma classe, estrutura ou interface.
+**O que é isso?** Permite criar uma interface usando membros existentes de uma classe, estrutura ou interface.
 
-**Quando:** Você tem membros em uma classe, struct ou interface que podem ser herdados por outras classes, estruturas ou interfaces.
+**Quando:** Você tem membros em uma classe, estrutura ou interface que podem ser herdadas por outras classes, estruturas ou interfaces.
 
 **Por quê:** as interfaces são ótimos constructos para designs orientados a objetos. Imagine ter classes para vários animais (gato, cachorro, pássaro) que podem ter métodos comuns, como comer, beber, dormir. Usar uma interface como IAnimal permitiria que cachorro, gato e pássaro tivessem uma "assinatura" comum para esses métodos.
 
@@ -49,7 +49,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (O atalho de teclado pode ser diferente de acordo com o perfil selecionado.)
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Extrair Interface**.
       - Clique com o botão direito do mouse no nome da classe, selecione o menu **Ações Rápidas e Refatorações** e selecione **Extrair Interface** no pop-up da janela Visualização.
@@ -64,7 +64,7 @@ Esta refatoração aplica-se a:
    | **Nome do novo arquivo** | O nome do arquivo gerado que conterá a interface. Assim como ocorre com o nome da interface, esse nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. Selecione também a opção para **Adicionar ao arquivo atual**. |
    | **Selecionar membros públicos para formar a interface** | Os itens a serem extraídos para a interface. Você pode selecionar quantos desejar. |
 
-4. Clique em **OK**.
+4. Escolha **OK**.
 
    A interface foi criada no arquivo com o nome especificado. Além disso, a classe que você selecionou implementa essa interface.
 
@@ -80,7 +80,7 @@ Esta refatoração aplica-se a:
 
       ![Interface resultante – Visual Basic](media/extractinterface-interface-vb.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Dicas para desenvolvedores de .NET](../csharp-developer-productivity.md)
+- [Dicas para desenvolvedores do .NET](../csharp-developer-productivity.md)

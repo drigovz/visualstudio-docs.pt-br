@@ -7,10 +7,10 @@ ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
 ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75851395"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
@@ -19,9 +19,9 @@ Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partn
 [Comparar opções de assinatura de nuvem](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Novos clientes são incentivados a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) ir para explorar diferentes opções para comprar o Visual Studio.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 Primeiro você precisa configurar o locatário do cliente no Partner Center e criar uma assinatura do Azure para esse locatário.
 
 [Saiba mais](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -68,10 +68,10 @@ Para exibir os preços do Visual Studio para parceiros CSP, faça logon no [Part
 
 Aqui está a maneira de interpretar os dados dessa planilha:
 
-| Categoria do medidor    |   Name                 |  Unidades                                |           O que é isso                          |
+| Categoria de medidor    |   Nome                 |  Unidades                                |           O que é isso                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| {1&gt;Visual Studio&lt;1}     | Enterprise             |  Assinatura                         | Assinatura mensal do Visual Studio Enterprise   |
-| {1&gt;Visual Studio&lt;1}     | Professional           |  Assinatura                         | Assinatura mensal do Visual Studio Professional |
+| Visual Studio     | Enterprise             |  Subscription                         | Assinatura mensal do Visual Studio Enterprise   |
+| Visual Studio     | Professional           |  Subscription                         | Assinatura mensal do Visual Studio Professional |
 
 Oferecemos um desconto de 5% para a compra da sexta unidade (para um determinado cliente) a cada mês da assinatura do Visual Studio. É por isso que aparecem duas linhas para cada opção de assinatura. Uma linha mostra um "Valor Mínimo" igual a 0, que você deve interpretar como o preço base da primeira à quinta unidade. A outra linha mostra um "Valor Mínimo" igual a 5, que é o preço com 5% de desconto aplicado à sexta unidade e às próximas.
 
@@ -103,5 +103,5 @@ Esses descontos são refletidos nos dados de preços dentro do [Partner Center](
 R: Não, os preços para assinaturas do Visual Studio são fixos. O mesmo preço é oferecido para novas assinaturas e para a continuação de assinaturas.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: Há opções de preços de Desenvolvimento/Teste do Azure para os CSPs?
-{1&gt;R&lt;1}: Isso não é possível no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
+ R: Não no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
 

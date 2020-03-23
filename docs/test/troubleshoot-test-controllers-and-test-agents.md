@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565949"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas em controladores e agentes de teste em testes de carga
@@ -41,7 +41,7 @@ Você pode controlar o nível de registro em log em um computador do controlador
 
 1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2. Abra o arquivo *QTController. exe. config*. Esse arquivo está localizado no diretório de instalação do controlador.
+2. Abra o arquivo *QTController.exe.config*. Este arquivo está localizado no diretório de instalação do controlador.
 
 3. Edite a entrada da opção `EqtTraceLevel` na seção de diagnóstico do sistema do arquivo. Seu código deve se parecer com este:
 
@@ -86,7 +86,7 @@ Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao proc
 
 Quando tentar configurar um agente de teste, você pode receber o seguinte erro:
 
-**Erro 8110. Não é possível conectar-se ao computador do controlador especificado ou acessar o objeto do controlador.**
+**Erro 8110. Não é possível conectar-se ao computador controlador especificado ou acessar o objeto controlador.**
 
 Esse erro pode ser causado pela instalação do controlador de teste em um computador que tenha mais de um adaptador de rede.
 
@@ -113,7 +113,7 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
 1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2. Abra o arquivo *QTController. exe. config*. Este arquivo está localizado em *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Abra o arquivo *QTController.exe.config*. Este arquivo está localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3. Adicione uma entrada para a propriedade `BindTo` nas configurações do aplicativo. Especifique o endereço IP do adaptador de rede ao qual deseja associar o controlador. Seu código deve se parecer com este:
 
@@ -139,6 +139,6 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
 Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. A propriedade `BindTo` deve ser definida para cada processo em execução em um computador que tem mais de um adaptador de rede. O procedimento para definir a propriedade `BindTo` é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir os níveis de log para o serviço e o processo do agente de teste, use os arquivos de configuração listados em [Definir o nível de log em um computador do controlador de teste](#set-the-logging-level-on-a-test-controller-computer).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Controladores e agentes de teste](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Controladores de teste e agentes de teste](../test/configure-test-agents-and-controllers-for-load-tests.md)

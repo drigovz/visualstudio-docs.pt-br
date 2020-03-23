@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595716"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
@@ -44,17 +44,17 @@ Especifica quais configurações de plataforma exibir ou modificar. As opções 
 
 ## <a name="start-action"></a>Iniciar ação
 
-**Iniciar ação** indica o item a ser iniciado quando o aplicativo for depurado: o projeto, um programa personalizado, uma URL ou nada. Por padrão, essa opção é definida como **Iniciar projeto**. A configuração **Iniciar ação** na página **Depurar** determina o valor da propriedade `StartAction`.
+**A ação start** indica o item a ser inicializado quando o aplicativo é depurado: o projeto, um programa personalizado, uma URL ou nada. Por padrão, essa opção é definida como **Iniciar projeto**. A configuração **Iniciar ação** na página **Depurar** determina o valor da propriedade `StartAction`.
 
 **Iniciar projeto**
 
-Escolha esta opção para especificar que o executável (para projetos de aplicativos do Windows e aplicativos de console) deve ser iniciado quando o aplicativo for depurado. Essa opção é habilitada por padrão.
+Escolha esta opção para especificar que o executável (para projetos de aplicativos do Windows e aplicativos de console) deve ser iniciado quando o aplicativo for depurado. Esta opção é selecionada por padrão.
 
 **Iniciar programa externo**
 
 Escolha esta opção para especificar que um programa específico deve ser iniciado quando o aplicativo for depurado.
 
-**Iniciar Navegador com URL**
+**Iniciar navegador com URL**
 
 Escolha esta opção para especificar que uma URL específica deve ser acessada quando o aplicativo for depurado.
 
@@ -66,7 +66,7 @@ Nesta caixa de texto, digite os argumentos de linha de comando a serem usados pa
 
 **Diretório de trabalho**
 
-Nesta caixa de texto, insira o diretório do qual o projeto será inicializado. Ou clique no botão Procurar ( **...** ) para escolher um diretório.
+Nesta caixa de texto, insira o diretório do qual o projeto será inicializado. Ou clique no botão Procurar (**...**) para escolher um diretório.
 
 **Usar computador remoto**
 
@@ -76,16 +76,16 @@ Para depurar o aplicativo de um computador remoto, marque esta caixa de seleçã
 
 **Habilitar depuração de código nativo**
 
-Esta opção especifica se a depuração de código nativo tem suporte. Marque esta caixa de seleção se você estiver fazendo chamadas para objetos COM ou se iniciar um programa personalizado escrito em código nativo que chama o seu projeto e você precisar depurar o código nativo. Desmarque esta caixa de seleção para desabilitar a depuração de código não gerenciado. Por padrão, a caixa de seleção fica desmarcada.
+Esta opção especifica se a depuração de código nativo tem suporte. Marque esta caixa de seleção se você estiver fazendo chamadas para objetos COM ou se iniciar um programa personalizado escrito em código nativo que chama o seu projeto e você precisar depurar o código nativo. Desmarque esta caixa de seleção para desabilitar a depuração de código não gerenciado. Essa caixa de seleção é desmarcada por padrão.
 
 **Habilitar depuração do SQL Server**
 
-Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depuração de procedimentos SQL de seu aplicativo do Visual Basic. Por padrão, a caixa de seleção fica desmarcada.
+Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depuração de procedimentos SQL de seu aplicativo do Visual Basic. Essa caixa de seleção é desmarcada por padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
-- [Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Definições do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+- [Primeiro olhe para o depurador](../../debugger/debugger-feature-tour.md)
+- [Configurações do projeto para configurações de depuração C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Configurações do projeto para uma configuração de depuração básica visual](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Como: Criar e Editar configurações](../../ide/how-to-create-and-edit-configurations.md)

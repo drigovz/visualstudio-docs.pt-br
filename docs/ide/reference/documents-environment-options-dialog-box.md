@@ -32,13 +32,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570057"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo opções: documentos de \> de ambiente
+# <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo \> opções: Documentos do ambiente
 
 Use esta página da caixa de diálogo **Opções** para controlar a exibição de documentos no IDE (ambiente de desenvolvimento integrado) e gerenciar alterações externas em documentos e arquivos. Para acessar essa caixa de diálogo, clique em **Opções**, no menu **Ferramentas** e selecione **Ambiente** > **Documentos**.
 
@@ -71,7 +71,7 @@ Selecione esta opção para exibir uma caixa de mensagem quando o comando **Desf
 Selecione esta opção para exibir o nó **Arquivos Diversos** no **Gerenciador de Soluções**. Arquivos diversos são arquivos que não estão associadas um projeto ou solução, mas podem aparecer no **Gerenciador de Soluções** por questões de conveniência.
 
 > [!NOTE]
-> Selecione esta opção para habilitar o comando **Exibir no Navegador** no menu **Arquivo** para documentos da Web não incluídos no aplicativo Web ativo.
+> Selecione esta opção para ativar o comando **Exibir no navegador** no menu **Arquivo** para documentos da Web não incluídos no aplicativo web ativo.
 
 **Itens salvos no projeto Arquivos diversos**
 
@@ -83,7 +83,7 @@ Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos a
 
 Selecione esta opção para fazer com que arquivos que contêm informações incompatíveis com a página de código selecionada sejam salvos como Unicode por padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Arquivos diversos](../../ide/reference/miscellaneous-files.md)
+- [Arquivos Diversos](../../ide/reference/miscellaneous-files.md)
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)

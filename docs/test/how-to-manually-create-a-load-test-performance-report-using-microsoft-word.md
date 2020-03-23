@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113434"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
@@ -30,7 +30,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 ## <a name="copy-summary-view-data"></a>Copiar dados da exibição resumida
 
-1. Se a exibição de resumo não estiver sendo mostrada nos **Resultados do Teste de Carga**, clique em **Resumo** na barra de ferramentas.
+1. Nos resultados do **teste de carga,** se a exibição de resumo não for exibida no momento, clique em **Resumo** na barra de ferramentas.
 
 2. Na exibição resumida, clique com o botão direito do mouse e selecione **Selecionar Tudo**.
 
@@ -44,7 +44,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 1. Se a exibição de grafos não estiver sendo mostrada nos **Resultados do Teste de Carga**, escolha **Grafos** na barra de ferramentas.
 
-2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, [consulte Como: Ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
@@ -55,7 +55,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
     > [!WARNING]
     > Não é possível copiar o gráfico de uma área de trabalho remota e colá-lo em outro computador, pois somente as informações da tabela associada ao gráfico serão copiadas, e não a imagem do gráfico. A imagem do gráfico é armazenada no diretório temporário do computador do qual ela foi copiada e o segundo computador não pode desreferenciar esse diretório.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)
 - [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

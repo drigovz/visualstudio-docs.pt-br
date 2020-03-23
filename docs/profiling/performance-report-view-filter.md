@@ -13,14 +13,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778448"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de exibição de relatório de desempenho
-A janela **Filtro de Exibição de Relatório do Criador de Perfil** está localizada na parte superior da janela **Relatório de Desempenho**. Se não estiver visível, clique no botão **Mostrar Filtro**.
+A janela **'Exibir relatório' do perfil** está localizada na parte superior da janela Relatório de **desempenho.** Se não estiver visível, clique no botão **Mostrar Filtro**.
 
  Você pode modificar cada cláusula de filtro para refinar os resultados. As seguintes colunas estão disponíveis no construtor de filtro.
 
@@ -29,14 +29,14 @@ A janela **Filtro de Exibição de Relatório do Criador de Perfil** está local
 |E/Ou|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|
 |Campo|Selecione o campo a ser usado na cláusula de filtro da lista de campos de dados que estão disponíveis no arquivo de relatório atual.|
 |Operador|Escolha o operador que especifica a relação entre o campo e o valor desejado.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|
-|Value|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|
+|Valor|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|
 
  Você pode adicionar cláusulas ao filtro até achar que ele fornecem os melhores resultados. Clique em **Executar Filtro** para aplicar o filtro ao arquivo de dados.
 
  Na exibição de relatório **Marcas**, você pode gerar cláusulas de filtro para limitar os dados nas exibições de relatório para os dados coletados entre duas marcas. Selecione as marcas nas quais você deseja começar e terminar o relatório de dados e clique com botão direito e selecione **Adicionar Filtro nas Marcas** ou **Adicionar Filtro em Carimbos de Data/Hora**. Ambos os filtros limitam os dados no arquivo de dados para o mesmo período; **Adicionar Filtro nas Marcas** pode ser aplicado a outros arquivos .vsp.
 
- Para salvar o filtro, clique em **Exportar filtro** na barra de ferramentas **Relatório de Desempenho** e, em seguida, especifique um local e um nome para o arquivo .*vspf*. Para carregar um filtro salvo anteriormente, clique em **Importar Filtro** e localize o arquivo de filtro salvo. Arquivos de filtro também podem ser usados para filtrar arquivos de dados em computadores que têm as ferramentas de criação de perfil autônomas instaladas. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).
+ Para salvar o filtro, clique em **Exportar filtro** na barra de ferramentas Relatório de **desempenho** e, em seguida, especifique um nome de local e arquivo para . *arquivo vspf.* Para carregar um filtro salvo anteriormente, clique em **Importar Filtro** e localize o arquivo de filtro salvo. Arquivos de filtro também podem ser usados para filtrar arquivos de dados em computadores que têm as ferramentas de criação de perfil autônomas instaladas. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

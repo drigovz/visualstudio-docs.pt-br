@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568679"
 ---
 # <a name="list-registers-command"></a>Comando Listar Registros
@@ -32,14 +32,14 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /Display [{`register`&#124;`registerGroup`}...]
 
-Exibe os valores do `register` ou `registerGroup` especificado. Se nenhum `register` ou `registerGroup` for especificado, a lista padrão de registros será exibida. Se nenhuma opção for especificada, o comportamento será o mesmo. Por exemplo:
+Exibe os valores do `register` ou `registerGroup` especificado. Se nenhum `register` ou `registerGroup` for especificado, a lista padrão de registros será exibida. Se nenhuma opção for especificada, o comportamento será o mesmo. Por exemplo: 
 
 `Debug.ListRegisters /Display eax`
 
-equivale a
+é equivalente a
 
 `Debug.ListRegisters eax`
 
@@ -65,7 +65,7 @@ Este exemplo usa o alias `Debug.ListRegisters``r` para exibir os valores do regi
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Noções básicas sobre depuração: janela Registros](../../debugger/debugging-basics-registers-window.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568705"
 ---
 # <a name="list-memory-command"></a>Comando Listar Memória
@@ -31,12 +31,12 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `expression`
 
 Opcional. O endereço de memória do qual começar a exibir a memória.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /ANSI&#124;Unicode
 
 Opcional. Exibe a memória como caracteres correspondentes aos bytes de memória, ANSI ou Unicode.
@@ -70,13 +70,13 @@ Veja uma lista dos aliases disponíveis para o comando **Debug.ListMemory**:
 
 |Alias|Comando e opções|
 |-----------| - |
-|**d**|Debug.ListMemory|
+|**D**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**Db**|Debug.ListMemory /Format:OneByte|
+|**Dc**|Debug.ListMemory /Format:FourBytes /Ansi|
 |**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**Df**|Debug.ListMemory /Format:Float|
+|**Dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>Exemplo
@@ -85,7 +85,7 @@ Veja uma lista dos aliases disponíveis para o comando **Debug.ListMemory**:
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
 - [Comando List Threads](../../ide/reference/list-threads-command.md)

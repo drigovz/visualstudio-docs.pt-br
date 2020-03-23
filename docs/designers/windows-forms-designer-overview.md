@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589884"
 ---
 # <a name="windows-forms-designer-overview"></a>Visão geral do Designer de Formulários do Windows
@@ -33,12 +33,12 @@ Usando o designer, é possível:
 - Selecionar vários controles usando as teclas **Shift** ou **Ctrl** enquanto clica. Ao usar **Shift**+clique, o primeiro controle selecionado é o controle dominante ao alinhar ou manipular o tamanho. Ao usar **Ctrl**+clique, o último controle selecionado é dominante, portanto, o controle dominante é alterado com cada novo controle adicionado. Como alternativa, você pode selecionar vários controles arrastando um retângulo de seleção ao redor dos controles que deseja selecionar.
 
 > [!NOTE]
-> Use o Designer de Formulários do Windows, e não o Editor de Recursos, para fazer alterações no arquivo de recurso de um formulário ( *.resx*). Se você editar um arquivo .resx baseado em formulário, verá um aviso de que poderá perder as alterações feitas no Editor de Recursos. Isso ocorre porque o Designer de Formulários do Windows gera o arquivo .resx.
+> Use o Designer de Formulários do Windows, e não o Editor de Recursos, para fazer alterações no arquivo de recurso de um formulário (*.resx*). Se você editar um arquivo .resx baseado em formulário, verá um aviso de que poderá perder as alterações feitas no Editor de Recursos. Isso ocorre porque o Designer de Formulários do Windows gera o arquivo .resx.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Visão geral do Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
-- [Controles do Windows Forms](/dotnet/framework/winforms/controls/)
+- [Visão geral dos formulários do Windows](/dotnet/framework/winforms/windows-forms-overview)
+- [Controles de Formulários do Windows](/dotnet/framework/winforms/controls/)
 - [Entrada do usuário no Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Associação de dados no Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Aprimorar aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/)

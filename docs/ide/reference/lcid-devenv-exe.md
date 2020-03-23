@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557939"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -35,15 +35,15 @@ Define o idioma padrão usado para texto, moeda e outros valores dentro do IDE.
 devenv {/LCID|/L} LocaleID
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-- *LocaleID*
+- *Localeid*
 
-  Necessário. O identificador de localidade (LCID) do idioma que você especificar.
+  Obrigatórios. O identificador de localidade (LCID) do idioma que você especificar.
 
 ## <a name="remarks"></a>Comentários
 
-Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é mantida entre as sessões, e o IDE mostra essa alteração na caixa **Ferramentas** > **Opções** > **Ambiente** > **Configurações internacionais** > **Idioma**.
+Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é persistida entre as sessões, e o IDE mostra essa alteração na caixa de**idiomas** de**configurações** > internacionais**do ambiente** > de **ferramentas.** > **Options** > 
 
 Se o idioma especificado não estiver disponível em seu sistema, a opção `/LCID` será ignorada.
 
@@ -51,10 +51,10 @@ A tabela a seguir lista os LCIDs dos idiomas para os quais o Visual Studio ofere
 
 |Linguagem|LCID|
 |--------------|----------|
-|Chinês (simplificado)|2052|
-|Chinês (tradicional)|1028|
+|Chinês (Simplificado)|2052|
+|Chinês (Tradicional)|1028|
 |Tcheco|1029|
-|Inglês|1033|
+|Inglês|1046|
 |Francês|1036|
 |Alemão|1031|
 |Italiano|1040|
@@ -74,7 +74,7 @@ Este exemplo carrega o IDE com cadeias de caracteres de recursos em inglês.
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Caixa de diálogo Configurações Internacionais, Ambiente, Opções](../../ide/reference/international-settings-environment-options-dialog-box.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585685"
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
@@ -29,11 +29,11 @@ Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quad
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `filename`\
 Opcional. O nome de arquivo e o caminho do item a ser adicionado à solução.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /t: `templatename`\
 Opcional. Especifica o tipo de arquivo a ser criado. Se nenhum nome de modelo for fornecido, um arquivo de texto será criado por padrão.
 
@@ -63,7 +63,7 @@ Esse exemplo adiciona um novo item de solução, MyHTMLpg, à solução atual.
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

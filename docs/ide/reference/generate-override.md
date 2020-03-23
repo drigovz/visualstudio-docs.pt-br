@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569238"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Gerar uma substituição no Visual Studio
@@ -56,6 +56,6 @@ Esta geração de código aplica-se a:
 
        ![Resultado da substituição em VB](media/override-result-vb.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Geração de código](../code-generation-in-visual-studio.md)
+- [Geração de Código](../code-generation-in-visual-studio.md)

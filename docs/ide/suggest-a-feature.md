@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853510"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
@@ -35,7 +35,7 @@ O site do UserVoice tornou-se somente leitura. Você poderá ler o conteúdo já
 
 Migramos um conjunto inicial de ideias do fórum UserVoice para a Comunidade de Desenvolvedores. A migração foi feita com base no impacto na comunidade dos comentários e nossas prioridades de roteiro do produto. Se você esperava ver aqui uma sugestão que talvez não tenhamos percebido, fique à vontade para adicioná-la à Comunidade de Desenvolvedores.
 
-## <a name="votes"></a>Votos
+## <a name="votes"></a>Votes
 
 O sistema de votação na Comunidade de Desenvolvedores é diferente do UserVoice. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.
 
@@ -127,6 +127,6 @@ Estamos totalmente empenhados em ouvir suas sugestões de funcionalidades e toma
 
 O tempo de resposta depende do status em que estão seus comentários. Examine a explicação dos status neste documento para entender os tempos de resposta.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Introducing 'Suggest a Feature' in Developer Community (Apresentação de 'Sugerir uma Funcionalidade' na Comunidade de Desenvolvedores) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594767"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
@@ -71,34 +71,34 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     > [!WARNING]
     > Se você habilitar a coleta de dados do IntelliTrace, a coleta de dados de cobertura de código não funcionará.
 
-5. Escolha a guia **geral** . Selecione **eventos do IntelliTrace somente** para registrar eventos de diagnóstico significativos que têm impacto mínimo sobre o desempenho durante o teste.
+5. Escolha a guia **Geral.** Selecione **os eventos do IntelliTrace apenas** para registrar eventos diagnósticos significativos que tenham impacto mínimo no desempenho ao testar.
 
-     - ou -
+     -ou-
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
 6. Para coletar dados do aplicativo ASP.NET em execução nos Serviços de Informações da Internet, selecione **Coletar dados de aplicativos ASP.NET em execução nos Serviços de Informações da Internet**. Configure o agente de teste na função servidor Web. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
+7. Escolha a guia **Módulos.** Selecione **coletar dados de todos os módulos, exceto os seguintes** e use **Adicionar** à lista de módulos e **Remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     - ou -
+     -ou-
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
     > [!NOTE]
     > Se possível, selecione os processos específicos que deseja monitorar. Isso é recomendado para ter o desempenho ideal.
 
-8. Escolha a guia **processos** . Selecione **coletar dados de todos os processos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de processos e **remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
+8. Escolha a guia **Processos.** Selecione **Coletar dados de todos os processos, exceto os seguintes** e use **Adicionar** à lista de processos e **Remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     - ou -
+     -ou-
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 
-9. Adicional Escolha a guia **eventos do IntelliTrace** . marque ou desmarque cada categoria de evento do IntelliTrace que você deseja incluir ou excluir ao coletar eventos de diagnóstico.
+9. (Opcional) Escolha a guia **Eventos IntelliTrace.** Selecione ou limpe cada categoria de evento do IntelliTrace que você deseja incluir ou excluir quando coletar eventos de diagnóstico.
 
 10. (Opcional) Expanda cada categoria de evento do IntelliTrace e marque ou desmarque cada evento específico que você deseja incluir ou excluir nos eventos do IntelliTrace.
 
-11. Adicional Escolha a guia **avançado** . Em seguida, escolha a seta ao lado de **quantidade máxima de espaço em disco para gravação** e selecione o tamanho máximo que você deseja habilitar para o arquivo do IntelliTrace usar.
+11. (Opcional) Escolha a guia **Avançado.** Em seguida, escolha a seta ao lado **da quantidade máxima de espaço em disco para gravação** e selecione o tamanho máximo que deseja habilitar para o arquivo IntelliTrace usar.
 
     > [!NOTE]
     > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise.
@@ -108,7 +108,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     > [!NOTE]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio ou **Redefinir como padrão** para o Microsoft Test Manager.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

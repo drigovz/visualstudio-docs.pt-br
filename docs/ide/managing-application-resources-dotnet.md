@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593688"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
@@ -31,17 +31,17 @@ Arquivos de recurso são arquivos que fazem parte de um aplicativo, mas não sã
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Gerenciando recursos de aplicativo (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources).
 
-Para obter mais informações sobre recursos em aplicativos de área de trabalho do .NET, confira [Recursos em aplicativos de área de trabalho](/dotnet/framework/resources/index).
+Para obter mais informações sobre recursos em aplicativos de desktop .NET, consulte [Recursos em aplicativos de desktop](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Trabalhar com recursos
 
 Em um projeto de código gerenciado, abra a janela de propriedades do projeto. Você pode abrir a janela Propriedades das seguintes maneiras:
 
-- Clicando com o botão direito do mouse no nó do projeto, no **Gerenciador de Soluções**, e selecionar **Propriedades**
+- Clicar com o botão direito do mouse no nó do projeto no **Solution Explorer** e selecionar **Propriedades**
 - Digitando **propriedades do projeto** na caixa de pesquisa **Ctrl**+**Q**
-- Escolhendo **Alt**+**Enter** no **Gerenciador de Soluções**
+- Escolhendo **Alt**+**Enter** in **Solution Explorer**
 
-Selecione a guia **recursos** . Você pode adicionar um arquivo *. resx* se seu projeto não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
+Selecione a guia **Recursos.** Você pode adicionar um arquivo *.resx* se o seu projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
 
 ## <a name="resources-in-other-project-types"></a>Recursos em outros tipos de projeto
 
@@ -50,7 +50,7 @@ Recursos são gerenciados de forma diferente em projetos do .NET que em outros t
 - Aplicativos UWP (Plataforma Universal do Windows), consulte [Recursos do aplicativo e o Sistema de Gerenciamento de Recursos](/windows/uwp/app-resources/)
 - Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como criar um recurso](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Recursos em aplicativos de área de trabalho (.NET Framework)](/dotnet/framework/resources/index)
+- [Recursos em aplicativos de desktop (.NET Framework)](/dotnet/framework/resources/index)
 - [Gerenciando recursos de aplicativo (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources)

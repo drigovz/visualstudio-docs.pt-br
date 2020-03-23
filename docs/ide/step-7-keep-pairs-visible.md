@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579297"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Etapa 7: Manter os pares visíveis
@@ -33,9 +33,9 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
        > [!IMPORTANT]
        > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     A primeira linha da instrução `if` que você acabou de adicionar verifica se o ícone no primeiro rótulo que o jogador escolhe é igual ao ícone no segundo rótulo. Se os ícones forem idênticos, o programa executará as três instruções entre as chaves no C# ou as três instruções na instrução `if` do Visual Basic. As primeiras duas instruções redefinem as variáveis de referência `firstClicked` e `secondClicked` para que elas não acompanhem mais nenhum dos rótulos. (Você pode reconhecer essas duas instruções do manipulador de eventos <xref:System.Windows.Forms.Timer.Tick> do temporizador.) A terceira instrução é uma instrução `return`, que diz ao programa para ignorar o restante das instruções no método sem executá-las.
+     A primeira linha da instrução `if` que você acabou de adicionar verifica se o ícone no primeiro rótulo que o jogador escolhe é igual ao ícone no segundo rótulo. Se os ícones forem idênticos, o programa executará as três instruções entre as chaves no C# ou as três instruções na instrução `if` do Visual Basic. As primeiras duas instruções redefinem as variáveis de referência `firstClicked` e `secondClicked` para que elas não acompanhem mais nenhum dos rótulos. (Você pode reconhecer essas duas declarações <xref:System.Windows.Forms.Timer.Tick> do manipulador de eventos do temporizador.) A terceira declaração é uma `return` declaração, que diz ao programa para pular o resto das declarações no método sem executá-las.
 
-     Se estiver programando no C#, talvez você tenha notado que parte do código usa um único sinal de igual (`=`), enquanto outras instruções usam dois sinais de igual (`==`). Leve em consideração por que `=` é usado em alguns locais, mas `==` é usado em outros.
+     Se a programação em C#, você deve ter notado que`=`parte do código usa um`==`único sinal igual ( ), enquanto outras instruções usam dois sinais iguais ( ). Leve em consideração por que `=` é usado em alguns locais, mas `==` é usado em outros.
 
      Esse é um bom exemplo que mostra a diferença. Observe atentamente o código entre os parênteses na instrução `if`.
 
@@ -57,15 +57,15 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
     firstClicked = null;
     ```
 
-     A primeira dessas duas instruções verifica se dois ícones são iguais. Como dois valores estão sendo comparados C# , o programa usa o operador de igualdade `==`. A segunda instrução realmente altera o valor (chamado *atribuição*), definindo a variável de referência `firstClicked` igual a `null` para redefini-la. Por esse motivo, ela usa o operador de atribuição `=` no lugar. C#usa `=` para definir valores e `==` para compará-los. O Visual Basic usa `=` para atribuição de variável e comparação.
+     A primeira dessas duas instruções verifica se dois ícones são iguais. Como dois valores estão sendo comparados, o programa C# usa o operador de `==` igualdade. A segunda instrução realmente altera o valor (chamado *atribuição*), definindo a variável de referência `firstClicked` igual a `null` para redefini-la. Por esse motivo, ela usa o operador de atribuição `=` no lugar. C# `=` usa para definir `==` valores, e para compará-los. O Visual Basic usa `=` para atribuição de variável e comparação.
 
-2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par correspondente, a instrução New `if` será executada e a instrução return fará com que o método ignore o código que inicia o temporizador, para que os ícones fiquem visíveis, conforme mostrado na imagem a seguir.
+2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par `if` correspondente, a nova declaração será executada e a declaração de retorno faz com que o método pule o código que inicia o temporizador, para que os ícones permaneçam visíveis, como mostrado na imagem a seguir.
 
      ![Jogo criado neste tutorial](../ide/media/express_finishedgame.png)<br/>
-***Jogo de correspondência*** *com pares de ícones visíveis*
+***Jogo correspondente*** *com pares de ícones visíveis*
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 8: adicionar um método para verificar se o jogador venceu](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)** .
+- Para ir para a próxima etapa do tutorial, consulte **[Passo 8: Adicione um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**.
 
-- Para retornar à etapa anterior do tutorial, veja [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).
+- Para retornar à etapa tutorial anterior, consulte [Passo 6: Adicione um temporizador](../ide/step-6-add-a-timer.md).

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588636"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos do controlador de teste e do agente de teste para teste de carga
@@ -30,7 +30,7 @@ Os computadores do agente de teste e do controlador de teste têm requisitos de 
 
 A tabela a seguir mostra os requisitos de hardware recomendados para a implantação de um controlador de teste e de agentes de teste.
 
-|**Configuração**|**Componente**|**CPU**|**HD**|**Memória**|
+|**Configuração**|**Componente**|**Cpu**|**HD**|**Memória**|
 |-|-------------------|-|------------|-|
 |< 500 usuários virtuais|Agente de teste|2,6 GHz|10 GB|2 GB|
 |< 1000 usuários virtuais|Agente de teste|Processador duplo de 2,6 GHz|10 GB|2 GB|
@@ -59,6 +59,6 @@ Para evitar confusões e simplificar a operação, um controlador de teste e age
 
 É possível monitorar computadores de agente para determinar suas necessidades de recursos observando os processos *QTAgent\*.exe* executados e escalados durantes os testes. O gargalo mais comum nos processos *QTAgent\*.exe* é a utilização da CPU. Se a utilização de CPU for consistente na altura nos noventa, então, é uma indicação que o agente está sendo carregado com peso. O próximo gargalo comum é o uso da memória. Para testes de manda, monitorar esses recursos podem ajudar a determinar se você deve melhorar os recursos dos computadores ou distribuir seus testes diferentemente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

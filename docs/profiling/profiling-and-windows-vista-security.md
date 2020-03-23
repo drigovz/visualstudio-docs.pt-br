@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778369"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
@@ -45,8 +45,8 @@ Você pode ver uma lista dos processos que estão disponíveis, definindo as op�
 
   Quando essa opção não está selecionada, a lista exibe os processos na sessão atual. Caso contrário, a lista exibe os processos em todas as sessões.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visões gerais](../profiling/overviews-performance-tools.md)
-- [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Como anexar a um processo em execução](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))
+- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [Como: Anexar a um processo em execução](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))

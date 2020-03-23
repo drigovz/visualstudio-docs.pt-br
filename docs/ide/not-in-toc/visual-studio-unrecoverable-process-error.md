@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585789"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erro de processo irrecuperável do Visual Studio
@@ -23,7 +23,7 @@ O Visual Studio usa vários processos fora do processo para executar tarefas em 
 
 Se o processo *ServiceHub.RoslynCodeAnalysisService.exe* ou *ServiceHub.RoslynCodeAnalysisService32.exe* terminar por algum motivo, uma barra de informações pop-up será exibida com a seguinte mensagem:
 
-**"Infelizmente, um processo usado pelo Visual Studio encontrou um erro irrecuperável. É recomendável salvar seu trabalho e, em seguida, fechar e reiniciar o Visual Studio. "**
+**"Infelizmente, um processo usado pelo Visual Studio encontrou um erro irrecuperável. Recomendamos salvar seu trabalho e, em seguida, fechar e reiniciar o Visual Studio."**
 
 Se você receber essa mensagem, salve o trabalho imediatamente e, em seguida, feche e reinicie o Visual Studio.
 

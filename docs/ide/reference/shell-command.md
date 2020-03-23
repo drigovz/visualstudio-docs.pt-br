@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565871"
 ---
 # <a name="shell-command"></a>Comando Shell
@@ -34,16 +34,16 @@ Inicia programas executáveis de dentro do [!INCLUDE[vsprvs](../../code-quality/
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `path`
 
-Necessária. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
+Obrigatórios. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
 
 `args`
 
 Opcional. Quaisquer argumentos a serem passados para o programa invocado.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
 Opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
@@ -84,10 +84,10 @@ O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Janela de Saída](../../ide/reference/output-window.md)
+- [Janela de saída](../../ide/reference/output-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

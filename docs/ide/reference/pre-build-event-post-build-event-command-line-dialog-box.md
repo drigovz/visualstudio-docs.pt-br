@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567912"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build
@@ -48,14 +48,14 @@ Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos d
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
-## <a name="ui-element-list"></a>Lista de elementos da UI
+## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
 
 **Caixa de edição de linha de comando**
 
 Contém os eventos a serem executados para pré ou pós-build.
 
 > [!NOTE]
-> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Macros**
 
@@ -95,7 +95,7 @@ Você pode usar qualquer uma dessas macros para especificar locais de arquivos o
 |`$(TargetFileName)`|O nome do arquivo de saída primária do build (definido como nome de base e extensão de arquivo).|
 |`$(TargetExt)`|A extensão de arquivo do arquivo de saída primária para o build. Inclui o “.” antes da extensão de arquivo.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Especificando eventos de build personalizados no Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Página Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

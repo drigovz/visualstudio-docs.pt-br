@@ -8,19 +8,19 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565969"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
-A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **resultados da cobertura de código** exibe um erro semelhante a "resultados vazios gerados:...." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
+A ferramenta de análise de cobertura de código no Visual Studio coleta dados para conjuntos nativos e gerenciados (*arquivos .dll* ou *.exe).* No entanto, em alguns casos, a janela **Resultados de Cobertura de Código** exibe um erro semelhante a "Resultados vazios gerados: ...." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
 
-## <a name="what-you-should-see"></a>O que você deve ver
+## <a name="what-you-should-see"></a>O que você deverá ver
 
-Se você escolher um comando **Analisar Cobertura de Código** no menu **Teste** e se o build e os testes forem executados com êxito, você deverá ver uma lista de resultados na janela **Cobertura de Código**. Você talvez tenha que expandir os itens para ver os detalhes.
+Se você escolher um comando **Analisar cobertura de código** no menu **Teste** e se a compilação e os testes forem executados com sucesso, então você verá uma lista de resultados na janela Cobertura de **código.** Você talvez tenha que expandir os itens para ver os detalhes.
 
 ![Resultados da cobertura de código com coloração](../test/media/codecoverage1.png)
 
@@ -44,27 +44,27 @@ Resolução&mdash;No Gerenciador de Testes, escolha **Executar Tudo** para verif
 
 Quando você modificar e reexecutar os testes, um resultado anterior da cobertura de código poderá permanecer visível, inclusive a coloração de código com base nessa execução anterior.
 
-1. Execute **analisar cobertura de código**.
+1. Executar **analisar cobertura de código**.
 
-2. Não se esqueça de selecionar o conjunto de resultados mais recente na janela **Resultados da Cobertura de Código**.
+2. Certifique-se de que você selecionou o resultado mais recente definido na janela **Resultados de Cobertura de Código.**
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Os arquivos .pdb (símbolo) não estão disponíveis
 
-Análise – Abra a pasta de destino de compilação (normalmente *bin\debug*) e verifique se, para cada assembly, existe um arquivo *.pdb* no mesmo diretório do arquivo *.dll* ou *.exe*.
+Análise&mdash;Abra a pasta de destino de compilação (normalmente *bin\debug)* e verifique se, para cada conjunto, há um arquivo *.pdb* no mesmo diretório que o arquivo *.dll* ou *.exe.*
 
-Explicação – O mecanismo de cobertura de código exige que todo assembly tenha seu arquivo *.pdb* associado acessível durante a execução de teste. Se não houver nenhum arquivo *.pdb* para um assembly específico, o assembly não será analisado.
+Explicação&mdash;O mecanismo de cobertura de código requer que cada conjunto tenha seu arquivo *.pdb* associado acessível durante a execução do teste. Se não houver um arquivo *.pdb* para uma assembléia específica, a montagem não será analisada.
 
-O arquivo *.pdb* precisa ser gerado do mesmo build dos arquivos *.dll* ou *.exe*.
+O arquivo *.pdb* deve ser gerado a partir da mesma compilação dos arquivos *.dll* ou *.exe.*
 
-Resolução – Garanta que as configurações de build gerem o arquivo *.pdb*. Se os arquivos *.pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página **Build**, escolha **Avançado** e inspecione **Informações de Depuração**.
+Resolução&mdash;Certifique-se de que as configurações de compilação gerem o arquivo *.pdb.* Se os arquivos *.pdb* não forem atualizados quando o projeto for construído, abra as propriedades do projeto, selecione a página **Construir,** escolha **Avançado**e inspecione **Debug Info**.
 
-Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se o **vinculador** > **depuração** > **gerar informações de depuração** está definido para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
+Para projetos C++, certifique-se de que os arquivos .pdb gerados tenham informações completas de depuração. Abra as propriedades do projeto e verifique se a**depuração** > do **Linker** > **Gerar informações de depuração** está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/DEBUG:FULL)**.
 
-Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em locais diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em lugares diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para procurar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="use-an-instrumented-or-optimized-binary"></a>Usar um binário instrumentado ou otimizado
 
-Análise – determine se o binário passou por alguma forma de otimização avançada, como a Otimização Guiada por Perfil, ou foi instrumentado por uma ferramenta de criação de perfil como *vsinstr.exe* ou *vsperfmon.exe*.
+Análise&mdash;Determine se o binário sofreu alguma forma de otimização avançada, como otimização guiada por perfil, ou foi instrumentado por uma ferramenta de criação de perfil, como *vsinstr.exe* ou *vsperfmon.exe*.
 
 Explicação&mdash;Se um assembly já tiver sido instrumentado ou otimizado por outra ferramenta de criação de perfil, o assembly será omitido da análise de cobertura de código. A análise de cobertura de código não pode ser realizada nesses assemblies.
 
@@ -90,13 +90,13 @@ Resolução&mdash;Use uma versão MSIL do assembly. Não o processe com NGen.
 
 Análise&mdash;Se você estiver usando um arquivo *.runsettings* personalizado, ele poderá conter um erro de sintaxe. A cobertura de código não é executada e a janela de cobertura de código não é aberta ao final da execução de teste ou mostra resultados anteriores.
 
-Explicação – você pode executar os testes de unidade com um arquivo *.runsettings* personalizado para configurar as opções de cobertura de código. As opções permitem incluir ou excluir arquivos. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Explicação&mdash;Você pode executar os testes da unidade com um arquivo personalizado *.runsettings* para configurar opções de cobertura de código. As opções permitem incluir ou excluir arquivos. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 Resolução&mdash;Existem dois tipos possíveis de falhas:
 
 - **Erro de XML**
 
-     Abra o arquivo *.runsettings* no editor XML do Visual Studio. Procure indicações de erro.
+     Abra o arquivo *.runsettings* no editor Visual Studio XML. Procure indicações de erro.
 
 - **Erro na expressão regular**
 
@@ -110,9 +110,9 @@ Resolução&mdash;Existem dois tipos possíveis de falhas:
 
 Análise&mdash;Se você estiver usando um arquivo *.runsettings* personalizado, verifique se ele inclui o assembly.
 
-Explicação – você pode executar os testes de unidade com um arquivo *.runsettings* personalizado para configurar as opções de cobertura de código. As opções permitem incluir ou excluir arquivos. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Explicação&mdash;Você pode executar os testes da unidade com um arquivo personalizado *.runsettings* para configurar opções de cobertura de código. As opções permitem incluir ou excluir arquivos. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
-Resolução – Remova todos os nós `Include` do arquivo *.runsettings* e, em seguida, remova todos os nós `Exclude`. Se isso corrigir o problema, recoloque-os em estágios.
+Resolução&mdash;Remova `Include` todos os nós do arquivo *.runsettings* e, em seguida, remova todos os `Exclude` nós. Se isso corrigir o problema, recoloque-os em estágios.
 
 Verifique se o nó DataCollectors especifica a Cobertura de Código. Compare-o com a amostra contida em [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
@@ -126,6 +126,6 @@ Explicação&mdash;A ferramenta de cobertura de código funciona inserindo-se a 
 
 Resolução&mdash;Nenhuma.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

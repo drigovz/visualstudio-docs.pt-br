@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585568"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
@@ -20,7 +20,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-Primeiro, instale os [Componentes do Selenium para testes de IU codificados entre navegadores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+Primeiro, instale os [componentes selenium para testes de navegador cruzado de interface do usuário codificados](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
 ## <a name="whats-supported-across-all-web-browsers"></a>O que tem suporte em todos os navegadores da Web?
 
@@ -38,7 +38,7 @@ Testando seu aplicativo Web com uma variedade de tipos de navegadores da Web, vo
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Como faço para gravar e reproduzir testes de IU codificados em aplicativos Web usando os navegadores da Web com suporte?
 
-**Gravação**: você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).
+**Gravação**: você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, consulte [Usar a automação da IU para testar seu código](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.
@@ -74,7 +74,7 @@ Para executar testes em navegadores da web que não sejam o IE, você deve insta
 
 Para obter mais informações sobre como criar e usar testes de IU codificados, confira [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).
 
-### <a name="enable-debugging"></a>Habilitar a depuração
+### <a name="enable-debugging"></a>Habilitar depuração
 
 Para habilitar a depuração em seu aplicativo Web, conclua as seguintes opções de configuração:
 
@@ -104,7 +104,7 @@ Estas são algumas outras coisas que você precisa saber:
 
 ## <a name="tips"></a>Dicas
 
-Você pode configurar a saída para incluir capturas de tela nos logs de IU codificados. Para fazer isso, você precisa definir algumas configurações no arquivo *QTAgent32.exe.config*. Por padrão, esse arquivo é instalado no seguinte local:
+Você pode configurar a saída para incluir capturas de tela nos logs de IU codificados. Para isso, você precisa definir algumas configurações no arquivo *QTAgent32.exe.config.* Por padrão, esse arquivo é instalado no seguinte local:
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
@@ -120,9 +120,9 @@ Para obter mais informações, confira [Analisar testes de IU codificados usando
 
 ## <a name="video-resources"></a>Recursos em vídeo
 
-[Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Gravar no IE e playback em todos os lugares](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
-[Criar testes entre navegadores com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Autor cruza testes de navegador com construtor de teste de interface do usuário codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
 [Criar testes entre navegadores de autor usando codificação manual básica sem mapa da IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -130,8 +130,8 @@ Para obter mais informações, confira [Analisar testes de IU codificados usando
 
 [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)
 - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analisar testes de IU codificados usando logs de teste de IU codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Analisar testes de iu codificados usando logs de teste de ia codinome](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

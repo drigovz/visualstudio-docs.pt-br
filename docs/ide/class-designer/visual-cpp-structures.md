@@ -1,5 +1,5 @@
 ---
-title: C++Estruturas no Designer de Classe
+title: Estruturas C++ em Class Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590678"
 ---
-# <a name="c-structures-in-class-designer"></a>C++estruturas no Designer de Classe
+# <a name="c-structures-in-class-designer"></a>Estruturas C++ em Class Designer
 
-O **Designer de Classe** é compatível com estruturas C++ declaradas com a palavra-chave `struct`. Veja um exemplo a seguir:
+**Class Designer** suporta estruturas C++, que são `struct`declaradas com a palavra-chave . A seguir está um exemplo:
 
 ```cpp
 struct MyStructure
@@ -36,10 +36,10 @@ Uma forma de estrutura C++ em um diagrama de classe parece uma forma de classe e
 
 |Elemento de código|Modo de exibição do Designer de Classe|
 |------------------| - |
-|`struct StructureName {};`|**StructureName**<br /><br /> Estrutura|
+|`struct StructureName {};`|**Nome da estrutura**<br /><br /> Struct|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trabalhando com C++ código](working-with-visual-cpp-code.md)
-- [Classes e Structs](/cpp/cpp/classes-and-structs-cpp)
+- [Trabalhando com código C++](working-with-visual-cpp-code.md)
+- [Classes e structs](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

@@ -1,5 +1,5 @@
 ---
-title: 'Relatar um problema: Estados e perguntas frequentes'
+title: 'Relatar um problema: Estados e PERGUNTAS FREQUENTES'
 description: Fornece uma visão geral da ferramenta Relatar um problema e inclui estados e definições de problemas
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853497"
 ---
-# <a name="report-a-problem-states-and-faq"></a>Relatar um problema: Estados e perguntas frequentes
+# <a name="report-a-problem-states-and-faq"></a>Relatar um problema: Estados e PERGUNTAS FREQUENTES
 
 A ferramenta Relatar um problema permite que a comunidade de desenvolvedores do Visual Studio envie problemas. Cada um dos seus relatórios do problema se torna um item de trabalho em nosso sistema de engenharia principal, capacitando você para interagir diretamente com nossas equipes de produtos para nos ajudar a identificar e a resolver problemas com impacto. Os comentários enviados com informações avançadas de diagnóstico são fundamentais para melhorar a família de produtos do Visual Studio. Nós realmente agradecemos seu tempo para relatar problemas.
 

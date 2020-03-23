@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592055"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
@@ -26,7 +26,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
      O **WPF Designer** é aberto e exibe a MainWindow do projeto.
 
-2. Se a caixa de ferramentas não estiver aberta, abra-a. Escolha o menu **Exibir** e a opção **Caixa de Ferramentas**.
+2. Se a caixa de ferramentas não estiver aberta, abra-a. Escolha o menu **Exibir** e, em seguida, escolha **Caixa de ferramentas**.
 
 3. Na seção **Todos os Controles do WPF**, arraste um controle **Button**, **CheckBox** e **ProgressBar** para a MainWindow na superfície de design.
 
@@ -85,7 +85,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ### <a name="run-the-wpf-app"></a>Executar o aplicativo WPF
 
-1. No menu **Depurar**, selecione **Iniciar Depuração** ou pressione **F5**.
+1. No menu **Debug,** selecione **Iniciar depuração** ou pressione **F5**.
 
 2. Observe que o controle da caixa de seleção está desabilitado. Escolha **Iniciar**.
 
@@ -99,7 +99,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 1. Localize o aplicativo SimpleWPFApp criado anteriormente.
 
-2. Crie um atalho na área de trabalho para o aplicativo SimpleWPFApp. Clique com o botão direito do mouse em *SimpleWPFApp.exe* e escolha **Copiar**. Na área de trabalho, clique com o botão direito do mouse e escolha **Colar atalho**.
+2. Crie um atalho na área de trabalho para o aplicativo SimpleWPFApp. Clique com o botão direito do mouse *SimpleWPFApp.exe* e escolha **Copiar**. Na área de trabalho, clique com o botão direito do mouse e escolha **Colar atalho**.
 
     > [!TIP]
     > Um atalho para o aplicativo facilita adicionar ou modificar testes de IU codificados para seu aplicativo, porque permite iniciá-lo rapidamente.
@@ -111,7 +111,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 2. Pesquise o modelo de **Projeto de Teste de IU Codificado**, selecione-o e continue pelas etapas até o projeto ser criado.
 
    > [!NOTE]
-   > Se o modelo **Projeto de Teste de IU Codificado** não for exibido, será necessário [instalar o componente Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se você não ver o modelo **coded UI Test Project,** você precisa [instalar o componente de teste de iu codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      O novo projeto de teste de IU codificado chamado **CodedUITestProject1** é adicionado à sua solução e a caixa de diálogo **Gerar Código para Teste de IU Codificado** é exibida.
 
@@ -148,27 +148,27 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 1. Na caixa **Nome do método**, digite **SimpleAppTest** e escolha **Adicionar e gerar**. Em alguns segundos, o teste de IU codificado é exibido e adicionado à solução.
 
-1. Feche o **UIMap – Construtor de teste de IU codificado**.
+1. Fechar **UIMap - Construtor de testes de ida e rei codificado**.
 
-     O arquivo *CodedUITest1.cs* é exibido no editor de código.
+     O arquivo *CodedUITest1.cs* aparece no editor de código.
 
 1. Salve seu projeto.
 
 ### <a name="run-the-test"></a>Executar o teste
 
-1. No menu **Testar**, escolha **Windows** e **Gerenciador de Testes**.
+1. No menu **Teste,** escolha **o Windows** e escolha **Test Explorer**.
 
-2. No menu **Compilação**, escolha **Compilar Solução**.
+2. No menu **Build,** escolha **Build Solution**.
 
-3. No arquivo *CodedUITest1.cs*, localize o método **CodedUITestMethod**, clique com o botão direito do mouse e selecione **Executar testes** ou execute o teste no **Gerenciador de Testes**.
+3. No arquivo *CodedUITest1.cs,* localize o método **CodedUITestMethod,** clique com o botão direito do mouse e **selecione Executar testes**ou execute o teste no **Test Explorer**.
 
-   Durante a execução do teste de IU codificado, o SimpleWPFApp permanece visível. Ele conduz as etapas realizadas no procedimento anterior. No entanto, quando o teste tenta marcar a caixa de seleção do controle de caixa de seleção, a janela **Resultados do Teste** mostra que o teste falhou. Isso ocorre porque o teste tenta marcar a caixa de seleção, mas não sabe que o controle de caixa de seleção permanece desabilitado até a barra de progresso ficar 100% concluída. Você pode corrigir esse e outros problemas semelhantes usando os vários métodos `UITestControl.WaitForControlXXX()` que estão disponíveis para testes de IU codificados. O próximo procedimento demonstrará o uso do método `WaitForControlEnabled()` para corrigir o problema que causou a falha desse teste. Para obter mais informações, confira [Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Durante a execução do teste de IU codificado, o SimpleWPFApp permanece visível. Ele conduz as etapas realizadas no procedimento anterior. No entanto, quando o teste tenta selecionar a caixa de seleção para o controle da caixa de seleção, a janela **Resultados do teste** mostra que o teste falhou. Isso ocorre porque o teste tenta marcar a caixa de seleção, mas não sabe que o controle de caixa de seleção permanece desabilitado até a barra de progresso ficar 100% concluída. Você pode corrigir esse e outros problemas semelhantes usando os vários métodos `UITestControl.WaitForControlXXX()` que estão disponíveis para testes de IU codificados. O próximo procedimento demonstrará o uso do método `WaitForControlEnabled()` para corrigir o problema que causou a falha desse teste. Para obter mais informações, confira [Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar e executar novamente o teste de IU codificado
 
-1. Na janela **Gerenciador de Testes**, selecione o teste com falha e, na seção **StackTrace**, escolha o primeiro link para **UIMap.SimpleAppTest()** .
+1. Na janela **Test Explorer,** selecione o teste com falha e na seção **StackTrace,** escolha o primeiro link para **UIMap.SimpleAppTest()**
 
-2. O arquivo *UIMap.Designer.cs* é aberto com o ponto de erro realçado no código:
+2. O *arquivo UIMap.Designer.cs* abre com o ponto de erro destacado no código:
 
     ```csharp
     // Select 'CheckBox' check box
@@ -178,9 +178,9 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 3. Para corrigir esse problema, você pode fazer o teste de IU codificado esperar o controle CheckBox ser habilitado antes de continuar nessa linha usando o método `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Não modifique o arquivo *UIMap.Designer.cs*. Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
+    > Não modifique o *arquivo UIMap.Designer.cs.* Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
 
-4. No **Gerenciador de Soluções**, localize *UIMap.uitest* em seu projeto de teste de IU codificado.
+4. No **Solution Explorer,** *localize uIMap.uitest* em seu projeto de teste de ida e vida codificada.
 
 5. Abra o menu de atalho de *UIMap.uitest* e escolha **Abrir**.
 
@@ -188,15 +188,15 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 6. No painel **Ação de interface do usuário**, selecione o método de teste (SimpleAppTest) que você deseja mover para o arquivo *UIMap.cs* ou *UIMap.vb*. Mover o método para um arquivo diferente permitirá que um código personalizado seja adicionado que não será substituído quando o código de teste for recompilado.
 
-7. Escolha o botão **Mover Código** na barra de ferramentas **Editor de Teste de IU Codificado**.
+7. Escolha o botão **Mover Código** na barra de ferramentas do Editor de testes **da UI codificada.**
 
 8. Uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo *UIMap.uitest* para o arquivo *UIMap.cs* e que não será mais possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.
 
-     O método de teste é removido do arquivo *UIMap.uitest* e não será mais exibido no painel Ações de Interface do Usuário. Para editar o arquivo de teste movido, abra o arquivo *UIMap.cs* no **Gerenciador de Soluções**.
+     O método de teste é removido do arquivo *UIMap.uitest* e não é mais exibido no painel Ações de Interface do Usuário. Para editar o arquivo de teste movido, abra o arquivo *UIMap.cs* do **Solution Explorer**.
 
 9. Na barra de ferramentas do Visual Studio, escolha **Salvar**.
 
-     As atualizações do método de teste são salvas no arquivo *UIMap.Designer*.
+     As atualizações do método de teste são salvas no arquivo *UIMap.Designer.*
 
     > [!WARNING]
     > Depois de mover o método, você não pode mais editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos.
@@ -218,7 +218,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. No arquivo *CodedUITest1.cs*, localize o método **CodedUITestMethod** e comente ou renomeie a referência ao método SimpleAppTest() original e, em seguida, substitua-a pelo novo ModifiedSimpleAppTest():
+13. No arquivo *CodedUITest1.cs,* localize o método **CodedUITestMethod** e comente ou renomeie a referência ao método original SimpleAppTest() e, em seguida, substitua-a pelo novo ModifiedSimpleAppTest():
 
     ```csharp
     [TestMethod]
@@ -235,21 +235,21 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 15. Clique com o botão direito do mouse no método **CodedUITestMethod** e selecione **Executar Testes**.
 
-16. Dessa vez, o teste de IU codificado conclui com êxito todas as etapas no teste, e **Aprovado** é exibido na janela **Gerenciador de Testes**.
+16. Desta vez, o teste de iu codificado completa com sucesso todas as etapas do teste, e **o Passed** é exibido na janela Do Explorador **de Testes.**
 
 ## <a name="refactor-a-control-in-simplewpfapp"></a>Refatorar um controle em SimpleWPFApp
 
-1. No arquivo *MainWindow.xaml*, no designer, selecione o controle de botão.
+1. No arquivo *MainWindow.xaml,* no designer, selecione o controle do botão.
 
-2. Na parte superior da janela **Propriedades**, altere o valor da propriedade **Nome** de **button1** para **buttonA**.
+2. Na parte superior da janela **Propriedades,** altere o valor da propriedade **Nome** do **botão1** para **o botãoA**.
 
 3. No menu **Compilar**, escolha **Compilar Solução**.
 
-4. No **Gerenciador de Testes**, execute **CodedUITestMethod1**.
+4. No **Test Explorer,** execute **CodedUITestMethod1**.
 
      O teste falha porque o teste de IU codificado não consegue localizar o controle button mapeado originalmente no UIMap como button1. A refatoração pode afetar os teste de IU codificados dessa forma.
 
-5. No **Gerenciador de Testes**, na seção **StackTrace**, escolha o primeiro link ao lado de **UIMpa.ModifiedSimpleAppTest()** .
+5. No **Gerenciador de Testes**, na seção **StackTrace**, escolha o primeiro link ao lado de **UIMpa.ModifiedSimpleAppTest()**.
 
      O arquivo *UIMap.cs* é aberto. O ponto de erro é realçado no código:
 
@@ -260,13 +260,13 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
      Observe que a linha de código anterior neste procedimento está usando `UiStartButton`, que é o nome do UIMap antes de ser refatorado.
 
-     Para corrigir o problema, é possível adicionar o controle refatorado ao UIMap usando o **Construtor de Teste de IU Codificado**. Você pode atualizar o código do teste para usar o código, como demonstrado no próximo procedimento.
+     Para corrigir o problema, você pode adicionar o controle refatorado ao UIMap usando o **Coded UI Test Builder**. Você pode atualizar o código do teste para usar o código, como demonstrado no próximo procedimento.
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Mapear controle refatorado executar o teste novamente
 
-1. No arquivo *CodedUITest1.cs*, no método **CodedUITestMethod1()** , clique com o botão direito do mouse, selecione **Gerar Código para Teste de IU Codificado** e, em seguida, escolha **Usar Construtor de Teste de IU Codificado**.
+1. No arquivo *CodedUITest1.cs,* no método **CodedUITestMethod1(),** clique com o botão direito do mouse, selecione **Gerar código para teste de iu codificado** e, em seguida, escolha Usar Construtor de Teste de **II codificado**.
 
-     O **UIMap – Construtor de Teste de IU Codificado** é exibido.
+     O **UIMap - Coded UI Test Builder** é exibido.
 
 2. Usando o atalho na área de trabalho criado anteriormente, execute o aplicativo SimpleWPFApp criado antes.
 
@@ -288,9 +288,9 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 8. Feche o SimpleWPFApp.
 
-9. Feche o **UIMap – Construtor de teste de IU codificado**.
+9. Fechar **UIMap - Construtor de testes de ida e rei codificado**.
 
-10. No **Gerenciador de Soluções**, abra o arquivo *UIMap.Designer.cs*.
+10. No **Solution Explorer,** abra o arquivo *UIMap.Designer.cs.*
 
 11. No arquivo *UIMap.Designer.cs*, localize a propriedade **UIStartButton1**. Observe que `SearchProperties` está definido como `"buttonA"`:
 
@@ -314,7 +314,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
      Agora você pode modificar o teste de IU codificado para usar o controle recém-mapeado. Conforme indicado no procedimento anterior, caso deseje substituir métodos ou propriedades no teste de IU codificado, faça isso no arquivo *UIMap.cs*.
 
-12. No arquivo *UIMap.cs*, adicione um construtor e especifique a propriedade `SearchProperties` da propriedade `UIStartButton` para usar a propriedade `AutomationID` com um valor de `"buttonA":`
+12. No *arquivo UIMap.cs,* adicione um construtor `SearchProperties` e `UIStartButton` especifique `AutomationID` o imóvel para usar o imóvel com um valor de`"buttonA":`
 
     ```csharp
     public UIMap()
@@ -325,20 +325,20 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 13. No menu **Compilar**, escolha **Compilar Solução**.
 
-14. No **Gerenciador de Testes**, execute **CodedUITestMethod1**.
+14. No **Test Explorer,** execute **CodedUITestMethod1**.
 
      Dessa vez, o teste de IU codificado conclui com sucesso todas as etapas do teste. Na janela **Resultados do Teste**, você verá um status **Aprovado**.
 
-## <a name="videos"></a>Vídeos
+## <a name="videos"></a>vídeos
 
-link de ![para vídeo](../data-tools/media/playvideo.gif) [introdução aos testes de interface do usuário codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
+![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>Perguntas frequentes
 
 [Perguntas frequentes sobre testes de IU codificados](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)
 - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Editar testes de IU codificados usando o editor de teste de IU codificado](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

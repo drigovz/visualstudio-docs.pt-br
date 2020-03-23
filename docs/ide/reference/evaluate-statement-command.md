@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595651"
 ---
 # <a name="evaluate-statement-command"></a>Comando Avaliar Instrução
@@ -30,11 +30,11 @@ Avalia e exibe a instrução fornecida.
 >Debug.EvaluateStatement text
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `text`
 
-Necessária. A instrução a ser avaliada.
+Obrigatórios. A instrução a ser avaliada.
 
 ## <a name="example"></a>Exemplo
 
@@ -42,9 +42,9 @@ Necessária. A instrução a ser avaliada.
 >Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Comando Print](../../ide/reference/print-command.md)
+- [Comando Imprimir](../../ide/reference/print-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

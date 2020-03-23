@@ -1,5 +1,5 @@
 ---
-title: Janela Saída
+title: Janela de saída
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567977"
 ---
-# <a name="output-window"></a>janela Saída
+# <a name="output-window"></a>Janela de Saída
 
 A Janela de **Saída** exibe mensagens de status para vários recursos no IDE (ambiente de desenvolvimento integrado). Para abrir a Janela de **Saída**, na barra de menus, escolha **Exibir** > **Saída** ou pressione **Ctrl**+**Alt**+**O**.
 
-## <a name="toolbar"></a>Barra de Ferramentas
+## <a name="toolbar"></a>Barra de ferramentas
 
 Os seguintes controles são mostrados na barra de ferramentas da Janela de **Saída**.
 
@@ -47,7 +47,7 @@ Altera o foco na Janela de **Saída** para o erro de build anterior e move o pon
 
 Altera o foco na Janela de **Saída** para o próximo erro de build e move o ponto de inserção no editor de código para a linha que contém o erro de build.
 
-### <a name="clear-all"></a>Apagar tudo
+### <a name="clear-all"></a>Limpar tudo
 
 Limpa todo o texto do painel **Saída**.
 
@@ -71,12 +71,12 @@ No C++, é possível criar etapas de build e eventos de build personalizados cuj
 
 ## <a name="scroll-behavior"></a>Comportamento de rolagem
 
-Se você usar a rolagem automática na Janela de **Saída** e, em seguida, navegar usando o mouse ou as teclas de seta, a rolagem automática será interrompida. Para retomar a rolagem automática, pressione **Ctrl**+**End**.
+Se você usar a rolagem automática na Janela de **Saída** e, em seguida, navegar usando o mouse ou as teclas de seta, a rolagem automática será interrompida. Para retomar a rolagem automática, **pressione Ctrl**+**End**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Mensagens de diagnóstico na janela Saída](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Como controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Compilação e build](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e construção](../../ide/compiling-and-building-in-visual-studio.md)
 - [Compreender configurações de build](../../ide/understanding-build-configurations.md)
 - [Visão geral da biblioteca de classes](/dotnet/standard/class-library-overview)

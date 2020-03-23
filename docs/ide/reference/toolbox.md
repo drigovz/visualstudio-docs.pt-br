@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596444"
 ---
-# <a name="toolbox"></a>Caixa de ferramentas
+# <a name="toolbox"></a>Caixa de Ferramentas
 
 A janela **Caixa de Ferramentas** exibe os controles que você pode adicionar a projetos do Visual Studio. Para abrir a Caixa de Ferramentas, escolha **Caixa de Ferramentas** no menu **Exibir**.
 
@@ -71,6 +71,6 @@ Os tópicos a seguir fornecem mais informações sobre algumas das guias dispon�
 - [Caixa de Ferramentas, Guia Componentes](../../ide/reference/toolbox-components-tab.md)
 - [Caixa de Ferramentas, Guia HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Escolher itens da Caixa de Ferramentas, componentes do WPF](choose-toolbox-items-wpf-components.md)

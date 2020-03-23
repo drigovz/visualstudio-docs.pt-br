@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593207"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste
@@ -39,17 +39,17 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 |Tarefas|Tópicos associados|
 |-|-----------------------|
 |**Especificando a combinação de testes para o teste de carga:** ao criar um teste de carga, você especifica as configurações do teste de carga no **Novo Assistente de Teste de Carga**. No **Novo Assistente de Teste de Carga**, você escolhe testes de unidade e da Web existentes para adicionar ao cenário inicial. Depois de adicionar testes ao cenário, você especifica a combinação de testes para o cenário.<br /><br /> Você usa opções de modelagem de carga para prever com maior precisão o uso real esperado de um site ou aplicativo que está passando por teste de carga. É importante fazer isso porque um teste de carga não baseado em um modelo de carga preciso pode gerar resultados enganadores.|-   [Emular o uso real esperado de um site ou aplicativo](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Editar o modelo de combinação de testes:** você pode alterar um cenário de teste de carga para usar um dos modelos de combinação de testes usando o **Editor de Teste de Carga**.||
-|**Configurar a definição de atrasos para um modelo de combinação de testes baseado no ritmo do usuário:** se seu cenário de teste de carga for configurado para usar o **modelo de combinação de testes baseado no ritmo do usuário**, você poderá especificar como quer que o atraso de distribuição seja configurado.|-   [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Editar o modelo de mixagem de teste:** Você pode alterar um cenário de teste de carga para usar um dos modelos de mistura de teste usando o **Load Test Editor**.||
+|**Configurar a definição de atrasos para um modelo de combinação de testes baseado no ritmo do usuário:** se seu cenário de teste de carga for configurado para usar o **modelo de combinação de testes baseado no ritmo do usuário**, você poderá especificar como quer que o atraso de distribuição seja configurado.|-   [Como: Aplicar a distribuição ao atraso de ritmo ao usar um modelo de mistura de teste de ritmo do usuário](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Alterar o modelo de combinação de testes em um cenário
 
-Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
+Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga,** você pode usar o Load Test **Editor** para alterar as propriedades de cenários para atender às suas necessidades e metas de teste.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades das configurações da carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades das configurações de carga e suas descrições, consulte [Propriedades do cenário do teste de carga](../test/load-test-scenario-properties.md).
 
-Usando o **Editor de Teste de Carga**, você pode alterar o modelo de combinação de testes em um cenário de teste de carga editando a propriedade **Tipo de combinação de testes** na janela **Propriedades**.
+Usando o **Load Test Editor,** você pode alterar o modelo de mistura de teste em um cenário de teste de carga editando a propriedade **Tipo de mistura de teste** na janela **Propriedades.**
 
 ### <a name="to-change-the-test-mix-model"></a>Para alterar o modelo de combinação de testes
 
@@ -63,7 +63,7 @@ Usando o **Editor de Teste de Carga**, você pode alterar o modelo de combinaç�
 
      As categorias e as propriedades do cenário são exibidas.
 
-4. Na propriedade **Tipo de combinação de testes**, escolha o botão de reticências ( **…** ).
+4. Na propriedade **Tipo de combinação de testes**, escolha o botão de reticências (**…**).
 
      A caixa de diálogo **Editar combinação de testes** é exibida.
 
@@ -73,13 +73,13 @@ Usando o **Editor de Teste de Carga**, você pode alterar o modelo de combinaç�
 
 7. (Opcional) Especifique um teste de desempenho na Web e um teste de unidade para inicializar ou encerrar usando as caixas de seleção e selecionando os testes desejados. Para saber mais, confira [Emular o uso real esperado de um site ou aplicativo](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8. Clique em **OK**.
+8. Escolha **OK**.
 
      A janela **Propriedades** exibe o novo modelo de combinação de testes para a propriedade **Tipo de combinação de testes**.
 
 9. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tipo de combinação de testes**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

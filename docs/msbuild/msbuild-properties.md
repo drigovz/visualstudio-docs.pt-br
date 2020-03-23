@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633285"
 ---
 # <a name="msbuild-properties"></a>propriedades MSBuild
@@ -47,7 +47,7 @@ Propriedades são pares nome-valor que podem ser usados para configurar compila�
 
  O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. Essas propriedades são referenciadas com a notação $ como qualquer outra propriedade. Por exemplo, $(MSBuildProjectFile) retorna o nome de arquivo completo do arquivo de projeto, incluindo a extensão de nome de arquivo.
 
- Para obter mais informações, confira [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Para saber mais, confira [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="environment-properties"></a>Propriedades de ambiente
 
@@ -55,16 +55,16 @@ Propriedades são pares nome-valor que podem ser usados para configurar compila�
 
  Cada projeto do MSBuild tem um bloco de ambiente isolado: apenas observa, lê e grava em seu próprio bloco.  O MSBuild somente lê as variáveis de ambiente quando ele inicializa a coleção de propriedades, antes de o arquivo de projeto ser avaliado ou criado. Depois disso, as propriedades de ambiente são estáticas, ou seja, cada ferramenta gerada começa com os mesmos nomes e valores.
 
- Para obter o valor atual de variáveis de ambiente em uma ferramenta gerada, use as [Funções de propriedade](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. O método preferido, entretanto, é usar o parâmetro de tarefa <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. As propriedades de ambiente definidas nesta matriz de cadeia de caracteres podem ser passadas para a ferramenta gerada sem afetar as variáveis de ambiente do sistema.
+ Para obter o valor atual das variáveis de ambiente dentro de uma ferramenta gerada, use as [funções de propriedade](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. O método preferido, entretanto, é usar o parâmetro de tarefa <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. As propriedades de ambiente definidas nesta matriz de cadeia de caracteres podem ser passadas para a ferramenta gerada sem afetar as variáveis de ambiente do sistema.
 
 > [!TIP]
 > Nem todas as variáveis de ambiente são lidas para se tornarem propriedades iniciais. Qualquer variável de ambiente cujo nome não seja um nome de propriedade do MSBuild válido, como "386", será ignorada.
 
- Para obter mais informações, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Para saber mais, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Propriedades de Registro
 
- Leia valores de registro do sistema usando a sintaxe a seguir, em que `Hive` é o hive do Registro (por exemplo, **HKEY_LOCAL_MACHINE**), `MyKey` é o nome da chave, `MySubKey` é o nome da subchave e `Value` é o valor da subchave.
+ Você pode ler os valores do registro `Hive` do sistema usando a seguinte sintaxe, `MySubKey` onde está a colmeia de registro (por exemplo, **HKEY_LOCAL_MACHINE),** `MyKey` é o nome-chave, é o nome da subchave, e `Value` é o valor da subchave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +88,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propriedades globais
 
- O MSBuild permite a definição de propriedades na linha de comando com o uso da opção **-property** (ou **-p**). Esses valores de propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto. Isso inclui propriedades de ambiente, mas não inclui propriedades reservadas, que não podem ser alteradas.
+ O MSBuild permite definir propriedades na linha de comando usando o interruptor **-property** (ou **-p).** Esses valores de propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto. Isso inclui propriedades de ambiente, mas não inclui propriedades reservadas, que não podem ser alteradas.
 
  O exemplo a seguir define a propriedade `Configuration` global como `DEBUG`.
 
@@ -96,9 +96,9 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ```
 
- As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. As propriedades globais também são encaminhadas para projetos filho, a menos que o atributo `RemoveProperties` da tarefa MSBuild seja usado para especificar a lista de propriedades que não devem ser encaminhadas. Para obter mais informações, confira [Tarefa do MSBuild](../msbuild/msbuild-task.md).
+ As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. As propriedades globais também são encaminhadas para projetos filho, a menos que o atributo `RemoveProperties` da tarefa MSBuild seja usado para especificar a lista de propriedades que não devem ser encaminhadas. Para obter mais informações, consulte [a tarefa MSBuild](../msbuild/msbuild-task.md).
 
- Se você especificar uma propriedade usando o atributo `TreatAsLocalProperty` em uma marca de projeto, esse valor da propriedade global não substituirá o valor da propriedade que é definido no arquivo de projeto. Para obter mais informações, confira [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md) e [Como criar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md).
+ Se você especificar uma propriedade usando o atributo `TreatAsLocalProperty` em uma marca de projeto, esse valor da propriedade global não substituirá o valor da propriedade que é definido no arquivo de projeto. Para obter mais informações, consulte [Elemento projeto (MSBuild)](../msbuild/project-element-msbuild.md) e [Como: Construir os mesmos arquivos de origem com diferentes opções](../msbuild/how-to-build-the-same-source-files-with-different-options.md).
 
 ## <a name="property-functions"></a>Funções de propriedade
 
@@ -110,7 +110,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 <Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
 ```
 
- Para obter mais informações e uma lista de funções de propriedade, confira [Funções de propriedade](../msbuild/property-functions.md).
+ Para obter mais informações e uma lista de funções de propriedade, consulte [Funções de propriedade](../msbuild/property-functions.md).
 
 ## <a name="create-properties-during-execution"></a>Criar propriedades durante a execução
 
@@ -148,8 +148,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Como: usar variáveis de ambiente em uma compilação](../msbuild/how-to-use-environment-variables-in-a-build.md)
+- [Como: Usar variáveis de ambiente em uma compilação](../msbuild/how-to-use-environment-variables-in-a-build.md)
 - [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)
-- [Como criar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
-- [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [Como: Construir os mesmos arquivos de origem com diferentes opções](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [MSBuild propriedades reservadas e bem conhecidas](../msbuild/msbuild-reserved-and-well-known-properties.md)
 - [Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594322"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Como usar a API de teste de desempenho Web
@@ -27,7 +27,7 @@ Você também pode usar a API de teste de desempenho na Web para criar e salvar 
 > [!TIP]
 > Use o pesquisador de objetos para examinar o namespace <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Os editores do Visual C# e do Visual Basic oferecem suporte do IntelliSense para codificação com as classes no namespace.
 
-Você também pode criar plug-ins para teste de carga. Para obter mais informações, confira [Como usar a API de teste de carga](../test/how-to-use-the-load-test-api.md) e [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+Você também pode criar plug-ins para teste de carga. Para obter mais informações, [consulte Como: Use a API de teste de carga](../test/how-to-use-the-load-test-api.md) e [como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar o namespace WebTesting
 
@@ -43,7 +43,7 @@ Você também pode criar plug-ins para teste de carga. Para obter mais informaç
 
 6. Crie uma nova classe que implemente a interface <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-7. Crie o projeto.
+7. Compile o projeto.
 
 8. Adicione o novo plug-in de teste de desempenho na Web usando o Editor de Testes de Desempenho Web:
 
@@ -51,20 +51,20 @@ Você também pode criar plug-ins para teste de carga. Para obter mais informaç
 
          A caixa de diálogo **Adicionar plug-in de teste na Web** é exibida.
 
-    2. Em **Selecionar um plug-in**, selecione a classe do plug-in do teste de desempenho da Web.
+    2. Em **Selecionar um plug-in,** selecione a classe plug-in do teste de desempenho da Web.
 
     3. No painel **Propriedades do plug-in selecionado**, defina os valores iniciais a serem usados pelo plug-in em tempo de execução.
 
         > [!NOTE]
         > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode editar as propriedades de plug-in de teste de desempenho na Web mais tarde usando a janela Propriedades.
 
-    4. Clique em **OK**.
+    4. Escolha **OK**.
 
 9. Execute o teste de desempenho na Web.
 
-     Para obter um exemplo de implementação de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, confira [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Para obter um <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>exemplo de implementação de , consulte [Como: Criar um plug-in de teste de desempenho web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630841"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referência de tarefas do WPF MSBuild
@@ -37,35 +37,35 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- Gera um assembly se pelo menos uma página XAML em um projeto referencia um tipo declarado localmente nesse projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.
+ Gera um conjunto se pelo menos uma página XAML em um projeto faz referência a um tipo que é declarado localmente nesse projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
- Retorna o diretório do tempo de execução de .NET Framework atual.
+ Retorna o diretório do tempo de execução atual do .NET Framework.
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
- Converte arquivos de projeto XAML não localizáveis em formato binário compilado.
+ Converte arquivos de projeto XAML não localizados em formato binário compilado.
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- Executa a compilação de marcação de segundo passo em arquivos XAML que fazem referência a tipos no mesmo projeto.
+ Realiza compilação de marcação de segunda passagem em arquivos XAML que referenciam tipos no mesmo projeto.
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Mescla os atributos de localização e comentários de um ou mais arquivos de formato binário XAML em um único arquivo para o assembly inteiro.
+ Mescla os atributos de localização e os comentários de um ou mais arquivos de formato binário XAML em um único arquivo para toda a montagem.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Insere um ou mais recursos ( *. jpg*, *. ico*, *. bmp*, XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
+ Incorpora um ou mais recursos *(.jpg*, *.ico,* *.bmp*, XAML em formato binário e outros tipos de extensão) em um arquivo *.resources.*
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- Verifica, atualiza ou remove os UIDs (identificadores exclusivos) para localizar todos os elementos XAML incluídos nos arquivos XAML de origem.
+ Verifica, atualiza ou remove identificadores exclusivos (UIDs), a fim de localizar todos os elementos XAML que estão incluídos nos arquivos XAML de origem.
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Adiciona o elemento **\<HostInBrowser/>** ao manifesto do aplicativo ( *\<ProjectName >. exe. manifest*) quando um projeto do aplicativo de navegador XAML (XBAP) é compilado.
+ Adiciona o ** \<elemento hostInBrowser />** ao manifesto do aplicativo*\<(projectname>.exe.manifest)* quando um projeto XAML Browser Application (XBAP) é construído.
 
 ## <a name="see-also"></a>Confira também
 
