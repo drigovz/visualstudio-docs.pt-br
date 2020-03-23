@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Ferramentas do Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Conjuntos de dados
+    - name: DataSets
       items:
         - name: Ferramentas de conjunto de dados
           href: dataset-tools-in-visual-studio.md
@@ -38,7 +38,7 @@
   items:
     - name: Criar um banco de dados
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Conexões
+    - name: conexões
       items:
         - name: Adicionar conexões
           href: add-new-connections.md
@@ -116,11 +116,11 @@
               href: hierarchical-update.md
             - name: Tratar uma exceção de simultaneidade
               href: handle-a-concurrency-exception.md
-            - name: Transações
+            - name: Transactions
               items:
                 - name: Salvar dados usando uma transação
                   href: save-data-by-using-a-transaction.md
-                - name: 'Passo a passo: Salvando dados em uma transação'
+                - name: 'Passo a passo: salvar dados em uma transação'
                   href: save-data-in-a-transaction.md
             - name: Salvar dados em um banco de dados (várias tabelas)
               href: save-data-to-a-database-multiple-tables.md

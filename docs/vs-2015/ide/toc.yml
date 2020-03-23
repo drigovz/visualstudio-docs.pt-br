@@ -1,6 +1,6 @@
-- name: Visual Studio IDE
+- name: IDE do Visual Studio
   items:
-    - name: Visual Studio IDE
+    - name: IDE do Visual Studio
       href: visual-studio-ide.md
     - name: Otimizar o tempo de inicialização do Visual Studio
       href: optimize-visual-studio-startup-time.md
@@ -90,7 +90,7 @@
           href: getting-started-with-cpp-in-visual-studio.md
         - name: Introdução à depuração no Visual Studio 2015
           href: getting-started-with-debugging-in-visual-studio-2015.md
-        - name: Soluções e Projetos
+        - name: Soluções e projetos
           href: solutions-and-projects-in-visual-studio.md
         - name: Criando soluções e projetos
           href: creating-solutions-and-projects.md
@@ -150,9 +150,9 @@
               href: how-to-create-starter-kits.md
             - name: Localizar e organizar modelos
               href: how-to-locate-and-organize-project-and-item-templates.md
-            - name: Personalização de modelos
+            - name: Personalizando modelos
               items:
-                - name: Personalização de modelos
+                - name: Personalizando modelos
                   href: customizing-project-and-item-templates.md
                 - name: Atualizar modelos existentes
                   href: how-to-update-existing-templates.md
@@ -166,9 +166,9 @@
                   href: visual-studio-template-reference.md
                 - name: Parâmetros de modelo
                   href: template-parameters.md
-    - name: Escrevendo código
+    - name: Escrevendo Código
       items:
-        - name: Escrevendo código
+        - name: Escrevendo Código
           href: writing-code-in-the-code-and-text-editor.md
         - name: Localizando e substituindo texto
           items:
@@ -180,7 +180,7 @@
               href: find-command-box.md
             - name: Localizar em Arquivos
               href: find-in-files.md
-            - name: Substituir nos Arquivos
+            - name: Substituir em Arquivos
               href: replace-in-files.md
         - name: Codificações e quebras de linha
           href: encodings-and-line-breaks.md
@@ -296,7 +296,7 @@
               href: troubleshooting-snippets.md
             - name: Referência de esquema dos snippets de código
               href: code-snippets-schema-reference.md
-        - name: Usando a caixa de ferramentas
+        - name: Usando a Caixa de Ferramentas
           href: using-the-toolbox.md
         - name: Exibindo a estrutura do código
           items:
@@ -524,7 +524,7 @@
           href: securing-applications.md
         - name: Mantendo segurança
           href: maintaining-security.md
-        - name: Permissões de usuário
+        - name: Permissões de Usuário
           href: user-permissions-and-visual-studio.md
         - name: Bibliografia de segurança
           href: security-bibliography.md
@@ -640,7 +640,7 @@
               href: reference/go-to-line.md
             - name: Janela imediata
               href: reference/immediate-window.md
-            - name: Arquivos diversos
+            - name: arquivos diversos
               href: reference/miscellaneous-files.md
             - name: Caixa de diálogo Opções
               href: reference/options-dialog-box-visual-studio.md
@@ -730,7 +730,7 @@
                   href: reference/options-page-text-editor-node-properties.md
             - name: 'Página de Opções, Depuração, Propriedades do Nó'
               href: reference/options-page-debugging-node-properties.md
-            - name: Janela Saída
+            - name: Janela de saída
               href: reference/output-window.md
             - name: Referência de propriedades de projeto
               items:
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Página de Depuração, Designer de Projeto'
                   href: reference/debug-page-project-designer.md
-                - name: 'Página Minhas extensões, Designer de projeto'
+                - name: 'Página Minhas Extensões, Designer de Projeto'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Página de Publicação, Designer de Projeto'
                   items:
@@ -826,7 +826,7 @@
               href: reference/devenv-command-line-switches.md
             - name: /?
               href: reference/q-devenv-exe.md
-            - name: / Build
+            - name: /Build
               href: reference/build-devenv-exe.md
             - name: /Clean
               href: reference/clean-devenv-exe.md
@@ -894,7 +894,7 @@
               href: reference/find-command.md
             - name: Comando Localizar nos Arquivos
               href: reference/find-in-files-command.md
-            - name: Comando Ir para
+            - name: comando Ir para
               href: reference/go-to-command.md
             - name: Comando Importar e Exportar Configurações
               href: reference/import-and-export-settings-command.md
@@ -956,7 +956,7 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Recursos para solucionar problemas de erros do IDE
+        - name: Recursos para solucionar problemas de erros IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
         - name: Acessibilidade para pessoas com deficiências
           items:

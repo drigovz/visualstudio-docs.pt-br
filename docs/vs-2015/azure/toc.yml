@@ -54,13 +54,13 @@
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
         - name: Conheça as várias maneiras de depurar um serviço de nuvem do Azure
           href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
+        - name: Configurar diagnóstico para máquinas virtuais e Serviços de Nuvem do Azure
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
         - name: Uso do Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local
           href: vs-azure-tools-emulator-express-debug-run.md
         - name: Depurar um serviço de nuvem do Azure publicado com o IntelliTrace
           href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-        - name: Testar o desempenho de um serviço de nuvem
+        - name: Teste o desempenho de um serviço de nuvem
           href: vs-azure-tools-performance-profiling-cloud-services.md
         - name: Otimizar o código do Azure
           href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
@@ -94,13 +94,13 @@
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Usar o Gerenciador de Armazenamento com o armazenamento de arquivos do Azure
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Notas sobre a versão do Gerenciador de Armazenamento do Microsoft Azure
+        - name: Notas de versão do Gerenciador de Armazenamento do Microsoft Azure
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Acessibilidade do Gerenciador de Armazenamento
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-- name: Cloud Explorer
+- name: Gerenciador de Nuvem
   items:
-    - name: Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
+    - name: Navegar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: Gerenciar os recursos associados às suas contas do Azure no Cloud Explorer
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

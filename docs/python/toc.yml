@@ -14,9 +14,9 @@
       href: installing-python-support-in-visual-studio.md
     - name: Instalar interpretadores do Python
       href: installing-python-interpreters.md
-- name: Guias de Início Rápido
+- name: Inícios rápidos
   items:
-    - name: Criar um aplicativo Web com o Flask
+    - name: Criar um aplicativo Web com Flask
       href: ../ide/quickstart-python.md
       maintainContext: true
     - name: Criar um projeto por meio de um modelo
@@ -57,7 +57,7 @@
           href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
         - name: 4 – Usar o modelo Projeto Web Django
           href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-        - name: 5 – Autenticar usuários
+        - name: 5 - Autenticar usuários
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 – Usar o modelo Pesquisa Projeto Web Django
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md

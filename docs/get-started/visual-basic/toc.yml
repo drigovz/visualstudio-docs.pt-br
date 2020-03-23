@@ -13,13 +13,13 @@
 - name: Criar um aplicativo
   expanded: true
   items:
-    - name: Criar um aplicativo do console
+    - name: Criar um aplicativo de console
       href: tutorial-console.md
     - name: Criar um aplicativo UWP
       href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Criar um aplicativo WPF
       href: tutorial-wpf.md
-    - name: Como criar um aplicativo Web
+    - name: Criar um aplicativo Web
       href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
     - name: Criar um aplicativo do Windows Forms
       href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
@@ -30,13 +30,13 @@
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Escrever e editar o código
       href: tutorial-editor.md
-    - name: Compilar e criar
+    - name: Compilação e construção
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Depurar seu código
       href: ../visual-basic/tutorial-debugger.md
     - name: Teste de unidade
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Implantar o projeto
+    - name: Implante o seu projeto
       href: ../../deployment/index.yml
     - name: Acessar dados
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

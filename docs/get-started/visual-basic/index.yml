@@ -15,17 +15,17 @@ metadata:
   dev_langs:
   - VB
   ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/19/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74188612"
 landingContent:
 - title: Introdução
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalar o Visual Studio
+    - text: Instalar Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -39,7 +39,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Criar um aplicativo do console
+    - text: Criar um aplicativo de console
       url: tutorial-console.md
     - text: Criar um aplicativo da área de trabalho do Windows
       url: tutorial-wpf.md
@@ -55,7 +55,7 @@ landingContent:
       url: ../tutorial-open-project-from-repo.md
     - text: Escrever e editar o código
       url: tutorial-editor.md
-    - text: Compilar e criar
+    - text: Compilação e construção
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Depurar seu código
       url: ../csharp/tutorial-debugger.md

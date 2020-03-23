@@ -42,21 +42,21 @@
       items:
         - name: Usando os designers de atividades
           href: using-the-activity-designers.md
-        - name: Fluxo de controle
+        - name: Fluxo de Controle
           items:
-            - name: Fluxo de controle
+            - name: Fluxo de Controle
               href: control-flow-activity-designers.md
             - name: DoWhile
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: If
+            - name: Se
               href: if-activity-designer.md
-            - name: Parallel
+            - name: Paralelo
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: Escolher
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
@@ -106,11 +106,11 @@
               href: sendandreceivereply-template-designer.md
             - name: TransactedReceiveScope
               href: transactedreceivescope-activity-designer.md
-        - name: Tempo de execução
+        - name: Runtime
           items:
-            - name: Tempo de execução
+            - name: Runtime
               href: runtime-activity-designers.md
-            - name: Persist
+            - name: Persistir
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -120,7 +120,7 @@
               href: primitives-activity-designers.md
             - name: Assign
               href: assign-activity-designer.md
-            - name: Atraso
+            - name: Atrasar
               href: delay-activity-designer.md
             - name: InvokeDelegate
               href: invokedelegate.md
@@ -136,9 +136,9 @@
               href: cancellationscope-activity-designer.md
             - name: CompensableActivity
               href: compensableactivity-activity-designer.md
-            - name: Compensate
+            - name: Compensar
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: Confirmar
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
@@ -204,7 +204,7 @@
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
         - name: Recursos de Designer de Fluxo de Trabalho Shell
           href: workflow-designer-shell-features.md
-        - name: Atalhos de teclado
+        - name: Atalhos do teclado
           href: keyboard-shortcuts-in-the-workflow-designer.md
         - name: Mensagens de erro
           href: error-messages-in-workflow-designer.md
@@ -286,7 +286,7 @@
               items:
                 - name: Designer herdado para a ajuda do Windows Workflow Foundation interface de usuário
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Associar a uma caixa de diálogo de propriedades da atividade (legados)
+                - name: Associar à caixa de diálogo de propriedade de uma atividade (legados)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Procurar e selecione uma caixa de diálogo de tipo do .NET (legados)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

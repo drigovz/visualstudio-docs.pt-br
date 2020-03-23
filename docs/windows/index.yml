@@ -11,14 +11,14 @@ metadata:
   f1_keywords:
   - MSDNSTART
   ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/28/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "77904055"
 highlightedContent:
   items:
-  - title: Instalação e configuração
+  - title: Configuração e instalação
     itemType: download
     url: /visualstudio/install/install-visual-studio
   - title: Bem-vindo ao IDE do Visual Studio
@@ -94,7 +94,7 @@ conceptualContent:
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
-  title: Linguagens
+  title: Languages
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -148,13 +148,13 @@ additionalContent:
     - title: Medir o desempenho
       summary: Identifique os gargalos e otimize o desempenho do código usando ferramentas de diagnóstico.
       url: ../profiling/index.yml
-    - title: Estender
+    - title: Extend
       summary: Adicione sua própria funcionalidade ao IDE do Visual Studio para melhorar sua experiência de desenvolvimento.
       url: ../extensibility/index.yml
-    - title: Dados
+    - title: data
       summary: Crie aplicativos de dados que se conectem a qualquer banco de dados ou serviço e em qualquer lugar – no local ou na nuvem.
       url: ../data-tools/accessing-data-in-visual-studio.md
-    - title: Colaboração
+    - title: Colaborar
       summary: Compartilhar, editar e depurar o código em um ambiente de colaboração em tempo real.
       url: /visualstudio/liveshare/
     - title: Desenvolver com contêineres do Docker
@@ -205,6 +205,6 @@ additionalContent:
         url: ../extensibility/index.yml
       - text: Desenvolvimento de Linux com C++
         url: /cpp/linux/
-      - text: Desenvolvimento de plataforma cruzada do .NET Core
+      - text: Desenvolvimento multiplataforma com o .NET Core
         url: /dotnet/core/
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/talk-to-us.md) - [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html)'

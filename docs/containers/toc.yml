@@ -38,7 +38,7 @@
       items:
         - name: Como o Visual Studio cria aplicativos em contêineres
           href: container-build.md
-    - name: Solução de problemas
+    - name: solução de problemas
       href: troubleshooting-docker-errors.md
     - name: Referência
       items:

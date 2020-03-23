@@ -94,7 +94,7 @@
           href: sendandreceivereply-template-designer.md
         - name: Designer de atividade de TransactedReceiveScope
           href: transactedreceivescope-activity-designer.md
-    - name: Designers de atividade do tempo de execução
+    - name: Designers de atividade do runtime
       items:
         - name: Visão geral e referência
           displayName: Run-time activity designers
@@ -194,7 +194,7 @@
       href: system-activities-tab-choose-toolbox-items-dialog-box.md
     - name: Recursos de Designer de Fluxo de Trabalho Shell
       href: workflow-designer-shell-features.md
-    - name: Atalhos de teclado
+    - name: Atalhos do teclado
       href: keyboard-shortcuts-in-the-workflow-designer.md
     - name: Mensagens de erro
       href: error-messages-in-workflow-designer.md

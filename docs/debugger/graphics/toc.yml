@@ -50,21 +50,21 @@
   items:
     - name: Exemplos de diagnóstico do gráfico
       href: graphics-diagnostics-examples.md
-    - name: 'Passo a passo: Capturando informações de gráficos'
+    - name: 'Passo a passo: capturando informações de gráficos'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Passo a passo: Como capturar informações de gráficos de forma programática'
+    - name: 'Instruções passo a passo: capturando informações de gráfico de forma programática'
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: 'Passo a passo: Objetos ausentes devido ao estado do dispositivo'
+    - name: 'Instruções passo a passo: objetos ausentes devido ao estado do dispositivo'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Passo a passo: Objetos ausentes devido ao sombreamento de vértice'
+    - name: 'Instruções passo a passo: objetos ausentes devido ao sombreamento de vértice'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline'
+    - name: 'Instruções passo a passo: objetos ausentes devido ao pipeline configurado incorretamente'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Passo a passo: Como depurar erros de renderização devido ao sombreamento'
+    - name: 'Instruções passo a passo: depurando erros de renderização devido ao sombreamento'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação'
+    - name: 'Instruções passo a passo: usando diagnóstico de gráfico para depurar um sombreador computado'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Como: Alterar o computador de reprodução de Diagnóstico de Gráficos'
+    - name: Como alterar a máquina de reprodução de diagnóstico do gráfico
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Referência (captura programática)
   items:

@@ -512,9 +512,9 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Gerenciando associações de arquivo lado a lado
               href: managing-side-by-side-file-associations.md
-- name: Arquivo morto
+- name: Archive
   items:
-    - name: Arquivo morto
+    - name: Archive
       href: archive.md
     - name: Interfaces herdadas no Editor
       items:
@@ -706,7 +706,7 @@
               href: usedcommands-element.md
             - name: Elemento UsedCommand
               href: usedcommand-element.md
-        - name: Elementos pai
+        - name: Elemento pai
           href: parent-element.md
         - name: Elemento Icon
           href: icon-element.md
@@ -856,7 +856,7 @@
           href: capability-flags.md
         - name: Sinalizadores de bit usados por comandos específicos
           href: bitflags-used-by-specific-commands.md
-        - name: Códigos de erro
+        - name: Códigos de Erro
           href: error-codes.md
         - name: Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md

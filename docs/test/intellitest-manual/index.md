@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591613"
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referência do IntelliTest
@@ -27,7 +27,7 @@ ms.locfileid: "75591613"
     * [Simultaneidade](introduction.md#concurrency)
     * [Código nativo](introduction.md#native-code)
     * [Plataforma](introduction.md#platform)
-    * [Linguagem](introduction.md#language)
+    * [Idioma](introduction.md#language)
     * [Raciocínio simbólico](introduction.md#symbolic-reasoning)
     * [Rastreamentos de pilha incorretos](introduction.md#incorrect-stack-traces)
   - [Leitura adicional](introduction.md#further-reading)
@@ -57,7 +57,7 @@ ms.locfileid: "75591613"
   - [Instanciação de classes existentes](input-generation.md#existing-classes)
   - [Visibilidade](input-generation.md#visibility)
   - [Simulações parametrizadas](input-generation.md#parameterized-mocks)
-  - [Estruturas](input-generation.md#structs)
+  - [Structs](input-generation.md#structs)
   - [Matrizes e cadeias de caracteres](input-generation.md#arrays-and-strings)
   - [Obtenção de entradas adicionais](input-generation.md#additional-inputs)
   - [Leitura adicional](input-generation.md#further-reading)
