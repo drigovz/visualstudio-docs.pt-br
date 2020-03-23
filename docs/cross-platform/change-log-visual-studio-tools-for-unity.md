@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74706778"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
@@ -29,9 +29,9 @@ Lançado em 3 de dezembro de 2019
 
 - **Integração:**
 
-  - Corrigido o diagnóstico com interfaces definidas pelo usuário.
+  - Corrigimos diagnósticos com interfaces definidas pelo usuário.
 
-  - Correção de dicas de ferramenta rápidas com expressões malformadas.
+  - Corrigido dicas de ferramentas rápidas com expressões malformadas.
 
 ## <a name="4410"></a>4.4.1.0
 
@@ -41,21 +41,21 @@ Lançado em 6 de novembro de 2019
 
 - **Integração:**
 
-  - Suporte adicionado para processos em segundo plano do Unity. (O depurador é capaz de se conectar automaticamente ao processo principal em vez de um processo filho).
+  - Adicionado suporte aos processos de fundo do Unity. (O depurador é capaz de se conectar automaticamente ao processo principal em vez de um processo filho).
   
-  - Adicionada uma dica de ferramenta rápida para mensagens do Unity, exibindo a documentação associada.
+  - Adicionada uma dica de ferramenta rápida para mensagens Unity, exibindo a documentação associada.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
 - **Integração:**
 
-  - Correção do `UNT0002` analisador de comparação de marcas com expressões binárias e de invocação avançadas.
+  - Corrigimos o analisador de comparação de etiquetas `UNT0002` com expressões binárias avançadas e invocações.
 
 ### <a name="deprecated-features"></a>Recursos preteridos
 
 - **Integração:**
 
-  - No futuro, Ferramentas do Visual Studio para Unity dará suporte apenas ao Visual Studio 2017 +.
+  - Daqui para frente, o Visual Studio Tools for Unity só suportará o Visual Studio 2017+.
 
 ## <a name="4400"></a>4.4.0.0
 
@@ -65,9 +65,9 @@ Lançado em 15 de outubro de 2019
 
 - **Integração:**
 
-  - Adicionado um supressor para `IDE0060` (parâmetro não usado) para todas as mensagens do Unity.
+  - Adicionado um supressor para `IDE0060` (parâmetro não utilizado) para todas as mensagens de Unidade.
   
-  - Adicionada uma dica de ferramenta rápida para campos marcados com `TooltipAttribute`. (Isso também funcionará para um acessador get simples usando esse campo).
+  - Adicionada uma dica de ferramenta `TooltipAttribute`rápida para campos marcados com . (Isso funcionará para um simples acessório de obter usando este campo também).
 
 ## <a name="4330"></a>4.3.3.0
 
@@ -77,7 +77,7 @@ Lançado em 23 de setembro de 2019
 
 - **Integração:**
 
-  - Correção de erros e relatórios de aviso para compilações leves.
+  - Corrigimos relatórios de erros e avisos para compilações leves.
 
 ## <a name="4320"></a>4.3.2.0
 
@@ -87,22 +87,22 @@ Lançado em 16 de setembro de 2019
 
 - **Integração:**
 
-  - Nós aprofundamos a compreensão de que o Visual Studio tem para projetos do Unity adicionando novos diagnósticos específicos ao Unity. Também tornamos o IDE mais inteligente, suprimindo diagnósticos C# gerais que não se aplicam a projetos do Unity. Por exemplo, o IDE não mostrará uma correção rápida para alterar uma variável de inspetor para `readonly`, o que impediria que você modificasse a variável no editor do Unity.
-    - `UNT0001`: as mensagens do Unity são chamadas pelo tempo de execução mesmo se estiverem vazias, não as declare para evitar o processamento de uncesseray pelo tempo de execução do Unity.
-    - `UNT0002`: a comparação de marcas usando a igualdade de cadeia de caracteres é mais lenta do que o método CompareTag interno.
-    - `UNT0003`: o uso da forma genérica de GetComponent é preferencial para a segurança de tipo.
-    - `UNT0004`: a mensagem de atualização é dependente de taxa de quadros e deve usar time. deltaTime em vez de time. fixedDeltaTime.
-    - `UNT0005`: a mensagem FixedUpdate é independente de taxa de quadros e deve usar time. fixedDeltaTime em vez de time. deltaTime.
-    - `UNT0006`: uma assinatura de método incorreta foi detectada para esta mensagem do Unity.
-    - `UNT0007`: Unity substitui o operador de comparação NULL para objetos Unity que são incompatíveis com a União nula.
-    - `UNT0008`: Unity substitui o operador de comparação nulo para objetos Unity que é incompatível com a propagação nula.
-    - `UNT0009`: ao aplicar o atributo InitializeOnLoad a uma classe, você precisa fornecer um construtor estático. O atributo InitializeOnLoad verifica se ele será chamado quando o editor for iniciado.
-    - `UNT0010`: monocomportamento só deve ser criado usando addComponent (). O MonoBehaviour é um componente e precisa ser anexado a um GameObject.
-    - `UNT0011`: ScriptableObject só deve ser criado usando CreateInstance (). ScriptableObject precisa ser criado pelo mecanismo do Unity para manipular métodos de mensagem do Unity.
-    - `USP0001` para `IDE0029`: os objetos do Unity não devem usar a União nula.
-    - `USP0002` para `IDE0031`: os objetos do Unity não devem usar a propagação nula.
-    - `USP0003` para `IDE0051`: as mensagens do Unity são invocadas pelo tempo de execução do Unity.
-    - `USP0004` para `IDE0044`: os campos com um atributo Serializefield não devem se tornar ReadOnly.
+  - Aprofundamos o entendimento que o Visual Studio tem para projetos unity adicionando novos diagnósticos específicos ao Unity. Também tornamos o IDE mais inteligente, suprimindo diagnósticos C# gerais que não se aplicam a projetos do Unity. Por exemplo, o IDE não mostrará uma correção `readonly` rápida para alterar uma variável de inspetor para a qual impediria que você modificasse a variável no Unity Editor.
+    - `UNT0001`: As mensagens de unidade são chamadas pelo tempo de execução, mesmo que estejam vazias, não as declare para evitar o processamento de desesseray pelo tempo de execução da Unidade.
+    - `UNT0002`: A comparação de caracteres usando a igualdade de strings é mais lenta do que o método compareTag incorporado.
+    - `UNT0003`: O uso da forma genérica de GetComponent é preferido para a segurança do tipo.
+    - `UNT0004`: A mensagem de atualização é dependente da taxa de quadros e deve usar time.deltaTime em vez de Time.fixedDeltaTime.
+    - `UNT0005`: A mensagem FixedUpdate é independente da taxa de quadros e deve usar time.fixedDeltaTime em vez de Time.deltaTime.
+    - `UNT0006`: Foi detectada uma assinatura de método incorreta para esta mensagem unity.
+    - `UNT0007`: A unidade substitui o operador de comparação nula para objetos unity que é incompatível com a coalescção nula.
+    - `UNT0008`: A unidade substitui o operador de comparação nula para objetos Unity que é incompatível com a propagação nula.
+    - `UNT0009`: Ao aplicar o atributo InitializeOnLoad a uma classe, você precisa fornecer um construtor estático. O atributo InitializeOnLoad verifica se ele será chamado quando o editor for iniciado.
+    - `UNT0010`: MonoComportamentos só devem ser criados usando AddComponent(). O MonoBehaviour é um componente e precisa ser anexado a um GameObject.
+    - `UNT0011`: ScriptableObject só deve ser criado usando CreateInstance(). ScriptableObject precisa ser criado pelo mecanismo do Unity para manipular métodos de mensagem do Unity.
+    - `USP0001`para: `IDE0029`Os objetos de unidade não devem usar coalescção nula.
+    - `USP0002`para: `IDE0031`Os objetos de unidade não devem usar propagação nula.
+    - `USP0003`para `IDE0051`: As mensagens de unidade são invocadas pelo tempo de execução da Unidade.
+    - `USP0004`para `IDE0044`: Campos com um atributo SerializeField não devem ser feitos somente de leitura.
 
 ## <a name="4310"></a>4.3.1.0
 
@@ -112,11 +112,11 @@ Lançado em 4 de setembro de 2019
 
 - **Avaliação:**
 
-  - Adição de suporte para melhor exibição de tipo, ou seja, `List<object>` em vez de `List'1[[System.Object, <corlib...>]]`.
+  - Adicionado suporte para melhor exibição `List<object>` de `List'1[[System.Object, <corlib...>]]`tipo, ou seja, em vez de .
 
-  - Suporte adicionado para acesso de membro de ponteiro, ou seja, `p->data->member`.
+  - Suporte adicionado para acesso a membros `p->data->member`do ponteiro, ou seja. .
 
-  - Suporte adicionado para conversões implícitas em inicializadores de matriz, ou seja, `new byte [] {1,2,3,4}`.
+  - Adicionado suporte para conversões implícitas em iniciadores `new byte [] {1,2,3,4}`de matriz, ou seja, .
 
 ## <a name="4300"></a>4.3.0.0
 
@@ -130,7 +130,7 @@ Lançado em 13 de agosto de 2019
 
 - **Integração:**
 
-  - Melhoria da janela "anexar à instância do Unity" com recursos de classificação, pesquisa e atualização. O PID agora é exibido até mesmo para players locais (consultando soquetes de escuta no sistema para recuperar o processo de propriedade).
+  - Melhorou a janela "Anexar à unidade" com recursos de classificação, pesquisa e atualização. O PID agora é exibido até mesmo para jogadores locais (consultando tomadas de escuta no sistema para recuperar o processo de propriedade).
 
   - adicionado suporte para arquivos asmdef.
 
@@ -146,13 +146,13 @@ Lançado em 13 de agosto de 2019
 
   - corrigida a inspeção com tipos IntPtr.
   
-  - Correção de problemas de depuração com exceções.
+  - Corrigimos problemas de etapas com exceções.
 
-  - Correção da avaliação de pseudo identificadores (como $exception).
+  - Avaliação fixa de pseudo identificadores (como $exception).
 
-  - Impedir falha ao desreferenciar endereços inválidos.  
+  - Evite falhas ao desfazer endereços inválidos.  
 
-  - Corrigido o problema com AppDomains descarregados.
+  - Corrigido problema com domínios deaplicativos descarregados.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -214,7 +214,7 @@ Lançamento em 21 de maio de 2019
 
   - Adicionado suporte para pacotes Unity no UPE. Somente pacotes referenciados (usando manifest.json na pasta `Packages`) e pacotes locais (incorporados na pasta `Packages`) são visíveis.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Preservar propriedades externas ao processar o arquivo da solução.
 
@@ -262,7 +262,7 @@ Lançado em 13 de fevereiro de 2019
 
   - Adicionado suporte para detectar corretamente os processos do Unity durante a instalação e permitir que o mecanismo de configuração manipule melhor os bloqueios de arquivos.
 
-  - API de `ScriptableObject` atualizada.
+  - Atualizei a `ScriptableObject` API.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -270,15 +270,15 @@ Lançado em 31 de janeiro de 2019
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
-  - Campos públicos e serializados não irão mais gerar avisos. Suprimemos automaticamente o `CS0649` e `IDE0051` avisos do compilador em projetos do Unity que criaram essas mensagens.
+  - Campos públicos e serializados não irão mais gerar avisos. Suprimimos automaticamente os `CS0649` avisos `IDE0051` e compiladores em projetos da Unity que criaram essas mensagens.
 
 - **Integração:**
 
   - Aprimorada a experiência do usuário para exibir o editor Unity e instâncias do player (as janelas agora podem ser redimensionadas, usam margens uniformes e exibem uma alça de redimensionamento). Adicionadas informações de identificação de processo para editores Unity.
 
-  - API de `MonoBehaviour` atualizada.
+  - Atualizei a `MonoBehaviour` API.
 
 - **Avaliação:**
 
@@ -406,7 +406,7 @@ Lançado em 13 de novembro de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Foi revertida a solução alternativa para um bug de desempenho do Unity que foi corrigido pelo Unity.
 
@@ -464,7 +464,7 @@ Lançado em 24 de julho de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - (Transferido do 3.9.0.0) Reversão da solução alternativa para um bug de desempenho do Unity que foi corrigido pelo Unity.
 
@@ -474,7 +474,7 @@ Lançado em 7 de julho de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Solução alternativa temporária para um bug de desempenho do Unity: armazenar em cache MonoIslands ao gerar projetos.
 
@@ -514,7 +514,7 @@ Lançado em 30 de maio de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Não converta mais um pdb portátil para mdb ao usar o novo runtime do Unity.
 
@@ -554,7 +554,7 @@ Lançado em 7 de maio de 2018
 
   - Correção do uso de configurações de exceção.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Exclusão de unidades de compilação do gerenciador de pacotes da geração.
 
@@ -564,7 +564,7 @@ Lançado em 13 de março de 2018
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Adicionado o suporte para o gerador de projeto novo no Unity 2018.1.
 
@@ -584,7 +584,7 @@ Lançado em 5 de março de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Correção da detecção de versão Mono.
 
@@ -598,13 +598,13 @@ Lançado em 23 de fevereiro de 2018
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Suporte adicionado para o .NET Standard.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigida a detecção da estrutura de destino Unity.
 
@@ -646,7 +646,7 @@ Lançado em 10 de janeiro de 2018
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Adicionado o suporte para o modelo de referência MonoIsland 2018.1.
 
@@ -664,7 +664,7 @@ Lançado em 10 de janeiro de 2018
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Correção do cálculo de guid de projeto para projetos de player.
 
@@ -710,7 +710,7 @@ Lançado em 4 de dezembro de 2017
 
   - O menu de ajuda da API de unidade fixa não está sendo exibido.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Correção da geração de projetos do player ao trabalhar em um jogo UWP com o back-end IL2CPP/.NET 4.6.
 
@@ -726,7 +726,7 @@ Lançado em 19 de setembro de 2017
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Adicionado suporte para unidades de compilação assembly.json.
 
@@ -748,7 +748,7 @@ Lançado em 19 de setembro de 2017
 
   - Corrigidos os itens com locais gerados pelo compilador.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigida a referência a Microsoft.CSharp fixa para nível de API 4.6.
 
@@ -758,7 +758,7 @@ Lançado em 15 de agosto de 2017
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Correção da geração de solução do Visual Studio no Unity 5.5 e nas versões anteriores.
 
@@ -786,7 +786,7 @@ Lançado em 14 de agosto de 2017
 
   - Corrigidos problemas ao adicionar itens ao Visual Studio Watch.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigidas referências de nome de assembly com arquivos mcs.rsp.
 
@@ -804,7 +804,7 @@ Lançado em 10 de maio de 2017
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Editor de Códigos:**
+- **Editor de código:**
 
   - Corrigida classificação/conclusão com atributos personalizados.
 
@@ -820,7 +820,7 @@ Lançado em 7 de abril de 2017
 
   - Suporte adicionado para o novo runtime do Unity (com compatibilidade com .NET 4.6/C# 6).
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Suporte adicionado para o perfil do .NET 4.6.
 
@@ -832,11 +832,11 @@ Lançado em 7 de abril de 2017
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Editor de Códigos:**
+- **Editor de código:**
 
   - Posição fixa do cursor após a inserção do método com preenchimento automático.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Versão do assembly removido após o processamento.
 
@@ -851,7 +851,7 @@ Lançado em 25 de janeiro de 2017
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigida regressão em que projetos de Plug-Ins eram referenciados duas vezes, primeiro como uma DLL binária em então como uma referência de projeto.
 
@@ -860,7 +860,7 @@ Lançado em 23 de janeiro de 2017
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Editor de Códigos:**
+- **Editor de código:**
 
   - Corrigida uma falha ao iniciar uma declaração de atributo sem preenchimento de chaves.
 
@@ -870,13 +870,13 @@ Lançado em 23 de janeiro de 2017
 
   - Adicionado aviso no caso de um ponto de interrupção não vinculável (quando nenhum local de origem correspondente é encontrado).
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigida a geração de csproj com caracteres especiais/localizados.
 
   - Corrigidas referências fora de Ativos, como Biblioteca (como o SDK do Facebook).
 
-- **Diversos:**
+- **Misc:**
 
   - Adicionada verificação para evitar a execução do Unity ao instalar ou desinstalar.
 
@@ -895,7 +895,7 @@ Lançado em 17 de novembro de 2016
 
   - Adicionado suporte a localização.
 
-- **Editor de Códigos:**
+- **Editor de código:**
 
   - Adicionado C# IntelliSense para mensagens do Unity.
 
@@ -915,7 +915,7 @@ Lançado em 17 de novembro de 2016
 
   - Adicionadas mensagens de erro melhores quando um tipo é esperado ou não é encontrado.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Removido o sufixo CSharp dos nomes de projeto.
 
@@ -943,7 +943,7 @@ Lançado em 17 de novembro de 2016
 
   - Corrigido o suporte para depurar quadros do iterador com o novo Compilador C#.
 
-- **Geração do Projeto:**
+- **Geração de projetos:**
 
   - Corrigido um bug que impedia a compilação ao ter o player da Web do Unity como destino.
 
@@ -999,7 +999,7 @@ Lançado em 4 de fevereiro de 2016
 
   - Adicionado suporte para mensagens de NetworkBehavior nos assistentes.
 
-- **Interface do Usuário:**
+- **Ui:**
 
   - Adicionada uma opção para configurar a visibilidade das mensagens MonoBehavior.
 
@@ -1023,7 +1023,7 @@ Lançado em 4 de fevereiro de 2016
 
   - Corrigido um problema que fazia o Visual Studio congelar durante a depuração.
 
-- **Interface do Usuário:**
+- **Ui:**
 
   - Corrigida uma incompatibilidade com a extensão [Tabs Studio](https://tabsstudio.com/) do Visual Studio.
 
@@ -1077,7 +1077,7 @@ Lançado em 20 de julho de 2015
 
   - Adicionado suporte para curingas * no filtro de extensão de arquivo ao especificar os arquivos a serem incluídos no projeto C#.
 
-- **Integração com o Visual Studio:**
+- **Integração visual studio:**
 
   - Corrigido um problema de compatibilidade com Productivity Power Tools.
 
@@ -1096,7 +1096,7 @@ Lançado em 2 de abril de 2015
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Explorador de Projeto do Unity:**
+- **Explorador do Projeto Unity:**
 
   - renomeie a classe automaticamente ao renomear um arquivo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções**).
 
@@ -1142,7 +1142,7 @@ Lançado em 2 de abril de 2015
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Explorador de Projeto do Unity:**
+- **Explorador do Projeto Unity:**
 
   - Atualize o Explorador de Projeto do Unity depois que os arquivos forem movidos ou renomeados do Gerenciador de Soluções do Visual Studio.
 
@@ -1158,7 +1158,7 @@ Lançado em 2 de abril de 2015
 
   - Certifique-se de que as invocações de método ocorram no domínio adequado no depurador.
 
-- **Unity:**
+- **Unidade:**
 
   - Corrija o local do UnityVS.OpenFile com o Unity 5.
 
@@ -1627,7 +1627,7 @@ Lançado em 28 de novembro de 2012
 ## <a name="10100"></a>1.0.10.0
 Lançado em 9 de outubro de 2012
 
-### <a name="bug-fixes"></a>Correções de Bug
+### <a name="bug-fixes"></a>Correções de bugs
 
 - Corrigida a tela de fundo do Explorador de Projeto do Unity no Visual Studio 2010.
 

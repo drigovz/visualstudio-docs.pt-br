@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969780"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
@@ -20,7 +20,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 
 Esta captura de tela mostra a janela do **Relatório de Uso de GPU**:
 
-![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![O relatório de uso da GPU, com cronogramas de CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,11 +39,11 @@ Os seguintes requisitos para usar a ferramenta Uso de GPU são adicionados aos r
 
 **Para iniciar a ferramenta Uso de GPU:**
 
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).
 
 2. No hub Desempenho e Diagnóstico, marque a caixa ao lado de **Uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas nas quais você esteja interessado. É possível executar várias ferramentas de Desempenho e Diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.
 
-    ![Escolha as ferramentas de diagnóstico que você deseja usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
+    ![Escolha as ferramentas de diagnóstico que deseja usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
 
    > [!NOTE]
    > Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.
@@ -62,15 +62,15 @@ Os seguintes requisitos para usar a ferramenta Uso de GPU são adicionados aos r
 
 1. Na parte inferior da janela da sessão de diagnóstico, escolha o link **Parar Coleta** ou pressione **Parar** no canto superior esquerdo.
 
-   ![Colete informações de intervalo de GPU e CPU.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Coletar informações de tempo de GPU e CPU.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Na parte superior do relatório, selecione uma seção de um dos gráficos que mostra o problema que você deseja investigar. A seleção pode ser feita em até 3 segundos; seções mais longas serão truncadas no início.
 
-   ![Pós&#45;coleta, selecionar um intervalo para exibir os detalhes](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Postar&#45;coleção, selecione uma faixa para ver detalhes](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Na parte inferior do relatório, escolha o link **exibir detalhes** na mensagem **... clique aqui para exibir detalhes de uso de GPU para esse intervalo** para exibir uma linha do tempo detalhada da seleção.
 
-   ![Pós&#45;coleção, com o intervalo selecionado](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
+   ![Coleção de&#45;pós, com alcance selecionado](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
 
    Essa seleção abre um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar gargalos e oportunidades de aumento de paralelismo no código.
 
@@ -90,7 +90,7 @@ A parte inferior exibe uma listagem dos eventos de gráficos que ocorreram duran
 
 Esta é a janela **Relatório de Uso de GPU**:
 
-![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![O relatório de uso da GPU, com cronogramas de CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 Quando você seleciona um evento na parte inferior do relatório, um marcador é exibido nos eventos correspondentes nas respectivas linhas do tempo. Normalmente, um evento em um thread da CPU mostra a chamada à API, enquanto outro evento em uma das linhas do tempo da GPU mostra quando a GPU concluiu a tarefa. Da mesma forma, quando você seleciona um evento em uma linha do tempo, o relatório realça o evento correspondente na parte inferior do relatório. Quando as linhas do tempo são reduzidas na parte superior do relatório, apenas os eventos mais demorados são visíveis. Para ver os eventos que têm uma duração menor, amplie as linhas do tempo usando Ctrl + roda no dispositivo apontador ou o controle de colocação em escala no canto inferior esquerdo do painel superior. Também é possível arrastar o conteúdo do painel de linha do tempo para percorrer os eventos registrados.
 
@@ -102,20 +102,20 @@ Para ajudar a encontrar o que você está procurando, filtre o Relatório Uso da
 |--------------------|-----------------|
 |**Processo**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|
 |**Thread**|A ID do thread de seu interesse. Em um aplicativo multi-threaded, essas informações podem ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|
-|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:**  Alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|
+|**Exibição**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|
 |**Filtrar**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|
 |**Classificação de Hierarquia**|Uma caixa de seleção que indica se as hierarquias de eventos – definidas por meio de marcadores do usuário – são preservadas ou ignoradas.|
 
  A lista de eventos na parte inferior do Relatório de Uso de GPU exibe os detalhes de cada evento.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
-|**Nome do Evento**|O nome do evento de gráficos. Normalmente, um evento corresponde a um evento em uma linha do tempo do thread de CPU e a um evento de linha do tempo de GPU.<br /><br /> Os nomes de eventos podem ser “não atribuídos” se o Uso de GPU não pôde determinar o nome de um evento. Para obter mais informações, consulte a observação abaixo desta tabela.|
+|**Nome do evento**|O nome do evento de gráficos. Normalmente, um evento corresponde a um evento em uma linha do tempo do thread de CPU e a um evento de linha do tempo de GPU.<br /><br /> Os nomes de eventos podem ser “não atribuídos” se o Uso de GPU não pôde determinar o nome de um evento. Para obter mais informações, consulte a observação abaixo desta tabela.|
 |**Início da CPU (ns)**|A hora em que o evento foi iniciado na CPU com uma chamada a uma API do Direct3D. O tempo é medido em nanossegundos, relativo à hora de início do aplicativo.|
 |**Início da GPU (ns)**|A hora em que o evento foi iniciado na GPU. O tempo é medido em nanossegundos, relativo à hora de início do aplicativo.|
 |**Duração da GPU (ns)**|O tempo que o evento levou para ser concluído na GPU, em nanossegundos.|
-|**Nome do Processo**|O nome do aplicativo do qual o evento foi originado.|
-|**ID do Thread**|A ID do thread da qual o evento foi obtido.|
+|**Nome do processo**|O nome do aplicativo do qual o evento foi originado.|
+|**ID do thread**|A ID do thread da qual o evento foi obtido.|
 
 > [!IMPORTANT]
 > Se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como "não atribuídos". Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.
@@ -126,20 +126,20 @@ Para ajudar a encontrar o que você está procurando, filtre o Relatório Uso da
 
 **Para adiar a criação de perfil após a inicialização do aplicativo:**
 
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).
 
 2. No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.
 
 3. Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.
 
-   ![Configurar o início da coleta de Uso de GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
+   ![Configure quando a coleta de uso de GPU for iniciada](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 
 > [!IMPORTANT]
 > Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.
 
 Depois de executar seu aplicativo na ferramenta Uso de GPU, um link adicional se tornará disponível na parte inferior da janela de ferramentas Uso de GPU. Para iniciar a coleta de informações de criação de perfil, escolha o link **Iniciar** na mensagem **Iniciar coleta de dados detalhados de Uso de GPU adicionais**.
 
-## <a name="hwsupport"></a> Suporte de hardware e driver
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Suporte de hardware e driver
 
 Há suporte para os seguintes hardware e drivers de GPU:
 
@@ -151,7 +151,7 @@ Há suporte para os seguintes hardware e drivers de GPU:
 
  No momento, não há suporte para configurações de GPU múltipla, como NVIDIA® SLI™ e AMD Crossfire™. Há suporte para a configuração de elementos gráficos híbridos, como NVIDIA® Optimus™ e AMD Enduro™.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Ferramenta Uso de GPU no Visual Studio (vídeo)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)

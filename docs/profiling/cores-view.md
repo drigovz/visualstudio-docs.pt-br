@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b26b913a42a563e0226ff2697b947684dfec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553052"
 ---
 # <a name="cores-view"></a>Exibição de núcleos
@@ -26,7 +26,7 @@ A **Exibição de Núcleos** mostra como a execução do thread foi mapeada para
 
  A área de legenda tem uma entrada para cada cor no gráfico. Cada entrada mostra a cor e o nome do thread, o número de alternâncias de contexto de núcleo cruzado, o número total de alternâncias de contexto e o percentual de alternâncias de contexto que cruzam núcleos. A legenda é classificada pelo número de alternâncias de contexto de núcleo cruzado, em ordem decrescente. Ela lista apenas os threads executados durante o intervalo de tempo exibido.  A lista será atualizada se você aplicar zoom ou movimento panorâmico.
 
-## <a name="see-also"></a>Consulte também
-- [Visualização Simultânea](../profiling/concurrency-visualizer.md)
+## <a name="see-also"></a>Confira também
+- [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)
 - [Exibição da utilização](../profiling/utilization-view.md)
-- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)

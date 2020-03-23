@@ -16,19 +16,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461388"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Caixa de diálogo Opções: Projetos e Soluções \> compilar e executar
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Caixa de diálogo opções: Projetos e Soluções \> Build and Run
 
-Nessa caixa de diálogo, você poderá especificar o número máximo de projetos de C++ ou C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para acessar essas opções, selecione **Ferramentas** > **Opções**, expanda **Projetos e Soluções** e, em seguida, selecione **Compilar e Executar**.
+Nessa caixa de diálogo, você poderá especificar o número máximo de projetos de C++ ou C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para acessar essas opções, selecione **Opções de ferramentas** > **para** expandir projetos **e soluções**e, em seguida, selecione **Build and Run**.
 
 **Número máximo de builds paralelos de projetos**
 
-Especifica o número máximo de projetos de C++ e de C# que podem ser compilados ao mesmo tempo. Para otimizar o processo de build, o número máximo de compilações paralelas de projetos é automaticamente definido como o número de CPUs do seu computador. O máximo é de 32.
+Especifica o número máximo de projetos de C++ e de C# que podem ser compilados ao mesmo tempo. Para otimizar o processo de build, o número máximo de compilações paralelas de projetos é automaticamente definido como o número de CPUs do seu computador. O máximo é 32.
 
 **Somente compilar dependências e projetos de inicialização ao Executar**
 
@@ -58,10 +58,10 @@ Determina a quantidade de informações do processo de build que é exibida na j
 
 *Aplica-se somente a projetos de C++.*
 
-Determina a quantidade de informação que é gravada no arquivo de log de build, que está localizado em *\\\<ProjectName>\Debug\\\<ProjectName>.log*.
+Determina quanta informação está escrita no arquivo de log de compilação, que está localizado no * \\ \<ProjectName\\\<>\Debug ProjectName>.log*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e Construção](../../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo Opções, Projetos e Soluções](projects-and-solutions-options-dialog-box.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Projetos Web](options-dialog-box-projects-and-solutions-web-projects.md)

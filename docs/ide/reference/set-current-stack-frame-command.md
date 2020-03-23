@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747753"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Definir Quadro de Pilha Atual
@@ -29,10 +29,10 @@ Permite definir um registro de ativação específico.
 Debug.SetCurrentStackFrame index
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `index`
 
-Necessário. Seleciona um registro de ativação pelo seu índice.
+Obrigatórios. Seleciona um registro de ativação pelo seu índice.
 
 ## <a name="example"></a>Exemplo
 
@@ -40,7 +40,7 @@ Necessário. Seleciona um registro de ativação pelo seu índice.
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

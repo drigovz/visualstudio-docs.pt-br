@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605999"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Caixa de diálogo Opções: Editor de texto \> JavaScript/TypeScript \> validação de código
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Caixa de diálogo \> Opções: Validação \> de código javascript/typeScript
 
 Use a página **Validação de Código** da caixa de diálogo **Opções** para modificar as configurações que afetam a maneira como o JavaScript trata os erros. É possível acessar a página **Validação de código** escolhendo **Ferramentas** > **Opções** na barra de menus e, em seguida, expandindo **Editor de Texto** > **JavaScript/TypeScript** > **Validação de código.**
 
@@ -29,7 +29,7 @@ A página **Validação de código** contém as seguintes seções:
 
 Você pode usar essas opções para definir preferências de como o editor JavaScript valida a sintaxe no seu documento.
 
-### <a name="uielement-list"></a>Lista UIElement
+### <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 **Habilitar erros de JavaScript**
 
@@ -39,6 +39,6 @@ Quando definido como **True**, o editor de código JavaScript mostra erros para 
 
 Quando definido como **True**, os erros JavaScript são mostrados como avisos, em vez de erros na **Lista de Erros**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

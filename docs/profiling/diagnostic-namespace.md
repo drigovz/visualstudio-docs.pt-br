@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970077"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
@@ -34,7 +34,7 @@ namespace diagnostic;
 
 |Nome|Descrição|
 |----------|-----------------|
-|[Classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|
+|[classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|
 |[Classe span](../profiling/span-class.md)|Define uma fase do aplicativo.|
 
 ### <a name="enumerations"></a>Enumerações
@@ -46,7 +46,7 @@ namespace diagnostic;
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** *cvmarkersobj.h*
 
- **Namespace:** Concorrência
+ **Namespace:** Simultaneidade
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)

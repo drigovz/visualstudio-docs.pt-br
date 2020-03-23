@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552626"
 ---
 # <a name="cventerspan-function"></a>Função CvEnterSpan
@@ -101,7 +101,7 @@ HRESULT CvEnterSpanExVA(
 
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `argList` Lista de argumentos.
 
  `category` Categoria do período
@@ -114,7 +114,7 @@ HRESULT CvEnterSpanExVA(
 
  `ppSpan` Endereço da variável que conterá o objeto de período resultante. O endereço não pode ser NULL; a variável pode ter qualquer valor.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
 
 ## <a name="requirements"></a>Requisitos
@@ -124,5 +124,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>Consulte também
-- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Confira também
+- [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

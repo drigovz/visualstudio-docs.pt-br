@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Abrir um projeto de um repositório'
+title: 'Tutorial: Abra um projeto a partir de um repo'
 description: Saiba como abrir um projeto em um repositório Git ou DevOps do Azure usando o Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,25 +15,25 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180432"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir um projeto de um repositório
+# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abra um projeto a partir de um repo
 
 Neste tutorial, você usará o Visual Studio para se conectar a um repositório pela primeira vez e, em seguida, abrir um projeto nele.
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
    Se você não tiver um arquivo de solução (especificamente, um arquivo .sln) no seu repositório, o menu suspenso mostrará a mensagem "Nenhuma solução encontrada". No entanto, você pode clicar duas vezes em qualquer arquivo no menu de pastas para abri-lo no editor de códigos do Visual Studio.
 
-### <a name="review-your-work"></a>Revisar seu trabalho
+### <a name="review-your-work"></a>Examinar seu trabalho
 
 Exiba a animação a seguir para verificar o trabalho que você concluiu a seção anterior.
 
@@ -109,11 +109,11 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
 1. Há duas maneiras de se conectar ao repositório Azure DevOps:
 
-      - Na seção **Provedores de Serviços Hospedados**, escolha **Conectar...** .
+      - Na seção **Provedores de Serviços Hospedados**, escolha **Conectar... **.
 
         ![A seção Provedores de Serviços Hospedados da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Na lista suspensa **Gerenciar Conexões**, escolha **Conectar-se a um Projeto...** .
+      - Na lista suspensa **Gerenciar Conexões**, escolha **Conectar-se a um Projeto...**.
 
         ![A seção Gerenciar Conexões da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -177,13 +177,13 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
 Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer um dos seguintes tutoriais específicos a um idioma:
 
-- [Tutoriais do Visual Studio | **C#** ](./csharp/index.yml)
+- [Tutoriais do Visual Studio | **C#**](./csharp/index.yml)
 - [Tutoriais do Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Tutoriais do Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Tutoriais do Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Tutoriais do Visual Studio | **Python**](/visualstudio/python/)
 - [Tutoriais do Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](/visualstudio/javascript/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Serviços Azure DevOps: Comece com a Azure Repos e o Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: Comece com o Azure DevOps](/learn/modules/get-started-with-devops/)

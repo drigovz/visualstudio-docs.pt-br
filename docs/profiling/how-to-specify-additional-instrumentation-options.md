@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778694"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Como especificar opções de instrumentação adicionais
@@ -40,7 +40,7 @@ Você pode instrumentar binários usando o IDE do Visual Studio ou usando ferram
 
 4. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Criação de perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Configure o](../profiling/configuring-performance-sessions.md)
+perfil das sessões[de desempenho a partir da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777440"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Treinar um modelo do TensorFlow no local
@@ -23,7 +23,7 @@ Neste guia de início rápido, treinaremos um modelo do TensorFlow com o conjunt
 
 O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de começar, confira se os itens a seguir estão instalados:
 
@@ -38,7 +38,7 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy e SciPy
 Instale o [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) e o [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Baixar o código de exemplo
+### <a name="download-sample-code"></a>Baixar código de exemplo
 Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais.
 
 ## <a name="open-solution-and-train-model"></a>Abrir a solução e treinar o modelo
@@ -47,7 +47,7 @@ Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) qu
 
 - Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**.
 
-   ![Abrir o projeto](media/tensorflow-local/open-project.png)
+   ![Abrir projeto](media/tensorflow-local/open-project.png)
 
    ![Abrir a solução](media/tensorflow-local/open-solution.png)
 

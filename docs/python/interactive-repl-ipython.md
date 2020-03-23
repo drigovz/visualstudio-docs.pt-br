@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957714"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usar o IPython na janela Interativa
@@ -30,9 +30,9 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 2. Examine a guia **Pacotes (Conda)** (que pode ser exibida como **pip** ou **Pacotes**) nesse ambiente para verificar se `ipython` e `matplotlib` estão listados. Caso contrário, instale-os nessa localização. (Confira [Janelas dos Ambientes do Python – guia Pacotes](python-environments-window-tab-reference.md).)
 
-3. Selecione a guia **Visão Geral** e **Usar o modo interativo do IPython**. (No Visual Studio 2015, selecione **Configurar opções interativas** para abrir a caixa de diálogo **Opções** e, em seguida, defina o **Modo Interativo** como **IPython** e selecione **OK**).
+3. Selecione a guia **Visão geral** e selecione **Use iPython modo interativo**. (No Visual Studio 2015, **selecione Configurar opções interativas** para abrir a caixa de diálogo **Opções** e, em seguida, defina **o modo interativo** como **IPython**e selecione **OK**).
 
-4. Selecione **Abrir janela interativa** para exibir a janela **Interativa** no modo do IPython. Talvez seja necessário redefinir a janela se você acabou de mudar para o modo interativo. Talvez também seja necessário pressionar **Enter** se apenas um prompt >>> for exibido, para obter um prompt como **Em [2]**.
+4. Selecione **Abrir janela interativa** para criar a janela **Interativa** no modo IPython. Talvez seja necessário redefinir a janela se você acabou de mudar para o modo interativo. Talvez também seja necessário pressionar **Enter** se apenas um prompt >>> for exibido, para obter um prompt como **Em [2]**.
 
     ![A janela interativa no modo IPython](media/ipython-repl-03.png)
 
@@ -51,7 +51,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
     ![Gráfico embutido na janela interativa](media/ipython-repl-04.png)
 
-7. Em vez de digitar no REPL, você pode escrever o código no editor, selecioná-lo, clicar com o botão direito do mouse e selecionar o comando **Enviar para Interativa** (ou pressionar **Ctrl**+**Enter**). Tente colar o código abaixo em um novo arquivo no editor, selecionando-o com **Ctrl**+**A** e, em seguida, enviando-o para a janela **Interativa**. (O visual Studio envia o código como uma unidade para evitar a necessidade de gráficos intermediários ou parciais. Além disso, se você não tiver um projeto do Python aberto com outro ambiente selecionado, o Visual Studio abrirá uma janela **Interativa** para o ambiente selecionado como padrão na janela **Ambientes do Python**.)
+7. Em vez de digitar no REPL, você pode, em vez disso, escrever código no editor, selecioná-lo, clicar com o botão direito do mouse e selecionar o comando **Enviar para Interativo** (ou pressionar **Ctrl**+**Enter**). Tente colar o código abaixo em um novo arquivo no editor, selecionando-o com **Ctrl**+**A**, enviando-o para a janela **Interativa.** (O visual Studio envia o código como uma unidade para evitar a necessidade de gráficos intermediários ou parciais. E se você não tiver um projeto Python aberto com um ambiente diferente selecionado, o Visual Studio abrirá uma janela **Interativa** para qualquer ambiente selecionado como padrão na janela **Ambientes Python.)**
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -78,9 +78,9 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 8. Para ver os grafos fora da janela **Interativa**, execute o código em vez de usar o comando **Depurar** > **Iniciar sem Depuração**.
 
-O IPython tem muitos outros recursos úteis, como escape para o shell do sistema, substituição de variáveis, captura de saída etc. Consulte a [documentação do IPython](https://ipython.org/documentation.html) para obter mais informações.
+O IPython tem muitos outros recursos úteis, como escapar para o shell do sistema, substituição variável, captura de saída, etc. Consulte a documentação do [IPython](https://ipython.org/documentation.html) para obter mais informações.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 

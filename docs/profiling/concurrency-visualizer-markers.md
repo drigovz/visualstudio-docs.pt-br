@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001056"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores da Visualização Simultânea
-Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e tempos de execução que o aplicativo usa.
+Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e runtimes que o aplicativo usa.
 
 ## <a name="kinds-of-markers"></a>Tipos de marcadores
  A Visualização Simultânea usa três tipos de marcadores para representar eventos do aplicativo: sinalizadores, mensagens e intervalos.
@@ -43,13 +43,13 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 
 - [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)
 
-- [TPL (Biblioteca de Paralelismo de Tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
+- [Biblioteca de tarefas paralelas (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
 - [Fluxo de dados](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [PLINQ (LINQ paralelo)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
-- [Tempo de Execução de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)
+- [Runtime de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)
 
 - [Suporte do Marcador de Cenário](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))
 
@@ -60,8 +60,8 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource
  A Visualização Simultânea também pode exibir eventos EventSource.  Para obter mais informações, confira [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Marcadores de sinalizador](../profiling/flag-markers.md)
-- [Marcadores de mensagem](../profiling/message-markers.md)
-- [Marcadores de período](../profiling/span-markers.md)
+- [Marcadores de mensagens](../profiling/message-markers.md)
+- [Marcadores de extensão](../profiling/span-markers.md)
 - [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md)

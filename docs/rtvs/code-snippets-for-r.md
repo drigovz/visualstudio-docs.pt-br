@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969432"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
 Os snippets de código no Visual Studio fornecem atalhos para inserir rapidamente os blocos de código de comprimento arbitrário, ajudando a evitar a necessidade de digitar novamente códigos semelhantes. As RTVS (Ferramentas do R para Visual Studio) adicionam dezenas de snippets do R úteis na coleção do Visual Studio.
 
-Para inserir um snippet, digite o nome abreviado do snippet (o IntelliSense é fornecido), em seguida, pressione **Tab** para inserir.
+Para inserir um trecho, digite o nome abreviado de snippet (IntelliSense é fornecido) e **pressione Tab** para inserir.
 
 Alguns exemplos simples:
 
@@ -30,9 +30,9 @@ Snippets podem ser muito mais do que apenas preenchimento de caracteres. Um snip
 
 ![Animação do uso de um snippet de código para inserir uma chamada de read.csv](media/code-snippet-expansion.gif)
 
-Nesse caso, à medida que você digita `readc`, o IntelliSense exibe uma lista de conclusão. Selecionar essa conclusão no menu suspenso e pressionar **Tab** seleciona `readc` e pressionar **Tab** novamente expande o snippet. (Por esse motivo, a expansão de snippet geralmente é considerada como "digitar o snippet e pressionar a tecla Tab duas vezes"). Na maioria dos casos, a primeira Tab preenche a seleção do IntelliSense e a segunda Tab dispara a expansão.
+Nesse caso, à medida que você digita `readc`, o IntelliSense exibe uma lista de conclusão. Selecionar essa conclusão na seleção de **guia** sisques e pressionar `readc` **Tab** expande novamente o trecho. (Por esse motivo, a expansão de snippet geralmente é considerada como "digitar o snippet e pressionar a tecla Tab duas vezes"). Na maioria dos casos, a primeira Tab preenche a seleção do IntelliSense e a segunda Tab dispara a expansão.
 
-Para ver todos os snippets disponíveis, abra a caixa de diálogo **Ferramentas** > **Gerenciador de Snippets de Código** (**Ctrl**+**K**,**B**) e selecione **R** para **Linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
+Para ver todos os trechos disponíveis, abra a caixa de diálogo**Gerenciador de fragmentos de código de** **ferramentas** > **(Ctrl**+**K**,**B)** e selecione **R** para **Linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
 
 ![Caixa de diálogo de snippets de código para R](media/code-snippet-dialog.png)
 

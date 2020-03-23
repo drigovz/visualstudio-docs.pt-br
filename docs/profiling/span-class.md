@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979751"
 ---
 # <a name="span-class"></a>Classe span
@@ -34,8 +34,8 @@ class span;
 
 |Nome|Descrição|
 |----------|-----------------|
-|[span::Construtor de span](../profiling/span-span-constructor.md)|Inicializa uma nova instância da classe `span`.|
-|[span::Destruidor ~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|
+|[Construtor span::span](../profiling/span-span-constructor.md)|Inicia uma nova instância da classe `span`.|
+|[Destruidor span::~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
  `span`
@@ -45,5 +45,5 @@ class span;
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Consulte também
-- [namespace de diagnóstico](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Confira também
+- [espaço de nome diagnóstico](../profiling/diagnostic-namespace.md)

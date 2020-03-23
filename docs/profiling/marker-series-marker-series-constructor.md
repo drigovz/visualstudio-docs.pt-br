@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5178b2cebdfa4246256aef6334e026ef091fa553
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831407"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>Construtor marker_series::marker_series
-Inicializa uma nova instância da classe `marker_series`.
+# <a name="marker_seriesmarker_series-constructor"></a>Construtor marker_series::marker_series
+Inicia uma nova instância da classe `marker_series`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ marker_series(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `_SeriesName` O nome da série a ser criada.
 
  `_ProviderGuid` O GUID do provedor da série.
@@ -48,5 +48,5 @@ marker_series(
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe marker_series](../profiling/marker-series-class.md)

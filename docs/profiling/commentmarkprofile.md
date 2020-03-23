@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772775"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
@@ -30,7 +30,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
                                    LPCTSTR szComment);
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `lMarker`
 
  Marcador numérico para inserir. O marcador deve ser maior ou igual a 0 (zero).
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Comentários
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ligado quando as marcas e os comentários são inseridos com o comando VSInstr Mark ou com as funções (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
 
- Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .*vsp*.
+ Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um segmento pode ser usada para marcar o início ou o fim de um segmento de dados em qualquer segmento no . *arquivo vsp.*
 
 > [!IMPORTANT]
 > O método CommentMarkProfile só pode ser usado com a instrumentação.
@@ -67,8 +67,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 |||
 |-|-|
-|**Header**|Inclui VSPerf.h|
-|**Library**|Use VSPerf.lib|
+|**Cabeçalho**|Inclui VSPerf.h|
+|**Biblioteca**|Use VSPerf.lib|
 |**Unicode**|Implementado como `CommentMarkProfileW` (Unicode) e `CommentMarkProfileA` (ANSI).|
 
 ## <a name="example"></a>Exemplo
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Confira também
+- [Referência de API do profiler do Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

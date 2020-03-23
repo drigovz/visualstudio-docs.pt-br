@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784585"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
@@ -30,7 +30,7 @@ O processo de publicação difere entre o Visual Studio 2017 e posterior e o Vis
 > [!Note]
 > Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017 e posterior, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para este passo a passo, você precisa de um projeto de aplicativo Web com base nas estruturas Bottle, Flask ou Django. Se você ainda não tem um projeto e deseja ver como funciona o processo de publicação, crie um projeto de teste simples da seguinte maneira:
 
@@ -44,7 +44,7 @@ Para este passo a passo, você precisa de um projeto de aplicativo Web com base 
 
 A publicação no Azure requer um Serviço de Aplicativo de destino. Para essa finalidade, você pode criar um Serviço de Aplicativo usando uma assinatura do Azure ou pode usar um site temporário.
 
-Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/free/), que inclui créditos generosos para os serviços do Azure. Além disso, considere inscrever-se no [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), que fornece a você um crédito de US$ 25 todo mês durante um ano.
+Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/free/), que inclui créditos generosos para os serviços do Azure. Considere também se inscrever no [Visual Studio Dev Essentials,](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)que lhe dá $25 de crédito por mês durante um ano inteiro.
 
 > [!Tip]
 > Embora o Azure solicite um cartão de crédito para verificar a sua conta, o cartão não será cobrado. Você também pode definir um [limite de gastos](/azure/billing/billing-spending-limit) igual a seus créditos gratuitos para garantir que não haja encargos adicionais. Além disso, o Azure oferece uma camada gratuita do Plano do Serviço de Aplicativo, que é ideal para aplicativos de teste simples, conforme descrito na próxima seção.
@@ -79,7 +79,7 @@ Se desejar, você também pode instalar o pacote `bottle` usando o processo naqu
 
 A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017 e posterior copia somente os arquivos do seu projeto para o servidor. Portanto, é necessário criar os arquivos pertinentes para configurar o ambiente de servidor.
 
-1. No **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse no projeto e selecione **Adicionar > Novo Item...** . Na caixa de diálogo que é exibida, selecione o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz do seu projeto.
+1. No Visual Studio **Solution Explorer,** clique com o botão direito do mouse no projeto e **selecione Adicionar > Novo Item...**. Na caixa de diálogo que aparece, selecionando o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz de seu projeto.
 
 1. Modifique a entrada `PythonHandler` em `web.config` para que o caminho corresponda à instalação do Python no servidor (consulte [Referência de configuração do IIS](https://www.iis.net/configreference) (iis.net) para obter detalhes exatos). Por exemplo, para o Python 3.6.1 x64, a entrada deve ser semelhante ao seguinte:
 
@@ -102,14 +102,14 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no `runserver.py`. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
+    - **Flask**: altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do seu projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no `runserver.py`. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: Duas alterações são necessárias em `web.config` para projetos do Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo `wsgi.py`):
+    - **Django**: duas alterações são necessárias no `web.config` para projetos Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo `wsgi.py`):
 
         ```xml
         <!-- Django apps only -->
@@ -122,7 +122,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Somente para aplicativos Django**: No arquivo `settings.py` do projeto do Django, adicione o domínio de URL do site a `ALLOWED_HOSTS`, conforme mostrado abaixo, substituindo 'vspython-test-02.azurewebsites.net' pela URL, obviamente:
+1. **Somente aplicativos Django**: no arquivo `settings.py` do projeto Django, adicione o domínio de URL do seu site a `ALLOWED_HOSTS` conforme mostrado abaixo, substituindo 'vspython-test-02.azurewebsites.net' por sua URL, é claro:
 
     ```python
     # Change the URL to your specific site
@@ -133,7 +133,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
     Observe que, quando a matriz estiver vazia, o Django permitirá automaticamente 'localhost', mas adicionar sua URL de produção removerá essas funcionalidades. Por esse motivo, talvez você queira manter cópias do `settings.py` de desenvolvimento e de produção separadas ou usar variáveis de ambiente para controlar os valores de tempo de execução.
 
-1. No **Gerenciador de Soluções**, expanda a pasta com o mesmo nome que o seu projeto, clique com botão direito do mouse na pasta `static`, selecione **Adicionar > Novo Item...** , selecione o modelo "Arquivos estáticos web.config do Azure" e selecione **OK**. Essa ação cria outro `web.config` na pasta `static`, que desabilita o processamento do Python para essa pasta. Essa configuração envia as solicitações de arquivos estáticos para o servidor Web padrão em vez de usar o aplicativo Python.
+1. No **Gerenciador de Soluções**, expanda a pasta com o mesmo nome que o seu projeto, clique com botão direito do mouse na pasta `static`, selecione **Adicionar > Novo Item... **, selecione o modelo "Arquivos estáticos web.config do Azure" e selecione **OK**. Essa ação cria outro `web.config` na pasta `static` que desabilita o processamento do Python para essa pasta. Essa configuração envia solicitações para arquivos estáticos para o servidor Web padrão em vez de usar o aplicativo Python.
 
 1. Salve seu projeto e, em seguida, no **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse e selecione **Publicar**.
 
@@ -145,7 +145,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
     ![Etapa 1 de publicação no Azure, Visual Studio 2017 e posterior, assinaturas existentes](media/tutorials-common-publish-1a-2017.png)
 
-    b. Se você estiver usando um Serviço de Aplicativo temporário em try.azurewebsites.net ou se for necessário usar um perfil de publicação, selecione o controle **>** para localizar **Perfil de importação**; selecione essa opção e, em seguida, selecione **Publicar**. Isso solicitará o local do arquivo `.publishsettings` baixado anteriormente.
+    b. Se você estiver usando um Serviço de Aplicativo temporário no try.azurewebsites.net ou precisar **>** usar um perfil de publicação, selecione o controle para encontrar **o perfil Importar,** selecione essa opção e selecione **Publicar**. Isso solicitará o local do arquivo `.publishsettings` baixado anteriormente.
 
     ![Etapa 1 de publicação no Azure, Visual Studio 2017 e posterior, serviço de aplicativo temporário](media/tutorials-common-publish-1b-2017.png)
 
@@ -174,7 +174,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
     e. Tente reiniciar o Serviço de Aplicativo depois de instalar novos pacotes. Uma reinicialização não é necessária ao alterar o `web.config`, pois o Serviço de Aplicativo executa uma reinicialização automática sempre que o `web.config` é alterado.
 
     > [!Tip]
-    > Se você fizer qualquer alteração no arquivo `requirements.txt` do seu aplicativo, certifique-se de usar novamente o console do Kudu para instalar todos os pacotes que agora estarão listados nesse arquivo.
+    > Ao fazer quaisquer alterações ao arquivo `requirements.txt` do aplicativo, verifique se você usou novamente o console do Kudu para instalar todos os pacotes listados nesse arquivo.
 
 1. Depois de configurar totalmente o ambiente de servidor, atualize a página no navegador e o aplicativo Web deverá aparecer.
 
@@ -183,7 +183,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publicação no Serviço de Aplicativo – Visual Studio 2015
 
 > [!Note]
-> Um breve vídeo desse processo pode ser encontrado no [Tutorial do Python no Visual Studio: Criando um site](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3min10s).
+> Um breve vídeo desse processo pode ser encontrado em [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Tutorial do Python do Visual Studio: compilando um site) (youtube.com, 3min10s).
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Publicar**.
 
@@ -200,7 +200,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
   ![Publicar no Azure etapa 2](media/tutorials-common-publish-2.png)
 
-1. Selecione **Avançar >** , conforme necessário, para examinar as configurações adicionais.
+1. Selecione **Avançar >**, conforme necessário, para examinar as configurações adicionais.
 
 1. Selecione **Publicar**. Depois que o aplicativo for implantado no Azure, o navegador padrão será aberto nesse site.
 

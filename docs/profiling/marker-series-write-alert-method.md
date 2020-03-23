@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 635f767f97ea3d237aeff843e99735eccae31efc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831378"
 ---
-# <a name="markerserieswritealert-method"></a>Método marker_series::write_alert
+# <a name="marker_serieswrite_alert-method"></a>Método marker_series::write_alert
 Grava um alerta para o arquivo de rastreamento da Visualização Simultânea.
 
 ## <a name="syntax"></a>Sintaxe
@@ -31,7 +31,7 @@ void write_alert(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `_Format` Uma cadeia de caracteres de formato composto, que contém um texto intercalado com zero ou mais itens de formato correspondentes aos objetos na lista de argumentos.
 
 ## <a name="requirements"></a>Requisitos
@@ -39,5 +39,5 @@ void write_alert(
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe marker_series](../profiling/marker-series-class.md)

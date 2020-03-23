@@ -1,5 +1,5 @@
 ---
-title: 'Início Rápido: Criar um serviço Web ASP.NET Core no F#'
+title: 'Início rápido: Criar um serviço Web ASP.NET Core no F#'
 description: Saiba como criar um serviço Web do ASP.NET Core no Visual Studio com F#, passo a passo.
 ms.date: 08/24/2018
 ms.topic: quickstart
@@ -12,25 +12,25 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180319"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro serviço Web ASP.NET Core no F\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Quickstart: Use o Visual Studio para criar seu primeiro serviço web ASP.NET Core em F\#
 
 Nesta introdução de 5 a 10 minutos para o F# no Visual Studio, você criará um aplicativo Web ASP.NET Core em F#.
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto
 
 1. Abra o Visual Studio.
 
-2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+2. Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
 3. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual F#** e, em seguida, escolha **Web**. No painel central, escolha **Aplicativo Web ASP.NET Core** e, em seguida, selecione **OK**.
 
@@ -50,7 +50,7 @@ Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto
 
      ![Carga de trabalho ASP.NET no instalador do VS](../ide/media/quickstart-aspnet-workload.png)
 
-4. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior. (Se o **ASP.NET Core 2.1** não aparecer na lista, instale-o seguindo o link **Baixar** que deve aparecer em uma barra amarela próxima à parte superior da caixa de diálogo.) Escolha **OK**.
+4. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior. (Se você não ver **ASP.NET Core 2.1** na lista, instale-o seguindo o link **Download** que deve aparecer em uma barra amarela perto da parte superior da caixa de diálogo.) Escolha **OK**.
 
 ::: moniker-end
 
@@ -58,9 +58,9 @@ Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto
 
 1. Abra o Visual Studio.
 
-2. Na tela Iniciar, selecione **Criar um novo projeto**.
+2. Na janela inicial, escolha **Criar um novo projeto**.
 
-3. Na página **Criar um novo projeto**, digite **f# web** na caixa de pesquisa e escolha o modelo de projeto **Aplicativo Web ASP.NET Core**. Escolha **Avançar**.
+3. Na página **Criar um novo projeto**, digite **f# web** na caixa de pesquisa e escolha o modelo de projeto **Aplicativo Web ASP.NET Core**. Escolha **a seguir**.
 
 4. Na página **Configurar seu novo projeto**, insira um nome e escolha **Criar**.
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956792"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Usar o PyLint para verificar o código do Python
@@ -29,7 +29,7 @@ Basta clicar com o botão direito do mouse em um projeto Python no **Gerenciador
 
 Usando esses prompts de comando você instala o PyLint no ambiente ativo se ele ainda não estiver presente.
 
-Os avisos e erros do PyLint são exibidos na janela **Lista de Erros**:
+Avisos e erros de PyLint aparecem na janela **Lista de erros:**
 
 ![Lista de erros do PyLint](media/code-pylint-error-list.png)
 
@@ -50,7 +50,7 @@ Por exemplo, para suprimir os avisos “docstring ausente” mostrados na imagem
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. No Gerenciador de Soluções do Visual Studio, clique com o botão direito do mouse no projeto, escolha **Adicionar** > **Item Existente**, navegue até o novo arquivo *.pylintrc* e escolha-o. Em seguida, escolha **Adicionar**.
+1. No Visual Studio Solution Explorer, clique com o botão direito do mouse no projeto, **selecione Adicionar** > **item existente,** navegue até o novo arquivo *.pylintrc,* selecione-o e selecione **Adicionar**.
 
 1. Abra o arquivo para edição, que contém várias configurações com as quais você pode trabalhar. Para desabilitar um aviso, localize a seção `[MESSAGES CONTROL]` e, em seguida, localize a configuração `disable` nessa seção. Há uma longa cadeia de mensagens específicas, à qual é possível acrescentar os avisos desejados. Neste exemplo, acrescente `,missing-docstring` (incluindo a vírgula delimitadora).
 

@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154889"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5: Usar o modelo de Projeto Web Votações do Flask
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
 
-**Etapa anterior: [Usar o modelo completo de Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Etapa anterior: [Usar o modelo Projeto Web completo do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Depois de entender o modelo "Projeto Web do Flask" do Visual Studio, agora será possível examinar o terceiro modelo do Flask, "Pesquisas do Projeto Web do Flask", criado sobre a mesma base de código.
 
@@ -36,15 +36,15 @@ O Visual Studio também fornece o modelo "Projeto Web de Votações do Flask/Jad
 
 ## <a name="step-5-1-create-the-project"></a>Etapa 5-1: Criar o projeto
 
-1. No Visual Studio, acesse **Gerenciador de Soluções**, clique com o botão direito do mouse na solução **LearningFlask** criada anteriormente neste tutorial e selecione **Adicionar** > **Novo Projeto**. (Como alternativa, se você quiser usar uma nova solução, selecione **Arquivo** > **Novo** > **Projeto**).
+1. No Visual Studio, vá para **Solution Explorer**, clique com o botão direito do mouse na solução **LearningFlask** criada anteriormente neste tutorial e selecione **Adicionar** > **novo projeto**. (Alternativamente, se você quiser usar uma nova solução, selecione **File** > **New** > **Project** em vez disso.)
 
-1. Na caixa de diálogo Novo Projeto, pesquise e selecione o modelo **Projeto Web de Votações do Flask**, nomeie o projeto "FlaskPolls" e selecione **OK**.
+1. No novo diálogo de projeto, procure e selecione o modelo **do Projeto Web do Polls Flask,** chame o projeto de "FlaskPolls" e selecione **OK**.
 
 1. Como os outros modelos de projeto do Visual Studio, o modelo de "Projeto Web de Votações do Flask" inclui um arquivo *requirements.txt*. O Visual Studio solicita o local em que essas dependências serão instaladas. Escolha a opção **Instalar em um ambiente virtual** e, na caixa de diálogo **Adicionar Ambiente Virtual**, selecione **Criar** para aceitar os padrões. (Esse modelo requer o Flask, bem como os pacotes azure-storage e pymongo; o "Pesquisas do Projeto Web do Flask/Jade" também requerem pyjade.)
 
-1. Defina o projeto **FlaskPolls** para ser o padrão para a solução do Visual Studio clicando com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecionando **Definir como Projeto de Inicialização**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
+1. Defina o projeto **FlaskPolls** como padrão para a solução Visual Studio clicando com o botão direito do mouse nesse projeto no **Solution Explorer** e selecionando Set as **Startup Project**. O projeto de inicialização, mostrado em negrito, é o que é executado quando você inicia o depurador.
 
-1. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas para executar o servidor:
+1. Selecione **Depurar Depuração** > **Start Debugging** **(F5)** ou use o botão **Servidor Web** na barra de ferramentas para executar o servidor:
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -76,7 +76,7 @@ Conforme observado anteriormente, quase tudo o que está em um projeto criado co
 
 ## <a name="step-5-2-understand-the-data-models"></a>Etapa 5-2: Compreender os modelos de dados
 
-Os modelos de dados do aplicativo são classes do Python nomeadas Votação e Opção, definidas em *models/\_\_init\_\_.py*. Uma Votação representa uma pergunta, para a qual uma coleção de instâncias de Opção representam as respostas disponíveis. Uma Votação também mantém o número total de votos (para qualquer opção) e um método para calcular as estatísticas usadas para gerar exibições:
+Os modelos de dados para o aplicativo são classes Python chamadas Poll and Choice, que são definidas em *modelos/\_\_init\_\_.py*. Uma Votação representa uma pergunta, para a qual uma coleção de instâncias de Opção representam as respostas disponíveis. Uma Votação também mantém o número total de votos (para qualquer opção) e um método para calcular as estatísticas usadas para gerar exibições:
 
 ```python
 class Poll(object):
@@ -187,7 +187,7 @@ As etapas a seguir adicionam suporte a um armazenamento de dados diferente dos t
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Propagar o armazenamento de dados de samples.json
 
-Inicialmente, qualquer armazenamento de dados escolhido não contém nenhuma votação. Portanto, a home page do aplicativo exibe a mensagem **Nenhuma votação disponível** com o botão **Criar Votações de Exemplo**. No entanto, depois de selecionar o botão, o modo de exibição é alterado para exibir as votações disponíveis. Essa opção ocorre por meio de marcas condicionais em *templates\index.html* (algumas linhas em branco foram omitidas para fins de brevidade):
+Inicialmente, qualquer armazenamento de dados escolhido não contém pesquisas, então a página inicial do aplicativo mostra a mensagem **Nenhuma pesquisa disponível** junto com o botão **Criar pesquisas de amostra.** No entanto, depois de selecionar o botão, o modo de exibição é alterado para exibir as votações disponíveis. Essa opção ocorre por meio de marcas condicionais em *templates\index.html* (algumas linhas em branco foram omitidas para fins de brevidade):
 
 ```html
 {% extends "layout.html" %}
@@ -228,15 +228,15 @@ def seed():
     return redirect('/')
 ```
 
-A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação chama o método `_load_samples_json` encontrado em *models\_\_init\_\_.py* para carregar o arquivo *models\samples.json* na memória. Em seguida, ela itera por esses dados para criar os objetos `Poll` e `Choice` necessários no armazenamento de dados.
+A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação `_load_samples_json` chama o método encontrado nos *modelos\_\_init\_\_.py* para carregar o arquivo *models\samples.json* na memória, então itera através desse dado para criar os objetos necessários `Poll` no `Choice` armazenamento de dados.
 
 Após a conclusão desse processo, a instrução `redirect('/')` no método `seed` navega de volta para a home page. Como agora `repository.get_polls` retorna um objeto de dados, as marcas condicionais em *templates\index.html* agora renderizam uma tabela que contém as votações.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: Como adicionar novas votações ao aplicativo?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: como adicionar novas votações ao aplicativo?
 
-Resposta: O aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma funcionalidade para adição ou edição de votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
+Resposta: o aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma facilidade para adicionar ou editar votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as exibições dos resultados
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as visualizações dos resultados
 
 A maioria dos modos de exibição gerados pelos modelos "Pesquisas do Projeto Web do Flask" e "Pesquisas do Projeto Web do Flask/Jade", como os modos de exibição para as páginas Sobre e Contato, é muito semelhantes aos modos de exibição criados pelo modelo "Projeto Web do Flask" (ou "Projeto Web do Flask/Jade") com o qual você trabalhou anteriormente neste tutorial. Na seção anterior você também aprendeu como a home page é implementada para mostrar o botão de inicialização ou a lista de votações.
 

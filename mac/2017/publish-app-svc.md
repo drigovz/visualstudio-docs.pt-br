@@ -12,17 +12,17 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714467"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio para Mac
 
 Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core no Serviço de Aplicativo do Azure.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 - [Visual Studio 2017 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) instalado com o ASP.NET Core habilitado.
 - Uma assinatura do Azure. Se você ainda não tiver uma assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), ganhando US$ 200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
@@ -56,7 +56,7 @@ Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core 
 
     Você pode alterar a assinatura à qual o Serviço de Aplicativo será associado usando a lista suspensa **Assinatura**.
 
-    Você pode selecionar um **Grupo de Recursos** existente usando o menu suspenso ou criar outro com o botão **+** .
+    Você pode selecionar um **Grupo de Recursos** existente usando o menu suspenso ou criar outro com o botão **+**.
 
     Para o Plano do Serviço de Aplicativo, selecione um existente ou crie outro selecionando o botão de opção **Personalizado**.
 

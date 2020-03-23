@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830072"
 ---
 # <a name="message-markers"></a>Marcadores de mensagem
-Um marcador de mensagem representa a saída de log. Uma mensagem é uma cadeia de caracteres emitida por um thread específico em um momento específico. Você pode exportar as mensagens para um arquivo de texto para usar com outras ferramentas. Você pode deixar o ponteiro em uma mensagem na Visualização Simultânea para exibir a cadeia de caracteres de mensagem. E você pode exibir todos os marcadores de mensagem no [Relatório de marcadores](../profiling/markers-report.md).  A ilustração a seguir mostra um marcador de mensagem.
+Um marcador de mensagem representa a saída de log. Uma mensagem é uma cadeia de caracteres emitida por um thread específico em um momento específico. Você pode exportar as mensagens para um arquivo de texto para usar com outras ferramentas. Você pode deixar o ponteiro em uma mensagem na Visualização Simultânea para exibir a cadeia de caracteres de mensagem. E você pode visualizar todos os marcadores de mensagem no [relatório Marcadores](../profiling/markers-report.md).  A ilustração a seguir mostra um marcador de mensagem.
 
 ## <a name="message-aggregation-markers"></a>Marcadores de agregação de mensagem
  Às vezes, ocorrem várias mensagens tão próximas entre si na Visualização Simultânea que elas não podem ser desenhadas individualmente. Quando isso ocorre, um *marcador de agregação de mensagem* que representa as mensagens subjacentes é mostrado. Quando você posiciona o ponteiro em desses ícones, uma dica de ferramenta exibe o número de mensagens subjacentes representadas. Para exibir as mensagens, amplie.  Se ampliar completamente e ainda obtiver um sinalizador de agregação, você poderá exibir as mensagens subjacentes no [Relatório de Marcadores](../profiling/markers-report.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
 - [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)

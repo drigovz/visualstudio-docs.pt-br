@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825520"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio (Visual Studio Enterprise)
@@ -34,13 +34,13 @@ Neste tutorial, você irá:
 
 1. Abra seu projeto no Visual Studio Enterprise.
 
-1. Abra as configurações **Ferramentas** > **Opções** > **IntelliTrace** e selecione a opção **Eventos e instantâneos do IntelliTrace**.
+1. Abrir**opções de** >  **ferramentas** > **Configurações do IntelliTrace** e selecionar a opção Eventos e **instantâneos do IntelliTrace**.
 
-    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)** .
+    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**.
 
-    ![Habilitar o modo de Eventos e Instantâneos do IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo de Eventos e Instantâneos do IntelliTrace")
+    ![Habilitar o modo IntelliTrace Events and Snapshots](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo IntelliTrace Events and Snapshots")
 
-1. Se você deseja configurar as opções para exibição de instantâneos em exceções, escolha **IntelliTrace** > **Avançado** na caixa de diálogo **Opções**.
+1. Se você quiser configurar opções para visualizar instantâneos em exceções, escolha **IntelliTrace** > **Advanced** na caixa de diálogo **Opções.**
 
     Essas opções estão disponíveis no Visual Studio 2017 Enterprise versão 15.7 em diante.
 
@@ -49,15 +49,15 @@ Neste tutorial, você irá:
     Quando você habilita eventos e instantâneos, tirar instantâneos em exceções também é habilitado por padrão. Você pode desabilitar os instantâneos em exceções, desmarcando **Coletar instantâneos em eventos de exceção**. Quando esse recurso está habilitado, os instantâneos são obtidos nas exceções sem tratamento. Para exceções tratadas, os instantâneos serão obtidos somente se a exceção for lançada e se não for um relançamento de uma exceção gerada anteriormente. Você pode definir um número máximo de instantâneos em exceções selecionando um valor na lista suspensa. O máximo se aplica a cada vez que o aplicativo entra em modo de interrupção (por exemplo, quando o aplicativo atinge um ponto de interrupção).
 
     > [!NOTE]
-    > Os instantâneos são obtidos somente para eventos de exceção que o IntelliTrace registra. No código gerenciado, você pode especificar quais eventos o IntelliTrace registra, selecionando **Ferramentas** > **Opções** > **Eventos do IntelliTrace**.
+    > Os instantâneos são obtidos somente para eventos de exceção que o IntelliTrace registra. Para código gerenciado, você pode especificar quais eventos o IntelliTrace registra selecionando**Opções de** >  **ferramentas** > **IntelliTrace Events**.
 
 1. Em seu projeto, defina um ou mais pontos de interrupção e inicie a depuração (pressione **F5**) ou inicie a depuração percorrendo seu código (**F10** ou **F11**).
 
-    O IntelliTrace obtém um instantâneo do processo do aplicativo em cada etapa do depurador, em cada evento de ponto de interrupção e em cada evento de exceção sem tratamento. Esses eventos são registrados na guia **Eventos** na janela **Ferramentas de Diagnóstico** junto com outros eventos do IntelliTrace. Para abrir essa janela, escolha **Depurar** > **Janelas** > **Mostrar Ferramentas de Diagnóstico**.
+    O IntelliTrace obtém um instantâneo do processo do aplicativo em cada etapa do depurador, em cada evento de ponto de interrupção e em cada evento de exceção sem tratamento. Esses eventos são registrados na guia **Eventos** na janela **Ferramentas de Diagnóstico** junto com outros eventos do IntelliTrace. Para abrir esta janela, escolha **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
 
     Um ícone de câmera aparece próximo aos eventos para os quais os instantâneos estão disponíveis.
 
-    ![Guia Eventos com instantâneos](../debugger/media/intellitrace-events-tab-with-snapshots.png "Guia Eventos com instantâneos de pontos de interrupção e etapas")
+    ![Guia de eventos com instantâneos](../debugger/media/intellitrace-events-tab-with-snapshots.png "Guia de eventos com instantâneos em pontos de interrupção e etapas")
 
     Por questões de desempenho, os instantâneos não são executados quando você percorre as etapas muito rapidamente. Se nenhum ícone de câmera aparecer próximo da etapa, tente depurar mais lentamente.
 
@@ -65,9 +65,9 @@ Neste tutorial, você irá:
 
 1. Navegue entre os eventos usando os botões **Voltar Etapa (Alt + [)** e **Avançar Etapa (Alt +])** na barra de ferramentas Depurar.
 
-    Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a [depuração histórica](../debugger/historical-debugging.md) no evento selecionado.
+    Esses botões navegam pelos eventos que aparecem na guia **Eventos** na **janela Ferramentas de diagnóstico**. Dar um passo para trás ou para frente para um evento ativa automaticamente a [depuração histórica](../debugger/historical-debugging.md) no evento selecionado.
 
-    ![Botões Voltar e Avançar Etapa](../debugger/media/intellitrace-step-back-icons-description.png "Botões Voltar e Avançar Etapa")
+    ![Botões para trás e para frente](../debugger/media/intellitrace-step-back-icons-description.png "Botões para trás e para frente")
 
     Quando você volta ou avança uma etapa, o Visual Studio entra em modo de depuração histórica. Nesse modo, o contexto do depurador alterna para a hora em que o evento selecionado foi registrado. O Visual Studio também move o ponteiro para a linha de código correspondente na janela de origem.
 
@@ -79,13 +79,13 @@ Neste tutorial, você irá:
 
 2. Para retornar à execução ao vivo, escolha **Continuar (F5)** ou clique no link **Retornar à depuração ao vivo** na barra de informações.
 
-3. Você também pode exibir um instantâneo na guia **Eventos**. Para fazer isso, selecione um evento com um instantâneo e clique em **Ativar Depuração Histórica**.
+3. Você também pode visualizar um instantâneo da guia **Eventos.** Para isso, selecione um evento com um instantâneo e clique **em Ativar depuração Histórica**.
 
-    ![Ativar Depuração Histórica em um evento](../debugger/media/intellitrace-activate-historical-debugging.png "Ativar Depuração Histórica em um evento")
+    ![Ativar depuração histórica em um evento](../debugger/media/intellitrace-activate-historical-debugging.png "Ativar depuração histórica em um evento")
 
     Ao contrário do comando **Definir Próxima Instrução**, a exibição de um instantâneo não executa novamente seu código; ela fornece uma exibição estática do estado do aplicativo em um ponto no tempo ocorrido no passado.
 
-    ![Visão geral do retrocesso do IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Visão geral do retrocesso do IntelliTrace")
+    ![Visão geral do recuo do IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Visão geral do retrocesso do IntelliTrace")
 
     Para saber mais sobre como inspecionar variáveis no Visual Studio, confira [Primeiro acesso ao depurador](../debugger/debugger-feature-tour.md)
 
@@ -101,7 +101,7 @@ No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo d
 
 O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga de tirar um instantâneo é de cerca de 30 ms. Quando um instantâneo é obtido, o processo do aplicativo é bifurcado e a cópia bifurcada é suspensa. Quando você exibe um instantâneo, o Visual Studio está anexando a cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define as páginas como gravação de cópia. Se os objetos no heap forem alterados entre as etapas do depurador associadas a instantâneos, a respectiva tabela de página será copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não o fará.
 
-## <a name="known-issues"></a>Problemas Conhecidos
+## <a name="known-issues"></a>Problemas conhecidos
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se a plataforma de depuração de destino do aplicativo for definida como x86, o IntelliTrace não obterá instantâneos.
 
     Soluções alternativas:
@@ -111,7 +111,7 @@ O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga
   * Como alternativa:
     1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
     2. Compile o aplicativo de destino.
-    3. Na linha de comando, use a ferramenta editbin para definir o sinalizador `Largeaddressaware` para o executável de destino. Por exemplo, você pode usar este comando (depois de atualizar o caminho): "C:\Arquivos de Programas (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    3. Na linha de comando, use a ferramenta editbin para definir o sinalizador `Largeaddressaware` para o executável de destino. Por exemplo, você pode usar esse comando (depois de atualizar o caminho): "C:\Arquivos de Programas (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Para iniciar a depuração, pressione **F5**. Agora, os instantâneos são obtidos em pontos de interrupção e etapas do depurador.
 
        > [!Note]

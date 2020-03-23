@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461531"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
@@ -24,7 +24,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 
 Este documento não confere direitos para redistribuir o software externamente nem para fornecer ambientes de build a terceiros.
 
-> Aviso de isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e as exibições expressas neste documento, incluindo a URL e outras referências a sites da Internet, podem mudar sem aviso prévio. A Microsoft não oferece nenhuma garantia, explícita ou implícita, quanto às informações fornecidas aqui. Você assume o risco de utilizá-las.<br /><br /> Este documento não lhe concede nenhum direito legal à nenhuma propriedade intelectual de nenhum produto da Microsoft. Você pode copiar e usar este documento para fins internos de referência.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
+> Isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e opiniões expressadas neste documento, incluindo URLs e outras referências a sites da Internet, podem ser alteradas sem aviso prévio. A Microsoft não oferece nenhuma garantia, explícita ou implícita, quanto às informações fornecidas aqui. Você assume o risco de usá-las.<br /><br />  Este documento não fornece a você nenhum direito legal a qualquer propriedade intelectual de qualquer produto da Microsoft. Você pode copiar e usar este documento para fins de consulta interna.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
 
 Este passo a passo foi validado nos seguintes sistemas operacionais:
 
@@ -42,7 +42,7 @@ O ambiente de vários computadores não pode ser usado para compilar estes tipos
 - Aplicativos UWP. Para compilar aplicativos UWP, instale o Visual Studio no computador de build.
 - Aplicativos de área de trabalho voltados para o .NET Framework 4 ou anterior. Para criar esses tipos de aplicativos, instale o Visual Studio ou Assemblies e Ferramentas do .NET Reference (do SDK do Windows 7.1) no computador de build.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 O Visual Studio com a carga de trabalho instalada para **desenvolvimento de área de trabalho .NET**.
 
@@ -130,7 +130,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\vsvars32.bat
 
-4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Normalmente, os arquivos estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x86* ou na pasta *%ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\redist\x64*, dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
+4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Os arquivos são tipicamente localizados em subpastas a *versão %ProgramFiles%\Microsoft Visual Studio\\\<>\\ \<edição>\VC\redist\x86* ou *%ProgramFiles%\Microsoft Visual\\\<Studio versão>\\ \<edição>\VC\redist\x64,* dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -255,15 +255,15 @@ Para usar o MSBuild no computador de build, é preciso definir as variáveis de 
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Usar vcvarsall.bat para definir variáveis de ambiente
 
-Abra uma janela do **Prompt de Comando** no computador de build e execute *%Program Files%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
+Abra uma janela **Prompt de comando** no computador de compilação e execute *%Arquivos de programa%\Microsoft Visual\\\<Studio versão>\\ \<edição>\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
 
 Esta tabela descreve os argumentos compatíveis com *vcvarsall.bat*:
 
 |Argumento Vcvarsall.bat|Compilador|Compilar uma arquitetura de computador|Arquitetura de saída de compilação|
 | - |--------------| - | - |
 |x86 (padrão)|Nativo de 32 bits|x86, x64|x86|
-|x86_amd64|x64 Cruzado|x86, x64|X64|
-|amd64|x64 Nativo|X64|X64|
+|x86_amd64|x64 Cruzado|x86, x64|x64|
+|amd64|x64 Nativo|x64|x64|
 
 Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de erro for exibida, você poderá ignorar a próxima etapa e continuar na seção [Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build](#install-msbuild-to-gac) deste documento.
 
@@ -287,7 +287,7 @@ Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de err
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build
 
 O MSBuild requer que alguns assemblies adicionais sejam instalados no GAC do computador de build.
 
@@ -406,7 +406,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Preparar um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

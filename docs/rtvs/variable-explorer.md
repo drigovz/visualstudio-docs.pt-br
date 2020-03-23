@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809768"
 ---
 # <a name="variable-explorer"></a>Gerenciador de Variáveis
@@ -43,9 +43,9 @@ Como os dados costumam ser tabulares, você pode exibir qualquer tipo de dados c
 
 ![Exibição de tabela do Gerenciador de Variáveis](media/variable-explorer-table-view.png)
 
-Clicar em um título de coluna classifica os dados pela coluna (alternando entre crescente e decrescente). Se você mantiver a tecla **Shift** pressionada e clicar em colunas adicionais, isso também adicionará essas colunas à classificação. Se você clicar em uma coluna sem pressionar a tecla **Shift**, retornará para a classificação de coluna única.
+Clicar em um título de coluna classifica os dados pela coluna (alternando entre crescente e decrescente). Segurar **shift** e clicar em colunas adicionais adiciona essas colunas à classificação também. Se você clicar em uma coluna sem pressionar a tecla **Shift**, retornará para a classificação de coluna única.
 
-A sequência em que você clica nos títulos de coluna determina a ordem na qual a classificação é executada. Por exemplo, pressione **Shift**+**clique** na coluna **cyl** e, em seguida, **Shift**+**clique duplo** na coluna **mpg** para classificar a lista em cilindros ascendentes e milhas por galão decrescentes:
+A sequência em que você clica nos títulos de coluna determina a ordem na qual a classificação é executada. Por exemplo, **Shift**+**clique** na coluna **cyl** e, em seguida, **shift**+**clique** na coluna **mpg** duas vezes para classificar a lista de cilindros ascendentes e milhas descendentes por galão:
 
 ![Exibição de tabela de classificação de dados por duas colunas.](media/variable-explorer-table-view-sorting.png)
 
@@ -53,7 +53,7 @@ Como o **Gerenciador de Variáveis** e as exibições de tabela estão em janela
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Abrir no Excel (ou em outro aplicativo compatível com CSV)
 
-Para manipulação adicional e análise, geralmente é útil exportar as variáveis de sessão para CSV. A exportação é feita com o ícone pequeno do Excel (![ícone de exportação do Excel](media/variable-explorer-excel-icon.png)) ao lado de cada nó no **Gerenciador de Variáveis** ou clicando com o botão direito do mouse em um item e selecionando **Abrir em Aplicativo CSV**. A seleção do ícone grava os dados em um novo arquivo CSV na pasta *%userprofile%\Documents\RTVS_CSV_Exports* e, em seguida, inicia esse arquivo, que o abre em qualquer outro aplicativo associado à extensão *.csv*.
+Para manipulação adicional e análise, geralmente é útil exportar as variáveis de sessão para CSV. A exportação é feita com![o](media/variable-explorer-excel-icon.png)pequeno ícone excel (ícone de exportação do Excel) ao lado de cada nó no **Explorador Variável,** ou clicando com o botão direito do mouse em um item e selecionando **Abrir no Aplicativo CSV**. A seleção do ícone grava os dados em um novo arquivo CSV na pasta *%userprofile%\Documents\RTVS_CSV_Exports* e, em seguida, inicia esse arquivo, que o abre em qualquer outro aplicativo associado à extensão *.csv*.
 
 ## <a name="scopes"></a>Escopos
 
@@ -61,7 +61,7 @@ Por padrão, o **Gerenciador de Variáveis** é aberto no escopo global. Você p
 
 ![Gerenciador de Variáveis mostrando um escopo de pacote](media/variable-explorer-package-scopes.png)
 
-Alterne também para um escopo de função quando estiver parado em um ponto de interrupção no depurador (observe que o **Gerenciador de Variáveis** não alterna automaticamente para o escopo de função do código que está sendo depurado):
+Você também pode mudar para um escopo de função quando parado em um ponto de ruptura no depurador (observe que o **Variable Explorer** não alterna automaticamente para o escopo de função do código que está sendo depurado):
 
 ![Gerenciador de Variáveis mostrando um quadro de dados durante a depuração](media/variable-explorer-as-locals-window.png)
 
@@ -69,7 +69,7 @@ O **Gerenciador de Variáveis** altera o escopo de função automaticamente conf
 
 ## <a name="import-data-into-variable-explorer"></a>Importar dados para o Gerenciador de Variáveis
 
-Dois comandos na barra de ferramentas do **Gerenciador de Variáveis**, que também estão disponíveis no menu **Ferramentas do R** > **Dados**, importam conjuntos de dados CSV externos para a sessão do R:  **Importar conjunto de dados para a sessão do R por meio de uma URL da Web** e **Importar conjunto de dados para a sessão do R por meio de um arquivo de texto**.
+Dois comandos na barra de ferramentas do **Gerenciador de Variáveis**, que também estão disponíveis no menu **Ferramentas do R** > **Dados**, importam conjuntos de dados CSV externos para a sessão do R: **Importar conjunto de dados para a sessão do R por meio de uma URL da Web** e **Importar conjunto de dados para a sessão do R por meio de um arquivo de texto**.
 
 Depois de identificar o arquivo CSV a ser importado, o Visual Studio exibe uma caixa de diálogo **Importar Conjunto de Dados**, na qual há opções para controlar como esse arquivo de dados é analisado (ou seja, o que é o separador de campo e como lidar com aspas). Você também pode ver uma versão prévia do quadro de dados importado e do arquivo de dados original:
 

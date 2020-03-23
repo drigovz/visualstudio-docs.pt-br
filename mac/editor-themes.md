@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691627"
 ---
 # <a name="editor-themes"></a>Temas do editor
@@ -28,7 +28,7 @@ Os temas do editor podem ser alterados para qualquer um dos 10 esquemas de cores
 
 Depois de encontrar ou criar um novo tema e baixá-lo para seu computador local, adicione-o da seguinte maneira:
 
-1. Selecione o botão **Adicionar** na caixa de diálogo de Opção de Temas de Cores:  ![Adicionar Tema de Cores](media/source-editor-image20.png)
+1. Selecione o botão **Adicionar** na caixa de diálogo de Opção de Temas de Cores: ![Adicionar Tema de Cores](media/source-editor-image20.png)
 2. Navegue para o tema em seu computador local e pressione **Abrir**.
-3. O tema é adicionado à parte inferior da lista de temas pré-instalados. Para visualizar o tema, selecione-o: ![Visualização do tema de cores](media/source-editor-image21.png)
+3. O tema é adicionado à parte inferior da lista de temas pré-instalados. Para visualizar o tema, selecione-o: ![Versão prévia do tema de cores](media/source-editor-image21.png)
 4. Para aplicar o tema, pressione o botão **OK**.

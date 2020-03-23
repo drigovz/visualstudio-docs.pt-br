@@ -17,13 +17,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773329"
 ---
-# <a name="call-tree-view"></a>{1&gt;Visualização Árvore de Chamadas&lt;1}
+# <a name="call-tree-view"></a>Visualização Árvore de Chamadas
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó da função lista todas as funções que ela chamou e os dados de desempenho sobre essas chamadas de função.
 
  O Modo de exibição de árvore de Chamadas também expande e realça o caminho de execução de uma função que consumiu mais tempo ou que gerou amostras com mais frequência. Para exibir o caminho com mais custo de desempenho, clique com o botão direito do mouse na função e, em seguida, clique em **Expandir Afunilamento**.
@@ -49,7 +49,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 
 - [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
 - [Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
 - [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

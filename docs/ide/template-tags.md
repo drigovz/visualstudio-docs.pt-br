@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189512"
 ---
 # <a name="add-tags-to-project-templates"></a>Adicionar marcas aos modelos de projeto
@@ -73,7 +73,7 @@ Sintaxe:
 
 ### <a name="child-elements"></a>Elementos filho
 
-nenhuma.
+Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -93,7 +93,7 @@ O Visual Studio oferece uma lista de marcas internas. Ao adicionar uma marca int
 
 A lista a seguir mostra as marcas internas que estão disponíveis no Visual Studio. Os valores correspondentes são mostrados entre parênteses.
 
-| Idioma | Plataforma | Tipo de projeto |
+| Linguagem | Plataforma | Tipo de projeto |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Nuvem (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -145,9 +145,9 @@ O exemplo a seguir mostra os metadados para um modelo de projeto de um aplicativ
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criar modelos de projeto e de item](creating-project-and-item-templates.md)
-- [Personalizar modelos de item e projeto](customizing-project-and-item-templates.md)
+- [Criar modelos de projeto e itens](creating-project-and-item-templates.md)
+- [Personalize modelos de projeto e itens](customizing-project-and-item-templates.md)
 - [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

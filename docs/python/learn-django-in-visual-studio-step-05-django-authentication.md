@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957831"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
-**Etapa anterior: [Usar o modelo completo de Projeto Web do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Etapa anterior: [Usar o modelo Projeto Web completo do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em *settings.py* do projeto do Django.
+Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Polls Django Web Project" discutido na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar qualquer um dos modelos de projeto Django, o Visual Studio inclui todos os módulos necessários para autenticação no *settings.py*do projeto Django .
 
 Nesta etapa, você aprenderá:
 
@@ -35,7 +35,7 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Se você ainda não seguiu as instruções do arquivo *readme.html* na raiz do projeto para criar uma conta de superusuário (administrador), faça isso agora.
 
-1. Execute o aplicativo no Visual Studio usando **Depurar** > **Iniciar Depuração** (**F5**). Quando o aplicativo aparecer no navegador, observe que a opção **Login** aparecerá no canto superior direito da barra de navegação.
+1. Execute o aplicativo do Visual Studio usando **depuração de depuração** > **Start Debugging** **(F5).** Quando o aplicativo aparecer no navegador, observe que a opção **Login** aparecerá no canto superior direito da barra de navegação.
 
     ![Controle de logon na página do aplicativo do Projeto Web do Django](media/django/step05-login-control.png)
 
@@ -204,9 +204,9 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da tag {% csrf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
 
-Resposta: A tag `{% csrf_token %}` inclui a [proteção interna contra CSRF (solicitação intersite forjada)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentação do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
+Resposta: A marcação `{% csrf_token %}` inclui a [proteção interna contra solicitações intersites forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 

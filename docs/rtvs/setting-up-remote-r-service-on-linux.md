@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809551"
 ---
 # <a name="remote-r-service-for-linux"></a>Serviço R Remoto para Linux
@@ -22,8 +22,8 @@ No momento, o Serviço R Remoto para Linux está empacotado como rtvs-daemon. O 
 
 Depois de configurar o computador remoto, as etapas a seguir conectam as RTVS (Ferramentas do R para Visual Studio) a este serviço:
 
-1. Selecione **Ferramentas do R** > **Windows** > **Workspaces** para abrir a janela **Workspaces**.
-1. Selecione **Adicionar Conexão**.
+1. Selecione **R Ferramentas** > **Janelas** > **Espaços de trabalho** para abrir a janela Espaços de **trabalho.**
+1. Selecione **Adicionar conexão**.
 1. Dê um nome à conexão e forneça sua URL, como `https://localhost:5444` (Subsistema Windows para Linux) ou `https://public-ip:5444` (contêiner do Azure). Selecione **Salvar** quando concluir.
 1. Selecione o ícone de conexão ou clique duas vezes no item de conexão.
 1. Forneça as credenciais de logon. O nome de usuário deve ter o prefixo `<<unix>>\` como no `<<unix>>\ruser1` (conforme necessário para todas as conexões com computadores Linux remotos).
@@ -85,9 +85,9 @@ Em cada caso, o computador remoto deve ter uma dos seguintes interpretadores do 
 
 ### <a name="ubuntu-server-vm-or-data-science-vm-on-azure"></a>VM do Ubuntu Server ou VM de Ciência de Dados no Azure
 
-#### <a name="create-a-vm"></a>Criar uma VM
+#### <a name="create-a-vm"></a>Criar uma máquina virtual
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
+1. Faça login no [portal Azure](https://portal.azure.com).
 1. Navegue até Máquinas Virtuais e selecione **Adicionar**.
 1. Na lista de imagens de VM disponíveis, pesquise e selecione um dos seguintes:
     - Ubuntu Server: `Ubuntu Server 16.04 LTS`
@@ -99,7 +99,7 @@ Em cada caso, o computador remoto deve ter uma dos seguintes interpretadores do 
 
 #### <a name="configure-the-vm"></a>Configurar a VM
 
-1. Na seção **Rede** da VM, adicione 5444 como uma porta de entrada permitida. Para usar uma porta diferente, altere a configuração no arquivo de configuração do daemon das RTVS ( */etc/rtvs/rtvsd.config.json*).
+1. Na seção **Rede** da VM, adicione 5444 como uma porta de entrada permitida. Para usar uma porta diferente, altere a configuração no arquivo de configuração do daemon das RTVS (*/etc/rtvs/rtvsd.config.json*).
 1. (Opcional) Definir um nome DNS; também é possível usar o endereço IP.
 1. Conecte-se à VM usando um cliente SSH, como o PuTTY para WIndows.
 1. Siga as instruções para um [Computador Ubuntu físico](#physical-ubuntu-computer) acima.

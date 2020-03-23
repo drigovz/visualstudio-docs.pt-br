@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773975"
 ---
 # <a name="lines-view"></a>Exibição de linhas
@@ -43,7 +43,7 @@ A exibição de Linhas está disponível somente para dados de criador de perfil
 
 - O caractere na linha de origem em que a instrução termina.
 
-## <a name="see-also"></a>Consulte também
-- [Exibição de Linhas](../profiling/lines-view-sampling-data.md)
-- [Exibição de linhas – amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Exibição de Linhas](../profiling/lines-view-contention-data.md)
+## <a name="see-also"></a>Confira também
+- [Exibição de linhas](../profiling/lines-view-sampling-data.md)
+- [Visualização de linhas - amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Exibição de linhas](../profiling/lines-view-contention-data.md)

@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773733"
 ---
-# <a name="attach"></a>Attach
-A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).
+# <a name="attach"></a>Anexar
+A opção *VSPerfCmd.exe* **Attach** inicia a criação de perfil de amostra do processo de execução especificado pelo ID do processo (PID).
 
  Para usar a opção **Anexar**, você deve especificar o método de **exemplo** na opção de início.
 
@@ -30,7 +30,7 @@ A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo 
 VSPerfCmd.exe /Attach:ProcessID [Options]
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `ProcessID` O PID (identificador do processo) do processo em execução. A PID de um processo em execução é listada na guia Processos do Gerenciador de Tarefas do Windows.
 
 ## <a name="valid-options"></a>Opções válidas
@@ -38,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Habilita aplicativos de criação de perfil em sessões que não seja a sessão de logon. Necessário se a opção **Iniciar** foi especificada com a opção **Crosssession**.
 
- **Iniciar:** `Method` Inicializa a sessão do criador de perfil de linha de comando e define o método de criação de perfil especificado.
+ **Iniciar:** `Method` Inicia a sessão de profiler de linha de comando e define o método de criação de perfil especificado.
 
  **TargetCLR** Especifica a versão do CLR (Common Language Runtime) do .NET Framework a ser analisada quando mais de uma versão for carregada em uma sessão de criação de perfil. Por padrão, a primeira versão carregada é analisada.
 
  **GlobalOn GlobalOff** Retoma (**GlobalOn**) ou pausa (**GlobalOff**) a criação de perfil, mas não encerra a sessão de criação de perfil.
 
- **Processo:** `PID` **ProcessOff:** `PID` retoma a criação de perfil (**processize**) ou pausa (**ProcessOff**) para o processo especificado.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Resume **(ProcessOn)** ou pausas **(ProcessOff)** perfilamento para o processo especificado.
 
 ## <a name="interval-options"></a>Opções de intervalo
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando Anexar. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[ **:** `Name`,`Reload`,`FriendlyName`] Especifica o número e o tipo de intervalo de amostragem.
+ **Temporizador**[**]**`Cycles`**PF**[**: ]**`Events`**Sys**`FriendlyName`[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`] Especifica o número e o tipo do intervalo amostral.
 
 - **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.
 
@@ -67,8 +67,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345
 ```
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

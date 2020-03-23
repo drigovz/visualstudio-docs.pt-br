@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711259"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
@@ -29,11 +29,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite remover ou alterar a ordem dos parâmetros de um método.
+**O quê:** permite remover ou alterar a ordem dos parâmetros do método.
 
-**Quando:** Você deseja mover ou remover um parâmetro de método que está sendo usado em uma variedade de locais.
+**Quando:** você deseja mover ou remover um parâmetro de método que está sendo usado em uma variedade de locais.
 
-**Por que:** Você pode manualmente remover e reordenar os parâmetros e, em seguida, localizar todas as chamadas a esse método e alterá-las uma por uma, mas isso pode levar a erros.  Essa ferramenta de refatoração executará a tarefa automaticamente.
+**Por quê:** você pode manualmente remover e reordenar os parâmetros e, em seguida, localizar todas as chamadas para esse método e alterá-las uma por uma, mas isso poderia levar a erros.  Essa ferramenta de refatoração executará a tarefa automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -51,7 +51,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+V**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Alterar Assinatura** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Alterar Assinatura** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Remover Parâmetros**.
       - Selecione **Editar > Refatorar > Reordenar Parâmetros**.
@@ -61,14 +61,14 @@ Esta refatoração aplica-se a:
 
    ![Caixa de diálogo Alterar Assinatura](media/changesignature-dialog-cs.png)
 
-   | Botão | DESCRIÇÃO
+   | Botão | Descrição
    | ------ | ---
    | **Para cima/baixo** | Mova o parâmetro selecionado para cima e para baixo na lista
-   | **Removerr** | Remova o parâmetro selecionado da lista
-   | **Restaurar** | Restaurar o parâmetro selecionado e riscado na lista
+   | **Remover** | Remova o parâmetro selecionado da lista
+   | **Restauração** | Restaurar o parâmetro selecionado e riscado na lista
 
    > [!TIP]
-   > Use a caixa de seleção **Visualizar alterações de referência** para [ver qual será o resultado](../../ide/preview-changes.md) antes de confirmar as alterações.
+   > Use a **caixa de seleção de alterações** de referência da visualização para ver qual será o [resultado](../../ide/preview-changes.md) antes de se comprometer com ele.
 
 4. Quando tiver terminado, pressione o botão **OK** para fazer as alterações.
 
@@ -80,7 +80,7 @@ Esta refatoração aplica-se a:
 
       ![Resultado da alteração de assinatura – Visual Basic](media/changesignature-result-vb.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

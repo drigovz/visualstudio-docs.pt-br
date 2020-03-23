@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947572"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64556723"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "62947572"
 
 Você pode relatar um problema do Visual Studio ou de seu instalador usando a Ferramenta de Comentários incluída neles. A Ferramenta de Comentários permite que você inclua facilmente informações de diagnóstico nos seus comentários e ajuda as equipes do Visual Studio a diagnosticar e corrigir problemas com muito mais eficiência. Aqui estão as etapas para relatar um problema.
 
-1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **Ajuda** > **Enviar Comentários** > **Relatar um Problema**.
+1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de feedback do menu **Ajude a** > **enviar relatório de feedback** > **um problema**.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/vsfeedbackentry.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
 
@@ -54,7 +54,7 @@ Você pode relatar um problema do Visual Studio ou de seu instalador usando a Fe
 
    ![Relatar um problema novo](../ide/media/report-new-problem.png)
 
-1. Selecione **Avançar** para passar para a guia **Anexos**. Aqui, você pode capturar a tela atual para enviá-la à Microsoft. Para anexar capturas de tela adicionais ou outros arquivos, escolha **Anexar Arquivos Adicionais**.
+1. Selecione **Ao lado** para mover-se para a guia **Anexos.** Aqui, você pode capturar sua tela atual para enviá-la para a Microsoft. Para anexar capturas de tela adicionais ou outros arquivos, escolha **Anexar Arquivos Adicionais**.
 
    ![Anexe uma captura de tela a um relatório de problema do Visual Studio](media/report-a-problem-screenshot.png)
 
@@ -72,7 +72,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 
 1. Selecione a guia **Gravar**.
 
-1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se não puder, por exemplo, se o Visual Studio estiver travado, selecione **\<Criar uma nova instância>** para gravar as ações em uma nova instância do Visual Studio.
+1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se ** \<** o Visual Studio estiver pendurado, selecione Criar uma nova instância>gravar as ações em uma nova instância do Visual Studio.
 
 1. Selecione **Iniciar Gravação**. Conceda permissão para executar a ferramenta.
 
@@ -120,10 +120,10 @@ Se você não quiser ou não puder usar o Visual Studio para relatar um problema
 
 Se você não tem um problema a ser relatado, mas deseja sugerir um recurso, há um local para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-* [Fale conosco](../ide/talk-to-us.md)
+* [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Relatar um problema com C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
+* [Comunidade de desenvolvedores do Estúdio Visual](https://developercommunity.visualstudio.com/)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

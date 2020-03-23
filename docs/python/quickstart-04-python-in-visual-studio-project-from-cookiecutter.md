@@ -11,13 +11,13 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62954476"
 ---
-# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início Rápido: Criar um projeto por meio de um modelo do Cookiecutter
+# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início Rápido: criar um projeto por meio de um modelo do Cookiecutter
 
 Depois de [instalar o suporte ao Python no Visual Studio](installing-python-support-in-visual-studio.md), é fácil criar um projeto com base em um modelo do Cookiecutter, incluindo os vários modelos que estão publicados no GitHub. O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e posterior e pode ser instalado separadamente em versões anteriores do Visual Studio.
 
@@ -25,7 +25,7 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
 1. Inicie o Visual Studio.
 
-1. Escolha **Arquivo** > **Novo** > **De Cookiecutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos.
+1. Selecione **Arquivo** > **novo** > **do Cookiecutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos.
 
     ![Novo projeto de modelo do Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -35,20 +35,20 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
     ![Segunda etapa usando o Cookiecutter, configurando propriedades do projeto](media/projects-from-cookiecutter2.png)
 
-1. Quando o processo for concluído, você verá a mensagem **Arquivos criados com êxito usando o modelo…**. O projeto será aberto automaticamente no Gerenciador de Soluções.
+1. Quando o processo estiver concluído, você verá a mensagem **com sucesso criado arquivos usando modelo...**. O projeto é aberto no Solution Explorer automaticamente.
 
-1. Pressione **Ctrl**+**F5** ou escolha **Depurar** > **Iniciar Sem Depuração** para executar o programa.
+1. Pressione **Ctrl**+**F5** ou selecione **Debug** > **Start sem depuração** para executar o programa.
 
     ![Saída do projeto do modelo python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Tutorial: Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Tutorial: trabalhar com Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usar a extensão Cookiecutter](using-python-cookiecutter-templates.md)
 - [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalar o suporte para Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md)
-- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations)
+- [Instalar locais](installing-python-support-in-visual-studio.md#install-locations)

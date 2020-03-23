@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777384"
 ---
-# <a name="detach"></a>Detach
+# <a name="detach"></a>Desanexar
 A opção de **desanexar** VSPerfCmd.exe desconecta o criador de perfil de todos os processos ou dos processos especificados se nenhum for especificado. A criação de perfil deve ter sido inicializada usando o método de amostragem.
 
  A criação de perfil que foi iniciada com as opções **Iniciar** ou o **Anexar** pode ser desconectada com **Desanexar**. O criador de perfil pode ser reconectado usando os comandos **Anexar** subsequentes.
@@ -32,8 +32,8 @@ A opção de **desanexar** VSPerfCmd.exe desconecta o criador de perfil de todos
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `PIDs|ProcessNames` `PID` – O identificador numérico do sistema de um ou mais processos.
+#### <a name="parameters"></a>parâmetros
+ `PIDs|ProcessNames``PID` - O identificador numérico do sistema de um ou mais processos.
 
  `ProcessNames` - o nome do processo. Se estiver executando várias instâncias do processo nomeado, os resultados serão imprevisíveis.
 
@@ -57,8 +57,8 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown
 ```
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

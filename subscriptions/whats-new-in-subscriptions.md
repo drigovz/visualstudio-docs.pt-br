@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060400"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
@@ -39,7 +39,7 @@ Se sua organização já tiver assinaturas do Visual Studio com o GitHub Enterpr
 
 ## <a name="2019-q1-january-march"></a>T1 2019 (janeiro a março)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Uso Máximo adicionado ao [Portal de administração de assinaturas](https://manage.visualstudio.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>Uso Máximo adicionado ao [Portal de administração de assinaturas](https://manage.visualstudio.com)
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. Isso pode ajudá-lo a entender o uso da assinatura atual e a planejar compras futuras. 
 
   > [!div class="mx-imgBorder"]

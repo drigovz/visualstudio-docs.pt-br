@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911194"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
@@ -27,7 +27,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
  A Visualização Simultânea expõe um provedor padrão que pode ser usado para gerar marcadores. O provedor já está registrado junto com a Visualização Simultânea e não é necessário fazer mais nada para fazer os marcadores serem exibidos na interface do usuário.
 
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic
- No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão chamando métodos na classe [Markers](/previous-versions/hh694099(v=vs.140)). Ele expõe quatro métodos para gerar marcadores: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
+ No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão chamando métodos na classe [Markers](/previous-versions/hh694099(v=vs.140)). Ele expõe quatro métodos para gerar marcadores: [WriteFlag,](/previous-versions/hh694185%28v%3dvs.140%29) [EnterSpan,](/previous-versions/hh694205(v=vs.140)) [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Para adicionar suporte do SDK a um projeto em C# ou do Visual Basic
 
@@ -119,11 +119,11 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
     CvWriteFlag(series, _T("Writing a flag"));
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
-|[Referência de biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
-|[Referência de biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|
+|[Referência da biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
+|[Referência da biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|
 |[Instrumentação](/previous-versions/hh694104(v=vs.140))|Descreve a API da Visualização Simultânea para o código gerenciado.|
-|[Visualização Simultânea](../profiling/concurrency-visualizer.md)|Informações de referência para as exibições e relatórios de arquivos de dados de criação de perfil gerados usando o método de simultaneidade e que incluem dados de execução de threads.|
+|[Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)|Informações de referência para as exibições e relatórios de arquivos de dados de criação de perfil gerados usando o método de simultaneidade e que incluem dados de execução de threads.|

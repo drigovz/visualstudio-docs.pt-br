@@ -12,25 +12,25 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73661927"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo para o Python (e outras linguagens) que você pode usar para editar, depurar e testar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui ferramentas de preenchimento de código, ambientes de REPL interativo e outras funcionalidades para facilitar o processo de desenvolvimento de software.
 
-[![Visual Studio com um projeto do Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio com um projeto Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias janelas de ferramentas importantes que você provavelmente usará:
 
-- O [**Gerenciador de Soluções**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior direita) permite exibir, navegar e gerenciar os arquivos de código. O **Gerenciador de Soluções** pode ajudar a organizar o código agrupando os arquivos em [soluções e projetos](../get-started/tutorial-projects-solutions.md).
+- O [**Gerenciador de Soluções**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior direita) permite exibir, navegar e gerenciar os arquivos de código. **O Solution Explorer** pode ajudar a organizar seu código agrupando os arquivos em [soluções e projetos.](../get-started/tutorial-projects-solutions.md)
   - Ao lado do **Gerenciador de Soluções** estão os [**Ambientes do Python**](managing-python-environments-in-visual-studio.md), nos quais você gerencia os diferentes interpretadores do Python instalados no computador.
 
   ::: moniker range=">=vs-2019"
-  - Também é possível abrir e executar código Python em uma pasta sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, consulte [início rápido: abrir e executar o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md).
+  - Também é possível abrir e executar código Python em uma pasta sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, consulte [Quickstart: Abra e execute o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md).
   ::: moniker-end
 
 - A [janela do editor](../ide/writing-code-in-the-code-and-text-editor.md) (parte central), na qual você provavelmente passará a maior parte do tempo, exibe o conteúdo do arquivo. É nela que você [edita o código Python](editing-python-code-in-visual-studio.md), navega na estrutura de código e define pontos de interrupção durante as sessões de depuração. Com o Python, você também pode selecionar o código e pressionar Ctrl+Enter para executar o código em uma [janela de REPL interativo](python-interactive-repl-in-visual-studio.md).
@@ -44,7 +44,7 @@ Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias jan
 
 O Visual Studio está disponível para o Windows e o Mac; no entanto, o suporte ao Python está disponível apenas no Visual Studio para Windows.
 
-Há três edições do Visual Studio no Windows: Comunidade, Professional e Enterprise. Veja [Comparar IDEs do Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para saber quais recursos são compatíveis com cada edição.
+Há três edições do Visual Studio no Windows: Community, Professional e Enterprise. Veja [Comparar IDEs do Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para saber quais recursos são compatíveis com cada edição.
 
 ## <a name="popular-productivity-features"></a>Recursos de produtividade populares
 
@@ -80,9 +80,9 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Rabiscos no Visual Studio](media/tour-ide-squiggles.png)
 
-- [Ir para Definição e Inspecionar Definição](../ide/go-to-and-peek-definition.md)
+- [Acessar e Escolher Definição](../ide/go-to-and-peek-definition.md)
 
-   A funcionalidade **Ir para Definição** leva você diretamente para a localização em que uma função ou um tipo está definido. O comando **Inspecionar Definição** exibe a definição em uma janela sem abrir um arquivo separado. O comando **Localizar Todas as Referências** também fornece uma maneira útil de descobrir em que local um identificador especificado foi definido e usado.
+   O recurso **Ir para definição** leva você diretamente ao local onde uma função ou tipo é definido. O comando **Inspecionar Definição** exibe a definição em uma janela sem abrir um arquivo separado. O comando **Localizar Todas as Referências** também fornece uma maneira útil de descobrir em que local um identificador especificado foi definido e usado.
 
    ![Comandos de navegação de código](media/tour-ide-navigation-commands.png)
 
@@ -94,7 +94,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
     A partir do Visual Studio 2019, você pode abrir uma pasta que contém o código Python para aproveitar recursos como IntelliSense e depuração sem precisar criar um projeto do Visual Studio para o código.
 ::: moniker-end
 
-- [Colaborar usando o Visual Studio](/visualstudio/liveshare/)
+- [Colabore usando o Visual Studio](/visualstudio/liveshare/)
   
     O Visual Studio Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, independente da linguagem de programação usada ou dos tipos de aplicativo criados. 
 
@@ -106,7 +106,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
 - [Depuração](debugging-python-in-visual-studio.md)
 
-    O Visual Studio fornece uma experiência de depuração abrangente para o Python, incluindo a anexação a processos em execução, avaliação de expressões nas janelas **Inspeção** e **Imediata**, inspeção de variáveis locais, pontos de interrupção, instruções intervir/depuração parcial/depuração circular, comando **Definir Próxima Instrução** e muito mais. Você também pode depurar um código Python remoto executado em computadores Linux.
+    O Visual Studio oferece uma experiência abrangente de depuração para Python, incluindo anexar a processos em execução, avaliar expressões nas janelas **Watch** e **Immediate,** inspecionar variáveis locais, pontos de interrupção, instruções de entrar/sair/sair, **definir declaração próxima**e muito mais. Você também pode depurar um código Python remoto executado em computadores Linux.
 
     ![Depurando o Python no Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
@@ -122,7 +122,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Relatório de desempenho de criação de perfil](media/profiling-results.png)
 
-- [Testes de Unidade](unit-testing-python-in-visual-studio.md)
+- [Teste unitário](unit-testing-python-in-visual-studio.md)
 
     O Visual Studio fornece suporte integrado para descoberta, execução e depuração de testes de unidade, tudo no contexto do IDE.
 
@@ -133,18 +133,18 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 Explore ainda mais o Python no Visual Studio seguindo um destes tutoriais ou inícios rápidos:
 
 > [!div class="nextstepaction"]
-> [Início rápido: criar um aplicativo Web com o Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Quickstart: Crie um aplicativo web com o Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
-> [Introdução à estrutura da Web Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
+> [Introdução à estrutura da Web do Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
 
 > [!div class="nextstepaction"]
 > [Introdução à estrutura da Web Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - Descubra [mais recursos do Visual Studio](../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

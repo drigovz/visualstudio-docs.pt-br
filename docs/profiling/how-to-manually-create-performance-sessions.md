@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778824"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Como criar manualmente sessões de desempenho
@@ -37,6 +37,6 @@ Você pode criar manualmente uma sessão de desempenho. Não é necessário abri
 
      Um novo binário é adicionado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Gerenciador de Desempenho](../profiling/performance-explorer.md)
-- [Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Começando](../profiling/getting-started-with-performance-tools.md)

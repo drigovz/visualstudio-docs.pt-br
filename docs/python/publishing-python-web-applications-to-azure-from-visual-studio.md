@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784109"
 ---
 # <a name="publish-to-azure-app-service"></a>Publicar no Serviço de Aplicativo do Azure
@@ -33,7 +33,7 @@ Git deploy conecta um Serviço de Aplicativo no Linux a uma ramificação espec�
 
 Para saber mais, confira os seguintes artigos na documentação do Azure:
 
-- [Início Rápido: Criar um aplicativo Web do Python no Serviço de Aplicativo](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fornece um breve passo a passo sobre o processo de implantação do Git usando um aplicativo simples do Flask e a implantação por meio de um repositório Git local.
+- [Início rápido: Criar um aplicativo Web do Python no Serviço de Aplicativo](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fornece um breve passo a passo sobre o processo de Git deploy usando um aplicativo simples do Flask e a implantação de um repositório Git local.
 - [Como configurar o Python](/azure/app-service/containers/how-to-configure-python) descreve as características do Serviço de Aplicativo no contêiner do Linux e como personalizar o comando de inicialização do Gunicorn para seu aplicativo.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publicar no Serviço de Aplicativo no Linux usando contêineres

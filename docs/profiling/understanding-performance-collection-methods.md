@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778083"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
@@ -31,12 +31,12 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
 |[Amostragem](#sampling)|Coleta dados estatísticos sobre o trabalho executado por um aplicativo.|
 |[Instrumentação](#instrumentation)|Coleta informações de tempo detalhados sobre cada chamada de função.|
 |[Simultaneidade](#concurrency)|Coleta informações detalhadas sobre aplicativos multithread.|
-|[Memória do .NET](#net-memory)|Coleta informações detalhadas sobre coleta de lixo e de alocação de memória do .NET.|
-|[Interações de Camada](#tier-interaction)|Coleta informações sobre chamadas de função ADO.NET síncronas para um banco de dados do SQL Server.<br /><br /> A criação de perfil de interação de camadas pode ser coletada usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.|
+|[.NET memória](#net-memory)|Coleta informações detalhadas sobre coleta de lixo e de alocação de memória do .NET.|
+|[Interação entre camadas](#tier-interaction)|Coleta informações sobre chamadas de função ADO.NET síncronas para um banco de dados do SQL Server.<br /><br /> A criação de perfil de interação de camadas pode ser coletada usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.|
 
 Usando alguns dos métodos de criação de perfil, você também pode coletar dados adicionais, como contadores de desempenho de software e hardware. Para obter mais informações, confira [Coletar dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a>Amostragem
+## <a name="sampling"></a>amostragem
 
 O método de criação de perfil de amostragem coleta dados estatísticos sobre o trabalho executado por um aplicativo durante uma execução de criação de perfil. O método de amostragem é simples e tem pouco efeito na execução dos métodos de aplicativo.
 
@@ -74,13 +74,13 @@ O método de instrumentação injeta código em um arquivo binário que captura 
 
 Você também pode coletar contadores de desempenho da CPU e de software usando o método de instrumentação.
 
-[Entender os valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
+[Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
 
-[Coletar dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
+[Coletar dados de tempo detalhados usando instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
 
-[Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)
+[Visualizações de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a>Concorrência
+## <a name="concurrency"></a>Simultaneidade
 
 Criação de perfil de simultaneidade coleta informações sobre aplicativos multithread. Contenção de recursos perfis coleta informações de pilha de chamadas detalhada toda vez que threads simultâneas são forçadas a aguardar o acesso a um recurso compartilhado. Visualização de simultaneidade também coleta informações mais gerais sobre como seu aplicativo multithread interage consigo mesmo, o hardware, o sistema operacional e outros processos no computador host:
 
@@ -88,13 +88,13 @@ Criação de perfil de simultaneidade coleta informações sobre aplicativos mul
 
 - A Visualização Simultânea exibe informações gráficas que você pode usar para localizar o gargalo de desempenho, subutilização da CPU, contenção de thread, migração de thread, atrasos de sincronização, áreas de E/S sobrepostas e outras informações. Quando possível, os links de saída gráfica para a pilha de chamadas e os dados de código-fonte. Dados de visualização de simultaneidade podem ser coletados apenas para linha de comando e aplicativos do Windows.
 
-[Entender os valores de dados de contenção de recursos](../profiling/understanding-resource-contention-data-values.md)
+[Noções básicas sobre valores de dados de contenção de recurso](../profiling/understanding-resource-contention-data-values.md)
 
 [Coletar dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md)
 
-[Exibições de dados da contenção de recurso](../profiling/resource-contention-data-views.md)
+[Exibições de dados de contenção de recursos](../profiling/resource-contention-data-views.md)
 
-[Visualização Simultânea](../profiling/concurrency-visualizer.md)
+[Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)
 
 ## <a name="net-memory"></a>Memória do .NET
 
@@ -114,23 +114,23 @@ O perfil de memória do .NET pode ser usado no modo de amostragem ou instrumenta
 
 [Entender a alocação de memória e os valores de dados de tempo de vida do objeto](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
-[Coletar a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[Coletar dados de alocação de memória .NET e de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-[Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)
+[Exibições de dados de memória .NET](../profiling/dotnet-memory-data-views.md)
 
 ## <a name="tier-interaction"></a>Interação entre camadas
 
 Criação de perfil de interação de camadas adiciona informações a um arquivo de dados de criação de perfil sobre chamadas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] síncronas entre uma [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] página ou em outro aplicativo e um [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] banco de dados. Os dados incluem o número e a hora de chamadas e os tempos mínimos e máximos. Dados de interação de camadas podem ser adicionados para criação de perfil de dados que são coletados com a amostragem, instrumentação, memória do .NET ou métodos de simultaneidade.
 
-![Dados de perfil de interação de camada](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Dados do perfil de interação de nível](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Dados de interação de camadas que são coletados por ferramentas de criação de perfil
 
 [Coletar dados de interação entre camadas](../profiling/collecting-tier-interaction-data.md)
 
-[Exibições de interação entre camadas](../profiling/tier-interaction-views.md)
+[Visualizações de interação de camadas](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Como coletar dados de desempenho para um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-[guia para iniciantes para criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)
+[Como: Coletar dados de desempenho para um guia](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+iniciante de um site[para o perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)

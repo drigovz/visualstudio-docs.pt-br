@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553157"
 ---
 # <a name="cores-view-legend"></a>Legenda da exibição de núcleos
@@ -35,5 +35,5 @@ A legenda da Exibição de Núcleos identifica cada thread pela cor e pelo nome.
 |Opções de Contexto Total|O número total de alternâncias de contexto de determinado thread durante o período de amostragem. Sempre que um thread muda de contexto (por exemplo, de execução para sincronização), uma alternância de contexto é contada.|
 |Porcentagem de alternâncias de contexto que cruzam núcleos|Calculado como um percentual, dividindo o número de alternâncias de contexto de núcleo cruzado pelo número do total de alternâncias de contexto. Quanto maior esse percentual, maior será o efeito geral da sobrecarga de alternâncias de contexto de núcleo cruzado sobre o desempenho desse thread específico.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Exibição de núcleos](../profiling/cores-view.md)

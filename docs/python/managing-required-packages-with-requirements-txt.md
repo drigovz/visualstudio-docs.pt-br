@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535693"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
@@ -29,7 +29,7 @@ Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisi
 
 - Se desejar instalar as dependências em um ambiente virtual, primeiro crie e ative esse ambiente e use o comando **Install from requirements.txt**. Saiba mais sobre como criar um ambiente virtual em [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-- Se já tiver todos os pacotes necessários instalados em um ambiente, será possível clicar com o botão direito do mouse nesse ambiente, no **Gerenciador de Soluções** e escolher **Gerar requirements.txt** para criar o arquivo necessário. Se o arquivo já existir, será exibido um prompt para como atualizá-lo:
+- Se você já tiver todos os pacotes necessários instalados em um ambiente, clique com o botão direito do mouse nesse ambiente no **Solution Explorer** e selecione **Gerar requisitos.txt** para criar o arquivo necessário. Se o arquivo já existir, será exibido um prompt para como atualizá-lo:
 
     ![Opções de atualização de requirements.txt](media/environments/environments-requirements-txt-replace.png)
 
@@ -39,7 +39,7 @@ Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisi
 
 Como os arquivos *requirements.txt* se destinam a congelar os requisitos do ambiente, todos os pacotes instalados são escritos com versões precisas. Usar versões precisas garante que você possa reproduzir facilmente seu ambiente em outra máquina. Os pacotes serão incluídos, mesmo se eles foram instalados com um intervalo de versão, como uma dependência de outro pacote ou com um instalador que não seja o PIP.
 
-Se um pacote não puder ser instalado pelo PIP e for exibido em um arquivo *requirements.txt*, toda a instalação falhará. Nesse caso, edite manualmente o arquivo para excluir esse pacote ou use as [opções do PIP](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para se referir a uma versão instalável do pacote. Por exemplo, você pode preferir usar [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar uma dependência e adicionar a opção `--find-links <path>` ao *requirements.txt*:
+Se um pacote não puder ser instalado pelo PIP e for exibido em um arquivo *requirements.txt*, toda a instalação falhará. Nesse caso, edite manualmente o arquivo para excluir esse pacote ou use as [opções do PIP](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para se referir a uma versão instalável do pacote. Por exemplo, você pode [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) preferir usar para compilar `--find-links <path>` uma dependência e adicionar a opção aos seus *requisitos.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -66,9 +66,9 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Caminhos de pesquisa](search-paths.md)
-- [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)
+- [Referência da janela de ambientes do Python](python-environments-window-tab-reference.md)

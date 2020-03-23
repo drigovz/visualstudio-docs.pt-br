@@ -18,31 +18,31 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565208"
 ---
 # <a name="multitooltask-task"></a>Tarefa MultiToolTask
 
 Sem descrição.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **MultiToolTask**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**EnvironmentVariablesToSet**|Parâmetro opcional **String[]** .|
-|**SemaphoreProcCount**|Parâmetro opcional **string**.|
-|**SchedulerFunction**|Parâmetro opcional **string**.|
+|**EnvironmentVariablesToSet**|Parâmetro opcional **de string[].**|
+|**SemaphoreProcCount**|Parâmetro opcional **de string.**|
+|**SchedulerFunction**|Parâmetro opcional **de string.**|
 |**SchedulerVerbose**|Parâmetro opcional **bool**.|
-|**Sources**|Parâmetro obrigatório **ITaskItem[]** .|
-|**TaskAssemblyName**|Parâmetro opcional **string**.|
-|**TaskName**|Parâmetro obrigatório **string**.|
-|**TrackerLogDirectory**|Parâmetro obrigatório **string**.|
+|**Fontes**|Parâmetro **ITaskItem necessário[].**|
+|**TaskAssemblyName**|Parâmetro opcional **de string.**|
+|**TaskName**|Parâmetro de **corda** necessário.|
+|**TrackerLogDirectory**|Parâmetro de **corda** necessário.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)

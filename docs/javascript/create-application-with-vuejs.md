@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70180272"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
@@ -29,7 +29,7 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 * Reconhecimento do atributo `lang` em arquivos *.vue*
 * Modelos de projeto e de arquivo Vue.js
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 * É necessário ter o Visual Studio 2017 versão 15.8 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
 
@@ -40,10 +40,10 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
     Se a versão necessária ainda não estiver instalada, instale o [Visual Studio de 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Se você precisa instalar a carga de trabalho, mas já tem o Visual Studio, vá para **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Visual Studio Installer. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
 * Para criar o projeto ASP.NET Core, é necessário ter instaladas as cargas de trabalho de desenvolvimento do ASP.NET e para a Web e de desenvolvimento multiplataforma do .NET Core.
 
@@ -74,7 +74,7 @@ Neste exemplo, você usará um aplicativo ASP.NET Core vazio (C#). No entanto, v
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl+Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **Criar um novo projeto de Aplicativo Web ASP.NET Core**. Na caixa de diálogo que aparece, digite o nome do **aplicativo cliente** e, em seguida, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e escolha **Web**. No painel central, escolha **aplicativo Web ASP.NET Core**, digite o nome do **aplicativo de cliente** e, em seguida, escolha **OK**.
+    Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e escolha **Web**. No painel central, escolha **aplicativo Web ASP.NET Core**, digite o nome do **aplicativo de cliente** e, em seguida, escolha **OK**.
     ::: moniker-end
 
     Se o modelo de projeto **Aplicativo Web ASP.NET Core** não for exibido, instale as cargas de trabalho **desenvolvimento do ASP.NET e para a Web** e **Desenvolvimento do .NET Core** primeiro. Para instalar as cargas de trabalho, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Selecione as cargas de trabalho necessárias.
@@ -119,7 +119,7 @@ Para instalar o módulo npm vue-cli, abra um prompt de comando e digite `npm ins
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Indique o projeto para criar o aplicativo cliente sempre que um build for disparado
 
-1. No Visual Studio, acesse **Projeto** > **Propriedades** > **Eventos de Build**.
+1. No Visual Studio, vá para **Project** > **Properties** > **Build Events**.
 
 1. Na **Linha de comando do evento pré-build**, digite `npm --prefix ./client-app run build`.
 
@@ -196,8 +196,8 @@ cd ../
 
 * A execução do comando `npm run build` como um evento pré-build nas propriedades do projeto não funciona ao usar a vue-cli 3.0.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Guia de introdução do Vue](https://vuejs.org/v2/guide).
-- [Projeto da CLI do Vue](https://github.com/vuejs/vue-cli).
+- [Projeto Vue CLI](https://github.com/vuejs/vue-cli).
 - [Documentação de configurações do Webpack](https://webpack.js.org/configuration/).

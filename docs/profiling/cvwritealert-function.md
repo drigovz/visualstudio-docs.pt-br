@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b7cc2316168d14c6c996c4d55065771c85ffdfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62989782"
 ---
 # <a name="cvwritealert-function"></a>Função CvWriteAlert
@@ -54,7 +54,7 @@ HRESULT CvWriteAlertVA(
     _In_ va_list argList);
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `argList` Lista de argumentos.
 
  `pMarkerSeries` Contexto de série de marcador válido. Não pode ser NULL.
@@ -71,5 +71,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Consulte também
-- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Confira também
+- [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

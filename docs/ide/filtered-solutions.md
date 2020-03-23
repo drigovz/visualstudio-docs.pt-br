@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650847"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluções filtradas no Visual Studio
@@ -37,7 +37,7 @@ Você pode abrir uma solução sem carregar nenhum dos projetos diretamente na c
 
 Para abrir uma solução sem carregar nenhum dos projetos usando a caixa de diálogo **Abrir projeto**:
 
-1. Na barra de menus, escolha **Arquivo** > **Abrir** > **Projeto/Solução**.
+1. Escolha **File** > **Projeto/solução de abertura** > de**arquivo** na barra de menu.
 
 2. Na caixa de diálogo **Abrir Projeto**, selecione a solução e selecione **Não carregar projetos**.
 
@@ -57,7 +57,7 @@ Para abrir uma solução sem carregar nenhum dos projetos usando a caixa de diá
 
 (Novo no Visual Studio 2019 versão 16.1.)
 
-Para abrir uma solução sem carregar nenhum dos projetos a partir da linha de comando, use o botão [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md), como mostrado no exemplo a seguir:
+Para abrir uma solução sem carregar nenhum de [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) seus projetos da linha de comando, use o switch como mostrado no exemplo a seguir:
 
 ```cmd
 devenv /donotloadprojects MySln.sln
@@ -102,7 +102,7 @@ Depois de criar um arquivo de filtro de solução, ele é adicionado à sua list
 
 ![Abrir recente no Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md)
 - [Otimizar o desempenho do Visual Studio](optimize-visual-studio-performance.md)

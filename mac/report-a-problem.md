@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691224"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Como relatar um problema no Visual Studio para Mac
@@ -49,7 +49,7 @@ Para relatar um problema com o Visual Studio para Mac, selecione **Ajuda > Relat
 
    ![Relatar um problema novo](media/report-problem-image5.png)
 
-1. Selecione **Avançar** para passar para a guia **Incluir anexos**. Aqui, você pode capturar a tela atual para enviá-la à Microsoft. Para anexar arquivos de log, clique no ícone ![Anexar logs](media/report-problem-attach-logs.png) ou, para anexar capturas de tela e outros arquivos adicionais, clique no ícone ![Anexar arquivo](media/report-problem-attach-file.png).
+1. Selecione **A seguir** para mover-se para a guia **Incluir anexos.** Aqui, você pode capturar sua tela atual para enviá-la para a Microsoft. Para anexar arquivos de log, clique no ícone ![Anexar logs](media/report-problem-attach-logs.png) ou, para anexar capturas de tela e outros arquivos adicionais, clique no ícone ![Anexar arquivo](media/report-problem-attach-file.png).
 
    ![Anexar uma captura de tela a um relatório de problema do Visual Studio para Mac](media/report-problem-image6.png)
 
@@ -63,6 +63,6 @@ Se você não desejar, nem puder, usar o Visual Studio para Mac para relatar um 
 
 Se você não tem um problema a ser relatado, mas deseja sugerir um recurso, há um local para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Relatar um problema com o Visual Studio (no Windows)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

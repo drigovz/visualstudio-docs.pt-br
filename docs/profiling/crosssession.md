@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779448"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -27,17 +27,17 @@ A opção *VSPerfCmd.exe* **CrossSession** permite que o criador de perfil colet
 VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
-#### <a name="parameters"></a>Parâmetros
- {1&gt;Nenhum&lt;1}
+#### <a name="parameters"></a>parâmetros
+ Nenhum
 
 ## <a name="valid-options"></a>Opções válidas
  Para habilitar a criação de perfil em outra sessão, a opção **CrossSession** deve ser especificada com a opção **Iniciar**. **CrossSession** também deve ser especificado em qualquer comando **Anexar do VSPerfCmd** e **Desanexar** subsequente.
 
- **Iniciar:** `Method` a opção **Iniciar** Inicializa o criador de perfil para o método de criação de perfil especificado.
+ **Iniciar:** `Method` A opção **Iniciar** inicializa o profiler para o método de criação de perfil especificado.
 
- **Attach:** _pid_[ **,** _pid_] começa a criação de perfil dos processos especificados.
+ **Anexar:** _PID_[**,**_PID_] Começa a traçar o perfil dos processos especificados.
 
- **Desanexar**[ **:** _PID_[,_PID_]] Interrompe a criação de perfil dos processos especificados.
+ **Desanexar**[**:**_PID_[,_PID_]] Interrompe a criação de perfil dos processos especificados.
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, a opção **CrossSession** é usada para anexar a um aplicativo que foi iniciado em outra sessão de console.
@@ -47,8 +47,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS
 ```
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

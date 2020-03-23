@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605973"
 ---
-# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Caixa de diálogo Opções: Editor de texto \> JavaScript \> IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Caixa de diálogo \> opções: Editor de texto JavaScript \> IntelliSense
 
 Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar as configurações que afetam o comportamento do IntelliSense para JavaScript. É possível acessar a página **IntelliSense** escolhendo **Ferramentas** > **Opções** na barra de menus e, em seguida, expandindo **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense.**
 
@@ -28,11 +28,11 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
 
 A página **IntelliSense** contém as seguintes seções:
 
-## <a name="statement-completion"></a>Preenchimento de declaração
+## <a name="statement-completion"></a>Conclusão de instrução
 
 Você pode usar essas opções para alterar o comportamento do preenchimento de declaração do IntelliSense.
 
-### <a name="uielement-list"></a>Lista UIElement
+### <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 **Usar apenas Tab ou Enter para confirmar**
 
@@ -42,9 +42,9 @@ Quando você marca essa caixa de seleção, o editor de código do JavaScript ac
 
 Você pode usar essas opções para especificar os tipos de arquivo .js do IntelliSense que estão no escopo de diferentes tipos de projeto JavaScript. Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais do IntelliSense. Também é possível usar essa página para definir a ordem de carregamento de scripts que devem ser carregados no tempo de execução e para adicionar arquivos de extensão do IntelliSense.
 
-### <a name="uielement-list"></a>Lista UIElement
+### <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
-**Grupos de referências**
+**Grupos de referência**
 
 Essa opção especifica o tipo do grupo de referência. Há suporte para três grupos de referência:
 
@@ -76,6 +76,6 @@ Quando essa caixa de seleção for marcada e se você tiver um arquivo JavaScrip
 > [!NOTE]
 > Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

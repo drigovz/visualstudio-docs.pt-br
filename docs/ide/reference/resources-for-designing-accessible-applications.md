@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107845"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
@@ -40,23 +40,23 @@ Saiba mais sobre as tecnologias compatíveis com o design acessível. Também in
 
 ## <a name="windows-applications"></a>Aplicativos do Windows
 
-* **[Passo a passo: Criando um aplicativo acessível baseado em Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Este artigo fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
+* **[Passo a passo: criando um aplicativo acessível baseado em Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Este artigo fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
 
 * **Diretrizes para design da interface do usuário do teclado** Este artigo técnico descreve como criar um aplicativo do Windows para o qual os usuários possam navegar do teclado. Para obter mais informações, confira [Guidelines for keyboard user interface design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Diretrizes para o design da interface do usuário do teclado).
 
-* **Acessibilidade do console** Esse artigo técnico descreve as APIs e os eventos usados para expor o console no Windows XP para auxílios de acessibilidade. Para obter mais informações, confira [Acessibilidade do console](/previous-versions/windows/desktop/dnacc/console-accessibility).
+* **Acessibilidade do console** Este artigo técnico descreve as APIs e eventos usados para expor o console no Windows XP para auxílios de acessibilidade. Para obter mais informações, confira [Acessibilidade do console](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Sites
 
-- [Passo a passo: Diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
+- [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
-- **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
+- **Criando páginas da Web acessíveis com DHTML** Este artigo técnico lista elementos HTML 4.0 que são acessíveis, bem como dicas acessíveis de design web. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 
-- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)informações, consulte .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Recursos de acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Acessibilidade para Visual Studio para Mac](/visualstudio/mac/accessibility/)

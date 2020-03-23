@@ -27,17 +27,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926229"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.
 
-É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
+É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Os arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
 
 ## <a name="file-properties"></a>Propriedades do Arquivo
 Esta seção descreve as propriedades comuns aos arquivos JavaScript.
@@ -73,7 +73,7 @@ Exibe o idioma associado à referência.
 ### <a name="file-type"></a>Tipo de arquivo
 Exibe o tipo de arquivo da referência.
 
-### <a name="file-version"></a>Versão do arquivo
+### <a name="file-version"></a>Versão do Arquivo
 Exibe a versão de arquivo da referência.
 
 ### <a name="identity"></a>Identidade
@@ -88,12 +88,12 @@ Exibe o caminho da referência usada no projeto.
 ### <a name="sdk-path"></a>Caminho do SDK
 Exibe o caminho para o arquivo do SDK referenciado.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 Exibe o URI que deve ser incluído nos arquivos HTML ou JavaScript do projeto para incluir o arquivo como um arquivo de origem.
 
 ### <a name="version"></a>Versão
 Exibe a versão da referência.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciando propriedades de solução e de projeto](../../ide/managing-project-and-solution-properties.md)

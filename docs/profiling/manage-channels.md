@@ -13,27 +13,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435623"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64779246"
 ---
 # <a name="manage-channels"></a>Gerenciar canais
 Em **Exibição de Threads** na Visualização Simultânea, você pode organizar os canais para o seu processo, de forma que você possa examinar padrões específicos. Você pode classificar os canais, movê-los para cima e para baixo, ocultá-los ou mostrá-los.
 
-## <a name="sort-by"></a>Classificar por
+## <a name="sort-by"></a>Classificar Por
  Você pode usar o controle Classificar por para classificar os threads por critérios diferentes, com base no nível de zoom atual. Isso é especialmente útil quando você estiver procurando por um determinado padrão. Você pode classificar por estes critérios:
 
-|Critério|Definição|
+|Critérios|Definição|
 |--------------|----------------|
-|Hora de início|Classifica os threads de acordo com os horários de início. Essa é a ordem de classificação padrão.|
+|Start Time|Classifica os threads de acordo com os horários de início. Essa é a ordem de classificação padrão.|
 |Hora de término|Classifica os threads de acordo com os horários de término.|
 |Execução|Classifica os threads de acordo com o percentual de tempo gasto na execução.|
-|Sincronização|Classifica os threads de acordo com o percentual de tempo gasto na sincronização.|
+|Synchronization|Classifica os threads de acordo com o percentual de tempo gasto na sincronização.|
 |E/S|Classifica os threads de acordo com o percentual de tempo gasto na entrada/saída (leitura e gravação de dados).|
-|Sleep|Classifica os threads de acordo com o percentual de tempo gasto no modo de suspensão.|
-|Paginação|Classifica os threads de acordo com o percentual de tempo gasto na paginação.|
+|Modo de suspensão|Classifica os threads de acordo com o percentual de tempo gasto no modo de suspensão.|
+|Paginamento|Classifica os threads de acordo com o percentual de tempo gasto na paginação.|
 |Preempção|Classifica os threads de acordo com o percentual de tempo gasto na preempção.|
 |Processamento de interface do usuário|Classifica os threads de acordo com o percentual de tempo gasto no processamento da interface do usuário.|
 
@@ -58,7 +58,7 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
 ## <a name="group-markers-by-thread"></a>Agrupar marcadores por thread
  Se um rastreamento tiver eventos de marcador, você poderá usar esse comando para os canais do marcador de grupo sob o thread que gerou os eventos do marcador.  Os canais de disco são movidos para a parte superior da lista de canais e os canais GPU são movidos para a parte inferior.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Controle de zoom (exibição de threads)](../profiling/zoom-control-threads-view.md)
 - [Modo de medida habilitado/desabilitado](../profiling/measure-mode-on-off.md)
-- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)

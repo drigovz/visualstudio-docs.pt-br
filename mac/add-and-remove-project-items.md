@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692954"
 ---
 # <a name="adding-and-removing-project-items"></a>Adicionando e removendo itens de projeto
@@ -24,7 +24,7 @@ Isso exibe a caixa de diálogo Novo Arquivo, que fornece modelos de arquivos com
 
 ## <a name="adding-existing-files"></a>Adicionar arquivos existentes
 
-Você pode adicionar arquivos existentes ao seu projeto clicando com o botão direito do mouse no nó do Projeto e selecionando **Adicionar > Adicionar arquivos...** . Outra maneira de adicionar uma pasta inteira é selecionar **Adicionar > Adicionar pasta existente...** . Isso exibe o navegador de arquivos para permitir que você pesquise o item necessário a ser adicionado no seu sistema.
+Você pode adicionar arquivos existentes ao seu projeto clicando com o botão direito do mouse no nó Projeto e selecionando **Adicionar > Adicionar arquivos...**. Alternativamente, para adicionar uma pasta inteira, **selecione Adicionar > Adicionar pasta existente...**. Isso exibe o navegador de arquivos, que permite que você pesquise no seu sistema o item necessário para adicionar.
 
 ## <a name="removing-items"></a>Removendo itens
 
@@ -36,9 +36,9 @@ Isso exibe a caixa de diálogo Excluir item. Selecione uma das opções para rem
 
 ![Caixa de diálogo Excluir Item](media/add-and-remove-project-items-image4.png)
 
-* **Excluir** – remove o item do projeto e do disco.
+* **Excluir** – Remove itens do projeto e do disco.
 * **Remover do projeto** – Remove o item de projeto, mas não do disco
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Soluções e projetos no Visual Studio (no Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

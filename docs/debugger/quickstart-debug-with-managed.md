@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679198"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Início Rápido: Depuração com C# ou Visual Basic usando o depurador do Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Início Rápido: depurar com C# ou Visual Basic usando o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
@@ -31,7 +31,7 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Core)**. Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **.NET Core** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Core)**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
+    Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **.NET Core** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, digite um nome como **MyDbgApp** e clique em **OK**.
     ::: moniker-end
 
      Caso não veja o modelo de projeto **Aplicativo de Console (.NET Core)**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e **.NET Core**; em seguida, selecione **Modificar**.
@@ -56,7 +56,7 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
     End Module
     ```
 
-    com este código:
+    por este código:
 
     ```csharp
     class Program
@@ -132,7 +132,7 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
 
 1. Para definir o ponto de interrupção, clique na medianiz à esquerda da `doWork` chamada de função (ou selecione a linha de código e pressione **F9**).
 
-    ![Definir um ponto de interrupção](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Definir um ponto de interrupção")
+    ![Defina um ponto de ruptura](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Definir um ponto de interrupção")
 
 2. Agora pressione **F5** (ou escolha **Depurar > Iniciar depuração**).
 
@@ -147,9 +147,9 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
 
 Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que está disponível começando pelo Visual Studio 2017.
 
-Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `c1.AddLast(20)` até que o botão verde **Executar com um clique** ![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") seja exibido e, em seguida, pressione o botão **Executar com um clique**.
+Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `c1.AddLast(20)` até que o botão verde **Executar com um clique**![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") seja exibido e, em seguida, pressione o botão **Executar com um clique**.
 
-![Executar com um clique](../debugger/media/dbg-qs-run-to-click-csharp.png "Executar com um clique")
+![Corra para clicar](../debugger/media/dbg-qs-run-to-click-csharp.png "Executar com um clique")
 
 O aplicativo continua a execução, chamando `doWork`, e é pausado na linha de código em que você clicou no botão.
 
@@ -186,4 +186,4 @@ Para saber mais sobre como usar editar e continuar e sobre as limitações das f
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
 > [!div class="nextstepaction"]
-> [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+> [Primeiro olhe para o depurador](../debugger/debugger-feature-tour.md)

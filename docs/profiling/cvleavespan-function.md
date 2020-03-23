@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 776c24777403b9d88de31e11d0c28fe104666600
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62974101"
 ---
 # <a name="cvleavespan-function"></a>Função CvLeaveSpan
@@ -30,14 +30,14 @@ HRESULT CvLeaveSpan(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `pSpan` Objeto de período retornado pela chamada anterior a CvEnterSpan*. Não pode ser NULL.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
 
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** *cvmarkers.h*
 
-## <a name="see-also"></a>Consulte também
-- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Confira também
+- [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

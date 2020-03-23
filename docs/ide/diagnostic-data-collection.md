@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72652467"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Logs gerados pelo sistema coletados pelo Visual Studio
@@ -70,7 +70,7 @@ Os autores de extensão devem limitar a exposição de informações pessoais n�
 
 Considerando a finalidade dos dados que coletamos e as restrições de acesso e retenção, recomendamos que você use as configurações de privacidade padrão para o Visual Studio e o Windows. No entanto, você pode [recusar](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) o Programa de Aperfeiçoamento da Experiência do Visual Studio. Para recusar a coleta de logs gerados pelo sistema para todos os programas, confira [Diagnóstico, comentários e privacidade no Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). As opções podem variar de acordo com a versão do Windows que você está usando.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnóstico, comentários e privacidade no Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

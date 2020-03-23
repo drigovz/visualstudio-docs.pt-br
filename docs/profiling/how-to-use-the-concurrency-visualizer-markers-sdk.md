@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar o SDK de Marcadores da Visualização Simultânea | Microsoft Docs'
+title: Como usar o SDK de Marcadores da Visualização Simultânea | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68870338"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como: Usar o SDK de marcadores do visualizador de simultaneidade
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como usar o SDK de marcadores de Visualização Simultânea
 Este tópico mostra como usar o SDK da Visualização Simultânea para criar intervalos e gravar sinalizadores, mensagens e alertas.
 
 ### <a name="to-use-c"></a>Para usar o C++
@@ -48,7 +48,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 4. Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Iniciar com Projeto Atual** para executar o aplicativo e exibir a Visualização Simultânea. A ilustração a seguir mostra os três intervalos e os três marcadores na Visualização Simultânea.
 
-     ![Visualização Simultânea com três marcadores e alertas](../profiling/media/cvmarkersnative.png "CvMarkersNative")
+     ![Visualizador de simultâneos com 3 marcadores e alertas](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. Adicione código para criar a série de marcador personalizada adicional chamando o construtor para `marker_series` que aceita um nome de cadeia de caracteres para uma série de marcadores.
 
@@ -70,7 +70,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 6. Inicie o projeto atual para exibir Visualização Simultânea. As duas séries de marcador aparecem em suas próprias pistas na Exibição de Threads. A ilustração a seguir mostra os dois novos intervalos.
 
-     ![Visualização Simultânea com três séries de marcador personalizadas](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Visualizador de concorrência com 3 séries de marcadores personalizados](../profiling/media/cvmarkerseriesnative.png "CvMarkerSérieNativo")
 
 ### <a name="to-use-visual-basic-or-c"></a>Para usar o Visual Basic ou o C\#
 
@@ -126,7 +126,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 4. Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Iniciar com Projeto Atual** para executar o aplicativo e exibir a Visualização Simultânea. A ilustração a seguir mostra os três intervalos e os três marcadores na Exibição de Threads da Visualização Simultânea.
 
-     ![Visualização Simultânea com marcadores e alertas](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
+     ![Visualizador de simultâneos com marcadores e alertas](../profiling/media/cvmarkersmanaged.png "CvMarkersGerenciado")
 
 5. Adicione código para criar a série de marcador do cliente usando o método estático [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). A classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contém métodos para criar spans e escrever sinalizadores, mensagens e alertas.
 
@@ -164,7 +164,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 6. Inicie o projeto atual para exibir Visualização Simultânea. As três séries de marcador aparecem em suas próprias pistas na Exibição de Threads. A ilustração a seguir mostra os três novos intervalos.
 
-     ![Visualização Simultânea com três séries de marcador personalizadas](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Visualizador de concorrência com 3 séries de marcadores personalizados](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesGerenciado")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)

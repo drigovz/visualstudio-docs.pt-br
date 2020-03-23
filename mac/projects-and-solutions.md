@@ -1,5 +1,5 @@
 ---
-title: Soluções e Projetos
+title: Projetos e soluções
 description: Este documento fornece uma visão geral dos Projetos e Soluções no Visual Studio para Mac.
 ms.topic: overview
 author: heiligerdankgesang
@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107816"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projetos e soluções no Visual Studio para Mac
@@ -42,6 +42,6 @@ Você pode gerenciar as propriedades de projetos e soluções clicando duas veze
 
 Mais informações sobre essas opções são fornecidas no artigo [Gerenciando propriedades de Projetos e Soluções](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Soluções e projetos no Visual Studio (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

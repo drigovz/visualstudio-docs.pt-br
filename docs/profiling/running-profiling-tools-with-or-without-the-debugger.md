@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999422"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
@@ -33,9 +33,9 @@ Para ajudar a decidir quais ferramentas e resultados usar, considere os seguinte
 - O próprio depurador altera os tempos de desempenho, à medida que realiza operações do depurador necessárias como eventos de exceção de interceptação e de carga de módulo.
 - Os números de desempenho do build de versão nas ferramentas do **Criador de Perfil de Desempenho** são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração.
 
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
 
-Quando você inicia a depuração no Visual Studio selecionando **Depurar** > **Iniciar depuração** ou pressionando **F5**, a janela **Ferramentas de Diagnóstico** é exibida por padrão. Para abri-la manualmente, selecione **Depurar** > **Janelas** > **Mostrar Ferramentas de Diagnóstico**. A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
+Quando você começa a depurar no Visual Studio selecionando **Depuração Iniciar depuração** > **Start Debugging** ou pressionando **F5,** a janela **Ferramentas de diagnóstico** aparece por padrão. Para abri-lo manualmente, selecione **Debug** > **Windows** > **Show Diagnostic Tools**. A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
 
 ![Ferramentas de Diagnóstico](../profiling/media/diagnostictools-update1.png "Ferramentas de Diagnóstico")
 
@@ -43,7 +43,7 @@ Quando você inicia a depuração no Visual Studio selecionando **Depurar** > **
 
 - Selecione **Configurações** na lista suspensa **Configurações** para abrir **Páginas de propriedades de Ferramentas de Diagnóstico** com mais opções.
 
-- Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em Visual Studio **Ferramentas** > **Opções** > **IntelliTrace**.
+- Se você estiver executando o Visual Studio Enterprise, você pode ativar ou desativar o IntelliTrace no Visual Studio **Tools** > **Options** > **IntelliTrace**.
 
 A sessão de diagnóstico termina quando você interrompe a depuração.
 
@@ -57,11 +57,11 @@ Durante uma sessão de depuração, a guia **Eventos** da janela **Ferramentas d
 
 Use a lista suspensa **Filtrar** para filtrar eventos dentro e fora da exibição marcando ou desmarcando a categorias de eventos específicas.
 
-![Filtro de Evento de Diagnóstico](../profiling/media/diagnosticeventfilter.png "Filtro de Evento de Diagnóstico")
+![Filtro de evento de diagnóstico](../profiling/media/diagnosticeventfilter.png "Filtro de evento de diagnóstico")
 
 Use a caixa de pesquisa para localizar uma cadeia de caracteres específica na lista de eventos. Veja os resultados de uma pesquisa pelo "nome" da cadeia de caracteres que correspondeu a quatro eventos:
 
-![Pesquisa de evento de diagnóstico](../profiling/media/diagnosticseventsearch.png "Pesquisa de eventos de diagnóstico")
+![Pesquisa de eventos de diagnóstico](../profiling/media/diagnosticseventsearch.png "Pesquisa de eventos de diagnóstico")
 
 Para obter mais informações, consulte [Pesquisando e filtrando a guia de Eventos na janela de Ferramentas de Diagnóstico](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
@@ -69,17 +69,17 @@ Para obter mais informações, consulte [Pesquisando e filtrando a guia de Event
 
 Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível abrir o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
 
-1. Com um projeto aberto no Visual Studio, selecione **Depurar** > **Criador de Perfil de Desempenho** ou pressione **Alt**+**F2**.
+1. Com um projeto aberto no Visual Studio, selecione **Debug** > **Performance Profiler**ou **pressione Alt**+**F2**.
 
 1. Na página de início de diagnóstico, selecione uma ou mais ferramentas para serem executadas. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Selecione **Mostrar todas as ferramentas** para ver também as ferramentas desabilitadas para essa sessão de diagnóstico. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:
 
-   ![Selecionar as ferramentas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
+   ![Selecione as ferramentas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
 
 1. Para iniciar a sessão de diagnóstico, selecione **Iniciar**.
 
    Durante a execução da sessão, algumas ferramentas exibem grafos de dados em tempo real na página de ferramentas de diagnóstico.
 
-    ![Coletar dados sobre o Hub Desempenho e Diagnóstico](../profiling/media/pdhub_collectdata.png "Coletar dados do hub")
+    ![Coletar dados sobre o Hub de Desempenho e Diagnóstico](../profiling/media/pdhub_collectdata.png "Hub coleta dados")
 
 1. Para encerrar a sessão de diagnóstico, selecione **Interromper coleta**.
 
@@ -87,7 +87,7 @@ Para coletar dados de desempenho sem depuração, é possível executar as ferra
 
 É possível salvar os relatórios e abri-los na lista **Sessões abertas recentemente** na página de início das ferramentas de diagnóstico.
 
-![Abrir um arquivo de sessão de diagnóstico salvo](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+![Abra um arquivo de sessão de diagnóstico salvo](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
 ### <a name="the-profiling-report"></a>O relatório de criação de perfil
  ![Relatório de ferramentas de diagnóstico](../profiling/media/diag_report.png "DIAG_Report")
@@ -97,34 +97,34 @@ Para coletar dados de desempenho sem depuração, é possível executar as ferra
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Cada ferramenta de diagnóstico exibe um ou mais grafos mestre. Se a sessão de diagnóstico teve mais de uma ferramenta, todos os grafos mestre são exibidos.|
-|![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|É possível recolher e expandir grafos individuais de cada ferramenta.|
-|![Etapa 5](../profiling/media/procguid_6.png "ProcGuid_6")|Quando os dados incluem mais de uma ferramenta, os detalhes da ferramenta são coletados em guias.|
-|![Etapa 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|A metade inferior do relatório mostra uma ou mais exibições de detalhes para cada ferramenta. É possível filtrar a exibição selecionando regiões da linha do tempo.|
+|![Passo 4](../profiling/media/procguid_4.png "ProcGuid_4")|É possível recolher e expandir grafos individuais de cada ferramenta.|
+|![Passo 5](../profiling/media/procguid_6.png "ProcGuid_6")|Quando os dados incluem mais de uma ferramenta, os detalhes da ferramenta são coletados em guias.|
+|![Passo 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|A metade inferior do relatório mostra uma ou mais exibições de detalhes para cada ferramenta. É possível filtrar a exibição selecionando regiões da linha do tempo.|
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Executar sessões de diagnóstico em aplicativos instalados ou em execução
 
  Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, é possível diagnosticar problemas de desempenho em um aplicativo instalado por meio da Windows Store.
 
- ![Escolha o destino da análise de ferramentas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+ ![Escolha o alvo de análise de ferramentas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
  É possível iniciar aplicativos já instalados ou anexar as ferramentas de diagnóstico a aplicativos e processos que já estão em execução. Ao selecionar **Aplicativo em Execução** ou **Aplicativo Instalado**, você seleciona o aplicativo em uma lista que localiza os aplicativos no destino de implantação especificado. Esse destino pode ser um computador remoto ou local.
 
  ![Escolha um aplicativo em execução ou instalado para diagnóstico](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 Veja a seguir postagens no blogs e artigos do MSDN da equipe de desenvolvimento de diagnóstico:
-- [MSDN Magazine: Análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
+- [MSDN Magazine: análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
 
-- [MSDN Magazine: Uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)
+- [MSDN Magazine: uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)
 
-- [Postagem no blog: Diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+- [Postagem do blog: diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
 
-- [Vídeo: Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+- [Vídeo: depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
 
-- [Vídeo: Depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+- [Vídeo: depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
 
-- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio ("Visão rápida de informações de desempenho durante a depuração com o Visual Studio")](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+- [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 - [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
 
