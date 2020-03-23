@@ -3,6 +3,9 @@ title: Suspensão automática de recursos
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
+- live code analysis
+- background analysis
+- analysis scope
 - full solution analysis
 - performance
 - low-memory
@@ -12,44 +15,44 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6910bae3d924202fad8995d6ccd53efe848ba50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8480eb57a08905c2a593adbab519ae793638888
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573294"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431235"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
-Se a memória disponível no sistema cai a 200 MB ou menos, o Visual Studio exibe a mensagem a seguir no editor de código:
+Se a memória disponível do sistema cair para 200 MB ou menos, o Visual Studio exibirá a seguinte mensagem no editor de código:
 
-![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa_alert.png)
+![Texto de alerta suspendendo análise completa da solução](../code-quality/media/fsa_alert.png)
 
-Quando o Visual Studio detecta uma condição de pouca memória, ele suspende automaticamente determinados recursos avançados para ajudá-lo a permanecer estável. O Visual Studio continua a funcionar como antes, mas seu desempenho é degradado.
+Quando o Visual Studio detecta uma condição de memória baixa, ele suspende automaticamente certos recursos avançados para ajudá-lo a permanecer estável. Visual Studio continua a funcionar como antes, mas sua performance está degradada.
 
-Em uma condição de pouca memória, as seguintes ações ocorrem:
+Em uma condição de memória baixa, as seguintes ações ocorrem:
 
-- Análise de solução completa para o Visual c# e Visual Basic está desabilitado.
+- A análise de código ao vivo para Visual C# e Visual Basic é reduzida a um escopo mínimo.
 
-- [Coleta de lixo](/dotnet/standard/garbage-collection/index) modo de baixa latência (GC) para Visual c# e Visual Basic está desabilitado.
+- [O](/dotnet/standard/garbage-collection/index) modo de baixa latência da Coleta de Lixo (GC) para visual C# e Visual Basic está desativado.
 
-- Caches do Visual Studio são liberados.
+- Os caches do Visual Studio estão liberados.
 
 ## <a name="improve-visual-studio-performance"></a>Melhorar o desempenho do Visual Studio
 
-Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com grandes soluções ou condições de memória baixa, consulte [considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com grandes soluções ou condições de baixa memória, consulte [considerações de desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Análise de solução completa suspenso
+## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>A análise de código ao vivo é reduzida a um escopo mínimo
 
-Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual c#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, consulte [como: habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Por padrão, a análise de código vivo é executada para documentos e projetos abertos. Você pode personalizar este escopo de análise para ser reduzido ao documento atual ou aumentado para toda a solução. Para obter mais informações, [consulte Como: Configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md). Em uma condição de memória baixa, o Visual Studio força que o escopo de análise ao vivo seja reduzido ao documento atual. No entanto, você pode reativar seu escopo de análise preferido escolhendo o botão **Reativar** na barra de informações quando ele aparecer ou reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra as configurações atuais do escopo de análise de código ao vivo.
 
-## <a name="gc-low-latency-disabled"></a>GC baixa latência desabilitada
+## <a name="gc-low-latency-disabled"></a>GC de baixa latência desativado
 
-Para habilitar o modo de baixa latência de GC novamente, reinicie o Visual Studio. Por padrão, o Visual Studio habilita o modo de baixa latência de GC sempre que você está digitando para garantir que sua digitação não impeça que quaisquer operações de GC. No entanto, se uma condição de pouca memória faz com que o Visual Studio exibir o aviso de suspensão automática, o modo de baixa latência de GC está desabilitado para a sessão. Reiniciar o Visual Studio habilita novamente o comportamento de GC padrão. Para obter mais informações, consulte <xref:System.Runtime.GCLatencyMode>.
+Para reativar o modo de baixa latência GC, reinicie o Visual Studio. Por padrão, o Visual Studio habilita o modo de baixa latência GC sempre que você estiver digitando para garantir que sua digitação não bloqueie nenhuma operação de GC. No entanto, se uma condição de memória baixa fizer com que o Visual Studio exiba o aviso de suspensão automática, o modo de baixa latência GC será desativado para essa sessão. Reiniciar o Visual Studio reativa o comportamento padrão do GC. Para obter mais informações, consulte <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Caches do Studio Visual liberados
+## <a name="visual-studio-caches-flushed"></a>Caches do Visual Studio lavados
 
-Se você continuar sua sessão de desenvolvimento atual ou reinicie o Visual Studio, todos os caches do Visual Studio são removidos imediatamente, mas começa a preencher novamente. Os caches liberados incluem caches para os seguintes recursos:
+Se você continuar sua sessão de desenvolvimento atual ou reiniciar o Visual Studio, todos os caches do Visual Studio serão imediatamente esvaziados, mas começarão a repovoar. Os caches lavados incluem caches para os seguintes recursos:
 
 - Localizar todas as referências
 
@@ -57,13 +60,13 @@ Se você continuar sua sessão de desenvolvimento atual ou reinicie o Visual Stu
 
 - Adicionar usando
 
-Além disso, os caches usados para operações internas do Visual Studio também são desmarcados.
+Além disso, os caches usados para operações internas do Visual Studio também são limpos.
 
 > [!NOTE]
-> O aviso de suspensão do recurso automático ocorre apenas uma vez em uma base por solução, não em uma base por sessão. Isso significa que, se você alterna do Visual Basic para Visual c# (ou vice-versa) e executar em outra condição de pouca memória, você pode, possivelmente, obter outro aviso de suspensão automática de recursos.
+> O aviso automático de suspensão do recurso ocorre apenas uma vez por solução, não por sessão. Isso significa que se você mudar de Visual Basic para Visual C# (ou vice-versa) e correr para outra condição de memória baixa, você pode possivelmente obter outro aviso automático de suspensão de recurso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Como habilitar e desabilitar a análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Conceitos básicos da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)
-- [Considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Como: Configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md)
+- [Noções básicas sobre a coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)
+- [Considerações de desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

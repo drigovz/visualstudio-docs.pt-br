@@ -1,40 +1,40 @@
 ---
-title: Ferramentas do Visual Studio para Docker com ASP.NET
+title: Ferramentas visuais do estúdio para Docker com ASP.NET
 author: ghogen
-description: Saiba como usar as ferramentas e Docker for Windows do Visual Studio 2019
+description: Saiba como usar as ferramentas do Visual Studio 2019 e do Docker para Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76922972"
 ---
-Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicativos em contêineres .NET, ASP.NET e ASP.NET Core e publicá-los no ACR (registro de contêiner do Azure), no Hub do Docker, no serviço de Azure App ou no seu próprio registro de contêiner. Neste artigo, publicaremos um aplicativo ASP.NET Core no ACR.
+Com o Visual Studio, você pode facilmente construir, depurar e executar aplicativos .NET, ASP.NET e ASP.NET Core e publicá-los no Azure Container Registry (ACR), Docker Hub, Azure App Service ou no seu próprio registro de contêineres. Neste artigo, publicaremos um aplicativo ASP.NET Core para a ACR.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
-* [Ferramentas de desenvolvimento do .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) para desenvolvimento com o .NET Core
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [.NET Core Development Tools](https://dotnet.microsoft.com/download/dotnet-core/) para desenvolvimento com .NET Core
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para um teste gratuito](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Instalação e configuração
 
-Para a instalação do Docker, primeiro examine as informações no [Docker desktop para Windows: o que saber antes de instalar](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)o. Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Para a instalação do Docker, primeiro revise as informações no [Docker Desktop para Windows: O que saber antes de instalar](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Adicionar um projeto a um contêiner do Docker
 
-1. Crie um novo projeto usando o modelo de **aplicativo web ASP.NET Core** ou se desejar usar o .NET Framework em vez do .NET Core, escolha **aplicativo web ASP.net (.NET Framework)** .
-1. Selecione **aplicativo Web**e verifique se a caixa de seleção **habilitar suporte ao Docker** está marcada.
+1. Crie um novo projeto usando o modelo **de aplicativo da Web ASP.NET** ou se você quiser usar o .NET Framework em vez de .NET Core, escolha ASP.NET Aplicativo Web **(.NET Framework)**.
+1. Selecione **o aplicativo da Web**e certifique-se de que a caixa de seleção Ativar suporte do **Docker** esteja selecionada.
 
    ![Caixa de seleção Habilitar Suporte do Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
 
-   A captura de tela mostra o .NET Core; Se você estiver usando .NET Framework, parecerá um pouco diferente.
+   A captura de tela mostra .NET Core; se você estiver usando .NET Framework, parece um pouco diferente.
 
 1. Selecione o tipo de contêiner desejado (Windows ou Linux) e clique em **Criar**.
 
@@ -65,29 +65,29 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-O *Dockerfile* anterior baseia-se na imagem [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e inclui instruções para modificar a imagem base criando o projeto e adicionando-o ao contêiner. Se você estiver usando a .NET Framework, a imagem base será diferente.
+O *Dockerfile* anterior baseia-se na imagem [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e inclui instruções para modificar a imagem base criando o projeto e adicionando-o ao contêiner. Se você estiver usando o Quadro .NET, a imagem base será diferente.
 
 Quando a caixa de seleção **Configurar para HTTPS** do novo projeto estiver marcada, o *Dockerfile* exibirá duas portas. Uma porta é usada para o tráfego HTTP; a outra porta é usada para o HTTPS. Se a caixa de seleção não estiver marcada, uma única porta (80) será exposta para o tráfego HTTP.
 
-## <a name="debug"></a>Depuração
+## <a name="debug"></a>Depurar
 
 Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e inicie a depuração do aplicativo. Poderá aparecer uma mensagem com um aviso sobre a confiança em um certificado, escolha confiar no certificado para continuar.
 
-A opção **Ferramentas de Contêiner** na janela **Saída** mostra quais ações estão ocorrendo. Na primeira vez, pode levar algum tempo para baixar a imagem base, mas é muito mais rápido em execuções subsequentes.
+A opção **Ferramentas de Contêiner** na janela **Saída** mostra quais ações estão ocorrendo. Na primeira vez, pode levar um tempo para baixar a imagem base, mas é muito mais rápida em corridas subseqüentes.
 
-## <a name="containers-window"></a>Janela contêineres
+## <a name="containers-window"></a>Janela de contêineres
 
-Se você tiver o Visual Studio 2019 versão 16,4 ou posterior, poderá usar a janela **contêineres** para exibir contêineres em execução em seu computador, bem como imagens disponíveis.
+Se você tiver o Visual Studio 2019 versão 16.4 ou posterior, você pode usar a janela **Containers** para visualizar contêineres em execução em sua máquina, bem como imagens que você tem disponíveis.
 
-Abra a janela **contêineres** usando a caixa de pesquisa no IDE (pressione **Ctrl**+**Q** para usá-la), digite `container`e escolha a janela **contêineres** na lista.
+Abra a janela **Containers** usando a caixa de pesquisa no IDE (pressione **Ctrl**+**Q** para usá-la), digite `container`e escolha a janela **Containers** na lista.
 
-Você pode montar a janela **contêineres** em um local conveniente, como abaixo do editor, movendo-a e seguindo os guias de posicionamento da janela.
+Você pode montar a janela containers em um lugar conveniente, como abaixo do editor, movendo-a e seguindo as **guias** de colocação da janela.
 
-Na janela, localize o contêiner e percorra cada guia para exibir as variáveis de ambiente, os mapeamentos de porta, os logs e o sistema de arquivos.
+Na janela, encontre seu contêiner e passe por cada guia para visualizar as variáveis do ambiente, mapeamentos de portas, logs e o sistema de arquivos.
 
-![Captura de tela da janela contêineres](../../media/overview/vs-2019/container-tools-window.png)
+![Captura de tela da janela Containers](../../media/overview/vs-2019/container-tools-window.png)
 
-Para obter mais informações, consulte [Exibir e diagnosticar contêineres e imagens no Visual Studio](../../view-and-diagnose-containers.md).
+Para obter mais informações, consulte [Ver e diagnosticar recipientes e imagens no Visual Studio](../../view-and-diagnose-containers.md).
 
 ## <a name="publish-docker-images"></a>Publicar imagens do Docker
 
@@ -102,14 +102,14 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | Configuração      | Valor sugerido  | Descrição                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
-    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a usar. |
-    | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
-    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
-    | **Local do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
+    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
+    | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
+    | **[Sku](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
+    | **Localização do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]
 
-1. Clique em **Criar**
+1. Clique **em Criar**
 
    ![Captura de tela mostrando a publicação bem-sucedida](../../media/container-tools/publish-succeeded.png)
 

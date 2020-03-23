@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595443"
 ---
-# <a name="secure-applications"></a>Proteger aplicativos
+# <a name="secure-applications"></a>Aplicativos seguros
 
-Você deve considerar a segurança em todos os aspectos do desenvolvimento do aplicativo, do design à implantação. Comece executando o Visual Studio com a máxima segurança possível. Confira [Permissões de usuário](../ide/user-permissions-and-visual-studio.md).
+Você deve considerar a segurança em todos os aspectos do desenvolvimento do aplicativo, do design à implantação. Comece executando o Visual Studio com a máxima segurança possível. Consulte [as permissões do usuário](../ide/user-permissions-and-visual-studio.md).
 
 Para que você desenvolva aplicativos efetivamente seguros, é preciso ter um entendimento básico dos conceitos e dos recursos de segurança das plataformas para as quais você está desenvolvendo. Também é preciso entender as técnicas de codificação segura.
 
@@ -38,7 +38,7 @@ A segurança também é uma consideração importante no processo de compilaçã
 - [Dotfuscator](dotfuscator/index.md) é gratuito e ajuda a proteger assemblies .NET contra engenharia reversa e uso não autorizado, como depuração não autorizada.
 - [Assinatura de nome forte](managing-assembly-and-manifest-signing.md) pode ser usada para identificar os componentes de software com exclusividade e evitar falsificação de nome.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança no .NET](/dotnet/standard/security/index)
 - [Segurança do Azure](/azure/security/)

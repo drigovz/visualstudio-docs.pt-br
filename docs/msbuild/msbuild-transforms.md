@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633103"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 
-Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o MSBuild as utiliza para criar projetos com mais eficiência.
+Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o MSBuild os usa para construir projetos de forma mais eficiente.
 
 ## <a name="transform-modifiers"></a>Modificadores de transformação
 
@@ -49,9 +49,9 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ## <a name="dependency-analysis"></a>Análise de dependência
 
- Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino criar saídas que são transformações das entradas, o MSBuild pode analisar os carimbos de data/hora das entradas e saídas e decidir se deseja ignorar, compilar ou recompilar parcialmente um destino.
+ Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um alvo cria saídas que são transformações dos inputs, o MSBuild pode analisar os carimbos de tempo das entradas e saídas e decidir se pula, constrói ou reconstrói parcialmente um alvo.
 
- Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md).
+ Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para obter mais informações sobre análise de dependência e como usar transformações, consulte [Como: Construir incrementalmente](../msbuild/how-to-build-incrementally.md).
 
 ```xml
 <Target Name="CopyOutputs"
@@ -67,9 +67,9 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ## <a name="example"></a>Exemplo
 
-### <a name="description"></a>DESCRIÇÃO
+### <a name="description"></a>Descrição
 
- O exemplo a seguir mostra um arquivo de projeto do MSBuild que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0*.
+ O exemplo a seguir mostra um arquivo de projeto MSBuild que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0*.
 
 ### <a name="code"></a>Código
 

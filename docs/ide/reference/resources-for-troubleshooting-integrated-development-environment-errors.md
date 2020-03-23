@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593610"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar erros do ambiente de desenvolvimento integrado
@@ -119,9 +119,9 @@ Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Co
 
 ## <a name="product-support"></a>Suporte ao produto
 
-Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://support.microsoft.com/en-us). Para obter informações sobre o suporte do produto disponível em sua área, consulte a página [Opções de comentários do Visual Studio](../../ide/feedback-options.md) .
+Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://support.microsoft.com/en-us). Para obter informações sobre o suporte ao produto disponível em sua área, consulte a página [de opções de feedback](../../ide/feedback-options.md) do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Solução de problemas relacionados à rede ou erros de proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Solução de problemas (Visual Studio para Mac)](/visualstudio/mac/troubleshooting)

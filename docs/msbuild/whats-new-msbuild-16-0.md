@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77652801"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novidades no MSBuild 16.0
 
-Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. Para obter as notas de versão detalhadas, consulte [MSBuild 16,0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831).
+Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. Para obter as notas detalhadas de versão, consulte [MSBuild 16.0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831).
 
 ## <a name="changed-path"></a>Caminho alterado
 
- O MSBuild é instalado na pasta *\* em cada versão do Visual Studio, e os executáveis estão na subpasta *\Bin* . Por exemplo, o caminho para o *MSBuild. exe* instalado com o visual Studio 2019 Community é *C:\Program Files (x86) \Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* você também pode usar o seguinte módulo do PowerShell para localizar o MSBuild: [vssetup. PowerShell](https://github.com/Microsoft/vssetup.powershell).
+ O MSBuild está instalado na pasta *\Atual* em cada versão do Visual Studio, e os executáveis estão na subpasta *\Bin.* Por exemplo, o caminho para *o MSBuild.exe* instalado com o Visual Studio 2019 Community é *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* Você também pode usar o seguinte módulo PowerShell para localizar o MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
 ## <a name="changed-properties"></a>Propriedades alteradas
 

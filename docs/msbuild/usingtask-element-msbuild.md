@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263117"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431443"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -41,7 +41,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 ```
 
 > [!NOTE]
-> Ao contrário de propriedades e itens, o *primeiro* elemento `UsingTask` que se aplica a uma `TaskName` será usado; para substituir tarefas, você deve definir um novo `UsingTask` *antes* do existente.
+> Ao contrário das propriedades *first* `UsingTask` e itens, o `TaskName` primeiro elemento que se aplica a um será usado; para substituir tarefas que `UsingTask` você deve definir um novo *antes* do existente.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
@@ -49,7 +49,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`AssemblyName`|O atributo `AssemblyName` ou o `AssemblyFile` é necessário.<br /><br /> O nome do assembly a ser carregado. O atributo `AssemblyName` aceita os assemblies de nomes fortes, embora não seja necessário com nomes fortes. Usar esse atributo é equivalente a carregar um assembly usando o método <xref:System.Reflection.Assembly.Load%2A> no .NET.<br /><br /> Você não poderá usar esse atributo se o atributo `AssemblyFile` for usado.|
 |`AssemblyFile`|O atributo `AssemblyName` ou `AssemblyFile` é necessário.<br /><br /> O caminho do arquivo do assembly. Esse atributo aceita caminhos completos ou caminhos relativos. Caminhos relativos são relativos ao diretório do arquivo de projeto ou arquivo de destino no qual o elemento `UsingTask` é declarado. Usar esse atributo é equivalente a carregar um assembly usando o método <xref:System.Reflection.Assembly.LoadFrom%2A> no .NET.<br /><br /> Você não poderá usar esse atributo se o atributo `AssemblyName` for usado.|
@@ -59,25 +59,27 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|O conjunto de parâmetros que aparecem na tarefa que é gerada pelo `TaskFactory` especificado.|
 |[Tarefa](../msbuild/task-element-msbuild.md)|Os dados que são passados para o `TaskFactory` para gerar uma instância da tarefa.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
  Variáveis de ambiente, propriedades de linha de comando, propriedades no nível do projeto e itens no nível do projeto podem ser referenciadas no elemento `UsingTask` incluído no arquivo de projeto, explicitamente ou por meio de um arquivo de projeto importado. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
-> Propriedades e itens no nível do projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos *.tasks* globalmente registrados com o mecanismo do MSBuild. Valores no nível do projeto não são globais ao MSBuild.
+> Propriedades e itens em nível de projeto `UsingTask` não têm significado se o elemento vem de um dos arquivos *.tasks* que estão registrados globalmente no mecanismo MSBuild. Valores no nível do projeto não são globais ao MSBuild.
 
- No MSBuild 4.0, usar tarefas pode ser carregado a partir de arquivos *.overridetask*.
+ No MSBuild 4.0, o uso de tarefas pode ser carregado a partir de arquivos *de .overridetask.*
+
+O conjunto que contém a tarefa `Task` personalizada é carregado quando o primeiro é usado.
 
 ## <a name="example"></a>Exemplo
 
@@ -109,4 +111,4 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595482"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
@@ -30,7 +30,7 @@ Exibe uma lista dos threads no programa atual.
 Debug.ListThreads [index]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `index`
 
 Opcional. Seleciona um thread pelo seu índice para o thread atual.
@@ -44,10 +44,10 @@ Quando especificado, o argumento `index` marca o thread indicado como o thread a
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
-- [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)
+- [Comando Listar Desmontagem](../../ide/reference/list-disassembly-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

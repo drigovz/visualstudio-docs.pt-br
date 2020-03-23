@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410034"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302892"
 ---
 # <a name="msbuild-response-files"></a>Arquivos de resposta do MSBuild
 
-Arquivos de resposta ( *.rsp*) são arquivos de texto que contêm as opções de linha de comando do *MSBuild.exe*. Cada opção pode estar em uma linha separada ou todas as opções podem estar em uma linha. As linhas de comentários são precedidas por um símbolo **#** . A opção **@** é usada para passar outro arquivo de resposta para o *MSBuild.exe*.
+Arquivos de resposta (*.rsp*) são arquivos de texto que contêm as opções de linha de comando do *MSBuild.exe*. Cada opção pode estar em uma linha separada ou todas as opções podem estar em uma linha. As linhas de comentários **#** são pré-confrontadas com um símbolo. O **@** switch é usado para passar outro arquivo de resposta para *mSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 
@@ -37,7 +37,7 @@ O arquivo de resposta automática é um arquivo *.rsp* especial que o *MSBuild.e
 
 Na versão 15.6 e superior, o MSBuild pesquisará um arquivo chamado *Directory.Build.rsp* nos diretórios pai do projeto.  Isso pode ser útil em um repositório de código-fonte para fornecer argumentos padrão durante os builds de linha de comando.  Também pode ser usado para especificar os argumentos de linha de comando de builds hospedados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

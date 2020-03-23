@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115404"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
@@ -35,19 +35,19 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
    ![Menu Compilar, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Na lista **Configuração da solução ativa**, escolha **\<Nova....\>** .
+1. Na lista **de configuração da solução Ativa,** escolha ** \<Novo... \>**.
 
 1. Na caixa de diálogo **Nova Configuração da Solução**, dê à nova configuração o nome `Test`, copie as configurações da configuração **Depuração** existente e, em seguida, escolha o botão **OK**.
 
    ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Na lista **Plataforma da solução ativa**, escolha **\<Nova...\>** .
+1. Na lista **de plataformas de solução Ativa,** escolha ** \<Novo... \>**.
 
-1. Na caixa de diálogo **Nova Plataforma de Solução**, escolha **x64** e não copie as configurações da plataforma x86.
+1. Na caixa de diálogo **Plataforma nova solução,** escolha **x64**e não copie as configurações da plataforma x86.
 
    ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Escolha o botão **OK**.
+1. Clique no botão **OK**.
 
    A configuração da solução ativa foi alterada para **Teste** com a plataforma da solução ativa definida como x64.
 
@@ -63,9 +63,9 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
 Em seguida, você compilará a solução com a configuração de build personalizada.
 
-### <a name="build-the-solution"></a>Criar a solução
+### <a name="build-the-solution"></a>Compilar a solução
 
-- Na barra de menus, escolha **criar** > **criar solução**ou pressione **Ctrl**+**Shift**+**B**.
+- Na barra de menu, escolha **Build** > **Build Solution**ou **pressione Ctrl**+**Shift**+**B**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 
@@ -77,9 +77,9 @@ Em seguida, apresentaremos alguns códigos que fazem com que um aviso seja gerad
 
     OU
 
-    No projeto do Visual Basic, abra o arquivo *ExpenseReportPage.xaml.vb*. No construtor personalizado **Public Sub New...** , adicione o seguinte código: `Dim i`.
+    No projeto do Visual Basic, abra o arquivo *ExpenseReportPage.xaml.vb*. No construtor personalizado **Public Sub New...**, adicione o seguinte código: `Dim i`.
 
-1. {1&gt;Compile a solução.&lt;1}
+1. Compile a solução.
 
 A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido, mas foram gerados avisos:
 
@@ -93,7 +93,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.
 
-1. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
+1. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
 
      O **Designer de Projeto** é aberto.
 
@@ -103,7 +103,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      Para obter mais informações, consulte [Página Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-1. {1&gt;Compile a solução.&lt;1}
+1. Compile a solução.
 
      A Janela de **Saída** exibe apenas informações de resumo do build.
 
@@ -113,7 +113,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.
 
-2. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
+2. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
 
      O **Designer de Projeto** é aberto.
 
@@ -123,7 +123,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      Para obter mais informações, consulte [Configurar avisos no Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-4. {1&gt;Compile a solução.&lt;1}
+4. Compile a solução.
 
    A Janela de **Saída** exibe apenas informações de resumo do build.
 
@@ -148,13 +148,13 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Na lista **Detalhes da saída de build do projeto do MSBuild**, escolha **Normal** e, em seguida, o botão **OK**.
 
-1. Na barra de menus, escolha **Build** > **Limpar Solução**.
+1. Na barra de menu, escolha **Build** > **Clean Solution**.
 
 1. Compile a solução e, em seguida, examine as informações na Janela de **Saída**.
 
      As informações do build incluem a hora de início do build (localizada no início) e ordem em que os arquivos foram processados. Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.
 
-     Por exemplo, na C# compilação, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso, **0168**, que você especificou anteriormente neste tópico, juntamente com três outros avisos.
+     Por exemplo, na compilação C#, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso, **0168**, que você especificou anteriormente neste tópico, juntamente com três outros avisos.
 
      No build do Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) não inclui avisos específicos a serem excluídos e, portanto, nenhum aviso é exibido.
 
@@ -188,7 +188,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
     > [!IMPORTANT]
     > Uma caixa de mensagem poderá ser exibida, avisando que o compartilhamento de rede especificado pode não ser um local confiável. Se você confiar no local especificado, escolha o botão **OK** na caixa de mensagem.
 
-1. Compile o aplicativo.
+1. Construa o aplicativo.
 
      ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png)
 
@@ -213,7 +213,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 1. Na **barra de ferramentas Padrão**, defina as Configurações da solução como **Versão** e as Plataformas da solução como **x86**.
 
-1. Compile o aplicativo.
+1. Construa o aplicativo.
 
      ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png)
 
@@ -221,7 +221,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 Parabéns! Você concluiu este passo a passo com êxito.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Passo a passo: Criar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))

@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633038"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
 Especifica o bloco de código a executar se e somente se as condições de todos os elementos `When` forem avaliadas como `false`.
 
- \<projeto > \<escolha > \<quando > \<escolha >... \<caso contrário > \<escolha >...
+ \<Projeto \<> \<Escolha \<> Quando> Escolha> ... \<Caso contrário,> \<escolha> ...
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
@@ -51,23 +51,23 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|
+|[Escolher](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um elemento `Otherwise`.|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de definidos elementos [Property](../msbuild/property-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `PropertyGroup` em um elemento `Otherwise`.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
+|[Escolher](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
 
 ## <a name="remarks"></a>Comentários
 
  Pode haver apenas um elemento `Otherwise` em um elemento `Choose` e ele deve ser o último elemento.
 
- Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar diversas alternativas possíveis. Para saber mais, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
+ Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, confira [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -120,5 +120,5 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ## <a name="see-also"></a>Confira também
 
-- [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

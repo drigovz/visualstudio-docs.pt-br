@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634078"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
@@ -78,7 +78,7 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
   </BootstrapperItem>
   ```
 
-   O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são necessários aos parâmetros de entrada do MSBuild, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.
+   O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada `ApplicationFile` MSBuild necessários, a menos que nenhum seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.
 
    Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.
 
@@ -86,7 +86,7 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
 
    Parâmetro de saída `String` opcional.
 
-   Especifica a localização interna de *setup.exe*
+   Especifica o local construído de *setup.exe*
 
 - `ComponentsLocation`
 

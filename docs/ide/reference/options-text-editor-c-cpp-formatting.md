@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596249"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
@@ -32,37 +32,37 @@ Use essas páginas de propriedades para alterar o comportamento padrão do edito
 Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e clique em **Formatação**.
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizar o Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="general-page"></a>Página geral
+## <a name="general-page"></a>Página Geral
 
 Esta página contém as opções de formatação de instruções e de blocos conforme você os digita.
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versão 15.7 e posteriores**:
+**Visual Studio 2017 versão 15.7 e posterior**:
 
 ::: moniker-end
 
-A página também tem opções para configurar o suporte para a versão 5,0 do [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) . O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
+A página também tem opções para configurar o suporte para o [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versão 5.0. O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configurando as opções de ClangFormat
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versão 15.7 e posteriores**:
+**Visual Studio 2017 versão 15.7 e posterior**:
 
 ::: moniker-end
 
 O suporte a ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas.
 
-Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)** .
+Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)**.
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de Recuo, Novas Linhas, Disposição de Espaçamento
 
 Essas páginas habilitam várias personalizações de formatação, mas que são ignoradas quando ClangFormat está habilitado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

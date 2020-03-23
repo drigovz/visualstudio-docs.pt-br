@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111482"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar atrasos de início do cenário em testes de carga
@@ -43,7 +43,7 @@ Outro exemplo é que você talvez tenha um cenário executado apenas em uma dete
 
 1. Abra um teste de carga.
 
-     O Editor de testes de carga é exibido. A árvore do teste de carga é exibida.
+     O Editor de Testes de Carga é exibido. A árvore do teste de carga é exibida.
 
 2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar o atraso de tempo de início.
 
@@ -83,8 +83,8 @@ A propriedade **Desabilitar durante aquecimento** é usada para indicar se o cen
 
 4. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Desabilitar durante aquecimento**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Configurar controladores e agentes de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Configurar agentes de teste e controladores de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

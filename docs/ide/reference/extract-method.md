@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569693"
 ---
 # <a name="extract-a-method-refactoring"></a>Refatoração Extrair um método
@@ -50,7 +50,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+M**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Método** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Método** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Extrair Método**.
       - Clique com o botão direito do mouse no código e selecione **Refatorar > Extrair > Extrair Método**.
@@ -71,7 +71,7 @@ Esta refatoração aplica-se a:
 
 3. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

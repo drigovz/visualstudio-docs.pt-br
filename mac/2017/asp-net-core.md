@@ -7,10 +7,10 @@ ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984888"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
@@ -25,11 +25,11 @@ O .NET Core 1.1 é instalado automaticamente quando você instala o Visual Studi
 
 Abra o Visual Studio para Mac. Na página inicial, escolha **Novo Projeto...**
 
-![Nova caixa de diálogo de projeto](media/asp-net-core-image1.png)
+![Caixa de diálogo Novo Projeto](media/asp-net-core-image1.png)
 
 Isso exibirá a caixa de diálogo Novo projeto, permitindo que você selecione um modelo para criar seu aplicativo.
 
-Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Elas são:
+Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Estes são:
 
 - **.NET Core > Aplicativo Web ASP.NET Core vazio**
 - **.NET Core > Aplicativo Web ASP.NET Core**
@@ -64,7 +64,7 @@ public static void Main(string[] args)
 }
 ```
 
-Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
+Um aplicativo ASP.NET Core cria um servidor web em seu método principal, configurando e lançando um host através de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
 * `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo
 * `UseContentRoot(Directory.GetCurrentDirectory())`: usa pasta raiz do projeto Web como a raiz de conteúdo do aplicativo ele for iniciado desta pasta
@@ -167,7 +167,7 @@ Para adicionar um controlador, faça o seguinte:
     }
     ```
 
-3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...** .
+3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...**.
 
 4. Use a caixa de Pesquisa para procurar `Microsoft.AspNetCore.Mvc` na biblioteca de NuGet e selecione **Adicionar Pacote**. A instalação pode levar alguns minutos e pode ser solicitado que você aceite várias licenças para as dependências necessárias:
 

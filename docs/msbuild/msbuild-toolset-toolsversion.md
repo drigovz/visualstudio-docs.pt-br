@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633116"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
-O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo *Microsoft. Common. Tasks* , um arquivo *Microsoft. Common. targets* e compiladores como *CSC. exe* e *Vbc. exe*. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.
+O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo *microsoft.common.tasks,* um arquivo *microsoft.common.targets* e compiladores como *csc.exe* e *vbc.exe*. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Atributo ToolsVersion
 
@@ -61,7 +61,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- É possível modificar o valor do `MSBuildToolsPath` ao definir um conjunto de ferramentas personalizado. Para saber mais, confira [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
+ É possível modificar o valor do `MSBuildToolsPath` ao definir um conjunto de ferramentas personalizado. Para obter mais informações, consulte [configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
 
  Quando você compila uma solução na linha de comando e especifica um `ToolsVersion` para *msbuild.exe*, todos os projetos e suas dependências projeto a projeto são compilados de acordo com o `ToolsVersion`, mesmo que cada projeto na solução especifique seu próprio `ToolsVersion`. Para definir o valor `ToolsVersion` em uma base por projeto, consulte [Substituir as configurações de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -87,7 +87,7 @@ O MSBuild fornece duas maneiras de acessar o conjunto de ferramentas:
 
 - Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
-As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. Começando no Visual Studio 2017, o MSBuild deixa de ter um local fixo. Por padrão, ele está localizado na pasta *MSBuild\15.0\Bin* relativa ao local de instalação do Visual Studio. Nas versões anteriores, o MSBuild usa o valor do atributo `ToolsVersion` no arquivo de projeto para localizar a chave do Registro correspondente e, em seguida, usa as informações da chave do Registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do Conjunto de Ferramentas de acordo com esta chave do Registro: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
+As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. Começando no Visual Studio 2017, o MSBuild deixa de ter um local fixo. Por padrão, ele está localizado na pasta *MSBuild\15.0\Bin* em relação ao local de instalação do Visual Studio. Nas versões anteriores, o MSBuild usa o valor do atributo `ToolsVersion` no arquivo de projeto para localizar a chave do Registro correspondente e, em seguida, usa as informações da chave do Registro para definir as propriedades do conjunto de ferramentas. Por exemplo, `ToolsVersion` se `12.0`tiver o valor, então o MSBuild define as propriedades do Conjunto de Ferramentas de acordo com esta chave de registro: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
 
  Estas são as propriedades do conjunto de ferramentas:
 
@@ -134,5 +134,5 @@ Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
-- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+- [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

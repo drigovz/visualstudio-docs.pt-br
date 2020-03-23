@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263351"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79190338"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
@@ -26,7 +26,7 @@ No Visual Studio e no Blend para Visual Studio, o Designer XAML fornece uma inte
 Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> O Xamarin. Forms não dá suporte a um designer XAML. Para exibir as UIs do XAML do Xamarin. Forms e editá-las enquanto o aplicativo estiver em execução, use o Hot recarregamento XAML para Xamarin. Forms. Para obter mais informações, consulte a página o [recarregamento de XAML para Xamarin. Forms (versão prévia)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+> Xamarin.Forms não suporta um designer XAML. Para visualizar suas UIs Xamarin.Forms XAML e editá-las enquanto o aplicativo estiver em execução, use o XAML Hot Reload para Xamarin.Forms. Para obter mais informações, consulte a página [XAML Hot Reload for Xamarin.Forms (Preview).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
 ## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML
 
@@ -90,7 +90,7 @@ Exibe ou oculta a grade de ajuste que mostra as linhas de grade. As linhas de gr
 
 **Ativar/desativar ajuste às linhas de grade**
 
-Se o **ajuste para linhas de grade** estiver habilitado, um elemento tende a se alinhar com as linhas de grade horizontais e verticais mais próximas ao arrastá-lo para a prancheta.
+Se **a encaixe nas linhas de grade** estiver habilitada, um elemento tende a se alinhar com as linhas de grade horizontais e verticais mais próximas quando você arrastá-la para a prancheta.
 
 **Alternar plano de fundo da prancheta**
 
@@ -122,12 +122,12 @@ A janela Estrutura de Tópicos do Documento no Visual Studio é semelhante à ja
 
 - [Criar animações](animate-objects-in-xaml-designer.md) (somente no Blend para Visual Studio).
 
-Para exibir a janela Estrutura de Tópicos do Documento no Visual Studio, na barra de menus, escolha **Exibir** > **Outras Janelas** > **Estrutura de Tópicos do Documento**.
-Para exibir a janela Objetos e Linha do Tempo no Blend para Visual Studio, na barra de menus, selecione **Exibir** > **Estrutura de Tópicos do Documento**.
+Para exibir a janela Contorno de documentos no Visual Studio, na barra de menu seleção **Exibir** > **outro** > **contorno de documento do Windows**.
+Para exibir a janela Objetos e linha do tempo em Blend for Visual Studio, na barra de menu seleção **Exibir** > **contorno de documento**.
 
 ![Janela Estrutura de Tópicos do Documento no Visual Studio](media/document-outline-window.png)
 
-O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. As opções a seguir estão disponíveis na janela estrutura de tópicos/Objetos e Linha do Tempo do documento:
+O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. As seguintes opções estão disponíveis na janela Contorno/Objetos de documento e linha do tempo:
 
 **Mostrar/ocultar**
 
@@ -135,7 +135,7 @@ Exibe ou oculta elementos da prancheta. Aparece como um símbolo de olho quando 
 
 **Bloquear/desbloquear**
 
-Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não podem ser modificados. Aparece como um símbolo de cadeado quando bloqueado. Você também pode pressionar **Ctrl**+**L** para bloquear um elemento e **Shift**+**Ctrl**+**H** para desbloqueá-lo.
+Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não podem ser modificados. Aparece como um símbolo de cadeado quando bloqueado. Você também pode pressionar **Ctrl**+**L** para bloquear um elemento e **Shift**+**Ctrl**+**L** para desbloqueá-lo.
 
 **Retornar escopo para pageRoot**
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409359"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79301996"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -26,20 +26,20 @@ Ao implantar um aplicativo, serviço ou componente, você o distribui para insta
 
 Para muitos tipos comuns de aplicativo, é possível implantar seu aplicativo diretamente do Gerenciador de Soluções no Visual Studio. Para fazer um tour rápido sobre essa funcionalidade, confira [First look at deployment](../deployment/deploying-applications-services-and-components.md) (Introdução à implantação).
 
-![Escolher uma opção de publicação](../deployment/media/quickstart-publish-azure.png)
+![Selecione uma opção de publicação](../deployment/media/quickstart-publish-azure.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Quais opções de publicação são adequadas para mim?
 
 De dentro do Visual Studio, os aplicativos podem ser publicados diretamente nos seguintes destinos:
 
-- [Serviço de Aplicativo do Azure](#azure-app-service)
-- [Máquinas Virtuais do Azure](#azure-virtual-machines)
+- [Serviço de aplicativo do Azure](#azure-app-service)
+- [Máquinas virtuais do Azure](#azure-virtual-machines)
 - [Sistema de arquivos](#file-system)
 - [Destinos personalizados (IIS, FTP, etc.) ](#custom-targets-iis-ftp), que inclui todos os servidores Web arbitrários.
 
 Na guia **Publicar** é possível selecionar um perfil de publicação existente, importar um perfil existente ou criar um novo perfil usando as opções descritas aqui. Para fazer um tour pelas opções de publicação no IDE para diferentes tipos de aplicativos, confira [Introdução à implantação](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="azure-app-service"></a>Serviço de Aplicativo do Azure
+## <a name="azure-app-service"></a>Serviço de aplicativo do Azure
 
 O [Serviço de Aplicativo do Azure](/azure/app-service/app-service-web-overview) e o [Serviço de Aplicativo no Linux](/azure/app-service/containers/app-service-linux-intro) ajudam os desenvolvedores a criar rapidamente uma variedade de serviços e aplicativos Web escalonáveis sem infraestrutura de manutenção.
 
@@ -79,7 +79,7 @@ Para obter informações adicionais, consulte a [comparação detalhada](https:/
 
 A implantação no sistema de arquivos significa simplesmente copiar os arquivos do seu aplicativo para uma pasta específica em seu próprio computador. Isso geralmente é usado para fins de teste ou para implantar o aplicativo para uso por um número limitado de pessoas, caso o computador também esteja executando um servidor. Se a pasta de destino for compartilhada em uma rede, a implantação no sistema de arquivos poderá disponibilizar os arquivos do aplicativo Web para outras pessoas que poderão, por sua vez, implantá-la em servidores específicos.
 
-Todas os computadores locais que estão executando um servidor podem disponibilizar seu aplicativo através da Internet ou de uma Intranet, dependendo de como estiver configurado e das redes às quais estiver conectado. (Se você conectar um computador diretamente à Internet, seja especialmente cuidadoso para protegê-lo contra ameaças de segurança externas.) Como você gerencia essas máquinas, você tem controle total sobre as configurações de software e hardware.
+Todas os computadores locais que estão executando um servidor podem disponibilizar seu aplicativo através da Internet ou de uma Intranet, dependendo de como estiver configurado e das redes às quais estiver conectado. (Se você conectar um computador diretamente à Internet, tenha especialmente cuidado para protegê-lo contra ameaças externas de segurança.) Como você gerencia essas máquinas, você está no controle completo das configurações de software e hardware.
 
 Observe que se, por algum motivo (como acesso ao computador), não for possível usar os serviços de nuvem como o Serviço de Aplicativo do Azure ou as Máquinas Virtuais do Azure, você poderá usar o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) em seu próprio datacenter. O Azure Stack permite gerenciar e usar recursos de computação por meio do Serviço de Aplicativo do Azure e das Máquinas Virtuais do Azure e ainda manter tudo localmente.
 
@@ -112,13 +112,13 @@ Ao escolher um destino personalizado, o Visual Studio solicitará um nome de per
 
 Para saber mais, confira [Início Rápido – Implantar em um site](quickstart-deploy-to-a-web-site.md)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Tutoriais:
 
 - [Implantar um aplicativo .NET Core com a ferramenta de publicação](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publicar um aplicativo ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publique um aplicativo principal ASP.NET para o Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Implantação no Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Implantar aplicativos UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publicar um aplicativo Node.js no Azure usando a Implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publicar um aplicativo Python no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publicar um aplicativo do Python no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

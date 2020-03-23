@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579927"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
@@ -25,11 +25,11 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ::: moniker range="vs-2017"
 
-1. Na barra de menus, escolha **arquivo** > **novo** **projeto**de >.
+1. Na barra de menu, escolha **Arquivo** > **Novo** > **Projeto**.
 
 1. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
-1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms (.NET Framework)** , dê o nome *MatchingGame* a ele e, então, clique no botão **OK**.
+1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms (.NET Framework)**, dê o nome *MatchingGame* a ele e, então, clique no botão **OK**.
 
     Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
 
@@ -40,18 +40,18 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ::: moniker range="vs-2019"
 
-1. Na tela Iniciar, selecione **Criar um novo projeto**.
+1. Na janela inicial, escolha **Criar um novo projeto**.
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **área de trabalho** na lista tipo de **projeto** .
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **Desktop** na lista **de tipos de projeto.**
 
-   Depois de aplicar o filtro de **tipo de projeto** , escolha o modelo **aplicativo de Windows Forms (.NET Framework)** para C# ou Visual Basic e, em seguida, escolha **Avançar**.
+   Depois de aplicar o filtro **tipo Projeto,** escolha o modelo **do Aplicativo de formulários do Windows (.NET Framework)** para C# ou Visual Basic e escolha **Next**.
 
-   ![Escolha o modelo C# ou Visual Basic para o aplicativo Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Escolha o modelo C# ou Visual Basic para o Aplicativo Formulários do Windows (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)** , poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
+   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)**, poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
    >
    > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -106,7 +106,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
    4. Defina a propriedade **TextAlign** como **MiddleCenter** escolhendo o botão suspenso próximo à propriedade e escolhendo o botão do meio. Isso garante que o ícone apareça no meio da célula.
 
-   5. Escolha a propriedade **Fonte**. O botão reticências ( **...** ) deverá aparecer.
+   5. Escolha a propriedade **Fonte**. O botão reticências (**...**) deverá aparecer.
 
    6. Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** como **48**.
 
@@ -117,12 +117,12 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
        > [!NOTE]
        > A fonte Webdings é uma fonte de ícones que acompanha o sistema operacional Windows. No seu jogo da memória, o jogador precisa encontrar pares de ícones, de modo que você usa essa fonte para exibir os ícones a serem encontrados. Em vez de colocar **c** na propriedade **Texto**, tente inserir diferentes letras para ver quais ícones são exibidos. Um ponto de exclamação é uma aranha, um N maiúsculo é um olho e uma vírgula é uma pimenta.
 
-5. Escolha o controle de rótulo e copie-o ao lado da célula no TableLayoutPanel. (Escolha as teclas **Ctrl**+**C** ou, na barra de menus, escolha **Editar** > **cópia**.) Em seguida, Cole-o. (Escolha as teclas **Ctrl**+**V** ou, na barra de menus, escolha **Editar** > **colar**.) Uma cópia do primeiro rótulo aparece na segunda célula do TableLayoutPanel. Cole-o novamente e outro rótulo aparecerá na terceira célula. Continue colando controles Label até que todas as células sejam preenchidas.
+5. Escolha o controle de rótulo e copie-o ao lado da célula no TableLayoutPanel. (Escolha as **teclas Ctrl**+**C** ou na barra de menu, escolha **Editar** > **copiar**.) Então cole. (Escolha as teclas **Ctrl**+**V** ou na barra de menu, escolha **Editar** > **colar**.) Uma cópia do primeiro Rótulo é exibida na segunda célula do TableLayoutPanel. Cole-o novamente e outro rótulo aparecerá na terceira célula. Continue colando controles Label até que todas as células sejam preenchidas.
 
    > [!NOTE]
-   > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as teclas **Ctrl**+**Z** ou, na barra de menus, escolha **Editar** > **Desfazer**.
+   > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as teclas **Ctrl**+**Z** ou na barra de menu, escolha **Editar** > **desfazer**.
 
-    Agora seu formulário está disposto. Ele deve ser semelhante à imagem a seguir.
+    Agora sua forma está definida. Deve ser semelhante à foto a seguir.
 
     ![Formulário inicial do jogo da memória](../ide/media/express_tut4step1.png)<br/>*Formulário inicial do jogo da memória*
 

@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865330"
 ---
 # <a name="cl-task"></a>tarefa CL
 
-Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador produz arquivos executáveis ( *.exe*), arquivos de biblioteca de vínculo dinâmico ( *.dll*) ou arquivos de módulo de código ( *.netmodule*). Para obter mais informações, consulte [Opções do compilador](/cpp/build/reference/compiler-options) e usar o [MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas da Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
+Envolve a ferramenta de compilador Microsoft C++, *cl.exe*. O compilador produz arquivos executáveis *(.exe),* arquivos de biblioteca de link dinâmico *(.dll)* ou arquivos de módulo de código *(.netmodule).* Para obter mais informações, consulte [opções do Compilador](/cpp/build/reference/compiler-options) e [Use o MSBuild a partir da linha de comando](/cpp/build/msbuild-visual-cpp) e Use o conjunto de ferramentas Microsoft [C++ da linha de comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>parâmetros
 
@@ -42,7 +42,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Adiciona um diretório à lista de diretórios que são pesquisados para arquivos de inclusão.
 
-   Para obter mais informações, confira [/I (Diretórios de inclusão adicionais)](/cpp/build/reference/i-additional-include-directories).
+   Para obter mais informações, consulte [/I (Incluir diretórios adicionais)](/cpp/build/reference/i-additional-include-directories).
 
 - **AdditionalOptions**
 
@@ -50,7 +50,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Uma lista de opções de linha de comando. Por exemplo, "/\<option1> /\<option2> /\<option#>". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa.
 
-   Para obter mais informações, confira [Opções do compilador](/cpp/build/reference/compiler-options).
+   Para obter mais informações, consulte [opções do Compilador](/cpp/build/reference/compiler-options).
 
 - **AdditionalUsingDirectories**
 
@@ -58,19 +58,19 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica um diretório em que o compilador pesquisará para resolver referências de arquivo passadas para diretiva **#using**.
 
-   Para obter mais informações, confira [/AI (Especificar diretórios de metadados)](/cpp/build/reference/ai-specify-metadata-directories).
+   Para obter mais informações, consulte [/AI (Especificar diretórios de metadados)](/cpp/build/reference/ai-specify-metadata-directories).
 
 - **AlwaysAppend**
 
    Parâmetro String opcional.
 
-   Uma cadeia de caracteres sempre é emitida na linha de comando. Seu valor padrão é " **/c**".
+   Uma cadeia de caracteres sempre é emitida na linha de comando. Seu valor padrão é "**/c**".
 
 - **AssemblerListingLocation**
 
    Cria um arquivo de listagem que contém o código do assembly.
 
-   Para obter mais informações, confira a opção **/Fa** em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
+   Para obter mais informações, consulte a opção **/Fa** em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
 
 - **AssemblerOutput**
 
@@ -80,17 +80,17 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **NoListing** -  *\<none>*
+  - **NoListing nenhum** - >*\<*
 
-  - **AssemblyCode** -  **/FA**
+  - **Código de montagem** - **/FA**
 
-  - **AssemblyAndMachineCode** -  **/FAc**
+  - **AssemblyAndMachineCode** - **/FAc**
 
-  - **AssemblyAndSourceCode** -  **/FAs**
+  - **AssemblyAndSourcecode** - **/FAs**
 
-  - **All** -  **/FAcs**
+  - **Todos** - **/FAcs**
 
-    Para obter mais informações, confira as opções **/FA**, **/FAc**, **/FAs** e **/FAcs** opções em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
+    Para obter mais informações, consulte as opções **/FA**, **/FAc**, **/FAs**, e **/FAcs** em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -100,15 +100,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Default** -                           *\<none>*
+  - **Não é padrão** -                          *\<>*
 
-  - **StackFrameRuntimeCheck** -  **/RTCs**
+  - **StackFrameExecutartempoVerificação** - **/RTCs**
 
-  - **UninitializedLocalUsageCheck** -  **/RTCu**
+  - **Não inicializadoLocalUsageCheck** - **/RTCu**
 
-  - **EnableFastChecks** -                           **/RTC1**
+  - **Habilitarfastchecks** -                          **/RTC1**
 
-    Para obter mais informações, confira [/RTC (Verificações de erro em tempo de execução)](/cpp/build/reference/rtc-run-time-error-checks).
+    Para obter mais informações, consulte [/RTC (verificações de erros de tempo de execução)](/cpp/build/reference/rtc-run-time-error-checks).
 
 - **BrowseInformation**
 
@@ -116,7 +116,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, criará um arquivo de informações de procura.
 
-   Para obter mais informações, confira a opção **/FR** em [/FR, /Fr (Criar arquivo .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
+   Para obter mais informações, consulte a opção **/FR** em [/FR, /Fr (Criar arquivo .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
 
 - **BrowseInformationFile**
 
@@ -124,7 +124,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica um nome de arquivo para o arquivo de informações de procura.
 
-   Para obter mais informações, confira o parâmetro **BrowseInformation** nessa tabela e [/FR, /Fr (Criar arquivo .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
+   Para obter mais informações, consulte o parâmetro **ProcurarInformações** nesta tabela e consulte [também /FR, /Fr (Criar arquivo .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
 
 - **BufferSecurityCheck**
 
@@ -148,13 +148,13 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Cdecl** -  **/Gd**
+  - **Cdecl** - **/Gd**
 
-  - **FastCall** -                           **/Gr**
+  - **FastCall** -                          **/Gr**
 
-  - **StdCall** -                           **/Gz**
+  - **StdCall** -                          **/Gz**
 
-    Para obter mais informações, confira [/Gd, /Gr, /Gv, /Gz (Convenção de chamada)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
+    Para obter mais informações, consulte [/Gd, /Gr, /Gv, /Gz (Convenção de Chamadas)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
 - **CompileAs**
 
@@ -164,13 +164,13 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Default** -  *\<none>*
+  - **Não é padrão** - *\<>*
 
-  - **CompileAsC** -  **/TC**
+  - **CompilaçãoAsC** - **/TC**
 
-  - **CompileAsCpp** -  **/TP**
+  - **CompilaçãoAsCpp** - **/TP**
 
-    Para obter mais informações, confira [/Tc, /Tp, /TC, /TP (Especificar tipo de arquivo de origem)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
+    Para obter mais informações, consulte [/Tc, /Tp, /TC, /TP (Especificar tipo de arquivo de origem)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
 - **CompileAsManaged**
 
@@ -180,15 +180,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **false** -  *\<none>*
+  - **falso** - *nenhum>\<*
 
-  - **true** -  **/clr**
+  - **verdadeiro** - **/clr**
 
-  - **Pure** -  **/clr:pure**
+  - **Puro** - **/clr:puro**
 
-  - **Safe** -  **/clr:safe**
+  - **Seguro** - **/clr:seguro**
 
-  - **OldSyntax** -  **/clr:oldSyntax**
+  - **OldSyntax** - **/clr:oldSyntax**
 
     Para obter mais informações, confira [/clr (Compilação do Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -198,23 +198,23 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, informará ao compilador para preparar uma imagem para *aplicação de patch sob demanda*. Esse parâmetro garante que a primeira instrução de cada função tenha dois bytes, o que é necessário para aplicação de patch sob demanda.
 
-   Para obter mais informações, confira [/hotpatch (Criar imagem para patch instantâneo)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
+   Para obter mais informações, consulte [/hotpatch (Criar imagem hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
 - **DebugInformationFormat**
 
    Parâmetro String opcional.
 
-   Seleciona o tipo de informações de depuração criado para o programa e indica se essas informações são mantidas em arquivos de objeto ( *.obj*) ou em um PDB (banco de dados de programa).
+   Seleciona o tipo de informações de depuração criadas para o seu programa e se essas informações são mantidas em arquivos object *(.obj)* ou em um banco de dados de programas (PDB).
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **OldStyle** -  **/Z7**
+  - **OldStyle** - **/Z7**
 
-  - **ProgramDatabase** -  **/Zi**
+  - **Banco de dados de** - **programas /Zi**
 
-  - **EditAndContinue** -  **/ZI**
+  - **EditAndContinue** - **/ZI**
 
-    Para obter mais informações, confira [/Z7, /Zi, /ZI (Formato das informações de depuração)](/cpp/build/reference/z7-zi-zi-debug-information-format).
+    Para obter mais informações, consulte [/Z7, /Zi, /ZI (formato de informações de depuração)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
 - **DisableLanguageExtensions**
 
@@ -222,7 +222,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se **true**, dirá ao compilador para emitir um erro para construções de linguagem que não sejam compatíveis com ANSI C ou ANSI C++.
 
-   Para obter mais informações, confira a opção **/Za** em [/Za, /Ze (Desabilitar extensões de idioma)](/cpp/build/reference/za-ze-disable-language-extensions).
+   Para obter mais informações, consulte a opção **/Za** em [/Za, /Ze (Desativar extensões de idioma)](/cpp/build/reference/za-ze-disable-language-extensions).
 
 - **DisableSpecificWarnings**
 
@@ -230,7 +230,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Desabilita os números de aviso especificados em uma lista delimitada por ponto e vírgula.
 
-   Para obter mais informações, confira a opção `/wd` em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
+   Para obter mais `/wd` informações, consulte a opção em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
 
 - **EnableEnhancedInstructionSet**
 
@@ -240,9 +240,9 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **StreamingSIMDExtensions** -  **/arch:SSE**
+  - **StreamingSIMDExtensões** - **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** -  **/arch:SSE2**
+  - **StreamingSIMDExtensions2** - **/arch:SSE2**
 
     Para obter mais informações, consulte [/arch (x86)](/cpp/build/reference/arch-x86).
 
@@ -252,7 +252,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, dê suporte a segurança de fibra para dados alocados usando armazenamento local de thread estático, ou seja, dados alocados usando `__declspec(thread)`.
 
-   Para obter mais informações, confira [/GT (Dar suporte ao armazenamento local de thread com segurança de fibra)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).
+   Para obter mais informações, consulte [/GT (Suporte ao armazenamento local de thread-local seguro por fibra)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).
 
 - **EnablePREfast**
 
@@ -260,9 +260,9 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, habilitará análise de código.
 
-   Para obter mais informações, confira [/analyze (Análise de código)](/cpp/build/reference/analyze-code-analysis).
+   Para obter mais informações, consulte [/analyze (Análise de código)](/cpp/build/reference/analyze-code-analysis).
 
-- **ErrorReporting**
+- **Errorreporting**
 
    Parâmetro String opcional.
 
@@ -270,15 +270,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **None** -  **/errorReport:none**
+  - **Nenhum** - **/errorReport:none**
 
-  - **Prompt** -  **/errorReport:prompt**
+  - **Prompt** - **Aviso/erroRelatório:solicitação**
 
-  - **Queue** -  **/errorReport:queue**
+  - **Fila** - **/erroRelatório:fila**
 
-  - **Send** -  **/errorReport:send**
+  - **Enviar** - **/errorReport:enviar**
 
-    Para obter mais informações, confira [/errorReport (Relatar erros internos do compilador)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
+    Para obter mais informações, consulte [/errorReport (Reportar erros do compilador interno)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
 - **ExceptionHandling**
 
@@ -288,15 +288,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **false** -  *\<none>*
+  - **falso** - *nenhum>\<*
 
-  - **Async** -  **/EHa**
+  - **Async** - **/EHa**
 
-  - **Sync** -  **/EHsc**
+  - **Sincronização** - **/EHsc**
 
-  - **SyncCThrow** -  **/EHs**
+  - **SyncCThrow** - **/EHs**
 
-    Para obter mais informações, confira [/EH (Modelo de tratamento de exceções)](/cpp/build/reference/eh-exception-handling-model).
+    Para obter mais informações, consulte [/EH (modelo de tratamento de exceção)](/cpp/build/reference/eh-exception-handling-model).
 
 - **ExpandAttributedSource**
 
@@ -304,7 +304,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, criará um arquivo de listagem com atributos expandidos injetados no arquivo de origem.
 
-   Para obter mais informações, confira [/Fx (Mesclar código injetado)](/cpp/build/reference/fx-merge-injected-code).
+   Para obter mais informações, consulte [/Fx (Mesclar código injetado)](/cpp/build/reference/fx-merge-injected-code).
 
 - **FavorSizeOrSpeed**
 
@@ -314,13 +314,13 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Neither** -  *\<none>*
+  - **Nem** - *ninguém>\<*
 
-  - **Size** -  **/Os**
+  - **Tamanho** - **/Os**
 
-  - **Speed** -  **/Ot**
+  - **Velocidade** - **/Ot**
 
-    Para obter mais informações, confira [/Os, /Ot (Favorecer código pequeno, favorecer código rápido)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
+    Para obter mais informações, consulte [/Os, /Ot (Favor e favor, favor e favor código rápido)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
 - **FloatingPointExceptions**
 
@@ -328,7 +328,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, habilitará o modelo de exceção de ponto flutuante confiável. As exceções serão geradas imediatamente depois de serem disparadas.
 
-   Para obter mais informações, confira a opção /**fp:except** em [/fp (Especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Para obter mais informações, consulte a opção **/fp:exceto** em [/fp (Especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -338,13 +338,13 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Precise** -  **/fp:precise**
+  - **Preciso** - **/fp:preciso**
 
-  - **Strict** -  **/fp:strict**
+  - **Rigoroso** - **/fp:rigoroso**
 
-  - **Fast** -  **/fp:fast**
+  - **Rápido** - **/fp:rápido**
 
-    Para obter mais informações, confira [/fp (Especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
+    Para obter mais informações, consulte [/fp (Especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **ForceConformanceInForLoopScope**
 
@@ -352,7 +352,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, implementará o comportamento padrão do C++ em loops [for](/cpp/cpp/for-statement-cpp) que usem extensões da Microsoft ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).
 
-   Para obter mais informações, confira [/Zc:forScope (Forçar conformidade no escopo do loop For)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
+   Para obter mais informações, consulte [/Zc:forScope (Forçar conformidade para escopo de loop)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
 
 - **ForcedIncludeFiles**
 
@@ -360,15 +360,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Faz o pré-processador processar um ou mais arquivos de cabeçalho especificados.
 
-   Para obter mais informações, confira [/FI (Nomear arquivo de inclusão forçada)](/cpp/build/reference/fi-name-forced-include-file).
+   Para obter mais informações, consulte [/FI (Nome forçado incluir arquivo)](/cpp/build/reference/fi-name-forced-include-file).
 
 - **ForcedUsingFiles**
 
-   Parâmetro **String[]** opcional.
+   Parâmetro opcional **string[].**
 
    Faz o pré-processador processar um ou mais arquivos **#using** especificados.
 
-   Para obter mais informações, confira [/FU (Nomear arquivo #using forçado)](/cpp/build/reference/fu-name-forced-hash-using-file).
+   Para obter mais informações, consulte [/FU (Nome forçado #using arquivo)](/cpp/build/reference/fu-name-forced-hash-using-file).
 
 - **FunctionLevelLinking**
 
@@ -376,15 +376,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, permitirá que o compilador empacote funções individuais na forma de funções empacotadas (COMDATs).
 
-   Para obter mais informações, confira [/Gy (Habilitar vinculação no nível de função)](/cpp/build/reference/gy-enable-function-level-linking).
+   Para obter mais informações, consulte [/Gy (Ativar vinculação em nível de função)](/cpp/build/reference/gy-enable-function-level-linking).
 
 - **GenerateXMLDocumentationFiles**
 
    Parâmetro `Boolean` opcional.
 
-   Se ele for `true`, fará o compilador processar comentários da documentação em arquivos de código-fonte e criar um arquivo *.xdc* para cada arquivo de código-fonte que tenha comentários da documentação.
+   Se `true`, faz com que o compilador processe comentários de documentação em arquivos de código-fonte e crie um arquivo *.xdc* para cada arquivo de código fonte que tenha comentários de documentação.
 
-   Para obter mais informações, confira [/doc (Processar comentários da documentação) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consulte também o parâmetro **XMLDocumentationFileName** nesta tabela.
+   Para obter mais informações, consulte [/doc (Comentários de documentação do processo) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consulte também o parâmetro **XMLDocumentationFileName** nesta tabela.
 
 - **IgnoreStandardIncludePath**
 
@@ -392,25 +392,25 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, evitará que o compilador pesquise os arquivos de inclusão em diretórios especificados nas variáveis de ambiente PATH e INCLUDE.
 
-   Para obter mais informações, confira [/X (Ignorar caminhos de inclusão padrão)](/cpp/build/reference/x-ignore-standard-include-paths).
+   Para obter mais informações, consulte [/X (Ignorar o padrão incluir caminhos)](/cpp/build/reference/x-ignore-standard-include-paths).
 
 - **InlineFunctionExpansion**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
    Especifica o nível de expansão de função embutida para o build.
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Default** -  *\<none>*
+  - **Não é padrão** - *\<>*
 
-  - **Disabled** -  **/Ob0**
+  - **Desativado** - **/Ob0**
 
-  - **OnlyExplicitInline** -  **/Ob1**
+  - **SomenteExplicitInline** - **/Ob1**
 
-  - **AnySuitable** -  **/Ob2**
+  - **AnySuitable** - **/Ob2**
 
-    Para obter mais informações, confira [/Ob (Expansão de função embutida)](/cpp/build/reference/ob-inline-function-expansion).
+    Para obter mais informações, consulte [/Ob (Expansão da função inline)](/cpp/build/reference/ob-inline-function-expansion).
 
 - **IntrinsicFunctions**
 
@@ -418,7 +418,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, substituirá algumas chamadas de função com formas da função intrínsecas ou especiais de outra maneira que ajudem o aplicativo a ser executado mais rapidamente.
 
-   Para obter mais informações, confira [/Oi (Gerar funções intrínsecas)](/cpp/build/reference/oi-generate-intrinsic-functions).
+   Para obter mais informações, consulte [/Oi (Gerar funções intrínsecas)](/cpp/build/reference/oi-generate-intrinsic-functions).
 
 - **MinimalRebuild**
 
@@ -426,7 +426,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, habilitará recompilação mínima, que determina se os arquivos de origem C++ que incluem definições de classe C++ alteradas (armazenadas nos arquivos de cabeçalho (.h)) devem ser recompilados.
 
-   Para obter mais informações, confira [/Gm (Habilitar recompilação mínima)](/cpp/build/reference/gm-enable-minimal-rebuild).
+   Para obter mais informações, consulte [/Gm (Habilitar reconstrução mínima)](/cpp/build/reference/gm-enable-minimal-rebuild).
 
 - **MultiProcessorCompilation**
 
@@ -434,11 +434,11 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, use vários processadores para compilar. Esse parâmetro cria um processo para cada processador efetivo no seu computador.
 
-   Para obter mais informações, confira [/MP (Criar com vários processos)](/cpp/build/reference/mp-build-with-multiple-processes). Consulte também o parâmetro **ProcessorNumber** nesta tabela.
+   Para obter mais informações, consulte [/MP (Construir com vários processos)](/cpp/build/reference/mp-build-with-multiple-processes). Consulte também o parâmetro **ProcessorNumber** nesta tabela.
 
 - **ObjectFileName**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
    Especifica um nome de arquivo de objeto (.obj) ou diretório a ser usado no lugar do padrão.
 
@@ -446,7 +446,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
 - **ObjectFiles**
 
-   Parâmetro **String[]** opcional.
+   Parâmetro opcional **string[].**
 
    Uma lista de arquivos de objeto.
 
@@ -454,9 +454,9 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Parâmetro `Boolean` opcional.
 
-   Se ele for `true`, omitirá o nome da biblioteca em tempo de execução C padrão do arquivo-objeto ( *.obj*). Por padrão, o compilador coloca o nome da biblioteca no arquivo *.obj* para direcionar o vinculador à biblioteca correta.
+   Se `true`, omitir o nome padrão da biblioteca de tempo de execução C do arquivo object *(.obj).* Por padrão, o compilador coloca o nome da biblioteca no arquivo *.obj* para direcionar o linker para a biblioteca correta.
 
-   Para obter mais informações, confira [/Zl (Omitir o nome da biblioteca padrão)](/cpp/build/reference/zl-omit-default-library-name).
+   Para obter mais informações, consulte [/Zl (Omitir o nome padrão da biblioteca)](/cpp/build/reference/zl-omit-default-library-name).
 
 - **OmitFramePointers**
 
@@ -464,7 +464,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, suprimirá a criação de ponteiros de quadro na pilha de chamadas.
 
-   Para obter mais informações, confira [/Oy (Omissão do ponteiro de quadro)](/cpp/build/reference/oy-frame-pointer-omission).
+   Para obter mais informações, consulte [/Oy (omissão do frame-pointer)](/cpp/build/reference/oy-frame-pointer-omission).
 
 - **OpenMPSupport**
 
@@ -472,57 +472,57 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, fará o compilador processar cláusulas e diretivas OpenMP.
 
-   Para obter mais informações, confira [/openmp (Habilitar suporte a OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
+   Para obter mais informações, consulte [/openmp (Suporte ao OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
 
-- **Optimization**
+- **Otimização**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
    Especifica várias otimizações de código para velocidade e tamanho.
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Disabled** -  **/Od**
+  - **Desabilitado** - **/Od**
 
-  - **MinSpace** -  **/O1**
+  - **MinSpace** - **/O1**
 
-  - **MaxSpeed** -  **/O2**
+  - **MaxSpeed** - **/O2**
 
-  - **Full** -  **/Ox**
+  - **Completo** - **/Boi**
 
     Para obter mais informações, confira [Opções de /S (Otimizar código)](/cpp/build/reference/o-options-optimize-code).
 
 - **PrecompiledHeader**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
-   Crie ou use um arquivo de cabeçalho pré-compilado ( *.pch*) durante o build.
+   Crie ou use um arquivo de cabeçalho pré-compilado *(.pch)* durante a compilação.
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **NotUsing** -  *\<none>*
+  - **Não usando nenhum** - *\<>*
 
-  - **Create** -  **/Yc**
+  - **Criar** - **/Yc**
 
-  - **Use** -  **/Yu**
+  - **Usar** - **/Yu**
 
-    Para obter mais informações, confira [/Yc (Criar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yc-create-precompiled-header-file) e [/Yu (Usar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yu-use-precompiled-header-file). Consulte também os parâmetros **PrecompiledHeaderFile** e **PrecompiledHeaderOutputFile** nessa tabela.
+    Para obter mais informações, consulte [/Yc (Criar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yc-create-precompiled-header-file) e [/Yu (Use arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yu-use-precompiled-header-file). Consulte também os parâmetros **PrecompiledHeaderFile** e **PrecompiledHeaderOutputFile** nessa tabela.
 
 - **PrecompiledHeaderFile**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
    Especifica um nome de arquivo de cabeçalho pré-compilado para criar ou usar.
 
-   Para obter mais informações, confira [/Yc (Criar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yc-create-precompiled-header-file) e [/Yu (Usar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yu-use-precompiled-header-file).
+   Para obter mais informações, consulte [/Yc (Criar arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yc-create-precompiled-header-file) e [/Yu (Use arquivo de cabeçalho pré-compilado)](/cpp/build/reference/yu-use-precompiled-header-file).
 
 - **PrecompiledHeaderOutputFile**
 
-   Parâmetro **String** opcional.
+   Parâmetro opcional **string.**
 
    Especifica um nome de caminho para um cabeçalho pré-compilado em vez de usar o nome do caminho padrão.
 
-   Para obter mais informações, confira [/Fp (Nomear arquivo .pch)](/cpp/build/reference/fp-name-dot-pch-file).
+   Para obter mais informações, consulte [/Fp (Arquivo Name .pch)](/cpp/build/reference/fp-name-dot-pch-file).
 
 - **PreprocessKeepComments**
 
@@ -530,7 +530,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, preservará comentários durante o pré-processamento.
 
-   Para obter mais informações, confira [/C (Preservar comentários durante o pré-processamento)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
+   Para obter mais informações, consulte [/C (Preservar comentários durante o pré-processamento)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
 
 - **PreprocessorDefinitions**
 
@@ -538,7 +538,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Define um símbolo de pré-processamento para seu arquivo de origem.
 
-   Para obter mais informações, confira [/D (Definições de pré-processador)](/cpp/build/reference/d-preprocessor-definitions).
+   Para obter mais informações, consulte [/D (definições de pré-processador)](/cpp/build/reference/d-preprocessor-definitions).
 
 - **PreprocessOutput**
 
@@ -552,7 +552,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica o nome do arquivo de saída para o qual o parâmetro **PreprocessToFile** grava a saída pré-processada.
 
-   Para obter mais informações, confira [/Fi (Pré-processar nome de arquivo de saída)](/cpp/build/reference/fi-preprocess-output-file-name).
+   Para obter mais informações, consulte [/Fi (nome do arquivo de saída de pré-processo)](/cpp/build/reference/fi-preprocess-output-file-name).
 
 - **PreprocessSuppressLineNumbers**
 
@@ -560,7 +560,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, pré-processará arquivos de origem em C e C++ e copiará os arquivos pré-processados para o dispositivo de saída padrão.
 
-   Para obter mais informações, confira [/EP (Pré-processar para stdout sem diretivas #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
+   Para obter mais informações, consulte [/EP (Preprocess to stdout sem #line diretrizes)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
 
 - **PreprocessToFile**
 
@@ -568,7 +568,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, pré-processará arquivos de origem em C e C++ e gravará a saída pré-processada em um arquivo.
 
-   Para obter mais informações, confira [/P (Pré-processar para um arquivo)](/cpp/build/reference/p-preprocess-to-a-file).
+   Para obter mais informações, consulte [/P (Pré-processo para um arquivo)](/cpp/build/reference/p-preprocess-to-a-file).
 
 - **ProcessorNumber**
 
@@ -582,7 +582,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica um nome de arquivo para o arquivo PDB (banco de dados do programa).
 
-   Para obter mais informações, confira [/Fd (Nome do arquivo de banco de dados de programa)](/cpp/build/reference/fd-program-database-file-name).
+   Para obter mais informações, consulte [/Fd (nome do arquivo do banco de dados do programa)](/cpp/build/reference/fd-program-database-file-name).
 
 - **RuntimeLibrary**
 
@@ -592,15 +592,15 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **MultiThreaded** -  **/MT**
+  - **MultiThreaded** - **/MT**
 
-  - **MultiThreadedDebug** -  **/MTd**
+  - **MultiThreadedDebug** - **/MTd**
 
-  - **MultiThreadedDLL** -  **/MD**
+  - **MultiThreadedDLL** - **/MD**
 
-  - **MultiThreadedDebugDLL** -  **/MDd**
+  - **MultiThreadedDebugDLL** - **/MDd**
 
-    Para obter mais informações, confira [/MD, /MT, /LD (Usar biblioteca em tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library).
+    Para obter mais informações, consulte [/MD, /MT/ LD (Use biblioteca de tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
 - **RuntimeTypeInfo**
 
@@ -608,7 +608,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, adicionará código para verificar os tipos de objeto C++ no tempo de execução (informações de tipo de tempo de execução).
 
-   Para obter mais informações, confira [/GR (Habilitar informações de tipo em tempo de execução)](/cpp/build/reference/gr-enable-run-time-type-information).
+   Para obter mais informações, consulte [/GR (Habilitar informações do tipo de tempo de execução)](/cpp/build/reference/gr-enable-run-time-type-information).
 
 - **ShowIncludes**
 
@@ -616,7 +616,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, fará o compilador gerar uma lista dos arquivos de inclusão.
 
-   Para obter mais informações, confira [/showIncludes (Listar arquivos de inclusão)](/cpp/build/reference/showincludes-list-include-files).
+   Para obter mais informações, consulte [/showIncludes (Lista incluir arquivos)](/cpp/build/reference/showincludes-list-include-files).
 
 - **SmallerTypeCheck**
 
@@ -624,7 +624,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, relatará um erro em tempo de execução se um valor for atribuído a um tipo de dados menor e provocará perda de dados.
 
-   Para obter mais informações, confira a opção **/RTCc** em [/RTC (Verificações de erro em tempo de execução)](/cpp/build/reference/rtc-run-time-error-checks).
+   Para obter mais informações, consulte a opção **/RTCc** em [/RTC (verificações de erros de tempo de execução)](/cpp/build/reference/rtc-run-time-error-checks).
 
 - **Fontes**
 
@@ -638,7 +638,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, permitirá que o compilador crie uma cópia de cadeias de caracteres idênticas na imagem do programa.
 
-   Para obter mais informações, confira [/GF (Eliminar cadeias de caracteres duplicadas)](/cpp/build/reference/gf-eliminate-duplicate-strings).
+   Para obter mais informações, consulte [/GF (Elimine strings duplicadas)](/cpp/build/reference/gf-eliminate-duplicate-strings).
 
 - **StructMemberAlignment**
 
@@ -648,19 +648,19 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Default** -  **/Zp1**
+  - **Padrão** - **/Zp1**
 
-  - **1Byte** -  **/Zp1**
+  - **1Byte** - **/Zp1**
 
-  - **2Bytes** -  **/Zp2**
+  - **2Bytes** - **/Zp2**
 
-  - **4Bytes** -  **/Zp4**
+  - **4Bytes** - **/Zp4**
 
-  - **8Bytes** -  **/Zp8**
+  - **8Bytes** - **/Zp8**
 
-  - **16Bytes** -  **/Zp16**
+  - **16Bytes** - **/Zp16**
 
-    Para obter mais informações, confira [/Zp (Alinhamento de membro de struct)](/cpp/build/reference/zp-struct-member-alignment).
+    Para obter mais informações, consulte [/Zp (alinhamento de membros do Struct)](/cpp/build/reference/zp-struct-member-alignment).
 
 - **SuppressStartupBanner**
 
@@ -668,7 +668,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.
 
-   Para obter mais informações, confira [/nologo (Suprimir faixa de inicialização) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
+   Para obter mais informações, consulte [/nologo (Suprimir banner de inicialização) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
 
 - **TrackerLogDirectory**
 
@@ -680,11 +680,11 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
 - **TreatSpecificWarningsAsErrors**
 
-   Parâmetro **String[]** opcional.
+   Parâmetro opcional **string[].**
 
    Trata a lista especificada de avisos do compilador como erros.
 
-   Para obter mais informações, confira a opção **/we**`n` em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
+   Para obter mais informações, consulte a opção **/we** `n` em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWarningAsError**
 
@@ -692,7 +692,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, tratará todos os avisos do compilador como erros.
 
-   Para obter mais informações, confira a opção **/WX** em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
+   Para obter mais informações, consulte a opção **/WX** em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWChar_tAsBuiltInType**
 
@@ -708,7 +708,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, cancelará a definição de símbolos específicos da Microsoft que o compilador definir.
 
-   Para obter mais informações, confira a opção **/u** em [/U, /u (Excluir definições de símbolos)](/cpp/build/reference/u-u-undefine-symbols).
+   Para obter mais informações, consulte a opção **/u** em [/U, /u (Símbolos indefinidos)](/cpp/build/reference/u-u-undefine-symbols).
 
 - **UndefinePreprocessorDefinitions**
 
@@ -716,7 +716,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica uma lista de um ou mais símbolos de pré-processador a excluir.
 
-   Para obter mais informações, confira a opção **/U** em [/U, /u (Excluir definições de símbolos)](/cpp/build/reference/u-u-undefine-symbols).
+   Para obter mais informações, consulte a opção **/U** em [/U, /u (Símbolos indefinidos)](/cpp/build/reference/u-u-undefine-symbols).
 
 - **UseFullPaths**
 
@@ -724,7 +724,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, exibirá o caminho completo dos arquivos de código-fonte passados para o compilador no diagnóstico.
 
-   Para obter mais informações, confira [/FC (Caminho completo do arquivo de código-fonte no diagnóstico)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).
+   Para obter mais informações, consulte [/FC (caminho completo do arquivo de código-fonte em diagnósticos)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).
 
 - **UseUnicodeForAssemblerListing**
 
@@ -732,7 +732,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, fará o arquivo de saída ser criado em formato UTF-8.
 
-   Para obter mais informações, confira a opção **/FAu** em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
+   Para obter mais informações, consulte a opção **/FAu** em [/FA, /Fa (Arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
 
 - **WarningLevel**
 
@@ -742,19 +742,19 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **TurnOffAllWarnings** -  **/W0**
+  - **Avisos de turnoffall** - **/w0**
 
-  - **Level1** -  **/W1**
+  - **Nível1** - **/W1**
 
-  - **Level2** -  **/W2**
+  - **Nível2** - **/W2**
 
-  - **Level3** -  **/W3**
+  - **Nível3** - **/W3**
 
-  - **Level4** -  **/W4**
+  - **Nível4** - **/W4**
 
-  - **EnableAllWarnings** -  **/Wall**
+  - **Habilitaravisos** - **/Parede**
 
-    Para obter mais informações, confira a opção **/W**_n_ em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
+    Para obter mais informações, consulte a opção **/W**_n_ em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de aviso)](/cpp/build/reference/compiler-option-warning-level).
 
 - **WholeProgramOptimization**
 
@@ -762,7 +762,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Se `true`, habilitará a otimização de todo o programa.
 
-   Para obter mais informações, confira [/GL (Otimização do programa inteiro)](/cpp/build/reference/gl-whole-program-optimization).
+   Para obter mais informações, consulte [/GL (Otimização completa do programa)](/cpp/build/reference/gl-whole-program-optimization).
 
 - **XMLDocumentationFileName**
 
@@ -770,7 +770,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica o nome dos arquivos de documentação XML gerados. Esse parâmetro pode ser um nome de arquivo ou de diretório.
 
-   Para obter mais informações, confira o argumento `name` em [/doc (Processar comentários da documentação) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consulte também o parâmetro **GenerateXMLDocumentationFiles** nesta tabela.
+   Para obter mais `name` informações, consulte o argumento em [/doc (Comentários de documentação do processo) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consulte também o parâmetro **GenerateXMLDocumentationFiles** nesta tabela.
 
 - **MinimalRebuildFromTracking**
 
@@ -784,7 +784,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de leitura*.
 
-   Um log de acompanhamento do arquivo de leitura ( *.tlog*) contém os nomes dos arquivos de entrada lidos por uma tarefa e é usado pelo sistema de build do projeto para dar suporte a builds incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
+   Um registro de rastreamento de arquivo de leitura *(.tlog)* contém os nomes dos arquivos de entrada que são lidos por uma tarefa e é usado pelo sistema de compilação do projeto para suportar compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
 
 - **TLogWriteFiles**
 
@@ -792,7 +792,7 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de gravação*.
 
-   Um log de acompanhamento do arquivo de gravação ( *.tlog*) contém os nomes dos arquivos de saída gravados por uma tarefa e é usado pelo sistema de build do projeto para dar suporte a builds incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
+   Um registro de rastreamento de arquivo de gravação *(.tlog)* contém os nomes dos arquivos de saída que são gravados por uma tarefa e é usado pelo sistema de compilação do projeto para suportar compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
 
 - **TrackFileAccess**
 

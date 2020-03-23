@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594221"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
@@ -32,7 +32,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 Quando a **Lista de Tarefas** é aberta, ela aparece na parte inferior da janela do aplicativo.
 
-Para abrir a **Lista de Tarefas**, selecione **Exibir** > **Lista de Tarefas**, ou pressione no teclado **Ctrl**+ **\\** ,**T**.
+Para abrir a **Lista de Tarefas**, selecione **Exibir** > **Lista de Tarefas**, ou pressione no teclado **Ctrl**+**\\**,**T**.
 
 ![Janela Lista de Tarefas](../ide/media/vs2015_task_list.png)
 
@@ -67,7 +67,7 @@ Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma 
 > [!NOTE]
 > Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB. Para outras linguagens, confira a seção **Tokens personalizados**.
 
-### <a name="custom-tokens"></a>{1&gt;Tokens personalizados&lt;1}
+### <a name="custom-tokens"></a>Tokens personalizados
 
 Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Não diferenciam maiúsculas de minúsculas. Também é possível criar seus próprios tokens personalizados.
 
@@ -94,7 +94,7 @@ Para criar um token personalizado:
 
 Por padrão, os comentários TODO em C++ são exibidos na **Lista de Tarefas**.
 
-Para desativar comentários TODO em C++ no menu **Ferramentas**, selecione **Opções** > **Editor de Texto** > **C/C++**  > **Exibir** > **Enumerar Tarefas de Comentário** e defina o valor como **false**.
+Para desativar comentários TODO em C++ no menu **Ferramentas**, selecione **Opções** > **Editor de Texto** > **C/C++** > **Exibir** > **Enumerar Tarefas de Comentário** e defina o valor como **false**.
 
 ## <a name="shortcuts"></a>Atalhos
 
@@ -104,11 +104,11 @@ Um *atalho* é um indicador no código que é rastreado na **Lista de Tarefas**.
 
 ### <a name="create-a-shortcut"></a>Criar um atalho
 
-Para criar um atalho, insira o ponteiro no código no local em que deseja colocar um atalho. Escolha **Editar** > **Indicadores** > **Adicionar Atalho da Lista de Tarefas** ou pressione **Ctrl**+**K**, **Ctrl**+**H**.
+Para criar um atalho, insira o ponteiro no código no local em que deseja colocar um atalho. Escolha **Editar** > **marcadores** > **Adicionar atalho de lista de tarefas** ou pressionar **Ctrl**+**K,** **Ctrl**+**H**.
 
 Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Lista de tarefas, ambiente, caixa de diálogo Opções](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

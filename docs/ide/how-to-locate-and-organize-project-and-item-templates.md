@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591041"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar modelos de projeto e de item
@@ -36,9 +36,9 @@ Por padrão, os modelos instalados com o Visual Studio estão localizados em:
 
 ::: moniker range="vs-2017"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edição>\\Common7\IDE\ProjectTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+- *%ProgramFiles(x86)%\\Microsoft\\Visual Studio\\\<edição \\2017>Common7\IDE\ProjectTemplates\\<Language\> \\<Locale ID\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edição>\Common7\IDE\ItemTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+- *%ProgramFiles(x86)%\\Microsoft\\Visual Studio\\\<2017 edição>\Common7\IDE\ItemModelos\\<Idioma\> \\<ID local\>*
 
 Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic para inglês (LCID 1033):
 
@@ -48,9 +48,9 @@ Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic pa
 
 ::: moniker range=">=vs-2019"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edição>\\Common7\IDE\ProjectTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+- *%ProgramFiles(x86)%\\Microsoft\\Visual Studio\\\< \\2019 edição>\\ Common7\IDE\ProjectTemplates<Language\> \\<Locale ID\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edição>\Common7\IDE\ItemTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+- *%ProgramFiles(x86)%\\Microsoft\\Visual Studio\\\<2019 edição>\Common7\IDE\ItemModelos\\<Idioma\> \\<ID local\>*
 
 Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic para inglês (LCID 1033):
 
@@ -60,7 +60,7 @@ Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic pa
 
 ### <a name="user-templates"></a>Modelos do usuário
 
-Se você adicionar um arquivo compactado ( *.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá nas caixas de diálogo Novo Projeto e Adicionar Novo Item. Por padrão, os modelos do usuário estão localizados em:
+Se você adicionar um arquivo compactado (*.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá nas caixas de diálogo Novo Projeto e Adicionar Novo Item. Por padrão, os modelos do usuário estão localizados em:
 
 ::: moniker range="vs-2017"
 
@@ -87,7 +87,7 @@ Por exemplo, o seguinte diretório contém modelos de projeto do usuário para C
 ::: moniker-end
 
 > [!TIP]
-> Você pode alterar o local dos modelos do usuário em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**.
+> Você pode alterar o local conhecido para modelos de usuário em Locais de**Projetos e Soluções** > **de Opções de** >  **Tools** > **Ferramentas**.
 
 ::: moniker range="vs-2017"
 
@@ -102,25 +102,25 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
 1. Crie uma pasta na pasta de linguagem de programação no diretório de modelo de projeto do usuário. Por exemplo, para estabelecer uma categoria **HelloWorld** para modelos de projeto C#, crie o seguinte diretório:
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ProjectTemplates\Visual C#\HelloWorld\*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Coloque todos os modelos dessa categoria na nova pasta.
 
-1. No menu **arquivo** , escolha **novo** **projeto**de >.
+1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **novo projeto** , em **installed** > **Visual C#** .
+   A categoria **HelloWorld** aparece na caixa de diálogo **Novo Projeto** em **Instalado** > **Visual C#**.
 
 ### <a name="create-new-user-item-template-categories"></a>Criar categorias de modelo de item do usuário
 
 1. Crie uma pasta na pasta de linguagem de programação no diretório de modelo de item do usuário. Por exemplo, para estabelecer uma categoria **HelloWorld** para modelos de item C#, crie o seguinte diretório:
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates\Visual C#\HelloWorld\*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Coloque todos os modelos dessa categoria na nova pasta.
 
 1. Crie um projeto ou abra um projeto existente. Em seguida, no menu **Projeto**, escolha **Adicionar Novo Item**.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar novo item** , em **installed** > **Items visuais C#** .
+   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar Novo Item** em **Instalado** > **Itens do Visual C#**.
 
 ### <a name="display-templates-in-parent-categories"></a>Exibir modelos em categorias pai
 
@@ -128,7 +128,7 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 
 1. Localize o arquivo *.zip* que contém o modelo.
 
-1. Extraia o arquivo *.zip*.
+1. Extrair o arquivo *.zip.*
 
 1. Abra o arquivo *.vstemplate* no Visual Studio.
 
@@ -144,9 +144,9 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
     </TemplateData>
     ```
 
-1. Salve e feche o arquivo *.vstemplate*.
+1. Salvar e fechar o arquivo *.vstemplate.*
 
-1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **pasta compactada (zipada)** .
+1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**.
 
    Os arquivos são compactados em um arquivo *.zip*.
 
@@ -156,10 +156,10 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de itens](../ide/how-to-create-item-templates.md)

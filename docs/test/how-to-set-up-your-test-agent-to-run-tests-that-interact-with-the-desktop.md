@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588961"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
@@ -36,13 +36,13 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
 
 ## <a name="to-set-up-an-agent-to-run-as-a-process"></a>Para configurar um agente para ser executado como um processo
 
-1. Para configurar o agente de teste que você instalou para ser executado como um processo, escolha **Iniciar** > **Ferramenta de Configuração do Agente de Teste**.
+1. Para configurar o agente de teste instalado para executar como um processo, vá para **Iniciar** > a**ferramenta de configuração do agente de teste**.
 
    A caixa de diálogo **Configurar Agente de Teste** é exibida.
 
    ![Configurar Agente de teste para o Visual Studio](media/configure-test-agent.png)
 
-2. Selecione **Processo Interativo**. O agente de teste será iniciado como um processo, e não como um serviço. Escolha **Avançar**.
+2. Selecione **Processo Interativo**. O agente de teste será iniciado como um processo, e não como um serviço. Escolha **a seguir**.
 
 3. Insira o nome de usuário e a senha do usuário que executará o processo do agente de teste.
 
@@ -60,7 +60,7 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
 5. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
 
    > [!WARNING]
-   > Haverá riscos à segurança se você fizer logon automaticamente ou desabilitar a proteção de tela. Ao ativar o logon automático, você permite que outros usuários iniciem esse computador e permite que eles usem a conta que faz logon automaticamente. Se você desabilitar a proteção de tela, o computador talvez não solicite o logon de um usuário para desbloquear o computador. Isso permite que qualquer pessoa acesse o computador se ela tiver acesso físico a ele. Se habilitar esses recursos em um computador, você deverá verificar se esses computadores estão fisicamente seguros. Por exemplo, esses computadores estão localizados em um laboratório fisicamente seguro. Se você desmarcar **Certifique-se de que a proteção de tela está desabilitada**, isso não habilitará a proteção de tela.
+   > Haverá riscos à segurança se você fizer logon automaticamente ou desabilitar a proteção de tela. Ao ativar o logon automático, você permite que outros usuários iniciem esse computador e permite que eles usem a conta que faz logon automaticamente. Se você desabilitar a proteção de tela, o computador talvez não solicite o logon de um usuário para desbloquear o computador. Isso permite que qualquer pessoa acesse o computador se ela tiver acesso físico a ele. Se habilitar esses recursos em um computador, você deverá verificar se esses computadores estão fisicamente seguros. Por exemplo, esses computadores estão localizados em um laboratório fisicamente seguro. Se você limpar **Certifique-se de que o protetor de tela está desativado,** isso não habilita o protetor de tela.
 
    Para que o agente volte a ser executado como um serviço, você pode usar essa ferramenta e selecionar **Serviço**.
 
@@ -71,10 +71,10 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
 7. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Em seguida, escolha **Fechar** novamente para fechar a **Ferramenta de Configuração do Test Agent**.
 
    > [!NOTE]
-   > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo caso ele não esteja sendo executado, escolha **Iniciar** > **Visual Studio** > **Agente de Teste do Visual Studio**.
+   > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo se ele não estiver sendo executado, escolha **Iniciar** > **o Visual Studio** > **Microsoft Visual Studio Test Agent**.
 
    Se o controlador de teste para o agente de teste estiver registrado no Team Foundation Server, o status de um agente de teste que estiver sendo executado como um processo interativo será exibido no modo de exibição **Controladores** na **Central do Laboratório** do Microsoft Test Manager. Ele é listado com um símbolo de asterisco precedente para denotar que está sendo executado como um processo interativo. Para reiniciar o agente de teste, você deve usar a ferramenta que é executada no computador para o agente de teste e não o modo de exibição **Controladores**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567210"
 ---
 # <a name="customize-startup"></a>Personalizar a inicialização
@@ -32,7 +32,7 @@ Também é possível mostrar uma página inicial personalizada, que é uma pági
 
 ## <a name="to-change-the-startup-item"></a>Para alterar o item de inicialização
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
 2. Expanda **Ambiente** e escolha **Inicialização**.
 
@@ -58,7 +58,7 @@ Para instalar uma página inicial personalizada, abra um arquivo *.vsix* ou copi
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Para selecionar qual página inicial personalizada exibir
 
-1. Na barra de menus, escolha **ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Ferramentas** > **Opções**.
 
 1. Expanda **Ambiente** e escolha **Inicialização**.
 
@@ -67,7 +67,7 @@ Para instalar uma página inicial personalizada, abra um arquivo *.vsix* ou copi
 > [!TIP]
 > Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá abrir o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

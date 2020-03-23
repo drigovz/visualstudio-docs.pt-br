@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633649"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de item no envio de tarefas em lote
 
-O MSBuild tem a capacidade de dividir listas de itens em diferentes categorias, ou em lotes, com base nos metadados do item, e executar uma tarefa uma vez com cada lote. Pode ser difícil entender exatamente quais itens estão sendo passados com qual lote. Este tópico aborda os cenários comuns a seguir, que envolvem o envio em lote.
+O MSBuild tem a capacidade de dividir listas de itens em diferentes categorias ou lotes, com base em metadados de itens, e executar uma tarefa única em cada lote. Pode ser difícil entender exatamente quais itens estão sendo passados com qual lote. Este tópico aborda os cenários comuns a seguir, que envolvem o envio em lote.
 
 - Divisão de uma lista de itens em lotes
 
@@ -32,13 +32,13 @@ O MSBuild tem a capacidade de dividir listas de itens em diferentes categorias, 
 
 - Filtragem de listas de itens
 
-Para obter mais informações sobre o envio em lote com o MSBuild, consulte [envio em lote](../msbuild/msbuild-batching.md).
+Para obter mais informações sobre o loteamento com o MSBuild, consulte [Batching](../msbuild/msbuild-batching.md).
 
 ## <a name="divide-an-item-list-into-batches"></a>Dividir uma lista de itens em lotes
 
 O envio em lote permite que você divida uma lista de itens em lotes diferentes com base nos metadados do item e passe cada um dos lotes em uma tarefa separadamente. Isso é útil para a criação de assemblies satélite.
 
-O exemplo a seguir mostra como dividir uma lista de itens em lotes com base nos metadados do item. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados do item `Number`. A presença de `%(ExampColl.Number)`no atributo `Text` notifica o MSBuild de que o envio em lote deve ser executado. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados `Number` e cada lote é passado separadamente para a tarefa.
+O exemplo a seguir mostra como dividir uma lista de itens em lotes com base nos metadados do item. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados do item `Number`. A presença `%(ExampColl.Number)`no `Text` atributo notifica o MSBuild de que o loteamento deve ser realizado. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados `Number` e cada lote é passado separadamente para a tarefa.
 
 ```xml
 <Project
@@ -88,7 +88,7 @@ O MSBuild pode dividir várias listas de itens em lotes com base nos mesmos meta
 > [!NOTE]
 > Se uma lista de itens sendo passada em uma tarefa não contiver itens com os metadados referenciados, cada item nessa lista será passado para todos os lotes.
 
-O exemplo a seguir mostra como dividir uma lista com vários itens em lotes com base nos metadados do item. Cada uma das listas de itens `ExampColl` e `ExampColl2` é dividida em três lotes com base nos metadados do item `Number`. A presença de `%(Number)`no atributo `Text` notifica o MSBuild de que o envio em lote deve ser executado. As listas de itens `ExampColl` e `ExampColl2` são divididas em três lotes com base nos metadados `Number` e cada lote é passado separadamente para a tarefa.
+O exemplo a seguir mostra como dividir uma lista com vários itens em lotes com base nos metadados do item. Cada uma das listas de itens `ExampColl` e `ExampColl2` é dividida em três lotes com base nos metadados do item `Number`. A presença `%(Number)`no `Text` atributo notifica o MSBuild de que o loteamento deve ser realizado. As listas de itens `ExampColl` e `ExampColl2` são divididas em três lotes com base nos metadados `Number` e cada lote é passado separadamente para a tarefa.
 
 ```xml
 <Project
@@ -138,7 +138,7 @@ A [tarefa Message](../msbuild/message-task.md) exibe as seguintes informações:
 
 O envio em lote também pode ser executado nos metadados de itens conhecidos que são atribuídos a cada item no momento da criação. Isso assegura que cada item em uma coleção tenha alguns metadados para usar para o envio em lote. O valor de metadados `Identity` é exclusivo para cada item e é útil para dividir cada item em uma lista de itens em um lote separado. Para obter uma lista completa dos metadados de itens conhecidos, confira [Metadados de item conhecidos](../msbuild/msbuild-well-known-item-metadata.md).
 
-O exemplo a seguir mostra como enviar em lote cada item em uma lista de itens, um por vez. Já que o valor `Identity` dos metadados de cada item é exclusivo, a lista de itens `ExampColl` é dividida em seis lotes, cada lote contendo um item da lista de itens. A presença de `%(Identity)`no atributo `Text` notifica o MSBuild de que o envio em lote deve ser executado.
+O exemplo a seguir mostra como enviar em lote cada item em uma lista de itens, um por vez. Já que o valor `Identity` dos metadados de cada item é exclusivo, a lista de itens `ExampColl` é dividida em seis lotes, cada lote contendo um item da lista de itens. A presença `%(Identity)`no `Text` atributo notifica o MSBuild de que o loteamento deve ser realizado.
 
 ```xml
 <Project
@@ -178,7 +178,7 @@ Identity: 'Item6' -- Items in ExampColl: Item6
 
 O envio em lote pode ser usado para filtrar certos itens de uma lista de itens antes de passá-la para uma tarefa. Por exemplo, filtrar o valor `Extension` de metadados de itens conhecidos permite que você execute uma tarefa somente em arquivos com uma extensão específica.
 
-O exemplo a seguir mostra como dividir uma lista de itens em lotes com base nos metadados de item e, em seguida, filtrar esses lotes quando eles são passados para uma tarefa. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados do item `Number`. O atributo `Condition` da tarefa especifica que somente lotes com um valor `Number` para os metadados de item `2` serão passados para a tarefa
+O exemplo a seguir mostra como dividir uma lista de itens em lotes com base nos metadados de item e, em seguida, filtrar esses lotes quando eles são passados para uma tarefa. A lista de itens `ExampColl` é dividida em três lotes com base nos metadados do item `Number`. O atributo `Condition` da tarefa especifica que somente lotes com um valor `2` para os metadados de item `Number` serão passados para a tarefa
 
 ```xml
 <Project
@@ -224,9 +224,9 @@ Items in ExampColl: Item2;Item5
 
 ## <a name="see-also"></a>Confira também
 
-- [Metadados de item conhecidos](../msbuild/msbuild-well-known-item-metadata.md)
+- [Metadados de itens bem conhecidos](../msbuild/msbuild-well-known-item-metadata.md)
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
-- [Envio em lote](../msbuild/msbuild-batching.md)
+- [Lotes](../msbuild/msbuild-batching.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

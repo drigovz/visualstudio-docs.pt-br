@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Conheça a responsabilidade dos administradores de rastrear atribuições de usuário e processar pedidos.
 ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235219"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Rastrear atribuição de usuário e processar pedidos
@@ -28,23 +28,23 @@ Sua obrigação de compra completa é determinada pelo número máximo de assina
 - Os administradores de assinaturas do Visual Studio podem reatribuir assinaturas de um assinante a outro após 90 dias do momento da atribuição original. 
     > [!NOTE]
     > Para evitar um nível artificialmente alto de uso máximo, sempre faça isso removendo primeiro a assinatura existente e, em seguida, adicionando a nova. 
-- Para ajudá-lo a monitorar o uso máximo da sua organização, há um relatório de [uso máximo](maximum-usage.md) no [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio. 
+- Para ajudá-lo a monitorar o uso máximo da sua organização, há um relatório [de Uso Máximo](maximum-usage.md) no Portal de Administração de [Assinaturas](https://manage.visualstudio.com)do Visual Studio . 
 
-## <a name="monthly-subscriptions-open-license-or-open-value"></a>Assinaturas mensais, Open License ou Open Value
-Você pode estar atribuindo assinaturas por meio de programas como Open License e Open Value ou por meio de Visual Studio Marketplace mensalmente. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>Assinaturas mensais, licença aberta ou valor aberto
+Você pode estar atribuindo assinaturas através de programas como Open License e Open Value ou através do Visual Studio Marketplace mensalmente. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA e Select
-Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements oferecem flexibilidade em como usar e licenciar software do Visual Studio ao longo do tempo. Os administradores do Visual Studio devem fazer uma ordem anual de verdadeiro para trazer suas licenças de software para o uso máximo estabelecido durante o período do contrato.
+Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements oferecem flexibilidade em como usar e licenciar software do Visual Studio ao longo do tempo. Os administradores do Visual Studio devem fazer uma ordem anual de True-Up para levar suas licenças de software até o uso máximo estabelecido durante o período de contrato.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
-- [Responsabilidades do administrador](admin-responsibilities.md)
+- [Responsabilidades de administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

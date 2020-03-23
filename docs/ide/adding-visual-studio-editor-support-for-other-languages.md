@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590872"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
@@ -38,11 +38,11 @@ No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenc
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|{1&gt;CSS&lt;1}|INI|LUA|R|Swift|{1&gt;XML&lt;1}|
-|Docker|Jade|Marca|Ruby|TypeScript|YAML|
+|CSS|INI|LUA|R|Swift|XML|
+|Docker|Jade|Faça|Ruby|TypeScript|YAML|
 
 Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
 
@@ -56,7 +56,7 @@ Além da colorização de sintaxe e do preenchimento de declaração, o Visual S
 
 - Visual Basic
 
-- Ir
+- Go
 
 - Java
 
@@ -76,18 +76,18 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 
 |Nome da Pasta|Descrição|
 |-----------------|-----------------|
-|\\ *\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, *\Matlab*.|
+|\\*\<nome da língua>*|A pasta da linguagem. Substitua o * \<nome do idioma>* com o nome do idioma. Por exemplo, *\Matlab*.|
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
-|*\Snippets*|A pasta de snippets. Contém snippets da linguagem.|
+|*\Trechos*|A pasta de snippets. Contém snippets da linguagem.|
 
-No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >* . Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
 > [!TIP]
 > Se você tiver arquivos abertos no editor, precisará fechá-los e reabri-los para ver o realce de sintaxe depois de adicionar as Gramáticas TextMate.
 
 Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: introdução a gramáticas de linguagem](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar uma extensão do Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)

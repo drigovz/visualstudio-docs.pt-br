@@ -19,21 +19,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634559"
 ---
 # <a name="assignculture-task"></a>Tarefa AssignCulture
 
-Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome de arquivo *Form1.fr-fr.resx* tem um identificador de cultura "fr-fr" inserido; portanto, essa tarefa produzirá um item com o mesmo nome de arquivo e com os metadados `Culture` iguais a `fr-fr`. A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.
+Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome do arquivo *Form1.fr-fr.resx* tem um identificador de cultura incorporado "fr-fr", de modo `Culture` que `fr-fr`esta tarefa produzirá um item que tenha o mesmo nome de arquivo com os metadados iguais a . A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
 A tabela a seguir descreve os parâmetros da tarefa `AssignCulture`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`AssignedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de itens recebidos no parâmetro `Files`, com uma entrada de metadados `Culture` adicionada a cada item.<br /><br /> Se o item de entrada do parâmetro `Files` já contiver uma entrada de metadados `Culture`, a entrada de metadados original será utilizada.<br /><br /> A tarefá atribuirá uma entrada de metadados `Culture` somente se o nome de arquivo contiver um identificador de cultura válido. O identificador de cultura deve estar entre os dois últimos pontos no nome de arquivo.|
 |`AssignedFilesWithCulture`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém o subconjunto dos itens do parâmetro `AssignedFiles` que tem uma entrada de metadados `Culture`.|

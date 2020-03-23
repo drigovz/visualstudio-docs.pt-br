@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597289"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um snippet de código
@@ -84,7 +84,7 @@ O seguinte XML é o modelo básico de snippet:
 
 ## <a name="import-a-code-snippet"></a>Importar um snippet de código
 
-1. Importe um snippet para a instalação do Visual Studio usando o **Gerenciador de Snippets de Código**. Abra-o escolhendo **Ferramentas** > **Gerenciador de Snippets de Código**.
+1. Importe um snippet para a instalação do Visual Studio usando o **Gerenciador de Snippets de Código**. Abra-o escolhendo O**Gerenciador de Snippets de Código de** **Ferramentas** > .
 
 2. Clique no botão **Importar**.
 
@@ -108,7 +108,7 @@ O seguinte XML é o modelo básico de snippet:
 
    ::: moniker-end
 
-6. Teste o snippet abrindo um projeto C# ou Visual Basic. Com o arquivo de código aberto no editor, escolha **Snippets** > **Inserir Snippet** no menu de clique com o botão direito do mouse e, em seguida, **Meus Snippets de Código**. Você deverá ver um snippet chamado **Raiz Quadrada**. Clique duas vezes nesse item.
+6. Teste o snippet abrindo um projeto C# ou Visual Basic. Com um arquivo de código aberto no editor, escolha **Snippets** > **Insert Snippet** no menu com o botão direito do mouse e, em **seguida, Meus trechos de código**. Você deverá ver um snippet chamado **Raiz Quadrada**. Clique duas vezes nesse item.
 
    O snippet de código é inserido no arquivo de código.
 
@@ -228,6 +228,6 @@ O XML a seguir mostra um snippet de código que usa o método `File.Exists` no n
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)

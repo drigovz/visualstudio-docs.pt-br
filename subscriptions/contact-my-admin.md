@@ -7,13 +7,13 @@ ms.date: 03/07/2020
 ms.topic: conceptual
 description: Saiba como contatar o administrador da assinatura para obter assistência em caso de dúvidas ou problemas.
 ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937533"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenha assistência de seu administrador de assinaturas
+# <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenha assistência do administrador de assinaturas
 Caso sua assinatura do Visual Studio seja fornecida pelo trabalho ou pela escola, provavelmente, ela foi atribuída a você por um administrador de assinaturas ou "administrador".  Os administradores podem atribuir ou remover assinaturas, alterar endereços de email de credenciais, determinar se você tem a capacidade de baixar software e executar outras funções relacionadas à sua assinatura.
 
 Considerando o porte e a complexidade de muitas organizações, você pode não estar ciente de quem é o administrador; portanto, pode ser difícil saber onde obter ajuda.  Adicionamos um novo recurso ao portal do assinante para ajudá-lo a contatar o administrador.   
@@ -29,7 +29,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 6. Por fim, clique em **Enviar**.
 
 > [!NOTE]
-> **Superadministradores:**  Para definir o endereço de email para o qual as solicitações "contatar meu administrador" são enviadas, especifique esse endereço nas [preferências de contrato](admin-prefs.md#contact-email-address).
+> **Super admins:**  Para definir o endereço de e-mail para o qual são enviadas as solicitações "Entre em contato com meu admin", especifique esse endereço nas [Preferências](admin-prefs.md#contact-email-address)de Acordo .
 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

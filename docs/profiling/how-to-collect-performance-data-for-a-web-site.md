@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410175"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302899"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site
 
@@ -40,7 +40,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 - Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.
 
-  Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).
+  Para obter mais informações, consulte [a segurança do Perfil e do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de ADMIN no [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Para criar o perfil de um projeto de site
 
@@ -50,13 +50,13 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 3. Na primeira página do assistente, selecione um método de criação de perfil e, em seguida, clique em **Avançar**. Para obter mais informações sobre métodos de criação de perfil, confira [Entender os métodos de coleta de desempenho](../profiling/understanding-performance-collection-methods.md). Observe que o método de criação de perfil do visualizador de simultaneidade não está disponível para aplicativos Web.
 
-4. Na lista suspensa **Qual aplicativo você deseja direcionar para a criação de perfil?** , certifique-se de que o projeto atual esteja selecionado e, em seguida, clique em **Avançar**.
+4. Na lista suspensa **Qual aplicativo você deseja direcionar para a criação de perfil?**, certifique-se de que o projeto atual esteja selecionado e, em seguida, clique em **Avançar**.
 
 5. Na terceira página do assistente, você pode adicionar dados de TIP (criação de perfil de interação de camada) e/ou dados do JavaScript em execução nas páginas da Web.
 
     - Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.
 
-    - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.
+    - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Perfil JavaScript.**
 
 6. Clique em **Avançar**.
 
@@ -68,7 +68,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Para criar o perfil de um site sem abrir um projeto no Visual Studio
 
-1. {1&gt;Abra o Visual Studio.&lt;1}
+1. Abra o Visual Studio.
 
 2. No menu **Analisar**, selecione **Criador de Perfil de Desempenho**, **Gerenciador de Desempenho** e, em seguida, **Iniciar**.
 
@@ -78,7 +78,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 5. Na caixa **Qual URL ou Caminho executará seu aplicativo Web** na terceira página do assistente, insira a URL para a home page do aplicativo e, em seguida, clique em **Avançar**.
 
-   - Para um site baseado em servidor (IIS), digite uma URL como **<`http://localhost/MySite/default.aspx`>** . Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
+   - Para um site baseado em servidor (IIS), ** < `http://localhost/MySite/default.aspx` **digite uma URL como . Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
 
    - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página `http://localhost:nnnn/MySite/default.aspx` seja iniciada no Internet Explorer para iniciar a sessão.
 
@@ -100,9 +100,9 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
      O criador de perfil gera o arquivo de dados e demonstra a exibição dos dados de Resumo na janela principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Visões gerais](../profiling/overviews-performance-tools.md)
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-[Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
-[Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
+[Configure sessões](../profiling/configuring-performance-sessions.md)
+de desempenho[Compreenda os valores dos](../profiling/understanding-instrumentation-data-values.md)
+dados de instrumentação[Entenda os valores dos dados amostrais](../profiling/understanding-sampling-data-values.md)

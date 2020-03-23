@@ -7,14 +7,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes sobre as assinaturas são fornecidos por meio do programa Microsoft para Startups.
 ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947105"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Assinaturas do Visual Studio oferecidas para startups
-As startups qualificadas que entram no programa Microsoft para Startups recebem cinco [assinaturas de nuvem mensais do Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). 
+Startups qualificadas que aderirem ao programa Microsoft for Startups podem ganhar 5 [assinaturas mensais em nuvem](https://visualstudio.microsoft.com/vs/pricing/)do Visual Studio Enterprise. 
 
 ## <a name="subscription-details"></a>Detalhes da assinatura 
 Essas são as mesmas assinaturas que são oferecidas no mercado, sem nenhuma limitação ou restrição específica. Cada assinatura precisa ser atribuída a um usuário final (que é o usuário licenciado) para que o usuário possa executar o Visual Studio e ser reconhecido como um assinante do Visual Studio Enterprise no Azure DevOps Services.
@@ -27,7 +27,7 @@ As assinaturas mensais renovam automaticamente e são cobradas
 Não são oferecidas chaves do produto (Product Keys) para desbloqueá-lo. A entrada é a única opção para executar o Visual Studio. O assinante do Visual Studio pode operar offline por até 30 dias antes que o Visual Studio deixe de funcionar. Durante o trabalho online, o Visual Studio atualiza silenciosamente o status de licença do usuário periodicamente para garantir que a assinatura ainda esteja válida.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: como os encargos mensais da assinatura em nuvem são processados?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como os encargos mensais da assinatura de nuvem são processados?
 R: Na primeira compra, vamos cobrar uma quantidade proporcional para cobrir os dias restantes do mês em questão. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita em 15 de abril, serão cobradas 5 unidades porque resta 50% do mês (15 dias de um mês de 30 dias). Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
 
 Mais tarde, quando você aumentar a quantidade paga, o aumento de unidades também será cobrado proporcionalmente para cobrir os dias restantes do mês em questão. Ou seja, se você comprar uma assinatura de nuvem do Visual Studio Professional a mais em 10 de maio, serão cobradas aproximadamente 0,677 unidades (21 dias restantes no dia 31 do mês de maio).

@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557952"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549906"
 ---
-# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
+# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configure testes de unidade usando um arquivo *.runsettings*
 
-Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.runsettings*. Por exemplo, é possível alterar a versão do .NET na qual os testes são executados, o diretório para os resultados de teste ou os dados coletados durante uma execução de teste.
+Os testes unitários no Visual Studio podem ser configurados usando um arquivo *.runsettings.* Por exemplo, é possível alterar a versão do .NET na qual os testes são executados, o diretório para os resultados de teste ou os dados coletados durante uma execução de teste.
 
-Arquivos de configurações de execução são opcionais. Se você não precisar de nenhuma configuração especial, não será necessário ter um arquivo *.runsettings*. Um uso comum de um arquivo *.runsettings* é personalizar a [análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Arquivos de configurações de execução são opcionais. Se você não precisar de nenhuma configuração especial, você não precisará de um arquivo *.runsettings.* Um uso comum de um arquivo *.runsettings* é personalizar a [análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Especificar um arquivo de configurações de execução
 
@@ -28,7 +28,7 @@ Os arquivos de configurações de execução podem ser usados para configurar os
 
 ::: moniker range="vs-2017"
 
-Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **configurações de teste** > **Selecionar arquivo de configurações de teste**e, em seguida, selecione o arquivo *. RunSettings* .
+Para especificar um arquivo de configurações de execução no IDE, selecione **Teste** > **Configurações do Teste** > **Selecionar Arquivo de Configurações do Teste** e, em seguida, selecione o arquivo *.runsettings*.
 
 ![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -38,70 +38,71 @@ O arquivo será exibido no menu de Configurações do Teste e você poderá marc
 
 ::: moniker range=">=vs-2019"
 
-#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 versão 16,3 e anterior
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 versão 16.3 e anterior
 
-Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **Selecione o arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
+Para especificar um arquivo de configurações de execução no IDE, selecione > **''Executar's's's'' Arquivo de configurações**. **Test** Navegue até o arquivo *.runsettings* e selecione-o.
 
 ![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-O arquivo aparece no menu teste e você pode selecioná-lo ou desselecioná-lo. Quando estiver marcado, o arquivo de configurações de execução se aplicará sempre que você selecionar **Analisar Cobertura de Código**.
+O arquivo aparece no menu Teste e você pode selecioná-lo ou desmarcá-lo. Quando estiver marcado, o arquivo de configurações de execução se aplicará sempre que você selecionar **Analisar Cobertura de Código**.
 
-#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 versão 16,4 e posterior
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 versão 16.4 e posterior
 
-Há três maneiras de especificar um arquivo de configurações de execução no Visual Studio 2019 versão 16,4 e posteriores:
+Existem três maneiras de especificar um arquivo de configurações em execução na versão 16.4 do Visual Studio 2019 e posteriores:
 
-- Adicione uma propriedade de compilação a um projeto por meio do arquivo de projeto ou um arquivo Directory. Build. props. O arquivo de configurações de execução para um projeto é especificado pela propriedade **RunSettingsFilePath**. 
+- Adicione uma propriedade de compilação a um projeto através do arquivo do projeto ou de um arquivo Directory.Build.props. O arquivo de configurações de execução de um projeto é especificado pela propriedade **RunSettingsFilePath**.
 
-    - Atualmente, há suporte para configurações de execução no C#nível de projeto C++no, F# vb, e projetos.
+    - As configurações de execução em nível de projeto são atualmente suportadas nos projetos C#, VB, C++e F#.
     - Um arquivo especificado para um projeto substitui qualquer outro arquivo de configurações de execução especificado na solução.
+    - [Essas propriedades do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) podem ser usadas para especificar o caminho para o arquivo de configurações de execução. 
 
-    Exemplo de especificação de um arquivo *. RunSettings* para um projeto:
+    Exemplo de especificação de um arquivo *.runsettings* para um projeto:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
     ```
 
-- Coloque um arquivo de configurações de execução chamado ". RunSettings" na raiz da sua solução.
+- Coloque um arquivo de configurações de execução chamado ".runsettings" na raiz da solução.
 
-  Se a detecção automática de arquivos de configurações de execução estiver habilitada, as configurações nesse arquivo serão aplicadas em todos os testes executados. Você pode ativar a detecção automática de arquivos RunSettings de dois locais:
+  Se a detecção automática de arquivos de configurações em execução estiver ativada, as configurações deste arquivo serão aplicadas em todos os testes executados. Você pode ativar a detecção automática de arquivos de runsetting sem dois lugares:
   
-    - **Ferramentas** > **opções** > **testar** > **detectar automaticamente arquivos RunSettings**
+    - **Opções de** > **ferramentas** > **Testam** > **Arquivos de runsetting** de teste automático
 
-      ![Opção de detecção automática de arquivo RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      ![Detecção automática de runsettings opção de arquivo no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
       
-    - **Testar** > **definir configurações de execução** > **detectar arquivos RunSettings automaticamente**
+    - **Configurar o teste** > **Configuração de Configurações** > **de execução Auto Detectar arquivos de runsetting**
     
-      ![Menu de detecção automática de arquivos do RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+      ![Detecção automática do menu de arquivos runsettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- No IDE, selecione **testar** > **definir configurações de execução** > **Selecionar arquivo de RunSettings de toda a solução**e, em seguida, selecione o arquivo *. RunSettings* .
+- No IDE, selecione **'Configurar executar** > **configurações' Executar configurações** > **de execução Arquivo de configurações amplas**e, em seguida, selecione o arquivo *.runsettings.*
 
-   ![Selecione o menu arquivo da solução de teste Wide RunSettings no Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+   ![Selecione o menu de arquivos runsettings em toda a solução de teste no Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
       
-   - Esse arquivo substitui o arquivo ". RunSettings" na raiz da solução, se existir, e é aplicado em todos os testes executados.  
-   - Esta seleção de arquivo só persiste localmente. 
+   - Este arquivo substitui o arquivo ".runsettings" na raiz da solução, se ela existir, e é aplicada em todos os testes executados.  
+   - Esta seleção de arquivos só persiste localmente. 
 
 ::: moniker-end
 
 ### <a name="command-line"></a>Linha de comando
 
-Para executar testes na linha de comando, use o *vstest.console.exe* e especifique o arquivo de configurações usando o parâmetro **/Settings**.
+Para executar testes a partir da linha de comando, use *vstest.console.exe*e especifique o arquivo de configurações usando o parâmetro **/Configurações.**
 
 1. Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:
 
    ::: moniker range="vs-2017"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **prompt de comando do desenvolvedor para vs 2017**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **Prompt de Comando do Desenvolvedor para VS 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **prompt de comando do desenvolvedor para vs 2019**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **Prompt de Comando do Desenvolvedor para VS 2019**.
 
    ::: moniker-end
 
@@ -138,14 +139,14 @@ Para personalizar os testes usando um arquivo *.runsettings*, siga estas etapas:
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, escolha **testar** > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
+3. Para selecionar o arquivo de configurações em execução, escolha > **''Executar's's's 'Arquivo de configurações'.** **Test** Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
 
 ::: moniker-end
 
    > [!TIP]
    > Crie mais de um arquivo *.runsettings* na solução e selecione um como o arquivo ativo de configurações do teste, conforme necessário.
 
-## <a name="example-runsettings-file"></a>Arquivo *.runsettings* de exemplo
+## <a name="example-runsettings-file"></a>Exemplo *.runsettings* file
 
 O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada elemento do arquivo é opcional, porque tem um valor padrão.
 
@@ -252,11 +253,11 @@ O elemento **RunConfiguration** pode incluir os seguintes elementos:
 |Nó|Padrão|Valores|
 |-|-|-|
 |**ResultsDirectory**||O diretório no qual os resultados do teste são colocados.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` para fontes do .NET Core, `FrameworkUap10` para fontes baseadas no UWP, `Framework45` para o .NET Framework 4.5 e posterior, `Framework40` para o .NET Framework 4.0 e `Framework35` para o .NET Framework 3.5.<br /><br />Essa configuração especifica a versão da estrutura de teste de unidade usada para descobrir e executar os testes. Pode ser diferente da versão da plataforma .NET especificada nas propriedades de compilação do projeto de teste de unidade.<br /><br />Se você omitir o elemento `TargetFrameworkVersion` a partir do arquivo *.runsettings*, a plataforma determinará automaticamente a versão da estrutura com base nos binários compilados.|
+|**Targetframeworkversion**|Framework40|`FrameworkCore10` para fontes do .NET Core, `FrameworkUap10` para fontes baseadas no UWP, `Framework45` para o .NET Framework 4.5 e posterior, `Framework40` para o .NET Framework 4.0 e `Framework35` para o .NET Framework 3.5.<br /><br />Essa configuração especifica a versão da estrutura de teste de unidade usada para descobrir e executar os testes. Pode ser diferente da versão da plataforma .NET especificada nas propriedades de compilação do projeto de teste de unidade.<br /><br />Se você omitir o elemento `TargetFrameworkVersion` a partir do arquivo *.runsettings*, a plataforma determinará automaticamente a versão da estrutura com base nos binários compilados.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Um ou mais caminhos para o diretório no qual os TestAdapters estão localizados|
-|**MaxCpuCount**|1|Essa configuração controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador. O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados. Um contêiner pode ser um assembly, uma DLL ou um artefato relevante. O contêiner do teste está agendando a unidade. Em cada contêiner, os testes são executados de acordo com a estrutura de teste. Se houver muitos contêineres, à medida que os processos concluírem a execução dos testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br />MaxCpuCount pode ser:<br /><br />n, em que 1 <= n <= número de núcleos: até n processos são iniciados<br /><br />n, em que n = qualquer outro valor: o número de processos iniciados pode ser até o número de núcleos disponíveis. Por exemplo, defina n = 0 para permitir que a plataforma decida automaticamente o número ideal de processos a serem iniciados com base no ambiente.|
+|**MaxCpuCount**|1|Essa configuração controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador. O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados. Um contêiner pode ser um assembly, uma DLL ou um artefato relevante. O contêiner do teste está agendando a unidade. Em cada contêiner, os testes são executados de acordo com a estrutura de teste. Se houver muitos contêineres, à medida que os processos concluírem a execução dos testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br />MaxCpuCount pode ser:<br /><br />n, em que 1 <= n <= número de núcleos: até n processos são iniciados<br /><br />n, onde n = qualquer outro valor: o número de processos iniciados pode ser até o número de núcleos disponíveis. Por exemplo, defina n=0 para permitir que a plataforma decida automaticamente o número ideal de processos a serem iniciados com base no ambiente.|
 |**TestSessionTimeout**||Permite que os usuários finalizem uma sessão de teste quando ele exceder o tempo limite determinado. Definir um tempo limite assegura que os recursos serão restritos e as sessões de teste serão restritas a um período de tempo. Essa configuração está disponível no **Visual Studio 2017 versão 15.5** e posterior.|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de dados de diagnóstico (coletores de dados)
@@ -297,7 +298,7 @@ Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, use
 </TestRunParameters>
 ```
 
-Os parâmetros de execução de teste fornecem uma maneira de definir variáveis e valores que estão disponíveis para os testes em tempo de execução. Acesse os parâmetros usando a propriedade <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType>:
+Os parâmetros de execução do teste fornecem uma maneira de definir variáveis e valores disponíveis para os testes em tempo de execução. Acesse os parâmetros usando a propriedade <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType>:
 
 ```csharp
 [TestMethod]
@@ -338,8 +339,9 @@ Essas configurações são específicas para o adaptador de teste que executa os
 |**InProcMode**|false|Caso deseje que os testes sejam executados no mesmo processo do adaptador MSTest, defina esse valor como **true**. Essa configuração fornece um ganho menor de desempenho. No entanto, se um teste for encerrado com uma exceção, os testes restantes não serão executados.|
 |**AssemblyResolution**|false|É possível especificar caminhos para outros assemblies ao localizar e executar testes de unidade. Por exemplo, use esses caminhos para assemblies de dependência que não estão no mesmo diretório do assembly de teste. Para especificar um caminho, use um elemento **Caminho do Diretório**. Os caminhos podem incluir variáveis de ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Tarefa de teste do Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

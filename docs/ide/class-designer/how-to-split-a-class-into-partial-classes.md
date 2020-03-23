@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 48672e2d316828019ede7097306517b270062327
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588675"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Como dividir uma classe em classes parciais no Designer de Classe
@@ -27,11 +27,11 @@ Você pode usar a palavra-chave `partial` (`Partial` em Visual Basic) para divid
 
 As declarações podem estar em um ou em vários arquivos de origem. Todas as declarações precisam estar no mesmo assembly e no mesmo namespace.
 
-Classes parciais são úteis em várias situações. Em um projeto grande, por exemplo, a separação de uma classe em vários arquivos permite que mais de um programador trabalhe no projeto ao mesmo tempo. Quando você está trabalhando com o código que o Visual Studio gera, é possível alterar a classe sem precisar recriar o arquivo de origem. (Exemplos de código que o Visual Studio gera incluem Windows Forms e o código do wrapper do serviço Web.) Portanto, você pode criar código que usa classes geradas automaticamente sem precisar modificar o arquivo criado pelo Visual Studio.
+Classes parciais são úteis em várias situações. Em um projeto grande, por exemplo, a separação de uma classe em vários arquivos permite que mais de um programador trabalhe no projeto ao mesmo tempo. Quando você está trabalhando com o código que o Visual Studio gera, é possível alterar a classe sem precisar recriar o arquivo de origem. (Exemplos de código que o Visual Studio gera incluem Formulários do Windows e código de invólucro de serviço web.) Assim, você pode criar um código que usa classes geradas automaticamente sem ter que modificar o arquivo que o Visual Studio cria.
 
 Existem dois tipos de métodos parciais. No C#, eles são chamados de declarar e implementar. No Visual Basic, são chamados de declaração e implementação.
 
-O **Designer de Classe** é compatível com métodos e classes parciais. A forma de tipo no diagrama de classe se refere a um único local de declaração para a classe parcial. Se a classe parcial for definida em vários arquivos, você poderá especificar qual local de declaração o **Designer de Classe** usará definindo a propriedade **Local do Novo Membro** na janela **Propriedades**. Ou seja, quando você clica duas vezes em uma forma de classe, o **Designer de Classe** vai até o arquivo de origem que contém a declaração de classe identificada pela propriedade **Local do Novo Membro**. Quando você clica duas vezes em um método parcial em uma forma de classe, o **Designer de Classe** vai para a declaração de método parcial. Além disso, na janela **Propriedades**, a propriedade **Nome de Arquivo** aponta para o local da declaração. Para classes parciais, **Nome de Arquivo** lista todos os arquivos que contêm código de implementação e declaração dessa classe. No entanto, para métodos parciais, **Nome de Arquivo** lista apenas o arquivo que contém a declaração de método parcial.
+**O Class Designer** suporta classes e métodos parciais. A forma de tipo no diagrama de classe se refere a um único local de declaração para a classe parcial. Se a classe parcial for definida em vários arquivos, você poderá especificar qual local de declaração o **Class Designer** usará definindo a propriedade Novo Local **de Membro** na janela **Propriedades.** Ou seja, quando você clica duas vezes em uma forma de classe, o **Class Designer** vai para o arquivo de origem que contém a declaração de classe identificada pela propriedade Novo Local **de Membro.** Quando você clica duas vezes em um método parcial em uma forma de classe, **Class Designer** vai para a declaração parcial do método. Além disso, na janela **Propriedades**, a propriedade **Nome de Arquivo** aponta para o local da declaração. Para classes parciais, **Nome de Arquivo** lista todos os arquivos que contêm código de implementação e declaração dessa classe. No entanto, para métodos parciais, **Nome de Arquivo** lista apenas o arquivo que contém a declaração de método parcial.
 
 Os exemplos a seguir dividem a definição da classe `Employee` em duas declarações, cada uma das quais define um procedimento diferente. As duas definições parciais nos exemplos podem estar em um arquivo de origem ou em dois arquivos de origem diferentes.
 
@@ -76,9 +76,9 @@ Partial Public Class Employee
 End Class
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [partial (tipo) (Referência do C#)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (tipo) (Referência de C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (método) (Referência do C#)](/dotnet/csharp/language-reference/keywords/partial-method)
 - [Parcial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

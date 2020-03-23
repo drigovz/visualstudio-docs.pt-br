@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410447"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79301709"
 ---
 # <a name="customizing-the-ide"></a>Personalizando o IDE
 
@@ -21,7 +21,7 @@ O Visual Studio para Mac pode ser personalizado de várias maneiras, permitindo 
 
 ![Exibição de tema escuro](media/customizing-the-ide-image7a.png)
 
-Você pode mudar os temas no Visual Studio para Mac navegando até **Visual Studio > Preferências > Ambiente > Estilo Visual** e selecionando o tema desejado na lista suspensa **Tema da Interface do Usuário**, conforme ilustrado na imagem a seguir:
+Você pode alternar os temas no Visual Studio para Mac navegando para **visual studio > preferências > ambiente > Visual Style** e selecionando o tema desejado a partir do **tema da interface do usuário,** como ilustrado na imagem a seguir:
 
 ![Seleção de tema escuro](media/customizing-the-ide-image7b.png)
 
@@ -44,7 +44,7 @@ O Visual Studio para Mac está traduzido nos 14 idiomas a seguir, permitindo que
 * Espanhol
 * Turco
 
-Para alterar o idioma exibido pelo Visual Studio para Mac, navegue até **Visual Studio > Preferências > Ambiente > Estilo Visual** e selecione o idioma desejado na lista suspensa **Idioma da Interface do Usuário**, conforme ilustrado na imagem a seguir:
+Para alterar o idioma exibido pelo Visual Studio para Mac, navegue pelo **Visual Studio > Preferências > Ambiente > Visual Style** e selecione o idioma desejado na tela suspensa da linguagem de interface do **usuário,** conforme ilustrado na imagem a seguir:
 
 ![Seleção de Idioma](media/customizing-the-ide-image11a.png)
 
@@ -64,7 +64,7 @@ Os campos **Nome** e **Email** populados serão usados em qualquer confirmação
 
 Associações de teclas permitem adaptar seu ambiente de desenvolvimento para que você possa mover-se com mais eficiência por todo o Visual Studio para Mac. Ele fornece associações de teclas familiares para muitos IDEs populares, como o Visual Studio (no Windows), o ReSharper, o Visual Studio Code e o Xcode.
 
-As associações de teclas podem ser definidas navegando para **Visual Studio > Preferências > Ambiente > Associações de Teclas**, conforme ilustrado na imagem a seguir:
+As vinculações de tecla podem ser definidas navegando para **o Visual Studio > Preferências > Ambiente > Vinculações de Chaves,** conforme ilustrado pela imagem a seguir:
 
 ![Definir associações de teclas](media/customizing-the-ide-image10a.png)
 
@@ -108,7 +108,7 @@ O estado dos painéis abertos é representado por um *layout*. Os layouts podem 
 
 Sempre há um layout de ativo e qualquer alteração feita em um layout, como adicionar ou reposicionar um painel, alterará apenas o layout ativo. Quando você fechar o Visual Studio para Mac, as alterações feitas não serão salvas.
 
-No entanto, é possível criar um layout usando o item de menu **Exibir > Salvar Layout Atual**. Isso adicionará o layout atual ao menu para que você pode selecioná-lo a qualquer momento:
+No entanto, é possível criar um novo layout usando o item **'Exibir > Salvar o** layout atual'. Isso adicionará o layout atual ao menu para que você pode selecioná-lo a qualquer momento:
 
 ![Salva o layout atual](media/customizing-the-ide-image6a.png)
 
@@ -132,6 +132,6 @@ Para reverter para um único editor aberto, selecione **Exibir > Colunas do Edit
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar o IDE do Visual Studio (no Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

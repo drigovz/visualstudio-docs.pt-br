@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589585"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Como gerar testes de unidade usando IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Como: Gerar testes unitários usando o IntelliTest
 
 O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Uma análise de caso é realizada para cada branch condicional do código. Por exemplo, instruções `if`, declarações e todas as operações que podem gerar exceções são analisadas. Essa análise é usada para gerar dados de teste para um teste de unidade parametrizado de todos os métodos, criando testes de unidade com alta cobertura de código.
 
@@ -60,7 +60,7 @@ Para testes que forem aprovados, verifique se os resultados relatados na coluna 
 
      ![Selecionar testes; clique com o botão direito do mouse e escolha Salvar](../test/media/savepextests.png)
 
-     É possível exibir o projeto de teste e o teste de unidade parametrizado que foi criado – os testes de unidade individuais, correspondentes a cada uma das linhas, são salvos no arquivo *.g.cs* no projeto de teste e um teste de unidade parametrizado é salvo em seu arquivo *.cs* correspondente. É possível executar os testes de unidade e exibir os resultados do Gerenciador de Testes, como você faria com qualquer teste de unidade criado manualmente.
+     Você pode visualizar o projeto de teste e o teste de unidade parametrizado que foi criado - os testes de unidade individuais, correspondentes a cada uma das linhas, são salvos no arquivo *.g.cs* no projeto de teste, e um teste de unidade parametrizado é salvo em seu arquivo *.cs* correspondente. É possível executar os testes de unidade e exibir os resultados do Gerenciador de Testes, como você faria com qualquer teste de unidade criado manualmente.
 
      ![Abrir o arquivo de classe no método de teste para exibir um teste de unidade](../test/media/testmethodpex.png)
 
@@ -128,7 +128,7 @@ Se você adicionar uma pressuposição e executar novamente o IntelliTest, os da
 
 Se você adicionar uma declaração e executar novamente o IntelliTest, ele verificará se a declaração é válida e o teste falhará se não for.
 
-### <a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar IntelliTest primeiro?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar IntelliTest primeiro?
 
 **R:** Sim, clique com o botão direito do mouse na classe ou no método e escolha **Criar IntelliTest**.
 
@@ -142,7 +142,7 @@ Aceite o formato padrão para gerar os testes ou altere o nome de seu projeto e 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>P: Posso usar outras estruturas de teste de unidade com o IntelliTest?
 
 **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md).
-As extensões do Framework de teste também estão disponíveis em Visual Studio Marketplace, por exemplo, o [gerador de testes NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
+As extensões da estrutura de teste também estão disponíveis no Visual Studio Marketplace, por exemplo, [NUnit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
 Depois de reiniciar o Visual Studio e reabrir a solução, clique com o botão direito do mouse na classe ou no método e escolha **Criar IntelliTest**. Selecione a estrutura instalada aqui:
 

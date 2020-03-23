@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 3: trabalhando com dados em seu aplicativo ASP.NET Core'
+title: 'Passo 3: Trabalhar com dados no seu ASP.NET aplicativo core'
 description: Comece a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580073"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: trabalhar com dados usando Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Passo 3: Trabalhar com dados usando o Framework entityentity
 
 Siga estas etapas para começar a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core.
 
@@ -54,7 +54,7 @@ public class Game
 
 Agora estamos prontos para criar as páginas que usaremos para gerenciar nossa biblioteca de jogos. Isso pode parecer intimidador, mas é surpreendentemente fácil. Primeiro, precisamos decidir onde em nosso aplicativo essa funcionalidade deve residir. Abra a pasta Páginas no projeto da Web e adicione uma nova pasta lá. Chame-a de *Jogos*.
 
-Agora clique com o botão direito do mouse em Jogos e escolha **Adicionar** > **Novo Item Gerado por Scaffold**. Escolha as Razor Pages usando a opção **Entity Framework (CRUD)** . CRUD significa "Criar, ler, atualizar, excluir", e este modelo criará páginas para cada uma dessas operações (incluindo uma página "Listar tudo" e uma página "Exibir detalhes de um item").
+Agora clique com o botão direito do mouse em Jogos e escolha **Adicionar** > **novo item de andaime**. Escolha as Razor Pages usando a opção **Entity Framework (CRUD)**. CRUD significa "Criar, ler, atualizar, excluir", e este modelo criará páginas para cada uma dessas operações (incluindo uma página "Listar tudo" e uma página "Exibir detalhes de um item").
 
 ![Adicionar páginas geradas por scaffold do ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -131,7 +131,7 @@ Isso é o necessário para começar a trabalhar com dados em um aplicativo ASP.N
 
 No próximo vídeo, você aprenderá como adicionar suporte à API Web em seu aplicativo.
 
-[Etapa 4: expondo uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Passo 4: Expor uma API web do seu ASP.NET aplicativo core](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Confira também
 

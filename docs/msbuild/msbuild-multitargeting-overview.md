@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633324"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma do MSBuild
@@ -40,7 +40,7 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe*, o arquivo de destino comum (*microsoft.common.targets*) e o arquivo de tarefas comum (*microsoft.common.tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para saber mais, veja [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe*, o arquivo de alvos comuns *(microsoft.common.targets)* e o arquivo de tarefas comuns *(microsoft.common.tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblies de referência
 
@@ -50,6 +50,6 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
 
  Você pode configurar destinos do MSBuild e tarefas para execução fora de processo com o MSBuild para que você pode direcionar contextos são consideravelmente diferentes daquele que você estiver executando em.  Por exemplo, você pode direcionar um aplicativo do .NET Framework 2.0 de 32 bits, enquanto o computador de desenvolvimento é executada em uma plataforma de 64 bits com o .NET Framework 4.5. Para saber mais, confira [Configurar destinos e tarefas](../msbuild/configuring-targets-and-tasks.md).
 
-## <a name="troubleshooting"></a>solução de problemas
+## <a name="troubleshooting"></a>Solução de problemas
 
  Você pode encontrar erros se você tentar fazer referência a um assembly que não é parte do contexto de destino. Para obter mais informações sobre esses erros e o que fazer a respeito deles, confira [Solução de erros de direcionamento do .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).

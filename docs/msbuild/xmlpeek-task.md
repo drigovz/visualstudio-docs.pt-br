@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59bc42bd438d80bbaf0ff45cd1c95447961cd437
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094667"
 ---
 # <a name="xmlpeek-task"></a>Tarefa XmlPeek
 
@@ -31,7 +31,7 @@ Retorna os valores conforme especificado por uma consulta de XPath em um arquivo
 
  A tabela a seguir descreve os parâmetros da tarefa `XmlPeek`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`Namespaces`|Parâmetro `String` opcional.<br /><br /> Especifica os namespaces para prefixos de consulta do XPath.|
 |`Query`|Parâmetro `String` opcional.<br /><br /> Especifica a consulta do XPath.|
@@ -42,6 +42,37 @@ Retorna os valores conforme especificado por uma consulta de XPath em um arquivo
 ## <a name="remarks"></a>Comentários
 
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
+
+
+
+## <a name="example"></a>Exemplo
+
+Aqui está uma amostra `settings.config` de arquivo XML para ler:
+
+```xml
+<appSettings>
+  <add key="ProjectFolder" value="S1" />
+</appSettings>
+```
+
+Neste exemplo, se você `value`quiser ler, use código como o seguinte:
+
+```xml
+<Target Name="BeforeBuild">
+    <XmlPeek XmlInputPath="settings.config" Query="appSettings/add[@key='ProjectFolder']/@value">
+        <Output TaskParameter="Result" ItemName="value" />
+    </XmlPeek>
+    <Message Text="Using project folder @(value)." Importance="high" />
+    <PropertyGroup>
+        <ProjectFolder>@(value)</ProjectFolder>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Projects\$(ProjectFolder)\Controls\Control1.ascx.cs">
+            <SubType>ASPXCodeBehind</SubType>
+        </Compile>
+    </ItemGroup>
+</Target>
+```
 
 ## <a name="see-also"></a>Confira também
 

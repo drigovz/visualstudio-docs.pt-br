@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984872"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79301681"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
@@ -77,6 +77,6 @@ Para obter informações gerais sobre como usar o VoiceOver no macOS, confira os
 - [Introdução ao VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
 - [Comandos de VoiceOver no macOS](https://lab.dotjay.com/notes/voiceover-commands/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Recursos de acessibilidade do Visual Studio (no Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408521"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302556"
 ---
-# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicando um serviço de nuvem usando o Visual Studio
+# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicação de um serviço de nuvem usando o Visual Studio
 
 O Visual Studio pode publicar um aplicativo diretamente no Azure, com suporte para ambientes de preparo e produção de um serviço de nuvem. Durante a publicação, selecione o ambiente de implantação e uma conta de armazenamento usada temporariamente para o pacote de implantação.
 
@@ -35,11 +35,11 @@ Ao publicar seu aplicativo do Azure, você pode executar uma das seguintes taref
 
 - Criar um pacote de serviço: você pode usar esse pacote e o arquivo de configuração de serviço para publicar seu aplicativo para um ambiente de implantação do [portal do Azure](https://portal.azure.com).
 
-- Publicar seu projeto do Azure do Visual Studio: Para publicar seu aplicativo diretamente no Azure, use o Assistente de Publicação. Para obter informações, consulte [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publicar seu projeto do Azure do Visual Studio: para publicar seu aplicativo diretamente no Azure, use o Assistente de Publicação. Para obter informações, consulte [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Para criar um pacote de serviço do Visual Studio
 
-1. Quando você estiver pronto para publicar seu aplicativo, abra Gerenciador de Soluções, abra o menu de atalho do projeto do Azure que contém suas funções e escolha Publicar.
+1. Quando estiver pronto para publicar seu aplicativo, abra o Gerenciador de Soluções, abra o menu de atalho do projeto do Azure que contém suas funções e selecione Publicar.
 
 1. Para criar um pacote de serviço, siga estas etapas:
 
@@ -73,7 +73,7 @@ Se a infraestrutura de back-end do aplicativo for estável, mas as funções Web
 
 - **Apenas funções web podem ser atualizadas:** funções de trabalho não podem ser atualizadas. Além disso, não é possível atualizar o `RoleEntryPoint` em `web role.cs`.
 
-- **Só há suporte a uma única instância de uma função web:** não pode haver várias instâncias de uma função web no ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
+- **Só pode suportar uma única instância de uma função web**: Você não pode ter várias instâncias de qualquer função web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
 
 - **Habilitar conexões de área de trabalho remota:** esse requisito permite que a Implantação da Web use o usuário e a senha para se conectar à máquina virtual para implantar as alterações no servidor que executa o IIS (Serviços de Informações da Internet). Além disso, talvez seja necessário conectar-se à máquina virtual para adicionar um certificado confiável ao IIS nessa máquina virtual. (Esse certificado garante que a conexão remota ao IIS usada pela Implantação da Web é segura).
 
@@ -122,7 +122,7 @@ O seguinte procedimento assume que você está usando o assistente **Publicar o 
 
    a. Para se conectar à máquina virtual que está executando a função web, selecione a instância da função web em **Cloud Explorer** ou **Gerenciador de Servidores** e escolha o comando **Conectar-se usando a Área de Trabalho Remota**. Para obter etapas detalhadas de como se conectar à máquina virtual, consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). O navegador solicitará que você baixe um arquivo `.rdp`.
 
-   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar** e então escolha HTTPS na lista suspensa **Tipo**. Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
+   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar**e, em seguida, escolha HTTPS na lista de parada **Tipo.** Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
 
       > [!NOTE]
       > Se você adicionar um certificado SSL confiável, o triângulo amarelo de aviso não aparecerá mais no **Assistente de Publicação**.
@@ -138,7 +138,7 @@ Talvez seja necessário incluir arquivos específicos em seu pacote de serviço 
    c. Escolha a referência que você deseja adicionar e, em seguida, escolha o botão **OK**. A referência é adicionada à lista na pasta **Referências**.
    d. Abra o menu de atalho para o assembly que você adicionou e escolha **Propriedades**. A janela **Propriedades** é exibida.
 
-      Para incluir esse assembly no pacote de serviço, na lista **Local da Cópia**, escolha **Verdadeiro**.
+      Para incluir este conjunto no pacote de serviço, na **lista Copiar local** escolha **True**.
 1. No **Gerenciador de soluções** abra o nó do projeto para o projeto que estiver faltando no assembly referenciado.
 
 1. Para adicionar um assembly ao projeto, abra o menu de atalho para a pasta **Referências** e escolha **Adicionar Referência**. A caixa de diálogo **Adicionar Referência** é exibida.
@@ -155,6 +155,6 @@ Talvez seja necessário incluir arquivos específicos em seu pacote de serviço 
 
 1. Para incluir arquivos no pacote de serviço que foram adicionados a seu projeto de função de trabalho, abra o menu de atalho para o arquivo e escolha **Propriedades**. Da janela **Propriedades**, escolha **Copiar se for mais novo** da caixa de listagem **Copiar para o diretório de saída**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Para saber mais sobre a publicação do Azure por meio do Visual Studio, consulte o [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md).

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113779"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre os assemblies, como violações das regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 Habilitar a Análise de Código\
 Habilita ou desabilita a análise de código para seu projeto.
@@ -62,8 +62,8 @@ Habilita ou desabilita as regras de segurança. Você também pode expandir essa
 Regras de Uso\
 Habilita ou desabilita as regras de uso. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Avisos da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Análise de código para avisos de código gerenciados](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Visão geral da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Passo a passo: analisando código gerenciado em busca de defeitos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Instruções passo a passo: analisando código gerenciado em busca de defeitos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

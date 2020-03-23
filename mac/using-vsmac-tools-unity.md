@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410532"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79303333"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Usando as Ferramentas do Visual Studio para Mac para Unity
 
@@ -26,10 +26,10 @@ Outra opção é abrir o Visual Studio para Mac sem nenhum script no editor de c
 
 ## <a name="unity-documentation-access"></a>Acesso de documentação do Unity
 
-As Ferramentas do Visual Studio para Mac para Unity inclui um atalho para acessar a documentação da API do Unity. Para acessar a documentação da API do Unity no Visual Studio para Mac, posicione o cursor sobre a API do Unity você deseja conhecer e pressione o **comando ⌘ + ‘** .
+As Ferramentas do Visual Studio para Mac para Unity inclui um atalho para acessar a documentação da API do Unity. Para acessar a documentação da API do Unity no Visual Studio para Mac, posicione o cursor sobre a API do Unity você deseja conhecer e pressione o **comando ⌘ + ‘**.
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense para mensagens do Unity
-O mecanismo do Unity transmite mensagens para scripts monocomportamento, permitindo que os desenvolvedores escrevam código que reage a mensagens como OnMouseDown, OnTriggerEnter, etc. Como esses não são métodos virtuais na classe multicomportamento base, alguns IDEs, como o MonoDevelop, não têm funcionalidade de conclusão de código para mensagens do Unity.
+O mecanismo Unity transmite mensagens para scripts MonoBehavior, permitindo que os desenvolvedores escrevam códigoque reage a mensagens como OnMouseDown, OnTriggerEnter, etc. Como estes não são métodos virtuais na classe base MonoBehavior, alguns IDEs, como o MonoDevelop, não possuem funcionalidade de conclusão de código para mensagens Unity.
 
 No entanto, as Ferramentas do Visual Studio para Mac para Unity estende sua funcionalidade do IntelliSense para as mensagens do Unity. Isso torna mais fácil implementar mensagens Unity em scripts MonoBehaviour e auxilia no aprendizado da API do Unity. Para usar o IntelliSense para mensagens Unity:
 
@@ -71,7 +71,7 @@ Para adicionar um novo script MonoBehaviour C#, **clique com o botão direito do
 
 ### <a name="add-a-new-unity-shader"></a>Adicionar um novo sombreador do Unity
 
-Para adicionar um novo sombreador do Unity, **clique com o botão direito do mouse na pasta Ativos** ou em um subdiretório no painel Solução e selecione **Adicionar > Novo Sombreador**.
+Para adicionar um novo sombreador unity, **clique com o botão direito do mouse na pasta 'Ativos'** ou em um subdiretório no bloco 'Solução' e **selecione Adicionar > Novo Sombreador**.
 
 ### <a name="add-a-new-folder"></a>Adicionar uma nova pasta
 
@@ -80,7 +80,7 @@ Para adicionar uma nova pasta, **clique com o botão direito do mouse na pasta A
 Essas adições são refletidas na janela Projeto do editor do Unity.
 
 ### <a name="to-rename-a-file-or-folder"></a>Renomear um arquivo ou pasta
-**Clique com botão direito do mouse** no item a ser renomeado no Painel de Soluções e selecione **Renomear...** .
+**Clique com botão direito do mouse** no item a ser renomeado no Painel de Soluções e selecione **Renomear...**.
 
 > [!NOTE]
 > Se você tiver um novo projeto do Unity sem nenhum script e a pasta Ativos não for mostrada no Painel de Soluções no Visual Studio para Mac, adicione um script C# inicial de dentro do editor do Unity.

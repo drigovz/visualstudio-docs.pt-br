@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75915833"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Treinar um modelo do TensorFlow na nuvem
@@ -23,7 +23,7 @@ Neste tutorial, treinaremos um modelo do TensorFlow usando um [conjunto de dados
 
 O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 Antes de começar, confira se os itens a seguir estão instalados e configurados:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurar uma máquina virtual de aprendizagem profunda do Azure
@@ -39,17 +39,17 @@ As instruções para configurar a máquina virtual de aprendizagem profunda pode
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Baixar o código de exemplo
+### <a name="download-sample-code"></a>Baixar código de exemplo
 
 Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais.
 
-## <a name="open-project"></a>Abrir o projeto
+## <a name="open-project"></a>Abrir projeto
 
 - Inicie o Visual Studio e selecione **Arquivo > Abrir > Projeto/Solução**.
 
 - Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**.
 
-   ![Abrir o projeto](media/tensorflow-local/open-project.png)
+   ![Abrir projeto](media/tensorflow-local/open-project.png)
 
    ![Abrir a solução](media/tensorflow-local/open-solution.png)
 
@@ -68,7 +68,7 @@ Na janela de envio:
 
 - Na lista **Cluster a ser usado**, selecione o computador remoto (com o prefixo "rm:") ao qual enviar o trabalho.
 
-- Insira um **Nome do trabalho**.
+- Digite um **nome de trabalho**.
 
 - Clique em **Enviar**.
 

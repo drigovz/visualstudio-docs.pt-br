@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568822"
 ---
 # <a name="import-and-export-settings-command"></a>Comando Importar e Exportar Configurações
@@ -30,7 +30,7 @@ Importa, exporta ou redefine as configurações do Visual Studio.
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 
 /export:`filename`
 
@@ -56,7 +56,7 @@ O seguinte comando exporta as configurações atuais para o arquivo `MyFile.vsse
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configurações do ambiente](../../ide/environment-settings.md)
 - [Sincronizar as configurações](../../ide/synchronized-settings-in-visual-studio.md)

@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591704"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
 O código em um snippet de código mostra somente a maneira mais simples de fazer algo. Para a maioria dos aplicativos, o código deve ser modificado para se adaptar ao aplicativo.
 
-## <a name="handling-exceptions"></a>Tratando exceções
+## <a name="handling-exceptions"></a>Tratamento de exceções
 
 Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
-## <a name="file-locations"></a>Locais de arquivo
+## <a name="file-locations"></a>Locais de arquivos
 
 Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o seguinte:
 
-- Encontrando um local acessível. Os usuários poderão não ter acesso à pasta *Arquivos de Programas do computador*; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
+- Encontrando um local acessível. Os usuários podem não ter acesso à pasta Arquivos do *programa* do computador, então armazenar arquivos com os arquivos do aplicativo pode não funcionar.
 
-- Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\* ). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
+- Encontrando um local seguro. Armazenar arquivos na pasta raiz *(C:\\*) não é seguro. Para os dados do aplicativo, recomendamos a pasta *Dados do Aplicativo.* Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
 
 - Usando um nome de arquivo válido. Você pode usar os controles <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> para reduzir a probabilidade de nomes de arquivo inválidos. Lembre-se de que entre o momento em que o usuário seleciona um arquivo e o momento em que o código manipula o arquivo, o arquivo poderá ser excluído. Além disso, o usuário poderá não ter permissões para gravar no arquivo.
 
@@ -45,13 +45,13 @@ A segurança de um snippet depende do local em que ele é usado no código-fonte
 
 - Protegendo recursos (como logs de eventos, Registro)
 
-- Armazenando segredos
+- Armazenar segredos
 
 - Verificando as entradas
 
 - Passando dados para tecnologias de script
 
-Para saber mais, veja [Como proteger aplicativos](../ide/securing-applications.md).
+Para obter mais informações, consulte [Aplicativos de proteção](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Snippets de código baixados
 
@@ -67,8 +67,8 @@ Os snippets de código do IntelliSense instalados pelo Visual Studio não são e
 
   - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Snippets de código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [Como proteger aplicativos](../ide/securing-applications.md)
+- [Trechos de código Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Garantia de aplicações](../ide/securing-applications.md)
 - [Snippets de código](../ide/code-snippets.md)

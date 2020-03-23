@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279259"
 ---
 # <a name="parallelcustombuild-task"></a>Tarefa ParallelCustomBuild
@@ -32,12 +32,12 @@ Executar instâncias paralelas da [tarefa CustomBuild](../msbuild/custombuild-ta
 
 A tabela a seguir descreve os parâmetros da tarefa **ParallelCustomBuild**.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Parâmetro opcional **bool**.|
 |**MaxItemsInBatch**|Parâmetro **int** opcional.|
-|**MaxProcesses**|Parâmetro **int** opcional.|
-|**Fontes**|Parâmetro obrigatório **ITaskItem[]** .|
+|**Maxprocesses**|Parâmetro **int** opcional.|
+|**Fontes**|Parâmetro **ITaskItem necessário[].**|
 
 ## <a name="see-also"></a>Confira também
 

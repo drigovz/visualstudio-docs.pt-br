@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78234950"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
@@ -26,7 +26,7 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 > [!NOTE]
 > Nós reunimos os esforços de toda a comunidade para fazer com que o [Docs da Web do MDN](https://developer.mozilla.org/en-US/) seja o recurso de desenvolvimento principal único da Web, redirecionando todas as (500 ou mais páginas) de referência da API JavaScript da Microsoft do docs.microsoft.com para seu equivalente do MDN. Para obter detalhes, confira o [comunicado](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Suporte para ECMAScript 2015 (ES6) e mais
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Suporte para ECMAScript 2015 (ES6) e mais
 
 O Visual Studio agora dá suporte à sintaxe para atualizações da linguagem ECMAScript, tais como ECMAScript 2015/2016.
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 O JavaScript IntelliSense em [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] agora exibirá muito mais informações sobre listas de parâmetros e de membros. Essas novas informações são fornecidas pelo serviço de linguagem TypeScript, que usa a análise estática nos bastidores para entender melhor o código. Você pode ler mais sobre a nova experiência de IntelliSense e sobre como ele funciona [aqui](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Suporte à sintaxe JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Suporte à sintaxe JSX
 
 O JavaScript em [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] conta com suporte avançado à sintaxe JSX. O JSX é um conjunto de sintaxes que permite marcas HTML em arquivos JavaScript.
 
@@ -260,7 +260,7 @@ Você pode aprender mais sobre a criação de arquivos de declaração (`.d.ts`)
 Já que o novo serviço de linguagem é alimentado por análise estática em vez de um mecanismo de execução (leia sobre [esse problema](https://github.com/Microsoft/TypeScript/issues/4789) para obter informações sobre as diferenças), há alguns padrões de JavaScript que não podem mais ser detectados.
 O padrão mais comum é o padrão "expando".
 Atualmente o serviço de linguagem não pode fornecer o IntelliSense em objetos que têm propriedades incluídas após a declaração.
-Por exemplo:
+Por exemplo: 
 
 ```js
 var obj = {};

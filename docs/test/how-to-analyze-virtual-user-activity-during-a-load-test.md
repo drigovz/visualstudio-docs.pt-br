@@ -9,15 +9,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169398"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
-Veja a atividade do usuário virtual associado ao seu teste de carga usando o **Gráfico de atividade de usuário virtual**. Cada linha do gráfico representa um usuário virtual individual. O **Gráfico de Atividade de Usuário Virtual** mostra exatamente o que cada usuário virtual executou durante o teste. É possível ver padrões de atividade de usuário, padrões de carga, correlacionar testes reprovados ou lentos e ver solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade de Usuário Virtual** está disponível apenas depois da conclusão da execução do teste de carga.
+Veja a atividade do usuário virtual associado ao seu teste de carga usando o **Gráfico de atividade de usuário virtual**. Cada linha do gráfico representa um usuário virtual individual. O **Gráfico de Atividades do Usuário Virtual** mostra exatamente o que cada usuário virtual estava executando durante o teste. É possível ver padrões de atividade de usuário, padrões de carga, correlacionar testes reprovados ou lentos e ver solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade de Usuário Virtual** está disponível apenas depois da conclusão da execução do teste de carga.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -43,11 +43,11 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 2. Mova o ponteiro sobre um detalhe no gráfico. Observe que as informações a seguir são exibidas na dica de ferramenta:
 
-   - **ID de usuário**
+   - **Id de usuário**
 
    - **Cenário**
 
-   - **Test**
+   - **Teste**
 
    - **URL** (Não é exibido em um teste ou transação)
 
@@ -59,7 +59,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
    - **Start Time**
 
-   - **Duration**
+   - **Duração**
 
    - **Agente**
 
@@ -72,9 +72,9 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Para usar as opções de filtragem no Gráfico de Atividade de Usuário Virtual
 
-1. Na **legenda Detalhes**, use a lista suspensa para selecionar **Teste**, **Página** ou **Transação**.
+1. Na **legenda detalhes,** use a lista de paradas para selecionar **Teste,** **Página**ou **Transação.**
 
-    **Painel de Legenda de detalhes**
+    **Detalhes Painel legenda**
 
     ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png)
 
@@ -84,9 +84,9 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
     O **Gráfico de Atividade de Usuário Virtual** fornece a capacidade de filtrar testes, páginas e transações com base em diferentes critérios. Você pode remover alguns testes da exibição, remover todos os testes com êxito ou remover os testes reprovados com certas falhas. Também é possível remover todos os testes que não possuem logs.
 
-    Por exemplo, é possível selecionar a opção **(Realçar erros)** , que exibe todos os erros no carrinho colorido em vermelho. Também é possível selecionar a opção **(Realçar resultados com registros)** , que exibe todos os resultados do teste que têm os logs coloridos em verde no gráfico.
+    Por exemplo, é possível selecionar a opção **(Realçar erros)**, que exibe todos os erros no carrinho colorido em vermelho. Também é possível selecionar a opção **(Realçar resultados com registros)**, que exibe todos os resultados do teste que têm os logs coloridos em verde no gráfico.
 
-    **Painel Filtrar resultados**
+    **Painel de resultados do filtro**
 
     ![Painel Filtrar resultados](../test/media/ltest_filterresults.png)
 
@@ -99,11 +99,11 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
    - **Mostrar resultados com erros** Exibe resultados com erros que podem ajudar na depuração.
 
      > [!NOTE]
-     > A lista de tipos de erros listados no nó **Mostrar resultados com erros** pode ser mais investigada escolhendo o botão **Tabelas** na barra de ferramentas do **Visualizador de Resultados de Testes de Desempenho Web**. Para saber mais, confira [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > A lista de tipos de erro listados nos **resultados do Show com** nó de erros pode ser investigada ainda mais escolhendo o botão **Tabelas** na barra de **ferramentas Do visualizador de resultados do teste de** desempenho da Web. Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      O **Gráfico de Atividade de Usuário Virtual** é atualizado de acordo.
 
 ## <a name="see-also"></a>Confira também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Passo a passo: Usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Passo a passo: Usando o gráfico de atividades do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

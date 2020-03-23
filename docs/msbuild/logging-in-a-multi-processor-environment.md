@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633558"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em log em um ambiente multiprocessador
@@ -30,7 +30,7 @@ Você pode melhorar a eficiência de registro em log ainda mais criando um agent
 
 ### <a name="central-logging-model"></a>Modelo de log central
 
-Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de log central, uma instância de *MSBuild.exe* atua como o processo de build primário ou "nó central". As instâncias secundárias do *MSBuild.exe*, ou os "nós secundários", são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
+Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de registro central, uma instância do *MSBuild.exe* atua como o processo de compilação primária, ou "nó central". As instâncias secundárias do *MSBuild.exe*ou "nós secundários" são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
 
 Quando ocorre um build, os agentes secundários encaminham o tráfego de eventos para os agentes centrais. Como eventos se originam em vários nós secundários, os dados chegam ao nó central simultaneamente, mas intercalados. Para resolver referências de evento para projeto e evento para destino, os argumentos do evento incluem informações adicionais de contexto do evento de build.
 
@@ -77,5 +77,5 @@ Um asterisco (*) separa os dois nomes de agentes na opção `-dl`.
 
 ## <a name="see-also"></a>Confira também
 
-- [Agentes de build](../msbuild/build-loggers.md)
+- [Construir madeireiros](../msbuild/build-loggers.md)
 - [Criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

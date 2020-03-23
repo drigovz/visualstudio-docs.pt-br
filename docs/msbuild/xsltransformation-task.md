@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84bc83f60d133dcaf22c9fa690357fa2624adabd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630789"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094545"
 ---
 # <a name="xsltransformation-task"></a>Tarefa XslTransformation
 
@@ -31,10 +31,10 @@ Transformações um XML de entrada usando um XSLT ou XSLT compilado e saídas pa
 
  A tabela a seguir descreve os parâmetros da tarefa `XslTransformation`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`OutputPaths`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos de saída para a transformação XML.|
-|`Parameters`|Parâmetro `String` opcional.<br /><br /> Especifica os parâmetros para o documento de entrada XSLT.|
+|`Parameters`|Parâmetro `String` opcional.<br /><br /> Especifica os parâmetros para o documento de entrada XSLT.  Forneça o XML bruto que `<Parameter Name="" Value="" Namespace="" />`mantém cada parâmetro como .|
 |`XmlContent`|Parâmetro `String` opcional.<br /><br /> Especifica a entrada XML como uma cadeia de caracteres.|
 |`XmlInputPaths`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os arquivos de entrada XML.|
 |`XslCompiledDllPath`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o XSLT compilado.|
@@ -45,7 +45,19 @@ Transformações um XML de entrada usando um XSLT ou XSLT compilado e saídas pa
 
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
+## <a name="example"></a>Exemplo
+
+No exemplo a seguir, um arquivo de transformação XSL *transform.xslt* é usado para modificar o arquivo `$(XmlInputFileName)`xml . O XML transformado é `$(IntermediateOutputPath)output.xml`escrito para . A transformação XSL toma `$(Parameter1)` como parâmetro de entrada.
+
+```xml
+    <XslTransformation XslInputPath="transform.xslt"
+                       XmlInputPaths="$(XmlInputFileName)"
+                       OutputPaths="$(IntermediateOutputPath)output.xml"
+                       Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
+```
+
 ## <a name="see-also"></a>Confira também
 
+- [Parâmetros de XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

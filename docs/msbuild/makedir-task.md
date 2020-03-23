@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633532"
 ---
 # <a name="makedir-task"></a>Tarefa MakeDir
@@ -33,7 +33,7 @@ Cria diretórios e, se necessário, qualquer diretório pai.
 
 A tabela a seguir descreve os parâmetros da tarefa `MakeDir`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`Directories`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> O conjunto de pastas para criar.|
 |`DirectoriesCreated`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Os diretórios que são criados por essa tarefa. Se alguns diretórios não puderem ser criados, pode ser que não contenha todos os itens que foram passados para o parâmetro `Directories`.|

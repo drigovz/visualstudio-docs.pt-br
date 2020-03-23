@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596197"
 ---
 # <a name="options-text-editor-file-extension"></a>Opções, Editor de Texto, Extensão de Arquivo
@@ -28,7 +28,7 @@ A caixa de diálogo Opções permite especificar como todos os arquivos com dete
 
 Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento do tipo em questão que permitir selecionar um esquema de codificação para o documento. Isso pode ser útil se você estiver preparando versões dos documentos do projeto para uso em diferentes plataformas ou em diferentes linguagens de destino.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 **Extensão**
 
@@ -42,7 +42,7 @@ Selecione o editor ou o designer do IDE em que documentos com essa extensão de 
 
 Adiciona uma entrada que inclui a **Extensão** e a **Experiência de Edição** especificadas à Lista de extensões.
 
-**Removerr**
+**Remover**
 
 Exclui a entrada selecionada da Lista de Extensões.
 
@@ -58,6 +58,6 @@ Selecione esta opção se você quiser especificar como arquivos sem extensão s
 
 Fornece a mesma lista que o **Editor**. Selecione o editor ou o designer do IDE em que documentos sem extensão de arquivo serão abertos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)

@@ -1,20 +1,21 @@
 ---
 title: Gerar a refatoração de parâmetro
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329057"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094357"
 ---
 # <a name="generate-parameter"></a>Gerar o parâmetro
 
@@ -22,19 +23,21 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** gera automaticamente um parâmetro de método.
+- Visual Basic
 
-**Quando:** fazer referência a uma variável em um método que não existe no contexto atual e receber um erro; você pode gerar um parâmetro como uma correção de código. 
+**O que é isso?** Gera automaticamente um parâmetro de método.
 
-**Por que:** você pode modificar rapidamente uma assinatura de método sem perder o contexto.
+**Quando:** Você faz referência a uma variável em um método que não existe no contexto atual e recebe um erro; você pode gerar um parâmetro como uma correção de código. 
+
+**Por que:** Você pode modificar rapidamente uma assinatura de método sem perder o contexto.
 
 ## <a name="how-to"></a>Como fazer
 
-1. Coloque o cursor no nome da variável e pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+1. Coloque o cursor no nome da variável e **pressione Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
 1. Selecione **Gerar o parâmetro**.
 
    ![Gerar o parâmetro](media/generate-parameter.png) 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

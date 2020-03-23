@@ -1,5 +1,5 @@
 ---
-title: Trabalhando com C++ código (Designer de classe)
+title: Trabalhando com Código C++ (Class Designer)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596743"
 ---
-# <a name="work-with-c-code-in-class-designer"></a>Trabalhar com C++ código no designer de classe
+# <a name="work-with-c-code-in-class-designer"></a>Trabalhe com código C++ em Class Designer
 
 O **Designer de Classe** exibe uma superfície de design visual chamada de *diagrama de classe* que fornece uma representação visual dos elementos de código no projeto. É possível usar diagramas de classe para criar e visualizar classes e outros tipos em um projeto.
 
@@ -37,13 +37,13 @@ O **Designer de Classe** é compatível com os seguintes elementos de código C+
 
 - Classe de modelo
 
-- Estrutura
+- Struct
 
 - Enum
 
 - Macro (exibe a exibição pós-processada da macro)
 
-- DefTipo
+- Typedef
 
 > [!NOTE]
 > Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../../modeling/what-s-new-for-design-in-visual-studio.md).
@@ -56,7 +56,7 @@ O **Designer de Classe** não mantém um controle sobre a localização dos arqu
 
 ### <a name="update-and-performance-issues"></a>Problemas de atualização e de desempenho
 
-Para C++ projetos, pode levar de 30 a 60 segundos para que uma alteração no arquivo de origem apareça no diagrama de classe. Esse atraso também pode fazer com que o **Designer de Classe** gere o erro **Não foi encontrado nenhum tipo na seleção**. Se você receber um erro como esse, clique em **Cancelar** na mensagem de erro e espere até que o elemento de código seja exibido no **Modo de Exibição de Classe**. Depois de fazer isso, o **Designer de Classe** deverá exibir o tipo.
+Para projetos C++, pode levar de 30 a 60 segundos para que uma alteração no arquivo de origem apareça no diagrama da classe. Esse atraso também pode fazer com que o **Designer de Classe** gere o erro **Não foi encontrado nenhum tipo na seleção**. Se você receber um erro como esse, clique em **Cancelar** na mensagem de erro e espere até que o elemento de código seja exibido no **Modo de Exibição de Classe**. Depois de fazer isso, o **Designer de Classe** deverá exibir o tipo.
 
 Se um diagrama de classe não for atualizado com as alterações feitas no código, talvez seja necessário fechar o diagrama e abri-lo novamente.
 
@@ -64,7 +64,7 @@ Se um diagrama de classe não for atualizado com as alterações feitas no códi
 
 O **Designer de Classe** pode não conseguir resolver tipos pelos seguintes motivos:
 
-- O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
+- O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciar referências em um projeto](../managing-references-in-a-project.md).
 
 - O tipo não está no escopo correto e, portanto, o **Designer de Classe** não pode localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
 
@@ -74,11 +74,11 @@ O **Designer de Classe** pode não conseguir resolver tipos pelos seguintes moti
 
 - Verifique se o **Designer de Classe** é compatível com o tipo inserido. Consulte [Limitações de elementos de código C++](#limitations-for-c-code-elements).
 
-O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'** . Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
+O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
 
 - Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.
 
-- Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
+- Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciar referências em um projeto](../managing-references-in-a-project.md).
 
 - Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
 
@@ -88,11 +88,11 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 ## <a name="limitations-for-c-code-elements"></a>Limitações para elementos de código C++
 
-- Quando um C++ projeto é carregado, o **Designer de classe** funciona de maneira somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
+- Quando um projeto C++ é carregado, **o Class Designer** funciona de forma apenas leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
 
-- O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para C++ projetos que são compilados em código gerenciado, **Designer de classe** visualizarão apenas elementos de código que são tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
+- O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para projetos C++ que são compilados em código gerenciado, **o Class Designer** apenas visualizará elementos de código que são tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
 
-- Para C++ projetos, o **Designer de classe** lê apenas a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
+- Para projetos C++, o **Class Designer** lê apenas a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
 
 - Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.
 
@@ -108,11 +108,11 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 - O **Designer de Classe** não pode exibir tipos que são nulos ou derivados de um tipo nulo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
 - [Informações adicionais sobre erros do Designer de Classe](additional-information-about-errors.md)
-- [C++Classes no Designer de Classe](visual-cpp-classes.md)
-- [C++Estruturas no Designer de Classe](visual-cpp-structures.md)
-- [C++Enumerações no Designer de Classe](visual-cpp-enumerations.md)
-- [C++TYPEDEFs em Designer de Classe](visual-cpp-typedefs.md)
+- [C++ Aulas em Class Designer](visual-cpp-classes.md)
+- [Estruturas C++ em Class Designer](visual-cpp-structures.md)
+- [Enumerações C++ em Class Designer](visual-cpp-enumerations.md)
+- [Typedefs C++ em Class Designer](visual-cpp-typedefs.md)

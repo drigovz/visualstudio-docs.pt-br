@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983440"
 ---
 # <a name="customizing-the-build-system"></a>Personalizando o sistema de build
@@ -56,7 +56,7 @@ O arquivo de destino é outro arquivo MSBuild. Este arquivo contém o código MS
 
 Há dois tipos de dados fundamentais no MSBuild: *itens* e *propriedades*, que são explicados em mais detalhes nas seções a seguir.
 
-#### <a name="properties"></a>{1&gt;Propriedades&lt;1}
+#### <a name="properties"></a>Propriedades
 
 As propriedades são pares chave/valor, que são usados para armazenar configurações que afetam a compilação, como opções do compilador.
 
@@ -78,7 +78,7 @@ Por exemplo, o PropertyGroup para um aplicativo de console simples pode ser seme
 
 Propriedades podem ser referidas de expressões que usam a sintaxe `$()`. Por exemplo, `$(Foo)` será avaliado como o valor da propriedade `Foo`. Se a propriedade não foi definida, ela será avaliada como uma cadeia de caracteres vazia, sem erros.
 
-#### <a name="items"></a>{1&gt;Itens&lt;1}
+#### <a name="items"></a>Itens
 
 Os itens fornecem uma maneira de lidar com entradas para o sistema de build, como listas ou conjuntos e geralmente representam arquivos. Cada item tem um *tipo* e uma *especificação* de item, bem como *metadados* arbitrários opcionais. Observe que o MSBuild não funciona em itens individuais, ele obtém todos os itens de um determinado tipo, chamado *conjunto* de itens
 
@@ -104,4 +104,4 @@ Por exemplo, o snippet de código a seguir cria telas de inicialização do iOS.
 Os recursos a seguir podem ser usados para conhecer melhor o MSBuild:
 
 * [Visão geral do MSBuild](/visualstudio/msbuild/msbuild)
-* [Conceitos do MSBuild](/visualstudio/msbuild/msbuild-concepts)
+* [Conceitos msbuild](/visualstudio/msbuild/msbuild-concepts)

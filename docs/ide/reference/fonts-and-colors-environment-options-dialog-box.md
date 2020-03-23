@@ -26,34 +26,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595612"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
-A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Acesse essa caixa de diálogo clicando em **Ferramentas** > **Opções** e, em seguida, selecionando **Ambiente** > **Fontes e Cores**.
+A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar esta caixa de diálogo clicando **Environment** > em **Opções de** > **ferramentas**e, em seguida, selecionando Fontes e**cores do**ambiente .
 
-Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
+As alterações no esquema de cores não são implementadas durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 
 **Mostrar configurações de**
 
-Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.
+Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Depois de selecionar um item dessa lista, você pode personalizar as configurações de cor do item selecionado em **Itens de exibição**.
 
-- **Editor de Texto**
+- **Editor de texto**
 
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.
+     Alterações nas configurações de vídeo de estilo, tamanho, e cor da fonte no Editor de Texto afetam a aparência do texto em seu editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.
 
 - **Impressora**
 
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.
+     Alterações nas configurações de vídeo de estilo, tamanho, e cor da fonte da impressora afetam a aparência do texto impresso em documentos.
 
     > [!NOTE]
-    > Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.
+    > Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contenham caracteres de um byte e caracteres de dois bytes.
 
-- **Preenchimento de Declaração**
+- **Conclusão de instrução**
 
      Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.
 
@@ -63,7 +63,7 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
 
 - **Fonte do ambiente**
 
-     Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**.
+     Altera o estilo e o tamanho da fonte para todos os elementos de interface de usuário do IDE que ainda não possuem uma opção separada nas **configurações show para**.
 
      ::: moniker range="vs-2017"
 
@@ -76,23 +76,23 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.
 
     > [!NOTE]
-    > Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
+    > Alterações no texto de [Todos os itens **do Text Tool Windows]** não têm efeito durante a sessão em que você os faz. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
 
 **Usar Padrões**
 
 Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.
 
-**Fonte (o negrito indica fontes de largura fixa)**
+**Fonte (em negrito indica fontes que têm largura fixa)**
 
-Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.
+Exibe todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.
 
-**Size**
+**Tamanho**
 
 Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.
 
-**Exibir itens**
+**Itens de exibição**
 
-Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.
+Exibe os itens cujas cores de primeiro plano e de plano de fundo você pode modificar.
 
 > [!NOTE]
 > **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.
@@ -101,11 +101,11 @@ Alguns dos itens de exibição incluem:
 
 |Item de exibição|Descrição|
 |------------------|-----------------|
-|**Texto sem Formatação**|Texto no editor.|
+|**Texto sem formatação**|Texto no editor.|
 |**Texto Selecionado**|Texto incluído na seleção atual quando o editor está em foco.|
 |**Texto Selecionado Inativo**|Texto incluído na seleção atual quando o editor sai de foco.|
-|**Margem de Indicadores**|A margem à esquerda do Editor de Códigos em que os ícones de indicador e ponto de interrupção são exibidos.|
-|**Números de Linha**|Números opcionais que aparecem ao lado de cada linha de código|
+|**Margem indicadora**|a margem à esquerda do Editor de Códigos em que os ícones dos pontos de interrupção e de indicador são exibidos.|
+|**Números de linha**|Números opcionais que aparecem ao lado de cada linha de código|
 |**Espaço em branco visível**|Espaços, tabulações e indicadores de quebra automática de linha|
 |**Indicador**|Linhas com indicadores. O **Indicador** só ficará visível se a margem de indicadores estiver desabilitada.|
 |**Correspondência de chaves (Realce)**|Realce que normalmente tem formatação em negrito para chaves correspondentes.|
@@ -126,13 +126,13 @@ Alguns dos itens de exibição incluem:
 |**Retorno de Chamada**|Especifica a cor de realce para instruções ou linhas de origem que indicam pontos de retorno de chamada quando o contexto é alternado para um registro de ativação não superior durante a depuração.|
 |**Campo dependente de snippet de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
 |**Campo de Snippet de Código**|Campo editável quando um snippet de código está ativo.|
-|**Texto Recolhível**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
+|**Texto dobrável**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
 |**Comentário**|Comentários sobre o código.|
 |**Erro do Compilador**|Rabiscos azuis no editor que indicam um erro do compilador.|
 |**Área Sem Alcance de Cobertura**|Código que não foi coberto por um teste de unidade.|
 |**Área Com Alcance de Cobertura Parcial**|Código que foi coberto parcialmente por um teste de unidade.|
 |**Área de Cobertura Alcançada**|Código que foi coberto completamente por um teste de unidade.|
-|**Comentário CSS**|Um comentário em folhas de estilos em cascata. Por exemplo:<br /><br /> /* comentário \*/|
+|**Comentário CSS**|Um comentário em folhas de estilos em cascata. Por exemplo: <br /><br /> /* comentário \*/|
 |**Palavra-chave CSS**|Palavras-chave na folha de estilos em cascata.|
 |**Nome da Propriedade CSS**|O nome de uma propriedade, como Tela de Fundo.|
 |**Valor da Propriedade CSS**|O valor atribuído a uma propriedade, como azul.|
@@ -149,14 +149,14 @@ Alguns dos itens de exibição incluem:
 |**Texto de Desmontagem**|A cor do texto usado para exibir dados e códigos de operação dentro da janela **Desmontagem**.|
 |**Código Excluído**|Código que não deve ser compilado, de acordo com uma diretiva de pré-processador condicional como `#if`.|
 |**Identificador**|Identificadores no código, como nomes de classes, nomes de métodos e nomes de variáveis.|
-|**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
+|**Palavra**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|
-|**Dados da Memória**|A cor do texto usada para exibir dados dentro da janela **Memória**.|
+|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória.**|
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|
 |**Número**|Um número no código que representa um valor numérico real.|
 |**Operador**|Operadores, como +, - e !=.|
-|**Outro Erro**|Outros tipos de erro que não são cobertos por outros rabiscos de erro. Atualmente, inclui edições rudimentares em Editar e Continuar.|
+|**Outro erro**|Outros tipos de erro que não são cobertos por outros rabiscos de erro. Atualmente, inclui edições rudimentares em Editar e Continuar.|
 |**Palavra-chave do Pré-processador**|Palavras-chave usadas pelo pré-processador, como #include.|
 |**Região Somente Leitura**|Código que não pode ser editado. Por exemplo, código exibido na janela Exibição de Definição de Código ou código que não pode ser modificado durante Editar e Continuar.|
 |**Tela de fundo de refatoração**|Cor da tela de fundo da caixa de diálogo **Visualizar Alterações**.|
@@ -164,12 +164,12 @@ Alguns dos itens de exibição incluem:
 |**Campo dependente de refatoração**|Cor das referências do elemento a ser refatorado na caixa de diálogo **Visualizar Alterações**.|
 |**Dados do Registro**|A cor do texto usado para exibir dados dentro da janela **Registros**.|
 |**NAT do Registro**|A cor do texto usado para exibir dados e objetos não reconhecidos dentro da janela **Registros**.|
-|**Marcação Inteligente**|Usado para indicar a estrutura de tópicos quando marcações inteligentes são invocadas.|
+|**Tag inteligente**|Usado para indicar a estrutura de tópicos quando marcações inteligentes são invocadas.|
 |**Marcador DML SQL**|Aplica-se ao editor de Transact-SQL. Por padrão, instruções DML neste editor são marcadas com uma caixa delimitadora azul.|
 |**Código Obsoleto**|Código obsoleto que aguarda atualização. Em alguns casos, Editar e Continuar não pode aplicar alterações de código imediatamente, mas os aplicará mais tarde enquanto você continua a depuração. Isso ocorre se você editar uma função que deve chamar a função que está em execução ou se você adicionar mais de 64 bytes de novas variáveis a uma função em espera na pilha de chamadas. Quando isso acontece, o depurador exibe uma caixa de diálogo "Aviso de Código Obsoleto", e o código obsoleto continua sendo executado até que a função em questão termine e seja chamada novamente. Editar e Continuar aplica as alterações de código nesse momento.|
 |**Cadeia de caracteres**|Literais de cadeia de caracteres.|
-|**Cadeia de caracteres (C# @ Textual)**|Literais de cadeia de caracteres em C# que são interpretadas de forma textual. Por exemplo:<br /><br /> @"x"|
-|**Erro de Sintaxe**|Erros de análise.|
+|**Cadeia de caracteres (C# @ Textual)**|Literais de cadeia de caracteres em C# que são interpretadas de forma textual. Por exemplo: <br /><br /> @"x"|
+|**Erro de sintaxe**|Erros de análise.|
 |**Atalho da Lista de Tarefas**|Se um atalho de **Lista de Tarefas** for adicionado a uma linha e a margem de indicadores for desabilitada, a linha será realçada.|
 |**Tracepoint (Desabilitado)**|Não usado.|
 |**Tracepoint (Habilitado)**|Especifica a cor de realce para instruções ou linhas que contêm tracepoints simples. Essa opção é aplicável somente se tracepoints no nível da instrução estiverem ativos ou se a opção **Realçar a linha de origem inteira para pontos de interrupção e a declaração atual** for selecionada em [Geral, Depuração, caixa de diálogo Opções](../../debugger/general-debugging-options-dialog-box.md).|
@@ -210,7 +210,7 @@ Alguns dos itens de exibição incluem:
 
 **Primeiro plano do item**
 
-Lista as cores disponíveis que você pode escolher para o primeiro plano do item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor de primeiro plano do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
+Exibe as cores disponíveis que você pode escolher para o primeiro plano do item selecionado em **Itens de exibição**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor de primeiro plano do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
 **Automático**
 
@@ -225,11 +225,11 @@ A cor exibida para o item na primeira vez que você abre o Visual Studio. Clicar
 Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.
 
 > [!NOTE]
-> Sua capacidade de definir cores personalizadas pode ser limitada pelas configurações de cor de exibição do computador. Por exemplo, se o computador estiver configurado para exibir 256 cores e você selecionar uma cor personalizada na caixa de diálogo **Cor**, o IDE assume como padrão a **Cor básica** mais próxima disponível e exibe a cor preta na caixa de visualização **Cor**.
+> Sua capacidade de definir cores personalizadas pode ser limitada pelas configurações de cor de vídeo do seu computador. Por exemplo, se o computador estiver configurado para exibir 256 cores e você selecionar uma cor personalizada na caixa de diálogo **Cor**, o IDE assume como padrão a **Cor básica** mais próxima disponível e exibe a cor preta na caixa de visualização **Cor**.
 
-**Tela de fundo do item**
+**Plano de fundo do item**
 
-Fornece uma paleta de cores na qual você pode escolher uma cor da tela de fundo para o item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
+Fornece uma paleta de cores na qual você pode escolher uma cor da tela de fundo para o item selecionado em **Itens de exibição**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
 **Automático**
 
@@ -251,7 +251,7 @@ Selecione esta opção para exibir o texto de **Itens de exibição** selecionad
 
 Exibe uma amostra do esquema de cores, tamanho e estilo da fonte de **Mostrar configurações de** e **Itens de exibição** selecionados. É possível usar essa caixa para visualizar os resultados quando você testa diferentes opções de formatação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

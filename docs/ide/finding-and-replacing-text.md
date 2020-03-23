@@ -31,15 +31,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590339"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
-Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** ou **Ctrl**+**Shift**+**H**). Localize e substitua também apenas *algumas* instâncias de um padrão usando a *[seleção de vários sinais de interpolação](#multi-caret-selection)* .
+Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** ou **Ctrl**+**Shift**+**H**). Localize e substitua também apenas *algumas* instâncias de um padrão usando a *[seleção de vários sinais de interpolação](#multi-caret-selection)*.
 
 > [!TIP]
 > Se você está renomeando os símbolos de código, como variáveis e métodos, é melhor *[refatorá-los](../ide/reference/rename.md)* em vez de usar o recurso Localizar e Substituir. A refatoração é inteligente e reconhece o escopo, enquanto o recurso Localizar e Substituir substitui cegamente todas as instâncias.
@@ -53,8 +53,8 @@ A funcionalidade Localizar e Substituir está disponível no editor, em algumas 
 
 ## <a name="find-and-replace-control"></a>Controle Localizar e Substituir
 
-- Pressione **Ctrl**+**F** como um atalho para *localizar* uma cadeia de caracteres no arquivo atual.
-- Pressione **Ctrl**+**H** como um atalho para *localizar e substituir* uma cadeia de caracteres no arquivo atual.
+- Pressione **Ctrl**+**F** como um atalho para *encontrar* uma seqüência no arquivo atual.
+- Pressione **Ctrl**+**H** como um atalho para encontrar *e substituir* uma string no arquivo atual.
 
 O controle **Localizar e Substituir** aparece no canto superior direito da janela do editor de código. Ele realça imediatamente todas as ocorrências da cadeia de caracteres de pesquisa fornecida no documento atual. Você pode navegar de uma ocorrência para outra escolhendo o botão **Localizar próximo** ou o botão **Localizar anterior** no controle de pesquisa.
 
@@ -62,18 +62,18 @@ O controle **Localizar e Substituir** aparece no canto superior direito da janel
 
 Você pode acessar opções de substituição escolhendo o botão ao lado da caixa de texto **Localizar**. Para fazer uma substituição por vez, escolha o botão **Substituir próximo** ao lado da caixa de texto **Substituir**. Para substituir todas as correspondências, escolha o botão **Substituir tudo**.
 
-Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)** .
+Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)**.
 
 ### <a name="search-tool-windows"></a>Janelas de ferramentas de pesquisa
 
 Use o controle **Localizar** em janelas de texto ou de código, como janelas **Saída** e janelas **Localizar Resultados** selecionando **Editar** > **Localizar e Substituir** ou pressionando **Ctrl+F**.
 
-Uma versão do controle **Localizar** também está disponível em algumas janelas de ferramentas. Por exemplo, você pode filtrar a lista de controles na janela **Caixa de Ferramentas** inserindo o texto na caixa de pesquisa. Outras janelas de ferramentas que permitem pesquisar seu conteúdo incluem o **Gerenciador de Soluções**, a janela **Propriedades** e o **Team Explorer**.
+Uma versão do controle **Find** também está disponível em algumas janelas de ferramentas. Por exemplo, você pode filtrar a lista de controles na janela **Caixa de Ferramentas** inserindo o texto na caixa de pesquisa. Outras janelas de ferramentas que permitem pesquisar seu conteúdo incluem o **Gerenciador de Soluções**, a janela **Propriedades** e o **Team Explorer**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Localizar nos arquivos e substituir nos arquivos
 
-- Pressione **Ctrl**+**Shift**+**F** como um atalho para *localizar* uma cadeia de caracteres em vários arquivos.
-- Pressione **Ctrl**+**Shift**+**H** como um atalho para *localizar e substituir* uma cadeia de caracteres em vários arquivos.
+- Pressione **Ctrl**+**Shift**+**F** como um atalho para *encontrar* uma seqüência em vários arquivos.
+- Pressione **Ctrl**+**Shift**+**H** como um atalho para encontrar *e substituir* uma seqüência em vários arquivos.
 
 **Localizar/substituir em Arquivos** funciona como o controle **Localizar e Substituir**, mas você pode definir um escopo para a pesquisa. Você pode pesquisar não apenas o arquivo atual aberto no editor, mas também todos os documentos abertos, toda a solução, o projeto atual e conjuntos de pastas selecionados. Você também pode pesquisar por extensão de nome de arquivo. Para acessar a caixa de diálogo **Localizar/Substituir em Arquivos**, selecione **Localizar e Substituir** no menu **Editar** (ou pressione **Ctrl**+**Shift**+**F**).
 
@@ -85,14 +85,14 @@ Quando você escolhe **Localizar tudo**, uma janela **Localizar Resultados** é 
 
 ### <a name="create-custom-search-folder-sets"></a>Criar conjuntos de pastas de pesquisa personalizados
 
-Você pode definir o escopo da pesquisa escolhendo o botão **Escolher Pastas de Pesquisa** (ele se parece com **...** ) ao lado da caixa **Examinar**. Na caixa de diálogo **Escolher Pastas de Pesquisa**, especifique um conjunto de pastas a ser pesquisado e salve a especificação para reutilizá-la mais tarde.
+Você pode definir um escopo de pesquisa escolhendo o botão **Escolher pastas de pesquisa** (parece... ) ao lado da caixa Olhar **na** caixa. **...** Na caixa de diálogo **Escolher Pastas de Pesquisa**, especifique um conjunto de pastas a ser pesquisado e salve a especificação para reutilizá-la mais tarde.
 
 > [!TIP]
 > Se você mapeou a unidade de um computador remoto para o computador local, especifique as pastas a serem pesquisadas no computador remoto.
 
 ### <a name="create-custom-component-sets"></a>Criar conjuntos de componentes personalizados
 
-Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar componentes COM ou .NET instalados, projetos do Visual Studio incluídos em sua solução ou qualquer assembly ou biblioteca de tipos ( *.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
+Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar componentes .NET ou COM instalados, projetos do Visual Studio incluídos em sua solução, ou qualquer biblioteca de montagem ou tipo (*.dll*, *.tlb*, *.olb,* *.exe,* ou *.ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
 
 ## <a name="multi-caret-selection"></a>Seleção de vários cursores
 
@@ -116,15 +116,15 @@ Para selecionar vários cursores, clique ou faça a primeira seleção de texto 
 
 Use as seguintes teclas e ações para os comportamentos da seleção de vários cursores:
 
-|Atalho|Action|
+|Atalho|Ação|
 |-|-|
-|**Ctrl**+**Alt** e clique|Adicionar um cursor secundário|
-|**Ctrl**+**Alt** e clicar duas vezes|Adicionar uma seleção de palavra secundária|
-|**Ctrl**+**Alt** e clicar e arrastar|Adicionar uma seleção secundária|
-|**Shift**+**Alt**+ **.**|Adicionar o próximo texto correspondente como uma seleção|
-|**Ctrl**+**Shift**+**Alt**+ **,**|Adicionar todo o texto correspondente como seleções|
-|**Shift**+**Alt**+ **,**|Remover a última ocorrência selecionada|
-|**Ctrl**+**Shift**+**Alt**+ **.**|Ignorar a próxima ocorrência de correspondência|
+|**Ctrl**+**Alt** + clique|Adicionar um cursor secundário|
+|**Ctrl**+**Alt** + duplo clique|Adicionar uma seleção de palavra secundária|
+|**Ctrl**+**Alt** + clique + arraste|Adicionar uma seleção secundária|
+|**Shift**+**Alt**+**.**|Adicionar o próximo texto correspondente como uma seleção|
+|**Ctrl**+**Shift**+**Alt,**+**,**|Adicionar todo o texto correspondente como seleções|
+|**Shift**+**Alt,**+**,**|Remover a última ocorrência selecionada|
+|**Ctrl**+**Shift**+**Alt**+**.**|Ignorar a próxima ocorrência de correspondência|
 |**Alt** e clique|Adicionar uma seleção de caixa|
 |**Esc** ou clique|Limpar todas as seleções|
 
@@ -132,7 +132,7 @@ Alguns dos comandos também estão disponíveis no menu **Editar**, em **Vários
 
 ![Submenu Vários Cursores no Visual Studio](media/edit-menu-multiple-carets.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refatorar um código no Visual Studio](../ide/refactoring-in-visual-studio.md)

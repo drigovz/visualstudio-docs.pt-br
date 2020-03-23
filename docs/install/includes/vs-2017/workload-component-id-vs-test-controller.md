@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: fa0b776cd2f99ec2a5b648cdcad16fe046bf570d
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76159630"
 ---
 ## <a name="test-controller"></a>Controlador de teste
@@ -25,14 +25,14 @@ ms.locfileid: "76159630"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 
-ID do componente | Name | Versão do | Tipo de dependência
+ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Principais recursos do Test Controller | 15.6.27309.0 | Necessário
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Principais recursos do Test Controller | 15.6.27309.0 | Obrigatório
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
 Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
 
-ID do componente | Name | Versão do
+ID do componente | Nome | Versão
 --- | --- | ---
-N/D | N/D | N/D
+n/d | n/d | n/d

@@ -5,18 +5,18 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2020
+ms.date: 03/16/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e82ab35143a4987df1340fd75f0125c955e6c3d
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: d41ccfc4092795cdf942d42910cfe0a33baa5593
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235061"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437629"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -26,11 +26,15 @@ ms.locfileid: "78235061"
 
 A tabela a seguir lista os números de build e as datas de lançamento do Visual Studio 2019 até o momento.
 
-| **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
+| **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.5.0 | Preview 5 | 2 de março de 2020 | 16.5.29827.131 |
+| 16.6.0 | Preview 1 | 16 de março de 2020 | 16.6.29911.98 |
+| 16.5.0 | Versão | 16 de março de 2020 | 16.5.29911.84 |
+| 16.4.6 | Versão | 10 de março de 2020  | 16.4.29905.134 |
+| 16.0.12 | Versão | 10 de março de 2020 | 16.0.28803.697 |
+| 16.5.0 | Versão prévia 5 | 2 de março de 2020 | 16.5.29827.131 |
 | 16.5.0 | Visualização 4 | 25 de fevereiro de 2020 | 16.5.29820.132 |
-| 16.5.0 | Preview 3 | 19 de fevereiro de 2020 | 16.5.29814.53 |
+| 16.5.0 | Versão Prévia 3 | 19 de fevereiro de 2020 | 16.5.29814.53 |
 | 16.4.5 | Versão | 11 de fevereiro de 2020 | 16.4.29806.167 |
 | 16.4.4 | Versão | 31 de janeiro de 2020 | 16.4.29728.190 |
 | 16.5.0 | Preview 2 | 22 de janeiro de 2020 | 16.5.29721.120 |
@@ -43,11 +47,11 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.4.0 | Versão | 3 de dezembro de 2019 | 16.4.29519.181 |
 | 16.4.0 | Versão prévia 6 | 21 de novembro de 2019 | 16.4.29519.161 |
 | 16.3.10 | Versão | 20 de novembro de 2019 | 16.3.29519.87 |
-| 16.4.0 | Preview 5 | 14 de novembro de 2019 | 16.4.29512.175 |
+| 16.4.0 | Versão prévia 5 | 14 de novembro de 2019 | 16.4.29512.175 |
 | 16.3.9 | Versão | 12 de novembro de 2019 | 16.3.29509.3 |
 | 16.4.0 | Visualização 4 | 6 de novembro de 2019 | 16.4.29505.145 |
 | 16.3.8 | Versão | 5 de novembro de 2019 | 16.3.29503.13 |
-| 16.4.0 | Preview 3 | 4 de novembro de 2019 | 16.4.29430.225 |
+| 16.4.0 | Versão Prévia 3 | 4 de novembro de 2019 | 16.4.29430.225 |
 | 16.3.7 | Versão | 29 de outubro de 2019 | 16.3.29424.173 |
 | 16.3.6 | Versão | 22 de outubro de 2019 | 16.3.29418.71 |
 | 16.3.5 | Versão | 15 de outubro de 2019 | 16.3.29411.108 |
@@ -63,7 +67,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.2.5 | Versão | 10 de setembro de 2019 | 16.2.29306.81 |
 | 16.0.8 | Versão | 10 de setembro de 2019 | 16.0.28803.584 |
 | 16.2.4 | Versão | 5 de setembro de 2019 | 16.2.29230.47 |
-| 16.3.0 | Preview 3 | 4 de setembro de 2019 | 16.3.29230.61 |
+| 16.3.0 | Versão Prévia 3 | 4 de setembro de 2019 | 16.3.29230.61 |
 | 16.2.3 | Versão | 20 de agosto de 2019 | 16.2.29215.179 |
 | 16.2.2 | Versão | 13 de agosto de 2019 | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 de agosto de 2019 | 16.3.29209.152 |
@@ -76,7 +80,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.0.6 | Versão | 9 de julho de 2019 | 16.0.28803.540 |
 | 16.1.5 | Versão | 2 de julho de 2019 | 16.1.29025.244 |
 | 16.1.4 | Versão | 25 de junho de 2019 | 16.1.29020.237 |
-| 16.2.0 | Preview 3 | 25 de junho de 2019 | 16.2.29021.104 |
+| 16.2.0 | Versão Prévia 3 | 25 de junho de 2019 | 16.2.29021.104 |
 | 16.1.3 | Versão | 11 de junho de 2019 | 16.1.29009.5 |
 | 16.2.0 | Preview 2 | 11 de junho de 2019 | 16.2.29006.145 |
 | 16.0.5 | Versão | 11 de junho de 2019 | 16.0.28803.514 |
@@ -85,7 +89,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.1.0 | Versão | 21 de maio de 2019 | 16.1.28917.181 |
 | 16.2.0 | Preview 1 | 21 de maio de 2019 | 16.2.28917.182 |
 | 16.0.4 | Versão | 14 de maio de 2019 | 16.0.28803.452 |
-| 16.1.0 | Preview 3 | 6 de maio de 2019 | 16.1.28902.138 |
+| 16.1.0 | Versão Prévia 3 | 6 de maio de 2019 | 16.1.28902.138 |
 | 16.0.3 | Versão | 30 de abril de 2019 | 16.0.28803.352 |
 | 16.1.0 | Preview 2 | 23 de abril de 2019 | 16.1.28822.285 |
 | 16.0.2 | Versão | 18 de abril de 2019 | 16.0.28803.202 |
@@ -93,7 +97,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.0.1 | Versão | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.1 | Preview 1 | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.0 | Versão | 2 de abril de 2019 | 16.0.28729.10 |
-| 16.0.0 | Preview 5 | 2 de abril de 2019 | 16.0.28729.10 |
+| 16.0.0 | Versão prévia 5 | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | RC.4 (versão Release Candidate 4) | 26 de março de 2019 | 16.0.28721.148 |
 | 16.0.0 | Versão prévia 4.4 | 26 de março de 2019 | 16.0.28721.148 |
 | 16.0.0 | RC.3 (versão Release Candidate 3) | 19 de março de 2019 | 16.0.28714.193 |
@@ -106,7 +110,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 | 16.0.0 | Preview 4.1 | 5 de março de 2019 | 16.0.28701.123 |
 | 16.0.0 | RC (versão Release Candidate) | 27 de fevereiro de 2019 | 16.0.28625.133 |
 | 16.0.0 | Visualização 4 | 27 de fevereiro de 2019 | 16.0.28625.133 |
-| 16.0.0 | Preview 3 | 13 de fevereiro de 2019 | 16.0.28608.199 |
+| 16.0.0 | Versão Prévia 3 | 13 de fevereiro de 2019 | 16.0.28608.199 |
 | 16.0.0 | Versão prévia 2.2 | 5 de fevereiro de 2019 | 16.0.28602.52 |
 | 16.0.0 | Preview 2.1 | 31 de janeiro de 2019 | 16.0.28529.54 |
 | 16.0.0 | Preview 2 | 23 de janeiro de 2019 | 16.0.28522.59 |
@@ -124,8 +128,9 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 A tabela a seguir relaciona os números de build e as datas de lançamento do Visual Studio 2017 até o momento.
 
-| **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
+| **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.21 | Versão | 10 de março de 2020 | 15.9.28307.1064 |
 | 15.9.20 | Versão | 11 de fevereiro de 2020 | 15.9.28307.1033 |
 | 15.9.19 | Versão | 14 de janeiro de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Versão | 11 de dezembro de 2019 | 15.0.26228.102 |
@@ -156,150 +161,150 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.9.2 | Versão | 19 de novembro de 2018 | 15.9.28307.108 |
 | 15.9.1 | Versão | 15 de novembro de 2018 | 15.9.28307.105 |
 | 15.9.0 | Versão | 13 de novembro de 2018 | 15.9.28307.53 |
-| 15.9.0 Versão prévia 6 | {1&gt;Preview&lt;1} | 13 de novembro de 2018 | 15.9.28307.53 |
-| 15.9.0 Versão prévia 5 | {1&gt;Preview&lt;1} | 6 de novembro de 2018 | 15.9.28302.56 |
+| 15.9.0 Versão prévia 6 | Visualização | 13 de novembro de 2018 | 15.9.28307.53 |
+| 15.9.0 Versão prévia 5 | Visualização | 6 de novembro de 2018 | 15.9.28302.56 |
 | 15.8.9 | Versão | 2 de novembro de 2018 | 15.8.28010.2050 |
 | 15.8.8 | Versão | 24 de outubro de 2018 | 15.8.28010.2048 |
-| 15.9.0 Preview 4 | {1&gt;Preview&lt;1} | 23 de outubro de 2018 | 15.9.28219.56 |
+| 15.9.0 Preview 4 | Visualização | 23 de outubro de 2018 | 15.9.28219.56 |
 | 15.8.7 | Versão | 10 de outubro de 2018 | 15.8.28010.2046 |
 | 15.0.19 | Versão | 10 de outubro de 2018 | 15.0.26228.57 |
-| 15.9.0 Preview 3 | {1&gt;Preview&lt;1} | 2 de outubro de 2018 | 15.9.28128.56 |
+| 15.9.0 Preview 3 | Visualização | 2 de outubro de 2018 | 15.9.28128.56 |
 | 15.8.6 | Versão | 2 de outubro de 2018 | 15.8.28010.2041 |
 | 15.8.5 | Versão | 20 de setembro de 2018 | 15.8.28010.2036 |
-| 15.9.0 Preview 2 | {1&gt;Preview&lt;1} | 11 de setembro de 2018 | 15.9.28107.0 |
+| 15.9.0 Preview 2 | Visualização | 11 de setembro de 2018 | 15.9.28107.0 |
 | 15.8.4 | Versão | 11 de setembro de 2018 | 15.8.28010.2026 |
 | 15.8.3 | Versão | 6 de setembro de 2018 | 15.8.28010.2019 |
 | 15.8.2 | Versão | 28 de Agosto de 2018 | 15.8.28010.2016 |
 | 15.0.18 | Versão | 28 de Agosto de 2018 | 15.0.26228.52 |
-| 15.9.0 versão prévia 1 | {1&gt;Preview&lt;1} | 20 de agosto de 2018 | 15.9.28016.0 |
+| 15.9.0 versão prévia 1 | Visualização | 20 de agosto de 2018 | 15.9.28016.0 |
 | 15.8.1 | Versão | 17 de agosto de 2018 | 15.8.28010.2003 |
 | 15.8.0 | Versão | 14 de agosto de 2018 | 15.8.28010.0 |
 | 15.0.17 | Versão | 14 de agosto de 2018 | 15.0.26228.49 |
 | 15.7.6 | Versão | 2 de agosto de 2018 | 15.7.27703.2047 |
 | 15.0.16 | Versão | 2 de agosto de 2018 | 15.0.26228.48 |
-| 15.8.0 Versão Prévia 5 | {1&gt;Preview&lt;1} | 26 de julho de 2018 | 15.8.27924.0 |
-| 15.8.0 Versão Prévia 4 | {1&gt;Preview&lt;1} | 10 de julho de 2018 | 15.8.27906.1 |
+| 15.8.0 Versão Prévia 5 | Visualização | 26 de julho de 2018 | 15.8.27924.0 |
+| 15.8.0 Versão Prévia 4 | Visualização | 10 de julho de 2018 | 15.8.27906.1 |
 | 15.7.5 | Versão | 10 de julho de 2018 | 15.7.27703.2042 |
 | 15.0.15 | Versão | 10 de julho de 2018 | 15.0.26228.43 |
-| 15.8.0 Versão Prévia 3 | {1&gt;Preview&lt;1} | 26 de junho de 2018 | 15.8.27825.0 |
+| 15.8.0 Versão Prévia 3 | Visualização | 26 de junho de 2018 | 15.8.27825.0 |
 | 15.7.4 | Versão | 18 de junho de 2018 | 15.7.27703.2035 |
 | 15.7.3 | Versão | 31 de maio de 2018 | 15.7.27703.2026 |
 | 15.0.14 | Versão | 31 de maio de 2018 | 15.0.26228.37 |
-| 15.8.0 Versão Prévia 2 | {1&gt;Preview&lt;1} | 31 de maio de 2018 | 15.8.27729.1 |
+| 15.8.0 Versão Prévia 2 | Visualização | 31 de maio de 2018 | 15.8.27729.1 |
 | 15.7.2 | Versão | 21 de maio de 2018 | 15.7.27703.2018 |
-| 15.8.0 Versão Prévia 1 | {1&gt;Preview&lt;1} | 8 de maio de 2018 | 15.8.27705.2000 |
+| 15.8.0 Versão Prévia 1 | Visualização | 8 de maio de 2018 | 15.8.27705.2000 |
 | 15.7.1 | Versão | 8 de maio de 2018 | 15.7.27703.2000 |
-| 15.8.0 Versão Prévia 1 | {1&gt;Preview&lt;1} | 7 de maio de 2018 | 15.8.27705.0 |
+| 15.8.0 Versão Prévia 1 | Visualização | 7 de maio de 2018 | 15.8.27705.0 |
 | 15.7.0 | Versão | 7 de maio de 2018 | 15.7.27703.1 |
-| 15.7.0 Versão Prévia 6 | {1&gt;Preview&lt;1} | 3 de maio de 2018 | 15.7.27701.1 |
-| 15.7.0 Versão Prévia 5 | {1&gt;Preview&lt;1} | 26 de abril de 2018 | 15.7.27625.0 |
+| 15.7.0 Versão Prévia 6 | Visualização | 3 de maio de 2018 | 15.7.27701.1 |
+| 15.7.0 Versão Prévia 5 | Visualização | 26 de abril de 2018 | 15.7.27625.0 |
 | 15.6.7 | Versão | 26 de abril de 2018 | 15.6.27428.2043 |
 | 15.0.13 | Versão | 26 de abril de 2018 | 15.0.26228.31 |
-| 15.7.0 Versão Prévia 4 | {1&gt;Preview&lt;1} | 18 de abril de 2018 | 15.7.27617.1 |
+| 15.7.0 Versão Prévia 4 | Visualização | 18 de abril de 2018 | 15.7.27617.1 |
 | 15.6.6 | Versão | 10 de abril de 2018 | 15.6.27428.2037 |
 | 15.0.12 | Versão | 10 de abril de 2018 | 15.0.26228.30 |
-| 15.7.0 Versão Prévia 3 | {1&gt;Preview&lt;1} | 9 de abril de 2018 | 15.7.27604.0 |
+| 15.7.0 Versão Prévia 3 | Visualização | 9 de abril de 2018 | 15.7.27604.0 |
 | 15.6.5 | Versão | 4 de abril de 2018 | 15.6.27428.2027 |
 | 15.6.4 | Versão | 22 de março de 2018 | 15.6.27428.2015 |
-| 15.7.0 Versão Prévia 2 | {1&gt;Preview&lt;1} | 21 de março de 2018 | 15.7.27520.0 |
+| 15.7.0 Versão Prévia 2 | Visualização | 21 de março de 2018 | 15.7.27520.0 |
 | 15.6.3 | Versão | 19 de março de 2018 | 15.6.27428.2011 |
-| 15.7.0 Versão Prévia 1 | {1&gt;Preview&lt;1} | 13 de março de 2018 | 15.7.27512.0 |
+| 15.7.0 Versão Prévia 1 | Visualização | 13 de março de 2018 | 15.7.27512.0 |
 | 15.6.2 | Versão | 13 de março de 2018 | 15.6.27428.2005 |
 | 15.0.11 | Versão | 13 de março de 2018 | 15.0.26228.29 |
 | 15.6.1 | Versão | 8 de março de 2018 | 15.6.27428.2002 |
-| 15.6.1 Versão Prévia 1 | {1&gt;Preview&lt;1} | 8 de março de 2018 | 15.6.27428.2002 |
+| 15.6.1 Versão Prévia 1 | Visualização | 8 de março de 2018 | 15.6.27428.2002 |
 | 15.6.0 | Versão | 5 de março de 2018 | 15.6.27428.1 |
-| 15.6.0 Versão Prévia 7 | {1&gt;Preview&lt;1} | 2 de março de 2018 | 15.6.27428.1 |
-| 15.6.0 Versão Prévia 6 | {1&gt;Preview&lt;1} | 23 de fevereiro de 2018 | 15.6.27421.1 |
+| 15.6.0 Versão Prévia 7 | Visualização | 2 de março de 2018 | 15.6.27428.1 |
+| 15.6.0 Versão Prévia 6 | Visualização | 23 de fevereiro de 2018 | 15.6.27421.1 |
 | 15.0.10 | Versão | 21 de fevereiro de 2018 | 15.0.26228.28 |
 | 15.5.7 | Versão | 20 de fevereiro de 2018 | 15.0.27130.2036 |
-| 15.6.0 Versão Prévia 5 | {1&gt;Preview&lt;1} | 14 de fevereiro de 2018 | 15.6.27413.0 |
-| 15.6.0 Versão Prévia 4 | {1&gt;Preview&lt;1} | 7 de fevereiro de 2018 | 15.6.27406.0 |
+| 15.6.0 Versão Prévia 5 | Visualização | 14 de fevereiro de 2018 | 15.6.27413.0 |
+| 15.6.0 Versão Prévia 4 | Visualização | 7 de fevereiro de 2018 | 15.6.27406.0 |
 | 15.0.9 | Versão | 2 de fevereiro de 2018 | 15.0.26228.23 |
 | 15.5.6 | Versão | 29 de janeiro de 2018 | 15.0.27130.2027 |
 | 15.5.5 | Versão | 25 de janeiro de 2018 | 15.0.27130.2026 |
-| 15.6.0 Versão Prévia 3 | {1&gt;Preview&lt;1} | 25 de janeiro de 2018 | 15.6.27323.2 |
+| 15.6.0 Versão Prévia 3 | Visualização | 25 de janeiro de 2018 | 15.6.27323.2 |
 | 15.5.4 | Versão | 16 de janeiro de 2018 | 15.0.27130.2024 |
-| 15.6.0 Versão Prévia 2 | {1&gt;Preview&lt;1} | 10 de janeiro de 2018 | 15.6.27309.0 |
+| 15.6.0 Versão Prévia 2 | Visualização | 10 de janeiro de 2018 | 15.6.27309.0 |
 | 15.5.3 | Versão |  9 de janeiro de 2018 | 15.0.27130.2020 |
 | 15.0.8 | Versão |  9 de janeiro de 2018 | 15.0.26228.21 |
 | 15.5.2 | Versão | 14 de dezembro de 2017 | 15.0.27130.2010 |
-| 15.6.0 Versão Prévia 1 | {1&gt;Preview&lt;1} | 14 de dezembro de 2017 | 15.6.27205.2004 |
+| 15.6.0 Versão Prévia 1 | Visualização | 14 de dezembro de 2017 | 15.6.27205.2004 |
 | 15.5.1 | Versão | 7 de dezembro de 2017 | 15.0.27130.2003 |
-| 15.6.0 Versão Prévia 1 | {1&gt;Preview&lt;1} | 7 de dezembro de 2017 | 15.6.27205.0 |
+| 15.6.0 Versão Prévia 1 | Visualização | 7 de dezembro de 2017 | 15.6.27205.0 |
 | 15.0.7 | Versão | 6 de dezembro de 2017 | 15.0.26228.18 |
 | 15.5.0 | Versão | 4 de dezembro de 2017 | 15.0.27130.0 |
-| 15.5.0 Versão Prévia 5 | {1&gt;Preview&lt;1} | 30 de novembro de 2017 | 15.0.27128.1 |
+| 15.5.0 Versão Prévia 5 | Visualização | 30 de novembro de 2017 | 15.0.27128.1 |
 | 15.4.5 | Versão | 27 de novembro de 2017 | 15.0.27004.2010 |
-| 15.5.0 Versão Prévia 4 | {1&gt;Preview&lt;1} | 14 de novembro de 2017 | 15.0.27110.0 |
+| 15.5.0 Versão Prévia 4 | Visualização | 14 de novembro de 2017 | 15.0.27110.0 |
 | 15.4.4 | Versão | 14 de novembro de 2017 | 15.0.27004.2009 |
 | 15.0.6 | Versão | 14 de novembro de 2017 | 15.0.26228.17 |
 | 15.4.3 | Versão | 8 de novembro de 2017 | 15.0.27004.2008 |
-| 15.5.0 Versão Prévia 3 | {1&gt;Preview&lt;1} | 6 de novembro de 2017 | 15.0.27102.0 |
+| 15.5.0 Versão Prévia 3 | Visualização | 6 de novembro de 2017 | 15.0.27102.0 |
 | 15.4.2 | Versão | 31 de outubro de 2017 | 15.0.27004.2006 |
-| 15.5.0 Versão Prévia 2 | {1&gt;Preview&lt;1} | 23 de outubro de 2017 | 15.0.27019.1 |
+| 15.5.0 Versão Prévia 2 | Visualização | 23 de outubro de 2017 | 15.0.27019.1 |
 | 15.4.1 | Versão | 19 de outubro de 2017 | 15.0.27004.2005 |
-| 15.5 Versão Prévia 1 | {1&gt;Preview&lt;1} | 11 de outubro de 2017 | 15.0.27009.1 |
+| 15.5 Versão prévia 1 | Visualização | 11 de outubro de 2017 | 15.0.27009.1 |
 | 15.4.0 | Versão | 9 de outubro de 2017 | 15.0.27004.2002 |
-| 15.4 Versão Prévia 6 | {1&gt;Preview&lt;1} | 9 de outubro de 2017| 15.0.27004.20002 |
-| 15.4 Versão Prévia 5 | {1&gt;Preview&lt;1} | 6 de outubro de 2017 | 15.0.27004.2000 |
-| 15.4 Versão Prévia 4 | {1&gt;Preview&lt;1} | 2 de outubro de 2017 | 15.0.26929.2 |
-| 15.4 Versão Prévia 3 | {1&gt;Preview&lt;1} | 21 de setembro de 2017 | 15.0.26923.00 |
+| 15.4 Versão prévia 6 | Visualização | 9 de outubro de 2017| 15.0.27004.20002 |
+| 15.4 Versão prévia 5 | Visualização | 6 de outubro de 2017 | 15.0.27004.2000 |
+| 15.4 Versão prévia 4 | Visualização | 2 de outubro de 2017 | 15.0.26929.2 |
+| 15.4 Versão prévia 3 | Visualização | 21 de setembro de 2017 | 15.0.26923.00 |
 | 15.3.5 | Versão | 19 de setembro de 2017 | 15.0.26730.16 |
 | 15.0.5 | Versão | 18 de setembro de 2017 | 15.0.26228.16 |
 | 15.3.4 | Versão | 12 de setembro de 2017 | 15.0.26730.15 |
-| 15.4 Versão Prévia 2 | {1&gt;Preview&lt;1} | 11 de setembro de 2017 | 15.0.26906.1 |
+| 15.4 Versão prévia 2 | Visualização | 11 de setembro de 2017 | 15.0.26906.1 |
 | 15.3.3| Versão | 29 de agosto de 2017 | 15.0.26730.12 |
-| 15.4 Versão Prévia 1 | {1&gt;Preview&lt;1} | 24 de agosto de 2017 | 15.0.26823.01 |
+| 15.4 Versão prévia 1 | Visualização | 24 de agosto de 2017 | 15.0.26823.01 |
 | 15.3.2 | Versão | 22 de agosto de 2017 | 15.0.26730.10 |
 | 15.3.1 | Versão | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.3.1 Versão Prévia 1 | {1&gt;Preview&lt;1} | 18 de agosto de 2017 | 15.0.26730.08 |
+| 15.3.1 Versão prévia 1 | Visualização | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.3.1  | Versão | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.4 Versão Prévia 1 | {1&gt;Preview&lt;1} | 24 de agosto de 2017 | 15.0.26823.1 |
+| 15.4 Versão prévia 1 | Visualização | 24 de agosto de 2017 | 15.0.26823.1 |
 | 15.3.0 | Versão | 14 de agosto de 2017 | 15.0.26730.3 |
-| 15.3 Versão Prévia 7.1 | {1&gt;Preview&lt;1} | 11 de agosto de 2017 | 15.0.26730.3 |
-| 15.3 Versão Prévia 7 | {1&gt;Preview&lt;1} | 1º de agosto de 2017 | 15.0.26730.0 |
-| 15.3 Versão Prévia 6 | {1&gt;Preview&lt;1} | 26 de julho de 2017 | 15.0.26724.1 |
-| 15.3 Versão Prévia 5 | {1&gt;Preview&lt;1} | 24 de julho de 2017 | 15.0.26720.02 |
+| 15.3 Versão prévia 7.1 | Visualização | 11 de agosto de 2017 | 15.0.26730.3 |
+| 15.3 Versão prévia 7 | Visualização | 1 de agosto de 2017 | 15.0.26730.0 |
+| 15.3 Versão prévia 6 | Visualização | 26 de julho de 2017 | 15.0.26724.1 |
+| 15.3 Versão prévia 5 | Visualização | 24 de julho de 2017 | 15.0.26720.02 |
 | 15.2.6  | Versão | 17 de julho de 2017 | 15.0.26430.16 |
-| 15.3 Versão Prévia 4 | {1&gt;Preview&lt;1} | 12 de julho de 2017 | 15.0.26711.1 |
+| 15.3 Versão prévia 4 | Visualização | 12 de julho de 2017 | 15.0.26711.1 |
 | 15.2.5  | Versão | 6 de julho de 2017 | 15.0.26430.15 |
-| 15.3 Versão Prévia 3 | {1&gt;Preview&lt;1} | 26 de junho de 2017 | 15.0.26621.2 |
+| 15.3 Versão prévia 3 | Visualização | 26 de junho de 2017 | 15.0.26621.2 |
 | 15.2.4  | Versão | 21 de junho de 2017 | 15.0.26430.14 |
-| 15.3 Versão Prévia 2.1 | {1&gt;Preview&lt;1} | 20 de junho de 2017 | 15.0.26608.5 |
+| 15.3 Versão prévia 2.1 | Visualização | 20 de junho de 2017 | 15.0.26608.5 |
 | 15.2.3  | Versão | 9 de junho de 2017 | 15.0.26430.13 |
-| 15.3 Versão Prévia 2 | {1&gt;Preview&lt;1} | 8 de junho de 2017 | 15.0.26606.0 |
+| 15.3 Versão prévia 2 | Visualização | 8 de junho de 2017 | 15.0.26606.0 |
 | 15.2.2  | Versão | 30 de maio de 2017 | 15.0.26430.12 |
 | 15.0.4  | Versão | 23 de maio de 2017 | 15.0.26228.13 |
 | 15.2.1  | Versão | 12 de maio de 2017 | 15.0.26430.6 |
-| 15.3 Versão Prévia 1.1 | {1&gt;Preview&lt;1} | 11 de maio de 2017 | 15.0.26510.0 |
-| 15.3 Versão Prévia 1 | {1&gt;Preview&lt;1} | 10 de maio de 2017 | 15.0.26507.0 |
+| 15.3 Versão prévia 1.1 | Visualização | 11 de maio de 2017 | 15.0.26510.0 |
+| 15.3 Versão prévia 1 | Visualização | 10 de maio de 2017 | 15.0.26507.0 |
 | 15.2.0 | Versão | 10 de maio de 2017 | 15.0.26430.4 |
-| 15.2 Versão Prévia 4 | {1&gt;Preview&lt;1} | 3 de maio de 2017 | 15.0.26430.1 |
-| 15.2 Versão Prévia 3 | {1&gt;Preview&lt;1} | 26 de abril de 2017 | 15.0.26424.2 |
-| 15.2 Versão Prévia 2 | {1&gt;Preview&lt;1} | 20 de abril de 2017 | 15.0.26419.1 |
-| 15.2 Versão Prévia 1 | {1&gt;Preview&lt;1} | 17 de abril de 2017 | 15.0.26412.1 |
+| 15.2 Versão prévia 4 | Visualização | 3 de maio de 2017 | 15.0.26430.1 |
+| 15.2 Versão prévia 3 | Visualização | 26 de abril de 2017 | 15.0.26424.2 |
+| 15.2 Versão prévia 2 | Visualização | 20 de abril de 2017 | 15.0.26419.1 |
+| 15.2 Versão prévia 1 | Visualização | 17 de abril de 2017 | 15.0.26412.1 |
 | 15.1.2  | Versão | 17 de abril de 2017 | 15.0.26403.7 |
 | 15.1.1 | Versão | 10 de abril de 2017 | 15.0.26403.3 |
 | 15.1.0 | Versão | 5 de abril de 2017 | 15.0.26403.0 |
 | 15.0.3  | Versão | 31 de março de 2017 | 15.0.26228.12 |
 | 15.0.2 | Versão | 28 de março de 2017 | 15.0.26228.10 |
-| 15.1 Versão Prévia 3 | {1&gt;Preview&lt;1} | 27 de março de 2017 | 15.0.26323.1 |
-| 15.1 Versão Prévia 2 | {1&gt;Preview&lt;1} | 16 de março de 2017 | 15.0.26315.0 |
+| 15.1 Versão prévia 3 | Visualização | 27 de março de 2017 | 15.0.26323.1 |
+| 15.1 Versão prévia 2 | Visualização | 16 de março de 2017 | 15.0.26315.0 |
 | 15.0.1  | Versão | 14 de março de 2017 | 15.0.26228.9 |
-| 15.1 Versão Prévia 1 | {1&gt;Preview&lt;1} | 7 de março de 2017 | 15.0.26304.0 |
+| 15.1 Versão prévia 1 | Visualização | 7 de março de 2017 | 15.0.26304.0 |
 | 15.0.0 | Versão | 7 de março de 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Para saber mais sobre números de build e datas de lançamento da próxima versão do Visual Studio, confira a página [Números de build e datas de lançamento do Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+> Obtenha mais informações sobre números de build e datas de lançamento da próxima versão do Visual Studio na página [Números de build e datas de lançamento do Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
 
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-* [Ritmo de lançamento do Visual Studio](/visualstudio/productinfo/release-rhythm/)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio lança ritmo](/visualstudio/productinfo/release-rhythm/)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)

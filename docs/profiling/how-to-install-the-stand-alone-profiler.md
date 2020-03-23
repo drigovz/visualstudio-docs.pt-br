@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557833"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Como instalar o criador de perfil autônomo
@@ -31,7 +31,7 @@ ms.locfileid: "77557833"
 
 1. Localize o instalador do perfil independente (*vs_standaloneprofiler.exe*) no qual você baixou as ferramentas de desempenho e execute-o.
 
-2. Adicione o caminho para *VSInstr. exe* ao caminho do sistema.
+2. Adicione o caminho para *vsinstr.exe* ao caminho do sistema.
 
    > [!NOTE]
    > Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
@@ -48,12 +48,12 @@ ms.locfileid: "77557833"
     **start %COMSPEC%**
 
    > [!NOTE]
-   > Para obter instruções detalhadas de como configurar o pacote do servidor de símbolos, confira [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).
+   > Para obter instruções detalhadas sobre como configurar o pacote do servidor símbolo, consulte [Como: Referenciar informações de símbolos do Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para serializar os símbolos no arquivo de dados (.vsp) de criação de perfil. Use a opção **VSPerfReport /summary:all /packsymbols**. Se você não tiver símbolos inseridos no arquivo de dados, certifique-se de que tenha o conjunto de variáveis de ambiente NT_SYMBOL_PATH.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [Passo a passo: criação de perfil de linha de comando usando instrumentação](command-line-profiling-of-stand-alone-applications.md)
-- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Como: Referenciar informações de símbolos do Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

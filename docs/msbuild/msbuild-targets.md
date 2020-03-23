@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093607"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 
@@ -42,7 +42,7 @@ Destinos agrupam tarefas em uma ordem específica e permitem que o processo de b
 </Target>
 ```
 
- Se AfterBuild for executado, ele exibirá apenas "segunda ocorrência".
+ Se `AfterBuild` for executado, exibe apenas "Segunda ocorrência", `AfterBuild` pois a segunda definição de oculta a primeira.
 
  O MSBuild depende da ordem de importação, e a última definição de um destino é a definição usada.
 
@@ -102,11 +102,11 @@ Reference: 4.0
 
  Os builds incrementais são builds que são otimizados para que os destinos com arquivos de saída que estão atualizados em relação aos seus arquivos de entrada correspondentes não sejam executados. Um elemento de destino pode ter atributos `Inputs` e `Outputs`, indicando quais itens o destino espera como entrada e quais itens ele gera como saída.
 
- Se todos os itens de saída estiverem atualizados, o MSBuild ignora o destino, o que melhora significativamente a velocidade de build. Isso é chamado de build incremental do destino. Se apenas alguns arquivos forem atualizados, o MSBuild executa o destino sem os itens atualizados. Isso é chamado de build incremental parcial do destino. Para obter mais informações, confira [Builds incrementais](../msbuild/incremental-builds.md).
+ Se todos os itens de saída estiverem atualizados, o MSBuild ignora o destino, o que melhora significativamente a velocidade de build. Isso é chamado de build incremental do destino. Se apenas alguns arquivos forem atualizados, o MSBuild executa o destino sem os itens atualizados. Isso é chamado de build incremental parcial do destino. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md).
 
-## <a name="default-build-targets"></a>Destinos de compilação padrão
+## <a name="default-build-targets"></a>Alvos de compilação padrão
 
-O seguinte lista os destinos públicos em Microsoft. Common. CurrentVersion. targets.
+A seguir, lista os alvos públicos em Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================

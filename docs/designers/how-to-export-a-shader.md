@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589429"
 ---
 # <a name="how-to-export-a-shader"></a>Como exportar um sombreador
@@ -23,7 +23,7 @@ Este artigo demonstra como usar o **Designer de Sombreador** para exportar um so
 
 Depois de criar um sombreador usando o Designer de Sombreador é necessário exportá-lo em um formato que seja compreendido pela API de gráficos antes de usá-lo em seu aplicativo. Você pode exportar um sombreador de maneiras diferentes para atender a necessidades diferentes.
 
-1. No Visual Studio, abra um arquivo do **Visual Shader Graph (.dgsl)** .
+1. No Visual Studio, abra um arquivo do **Visual Shader Graph (.dgsl)**.
 
      Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
 
@@ -41,7 +41,7 @@ Depois de criar um sombreador usando o Designer de Sombreador é necessário exp
 
 4. Na caixa de combinação **Nome de arquivo**, especifique um nome para o sombreador exportado e, em seguida, escolha o botão **Salvar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)

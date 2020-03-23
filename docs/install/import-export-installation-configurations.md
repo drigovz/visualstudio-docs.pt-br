@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114848"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importar ou exportar configurações de instalação
@@ -70,7 +70,7 @@ Quando estiver pronto para importar um arquivo de configuração de instalação
 
 ## <a name="automatically-install-missing-components"></a>Instalar automaticamente os componentes ausentes
 
-**Novo no Visual Studio 2019**: quando você salva um arquivo. vsconfig no diretório raiz da solução e, em seguida, abre uma solução, o Visual Studio detecta automaticamente quais componentes estão ausentes e solicita que você os instale.
+**Novidade no Visual Studio 2019**: Quando você salva um arquivo .vsconfig no diretório raiz da solução e, em seguida, abre uma solução, o Visual Studio detecta automaticamente quais componentes estão faltando e solicita que você os instale.
 
 ![O Gerenciador de Soluções sugere os componentes adicionais](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Você também pode gerar um arquivo .vsconfig diretamente no Gerenciador de Solu
 
 1. Clique com botão direito do mouse no seu arquivo de solução.
 
-1. Escolha **adicionar** > **arquivo de configuração de instalação**.
+1. Escolha **Adicionar** > **Arquivo de configuração de instalação**.
 
 1. Confirme o local no qual deseja salvar o arquivo .vsconfig e escolha **Revisar detalhes**.
 
@@ -91,9 +91,9 @@ Você também pode gerar um arquivo .vsconfig diretamente no Gerenciador de Solu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Atualizações de controle para implantações do Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Definir padrões para implantações corporativas](set-defaults-for-enterprise-deployments.md)
+* [Definir padrões para implantações empresariais](set-defaults-for-enterprise-deployments.md)

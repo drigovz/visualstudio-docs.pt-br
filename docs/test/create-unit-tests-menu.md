@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844311"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
@@ -26,7 +26,7 @@ O comando **Criar Testes de Unidade** cria os stubs de método de teste de unida
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> O comando de menu **criar testes de unidade** só está disponível para código gerenciado.
+> O **comando Create Unit Tests** menu está disponível apenas para código gerenciado.
 ::: moniker-end
 
 O comando de menu **Criar Testes de Unidade** é extensível e pode ser usado para gerar testes para MSTest, MSTest V2, NUnit e xUnit.
@@ -56,7 +56,7 @@ Use esse recurso sempre que precisar criar testes de unidade, mas especialmente 
 
 No entanto, esse recurso é igualmente aplicável quando um desenvolvedor começa escrevendo um pouco de código e o usa para inicializar testes de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Criar stubs de método de teste de unidade com "Criar testes de unidade"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Postagens de blog sobre testes de unidade](https://devblogs.microsoft.com/devops/?s=unit+testing)
+- [Como criar stubs de método de teste de unidade com "Criar Testes de Unidade"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Postagens no blog sobre testes de unidade](https://devblogs.microsoft.com/devops/?s=unit+testing)

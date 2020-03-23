@@ -21,15 +21,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630776"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 
-Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera arquivos de classe ou de esquema com base em uma origem.
+Envolve a ferramenta XML Schema Definition *(xsd.exe),* que gera esquemas ou arquivos de classe a partir de uma fonte.
 
 > [!NOTE]
 > A partir do Visual Studio 2017, o suporte a projetos em C++ para *xsd.exe* foi preterido. Você ainda pode usar as APIs **Microsoft.VisualC.CppCodeProvider** manualmente adicionando *CppCodeProvider.dll* ao cache de assembly global.
@@ -40,25 +40,25 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
 - **AdditionalOptions**
 
-     Parâmetro **String** opcional.
+     Parâmetro opcional **string.**
 
      Uma lista de opções, conforme especificado na linha de comando. Por exemplo, /\<option1> /\<option2> /\<option#>. Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.
 
 - **GenerateFromSchema**
 
-  Parâmetro **String** opcional.
+  Parâmetro opcional **string.**
 
   Especifica os tipos gerados com base no esquema especificado.
 
   Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.
 
-  - **classes** -  **/classes**
+  - **classes** - **/classes**
 
-  - **dataset** -  **/dataset**
+  - **conjunto de** - dados **/conjunto de dados**
 
-- **Idioma**
+- **Língua**
 
-     Parâmetro **String** opcional.
+     Parâmetro opcional **string.**
 
      Especifica a linguagem de programação a ser usada para o código gerado.
 
@@ -66,7 +66,7 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
 - **Namespace**
 
-     Parâmetro **String** opcional.
+     Parâmetro opcional **string.**
 
      Especifica o namespace de runtime para os tipos gerados.
 
@@ -78,13 +78,13 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
 - **SuppressStartupBanner**
 
-     Parâmetro **Boolean** opcional.
+     Parâmetro **booleano** opcional.
 
      Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.
 
 - **TrackerLogDirectory**
 
-     Parâmetro **String** opcional.
+     Parâmetro opcional **string.**
 
      Especifica o diretório do log de rastreamento.
 

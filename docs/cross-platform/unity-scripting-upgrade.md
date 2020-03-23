@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75944229"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
@@ -21,7 +21,7 @@ C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber at
 
 Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu runtime de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o runtime equivalente ao .NET 4.x não é mais considerado experimental, enquanto o runtime equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o runtime de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o runtime de script do .NET 4.x.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 * [Unity 2017.1 ou superior](https://unity3d.com/) (2018.2 recomendado)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -38,9 +38,9 @@ Para habilitar o runtime de script do .NET 4.x, execute as seguintes etapas:
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Escolher entre perfis do .NET 4.x e do .NET Standard 2.0
 
-Depois de mudar para o runtime de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings (**Editar &gt; Configurações do projeto &gt; Player**). Existem duas opções:
+Depois de mudar para o runtime de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings (**Editar &gt; Configurações do projeto &gt; Player**). Há duas opções:
 
-* **.NET Standard 2.0**. Esse perfil corresponde ao [perfil do .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado pela .NET Foundation. O Unity recomenda o .NET Standard 2.0 para novos projetos. Ele é menor do que o .NET 4.x, o que é vantajoso para plataformas com restrições de tamanho. Além disso, o Unity se comprometeu a dar suporte a esse perfil em todas as plataformas compatíveis com o Unity.
+* **.NET Padrão 2.0**. Esse perfil corresponde ao [perfil do .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado pela .NET Foundation. O Unity recomenda o .NET Standard 2.0 para novos projetos. Ele é menor do que o .NET 4.x, o que é vantajoso para plataformas com restrições de tamanho. Além disso, o Unity se comprometeu a dar suporte a esse perfil em todas as plataformas compatíveis com o Unity.
 
 * **.NET 4.x**. Esse perfil fornece acesso à mais recente API do .NET 4. Ele inclui todo o código disponível nas bibliotecas de classes do .NET Framework e também dá suporte a perfis do .NET Standard 2.0. Se seu projeto requer uma parte da API não incluída no perfil do .NET Standard 2.0, use o perfil do .NET 4.x. No entanto, algumas partes dessa API podem não ser compatíveis com todas as plataformas do Unity.
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolação de cadeias de caracteres
 
-Com o runtime mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o runtime .NET 4.x, o recurso de [interpolação de cadeia de caracteres de `$`](/dotnet/csharp/language-reference/tokens/interpolated) permite que as expressões sejam inseridas em cadeias de caracteres em uma sintaxe mais legível e direta:
+Com o runtime mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o tempo de execução .NET 4.x, o [ `$` recurso de interpolação de seqüência](/dotnet/csharp/language-reference/tokens/interpolated) permite que expressões sejam inseridas em strings em uma sintaxe mais direta e legível:
 
 ```csharp
 // .NET 3.5
@@ -229,11 +229,11 @@ O TAP é um assunto complexo, com nuances específicas do Unity que os desenvolv
 
 Estas dicas podem ajudar você a começar a usar o TAP no Unity:
 
-* Funções assíncronas destinadas a serem aguardadas devem ter o tipo de retorno [`Task`](/dotnet/api/system.threading.tasks.task) ou [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1).
+* As funções assíncronas destinadas a [`Task`](/dotnet/api/system.threading.tasks.task) serem [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1)aguardadas devem ter o tipo de retorno ou .
 * Funções assíncronas que retornam uma tarefa devem ter o sufixo **"Async"** acrescentado aos seus nomes. O sufixo "Async" ajuda a indicar que uma função deve sempre ser aguardada.
 * Use somente o tipo de retorno `async void` para funções que disparam funções assíncronas do código síncrono tradicional. Essas funções em si não podem ser esperadas e não devem ter o sufixo "Async" em seus nomes.
 * O Unity usa o UnitySynchronizationContext para garantir que funções assíncronas sejam executadas no thread principal por padrão. A API do Unity não está acessível fora do thread principal.
-* É possível executar tarefas em threads em segundo plano com métodos como [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) e [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Essa técnica é útil para o descarregamento de operações onerosas do thread principal para aprimorar o desempenho. No entanto, o uso de threads em segundo plano pode levar a problemas difíceis de depurar, tais como [condições de corrida](https://wikipedia.org/wiki/Race_condition).
+* É possível executar tarefas em segmentos de [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx)fundo com métodos como e . Essa técnica é útil para o descarregamento de operações onerosas do thread principal para aprimorar o desempenho. No entanto, o uso de threads em segundo plano pode levar a problemas difíceis de depurar, tais como [condições de corrida](https://wikipedia.org/wiki/Race_condition).
 * A API do Unity não está acessível fora do thread principal.
 * Tarefas que usam threads não são compatíveis com builds WebGL do Unity.
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Ao exportar seu jogo para plataformas como iOS, o Unity usará seu mecanismo IL2CPP para "transcompilar" o IL para código C++ que é então compilado usando o compilador nativo da plataforma de destino. Nesse cenário, há vários recursos do .NET que não são compatíveis, tais como partes de reflexão e o uso da palavra-chave `dynamic`. Embora você possa controlar o uso desses recursos em seu próprio código, você pode encontrar problemas ao usar DLLs de terceiros e SDKs que não foram escritos com o Unity e o IL2CPP em mente. Para obter mais informações sobre esse tópico, veja a documentação sobre [restrições de script](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) no site do Unity.
 
-Além disso, conforme mencionado no exemplo de Json.NET acima, o Unity tentará retirar o código não utilizado durante o processo de exportação de IL2CPP.  Embora isso normalmente não seja um problema, com bibliotecas que usam reflexão, ele pode remover acidentalmente Propriedades ou métodos que serão chamados em tempo de execução que não podem ser determinados no momento da exportação.  Para corrigir esses problemas, adicione um arquivo **link.xml** ao seu projeto que contém uma lista de assemblies e namespaces nos quais não executar o processo de remoção.  Para obter detalhes completos, veja a [documentação do Unity sobre a remoção de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Além disso, conforme mencionado no exemplo de Json.NET acima, o Unity tentará retirar o código não utilizado durante o processo de exportação de IL2CPP.  Embora isso normalmente não seja um problema, com bibliotecas que usam Reflection, ele pode acidentalmente remover propriedades ou métodos que serão chamados no tempo de execução que não podem ser determinados no momento da exportação.  Para corrigir esses problemas, adicione um arquivo **link.xml** ao seu projeto que contém uma lista de assemblies e namespaces nos quais não executar o processo de remoção.  Para obter detalhes completos, veja a [documentação do Unity sobre a remoção de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Projeto do Unity de exemplo do .NET 4.x
 

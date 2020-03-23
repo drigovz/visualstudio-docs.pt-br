@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634000"
 ---
 # <a name="getframeworkpath-task"></a>Tarefa GetFrameworkPath
@@ -34,7 +34,7 @@ Recupera o caminho para os assemblies .NET Framework.
 
 A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework versão 1.1, se estiverem presentes. Caso contrário, retornará `null`.|
 |`FrameworkVersion20Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework versão 2.0, se estiverem presentes. Caso contrário, retornará `null`.|
@@ -45,7 +45,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
 
 ## <a name="remarks"></a>Comentários
 
-Se várias versões do .NET Framework estiverem instaladas, essa tarefa retornará a versão em que o MSBuild foi projetado para ser executado.
+Se várias versões do .NET Framework estiverem instaladas, essa tarefa reameterá a versão em que o MSBuild foi projetado para ser executado.
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 

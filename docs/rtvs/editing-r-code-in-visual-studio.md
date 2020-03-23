@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938731"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302710"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar o código R no Visual Studio
 
@@ -27,7 +27,7 @@ Além de colorir diferentes partes do código, como cadeias de caracteres, comen
 
 ![Coloração de sintaxe para código R](media/editing-syntax-colors.png)
 
-Para personalizar as fontes e determinadas cores de realce, selecione o comando **Ferramentas** > **Opções**, navegue até **Ambiente** > **Fontes e Cores** e, em seguida, altere as configurações de itens relacionados ao R na caixa **Itens de exibição**:
+Para personalizar fontes e certas cores de destaque, selecione o comando**Opções** **de ferramentas,** > navegue até**Fontes e Cores do** **Ambiente** > e altere as configurações para itens relacionados a R na caixa Itens de **exibição:**
 
 ![Opções de fontes e cores para código R](media/editing-syntax-colors-options.png)
 
@@ -35,7 +35,7 @@ O Visual Studio também sublinha erros de sintaxe no editor:
 
 ![Realce de erro de sintaxe no código R](media/editing-syntax-error.png)
 
-Para alterar esse comportamento, confira a configuração **Avançado** > **Verificação de sintaxe** em [opções do editor](#editor-options).
+Para alterar esse comportamento, consulte a**configuração de verificação de sintaxe** **avançada** > em [opções de editor](#editor-options).
 
 ## <a name="edit-and-organize-code"></a>Editar e organizar o código
 
@@ -49,7 +49,7 @@ Ao digitar chamadas de funções que têm muitos parâmetros, muitas vezes você
 
 Para alterar esse comportamento, consulte [opções do editor](#editor-options) e veja o grupo **Guias**.
 
-As regiões de código recolhíveis permitem ocultar parte do código temporariamente no editor. O Visual Studio cria várias regiões automaticamente, como para instruções multilinhas, a menos que a opção **Avançado** > **Estrutura de Tópicos** > **Estrutura de Tópicos de código** esteja definida como Desabilitada.
+As regiões de código recolhíveis permitem ocultar parte do código temporariamente no editor. O Visual Studio cria várias regiões para você automaticamente, como para declarações de várias linhas, a menos que a opção**Outlining** > **de delineamento** de código **avançado** > esteja definida como Descancelada.
 
 Para criar uma região sua, coloque o código desejado entre comentários que terminam com `---`. Os controles pequenos +/- à esquerda do código permitem que você expanda e recolha regiões:
 
@@ -61,19 +61,19 @@ Por padrão, o Visual Studio insere espaços quando você pressiona a tecla **Ta
 
 A navegação de código fornece acesso rápido ao código-fonte do seu programa do R e de suas bibliotecas. Esses recursos mantêm você no fluxo do seu trabalho em vez de precisar pesquisar manualmente o código.
 
-**Ir para definição** rapidamente salta para uma definição de função ou um minieditor pop-up embutido para ler o código-fonte de uma função de biblioteca. Basta clicar com o botão direito do mouse na função de interesse e selecionar **Ir para Definição** ou colocar o cursor na função e pressionar **F12**.
+**Ir para definição** rapidamente salta para uma definição de função ou um minieditor pop-up embutido para ler o código-fonte de uma função de biblioteca. Basta clicar com o botão direito do mouse na função de interesse e selecionar **Ir para Definição,** ou colocar o cursor na função e pressionar **F12**.
 
 Este comando abre uma nova janela do editor que contém o código-fonte para a função. O cursor é convenientemente posicionado no início da definição de função.
 
-**Espiar definição**, invocado do menu acionado com o botão direito do mouse ou pressionando **Alt**+**F12**, insere uma região rolável somente leitura, que contém o código-fonte da função abaixo da chamada de função:
+**Peek Definition**, invocado a partir do menu com o botão direito do mouse ou **Alt**+**F12,** insere uma região rolável e somente leitura contendo o código-fonte da função abaixo da chamada de função:
 
 ![Animação para definição de espiada](media/editing-peek-definition.gif)
 
 ## <a name="send-code-to-the-interactive-window"></a>Enviar código para a janela interativa
 
-Muitos desenvolvedores gostam escrever código no editor e, em seguida, enviá-lo para a [janela interativa](interactive-repl-for-r-in-visual-studio.md) para teste imediato [também conhecido como REPL (Read-Evaluate-Print-Loop)]. Pressionar **Ctrl**+**Enter** no editor R envia a linha de código atual para a janela interativa e, em seguida, coloca o cursor na linha seguinte. Em seguida, com **Ctrl**+**Enter**, você pode percorrer o código efetivamente no editor.
+Muitos desenvolvedores gostam escrever código no editor e, em seguida, enviá-lo para a [janela interativa](interactive-repl-for-r-in-visual-studio.md) para teste imediato [também conhecido como REPL (Read-Evaluate-Print-Loop)]. Pressionar **Ctrl**+**Enter** no editor R envia a linha de código atual para a janela interativa e, em seguida, coloca o cursor na próxima linha. Com **ctrl**+**Enter**, então, você pode efetivamente passar através de seu código a partir do editor.
 
-Você também pode selecionar o código e pressionar **Ctrl**+**Enter** para aplicar essa seleção inteira. Como alternativa, clique com o botão direito do mouse na seleção e selecione **Executar em Interativo**.
+Você também pode selecionar código e pressionar **Ctrl**+**Enter** para aplicar toda essa seleção. Como alternativa, clique com o botão direito do mouse na seleção e selecione **Executar em Interativo**.
 
 ## <a name="format-code"></a>Código de formatação
 
@@ -89,11 +89,11 @@ A aplicação da formatação a limpará deixando assim:
 f <- function(a) { return(a + 1) }
 ```
 
-Para reformatar o arquivo de código inteira, selecione **Editar** > **Avançado** > **Formatar Documento** (**Ctrl**+**E**,**D**).
+Para reformar todo o arquivo de código, selecione **Editar** > **documento de formato** **avançado** > **(Ctrl**+**E**,**D**).
 
-A formatação automática é uma operação separada que pode ser desfeita. Por exemplo, se você colar o código no editor e a formatação for aplicada, selecionar **Editar** > **Desfazer** ou pressionar **Ctrl**+**Z** uma única vez reverterá a formatação. Um segundo **Desfazer** reverterá a própria colagem.
+A formatação automática é uma operação separada que pode ser desfeita. Por exemplo, se você colar código no editor e formatá-lo se aplica, selecionar **Editar** > **Desfazer** ou pressionar **Ctrl**+**Z** uma vez inverte a formatação; um segundo **Desfazer** inverte a pasta em si.
 
-As opções de formatação (incluindo desabilitar a formatação) são definidas por meio de **Ferramentas** > **Opções** na guia **Editor de Texto** > **R** > **Avançado**. Você pode acessar essa página diretamente usando o comando **Ferramentas do R** > **Opções do editor** ou clicando com o botão direito do mouse no editor e selecionando **Opções de formatação**. Consulte a seção de [opções do editor](#editor-options) para obter detalhes.
+As opções de formatação (incluindo **Tools** > a formatação de desapartir) são definidas através de**opções de ferramentas** na guia Editor **de** > texto**R** > **Avançado.** Você pode ir diretamente para esta página usando o comando **R Tools** > **Editor opções** ou clicando com o botão direito do mouse no editor e selecionando **opções de formatação**. Consulte a seção de [opções do editor](#editor-options) para obter detalhes.
 
 ## <a name="inserting-roxygen-comments"></a>Inserindo comentários Roxygen
 
@@ -103,31 +103,31 @@ As RTVS fornecem um atalho para a geração de comentários [Roxygen](https://cr
 
 ## <a name="editor-options"></a>Opções do editor
 
-As Opções específicas do editor são definidas pelo comando **Ferramentas** > **Opções**, navegando até **Editor de Texto** > **R** ou usando o comando de atalho **Ferramentas do R** > **Opções do Editor**.
+As opções específicas do editor são definidas através do comando **Ferramentas** > **Opções,** navegando para **o Editor de** > **texto R**ou usando o comando de atalho R **Ferramentas** > Editor**Options**.
 
-As opções nas guias **Geral**, **Barras de rolagem** e **Guias** não são específicas para R, mas são configurações gerais do Visual Studio disponíveis para todas as linguagens, mas são aplicadas de acordo com cada linguagem. Para obter detalhes, veja os seguintes artigos:
+As opções nas guias **Geral**, **Barras de rolagem** e **Guias** não são específicas para R, mas são configurações gerais do Visual Studio disponíveis para todas as linguagens, mas são aplicadas de acordo com cada linguagem. Para obter detalhes, confira os seguintes artigos:
 
 - [Opções, Editor de Texto, Todas as Linguagens](../ide/reference/options-text-editor-all-languages.md)
 - [Rastrear o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 - [Opções, editor de texto, guias](../ide/reference/options-text-editor-all-languages-tabs.md)
 
-As opções na guia **R** > **Avançado** são específicas das RTVS:
+As opções na guia **R** > **Advanced** são específicas para RTVS:
 
-| Grupo | Opção | Padrão | Descrição |
+| Agrupar | Opção | Padrão | Descrição |
 | --- | --- | --- | --- |
-| Formatação | Formatação automática | On | Reformata o código enquanto você digita. Não afeta os comandos **Formatar Seleção** ou **Formatar Documento**. |
-| | Chaves expandidas | Off | Coloca uma { aberta em uma nova linha. |
-| | Formatar ao colar | On | Aplica a formatação ao colar. |
-| | Formatar escopo em } | On | Formata o escopo depois de digitar uma } de fechamento. |
-| | Espaço após a vírgula | On | Coloca um espaço depois de vírgulas. |
-| | Espaço após a palavra-chave | On | Coloca um espaço depois de palavras-chave como `if`, `while` e `repeat`. |
-| | Espaço antes de { | On | Coloca um espaço antes de uma { de abertura. |
-| | Espaços antes e depois de = | On | Insere espaços antes e depois de um sinal de igual. |
-| IntelliSense | Confirmar com a tecla Enter | Off | Confirma a seleção de preenchimento automático quando **Enter** é pressionado. |
-| | Confirmar com a tecla Espaço | Off | Confirma a seleção de preenchimento automático quando **Espaço** é pressionado.|
-| | Lista de conclusão no primeiro caractere | On | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desabilitada, uma lista de conclusão é exibida com **Editar** > **IntelliSense** > **Listar Membros** (**Ctrl**+**J**). |
-| | Lista de conclusão com a tecla **Tab** | Off | Invoca uma lista de conclusão digitando um ou mais caracteres e pressionando **Tab**. |
-| | Corresponder parcialmente ao digitar nomes de argumento | Off | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
-| Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. |
-| Estrutura de tópicos | Estrutura de tópicos de código | On | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. |
-| Verificação de sintaxe | Mostrar erros de sintaxe | On | Habilita a verificação de sintaxe automática do código. |
+| Formatação | Formatação automática | Por | Reformata o código enquanto você digita. Não afeta os comandos **Formatar Seleção** ou **Formatar Documento**. |
+| | Chaves expandidas | Desativado | Coloca uma { aberta em uma nova linha. |
+| | Formatar ao colar | Por | Aplica a formatação ao colar. |
+| | Formatar escopo em } | Por | Formata o escopo depois de digitar uma } de fechamento. |
+| | Espaço após a vírgula | Por | Coloca um espaço depois de vírgulas. |
+| | Espaço após a palavra-chave | Por | Coloca um espaço depois de palavras-chave como `if`, `while` e `repeat`. |
+| | Espaço antes de { | Por | Coloca um espaço antes de uma { de abertura. |
+| | Espaços antes e depois de = | Por | Insere espaços antes e depois de um sinal de igual. |
+| IntelliSense | Confirmar com a tecla Enter | Desativado | Confirma a seleção de preenchimento automático quando **Enter** é pressionado. |
+| | Confirmar com a tecla Espaço | Desativado | Confirma a seleção de preenchimento automático quando **Espaço** é pressionado.|
+| | Lista de conclusão no primeiro caractere | Por | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desligado, uma lista de conclusão é exibida com **edit** > **intelliSense** > **List Members** **(Ctrl**+**J**). |
+| | Lista de conclusão com a tecla **Tab** | Desativado | Invoca uma lista de conclusão digitando um ou mais caracteres e pressionando **Tab**. |
+| | Corresponder parcialmente ao digitar nomes de argumento | Desativado | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
+| Janela Interativa | Verificação de sintaxe no console do R | Desativado | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. |
+| Estrutura de tópicos | Estrutura de tópicos de código | Por | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. |
+| Verificação de sintaxe | Mostrar erros de sintaxe | Por | Habilita a verificação de sintaxe automática do código. |

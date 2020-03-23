@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590248"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de ferramentas, guia Dados
@@ -30,19 +30,19 @@ Exibe objetos de dados que é possível adicionar a formulários e componentes. 
 
 Para acessar diretamente a página de referência .NET de um componente, pressione **F1** no item na **Caixa de ferramentas** ou no item de componente na bandeja do designer.
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Adiciona uma instância de um conjunto de dados tipado ou não tipado ao formulário ou ao componente. Quando você arrasta esse objeto para um designer, ele exibe uma caixa de diálogo que permite selecionar uma classe de conjunto de dados tipado existente ou especificar se você deseja criar um conjunto de dados novo, em branco e não tipado. **Observação:** não use o objeto <xref:System.Data.DataSet> na **Caixa de Ferramentas** para criar um novo esquema e uma nova classe de conjunto de dados tipado. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Fornece uma maneira avançada e flexível para exibir dados em um formato de tabela.|
 |<xref:System.Windows.Forms.BindingSource>|Simplifica o processo de associar controles a uma fonte de dados subjacente.|
 |<xref:System.Windows.Forms.BindingNavigator>|Representa interface do usuário de navegação e a manipulação para controles em um formulário que está associado aos dados.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Acessar dados no Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Dados de acesso no Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Ferramentas de dados do Visual Studio para .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Ferramentas de conjunto de dados no Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associar controles a dados no Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Associando controles do Windows Forms a dados no Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Editar dados em conjuntos de dados](../../data-tools/edit-data-in-datasets.md)
 - [Validando dados em conjuntos de dados](../../data-tools/validate-data-in-datasets.md)

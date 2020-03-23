@@ -1,27 +1,33 @@
 ---
-title: Como executar a análise de código manualmente para código gerenciado
-ms.date: 11/04/2016
+title: 'Como: Executar a análise de código manualmente para código gerenciado'
+ms.date: 11/04/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
+- run code analysis
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
-author: mikejo5000
-ms.author: mikejo
+author: mavasani
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60e44d4cdf6ca00e103e807d7e3e432d21a078d0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fdeb56a0c0f4c5904a00ec53d64dae87aa4e9a5
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587414"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431378"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Como executar a análise de código manualmente para código gerenciado
-A ferramenta de análise de código fornece informações sobre possíveis defeitos em seu código-fonte. Você pode executar a análise de código automaticamente com cada compilação de um projeto de código e também pode executar a análise de código manualmente. As regras que são verificadas quando a análise de código é executada são especificadas na página análise de código das páginas de propriedades do projeto. Para obter mais informações, consulte [como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
+# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Como: Executar a análise de código manualmente para código gerenciado (requer visual studio versão 16.5 ou posterior)
+Por padrão, os analisadores de código .NET Compiler Platform ("Roslyn") analisam seu código C# ou Visual Basic à medida que você digita fazendo análise ao vivo, bem como durante a compilação. Portanto, você normalmente não precisaria acionar manualmente a análise do código. No entanto, existem alguns cenários em que você pode querer acionar manualmente a análise do código:
 
-### <a name="to-run-code-analysis-manually"></a>Para executar a análise de código manualmente
+- Por padrão, a análise de código ao vivo executa analisadores apenas para arquivos abertos no Visual Studio. No entanto, você pode estar interessado em visualizar avisos de análise de código para todos os arquivos em um projeto ou solução específica. Se assim for, você gostaria de acionar a análise de código uma vez em um projeto ou uma solução. Alternativamente, você pode habilitar uma análise contínua de código ao vivo para executar em toda a solução. Para obter mais informações, [consulte Como: Configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md).
+- Você pode preferir o fluxo de trabalho de execução de execução de análise de código demanda em vez de análise contínua ao vivo ou análise de tempo de construção. Nesse caso, você pode desativar a execução do analisador durante a análise ao vivo e/ou a compilação. Para obter informações sobre a análise desativada, consulte [Como desativar a análise do código-fonte](disable-code-analysis.md). Então você gostaria de acionar manualmente a análise de código uma vez em um projeto ou uma solução. 
 
-1. Em **Gerenciador de soluções**, clique no projeto.
+### <a name="run-code-analysis-manually"></a>Executar análise de código manualmente
 
-2. No menu **analisar** , clique em **executar análise de código no** *nome do projeto*.
+1. No **Solution Explorer,** clique no projeto.
+
+2. No menu **Analisar,** clique **em Executar análise de código em** nome do *projeto*.
+
+A análise de código começará a ser executada em segundo plano. Você deve ver a mensagem **Executando a análise de código para \<>** de projeto... na barra de status do Visual Studio no canto inferior esquerdo. Uma vez concluída a análise de código, a mensagem de status mudará para **análise de código concluída para \<>do projeto **. A lista de erros será atualizada em breve com todos os diagnósticos de análise de código.

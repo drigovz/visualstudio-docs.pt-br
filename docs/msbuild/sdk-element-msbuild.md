@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632466"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 
-Faz referência a um SDK de projeto do MSBuild.
+Faz referência a um SDK do projeto MSBuild.
 
  \<Project> \<Sdk>
 
@@ -39,11 +39,11 @@ Faz referência a um SDK de projeto do MSBuild.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Name`|Atributo obrigatório.<br /><br /> O nome do SDK do projeto.|
 |`Version`|Atributo opcional.<br /><br /> A versão do SDK do projeto|
@@ -54,12 +54,12 @@ Faz referência a um SDK de projeto do MSBuild.
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
 
 ## <a name="see-also"></a>Confira também
 
-- [Como referenciar um SDK de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Como: Referenciar um SDK do projeto MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

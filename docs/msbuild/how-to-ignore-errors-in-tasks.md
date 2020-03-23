@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633818"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
@@ -26,11 +26,11 @@ O atributo `ContinueOnError` do elemento `Task` controla se um build é interrom
 
 O atributo `ContinueOnError` pode conter um dos seguintes valores:
 
-- **WarnAndContinue** ou **verdadeiro**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.
+- **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subseqüentes no elemento [Destino](../msbuild/target-element-msbuild.md) e na compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.
 
 - **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.
 
-- **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.
+- **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.
 
 As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.
 
@@ -38,7 +38,7 @@ O valor padrão de `ContinueOnError` é `ErrorAndStop`. Se você definir o atrib
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Para ignorar um erro em uma tarefa
 
-Use o atributo `ContinueOnError` da tarefa. Por exemplo:
+Use o atributo `ContinueOnError` da tarefa. Por exemplo: 
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>

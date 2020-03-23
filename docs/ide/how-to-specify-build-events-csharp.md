@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115128"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
@@ -32,7 +32,7 @@ Quando um projeto é compilado, eventos de pré-build são adicionados a um arqu
 
 1. No **Gerenciador de Soluções**, selecione o projeto para o qual deseja especificar o evento de build.
 
-2. No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto** , clique em **Propriedades**.
 
 3. Selecione a guia **Eventos de Build**.
 
@@ -44,12 +44,12 @@ Quando um projeto é compilado, eventos de pré-build são adicionados a um arqu
 5. Na caixa **Linha de comando do evento de pós-build**, especifique a sintaxe do evento de build.
 
    > [!NOTE]
-   > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos *.bat*. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos *.bat*. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Na caixa **Executar o evento de pós-build**, especifique em que condições o evento pós-build deve ser executado.
 
    > [!NOTE]
-   > Para adicionar uma sintaxe longa ou para selecionar macros de build na [Caixa de diálogo de linha de comando do evento de pré-/pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), clique no botão de reticências ( **...** ) para exibir uma caixa de edição.
+   > Para adicionar sintaxe longa ou selecionar quaisquer macros de compilação na caixa de diálogo de linha de diálogo de linha de diálogo de [evento pré-construção/pós-construção,](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)clique no botão elipse **(...**) para exibir uma caixa de edição.
 
    A sintaxe do evento de build pode incluir qualquer comando que seja válido em um prompt de comando ou em um arquivo *.bat*. O nome de um arquivo em lote deve ser precedido por `call` para garantir que todos os comandos posteriores sejam executados.
 
@@ -72,7 +72,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 1. Crie um projeto de **Aplicativo de Console** para o comando. Dê ao projeto o nome **ChangeOSVersionCS**.
 
-2. No *Program.cs*, adicione a seguinte linha às outras diretivas de `using` na parte superior do arquivo:
+2. Em *Program.cs,* adicione a seguinte `using` linha às outras diretivas na parte superior do arquivo:
 
    ```csharp
    using System.Xml;
@@ -132,7 +132,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
    O comando utiliza dois argumentos: o caminho do manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, normalmente *Projectname.publish*) e a nova versão do sistema operacional.
 
-4. Crie o projeto.
+4. Compile o projeto.
 
 5. Copie o arquivo *.exe* para um diretório como *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -174,9 +174,9 @@ Em seguida, invoque este comando em um evento de pós-build para modificar o man
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Página Eventos de Build, Designer de Projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
+- [Página De Construir Eventos, Project Designer (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Como: Especificar eventos de construção (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)

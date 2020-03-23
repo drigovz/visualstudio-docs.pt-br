@@ -3,15 +3,15 @@ title: Problemas ao entrar em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Saiba mais sobre problemas que podem surgir ao entrar em assinaturas do Visual Studio
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706849"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509012"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas ao entrar em assinaturas do Visual Studio
 Para usar sua Assinatura do Visual Studio, primeiro é necessário entrar.  Dependendo da sua assinatura, talvez você a tenha configurado com uma identidade da MSA (conta Microsoft) ou do AAD (Azure Active Directory).  Este artigo discute alguns problemas que podem ser encontrados ao entrar em sua assinatura.
@@ -20,7 +20,7 @@ Para usar sua Assinatura do Visual Studio, primeiro é necessário entrar.  Depe
 A capacidade de criar uma nova MSA (Conta Microsoft) pessoal usando um endereço de email de trabalho/estudante não é mais permitida quando o domínio do email é configurado no Azure AD. O que isso significa? Se a organização usar o Office 365 ou outros serviços empresariais da Microsoft que dependem do Azure AD e se você tiver adicionado um nome de domínio ao locatário do Azure AD, os usuários não poderão mais criar uma nova conta Microsoft pessoal usando um endereço de email em seu domínio.
 
 ### <a name="why-was-this-change-made"></a>Por que essa alteração foi feita?
-Ter uma conta Microsoft pessoal com endereço de trabalho como nome de usuário é bem problemático para usuários finais e departamentos de TI semelhantes. Por exemplo:
+Ter uma conta Microsoft pessoal com endereço de trabalho como nome de usuário é bem problemático para usuários finais e departamentos de TI semelhantes. Por exemplo: 
 - Os usuários podem achar que sua conta Microsoft pessoal está em conformidade com a empresa e que eles estão em conformidade quando salvam o documento de negócios no OneDrive
 - Os usuários que saem de uma organização geralmente perdem o acesso ao seu email de trabalho. Quando eles fazem isso, talvez não consigam voltar para sua conta Microsoft pessoal se esquecerem sua senha. Por outro lado, o departamento de TI poderia redefinir a senha deles e entrar na conta pessoal de antigos funcionários.
 - Os departamentos de TI têm uma falsa sensação de segurança e de propriedade da conta. Mas os usuários precisam apenas que o código vá e volte para o email de trabalho uma vez e poderão renomear sua conta a qualquer momento no futuro.
@@ -52,16 +52,22 @@ Para evitar impactos no acesso da sua assinatura, use uma dessas técnicas.
 - Associe as identidades do AAD e MSA por meio do locatário.
 
 ## <a name="signing-in-may-fail-when-using-aliases"></a>A entrada pode falhar ao usar aliases
-Dependendo do tipo de conta usado para entrar, é possível que as assinaturas disponíveis não sejam exibidas corretamente ao entrar no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
+Dependendo do tipo de conta usada para fazer login, as assinaturas disponíveis [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)podem não ser exibidas corretamente ao fazer login. Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
 
 ### <a name="what-is-aliasing"></a>O que é um alias?
 O termo "alias" refere-se a usuários com identidades diferentes para entrar no Windows (ou no Active Directory) e para acessar o email.
 
-Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com. Para muitos clientes que gerenciam suas assinaturas por meio do VLSC (centro de serviços de licenciamento por volume), isso pode resultar em uma experiência de entrada malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não corresponde ao endereço de diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "conta corporativa ou de estudante".
+Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com. Para muitos clientes que gerenciam as assinaturas por VLSC (Volume Licensing Service Center), isso pode resultar em uma experiência de logon malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não coincide com o endereço do diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "Conta corporativa ou de estudante".
 
 ### <a name="what-options-do-i-have"></a>Quais as opções disponíveis?
 Da perspectiva do assinante, é importante primeiro trabalhar com o administrador para entender a configuração de identidade da empresa. Se necessário, o administrador poderá precisar atualizar as configurações de conta no portal de administração ou talvez seja necessário criar uma MSA (conta da Microsoft) usando o endereço de email corporativo. Antes de executar as etapas para criar uma MSA, fale com o administrador sobre quaisquer políticas ou problemas na execução desta ação. 
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
 - Saiba como [vincular contas MSA e AAD](/azure/active-directory/b2b/add-users-administrator) dentro do AAD.
 - Saiba mais sobre a [anonimização](anonymization.md).

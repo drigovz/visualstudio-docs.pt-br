@@ -3,42 +3,43 @@ title: Atribuir licenças a grupos de usuários para assinaturas do Visual Studi
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
-description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Bulk add ou os grupos de diretórioativo ativo do Microsoft Azure
+ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410416"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988483"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
 
-Para adicionar grandes grupos de usuários, você pode usar o recurso adição em massa ou, se sua organização estiver usando Microsoft Azure Active Directory (Azure AD), você poderá usar grupos do Azure AD. Este artigo explicará o processo para ambas as opções. 
+Para adicionar grandes grupos de usuários, você pode usar o recurso de adicionar em massa, ou se sua organização estiver usando o Microsoft Azure Active Directory (Azure AD), você pode usar grupos Azure AD. Este artigo explicará o processo para ambas as opções. 
 
-## <a name="use-bulk-add-to-assign-subscriptions"></a>Usar adição em massa para atribuir assinaturas
-1. Entre no portal de administração de assinaturas do Visual Studio em https://manage.visualstudio.com.
+## <a name="use-bulk-add-to-assign-subscriptions"></a>Use bulk add para atribuir assinaturas
+1. Inscreva-se no Portal de https://manage.visualstudio.comAdministração de Assinaturas do Visual Studio em .
 
-2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** . escolha a guia **Adicionar** e, em seguida, escolha **Adicionar em massa** na lista suspensa.  
+2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **Gerenciar assinantes.** Escolha a guia **Adicionar** e, em seguida, escolha Adicionar em **massa** no down-down.  
 
-2. A adição em massa usa um modelo do Microsoft Excel para carregar informações do Assinante. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
+2. O bulk add usa um modelo do Microsoft Excel para carregar informações de assinantes. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
    > [!div class="mx-imgBorder"]
    > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
 
-3. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (A*referência* é um campo opcional.) Salve o arquivo localmente depois de terminar.
+3. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (*A referência* é um campo opcional.) Salve o arquivo localmente depois que terminar.
 
    Para que não haja problemas com o upload, observe as seguintes melhores práticas:
 
     - Verifique se nenhum dos campos do formulário contém vírgulas.
     - Remova os espaços antes e depois de campos de formulário.
     - Verifique se os nomes do usuário não contêm espaços extras entre nomes ou sobrenomes de duas partes (por exemplo, se uma pessoa tiver um nome de duas partes, como "Maria Eduarda", ele deverá ser digitado como "MariaEduarda", porque o sistema não cortará o espaço extra).
-    - Verifique se todos os campos obrigatórios foram concluídos. 
-    - Verifique a coluna **mensagem de erro** .  Se houver erros listados, resolva-os antes de tentar carregar o arquivo. 
+    - Certifique-se de que todos os campos necessários estão concluídos. 
+    - Verifique a coluna **de mensagem de erro.**  Se algum erro estiver listado, resolva-os antes de tentar carregar o arquivo. 
 
 4. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **Carregar Vários Assinantes**, clique em **Procurar**.
    > [!div class="mx-imgBorder"]
@@ -52,65 +53,76 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 
     Se o modelo contiver erros, o upload falhará e os erros serão mostrados para que você possa corrigir o modelo e tentar o upload em massa novamente.
    > [!div class="mx-imgBorder"]
-   > ![Mensagem de erro em caso de falha no upload de vários assinantes](media/bulk-add-template-failed.png)
+   > ![Mensagem de erro em caso de falha no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-failure.png)
+
+   Se você encontrar uma falha, siga estas etapas:
+   1. Abra o arquivo Excel que você criou, corrija os problemas e salve o arquivo.
+   0. Retorne ao Portal de Administração e escolha **Adicionar**.
+   0. Selecione **adicionar em massa**.
+   0. Como você já tem o arquivo Excel salvo, você não precisa baixar o modelo.  Clique **em Procurar,** localize o arquivo que você acabou de salvar e clique em **Abrir**.
+   0. Clique em **OK**.
+
 
     Quando o upload for bem-sucedido, você verá a lista de assinantes e uma mensagem de confirmação.
    > [!div class="mx-imgBorder"]
-   > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](media/bulk-add-template-success.png)
+   > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-success.png)
 
-## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usar grupos de Azure Active Directory para atribuir assinaturas 
-O uso desse recurso facilita a permanência de suas atribuições de assinatura. Você pode adicionar Azure Active Directory grupos de segurança no portal de administração de assinaturas, o que garantirá que todos os indivíduos do grupo sejam atribuídos a uma assinatura. E para facilitar, quando as pessoas deixam sua organização e são removidas da Azure Active Directory, o acesso às assinaturas também é removido. 
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Use grupos de diretórios ativos do Azure para atribuir assinaturas 
+O uso deste recurso facilita a permanência em suas atribuições de assinatura. Você pode adicionar Grupos de Segurança do Diretório Ativo do Azure no Portal de Administração de Assinaturas, que garantirá que todos os indivíduos do grupo sejam designados para uma assinatura. E para facilitar, quando os indivíduos deixam sua organização e são removidos do Azure Active Directory, seu acesso a assinaturas também é removido. 
+
 
 > [!IMPORTANT]
-> As seguintes limitações se aplicam ao uso de grupos do Azure AD para adicionar assinantes:
-> - Os grupos devem conter pelo menos um membro.  Não há suporte para grupos vazios.
-> - Os grupos devem ter menos de 1.000 usuários 
-> - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados
-> - Somente contratos confiáveis têm suporte
-> - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD
+>
+> O uso de grupos Azure AD está sendo habilitado em fases.  Você pode não ver imediatamente o recurso ativado para o seu contrato(s).
+>
+> As seguintes limitações se aplicam ao uso de grupos AD do Azure para adicionar assinantes:
+> - Os grupos devem conter pelo menos um membro.  Grupos vazios não são suportados.
+> - Grupos devem ter menos de 1.000 usuários 
+> - Todos os usuários devem estar no nível superior do grupo.  Grupos aninhados não são suportados
+> - Apenas acordos confiáveis são suportados
+> - Todos os membros do grupo devem ter um endereço de e-mail associado à sua conta Azure AD
+> - Endereços de e-mail separados para notificações não são suportados para assinaturas adicionadas usando grupos AD do Azure.  
 
+1. Faça login no Portal de Administração [https://manage.visualstudio.com](https://manage.visualstudio.com)de Assinaturas do Visual Studio em .
 
-1. Entre no portal de administração de assinaturas do Visual Studio em [https://manage.visualstudio.com](https://manage.visualstudio.com).
+2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **Gerenciar assinantes.**
 
-2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** .
-
-3. Escolha a guia **Adicionar** e, em seguida, selecione **Azure Active Directory grupo** na lista suspensa.  
-
-   > [!div class="mx-imgBorder"]
-   > ![escolher adição em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
-
-
-4. Comece a inserir o nome do grupo do Azure AD que você deseja adicionar ao campo de formulário. Isso pesquisará os grupos do Azure AD disponíveis em sua organização. 
-
-5. Ao selecionar o grupo, o campo será preenchido automaticamente com o nome do grupo. Você terá a opção de exibir os usuários nesse grupo antes de adicioná-los. Em seguida, você pode escolher o nível da assinatura, os direitos de download e as preferências de comunicação para o grupo. Você pode adicionar detalhes ao campo de referência, se desejar. 
+3. Escolha a guia **Adicionar** e selecione **o grupo Diretório ativo do Azure** na queda.  
 
    > [!div class="mx-imgBorder"]
-   > ![escolher adição em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Escolha adicionar em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
 
-6. Clique em **Adicionar** e em **confirmar**. 
+4. Comece a inserir o nome do grupo Azure AD que você gostaria de adicionar no campo de formulário. Isso irá pesquisar os grupos AD disponíveis do Azure dentro da sua organização. 
 
-7. Para ver o grupo adicionado, role até a parte inferior da lista de usuários.  
+5. Quando você selecionar o grupo, o campo será preenchido automaticamente com o nome do grupo. Você terá a opção de visualizar os usuários desse grupo antes de adicioná-los. Em seguida, você pode escolher o nível de assinatura, os direitos de download e as preferências de comunicação para o grupo. Você pode adicionar detalhes no campo de referência, se desejar. 
 
-8. Selecione **Exibir assinantes** para exibir os membros do grupo. Você pode exibir detalhes sobre os assinantes no grupo, mas não pode fazer nenhuma edição nos assinantes ou nas assinaturas que eles estão atribuídos.    
+   > [!div class="mx-imgBorder"]
+   > ![Escolha adicionar em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+
+6. Clique **em Adicionar** e, em seguida, **Confirmar**. 
+
+7. Para ver o grupo adicionado, role até a parte inferior da sua lista de usuários.  
+
+8. Selecione **Exibir assinantes** para exibir os membros do grupo. Você pode ver detalhes sobre os assinantes do grupo, mas não pode fazer nenhuma edições para os assinantes ou as assinaturas que eles são atribuídos.    
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>P: posso escolher vários níveis de assinatura a serem atribuídos dentro de um grupo do Azure AD? 
-R: não--todos no grupo recebem a mesma assinatura. 
+### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>P: Posso escolher vários níveis de assinatura a serem atribuídos dentro de um grupo AD do Azure? 
+A: Não - todos no grupo recebem a mesma assinatura. 
 
-### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: posso editar os detalhes do assinante de indivíduos adicionados em um grupo do Azure AD?  
-R: não--para modificar as informações de um assinante individual, você precisará removê-los do grupo de segurança do Azure AD e atribuir a eles uma assinatura individualmente.  
+### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: Posso editar detalhes de assinantes de indivíduos adicionados em um grupo Azure AD?  
+A: Não - Para modificar as informações para um assinante individual, você precisará removê-las do grupo de segurança Azure AD e atribuir-lhes uma assinatura individualmente.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: adicionei alguém ao meu grupo de segurança do Azure AD, mas não os vejo adicionados no portal de administração de assinaturas e eles não têm uma assinatura. Por quê?  
-R: dependendo de como sua organização tiver configurado o Azure AD, você poderá ver atrasos de até 24 horas antes que o usuário seja adicionado. Se tiver sido mais de 24 horas, [entre em contato com o suporte](https://visualstudio.microsoft.com/support/support-overview-vs).  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: Eu adicionei alguém ao meu grupo de segurança Azure AD, mas não os vejo adicionados no Portal de Administração de Assinaturas, e eles não têm uma assinatura. Por que não?  
+R: Dependendo de como sua organização configurou o Azure AD, você pode ver atrasos de até 24 horas antes de o usuário ser adicionado. Se for mais de 24 horas, [contate o suporte.](https://visualstudio.microsoft.com/support/support-overview-vs)  
 
-
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 - Há apenas um ou dois assinantes para adicionar?  Confira [Adicionar usuários únicos](assign-license.md)
 - Precisa de ajuda? Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-

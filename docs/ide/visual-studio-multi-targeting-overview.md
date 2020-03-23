@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303417"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
@@ -27,7 +27,7 @@ Uma solução do Visual Studio pode conter projetos destinados a diferentes vers
 Para obter mais informações sobre estruturas de destino, confira [Estruturas de destino](/dotnet/standard/frameworks).
 
 > [!TIP]
-> Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).
+> Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
 
 ## <a name="framework-targeting-features"></a>Recursos de definição de destino da estrutura
 
@@ -85,7 +85,7 @@ Em um projeto existente do Visual Basic, C# ou F#, você altera a versão do .NE
 
 1. No **Gerenciador de Soluções**, abra o menu de contexto do projeto que você deseja alterar e, em seguida, escolha **Propriedades**.
 
-1. Na coluna esquerda da janela **Propriedades**, escolha a guia **Aplicativo**.
+1. Na coluna esquerda da janela **Propriedades,** escolha a guia **Aplicativo.**
 
    ![Guia Aplicativo das propriedades do projeto](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
@@ -112,7 +112,7 @@ Em um projeto existente do Visual Basic, C# ou F#, você altera a versão do .NE
 
 Para definir uma versão do .NET como destino, é necessário primeiro instalar as referências de assembly apropriadas. Baixe pacotes de desenvolvedor para diferentes versões do .NET na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Os assemblies do sistema são arquivos *. dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura superior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
+Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Os conjuntos do sistema são arquivos *.dll* incluídos em uma versão .NET Framework.) As referências que pertencem a uma versão-quadro superior à versão direcionada não serão resolvidas, e os controles que dependem de tal referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -124,4 +124,4 @@ Ao direcionar ao .NET Framework 3.5 ou posterior, uma referência ao **System.Co
 
 - [Estruturas de destino](/dotnet/standard/frameworks)
 - [Multiplataforma (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Como: Modificar o framework de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

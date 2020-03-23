@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570486"
 ---
 # <a name="code-snippet-picker"></a>Seletor de snippet de código
@@ -42,9 +42,9 @@ O procedimento para exibir o **Seletor de Snippet de Código** varia de acordo c
 
 - SQL – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.
 
-Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à lista de pastas que o **Seletor de Snippet de Código** examina em busca de arquivos com snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Instruções passo a passo: criando um snippet de código](../../ide/walkthrough-creating-a-code-snippet.md).
+Na maioria dos idiomas de desenvolvimento do Visual Studio, você pode usar o **Gerenciador de trechos de código** para adicionar pastas à lista de pastas que o **Code Snippet Picker** verifica para arquivos de trecho XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Passo a Passo: Criando um trecho de código](../../ide/walkthrough-creating-a-code-snippet.md).
 
-## <a name="uielement-list"></a>Lista de UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 Nome do Item
 
@@ -54,9 +54,9 @@ Lista de Itens
 
 Uma lista de snippets de código disponíveis para inserção ou uma lista de pastas que contêm snippets de código. Para inserir um snippet ou expandir uma pasta, selecione o item desejado e pressione Enter.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Melhores práticas para usar snippets de código](../../ide/best-practices-for-using-code-snippets.md)
 - [Snippets de Código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [Configurando identificadores no código](../../ide/setting-bookmarks-in-code.md)
-- [Como usar snippets de código Surround-with](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Definindo marcadores em código](../../ide/setting-bookmarks-in-code.md)
+- [Como: Usar trechos surround-com-code](../../ide/how-to-use-surround-with-code-snippets.md)

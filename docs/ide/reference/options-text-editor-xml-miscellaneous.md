@@ -9,53 +9,53 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568120"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
-Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar as opções de XML diversas, escolha **Ferramentas** > **Opções** > **Editor de texto** > **XML** e, em seguida, escolha **Diversos**.
+Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar opções diversas do XML, escolha O**Editor de** > **texto de opções** >  **de ferramentas** > **XML**e, em seguida, escolha **Diversos**.
 
-## <a name="auto-insert"></a>AutoInserção
+## <a name="auto-insert"></a>Inserir automaticamente
 
-**Marcas de fechamento**
+**Fechar marcas**
 
-O editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma marca de início de elemento for selecionada, o editor inserirá a marca de fechamento correspondente, incluindo um prefixo de namespace correspondente. Por padrão, a caixa de seleção fica marcada.
+O editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma marca de início de elemento for selecionada, o editor insere a marca íntima correspondente, incluindo um prefixo de namespace correspondente. Esta caixa de seleção fica marcada por padrão.
 
-**Aspas de atributo**
+**Citações de atributo**
 
-Ao criar atributos XML, o editor insere os caracteres `="` e `"` e posiciona o acento circunflexo ( **^** ) dentro de aspas duplas. Por padrão, a caixa de seleção fica marcada.
+Ao criar atributos XML, o `="` `"` editor insere os**^** caracteres e posiciona o caret ( ) dentro das aspas. Esta caixa de seleção fica marcada por padrão.
 
 **Declarações de namespace**
 
-O editor inserir automaticamente declarações namespace onde quer que são necessárias. Por padrão, a caixa de seleção fica marcada.
+O editor insere declarações de namespace automaticamente onde quer elas sejam necessárias. Esta caixa de seleção fica marcada por padrão.
 
-**Outra marcação (Comentários, CDATA)**
+**Outra remarcação (Comentários, CDATA)**
 
-Comentários, CDATA, DOCTYPE, instruções de processamento e a outra marcação automática são concluídos. Por padrão, a caixa de seleção fica marcada.
+Comentários, CDATA, DOCTYPE, instruções de processamento e outra remarcação e autocompletada. Esta caixa de seleção fica marcada por padrão.
 
 ## <a name="network"></a>Rede
 
-**Baixar automaticamente DTDs e esquemas**
+**Carregar automaticamente DTDs e esquemas**
 
-Os esquemas e as definições de tipo (DTDs) de documentos são baixados automaticamente locais HTTP. Esse recurso usa o System.Net com a detecção do servidor autoproxy habilitada. Por padrão, a caixa de seleção fica marcada.
+Esquemas e DTDs (definições de tipo de documento) são baixados automaticamente de locais HTTP. Esse recurso usa System.Net com detecção de servidor de autoproxy habilitada. Esta caixa de seleção fica marcada por padrão.
 
 ## <a name="outlining"></a>Estrutura de tópicos
 
-**Entrar no modo de estrutura de tópicos na abertura dos arquivos**
+**Entrar no modo de estrutura de tópicos quando os arquivos forem abertos**
 
-Ativa o recurso de estruturação quando um arquivo é aberto. Por padrão, a caixa de seleção fica marcada.
+Ativa o recurso de estrutura de tópicos quando um arquivo é aberto. Esta caixa de seleção fica marcada por padrão.
 
-## <a name="caching"></a>Armazenamento em cache
+## <a name="caching"></a>Cache
 
 **Esquemas**
 
 Especifica o local do cache de esquema. O botão **Procurar** abre a localização do cache do esquema atual em uma nova janela. O local padrão é *%VsInstallDir%\xml\Schemas*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de XML – Formatação](options-text-editor-xml-formatting.md)
 - [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

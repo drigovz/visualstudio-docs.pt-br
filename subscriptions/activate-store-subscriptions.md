@@ -7,10 +7,10 @@ ms.date: 02/17/2020
 ms.topic: conceptual
 description: Saiba como ativar assinaturas do Visual Studio compradas na Microsoft Store.
 ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78894394"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Como ativar uma assinatura adquirida na Microsoft Store?
@@ -21,7 +21,7 @@ Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft S
 
 ## <a name="activate-your-subscription"></a>Ativar sua assinatura
 1. Clique em **Clique aqui para entrar** no email de confirmação ou na página de confirmação de compra.
-2. Você será redirecionado para [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+2. Você será redirecionado [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)para.
 3. Insira o endereço de email que exige o acesso à assinatura do Visual Studio e clique em **Continuar**.
 4. Você pode ser redirecionado para uma de duas páginas de entrada diferentes dependendo do tipo de conta que você está usando:
     - Os assinantes que usam suas contas MSA ("Conta da Microsoft") verão a página de senha da Conta da Microsoft.
@@ -31,7 +31,7 @@ Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft S
 7. Insira as informações da chave do produto (Product Key) disponíveis na "Página de Confirmação" do pagamento ou no "Email de Confirmação" e clique em **Ativar**.
 8. Agora, a assinatura deve estar visível na página [Assinaturas](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e você deve ter acesso a todos os benefícios de sua assinatura.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

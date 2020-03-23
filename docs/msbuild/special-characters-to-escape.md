@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632245"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
@@ -31,7 +31,7 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 
  Veja a seguir a lista completa de caracteres especiais de escape:
 
-|Caractere|DESCRIÇÃO|
+|Caractere|Descrição|
 |---------------|-----------------|
 |%|Sinal de porcentagem, usado para fazer referência a metadados.|
 |$|Cifrão, usado para fazer referência a propriedades.|
@@ -43,9 +43,9 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 |*|Asterisco, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|
 
 > [!NOTE]
-> Em alguns cenários, talvez seja necessário escapar dos caracteres de aspas duplas ("), como ao usar dentro de uma tarefa de `Exec`.
+> Em alguns cenários, você pode precisar escapar de caracteres `Exec` de citação dupla ("), como ao usar dentro de uma tarefa.
 
 ## <a name="see-also"></a>Confira também
 
-- [Como: escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [Como: Escapar personagens especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

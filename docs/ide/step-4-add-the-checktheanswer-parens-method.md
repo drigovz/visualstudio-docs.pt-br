@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579851"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Etapa 4 – Adicionar o método CheckTheAnswer()
 
-Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswer()`, que determina se as respostas para os problemas de matemática estão corretas. Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswer()`, que determina se as respostas para os problemas de matemática estão corretas. Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Para verificar se as respostas estão corretas
 
@@ -59,6 +59,6 @@ Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswe
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 5: adicionar manipuladores de eventos de entrada para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** .
+- Para ir para a próxima etapa do tutorial, consulte **[Passo 5: Adicione os manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**.
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 3 – Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
+- Para retornar à etapa tutorial anterior, consulte [Passo 3: Adicione um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).

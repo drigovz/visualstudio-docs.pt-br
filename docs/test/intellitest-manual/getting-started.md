@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 113233c985053cfe838f385a36ec59cc211bfcb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591652"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Introdução ao Microsoft IntelliTest
@@ -52,7 +52,7 @@ public partial class FooTest {
 [assembly: PexInstrumentAssembly("Lib")]
 ```
 
-## <a name="helper-classes"></a> Classes auxiliares estáticas importantes
+## <a name="important-static-helper-classes"></a><a name="helper-classes"></a>Importantes classes de ajudantes estáticos
 
 * [PexAssume](static-helper-classes.md#pexassume) avalia suposições (filtragem de entrada)
 * [PexAssert](static-helper-classes.md#pexassert) avalia declarações

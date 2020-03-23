@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597341"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Visão geral dos agentes de teste e controladores de teste para executar testes de carga
@@ -19,7 +19,7 @@ ms.locfileid: "75597341"
 O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquinas virtuais ou físicas. Esses computadores devem ser configurados como um único controlador de teste e um ou mais agentes de teste. Você pode usar o controlador de teste e os agentes de teste para gerar mais carga do que um único computador pode gerar sozinho.
 
 > [!NOTE]
-> Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. No entanto, não há suporte para o uso do controlador de teste/instalação do Test Agent em máquinas virtuais hospedadas na nuvem. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. No entanto, o uso da configuração do controlador de teste/agente de teste em máquinas virtuais hospedadas na nuvem não é suportado. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -37,7 +37,7 @@ Essa arquitetura oferece os seguintes benefícios:
 
 - A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
 
-- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
+- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo: 
 
    **Configuração local:**
 
@@ -89,6 +89,6 @@ Para obter informações importantes sobre os requisitos de hardware e software 
 
 Depois de instalar um controlador de teste e um ou mais agentes, você poderá especificar se deseja usar uma execução remota com o controlador de teste na configuração de teste para os testes de carga. Além disso, você pode especificar os dados e os adaptadores de diagnóstico a serem usados com a função associada aos agentes na configuração de teste.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

@@ -1,20 +1,21 @@
 ---
 title: Dividir ou mesclar instruções if
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160732"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093694"
 ---
 # <a name="split-or-merge-if-statements"></a>Dividir ou mesclar instruções if
 
@@ -22,9 +23,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** **O quê:** Dividir ou mesclar instruções [if](/dotnet/csharp/language-reference/keywords/if-else).
+- Visual Basic
 
-**Quando:** Você desejar dividir uma instrução `if` que usa os operadores `&&` e `||` em uma instrução `if` aninhada, ou mesclar uma instrução `if` com uma instrução `if` externa.
+**O quê:** **Dividir** ou fundir [se](/dotnet/csharp/language-reference/keywords/if-else) as declarações.
+
+**Quando:** Você deseja dividir `if` uma declaração `&&` que use os `if` operadores em `if` `||` uma declaração aninhada ou mesclar uma declaração com uma declaração externa. `if`
 
 **Por que:** É uma questão de preferência de estilo.  
 
@@ -34,7 +37,7 @@ Se você quiser dividir a instrução `if`:
 
 1. Coloque o cursor na instrução `if` pelo operador `&&` ou `||`.
 
-2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
 
     ![Dividir instrução if](../media/split-if-statement.png)
 
@@ -46,7 +49,7 @@ Se você deseja mesclar a instrução `if` interna com a instrução `if` extern
 
 1. Coloque o cursor na palavra-chave `if` interna.
 
-2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
 
     ![Mesclar instrução If](../media/merge-if-statement.png)
 
@@ -54,6 +57,6 @@ Se você deseja mesclar a instrução `if` interna com a instrução `if` extern
 
     ![Mesclar instrução if concluída](../media/merge-if-statement-complete.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

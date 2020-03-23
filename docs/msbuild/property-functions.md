@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77632934"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302906"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
-As funções de propriedade são chamadas para .NET Framework métodos que aparecem nas definições de Propriedade do MSBuild. Ao contrário das tarefas, as funções de propriedade podem ser usadas fora dos destinos e são avaliadas antes de qualquer destino ser executado.
+Funções de propriedade são chamadas para métodos .NET Framework que aparecem nas definições de propriedade MSBuild. Ao contrário das tarefas, as funções de propriedade podem ser usadas fora dos destinos e são avaliadas antes de qualquer destino ser executado.
 
 Sem o uso de tarefas MSBuild, você pode ler a hora do sistema, comparar cadeias de caracteres, combinar expressões regulares e executar outras ações no script de compilação. O MSBuild tentará converter a cadeia de caracteres em número e número em cadeia de caracteres, além de fazer outras conversões, conforme necessário.
 
@@ -151,7 +151,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Aqui está uma lista de funções da propriedade MSBuild:
 
-|Assinatura de função|DESCRIÇÃO|
+|Assinatura de função|Descrição|
 |------------------------|-----------------|
 |double Add(double a, double b)|Adicionar dois duplos.|
 |long Add(long a, long b)|Adicionar dois longos.|
@@ -174,8 +174,8 @@ Aqui está uma lista de funções da propriedade MSBuild:
 |string NormalizePath(params string[] path)|Obtém o caminho completo canonizado do caminho fornecido e garante que ele contém os caracteres do separador de diretório corretos para o sistema operacional atual.|
 |string NormalizeDirectory(params string[] path)|Obtém o caminho completo canonizado do diretório fornecido e garante que ele contém os caracteres do separador de diretório corretos para o sistema operacional atual, enquanto garante que tem uma barra à direita.|
 |string EnsureTrailingSlash(string path)|Se o caminho especificado não tiver uma barra à direita, adicione uma. Se o caminho for uma cadeia de caracteres vazia, não a modifique.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Pesquisa e retorna o caminho completo para um arquivo na estrutura de diretório acima do local do arquivo de compilação atual ou com base em `startingDirectory`, se especificado.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Localize e retorne o diretório de um arquivo no diretório especificado ou em um local na estrutura de diretório acima desse diretório.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Pesquisa e retorna o caminho completo para um arquivo na estrutura do diretório acima `startingDirectory`da localização do arquivo de compilação atual, ou com base em , se especificado.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Localize e retorne o diretório de um arquivo no diretório especificado ou em um local na estrutura do diretório acima desse diretório.|
 |string MakeRelative(string basePath, string path)|Torna o `path` relativo a `basePath`. `basePath` deve ser um diretório absoluto. Se `path` não puder ser tornado relativo, ele será retornado de forma textual. Similar a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Retorna a cadeia de caracteres no parâmetro 'defaultValue' somente se o parâmetro 'conditionValue' está vazio, caso contrário, retorna o valor conditionValue.|
 
@@ -229,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove do MSBuild
 
-A função de propriedade `GetPathOfFileAbove` no MSBuild retorna o caminho do arquivo especificado, se estiver localizado na estrutura de diretório acima do diretório atual. É funcionalmente equivalente a chamar
+A `GetPathOfFileAbove` função de propriedade no MSBuild retorna o caminho do arquivo especificado, se localizado na estrutura do diretório acima do diretório atual. É funcionalmente equivalente a chamar
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -263,7 +263,7 @@ A sintaxe para essa função de propriedade é:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-O sistema operacional Windows de 64 bits mantém uma chave do Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** que apresenta uma exibição do Registro **HKEY_LOCAL_MACHINE\SOFTWARE** para aplicativos de 32 bits.
+O sistema operacional Windows de 64 bits mantém uma chave de registro **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** que apresenta uma exibição de registro **HKEY_LOCAL_MACHINE\SOFTWARE** para aplicativos de 32 bits.
 
 Por padrão, um aplicativo de 32 bits em execução no WOW64 acessa a exibição do registro de 32 bits e um aplicativo de 64 bits acessa a exibição do registro de 64 bits.
 
@@ -281,7 +281,7 @@ A seguir, é mostrado um exemplo.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-obtém os dados de **SLRuntimeInstallPath** da chave **ReferenceAssemblies**, procurando primeiro na exibição do registro de 64 bits e depois na exibição do registro de 32 bits.
+obtém os dados **SLRuntimeInstallPath** da chave **ReferenceAssemblies,** olhando primeiro na exibição de registro de 64 bits e, em seguida, na exibição de registro de 32 bits.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 

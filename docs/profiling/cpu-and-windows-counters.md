@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779543"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
@@ -45,7 +45,7 @@ O criador de perfil do Visual Studio continua dando suporte a eventos específic
 
 Eventos portáteis são um grupo de contadores da CPU que não são específicos a um processador específico. Todos os outros contadores da CPU são chamados de eventos da plataforma e podem não ter suporte em várias plataformas.
 
- Contadores para os eventos portáteis e da plataforma são definidos em arquivos .*xml*, em que valores específicos relacionados aos contadores são fornecidos. Há vários arquivos para CPUs diferentes, pois os dados para CPUs Intel e AMD, por exemplo, são diferentes. O Criador de Perfil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa essas informações para apresentar contadores apropriados, portáteis e da plataforma, ao usuário para medição de desempenho.
+ Os contadores para eventos portáteis e de plataforma são definidos em . *arquivos xml,* onde valores específicos relacionados aos contadores são fornecidos. Há vários arquivos para CPUs diferentes, pois os dados para CPUs Intel e AMD, por exemplo, são diferentes. O Criador de Perfil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa essas informações para apresentar contadores apropriados, portáteis e da plataforma, ao usuário para medição de desempenho.
 
 ### <a name="portable-events"></a>Eventos portáteis
 
@@ -53,27 +53,27 @@ Os eventos portáteis contêm os seguintes eventos:
 
 **Eventos gerais**
 
-|Nome do Evento|Descrição do evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Instruções Desativadas|Indica o número de instruções executadas até a conclusão do evento.|
 |Ciclos Não Interrompidos|Indica apenas os ciclos nos quais o processador não foi interrompido, por exemplo, aguardando E/S.|
 
 **Eventos de front-end**
 
-|Nome do Evento|Descrição do evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Perdas de ITLB|Indica o número de pesquisas de Buffer à Parte de Translação de Instrução que resultaram em uma perda.|
 
 **Eventos de ramificação**
 
-|Nome do Evento|Descrição do evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Ramificações Desativadas|Indica o número de instruções de ramificação executadas até a conclusão do evento.|
 |Ramificações Previstas Incorretamente|Indica ramificações previstas incorretamente que ocorrem devido ao fato de o processador ter previsto um caminho incorreto. Ramificações previstas incorretamente afetam o desempenho, pois o processador deve descartar todo o trabalho feito e começar novamente em um caminho correto.|
 
 **Eventos de memória:**
 
-|Nome do Evento|Descrição do evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Erros de Leitura de Cache L2|Indica o número de perdas de leitura do cache de segundo nível.|
 |Referências de Leitura de Cache L2|Indica o número de referências de leitura do cache de segundo nível. Inclui perdas de carga e perdas e ocorrências de RFO (leitura de propriedade).|
@@ -90,17 +90,17 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
 1. No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.
 
-2. Siga um destes procedimentos:
+2. Realize um dos seguintes procedimentos:
 
    - Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.
 
       **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
 
-     \- ou -
+     -ou-
 
    - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
 
-      **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
+      **Nota** Clique **em Cancelar** para retornar à configuração anterior de coleta de contador.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de contadores do Windows com suporte na plataforma atual
 
@@ -120,17 +120,17 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
 #### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Para listar os contadores da CPU com suporte na plataforma atual
 
-1. Abra uma janela do prompt de comando.
+1. Abra una janela de prompt de comando.
 
-2. {1&gt;Tipo&lt;1}
+2. Type
 
-     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
+     **\<Visual Studio Performance Tools Diretório>\VSPerfCmd /querycounters**
 
-     em que *\<Diretório das Ferramentas de Desempenho do Visual Studio>* é o caminho para o diretório das Ferramentas de Desempenho da instalação do Visual Studio. Para obter o caminho para as ferramentas de desempenho, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+     onde * \<o Visual Studio Performance Tools Directory>* é o caminho para o diretório de Ferramentas de Desempenho da sua instalação do Visual Studio. Para obter o caminho para as ferramentas de desempenho, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Visões gerais](../profiling/overviews-performance-tools.md)
-[como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
-[como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
-[como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Como: Escolher eventos](../profiling/how-to-choose-sampling-events.md)
+de amostragem[Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+[Como: Coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)

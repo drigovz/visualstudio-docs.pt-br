@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779045"
 ---
 # <a name="how-to-choose-sampling-events"></a>Como escolher eventos de amostragem
@@ -42,7 +42,7 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-
 
 ### <a name="to-select-a-sample-event"></a>Para selecionar um evento de amostragem
 
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
+1. No **Performance Explorer**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
 
 2. Nas **Páginas de Propriedades**, clique nas propriedades de **Amostragem**.
 
@@ -59,9 +59,9 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-
 
 5. Ao selecionar um evento de amostra, um valor de intervalo de amostragem padrão é exibido na caixa de texto **Intervalo de Amostragem**. Se necessário, insira o valor desejado na caixa de texto.
 
-## <a name="see-also"></a>Consulte também
-- [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
-- [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)
+## <a name="see-also"></a>Confira também
+- [Configure sessões de desempenho](../profiling/configuring-performance-sessions.md)
+- [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
+- [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)
 - [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -7,10 +7,10 @@ ms.date: 03/06/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
 ms.openlocfilehash: 722c72acde9ff0b1f7bcfc0c394a1e016c84b719
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937470"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
@@ -25,7 +25,7 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - Obter ajuda com a reconciliação manual. Inscreva a sua equipe para ajudar a reconciliar os usuários de desenvolvimento e teste com seu ambiente de desenvolvimento e teste.
 
 ## <a name="resources"></a>Recursos
-- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [Visual Studio licenciamento de papel branco](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
@@ -37,9 +37,9 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
-- [Responsabilidades do administrador](admin-responsibilities.md)
+- [Responsabilidades de administrador](admin-responsibilities.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
 
 

@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594858"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301870"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bem-vindo ao IDE do Visual Studio | C\#
 
@@ -26,7 +26,7 @@ ms.locfileid: "75594858"
 
 Vamos configurar o Visual Studio para usar configurações de ambiente adequadas aos desenvolvedores em C#.
 
-1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
+1. Na barra de menus, escolha**Configurações de importação e exportação de** **ferramentas** > .
 
 2. No **Assistente de Importação e Exportação de Configurações**, selecione **Redefinir todas as configurações** na primeira página e, em seguida, escolha **Avançar**.
 
@@ -38,7 +38,7 @@ Vamos configurar o Visual Studio para usar configurações de ambiente adequadas
 
 Para conhecer outras maneiras pelas quais você pode personalizar o IDE, confira [Personalizar o Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutórios:
 
@@ -48,7 +48,7 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

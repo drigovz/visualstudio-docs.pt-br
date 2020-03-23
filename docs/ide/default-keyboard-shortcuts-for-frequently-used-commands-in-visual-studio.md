@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596717"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado populares para o Visual Studio
@@ -23,7 +23,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 > [!NOTE]
 > É possível [pesquisar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
 
-## <a name="build"></a>{1&gt;Compilação&lt;1}
+## <a name="build"></a>Build
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -32,7 +32,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Build.Compile|**Ctrl+F7** [Global]|
 |Build.RunCodeAnalysisonSolution|**Alt+F11** [Global]|
 
-## <a name="debug"></a>Depuração
+## <a name="debug"></a>Depurar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -52,7 +52,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Debug.StopDebugging|**Shift+F5** [Global]|
 |Debug.ToggleBreakpoint|**F9** [Global]|
 
-## <a name="edit"></a>Edit
+## <a name="edit"></a>Editar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -103,7 +103,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Edit.WordDeleteToEnd|**Ctrl+Delete** [Editor de Texto]|
 |Edit.WordDeleteToStart|**Ctrl+Backspace** [Editor de Texto]|
 
-## <a name="file"></a>File
+## <a name="file"></a>Arquivo
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -119,7 +119,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |File.SaveSelectedItems|**Ctrl+S** [Global]|
 |File.ViewinBrowser|**Ctrl+Shift+W** [Global]|
 
-## <a name="project"></a>Projeto do
+## <a name="project"></a>Project
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -128,17 +128,17 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 
 ## <a name="refactor"></a>Refatoração
 
-|{1&gt;Comando&lt;1}|Atalho de teclado [Contexto]|
+|Comando|Atalho de teclado [Contexto]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Ferramentas
 
-|{1&gt;Comando&lt;1}|Atalho de teclado [Contexto]|
+|Comando|Atalho de teclado [Contexto]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
-## <a name="view"></a>Exibir
+## <a name="view"></a>Visualizar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -169,7 +169,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Window.NextDocumentWindowNav|**Ctrl+Tab** [Global]|
 |Window.NextSplitPane|**F6** [Global]|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Identificar e personalizar atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Todos os atalhos de teclado no Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

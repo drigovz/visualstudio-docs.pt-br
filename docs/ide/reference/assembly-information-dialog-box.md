@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595781"
 ---
 # <a name="assembly-information-dialog-box"></a>Caixa de diálogo Informações do Assembly
@@ -25,7 +25,7 @@ A caixa de diálogo Informações do Assembly é usada para especificar os valor
 
 Para acessar essa caixa de diálogo, selecione um nó de projeto no **Gerenciador de Soluções** e, no menu **Projeto**, selecione **Propriedades**. Na página **Aplicativo**, selecione o botão **Informações do Assembly**.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 **Título**\
 Especifica um título para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyTitleAttribute>.
@@ -41,31 +41,31 @@ Especifica um nome de empresa para o manifesto do assembly. Corresponde ao <xref
 **Produto**\
 Especifica um nome de produto para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyProductAttribute>.
 
-**Direitos autorais**\
+**Copyright**\
 Especifica uma notificação de direitos autorais para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyCopyrightAttribute>.
 
-**Marca registrada**\
+**Marca**\
 Especifica uma marca registrada para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
-**Versão do Assembly**\
+**Versão de montagem**\
 Especifica a versão do assembly. Corresponde ao <xref:System.Reflection.AssemblyVersionAttribute>.
 
-**Versão do Arquivo**\
+**Versão do arquivo**\
 Especifica um número de versão que instrui o compilador a usar uma versão específica do recurso de versão de arquivo do Win32. Corresponde ao <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
-**GUID**\
+**Guid**\
 Um GUID exclusivo que identifica o assembly. Ao criar um projeto, o Visual Studio gera um GUID para o assembly. Corresponde ao <xref:System.Guid>.
 
-**Linguagem Neutra**\
-Especifica a qual cultura o assembly dá suporte. Corresponde ao <xref:System.Resources.NeutralResourcesLanguageAttribute>. O padrão é **(Nenhum)** .
+**Linguagem neutra**\
+Especifica a qual cultura o assembly dá suporte. Corresponde ao <xref:System.Resources.NeutralResourcesLanguageAttribute>. O padrão é **(Nenhum)**.
 
-**Tornar assembly visível usando COM**\
+**Tornar a montagem COM Visível**\
 Especifica se os tipos no assembly estarão disponíveis para o COM. Corresponde ao <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 > [!NOTE]
-> Para obter mais informações sobre como definir essas propriedades ao gerar um pacote NuGet em uma .NET Framework biblioteca de classes, consulte [Configurar propriedades do projeto para o pacote](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
+> Para obter mais informações sobre a configuração dessas propriedades ao gerar um pacote NuGet em uma biblioteca de classes .NET Framework, consulte [Configurar propriedades do projeto para o pacote](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página de Aplicativo, Designer de Projeto (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Atributos](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632765"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>Tarefa RequiresFramework35SP1Assembly
@@ -31,7 +31,7 @@ Determina se o aplicativo requer o .NET Framework 3.5 SP1.
 
  A tabela a seguir descreve os parâmetros da tarefa `RequiresFramework35SP1Assembly`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`Assemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Define os assemblies referenciados no aplicativo.|
 |`CreateDesktopShortcut`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, cria um ícone de atalho na área de trabalho durante a instalação.|

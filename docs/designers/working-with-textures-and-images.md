@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589858"
 ---
 # <a name="work-with-textures-and-images"></a>Trabalhar com texturas e imagens
@@ -50,7 +50,7 @@ Os mapas de cubo podem conter diferentes tipos de dados — por exemplo, cores o
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Cargo|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
-|[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens para trabalhar com texturas e imagens.|
+|[Editor de imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens para trabalhar com texturas e imagens.|
 |[Exemplos do Editor de Imagens](../designers/how-to-create-a-basic-texture.md)|Fornece links para tópicos que demonstram como usar o Editor de Imagens para executar tarefas de processamento de imagens comuns.|

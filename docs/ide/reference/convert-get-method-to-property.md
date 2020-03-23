@@ -1,29 +1,32 @@
 ---
 title: Converter o método Get em propriedade; converter propriedade em um método Get
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e3807f3902cbd0d2718f249f15cd268fb81ac51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570226"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094211"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refatorações para converter o método Get em propriedade/converter uma propriedade no método Get
 
 Essas refatorações aplicam-se a:
 
 - C#
+
+- Visual Basic
 
 ## <a name="convert-get-method-to-property"></a>Converter o método Get em propriedade
 
@@ -38,7 +41,7 @@ Essas refatorações aplicam-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir método por propriedade** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir método por propriedade** no pop-up da janela Visualização.
    - **Mouse**
       - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Substituir método por propriedade** no pop-up da janela Visualização.
 
@@ -79,13 +82,13 @@ public int MyValue
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir propriedade por métodos** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir propriedade por métodos** no pop-up da janela Visualização.
    - **Mouse**
       - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Substituir propriedade por métodos** no pop-up da janela Visualização.
 
 1. Se você estiver satisfeito com a alteração na visualização do código, pressione **Enter** ou clique na correção no menu e as alterações serão confirmadas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

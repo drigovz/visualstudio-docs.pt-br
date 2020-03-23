@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8743f042c7c33da34895f93e5df3990f6e0b2ed2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115315"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Atualizações de controle para implantações do Visual Studio com base em rede
@@ -90,7 +90,7 @@ Conforme descrito anteriormente, o Visual Studio verifica o local do qual foi in
 
 Conforme descrito anteriormente, o Visual Studio verifica o local do qual foi instalado, tal como um compartilhamento de rede ou a Internet, para ver se há atualizações disponíveis. Quando uma atualização está disponível, o Visual Studio notifica o usuário com um ícone de notificação no canto inferior direito da janela.
 
-   ![O ícone de notificação no IDE do Visual Studio](media/vs-2019/notification-bar.png "O ícone de notificação no IDE do Visual Studio")
+   ![O ícone de notificação no Visual Studio IDE](media/vs-2019/notification-bar.png "O ícone de notificação no Visual Studio IDE")
 
 ::: moniker-end
 
@@ -123,10 +123,10 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instale o Visual Studio](install-visual-studio.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)

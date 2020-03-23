@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
 ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947048"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
@@ -23,7 +23,7 @@ Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele re
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Principais benefícios do Visual Studio para ganhar pelo menos uma competência de qualquer tipo
 
-| Competências obtidas apenas no nível prateado               | Pelo menos uma competência obtida no nível ouro   |
+| Competências conquistadas apenas no nível de prata               | Pelo menos uma competência conquistada no nível de ouro   |
 |------------------------------------------------------------|----------------------------------------------------|
 | Cinco assinaturas do Visual Studio Enterprise                   | 10 assinaturas do Visual Studio Enterprise          |
 
@@ -37,7 +37,7 @@ Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele re
 | Produtividade de nuvem                          | Cinco assinaturas do Visual Studio Enterprise                  | 25 assinaturas do Visual Studio Enterprise               |
 | DevOps                                      | Cinco assinaturas do Visual Studio Enterprise                  | 25 assinaturas do Visual Studio Enterprise                |
 
-Independentemente de quantas competências um parceiro ganha, o número de assinaturas do Visual Studio é limitado da seguinte maneira:
+Independentemente de quantas competências um parceiro ganha, o número de assinaturas do Visual Studio é limitado da seguinte forma:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Limites para assinaturas do Visual Studio ganhadas por meio de competências
 
@@ -47,9 +47,9 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 
-Os parceiros com uma competência estão qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
+Parceiros com competência são elegíveis para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
 
-Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)** . O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
+Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)**. O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
 
 - Visual Studio Professional – somente a versão mais recente
 - Windows Enterprise – somente a versão mais recente e deve ser usado somente para desenvolvimento e teste
@@ -57,13 +57,13 @@ Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Profess
 
 Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares para desenvolvimento, incluindo o SQL Server Developer Edition.
 
-A assinatura do Visual Studio Professional (MPN) não inclui Azure DevOps Services benefícios, crédito individual do Azure DevTest, suporte técnico, treinamento ou outros benefícios do Assinante que estão disponíveis com as assinaturas do Visual Studio que são oferecidas comercialmente.
+A assinatura do Visual Studio Professional (MPN) não inclui benefícios do Azure DevOps Services, crédito individual do Azure DevTest, suporte técnico, treinamento ou outros benefícios para assinantes que estão disponíveis com assinaturas do Visual Studio que são oferecidas Comercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrição somente para uso interno
 
 As regras do MPN estipulam que todos os softwares oferecidos como um benefício do programa somente podem ser usados internamente. Isso se aplica aos softwares oferecidos para serem usados pelos assinantes individuais do Visual Studio e aos benefícios gerais de licença de software do MPN.
 
-Essa restrição de uso somente interno significa basicamente que os parceiros não podem usar o software como parte do trabalho que realizam para entidades externas à sua própria organização. A criação de um aplicativo que será usado pelos funcionários de parceiros só é boa, mas não é permitido criar um aplicativo que faça parte de um projeto de cliente.
+Essa restrição de uso somente interno significa basicamente que os parceiros não podem usar o software como parte do trabalho que realizam para entidades externas à sua própria organização. Construir um aplicativo que será usado por funcionários parceiros só é bom, mas construir um aplicativo que faça parte de um projeto de cliente não é permitido.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Entrada necessária com o Visual Studio
 

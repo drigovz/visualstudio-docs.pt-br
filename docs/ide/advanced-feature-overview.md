@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78235193"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
@@ -24,13 +24,13 @@ O instalador modular do Visual Studio permite que você escolha e instale *carga
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 ## <a name="connect-to-databases"></a>Conectar-se aos bancos de dados
 
-O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Gerenciador de Servidores**, no menu principal, escolha **Exibir** > **Gerenciador de Servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
+O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Server Explorer,** no menu principal, escolha **Exibir** > **o Explorador do Servidor**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
@@ -136,8 +136,8 @@ Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o
 
 Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Novidades do Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579375"
 ---
 # <a name="step-8-customize-the-quiz"></a>Etapa 8: Personalizar o teste
@@ -25,11 +25,11 @@ ms.locfileid: "77579375"
 Na última parte do tutorial, você explorará algumas maneiras de personalizar o questionário e expandir no que já aprendeu. Por exemplo, pense em como o programa cria os problemas aleatórios de divisão para os quais a resposta nunca é uma fração. Para obter mais informações, mude o controle `timeLabel` para uma cor diferente e dê uma dica à pessoa realizando o teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-customize-the-quiz"></a>Para personalizar o teste
 
-- Quando apenas cinco segundos permanecem em um teste, transforme o controle de **rótulo** de marca em vermelho definindo sua propriedade **BackColor** .
+- Quando apenas cinco segundos permanecerem em um teste, gire o controle **timeLabel** vermelho definindo sua propriedade **BackColor.**
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -47,6 +47,6 @@ Na última parte do tutorial, você explorará algumas maneiras de personalizar 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para o próximo tutorial, consulte **[tutorial 3: criar um jogo de correspondência](../ide/tutorial-3-create-a-matching-game.md)** .
+- Para ir ao próximo tutorial, consulte **[Tutorial 3: Crie um jogo de correspondência](../ide/tutorial-3-create-a-matching-game.md)**.
 
-- Para retornar à etapa anterior do tutorial, veja [Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).
+- Para retornar à etapa tutorial anterior, consulte [Passo 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).

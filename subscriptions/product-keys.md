@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
 ms.openlocfilehash: 3cd4992a89f5cdd12e85d83e3ac8b525bd2fe7d4
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947120"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
@@ -43,7 +43,7 @@ Se você tiver solicitado o número máximo de chaves disponíveis para sua assi
 Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluídas na assinatura é suficiente para a maioria dos assinantes. Se precisar de chaves adicionais, você poderá enviar uma solicitação por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/), que analisará cada caso individualmente.
 
 ## <a name="accessing-product-keys"></a>Acessar chaves do produto (Product Key)
-Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul **Obter Chave** de um produto específico na página [Downloads](https://my.visualstudio.com/downloads), conforme mostrado abaixo.  Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
+Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
@@ -59,7 +59,7 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 
 ### <a name="product-key-types"></a>Tipos de chave do produto (Product Key)
 
-|    Tipo de Chave           |    DESCRIÇÃO                                                                                                                                                                                                           |
+|    Tipo de Chave           |    Descrição                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Não Aplicável                    |    Nenhuma chave é necessária para instalar este produto.                                                       |
 |    Varejo                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |

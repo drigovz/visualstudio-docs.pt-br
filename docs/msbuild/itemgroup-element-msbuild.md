@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633636"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
-Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto do MSBuild deve ser especificado como um filho de um elemento `ItemGroup`.
+Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto MSBuild deve `ItemGroup` ser especificado como filho de um elemento.
 
 \<Project> \<ItemGroup>
 
@@ -43,27 +43,27 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
-As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Condition`|Atributo opcional. Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 |`Label`|Atributo opcional. Identifica o `ItemGroup`.|
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|Define as entradas do processo de build. Pode não haver nenhum ou pode haver mais de um elemento `Item` em um `ItemGroup`.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
-| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
-| [Target (destino)](../msbuild/target-element-msbuild.md) | A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md). |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Destino](../msbuild/target-element-msbuild.md) | A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Exemplo
 
@@ -88,6 +88,6 @@ O exemplo de código a seguir mostra as coleções de itens definidos pelo usuá
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)
-- [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Itens comuns do projeto MSBuild](../msbuild/common-msbuild-project-items.md)

@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631504"
 ---
 # <a name="unzip-task"></a>Tarefa de descompactação
@@ -40,7 +40,7 @@ Descompacta um arquivo *.zip* no local especificado.
 
  A tabela a seguir descreve os parâmetros da tarefa `Unzip`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> Especifica a pasta de destino para descompactar o arquivo.|
 |`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. Usa `false` como padrão.|

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596509"
 ---
 # <a name="class-designer-errors"></a>Erros do Designer de Classe
@@ -46,6 +46,6 @@ Você pode obter ajuda com outros erros e avisos nos seguintes recursos:
 - [Trabalhar com o código do Visual C++](working-with-visual-cpp-code.md) inclui informações de solução de problemas de como exibir C++ em um diagrama de classe.
 - O [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) fornece um fórum para perguntas sobre o **Designer de Classe**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Projetar e exibir classes e tipos](designing-and-viewing-classes-and-types.md)
+- [Projetar e visualizar classes e tipos](designing-and-viewing-classes-and-types.md)

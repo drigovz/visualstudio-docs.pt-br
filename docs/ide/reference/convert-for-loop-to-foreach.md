@@ -1,20 +1,21 @@
 ---
 title: Refatorar código para converter um loop for em uma instrução foreach
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570239"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094601"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refatoração para converter entre um loop for e uma instrução foreach
 
@@ -28,6 +29,8 @@ Esta refatoração aplica-se a:
 
 - C#
 
+- Visual Basic
+
 > [!NOTE]
 > A refatoração da Ação Rápida **Converter em foreach** só está disponível para loops [for](/dotnet/csharp/language-reference/keywords/for) que contêm todas as três partes: um inicializador, uma condição e um iterador.
 
@@ -39,15 +42,15 @@ Os motivos pelos quais talvez você deseje converter um loop [for](/dotnet/cshar
 
 - Você deseja simplificar seu código e reduza a probabilidade de erros lógicos nas seções do inicializador, de condição e de iteração.
 
-### <a name="how-to-use-it"></a>Como usá-lo
+### <a name="how-to-use-it"></a>Como usar
 
 1. Coloque o cursor na palavra-chave `for`.
 
-1. Pressione **Ctrl**+ **.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
+1. Pressione **Ctrl**+**.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
 
    ![Converter em menu foreach](media/convert-to-foreach.png)
 
-1. Selecione **Converter em 'foreach'** . Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
+1. Selecione **Converter em 'foreach'**. Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Converter uma instrução foreach em um loop for
 
@@ -67,22 +70,22 @@ Os motivos pelos quais talvez você deseje converter uma instrução [foreach](/
 
 - Você está [iterando por meio de uma matriz multidimensional](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) e deseja ter mais controle sobre os elementos da matriz.
 
-### <a name="how-to-use-it"></a>Como usá-lo
+### <a name="how-to-use-it"></a>Como usar
 
 1. Coloque o cursor na palavra-chave `foreach` ou `For Each`.
 
-1. Pressione **Ctrl**+ **.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
+1. Pressione **Ctrl**+**.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
 
    ![Converter em menu for](media/convert-to-for.png)
 
-1. Selecione **Converter em 'for'** . Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
+1. Selecione **Converter em 'for'**. Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
 
 1. Como a refatoração introduz uma nova variável de contagem de iterações, a caixa **Renomear** é exibida no canto superior direito do editor. Se desejar escolher um nome diferente para a variável, digite-o e, em seguida, pressione **Enter** ou selecione **Aplicar** na caixa **Renomear**. Se você não deseja escolher um novo nome, pressione **Esc** ou selecione **Aplicar** para ignorar a caixa **Renomear**.
 
 > [!NOTE]
-> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para o tipo dos itens na coleção. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código específicas são configuradas no nível do computador em **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Geral** >  **\'preferências de var**, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
+> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para o tipo dos itens na coleção. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações específicas de estilo de código são configuradas no nível da máquina em **Ferramentas** > **Opções** > **Editor de** > texto**C#** > **Estilo de** > código**Preferências gerais** > **\'var,** ou no nível de solução em um arquivo [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

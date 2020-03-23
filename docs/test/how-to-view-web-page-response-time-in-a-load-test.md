@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594312"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
@@ -29,7 +29,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 - A porcentagem de iterações de teste que correspondem à meta de tempo de resposta para a página.
 
-- Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no **Analisador de Teste de Carga**:
+- Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Gráficos no **Analisador de Teste de Carga**:
 
 - Analisando o tempo de resposta da página da Web na exibição de tabelas
 
@@ -48,21 +48,21 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
    |**Página**|O nome da página da Web.|
    |**Cenário**|O nome do cenário. Importante se você tiver mais de um cenário no teste de desempenho na Web.|
    |**Teste**|O nome do teste de desempenho na Web. Importante se você tiver mais de um teste de desempenho na Web em seu teste de carga.|
-   |**Network**|O tipo de rede.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
+   |**Rede**|O tipo de rede.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Total**|O número total de solicitações feitas para a página da Web. Esse é o total para todas as iterações no teste de carga.|
-   |**Méd.**|Tempo médio de resposta da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
+   |**Av.**|Tempo médio de resposta da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Min**|O tempo de resposta mínimo da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
-   |**Mediana**|O tempo de resposta mediana da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
+   |**Median**|O tempo de resposta mediana da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**90%**|O 90º percentil para o tempo de resposta. Isso indica que 90% das páginas respondeu mais rápido do que esse número, e 10% das páginas respondeu mais lentamente.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**95%**|O 95º percentil para o tempo de resposta. Isso indica que 95% das páginas respondeu mais rápido do que esse número e 5% das páginas respondeu mais lentamente.|
    |**99%**|O 99º percentil para o tempo de resposta. Isso indica que 99% das páginas respondeu mais rápido do que esse número e 1% das páginas respondeu mais lentamente.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Max**|O tempo de resposta máximo da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Desvio padrão**|Por padrão, os dados de desvio padrão não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Tempo da Página**|O tempo médio de resposta para todas as solicitações feitas para a página da Web.|
-   |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:** a meta de tempo da página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
+   |**Objetivo**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:** a meta de tempo da página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
    |**Meta da reunião %**|A porcentagem de solicitações feitas para a página da Web que atingiu a meta de tempo de resposta.|
 
-   Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Exibir dados de tempo de resposta em um grafo
 
@@ -70,7 +70,7 @@ Você também pode exibir dados de tempo de resposta em um gráfico para ver com
 
 Para exibir dados de tempo de resposta em um gráfico:
 
-1. No **Analisador de Teste de Carga**, escolha **Grafos** na barra de ferramentas para garantir que o grafo seja exibido.
+1. No **Analisador de Teste de Carga,** escolha **Gráficos** na barra de ferramentas para certificar-se de que o gráfico é exibido.
 
 2. Na janela **Contadores**, expanda o nó do cenário no qual você está interessado (por exemplo, `Scenario1`).
 
@@ -84,15 +84,15 @@ Para exibir dados de tempo de resposta em um gráfico:
 
     Os dados são adicionado ao gráfico.
 
-7. Adicional Repita a etapa anterior para **média de tempo de página**, **meta de tempo de resposta da página**e **total de páginas**.
+7. (Opcional) Repita a etapa anterior para **Avg. Page Time**, **Page Response Time Goal**e Total **Pages**.
 
    > [!NOTE]
    > A **Meta de Tempo de Resposta da Página** é constante.
 
    Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

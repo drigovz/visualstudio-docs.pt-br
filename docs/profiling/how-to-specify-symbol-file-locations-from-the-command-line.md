@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77476897"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como especificar locais de arquivo de símbolo por meio da linha de comando
@@ -48,7 +48,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
 
     `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    em que *<LocalStore>* é o caminho do diretório local que você criou.
+    onde *<LocalStore>* está o caminho do diretório local que você criou.
 
 ## <a name="specify-component-symbol-files"></a>Especificar arquivos de símbolo de componente
  As Ferramentas de Criação de Perfil pesquisam os arquivos .*pdb* dos componentes que você deseja analisar em seus locais originais, que são armazenados nos componentes ou na pasta que contém o arquivo de dados de criação de perfil. Você pode especificar outros locais para pesquisa, adicionando um ou mais caminhos à **_NT_SYMBOL_PATH** ou à opção **/SymbolPath**. Separe caminhos com ponto e vírgula.
@@ -60,6 +60,6 @@ Para exibir informações de símbolo como nomes de função e números de linha
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
  ```
 
- A seguinte linha de comando VSPerfReport adiciona o diretório *C:\Projects\Symbols* ao caminho de pesquisa usando a opção **/SymbolPath**.
+ A seguinte linha de comando VSPerfReport adiciona o diretório *C:\Projects\Symbols* ao caminho de pesquisa usando a opção **/SymbolPath.**
 
- **VSPerfReport**  *MyApp* **. exe/SymbolPath: C:\Projects\Symbols/Summary: ALL**
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

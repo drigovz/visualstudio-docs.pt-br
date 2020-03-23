@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778681"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Como especificar o binário a ser iniciado
 
-Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.
+Para traçar o perfil de binários, como DLLs, você deve inserir informações na ** \<** caixa de diálogo Página> Páginas de Propriedade. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.
 
 1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse no binário de destino e, em seguida, clique em **Propriedades**.
 
@@ -39,6 +39,6 @@ Para analisar binários, como DLLs, você deve inserir informações na caixa de
 
 7. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Configure sessões de desempenho](../profiling/configuring-performance-sessions.md)

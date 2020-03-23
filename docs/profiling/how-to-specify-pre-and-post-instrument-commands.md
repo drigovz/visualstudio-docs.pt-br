@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778707"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como especificar comandos de pré e pós-instrumentação
@@ -45,7 +45,7 @@ Para obter o caminho para as ferramentas de criação de perfil, confira [Especi
 3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pré-Instrumento**.
 
     > [!NOTE]
-    > Você pode clicar no botão de reticências **(...)**  ao lado da caixa **Linha de comando** para procurar e selecionar o arquivo .exe, .cmd ou .bat apropriado.
+    > Você pode clicar no botão ellipsis **(...)** que é adjacente à caixa **de linha de comando** para navegar e selecionar o arquivo apropriado .exe, .cmd ou .bat.
 
 4. Clique em **OK**.
 
@@ -64,12 +64,12 @@ Para obter o caminho para as ferramentas de criação de perfil, confira [Especi
 3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pós-Instrumento**.
 
     > [!NOTE]
-    > Você pode clicar no botão de reticências **(...)**  ao lado da caixa **Linha de comando** para procurar e selecionar o arquivo .exe, .cmd ou .bat apropriado.
+    > Você pode clicar no botão ellipsis **(...)** que é adjacente à caixa **de linha de comando** para navegar e selecionar o arquivo apropriado .exe, .cmd ou .bat.
 
 4. Clique em **OK**.
 
      Para desabilitar a execução do comando sem removê-lo, selecione a caixa de seleção **Excluir da instrumentação**. Para modificar as configurações do vinculador ou do compilador, use as páginas de propriedades do projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
+[Configure sessões de desempenho](../profiling/configuring-performance-sessions.md)

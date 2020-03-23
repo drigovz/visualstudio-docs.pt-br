@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8e1df93fa9e865bb9b9136b9d0a0e07f1a485ea
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "78937510"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431359"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Perguntas frequentes sobre o FxCop e sobre os analisadores do FxCop
 
@@ -31,11 +31,11 @@ Os analisadores do FxCop baseiam-se no .NET Compiler Platform ("Roslyn"). Você 
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>O comando Executar análise de código executa analisadores do FxCop?
 
-Não. Quando você seleciona **analisar** > **executar análise de código**, ele executa a análise herdada. **Executar análise de código** não tem efeito sobre os analisadores baseados em Roslyn, incluindo os analisadores do FxCop baseados em Roslyn.
+Antes do visual studio 2019 16.5, quando você seleciona **Analyze** > **Run Code Analysis**, ele executa análise socorrida. Iniciando o Visual Studio 2019 16.5, a opção de menu **Run Code Analysis** executa analisadores baseados em Roslyn para o projeto ou solução selecionados. Se você tiver instalado analisadores FxCop baseados em Roslyn, eles também serão executados. Para obter mais informações, [consulte Como executar a análise de código manualmente para código gerenciado](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>A propriedade do projeto msbuild RunCodeAnalysis executa analisadores?
 
-Não. A propriedade **RunCodeAnalysis** em um arquivo de projeto (por exemplo, *.csproj*) só é usada para executar o FxCop herdado. Ele executa uma tarefa msbuild pós-build que invoca **FxCopCmd.exe**. Isso é equivalente a selecionar **Analisar** > **Executar análise de código** no Visual Studio.
+Não. A propriedade **RunCodeAnalysis** em um arquivo de projeto (por exemplo, *.csproj*) só é usada para executar o FxCop herdado. Ele executa uma tarefa msbuild pós-build que invoca **FxCopCmd.exe**.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Então, como faço para executar analisadores do FxCop?
 
@@ -43,22 +43,22 @@ Para executar os analisadores do FxCop, primeiro [instale o pacote NuGet](instal
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Eu recebo aviso CA0507 mesmo depois de instalar o pacote NuGet dos analisadores FxCop
 
-Se você instalou os analisadores do FxCop, mas continuar a obter o aviso CA0507 **"" executar análise de código "foi preterido em favor dos analisadores do FxCop, que são executados durante a compilação"** , talvez seja necessário definir a Propriedade MSBuild do **RunCodeAnalysis** no [arquivo de projeto](../ide/solutions-and-projects-in-visual-studio.md#project-file) como **false**. Caso contrário, a análise herdada será executada após cada compilação.
+Se você instalou analisadores FxCop, mas continua recebendo aviso CA0507 **""Run Code Analysis" foi preterido em favor dos analisadores FxCop, que são executados durante a compilação"**, você pode precisar definir a propriedade **msbuild RunCodeAnalysis** em seu [arquivo de projeto](../ide/solutions-and-projects-in-visual-studio.md#project-file) como **falsa**. Caso contrário, a análise de legado será executada após cada compilação.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quais regras foram transportadas para analisadores de FxCop?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quais regras foram portadas para analisadores FxCop?
 
-Para obter informações sobre quais regras de análise herdadas foram transportadas para [analisadores de FxCop](install-fxcop-analyzers.md), consulte [status da porta da regra do FxCop](fxcop-rule-port-status.md).
+Para obter informações sobre quais regras de análise de legado foram portadas para [analisadores FxCop,](install-fxcop-analyzers.md)consulte [o status da porta de regra Fxcop](fxcop-rule-port-status.md).
 
-## <a name="code-analysis-warnings-are-treated-as-errors"></a>Os avisos de análise de código são tratados como erros
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Avisos de análise de código são tratados como erros
 
-Se o seu projeto usar a opção de compilação para tratar avisos como erros, os avisos do FxCop Analyzer poderão aparecer como erros. Para impedir que avisos de análise de código sejam tratados como erros, siga as etapas em [perguntas frequentes sobre análise de código](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+Se o seu projeto usar a opção de compilação para tratar os avisos como erros, os avisos do analisador FxCop podem aparecer como erros. Para evitar que os avisos de análise de código sejam tratados como erros, siga as etapas da [FAQ de análise de código](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Confira também
 
 - [Visão geral dos analisadores do .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Migrar para analisadores do FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
+- [Migrar para analisadores FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
 - [Instalar analisadores do FxCop](install-fxcop-analyzers.md)

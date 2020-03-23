@@ -18,19 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590170"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
 
 Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, consulte [Como exibir tipos existentes](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a> Criar um novo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Criar um novo tipo
 
-1. Na **Caixa de Ferramentas**, no **Designer de Classe**, arraste um dos itens abaixo para um diagrama de classe:
+1. Na **caixa de ferramentas,** em **Class Designer,** arraste um desses para um diagrama de classe:
 
     - **Classe** ou **Classe Abstrata**
 
@@ -40,9 +40,9 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
     - **Estrutura** (VB) ou **Struct** (C#)
 
-    - **Delegado**
+    - **Delegar**
 
-    - **Módulo** (apenas VB)
+    - **Módulo** (somente VB)
 
 2. Dê um nome ao tipo. Selecione o nível de acesso.
 
@@ -62,12 +62,12 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
     |Classes, classes abstratas, estruturas ou structs|Métodos, propriedades, campos, eventos, construtores (método), destruidores (método) e constantes que definem o tipo|
     |Enums|Valores de campo que compõem a enumeração|
     |Interfaces|Métodos, propriedades e eventos que compõem a interface|
-    |Delegado|Parâmetros que definem o representante|
+    |delegado|Parâmetros que definem o representante|
     |Módulo|Métodos, propriedades, campos, eventos, construtores (método) e constantes que definem o módulo|
 
      Consulte [Criando membros](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Aplicar um atributo personalizado a um tipo
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Aplicar um atributo personalizado a um tipo
 
 1. Clique na forma do tipo em um diagrama de classes.
 
@@ -77,7 +77,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
    Os atributos personalizados são aplicados ao tipo.
 
-## <a name="CustAttributeMember"></a> Aplicar um atributo personalizado a um membro de tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Aplique um atributo personalizado a um membro do tipo
 
 1. Clique no nome do membro na forma de seu tipo em um diagrama de classes ou em sua linha na janela Detalhes da Classe.
 
@@ -87,7 +87,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
    Os atributos personalizados são aplicados ao tipo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar herança entre tipos](how-to-create-inheritance-between-types.md)
 - [Como criar associações entre tipos](how-to-create-associations-between-types.md)

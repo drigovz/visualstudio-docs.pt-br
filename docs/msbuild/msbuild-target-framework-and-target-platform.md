@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633194"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
@@ -30,13 +30,13 @@ Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*,
 
 - O .NET Framework 2.0 (incluído no Visual Studio 2005)
 
-- O .NET Framework 3,0 (incluído no Windows Vista)
+- O .NET Framework 3.0 (incluído no Windows Vista)
 
-- O .NET Framework 3,5 (incluído no Visual Studio 2008)
+- O .NET Framework 3.5 (incluído no Visual Studio 2008)
 
 - O .NET Framework 4.5.2
 
-- O .NET Framework 4,6 (incluído no Visual Studio 2015)
+- O .NET Framework 4.6 (incluído no Visual Studio 2015)
 
 - O .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
  Um *perfil de destino* é um subconjunto de uma estrutura de destino. Por exemplo, o .NET Framework 4 Client Profile não inclui referências aos assemblies do MSBuild.
 
  > [!NOTE]
- > Os perfis de destino se aplicam somente a [bibliotecas de classes portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+ > Os perfis-alvo aplicam-se apenas a [bibliotecas de classe portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
 
  O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE.
 
@@ -101,4 +101,4 @@ Uma *configuração de destino* é um subconjunto de uma plataforma de destino. 
 
 ## <a name="see-also"></a>Confira também
 
-- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

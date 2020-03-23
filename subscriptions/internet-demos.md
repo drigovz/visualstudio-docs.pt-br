@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como usar as chaves do produto (Product Keys) para dar suporte a demonstrações da Internet por meio dos Serviços de Terminal e habilitar o acesso ao RDS
 ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937455"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Demonstrações da Internet por meio dos Serviços de Terminal
@@ -35,7 +35,7 @@ Se as seguintes condições forem atendidas, os usuários finais poderão conect
 - As chaves do produto (Product Keys) para habilitar as conexões de usuário devem ser obtidas por um assinante do Visual Studio.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Windows Server](https://docs.microsoft.com/windows-server/)
+- [Documenação do Servidor Windows](https://docs.microsoft.com/windows-server/)
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114740"
 ---
 # <a name="repair-visual-studio"></a>Reparar o Visual Studio
@@ -36,7 +36,7 @@ ms.locfileid: "76114740"
 
 1. Abra o instalador, escolha **Mais** e, em seguida, escolha **Reparar**.
 
-    ![Reparar o Visual Studio do Instalador do Visual Studio](media/repair-visual-studio.png "Reparar o Visual Studio do Instalador do Visual Studio")
+    ![Reparar Visual Studio do Visual Studio Installer](media/repair-visual-studio.png "Reparar Visual Studio do Visual Studio Installer")
 
    > [!NOTE]
    > Reparar o Visual Studio redefinirá o ambiente. As personalizações locais, como as extensões do usuário instaladas sem elevação, as configurações de usuário e os perfis serão removidos. As configurações sincronizadas, como temas, cores, associações de teclas serão restauradas.
@@ -53,7 +53,7 @@ ms.locfileid: "76114740"
 
      Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
 
-     ![Abra o Instalador do Visual Studio](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
+     ![Abra o Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Abra o Visual Studio Installer")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:
@@ -64,7 +64,7 @@ ms.locfileid: "76114740"
 
 1. No instalador, procure a edição do Visual Studio instalada por você. Em seguida, escolha **Mais** e escolha **Reparar**.
 
-     ![Reparar o Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Reparar o Visual Studio 2019")
+     ![Reparo Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Reparo Visual Studio 2019")
 
    > [!NOTE]
    > Reparar o Visual Studio redefinirá o ambiente. As personalizações locais, como as extensões do usuário instaladas sem elevação, as configurações de usuário e os perfis serão removidos. As configurações sincronizadas, como temas, cores, associações de teclas serão restauradas.
@@ -77,9 +77,9 @@ ms.locfileid: "76114740"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
+* [Instale o Visual Studio](install-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
 * [Desinstalar o Visual Studio](uninstall-visual-studio.md)
 * [Solução de problemas de instalação e atualização do Visual Studio](troubleshooting-installation-issues.md)

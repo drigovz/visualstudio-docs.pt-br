@@ -18,21 +18,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431469"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
 
 ## <a name="analysis"></a>Análise
 
-- Habilitar análise de solução completa
+- Análise de código ao vivo ou escopo de análise de antecedentes
 
-   Permite a análise de código em todos os arquivos na solução, não apenas nos arquivos de código abertos. Para obter mais informações, confira [Análise de solução completa](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Configure o escopo de análise de fundo para código gerenciado. Para obter mais informações, [consulte Como: Configurar o escopo de análise de código ao vivo para código gerenciado](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Usando diretivas
 
@@ -55,7 +55,7 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 
  **Habilitar realce de referências e palavras-chave**
 
-O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências ou palavras-chave realçadas pressionando **Ctrl** + **Shift** + **Seta para baixo** ou **Ctrl**  + **Shift** + **Seta para cima**.
+O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências destacadas ou palavras-chave pressionando **ctrl** + **shift** + **seta para baixo** ou**seta** **Ctrl** + **Shift** + Up .
 
 ## <a name="outlining"></a>Estrutura de tópicos
 
@@ -65,7 +65,7 @@ Ao abrir um arquivo no editor de código, você pode exibir o documento no modo 
 
 **Mostrar separadores de linha do procedimento**
 
-O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto nos locais listados na tabela a seguir:
+O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto em locais listados na tabela a seguir:
 
 |Local no arquivo de origem .vb|Exemplo de local da linha|
 |---------------------------------|------------------------------|
@@ -97,7 +97,7 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 
 **Inserção automática de constructos finais**
 
-Quando você digita, por exemplo, a primeira linha de uma declaração de procedimento `Sub Main`, e pressiona **Enter**, o editor de texto adiciona uma linha `End Sub` correspondente. Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
+Quando você digita — por exemplo, a `Sub Main`primeira linha de uma declaração `End Sub` de procedimento — e **pressiona Enter**, o editor de texto adiciona uma linha correspondente. Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
 
 **Inserção automática de membros Interface e MustOverride**
 
@@ -107,7 +107,7 @@ Quando você confirma uma instrução `Implements` ou uma instrução `Inherits`
 
 O editor de texto pode sugerir soluções para erros comuns e permitir selecionar a correção apropriada, que então é aplicada ao seu código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)

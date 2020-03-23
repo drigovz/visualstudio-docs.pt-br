@@ -1,5 +1,5 @@
 ---
-title: Registrando e cancelando o registro de VSPackages | Microsoft Docs
+title: Registrando e desregistrando VSPackages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409149"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79303179"
 ---
-# <a name="register-and-unregister-vspackages"></a>Registrar e cancelar o registro de VSPackages
+# <a name="register-and-unregister-vspackages"></a>Registre e desregistre VSPacotes
 Você usa atributos para registrar um VSPackage, mas
 
-## <a name="register-a-vspackage"></a>Registrar um VSPackage
- Você pode usar atributos para controlar o registro de VSPackages gerenciados. Todas as informações de registro estão contidas em um arquivo *. pkgdef* . Para obter mais informações sobre o registro baseado em arquivo, consulte [utilitário CreatePkgDef](../extensibility/internals/createpkgdef-utility.md).
+## <a name="register-a-vspackage"></a>Registre um VSPackage
+ Você pode usar atributos para controlar o registro de VSPackages gerenciados. Todas as informações de registro estão contidas em um arquivo *.pkgdef.* Para obter mais informações sobre o registro baseado em arquivos, consulte [O utilitário CreatePkgDef](../extensibility/internals/createpkgdef-utility.md).
 
  O código a seguir mostra como usar os atributos de registro padrão para registrar seu VSPackage.
 
@@ -36,15 +36,15 @@ public sealed class BasicPackage : Package
 ```
 
 ## <a name="unregister-an-extension"></a>Retirar o registro de uma extensão
- Se você estiver experimentando vários VSPackages diferentes e quiser removê-los da instância experimental, bastará executar o comando **Reset** . Procure **redefinir a instância experimental do Visual Studio** na página inicial do computador ou execute este comando na linha de comando:
+ Se você tem experimentado com muitos VSPackages diferentes e deseja removê-los da instância experimental, você pode apenas executar o comando **Reset.** Procure **redefinir a instância experimental do Visual Studio** na página inicial do seu computador ou execute este comando a partir da linha de comando:
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- Se você quiser desinstalar uma extensão que você instalou em sua instância de desenvolvimento do Visual Studio, vá para **ferramentas** > **extensões e atualizações**, localize a extensão e clique em **desinstalar**.
+ Se você quiser desinstalar uma extensão instalada na instância de desenvolvimento do Visual Studio, vá para**Extensões e Atualizações de** **Ferramentas,** > encontre a extensão e clique em **Desinstalar**.
 
- Se, por algum motivo, nenhum desses métodos obtiver sucesso ao desinstalar a extensão, você poderá cancelar o registro do assembly VSPackage da linha de comando da seguinte maneira:
+ Se, por algum motivo, nenhum desses métodos tiver sucesso em desinstalar a extensão, você pode cancelar o registro do conjunto VSPackage da linha de comando da seguinte forma:
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>
@@ -52,9 +52,9 @@ public sealed class BasicPackage : Package
 
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>
 
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Usar um atributo de registro personalizado para registrar uma extensão
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Use um atributo de registro personalizado para registrar uma extensão
 
-Em alguns casos, talvez seja necessário criar um novo atributo de registro para sua extensão. Você pode usar atributos de registro para adicionar novas chaves do registro ou para adicionar novos valores às chaves existentes. O novo atributo deve derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>e deve substituir os métodos <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>.
+Em certos casos, você pode precisar criar um novo atributo de registro para sua extensão. Você pode usar atributos de registro para adicionar novas chaves de registro ou adicionar novos valores às chaves existentes. O novo atributo <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>deve derivar , <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> e deve substituir os métodos e métodos.
 
 ### <a name="create-a-custom-attribute"></a>Como criar um atributo personalizado
 
@@ -67,11 +67,11 @@ public class CustomRegistrationAttribute : RegistrationAttribute
 }
 ```
 
- O <xref:System.AttributeUsageAttribute> é usado em classes de atributo para especificar o elemento Program (classe, método, etc.) ao qual o atributo pertence, se ele pode ser usado mais de uma vez e se pode ser herdado.
+ O <xref:System.AttributeUsageAttribute> é usado em classes de atributos para especificar o elemento do programa (classe, método, etc.) ao qual o atributo pertence, se pode ser usado mais de uma vez e se pode ser herdado.
 
-### <a name="create-a-registry-key"></a>Criar uma chave do registro
+### <a name="create-a-registry-key"></a>Criar uma chave de registro
 
-No código a seguir, o atributo personalizado cria uma subchave **personalizada** sob a chave para o VSPackage que está sendo registrado.
+No código a seguir, o atributo personalizado cria uma subchave **Personalizada** a chave para o VSPackage que está sendo registrado.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -95,9 +95,9 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-### <a name="create-a-new-value-under-an-existing-registry-key"></a>Criar um novo valor em uma chave de registro existente
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>Crie um novo valor uma chave de registro existente
 
-Você pode adicionar valores personalizados a uma chave existente. O código a seguir mostra como adicionar um novo valor a uma chave de registro do VSPackage.
+Você pode adicionar valores personalizados a uma chave existente. O código a seguir mostra como adicionar um novo valor a uma chave de registro VSPackage.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -121,5 +121,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [VSPackages](../extensibility/internals/vspackages.md)
