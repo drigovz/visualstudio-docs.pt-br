@@ -11,10 +11,10 @@ metadata:
   manager: lank
   ms.date: 12/04/2019
   ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 12/06/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74883828"
 highlightedContent:
   items:
@@ -40,7 +40,7 @@ conceptualContent:
       itemType: get-started
     footerLink:
       url: ~/vs-azure.md
-      text: Veja mais
+      text: Ver mais
   - title: Recursos populares
     links:
     - text: Comparar opções e preços
@@ -51,7 +51,7 @@ conceptualContent:
       itemType: overview
   - title: Acesso ao portal de assinaturas
     links:
-    - text: Assinantes
+    - text: Publicadores
       url: https://my.visualstudio.com/
       itemType: get-started
     - text: Administradores
@@ -64,7 +64,7 @@ tools:
   - title: Azure
     imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
     url: /azure/
-  - title: Visual Studio IDE
+  - title: IDE do Visual Studio
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
     url: /visualstudio/windows/
   - title: Azure DevOps Services
@@ -76,7 +76,7 @@ tools:
   - title: Visual Studio para Mac
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
     url: /visualstudio/mac/
-  - title: Centro de Aplicativos do Visual Studio
+  - title: Visual Studio App Center
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
     url: /appcenter/
 additionalContent:
@@ -93,7 +93,7 @@ additionalContent:
       links:
       - text: Desenvolvimento/Teste do Azure
         url: ~/vs-azure-payg.md
-      - text: Centro de Aplicativos do Visual Studio
+      - text: Visual Studio App Center
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server e CAL
         url: ~/vs-vsts.md

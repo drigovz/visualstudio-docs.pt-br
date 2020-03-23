@@ -25,7 +25,7 @@
 #### [BaseClass](baseclass.md)
 #### [BaseType](basetype.md)
 #### [CustomType](customtype.md)
-#### [Dimensão](dimension.md)
+#### [Dimension](dimension.md)
 #### [Enum (SDK de Acesso à Interface de Depuração)](enum-debug-interface-access-sdk.md)
 #### [Friend (SDK de Acesso à Interface de Depuração)](friend-debug-interface-access-sdk.md)
 #### [FunctionArgType](functionargtype.md)

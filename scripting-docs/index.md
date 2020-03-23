@@ -9,10 +9,10 @@ ms.author: mikejo
 author: mikejo5000
 manager: jillfra
 ms.openlocfilehash: baf650ba27d20424669bbdf47fffdac575f542b4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "65225644"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript no Visual Studio
@@ -193,7 +193,7 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a criar ap
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Hospedagem do Tempo de Execução do JavaScript</h3>
+                        <h3>Hospedagem Runtime do JavaScript</h3>
                     </div>
                 </div>
             </div>

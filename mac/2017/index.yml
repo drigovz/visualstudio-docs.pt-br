@@ -97,7 +97,7 @@ sections:
             html: <p>Configure o compilador e crie o aplicativo.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Compilar e criar
+            title: Compilação e construção
           - href: debugging.md
             html: <p>Execute o aplicativo no depurador para investigar problemas.</p>
             image:

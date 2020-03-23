@@ -78,7 +78,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Tratamento de exceção (SDK do Visual Studio)
           href: exception-handling-visual-studio-sdk.md
-    - name: 'Como: depurar um mecanismo de depuração personalizado'
+    - name: Como depurar um mecanismo de depuração personalizado
       href: how-to-debug-a-custom-debug-engine.md
 - name: Introdução à extensibilidade do depurador
   items:
@@ -126,7 +126,7 @@
           href: programs.md
         - name: Threads
           href: threads.md
-        - name: Registros de ativação
+        - name: Quadros de pilhas
           href: stack-frames.md
         - name: Módulos
           href: modules.md

@@ -1,10 +1,10 @@
 - name: Visão geral
   items:
-    - name: Ferramentas R para Visual Studio
+    - name: Ferramentas de R para o Visual Studio
       href: index.md
     - name: Carga de trabalho de aplicativos analíticos e de ciência de dados
       href: ../python/data-science-and-analytical-applications-workload.md
-- name: Guias de Início Rápido
+- name: Inícios rápidos
   items:
     - name: Instalação
       href: installing-r-tools-for-visual-studio.md

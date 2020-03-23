@@ -17,7 +17,7 @@
                 - name: Qualidade do código
                   tocHref: /visualstudio/code-quality/
                   topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-                - name: Plataforma cruzada
+                - name: Multiplataforma
                   tocHref: /visualstudio/cross-platform/
                   topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
                 - name: Ferramentas de Dados
@@ -45,7 +45,7 @@
                 - name: Criação de perfil
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
-                - name: Testes
+                - name: Testando
                   tocHref: /visualstudio/test/
                   topicHref: /visualstudio/test/improve-code-quality
                 - name: Designer de Fluxo de Trabalho

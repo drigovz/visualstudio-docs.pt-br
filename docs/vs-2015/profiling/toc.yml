@@ -28,7 +28,7 @@
           href: javascript-memory.md
         - name: Localizar uma perda de memória (JavaScript)
           href: walkthrough-find-a-memory-leak-javascript.md
-    - name: Uso de rede
+    - name: Uso de Rede
       href: network-usage.md
     - name: Capacidade de Resposta de interface do usuário HTML
       items:
@@ -66,9 +66,9 @@
               href: performance-session-properties.md
             - name: Criação de perfil e segurança do Windows Vista
               href: profiling-and-windows-vista-security.md
-        - name: Guia de Introdução
+        - name: Introdução
           items:
-            - name: Guia de Introdução
+            - name: Introdução
               href: getting-started-with-performance-tools.md
             - name: Guia do iniciante à criação de perfil do desempenho
               href: beginners-guide-to-performance-profiling.md
@@ -78,7 +78,7 @@
               href: how-to-manually-create-performance-sessions.md
             - name: Identificando problemas de desempenho
               href: walkthrough-identifying-performance-problems.md
-            - name: Exemplo de PeopleTrax
+            - name: Exemplo PeopleTrax
               href: peopletrax-sample-profiling-tools.md
         - name: Configurando sessões de desempenho
           items:
@@ -136,7 +136,7 @@
               href: how-to-specify-the-binary-to-start.md
             - name: Configurar as opções de nome de arquivo de dados de desempenho
               href: how-to-set-performance-data-file-name-options.md
-            - name: Especificar o tempo de execução do .NET Framework
+            - name: Especificar o runtime do .NET Framework
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Controlando coleção de dados
           items:
@@ -176,77 +176,77 @@
                       items:
                         - name: Regras de desempenho de uso do .NET Framework
                           href: dotnet-framework-usage-performance-rules.md
-                        - name: 'DA0001: Usar StringBuilder para concatenações'
+                        - name: 'DA0001: usar StringBuilder para concatenações'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Coletas de GC2 frequentes'
+                        - name: 'DA0005: coleções de GC2 frequentes'
                           href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006: Substituir Equals() por tipos de valor'
+                        - name: 'DA0006: substituir Equals() para tipos de valor'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Evitar usar exceções no fluxo de controle'
+                        - name: 'DA0007: evitar usar exceções no fluxo de controle'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010: Função GetHashCode dispendiosa'
+                        - name: 'DA0010: função GetHashCode dispendiosa'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: Função CompareTo dispendiosa'
+                        - name: 'DA0011: função CompareTo dispendiosa'
                           href: da0011-expensive-compareto.md
-                        - name: 'DA0012: Volume significativo de reflexão'
+                        - name: 'DA0012: volume significativo de reflexão'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: Alto uso de String.Split ou String.Substring'
+                        - name: 'DA0013: uso alto de String.Split ou String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo'
+                        - name: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021: Alta taxa de coletas de lixo de Geração 1'
+                        - name: 'DA0021: taxa alta de coletas de lixo Gen 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022: Alta taxa de coletas de lixo de Geração 2'
+                        - name: 'DA0022: taxa alta de coletas de lixo Gen 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0023: Tempo de CPU de GC elevado'
+                        - name: 'DA0023: tempo de CPU GC alto'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: Tempo de CPU de GC excessivo'
+                        - name: 'DA0024: tempo de GPU GC excessivo'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Alta taxa de contenções de bloqueio'
+                        - name: 'DA0038: taxa alta de contenções de bloqueio'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Taxa muito alta de contenções de bloqueio'
+                        - name: 'DA0039: taxa muito alta de contenções de bloqueio'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Regras de desempenho de memória e paginação
                       items:
                         - name: Regras de desempenho de memória e paginação
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014: Taxas de paginação de memória ativa para o disco extremamente altas'
+                        - name: 'DA0014: taxas extremamente elevadas de paginação de memória ativa em disco'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: Altas taxas de paginação de memória ativa para o disco'
+                        - name: 'DA0017: taxas elevadas de paginação de memória ativa em disco'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Regras de uso das ferramentas de criação de perfil
                       items:
                         - name: Regras de uso das ferramentas de criação de perfil
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: VSPerfCorProf.dll está ausente'
+                        - name: 'DA0002: VSPerfCorProf.dll não foi encontrado'
                           href: da0002-vsperfcorprof-dll-is-missing.md
-                        - name: 'DA0003: Muitas amostras de kernel'
+                        - name: 'DA0003: muitas amostras de kernel'
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: Uso do processador elevado'
+                        - name: 'DA0004: uso do processador elevado'
                           href: da0004-high-processor-usage.md
-                        - name: 'DA0008: Poucas amostras coletadas'
+                        - name: 'DA0008: poucas amostras coletadas'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: Processamento de tempo de CPU do kernel excessivo'
+                        - name: 'DA0026: processamento de tempo de CPU do kernel excessivo'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Versão de CLR não compatível'
+                        - name: 'DA0029: versão do CLR sem suporte'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: Coletar medidas de interação de camadas para projetos de banco de dados'
+                        - name: 'DA0030: coletar medições de interação de camada para projetos de banco de dados'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Regras de desempenho do monitoramento de recurso
                       items:
                         - name: Regras de desempenho do monitoramento de recurso
                           href: resource-monitoring-performance-rules.md
-                        - name: 'DA0501: Consumo médio de CPU pelo Processo cujo perfil está sendo criado.'
+                        - name: 'DA0501: consumo de CPU médio pelo processo com perfil criado.'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Consumo máximo de CPU pelo Processo cujo perfil está sendo criado'
+                        - name: 'DA0502: consumo de CPU máximo pelo processo com perfil criado'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Média de Conjunto de Trabalho em Bytes para o Processo cujo perfil está sendo criado'
+                        - name: 'DA0503: conjunto de trabalho médio em bytes para o processo com criação de perfil'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: Conjunto de trabalho máximo em bytes para o processo cujo perfil está sendo criado'
+                        - name: 'DA0504: conjunto de trabalho máximo em bytes para o processo com criação de perfil'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0505: Média de Bytes Privados alocados para o Processo cujo perfil está sendo criado'
+                        - name: 'DA0505: média de bytes particulares alocados para o processo com criação de perfil'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Máximo de Bytes Privados alocados para o Processo cujo perfil está sendo criado'
+                        - name: 'DA0506: máximo de bytes particulares alocados para o processo com criação de perfil'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Exibições do relatório de desempenho
               items:
@@ -322,25 +322,25 @@
                       href: dotnet-memory-allocations-view.md
                     - name: Exibição do tempo de vida do objeto
                       href: object-lifetime-view.md
-                    - name: Chamar o modo de exibição de árvore – Amostragem
+                    - name: Exibição de árvore de chamadas - amostragem
                       href: call-tree-view-dotnet-memory-sampling-data.md
-                    - name: Exibição de módulos – Amostragem
+                    - name: Exibição de módulos - amostragem
                       href: modules-view-dotnet-memory-sampling-data.md
-                    - name: Exibição chamador/receptor – Amostragem
+                    - name: Exibição de chamador/receptor - amostragem
                       href: caller-callee-view-dotnet-memory-sampling-data.md
-                    - name: Exibição de funções – Amostragem
+                    - name: Exibição de funções - amostragem
                       href: functions-view-dotnet-memory-sampling-data.md
-                    - name: Exibição de linhas – Amostragem
+                    - name: Exibição de linhas - amostragem
                       href: lines-view-dotnet-memory-sampling-data.md
-                    - name: Exibição de ponteiros de instrução (IPs) – Amostragem
+                    - name: Exibição de ponteiros de instrução (IPs) - amostragem
                       href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
-                    - name: Chamar o modo de exibição de árvore – Instrumentação
+                    - name: Exibição de árvore de chamadas - instrumentação
                       href: call-tree-view-dotnet-memory-instrumentation-data.md
-                    - name: Exibição de módulos – Instrumentação
+                    - name: Exibição de módulos - instrumentação
                       href: modules-view-dotnet-memory-instrumentation-data.md
-                    - name: Exibição chamador/receptor – Instrumentação
+                    - name: Exibição de chamador/receptor - instrumentação
                       href: caller-callee-view-net-memory-instrumentation-data.md
-                    - name: Exibição de funções – Instrumentação
+                    - name: Exibição de funções - instrumentação
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Exibições de dados da contenção de recurso
                   items:
@@ -400,15 +400,15 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Salvando e Exportando Dados de Ferramentas de Desempenho
           href: saving-and-exporting-performance-tools-data.md
-        - name: Criando perfil na linha de comando
+        - name: Criando perfil a partir da linha de comando
           items:
-            - name: Criando perfil na linha de comando
+            - name: Criando perfil a partir da linha de comando
               href: using-the-profiling-tools-from-the-command-line.md
             - name: Especificar locais de arquivo de símbolo na linha de comando
               href: how-to-specify-symbol-file-locations-from-the-command-line.md
-            - name: Especificando o caminho para ferramentas de linha de comando
+            - name: Especificando o demarcador para ferramentas de linha de comando
               href: specifying-the-path-to-profiling-tools-command-line-tools.md
-            - name: Usando métodos de criação de perfil na linha de comando
+            - name: Usando métodos da criação de perfil a partir da linha de comando
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
             - name: Coletando dados de interação entre camadas
               href: adding-tier-interaction-data-from-the-command-line.md
@@ -416,9 +416,9 @@
               items:
                 - name: Criando perfil de aplicativos autônomos
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Coletando estatísticas do aplicativo usando a amostragem
+                - name: Coletando estatísticas do aplicativo usando amostragem
                   items:
-                    - name: Coletando estatísticas do aplicativo usando a amostragem
+                    - name: Coletando estatísticas do aplicativo usando amostragem
                       href: collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md
                     - name: Iniciar um aplicativo autônomo e coletar estatísticas do aplicativo
                       href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
@@ -466,9 +466,9 @@
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Criação de perfil do site rápida com VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Coletando estatísticas do aplicativo usando a amostragem
+                - name: Coletando estatísticas do aplicativo usando amostragem
                   items:
-                    - name: Coletando estatísticas do aplicativo usando a amostragem
+                    - name: Coletando estatísticas do aplicativo usando amostragem
                       href: collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md
                     - name: Anexar o Profiler a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
@@ -502,9 +502,9 @@
               items:
                 - name: Serviços de criação de perfil
                   href: command-line-profiling-of-services.md
-                - name: Coletando estatísticas do aplicativo usando a amostragem
+                - name: Coletando estatísticas do aplicativo usando amostragem
                   items:
-                    - name: Coletando estatísticas do aplicativo usando a amostragem
+                    - name: Coletando estatísticas do aplicativo usando amostragem
                       href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                     - name: Anexar o Profiler a um serviço .NET para coletar estatísticas do aplicativo
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
@@ -546,7 +546,7 @@
                   href: how-to-create-a-profiler-comparison-report-from-a-command-prompt.md
                 - name: Criar um relatório de rastreamento de chamada
                   href: how-to-create-a-profiling-tools-call-trace-report.md
-                - name: Criando arquivos de dados de criação de perfil portáteis
+                - name: Criando arquivos de dados de criação de perfil móveis
                   href: creating-portable-profiling-data-files-from-the-command-line.md
                 - name: Criar um relatório ETW
                   href: how-to-create-a-profiling-tools-etw-report.md
@@ -566,7 +566,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Início
+                    - name: Iniciar
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -580,13 +580,13 @@
                       href: waitstart.md
                     - name: AutoMark
                       href: automark.md
-                    - name: User
+                    - name: Usuário
                       href: user-vsperfcmd.md
                     - name: QueryCounters
                       href: querycounters.md
                     - name: Eventos
                       href: events-vsperfcmd.md
-                    - name: Desligar
+                    - name: Shutdown
                       href: shutdown.md
                     - name: GlobalOn e GlobalOff
                       href: globalon-and-globaloff.md
@@ -598,19 +598,19 @@
                       href: gc-vsperfcmd.md
                     - name: Inicializar
                       href: launch.md
-                    - name: Attach
+                    - name: Anexar
                       href: attach.md
                     - name: Args
                       href: args.md
                     - name: Marca
                       href: mark.md
-                    - name: Detach
+                    - name: Desanexar
                       href: detach.md
                     - name: PF
                       href: pf.md
                     - name: Sys
                       href: sys-vsperfcmd.md
-                    - name: Temporizador
+                    - name: Timer
                       href: timer.md
                     - name: LineOff
                       href: lineoff.md
@@ -724,9 +724,9 @@
               href: memory-management-time.md
             - name: Há várias categorias presentes
               href: multiple-categories-are-present.md
-            - name: Nenhuma atividade de disco para mostrar
+            - name: Nenhuma atividade de disco a ser mostrada
               href: no-disk-activity-to-show-threads-view.md
-            - name: Nenhuma atividade de thread para mostrar
+            - name: Nenhuma atividade de thread a ser mostrada
               href: no-thread-activity-to-show-threads-view.md
             - name: Porcentagem de redução do ruído
               href: noise-reduction-percentage.md
@@ -738,7 +738,7 @@
               href: report-based-on-visible-time-range.md
             - name: Tempo de suspensão
               href: sleep-time.md
-            - name: Tempo de sincronização
+            - name: Hora da Sincronização
               href: synchronization-time.md
             - name: Conector pronto para thread
               href: thread-ready-connector.md
@@ -852,5 +852,5 @@
                   href: cvwritemessage-function.md
         - name: Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: Analisar o uso de energia
+    - name: Analisar o uso da energia
       href: analyze-energy-use-in-store-apps.md

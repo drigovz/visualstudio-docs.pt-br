@@ -13,9 +13,9 @@
 - name: Criar um aplicativo
   expanded: true
   items:
-    - name: 'Criar seu primeiro aplicativo em C#'
+    - name: 'Crie seu primeiro aplicativo C#'
       href: tutorial-console.md
-    - name: Como criar um aplicativo Web
+    - name: Criar um aplicativo Web
       href: tutorial-aspnet-core.md
     - name: Criar um aplicativo UWP
       href: tutorial-uwp.md
@@ -44,13 +44,13 @@
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Escrever e editar o código
       href: tutorial-editor.md
-    - name: Compilar e criar
+    - name: Compilação e construção
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Depurar seu código
       href: ../csharp/tutorial-debugger.md
     - name: Teste de unidade
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: Implantar o projeto
+    - name: Implante o seu projeto
       href: ../../deployment/index.yml
     - name: Acessar dados
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

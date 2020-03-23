@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Script
+    - name: Scripting
       tocHref: /scripting/
       topicHref: /scripting
       items:
@@ -17,6 +17,6 @@
             - name: Referência
               tocHref: /scripting/winscript/reference/
               topicHref: /scripting/winscript/reference/windows-script-interfaces-reference
-        - name: Hospedagem do Tempo de Execução do JavaScript
+        - name: Hospedagem Runtime do JavaScript
           tocHref: /scripting/chakra-hosting/
           topicHref: /scripting/chakra-hosting/javascript-runtime-hosting

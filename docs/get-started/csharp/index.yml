@@ -15,17 +15,17 @@ metadata:
   dev_langs:
   - CSharp
   ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
-  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/01/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "76923120"
 landingContent:
 - title: Introdução
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalar o Visual Studio
+    - text: Instalar Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -41,9 +41,9 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Criar um aplicativo do console
+    - text: Criar um aplicativo de console
       url: tutorial-console.md
-    - text: Como criar um aplicativo Web
+    - text: Criar um aplicativo Web
       url: tutorial-aspnet-core.md
     - text: Criar um aplicativo da Plataforma Universal do Windows
       url: tutorial-uwp.md
@@ -67,7 +67,7 @@ landingContent:
       url: ../tutorial-open-project-from-repo.md
     - text: Escrever e editar o código
       url: tutorial-editor.md
-    - text: Compilar e criar
+    - text: Compilação e construção
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Depurar seu código
       url: ../csharp/tutorial-debugger.md

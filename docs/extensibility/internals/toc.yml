@@ -38,7 +38,7 @@
           href: command-design.md
         - name: Implementação de comando
           href: command-implementation.md
-        - name: Disponibilidade de comando
+        - name: Disponibilidade do comando
           href: command-availability.md
         - name: Algoritmo de roteamento de comando
           href: command-routing-algorithm.md
@@ -112,7 +112,7 @@
               href: important-commands-for-language-service-filters.md
         - name: Registrando um serviço de linguagem herdado2
           href: registering-a-legacy-language-service2.md
-        - name: 'Lista de verificação: Criando um serviço de linguagem herdado'
+        - name: 'Lista de verificação: criando um serviço de linguagem herdado'
           href: checklist-creating-a-legacy-language-service.md
         - name: Recursos do serviço de linguagem herdado2
           items:
@@ -158,9 +158,9 @@
           href: registering-a-legacy-language-service1.md
         - name: Analisador e scanner do serviço de linguagem herdado
           href: legacy-language-service-parser-and-scanner.md
-        - name: 'Passo a passo: Criando um serviço de linguagem herdado'
+        - name: 'Passo a passo: criando um serviço de linguagem herdado'
           href: walkthrough-creating-a-legacy-language-service.md
-        - name: 'Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)'
+        - name: 'Passo a passo: obtendo uma lista de snippets de código instalados (implementação herdada)'
           href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
         - name: Recursos do serviço de linguagem herdado1
           items:
@@ -208,9 +208,9 @@
   items:
     - name: Projetos
       href: projects.md
-    - name: 'Geração de novo projeto: Bastidores, parte um'
+    - name: 'Geração de novo projeto: nos bastidores, Parte um'
       href: new-project-generation-under-the-hood-part-one.md
-    - name: 'Geração de novo projeto: Bastidores, parte dois'
+    - name: 'Geração de novo projeto: nos bastidores, Parte dois'
       href: new-project-generation-under-the-hood-part-two.md
     - name: Tipos de projeto
       items:
@@ -224,7 +224,7 @@
               href: creating-project-types.md
             - name: Decisões de design do tipo de projeto
               href: project-type-design-decisions.md
-            - name: 'Lista de verificação: Criando tipos de projeto'
+            - name: 'Lista de verificação: criando novos tipos de projeto'
               href: checklist-creating-new-project-types.md
             - name: Criando instâncias de projeto por meio de fábricas de projeto
               href: creating-project-instances-by-using-project-factories.md
@@ -302,7 +302,7 @@
               href: source-control-configuration-details.md
             - name: Diretrizes adicionais de controle do código-fonte para projetos e editores
               href: additional-source-control-guidelines-for-projects-and-editors.md
-            - name: Detalhes de tempo de execução de controle do código-fonte
+            - name: Detalhes de runtime de controle do código-fonte
               href: source-control-runtime-details.md
         - name: Aninhando projetos
           items:
@@ -442,9 +442,9 @@
       href: list-of-available-services.md
 - name: Extensibilidade do depurador do Visual Studio
   href: ../debugger/toc.yml
-- name: Controle do código-Fonte
+- name: Controle do código-fonte
   items:
-    - name: Controle do código-Fonte
+    - name: Controle do código-fonte
       href: source-control.md
     - name: Conceitos básicos da integração do controle do código-fonte
       href: source-control-integration-essentials.md
@@ -486,21 +486,21 @@
           items:
             - name: Guia de teste para plug-ins de controle do código-fonte
               href: test-guide-for-source-control-plug-ins.md
-            - name: 'Área de teste 1: Adicionar e abrir do controle do código-fonte'
+            - name: 'Área de teste 1: adicionar ao controle do código-fonte ou abrir dele'
               href: test-area-1-add-to-open-from-source-control.md
-            - name: 'Área de teste 2: Obter do controle do código-fonte'
+            - name: 'Área de teste 2: obter do controle do código-fonte'
               href: test-area-2-get-from-source-control.md
-            - name: 'Área de teste 3: Fazer e desfazer check-out'
+            - name: 'Área de teste 3: fazer check-out ou desfazer check-out'
               href: test-area-3-check-out-undo-checkout.md
-            - name: 'Área de teste 4: Fazer check-in'
+            - name: 'Área de teste 4: fazer check-in'
               href: test-area-4-check-in.md
-            - name: 'Área de teste 5: Alterar controle do código-fonte'
+            - name: 'Área de teste 5: alterar o controle do código-fonte'
               href: test-area-5-change-source-control.md
-            - name: 'Área de teste 6: Excluir'
+            - name: 'Área de teste 6: excluir'
               href: test-area-6-delete.md
-            - name: 'Área de teste 7: Compartilhar'
+            - name: 'Testar área 7: compartilhar'
               href: test-area-7-share.md
-            - name: 'Área de teste 8: Alternância de plug-in'
+            - name: 'Área de teste 8: alternância de plug-in'
               href: test-area-8-plug-in-switching.md
     - name: Criar um VSPackage de controle do código-fonte
       items:

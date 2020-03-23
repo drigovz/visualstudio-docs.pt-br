@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: Transformações
           href: msbuild-transforms.md
-        - name: Integração do Visual Studio
+        - name: Integração com o Visual Studio
           items:
-            - name: Integração do Visual Studio
+            - name: Integração com o Visual Studio
               href: visual-studio-integration-msbuild.md
             - name: Estender o processo de build do Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Substituindo as configurações de ToolsVersion
                   href: overriding-toolsversion-settings.md
-            - name: Estrutura e plataforma de destino
+            - name: Estrutura de destino e plataforma de destino
               href: msbuild-target-framework-and-target-platform.md
             - name: Resolvendo assemblies em tempo de design
               href: resolving-assemblies-at-design-time.md
@@ -156,7 +156,7 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: Solução de problemas com erros de direcionamento do .NET Framework
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: Práticas recomendadas
+        - name: Práticas Recomendadas
           href: msbuild-best-practices.md
     - name: Registrando em logs no MSBuild
       items:
@@ -180,9 +180,9 @@
       items:
         - name: Referência do MSBuild
           href: msbuild-reference.md
-        - name: Referência do esquema de arquivo de projeto
+        - name: Referência do esquema de arquivos de projeto
           items:
-            - name: Referência do esquema de arquivo de projeto
+            - name: Referência do esquema de arquivos de projeto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -204,7 +204,7 @@
               href: otherwise-element-msbuild.md
             - name: Elemento Output (MSBuild)
               href: output-element-msbuild.md
-            - name: Elemento de parâmetro
+            - name: Elemento Parameter
               href: parameter-element.md
             - name: Elemento ParameterGroup
               href: parametergroup-element.md
@@ -226,9 +226,9 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Referência da tarefa
+        - name: Referência de tarefas
           items:
-            - name: Referência da tarefa
+            - name: Referência de tarefas
               href: msbuild-task-reference.md
             - name: Tarefas do Visual C++
               items:
@@ -408,9 +408,9 @@
               href: wpf-msbuild-reference.md
             - name: Arquivos .Targets
               href: wpf-dot-targets-files.md
-            - name: Referência da tarefa
+            - name: Referência de tarefas
               items:
-                - name: Referência da tarefa
+                - name: Referência de tarefas
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

@@ -15,10 +15,10 @@ metadata:
   monikerRange: '>=vs-2017'
   hide_bc: true
   ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/15/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74118969"
 productDirectory:
   items:
@@ -32,7 +32,7 @@ productDirectory:
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
       text: Versões anteriores
     - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
-      text: Notas de Versão
+      text: Notas de versão
     - url: https://visualstudio.microsoft.com/
       text: Página do produto
   - title: Visual Studio para Mac
@@ -43,7 +43,7 @@ productDirectory:
     - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
       text: Visual Studio 2017 para Mac
     - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
-      text: Notas de Versão
+      text: Notas de versão
     - url: https://visualstudio.microsoft.com/vs/mac/
       text: Página do produto
   - title: Visual Studio Code
@@ -52,10 +52,10 @@ productDirectory:
     - url: https://code.visualstudio.com/docs
       text: Documentação
     - url: https://code.visualstudio.com/updates
-      text: Notas de Versão
+      text: Notas de versão
     - url: https://code.visualstudio.com
       text: Página do produto
-  - title: Centro de Aplicativos do Visual Studio
+  - title: Visual Studio App Center
     imageSrc: ./media/vs-mobile-center.svg
     links:
     - url: https://docs.microsoft.com/appcenter

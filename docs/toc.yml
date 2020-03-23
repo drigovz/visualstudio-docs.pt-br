@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Adicionar parâmetro a um método
                   href: ide/reference/add-parameter.md
+                - name: Gerar o parâmetro
+                  href: ide/reference/generate-parameter.md
                 - name: Gerar campo particular do construtor
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: Gerar substituição
@@ -350,6 +352,8 @@
                 - name: Visão geral
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: Adicionar verificações de nulo para todos os parâmetros
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: Alterar assinatura do método
                   href: ide/reference/change-method-signature.md
                 - name: Converter tipo anônimo em classe
@@ -378,8 +382,6 @@
                   href: ide/reference/extract-method.md
                 - name: Extrair função local
                   href: ide/reference/extract-local-function.md
-                - name: Gerar o parâmetro
-                  href: ide/reference/generate-parameter.md
                 - name: Variável temporária embutida
                   href: ide/reference/inline-temporary-variable.md
                 - name: Tipos não importados de preenchimento do IntelliSense

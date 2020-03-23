@@ -34,9 +34,9 @@
   items:
     - name: Criar modelos para o aplicativo
       href: create-models-for-your-app.md
-    - name: 'Diagramas de Dependência: Referência'
+    - name: 'Diagramas de dependência: referência'
       href: layer-diagrams-reference.md
-    - name: 'Diagramas de Dependência: Diretrizes'
+    - name: 'Diagramas de dependência: diretrizes'
       href: layer-diagrams-guidelines.md
     - name: Compartilhar modelos
       items:
@@ -221,9 +221,9 @@
           href: accessing-models-from-text-templates.md
         - name: Usar o Visual Studio ModelBus em um modelo de texto
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: 'Passo a passo: Depurar um modelo de texto que acessa um modelo'
+        - name: 'Passo a passo: depurar um modelo de texto que acessa um modelo'
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-        - name: 'Passo a passo: Conectar um host a um processador de diretriz gerado'
+        - name: 'Passo a passo: conectar um host a um processador de diretiva gerado'
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
         - name: O comando DslTextTransform
           href: the-dsltexttransform-command.md
@@ -277,7 +277,7 @@
       items:
         - name: Visão geral e instruções
           href: design-time-code-generation-by-using-t4-text-templates.md
-        - name: 'Passo a passo: Gerar código usando modelos de texto'
+        - name: 'Passo a passo: gerar código usando modelos de texto'
           href: walkthrough-generating-code-by-using-text-templates.md
         - name: Geração de código em um processo de compilação
           href: code-generation-in-a-build-process.md
@@ -317,7 +317,7 @@
           href: text-template-utility-methods.md
         - name: Acessar o Visual Studio ou outros hosts de um modelo de texto
           href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-        - name: Sequências de Escape
+        - name: Sequências de escape
           items:
             - name: Usar sequências de escape em modelos de texto
               href: using-escape-sequences-in-text-templates.md
@@ -342,7 +342,7 @@
               href: creating-custom-t4-text-template-directive-processors.md
             - name: Implantar um processador de diretiva personalizado
               href: deploying-a-custom-directive-processor.md
-            - name: 'Passo a passo: Criar um processador de diretriz personalizado'
+            - name: 'Passo a passo: criar um processador de diretiva personalizado'
               href: walkthrough-creating-a-custom-directive-processor.md
         - name: Invocar a transformação de texto em uma extensão VS
           href: invoking-text-transformation-in-a-vs-extension.md
@@ -350,7 +350,7 @@
           items:
             - name: Processar modelos de texto usando um host personalizado
               href: processing-text-templates-by-using-a-custom-host.md
-            - name: 'Passo a passo: Criar um host de modelo de texto personalizado'
+            - name: 'Passo a passo: criar um host de modelo de texto personalizado'
               href: walkthrough-creating-a-custom-text-template-host.md
     - name: Referência de API para modelos de texto T4
       href: api-reference-for-t4-text-templates.md

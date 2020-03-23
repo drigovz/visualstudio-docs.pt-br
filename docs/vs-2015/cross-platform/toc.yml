@@ -28,7 +28,7 @@
           href: visual-studio-tools-for-unity.md
         - name: Visão geral
           href: overview-of-visual-studio-tools-for-unity.md
-        - name: Guia de Introdução
+        - name: Introdução
           href: getting-started-with-visual-studio-tools-for-unity.md
         - name: Usando o Visual Studio Tools for Unity
           href: using-visual-studio-tools-for-unity.md
@@ -40,7 +40,7 @@
               href: customize-project-files-created-by-vstu.md
             - name: Exemplo – Retorno de chamada de log
               href: share-the-unity-log-callback-with-vstu.md
-        - name: Solução de problemas e problemas conhecidos
+        - name: Solucionando problemas e problemas conhecidos
           href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
         - name: Log de alterações
           href: change-log-visual-studio-tools-for-unity.md
