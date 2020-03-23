@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633012"
 ---
 # <a name="override-toolsversion-settings"></a>Substituir as configurações de ToolsVersion
@@ -30,13 +30,13 @@ Você pode alterar o conjunto de ferramentas para projetos e soluções de uma e
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Substituir as configurações de ToolsVersion de projetos e soluções em builds da linha de comando
 
- Embora os projetos do Visual Studio normalmente sejam compilados com o ToolsVersion especificado no arquivo de projeto, você pode usar a opção `-ToolsVersion` (ou `-tv`) na linha de comando para substituir esse valor e compilar todos os projetos e suas dependências de projeto para o projeto com um conjunto de ferramentas diferente. Por exemplo:
+ Embora os projetos do Visual Studio normalmente sejam compilados com o ToolsVersion especificado no arquivo de projeto, você pode usar a opção `-ToolsVersion` (ou `-tv`) na linha de comando para substituir esse valor e compilar todos os projetos e suas dependências de projeto para o projeto com um conjunto de ferramentas diferente. Por exemplo: 
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ```
 
- Neste exemplo, todos os projetos são compilados usando ToolsVersion 12.0. (No entanto, consulte a seção [Ordem de precedência](#order-of-precedence) posteriormente neste tópico).
+ Neste exemplo, todos os projetos são compilados usando ToolsVersion 12.0. (No entanto, consulte a seção [Ordem de precedência](#order-of-precedence) mais tarde neste tópico.)
 
  Ao usar a opção `-tv` na linha de comando, você pode usar a propriedade `$(ProjectToolsVersion)` em projetos individuais para compilá-los com um valor de ToolsVersion diferente dos outros projetos na solução.
 
@@ -115,13 +115,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     2. A versão padrão das ferramentas no arquivo *MSBuild.exe.config*.
 
-    3. A versão das ferramentas padrão no Registro. Para saber mais, confira [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
+    3. A versão das ferramentas padrão no Registro. Para obter mais informações, consulte [configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
 
 6. Se a variável de ambiente `MSBUILDLEGACYDEFAULTTOOLSVERSION` não estiver definida, as etapas a seguir serão usadas:
 
     1. Se a variável de ambiente `MSBUILDDEFAULTTOOLSVERSION` estiver definida para um `ToolsVersion` que existe, use-a.
 
-    2. Se `DefaultOverrideToolsVersion` estiver definida em *MSBuild.exe.config*, use-a.
+    2. Se `DefaultOverrideToolsVersion` estiver definido em *MSBuild.exe.config,* use-o.
 
     3. Se `DefaultOverrideToolsVersion` estiver definida no Registro, use-a.
 
@@ -129,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 ## <a name="see-also"></a>Confira também
 
-- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-- [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)

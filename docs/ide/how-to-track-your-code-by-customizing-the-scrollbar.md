@@ -1,24 +1,24 @@
 ---
 title: Modo de mapa e modo de barra da barra de rolagem
-ms.date: 09/25/2018
+ms.date: 03/20/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591392"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988569"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Como: personalizar a barra de rolagem
 
 Quando se trabalha com longos arquivos de código, às vezes torna-se difícil manter o controle de onde está tudo no arquivo. É possível personalizar a barra de rolagem do editor de código para ter um panorama geral do que está acontecendo no código.
 
-## <a name="annotations"></a>Annotations
+## <a name="annotations"></a>Anotações
 
 Você pode selecionar se a barra de rolagem deve mostrar anotações, como alterações de código, pontos de interrupção, indicadores, erros e posição do cursor.
 
@@ -54,7 +54,7 @@ O *modo de barra* exibe indicadores de anotação na barra de rolagem. Clicando 
 
 ### <a name="map-mode"></a>Modo de mapa
 
-No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor vai para aquele local no arquivo em vez de simplesmente rolar para cima ou para baixo em uma página. As linhas de código são mostradas em miniatura na barra de rolagem. É possível escolher a largura da coluna do mapa selecionando um valor em **Visão geral do Código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. As regiões recolhidas ficam sombreadas de forma diferente e são expandidas quando você clica duas vezes nelas.
+*O modo mapa* exibe linhas de código, em miniatura, na barra de rolagem. É possível escolher a largura da coluna do mapa selecionando um valor em **Visão geral do Código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. As regiões recolhidas ficam sombreadas de forma diferente e são expandidas quando você clica duas vezes nelas.
 
 > [!TIP]
 > Você pode desabilitar a exibição de código em miniatura no modo de mapa definindo a opção **Visão geral do código-fonte** como **Desabilitada**. Se a opção **Mostrar Dica de Ferramenta de Visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem e, o cursor ainda o levará para esse local no arquivo quando você clicar.
@@ -67,6 +67,9 @@ A imagem a seguir mostra a opção **Mostrar dica de ferramenta de visualizaçã
 
 ![Barra de rolagem do Visual Studio com uma dica de ferramenta](../ide/media/enhancedscrollbarsearchtooltip.png)
 
-## <a name="see-also"></a>Veja também
+> [!TIP]
+> Para alterar as cores que você vê no modo mapa, escolha **Ferramentas** > **Opções** > **De Ambiente** > **Fontes e Cores**. Em seguida, em **Itens de exibição,** escolha qualquer um dos itens que são precedidos com "Visão geral", faça as alterações de cor desejadas e, em seguida, escolha **OK**.
 
-- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
+## <a name="see-also"></a>Confira também
+
+- [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

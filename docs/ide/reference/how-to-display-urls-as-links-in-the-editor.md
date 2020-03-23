@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569082"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
@@ -27,22 +27,22 @@ ms.locfileid: "75569082"
 
 - Exibem uma **Dica de Ferramenta** quando você passa o mouse sobre elas.
 
-- Tente abrir o site da Web indicado quando você pressiona **CTRL**+**clique** no link. Por padrão, o site é exibido no navegador da Web interno.
+- Tente abrir o site indicado quando você **ctrl**+**clique** no link. Por padrão, o site é exibido no navegador da Web interno.
 
 ## <a name="display-urls-as-links"></a>Exibir URLs como links
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Clique em **Editor de Texto**.
 
 3. Para alterar a opção para apenas uma linguagem, expanda a pasta dessa linguagem e escolha **Geral**.
 
-     —ou—
+     — ou —
 
      Para alterar a opção para todas as linguagens, expanda a pasta **Todas as Linguagens** e escolha **Geral**.
 
 4. Em **Exibir**, selecione **Habilitar navegação de URL com um único clique**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)

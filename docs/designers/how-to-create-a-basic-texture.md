@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589443"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
@@ -87,6 +87,6 @@ A textura de destino de "alvo" foi concluída. Aqui está a imagem final, mostra
 
 Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Editor de Imagens](../designers/image-editor.md)
+- [Editor de imagens](../designers/image-editor.md)

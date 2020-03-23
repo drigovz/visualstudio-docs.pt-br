@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585646"
 ---
 # <a name="watch-command"></a>Comando Inspecionar
@@ -29,10 +29,10 @@ Cria e abre uma instância especificada de uma janela **Inspeção**. Você pode
 Debug.Watch[index]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `index`\
-Necessária. O número de instância da janela Inspeção.
+Obrigatórios. O número de instância da janela Inspeção.
 
 ## <a name="remarks"></a>Comentários
 
@@ -44,7 +44,7 @@ O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Janelas Autos e Locais](../../debugger/autos-and-locals-windows.md)
 - [Definir uma inspeção nas variáveis usando as janelas Inspeção e QuickWatch no Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

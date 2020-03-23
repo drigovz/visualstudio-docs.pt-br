@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589013"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como incluir gravações da tela e de voz durante testes usando as configurações de teste
@@ -56,12 +56,12 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
     3. **Qualidade (1-100):** você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
 
-7. Clique em **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
+7. Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
 
     > [!TIP]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio e **Redefinir como padrão** para o Microsoft Test Manager.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

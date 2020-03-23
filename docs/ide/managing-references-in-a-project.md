@@ -22,17 +22,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591249"
 ---
 # <a name="manage-references-in-a-project"></a>Gerenciar referências em um projeto
 
 Antes de escrever código em um componente externo ou um serviço conectado, o projeto primeiro deve conter uma referência a ele. Basicamente, uma referência é uma entrada em um arquivo de projeto que contém as informações de que o Visual Studio precisa para localizar o componente ou o serviço.
 
-Para adicionar uma referência, clique com o botão direito do mouse no nó **Referências** ou **Dependências** no **Gerenciador de Soluções** e escolha **Adicionar Referência**. Também é possível clicar com o botão direito do mouse no nó do projeto e selecionar **Adicionar** > **Referência**. Para obter mais informações, consulte [How to: Add or remove references](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md) (Como adicionar ou remover referências).
+Para adicionar uma referência, clique com o botão direito do mouse no nó **Referências** ou **Dependências** no **Gerenciador de Soluções** e escolha **Adicionar Referência**. Você também pode clicar com o botão direito do mouse no nó do projeto e selecionar **Adicionar** > **referência**. Para obter mais informações, [consulte Como: Adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Adicionar uma referência no Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -56,7 +56,7 @@ Para adicionar uma referência, clique com o botão direito do mouse no nó **Re
 
 Os projetos da UWP (Plataforma Universal do Windows) podem criar referências a outros projetos da UWP na solução ou a projetos ou binários do Windows 8.1, desde que esses projetos não usem APIs que foram preteridas do Windows 10. Para obter mais informações, consulte [Mover do Windows Runtime 8 para a UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Se você optar por redirecionar projetos do Windows 8.1 para o Windows 10, consulte [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Se você optar por redirecionar projetos do Windows 8.1 para o Windows 10, consulte [Porta, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Referências do SDK da Extensão
 
@@ -91,7 +91,7 @@ Ao fazer uma referência a um assembly no projeto, o Visual Studio pesquisa o as
 - Outros diretórios do projeto na mesma solução. (É possível encontrar esses assemblies na guia **Projetos**.)
 
 > [!NOTE]
-> - Todos os projetos contêm uma referência implícita a **mscorlib**.
+> - Todos os projetos contêm uma referência implícita ao **mscorlib**.
 > - Todos os projetos contêm uma referência implícita a `System.Core`, mesmo se `System.Core` for removido da lista de referências.
 > - Os projetos do Visual Basic contêm uma referência implícita a <xref:Microsoft.VisualBasic>.
 
@@ -113,7 +113,7 @@ Para obter mais informações, confira [Visão geral do direcionamento de estrut
 
 Referências projeto a projeto são referências a projetos que contêm assemblies; é possível adicioná-las usando a guia **Projetos** na caixa de diálogo Gerenciador de Referências. O Visual Studio pode encontrar um assembly quando receber um caminho para o projeto.
 
-Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode fazer referência a uma versão criada anteriormente do projeto.) Isso pode resultar na necessidade de várias versões de uma única DLL no diretório *bin* , o que não é possível. Quando ocorrer esse conflito, você verá uma mensagem como “Aviso: o 'arquivo' de dependência no projeto 'projeto' não pode ser copiado para o diretório de execução, pois ele substituirá o 'arquivo' de referência”. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
+Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode referenciar uma versão previamente construída do projeto.) Isso pode resultar em várias versões de uma única DLL sendo exigidas no diretório *bin,* o que não é possível. Quando ocorrer esse conflito, você verá uma mensagem como “Aviso: o 'arquivo' de dependência no projeto 'projeto' não pode ser copiado para o diretório de execução, pois ele substituirá o 'arquivo' de referência”. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Uma referência de arquivo será criada em vez de uma referência projeto a projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 e a versão de destino do outro projeto for a versão 2, 3, 3.5 ou 4.0.
@@ -126,7 +126,7 @@ Ao contrário da maioria dos outros tipos de projetos, um *projeto compartilhado
 
 Referências de arquivo são referências diretas a assemblies fora do contexto de um projeto do Visual Studio. Crie-as usando a guia **Procurar** da caixa de diálogo Gerenciador de Referências. Use uma referência de arquivo quando você tiver apenas um assembly ou componente e não o projeto que o cria como a saída.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md)
+- [Solucionar problemas de referências quebradas](../ide/troubleshooting-broken-references.md)
 - [Como adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

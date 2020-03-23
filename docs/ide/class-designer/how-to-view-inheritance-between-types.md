@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591769"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Como exibir herança entre tipos no Designer de Classe
 
-Você poderá localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no **Designer de Classe**. Para criar uma relação de herança, se ainda não houver uma, entre dois tipos, confira [Como criar herança entre tipos](how-to-create-inheritance-between-types.md).
+Você poderá localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no **Designer de Classe**. Para criar uma relação de herança, se não existir nenhuma, entre dois tipos, [consulte Como: Criar herança entre os tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Para localizar o tipo base
 
@@ -45,7 +45,7 @@ Você pode também clicar com o botão direito do mouse no tipo cujo tipo base d
 
 Você pode também clicar com o botão direito do mouse no tipo cujos tipos derivados deseja ver e escolher **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar associações entre tipos](how-to-create-associations-between-types.md)
-- [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)
+- [Visualização de tipos e relacionamentos](designing-and-viewing-classes-and-types.md)

@@ -1,5 +1,5 @@
 ---
-title: C++Enumerações no Designer de Classe
+title: Enumerações C++ em Class Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114188"
 ---
-# <a name="c-enumerations-in-class-designer"></a>C++Enumerações no Designer de Classe
+# <a name="c-enumerations-in-class-designer"></a>Enumerações C++ em Class Designer
 
-O **Designer de Classe** é compatível com os tipos `enum` e `enum class` no escopo do C++. Veja um exemplo a seguir:
+**O Class Designer** suporta `enum` `enum class` tipos C++ e escopo. A seguir está um exemplo:
 
 ```cpp
 enum CardSuit {
@@ -42,7 +42,7 @@ Uma forma de enumeração do C++ em um diagrama de classes parece e funciona com
 
 Para obter mais informações sobre o uso do tipo `enum`, consulte [Enumerações](/cpp/cpp/enumerations-cpp).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trabalhando com C++ código](working-with-visual-cpp-code.md)
+- [Trabalhando com código C++](working-with-visual-cpp-code.md)
 - [Enumerações](/cpp/cpp/enumerations-cpp)

@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094575"
 ---
 # <a name="zipdirectory-task"></a>Tarefa ZipDirectory
 
@@ -40,7 +40,7 @@ Cria um arquivo *.zip* do conteúdo de um diretório.
 
  A tabela a seguir descreve os parâmetros da tarefa `ZipDirectory`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`DestinationFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> O caminho completo para o arquivo *.zip* a ser criado.|
 |`Overwrite`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o arquivo de destino será substituído, quando existir. Usa `false` como padrão.|
@@ -52,7 +52,7 @@ Cria um arquivo *.zip* do conteúdo de um diretório.
 
 ## <a name="example"></a>Exemplo
 
- O exemplo a seguir cria um arquivo *.zip* do diretório de saída após a criação de um projeto.
+ O exemplo a seguir (se usado como um arquivo *importado .targets)* cria um arquivo *.zip* do diretório de saída após a construção de um projeto. A `$(OutputPath)` propriedade normalmente seria definida em um arquivo de projeto MSBuild, de modo `output.zip`que um arquivo de projeto que importa o arquivo a seguir produziria um arquivo zip :
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

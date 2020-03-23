@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778031"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Usar as Ferramentas de Criação de Perfil por meio da linha de comando
@@ -32,13 +32,13 @@ ms.locfileid: "74778031"
 
 | Tarefa | Conteúdo relacionado |
 | - | - |
-| **Definir o local de símbolos:** para exibir os nomes de funções e parâmetros, o criador de perfil precisa ter acesso aos arquivos de símbolo (.*pdb*) dos binários analisados. Esses arquivos devem incluir os arquivos de símbolo para o sistema operacional da Microsoft e aplicativos que você deseja exibir em sua análise. Use o servidor de símbolos público da Microsoft para garantir que você têm os arquivos .*pdb* corretos dos binários da Microsoft. | -   [Como especificar locais de arquivo de símbolo por meio da linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
-| **Analise o aplicativo:** as ferramentas de linha de comando e opções que você usa para analisar um aplicativo de destino dependem do tipo de aplicativo, o método de criação de perfil e se o destino é um aplicativo gerenciado ou nativo. | -   [Usar métodos de criação de perfil na linha de comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md) |
-| **Crie relatórios .xml e. csv:** a criação de perfil no prompt de comando cria arquivos de dados que podem ser exibidos na interface do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gere também arquivos .*xml* ou .*csv* (valores separados por vírgula) dos dados usando a ferramenta de linha de comando VSPerfReport. | -   [Criar relatórios do criador de perfil por meio da linha de comando](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
-| **Analise código em computadores sem o Visual Studio:** é possível utilizar o criador de perfil autônomo das Ferramentas de Criação de Perfil para coletar dados de aplicativos em computadores que não têm o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado. | -   [Como instalar o criador de perfil autônomo](../profiling/how-to-install-the-stand-alone-profiler.md) |
+| **Definir o local de símbolos:** para exibir os nomes de funções e parâmetros, o criador de perfil precisa ter acesso aos arquivos de símbolo (.*pdb*) dos binários analisados. Esses arquivos devem incluir os arquivos de símbolo para o sistema operacional da Microsoft e aplicativos que você deseja exibir em sua análise. Use o servidor de símbolos público da Microsoft para garantir que você têm os arquivos .*pdb* corretos dos binários da Microsoft. | -   [Como: Especificar locais de arquivo de símbolos a partir da linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **Analise o aplicativo:** as ferramentas de linha de comando e opções que você usa para analisar um aplicativo de destino dependem do tipo de aplicativo, o método de criação de perfil e se o destino é um aplicativo gerenciado ou nativo. | -   [Usar métodos de criação de perfil na linha de comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Aplicativos autônomos de perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md) |
+| **Crie relatórios .xml e. csv:** a criação de perfil no prompt de comando cria arquivos de dados que podem ser exibidos na interface do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gere também arquivos .*xml* ou .*csv* (valores separados por vírgula) dos dados usando a ferramenta de linha de comando VSPerfReport. | -   [Criar relatórios de profiler a partir da linha de comando](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **Analise código em computadores sem o Visual Studio:** é possível utilizar o criador de perfil autônomo das Ferramentas de Criação de Perfil para coletar dados de aplicativos em computadores que não têm o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado. | -   [Como: Instalar o profiler autônomo](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
 ## <a name="reference"></a>Referência
-- [Referência de Ferramentas de Criação de Perfil da linha de comando](../profiling/command-line-profiling-tools-reference.md)
+- [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Gerenciador de Desempenho](../profiling/performance-explorer.md)

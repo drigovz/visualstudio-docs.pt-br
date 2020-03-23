@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113794"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
@@ -38,17 +38,17 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Acessibilidade do Visual Studio para Mac](/visualstudio/mac/accessibility).
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
-- [Como definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Como: Definir opções de acessibilidade IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Como usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Como: Usar o teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > As informações desta página podem se aplicar somente aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se você adquiriu este produto fora dos Estados Unidos, visite o site [Acessibilidade da Microsoft](https://www.microsoft.com/accessibility/) para obter uma lista de números de telefone e endereços dos serviços de suporte da Microsoft. Contate qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta página estão disponíveis em sua região. Informações sobre acessibilidade também estão disponíveis em outros idiomas.
@@ -60,6 +60,6 @@ Para mais informações, consulte os seguintes tópicos:
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Produtos e serviços de acessibilidade da Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

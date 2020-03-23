@@ -12,18 +12,18 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692091"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302577"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurar funções de serviço de nuvem do Azure com o Visual Studio
 Um serviço de nuvem do Azure pode ter uma ou mais funções web ou de trabalho. Para cada função, você precisa definir como essa função é instalada e também configurar como ela é executada. Para saber mais sobre as funções em serviços de nuvem, assista ao vídeo [Introdução aos Serviços de Nuvem do Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 As informações sobre seu serviço de nuvem são armazenadas nos seguintes arquivos:
 
-- **ServiceDefinition.csdef** — o arquivo de definição de serviço define as configurações de tempo de execução de seu serviço de nuvem, incluindo as funções que são necessárias, os pontos de extremidade e o tamanho da máquina virtual. Nenhum dos dados armazenados em `ServiceDefinition.csdef` pode ser alterado quando a função está sendo executada.
+- **ServiceDefinition.csdef** — o arquivo de definição de serviço define as configurações de runtime de seu serviço de nuvem, incluindo as funções que são necessárias, os pontos de extremidade e o tamanho da máquina virtual. Nenhum dos dados armazenados em `ServiceDefinition.csdef` pode ser alterado quando a função está sendo executada.
 - **ServiceConfiguration.cscfg** — o arquivo de configuração de serviço define quantas instâncias de uma função são executadas e os valores das configurações definidas para uma função. Os dados armazenados em `ServiceConfiguration.cscfg` podem ser alterados enquanto a função está sendo executada.
 
 Para armazenar valores diferentes para essas configurações que controlam como uma função é executada, você pode definir várias configurações de serviço. Você pode usar uma configuração de serviço diferente para cada ambiente de implantação. Por exemplo, você pode definir sua cadeia de conexão de conta de armazenamento para usar o emulador de armazenamento local do Azure em uma configuração de serviço local e criar outra configuração de serviço para usar o armazenamento do Azure na nuvem.
@@ -60,7 +60,7 @@ Para melhorar o desempenho do serviço de nuvem, você pode alterar o número de
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções**, expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
+1. No **Solution Explorer,** expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -76,7 +76,7 @@ Para melhorar o desempenho do serviço de nuvem, você pode alterar o número de
 
     ![Atualização da contagem de instâncias](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Na barra de ferramentas do Visual Studio, selecione **Salvar**.
+1. No Visual Studio, barra de ferramentas, selecione **Salvar**.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>Gerenciar cadeias de conexão para contas de armazenamento
 Você pode adicionar, remover ou modificar cadeias de conexão para suas configurações de serviço. Por exemplo, você pode querer uma cadeia de conexão local para uma configuração de serviço local que tem um valor de `UseDevelopmentStorage=true`. Você também pode querer definir uma configuração de serviço de nuvem que use uma conta de armazenamento no Azure.
@@ -90,11 +90,11 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções**, expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
+1. No **Solution Explorer,** expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selecione a guia **Configurações**.
+1. Selecione a guia **Configurações.**
 
     ![Guia Configurações](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -118,11 +118,11 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
     - **Emulador de Armazenamento do Microsoft Azure** — se selecionar essa opção, as configurações restantes na caixa de diálogo serão desabilitadas, uma vez que se aplicam apenas ao Azure. Selecione **OK**.
     - **Sua assinatura** — se selecionar essa opção, use a lista suspensa para selecionar e entrar em uma conta da Microsoft ou adicionar uma conta da Microsoft. Selecione uma assinatura do Azure e a conta de armazenamento. Selecione **OK**.
-    - **Credenciais inseridas manualmente** — digite o nome da conta de armazenamento e a chave primária ou secundária. Selecione uma opção para **Conexão** (HTTPS é recomendado na maioria dos cenários). Selecione **OK**.
+    - **Credenciais inseridas manualmente** — digite o nome da conta de armazenamento e a chave primária ou secundária. Selecione uma opção para **Conexão** (HTTPS é recomendado para a maioria dos cenários.) Selecione **OK**.
 
 1. Para excluir uma cadeia de conexão, selecione a cadeia de conexão e escolha **Remover Configuração**.
 
-1. Na barra de ferramentas do Visual Studio, selecione **Salvar**.
+1. No Visual Studio, barra de ferramentas, selecione **Salvar**.
 
 ## <a name="programmatically-access-a-connection-string"></a>Acessar uma cadeia de conexão de modo programático
 
@@ -152,11 +152,11 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções**, expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
+1. No **Solution Explorer,** expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selecione a guia **Configurações**.
+1. Selecione a guia **Configurações.**
 
     ![Guia Configurações](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -178,7 +178,7 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
 1. Para excluir uma configuração personalizada, selecione-a e, em seguida, selecione **Remover Configuração**.
 
-1. Na barra de ferramentas do Visual Studio, selecione **Salvar**.
+1. No Visual Studio, barra de ferramentas, selecione **Salvar**.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>Acessar o valor de uma configuração personalizada de modo programático
 
@@ -203,7 +203,7 @@ Você pode adicionar o armazenamento do sistema de arquivos local para cada inst
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções**, expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
+1. No **Solution Explorer,** expanda o nó do projeto. No nó **Funções**, clique com o botão direito do mouse na função que deseja atualizar e, no menu de contexto, selecione **Propriedades**.
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -229,7 +229,7 @@ Você pode adicionar o armazenamento do sistema de arquivos local para cada inst
 
 1. Para excluir uma entrada de armazenamento local, selecione a entrada e **Remover Armazenamento Local**.
 
-1. Na barra de ferramentas do Visual Studio, selecione **Salvar**.
+1. No Visual Studio, barra de ferramentas, selecione **Salvar**.
 
 ## <a name="programmatically-accessing-local-storage"></a>Acessar o armazenamento local de modo programático
 

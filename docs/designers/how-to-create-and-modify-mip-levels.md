@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113285"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Como criar e modificar níveis de MIP
@@ -23,7 +23,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 
 #### <a name="to-generate-mip-levels"></a>Para gerar os níveis de MIP
 
-1. Comece com uma textura básica, conforme descrito em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
+1. Comece com uma textura básica, como descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
 
 2. Gere os níveis de MIP. Na barra de ferramentas **Modo do Editor de Imagens**, escolha **Avançado** > **Ferramentas** > **Gerar Mips**.
 
@@ -41,6 +41,6 @@ Para obter efeitos especiais ou aumentar a qualidade da imagem em níveis espec�
 > [!NOTE]
 > Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md)

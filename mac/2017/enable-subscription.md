@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984993"
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
@@ -28,7 +28,7 @@ Para começar a usar uma assinatura, faça logon no Visual Studio para Mac segui
 
 Se sua assinatura tiver expirado, você terá duas opções:
 
-1. Renovar sua assinatura. Você pode renovar sua assinatura navegando até [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+1. Renovar sua assinatura. Você pode renovar sua [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)assinatura navegando para .
 
 2. Se você tiver outra conta com uma assinatura ativa, poderá adicioná-la ao Visual Studio para Mac conforme detalhado no artigo [Adicionar várias contas de usuário](signing-in.md). O Visual Studio para Mac detectará a melhor licença disponível de todas as contas que você adicionou.
 
@@ -44,6 +44,6 @@ Atualmente não é possível utilizar uma chave do produto (Product Key) para ha
 
 Se você tiver comprado o Visual Studio Enterprise 2017 para Mac para computadores sem uma conexão de Internet, você poderá continuar a usar o Visual Studio para Mac sem ativação, mas o Xamarin Inspector, Xamarin Profiler e recursos de assemblies inseridos não estarão disponíveis.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)

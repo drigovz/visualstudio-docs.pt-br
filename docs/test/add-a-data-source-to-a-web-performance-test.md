@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565403"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho para Web
@@ -32,7 +32,7 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
 ![Solução com o teste de desempenho Web](../test/media/web_test_databinding_solution.png)
 
-## <a name="create-a-sql-database"></a>Criar um banco de dados SQL
+## <a name="create-a-sql-database"></a>Criar um Banco de Dados SQL
 
 ::: moniker range="vs-2017"
 
@@ -249,7 +249,7 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Como uso um arquivo XML como uma fonte de dados?
 
-**R:** Sim.
+**A:** Sim.
 
 1. Crie uma pasta para organizar seus artefatos de banco de dados de projetos e adicione um item.
 

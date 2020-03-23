@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634221"
 ---
 # <a name="error-task"></a>tarefa Error
@@ -33,16 +33,16 @@ Interrompe um build e registra um erro com base em uma instrução condicional a
 
 A tabela a seguir descreve os parâmetros da tarefa `Error`.
 
-| Parâmetro | DESCRIÇÃO |
+| Parâmetro | Descrição |
 |---------------| - |
 | `Code` | Parâmetro `String` opcional.<br /><br /> O código de erro a associar ao erro. |
 | `File` | Parâmetro `String` opcional.<br /><br /> O nome do arquivo que contém o erro. Se nenhum nome de arquivo for fornecido, o arquivo que contém a tarefa de erro será usado. |
 | `HelpKeyword` | Parâmetro `String` opcional.<br /><br /> A palavra-chave Ajuda a ser associada ao erro. |
-| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de erro que o MSBuild registra se o parâmetro `Condition` é avaliado como `true`. |
+| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de erro que o `Condition` MSBuild `true`registra se o parâmetro for avaliado em . |
 
 ## <a name="remarks"></a>Comentários
 
-A tarefa `Error` permite que projetos do MSBuild emitam texto de erro para agentes e interrompam a execução da compilação.
+A `Error` tarefa permite que projetos do MSBuild emitam texto de erro para madeireiros e interrompam a execução de compilação.
 
 Se o parâmetro `Condition` avaliar `true`, o build será interrompido e um erro será registrado. Se um parâmetro `Condition` não existir, o erro será registrado e a execução de build será interrompida. Para obter mais informações sobre o log, confira [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 

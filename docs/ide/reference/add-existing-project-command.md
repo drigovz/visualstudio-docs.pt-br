@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595872"
 ---
 # <a name="add-existing-project-command"></a>Comando Adicionar Projeto Existente
@@ -29,7 +29,7 @@ Adiciona um projeto existente à solução atual.
 File.AddExistingProject filename
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `filename`\
 Opcional. O caminho completo e nome do projeto, com a extensão, do projeto a adicionar à solução.
 
@@ -47,7 +47,7 @@ Este exemplo adiciona o projeto [!INCLUDE[vbprvb](../../code-quality/includes/vb
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

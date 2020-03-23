@@ -1,5 +1,5 @@
 ---
-title: Elemento Task de Target (MSBuild) | Microsoft Docs
+title: Elemento de tarefa do alvo (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263158"
 ---
-# <a name="task-element-of-target-msbuild"></a>Elemento Task de Target (MSBuild)
+# <a name="task-element-of-target-msbuild"></a>Elemento de tarefa do Target (MSBuild)
 
-Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é determinado pelo nome da tarefa que está sendo criada.
+Cria e executa uma instância de uma tarefa MSBuild. O nome do elemento é determinado pelo nome da tarefa que está sendo criada.
 
  \<Project> \<Target>
 
@@ -45,27 +45,27 @@ Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é de
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Condition`|Atributo opcional. Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
-|`ContinueOnError`|Atributo opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **verdadeiro**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para saber mais, confira [Como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`ContinueOnError`|Atributo opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subseqüentes no elemento [Destino](../msbuild/target-element-msbuild.md) e na compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, consulte [Como: Ignorar erros nas tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|
 |`Parameter`|Será necessário se a classe de tarefa contiver uma ou mais propriedades rotuladas com o atributo `[Required]`.<br /><br /> Um parâmetro de tarefa definido pelo usuário que contém o valor do parâmetro como seu valor. Pode haver qualquer quantidade de parâmetros no elemento `Task`, com cada atributo mapeado para uma propriedade do .NET na classe tarefa.|
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |[Saída](../msbuild/output-element-msbuild.md)|Armazena saídas da tarefa no arquivo de projeto. Pode haver zero ou mais elementos `Output` em uma tarefa.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
-| [Target (destino)](../msbuild/target-element-msbuild.md) | Elemento contêiner para tarefas do MSBuild. |
+| [Destino](../msbuild/target-element-msbuild.md) | Elemento de contêiner para tarefas MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
- Um elemento `Task` em um arquivo de projeto do MSBuild cria uma instância de uma tarefa, define as propriedades nela e a executa. O elemento `Output` armazena parâmetros de saída em propriedades ou itens para serem usados em outro local do arquivo de projeto.
+ Um `Task` elemento em um arquivo de projeto MSBuild cria uma instância de uma tarefa, define propriedades nele e executa-o. O elemento `Output` armazena parâmetros de saída em propriedades ou itens para serem usados em outro local do arquivo de projeto.
 
  Se houver elementos [OnError](../msbuild/onerror-element-msbuild.md) no elemento pai `Target` de uma tarefa, eles ainda serão avaliados se a tarefa falhar e `ContinueOnError` tiver o valor de `false`. Para obter mais informações sobre tarefas, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
@@ -91,4 +91,4 @@ Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é de
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

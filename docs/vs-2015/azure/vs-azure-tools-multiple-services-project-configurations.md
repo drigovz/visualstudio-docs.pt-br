@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915591"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302570"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
@@ -33,27 +33,27 @@ Para obter informações sobre os esquemas subjacentes para a definição de ser
 
 ## <a name="configuration-page"></a>Página Configuração
 
-### <a name="service-configuration"></a>Configuração do serviço
+### <a name="service-configuration"></a>Configuração de Serviço
 
-Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage...** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
+Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage... ** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
 
 ### <a name="instances"></a>Instâncias
 
 Definir a **instância** propriedade de contagem para o número de instâncias o serviço deve ser executado para esta função.
 
-Defina a propriedade **Tamanho da VM** como **Extra Pequena**, **Pequena**, **Média**, **Grande** ou **Extra Grande**.  Para saber mais, veja [Tamanhos dos Serviços de Nuvem](/azure/cloud-services/cloud-services-sizes-specs).
+Defina a propriedade **Tamanho da VM** como **Extra Pequena**, **Pequena**, **Média**, **Grande** ou **Extra Grande**.  Para obter mais informações, consulte [Tamanhos para Serviços em Nuvem](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Ação de inicialização (somente função Web)
 
 Defina essa propriedade para especificar que o Visual Studio deve iniciar um navegador da Web para os pontos de extremidade HTTP ou os pontos de extremidade HTTPS, ou ambos, quando você iniciar a depuração.
 
-A opção de **ponto de extremidade HTTPS** está disponível somente se você já definiu um ponto de extremidade HTTPS para sua função. Você pode definir um ponto de extremidade HTTPS na página de propriedades **pontos de extremidade** .
+A opção **ponto final HTTPS** só está disponível se você já tiver definido um ponto final HTTPS para sua função. Você pode definir um ponto de extremidade HTTPS na página de propriedades **pontos de extremidade** .
 
 Se você já tiver adicionado um ponto de extremidade HTTPS, a opção de ponto de extremidade HTTPS será habilitada por padrão e o Visual Studio iniciará um navegador para esse ponto de extremidade quando você iniciar a depuração, além de um navegador para o ponto de extremidade HTTP, supondo que as opções de inicialização estejam habilitadas.
 
-### <a name="diagnostics"></a>Diagnóstico
+### <a name="diagnostics"></a>Diagnósticos
 
-Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor ( **...** ) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor (**...**) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Página Configurações
 
@@ -70,7 +70,7 @@ Você pode definir a cadeia de conexão para usar o armazenamento local conforme
 
 Para criar uma cadeia de conexão, selecione **Adicionar Configuração** e defina **Tipo** como "Cadeia de Conexão".
 
-Para cadeias de conexão novas ou existentes, selecione **...** * à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
+Para cadeias de conexão novas ou existentes, selecione **... *** à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
 
 1. Em **Conectar usando**, escolha a opção **Sua assinatura** para selecionar uma conta de armazenamento de uma assinatura. O Visual Studio, em seguida, obtém as credenciais da conta de armazenamento automaticamente do arquivo `.publishsettings`.
 1. Selecionar **Credenciais inseridas manualmente** permite que você especifique o nome da conta e a chave diretamente usando as informações do Portal do Azure. Para copiar a chave de conta:

@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592042"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Use as classes Assert para teste de unidade
@@ -47,6 +47,6 @@ Se você gravar uma nova classe de exceção assert, herde da classe base <xref:
 
 Para verificar se uma exceção que você espera que seja gerada por um método no código do aplicativo é realmente gerada, use o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)

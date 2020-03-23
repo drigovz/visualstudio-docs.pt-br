@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984762"
 ---
 # <a name="data-visualizations"></a>Visualizações de dados
@@ -23,7 +23,7 @@ Os visualizadores no painel de depuração **Local** podem ser exibidos clicando
 
 A lista a seguir examina muitas das novas visualizações disponíveis durante a depuração no Visual Studio para Mac.
 
-## <a name="point"></a>Ponto
+## <a name="point"></a>Point
 Um Point/PointF ou CGPoint no iOS e no Mac será renderizado como uma tupla mostrando os valores X e Y no painel de depuração:
 
 ![Visualização de Ponto](media/data-visualizations-image10.png)
@@ -31,7 +31,7 @@ Um Point/PointF ou CGPoint no iOS e no Mac será renderizado como uma tupla most
 ## <a name="size"></a>Tamanho
 Um Size/SizeF ou CGSize no iOS e no Mac será renderizado como um retângulo. Ele é desenhado para ser dimensionado até que uma dimensão aumente para mais de 250 px, ponto em que ele dimensionará o retângulo com a dimensão maior como 250 px:
 
-[Visualização de tamanho](media/data-visualizations-image11.png)
+[Visualização de Tamanho](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Retângulo
 Um Rectangle/RectangleF ou CGRect no iOS e no Mac, exibirá as dimensões e a origem. Semelhante ao Tamanho, ele é desenhado para ser dimensionado até que uma dimensão aumente para mais de 250 px:
@@ -41,9 +41,9 @@ Um Rectangle/RectangleF ou CGRect no iOS e no Mac, exibirá as dimensões e a or
 ## <a name="coordinate"></a>Coordenada
 As coordenadas são plotadas em um mapa, com o local fixado no centro:
 
-[Visualização de coordenada](media/data-visualizations-image13.png)
+[Visualização de Coordenada](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Cor
+## <a name="color"></a>Color
 Isso exibirá as propriedades UIColor, CGColor e Color, ilustrando a visualização de cores, os componentes RGBA, os valores de matiz-saturação-luminosidade e o valor hexadecimal da cor:
 
 ![Visualização de Cor](media/data-visualizations-image14.png)
@@ -60,14 +60,14 @@ O visualizador exibirá um `NSBezierPath`:
 
 ![Visualização de curva de Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Cadeia de Caracteres
+## <a name="string"></a>String
 
 Uma cadeia de caracteres de menos de 100 caracteres é exibida inteira, sem uma visualização. As cadeias de caracteres mais longas são exibidas inteiras na visualização. Cadeias de caracteres são editáveis e o visualizador acompanha um botão Editar para permitir que o valor de cadeia de caracteres seja editado na visualização ou no Editor de Valor de Cadeia de Caracteres, mostrado abaixo:
 
 ![Visualização de cadeia de caracteres](media/data-visualizations-image17.png)
 
 ### <a name="small-strings"></a>Cadeias de caracteres pequenas:
-![Visualização de cadeia de caracteres pequenas](media/data-visualizations-image18.png)[]
+![Visualização de cadeia de caracteres pequenas](media/data-visualizations-image18.png)]
 
 ### <a name="medium-length-strings"></a>Cadeias de caracteres de tamanho médio:
 ![Visualização de cadeia de caracteres média](media/data-visualizations-image19.png)
@@ -88,20 +88,20 @@ Alguns outros tipos que também têm seus próprios visualizadores embutidos est
 
 ![Outras visualizações](media/data-visualizations-image23.png)
 
-* **Primitives**
+* **Primitivos**
   * Mostra o valor bruto do tipo primitivo.
 * **Enum**
   * Exibe o valor do campo sem o qualificador do Tipo enumeração.
-* **Tuple**
+* **Tupla**
   * Exibido no formato (,)
 * **Null**
   * Mostra o valor “null”.
-* **URL**
+* **Url**
   * Exite um hiperlink clicável.
 * **IntPtr**
   * Exibe uma representação hexadecimal de IntPtr.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Inspecionar variáveis nas janelas Autos e Locais (Visual Studio no Windows)](/visualstudio/debugger/autos-and-locals-windows)
 - [Exibir cadeias de caracteres em um visualizador (Visual Studio no Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

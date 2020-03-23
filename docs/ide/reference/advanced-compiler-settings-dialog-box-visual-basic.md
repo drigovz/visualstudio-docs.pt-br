@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596925"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
@@ -28,7 +28,7 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
 
 1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).
 
-2. No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.
+2. No menu **Projeto** , clique em **Propriedades**. Quando o **Project Designer** aparecer, clique na guia **Compilar.**
 
 3. Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para saber mais, consulte [Como definir configurações de depuração e versão](../../debugger/how-to-set-debug-and-release-configurations.md).
 
@@ -50,7 +50,7 @@ Se as condições de estouro estiverem marcadas e uma operação de inteiro esto
 
 Por padrão, essa caixa de seleção está desmarcada para desabilitar as otimizações do compilador. Marque essa caixa de seleção para habilitar otimizações do compilador. Otimizações do compilador tornam o arquivo de saída menor, mais rápido e mais eficiente. No entanto, uma vez que otimizações causam reorganização de código no arquivo de saída, as otimizações do compilador podem dificultar a depuração.
 
- **Endereço básico de DLL**
+ **Endereço base DLL**
 
 Essa caixa de texto exibe o endereço básico de DLL padrão em formato hexadecimal. Em projetos de Biblioteca de Classes e Biblioteca de Controle, você pode usar essa caixa de texto para especificar o endereço básico a ser usado quando a DLL é criada.
 
@@ -62,7 +62,7 @@ Selecione **Nenhum**, **Completo** ou **Somente pdb** na lista. **Nenhum** espec
 
 Constantes de compilação condicional têm um efeito semelhante ao de usar uma diretiva de pré-processador [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) em um arquivo de origem, exceto que constantes definidas são públicas e aplicam-se a todos os arquivos no projeto. Você pode usar constantes de compilação condicionais junto com a diretiva [#If... Then... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) para compilar os arquivos de origem condicionalmente. Consulte [Compilação Condicional](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
 
- **Definir a constante DEBUG**
+ **Definir constante DEBUG**
 
 Por padrão, essa caixa de seleção é marcada, especificando que uma constante DEBUG deve ser definida.
 
@@ -72,14 +72,14 @@ Por padrão, essa caixa de seleção é marcada, especificando que uma constante
 
  **Constantes personalizadas**
 
-Insira quaisquer constantes personalizadas para seu aplicativo nessa caixa de texto. As entradas devem ser delimitadas por vírgulas usando este formato: **Name1="Value1",Name2="Value2",Name3="Value3"** .
+Insira quaisquer constantes personalizadas para seu aplicativo nessa caixa de texto. As entradas devem ser delimitadas por vírgulas usando este formato: **Name1="Value1",Name2="Value2",Name3="Value3"**.
 
 ## <a name="other-settings"></a>Outras configurações
 
 **Gerar assemblies de serialização**
 
-Essa configuração especifica se o compilador criará os assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. O valor padrão dessa opção é **auto**. **Auto** especifica que os assemblies de serialização serão gerados somente se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos em seu código para XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll.
+Essa configuração especifica se o compilador criará os assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. O valor padrão para esta opção é **Auto**. **O auto** especifica que os conjuntos de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos em seu código para XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Página de Compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Compilar página, designer de projeto (visual básico)](../../ide/reference/compile-page-project-designer-visual-basic.md)

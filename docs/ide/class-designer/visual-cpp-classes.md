@@ -1,5 +1,5 @@
 ---
-title: C++Classes no Designer de Classe
+title: C++ Aulas em Class Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590729"
 ---
-# <a name="c-classes-in-class-designer"></a>C++classes no Designer de Classe
+# <a name="c-classes-in-class-designer"></a>C++ classes em Class Designer
 
 O **Designer de Classe** é compatível com classes do C++ e visualiza classes nativas do C++ da mesma maneira que as formas de classe do Visual Basic e do C#, exceto que as classes do C++ podem ter várias relações de herança. É possível expandir a forma de classe para exibir mais campos e métodos na classe ou recolhê-la para economizar espaço.
 
 > [!NOTE]
-> O **Designer de Classe** não é compatível com uniões (um tipo especial de classe em que a memória alocada é apenas a quantidade necessária para o maior membro de dados da união).
+> **O Class Designer** não apoia sindicatos (um tipo especial de classe em que a memória alocada é apenas o montante necessário para o maior membro de dados da União).
 
 ## <a name="simple-inheritance"></a>Herança simples
 
@@ -39,7 +39,7 @@ Você também pode arrastar apenas a classe B para o diagrama de classe, clicar 
 
 ## <a name="multiple-inheritance"></a>Herança múltipla
 
-O **Designer de Classe** é compatível com a visualização de relações de herança com várias classes. A *herança múltipla* é usada quando uma classe derivada tem atributos com mais de uma classe base. A seguir, temos um exemplo de herança múltipla:
+**O Class Designer** suporta a visualização de relacionamentos de herança de várias classes. A *herança múltipla* é usada quando uma classe derivada tem atributos com mais de uma classe base. A seguir, temos um exemplo de herança múltipla:
 
 ```cpp
 class Bird {};
@@ -52,13 +52,13 @@ Quando você arrasta mais de uma classe para o diagrama de classe e as classes t
 Clicar com o botão direito do mouse em uma forma de classe e, depois, clicar em **Mostrar Classes Base** exibe as classes base da classe selecionada.
 
 > [!NOTE]
-> O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas acessando o **Modo de Exibição de Classe**, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.
+> O comando **Mostrar Classes Derivadas** não tem suporte para código C++. Você pode exibir classes derivadas indo para **Exibição de classe,** expandindo o nó do tipo, expandindo a subpasta **Detipos Derivados** e arrastando esses tipos para o diagrama de classe.
 
 Para obter mais informações sobre a herança de classes múltiplas, consulte [Herança múltipla](https://msdn.microsoft.com/library/6td5yws2.aspx) e [Classes Base Múltiplas](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Classes abstratas
 
-O **Designer de Classe** é compatível com classes abstratas (também chamadas de "classes base abstratas"). Essas são classes que você nunca instancia, mas das quais pode derivar outras classes. Usando um exemplo de "Herança múltipla" no início deste documento, você pode instanciar a classe `Bird` como objetos individuais, da seguinte maneira:
+**O Class Designer** suporta classes abstratas (também chamadas de "classes de base abstratas"). Essas são classes que você nunca instancia, mas das quais pode derivar outras classes. Usando um exemplo de "Herança múltipla" no início deste documento, você pode instanciar a classe `Bird` como objetos individuais, da seguinte maneira:
 
 ```cpp
 int main()
@@ -107,11 +107,11 @@ int main()
 }
 ```
 
-Quando você exibe esse código em um Diagrama de Classe, o **Designer de Classe** desenha uma linha de herança de `Fish` para `Swimmer`.
+Quando você exibe esse código em um diagrama `Fish` de `Swimmer`classe, o **Class Designer** desenha uma linha de herança de para .
 
 ## <a name="anonymous-classes"></a>Classes anônimas
 
-O **Designer de Classe** é compatível com classes anônimas. *Tipos de classe anônima* são classes declaradas sem um identificador. Elas não podem ter um construtor ou um destruidor, não podem ser passadas como argumentos para funções e não podem ser retornadas como valores retornados de funções. É possível usar uma classe anônima para substituir um nome de classe por um nome de typedef, como no exemplo a seguir:
+**O Class Designer** suporta aulas anônimas. *Tipos de classe anônima* são classes declaradas sem um identificador. Elas não podem ter um construtor ou um destruidor, não podem ser passadas como argumentos para funções e não podem ser retornadas como valores retornados de funções. É possível usar uma classe anônima para substituir um nome de classe por um nome de typedef, como no exemplo a seguir:
 
 ```cpp
 typedef struct
@@ -121,13 +121,13 @@ typedef struct
 } POINT;
 ```
 
-As estruturas também podem ser anônimas. O **Designer de Classe** exibe estruturas e classes anônimas da mesma forma que exibe o respectivo tipo. Embora você possa declarar e exibir estruturas e classes anônimas, o **Designer de Classe** não usará o nome de marca que você especificar. Ele usará o nome gerado pelo Modo de Exibição de Classe. A classe ou a estrutura aparece no Modo de Exibição de Classe e no **Designer de Classe** como um elemento chamado **__unnamed**.
+As estruturas também podem ser anônimas. **O Class Designer** exibe classes e estruturas anônimas da mesma forma que exibe o respectivo tipo. Embora você possa declarar e exibir classes e estruturas anônimas, **o Class Designer** não usará o nome da tag que você especificar. Ele usará o nome gerado pelo Modo de Exibição de Classe. A classe ou estrutura aparece no Class View e **class Designer** como um elemento chamado **__unnamed**.
 
 Para obter mais informações sobre classes anônimas, consulte [Tipos de classe anônima](/cpp/cpp/anonymous-class-types).
 
 ## <a name="template-classes"></a>Classes de modelo
 
-O **Designer de Classe** é compatível com a visualização de classes de modelo. Declarações aninhadas têm suporte. A tabela a seguir mostra algumas declarações típicas.
+**O Class Designer** suporta a visualização de classes de modelo. Declarações aninhadas têm suporte. A tabela a seguir mostra algumas declarações típicas.
 
 | Elemento de código | Modo de exibição do Designer de Classe |
 | - | - |
@@ -172,11 +172,11 @@ A tabela a seguir mostra alguns exemplos de conexões de classe especializada ca
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Classe<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Classe<br /><br /> `C<T>`<br /><br /> Classe de modelo<br /><br /> `D`<br /><br /> Classe<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trabalhando com C++ código](working-with-visual-cpp-code.md)
-- [Classes e Structs](/cpp/cpp/classes-and-structs-cpp)
+- [Trabalhando com código C++](working-with-visual-cpp-code.md)
+- [Classes e structs](/cpp/cpp/classes-and-structs-cpp)
 - [Tipos de classe anônima](/cpp/cpp/anonymous-class-types)
-- [Herança múltipla](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Várias heranças](https://msdn.microsoft.com/library/6td5yws2.aspx)
 - [Classes base múltiplas](/cpp/cpp/multiple-base-classes)
 - [Modelos](/cpp/cpp/templates-cpp)

@@ -20,27 +20,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631517"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 
-A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou remove identificadores exclusivos (UIDs), a fim de localizar todos os elementos XAML incluídos nos arquivos XAML de origem.
+A <xref:Microsoft.Build.Tasks.Windows.UidManager> tarefa verifica, atualiza ou remove identificadores exclusivos (UIDs), a fim de localizar todos os elementos XAML que estão incluídos nos arquivos XAML de origem.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
-| Parâmetro | DESCRIÇÃO |
+| Parâmetro | Descrição |
 |-------------------------| - |
-| `IntermediateDirectory` | Parâmetro **String** opcional.<br /><br /> Especifica o diretório que é usado para fazer backup dos arquivos XAML de origem que são especificados pelo parâmetro **MarkupFiles** . |
-| `MarkupFiles` | Parâmetro obrigatório **ITaskItem[]** .<br /><br /> Especifica os arquivos XAML de origem a serem incluídos para verificação, atualização ou remoção de UID. |
-| `Task` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar**, **Atualizar** ou **Remover**. |
+| `IntermediateDirectory` | Parâmetro opcional **string.**<br /><br /> Especifica o diretório usado para fazer backup dos arquivos XAML de origem especificados pelo parâmetro **MarkupFiles.** |
+| `MarkupFiles` | Parâmetro **ITaskItem necessário[].**<br /><br /> Especifica os arquivos XAML de origem para incluir para verificação, atualização ou remoção de UID. |
+| `Task` | Parâmetro obrigatório **String**.<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar**, **Atualizar** ou **Remover**. |
 
 ## <a name="example"></a>Exemplo
 
- O exemplo a seguir usa a tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> para verificar se os arquivos XAML de origem especificados contêm elementos XAML que têm UIDs apropriados.
+ O exemplo a <xref:Microsoft.Build.Tasks.Windows.UidManager> seguir usa a tarefa para verificar se os arquivos XAML de origem especificada contêm elementos XAML que possuem UIDs apropriados.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -58,9 +58,9 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou r
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Compilar um aplicativo WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Como localizar um aplicativo](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [Como: Localizar um aplicativo](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

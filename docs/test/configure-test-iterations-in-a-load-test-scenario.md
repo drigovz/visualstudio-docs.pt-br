@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590976"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
@@ -39,7 +39,7 @@ Se o teste de carga for um teste de carga baseado em duração, e a duração ex
 Quando a contagem de iterações do cenário for atingida, a execução do cenário será interrompida, mas todos os outros cenários ativos continuarão a ser executados.
 
 > [!NOTE]
-> Uma propriedade relacionada é a propriedade **Exclusivo** em uma fonte de dados de teste na Web, que se move em sequência pelos dados, linha por linha, mas apenas uma vez para cada registro. Para obter mais informações, consulte [Adicionar uma fonte de dados a um teste de desempenho Web](../test/add-a-data-source-to-a-web-performance-test.md).
+> Uma propriedade relacionada é a propriedade **Unique** em uma fonte de dados de teste da Web, que se move sequencialmente através dos dados, linha por linha, mas apenas uma vez para cada registro. Para obter mais informações, consulte [Adicionar uma fonte de dados a um teste de desempenho Web](../test/add-a-data-source-to-a-web-performance-test.md).
 
 A propriedade de **Número máximo de iterações de teste** é útil para diversas situações. Alguns testadores de carga preferem executar testes baseados em iteração, enquanto outros preferem executar testes baseados em duração.
 
@@ -49,7 +49,7 @@ A propriedade de **Número máximo de iterações de teste** é útil para diver
 
 1. Abra um teste de carga.
 
-2. O Editor de testes de carga é exibido. A árvore do teste de carga é exibida.
+2. O Editor de Testes de Carga é exibido. A árvore do teste de carga é exibida.
 
 3. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar o número máximo de iterações de teste.
 
@@ -71,7 +71,7 @@ A propriedade de **Tempo de Processamento entre Iterações de Teste** é defini
 A propriedade de **Tempo de processamento entre iterações de teste** é usada para especificar quantos segundos esperar antes de iniciar uma iteração de teste.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades do cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades do cenário do teste de carga e suas descrições, consulte [Propriedades do cenário do teste de carga](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Para especificar o tempo de processamento entre iterações de teste
 
@@ -89,9 +89,9 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 
 5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tempo de processamento entre iterações de teste**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Configurar controladores e agentes de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Configurar agentes de teste e controladores de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
 - [Editar tempos de processamento para simular atrasos de interação humana no site](../test/edit-think-times-in-load-test-scenarios.md)

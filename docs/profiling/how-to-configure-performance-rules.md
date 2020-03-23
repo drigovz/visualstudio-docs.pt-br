@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9bb9b07a0ae1fa19ae48408aa34a9dfb6577b6e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779006"
 ---
 # <a name="how-to-configure-performance-rules"></a>Como configurar regras de desempenho
@@ -23,7 +23,7 @@ Os avisos de desempenho das Ferramentas de Criação de Perfil do Visual Studio 
 
 ### <a name="to-configure-profiler-performance-warnings"></a>Para configurar avisos de desempenho do criador de perfil
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Expanda **Ferramentas de Desempenho** e, em seguida, clique em **Regras**.
 

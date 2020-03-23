@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568406"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo opções: editor de texto \> geral
+# <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo \> opções: Editor de texto geral
 
 Essa caixa de diálogo permite alterar as configurações globais do editor de texto e código do Visual Studio. Para exibir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e selecione **Geral**.
 
@@ -54,7 +54,7 @@ Quando selecionado, permite mover texto selecionando-o e arrastando-o com o mous
 
 Quando selecionado, os caracteres delimitadores que separam parâmetros ou pares de valor do item, bem como as chaves correspondentes, são realçados.
 
-### <a name="track-changes"></a>Controlar alterações
+### <a name="track-changes"></a>Controle de alterações
 
 Quando o editor de códigos é selecionado, uma linha amarela vertical aparece na margem de seleção para marcar o código que foi alterado desde que o arquivo foi salvo mais recentemente. Quando você salva as alterações, as linhas verticais ficam verdes.
 
@@ -72,7 +72,7 @@ Com essa opção estiver selecionada, você poderá pressionar **Ctrl** e passar
 
 Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código.
 
-## <a name="display"></a>{1&gt;Vídeo&lt;1}
+## <a name="display"></a>Exibição
 
 ### <a name="selection-margin"></a>Margem de seleção
 
@@ -94,11 +94,11 @@ Quando selecionado, exibe uma caixa cinza ao redor da linha de código na qual o
 
 Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)
+- [Personalizando o Editor](../how-to-change-text-case-in-the-editor.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

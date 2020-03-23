@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779942"
 ---
 # <a name="vsinstr-warnings"></a>Avisos de VSInstr
@@ -28,7 +28,7 @@ A tabela a seguir lista os avisos emitidos pela ferramenta *VSInstr.exe*. Você 
 |Número do aviso|Descrição|
 |--------------------|-----------------|
 |**VSP1026**|Não há suporte para cobertura em bibliotecas que não fazem referência a MSCorLib. Esse geralmente é o caso de Bibliotecas Portáteis.<br /><br />A opção [/EnableCodeCoverage](../test/vstest-console-options.md) da linha de comando é obrigatória para o .NET Core.|
-|**VSP2000**|Erro interno. Não é possível obter o nome de arquivo do módulo para este executável.|
+|**VSP2000**|Erro Interno. Não é possível obter o nome de arquivo do módulo para este executável.|
 |**VSP2001**|\<assembly name> é um assembly de nome forte. Ele deve ser assinado novamente antes de ser executado.<br /><br /> Este aviso ocorre quando um assembly assinado é instrumentado. Use a ferramenta *sn.exe* para desistir do binário ou desligar temporariamente o requisito de nome forte. Para obter mais informações, confira [Sn.exe (ferramenta de nome forte)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Não foi possível localizar a função \<funcname > no arquivo \<filename ><br /><br /> Este aviso ocorrerá se uma função não puder ser localizada no arquivo especificado.|
 |**VSP2003**|Não foi possível encontrar um salto cruzado para a função \<funcname> no arquivo \<filename>.<br /><br /> Este aviso ocorre se VSInstr não puder anular saltos cruzados. Saltos cruzados são usados para otimização do código.|
@@ -44,5 +44,5 @@ A tabela a seguir lista os avisos emitidos pela ferramenta *VSInstr.exe*. Você 
 |**VSP2013**|Instrumentar esta imagem requer que ela seja executada como um processo de 32 bits. Os sinalizadores de cabeçalho CLR foram atualizados para refletir isso.<br /><br /> O criador de perfil modifica o binário para que os sistemas operacionais de 64 bits pode abrir o processo de 32 bits no emulador WOW64. Para bibliotecas (DLLs) isso pode falhar se eles são carregados em um processo de 64 bits existente. Este aviso notifica o usuário da dependência.|
 |**VSP2014**|A imagem instrumentada resultante parece ser inválida e poderá não ser executada.<br /><br /> Essa mensagem ocorre quando o assembly instrumentado final tem um cabeçalho PE inválido.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [VSInstr](../profiling/vsinstr.md)

@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114797"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Desabilitar ou mover o cache do pacote
@@ -46,18 +46,18 @@ Se você quiser reabilitar o cache, passe `--cache` em vez disso. Somente os pac
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-Você também pode definir a [política de registro](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` para desabilitar o cache antes de instalar, modificar ou reparar o Visual Studio.
+Você também pode definir a `KeepDownloadedPayloads` [política do Registro](set-defaults-for-enterprise-deployments.md) para desabilitar o cache antes de instalar, modificar ou reparar o Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Mover o cache do pacote
 
 Uma configuração comum do sistema é ter o Windows instalado em um SSD com um disco rígido maior (ou mais) para necessidades de desenvolvimento, como código-fonte, binários de programa e muito mais. Se quiser trabalhar offline em vez disso, você poderá mover o cache do pacote.
 
-No momento, você pode fazer isso somente se definir a [política de registro](set-defaults-for-enterprise-deployments.md) de `CachePath` antes de instalar, modificar ou reparar o Visual Studio.
+No momento, você só poderá fazer isso se definir a  [política do Registro](set-defaults-for-enterprise-deployments.md)`CachePath` antes de instalar, modificar ou reparar o Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
-* [Definir padrões para implantações corporativas](set-defaults-for-enterprise-deployments.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instale o Visual Studio](install-visual-studio.md)
+* [Definir padrões para implantações empresariais](set-defaults-for-enterprise-deployments.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

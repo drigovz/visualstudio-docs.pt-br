@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568005"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -35,11 +35,11 @@ Especifica um arquivo para armazenar e exibir erros ao [executar](run-devenv-exe
 devenv /Out FileName
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-- *FileName*
+- *Filename*
 
-  Necessária. O caminho e nome do arquivo para receber a saída ao compilar um arquivo executável.
+  Obrigatórios. O caminho e nome do arquivo para receber a saída ao compilar um arquivo executável.
 
 ## <a name="remarks"></a>Comentários
 
@@ -55,7 +55,7 @@ Este exemplo executa `MySolution` e grava os erros no arquivo `MyErrorLog.txt`.
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
@@ -63,5 +63,5 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyEr
 - [/Upgrade (devenv.exe)](upgrade-devenv-exe.md)
 - [/Clean (devenv.exe)](clean-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/Reconstruir (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Implantar (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

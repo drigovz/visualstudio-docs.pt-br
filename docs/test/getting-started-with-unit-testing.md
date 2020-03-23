@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78289848"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
@@ -26,7 +26,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Abra o projeto que você deseja testar no Visual Studio.
 
-   Para fins de demonstração de um exemplo de teste de unidade, este artigo testa um projeto simples de "Olá, Mundo" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
+   Com o propósito de demonstrar um teste de unidade de exemplo, este artigo testa um projeto simples "Hello World" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +40,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
       }
    ```
 
-1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **Arquivo** > **Adicionar** > **Novo Projeto**.
+1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menu superior, selecione > **'Adicionar** > **arquivo', novo projeto**. **File**
 
 1. Na caixa de diálogo Novo Projeto, localize um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar e selecione-o.
 
@@ -72,7 +72,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Adicione código ao método de teste de unidade.
 
-   Por exemplo, para um projeto MSTest, você pode usar o código a seguir.
+   Por exemplo, para um projeto MSTest, você pode usar o seguinte código.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,7 +101,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
    }
    ```
 
-   Ou, para um projeto NUnit, você pode usar o código a seguir.
+   Ou, para um projeto NUnit, você pode usar o seguinte código.
 
    ```csharp
    using using NUnit.Framework;
@@ -136,17 +136,17 @@ Esta seção descreve como criar um projeto de teste de unidade.
    ```
 
 > [!TIP]
-> Para obter mais detalhes sobre como criar testes de unidade, consulte [criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Para obter mais detalhes sobre a criação de testes unitários, consulte [Criar e executar testes unitários para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
-1. Abra o [Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
+1. [Explorador de teste aberto](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador de testes** na barra de menus superior.
+   Para abrir o Test Explorer, escolha **Test** > **Explorer** na barra superior do menu.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Para abrir o Gerenciador de testes, escolha **testar** > o **Windows** > **Test Explorer** na barra de menus superior.
+   Para abrir o Test Explorer, escolha **Test** > **Windows** > **Test Explorer** na barra superior do menu.
    ::: moniker-end
 
 1. Execute seus testes de unidade clicando em **Executar Tudo**.
@@ -202,7 +202,7 @@ Quando executa o IntelliTest, você pode ver quais testes estão falhando e adic
 
 ## <a name="analyze-code-coverage"></a>Analisar a cobertura de código
 
-Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem usar uma grande proporção do seu código. Para saber como, confira [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem usar uma grande proporção do seu código. Para saber como, consulte [Usar a cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-third-party-test-framework"></a>Usar uma estrutura de teste de terceiros
 
@@ -244,10 +244,10 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Criar comando de Testes de Unidade](create-unit-tests-menu.md)
-* [Gerar testes com IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Criar comando de testes de unidade](create-unit-tests-menu.md)
+* [Gerar testes com o IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
 * [Analisar a cobertura de código](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

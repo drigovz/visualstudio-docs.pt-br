@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fcd4ed0c60d615f0c213e1af5099c5e94a9b485
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634117"
 ---
 # <a name="formaturl-task"></a>Tarefa FormatUrl
@@ -31,7 +31,7 @@ Converte uma URL em um formato de URL correto.
 
  A tabela a seguir descreve os parâmetros da tarefa `FormatUrl`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`InputUrl`|Parâmetro `String` opcional.<br /><br /> Especifica a URL a ser formatada.|
 |`OutputUrl`|Parâmetro de saída `String` opcional.<br /><br /> Especifica a URL formatada.|

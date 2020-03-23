@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113431"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como gerenciar conjuntos de contadores usando o Editor de Teste de Carga
@@ -58,10 +58,10 @@ Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do
 
      As marcações são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. O mais importante é que os marcadores são exibidos em relatórios do Excel, o que ajuda os participantes a identificar qual função o computador tem no teste de carga. Por exemplo, "Web Server1 em lab2" ou "SQL Server2 em Phoenix office". Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).
 
-6. Clique em **OK**.
+6. Escolha **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
+- [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915805"
 ---
 # <a name="installation"></a>Instalação
@@ -26,7 +26,7 @@ Essa extensão funciona com o Visual Studio 2015 e o Visual Studio 2017, Communi
 
 Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou do Visual Studio:
 
-1. Escolha **Ferramentas** > **Extensões e Atualizações**.
+1. Selecione**Extensões e Atualizações de** **Ferramentas** > .
 
    ![Menu Extensões e Atualizações do Visual Studio](media/installation/extensions.png)
 
@@ -130,7 +130,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > Esse comando atualiza o NumPy e o SciPy antigos ou não oficiais (por exemplo, pacotes de terceiros de http://www.lfd.uci.edu/~gohlke/pythonlibs/ para Windows) para as versões mais recentes.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>CNTK (Microsoft Cognitive Toolkit)
 
 O [Microsoft Cognitive Toolkit](https://cntk.ai) é um kit de ferramentas unificado de aprendizagem profunda que descreve redes neurais como uma série de passos computacionais por meio de um gráfico direcionado. O CNTK tem suporte para as linguagens de programação Python e BrainScript.
 
@@ -156,7 +156,7 @@ Clique [aqui](https://caffe2.ai/docs/getting-started.html) para compilar no cód
 
 ### <a name="mxnet"></a>MXNet
 
-O [Apache MXNet (em encubação)](https://mxnet.incubator.apache.org/) é uma estrutura de aprendizagem profunda projetada para ser eficiente e flexível. Ele permite misturar a [programação simbólica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) para maximizar a eficiência e a produtividade.
+O [Apache MXNet (em encubação)](https://mxnet.incubator.apache.org/) é uma estrutura de aprendizagem profunda projetada para ser eficiente e flexível. Ele permite **misturar** [programação imperativa e simbólica](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) a fim de maximizar a eficiência e a produtividade.
 
 Para instalar o MXNet, execute o seguinte comando em um terminal:
 
@@ -237,7 +237,7 @@ Por fim, instale o torchvision em não Windows:
 pip3.5 install torchvision
 ```
 
-### <a name="chainer"></a>Chainer
+### <a name="chainer"></a>Encadeador
 
 O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele fornece APIs de diferenciação automática com base na abordagem de definição por execução (também conhecida como gráficos computacionais dinâmicos), além de APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
 

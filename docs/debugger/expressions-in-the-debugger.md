@@ -20,27 +20,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
-ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78925304"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302164"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
 
-As seções a seguir descrevem as limitações de avaliação de expressão para idiomas com suporte no Visual Studio.
+As seções a seguir descrevem limitações de avaliação de expressão para idiomas suportados pelo Visual Studio.
 
-## <a name="f-expressions-are-not-supported"></a>F#Não há suporte para expressões
-F#as expressões não são reconhecidas. Se você estiver Depurando F# código, precisará converter suas expressões C# em sintaxe antes de inserir as expressões em uma janela ou caixa de diálogo do depurador. Quando você converter expressões de F# em C#, certifique-se de que C# usa o operador `==` para testar a igualdade, enquanto F# usa o `=` único.
+## <a name="f-expressions-are-not-supported"></a>As expressões F# não são suportadas
+F# expressões não são reconhecidas. Se você estiver depurando o código F#, você precisa traduzir suas expressões em sintaxe C# antes de inserir as expressões em uma janela de depurador ou caixa de diálogo. Quando você converter expressões de F# em C#, certifique-se de que C# usa o operador `==` para testar a igualdade, enquanto F# usa o `=` único.
 
-## <a name="c-expressions"></a>C++Expressões
-Para obter informações sobre como usar operadores de contexto C++com expressões no, consulte [Context Operator (C++)](../debugger/context-operator-cpp.md).
+## <a name="c-expressions"></a>Expressões C++
+Para obter informações sobre o uso de operadores de contexto com expressões em C++, consulte [Context Operator (C++)](../debugger/context-operator-cpp.md).
 
-### <a name="unsupported-expressions-in-c"></a>Expressões sem suporte noC++
+### <a name="unsupported-expressions-in-c"></a>Expressões sem suporte em C++
 
 #### <a name="constructors-destructors-and-conversions"></a>Construtores, destruidores e conversões
-Você não pode chamar um construtor ou destruidor para um objeto, explícita ou implicitamente. Por exemplo, a expressão a seguir chama explicitamente um construtor e resulta em uma mensagem de erro:
+Você não pode chamar um construtor ou destruidor para um objeto, seja explicitamente ou implicitamente. Por exemplo, a expressão a seguir chama explicitamente um construtor e resulta em uma mensagem de erro:
 
 ```C++
 my_date( 2, 3, 1985 )
@@ -52,20 +52,20 @@ Você não pode chamar uma função de conversão se o destino da conversão for
 (FixedPoint)myFraction
 ```
 
-Você não pode chamar os operadores New ou Delete. Por exemplo, não há suporte para a seguinte expressão:
+Não é possível chamar os operadores novos ou apagar. Por exemplo, a seguinte expressão não é suportada:
 
 ```C++
 new Date(2,3,1985)
 ```
 
 #### <a name="preprocessor-macros"></a>Macros de pré-processador
-Não há suporte para macros de pré-processador no depurador. Por exemplo, se uma constante `VALUE` for declarada como: `#define VALUE 3`, você não poderá usar `VALUE` na janela de **Observação** . Para evitar essa limitação, você deve substituir `#define`com enums e funções sempre que possível.
+As macros do pré-processador não são suportadas no depurador. Por exemplo, se `VALUE` uma constante `#define VALUE 3`for declarada `VALUE` como: , você não poderá usar na janela **Relógio.** Para evitar essa limitação, você deve substituir `#define`'s por enums e funções sempre que possível.
 
 ### <a name="using-namespace-declarations"></a>usando declarações de namespace
-Você não pode usar declarações de `using namespace`.  Para acessar um nome de tipo ou variável fora do namespace atual, você deve usar o nome totalmente qualificado.
+Você não `using namespace` pode usar declarações.  Para acessar um nome de tipo ou variável fora do namespace atual, você deve usar o nome totalmente qualificado.
 
 ### <a name="anonymous-namespaces"></a>Namespaces anônimos
-Não há suporte para namespaces anônimos. Se você tiver o código a seguir, não poderá adicionar `test` à janela de observação:
+Espaços de nomes anônimos não são suportados. Se você tiver o seguinte `test` código, não poderá adicionar à janela do relógio:
 
 ```C++
 namespace mars
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Usando funções intrínsecas do depurador para manter o estado
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Usando funções intrínsecas de depurador para manter o estado
 As funções intrínsecas do depurador oferecem uma maneira de chamar determinadas funções C/C++ em expressões sem alterar o estado do aplicativo.
 
 Funções intrínsecas do depurador:
@@ -95,37 +95,37 @@ Funções intrínsecas do depurador:
 
 - Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.
 
-  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil de escrever em uma condição de ponto de interrupção do que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`em uma condição de ponto de ruptura do que . )
 
 |Área|Funções intrínsecas|
 |----------|-------------------------|
-|**Comprimento da cadeia de caracteres**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Comprimento da cadeia de caracteres**|[strlen, wcslen,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l) [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
 |**Comparação de cadeias de caracteres**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
 |**Pesquisa de cadeias de caracteres**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
-|**Diversos**|__log2//retorna a base de log 2 de um inteiro especificado, arredondado para o número inteiro mais próximo.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [index < >] e Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] e operador (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa uma nova passagem de árvore<br /><br />TreeTraverse_Next//retorna nós em uma árvore<br /><br />TreeTraverse_Skip//ignora nós em uma árvore de percurso pendente '|
+|**Win32**|[CoDecodeProxy,](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy) [DecodePointer,](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29) [GetLastError,](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal,](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal) [WindowsGetStringLen,](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen) [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
+|**Diversos**|__log2 // Retorna a base de log 2 de um inteiro especificado, arredondado para o inteiro inferior mais próximo.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concorrência::array<>::operator[index<>] e operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] e operador(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Simultâneo::array_view<>::operadores (<> de índices) e operadores (<> de índice)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operador(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operador[tiled_index<>] e operador(tiled_index<>)<br /><br />TreeTraverse_Init // Inicia uma nova travessia de árvores<br /><br />TreeTraverse_Next // Retorna os nódulos em uma árvore<br /><br />TreeTraverse_Skip // Salta os nódulos em uma travessia de árvore pendente'|
 
-## <a name="ccli---unsupported-expressions"></a>C++/CLI-expressões sem suporte
+## <a name="ccli---unsupported-expressions"></a>C++/CLI - Expressões não suportadas
 
-- Não há suporte para conversões que envolvem ponteiros ou conversões definidas pelo usuário.
+- Elencos que envolvam ponteiros, ou moldes definidos pelo usuário, não são suportados.
 
-- Não há suporte para comparação de objetos e atribuição.
+- A comparação e a atribuição de objetos não são suportadas.
 
-- Não há suporte para operadores sobrecarregados e funções sobrecarregadas.
+- Operadores sobrecarregados e funções sobrecarregadas não são suportados.
 
-- Não há suporte para boxing e unboxing.
+- Boxe e unboxing não são suportados.
 
-- Não há suporte para o operador de `Sizeof`.
+- `Sizeof`operador não é suportado.
 
-## <a name="c---unsupported-expressions"></a>C#-Expressões sem suporte
+## <a name="c---unsupported-expressions"></a>C# - Expressões não suportadas
 
 ### <a name="dynamic-objects"></a>Objetos dinâmicos
-Você pode usar variáveis em expressões de depurador que são digitadas estaticamente como dinâmicas. Quando os objetos que implementam <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados no janela Inspeção, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
+Você pode usar variáveis em expressões dedepurador que são digitadas estáticamente como dinâmicas. Quando os <xref:System.Dynamic.IDynamicMetaObjectProvider> objetos que são implementados são avaliados na janela Relógio, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=`e `*=`
+- Os operadores `+=` `-=`compostos, e `%=` `/=``*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -140,16 +140,16 @@ Os seguintes recursos de objetos dinâmicos não têm suporte:
 - Operadores boolianos `&&` e `||`
 
 ### <a name="anonymous-methods"></a>Métodos anônimos
-Não há suporte para a criação de novos métodos anônimos.
+A criação de novos métodos anônimos não é suportada.
 
-## <a name="visual-basic---unsupported-expressions"></a>Visual Basic-expressões sem suporte
+## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - Expressões não suportadas
 
 ### <a name="dynamic-objects"></a>Objetos dinâmicos
-Você pode usar variáveis em expressões de depurador que são digitadas estaticamente como dinâmicas. Quando os objetos que implementam os <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados no janela Inspeção, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
+Você pode usar variáveis em expressões dedepurador que são digitadas estáticamente como dinâmicas. Quando os objetos que implementam o <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados na janela Relógio, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=`e `*=`
+- Os operadores `+=` `-=`compostos, e `%=` `/=``*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -167,12 +167,12 @@ Os seguintes recursos de objetos dinâmicos não têm suporte:
 As constantes locais não têm suporte.
 
 ### <a name="import-aliases"></a>Aliases de importação
-Não há suporte para aliases de importação.
+Os pseudônimos de importação não são suportados.
 
 ### <a name="variable-declarations"></a>Declarações de variável
-Você não pode declarar novas variáveis explícitas nas janelas do depurador. No entanto, você pode atribuir novas variáveis implícitas dentro da janela **imediata** . Essas variáveis implícitas têm como escopo a sessão de depuração e não podem ser acessadas fora do depurador. Por exemplo, a instrução `o = 5` Cria implicitamente uma nova variável `o` e atribui o valor 5 a ela. Essas variáveis implícitas são do tipo **Object** , a menos que o tipo possa ser inferido pelo depurador.
+Você não pode declarar novas variáveis explícitas nas janelas do depurador. No entanto, você pode atribuir novas variáveis implícitas dentro da janela **Imediato.** Essas variáveis implícitas são escopo da sessão de depuração e não são acessíveis fora do depurador. Por exemplo, `o = 5` a declaração cria `o` implicitamente uma nova variável e atribui o valor 5 a ela. Tais variáveis implícitas são do tipo **Objeto,** a menos que o tipo possa ser inferido pelo depurador.
 
-### <a name="unsupported-keywords"></a>{1&gt;Palavras-chave sem suporte&lt;1}
+### <a name="unsupported-keywords"></a>Palavras-chave sem suporte
 
 - `AddressOf`
 
@@ -202,10 +202,10 @@ Você não pode declarar novas variáveis explícitas nas janelas do depurador. 
 
 - `With`
 
-- Palavras-chave de namespace ou nível de módulo, como `End Sub` ou `Module`.
+- Namespace ou módulo nível palavras-chave, tais como `End Sub` ou `Module`.
 
 ## <a name="see-also"></a>Confira também
 - [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)
-- [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
-- [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)
+- [Operador de Contexto (C++)](../debugger/context-operator-cpp.md)
+- [Especificadores de formato em C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudovariáveis](../debugger/pseudovariables.md)

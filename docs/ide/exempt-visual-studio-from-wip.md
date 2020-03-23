@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588558"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurar o Visual Studio como um aplicativo da isento da WIP
@@ -34,6 +34,6 @@ Como o Visual Studio inclui vários binários, [crie um arquivo de política do 
 
 Para especificar onde o Visual Studio pode acessar dados empresariais em sua rede, siga estas [etapas para definir onde seus aplicativos protegidos podem localizar e enviar dados empresariais](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Para impedir que o Windows bloqueie as conexões aos recursos de nuvem por meio de um endereço IP, adicione a cadeia de caracteres /\*AppCompat\*/ à configuração.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comportamento do aplicativo com WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

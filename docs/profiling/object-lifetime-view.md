@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772618"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
@@ -33,18 +33,18 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 
 ## <a name="general"></a>Geral
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
-|**Nome de Classe**|O nome de classe do tipo alocado.|
+|**Nome da Classe**|O nome de classe do tipo alocado.|
 |**ID do Processo**|A ID de processo da execução de criação de perfil.|
-|**Nome do Processo**|O nome do processo.|
-|**Nome do Módulo**|O nome do módulo que contém a função.|
+|**Nome do processo**|O nome do processo.|
+|**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 
 ## <a name="instance-data"></a>Dados de instância
  Dados de instância indicam o número de objetos do tipo que foram criados na execução de criação de perfil e a geração na qual os objetos foram desalocados pelo coletor de lixo.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Instâncias**|O número de alocações de objetos desse tipo.|
 |**% Total de Instâncias**|O percentual do número total de alocações feitas na execução da criação de perfil.|
@@ -56,7 +56,7 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 ## <a name="size-byte-data"></a>Dados de tamanho (bytes)
  Dados de tamanho (byte) indicam o tamanho de objetos do tipo que foram criados na execução de criação de perfil e a quantidade de memória que foi recuperada em cada geração na qual os objetos foram desalocados.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Total de Bytes Alocados**|O número total de bytes para todas as instâncias do tipo.|
 |**% Total de Bytes**|O percentual do número total de bytes alocados na execução de criação que foram alocados para as instâncias desse tipo.|
@@ -67,10 +67,10 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 ## <a name="large-object-heap-data"></a>Dados de heap de objeto grande
  O alocador de memória .NET gerencia objetos muito grandes em um local separado de heap gerenciado padrão. Dados de heap de objeto grande indicam o número e tamanho dos objetos do tipo que foram gerenciados neste local.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Instâncias de Heap de Objetos Grandes Coletados**|O número de instâncias desse tipo que estavam no heap de objeto grande e que foram coletadas na execução da criação de perfil.|
 |**Bytes de Heap de Objetos Grandes Coletados**|O tamanho, em bytes, das instâncias desse tipo que estavam no heap de objeto grande e que foram coletadas na execução da criação de perfil.|
 
-## <a name="see-also"></a>Consulte também
-- [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>Confira também
+- [Exibições de dados de memória .NET](../profiling/dotnet-memory-data-views.md)

@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595196"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 
-Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e resolve essas bibliotecas de tipo em locais no disco.
+Pega uma lista de um ou mais nomes de biblioteca de tipo ou arquivos *.tlb* e resolve essas bibliotecas de tipo para locais em disco.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `ResolveCOMReference`.
 
@@ -37,7 +37,7 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e
 |---------------|-----------------|
 |`DelaySign`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, coloca a chave pública no assembly. Se `false`, assina totalmente o assembly.|
 |`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Matriz de pares de variáveis de ambiente, separadas por sinais de igual. Essas variáveis são passadas para *tlbimp.exe* e *aximp.exe* gerados, adicionando ou substituindo seletivamente o bloqueio de ambiente regular.|
-|`ExecuteAsTool`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, executa *tlbimp.exe* e *aximp.exe* da estrutura de destino apropriada fora de processo para gerar os assemblies de wrapper necessários. Esse parâmetro habilita multiplataformas.|
+|`ExecuteAsTool`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, executa *tlbimp.exe* e *aximp.exe* a partir da estrutura de destino apropriada fora-de-proc para gerar os conjuntos de invólucros necessários. Esse parâmetro habilita multiplataformas.|
 |`IncludeVersionInInteropName`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a versão de typelib será incluída no nome do wrapper. O padrão é `false`.|
 |`KeyContainer`|Parâmetro `String` opcional.<br /><br /> Especifica um contêiner que armazena um par de chaves pública/privada.|
 |`KeyFile`|Parâmetro `String` opcional.<br /><br /> Especifica um item que contém um par de chaves pública/privada.|
@@ -80,11 +80,11 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e
 
 ## <a name="remarks"></a>Comentários
 
-Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base Task](../msbuild/task-base-class.md).
+Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base de tarefas](../msbuild/task-base-class.md).
 
 A DLL COM não precisa estar registrada na máquina para que essa tarefa funcione.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

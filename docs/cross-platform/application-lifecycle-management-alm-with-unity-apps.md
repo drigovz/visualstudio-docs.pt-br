@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272269"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
@@ -93,12 +93,12 @@ Link de referência: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts
 |Teste manual|Sim||
 |Gerenciador de Teste (testes de gravação e reprodução)|Somente dispositivos Windows e emuladores Android||
 |Cobertura de código|n/d|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|
-|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|O Unity fornece a própria estrutura de teste de unidade como parte das [Ferramentas de Teste do Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|
-|[Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|
+|[Unidade teste seu código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|A Unity fornece sua própria estrutura de teste de unidade como parte das ferramentas de [teste Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|
+|[Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|
 
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código
 
-Link de referência: **[Melhorar a qualidade do código](../test/improve-code-quality.md)**
+Link de referência: ** [Melhorar a qualidade do código](../test/improve-code-quality.md)**
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
@@ -106,7 +106,7 @@ Link de referência: **[Melhorar a qualidade do código](../test/improve-code-qu
 |[Localizar código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Medir complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Ferramentas de desempenho](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|
-|[Analisar problemas de memória do .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|
+|[Analisar problemas de memória .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|
 
 ## <a name="release-management"></a>Gerenciamento de liberações
 

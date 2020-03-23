@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114547"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Como criar e remover dependências de projeto
@@ -31,7 +31,7 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 ## <a name="to-assign-dependencies-to-projects"></a>Para atribuir dependências a projetos
 
-1. No **Gerenciador de Soluções**, selecione um projeto.
+1. No **Solution Explorer,** selecione um projeto.
 
 2. No menu **Projeto**, escolha **Dependências do Projeto**.
 
@@ -48,7 +48,7 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 ## <a name="to-remove-dependencies-from-projects"></a>Para remover dependências de projetos
 
-1. No **Gerenciador de Soluções**, selecione um projeto.
+1. No **Solution Explorer,** selecione um projeto.
 
 2. No menu **Projeto**, escolha **Dependências do Projeto**.
 
@@ -61,9 +61,9 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 4. No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
-- [Gerenciar propriedades do projeto e da solução](managing-project-and-solution-properties.md)
+- [Gerenciar propriedades de projetos e soluções](managing-project-and-solution-properties.md)

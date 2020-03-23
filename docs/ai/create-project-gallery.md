@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915896"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
@@ -31,7 +31,7 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 2. Entre na sua assinatura do Azure Machine Learning clicando com o botão direito do mouse no nó do **Azure Machine Learning** no Gerenciador de Servidores e, em seguida, selecione **Logon** e siga as instruções.
 
-    ![Logon](media/create-project-gallery/azureml-login.png)
+    ![login](media/create-project-gallery/azureml-login.png)
 
 3. Selecione **Ferramentas de IA > Galeria de exemplos do Azure Machine Learning**.
 

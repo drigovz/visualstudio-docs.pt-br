@@ -27,33 +27,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77904159"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
-Você precisará de configurações de compilação quando precisar compilar seus projetos com configurações diferentes. Por exemplo, **debug** e **Release** são configurações e opções de compilador diferentes são usadas adequadamente ao criá-las.  Uma configuração está ativa e é indicada na barra de comandos na parte superior do IDE.
+Você precisa de configurações de compilação quando precisa construir seus projetos com configurações diferentes. Por exemplo, **Debug** e **Release** são configurações e diferentes opções de compiladores são usadas de acordo ao construí-las.  Uma configuração está ativa e é indicada na barra de comando na parte superior do IDE.
 
 ![Configuração ativa](media/understanding-build-configurations/active-config.png)
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Configurações de build no Visual Studio para Mac](/visualstudio/mac/configurations).
 
-A configuração e o controle de plataforma onde os arquivos de saída criados são armazenados. Normalmente, quando o Visual Studio cria seu projeto, a saída é colocada em uma subpasta do projeto chamada com a configuração ativa (por exemplo, *bin/Debug/x86*), mas você pode alterá-la.
+A configuração e o controle da plataforma onde os arquivos de saída incorporados são armazenados. Normalmente, quando o Visual Studio constrói seu projeto, a saída é colocada em uma subpasta de projeto nomeada com a configuração ativa (por exemplo, *bin/Debug/x86),* mas você pode alterá-la.
 
-Você pode criar suas próprias configurações de compilação no nível da solução e do projeto. A configuração da solução determina quais projetos são incluídos na compilação quando essa configuração está ativa. Somente os projetos especificados na configuração da solução ativa serão criados. Se várias plataformas de destino forem selecionadas no Configuration Manager, todos os projetos que se aplicam a essa plataforma serão criados. A configuração do projeto determina quais configurações de compilação e opções de compilador são usadas quando você cria o projeto.
+Você pode criar suas próprias configurações de compilação no nível de solução e projeto. A configuração da solução determina quais projetos estão incluídos na compilação quando essa configuração estiver ativa. Somente serão construídos os projetos especificados na configuração da solução ativa. Se várias plataformas de destino forem selecionadas no Gerenciador de Configuração, todos os projetos que se aplicam a essa plataforma serão construídos. A configuração do projeto determina quais configurações de compilação e opções de compilador são usadas quando você constrói o projeto.
 
-Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
+Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager**ou apenas digite **Configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
 
 ![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
-> Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com as configurações para desenvolvedores do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Se você não conseguir encontrar configurações de configuração de solução na [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] barra de ferramentas e não conseguir acessar o **Gerenciador de configuração,** as configurações de desenvolvimento podem ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com configurações de desenvolvedor Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Por padrão, as configurações de **depuração** e **versão** são incluídas em projetos que são criados usando modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Uma configuração de **depuração** dá suporte à depuração de um aplicativo, e uma configuração de **versão** cria uma versão do aplicativo que pode ser implantada. Para saber mais, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+Por padrão, as configurações **Debug** e **Release** são [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incluídas em projetos criados usando modelos. Uma configuração **de Debug** suporta a depuração de um aplicativo, e uma configuração **de Versão** cria uma versão do aplicativo que pode ser implantada. Para saber mais, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, [consulte Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurações da solução
 
@@ -67,21 +67,21 @@ A configuração da solução ativa também fornece contexto ao IDE. Por exemplo
 
 ## <a name="project-configurations"></a>Configurações de projeto
 
-A configuração e a plataforma para as quais um projeto se destina são usadas em conjunto para especificar as configurações de compilação e as opções de compilador a serem usadas quando ele é compilado. Um projeto pode ter configurações diferentes para cada combinação de configuração e plataforma. Para modificar as propriedades de um projeto, abra o menu de atalho do projeto no **Gerenciador de soluções**e, em seguida, escolha **Propriedades**.  Na parte superior da guia **Build** do designer de projeto, escolha uma configuração ativa para editar suas configurações de compilação.
+A configuração e a plataforma que um projeto visa são usadas em conjunto para especificar as configurações de compilação e opções de compilador para usar quando for construída. Um projeto pode ter configurações diferentes para cada combinação de configuração e plataforma. Para modificar as propriedades de um projeto, abra o menu de atalho para o projeto no **Solution Explorer**e escolha **Propriedades**.  Na parte superior da guia **Build** do designer de projeto, escolha uma configuração ativa para editar suas configurações de compilação.
 
-![Configurações do designer de projeto](media/understanding-build-configurations/project-designer-configuration.png)
+![Configurações do project designer](media/understanding-build-configurations/project-designer-configuration.png)
 
-## <a name="building-multiple-configurations"></a>Criando várias configurações
+## <a name="building-multiple-configurations"></a>Construindo múltiplas configurações
 
-Quando você cria uma solução usando o comando **build** > **Compilar solução** , o Visual Studio cria apenas a configuração ativa. Todos os projetos especificados na configuração da solução são criados e a única configuração de projeto criada é aquela especificada na configuração da solução ativa e na plataforma de solução ativa, que é mostrada na barra de ferramentas no Visual Studio. Por exemplo, **debug** e **x86**. Outras configurações e plataformas definidas não são criadas.
+Quando você constrói uma solução usando o comando **Build** > **Build Solution,** o Visual Studio só constrói a configuração ativa. Todos os projetos especificados nessa configuração de solução são construídos, e a única configuração do projeto que foi construída é aquela especificada na configuração ativa da solução e na plataforma de solução ativa, que é mostrada na barra de ferramentas do Visual Studio. Por exemplo, **Debug** e **x86**. Outras configurações e plataformas definidas não são construídas.
 
-Se você quiser criar várias configurações e plataformas em uma ação, poderá usar a opção **build** > **lote Build** no Visual Studio. Para acessar esse recurso, pressione **Ctrl**+**Q** para abrir a caixa de pesquisa e digite `Batch build`. A compilação em lotes não está disponível para todos os tipos de projeto. Consulte [como: Compilar várias configurações simultaneamente](how-to-build-multiple-configurations-simultaneously.md).
+Se você quiser construir várias configurações e plataformas em uma ação, você pode usar a opção **Build** > **Batch Build** no Visual Studio. Para acessar esse recurso, **pressione Ctrl**+**Q** `Batch build`para abrir a caixa de pesquisa e digite . A compilação em lote não está disponível para todos os tipos de projeto. [Veja Como: Construir várias configurações simultaneamente](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Como o Visual Studio atribui configurações de projeto
 
 Quando você define uma nova configuração de solução e não copia as configurações de uma já existente, o Visual Studio usa os seguintes critérios para atribuir configurações de projeto padrão. Os critérios são avaliados na ordem mostrada.
 
-1. Se um projeto tiver um nome de configuração ( *\<nome de configuração> \<nome de plataforma>* ) que corresponda exatamente ao nome da nova configuração de solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.
+1. Se um projeto tiver um nome de*\<configuração (nome \<de configuração> nome *da plataforma>) que corresponda exatamente ao nome da nova configuração da solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.
 
 1. Se o projeto tiver um nome de configuração no qual a parte configuração-nome corresponda à nova configuração de solução, essa configuração será atribuída, independentemente se a parte da plataforma for correspondente ou não.
 
@@ -93,15 +93,15 @@ Quando você cria uma configuração de projeto (no **Configuration Manager**, e
 
 O Visual Studio usa os seguintes critérios para atribuir configurações de solução.
 
-- Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão dessa configuração de solução não inclui um nome de plataforma; ele assume a forma *\<nome de configuração do projeto>* .
+- Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão desta configuração de solução não inclui um nome de plataforma; ele leva o * \<nome de configuração *do projeto de formulário>.
 
-- Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>* .
+- Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma, e tem o * \<nome de configuração \< *do projeto de formulário> nome da plataforma>.
 
 ## <a name="see-also"></a>Confira também
 
-- [Passo a passo: criar um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
-- [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Noções básicas sobre plataformas de Build](understanding-build-platforms.md)
+- [Entendendo plataformas de construção](understanding-build-platforms.md)
 - [Configurações de build (Visual Studio para Mac)](/visualstudio/mac/configurations)

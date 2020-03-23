@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114665"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar os certificados necessários para instalação offline do Visual Studio
@@ -148,7 +148,7 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
   * Certificado intermediário: **ACP de Assinatura de Código da Microsoft**
     * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
   * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-    * Necessária. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+    * Obrigatórios. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
 **Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema. Esses certificados são armazenados em arquivos .cer ao invés de arquivos .p12.
 
@@ -164,7 +164,7 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
     * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **Vs_installer_opc.SignCertificates.cer** contém:
   * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-    * Necessária. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+    * Obrigatórios. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
 O Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
@@ -178,11 +178,11 @@ Quando uma assinatura é verificada em um ambiente online, as APIs do Windows s�
 
 Uma maneira de verificar no sistema de instalação é seguir estas etapas:
 
-1. Execute o **mmc.exe**.<br/>
+1. Executar **mmc.exe**.<br/>
   a. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
   b. Clique duas vezes em **Certificados**, selecione **Conta do computador** e clique em **Avançar**.<br/>
   c. Selecione **Computador local**, clique em **Concluir** e depois em **OK**.<br/>
-  d. Expanda os **Certificados (computador local)** .<br/>
+  d. Expanda **Certificados (Computador Local)**.<br/>
   e. Expanda **Autoridades de Certificação Confiáveis** e selecione **Certificados**.<br/>
     * Verifique os certificados raiz necessários para esta lista.<br/>
 
@@ -191,21 +191,21 @@ Uma maneira de verificar no sistema de instalação é seguir estas etapas:
 
 2. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
   a. Clique duas vezes em **Certificados**, selecione **Minha conta de usuário**, clique em **Concluir** e em **OK**.<br/>
-  b. Expanda **Certificados – Usuário atual**.<br/>
+  b. Expandir **certificados – Usuário atual**.<br/>
   c. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados**.<br/>
     * Verifique os certificados intermediários necessários desta lista.<br/>
 
 Se os nomes dos certificados não estiverem na coluna **Emitido Para**, eles terão que ser instalados.  Se um certificado intermediário estiver apenas no repositório de certificados intermediários do **Usuário Atual**, ele só estará disponível para o usuário que estiver conectado. Talvez ele precise ser instalado para outros usuários.
 
-## <a name="install-visual-studio"></a>Instalar o Visual Studio
+## <a name="install-visual-studio"></a>Instalar Visual Studio
 
 Depois de instalar os certificados, a implantação do Visual Studio pode continuar usando as instruções da seção [Implantação de uma instalação de rede](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) da página "Criar uma instalação de rede do Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
+* [Instale o Visual Studio](install-visual-studio.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)

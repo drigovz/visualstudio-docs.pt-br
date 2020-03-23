@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595950"
 ---
 # <a name="new-file-command"></a>Comando Novo Arquivo
@@ -29,12 +29,12 @@ Cria um novo arquivo e abre-o. O arquivo aparece na pasta Arquivos Diversos.
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `filename`
 
 Opcional. Nome para o arquivo. Se nenhum nome for fornecido, será fornecido um nome padrão. Se nenhum nome de modelo for listado, será criado um arquivo de texto.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /t:`templatename`\
 Opcional. Especifica o tipo de arquivo a ser criado.
 
@@ -66,10 +66,10 @@ Este exemplo cria uma nova página da Web "test1.htm" e abre-a no editor de cód
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Janela Imediata](../../ide/reference/immediate-window.md)
+- [Janela imediata](../../ide/reference/immediate-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634442"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
-No MSBuild, um item é uma referência nomeada para um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
+No MSBuild, um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
 ## <a name="common-items"></a>Itens comuns
 
  Esta é uma lista de todos os itens de projeto em comum.
@@ -34,7 +34,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa uma referência de assembly (gerenciado) no projeto.
 
-|Nome de metadados de item|DESCRIÇÃO|
+|Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|
 |Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
@@ -47,7 +47,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa uma referência a um componente COM (não gerenciado) no projeto. Este item se aplica somente a projetos .NET.
 
-|Nome de metadados de item|DESCRIÇÃO|
+|Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|
 |Guid|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
@@ -61,7 +61,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa uma lista de bibliotecas de tipos que alimentam o parâmetro `TypeLibFiles` do destino [ResolveComReference](resolvecomreference-task.md). Este item se aplica somente a projetos .NET.
 
-|Nome de metadados de item|DESCRIÇÃO|
+|Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
 
@@ -69,7 +69,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.
 
-|Nome de metadados de item|DESCRIÇÃO|
+|Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|
@@ -78,7 +78,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa uma referência a outro projeto.
 
-|Nome de metadados de item|DESCRIÇÃO|
+|Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|
 |Project|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
@@ -89,34 +89,34 @@ Esta é uma lista de todos os itens de projeto em comum.
 
  Representa os arquivos de origem do compilador.
 
-| Nome de metadados de item | DESCRIÇÃO |
+| Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
-| AutoGen | Booliano opcional. Indica se o arquivo foi gerado para o projeto pelo IDE (ambiente de desenvolvimento integrado) do Visual Studio. |
+| AutoGen | Booliano opcional. Indica se o arquivo foi gerado para o projeto pelo Ambiente de Desenvolvimento Integrado (IDE) do Visual Studio. |
 | Link | Cadeia de caracteres opcional. O caminho de notação a ser exibido quando o arquivo está fisicamente fora da influência do arquivo de projeto. |
-| Visible | Booliano opcional. Indica se o arquivo deve ser exibido em **Gerenciador de soluções** no Visual Studio. |
-| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. nunca<br />2. sempre<br />3. PreserveNewest |
+| Visible | Booliano opcional. Indica se deve exibir o arquivo no **Solution Explorer** no Visual Studio. |
+| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. Nunca<br />2. Sempre<br />3. PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
  Representa os recursos a serem inseridos no assembly gerado.
 
-| Nome de metadados de item | DESCRIÇÃO |
+| Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente |
 | Gerador | Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item. |
 | LastGenOutput | Cadeia de caracteres obrigatória. O nome do arquivo criado por qualquer gerador de arquivo executado nesse item. |
 | CustomToolNamespace | Cadeia de caracteres obrigatória. O namespace no qual qualquer gerador de arquivo executado nesse item deve criar código. |
 | Link | Cadeia de caracteres opcional. O caminho de notação será exibido se o arquivo estiver localizado fisicamente fora da influência do projeto. |
-| Visible | Booliano opcional. Indica se o arquivo deve ser exibido em **Gerenciador de soluções** no Visual Studio. |
-| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. nunca<br />2. sempre<br />3. PreserveNewest |
+| Visible | Booliano opcional. Indica se deve exibir o arquivo no **Solution Explorer** no Visual Studio. |
+| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. Nunca<br />2. Sempre<br />3. PreserveNewest |
 | LogicalName | Cadeia de caracteres obrigatória. O nome lógico do recurso inserido. |
 
 ### <a name="content"></a>Conteúdo
 
  Representa os arquivos não compilados no projeto, mas pode ser inserido ou publicado junto com ele.
 
-| Nome de metadados de item | DESCRIÇÃO |
+| Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
 | Gerador | Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item. |
@@ -125,38 +125,38 @@ Esta é uma lista de todos os itens de projeto em comum.
 | Link | Cadeia de caracteres opcional. O caminho de notação a ser exibido se o arquivo estiver localizado fisicamente fora da influência do projeto. |
 | PublishState | Cadeia de caracteres obrigatória. O estado de publicação do conteúdo, seja:<br /><br /> -   Padrão<br />-   Incluído<br />-   Excluído<br />-   DataFile<br />-   Pré-requisito |
 | IsAssembly | Booliano opcional. Especifica se o arquivo é um assembly. |
-| Visible | Booliano opcional. Indica se o arquivo deve ser exibido em **Gerenciador de soluções** no Visual Studio. |
-| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. nunca<br />2. sempre<br />3. PreserveNewest |
+| Visible | Booliano opcional. Indica se deve exibir o arquivo no **Solution Explorer** no Visual Studio. |
+| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. Nunca<br />2. Sempre<br />3. PreserveNewest |
 
 ### <a name="none"></a>Nenhum
 
  Representa arquivos que não devem ter função no processo de build.
 
-| Nome de metadados de item | DESCRIÇÃO |
+| Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
 | Gerador | Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item. |
 | LastGenOutput | Cadeia de caracteres obrigatória. O nome do arquivo criado por qualquer gerador de arquivo executado nesse item. |
 | CustomToolNamespace | Cadeia de caracteres obrigatória. O namespace no qual qualquer gerador de arquivo executado nesse item deve criar código. |
 | Link | Cadeia de caracteres opcional. O caminho de notação a ser exibido se o arquivo estiver localizado fisicamente fora da influência do projeto. |
-| Visible | Booliano opcional. Indica se o arquivo deve ser exibido em **Gerenciador de soluções** no Visual Studio. |
-| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. nunca<br />2. sempre<br />3. PreserveNewest |
+| Visible | Booliano opcional. Indica se deve exibir o arquivo no **Solution Explorer** no Visual Studio. |
+| CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. Nunca<br />2. Sempre<br />3. PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+### <a name="assemblymetadata"></a>Assemblymetadata
 
- Representa os atributos de assembly a serem gerados como `[AssemblyMetadata(key, value)]`.
+ Representa atributos de montagem `[AssemblyMetadata(key, value)]`a serem gerados como .
 
-| Nome de metadados de item | DESCRIÇÃO |
+| Nome de metadados de item | Descrição |
 |-----------------------| - |
-| Incluir | Torna-se o primeiro parâmetro (a chave) no construtor de atributo `AssemblyMetadataAttribute`. |
-| Valor | Cadeia de caracteres obrigatória. Torna-se o segundo parâmetro (o valor) no construtor de atributo `AssemblyMetadataAttribute`. |
+| Incluir | Torna-se o primeiro parâmetro (a chave) no construtor de atributos. `AssemblyMetadataAttribute` |
+| Valor | Cadeia de caracteres obrigatória. Torna-se o segundo parâmetro (o valor) no construtor de atributos. `AssemblyMetadataAttribute` |
 
 > [!NOTE]
-> Isso se aplica a projetos usando apenas o SDK do .NET Core.
+> Isso se aplica a projetos usando apenas o .NET Core SDK.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- Representa o manifesto do aplicativo base para a compilação e contém informações de segurança de implantação do ClickOnce.
+ Representa o manifesto de aplicativo base para a compilação e contém informações de segurança de implantação do ClickOnce.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
@@ -164,7 +164,7 @@ Esta é uma lista de todos os itens de projeto em comum.
 
 ### <a name="import"></a>Importar
 
- Representa assemblies cujos namespaces devem ser importados pelo compilador Visual Basic.
+ Representa conjuntos cujos namespaces devem ser importados pelo compilador Visual Basic.
 
 ## <a name="see-also"></a>Confira também
 

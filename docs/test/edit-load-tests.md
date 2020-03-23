@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593220"
 ---
 # <a name="edit-load-tests"></a>Editar testes de carga
@@ -24,7 +24,7 @@ Testes de carga executam testes de desempenho Web ou testes de unidade para simu
 
 Um teste de carga é definido por *cenários*, *conjuntos de contadores* e *configurações de execução*. A ilustração a seguir explica as diferenças entre [cenários](../test/edit-load-test-scenarios.md), [conjuntos de contadores](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) e [configurações de execução](../test/load-test-run-settings-properties.md):
 
-![Carregar arquitetura de teste](../test/media/load_test_editor.png)
+![Arquitetura de teste de carga](../test/media/load_test_editor.png)
 
 ## <a name="software-requirements"></a>Requisitos de software
 
@@ -48,7 +48,7 @@ Configurações de execução são propriedades que influenciam a maneira como u
 
 Para saber mais, confira [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md) e [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisando violações de regras de limiar](../test/analyze-threshold-rule-violations-in-load-tests.md)

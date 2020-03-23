@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76923263"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
@@ -42,7 +42,7 @@ Especifica quais definições de configuração exibir ou modificar. As configur
 
 **Plataforma**
 
-Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
+Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Geral
 
@@ -52,7 +52,7 @@ As opções a seguir permitem definir várias configurações do compilador do C
 
 Especifica símbolos nos quais a compilação condicional é executada. Separe os símbolos com um ponto-e-vírgula (";"). Para obter mais informações, consulte [/define (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
 
-**Definir a constante DEBUG**
+**Definir constante DEBUG**
 
 Define DEBUG como um símbolo em todos os arquivos de código-fonte do aplicativo. Selecionar essa opção equivale a usar a opção de linha de comando `/define:DEBUG`.
 
@@ -66,11 +66,11 @@ Especifica o processador de destino do arquivo de saída. Escolha **x86** para q
 
 Para obter mais informações, consulte [/platform (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
 
-**Anula**
+**Nullable**
 
-Especifica o contexto anulável em C# todo o projeto. Essa opção de interface do usuário foi introduzida no Visual Studio 16,5 e só é habilitada C# para projetos que usam 8,0 ou posterior.
+Especifica o contexto nulo C# em todo o projeto. Esta opção de IU foi introduzida no Visual Studio 16.5, e só está habilitada para projetos que usam C# 8.0 ou posterior.
 
-Para obter mais informações, consulte [contextos anuláveis](/dotnet/csharp/nullable-references#nullable-contexts).
+Para obter mais informações, consulte [Contextos Anulados](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferir 32 bits**
 
@@ -94,7 +94,7 @@ Permite a compilação do código que usa a palavra-chave [unsafe](/dotnet/cshar
 
 Habilita ou desabilita as otimizações executadas pelo compilador para tornar o arquivo de saída menor, mais rápido e mais eficiente. Para obter mais informações, consulte [/optimize (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
 
-## <a name="errors-and-warnings"></a>Erros e Avisos
+## <a name="errors-and-warnings"></a>Erros e avisos
 
 As configurações a seguir são usadas para configurar as opções de erro e de aviso para o processo de build.
 
@@ -110,14 +110,14 @@ Bloqueia a capacidade do compilador de gerar um ou mais avisos. Separe vários n
 
 As configurações a seguir são usadas para especificar quais avisos são tratados como erros. Selecione uma das opções a seguir para indicar em quais condições um erro é retornado quando o build recebe um aviso. Para obter mais informações, consulte [/warnaserror (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**None** -não trata avisos como erros.
+**Nenhum** - Não trata avisos como erros.
 
-**All** -trata todos os avisos como erros.
+**Todos** - Trata todos os avisos como erros.
 
-**Avisos específicos** – trata os avisos especificados como erros. Separe vários números de aviso com uma vírgula ou um ponto-e-vírgula.
+**Avisos específicos** - Trata os avisos especificados como erros. Separe vários números de aviso com uma vírgula ou um ponto-e-vírgula.
 
 > [!TIP]
-> Se você não quiser que os avisos de análise de código sejam tratados como erros, consulte [perguntas frequentes sobre análise de código](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+> Se você não quiser que os avisos de análise de código sejam tratados como erros, consulte [Perguntas frequentes sobre análise de código](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Saída
 
@@ -139,13 +139,13 @@ Indica que o aplicativo gerenciado exporá um objeto COM (um COM Callable Wrappe
 
 **Gerar assembly de serialização**
 
-Especifica se o compilador usará a ferramenta Gerador de Serializador XML (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [Ferramenta Geradora de Serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Especifica se o compilador usará a ferramenta Gerador de Serializador XML (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [XML Serializer Generator Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 **Avançado**
 
 Clique para exibir a caixa de diálogo [Configurações de Build Avançadas (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
-- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)
+- [C# Opções de compilador](/dotnet/csharp/language-reference/compiler-options/index)

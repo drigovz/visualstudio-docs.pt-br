@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593714"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -48,8 +48,8 @@ Do Visual Studio 2017 em diante, o JavaScript IntelliSense exibe muito mais info
 O TypeScript usa várias fontes para criar essas informações:
 
 - [IntelliSense baseado na inferência de tipos](#TypeInference)
-- [IntelliSense baseado no JSDoc](#JsDoc)
-- [IntelliSense baseado em arquivos de declaração do TypeScript](#TsDeclFiles)
+- [IntelliSense baseado em JSDoc](#JsDoc)
+- [IntelliSense baseado em arquivos de declaração TypeScript](#TsDeclFiles)
 - [Aquisição automática de definições de tipo](#Auto)
 
 <a name="TypeInference"></a>
@@ -141,7 +141,7 @@ Atualmente, a detecção automática funciona para dependências baixadas do npm
 
 Se você não desejar usar a aquisição automática, desabilite-a adicionando um arquivo de configuração, conforme descrito abaixo. Ainda é possível colocar arquivos de definição para uso diretamente no projeto manualmente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usando o IntelliSense](../ide/using-intellisense.md)
 - [Suporte a JavaScript (Visual Studio para Mac)](/visualstudio/mac/javascript)

@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263072"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 
-Contém informações sobre um parâmetro específico para uma tarefa que é gerada por um `UsingTask` `TaskFactory`.  O nome do elemento é o nome do parâmetro.  Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contém informações sobre um parâmetro específico de uma tarefa que é gerada por um `UsingTask` `TaskFactory`.  O nome do elemento é o nome do parâmetro.  Para obter mais informações, consulte [O elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
@@ -44,7 +44,7 @@ Contém informações sobre um parâmetro específico para uma tarefa que é ger
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`ParameterType`|Atributo opcional.<br /><br /> O tipo .NET do parâmetro, por exemplo, `System.String`.|
 |`Output`|Atributo booliano opcional.<br /><br /> Se `true`, esse parâmetro será um parâmetro de saída para a tarefa. Por padrão, o valor é `false`.|
@@ -56,9 +56,9 @@ Contém informações sobre um parâmetro específico para uma tarefa que é ger
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contém uma lista opcional de parâmetros que estarão presentes na tarefa que é gerada por um `UsingTask` `TaskFactory`.|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contém uma lista opcional de parâmetros que estarão `UsingTask` `TaskFactory`presentes na tarefa gerada por um .|
 
 ## <a name="example"></a>Exemplo
 
@@ -81,4 +81,4 @@ Contém informações sobre um parâmetro específico para uma tarefa que é ger
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

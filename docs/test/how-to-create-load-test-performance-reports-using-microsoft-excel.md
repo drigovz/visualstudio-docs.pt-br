@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589065"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
@@ -62,7 +62,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
       O Microsoft Excel é aberto com o **Assistente para Gerar um relatório de teste de carga**.
 
-   **OU**
+   **Ou**
 
    1. Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do **Office** e, em seguida, escolha **Relatório de Teste de Carga**.
 
@@ -85,7 +85,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
    > [!NOTE]
    > Você só pode gerar um relatório de comparação em dois resultados de teste de carga. Se você selecionar ou um resultado de teste de carga ou mais de dois resultados de teste de carga, será exibida uma mensagem de aviso.
 
-8. Na página **Selecionar os contadores para o relatório**, em **Selecione ou mais sobre contadores para adicionar ao relatório**, uma lista expansível de contadores estará disponível para personalizar o relatório. Selecione os contadores que deseja comparar nas duas execuções de teste selecionadas no relatório e escolha **Concluir**.
+8. Na **Seleção dos contadores para a página de relatório,** em **Selecionar um ou mais contadores para adicionar ao relatório,** uma lista expansível de contadores está disponível para personalizar seu relatório. Selecione os contadores que deseja comparar nas duas execuções de teste selecionadas no relatório e escolha **Concluir**.
 
 9. O relatório de pasta de trabalho do Excel é gerado com as seguintes guias da planilha:
 
@@ -117,7 +117,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
       O Microsoft Excel é aberto com o **Assistente para Gerar um relatório de teste de carga**.
 
-   **OU**
+   **Ou**
 
    1. Abra o Microsoft Excel, selecione a guia **Teste de Carga** na faixa de opções do **Office** e, em seguida, escolha **Relatório de Teste de Carga**.
 
@@ -148,6 +148,6 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
 Os resultados de teste de carga e os relatórios contêm possivelmente informações sigilosas que podem ser usadas para criar um ataque no seu computador ou sua rede. Os resultados de teste de carga e os relatórios contêm nomes de computadores e cadeias de conexão. Você deve estar ciente disso quando compartilhar relatórios de teste de carga com outras pessoas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)

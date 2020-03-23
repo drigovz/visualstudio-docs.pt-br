@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89a08808387067b934bfd826feb2dcfbcf949aab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778278"
 ---
-# <a name="shutdown"></a>Desligar
+# <a name="shutdown"></a>Shutdown
 A opção **Desligamento** aguarda qualquer processo com perfil finalizar ou desanexar e, em seguida, desativa o criador de perfil e fecha o arquivo de dados de criação de perfil. A opção **desligamento** deve ser o último comando de criação de um perfil.
 
  Se um parâmetro de tempo limite não for especificado, a opção **Desligamento** aguardará indefinidamente. Se um parâmetro de tempo limite for especificado, a opção retornará após o número especificado de segundos, sem desativar o criador de perfil ou fechar o arquivo de dados.
@@ -29,12 +29,12 @@ A opção **Desligamento** aguarda qualquer processo com perfil finalizar ou des
 VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
 `Timeout`
 - (Opcional) Se especificado, a opção retorna após o número especificado de segundos sem desativar o criador de perfil ou fechar o arquivo de dados de criação de perfil.
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

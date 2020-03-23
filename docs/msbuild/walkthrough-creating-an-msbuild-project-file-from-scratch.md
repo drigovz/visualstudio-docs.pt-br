@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263130"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criar um arquivo de projeto do MSBuild do zero
 
 As linguagens de programação que tenham como destino o .NET Framework usam arquivos de projetos do MSBuild para descrever e controlar o processo de compilação de aplicativos. Quando você usa o Visual Studio para criar um arquivo de projeto do MSBuild, o XML apropriado é adicionado ao arquivo automaticamente. Entretanto, talvez você ache útil compreender como o XML é organizado e como é possível alterá-lo para controlar uma compilação.
 
- Para obter informações sobre como criar um arquivo de C++ projeto para um projeto do, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
+ Para obter informações sobre como criar um arquivo de projeto para um projeto C++, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  Este passo a passo mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. Este passo a passo possui as seguintes etapas:
 
@@ -45,15 +45,15 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 
 Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para saber mais sobre o MSBuild e como executá-lo no prompt de comandos, confira [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-Para concluir o passo a passos, você deve ter o .NET Framework (versão 2,0, 3,5, 4,0, 4,5 ou posterior) instalado, pois ele inclui o MSBuild C# e o compilador Visual, que são necessários para o passo a passos.
+Para completar o passo a passo, você deve ter o .NET Framework (versão 2.0, 3.5, 4.0, 4.5 ou posterior) instalado porque inclui o MSBuild e o compilador Visual C#, que são necessários para o passo a passo.
 
 ## <a name="create-a-minimal-application"></a>Criar um aplicativo mínimo
 
- Esta seção mostra como criar um arquivo de C# origem de aplicativo mínimo usando um editor de texto.
+ Esta seção mostra como criar um arquivo de origem de aplicativo C# mínimo usando um editor de texto.
 
-1. No prompt de comando, navegue até a pasta na qual você deseja criar o aplicativo, por exemplo, *\Meus Documentos\\* ou *\Área de Trabalho\\* .
+1. No prompt de comando, navegue até a pasta onde deseja criar o aplicativo, por exemplo, *\Meus\\ documentos* ou *\Desktop\\*.
 
-2. Digite **md HelloWorld** para criar uma subpasta chamada *\HelloWorld\\* .
+2. Digite **md HelloWorld** para criar uma subpasta chamada *\\\HelloWorld*.
 
 3. Digite **cd HelloWorld** para mudar para a nova pasta.
 
@@ -75,7 +75,7 @@ Para concluir o passo a passos, você deve ter o .NET Framework (versão 2,0, 3,
     }
     ```
 
-5. Salve esse arquivo de código-fonte e o nomeie como *Helloworld.cs*.
+5. Salve este arquivo de código-fonte e nomeie-o *Helloworld.cs*.
 
 6. Compile o aplicativo digitando **csc helloworld.cs** no prompt de comando.
 
@@ -131,7 +131,7 @@ Para concluir o passo a passos, você deve ter o .NET Framework (versão 2,0, 3,
     <Csc Sources="@(Compile)"/>
     ```
 
-5. Salve esse arquivo de projeto e o nomeie como *Helloworld.csproj*.
+5. Salve este arquivo do projeto e *nomeie-o Helloworld.csproj*.
 
 O seu arquivo de projeto mínimo deve se assemelhar ao seguinte código:
 
@@ -146,10 +146,10 @@ O seu arquivo de projeto mínimo deve se assemelhar ao seguinte código:
 </Project>
 ```
 
-As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tarefa `Csc` do compilador do Visual C# é a única tarefa. Ela espera que uma lista de arquivos de origem seja compilada e isso ocorre pelo valor do item `Compile`. O item `Compile` faz referências a apenas um arquivo de origem, *Helloworld.cs*.
+As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tarefa `Csc` do compilador do Visual C# é a única tarefa. Ela espera que uma lista de arquivos de origem seja compilada e isso ocorre pelo valor do item `Compile`. O `Compile` item faz referência a apenas um arquivo de origem, *Helloworld.cs*.
 
 > [!NOTE]
-> No elemento do item, você pode usar o caractere curinga de asterisco (\*) para fazer referência a todos os arquivos que tenham a extensão de nome de arquivo *.cs*, como a seguir:
+> No elemento item, você pode usar o caractere\*curinga asterisco ( ) para referenciar todos os arquivos que tenham a extensão do nome do arquivo *.cs,* da seguinte forma:
 >
 > ```xml
 > <Compile Include="*.cs" />
@@ -159,11 +159,11 @@ As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tare
 
 Para poder acessar o MSBuild, você deve estender a variável de ambiente PATH para incluir a pasta do .NET Framework.
 
-A partir do Visual Studio 2013, você pode encontrar *MSBuild. exe* na pasta do MSBuild ( *%ProgramFiles%\MSBuild* em um sistema operacional de 32 bits ou em *% ProgramFiles (x86)% \ MSBuild* em um sistema operacional de 64 bits).
+A partir do Visual Studio 2013, você pode encontrar o *MSBuild.exe* na pasta MSBuild (*%ProgramFiles%\MSBuild* em um sistema operacional de 32 bits ou em *%ProgramFiles(x86)%\MSBuild* em um sistema operacional de 64 bits).
 
 No prompt de comando, digite **definir PATH=%PATH%;%ProgramFiles%\MSBuild** ou **definir PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.
 
-Como alternativa, se você tiver o Visual Studio instalado, poderá usar o **prompt de comando do desenvolvedor para o Visual Studio**, que tem um caminho que inclui a pasta do *MSBuild* .
+Alternativamente, se você tiver o Visual Studio instalado, você pode usar o **Prompt de comando do desenvolvedor para o Visual Studio**, que tem um caminho que inclui a pasta *MSBuild.*
 
 ## <a name="build-the-application"></a>Compilar o aplicativo
 
@@ -258,9 +258,9 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
 1. No prompt de comando, digite **msbuild helloworld.csproj -t:Build**.
 
-     Com isso, você cria a pasta *\Bin\\* e chama o compilador do Visual C# para criar o aplicativo *MSBuildSample* e colocá-lo na pasta *\Bin\\* .
+     Isso cria a pasta *\Bin\\ * e, em seguida, invoca o compilador Visual C# para criar o aplicativo *MSBuildSample* e colocá-lo na pasta *\Bin.\\ *
 
-2. Para verificar se a pasta *\Bin\\* foi criada e se ela contém o aplicativo *MSBuildSample*, digite **dir Bin**.
+2. Para verificar se a *pasta \Bin\\ * foi criada e que ela contém o aplicativo *MSBuildSample,* digite **dir Bin**.
 
 3. Exclua o aplicativo digitando **Bin\MSBuildSample**.
 
@@ -335,9 +335,9 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
 1. No prompt de comando, digite **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
 
-     Como você não usou a opção **-t** para configurar de forma explícita o destino, o MSBuild executa o destino de build padrão. A opção **-p** substitui a propriedade `AssemblyName` e dá a ela o novo valor, `Greetings`. Isso faz com que um novo aplicativo, *Greetings.exe*, seja criado na pasta *\Bin\\* .
+     Como você não usou o switch **-t** para definir explicitamente o alvo, o MSBuild executa o alvo de compilação padrão. O **interruptor -p** `AssemblyName` substitui a propriedade e `Greetings`dá-lhe o novo valor, . Isso faz com que um novo aplicativo, *Greetings.exe,* seja criado na pasta *\Bin.\\ *
 
-2. Para verificar se a pasta *\Bin\\* contém o aplicativo *MSBuildSample* e o novo aplicativo *Greetings*, digite **dir Bin**.
+2. Para verificar se a *pasta\\ \Bin* contém o aplicativo *MSBuildSample* e o novo aplicativo *Greetings,* digite **dir Bin**.
 
 3. Teste o aplicativo Greetings digitando **Bin\Greetings**.
 
@@ -347,17 +347,17 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
      Isso executa a tarefa Limpar para remover o aplicativo que tem o `AssemblyName` valor da propriedade `MSBuildSample` padrão.
 
-5. Exclua o aplicativo Greetings digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
+5. Exclua o aplicativo Saudações digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
 
      Isso executa a tarefa Limpar para remover o aplicativo que tem o valor da propriedade especificado **AssemblyName**, `Greetings`.
 
-6. Para verificar se a pasta *\Bin\\* está vazia agora, digite **dir Bin**.
+6. Para verificar se a *pasta\\ \Bin* está agora vazia, digite dir **Bin**.
 
 7. Digite **msbuild**.
 
-     Embora um arquivo de projeto não esteja especificado, o MSBuild compila o arquivo *helloworld.csproj*, pois há somente um arquivo na pasta atual. Isso faz com que um novo aplicativo *MSBuildSample* seja criado na pasta *\Bin\\* .
+     Embora um arquivo de projeto não seja especificado, o MSBuild constrói o arquivo *helloworld.csproj* porque há apenas um arquivo de projeto na pasta atual. Isso faz com que o aplicativo *MSBuildSample* seja criado na *pasta \Bin.\\ *
 
-     Para verificar se a pasta *\Bin\\* contém o aplicativo *MSBuildSample*, digite **dir Bin**.
+     Para verificar se a *pasta \Bin\\ * contém o aplicativo *MSBuildSample,* digite **dir Bin**.
 
 ## <a name="build-incrementally"></a>Compilar de forma incremental
 
@@ -382,11 +382,11 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
     </Target>
     ```
 
-2. Teste o destino de build digitando **msbuild -v:d** no prompt de comando.
+2. Teste o alvo 'Construir' digitando **msbuild -v:d** no prompt de comando.
 
-     Lembre-se de que *helloworld.csproj* é o arquivo de projeto padrão e de que Compilar é o destino padrão.
+     Lembre-se que *helloworld.csproj* é o arquivo de projeto padrão, e que build é o alvo padrão.
 
-     A opção **-v:d** especifica uma descrição detalhada do processo de build.
+     O switch **-v:d** especifica uma descrição verbosa para o processo de compilação.
 
      Estas linhas devem ser exibidas:
 
@@ -400,7 +400,7 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
 ## <a name="c-example"></a>Exemplo de C#
 
-O exemplo a seguir mostra um arquivo de projeto que compila um C# aplicativo e registra uma mensagem que contém o nome do arquivo de saída.
+O exemplo a seguir mostra um arquivo de projeto que compila um aplicativo C# e registra uma mensagem que contém o nome do arquivo de saída.
 
 ### <a name="code"></a>Código
 

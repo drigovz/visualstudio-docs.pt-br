@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747723"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
@@ -30,10 +30,10 @@ Exibe a URL especificada em uma janela de navegador da Web, tanto dentro do IDE 
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `URL`
 
-Necessário. URL (Uniform Resource Locator) do site da Web.
+Obrigatórios. URL (Uniform Resource Locator) do site da Web.
 
 ## <a name="switches"></a>Opções
 /new
@@ -54,7 +54,7 @@ O exemplo a seguir exibe a home page do Microsoft Docs em um navegador da Web fo
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

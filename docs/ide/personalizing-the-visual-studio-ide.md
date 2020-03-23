@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585737"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
@@ -29,22 +29,22 @@ Escolha uma coleção padrão de configurações que otimiza o Visual Studio par
 
 Muitas opções de personalização são expostas pela caixa de diálogo [Opções de Ambiente](../ide/reference/general-environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
 
-- Na barra de menus, escolha **Ferramentas** > **Opções** e, se o nó **Ambiente** ainda não estiver expandido, expanda-o.
+- Na barra de menus, escolha **Opções de** > **ferramentas**e, se ainda não estiver expandida, expanda o nó **Ambiente.**
 
-- Pressione **Ctrl**+**Q**, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Geral** nos resultados.
+- Pressione **Ctrl**+**Q**, **digite** o ambiente na caixa de pesquisa e, em seguida, escolha **Meio Ambiente > Geral** a partir dos resultados.
 
 > [!TIP]
 > Quando a caixa de diálogo Opções for exibida, você poderá pressionar **F1** para obter ajuda sobre as diversas configurações nessa página.
 
 ## <a name="environment-color-themes"></a>Temas de cores do ambiente
 
-Para alterar o tema de cores entre claro, escuro e azul, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
+Para alterar o tema de cor entre luz, escuro e azul, digite o **ambiente** na caixa de pesquisa e escolha **Meio Ambiente > Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
 
-Para alterar as opções de colorização no editor, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Fontes e Cores**. Consulte [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
+Para alterar as opções de colorização no editor, digite o **ambiente** na caixa de pesquisa e escolha **Ambiente > Fontes e Cores**. Consulte [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
 
-É possível alterar o uso de maiúsculas e minúsculas do menu principal optando por **Primeira letra de cada palavra em maiúscula** ("Arquivo") ou **Tudo em maiúscula** ("ARQUIVO"). Digite **ambiente** na caixa de pesquisa, selecione **Ambiente > Geral** e, em seguida, altere a opção **Aplicar o estilo de capitalização de título à barra de menus**.
+É possível alterar o uso de maiúsculas e minúsculas do menu principal optando por **Primeira letra de cada palavra em maiúscula** ("Arquivo") ou **Tudo em maiúscula** ("ARQUIVO"). Digite o **ambiente** na caixa de pesquisa, selecione **Ambiente > Geral**e altere o estilo do case De aplicar para a opção barra de **menu.**
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizar menus e barras de ferramentas
 
@@ -66,9 +66,9 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 É possível personalizar o menu **Ferramentas** para iniciar ferramentas externas. Para obter mais informações, confira [Gerenciar ferramentas externas](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configurações do ambiente](environment-settings.md)
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
-- [Guia de início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

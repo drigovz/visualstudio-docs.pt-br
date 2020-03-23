@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579320"
 ---
 # <a name="step-6-add-a-timer"></a>Etapa 6: Adicionar um temporizador
@@ -25,7 +25,7 @@ Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de co
 
 ## <a name="to-add-a-timer"></a>Para adicionar um temporizador
 
-1. Na caixa de ferramentas do **Designer de Formulários do Windows**, escolha **Temporizador** (na categoria **Componentes**) e escolha a tecla **Enter** ou clique duas vezes no temporizador para adicionar um controle de temporizador ao formulário. O ícone do temporizador, chamado **Timer1**, deve aparecer em um espaço abaixo do formulário, conforme mostrado na imagem a seguir.
+1. Na caixa de ferramentas do **Designer de Formulários do Windows**, escolha **Temporizador** (na categoria **Componentes**) e escolha a tecla **Enter** ou clique duas vezes no temporizador para adicionar um controle de temporizador ao formulário. O ícone do temporizador, chamado **Timer1,** deve aparecer em um espaço abaixo do formulário, como mostrado na imagem a seguir.
 
      ![Timer](../ide/media/express_timer.png)<br/>
 ***Timer***
@@ -41,9 +41,9 @@ Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de co
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![o controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+      > Use o controle de linguagem de programação no canto superior direito desta página para exibir o trecho de código C# ou o trecho de código Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     O manipulador de eventos Tick realiza três tarefas: primeiro, ele verifica se o temporizador não está em execução chamando o método <xref:System.Windows.Forms.Timer.Stop>. Em seguida, ele usa duas variáveis de referência, `firstClicked` e `secondClicked`, para tornar invisíveis novamente os ícones dos dois rótulos que jogador escolheu. Por fim, ele redefine as variáveis de referência de `firstClicked` e `secondClicked` C# para `null` no e `Nothing` em Visual Basic. Essa etapa é importante porque é como o programa redefine a si próprio. Agora, ele não está acompanhando nenhum controle <xref:System.Windows.Forms.Label> e está pronto para que o jogador escolha um rótulo novamente.
+     O manipulador de eventos Tick realiza três tarefas: primeiro, ele verifica se o temporizador não está em execução chamando o método <xref:System.Windows.Forms.Timer.Stop>. Em seguida, ele usa duas variáveis de referência, `firstClicked` e `secondClicked`, para tornar invisíveis novamente os ícones dos dois rótulos que jogador escolheu. Finalmente, ele `firstClicked` redefine `secondClicked` as variáveis `null` de referência `Nothing` para em C# e no Visual Basic. Essa etapa é importante porque é como o programa redefine a si próprio. Agora, ele não está acompanhando nenhum controle <xref:System.Windows.Forms.Label> e está pronto para que o jogador escolha um rótulo novamente.
 
     > [!NOTE]
     > Um objeto Temporizador tem um método `Start()` que inicia o temporizador e um método `Stop()` que o interrompe. Ao definir a propriedade **Habilitado** do temporizador como **Verdadeiro** na janela **Propriedades**, ele inicia o tique assim que o programa é iniciado. Mas quando você a deixa definida como **Falso**, ele só inicia o tique quando seu método `Start()` é chamado. Normalmente, um temporizador dispara seu evento Tick várias vezes usando a propriedade **Intervalo** para determinar quantos milissegundos deverá aguardar entre os tiques. Você deve ter percebido como o método `Stop()` do temporizador é chamado no evento Tick. Ele coloca o temporizador no *modo monoestável*, o que significa que quando o método `Start()` é chamado, ele aguarda o intervalo especificado, dispara um único evento Tick e é interrompido.
@@ -63,6 +63,6 @@ Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de co
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 7: manter pares visíveis](../ide/step-7-keep-pairs-visible.md)** .
+- Para ir para a próxima etapa do tutorial, consulte **[Passo 7: Mantenha os pares visíveis](../ide/step-7-keep-pairs-visible.md)**.
 
 - Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar referências de rótulo](../ide/step-5-add-label-references.md).

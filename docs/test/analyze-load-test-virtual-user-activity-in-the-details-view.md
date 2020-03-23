@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591227"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade do usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
@@ -29,7 +29,7 @@ ms.locfileid: "75591227"
 A exibição **Detalhes** mostra o **Gráfico de Atividade do Usuário Virtual**, que é usado para analisar visualmente o que os usuários virtuais individuais fizeram durante o teste de carga. O **Gráfico de Atividade do Usuário Virtual** permite visualizar padrões de atividade do usuário e padrões de carga, correlacionar testes com falha ou lentos e ver as solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade do Usuário Virtual** também pode ajudar a determinar picos de uso da CPU, quedas nas solicitações por segundo e quais testes ou páginas estavam em execução durante os picos e as quedas.
 
 > [!NOTE]
-> Antes de executar o teste de carga no qual você deseja usar o **Gráfico de Detalhes da Atividade do Usuário Virtual**, é necessário verificar se a propriedade **Armazenamento de Detalhes de Tempo** está definida como a opção **AllIndividualDetails** usando o Editor de Teste de Desempenho de Carga.
+> Antes de executar o teste de carga para o qual deseja usar o **Gráfico de Detalhes da Atividade do Usuário Virtual,** você deve verificar se a propriedade **Timing Details Storage** está definida como opção **AllIndividualDetails** usando o Load Performance Test Editor.
 
 **Painel de legenda de detalhes**
 
@@ -55,11 +55,11 @@ O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuá
 
 |Tarefas|Tópicos associados|
 |-|-|
-|**Executar o teste de carga:** depois de criar um teste de carga e configurá-lo para permitir a coleta dos dados de atividade do usuário virtual, será necessário executar o teste até sua conclusão para exibir o **Gráfico de Atividade do Usuário Virtual**.||
-|**Exibir os resultados dos testes de carga que contêm os dados de atividade do usuário virtual:** depois que o teste de carga tiver sido criado e configurado e sua execução estiver concluída, você poderá exibir os dados de atividade do usuário virtual usando o **Gráfico de Atividade do Usuário Virtual**.|-   [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Como analisar o que os usuários virtuais fazem durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Isolar problemas de desempenho em testes de carga:** você pode usar o **Gráfico de Atividade do Usuário Virtual** para ajudar a isolar problemas de desempenho em seu teste de carga.|-   [Passo a passo: usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Execute seu teste de carga:** Depois de criar um teste de carga e configurá-lo para permitir a coleta de dados de atividades do usuário virtual, você deve executar o teste até que ele esteja concluído para visualizar o **Gráfico de Atividades do Usuário Virtual**.||
+|**Veja os resultados do teste de carga que contêm os dados de atividade do usuário virtual:** Depois que o teste de carga tiver sido criado, configurado e concluído, você poderá visualizar os dados de atividade do usuário virtual usando o **Gráfico de Atividades**do Usuário Virtual .|-   [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Como: Analisar o que os usuários virtuais estão fazendo durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Isole problemas de desempenho em testes de carga:** Você pode usar o **Gráfico de Atividades** do Usuário Virtual para ajudar a isolar problemas de desempenho no teste de carga.|-   [Passo a passo: Usando o gráfico de atividades do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565455"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
@@ -70,17 +70,17 @@ Esta refatoração aplica-se a:
 
 ## <a name="remarks"></a>Comentários
 
-- A partir do Visual Studio 2019 versão 16,3, quando você renomeia um tipo que corresponde ao nome do arquivo no qual ele está, uma caixa de seleção é exibida para permitir que você renomeie o arquivo ao mesmo tempo. Essa opção é exibida quando você renomeia uma classe, interface ou enumeração. Não há suporte para essa opção em tipos parciais com várias definições.
+- A partir do Visual Studio 2019 versão 16.3, quando você renomear um tipo que corresponda ao nome do arquivo em que está, uma caixa de seleção aparece que permite que você renomeie o arquivo ao mesmo tempo. Essa opção aparece quando você renomeia uma classe, interface ou enumeração. Esta opção não é suportada para tipos parciais com múltiplas definições.
 
-   ![Renomear animação com arquivo-C#](media/rename-with-file-animated-cs.gif)
+   ![Renomear animação com arquivo - C #](media/rename-with-file-animated-cs.gif)
 
 - Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
 
    ![Conflito de renomeação](media/rename-conflict-cs.png)
 
-- Outra maneira de renomear um símbolo é alterar seu nome no editor. Depois, com o cursor no nome do símbolo, pressione **Ctrl**+ **.** ou apenas expanda o menu do ícone da lâmpada que aparece e escolha **Renomear \<nome antigo> para \<nome novo>** .
+- Outra maneira de renomear um símbolo é alterar seu nome no editor. Em seguida, com o cursor no nome do símbolo, **pressione Ctrl**+**.** ou apenas expanda o menu do ícone da lâmpada que aparece e escolha **Renomear \<nome antigo> para \<nome novo>**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

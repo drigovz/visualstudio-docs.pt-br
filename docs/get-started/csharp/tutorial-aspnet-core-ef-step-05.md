@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 5: implantando seu aplicativo ASP.NET Core no Azure'
+title: 'Passo 5: Implantar seu ASP.NET aplicativo principal para o Azure'
 description: Implante seu aplicativo Web ASP.NET Core no Azure com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580022"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Etapa 5: implantar seu aplicativo ASP.NET Core no Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passo 5: Implante seu aplicativo ASP.NET Core para o Azure
 
 Siga estas etapas para implantar seu aplicativo ASP.NET Core e seu banco de dados no Azure.
 
-_Assista a este vídeo e siga as etapas para implantar seu primeiro aplicativo Web ASP.NET Core no Azure._
+_Assista a este vídeo e acompanhe-o para implantar primeiro aplicativo Web ASP.NET Core no Azure._
 
 > [!VIDEO https://www.youtube.com/embed/n8wz_f5_4wI]
 
@@ -57,7 +57,7 @@ Depois que o serviço de aplicativo for criado, seu site será iniciado em um na
 
 ### <a name="scalability"></a>Escalabilidade
 
-Você pode examinar as opções para dimensionar o aplicativo para cima e para fora. Escalar verticalmente refere-se ao aumento dos recursos fornecidos para cada instância que hospeda seu aplicativo. Escalar horizontalmente refere-se ao aumento do número de instâncias que hospedam seu aplicativo. Você pode configurar o dimensionamento automático para seu aplicativo, o que aumenta automaticamente o número de instâncias usadas para hospedar seu aplicativo em resposta ao carregamento, depois as reduz quando a carga diminuiu.
+Você pode examinar as opções para dimensionar o aplicativo, bem como para fora. O dimensionamento refere-se ao aumento dos recursos dados a cada instância que hospeda seu aplicativo. Escalar horizontalmente refere-se ao aumento do número de instâncias que hospedam seu aplicativo. Você pode configurar o dimensionamento automático para seu aplicativo, o que aumenta automaticamente o número de instâncias usadas para hospedar seu aplicativo em resposta ao carregamento, depois as reduz quando a carga diminuiu.
 
 ### <a name="security-and-compliance"></a>Segurança e conformidade
 

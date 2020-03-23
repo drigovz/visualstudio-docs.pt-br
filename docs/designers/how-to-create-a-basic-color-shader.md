@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 162632f0043d23fb111a9e455c1100f9506924a8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589507"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
@@ -42,11 +42,11 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
 ![Grafo de sombreador e seu resultado em um modelo 3D](../designers/media/digit-flat-color-effect.png)
 
-Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md).
+Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Shader Designer, consulte [Shader Designer](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

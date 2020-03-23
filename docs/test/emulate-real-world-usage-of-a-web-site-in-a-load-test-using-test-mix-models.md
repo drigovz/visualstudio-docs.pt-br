@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589598"
 ---
 # <a name="test-mix-models-overview"></a>Visão geral de modelos de combinação de testes
@@ -39,7 +39,7 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 
 - **Baseado na ordem sequencial:** cada usuário virtual executa os testes de desempenho Web ou de unidade na ordem em que os testes são definidos no cenário. O usuário virtual continua a alternar entre os testes nesta ordem até que o teste de carga seja concluído. Para saber mais, confira [Ordem sequencial](#SequentialOrder).
 
-### <a name="BasedOnTestsStarted"></a> Percentual baseado em testes iniciados
+### <a name="percentage-based-on-tests-started"></a><a name="BasedOnTestsStarted"></a> Percentual baseado em testes iniciados
 
 Para cada teste na combinação, você pode especificar uma porcentagem que determine com que frequência o teste será selecionado como o próximo teste a ser executado. Por exemplo, você pode atribuir os seguintes valores de porcentagem a três testes:
 
@@ -51,10 +51,10 @@ Para cada teste na combinação, você pode especificar uma porcentagem que dete
 
 Se você usar essa configuração, o próximo teste a ser iniciado será baseado nas porcentagens atribuídas. Você faz isso sem levar em conta o número de usuários virtuais que estão executando atualmente cada teste.
 
-### <a name="PercentageBasedonVirtualUsers"></a> Percentual baseado em usuários virtuais
+### <a name="percentage-based-on-virtual-users"></a><a name="PercentageBasedonVirtualUsers"></a> Percentual baseado em usuários virtuais
 Esse modelo da combinação de testes determina a porcentagem de usuários virtuais que executarão um teste específico. Se você usar esse modelo de combinação de testes, o próximo teste a ser iniciado será baseado não apenas nas porcentagens atribuídas, mas também na porcentagem de usuários virtuais que estão executando atualmente um teste específico. A qualquer momento do teste de carga, o número usuários que estão executando um teste específico corresponde à distribuição atribuída o mais próximo possível.
 
-### <a name="PacingTestMix"></a> Definição do ritmo da combinação de testes
+### <a name="pacing-test-mix"></a><a name="PacingTestMix"></a> Definição do ritmo da combinação de testes
 
 Se você especificar um ritmo para a combinação de testes, definirá uma taxa de execução de testes para cada usuário virtual para cada teste da combinação. Para cada teste, essa taxa é expressa como testes executados por usuário virtual por hora. Por exemplo, você pode atribuir o seguinte ritmo de combinação de testes para os testes a seguir:
 
@@ -81,11 +81,11 @@ O valor da propriedade de **Aplicar distribuição à definição dos atrasos** 
 
   Para saber mais, confira [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-### <a name="SequentialOrder"></a> Ordem sequencial
+### <a name="sequential-order"></a><a name="SequentialOrder"></a> Ordem sequencial
 Selecionar a opção Com base na ordem sequencial faz com que cada usuário virtual execute todos os testes no cenário na ordem em que os testes foram definidos.
 
 ## <a name="test-iterations-property"></a>Propriedade de iterações de teste
-Nas propriedades de Configurações de Execução, você pode especificar um valor para a propriedade de iterações de teste. Esse valor é o número de iterações de teste para execução em um teste de carga. Depois que o número especificado de iterações de teste for iniciado, nenhuma iteração adicional de teste será iniciada independentemente das configurações dos perfis de carga. Depois que o número de iterações de teste especificado tiver sido concluído, o teste de carga terminará. Para saber mais, confira [Como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Nas propriedades de Configurações de Execução, você pode especificar um valor para a propriedade de iterações de teste. Esse valor é o número de iterações de teste para execução em um teste de carga. Depois que o número especificado de iterações de teste for iniciado, nenhuma iteração adicional de teste será iniciada independentemente das configurações dos perfis de carga. Depois que o número de iterações de teste especificado tiver sido concluído, o teste de carga terminará. Para obter mais informações, [consulte Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Inicializar e terminar testes
 Você pode selecionar testes para execução no início e o término da sessão de teste de carga de cada usuário virtual. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
@@ -102,11 +102,11 @@ Você pode selecionar testes para execução no início e o término da sessão 
 
 - Os novos usuários, conforme definido na propriedade de Porcentagem de Novos Usuários do cenário, sempre executam o teste de inicialização, uma iteração de um teste da combinação de testes, e o teste de encerramento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Editar a combinação de testes para especificar quais testes incluir em um cenário de teste de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
 - [Alterar o modelo de combinação de testes em um cenário](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

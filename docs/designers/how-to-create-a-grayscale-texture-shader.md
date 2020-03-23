@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112618"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Como criar um sombreador de textura em escala de cinza
@@ -47,10 +47,10 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
 Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para saber mais sobre a visualização de sombreadores no Designer de Sombreador, confira [Designer de Sombreador](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
-- [Editor de Imagens](../designers/image-editor.md)
+- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Editor de imagens](../designers/image-editor.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

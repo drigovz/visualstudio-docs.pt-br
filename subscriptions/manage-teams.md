@@ -5,12 +5,12 @@ ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para equipes grandes, bem como para prestadores de gerenciamento externos.
+description: Saiba mais sobre a responsabilidade dos administradores em gerenciar assinaturas para grandes equipes, bem como contratantes externos.
 ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947056"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
@@ -29,7 +29,7 @@ Cada organização é diferente, mas uma lista típica de equipes envolvidas no 
 Os prestadores de serviço externos podem trazer licenças para se relacionar com seu ambiente licenciado do Visual Studio. Os Microsoft Certified Partners podem receber algumas assinaturas gratuitas do Visual Studio para uso interno. No entanto, essas assinaturas não abrangem atividades de geração de receita, como o desenvolvimento de software personalizado para um cliente. Peça aos parceiros para que enviem uma carta certificada, explicando as licenças que eles estão fornecendo e aquelas que eles necessitam que você adquira.
 
 ## <a name="resources"></a>Recursos
-- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [Visual Studio licenciamento de papel branco](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
@@ -41,7 +41,7 @@ Os prestadores de serviço externos podem trazer licenças para se relacionar co
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
-- [Responsabilidades do administrador](admin-responsibilities.md)
+- [Responsabilidades de administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
-- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

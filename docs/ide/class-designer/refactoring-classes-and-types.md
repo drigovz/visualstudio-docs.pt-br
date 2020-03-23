@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590742"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refatorar classes e tipos no Designer de Classe
@@ -61,7 +61,7 @@ No Designer de Classe, é possível renomear um tipo ou membro de um tipo no dia
 
 2. Na coluna **Nome**, altere o nome do membro de tipo
 
-3. Para mover o foco da célula, pressione a tecla **Enter** ou clique fora da célula.
+3. Para afastar o foco da célula, **pressione** a tecla Enter ou clique para longe da célula.
 
     > [!NOTE]
     > Na janela **Detalhes da Classe**, é possível alterar o nome de um membro, mas não um tipo.
@@ -86,6 +86,6 @@ Com o **Designer de Classe**, é possível mover um membro de tipo de um tipo pa
 
      A propriedade é removida do tipo de origem e aparece no tipo de destino.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Projetando classes e tipos](designing-and-viewing-classes-and-types.md)

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568263"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opções, Editor de Texto, U-SQL, Formatação
 
-Use a página de opções **Formatação** para definir opções para formatar o código no editor de códigos. Para acessar essa página de opções, escolha **Ferramentas** > **Opções**. Na caixa de diálogo **Opções**, escolha **Editor de Texto** > **U-SQL** > **Formatação**.
+Use a página de opções **de formatação** para definir opções para formatação de código no editor de código. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**. Na caixa de diálogo **Opções**, escolha **Editor de Texto** > **U-SQL** > **Formatação**.
 
-## <a name="general-page"></a>Página geral
+## <a name="general-page"></a>Página Geral
 
 ### <a name="general-settings"></a>Configurações gerais
 
@@ -44,11 +44,11 @@ As subpáginas **Recuo**, **Novas Linhas** e **Espaçamento** exibem uma janela 
 
 ### <a name="indentation-remarks"></a>Comentários de recuo
 
-As opções de recuo nas páginas **Guias** de cada linguagem determinam apenas onde o editor de códigos coloca o cursor quando você pressiona **Enter** no final de uma linha. As opções de recuo em **Formatação** se aplicam quando o código é formatado automaticamente, por exemplo:
+Opções de recuo nas páginas **de guias** para cada idioma só determinam onde o editor de código coloca o cursor quando você **pressiona Enter** no final de uma linha. As opções de recuo em **Formatação** se aplicam quando o código é formatado automaticamente, por exemplo:
 
 - Quando você cola o código no arquivo enquanto **Formatar automaticamente ao colar** está selecionada
 - Quando o bloco que está sendo formatado é digitado manualmente
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
+- [Caixa de diálogo Geral, Meio Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

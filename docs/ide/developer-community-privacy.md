@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775883"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
@@ -25,7 +25,7 @@ Por padrão, todas as informações nos relatórios de problema na [Comunidade d
 
 Se você está preocupado com a revelação da sua identidade, [crie uma conta Microsoft](https://signup.live.com/) que não divulgue todos os detalhes sobre você. Use essa conta para criar seu relatório.
 
-## <a name="data-privacy"></a>Privacidade de dados
+## <a name="data-privacy"></a>Privacidade dos dados
 
 Se você está preocupado com a privacidade dos dados, não coloque nada que deseja manter particular no título ou no conteúdo do relatório inicial, que sempre é público. Nesse caso, crie o relatório e, em seguida, observe que você enviará detalhes de forma particular em um comentário separado. Depois de criar o relatório do problema, especifique quem pode ver as respostas e os anexos:
 
@@ -68,7 +68,7 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 - Logs do Python, caso existam
 
-- Windows Forms logs, se existirem
+- Windows Forms logs, se eles existem
 
 - Uma captura de tela, caso você escolha incluí-la
 
@@ -81,11 +81,11 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
   - Arquivo de despejo
 
 > [!NOTE]
-> Arquivos de log, capturas de tela e dados de gravação que você envia podem aumentar significativamente a capacidade da Microsoft de entender e responder ao seu problema.  Portanto, é recomendável incluí-los. Para proteger sua privacidade, todos os arquivos de log anexados, capturas de tela e dados de gravação são enviados somente à Microsoft quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' antes de enviar o relatório. Você pode excluir arquivos de log do sistema do relatório desmarcando ' anexar logs do sistema ' na etapa ' Resumo '. Para referência, consulte a captura de tela a seguir. 
-  > ![relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
+> Registrar arquivos, capturas de tela e gravar dados que você envia pode aumentar significativamente a capacidade da Microsoft de entender e responder ao seu problema.  Por isso recomendamos incluí-los. Para proteger sua privacidade, quaisquer arquivos de log anexados, capturas de tela e dados de gravação são enviados apenas para a Microsoft quando você fornece permissão enviando o relatório de problemas com o qual eles estão incluídos. Você pode ver quais arquivos estão incluídos na etapa 'Resumo' da janela 'Relatar um problema' antes de enviar o relatório. Você pode excluir arquivos de registro do sistema do relatório deschecando 'Anexar registros do sistema' na etapa 'Resumo'. Para referência, consulte a captura de tela a seguir. 
+  > ![Relatar um problema - Resumo dos registros coletados](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Privacidade de dados do relatório de problema do C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

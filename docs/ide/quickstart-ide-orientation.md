@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596964"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
@@ -21,19 +21,19 @@ Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integra
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-## <a name="start-page"></a>Página inicial
+## <a name="start-page"></a>Start Page
 
 A primeira coisa que você verá depois de abrir o Visual Studio provavelmente será a **Página Inicial**. A **Página Inicial** foi projetada como um "hub" para ajudá-lo a localizar os comandos e os arquivos de projeto necessários com mais rapidez. A seção **Recentes** exibe projetos e pastas em que você trabalhou recentemente. Em **Novo projeto**, clique em um link para abrir a caixa de diálogo **Novo Projeto** ou, em **Abrir**, abra uma pasta ou um projeto de código existente. À direita está um feed das notícias mais recentes do desenvolvedor.
 
@@ -79,11 +79,11 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
 ::: moniker range=">=vs-2019"
 
-1. Na tela Iniciar, selecione **Criar um novo projeto**.
+1. Na janela inicial, escolha **Criar um novo projeto**.
 
    Uma caixa de diálogo é aberta com o título **Criar um novo projeto**. Aqui, você pode pesquisar, filtrar e, em seguida, escolher um modelo de projeto. Ela também mostra uma lista dos modelos de projeto usados recentemente por você.
 
-1. Na caixa de pesquisa na parte superior, digite **console** para filtrar a lista de tipos de projeto àqueles que contêm "console" no nome. Refine ainda mais os resultados da pesquisa pela separação **C#**  (ou outra linguagem de sua escolha) do seletor **Linguagem**.
+1. Na caixa de pesquisa na parte superior, digite **console** para filtrar a lista de tipos de projeto àqueles que contêm "console" no nome. Refine ainda mais os resultados da pesquisa pela separação **C# ** (ou outra linguagem de sua escolha) do seletor **Linguagem**.
 
    ![Caixa de diálogo Novo Projeto no Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
@@ -97,13 +97,13 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
    ![Editor no Visual Studio](media/editor.png)
 
-## <a name="solution-explorer"></a>Gerenciador de soluções
+## <a name="solution-explorer"></a>Gerenciador de Soluções
 
 O **Gerenciador de Soluções**, que, normalmente, está do lado direito do Visual Studio, mostra uma representação gráfica da hierarquia de arquivos e pastas no projeto, na solução ou na pasta de código. Você pode procurar na hierarquia e navegar até algum arquivo no **Gerenciador de Soluções**.
 
 ![Gerenciador de Soluções no Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
-## <a name="menus"></a>{1&gt;Menus&lt;1}
+## <a name="menus"></a>Menus
 
 A barra de menus na parte superior do Visual Studio agrupa os comandos em categorias. Por exemplo, o menu **Projeto** contém comandos relacionados ao projeto em que você está trabalhando. No menu **Ferramentas**, personalize o comportamento do Visual Studio selecionando **Opções** ou adicione recursos à instalação selecionando **Obter Ferramentas e Recursos**.
 
@@ -127,11 +127,11 @@ A **Lista de Erros** mostra erros, avisos e mensagens sobre o estado atual do c�
 
 ![Lista de Erros no Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>janela Saída
+## <a name="output-window"></a>Janela de Saída
 
 A janela de **Saída** mostra as mensagens de saída do build do projeto e do provedor de controle do código-fonte.
 
-Vamos criar o projeto para ver uma saída de build. No menu **Compilação**, escolha **Compilar Solução**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
+Vamos criar o projeto para ver uma saída de build. No menu **Build,** escolha **Build Solution**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
@@ -141,7 +141,7 @@ A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente t
 
 ::: moniker range="vs-2017"
 
-1. Localize a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
+1. Localize a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Alternativamente, **pressione Ctrl**+**Q** para acessá-lo.)
 
 2. Digite **detalhamento** na caixa de pesquisa. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
 
@@ -187,7 +187,7 @@ Caso encontre problemas enquanto estiver usando o Visual Studio ou se tiver suge
 
 ::: moniker-end
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos com a interface do usuário. Para explorar mais:
 
@@ -197,7 +197,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais funcionalidades do Visual Studio](../ide/advanced-feature-overview.md)

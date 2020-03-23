@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0328e04067770f8837d10d532abb67d16c65e50
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776421"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Como criar um relatório de comparação de criador de perfil por meio de um prompt de comando
@@ -25,12 +25,12 @@ Você pode gerar um relatório de Ferramentas de Criação de Perfil do [!INCLUD
 
  Use a sintaxe a seguir para criar o relatório de comparação:
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
+ **VSPerfReport /diff** `VspFileName1` *VspFileName2* [**/**`Options`]  
 
  Você pode adicionar opções da tabela a seguir para a linha de comando **VSPerfReport /diff**.
 
 |Opção|Descrição|
 |------------|-----------------|
-|**DiffThreshold:** [*Value*]|Ignore a diferença se ela estiver abaixo desse valor de limite de percentual. Além disso, novos dados com valores abaixo desse limite não aparecerão.|
+|**DiffThreshold:**[*Value*]|Ignore a diferença se ela estiver abaixo desse valor de limite de percentual. Além disso, novos dados com valores abaixo desse limite não aparecerão.|
 |**DiffTable:** *TableName*|Use esta tabela para comparar arquivos. Por padrão, a tabela de funções é usada. Especifique o identificador que está listado em **VSPerfReport /querydifftables**.|
 |**DiffColumn:** *ColumnName*|Use essa coluna para comparar valores. Por padrão, a coluna de porcentagem de amostras exclusivas é usada. Especifique o identificador que está listado em **VSPerfReport /querydifftables**.|

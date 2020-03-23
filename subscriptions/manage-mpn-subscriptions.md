@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
 ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947136"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciar assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
@@ -28,9 +28,9 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 6. Selecione **Privilégios**
 7. Selecione **Assinaturas do Visual Studio** (observação: atualização pendente da assinatura do Visual Studio)
 8. Selecione o **Indivíduo** desejado
-9. Clique em **Enviar**
+9. Clique **em Enviar**
 10. A pessoa receberá um email
-11. O indivíduo atribuído acessará [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para entrar
+11. O indivíduo designado [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) terá acesso ao login
 12. Uma página de perfil do Visual Studio pode ser exibida, incluindo:
     - Nome
     - Sobrenome
@@ -42,9 +42,9 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 2. Selecione **Privilégios**
 3. Selecione **Assinaturas do MSDN** (observação: em breve essa opção será renomeada como "Assinaturas do Visual Studio")
 4. Localize o **indivíduo** desejado
-5. Clique em **Enviar**
+5. Clique **em Enviar**
 6. A pessoa receberá um email
-7. O indivíduo atribuído acessará [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para entrar
+7. O indivíduo designado [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) terá acesso ao login
 8. Uma página de perfil do Visual Studio pode ser exibida
     - Nome
     - Sobrenome

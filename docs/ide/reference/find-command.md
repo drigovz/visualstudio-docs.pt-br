@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595638"
 ---
 # <a name="find-command"></a>Comando Localizar
@@ -30,10 +30,10 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `findwhat` Necessário. O texto a ser correspondido.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 /case ou /c\
 Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
@@ -77,7 +77,7 @@ Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

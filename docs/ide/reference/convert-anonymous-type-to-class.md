@@ -1,20 +1,21 @@
 ---
 title: Converter tipo anônimo em classe
-ms.date: 02/13/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968515"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094292"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Converter tipo anônimo em classe
 
@@ -22,11 +23,13 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** Converta um tipo anônimo em classe.
+- Visual Basic
 
-**Quando:** Você tem um tipo anônimo que deseja que continue a se basear em uma classe.
+**O que é isso?** Converta um tipo anônimo para classe.
 
-**Por que:** Tipos anônimos são úteis se você está usando-os apenas localmente. À medida que o código cresce, é bom ter uma maneira fácil de promovê-los para uma classe.
+**Quando:** Você tem um tipo anônimo que você quer continuar a construir em uma classe.
+
+**Por que:** Tipos anônimos são úteis se você estiver usando-os apenas localmente. À medida que o código cresce, é bom ter uma maneira fácil de promovê-los para uma classe.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -39,6 +42,6 @@ Esta refatoração aplica-se a:
 
    ![Converter tipo anônimo em classe aceito](media/convert-anon-to-class-complete.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

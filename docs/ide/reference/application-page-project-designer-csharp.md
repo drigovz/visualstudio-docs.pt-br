@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595820"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.
 
-Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto** > **Propriedades** na barra de menus. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha**Propriedades** **do projeto** > na barra de menu. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="general-application-settings"></a>Configurações gerais de aplicativos
+## <a name="general-application-settings"></a>Configurações Gerais de Aplicativos
 
 As opções a seguir permitem definir as configurações gerais para o aplicativo.
 
@@ -48,7 +48,7 @@ Consulte [namespace](/dotnet/csharp/language-reference/keywords/namespace) para 
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Estrutura de destino**
+**Quadro de destino**
 
 Especifica a versão do .NET direcionada pelo aplicativo. Essa opção pode ter valores diferentes dependendo de quais versões do .NET estão instaladas no computador.
 
@@ -81,9 +81,9 @@ Para obter mais informações sobre o redirecionamento, confira [Redirecionando 
 
 **Objeto de inicialização**
 
-Define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classes não têm um ponto de entrada, sua única opção para essa propriedade é **(Não definido)** .
+Define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classes não têm um ponto de entrada, sua única opção para essa propriedade é **(Não definido)**.
 
-Por padrão, em um projeto do aplicativo WPF, esta opção é definida como **(Não definido)** . A outra opção é \[nomedoprojeto].App. Em um projeto do WPF, é necessário definir o URI de inicialização para carregar um recurso de interface do usuário quando o aplicativo é iniciado. Para fazer isso, abra o arquivo *Application.xaml* em seu projeto e defina a propriedade `StartupUri` como um arquivo *.xaml* em seu projeto, como *Window1.xaml*. Para obter uma lista dos elementos raiz aceitáveis, consulte <xref:System.Windows.Application.StartupUri%2A>. Também é necessário definir um método `public static void Main()` em uma classe no projeto. Essa classe será exibida na lista **Objeto de inicialização** como *ProjectName.ClassName*. Em seguida, é possível selecionar a classe como o objeto de inicialização.
+Por padrão, em um projeto do aplicativo WPF, esta opção é definida como **(Não definido)**. A outra opção é \[nomedoprojeto].App. Em um projeto do WPF, é necessário definir o URI de inicialização para carregar um recurso de interface do usuário quando o aplicativo é iniciado. Para fazer isso, abra o arquivo *Application.xaml* em seu projeto e defina a propriedade `StartupUri` como um arquivo *.xaml* em seu projeto, como *Window1.xaml*. Para obter uma lista dos elementos raiz aceitáveis, consulte <xref:System.Windows.Application.StartupUri%2A>. Também é necessário definir um método `public static void Main()` em uma classe no projeto. Essa classe será exibida na lista **Objeto de inicialização** como *ProjectName.ClassName*. Em seguida, é possível selecionar a classe como o objeto de inicialização.
 
 Consulte [/main (Opções do compilador do C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -111,7 +111,7 @@ Para obter informações sobre como criar um ícone, confira [Editor de imagens 
 
 Seleciona uma opção de geração de manifesto quando o aplicativo é executado no Windows Vista no UAC (Controle de Conta de Usuário). Essa opção pode ter os seguintes valores:
 
-- **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Esta é a opção padrão.
+- **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Essa é a opção padrão.
 
 - **Criar aplicativo sem um manifesto**. Esse método é conhecido como *virtualização*. Use essa opção para compatibilidade com aplicativos anteriores.
 
@@ -121,6 +121,6 @@ Seleciona uma opção de geração de manifesto quando o aplicativo é executado
 
 Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.
 
-Insira um nome de caminho ou use o botão Procurar ( **...** ) para adicionar um arquivo de recurso Win32 ao projeto.
+Insira um nome de caminho ou use o botão Procurar (**... **) para adicionar um arquivo de recurso Win32 ao projeto.
 
 Para obter mais informações, confira [Criar arquivos de recurso para aplicativos .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

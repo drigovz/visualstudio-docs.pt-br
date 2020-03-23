@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113303"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Como criar grafos personalizados em resultados do teste de carga
@@ -26,11 +26,11 @@ Você pode executar o procedimento a seguir enquanto um teste de carga está em 
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Para criar um grafo de resultados de teste de carga personalizado
 
-1. Na barra de ferramentas **Teste de Carga**, escolha **Adicionar um Novo Grafo**.
+1. Na barra de ferramentas **do Teste de** carga, escolha Adicionar novo **gráfico**.
 
-     \- ou -
+     \- ou –
 
-     No **Analisador de Teste de Carga**, clique com o botão direito do mouse no painel **Contadores** ou em um grafo e, em seguida, selecione **Adicionar Grafo**.
+     No **Analisador de Teste de Carga,** clique com o botão direito do mouse no painel **Contadores** ou em um gráfico e, em seguida, **selecione Adicionar gráfico**.
 
      A caixa de diálogo **Digite o nome do gráfico** é exibida.
 
@@ -40,7 +40,7 @@ Você pode executar o procedimento a seguir enquanto um teste de carga está em 
 
 3. Personalize o novo gráfico adicionando contadores. Para saber mais, confira [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Como: Adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

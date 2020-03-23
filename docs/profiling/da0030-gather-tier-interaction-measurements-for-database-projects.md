@@ -14,21 +14,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777470"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: coletar medidas de interação de camada para projetos de banco de dados
 
 |||
 |-|-|
-|Id da Regra|DA0030|
+|ID de regra|DA0030|
 |Categoria|Uso das ferramentas de criação de perfil|
-|Método de criação de perfil|Amostragem|
+|Método de criação de perfil|amostragem|
 |Mensagem|A coleta de medições de interação para aplicativos de várias camadas ajuda você a entender os padrões de uso do banco de dados e atrasos de acesso a dados de chave. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.|
-|Tipo de regra|Informações do|
+|Tipo de regra|Informações|
 
 ## <a name="cause"></a>Causa
  Chamadas a métodos <xref:System.Data> são uma proporção significativa dos dados de criação de perfil e não foram coletados dados de interação de camada na execução de criação de perfil. Considere a criação de perfil novamente e a adição de dados de interação de camada.

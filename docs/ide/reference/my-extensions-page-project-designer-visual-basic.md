@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114223"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
@@ -25,7 +25,7 @@ Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `M
 
 Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.
 
-## <a name="uielement-list"></a>Lista de UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Minhas Extensões do Namespace**
@@ -40,9 +40,9 @@ Clique nesse botão para adicionar uma extensão do namespace `My` instalada a s
 
 Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Estendendo o Meu Namespace em Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
+- [Estendendo o Meu Namespace no Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Empacotando e implantando minhas extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)
 - [Estendendo o modelo de aplicativo do Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)
-- [Personalizando quais objetos estão disponíveis em My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)
+- [Como personalizar quais objetos estão disponíveis em My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

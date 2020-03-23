@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589416"
 ---
 # <a name="how-to-model-3d-terrain"></a>Como modelar um terreno 3D
@@ -53,8 +53,8 @@ O modelo de terreno está concluído. Aqui está o modelo final novamente, com s
 
 ![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png)
 
-Use esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente baseado em geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Você pode usar este modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como: Criar um sombreador gradiente baseado em geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de modelos](../designers/model-editor.md)

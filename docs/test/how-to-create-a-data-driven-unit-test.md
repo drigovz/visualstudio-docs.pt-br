@@ -15,13 +15,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589182"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Como: criar um teste de unidade controlado por dados
+# <a name="how-to-create-a-data-driven-unit-test"></a>Como: Criar um teste de unidade orientado por dados
 
 Você pode usar a estrutura de teste de unidade da Microsoft para o código gerenciado para configurar um método de teste de unidade para recuperar valores de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.
 
@@ -67,7 +67,7 @@ public int AddIntegers(int first, int second)
 
 Para testar o método `AddIntegers`, crie uma fonte de dados que especifica um intervalo de valores para os parâmetros e a soma que você espera que seja retornada. Neste exemplo, criaremos um banco de dados do SQL Compact chamado `MathsData` e uma tabela chamada `AddIntegersData` que contém os seguintes nomes de coluna e valores
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +89,7 @@ public TestContext TestContext
 Em seu método de teste, os dados são acessados por meio da propriedade do indexador `DataRow` do `TestContext`.
 
 > [!NOTE]
-> O .NET Core não dá suporte ao atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se tentar acessar os dados de teste dessa forma em um projeto de teste de unidade do .NET Core ou do UWP, você verá um erro semelhante a **"TestContext não contém uma definição para 'DataRow' e nenhum 'DataRow' do método de extensão acessível que aceita um primeiro argumento do tipo 'TestContext' pôde ser encontrado (alguma diretiva em uso ou uma referência de assembly está ausente?)"** .
+> O .NET Core não dá suporte ao atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se tentar acessar os dados de teste dessa forma em um projeto de teste de unidade do .NET Core ou do UWP, você verá um erro semelhante a **"TestContext não contém uma definição para 'DataRow' e nenhum 'DataRow' do método de extensão acessível que aceita um primeiro argumento do tipo 'TestContext' pôde ser encontrado (alguma diretiva em uso ou uma referência de assembly está ausente?)"**.
 
 ## <a name="write-the-test-method"></a>Escrever o método de teste
 
@@ -131,7 +131,7 @@ O atributo DataSource tem três construtores.
 
 Um construtor com um parâmetro usa informações de conexão armazenadas no arquivo *app.config* para a solução. O *dataSourceSettingsName* é o nome do elemento XML no arquivo de configuração que especifica as informações de conexão.
 
-O uso de um arquivo *app.config* permite que você altere o local da fonte de dados sem fazer alterações no teste de unidade propriamente dito. Para obter informações sobre como criar e usar um arquivo *app.config*, confira [Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+O uso de um arquivo *app.config* permite alterar a localização da fonte de dados sem fazer alterações no próprio teste da unidade. Para obter informações sobre como criar e usar um arquivo *app.config,* consulte [Passo a Passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -160,23 +160,23 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Executar o teste e exibir os resultados
 
-Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste é exibido em **Gerenciador de Testes**, no grupo **Testes Não Executados**. Conforme você executa, escreve e executa novamente os testes, o **Gerenciador de Testes** exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados.
+Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste é exibido em **Gerenciador de Testes**, no grupo **Testes Não Executados**. À medida que você executa, escreve e reexecuta seus testes, o **Test Explorer** exibe os resultados em grupos de **testes fracassados,** **testes aprovados**e **testes não executados.** Você pode escolher **Run All** para executar todos os seus testes, ou escolher **Executar** para escolher um subconjunto de testes para executar.
 
-A barra de resultados de teste na parte superior do **Gerenciador de Testes** é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel de detalhes na parte inferior da janela do **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior.
+A barra de resultados de teste na parte superior do **Gerenciador de Testes** é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução do teste aparece no painel de detalhes na parte inferior da janela do Explorador de **Teste.** Selecione um teste para exibir seus detalhes no painel inferior.
 
 > [!NOTE]
 > Há um resultado para cada linha de dados e também um resumo de resultados. Se o teste foi aprovado em cada linha de dados, o resumo de execução mostra como **Aprovado**. Se o teste falhou em alguma linha de dados, o resumo de execução mostra como **Falha**.
 
-Se você executou o método `AddIntegers_FromDataSourceTest` de nosso exemplo, a barra de resultados fica vermelha e o método de teste é movido para **Testes Reprovados**. Um teste controlado por dados falha se um dos métodos iterados da fonte de dados falha. Quando você escolhe um teste controlado por dados que foi reprovado na janela **Gerenciador de Testes**, o painel de detalhes exibe os resultados de cada iteração que é identificada pelo índice de linha de dados. Em nosso exemplo, parece que o algoritmo `AddIntegers` não manipula valores negativos corretamente.
+Se você executou o método `AddIntegers_FromDataSourceTest` de nosso exemplo, a barra de resultados fica vermelha e o método de teste é movido para **Testes Reprovados**. Um teste controlado por dados falha se um dos métodos iterados da fonte de dados falha. Quando você escolhe um teste baseado em dados com falha na janela Do Explorador de **testes,** o painel de detalhes exibe os resultados de cada iteração que é identificada pelo índice da linha de dados. Em nosso exemplo, parece que o algoritmo `AddIntegers` não manipula valores negativos corretamente.
 
 Quando o método em teste é corrigido e o teste é novamente executado, a barra de resultados ficará verde e o método de teste é movido para o grupo **Teste Aprovado**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-- [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)
+- [Execução de testes de unidade com o gerenciador de testes](../test/run-unit-tests-with-test-explorer.md)
 - [Escrever testes de unidade para o .NET com a estrutura de teste de unidade da Microsoft](../test/unit-test-your-code.md)

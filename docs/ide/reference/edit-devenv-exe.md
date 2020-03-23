@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595690"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -29,9 +29,9 @@ Abre o arquivo especificado em uma instância existente do Visual Studio.
 devenv /Edit [File1[ FileN]...]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-- *File1*
+- *Arquivo1*
 
   Opcional. O arquivo a ser aberto em uma instância existente do Visual Studio. Se não existir nenhuma instância do Visual Studio, uma nova instância será criada com um layout de janela simplificado, e a ferramenta abrirá *File1* na nova instância.
 
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

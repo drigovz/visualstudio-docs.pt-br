@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409541"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302619"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -34,10 +34,10 @@ As etapas do loop são:
 
 O [solver de restrição](#constraint-solver) do IntelliTest pode lidar com valores de todos os tipos que podem aparecer em programas .NET:
 
-* [Inteiros](#integers-and-floats) e [Floats](#integers-and-floats)
+* [Inteiros](#integers-and-floats) e [Carros Alegóricos](#integers-and-floats)
 * [Objetos](#objects)
 * [Structs](#structs)
-* [Matrizes](#arrays-and-strings) e [Cadeias de Caracteres](#arrays-and-strings)
+* [Matrizes](#arrays-and-strings) e [Cordas](#arrays-and-strings)
 
 O IntelliTest filtra entradas que violam as suposições indicadas.
 
@@ -135,4 +135,4 @@ Poste suas ideias e solicitações de recursos na [Comunidade de Desenvolvedores
 
 ## <a name="further-reading"></a>Leitura adicional
 
-* [Como funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Como ele funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

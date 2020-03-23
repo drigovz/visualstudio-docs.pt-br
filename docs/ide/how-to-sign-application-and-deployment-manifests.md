@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596158"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e de implantação
@@ -61,7 +61,7 @@ Para obter informações sobre como criar arquivos de chave, consulte [Como cria
 
      A caixa de diálogo **Selecionar Arquivo** é exibida.
 
-3. Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave ( *.pfx*) que você deseja usar e clique no botão **Abrir**.
+3. Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave (*.pfx*) que você deseja usar e clique no botão **Abrir**.
 
     > [!NOTE]
     > Essa opção é compatível apenas com os arquivos que têm a extensão *.pfx*. Se você tiver um arquivo de chave ou um certificado em outro formato, armazene-o no repositório de certificados do Windows e selecione o certificado que é descrito no procedimento anterior. A finalidade do certificado selecionado deve incluir a assinatura de código.
@@ -71,7 +71,7 @@ Para obter informações sobre como criar arquivos de chave, consulte [Como cria
 4. Insira a senha para acessar o arquivo de chave e, em seguida, selecione **Enter**.
 
 > [!NOTE]
-> O arquivo *.pfx* não pode incluir informações de encadeamento de certificados. Se tiver, ocorrerá o seguinte erro de importação: **não é possível localizar o certificado e a chave privada para descriptografia**. Para remover as informações de encadeamento de certificado, você pode usar *certmgr. msc* e [desabilitar a opção](/previous-versions/aa730868(v=vs.80)) para **incluir todos os certificados** ao exportar o arquivo *. pfx.
+> O arquivo *.pfx* não pode incluir informações de encadeamento de certificados. Se isso acontecer, ocorrerá o seguinte erro de importação: **Não é possível encontrar o certificado e a chave privada para descriptografia**. Para remover as informações de encadeamento do certificado, você pode usar *certmgr.msc* e [desativar a opção](/previous-versions/aa730868(v=vs.80)) de Incluir todos os **certificados** ao exportar o arquivo *.pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Assinar usando um certificado de teste
 
@@ -111,9 +111,9 @@ Por padrão, o ClickOnce gera manifestos assinados automaticamente, a menos que 
 
 3. Publique o aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Assemblies de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assembléias com nomes fortes](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Como criar um par de chaves pública/privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
-- [Página de assinatura, Designer de Projeto](../ide/reference/signing-page-project-designer.md)
+- [Página de Assinatura, Designer de Projeto](../ide/reference/signing-page-project-designer.md)
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

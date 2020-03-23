@@ -42,10 +42,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594741"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opções, Editor de Texto, Todos os Idiomas, Guias
@@ -53,45 +53,45 @@ ms.locfileid: "75594741"
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para exibir essas opções, selecione **Opções** do menu **Ferramentas**. Na pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Guias**.
 
 > [!CAUTION]
-> Essa página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Guias em todas as linguagens para quaisquer opções selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
+> Esta página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Guias em todas as linguagens para quaisquer opções selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
 
 Se forem selecionadas configurações diferentes nas páginas de opções Guias para linguagens de programação específicas, a mensagem “As configurações de recuo para formatos de texto individuais estão em conflito entre si” será exibida para diferentes opções de **Recuo**, e a mensagem “As configurações de guia para formatos de texto individuais estão em conflito entre si” será exibida para diferentes opções de **Guia**. Por exemplo, esse lembrete será exibido se a opção **Recuo inteligente** for selecionada para Visual Basic, mas **Bloquear recuo** estiver selecionado para Visual C++.
 
-## <a name="indenting"></a>Recuar
+## <a name="indenting"></a>Recuo
 
-{1&gt;Nenhum&lt;1}
+Nenhum
 
 Quando selecionada, novas linhas não serão recuadas. O ponto de inserção é colocado na primeira coluna de uma linha nova.
 
-Bloquear
+Bloco
 
 Quando selecionada, novas linhas serão recuadas automaticamente. O ponto de inserção é colocado no mesmo ponto de partida que a linha anterior.
 
-Smart
+Inteligente
 
 Quando selecionada, novas linhas serão posicionadas para caber no o contexto do código, conforme as configurações de formatação do outro código e as convenções do IntelliSense para sua linguagem de desenvolvimento. Essa opção não está disponível para todas as linguagens de desenvolvimento.
 
 Por exemplo, as linhas incluídas entre uma chave de abertura ({) e uma chave de fechamento (}) podem ser recuadas automaticamente em uma parada de tabulação extra da posição das chaves alinhadas.
 
-## <a name="tabs"></a>Guias
+## <a name="tabs"></a>Tabulações
 
-A guia tamanho
+Tamanho da tabulação
 
-Define a distância em espaços entre as paradas de tabulação. O padrão é quatro espaços.
+Define a distância em espaços entre paradas de tabulação. O padrão é quatro espaços.
 
 Tamanho do recuo
 
-Define o tamanho em espaços de um recuo automático. O padrão é quatro espaços. Os caracteres de tabulação, os caracteres de espaço, ou ambos serão inseridos para preencher o tamanho especificado.
+Define o tamanho em espaços de um recuo automático. O padrão é quatro espaços. Caracteres de tabulação, caracteres de espaço ou ambos serão inseridos para preencher o tamanho especificado.
 
-Insira espaços
+Inserir espaços
 
 Quando selecionadas, as operações de recuo inserirão apenas caracteres de espaço, não caracteres de TABULAÇÃO. Se o **Tamanho do recuo** estiver definido como 5, por exemplo, cinco caracteres de espaço serão inseridos sempre que você pressionar a tecla TAB ou o botão **Aumentar Recuo** na barra de ferramentas de **Formatação**.
 
 Manter tabulações
 
-Quando estiverem selecionadas, as operações de recuo inserirão tantos caracteres de TABULAÇÃO quantos forem possíveis. Cada caractere de TABULAÇÃO preenche o número de espaços especificado em **Tamanho da tabulação**. Se o **Tamanho do recuo** não for um múltiplo par do **Tamanho da tabulação**, os caracteres de espaço serão adicionados para preencher a diferença.
+Quando estiverem selecionadas, as operações de recuo inserirão tantos caracteres de TABULAÇÃO quantos forem possíveis. Cada caractere TAB preenche o número de espaços especificados no **tamanho da guia**. Se o **Tamanho do recuo** não for um múltiplo par do **Tamanho da tabulação**, os caracteres de espaço serão adicionados para preencher a diferença.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

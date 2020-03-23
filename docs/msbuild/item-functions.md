@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633675"
 ---
 # <a name="item-functions"></a>funções de item
 
-O código em tarefas e destinos pode chamar funções de item para obter informações sobre os itens no projeto (no MSBuild 4,0 e posterior). Essas funções simplificam a obtenção de itens distintos e são mais rápidas do que o loop pelos itens.
+O código em tarefas e alvos pode chamar funções de itens para obter informações sobre os itens do projeto (no MSBuild 4.0 e posterior). Essas funções simplificam a obtenção de itens distintos e são mais rápidas do que o looping através dos itens.
 
 ## <a name="string-item-functions"></a>Funções de item de cadeia de caracteres
 
@@ -54,7 +54,7 @@ O exemplo a seguir mostra como usar essas funções de item de cadeia de caracte
 
 A tabela a seguir lista as funções intrínsecas disponíveis para itens.
 
-|Função|Exemplo|DESCRIÇÃO|
+|Função|Exemplo|Descrição|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Retorna a contagem dos itens.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retorna o equivalente de `Path.DirectoryName` para cada item.|

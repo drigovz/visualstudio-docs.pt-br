@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567834"
 ---
 # <a name="print-command"></a>Comando Imprimir
@@ -31,11 +31,11 @@ Avalia uma expressão ou exibe o texto especificado.
 >Debug.Print text
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `text`
 
-Necessária. A expressão a ser avaliada ou o texto a ser exibido.
+Obrigatórios. A expressão a ser avaliada ou o texto a ser exibido.
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,7 +59,7 @@ As duas versões desse comando retornam o valor atual da expressão `expA`.
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comando Evaluate Statement](../../ide/reference/evaluate-statement-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

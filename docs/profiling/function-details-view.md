@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779253"
 ---
 # <a name="function-details-view"></a>Exibição de detalhes da função
@@ -38,7 +38,7 @@ A janela **Exibição Detalhes da Função** exibe as seguintes informações:
 
 ## <a name="cost-distribution-bar-chart"></a>Gráfico de barras da distribuição de custo
 
-### <a name="performance-metrics"></a>Métricas de Desempenho
+### <a name="performance-metrics"></a>Métricas de desempenho
  Na lista suspensa **Métrica de desempenho**, você pode especificar quais valores são exibidos na exibição. Os valores disponíveis dependem do método de criação de perfil usado no arquivo de dados de criação de perfil. Os nomes entre parênteses são os nomes das linhas na tabela **Detalhes de Desempenho da Função**.
 
 ### <a name="bar-chart"></a>Gráfico de Barras
@@ -71,9 +71,9 @@ A janela **Exibição Detalhes da Função** exibe as seguintes informações:
 ## <a name="function-performance-details"></a>Detalhes de Desempenho da Função
  A tabela de Detalhes de Desempenho da Função fornece dados de resumo para as métricas de desempenho da função selecionada. O valor e o percentual aparecem. Especifique os dados de criação de perfil que aparecem no gráfico e a tabela de detalhes na lista **Métrica de desempenho**.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
-|**Exclusivo**|‑   O valor da métrica de desempenho que ocorreu na execução do corpo da função.|
+|**Exclusive**|‑   O valor da métrica de desempenho que ocorreu na execução do corpo da função.|
 |**Em Chamadas**|‑   O valor da métrica de desempenho que ocorreu em funções que a função selecionada chamou.|
 |**Total Inclusivo**|‑   O total dos valores **Exclusivo** e **Em Chamadas**.|
 
@@ -82,7 +82,7 @@ A janela **Exibição Detalhes da Função** exibe as seguintes informações:
 
 ## <a name="cost-distribution-bar-chart-values"></a>Valores de gráfico de barras da distribuição de custo
 
-### <a name="sampling"></a>Amostragem
+### <a name="sampling"></a>amostragem
  A tabela a seguir explica os valores na lista Métrica de Desempenho para os dados de criação de perfil coletados usando o método de amostragem.
 
 |||
@@ -105,7 +105,7 @@ A janela **Exibição Detalhes da Função** exibe as seguintes informações:
 |**Alocações Inclusivas (Alocações)**|–   Para uma **Função de Chamada**, o número de objetos alocados pelas instâncias da função selecionada que a função chamou. O número inclui objetos que foram alocados por funções que a função selecionada chamou.<br />–   Para o **Corpo da Função**, o número de objetos que foram coletados pela função selecionada quando estava executando seu próprio código. Objetos alocados em funções chamadas por essa função selecionada não são incluídos.<br />–   Para uma função chamada, o número de objetos que foram alocados pela instância da função que foram chamados pela função selecionada. O número inclui objetos que foram alocados por funções que a função chamou.|
 |**Bytes Inclusivos (Bytes)**|–   Para uma **Função de Chamada**, o número de bytes alocados pelas instâncias da função selecionada que a função chamou. O número inclui bytes que foram alocados por funções que a função selecionada chamou.<br />–   Para o **Corpo da Função**, o número total de bytes que foram alocados pela função selecionada quando ela estava executando seu próprio código. Bytes alocados em funções chamadas pela função selecionada não são incluídos.<br />–   Para uma função chamada, o número de bytes que foram alocados pela instância da função que foram chamados pela função selecionada. O número inclui bytes que foram alocados por funções que a função chamou.|
 
-### <a name="concurrency"></a>Concorrência
+### <a name="concurrency"></a>Simultaneidade
  A tabela a seguir explica os valores na lista Métrica de Desempenho para os dados de criação de perfil coletados usando o método de simultaneidade.
 
 |||

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779955"
 ---
 # <a name="user-vsperfcmd"></a>Usuário (VSPerfCmd)
@@ -27,7 +27,7 @@ A opção **Usuário** especifica o domínio e o nome de usuário da conta que p
 VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `Domain` O nome do domínio do usuário.
 
  `UserName` O nome do usuário.
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **Usuário** só pode ser usada com a opção **Iniciar**.
 
- **Iniciar:** `Method` Inicializa o criador de perfil para o método de criação de perfil especificado.
+ **Início:** `Method` Inicializa o profiler para o método de criação de perfil especificado.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir demonstra o uso da opção **Usuário**.
@@ -44,8 +44,8 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
 ```
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

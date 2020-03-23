@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585594"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
@@ -32,7 +32,7 @@ A cobertura de código é uma opção quando você executa métodos de teste usa
 
 ::: moniker-end
 
-## <a name="requirements"></a>Requisitos do
+## <a name="requirements"></a>Requisitos
 
 O recurso de cobertura de código está disponível apenas no Visual Studio Enterprise.
 
@@ -46,18 +46,18 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 
 ::: moniker range=">=vs-2019"
 
-1. No menu **testar** , selecione **analisar cobertura de código para todos os testes**.
+1. No menu **Teste,** **selecione Analisar a cobertura de código para todos os testes**.
 
    ![Analisar o menu de cobertura de código no VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Você também pode executar a cobertura de código na janela de ferramentas do Gerenciador de testes.
+   Você também pode executar a cobertura de código a partir da janela da ferramenta Test Explorer.
 
 ::: moniker-end
 
-2. Depois que os testes tiverem sido executados, para ver quais linhas foram executadas, escolha ![ícone mostrar cores de cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela **resultados da cobertura de código** . Por padrão, o código coberto por testes é realçado em azul claro.
+2. Após a execução dos testes, para ver ![quais linhas foram](../test/media/codecoverage-showcoloringicon.png) executadas, escolha o ícone mostrar cobertura de código **Colorindo a cobertura de código coloração** na janela Resultados de Cobertura de **Código.** Por padrão, o código coberto por testes é destacado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas** > **opções** > **ambiente** > **fontes e cores** > **Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
+   > Para alterar as cores ou usar o rosto em negrito, escolha **Ferramentas** > **Opções** > **De ambiente** > **Fontes e cores** > **Mostrar configurações para: Editor de texto**. Em **Exibir itens,** ajuste as configurações para os itens "Cobertura", por exemplo, **Área de Cobertura Não Tocada**.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -66,7 +66,7 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 > [!TIP]
 > - Desativar a otimização do compilador
 > - Se você estiver trabalhando com código não gerenciado (nativo), use uma compilação de depuração
-> - Gerar arquivos. PDB (símbolo) para cada assembly
+> - Gerar arquivos .pdb (símbolo) para cada montagem
 
 Se você não obtiver os resultados esperados, confira [Solução de problemas da cobertura de código](../test/troubleshooting-code-coverage.md).
 
@@ -83,7 +83,7 @@ Você também pode ter os resultados exibidos em termos de linhas escolhendo **A
 
 ## <a name="manage-code-coverage-results"></a>Gerenciar resultados da cobertura de código
 
-A janela **Resultados da Cobertura de Código** geralmente mostra o resultado da execução mais recente. Os resultados podem variar se você alterar os dados de teste ou, se você executar apenas alguns dos testes cada vez.
+A janela **Resultados de Cobertura de Código** geralmente mostra o resultado da execução mais recente. Os resultados podem variar se você alterar os dados de teste ou, se você executar apenas alguns dos testes cada vez.
 
 A janela de cobertura de código também pode ser usada para exibir os resultados anteriores ou os resultados obtidos em outros computadores.
 
@@ -91,13 +91,13 @@ A janela de cobertura de código também pode ser usada para exibir os resultado
 
 - **Para exibir um conjunto de resultados anterior**, selecione-o no menu suspenso. O menu mostra uma lista temporária que foi desmarcada quando você abrir uma nova solução.
 
-- **Para exibir os resultados de uma sessão anterior**, escolha **Importar Resultados da Cobertura de Código**, navegue para a pasta **TestResults** na solução e importe um arquivo *.coverage*.
+- **Para ver os resultados de uma sessão anterior,** escolha Resultados de **Cobertura de Código de Importação,** navegue até a pasta **TestResults** em sua solução e importe um arquivo *.coverage.*
 
-   A coloração de cobertura pode estar incorreta se o código-fonte foi alterado desde a geração do arquivo *.coverage*.
+   A coloração de cobertura pode estar incorreta se o código-fonte tiver sido alterado desde que o arquivo *.coverage* foi gerado.
 
-- **Para tornar os resultados legíveis como texto**, escolha **Exportar Resultados da Cobertura de Código**. Isso gera um arquivo *.coveragexml* legível que você pode processar com outras ferramentas ou enviar com facilidade por email.
+- **Para tornar os resultados legíveis como texto**, escolha **Exportar Resultados da Cobertura de Código**. Isso gera um arquivo *.coveragexml* legível, que você pode processar com outras ferramentas ou enviar facilmente no correio.
 
-- **Para enviar os resultados para outra pessoa**, envie um arquivo *.coverage* ou um arquivo *.coveragexml* exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.
+- **Para enviar resultados para outra pessoa,** envie um arquivo *.coverage* ou um arquivo *.coveragexml* exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.
 
 ## <a name="merge-results-from-different-runs"></a>Mesclar resultados de execuções diferentes
 
@@ -105,7 +105,7 @@ Em algumas situações, os blocos diferentes em seu código serão usados depend
 
 Por exemplo, suponhamos que, ao executar um teste com a entrada “2 ", você descobre que 50% de uma função específica está coberta. Quando você executa o teste uma segunda vez com a entrada "-2 ", vê na exibição de cores de cobertura que os outros 50% da função estão cobertos. Agora você mescla os resultados das duas execuções de testes, e a exibição do relatório e da coloração de cobertura mostra que 100% da função foi coberta.
 
-Use o ícone de ![para o botão mesclar na janela de cobertura de código](../test/media/codecoverage-mergeicon.png) **mesclar resultados de cobertura de código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
+Use o ![ícone do botão Mesclar na janela Cobertura de Código](../test/media/codecoverage-mergeicon.png) **Mesclar Resultados da Cobertura de Código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
 
 Use **Exportar Resultados da Cobertura de Código** para salvar os resultados de uma operação de mesclagem.
 
@@ -124,7 +124,7 @@ Você pode excluir elementos específicos em seu código das pontuações de cob
 > [!TIP]
 > Excluir uma classe não exclui as classes derivadas.
 
-Por exemplo:
+Por exemplo: 
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -243,9 +243,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Use as seguintes macros:
 
-`ExcludeFromCodeCoverage(` *Exclusionname* `, L"` *nomedafunção* `");`
+`ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
-`ExcludeSourceFromCodeCoverage(` *Exclusionname* `, L"` *SourceFilePath* `");`
+`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName* é qualquer nome exclusivo.
 
@@ -266,9 +266,9 @@ Use as seguintes macros:
 
 ### <a name="include-or-exclude-additional-elements"></a>Incluir ou excluir elementos adicionais
 
-A análise de cobertura de código é executada apenas em assemblies carregados e para os quais um arquivo *.pdb* está disponível no mesmo diretório do arquivo *.dll* ou *.exe*. Portanto, em algumas circunstâncias, você pode estender o conjunto de assemblies que é incluído obtendo cópias dos arquivos *.pdb* apropriados.
+A análise de cobertura de código é realizada apenas em conjuntos carregados e para os quais um arquivo *.pdb* está disponível no mesmo diretório que o arquivo *.dll* ou *.exe.* Portanto, em algumas circunstâncias, você pode estender o conjunto de assembléias que está incluído recebendo cópias dos arquivos *.pdb* apropriados.
 
-Você pode exercer mais controle sobre quais assemblies e elementos são selecionados para análise da cobertura de código escrevendo um arquivo *.runsettings*. Por exemplo, você pode excluir os assemblies de tipos específicos sem precisar adicionar atributos às suas classes. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Você pode exercer mais controle sobre quais conjuntos e elementos são selecionados para análise de cobertura de código escrevendo um arquivo *.runsettings.* Por exemplo, você pode excluir os assemblies de tipos específicos sem precisar adicionar atributos às suas classes. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analisar a cobertura de código no Azure Pipelines
 
@@ -276,23 +276,23 @@ Quando você faz check-in de seu código, os testes são executados no servidor 
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analisar a cobertura de código na linha de comando
 
-Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura de código é uma opção do utilitário *vstest.console.exe*.
+Para executar testes a partir da linha de comando, use *vstest.console.exe*. A cobertura de código é uma opção do utilitário *vstest.console.exe.*
 
 1. Iniciar o Prompt de Comando do Desenvolvedor para o Visual Studio:
 
    ::: moniker range="vs-2017"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **prompt de comando do desenvolvedor para vs 2017**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **Prompt de Comando do Desenvolvedor para VS 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **prompt de comando do desenvolvedor para vs 2019**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **Prompt de Comando do Desenvolvedor para VS 2019**.
 
    ::: moniker-end
 
-2. No prompt de comando, execute o seguinte comando:
+2. No prompt de comando, execute o comando a seguir:
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
@@ -300,12 +300,12 @@ Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura 
 
 Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Solução de problemas
+## <a name="troubleshoot"></a>Solucionar problemas
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)

@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585399"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301856"
 ---
 # <a name="code-style-preferences"></a>Preferências de estilo de código
 
@@ -30,7 +30,7 @@ As [configurações de estilo de código](../ide/editorconfig-code-style-setting
 
 ::: moniker range=">=vs-2019"
 
-Você pode preencher manualmente o arquivo EditorConfig ou gerar automaticamente um arquivo com base nas configurações de estilo de código definidas na caixa de diálogo **Opções** do Visual Studio. Essa página de opções está disponível em **Ferramentas** > **Opções** > **Editor de texto** > [**C#** ou **Básico**] > **Estilo de código** > **Geral**. Clique em **Gerar arquivo .editorconfig das configurações** para gerar automaticamente um arquivo *.editorconfig* de estilo de codificação com base nas configurações na página **Opções**.
+Você pode preencher manualmente o arquivo EditorConfig ou gerar automaticamente um arquivo com base nas configurações de estilo de código definidas na caixa de diálogo **Opções** do Visual Studio. Esta página de opções está disponível no **Tools** > **Options** > **Text Editor** > [**C#** ou **Basic**] > **Code Style** > **General**. Clique em **Gerar arquivo .editorconfig das configurações** para gerar automaticamente um arquivo *.editorconfig* de estilo de codificação com base nas configurações na página **Opções**.
 
 ![Gerar arquivo editorconfig das configurações no Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -58,7 +58,7 @@ As opções definidas nessa janela são aplicáveis à sua conta de personaliza�
 
 ### <a name="preference-and-severity"></a>Preferência e gravidade
 
-Em cada configuração de estilo de código nessa página, é possível definir os valores de **Preferência** e **Gravidade** usando as listas suspensas de cada linha. A gravidade pode ser definida como **Somente Refatoração**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Gravidade** está definida como algo diferente de **Somente Refatoração**. O ícone de lâmpada **Ícone de lâmpada**![Ações Rápidas](media/light-bulb-dropdown.png), de lâmpada de erro ![lâmpada de erro](media/error-bulb.png) ou de chave de fenda ![chave de fenda](media/screwdriver.png) é exibido quando um estilo não preferencial é usado. Você pode escolher uma opção na lista **Ações Rápidas** para reescrever o código automaticamente no estilo preferencial.
+Em cada configuração de estilo de código nessa página, é possível definir os valores de **Preferência** e **Gravidade** usando as listas suspensas de cada linha. A gravidade pode ser definida como **Somente Refatoração**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Gravidade** está definida como algo diferente de **Somente Refatoração**. A lâmpada de ![lâmpada](media/light-bulb-dropdown.png)de ações ![rápidas,](media/error-bulb.png)a lâmpada ![de](media/screwdriver.png) erro da lâmpada de erro ou o ícone da chave de fenda da chave de fenda são exibidos quando um estilo não preferido é usado, e você pode escolher uma opção na lista **Ações Rápidas** para reescrever automaticamente o código para o estilo preferido. **Quick Actions**
 
 ## <a name="apply-code-styles"></a>Aplicar estilos de código
 
@@ -82,7 +82,7 @@ Na primeira vez que você disparar o comando **Formatar documento**, uma barra a
 
 ::: moniker range=">=vs-2019"
 
-Para C# arquivos de código, o Visual Studio 2019 tem um botão de **limpeza de código** na parte inferior do editor (teclado: **Ctrl**+**K**, **Ctrl**+**E**) para aplicar estilos de código de um arquivo EditorConfig ou da página de opções de **estilo de código** . Se um arquivo *.editorconfig* existir para o projeto, essas serão as configurações com precedência.
+Para arquivos de código C#, o Visual Studio 2019 tem um botão **De limpeza** de código na parte inferior do editor (teclado: **Ctrl**+**K**, **Ctrl**+**E**) para aplicar estilos de código a partir de um arquivo EditorConfig ou da página de opções De Estilo **de Código.** Se um arquivo *.editorconfig* existir para o projeto, essas serão as configurações com precedência.
 
 ![Executar limpeza de código no Visual Studio 2019](media/execute-code-cleanup.png)
 
@@ -93,7 +93,7 @@ Primeiramente, configure quais estilos de código deseja aplicar (em um dos dois
 
 ![Configurar limpeza de código no Visual Studio 2019](media/configure-code-cleanup.png)
 
-Depois que tiver configurado a limpeza de código, você poderá clicar no ícone de vassoura ou pressionar **Ctrl**+**K**, **Ctrl**+**E** para executar a limpeza de código. Você também pode fazer a limpeza de código em todo o projeto ou em toda a solução. Clique com o botão direito do mouse no nome do projeto ou da solução no **Gerenciador de Soluções**, selecione **Análise e Limpeza de Código** e selecione **Executar Limpeza de Código**.
+Depois de configurar a limpeza do código, você pode clicar no ícone da vassoura ou pressionar **Ctrl**+**K**, **Ctrl**+**E** para executar a limpeza do código. Você também pode fazer a limpeza de código em todo o projeto ou em toda a solução. Clique com o botão direito do mouse no nome do projeto ou da solução no **Gerenciador de Soluções**, selecione **Análise e Limpeza de Código** e selecione **Executar Limpeza de Código**.
 
 ![Fazer Limpeza de Código em todo projeto ou em toda solução](media/run-code-cleanup-project-solution.png)
 
@@ -101,8 +101,8 @@ Se quiser que as configurações de estilo de código sejam aplicadas sempre que
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Ações rápidas](../ide/quick-actions.md)
-- [Configurações de convenção de codificação do .NET para o EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Configurações de convenção de codificação .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
 - [Comportamento do editor (Visual Studio para Mac)](/visualstudio/mac/editor-behavior)

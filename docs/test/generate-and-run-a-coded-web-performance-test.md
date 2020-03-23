@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589572"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho para Web codificado
 
-Os testes de desempenho na Web são gravados navegando-se no aplicativo Web. Os testes são incluídos em testes de carga para medir o desempenho do seu aplicativo Web sob o estresse de vários usuários. Um teste de desempenho na Web pode ser convertido em um script baseado em código que você pode editar e personalizar como qualquer outro código-fonte. Por exemplo, você pode adicionar constructos de loop e de ramificação.
+Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes são incluídos em testes de carga para medir o desempenho de seu aplicativo Web sob o estresse de vários usuários. Um teste de desempenho na Web pode ser convertido em um script baseado em código que você pode editar e personalizar como qualquer outro código-fonte. Por exemplo, você pode adicionar constructos de loop e de ramificação.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -82,10 +82,10 @@ Os testes de desempenho na Web são gravados navegando-se no aplicativo Web. Os 
 
      ![Resultados de teste de desempenho Web codificado](../test/media/web_test_coded_generate_results.png)
 
-## <a name="qa"></a>PERGUNTAS E RESPOSTAS
+## <a name="qa"></a>Perguntas e respostas
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: Posso executar mais de um teste por vez?
-**R:** Sim, use o menu com o botão direito do mouse (contexto) no **Gerenciador de soluções**.
+**A:** Sim, use o menu com o botão direito do mouse (contexto) no **Solution Explorer**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: Devo adicionar uma fonte de dados antes ou depois de gerar um teste codificado?
 **R** É mais fácil adicionar uma [fonte de dados](../test/add-a-data-source-to-a-web-performance-test.md) antes de gerar o teste codificado, pois o código será gerado automaticamente para você.

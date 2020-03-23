@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591028"
 ---
 # <a name="how-to-manage-editor-modes"></a>Como gerenciar modos do editor
@@ -36,15 +36,15 @@ ms.locfileid: "75591028"
 Você pode exibir o editor de código do Visual Studio em vários modos de exibição.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos neste artigo, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos neste artigo, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="enable-full-screen-mode"></a>Habilitar o modo de tela inteira
 
-É possível escolher ocultar todas as janelas de ferramentas e exibir apenas janelas do documento, habilitando o modo de **Tela Inteira**.
+Você pode optar por ocultar todas as janelas de ferramentas e visualizar apenas janelas de documentos ativando o modo **tela cheia.**
 
-- Pressione **ALT**+**SHIFT**+**ENTER** para entrar ou sair do modo de **Tela Inteira**.
+- Pressione **Alt**+**Shift**+**Enter** para entrar ou sair do modo **full screen.**
 
-     --ou--
+     -- ou --
 
 - Emita o comando `View.Fullscreen` na janela **Comando**.
 
@@ -54,14 +54,14 @@ No modo **Espaço virtual**, os espaços são inseridos no final de cada linha d
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar os números de linha apenas no Visual Basic, escolha o nó **Básico** > **Editor de Texto**.
+2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar números de linha apenas no Visual Basic, escolha o nó **Editor de** > **texto** básico.
 
 3. Selecione as opções **Gerais** e, em **Configurações**, selecione **Habilitar Espaço virtual**.
 
     > [!NOTE]
     > O **Espaço virtual** está habilitado no modo **Seleção de Coluna**. Quando o modo **Espaço virtual** não está habilitado, o ponto de inserção é movido do final de uma linha diretamente para o primeiro caractere da próxima.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Caixa de diálogo Fontes e Cores, Ambiente, Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

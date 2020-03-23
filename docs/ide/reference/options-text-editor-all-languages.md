@@ -43,34 +43,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566872"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo opções: editor de texto \> todos os idiomas
+# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo \> opções: Editor de texto todos os idiomas
 
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.
 
 > [!CAUTION]
-> Essa página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Geral em todas as linguagens, não importa quais opções sejam selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
+> Esta página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Geral em todas as linguagens, não importa quais opções sejam selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
 
 Uma marca de seleção esmaecida é exibida quando uma opção tiver sido selecionada nas páginas de opções Geral para algumas linguagens de programação, mas não para outras.
 
-## <a name="statement-completion"></a>Preenchimento de declaração
+## <a name="statement-completion"></a>Conclusão de instrução
 
 **Listar membros automaticamente**
 
-Quando selecionadas, listas pop-up de membros, propriedades, valores ou métodos disponíveis são exibidas pelo IntelliSense conforme você digita no editor. Escolha qualquer item da lista pop-up para inseri-lo no código. Selecionar essa opção habilita a opção **Ocultar membros avançados**.
+Quando selecionadas, listas pop-up de membros, propriedades, valores ou métodos disponíveis são exibidas pelo IntelliSense conforme você digita no editor. Escolha qualquer item na lista pop-up para inserir o item em seu código. Selecionar essa opção habilita a opção **Ocultar membros avançados**.
 
 **Ocultar membros avançados**
 
-Quando selecionada, diminui listas de preenchimento de declaração pop-up exibindo somente os itens mais usados. Outros itens são filtrados da lista.
+Quando selecionada, diminui listas de preenchimento de declaração pop-up exibindo somente os itens mais usados. Os outros itens são filtrados da lista.
 
-**Informações de parâmetro**
+**Informações sobre parâmetros**
 
-Quando selecionada, a sintaxe completa para a declaração ou procedimento atual é exibida sob o ponto de inserção no editor, com todos os seus parâmetros disponíveis. O parâmetro que a seguir você pode atribuir é exibido em negrito.
+Quando selecionada, a sintaxe completa para a declaração ou procedimento atual é exibida sob o ponto de inserção no editor, com todos os seus parâmetros disponíveis. O próximo parâmetro que você pode atribuir é exibido em negrito.
 
 ## <a name="settings"></a>Configurações
 
@@ -78,7 +78,7 @@ Quando selecionada, a sintaxe completa para a declaração ou procedimento atual
 
 Quando esta opção está selecionada e a caixa de seleção **Quebra automática de linha** está desmarcada, você pode clicar em qualquer lugar além do final de uma linha no Editor de Códigos e digitar. Esse recurso pode ser usado para posicionar comentários em um ponto consistente ao lado do seu código.
 
-**Quebra automática de linha**
+**Embrulho de palavras**
 
 Quando selecionada, qualquer parte de uma linha que se estenda horizontalmente além da área visível do editor é exibida automaticamente na próxima linha. Selecionar essa opção habilita a opção **Mostrar glifos visuais para quebra automática de linha**.
 
@@ -94,16 +94,16 @@ Quando selecionada, um indicador de seta d retorno é exibido no ponto em que um
 Desmarque esta opção se preferir não exibir esses indicadores.
 
 > [!NOTE]
-> Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. São somente para referência.
+> Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. Eles são somente para referência.
 
 **Números de linha**
 
 Quando selecionada, um número de linha aparece ao lado de cada linha de código.
 
 > [!NOTE]
-> Esses números de linha não são adicionados ao seu código e não são impressos. São somente para referência.
+> Esses números de linha não são adicionados ao seu código e não são impressos. Eles são somente para referência.
 
-**Habilitar navegação de URL com clique simples**
+**Habilitar navegação de URL com um só clique**
 
 Quando selecionada, o cursor do mouse muda para uma mão apontando conforme passa sobre uma URL no editor. Você pode clicar no URL para exibir a página indicada no seu navegador da Web.
 
@@ -117,14 +117,14 @@ Esta opção define o comportamento do editor quando você coloque o ponto de in
 
 - Quando essa opção está selecionada, a linha em branco é copiada ou cortada. Se você então Colar, uma nova linha em branco será inserida.
 
-- Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada é colado.
+- Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada será colado.
 
-Essa configuração não tem nenhum efeito em Copiar ou Recortar quando uma linha não está em branco. Se nada é selecionado, a linha inteira é copiada ou recortar. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.
+Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha não está em branco. Se nada for selecionado, a linha inteira será copiada ou recortada. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.
 
 > [!TIP]
 > Para exibir indicadores para espaços, tabulações e fins de linha, e assim distinguir linhas recuadas de linhas totalmente em branco, selecione **Avançado** no menu **Editar** e escolha **Exibir Espaço em Branco**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

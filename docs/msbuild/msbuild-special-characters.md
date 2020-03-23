@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633207"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
@@ -27,9 +27,9 @@ O MSBuild reserva alguns caracteres para uso especial em contextos específicos.
 
 ## <a name="special-characters"></a>Caracteres especiais
 
- A tabela a seguir lista os caracteres especiais do MSBuild:
+ A tabela a seguir lista caracteres especiais do MSBuild:
 
-|**Caractere**|**ASCII**|**Uso reservado**|
+|**Caractere**|**Ascii**|**Uso reservado**|
 |-------------------|---------------|------------------------|
 |%|%25|Metadados de referência|
 |$|%24|Propriedades de referência|

@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596210"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opções, Editor de Texto, C#, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense para C#. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **C#**  > **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense para C#. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**e, em seguida, escolha Editor **de** > texto**C#** > **IntelliSense**.
 
 As opções do **IntelliSense** contém as seguintes seções:
 
@@ -53,7 +53,7 @@ As opções do **IntelliSense** contém as seguintes seções:
 
 - Incluir snippets quando ?-Tab for digitado após um identificador
 
-   Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de snippets de código C# à lista de conclusão quando **?** +**Tab** for pressionado após um identificador
+   Quando esta opção é selecionada, o IntelliSense adiciona aliases para trechos de código C# à lista de conclusão quando **?** + **A** guia é pressionada após um identificador
 
 ## <a name="enter-key-behavior"></a>Comportamento da tecla Enter
 
@@ -83,7 +83,7 @@ As opções do **IntelliSense** contém as seguintes seções:
 
 Executa a conclusão automática do nome de objeto dos membros que você selecionou recentemente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

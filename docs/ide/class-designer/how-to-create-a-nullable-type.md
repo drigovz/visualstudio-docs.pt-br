@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592224"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Como criar um tipo que permite valor nulo no Designer de Classe
@@ -85,10 +85,10 @@ Para obter mais informações sobre tipos que permitem valor nulo no C#, confira
 
 5. Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Nullable%601>
 - [Tipos que permitem valor nulo](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Usando tipos que permitem valor nulo](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [Como identificar um tipo que permite valor nulo](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [Tipos de Valor Anulável](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [Tipos de valor anulados](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

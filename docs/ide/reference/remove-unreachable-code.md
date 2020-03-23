@@ -1,26 +1,29 @@
 ---
 title: Refatoração Remover código inacessível
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62002e78513ecb6ebaefd8130255471d6ba93d0c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565481"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093978"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refatoração Remover código inacessível
 
 Esta refatoração aplica-se a:
 
 - C#
+
+- Visual Basic
 
 **O quê:** remove o código que nunca será executado.
 
@@ -37,7 +40,7 @@ Esta refatoração aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
    - **Mouse**
       - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Remover código inacessível** no pop-up da janela Visualização.
 
@@ -62,7 +65,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

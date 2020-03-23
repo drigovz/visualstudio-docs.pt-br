@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114808"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Como excluir projetos de um build
@@ -30,7 +30,7 @@ Para obter mais informações, consulte [Compreender configurações de build](.
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Para remover temporariamente um projeto da configuração da solução ativa
 
-1. Na barra de menus, escolha **Build** > **Gerenciador de Configurações**.
+1. Na barra de menu, escolha **Build** > **Configuration Manager**.
 
 2. Na tabela **Contextos do projeto**, localize o projeto que você deseja excluir do build.
 
@@ -40,9 +40,9 @@ Para obter mais informações, consulte [Compreender configurações de build](.
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Para criar uma configuração da solução que exclui um projeto
 
-1. Na barra de menus, escolha **Build** > **Gerenciador de Configurações**.
+1. Na barra de menu, escolha **Build** > **Configuration Manager**.
 
-2. Na lista **Configuração da solução ativa**, escolha **\<Nova>** .
+2. Na lista **de configuração da solução Active,** escolha ** \<Nova>**.
 
 3. Na caixa **Nome**, insira um nome para a configuração da solução.
 
@@ -52,23 +52,23 @@ Para obter mais informações, consulte [Compreender configurações de build](.
 
 6. Na barra de ferramentas **Padrão**, verifique se a nova configuração da solução é a configuração ativa na caixa **Configurações da Solução**.
 
-7. Na barra de menus, escolha **Compilar** > **Recompilar Solução**.
+7. Na barra de menu, escolha **Build** > **Rebuild Solution**.
 
 ## <a name="skipped-projects"></a>Projetos ignorados
 
-Os projetos podem ser ignorados durante a compilação porque eles não estão atualizados ou porque são excluídos da configuração. O Visual Studio usa o MSBuild para compilar seus projetos. O MSBuild cria um destino somente se a saída for mais antiga que a entrada, conforme determinado pelos carimbos de data/hora do arquivo. Para forçar uma recompilação, use o comando **Build** > **Rebuild solução**.
+Os projetos podem ser ignorados durante a construção porque não estão atualizados ou porque estão excluídos da configuração. O Visual Studio usa o MSBuild para construir seus projetos. O MSBuild só constrói um destino se a saída for mais antiga que a entrada, conforme determinado pelos carimbos de tempo do arquivo. Para forçar uma reconstrução, use o comando **Build** > **Rebuild Solution**.
 
-No painel **Build** da janela de **saída** , o Visual Studio relata o número de projetos que estavam atualizados, o número que foi criado com êxito, o número que falhou e o número que foram ignorados. A contagem ignorada não inclui projetos que não foram criados porque estavam atualizados. Quando os projetos são excluídos da configuração ativa, eles são ignorados durante a compilação. Na saída da compilação, você verá uma mensagem indicando que o projeto foi ignorado:
+No painel **Build** da janela **Saída,** o Visual Studio relata o número de projetos que estavam atualizados, o número que construiu com sucesso, o número que falhou e o número que foram ignorados. A contagem ignorada não inclui projetos que não foram construídos por estarem atualizados. Quando os projetos são excluídos da configuração ativa, eles são ignorados durante a compilação. Na saída de compilação, você vê uma mensagem indicando que o projeto está ignorado:
 
 ```output
 2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
 2>Project not selected to build for this solution configuration
 ```
 
-Para descobrir por que um projeto foi ignorado, observe a configuração ativa (`Debug x86` no exemplo anterior) e escolha **criar** > **Configuration Manager**. Você pode exibir ou alterar quais projetos são ignorados para cada configuração, conforme discutido neste artigo.
+Para descobrir por que um projeto foi ignorado, observe a configuração ativa`Debug x86` (no exemplo anterior) e escolha **Build** > Configuration**Manager**. Você pode visualizar ou alterar quais projetos são ignorados para cada configuração, conforme discutido neste artigo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
 - [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
-- [Como criar várias configurações simultaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Como: Construir várias configurações simultaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

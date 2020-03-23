@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112543"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para terem plataformas como destino
 
-O Visual Studio permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no Visual Studio, consulte [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps).
+O Visual Studio permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no Visual Studio, consulte [aplicativos de 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Plataformas de destino com o Gerenciador de Configurações
 
@@ -35,13 +35,13 @@ O **Configuration Manager** oferece uma maneira de adicionar rapidamente uma nov
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Para configurar um projeto para ter uma plataforma de 64 bits como destino
 
-1. Na barra de menus, escolha **Build** > **Gerenciador de Configurações**.
+1. Na barra de menu, escolha **Build** > **Configuration Manager**.
 
 2. Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.
 
-    1. Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.
+    1. Se a plataforma desejada não aparecer na lista **de plataformas de solução Ativa,** escolha **Novo**.
 
-         A caixa de diálogo **Nova Plataforma da Solução** será exibida.
+         A caixa de diálogo **Nova plataforma de solução** é exibida.
 
     2. Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.
 
@@ -56,7 +56,7 @@ As propriedades de todos os projetos que têm a plataforma de 64 bits como desti
 
 O **Designer de Projeto** também permite definir diferentes plataformas como destino para seu projeto. Se selecionar uma das plataformas incluídas na lista na caixa de diálogo **Nova Plataforma de Solução** não funcionar para sua solução, você poderá criar um nome de configuração personalizado e modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.
 
-A execução dessa tarefa varia de acordo com a linguagem de programação que você está usando. Consulte os links a seguir para obter mais informações:
+A execução dessa tarefa varia de acordo com a linguagem de programação que você está usando. Para obter mais informações, consulte os links a seguir:
 
 - Para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], consulte [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
@@ -68,7 +68,7 @@ A execução dessa tarefa varia de acordo com a linguagem de programação que v
 
 Às vezes, você precisa editar manualmente o arquivo de projeto para algumas configurações personalizadas. Um exemplo disso é quando existem condições que não podem ser especificadas no IDE, como uma referência que é diferente para duas plataformas distintas, conforme o exemplo a seguir.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemplo: Referenciando assemblies e DLLs x86 e x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemplo: Referenciando conjuntos x86 e x64 e DLLs
 
 Você pode ter um assembly ou uma DLL .NET com as versões x86 e x64. Para configurar o projeto para usar essas referências, primeiro adicione a referência e, em seguida, abra o arquivo de projeto e edite-o para adicionar um `ItemGroup` com uma condição que referencie a configuração e a plataforma de destino.  Por exemplo, suponha que o binário que você está referenciando seja o ClassLibrary1 e que haja caminhos diferentes para as Configurações de Depuração e Versão, bem como para as versões x86 e x64.  Em seguida, use quatro elementos `ItemGroup` com todas as combinações de configurações, da seguinte maneira:
 
@@ -114,10 +114,10 @@ Você pode ter um assembly ou uma DLL .NET com as versões x86 e x64. Para confi
 
 Para obter mais informações sobre o arquivo de projeto, confira [Referência de esquema do arquivo de projeto do MSBuild](../msbuild/msbuild-project-file-schema-reference.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Compreender plataformas de build](../ide/understanding-build-platforms.md)
 - [/platform (opções do compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps)
 - [Suporte ao IDE do Visual Studio de 64 bits](../ide/visual-studio-ide-64-bit-support.md)
-- [Noções básicas sobre o arquivo de projeto](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
+- [Entendendo o arquivo do projeto](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

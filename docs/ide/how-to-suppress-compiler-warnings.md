@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114501"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Como suprimir avisos do compilador
 
-Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para saber mais sobre detalhamento, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
+Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, você pode querer rever apenas algumas das saídas geradas quando você define a verbosidade do registro de compilação como **normal,** **detalhada**ou **diagnóstica.** Para saber mais sobre detalhamento, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir avisos específicos para o Visual C# ou F\#
 
@@ -25,21 +25,21 @@ Use a página de propriedades **Build** para suprimir avisos específicos para p
 
 1. No **Gerenciador de Soluções**, escolha o projeto no qual você deseja suprimir avisos.
 
-1. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
+1. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
 
 1. Escolha a página **Build**.
 
 1. Na caixa **Suprimir avisos**, especifique os códigos de erro dos avisos que você quer suprimir, separados por ponto e vírgula.
 
-1. Recompile a solução.
+1. Recriar a solução.
 
-## <a name="suppress-specific-warnings-for-c"></a>Suprimir avisos específicos paraC++
+## <a name="suppress-specific-warnings-for-c"></a>Suprimir avisos específicos para C++
 
 Use a página **Propriedades da Configuração** para suprimir avisos específicos para projetos em C++.
 
 1. No **Gerenciador de Soluções**, escolha o projeto ou arquivo de origem no qual deseja suprimir avisos.
 
-1. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
+1. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
 
 1. Escolha a categoria **Propriedades de Configuração**, escolha a categoria **C++** e escolha a página **Avançado**.
 
@@ -87,7 +87,7 @@ Este exemplo mostra como editar o arquivo *.vbproj* para suprimir avisos especí
     ```
 
    > [!NOTE]
-   > Projetos em .NET Core não contêm grupos de propriedades de configuração de build por padrão. Para suprimir avisos em um projeto em .NET Core, adicione a seção de configuração de build ao arquivo manualmente. Por exemplo:
+   > Projetos em .NET Core não contêm grupos de propriedades de configuração de build por padrão. Para suprimir avisos em um projeto em .NET Core, adicione a seção de configuração de build ao arquivo manualmente. Por exemplo: 
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -106,7 +106,7 @@ Este exemplo mostra como editar o arquivo *.vbproj* para suprimir avisos especí
 
 1. Na barra de menus, escolha **Projeto** > **Recarregar Projeto**.
 
-1. Na barra de menus, escolha **Compilar** > **Recompilar Solução**.
+1. Na barra de menu, escolha **Build** > **Rebuild Solution**.
 
     A janela **Saída** não mostra mais os avisos especificados.
 
@@ -130,8 +130,8 @@ Em alguns casos, convém suprimir avisos do compilador NuGet para um único paco
 
    O aviso desaparece do **Gerenciador de Soluções** e da **Lista de Erros**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
 - [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)

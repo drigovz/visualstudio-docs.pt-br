@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114472"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como exibir, salvar e configurar arquivos de log de build
@@ -22,7 +22,7 @@ Depois de compilar um projeto no Visual Studio IDE, é possível exibir informa�
 
 - Para projetos C++, também é possível exibir as mesmas informações em um arquivo *.txt* criado e salvo automaticamente. 
 
-- Para projetos de código gerenciado, clique na janela de saída de build e pressione **Ctrl**+**S**. O Visual Studio solicitará um local para salvar as informações da janela de **Saída** em um arquivo *.txt*. 
+- Para projetos de código gerenciados, você pode clicar na janela de saída de compilação e pressionar **Ctrl**+**S**. O Visual Studio solicitará um local para salvar as informações da janela de **Saída** em um arquivo *.txt*. 
 
 Também é possível usar o IDE para especificar que tipos de informações você deseja exibir sobre cada build.
 
@@ -34,7 +34,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para criar um arquivo de log de build para um projeto de código gerenciado
 
-1. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
+1. Na barra de menu, escolha **Build** > **Build Solution**.
 
 2. Na janela de **Saída**, clique em algum lugar no texto.
 
@@ -46,7 +46,7 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para alterar a quantidade de informações incluídas no log de build
 
-1. Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Opções de** > **ferramentas**.
 
 2. Na página **Projetos e Soluções**, escolha a página **Compilar e Executar**.
 
@@ -54,11 +54,11 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
     |Nível de detalhes|Descrição|
     | - |-----------------|
-    |**Silencioso**|Exibe apenas um resumo do build.|
-    |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
+    |**Tranquila**|Exibe apenas um resumo do build.|
+    |**Mínimo**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
     |**Normal**|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; e as principais etapas do build. Use esse nível de detalhes com mais frequência.|
-    |**Detalhado**|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; todas as etapas do build; e as mensagens categorizadas com base na importância normal.|
-    |**Diagnóstico**|Exibe todos os dados disponíveis para o build. É possível usar este nível de detalhes para ajudar a depurar problemas com scripts de build personalizados e outros problemas de build.|
+    |**Detalhadas**|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; todas as etapas do build; e as mensagens categorizadas com base na importância normal.|
+    |**Diagnostic**|Exibe todos os dados disponíveis para o build. É possível usar este nível de detalhes para ajudar a depurar problemas com scripts de build personalizados e outros problemas de build.|
 
      Para obter mais informações, consulte [Caixa de diálogo Opções, Projetos e Soluções, Criar e Executar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
@@ -67,9 +67,9 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Usar logs binários para facilitar a navegação em arquivos de log grandes
 
-Logs binários são um recurso opcional para projetos do .NET que proporcionam uma experiência de navegação de log mais rica que pode facilitar a localização de informações em logs grandes. Para usar logs binários, instale as [Ferramentas do Sistema para Projetos](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Saiba mais em [https://msbuildlog.com](https://msbuildlog.com) e [Log binário](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+Logs binários são um recurso opcional para projetos do .NET que proporcionam uma experiência de navegação de log mais rica que pode facilitar a localização de informações em logs grandes. Para usar logs binários, instale as [Ferramentas do Sistema para Projetos](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Para obter mais [https://msbuildlog.com](https://msbuildlog.com) informações, consulte e [Registro Binário](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)

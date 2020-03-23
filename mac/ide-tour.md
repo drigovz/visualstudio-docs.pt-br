@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405826"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
@@ -18,13 +18,13 @@ ms.locfileid: "75405826"
 O Visual Studio para Mac é um _ambiente de desenvolvimento integrado_ do .NET no Mac que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Além de recursos esperados, tais como o editor e o depurador padrão, o Visual Studio para Mac inclui compiladores, ferramentas de preenchimento de código, designers gráficos e controle do código-fonte para facilitar o processo de desenvolvimento de software.
 
 O Visual Studio para Mac dá suporte a muitos dos mesmos tipos de arquivo que seu equivalente do Windows, tais como arquivos `.csproj`, `.fsproj`, ou `.sln`. Ele também dá suporte a recursos como EditorConfig, o que significa que você pode usar o IDE que melhor funciona para você.
-Criar, abrir e desenvolver um aplicativo será uma experiência familiar para qualquer pessoa que já tenha usado o Visual Studio no Windows. Além disso, o Visual Studio para Mac emprega muitas das ferramentas avançadas que fazem do seu equivalente no Windows um IDE tão avançado. A Roslyn Compiler Platform é usada para refatoração e IntelliSense. Seu sistema de projeto e o mecanismo de compilação usam o MSBuild, e seu editor de origem usa a mesma base do Visual Studio no Windows. Ele usa os mesmos mecanismos de depuração para aplicativos Xamarin e .NET Core, e os mesmos designers para Xamarin.iOS e Xamarin.Android.
+Criar, abrir e desenvolver um aplicativo será uma experiência familiar para qualquer pessoa que já tenha usado o Visual Studio no Windows. Além disso, o Visual Studio para Mac emprega muitas das ferramentas avançadas que fazem do seu equivalente no Windows um IDE tão avançado. A Roslyn Compiler Platform é usada para refatoração e IntelliSense. Seu sistema de projeto e o mecanismo de construção usam o MSBuild, e seu editor de origem usa a mesma base que o Visual Studio no Windows. Ele usa os mesmos mecanismos de depuração para aplicativos Xamarin e .NET Core, e os mesmos designers para Xamarin.iOS e Xamarin.Android.
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>O que posso fazer no Visual Studio para Mac
 
 O Visual Studio para Mac é compatível com os seguintes tipos de desenvolvimento:
 
-- ASP.NET Core aplicativos Web com C#o F#, o e o suporte para páginas Razor, JavaScript e TypeScript
+- ASP.NET aplicativos web Core com C#, F#e suporte para páginas Razor, JavaScript e TypeScript
 - Aplicativo de console .NET Core com C# ou F#
 - Jogos do Unity multiplataforma e aplicativos com C#
 - Aplicativos Android, iOS, tvOS e watchOS no Xamarin com o C# ou F# e XAML
@@ -38,11 +38,11 @@ O Visual Studio para Mac está organizado em várias seções para gerenciar con
 
 ## <a name="getting-started"></a>Introdução
 
-Ao iniciar o Visual Studio 2019 para Mac, os novos usuários verão uma janela de entrada. Entre com sua conta Microsoft para ativar uma licença paga (se tiver uma) ou um link para assinaturas do Azure. Você pode pressionar para **fazer isso mais tarde** e entrar mais tarde por meio do item de menu **> entrar no Visual Studio** :
+Ao iniciar o Visual Studio 2019 para Mac, os novos usuários verão uma janela de entrada. Entre com sua conta Microsoft para ativar uma licença paga (se tiver uma) ou um link para assinaturas do Azure. Você pode pressionar **Eu vou fazer isso mais tarde** e fazer login mais tarde através do Visual Studio > Assinar **no** item do menu:
 
-![Entrar com sua conta Microsoft](media/ide-tour-2019-start-signin.png)
+![Entre na sua conta da Microsoft](media/ide-tour-2019-start-signin.png)
 
-Em seguida, você terá a opção de personalizar o IDE selecionando seus atalhos de teclado preferenciais: Visual Studio para Mac, Visual Studio, Visual Studio Code ou Xcode:
+Em seguida, você terá a opção de personalizar o IDE selecionando seus atalhos de teclado preferidos: Visual Studio para Mac, Visual Studio, Visual Studio Code ou Xcode:
 
 ![Selecione seus atalhos de teclado favoritos](media/ide-tour-2019-keyboard-shortcut.png)
 
@@ -94,26 +94,26 @@ As informações sobre como usar um pacote do NuGet em um aplicativo podem ser e
 
 ## <a name="source-editor"></a>Editor de Código-fonte
 
-Independentemente de se você estiver escrevendo C#, XAML ou JavaScript, o editor de código compartilhará os mesmos componentes principais com o Windows do Visual Studio, com uma interface de usuário totalmente nativa.
+Independentemente de se você estiver escrevendo em C#, XAML ou Javascript, o editor de código compartilha os mesmos componentes principais com o Visual Studio Windows, com uma interface de usuário totalmente nativa.
 
-Isso traz alguns dos seguintes recursos:
+Isso traz algumas das seguintes características:
 
 * Interface do usuário macOS (baseada em Cocoa) nativa (dicas de ferramenta, superfície do editor, adornos de margem, renderização de texto, IntelliSense)
-* Filtragem de tipos IntelliSense e "Mostrar itens de importação"
+* Filtragem do tipo IntelliSense e "mostrar itens de importação"
 * Suporte para entradas de texto nativas
 * Suporte à linguagem RTL/BiDi
 * Roslyn 3
 * Suporte a vários cursores
 * Quebra automática de linha
-* IU do IntelliSense atualizada
-* Localizar/substituir aprimorado
-* Suporte a trecho 
+* IU IntelliSense atualizada
+* Melhor encontrar/substituir
+* Suporte a snippet 
 * Formatar seleção
-* Lâmpadas embutidas
+* Lâmpadas inline
 
-Para obter mais informações sobre como usar o editor de origem no Visual Studio para Mac, consulte a documentação do [Editor de origem](/visualstudio/mac/source-editor) .
+Para obter mais informações sobre como usar o Editor de Origem no Visual Studio para Mac, consulte a documentação do [Editor de](/visualstudio/mac/source-editor) Origem.
 
-Para manter as guias visíveis o tempo todo, você pode aproveitar a fixação delas. Isso garante que sempre que você iniciar um projeto, a guia necessária sempre será exibida. Para fixar uma guia, passe o mouse sobre a guia e clique no ícone de _pino_ :
+Para manter as abas visíveis o tempo todo, você pode aproveitar para fixá-los. Isso garante que toda vez que você lançar um projeto, a guia que você precisa sempre aparecerá. Para fixar uma guia, passar o mouse sobre a guia e clicar no ícone do _pino:_
 
 ![Fixando uma guia](media/ide-tour-tabpin.png)
 
@@ -121,11 +121,11 @@ Para manter as guias visíveis o tempo todo, você pode aproveitar a fixação d
 
 O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: ações de contexto e análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+## <a name="debugging"></a>Depuração
 
-Visual Studio para Mac tem depuradores que dão suporte a projetos .NET Core, .NET Framework, Unity e Xamarin. Visual Studio para Mac usa o depurador do .NET Core e o depurador soft mono, permitindo que o IDE depure o código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
+O Visual Studio for Mac possui depuradores que suportam projetos .NET Core, .NET Framework, Unity e Xamarin. O Visual Studio for Mac usa o depurador .NET Core e o Mono Soft Debugger, permitindo que o IDE depura código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
 
-O depurador contém visualizadores avançados para tipos especiais, como cadeias de caracteres, cores, URLs, bem como tamanhos, coordenadas e curvas Bézier.
+O depurador contém visualizadores ricos para tipos especiais, como cordas, cores, URLs, bem como tamanhos, coordenadas e curvas bézier.
 
 Para saber mais sobre visualizações de dados do depurador, visite o artigo [Visualizações de dados](/visualstudio/mac/data-visualizations).
 
@@ -141,15 +141,15 @@ Os arquivos com alterações não confirmadas têm uma anotação em seus ícone
 
 Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](/visualstudio/mac/version-control).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
-- [Instalar o Visual Studio para Mac](installation.md)
-- [Examine as cargas de trabalho disponíveis](workloads.md)
+- [Instale o Visual Studio para Mac](installation.md)
+- [Examinar as cargas de trabalho disponíveis](workloads.md)
 
 ## <a name="related-video"></a>Vídeo relacionados
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [IDE do Visual Studio (no Windows)](/visualstudio/ide/visual-studio-ide)

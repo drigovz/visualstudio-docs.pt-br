@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634156"
 ---
 # <a name="how-to-build-incrementally"></a>Como criar de forma incremental
 
-Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar compilações incrementais (compilações nas quais somente os destinos que não foram criados antes ou os destinos que estão desatualizados, são recriados), o Microsoft Build Engine (MSBuild) pode comparar os carimbos de data/hora dos arquivos de entrada com os carimbos de data/hora dos arquivos de saída e Determine se é para ignorar, compilar ou recompilar parcialmente um destino. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).
+Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar compilações incrementais (compilações nas quais apenas os alvos que não foram construídos antes ou alvos que estão desatualizados, são reconstruídos), o Microsoft Build Engine (MSBuild) pode comparar os carimbos de tempo dos arquivos de entrada com os carimbos de tempo dos arquivos de saída e determinar se deve pular, construir ou reconstruir parcialmente um alvo. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Especificar entradas e saídas
 
@@ -29,7 +29,7 @@ Um destino pode ser criado incrementalmente se as entradas e saídas forem espec
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Para especificar as entradas e saídas para um destino
 
-- Use os atributos `Inputs` e `Outputs` do elemento `Target`. Por exemplo:
+- Use os atributos `Inputs` e `Outputs` do elemento `Target`. Por exemplo: 
 
   ```xml
   <Target Name="Build"
@@ -37,7 +37,7 @@ Um destino pode ser criado incrementalmente se as entradas e saídas forem espec
       Outputs="hello.exe">
   ```
 
-O MSBuild pode comparar os carimbos de data/hora dos arquivos de entrada com os carimbos de data/hora dos arquivos de saída e determinar se deve ignorar, compilar ou recompilar parcialmente um destino. No exemplo a seguir, se algum arquivo na lista `@(CSFile)` item for mais novo do que o arquivo *Hello. exe* , o MSBuild executará o destino; caso contrário, ele será ignorado:
+O MSBuild pode comparar os carimbos de tempo dos arquivos de entrada com os carimbos de tempo dos arquivos de saída e determinar se pula, constrói ou reconstrói parcialmente um alvo. No exemplo a seguir, se `@(CSFile)` qualquer arquivo na lista de itens for mais novo que o arquivo *hello.exe,* o MSBuild executará o destino; caso contrário, será ignorado:
 
 ```xml
 <Target Name="Build"
@@ -50,10 +50,10 @@ O MSBuild pode comparar os carimbos de data/hora dos arquivos de entrada com os 
 </Target>
 ```
 
-Quando entradas e saídas são especificadas em um destino, cada saída pode mapear para apenas uma entrada ou não pode haver nenhum mapeamento direto entre as saídas e entradas. Na [tarefa Csc](../msbuild/csc-task.md) anterior, por exemplo, a saída, *hello.exe*, não pode ser mapeada para uma única entrada – ela depende de todas elas.
+Quando entradas e saídas são especificadas em um destino, cada saída pode mapear para apenas uma entrada ou não pode haver nenhum mapeamento direto entre as saídas e entradas. Na [tarefa CSC](../msbuild/csc-task.md)anterior , por exemplo, a saída, *hello.exe*, não pode ser mapeada para qualquer entrada única - depende de todos eles.
 
 > [!NOTE]
-> Um destino no qual não há mapeamento direto entre as entradas e saídas sempre será criado com mais frequência do que um destino no qual cada saída pode mapear para apenas uma entrada, pois o MSBuild não pode determinar quais saídas precisam ser recriadas se algumas das entradas forem alteradas.
+> Um alvo no qual não há mapeamento direto entre as entradas e saídas sempre será construído com mais freqüência do que um destino no qual cada saída pode mapear para apenas uma entrada, porque o MSBuild não pode determinar quais saídas precisam ser reconstruídas se algumas das entradas tiverem sido alteradas.
 
 As tarefas nas quais você pode identificar um mapeamento direto entre as saídas e entradas, como a [tarefa LC](../msbuild/lc-task.md), são mais adequadas para builds incrementais, ao contrário de tarefas como [Csc](../msbuild/csc-task.md) e [Vbc](../msbuild/vbc-task.md), que produzem um assembly de saída de diversas entradas.
 
@@ -70,7 +70,7 @@ O projeto usa transformações para criar um mapeamento de um para um entre entr
 Este arquivo de projeto contém os destinos `Convert` e `Build`. As tarefas `GenerateContentFiles` e `BuildHelp` são colocadas nos destinos `Convert` e `Build`, respectivamente, para que cada destino possa ser compilado de forma incremental. Ao usar o elemento `Output`, as saídas da tarefa `GenerateContentFiles` são colocadas na lista de itens de `ContentFile`, na qual elas podem ser usadas como entradas para a tarefa `BuildHelp`. Usar o elemento `Output` dessa maneira fornece automaticamente as saídas de uma tarefa como entradas para outra tarefa para que você não precise listar os itens individuais ou listas de itens manualmente em cada tarefa.
 
 > [!NOTE]
-> Embora o destino `GenerateContentFiles` possa ser compilado incrementalmente, todas as saídas desse destino sempre serão necessárias como entradas para o destino `BuildHelp`. O MSBuild fornece automaticamente todas as saídas de um destino como entradas para outro destino quando você usa o elemento `Output`.
+> Embora o destino `GenerateContentFiles` possa ser compilado incrementalmente, todas as saídas desse destino sempre serão necessárias como entradas para o destino `BuildHelp`. O MSBuild fornece automaticamente todas as saídas de um alvo `Output` como entradas para outro alvo quando você usa o elemento.
 
 ```xml
 <Project DefaultTargets="Build"
@@ -107,7 +107,7 @@ Este arquivo de projeto contém os destinos `Convert` e `Build`. As tarefas `Gen
 ## <a name="see-also"></a>Confira também
 
 - [Destinos](../msbuild/msbuild-targets.md)
-- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Elemento-alvo (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Transformações](../msbuild/msbuild-transforms.md)
-- [Tarefa Csc](../msbuild/csc-task.md)
-- [Tarefa Vbc](../msbuild/vbc-task.md)
+- [Tarefa csc](../msbuild/csc-task.md)
+- [Tarefa VBC](../msbuild/vbc-task.md)

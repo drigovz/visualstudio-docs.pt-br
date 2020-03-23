@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590391"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Criar e exibir classes e tipos com o Designer de Classe
 
-Crie, visualize e refatore classes e outros tipos no código com o **Designer de Classe** no Visual Studio. Use diagramas de classe para criar e editar classes em seu projeto C#, Visual Basic ou C++. Você também pode usar diagramas de classe para entender melhor a estrutura do projeto ou reorganizar o código.
+Design, visualize e refatorie classes e outros tipos em seu código com **Class Designer** no Visual Studio. Use diagramas de classe para criar e editar classes em seu projeto C#, Visual Basic ou C++. Você também pode usar diagramas de classe para entender melhor a estrutura do projeto ou reorganizar o código.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>O que você pode fazer com diagramas de classe
 
@@ -55,7 +55,7 @@ Depois de ajustar um ou mais diagramas de classe, copie-os em documentos do Micr
 > [!NOTE]
 > O Designer de Classe não controla o local dos arquivos de origem, por isso quando você altera a estrutura do projeto ou move os arquivos de origem no projeto, o Designer de Classe pode perder o controle do tipo, especialmente o tipo de origem de um typedef, classes base ou tipos de associação. Você pode receber um erro, como **O Designer de Classe não pode exibir esse tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Recursos do Editor de Códigos](../writing-code-in-the-code-and-text-editor.md)
+- [Recursos do editor de código](../writing-code-in-the-code-and-text-editor.md)
 - [Mapear as dependências nas soluções](../../modeling/map-dependencies-across-your-solutions.md)

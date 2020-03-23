@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593324"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
 
 Importar um namespace permite que você use elementos deste namespace em seu código sem qualificar totalmente o elemento. Por exemplo, se quiser acessar o método `Create` na classe `System.Messaging.MessageQueue`, você pode importar o namespace `System.Messaging` e apenas se referir ao elemento necessário em código como `MessageQueue.Create`.
 
-Namespaces importados são gerenciados na página **Referências** do **Designer de Projeto**. As importações que você especificar na caixa de diálogo são passadas diretamente ao compilador ( */imports*) e se aplicam a todos os arquivos em seu projeto. Use a demonstrativo `Imports` para utilizar um namespace em um arquivo de código-fonte único.
+Namespaces importados são gerenciados na página **Referências** do **Designer de Projeto**. As importações que você especificar na caixa de diálogo são passadas diretamente ao compilador (*/imports*) e se aplicam a todos os arquivos em seu projeto. Use a demonstrativo `Imports` para utilizar um namespace em um arquivo de código-fonte único.
 
 ### <a name="to-add-an-imported-namespace"></a>Para adicionar um namespace importado
 
@@ -36,7 +36,7 @@ Namespaces importados são gerenciados na página **Referências** do **Designer
 3. Na lista **Namespaces Importados**, marque a caixa de seleção do namespace que você deseja adicionar.
 
     > [!NOTE]
-    > Para ser importado, o namespace deve estar em um componente referenciado. Se o namespace não aparecer na lista, você precisará adicionar uma referência ao componente que o contém. Para obter mais informações, consulte [Gerenciando referências em um projeto](managing-references-in-a-project.md).
+    > Para ser importado, o namespace deve estar em um componente referenciado. Se o namespace não aparecer na lista, você precisará adicionar uma referência ao componente que o contém. Para obter mais informações, consulte [Gerenciar referências em um projeto](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Para remover um namespace importado
 
@@ -76,6 +76,6 @@ Se posteriormente mudar de ideia e decidir que realmente precisava da classe `Ev
 
 5. Clique no botão **Adicionar importação de usuário** para atualizar o namespace na lista **Namespaces importados**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)

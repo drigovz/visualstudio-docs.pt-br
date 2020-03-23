@@ -19,31 +19,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633597"
 ---
 # <a name="lc-task"></a>tarefa LC
 
-Encapsula *LC.exe*, que gera um arquivo *.license* com base em um arquivo *.licx*. Para obter mais informações sobre *LC.exe*, confira [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).
+Envolve *LC.exe,* que gera um arquivo *.license* de um arquivo *.licx.* Para obter mais informações sobre *LC.exe,* consulte [Lc.exe (Compilor de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `LC`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
-|`LicenseTarget`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o executável para o qual os arquivos *.licenses* são gerados.|
+|`LicenseTarget`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o executável para o qual os arquivos *.licenses são gerados.*|
 |`NoLogo`|Parâmetro `Boolean` opcional.<br /><br /> Suprime a exibição do banner de inicialização da Microsoft.|
-|`OutputDirectory`|Parâmetro `String` opcional.<br /><br /> Especifica o diretório no qual colocar os arquivos *.licenses* de saída.|
-|`OutputLicense`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo *.licenses*. Se você não especificar um nome, o nome do arquivo *.licx* será usado e o arquivo *.licenses* será colocado no diretório que contém o arquivo *.licx*.|
-|`ReferencedAssemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os componentes referenciados a serem carregados ao gerar o arquivo *.license*.|
-|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o SDK Tools, como *resgen.exe*.|
-|`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens que contêm os componentes licenciados a serem incluídos no arquivo *.licenses*. Para obter mais informações, consulte a documentação da opção `/complist` em [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).|
+|`OutputDirectory`|Parâmetro `String` opcional.<br /><br /> Especifica o diretório no qual colocar os arquivos de saída *.licenças.*|
+|`OutputLicense`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo *.licenses.* Se você não especificar um nome, o nome do arquivo *.licx* será usado e o arquivo *.licenses* será colocado no diretório que contém o arquivo *.licx.*|
+|`ReferencedAssemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os componentes referenciados a serem carregados ao gerar o arquivo *.license.*|
+|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas SDK, como *resgen.exe*.|
+|`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens que contêm componentes licenciados para incluir no arquivo *.licenses.* Para obter mais informações, consulte a documentação da opção `/complist` em [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
 

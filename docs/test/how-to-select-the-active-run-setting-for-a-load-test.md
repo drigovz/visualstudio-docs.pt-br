@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588974"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
@@ -24,7 +24,7 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 Um teste de carga pode conter uma ou mais *configurações de execução*, que são um conjunto de propriedades que influenciam como um teste de carga é executado. As configurações de execução são organizadas por categorias na janela **Propriedades**. Quando é executado, um teste de carga usa a configuração de execução definida como ativa no momento.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
+> Para obter uma lista completa das propriedades de configurações de execução e suas descrições, consulte [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
 Se o teste de carga contiver apenas um nó de configuração de execução na pasta **Configurações de Execução**, esse nó sempre será o nó ativo. Se o teste de carga contiver vários nós de configurações de execução, você poderá selecionar um para usar ao executar um teste de carga. Consulte [Como adicionar configurações de execução adicionais a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
@@ -55,8 +55,8 @@ E para executar o teste:
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Como adicionar mais configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Como: Adicionar configurações adicionais de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)

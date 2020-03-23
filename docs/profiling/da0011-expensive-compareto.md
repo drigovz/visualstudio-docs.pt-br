@@ -15,24 +15,24 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779422"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: função CompareTo dispendiosa
 
 |||
 |-|-|
-|Id da Regra|DA0011|
+|ID de regra|DA0011|
 |Categoria|Uso do .NET Framework|
-|Métodos de criação de perfil|Amostragem<br /><br /> Memória do .NET|
+|Métodos de criação de perfil|amostragem<br /><br /> Memória do .NET|
 |Mensagem|As funções de CompareTo devem ser baratas e podem não alocar nenhuma memória. Reduza a complexidade da função CompareTo se possível.|
 |Tipo de regra|Aviso|
 
 ## <a name="cause"></a>Causa
- O método CompareTo do tipo é dispendioso ou o aloca memória.
+ O método CompareTo de tipo é dispendioso ou aloca memória.
 
 ## <a name="rule-description"></a>Descrição da regra
  Os métodos do CompareTo devem ser eficientes e não devem alocar memória.

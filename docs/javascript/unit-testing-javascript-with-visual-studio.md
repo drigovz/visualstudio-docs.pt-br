@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071941"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
@@ -70,7 +70,7 @@ Se você não definiu as opções de teste de unidade nas propriedades do projet
 > [!Note]
 > As opções de teste de unidade terão preferência em relação às configurações de arquivos individuais.
 
-Depois de abrir o Gerenciador de Testes (escolha **Teste** > **Windows** > **Gerenciador de Testes**), o Visual Studio detecta e exibe os testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
+Após abrir o Test Explorer (escolha **Test** > **Windows** > **Test Explorer),** o Visual Studio descobre e exibe testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
 
 ![Gerenciador de Testes](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -91,7 +91,7 @@ Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. O
 > [!NOTE]
 > No momento, não damos suporte à criação de perfil de testes nem à cobertura de código.
 
-### <a name="run-tests-from-the-command-line"></a>Executar testes na linha de comando
+### <a name="run-tests-from-the-command-line"></a>Executar testes da linha de comando
 
 Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) do Visual Studio 2017 usando o seguinte comando:
 
@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Se você receber um erro indicando que o *vstest.console.exe* não pode ser encontrado, verifique se você abriu o Prompt de Comando do Desenvolvedor e não um prompt de comando comum.
 
-## <a name="addingFramework"></a>Adicionar suporte para uma estrutura de teste de unidade
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Adicionar suporte para uma estrutura de teste de unidade
 
 Adicione suporte para estruturas de teste adicionais implementando a lógica de descoberta e execução usando o JavaScript. Faça isso adicionando uma pasta com o nome da estrutura de teste em:
 
@@ -174,4 +174,4 @@ Além das propriedades acima, também será necessário instalar o pacote [Micro
 </PropertyGroup>
 ```
 
-Algumas estruturas de teste podem exigir pacotes NPM adicionais para detecção de teste. Por exemplo, Jest requer o pacote Jest-editor-support NPM. Se necessário, verifique a documentação da estrutura específica.
+Algumas estruturas de teste podem exigir pacotes npm adicionais para detecção de teste. Por exemplo, a brincadeira requer o pacote npm de suporte ao editor-jest. Se necessário, verifique a documentação para o quadro específico.

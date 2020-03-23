@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278803"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solucionar problemas e criar logs para problemas do MSBuild
@@ -116,7 +116,7 @@ Um arquivo Msbuild.binlog será criado no diretório que você executou o MSBuil
 
 ## <a name="create-a-detailed-log"></a>Criar um log detalhado
 
-1. No menu principal do Visual Studio, acesse **Ferramentas** > **Opções** > **Projetos e soluções** >**Compilar e executar**.
+1. No menu principal do Visual Studio, vá para **Tools** > **Options** > **Projects and Solutions** >**Build and Run**.
 1. Configure o **Detalhamento de compilação do projeto Msbuild** como **Detalhado** nas duas caixas de combinação. O primeiro controla o detalhamento do build na **Janela de Saída** e o segundo controla o detalhamento do build no arquivo \<projectname\>.log que é criado no diretório intermediário de cada projeto durante o build.
 2. Em um prompt de comando do desenvolvedor do Visual Studio, digite um desses comandos, substituindo o caminho real e os valores de configuração:
 

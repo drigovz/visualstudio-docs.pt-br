@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568900"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementar uma classe abstrata no Visual Studio
@@ -43,7 +43,7 @@ Esta geração de código aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
       - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece.
@@ -67,7 +67,7 @@ Esta geração de código aplica-se a:
 
        ![Implementar o resultado da classe VB](media/abstract-result-vb.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Geração de código](../code-generation-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Geração de Código](../code-generation-in-visual-studio.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

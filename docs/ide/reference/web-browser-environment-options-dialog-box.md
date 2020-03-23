@@ -22,23 +22,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596496"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo opções: ambiente \> navegador da Web
+# <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo \> opções: Environment Web Browser
 
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Abrir determinados arquivos ou componentes da Web pode executar código no computador.
 
-## <a name="home-page"></a>Home page
+## <a name="home-page"></a>Página inicial
 
 Define a página exibida ao abrir o Navegador da Web do IDE.
 
@@ -52,7 +52,7 @@ Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte**
 
 - **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+- **Editor HTML** Selecione para visualizar a fonte no [designer HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
 
 - **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 
@@ -63,7 +63,7 @@ Clique para alterar as opções do Internet Explorer na caixa de diálogo **Prop
 > [!NOTE]
 > Use a caixa de diálogo **Procurar com** para substituir o navegador da Web interno do Visual Studio por um navegador à sua escolha. Você pode acessar a caixa de diálogo Procurar com ao clicar com o botão direito do mouse ou através do menu de contexto de um arquivo HTML em seu projeto, por exemplo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

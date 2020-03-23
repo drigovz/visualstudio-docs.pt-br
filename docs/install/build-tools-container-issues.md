@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77611131"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
@@ -54,7 +54,7 @@ Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramen
 
 * O IntelliTrace pode não funcionar em [alguns cenários](https://github.com/Microsoft/vstest/issues/940) dentro de um contêiner.
 * Em versões mais antigas do Docker for Windows, o tamanho da imagem de contêiner padrão é de apenas 20 GB e não cabe nas Ferramentas de Criação. Siga as [instruções para alterar o tamanho da imagem](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) para 127 GB ou mais.
-Para confirmar um problema de espaço em disco, verifique os arquivos de log para obter mais informações. O arquivo de `vslogs\dd_setup_<timestamp>_errors.log` incluirá o seguinte se você ficar sem espaço em disco: 
+Para confirmar um problema de espaço em disco, verifique os arquivos de registro para obter mais informações. Seu `vslogs\dd_setup_<timestamp>_errors.log` arquivo incluirá o seguinte se você ficar sem espaço em disco: 
 ```
 Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
 Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
@@ -63,6 +63,6 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 
 ## <a name="see-also"></a>Confira também
 
-* [Instalar ferramentas de compilação em um contêiner](build-tools-container.md)
+* [Instalar ferramentas de build em um contêiner](build-tools-container.md)
 * [Exemplo avançado para contêineres](advanced-build-tools-container.md)
 * [IDs de carga de trabalho e de componente das Ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md)

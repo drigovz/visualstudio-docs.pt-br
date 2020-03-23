@@ -1,5 +1,5 @@
 ---
-title: Elemento Task de UsingTask (MSBuild) | Microsoft Docs
+title: Elemento de tarefa do UsingTask (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263182"
 ---
-# <a name="task-element-of-usingtask-msbuild"></a>Elemento Task de UsingTask (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Elemento de tarefa do UsingTask (MSBuild)
 
-Contém os dados que são passados para um `TaskFactory`de `UsingTask`. Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para obter mais informações, consulte [O elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project > \<UsingTask > \<tarefa >
+ \<Projeto \<>> \<de tarefa seleio de> tarefa
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ Contém os dados que são passados para um `TaskFactory`de `UsingTask`. Para sab
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Evaluate`|Atributo booliano opcional.<br /><br /> Se `true`, MSBuild avalia todos os elementos internos e expande os itens e propriedades antes de transmitir as informações para o `TaskFactory`, quando a tarefa é instanciada.|
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
-|data|O texto entre as `Task` marcas é enviada textual para `TaskFactory`.|
+|Dados|O texto entre as `Task` marcas é enviada textual para `TaskFactory`.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornece uma maneira de registrar tarefas no MSBuild. Pode ser que não haja nenhum ou mais de um elemento `UsingTask` em um projeto. |
 
@@ -78,4 +78,4 @@ Contém os dados que são passados para um `TaskFactory`de `UsingTask`. Para sab
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

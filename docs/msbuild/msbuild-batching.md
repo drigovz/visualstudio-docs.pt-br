@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78aeef8ea651aac1fe2a780207474399f4bbcf09
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633428"
 ---
 # <a name="msbuild-batching"></a>Envio em lote do MSBuild
 
-O MSBuild tem a capacidade de dividir listas de itens em diferentes categorias, ou em lotes, com base nos metadados do item, e executar um destino ou uma tarefa uma vez com cada lote.
+O MSBuild tem a capacidade de dividir listas de itens em diferentes categorias ou lotes, com base em metadados de itens, e executar um destino ou tarefa uma vez com cada lote.
 
 ## <a name="task-batching"></a>Envio de tarefas em lote
 
 O lote de tarefas permite que você simplifique os arquivos de projeto ao fornecer uma maneira de dividir as listas de itens em lotes diferentes e passar cada um desses lotes para uma tarefa separadamente. Isso significa que um arquivo de projeto só precisa ter a tarefa e seus atributos declarados uma vez, mesmo que seja executado várias vezes.
 
-Você especifica que deseja que o MSBuild execute o envio em lote com uma tarefa usando a notação%(\<mymetadataname >) em um dos atributos da tarefa. O exemplo a seguir divide a lista de itens `Example` em lotes com base no valor do item de metadados `Color` e passa cada um dos lotes para a tarefa `MyTask` separadamente.
+Você especifica que deseja que o MSBuild execute o\<loteamento com uma tarefa usando a notação %(ItemMetaDataName>) em um dos atributos da tarefa. O exemplo a seguir divide a lista de itens `Example` em lotes com base no valor do item de metadados `Color` e passa cada um dos lotes para a tarefa `MyTask` separadamente.
 
 > [!NOTE]
 > Se você não referenciar a lista de itens em outro lugar nos atributos de tarefa ou se o nome dos metadados for ambíguo, use a notação %(\<ItemCollection.ItemMetaDataName>) para qualificar totalmente o valor do metadados de item a ser usado para o envio em lote.
@@ -57,9 +57,9 @@ Para obter exemplos mais específicos do envio em lote, confira [Metadados de it
 
 ## <a name="target-batching"></a>Envio em lote de destinos
 
-O MSBuild verifica se as entradas e saídas de um destino estão atualizadas antes de executar o destino. Se as entradas e saídas estiverem atualizadas, o destino será ignorado. Se uma tarefa dentro de um destino usar o envio em lote, o MSBuild precisará determinar se as entradas e saídas de cada lote de itens estão atualizadas. Caso contrário, o destino será executado sempre que for atingido.
+O MSBuild verifica se as entradas e saídas de um alvo estão atualizadas antes de executá-lo. Se as entradas e saídas estiverem atualizadas, o destino será ignorado. Se uma tarefa dentro de um destino usar o loteamento, o MSBuild precisa determinar se as entradas e saídas de cada lote de itens estão atualizadas. Caso contrário, o destino será executado sempre que for atingido.
 
-O exemplo a seguir mostra um elemento `Target` que contém um atributo `Outputs` com a notação %(\<ItemMetaDataName>). O MSBuild dividirá a lista de itens de `Example` em lotes com base nos metadados do item de `Color` e analisará os carimbos de data/hora dos arquivos de saída para cada lote. Se as saídas de um lote não estiverem atualizadas, o destino é executado. Caso contrário, o destino será ignorado.
+O exemplo a seguir mostra um elemento `Target` que contém um atributo `Outputs` com a notação %(\<ItemMetaDataName>). O MSBuild `Example` dividirá a lista de `Color` itens em lotes com base nos metadados do item e analisará os carimbos de tempo dos arquivos de saída de cada lote. Se as saídas de um lote não estiverem atualizadas, o destino é executado. Caso contrário, o destino será ignorado.
 
 ```xml
 <Project

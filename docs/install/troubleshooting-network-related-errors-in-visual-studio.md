@@ -18,13 +18,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114991"
 ---
-# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solucionar problemas relacionados a erros relacionados à rede quando você instala ou usa o Visual Studio
 
 Temos soluções para os erros mais comuns relacionadas à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio atrás de um firewall ou um servidor proxy.
 
@@ -69,7 +69,7 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
       Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Para obter mais informações, confira as páginas [Elemento &lt;defaultProxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [Elemento &lt;proxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Para obter mais informações, consulte as [ &lt;páginas&gt; 'Configurações de rede' padrão (Configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt;o elemento&gt; proxy (Configurações de rede).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
       Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Para obter mais informações, confira as páginas [Elemento &lt;defaultProxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [Elemento &lt;proxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Para obter mais informações, consulte as [ &lt;páginas&gt; 'Configurações de rede' padrão (Configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt;o elemento&gt; proxy (Configurações de rede).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
@@ -133,23 +133,23 @@ Habilite as conexões para as seguintes URLs:
   > [!NOTE]
   > As URLs de servidor NuGet privadas podem não estar incluídas nesta lista. Você pode verificar os servidores NuGet que estamos usando em %APPData%\Nuget\NuGet.Config.
 
-## <a name="error-failed-to-parse-id-from-parent-process"></a>Erro: "falha ao analisar a ID do processo pai"
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Erro: "Falha ao analisar o ID do processo pai"
 
-Você pode encontrar essa mensagem de erro ao usar um bootstrapper do Visual Studio e um arquivo Response. JSON em uma unidade de rede. A origem do erro é o controle de conta de usuário (UAC) no Windows.
+Você pode encontrar esta mensagem de erro quando usar um bootstrapper do Visual Studio e um arquivo response.json em uma unidade de rede. A fonte do erro é o Controle de Conta de Usuário (UAC) no Windows.
 
-Aqui está o motivo pelo qual esse erro pode ocorrer: uma unidade de rede mapeada ou um compartilhamento [UNC](/dotnet/standard/io/file-path-formats#unc-paths) está vinculado ao token de acesso do usuário. Quando o UAC está habilitado, dois [tokens de acesso](/windows/win32/secauthz/access-tokens) de usuário são criados: um *com* acesso de administrador e outro *sem* acesso de administrador. Quando uma unidade de rede ou compartilhamento é criado, o token de acesso atual do usuário é vinculado a ele. Como o bootstrapper deve ser executado como administrador, ele não poderá acessar a unidade de rede ou compartilhar se a unidade ou o compartilhamento não estiver vinculado a um token de acesso de usuário que tenha acesso de administrador.
+É por isso que esse erro pode acontecer: uma unidade de rede mapeada ou compartilhamento [DE UNC](/dotnet/standard/io/file-path-formats#unc-paths) está vinculado ao token de acesso de um usuário. Quando o UAC está ativado, dois [tokens de acesso do](/windows/win32/secauthz/access-tokens) usuário são criados: um *com* acesso ao administrador e outro *sem* acesso ao administrador. Quando uma unidade de rede ou compartilhamento é criado, o token de acesso atual do usuário é vinculado a ele. Como o bootstrapper deve ser executado como administrador, ele não poderá acessar a unidade de rede ou compartilhar se a unidade ou o compartilhamento não estiver vinculado a um token de acesso do usuário que tenha acesso ao administrador.
 
-### <a name="to-fix-this-error"></a>Para corrigir o erro
+### <a name="to-fix-this-error"></a>Para corrigir esse erro
 
-Você pode usar o comando `net use` ou pode alterar a configuração de Política de Grupo do UAC. Para obter mais informações sobre essas soluções alternativas e como implementá-las, consulte os seguintes artigos de suporte da Microsoft:
+Você pode `net use` usar o comando ou alterar a configuração de diretiva de grupo do UAC. Para obter mais informações sobre essas soluçãos e como implementá-las, consulte os seguintes artigos de suporte da Microsoft:
 
-* [Unidades mapeadas não estão disponíveis em um prompt com privilégios elevados quando o UAC está configurado para "solicitar credenciais" no Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
-* [Os programas podem não conseguir acessar alguns locais de rede depois de ativar o controle de conta de usuário em sistemas operacionais Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+* [As unidades mapeadas não estão disponíveis a partir de um prompt elevado quando o UAC está configurado para "Solicitar credenciais" no Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Os programas podem não conseguir acessar alguns locais da rede depois que você ativar o Controle da Conta de Usuário nos sistemas operacionais Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar e usar o Visual Studio atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Instalar o Visual Studio](install-visual-studio.md)
+* [Instalar e usar o Visual Studio por trás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Instale o Visual Studio](install-visual-studio.md)

@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568133"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opções, Editor de texto, XML, Formatação
 
-Use a página de opções de **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para acessar as opções de formatação de XML, escolha **Ferramentas** > **Opções** > **Editor de texto** > **XML** e, em seguida, escolha **Formatação**.
+Use a página de opções de **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para acessar as opções de formatação XML, escolha O**Editor de** > **texto de opções** >  **de ferramentas** > **XML**e, em seguida, escolha **Formatação**.
 
 ## <a name="attributes"></a>Atributos
 
 **Preservar formatação manual de atributos**
 
-Não reformate os atributos. Essa é a configuração padrão.
+Não reformate os atributos. Esta é a configuração padrão.
 
 > [!NOTE]
-> Se os atributos estão em várias linhas, o editor recua cada linha de atributos para coincidir com o recuo de elemento pai.
+> Se os atributos estiverem em linhas múltiplas, o editor recua cada linha de atributos para corresponder ao recuo do elemento pai.
 
 **Alinhar cada atributo em uma linha separada**
 
-Alinhe o segundo atributo e os subsequentes verticalmente para coincidir com o recuo do primeiro atributo. O texto XML a seguir é um exemplo de como os atributos seriam alinhados:
+Alinha o segundo e os atributos subsequentes verticalmente para corresponder ao recuo do primeiro atributo. O texto XML a seguir é um exemplo de como os atributos seriam alinhados:
 
 ```xml
 <item id = "123-A"
@@ -41,21 +41,21 @@ Alinhe o segundo atributo e os subsequentes verticalmente para coincidir com o r
 
 ## <a name="auto-reformat"></a>Reformatação Automática
 
-**Ao colar da área de transferência**
+**Na pasta da prancheta**
 
-Reformatar o texto XML colado da área de transferência.
+Reformata o texto XML colado da área de transferência.
 
-**Na conclusão de marca de fim**
+**Ao concluir a marca final**
 
-Reformatar o elemento quando a marca de fim é concluída.
+Reformata o elemento quando a marca final é concluída.
 
 ## <a name="mixed-content"></a>Conteúdo Misto
 
 **Formatar conteúdo misto por padrão.**
 
-Tente reformatar o conteúdo misto, exceto quando o conteúdo é encontrado em um escopo de `xml:space="preserve"`. Essa é a configuração padrão.
+Tenta reformatar conteúdo misto, exceto quando o conteúdo encontra-se em um escopo `xml:space="preserve"`. Esta é a configuração padrão.
 
-Se um elemento contém uma mistura de texto e de marcação, os conteúdos são consideradas conteúdo misturado. Veja a seguir um exemplo de um elemento com conteúdo misto.
+Se um elemento contiver uma mistura de texto e marcação, os conteúdos serão considerados de conteúdo misto. A seguir há um exemplo de um elemento com conteúdo misto.
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +64,7 @@ Se um elemento contém uma mistura de texto e de marcação, os conteúdos são 
 </dir>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Opções de XML – Diversos](options-text-editor-xml-miscellaneous.md)
 - [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

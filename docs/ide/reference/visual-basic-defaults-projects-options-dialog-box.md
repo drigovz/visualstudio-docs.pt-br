@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596377"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
@@ -36,12 +36,12 @@ Define o padrão do compilador para que as conversões de estreitamento explíci
 
  **Opção Comparar**
 
-Define o padrão do compilador para comparações de cadeias de caracteres: Binary (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas.) Por padrão, a **opção Compare** é definida como **Binary**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Define o padrão do compilador para comparações de seqüência: binário (sensível a maiúsculas e minúsculas) ou texto (caso-insensível).) Por padrão, **o Option Compare** é definido como **Binário**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Opção Inferir**
 
 Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)

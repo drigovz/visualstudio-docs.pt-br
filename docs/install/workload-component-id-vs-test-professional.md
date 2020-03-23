@@ -5,7 +5,7 @@ description: Usar IDs de carga de trabalho e de componente do Visual Studio para
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: ececc1815ebc578076d059b00ade1a5fde4552a4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114307"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437341"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Diretório de componentes do Visual Studio Test Professional
 
@@ -30,7 +30,7 @@ Além disso, observe o seguinte sobre a página:
 
 * Cada carga de trabalho tem sua própria seção, seguida pela ID da carga de trabalho e por uma tabela dos componentes que estão disponíveis para a carga de trabalho.
 * Por padrão, os componentes **Obrigatórios** serão instalados durante a instalação da carga de trabalho.
-* Se preferir, também será possível instalar os componentes **Recomendados** e **Opcionais**.
+* Se você escolher, você também pode instalar os componentes **Recomendado** e **Opcional.**
 * Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
 
 Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, consulte a página [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
@@ -45,25 +45,25 @@ Para obter mais informações sobre como usar essas IDs, consulte a página [Usa
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 
-ID do componente | Name | Versão do | Tipo de dependência
+ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Necessário
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | Necessário
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Obrigatório
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | Obrigatório
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
 Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
 
-ID do componente | Name | Versão do
+ID do componente | Nome | Versão
 --- | --- | ---
-N/D | N/D | N/D
+n/d | n/d | n/d
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
-* [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Crie uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)

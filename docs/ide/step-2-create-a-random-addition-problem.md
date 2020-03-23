@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579881"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
@@ -25,13 +25,13 @@ ms.locfileid: "77579881"
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para criar um problema aleatório de adição
 
 1. No designer de formulário, escolha o formulário (**Form1**).
 
-2. Na barra de menus, escolha **Exibir** > **Código**.
+2. Na barra de menu, escolha **'Código de exibição '''Exibir'.** > **Code**
 
      *Form1.cs* ou *Form1.vb* aparecerá, dependendo da linguagem de programação que você estiver usando, para que você possa exibir o código do formulário.
 
@@ -71,7 +71,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
      Quando você inseri um ponto depois de um objeto, o IntelliSense exibe uma lista de membros do objeto, como propriedades, métodos e eventos.
 
     > [!NOTE]
-    > Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Esta captura de C# tela mostra o código, mas o IntelliSense funciona da mesma maneira para Visual Basic.
+    > Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Esta captura de tela mostra o código C#, mas o IntelliSense funciona da mesma maneira para o Visual Basic.
 
      Confira de perto estas instruções.
 
@@ -93,7 +93,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
 8. Salve seu código, execute-o e então escolha o botão **Iniciar**.
 
-     Um problema de adição aleatória é exibido, conforme mostrado na captura de tela a seguir.
+     Um problema de adição aleatório é exibido, como mostrado na captura de tela a seguir.
 
      ![Problema aleatório de adição](../ide/media/express_additionproblem.png)<br/>
 *Problema aleatório de adição*
@@ -102,6 +102,6 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 3: adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md)** .
+- Para ir para a próxima etapa do tutorial, consulte **[Passo 3: Adicione um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md)**.
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

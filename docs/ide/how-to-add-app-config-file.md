@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593636"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Como adicionar um arquivo de configuração de aplicativo a um projeto C#
@@ -29,18 +29,18 @@ Quando você cria seu projeto, o ambiente de desenvolvimento copia automaticamen
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>Para adicionar um arquivo de configuração de aplicativo a um projeto C#
 
-1. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
+1. Na barra de menu, escolha **Projeto** > **Adicionar novo item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é exibida.
+     A caixa de diálogo **Adicionar Novo Item** aparecerá.
 
-1. Expanda **Instalado** > **Itens do Visual C#** e, em seguida, escolha o modelo **Arquivo de Configuração de Aplicativo**.
+1. Expanda**os itens Visuais C#** **instalados** > e escolha o modelo **de arquivo de configuração de aplicativo.**
 
 1. Na caixa e texto **Nome**, insira um nome e escolha o botão **Adicionar**.
 
      Um arquivo chamado *app.config* é adicionado ao seu projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Gerenciar configurações do aplicativo (.NET)](../ide/managing-application-settings-dotnet.md)
+- [Gerenciar configurações de aplicativo (.NET)](../ide/managing-application-settings-dotnet.md)
 - [Esquema do arquivo de configuração (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)
 - [Configurar aplicativos (.NET Framework)](/dotnet/framework/configure-apps/index)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590287"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testar um aplicativo grande com vários Mapas de Interface do Usuário
@@ -23,7 +23,7 @@ Este tópico aborda o uso de testes de IU codificados durante o teste de um apli
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisitos**
 
 - Visual Studio Enterprise
 
@@ -50,13 +50,13 @@ Crie diversos mapas em cada uma destas situações:
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Para adicionar um mapa de interface do usuário ao seu projeto de teste de IU codificado
 
-1. No **Gerenciador de Soluções**, para criar uma pasta no projeto de teste de IU codificado que armazene todos os Mapas de Interface do Usuário, clique com o botão direito do mouse no arquivo de projeto de teste de IU codificado, aponte para **Adicionar** e, em seguida, escolha **Nova Pasta**. Por exemplo, você pode atribuir o nome `UIMaps`.
+1. No **Solution Explorer,** para criar uma pasta no projeto de teste de ida e volta codificado para armazenar todos os Mapas de UI, clique com o botão direito do mouse no arquivo de projeto de teste de ida e volta codificado, aponte para **Adicionar**e escolha **Nova pasta**. Por exemplo, você pode atribuir o nome `UIMaps`.
 
     A nova pasta é exibida no projeto de teste de IU codificado.
 
 2. Clique com o botão direito do mouse na pasta `UIMaps`, aponte para **Adicionar** e clique em **Novo Item**.
 
-    A caixa de diálogo **Adicionar Novo Item** é exibida.
+    A caixa de diálogo **Adicionar novo item** é exibida.
 
    > [!NOTE]
    > Você deve estar em um projeto de teste de IU codificado para adicionar um novo mapa de testes de IU codificado.
@@ -139,10 +139,10 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
-- [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
+- [Anatomia de um teste de iude codificado](../test/anatomy-of-a-coded-ui-test.md)

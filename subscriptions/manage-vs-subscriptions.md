@@ -7,11 +7,11 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
 ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78967833"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79303368"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -70,7 +70,7 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 
 1. Clique em seu nome no canto superior direito do Portal do Assinante.
 2. Clique no botão **Editar perfil**.
-3. Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **Preferências**, é possível selecionar suas preferências de idioma, padrões de data e hora, fuso horário e tema da interface do usuário.
+3. Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **Preferências,** você pode selecionar seu idioma preferido, padrões de data e hora, fuso horário e tema da interface do usuário.
 4. Ao concluir as alterações, clique em **Salvar**.
 5. Clique no botão **Voltar** do navegador para retornar à página Benefícios.
 
@@ -125,4 +125,4 @@ Você gerencia assinaturas para sua organização?  Saiba mais sobre como gerenc
 - [Atribuir várias assinaturas](assign-license-bulk.md)
 - [Editar assinaturas](edit-license.md)
 - [Excluir assinaturas](delete-license.md)
-- [Determinar o uso máximo](maximum-usage.md)
+- [Determine o uso máximo](maximum-usage.md)

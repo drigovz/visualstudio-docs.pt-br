@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589338"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Relatar resultados de teste de carga para comparações de testes ou análise de tendências
@@ -41,9 +41,9 @@ Além disso, o arquivo da planilha do Excel pode ser compartilhada com participa
 
 |Tarefas|Tópicos associados|
 |-|-|
-|**Criar um relatório de desempenho e estresse:** é possível criar relatórios com base nos testes de carga e de desempenho Web usando o Microsoft Excel.|- [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Criar manualmente um relatório de desempenho e de estresse usando o Microsoft Word:** é possível criar relatórios com base em testes de carga e de desempenho Web copiando e colando manualmente o resumo, a tabela e os dados do gráfico em um documento do Microsoft Word.|- [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Crie um relatório de desempenho e estresse:** Você pode criar relatórios sobre seus testes de carga e desempenho da Web, usando o Microsoft Excel.|- [Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Crie manualmente um relatório de desempenho e estresse usando o Microsoft Word:** Você pode criar relatórios sobre seus testes de carga e desempenho da Web manualmente copiando e colando dados de resumo, tabela e gráfico em um documento do Microsoft Word.|- [Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

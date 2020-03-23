@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593857"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -35,7 +35,7 @@ As configurações padrão derivam do perfil selecionado quando o Visual Studio 
 devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 - *SettingsFile*
 
@@ -48,12 +48,12 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | Nome da coleção padrão | Especificador da coleção |
   | --- | --- |
   | **Geral** | `General` |
-  | **JavaScript** | `JavaScript` |
+  | **Javascript** | `JavaScript` |
   | **Visual Basic** | `VB` |
-  | **Visual C#** | `CSharp` |
+  | **Visual C #** | `CSharp` |
   | **Visual C++** | `VC` |
-  | **Desenvolvimento para a Web** | `Web` |
-  | **Desenvolvimento para a Web (somente código)** | `WebCode` |
+  | **Desenvolvimento Web** | `Web` |
+  | **Desenvolvimento para a Web (Somente Código)** | `WebCode` |
 
 ## <a name="remarks"></a>Comentários
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configurações do ambiente](../environment-settings.md)
 - [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

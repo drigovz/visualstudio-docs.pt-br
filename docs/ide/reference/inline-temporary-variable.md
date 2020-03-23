@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568861"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refatoração Embutir uma variável temporária
@@ -46,7 +46,7 @@ Esta refatoração aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse no código e selecione o menu **Ações e Refatorações Rápidas**.
 
@@ -62,6 +62,6 @@ Esta refatoração aplica-se a:
 
       ![Resultado embutido – Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

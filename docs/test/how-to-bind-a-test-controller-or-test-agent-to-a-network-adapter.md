@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594780"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como associar um controlador de teste ou agente de teste a um adaptador de rede
@@ -25,7 +25,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 > [!WARNING]
 > Quando tentar configurar um agente de teste, você pode receber o seguinte erro:
 >
-> **Erro 8110. Não é possível se conectar ao computador do controlador especificado ou acessar o objeto do controlador**
+> **Erro 8110. Não é possível conectar-se ao computador controlador especificado ou acessar o objeto controlador**
 >
 > Esse erro pode ser causado pela instalação do controlador de teste em um computador que tenha mais de um adaptador de rede. Também é possível instalar agentes com êxito e não ver esse problema até tentar executar um teste.
 
@@ -37,7 +37,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 1. No Microsoft Windows, escolha **Iniciar**, entre na caixa **Iniciar Pesquisa**, digite **cmd** e escolha **Enter**.
 
-2. Digite **ipconfig /all**.
+2. Digite **ipconfig/all**.
 
      Os endereços IP de seus adaptadores de rede são exibidos. Registre o endereço IP do adaptador de rede ao qual você deseja associar o controlador.
 
@@ -49,7 +49,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Controlador de Teste do Visual Studio** e escolha **Parar**.
 
-     - ou -
+     -ou-
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -95,7 +95,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Agente de Teste do Visual Studio** e escolha **Parar**.
 
-     - ou -
+     -ou-
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -128,9 +128,9 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
     `net start vsttagent`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como especificar períodos de tempo limite para test controllers e test agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Como: Especificar períodos de tempo para controladores de teste e agentes de teste](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

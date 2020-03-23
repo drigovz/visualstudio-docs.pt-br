@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983564"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
@@ -65,7 +65,7 @@ Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre 
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 
-Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...** :
+Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...**:
 
 ![Exibição Branches](media/version-control-gitBranch2.png)
 
@@ -91,7 +91,7 @@ Examine todas as alterações no seu projeto navegando para o item de menu **Con
 
 Isso permite exibir todas as alterações em cada arquivo de um projeto com a opção de Reverter, Criar um Patch ou Confirmar.
 
-Para confirmar um arquivo no repositório remoto, pressione **Confirmar**, insira uma mensagem de confirmação e confirme com o botão Confirmar:
+Para comprometer um arquivo no repositório remoto, **pressione 'Comprometer'** digite uma mensagem de confirmação e confirme com o botão Comprometer:
 
 ![Confirmando um arquivo](media/version-control-gitCommit.png)
 
@@ -101,6 +101,6 @@ Depois de ter confirmado suas alterações, efetue push nelas para o repositóri
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Compartilhar seu código com o Visual Studio 2017 e o GIT do Azure Repos](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

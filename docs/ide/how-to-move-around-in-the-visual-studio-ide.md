@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590989"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no IDE do Visual Studio
@@ -29,9 +29,9 @@ ms.locfileid: "75590989"
 O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa mover de uma janela para outra e de um arquivo para outro de várias maneiras diferentes, dependendo dos requisitos do projeto ou de preferência. Você pode optar por percorrer os arquivos abertos no editor ou percorrer todas as janelas de ferramentas ativas no IDE. Você também pode mudar diretamente para qualquer arquivo aberto no editor, independentemente da ordem em que ele foi acessado pela última vez. Esses recursos podem ajudar a aumentar sua produtividade ao trabalhar no IDE.
 
 > [!NOTE]
-> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito neste artigo, dependendo de suas configurações ativas ou da edição. Este artigo foi escrito considerando configurações **Gerais**. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito neste artigo, dependendo de suas configurações ativas ou da edição. Este artigo foi escrito considerando configurações **Gerais**. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
-## <a name="keyboard-shortcuts"></a>Atalhos de teclado
+## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 
 Quase todos os comandos de menu no Visual Studio têm um atalho de teclado. Também é possível criar seus próprios atalhos personalizados. Para obter mais informações, consulte [Identificar e personalizar atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -43,9 +43,9 @@ Navegar para Trás e Navegar para Frente percorre os arquivos abertos no editor 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Para percorrer os arquivos abertos por ordem de uso
 
-- Para ativar documentos abertos na ordem em que foram tocadas recentemente, pressione **Ctrl**+ **-** (hífen).
+- Para ativar documentos abertos na ordem em que foram tocados mais recentemente, **pressione Ctrl** + **-** (hífen).
 
-- Para ativar documentos abertos na ordem inversa, pressione **Ctrl**+**Shift**+ **-** (hífen).
+- Para ativar documentos abertos na ordem inversa, **pressione Ctrl**+**Shift** + **-** (hífen).
 
     > [!NOTE]
     > As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.
@@ -63,18 +63,18 @@ O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais rec
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Para mudar para arquivos específicos no editor
 
-- Pressione **CTRL**+**TAB** para exibir o **Navegador de IDE**. Mantenha pressionada a tecla **Ctrl** e pressione **Tab** repetidamente até selecionar o arquivo para o qual você deseja mudar.
+- Pressione a**guia** **Ctrl**+para exibir o **Navegador IDE**. Mantenha pressionada a tecla **Ctrl** e **pressione A guia** repetidamente até selecionar o arquivo para o qual pretende mudar.
 
     > [!TIP]
     > Para inverter a ordem em que você percorre a lista **Arquivos Ativos**, mantenha pressionadas as teclas **CTRL**+**SHIFT** e pressione a tecla **TAB**.
 
-    \- ou -
+    \- ou –
 
 - No canto superior direito do editor, escolha o botão **Arquivos Ativos** e, em seguida, selecione um arquivo na lista para mudar para ele.
 
-    \- ou -
+    \- ou –
 
-- Na barra de menus, escolha **Janela** > **Janelas**.
+- Na barra de menus, escolha **Janelas** > **de janelas**.
 
 - Na lista, selecione o arquivo que você deseja exibir e, em seguida, escolha **Ativar**.
 
@@ -87,12 +87,12 @@ O **Navegador de IDE** também permite percorrer as janelas de ferramenta aberta
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Para mudar para uma janela de ferramentas específica no IDE
 
-- Pressione **ALT**+**F7** para exibir o **Navegador de IDE**. Mantenha pressionada a tecla **ALT** e pressione **F7** repetidamente até selecionar a janela para a qual você pretende mudar.
+- Pressione **Alt**+**F7** para exibir o **Navegador IDE**. Mantenha pressionada a tecla **Alt** e pressione **F7** repetidamente até selecionar a janela para a qual pretende mudar.
 
     > [!TIP]
     > Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas **Shift**+**Alt** e pressione **F7**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md)

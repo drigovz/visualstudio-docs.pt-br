@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589117"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Como criar um plug-in de teste de carga
@@ -24,7 +24,7 @@ ms.locfileid: "75589117"
 Você pode criar um plug-in de teste de carga para executar o código em momentos diferentes com o teste de carga em execução. Você cria um plug-in para expandir ou modificar a funcionalidade interna do teste de carga. Por exemplo, você pode codificar um plug-in de teste de carga para modificar o padrão do teste de carga com o teste de carga em execução. Para fazer isso, você deve criar uma classe que herde a interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Essa classe deve implementar o método <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> dessa interface. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, consulte [como: criar um plug-in de teste de desempenho da Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, consulte [Como: Criar um plug-in de teste de desempenho web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,25 +38,25 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
 
      Para obter mais informações, consulte [Início rápido: criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md).
 
-3. Adicione um novo projeto de **Biblioteca de Classes** à solução. (No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, selecione **Adicionar** e, em seguida, escolha **Novo Projeto**.)
+3. Adicione um novo projeto de **Biblioteca de Classes** à solução. (No **Solution Explorer,** clique com o botão direito do mouse na solução e **selecione Adicionar** e, em seguida, escolha Novo **Projeto**.)
 
-4. No **Gerenciador de Soluções**, clique com o botão direito do mouse na pasta **Referências** da nova biblioteca de classes e selecione **Adicionar Referência**.
+4. No **Solution Explorer,** clique com o botão direito do mouse na pasta **Referências** na nova biblioteca de classes e **selecione Adicionar referência**.
 
    A caixa de diálogo **Adicionar Referência** é exibida.
 
 5. Escolha a guia **.NET**, role para baixo e selecione **Microsoft.VisualStudio.QualityTools.LoadTestFramework**.
 
-6. Clique em **OK**.
+6. Escolha **OK**.
 
-   A referência a **Microsoft.VisualStudio.QualityTools.LoadTestFramework** é adicionada à pasta **Referência** do **Gerenciador de Soluções**.
+   A referência ao **Microsoft.VisualStudio.QualityTools.LoadTestFramework** é adicionada à pasta **de referência** no **Solution Explorer**.
 
-7. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó superior do projeto de teste de carga e de desempenho Web que contém o teste de carga ao qual você deseja adicionar o plug-in de teste de carga e selecione **Adicionar Referência**.
+7. No **Solution Explorer,** clique com o botão direito do mouse no nó superior do projeto de teste de desempenho da Web e de carga que contém o teste de carga ao qual você deseja adicionar o plug-in do teste de carga e **selecione Adicionar referência**.
 
-   A **caixa de diálogo Adicionar Referência é exibida**.
+   A **caixa de diálogo Adicionar referência é exibida**.
 
 8. Escolha a guia **Projetos** e selecione o projeto da biblioteca de classes.
 
-9. Clique em **OK**.
+9. Escolha **OK**.
 
 10. No **Editor de Códigos**, adicione uma instrução `using` ao namespace <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
@@ -73,18 +73,18 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
 15. No painel **Propriedades do plug-in selecionado**, defina os valores iniciais a serem usados pelo plug-in em tempo de execução.
 
     > [!NOTE]
-    > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Altere também as propriedades do plug-in de teste de desempenho Web posteriormente usando a janela **Propriedades**.
+    > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode alterar as propriedades de plug-in do teste de desempenho da Web mais tarde usando a janela **Propriedades.**
 
-16. Clique em **OK**.
+16. Escolha **OK**.
 
      O plug-in é adicionado à pasta **Plug-ins de teste de carga**.
 
     > [!WARNING]
     > Você talvez receba um erro semelhante ao seguinte quando executar um teste de desempenho na Web ou um teste de carga usando seu plug-in:
     >
-    > **Falha na solicitação: exceção no evento \<plug-in >: não foi possível carregar o arquivo ou o assembly '\<"nome do plug-in". dll arquivo >, versão =\<n. n. n >, Culture = neutral, PublicKeyToken = null ' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
+    > **Falha na solicitação: Exceção no \<> caso: Não\<foi possível carregar o arquivo ou o\<conjunto "Nome plug-in".dll file>, Version= n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não consegue encontrar o arquivo especificado.**
     >
-    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)** , mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
+    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
     > 1. Em seu projeto de teste de carga e desempenho na Web, você verá um aviso em referências. Remova e adicione novamente a referência à DLL do plug-in.
     > 2. Remova o plug-in do teste ou do local apropriado e adicione-o de volta.
@@ -157,8 +157,8 @@ Oito eventos são associados a um teste de carga que pode ser identificado no pl
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Como: Criar um plug-in de teste de desempenho da Web](../test/how-to-create-a-web-performance-test-plug-in.md)

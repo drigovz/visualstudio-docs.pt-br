@@ -15,21 +15,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777719"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 
 |||
 |-|-|
-|Id da Regra|DA0004|
+|ID de regra|DA0004|
 |Categoria|Uso das ferramentas de criação de perfil|
-|Métodos de criação de perfil|Instrumentação<br /><br /> Amostragem|
+|Métodos de criação de perfil|Instrumentação<br /><br /> amostragem|
 |Mensagem|O uso do processador é consistentemente superior a 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.|
-|Tipo de regra|Informações do|
+|Tipo de regra|Informações|
 
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.
 

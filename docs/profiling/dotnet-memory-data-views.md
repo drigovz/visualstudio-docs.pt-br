@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779266"
 ---
 # <a name="net-memory-data-views"></a>Exibições de dados da memória do .NET
 Esta seção contém informações de referência para as exibições e os relatórios dos arquivos de dados do criador de perfil que contêm os dados de criação de perfil de memória do .NET.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Exibição de Resumo](../profiling/summary-view-dotnet-memory-data.md)
+- [Exibição de resumo](../profiling/summary-view-dotnet-memory-data.md)
 
  Lista as funções e os tipos que alocaram mais memória.
 
@@ -31,15 +31,15 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os tipos que foram alocados na execução de criação de perfil e as árvores de chamada (caminhos de execução) que resultaram na alocação do tipo.
 
-- [Exibição do tempo de vida do objeto](../profiling/object-lifetime-view.md)
+- [Exibição do Tempo de Vida do Objeto](../profiling/object-lifetime-view.md)
 
  Lista os tipos que foram alocados na execução de criação de perfil e o número de instâncias, tamanho em bytes e a geração de coleta de lixo do tipo.
 
-- [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Call Tree View - Amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
  Exibe uma árvore hierárquica que representa os caminhos de execução e os dados de alocação de memória das funções de execução de criação de perfil.
 
-- [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Exibição de módulos – Amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
 
  Organiza os dados de alocação de memória .NET por módulo e lista as funções, as linhas de código-fonte e as instruções que estavam em execução quando a memória foi alocada.
 
@@ -47,7 +47,7 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os dados de alocação de memória para uma função selecionada, as funções que chamaram a função selecionada e as funções que foram chamadas pela função selecionada.
 
-- [Exibição de Funções – Amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Exibição de funções – Amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
  Lista os dados de alocação de memória para as funções na execução de criação de perfil.
 
@@ -55,15 +55,15 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os dados de alocação de memória para as linhas de código-fonte das funções na execução de criação de perfil.
 
-- [Exibição de IPs (ponteiros de instrução) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Exibição de ponteiros de instrução (IPs) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
  Lista os dados de alocação de memória para as instruções de funções na execução de criação de perfil.
 
-- [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Call Tree View - Instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 
  Exibe uma árvore hierárquica que representa os caminhos de execução, os dados de alocação de memória e os dados de tempo detalhados das funções instrumentadas da execução de criação de perfil.
 
-- [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Visão de módulos - Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 
  Organiza os dados de criação de perfil por módulo e lista as funções, os dados de alocação de memória e as informações detalhadas de tempo para o módulo.
 
@@ -71,12 +71,12 @@ Esta seção contém informações de referência para as exibições e os relat
 
  Lista os dados de alocação de memória e informações de tempo detalhadas para uma função instrumentada selecionada, as funções que chamaram a função selecionada e as funções que foram chamadas pela função selecionada.
 
-- [Exibição de Funções – Instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Exibição de funções – Instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 
  Lista os dados de alocação de memória para as funções instrumentadas na execução de criação de perfil.
 
 ## <a name="reference"></a>Referência
-- [Exibição de Detalhes da Função](../profiling/function-details-view.md)
+- [Exibição de detalhes da função](../profiling/function-details-view.md)
 
  Exibe um gráfico da relação entre uma função selecionada e as funções que chamaram e foram chamadas pela função selecionada.
 

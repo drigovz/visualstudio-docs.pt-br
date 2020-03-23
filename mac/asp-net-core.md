@@ -7,10 +7,10 @@ ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75404993"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
@@ -25,11 +25,11 @@ O .NET Core 2.1 é instalado automaticamente quando você instala o Visual Studi
 
 Abra o Visual Studio para Mac. Na tela inicial, selecione **Novo Projeto...**
 
-![Nova caixa de diálogo de projeto](media/asp-net-core-2019-new-asp-core.png)
+![Caixa de diálogo Novo Projeto](media/asp-net-core-2019-new-asp-core.png)
 
 Isso exibirá a caixa de diálogo Novo projeto, permitindo que você selecione um modelo para criar seu aplicativo.
 
-Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Elas são:
+Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Estes são:
 
 - **.NET Core > Vazio**
 - **.NET Core > API**
@@ -38,11 +38,11 @@ Diversos projetos fornecem um modelo criado previamente para começar a criar se
 
 ![Opções do projeto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo do Solution pad, expanda a segunda seta e, em seguida, selecione **Startup.cs**. Ele deve ser semelhante à imagem abaixo:
+Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo da almofada de solução, expanda a segunda seta e selecione **Startup.cs**. Deve ser semelhante à imagem abaixo:
 
 ![Nova exibição Projeto ASP.NET Core vazio](media/asp-net-core-2019-empty-project.png)
 
-O modelo ASP.NET Core vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta de Dependências, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, a estrutura .NET Core e os destinos do MSBuild que compilam o projeto:
+O modelo ASP.NET Core Empty cria um aplicativo web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta de Dependências, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, a estrutura .NET Core e os destinos do MSBuild que compilam o projeto:
 
 ![Painel de Soluções exibindo as dependências](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -64,7 +64,7 @@ Abra e inspecione o arquivo **Program.cs** no seu projeto. Observe que várias c
     }
 ```
 
-Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
+Um aplicativo ASP.NET Core cria um servidor web em seu método principal, configurando e lançando um host através de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
 * `.UseStartup<Startup>()`: especifica a classe Startup.
 
@@ -118,7 +118,7 @@ Você pode configurar delegados usando os métodos `Run`,`Map` e `Use` métodos 
 
 O método `Configure` do modelo criado previamente é composto para realizar algumas tarefas. Primeiro, ele configura uma página de tratamento de exceções para ser usada durante o desenvolvimento. Em seguida, ele envia uma resposta para a página da Web solicitante com um simples “Olá, Mundo”.
 
-Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo, você pode selecionar em qual navegador você deseja executar o aplicativo usando o menu suspenso à direita do botão reproduzir ou simplesmente pressionar o botão reproduzir (triangular) para usar o navegador padrão:
+Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo, você pode selecionar qual navegador deseja executar o aplicativo usando o direito de saque do botão Play, ou simplesmente apertar o botão Play (triangular) para usar seu navegador padrão:
 
 ![Execução do navegador](media/asp-net-web-picker.png)
 
@@ -169,7 +169,7 @@ Para adicionar um controlador, faça o seguinte:
     }
     ```
 
-3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...** .
+3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...**.
 
 4. Use a caixa de Pesquisa para procurar `Microsoft.AspNetCore.Mvc` na biblioteca de NuGet e selecione **Adicionar Pacote**. A instalação pode levar alguns minutos e pode ser solicitado que você aceite várias licenças para as dependências necessárias:
 

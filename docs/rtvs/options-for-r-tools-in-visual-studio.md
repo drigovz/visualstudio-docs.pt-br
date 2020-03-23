@@ -14,26 +14,26 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999001"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302703"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
 
-As configurações são acessadas pelo menu **Ferramentas do R** > **Opções** ou por meio de **Ferramentas** > **Opções** e rolando até as **Ferramentas do R**:
+As configurações são acessadas através do menu **R Tools** > **Options,** ou através de**opções de** **ferramentas** > e rolagem para **Ferramentas R**:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
 Opções e configurações específicas para o R são acessadas usando os métodos abaixo. É necessário selecionar a caixa **Mostrar todas as configurações** na parte inferior da caixa de diálogo **Opções** para que todas essas seções sejam exibidas.
 
-- Opções de formatação de código (veja [Opções do editor](editing-r-code-in-visual-studio.md#editor-options): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Formatação**
-- Opções de linter (veja [Linting](linting-r-code.md)): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Lint**
-- Opções avançadas do editor ([descrito neste artigo](#text-editor--r--advanced-options)): Menu **Ferramentas** > **Opções**, depois selecione **Editor de texto** > **R** > **Avançado**
-- Opções de comportamento ([descritas neste artigo](#r-tools--advanced-options)): Menu **Ferramentas** > **Opções** ou **Ferramentas** > **Opções**, depois role até **Ferramentas do R**.
+- Opções de formatação de código (acesse o menu [Opções do Editor](editing-r-code-in-visual-studio.md#editor-options): **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Formatação**
+- Opções de linter (acesse o menu [Linting](linting-r-code.md)): **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Lint**
+- Opções avançadas do editor ([descritas neste artigo](#text-editor--r--advanced-options)): acesse o menu **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Avançadas**
+- Opções comportamentais ([descritas neste artigo](#r-tools--advanced-options)): menu **Ferramentas do R** > **Opções** ou **Ferramentas** > **Opções** e, em seguida, role até **Ferramentas do R**.
 
-O comando **Ferramentas do R** > **Configurações da Ciência de Dados** também afeta inúmeras configurações diferentes no Visual Studio, em geral. Esse comando será descrito na próxima seção.
+O comando **R Tools** > **Data Science Settings** afeta também uma série de configurações diferentes no Visual Studio em geral. Esse comando será descrito na próxima seção.
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +43,7 @@ O item de menu **Ferramentas do R > Configurações da Ciência de Dados** confi
 
 ![Layout da janela do cientista de dados no Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Para reverter posteriormente para outras configurações do Visual Studio, primeiro use o comando **Ferramentas** > **Importar e Exportar Configurações**, selecione **Exportar configurações de ambiente selecionadas** e especifique um nome do arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
+Para reverter para outras configurações do Visual Studio mais tarde, primeiro use o comando**Configurações de importação e exportação de** **ferramentas,** > selecione **Exportar configurações de ambiente selecionadas**e especifique um nome de arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor de texto > R > Opções avançadas
 
@@ -57,7 +57,7 @@ Cada opção é definida como ativada ou desativada para controlar o comportamen
 
 ## <a name="r-tools--advanced-options"></a>Ferramentas do R > Opções avançadas
 
-O comando de menu **Ferramentas do R** > **Opções** abre a caixa de diálogo **Opções** nas opções do R:
+O menu **R Tools** > **Options** abre a caixa de diálogo **Opções** para as opções R:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
@@ -72,7 +72,7 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | Avaliar associações ativas | `True` | Quando é `True`, garante que você sempre veja o valor mais atualizado ao inspecionar variáveis e propriedades. O risco é que avaliar as expressões pode causar efeitos colaterais, dependendo de como elas foram implementados. |
 | Mostrar variáveis prefixadas com ponto | `False` | Especifica se as variáveis prefixadas com `.` são mostradas. |
 
-### <a name="grid-view"></a>Exibição em grade
+### <a name="grid-view"></a>Exibição de grade
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |
@@ -82,8 +82,8 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |
-| Navegador da Web F1 | `Internal` | Controla como a Ajuda é exibida quando você procura por um termo usando **Ctrl**+**F1**. Quando definido como `Internal`, a ajuda é renderizada dentro de uma janela de ferramentas no Visual Studio. Quando definido como `External`, a ajuda é exibida no navegador da Web padrão. |
-| Cadeia de pesquisa da Web F1 | `R site:stackoverflow.com` | Controla como os termos de pesquisa são passados para o mecanismo de pesquisa quando você pressiona **Ctrl**+**F1** em um termo no editor. Por padrão a cadeia de caracteres é `R site:stackoverflow.com`, que acrescenta `R` ao termo de pesquisa. O `site:stackoverflow.com` é uma diretiva que solicita ao mecanismo de pesquisa que as páginas no domínio `stackoverflow.com` sejam incluídas ao escopo da pesquisa. |
+| Navegador da Web F1 | `Internal` | Controla como a ajuda é exibida quando você está procurando um termo usando **Ctrl**+**F1**. Quando definido como `Internal`, a ajuda é renderizada dentro de uma janela de ferramentas no Visual Studio. Quando definido como `External`, a ajuda é exibida no navegador da Web padrão. |
+| Cadeia de pesquisa da Web F1 | `R site:stackoverflow.com` | Controla como os termos de pesquisa são passados para o seu mecanismo de pesquisa quando você **pressiona Ctrl**+**F1** em um termo no editor. Por padrão a cadeia de caracteres é `R site:stackoverflow.com`, que acrescenta `R` ao termo de pesquisa. O `site:stackoverflow.com` é uma diretiva que solicita ao mecanismo de pesquisa que as páginas no domínio `stackoverflow.com` sejam incluídas ao escopo da pesquisa. |
 | Navegador da Ajuda do R | `Automatic` | Controla como a Ajuda é exibida quando você procura na documentação do R usando **F1**, **?** ou **??**. Quando definido como `Automatic`, a ajuda é renderizada na janela apropriada. Por exemplo, a ajuda em HTML aparece em uma janela de ferramentas do Visual Studio, enquanto PDFs aparecem no programa de PDF padrão. Quando definido como `External`, a ajuda é renderizada no navegador da Web padrão. |
 
 ### <a name="history"></a>Histórico
@@ -100,7 +100,7 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | --- | --- | --- |
 | Navegador de páginas HTML | `External` | Determina onde o conteúdo, como um gráfico `ggvis` ou um aplicativo `shiny`, é renderizado. `Internal` mostra a saída HTML dentro de uma janela de ferramentas no Visual Studio; `External` exibe a saída HTML no navegador padrão. |
 
-### <a name="logging"></a>Registrando em log
+### <a name="logging"></a>Registro em log
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |

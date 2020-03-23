@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114260"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
@@ -45,7 +45,7 @@ Você pode especificar o local de saída gerado pelo seu projeto por configuraç
    ![Propriedade de caminho de saída para um projeto C# do Visual Studio](media/output-path.png)
    
    > [!NOTE]
-   > Alguns projetos incluirão, por padrão, a estrutura e o tempo de execução no caminho de compilação. Para alterar isso, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções**, selecione **Editar arquivo de projeto**e adicione o seguinte:
+   > Alguns projetos incluirão, por padrão, framework e tempo de execução no caminho de compilação. Para alterar isso, clique com o botão direito do mouse no nó do projeto no **Solution Explorer,** selecione **Editar arquivo de**projeto e adicione o seguinte:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -58,8 +58,8 @@ Você pode especificar o local de saída gerado pelo seu projeto por configuraç
 >
 > ![Seletor de configuração de build do Visual Studio de 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Página de build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Página de propriedades gerais (projeto)](/cpp/build/reference/general-property-page-project)
-- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Página de compilação, Project Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)
+- [Página de Propriedade Geral (projeto)](/cpp/build/reference/general-property-page-project)
+- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)

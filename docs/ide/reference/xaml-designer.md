@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585607"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opções do Designer XAML
@@ -22,7 +22,7 @@ ms.locfileid: "75585607"
 Use a página de opções do **Designer XAML** para especificar como os elementos e atributos são formatados nos documentos XAML. Para abrir essa página, escolha o menu **Ferramentas** e, em seguida, **Opções**. Para acessar a página de propriedades **XAML Designer**, escolha o nó **XAML Designer**. As configurações para o XAML Designer são aplicadas quando você abre o documento. Portanto, se você alterar as configurações, será necessário fechar e reabrir o Visual Studio para ver as alterações.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Habilitar o XAML Designer
 
@@ -37,7 +37,7 @@ Use essa configuração para controlar se o modo de exibição de Design aparece
 |||
 |-|-|
 |**Modo de Exibição de Fonte**|Especifica se somente a fonte de XAML aparece no modo de exibição XAML. Isso é útil ao carregar documentos grandes.|
-|**Modo de exibição de Design**|Especifica se apenas um XAML Designer visual aparece no modo de exibição XAML.|
+|**Exibição de design**|Especifica se apenas um XAML Designer visual aparece no modo de exibição XAML.|
 |**Modo Divisão**|Especifica se o XAML Designer visual e a fonte de XAML aparecem próximos um do outro no modo de exibição XAML (local com base na configuração **Orientação de Divisão**).|
 
 ## <a name="split-orientation"></a>Orientação de Divisão
@@ -56,9 +56,9 @@ Use essa configuração para determinar o funcionamento de aplicar zoom ao edita
 
 |||
 |-|-|
-|**Botão de rolagem do mouse**|Ampliar o XAML Designer ao rolar o botão de rolagem do mouse.|
-|**CTRL + botão de rolagem do mouse**|Ampliar o Designer XAML pressionando a tecla **CTRL** ao mesmo tempo em que rola o botão de rolagem do mouse.|
-|**Alt + botão de rolagem do mouse**|Ampliar o Designer XAML pressionando a tecla **ALT** ao mesmo tempo em que rola o botão de rolagem do mouse.|
+|**Roda de rato**|Ampliar o XAML Designer ao rolar o botão de rolagem do mouse.|
+|**Ctrl + roda de rato**|Amplie o Designer XAML pressionando a tecla **Ctrl** enquanto rola a roda do mouse.|
+|**Alt + botão de rolagem do mouse**|Amplie o XAML Designer pressionando a tecla **Alt** enquanto rola a roda do mouse.|
 
 Essas configurações determinam o comportamento do Designer ao editar um documento XAML.
 
@@ -93,7 +93,7 @@ Use essas configurações para determinar o comportamento do XAML Designer ao ed
 |**Margem padrão**|Quando **Ajustar-se às guias de alinhamento** está habilitado, especifica o espaçamento entre as guias de alinhamento e o controle em pixels ou pontos (conforme determinado pela configuração **Digitar unidades**).|
 |**Preenchimento padrão**|Quando **Ajustar-se às guias de alinhamento** está habilitado, especifica o espaçamento adicional entre as guias de alinhamento e o controle em pixels ou pontos (conforme determinado pela configuração **Digitar unidades**).|
 
-### <a name="animation"></a>{1&gt;Animação&lt;1}
+### <a name="animation"></a>Animação
 
 Use essa configuração para determinar se um aviso é exibido quando animações dependentes (não aceleradas) estão habilitadas no Blend.
 
@@ -106,7 +106,7 @@ Use essas configurações para determinar se efeitos são renderizados ao editar
 |**Renderizar efeitos**|Especifica se efeitos renderizam ao editar arquivos XAML no XAML Designer usando o Blend.|
 |**Limite de zoom**|Especifica o percentual de ampliação com a qual os efeitos são renderizados quando a caixa de seleção **Renderizar efeitos** está selecionada. Se você aplicar zoom além dessa configuração os efeitos não serão mais renderizados no XAML Designer.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

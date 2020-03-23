@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634533"
 ---
 # <a name="assigntargetpath-task"></a>Tarefa AssignTargetPath
@@ -28,11 +28,11 @@ Essa tarefa aceita uma lista de arquivos e adiciona atributos `<TargetPath>`, ca
 
 A tabela a seguir descreve os parâmetros da tarefa `AssignTargetPath`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`RootFolder`|Parâmetro de entrada de `string` opcional.<br /><br /> Contém o caminho para a pasta que contém os links de destino.|
 |`Files`|Parâmetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de entrada de arquivos.|
-|`AssignedFiles`|Opcional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parâmetro de saída.<br /><br /> Contém a lista resultante de arquivos.|
+|`AssignedFiles`|Opcional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem>`[]` parâmetro de saída.<br /><br /> Contém a lista resultante de arquivos.|
 
 ## <a name="remarks"></a>Comentários
 

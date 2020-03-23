@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779864"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
@@ -32,7 +32,7 @@ A criação de perfil de interação de camadas pode ser coletada usando qualque
 
 **Coletar dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** da pasta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar dados de interação de camadas em uma máquina remota, você deve copiar a_\<plataforma _ **vs_profiler\_**>**\_** _ \<>arquivo Language _ **.exe** do _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** folder de uma máquina Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 **Relatórios TIP**
 
@@ -59,13 +59,13 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
     vsperfclrenv /interactionon
     ```
 
-3. {2&gt;Inicie o criador de perfil.&lt;2} Digite o seguinte comando:
+3. Inicie o criador de perfil. Digite o seguinte comando: 
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
-4. Inicie o aplicativo com VSPerfCmd. Digite o seguinte comando:
+4. Inicie o aplicativo com VSPerfCmd. Digite o seguinte comando: 
 
     ```cmd
     vsperfcmd /launch:DesktopApp.exe
@@ -73,7 +73,7 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
 
 5. Utilize o aplicativo para coletar dados de criação de perfil e, em seguida, feche o aplicativo da maneira normal.
 
-6. Limpe as variáveis de ambiente TIP. Digite o seguinte comando:
+6. Limpe as variáveis de ambiente TIP. Digite o seguinte comando: 
 
     ```cmd
     vsperfclrenv /off
@@ -95,13 +95,13 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 2. Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.
 
-3. Inicialize as variáveis de ambiente de criação de perfil do .NET. Digite o seguinte comando:
+3. Inicialize as variáveis de ambiente de criação de perfil do .NET. Digite o seguinte comando: 
 
     ```cmd
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicialize as variáveis de ambiente TIP. Digite o seguinte comando:
+4. Inicialize as variáveis de ambiente TIP. Digite o seguinte comando: 
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -111,7 +111,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 6. Abra uma janela de prompt de comando com privilégios de administrador.
 
-7. {2&gt;Inicie o criador de perfil.&lt;2} Digite o seguinte comando:
+7. Inicie o criador de perfil. Digite o seguinte comando: 
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
@@ -119,7 +119,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 8. Se necessário, inicie o serviço.
 
-9. Anexe o criador de perfil ao serviço. Digite o seguinte comando:
+9. Anexe o criador de perfil ao serviço. Digite o seguinte comando: 
 
     ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
@@ -127,11 +127,11 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 10. Utilize o serviço e colete dados de criação de perfil.
 
-11. Pare o criador de perfil. Digite o seguinte comando:
+11. Pare o criador de perfil. Digite o seguinte comando: 
 
      `vsperfcmd /detach`
 
-12. Limpe as variáveis de ambiente de criação de perfil do .NET e TIP. Digite o seguinte comando:
+12. Limpe as variáveis de ambiente de criação de perfil do .NET e TIP. Digite o seguinte comando: 
 
     ```cmd
     vsperfclrenv /globaloff
@@ -139,7 +139,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 13. Reinicie o computador para registrar as variáveis de ambiente limpas.
 
-Para obter mais informações, consulte um dos seguintes tópicos:
+Para obter mais informações, consulte um dos tópicos a seguir.
 
 [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
@@ -155,4 +155,4 @@ Para adicionar interação de camadas a dados de criação de perfil coletados u
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Para saber mais sobre o VSPerfASPNETCmd, confira [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Para obter mais informações sobre o VSPerfASPNETCmd, consulte [O perfil do site Rapid com o VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

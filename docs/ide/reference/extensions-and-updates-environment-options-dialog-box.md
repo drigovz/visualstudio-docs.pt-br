@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114238"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo opções: extensões de \> de ambiente
+# <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo \> opções: Extensões do ambiente
 
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
 
@@ -27,11 +27,11 @@ Quando esta opção é marcada, o Visual Studio verifica periodicamente se há a
 
 ## <a name="automatically-update-extensions"></a>Atualizar extensões automaticamente
 
-Quando esta opção é marcada, são feitas atualizações de extensões sem prompts. Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Quando esta opção é marcada, são feitas atualizações de extensões sem prompts. Para obter mais informações, consulte [Encontrar e Usar extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="load-per-user-extensions-when-running-as-administrator"></a>Carregar por extensões de usuário ao executar como administrador
 
-Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Para obter mais informações, consulte [Encontrar e Usar extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
 

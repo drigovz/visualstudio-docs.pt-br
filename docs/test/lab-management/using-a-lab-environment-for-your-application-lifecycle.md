@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847296"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
@@ -63,7 +63,7 @@ Se utilizar o Lab Management junto ao System Center Virtual Machine Manager (SCV
 
 * **Reproduzir rapidamente as configurações do computador** − Você pode armazenar as coleções das máquinas virtuais que são configuradas para recriar ambientes típicos de produção. Assim, você pode aplicar cada execução de teste em uma nova cópia de um ambiente armazenado.
 
-* **Reproduzir as condições exatas de um bug** – Quando uma execução de teste falha, você pode armazenar uma cópia do estado do seu ambiente de laboratório e acessá-la em seus resultados de compilação ou em um item de trabalho.
+* **Reproduza as condições exatas de um bug** - Quando uma execução de teste falha, você pode armazenar uma cópia do estado do seu ambiente de laboratório e acessá-la a partir de seus resultados de compilação ou de um item de trabalho.
 
 * **Executar várias cópias de um ambiente de laboratório ao mesmo tempo** – Você pode executar várias cópias de seu ambiente de laboratório ao mesmo tempo sem conflitos de nome.
 
@@ -92,7 +92,7 @@ Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipeli
 
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
-|Capability|Ambiente SCVMM|Ambientes padrão|
+|Recurso|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
 |**Teste**|||
 |Executar testes manuais|Com suporte|Com suporte|
@@ -137,8 +137,8 @@ Para saber mais sobre como configurar ambientes, veja:
 * [Ambientes SCVMM (virtuais)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
 * [Guia do Lab Management do Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
-* [Blog de DevOps da Microsoft](https://devblogs.microsoft.com/devops/)
+* [Blog do Microsoft DevOps](https://devblogs.microsoft.com/devops/)

@@ -3,15 +3,15 @@ title: Entrar em Assinaturas do Visual Studio com sua conta corporativa ou de es
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta corporativa ou de estudante.
-ms.openlocfilehash: fdad16a95c3686d738bd3ef77eb199549082b766
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
-ms.translationtype: HT
+ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315337"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508986"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Entrar em assinaturas do Visual Studio com sua conta corporativa ou de estudante 
 
@@ -21,15 +21,15 @@ Este artigo fornecerá as etapas para entrar com um endereço de email fornecido
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Entrar com sua conta corporativa ou de estudante
 
-1. Visite [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Por [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)favor, visite.
 2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída.
 
    > [!NOTE]
    > Esse endereço também é identificado no Email de Boas-vindas do assinante que você recebeu. Verifique as pastas de lixo eletrônico, se você tiver problemas para localizar o email de boas-vindas.
 
-3. Clique em **Continue**.
+3. Clique em **Continuar**.
 4. Você será redirecionado para sua página de entrada empresarial.
-5. Insira sua senha.
+5. Digite sua senha.
 6. Clique em **Entrar**
 7. Neste ponto, a página "Benefícios" deve ser exibida
 
@@ -39,36 +39,42 @@ Você também pode ver a assinatura atualmente selecionada no canto superior dir
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>Usar sua MSA (Conta Microsoft) para entrar em uma conta corporativa ou de estudante
 
-1. Acesse [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Vá [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)para.
 2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída
 
    > [!NOTE]
    > Esse endereço também é identificado na Carta de Boas-vindas do assinante. Se você não recebeu a Carta de boas-vindas, verifique as pastas de lixo eletrônico
 
-3. Clique em **Continue**.
+3. Clique em **Continuar**.
 4. Você será redirecionado para uma página de decisão.
     - Selecione **Conta corporativa ou de estudante** se a assinatura estiver atribuída a uma conta "Corporativa ou de estudante" associada a um locatário do AAD (Azure Active Directory).
-    - Selecione **Pessoal** se a assinatura estiver associada a um endereço de email "Corporativo", mas também tiver sido convertida em uma MSA (Conta da Microsoft) "Pessoal".
+    - Selecione **Pessoal** se a assinatura estiver associada a um endereço de e-mail "Corporativo", mas também foi convertida em uma Conta Microsoft (MSA) "Pessoal".
 
         > [!NOTE]
         > Esse será o caso para vários assinantes que usaram as assinaturas do Visual Studio (anteriormente, MSDN) no passado.
 
     - Se um caminho falhar, tente o outro.  Administradores de assinatura podem ter modificado a assinatura.
 
-5. Insira sua senha.
+5. Digite sua senha.
 6. Clique em **Entrar**.
 7. Neste ponto, a página "Benefícios" deve ser exibida.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>P:  Não consigo entrar usando o endereço corporativo ou de estudante.  
-R:  A causa mais comum de problemas de conexão é tentar entrar com uma conta diferente daquela associada à assinatura.  Se você usa vários endereços de email diferentes, é possível que esteja tentando entrar com um errado.  Tente entrar com outro endereço.  Se não for bem-sucedido, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
+### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>P: Eu não posso entrar usando meu trabalho ou endereço de e-mail da escola.  
+R: A causa mais comum de problemas de signo é tentar fazer login com uma conta diferente da associada à assinatura.  Se você usa vários endereços de email diferentes, é possível que você esteja tentando entrar com um errado.  Tente entrar com outro endereço.  Se não for bem-sucedido, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>P:  Não consigo ver minha assinatura. Onde estão?
-R:  Muitos usuários têm mais de uma assinatura.  Se você conseguir entrar no portal de assinaturas em https://my.visualstudio.com, mas não conseguir ver sua assinatura, haverá duas causas comuns:
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q: Eu não posso ver a minha assinatura. Onde estão?
+R: Muitos usuários têm mais de uma assinatura.  Se você conseguir entrar no portal de assinaturas em https://my.visualstudio.com, mas não conseguir ver sua assinatura, haverá duas causas comuns:
 1. Você está conectado com uma conta Microsoft diferente.  É possível que você tenha várias assinaturas, como uma assinatura Professional ou Enterprise, além de uma associação ao Visual Studio Dev Essentials e que elas estejam associadas a diferentes endereços de email. Para ver as outras assinaturas, saia e entre novamente usando a outra MSA.
 2. Você tem várias assinaturas associadas ao mesmo endereço de email.  Para ver todas as assinaturas associadas ao seu endereço de email, acesse https://my.visualstudio.com/subscriptions e escolha a assinatura que deseja usar. 
 
 Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  

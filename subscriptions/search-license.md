@@ -7,10 +7,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem localizar assinantes individuais ou grupos no portal de administração.
 ms.openlocfilehash: ab6e680747e7c4c216315bad02e0373bb8fe271c
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78408990"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Pesquisar e filtrar assinantes em assinaturas do Visual Studio
@@ -29,21 +29,21 @@ O Portal de Administração de Assinaturas do Visual Studio permite encontrar um
    > [!NOTE]
    > O campo **Nome** é classificado pelo primeiro nome.
 
-   Observe que o ícone de **filtro** está realçado, indicando que um filtro é aplicado.  Uma opção de **filtro claro** também é exibida. 
+   Observe que o ícone **Filtro** está destacado, indicando que um filtro é aplicado.  Uma escolha **de filtro Clear** também é exibida. 
 
 3. Para limpar o filtro e restaurar a lista não filtrada, clique na guia **Limpar filtro** no canto superior direito. 
    > [!div class="mx-imgBorder"]
    > ![Limpar o filtro da lista de assinantes](_img/search-filter/clear-filter.png)
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 - Agora que você sabe como encontrar um assinante, aprenda como [editar](edit-license.md) a assinatura dele.
 - Precisa de ajuda para usar o portal de administração?  Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 

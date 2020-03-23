@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830804"
 ---
-# <a name="markerserieswriteflag-method"></a>Método marker_series::write_flag
+# <a name="marker_serieswrite_flag-method"></a>Método marker_series::write_flag
 Grava um sinalizador para o arquivo de rastreamento da Visualização Simultânea.
 
 ## <a name="syntax"></a>Sintaxe
@@ -47,7 +47,7 @@ void write_flag(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  `_Format` Uma cadeia de caracteres de formato composto, que contém um texto intercalado com zero ou mais itens de formato correspondentes aos objetos na lista de argumentos.
 
  `_Importance` Nível de prioridade.
@@ -59,5 +59,5 @@ void write_flag(
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe marker_series](../profiling/marker-series-class.md)

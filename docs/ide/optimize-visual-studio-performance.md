@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596990"
 ---
 # <a name="optimize-visual-studio-performance"></a>Otimizar o desempenho do Visual Studio
@@ -29,7 +29,7 @@ Se estiver usando o Visual Studio 2015, baixe o [Visual Studio 2017](https://vis
 
 ::: moniker range="vs-2017"
 
-Se já estiver usando o Visual Studio 2017, verifique se está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Faça download dela [aqui](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+Se já estiver usando o Visual Studio 2017, verifique se está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Baixe [aqui](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 
@@ -49,9 +49,9 @@ Além disso, não execute sua solução de uma unidade USB. Copie-a para a HDD o
 
 ## <a name="help-us-improve"></a>Ajude-nos a melhorar
 
-Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para saber mais, consulte [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para obter mais informações, consulte [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Dicas e truques de desempenho](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog do Visual Studio – Carregar soluções mais rapidamente com o Visual Studio 2017 versão 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115224"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
@@ -89,7 +89,7 @@ O exemplo a seguir mostra uma linha de comando para aplicar a licença ao Visual
 
 Se `StorePID.exe` aplicar a chave do produto (Product Key) com êxito, ele retornará um `%ERRORLEVEL%` de 0. Se encontrar erros, ele retornará um dos códigos a seguir, dependendo da condição de erro:
 
-| Erro do                     | Código |
+| Erro                     | Código |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -100,11 +100,11 @@ Se `StorePID.exe` aplicar a chave do produto (Product Key) com êxito, ele retor
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Quando você executa uma instância virtual do Visual Studio, certifique-se de também virtualizar a pasta AppData local e o registro. Para solucionar problemas de instâncias virtuais, execute `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
+> Ao executar uma instância virtual do Visual Studio, certifique-se de que você também virtualize a pasta appdata local e o registro. Para solucionar `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`problemas em instâncias virtuais, execute .  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](../install/install-visual-studio.md)
-* [Criar uma instalação offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
+* [Instale o Visual Studio](../install/install-visual-studio.md)
+* [Crie uma instalação offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)

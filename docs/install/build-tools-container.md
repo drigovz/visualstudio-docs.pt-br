@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114611"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
@@ -136,7 +136,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ::: moniker-end
    
    > [!NOTE]
-   > O código de erro `3010` é usado para indicar êxito com uma reinicialização necessária, consulte [mensagens de erro do msiexec. exe](/windows/win32/msi/error-codes) para obter mais informações.
+   > O `3010` código de erro é usado para indicar o sucesso com uma reinicialização necessária, consulte [mensagens de erro MsiExec.exe](/windows/win32/msi/error-codes) para obter mais informações.
 
 1. Execute o seguinte comando nesse diretório.
 
@@ -192,8 +192,8 @@ Para usar essa imagem no fluxo de trabalho CI/CD, publique-a no seu próprio [Re
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Exemplo avançado para contêineres](advanced-build-tools-container.md)
-* [Problemas Conhecidos de Contêineres](build-tools-container-issues.md)
+* [Problemas conhecidos para contêineres](build-tools-container-issues.md)
 * [IDs de carga de trabalho e de componente das Ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md)

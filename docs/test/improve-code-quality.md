@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594357"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
@@ -37,9 +37,9 @@ A janela **Gerenciador de Testes** ajuda os desenvolvedores a criar, gerenciar e
 ::: moniker-end
 
 * [Introdução ao teste de unidade](unit-test-your-code.md)
-* [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
+* [Execução de testes de unidade com o gerenciador de testes](run-unit-tests-with-test-explorer.md)
 * [Perguntas Frequentes sobre o Gerenciador de Testes](test-explorer-faq.md)
-* [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md)
+* [Instalação de frameworks de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md)
 
 O Visual Studio também é extensível e abre a porta para adaptadores de teste de unidade de terceiros como o NUnit e o xUnit.net. Além disso, a capacidade de clone de código caminha lado a lado com o fornecimento de softwares de alta qualidade, ajudando você a identificar blocos de códigos semanticamente semelhantes que podem ser candidatos para correções de bugs comuns ou refatoração.
 
@@ -83,14 +83,14 @@ Se escolher um dos melhores testes de interface do usuário codificada ou testes
 
 ![Testes de interface do usuário com interface do usuário codificada](media/devtest-codeduitest.png)
 
-* [Usar a automação de interface do usuário para testar seu código](use-ui-automation-to-test-your-code.md)
-* [Introdução à criação, à edição, e à manutenção do teste de IU codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testar aplicativos UWP com testes de IU codificados](test-uwp-app-with-coded-ui-test.md)
+* [Usar a automação da interface do usuário para testar o código](use-ui-automation-to-test-your-code.md)
+* [Comece a criar, editar e manter um teste de iu de ia codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [Teste aplicativos UWP com testes de interface do usuário codificados](test-uwp-app-with-coded-ui-test.md)
 * [Introdução aos testes de IU codificados com o Visual Studio Enterprise (laboratório)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Teste de carga
 
-O [teste de carga](../test/quickstart-create-a-load-test-project.md) simula a carga em um aplicativo para servidores executando testes de unidade e testes de desempenho Web.
+[O teste de carga](../test/quickstart-create-a-load-test-project.md) simula a carga em um aplicativo de servidor executando testes unitários e testes de desempenho da Web.
 
 ## <a name="related-scenarios"></a>Cenários relacionados
 

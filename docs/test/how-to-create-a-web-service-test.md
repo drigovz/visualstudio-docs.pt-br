@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589091"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
@@ -23,9 +23,9 @@ Você pode usar um teste de desempenho na Web para testar serviços Web. Usando 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Baixe-o no [Kit de Início do ASP.NET Commerce](https://sourceforge.net/projects/ppcsk/).
+Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Você pode baixá-lo a partir de [ASP.NET commerce starter kit](https://sourceforge.net/projects/ppcsk/).
 
-**Requirements**
+**Requisitos**
 
 Visual Studio Enterprise
 
@@ -35,9 +35,9 @@ Visual Studio Enterprise
 
 2. No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse no teste de desempenho Web e selecione **Adicionar solicitação de serviço Web**.
 
-3. Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx** .
+3. Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4. Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço**. Selecione o método que você deseja testar e examine a mensagem SOAP. Contém `SOAPAction`.
+4. Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço.** Selecione o método que você deseja testar e examine a mensagem SOAP. Ele contém um `SOAPAction`.
 
 5. No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse na solicitação e selecione **Adicionar Cabeçalho** para adicionar um novo cabeçalho. Na propriedade **Nome**, digite `SOAPAction`. Na propriedade **Valor**, digite o valor que você vê em `SOAPAction`, como `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Visual Studio Enterprise
      </soap:Envelope>
      ```
 
-9. Retorne ao **Editor de Testes de Desempenho Web** e, em seguida, escolha as reticências **(…)** na propriedade **Corpo da Cadeia de Caracteres**. Cole o conteúdo da área de transferência na propriedade.
+9. Retorne ao **Web Performance Test Editor** e escolha as elipses **(...)** na propriedade **String Body.** Cole o conteúdo da área de transferência na propriedade.
 
 10. Você deve substituir todos os valores de espaço reservado do XML com os valores válidos para que o teste seja aprovado. No exemplo anterior, substitua as duas instâncias de `string` e uma de `int`. Essa operação de serviço Web somente será concluída se houver um usuário registrado que tenha feito um pedido.
 
@@ -71,8 +71,8 @@ Visual Studio Enterprise
     > [!NOTE]
     > Você pode usar a vinculação de dados no corpo SOAP para substituir o valor de qualquer espaço reservado por valores associados a dados usando a sintaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Execute o teste. No painel superior do **Visualizador de Resultados de Teste de Desempenho na Web**, selecione a solicitação de serviço Web. No painel inferior, selecione a guia navegador da Web. O XML que é retornado pelo serviço Web e os resultados de quaisquer operações serão exibidos.
+13. Execute o teste. No painel superior do **Visualizador de Resultados de Teste de Desempenho na Web**, selecione a solicitação de serviço Web. No painel inferior, selecione a guia Navegador da Web. O XML que é devolvido pelo serviço web, e os resultados de qualquer operação, serão exibidos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -15,19 +15,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e068771ba0fcc9b044ba7ff5243a75ceb3161e03
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779397"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: taxas extremamente elevadas de paginação de memória ativa em disco
 
 |||
 |-|-|
-|Id da Regra|DA0014|
+|ID de regra|DA0014|
 |Categoria|Memória e paginação|
-|Método de criação de perfil|{1&gt;Todos&lt;1}|
+|Método de criação de perfil|Todos|
 |Mensagem|Uma taxa extremamente alta de paginação de memória ativa em disco está ocorrendo. O aplicativo pode ser associado à memória.|
 |Tipo de regra|Aviso|
 
@@ -45,7 +45,7 @@ ms.locfileid: "74779397"
 > Essa regra é acionada quando os níveis de paginação de memória ativa atingem uma taxa muito alta. Quando o nível de paginação é significativo, mas não extremo, a regra informativa [DA0017: altas taxas de paginação de memória ativa em disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) é acionada.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição [Marcas](../profiling/marks-view.md). Encontre a coluna **Memória\Páginas/s**. Determine se há fases específicas da execução do programa em que a atividade de E/S de paginação é mais pesada do que em outras.
+ Clique duas vezes na mensagem na janela Lista de erros para navegar até a exibição [Marcas.](../profiling/marks-view.md) Encontre a coluna **Memória\Páginas/s**. Determine se há fases específicas da execução do programa em que a atividade de E/S de paginação é mais pesada do que em outras.
 
  Se estiver coletando dados de perfil para um aplicativo ASP.NET em um cenário de teste de carga, tente executar novamente o teste de carga em um computador configurado com memória física (ou RAM) adicional.
 

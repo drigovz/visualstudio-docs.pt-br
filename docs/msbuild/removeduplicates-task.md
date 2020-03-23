@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632778"
 ---
 # <a name="removeduplicates-task"></a>Tarefa RemoveDuplicates
@@ -33,7 +33,7 @@ Remove itens duplicados da coleção do item especificado.
 
  A tabela a seguir descreve os parâmetros da tarefa `RemoveDuplicates`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`Filtered`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém uma coleção de itens com todos os itens duplicados removidos. A ordem dos itens de entrada é preservada, mantendo a primeira instância de cada item duplicado.|
 |`Inputs`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Coleção de itens do qual remover itens duplicados.|

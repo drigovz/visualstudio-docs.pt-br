@@ -1,5 +1,5 @@
 ---
-title: C++TYPEDEFs em Designer de Classe
+title: Typedefs C++ em Class Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590677"
 ---
-# <a name="c-typedefs-in-class-designer"></a>C++TYPEDEFs em Designer de Classe
+# <a name="c-typedefs-in-class-designer"></a>Typedefs C++ em Class Designer
 
-As instruções [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O **Designer de Classe** é compatível com tipos de typedef do C++ declarados com a palavra-chave `typedef`, por exemplo:
+[Instruções typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O **Designer de Classe** é compatível com tipos de typedef do C++ declarados com a palavra-chave `typedef`, por exemplo:
 
 ```cpp
 typedef class coord
@@ -68,7 +68,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedefs sem nome
 
-Embora seja possível declarar um typedef sem um nome, o **Designer de Classe** não usará o nome da marca especificada. O **Designer de Classe** use o nome gerado pelo **Modo de Exibição de Classe**. Por exemplo, a declaração a seguir é válida, mas ela aparece no **Modo de Exibição de Classe** e no **Designer de Classe** como um objeto chamado **__unnamed**:
+Embora seja possível declarar um typedef sem um nome, o **Designer de Classe** não usará o nome da marca especificada. O **Designer de Classe** use o nome gerado pelo **Modo de Exibição de Classe**. Por exemplo, a seguinte declaração é válida, mas aparece no **Class View** e **no Class Designer** como um objeto chamado **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -82,7 +82,7 @@ typedef class coord
 > [!NOTE]
 > O **Designer de Classe** não exibe typedefs cujo tipo de origem é um ponteiro de função.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trabalhar com C++ código](working-with-visual-cpp-code.md)
+- [Trabalhe com código C++](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

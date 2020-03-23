@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594182"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense para arquivos de código do Visual Basic
@@ -39,7 +39,7 @@ Dicas de sintaxe são exibidas na sintaxe da instrução que você está digitan
 
 A conclusão pode ser desativada por padrão desmarcando **Listar membros automaticamente** na página de propriedades **Geral** na pasta **Visual Basic**.
 
-Você pode invocar manualmente a conclusão invocando Listar Membros, Completar Palavra ou **Alt**+**Seta para a Direita**. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
+Você pode invocar manualmente a conclusão invocando Membros da lista, Palavra Completa ou**Seta Direita** **Alt**+. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense por Zona
 
@@ -55,6 +55,6 @@ Para obter mais informações, consulte [Segurança de acesso do código para ap
 
 No Visual Basic, as listas de conclusão do IntelliSense têm dois controles de guia localizados na parte inferior das listas. A guia **Comum**, que é selecionada por padrão, exibe itens que são usados com maior frequência para completar a instrução que você está escrevendo. A guia **Todos** exibe todos os itens disponíveis para preenchimento automático, incluindo aqueles que também estão na guia **Comum**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar o IntelliSense](../ide/using-intellisense.md)

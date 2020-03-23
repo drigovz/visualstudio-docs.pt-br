@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590157"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Como personalizar diagramas de classe
@@ -29,13 +29,13 @@ Por exemplo, é possível ajustar o nível de zoom de um diagrama de classes int
 > [!NOTE]
 > Personalizar a maneira como as formas aparecem no diagrama não altera o código subjacente dos tipos representados no diagrama.
 
-As seções que contêm membros de tipo, como a seção **Propriedades** em uma classe, são chamadas de compartimentos. Você pode ocultar ou mostrar compartimentos individuais e membros de tipo.
+As seções que contêm membros do tipo, como a seção **Propriedades** em uma classe, são chamadas de compartimentos. Você pode ocultar ou mostrar compartimentos individuais e membros de tipo.
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Ampliar e reduzir o diagrama de classes
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
-2. Na barra de ferramentas do **Designer de Classe**, clique no botão **Ampliar** ou **Reduzir** para alterar o nível de zoom da superfície do designer.
+2. Na barra de ferramentas **do Class Designer,** clique no botão **Zoom In** ou **Zoom Out** para alterar o nível de zoom da superfície do designer.
 
      ou
 
@@ -46,7 +46,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Personalizar o agrupamento e a classificação dos membros de tipo
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse em uma área vazia na superfície de design e aponte para **Membros do Grupo**.
 
@@ -60,7 +60,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 ## <a name="hide-compartments-on-a-type"></a>Ocultar compartimentos em um tipo
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse na categoria do membro no tipo que você deseja personalizar (por exemplo, selecione o nó **Métodos** em uma classe).
 
@@ -70,7 +70,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 ## <a name="hide-individual-members-on-a-type"></a>Ocultar membros individuais em um tipo
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse no membro do tipo que deseja ocultar.
 
@@ -80,7 +80,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Mostrar compartimentos e membros ocultos em um tipo
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse no nome do tipo com o compartimento oculto.
 
@@ -88,9 +88,9 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
      Todos os membros e compartimentos ocultos aparecem no contêiner de tipo.
 
-## <a name="hide-relationships"></a>{1&gt;Ocultar relações&lt;1}
+## <a name="hide-relationships"></a>Ocultar relações
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse na linha de herança ou associação que deseja ocultar.
 
@@ -102,7 +102,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 ## <a name="show-hidden-relationships"></a>Mostrar relações ocultas
 
-1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
+1. Abra e selecione um arquivo de diagrama de classe no **Class Designer**.
 
 2. Clique com o botão direito do mouse no tipo com a associação ou a herança oculta.
 
@@ -125,8 +125,8 @@ Você pode remover uma forma de tipo do diagrama de classes sem afetar o código
 
      A forma é removida do diagrama e seu código subjacente é excluído do projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como alternar entre notação de membro e de associação](how-to-change-between-member-notation-and-association-notation.md)
 - [Como exibir tipos existentes](how-to-view-existing-types.md)
-- [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)
+- [Visualização de tipos e relacionamentos](designing-and-viewing-classes-and-types.md)

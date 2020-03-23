@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595807"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
 Use a página **Aplicativo** do Designer de Projeto para especificar as propriedades e configurações de aplicativo de um projeto.
 
-Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto** > **Propriedades** na barra de menus. Quando o **Designer de Projeto** for exibido, selecione a guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha**Propriedades** **do projeto** > na barra de menu. Quando o **Designer de Projeto** for exibido, selecione a guia **Aplicativo**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ Especifica o namespace base para todos os arquivos no projeto. Por exemplo, se v
 Se você desmarcar **Namespace raiz**, será possível especificar a estrutura do namespace do seu projeto no código.
 
 > [!NOTE]
-> Se você usar a palavra-chave `Global` em uma [Instrução Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), será possível definir um namespace fora do namespace raiz do seu projeto. Se você desmarcar a **Namespace raiz**, `Global` se tornará o namespace de nível superior, que acaba com a necessidade da palavra-chave `Global` em uma instrução `Namespace`. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Se você usar a palavra-chave `Global` em uma [Instrução Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), será possível definir um namespace fora do namespace raiz do seu projeto. Se você limpar o **Espaço de Nome raiz,** `Global` torna-se o `Global` namespace de `Namespace` nível superior, que remove a necessidade da palavra-chave em uma declaração. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Para obter informações sobre como criar namespaces no seu código, consulte [Instrução Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -90,11 +90,11 @@ Se o projeto for um Aplicativo de Navegador do WPF, essa lista será denominada 
 
 Se **Habilitar estrutura de aplicativo** estiver desmarcado, essa lista se tornará **Objeto de inicialização** e mostrará os formulários e classes ou módulos com um `Sub Main`.
 
-**Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)** . Para obter mais informações, consulte [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)**. Para obter mais informações, consulte [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
-### <a name="icon"></a>Ícone
+### <a name="icon"></a>ícone
 
-Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Procurar.. &amp;gt;** para procurar um gráfico existente. Consulte [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Define o arquivo .ico que você deseja usar como o ícone do programa. ** \<Selecione Procurar...>** para procurar um gráfico existente. Consulte [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informações do assembly
 
@@ -102,7 +102,7 @@ Clique neste botão para exibir a [Caixa de diálogo de Informações do Assembl
 
 ### <a name="enable-application-framework"></a>Habilitar estrutura do aplicativo
 
-Especifica se um projeto usará a estrutura de aplicativo. A configuração dessa opção afeta as opções disponíveis em **Formulário de inicialização**/**Objeto de inicialização**.
+Especifica se um projeto usará a estrutura de aplicativo. A configuração desta opção afeta as opções disponíveis no objeto **Iniciar forma**/**Inicialização**.
 
 Se essa caixa de seleção estiver selecionada, seu aplicativo usará o padrão `Sub Main`. Marcar essa caixa de seleção habilita os recursos na seção **Propriedades da estrutura dos aplicativos do Windows** e também exige que você selecione um formulário de inicialização.
 
@@ -110,7 +110,7 @@ Se essa caixa de seleção estiver desmarcada, seu aplicativo usará o `Sub Main
 
 ### <a name="view-windows-settings"></a>Exibir configurações do Windows
 
-Clique neste botão para gerar e abrir o arquivo *app.manifest*. O Visual Studio usa esse arquivo para gerar dados de manifesto do aplicativo. Em seguida, defina o nível de execução solicitado pelo UAC modificando a tag `<requestedExecutionLevel>` no *app.manifest* da seguinte maneira:
+Clique neste botão para gerar e abrir o arquivo *app.manifest.* O Visual Studio usa esse arquivo para gerar dados de manifesto do aplicativo. Em seguida, defina o nível de `<requestedExecutionLevel>` execução solicitado pelo UAC modificando a tag no *app.manifest* da seguinte forma:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -153,7 +153,7 @@ Selecione **No fechamento da janela principal** para especificar que o aplicativ
 
 ### <a name="splash-screen"></a>Tela inicial
 
-Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(Nenhum)** .
+Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(Nenhum)**.
 
 ### <a name="view-application-events"></a>Exibir eventos de aplicativo
 
@@ -177,7 +177,7 @@ Para obter mais informações sobre como usar essa configuração, consulte <xre
 
 ### <a name="edit-xaml"></a>Editar XAML
 
-Este botão abre o arquivo de definição de aplicativo (Application.xaml) no editor XAML. Quando você clicar neste botão, *Application.xaml* será aberto no nó de definição de aplicativo. Talvez seja necessário editar esse arquivo para executar determinadas tarefas, como a definição de recursos. Se o arquivo de definição de aplicativo não existir, o Designer de Projeto criará um.
+Este botão abre o arquivo de definição de aplicativo (Application.xaml) no editor XAML. Quando você clica neste botão, *Application.xaml* abre no nó de definição do aplicativo. Talvez seja necessário editar esse arquivo para executar determinadas tarefas, como a definição de recursos. Se o arquivo de definição de aplicativo não existir, o Designer de Projeto criará um.
 
 ### <a name="view-application-events"></a>Exibir eventos de aplicativo
 

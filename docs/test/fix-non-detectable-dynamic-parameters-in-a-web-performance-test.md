@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589637"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
@@ -25,7 +25,7 @@ Alguns sites usam parâmetros dinâmicos para processar algumas de suas solicita
 
 - Valores de parâmetro dinâmicos que são definidos nos campos ocultos em páginas HTML, como o estado de exibição do ASP.NET. Esses são tratados automaticamente pelo registrador, que adiciona regras ocultas de extração de campo ao teste.
 
-- Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho na Web.
+- Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
 
 Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâmico não detectado irá fazer com que seu teste de desempenho na Web falhe porque o valor dinâmico provavelmente será diferente sempre que o teste for executado. Para manipular corretamente esses parâmetros, você pode adicionar regras de extração aos parâmetros dinâmicos em seu teste de desempenho na Web manualmente.
 
@@ -116,13 +116,13 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
             }
     ```
 
-13. Salvar o projeto.
+13. Salve o projeto.
 
 14. No **Gerenciador de Soluções**, defina *Querystring.aspx* como a página inicial.
 
      ![Definir a página inicial em Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. Pressione **Ctrl**+**F5** para executar o aplicativo Web no navegador. Copie a URL. Você precisará disso quando registrar seu teste.
+15. Pressione **Ctrl**+**F5** para executar o aplicativo web no navegador. Copie a URL. Você precisará disso quando registrar seu teste.
 
 16. Tente ambos os links. Todos eles devem exibir a mensagem “Sucesso. Parâmetro querystring dinâmico encontrado."
 
@@ -247,7 +247,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 11. Execute o teste. Agora é executado sem falhas.
 
-## <a name="qa"></a>PERGUNTAS E RESPOSTAS
+## <a name="qa"></a>Perguntas e respostas
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web for modificado?
 

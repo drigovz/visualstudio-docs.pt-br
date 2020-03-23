@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1bd6462f9159a2926c6dfa45dcadff860cce9ca1
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778928"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Como filtrar relatórios por meio da linha de comando
@@ -21,10 +21,10 @@ Ao usar as opções para o comando **VSPerfReport**, você pode filtrar relatór
 
 |Opções|Descrição|
 |-------------|-----------------|
-|**StartTime:** [*Value*]|Mostrar somente dados coletados após o valor (em milésimos de segundos.)|
-|**EndTime:** [*Value*]|Mostrar apenas dados coletados antes do valor (em milésimos de segundos.)|
-|**FilterFile:** `VSPFFile`|Especifica o local de um arquivo de filtro que foi gerado da janela **Relatório de desempenho do Visual Studio**.|
-|**MsFilter:** [*StartTime,Duration*]|Mostrar somente os dados de `StartTime` até a duração de `Duration` (em milésimos de segundos).|
-|**Process:** [*Pid*]|Mostrar somente os dados do processo especificado.|
-|**Thread:** [*ThreadID*]|Mostrar somente os dados do thread especificado.|
-|**Thread:** [*ThreadID,ProcessID*]|Mostrar somente os dados do thread especificado associados ao processo especificado.|
+|**StartTime:**[*Valor*]|Mostrar apenas os dados coletados depois do valor (em milissegundos).|
+|**Tempo final:**[*Valor*]|Mostrar apenas os dados coletados antes do valor (em milissegundos).|
+|**FilterFile:** `VSPFFile`|Especifica a localização de um arquivo de filtro gerado a partir da janela **Visual Studio Performance Report.**|
+|**MsFilter:**[*StartTime,Duração*]|Mostrar apenas os dados de `StartTime` até a duração de `Duration` (em milissegundos).|
+|**Processo:**[*Pid*]|Mostrar somente os dados do processo especificado.|
+|**Linha:**[*ThreadID*]|Mostra apenas os dados do thread especificado.|
+|**Tópico:**[*ThreadID,ProcessID*]|Mostrar somente os dados do thread especificado associados ao processo especificado.|

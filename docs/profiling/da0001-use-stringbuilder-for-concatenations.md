@@ -15,19 +15,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779500"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 
 |||
 |-|-|
-|Id da Regra|DA0001|
+|ID de regra|DA0001|
 |Categoria|Uso do .NET Framework|
-|Métodos de criação de perfil|Amostragem<br /><br /> Instrumentação|
+|Métodos de criação de perfil|amostragem<br /><br /> Instrumentação|
 |Mensagem|Considere o uso de StringBuilder para concatenações de cadeias de caracteres|
 |Tipo de mensagem|Aviso|
 
@@ -40,6 +40,6 @@ ms.locfileid: "74779500"
  A classe StringBuilder é um objeto mutável e, ao contrário de System.String, a maioria dos métodos em StringBuilder que modifica uma instância dessa classe retorna uma referência a essa mesma instância. É possível inserir caracteres ou acrescentar texto a uma instância StringBuilder, além de remover ou substituir caracteres na instância sem a necessidade de alocar uma nova instância e excluir a instância original.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
- Clique duas vezes na mensagem na janela **Lista de Erros** para navegar até a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de perfil de amostragem. Encontre as seções do programa que fazem o uso mais frequente da concatenação de cadeia de caracteres. Use a classe StringBuilder para manipulações de cadeias de caracteres complexas, incluindo operações de concatenação de cadeia de caracteres frequentes.
+ Clique duas vezes na mensagem na janela **Lista de erros** para navegar até a exibição de [detalhes](../profiling/function-details-view.md) da função dos dados do perfil de amostragem. Encontre as seções do programa que fazem o uso mais frequente da concatenação de cadeia de caracteres. Use a classe StringBuilder para manipulações de cadeias de caracteres complexas, incluindo operações de concatenação de cadeia de caracteres frequentes.
 
  Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776149"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
@@ -32,7 +32,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *
 
 - Acessando as fontes de dados usando a classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir esta explicação passo a passo, será necessário:
 
@@ -267,7 +267,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 > [!IMPORTANT]
 > Implante itens como fontes de dados para que fiquem acessíveis para o teste no diretório de implantação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)
 - [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

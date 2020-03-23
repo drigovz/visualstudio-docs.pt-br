@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589806"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: usar ativos 3D em seu jogo ou aplicativo
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: Use ativos 3D em seu jogo ou aplicativo
 
 Este artigo descreve como é possível usar o Visual Studio para processar ativos 3D e incluí-los nos builds.
 
@@ -46,7 +46,7 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Escolha o botão **OK**.
+3. Clique no botão **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Incluir ativos na criação
 
@@ -65,15 +65,15 @@ Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja 
     > [!IMPORTANT]
     > Por padrão, o Visual Studio presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao Visual Studio. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.
 
-4. Escolha o botão **OK**.
+4. Clique no botão **OK**.
 
 Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e de saída associados.
 
 |Tipo de item|Tipos de arquivo de origem|Formato do arquivo de saída|
 |---------------| - | - |
-|**Pipeline de conteúdo da imagem**|Formato PNG ( *.png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface ( *.dds*)<br /><br /> Graphics Interchange Format ( *.gif*)<br /><br /> Bitmap ( *.bmp*, *.dib*)<br /><br /> Formato TIFF ( *.tif*, *.tiff*)<br /><br /> Formato TGA ( *.tga*)|DirectDraw Surface ( *.dds*)|
-|**Pipeline de conteúdo da malha**|Arquivo de Intercâmbio AutoDesk FBX ( *.fbx*)<br /><br /> Arquivo Collada DAE ( *.dae*)<br /><br /> Arquivo Wavefront OBJ ( *.obj*)|Arquivo de malha 3D ( *.cmo*)|
-|**Pipeline de conteúdo do sombreador**|Visual Shader Graph ( *.dgsl*)|Saída do Sombreador Compilado ( *.cso*)|
+|**Pipeline de conteúdo da imagem**|Formato PNG (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Formato TIFF (*.tif*, *.tiff*)<br /><br /> Formato TGA (*.tga*)|DirectDraw Surface (*.dds*)|
+|**Pipeline de conteúdo da malha**|Arquivo de Intercâmbio AutoDesk FBX (*.fbx*)<br /><br /> Arquivo Collada DAE (*.dae*)<br /><br /> Arquivo Wavefront OBJ (*.obj*)|Arquivo de malha 3D (*.cmo*)|
+|**Pipeline de conteúdo do sombreador**|Visual Shader Graph (*.dgsl*)|Saída do Sombreador Compilado (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurar ativos do pipeline de conteúdo do ativo
 
@@ -89,15 +89,15 @@ Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de ar
 
 3. Em **Propriedades de configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de conteúdo de imagem** para ativos de textura e imagens) e, em seguida, na grade de propriedades, defina as propriedades para os valores apropriados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
 
-4. Escolha o botão **OK**.
+4. Clique no botão **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da imagem
 
 Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo de textura, é possível compactar a textura de várias maneiras, indicar se os níveis de MIP devem ser gerados no tempo de compilação e alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
-|**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
+|**Comprimir**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem compactação**<br />-   **compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Converter para formato alfa pré-multiplicado|**Sim** para converter a imagem para um formato alfa pré-multiplicado no arquivo de saída; caso contrário, **Não**. Apenas o arquivo de saída é alterado, a imagem de origem permanece inalterada.|
 |**Gerar Mips**|**Sim** para gerar uma cadeia de MIP completa no tempo de build no arquivo de saída; caso contrário, **Não**. Se **Não** e o arquivo de origem já contiver uma cadeia de mipmap, o arquivo de saída terá uma cadeia MIP; caso contrário, o arquivo de saída não terá uma cadeia MIP.|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
@@ -106,7 +106,7 @@ Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo d
 
 Quando você usar a ferramenta de pipeline de conteúdo da malha para criar um ativo de malha, é possível alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
 
@@ -114,7 +114,7 @@ Quando você usar a ferramenta de pipeline de conteúdo da malha para criar um a
 
 Quando você usar a ferramenta de pipeline de conteúdo do sombreador para criar um ativo de sombreador, é possível alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
 
@@ -211,10 +211,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Cargo|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|
 |[Como exportar uma textura que tenha Alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|
-|[Como: exportar uma textura para uso com aplicativos Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|
+|[Como: Exportar uma textura para uso com aplicativos Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descreve as ferramentas de edição que o Visual Studio fornece para criar e manipular ativos 3D, incluindo texturas e imagens, modelos 3D e sombreadores.|
-|[Como exportar um sombreador](../designers/how-to-export-a-shader.md)|Descreve como exportar o sombreador do Designer do Sombreador.|
+|[Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)|Descreve como exportar o sombreador do Designer do Sombreador.|

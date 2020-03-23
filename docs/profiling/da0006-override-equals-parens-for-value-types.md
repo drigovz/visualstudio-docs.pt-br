@@ -15,19 +15,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779526"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
 
 |||
 |-|-|
-|Id da Regra|DA0006|
+|ID de regra|DA0006|
 |Categoria|Uso do .NET Framework|
-|Métodos de Criação de Perfil|Amostragem|
+|Métodos de Criação de Perfil|amostragem|
 |Mensagem|Substituir Equals e operador de igualdade em tipos de valor.|
 |Tipo de mensagens|Aviso|
 

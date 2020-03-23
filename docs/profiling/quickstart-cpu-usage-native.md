@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 58c91590e751970f9291c8e13ccb9fc2abcc8728
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279223"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550085"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Início Rápido: analisar dados de uso da CPU no Visual Studio (C++)
 
 O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problemas de desempenho em seu aplicativo. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos. Aqui, vamos examinar a ferramenta para identificar os gargalos de desempenho devido ao alto uso da CPU. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
-O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
+O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecerão diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
 
 O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**). No Windows 7 e posteriores, você pode usar a ferramenta post-mortem, o [Criador de Perfil de Desempenho](../profiling/profiling-feature-tour.md).
 
@@ -33,31 +33,31 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 1. Abra o Visual Studio e crie o projeto.
 
    ::: moniker range="vs-2017"
-   Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
+   Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-   Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **Visual C++** e escolha área de **trabalho do Windows**. No painel central, escolha **aplicativo de console do Windows**. Em seguida, nomeie o projeto *Diagnostics_Get_Started_Native*.
+   Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda o **Visual C++** e escolha **o Windows Desktop**. No painel do meio, escolha **o Aplicativo do Console do Windows**. Em seguida, nomeie o projeto *Diagnostics_Get_Started_Native*.
 
-   Se você não vir o modelo de projeto de **aplicativo do console do Windows** , escolha o link **abrir instalador do Visual Studio** no painel esquerdo da caixa de diálogo **novo projeto** . O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de desktop C++ com** carga de trabalho e, em seguida, escolha **Modificar**.
+   Se você não ver o modelo de projeto **do Aplicativo do Console do Windows,** escolha o link Do **instalador do Estúdio Visual Aberto** no painel esquerdo da caixa de diálogo Novo **Projeto.** O Instalador do Visual Studio é iniciado. Escolha o desenvolvimento da área de trabalho com carga de trabalho **C++** e, em seguida, escolha **Modificar**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+   Se a janela inicial não estiver aberta, escolha **Janela inicial de** **arquivo** > .
 
-   Na tela Iniciar, selecione **Criar um novo projeto**.
+   Na janela inicial, escolha **Criar um novo projeto**.
 
-   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C++** escolha na lista idioma e, em seguida, escolha **Windows** na lista plataforma.
+   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **C++** na lista de idiomas e escolha **o Windows** na lista Plataforma.
 
-   Depois de aplicar os filtros de idioma e plataforma, escolha o modelo de **aplicativo de console** e escolha **Avançar**.
+   Depois de aplicar os filtros de idioma e plataforma, escolha o modelo do **aplicativo de console** e escolha **Next**.
 
    > [!NOTE]
-   > Se você não vir o modelo de **aplicativo de console** , poderá instalá-lo na janela **criar um novo projeto** . Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, na instalador do Visual Studio, escolha o **desenvolvimento de desktop C++ com** carga de trabalho.
+   > Se você não ver o modelo do **aplicativo de console,** você pode instalá-lo a partir da janela Criar uma nova janela **de projeto.** Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Visual Studio Installer, escolha o desenvolvimento do Desktop com carga de trabalho **C++.**
 
-   Na janela **configurar seu novo projeto** , digite ou insira *Diagnostics_Get_Started_Native* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+   Na **Configure sua nova** janela de projeto, digite ou digite *Diagnostics_Get_Started_Native* na caixa nome **do Projeto.** Em seguida, escolha **Criar**.
 
    ::: moniker-end
 
    O Visual Studio abre seu novo projeto.
 
-1. Em *Diagnostics_Get_Started_Native*, substitua o código a seguir
+1. Em *Diagnostics_Get_Started_Native,* substitua o seguinte código
 
     ```c++
     int main()
@@ -140,20 +140,22 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
 2. Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final da função `main`:
 
-     ![Definir pontos de interrupção para a criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Definir pontos de interrupção para criação de perfil")
+     ![Definir pontos de interrupção para criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Definir pontos de interrupção para criação de perfil")
 
-    > [!TIP]
-    > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
+    Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-3. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+    >[!TIP]
+    > Quando pausado em um ponto de ruptura ou uma operação de revisão de código, você também pode analisar o desempenho usando [PerfTips](../profiling/perftips.md).
 
-4. Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+3. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para trazer a janela novamente, clique em **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
+
+4. Clique **em Depurar** > **Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).
 
      Quando o aplicativo terminar de ser carregado, a exibição **Resumo** das Ferramentas de Diagnóstico será exibida.
 
 5. Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
 
-     ![Ferramentas de diagnóstico Habilitar criação de perfil de CPU](../profiling/media/quickstart-cpu-usage-summary.png "Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico")
+     ![Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-summary.png "Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico")
 
      Quando a coleta de dados estiver habilitada, o botão de registro exibe um círculo vermelho.
 
@@ -175,7 +177,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
 1. Na lista de funções, examine as funções que fazem a maior parte do trabalho.
 
-     ![Guia uso de CPU das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
+     ![Guia de uso da CPU da Diagnostics Tools](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUseTab")
 
     > [!TIP]
     > As funções são listadas em ordem, começando com as que fazem a maior parte do trabalho (elas não ficam na ordem de chamada). Isso ajuda a identificar rapidamente as funções com execução mais longa.
@@ -184,7 +186,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
     Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo.
 
-    ![Exibição do chamador de chamadas de ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+    ![Exibição Chamador/Computador Chamado das Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
     Nesta exibição, a função selecionada aparece no título e na caixa **Função Atual** (`getNumber`, neste exemplo). A função que chamou a função atual é mostrada à esquerda em **Função Chamadora** e todas as funções chamadas pela função atual são mostradas na caixa **Funções Chamadas** à direita. (Você pode selecionar cada uma das caixas para alterar a função atual.)
 

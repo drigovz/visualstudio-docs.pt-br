@@ -15,17 +15,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584485"
 ---
 # <a name="load-test-results-summary-overview"></a>Visão geral do resumo dos resultados do teste de carga
 
 Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para obter mais informações, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
-![{1&gt;Exibição resumida&lt;1}](../test/media/ltest_summaryview.png)
+![Exibição do resumo](../test/media/ltest_summaryview.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -58,7 +58,7 @@ As seções de fechamento aparecem ao final do resumo e podem ser recolhidas par
 
 - Recursos de controlador e agente
 
-- Erros do
+- Errors
 
 ## <a name="test-run-information"></a>Informações sobre a execução de teste
 
@@ -76,7 +76,7 @@ O valor de percentil de **Tempo de página 95% (seg.)** informa que 95% das pág
 
 ## <a name="key-statistic-top-5-slowest-tests"></a>Estatística-chave: os 5 testes mais lentos
 
-A seção de testes mais lentos contém os 5 testes mais lentos no teste de carga. O nome do teste e o tempo médio do teste são exibidos para cada teste. Os testes são listados em ordem decrescente. Você pode escolher o nome de um teste para abrir a tabela **Testes** e inspecionar mais detalhes desse teste. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+A seção de testes mais lentos contém os 5 testes mais lentos no teste de carga. O nome do teste e o tempo médio do teste são exibidos para cada teste. Os testes são listados em ordem decrescente. Você pode escolher o nome de um teste para abrir a tabela **Testes** e inspecionar mais detalhes desse teste. Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 O valor de percentil de **Tempo de teste 95% (seg.)** informa que 95% dos testes foram concluídos em menos do que esse tempo em segundos.
 
@@ -86,7 +86,7 @@ Se o rastreamento SQL for habilitado no teste de carga, a seção de consultas m
 
 ## <a name="test-results"></a>Resultados do teste
 
-A seção de resultados do teste contém uma lista de todos os testes e cenários no teste de carga. O nome do teste, o cenário, o número de vezes em que ele foi executado, o número de vezes em que ele falhou e o tempo médio do teste são exibidos. Você pode escolher o nome de um teste para abrir a tabela **Testes** e inspecionar mais detalhes desse teste. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+A seção de resultados do teste contém uma lista de todos os testes e cenários no teste de carga. O nome do teste, o cenário, o número de vezes em que ele foi executado, o número de vezes em que ele falhou e o tempo médio do teste são exibidos. Você pode escolher o nome de um teste para abrir a tabela **Testes** e inspecionar mais detalhes desse teste. Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
@@ -100,7 +100,7 @@ A seção de resultados da página contém uma lista de todas as páginas da Web
 
 ## <a name="transaction-results"></a>Resultados da transação
 
-A seção de resultados da transação contém uma lista de todas as transações no teste de carga. O nome da transação, o cenário, o teste, o tempo de resposta, o tempo decorrido e a contagem são exibidos. Você pode escolher o nome de uma transação para abrir a tabela **Transações** e inspecionar mais detalhes dessa transação. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+A seção de resultados da transação contém uma lista de todas as transações no teste de carga. O nome da transação, o cenário, o teste, o tempo de resposta, o tempo decorrido e a contagem são exibidos. Você pode escolher o nome de uma transação para abrir a tabela **Transações** e inspecionar mais detalhes dessa transação. Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
@@ -125,9 +125,9 @@ A seção Controlador e recursos do agente contém uma lista dos computadores us
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
 
-## <a name="errors"></a>Erros do
+## <a name="errors"></a>Errors
 
-A seção erros contém uma lista de todos os erros ocorridos durante o teste de carga. O tipo e o subtipo do erro, a contagem e a última mensagem são exibidos. Você pode escolher um erro para abrir a tabela **Erros** e inspecionar mais detalhes desse erro. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+A seção erros contém uma lista de todos os erros ocorridos durante o teste de carga. O tipo e o subtipo do erro, a contagem e a última mensagem são exibidos. Você pode escolher um erro para abrir a tabela **Erros** e inspecionar mais detalhes desse erro. Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
@@ -136,7 +136,7 @@ A seção erros contém uma lista de todos os erros ocorridos durante o teste de
 
 É possível imprimir o resumo do teste de carga escolhendo **Imprimir** no menu de atalho no resumo. É possível visualizar a impressão escolhendo primeiro **Visualizar impressão** no menu de atalho no resumo. Você também pode imprimir diretamente na tela de visualização.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

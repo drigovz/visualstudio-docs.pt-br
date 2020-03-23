@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.openlocfilehash: 43720947d36fec1ee64c81a48f7bc3eb7466d034
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983369"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
@@ -24,14 +24,14 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 > * Integrar com recursos de armazenamento do Azure e da Web
 > * Organizar um fluxo de trabalho envolvendo várias funções do Azure
 
-## <a name="requirements"></a>Requisitos do
+## <a name="requirements"></a>Requisitos
 
 - Visual Studio para Mac 7.5 ou posterior.
-- Uma assinatura do Azure (disponível gratuitamente em [https://azure.com/free](https://azure.com/free)).
+- Uma assinatura do Azure [https://azure.com/free](https://azure.com/free)(disponível gratuitamente)
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercício 1: Criar um projeto do Azure Functions
 
-1. Inicialize o **Visual Studio para Mac**.
+1. Lançar **o Visual Studio para Mac**.
 
 2. Selecione **Arquivo > Nova Solução**.
 
@@ -54,7 +54,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercício 2: Criar uma Conta de Armazenamento do Azure
 
-1. Faça logon na sua conta do Azure em [https://portal.azure.com](https://portal.azure.com).
+1. Faça logon na sua [https://portal.azure.com](https://portal.azure.com)conta do Azure em .
 
 1. Na seção **Favoritos**, localizada à esquerda na tela, selecione **Contas de Armazenamento**:
 
@@ -88,7 +88,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemplo 3: Criar e depurar uma função do Azure
 
-1. Agora, você está pronto para começar a adicionar algum código. Ao trabalhar com uma biblioteca de classes .NET, funções do Azure são adicionadas como métodos estáticos. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto do **AzureFunctions** e selecione **Adicionar > Adicionar Função**:
+1. Agora, você está pronto para começar a adicionar algum código. Ao trabalhar com uma biblioteca de classes .NET, funções do Azure são adicionadas como métodos estáticos. No **Solution Pad**, clique com o botão direito do mouse no nó do projeto **AzureFunctions** e **selecione Adicionar > Adicionar função**:
 
     ![Opção Adicionar Função](media/azure-functions-lab-image11.png)
 
@@ -126,7 +126,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Novo método de execução com o atributo FunctionName realçado](media/azure-functions-lab-image13.png)
 
-1. Em seguida, o método é marcado como um método **estático público**, o que é obrigatório. Você também observará que o valor de retorno é um **int**. A menos que especificado em contrário usando atributos de método, qualquer valor de retorno não void de uma função do Azure é retornado ao cliente como texto. Por padrão, ele é retornado como **XML**, mas pode ser alterado para **JSON**, o que você fará mais tarde no laboratório.
+1. Em seguida, o método é marcado como um método **estático público**, o que é obrigatório. Você também notará que o valor de retorno é um **int**. A menos que especificado de outra forma usando atributos do método, qualquer valor de retorno não nulo de uma função Azure é devolvido ao cliente como texto. Por padrão, ele é retornado como **XML**, mas pode ser alterado para **JSON**, o que você fará mais tarde no laboratório.
 
     ![Novo método de execução com a inicialização do método realçada](media/azure-functions-lab-image14.png)
 
@@ -162,7 +162,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Remova o ponto de interrupção usando o mesmo método usado para adicioná-lo anteriormente (clique na margem ou selecione a linha e pressione **F9**).
 
-1. Pressione **F5** para continuar a execução.
+1. Pressione **F5** para continuar funcionando.
 
 1. No navegador, será renderizado o resultado XML do método. Como esperado, a operação de adição codificada produz uma soma plausível. Observe que, se você vir apenas "3" no Safari, vá até **Safari > Preferências > Avançado**, marque a caixa de seleção "**Exibir menu Desenvolver na barra de menus**" e recarregue a página.
 
@@ -225,7 +225,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. No final da primeira associação (após a linha **"name": "req"** ), adicione as propriedades abaixo. Não deixe de incluir uma vírgula na linha anterior. Essa propriedade substitui a raiz padrão, de forma que agora os parâmetros **int** serão extraídos do caminho e colocados nos parâmetros de método chamados **x** e **y**.
+1. No final da primeira associação (após a linha **"name": "req"**), adicione as propriedades abaixo. Não deixe de incluir uma vírgula na linha anterior. Essa propriedade substitui a raiz padrão, de forma que agora os parâmetros **int** serão extraídos do caminho e colocados nos parâmetros de método chamados **x** e **y**.
 
     ```json
     "direction": "in",
@@ -242,7 +242,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
     }
     ```
 
-1. Atualize também a propriedade **entryPoint** na parte inferior do arquivo para usar um método chamado **"Add2"** , como mostrado abaixo. Isso ilustra que o caminho **api/Adder...** pode ser mapeado para um método apropriado com qualquer nome (**Add2** aqui).
+1. Atualize também a propriedade **entryPoint** na parte inferior do arquivo para usar um método chamado **"Add2"**, como mostrado abaixo. Isso ilustra que o caminho **api/Adder...** pode ser mapeado para um método apropriado com qualquer nome (**Add2** aqui).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -298,7 +298,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![URL para funções Http](media/azure-functions-lab-image31.png)
 
-1. Retorne para a janela do navegador e navegue até **http://localhost:7071/api/Adder/3/5** .
+1. Retorne a janela do **http://localhost:7071/api/Adder/3/5**navegador e navegue para .
 
 1. Dessa vez, o método funciona mais uma vez, obtendo os parâmetros do caminho e produzindo uma soma.
 
@@ -347,7 +347,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
 
 1. Pressione **F5** para criar e executar o projeto.
 
-1. Na guia do navegador, navegue até **http://localhost:7071/api/Process/4/6** . Isso colocará outra mensagem na fila, o que deve fazer com que outra linha seja adicionada à tabela.
+1. Na guia do navegador, navegue até **http://localhost:7071/api/Process/4/6**. Isso colocará outra mensagem na fila, o que deve fazer com que outra linha seja adicionada à tabela.
 
 1. Retorne ao **Terminal** e observe a solicitação de entrada de **4 + 6**.
 
@@ -380,11 +380,11 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
 
 1. Pressione **F5** para criar e executar o projeto.
 
-1. Na guia do navegador, atualize a URL em **http://localhost:7071/api/Process/4/6** . Como a linha da tabela para este registro existe, ela deve ser retornada imediatamente em erros. Como não há uma saída HTTP, você pode ver a saída no Terminal.
+1. Na guia do navegador, **http://localhost:7071/api/Process/4/6**atualize a URL em . Como a linha da tabela para este registro existe, ela deve ser retornada imediatamente em erros. Como não há uma saída HTTP, você pode ver a saída no Terminal.
 
     ![Saída do Terminal mostrando que a linha da tabela já existe](media/azure-functions-lab-image33.png)
 
-1. Atualize a URL para refletir uma combinação que ainda não foi testada, como **http://localhost:7071/api/Process/5/7** . Observe a mensagem no Terminal, que indica que a linha da tabela não foi encontrada (conforme esperado).
+1. Atualize a URL para refletir uma **http://localhost:7071/api/Process/5/7**combinação ainda não testada, como . Observe a mensagem no Terminal, que indica que a linha da tabela não foi encontrada (conforme esperado).
 
     ![Saída do Terminal mostrando novo processo](media/azure-functions-lab-image34.png)
 

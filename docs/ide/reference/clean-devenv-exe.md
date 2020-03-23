@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570460"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -30,17 +30,17 @@ Limpa todos os arquivos intermediários e diretórios de saída.
 devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-- *SolutionName*
+- *Solutionname*
 
-  Necessária. O caminho completo e o nome do arquivo de solução.
+  Obrigatórios. O caminho completo e o nome do arquivo de solução.
 
 - *Config*
 
   Opcional. A configuração (por exemplo, `Debug` ou `Release`) para limpar os arquivos intermediários da solução nomeada em *SolutionName*. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se esse argumento não for especificado ou for uma cadeia de caracteres vazia (`""`), a ferramenta usará a configuração ativa da solução.
 
-- `/Project` *ProjName*
+- `/Project`*ProjName*
 
   Opcional. O caminho e o nome de um arquivo de projeto na solução. Você pode inserir o nome de exibição do projeto ou um caminho relativo da pasta *SolutionName* para o arquivo do projeto. Também é possível inserir o caminho completo e o nome do arquivo do projeto.
 
@@ -48,7 +48,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Opcional. O nome da configuração de build do projeto (por exemplo, `Debug` ou `Release`) a ser usado ao limpar o `/Project` nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se essa opção for especificada, ela substituirá o argumento *Config*.
 
-- `/Out` *NomeDoArquivoDeSaída*
+- `/Out`*Nome de saída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -74,9 +74,9 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Reconstruir (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

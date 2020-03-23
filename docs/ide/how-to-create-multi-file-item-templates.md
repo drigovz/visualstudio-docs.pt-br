@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593727"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivos
@@ -36,7 +36,7 @@ Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um
 
 1. Crie o modelo de item da mesma forma em que você criaria manualmente um modelo de item de arquivo único, mas inclua cada arquivo que constitui o item multiarquivos.
 
-1. No arquivo XML *.vstemplate*, adicione um elemento `ProjectItem` a cada arquivo individual e, em seguida, adicione um atributo `TargetFileName` a este elemento. Defina os valores do atributo `TargetFileName` como *$fileinputname$.ExtensãoDeArquivo*, em que *ExtensãoDeArquivo* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo:
+1. No arquivo *.vstemplate* XML, `ProjectItem` adicione um elemento para `TargetFileName` cada arquivo individual e adicione um atributo a este elemento. Defina o `TargetFileName` valor do atributo para *$fileinputname$. FileExtension*, onde *FileExtension* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo: 
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -53,15 +53,15 @@ Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um
      > [!NOTE]
      > Quando um item derivado deste modelo for adicionado a um projeto, os nomes de arquivo serão derivados do nome que o usuário inserir na caixa de diálogo **Adicionar Novo Item**.
 
-1. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** .
+1. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para a** > **pasta Compactada (com zíper).**
 
-   Os arquivos selecionados são compactados em um arquivo *.zip*.
+   Os arquivos selecionados são compactados em um arquivo *.zip.*
 
-1. Copie o arquivo *.zip* para o local do modelo de item do usuário. Por padrão, o diretório é *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copie o arquivo *.zip* para o local do modelo do item do usuário. Por padrão, o diretório é *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Feche o Visual Studio e, em seguida, o reabra.
 
-1. Crie um novo projeto ou abra um projeto existente e, em seguida, escolha **Projeto** > **Adicionar Novo Item** ou pressione **Ctrl**+**Shift**+**A**.
+1. Crie um novo projeto ou abra um projeto existente e escolha **'Adicionar** > **novo item'** ou **pressione O**+**turno**+**A**.
 
    O modelo de item multiarquivos aparece na caixa de diálogo **Adicionar Novo Item**.
 
@@ -92,9 +92,9 @@ O exemplo a seguir mostra um modelo do Windows Forms. Quando um item é criado c
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Criar modelos de projeto e itens](../ide/creating-project-and-item-templates.md)
+- [Como: Criar modelos de itens](../ide/how-to-create-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md)

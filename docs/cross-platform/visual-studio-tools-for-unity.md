@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797120"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Ferramentas do Visual Studio para Unity
@@ -27,7 +27,7 @@ Embora o editor do Unity seja ótimo para consolidar o mundo do jogo, não é po
 
 Contudo, as Ferramentas do Visual Studio para Unity são muito mais do que isso; elas também trazem uma profunda integração com o Unity editor para que você gaste menos tempo alternando as ferramentas para realizar tarefas simples, proporciona melhorias de produtividade específicas do Unity e coloca a documentação do Unity em suas mãos.
 
-## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
+## <a name="overview"></a>Visão geral
 
 Visite a página [Compilar Jogos do Unity com o Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) para ter uma visão geral das vantagens de usar o Visual Studio para desenvolvimento no Unity, ou continue abaixo para obter detalhes sobre os principais recursos das Ferramentas do Visual Studio para Unity:
 
@@ -48,16 +48,16 @@ As Ferramentas do Visual Studio para Unity dá suporte aos recursos robustos de 
 * Inspecione e modifique o valor de variáveis e argumentos.
 * Analise objetos complexos e estruturas de dados.
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnóstico de Roslyn e correções rápidas para o Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnósticos de Roslyn e correções rápidas para unidade
 
-Escreva um código melhor que capture as práticas recomendadas com a profunda compreensão do Visual Studio dos projetos do Unity.
+Escreva um código melhor que capture as melhores práticas com a profunda compreensão do Visual Studio sobre projetos de Unidade.
 
-![Comparação de cadeia de caracteres de refatoração do VS com CompareTag](media/unity-diagnostics.png)
+![VS refatorando a comparação de strings com CompareTag](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Ferramentas do Visual Studio para Mac para Unity
 
 O Visual Studio para Mac também dá suporte a projetos do Unity. Para saber mais, confira a [documentação das Ferramentas do Visual Studio para Mac para Unity](/visualstudio/mac/unity-tools).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 * [Introdução às Ferramentas do Visual Studio para Unity](getting-started-with-visual-studio-tools-for-unity.md)

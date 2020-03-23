@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590794"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar a legenda da exibição Grafos para analisar testes de carga
@@ -37,12 +37,12 @@ As seguintes informações estão contidas na legenda:
 
 - **Cor:** a coluna **Cor** mostra a cor e o estilo da linha plotada do contador de desempenho. Use a caixa de diálogo **Opções de plotagem** para alterar a cor ou o estilo da linha de um contador de desempenho no gráfico. A caixa de diálogo **Opções de plotagem** está disponível no menu de atalho da legenda.
 
-- **Estatísticas:** as colunas **Mín.** , **Máx.** , **Média** e **Último** mostram as respectivas estatísticas do contador de desempenho. Esses valores correspondem aos dados exibidos na região visível do gráfico. Por exemplo, se você ampliar uma região de uma execução, as estatísticas da legenda refletirão valores somente da área ampliada. A coluna "Último" é o valor do contador de desempenho do intervalo de amostragem concluído mais recentemente.
+- **Estatísticas:** as colunas **Mín.**, **Máx.**, **Média** e **Último** mostram as respectivas estatísticas do contador de desempenho. Esses valores correspondem aos dados exibidos na região visível do gráfico. Por exemplo, se você ampliar uma região de uma execução, as estatísticas da legenda refletirão valores somente da área ampliada. A coluna "Último" é o valor do contador de desempenho do intervalo de amostragem concluído mais recentemente.
 
     > [!NOTE]
     > A coluna Último só é exibida na legenda do Analisador de Testes de Carga quando o teste de carga está em execução.
 
-     Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para obter mais informações, [consulte Como: Ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 A seleção de um item na legenda faz o seguinte:
 
@@ -57,7 +57,7 @@ A seleção de um item na legenda faz o seguinte:
 > [!TIP]
 > Use o botão suspenso **Opções de Grafo** na barra de ferramentas do **Analisador de Teste de Carga** e selecione **Mostrar Legenda** para mostrar ou ocultar o painel **Legenda** associado à exibição de grafo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Como: Ampliar uma região do gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)

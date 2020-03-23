@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569277"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Gerar substituições dos métodos Equals e GetHashCode no Visual Studio
@@ -24,7 +24,7 @@ Esta geração de código aplica-se a:
 
 **Quando:** gere essas substituições quando houver um tipo que precise ser comparado por um ou mais campos e não pelo local do objeto na memória.
 
-**Por que:**
+**Porque:**
 
 - Se você estiver implementando um tipo de valor, considere substituir o método **Equals** para aumentar desempenho em relação à implementação padrão do método Equals em ValueType.
 
@@ -43,7 +43,7 @@ Esta geração de código aplica-se a:
 
 1. Depois, siga um destes procedimentos:
 
-   - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+   - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
 
    - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
 
@@ -64,7 +64,7 @@ Esta geração de código aplica-se a:
 
    ![Resultado da geração do método](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Geração de código](../code-generation-in-visual-studio.md)
-- [Visualizar alterações](../../ide/preview-changes.md)
+- [Geração de Código](../code-generation-in-visual-studio.md)
+- [Visualizar Alterações](../../ide/preview-changes.md)

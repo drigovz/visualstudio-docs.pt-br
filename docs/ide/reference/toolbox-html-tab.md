@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596431"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
-A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em páginas e formulários da Web. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.
+A guia **HTML** da Caixa de Ferramentas fornece componentes úteis em páginas da Web e formulários da Web. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.
 
 Para criar uma instância de uma ferramenta na guia **HTML**, clique duas vezes na ferramenta para adicioná-la ao documento no ponto de inserção atual ou selecione a ferramenta e arraste-a para a posição desejada na superfície de edição.
 
@@ -180,7 +180,7 @@ Ao arrastar **Tabela** para a superfície do modo de exibição de Design, uma m
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**Image**
+**Imagem**
 
 ![Item Imagem da página HTML](../../ide/reference/media/vximage.gif)
 
@@ -206,7 +206,7 @@ Ao arrastar **Selecionar** para a superfície do modo de exibição de Design, u
 
 É possível criar um elemento `select` multilinha aumentando o valor da propriedade de tamanho.
 
-**Régua horizontal**
+**Regra Horizontal**
 
 ![Item de Régua Horizontal da página HTML](../../ide/reference/media/vxhorizontal.gif)
 
@@ -230,6 +230,6 @@ Ao arrastar **Div** para a superfície do modo de exibição de Design, uma marc
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Caixa de Ferramentas](../../ide/reference/toolbox.md)
+- [Ferramentas](../../ide/reference/toolbox.md)

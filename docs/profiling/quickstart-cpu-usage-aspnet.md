@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb1d5fc769254f112e3a4cb757b173e0dbded3bb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275075"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550101"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Início rápido: analisar dados de uso da CPU no Visual Studio (ASP.NET Core)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Quickstart: Analise os dados de uso da CPU no Visual Studio (ASP.NET Core)
 
 O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problemas de desempenho em seu aplicativo. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos. Aqui, vamos examinar a ferramenta para identificar os gargalos de desempenho devido ao alto uso da CPU. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
-O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede.
+O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecerão diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede.
 
 O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**). No Windows 7 e posteriores, você pode usar a ferramenta post-mortem, o [Criador de Perfil de Desempenho](../profiling/profiling-feature-tour.md).
 
@@ -32,36 +32,36 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 1. Abra o Visual Studio e crie o projeto.
 
    ::: moniker range="vs-2017"
-   Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
+   Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-   Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **Visual C#** e, em seguida, escolha **Web**. No painel central, escolha **aplicativo Web ASP.net (.NET Core)** . Em seguida, nomeie o projeto *MyProfilingApp_MVC*.
+   Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda o **Visual C#** e escolha **web**. No painel do meio, escolha **ASP.NET Web Application (.NET Core)**. Em seguida, nomeie o projeto *MyProfilingApp_MVC*.
 
    > [!NOTE]
-   > Se você não vir o modelo de projeto do **aplicativo Web ASP.net (.NET Core)** , escolha o link **abrir instalador do Visual Studio** no painel esquerdo da caixa de diálogo **novo projeto** . O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
+   > Se você não ver o modelo de projeto **ASP.NET Web Application (.NET Core),** escolha o link **Do instalador do Estúdio Visual Aberto** no painel esquerdo da caixa de diálogo Novo **Projeto.** O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
 
    Na caixa de diálogo que aparece, escolha **MVC** no painel central e clique em **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+   Se a janela inicial não estiver aberta, escolha **Janela inicial de** **arquivo** > .
 
-   Na tela Iniciar, selecione **Criar um novo projeto**.
+   Na janela inicial, escolha **Criar um novo projeto**.
 
-   Na janela **criar um novo projeto** , digite ou digite *ASP.net* na caixa de pesquisa. Em seguida, escolha **C#** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma.
+   Na **Criação de uma nova** janela de projeto, digite ou digite *asp.net* na caixa de pesquisa. Em seguida, escolha **C#** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma.
 
-   Depois de aplicar os filtros de idioma e plataforma, escolha o modelo **aplicativo Web ASP.net (.NET Core)** e, em seguida, escolha **Avançar**.
+   Depois de aplicar os filtros de idioma e plataforma, escolha o modelo **ASP.NET Web Application (.NET Core)** e escolha **Next**.
 
    > [!NOTE]
-   > Se você não vir o modelo de **aplicativo Web do ASP.net (.NET Core)** , poderá instalá-lo na janela **criar um novo projeto** . Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento Web e ASP.NET**.
+   > Se você não ver o modelo **ASP.NET Web Application (.NET Core),** poderá instalá-lo a partir da nova janela **Criar um novo projeto.** Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento Web e ASP.NET**.
 
-   Na janela **configurar seu novo projeto** , digite ou insira *MyProfilingApp_MVC* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+   Na **Configure sua nova** janela de projeto, digite ou digite *MyProfilingApp_MVC* na caixa nome **do Projeto.** Em seguida, escolha **Criar**.
 
-   Na janela que aparece, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
+   Na janela que aparece, escolha **A aplicação da Web (Model-View-Controller)** e escolha **Criar**.
 
    ::: moniker-end
 
    O Visual Studio abre seu novo projeto.
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse na pasta Modelos e escolha **Adicionar** > **Classe**.
+1. No Solution Explorer, clique com o botão direito do mouse na pasta Modelos e escolha **Adicionar** > **classe**.
 
 1. Nomeie a nova classe `Data.cs` e escolha **Adicionar**.
 
@@ -211,20 +211,22 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
      ![Definir pontos de interrupção para criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
-    > [!TIP]
-    > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
+    Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-1. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+    >[!TIP]
+    > Quando pausado em um ponto de ruptura ou uma operação de revisão de código, você também pode analisar o desempenho usando [PerfTips](../profiling/perftips.md).
 
-1. Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+1. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para trazer a janela novamente, clique em **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
 
-1. Quando o aplicativo terminar o carregamento, clique no link apropriado na parte superior da página da Web para iniciar a execução do novo código.
+1. Clique **em Depurar** > **Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).
+
+1. Quando o aplicativo terminar de carregar, clique no link apropriado na parte superior da página da Web para começar a executar o novo código.
 
    ::: moniker range="vs-2017"
-   No Visual Studio 2017, clique no link **about** para executar o código.
+   No Visual Studio 2017, clique no link **Sobre** para executar o código.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   No Visual Studio 2019, clique no link de **privacidade** para executar o código.
+   No Visual Studio 2019, clique no link **Privacidade** para executar o código.
    ::: moniker-end
 
 1. Observe a exibição **Resumo** das Ferramentas de Diagnóstico aparecer.

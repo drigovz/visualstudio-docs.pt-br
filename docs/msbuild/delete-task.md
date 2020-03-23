@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634273"
 ---
 # <a name="delete-task"></a>tarefa Delete
@@ -33,7 +33,7 @@ Exclui os arquivos especificados.
 
 A tabela a seguir descreve os parâmetros da tarefa `Delete`.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`DeletedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica os arquivos que foram excluídos com êxito.|
 |`Files`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos a serem excluídos.|
@@ -44,7 +44,7 @@ A tabela a seguir descreve os parâmetros da tarefa `Delete`.
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
-> Tenha cuidado ao usar curingas com a tarefa de `Delete`. Você pode excluir facilmente os arquivos errados com expressões como `$(SomeProperty)\**\*.*` ou `$(SomeProperty)/**/*.*`, especialmente se a propriedade for avaliada como uma cadeia de caracteres vazia; nesse caso, o parâmetro `Files` pode avaliar a raiz da unidade e excluir muito mais do que você queria excluir.
+> Tenha cuidado ao usar curingas com a `Delete` tarefa. Você pode facilmente excluir os arquivos `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*`errados com expressões como ou , especialmente se `Files` a propriedade avaliar para uma seqüência vazia, nesse caso o parâmetro pode avaliar a raiz de sua unidade e excluir muito mais do que você queria excluir.
 
 ## <a name="example"></a>Exemplo
 

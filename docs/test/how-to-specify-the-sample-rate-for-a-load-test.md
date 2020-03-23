@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594819"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Como especificar a taxa de amostra para uma configuração de execução de teste de carga
@@ -21,16 +21,16 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Usando o **Editor de Teste de Carga**, você pode editar um valor da propriedade **Taxa de Amostragem** das configurações de execução na janela **Propriedades**. Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
+Usando o **Editor de Teste de Carga**, você pode editar um valor da propriedade **Taxa de Amostragem** das configurações de execução na janela **Propriedades**. Para obter uma lista completa das propriedades de configurações de execução e suas descrições, consulte [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-Escolha um valor para a propriedade **Taxa de Amostragem** da configuração de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para obter mais informações, confira [Como especificar a taxa de amostra para uma configuração de execução de teste de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Escolha um valor para a propriedade **Taxa de Amostragem** da configuração de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para obter mais informações, [consulte Como: Especificar a taxa de amostra para uma configuração de execução de teste de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Veja algumas diretrizes para taxas de amostragem:
 
 |Duração do teste de carga|Taxa de amostragem recomendada|
 |-|-----------------------------|
 |\< 1 hora|5 segundos|
-|1 a 8 horas|15 segundos|
+|1 a 8 horas|15 s|
 |8 a 24 horas|30 segundos|
 |> 24 horas|60 segundos|
 
@@ -50,7 +50,7 @@ Veja algumas diretrizes para taxas de amostragem:
 
 5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Taxa de Amostragem**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
+- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597315"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Ativar/Desativar Ponto de Interrupção
@@ -30,7 +30,7 @@ Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no lo
 Debug.ToggleBreakpoint [text]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `text`\
 Opcional. Se o texto for especificado, a linha será marcada como um ponto de interrupção nomeado. Caso contrário, a linha será marcada como um ponto de interrupção sem nome, semelhante ao que acontece quando você pressiona F9.
@@ -42,7 +42,7 @@ O exemplo a seguir ativa/desativa o ponto de interrupção atual.
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

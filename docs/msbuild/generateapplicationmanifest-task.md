@@ -20,21 +20,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634091"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 
-Gera um manifesto de aplicativo ClickOnce ou um manifesto nativo. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto de aplicativo ClickOnce estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.
+Gera um manifesto de aplicativo ClickOnce ou um manifesto nativo. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo ClickOnce estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.
 
 ## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `GenerateApplicationManifest`.
 
-| Parâmetro | DESCRIÇÃO |
+| Parâmetro | Descrição |
 |---------------------------------| - |
 | `AssemblyName` | Parâmetro `String` opcional.<br /><br /> Especifica o campo `Name` da identidade do assembly para o manifesto gerado. Se esse parâmetro não for especificado, o nome será inferido com base nos parâmetros `EntryPoint` ou `InputManifest`. Se nenhum nome puder ser criado, a tarefa gerará um erro. |
 | `AssemblyVersion` | Parâmetro `String` opcional.<br /><br /> Especifica o campo `Version` da identidade do assembly para o manifesto gerado. Se o parâmetro não for especificado, será usado o valor padrão de “1.0.0.0”. |
@@ -42,7 +42,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateApplicationManifest
 | `ConfigFile` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica qual item contém o arquivo de configuração de aplicativo. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado. |
 | `Dependencies` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de itens que define o conjunto de assemblies dependentes para o manifesto gerado. Cada item pode ser descrito com mais detalhes por metadados do item para indicar o estados de implantação adicionais e o tipo de dependência. Para obter mais informações, confira [Metadados de item](#item-metadata). |
 | `Description` | Parâmetro `String` opcional.<br /><br /> Especifica a descrição do aplicativo ou componente. |
-| `EntryPoint` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um único item que indica o ponto de entrada para o assembly do manifesto gerado.<br /><br /> Para um manifesto do aplicativo ClickOnce, esse parâmetro especifica o assembly que é iniciado quando o aplicativo é executado. |
+| `EntryPoint` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um único item que indica o ponto de entrada para o assembly do manifesto gerado.<br /><br /> Para um manifesto do aplicativo ClickOnce, este parâmetro especifica o conjunto que começa quando o aplicativo é executado. |
 | `ErrorReportUrl` | Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a URL da página da Web exibida nas caixas de diálogo durante os relatórios de erro em instalações ClickOnce. |
 | `FileAssociations` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de um ou mais tipos de arquivo associados ao manifesto de implantação do ClickOnce.<br /><br /> As associações de arquivos são válidas somente quando voltado para o .NET Framework 3.5 ou posterior. |
 | `Files` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Os arquivos a serem incluídos no manifesto. Especifique o caminho completo para cada arquivo. |
@@ -76,7 +76,7 @@ As entradas para as dependências e os arquivos podem ser mais decorados ainda c
 
 ## <a name="item-metadata"></a>Metadados do item
 
-|Nome dos metadados|DESCRIÇÃO|
+|Nome dos metadados|Descrição|
 |-------------------|-----------------|
 |`DependencyType`|Indica se a dependência é publicada e instalada com o aplicativo ou um pré-requisito. Esses metadados são válidos para todas as dependências, mas não são usados para arquivos. Os valores disponíveis para esses metadados são:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Instala o valor padrão.|
 |`AssemblyType`|Indica se a dependência é um assembly gerenciado ou nativo. Esses metadados são válidos para todas as dependências, mas não são usados para arquivos. Os valores disponíveis para esses metadados são:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` é o valor padrão, que indica que o gerador de manifesto determinará o tipo de assembly automaticamente.|
@@ -86,12 +86,12 @@ As entradas para as dependências e os arquivos podem ser mais decorados ainda c
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo usa a tarefa `GenerateApplicationManifest` para gerar um manifesto do aplicativo ClickOnce e a tarefa `GenerateDeploymentManifest` para gerar um manifesto de implantação para um aplicativo com um único assembly. Em seguida, ele usa a tarefa `SignFile` para assinar os manifestos.
+Este exemplo `GenerateApplicationManifest` usa a tarefa de gerar `GenerateDeploymentManifest` um manifesto de aplicativo ClickOnce e a tarefa de gerar um manifesto de implantação para um aplicativo com um único conjunto. Em seguida, ele usa a tarefa `SignFile` para assinar os manifestos.
 
-Isso ilustra o cenário de geração de manifesto mais simples possível, em que os manifestos do ClickOnce são gerados para um único programa. Um nome padrão e uma identidade são inferidos do assembly para o manifesto.
+Isso ilustra o cenário de geração de manifestos mais simples possível onde os manifestos do ClickOnce são gerados para um único programa. Um nome padrão e uma identidade são inferidos do assembly para o manifesto.
 
 > [!NOTE]
-> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação de ClickOnce totalmente funcional.
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do ClickOnce em pleno funcionamento.
 >
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
@@ -140,12 +140,12 @@ Isso ilustra o cenário de geração de manifesto mais simples possível, em que
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo usa as tarefas `GenerateApplicationManifest` e `GenerateDeploymentManifest` para gerar manifestos de implantação e de aplicativo ClickOnce para um aplicativo com um único assembly, especificando o nome e a identidade dos manifestos.
+Este exemplo `GenerateApplicationManifest` usa `GenerateDeploymentManifest` as tarefas para gerar manifestos de aplicativo e implantação do ClickOnce para um aplicativo com um único conjunto, especificando nome e identidade de manifestos.
 
 Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade dos manifestos são especificados explicitamente. Além disso, este exemplo é configurado como um aplicativo online em vez de um aplicativo instalado.
 
 > [!NOTE]
-> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação de ClickOnce totalmente funcional.
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do ClickOnce em pleno funcionamento.
 >
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
@@ -201,10 +201,10 @@ Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo usa as tarefas `GenerateApplicationManifest` e `GenerateDeploymentManifest` para gerar manifestos de implantação e aplicativo ClickOnce para um aplicativo com vários arquivos e assemblies.
+Este exemplo `GenerateApplicationManifest` usa `GenerateDeploymentManifest` as tarefas e tarefas para gerar manifestos de aplicativo e implantação do ClickOnce para um aplicativo com vários arquivos e conjuntos.
 
 > [!NOTE]
-> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação de ClickOnce totalmente funcional.
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do ClickOnce em pleno funcionamento.
 >
 > [!NOTE]
 > Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, confira [Tarefa SignFile](../msbuild/signfile-task.md).
@@ -325,7 +325,7 @@ Este exemplo usa a tarefa `GenerateApplicationManifest` para gerar um manifesto 
 Este exemplo produz *Test.exe.manifest*, tornando o aplicativo XCOPY implantável e aproveitando o COM Sem Registro.
 
 > [!NOTE]
-> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação de ClickOnce totalmente funcional.
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do ClickOnce em pleno funcionamento.
 
 ```xml
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569657"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
@@ -41,11 +41,11 @@ A janela **Lista de Erros** permite que você execute as seguintes tarefas:
 
 - Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.
 
-Para exibir a **Lista de Erros**, escolha **Exibir** > **Lista de Erros** ou pressione **Ctrl**+ **\\** +**E**.
+Para exibir a **lista de erros,** escolha **'Exibir** > **lista de erros'** ou **pressione Ctrl**+**\\**+**E**.
 
 É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.
 
-Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla **Shift** e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.
+Para classificar a lista, clique em qualquer cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla **Shift** e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste qualquer cabeçalho de coluna para a esquerda ou para a direita.
 
 ## <a name="error-list-filters"></a>Filtros da Lista de Erros
 
@@ -66,7 +66,7 @@ Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do
 
 A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.
 
-## <a name="search"></a>Pesquisa
+## <a name="search"></a>Search
 
 Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.
 
@@ -74,11 +74,11 @@ Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de fe
 
 É possível copiar a lista de erros e salvá-la em um arquivo. Selecione os erros que você deseja copiar, clique com o botão direito do mouse na seleção e, em seguida, no menu de contexto, selecione **Copiar**. Depois é possível colar os erros em um arquivo. Se você colar os erros em uma planilha do Excel, os campos serão exibidos como colunas diferentes.
 
-## <a name="ui-element-list"></a>Lista de elementos da UI
+## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
 
 Severity
 
-Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]** , **Aviso [inativo]** ).
+Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]**, **Aviso [inativo]**).
 
 Código
 
@@ -88,7 +88,7 @@ Descrição
 
 Exibe o texto da entrada.
 
-{1&gt;Projeto&lt;1}
+Project
 
 Exibe o nome do projeto atual.
 

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915770"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Treinar modelos de IA no Lote do Azure AI
 
-A IA do Lote é um serviço gerenciado que habilita cientistas de dados e pesquisadores de IA a treinar IA e outros modelos de aprendizado de máquina em clusters das máquinas virtuais do Azure, incluindo VMs com suporte de GPU. Você descreve os requisitos do trabalho, onde encontrar as entradas e armazenar as saídas e a IA do Lote cuida do resto. [Saiba mais sobre a IA do Lote do Azure](/azure/batch-ai/overview)
+A IA do Lote é um serviço gerenciado que permite que os pesquisadores de IA e cientistas de dados treinem IA e outros modelos de aprendizado de máquina em clusters de máquinas virtuais do Azure, incluindo VMs com suporte de GPU. Descreva os requisitos do seu trabalho, onde encontrar as entradas e armazenar as saídas, e a IA do Lote cuida do resto. [Saiba mais sobre a IA do Lote do Azure](/azure/batch-ai/overview)
 
 Ela está integrada às Ferramentas do Visual Studio para IA, assim, é possível aumentar de forma dinâmica modelos de treinamento no Azure.  Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), é fácil criar um novo projeto Python usando receitas predefinidas na galeria de exemplos do Azure Machine Learning.
 
@@ -51,9 +51,9 @@ Ela está integrada às Ferramentas do Visual Studio para IA, assim, é possíve
 
     ![Galeria de exemplos](media/train-model/mnist-startup.png)
 
-8. <strong>Clique com o botão direito do mouse em **projeto MNIST,** **Enviar trabalho**</strong>
+8. <strong>Clique com o botão direito do mouse no **projeto do MNIST e clique em** **Enviar Trabalho**</strong>
 
     ![Galeria de exemplos](media/train-model/submit-job.png)
-9. Selecione o cluster da **IA do Lote do Azure** e, depois, clique em **Importar**. Selecione o arquivo `AzureBatchAI_TF_MNIST.json` para preencher rapidamente alguns valores padrão, como qual imagem do Docker usar. Depois, clique em **Enviar**
+9. Selecione o cluster da **IA do Lote do Azure** e, depois, clique em **Importar**. Selecione o arquivo `AzureBatchAI_TF_MNIST.json` para preencher rapidamente alguns valores padrão, como qual imagem do Docker usar. Então clique em **Enviar**
 
     ![Galeria de exemplos](media/train-model/submit-batch.png)

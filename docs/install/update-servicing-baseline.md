@@ -13,17 +13,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114964"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 
 Atualizamos o Visual Studio com frequência durante seu ciclo de vida de produto. Há dois tipos de atualizações: 
 
-* **Atualizações de lançamento secundárias**&mdash;por exemplo, 16.0 a 16.1&mdash;que incluem novos recursos e componentes.  
+* **Pequenas atualizações**&mdash;de versão, por exemplo, 16.0 a 16.1&mdash;que incluem novos recursos e componentes.  
 * **Atualizações de manutenção**, por exemplo, 16.0.4 a 16.0.5, que incluem apenas correções direcionadas para problemas críticos.
 
 Os administradores do Enterprise podem optar por manter seus clientes em uma linha de base de manutenção. Uma linha de base de manutenção é compatível com as atualizações de manutenção por um ano após o lançamento da próxima linha de base de manutenção.
@@ -48,7 +48,7 @@ Os administradores que usam uma instalação de layout de rede devem modificar o
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Instalar uma linha de base de manutenção via internet
 
-Para uma instalação baseada na internet, adicione `--channelUri` com um manifesto de canal inexistente à linha de comando usada para iniciar a instalação. Isso desabilita o Visual Studio de usar a versão mais recente disponível para uma atualização. Veja um exemplo:
+Para uma instalação baseada na internet, adicione `--channelUri` com um manifesto de canal inexistente à linha de comando usada para iniciar a instalação. Isso desabilita o Visual Studio de usar a versão mais recente disponível para uma atualização. Aqui está um exemplo:
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -80,11 +80,11 @@ Para uma instalação baseada na internet, execute o novo instalador de versão 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-* [Instalar o Visual Studio](install-visual-studio.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instale o Visual Studio](install-visual-studio.md)
+* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Como definir as configurações em um arquivo de resposta](automated-installation-with-response-file.md)
 * [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)

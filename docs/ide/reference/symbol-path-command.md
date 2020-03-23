@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589377"
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
@@ -30,7 +30,7 @@ Define a lista de diretórios para o depurador pesquisar símbolos.
 Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 `pathname`
 
 Opcional. Uma lista de caminhos delimitada por ponto-e-vírgula para que o depurador pesquise símbolos.
@@ -52,7 +52,7 @@ Este exemplo exibe uma lista delimitada por ponto-e-vírgula dos caminhos de sí
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

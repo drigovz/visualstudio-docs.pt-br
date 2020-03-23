@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596938"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizar o Editor e o IDE do Visual Studio
@@ -20,13 +20,13 @@ Neste tutorial, que leva de 5 a 10 minutos, personalizaremos o tema de cores do 
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
 
 1. Na barra de menus, que é a linha de menus, como **Arquivo** e **Editar**, escolha **Ferramentas** > **Opções**.
 
-1. Na página de opções **Ambiente** > **Geral**, altere a seleção **Tema de cores** para **Escuro** e, em seguida, escolha **OK**.
+1. Na página **Deops Meio Ambiente** > **Geral,** altere a seleção **de tema de cor** para **Escuro**e escolha **OK**.
 
    O tema de cores para todo o IDE (ambiente de desenvolvimento) do Visual Studio é alterado para **Escuro**.
 
@@ -53,13 +53,13 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
    ::: moniker-end
 
 > [!TIP]
-> É possível instalar temas predefinidos adicionais baixando e instalando o **Visual Studio Color Theme Editor** do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
+> Você pode instalar temas predefinidos adicionais instalando o **Visual Studio Color Theme Editor** do Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
 
 ## <a name="change-text-color"></a>Alterar a cor do texto
 
 Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar um arquivo XML para ver as cores padrão.
 
-1. Na barra de menus, escolha **Arquivo** > **Novo** > **Arquivo**.
+1. Na barra de menu, escolha **Arquivo** > **novo** > **arquivo**.
 
 1. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Arquivo XML** e escolha **Abrir**.
 
@@ -115,7 +115,7 @@ Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar 
 
 Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esperamos que você explore as outras opções de personalização na caixa de diálogo **Opções**, para realmente ter um Visual Studio personalizado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)
+- [Personalize o editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589494"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
@@ -48,12 +48,12 @@ A ilustração a seguir mostra o sombreador que é descrito neste documento, apl
 
 ![Iluminação Lambert aplicada a um modelo.](../designers/media/digit-lambert-effect-result.png)
 
-Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como: Aplicar um Sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
-- [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)
+- [Como: Criar um Sombreador phong básico](../designers/how-to-create-a-basic-phong-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
-- [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)
+- [Nódulos de designer shader](../designers/shader-designer-nodes.md)

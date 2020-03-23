@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591184"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
@@ -25,7 +25,7 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Crie testes de unidade ou testes de IU codificados para executar com a configuração de teste.
 
@@ -35,7 +35,7 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
 1. Na **Gerenciador de Soluções**, clique com o botão direito do mouse em **Itens da Solução**, aponte para **Adicionar** e clique em **Novo Item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é exibida.
+     A caixa de diálogo **Adicionar Novo Item** aparecerá.
 
 2. No painel **Modelos Instalados**, escolha **Configurações de Teste**.
 
@@ -97,13 +97,13 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
 ::: moniker range="vs-2017"
 
-8. No menu **testar** , selecione **configurações de teste** > **Selecione arquivo de configurações de teste** e, em seguida, escolha o arquivo *TestSettingDistributedTestWalkthrough. testsettings* .
+8. No menu **Teste,** selecione **Configurações** > de teste **Selecione Arquivo de configurações de teste** e escolha o arquivo *TestSettingDistributedTestWalkthrough.testsettings.*
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. No menu **testar** , escolha **Selecionar arquivo de configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
+8. No menu **Teste,** escolha **Selecionar Arquivo de configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
 
 ::: moniker-end
 
@@ -111,6 +111,6 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
      Quando o controlador de teste processa testes de unidade e testes IU codificados, o controlador de teste divide os testes em grupos de 100 e os envia a um computador do agente de teste. Por exemplo, se você tiver 250 testes de unidade e três agentes de teste, os 100 primeiros testes de unidade serão enviados ao agente 1, os próximos 100 testes de unidade serão enviados ao agente 2 e os 50 testes de unidade restantes serão enviados ao agente 3.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

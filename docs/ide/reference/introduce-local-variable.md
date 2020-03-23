@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568809"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
@@ -44,14 +44,14 @@ Esta geração de código aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
       - Clique no ícone de ![chave de fenda](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com a expressão realçada.
 
    ![Introduzir versão prévia local](media/local-preview-cs.png)
 
-3. Selecione **Introduzir local para a (todas as ocorrências da) 'expressão'** no menu suspenso.
+3. Selecione **Introduzir local para (todas as ocorrências) de 'expressão'** no menu suspenso.
 
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
@@ -69,7 +69,7 @@ Esta geração de código aplica-se a:
    > [!NOTE]
    > É possível usar a opção de menu **...todas as ocorrências de...** para substituir todas as instâncias da expressão selecionada, não somente a que foi especificamente realçada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)

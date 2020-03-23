@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596171"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
@@ -56,7 +56,7 @@ Salve arquivos com uma codificação de caracteres específica para dar suporte 
 
 3. Siga as Etapas 2 e 3 do procedimento anterior.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Codificação e quebras de linha](encodings-and-line-breaks.md)
 - [Codificação e globalização do Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

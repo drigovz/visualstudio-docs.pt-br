@@ -1,5 +1,5 @@
 ---
-title: Crie um novo projeto
+title: Criar um novo projeto
 ms.date: 03/19/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585464"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Criar um novo projeto no Visual Studio
@@ -24,7 +24,7 @@ ms.locfileid: "75585464"
 
 ## <a name="open-the-new-project-dialog"></a>Abrir a caixa de diálogo Novo Projeto
 
-Há várias maneiras de criar um projeto no Visual Studio 2017. Na página Inicial, você pode digitar o nome de um modelo de projeto na caixa **Pesquisar modelos de projeto** ou escolher o link **Criar novo projeto** para abrir a caixa de diálogo **Novo Projeto**. Além da página Inicial, você também pode escolher **Arquivo** > **Novo** > **Projeto** na barra de menus ou clicar no botão **Novo Projeto** na barra de ferramentas.
+Há várias maneiras de criar um projeto no Visual Studio 2017. Na página Inicial, você pode digitar o nome de um modelo de projeto na caixa **Pesquisar modelos de projeto** ou escolher o link **Criar novo projeto** para abrir a caixa de diálogo **Novo Projeto**. Além da página Iniciar, você também pode escolher **Arquivo** > **Novo** > **Projeto** na barra de menu ou clicar no botão Novo **Projeto** na barra de ferramentas.
 
 ![Página inicial e Arquivo > Novo > Projeto](./media/vside-newproject1.png)
 
@@ -32,7 +32,7 @@ Há várias maneiras de criar um projeto no Visual Studio 2017. Na página Inici
 
 Na caixa de diálogo **Novo Projeto**, os modelos de projeto disponíveis aparecem em uma lista sob a categoria **Modelos**. Os modelos são organizados por linguagem de programação e tipo de projeto, como Visual C#, JavaScript e Azure Data Lake.
 
-![Caixa de diálogo Novo Projeto](./media/vside-newproject-templates-list.png)
+![Caixa de diálogo Novo projeto](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
 > A lista de linguagens e modelos de projeto disponíveis que é exibida depende da versão do Visual Studio que você está executando e das cargas de trabalho que estão instaladas. Para saber mais sobre como instalar cargas de trabalho adicionais, confira [Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes](../install/modify-visual-studio.md).
@@ -59,7 +59,7 @@ Há várias maneiras de criar um projeto no Visual Studio 2019. Quando você abr
 
 ![Criar um projeto na janela de início no VS 2019](media/vs-2019/start-window-create-new-project.png)
 
-Se o ambiente de desenvolvimento do Visual Studio já estiver aberto, você poderá criar um novo projeto escolhendo **arquivo** > **novo** **projeto** de > na barra de menus ou clicando no botão **novo projeto** na barra de ferramentas.
+Se o ambiente de desenvolvimento do Visual Studio já estiver aberto, você poderá criar um projeto escolhendo **Arquivo** > **Novo** > **Projeto** na barra de menus ou clicando em **Novo Projeto** na barra de ferramentas.
 
 ![Botão Novo Projeto no Visual Studio 2019](media/vs-2019/new-project-button.png)
 
@@ -99,6 +99,6 @@ Clique em **Criar** para criar o projeto.
 
 Se quiser adicionar um projeto adicional a uma solução, clique com o botão direito do mouse no nó Solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar soluções e projetos](creating-solutions-and-projects.md)

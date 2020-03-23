@@ -7,17 +7,17 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.openlocfilehash: b29c2531494369f96467a7c266b379b0f54d49cf
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984019"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Instalar uma versão prévia do Visual Studio para Mac
 
 Antes que uma nova versão do Visual Studio para Mac seja lançada oficialmente, ela está disponível como uma versão prévia. A versão prévia permite que você experimente novos recursos e receba as correções de bug mais recentes antes que eles sejam totalmente incorporados ao produto.
 
-Versões prévias do Visual Studio para Mac são distribuídas como atualizações, e não por meio de um download separado. Visual Studio para Mac tem dois canais de atualizador, conforme descrito no artigo de [atualização](update.md) : **estável** e versão **prévia**.
+Versões prévias do Visual Studio para Mac são distribuídas como atualizações, e não por meio de um download separado. Visual Studio para Mac tem dois canais de atualização, conforme descrito no artigo de [atualização:](update.md) **Stable** e **Preview**.
 
 A maioria das versões prévias estarão disponíveis por meio de ambos os canais de **Versão Prévia**, mas sempre consulte as [Notas sobre a versão prévia](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) para obter as informações mais precisas.
 

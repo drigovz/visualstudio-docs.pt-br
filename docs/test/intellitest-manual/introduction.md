@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591587"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Visão geral do Microsoft IntelliTest
@@ -46,7 +46,7 @@ Se desejar testar:
 
 ## <a name="the-hello-world-of-intellitest"></a>O Olá, Mundo do IntelliTest
 
-O IntelliTest localiza entradas relevantes para o programa testado, o que significa que você pode usá-lo para gerar a famosa cadeia de caracteres **Olá, Mundo!** especificada. Isso pressupõe que você criou um C# projeto de teste baseado em MSTest e adicionou uma referência a **Microsoft. Pex. Framework**. Se você estiver usando uma estrutura de teste diferente, crie uma biblioteca de classes do C# e consulte a documentação da estrutura de teste sobre como configurar o projeto.
+O IntelliTest localiza entradas relevantes para o programa testado, o que significa que você pode usá-lo para gerar a famosa cadeia de caracteres **Olá, Mundo!** cadeia de caracteres. Isso pressupõe que você criou um projeto de teste baseado em C# MSTest e adicionou uma referência ao **Microsoft.Pex.Framework**. Se você estiver usando uma estrutura de teste diferente, crie uma biblioteca de classes do C# e consulte a documentação da estrutura de teste sobre como configurar o projeto.
 
 O exemplo a seguir cria duas restrições no parâmetro chamado **valor** de forma que o IntelliTest gerará a cadeia de caracteres necessária:
 
@@ -79,7 +79,7 @@ Depois de compilado e executado, o IntelliTest gera um conjunto de testes, como 
 8. "Olá, Mundo!"
 
 > [!NOTE]
-> Para problemas de compilação, tente substituir Microsoft. VisualStudio. TestPlatform. TestFramework e Microsoft. VisualStudio. TestPlatform. TestFramework. Extensions References por uma referência a Microsoft. VisualStudio. QualityTools. UnitTestFramework.
+> Para problemas de compilação, tente substituir microsoft.VisualStudio.TestPlatform.TestFramework e Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions referências com uma referência a Microsoft.VisualStudio.QualityTools.UnitTestFramework.
 
 Leia [Gerar testes de unidade com IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) para entender onde os testes gerados são salvos. O código de teste gerado deve incluir um teste como o código a seguir:
 
@@ -103,7 +103,7 @@ Esta seção descreve as limitações do IntelliTest:
 * [Simultaneidade](#concurrency)
 * [Código .NET nativo](#native-code)
 * [Plataforma](#platform)
-* [Linguagem](#language)
+* [Língua](#language)
 * [Raciocínio simbólico](#symbolic-reasoning)
 * [Rastreamentos de pilha](#incorrect-stack-traces)
 
@@ -124,7 +124,7 @@ Além disso, o programa é considerado não determinístico se os valores das fo
 * A classe **System.Random** usa a hora atual do sistema para entregar valores verdadeiramente aleatórios.
 * A classe **System.DateTime** fornece a hora atual, que não está sob o controle do IntelliTest.
 
-### <a name="concurrency"></a>Concorrência
+### <a name="concurrency"></a>Simultaneidade
 
 O IntelliTest não trata de programas multithread.
 
@@ -135,11 +135,11 @@ Mesmo para o código .NET, ele pode analisar somente o código que instrumenta. 
 
 A solução alternativa sugerida é ter um modo de teste em que esses métodos estão localizados em tipos em um assembly dinâmico. No entanto, mesmo se alguns métodos não forem instrumentados, o IntelliTest tentará abranger o máximo de código instrumentado possível.
 
-### <a name="platform"></a>Platform
+### <a name="platform"></a>Plataforma
 
 O IntelliTest tem suporte apenas no .NET Framework X86 de 32 bits.
 
-### <a name="language"></a>{1&gt;Idioma&lt;1}
+### <a name="language"></a>Linguagem
 
 Em princípio, o IntelliTest pode analisar programas .NET arbitrários, gravados em qualquer linguagem .NET. No entanto, no Visual Studio ele dá suporte apenas a C#.
 

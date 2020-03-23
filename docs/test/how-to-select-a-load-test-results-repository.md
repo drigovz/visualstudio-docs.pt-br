@@ -16,15 +16,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589000"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados do teste de carga
 
-Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os agentes, juntamente com um controlador, podem gerar mais carga simulada do que qualquer computador individual. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
+Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os agentes, juntamente com um controlador, podem gerar mais carga simulada do que qualquer computador individual. Para obter mais informações, consulte [controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
 Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você precisa identificar o local de armazenamento dos resultados do teste de carga usando a janela **Administrar Controladores de Teste**.
 
@@ -38,7 +38,7 @@ Os resultados do teste de seus agentes ou do seu computador local podem ser salv
 
      ![Propriedades de conexão de repositório de resultados de teste de carga](../test/media/loadtestconnectionproperties.png) Propriedades de conexão de repositório de resultados de teste de carga
 
-3. No **Repositório de resultados do teste de carga**, clique em **(…)** para exibir a caixa de diálogo **Propriedades da Conexão**.
+3. Na **loja de resultados**do teste Load, clique **(...)** para exibir a caixa de diálogo Propriedades de **conexão.**
 
 4. Em **Nome do Servidor**, digite o nome do servidor em que você executou os scripts `LoadTest`.
 
@@ -49,11 +49,11 @@ Os resultados do teste de seus agentes ou do seu computador local podem ser salv
 
 6. Em **Conectar a um banco de dados**, escolha **Selecionar ou digitar um nome de banco de dados**. Selecione **LoadTest** na caixa de listagem suspensa.
 
-7. Clique em **OK**. Você pode testar a conexão escolhendo **Testar Conexão**.
+7. Escolha **OK**. Você pode testar a conexão escolhendo **Testar Conexão**.
 
 8. Escolha **Fechar** na caixa de diálogo **Gerenciar o controlador de teste**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
+- [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

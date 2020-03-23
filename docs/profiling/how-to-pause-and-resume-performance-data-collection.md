@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778785"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Como pausar e retomar a coleta de dados de desempenho
@@ -23,10 +23,10 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
 
  O controle da coleta de dados permite reduzir o tamanho do arquivo de dados de análise e coletar somente dados das operações nas quais você está interessado. Você pode pausar e retomar a criação de perfil várias vezes em uma sessão de desempenho.
 
- ![Página de sessão de criação de perfil](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![Página da sessão de criação de perfil](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
-> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa**  no menu **Depurar**.
+> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa ** no menu **Depurar**.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Para pausar, retomar ou interromper a criação de perfil
 
@@ -38,6 +38,6 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
 
   - Escolha **Pare a criação de perfil** para encerrar a sessão de criação de perfil e gerar relatórios.
 
-## <a name="see-also"></a>Consulte também
-- [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
-- [Como: iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)
+## <a name="see-also"></a>Confira também
+- [Controle a coleta de dados](../profiling/controlling-data-collection.md)
+- [Como iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)

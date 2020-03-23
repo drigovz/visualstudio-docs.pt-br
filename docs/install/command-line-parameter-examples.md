@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275258"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Exemplos de parâmetros de linha de comando para a instalação do Visual Studio
@@ -64,7 +64,7 @@ Para listas de cargas de trabalho e componentes que você pode instalar usando a
 
 ## <a name="using---wait"></a>Em uso – Aguarde
 
-* Use scripts ou arquivos em lotes para aguardar o instalador do Visual Studio ser concluído antes da execução do próximo comando. Para arquivos em lote, uma variável de ambiente `%ERRORLEVEL%` conterá o valor retornado do comando, conforme documentado na página [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Alguns utilitários de comando requerem parâmetros adicionais para aguardar a conclusão e obter o valor retornado do instalador. Veja a seguir um exemplo dos parâmetros adicionais usados com o comando de script do PowerShell "Start-Process":
+* Use scripts ou arquivos em lotes para aguardar o instalador do Visual Studio ser concluído antes da execução do próximo comando. Para arquivos em `%ERRORLEVEL%` lote, uma variável de ambiente conterá o valor de retorno do comando, conforme documentado nos [parâmetros de linha de comando Use para instalar a](use-command-line-parameters-to-install-visual-studio.md) página do Visual Studio. Alguns utilitários de comando requerem parâmetros adicionais para aguardar a conclusão e obter o valor retornado do instalador. Veja a seguir um exemplo dos parâmetros adicionais usados com o comando de script do PowerShell "Start-Process":
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -223,7 +223,7 @@ Esse parâmetro de linha de comando é uma **novidade na versão 15.9**. Para sa
 
 ## <a name="see-also"></a>Confira também
 
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
-* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
+* [Guia do Administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Crie uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)

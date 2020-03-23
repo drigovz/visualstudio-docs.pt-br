@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998780"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302647"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controlar onde o código R é executado com workspaces
 
@@ -29,13 +29,13 @@ Nessa janela, a marca de seleção verde indica o workspace ativo ao qual as RTV
 
 Por padrão, as RTVS não salvam o estado do workspace quando você fecha e reabre um projeto. No entanto, você pode alterar esse comportamento por meio das [Opções de workspace](options-for-r-tools-in-visual-studio.md#workspace).
 
-O comando **Ferramentas do R** > **Sessão** > **Redefinir** e o botão de barra de ferramentas de redefinição na janela interativa também redefinem o estado do workspace a qualquer momento. Com workspaces remotos, a redefinição exclui o perfil do usuário criado na primeira conexão com o servidor remoto, o que exclui efetivamente todos os arquivos que foram acumulados lá.
+O comando **R Tools** > **Session** > **Reset** e o botão de barra de ferramentas de reset na janela interativa também redefiniram o estado do espaço de trabalho a qualquer momento. Com workspaces remotos, a redefinição exclui o perfil do usuário criado na primeira conexão com o servidor remoto, o que exclui efetivamente todos os arquivos que foram acumulados lá.
 
 ## <a name="local-workspaces"></a>Workspaces locais
 
 A lista de workspaces locais exibe todos os interpretadores de R instalados em seu computador.
 
-Quando o Visual Studio é iniciado, ele tenta detectar automaticamente todas as versões do R que você instalou, examinando a chave do Registro **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Como essa verificação é feita apenas na inicialização, você precisará reiniciar o Visual Studio se instalar um novo interpretador de R.
+Quando o Visual Studio é iniciado, ele tenta detectar automaticamente todas as versões de R que você instalou olhando através da chave de registro **HKEY_LOCAL_MACHINE\Software\R-Core.\\ ** Como essa verificação é feita apenas na inicialização, você precisará reiniciar o Visual Studio se instalar um novo interpretador de R.
 
 As RTVS não podem detectar um interpretador de R que é instalado de maneira não padrão (por exemplo, simplesmente ao copiar arquivos para uma pasta em vez de executar um instalador). Nesse caso, crie manualmente um novo Workspace do R local da seguinte maneira:
 
@@ -77,7 +77,7 @@ As RTVS estão associadas a apenas um workspace por vez. O workspace associado �
 Para alterar o workspace ativo, selecione a seta azul ao lado do workspace desejado. Isso avisa para salvar sua sessão, encerra o workspace atual e alterna para o novo.
 
 > [!Tip]
-> Para desabilitar prompt de salvamento, selecione o comando **Ferramentas do R** > **Opções** e defina a opção **Mostrar caixa de diálogo de confirmação antes de alternar entre workspaces** como `No`. Consulte [Opções de workspace](options-for-r-tools-in-visual-studio.md#workspace).
+> Para desativar o prompt de salvamento, selecione o comando **R Ferramentas** > **Opções** e defina a caixa de diálogo Mostrar confirmação antes de mudar a opção **'espaços de trabalho'** para `No`. Consulte [Opções de workspace](options-for-r-tools-in-visual-studio.md#workspace).
 
 Se você tentar mudar para um workspace local que foi desinstalado ou para um workspace remoto indisponível, as RTVS podem não ser associadas a nenhum workspace. Como resultado, você pode ver um erro ao inserir o código na janela interativa ou tentar executar o código de outro modo:
 
@@ -99,13 +99,13 @@ No entanto, esse aviso também será exibido se um *certificado autoassinado* ti
 
 ## <a name="directories-on-local-and-remote-computers"></a>Diretórios em computadores locais e remotos
 
-Por padrão, quando você inicia um novo interpretador de R em um workspace local, o diretório de trabalho atual é *%userprofile%\Documents*. Você pode alterar o diretório a qualquer momento usando os comandos **Ferramentas do R** > **Diretório de Trabalho** ou clicando com o botão direito do mouse em um projeto no Gerenciador de Soluções do Visual Studio e selecionando comandos como **Definir Diretório de Trabalho Aqui**.
+Por padrão, quando você inicia um novo interpretador de R em um workspace local, o diretório de trabalho atual é *%userprofile%\Documents*. Você pode alterar o diretório a qualquer momento usando os comandos **r tools** > **working directory,** ou clicando com o botão direito do mouse em um projeto no Visual Studio Solution Explorer e selecionando comandos como Set Working **Directory Aqui**.
 
 Quando você se conecta pela primeira vez a um computador remoto, as RTVS criam automaticamente um perfil do usuário com base em suas credenciais, o que configura o diretório de trabalho para a pasta *Documentos* nesse perfil. Essa pasta será usada para todas as sessões remotas subsequentes que usam as mesmas credenciais.
 
 Como resultado, o local exato em que seu código é executado pode diferir entre workspaces locais e remotos. No seu código, sempre use caminhos relativos para os arquivos de dados e assim por diante para que seu código seja portátil entre os workspaces.
 
-Observe também que com os workspaces remotos, todos os arquivos no diretório de trabalho permanecerão em vigor em sessões para o mesmo perfil do usuário. Conforme observado anteriormente, você pode excluir esses arquivos usando o comando **Ferramentas do R** > **Sessão** > **Redefinir** (ou no botão Redefinir na janela interativa) ao usar um workspace remoto. Novamente, esse comando exclui o perfil do usuário do servidor, que é recriado quando você se conecta novamente.
+Observe também que com os workspaces remotos, todos os arquivos no diretório de trabalho permanecerão em vigor em sessões para o mesmo perfil do usuário. Como observado anteriormente, você pode excluir esses arquivos usando o comando **R Tools** > **Session** > **Reset** (ou o botão de reset na janela interativa) ao usar um espaço de trabalho remoto. Novamente, esse comando exclui o perfil do usuário do servidor, que é recriado quando você se conecta novamente.
 
 ## <a name="copy-project-files-to-remote-workspaces"></a>Copiar arquivos de projeto para workspaces remotos
 
@@ -124,7 +124,7 @@ Os arquivos são copiados para o servidor remoto da seguinte maneira:
 > [!Note]
 > Como as RTVS não podem interceptar todas as chamadas de função do R com confiança, as chamadas de funções como `source()` ou `runApp()` (para aplicativos Shiny) na janela interativa *não* copiam arquivos para o workspace remoto.
 
-As [Propriedades do projeto](r-projects-in-visual-studio.md#project-properties) controlam se o RTVS copia arquivos quando o projeto é executado e exatamente quais arquivos são copiados. Para abrir esta página, selecione o comando de menu **Projeto** > **Propriedades do (nome)** ou clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione **Propriedades**.
+As [Propriedades do projeto](r-projects-in-visual-studio.md#project-properties) controlam se o RTVS copia arquivos quando o projeto é executado e exatamente quais arquivos são copiados. Para abrir esta página, selecione o comando **'Propriedades** > do projeto **(nome)** ou clique com o botão direito do mouse no projeto no Solution Explorer e selecione **Propriedades**.
 
 ![Guia de execução de propriedades do projeto com configurações de transferência de arquivo](media/workspaces-remote-file-transfer-filter-settings.png)
 

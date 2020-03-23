@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915963"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Ferramentas do Visual Studio para IA
@@ -42,8 +42,8 @@ Essa extensão facilita o treinamento de modelos no computador local ou o envio 
 
 [Saiba mais sobre os modelos de treinamento na nuvem](tensorflow-vm.md)
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>Sistemas operacionais com suporte
 No momento, essa extensão dá suporte aos sistemas operacionais Windows de 64 bits.
 
-## <a name="support"></a>Suporte do
+## <a name="support"></a>Suporte
 O suporte para essa extensão é fornecido no [GitHub Issue Tracker](https://github.com/Microsoft/vs-tools-for-ai/issues) (Rastreador de Problemas GitHub). É possível enviar um relatório de bugs ou uma sugestão de recurso e participar das discussões.

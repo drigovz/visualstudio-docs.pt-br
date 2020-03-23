@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591990"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Suporte para idiomas bidirecionais no Visual Studio
@@ -56,9 +56,9 @@ Os seguintes elementos podem ser nomeados usando o árabe ou o hebraico e são m
 
 - Atributos e metadados.
 
-- Valores da propriedade.
+- Valores de propriedade.
 
-   É possível usar um texto em árabe ou hebraico na janela **Propriedades**. A janela permite mudar entre o sentido de leitura da direita para a esquerda e da esquerda para a direita usando pressionamentos de tecla padrão do Windows (**Ctrl**+**Shift Direita** para direita para a esquerda e **Ctrl**+**Shift Esquerda** para esquerda para a direita).
+   Você pode usar texto árabe ou hebraico na janela **Propriedades.** A janela permite alternar entre a ordem de leitura da direita para a esquerda para a direita usando as teclas padrão do Windows **(Ctrl**+**RightShift** para da direita para a esquerda e **o Ctrl**+**LeftShift** para a esquerda para a direita).
 
 - Código e texto literal.
 
@@ -72,13 +72,13 @@ Os seguintes elementos podem ser nomeados usando o árabe ou o hebraico e são m
 
 - Comentários sobre o código. É possível criar comentários em árabe ou hebraico. Você também pode usar esses idiomas na ferramenta de construtor de comentários.
 
-### <a name="file-encoding"></a>Codificação de arquivos
+### <a name="file-encoding"></a>Codificação de arquivo
 
-É possível salvar e abrir arquivos com uma codificação Unicode ou específica a um idioma. Para saber mais, confira [Como salvar e abrir arquivos com codificação](../ide/how-to-save-and-open-files-with-encoding.md).
+É possível salvar e abrir arquivos com uma codificação Unicode ou específica a um idioma. Para obter mais informações, consulte [Como salvar e abrir arquivos com codificação](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Sentido de leitura da direita para a esquerda
 
-O Visual Studio tem suporte limitado para o sentido de leitura da direita para a esquerda. Por padrão, os controles de entrada de texto no Visual Studio usam o sentido de leitura da esquerda para a direita. Na maioria dos casos, é possível usar gestos do Windows padrão para mudar o sentido de leitura. Por exemplo, é possível pressionar **Ctrl**+**Shift Direita** para mudar para a janela **Propriedades** para dar suporte ao sentido de leitura da direita para a esquerda em valores da propriedade.
+O Visual Studio tem suporte limitado para o sentido de leitura da direita para a esquerda. Por padrão, os controles de entrada de texto no Visual Studio usam o sentido de leitura da esquerda para a direita. Na maioria dos casos, é possível usar gestos do Windows padrão para mudar o sentido de leitura. Por exemplo, você pode pressionar **Ctrl**+**RightShift** para alternar a janela **Propriedades** para suportar ordem de leitura da direita para a esquerda para valores de propriedade.
 
 Não há suporte para o sentido de leitura da direita para a esquerda nos seguintes locais do Visual Studio:
 
@@ -86,6 +86,6 @@ Não há suporte para o sentido de leitura da direita para a esquerda nos seguin
 
 - O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. Insira o texto em um idioma bidirecional, mas com o sentido de leitura sempre sendo da esquerda para a direita.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Desenvolver aplicativos globalizados e localizados](globalizing-and-localizing-applications.md)
+- [Desenvolver aplicativos localizados e globalizados](globalizing-and-localizing-applications.md)

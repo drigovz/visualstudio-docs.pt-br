@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594754"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como especificar períodos de tempo limite para controladores e agentes de teste
@@ -28,7 +28,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
 
 - Controlador de teste: *QTController.exe.config*
 
-    |Nome da chave|Descrição|Value|
+    |Nome da chave|Descrição|Valor|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|O número de segundos para aguardar a solicitação de ping do agente antes de a conexão ser considerada perdida.|"n" segundos.|
     |AgentSyncTimeoutInSeconds|Quando iniciar uma execução de teste de sincronização, número de segundos para aguardar a sincronização de todos os agentes antes de anular a execução.|"n" segundos.|
@@ -37,7 +37,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
 
 - Test Agent: *QTAgentService.exe.config*
 
-    |Nome da chave|Descrição|Value|
+    |Nome da chave|Descrição|Valor|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Número de segundos entre as tentativas de se conectar ao controlador.|"n" segundos. Padrão: "30" (trinta segundos).|
     |RemotingTimeoutSeconds|O tempo máximo que uma chamada remota pode durar em segundos.|"n" segundos. Padrão: "600" (dez minutos).|
@@ -46,7 +46,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Para especificar opções de tempo limite de agente para um controlador de teste
 
-1. Abra o arquivo de configuração XML *QTCcontroller.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Abra o arquivo de configuração *QTCcontroller.exe.config* XML localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Localize a marcação `<appSettings>`.
 
@@ -68,7 +68,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - ou -
+    -ou-
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `AgentInitializeTimeout` na seção `<appSettings>` e especificar um valor de cinco minutos:
 
@@ -80,7 +80,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Para especificar opções de tempo limite de agente para um agente de teste
 
-1. Abra o arquivo de configuração XML *QTAgentService.exe.config* localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Abra o arquivo de configuração *QTAgentService.exe.config* XML localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Localize a marcação `<appSettings>`.
 
@@ -102,7 +102,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - ou -
+    -ou-
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `RemotingTimeoutSeconds` na seção `<appSettings>` e especificar um valor de quinze minutos:
 
@@ -112,9 +112,9 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     </appSettings>
     ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como associar um controlador de teste ou um agente de teste a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Como: Vincular um controlador de teste ou agente de teste a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

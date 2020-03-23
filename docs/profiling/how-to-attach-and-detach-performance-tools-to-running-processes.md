@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779162"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
@@ -39,7 +39,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
 
 - Acesso negado à criação de perfil para todos.
 
-  Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).
+  Para obter mais informações, consulte [a segurança do Perfil e do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de ADMIN no [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ### <a name="to-attach-to-a-running-process"></a>Para anexar a um processo em execução
 
@@ -61,9 +61,9 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
 
 3. Clique em **Desanexar**.
 
-## <a name="see-also"></a>Consulte também
-- [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
+## <a name="see-also"></a>Confira também
+- [Controle a coleta de dados](../profiling/controlling-data-collection.md)
 - [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
-- [Como: iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Como iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570343"
 ---
 # <a name="command-window"></a>Janela Comando
@@ -44,7 +44,7 @@ As duas versões desse comando retornarão o valor da variável `varA`.
 ## <a name="entering-commands"></a>Inserindo comandos
 O símbolo de maior que (`>`) é exibido na borda esquerda da janela Comando como um prompt para novas linhas. Use as teclas de SETA PARA CIMA e SETA PARA BAIXO para rolar os comandos emitidos anteriormente.
 
-|Tarefa|{1&gt;&lt;1} Solução|Exemplo|
+|Tarefa|Solução|Exemplo|
 |----------|--------------|-------------|
 |Avaliar uma expressão.|Preceda a expressão com um ponto de interrogação (`?`).|`? myvar`|
 |Mude para uma janela Imediata.|Digite `immed` na janela, sem o sinal de maior que (>)|`immed`|
@@ -52,7 +52,7 @@ O símbolo de maior que (`>`) é exibido na borda esquerda da janela Comando com
 
 Os seguintes atalhos ajudarão a navegar no modo Comando.
 
-|Action|Local do cursor|Keybinding|
+|Ação|Local do cursor|Keybinding|
 |------------| - |----------------|
 |Percorra a lista de comandos inseridos anteriormente.|Linha de entrada|SETA PARA CIMA E SETA PARA BAIXO|
 |Role para cima na janela.|Conteúdo da janela Comando|CTRL+SETA PARA CIMA|
@@ -107,9 +107,9 @@ Um caractere de acento circunflexo (^) em uma linha de comando significa que o c
 Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado. O exemplo mostrado aqui demonstra como pesquisar o padrão "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar aspas para nomes de caminho com espaços
-Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"** .
+Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

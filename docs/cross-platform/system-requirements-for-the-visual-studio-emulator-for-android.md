@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272044"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o Emulador do Visual Studio para Android
@@ -28,7 +28,7 @@ O programa de instalação tenta configurar esses pré-requisitos para você sil
 > [!IMPORTANT]
 > O programa de instalação do emulador verifica os pré-requisitos para executar o Emulador do Visual Studio para Android. Exibirá avisos se os pré-requisitos não estiverem presentes, mas não os exige.
 
-## <a name="Checklist"></a> Lista de verificação rápida
+## <a name="quick-checklist"></a><a name="Checklist"></a>Checklist rápido
 
 Esta é uma lista de verificação rápida dos requisitos para executar o Emulador do Visual Studio para Android. Para obter informações mais detalhadas, consulte as próximas seções neste tópico.
 
@@ -73,7 +73,7 @@ Requisitos do Hyper-V
 
 Para verificar os requisitos de RAM e do Windows, no Painel de Controle, escolha Sistema e Segurança e, em seguida, Sistema.
 
-![Verificar os requisitos do sistema](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![Verifique os requisitos do sistema](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
 ## <a name="network-requirements"></a>Requisitos de rede
 
@@ -110,7 +110,7 @@ Quando definições do computador e do BIOS já estiverem configuradas para dar 
 |Requisito|Como verificar e habilitar esse requisito|
 |-----------------|----------------------------------------------|
 |O Hyper-V deve ser instalado|Siga as mesmas instruções usadas para [habilitar o Hyper-V para o emulador do Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Verifique o status do serviço **Gerenciamento de Máquinas Virtuais do Hyper-V** no snap-in Serviços.|
-|O Hyper-V deve estar em execução.|Para obter mais informações sobre como gerenciar serviços, consulte os seguintes tópicos:<br /><br /> -   [Iniciar, interromper, pausar, retomar ou reiniciar um serviço](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurar o modo de inicialização de um serviço](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
+|O Hyper-V deve estar em execução.|Para obter mais informações sobre como gerenciar serviços, consulte os seguintes tópicos:<br /><br /> -   [Iniciar, interromper, pausar, retomar ou reiniciar um serviço](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configure como um serviço é iniciado](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Você precisa ser um membro do grupo local Administradores do Hyper-V.
 
@@ -121,7 +121,7 @@ Quando definições do computador e do BIOS já estiverem configuradas para dar 
 > [!IMPORTANT]
 > Depois de ingressar no grupo, faça logoff ou reinicie o computador para que as alterações tenham efeito.
 
- ![Unindo o grupo&#45;de segurança de administradores do Hyper V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Ingressar no grupo de segurança administradores do Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Para adicionar você mesmo a um grupo manualmente, abra o snap-in Usuários e Grupos Locais.
 

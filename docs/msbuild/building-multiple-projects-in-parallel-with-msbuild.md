@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634494"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Criar vários projetos em paralelo com o MSBuild
@@ -28,7 +28,7 @@ Você pode usar o MSBuild para criar vários projetos mais rápido, executando-o
 - O parâmetro de tarefa <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> em uma tarefa do MSBuild.
 
 > [!NOTE]
-> A opção **-verbosity** ( **-v**) em uma linha de comando também pode afetar o desempenho de compilação. O desempenho de compilação pode piorar se o detalhamento de suas informações de log de compilação estiver definido como detalhado ou diagnóstico, que são usados para solução de problemas. Para saber mais, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md) e [Referências de linha de comando](../msbuild/msbuild-command-line-reference.md).
+> A opção **-verbosity** (**-v**) em uma linha de comando também pode afetar o desempenho de compilação. O desempenho de compilação pode piorar se o detalhamento de suas informações de log de compilação estiver definido como detalhado ou diagnóstico, que são usados para solução de problemas. Para saber mais, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md) e [Referências de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>Opção -maxcpucount
 
@@ -46,7 +46,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 ## <a name="buildinparallel-task-parameter"></a>Parâmetro de tarefa BuildInParallel
 
-`BuildInParallel` é um parâmetro booliano opcional em uma tarefa do MSBuild. Quando `BuildInParallel` é definido como `true` (seu valor padrão é `true`), vários processos de trabalho são gerados para compilar tantos projetos quanto possível ao mesmo tempo. Para que isso funcione corretamente, a opção `-maxcpucount` deve ser definida como um valor maior que 1, e o sistema deve ser pelo menos de dois núcleos ou ter dois ou mais processadores.
+`BuildInParallel`é um parâmetro booleano opcional em uma tarefa MSBuild. Quando `BuildInParallel` é definido como `true` (seu valor padrão é `true`), vários processos de trabalho são gerados para compilar tantos projetos quanto possível ao mesmo tempo. Para que isso funcione corretamente, a opção `-maxcpucount` deve ser definida como um valor maior que 1, e o sistema deve ser pelo menos de dois núcleos ou ter dois ou mais processadores.
 
 Veja a seguir um exemplo, retirado de *microsoft.common.targets*, sobre como definir o parâmetro `BuildInParallel`.
 

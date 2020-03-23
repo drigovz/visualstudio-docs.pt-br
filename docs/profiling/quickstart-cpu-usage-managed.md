@@ -1,5 +1,5 @@
 ---
-title: Analisar dados de uso daC#CPU (, Visual Basic)
+title: Analisar dados de uso da CPU (C#, Visual Basic)
 description: Medir o desempenho do aplicativo em C# e Visual Basic usando a ferramenta de diagnóstico de Uso da CPU
 ms.custom: mvc
 ms.date: 02/14/2020
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fd77fe5fc00e8c1a3b487c93a6004b2f8cf7060
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: b4d36d9b758e0171452a909d85c799503389a1a9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558192"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550068"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Início rápido: analisar dados de uso da CPU noC#Visual Studio (, Visual Basic)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Quickstart: Analise os dados de uso da CPU no Visual Studio (C#, Visual Basic)
 
 O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problemas de desempenho em seu aplicativo. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos. Aqui, vamos examinar a ferramenta para identificar os gargalos de desempenho devido ao alto uso da CPU. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
-O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
+O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se a ferramenta **Uso de CPU** descrita aqui não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecerão diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
 
 O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**). No Windows 7 e posteriores, você pode usar a ferramenta post-mortem, o [Criador de Perfil de Desempenho](../profiling/profiling-feature-tour.md).
 
@@ -32,31 +32,31 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 1. Abra o Visual Studio e crie o projeto.
 
    ::: moniker range="vs-2017"
-   Na barra de menus superior, escolha **arquivo** > **novo** **projeto**de >.
+   Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-   Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **C#** ou **Visual Basic**e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o projeto *MyProfilerApp*.
+   Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda **C#** ou **Visual Basic**e escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o projeto *MyProfilerApp*.
 
-   Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)** , escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
+   Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+   Se a janela inicial não estiver aberta, escolha **Janela inicial de** **arquivo** > .
 
-   Na tela Iniciar, selecione **Criar um novo projeto**.
+   Na janela inicial, escolha **Criar um novo projeto**.
 
-   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C#** escolha ou **Visual Basic** na lista idioma e, em seguida, escolha **Windows** na lista plataforma.
+   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **C#** ou **Visual Basic** na lista De idiomas e, em seguida, escolha **Windows** na lista Plataforma.
 
    Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
 
    > [!NOTE]
-   > Se não vir o modelo **Aplicativo de Console (.NET Core)** , você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**. Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
 
-   Na janela **configurar seu novo projeto** , digite ou insira *MyProfilerApp* na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+   Na **Configure sua nova** janela de projeto, digite ou digite *MyProfilerApp* na caixa **nome do Projeto.** Em seguida, escolha **Criar**.
 
    ::: moniker-end
 
    O Visual Studio abre seu novo projeto.
 
-2. Abra *Program.cs* e substitua todo o código pelo código a seguir:
+2. Abra *Program.cs* e substitua todo o código pelo seguinte código:
 
     ```csharp
     using System;
@@ -175,7 +175,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
     ```
 
     > [!NOTE]
-    > No Visual Basic, verifique se o objeto de inicialização é definido como `Sub Main` (**Propriedades** > **Aplicativo** > **Objeto de Inicialização**).
+    > No Visual Basic, certifique-se de `Sub Main` que o objeto de inicialização está configurado como (Objeto de inicialização**do aplicativo** > **de propriedades).** > **Startup Object**
 
 ## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 
@@ -191,20 +191,22 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
 2. Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final da função `Main`:
 
-     ![Definir pontos de interrupção para a criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints.png "Definir pontos de interrupção para criação de perfil")
+     ![Definir pontos de interrupção para criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints.png "Definir pontos de interrupção para criação de perfil")
 
-    > [!TIP]
-    > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
+    Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-3. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+    >[!TIP]
+    > Quando pausado em um ponto de ruptura ou uma operação de revisão de código, você também pode analisar o desempenho usando [PerfTips](../profiling/perftips.md).
 
-4. Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+3. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para trazer a janela novamente, clique em **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
+
+4. Clique **em Depurar** > **Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).
 
      Quando o aplicativo terminar de ser carregado, a exibição **Resumo** das Ferramentas de Diagnóstico será exibida.
 
 5. Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
 
-     ![Ferramentas de diagnóstico Habilitar criação de perfil de CPU](../profiling/media/quickstart-cpu-usage-summary.png "Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico")
+     ![Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-summary.png "Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico")
 
      Quando a coleta de dados estiver habilitada, o botão de registro exibe um círculo vermelho.
 
@@ -226,7 +228,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
 1. Na lista de funções, examine as funções que fazem a maior parte do trabalho.
 
-     ![Guia uso de CPU das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
+     ![Guia de uso da CPU da Diagnostics Tools](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUseTab")
 
     > [!TIP]
     > As funções são listadas em ordem, começando com as que fazem a maior parte do trabalho (elas não ficam na ordem de chamada). Isso ajuda a identificar rapidamente as funções com execução mais longa.
@@ -235,7 +237,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
     Quando você clica duas vezes na função, a exibição **Chamador/Computador Chamado** é aberta no painel esquerdo.
 
-    ![Exibição do chamador de chamadas de ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
+    ![Exibição Chamador/Computador Chamado das Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
     Nesta exibição, a função selecionada aparece no título e na caixa **Função Atual** (`GetNumber`, neste exemplo). A função que chamou a função atual é mostrada à esquerda em **Função Chamadora** e todas as funções chamadas pela função atual são mostradas na caixa **Funções Chamadas** à direita. (Você pode selecionar cada uma das caixas para alterar a função atual.)
 
@@ -252,7 +254,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 - [Analisar o uso da CPU](../profiling/cpu-usage.md) para obter informações mais detalhadas sobre a ferramenta de uso de CPU.
 - Analise o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

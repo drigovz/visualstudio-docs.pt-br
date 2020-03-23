@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591275"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
@@ -34,9 +34,9 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 
 A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
 
-|Column|Descrição|Visível por padrão|
+|Coluna|Descrição|Visível por padrão|
 |-|-|-|
-|Tempo|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
+|Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
 |Computador|O nome do computador em teste em que a violação ocorreu. **Observação:** isso é importante quando você executa testes de carga em equipamentos.|Sim|
 |Categoria|A categoria do contador de desempenho em que a violação ocorreu.|Sim|
 |Contador|O nome do contador de desempenho em que a violação ocorreu.|Sim|
@@ -46,7 +46,7 @@ A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela
 > [!NOTE]
 > É possível classificar a tabela escolhendo-se os cabeçalhos de coluna.
 
-Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Exibir violações de limite no painel Contadores
 
@@ -74,8 +74,8 @@ Você pode ver violações de limite no gráfico De forma semelhante ao painel *
 
 Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

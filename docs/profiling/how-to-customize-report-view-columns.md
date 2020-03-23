@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778967"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Como personalizar as colunas de exibição de relatório
@@ -26,19 +26,19 @@ As ferramentas de desempenho no Visual Studio Team System Development Edition s�
 
 - [Exibição Módulos](../profiling/modules-view.md)
 
-- [Exibição Funções](../profiling/functions-view.md)
+- [Exibição de funções](../profiling/functions-view.md)
 
-- [Exibição de Linhas](../profiling/lines-view.md)
+- [Exibição de linhas](../profiling/lines-view.md)
 
 - [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view.md)
 
-- [Exibição Chamador/Receptor da Chamada](../profiling/caller-callee-view.md)
+- [Visualização de chamada/callee](../profiling/caller-callee-view.md)
 
-- [Modo de exibição de árvore de Chamadas](../profiling/call-tree-view.md)
+- [Chamada Tree View](../profiling/call-tree-view.md)
 
 - [Exibição de alocações](../profiling/dotnet-memory-allocations-view.md)
 
-- [Exibição do tempo de vida do objeto](../profiling/object-lifetime-view.md)
+- [Exibição do Tempo de Vida do Objeto](../profiling/object-lifetime-view.md)
 
 - [Exibição de Marcas](../profiling/marks-view.md)
 
@@ -50,7 +50,7 @@ As ferramentas de desempenho no Visual Studio Team System Development Edition s�
 
 2. Clique com o botão direito do mouse na superfície da exibição do relatório e, em seguida, clique em **Adicionar/Remover Colunas**.
 
-     A caixa de diálogo **Adicionar/Remover Colunas** é exibida.
+     A caixa de diálogo **Adicionar/Remover Colunas** aparece.
 
 3. Selecione as colunas que deseja adicionar.
 

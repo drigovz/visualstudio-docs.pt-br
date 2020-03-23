@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594273"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
@@ -38,7 +38,7 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Para atualizar para a versão estável mais recente do adaptador de teste
 
-1. Abra o Gerenciador de Pacotes Nuget da solução navegando até **Ferramentas** > **Gerenciador de Pacotes NuGet** > **Gerenciar Pacotes NuGet da Solução**.
+1. Abra o Nuget Package Manager para sua solução navegando para **ferramentas** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
 
 2. Clique na guia **Atualizações** e pesquise os adaptadores de teste do MSTest, NUnit ou xUnit que estão instalados.
 
@@ -48,6 +48,6 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
    ![Atualizar adaptador de teste](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Unidade teste seu código](../test/unit-test-your-code.md)

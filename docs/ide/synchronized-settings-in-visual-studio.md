@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566781"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
@@ -27,19 +27,19 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 - Alias de comando definidos pelo usuário. Para saber mais sobre como definir aliases de comando, veja [Aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Layouts de janela definidos pelo usuário na página **Janela** > **Gerenciar Layouts de Janela**.
+- Layouts de janela definidos pelo usuário na página **'Gerenciar** > **janelas' 'Layouts da janela'** de janelas.
 
-- As seguintes opções nas páginas **Ferramentas** > **Opções**:
+- As seguintes opções nas páginas **Opções** > **de ferramentas:**
 
-  - Configurações de tema e de uso de maiúsculas na barra de menus, na página de opções **Ambiente** > **Geral**.
+  - Configurações de invólucro de barra de tema e menu na página de opções **Meio Ambiente** > **Geral.**
 
-  - Todas as configurações da página de opções **Ambiente** > **Fontes e Cores**.
+  - Todas as configurações na página**De opções Fontes e Cores do** **Ambiente.** > 
 
-  - Todos os atalhos de teclado da página de opções **Ambiente** > **Teclado**.
+  - Todos os atalhos de teclado na página de opções **do Teclado ambiente.** > **Keyboard**
 
-  - Todas as configurações da página de opções **Ambiente** > **Guias e Janelas**.
+  - Todas as configurações na página **Guias** > de ambiente**e windows.**
 
-  - Todas as configurações da página de opções **Ambiente** > **Inicialização**.
+  - Todas as configurações na página de opções de**inicialização** do **ambiente.** > 
 
   - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-code-cleanup.md).
 
@@ -47,12 +47,12 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desligar configurações sincronizadas em um computador específico
 
-As configurações sincronizadas para o Visual Studio são ativadas por padrão. Desligue as configurações sincronizadas em um computador acessando a página **Ferramentas** > **Opções** > **Ambiente** > **Contas** e desmarcando a opção **Sincronizar as configurações em dispositivos quando estiver conectado ao Visual Studio**.
+As configurações sincronizadas para o Visual Studio são ativadas por padrão. Você pode desativar as configurações sincronizadas em um computador indo para a página Contas**do Ambiente** > **de Opções** > **de** **Ferramentas** > e **desmarcando configurações sincronizadas entre dispositivos quando conectado ao Visual Studio**.
 
 Por exemplo, se você optar por não sincronizar as configurações do Visual Studio no computador "A", as alterações de configuração feitas no computador "A" não serão exibidas nos computadores "B" ou "C". Os computadores "B" e "C" continuarão sendo sincronizados um com o outro, mas não com o computador "A".
 
 > [!NOTE]
-> Caso você opte por não sincronizar as configurações desmarcando a opção na página **Ferramentas** > **Opções** > **Ambiente** > **Contas**, outras versões ou edições do Visual Studio existentes no mesmo computador não serão afetadas. Essas instalações lado a lado do Visual Studio continuarão sincronizando as configurações (a menos que você desmarque a opção nelas também).
+> Se você optar por não sincronizar as configurações, desmarcando a opção na página Contas do**Ambiente** > de > **Opções** >  **de Ferramentas,** outras versões ou edições do Visual Studio que você tem no mesmo computador não serão afetadas.**Accounts** Essas instalações lado a lado do Visual Studio continuarão sincronizando as configurações (a menos que você desmarque a opção nelas também).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizar configurações em edições e produtos da família Visual Studio
 
@@ -87,10 +87,10 @@ Algumas configurações, como o layout da janela de ferramentas, não são compa
 
 ## <a name="reset-synchronized-settings"></a>Restaurar as configurações sincronizadas
 
-Para restaurar todas as configurações para os padrões, entre no Visual Studio e, em seguida, selecione **Ferramentas** > **Importar e Exportar Configurações** para abrir o **Assistente para Importar e Exportar Configurações**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
+Para redefinir todas as configurações para seus padrões, faça login no Visual Studio e selecione**Configurações de importação e exportação de** **ferramentas** > para abrir o Assistente **de Configurações de Importação e Exportação**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalize o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Configurações do ambiente](../ide/environment-settings.md)
 - [Caixa de diálogo Ambiente > Opções de Contas](reference/accounts-environment-options-dialog-box.md)

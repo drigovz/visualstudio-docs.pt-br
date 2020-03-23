@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631088"
 ---
 # <a name="warning-task"></a>tarefa Warning
@@ -33,16 +33,16 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 
  A tabela a seguir descreve os parâmetros da tarefa `Warning`.
 
-| Parâmetro | DESCRIÇÃO |
+| Parâmetro | Descrição |
 |---------------| - |
 | `Code` | Parâmetro `String` opcional.<br /><br /> O código de erro que será associado ao aviso. |
 | `File` | Parâmetro `String` opcional.<br /><br /> Especifica o arquivo relevante, se houver. Se nenhum arquivo for fornecido, o arquivo que contém a tarefa de aviso será usado. |
 | `HelpKeyword` | Parâmetro `String` opcional.<br /><br /> A palavra-chave Ajuda que será associada ao aviso. |
-| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de aviso que o MSBuild registra se o parâmetro `Condition` é avaliado como `true`. |
+| `Text` | Parâmetro `String` opcional.<br /><br /> O texto de aviso que o `Condition` MSBuild `true`registra se o parâmetro for avaliado em . |
 
 ## <a name="remarks"></a>Comentários
 
- A tarefa `Warning` permite que os projetos do MSBuild verifiquem a presença de uma configuração ou propriedade necessária antes de prosseguir com a próxima etapa de compilação.
+ A `Warning` tarefa permite que os projetos do MSBuild verifiquem a presença de uma configuração ou propriedade necessária antes de prosseguir com a próxima etapa de compilação.
 
  Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se não existir um parâmetro `Condition`, o texto de aviso será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -69,4 +69,4 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 ## <a name="see-also"></a>Confira também
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

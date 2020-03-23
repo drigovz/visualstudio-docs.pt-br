@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633025"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
@@ -41,11 +41,11 @@ Armazena valores de saída da tarefa em itens e propriedades.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
+ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`TaskParameter`|Atributo obrigatório.<br /><br /> O nome do parâmetro de saída da tarefa.|
 |`PropertyName`|O atributo `PropertyName` ou `ItemName` é necessário.<br /><br /> A propriedade que recebe o valor do parâmetro de saída da tarefa. Seu projeto pode fazer referência à propriedade com a sintaxe $(\<PropertyName>). Esse nome de propriedade pode ser um novo nome de propriedade ou um nome que já esteja definido no projeto.<br /><br /> Este atributo não poderá ser usado se `ItemName` também estiver sendo usado.|
@@ -58,9 +58,9 @@ Armazena valores de saída da tarefa em itens e propriedades.
 
 ### <a name="parent-elements"></a>Elementos pai
 
-| Elemento | DESCRIÇÃO |
+| Elemento | Descrição |
 | - | - |
-| [Tarefa](../msbuild/task-element-msbuild.md) | Cria e executa uma instância de uma tarefa do MSBuild. |
+| [Tarefa](../msbuild/task-element-msbuild.md) | Cria e executa uma instância de uma tarefa MSBuild. |
 
 ## <a name="example"></a>Exemplo
 
@@ -85,5 +85,5 @@ Armazena valores de saída da tarefa em itens e propriedades.
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

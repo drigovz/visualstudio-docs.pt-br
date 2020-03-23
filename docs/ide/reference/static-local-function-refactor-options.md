@@ -12,60 +12,60 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77144830"
 ---
-# <a name="static-local-function-refactorings-and-quick-actions"></a>Refatoração de função local estática e ações rápidas
+# <a name="static-local-function-refactorings-and-quick-actions"></a>Refatorações de funções locais estáticas e ações rápidas
 
-Este artigo descreve dois recursos de produtividade relacionados a funções locais estáticas. Uma é uma refatoração que torna uma função local estática e a outra é uma ação rápida que gera código para passar variáveis em uma função local estática.
+Este artigo descreve dois recursos de produtividade relacionados com funções locais estáticas. Um é um refatoração que torna uma função local estática, e o outro é uma Ação Rápida que gera código para passar variáveis em uma função local estática.
 
-## <a name="make-local-function-static"></a>Tornar a função local estática
+## <a name="make-local-function-static"></a>Tornar local a função estática
 
 Esta refatoração aplica-se a:
 
 - C#
 
-**O que:** Torna uma função local estática e passa em variáveis definidas fora da função para a declaração e as chamadas da função.
+**O que é isso?** Faz uma função local estática e passa em variáveis definidas fora da função para a declaração e chamadas da função.
 
-**Quando:** Você deseja que sua função local seja estática e que todas as variáveis sejam definidas no escopo da função.
+**Quando:** Você quer que sua função local seja estática e que todas as variáveis sejam definidas no escopo da função.
 
-**Por que:** As funções locais estáticas aprimoram a legibilidade: saber que o código específico é isolado torna mais fácil entender, ler e reutilizar. As funções locais estáticas também fornecem o escopo para evitar poluir uma classe com uma função estática que é chamada apenas em um único método.
+**Por que:** As funções locais estáticas melhoram a legibilidade: saber que o código específico é isolado facilita a compreensão, a releitura e a reutilização. Funções locais estáticas também fornecem escopo para evitar poluir uma classe com uma função estática que é chamada apenas em um único método.
 
 ### <a name="how-to"></a>Como fazer
 
-1. Coloque o cursor sobre o nome da função local.
+1. Coloque seu cuidador no nome da função local.
 
-2. Pressione **Ctrl**+ **.** (ponto) para disparar o menu **ações rápidas e refatorar** .
+2. Pressione **Ctrl**+**.** (período) para ativar o menu **Ações Rápidas e Refatorações.**
 
-   ![Tornar a função local estática](media/make-local-function-static.png)
+   ![Tornar local a função estática](media/make-local-function-static.png)
 
-3. Selecione **tornar a função local ' estática '.**
+3. Selecione **Fazer função local 'estática'.**
 
 ## <a name="pass-variable-explicitly-in-a-static-local-function"></a>Passar variável explicitamente em uma função local estática
 
-Esta ação rápida se aplica a:
+Esta Ação Rápida se aplica a:
 
 - C#
 
-**O que:** Passa uma variável explicitamente para uma função estática local.
+**O que é isso?** Passa uma variável explicitamente para uma função estática local.
 
-**Quando:** Você deseja que uma função local seja estática, mas ainda use variáveis inicializadas fora dela.
+**Quando:** Você quer que uma função local seja estática, mas ainda use variáveis inicializadas fora dela.
 
-**Por que:** O uso de funções locais estáticas fornece esclarecimentos aos leitores porque eles sabem que ele só pode ser declarado e chamado em um contexto específico do programa. Ele fornece a flexibilidade para definir variáveis fora deste contexto, mas ainda pode passá-las como argumentos para a função local estática.
+**Por que:** O uso de funções estáticas locais presta esclarecimentos aos leitores porque eles sabem que ele só pode ser declarado e chamado em um contexto específico do programa. Ele fornece a flexibilidade para definir variáveis fora desse contexto, mas ainda ser capaz de passá-las como argumentos para a função local estática.
 
 ### <a name="how-to"></a>Como fazer
 
-1. Coloque o cursor na variável em que ele é usado na função local estática.
+1. Coloque seu cuidador na variável onde ele é usado na função local estática.
 
-2. Pressione **Ctrl**+ **.** (ponto) para disparar o menu **ações rápidas e refatorar** .
+2. Pressione **Ctrl**+**.** (período) para ativar o menu **Ações Rápidas e Refatorações.**
 
-   ![Variável pass explicitamente na função local estática](media/pass-variable-explicitly-static-local-function.png)
+   ![Passar variável explicitamente em função local estática](media/pass-variable-explicitly-static-local-function.png)
 
 3. Selecione **Passar variável explicitamente na função estática local**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597328"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
@@ -79,9 +79,9 @@ Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do 
 
 Lista **Escolher um arquivo de chave de nome forte**
 
-Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.
+Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. ** \<Selecione Procurar...>** selecionar um arquivo-chave existente.
 
-Selecione **\<Novo...>** para criar um novo arquivo de chave com o qual assinar o assembly. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
+Selecione ** \<Novo...>** para criar um novo arquivo-chave com o qual assinar o conjunto. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
 
 Botão **Alterar Senha**
 
@@ -98,11 +98,11 @@ Observe que um projeto com assinatura com atraso não será executado e não pod
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
-- [Gerenciando Assinatura de Assembly e Manifesto](../../ide/managing-assembly-and-manifest-signing.md)
-- [Como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)
+- [Gerenciando a assinatura de assembly e de manifesto](../../ide/managing-assembly-and-manifest-signing.md)
+- [Como: Assinar Manifestos de Inscrição e Implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Como Assinar um Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assemblies de nomes fortes](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assembly de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)

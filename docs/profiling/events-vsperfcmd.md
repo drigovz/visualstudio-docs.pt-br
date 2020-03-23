@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777315"
 ---
 # <a name="events-vsperfcmd"></a>Eventos (VSPerfCmd)
-A opção **Events** do *VSPerfCmd.exe* controla o log do ETW (Rastreamento de Eventos para Windows). Os dados ETW são salvos em um arquivo .etl separado do arquivo de dados do criador de perfil. Os dados podem ser exibidos em um relatório usando o comando [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.
+A opção *VSPerfCmd.exe* **Events** controla o registro de Rastreamento de Eventos para Windows (ETW). Os dados ETW são salvos em um arquivo .etl separado do arquivo de dados do criador de perfil. Os dados podem ser exibidos em um relatório usando o comando [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.
 
  A opção **Eventos** pode ser chamada a qualquer momento antes do comando **Shutdown** do VSPerfCmd ser chamado para interromper a criação de perfil.
 
@@ -27,7 +27,7 @@ A opção **Events** do *VSPerfCmd.exe* controla o log do ETW (Rastreamento de E
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  **On**&#124;**Off** Inicia ou interrompe a coleta de dados de evento.
 
  `Guid` O GUID do controle de provedor.
@@ -72,8 +72,8 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 > Se você não excluir os eventos de inicialização, como tais eventos não são listados no arquivo MOF (Managed Object Format), eles aparecerão como GUIDs no relatório. Para obter mais informações, confira esta página no site da Microsoft: [Arquivo de formato MOF (Managed Object Format) de exemplo](https://msdn.microsoft.com/library/default.aspx).
 
-## <a name="see-also"></a>Consulte também
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+## <a name="see-also"></a>Confira também
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

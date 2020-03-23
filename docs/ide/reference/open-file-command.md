@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591509"
 ---
 # <a name="open-file-command"></a>Comando Abrir arquivo
@@ -31,13 +31,13 @@ Abre um arquivo existente e permite que você especifique um editor.
 File.OpenFile filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
 `filename`
 
-Necessária. O caminho total ou parcial e o nome do arquivo a abrir. Caminhos que contêm espaços devem ser colocados entre aspas.
+Obrigatórios. O caminho total ou parcial e o nome do arquivo a abrir. Caminhos que contêm espaços devem ser colocados entre aspas.
 
-## <a name="switches"></a>Comutadores
+## <a name="switches"></a>Opções
 
 /e:`editorname`
 
@@ -63,10 +63,10 @@ Este exemplo abre o arquivo de estilo "Test1.css" no editor de código-fonte.
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Janela imediata](../../ide/reference/immediate-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Janela Imediata](../../ide/reference/immediate-window.md)
+- [Caixa de encontrar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e7659cf0e9a5ab06b84d845a7b90cac5c21525f8
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d600b5c3fc48423f8bdb1824cb04a20dcbaae08d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159445"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437540"
 ---
 ## <a name="test-agent"></a>Test Agent
 
@@ -25,14 +25,14 @@ ms.locfileid: "76159445"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 
-ID do componente | Name | Versão do | Tipo de dependência
+ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Principais recursos do Test Agent | 16.0.28315.86 | Necessário
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Principais recursos do Test Agent | 16.0.28315.86 | Obrigatório
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
 Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
 
-ID do componente | Name | Versão do
+ID do componente | Nome | Versão
 --- | --- | ---
-N/D | N/D | N/D
+n/d | n/d | n/d

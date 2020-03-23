@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568952"
 ---
 # <a name="immediate-window"></a>Janela Imediata
@@ -78,7 +78,7 @@ Você pode usar a janela **Imediato** para executar uma função ou sub-rotina e
 
     A janela **Imediato** executa `MyFunction` e exibe `4`.
 
-Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Walkthrough: Depurando em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
+Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a Passo: Depuração no Design Time](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos do Visual Studio Tools para Office, projetos Web, projetos de Dispositivo Inteligente e projetos do SQL.
 
@@ -90,7 +90,7 @@ Ao estabelecer o contexto para a avaliação de expressão em tempo de design, o
 
 Você precisa inserir o sinal de maior que (>) ao emitir comandos do Visual Studio na janela **Imediato**. Use as teclas **Seta para cima** e **Seta para baixo** para rolar pelos comandos usados anteriormente.
 
-|Tarefa|{1&gt;&lt;1} Solução|Exemplo|
+|Tarefa|Solução|Exemplo|
 |----------|--------------|-------------|
 |Avaliar uma expressão.|Preceda a expressão com um ponto de interrogação (?).|`? a+b`|
 |Entrar temporariamente no modo Comando enquanto está no modo Imediato (para executar um único comando).|Digite o comando precedendo-o com um sinal de maior que (>).|`>alias`|
@@ -129,11 +129,11 @@ Em algumas configurações, notificações de exceção de primeira tentativa s�
 
 2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
+- [Navegando através do Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)
-- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
-- [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Primeiro olhe para o depurador](../../debugger/debugger-feature-tour.md)
+- [Passo a passo: Depuração no Tempo de Design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

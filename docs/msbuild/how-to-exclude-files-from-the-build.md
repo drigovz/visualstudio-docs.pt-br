@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633857"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Como excluir arquivos do build
@@ -25,7 +25,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Excluir um arquivo ou um diretório das entradas para um build
 
- Listas de itens são os arquivos de entrada para um build. Os itens que você deseja incluir são declarados separadamente ou como um grupo usando o atributo `Include`. Por exemplo:
+ Listas de itens são os arquivos de entrada para um build. Os itens que você deseja incluir são declarados separadamente ou como um grupo usando o atributo `Include`. Por exemplo: 
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -36,7 +36,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
  Se você usou curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build, poderá haver um ou mais arquivos no diretório ou um diretório no conjunto aninhado de diretórios que você não deseja incluir. Para excluir um item da lista de itens, use o atributo `Exclude`.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Para incluir todos os arquivos *.cs* ou *.vb*, exceto *Form2*
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Para incluir todos os arquivos *.cs* ou *.vb,* exceto *o Form2*
 
 - Use um dos atributos `Include` e `Exclude` a seguir:
 
@@ -50,7 +50,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Para incluir todos os arquivos *.cs* ou *.vb*, exceto *Form2* e *Form3*
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Para incluir todos os arquivos *.cs* ou *.vb,* exceto *Form2* e *Form3*
 
 - Use um dos atributos `Include` e `Exclude` a seguir:
 
@@ -64,7 +64,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos os arquivos *.jpg* em subdiretórios do diretório *Images*, exceto aqueles no diretório *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos os arquivos *.jpg* em subdiretórios do diretório *Imagens,* exceto aqueles no diretório *Versão2*
 
 - Use os atributos `Include` e `Exclude` a seguir:
 
@@ -81,7 +81,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
  Se houver itens que você deseja incluir, por exemplo, em um build de depuração, mas não em um build de versão, você poderá usar o atributo `Condition` para especificar as condições sob as quais o item será incluído.
 
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir o arquivo *Formula.vb* somente em builds de Versão
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir o arquivo *Formula.vb* apenas em compilações de lançamento
 
 - Use um atributo `Condition` semelhante ao seguinte:
 
@@ -93,7 +93,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
 ## <a name="example"></a>Exemplo
 
- O exemplo de código a seguir cria um projeto com todos os arquivos *.cs* no diretório, exceto *Form2.cs*.
+ O exemplo de código a seguir constrói um projeto com todos os arquivos *.cs* no diretório, exceto *Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

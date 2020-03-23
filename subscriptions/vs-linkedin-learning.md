@@ -7,10 +7,10 @@ ms.date: 02/12/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
 ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "77278842"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
@@ -22,7 +22,7 @@ Assinaturas selecionadas do Visual Studio incluem uma assinatura do LinkedIn Pre
 
 ## <a name="activation-steps"></a>Etapas de ativação
 Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning:
-1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Faça login [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)em .
 
 2. Localize o bloco do LinkedIn Learning na categoria Educação e clique no link **Obter código**.
    > [!div class="mx-imgBorder"]
@@ -39,11 +39,11 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 
 7. Em seguida, você colocará algumas informações no seu perfil.  Indique se é estudante e coloque seu último cargo, empresa e setor.
 
-8. Nesta etapa, você terá a oportunidade de escolher suas áreas de interesse.  Para agilizar o processo de criação da conta, clique em **não verificar ainda.  Estou aberto!**  É possível escolher essas áreas mais tarde.
+8. Nesta etapa, você terá a oportunidade de escolher suas áreas de interesse.  Para agilizar o processo de criação da conta, clique **em Ainda não ter certeza.  Estou aberto!**  É possível escolher essas áreas mais tarde.
 
 9. Quando você forneceu seu endereço de email, recebeu uma mensagem com um código de confirmação.  A mensagem é enviada pelo "Mensagens do LinkedIn".  Se não encontrá-la na caixa de entrada, verifique suas pastas de lixo eletrônico.  Insira o código da mensagem e clique em **Verificar**.
 
-10. Caso deseje importar seus contatos da conta de email inserida anteriormente, é possível fazê-lo agora.  Caso contrário, clique em **Ignorar**. Se você optar por ignorar esta etapa, será solicitado a confirmar sua escolha.  Clique em **Sim**.
+10. Caso deseje importar seus contatos da conta de email inserida anteriormente, é possível fazê-lo agora.  Caso contrário, clique em **Ignorar**. Se você optar por ignorar esta etapa, será solicitado a confirmar sua escolha.  Clique **em Sim**.)
 
 11. Os alertas de vaga permitem que você seja notificado de vagas na sua região, que podem ser uma boa opção para você.  É possível definir um alerta de vaga agora ou ignorar esta etapa para continuar a criar sua conta.
 
@@ -66,24 +66,24 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![Página inicial do LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Elegibilidade
+## <a name="eligibility"></a>Qualificação
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Varejo, NFR<sup>1</sup> selecionado | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise   | Vl | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Não.  Disponível apenas para novos assinantes         |
-| Visual Studio Professional com GitHub Enterprise | VL | 3 meses      | Não.  Disponível apenas para novos assinantes         |
+| Visual Studio Professional com GitHub Enterprise | Vl | 3 meses      | Não.  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP).  Exclui: Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark, imagine, profissional mais valioso (MVP), diretor regional (RD).  MCT software & Services.*
+<sup>1</sup>  *Inclui: Não para revenda (NFR), Visual Studio Industry Partner (VSIP).  Exclui: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
-> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Novos clientes são incentivados a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) ir para explorar diferentes opções para comprar o Visual Studio.
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
+Não tem certeza de qual assinatura você está usando?  Conecte-se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de e-mail. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Se eu renovar minha assinatura, o benefício LinkedIn Learning também será renovado?
@@ -94,9 +94,9 @@ R: Não, a oferta LinkedIn Learning está disponível somente para novos assinan
   - Ajuda para [usar o LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Ajuda para dúvidas gerais sobre o [LinkedIn](https://www.linkedin.com/help/linkedin), como criar perfis e contas e manter a rede.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
-- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
-Confira o restante dos ótimos benefícios incluídos na sua assinatura. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Confira o resto dos grandes benefícios incluídos na sua assinatura. Visite. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 
-Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no azulejo Do Zure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual Do Azure DevTest.

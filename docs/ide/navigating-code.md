@@ -19,10 +19,10 @@ manager: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585815"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
@@ -31,7 +31,7 @@ O Visual Studio fornece várias maneiras de navegar no código usando o editor. 
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandos Navegar para trás e Navegar para frente
 
-Você pode usar os botões **Navegar para Trás** (**Ctrl**+ **-** ) e **Navegar para Frente** (**Ctrl**+**Shift**+ **-** ) na barra de ferramentas para mover o ponto de inserção para locais anteriores ou para retornar para um local mais recente do que um local anterior. Esses botões retém os últimos 20 locais do ponto de inserção. Esses comandos também estão disponíveis no menu **Exibir**, em **Navegar para Trás** e **Navegar para Frente**.
+Você pode usar os botões **Navegar para trás** **(Ctrl)**+**-** e **navegar para frente** **(Ctrl**+**Shift)**+**-** na barra de ferramentas para mover o ponto de inserção para locais anteriores ou para retornar a um local mais recente de um local anterior. Esses botões retém os últimos 20 locais do ponto de inserção. Esses comandos também estão disponíveis no menu **Exibir**, em **Navegar para Trás** e **Navegar para Frente**.
 
 ![Botões de navegação para frente e para trás](../ide/media/vs2017_nav_buttons.png)
 
@@ -57,7 +57,7 @@ Você pode navegar nas caixas suspensas da seguinte maneira:
 
 - Para retornar o foco da barra de navegação para o código sem selecionar nada, pressione a tecla **Esc**.
 
-Para ocultar a barra de navegação, altere a opção **Barra de navegação** nas configurações **Todas as Linguagens do Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**) ou altere as configurações das linguagens individualmente.
+Para ocultar a barra de navegação, altere a opção **Barra de navegação** nas configurações Do Editor de Texto All **Languages** **(Tools** > **Options** > **Text Editor** > **All Languages)** ou você pode alterar as configurações para idiomas individuais.
 
 ## <a name="find-all-references"></a>Localizar todas as referências
 
@@ -65,12 +65,12 @@ Localiza todas as referências ao elemento selecionado na solução. Você pode 
 
 Entrada | Função
 ------------ | ---
-**Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Shift**+**F12**
+**Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e **pressione Shift**+**F12**
 **Mouse** | Selecione **Localizar Todas as Referências** no menu do clique com o botão direito
 
 ## <a name="reference-highlighting"></a>Realce de referência
 
-Quando você clica em um símbolo no código-fonte, todas as instâncias desse símbolo são realçadas no documento. Os símbolos realçados podem incluir declarações e referências e muitos outros símbolos que **Localizar Todas as Referências** retornaria. Isso inclui os nomes de classes, objetos, variáveis, métodos e propriedades. No código do Visual Basic, as palavras-chave de muitas estruturas de controle também são realçadas. Para passar para o próximo símbolo realçado ou para o anterior, pressione **Ctrl**+**Shift**+**Seta para Baixo** ou **Ctrl**+**Shift**+**Seta para Cima**. Você pode alterar a cor de realce em **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores** > **Referência Realçada**.
+Quando você clica em um símbolo no código-fonte, todas as instâncias desse símbolo são realçadas no documento. Os símbolos realçados podem incluir declarações e referências e muitos outros símbolos que **Localizar Todas as Referências** retornaria. Isso inclui os nomes de classes, objetos, variáveis, métodos e propriedades. No código do Visual Basic, as palavras-chave de muitas estruturas de controle também são realçadas. Para passar para o próximo ou o símbolo destacado anteriormente, pressione **Ctrl**+**Shift**+**Down Arrow** ou **Ctrl**+**Shift**+Up**Arrow**. Você pode alterar a cor de destaque nas **opções de** > **ferramentas Fontes de** > **ambiente** > **e referência destacadas de** > **cores**.
 
 ## <a name="go-to-commands"></a>Comandos Ir Para
 
@@ -78,11 +78,11 @@ Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em 
 
 - **Ir Para Linha** (**Ctrl**+**G**): mover para o número de linha especificado no documento ativo.
 
-- **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+ **,** ): mover para a linha, o tipo, o arquivo, o membro ou o símbolo especificado.
+- **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+**,**): mover para a linha, o tipo, o arquivo, o membro ou o símbolo especificado.
 
 - **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
 
-- **Ir para o arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): mover para o arquivo especificado recentemente visitado na solução.
+- **Vá para arquivo recente** **(Ctrl**+**1**, **Ctrl**+**R**): Mova-se para o arquivo especificado e visitado recentemente na solução.
 
 - **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
 
@@ -109,7 +109,7 @@ Entrada | Função
 
 ## <a name="peek-definition"></a>Inspecionar Definição
 
-Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
+Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, consulte [Como: Exibir e editar código usando Peek Definition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e Go To Definition e Peek [Definition](../ide/go-to-and-peek-definition.md).
 
 Entrada | Função
 ------------ | ---
@@ -125,14 +125,14 @@ Entrada | Função
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**F12**
 **Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
 
-## <a name="go-to-base"></a>Ir para base
+## <a name="go-to-base"></a>Ir Para a Base
 
-Usando ir para base, você pode navegar até a cadeia de herança do elemento selecionado. Se houver vários resultados, você os verá listados na janela **ir para base** :
+Usando Go To Base, você pode navegar até a cadeia de herança do elemento selecionado. Se houver vários resultados, você os verá listados na janela **Ir para base:**
 
 Entrada | Função
 ------------ | ---
-**Teclado** | Coloque o cursor do texto em algum lugar dentro do nome do tipo e pressione **Alt**+**página inicial**
-**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **ir para base**
+**Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Alt**+**Home**
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e **selecione Ir para a base**
 
 ## <a name="call-hierarchy"></a>Hierarquia de chamadas
 
@@ -140,30 +140,30 @@ Você pode exibir as chamadas de e para um método na [Janela Hierarquia de Cham
 
 Entrada | Função
 ------------ | ---
-**Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**K**, **Ctrl**+**T**
+**Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e **pressione Ctrl**+**K**, **Ctrl**+**T**
 **Mouse** | Clique com o botão direito do mouse no nome do membro e selecione **Exibir Hierarquia de Chamadas**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Comandos Próximo Método e Método Anterior (Visual Basic)
 
-Nos arquivos de código Visual Basic, use esses comandos para mover o ponto de inserção para diferentes métodos. Escolha **Editar** > **Próximo Método** ou **Editar** > **Método Anterior**.
+Nos arquivos de código Visual Basic, use esses comandos para mover o ponto de inserção para diferentes métodos. Escolha **Editar** > **próximo método** ou **editar** > método**anterior**.
 
 ## <a name="structure-visualizer"></a>Visualizador de Estrutura
 
-O recurso Visualizador de Estrutura no editor de códigos mostra as *linhas guias da estrutura* – linhas verticais tracejadas que indicam a correspondência de chaves em sua base de código. Isso facilita ver onde os blocos lógicos começam e terminam.
+O recurso Structure Visualizer no editor de código mostra *linhas-guia de estrutura* - linhas verticais tracejadas que indicam aparelhos encaracolados correspondentes em sua base de código. Isso facilita ver onde os blocos lógicos começam e terminam.
 
 ![Visualizador de Estrutura](../ide/media/vside_structure_visualizer.png)
 
-Para desabilitar as linhas da guia da estrutura, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Geral** e limpe a caixa **Mostrar linhas da guia da estrutura**.
+Para desativar as linhas-guia da estrutura, vá para **Tools** > **Options** > **Text Editor** > **Geral** e limpe a caixa **de linhas-guia da estrutura show.**
 
 ## <a name="enhanced-scroll-bar"></a>Barra de rolagem avançada
 
-Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, confira [Como acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, [consulte Como: Rastrear seu código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informações do CodeLens
 
 Você pode localizar informações sobre o código específico, como alterações e quem fez essas alterações, referências, bugs, itens de trabalho, revisões de código e status de teste de unidade ao usar o CodeLens no editor de código. O CodeLens funciona como uma exibição de alerta quando você usa o Visual Studio Enterprise com o Team Foundation Server. Consulte [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Exibir a hierarquia de chamada](../ide/reference/call-hierarchy.md)
+- [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Exibir hierarquia de chamadas](../ide/reference/call-hierarchy.md)

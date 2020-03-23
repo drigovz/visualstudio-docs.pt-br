@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: criar um aplicativo C# de console simples'
+title: 'Tutorial: Crie um aplicativo de console C# simples'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
 ms.date: 02/18/2020
@@ -16,25 +16,25 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "78215431"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo C# de console simples no Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Crie um aplicativo de console C# simples no Visual Studio
 
 Neste tutorial do C#, você usará o Visual Studio para criar e executar um aplicativo de console e explorar alguns recursos do IDE (ambiente de desenvolvimento integrado) do Visual Studio durante esse processo.
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -46,10 +46,10 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 
 1. Abra o Visual Studio 2017.
 
-2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
-   (Alternativamente, pressione **Ctrl**+**Shift**+**N**).
+2. Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
+   (Alternativamente, **pressione Ctrl**+**Shift**+**N**).
 
-3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o arquivo como ***Calculator***.
+3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como ***Calculator***.
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -65,11 +65,11 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-   ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 
-1. Cancele a caixa de diálogo **novo projeto** e, na barra de menus superior, escolha **ferramentas** > **obter ferramentas e recursos**.
+1. Cancele a caixa de diálogo **Novo Projeto**; em seguida, vá até a barra de menus superior e escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
@@ -79,7 +79,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. Abra o Visual Studio 2019.
 
-1. Na tela Iniciar, selecione **Criar um novo projeto**.
+1. Na janela inicial, escolha **Criar um novo projeto**.
 
    ![Exibir a janela 'Criar um novo projeto'](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -90,13 +90,13 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    ![Escolha o modelo de C# para o Aplicativo de Console (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Se não vir o modelo **Aplicativo de Console (.NET Core)** , você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
    >
    > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
    >
-   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
 
@@ -135,11 +135,11 @@ Vamos começar com alguns cálculos matemáticos básicos de inteiro em C#.
     Observe que quando você faz isso, o recurso IntelliSense no Visual Studio oferece a opção de preencher automaticamente a entrada.
 
     > [!NOTE]
-    > A animação a seguir não se destina a duplicar o código anterior. Destina-se apenas a mostrar como o recurso de preenchimento automático funciona.
+    > A animação a seguir não pretende duplicar o código anterior. Destina-se apenas a mostrar como o recurso de autocompletar funciona.
 
     ![Animação de código de matemática de inteiro que mostra o recurso de preenchimento automático do IntelliSense no IDE do Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Escolha o botão **início** verde ao lado da **calculadora** para compilar e executar o programa ou pressione **F5**.
+1. Escolha o botão verde **Iniciar** ao lado **da Calculadora** para construir e executar o seu programa, ou **pressione F5**.
 
    ![Escolha o botão Calculadora para executar o aplicativo na barra de ferramentas](./media/csharp-console-calculator-button.png)
 
@@ -241,7 +241,7 @@ Como mostrado na captura de tela a seguir, se você executar o aplicativo e divi
 
 Vamos corrigir o código para que ele identifique decimais.
 
-1. Pressione **Ctrl** + **F** para abrir o controle **Localizar e Substituir**.
+1. Pressione **Ctrl** + **F** para abrir o controle Encontrar **e Substituir.**
 
 1. Altere cada instância da variável `int` para `float`.
 
@@ -271,21 +271,21 @@ No entanto, o aplicativo produz apenas um resultado decimal. Vamos fazer mais al
 
 Melhoramos nosso aplicativo de calculadora básica, mas ele ainda não é à prova de falhas para tratar exceções, como erros de entrada do usuário.
 
-Por exemplo, se você tentar dividir um número por zero ou inserir um caractere alfa quando o aplicativo espera um caractere numérico (ou vice-versa), o aplicativo pode parar de funcionar, retornar um erro ou retornar um resultado não numérico inesperado.
+Por exemplo, se você tentar dividir um número por zero ou digitar um caractere alfa quando o aplicativo espera um caractere numérico (ou vice-versa), o aplicativo pode parar de funcionar, retornar um erro ou retornar um resultado não numérico inesperado.
 
-Vamos examinar alguns erros comuns de entrada do usuário, localizá-los no depurador se eles aparecerem e corrigi-los no código.
+Vamos passar por alguns erros comuns de entrada do usuário, localizá-los no depurador se eles aparecerem lá e corrigi-los no código.
 
 > [!TIP]
 > Para obter mais informações sobre o depurador e como ele funciona, confira a página [Introdução ao depurador do Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Corrigir o erro de "divisão por zero"
 
-Quando você tenta dividir um número por zero, o aplicativo de console pode congelar e, em seguida, mostrar o que há de errado no editor de código.
+Quando você tenta dividir um número por zero, o aplicativo do console pode congelar e, em seguida, mostrar o que está errado no editor de código.
 
    ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> Às vezes, o aplicativo não congela e o depurador não mostrará um erro de divisão por zero. Em vez disso, o aplicativo pode retornar um resultado não numérico inesperado, como um símbolo de infinito. A correção de código a seguir ainda se aplica.
+> Às vezes, o aplicativo não congela e o depurador não mostra um erro de divisão por zero. Em vez disso, o aplicativo pode retornar um resultado não numérico inesperado, como um símbolo infinito. A seguinte correção de código ainda se aplica.
 
 Vamos alterar o código para tratar esse erro.
 
@@ -309,7 +309,7 @@ Vamos alterar o código para tratar esse erro.
 
    ![A seção alterada e revisada no editor de códigos do Visual Studio](./media/csharp-console-calculator-switch-code.png)
 
-Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: não irá parar de perguntar até que você forneça um número diferente de zero.
+Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: ele não vai parar de perguntar até que você forneça um número diferente de zero.
 
    ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero.png)
 
@@ -329,7 +329,7 @@ A classe `Calculator` fará a maior parte do trabalho de cálculo e a classe `Pr
 
 Vamos começar.
 
-1. Exclua tudo no namespace `Calculator` entre suas chaves de abertura e fechamento:
+1. Exclua tudo `Calculator` no namespace entre suas chaves de abertura e fechamento:
 
     ```csharp
     using System;
@@ -472,7 +472,7 @@ Vamos começar.
 
    ![Fechar o painel Saída no Visual Studio](./media/csharp-calculator-close-output-pane.png)
 
-1. No Visual Studio, pressione **Ctrl**+**S** para salvar o aplicativo.
+1. No Visual Studio, **pressione Ctrl**+**S** para salvar seu aplicativo.
 
 1. Feche o Visual Studio.
 
@@ -598,14 +598,14 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutoriais a seguir.
 
 > [!div class="nextstepaction"]
 > [Continuar com mais tutoriais do C#](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595846"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas deC#compilação ()
+# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas de compilação (C#)
 
-Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Esta caixa de diálogo aplica C# -se somente a projetos.
+Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Esta caixa de diálogo se aplica apenas a projetos C#.
 
 ## <a name="general"></a>Geral
 
 As opções a seguir permitem definir configurações gerais avançadas.
 
-**Versão da Linguagem**
+**Versão do idioma**
 
 ::: moniker range=">=vs-2019"
 
-Links para [/langversion (C# opções de compilador)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que fornece informações sobre como uma versão de idioma padrão é escolhida com base na estrutura de destino de um projeto.
+Links para [/langversion (opções de compilador C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que fornece informações sobre como uma versão de idioma padrão é escolhida com base na estrutura de destino de um projeto.
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Links para [/langversion (C# opções de compilador)](/dotnet/csharp/language-re
 
 Especifica a versão da linguagem a ser usada. O conjunto de recursos é diferente em cada versão e, portanto, essa opção pode ser usada para forçar o compilador a permitir somente um subconjunto dos recursos implementados ou permitir somente os recursos compatíveis com um padrão existente.
 
-O valor padrão é C# 7,0.
+O valor padrão é C# 7.0.
 
 ::: moniker-end
 
@@ -64,23 +64,23 @@ As opções a seguir permitem especificar opções de saída avançadas.
 
 Especifica o tipo de informações de depuração geradas pelo compilador. Para obter informações sobre como configurar o desempenho de depuração de um aplicativo, consulte [Facilitando a depuração de uma imagem](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Essa configuração tem as seguintes opções:
 
-- **none**
+- **nenhum**
 
    Especifica que nenhuma informação de depuração será gerada.
 
-- **full**
+- **Cheio**
 
    Permite anexar um depurador ao programa em execução.
 
-- **pdbonly**
+- **Pdbonly**
 
    Permite a depuração de código-fonte quando o programa é iniciado no depurador, mas apenas exibirá o assembler quando o programa em execução estiver anexado ao depurador.
 
-- **portátil**
+- **Portátil**
 
    Produz um arquivo PDB, um arquivo de símbolo portátil e não específico da plataforma que fornece outras ferramentas, especialmente depuradores, informações sobre o que está no arquivo executável principal e como ele foi produzido. Consulte [PDB portátil](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) para obter mais informações.
 
-- **inserido**
+- **Incorporado**
 
    Incorpora informações de símbolo portátil no assembly. Nenhum arquivo PDB externo é produzido.
 
@@ -88,13 +88,13 @@ Para obter mais informações, consulte [/debug (opções do compilador C#)](/do
 
 **Alinhamento de Arquivo**
 
-Especifica o tamanho das seções no arquivo de saída. Os valores válidos são **512**, **1024**, **2048**, **4096** e **8192**. Esses valores são medidos em bytes. Cada seção será alinhada em um limite que é um múltiplo desse valor, afetando o tamanho do arquivo de saída. Para obter mais informações, consulte [/filealign (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Especifica o tamanho das seções no arquivo de saída. Os valores válidos são **512**, **1024,** **2048,** **4096**e **8192**. Esses valores são medidos em bytes. Cada seção será alinhada em um limite que é um múltiplo desse valor, afetando o tamanho do arquivo de saída. Para obter mais informações, consulte [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Endereço básico da biblioteca**
 
-Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão de uma DLL é definido pelo Common Language Runtime do .NET Framework. Para obter mais informações, consulte [/baseaddress (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão de uma DLL é definido pelo Common Language Runtime do .NET Framework. Para obter mais informações, consulte [/baseaddress (C# Opções de compilador)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Opções do compilador do C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Página de build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [C# opções de compilador](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página de compilação, Project Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md)

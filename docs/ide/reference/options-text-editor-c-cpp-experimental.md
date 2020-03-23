@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278706"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
@@ -28,7 +28,7 @@ Este artigo descreve as opções no Visual Studio 2017. Para o Visual Studio 201
 
 ::: moniker-end
 
-Para acessar esta página de propriedades, pressione **Ctrl**+**Q** para ativar a caixa de pesquisa e, em seguida, digite **experimental**. A Pesquisa encontra a página após as primeiras letras. Acesse-a também escolhendo **Ferramentas** > **Opções** e expandindo **Editor de Texto**, em seguida, **C/C++** e escolhendo **Experimental**.
+Para acessar esta página de propriedade, **pressione Ctrl**+**Q** para ativar a caixa de pesquisa e, em seguida, digite **experimental**. A Pesquisa encontra a página após as primeiras letras. Você também pode obtê-lo escolhendo **Opções** > **de ferramentas** e expandindo o Editor de **Texto,** depois **C/C++** e, em seguida, escolhendo **Experimental**.
 
 Essas funcionalidades estão disponíveis em uma instalação do Visual Studio.
 
@@ -65,6 +65,6 @@ Você pode procurar outros recursos do editor de texto no [Visual Studio Marketp
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)
+- [Definindo opções de editor específicos do idioma](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refatoração em C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )
