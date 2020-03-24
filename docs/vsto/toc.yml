@@ -22,7 +22,7 @@
                   href: configuring-a-computer-to-develop-office-solutions.md
                 - name: Configurar um computador para desenvolver soluções do Office
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
-                - name: Instalar o tempo de execução do Visual Studio Tools para Office redistribuível
+                - name: Instalar o runtime do Visual Studio Tools para Office redistribuível
                   href: how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md
                 - name: Instalar assemblies de interoperabilidade primários do Office
                   href: how-to-install-office-primary-interop-assemblies.md
@@ -62,13 +62,13 @@
               href: architecture-of-document-level-customizations.md
             - name: Arquitetura de suplementos do VSTO
               href: architecture-of-vsto-add-ins.md
-            - name: Visão geral de tempo de execução do Visual Studio Tools for Office
+            - name: Visão geral de runtime do Visual Studio Tools for Office
               items:
-                - name: Visão geral de tempo de execução do Visual Studio Tools for Office
+                - name: Visão geral de runtime do Visual Studio Tools for Office
                   href: visual-studio-tools-for-office-runtime-overview.md
-                - name: Cenários de instalação de tempo de execução do Visual Studio Tools for Office
+                - name: Cenários de instalação de runtime do Visual Studio Tools for Office
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
-                - name: Assemblies em tempo de execução do Visual Studio Tools for Office
+                - name: Assemblies em runtime do Visual Studio Tools for Office
                   href: assemblies-in-the-visual-studio-tools-for-office-runtime.md
             - name: Entradas do Registro para suplementos VSTO
               href: registry-entries-for-vsto-add-ins.md
@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Implantando uma solução do Office usando o Windows Installer
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Implantando uma solução do Office usando projetos de configuração do Visual Studio
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Solucionando problemas da implantação de solução do Office
               items:
                 - name: Solucionando problemas da implantação de solução do Office
