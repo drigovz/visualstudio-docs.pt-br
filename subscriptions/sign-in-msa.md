@@ -3,15 +3,16 @@ title: Entrar em Assinaturas do Visual Studio com sua MSA (Conta Microsoft) | Mi
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Como entrar em sua Assinatura do Visual Studio com sua MSA (Conta Microsoft)
-ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508714"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233208"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Entrar em suas assinaturas do Visual Studio com sua MSA (Conta Microsoft)
 
@@ -48,4 +49,4 @@ Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de ass
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  
+Depois de ter feito o acesso com sucesso ao portal de https://my.visualstudio.com/benefits assinaturas, recomendamos visitar a página de Benefícios e explorar as ótimas ferramentas, serviços e ofertas disponíveis para você.  

@@ -3,15 +3,16 @@ title: Oferta de DevTest do Azure Enterprise Agreement
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Saiba como aproveitar os preços especiais do Azure DevTest disponíveis para clientes com Contratos Corporativos
-ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 09da80ad735548e9b0c450b9675cebece0b0c60c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410421"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232639"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta de DevTest do Azure Enterprise Agreement
 

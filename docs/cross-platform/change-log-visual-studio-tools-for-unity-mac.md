@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771537"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232915"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2520"></a>2.5.2.0
+
+Lançado em 23 de março de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Depurador:**
+
+  - Registro fixo de threads no anexo.
+
+## <a name="2510"></a>2.5.1.0
+
+Lançado em 3 de março de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Adicionado um supressor para [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). Os métodos privados usados com Invoke, InvokeRepeating, StartCoroutine ou StopCoroutine não devem ser marcados como não utilizados.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Documentação fixa da OnDrawGizmos/OnDrawGizmosDocumentação selecionada
+
+- **Avaliação:**
+
+  - Inspeção de argumento lambda fixo.
+
+## <a name="2501"></a>2.5.0.1
+
+Lançado em 19 de fevereiro de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Verificação de diagnóstico fixa [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) para assinatura de mensagem incorreta. Ao inspecionar tipos com vários níveis de herança, este `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`diagnóstico pode falhar com a seguinte mensagem: .
+
+## <a name="2500"></a>2.5.0.0
+
+Lançado em 22 de janeiro de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Adicionado suporte para arquivos HLSL.
+  
+  - Mudou para uma nova ui de diálogo de pasta.
+  
+  - Comutado para uma nova grade de propriedade acessível para configurações.
+
+  - Adicionado um supressor para [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). Campos privados `SerializeField` com o atributo não devem ser marcados como não utilizados.
+
+  - Adicionado um supressor para [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). Campos com `SerializeField` o atributo não devem ser marcados como não atribuídos.  
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Geração fixa`GenerateTargetFrameworkMonikerAttribute` de projetos (o alvo nem sempre foi localizado corretamente)
+
+- **Avaliação:**
+
+  - Avaliação de string fixa (não usando chamadas ToString()
 
 ## <a name="2420"></a>2.4.2.0
 

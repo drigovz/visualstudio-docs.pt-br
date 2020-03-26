@@ -3,15 +3,16 @@ title: Parceiros que gerenciam assinaturas do Visual Studio para os clientes | M
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como os parceiros gerenciam as assinaturas do Visual Studio para seus clientes.
-ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: bf1fe706a0e1ee0b027e465c0bfaa8c0d326ee99
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947068"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232290"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Parceiros que gerenciam assinaturas em nome dos clientes
 Para gerenciar assinaturas no [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com), há algumas etapas que os parceiros e os clientes precisarão seguir. O processo será:
@@ -50,7 +51,7 @@ Esse cenário se aplica a novos parceiros, que já fizeram novos pedidos de Lice
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.
 
 ## <a name="resources"></a>Recursos
-- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento de volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

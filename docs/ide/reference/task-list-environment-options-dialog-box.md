@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592003"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233122"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Caixa de diálogo \> opções: Lista de tarefas do ambiente
 
@@ -64,4 +64,4 @@ Clique para fazer alterações em um token existente usando os valores inseridos
 ## <a name="see-also"></a>Confira também
 
 - [Usar a Lista de Tarefas](../../ide/using-the-task-list.md)
-- [Definir indicadores no código](../../ide/setting-bookmarks-in-code.md)
+- [Configurar Identificadores no Código](../../ide/setting-bookmarks-in-code.md)

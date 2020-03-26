@@ -1,17 +1,18 @@
 ---
 title: Compra de assinatura de nuvem do Visual Studio para CSPs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
-ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851395"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273862"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partner.microsoft.com/cloud-solution-provider) podem comprar assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional para seus clientes.
@@ -105,3 +106,11 @@ R: Não, os preços para assinaturas do Visual Studio são fixos. O mesmo preço
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: Há opções de preços de Desenvolvimento/Teste do Azure para os CSPs?
  R: Não no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
 
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Próximas etapas
+Consulte o [FAQ de faturamento em nuvem](vscloud-billing-faq.md) para obter respostas para perguntas comuns de faturamento.  

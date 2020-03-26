@@ -3,15 +3,16 @@ title: Responsabilidades do administrador | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Saiba mais sobre as responsabilidades dos administradores de assinaturas.
-ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 61b75f1863ba490a610edf63c330661d1c4baf52
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235152"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232718"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Visão geral das responsabilidades do administrador
 Como administrador, você pode gerenciar as assinaturas da organização.  A função de administrador também tem a responsabilidade de garantir que as assinaturas sejam gerenciadas de acordo com os termos de licença. Este artigo descreve as responsabilidades, os benefícios e as limitações da função de administrador.

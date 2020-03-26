@@ -3,15 +3,16 @@ title: Exportar informações de assinatura | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como exportar uma lista de assinantes e os detalhes de suas atribuições de assinatura.
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263208"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232504"
 ---
 # <a name="export-subscription-information"></a>Exportar informações da assinatura
 No Portal de [Administração de](https://manage.visualstudio.com)Assinaturas do Visual Studio, você pode exportar uma lista de seus assinantes e detalhes sobre suas atribuições. Essas informações incluem nome, endereço de email, endereço de email alternativo, nível da assinatura, data de atribuição, status de ativação, data do término, campo de referência, se os downloads estão habilitados, país, idioma, status da assinatura e GUID da assinatura.  A lista é exportada como um arquivo CSV que pode ser facilmente aberto no Microsoft Excel para a criação de gráficos, pivôs e outros artefatos.

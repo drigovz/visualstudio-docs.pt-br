@@ -3,15 +3,16 @@ title: Gerenciar equipes grandes e prestadores de serviço externos | Visual Stu
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores em gerenciar assinaturas para grandes equipes, bem como contratantes externos.
-ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947056"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232317"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
 Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com software licenciado do Visual Studio seja licenciado adequadamente com sua própria assinatura do Visual Studio.

@@ -1,18 +1,18 @@
 ---
 title: Definir as fontes e o tema de cores
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596938"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233147"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizar o Editor e o IDE do Visual Studio
 
@@ -52,8 +52,19 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Você pode instalar temas predefinidos adicionais instalando o **Visual Studio Color Theme Editor** do Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Você pode criar seus próprios temas instalando o **Visual Studio Color Theme Designer** do Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>Alterar a cor do texto
 
