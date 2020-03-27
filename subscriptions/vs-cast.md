@@ -1,17 +1,18 @@
 ---
 title: O benefício CAST Highlight para as assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: f3f21a29e8ad710471eddadfbd5c98677db3098e
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78257170"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274018"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o DESTAQUE DO CAST, os assinantes do Visual Studio podem digitalizar rapidamente o código-fonte do aplicativo para identificar a prontidão na nuvem de seus aplicativos para migração para o Azure e monitorar o progresso de seu aplicativo durante e após uma migração.

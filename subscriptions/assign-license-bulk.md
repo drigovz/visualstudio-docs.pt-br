@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Bulk add ou os grupos de diretórioativo ativo do Microsoft Azure
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988483"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274057"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -104,6 +104,10 @@ O uso deste recurso facilita a permanência em suas atribuições de assinatura.
 7. Para ver o grupo adicionado, role até a parte inferior da sua lista de usuários.  
 
 8. Selecione **Exibir assinantes** para exibir os membros do grupo. Você pode ver detalhes sobre os assinantes do grupo, mas não pode fazer nenhuma edições para os assinantes ou as assinaturas que eles são atribuídos.    
+
+> [!NOTE]
+> Se você já tiver atribuído assinaturas individualmente aos usuários que são adicionados posteriormente como parte de um grupo AD do Azure, eles serão adicionados como parte do grupo e não serão mais listados individualmente. No entanto, se a assinatura individual for para um nível de assinatura diferente, eles terão duas assinaturas.  Exemplo: Se um usuário tiver uma assinatura individual do Visual Studio Professional e for membro de um grupo ao qual você atribui assinaturas do Visual Studio Enterprise, ele terá ambos.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

@@ -1,17 +1,18 @@
 ---
 title: O benefício da Revista CODE em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 10/13/2019
+ms.assetid: e5768153-2758-46d3-a323-3272def213ee
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício da REVISTA CODE incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74491660"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274005"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista CODE incluída nas assinaturas do Visual Studio
 
@@ -74,6 +75,12 @@ R: A REVISTA CODE coleta seu endereço, independentemente de a assinatura ser pa
 - Tem dúvidas sobre sua assinatura da REVISTA CODE?  Entre em contato com [a REVISTA CODE](https://www.codemag.com/contact) por e-mail ou telefone, ou envie uma solicitação de suporte on-line.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Confira o resto dos grandes benefícios incluídos na sua assinatura. Visite. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

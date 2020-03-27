@@ -1,17 +1,18 @@
 ---
 title: O benefício Power BI Pro nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 11/18/2019
+ms.author: v-evwin
+manager: lank
+ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Power BI Pro incluída na assinatura do Visual Studio.
-ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1d6288c1a3360aaf48c220e73a11f2b4251b8806
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161939"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301930"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
 
@@ -111,6 +112,12 @@ R: Não.  O benefício do Power BI Pro não pode ser adicionado a locatários do
   - Explore os principais problemas, obtenha ajuda da comunidade ou envie um tíquete de suporte na [página de Suporte](https://powerbi.microsoft.com/support/).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 - Para ativar o benefício do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)Power BI Pro, visite .

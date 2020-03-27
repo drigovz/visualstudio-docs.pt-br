@@ -1,17 +1,18 @@
 ---
 title: Benefício PAYG do Azure
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
-ms.openlocfilehash: 23ea1f76fabfa2e9240e040e879f3a497b36f4c3
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550316"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231978"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Assinaturas do Azure DevTest Pay-As-You-Go
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.

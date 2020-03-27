@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578348"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256238"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
@@ -89,13 +89,13 @@ Em um relatório de instantâneos, é possível expandir entradas **Tipo de Obje
 
 Se um **Tipo de Objeto** for azul, será possível selecioná-lo para navegar até o objeto no código-fonte, em uma janela separada.
 
-Os tipos que você não puder identificar ou cujo envolvimento no seu código você não entende serão provavelmente .NET Framework, sistema operacional ou objetos de compilador. A ferramenta **Uso de Memória** exibirá esses objetos se eles estiverem envolvidos nas cadeias de propriedade de seus objetos.
+Tipos que você não pode identificar ou cujo envolvimento no seu código que você não entende são provavelmente .NET, sistema operacional ou objetos de compilador. A ferramenta **Uso de Memória** exibirá esses objetos se eles estiverem envolvidos nas cadeias de propriedade de seus objetos.
 
 No relatório de instantâneos:
 
 - A árvore de **Heap Gerenciado** mostra os tipos e as instâncias no relatório. Escolher um tipo ou instância exibe as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
 
-- A árvore **Caminhos para Raiz** mostra a cadeia de objetos que fazem referência a um tipo ou instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.
+- A árvore **Caminhos para Raiz** mostra a cadeia de objetos que fazem referência a um tipo ou instância. O coletor de lixo .NET limpa a memória de um objeto somente quando todas as referências a ele foram liberadas.
 
 - A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 
@@ -135,7 +135,7 @@ A árvore de **Heap Gerenciado** em um relatório de detalhes do instantâneo te
 |**Módulo**|O módulo que contém o objeto.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Árvore de Caminhos para a Raiz (relatórios detalhes do instantâneo)
-A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.
+A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET limpa a memória de um objeto somente quando todas as referências a ele foram liberadas.
 
 Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm referências para esse tipo é exibido na coluna **Contagem de Referência**.
 
@@ -185,7 +185,7 @@ A árvore de **Heap Gerenciado** em um relatório de diferenças de instantâneo
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árvore de Caminhos para a Raiz (relatórios de diferenças de instantâneos)
 
-A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.
+A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET limpa a memória de um objeto somente quando todas as referências a ele foram liberadas.
 
 Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm referências para esse tipo é exibido na coluna **Contagem de Referência**. A diferença na contagem do instantâneo anterior é a coluna **Diferença de Referência**.
 

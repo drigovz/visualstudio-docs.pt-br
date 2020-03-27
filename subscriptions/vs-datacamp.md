@@ -1,17 +1,18 @@
 ---
 title: Aprimore suas habilidades de ciência de dados hoje mesmo com o benefício DataCamp em assinaturas selecionadas do Visual Studio. | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
-ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 0b5aa20667728847afc83c77401f8651cbad106d
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74706874"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273979"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.
@@ -82,10 +83,15 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se [https://my.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Próximas etapas
 Confira mais oportunidades de desenvolvimento profissional em sua assinatura:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-
 
 Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no azulejo Do Zure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual Do Azure DevTest.

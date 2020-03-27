@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549906"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233092"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configure testes de unidade usando um arquivo *.runsettings*
 
@@ -259,6 +259,7 @@ O elemento **RunConfiguration** pode incluir os seguintes elementos:
 |**TestAdaptersPaths**||Um ou mais caminhos para o diretório no qual os TestAdapters estão localizados|
 |**MaxCpuCount**|1|Essa configuração controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador. O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados. Um contêiner pode ser um assembly, uma DLL ou um artefato relevante. O contêiner do teste está agendando a unidade. Em cada contêiner, os testes são executados de acordo com a estrutura de teste. Se houver muitos contêineres, à medida que os processos concluírem a execução dos testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br />MaxCpuCount pode ser:<br /><br />n, em que 1 <= n <= número de núcleos: até n processos são iniciados<br /><br />n, onde n = qualquer outro valor: o número de processos iniciados pode ser até o número de núcleos disponíveis. Por exemplo, defina n=0 para permitir que a plataforma decida automaticamente o número ideal de processos a serem iniciados com base no ambiente.|
 |**TestSessionTimeout**||Permite que os usuários finalizem uma sessão de teste quando ele exceder o tempo limite determinado. Definir um tempo limite assegura que os recursos serão restritos e as sessões de teste serão restritas a um período de tempo. Essa configuração está disponível no **Visual Studio 2017 versão 15.5** e posterior.|
+|**DotnetHostPath**||Especifique um caminho personalizado para o host dotnet que é usado para executar o host de teste. Isso é útil quando você está construindo sua própria dotnet, por exemplo, ao construir o repositório dotnet/runtime. Especificar essa opção pulará procurando testhost.exe e sempre usará o testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de dados de diagnóstico (coletores de dados)
 

@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de instalação ou de atualização
 description: Às vezes, as coisas podem dar errado. Se a instalação ou atualização do Visual Studio falhar, esta página poderá ajudar.
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115001"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233106"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
 
 > [!IMPORTANT]
-> Está com problema para instalar? Podemos ajudá-lo. Oferecemos um [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) a opção de suporte (apenas em inglês).
+> Está com problema para instalar? Podemos ajudá-lo. Oferecemos uma opção [**de suporte de chat de instalação**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente inglês).
 
 Este guia de solução de problemas apresenta instruções passo a passo que resolvem a maioria dos problemas de instalação.
 

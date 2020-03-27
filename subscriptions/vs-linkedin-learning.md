@@ -1,17 +1,18 @@
 ---
 title: Benefício do LinkedIn Learning em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 02/12/2020
+ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
-ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 57744c21123188448048b469aa06153cf81a949f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77278842"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273953"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -95,6 +96,12 @@ R: Não, a oferta LinkedIn Learning está disponível somente para novos assinan
   - Ajuda para dúvidas gerais sobre o [LinkedIn](https://www.linkedin.com/help/linkedin), como criar perfis e contas e manter a rede.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Confira o resto dos grandes benefícios incluídos na sua assinatura. Visite. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

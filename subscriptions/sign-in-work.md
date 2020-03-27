@@ -3,15 +3,16 @@ title: Entrar em Assinaturas do Visual Studio com sua conta corporativa ou de es
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta corporativa ou de estudante.
-ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508986"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233205"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Entrar em assinaturas do Visual Studio com sua conta corporativa ou de estudante 
 
@@ -77,4 +78,4 @@ Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de ass
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  
+Depois de ter feito o acesso com sucesso ao portal de https://my.visualstudio.com/benefits assinaturas, recomendamos visitar a página de Benefícios e explorar as ótimas ferramentas, serviços e ofertas disponíveis para você.  

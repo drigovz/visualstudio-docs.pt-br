@@ -3,15 +3,16 @@ title: Lidar com licenças superalocadas | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver excesso de alocações de assinaturas
-ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410282"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232447"
 ---
 # <a name="overallocated-subscriptions"></a>Assinaturas superalocadas
 Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Isso é chamado de "superalocação".  

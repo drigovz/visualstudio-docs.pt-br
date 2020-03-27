@@ -1,17 +1,18 @@
 ---
 title: Benefício do App Center do Visual Studio em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
-ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: abe929398035bef8800949712ad6cc4e0ac93721
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161923"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301866"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -73,8 +74,14 @@ Agora você deve ser capaz de acessar o portal do App Center e criar a conta.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite [o Visual Studio Support](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Próximas etapas
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
-- [Estúdio Visual](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédito individual do Azure DevTest](vs-azure.md)

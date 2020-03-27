@@ -1,17 +1,18 @@
 ---
 title: Usando o Portal do Assinante – https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546220"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232194"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Usando o Portal do Assinante – my.visualstudio.com
 
@@ -51,6 +52,12 @@ Além dos benefícios individuais encontrados na categoria de Suporte na página
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 É necessário renovar a assinatura de nuvem do Visual Studio?  Deseja baixar as extensões mais recentes para a família de produtos Visual Studio?  O Marketplace ajuda os usuários a localizar extensões, ferramentas e serviços que tornam o Azure DevOps, Azure DevOps Server e Visual Studio Code ainda melhores. Você pode até se tornar um editor e publicar suas próprias extensões no Marketplace.
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Faça login no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) portal e confira seus benefícios.  Também é possível saber mais sobre como entrar no portal com sua [MSA](sign-in-msa.md) (Conta Microsoft), sua [conta corporativa ou de estudante](sign-in-work.md) e até mesmo [sua conta do GitHub](sign-in-github.md). 

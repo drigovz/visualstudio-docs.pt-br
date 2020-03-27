@@ -1,17 +1,18 @@
 ---
 title: Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851416"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273823"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
@@ -94,6 +95,12 @@ R: Sim, você pode, se o seu revendedor participar do programa Cloud Solution Pr
 - [Portal de administração de assinaturas do Studio Visual](https://manage.visualstudio.com/)
 - [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
+
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Comprar assinaturas de nuvem agora

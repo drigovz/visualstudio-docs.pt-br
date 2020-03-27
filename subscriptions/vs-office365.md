@@ -1,17 +1,18 @@
 ---
 title: Office 365 Pro Plus Beneficente | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 Pro Plus incluído em algumas assinaturas do Visual Studio.
-ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77904146"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301914"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus em Assinaturas do Visual Studio
 
@@ -84,7 +85,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se [https://my.
 
 ## <a name="next-steps"></a>Próximas etapas
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
-- [Estúdio Visual](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest crédito individual](vs-azure.md) Se você está planejando desenvolver aplicativos para o Office, você vai querer ativar sua [assinatura do Desenvolvedor de Escritórios](vs-office-dev.md)
 

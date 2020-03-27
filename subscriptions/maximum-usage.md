@@ -3,15 +3,16 @@ title: Usar o recurso de Uso Máximo no Portal de Administração
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: 9d9aa2d83a84fcdecf1749e3730d43dabf7bd52d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410298"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232265"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Use o recurso de uso máximo para rastrear o número de assinaturas atribuídas
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 

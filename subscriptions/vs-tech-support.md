@@ -1,17 +1,18 @@
 ---
 title: Benefício do suporte técnico
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74706990"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301944"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -126,8 +127,14 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de e-mail. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentação do Azure](https://docs.microsoft.com/azure/)
+- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Próximas etapas
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
-- [Estúdio Visual](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédito individual do Azure DevTest](vs-azure.md)

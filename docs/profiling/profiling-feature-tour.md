@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688a446fbbaf1c2c56b9304576224a70f71064d8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550109"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233104"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
 
@@ -74,9 +74,9 @@ PerfTips mostram os mesmos eventos que também aparecem na visão **de Eventos**
 
 ## <a name="analyze-memory-usage"></a>Analisar o uso de memória
 
-A janela **Ferramentas de Diagnóstico** também permite avaliar o uso da memória em seu aplicativo. Por exemplo, é possível examinar o número e tamanho dos objetos no heap. Para obter instruções mais detalhadas para analisar a memória, confira [Analisar uso da memória](../profiling/memory-usage.md).
+A janela **Ferramentas de Diagnóstico** também permite avaliar o uso da memória em seu aplicativo usando a ferramenta Uso de **memória.** Por exemplo, é possível examinar o número e tamanho dos objetos no heap. Para obter instruções mais detalhadas para analisar a memória, confira [Analisar uso da memória](../profiling/memory-usage.md). Outra ferramenta de análise de memória, a [ferramenta .NET Object Allocation,](../profiling/dotnet-alloc-tool.md)ajuda a identificar padrões de alocação e anomalias em seu código .NET.
 
-Para analisar o uso da memória durante a depuração, você precisa tirar pelo menos um instantâneo de memória. Em geral, a melhor maneira de analisar a memória é usar dois instantâneos: o primeiro, logo antes de um problema de memória suspeito e o segundo instantâneo, logo após a ocorrência de um problema de memória suspeito. Depois, é possível exibir uma comparação dos dois instantâneos e ver exatamente o que mudou.
+Para analisar o uso da memória com o uso de memória integrado ao depurador também, você precisa tirar pelo menos um instantâneo de memória. Em geral, a melhor maneira de analisar a memória é usar dois instantâneos: o primeiro, logo antes de um problema de memória suspeito e o segundo instantâneo, logo após a ocorrência de um problema de memória suspeito. Depois, é possível exibir uma comparação dos dois instantâneos e ver exatamente o que mudou.
 
 ![Tire uma foto nas Ferramentas de Diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Ferramentas de diagnóstico tiram instantâneos")
 
