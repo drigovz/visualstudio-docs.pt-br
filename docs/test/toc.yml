@@ -1,5 +1,9 @@
 - name: Testando ferramentas no Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Visão geral
+  items:
+    - name: Introdução às ferramentas de teste
+      href: improve-code-quality.md
 - name: Teste de unidade
   items:
     - name: Visão geral das ferramentas de teste de unidade
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Visão geral
+          href: intellitest-manual/index.md
         - name: 'Como: Gerar testes de unidade com IntelliTest'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Visão geral
-          href: intellitest-manual/introduction.md
-        - name: Introdução
-          href: intellitest-manual/getting-started.md
-        - name: Índice das seções
-          href: intellitest-manual/index.md
         - name: Geração de teste
           href: intellitest-manual/test-generation.md
         - name: Execução simbólica dinâmica
