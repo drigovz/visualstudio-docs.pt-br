@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631972"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375557"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -59,7 +59,7 @@ Contém um conjunto de tarefas para o MSBuild ser executado sequencialmente.
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Name`|Atributo obrigatório.<br /><br /> O nome do destino.|
+|`Name`|Atributo obrigatório.<br /><br /> O nome do destino. Um nome de destino `$@()%*?.`pode conter qualquer caractere, exceto .|
 |`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre as condições, consulte [Condições](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md) [, Como: Construir incrementalmente](../msbuild/how-to-build-incrementally.md)e [Transformações](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md) [, Como: Construir incrementalmente](../msbuild/how-to-build-incrementally.md)e [Transformações](../msbuild/msbuild-transforms.md).|
