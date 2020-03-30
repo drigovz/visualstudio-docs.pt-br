@@ -1,5 +1,5 @@
 ---
-title: Implantando aplicativos ClickOnce para teste e os servidores de produção sem assinar novamente | Microsoft Docs
+title: Implantação de aplicativos ClickOnce para testes e servidores de produção sem demissão | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,50 +20,50 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a65f2e39eac5889b287b082b4cad6842f44aa2e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a8e41e67d5e2800acc41e1220fe632001420a274
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675546"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395380"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implantando aplicativos ClickOnce para servidores de teste e produção sem assinar novamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tópico apresenta um novo recurso do ClickOnce, introduzida no .NET Framework versão 3.5, o que permite a implantação de aplicativos ClickOnce a partir de vários locais de rede sem assinar novamente ou alterar o ClickOnce manifestos.  
+Este tópico discute um novo recurso do ClickOnce introduzido na versão 3.5 do .NET Framework que permite a implantação de aplicativos ClickOnce a partir de vários locais de rede sem reassinar ou alterar os manifestos do ClickOnce.  
   
 > [!NOTE]
-> Assinar novamente ainda é o método preferencial para implantar novas versões de aplicativos. Sempre que possível, use o método resigning. Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> A demissão ainda é o método preferido para implantar novas versões de aplicativos. Sempre que possível, use o método de demissão. Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
- ISVs e desenvolvedores de terceiros podem participar desse recurso, tornando mais fácil para seus clientes atualizar seus aplicativos. Esse recurso pode ser usado nas seguintes situações:  
+ Desenvolvedores de terceiros e ISVs podem optar por esse recurso, facilitando a atualização de seus aplicativos por seus clientes. Este recurso pode ser usado nas seguintes situações:  
   
-- Ao atualizar um aplicativo, não a primeira instalação de um aplicativo.  
+- Ao atualizar um aplicativo, não é a primeira instalação de um aplicativo.  
   
-- Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não pode usar esse recurso.  
+- Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não poderá usar esse recurso.  
   
-## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Excluindo deploymentProvider de manifestos de implantação  
- No .NET Framework 2.0 e o .NET Framework 3.0, qualquer aplicativo ClickOnce que é instalado no sistema para disponibilidade offline deve especificar um `deploymentProvider` em seu manifesto de implantação. O `deploymentProvider` é conhecido como o local de atualização; é o local em que verificará se há atualizações do aplicativo ClickOnce. Esse requisito, juntamente com a necessidade de editores de aplicativo assinar suas implantações, dificultou para uma empresa atualizar um aplicativo ClickOnce de um fornecedor ou outros terceiros. Ele também torna mais difícil de implantar o mesmo aplicativo de vários locais na mesma rede.  
+## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Excluindo implantaçãoProvedor de Manifestos de Implantação  
+ No .NET Framework 2.0 e no .NET Framework 3.0, qualquer aplicativo ClickOnce que `deploymentProvider` instale no sistema para disponibilidade offline deve especificar um em seu manifesto de implantação. O `deploymentProvider` é frequentemente referido como o local de atualização; é o local em que o ClickOnce verificará as atualizações do aplicativo. Esse requisito, juntamente com a necessidade de os editores de aplicativos assinarem suas implantações, tornou difícil para uma empresa atualizar um aplicativo ClickOnce de um fornecedor ou outro terceiro. Também torna mais difícil implantar o mesmo aplicativo de vários locais na mesma rede.  
   
- Com as alterações que foram feitas ao ClickOnce no .NET Framework 3.5, é possível que um terceiro fornecer um aplicativo ClickOnce para outra organização, que, em seguida, pode implantar o aplicativo em sua própria rede.  
+ Com as alterações feitas para o ClickOnce no Quadro .NET 3.5, é possível que um terceiro forneça um aplicativo ClickOnce para outra organização, que pode então implantar o aplicativo em sua própria rede.  
   
- Para tirar proveito desse recurso, os desenvolvedores de aplicativos ClickOnce devem excluir `deploymentProvider` da implantação de manifestos. Isso significa que a exclusão do `-providerUrl` manifestos de argumento quando você cria a implantação com Mage.exe ou certificando-se a **local inicie** caixa de texto na **manifesto do aplicativo** guia for deixada em branco se você estão gerando manifestos de implantação com MageUI.exe.  
+ Para aproveitar esse recurso, os desenvolvedores dos aplicativos `deploymentProvider` ClickOnce devem excluir de seus manifestos de implantação. Isso significa excluir `-providerUrl` o argumento quando você cria manifestos de implantação com o Mage.exe ou certificar-se de que a caixa de texto **Local de lançamento** na guia Manifesto de **aplicativo** seja deixada em branco se você estiver gerando manifestos de implantação com OMageUI.exe.  
   
-## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider e atualizações de aplicativos  
- Começando com o .NET Framework 3.5, você não precisa especificar um `deploymentProvider` em seu manifesto de implantação para implantar um aplicativo ClickOnce para uso online e offline. Isso dá suporte para o cenário em que você precisa empacotar e assinar a implantação por conta própria, mas permitir que outras empresas para implantar o aplicativo em suas redes.  
+## <a name="deploymentprovider-and-application-updates"></a>implantaçãoAtualizações de provedores e aplicativos  
+ Começando com o .NET Framework 3.5, você `deploymentProvider` não precisa mais especificar um manifesto de implantação para implantar um aplicativo ClickOnce para uso on-line e off-line. Isso suporta o cenário em que você precisa empacotar e assinar a implantação você mesmo, mas permitir que outras empresas implantem o aplicativo em suas redes.  
   
- O principal ponto a lembrar é que os aplicativos que excluem um `deploymentProvider` não é possível alterar seu local de instalação durante as atualizações, até que eles são fornecidos em uma atualização que inclui o `deploymentProvider` marcar novamente.  
+ O ponto chave a ser lembrado `deploymentProvider` é que os aplicativos que excluem um não podem `deploymentProvider` alterar seu local de instalação durante as atualizações, até que eles enviam uma atualização que inclua a tag novamente.  
   
- Aqui estão dois exemplos para esclarecer esse ponto. No primeiro exemplo, você publica um aplicativo ClickOnce que não tem nenhum `deploymentProvider` marca e você solicitar aos usuários para instalá-lo do http://www.adatum.com/MyApplication/. Se você decidir que deseja publicar a próxima atualização do aplicativo do http://subdomain.adatum.com/MyApplication/, você não terá nenhuma maneira de indicando isso no manifesto de implantação que reside no http://www.adatum.com/MyApplication/. Você pode fazer uma das duas coisas:  
+ Aqui estão dois exemplos para esclarecer este ponto. No primeiro exemplo, você publica um `deploymentProvider` aplicativo ClickOnce que não tem `http://www.adatum.com/MyApplication/`tag e pede aos usuários para instalá-lo a partir de . Se você decidir publicar a próxima atualização `http://subdomain.adatum.com/MyApplication/`do aplicativo de , você não terá como significar `http://www.adatum.com/MyApplication/`isso no manifesto de implantação que reside em . Você pode fazer uma de duas coisas:  
   
-- Peça aos usuários que desinstalar a versão anterior e instale a nova versão do novo local.  
+- Diga aos seus usuários para desinstalar a versão anterior e instalar a nova versão a partir do novo local.  
   
-- Incluir uma atualização no http://www.adatum.com/MyApplication/ que inclui um `deploymentProvider` apontando para http://www.adatum.com/MyApplication/. Em seguida, solte outra atualização posterior com `deploymentProvider` apontando para http://subdomain.adatum.com/MyApplication/.  
+- Inclua uma `http://www.adatum.com/MyApplication/` atualização que `deploymentProvider` inclua `http://www.adatum.com/MyApplication/`um apontamento para . Em seguida, libere `deploymentProvider` outra `http://subdomain.adatum.com/MyApplication/`atualização mais tarde apontando para .  
   
-  No segundo exemplo, você publica um aplicativo ClickOnce que especifica `deploymentProvider`, e você decidir, em seguida, removê-lo. Uma vez a nova versão sem `deploymentProvider` tiver sido baixado para os clientes, você não poderá redirecionar o caminho usado para atualizações até uma versão do aplicativo que tenha `deploymentProvider` restaurado. Assim como acontece com o primeiro exemplo, `deploymentProvider` inicialmente deve apontar para o local de atualização atual, não seu novo local. Nesse caso, se você tentar inserir uma `deploymentProvider` que se refere à http://subdomain.adatum.com/MyApplication/, em seguida, a próxima atualização falhará.  
+  No segundo exemplo, você publica um `deploymentProvider`aplicativo ClickOnce que especifica e, em seguida, decide removê-lo. Uma vez que `deploymentProvider` a nova versão sem ter sido baixada para os clientes, você não será capaz `deploymentProvider` de redirecionar o caminho usado para atualizações até que você libere uma versão do seu aplicativo que tenha sido restaurada. Como no primeiro `deploymentProvider` exemplo, deve inicialmente apontar para o local de atualização atual, não para sua nova localização. Neste caso, se você tentar `deploymentProvider` inserir um `http://subdomain.adatum.com/MyApplication/`que se refere a , então a próxima atualização falhará.  
   
-## <a name="creating-a-deployment"></a>Criar uma implantação  
- Para obter orientação passo a passo sobre a criação de implantações que podem ser implantadas de diferentes locais da rede, consulte [passo a passo: Implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
+## <a name="creating-a-deployment"></a>Criando uma implantação  
+ Para obter orientações passo a passo sobre a criação de implantações que podem ser implantadas em diferentes locais de rede, consulte [Passo a Passo: Implantando manualmente um aplicativo ClickOnce que não requer re-assinatura e que preserva as informações de marca](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Consulte também  
- [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
+ [Mage.exe (Ferramenta de Geração e Edição de Manifesto)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Ferramenta de Geração e Edição de Manifesto, Cliente Gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
