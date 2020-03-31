@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d106b15a94e00915f8cd0fd2e69c2918f9fbead9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549838"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412021"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 
-Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este artigo mostra como usar a guia **de uso** da CPU das Ferramentas de Diagnóstico para obter dados de desempenho para o seu aplicativo, e também fornece informações sobre o uso do PerfTips.
+Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este artigo mostra como usar a guia **de uso** da CPU das Ferramentas de Diagnóstico para obter dados de desempenho para o seu aplicativo.
 
 Quando o depurador pausa, a ferramenta **Uso de CPU** coleta informações sobre as funções que estão em execução no aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
 
@@ -35,7 +35,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 > [!Important]
 > As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
-Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Você também pode usar outra ferramenta de criação de perfil, [PerfTips,](../profiling/perftips.md)para passar pelo código e identificar quanto tempo leva funções ou blocos de código para ser concluído.
 
 Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
@@ -77,15 +77,9 @@ Neste tutorial, você irá:
 
      Quando você escolher **Registrar perfil de CPU**, o Visual Studio começará a registrar suas funções e quanto tempo elas levam para ser executadas. Você somente poderá exibir esses dados coletados quando o aplicativo for parado em um ponto de interrupção.
 
-     > [!TIP]
-     > Para ajudar a analisar o desempenho, você também pode usar [o PerfTips](../profiling/perftips.md) para passar pelo código e identificar quanto tempo leva funções ou blocos de código para ser concluído.
-
 8. Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
 
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
-
-     >[!TIP]
-     > Quando pausado em um ponto de ruptura ou uma operação de revisão de código, você também pode analisar o desempenho usando [PerfTips](#analyze-performance-using-perftips).
 
      O criador de perfil começa a preparar os dados de thread. Aguarde sua conclusão.
 
@@ -163,12 +157,6 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
 
     > [!NOTE]
     > Se você visualizar o código na árvore de chamadas marcado como código "interrompido" ou "pilha inexplorável", isso indica que os eventos ETW (Rastreamento de Eventos para Windows) provavelmente foram descartados. Tente coletar o mesmo rastreamento uma segunda vez para resolver o problema.
-
-## <a name="analyze-performance-using-perftips"></a>Analisar o desempenho usando perfTips
-
-Ao executar código no depurador, você também pode usar [PerfTips](../profiling/perftips.md) para análise de desempenho aprofundada. Usando perfTips, você pode visualizar informações de desempenho enquanto interage com seu código. É possível verificar informações como a duração do evento (medido da última pausa do depurador ou da inicialização do aplicativo). Por exemplo, se você passar pelo código (F10, F11), o PerfTips mostrará a duração de tempo de execução do aplicativo da operação da etapa anterior para a etapa atual.
-
-![Analisar com PerfTips](../profiling/media/diag-tools-perftips.png "AnalisarComPerfTips")
 
 ## <a name="view-external-code"></a>Exibir código externo
 
