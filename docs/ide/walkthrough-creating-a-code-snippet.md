@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2554729be8f3b9697d1407befd68cbb21fac10dd
+ms.sourcegitcommit: 992dd075e65b5f3adefc1ff758975298c47381e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597289"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80435047"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um snippet de código
 
@@ -54,7 +54,7 @@ O seguinte XML é o modelo básico de snippet:
 
 2. Preencha o título do snippet no elemento **Título**. Use o título **Raiz Quadrada**.
 
-3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para o C#, use **CSharp** e, para o Visual Basic, use **VB**.
+3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para C#, use **CSharp**, para Visual Basic, use **VB**, e para C++, use **CPP**.
 
    > [!TIP]
    > Para ver todos os valores de linguagem disponíveis, procure a [seção Atributos de elemento de código](code-snippets-schema-reference.md#attributes) na página [Referência de esquema de snippets de código](code-snippets-schema-reference.md).
