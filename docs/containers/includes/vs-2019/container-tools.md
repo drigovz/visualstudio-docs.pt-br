@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922972"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80501910"
 ---
 Com o Visual Studio, você pode facilmente construir, depurar e executar aplicativos .NET, ASP.NET e ASP.NET Core e publicá-los no Azure Container Registry (ACR), Docker Hub, Azure App Service ou no seu próprio registro de contêineres. Neste artigo, publicaremos um aplicativo ASP.NET Core para a ACR.
 
@@ -75,6 +75,9 @@ Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e i
 
 A opção **Ferramentas de Contêiner** na janela **Saída** mostra quais ações estão ocorrendo. Na primeira vez, pode levar um tempo para baixar a imagem base, mas é muito mais rápida em corridas subseqüentes.
 
+>[!NOTE]
+> Se você precisar alterar as portas para depuração, você pode fazer isso no arquivo *launchSettings.json.* Consulte [as configurações de lançamento do contêiner](../../container-launch-settings.md).
+
 ## <a name="containers-window"></a>Janela de contêineres
 
 Se você tiver o Visual Studio 2019 versão 16.4 ou posterior, você pode usar a janela **Containers** para visualizar contêineres em execução em sua máquina, bem como imagens que você tem disponíveis.
@@ -103,7 +106,7 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
     | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
-    | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
+    | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
     | **[Sku](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
     | **Localização do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 

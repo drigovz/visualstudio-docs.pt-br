@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633363"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472676"
 ---
 # <a name="msbuild-conditions"></a>Condições do MSBuild
 
@@ -39,6 +39,22 @@ O MSBuild suporta um conjunto específico de condições `Condition` que podem s
 |Ou|Avaliará como `true` se pelo menos um dos operandos for avaliado como `true`.|
 |()|Mecanismo de agrupamento que será avaliado como `true` se as expressões contidas dentro forem avaliadas como `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Verifica se o `%expression%` especificado corresponde ao valor de cadeia de caracteres do parâmetro do modelo personalizado passado. Se a condição `$if$` for avaliada como `true`, suas declarações serão executadas, caso contrário, a condição `$else$` será verificada. Se a condição `$else$` for `true`, suas declarações serão executadas, caso contrário, a condição `$endif$` encerrará a avaliação da expressão.<br /><br /> Para exemplos de uso, consulte a lógica do parâmetro de modelo de [projeto/item do Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+
+Você pode usar métodos de string em condições, como <xref:System.String.TrimEnd> mostrado no exemplo a seguir, no qual a função é usada para comparar apenas a parte relevante da string, para diferenciar entre frameworks .NET Framework e .NET Core.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+        <!-- Properties for .NET Framework -->
+    </PropertyGroup>
+
+</Project>
+```
 
 ## <a name="see-also"></a>Confira também
 

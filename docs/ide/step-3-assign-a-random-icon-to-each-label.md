@@ -1,6 +1,6 @@
 ---
 title: 'Etapa 3: Atribuir um ícone aleatório a cada rótulo'
-ms.date: 11/04/2016
+ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579402"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472634"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Etapa 3: Atribuir um ícone aleatório a cada rótulo
 
@@ -44,7 +44,7 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
     > [!NOTE]
     > Os nomes "iconLabel" e "control" são usados porque são descritivos. É possível substituir esses nomes por quaisquer nomes, e o código funcionará exatamente da mesma forma, desde que você altere o nome em cada instrução dentro do loop.
 
-     O método `AssignIconsToSquares()` é iterado por meio de cada controle de rótulo no TableLayoutPanel e executa as mesmas instruções para cada um deles. Essas instruções extraem um ícone aleatório da lista que você adicionou na [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Por esse motivo, você incluiu dois de cada ícone na lista, de modo que haverá um par de ícones atribuídos aos controles de rótulo aleatórios).
+     O método `AssignIconsToSquares()` é iterado por meio de cada controle de rótulo no TableLayoutPanel e executa as mesmas instruções para cada um deles. Essas instruções extraem um ícone aleatório da lista que você adicionou na [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Como lembrete, cada um desses ícones é uma letra na fonte Webdings, e é por isso que eles são expressos como texto neste método. Você incluiu dois de cada ícone na lista, de modo que haveria um par de ícones atribuídos a controles de rótulo aleatórios.
 
      Observe mais detalhadamente o código que é executado no loop `foreach` ou `For Each`. Esse código é reproduzido aqui.
 
@@ -55,7 +55,7 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
 
      Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Veja [Como faço para executar em etapas com o depurador do Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.
 
-3. Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando C#, adicione uma declaração logo abaixo da chamada ao `InitializeComponent()` método no_construtor_ **Form1,** de modo que seu formulário chama seu novo método para configurar-se antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Uso de construtores e destruidores](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) no Visual Basic para obter mais informações.
+3. Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando C#, adicione uma declaração logo abaixo da chamada ao `InitializeComponent()` método no _construtor_ **Form1,** de modo que seu formulário chama seu novo método para configurar-se antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Uso de construtores e destruidores](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) no Visual Basic para obter mais informações.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -67,17 +67,14 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
     End Sub
     ```
 
-4. Salve seu programa e o execute. Ele deve mostrar um formulário com ícones aleatórios atribuídos a cada rótulo.
+4. Salve seu programa e o execute. Ele deve mostrar um formulário com ícones aleatórios atribuídos a cada rótulo. 
 
-5. Feche seu programa e, em seguida, execute-o novamente. Observe que diferentes ícones são atribuídos a cada rótulo, conforme mostrado na imagem a seguir.
+5. Feche seu programa e, em seguida, execute-o novamente. Observe que diferentes ícones são atribuídos a cada rótulo, conforme mostrado na imagem a seguir. 
 
      ![Jogo da memória com ícones aleatórios](../ide/media/express_tut4step3.png)<br/>
 *Jogo da memória com ícones aleatórios*
 
      Os ícones estão visíveis agora porque você não os ocultou. Para ocultá-los do jogador, você pode definir a propriedade **ForeColor** de cada rótulo para a mesma cor de sua propriedade **BackColor**.
-
-    > [!TIP]
-    > Outra maneira de ocultar controles, como rótulos, é definir a propriedade **Visible** como **False**.
 
 6. Para ocultar os ícones, interrompa o programa e remova as marcas de comentário da linha de código comentada dentro do loop `For Each`.
 

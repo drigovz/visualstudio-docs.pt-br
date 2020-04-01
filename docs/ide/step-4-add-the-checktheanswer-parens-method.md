@@ -1,5 +1,5 @@
 ---
-title: Etapa 4 – Adicionar o método CheckTheAnswer()
+title: 'Etapa 4: Adicionar o método CheckTheAnswer()'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579851"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472615"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>Etapa 4 – Adicionar o método CheckTheAnswer()
+# <a name="step-4-add-the-checktheanswer-method"></a>Etapa 4: Adicionar o método CheckTheAnswer()
 
 Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswer()`, que determina se as respostas para os problemas de matemática estão corretas. Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
@@ -32,7 +32,7 @@ Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswe
 > [!NOTE]
 > Se você estiver seguindo o Visual Basic, você usará a palavra-chave de `Function` em vez da palavra-chave comum de `Sub` porque esse método retorna um valor. É realmente simples: um sub não retorna um valor, mas uma função sim.
 
-1. Adicione o método `CheckTheAnswer()`.
+1. Adicione o método `CheckTheAnswer()`. Este método deve estar em consonância com os `StartTheQuiz()`outros métodos que você fez, tais como .
 
      Quando esse método é chamado, ele adiciona os valores de addend1 e addend2 e compara o resultado com o valor no controle <xref:System.Windows.Forms.NumericUpDown> de soma. Se os valores forem iguais, o método retornará um valor de `true`. Caso contrário, o método retorna um valor de `false`. Seu código deve se parecer com o seguinte.
 
@@ -43,7 +43,7 @@ Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswe
 
      Em seguida, verifique a resposta atualizando o código no método do manipulador de eventos <xref:System.Windows.Forms.Timer.Tick> do timer para chamar o novo método `CheckTheAnswer()`.
 
-2. Adicione o seguinte código à instrução `if else`.
+2. Adicione o seguinte `if else` código à `Timer1_Tick()` declaração no método, de modo que o temporizador pare quando o usuário acertar a resposta.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
