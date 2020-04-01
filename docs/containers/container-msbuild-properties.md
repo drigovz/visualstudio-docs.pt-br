@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950694"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472673"
 ---
 # <a name="container-tools-build-properties"></a>Ferramentas de contêiner constroem propriedades
 
-Você pode personalizar como o Visual Studio constrói seus projetos de contêineres definindo as propriedades que o MSBuild usa para construir seu projeto. Por exemplo, você pode alterar o nome do Arquivo Docker, especificar tags e rótulos para suas imagens, fornecer argumentos adicionais passados para comandos Docker e controlar se o Visual Studio faz certas otimizações de desempenho, como construir fora do ambiente de contêiner. Você também pode definir propriedades de depuração, como o nome do executável para inicial, e os argumentos da linha de comando a serem fornecidos.
+Você pode personalizar como o Visual Studio constrói seus projetos de contêineres definindo as propriedades que o MSBuild usa para construir seu projeto. Por exemplo, você pode alterar o nome do Arquivo Docker, especificar tags e rótulos para suas imagens, fornecer argumentos adicionais passados aos comandos Docker e controlar se o Visual Studio faz certas otimizações de desempenho, como construir fora do ambiente de contêineres. Você também pode definir propriedades de depuração, como o nome do executável para inicial, e os argumentos da linha de comando a serem fornecidos.
 
 Para definir o valor de uma propriedade, edite o arquivo do projeto. Por exemplo, suponha que seu Arquivo Docker se chama *MyDockerfile*. Você pode `DockerfileFile` definir a propriedade no arquivo do projeto da seguinte forma.
 
@@ -41,7 +41,7 @@ A tabela a seguir mostra as propriedades mSBuild disponíveis para projetos de c
 | DockerImageRótulos | O conjunto padrão de rótulos aplicados à imagem do Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 ou mais novo|
 | DockerFastModeProjectMountDirectory|No **Modo Rápido,** esta propriedade controla onde o diretório de saída do projeto é montado em volume no contêiner em execução.|C:\app (Windows) ou /app (Linux)|1.9.2 ou mais novo|
 | DockerfileBuildArguments | Argumentos adicionais passaram para o comando de compilação do Docker. | Não aplicável. |1.0.1872750 ou mais novo|
-| DockerfileContext | O contexto padrão usado ao construir a imagem Docker. | Definido por Visual Studio. |1.0.1872750 ou mais novo|
+| DockerfileContext | O contexto padrão usado ao construir a imagem Docker, como um caminho relativo ao arquivo Docker. | Definido por Visual Studio. |1.0.1872750 ou mais novo|
 | DockerfileFastModeStage | O estágio Dockerfile (ou seja, alvo) a ser usado ao construir a imagem no modo de depuração. | Primeiro estágio encontrado no Arquivo Docker (base) |
 | Arquivo de arquivo docker | Descreve o arquivo Docker padrão que será usado para construir/executar o contêiner para o projeto. Este pode ser um caminho também. | Dockerfile |1.0.1872750 ou mais novo|
 | DockerfileRunArguments | Argumentos adicionais passaram para o comando de execução do Docker. | Não aplicável. |1.0.1872750 ou mais novo|

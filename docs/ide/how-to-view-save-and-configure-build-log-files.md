@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114472"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472786"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como exibir, salvar e configurar arquivos de log de build
 
-Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build. 
+Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build.
 
-- Para projetos C++, também é possível exibir as mesmas informações em um arquivo *.txt* criado e salvo automaticamente. 
+- Para projetos C++, você também pode visualizar as mesmas informações em um arquivo de log criado e salvo quando você constrói um projeto. 
 
-- Para projetos de código gerenciados, você pode clicar na janela de saída de compilação e pressionar **Ctrl**+**S**. O Visual Studio solicitará um local para salvar as informações da janela de **Saída** em um arquivo *.txt*. 
+- Para projetos de código gerenciados, você pode clicar na janela de saída de compilação e pressionar **Ctrl**+**S**. O Visual Studio solicita que você salve as informações da janela **Saída** em um arquivo de log.
 
 Também é possível usar o IDE para especificar que tipos de informações você deseja exibir sobre cada build.
 
-Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar um arquivo *.txt* para salvar informações sobre o build. Para obter mais informações, consulte [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
+Se você construir qualquer tipo de projeto usando o MSBuild, você pode criar um arquivo de log para salvar informações sobre a compilação. Para obter mais informações, consulte [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Para exibir o arquivo de log de build para um projeto C++
 
-1. No **Windows Explorer** ou no **Explorador de Arquivos**, abra o seguinte arquivo: *\\...\Visual Studio \<Versão\>\Projects\\<ProjectName\>\\<ProjectName\>\Debug\\ProjectName\>.txt*
+1. No **Windows Explorer** ou File **Explorer,** abra o seguinte arquivo (em relação à pasta raiz do projeto): *Libere*\\<ProjectName>\>. Log* ou *\\ Depurar\><ProjectName .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para criar um arquivo de log de build para um projeto de código gerenciado
 

@@ -1,6 +1,6 @@
 ---
 title: Referência de esquema dos snippets de código
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301835"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472801"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -235,7 +235,7 @@ Um valor de texto é obrigatório. Esse texto descreve o snippet de código.
 Especifica uma função a ser executada quando o literal ou o objeto receber foco no Visual Studio.
 
 > [!NOTE]
-> O elemento `Function` tem suporte somente em snippets de código em C#.
+> Nem todas as `function` línguas suportam elementos. Consulte a documentação específica do idioma para saber quais funções estão disponíveis.
 
 ```xml
 <Function>
@@ -660,4 +660,4 @@ Um valor de texto é obrigatório. Esse texto especifica uma URL com mais inform
 ## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../ide/code-snippets.md)
-- [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: Para criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)

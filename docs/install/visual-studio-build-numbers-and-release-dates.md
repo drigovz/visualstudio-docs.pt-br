@@ -5,18 +5,18 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/26/2020
+ms.date: 03/31/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05808737a735160c995aafb7d2e9b12ccbb13e1b
-ms.sourcegitcommit: 0d08e2c1d9940a6ac2c7f647e9454b42011ebc63
+ms.openlocfilehash: 6eb4a72b4ce430e59c8760a5281fdab5fc7f3766
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329534"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472710"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -28,6 +28,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.2 | Versão | 31 de março de 2020 | 16.5.29926.136 |
 | 16.6.0 | Preview 2 | 26 de março de 2020 | 16.6.29924.181 |
 | 16.5.1 | Versão | 24 de março de 2020 | 16.5.29920.165 |
 | 16.6.0 | Preview 1 | 16 de março de 2020 | 16.6.29911.98 |
@@ -307,6 +308,6 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 ## <a name="see-also"></a>Confira também
 
 * [Visual Studio lança ritmo](/visualstudio/productinfo/release-rhythm/)
-* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)

@@ -1,6 +1,6 @@
 ---
 title: Estruturas .NET de destino
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303417"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472727"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
 No Visual Studio, é possível especificar a versão do .NET que você deseja que o projeto tenha como destino. O direcionamento de estrutura ajuda a garantir que o aplicativo use apenas a funcionalidade disponível na versão da estrutura especificada. Para que os aplicativos .NET Framework sejam executados em outro computador, a versão da estrutura de destino do aplicativo precisa ser compatível com a versão da estrutura instalada no computador.
 
-Uma solução do Visual Studio pode conter projetos destinados a diferentes versões do .NET.
-
-Para obter mais informações sobre estruturas de destino, confira [Estruturas de destino](/dotnet/standard/frameworks).
+Uma solução do Visual Studio pode conter projetos destinados a diferentes versões do .NET.  No entanto, observe que você só pode construir contra uma única versão do .NET usando condicionadores de referência para uma única compilação ou construir binários diferentes para cada versão.  Para obter mais informações sobre estruturas de destino, confira [Estruturas de destino](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).

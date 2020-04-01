@@ -1,6 +1,6 @@
 ---
 title: 'Etapa 6: Adicionar um temporizador'
-ms.date: 11/04/2016
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579320"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472772"
 ---
 # <a name="step-6-add-a-timer"></a>Etapa 6: Adicionar um temporizador
 Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de correspondência. Um temporizador aguarda um número especificado de milissegundos e, em seguida, dispara um evento, conhecido como um *tique*. Isso é útil para iniciar uma ação, ou repetir uma ação, regularmente. Nesse caso, você usará um temporizador para permitir que os jogadores escolham dois ícones e, se os ícones não corresponderem, ocultar os dois ícones novamente após um curto período.
@@ -48,12 +48,12 @@ Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de co
     > [!NOTE]
     > Um objeto Temporizador tem um método `Start()` que inicia o temporizador e um método `Stop()` que o interrompe. Ao definir a propriedade **Habilitado** do temporizador como **Verdadeiro** na janela **Propriedades**, ele inicia o tique assim que o programa é iniciado. Mas quando você a deixa definida como **Falso**, ele só inicia o tique quando seu método `Start()` é chamado. Normalmente, um temporizador dispara seu evento Tick várias vezes usando a propriedade **Intervalo** para determinar quantos milissegundos deverá aguardar entre os tiques. Você deve ter percebido como o método `Stop()` do temporizador é chamado no evento Tick. Ele coloca o temporizador no *modo monoestável*, o que significa que quando o método `Start()` é chamado, ele aguarda o intervalo especificado, dispara um único evento Tick e é interrompido.
 
-4. Para ver o novo temporizador em ação, vá para o editor de código e adicione o código a seguir no início e no fim do método do manipulador de eventos `label_Click()`. (Você está adicionando uma instrução `if` no início e três instruções no fim; o restante do método informa o mesmo.)
+4. Para ver o novo temporizador em ação, vá para o editor de código e adicione o código a seguir no início e no fim do método do manipulador de eventos `label_Click()`. (Você está adicionando duas `if` declarações ao topo, e três declarações para baixo; o resto do método permanece o mesmo.)
 
      [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
      [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
 
-     O código no início do método verifica se o temporizador foi iniciado verificando o valor da propriedade **Habilitado**. Dessa forma, se o jogador escolher o primeiro e o segundo controle Label e o temporizador for iniciado, a escolha de um terceiro rótulo não terá efeito.
+     O código no início do método verifica se o temporizador foi iniciado verificando o valor da propriedade **Habilitado**. Dessa forma, se o jogador escolher o primeiro e o segundo controle Label e o temporizador for iniciado, a escolha de um terceiro rótulo não terá efeito. Também impede que o jogador clique rapidamente uma terceira vez antes que o jogo esteja pronto para outro primeiro clique. 
 
      O código no fim do método define a variável de referência `secondClicked` para acompanhar o segundo controle Label que o jogador escolhe e, em seguida, define a cor do ícone desse rótulo para preto, tornando-o visível. Em seguida, ele inicia o temporizador no modo monoestável, de modo que ele aguarda 750 milissegundos e dispara um único evento Tick. O manipulador de eventos Tique do temporizador oculta os dois ícones e redefine as variáveis de referência `firstClicked` e `secondClicked` de modo que o formulário esteja pronto para que o jogador escolha outro par de ícones.
 
