@@ -1,24 +1,24 @@
 ---
 title: Convenções de formatação do .NET para EditorConfig
-ms.date: 07/17/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589221"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527966"
 ---
 # <a name="formatting-conventions"></a>Convenções de formatação
 
@@ -151,6 +151,8 @@ As regras de formatação nesta seção aplicam-se somente a código em C#.
 - [Encapsular opções](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [Usando opções diretivas](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Opções de nova linha
 
@@ -1210,8 +1212,52 @@ public int MyProperty
 }
 ```
 
+- [Usando opções diretivas](#using-directive-options) 
+  - csharp_using_directive_placement
+  
+### <a name="using-directive-options"></a>Usando opções diretivas
+
+Esta regra de formatação diz respeito ao uso de diretivas que estão sendo colocadas dentro versus fora de um namespace.
+
+Exemplo de arquivo *.editorconfig*:
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **Nome da regra** | csharp_using_directive_placement |
+| **Idiomas aplicáveis** | C# |
+| **Versão introduzida** | Visual Studio 2019 versão 16.1 |
+| **Valores** | `outside_namespace`- Deixe usando diretivas fora do namespace<br /><br />`inside_namespace`- Deixe usando diretivas dentro do namespace |
+| **Padrão do Visual Studio** | `outside_namespace` |
+
+Exemplos de código:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+}
+```
+
 ## <a name="see-also"></a>Confira também
 
 - [Convenções de linguagem](editorconfig-language-conventions.md)
-- [Convenções de nomeação](editorconfig-naming-conventions.md)
+- [Convenções de nomenclatura](editorconfig-naming-conventions.md)
 - [Configurações de convenção de codificação .NET para EditorConfig](editorconfig-code-style-settings-reference.md)

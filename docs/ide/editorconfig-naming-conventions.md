@@ -1,21 +1,21 @@
 ---
 title: Convenções de nomenclatura do .NET para arquivos EditorConfig
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ccf62c5ffc3f526eada85478f37480fcf5d75cba
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588597"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528009"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -43,7 +43,7 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 
 - \* (use este valor para especificar todos os símbolos)
 - namespace
-- class
+- classe
 - struct
 - interface
 - enum
@@ -57,6 +57,8 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - local
 - local_function
 
+[!NOTE] Membros tuplos não são suportados no momento.
+
 ### <a name="accessibility-levels-of-symbols"></a>Níveis de acessibilidade de símbolos
 
 Para descrever os níveis de acessibilidade dos símbolos aos quais você deseja aplicar a regra de nomenclatura, especifique um nome de propriedade no formato a seguir:
@@ -66,10 +68,10 @@ Para descrever os níveis de acessibilidade dos símbolos aos quais você deseja
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os níveis de acessibilidade)
-- público
+- públicos
 - interno ou amigo
-- privado
-- protected
+- particulares
+- protegidos
 - protected\_internal or protected_friend
 - privado\_protegido
 - local
@@ -168,8 +170,8 @@ Severity | Efeito
 none | A regra foi completamente suprimida.
 refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 suggestion | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
-aviso | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
+error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.
@@ -226,7 +228,7 @@ Agora vamos alterar a gravidade da violação para `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se você fechar e reabrir seu arquivo de código, em vez de ver a sugestão a violação de nome, você verá um squiggle verde e um aviso na Lista de erros:
+Se você fechar e reabrir seu arquivo de código, em vez de ver a sugestão sob a violação de nome, você verá um squiggle verde e um aviso na Lista de erros:
 
 ![Aviso de regra de nomenclatura](media/editorconfig-naming-rule-warning.png)
 

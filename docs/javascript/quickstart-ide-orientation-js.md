@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73636582"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527933"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -25,7 +25,7 @@ Se você ainda não instalou o Visual Studio, vá para a página [de downloads](
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
 
@@ -114,7 +114,7 @@ A **Lista de Erros** mostra erros, avisos e mensagens sobre o estado atual do c�
 
 ![Lista de Erros no Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Janela de Saída
+## <a name="output-window"></a>janela Saída
 
 A janela de **Saída** mostra as mensagens de saída do build do projeto e do provedor de controle do código-fonte.
 
