@@ -3,12 +3,12 @@ author: John-Hart
 ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
-ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8bf2f79a12c606e58e60c94854d533eedbc9f395
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69547970"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80573247"
 ---
 > [!NOTE]
-> Interessado em desenvolver soluções que estendam a experiência do Office em [várias plataformas](https://dev.office.com/add-in-availability)? Confira o novo [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Os suplementos do Office têm uma pequena superfície em comparação com os suplementos e soluções do VSTO, e você pode criá-los usando praticamente qualquer tecnologia de programação da Web, como HTML5, JavaScript, CSS3 e XML.
+> Interessado em desenvolver soluções que ampliem a experiência do Office em várias plataformas? Confira o novo [modelo de Complementos de Escritório](/office/dev/add-ins/). Os Complementos de Escritório têm uma pequena pegada em comparação com os complementos e soluções VSTO, e você pode construí-los usando quase qualquer tecnologia de programação web, como HTML5, JavaScript, CSS3 e XML.

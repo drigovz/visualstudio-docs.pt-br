@@ -12,19 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633792"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543983"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Como especificar o destino a ser compilado primeiro
 
 Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como o projeto é compilado. O mecanismo Microsoft Build Engine (MSBuild) constrói o primeiro projeto encontrado e quaisquer `DefaultTargets` dependências, a menos que o arquivo do projeto contenha um atributo, um `InitialTargets` atributo ou um alvo seja especificado na linha de comando usando o switch de **destino.**
 ## <a name="use-the-initialtargets-attribute"></a>Usar o atributo InitialTargets
 
- O atributo `InitialTargets` do elemento `Project` especifica um destino que será executado primeiro, mesmo se os destinos forem especificados na linha de comando ou no atributo `DefaultTargets`.
 O atributo `InitialTargets` do elemento `Project` especifica um destino que será executado primeiro, mesmo se os destinos forem especificados na linha de comando ou no atributo `DefaultTargets`.
 
 #### <a name="to-specify-one-initial-target"></a>Para especificar um destino inicial
