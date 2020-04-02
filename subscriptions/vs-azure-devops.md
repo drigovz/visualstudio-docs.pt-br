@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
-ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232048"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607177"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 Como assinante ativo do Visual Studio, você pode usar uma gama de funcionalidades do Azure DevOps que estão incluídas como benefício na assinatura. Você poderá usar essas mesmas funcionalidades em cada organização do Azure DevOps de que for membro, independentemente de ter criado a organização ou ter sido adicionado por outra pessoa.
@@ -55,7 +55,7 @@ Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuída
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais sobre os recursos do Azure DevOps:
-- [Azure Boards e Repos (básico)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Placas azure & Repos (Plano Básico)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
