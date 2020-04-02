@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação baseada em rede
 description: Saiba como criar um ponto de instalação de rede para implantar o Visual Studio em uma empresa.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303403"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544069"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -237,8 +237,11 @@ Os administradores podem implantar o Visual Studio em estações de trabalho cli
 
 Quando você instala com base em um layout, o conteúdo instalado é adquirido do layout. No entanto, se você selecionar um componente que não está no layout, ele será adquirido da Internet.  Se você quiser impedir que a instalação do Visual Studio baixe qualquer conteúdo que está ausente em seu layout, use a opção `--noWeb`. Se `--noWeb` for usado e o layout não tiver qualquer conteúdo selecionado a ser instalado, a configuração falhará.
 
+> [!TIP]
+> Se você quiser instalar a partir de uma fonte offline `--noWeb` em `--noUpdateInstaller` um computador conectado à internet, especifique as opções e as opções. O primeiro impede o download de cargas de trabalho atualizadas, componentes e assim por diante. Este último impede que o instalador se autoatualize da web.
+
 > [!IMPORTANT]
-> A opção `--noWeb` não impede a verificação de atualizações na instalação do Visual Studio. Para saber mais, confira a página [Controlar atualizações para implantações do Visual Studio baseadas em rede](controlling-updates-to-visual-studio-deployments.md).
+> A `--noWeb` opção não impede a configuração do Visual Studio em um computador conectado à internet de verificar se há atualizações. Para saber mais, confira a página [Controlar atualizações para implantações do Visual Studio baseadas em rede](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Códigos do Erro
 
@@ -280,17 +283,18 @@ Se você precisar criar um layout para uma versão [https://my.visualstudio.com]
 
 Caso tenha um problema com a instalação offline, gostaríamos de saber a respeito. A melhor maneira de fazer isso é usando a ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md). Ao usar essa ferramenta, é possível enviar-nos a telemetria e os logs necessários para nos ajudar a diagnosticar e corrigir o problema.
 
-Também oferecemos uma opção de suporte [**ao chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
+Também oferecemos uma opção de suporte por meio de [**chat de instalação**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
 
 Também temos outras opções de suporte disponíveis. Para obter uma lista, confira nossa página de [comentários](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Confira também
 
-- [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+- [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 - [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
 - [Solucionar problemas relacionados a erros relacionados à rede quando você instala ou usa o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
 - [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md)
-- [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
+- [Instalar os certificados necessários para instalação offline do Visual Studio](/install-certificates-for-visual-studio-offline.md)

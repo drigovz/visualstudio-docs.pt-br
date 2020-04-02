@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 0c06d6c16082a8300092e36b9bbed126c66f8af4
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80528025"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544009"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
 
@@ -108,7 +108,6 @@ As regras de estilo nesta seção são aplicáveis tanto para C# quanto para Vis
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
@@ -1129,7 +1128,8 @@ As regras de estilo nesta seção são aplicáveis somente á linguagem C#.
 - [Preferências de verificação "nulas"](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
-- [Preferências modificadoras](#normalize-modifiers) \_-csharp preferred\_modifier_order
+- [Preferências do modificador](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [Preferências de bloco de código](#code-block-preferences)
   - csharp\_prefer_braces
 - [Preferências de valor não utilizadas](#unused-value-preferences)
