@@ -2,20 +2,21 @@
 title: Executar um modelo do TensorFlow na nuvem
 description: executar um modelo do tensorflow em uma vm de aprendizagem profunda do azure
 keywords: ia, visual studio, máquina virtual de aprendizagem profunda
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75915833"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638765"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Treinar um modelo do TensorFlow na nuvem
 
@@ -77,7 +78,7 @@ Para ver o status e detalhes dos trabalhos, expanda a máquina virtual a que o t
 
 ![Navegador do trabalho](media/tensorflow-vm/job-browser.png)
 
-## <a name="clean-up-resources"></a>Limpar recursos
+## <a name="clean-up-resources"></a>Limpar os recursos
 
 Interrompa a VM caso planeje usá-lo no futuro próximo. Se tiver terminado este tutorial, execute o seguinte comando para limpar seus recursos:
 
