@@ -1,6 +1,6 @@
 ---
 title: Executar ferramentas de criação de perfil com ou sem o depurador | Microsoft Docs
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999422"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638799"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -33,23 +33,21 @@ Para ajudar a decidir quais ferramentas e resultados usar, considere os seguinte
 - O próprio depurador altera os tempos de desempenho, à medida que realiza operações do depurador necessárias como eventos de exceção de interceptação e de carga de módulo.
 - Os números de desempenho do build de versão nas ferramentas do **Criador de Perfil de Desempenho** são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração.
 
+Para o uso da CPU, você pode executar a ferramenta em uma máquina remota usando as ferramentas de linha de comando.
+
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
 
 Quando você começa a depurar no Visual Studio selecionando **Depuração Iniciar depuração** > **Start Debugging** ou pressionando **F5,** a janela **Ferramentas de diagnóstico** aparece por padrão. Para abri-lo manualmente, selecione **Debug** > **Windows** > **Show Diagnostic Tools**. A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
 
-![Ferramentas de Diagnóstico](../profiling/media/diagnostictools-update1.png "Ferramentas de Diagnóstico")
+![Ferramentas de diagnóstico](../profiling/media/diagnostictools-update1.png "Ferramentas de Diagnóstico")
 
-- Use o ícone **Configurações** na barra de ferramentas para selecionar se deseja exibir **Uso de Memória**, **Análise da interface do usuário** e **Uso da CPU**.
+- Use o ícone **Configurações** na barra de ferramentas para selecionar se deve exibir **o uso da memória** ou o uso da **CPU**.
 
 - Selecione **Configurações** na lista suspensa **Configurações** para abrir **Páginas de propriedades de Ferramentas de Diagnóstico** com mais opções.
 
 - Se você estiver executando o Visual Studio Enterprise, você pode ativar ou desativar o IntelliTrace no Visual Studio **Tools** > **Options** > **IntelliTrace**.
 
 A sessão de diagnóstico termina quando você interrompe a depuração.
-
-Também é possível exibir **Ferramentas de Diagnóstico** para destinos de depuração remota. Para criação de perfil e depuração remota, o Depurador Remoto do Visual Studio deve ser instalado e estar em execução no destino remoto.
-- Para depuração remota e projetos de aplicativo da área de trabalho de criação de perfil, confira [Depuração remota](../debugger/remote-debugging.md).
-- Para depuração remota e aplicativos UWP de criação de perfil, confira [Depurar aplicativos UWP em computadores remotos](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 ### <a name="the-events-tab"></a>A guia Eventos
 
@@ -69,7 +67,9 @@ Para obter mais informações, consulte [Pesquisando e filtrando a guia de Event
 
 Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível abrir o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
 
-1. Com um projeto aberto no Visual Studio, selecione **Debug** > **Performance Profiler**ou **pressione Alt**+**F2**.
+1. Com um projeto aberto no Visual Studio, defina a configuração da solução para **liberar** e selecione **O Depurador local do Windows** (ou Máquina **Local)** como o alvo de implantação.
+
+1. Selecione **Debug** > **Performance Profiler**ou **pressione Alt**+**F2**.
 
 1. Na página de início de diagnóstico, selecione uma ou mais ferramentas para serem executadas. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Selecione **Mostrar todas as ferramentas** para ver também as ferramentas desabilitadas para essa sessão de diagnóstico. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:
 
@@ -103,13 +103,20 @@ Para coletar dados de desempenho sem depuração, é possível executar as ferra
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Executar sessões de diagnóstico em aplicativos instalados ou em execução
 
- Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, é possível diagnosticar problemas de desempenho em um aplicativo instalado por meio da Windows Store.
+Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, é possível diagnosticar problemas de desempenho em um aplicativo instalado por meio da Windows Store. No Profiler de desempenho, selecione na lista de parada em **'Alterar'.**
 
- ![Escolha o alvo de análise de ferramentas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+![Escolha o alvo de análise de ferramentas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
- É possível iniciar aplicativos já instalados ou anexar as ferramentas de diagnóstico a aplicativos e processos que já estão em execução. Ao selecionar **Aplicativo em Execução** ou **Aplicativo Instalado**, você seleciona o aplicativo em uma lista que localiza os aplicativos no destino de implantação especificado. Esse destino pode ser um computador remoto ou local.
+É possível iniciar aplicativos já instalados ou anexar as ferramentas de diagnóstico a aplicativos e processos que já estão em execução.
 
- ![Escolha um aplicativo em execução ou instalado para diagnóstico](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+Se você escolher **Executável** como seu alvo de análise, você pode entrar no caminho para um *.exe* em uma máquina local ou remota. Em ambos os casos, o *.exe* funciona localmente. No entanto, recomendamos que você faça o perfil do seu aplicativo abrindo a solução no Visual Studio.
+
+Para um aplicativo UWP, ao selecionar **Aplicativo em execução** ou **aplicativo instalado,** você seleciona o aplicativo em uma lista que encontra os aplicativos no destino de implantação especificado. Esse destino pode ser um computador remoto ou local. Para fazer o perfil de um aplicativo UWP em uma máquina remota, você precisa selecionar **Universal (Protocolo Não Criptografado)** na caixa de diálogo **Conexões Remotas.**
+
+![Escolha um aplicativo em execução ou instalado para diagnóstico](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+
+> [!NOTE]
+> Para outros cenários que exijam o uso remoto de ferramentas de criação de perfil, consulte [Medir o desempenho do aplicativo a partir da linha de comando](../profiling/profile-apps-from-command-line.md). Você pode usar as ferramentas de linha de comando com o uso da CPU e a ferramenta .NET Object Allocation.
 
 ## <a name="see-also"></a>Confira também
 

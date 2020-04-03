@@ -1,27 +1,27 @@
 ---
 title: Analisar o uso de memória
 ms.custom: seodec18
-ms.date: 01/02/2018
+ms.date: 03/30/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43126f4bba8afc50fc5c1e4cf6a3b9a67c6f340c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 21522ba32990a850a388bfcf69ab239232a2c23d
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233056"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638418"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 
-para encontrar vazamentos de memória e uso ineficiente de memória, você pode usar ferramentas como a ferramenta de diagnóstico de uso de memória integrada ao depurador ou ferramentas no Profiler de desempenho, como a ferramenta .NET Object Allocation e a ferramenta post-mortem Memory Use.
+Para encontrar vazamentos de memória e uso ineficiente de memória, você pode usar ferramentas como a ferramenta de diagnóstico de uso de memória integrada ao depurador ou ferramentas no Profiler de desempenho, como a ferramenta .NET Object Allocation e a ferramenta post-mortem Memory Use.
 
-A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, ASP.NET, nativos ou mistos (.NET e nativos). A ferramenta **Uso de memória** pode ser executada em um projeto aberto do Visual Studio, em um aplicativo da Microsoft Store instalado ou conectado a um aplicativo ou processo em execução. É possível executar a ferramenta em computadores locais ou remotos ou em um simulador ou emulador. Você pode executar a ferramenta **Uso de memória** com ou sem depuração. Para obter mais informações, consulte [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). No depurador, você pode ativar e desativar o perfil de memória e ver uma quebra por objeto do uso da memória. Você pode visualizar os resultados de uso da memória quando a execução é pausada, por exemplo, em um ponto de ruptura.
+A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, ASP.NET, nativos ou mistos (.NET e nativos). A ferramenta **Uso de memória** pode ser executada em um projeto aberto do Visual Studio, em um aplicativo da Microsoft Store instalado ou conectado a um aplicativo ou processo em execução. Você pode executar a ferramenta **Uso de memória** com ou sem depuração. Para obter mais informações, consulte [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). No depurador, você pode ativar e desativar o perfil de memória e ver uma quebra por objeto do uso da memória. Você pode visualizar os resultados de uso da memória quando a execução é pausada, por exemplo, em um ponto de ruptura.
 
-A ferramenta **.NET Object Allocation** ajuda a identificar padrões de alocação e anomalias em seu código .NET. Esta ferramenta funciona apenas como uma ferramenta post-mortem.
+A ferramenta **.NET Object Allocation** ajuda a identificar padrões de alocação e anomalias em seu código .NET. Esta ferramenta funciona apenas como uma ferramenta post-mortem. Você pode executar esta ferramenta em máquinas locais ou remotas.
 
 Para obter instruções detalhadas que descrevam como usar as ferramentas de análise de memória, consulte o tutorial [de uso de memória Analyze](../profiling/memory-usage.md) e a ferramenta [.NET Object Allocation](../profiling/dotnet-alloc-tool.md).
 

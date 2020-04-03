@@ -2,19 +2,20 @@
 title: Instalar ferramentas de inteligência artificial
 description: Descreve como instalar ferramentas de inteligência artificial do Visual Studio
 keywords: ia, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915805"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638574"
 ---
 # <a name="installation"></a>Instalação
 
@@ -33,7 +34,7 @@ Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https
 2. Na caixa de diálogo **Extensões e Atualizações**, selecione **Online** no lado esquerdo.
 3. Na caixa de pesquisa no canto superior direito, digite ou insira "tools for ai".
 4. Selecione **Visual Studio Tools for AI** nos resultados.
-5. Clique em **Baixar**.
+5. Clique em **Download**.
 
 ## <a name="prepare-your-local-machine"></a>Preparar seu computador local
 

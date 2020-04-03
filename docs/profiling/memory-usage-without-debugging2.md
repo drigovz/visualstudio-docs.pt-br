@@ -1,7 +1,7 @@
 ---
 title: Analisar o uso de memória sem depurar | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,28 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256238"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638821"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
 A ferramenta **Uso de Memória** monitora o uso de memória do seu aplicativo. É possível usar a ferramenta para estudar os efeitos de memória em tempo real de cenários que você está desenvolvendo ativamente no Visual Studio. É possível tirar instantâneos detalhados dos estados de memória do aplicativo e compará-los para encontrar as causas raiz de problemas de memória.
 
-A ferramenta **Uso de Memória** pode ser executada com ou sem o depurador. As instruções a seguir mostram como usar a ferramenta **Uso de Memória** sem o depurador no **Criador de Perfil de Desempenho** do Visual Studio.
+A ferramenta **Uso de memória** pode ser executada com ou [sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Neste artigo, mostramos como usar a ferramenta **Uso de Memória** sem o depurador no Visual Studio Performance **Profiler**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessões de diagnóstico de Uso de memória
 
 **Para iniciar uma a sessão de diagnóstico de uso de memória:**
 
-1. Abra um projeto UWP (Universal do Windows) em C# no Visual Studio.
+1. Abra um projeto no Visual Studio.
+
+   A ferramenta Uso de memória suporta aplicativos .NET, ASP.NET, nativo ou de modo misto (.NET e nativo).
+
+1. No menu Debug, defina a configuração da solução para **Liberar** e selecione **Local Windows Debugger** (ou Local **Machine)** como o destino de implantação.
 
 1. Na barra de menu, escolha **Debug** > **Performance Profiler**.
 
-1. Selecione **Uso de Memória** e, em seguida, selecione **Iniciar**.
+1. Em **Ferramentas Disponíveis,** selecione **Uso de memória**e selecione **Iniciar**.
 
    ![Iniciar uma a sessão de diagnóstico de uso de memória](../profiling/media/memuse_start_diagnosticssession.png "Iniciar uma a sessão de diagnóstico de uso de memória")
 
