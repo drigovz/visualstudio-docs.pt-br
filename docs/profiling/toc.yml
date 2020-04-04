@@ -2,7 +2,7 @@
   href: index.yml
 - name: Visão geral
   href: profiling-overview.md
-- name: Inícios rápidos
+- name: Guias de Início Rápido
   items:
     - name: Introdução à criação de perfil
       href: profiling-feature-tour.md
@@ -20,24 +20,24 @@
       href: memory-usage.md
 - name: Conceitos
   items:
-    - name: Executar Ferramentas de Criação de Perfil com ou sem o depurador
+    - name: Executar ferramentas de criação de perfil com ou sem o depurador
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guias de instruções
   items:
-    - name: Uso da CPU
-      href: cpu-usage.md
     - name: Usar PerfTips
       href: perftips.md
+    - name: Uso da CPU
+      href: cpu-usage.md
     - name: Uso de memória
       items:
         - name: Analisar o uso de memória
           href: analyze-memory-usage.md
         - name: Analisar o uso de memória para objetos do .NET
           href: dotnet-alloc-tool.md
-        - name: Eventos de heap de ETW nativos personalizados
-          href: custom-native-etw-heap-events.md
         - name: Uso de memória sem o depurador
           href: memory-usage-without-debugging2.md
+        - name: Eventos de heap de ETW nativos personalizados
+          href: custom-native-etw-heap-events.md
     - name: Medir o desempenho da linha de comando
       href: profile-apps-from-command-line.md
     - name: Analisar o uso da GPU
@@ -136,11 +136,11 @@
                   href: how-to-collect-event-tracing-for-windows-etw-data.md
             - name: Como serializar informações de símbolo
               href: how-to-serialize-symbol-information.md
-            - name: Configurar opções de sessão de desempenho geral
+            - name: Configurar opções gerais da sessão de desempenho
               href: setting-general-performance-session-options.md
             - name: Configurar a sessão atual
               href: how-to-set-the-current-session.md
-            - name: Definir permissões
+            - name: Configurar permissões
               href: how-to-set-permissions.md
             - name: Especificar o binário a ser iniciado
               href: how-to-specify-the-binary-to-start.md
@@ -186,77 +186,77 @@
                       items:
                         - name: Visão geral das regras de desempenho de uso do .NET Framework
                           href: dotnet-framework-usage-performance-rules.md
-                        - name: 'DA0001: usar StringBuilder para concatenações'
+                        - name: 'DA0001: Usar StringBuilder para concatenações'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: coleções de GC2 frequentes'
+                        - name: 'DA0005: Coletas de GC2 frequentes'
                           href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006: substituir Equals() para tipos de valor'
+                        - name: 'DA0006: Substituir Equals() por tipos de valor'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: evitar usar exceções no fluxo de controle'
+                        - name: 'DA0007: Evitar usar exceções no fluxo de controle'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010: função GetHashCode dispendiosa'
+                        - name: 'DA0010: Função GetHashCode dispendiosa'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: função CompareTo dispendiosa'
+                        - name: 'DA0011: Função CompareTo dispendiosa'
                           href: da0011-expensive-compareto.md
-                        - name: 'DA0012: volume significativo de reflexão'
+                        - name: 'DA0012: Volume significativo de reflexão'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: uso alto de String.Split ou String.Substring'
+                        - name: 'DA0013: Alto uso de String.Split ou String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo'
+                        - name: 'DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021: taxa alta de coletas de lixo Gen 1'
+                        - name: 'DA0021: Alta taxa de coletas de lixo de Geração 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022: taxa alta de coletas de lixo Gen 2'
+                        - name: 'DA0022: Alta taxa de coletas de lixo de Geração 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0023: tempo de CPU GC alto'
+                        - name: 'DA0023: Tempo de CPU de GC elevado'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: tempo de GPU GC excessivo'
+                        - name: 'DA0024: Tempo de CPU de GC excessivo'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: taxa alta de contenções de bloqueio'
+                        - name: 'DA0038: Alta taxa de contenções de bloqueio'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: taxa muito alta de contenções de bloqueio'
+                        - name: 'DA0039: Taxa muito alta de contenções de bloqueio'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Regras de desempenho de memória e paginação
                       items:
                         - name: Visão geral das regras de desempenho de memória e paginação
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014: taxas extremamente elevadas de paginação de memória ativa em disco'
+                        - name: 'DA0014: Taxas de paginação de memória ativa para o disco extremamente altas'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: taxas elevadas de paginação de memória ativa em disco'
+                        - name: 'DA0017: Altas taxas de paginação de memória ativa para o disco'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Regras de uso das ferramentas de criação de perfil
                       items:
                         - name: Visão geral das regras de uso das ferramentas de criação de perfil
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: VSPerfCorProf.dll não foi encontrado'
+                        - name: 'DA0002: VSPerfCorProf.dll está ausente'
                           href: da0002-vsperfcorprof-dll-is-missing.md
-                        - name: 'DA0003: muitas amostras de kernel'
+                        - name: 'DA0003: Muitas amostras de kernel'
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: uso do processador elevado'
+                        - name: 'DA0004: Uso do processador elevado'
                           href: da0004-high-processor-usage.md
-                        - name: 'DA0008: poucas amostras coletadas'
+                        - name: 'DA0008: Poucas amostras coletadas'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: processamento de tempo de CPU do kernel excessivo'
+                        - name: 'DA0026: Processamento de tempo de CPU do kernel excessivo'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: versão do CLR sem suporte'
+                        - name: 'DA0029: Versão de CLR não compatível'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: coletar medições de interação de camada para projetos de banco de dados'
+                        - name: 'DA0030: Coletar medidas de interação de camadas para projetos de banco de dados'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Regras de desempenho do monitoramento de recurso
                       items:
                         - name: Visão geral das regras de desempenho do monitoramento de recurso
                           href: resource-monitoring-performance-rules.md
-                        - name: 'DA0501: consumo médio de CPU pelo processo cujo perfil está sendo criado'
+                        - name: 'DA0501: Consumo médio de CPU pelo Processo cujo perfil está sendo criado'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: consumo de CPU máximo pelo processo com perfil criado'
+                        - name: 'DA0502: Consumo máximo de CPU pelo Processo cujo perfil está sendo criado'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: conjunto de trabalho médio em bytes para o processo com criação de perfil'
+                        - name: 'DA0503: Média de Conjunto de Trabalho em Bytes para o Processo cujo perfil está sendo criado'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: conjunto de trabalho máximo em bytes para o processo com criação de perfil'
+                        - name: 'DA0504: Conjunto de trabalho máximo em bytes para o processo cujo perfil está sendo criado'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0505: média de bytes particulares alocados para o processo com criação de perfil'
+                        - name: 'DA0505: Média de Bytes Privados alocados para o Processo cujo perfil está sendo criado'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: máximo de bytes particulares alocados para o processo com criação de perfil'
+                        - name: 'DA0506: Máximo de Bytes Privados alocados para o Processo cujo perfil está sendo criado'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Exibições do relatório de desempenho
               items:
@@ -420,7 +420,7 @@
               href: specifying-the-path-to-profiling-tools-command-line-tools.md
             - name: Usar métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
-            - name: Adicionar dados de interação entre camadas por meio da linha de comando
+            - name: Adicionar dados de interação de camada por meio da linha de comando
               href: adding-tier-interaction-data-from-the-command-line.md
             - name: Aplicativos autônomos
               items:
@@ -504,9 +504,9 @@
                       href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
                 - name: Modificar arquivos Web.Config para instrumentar e criar perfil de aplicativos Web ASP.NET compilados dinamicamente
                   href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
-            - name: Criação de perfil dos serviços de linha de comando
+            - name: Linha de comando de criação de perfil de serviços
               items:
-                - name: Criação de perfil dos serviços de linha de comando
+                - name: Linha de comando de criação de perfil de serviços
                   href: command-line-profiling-of-services.md
                 - name: Coletando estatísticas do aplicativo para serviços usando o método de amostragem do criador de perfil
                   items:
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Iniciar
+                    - name: Início
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -592,7 +592,7 @@
                       href: querycounters.md
                     - name: Eventos (VSPerfCmd)
                       href: events-vsperfcmd.md
-                    - name: Shutdown
+                    - name: Desligar
                       href: shutdown.md
                     - name: GlobalOn e GlobalOff
                       href: globalon-and-globaloff.md
@@ -604,19 +604,19 @@
                       href: gc-vsperfcmd.md
                     - name: Inicializar
                       href: launch.md
-                    - name: Anexar
+                    - name: Attach
                       href: attach.md
                     - name: Args
                       href: args.md
                     - name: Marca
                       href: mark.md
-                    - name: Desanexar
+                    - name: Detach
                       href: detach.md
                     - name: PF
                       href: pf.md
                     - name: Sys (VSPerfCmd)
                       href: sys-vsperfcmd.md
-                    - name: Timer
+                    - name: Temporizador
                       href: timer.md
                     - name: LineOff
                       href: lineoff.md
@@ -662,7 +662,7 @@
                   href: suspendprofile.md
                 - name: PROFILE_CURRENTID
                   href: profile-currentid.md
-            - name: 'Passo a passo: usando APIs do criador de perfil'
+            - name: 'Passo a passo: Usando APIs do criador de perfil'
               href: walkthrough-using-profiler-apis.md
         - name: Criando perfis dos testes de carga do ASP.NET
           href: profiling-aspnet-load-tests.md
@@ -744,7 +744,7 @@
               href: report-based-on-visible-time-range.md
             - name: Tempo de suspensão
               href: sleep-time.md
-            - name: Hora da Sincronização
+            - name: Tempo de sincronização
               href: synchronization-time.md
             - name: Conector pronto para thread
               href: thread-ready-connector.md
