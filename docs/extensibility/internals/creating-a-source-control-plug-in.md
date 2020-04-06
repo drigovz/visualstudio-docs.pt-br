@@ -1,5 +1,5 @@
 ---
-title: Criando um controle de fonte plug-in | Microsoft Docs
+title: Criando um Plug-in de controle de origem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8489e991a54df5b905289a64fccb0df65c3cec8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341923"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709182"
 ---
-# <a name="create-a-source-control-plug-in"></a>Criar um controle de fonte plug-in
-O SDK do Visual Studio fornece recursos que permitem que você adicione funcionalidade de controle do código-fonte para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Ele permite usar qualquer DLL de plug-in que está em conformidade com a API de plug-in de controle do código-fonte descritos nesta documentação.
+# <a name="create-a-source-control-plug-in"></a>Criar um plug-in de controle de origem
+O Visual Studio SDK fornece recursos que permitem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] adicionar capacidade de controle de origem ao ambiente de desenvolvimento integrado (IDE). Ele permite que você use qualquer DLL plug-in que esteja em conformidade com a API plug-in de controle de origem descrita nesta documentação.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
- Descreve como instalar um plug-in de controle do código-fonte e realça as versões de API de plug-in de controle do código-fonte está disponíveis.
+ Descreve como instalar um plug-in de controle de origem e destaca as versões atualmente disponíveis da API de controle de fonte.
 
 - [Arquitetura](../../extensibility/internals/source-control-plug-in-architecture.md)
 
- Usa um diagrama de arquitetura para explicar a integração de controle de origem plug-in com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+ Usa um diagrama de arquitetura para explicar a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integração de um plug-in de controle de origem com o IDE.
 
 - [Guia de teste](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
 
- Fornece orientação sobre como testar a instalação e operação de um plug-in de controle de origem.
+ Fornece orientações sobre como testar a instalação e o funcionamento de um plug-in de controle de origem.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Crie um controle de origem VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Discute como criar um controle de fonte VSPackage que não apenas fornece a funcionalidade de controle do código-fonte, mas substitui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da interface do usuário do controle de origem.
+ Discute como criar um controle de origem VSPackage que não apenas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece a funcionalidade de controle de origem, mas substitui a interface do ui de controle de origem.
 
 - [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md)
 
- Fornece uma lista completa de todos os elementos na API de plug-in de controle de origem.
+ Fornece uma lista completa de todos os elementos da API plug-in de controle de fonte.
 
 - [Controle de origem](../../extensibility/internals/source-control.md)
 
- Discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Discute as opções para implementar o controle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]de origem como uma característica integrada de .

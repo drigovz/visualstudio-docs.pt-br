@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714324"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Especifica os sinalizadores para as informações de módulo de depuração.
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+Especifica as bandeiras para as informações do módulo de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -66,59 +66,59 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Campos
  `MIF_NONE`\
- Inicialização/usar nenhum dos campos na estrutura.
+ Inicializar/usar nenhum dos campos da estrutura.
 
  `MIF_NAME`\
- Inicialização/usar o `m_bstrName` campo de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estrutura.
+ Inicializar/utilizar `m_bstrName` o campo na estrutura [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
  `MIF_URL`\
- Inicialização/usar o `m_bstrUrl` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_bstrUrl` o campo `MODULE_INFO` na estrutura.
 
  `MIF_VERSION`\
- Inicialização/usar o `m_bstrVersion` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_bstrVersion` o campo `MODULE_INFO` na estrutura.
 
  `MIF_DEBUGMESSAGE`\
- Inicialização/usar o `m_bstrDebugMessage` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_bstrDebugMessage` o campo `MODULE_INFO` na estrutura.
 
  `MIF_LOADADDRESS`\
- Inicialização/usar o `m_addrLoadAddress` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_addrLoadAddress` o campo `MODULE_INFO` na estrutura.
 
  `MIF_PREFFEREDADDRESS`\
- Inicialização/usar o `m_addrPreferredLoadAddress` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_addrPreferredLoadAddress` o campo `MODULE_INFO` na estrutura.
 
  `MIF_SIZE`\
- Inicialização/usar o `m_dwSize` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_dwSize` o campo `MODULE_INFO` na estrutura.
 
  `MIF_LOADORDER`\
- Inicialização/usar o `m_dwLoadOrder` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_dwLoadOrder` o campo `MODULE_INFO` na estrutura.
 
  `MIF_TIMESTAMP`\
- Inicialização/usar o `m_TimeStamp` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_TimeStamp` o campo `MODULE_INFO` na estrutura.
 
  `MIF_URLSYMBOLLOCATION`\
- Inicialização/usar o `m_bstrUrlSymbolLocation` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_bstrUrlSymbolLocation` o campo `MODULE_INFO` na estrutura.
 
  `MIF_FLAGS`\
- Inicialização/usar o `m_dwModuleFlags` campo o `MODULE_INFO` estrutura.
+ Inicializar/usar `m_dwModuleFlags` o campo `MODULE_INFO` na estrutura.
 
  `MIF_ALLFIELDS`\
- Inicialização/usar todos os campos no `MODULE_INFO` estrutura.
+ Inicializar/utilizar todos os campos `MODULE_INFO` da estrutura.
 
 ## <a name="remarks"></a>Comentários
- Esses valores são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método para indicar quais campos da [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) são de estrutura a ser inicializado.
+ Esses valores são passados como um argumento para o método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar quais campos da estrutura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devem ser inicializados.
 
- Esses valores também são usados no `MODULE_INFO` estrutura para indicar quais campos são usados e válido.
+ Esses valores também `MODULE_INFO` são utilizados na estrutura para indicar quais campos são usados e válidos.
 
- Esses sinalizadores podem ser combinados com um bit a bit `OR`.
+ Essas bandeiras podem ser combinadas com um pouco `OR`.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

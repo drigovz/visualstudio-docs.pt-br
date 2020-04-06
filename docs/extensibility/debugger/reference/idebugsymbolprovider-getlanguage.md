@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfa11a1df6460c08431d7b23fabe5d94674baad2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347613"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719233"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Esse método obtém o idioma que foi usado para compilar o código no endereço de depuração.
+Este método obtém a linguagem que foi usada para compilar o código no endereço de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ int GetLanguage(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pAddress`\
-[in] Um objeto de endereço representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[em] Um objeto de endereço representado por uma interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pguidLanguage`\
-[out] Retorna um `GUID` que especifica o idioma.
+[fora] Retorna `GUID` um que especifica o idioma.
 
 `pguidLanguageVendor`\
-[out] Retorna um `GUID` que especifica o fornecedor de idioma.
+[fora] Retorna `GUID` um que especifica o fornecedor de idiomas.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O mecanismo de depuração chama esse método para obter as informações necessárias para selecionar o avaliador de expressão correto.
+ O mecanismo de depuração chama este método para obter as informações que precisa para selecionar o avaliador de expressão correto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

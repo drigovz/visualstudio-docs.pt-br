@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Microsoft Docs
+title: TIPO DE DESPEJO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318200"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737204"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Especifica a quantidade de estado de um programa (como threads em execução, quadros de pilha e o endereço da instrução atual) para despejo.
+Especifica quanto do estado de um programa (como executar threads, quadros de pilha e endereço de instrução atual) é descartado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>Campos
 `DUMP_MINIDUMP`\
-Especifica um despejo de pequeno e compacto.
+Especifica um despejo pequeno e compacto.
 
 `DUMP_FULLDUMP`\
-Especifica um despejo completo, grande.
+Especifica um despejo grande e completo.
 
 ## <a name="remarks"></a>Comentários
-Passado como um argumento para o [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.
+Passou como um argumento para o método [WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746343"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714269"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
-Essa estrutura representa um valor de retorno de um método ou função.
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
+Esta estrutura representa um valor de retorno de um método ou função.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,28 +47,28 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>Membros
  `tokMethod`\
- A ID do método que destina-esse valor de retorno.
+ O ID do método para o valor deste retorno é para.
 
  `dwCorType`\
- O tipo base do valor de retorno. Este é um valor da `CorElementType` enumeração definida no arquivo corhdr. h SDK do .NET Framework.
+ O tipo base de valor de retorno. Este é um `CorElementType` valor da enumeração definida no arquivo .NET Framework SDK corhdr.h.
 
  `dwSigSize`\
- O tamanho da assinatura do valor de retorno (conforme armazenado no `rgSig`).
+ O tamanho da assinatura do valor `rgSig`de retorno (como armazenado em ).
 
  `rgSig`\
- Uma matriz de bytes que formam a assinatura do valor de retorno.
+ Uma matriz de bytes formando a assinatura do valor de retorno.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_RETVAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).
+ Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_RETVAL` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

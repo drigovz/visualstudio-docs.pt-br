@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337678"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736899"
 ---
-# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Especifica quais informações devem ser recuperadas sobre um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+# <a name="field_info_fields"></a>FIELD_INFO_FIELDS
+Especifica quais informações recuperar sobre um objeto [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,32 +52,32 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>Campos
 `FIF_FULLNAME`\
-Inicialização/usar o `bstrFullName` campo de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
+Inicializar/utilizar `bstrFullName` o campo na estrutura [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
 
 `FIF_NAME`\
-Inicialização/usar o `bstrName` campo o `FIELD_INFO` estrutura.
+Inicializar/usar `bstrName` o campo `FIELD_INFO` na estrutura.
 
 `FIF_TYPE`\
-Inicialização/usar o `bstrType` campo o `FIELD_INFO` estrutura.
+Inicializar/usar `bstrType` o campo `FIELD_INFO` na estrutura.
 
 `FIF_MODIFIERS`\
-Inicialização/usar o `bstrModifiers` campo o `FIELD_INFO` estrutura.
+Inicializar/usar `bstrModifiers` o campo `FIELD_INFO` na estrutura.
 
 ## <a name="remarks"></a>Comentários
-Esses valores também são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para especificar quais campos da [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) são de estrutura a ser inicializado.
+Esses valores também são passados como um argumento para o método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) para especificar quais campos da estrutura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) devem ser inicializados.
 
-Esses valores também são usados na `dwFields` membro o `FIELD_INFO` estrutura para indicar quais campos são usados e válido.
+Esses valores também `dwFields` são utilizados no membro da `FIELD_INFO` estrutura para indicar quais campos são usados e válidos.
 
-Esses sinalizadores podem ser combinados com um bit a bit `OR`.
+Essas bandeiras podem ser combinadas com um pouco `OR`.
 
 ## <a name="requirements"></a>Requisitos
-Header: sh.h
+Cabeçalho: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

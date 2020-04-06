@@ -1,40 +1,40 @@
 ---
-title: Considerações para descarregar e recarregar projetos de aninhados | Microsoft Docs
+title: Considerações para descarregar e recarregar projetos aninhados | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a45cf72f09ddf4e5ac1d68b59c2b13e64982744
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335549"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709299"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considerações para descarregar e recarregar projetos aninhados
 
-Quando você implementa os tipos de projeto aninhado, você deve executar etapas adicionais quando você descarrega e recarregar os projetos. Para notificar os ouvintes de eventos de solução corretamente, você deverá gerar corretamente os `OnBeforeUnloadProject` e `OnAfterLoadProject` eventos.
+Ao implementar tipos de projeto aninhados, você deve executar etapas adicionais ao descarregar e recarregar os projetos. Para notificar corretamente os ouvintes para eventos `OnBeforeUnloadProject` `OnAfterLoadProject` de solução, você deve levantar corretamente os eventos.
 
-Um motivo para acionar esses eventos é para controle do código-fonte (SCC). Você não quer SCC excluir os itens do servidor e, em seguida, adicioná-los como *novos* se não houver um `Get` operação do SCC. Nesse caso, um novo arquivo seria carregado fora do SCC. Você teria que descarregar e recarregar todos os arquivos caso eles são diferentes.
+Uma das razões para levantar esses eventos é o controle de código fonte (CCS). Você não quer que o SCC exclua os itens do *new* servidor e, em `Get` seguida, adicione-os de volta como novos se houver uma operação do SCC. Nesse caso, um novo arquivo seria carregado fora do CCS. Você teria que descarregar e recarregar todos os arquivos no caso de eles serem diferentes.
 
-Chamadas de controle do código de origem `ReloadItem`. Implemente a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interface para chamar `OnBeforeUnloadProject` e `OnAfterLoadProject` para excluir o projeto e recriá-la. Quando você implementa a interface dessa maneira, SCC é informado de que o projeto foi excluído e adicionado novamente temporariamente. Portanto, o SCC não funciona no projeto como se o projeto tiver sido *realmente* excluído e adicionado novamente.
+Chamadas de `ReloadItem`controle de código fonte . Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> a `OnBeforeUnloadProject` interface `OnAfterLoadProject` para chamar e excluir o projeto e recriá-lo. Quando você implementa a interface desta forma, o SCC é informado de que o projeto foi temporariamente excluído e adicionado novamente. Portanto, o SCC não opera no projeto como se o projeto fosse *realmente* excluído e readicionado.
 
-## <a name="reload-projects"></a>Recarregar projetos
+## <a name="reload-projects"></a>Projetos de recarga
 
-Para dar suporte a recarregamento de projetos aninhados, você deve implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> método. Em sua implementação de `ReloadItem`, feche os projetos aninhados e, em seguida, recriá-los.
+Para suportar a recarga de projetos <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> aninhados, você implementa o método. Na sua `ReloadItem`implementação, você fecha os projetos aninhados e depois os recria.
 
-Normalmente quando um projeto é recarregado, o IDE gera o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> eventos. No entanto, para projetos aninhados que são excluídos e recarregados, o projeto pai inicia o processo, não do IDE. Como o projeto pai não geram eventos de solução, e o IDE não possui informações sobre a inicialização do processo, os eventos não são gerados.
+Normalmente, quando um projeto é recarregado, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> o IDE levanta os eventos. No entanto, para projetos aninhados que são excluídos e recarregados, o projeto pai inicia o processo, não o IDE. Como o projeto pai não levanta eventos de solução, e o IDE não tem informações sobre a inicialização do processo, os eventos não são levantados.
 
-Para lidar com esse processo, as chamadas de projeto pai `QueryInterface` sobre o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interface. `IVsFireSolutionEvents` tem funções que mandar o IDE para gerar o `OnBeforeUnloadProject` evento para descarregar o projeto aninhado e, em seguida, gerar o `OnAfterLoadProject` evento para recarregar o projeto mesmo.
+Para lidar com esse processo, o projeto pai solicita `QueryInterface` a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interface. `IVsFireSolutionEvents`tem funções que dizem ao `OnBeforeUnloadProject` IDE para levantar o evento para `OnAfterLoadProject` descarregar o projeto aninhado e, em seguida, levantar o evento para recarregar o mesmo projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
-- [Projetos de aninhamento](../../extensibility/internals/nesting-projects.md)
+- [Projetos nest](../../extensibility/internals/nesting-projects.md)

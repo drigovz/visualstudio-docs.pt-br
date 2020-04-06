@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
 ms.assetid: c3a25f27-327a-4bdb-b026-27d436ddcd0c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824498f3d7657bcc5984d31a1abaa4e97c4a9a7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 823057303655da59494680ce9f591b252e28f792
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330198"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731218"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-Representa um campo dinâmico para um [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.
+Representa um campo dinâmico para um objeto [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -27,16 +27,16 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) interface, essa interface implementa os seguintes métodos:
+ Além dos métodos na interface [IDebugDynamicField,](../../../extensibility/debugger/reference/idebugdynamicfield.md) esta interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Recupera um tipo de dado seu tipo primitivo.|
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Recupera um tipo de dado seu token.|
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Recupera um tipo dado seu tipo primitivo.|
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Recupera um tipo dado seu token.|
 
 ## <a name="requirements"></a>Requisitos
  Cabeçalho: Sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll

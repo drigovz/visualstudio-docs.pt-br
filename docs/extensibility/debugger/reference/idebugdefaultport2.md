@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2 interface
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed38c530ee972e413ee98cc9d94f0f19a9b57069
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732319"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Essa interface fornece vários métodos para acessar o servidor de uma porta e instalações de notificação.
+Esta interface fornece vários métodos para acessar as instalações de servidor e notificação de uma porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,31 +28,31 @@ Essa interface fornece vários métodos para acessar o servidor de uma porta e i
 IDebugDefaultPort2 : IDebugPort2
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Visual Studio implementa essa interface para representar a porta de depuração para acessar os programas. Um fornecedor de porta personalizado também pode implementar essa interface se ele trata a depuração remota.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O Visual Studio implementa esta interface para representar a porta de depuração para acesso a programas. Um fornecedor de porta personalizado também pode implementar essa interface se lidar com a depuração remota.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Um argumento para métodos na [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface fornece essa interface. Chamando [QueryInterface](/cpp/atl/queryinterface) em um [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface também pode obter essa interface.
+ Um argumento para métodos na interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) fornece essa interface. Chamar [queryInterface](/cpp/atl/queryinterface) em uma interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) também pode obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos definidos no [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), essa interface implementa os métodos a seguir:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+ Além dos métodos definidos no [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md)esta interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Obtém a interface de notificação de porta desta porta.|
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtém a interface para o servidor que hospeda essa porta.|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se essa porta está em execução no computador local.|
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Obtém a interface de notificação da porta a partir desta porta.|
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtém a interface para o servidor que hospeda esta porta.|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se esta porta está funcionando na máquina local.|
 
 ## <a name="remarks"></a>Comentários
- O nome "`IDebugDefaultPort2`" é um pouco de um nome inapropriado, pois ele não representa uma porta padrão. Ele poderia ser chamado "IDebugPort3".
+ O nome`IDebugDefaultPort2`" " é um pouco de um equívoco, pois não representa uma porta padrão. Pode se chamar "IDebugPort3".
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

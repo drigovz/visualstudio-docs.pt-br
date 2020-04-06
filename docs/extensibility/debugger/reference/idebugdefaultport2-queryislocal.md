@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::QueryIsLocal
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a21419af9be56647a835ee1d8ddab62e20f842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c06230f7bbd1825fe73a22f9b1fdc35aea35c499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351749"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732332"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-Este método determina se essa porta é no computador local.
+Este método determina se esta porta está na máquina local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,8 +34,8 @@ HRESULT QueryIsLocal(
 int QueryIsLocal();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Retorna `S_OK` se essa porta é local (no mesmo computador que o chamador) ou `S_FALSE` se a porta estiver em outro computador.
+## <a name="return-value"></a>Valor retornado
+ Retorna `S_OK` se esta porta estiver local (na mesma `S_FALSE` máquina que o chamador) ou se a porta estiver em outra máquina.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

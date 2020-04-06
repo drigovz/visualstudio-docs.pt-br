@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 725ac07c85dd31edaf97200a7a8668ff3efd9ab9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329518"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714903"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-Inicializa os dados de origem para este objeto e retorna um objeto que contém os dados iniciais.
+Inicializa os dados de origem para este objeto e retorna um objeto contendo os dados iniciais.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ int InitSourceDataProvider(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dataOut`\
-[out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto
+[fora] Retorna um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método faz tudo o que é necessário inicializar um objeto para que ele possa retornar um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) interface nos dados do objeto. Isso permite que os dados do objeto seja exibido e, se puder, alterado por um visualizador de tipo.
+ Este método faz o que for necessário para inicializar um objeto para que ele possa retornar uma interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) nos dados do objeto. Isso permite que os dados do objeto sejam visualizados e, se permitido, alterados por um visualizador de tipo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

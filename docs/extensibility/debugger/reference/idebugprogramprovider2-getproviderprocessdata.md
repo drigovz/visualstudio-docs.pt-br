@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bee54c3876c2de1be0754a74b429e6d24b80b738
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721832"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera uma lista de programas em execução de um processo especificado.
@@ -47,36 +47,36 @@ int GetProviderProcessData(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `Flags`\
-[in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os sinalizadores a seguir são típicos para essa chamada:
+[em] Uma combinação de bandeiras da [enumeração PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) As seguintes bandeiras são típicas desta chamada:
 
 |Sinalizador|Descrição|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Chamador está em execução no computador remoto.|
-|`PFLAG_DEBUGGEE`|Chamador está atualmente em depuração (informações adicionais sobre a realização de marshaling serão retornadas para cada nó).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chamador foi anexado ao, mas não é iniciado pelo depurador.|
-|`PFLAG_GET_PROGRAM_NODES`|Chamador está pedindo para obter uma lista de nós de programa a ser retornado.|
+|`PFLAG_REMOTE_PORT`|O interlocutor está rodando na máquina remota.|
+|`PFLAG_DEBUGGEE`|O chamador está sendo depurado no momento (informações adicionais sobre marshalling serão devolvidas para cada nó).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|O chamador foi anexado, mas não lançado pelo depurador.|
+|`PFLAG_GET_PROGRAM_NODES`|Quem ligou está pedindo que uma lista de nomes do programa seja devolvida.|
 
 `pPort`\
-[in] A porta que o processo de chamada está em execução.
+[em] A porta em que o processo de chamada está sendo executado.
 
 `processId`\
-[in] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que contém a ID do processo que contém o programa em questão.
+[em] Uma [estrutura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contém a ID do processo que contém o programa em questão.
 
 `EngineFilter`\
-[in] Uma matriz de GUIDs para os mecanismos de depuração atribuídos para depurar esse processo (eles serão usados para filtrar os programas que são retornados, na verdade, com base no que o suportam os mecanismos fornecidos; se não há mecanismos forem especificados, em seguida, serão retornados todos os programas).
+[em] Uma matriz de GUIDs para motores de depuração atribuídos para depurar esse processo (estes serão usados para filtrar os programas que são realmente devolvidos com base no suporte dos motores fornecidos; se nenhum mecanismo for especificado, todos os programas serão devolvidos).
 
 `pProcess`\
-[out] Um [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura será preenchida com as informações solicitadas.
+[fora] Uma [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura que é preenchida com as informações solicitadas.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Normalmente, esse método é chamado por um processo para obter uma lista de programas em execução nesse processo. As informações retornadas são uma lista dos [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos.
+ Este método é normalmente chamado por um processo para obter uma lista de programas em execução nesse processo. As informações retornadas são uma lista de objetos [IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

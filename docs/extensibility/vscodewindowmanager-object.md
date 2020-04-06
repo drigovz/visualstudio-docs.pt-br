@@ -1,5 +1,5 @@
 ---
-title: Objeto VSCodeWindowManager | Microsoft Docs
+title: VSCodeWindowManagerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189039"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740411"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 
-O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra suspensa). Para obter mais informações, consulte [Personalizando janelas de código usando a API herdada](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+O serviço de idiomas implementa o gerenciador de janelas de código e é responsável pelo gerenciamento de adornos (por exemplo, a barra de saque). Para obter mais informações, consulte [Personalizing Code Windows usando a API legado](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
-A tabela a seguir mostra as interfaces no objeto `VSCodeWindowManager`.
+A tabela a seguir mostra `VSCodeWindowManager` as interfaces no objeto.
 
 |Interface|Descrição|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que adorners (como barras suspensas) sejam adicionados ou removidos de uma janela de código.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que adornos (como barras paradas) sejam adicionados ou removidos de uma janela de código.|

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugExtendedField::GetExtendedKind
 - GetExtendedKind
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b95992bdb9a35edbb828f05f4d4aad5e7d8631e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 942b14af9907e2c026372f295a59ac1f22f78bc8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352709"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729084"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
-Recupera o tipo de campo estendidas especificado.
+Recupera o tipo de campo estendido especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,12 +38,12 @@ int GetExtendedKind(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pdwKind`\
-[no, out] O valor dos [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) enumeração que define o tipo de campo.
+[dentro, fora] Valor a partir da enumeração [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) que define o tipo de campo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

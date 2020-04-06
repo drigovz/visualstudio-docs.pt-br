@@ -1,39 +1,39 @@
 ---
-title: Fornecedores de porta | Microsoft Docs
+title: Fornecedores Portuários | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers
 - debugging [Debugging SDK], port suppliers
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5909587cbed118d618ea1605c8a169024028adf0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351472"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738302"
 ---
-# <a name="port-suppliers"></a>Fornecedores de porta
-Na arquitetura do depurador, uma *fornecedor de porta*:
+# <a name="port-suppliers"></a>Fornecedores portuários
+Na arquitetura dedepurador, um *fornecedor de portas:*
 
-- Está contido por um servidor e fornece as portas na solicitação para esse servidor.
+- É contido por um servidor e fornece portas mediante solicitação a esse servidor.
 
-- Adicione e remova as portas do servidor que contém.
+- Pode adicionar e remover portas do servidor de contenção.
 
-- Pode enumerar todas as portas que ele tenha fornecido para o servidor.
+- Pode enumerar todas as portas que forneceu ao servidor.
 
-- É representado por um [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, que está registrado com o Visual Studio por meio do registro. Essa interface pode ser obtida chamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).
+- É representado por uma interface [IDebugPortSupplier2,](../../extensibility/debugger/reference/idebugportsupplier2.md) que é registrada no Visual Studio através do registro. Esta interface pode ser obtida ligando para [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece um fornecedor de porta padrão e uma porta padrão. Se uma porta personalizada precisa ser implementado, um fornecedor de porta personalizado também precisa ser implementada para fornecer essas portas personalizadas.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornece um fornecedor de porta padrão e uma porta padrão. Se uma porta personalizada precisar ser implementada, um fornecedor de porto personalizado também precisa ser implementado para fornecer essas portas personalizadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Portas](../../extensibility/debugger/ports.md)
-- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

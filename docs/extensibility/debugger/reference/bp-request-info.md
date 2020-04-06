@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25967fa5ddc6f827435c03c2883eacb522c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352999"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737887"
 ---
-# <a name="bprequestinfo"></a>BP_REQUEST_INFO
-Contém as informações necessárias para implementar um ponto de interrupção.
+# <a name="bp_request_info"></a>BP_REQUEST_INFO
+Contém as informações necessárias para implementar um ponto de ruptura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,48 +59,48 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>Membros
 `dwFields`\
-Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que especifica quais campos são preenchidos.
+Uma combinação de bandeiras da enumeração [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica quais campos são preenchidos.
 
 `guidLanguage`\
 O GUID do idioma.
 
 `bpLocation`\
-O [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura que especifica o tipo do local de ponto de interrupção.
+A estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) que especifica o tipo de local do ponto de ruptura.
 
 `pProgram`\
-O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o aplicativo no qual o ponto de interrupção ocorre.
+O objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o aplicativo no qual ocorre o ponto de ruptura.
 
 `bstrProgramName`\
-O nome do aplicativo no qual o ponto de interrupção ocorre.
+O nome do aplicativo no qual ocorre o ponto de ruptura.
 
 `pThread`\
-O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual o ponto de interrupção ocorre.
+O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento no qual ocorre o ponto de ruptura.
 
 `bstrThreadName`\
-O nome do thread no qual o ponto de interrupção ocorre.
+O nome do segmento no qual ocorre o ponto de ruptura.
 
 `bpCondition`\
-O [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que descreve as condições sob as quais o ponto de interrupção será acionado.
+A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que descreve as condições sob as quais o ponto de ruptura será acionado.
 
 `bpPassCount`\
-O [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que contém as informações de contagem de passagem do ponto de interrupção.
+A [estrutura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que contém as informações de contagem de passes do ponto de ruptura.
 
 `dwFlags`\
-Uma combinação de sinalizadores do [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeração que especifica os sinalizadores para o ponto de interrupção solicitado.
+Uma combinação de bandeiras da enumeração [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica as bandeiras para o ponto de ruptura solicitado.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é retornada pelo [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.
+Essa estrutura é devolvida pelo método [GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 
-Se você precisar obter o GUID do fornecedor do mecanismo de depuração, a restrição de ponto de interrupção ou tracepoint, consulte o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura.
+Se você precisar obter o GUID do fornecedor do motor de depuração, a restrição de ponto de ruptura ou o ponto de rastreamento, consulte a estrutura [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
