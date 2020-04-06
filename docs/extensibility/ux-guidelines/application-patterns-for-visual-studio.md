@@ -3,17 +3,17 @@ title: Padrões de aplicação para o Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303186"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698589"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interações de janela
@@ -475,7 +475,7 @@ Os projetos também devem manter modelos de interação consistentes para:
 - Operações de arrastar e soltar
 
 ### <a name="drag-and-drop-interaction-model"></a>Modelo de interação de arrastar e soltar
-Os projetos tipicamente se classificam como baseados em referência (capazes de persistir apenas referências a itens de projeto no armazenamento), baseados em diretórios (capazes de persistir apenas itens de projeto fisicamente armazenados dentro da hierarquia de um projeto) ou misturados (capazes de persistir referências ou itens físicos). O IDE acomoda todos os três tipos de projetos simultaneamente dentro do **Solution Explorer**.
+Os projetos normalmente se classificam como baseados em referência (capazes de persistir apenas referências a itens de projeto no armazenamento), baseados em diretórios (capazes de persistir apenas itens de projeto fisicamente armazenados dentro da hierarquia de um projeto) ou misturados (capazes de persistir referências ou itens físicos). O IDE acomoda todos os três tipos de projetos simultaneamente dentro do **Solution Explorer**.
 
 De uma perspectiva de arrastar e soltar, as seguintes características devem ser aplicadas a cada tipo de projeto dentro do **Solution Explorer**:
 

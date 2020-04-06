@@ -1,5 +1,5 @@
 ---
-title: Como os VSPackages adicionam elementos da Interface do usuário | Microsoft Docs
+title: Como os VSPackages adicionam elementos de interface de usuário | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,36 +7,36 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1109d6aecf2bc89f72377b282be0182c1e677ed0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b7d37bfe81c77536871248592d4a2e0734d1c62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707759"
 ---
-# <a name="how-vspackages-add-user-interface-elements"></a>Como os VSPackages adicionam elementos da interface do usuário
-Um VSPackage pode adicionar elementos de (UI) de interface do usuário, por exemplo, menus, barras de ferramentas e das janelas, para o Visual Studio por meio das *VSCT* arquivo.
+# <a name="how-vspackages-add-user-interface-elements"></a>Como o VSPackages adiciona elementos de interface de usuário
+Um VSPackage pode adicionar elementos de interface do usuário (UI), por exemplo, menus, barras de ferramentas e janelas de ferramentas, ao Visual Studio por meio do arquivo *.vsct.*
 
- Você pode encontrar diretrizes de design para elementos de interface do usuário no [diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Você pode encontrar diretrizes de design para elementos de IU nas [diretrizes de experiência do usuário do Visual Studio.](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)
 
-## <a name="the-visual-studio-command-table-architecture"></a>A arquitetura de tabela de comando do Visual Studio
- Conforme observado, a arquitetura de tabela do comando dá suporte aos princípios de arquitetura acima. Os princípios por trás de abstrações, estruturas de dados e ferramentas da arquitetura de tabela do comando são da seguinte maneira:
+## <a name="the-visual-studio-command-table-architecture"></a>A arquitetura da tabela de comando do Visual Studio
+ Como observado, a arquitetura da tabela de comando suporta os princípios arquitetônicos previstos. Os princípios por trás das abstrações, estruturas de dados e ferramentas da arquitetura da tabela de comando são os seguintes:
 
-- Há três tipos básicos de itens: menus, comandos e grupos. Menus podem ser expostos na interface do usuário como menus, submenus, barras de ferramentas ou janelas de ferramentas. Comandos são procedimentos que o usuário pode executar no IDE, e eles podem ser expostos como itens de menu, botões, caixas de listagem ou outros controles. Grupos são contêineres para os menus e comandos.
+- Existem três tipos básicos de itens: menus, comandos e grupos. Os menus podem ser expostos na ui como menus, submenus, barras de ferramentas ou janelas de ferramentas. Os comandos são procedimentos que o usuário pode executar no IDE, e eles podem ser expostos como itens de menu, botões, caixas de lista ou outros controles. Os grupos são recipientes para menus e comandos.
 
-- Cada item é especificado por uma definição que descreve o item, sua prioridade em relação a outros itens e os sinalizadores de modificam seu comportamento.
+- Cada item é especificado por uma definição que descreve o item, sua prioridade em relação a outros itens e as bandeiras que modificam seu comportamento.
 
-- Cada item tem um posicionamento que descreve o pai do item. Um item pode ter vários pais, para que ele pode aparecer em vários locais na interface do usuário.
+- Cada item tem uma colocação que descreve o pai do item. Um item pode ter vários pais, para que possa aparecer em vários locais da ui.
 
-     Todos os comandos devem ter um grupo como pai, mesmo se ele for o único filho desse grupo. Cada menu padrão também deve ter um grupo pai. Barras de ferramentas e janelas de ferramenta atuam como suas próprias pais. Um grupo pode ter como seu pai, a barra de menus principal do Visual Studio, ou qualquer menu, barra de ferramentas ou janela de ferramentas.
+     Cada comando deve ter um grupo como seu pai, mesmo que seja o único filho nesse grupo. Todos os menus padrão também devem ter um grupo de pais. Barras de ferramentas e janelas de ferramentas agem como seus próprios pais. Um grupo pode ter como pai a barra principal do menu do Visual Studio, ou qualquer menu, barra de ferramentas ou janela de ferramenta.
 
 ### <a name="how-items-are-defined"></a>Como os itens são definidos
- Um *VSCT* arquivo é formatado em XML. Ele define os elementos de interface do usuário para um pacote e determina em que esses elementos são exibidos no IDE. Cada menu, um grupo ou um comando no pacote é atribuído pela primeira vez um GUID e ID no `Symbols` seção. Durante o restante a *VSCT* arquivo, cada menu, o comando e o grupo é identificado por sua combinação de GUID e ID. O exemplo a seguir mostra um típico `Symbols` seção gerada pelo modelo de pacote do Visual Studio quando um **comando de Menu** está selecionado no modelo.
+ Um arquivo *.vsct* é formatado em XML. Ele define os elementos de UI para um pacote e determina onde esses elementos aparecem no IDE. Cada menu, grupo ou comando no pacote é primeiro atribuído `Symbols` um GUID e ID na seção. Durante todo o resto do arquivo *.vsct,* cada menu, comando e grupo é identificado por sua combinação GUID e ID. O exemplo a `Symbols` seguir mostra uma seção típica gerada pelo modelo de pacote do Visual Studio quando um **comando menu** é selecionado no modelo.
 
 ```xml
 <Symbols>
@@ -60,42 +60,42 @@ Um VSPackage pode adicionar elementos de (UI) de interface do usuário, por exem
 </Symbols>
 ```
 
- O elemento de nível superior a `Symbols` seção é o [elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementos mapeiam nomes de GUIDs que são usados pelo IDE para identificar os pacotes e suas partes do componente.
+ O elemento de nível `Symbols` superior da seção é o [elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol`elementos mapeiam nomes para GUIDs que são usados pelo IDE para identificar pacotes e suas partes componentes.
 
 > [!NOTE]
-> GUIDs são gerados automaticamente pelo modelo de pacote do Visual Studio. Você também pode criar um GUID exclusivo clicando **criar GUID** sobre o **ferramentas** menu.
+> Os GUIDs são gerados automaticamente pelo modelo de pacote do Visual Studio. Você também pode criar um GUID exclusivo clicando em **Criar GUID** no menu **Ferramentas.**
 
- A primeira `GuidSymbol` elemento, `guid<PackageName>Pkg`, é o GUID do pacote em si. Esse é o GUID que é usado pelo Visual Studio para carregar o pacote. Normalmente, ele não tem elementos filho.
+ O `GuidSymbol` primeiro `guid<PackageName>Pkg`elemento, é o GUID do pacote em si. Este é o GUID que é usado pelo Visual Studio para carregar o pacote. Normalmente, não tem elementos infantis.
 
- Por convenção, os menus e comandos são agrupados em um segundo `GuidSymbol` elemento, `guid<PackageName>CmdSet`, e bitmaps estão em um terceiro `GuidSymbol` elemento, `guidImages`. Você não precisa seguir essa convenção, mas cada menu, o grupo, o comando e o bitmap devem ser um filho de um `GuidSymbol` elemento.
+ Por convenção, menus e comandos são `GuidSymbol` agrupados sob um segundo elemento, `guid<PackageName>CmdSet`e bitmaps estão sob um terceiro `GuidSymbol` elemento, `guidImages`. Você não precisa seguir esta convenção, mas cada menu, grupo, comando e `GuidSymbol` bitmap devem ser filhos de um elemento.
 
- Na segunda `GuidSymbol` elemento, que representa o conjunto de comandos do pacote, são várias `IDSymbol` elementos. Cada [elemento IDSymbol](../../extensibility/idsymbol-element.md) mapeia um nome para um valor numérico e pode representar um menu, um grupo ou um comando que faz parte do conjunto de comandos. O `IDSymbol` elementos no terceiro `GuidSymbol` elemento representam bitmaps que podem ser usados como ícones para comandos. Porque os pares de ID do GUID devem ser exclusivos em um aplicativo, não há dois filhos do mesmo `GuidSymbol` elemento pode ter o mesmo valor.
+ No segundo `GuidSymbol` elemento, que representa o conjunto `IDSymbol` de comandos do pacote, estão vários elementos. Cada [elemento do IDSymbol](../../extensibility/idsymbol-element.md) mapeia um nome para um valor numérico e pode representar um menu, grupo ou comando que faz parte do conjunto de comandos. Os `IDSymbol` elementos `GuidSymbol` no terceiro elemento representam bitmaps que podem ser usados como ícones para comandos. Como os pares GUID/ID devem ser únicos em um `GuidSymbol` aplicativo, nenhum filho do mesmo elemento pode ter o mesmo valor.
 
 ### <a name="menus-groups-and-commands"></a>Menus, grupos e comandos
- Quando um menu, o grupo ou o comando tem um GUID e ID, podem ser adicionado ao IDE. Todos os elementos da interface do usuário devem ter o seguinte:
+ Quando um menu, grupo ou comando tem um GUID e ID, ele pode ser adicionado ao IDE. Cada elemento da UI deve ter as seguintes coisas:
 
-- Um `guid` que corresponde ao nome do atributo a `GuidSymbol` elemento que o elemento de interface do usuário é definido em.
+- Um `guid` atributo que corresponde `GuidSymbol` ao nome do elemento em que o elemento ui é definido.
 
-- Uma `id` atributo que corresponde ao nome do associado `IDSymbol` elemento.
+- Um `id` atributo que corresponde `IDSymbol` ao nome do elemento associado.
 
-     Juntos, o `guid` e `id` compõem atributos a *assinatura* do elemento de interface do usuário.
+     Juntos, `guid` os `id` e atributos compõem a *assinatura* do elemento UI.
 
-- Um `priority` que determina o posicionamento do elemento da interface do usuário no seu menu pai ou o grupo de atributo.
+- Um `priority` atributo que determina a colocação do elemento UI em seu menu ou grupo pai.
 
-- Um [elemento pai](../../extensibility/parent-element.md) que tem `guid` e `id` atributos que especificam a assinatura do menu pai ou do grupo.
+- Um [elemento](../../extensibility/parent-element.md) Pai `guid` que tem e `id` atributos que especificam a assinatura do menu ou grupo pai.
 
 #### <a name="menus"></a>Menus
- Cada menu é definida como uma [elemento Menu](../../extensibility/menu-element.md) no `Menus` seção. Menus devem ter `guid`, `id`, e `priority` atributos e um `Parent` elemento e também os seguintes atributos adicionais e filhos:
+ Cada menu é definido como `Menus` um elemento [Menu](../../extensibility/menu-element.md) na seção. Os menus `guid` `id`devem `priority` ter , e `Parent` atributos, e um elemento, e também os seguintes atributos adicionais e crianças:
 
-- Um `type` atributo que especifica se o menu deve aparecer no IDE, como um tipo de menu ou uma barra de ferramentas.
+- Um `type` atributo que especifica se o menu deve aparecer no IDE como uma espécie de menu ou como uma barra de ferramentas.
 
-- Um [elemento Strings](../../extensibility/strings-element.md) que contém uma [elemento ButtonText](../../extensibility/buttontext-element.md), que especifica o título de menu no IDE e uma [elemento CommandName](../../extensibility/commandname-element.md), que especifica o nome que é usado na **comando** janela para acessar o menu.
+- Um [elemento Strings](../../extensibility/strings-element.md) que contém um [elemento ButtonText](../../extensibility/buttontext-element.md), que especifica o título do menu no IDE e um elemento [CommandName,](../../extensibility/commandname-element.md)que especifica o nome usado na janela **Comando** para acessar o menu.
 
-- Sinalizadores opcionais. Um [CommandFlag elemento](../../extensibility/command-flag-element.md) pode aparecer em uma definição de menu para alterar sua aparência ou comportamento no IDE.
+- Bandeiras opcionais. Um [elemento CommandFlag](../../extensibility/command-flag-element.md) pode aparecer em uma definição de menu para alterar sua aparência ou comportamento no IDE.
 
-  Cada `Menu` elemento deve ter um grupo como pai, a menos que ele seja um elemento encaixável como uma barra de ferramentas. Um menu encaixável é seu próprio pai. Para obter mais informações sobre menus e valores para o `type` atributo, consulte a [elemento Menu](../../extensibility/menu-element.md) documentação.
+  Cada `Menu` elemento deve ter um grupo como seu pai, a menos que seja um elemento ancorável, como uma barra de ferramentas. Um menu dockable é seu próprio pai. Para obter mais informações sobre `type` menus e valores para o atributo, consulte a documentação do [elemento Menu.](../../extensibility/menu-element.md)
 
-  O exemplo a seguir mostra um menu que aparece na barra de menus do Visual Studio, ao lado de **ferramentas** menu.
+  O exemplo a seguir mostra um menu que aparece na barra de menus do Visual Studio, ao lado do menu **Ferramentas.**
 
 ```xml
 <Menu guid="guidTopLevelMenuCmdSet"
@@ -110,9 +110,9 @@ id="TopLevelMenu" priority="0x700" type="Menu">
 ```
 
 #### <a name="groups"></a>Grupos
- Um grupo é um item que é definido na `Groups` seção o *. VSCT* arquivo. Os grupos são apenas contêineres. Eles não aparecem no IDE, exceto como uma linha divisória em um menu. Portanto, uma [elemento Group](../../extensibility/group-element.md) é definida somente por sua assinatura, a prioridade e o pai.
+ Um grupo é um item `Groups` definido na seção do arquivo *.vsct.* Grupos são apenas contêineres. Eles não aparecem no IDE, exceto como uma linha divisória em um menu. Portanto, um [elemento de Grupo](../../extensibility/group-element.md) é definido apenas por sua assinatura, prioridade e pai.
 
- Um grupo pode ter um menu, outro grupo ou em si como pai. No entanto, o pai é normalmente um menu ou barra de ferramentas. No menu do exemplo anterior é um filho do `IDG_VS_MM_TOOLSADDINS` grupo e esse grupo é um filho da barra de menus do Visual Studio. O grupo no exemplo a seguir é um filho do menu no exemplo anterior.
+ Um grupo pode ter um menu, outro grupo ou a si mesmo como pai. No entanto, o pai é tipicamente um menu ou barra de ferramentas. O menu no exemplo anterior é `IDG_VS_MM_TOOLSADDINS` uma criança do grupo, e esse grupo é uma criança da barra de menus do Visual Studio. O grupo no exemplo a seguir é um filho do menu no exemplo anterior.
 
 ```xml
  <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"
@@ -121,7 +121,7 @@ priority="0x0600">
  </Group>
 ```
 
- Porque ele faz parte de um menu, este grupo seria normalmente contêm comandos. No entanto, ele também pode conter outros menus. Isso é como submenus são definidas, conforme mostrado no exemplo a seguir.
+ Por fazer parte de um menu, esse grupo normalmente conteria comandos. No entanto, também pode conter outros menus. É assim que os submenus são definidos, como mostrado no exemplo a seguir.
 
 ```xml
 <Menu guid="guidTopLevelMenuCmdSet" id="SubMenu"
@@ -135,12 +135,12 @@ priority="0x0100" type="Menu">
 ```
 
 #### <a name="commands"></a>Comandos
- Um comando que é fornecido para o IDE é definido como um [elemento Button](../../extensibility/button-element.md) ou um [elemento Combo](../../extensibility/combo-element.md). Para aparecer em um menu ou uma barra de ferramentas, o comando deve ter um grupo como pai.
+ Um comando fornecido ao IDE é definido como um [elemento Button](../../extensibility/button-element.md) ou um [elemento Combo](../../extensibility/combo-element.md). Para aparecer em um menu ou em uma barra de ferramentas, o comando deve ter um grupo como pai.
 
 ##### <a name="buttons"></a>Botões
- Botões são definidos na `Buttons` seção. Qualquer item de menu, botão ou outro elemento que um usuário clica para executar um comando único é considerado um botão. Alguns tipos de botão também podem incluir a funcionalidade de lista. Botões têm o mesmo necessárias e os atributos opcionais que têm menus, e também pode ter um [elemento Icon](../../extensibility/icon-element.md) que especifica o GUID e a ID do bitmap que representa o botão no IDE. Para obter mais informações sobre botões e seus atributos, consulte o [elemento Buttons](../../extensibility/buttons-element.md) documentação.
+ Os botões são `Buttons` definidos na seção. Qualquer item de menu, botão ou outro elemento que um usuário clique para executar um único comando é considerado um botão. Alguns tipos de botões também podem incluir a funcionalidade da lista. Os botões têm os mesmos atributos necessários e opcionais que os menus têm, e também podem ter um [elemento Ícone](../../extensibility/icon-element.md) que especifica o GUID e o ID do bitmap que representa o botão no IDE. Para obter mais informações sobre botões e seus atributos, consulte a documentação do [elemento Botões.](../../extensibility/buttons-element.md)
 
- O botão no exemplo a seguir é um filho do grupo no exemplo anterior e apareceria no IDE, como um item de menu no menu pai desse grupo.
+ O botão no exemplo a seguir é um filho do grupo no exemplo anterior, e apareceria no IDE como um item de menu no menu pai desse grupo.
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -154,13 +154,13 @@ priority="0x0100" type="Menu">
 ```
 
 ##### <a name="combos"></a>Combos
- Combos são definidos na `Combos` seção. Cada `Combo` elemento representa uma caixa de lista suspensa no IDE. A caixa de listagem pode ou não ser gravável por usuários, dependendo do valor da `type` atributo da caixa de combinação. Combos têm os mesmos elementos e o comportamento que os botões e também pode ter os seguintes atributos adicionais:
+ Os combos são `Combos` definidos na seção. Cada `Combo` elemento representa uma caixa de lista baixa no IDE. A caixa de lista pode ou não ser escrita pelos `type` usuários, dependendo do valor do atributo do combo. Os combos têm os mesmos elementos e comportamento que os botões têm, e também podem ter os seguintes atributos adicionais:
 
-- Um `defaultWidth` atributo que especifica a largura em pixels.
+- Um `defaultWidth` atributo que especifica a largura de pixel.
 
-- Um `idCommandList` atributo que especifica uma lista que contém os itens que são exibidos na caixa de listagem. A lista de comandos deve ser declarada no mesmo `GuidSymbol` nó que contém a caixa de combinação.
+- Um `idCommandList` atributo que especifica uma lista que contém os itens exibidos na caixa de lista. A lista de comandos deve `GuidSymbol` ser declarada no mesmo nó que contém o combo.
 
-  O exemplo a seguir define um elemento de caixa de combinação.
+  O exemplo a seguir define um elemento combo.
 
 ```xml
 <Combos>
@@ -183,34 +183,34 @@ priority="0x0100" type="Menu">
 ```
 
 ##### <a name="bitmaps"></a>Bitmaps
- Comandos que serão exibidos junto com um ícone devem incluir um `Icon` elemento que se refere a um bitmap usando seu GUID e ID. Cada bitmap é definido como um [elemento Bitmap](../../extensibility/bitmap-element.md) no `Bitmaps` seção. O único necessário atributos para um `Bitmap` definição são `guid` e `href`, que aponta para o arquivo de origem. Se o arquivo de origem for uma faixa de recursos, uma **usedList** atributo também é necessário, para listar as imagens disponíveis na faixa de. Para obter mais informações, consulte o [elemento Bitmap](../../extensibility/bitmap-element.md) documentação.
+ Os comandos que serão exibidos juntamente `Icon` com um ícone devem incluir um elemento que se refere a um bitmap usando seu GUID e ID. Cada bitmap é definido como um `Bitmaps` [elemento Bitmap](../../extensibility/bitmap-element.md) na seção. Os únicos atributos `Bitmap` necessários para uma definição são `guid` e `href`, que aponta para o arquivo de origem. Se o arquivo de origem for uma tira de recurso, um atributo **usedList** também é necessário para listar as imagens disponíveis na tira. Para obter mais informações, consulte a documentação do [elemento Bitmap.](../../extensibility/bitmap-element.md)
 
 ### <a name="parenting"></a>Gerenciamento do domínio pai
  As seguintes regras regem como um item pode chamar outro item como seu pai.
 
-|Elemento|Definidas nesta seção da tabela de comando|Pode estar contido (como um pai ou posicionamento no `CommandPlacements` seção ou ambos)|Pode conter (conhecido como um pai)|
+|Elemento|Definido nesta seção da Tabela de Comando|Pode ser contido (como pai, ou `CommandPlacements` por colocação na seção, ou ambos)|Pode conter (referido como um pai)|
 |-------------| - | - | - |
-|Grupo|[Elemento Groups](../../extensibility/groups-element.md), o IDE, outros VSPackages|Um menu, um grupo, o próprio item|Menus, grupos e comandos|
-|Menu|[Elemento menus](../../extensibility/menus-element.md), o IDE, outros VSPackages|1 para *n* grupos|0 para *n* grupos|
-|Barra de ferramentas|[Elemento menus](../../extensibility/menus-element.md), o IDE, outros VSPackages|O próprio item|0 para *n* grupos|
-|Item de menu|[Elemento Buttons](../../extensibility/buttons-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item|-0 para *n* grupos|
-|Botão|[Elemento Buttons](../../extensibility/buttons-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item||
-|Combo|[Elemento combos](../../extensibility/combos-element.md), o IDE, outros VSPackages|1 para *n* grupos, o próprio item||
+|Agrupar|[Elemento de grupos,](../../extensibility/groups-element.md)o IDE, outros VSPackages|Um menu, um grupo, o próprio item|Menus, grupos e comandos|
+|Menu|[Elemento menus,](../../extensibility/menus-element.md)o IDE, outros VSPackages|1 a *n* grupos|Grupos de 0 a *n*|
+|Barra de ferramentas|[Elemento menus,](../../extensibility/menus-element.md)o IDE, outros VSPackages|O item em si|Grupos de 0 a *n*|
+|Item de menu|[Elemento botões,](../../extensibility/buttons-element.md)o IDE, outros VSPackages|1 a *n* grupos, o item em si|-0 a *n* grupos|
+|Botão|[Elemento botões,](../../extensibility/buttons-element.md)o IDE, outros VSPackages|1 a *n* grupos, o item em si||
+|Combinação|[Elemento combos,](../../extensibility/combos-element.md)o IDE, outros VSPackages|1 a *n* grupos, o item em si||
 
-### <a name="menu-command-and-group-placement"></a>Menu, o comando e o posicionamento do grupo
- Um menu, um grupo ou um comando pode aparecer em mais de um local no IDE. Para um item seja exibido em vários locais, ele deve ser adicionado para o `CommandPlacements` seção como um [elemento CommandPlacement](../../extensibility/commandplacement-element.md). Qualquer menu, um grupo ou um comando pode ser adicionado como um posicionamento do comando. No entanto, as barras de ferramentas não podem ser posicionadas dessa maneira porque eles não podem aparecer em vários locais sensível ao contexto.
+### <a name="menu-command-and-group-placement"></a>Menu, comando e colocação em grupo
+ Um menu, grupo ou comando pode aparecer em mais de um local no IDE. Para que um item seja exibido em vários `CommandPlacements` locais, ele deve ser adicionado à seção como um [elemento CommandPlacement](../../extensibility/commandplacement-element.md). Qualquer menu, grupo ou comando pode ser adicionado como uma colocação de comando. No entanto, as barras de ferramentas não podem ser posicionadas dessa maneira porque não podem aparecer em vários locais sensíveis ao contexto.
 
- Posicionamentos de comandos têm `guid`, `id`, e `priority` atributos. O GUID e a ID devem corresponder do item que está posicionado. O `priority` atributo controla o posicionamento do item em relação a outros itens. Quando o IDE mescla dois ou mais itens que têm a mesma prioridade, seus posicionamentos serão indefinidos, porque o IDE não garante que os recursos de pacote são lidas na mesma ordem toda vez que o pacote é compilado.
+ As colocações `guid` `id`de `priority` comando têm , e atributos. O GUID e o ID devem coincidir com os do item que está posicionado. O `priority` atributo rege a colocação do item em relação a outros itens. Quando o IDE mescla dois ou mais itens com a mesma prioridade, suas colocações são indefinidas porque o IDE não garante que os recursos do pacote sejam lidos na mesma ordem toda vez que o pacote é construído.
 
- Se um menu ou o grupo é exibido em vários locais, todos os filhos desse menu ou o grupo serão exibido em cada instância.
+ Se um menu ou grupo aparecer em vários locais, todas as crianças desse menu ou grupo aparecerão em cada instância.
 
-## <a name="command-visibility-and-context"></a>Contexto e a visibilidade de comando
- Quando vários VSPackages forem instalados, uma profusão de menus, itens de menu e barras de ferramentas pode sobrecarregar o IDE. Para evitar esse problema, você pode controlar a visibilidade de elementos de interface do usuário individuais usando *restrições de visibilidade* e sinalizadores de comando.
+## <a name="command-visibility-and-context"></a>Visibilidade e contexto do comando
+ Quando vários VSPackages são instalados, uma profusão de menus, itens de menu e barras de ferramentas pode bagunçar o IDE. Para evitar esse problema, você pode controlar a visibilidade de elementos de iu física individuais usando *restrições de visibilidade* e bandeiras de comando.
 
 ### <a name="visibility-constraints"></a>Restrições de visibilidade
- Uma restrição de visibilidade está definida como uma [elemento VisibilityItem](../../extensibility/visibilityitem-element.md) no `VisibilityConstraints` seção. Uma restrição de visibilidade define contextos de interface do usuário específicos em que o item de destino está visível. Um menu ou um comando que está incluído nesta seção só é visível quando um dos contextos definidos está ativo. Se um menu ou um comando não é referenciado nesta seção, está sempre visível por padrão. Esta seção não se aplica a grupos.
+ Uma restrição de visibilidade é definida como um `VisibilityConstraints` [elemento VisibilityItem](../../extensibility/visibilityitem-element.md) na seção. Uma restrição de visibilidade define contextos específicos de interface do reino em que o item de destino é visível. Um menu ou comando incluído nesta seção só é visível quando um dos contextos definidos estiver ativo. Se um menu ou comando não for referenciado nesta seção, ele será sempre visível por padrão. Esta seção não se aplica a grupos.
 
- `VisibilityItem` elementos devem ter três atributos, da seguinte maneira: o `guid` e `id` do elemento de interface do usuário de destino, e `context`. O `context` atributo especifica quando o item de destino estarão visível e utiliza qualquer contexto de interface de usuário válido como seu valor. As constantes de contexto da interface do usuário para o Visual Studio são membros do <xref:Microsoft.VisualStudio.VSConstants> classe. Cada `VisibilityItem` elemento pode ter o valor de apenas um contexto. Para aplicar um contexto de segundo, crie um segundo `VisibilityItem` elemento que aponta para o mesmo item, conforme mostrado no exemplo a seguir.
+ `VisibilityItem`os elementos devem ter três atributos, da seguinte forma: o `guid` elemento e `id` do elemento de ida e . `context` O `context` atributo especifica quando o item de destino será visível e toma qualquer contexto de interface do mundo válido como seu valor. As constantes de contexto de Interface <xref:Microsoft.VisualStudio.VSConstants> do Mundo para o Visual Studio são membros da classe. Cada `VisibilityItem` elemento pode ter apenas um valor de contexto. Para aplicar um segundo contexto, crie um segundo `VisibilityItem` elemento que aponte para o mesmo item, como mostrado no exemplo a seguir.
 
 ```xml
 <VisibilityConstraints>
@@ -223,75 +223,75 @@ priority="0x0100" type="Menu">
 </VisibilityConstraints>
 ```
 
-### <a name="command-flags"></a>Sinalizadores de comando
- Os sinalizadores de comando a seguir podem afetar a visibilidade dos menus e comandos que eles se aplicam ao.
+### <a name="command-flags"></a>Bandeiras de comando
+ Os seguintes sinalizadores de comando podem afetar a visibilidade dos menus e comandos a que se aplicam.
 
- `AlwaysCreate` Menu é criado, mesmo se ele não possui grupos ou botões.
+ `AlwaysCreate`O menu é criado mesmo que não tenha grupos ou botões.
 
- Válido para: `Menu`
+ Válido para:`Menu`
 
- `CommandWellOnly` Aplica esse sinalizador se o comando não aparecer no menu de nível superior e você deseja disponibilizar para personalização adicional de shell, por exemplo, associação a uma chave. Depois de instalar o VSPackage, um usuário pode personalizar esses comandos, abrindo o **opções** caixa de diálogo e, em seguida, editando o posicionamento do comando sob o **teclado ambiente** categoria. Não afeta o posicionamento em menus de atalho, barras de ferramentas, os controladores de menu ou submenus.
+ `CommandWellOnly`Aplique este sinalizador se o comando não aparecer no menu de nível superior e você quiser disponibilizá-lo para personalização adicional do shell, por exemplo, vinculando-o a uma chave. Depois que o VSPackage for instalado, o usuário pode personalizar esses comandos abrindo a caixa de diálogo **Opções** e, em seguida, editando a colocação de comandos na categoria **Ambiente do Teclado.** Não afeta a colocação em menus de atalho, barras de ferramentas, controladores de menu ou submenus.
 
- Válido para: `Button`, `Combo`
+ Válido para: `Button`,`Combo`
 
- `DefaultDisabled` Por padrão, o comando está desabilitado se o VSPackage que implementa o comando não está carregado ou o método QueryStatus não foi chamado.
+ `DefaultDisabled`Por padrão, o comando será desativado se o VSPackage que implementa o comando não estiver carregado ou o método QueryStatus não tiver sido chamado.
 
- Válido para: `Button`, `Combo`
+ Válido para: `Button`,`Combo`
 
- `DefaultInvisible` Por padrão, o comando é invisível se o VSPackage que implementa o comando não está carregado ou o método QueryStatus não foi chamado.
+ `DefaultInvisible`Por padrão, o comando é invisível se o VSPackage que implementa o comando não estiver carregado ou o método QueryStatus não tiver sido chamado.
 
- Deve ser combinado com o `DynamicVisibility` sinalizador.
+ Deve ser combinado `DynamicVisibility` com a bandeira.
 
- Válido para: `Button`, `Combo`, `Menu`
+ Válido `Button`para: `Combo`,`Menu`
 
- `DynamicVisibility` A visibilidade do comando pode ser alterada usando o `QueryStatus` método ou um GUID que é incluído no contexto de `VisibilityConstraints` seção.
+ `DynamicVisibility`A visibilidade do comando pode ser `QueryStatus` alterada usando o método ou `VisibilityConstraints` um GUID de contexto incluído na seção.
 
- Aplica-se aos comandos que aparecem nos menus, não em barras de ferramentas. Itens de nível superior da barra de ferramentas podem ser desabilitados, mas não ocultas, quando o `OLECMDF_INVISIBLE` sinalizador é retornado do `QueryStatus` método.
+ Aplica-se a comandos que aparecem nos menus, não nas barras de ferramentas. Os itens da barra de ferramentas de nível superior `OLECMDF_INVISIBLE` podem ser desativados, mas não ocultos, quando o sinalizador é devolvido do `QueryStatus` método.
 
- Em um menu, esse sinalizador indica também que ele deve ser automaticamente ocultado quando seus membros estão ocultos. Esse sinalizador normalmente é atribuído à submenus como menus de nível superior já têm esse comportamento.
+ Em um menu, este sinalizador também indica que ele deve ser automaticamente escondido quando seus membros estão escondidos. Esse sinalizador é normalmente atribuído a submenus porque menus de nível superior já têm esse comportamento.
 
- Deve ser combinado com o `DefaultInvisible` sinalizador.
+ Deve ser combinado `DefaultInvisible` com a bandeira.
 
- Válido para: `Button`, `Combo`, `Menu`
+ Válido `Button`para: `Combo`,`Menu`
 
- `NoShowOnMenuController` Se um comando que tem esse sinalizador estiver posicionado em um controlador de menu, o comando não aparecer na lista suspensa.
+ `NoShowOnMenuController`Se um comando que tem essa bandeira estiver posicionado em um controlador de menu, o comando não aparecerá na lista suspensa.
 
- Válido para: `Button`
+ Válido para:`Button`
 
- Para obter mais informações sobre os sinalizadores de comando, consulte o [CommandFlag elemento](../../extensibility/command-flag-element.md) documentação.
+ Para obter mais informações sobre sinalizadores de comando, consulte a documentação do [elemento CommandFlag.](../../extensibility/command-flag-element.md)
 
 #### <a name="general-requirements"></a>Requisitos gerais
- O comando deve passar a seguinte série de testes antes de ser exibido e habilitado:
+ Seu comando deve passar pela seguinte série de testes antes de ser exibido e ativado:
 
-- O comando é posicionado corretamente.
+- O comando está posicionado corretamente.
 
-- O `DefaultInvisible` sinalizador não estiver definido.
+- A `DefaultInvisible` bandeira não está definida.
 
-- Barra de ferramentas ou menu pai está visível.
+- O menu pai ou a barra de ferramentas são visíveis.
 
-- O comando não é invisível devido a uma entrada de contexto na [Element visibilityconstraints](../../extensibility/visibilityconstraints-element.md) seção.
+- O comando não é invisível por causa de uma entrada de contexto na seção elemento [VisibilityConstraints.](../../extensibility/visibilityconstraints-element.md)
 
-- Código de VSPackage que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface Exibe e permite que seu comando. Nenhum código de interface interceptamos e foi agiu sobre ele.
+- VSPacote código que <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementa as exibições de interface e habilita seu comando. Nenhum código de interface interceptou e agiu nele.
 
-- Quando um usuário clica em seu comando, ele fique sujeita ao procedimento descrito em [algoritmo de roteamento](../../extensibility/internals/command-routing-algorithm.md).
+- Quando um usuário clica no seu comando, ele fica sujeito ao procedimento que é descrito no [algoritmo de roteamento](../../extensibility/internals/command-routing-algorithm.md).
 
-## <a name="call-pre-defined-commands"></a>Chamar comandos predefinidos
- O [elemento UsedCommands](../../extensibility/usedcommands-element.md) permite que os VSPackages para acessar os comandos que são fornecidos por outros VSPackages ou pelo IDE. Para fazer isso, crie uma [elemento UsedCommand](../../extensibility/usedcommand-element.md) que tem o GUID e a ID do comando para usar. Isso garante que o comando será carregado pelo Visual Studio, mesmo se ele não é parte da configuração atual do Visual Studio. Para obter mais informações, consulte [elemento UsedCommand](../../extensibility/usedcommand-element.md).
+## <a name="call-pre-defined-commands"></a>Chamada comandos pré-definidos
+ O [elemento UsedCommands](../../extensibility/usedcommands-element.md) permite que os VSPackages acessem comandos fornecidos por outros VSPackages ou pelo IDE. Para fazer isso, crie um [elemento UsedCommand](../../extensibility/usedcommand-element.md) que tenha o GUID e o ID do comando para usar. Isso garante que o comando será carregado pelo Visual Studio, mesmo que não faça parte da configuração atual do Visual Studio. Para obter mais informações, consulte [UsedCommand .](../../extensibility/usedcommand-element.md)
 
 ## <a name="interface-element-appearance"></a>Aparência do elemento de interface
- Considerações para selecionar e posicionar os elementos de comando são da seguinte maneira:
+ Considerações para selecionar e posicionar elementos de comando são as seguintes:
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferece muitos elementos de interface do usuário que aparecem de forma diferente dependendo do posicionamento.
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]oferece muitos elementos de IU que aparecem de forma diferente dependendo da colocação.
 
-- Um elemento de interface do usuário que é definido usando o `DefaultInvisible` sinalizador não será exibido no IDE, a menos que ele seja exibido por sua implementação de VSPackage do <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, ou associado a um determinado contexto de interface do usuário no `VisibilityConstraints` seção.
+- Um elemento de Interface do `DefaultInvisible` Usuário definido usando o sinalizador não será exibido no IDE a <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> menos que seja exibido pela implementação `VisibilityConstraints` do método VSPackage ou associado a um contexto de interface do usuário específico na seção.
 
-- Não pode ser exibido até mesmo um comando posicionado com êxito. Isso é porque o IDE automaticamente oculta ou exibe alguns comandos, dependendo das interfaces que o VSPackage (ou não) implementado. Por exemplo, a implementação de um VSPackage de alguns criar interfaces de itens de menu relacionados à compilação de faz com que a ser mostrado automaticamente.
+- Mesmo um comando posicionado com sucesso pode não ser exibido. Isso porque o IDE oculta ou exibe automaticamente alguns comandos, dependendo das interfaces que o VSPackage implementou (ou não) implementou. Por exemplo, a implementação de algumas interfaces de compilação do VSPackage faz com que itens de menu relacionados à compilação sejam mostrados automaticamente.
 
-- Aplicando o `CommandWellOnly` sinalizador na definição de elemento de interface do usuário significa que o comando possa ser adicionado somente por personalização.
+- Aplicar o `CommandWellOnly` sinalizador na definição de elemento ui significa que o comando só pode ser adicionado por personalização.
 
-- Comandos podem estar disponíveis apenas em determinados contextos de interface do usuário, por exemplo, somente quando uma caixa de diálogo é exibida quando o IDE está no modo de exibição de design.
+- Os comandos podem estar disponíveis apenas em certos contextos de interface do e-mail, por exemplo, somente quando uma caixa de diálogo é exibida quando o IDE está em exibição de design.
 
-- Para fazer com que determinados elementos de interface do usuário a ser exibido no IDE, você deve implementar uma ou mais interfaces ou escrever um código.
+- Para que certos elementos de interface do usuário sejam exibidos no IDE, você deve implementar uma ou mais interfaces ou escrever algum código.
 
-## <a name="see-also"></a>Consulte também
-- [Ampliar menus e comandos](../../extensibility/extending-menus-and-commands.md)
+## <a name="see-also"></a>Confira também
+- [Estender menus e comandos](../../extensibility/extending-menus-and-commands.md)

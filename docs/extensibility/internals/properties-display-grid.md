@@ -1,60 +1,60 @@
 ---
-title: Grade de propriedades de exibição | Microsoft Docs
+title: Grade de exibição de propriedades | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f22323f9201a40090a1aec0aeb1b8698c08b0e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311007"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706184"
 ---
 # <a name="properties-display-grid"></a>Grade de exibição de propriedades
 
-O **propriedades** janela exibe os campos dentro de uma grade. A coluna esquerda contém os nomes de propriedade; a coluna à direita contém os valores de propriedade.
+A janela **Propriedades** exibe campos dentro de uma grade. A coluna à esquerda contém os nomes da propriedade; a coluna direita contém os valores de propriedade.
 
-## <a name="work-with-the-grid"></a>Trabalhar com a grade
+## <a name="work-with-the-grid"></a>Trabalhe com a grade
 
-A lista de duas colunas mostra as propriedades de configuração independente que podem ser alteradas em tempo de design e suas configurações atuais. Observe que todas as propriedades não podem ser mostradas. Uma propriedade pode ser definida como oculta, por exemplo, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> método. Especificamente, para ocultar propriedades que têm propriedades filho:
+A lista de duas colunas mostra propriedades independentes de configuração que podem ser alteradas na hora do design e suas configurações atuais. Observe que todas as propriedades podem não ser mostradas. Uma propriedade pode ser definida como oculta, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> por exemplo, implementando o método. Especificamente, para ocultar propriedades que tenham propriedades de crianças:
 
-1. Defina as `pfDisplay` parâmetro no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> para `FALSE`.
+1. Defina `pfDisplay` o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> parâmetro `FALSE`em .
 
-2. Defina as `pfHide` parâmetro no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> para `TRUE`.
+2. Defina `pfHide` o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> parâmetro `TRUE`em .
 
-Informações de envio por push para o **propriedades** janela, o IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é chamado pelo VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a serem exibidos na **propriedades** janela. **Gerenciador de soluções**da implementação de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chamadas `GetProperty` usando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) em sua hierarquia do projeto para adquirir os objetos navegáveis na hierarquia.
+Para empurrar as informações para a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>janela **Propriedades,** o IDE usa . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>é chamado por VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a serem exibidas na janela **Propriedades.** **A**implementação de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` chamadas do Solution Explorer usando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) na hierarquia do projeto para adquirir os objetos navegáveis na hierarquia.
 
-Se o VSPackage não oferece suporte a [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), o IDE tenta usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> usando o valor para [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) que forneçam o item de hierarquia ou itens.
+Se o seu VSPackage não suportar [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), o IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> tenta usar o valor para [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) que o item de hierarquia ou itens forneçam.
 
-Seu projeto de VSPackage não precisa criar <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> porque o pacote de janela fornecida pelo IDE que o implementa (por exemplo, **Gerenciador de soluções**) constrói <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> em seu nome.
+O projeto VSPackage não <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> precisa ser criado porque o pacote de janela fornecido pelo IDE que o implementa (por exemplo, **O Solution Explorer)** constrói <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> em seu nome.
 
-<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> consiste em três métodos que são chamados pelo IDE:
+<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>consiste em três métodos que são chamados pelo IDE:
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> contém o número de objetos selecionados a serem exibidos na **propriedades** janela.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A>contém o número de objetos selecionados para serem exibidos na janela **Propriedades.**
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Retorna o `IDispatch` objetos que estão selecionados a serem exibidos na **propriedades** janela.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A>retorna `IDispatch` os objetos selecionados para serem exibidos na janela **Propriedades.**
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> permite que qualquer um dos objetos retornados por <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> a ser selecionado pelo usuário. Isso permite que o VSPackage visualmente atualizar a seleção exibida para o usuário na interface do usuário.
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>permite que qualquer um dos objetos devolvidos seja <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> selecionado pelo usuário. Isso permite que o VSPackage atualize visualmente a seleção exibida para o usuário na ui.
 
-O **propriedades** janela extrai informações do `IDispatch` objetos para recuperar as propriedades que está sendo procuradas. O navegador de propriedades usa `IDispatch` peça o objeto quais propriedades ele dá suporte a consultando `ITypeInfo`, que é obtida da `IDispatch::GetTypeInfo`. O navegador usa esses valores para preencher a **propriedades** janela e alterar os valores para propriedades individuais são exibidos na grade. As informações de propriedades são mantidas dentro do próprio objeto.
+A janela **Propriedades** extrai `IDispatch` informações dos objetos para recuperar as propriedades que estão sendo navegadas. O navegador `IDispatch` Propriedades usa para perguntar ao objeto quais `ITypeInfo`propriedades ele suporta `IDispatch::GetTypeInfo`consultando , que é obtido a partir de . Em seguida, o navegador usa esses valores para preencher a janela **Propriedades** e alterar os valores para propriedades individuais exibidas na grade. As informações das propriedades são mantidas dentro do próprio objeto.
 
-Porque dá suporte a objetos retornados `IDispatch`, o chamador pode obter informações como o nome do objeto com uma chamada a `IDispatch::Invoke` ou `ITypeInfo::Invoke` com um identificador de expedição predefinidos (DISPID) que representa as informações desejadas. Os DISPIDs declarados são negativos para garantir que eles não entrem em conflito com os identificadores definidos pelo usuário.
+Como os objetos `IDispatch`retornados suportam, o chamador pode obter `IDispatch::Invoke` `ITypeInfo::Invoke` informações como o nome do objeto ligando para um ou com um identificador de despacho predefinido (DISPID) que representa as informações desejadas. Os DISPIDs declarados são negativos para garantir que eles não entrem em conflito com os identificadores definidos pelo usuário.
 
-O **propriedades** janela exibe diferentes tipos de campos, dependendo dos atributos de propriedades específicas de um objeto selecionado. Esses campos incluem caixas de edição, listas suspensas e links para caixas de diálogo do editor personalizado.
+A janela **Propriedades** exibe diferentes tipos de campos, dependendo dos atributos de propriedades específicas de um objeto selecionado. Esses campos incluem caixas de edição, listas de paradas e links para caixas de diálogo de editor personalizados.
 
-- Contido em uma lista enumerada de valores são recuperados por um <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> consultar para `IDispatch`. Os valores obtidos de uma lista enumerada podem ser alterados na grade de propriedades clicando duas vezes no nome do campo, ou clicando no valor e selecionando o novo valor na lista suspensa. Para propriedades que têm configurações de listas enumeradas predefinidas, duas vezes no nome da propriedade na lista de propriedades percorre as opções disponíveis. Para propriedades predefinidas com apenas duas opções, como verdadeiro/falso, clique duas vezes o nome da propriedade para alternar entre as opções.
+- Os valores contidos em uma lista <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> enumerada são recuperados por uma consulta para `IDispatch`. Os valores obtidos a partir de uma lista enumerada podem ser alterados na grade de propriedades clicando duas vezes no nome do campo ou clicando no valor e selecionando o novo valor da lista suspensa. Para propriedades que tenham configurações predefinidas a partir de listas enumeradas, clique duas vezes no nome da propriedade nos ciclos de lista Propriedades através das opções disponíveis. Para propriedades predefinidas com apenas duas opções, como true/false, clique duas vezes no nome da propriedade para alternar entre as escolhas.
 
-- Se <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> é `false`, indicando que o valor foi alterado, o valor é exibido em negrito. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> é usado para determinar se o valor pode ser redefinido para o valor original. Se assim, você pode alterar para o padrão clicando duas vezes o valor e escolhendo **redefinir** no menu exibido. Caso contrário, você precisará alterar o valor para o padrão manualmente. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> também permite que você localizar e ocultar os nomes das propriedades exibidas durante o tempo de design, mas não afeta os nomes de propriedade exibidos durante o tempo de execução.
+- Se <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> `false`for, indicando que o valor foi alterado, o valor é exibido em texto em negrito. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A>é usado para determinar se o valor pode ser redefinido para o valor original. Se assim for, você pode alterar de volta para o padrão clicando com o botão direito do mouse no valor e escolhendo **Redefinir** no menu exibido. Caso contrário, você tem que alterar o valor de volta para o padrão manualmente. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>também permite localizar e ocultar os nomes das propriedades exibidas durante o tempo de projeto, mas não afeta os nomes de propriedade exibidos durante o tempo de execução.
 
-- Clicar no botão de reticências (...) exibe uma lista de valores de propriedade na qual o usuário pode selecionar (por exemplo, um seletor de cor ou uma lista de fontes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> fornece esses valores.
+- Clicando no botão ellipsis (...) exibe uma lista de valores de propriedade a partir dos quais o usuário pode selecionar (como um seletor de cores ou uma lista de fontes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>fornece esses valores.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Estender propriedades](../../extensibility/internals/extending-properties.md)

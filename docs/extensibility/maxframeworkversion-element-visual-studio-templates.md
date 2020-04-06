@@ -1,5 +1,5 @@
 ---
-title: Elemento MaxFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
+title: MaxFrameworkVersion Element (modelos de estúdio visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a00e174e3454dcb054c13252ef699a7cbc87df8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702629"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelos do Visual Studio)
 
-Especifica a versão máxima do .NET Framework que é necessário para o modelo. Determina o valor mais alto disponível na **versão do Framework de destino** dropdown do **novo projeto** caixa de diálogo. Em ordem para que os usuários possam selecionar uma versão do framework, você também deve especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como a versão mínima do .NET Framework para o modelo.
+Especifica a versão máxima do .NET Framework que é exigido pelo modelo. Ele determina o valor mais alto disponível na versão **de destino da** versão de destino da caixa de diálogo Novo **Projeto.** Para que os usuários possam selecionar uma versão de framework, você também deve especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como a versão mínima .NET Framework para o modelo.
 
 > [!IMPORTANT]
-> A partir do Visual Studio 2017 versão 15.6, o **versão do Framework de destino** lista suspensa não é mais um filtro para os modelos exibidos na **modelos** seção o **novo projeto** caixa de diálogo. Em vez disso, o **versão do Framework de destino** suspensa funciona como um seletor de estrutura para o modelo selecionado.
+> A partir da versão 15.6 do Visual Studio 2017, a versão **target framework versão** não é mais um filtro para modelos exibidos na seção **Modelos** da caixa de diálogo **Novo Projeto.** Em vez disso, a versão **de destino é** a função como um seletor de estruturas para o modelo selecionado.
 
- \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
+ \<VSTemplate \<> TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,29 +38,29 @@ Especifica a versão máxima do .NET Framework que é necessário para o modelo.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e a define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve ser o maior número de versão do .NET Framework que é permitido pelo modelo.
+ O texto deve ser o número de versão mais alto do .NET Framework que é permitido pelo modelo.
 
 ## <a name="remarks"></a>Comentários
 
-`MaxFrameworkVersion` é um elemento opcional. O `MaxFrameworkVersion` elemento deve ser omitido, a menos que é necessário, assim como não inadvertidamente limitar as versões de intervalo com suporte do .NET Framework para o modelo. Ele também deverá ser omitido se o .NET Framework não é aplicável ao modelo.
+`MaxFrameworkVersion` é um elemento opcional. O `MaxFrameworkVersion` elemento deve ser omitido a menos que seja necessário, de modo a não limitar inadvertidamente o intervalo suportado de versões .NET Framework para o modelo. Também deve ser omitido se o .NET Framework não for aplicável ao modelo.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir ilustra os metadados para um padrão [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo de classe.
+O exemplo a seguir ilustra os [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadados de um modelo de classe padrão.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,9 +80,9 @@ O exemplo a seguir ilustra os metadados para um padrão [!INCLUDE[csprcs](../dat
 </VSTemplate>
 ```
 
-Neste exemplo, a versão máxima do .NET Framework que é exigido pelo modelo, representado por `MaxFrameworkVersion`, é de 4.7.1. Um projeto criado com esse modelo pode direcionar versões do .NET Framework até 4.7.1.
+Neste exemplo, a versão máxima do .NET Framework que é `MaxFrameworkVersion`exigido pelo modelo, representado por , é 4.7.1. Um projeto criado com este modelo pode segmentar versões do .NET Framework até 4.7.1.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

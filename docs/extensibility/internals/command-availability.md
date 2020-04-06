@@ -6,54 +6,54 @@ helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709694"
 ---
-# <a name="command-availability"></a>Disponibilidade do comando
+# <a name="command-availability"></a>Disponibilidade de comando
 
-O contexto do Visual Studio determina quais comandos estão disponíveis. O contexto pode mudar dependendo do projeto atual, o editor atual, os VSPackages que são carregados e outros aspectos do ambiente de desenvolvimento integrado (IDE).
+O contexto do Visual Studio determina quais comandos estão disponíveis. O contexto pode mudar dependendo do projeto atual, do editor atual, dos VSPackages carregados e de outros aspectos do ambiente de desenvolvimento integrado (IDE).
 
 ## <a name="command-contexts"></a>Contextos de comando
 
-Os contextos de comando a seguir são as mais comuns:
+Os seguintes contextos de comando são os mais comuns:
 
-- IDE: Comandos fornecidos pelo IDE estão sempre disponíveis.
+- IDE: Os comandos fornecidos pelo IDE estão sempre disponíveis.
 
-- {1&gt;VSPackage&lt;1}. Os VSPackages pode definir quando comandos devem ser exibidas ou ocultas.
+- VSPackage: VSPacotes podem definir quando os comandos devem ser exibidos ou ocultos.
 
-- Projeto: Comandos de projeto aparecem somente para o projeto selecionado atualmente.
+- Projeto: Os comandos do projeto aparecem apenas para o projeto selecionado no momento.
 
-- Editor: Apenas um editor pode estar ativo por vez. Comandos do editor ativo estão disponíveis. Um editor trabalha junto com um serviço de linguagem. O serviço de linguagem deve processar seus comandos no contexto do editor associado.
+- Editor: Apenas um editor pode estar ativo por vez. Os comandos do editor ativo estão disponíveis. Um editor trabalha em estreita colaboração com um serviço de idiomas. O serviço de idiomas deve processar seus comandos no contexto do editor associado.
 
-- Tipo de arquivo: Um editor pode carregar mais de um tipo de arquivo. Os comandos disponíveis podem mudar dependendo do tipo de arquivo.
+- Tipo de arquivo: Um editor pode carregar mais de um tipo de arquivo. Os comandos disponíveis podem ser trocados dependendo do tipo de arquivo.
 
-- Janela ativa: A última janela do documento ativo define o contexto de (UI) de interface do usuário para associações de teclas. No entanto, uma janela de ferramenta que tem uma tabela de associação de chave que se parece com o navegador da web interno também pode definir o contexto de interface do usuário. Para janelas de documento com várias guias, como o editor de HTML, cada guia tem um GUID de contexto do comando diferente. Depois que uma janela de ferramentas é registrada, ele está sempre disponível na **exibição** menu.
+- Janela ativa: A última janela de documento ativo define o contexto da interface do usuário (UI) para vinculações de chaves. No entanto, uma janela de ferramenta que tenha uma tabela de vinculação de tecla que se assemelha ao navegador interno da Web também poderia definir o contexto de Interface do Usuário. Para janelas de documentos com várias guias, como o editor HTML, cada guia tem um guid de contexto de comando diferente. Depois que uma janela de ferramenta é registrada, ela está sempre disponível no menu **Exibir.**
 
-- Contexto de interface do usuário: Contextos de interface do usuário são identificados pelos valores da <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> classe, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> quando a solução está sendo criada, ou <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> quando o depurador está ativo. Vários contextos de interface do usuário podem estar ativos ao mesmo tempo.
+- Contexto de Interface do Usuário: Os contextos <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> de Interface <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> do Usuário são identificados <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> pelos valores da classe, por exemplo, quando a solução está sendo construída ou quando o depurador está ativo. Vários contextos de interface do reino do reino eletrônico podem estar ativos ao mesmo tempo.
 
-## <a name="define-custom-context-guids"></a>Definir contexto personalizado GUIDs
+## <a name="define-custom-context-guids"></a>Defina GUIDs de contexto personalizado
 
-Se um contexto de comando apropriado que GUID já não está definido, poderá definir um em seu VSPackage e, em seguida, programá-lo para ser ativos ou inativos conforme necessário para controlar a visibilidade de seus comandos:
+Se um GUID de contexto de comando apropriado ainda não estiver definido, você pode definir um em seu VSPackage e, em seguida, programá-lo para ser ativo ou inativo, conforme necessário para controlar a visibilidade de seus comandos:
 
-1. Registre os GUIDs de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método.
+1. Registre GUIDs de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> contexto chamando o método.
 
-2. Obter o estado de um GUID de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método.
+2. Obtenha o estado de um <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> GUID de contexto chamando o método.
 
-3. Ativar e desativar os GUIDs de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método.
+3. Ligue e desligue os GUIDs <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> de contexto chamando o método.
 
 > [!CAUTION]
-> Certifique-se de que o VSPackage não afeta nenhum contexto existente GUIDs porque pode depender de outros VSPackages neles.
+> Certifique-se de que o vsPackage não afete nenhum GUIDs de contexto existente porque outros VSPackages podem depender deles.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md)
-- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Como o VSPackages adiciona elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

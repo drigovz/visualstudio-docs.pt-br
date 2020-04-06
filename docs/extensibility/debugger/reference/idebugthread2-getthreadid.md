@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66ad2151f6455d758d57c51a387184a9fcce8ec7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320174"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718709"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Obtém o identificador de thread do sistema.
+Obtém o identificador de rosca do sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ int GetThreadId (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pdwThreadId`\
-[out] Retorna o identificador de thread do sistema.
+[fora] Retorna o identificador de rosca do sistema.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Uma ID de thread é usada para identificar um thread entre todos os outros threads em um processo.
+Um ID de rosca é usado para identificar um segmento entre todos os outros segmentos em um processo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um simples `CProgram` objeto que implementa o [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interface.
+O exemplo a seguir mostra como `CProgram` implementar esse método para um objeto simples que implementa a interface [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
@@ -59,5 +59,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

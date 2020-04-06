@@ -1,30 +1,30 @@
 ---
-title: Adicionar diretórios à caixa de diálogo Novo projeto | Microsoft Docs
+title: Adicionando diretórios à caixa de diálogo do novo projeto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e81d09c2a4e97ca5f3da112e593b04b219e6314
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327998"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710241"
 ---
-# <a name="add-directories-to-the-new-project-dialog-box"></a>Adicionar diretórios à caixa de diálogo Novo projeto
-Quando você cria novos tipos de projeto, você também pode registrar um novo diretório na **novo projeto** caixa de diálogo para exibi-los para uso como modelos. O exemplo de código a seguir explica como registrar um novo diretório, também conhecido como um nó. No exemplo, modelos expostos pelo VSPackage *CLSID_Package*, são registrados. Como resultado, o lado esquerdo do **novo projeto** caixa de diálogo oferece o nó adicionado, com um nome determinado pelo *Folder_Label_ResID* recursos. Esse recurso é carregado do DLL de satélite do VSPackage.
+# <a name="add-directories-to-the-new-project-dialog-box"></a>Adicionar diretórios à caixa de diálogo Do Novo Projeto
+Ao criar novos tipos de projeto, você também pode registrar um novo diretório na caixa de diálogo **Projeto Novo** para exibi-los para uso como modelos. O exemplo de código a seguir explica como registrar um novo diretório, também conhecido como nó. No exemplo, modelos expostos pelo VSPackage, *CLSID_Package*, são registrados. Como resultado, o lado esquerdo da caixa de diálogo **Novo Projeto** oferece o nó adicionado, com um nome determinado pelo recurso *Folder_Label_ResID.* Este recurso é carregado a partir do satélite VSPackage DLL.
 
- O **pasta** valor representa um GUID de uma pasta sob a qual o *Folder_Label_ResID* nó é exibido. No exemplo, o GUID que representa o **outros projetos** pasta na **tipos de projeto** painel da **novo projeto** caixa de diálogo. Se o **outros projetos** valor estiver ausente, o rótulo é posicionado no nível superior.
+ O valor **da pasta** representa um GUID de uma pasta sob a qual o *nó Folder_Label_ResID* é exibido. No exemplo, o GUID representa a pasta **Outros Projetos** no painel **Tipos** de projeto da caixa de diálogo **Novo Projeto.** Se o valor **de Outros Projetos** estiver ausente, o rótulo será posicionado no nível superior.
 
- O `TemplatesDir` valor Especifica o caminho completo do diretório que contém os modelos de projeto. Esses arquivos podem ser *. vsz* arquivos ou arquivos de modelo típico a ser clonado.
+ O `TemplatesDir` valor especifica o caminho completo do diretório que contém os modelos do projeto. Esses arquivos podem ser arquivos *.vsz* ou arquivos de modelo típicos a serem clonados.
 
- Se você especificar `TemplatesLocalizedSubDir`, ele deve ser a ID do recurso de uma cadeia de caracteres que nomeia o subdiretório do `TemplatesDir` que contém modelos localizados. Porque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega o recurso de cadeia de caracteres de uma DLL satélite se você tiver um, cada DLL satélite pode conter um nome de subdiretório diferentes. O `SortPriority` valor Especifica uma prioridade de classificação.
+ Se você `TemplatesLocalizedSubDir`especificar, deve ser o ID de recurso `TemplatesDir` de uma string que nomeia o subdiretório do que contém modelos localizados. Como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega o recurso de string de um DLL de satélite se você tiver um, cada DLL de satélite pode conter um nome de subdiretório diferente. O `SortPriority` valor especifica uma prioridade de classificação.
 
 ```
 NoRemove NewProjectTemplates
@@ -45,7 +45,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Registrar os modelos de projeto e de item](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Adicionar itens à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Adicionar diretórios à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+## <a name="see-also"></a>Confira também
+- [Registre modelos de projetos e itens](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Adicionar itens à caixa de diálogo Adicionar novo item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Adicionar diretórios à caixa de diálogo Adicionar novo item](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

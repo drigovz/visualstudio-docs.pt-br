@@ -1,5 +1,5 @@
 ---
-title: Elemento PreviewImage (modelos do Visual Studio) | Microsoft Docs
+title: PreviewImage Element (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed3e6f438f399547996245531c2848ac7bdb83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702014"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelos do Visual Studio)
-Especifica a imagem de visualização, como um nome de arquivo para a imagem de visualização que aparecerá em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.
+Especifica a imagem de visualização, como nome de arquivo, para a imagem de visualização que aparecerá na caixa de diálogo **Novo Projeto** ou Adicionar **novo item.**
 
- \<VSTemplate> \<TemplateData> \<PreviewImage>
+ \<VSTemplate> \<TemplateData> \<Visualização de imagem>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,25 +34,25 @@ Especifica a imagem de visualização, como um nome de arquivo para a imagem de 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e a define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve ser uma cadeia de caracteres que representa um nome de arquivo.
+ O texto deve ser uma seqüência que representa um nome de arquivo.
 
 ## <a name="remarks"></a>Comentários
  `PreviewImage` é um elemento opcional.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

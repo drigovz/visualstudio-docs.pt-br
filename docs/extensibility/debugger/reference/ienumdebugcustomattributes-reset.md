@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Reset | Microsoft Docs
+title: IEnumDebugCustomAttributea::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Reset
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 154bdf66c989b9cb2bb82b39a65f0d29b54acf0a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 061d67e628974b001f74d81675d8dcba45968678
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717209"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 Redefine a sequência de enumeração para o início.
@@ -35,12 +35,12 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Depois que esse método é chamado, a próxima chamada para o [próxima](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) método retorna o primeiro elemento da enumeração.
+ Depois que este método é chamado, a próxima chamada para o método [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) retorna o primeiro elemento da enumeração.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [Avançar](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

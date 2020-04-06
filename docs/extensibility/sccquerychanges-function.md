@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720860"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700492"
 ---
 # <a name="sccquerychanges-function"></a>Função SccQueryChanges
-Essa função enumera uma determinada lista de arquivos, fornecendo informações sobre alterações de nome para cada arquivo por meio de uma função de retorno de chamada.
+Esta função enumera uma determinada lista de arquivos, fornecendo informações sobre alterações de nome para cada arquivo através de uma função de retorno de chamada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,41 +34,41 @@ SCCRTN SccQueryChanges(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  pContext
 
-no O ponteiro de contexto do plug-in de controle do código-fonte.
+[em] O ponteiro de contexto plug-in de controle de origem.
 
- nFiles
+ nArquivos
 
-no Número de arquivos na matriz de `lpFileNames`.
+[em] Número de `lpFileNames` arquivos na matriz.
 
  lpFileNames
 
-no Matriz de nomes de arquivo para obter informações.
+[em] Matriz de nomes de arquivos para obter informações sobre.
 
- pfnCallback
+ Pfncallback
 
-no Função de retorno de chamada para chamar cada nome de arquivo na lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obter detalhes).
+[em] Função de retorno de chamada para chamar cada nome de arquivo da lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obter detalhes).
 
  pvCallerData
 
-no Valor que será passado inalterado para a função de retorno de chamada.
+[em] Valor que será passado inalterado para a função de retorno de chamada.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|O processo de consulta foi concluído com êxito.|
-|SCC_E_PROJNOTOPEN|O projeto não foi aberto no controle do código-fonte.|
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|
+|SCC_OK|O processo de consulta foi concluído com sucesso.|
+|SCC_E_PROJNOTOPEN|O projeto não foi aberto no controle de fontes.|
+|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção.|
 |SCC_E_NONSPECIFICERROR|Ocorreu um erro não especificado ou geral.|
 
 ## <a name="remarks"></a>Comentários
- As alterações que estão sendo consultadas são para o namespace: especificamente, renomear, adicionar e remover um arquivo.
+ As alterações que estão sendo consultadas são para o namespace: especificamente, renomeando, adicionando e removendo um arquivo.
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [Códigos de erro](../extensibility/error-codes.md)

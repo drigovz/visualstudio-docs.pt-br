@@ -1,27 +1,27 @@
 ---
-title: Elemento Description (modelos do Visual Studio) | Microsoft Docs
+title: Elemento de Descrição (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348114"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712255"
 ---
-# <a name="description-element-visual-studio-templates"></a>Elemento Description (modelos do Visual Studio)
-Especifica a descrição do modelo como ele aparece em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.
+# <a name="description-element-visual-studio-templates"></a>Elemento de descrição (modelos do Visual Studio)
+Especifica a descrição do modelo como ele aparece na caixa de diálogo **Novo Projeto** ou Adicionar **Novo Item.**
 
- \<VSTemplate > \<TemplateData > \<descrição >
+ \<VSTemplate \<> TemplateData> \<Descrição>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,28 +42,28 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> ID de um GUID que especifica o pacote do Visual Studio.|
-|`ID`|Atributo opcional para cenários de usuário avançado.<br /><br /> Especifica a ID de recurso do Visual Studio.|
+|`Package`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|
+|`ID`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
- É necessário um valor de texto, a menos que o `Package` e `ID` atributos são usados.
+ É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.
 
  O texto fornece uma descrição do modelo.
 
 ## <a name="remarks"></a>Comentários
- O `Description` é um elemento filho obrigatório do elemento `TemplateData`.
+ `Description`é um elemento filho `TemplateData` necessário do elemento.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -89,6 +89,6 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

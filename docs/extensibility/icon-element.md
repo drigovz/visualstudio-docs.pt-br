@@ -1,25 +1,25 @@
 ---
-title: Elemento Icon | Microsoft Docs
+title: Elemento ícone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd56391084788729c0f8439728f9afffd59da946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710513"
 ---
-# <a name="icon-element"></a>Elemento Icon
-O atributo guid da marca do ícone é o guid de um bitmap definido. O `id` atributo seleciona o slot na faixa de bitmap. Esse elemento é opcional. Se esse elemento não estiver incluído o valor de **guidOfficeIcon:msotcidNoIcon** será assumida.
+# <a name="icon-element"></a>Elemento ícone
+O atributo guia da tag Ícone é o guia de um bitmap definido. O `id` atributo seleciona o slot na tira bitmap. Esse elemento é opcional. Se esse elemento não estiver incluído, o valor do **guidOfficeIcon:msotcidNoIcon** estará implícito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,20 +34,20 @@ O atributo guid da marca do ícone é o guid de um bitmap definido. O `id` atrib
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|GUID|Necessário. O guid de um bitmap definido.|
-|id|Necessário. Seleciona o slot na faixa de bitmap.|
+|guid|Obrigatórios. O guia de um bitmap definido.|
+|id|Obrigatórios. Seleciona o slot na tira bitmap.|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|nenhuma.|nenhuma.|
+|Nenhum.|Nenhum.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)||
+|[Elemento botões](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>Consulte também
-- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Confira também
+- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

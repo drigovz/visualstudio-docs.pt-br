@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99abfc65027bb43cafcd96c39da39ad40c5607ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16cb623f58668362e5e308e1d66dfd6ca7c0fb8c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348887"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721190"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-Obtém o número de visualizadores personalizados que podem estar disponíveis para essa propriedade.
+Obtém o número de espectadores personalizados que podem estar disponíveis para esta propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ int GetCustomViewerCount(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pcelt`\
-[out] O número de visualizadores personalizados disponíveis para esta propriedade.
+[fora] O número de espectadores personalizados disponíveis para esta propriedade.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Para dar suporte a visualizadores de tipo, esse método encaminha a chamada para o [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) método. Se o avaliador de expressão também dá suporte a visualizadores personalizados para o tipo dessa propriedade, esse método adiciona o número de visualizadores personalizados para o valor retornado.
+Para suportar visualizadores de tipo, este método encaminha a chamada para o método [GetCustomViewerCount.](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) Se o avaliador de expressão também suportar espectadores personalizados para o tipo desta propriedade, este método adicionará o número de espectadores personalizados ao valor retornado.
 
-Para obter informações detalhadas sobre as diferenças entre os visualizadores de tipo e visualizadores personalizados, consulte [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).
+Para obter informações detalhadas sobre as diferenças entre visualizadores de tipo e visualizadores personalizados, consulte [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CProperty** objeto que expõe a [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CProperty** que expõe a interface [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
@@ -73,7 +73,7 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
 - [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

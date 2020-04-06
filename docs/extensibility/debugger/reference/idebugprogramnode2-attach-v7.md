@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
+title: IDebugProgramNode2:Attach_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a90b162476872700ee0ec69a3bb9e6e575e7862a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bdee5b224ae38c3474009aeaf26e783ebc5dd139
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722132"
 ---
-# <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
+# <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
 > [!Note]
-> PRETERIDO. NÃO USE.
+> Preterido. NÃO USE.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,39 +45,39 @@ int Attach_V7 (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 `pMDMProgram`\
-[in] O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface que representa o programa anexar.
+[em] A interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o programa a ser anexado.
 
 `pCallback`\
-[in] O [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interface a ser usada para enviar eventos de depuração para o SDM.
+[em] A interface [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) a ser usada para enviar eventos de depuração para o SDM.
 
 `dwReason`\
-[in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que especifica o motivo para anexar.
+[em] Um valor da [enumeração ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) que especifica o motivo da anexação.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 
-Uma implementação deve retornar sempre `E_NOTIMPL`.
+Uma implementação `E_NOTIMPL`deve sempre retornar .
 
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> A partir do Visual Studio 2005, esse método não é mais usado e deve retornar sempre `E_NOTIMPL`. Consulte a [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) se o nó do programa deve indicar que ele não pode ser anexado a ou se o nó do programa é simplesmente definir o programa de interface para uma abordagem alternativa `GUID`. Caso contrário, implementar o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.
+> A partir do Visual Studio 2005, este método `E_NOTIMPL`não é mais utilizado e deve sempre retornar . Consulte a interface [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) para obter uma abordagem alternativa se o nó do programa precisar indicar `GUID`que ele não pode ser anexado ou se o nó do programa está simplesmente definindo o programa . Caso contrário, implemente o método [Anexar.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="prior-to-visual-studio-2005"></a>Antes do Visual Studio 2005
 
-Esse método precisa ser implementada somente se a Alemanha é executado no espaço de endereço do programa que está sendo depurado. Caso contrário, esse método deverá retornar `S_FALSE`.
+Este método só precisa ser implementado se o DE for executado no espaço de endereço do programa que está sendo depurado. Caso contrário, este `S_FALSE`método deve retornar .
 
-Quando este método é chamado, o DE deve enviar o [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto de evento, se ele já não tiver sido enviado para esta instância das [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface, bem como o [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) objetos de evento. O [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) objeto de evento é enviado se a `dwReason` parâmetro é `ATTACH_REASON_LAUNCH`.
+Quando esse método é chamado, o DE deve enviar o objeto de evento [IDebugEngineCreateEvent2,](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) se ele ainda não tiver sido enviado para esta instância da interface [IDebugEngine2,](../../../extensibility/debugger/reference/idebugengine2.md) bem como os objetos de evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2.](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) O objeto de evento [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) é enviado se o `dwReason` parâmetro for `ATTACH_REASON_LAUNCH`.
 
-O DE deve chamar o [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) método na [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto fornecido pelo [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventos de objeto e deve armazenar o GUID do programa nos dados da instância para o `IDebugProgram2` objeto implementado por DE.
+O DE deve chamar o método [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) no objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) fornecido pelo objeto de evento [IDebugProgramCreateEvent2,](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e deve armazenar os dados guid do programa nos dados de instância para o `IDebugProgram2` objeto implementado pelo DE.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
-- [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento ProvideDefaultName (modelos do Visual Studio) | Microsoft Docs
+title: FornecerElementoNome Padrão (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - ProvideDefaultName element [Visual Studio project templates]
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a19d6a93b709128e8750b6cea82d067b77db98
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335817"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701713"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelos do Visual Studio)
-Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema de projeto irá gerar um nome padrão para o modelo a **Adicionar Novo Item** ou **novo projeto** caixa de diálogo.
+# <a name="providedefaultname-element-visual-studio-templates"></a>FornecerelementoDefaultName (modelos do Visual Studio)
+Especifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o sistema de projeto gerará um nome padrão para o modelo na caixa de diálogo **Adicionar novo item** ou novo **projeto.**
 
- \<VSTemplate > \<TemplateData > \<ProvideDefaultName >
+ \<\<VSTemplate>Template>> \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,31 +35,31 @@ Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve ser `true` ou `false`, que indica se deve ou não gerar um nome padrão para o modelo na **Adicionar Novo Item** ou **novo projeto** caixa de diálogo.
+ O texto deve `true` `false`ser ou , indicando se deve ou não gerar um nome padrão para o modelo na caixa **de diálogo Adicionar novo item** ou novo **projeto.**
 
 ## <a name="remarks"></a>Comentários
  `ProvideDefaultName` é um elemento opcional. O valor padrão é `true`.
 
- Se o `ProvideDefaultName` elemento é `false`, o **nome** caixas dos **Add New Item** e **novo projeto** caixas de diálogo contêm o valor `<Enter_name>`.
+ Se `ProvideDefaultName` o `false`elemento for , as caixas **de nome** das caixas `<Enter_name>`de diálogo Adicionar novo **item** e novo **projeto** contêm o valor .
 
- Use o [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento para especificar o nome padrão do projeto ou item a **Adicionar Novo Item** e **novo projeto** caixas de diálogo. Quando o valor da `ProvideDefaultName` elemento é `true`, omissão do `DefaultName` elemento para projetos preenche a caixa de diálogo com o nome do modelo, ou seja, o valor da [nome](../extensibility/name-element-visual-studio-templates.md) elemento.
+ Use o elemento [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) para especificar o nome padrão do projeto ou item nas caixas de diálogo **Adicionar novo item** e **novo projeto.** Quando o valor `ProvideDefaultName` do `true`elemento é `DefaultName` , a omissão do elemento para projetos preenche a caixa de diálogo com o nome do modelo, ou seja, o valor do elemento [Nome.](../extensibility/name-element-visual-studio-templates.md)
 
 ## <a name="example"></a>Exemplo
- O seguinte exemplo de código define a `ProvideDefaultName` elemento para `false`.
+ O exemplo de `ProvideDefaultName` código `false`a seguir define o elemento para .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -77,6 +77,6 @@ Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

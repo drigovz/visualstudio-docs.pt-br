@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b32d2469c42931fa3dead4c5078e7d5b44b5d60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334932"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715752"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
-Essa interface enumera os processos em execução em uma porta de depuração.
+Esta interface enumera os processos em execução em uma porta de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,33 +28,33 @@ Essa interface enumera os processos em execução em uma porta de depuração.
 IEnumDebugProcesses : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Um fornecedor de porta personalizada implementa essa interface para fornecer uma lista de processos em execução em uma porta.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um fornecedor de porta personalizado implementa essa interface para fornecer uma lista de processos em execução em uma porta.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chamadas do Visual Studio [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) para obter essa interface.
+ O Visual Studio chama [a EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IEnumDebugProcesses2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IEnumDebugProcesses2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Recupera um número especificado de processos em uma sequência de enumeração.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Ignora um número especificado de processos em uma sequência de enumeração.|
-|[Reiniciar](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Redefine uma sequência de enumeração para o início.|
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
+|[Avançar](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Recupera um número especificado de processos em uma seqüência de enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Salta um número especificado de processos em uma seqüência de enumeração.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Reinicia uma seqüência de enumeração para o início.|
+|[Clonar](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtém o número de processos em um enumerador.|
 
 ## <a name="remarks"></a>Comentários
- O Visual Studio usa essa interface para preencher a **processos** janela.
+ O Visual Studio usa essa interface para preencher a janela **Processos.**
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugFunctionObject2::CreateObject | Microsoft Docs
+title: IDebugFunctionObject2:CreateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313421"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728484"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Cria um objeto que usa um construtor que recebe as configurações de sinalizador de avaliação e um valor de tempo limite.
+Cria um objeto que usa um construtor dado configurações de sinalizador de avaliação e um valor de tempo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,30 +48,30 @@ int CreateObject (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pConstructor`\
-[in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
+[em] Um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que representa o construtor do objeto a ser criado.
 
 `dwArgs`\
-[in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
+[em] O número de `pArg` parâmetros na matriz. Representa o número de parâmetros passados para o construtor.
 
 `pArgs`\
-[in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representa os parâmetros passados para o construtor.
+[em] Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa os parâmetros passados para o construtor.
 
 `dwEvalFlags`\
-[in] Uma combinação de sinalizadores do [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeração que especificam como a avaliação deve ser executada.
+[em] Uma combinação de bandeiras da [enumeração EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifica como a avaliação deve ser realizada.
 
 `dwTimeout`\
-[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use **infinito** para aguardar indefinidamente.
+[em] Tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use **INFINITE** para esperar indefinidamente.
 
 `ppObject`\
-[out] Retorna um **IDebugObject** que representa o objeto recém-criado.
+[fora] Retorna um **IDebugObject** representando o objeto recém-criado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame esse método para criar um objeto que representa uma instância de uma classe ou outro tipo complexo que exige um construtor, que é um parâmetro.
+ Chame este método para criar um objeto que represente uma instância de uma classe, ou outro tipo complexo que exija um construtor, que é um parâmetro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

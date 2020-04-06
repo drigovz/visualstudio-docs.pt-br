@@ -7,50 +7,50 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312257"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708954"
 ---
 # <a name="custom-tools"></a>Ferramentas personalizadas
-*Ferramentas personalizadas* permitem que você associe uma ferramenta de um item em um projeto e executar essa ferramenta, sempre que o arquivo é salvo. Determinadas ferramentas personalizadas, também conhecido como *geradores de arquivo único*, costumam ser usados para implementar os tradutores que geram código de dados e vice-versa. Por exemplo, criar geradores de arquivo único [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fora da fonte a *Settings* e *. resx* arquivos. O código-fonte gerado fornece acesso fortemente tipado aos dados na *. Settings* e *resx* arquivos. O [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ferramentas personalizadas; dar suporte a tipos de projeto [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de projeto não fizer isso. Seus próprios tipos de projeto também podem dar suporte a ferramentas personalizadas.
+*Ferramentas personalizadas* permitem associar uma ferramenta a um item em um projeto e executar essa ferramenta sempre que o arquivo for salvo. Certas ferramentas personalizadas, às vezes referidas como *geradores de arquivos únicos,* são frequentemente usadas para implementar tradutores que geram código a partir de dados e vice-versa. Por exemplo, geradores de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] arquivos únicos criam código-fonte a partir das *configurações .e* *arquivos .resx.* O código-fonte gerado fornece acesso fortemente digitado aos dados nos arquivos *.settings* e *.resx.* Os [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de projetos e os tipos de projeto suportam ferramentas personalizadas; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de projeto não. Seus próprios tipos de projeto também podem suportar ferramentas personalizadas.
 
- Ferramentas personalizadas são registrados componentes que implementam o `IVsSingleFileGenerator` interface.
+ Ferramentas personalizadas são componentes `IVsSingleFileGenerator` registrados que implementam a interface.
 
- Ferramentas personalizadas são associadas com um `ProjectItem` objeto de interface e são como os designers e editores. Uma ferramenta personalizada utiliza o arquivo representado por um `ProjectItem` como entrada e grava um novo arquivo cujo nome de arquivo é fornecido pelo `DefaultExtension` método.
+ Ferramentas personalizadas estão `ProjectItem` associadas a um objeto de interface e são como designers e editores. Uma ferramenta personalizada pega o `ProjectItem` arquivo representado por uma entrada e grava `DefaultExtension` um novo arquivo cujo nome de arquivo é fornecido pelo método.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Implementar geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
+- [Implementar geradores de arquivos únicos](../../extensibility/internals/implementing-single-file-generators.md)
 
- Descreve como usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface para implementar uma ferramenta personalizada.
+ Descreve como usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> a interface para implementar uma ferramenta personalizada.
 
-- [Registrar geradores de arquivo único](../../extensibility/internals/registering-single-file-generators.md)
+- [Registre geradores de arquivos únicos](../../extensibility/internals/registering-single-file-generators.md)
 
- Fornece descrições para todas as entradas do registro para uma ferramenta personalizada.
+ Fornece descrições para todas as entradas de registro para uma ferramenta personalizada.
 
-- [Expor tipos aos designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [Expor tipos a designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)
 
- Explica como sistemas de projeto fornecem suporte para designers visuais para classes de acesso gerado e tipos por meio de arquivos temporários PE (executável portátil).
+ Explica como os sistemas de projeto fornecem suporte para os designers visuais acessarem classes e tipos gerados por meio de arquivos temporários portáteis executáveis (PE).
 
-- [Manter a propriedade de um item de projeto](../../extensibility/persisting-the-property-of-a-project-item.md)
+- [Persistir a propriedade de um item de projeto](../../extensibility/persisting-the-property-of-a-project-item.md)
 
- Mostra como manter uma propriedade de item de projeto, como o autor de um arquivo de origem, no arquivo de projeto.
+ Mostra como persistir uma propriedade de item de projeto, como o autor de um arquivo de origem, no arquivo do projeto.
 
 ## <a name="reference"></a>Referência
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Fornece detalhes sobre o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, que transforma um único arquivo de entrada em um arquivo de saída única que pode ser compilado ou adicionado a um projeto.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>Fornece detalhes <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>sobre o , que transforma um único arquivo de entrada em um único arquivo de saída que pode ser compilado ou adicionado a um projeto.
 
- <xref:EnvDTE.ProjectItem> Explica o `ProjectItem` interface, que representa um item em um projeto.
+ <xref:EnvDTE.ProjectItem>Explica `ProjectItem` a interface, que representa um item em um projeto.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> Fornece detalhes sobre o `DefaultExtension` método, que recupera a extensão de nome de arquivo que é fornecida para o nome do arquivo de saída.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>Fornece detalhes `DefaultExtension` sobre o método, que recupera a extensão do nome do arquivo que é dada ao nome do arquivo de saída.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Estender projetos](../../extensibility/extending-projects.md)
+- [Ampliar projetos](../../extensibility/extending-projects.md)
 
- Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar os arquivos de código e arquivos de recurso e como implementar o controle do código-fonte.
+ Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar arquivos de código e arquivos de recursos e como implementar o controle de origem.

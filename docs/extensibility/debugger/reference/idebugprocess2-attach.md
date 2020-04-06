@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach | Microsoft Docs
+title: IDebugProcess2::Anexar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24a83c13d8953e3725a5fc5a4e55153b9ade88c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724185"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-O Gerenciador de sessão de depuração (SDM) é anexado ao processo.
+Anexa o Gerenciador de depuração de sessão (SDM) ao processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,33 +45,33 @@ int Attach( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pCallback`\
-[in] Uma [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que é usado para notificação de eventos de depuração.
+[em] Um objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é usado para depurar notificação de evento.
 
 `rgguidSpecificEngines`\
-[in] Uma matriz de GUIDs de mecanismos de depuração a ser usado para depurar programas em execução no processo. Esse parâmetro pode ser um valor nulo. Consulte os comentários para obter detalhes.
+[em] Uma matriz de GUIDs de motores de depuração para serem usados para depurar programas em execução no processo. Este parâmetro pode ser um valor nulo. Consulte observações para obter detalhes.
 
 `celtSpecificEngines`\
-[in] O número de depuração mecanismos na `rgguidSpecificEngines` matriz e o tamanho do `rghrEngineAttach` matriz.
+[em] O número de motores `rgguidSpecificEngines` de depuração `rghrEngineAttach` na matriz e o tamanho da matriz.
 
 `rghrEngineAttach`\
-[no, out] Uma matriz de códigos HRESULT retornado pelos mecanismos de depuração. O tamanho dessa matriz é especificado no `celtSpecificEngines` parâmetro. Cada código é normalmente `S_OK` ou `S_ATTACH_DEFERRED`. O último indica que o DE está atualmente conectado a nenhum programa.
+[dentro, fora] Uma matriz de códigos HRESULT retornados pelos motores de depuração. O tamanho desta matriz é `celtSpecificEngines` especificado no parâmetro. Cada código é `S_OK` tipicamente ou `S_ATTACH_DEFERRED`. Este último indica que o DE está atualmente anexado a nenhum programa.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os outros valores possíveis.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. A tabela a seguir mostra outros valores possíveis.
 
 |Valor|Descrição|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|O processo especificado já está anexado ao depurador.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Ocorreu uma violação de segurança durante o procedimento de anexação.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Um processo de área de trabalho não pode ser anexado ao depurador.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Uma violação de segurança ocorreu durante o procedimento de anexação.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Um processo de desktop não pode ser anexado ao depurador.|
 
 ## <a name="remarks"></a>Comentários
- Anexar a um processo anexa o SDM para todos os programas em execução no processo que pode ser depurado com os mecanismos de depuração (DES) especificados no `rgguidSpecificEngines` matriz. Defina a `rgguidSpecificEngines` parâmetro para um valor nulo de valor ou incluir `GUID_NULL` na matriz para anexar a todos os programas no processo.
+ A anexação a um processo anexa o SDM a todos os programas em execução nesse processo `rgguidSpecificEngines` que podem ser depurados pelos mecanismos de depuração (DE) especificados no array. Defina `rgguidSpecificEngines` o parâmetro como um `GUID_NULL` valor nulo ou inclua na matriz para anexar a todos os programas do processo.
 
- Todos os eventos de depuração que ocorrem no processo são enviados para o determinado [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto. Isso `IDebugEventCallback2` objeto é fornecido quando o SDM chama esse método.
+ Todos os eventos de depuração que ocorrem no processo são enviados para o objeto [IDebugEventCallback2.](../../../extensibility/debugger/reference/idebugeventcallback2.md) Este `IDebugEventCallback2` objeto é fornecido quando o SDM chama esse método.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

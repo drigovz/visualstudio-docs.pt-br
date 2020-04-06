@@ -1,5 +1,5 @@
 ---
-title: Opções de linha de comando devenv para desenvolvimento de VSPackage | Microsoft Docs
+title: Switches de linha de comando Devenv para desenvolvimento de pacotes VS | Microsoft Docs
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,43 +13,43 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289f31c503143dc2b992717483f4d8701414e09d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348049"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712186"
 ---
-# <a name="devenv-command-line-switches-for-vspackage-development"></a>Opções de linha de comando devenv para desenvolvimento de VSPackage
+# <a name="devenv-command-line-switches-for-vspackage-development"></a>Opções de linha de comando do Devenv para desenvolvimento de VSPackage
 
-O Visual Studio permite aos desenvolvedores automatizarem as tarefas da linha de comando ao executar `devenv.exe`, o arquivo que inicia o IDE do Visual Studio.
+O Visual Studio permite que os desenvolvedores automatizem tarefas da linha de comando ao executar `devenv.exe`, o arquivo que inicia o Visual Studio IDE.
 
  As tarefas incluem:
 
-- Implantando aplicativos em configurações predefinidas de fora do IDE.
+- Implantação de aplicativos em configurações pré-projetadas de fora do IDE.
 
-- Compilando projetos usando a predefinição de configurações de build ou automaticamente configurações de depuração.
+- Construção automática de projetos usando configurações de compilação predefinidas ou configurações de depuração.
 
-- Carregando o IDE em configurações específicas, tudo a partir de fora do IDE. Você também pode personalizar o IDE durante a inicialização.
+- Carregando o IDE em configurações específicas, tudo de fora do IDE. Você também pode personalizar o IDE no lançamento.
 
-## <a name="guidelines-for-switches"></a>Diretrizes para comutadores
+## <a name="guidelines-for-switches"></a>Diretrizes para switches
 
-Documentação do Visual Studio descreve o nível de usuário `devenv` de linha de comando. Para obter mais informações, consulte [opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md). O `devenv` ferramenta também dá suporte a opções de linha de comando adicionais que são úteis com desenvolvimento VSPackage, implantação e depuração.
+A documentação do Visual `devenv` Studio descreve os switches de linha de comando de nível de usuário. Para obter mais informações, consulte [os switches de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md). A `devenv` ferramenta também suporta switches adicionais de linha de comando que são úteis com desenvolvimento, implantação e depuração do VSPackage.
 
-| Opção de linha de comando | Descrição |
+| Interruptor de linha de comando | Descrição |
 |---------------------| - |
-| `/ResetSkipPkgs` | Limpa todas as opções de carregamento de ignorar que foram adicionadas por usuários que desejam evitar carregar VSPackages problemáticos e, em seguida, inicia o Visual Studio. A presença de uma marcação SkipLoading desabilita o carregamento de um VSPackage. Limpar a marcação habilita novamente o carregamento do VSPackage.<br /><br /> Esta opção não aceita nenhum argumento. |
-| `/RootSuffix` | Inicia o Visual Studio por meio de um local alternativo. O comando a seguir é executado pelo atalho criado pelo instalador do SDK do Visual Studio:<br /><br /> `devenv /RootSuffix exp`<br /><br /> Nesse caso, `exp` identifica um local com um sufixo específico (por exemplo, `10.0Exp` em vez de `10.0`). A instância experimental permite que você depure um VSPackage separadamente da instância do Visual Studio que você está usando para escrever código.<br /><br /> Essa opção pode levar a qualquer cadeia de caracteres que identifica um local que você criou usando VSRegEx.exe. Para obter mais informações, consulte [a instância Experimental](../extensibility/the-experimental-instance.md). |
-| `/SafeMode` | Visual Studio é iniciado no modo de segurança, carregando apenas o padrão IDE e serviços. O `/SafeMode` switch impede que todos os VSPackages de terceiros de carregamento quando o Visual Studio é iniciado, garantindo uma execução estável.<br /><br /> Esta opção não aceita nenhum argumento. |
-| `/Setup` | Força o Visual Studio a mesclar os metadados de recursos que descrevem menus, barras de ferramentas e grupos de comando de todos os VSPackages disponíveis. Você só pode executar esse comando como administrador. <br /><br /> Esta opção não aceita nenhum argumento. O comando `devenv /Setup` geralmente é fornecido como a última etapa do processo de instalação. Usar o `/Setup` switch não inicie o IDE.|
-| `/Splash` | Mostra a abertura do Visual Studio de tela, como de costume, e, em seguida, exibe uma mensagem de caixa antes de mostrar o IDE principal. A caixa de mensagem permite que você estude a tela inicial (por exemplo, para verificar se há um ícone de VSPackage do produto).<br /><br /> Esta opção não aceita nenhum argumento. |
+| `/ResetSkipPkgs` | Limpa todas as opções de carregamento de pular que foram adicionadas pelos usuários que querem evitar o carregamento de VSPackages problemáticos e, em seguida, inicia o Visual Studio. A presença de uma tag SkipLoading desativa o carregamento de um VSPackage. A compensação da tag reativa o carregamento do VSPackage.<br /><br /> Esta opção não aceita nenhum argumento. |
+| `/RootSuffix` | Inicia o Visual Studio usando um local alternativo. O comando a seguir é executado pelo atalho criado pelo instalador visual studio SDK:<br /><br /> `devenv /RootSuffix exp`<br /><br /> Neste caso, `exp` identifica um local com um sufixo `10.0Exp` específico `10.0`(por exemplo, em vez de ). A instância experimental permite depurar um VSPackage separadamente da instância do Visual Studio que você está usando para escrever código.<br /><br /> Este switch pode pegar qualquer string que identifique um local que você criou usando VSRegEx.exe. Para obter mais informações, consulte [A Instância Experimental](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Lança o Visual Studio em modo seguro, carregando apenas o IDE padrão e os serviços. O `/SafeMode` switch impede que todos os VSPackages de terceiros seja carregado quando o Visual Studio for iniciado, garantindo a execução estável.<br /><br /> Esta opção não aceita nenhum argumento. |
+| `/Setup` | Força o Visual Studio a mesclar metadados de recursos que descrevem menus, barras de ferramentas e grupos de comando de todos os VSPackages disponíveis. Você só pode executar este comando como um administrador. <br /><br /> Esta opção não aceita nenhum argumento. O comando `devenv /Setup` geralmente é fornecido como a última etapa do processo de instalação. O uso `/Setup` do interruptor não inicia o IDE.|
+| `/Splash` | Mostra a tela de respingo do Visual Studio, como de costume, e, em seguida, mostra uma caixa de mensagem antes de mostrar o IDE principal. A caixa de mensagens permite estudar a tela de respingo (por exemplo, para verificar um ícone de produto VSPackage).<br /><br /> Esta opção não aceita nenhum argumento. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Adicionar opções de linha de comando](../extensibility/adding-command-line-switches.md)
+- [Adicionar interruptores de linha de comando](../extensibility/adding-command-line-switches.md)
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)

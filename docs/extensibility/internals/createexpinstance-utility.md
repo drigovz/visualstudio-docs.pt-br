@@ -1,5 +1,5 @@
 ---
-title: Utilitário CreateExpInstance | Microsoft Docs
+title: CreateExpInstance Utilitário | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed03833b6c109ca78feb86c1cfe41fa453022c66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341908"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709236"
 ---
 # <a name="createexpinstance-utility"></a>Utilitário CreateExpInstance
-Use o **CreateExpInstance** utilitário para criar, redefinir ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar as extensões do Visual Studio sem alterar o produto subjacente.
+Use o utilitário **CreateExpInstance** para criar, redefinir ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar extensões do Visual Studio sem alterar o produto subjacente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,29 +30,29 @@ Use o **CreateExpInstance** utilitário para criar, redefinir ou excluir uma ins
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix
 ```
 
-## <a name="parameters"></a>Parâmetros
- **/ Criar** cria a instância experimental.
+## <a name="parameters"></a>parâmetros
+ **/Criar** Cria a instância experimental.
 
- **/ Redefinir** exclui a instância experimental e, em seguida, cria um novo.
+ **/Reset** Exclui a instância experimental e, em seguida, cria uma nova.
 
- **/ Limpeza** exclui a instância experimental.
+ **/Limpo** Exclui a instância experimental.
 
- **/ VSInstance** o nome do diretório que contém a instância do Visual Studio base para copiar.
+ **/VSInstance** O nome do diretório que contém a instância base do Visual Studio para copiar.
 
- **/ RootSuffix** o sufixo a ser acrescentado ao nome do diretório de instância experimental.
+ **/RootSuffix** O sufixo para anexar ao nome do diretório de instância experimental.
 
 ## <a name="remarks"></a>Comentários
- Quando você estiver trabalhando em uma extensão do Visual Studio, você pode pressionar F5 para abrir a instância experimental do padrão e instalar a extensão atual. Se nenhuma instância experimental estiver disponível, o Visual Studio cria um que tenha as configurações padrão.
+ Quando você estiver trabalhando em uma extensão do Visual Studio, você pode pressionar F5 para abrir a instância experimental padrão e instalar a extensão atual. Se nenhuma instância experimental estiver disponível, o Visual Studio criará uma que tenha as configurações padrão.
 
- O local padrão da instância experimental depende do número de versão do Visual Studio. Por exemplo, para o Visual Studio 2015, o local é *%localappdata%\Microsoft\VisualStudio\14.0Exp\\* . Todos os arquivos no local de diretório são considerados parte dessa instância. Qualquer instância experimental adicional não será carregada pelo Visual Studio, a menos que o nome do diretório é alterado para o local padrão.
+ A localização padrão da instância experimental depende do número da versão do Visual Studio. Por exemplo, para o Visual Studio 2015, a localização é *%localappdata%\Microsoft\VisualStudio\14.0Exp\\*. Todos os arquivos no local do diretório são considerados parte dessa instância. Quaisquer instâncias experimentais adicionais não serão carregadas pelo Visual Studio, a menos que o nome do diretório seja alterado para o local padrão.
 
- Visual Studio não acessar o registro do sistema quando ele é aberto na instância experimental. Isso é diferente de versões anteriores do Visual Studio, que usavam uma versão experimental da seção do registro.
+ O Visual Studio não acessa o registro do sistema quando abre a instância experimental. Isso difere das versões anteriores do Visual Studio, que usou uma versão experimental da colmeia de registro.
 
- O **CreateExpInstance** substitui o utilitário do **VsRegEx** utilitário.
+ O utilitário **CreateExpInstance** substitui o utilitário **VsRegEx.**
 
- O exemplo a seguir redefine a instância experimental do padrão do Visual Studio:
+ O exemplo a seguir redefine a instância experimental padrão do Visual Studio:
 
  **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [VSPackages](../../extensibility/internals/vspackages.md)

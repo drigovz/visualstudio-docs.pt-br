@@ -1,5 +1,5 @@
 ---
-title: Fornecer suporte a texto oculto no serviço de linguagem herdado
+title: Forneça suporte de texto oculto no serviço de idioma legado
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,41 +7,41 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], hidden text
 - language services, implementing hidden text regions
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d1088399256a4d5b16fa269ce022800ed645b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351025"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707923"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado
-Você pode criar regiões de texto oculto além das regiões de estrutura de tópicos. Regiões de texto oculta podem ser controlado pelo cliente ou controlado pelo editor e são usados para ocultar uma região de texto completo. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é o **somente Script** exibição no editor de HTML.
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: Fornecer suporte a texto oculto em um serviço de idioma legado
+Você pode criar regiões de texto ocultas, além de delinear regiões. As regiões de texto ocultas podem ser controladas pelo cliente ou controladas pelo editor e são usadas para ocultar uma região de texto completamente. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é a exibição **Script Only** no editor HTML.
 
 ## <a name="to-implement-a-hidden-text-region"></a>Para implementar uma região de texto oculto
 
-1. Chame `QueryService` para <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>.
+1. Chamada `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>para .
 
-     Isso retorna um ponteiro para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
+     Isso retorna um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>ponteiro para .
 
-2. Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, passando um ponteiro para um buffer de texto especificado. Isso determina se o texto oculto já existe uma sessão para o buffer.
+2. Chamada <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, passando em um ponteiro para um determinado buffer de texto. Isso determina se já existe uma sessão de texto oculta para o buffer.
 
-3. Se já existir um, então você não precisará criar um e um ponteiro para existente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objeto é retornado. Use esse ponteiro para enumerar e criar regiões de texto oculto. Caso contrário, chame <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> para criar uma sessão para o buffer de texto oculto.
+3. Se um já existe, então você não precisa criar um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> e um ponteiro para o objeto existente é devolvido. Use este ponteiro para enumerar e criar regiões de texto ocultas. Caso contrário, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> chame para criar uma sessão de texto oculta para o buffer.
 
-     Um ponteiro para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objeto é retornado.
+     Um ponteiro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> para o objeto é devolvido.
 
     > [!NOTE]
-    > Quando você chama `CreateHiddenTextSession`, você pode especificar um cliente do texto oculto (ou seja, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). O cliente do texto oculto notifica quando o texto oculto ou estrutura de tópicos é expandida ou recolhida pelo usuário.
+    > Quando você `CreateHiddenTextSession`liga, você pode especificar um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>cliente de texto oculto (isto é, ). O cliente de texto oculto notifica você quando o texto oculto ou o delineamento é expandido ou colapsado pelo usuário.
 
-4. Chame <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> para adicionar um ou mais nova da estrutura de tópicos regiões ao mesmo tempo, especificando as seguintes informações na `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) parâmetro:
+4. Chamada <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> para adicionar uma ou mais novas regiões de contorno `reHidReg` de<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>cada vez, especificando as seguintes informações no parâmetro ( )
 
-    1. Especifique um valor de `hrtConcealed` no `iType` membro o <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura para indicar que você está criando uma região oculta, em vez de uma região de estrutura de tópicos.
+    1. Especifique `hrtConcealed` um `iType` valor <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> no membro da estrutura para indicar que você está criando uma região oculta, em vez de uma região de contorno.
 
         > [!NOTE]
-        > Quando regiões escondidos estiverem ocultas, o editor exibe automaticamente linhas ao redor das regiões ocultas para indicar sua presença.
+        > Quando as regiões ocultas são ocultas, o editor exibe automaticamente linhas ao redor das regiões ocultas para indicar sua presença.
 
-    2. Especifique se a região é controlado pelo cliente ou controlado de editor do `dwBehavior` os membros a <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estrutura. Sua implementação de estrutura de tópicos inteligente pode conter uma mistura de estrutura de tópicos do editor-controlado pelo cliente e regiões de texto oculto.
+    2. Especifique se a região é controlada `dwBehavior` pelo <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> cliente ou controlada pelo editor nos membros da estrutura. Sua implementação de delineamento inteligente pode conter uma mistura de regiões de contorno controladas por editor esboçar e texto oculto.

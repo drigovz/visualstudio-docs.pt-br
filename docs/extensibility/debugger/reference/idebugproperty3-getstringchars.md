@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721087"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Recupera a cadeia de caracteres associada a essa propriedade e o armazena em um buffer fornecido pelo usuário.
+Recupera a string associada a esta propriedade e armazena-a em um buffer fornecido pelo usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,26 +43,26 @@ int GetStringChars(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `buflen`\
-[in] Número máximo de caracteres em que o buffer fornecido pelo usuário pode conter.
+[em] Número máximo de caracteres que o buffer fornecido pelo usuário pode conter.
 
 `rgString`\
-[out] Retorna a cadeia de caracteres.
+[fora] Devolve a corda.
 
- [C++ somente], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da cadeia de caracteres. Esse buffer deve ter pelo menos `buflen` caracteres (não em bytes) de tamanho.
+ [C++ somente], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da string. Este buffer deve `buflen` ser pelo menos caracteres (não bytes) em tamanho.
 
 `pceltFetched`\
-[out] Em que o número de caracteres, na verdade, são armazenados no buffer é retornado. (Pode ser `NULL` em C++.)
+[fora] Onde o número de caracteres realmente armazenados no buffer é devolvido. (Pode `NULL` estar em C++.)
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-No C++, tome cuidado para garantir que o buffer seja pelo menos `buflen` caracteres Unicode. Observe que um caractere Unicode é de 2 bytes de comprimento.
+Em C++, deve-se tomar cuidado para garantir `buflen` que o buffer tenha pelo menos caracteres Unicode. Observe que um caractere Unicode tem 2 bytes de comprimento.
 
 > [!NOTE]
-> No C++, a cadeia de caracteres retornada não inclui um caractere nulo de terminação. Se fornecido, `pceltFetched` especificará o número de caracteres na cadeia de caracteres.
+> Em C++, a seqüência retornada não inclui um caractere nulo final. Se dado, `pceltFetched` especificará o número de caracteres na seqüência.
 
 ## <a name="example"></a>Exemplo
 
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

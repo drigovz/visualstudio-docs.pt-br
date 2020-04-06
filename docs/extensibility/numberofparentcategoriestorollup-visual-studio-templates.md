@@ -1,5 +1,5 @@
 ---
-title: Elemento NumberOfParentCategoriesToRollUp (modelos)
+title: NúmeroOfParentCategoriesToRollUp (modelos)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65787aef175052eb69c6dedfff2e095f16c81ef1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336335"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702363"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (modelos do Visual Studio)
-Especifica o número de categorias pai que exibirá o modelo na **novo projeto** caixa de diálogo.
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NúmeroOfParentCategoriesToRollUp element (modelos do Visual Studio)
+Especifica o número de categorias-pai que exibirão o modelo na caixa de diálogo **Novo Projeto.**
 
- \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
+ \<VSTemplate \<>>TemplateData>NúmeroDeSérieDosPaisCategoriasToRolar>> \<
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,27 +38,27 @@ Especifica o número de categorias pai que exibirá o modelo na **novo projeto**
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um `integer` valor é necessário.
 
- Esse valor Especifica o número de categorias pai que exibirá o modelo na **novo projeto** caixa de diálogo.
+ Esse valor especifica o número de categorias-pai que exibirão o modelo na caixa de diálogo **Novo Projeto.**
 
 ## <a name="remarks"></a>Comentários
  `NumberOfParentCategoriesToRollUp` é um elemento opcional.
 
 ## <a name="example"></a>Exemplo
- Este exemplo ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows. Se um modelo com esses metadados é colocado dois níveis de pasta abaixo do nível superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nó, o modelo aparecerá no nó de nível superior na **novo projeto** caixa de diálogo. Se o `NumberOfParentCategoriesToRollUp` não for definido, o modelo aparece somente no nó no qual ele está localizado fisicamente.
+ Este exemplo ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows. Se um modelo com esses metadados for colocado [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dois níveis de pasta abaixo do nó de nível superior, o modelo aparecerá no nó de nível superior na caixa de diálogo **Novo Projeto.** Se `NumberOfParentCategoriesToRollUp` o modelo não estiver definido, o modelo só aparecerá no nó em que está fisicamente localizado.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,6 +85,6 @@ Especifica o número de categorias pai que exibirá o modelo na **novo projeto**
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

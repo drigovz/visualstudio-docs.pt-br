@@ -1,27 +1,27 @@
 ---
-title: Contribuindo para a caixa de diálogo Novo Item adicionar | Microsoft Docs
+title: Contribuindo para a caixa de diálogo de adicionar novos itens | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 443f52edda5f3bedb2e3f8c8dbbe748254fd7be7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83444d9be6ba23392b792a0187bf46dc9920c465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335565"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709285"
 ---
-# <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuir para a caixa de diálogo Adicionar Novo Item
-Um subtipo de projeto pode fornecer um novo diretório completo de itens para o **Adicionar Novo Item** caixa de diálogo, registrando **Adicionar Item** modelos sob o **projetos** subchave do registro.
+# <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribua para a caixa de diálogo Adicionar novo item
+Um subtipo de projeto pode fornecer um novo diretório completo de itens para a caixa de diálogo **Adicionar novo item,** registrando modelos de **adicionar itens** sob a sub-chave de registro **de projetos.**
 
-## <a name="register-add-new-item-templates"></a>Registrar modelos Adicionar Novo Item
- Esta seção está localizada sob **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** no registro. As entradas do Registro abaixo pressupõem uma [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeto agregados por um subtipo de projeto hipotético. As entradas para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeto estão listadas abaixo.
+## <a name="register-add-new-item-templates"></a>Registre adicionar modelos de novos itens
+ Esta seção está localizada sob **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projetos** no registro. As entradas de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registro abaixo assumem um projeto agregado por um subtipo hipotético do projeto. As inscrições para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o projeto estão listadas abaixo.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -35,12 +35,12 @@ Um subtipo de projeto pode fornecer um novo diretório completo de itens para o 
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- O **AddItemTemplates\TemplateDirs** subchave contém entradas do registro com o caminho para o diretório em que itens disponibilizados na **Adicionar Novo Item** caixa de diálogo são colocados.
+ A **subchave AddItemTemplates\TemplateDirs** contém entradas de registro com o caminho para o diretório onde os itens disponibilizados na caixa de diálogo **Adicionar novo item** são colocados.
 
- O ambiente carrega automaticamente todos os **AddItemTemplates** dados sob o **projetos** subchave do registro. Esses dados podem incluir os dados para implementações de base do projeto, bem como os dados específicos subtipo para tipos de projeto. Subtipo de cada projeto é identificado por um tipo de projeto **GUID**. O subtipo de projeto pode especificar que uma alternativa conjunto de **Adicionar Item** modelos devem ser usados para uma instância de determinado projeto flavored dando suporte a `VSHPROPID_ AddItemTemplatesGuid` enumeração de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> em <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementação para retornar o valor GUID do subtipo de projeto. Se o `VSHPROPID_AddItemTemplatesGuid` propriedade não for especificada, o projeto base que GUID é usado.
+ O ambiente carrega automaticamente todos os dados **AddItemTemplates** sob a sub-chave de registro **de projetos.** Esses dados podem incluir os dados para implementações de projetos básicos, bem como os dados para tipos específicos de subtipos de projeto. Cada subtipo de projeto é identificado por um tipo de projeto **GUID**. O subtipo do projeto pode **Add Item** especificar que um conjunto alternativo de modelos de `VSHPROPID_ AddItemTemplatesGuid` itens adicionais <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> deve ser usado para uma instância de projeto com sabor específico, apoiando a enumeração da implementação para retornar o valor GUID do subtipo do projeto. Se `VSHPROPID_AddItemTemplatesGuid` a propriedade não for especificada, o GUID do projeto base será usado.
 
- Você pode filtrar itens na **Adicionar Novo Item** caixa de diálogo, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interface no objeto do agregador de subtipo de projeto. Por exemplo, um subtipo de projeto que implementa um projeto de banco de dados agregando um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do projeto, pode filtrar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] específicos de itens da **Adicionar Novo Item** caixa de diálogo com a implementação de filtragem e em Ativar, poderá adicionar itens específicos do projeto de banco de dados, oferecendo suporte a `VSHPROPID_ AddItemTemplatesGuid` em <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Para obter mais informações sobre filtragem e adição de itens para o **Adicionar Novo Item** caixa de diálogo, consulte [adicionar itens à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
+ Você pode filtrar itens na caixa de diálogo Adicionar <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> novo **item** implementando a interface no objeto agregador do subtipo do projeto. Por exemplo, um subtipo de projeto que implementa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um projeto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] banco de dados agregando um projeto, pode filtrar os itens específicos da caixa de `VSHPROPID_ AddItemTemplatesGuid` diálogo <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>Adicionar **novo item** implementando a filtragem e, por sua vez, pode adicionar itens específicos do projeto de banco de dados, suportando em . Para obter mais informações sobre filtrar e adicionar itens à caixa de diálogo **Adicionar novo item,** consulte [Adicionar itens à caixa de diálogo Adicionar novo item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [CATIDs para objetos que normalmente são usados para estender projetos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

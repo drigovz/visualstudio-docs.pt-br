@@ -5,37 +5,37 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711849"
 ---
 # <a name="enumerators"></a>Enumeradores
-Esta seção lista os tipos de dados em que a API de plug-in de controle do código-fonte que o plug-in de controle do código-fonte deve saber sobre enumerador.
+Esta seção lista os tipos de dados enumeradores na API plug-in de controle de fonte que o plug-in de controle de origem deve saber.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Código de comando](../extensibility/command-code-enumerator.md) enumera as opções para o [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) funções.
+- [Código de comando](../extensibility/command-code-enumerator.md) Enumera as opções para as funções [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
-- [Mensagem](../extensibility/message-enumerator.md) enumera os sinalizadores usados para o retorno de chamada, impressão [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+- [Mensagem](../extensibility/message-enumerator.md) Enumera bandeiras usadas para o retorno de chamada de impressão, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
-- [Arquivo de código de status](../extensibility/file-status-code-enumerator.md) Contains denominada valores constantes que especificam o estado de um arquivo sob controle do código-fonte.
+- [Código de status de arquivo](../extensibility/file-status-code-enumerator.md) Contém valores constantes nomeados que especificam o estado de um arquivo sob controle de origem.
 
-- [Código de status do diretório](../extensibility/directory-status-code-enumerator.md) Contains denominada valores constantes que especificam o estado de uma pasta sob o controle do código-fonte.
+- [Código de status do diretório](../extensibility/directory-status-code-enumerator.md) Contém valores constantes nomeados que especificam o estado de um diretório sob controle de origem.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Criar um controle de fonte plug-in](../extensibility/internals/creating-a-source-control-plug-in.md) define o SDK do plug-in de controle de origem e descreve os recursos incluídos.
+- [Criar um plug-in de controle de origem](../extensibility/internals/creating-a-source-control-plug-in.md) Define o SDK plug-in de controle de origem e descreve os recursos incluídos.
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) solicita ao usuário opções avançadas para o comando fornecido.
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Solicita ao usuário opções avançadas para o comando dado.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) examina a lista de arquivos para seu status atual. Além disso, usa o `pfnPopulate` função para notificar o chamador quando um arquivo não coincide com os critérios para o `nCommand`.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Examina a lista de arquivos para seu status atual. Além disso, `pfnPopulate` usa a função para notificar o chamador `nCommand`quando um arquivo não corresponde aos critérios do .
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) descreve a função de retorno de chamada que é usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens de controle de fonte de plug-in por meio do IDE.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descreve a função de retorno de chamada que é usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens do plug-in de controle de origem através do IDE.
 
-- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md) fornece uma lista completa de todos os elementos na API de plug-in de controle de origem.
+- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md) Fornece uma lista completa de todos os elementos da API plug-in de controle de fonte.

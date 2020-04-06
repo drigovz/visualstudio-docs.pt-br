@@ -1,47 +1,47 @@
 ---
-title: 'Como: Anexar exibições para dados de documentos | Microsoft Docs'
+title: 'Como: Anexar visualizações aos dados do documento | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c42ccdb817ab4a7594922e90e9df3e345c693c11
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d8bd586a9d67996389f3cb6a2b0f13f0afec3bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340988"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711084"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>Como: Anexar exibições para dados de documento
-Se você tiver uma nova exibição de documento, você poderá anexá-lo a um objeto de dados de documento existente.
+# <a name="how-to-attach-views-to-document-data"></a>Como: Anexar visualizações aos dados do documento
+Se você tiver uma nova exibição de documento, poderá anexá-la a um objeto de dados de documento existente.
 
-## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Para determinar se você pode anexar um modo de exibição para um objeto de dados de documento existente
+## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Para determinar se você pode anexar uma exibição a um objeto de dados de documento existente
 
 1. Implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.
 
-2. Em sua implementação de `IVsEditorFactory::CreateEditorInstance`, chame `QueryInterface` sobre o objeto de dados de documento existente quando o IDE chama seu `CreateEditorInstance` implementação.
+2. Na sua `IVsEditorFactory::CreateEditorInstance`implementação `QueryInterface` do , chamada sobre o objeto `CreateEditorInstance` de dados de documento existente quando o IDE chamar sua implementação.
 
-    Chamando `QueryInterface` permite que você examine o objeto de dados de documento existente, que é especificado no `punkDocDataExisting` parâmetro.
+    A `QueryInterface` chamada permite examinar o objeto de dados do `punkDocDataExisting` documento existente, que está especificado no parâmetro.
 
-    As interfaces exatas, você deve consultar, no entanto, varia de acordo com o editor que esteja abrindo o documento, conforme descrito na etapa 4.
+    As interfaces exatas que você deve consultar, no entanto, depende do editor que está abrindo o documento, conforme descrito na etapa 4.
 
-3. Se você não encontrar as interfaces apropriadas no objeto de dados de documento existente, em seguida, retorne um código de erro para o seu editor, que indica que o objeto de dados do documento é incompatível com seu editor.
+3. Se você não encontrar as interfaces apropriadas no objeto de dados do documento existente, então retorne um código de erro ao seu editor indicando que o objeto de dados do documento é incompatível com o seu editor.
 
-    Na implementação do IDE do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, uma caixa de mensagem avisará que o documento está aberto em outro editor e pergunta se você deseja fechá-lo.
+    Na implementação do IDE, uma caixa de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>mensagem notifica que o documento está aberto em outro editor e pergunta se você deseja fechá-lo.
 
-4. Se você fechar este documento, o Visual Studio chama sua fábrica de editor para uma segunda vez. Nessa chamada, o `DocDataExisting` parâmetro é igual a NULL. Sua implementação de fábrica do editor, em seguida, poderá abrir o objeto de dados de documento em seu próprio editor.
+4. Se você fechar este documento, então o Visual Studio liga para sua fábrica de editores pela segunda vez. Nesta chamada, `DocDataExisting` o parâmetro é igual a NULL. A implementação da fábrica do editor pode, então, abrir o objeto de dados do documento em seu próprio editor.
 
    > [!NOTE]
-   > Para determinar se você pode trabalhar com um objeto de dados de documento existente, você também pode usar privado Conhecimento da implementação da interface ao converter um ponteiro para o real [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] classe da sua implementação privada. Por exemplo, todos os editores padrão implementam `IVsPersistFileFormat`, que herda de <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Assim, você pode chamar `QueryInterface` para <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, e se a ID de classe no objeto de dados existente do documento corresponde à sua implementação de ID de classe e, em seguida, você pode trabalhar com o objeto de dados do documento.
+   > Para determinar se você pode trabalhar com um objeto de dados de documento existente, você [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] também pode usar o conhecimento privado da implementação da interface, lançando um ponteiro para a classe real de sua implementação privada. Por exemplo, todos os `IVsPersistFileFormat`editores padrão <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>implementam , que herda de . Assim, você `QueryInterface` pode <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>solicitar , e se o ID de classe no objeto de dados de documento existente corresponder ao ID de classe da sua implementação, então você pode trabalhar com o objeto de dados do documento.
 
 ## <a name="robust-programming"></a>Programação robusta
- Quando o Visual Studio chama sua implementação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, ele transmitirá de volta um ponteiro para o objeto de dados de documento existente no `punkDocDataExisting` parâmetro, se houver. Examinar o objeto de dados de documento retornado no `punkDocDataExisting` para determinar se o objeto de dados de documento é apropriado para seu editor, conforme descrito na observação na etapa 4 do procedimento neste tópico. Se é apropriado e, em seguida, sua fábrica de editor deve fornecer um segundo modo de exibição para os dados conforme descrito na [dar suporte a vários modos de exibição de documento](../extensibility/supporting-multiple-document-views.md). Caso contrário, em seguida, ele deve exibir uma mensagem de erro apropriado.
+ Quando o Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> chama sua implementação do método, ele repassa `punkDocDataExisting` um ponteiro para o objeto de dados de documento existente no parâmetro, se existir. Examine o objeto de `punkDocDataExisting` dados do documento retornado para determinar se o objeto de dados do documento é apropriado para o seu editor, conforme descrito na nota na etapa 4 do procedimento neste tópico. Se for apropriado, então sua fábrica de editores deve fornecer uma segunda visualização para os dados conforme descrito em [Exibir várias visualizações de documentos](../extensibility/supporting-multiple-document-views.md). Se não, então ele deve exibir uma mensagem de erro apropriada.
 
-## <a name="see-also"></a>Consulte também
-- [Suporte a vários modos de exibição de documento](../extensibility/supporting-multiple-document-views.md)
-- [Dados de documentos e exibição de documentos em editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md)
+## <a name="see-also"></a>Confira também
+- [Suporte a várias exibições de documentos](../extensibility/supporting-multiple-document-views.md)
+- [Dados de documentos e visualização de documentos em editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md)

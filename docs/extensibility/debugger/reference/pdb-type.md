@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3121106b84111d20bf2915c0f9398fa92807cfd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349906"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714101"
 ---
-# <a name="pdbtype"></a>PDB_TYPE
+# <a name="pdb_type"></a>PDB_TYPE
 
-Essa estrutura Especifica informações sobre um tipo de campo extraído de um símbolo PDB.
+Esta estrutura especifica informações sobre um tipo de campo retirado de um símbolo PDB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,27 +47,27 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Membros
 
 `ulAppDomainID`\
-ID do aplicativo do qual o símbolo foi originada. Isso é usado para identificar exclusivamente uma instância do aplicativo.
+ID do aplicativo de onde veio o símbolo. Isso é usado para identificar exclusivamente uma instância do aplicativo.
 
 `guidModule`\
-O GUID do módulo que contém esse campo.
+O GUID do módulo que contém este campo.
 
 `symid`\
-A ID do símbolo que corresponde a esse campo.
+O ID do símbolo que corresponde a este campo.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é exibido como parte da união na [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estrutura quando o `dwKind` campo dos `TYPE_INFO` estrutura é definida como `TYPE_KIND_PDB` (um valor da [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeração).
+Essa estrutura aparece como parte da união `dwKind` na estrutura `TYPE_INFO` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando `TYPE_KIND_PDB` o campo da estrutura é definido para (um valor da [enumeração dwTYPE_KIND).](../../../extensibility/debugger/reference/dwtype-kind.md)
 
 ## <a name="requirements"></a>Requisitos
 
-Header: sh.h
+Cabeçalho: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

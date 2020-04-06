@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700423"
 ---
 # <a name="sccrename-function"></a>Função SccRename
-Essa função renomeia um arquivo no sistema de controle do código-fonte.
+Esta função renomeia um arquivo no sistema de controle de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,39 +33,39 @@ SCCRTN SccRename(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  pvContext
 
-no A estrutura de contexto do plug-in de controle do código-fonte.
+[em] A estrutura de contexto plug-in de controle de origem.
 
  hWnd
 
-no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
+[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
 
- lpFileName
+ Lpfilename
 
-no O nome de arquivo totalmente qualificado do arquivo que está sendo renomeado.
+[em] O nome do arquivo totalmente qualificado do arquivo sendo renomeado.
 
  lpNewName
 
-no O novo nome totalmente qualificado. Se o caminho do diretório for diferente, o arquivo terá sido movido de um subdiretório para outro.
+[em] O novo nome totalmente qualificado. Se o caminho do diretório for diferente, então o arquivo passou de um subdiretório para outro.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A operação de renomeação foi concluída com êxito.|
-|SCC_E_PROJNOTOPEN|O projeto não está aberto sob controle do código-fonte.|
-|SCC_E_FILENOTCONTROLLED|O arquivo não está no controle do código-fonte.|
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|
+|SCC_OK|A operação de renomeação foi concluída com sucesso.|
+|SCC_E_PROJNOTOPEN|O projeto não está aberto sob controle de código.|
+|SCC_E_FILENOTCONTROLLED|O arquivo não está sob controle de origem.|
+|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção.|
 |SCC_E_NOTAUTHORIZED|O usuário não está autorizado a concluir esta operação.|
-|SCC_E_COULDNOTCREATEPROJECT|Não foi possível criar o projeto como parte do processo de renomeação.|
-|SCC_E_OPNOTPERFORMED|A operação não foi executada.|
+|SCC_E_COULDNOTCREATEPROJECT|O projeto não pôde ser criado como parte do processo de renomeação.|
+|SCC_E_OPNOTPERFORMED|A operação não foi realizada.|
 |SCC_E_NONSPECIFICERROR|Ocorreu um erro não especificado ou geral.|
 
 ## <a name="remarks"></a>Comentários
- Essa função pode ser usada para renomear um arquivo ou movê-lo de um local para outro no sistema de controle do código-fonte. O plug-in de controle do código-fonte não deve tentar acessar o arquivo no disco. É responsabilidade do IDE renomear o arquivo local.
+ Esta função pode ser usada para renomear um arquivo ou movê-lo de um local para outro no sistema de controle de origem. O plug-in de controle de origem não deve tentar acessar o arquivo em disco. É responsabilidade do IDE renomear o arquivo local.
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

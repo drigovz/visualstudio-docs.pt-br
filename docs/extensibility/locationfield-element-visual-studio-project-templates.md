@@ -1,5 +1,5 @@
 ---
-title: Elemento LocationField (modelos de projeto do Visual Studio) | Microsoft Docs
+title: LocationField Element (Modelos de Projetos do Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b440595207cee6a146e6d85ee5e9f7c492ee3eee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309164"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702881"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelos de projeto do Visual Studio)
-Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de diálogo é habilitada, desabilitada ou ocultada para o modelo de projeto.
+Especifica se a caixa de texto **Local** na caixa de diálogo **Projeto novo** está ativada, desativada ou oculta para o modelo do projeto.
 
- \<VSTemplate > \<TemplateData > \<LocationField >
+ \<VSTemplate>> \<de \<campo de> de localização
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,37 +35,37 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto**.|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
  Os valores de texto válidos são:
 
-- `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.
+- `Enabled`, que especifica que a caixa **Localização** da caixa de diálogo **Novo Projeto** está ativada.
 
-- `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.
+- `Disabled`, que especifica que a caixa **Localização** da caixa de diálogo **Novo Projeto** está desativada.
 
-- `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.
+- `Hidden`, que especifica que a caixa **Localização** da caixa de diálogo **Novo Projeto** está oculta.
 
 ## <a name="remarks"></a>Comentários
  O valor padrão é `Enabled`.
 
- O **local** caixa de texto a **novo projeto** caixa de diálogo permite que os usuários alterem o diretório padrão no qual os novos projetos são salvos.
+ A caixa de texto **Localização** na caixa de diálogo **Projeto Novo** permite que os usuários alterem o diretório padrão no qual novos projetos são salvos.
 
- O valor especificado no `Location` elemento só será considerado por caixa de diálogo se o sistema de projeto subjacente suportá-lo.
+ O valor especificado `Location` no elemento só é honrado pela caixa de diálogo se o sistema de projeto subjacente o suportar.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo.
+ O exemplo a seguir ilustra [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] os metadados de um modelo.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,6 +92,6 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

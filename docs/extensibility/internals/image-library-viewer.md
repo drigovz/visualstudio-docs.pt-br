@@ -1,42 +1,42 @@
 ---
-title: Visualizador da biblioteca de imagem | Microsoft Docs
+title: Visualizador da Biblioteca de Imagens | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7c5eda24c235cddec99cb5177c6ed315978bc6f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315692"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707742"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
-A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:
+A ferramenta Visual Studio Image Library Viewer pode carregar e pesquisar manifestos de imagem, permitindo que o usuário os manipule da mesma forma que o Visual Studio faria. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto da imagem. Esta ferramenta é útil para:
 
-1. Diagnosticando erros
+1. Diagnóstico de erros
 
-2. Atributos de garantir que estão definidos corretamente nos manifestos de imagem personalizada
+2. Garantir que os atributos sejam definidos corretamente em manifestos de imagem personalizados
 
-3. Procurando por imagens no catálogo de imagem do Visual Studio para que uma extensão do Visual Studio pode usar as imagens que se ajustam o estilo do Visual Studio
+3. Procurando imagens no Catálogo de Imagens do Visual Studio para que uma extensão do Visual Studio possa usar imagens que se encaixem no estilo do Visual Studio
 
-   ![Imagem Hero de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "biblioteca herói de Visualizador de imagem")
+   ![Herói do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-hero.png "Herói do visualizador da biblioteca de imagens")
 
-   **Moniker de imagem**
+   **Apelido de imagem**
 
-   Um moniker de imagem (ou moniker de forma abreviada) é um par de GUID:ID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.
+   Um apelido de imagem (ou apelido para abreviar) é um par GUID:ID que identifica exclusivamente um ativo de imagem ou lista de imagens na Biblioteca de Imagens.
 
-   **Arquivos de manifesto de imagem**
+   **Arquivos manifestos de imagem**
 
-   Arquivos de manifesto (.imagemanifest) da imagem são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.
+   Os arquivos manifestos de imagem (.imagemanifest) são arquivos XML que definem um conjunto de ativos de imagem, os apelidos que representam esses ativos e a imagem real ou imagens que representam cada ativo. Os manifestos de imagem podem definir imagens independentes ou listas de imagens para suporte à ui legado. Além disso, existem atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para mudar quando e como esses ativos são exibidos.
 
    **Esquema de manifesto de imagem**
 
-   Um manifesto de conclusão de imagem tem esta aparência:
+   Um manifesto de imagem completo se parece com isso:
 
 ```xml
 <ImageManifest>
@@ -57,7 +57,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
  **Símbolos**
 
- Como ajudam a um legibilidade e a manutenção, o manifesto de imagem pode usar símbolos para valores de atributo. Símbolos são definidos como este:
+ Como um auxílio de legibilidade e manutenção, o manifesto de imagem pode usar símbolos para valores de atributo. Os símbolos são definidos assim:
 
 ```xml
 <Symbols>
@@ -70,13 +70,13 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
 |||
 |-|-|
-|**Subelement**|**Definição**|
-|Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto do atual.|
-|Guid|O símbolo representa um GUID e deve corresponder ao GUID de formatação.|
-|ID|O símbolo representa uma ID e deve ser um inteiro não negativo.|
-|Cadeia de Caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária.|
+|**Subelemento**|**Definição**|
+|Importar|Importa os símbolos do arquivo manifesto dado para uso no manifesto atual.|
+|Guid|O símbolo representa um GUID e deve corresponder à formatação GUID.|
+|ID|O símbolo representa um ID e deve ser um inteiro não negativo.|
+|String|O símbolo representa um valor de corda arbitrário.|
 
- Símbolos são referenciados usando a sintaxe $(symbol-name) e diferencia maiusculas de minúsculas:
+ Os símbolos são sensíveis a maiúsculas e outras referências usando a sintaxe de $(nome símbolo):
 
 ```xml
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >
@@ -84,24 +84,24 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 </Image>
 ```
 
- Alguns símbolos são predefinidos para todos os manifestos. Eles podem ser usados no atributo de Uri do \<fonte > ou \<Import > elemento aos caminhos de referência no computador local.
+ Alguns símbolos são predefinidos para todos os manifestos. Estes podem ser usados \<no atributo Uri do elemento> Fonte ou \<Importação> para referenciar caminhos na máquina local.
 
 |||
 |-|-|
 |**Símbolo**|**Descrição**|
-|CommonProgramFiles|O valor da variável de ambiente % CommonProgramFiles %|
-|LocalAppData|O valor da variável de ambiente % LocalAppData %|
-|ManifestFolder|A pasta que contém o arquivo de manifesto|
-|MyDocuments|O caminho completo da pasta Meus documentos do usuário atual|
-|ProgramFiles|O valor da variável de ambiente % ProgramFiles %|
+|CommonProgramFiles|O valor da variável ambiente %CommonProgramFiles%|
+|LocalAppData|O valor da variável ambiente %LocalAppData%|
+|Pasta de manifesto|A pasta contendo o arquivo manifesto|
+|Mydocuments|O caminho completo da pasta Meus documentos do usuário atual|
+|ProgramFiles|O valor da variável ambiente %ProgramFiles%|
 |Sistema|A pasta Windows\System32|
-|WinDir|O valor da variável de ambiente % WinDir %|
+|Windir|O valor da variável ambiente %WinDir%|
 
- **Image**
+ **Imagem**
 
- O \<imagem > elemento define uma imagem que pode ser referenciada por um moniker. O GUID e ID juntas formam o moniker de imagem. O identificador de origem para a imagem deve ser exclusivo entre a biblioteca de imagem inteira. Se mais de uma imagem tem um identificador de origem determinado, o primeiro encontrado ao compilar a biblioteca é aquele que é mantido.
+ O \<elemento Imagem> define uma imagem que pode ser referenciada por um apelido. O GUID e o ID juntos formam o apelido da imagem. O apelido para a imagem deve ser único em toda a biblioteca de imagens. Se mais de uma imagem tem um nome dado, a primeira encontrada durante a construção da biblioteca é a que é retida.
 
- Ele deve conter pelo menos uma fonte. Embora fontes de tamanho neutro dará os melhores resultados em uma ampla gama de tamanhos, eles não são necessários. Se o serviço é solicitado para uma imagem de um tamanho não definido no \<imagem > elemento e não há neutros em relação ao tamanho da fonte, o serviço será escolher a melhor fonte de tamanho específico e dimensioná-lo para o tamanho solicitado.
+ Deve conter pelo menos uma fonte. Embora fontes neutras de tamanho darão os melhores resultados em uma ampla gama de tamanhos, eles não são necessários. Se o serviço for solicitado para uma imagem \<de um tamanho não definido no elemento Imagem> e não houver uma fonte neutra de tamanho, o serviço escolherá a melhor fonte específica de tamanho e dimensionará-a para o tamanho solicitado.
 
 ```xml
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">
@@ -113,13 +113,13 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |||
 |-|-|
 |**Atributo**|**Definição**|
-|Guid|[Obrigatório] A parte GUID do moniker de imagem|
-|ID|[Obrigatório] A parte de identificação do moniker de imagem|
-|AllowColorInversion|[Opcional, padrão Verdadeiro] Indica se a imagem pode ter suas cores invertidas programaticamente quando usado em um plano de fundo escuro.|
+|Guid|[Necessário] A parte GUID do apelido de imagem|
+|ID|[Necessário] A parte de ID do apelido de imagem|
+|Inversão de cores permitida|[Opcional, padrão verdadeiro] Indica se a imagem pode ter suas cores programáticamente invertidas quando usada em um fundo escuro.|
 
- **Source**
+ **Fonte**
 
- O \<origem > elemento define um ativo de origem única imagem (XAML e PNG).
+ O \<elemento Source> define um único recurso de fonte de imagem (XAML e PNG).
 
 ```xml
 <Source Uri="uri" Background="background">
@@ -130,20 +130,20 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |||
 |-|-|
 |**Atributo**|**Definição**|
-|URI|[Obrigatório] Um URI que define onde a imagem pode ser carregada de. Ele pode ser um dos seguintes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando o aplicativo: autoridade<br /><br /> -Referência de recurso um componente absoluto<br /><br /> -Um caminho para um arquivo que contém um recurso nativo|
-|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada no plano de fundo claro.<br /><br /> - *Escuro*: A fonte pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: A fonte pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o **plano de fundo** atributo for omitido, a origem pode ser usada em qualquer tela de fundo.<br /><br /> Se **plano de fundo** é *luz*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, o cores da fonte nunca são invertidas. Se **plano de fundo** é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada pela imagem **AllowColorInversion** atributo.|
+|Uri|[Necessário] Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> - Um [Pacote URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando a autoridade application:///<br /><br /> - Uma referência absoluta de recursos componentes<br /><br /> - Um caminho para um arquivo contendo um recurso nativo|
+|Segundo plano|[Opcional] Indica o que em tipo de fundo a fonte deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada em um fundo leve.<br /><br /> - *Escuro*: A fonte pode ser usada em um fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer plano de fundo no modo High Contrast.<br /><br /> - *HighContrastLight*: A fonte pode ser usada em um fundo leve no modo High Contrast.<br /><br /> -*HighContrastDark*: A fonte pode ser usada em um fundo escuro no modo High Contrast.<br /><br /> Se o atributo **Fundo** for omitido, a fonte poderá ser usada em qualquer plano de fundo.<br /><br /> Se **O fundo** é *claro,* *escuro,* *highcontrastlight*ou *highcontrastdark,* as cores da fonte nunca são invertidas. Se **O Fundo de Fundo** for omitido ou definido como *HighContrast,* a inversão das cores da fonte será controlada pelo atributo **AllowColorInversion** da imagem.|
 
- Um \<origem > elemento pode ter exatamente um dos seguintes subelementos opcionais:
+ Um \<elemento> Fonte pode ter exatamente um dos seguintes subelementos opcionais:
 
 ||||
 |-|-|-|
-|**Elemento**|**Atributos (todos necessária)**|**Definição**|
-|\<Size>|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|
-|\<SizeRange>|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|
-|\<Dimensões >|Largura, altura|A origem será usada para imagens de determinada largura e altura (em unidades de dispositivo).|
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|A origem será usada para imagens de largura/altura mínimo para a largura/altura máxima (em unidades de dispositivo), inclusive.|
+|**Elemento**|**Atributos (todos necessários)**|**Definição**|
+|\<tamanho>|Valor|A fonte será usada para imagens do tamanho dado (em unidades do dispositivo). A imagem será quadrada.|
+|\<tamanho>|MinSize|A fonte será usada para imagens de MinSize a MaxSize (em unidades de dispositivos) inclusivamente. A imagem será quadrada.|
+|\<Dimensões>|Largura, Altura|A fonte será usada para imagens da largura e altura dada (em unidades do dispositivo).|
+|\<> dimensionrange|MinWidth, MinHeight,<br /><br /> Largura máxima, MaxHeight|A fonte será usada para imagens desde a largura/altura mínima até a largura/altura máxima (em unidades do dispositivo) inclusivamente.|
 
- Um \<origem > elemento também pode ter um recurso opcional \<NativeResource > subelemento, que define um \<fonte > que é carregada a partir de um assembly nativo em vez de um assembly gerenciado.
+ Um \<elemento> fonte também \<pode ter um subelemento \<de> nativo opcional, que define uma fonte> que é carregada a partir de um conjunto nativo em vez de um conjunto gerenciado.
 
 ```xml
 <NativeResource Type="type" ID="int" />
@@ -152,12 +152,12 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |||
 |-|-|
 |**Atributo**|**Definição**|
-|Tipo|[Obrigatório] O tipo do recurso nativo, XAML ou PNG|
-|ID|[Obrigatório] A parte de ID inteiro do recurso nativo|
+|Type|[Necessário] O tipo de recurso nativo, xaml ou PNG|
+|ID|[Necessário] A parte de ID inteiro do recurso nativo|
 
- **ImageList**
+ **Imagelist**
 
- O \<ImageList > elemento define uma coleção de imagens que podem ser retornadas em uma única faixa. A faixa é criada sob demanda, conforme necessário.
+ O \<elemento ImageList> define uma coleção de imagens que podem ser devolvidas em uma única tira. A tira é construída sob demanda, conforme necessário.
 
 ```xml
 <ImageList>
@@ -169,64 +169,64 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |||
 |-|-|
 |**Atributo**|**Definição**|
-|Guid|[Obrigatório] A parte GUID do moniker de imagem|
-|ID|[Obrigatório] A parte de identificação do moniker de imagem|
-|Externo|[Opcional, padrão é false] Indica se o moniker de imagem faz referência a uma imagem no manifesto do atual.|
+|Guid|[Necessário] A parte GUID do apelido de imagem|
+|ID|[Necessário] A parte de ID do apelido de imagem|
+|Externo|[Opcional, padrão falso] Indica se o apelido da imagem faz referência a uma imagem no manifesto atual.|
 
- O identificador de origem para a imagem independente não tem que fazer referência a uma imagem definida no manifesto do atual. Se a imagem independente não for encontrada na biblioteca de imagem, uma imagem de espaço reservado em branco será usada em seu lugar.
+ O apelido para a imagem contida não precisa fazer referência a uma imagem definida no manifesto atual. Se a imagem contida não puder ser encontrada na biblioteca de imagens, uma imagem de espaço reservado em branco será usada em seu lugar.
 
 ## <a name="how-to-use-the-tool"></a>Como usar a ferramenta
- **Validando um manifesto de imagem personalizada**
+ **Validando um manifesto de imagem personalizado**
 
- Para criar um manifesto personalizado, é recomendável que você use a ferramenta ManifestFromResources para gerar automaticamente o manifesto. Para validar o manifesto personalizado, inicie o Visualizador da biblioteca de imagens e selecione Arquivo > Definir caminhos... para abrir a caixa de diálogo de pesquisa de diretórios. A ferramenta usará os diretórios de pesquisa para carregar os manifestos de imagem, mas ele também usá-lo para localizar os arquivos. dll que contêm as imagens em um manifesto, certifique-se de incluir o manifesto e os diretórios DLL nesta caixa de diálogo.
+ Para criar um manifesto personalizado, recomendamos que você use a ferramenta ManifestFromResources para gerar automaticamente o manifesto. Para validar o manifesto personalizado, inicie o Visualizador da Biblioteca de Imagens e selecione > Defina caminhos... para abrir a caixa de diálogo Diretórios de pesquisa. A ferramenta usará os diretórios de pesquisa para carregar manifestos de imagem, mas também os usará para encontrar os arquivos .dll que contêm as imagens em um manifesto, por isso certifique-se de incluir os diretórios manifesto e DLL nesta caixa de diálogo.
 
- ![Pesquisa do Visualizador de biblioteca de imagem](../../extensibility/internals/media/image-library-viewer-search.png "pesquisa do Visualizador de biblioteca de imagem")
+ ![Pesquisa do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-search.png "Pesquisa do visualizador da biblioteca de imagens")
 
- Clique em **adicionar...**  selecionar novos diretórios de pesquisa para procurar manifestos e suas DLLs correspondentes. A ferramenta irão se lembrar desses diretórios de pesquisa, e pode ser ativados ou desativado, marcando ou desmarcando um diretório.
+ Clique **em Adicionar...** para selecionar novos diretórios de pesquisa para procurar manifestos e seus DLLs correspondentes. A ferramenta lembrará desses diretórios de pesquisa, e eles podem ser ligados ou desligados verificando ou desverificando um diretório.
 
- Por padrão, a ferramenta tentará localizar o diretório de instalação do Visual Studio e adicionar esses diretórios à lista de diretórios de pesquisa. Você pode adicionar manualmente os diretórios para que a ferramenta não encontra.
+ Por padrão, a ferramenta tentará encontrar o diretório de instalação do Visual Studio e adicionar esses diretórios à lista de diretórios de pesquisa. Você pode adicionar manualmente diretórios que a ferramenta não encontra.
 
- Depois que todos os manifestos são carregados, a ferramenta pode ser usada para ativar/desativar **plano de fundo** cores **DPI**, **alto contraste**, ou **escala de cinza** para as imagens para que um usuário possa inspecionar visualmente os ativos de imagem para verificar se estão sendo processados corretamente para várias configurações.
+ Uma vez que todos os manifestos são carregados, a ferramenta pode ser usada para alternar cores **de fundo,** **DPI,** **alto contraste**ou **acinzentado** para as imagens para que o usuário possa inspecionar visualmente os ativos de imagem para verificar se eles estão sendo renderizados corretamente para várias configurações.
 
- ![Imagem de plano de fundo de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-background.png "imagem de plano de fundo de Visualizador de biblioteca")
+ ![Fundo do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-background.png "Fundo do visualizador da biblioteca de imagens")
 
- A cor do plano de fundo pode ser definida como claro, escuro ou um valor personalizado. Selecionar "Cor personalizada" abrirá uma caixa de diálogo de seleção de cor e adicione essa cor personalizada na parte inferior da caixa de combinação de plano de fundo fácil de lembrar mais tarde.
+ A cor de fundo pode ser definida como Luz, Escuro ou um valor personalizado. A seleção de "Cor personalizada" abrirá uma caixa de diálogo de seleção de cores e adicionará essa cor personalizada à parte inferior da caixa de combinação de fundo para fácil recordação mais tarde.
 
- ![Cor personalizada do Visualizador de biblioteca de imagem](../../extensibility/internals/media/image-library-viewer-custom-color.png "cor personalizada do Visualizador de biblioteca de imagem")
+ ![Cor personalizada do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-custom-color.png "Cor personalizada do visualizador da biblioteca de imagens")
 
- Selecionar um moniker de imagem exibe as informações para cada imagem real por trás desse moniker no painel de detalhes da imagem à direita. O painel também permite que os usuários copiem um moniker por nome ou valor bruto GUID:ID.
+ Selecionar um apelido de imagem exibe as informações para cada imagem real por trás desse apelido no painel Detalhes da imagem à direita. O painel também permite que os usuários copiem um apelido pelo nome ou pelo valor bruto GUID:ID.
 
- ![Detalhes da biblioteca de imagem Visualizador de imagem](../../extensibility/internals/media/image-library-viewer-image-details.png "detalhes da biblioteca de imagem Visualizador de imagem")
+ ![Detalhes da imagem do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-image-details.png "Detalhes da imagem do visualizador da biblioteca de imagens")
 
- As informações exibidas para cada fonte de imagem incluem o tipo de plano de fundo para exibi-lo, se ele pode ser com tema ou dá suporte a alto contraste, quais são os tamanhos é válido para ou é neutro de tamanho e se a imagem é proveniente de um assembly nativo.
+ As informações exibidas para cada fonte de imagem incluem que tipo de plano de fundo exibi-lo, se pode ser temático ou suporta Alto Contraste, para quais tamanhos é válido ou se é neutro em tamanho e se a imagem vem de uma montagem nativa.
 
- ![Visualizador da biblioteca de imagem pode tema](../../extensibility/internals/media/image-library-viewer-can-theme.png "Visualizador da biblioteca de imagem pode tema")
+ ![Espectador da biblioteca de imagens pode tema](../../extensibility/internals/media/image-library-viewer-can-theme.png "Espectador da biblioteca de imagens pode tema")
 
- Ao validar um manifesto de imagem, é recomendável que você implante a imagem DLL em seus locais do mundo real e o manifesto. Isso vai verificar se todos os caminhos relativos estão funcionando corretamente e que a biblioteca de imagens pode localizar e carregar a DLL de imagem e o manifesto.
+ Ao validar um manifesto de imagem, recomendamos que você implante o DLL manifesto e de imagem em suas localizações reais. Isso verificará se quaisquer caminhos relativos estão funcionando corretamente e que a biblioteca de imagens pode encontrar e carregar o manifesto e a DLL de imagem.
 
- **Pesquisando o catálogo de imagens KnownMonikers**
+ **Procurando por catálogo de imagens KnownMonikers**
 
- Para melhor corresponder ao estilo do Visual Studio, uma extensão do Visual Studio pode usar imagens no catálogo de imagens do Visual Studio em vez de criar e usar seu próprio. Isso tem a vantagem de não precisar manter essas imagens e garante que a imagem terá uma imagem de backup com alto DPI para que pareça correto no Visual Studio dá suporte a todas as configurações de DPI.
+ Para melhor combinar com o estilo visual studio, uma extensão do Visual Studio pode usar imagens no Visual Studio Image Catalog em vez de criar e usar o seu próprio. Isso tem o benefício de não ter que manter essas imagens, e garante que a imagem terá uma imagem de suporte de alta DPI, por isso deve parecer correta em todas as configurações de DPI que o Visual Studio suporta.
 
- O Visualizador da biblioteca de imagem permite que um manifesto a ser pesquisado para que um usuário possa localizar o identificador de origem que representa um ativo de imagem e usar esse moniker no código. Para procurar imagens, insira o termo de pesquisa desejada na caixa de pesquisa e pressione Enter. A barra de status na parte inferior exibirá quantas correspondências foram encontradas fora do total de imagens em todos os manifestos.
+ O visualizador da biblioteca de imagens permite que um manifesto seja pesquisado para que um usuário possa encontrar o apelido que representa um ativo de imagem e usar esse apelido em código. Para procurar imagens, digite o termo de pesquisa desejado na caixa de pesquisa e pressione Enter. A barra de status na parte inferior exibirá quantas correspondências foram encontradas fora do total de imagens em todos os manifestos.
 
- ![Filtro do Visualizador de biblioteca de imagem](../../extensibility/internals/media/image-library-viewer-filter.png "filtro do Visualizador de biblioteca de imagem")
+ ![Filtro de visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-filter.png "Filtro de visualizador da biblioteca de imagens")
 
- Ao procurar identificadores de origem de imagem nos manifestos existentes, é recomendável que você procure e use somente os monikers do catálogo Visual Studio imagem, outros monikers intencionalmente publicamente acessíveis ou suas própria monikers personalizados. Se você usar monikers não públicos, interface do usuário personalizada pode ser interrompida ou suas imagens mudaram de maneiras inesperadas se ou quando os monikers não públicos e imagens são alteradas ou atualizadas.
+ Ao procurar apelidos de imagem em manifestos existentes, recomendamos que você procure e use apenas os apelidos do Visual Studio Image Catalog, outros apelidos intencionalmente acessíveis ao público ou seus próprios apelidos personalizados. Se você usar apelidos não públicos, a ui personalizada pode ser quebrada ou ter suas imagens alteradas de maneiras inesperadas se ou quando esses apelidos e imagens não públicas forem alterados ou atualizados.
 
- Além disso, é possível pesquisar pelo GUID. Esse tipo de pesquisa é útil para filtrar a lista para um único manifesto ou única subseção de um manifesto se esse manifesto contém vários GUIDs.
+ Além disso, a busca por GUID é possível. Este tipo de pesquisa é útil para filtrar a lista para um único manifesto, ou subseção única de um manifesto se esse manifesto contiver vários GUIDs.
 
- ![Filtro do Visualizador de biblioteca GUID da imagem](../../extensibility/internals/media/image-library-viewer-filter-guid.png "biblioteca visualizador filtro GUID de imagem")
+ ![Guia do filtro do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-filter-guid.png "Guia do filtro do visualizador da biblioteca de imagens")
 
- Por fim, pesquisar por ID é possível também.
+ Finalmente, a busca por ID também é possível.
 
- ![ID de filtro do Visualizador de biblioteca de imagem](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID de filtro do Visualizador de biblioteca de imagem")
+ ![ID do filtro do visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID do filtro do visualizador da biblioteca de imagens")
 
 ## <a name="notes"></a>Observações
 
-- Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers
+- Por padrão, a ferramenta puxará vários manifestos de imagem presentes no diretório de instalação do Visual Studio. O único que tem apelidos de consumo público é o manifesto **Microsoft.VisualStudio.ImageCatalog.** GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 **(não** anular este GUID em um manifesto personalizado) Tipo: KnownMonikers
 
-- A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.
+- A ferramenta tenta o lançamento para carregar todas as manifestações de imagem que encontra, então pode levar vários segundos para que o aplicativo realmente apareça. Também pode ser lento ou não durante o carregamento dos manifestos.
 
-## <a name="sample-output"></a>Saída de Exemplo
- Essa ferramenta não gera nenhuma saída.
+## <a name="sample-output"></a>Saída de exemplo
+ Esta ferramenta não gera nenhuma saída.

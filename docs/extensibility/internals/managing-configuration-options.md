@@ -1,55 +1,55 @@
 ---
-title: Gerenciar opções de configuração | Microsoft Docs
+title: Gerenciamento de opções de configuração | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e093b3af6c0db75282d12f8766d36bc511d2cf4c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707303"
 ---
 # <a name="managing-configuration-options"></a>Gerenciando opções de configuração
-Quando você cria um novo tipo de projeto, você deve gerenciar definições de configuração do projeto e solução que determinam como o projeto será compilado, empacotado, implantados e execução. Os tópicos a seguir abordam a configuração de projeto e solução.
+Ao criar um novo tipo de projeto, você deve gerenciar as configurações de configuração de projeto e solução que determinam como seu projeto será construído, embalado, implantado e executado. Os tópicos a seguir discutem a configuração de projetos e soluções.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Visão geral](../../extensibility/internals/configuration-options-overview.md)
 
- Descreve como projetos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode dar suporte a várias configurações.
+ Descreve como os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos podem suportar várias configurações.
 
-- [Páginas de propriedade](../../extensibility/internals/property-pages.md)
+- [Páginas de propriedades](../../extensibility/internals/property-pages.md)
 
- Explica o que os usuários podem exibir e alterar propriedades de configuração de projeto dependentes e independentes propriedades por meio de páginas de propriedade.
+ Explica que os usuários podem visualizar e alterar propriedades dependentes da configuração do projeto e propriedades independentes usando páginas de propriedade.
 
 - [Configuração da solução](../../extensibility/internals/solution-configuration.md)
 
- Fornece informações sobre o que é armazenado em configurações da solução e como as configurações da solução direcionam o comportamento do **inicie** e **Build** comandos.
+ Fornece informações sobre o que é armazenado nas configurações da solução e como as configurações da solução direcionam o comportamento dos comandos **Iniciar** e **Construir.**
 
-- [Objeto de configuração do projeto](../../extensibility/internals/project-configuration-object.md)
+- [Objeto de configuração de projeto](../../extensibility/internals/project-configuration-object.md)
 
- Explica como o objeto de configuração do projeto gerencia a exibição de informações de configuração para a interface do usuário.
+ Explica como o objeto de configuração do projeto gerencia a exibição de informações de configuração para a ia de ia.
 
-- [Configuração do projeto para compilação](../../extensibility/internals/project-configuration-for-building.md)
+- [Configuração de projeto para compilar](../../extensibility/internals/project-configuration-for-building.md)
 
- Explica como uma lista de configurações da solução para uma determinada solução é gerenciada pelo **configurações da solução** caixa de diálogo.
+ Explica como uma lista de configurações de solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações de **solução.**
 
-- [Configuração do projeto para gerenciar a implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md)
+- [Configuração de projeto para gerenciar a implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 
- Define a ação de implantação e as duas formas de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a projetos que dão suporte à implantação.
+ Define o ato de implantação [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e as duas formas de apoiar projetos que apoiam a implantação.
 
-- [Configuração do projeto para saída](../../extensibility/internals/project-configuration-for-output.md)
+- [Configuração de projeto para saída](../../extensibility/internals/project-configuration-for-output.md)
 
- Explica os processos de compilação que podem dar suporte a todas as configurações e as interfaces e métodos por qual saída itens podem ser disponibilizados.
+ Explica os processos de compilação que cada configuração pode suportar e as interfaces e métodos pelos quais os itens de saída podem ser disponibilizados.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Tipos de projeto](../../extensibility/internals/project-types.md)
 
- Fornece uma visão geral dos projetos como blocos de construção básicos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). São fornecidos links para tópicos adicionais que explicam como projetos de controle de criação e compilação de código.
+ Fornece uma visão geral dos projetos como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] os blocos básicos de construção do ambiente de desenvolvimento integrado (IDE). Links são fornecidos para tópicos adicionais que explicam como os projetos controlam a construção e compilação de códigos.

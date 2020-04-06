@@ -1,52 +1,52 @@
 ---
-title: Tabela de comando do Visual Studio (. Arquivos VSCT) | Microsoft Docs
+title: Tabela de Comando do Visual Studio (. Vsct) Arquivos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd39cfe801df1393ab099e691fbf34021ead70fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332938"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704033"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Arquivos .Vsct (Visual Studio Command Table)
-Um arquivo de configuração da tabela de comando é um arquivo de texto que descreve o conjunto de comandos que contém um VSPackage. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando compilador tabela (VSCT) compila a configuração baseada em XML (arquivos. VSCT) em arquivos de saída (CTO já) da tabela de comando binário. Os arquivos de CTO já resultantes são iguais aos que são criados usando o compilador de tabela (CTC) do comando para compilar os arquivos de configuração. ctc. No entanto, os arquivos. VSCT de baseado em XML tem algumas vantagens, como um editor de XML e o IntelliSense XML.
+Um arquivo de configuração da tabela de comando é um arquivo de texto que descreve o conjunto de comandos que um VSPackage contém. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] compilador da tabela de comando (VSCT) compila arquivos de configuração baseados em XML (arquivos.vsct) em arquivos de saída de tabela de comando binário (.cto). Os arquivos .cto resultantes são os mesmos que são criados usando o compilador da tabela de comando (CTC) para compilar arquivos de configuração .ctc. No entanto, os arquivos .vsct baseados em XML têm algumas vantagens, como um editor XML e o XML IntelliSense.
 
- Para saber mais sobre a sintaxe e semântica de arquivos. VSCT, consulte [criar tabela de comando de XML (. Arquivos de VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+ Para saber mais sobre a sintaxe e semântica dos arquivos .vsct, consulte [Designing XML Command Table (. Vsct) Arquivos](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
 ## <a name="in-this-section"></a>Nesta seção
  [Projetar arquivos da tabela de comandos XML (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
- Descreve como criar arquivos. VSCT.
+ Descreve como projetar arquivos .vsct.
 
- [Como: criar um arquivo .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+ [Como criar um arquivo .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
- Compara os métodos para a criação de um arquivo. VSCT. Descreve o processo de criação manual de um novo arquivo. VSCT.
+ Compara os métodos para criar um arquivo .vsct. Descreve o processo para criar manualmente um novo arquivo .vsct.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Referência do esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)
 
- Fornece detalhes sobre cada seção do arquivo de configuração do XML do comando tabela.
+ Fornece detalhes sobre cada seção do arquivo de configuração XML da tabela de comando.
 
- [Configuração da tabela de comando (. Arquivos CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) apresenta uma visão geral do formato de arquivo. ctc preterido.
+ [Configuração da tabela de comando (. Ctc) Arquivos](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) Apresenta uma visão geral do formato de arquivo .ctc depreciado.
 
  [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Descreve a especificação de formato de tabela do comando.
+ Descreve a especificação do formato da tabela de comando.
 
  [Recursos em VSPackages](../../extensibility/internals/resources-in-vspackages.md)
 
- Descreve como usar os recursos gerenciados e em VSPackages gerenciados.
+ Descreve como usar recursos gerenciados e não gerenciados em VSPackages gerenciados.
 
  [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)
 
- Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comando.
+ Explica como criar uma ia que inclua menus, barras de ferramentas e caixas de comando.

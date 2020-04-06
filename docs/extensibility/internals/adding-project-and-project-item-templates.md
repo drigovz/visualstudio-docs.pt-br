@@ -1,76 +1,76 @@
 ---
-title: Adicionando o projeto e modelos de Item de projeto | Microsoft Docs
+title: Adicionando modelos de itens de projeto e projeto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315857"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710203"
 ---
-# <a name="add-project-and-project-item-templates"></a>Adicione o projeto e modelos de item de projeto
-Quando você cria seus próprios tipos de projeto, você deve fornecer suporte para adição de novos projetos e itens de projeto usando o padrão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrado caixas de diálogo (IDE) do ambiente de desenvolvimento. Os tópicos a seguir discutem as técnicas diferentes para adicionar projetos e itens de projeto.
+# <a name="add-project-and-project-item-templates"></a>Adicionar modelos de itens de projeto e projeto
+Ao criar seus próprios tipos de projeto, você deve fornecer suporte para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] adicionar novos projetos e itens de projeto usando as caixas de diálogo padrão do ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem diferentes técnicas para aadição de projetos e itens do projeto.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Contexto do projeto](../../extensibility/internals/project-context.md)
 
- Explica o que o projeto fornece a maioria das informações de contexto para o que ocorre no ambiente.
+ Explica que o projeto fornece a maior parte das informações de contexto para o que acontece no ambiente.
 
 - [Prioridade do projeto](../../extensibility/internals/project-priority.md)
 
- Explica o que um item de projeto geralmente é um membro de um projeto para ajudar a evitar a ambiguidade sobre o qual o projeto é usado para abrir o item.
+ Explica que um item do projeto geralmente é membro de um projeto para ajudar a evitar a ambiguidade sobre qual projeto é usado para abrir o item.
 
 - [Projeto arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md)
 
- Fornece informações sobre os dois tipos de editores que podem ser usados para abrir arquivos em um projeto e a função que o projeto é reproduzido na determinação de qual editor a ser usado quando um item de projeto é aberto.
+ Fornece informações sobre os dois tipos de editores que podem ser usados para abrir arquivos em um projeto e o papel que o projeto desempenha na determinação de qual editor usar quando um item do projeto é aberto.
 
-- [Registrar os modelos de projeto e de item](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registre modelos de projetos e itens](../../extensibility/internals/registering-project-and-item-templates.md)
 
- Explica o que ocorre quando um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeto é criado.
+ Explica o que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ocorre quando um projeto é criado.
 
-- [Adicionar itens à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Adicionar itens à caixa de diálogo Adicionar novo item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- Explica o processo de adição de itens para o **Adicionar Novo Item** caixa de diálogo.
+ Explica o processo de adição de itens à caixa de diálogo **Adicionar novo item.**
 
-- [Adicionar diretórios à caixa de diálogo Novo projeto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [Adicionar diretórios à caixa de diálogo do Novo Projeto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- Fornece um exemplo de como registrar um novo diretório que contém os modelos personalizados, disponibilizados por um VSPackage.
+ Fornece um exemplo de registro de um novo diretório que contém modelos personalizados disponibilizados por um VSPackage.
 
-- [Adicionar diretórios à caixa de diálogo Adicionar Novo Item](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [Adicionar diretórios à caixa de diálogo Adicionar novo item](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Fornece um exemplo de como registrar um novo conjunto de diretórios para o **Adicionar Novo Item** caixa de diálogo.
+ Fornece um exemplo de registro de um novo conjunto de diretórios para a caixa de diálogo **Adicionar novo item.**
 
-- [Comandos definidos pelo IDE para estender sistemas de projeto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Comandos definidos pelo IDE para a ampliação de sistemas de projeto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Lista os diferentes tipos de itens de comando usados para estender sistemas de projeto.
+ Lista diferentes tipos de itens de comando usados para estender sistemas de projeto.
 
 - [CATIDs para objetos que normalmente são usados para estender projetos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- Lista CATIDs para objetos que são usados para estender [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sistemas de projeto.
+ Lista CATIDs para objetos [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]são [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] usados para estender , e sistemas de projeto.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Como: Editores abertos específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Como: Abrir editores específicos de projetos](../../extensibility/how-to-open-project-specific-editors.md)
 
- Fornece instruções passo a passo para abrir um item intrinsecamente associado a um editor específico para um projeto.
+ Fornece instruções passo-a-passo para abrir um item intrinsecamente vinculado a um editor específico para um projeto.
 
 - [Como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
 
- Fornece instruções passo a passo para abrir um editor padrão.
+ Fornece instruções passo-a-passo para abrir um editor padrão.
 
-- [Subtipos de projeto](../../extensibility/internals/project-subtypes.md)
+- [Subtipos do projeto](../../extensibility/internals/project-subtypes.md)
 
- Fornece links para tópicos conceituais do subtipo de projeto. Estendem o subtipos do projeto existente [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projetos.
+ Fornece links para tópicos conceituais do subtipo do projeto. Os subtipos do [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto ampliam os projetos existentes.
 
-- [Tipos de projeto](../../extensibility/internals/project-types.md)
+- [Tipos de projetos](../../extensibility/internals/project-types.md)
 
- Fornece links para tópicos adicionais que oferecem informações sobre como criar novos tipos de projeto.
+ Fornece links para tópicos adicionais que oferecem informações sobre como projetar novos tipos de projetos.

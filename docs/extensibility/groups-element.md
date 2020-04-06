@@ -1,22 +1,22 @@
 ---
-title: Elemento Groups | Microsoft Docs
+title: Elemento grupos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f56ab0ea97026d6162a40e5be481e78904d75315
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342329"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711181"
 ---
 # <a name="groups-element"></a>Elemento Groups
 Contém entradas que definem os grupos de comando de um VSPackage.
@@ -43,14 +43,14 @@ Contém entradas que definem os grupos de comando de um VSPackage.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento Group](../extensibility/group-element.md)|Representa um grupo único comando.|
-|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|
+|[Elemento Group](../extensibility/group-element.md)|Representa um único grupo de comando.|
+|[Elemento de grupos](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas do VSPackage.|
+|[Elemento comandos](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|
 
 ## <a name="example"></a>Exemplo
 
@@ -62,6 +62,6 @@ Contém entradas que definem os grupos de comando de um VSPackage.
 </Groups>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Confira também
+- [Como o VSPackages adiciona elementos de interface de usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

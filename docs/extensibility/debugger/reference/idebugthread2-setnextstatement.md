@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87a5ba19eed0c0ee4d78feeb755b50db428d77d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320082"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718657"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Define o ponteiro de instrução atual para o contexto de código fornecida.
+Define o ponteiro de instrução atual para o contexto de código dado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,26 +41,26 @@ int SetNextStatement ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pStackFrame`\
-Reservado para uso futuro; definido como um valor nulo.
+Reservado para uso futuro; definido para um valor nulo.
 
 `pCodeContext`\
-[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que descreve o local do código prestes a ser executada e seu contexto.
+[em] Um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que descreve o local de código prestes a ser executado e seu contexto.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os outros valores possíveis.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. A tabela a seguir mostra outros valores possíveis.
 
 |Valor|Descrição|
 |-----------|-----------------|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|A próxima instrução não pode ser em um quadro de pilha mais profundo na pilha do quadro.|
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|A próxima instrução não está associada com qualquer quadro na pilha.|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Alguns mecanismos de depuração não é possível definir a próxima instrução após uma exceção.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|A próxima declaração não pode estar em um quadro de pilha mais profundo na pilha de quadros.|
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|A próxima declaração não está associada a nenhum quadro na pilha.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Alguns mecanismos de depuração não podem definir a próxima declaração após uma exceção.|
 
 ## <a name="remarks"></a>Comentários
- O ponteiro de instrução indica a próxima instrução ou instrução para executar. Esse método é usado para tentar novamente uma linha de código-fonte ou para forçar a execução continue em outra função, por exemplo.
+ O ponteiro de instrução indica a próxima instrução ou instrução a ser executada. Este método é usado para tentar novamente uma linha de código fonte ou para forçar a execução a continuar em outra função, por exemplo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45cbe8cd1b68e1681b07fcdf1fc715973a11295
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722393"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Essa interface é usada por nós de programa para especificar todos os possíveis depuração mecanismos (DES) que podem depurá-lo.
+Esta interface é usada por nós de programa para especificar todos os possíveis mecanismos de depuração (DE) que podem depurar este programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,31 +28,31 @@ Essa interface é usada por nós de programa para especificar todos os possívei
 IDebugProgramEngines2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- A DE ou de um fornecedor de porta personalizada implementa essa interface no mesmo objeto que implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para dar suporte ao estabelecimento de uma DE específico a ser usado para um determinado programa.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um dede ou um fornecedor de porta personalizado implementa essa interface no mesmo objeto que implementa [o IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para suportar o estabelecimento de um DE específico para usar em um programa específico.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chame [QueryInterface](/cpp/atl/queryinterface) em um `IDebugProgramNode2` interface para obter essa interface.
+ Ligue para o `IDebugProgramNode2` [QueryInterface](/cpp/atl/queryinterface) em uma interface para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugProgramEngines2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugProgramEngines2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indica o DEs possíveis que podem depurar este programa.|
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Seleciona o DE ser usado para depurar este programa.|
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indica todos os possíveis DEs que podem depurar este programa.|
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Seleciona o DE para usar para depurar este programa.|
 
 ## <a name="remarks"></a>Comentários
- Depois que a DE é escolhida pelo usuário, essa opção está registrada com o nó de programa chamando [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). O mecanismo selecionado se tornará o mecanismo retornado por [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
+ Uma vez que um DE é escolhido pelo usuário, essa escolha é registrada no nó do programa ligando para [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). O motor selecionado torna-se o motor retornado pelo [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)
