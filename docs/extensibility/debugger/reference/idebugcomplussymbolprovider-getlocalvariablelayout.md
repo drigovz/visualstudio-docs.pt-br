@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c92bdab6c3bbe7196e5f1df68758bcce4a9f2063
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336770"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733856"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-Recupera o layout de variáveis locais para um conjunto de métodos.
+Recupera o layout das variáveis locais para um conjunto de métodos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,27 +46,27 @@ int GetLocalVariablelayout(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ulAppDomainID`\
-[in] Identificador do domínio do aplicativo.
+[em] Identificador do domínio do aplicativo.
 
 `guidModule`\
-[in] Identificador exclusivo do módulo.
+[em] Identificador único do módulo.
 
 `cMethods`\
-[in] Número do método de tokens no `rgMethodTokens` matriz.
+[em] Número de tokens `rgMethodTokens` de método na matriz.
 
 `rgMethodTokens`\
-[in] Matriz de tokens de método.
+[em] Matriz de tokens de método.
 
 `pStreamLayout`\
-[out] Um fluxo de texto que contém o layout de variáveis.
+[fora] Um fluxo de texto que contém o layout variável.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
@@ -113,5 +113,5 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

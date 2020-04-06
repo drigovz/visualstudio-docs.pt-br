@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347419"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719126"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-Recupera informações sobre os módulos no grupo de símbolo.
+Recupera informações sobre os módulos no grupo símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pCount`\
-[in] Número de módulos no `ppGuids` matriz.
+[em] Número de módulos `ppGuids` na matriz.
 
 `ppGuids`\
-[in] Matriz que contém os identificadores exclusivos para os módulos.
+[em] Matriz que contém os identificadores exclusivos para os módulos.
 
 `pADIds`\
-[in] Identificadores para os domínios de aplicativo.
+[em] Identificadores para os domínios do aplicativo.
 
 `pCurrentState`\
-[in] Estado atual do grupo de símbolo.
+[em] Estado atual do grupo símbolo.
 
 `ppCDModItfs`\
-[out] Retorna um objeto que contém os módulos no grupo de símbolo.
+[fora] Retorna um objeto que contém os módulos no grupo símbolo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

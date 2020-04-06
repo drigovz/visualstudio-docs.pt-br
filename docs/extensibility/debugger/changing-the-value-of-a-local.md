@@ -1,50 +1,50 @@
 ---
-title: Alterando o valor de um Local | Microsoft Docs
+title: Alterando o valor de um local | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 998200420cf2ec5e0b021a415cdb9d287b1362db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98e40e4b6ea10bb6ff1242f23f1b6dd83ce0c0cd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739142"
 ---
-# <a name="change-the-value-of-a-local"></a>Altere o valor de um local
+# <a name="change-the-value-of-a-local"></a>Alterar o valor de um local
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Quando um novo valor é digitado no campo de valor de **Locals** janela, o pacote de depuração passa a cadeia de caracteres, como digitado, o avaliador de expressão (EE). O EE avalia essa cadeia de caracteres, que pode conter um valor simples ou uma expressão e armazena o valor resultante no local associado.
+ Quando um novo valor é digitado no campo de valor da janela **Locais,** o pacote de depuração passa a seqüência, conforme digitado, para o avaliador de expressão (EE). O EE avalia essa string, que pode conter um valor simples ou uma expressão, e armazena o valor resultante no local associado.
 
- Isso é uma visão geral do processo de alteração do valor de um local:
+ Esta é uma visão geral do processo de alteração do valor de um local:
 
-1. Depois que o usuário inserir o novo valor, o Visual Studio chama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) sobre o [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto associado ao local.
+1. Depois que o usuário insere o novo valor, o Visual Studio chama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) no objeto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) associado ao local.
 
-2. `IDebugProperty2::SetValueAsString` executa as seguintes tarefas:
+2. `IDebugProperty2::SetValueAsString` realiza as seguintes tarefas:
 
-   1. Avalia a cadeia de caracteres para produzir um valor.
+   1. Avalia a corda para produzir um valor.
 
-   2. Associa o associados [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto para obter uma [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.
+   2. Vincula o objeto [IDebugField](../../extensibility/debugger/reference/idebugfield.md) associado para obter um objeto [IDebugObject.](../../extensibility/debugger/reference/idebugobject.md)
 
    3. Converte o valor em uma série de bytes.
 
-   4. Chamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar os bytes do valor na memória para que o programa que está sendo depurado possa acessá-los.
+   4. Chama [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar os bytes do valor na memória para que o programa que está sendo depurado possa acessá-los.
 
-3. O Visual Studio atualizará os **Locals** exibir (consulte [exibindo locais](../../extensibility/debugger/displaying-locals.md) para obter detalhes).
+3. O Visual Studio atualiza a exibição **local** (veja Exibindo locais para obter [detalhes).](../../extensibility/debugger/displaying-locals.md)
 
-   Esse procedimento também é usado para alterar o valor de uma variável na **Watch** janela, exceto que ele é o `IDebugProperty2` objeto associado com o valor do local que é usado em vez do `IDebugProperty2` objeto associado ao local em si.
+   Este procedimento também é usado para alterar o valor de uma `IDebugProperty2` variável na janela **do relógio,** exceto que é o objeto associado ao valor do local que é usado em vez do `IDebugProperty2` objeto associado ao próprio local.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Exemplo de implementação de valores de variáveis](../../extensibility/debugger/sample-implementation-of-changing-values.md) usa o exemplo MyCEE para percorrer o processo de alteração de valores.
+ [Implementação amostral de valores de mudança](../../extensibility/debugger/sample-implementation-of-changing-values.md) Usa a amostra MyCEE para passar pelo processo de mudança de valores.
 
-## <a name="see-also"></a>Consulte também
-- [Escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Exibir locals](../../extensibility/debugger/displaying-locals.md)
+## <a name="see-also"></a>Confira também
+- [Escrevendo um avaliador de expressão CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Exibindo locais](../../extensibility/debugger/displaying-locals.md)

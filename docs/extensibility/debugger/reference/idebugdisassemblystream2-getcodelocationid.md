@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
+title: IDebugDisassemblyStream2:GetCodeLocationId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732247"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Retorna um identificador de local de código para um contexto de código em particular.
+Retorna um identificador de localização de código para um contexto de código específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ int GetCodeLocationId( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pCodeContext`\
-[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto a ser convertido em um identificador.
+[em] Um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) a ser convertido em um identificador.
 
-`puCodeLocationId` [out] Retorna o identificador de local do código. Consulte Observações.
+`puCodeLocationId`[fora] Retorna o identificador de localização do código. Consulte Observações.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_CODE_CONTEXT_OUT_OF_SCOPE` se o contexto de código é válido, mas fora do escopo.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_CODE_CONTEXT_OUT_OF_SCOPE` se o contexto de código for válido, mas fora do escopo.
 
 ## <a name="remarks"></a>Comentários
- O identificador de local do código é específico para o mecanismo de depuração (DES) com suporte a desmontagem. Esse identificador de local é usado internamente pelo DE rastrear posições no código e normalmente é um endereço ou o deslocamento de algum tipo. O único requisito é que, se o contexto de código de um único local é menor que o contexto de código de outro local, em seguida, o identificador de local de código correspondente o primeira de contexto de código também deve ser menor que o identificador de localização do código do segundo contexto de código.
+ O identificador de localização de código é específico para o mecanismo de depuração (DE) que suporta a desmontagem. Este identificador de localização é usado internamente pelo DE para rastrear posições no código e é tipicamente um endereço ou deslocamento de algum tipo. O único requisito é que se o contexto de código de um local for menor do que o contexto de código de outro local, então o identificador de localização de código correspondente do primeiro contexto de código também deve ser menor do que o identificador de localização de código do segundo contexto de código.
 
- Para recuperar o contexto de código de um identificador de local do código, chame o [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) método.
+ Para recuperar o contexto de código de um identificador de localização de código, chame o método [GetCodeContext.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
