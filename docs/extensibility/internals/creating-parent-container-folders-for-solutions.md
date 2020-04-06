@@ -1,29 +1,29 @@
 ---
-title: Criando pastas de contêiner pai para soluções | Microsoft Docs
+title: Criando pastas de contêineres-pais para soluções | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50800e527c6e79100bf699172f7fc30881b3299
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332738"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709098"
 ---
-# <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner para soluções de pai
-No código-fonte controle plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).
+# <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner pai para soluções
+Na API Plug-in de controle de origem Versão 1.2, um usuário pode especificar um único destino de controle de origem raiz para todos os projetos da Web dentro da solução. Esta única raiz é chamada de Raiz Super Unificada (SUR).
 
- Na fonte de controle de plug-in API versão 1.1, se o usuário tiver adicionado uma solução multiprojeto ao controle do código-fonte, o usuário foi solicitado a especificar um destino de controle de origem para cada projeto da web.
+ Na API Plug-in de controle de origem Versão 1.1, se o usuário adicionasse uma solução de vários projetos ao controle de origem, o usuário seria solicitado a especificar um destino de controle de origem para cada projeto web.
 
-## <a name="new-capability-flags"></a>Novos sinalizadores de recurso
+## <a name="new-capability-flags"></a>Novas bandeiras de capacidade
  `SCC_CAP_CREATESUBPROJECT`
 
  `SCC_CAP_GETPARENTPROJECT`
@@ -33,36 +33,36 @@ No código-fonte controle plug-in API versão 1.2, um usuário pode especificar 
 
 - [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)
 
- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, isso é feito nos seguintes casos:
+ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, ele faz isso nos seguintes casos:
 
-- O projeto é um projeto de web de compartilhamento de arquivo.
+- O projeto é um projeto web de compartilhamento de arquivos.
 
-- Existem diferentes unidades para o projeto e o arquivo de solução.
+- Existem diferentes drives para o projeto e o arquivo de solução.
 
-- Não há compartilhamento diferente para o projeto e o arquivo de solução.
+- Existem diferentes ações para o projeto e o arquivo de solução.
 
-- Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).
+- Os projetos foram adicionados separadamente (em uma solução controlada por origem).
 
-No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.
+Em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], sugere-se que o nome para a pasta SUR seja o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento nas duas versões.
 
-|Recurso|Versão 1.1 do API de plug-in de controle de origem|Versão 1.2 da API de plug-in de controle de origem|
+|Recurso|API plug-in de controle de fonte versão 1.1|API plug-in de controle de fonte versão 1.2|
 |-------------| - | - |
 |Adicionar solução ao SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|
-|Adicionar o projeto à solução de controle do código-fonte|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Observação:**  O Visual Studio pressupõe que uma solução é um filho direto do SUR o.|
+|Adicionar projeto à solução controlada por origem|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:**  Visual Studio assume que uma solução é uma criança direta do SUR.|
 
 ## <a name="examples"></a>Exemplos
- A tabela a seguir lista os dois exemplos. Em ambos os casos, o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usuário é solicitado a fornecer um local de destino para a solução sob controle de origem até que o *user_choice* é especificado como um destino. Quando o user_choice for especificado, a solução e dois projetos são adicionados sem avisar o usuário para destinos de controle do código-fonte.
+ A tabela a seguir lista dois exemplos. Em ambos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] casos, o usuário é solicitado para um local de destino para a solução sob controle de origem até que o *user_choice* seja especificado como destino. Quando o user_choice é especificado, a solução e dois projetos são adicionados sem solicitar ao usuário destinos de controle de origem.
 
-|Solução contém|Em locais de disco|Estrutura do banco de dados padrão|
+|Solução contém|Em locais de disco|Estrutura padrão do banco de dados|
 |-----------------------|-----------------------|--------------------------------|
-|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/Web1<br /><br /> $/<user_choice>/Web2|
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/D/web1<br /><br /> $/<user_choice>/sln1/win1|
+|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Soluções\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/Web1<br /><br /> $/<user_choice>/Web2|
+|*sln1.sln*<br /><br /> Web1<br /><br /> Vitória1|*C:\Soluções\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\soluções\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/<>/D/web1 de user_choice/<<br /><br /> $/<user_choice>/sln1/win1|
 
- A pasta SUR e subpastas são criadas, independentemente da operação for cancelada ou falha devido a um erro. Eles não são removidos automaticamente em condições de erro ou cancelamento.
+ A pasta SUR e as subpastas são criadas independentemente de a operação ser cancelada ou falhar devido a um erro. Eles não são removidos automaticamente em condições de cancelamento ou erro.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] assume como padrão o comportamento da versão 1.1, se o plug-in de controle do código-fonte não retornar `SCC_CAP_CREATESUBPROJECT` e `SCC_CAP_GETPARENTPROJECT` sinalizadores de recurso. Além disso, os usuários do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode escolher reverter para o versão 1.1 comportamento, definindo o valor da chave a seguir *DWORD: 00000001*:
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]padrão para o comportamento da versão 1.1 se `SCC_CAP_CREATESUBPROJECT` o `SCC_CAP_GETPARENTPROJECT` plug-in de controle de origem não retornar e sinalizar capacidade. Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] os usuários podem optar por reverter para o comportamento da Versão 1.1 definindo o valor da seguinte chave para *dword:00000001*:
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionFolderInSourceSourceControl** = *dword:00000001*
 
-## <a name="see-also"></a>Consulte também
-- [O que há de novo no controle de fonte de plug-in API versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Confira também
+- [O que há de novo na API plug-in de controle de fonte versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

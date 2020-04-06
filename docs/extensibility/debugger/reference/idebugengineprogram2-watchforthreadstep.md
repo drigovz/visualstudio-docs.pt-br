@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+title: idebugEngineProgram2::WatchForThreadstep | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730356"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Aguarda a execução (ou interrompe a assistir a execução) para ocorrer em determinado thread.
+Observa para que a execução (ou pare de observar a execução) ocorra no segmento dado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,27 +45,27 @@ int WatchForThreadStep( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pOriginatingProgram`\
-[in] Uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa que está sendo passado.
+[em] Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) representando o programa sendo pisado.
 
 `dwTid`\
-[in] Especifica o identificador do thread para assistir.
+[em] Especifica o identificador do segmento para assistir.
 
 `fWatch`\
-[in] Diferente de zero (`TRUE`) significa começar a observar para execução no thread identificado por `dwTid`; caso contrário, zero (`FALSE`) significa parar de monitorar para execução em `dwTid`.
+[em] Não-zero`TRUE`( ) significa começar a observar `dwTid`a execução no segmento identificado por ; caso contrário,`FALSE`zero ( ) significa `dwTid`parar de assistir para execução em .
 
 `dwFrame`\
-[in] Especifica um índice do quadro que controla o tipo de etapa. Quando se trata do que valor é zero (0), o tipo de etapa é "step into" e o programa deve ser interrompida sempre que o thread identificado por `dwTid` executa. Quando `dwFrame` é diferente de zero, o tipo de etapa é "step over" e o programa deve parar somente se o thread identificado por `dwTid` está em execução em um quadro cujo índice é igual ou superior na pilha que `dwFrame`.
+[em] Especifica um índice de quadro que controla o tipo de passo. Quando este valor é zero (0), o tipo de passo é "passo `dwTid` a passo" e o programa deve parar sempre que o segmento identificado por executá-lo. Quando `dwFrame` não é zero, o tipo de passo é "passo a passo" e o programa deve parar apenas se o segmento identificado por `dwTid` estiver sendo executado em um quadro cujo índice é igual ou maior na pilha do que `dwFrame`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando o Gerenciador de sessão de depuração (SDM) as etapas de um programa, identificado pelo `pOriginatingProgram` parâmetro, ele notifica todos os outros programas conectados ao chamar esse método.
+ Quando o Gerenciador de depuração de sessão (SDM) etapa um programa, identificado pelo `pOriginatingProgram` parâmetro, ele notifica todos os outros programas anexados chamando esse método.
 
- Esse método é aplicável somente a revisão do mesmo thread.
+ Este método é aplicável apenas à revisão do mesmo segmento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

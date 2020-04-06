@@ -1,5 +1,5 @@
 ---
-title: Coloração de sintaxe em um serviço de linguagem herdada | Microsoft Docs
+title: Sintaxização Colorizando em um serviço de linguagem legado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,49 +8,49 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19561363affada05154e15142bd32a30a5d051d0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704703"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
-A colorização de sintaxe é um recurso que faz com que diferentes elementos de uma linguagem de programação sejam exibidos em um arquivo de origem em diferentes cores e estilos. Para dar suporte a esse recurso, você precisa fornecer um analisador ou scanner que possa identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas linguagens distinguem palavras-chave, delimitadores (como parênteses ou chaves) e comentários, colorando-as de maneiras diferentes.
+A coloração da sintaxe é uma característica que faz com que diferentes elementos de uma linguagem de programação sejam exibidos em um arquivo de origem em diferentes cores e estilos. Para suportar esse recurso, você precisa fornecer um analisador ou scanner que possa identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas línguas distinguem palavras-chave, delimitadores (como parênteses ou aparelhos), e comentários colorindo-os de diferentes maneiras.
 
- Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para obter mais informações, consulte [estendendo o editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).
+ Os serviços de linguagem legados são implementados como parte de um VSPackage, mas a maneira mais nova de implementar recursos de serviço de idioma é usar extensões MEF. Para saber mais, consulte [Estendendo o Editor e os Serviços de Idiomas](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.
+> Recomendamos que você comece a usar a Nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de idiomas e permitirá que você aproveite os novos recursos do editor.
 
 ## <a name="implementation"></a>Implementação
- Para dar suporte à colorização, a MPF (estrutura de pacote gerenciada) inclui a classe <xref:Microsoft.VisualStudio.Package.Colorizer>, que implementa a interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Essa classe interage com um <xref:Microsoft.VisualStudio.Package.IScanner> para determinar o token e as cores. Para obter mais informações sobre scanners, consulte [analisador e verificador de serviço de idioma herdado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). A classe <xref:Microsoft.VisualStudio.Package.Colorizer> marca cada caractere do token com as informações de cor e retorna essas informações ao editor que exibe o arquivo de origem.
+ Para apoiar a colorização, o framework de <xref:Microsoft.VisualStudio.Package.Colorizer> pacote gerenciado (MPF) inclui a classe, que implementa a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface. Esta classe interage <xref:Microsoft.VisualStudio.Package.IScanner> com um para determinar o token e as cores. Para obter mais informações sobre scanners, consulte [O Analisador de Serviços de Linguagem Legado e o Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). Em <xref:Microsoft.VisualStudio.Package.Colorizer> seguida, a classe marca cada caractere do token com as informações de cor e retorna essas informações ao editor exibindo o arquivo de origem.
 
- As informações de cor retornadas ao editor são um índice em uma lista de itens coloráveis. Cada item com cores especifica um valor de cor e um conjunto de atributos de fonte, como negrito ou tachado. O Editor fornece um conjunto de itens coloráveis padrão que seu serviço de idioma pode usar. Tudo o que você precisa fazer é especificar o índice de cor apropriado para cada tipo de token. No entanto, você pode fornecer um conjunto de itens personalizáveis personalizados e os índices fornecidos para tokens e referenciar sua própria lista de itens coloráveis em vez da lista padrão. Você também deve definir a entrada de registro `RequestStockColors` como 0 (ou não especificar a entrada de `RequestStockColors`) para dar suporte a cores personalizadas. Você pode definir essa entrada de registro com um parâmetro nomeado para o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo definido pelo usuário. Para obter mais informações sobre como registrar um serviço de linguagem e definir suas opções, consulte [registrando um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md).
+ As informações de cor devolvidas ao editor são um índice em uma lista de itens coloridos. Cada item colorível especifica um valor de cor e um conjunto de atributos de fonte, como negrito ou strikethrough. O editor fornece um conjunto de itens coloridos padrão que seu serviço de idioma pode usar. Tudo o que você precisa fazer é especificar o índice de cor apropriado para cada tipo de token. No entanto, você pode fornecer um conjunto de itens coloríveis personalizados e os índices que você fornece para tokens e referenciar sua própria lista de itens coloridos em vez da lista padrão. Você também deve `RequestStockColors` definir a entrada do registro `RequestStockColors` como 0 (ou não especificar a entrada) para suportar cores personalizadas. Você pode definir esta entrada de registro <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> com um parâmetro nomeado para o atributo definido pelo usuário. Para obter mais informações sobre como registrar um serviço de idiomas e definir suas opções, consulte [Registrando um serviço de idioma legado](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Itens personalizados que podem ser coloridos
- Para fornecer seus próprios itens coloridos personalizados, você deve substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e o método <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> na classe <xref:Microsoft.VisualStudio.Package.LanguageService>. O primeiro método retorna o número de itens colorable personalizados que o serviço de linguagem suporta e o segundo Obtém o item Colorable personalizado por índice. Você cria a lista padrão de itens colorable personalizados. No construtor do seu serviço de idioma, tudo o que você precisa fazer é fornecer a cada item colorável um nome. O Visual Studio manipula automaticamente o caso em que o usuário seleciona um conjunto diferente de itens coloráveis. Esse nome é o que aparece na página de propriedades **fontes e cores** da caixa de diálogo **Opções** (disponível no menu **ferramentas** do Visual Studio) e esse nome determina qual cor um usuário substituiu. As opções do usuário são armazenadas em um cache no registro e acessadas pelo nome da cor. A página de propriedades **fontes e cores** lista todos os nomes de cor em ordem alfabética, para que você possa agrupar suas cores personalizadas precedendo cada nome de cor com o nome do idioma; por exemplo, "**TestLanguage-comment**" e "**TestLanguage-keyword**". Ou você pode agrupar seus itens coloráveis por tipo, "**Comment (TestLanguage)** " e "**Keyword (TestLanguage)** ". O agrupamento por nome de idioma é preferencial.
+ Para fornecer seus próprios itens coloridos personalizados, <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> você <xref:Microsoft.VisualStudio.Package.LanguageService> deve substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> método e o método da classe. O primeiro método retorna o número de itens coloráveis personalizados que o serviço de idioma suporta e o segundo obtém o item colorível personalizado por índice. Você cria a lista padrão de itens coloríveis personalizados. No construtor do seu serviço de idiomas, tudo o que você precisa fazer é fornecer cada item colorível com um nome. O Visual Studio lida automaticamente com o estojo em que o usuário seleciona um conjunto diferente de itens coloridos. Este nome é o que aparece na página de propriedade **Fontes e Cores** na caixa de diálogo **Opções** (disponível no menu Visual Studio **Tools)** e este nome determina qual cor um usuário substituiu. As escolhas do usuário são armazenadas em um cache no registro e acessadas pelo nome da cor. A página de propriedades Fontes e Cores lista todos os nomes de cores em ordem alfabética, para que você possa agrupar suas cores **personalizadas** precedendo cada nome de cor com o nome do idioma; por exemplo, "**TestLanguage-Comment**" e "**TestLanguage-Keyword**". Ou você pode agrupar seus itens coloridos por tipo, "**Comment (TestLanguage)**" e "**Keyword (TestLanguage)**". O agrupamento por nome do idioma é preferido.
 
 > [!CAUTION]
-> É altamente recomendável que você inclua o nome do idioma no nome do item Colorable para evitar colisões com nomes de item Colorable existentes.
+> É fortemente recomendável que você inclua o nome do idioma no nome do item colorível para evitar colisões com nomes de itens coloríveis existentes.
 
 > [!NOTE]
-> Se você alterar o nome de uma de suas cores durante o desenvolvimento, deverá redefinir o cache que o Visual Studio criou na primeira vez em que suas cores foram acessadas. Você pode fazer isso executando o comando **redefinir o hive experimental** no menu do programa SDK do Visual Studio.
+> Se você alterar o nome de uma de suas cores durante o desenvolvimento, você deve redefinir o cache que o Visual Studio criou na primeira vez que suas cores foram acessadas. Você pode fazê-lo executando o comando **Reset the Experimental Hive** do menu do programa Visual Studio SDK.
 
- Observe que o primeiro item na lista de itens coloráveis nunca é referenciado. O Visual Studio sempre fornece os atributos e as cores de texto padrão para esse item. A maneira mais fácil de lidar com isso é fornecer um item de espaço reservado em cores como o primeiro item.
+ Observe que o primeiro item da sua lista de itens coloridos nunca é referenciado. O Visual Studio sempre fornece as cores e atributos de texto padrão para esse item. A maneira mais fácil de lidar com isso é fornecer um item colorível de espaço reservado como o primeiro item.
 
-### <a name="high-color-colorable-items"></a>Itens colorable de alta cor
- Itens coloráveis também podem oferecer suporte a valores de 24 ou alta cores por meio da interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>. A classe <xref:Microsoft.VisualStudio.Package.ColorableItem> do MPF dá suporte à interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> e as cores de 24 bits são especificadas no Construtor junto com as cores normais. Consulte a classe <xref:Microsoft.VisualStudio.Package.ColorableItem> para obter mais detalhes. O exemplo a seguir mostra como definir as cores de 24 bits para palavras-chave e comentários. As cores de 24 bits são usadas quando há suporte para cores de 24 bits na área de trabalho do usuário; caso contrário, as cores de texto normais serão usadas.
+### <a name="high-color-colorable-items"></a>Itens coloráveis de alta cor
+ Itens coloridos também podem suportar valores de cores <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> de 24 bits ou altos através da interface. A <xref:Microsoft.VisualStudio.Package.ColorableItem> classe MPF <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> suporta a interface e as cores de 24 bits são especificadas no construtor, juntamente com as cores normais. Consulte <xref:Microsoft.VisualStudio.Package.ColorableItem> a classe para mais detalhes. O exemplo abaixo mostra como definir as cores de 24 bits para palavras-chave e comentários. As cores de 24 bits são usadas quando a cor de 24 bits é suportada na área de trabalho do usuário; caso contrário, as cores de texto normais são usadas.
 
- Lembre-se de que essas são as cores padrão para seu idioma; o usuário pode alterar essas cores para tudo o que quiser.
+ Lembre-se, essas são as cores padrão para o seu idioma; o usuário pode mudar essas cores para o que quiser.
 
 ### <a name="example"></a>Exemplo
- Este exemplo mostra uma maneira de declarar e popular uma matriz de itens colorable personalizados usando a classe <xref:Microsoft.VisualStudio.Package.ColorableItem>. Este exemplo define a palavra-chave e as cores de comentário usando cores de 24 bits.
+ Este exemplo mostra uma maneira de declarar e preencher uma <xref:Microsoft.VisualStudio.Package.ColorableItem> matriz de itens coloríveis personalizados usando a classe. Este exemplo define as cores de palavras-chave e comentários usando cores de 24 bits.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -94,17 +94,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="the-colorizer-class-and-the-scanner"></a>A classe Colorizer e o scanner
- A classe base <xref:Microsoft.VisualStudio.Package.LanguageService> tem um método <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> que instantiantes a classe <xref:Microsoft.VisualStudio.Package.Colorizer>. O verificador que é retornado do método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> é passado para o construtor da classe <xref:Microsoft.VisualStudio.Package.Colorizer>.
+## <a name="the-colorizer-class-and-the-scanner"></a>A classe Colorizer e o Scanner
+ A <xref:Microsoft.VisualStudio.Package.LanguageService> classe base <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> tem um método <xref:Microsoft.VisualStudio.Package.Colorizer> que instancia a classe. O scanner que é <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> devolvido do método <xref:Microsoft.VisualStudio.Package.Colorizer> é passado para o construtor de classe.
 
- Você deve implementar o método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> em sua própria versão da classe <xref:Microsoft.VisualStudio.Package.LanguageService>. A classe <xref:Microsoft.VisualStudio.Package.Colorizer> usa o verificador para obter todas as informações de cores de token.
+ Você deve <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> implementar o método em <xref:Microsoft.VisualStudio.Package.LanguageService> sua própria versão da classe. A <xref:Microsoft.VisualStudio.Package.Colorizer> classe usa o scanner para obter todas as informações de cor do token.
 
- O verificador precisa preencher uma estrutura de <xref:Microsoft.VisualStudio.Package.TokenInfo> para cada token que encontrar. Essa estrutura contém informações como o span que o token ocupa, o índice de cores a ser usado, qual tipo é o token e gatilhos de token (consulte <xref:Microsoft.VisualStudio.Package.TokenTriggers>). Somente o índice de intervalo e de cores é necessário para a colorização pela classe <xref:Microsoft.VisualStudio.Package.Colorizer>.
+ O scanner precisa <xref:Microsoft.VisualStudio.Package.TokenInfo> preencher uma estrutura para cada token que encontrar. Esta estrutura contém informações como o comprimento que o token ocupa, o índice de cor a <xref:Microsoft.VisualStudio.Package.TokenTriggers>ser usado, qual tipo é o token e os gatilhos de token (ver ). Apenas o comprimento e o índice de <xref:Microsoft.VisualStudio.Package.Colorizer> cor são necessários para coloração pela classe.
 
- O índice de cores armazenado na estrutura de <xref:Microsoft.VisualStudio.Package.TokenInfo> normalmente é um valor da enumeração <xref:Microsoft.VisualStudio.Package.TokenColor>, que fornece vários índices nomeados correspondentes a vários elementos de linguagem, como palavras-chave e operadores. Se sua lista de itens personalizáveis personalizados corresponder aos itens apresentados na enumeração <xref:Microsoft.VisualStudio.Package.TokenColor>, você poderá simplesmente usar a enumeração como a cor de cada token. No entanto, se você tiver itens coloráveis adicionais ou não quiser usar os valores existentes nessa ordem, poderá organizar sua lista de itens colorable personalizados para atender às suas necessidades e retornar o índice apropriado para essa lista. Apenas certifique-se de converter o índice em um <xref:Microsoft.VisualStudio.Package.TokenColor> ao armazená-lo na estrutura de <xref:Microsoft.VisualStudio.Package.TokenInfo>;  [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] vê apenas o índice.
+ O índice de <xref:Microsoft.VisualStudio.Package.TokenInfo> cor armazenado na estrutura <xref:Microsoft.VisualStudio.Package.TokenColor> é tipicamente um valor da enumeração, que fornece uma série de índices nomeados correspondentes a vários elementos de linguagem, como palavras-chave e operadores. Se a lista de itens coloridos personalizados corresponder <xref:Microsoft.VisualStudio.Package.TokenColor> aos itens apresentados na enumeração, então você pode usar a enumeração como cor para cada token. No entanto, se você tiver itens coloráveis adicionais ou não quiser usar os valores existentes nessa ordem, você pode organizar sua lista de itens coloridos personalizados para atender às suas necessidades e retornar o índice apropriado para essa lista. Apenas certifique-se de lançar <xref:Microsoft.VisualStudio.Package.TokenColor> o índice para <xref:Microsoft.VisualStudio.Package.TokenInfo> um ao armazená-lo na estrutura; [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] vê apenas o índice.
 
 ### <a name="example"></a>Exemplo
- O exemplo a seguir mostra como o verificador pode identificar três tipos de token: números, pontuação e identificadores (qualquer coisa que não seja um número ou pontuação). Este exemplo é apenas para fins ilustrativos e não representa uma implementação abrangente do analisador e do scanner. Ele pressupõe que há uma classe `Lexer` com um método `GetNextToken()` que retorna uma cadeia de caracteres.
+ O exemplo a seguir mostra como o scanner pode identificar três tipos de tokens: números, pontuação e identificadores (qualquer coisa que não seja um número ou pontuação). Este exemplo é apenas para fins ilustrativos e não representa uma implementação abrangente de analisador e scanner. Ele assume que há `Lexer` uma `GetNextToken()` classe com um método que retorna uma seqüência.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -144,7 +144,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Analisador e scanner do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)

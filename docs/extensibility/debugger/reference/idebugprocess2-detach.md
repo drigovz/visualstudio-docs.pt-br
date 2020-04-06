@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Detach
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3948ecce15b9b2b2e8b3bf974ecc2277d9fa0360
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724130"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-Desanexa o depurador desse processo desanexando todos os programas no processo.
+Destaca o depurador desse processo, desvinculando todos os programas do processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ HRESULT Detach( 
 int Detach();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Todos os programas e o processo continuam em execução, mas não fazem mais parte da sessão de depuração. Após a operação desanexar depuração completa e não mais eventos para esse processo (e seus programas) serão enviados.
+ Todos os programas e o processo continuam em execução, mas não fazem mais parte da sessão de depuração. Após a operação de desapego ser concluída, não serão enviados mais eventos de depuração para este processo (e seus programas).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

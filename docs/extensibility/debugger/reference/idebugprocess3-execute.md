@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b4b854c752bc7b1f66687074fbfe86286fc48fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 444eadcce38adbd8ecd8655e8e0dc3f36f446848
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314011"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723687"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Continua a execução desse processo de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é limpo e o processo inicia a execução novamente.
+Continua executando este processo a partir de um estado parado. Qualquer estado de execução anterior (como uma etapa) é limpo e o processo começa a ser executado novamente.
 
 > [!NOTE]
-> Esse método deve ser usado em vez de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Este método deve ser usado em vez de [Executar](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ int Execute(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pThread`\
-[in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa a execução do thread.
+[em] Um objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) representando o segmento a ser executado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando o usuário inicia a execução de um estado parado em algum outro thread do processo, esse método é chamado sobre esse processo. Esse método também é chamado quando o usuário seleciona o **inicie** comando da **depurar** menu no IDE. A implementação desse método pode ser tão simple quanto chamar o [retomar](../../../extensibility/debugger/reference/idebugthread2-resume.md) método no thread no processo atual.
+ Quando o usuário inicia a execução a partir de um estado parado no segmento de algum outro processo, esse método é chamado sobre esse processo. Esse método também é chamado quando o usuário seleciona o comando **Iniciar** no menu **Depurar** no IDE. A implementação deste método pode ser tão simples quanto chamar o método [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) no segmento atual no processo.
 
 > [!WARNING]
-> Não enviar um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
+> Não envie um evento de parada ou um evento imediato (síncrono) para [o Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante o tratamento desta chamada; caso contrário, o depurador pode travar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Continuar](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

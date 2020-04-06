@@ -1,25 +1,25 @@
 ---
-title: IDebugExpressionEvaluator3 | Microsoft Docs
+title: IDebugExpressionAvaliaor3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d00f24505de763d85d4d454d6f3bde459653689
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d25cd8cd4aec351df2a483e930bf469fbc086a68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352729"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729119"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Representa um avaliador de expressão (EE) com uma árvore de analisador aprimorada.
 
@@ -30,18 +30,18 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ```
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Esta versão do analisador passa o provedor de símbolo e o endereço da estrutura de avaliação.
+ Esta versão do analisador passa pelo provedor de símbolos e endereço do quadro de avaliação.
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface, essa interface implementa o método a seguir:
+ Além dos métodos na interface [IDebugExpressionEvaluator2,](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) esta interface implementa o seguinte método:
 
 |Método|Descrição|
 |------------|-----------------|
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Converte uma cadeia de caracteres de expressão em uma expressão analisada, considerando o provedor de símbolo e o endereço da estrutura de avaliação.|
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Converte uma seqüência de expressão em uma expressão analisado dado o provedor símbolo e o endereço do quadro avaliador.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: EE.h
+ Cabeçalho: Ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll

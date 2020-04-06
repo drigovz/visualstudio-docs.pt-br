@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726360"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Define o valor do objeto de uma série consecutiva de bytes.
+Define o valor do objeto a partir de uma série consecutiva de bytes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ int SetValue(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pValue`\
-[in] Uma matriz de bytes que representa o novo valor.
+[em] Uma matriz de bytes representando o novo valor.
 
 `nSize`\
-[in] O tamanho do valor em bytes.
+[em] O tamanho do valor em bytes.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Os valores na matriz são copiados para este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto, substituindo qualquer valor existente. O tamanho do novo valor pode ser maior ou menor que o valor existente. Isso `IDebugObject` não pode ser uma referência nula.
+ Os valores na matriz são copiados para este objeto [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) substituindo qualquer valor existente. O tamanho do novo valor pode ser maior ou menor do que o valor existente. Isso `IDebugObject` não pode ser uma referência nula.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

@@ -1,5 +1,5 @@
 ---
-title: Padrão de comando, o grupo e o posicionamento da barra de ferramentas | Microsoft Docs
+title: Colocação padrão de comando, grupo e barra de ferramentas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4445531b48b35de9b47d1b68478cf344bf31d2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351647"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708886"
 ---
-# <a name="default-command-group-and-toolbar-placement"></a>Posicionamento de comando, grupo e barra de ferramentas padrão
-Para a uniformidade de produto e estabilidade, a interface do usuário exibe determinados grupos de comando por padrão, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece definições de comandos e grupos de comando. Os VSPackages também pode usar os comandos padrão e os grupos de comando.
+# <a name="default-command-group-and-toolbar-placement"></a>Colocação padrão de comando, grupo e barra de ferramentas
+Para a uniformidade e estabilidade do produto, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do ui exibe certos grupos de comando por padrão e fornece definições para comandos e grupos de comando. VsPackages também podem usar os comandos padrão e grupos de comando.
 
- Os grupos de comando padrão se enquadram em três categorias: Comandos do IDE, comandos de produto e comandos do editor.
+ Os grupos de comando padrão se enquadram em três categorias: comandos IDE, comandos de produto e comandos de editor.
 
-## <a name="default-ide-commands"></a>Comandos do IDE padrão
- A barra de ferramentas IDE padrão inclui comandos compartilhados por todos os produtos contidos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Eles incluem comandos relacionados a operações de projeto genérico, como o **salve** comando e o **Add Item** comando. Os VSPackages não deve adicionar ou subtrair nessa barra de ferramentas, com uma exceção: Se o produto ou VSPackage adiciona uma nova janela de ferramenta, a janela deve ser adicionada à lista de janelas de ferramentas disponíveis na **exibição** menu. Novos produtos ou VSPackages pode adicionar suas próprias ferramentas.
+## <a name="default-ide-commands"></a>Comandos IDE padrão
+ A barra de ferramentas padrão do IDE inclui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]comandos compartilhados por todos os produtos contidos em . Estes incluem comandos relacionados a operações genéricas de projeto, como o comando **Salvar** e o comando **Adicionar item.** VsPackages não devem adicionar ou subtrair a esta barra de ferramentas, com uma exceção: Se o produto ou VSPackage adicionar uma nova janela de ferramenta, então a janela deve ser adicionada à lista de janelas de ferramentas disponíveis no menu **Exibir.** Novos produtos ou VSPackages podem adicionar sua própria barra de ferramentas.
 
-## <a name="default-product-commands"></a>Comandos de produto padrão
- Cada produto pode fornecer o IDE com sua própria barra de ferramentas padrão que contém importantes e comandos usados com frequência. No entanto, é melhor, usar menus e barras de ferramentas sempre que possível existentes e complementá-los com outras barras de ferramentas de tarefas específicas, conforme necessário.
+## <a name="default-product-commands"></a>Comandos padrão do produto
+ Cada produto pode fornecer ao IDE sua própria barra de ferramentas padrão que contém comandos importantes e frequentemente usados. No entanto, é melhor usar menus e barras de ferramentas existentes sempre que possível e suplementá-los com outras barras de ferramentas específicas da tarefa, conforme necessário.
 
- O campo de prioridade para uma barra de ferramentas determina seu posicionamento de linha. Zero a prioridade coloca a barra de ferramentas na terceira linha (linha 3), abaixo da barra de menu (linha 1) e o **Standard** barra de ferramentas (linha 2). Portanto, outras barras de ferramentas são exibidos na linha (prioridade + 3). Barras de ferramentas subsequentes são colocadas na mesma linha, se houver espaço; Caso contrário, eles são automaticamente movidos para a próxima linha.
+ O campo prioritário para uma barra de ferramentas determina a colocação da linha. A prioridade zero coloca a barra de ferramentas na terceira linha (linha 3), abaixo da barra de menu (linha 1) e da **barra de** ferramentas Padrão (linha 2). Portanto, outras barras de ferramentas aparecem na linha (prioridade + 3). As barras de ferramentas subseqüentes são colocadas na mesma linha, se houver espaço; caso contrário, eles são automaticamente movidos para a próxima linha.
 
-## <a name="default-editor-commands"></a>Comandos do editor padrão
- Um VSPackage que fornece um editor personalizado deve fornecer uma barra de ferramentas padrão que contém o mais importante e comandos usados com frequência no editor. A barra de ferramentas do editor deve aparecer quando o editor está ativo e deve ser ocultado quando o editor não está ativo. Essa visibilidade é controlada na `VisibilityConstraints` elemento do *VSCT* arquivo.
+## <a name="default-editor-commands"></a>Comandos de editor padrão
+ Um VSPackage que fornece um editor personalizado deve fornecer uma barra de ferramentas padrão que contenha os comandos mais importantes e usados com freqüência nesse editor. A barra de ferramentas do editor deve aparecer quando o editor estiver ativo e deve ser ocultada quando o editor não estiver ativo. Essa visibilidade é controlada `VisibilityConstraints` no elemento do arquivo *.vsct.*
 
- Barras de ferramentas do Editor devem ser colocadas abaixo barras de ferramentas do IDE e produto.
+ As barras de ferramentas do editor devem ser colocadas abaixo do IDE e das barras de ferramentas do produto.
 
-## <a name="see-also"></a>Consulte também
-- [Grupos, menus e comandos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
-- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Confira também
+- [Comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
+- [Como o VSPackages adiciona elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

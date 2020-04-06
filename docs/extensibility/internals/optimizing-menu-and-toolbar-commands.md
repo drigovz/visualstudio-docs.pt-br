@@ -1,5 +1,5 @@
 ---
-title: Otimizando o Menu e comandos da barra de ferramentas | Microsoft Docs
+title: Otimização de menus e comandos de barra de ferramentas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333122"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706913"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
-A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode fazer com que uma interface do usuário cheia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras para ajudar a minimizar a confusão de comando de interface do usuário.
+A adição de VSPackages e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] seus comandos correspondentes pode causar uma ui lotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornece maneiras de ajudar a minimizar a confusão do comando da UI.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Disponibilização de comandos](../../extensibility/internals/making-commands-available.md)
+- [Disponibilizando comandos](../../extensibility/internals/making-commands-available.md)
 
- Fornece diretrizes gerais para minimizar acumularem do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você adiciona os VSPackages.
+ Fornece diretrizes gerais para minimizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a aglomeração da iu quando você adiciona VSPackages.
 
 - [Diretrizes de posicionamento](../../extensibility/internals/command-placement-guidelines.md)
 
@@ -36,4 +36,4 @@ A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](..
 ## <a name="related-sections"></a>Seções relacionadas
 - [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)
 
- Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comando.
+ Explica como criar uma ia que inclua menus, barras de ferramentas e caixas de comando.

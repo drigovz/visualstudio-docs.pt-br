@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugObject::IsProxy
 - IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e72df4bd42df8d060ffab5f5ba5a2f44cbc06f9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323428"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726480"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
-Determina se o objeto for um proxy transparente.
+Determina se o objeto é um proxy transparente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,15 +38,15 @@ int IsProxy (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pfIsProxy`\
-[out] `TRUE` se o objeto for um proxy transparente; caso contrário, `FALSE`.
+[fora] `TRUE` se o objeto for um proxy transparente; caso contrário, `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é implementado pelo mecanismo de depuração de C++ padrão.
+ Este método é implementado pelo mecanismo de depuração C++ padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
