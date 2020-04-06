@@ -1,71 +1,71 @@
 ---
-title: Subtipos de projeto | Microsoft Docs
+title: Subtipos do Projeto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aede76a39506f74c39d9ec63ed4bb4a410d1013c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71dab4767c806b44cbd1f9638738b4a13d6b2bcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328112"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706407"
 ---
 # <a name="project-subtypes"></a>Subtipos de projeto
-Subtipos do projeto permitem que você personalize ou flavor o comportamento dos sistemas de projeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. As personalizações incluem salvando dados adicionais no arquivo de projeto, adicionando ou filtrando itens na **Adicionar Novo Item** caixa de diálogo, controlando como os assemblies são depurados e implantados e estendendo o projeto **propriedade Páginas** caixa de diálogo. Os VSPackages implementar subtipos de projeto usando a agregação COM.
+Os subtipos do projeto permitem personalizar ou [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]saborear o comportamento dos sistemas de projeto de . As personalizações incluem a salvação de dados adicionais no arquivo do projeto, a adição ou filtração de itens na caixa de diálogo **Adicionar novo item,** controlar como os conjuntos são depurados e implantados e estender a caixa de diálogo Páginas de **Propriedade** do projeto. VSPackages implementam subtipos de projeto usando agregação COM.
 
 > [!NOTE]
-> O sistema de projeto do Visual C++ não oferece suporte para os subtipos de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] em si usa subtipos do projeto para implementar projetos de dispositivo inteligente e do SQL Server.
+> O sistema de projeto Visual C++ não suporta subtipos de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]em si, usa subtipos de projeto para implementar projetos de SQL Server e Smart Device.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Design de subtipos de projeto](../../extensibility/internals/project-subtypes-design.md)
 
- Descreve o conceito de subtipos de projeto.
+ Descreve o conceito de subtipos de projetos.
 
-- [Sequência de inicialização dos subtipos do projeto](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
+- [Sequência de inicialização de subtipos de projeto](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
- Descreve a sequência de inicialização do subtipo de projeto através de programação por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.
+ Descreve a seqüência de inicialização [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do subtipo do projeto programático por ambiente.
 
-- [Propriedades e métodos estendidos por subtipos do projeto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [Propriedades e métodos estendidos por subtipos de projeto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
- Fornece descrições detalhadas dos recursos e métodos estendidos com mais frequência usando subtipos do projeto.
+ Fornece descrições detalhadas dos recursos e métodos mais freqüentemente estendidos usando subtipos de projeto.
 
-- [Persistir os dados no arquivo de projeto do MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [Mantendo os dados no arquivo de projeto do MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
- Descreve como manter os dados em um arquivo de projeto e como usar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> para manter os dados no arquivo de projeto entre os níveis de agregação de subtipo de projeto.
+ Descreve como persistir dados em um arquivo <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> de projeto e como usar para manter os dados no arquivo do projeto através dos níveis de agregação do subtipo do projeto.
 
-- [Interface de usuário de propriedades do projeto](../../extensibility/internals/project-property-user-interface.md)
+- [Interface do usuário de propriedades do projeto](../../extensibility/internals/project-property-user-interface.md)
 
- Descreve como os subtipos de projeto podem modificar o projeto **páginas de propriedade** caixa de diálogo.
+ Descreve como os subtipos do projeto podem modificar a caixa de diálogo Páginas de **Propriedade** do projeto.
 
-- [Estender o modelo de objeto do projeto base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
+- [Estendendo o modelo de objeto do projeto base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
- Fornece informações sobre como os subtipos de projeto podem usar extensores de automação para estender o modelo de objeto de automação.
+ Fornece informações sobre como os subtipos do projeto podem usar extensores de automação para estender o modelo de objeto de automação.
 
-- [Contribuir com a caixa de diálogo Adicionar Novo Item](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
+- [Contribuindo com a caixa de diálogo Adicionar Novo Item](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
- Descreve como adicionar itens para o **Adicionar Novo Item** caixa de diálogo.
+ Descreve como adicionar itens à caixa de diálogo **Adicionar novo item.**
 
 - [Salvar dados em arquivos de projeto](../../extensibility/saving-data-in-project-files.md)
 
- Explica como um subtipo de projeto pode salvar e recuperar dados específicos subtipo-no arquivo de projeto usando o Framework de pacote gerenciado (MPF).
+ Explica como um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no arquivo do projeto usando o MPF (Managed Package Framework, framework de pacote gerenciado).
 
 - [Manipulação da implantação especializada](../../extensibility/internals/handling-specialized-deployment.md)
 
- Explica como subtipos do projeto podem fornecer o comportamento de implantação especializada, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface.
+ Explica como os subtipos do projeto podem <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> fornecer comportamento de implantação especializado implementando a interface.
 
 - [Adicionar e remover páginas de propriedade](../../extensibility/adding-and-removing-property-pages.md)
 
- Descreve a adição e remoção de páginas de propriedades no Designer de projeto.
+ Descreve a adição e a remoção de páginas de propriedade no Project Designer.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Tipos de projeto](../../extensibility/internals/project-types.md)
 
- Fornece links para tópicos que detalha [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos.
+ Fornece links para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tópicos detalhando projetos.

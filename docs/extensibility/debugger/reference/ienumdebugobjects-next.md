@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Next method
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b0f96246b6442cf852a01d0080f54565939b8e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 99b2bc35b63a4e97f888365f1d11231ae620b69c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339538"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716342"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
-Esse método retorna o próximo conjunto de elementos da enumeração.
+Este método retorna o próximo conjunto de elementos da enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,19 +43,19 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `celt`\
-[in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+[em] O número de elementos para recuperar. Também especifica o tamanho `rgelt` máximo da matriz.
 
 `rgelt`\
-[no, out] Matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) elementos a serem preenchidos.
+[dentro, fora] Matriz de elementos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) a serem preenchidos.
 
 `pceltFetched`\
-[out] Retorna o número de elementos realmente retornados em `rgelt`.
+[fora] Retorna o número de elementos realmente retornados em `rgelt`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retornos `S_FALSE` se menos do que o número solicitado de elementos pode ser devolvido; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

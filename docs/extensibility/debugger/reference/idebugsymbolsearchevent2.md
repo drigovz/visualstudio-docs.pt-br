@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7108c9e1349b01115bed8a6b2a77a3eaa71f45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320384"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718790"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
-Essa interface é enviada pelo mecanismo de depuração (DE) para indicar que os símbolos de depuração para um módulo que está sendo depurado tenham sido carregados.
+Esta interface é enviada pelo mecanismo de depuração (DE) para indicar que os símbolos de depuração de um módulo que está sendo depurado foram carregados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,32 +28,32 @@ Essa interface é enviada pelo mecanismo de depuração (DE) para indicar que os
 IDebugSymbolSearchEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface para relatar que o símbolo de um módulo foi carregado. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface. Usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa esta interface para informar que os símbolos de um módulo foram carregados. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface. O SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia esse objeto de evento para relatar que o símbolo de um módulo foi carregado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O DE cria e envia este objeto de evento para informar que os símbolos de um módulo foram carregados. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- O `IDebugSymbolSearchEvent2` interface expõe o método a seguir.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A `IDebugSymbolSearchEvent2` interface expõe o seguinte método.
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Recupera informações sobre os resultados de uma pesquisa de símbolo.|
+|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Recupera informações sobre os resultados de uma pesquisa de símbolos.|
 
 ## <a name="remarks"></a>Comentários
- Esse evento será enviado mesmo se os símbolos não pôde ser carregado. Chamar `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` permite que o manipulador deste evento para determinar se o módulo tem, na verdade, todos os símbolos.
+ Este evento será enviado mesmo se os símbolos não forem carregados. A `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` chamada permite que o manipulador deste evento determine se o módulo realmente tem algum símbolo.
 
- Normalmente, o Visual Studio usa esse evento para atualizar o status de símbolos carregados na **módulos** janela.
+ O Visual Studio normalmente usa esse evento para atualizar o status dos símbolos carregados na janela **Módulos.**
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,99 +1,99 @@
 ---
-title: Features1 do serviço de linguagem herdado | Microsoft Docs
+title: Recursos do serviço de idioma legado1 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8fead42087699deb257b29093ee4349bbc8ef78
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0be7cb4401792b30eac595faf64162dc375dbb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707393"
 ---
 # <a name="legacy-language-service-features"></a>Recursos do serviço de linguagem herdado
-Um serviço de linguagem do framework (MPF) de pacote gerenciado pode dar suporte a um ou mais [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos, como realce de sintaxe, IntelliSense e validação de ponto de interrupção. Cada recurso pode ser implementado independente dos outros, mas todos exigem um analisador e um scanner, exceto para o realce de sintaxe, que exige apenas um scanner.
+Um serviço de idioma de framework de pacote [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerenciado (MPF) pode suportar um ou mais recursos, como destaque de sintaxe, IntelliSense e validação de breakpoint. Cada recurso pode ser implementado independente dos outros, mas todos requerem um analisador e um scanner, exceto para o destaque da sintaxe, que requer apenas um scanner.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Correspondência de chave em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+- [Correspondência de chaves em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a par de idiomas correspondente, também conhecido como correspondência de chaves.
+ Descreve o que é necessário para suportar a correspondência de pares de idiomas, também conhecido como correspondência de chaves.
 
-- [Comentar em código em um serviço de linguagem herdado](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
+- [Comentando o código em um serviço de linguagem herdado](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a comentários ou remoção de comentários do código selecionado.
+ Descreve o que é necessário para suportar comentários e não comentários de código selecionado.
 
 - [Propriedades de documento personalizadas em um serviço de linguagem herdado](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a propriedades de documento que são inseridas em um arquivo de origem.
+ Descreve o que é necessário para suportar propriedades de documentos que estão incorporadas em um arquivo de origem.
 
-- [Estruturar em tópico em um serviço de linguagem herdado](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
+- [Estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte à estrutura de tópicos por meio da implementação de regiões ocultas.
+ Descreve o que é necessário para apoiar o delineamento através da implementação de regiões ocultas.
 
-- [Reformatar o código em um serviço de linguagem herdado](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)
+- [Reformatando o código em um serviço de linguagem herdado](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a reformatação de código.
+ Descreve o que é necessário para apoiar o código reformatizador.
 
-- [Suporte a snippets de código em um serviço de linguagem herdado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+- [Suporte para snippets de código em um serviço de linguagem herdado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a trechos de código, que são segmentos de código que são inseridos e podem ser editados.
+ Descreve o que é necessário para suportar trechos de código, que são segmentos de código que são inseridos e podem ser editados.
 
 - [Informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)
 
- Descreve o que é necessário para dar suporte a operação de informações de parâmetro do IntelliSense para exibir uma assinatura de método, como o método é digitado.
+ Descreve o que é necessário para suportar a operação IntelliSense Parameter Info para exibir uma assinatura de método à medida que o método é digitado.
 
 - [Informações rápidas em um serviço de linguagem herdado](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a operação de informações rápidas do IntelliSense para exibir informações sobre um identificador.
+ Descreve o que é necessário para suportar a operação Informações Rápidas do IntelliSense para exibir informações sobre um identificador.
 
 - [Preenchimento de membro em um serviço de linguagem herdado](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a operação de preenchimento de membro IntelliSense para selecionar um membro de um namespace de uma lista.
+ Descreve o que é necessário para suportar a operação IntelliSense Member Completion para selecionar um membro de um namespace de uma lista.
 
 - [Preenchimento de palavra em um serviço de linguagem herdado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a operação do IntelliSense Complete Word para completar palavras parcialmente digitadas.
+ Descreve o que é necessário para suportar a operação IntelliSense Complete Word para completar palavras parcialmente digitadas.
 
-- [Suporte a janela de automáticos em um serviço de linguagem herdado](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)
+- [Suporte para a janela de automáticos em um serviço de linguagem herdado](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)
 
- Descreve o que pode fazer um serviço de linguagem para dar suporte a **automóveis** janela enquanto você está depurando.
+ Descreve o que um serviço de idioma pode fazer para suportar a janela **Autos** enquanto você está depurando.
 
-- [Suporte a barra de navegação em um serviço de linguagem herdado](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+- [Suporte para a barra de navegação em um serviço de linguagem herdado](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
 
- Descreve como usar o **barra de navegação** na parte superior do modo de exibição do editor para fornecer uma navegação rápida em qualquer tipo ou membro no arquivo mostrado nesse modo de exibição...
+ Descreve como usar a **barra de navegação** na parte superior da exibição do editor para fornecer navegação rápida a qualquer tipo ou membro no arquivo mostrado nessa exibição..
 
 - [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
 
- Descreve o que é necessário para dar suporte a realce de sintaxe do código-fonte.
+ Descreve o que é necessário para suportar o destaque da sintaxe do código fonte.
 
-- [Validar pontos de interrupção em um serviço de linguagem herdado](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
+- [Validando pontos de interrupção em um serviço de linguagem herdado](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
- Descreve o que pode fazer um serviço de linguagem para dar suporte a pontos de interrupção Validando fora de um depurador.
+ Descreve o que um serviço de idioma pode fazer para suportar a validação de pontos de interrupção fora de um depurador.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Analisador e scanner do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
- Descreve o analisador e scanner que são necessários para implementar todos os recursos de um serviço de linguagem que usa a estrutura de pacote gerenciado.
+ Descreve o analisador e o scanner necessários para implementar todos os recursos de um serviço de idioma que usa a estrutura de pacote gerenciada.
 
 - [Implementando um serviço de linguagem herdado](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
- Descreve o que é necessário implementar um serviço de linguagem, usando o MPF.
+ Descreve o que é necessário para implementar um serviço de idioma usando o MPF.
 
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
- Descreve as etapas necessárias para registrar um serviço de linguagem baseada em MPF com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Descreve as etapas necessárias para registrar um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]serviço de idioma baseado no MPF com .
 
 - [Usando o IntelliSense](../../ide/using-intellisense.md)
 
- Explica como o IntelliSense torna as referências à linguagem fácil acesso.
+ Explica como o IntelliSense facilita o acesso das referências de idiomas.
 
 - [Implementando um serviço de linguagem herdado](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 
- Fornece informações sobre como usar a estrutura de pacote gerenciado (MPF) para implementar um serviço de linguagem completa no código gerenciado.
+ Fornece informações sobre como usar o mpf (framework de pacote gerenciado) para implementar um serviço de idioma completo em código gerenciado.

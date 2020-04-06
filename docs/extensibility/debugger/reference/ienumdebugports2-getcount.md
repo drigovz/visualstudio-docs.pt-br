@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2::GetCount | Microsoft Docs
+title: iEnumDebugPorts2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::GetCount
 ms.assetid: d714455c-e4fc-48dc-a6d4-7e8b5d7c1bce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57fe714d48fff6fa6f7097b7fa8ad47f2244f617
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 478a4e3d34fe57721fc056fc4dd19851e3bc22d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339511"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716195"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
 Retorna o número de elementos na enumeração.
@@ -39,15 +39,15 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pcelt`\
-[out] Retorna o número de elementos na enumeração.
+[fora] Retorna o número de elementos na enumeração.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método não é parte do que a interface de enumeração COM habitual que especifica que somente o `Next`, `Clone`, `Skip`, e `Reset` métodos precisam ser implementados.
+ Este método não faz parte da interface de enumeração `Next` `Clone`com `Skip`costumeira que especifica que apenas os `Reset` métodos e métodos precisam ser implementados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

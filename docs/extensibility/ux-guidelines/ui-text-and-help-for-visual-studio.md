@@ -3,17 +3,17 @@ title: UI Texto e Ajuda para O Estúdio Visual | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303123"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698291"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de interface do usuário e Ajuda para Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a>Texto e terminologia da UI
@@ -278,7 +278,7 @@ ms.locfileid: "79303123"
  Em diálogos que suportam tarefas complexas, pode haver a necessidade de dar texto instrutivo dentro da UI, muitas vezes no topo do diálogo ou controles próximos complexos. Consulte [o texto e a terminologia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) da UI para obter detalhes sobre o estilo de escrita.
 
 #### <a name="infotips"></a>Dicas de informações
- Muitas vezes, o texto instrutivo pode ser muito demorado para se posicionar na ui ou pode ser útil apenas para novos usuários, sentindo-se como desordem para usuários experientes. Neste caso, o texto instrutivo/informativo deve ser colocado como uma dica de ferramenta uma InfoTip.
+ Muitas vezes, o texto instrutivo pode ser muito demorado para se posicionar na ui ou pode ser útil apenas para novos usuários, sentindo-se como desordem para usuários experientes. Neste caso, o texto instrutivo/informativo deve ser colocado como uma dica de ferramenta sob uma InfoTip.
 
  InfoTips devem ser colocados perto dos controles aos quais estão relacionados e devem usar o ícone InfoTip específico, que é discreto, mas perceptível.
 

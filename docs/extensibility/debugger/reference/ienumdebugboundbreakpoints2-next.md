@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Next
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92de3edb5e0720654714555f6073c19561450c3c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 76b79e1bd49f24044a967bd72a52c91735f468ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314168"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717532"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -43,19 +43,19 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `celt`\
-[in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+[em] O número de elementos para recuperar. Também especifica o tamanho `rgelt` máximo da matriz.
 
 `rgelt`\
-[no, out] Matriz de [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) elementos a serem preenchidos.
+[dentro, fora] Matriz de elementos [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) a serem preenchidos.
 
 `pceltFetched`\
-[out] Retorna o número de elementos realmente retornados em `rgelt`.
+[fora] Retorna o número de elementos realmente retornados em `rgelt`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retornos `S_FALSE` se menos do que o número solicitado de elementos pode ser devolvido; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

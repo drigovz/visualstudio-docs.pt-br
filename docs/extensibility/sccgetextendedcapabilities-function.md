@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353662"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700731"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Função SccGetExtendedCapabilities
-Essa função retorna a recursos adicionais, compatíveis com o plug-in de controle de origem.
+Esta função retorna recursos adicionais suportados pelo plug-in de controle de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,31 +32,31 @@ SCCRTN SccGetExtendedCapabilities(
 );
 ```
 
-### <a name="parameters"></a>Parâmetros
+### <a name="parameters"></a>parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+[em] O ponteiro de contexto plug-in de controle de origem.
 
  lSccExCaps
 
-[in] Um sinalizador que especifica uma funcionalidade estendida para o qual testar (consulte a tabela de código de funcionalidade estendida na [sinalizadores de recurso](../extensibility/capability-flags.md) para os possíveis sinalizadores).
+[em] Um sinalizador especificando um recurso estendido para o qual testar (consulte a tabela Código de capacidade estendida em [sinalizadores de capacidade](../extensibility/capability-flags.md) para os possíveis sinalizadores).
 
- pbSupported
+ pbSuportado
 
-[out] Retorna não zero (`TRUE`) se houver suporte para o recurso especificado; caso contrário, retorna zero (`FALSE`).
+[fora] Retorna não-zero`TRUE`( ) se o recurso especificado for suportado; caso contrário, retorna`FALSE`zero ( ).
 
 ## <a name="return-value"></a>Valor retornado
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A operação de recurso get foi concluída com êxito.|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Erro desconhecido ou não especificado ocorreu.|
+|SCC_OK|A operação de capacidade get concluída com sucesso.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Ocorreu erro desconhecido ou não especificado.|
 
 ## <a name="remarks"></a>Comentários
- Esse método é chamado por demanda. ou seja, quando um recurso precisa ser testado, esse método é chamado para determinar se que o recurso tem suporte. Sinalizador de apenas um por vez é especificado.
+ Este método é chamado sob demanda; ou seja, quando uma capacidade precisa ser testada, esse método é chamado para determinar se esse recurso é suportado. Apenas uma bandeira de cada vez é especificada.
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)
-- [Códigos de erro](../extensibility/error-codes.md)
-- [Sinalizadores de recurso](../extensibility/capability-flags.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Códigos do Erro](../extensibility/error-codes.md)
+- [Bandeiras de capacidade](../extensibility/capability-flags.md)

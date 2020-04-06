@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e577af3ce70280b81681cb72295c3511dd3ab4a4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720550"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700403"
 ---
 # <a name="sccrunscc-function"></a>Função SccRunScc
-Essa função invoca a ferramenta de administração do controle do código-fonte.
+Esta função invoca a ferramenta de administração de controle de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,45 +33,45 @@ SCCRTN SccRunScc(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+#### <a name="parameters"></a>parâmetros
  pvContext
 
-no A estrutura de contexto do plug-in de controle do código-fonte.
+[em] A estrutura de contexto plug-in de controle de origem.
 
  hWnd
 
-no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
+[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
 
- nFiles
+ nArquivos
 
-no Número de arquivos especificados na matriz de `lpFileNames`.
+[em] Número de arquivos especificados na `lpFileNames` matriz.
 
  lpFileNames
 
-no Matriz de nomes de arquivo selecionados.
+[em] Matriz de nomes de arquivos selecionados.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A ferramenta de administração do controle do código-fonte foi invocada com êxito.|
+|SCC_OK|A ferramenta de administração de controle de origem foi invocada com sucesso.|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada.|
-|SCC_E_INITIALIZEFAILED|Falha ao inicializar o sistema de controle do código-fonte.|
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|
-|SCC_E_CONNECTIONFAILURE|Falha ao conectar ao sistema de controle do código-fonte.|
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|
-|SCC_E_NONSPECIFICERROR|Falha não específica.|
+|SCC_E_INITIALIZEFAILED|Falhou em inicializar o sistema de controle de origem.|
+|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção.|
+|SCC_E_CONNECTIONFAILURE|Falha ao conectar-se ao sistema de controle de origem.|
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle de origem.|
+|SCC_E_NONSPECIFICERROR|Falha inespecífica.|
 
 ## <a name="remarks"></a>Comentários
- Essa função permite que o chamador acesse a gama completa de recursos do sistema de controle do código-fonte por meio de uma ferramenta de administração externa. Se o sistema de controle do código-fonte não tiver nenhuma interface do usuário, o plug-in de controle do código-fonte poderá implementar uma interface para executar as funções de administração necessárias.
+ Esta função permite que o chamador acesse toda a gama de recursos do sistema de controle de origem através de uma ferramenta de administração externa. Se o sistema de controle de origem não tiver interface de usuário, o plug-in de controle de origem pode implementar uma interface para executar as funções de administração necessárias.
 
- Essa função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração oferecer suporte a ela, a lista de arquivos poderá ser usada para preselecionar arquivos na interface de administração; caso contrário, a lista poderá ser ignorada.
+ Esta função é chamada com uma contagem e uma matriz de nomes de arquivos para os arquivos selecionados no momento. Se a ferramenta de administração o suportar, a lista de arquivos pode ser usada para pré-selecionar arquivos na interface de administração; caso contrário, a lista pode ser ignorada.
 
- Essa função é normalmente invocada quando o usuário seleciona a **inicialização \<Source servidor de controle >** no menu de**controle do código-fonte**  ->  do **arquivo** . Essa opção de menu **Iniciar** pode ser sempre desabilitada ou até mesmo oculta com a definição de uma entrada de registro. Consulte [como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função será chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retornar o bit de recurso de `SCC_CAP_RUNSCC` (consulte os [sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de funcionalidade).
+ Essa função é normalmente invocada quando o usuário seleciona o>do Servidor de Controle de Origem de **Origem \<** do menu Controle de**Origem** de **Arquivo.** ->  Esta opção de menu **Iniciar** pode ser sempre desativada ou até mesmo oculta definindo uma entrada de registro. [Veja como: Instale um plug-in de controle de origem](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Esta função é chamada apenas se `SCC_CAP_RUNSCC` [SccInitialize](../extensibility/sccinitialize-function.md) retornar o bit de capacidade (consulte [Sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre este e outros bits de capacidade).
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Como instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
-- [Sinalizadores de recurso](../extensibility/capability-flags.md)
+- [Sinalizadores de capacidade](../extensibility/capability-flags.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

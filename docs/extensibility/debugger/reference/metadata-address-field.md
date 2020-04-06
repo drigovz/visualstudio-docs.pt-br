@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd8e536c1916f22fba81ff77379c218b1f2516ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714529"
 ---
-# <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
+# <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
-Essa estrutura representa o endereço de um campo de uma classe ou estrutura.
+Esta estrutura representa o endereço de um campo de classe ou estrutura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Membros
 
 `tokField`\
-A ID do token de campo.
+A id do token de campo.
 
-[C++] `_mdToken` é um `typedef` de 32 bits `int`.
+[C++] `_mdToken` é `typedef` um para um `int`de 32 bits .
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_FIELD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).
+Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_FIELD` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisitos
 
-Header: sh.h
+Cabeçalho: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

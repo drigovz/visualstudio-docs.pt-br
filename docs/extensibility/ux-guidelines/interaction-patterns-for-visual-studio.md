@@ -1,38 +1,38 @@
 ---
-title: Padrões de interação para Visual Studio | Microsoft Docs
+title: Padrões de interação para o Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa0a25eac1c14c1d07096840b88a1ec63593f56
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ac917aeb2530570b755e7f1e6fc6de00714a54b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824308"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698369"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Padrões de interação para Visual Studio
 ## <a name="overview"></a>Visão geral
- Um padrão de design, em geral, é o núcleo de um design que pode ser aplicado em situações específicas para resolver problemas com conjuntos semelhantes de restrições. Designers de recurso e o sistema usam esses padrões de design como partida pontos, que, em seguida, podem ser adaptados à sua situação específica.
+ Um padrão de design, em geral, é o núcleo de um projeto que pode ser aplicado em situações específicas para resolver problemas com conjuntos semelhantes de restrições. Os projetistas de recursos e sistemas usam esses padrões de design como pontos de partida, que podem ser adaptados à sua situação específica.
 
- O Visual Studio tem uma biblioteca de padrões comuns de interação que devem ser considerados ao criar novos recursos. Há dois contextos de núcleo para nossos padrões de design: Cliente do Visual Studio (devenv) e o Visual Studio Online. Para alguns problemas de design, há um padrão de todos os lugares que funciona bem em todas as situações. Em muitos casos, no entanto, a solução pode ser diferente para a interface do usuário que está sendo apresentado em um navegador e que está hospedado em um aplicativo cliente.
+ O Visual Studio possui uma biblioteca de padrões de interação comuns que devem ser considerados na construção de novos recursos. Existem dois contextos principais para nossos padrões de design: Visual Studio Client (devenv) e Visual Studio Online. Para alguns problemas de design, há um padrão onipresente que funciona bem em todas as situações. Em muitos casos, no entanto, a solução pode ser diferente para a interface do usuário que está sendo apresentada dentro de um navegador e aquela que está hospedada em um aplicativo cliente.
 
-### <a name="visual-studio-client-pattern-types"></a>Tipos de padrão de cliente do Studio Visual
+### <a name="visual-studio-client-pattern-types"></a>Tipos de padrão do Visual Studio Client
 
 |Tipo de padrão|Descrição|Exemplos|
 |------------------|-----------------|--------------|
-|**Padrões de nível de aplicativo**|Padrões de alto nível comuns para o aplicativo, determinando ou exibindo o contexto do aplicativo e que contém a composição e padrões de controle dentro deles|-Janelas de ferramentas<br />– Janelas de documento|
-|**Padrões de composição**|Padrões comuns que podem abranger em padrões de aplicativo ou um padrão reconhecido composto de vários controles em uma configuração distinta|-Exibir a exibição<br />-Construtores de lista<br />-Exibindo dados<br />-Notificações<br />-Validação<br />-Modelos seleção|
-|**Padrões de controle**|Informações específicas sobre controles de baixo nível como devem se comportar|-Modos de exibição de árvore<br />-Edição dentro de um controle de grade|
+|**Padrões de nível de aplicação**|Padrões de alto nível comuns ao aplicativo, determinando ou exibindo o contexto do aplicativo e contendo padrões compostos e de controle dentro deles|- Janelas de ferramentas<br />- Janelas de documentos|
+|**Padrões compostos**|Padrões comuns que podem se estender através de padrões de aplicativos, ou um padrão reconhecido composto por vários controles em uma configuração distinta|- Ver comutação<br />- Construtores de listas<br />- Exibição de dados<br />- Notificações<br />- Validação<br />- Modelos de seleção|
+|**Padrões de controle**|Especificidades sobre como os controles de baixo nível devem se comportar|- Vista de árvores<br />- Edição dentro de um controle de grade|
 
 ## <a name="application-patterns"></a>Padrões de aplicativo
- Em um alto nível, a interface do Visual Studio consiste em vários windows, as caixas de diálogo, comandos e barras de ferramentas dentro de um único IDE. A hierarquia do Visual Studio determina os menus de contexto e unidades. Os pontos de integração principais na interface do usuário do IDE são janelas de documentos, janelas de ferramentas, projetos, a estrutura de comando, o editor de texto, a caixa de ferramentas, a janela Propriedades e ferramentas > Opções.
+ Em um alto nível, a interface do Visual Studio compreende várias janelas, diálogos, comandos e barras de ferramentas dentro de um único IDE. A hierarquia do Visual Studio determina o contexto e impulsiona menus. Os principais pontos de integração na interface do usuário do IDE são janelas de documentos, janelas de ferramentas, projetos, estrutura de comando, editor de texto, caixa de ferramentas, janela Propriedades e Opções de ferramentas >.
 
- Há padrões de uso básico para cada um dos pontos de integração principais na interface do usuário do IDE:
+ Existem padrões básicos de uso para cada um dos principais pontos de integração na interface do usuário do IDE:
 
 - [Menus e comandos para Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)
 
@@ -40,18 +40,18 @@ ms.locfileid: "67824308"
 
   - [Interações de janela](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-  - [Janelas de ferramentas](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [Janelas da ferramenta](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
-  - [Convenções do editor de documento](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
+  - [Convenções de editores de documentos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
-  - [Caixas de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
+  - [Diálogos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
   - [Projetos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
-## <a name="common-control-patterns"></a>Padrões de controle comum
- Padrões de controle são principalmente sobre os controles individuais como esperado se comportar. Esta é uma área em que a consistência é mais crítica.
+## <a name="common-control-patterns"></a>Padrões comuns de controle
+ Os padrões de controle são principalmente sobre como os controles individuais devem se comportar. Esta é uma área em que a consistência é mais crítica.
 
- Controles mais comuns no Visual Studio devem seguir as diretrizes do Windows de área de trabalho. Nossas diretrizes incluem apenas as áreas em que precisamos ampliar a convenções comuns com interações específicas do Visual Studio, ou locais em que podemos substituem as diretrizes inteiramente para adequar o Visual Studio para atender às necessidades de nossos usuários sofisticados.
+ Os controles mais comuns no Visual Studio devem seguir as diretrizes do Desktop Windows. Nossas diretrizes incluem apenas áreas em que precisamos aumentar convenções comuns com interações específicas do Visual Studio, ou lugares em que substituímos as diretrizes inteiramente a fim de adaptar o Visual Studio para atender às necessidades de nossos usuários sofisticados.
 
 - [Padrões de controle comuns para Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
@@ -59,19 +59,19 @@ ms.locfileid: "67824308"
 
   - [Controles de texto](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-  - [Hiperlinks e botões](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+  - [Botões e hiperlinks](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
-## <a name="composite-patterns"></a>Padrões de composição
- Há várias maneiras que os usuários esperam para realizar tarefas. Sempre que possível, os recursos devem ser projetados para usar esses padrões para interação do e design visual.
+## <a name="composite-patterns"></a>Padrões compostos
+ Há uma série de maneiras que os usuários esperam realizar tarefas. Sempre que possível, os recursos devem ser projetados para usar esses padrões tanto para interação quanto para design visual.
 
- Embora haja muitos padrões de composição dentro do Visual Studio, alguns dos mais importantes com relação à consistência são:
+ Embora existam muitos padrões compostos dentro do Visual Studio, alguns dos mais importantes no que diz respeito à consistência são:
 
 - [Padrões de composição para Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-  - [Interface do usuário no objeto e inspecionar](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [UI on-object e espiando](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
   - [Modelos de seleção](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-  - [Salvando as configurações e persistência](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+  - [Configurações de persistência e salvamento](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
   - [Entrada de toque](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)

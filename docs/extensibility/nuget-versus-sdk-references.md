@@ -2,25 +2,25 @@
 title: Adicionando referências usando o NuGet versus um SDK de Extensão
 ms.date: 08/02/2019
 ms.topic: conceptual
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 372e82f9bb032ac5a81362017d2062ecf0d44e3f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68795589"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702429"
 ---
-# <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet versus SDK como uma referência de projeto
+# <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet versus SDK como referência de projeto
 
-Este artigo foi criado para ajudar os desenvolvedores a escolherem se deseja empacotar seu software como um pacote NuGet ou como um Software Development Kit (SDK). Especificamente, ele aborda as diferenças entre os dois quando eles são referenciados em um projeto do Visual Studio.
+Este artigo foi projetado para ajudar os desenvolvedores a escolher se devem empacotar seu software como um pacote NuGet ou como um kit de desenvolvimento de software (SDK). Especificamente, discute diferenças entre os dois quando eles são referenciados em um projeto do Visual Studio.
 
-- O [NuGet](/nuget) é um sistema de gerenciamento de pacotes de código-fonte aberto que simplifica o processo de incorporação de bibliotecas em um projeto. Para o .NET (incluindo o .NET Core), o NuGet é o mecanismo com suporte da Microsoft para o compartilhamento de código. O NuGet define como os pacotes para .NET são criados, hospedados e consumidos e fornece as ferramentas para cada uma dessas funções. No Visual Studio, você adiciona pacotes NuGet a um projeto usando a interface do usuário do [Gerenciador de pacotes](/nuget/consume-packages/install-use-packages-visual-studio) .
+- [NuGet](/nuget) é um sistema de gerenciamento de pacotes de código aberto que simplifica o processo de incorporação de bibliotecas em um projeto. Para .NET (incluindo .NET Core), nuGet é o mecanismo suportado pela Microsoft para compartilhar código. O NuGet define como os pacotes para .NET são criados, hospedados e consumidos e fornece as ferramentas para cada uma dessas funções. No Visual Studio, você adiciona pacotes NuGet a um projeto usando a interface de usuário [do Package Manager.](/nuget/consume-packages/install-use-packages-visual-studio)
 
-- Um [SDK](../extensibility/creating-a-software-development-kit.md) é uma coleção de arquivos que o Visual Studio trata como um único item de referência. A caixa de diálogo Gerenciador de referências no Visual Studio lista todos os SDKs que são relevantes para o projeto atual quando você escolhe **Adicionar referência**. Ao adicionar um SDK a um projeto do, você pode acessar todo o conteúdo desse SDK por meio do IntelliSense, a janela caixa de ferramentas, os designers, o pesquisador de objetos, o MSBuild, a implantação, a depuração e o empacotamento.
+- Um [SDK](../extensibility/creating-a-software-development-kit.md) é uma coleção de arquivos que o Visual Studio trata como um único item de referência. A caixa de diálogo Gerenciador de referência no Visual Studio lista todos os SDKs relevantes para o projeto atual quando você escolhe **Adicionar referência**. Quando você adiciona um SDK a um projeto, você pode acessar todo o conteúdo desse SDK através do IntelliSense, da janela Toolbox, dos designers, do Navegador de Objetos, do MSBuild, da implantação, da depuração e da embalagem.
 
 ## <a name="which-mechanism-should-i-use"></a>Que mecanismo devo usar?
 
@@ -29,9 +29,9 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 | Recurso | Suporte do SDK | Anotações do SDK | Suporte do NuGet | Anotações do NuGet |
 | - | - | - |---------------| - |
 | O mecanismo referencia uma entidade e, em seguida, todos os arquivos e funcionalidades estarão disponíveis. | S | Você adiciona um SDK usando a caixa de diálogo **Gerenciador de Referências** e todos os arquivos e funcionalidades estarão disponíveis durante o fluxo de trabalho de desenvolvimento. | S | |
-| O MSBuild consome automaticamente assemblies e arquivos de metadados do Windows ( *.winmd*). | S | As referências no SDK são automaticamente passadas para o compilador. | S | |
+| O MSBuild consome automaticamente conjuntos e arquivos de metadados do Windows *(.winmd).* | S | As referências no SDK são automaticamente passadas para o compilador. | S | |
 | O MSBuild consome automaticamente os arquivos .h ou .lib. | S | O arquivo *SDKName.props* informa ao Visual Studio como configurar o diretório do Visual C++ e assim por diante, para consumo automático do arquivo *.h* ou *.lib*. | N | |
-| O MSBuild consome automaticamente os arquivos *.js* ou *.css*. | S | No **Gerenciador de Soluções**, é possível expandir o nó de referência do SDK do JavaScript para mostrar arquivos *.js* ou *.css* individuais e, em seguida, gerar marcações `<source include/>` arrastando esses arquivos para seus arquivos de origem. O SDK dá suporte ao F5 e à configuração automática do pacote. | S | |
+| O MSBuild consome automaticamente os arquivos *.js* ou *.css.* | S | No **Gerenciador de Soluções**, é possível expandir o nó de referência do SDK do JavaScript para mostrar arquivos *.js* ou *.css* individuais e, em seguida, gerar marcações `<source include/>` arrastando esses arquivos para seus arquivos de origem. O SDK dá suporte ao F5 e à configuração automática do pacote. | S | |
 | O MSBuild adiciona automaticamente o controle na **Caixa de Ferramentas**. | S | A **Caixa de Ferramentas** pode consumir SDKs e mostrar controles nas guias especificadas. | N | |
 | O mecanismo dá suporte ao VSIX (Instalador do Visual Studio para extensões). | S | O VSIX tem um manifesto e uma lógica especiais para criar pacotes do SDK | S | O VSIX pode ser inserido em outro programa de instalação. |
 | O **Pesquisador de Objetos** enumera as referências. | S | O **Pesquisador de Objetos** obtém automaticamente a lista de referências em SDKs e as enumera. | N | |
@@ -59,12 +59,12 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 | O mecanismo contém um arquivo *.exe* autônomo para criar e consumir pacotes. | S | O SDK contém *MSBuild.exe*. | S | |
 | O check-in dos pacotes pode ser feito no controle de versão. | S | Não é possível fazer check-in fora do nó Documentos, o que significa que o check-in dos SDKs da Extensão não pode ser feito. O tamanho do SDK da Extensão pode ser grande. | S | |
 | É possível usar uma interface do PowerShell para criar e consumir pacotes. | Y (consumo), N (criação) | Não há ferramentas para a criação de um SDK. Consumo está sendo executado o MSBuild na linha de comando. | S | |
-| É possível usar um pacote de símbolos para o suporte à depuração. | S | Se você soltar arquivos *.pdb* no SDK, os arquivos serão selecionados automaticamente. | S | |
+| É possível usar um pacote de símbolos para o suporte à depuração. | S | Se você soltar arquivos *.pdb* no SDK, os arquivos são captados automaticamente. | S | |
 | O mecanismo dá suporte a atualizações automáticas do gerenciador de pacotes. | N/D | O SDK é revisado com o MSBuild. | S | |
 | O mecanismo dá suporte a um formato de manifesto leve. | S | O *SDKManifest.xml* oferece suporte a muitos atributos, mas geralmente um pequeno subconjunto é necessário. | S | |
 | O mecanismo está disponível para todas as edições do Visual Studio. | S | O SDK é compatível com todas as edições do Visual Studio. | S | O NuGet é compatível com todas as edições do Visual Studio. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)
 - [Gerenciar referências em um projeto (Visual Studio para Mac)](/visualstudio/mac/managing-references-in-a-project)

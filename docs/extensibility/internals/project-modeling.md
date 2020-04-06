@@ -1,29 +1,29 @@
 ---
-title: Modelagem de projeto | Microsoft Docs
+title: Modelagem de Projetos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42e810a36478e49a578c6713d20f1bfc6be98309
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706550"
 ---
 # <a name="project-modeling"></a>Modelagem do projeto
-A próxima etapa no fornecimento de automação para seu projeto é implementar os objetos de projeto padrão: as coleções <xref:EnvDTE.Projects> e `ProjectItems`; os objetos `Project` e <xref:EnvDTE.ProjectItem>; e os objetos restantes exclusivos da sua implementação. Esses objetos padrão são definidos no arquivo Dteinternal. h. Uma implementação dos objetos padrão é fornecida no exemplo BscPrj. Você pode usar essas classes como modelos para criar seus próprios objetos de projeto padrão que ficam lado a lado com objetos de projeto de outros tipos de projeto.
+O próximo passo para fornecer automação para o seu <xref:EnvDTE.Projects> projeto `ProjectItems` é implementar os objetos padrão do projeto: os e coleções; e `Project` <xref:EnvDTE.ProjectItem> os objetos; e os objetos restantes exclusivos de sua implementação. Esses objetos padrão são definidos no arquivo Dteinternal.h. Uma implementação dos objetos padrão é fornecida na amostra BscPrj. Você pode usar essas classes como modelos para criar seus próprios objetos de projeto padrão que ficam lado a lado com objetos de projeto de outros tipos de projeto.
 
- Um consumidor de automação presume poder chamar <xref:EnvDTE.Solution> ("`<UniqueProjName>")` e <xref:EnvDTE.ProjectItems> (`n`), em que n é um número de índice para obter um projeto específico na solução. Fazer essa chamada de automação faz com que o ambiente chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> na hierarquia de projeto apropriada, passando VSITEMID_ROOT como o parâmetro ItemID e VSHPROPID_ExtObject como parâmetro VSHPROPID. `IVsHierarchy::GetProperty` retorna um ponteiro de `IDispatch` para o objeto de automação que fornece a interface de `Project` principal, que você implementou.
+ Um consumidor de automação presume <xref:EnvDTE.Solution>ser`<UniqueProjName>")` capaz <xref:EnvDTE.ProjectItems> `n`de ligar (" e ( ) onde n é um número de índice para a obtenção de um projeto específico na solução. Fazer essa chamada de automação <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> faz com que o ambiente convoque a hierarquia de projeto apropriada, passando VSITEMID_ROOT como parâmetro ItemID e VSHPROPID_ExtObject como parâmetro VSHPROPID. `IVsHierarchy::GetProperty`retorna `IDispatch` um ponteiro para o `Project` objeto de automação que fornece a interface principal, que você implementou.
 
- Veja a seguir a sintaxe de `IVsHierarchy::GetProperty`.
+ A seguir está a `IVsHierarchy::GetProperty`sintaxe de .
 
  `HRESULT GetProperty (`
 
@@ -35,7 +35,7 @@ A próxima etapa no fornecimento de automação para seu projeto é implementar 
 
  `);`
 
- Os projetos acomodam o aninhamento e o uso de coleções para criar grupos de itens de projeto. A hierarquia é parecida com esta.
+ Os projetos acomodam aninhamento e usam coleções para criar grupos de itens do projeto. A hierarquia é assim.
 
 ```
 Projects
@@ -44,15 +44,15 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)
 ```
 
- O aninhamento significa que um objeto <xref:EnvDTE.ProjectItem> pode ser <xref:EnvDTE.ProjectItems> coleção ao mesmo tempo porque uma coleção de `ProjectItems` pode conter os objetos aninhados. O exemplo de projeto básico não demonstra esse aninhamento. Ao implementar o objeto `Project`, você participa da estrutura do tipo árvore que caracteriza o design do modelo de automação Geral.
+ Aninhamento significa <xref:EnvDTE.ProjectItem> que <xref:EnvDTE.ProjectItems> um objeto pode ser `ProjectItems` coletaao mesmo tempo porque uma coleção pode conter os objetos aninhados. A amostra do Projeto Básico não demonstra esse ninho. Ao implementar `Project` o objeto, você participa da estrutura semelhante a uma árvore que caracteriza o design do modelo geral de automação.
 
  A automação do projeto segue o caminho no diagrama a seguir.
 
- ![Objetos de projeto do Visual Studio](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Automação do projeto
+ ![Objetos de projeto do Estúdio Visual](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Automação de projetos
 
- Se você não implementar um objeto `Project`, o ambiente ainda retornará um objeto `Project` genérico que contém apenas o nome do projeto.
+ Se você não `Project` implementar um objeto, o `Project` ambiente ainda retornará um objeto genérico que contém apenas o nome do projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

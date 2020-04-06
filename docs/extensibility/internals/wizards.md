@@ -1,45 +1,45 @@
 ---
-title: Assistentes | Microsoft Docs
+title: Magos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3b17d7ef3137c48ddda97e1b2b5bbf0e58cf5bb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312835"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703203"
 ---
 # <a name="wizards"></a>Assistentes
-Depois de criar um assistente, você geralmente deseja adicioná-lo para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente desenvolvimento integrado (IDE) para que outras pessoas possam usá-lo. O Assistente de adição, em seguida, aparece na **adicionar novo projeto** ou **Adicionar Novo Item** caixas de diálogo. Para ver os **adicionar novo projeto** ou **Adicionar Novo Item** caixa de diálogo caixas, clique duas vezes em uma solução aberta no **Gerenciador de soluções**, aponte para **adicionar**, e em seguida, clique em **novo projeto** ou **Novo Item**.
+Depois de criar um assistente, você normalmente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deseja adicioná-lo ao ambiente de desenvolvimento integrado (IDE) para que outros possam usá-lo. Em seguida, o assistente adicionado é exibido nas caixas de diálogo **Adicionar novo projeto** ou adicionar novo **item.** Para ver o **Adicionar novo projeto** ou adicionar caixas de diálogo de novo **item,** clique com o botão direito do mouse em uma solução aberta no **Solution Explorer**, aponte para **Adicionar**e clique em **Novo Projeto** ou **Novo Item**.
 
- Assistentes podem ser implementados em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para permitir que os usuários select de uma exibição de árvore de valores disponíveis quando abrirem o **adicionar novo projeto** caixa de diálogo ou o **Adicionar Novo Item** caixa de diálogo, ou quando eles com o botão direito um item na **Gerenciador de soluções**.
+ Os assistentes podem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ser implementados para permitir que os usuários selecionem a partir de uma exibição de árvore de valores disponíveis quando abrem a caixa de diálogo **Adicionar novo projeto** ou a caixa de diálogo Adicionar novo **item,** ou quando clicarem com o botão direito do mouse em um item no **Solution Explorer**.
 
- No assistente, você pode fornecer a opção de localizar o nome de um novo projeto ou ites e você pode determinar o ícone que os usuários verão quando eles selecionarem o assistente. Você também pode controlar a ordem na qual novos itens aparecem em relação a outros itens disponíveis; itens não precisa ser organizados em ordem alfabética.
+ No seu assistente, você pode fornecer a opção de localizar o nome de um novo projeto ou ites, e você pode determinar o ícone que os usuários verão quando selecionaro assistente. Você também pode controlar a ordem em que novos itens aparecem em relação a outros itens disponíveis; os itens não têm que ser organizados alfabeticamente.
 
- Você também pode fornecer um assistente que é iniciado de forma diferente, com base em parâmetros personalizados que são passados para o Assistente quando ele é aberto.
+ Você também pode fornecer um assistente que começa de forma diferente, com base em parâmetros personalizados que são passados para o assistente quando ele é aberto.
 
- Os tópicos desta seção discutem os arquivos que você pode implementar para fazer com que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo para listar seu assistente entre os assistentes disponíveis e os modelos, e os requisitos que o assistente deve atender para operar corretamente no IDE.
+ Os tópicos desta seção discutem os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] arquivos que você implementa para causar as caixas de diálogo **Adicionar novo projeto** e adicionar novo **item** para listar seu assistente entre os assistentes e modelos disponíveis e os requisitos que seu assistente deve atender para operar corretamente no IDE.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Arquivos de descrição do diretório do modelo (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+- [Arquivos de descrição do diretório de modelo (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
 
- Fornece uma visão geral de qual modelo arquivos de descrição de diretório e explica como eles funcionam no IDE para exibir pastas, arquivos. vsz do assistente e arquivos de modelo que estão associados um projeto nas caixas de diálogo.
+ Fornece uma visão geral de quais arquivos de descrição do diretório de modelos e explica como eles funcionam no IDE para exibir pastas, arquivos assistente .vsz e arquivos de modelo que estão associados a um projeto nas caixas de diálogo.
 
 - [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
 
- Explica como o IDE é iniciado em assistentes e lista as três partes do arquivo. vsz.
+ Explica como o IDE inicia assistentes e lista as três partes do arquivo .vsz.
 
 - [Interface do assistente (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
 
- Descreve o `IDTWizard` interface assistentes devem implementar para trabalhar no IDE.
+ Descreve a `IDTWizard` interface que os assistentes devem implementar para trabalhar no IDE.
 
 - [Parâmetros de contexto](../../extensibility/internals/context-parameters.md)
 
@@ -47,13 +47,13 @@ Depois de criar um assistente, você geralmente deseja adicioná-lo para o [!INC
 
 - [Parâmetros personalizados](../../extensibility/internals/custom-parameters.md)
 
- Explica como usar parâmetros personalizados para controlar a operação do assistente depois que o assistente for iniciado.
+ Explica como usar parâmetros personalizados para controlar o funcionamento do assistente após o início do assistente.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Tipos de projeto](../../extensibility/internals/project-types.md)
 
- Fornece links para tópicos adicionais que oferecem informações sobre como criar novos tipos de projeto.
+ Fornece links para tópicos adicionais que oferecem informações sobre como projetar novos tipos de projetos.
 
 - [Estender projetos](../../extensibility/extending-projects.md)
 
- Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar os arquivos de código e arquivos de recurso e como implementar o controle do código-fonte.
+ Descreve como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projetos e soluções para organizar arquivos de código e arquivos de recursos e como implementar o controle de origem.

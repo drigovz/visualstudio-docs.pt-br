@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347525"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719201"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Obtém o endereço de depuração que segue um endereço de depuração fornecido em um método.
+Obtém o endereço de depuração que segue um endereço de depuração dado em um método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,18 +43,18 @@ int GetNextAddress( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pAddress`\
-[in] Dado o endereço de depuração.
+[em] Dado endereço de depuração.
 
 `fStatementOnly`\
-[in] Se for TRUE, limita os endereços de depuração para uma única instrução.
+[em] Se TRUE, limita os endereços de depuração a uma única declaração.
 
 `ppAddress`\
-[out] Retorna o próximo endereço de depuração.
+[fora] Retorna o próximo endereço de depuração.
 
-## <a name="return-value"></a>Valor de retorno
- Retorna um válidas `HRESULT`, normalmente S_OK.
+## <a name="return-value"></a>Valor retornado
+ Retorna um `HRESULT`válido , tipicamente S_OK.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89a110886837c793d45842db6ed80690626dd9d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335164"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718946"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Recupera informações sobre o método no endereço especificado de depuração.
+Recupera informações sobre o método no endereço de depuração especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,30 +50,30 @@ int GetMethodFromAddress(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pAddress`\
-[in] Depurar o endereço que é representado pela [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[em] Endereço de depuração representado pela interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pGuid`\
-[out] Identificador exclusivo do módulo.
+[fora] Identificador único do módulo.
 
 `pAppID`\
-[out] Identificador do domínio do aplicativo.
+[fora] Identificador do domínio do aplicativo.
 
 `pTokenClass`\
-[out] Token que representa a classe continente.
+[fora] Token que representa a classe de contenção.
 
 `pTokenMethod`\
-[out] Token que representa o módulo.
+[fora] Token que representa o módulo.
 
 `pdwOffset`\
-[out] Um deslocamento em bytes desde o início do `pAddress` parâmetro.
+[fora] Um deslocamento em bytes desde `pAddress` o início do parâmetro.
 
 `pdwVersion`\
-[out] Número de versão do método.
+[fora] Número da versão do método.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

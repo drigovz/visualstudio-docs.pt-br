@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a563a7d1d65dc4c6564abd4e337242eea1aa9924
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721479"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700669"
 ---
 # <a name="sccgetversion-function"></a>Função SccGetVersion
-Essa função obtém o número de versão da API de plug-in de controle do código-fonte com suporte pelo plug-in de controle do código-fonte.
+Esta função obtém o número da versão da API plug-in de controle de fonte suportada pelo plug-in de controle de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,19 +28,19 @@ Essa função obtém o número de versão da API de plug-in de controle do códi
 LONG SccGetVersion(void);
 ```
 
-#### <a name="parameters"></a>Parâmetros
- nenhuma.
+#### <a name="parameters"></a>parâmetros
+ Nenhum.
 
 ## <a name="return-value"></a>Valor retornado
- Um tipo de dados `LONG` que contém o número de versão da API de plug-in de controle do código-fonte com suporte:
+ Um `LONG` tipo de dados que contém o número de versão da API plug-in de controle de fonte suportada:
 
 |WORD|Descrição|
 |----------|-----------------|
-|HIWORD|Versão principal|
-|LOWORD|Versão secundária|
+|Hiword|Versão principal|
+|Loword|Versão secundária|
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, se um plug-in de controle do código-fonte der suporte à versão 1,3 da API de plug-in de controle do código-fonte, essa função retornará 0x0103.
+ Por exemplo, se um plug-in de controle de origem suportar a versão 1.3 da API plug-in de controle de fonte, essa função retornará 0x0103.
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
