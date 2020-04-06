@@ -1,39 +1,39 @@
 ---
-title: Common Language Runtime e avaliação de expressão | Microsoft Docs
+title: Avaliação de tempo de execução e expressão de linguagem comum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351305"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739116"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Avaliação de tempo de execução e a expressão de linguagem comum
+# <a name="common-language-runtime-and-expression-evaluation"></a>Avaliação de tempo de execução e expressão de linguagem comum
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Compiladores, como Visual Basic e c# (pronuncia-se C-sharp), que direcionam o tempo de execução de linguagem comum (CLR), produzem MSIL Microsoft Intermediate Language (), que é posterior compilados para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você pretende integrar a linguagem de programação proprietária ao IDE do Visual Studio, você pode optar por compilar para MSIL e, portanto, não precisa escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) que é capaz de avaliar expressões dentro do contexto de sua linguagem de programação.
+ Compiladores, como Visual Basic e C# (pronuncia-se C-sharp), que têm como alvo o Common Language Runtime (CLR), produzem o Microsoft Intermediate Language (MSIL), que é posteriormente compilado para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você planeja integrar sua linguagem de programação proprietária ao Visual Studio IDE, você pode optar por compilar para o MSIL e, portanto, não terá que escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) capaz de avaliar expressões dentro do contexto de sua linguagem de programação.
 
 ## <a name="discussion"></a>Discussão
- Expressões de idioma do computador geralmente são analisadas para produzir um conjunto de objetos de dados e um conjunto de operadores usados para manipulá-los. Por exemplo, a expressão "A + B" pode ser analisada para aplicar o operador de adição (+) para os dados de objetos "A" e "B", possivelmente resultando em outro objeto de dados. O conjunto total de objetos de dados, operadores e suas associações com mais frequência são representados em um programa como uma árvore, os operadores em nós da árvore e os objetos de dados nas ramificações. Uma expressão que tem sido dividida em forma de árvore é frequentemente chamada de uma árvore analisada.
+ As expressões de linguagem de computador são geralmente analisados para produzir um conjunto de objetos de dados e um conjunto de operadores usados para manipulá-los. Por exemplo, a expressão "A+B" pode ser analisado para aplicar o operador de adição (+) aos objetos de dados "A" e "B", possivelmente resultando em outro objeto de dados. O conjunto total de objetos de dados, operadores e suas associações são mais frequentemente representados em um programa como uma árvore, com os operadores nos nós da árvore e os objetos de dados nos galhos. Uma expressão que foi dividida em forma de árvore é muitas vezes chamada de árvore parsed.
 
- Depois que uma expressão foi analisada, um provedor de símbolo (SP) é chamado para avaliar cada objeto de dados. Por exemplo, se "A" é definida em mais de um método, a pergunta "Qual A?" deve ser atendida antes que o valor de A pode ser determinado. A resposta retornada pelo SP é algo como "O terceiro item na estrutura de pilhas quinta" ou "O que é de 50 bytes além do início da memória estática A alocado para esse método."
+ Uma vez que uma expressão é analisado, um provedor de símbolos (SP) é chamado para avaliar cada objeto de dados. Por exemplo, se "A" for definido tanto em mais de um método, a pergunta "Qual A?" deve ser respondida antes que o valor de A possa ser apurado. A resposta devolvida pelo SP é algo como "O terceiro item no quadro da quinta pilha" ou "O A que é de 50 bytes além do início da memória estática atribuída a este método".
 
- Além de produzir MSIL para o próprio programa, os compiladores do CLR também podem produzir as informações de depuração muito descritivas que são gravadas em um banco de dados do programa ( *. PDB*) arquivos. Desde que um compilador de linguagem proprietários produz informações de depuração no mesmo formato que os compiladores CLR, SP do CLR é capaz de identificar que da linguagem denominada objetos de dados. Depois que um objeto de dados chamado tiver sido identificado, o EE usa um objeto de fichário para associar o objeto de dados (ou associar uma) para a área de memória que contém o valor desse objeto. O DE, em seguida, pode obter ou definir um novo valor para o objeto de dados.
+ Além de produzir MSIL para o programa em si, os compiladores CLR também podem produzir informações de depuração muito descritivas que são escritas em um arquivo Program DataBase (*.pdb).* Enquanto um compilador de idioma proprietário produz informações depuradas no mesmo formato que os compiladores CLR, o CONTROLADOR da CLR é capaz de identificar os objetos de dados nomeados dessa linguagem. Uma vez identificado um objeto de dados nomeado, o EE usa um objeto de encadernação para associar (ou vincular) o objeto de dados à área de memória que contém o valor desse objeto. O DE pode então obter ou definir um novo valor para o objeto de dados.
 
- Um compilador proprietário pode fornecer informações de depuração por meio da chamada do CLR a `ISymbolWriter` interface (que é definido no .NET Framework no namespace `System.Diagnostics.SymbolStore`). Compilando para MSIL e gravar informações de depuração por meio dessas interfaces, um compilador proprietário pode usar os campos DE CLR e SP. Isso simplifica bastante a integração de uma linguagem proprietária ao IDE do Visual Studio.
+ Um compilador proprietário pode fornecer informações de depuração CLR ligando para a `ISymbolWriter` interface `System.Diagnostics.SymbolStore`(que é definida no .NET Framework no namespace ). Ao compilar para o MSIL e escrever informações de depuração através dessas interfaces, um compilador proprietário pode usar o CLR DE e sp. Isso simplifica muito a integração de uma linguagem proprietária no Visual Studio IDE.
 
- Quando o CLR DE chama o EE proprietária para avaliar uma expressão, o DE fornece o EE com interfaces para um SP e um objeto de associador. Portanto, escrever um meio de mecanismo de depuração com base em CLR é necessário somente implementar as interfaces de avaliador de expressão apropriada; o CLR se encarrega de associação e o símbolo de tratamento para você.
+ Quando o CLR DE chama o EE proprietário para avaliar uma expressão, o DE fornece ao EE interfaces para uma SP e um objeto de encadernação. Assim, escrever um mecanismo de depuração baseado em CLR significa que é necessário apenas implementar as interfaces de avaliador de expressão apropriadas; a CLR cuida da ligação e do manuseio do símbolo para você.
 
-## <a name="see-also"></a>Consulte também
-- [Escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Confira também
+- [Escreva um avaliador de expressão CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint method
 - GetPendingBreakpoint method
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 862c0e4fe1783793c98d50b771200effdbfd02d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320519"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735486"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Obtém o ponto de interrupção pendente da qual o ponto de interrupção associado especificado foi criado.
+Obtém o ponto de ruptura pendente a partir do qual o ponto de ruptura vinculado especificado foi criado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ int GetPendingBreakpoint( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppPendingBreakpoint`\
-[out] Retorna o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associado de objeto que representa o ponto de interrupção pendente que foi usado para criar esse ponto de interrupção.
+[fora] Retorna o objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa o breakpoint pendente que foi usado para criar esse breakpoint vinculado.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Um ponto de interrupção pendente pode ser pensado como uma coleção de todas as informações necessárias para associar um ponto de interrupção para o código que pode ser aplicado a um ou vários programas.
+Um ponto de ruptura pendente pode ser pensado como uma coleção de todas as informações necessárias para vincular um ponto de ruptura ao código que pode ser aplicado a um ou muitos programas.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um simples `CBoundBreakpoint` objeto que expõe o [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+O exemplo a seguir mostra como `CBoundBreakpoint` implementar este método para um objeto simples que expõe a interface [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(
@@ -84,6 +84,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
