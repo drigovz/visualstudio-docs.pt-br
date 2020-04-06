@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetThread
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36ab3d18a54eceb01e0f4770c4bf6e8bae62606d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 31c8b3477ffe7561e065b680e9047946e7058471
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352169"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719655"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
-Obtém o thread associado a um quadro de pilha.
+Obtém o fio associado a um quadro de pilha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ int GetThread ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppThread`\
-[out] Retorna um [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread.
+[fora] Retorna um objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
