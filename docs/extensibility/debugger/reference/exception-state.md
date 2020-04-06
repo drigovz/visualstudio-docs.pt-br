@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337684"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736961"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 Especifica o estado de exceção.
 
 ## <a name="syntax"></a>Sintaxe
@@ -81,34 +81,34 @@ public enum enum_EXCEPTION_STATE {
 Não pare na exceção.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Pare no primeiro disparo da exceção. Ao descrever um evento de exceção, esse sinalizador indica que o evento de exceção é um evento de exceção de primeira chance.
+Pare na primeira exceção. Ao descrever um evento de exceção, esta bandeira indica que o evento de exceção é um evento de exceção de primeira chance.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Pare no segundo acionamento da exceção. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de segunda chance.
+Pare no segundo disparo de exceção. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de segunda chance.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Pare no primeiro acionamento de uma exceção do modo de usuário. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção do usuário de primeira chance.
+Pare na primeira demissão de uma exceção de modo de usuário. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de primeira chance do usuário.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Interrompa quando uma exceção do modo de usuário não é capturada. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de modo de usuário não identificadas.
+Pare quando uma exceção de modo de usuário não for capturada. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção do modo de usuário não capturado.
 
 `EXCEPTION_STOP_ALL`\
-Interrompa qualquer exceção. Não é usado para descrever um evento de exceção.
+Pare em qualquer exceção. Não usado ao descrever um evento de exceção.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Ao descrever um evento de exceção, indica que a exceção não pode ser continuada de.
+Ao descrever um evento de exceção, indica que a exceção não pode ser continuada.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Indica que a exceção tem código que dão suporte a ele. Usados para exibir uma exceção
+Indica que a exceção tem código que o suporta. Usado na exibição de uma exceção
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Indica que o código de exceção deve ser exibido em hexadecimal. Usados para exibir uma exceção.
+Indica que o código de exceção deve ser exibido em hexadecimal. Usado na exibição de uma exceção.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Indica que o código de exceção oferece suporte a JustMyCode. Usados para exibir uma exceção.
+Indica que o código de exceção suporta JustMyCode. Usado na exibição de uma exceção.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Indica que o depurador de código gerenciado deve lidar com exceções. Se não for definido, o depurador padrão manipula as exceções. Isso é passado para o [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método e não usado na [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura.
+Indica que o depurador de código gerenciado deve lidar com exceções. Se não estiver definido, o depurador padrão lida com as exceções. Isso é passado para o método [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) e não é usado na estrutura [EXCEPTION_INFO.](../../../extensibility/debugger/reference/exception-info.md)
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
 OBSOLETO, NÃO USE.
@@ -123,20 +123,20 @@ OBSOLETO, NÃO USE.
 OBSOLETO, NÃO USE.
 
 ## <a name="remarks"></a>Comentários
-Usado como o `dwState` membro a [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura para indicar o estado da exceção e o que pode ser feito sobre isso.
+Usado como `dwState` membro da [estrutura EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) para indicar o estado da exceção e o que pode ser feito sobre ela.
 
-Esses valores também são passados para o [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método para definir o estado de todas as exceções.
+Esses valores também são passados para o método [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) para definir o estado de todas as exceções.
 
-Esses sinalizadores podem ser combinados com um OR bit a bit.
+Essas bandeiras podem ser combinadas com um pouco de OR.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 - [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

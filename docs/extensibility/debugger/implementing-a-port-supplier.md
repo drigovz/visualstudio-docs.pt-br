@@ -1,35 +1,35 @@
 ---
-title: Implementando um fornecedor de porta | Microsoft Docs
+title: Implementando um Fornecedor portuário | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5ba2a96b94cce65dc901a523232b1c3e0a45b9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349983"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738560"
 ---
-# <a name="implement-a-port-supplier"></a>Implementar um fornecedor de porta
-Um fornecedor de porta fornece portas de solicitação para o Gerenciador de sessão de depuração (SDM). Um fornecedor de porta deve ser implementado durante a depuração de uma máquina não-DCOM ou quando um novo dispositivo necessita de suporte. Por exemplo, para fornecer um telefone celular de depuração, você pode configurar um fornecedor de porta que fornece as portas, o qual conectar-se para o telefone celular (talvez por meio do IR ou uma conexão de célula) e enumera os processos e programas em execução no telefone.
+# <a name="implement-a-port-supplier"></a>Implementar um fornecedor portuário
+Um fornecedor portuário fornece portas a pedido ao gerenciador de depuração de sessão (SDM). Um fornecedor de porta deve ser implementado ao depurar para uma máquina não-DCOM ou quando um novo dispositivo precisar de suporte. Por exemplo, para fornecer depuração a um celular, você pode configurar um fornecedor de portas que forneça portas, que se conectam ao celular (talvez por meio de IR ou uma conexão celular) e enumerar os processos e programas em execução no telefone.
 
- Para depuração de programas em computadores baseados em Windows (incluindo a depuração remota), o Visual Studio fornece os fornecedores de porta para nativo e processos de tempo de execução de linguagem comum (CLR), portanto, não há nenhuma necessidade de configurar seu próprio fornecedor de porta nesses casos.
+ Para depurar programas em máquinas baseadas no Windows (incluindo depuração remota), o Visual Studio fornece fornecedores de portas para processos nativos e de ClR (Common Language Runtime, tempo de execução de idiomas comuns), portanto não há necessidade de configurar seu próprio fornecedor de portas nesses casos.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Implementar e registrar um fornecedor de porta](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md) discute como o SDM interage com o fornecedor de porta e suas portas.
+ [Implementar e registrar um fornecedor portuário](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md) Discute como o SDM interage com o fornecedor portuário e seus portos.
 
- [As interfaces de fornecedor porta necessárias](../../extensibility/debugger/required-port-supplier-interfaces.md) documenta as interfaces que você deve implementar para obter um fornecedor de porta.
+ [Interfaces de fornecedores de portas necessárias](../../extensibility/debugger/required-port-supplier-interfaces.md) Documenta as interfaces que você deve implementar para obter um fornecedor de porta.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md) descreve os principais conceitos de arquiteturas de depuração.
+ [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md) Descreve os principais conceitos arquitetônicos de depuração.
 
-## <a name="see-also"></a>Consulte também
- [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+## <a name="see-also"></a>Confira também
+ [Extensibilidade do depurador visual studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para implementar um plug-in de controle de origem | Microsoft Docs
+title: Práticas recomendadas para implementar um plug-in de controle de fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,56 +7,56 @@ helpviewer_keywords:
 - best practices, source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89bc4065a450f82b3cdec33e94f4e17ea700d3c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352215"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740047"
 ---
-# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Práticas recomendadas para implementar um plug-in de controle do código-fonte
-Os seguintes detalhes técnicos podem ajudá-lo com confiança implementar um plug-in de controle de fonte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Práticas recomendadas para implementar um plug-in de controle de origem
+Os seguintes detalhes técnicos podem ajudá-lo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a implementar de forma confiável um plug-in de controle de origem .
 
 ## <a name="memory-management-issues"></a>Problemas de gerenciamento de memória
- Na maioria dos casos, o ambiente de desenvolvimento integrado (IDE), que é o chamador, libera e aloca memória. O plug-in de controle de origem retorna cadeias de caracteres e outros itens em buffers alocados pelo chamador. As exceções são observadas nas descrições de funções específicas em que eles ocorrem.
+ Na maioria dos casos, o ambiente de desenvolvimento integrado (IDE), que é o chamador, libera e aloca a memória. O plug-in de controle de origem retorna strings e outros itens em buffers alocados pelo chamador. Exceções são observadas nas descrições de funções específicas onde ocorrem.
 
-## <a name="arrays-of-file-names"></a>Matrizes de nomes de arquivo
- Quando uma matriz de arquivos for passada, ele não é passado como uma matriz de nomes de arquivo de contígua. Ele é passado como uma matriz de ponteiros para nomes de arquivo. Por exemplo, nos [SccGet](../extensibility/sccget-function.md), os nomes de arquivo são passados pela `lpFileNames` parâmetro, onde `lpFileNames` é, na verdade, um ponteiro para um `char **`. `lpFileNames`[0] é um ponteiro para o primeiro nome, `lpFileNames`[1] é um ponteiro para o nome do segundo e assim por diante.
+## <a name="arrays-of-file-names"></a>Matrizes de nomes de arquivos
+ Quando uma matriz de arquivos é aprovada, ela não é aprovada como uma matriz contígua de nomes de arquivos. Ele é passado como uma matriz de ponteiros para nomes de arquivos. Por exemplo, no [SccGet,](../extensibility/sccget-function.md)os nomes `lpFileNames` dos arquivos `lpFileNames` são passados pelo `char **`parâmetro, onde na verdade é um ponteiro para um . `lpFileNames`[0] é um ponteiro para `lpFileNames`o primeiro nome, [1] é um ponteiro para o segundo nome, e assim por diante.
 
 ## <a name="large-model"></a>Modelo grande
  Todos os ponteiros são de 32 bits, mesmo em sistemas operacionais de 16 bits.
 
 ## <a name="fully-qualified-paths"></a>Caminhos totalmente qualificados
- Em que os nomes de arquivos ou diretórios são especificados como argumentos, eles devem ser caminhos totalmente qualificados ou caminhos UNC, sem barras invertidas finais. É responsabilidade do controle de fonte de plug-in para traduzir para caminhos relativos, se o que é um requisito de sistema de controle de origem subjacente.
+ Quando os nomes de arquivos ou diretórios são especificados como argumentos, eles devem ser caminhos totalmente qualificados ou caminhos UNC, sem os retrocessos finais. É responsabilidade do plug-in de controle de origem traduzi-los para caminhos relativos, se esse for um requisito do sistema de controle de origem subjacente.
 
 ## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>Especifique um caminho totalmente qualificado para a DLL registrada
- O IDE não mais carrega DLLs de caminhos relativos (por exemplo, *.\NewProvider.dll*). Deve ser especificado um caminho completo da DLL (por exemplo, *C:\Providers\NewProvider.dll*). Esse requisito reforça a segurança do IDE, impedindo que o carregamento de DLLs de controle de origem de não autorizado ou delegadas.
+ O IDE não carrega mais DLLs de caminhos relativos (por exemplo, *.\NewProvider.dll*). Um caminho completo da DLL deve ser especificado (por exemplo, *C:\Providers\NewProvider.dll*). Essa exigência reforça a segurança do IDE, impedindo o carregamento de DLLs de controle de origem não autorizados ou personificados.
 
-## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Procure um existente VSSCI plug-in quando você instala o plug-in de controle de origem
- Um usuário que planeja instalar o plug-in de controle de origem talvez já tenha um código-fonte controle existente plug-in instalado no computador. O programa de instalação (instalação) para o plug-in que você criar deve determinar se há valores existentes para as chaves de registro relevantes. Se essas chaves já estiverem definidas, seu programa de instalação deve perguntar ao usuário se registre seu plug-in como o controle de fonte padrão plug-in e substituir aquele que já está instalado.
+## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Verifique se há um plug-in VSSCI existente quando você instala seu plug-in de controle de origem
+ Um usuário que planeja instalar seu plug-in de controle de origem pode já ter um plug-in de controle de origem existente instalado no computador. O programa de instalação (configuração) do plug-in que você cria deve determinar se existem valores existentes para as chaves de registro relevantes. Se essas chaves já estiverem definidas, seu programa de instalação deve perguntar ao usuário se deve registrar seu plug-in como o plug-in padrão de controle de origem e substituir o que já está instalado.
 
-## <a name="error-result-codes-and-reporting"></a>Códigos de resultado de erro e emissão de relatórios
- O `SCC_OK` retornar o código para uma função de controle do código-fonte indica que a operação foi bem-sucedida para todos os arquivos. Se a operação falhar, ele deve retornar o último código de erro.
+## <a name="error-result-codes-and-reporting"></a>Códigos de resultados de erro e relatórios
+ O `SCC_OK` código de retorno de uma função de controle de origem indica que a operação foi bem sucedida para todos os arquivos. Se a operação falhar, espera-se que retorne o último código de erro encontrado.
 
- A regra para emissão de relatórios é que, se ocorrer um erro no IDE, o IDE é responsável por relatá-las. Se ocorrer um erro no sistema de controle de origem, o plug-in de controle do código-fonte é responsável por relatá-las. Por exemplo, **nenhum arquivo for selecionado no momento** seriam informadas pelo IDE, enquanto **esse arquivo já fez check-out** seriam informadas pelo plug-in.
+ A regra para a emissão de relatórios é que, se ocorrer um erro no IDE, o IDE é responsável por reportá-lo. Se ocorrer um erro no sistema de controle de origem, o plug-in de controle de origem é responsável por reportá-lo. Por exemplo, **nenhum arquivo selecionado no momento** seria relatado pelo IDE, enquanto este arquivo já está **verificado** seria relatado pelo plug-in.
 
-## <a name="the-context-structure"></a>A estrutura de contexto
- Durante a chamada para o [SccInitialize](../extensibility/sccinitialize-function.md), o chamador passa a `ppvContext` parâmetro, que é um identificador não inicializado para um nulo. O plug-in de controle do código-fonte pode ignorar esse parâmetro ou pode alocar uma estrutura de qualquer tipo e colocam um ponteiro para essa estrutura no ponteiro passado. O IDE não compreende essa estrutura, mas ele passa um ponteiro para essa estrutura em todas as outras chamadas no plug-in. Isso fornece informações de cache de um contexto valioso para o plug-in que ele pode usar para manter informações de estado global que persiste entre chamadas de função sem o uso de variáveis globais. O plug-in é responsável por liberar a estrutura em uma chamada para o [SccUninitialize](../extensibility/sccuninitialize-function.md).
+## <a name="the-context-structure"></a>A estrutura do contexto
+ Durante a chamada para o [SccInitialize,](../extensibility/sccinitialize-function.md)o chamador passa o `ppvContext` parâmetro, que é uma alça não inicializada para um vazio. O plug-in de controle de origem pode ignorar esse parâmetro ou pode alocar uma estrutura de qualquer tipo e colocar um ponteiro nessa estrutura no ponteiro passado. O IDE não entende essa estrutura, mas passa um ponteiro para esta estrutura em todas as outras chamadas no plug-in. Isso fornece informações valiosas de cache de contexto para o plug-in que ele pode usar para manter informações de estado global que persistem em chamadas de função sem usar variáveis globais. O plug-in é responsável por liberar a estrutura em uma chamada para o [SccUninitialize](../extensibility/sccuninitialize-function.md).
 
- Se os conjuntos de plug-in a `SCC_CAP_REENTRANT` bit na [SccInitialize](../extensibility/sccinitialize-function.md) (especificamente, no `lpSccCaps` parâmetro), várias estruturas de contexto são usadas para acompanhar todos os projetos que estão abertos.
+ Se o plug-in `SCC_CAP_REENTRANT` definir o bit no [SccInitialize](../extensibility/sccinitialize-function.md) (especificamente, no `lpSccCaps` parâmetro), várias estruturas de contexto serão usadas para rastrear todos os projetos que estão abertos.
 
-## <a name="bitflags-and-other-command-options"></a>Sinalizadores de bit e outras opções de comando
- Para cada comando, como o [SccGet](../extensibility/sccget-function.md), o IDE pode especificar várias opções que alteram o comportamento do comando.
+## <a name="bitflags-and-other-command-options"></a>Bitflags e outras opções de comando
+ Para cada comando, como o [SccGet,](../extensibility/sccget-function.md)o IDE pode especificar muitas opções que alteram o comportamento do comando.
 
- A API dá suporte a configuração de determinadas opções pelo IDE através de `fOptions` parâmetro. Essas opções são descritas em [sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) junto com os comandos que afetam a eles. Em geral, estas são opções para o qual o usuário não será avisado.
+ A API suporta a definição de certas opções pelo IDE através do `fOptions` parâmetro. Essas opções são descritas em [Bitflags usadas por comandos específicos,](../extensibility/bitflags-used-by-specific-commands.md) juntamente com os comandos que afetam. Em geral, essas são opções para as quais o usuário não seria solicitado.
 
- Mais opções de configuração configurável pelo usuário não são definidas dessa maneira, porque eles variam amplamente entre plug-ins de controle de origem. Portanto, o mecanismo recomendado é um **avançado** botão. Por exemplo, na **Obtenha** caixa de diálogo, o IDE exibirá apenas as informações que ele entende, mas ele também exibe um **avançado** botão se o plug-in tem opções para este comando. Quando o usuário clica o **Advanced** botão, as chamadas IDE a [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) para habilitar o plug-in para solicitar ao usuário informações, como os sinalizadores de bit ou um valor de data/hora de controle do código-fonte. O plug-in retorna essas informações em uma estrutura que é passada de volta durante o `SccGet` comando.
+ A maioria das opções de configuração configuráveis pelo usuário não são definidas dessa maneira, porque variam amplamente entre os plug-ins de controle de origem. Portanto, o mecanismo recomendado é um botão **Avançado.** Por exemplo, na caixa de diálogo **Obter,** o IDE exibe apenas informações que ele entende, mas também exibe um botão **Avançado** se o plug-in tiver opções para este comando. Quando o usuário clica no botão **Avançado,** o IDE chama as [Opções de Comando sccGetpara](../extensibility/sccgetcommandoptions-function.md) ativar o plug-in de controle de origem para solicitar informações ao usuário, como bitflags ou data/hora. O plug-in retorna essas informações em uma `SccGet` estrutura que é passada para trás durante o comando.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
-- [Criar um controle de fonte plug-in](../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Criar um plug-in de controle de origem](../extensibility/internals/creating-a-source-control-plug-in.md)
