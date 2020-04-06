@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::SetEngine | Microsoft Docs
+title: IDebugProgramEngines2:SetEngine | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::SetEngine
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a8c48de1a068300bb514d10528592cc518004db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 226f5bbf11627a3171641806a673eaa15b614572
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343444"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722410"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-O programa ou o nó de programa informa qual mecanismo de depuração (DES) usar para depurar este programa.
+Informa ao programa ou nó de programa que depurar o motor (DE) para usar para depurar este programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int SetEngine( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidEngine`\
-[in] O GUID do DE.
+[em] O GUID do DE.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

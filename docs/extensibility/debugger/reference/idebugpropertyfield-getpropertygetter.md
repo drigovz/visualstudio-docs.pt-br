@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertyGetter method
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 636d529c2658bf72685290278441c25d64955821
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b4120f4b9854eaf43d5c7119bd0a19dd21fbd584
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720884"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
-Obtém o método que obtém a propriedade.
+Obtém o método que fica com a propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ int GetPropertyGetter(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppField`\
-[out] Retorna um [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa o método que obtém a propriedade do objeto.
+[fora] Retorna um objeto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) representando o método que obtém a propriedade.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para obter o método que define a propriedade [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) chamar o método.
+ Para obter o método que define a propriedade, [getPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) chame o método.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18eab5e5785ea003976c7e291028d5ff964177d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351876"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700914"
 ---
 # <a name="sccenumchangedfiles-function"></a>Função SccEnumChangedFiles
 Dada uma lista de arquivos locais, esta função determina quais arquivos são diferentes das versões correspondentes no banco de dados de controle de código fonte.
@@ -34,34 +34,34 @@ SCCRTN SccEnumChangedFiles(
 );
 ```
 
-### <a name="parameters"></a>Parâmetros
+### <a name="parameters"></a>parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+[em] O ponteiro de contexto plug-in de controle de origem.
 
  hWnd
 
-[in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.
+[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
 
- cFiles
+ cArquivos
 
-[in] Número de nomes de arquivo especificados no `lpFileNames` matriz. Também especifica o tamanho do `plIsFileDifferent` matriz.
+[em] Número de nomes de `lpFileNames` arquivos especificados na matriz. Também especifica o `plIsFileDifferent` tamanho da matriz.
 
  lpFileNames
 
-[in] Matriz de nomes de arquivo local para verificar.
+[em] Matriz de nomes de arquivos locais para verificar.
 
  plIsFileDifferent
 
-[no, out] Matriz de valores que indicam o status de diferença de cada arquivo (matriz deve ter pelo menos `cFiles` entradas). Diferente de zero significa que o arquivo é diferente.
+[dentro, fora] Matriz de valores indicando o status de diferença `cFiles` de cada arquivo (matriz deve ter pelo menos entradas). Não zero significa que o arquivo é diferente.
 
 ## <a name="return-value"></a>Valor retornado
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|Operação concluída com êxito.|
+|SCC_OK|Operação concluída com sucesso.|
 |SCC_UNSPECIFIEDERROR|Erro genérico.|
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)

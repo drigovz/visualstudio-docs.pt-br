@@ -8,23 +8,23 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332280"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709161"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
-Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um *pkgdef* arquivo para acompanhar as *. dll* arquivo. O *pkgdef* arquivo contém todas as informações que, caso contrário, seriam gravadas no registro do sistema quando a extensão está instalada.
+Pega um arquivo .dll para uma extensão do Visual Studio como parâmetro e cria um arquivo *.pkgdef* para acompanhar o arquivo *.dll.* O arquivo *.pkgdef* contém todas as informações que de outra forma seriam escritas no registro do sistema quando a extensão for instalada.
 
 > [!NOTE]
-> A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria *pkgdef* arquivos como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar *pkgdef* implantação.
+> A maioria dos modelos de projeto que estão incluídos no Visual Studio SDK criam automaticamente arquivos *.pkgdef* como parte do processo de compilação. Este documento destina-se àqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar a implantação *.pkgdef.*
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,55 +32,55 @@ Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cri
 CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
-## <a name="arguments"></a>Arguments
-**/out=&lt;FileName&gt;** \
-Necessário. Define o nome da *pkgdef* arquivo de saída &lt;FileName&gt;.
+## <a name="arguments"></a>Argumentos
+**/out=&lt;FileName&gt;**\
+Obrigatórios. Define o nome do arquivo de saída &lt; *.pkgdef* como FileName&gt;.
 
 **/codebase**\
-Opcional. Força o registro com o **CodeBase** utilitário.
+Opcional. Força o registro com o utilitário **CodeBase.**
 
-**/assembly**\
-Força o registro com o **Assembly** utilitário.
+**/montagem**\
+Força o registro junto à concessionária **da Assembléia.**
 
-**&lt;AssemblyPath&gt;** \
-O caminho da *. dll* arquivo do qual você deseja gerar o *pkgdef*.
+**&lt;Assemblypath&gt;**\
+O caminho do arquivo *.dll* a partir do qual você deseja gerar o *.pkgdef*.
 
 ## <a name="remarks"></a>Comentários
-Implantação de extensão usando *pkgdef* arquivos substitui os requisitos de registro de versões anteriores do Visual Studio.
+A implantação de extensão usando arquivos *.pkgdef* substitui os requisitos de registro de versões anteriores do Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-O *pkgdef* arquivos devem ser instalados em um dos seguintes locais:
+Os arquivos *.pkgdef* devem ser instalados em um dos seguintes locais:
 
-- *%LocalAppData%\Microsoft\Visual Studio\16.0\Extensions\\*
+- *%localappdata%\Microsoft\Visual Studio\16.0\Extensões\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensões\\*
 
-Se a pasta de instalação estiver *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , a extensão é reconhecida pelo Visual Studio, mas é desabilitada por padrão. O usuário pode habilitar a extensão usando **gerenciar extensões**.
+Se a pasta de instalação for *%localappdata%\Microsoft\Visual Studio\16.0\Extensões,\\*a extensão será reconhecida pelo Visual Studio, mas será desativada por padrão. O usuário pode habilitar a extensão usando **O Manage Extensions**.
 
-Se a pasta de instalação estiver *%vsinstalldir%\Common7\IDE\Extensions\\* , a extensão está habilitada por padrão.
+Se a pasta de instalação for *%vsinstalldir%\Common7\IDE\Extensões,\\*a extensão será ativada por padrão.
 
 > [!NOTE]
-> O **gerenciar extensões** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.
+> A **ferramenta Gerenciar extensões** não pode ser usada para acessar uma extensão, a menos que seja instalada como parte de um pacote VSIX.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-O *pkgdef* arquivos devem ser instalados em um dos seguintes locais:
+Os arquivos *.pkgdef* devem ser instalados em um dos seguintes locais:
 
-- *%LocalAppData%\Microsoft\Visual Studio\15.0\Extensions\\*
+- *%localappdata%\Microsoft\Visual Studio\15.0\Extensões\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensões\\*
 
-Se a pasta de instalação estiver *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , a extensão é reconhecida pelo Visual Studio, mas é desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**.
+Se a pasta de instalação for *%localappdata%\Microsoft\Visual Studio\15.0\Extensões,\\*a extensão será reconhecida pelo Visual Studio, mas será desativada por padrão. O usuário pode habilitar a extensão usando **Extensões e Atualizações**.
 
-Se a pasta de instalação estiver *%vsinstalldir%\Common7\IDE\Extensions\\* , a extensão está habilitada por padrão.
+Se a pasta de instalação for *%vsinstalldir%\Common7\IDE\Extensões,\\*a extensão será ativada por padrão.
 
 > [!NOTE]
-> O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.
+> A ferramenta **Extensões e Atualizações** não pode ser usada para acessar uma extensão a menos que seja instalada como parte de um pacote VSIX.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

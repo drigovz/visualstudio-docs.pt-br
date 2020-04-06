@@ -1,39 +1,39 @@
 ---
-title: Automação de configuração e objetos SelectedItem | Microsoft Docs
+title: Automação para configuração e objetos selecionados | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c9dc8012433f9ec73f15b9249f6b7ac08bdad7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347969"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709965"
 ---
-# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automação para objetos de configuração e SelectedItem
+# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automação para configuração e objetos selecionados
 
-Você pode automatizar a compilação e os processos do item selecionado no Visual Studio.
+Você pode automatizar os processos de compilação e itens selecionados no Visual Studio.
 
-## <a name="automation-for-builds"></a>Automação de compilações
+## <a name="automation-for-builds"></a>Automação para construções
 
-Compilação ou a configuração tem um modelo de automação que é fornecido quando você implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Para obter mais informações, consulte [Compreender configurações de build](../../ide/understanding-build-configurations.md).
+A compilação ou configuração tem um <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>modelo de automação fornecido quando você implementa . Para obter mais informações, consulte [Compreender configurações de build](../../ide/understanding-build-configurations.md).
 
-Se você criar um VSPackage e deseja controlar as opções de configuração, você deve usar o modelo de automação.
+Se você criar um VSPackage e quiser controlar as opções de configuração, você deve usar o modelo de automação.
 
 ## <a name="automation-for-selecteditem"></a>Automação para SelectedItem
 
-Você não precisa fornecer uma implementação para o `SelectedItem` porque o Visual Studio contém uma implementação padrão do objeto. No entanto, você pode implementar o `SelectedItem` objeto se você preferir. Você deve implementar um objeto que contém o `SelectedItem` da interface e retorna uma resposta a uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método com `VSITEMID` definido como [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
+Você não precisa fornecer uma `SelectedItem` implementação para o objeto porque o Visual Studio contém uma implementação padrão. No entanto, `SelectedItem` você pode implementar o objeto se preferir. Você deve implementar um `SelectedItem` objeto que contenha a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> e `VSITEMID` retornar uma resposta a uma chamada para o método com definido para [__VSHPROPID. VSHPROPID_ExtSelectedItem.](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
-- [Contribuir para o modelo de automação](../../extensibility/internals/contributing-to-the-automation-model.md)
-- [Compreender configurações de build](../../ide/understanding-build-configurations.md)
+- [Contribua para o modelo de automação](../../extensibility/internals/contributing-to-the-automation-model.md)
+- [Noções sobre configurações de build](../../ide/understanding-build-configurations.md)

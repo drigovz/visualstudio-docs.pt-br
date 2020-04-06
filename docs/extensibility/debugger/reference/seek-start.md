@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329304"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713597"
 ---
-# <a name="seekstart"></a>SEEK_START
-Especifica a posição da qual iniciar a busca em um fluxo de desmontagem.
+# <a name="seek_start"></a>SEEK_START
+Especifica a posição a partir da qual começar a procurar em um fluxo de desmontagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,31 +50,31 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>Campos
  `SEEK_START_BEGIN`\
- Inicia a busca no início do documento atual.
+ Começa a procurar no início do documento atual.
 
  `SEEK_START_END`\
- Inicia a busca no final do documento atual.
+ Começa a procurar no final do documento atual.
 
  `SEEK_START_CURRENT`\
- Inicia a busca da posição atual do documento atual.
+ Começa a procurar na posição atual do documento atual.
 
  `SEEK_START_CODECONTEXT`\
- Inicia a busca no contexto do código fornecido do documento atual.
+ Começa a procurar no determinado contexto de código do documento atual.
 
  `SEEK_START_CODELOCID`\
- Inicia a busca no identificador de local de código fornecida. Identificadores de local de código são obtidos chamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ Começa a procurar no identificador de localização do código dado. Os identificadores de localização de código são obtidos chamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Comentários
- Passado como um argumento para o [busca](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.
+ Passou como um argumento para o método [Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Buscar](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+- [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 - [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

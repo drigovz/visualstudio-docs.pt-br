@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559693"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719706"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Obtém o idioma associado a esse registro de ativação.
+Obtém a linguagem associada a este quadro de pilha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,13 +42,13 @@ int GetLanguageInfo ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 `pbstrLanguage`\
-[out] Retorna o nome da linguagem que implementa o método associado deste quadro de pilhas.
+[fora] Retorna o nome do idioma que implementa o método associado a este quadro de pilha.
 
 `pguidLanguage`\
-[out] Retorna o `GUID` da linguagem. Para o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguagens, por exemplo, o seguinte pode ser retornado:
+[fora] Devolve `GUID` a linguagem. Para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] os idiomas, por exemplo, os seguintes podem ser devolvidos:
 
 - `guidVBScriptLang`\
 
@@ -62,10 +62,10 @@ int GetLanguageInfo ( 
 
 - `guidScriptLang`\
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

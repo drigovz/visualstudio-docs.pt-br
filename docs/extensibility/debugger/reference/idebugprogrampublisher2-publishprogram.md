@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721676"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Esse método faz um programa disponível para mecanismos de depuração (DEs) e o Gerenciador de sessão de depuração.
+Este método disponibiliza um programa para motores de depuração (DEs) e o gerenciador de depuração de sessão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ int PublishProgram(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `Engines`\
-[in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
+[em] Uma matriz de GUIDs para DEs que podem ser lançados ou anexados a este programa.
 
 `szFriendlyName`\
-[in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
+[em] Nome amigável para o programa (isso aparece em menus ou diálogos apresentados ao usuário).
 
 `pDebuggeeInterface`\
-[in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
+[em] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "despublicar" o programa)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para criar um programa não está mais disponível para depuração, chame [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
+ Para tornar um programa não mais disponível para depuração, ligue [para UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

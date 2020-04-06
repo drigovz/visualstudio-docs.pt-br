@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f859fcb3b930adb46f7e06ddf3bf9c5e9eafcdd8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314201"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719744"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
-Obtém um contexto de avaliação para a avaliação da expressão dentro do contexto atual de um quadro de pilha e thread.
+Obtém um contexto de avaliação para avaliação de expressão dentro do contexto atual de um quadro de pilha e segmento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ int GetExpressionContext ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppExprCxt`\
-[out] Retorna um [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) objeto que representa um contexto de avaliação da expressão.
+[fora] Retorna um objeto [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) que representa um contexto para avaliação de expressão.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Em geral, um contexto de avaliação de expressão pode ser pensado como um escopo para a execução de avaliação da expressão. Chame o [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método para analisar uma expressão e, em seguida, chamar resultante [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) métodos para avaliar a expressão analisada.
+ Geralmente, um contexto de avaliação de expressão pode ser pensado como um escopo para a realização de avaliação de expressão. Chame o método [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para analisar uma expressão e, em seguida, chame os métodos [AssessSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [AssessAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) resultantes para avaliar a expressão analisado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

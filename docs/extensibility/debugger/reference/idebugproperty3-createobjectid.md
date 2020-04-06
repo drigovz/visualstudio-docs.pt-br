@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::CreateObjectID
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee1d2a66a5ed655c132526c5d73b6673a680c971
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339855"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721178"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-Cria uma ID exclusiva para essa propriedade para garantir que ele seja exclusivo entre todas as outras propriedades.
+Cria um ID exclusivo para esta propriedade para garantir que ela seja única entre todas as outras propriedades.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,17 +37,17 @@ HRESULT CreateObjectID(
 int CreateObjectID();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é chamado quando o Gerenciador de sessão de depuração quer ter certeza de que essa propriedade é identificada exclusivamente entre todas as outras propriedades. O mecanismo de depuração (DES) dá suporte a esse método, a menos que as propriedades que ele lida com são identificadas já exclusivamente. Se o DE não oferece suporte a esse método, ele retorna `E_NOTIMPL`.
+ Esse método é chamado quando o gerenciador de depuração de sessão quer garantir que essa propriedade seja identificada exclusivamente entre todas as outras propriedades. O mecanismo de depuração (DE) suporta este método, a menos que as propriedades com as que ele lida já sejam identificadas exclusivamente. Se o DE não suportar este `E_NOTIMPL`método, ele retorna .
 
- Qualquer ID exclusiva é criada com `CreateObjectID` é destruído quando o [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) é chamado de método; isso também sinaliza o término da necessidade de identificando exclusivamente esta propriedade.
+ Qualquer ID único `CreateObjectID` criado com é destruído quando o método [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) é chamado; isso também sinaliza o fim da necessidade de identificar exclusivamente essa propriedade.
 
 > [!NOTE]
-> Não há nenhum método para recuperar essa ID exclusiva, portanto, o DE pode fazer o que quiser para IDs exclusivas quando o `CreateObjectID` método é chamado.
+> Não há nenhum método para recuperar este ID único, então o DE pode `CreateObjectID` fazer o que quiser para IDs únicos quando o método é chamado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

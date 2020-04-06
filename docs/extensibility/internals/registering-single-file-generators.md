@@ -1,31 +1,31 @@
 ---
-title: Registrando geradores de arquivo único | Microsoft Docs
+title: Registrando geradores de arquivos únicos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724560"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705805"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
-Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-la para que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa instanciá-la e a associe a um tipo de projeto específico.
+Para disponibilizar uma ferramenta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]personalizada, você deve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registrá-la para instancia-la e assoá-la a um tipo específico de projeto.
 
 ### <a name="to-register-a-custom-tool"></a>Para registrar uma ferramenta personalizada
 
-1. Registre a DLL de ferramenta personalizada no registro local [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ou no registro do sistema, em HKEY_CLASSES_ROOT.
+1. Registre a ferramenta personalizada DLL no registro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] local ou no registro do sistema, sob HKEY_CLASSES_ROOT.
 
-    Por exemplo, aqui estão as informações de registro da ferramenta personalizada MSDataSetGenerator gerenciada, que vem com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
+    Por exemplo, aqui estão as informações de registro da ferramenta personalizada MSDataSetGenerator gerenciada, que vem com: [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Crie uma chave do registro no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive desejado em geradores \\*GUID* , em que *GUID* é o GUID definido pelo serviço ou sistema de projeto do idioma específico. O nome da chave se torna o nome programático de sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
+2. Crie uma chave de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registro na colmeia desejada em Geradores\\*GUID* onde *guid* é o GUID definido pelo sistema ou serviço de projeto do idioma específico. O nome da chave torna-se o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
 
    - (Padrão)
 
-        Opcional. Fornece uma descrição amigável da ferramenta personalizada. Esse parâmetro é opcional, mas recomendado.
+        Opcional. Fornece uma descrição fácil de usar da ferramenta personalizada. Este parâmetro é opcional, mas recomendado.
 
    - CLSID
 
-        Necessário. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
+        Obrigatórios. Especifica o identificador da biblioteca de classe do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>componente COM que implementa .
 
-   - GeneratesDesignTimeSource
+   - GeraDesignTimeSource
 
-        Necessário. Indica se os tipos de arquivos produzidos por essa ferramenta personalizada são disponibilizados para designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis para designers visuais ou (um) 1 para tipos disponíveis para designers visuais.
+        Obrigatórios. Indica se os tipos de arquivos produzidos por esta ferramenta personalizada são disponibilizados para designers visuais. O valor deste parâmetro precisa ser (zero) 0 para tipos não disponíveis para designers visuais ou (um) 1 para tipos disponíveis para designers visuais.
 
    > [!NOTE]
-   > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.
+   > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual deseja que a ferramenta personalizada esteja disponível.
 
-    Por exemplo, o MSDataSetGenerator se registra uma vez para cada idioma:
+    Por exemplo, o MSDataSetGenerator registra-se uma vez para cada idioma:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]
@@ -67,8 +67,8 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
-- [Implementar geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
-- [Expor tipos aos designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [Implementando geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
+- [Expondo tipos para designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)
 - [Introdução ao objeto BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

@@ -1,5 +1,5 @@
 ---
-title: Elemento Icon (modelos do Visual Studio) | Microsoft Docs
+title: Icon Element (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4068c192d7e01f4c9162e8006152a90b38aed05b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710523"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelos do Visual Studio)
-Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o ícone, o que é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo, para o modelo.
+# <a name="icon-element-visual-studio-templates"></a>Elemento de ícone (modelos do Visual Studio)
+Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como ícone, que aparece no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item,** para o modelo.
 
- \<VSTemplate > \<TemplateData > \<ícone >
+ \<VSTemplate \<> TemplateData> \<Ícone>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,28 +44,28 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o �
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> ID de um GUID que especifica o pacote do Visual Studio.|
-|`ID`|Atributo opcional para cenários de usuário avançado.<br /><br /> Especifica a ID de recurso do Visual Studio.|
+|`Package`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|
+|`ID`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
- É necessário um valor de texto, a menos que o `Package` e `ID` atributos são usados.
+ É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.
 
- O texto fornece o nome de arquivo e caminho do ícone de modelo que será exibido na **novo projeto** caixa de diálogo.
+ O texto fornece o nome do caminho e do arquivo do ícone de modelo que aparecerá na caixa de diálogo **Projeto** Novo.
 
 ## <a name="remarks"></a>Comentários
- O `Icon` é um elemento filho obrigatório de `TemplateData`.
+ `Icon`é um elemento `TemplateData`filho necessário de .
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -91,6 +91,6 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o �
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

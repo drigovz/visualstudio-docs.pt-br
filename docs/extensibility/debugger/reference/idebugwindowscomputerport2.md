@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a60572c652080f2655ab7fe33954a661fbe07e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319735"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718219"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Permite a consulta para obter informações sobre o computador de destino.
+Permite consultar informações sobre o computador de destino.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,19 +26,19 @@ Permite a consulta para obter informações sobre o computador de destino.
 IDebugWindowsComputerPort2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Essa interface é implementada por objetos de porta do Gerenciador de sessão de depuração.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Esta interface é implementada por objetos de porta do gerenciador de depuração de sessão.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir mostra os métodos de `IDebugWindowsComputerPort2`.
+ A tabela a seguir `IDebugWindowsComputerPort2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Recupera informações sobre o computador no qual o depurador em execução.|
+|[ObterInformações do Computador](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Recupera informações sobre o computador no qual o depurador está em execução.|
 
 ## <a name="requirements"></a>Requisitos
  Cabeçalho: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3206a9c89197ccc9415115fe9fb0995e51ede8c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353182"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723039"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Recupera uma lista dos caminhos de código para uma posição especificada em um arquivo de origem.
+Recupera uma lista dos caminhos de código para uma determinada posição em um arquivo de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,32 +49,32 @@ int EnumCodePaths( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszHint`\
-[in] A palavra sob o cursor na **fonte** ou **desmontagem** exibição no IDE.
+[em] A palavra sob o cursor na exibição **Origem** ou **Desmontagem** no IDE.
 
 `pStart`\
-[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o contexto de código atual.
+[em] Um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) representando o contexto de código atual.
 
 `pFrame`\
-[in] Uma [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) representando o quadro de pilha associado com o ponto de interrupção atual do objeto.
+[em] Um objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) representando o quadro de pilha associado ao ponto de ruptura atual.
 
 `fSource`\
-[in] Diferente de zero (`TRUE`) se estiver na **código-fonte** modo de exibição, ou zero (`FALSE`) se estiver no **desmontagem** exibição.
+[em] Não zero`TRUE`( ) se na exibição **Origem,** ou zero (`FALSE`) se na exibição **Desmontagem.**
 
 `ppEnum`\
-[out] Retorna um [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) objeto que contém uma lista de caminhos de código.
+[fora] Retorna um objeto [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) contendo uma lista dos caminhos de código.
 
 `ppSafety`\
-[out] Retorna um [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) do objeto que representa um contexto de código adicional a ser definido como um ponto de interrupção no caso de caminho de código a escolhida será ignorada. Isso pode acontecer no caso de uma expressão booliana curto-circuitada, por exemplo.
+[fora] Retorna um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) representando um contexto de código adicional a ser definido como um ponto de ruptura no caso de o caminho de código escolhido ser ignorado. Isso pode acontecer no caso de uma expressão booleana de curto-circuito, por exemplo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um caminho de código descreve o nome de um método ou função que foi chamada para chegar ao ponto atual na execução do programa. Uma lista de caminhos de código representa a pilha de chamadas.
+ Um caminho de código descreve o nome de um método ou função que foi chamado para chegar ao ponto atual na execução do programa. Uma lista de caminhos de código representa a pilha de chamadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,39 +1,39 @@
 ---
-title: Interceptar comandos do serviço de linguagem herdado | Microsoft Docs
+title: Interceptando comandos de serviço de linguagem legado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3716f02b076bd5ea7ef63135133acffc823a7703
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314939"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707445"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interceptando comandos do serviço de linguagem herdado
-Com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você pode ter os comandos de interceptação do serviço de linguagem que trataria a exibição de texto. Isso é útil para o comportamento específico do idioma que não gerencia a exibição de texto. Você pode interceptar esses comandos, adicionando um ou mais filtros de comando para a exibição de texto de seu serviço de linguagem.
+Com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você pode ter os comandos de interceptação de serviço de idioma que a exibição de texto lidaria de outra forma. Isso é útil para um comportamento específico do idioma que a exibição de texto não gerencia. Você pode interceptar esses comandos adicionando um ou mais filtros de comando à exibição de texto do seu serviço de idioma.
 
-## <a name="getting-and-routing-the-command"></a>Obtendo e roteamento de comando
- Um filtro de comando é um <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objeto que monitora a determinadas sequências de caracteres ou comandos de tecla. Você pode associar mais de um filtro de comando com uma exibição única de texto. Cada modo de exibição de texto mantém uma cadeia de comando filtros. Depois de criar um novo filtro de comando, você adiciona o filtro da cadeia para a exibição de texto apropriado.
+## <a name="getting-and-routing-the-command"></a>Obtenção e roteamento do Comando
+ Um filtro de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> comando é um objeto que monitora certas seqüências de caracteres ou comandos-chave. Você pode associar mais de um filtro de comando a uma única exibição de texto. Cada visualização de texto mantém uma cadeia de filtros de comando. Depois de criar um novo filtro de comando, adicione o filtro à cadeia para a exibição de texto apropriada.
 
- Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método no <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para adicionar o filtro de comando para a cadeia. Quando você chama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retorna outro filtro de comando para o qual você pode passar os comandos que não lidar com o seu filtro de comando.
+ Ligue <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para o método para adicionar seu filtro de comando à cadeia. Quando você <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ligar, retorna outro filtro de comando para o qual você pode passar os comandos que seu filtro de comando não manuseia.
 
  Você tem as seguintes opções para manipulação de comando:
 
-- Lidar com o comando e, em seguida, passe o comando para o próximo filtro de comando na cadeia.
+- Manuseie o comando e passe o comando para o próximo filtro de comando na cadeia.
 
-- Lidar com o comando e não passam o comando para o próximo filtro de comando.
+- Manuseie o comando e não passe o comando para o próximo filtro de comando.
 
-- Não lidam com o comando, mas transmitir o comando para o próximo filtro de comando.
+- Não manuseie o comando, mas passe o comando para o próximo filtro de comando.
 
-- Ignore o comando. Não tratá-la no filtro atual e não a passar para o próximo filtro.
+- Ignore o comando. Não manuseie-o no filtro de corrente e não passe-o para o próximo filtro.
 
-  Para obter informações sobre quais comandos deve lidar com seu serviço de linguagem, consulte [comandos importantes para filtros do serviço de linguagem](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Para obter informações sobre quais comandos seu serviço de idioma deve lidar, consulte [Comandos importantes para filtros de serviço de idioma](../../extensibility/internals/important-commands-for-language-service-filters.md).

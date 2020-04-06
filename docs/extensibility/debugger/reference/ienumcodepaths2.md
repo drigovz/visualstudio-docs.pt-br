@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5ad1f7a3f954116350e8accbdc9db02d0ac920d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89c8cac9a7c2baa020002fe852330639d7081982
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319604"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717721"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
-Essa interface representa uma lista de caminhos de código.
+Esta interface representa uma lista de caminhos de código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,32 +28,32 @@ Essa interface representa uma lista de caminhos de código.
 IEnumCodePaths2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O mecanismo de depuração (DES) implementa essa interface para representar uma lista de caminhos de código.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O mecanismo de depuração (DE) implementa esta interface para representar uma lista de caminhos de código.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chame [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) para obter essa interface.
+ Ligue para [a EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IEnumCodePaths2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IEnumCodePaths2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera um número especificado de caminhos de código em uma sequência de enumeração.|
-|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora um número especificado de caminhos de código em uma sequência de enumeração.|
-|[Reiniciar](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Redefine uma sequência de enumeração para o início.|
-|[Clonar](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
+|[Avançar](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera um número especificado de caminhos de código em uma seqüência de enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Salta um número especificado de caminhos de código em uma seqüência de enumeração.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Reinicia uma seqüência de enumeração para o início.|
+|[Clonar](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Obtém o número de caminhos de código em um enumerador.|
 
 ## <a name="remarks"></a>Comentários
- Um caminho de código representa uma chamada de função ou o ponto de ramificação em um programa. Uma lista de caminhos de código representa o caminho por meio do qual assumiu a execução do código.
+ Um caminho de código representa um ponto de ramificação ou chamada de função em um programa. Uma lista de caminhos de código representa o caminho pelo qual a execução do código tomou.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

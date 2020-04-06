@@ -1,79 +1,79 @@
 ---
-title: Menus e comandos para o Visual Studio | Microsoft Docs
+title: Menus e Comandos para Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abf06f186b3c7aa1e2ee04d04606c65f478f1139
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698383"
 ---
-# <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
-## <a name="command-usage"></a>Uso do comando
+# <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para Visual Studio
+## <a name="command-usage"></a>Uso de comando
 
 ### <a name="overview"></a>Visão geral
- Ao contrário do Microsoft Office, que é um conjunto que consiste em vários produtos separados, o Visual Studio contém muitos produtos que cada contribuir com seus conjuntos de comandos ao IDE do Visual Studio global. O IDE gerencia a complexidade de milhares de comandos, a funcionalidade disponível para o usuário com base no contexto de filtragem.
+ Ao contrário do Microsoft Office, que é uma suíte que compreende muitos produtos separados, o Visual Studio contém muitos produtos que contribuem com seus comandos para o IDE global do Visual Studio. O IDE gerencia a complexidade de milhares de comandos filtrando a funcionalidade disponível para o usuário com base no contexto.
 
- Quando um contexto do usuário é alterada - como alternar de uma janela de design para um janela de edição de código – funcionalidade não relacionada ao novo contexto desaparece. Ao mesmo tempo, novas superfícies de funcionalidade junto com informações dinâmicas relacionadas, como opções de propriedades e a caixa de ferramentas. O usuário não deverá observar a troca do conjunto de comandos disponíveis. Se o usuário é distraído ou confuso com comandos que aparecem ou desaparecem, em seguida, o design de interface do usuário precisa de ajuste. O contexto do usuário atual sempre é indicado em uma ou mais formas, como na barra de título do IDE, a janela Propriedades ou a caixa de diálogo páginas de propriedades.
+ Quando o contexto de um usuário muda - como mudar de uma janela de design para uma janela de edição de código - a funcionalidade não relacionada ao novo contexto desaparece. Ao mesmo tempo, novas funcionalidades surgem juntamente com informações dinâmicas relacionadas, como opções Propriedades e Caixa de Ferramentas. O usuário não deve notar a troca do conjunto de comandos disponível. Se o usuário estiver distraído ou confuso com comandos que aparecem ou desaparecem, então o design da ui precisa ser ajustado. O contexto atual do usuário é sempre indicado de uma ou mais maneiras, como na barra de títulos do IDE, na janela Propriedades ou na caixa de diálogo Páginas de propriedade.
 
- Barras de comandos permitem flexibilidade na interface do usuário. O único comando estruturas do Visual Studio ambiente estão o menu principal e a barra de comandos principal, que pode ambos ser personalizada e até mesmo oculta inerente. Outras barras de comando aparecem e desaparecem com base no estado do aplicativo. Editores de documento e janelas de ferramenta também podem conter barras de ferramentas inseridas dentro de suas bordas de janela.
+ As barras de comando permitem flexibilidade na ui. As únicas estruturas de comando inerentes ao ambiente do Visual Studio são o menu principal e a barra de comando principal, que podem ser personalizadas e até ocultas. Outras barras de comando aparecem e desaparecem com base no estado da aplicação. Janelas de ferramentas e editores de documentos também podem conter barras de ferramentas incorporadas dentro das bordas da janela.
 
 #### <a name="basic-guidelines"></a>Diretrizes básicas
 
-##### <a name="use-existing-shared-commands-command-groups-and-menus-whenever-possible"></a>Use os comandos existentes compartilhados, grupos de comando e menus sempre que possível.
- Uma vez que os comandos são normalmente mostrados com base no contexto, o uso de menus compartilhadas existentes e grupos de comando garante que a estrutura de comando permanece relativamente estável entre as alterações no contexto. Reutilizando comandos compartilhados e colocando novos comandos próximos comandos compartilhados relacionados também reduz a complexidade do IDE e cria uma experiência mais amigável. Se um novo comando precisa ser definida, tente colocá-lo em um grupo de comando compartilhado existente. Se um novo grupo deve ser definido, colocá-lo em um menu compartilhado existente perto de um grupo de comandos relacionados antes de criar um novo menu de nível superior.
+##### <a name="use-existing-shared-commands-command-groups-and-menus-whenever-possible"></a>Use comandos, grupos de comando e menus compartilhados existentes sempre que possível.
+ Uma vez que os comandos são normalmente mostrados com base no contexto, o uso de menus compartilhados existentes e grupos de comandos garante que a estrutura de comandos permaneça relativamente estável entre as mudanças de contexto. Reutilizar comandos compartilhados e colocar novos comandos perto de comandos compartilhados relacionados também reduz a complexidade do IDE e cria uma experiência mais fácil de usar. Se um novo comando precisar ser definido, tente colocá-lo em um grupo de comando compartilhado existente. Se um novo grupo precisar ser definido, coloque-o em um menu compartilhado existente perto de um grupo de comando relacionado antes de criar um novo menu de nível superior.
 
 ##### <a name="do-not-create-icons-for-every-command"></a>Não crie ícones para cada comando.
- Pense cuidadosamente antes de criar um ícone do comando. Ícones devem ser criados somente para os comandos que:
+ Pense cuidadosamente antes de criar um ícone de comando. Os ícones devem ser criados apenas para comandos que:
 
-- são exibidos em uma barra de ferramentas padrão.
+- aparecer em uma barra de ferramentas padrão.
 
-- têm probabilidade de ser adicionados por usuários para uma barra de ferramentas por meio de **personalizar...**  caixa de diálogo.
+- é provável que sejam adicionados pelos usuários a uma barra de ferramentas através da caixa de diálogo **Personalizar...**
 
-- tem um ícone associado com a mesma ação em outro produto da Microsoft.
+- tem um ícone associado à mesma ação em outro produto da Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limitar a adição de atalhos de teclado
- A grande maioria dos usuários empregar uma pequena fração de todos os atalhos disponíveis. Em caso de dúvida, a não vincule seu recurso para um atalho de teclado. Trabalhar com seu usuário experiência equipe antes de adicionar novos atalhos.
+ A grande maioria dos usuários emprega uma pequena fração de todos os atalhos disponíveis. Na dúvida, não vincule seu recurso a um atalho de teclado. Trabalhe com sua equipe de experiência do usuário antes de adicionar novos atalhos.
 
-##### <a name="give-commands-a-default-menu-placement"></a>Dar uma colocação de menu padrão de comandos.
- Lembre-se de que seus comandos serão personalizados por outras pessoas e criá-las adequadamente. Não há nenhum algo como um comando oculto. Todos os comandos do Visual Studio aparecem na **Ferramentas > Personalizar** caixa de diálogo, a janela de comando, preenchimento automático, o **Ferramentas > Opções > teclado** caixa de diálogo e o desenvolvimento de ferramentas de DTE (ambiente). Certifique-se de dar a seus comandos de um nome e uma dica de ferramenta em seu arquivo. ctc para que os usuários podem encontrá-los facilmente.
+##### <a name="give-commands-a-default-menu-placement"></a>Dê aos comandos uma colocação padrão do menu.
+ Esteja ciente de que seus comandos serão personalizados por outros e projete-os de acordo. Não existe um comando oculto. Todos os comandos do Visual Studio aparecem nas **ferramentas > personalizar** a caixa de diálogo, a janela de comando, a conclusão automática, as ferramentas > **opções > diálogo de teclado** e o Ambiente de Ferramentas de Desenvolvimento (DTE). Certifique-se de dar aos seus comandos um nome e uma dica de ferramenta em seu arquivo .ctc para que os usuários possam encontrá-los facilmente.
 
-##### <a name="do-not-duplicate-shared-commands-on-an-embedded-toolbar"></a>Não duplica compartilhados comandos em uma barra de ferramentas inserida.
- É útil colocar os comandos em estreita proximidade com a área de foco do usuário. Uma maneira de fazer isso é criar uma barra de ferramentas inserida na parte superior da sua janela de ferramentas ou documento editor. Os comandos colocados na barra de ferramentas devem ser específicos para a região de conteúdo dentro da janela. Não duplica comandos compartilhados nessas barras de ferramentas. Por exemplo, nunca coloque um ícone de "Salvar" dentro de uma barra de ferramentas inserida.
+##### <a name="do-not-duplicate-shared-commands-on-an-embedded-toolbar"></a>Não duplicar comandos compartilhados em uma barra de ferramentas incorporada.
+ É útil colocar comandos próximos à área de foco do usuário. Uma maneira de fazer isso é criar uma barra de ferramentas incorporada na parte superior da janela da ferramenta ou do editor de documentos. Os comandos colocados na barra de ferramentas devem ser específicos para a região de conteúdo dentro da janela. Não duplicar comandos compartilhados nessas barras de ferramentas. Por exemplo, nunca coloque um ícone "Salvar" em uma barra de ferramentas incorporada.
 
-### <a name="content-and-command-visibility"></a>Visibilidade de comando e conteúda
- Comandos existem os seguintes escopos: **Ambiente**, **hierarquia**, e **documento**. Sabe a cada escopo para ter confiança no posicionamento de comando.
+### <a name="content-and-command-visibility"></a>Visibilidade de conteúdo e comando
+ Os comandos existem nos seguintes escopos: **Ambiente,** **Hierarquia**e **Documento.** Conheça cada escopo para ter confiança na colocação de comando.
 
- Os comandos na **ambiente** escopo estabelecer contexto primário e são compartilhados entre vários contextos. Alteram a visibilidade ou a disposição dos documentos e janelas de ferramentas. Entre os comandos no ambiente do escopo estão **novo projeto**, **conectar ao servidor**, **anexar processo**, **Recortar**,  **Cópia**, **colar**, **localizar**, **opções**, **personalizar**, **nova janela de**, e **exibir a Ajuda**.
+ Os comandos no escopo **do Ambiente** estabelecem o contexto primário e são compartilhados entre múltiplos contextos. Eles alteram a visibilidade ou arranjo de documentos e janelas de ferramentas. Entre os comandos no escopo do ambiente estão **Novo Projeto,** **Conexão com Servidor,** **Processo de Anexação,** **Corte,** **Cópia,** **Colar,** **Encontrar,** **Opções,** **Personalizar,** **Nova Janela**e Exibir **Ajuda.**
 
- Os comandos na **hierarquia** escopo gerenciar hierarquias no Visual Studio, incluindo **Project**, **equipe**, e **dados**. Eles se relacionam com subcontexto do projeto - por exemplo, **Debug**, **compilação**, **teste**, **arquitetura**, ou **analisar** . Entre os comandos na hierarquia de escopo estão **Adicionar Novo Item**, **nova consulta**, **configurações de projeto**, **Add New Data Source**, **Iniciar o Assistente de desempenho**, e **novo diagrama**.
+ Os comandos no escopo **Hierarquia** gerenciam hierarquias no Visual Studio, incluindo **Projeto,** **Equipe**e **Dados.** Eles se relacionam com o subcontexto de um projeto - por exemplo, **Debug**, **Build**, **Test,** **Architecture,** or **Analyze**. Entre os comandos no escopo Hierarquia estão **Adicionar novo item,** **nova consulta,** **configurações do projeto,** **adicionar nova fonte de dados,** **assistente de desempenho de lançamento**e **novo diagrama.**
 
- Os comandos na **documento** ato de escopo no conteúdo de um documento, como código, design ou uma consulta de item de trabalho (WIQ). Eles também atuam no modo de exibição de uma janela de ferramenta ou caso contrário, são específicos para essa janela de ferramenta. Comandos de escopo de documento também agir sobre os objetos de arquivo que também são específicas à hierarquia, como **remover do projeto**. Entre os comandos no documento de escopo estão **Refatorar > Renomear**, **criar cópia do Item de trabalho**, **Expandir tudo**, **Recolher tudo**, e **Criar tarefa do usuário**.
+ Os comandos no escopo **Documento** atuam sobre o conteúdo de um documento, como código, design ou uma consulta de item de trabalho (WIQ). Eles também agem na visão de uma janela de ferramenta ou são específicos para essa janela da ferramenta. Os comandos de escopo de documento também atuam nos objetos de arquivo que são específicos da hierarquia, como **Remover do Projeto**. Entre os comandos no escopo do documento estão **Refatorar > Renomear,** **Criar Cópia do Item de Trabalho,** **Expandir Tudo,** **Colapsar Tudo**e Criar Tarefa do **Usuário**.
 
-### <a name="command-placement-decisions"></a>Decisões de posicionamento do comando
- Depois de decidir criar um comando, você precisará determinar o posicionamento adequado e se é necessário criar um atalho de teclado. Siga este caminho de decisão para estabelecer onde colocar o comando:
+### <a name="command-placement-decisions"></a>Decisões de posicionamento de comando
+ Uma vez que você decidiu criar um comando, você precisará determinar sua colocação apropriada e se criar um atalho de teclado. Siga este caminho de decisão para estabelecer onde colocar o comando:
 
- ![Gráfico de decisão de posicionamento do comando](../../extensibility/ux-guidelines/media/0501-a_commandplacement.png "a_CommandPlacement 0501")
+ ![Gráfico de decisão de colocação de comando](../../extensibility/ux-guidelines/media/0501-a_commandplacement.png "0501-a_CommandPlacement")
 
- **Caminho de decisão para posicionamento de comando no Visual Studio**
+ **Caminho de decisão para colocação de comando no Visual Studio**
 
-### <a name="command-placement-in-menus"></a>Posicionamento do comando nos menus
+### <a name="command-placement-in-menus"></a>Colocação de comando em menus
 
-#### <a name="main-menu-bar"></a>Barra de menus principal
- Barra de menus principal deve ser o local padrão para comandos de todos os pacotes menu de contexto específico que contribuem para a interface do usuário. Barra de menus principal é diferente de outras estruturas de comando, o ambiente o usa para controlar quais comandos estão visíveis. Todas as barras de comando simplesmente desabilitar comandos que estão fora do contexto, eles são colocados em um menu ou em uma barra de ferramentas.
+#### <a name="main-menu-bar"></a>Barra de menu principal
+ A barra de menu principal deve ser o local padrão para comandos de quaisquer pacotes de menu específicos de contexto que contribuam para a interface do iu. A barra de menu principal difere de outras estruturas de comando, pois o ambiente a usa para controlar quais comandos são visíveis. Todas as outras barras de comando simplesmente desabilitam comandos que estão fora de contexto, sejam eles colocados em um menu ou em uma barra de ferramentas.
 
- O ambiente define um conjunto de comandos incorporado a barra de menus principais que são comuns em todo o IDE e vários domínios de tarefa. Esses comandos estão sempre visíveis independentemente dos quais os VSPackages são carregados no ambiente. Embora os VSPackages pode estender este conjunto de comandos, o conjunto de cada produto e o posicionamento dos comandos de comandos é responsabilidade de cada equipe.
+ O ambiente define um conjunto de comandos incorporados na barra de menu principal que são comuns em todo o IDE e vários domínios de tarefas. Esses comandos são sempre visíveis, independentemente de quais VSPackages são carregados no ambiente. Embora o VSPackages possa estender este conjunto de comandos, o conjunto de comandos de cada produto e a colocação de seus comandos é responsabilidade de cada equipe.
 
  A estrutura do menu principal do Visual Studio pode ser dividida nas seguintes categorias de menu:
 
-##### <a name="core-menus"></a>Menus de núcleo
+##### <a name="core-menus"></a>Menus principais
 
 - Arquivo
 
@@ -87,15 +87,15 @@ ms.locfileid: "66310902"
 
 - Ajuda
 
-##### <a name="project-specific-menus"></a>Menus específicos de projeto
+##### <a name="project-specific-menus"></a>Menus específicos do projeto
 
-- Projeto
+- Project
 
 - Build
 
 - Depurar
 
-##### <a name="context-specific-menus"></a>Menus de contexto específico
+##### <a name="context-specific-menus"></a>Menus específicos do contexto
 
 - Equipe
 
@@ -107,184 +107,184 @@ ms.locfileid: "66310902"
 
 - Analisar
 
-##### <a name="document-specific-menus"></a>Menus específicos de documento
+##### <a name="document-specific-menus"></a>Menus específicos de documentos
 
 - Formatar
 
 - Tabela
 
-##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Durante a criação de menus principais, seguem estas regras:
+##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Ao projetar menus principais, siga estas regras:
 
 - Não exceda 25 itens de nível superior em um determinado contexto
 
-- Menus nunca devem exceder 600 pixels de altura.
+- Os menus nunca devem exceder 600 pixels de altura.
 
-- Avalie um menu principal em vários contextos, como no SKU Ultimate e o perfil geral.
+- Avalie um menu principal em vários contextos, como no SKU Ultimate e no Perfil Geral.
 
-- Menus suspensos são aceitáveis.
+- Menus flyout são aceitáveis.
 
-- Menus suspensos devem conter pelo menos três itens e não mais de sete.
+- Os menus flyout devem conter pelo menos três itens e não mais do que sete.
 
-- Menus suspensos devem ir somente um nível profundo – alguns itens de menu do Visual Studio tem submenus em cascata, mas não é incentivado, esse padrão.
+- Os menus flyout devem ir apenas um nível profundo - alguns itens do menu do Visual Studio têm submenus em cascata, mas esse padrão não é encorajado.
 
-- Use separadores não mais do que seis. Agrupamentos devem aderir à ilustração a seguir:
+- Não use mais do que seis separadores. Os agrupamentos devem aderir à seguinte ilustração:
 
-     ![Diretrizes para o agrupamento do menu principal](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "b_MainMenus 0501")
+     ![Diretrizes para o agrupamento de menus principais](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "0501-b_MainMenus")
 
-- Embora isso não é necessário ter cada agrupamento na figura, adicionar agrupamentos adicionais é restrito.
+- Embora não seja necessário ter cada agrupamento na figura, a adição de agrupamentos adicionais é restrita.
 
-- Cada agrupamento deve ter de dois a sete itens de menu.
+- Cada agrupamento deve ter de dois a sete itens do menu.
 
-#### <a name="main-menu-ordering"></a>Ordenação de menu principal
- Antes de adicionar um novo item de nível superior, considere colocar o comando em um menu de nível superior existente. Ao adicionar um novo menu de nível superior, certifique-se de colocá-lo no local correto. Decida se o menu é específico ao projeto, o contexto ou o documento. Manter o nome do menu de nível superior concisa e usar apenas uma palavra.
+#### <a name="main-menu-ordering"></a>Pedido de menu principal
+ Antes de adicionar um novo item de nível superior, considere colocar o comando em um menu de nível superior existente. Ao adicionar um novo menu de nível superior, certifique-se de colocá-lo no local correto. Decida se o menu é específico para projetar, contextualizar ou documentar. Mantenha o nome do menu de nível superior conciso e use apenas uma palavra.
 
- Os menus core devem ser o restante dos comandos do delimitador. Arquivo, editar e exibir sempre deverá ser à esquerda e ferramentas de janela, e ajuda sempre deve ser à direita.
+ Os menus principais devem reservar o resto dos comandos. Arquivar, editar e exibir deve estar sempre à esquerda, e Ferramentas, Janela e Ajuda devem estar sempre à direita.
 
 #### <a name="context-menus"></a>Menus de contexto
- Colocar muita funcionalidade em menus de contexto resulta em uma interface difícil de aprender. Todas as principais funcionalidades devem estar disponíveis por meio da barra de menu principal. Posicionamento dos comandos deve ser reconciliado com os comandos existentes para evitar comandos duplicados. Menus de contexto, o shell define grupos de menus padrão que devem ser incluídos, dependendo se o menu de contexto é a solução, um nó do projeto ou um item de projeto.
+ Colocar muita funcionalidade dentro dos menus de contexto resulta em uma interface difícil de aprender. Todas as principais funcionalidades devem estar disponíveis através da barra de menu principal. A colocação de comandos deve ser conciliada com os comandos existentes para evitar comandos duplicados. Para menus de contexto, o shell define grupos de menupadrão que devem ser incluídos dependendo se o menu de contexto é para a solução, um nó de projeto ou um item do projeto.
 
- Durante a criação de menus de contexto, seguem as mesmas regras que para o menu principal e, além disso:
+ Ao projetar menus de contexto, siga as mesmas regras do menu principal e, além disso:
 
 - Não exceda 25 itens de menu de nível superior.
 
-- Menus suspensos são aceitáveis, mas deve não exceder um nível de profundidade – nunca usar submenus em cascata.
+- Os menus flyout são aceitáveis, mas não devem exceder um nível profundo - nunca use flyouts em cascata.
 
-- Use separadores não mais do que seis.
+- Não use mais do que seis separadores.
 
-### <a name="command-placement-in-toolbars"></a>Posicionamento do comando em barras de ferramentas
+### <a name="command-placement-in-toolbars"></a>Posicionamento de comando em barras de ferramentas
 
 #### <a name="general-toolbars"></a>Barras de ferramentas gerais
- Ao projetar e organizando as barras de ferramentas, siga estes padrões:
+ Ao projetar e organizar barras de ferramentas, siga estes padrões:
 
 - Não use mais de um verbo por botão. Um botão = uma ação.
 
-- Use texto junto com o ícone somente se ele precisar ser reforçado com o rótulo.
+- Use o texto ao lado do ícone somente se ele precisar ser reforçado com o rótulo.
 
-- Use uma caixa de combinação exclusivamente para as propriedades que serão alternadas várias vezes em uma sessão. Caso contrário, expõem a propriedade em outro lugar.
+- Use uma caixa de combinação exclusivamente para propriedades que serão comutadas várias vezes em uma sessão. Caso contrário, exponha a propriedade em outro lugar.
 
-- A largura de uma caixa de combinação deve ser igual a largura do item dentro do caixa + 30% mais longa. Por exemplo, se o item mais longo é 200 pixels, a caixa de combinação deve ser 260 pixels de largura.
+- A largura de uma caixa combo deve ser igual à largura do item mais longo dentro da caixa + 30%. Por exemplo, se o item mais longo for de 200 pixels, então a caixa de combinação deve ter 260 pixels de largura.
 
-- Limite o uso de separadores. O uso de um separador ao lado de uma lista suspensa é um antipadrão, porque a forma da lista suspensa em si atua como um separador visual.
+- Limitar o uso de separadores. O uso de um separador ao lado de um dropdown é um anti-padrão, porque a forma do dropdown em si age como um separador visual.
 
-- Grupos de ícone devem conter de três a seis ícones.
+- Os grupos de ícones devem conter de três a seis ícones.
 
-- Se os qualificadores resultarem em vários comandos úteis, use um botão de divisão que armazena a última configuração:
+- Se os qualificadores resultarem em vários comandos úteis, use um botão dividido que armazena a última configuração:
 
-     ![Dividir botões no Visual Studio](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "c_SplitButtons 0501")
+     ![Botões divididos no Visual Studio](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "0501-c_SplitButtons")
 
-     **Exemplo de um botão de divisão. Os seis comandos à esquerda em vez disso, podem se ajustar em um único botão.**
+     **Exemplo de um botão dividido. Os seis comandos à esquerda podem, em vez disso, caber em um único botão.**
 
 #### <a name="product-specific-toolbars"></a>Barras de ferramentas específicas do produto
- Cada produto pode fornecer uma barra de ferramentas padrão que contém usados com frequência e comandos importantes e barra de ferramentas de padrão de cada produto devem aparecer na primeira vez em que o Visual Studio é iniciado depois que o produto foi instalado.
+ Cada produto pode fornecer uma barra de ferramentas padrão que contém comandos usados e importantes com freqüência, e a barra de ferramentas padrão de cada produto deve aparecer na primeira vez que o Visual Studio for iniciado após a instalação do produto.
 
- Produtos também devem aproveitar os grupos de comando compartilhado e menus fornecidos pelo IDE. Cada grupo de comando compartilhado é colocado em um menu compartilhado deve organizar os comandos relacionados de forma significativa para o usuário. É importante aproveitar essa estrutura de comando compartilhado para reduzir a complexidade.
+ Os produtos também devem aproveitar grupos de comando compartilhados e menus fornecidos pelo IDE. Cada grupo de comando compartilhado é colocado em um menu compartilhado destinado a organizar comandos relacionados de forma significativa para o usuário. É importante aproveitar essa estrutura de comando compartilhado para reduzir a complexidade.
 
 #### <a name="global-toolbars"></a>Barras de ferramentas globais
- Barras de ferramentas globais são necessárias para se ajustar à direita de uma linha fora da caixa. Ao criar uma nova barra de ferramentas global, siga as diretrizes para esse tipo de barra de ferramentas.
+ As barras de ferramentas globais são necessárias para caber em uma linha para fora da caixa. Ao criar uma nova barra de ferramentas global, siga as diretrizes para esse tipo de barra de ferramentas.
 
- **Diretrizes gerais de barra de ferramentas:**
+ **Diretrizes gerais da barra de ferramentas:**
 
-- Cada barra de ferramentas tem 24 pixels em controles comuns (garra, estouro).
+- Cada barra de ferramentas tem 24 pixels em controles comuns (gripper, overflow).
 
-- Cada botão de barra de ferramentas é de 22 pixels de largura incluindo preenchimento. Tornar o ícone de um botão de divisão adiciona outro pixels 11 da largura.
+- Cada botão da barra de ferramentas tem 22 pixels de largura, incluindo preenchimento. Fazendo do ícone um botão split adiciona outros 11 pixels de largura.
 
-- É permitida a duplicação de comandos em barras de ferramentas.
+- A duplicação de comandos em barras de ferramentas é permitida.
 
-  **Barras de ferramentas específicas de documentos** aparecem quando um determinado tipo de arquivo está ativo e desaparecem quando outro tipo de arquivo se torna ativo.
+  **Barras de ferramentas específicas para documentos** aparecem quando um determinado tipo de arquivo está ativo e desaparece quando um tipo de arquivo diferente se torna ativo.
 
-- Barras de ferramentas específicas de documentos não podem ter mais de 12 botões.
+- As barras de ferramentas específicas para documentos podem não ter mais de 12 botões.
 
 - A largura total da barra de ferramentas não pode exceder 300 pixels.
 
-- Cada tipo de arquivo pode ter uma barra de ferramentas inserida ou um documento específico barra de ferramentas global, mas não ambos.
+- Cada tipo de arquivo pode ter uma barra de ferramentas incorporada ou uma barra de ferramentas global específica para documentos, mas não ambas.
 
-  **Barras de ferramentas específicas de contexto** aparecem quando um determinado contexto é definido e tendem a permanecer ativas por longos períodos.
+  **Barras de ferramentas específicas do contexto** aparecem quando um determinado contexto é definido e tendem a permanecer ativos por longos períodos.
 
-- O limite de botão para todas as barras de ferramentas específicas de contexto é 18.
+- O limite de botão para todas as barras de ferramentas específicas de contexto é de 18.
 
-- Se a maioria dos usuários não consistentemente empregar os comandos dessa barra de ferramentas quando o contexto está ativo, em seguida, não associe essa barra de ferramentas com um contexto.
+- Se a maioria dos usuários não empregar consistentemente os comandos desta barra de ferramentas quando o contexto estiver ativo, então não associe essa barra de ferramentas a um contexto.
 
-- Certifique-se de que a barra de ferramentas desaparece quando você sair do contexto. Nenhuma dessas barras de ferramentas deve aparecer na inicialização.
+- Certifique-se de que a barra de ferramentas desapareça ao sair do contexto. Nenhuma dessas barras de ferramentas deve aparecer na inicialização.
 
-  **Barras de ferramentas sem contexto** nunca aparecem automaticamente. Eles mostram somente quando o usuário os ativa. Manter a largura máxima abaixo de 200 pixels.
+  **Barras de ferramentas sem contexto** nunca aparecem automaticamente. Estes só mostram quando o usuário os ativa. Mantenha a largura máxima abaixo de 200 pixels.
 
-### <a name="general-organization-and-shell-defined-groups"></a>Organização geral e grupos definidos pelo shell
- Use os comandos existentes compartilhados, grupos de comando e menus. Se um novo comando precisa ser definida, tente colocá-lo em um grupo de comando compartilhado existente. Se um novo grupo deve ser definido, tente colocá-lo em um menu compartilhado existente perto de um grupo de comandos relacionados antes de criar um novo menu de nível superior. Isso reduz a complexidade de comando, garantindo o posicionamento do comando consistente no IDE.
+### <a name="general-organization-and-shell-defined-groups"></a>Organização geral e grupos definidos por shell
+ Use comandos compartilhados, grupos de comando e menus compartilhados existentes. Se um novo comando precisar ser definido, tente colocá-lo em um grupo de comando compartilhado existente. Se um novo grupo precisar ser definido, tente colocá-lo em um menu compartilhado existente perto de um grupo de comando relacionado antes de criar um novo menu de nível superior. Isso reduz a complexidade do comando e, ao mesmo tempo, garante a colocação consistente de comando no IDE.
 
- Compartilhado **formato** menu, normalmente é mostrado no contexto de janelas de documentos de estilo do designer, é ilustrada na imagem a seguir:
+ O menu **Formato** compartilhado, normalmente mostrado no contexto das janelas de documentos estilo designer, é ilustrado na imagem a seguir:
 
- ![Menu do Visual Studio formato com textos explicativos](../../extensibility/ux-guidelines/media/0501-d_formatmenu.png "d_FormatMenu 0501")
+ ![Menu Visual Studio Format com chamadas](../../extensibility/ux-guidelines/media/0501-d_formatmenu.png "0501-d_FormatMenu")
 
  **Grupos de menus no Visual Studio**
 
-### <a name="reducing-and-reusing-commands"></a>Reduzindo e reutilização de comandos
- Comandos são normalmente mostrados com base no contexto, para reduzir o número de comandos que o usuário vê a qualquer momento. No entanto, você também deve reutilizar os menus compartilhadas existentes e grupos de comando para garantir que a estrutura de comando permanece relativamente estável entre as alterações no contexto.
+### <a name="reducing-and-reusing-commands"></a>Redução e reutilização de comandos
+ Os comandos são normalmente mostrados com base no contexto, a fim de reduzir o número de comandos que o usuário vê a qualquer momento. No entanto, você também deve reutilizar menus compartilhados existentes e grupos de comando para garantir que a estrutura de comando permaneça relativamente estável entre as mudanças de contexto.
 
- Reutilizando comandos compartilhados e colocando novos comandos próximos comandos compartilhados relacionados reduz a complexidade do IDE e cria uma experiência mais amigável.
+ Reutilizar comandos compartilhados e colocar novos comandos perto de comandos compartilhados relacionados reduz a complexidade do IDE e cria uma experiência mais fácil de usar.
 
-## <a name="naming-commands"></a>Comandos de nomenclatura
+## <a name="naming-commands"></a>Comandos de nomeação
 
 ### <a name="naming-conventions"></a>Convenções de nomenclatura
- Comando consistente de nomeação é essencial para que os usuários podem localizar e executar comandos, usando a linha de comando ou associação a um atalho de teclado. Nomes de comando também ajudam o usuário a entender quais finalidade atende a um comando quando ele for exibido em uma barra de ferramentas ou em um menu de contexto ou em cascata.
+ A nomeação consistente de comandos é fundamental para que os usuários possam encontrar e executar comandos, usando a linha de comando ou vinculando-se a um atalho de teclado. Os nomes de comando também ajudam o usuário a entender para que finalidade um comando serve quando é exibido em uma barra de ferramentas ou em um menu em cascata ou contexto.
 
-#### <a name="when-naming-commands"></a>Quando nomear comandos:
+#### <a name="when-naming-commands"></a>Ao nomear comandos:
 
-- Construa o texto para que ele seja facilmente localizável. Para obter mais informações sobre como localizar texto, consulte [práticas recomendadas de localização](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Construa texto para que seja facilmente localizado. Para obter mais informações sobre a localização do texto, consulte [as melhores práticas de localização](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
-- Seja conciso. Comandos devem usar não mais do que três palavras.
+- Seja conciso. Os comandos não devem usar mais do que três palavras.
 
-- Usar a capitalização de capitalização de título: a primeira letra de cada palavra deve estar em letras maiusculas. Para obter mais informações sobre formatação de texto no Visual Studio, consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Use a capitalização do caso do título: a primeira letra de cada palavra deve ser maiúscula. Para obter mais informações sobre a formatação de texto no Visual Studio, consulte [estilo texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
-- Leve em consideração onde o comando será colocado. Está em um menu de nível superior ou um submenu? Por exemplo, quando os comandos de alinhamento de agrupamento em um submenu, o comando de nível superior devem ser "Alinhar" e os comandos do submenu deve ser "À esquerda," "Direita", "Centro", "justificar" e assim por diante. Seria redundante para nomear os comandos de menu suspenso "Alinhar à esquerda" ou "Alinhar à direita."
+- Leve em consideração onde o comando será colocado. Está em um menu de alto nível ou um flyout? Por exemplo, ao agrupar comandos de alinhamento em um flyout, o comando de nível superior deve ser "Alinhar" e os comandos de flyout devem ser "Esquerda", "Direita", "Centro", "Justificar" e assim por diante. Seria redundante nomear os comandos de flyout "Alinhar à esquerda" ou "Alinhar à direita".
 
-     ![Menu do Visual Studio formato](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "a_FormatMenu 0502")
+     ![Menu Visual Studio Format](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "0502-a_FormatMenu")
 
 ### <a name="using-icons-with-commands"></a>Usando ícones com comandos
- Ser econômico no uso do emparelhamento com comandos de ícone. Embora a associação de uma imagem exclusiva com um comando acelera muito a capacidade do usuário para identificar esse comando, ineficiência e desordem visual ocorrem com uso excessivo de imagem. As regras a seguir ajudam ao decidir se deseja criar um ícone de comando.
+ Seja poupado no uso do emparelhamento de ícones com comandos. Embora associar uma imagem única a um comando apresse a capacidade do usuário de identificar que o comando, a desordem visual e a ineficiência ocorrem com o uso excessivo da imagem. As seguintes regras ajudam na hora de decidir se criar um ícone de comando.
 
-#### <a name="use-an-icon-with-a-command-only-if"></a>Use um ícone com um comando apenas se:
+#### <a name="use-an-icon-with-a-command-only-if"></a>Use um ícone com um comando somente se:
 
-- O mesmo comando tem um ícone associado a ele em outro produto da Microsoft proeminente, por exemplo, um dos aplicativos do Microsoft Office.
+- O mesmo comando tem um ícone associado a ele em outro produto proeminente da Microsoft, como um dos aplicativos do Microsoft Office.
 
 - O comando será colocado em uma barra de ferramentas padrão.
 
-- O comando é um comando de especialidade que os usuários podem adicionar a uma barra de ferramentas usando o **"Personalizar..."** caixa de diálogo.
+- O comando é um comando especial que os usuários provavelmente adicionarão a uma barra de ferramentas usando a caixa de diálogo **"Personalizar...".**
 
-## <a name="access-and-shortcut-keys"></a>Teclas de atalho e acesso
+## <a name="access-and-shortcut-keys"></a>Teclas de acesso e atalho
 
 ### <a name="overview"></a>Visão geral
- Há dois tipos de atribuições de teclas do teclado:
+ Existem dois tipos de atribuições chave do teclado:
 
-- **Chaves de acesso** (também conhecido como aceleradores) permitem o acesso do teclado por meio de menus para comandos e a cada rótulo na caixa de diálogo da interface do usuário. Chaves de acesso são principalmente para fins de acessibilidade, são atribuídas a todos os menus e a maioria dos controles de caixa de diálogo, não devem ser memorizadas, afeta somente a janela atual e são localizadas.
+- **As teclas de acesso** (também conhecidas como aceleradoras) permitem o acesso ao teclado através dos menus para comandar e para cada rótulo na ui de diálogo. As teclas de acesso são principalmente para fins de acessibilidade, são atribuídas a todos os menus e a maioria dos controles da caixa de diálogo, não devem ser memorizadas, afetam apenas a janela atual e são localizadas.
 
-- **Teclas de atalho** usar principalmente o controle (Ctrl) e sequências de teclas de função (Fn). Eles são projetados mais para usuários avançados e auxiliam na produtividade. Eles são atribuídos somente aos comandos usados com mais frequência e permitem o acesso rápido ao ignorar o menu principal. Teclas de atalho devem ser memorizadas e para que os motivo deve ser atribuído consistente com o esquema de perfil. Esquemas de chave de atalho podem variar de perfis. Um usuário pode personalizar as teclas de atalho por meio **Ferramentas > Opções > teclado**.
+- **As teclas de atalho** usam principalmente seqüências de teclas Control (Ctrl) e Function (Fn). Eles são projetados mais para usuários avançados e ajuda na produtividade. Eles são atribuídos apenas aos comandos mais usados e permitem acesso rápido ao ignorar o menu principal. As teclas de atalho devem ser memorizadas e, por essa razão, devem ser atribuídas de acordo com o esquema de perfil. Os esquemas de teclas de atalho podem variar de perfil para perfil. Um usuário pode personalizar teclas de atalho através de **ferramentas > opções > teclado**.
 
-### <a name="assigning-access-keys"></a>Atribuindo teclas de acesso
- Chaves de acesso consistem em chaves Alt plus alfanuméricos. Atribua uma chave de acesso para cada item de menu sem exceção. Siga as convenções comuns para a atribuição de chaves de acesso e Windows. Por exemplo, a chave de acesso **arquivo > novo** deve ser sempre **Alt, F, N**.
+### <a name="assigning-access-keys"></a>Atribuindo chaves de acesso
+ As teclas de acesso consistem em teclas alfanuméricas Alt plus. Atribua uma chave de acesso a cada item do menu sem exceção. Siga o Windows e convenções comuns para atribuir chaves de acesso. por exemplo, a chave de acesso para **Arquivo > Novo** deve ser sempre **Alt, F, N**.
 
- Não use letras de largura de pixel único como 'i' (em maiusculas ou minúsculas) ou uma 'l' minúscula e evite usar caracteres com descendentes (g, j, p, q e y), já que elas são difíceis de distinguir.
+ Não use letras de largura de um pixel, como 'i' (em maiúsculas ou minúsculas) ou um 'l' minúsculo, e evite usar caracteres com descendentes (g, j, p, q e y) pois estes são difíceis de distinguir.
 
- Evite usar chaves duplicadas, sempre que possível. Em casos em que a eliminação de duplicação é inevitável, o sistema de menu manipula conflitos passando por todos os comandos que usam a chave. Por exemplo, para um controle de comando "Number" no menu Arquivo, o que duplica a chave de acesso de "N" **Alt, F, N** criaria um novo arquivo, e **Alt, F, N, N** deve executar o comando "Number".
+ Evite usar chaves duplicadas quando possível. Nos casos em que a duplicação é inevitável, o sistema de menulida conflitos pedalando através de todos os comandos que usam a chave. Como exemplo, para um hipotético comando "Número" no menu Arquivo que duplica a tecla de acesso "N", **Alt, F, N** criaria um novo arquivo, e **Alt, F, N, N** executaria o comando "Número".
 
 ### <a name="assigning-shortcut-keys"></a>Atribuindo teclas de atalho
- Evite atribuir novas teclas de atalho, porque eles não são necessários para todos os comandos e se o uso excessivo de imposto do sistema (e memória do usuário). Dados do programa de aperfeiçoamento de experiência para cliente (CEIP) indicam que os usuários do Visual Studio usem apenas um pequeno subconjunto dos atalhos integrados.
+ Evite atribuir novas teclas de atalho, pois elas não são necessárias para cada comando e tributar o sistema (e a memória do usuário) se forem usados em excesso. Dados do Programa de Melhoria da Experiência do Cliente (CEIP) indicam que os usuários do Visual Studio usam apenas um pequeno subconjunto dos atalhos integrados.
 
  Ao definir atalhos, siga estas regras:
 
-- **Usar o controle (Ctrl) e sequências de teclas de função (Fn).**
+- **Use seqüências de teclas Control (Ctrl) e Function (Fn).**
 
-- **Preserve os atalhos usados com frequência.** Manter os atalhos mais populares.
+- **Preserve atalhos usados com freqüência.** Mantenha os atalhos mais populares.
 
-- **Atalhos do editor tornam fácil de tipo.** Associe atalhos de tipo fácil aos comandos que os desenvolvedores precisam maioria durante a gravação de código. Por exemplo, **Edit.InvokeSmartTag** precisa ter uma tecla de atalho rápido, como Ctrl + / e não Alt + Shift + F10.
+- **Torne os atalhos do editor fáceis de digitar.** Vincule atalhos fáceis de digitar a comandos que os desenvolvedores mais precisam ao escrever código. Por exemplo, **Edit.InvokeSmartTag** precisa ter uma chave de atalho rápida como Ctrl+/ e não Alt+Shift+F10.
 
-- **Se esforçar para atalhos consistentemente com tema.**
+- **Esforce-se por atalhos temáticos consistentemente.**
 
-- **Siga as diretrizes do Windows para determinar quais modificador teclas empregar.** Use combinações de teclas Ctrl para comandos que têm efeitos em larga escala, como comandos que se aplicam a um documento inteiro. Use combinações de tecla Shift para comandos que estenderem ou complementam as ações de tecla de atalho padrão. Não use combinações de teclas Ctrl + Alt.
+- **Siga as diretrizes do Windows para determinar quais chaves modificadoras devem ser empregadas.** Use combinações de teclas Ctrl para comandos que tenham efeitos em larga escala, como comandos que se aplicam a um documento inteiro. Use combinações de teclas Shift para comandos que ampliem ou complementem as ações da tecla de atalho padrão. Não use combinações Ctrl+Alt.
 
-- **Remova atalhos estranhos.** Se você tiver um recurso herdado, considere remover atalhos que são usados com pouca frequência extrema, a (menos de 10 vezes dos dados do CEIP) ou pouca frequência moderada (menos de 100 vezes do que os dados do CEIP), se uma chave de acesso fornece acesso rápido para o mesmo comando. Por exemplo: ALT, H, C será aberto/conteúdo da Ajuda.
+- **Remova atalhos estranhos.** Se você tiver um recurso legado, considere remover atalhos que são usados com extrema infreqüência (menos de 10 vezes a partir dos dados CEIP) ou infreqüência moderada (menos de 100 vezes a partir dos dados CEIP) se uma chave de acesso fornecer acesso rápido ao mesmo comando. Por exemplo: Alt, H, C abrirá Ajuda/Conteúdo.
 
-  Não há uma maneira simples de verificar a disponibilidade de atalho. Se você quiser adicionar um atalho, siga estas etapas:
+  Não há uma maneira simples de verificar a disponibilidade de atalhos. Se você quiser adicionar um atalho, siga estas etapas:
 
-1. Verifique a lista de [atalhos do Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes para agrupar seus com.
+1. Verifique a lista de atalhos do [Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes ao grupo seu.
 
-2. Vá para **Ferramentas > Opções > ambiente > teclado** e testar o atalho. Verifique cada esquema de mapeamento de teclado listados em "Aplicar o seguinte esquema de mapeamento de teclado adicionais". Verifique perfis geral, c#, VB e C++, como aqueles compartilham atalhos exclusivos. O atalho está disponível se ela não estiver mapeada em qualquer um desses locais.
+2. Vá para **Ferramentas > Opções > Ambiente > Teclado** e teste seu atalho. Verifique cada esquema de mapeamento do teclado listado em "Aplicar o seguinte esquema adicional de mapeamento do teclado". Verifique os perfis Geral, C#, VB e C++, pois esses compartilham atalhos exclusivos. Seu atalho está disponível se não for mapeado em nenhum desses lugares.

@@ -1,77 +1,77 @@
 ---
-title: MSSCCPRJ. Arquivos SCC | Microsoft Docs
+title: MSSCCPRJ. Arquivo SCC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 983c6aa0a418ec87d521852bd4b0d781c5c90cfa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344017"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702466"
 ---
-# <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivos SCC
-Quando você coloca uma solução do Visual Studio ou o projeto sob controle do código-fonte usando o IDE, o IDE recebe duas informações cruciais. A informação vem de controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.
+# <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivo SCC
+Quando você coloca uma solução ou projeto do Visual Studio sob controle de origem usando o IDE, o IDE recebe duas informações-chave. A informação vem do plug-in de controle de origem na forma de strings. Essas strings, "AuxPath" e "ProjName", são opacas ao IDE, mas são usadas pelo plug-in para localizar a solução ou o projeto no controle de versão. O IDE normalmente recebe essas strings pela primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e, em seguida, salva-os na solução ou arquivo de projeto para chamadas futuras para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando incorporados nos arquivos de solução e projeto, as strings "AuxPath" e "ProjName" não são atualizadas automaticamente quando um usuário ramifica, bifurca ou copia arquivos de solução e projeto que estão no controle de versão. Para garantir que a solução e os arquivos do projeto apontem para sua localização correta no controle da versão, os usuários devem atualizar manualmente as strings. Como as cordas são feitas para serem opacas, pode nem sempre ficar claro como elas devem ser atualizadas.
 
- O plug-in de controle do código-fonte pode evitar esse problema ao armazenar as cadeias de caracteres "AuxPath" e "Nomedoprojeto" em um arquivo especial chamado de *Mssccprj* arquivo. É um arquivo local e o lado do cliente que é de propriedade e mantido pelo plug-in. Esse arquivo nunca é colocado sob controle do código-fonte, mas é gerado pelo plug-in para cada diretório que contém arquivos de controle do código-fonte. Para determinar quais arquivos são arquivos de solução e projeto do Visual Studio, um plug-in de controle do código-fonte pode comparar as extensões de arquivo em relação a uma lista padrão ou fornecido pelo usuário. Depois que o IDE detecta que um oferece suporte a plug-in a *Mssccprj* arquivo, ele deixa de inserir as cadeias de caracteres "AuxPath" e "Nomedoprojeto" em arquivos de solução e projeto, e ele lê essas cadeias de caracteres da *Mssccprj*do arquivo em vez disso.
+ O plug-in de controle de origem pode evitar esse problema armazenando as strings "AuxPath" e "ProjName" em um arquivo especial chamado arquivo *MSSCCPRJ.SCC.* É um arquivo local, do lado do cliente, que é de propriedade e mantido pelo plug-in. Este arquivo nunca é colocado sob controle de origem, mas é gerado pelo plug-in para cada diretório que contenha arquivos controlados por origem. Para determinar quais arquivos são a solução visual studio e arquivos de projeto, um plug-in de controle de origem pode comparar as extensões de arquivo com uma lista padrão ou fornecida pelo usuário. Uma vez que o IDE detecta que um plug-in suporta o arquivo *MSSCCPRJ.SCC,* ele deixa de incorporar as seqüências "AuxPath" e "ProjName" em arquivos de solução e projeto, e ele lê essas strings do arquivo *MSSCCPRJ.SCC* em vez disso.
 
- Um plug-in de controle de fonte que ofereça suporte a *Mssccprj* arquivo deve seguir as diretrizes a seguir:
+ Um plug-in de controle de origem que suporte o arquivo *MSSCCPRJ.SCC* deve seguir as seguintes diretrizes:
 
-- Pode haver somente um *Mssccprj* arquivo por diretório.
+- Só pode haver um arquivo *MSSCCPRJ.SCC* por diretório.
 
-- Uma *Mssccprj* arquivo pode conter a "AuxPath" e "Nomedoprojeto" para vários arquivos que estão sob controle do código-fonte dentro de um determinado diretório.
+- Um arquivo *MSSCCPRJ.SCC* pode conter o "AuxPath" e "ProjName" para vários arquivos que estão sob controle de origem dentro de um determinado diretório.
 
-- A cadeia de caracteres "AuxPath" não deve ter aspas dentro dele. Ele tem permissão para ter aspas ao redor dele como delimitadores (por exemplo, um par de aspas duplas pode ser usado para indicar uma cadeia de caracteres vazia). O IDE removeremos todas as aspas da cadeia de caracteres "AuxPath" quando são lidos a partir de *Mssccprj* arquivo.
+- A seqüência "AuxPath" não deve ter aspas dentro dele. É permitido ter citações ao seu redor como delimitadores (por exemplo, um par de aspas duplas pode ser usado para indicar uma seqüência vazia). O IDE removerá todas as citações da seqüência "AuxPath" quando for lida no arquivo *MSSCCPRJ.SCC.*
 
-- Cadeia de caracteres "Nomedoprojeto" no *MSSCCPRJ. Arquivos SCC* deve corresponder exatamente a cadeia de caracteres retornada do `SccGetProjPath` função. Se a cadeia de caracteres retornada pela função tem aspas ao redor dela, a cadeia de caracteres na *Mssccprj* arquivo deve ter aspas ao redor dele e vice-versa.
+- A seqüência "ProjName" no *MSSCCPRJ. O arquivo SCC* deve corresponder exatamente `SccGetProjPath` à seqüência retornada da função. Se a seqüência retornada pela função tiver citações ao seu redor, a seqüência no arquivo *MSSCCPRJ.SCC* deve ter citações em torno dele, e vice-versa.
 
-- Uma *Mssccprj* arquivo é criado ou atualizado sempre que um arquivo é colocado sob controle do código-fonte.
+- Um arquivo *MSSCCPRJ.SCC* é criado ou atualizado sempre que um arquivo é colocado sob controle de origem.
 
-- Se um *Mssccprj* arquivo é excluído, um provedor deverá gerá-la novamente na próxima vez que ele executa uma operação de controle do código-fonte relativas a esse diretório.
+- Se um arquivo *MSSCCPRJ.SCC* for excluído, um provedor deve regenerá-lo na próxima vez que realizar uma operação de controle de origem sobre esse diretório.
 
-- Uma *Mssccprj* arquivo estritamente deve seguir o formato definido.
+- Um arquivo *MSSCCPRJ.SCC* deve seguir estritamente o formato definido.
 
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração de MSSCCPRJ. Formato de arquivo do SCC
- A seguir está um exemplo do *Mssccprj* formato de arquivo (os números de linha são fornecidos apenas como um guia e não devem ser incluídos no corpo do arquivo):
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração do MSSCCPRJ. Formato de arquivo SCC
+ A seguir está uma amostra do formato de arquivo *MSSCCPRJ.SCC* (os números de linha são fornecidos apenas como guia e não devem ser incluídos no corpo do arquivo):
 
-- [Line 1] `SCC = This is a Source Code Control file`
+- [Linha 1]`SCC = This is a Source Code Control file`
 
-- [Line 2]
+- [Linha 2]
 
-- [Line 3] `[TestApp.sln]`
+- [Linha 3]`[TestApp.sln]`
 
-- [Line 4] `SCC_Aux_Path = "\\server\vss\"`
+- [Linha 4]`SCC_Aux_Path = "\\server\vss\"`
 
-- [Line 5] `SCC_Project_Name = "$/TestApp"`
+- [Linha 5]`SCC_Project_Name = "$/TestApp"`
 
-- [Line 6]
+- [Linha 6]
 
-- [Line 7] `[TestApp.csproj]`
+- [Linha 7]`[TestApp.csproj]`
 
-- [Line 8] `SCC_Aux_Path = "\\server\vss\"`
+- [Linha 8]`SCC_Aux_Path = "\\server\vss\"`
 
-- [Line 9] `SCC_Project_Name = "$/TestApp"`
+- [Linha 9]`SCC_Project_Name = "$/TestApp"`
 
- A primeira linha declara a finalidade do arquivo e serve como a assinatura para todos os arquivos desse tipo. Essa linha deve aparecer exatamente como isso em todos os *Mssccprj* arquivos:
+ A primeira linha afirma o propósito do arquivo e serve como assinatura para todos os arquivos deste tipo. Esta linha deve aparecer exatamente assim em todos os arquivos *MSSCCPRJ.SCC:*
 
  `SCC = This is a Source Code Control file`
 
- A seção a seguir fornece detalhes sobre as configurações para cada arquivo, marcada pelo nome do arquivo entre colchetes. Esta seção é repetida para cada arquivo que estão sendo rastreado. Essa linha é um exemplo de um nome de arquivo, ou seja, `[TestApp.csproj]`. O IDE espera que as duas linhas a seguir. No entanto, ele não define o estilo dos valores definidos. As variáveis são `SCC_Aux_Path` e `SCC_Project_Name`.
+ A seção a seguir detalha as configurações de cada arquivo, marcadapelo nome do arquivo em colchetes quadrados. Esta seção é repetida para cada arquivo que está sendo rastreado. Esta linha é uma amostra de `[TestApp.csproj]`um nome de arquivo, ou seja, . O IDE espera as duas linhas seguintes. Não define, no entanto, o estilo dos valores definidos. As variáveis `SCC_Aux_Path` são `SCC_Project_Name`e .
 
  `SCC_Aux_Path = "\\server\vss\"`
 
  `SCC_Project_Name = "$/TestApp"`
 
- Não há nenhum delimitador final para essa seção. O nome do arquivo, bem como todos os literais que aparecem no arquivo, são definidos no arquivo de cabeçalho scc.h. Para obter mais informações, consulte [cadeias de caracteres usadas como chaves para localizar um controle de fonte plug-in](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
+ Não há delimitador final para esta seção. O nome do arquivo, bem como todos os literais que aparecem no arquivo, são definidos no arquivo de cabeçalho scc.h. Para obter mais informações, consulte [Strings usados como chaves para encontrar um plug-in de controle de origem](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
-- [Cadeias de caracteres usadas como chaves para localizar um controle de fonte plug-in](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+- [Cordas usadas como chaves para encontrar um plug-in de controle de origem](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

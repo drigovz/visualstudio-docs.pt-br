@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f7871a223695632b5c2118377c9cfeb24d297e4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329919"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717591"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
-Essa interface representa uma coleção de objetos que implementam o [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+Esta interface representa uma coleção de objetos que implementam a interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,35 +28,35 @@ Essa interface representa uma coleção de objetos que implementam o [IDebugAddr
 IEnumDebugAdresses : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Essa interface é implementada pelo provedor de símbolo para fornecer conjuntos de objetos que implementam o [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Observe que isso não é uma enumeração COM padrão devido à presença do [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) método.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Essa interface é implementada pelo provedor de símbolos para fornecer conjuntos de objetos que implementam a interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Observe que esta não é uma enumeração COM padrão devido à presença do método [GetCount.](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Essa interface é retornada por [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) e [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
+ Esta interface é retornada por [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) e [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Essa interface implementa os métodos a seguir.
+## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+ Esta interface implementa os seguintes métodos.
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera o próximo conjunto de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objetos da enumeração.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignora um número especificado de entradas.|
-|[Reiniciar](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Redefine a enumeração para a primeira entrada.|
+|[Avançar](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera o próximo conjunto de objetos [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) da enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Salta um número especificado de entradas.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Redefine a enumeração para a primeira entrada.|
 |[Clonar](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera uma cópia da enumeração atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera o número de entradas na enumeração.|
 
 ## <a name="remarks"></a>Comentários
- Normalmente, essa interface é usada pelo mecanismo de depuração para ajudar a determinar o endereço apropriado para dar ao avaliador de expressão.
+ Esta interface é normalmente usada pelo mecanismo de depuração para ajudar a determinar o endereço apropriado para dar ao avaliador de expressão.
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)

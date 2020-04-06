@@ -1,5 +1,5 @@
 ---
-title: Elemento SupportsCodeSeparation (modelos do Visual Studio) | Microsoft Docs
+title: SuportesCodeSeparation Element (modelos de estúdio visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719424"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699510"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelos do Visual Studio)
-Especifica se a caixa de seleção **código local em arquivo separado** está habilitada na caixa de diálogo **Adicionar novo item** .
+Especifica se o **código Colocar na** caixa de seleção de arquivo separado está ativado na caixa de diálogo **Adicionar novo item.**
 
- \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
+ \<VSTemplate \<> TemplateData>Suportede \<códigoSCódigoSSem>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,31 +36,31 @@ Especifica se a caixa de seleção **código local em arquivo separado** está h
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido na caixa de diálogo **novo projeto** ou **novo item** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido na **caixa de** diálogo Novo Projeto ou no Novo **Item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve ser `true` ou `false`, indicando se a caixa de seleção **código local em arquivo separado** está habilitada na caixa de diálogo **Adicionar novo item** .
+ O texto deve `true` `false`ser ou , indicando se o **código Colocar na** caixa de seleção de arquivo separado está ativado na caixa de diálogo Adicionar novo **item.**
 
 ## <a name="remarks"></a>Comentários
  `SupportsCodeSeparation` é um elemento opcional. O valor padrão é `false`.
 
- O elemento `SupportsCodeSeparation` só está disponível para modelos de item da Web.
+ O `SupportsCodeSeparation` elemento está disponível apenas para modelos de itens da Web.
 
- A separação de código ou o modelo de página code-behind permite que você mantenha a marcação em um arquivo e o código de programação em outro arquivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e outras linguagens .NET usam esse modelo.
+ A separação de código, ou o modelo de página de código atrás, permite que você mantenha a marcação em um arquivo e o código de programação em outro arquivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]e outras línguas .NET usam este modelo.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir especifica a exibição do **código do local em uma opção de arquivo separado** .
+ O exemplo a seguir especifica para exibir o código Colocar na opção **de arquivo separado.**
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +84,6 @@ Especifica se a caixa de seleção **código local em arquivo separado** está h
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

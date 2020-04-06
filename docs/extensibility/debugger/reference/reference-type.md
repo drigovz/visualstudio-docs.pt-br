@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329276"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713664"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
+# <a name="reference_type"></a>REFERENCE_TYPE
 Especifica o tipo de referência.
 
 ## <a name="syntax"></a>Sintaxe
@@ -44,24 +44,24 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Campos
  `REF_TYPE_WEAK`\
- Especifica uma referência fraca. Não pode ser combinado com `REF_TYPE_STRONG`.
+ Especifica uma referência fraca. Não pode ser `REF_TYPE_STRONG`combinado com .
 
  `REF_TYPE_STRONG`\
- Especifica uma referência forte. Não pode ser combinado com `REF_TYPE_WEAK`.
+ Especifica uma referência forte. Não pode ser `REF_TYPE_WEAK`combinado com .
 
 ## <a name="remarks"></a>Comentários
- Usado como o `dwRefType` membro a [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura.
+ Usado como `dwRefType` membro da estrutura [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
 
- Passado como um parâmetro para o [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) método.
+ Passou como parâmetro para o método [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Clone
 ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe930c4fbcc25dbe8f8c8c02b68b3ee40ac25129
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 77dd68fadad5300a7a96787d91fbb17d9d456f60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350268"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716593"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 Retorna uma cópia da enumeração atual como um objeto separado.
@@ -39,15 +39,15 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppEnum`\
-[out] Retorna uma cópia dessa enumeração como um objeto separado.
+[fora] Retorna uma cópia desta enumeração como um objeto separado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A cópia da enumeração tem o mesmo estado original no momento em que esse método é chamado. No entanto, a cópia e o original estados são separados e podem ser alterados individualmente.
+ A cópia da enumeração tem o mesmo estado do original no momento em que este método é chamado. No entanto, os estados da cópia e do original são separados e podem ser alterados individualmente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333974"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701282"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC function
-Essa função adiciona uma lista de arquivos do controle de origem para o projeto aberto no momento.
+# <a name="sccaddfilesfromscc-function"></a>Função SccAddFilesFromSCC
+Esta função adiciona uma lista de arquivos do controle de origem ao projeto atualmente aberto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,53 +38,53 @@ SCCRTN SccAddFilesFromSCC(
 );
 ```
 
-### <a name="parameters"></a>Parâmetros
+### <a name="parameters"></a>parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+[em] O ponteiro de contexto plug-in de controle de origem.
 
  hWnd
 
-[in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.
+[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
 
  lpUser
 
-[no, out] O nome de usuário (até SCC_USER_SIZE, incluindo o terminador nulo).
+[dentro, fora] O nome de usuário (até SCC_USER_SIZE, incluindo o exterminador nulo).
 
  lpAuxProjPath
 
-[no, out] Auxiliar cadeia de caracteres que identifica o projeto (até `SCC_PRJPATH_`tamanho, incluindo o terminador nulo).
+[dentro, fora] Seqüência auxiliar identificando o `SCC_PRJPATH_`projeto (até TAMANHO, incluindo o exterminador nulo).
 
- cFiles
+ cArquivos
 
-[in] Número de arquivos fornecido por `lpFilePaths`.
+[em] Número de arquivos `lpFilePaths`dados por .
 
  lpFilePaths
 
-[no, out] Matriz de nomes de arquivo para adicionar ao projeto atual.
+[dentro, fora] Matriz de nomes de arquivos para adicionar ao projeto atual.
 
- lpDestination
+ lpDestino
 
-[in] O caminho de destino onde os arquivos devem ser gravados.
+[em] O caminho de destino onde os arquivos devem ser escritos.
 
  lpComment
 
-[in] O comentário a ser aplicado a cada um dos arquivos que está sendo adicionados.
+[em] O comentário a ser aplicado a cada um dos arquivos a serem adicionados.
 
- pbResults
+ pbResultados
 
-[no, out] Matriz de sinalizadores que está definido para indicar êxito (diferente de zero ou TRUE) ou falha (zero ou FALSE) para cada arquivo (tamanho da matriz deve ter pelo menos `cFiles` longo).
+[dentro, fora] Matriz de sinalizadores definidos para indicar sucesso (não zero ou TRUE) ou falha (zero ou `cFiles` FALSO) para cada arquivo (o tamanho da matriz deve ser pelo menos longo).
 
 ## <a name="return-value"></a>Valor retornado
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|Projeto não está aberto.|
-|SCC_E_OPNOTPERFORMED|Conexão não está no mesmo projeto conforme especificado por `lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|Usuário não está autorizado a atualizar o banco de dados.|
+|SCC_E_PROJNOTOPEN|O projeto não está aberto.|
+|SCC_E_OPNOTPERFORMED|Conexão não é para o mesmo projeto especificado por`lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a atualizar o banco de dados.|
 |SCC_E_NONSPECIFICERROR|Erro desconhecido.|
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)

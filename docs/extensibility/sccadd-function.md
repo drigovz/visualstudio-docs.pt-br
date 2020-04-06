@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ee567dff65f184f604fb390ec19ebbf6d1e0208
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334006"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701309"
 ---
 # <a name="sccadd-function"></a>Função SccAdd
-Essa função adiciona novos arquivos ao sistema de controle de origem.
+Esta função adiciona novos arquivos ao sistema de controle de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,69 +36,69 @@ SCCRTN SccAdd(
 );
 ```
 
-### <a name="parameters"></a>Parâmetros
+### <a name="parameters"></a>parâmetros
  pvContext
 
-[in] A estrutura de contexto de plug-in de controle de origem.
+[em] A estrutura de contexto plug-in de controle de origem.
 
  hWnd
 
-[in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.
+[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
 
- nFiles
+ nArquivos
 
-[in] Número de arquivos selecionados a serem adicionados ao projeto atual, conforme indicado no `lpFileNames` matriz.
+[em] Número de arquivos selecionados para serem adicionados `lpFileNames` ao projeto atual, conforme dado na matriz.
 
  lpFileNames
 
-[in] Matriz de nomes totalmente qualificados de locais de arquivos a serem adicionados.
+[em] Matriz de nomes locais totalmente qualificados de arquivos a serem adicionados.
 
  lpComment
 
-[in] O comentário a ser aplicado a todos os arquivos que está sendo adicionados.
+[em] O comentário a ser aplicado a todos os arquivos que estão sendo adicionados.
 
- pfOptions
+ pfOpções
 
-[in] Matriz de sinalizadores de comando, fornecidos em uma base por arquivo.
+[em] Matriz de sinalizadores de comando, fornecidas por arquivo.
 
- pvOptions
+ pvOpções
 
-[in] Opções de plug-in específico de controle de origem.
+[em] Opções específicas de plug-in de controle de origem.
 
 ## <a name="return-value"></a>Valor retornado
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+ Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A operação de adição foi bem-sucedida.|
-|SCC_E_FILEALREADYEXISTS|O arquivo selecionado já está sob controle do código-fonte.|
+|SCC_OK|A operação de adição foi bem sucedida.|
+|SCC_E_FILEALREADYEXISTS|O arquivo selecionado já está sob controle de origem.|
 |SCC_E_TYPENOTSUPPORTED|O tipo do arquivo (por exemplo, binário) não é suportado pelo sistema de controle de origem.|
-|SCC_E_OPNOTSUPPORTED|O sistema de controle do código-fonte não suporta esta operação.|
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. É recomendável uma nova tentativa.|
-|SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|
-|SCC_E_NONSPECIFICERROR|Falha não específica; Adicione não executada.|
+|SCC_E_OPNOTSUPPORTED|O sistema de controle de origem não suporta esta operação.|
+|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção. Recomenda-se uma nova tentativa.|
+|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a realizar esta operação.|
+|SCC_E_NONSPECIFICERROR|Falha não específica; adicionar não realizado.|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|
-|SCC_E_FILENOTEXIST|Arquivo local não foi encontrado.|
+|SCC_E_FILENOTEXIST|O arquivo local não foi encontrado.|
 
 ## <a name="remarks"></a>Comentários
- O usual `fOptions` são substituídos aqui por uma matriz `pfOptions`, com um `LONG` opção especificação por arquivo. Isso ocorre porque o tipo de arquivo pode variar de um arquivo para o arquivo.
+ Os `fOptions` usuais são substituídos `pfOptions`aqui `LONG` por uma matriz, com uma especificação de opção por arquivo. Isso porque o tipo de arquivo pode variar de arquivo para arquivo.
 
 > [!NOTE]
-> Não é válido especificar ambos `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opções para o mesmo arquivo, mas ele é válido para especificar que nenhum dos dois. A configuração de nenhum dos dois é o mesmo que definir `SCC_FILETYPE_AUTO`, caso em que o controle de fonte este plug-in detecta automaticamente o tipo de arquivo.
+> É inválido especificar `SCC_FILETYPE_TEXT` `SCC_FILETYPE_BINARY` ambos e opções para o mesmo arquivo, mas é válido especificar nenhum dos dois. A configuração também `SCC_FILETYPE_AUTO`não é a mesma que a configuração, nesse caso, o plug-in de controle de origem detecta automaticamente o tipo de arquivo.
 
- Abaixo está a lista de sinalizadores usados no `pfOptions` matriz:
+ Abaixo está a lista de `pfOptions` bandeiras usadas na matriz:
 
 |Opção|Valor|Significado|
 |------------|-----------|-------------|
-|SCC_FILETYPE_AUTO|0x00|O plug-in de controle do código-fonte deve detectar o tipo de arquivo.|
+|SCC_FILETYPE_AUTO|0x00|O plug-in de controle de origem deve detectar o tipo de arquivo.|
 |SCC_FILETYPE_TEXT|0x01|Indica um arquivo de texto ASCII.|
-|SCC_FILETYPE_BINARY|0x02|Indica um tipo de arquivo diferente de texto ASCII.|
-|SCC_ADD_STORELATEST|0x04|Armazena apenas a cópia mais recente do arquivo, nenhum delta.|
+|SCC_FILETYPE_BINARY|0x02|Indica um tipo de arquivo diferente do texto ASCII.|
+|SCC_ADD_STORELATEST|0x04|Armazena apenas a última cópia do arquivo, sem deltas.|
 |SCC_FILETYPE_TEXT_ANSI|0x08|Trata o arquivo como texto ANSI.|
 |SCC_FILETYPE_UTF8|0x10|Trata o arquivo como texto Unicode no formato UTF8.|
-|SCC_FILETYPE_UTF16LE|0x20|Trata o arquivo como texto Unicode em UTF16 Little Endian formato.|
-|SCC_FILETYPE_UTF16BE|0x40|Trata o arquivo como texto Unicode em UTF16 Big Endian Formatar.|
+|SCC_FILETYPE_UTF16LE|0x20|Trata o arquivo como texto Unicode no formato UTF16 Little Endian.|
+|SCC_FILETYPE_UTF16BE|0x40|Trata o arquivo como texto Unicode no formato UTF16 Big Endian.|
 
-## <a name="see-also"></a>Consulte também
-- [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Confira também
+- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)

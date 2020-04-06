@@ -1,47 +1,47 @@
 ---
-title: Suporte a várias versões do Visual Studio | Microsoft Docs
+title: Suporte a múltiplas versões do Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745998"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699482"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Suporte a várias versões do Visual Studio
-O termo *side-by-side* significa que você pode instalar e manter várias versões de um produto no mesmo computador. VSPackages, isso significa que um usuário pode ter várias versões do Visual Studio instaladas no mesmo computador. No entanto, você não pode ter versões lado a lado de seu VSPackages carregados em uma única versão do Visual Studio.
+O termo *lado a lado* significa que você pode instalar e manter várias versões de um produto no mesmo computador. Para VSPackages, isso significa que um usuário pode ter várias versões do Visual Studio instaladas no mesmo computador. No entanto, você não pode ter versões lado a lado de seus VSPackages carregados em uma única versão do Visual Studio.
 
- Antes de fazer o VSPackage capaz de ser carregado em versões lado a lado do Visual Studio, considere o seguinte:
+ Antes de tornar seu VSPackage capaz de ser carregado em versões lado a lado do Visual Studio, considere o seguinte:
 
-- Você deve determinar qual estratégia de implementação lado a lado que devem ser seguidas.
+- Você deve determinar qual estratégia de implementação lado a lado você deseja seguir.
 
-   Para obter mais informações, consulte [escolhendo entre compartilhados e com controle de versão VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
+   Para obter mais informações, consulte [Escolhendo Entre PACOTES VS compartilhados e versões](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
-- Seus formatos de arquivo de solução e projeto devem se ajustar sua estratégia de implementação.
+- Seus formatos de solução e arquivo de projeto devem se encaixar em sua estratégia de implementação.
 
-   Para obter mais informações, consulte [atualização de projetos personalizados](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) e [registrando extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+   Para obter mais informações, consulte [Atualizar projetos personalizados](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) e [registrar extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- O instalador deve lidar com a sua estratégia de implementação para que os componentes com controle de versão e componentes compartilhados por todas as versões, estão corretamente instalados e registrados.
+- O instalador deve lidar com sua estratégia de implementação para que os componentes em versão, e também componentes compartilhados em todas as versões, sejam instalados e registrados corretamente.
 
-   Para obter mais informações, consulte [instalando VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e também [gerenciamento de componente](../extensibility/internals/component-management.md).
+   Para obter mais informações, consulte [Instalar pacotes VS com o Instalador do Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) e também o gerenciamento de [componentes.](../extensibility/internals/component-management.md)
 
   > [!NOTE]
-  > Também instalar uma versão do Visual Studio instala uma versão correspondente do .NET Framework. Por exemplo, instalar o Visual Studio 2010 e o Visual Studio 2012 no mesmo computador também instala as versões 4.0 e 4.5 do .NET Framework, respectivamente.
+  > A instalação de uma versão do Visual Studio também instala uma versão correspondente do .NET Framework. Por exemplo, a instalação do Visual Studio 2010 e do Visual Studio 2012 no mesmo computador também instala as versões 4.0 e 4.5 do .NET Framework, respectivamente.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Escolhendo entre compartilhados e com controle de versão VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) explica como resolver problemas de lado a lado em seu VSPackage.
+- [Escolhendo entre vspackages compartilhados e versados](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Explica como resolver problemas lado a lado em seu VSPackage.
 
-- [Registrando extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) descreve como o VSPackage pode registrar as associações de arquivo em um cenário lado a lado.
+- [Registrando extensões de nome](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) de arquivo para implantações lado a lado Descreve como o VSPackage pode registrar associações de arquivos em um cenário lado a lado.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Instalar VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Instalando VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)

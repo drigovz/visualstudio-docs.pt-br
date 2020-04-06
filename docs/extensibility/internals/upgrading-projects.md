@@ -7,17 +7,17 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9170532746dfc61cdec6636fb669676a94535de1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303228"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704261"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 
@@ -52,7 +52,7 @@ Depois de atualizar todos os arquivos globais relevantes, cada fábrica de proje
 
 ## <a name="best-practices"></a>Práticas Recomendadas
 
-Use <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> o serviço para verificar se você pode editar um arquivo antes de editá-lo e pode salvá-lo antes de salvá-lo. Isso ajudará suas implementações de backup e upgrade a lidar com arquivos de projeto controle de origem, arquivos com permissões insuficientes e assim por diante.
+Use <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> o serviço para verificar se você pode editar um arquivo antes de editá-lo e pode salvá-lo antes de salvá-lo. Isso ajudará suas implementações de backup e upgrade a lidar com arquivos de projeto sob controle de origem, arquivos com permissões insuficientes e assim por diante.
 
 Use <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> o serviço durante todas as fases de backup e atualização para fornecer informações sobre o sucesso ou falha do processo de atualização.
 

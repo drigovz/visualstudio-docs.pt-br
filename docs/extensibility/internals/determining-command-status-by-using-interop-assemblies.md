@@ -1,38 +1,38 @@
 ---
-title: Determinando o Status de comando usando Assemblies de interoperabilidade | Microsoft Docs
+title: Determinando o status do comando usando montagens interop | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33efc0bf393746a80b0881dacae01eaafe65bb8e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351618"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708707"
 ---
-# <a name="determine-command-status-by-using-interop-assemblies"></a>Determinar o status de comando usando assemblies de interoperabilidade
-Um VSPackage deve controlar do estado dos comandos que ele pode manipular. O ambiente não pode determinar quando um comando tratado dentro do seu VSPackage fica habilitado ou desabilitado. É responsabilidade do VSPackage para informar o ambiente sobre estados de comando, por exemplo, o estado do geral comandos como **Recortar**, **cópia**, e **colar**.
+# <a name="determine-command-status-by-using-interop-assemblies"></a>Determine o status do comando usando conjuntos interop
+Um VSPackage deve acompanhar o estado dos comandos que ele pode manusear. O ambiente não pode determinar quando um comando manipulado dentro do vsPackage fica ativado ou desativado. É responsabilidade do seu VSPackage informar o ambiente sobre estados de comando, por exemplo, o estado dos comandos gerais como **Cut,** **Copy**e **Paste**.
 
 ## <a name="status-notification-sources"></a>Fontes de notificação de status
- O ambiente recebe informações sobre comandos por meio de 'VSPackages <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método, que é parte da implementação do VSPackage do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. O ambiente chama o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método do VSPackage em duas condições:
+ O ambiente recebe informações sobre comandos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> através do método VSPackages, que faz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> parte da implementação da interface do VSPackage. O ambiente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chama o método do VSPackage em duas condições:
 
-- Quando um usuário abre um menu principal ou um menu de contexto (clicando com o), o ambiente é executado o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método em todos os comandos no menu para determinar seu estado.
+- Quando um usuário abre um menu principal ou um menu de contexto <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (clicando com o botão direito), o ambiente executa o método em todos os comandos desse menu para determinar seu estado.
 
-- Quando o VSPackage solicita que o ambiente de atualizar a interface do usuário (UI) atual. Essa atualização ocorre como comandos que estão atualmente visíveis para o usuário, como o **Recortar**, **cópia**, e **colar** de agrupamento na barra de ferramentas padrão, se tornam habilitados e desabilitados em resposta às ações de contexto e o usuário.
+- Quando o VSPackage solicita que o ambiente atualize a interface de usuário atual (UI). Essa atualização ocorre como comandos que estão atualmente visíveis para o usuário, como o agrupamento **Cut**, **Copy**e **Paste** na barra de ferramentas padrão, tornam-se ativados e desativados em resposta às ações de contexto e usuário.
 
-  Uma vez que o shell hospeda vários VSPackages, desempenho do shell seria inaceitavelmente ser prejudicado se ele foi necessária para sondar cada VSPackage para determinar o status do comando. Em vez disso, o VSPackage ativamente deve notificar o ambiente quando sua interface do usuário é alterado no momento da alteração. Para obter mais informações sobre a notificação de atualização, consulte [atualizar a interface do usuário](../../extensibility/updating-the-user-interface.md).
+  Uma vez que o shell hospeda vários VSPackages, o desempenho do shell seria inaceitávelmente degradado se fosse necessário sondar cada VSPackage para determinar o status do comando. Em vez disso, o VSPackage deve notificar ativamente o ambiente quando sua iu muda no momento da alteração. Para obter mais informações sobre a notificação de atualização, consulte [Atualizar a interface do usuário](../../extensibility/updating-the-user-interface.md).
 
-## <a name="status-notification-failure"></a>Falha no status da notificação
- Falha do VSPackage para notificar o ambiente de um comando de alteração de estado pode colocar a interface do usuário em um estado inconsistente. Lembre-se de que qualquer um dos seus comandos de menu de contexto ou menu pode ser colocado em uma barra de ferramentas pelo usuário. Portanto, atualizar a interface do usuário somente quando abre um menu ou menu de contexto não é suficiente.
+## <a name="status-notification-failure"></a>Falha na notificação de status
+ A falha do seu VSPackage em notificar o ambiente de uma alteração de estado de comando pode colocar a ui em um estado inconsistente. Lembre-se que qualquer um dos seus comandos de menu ou menu de contexto pode ser colocado em uma barra de ferramentas pelo usuário. Portanto, atualizar a interface do usuário somente quando um menu ou menu de contexto é aberto não é suficiente.
 
-## <a name="see-also"></a>Consulte também
-- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Confira também
+- [Como o VSPackages adiciona elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementação](../../extensibility/internals/command-implementation.md)

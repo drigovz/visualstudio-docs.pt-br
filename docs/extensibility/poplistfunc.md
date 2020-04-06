@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3125c17ad30eec6c374c38df7d4baa9e299314a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336214"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702069"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-Esse retorno de chamada é fornecido para o [SccPopulateList](../extensibility/sccpopulatelist-function.md) pelo IDE e é usado pelo controle de fonte de plug-in para atualizar uma lista de arquivos ou diretórios (também é fornecido para o `SccPopulateList` função).
+Este retorno de chamada é fornecido ao [SccPopulateList](../extensibility/sccpopulatelist-function.md) pelo IDE e é usado pelo plug-in de controle `SccPopulateList` de origem para atualizar uma lista de arquivos ou diretórios (também fornecidos à função).
 
- Quando um usuário escolhe o **obter** de comando no IDE, o IDE exibirá uma caixa de listagem de todos os arquivos que o usuário pode obter. Infelizmente, o IDE não sabe a lista exata de todos os arquivos que o usuário pode obter; somente o plug-in tem essa lista. Se outros usuários tem adicionado os arquivos para o projeto de controle do código-fonte, esses arquivos devem aparecer na lista, mas o IDE não sabe sobre eles. O IDE compila uma lista dos arquivos que ele achar que o usuário pode obter. Antes de exibir essa lista para o usuário, ele chama o [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` dando o plug-in de controle do código-fonte a oportunidade de adicionar e excluir arquivos na lista.
+ Quando um usuário escolhe o comando **Obter** no IDE, o IDE exibe uma caixa de lista de todos os arquivos que o usuário pode obter. Infelizmente, o IDE não sabe a lista exata de todos os arquivos que o usuário pode obter; apenas o plug-in tem essa lista. Se outros usuários adicionaram arquivos ao projeto de controle de código fonte, esses arquivos devem aparecer na lista, mas o IDE não sabe sobre eles. O IDE constrói uma lista dos arquivos que ele acha que o usuário pode obter. Antes de exibir essa lista para o usuário, ele chama o [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` dando ao plug-in de controle de origem a chance de adicionar e excluir arquivos da lista.
 
 ## <a name="signature"></a>Assinatura
- O plug-in de controle do código-fonte modifica a lista, chamando uma função implementado pelo IDE com o seguinte protótipo:
+ O plug-in de controle de origem modifica a lista chamando uma função implementada pelo IDE com o seguinte protótipo:
 
 ```cpp
 typedef BOOL (*POPLISTFUNC) (
@@ -36,30 +36,30 @@ typedef BOOL (*POPLISTFUNC) (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
- pvCallerData a `pvCallerData` parâmetro é passado pelo chamador (IDE) para o [SccPopulateList](../extensibility/sccpopulatelist-function.md). O plug-in de controle do código-fonte deve presumir nada sobre o conteúdo desse parâmetro.
+## <a name="parameters"></a>parâmetros
+ pvCallerData `pvCallerData` O parâmetro passou pelo chamador (o IDE) para o [SccPopulateList](../extensibility/sccpopulatelist-function.md). O plug-in de controle de origem não deve assumir nada sobre o conteúdo deste parâmetro.
 
- fAddRemove se `TRUE`, `lpFileName` é um arquivo que deve ser adicionado à lista de arquivos. Se `FALSE`, `lpFileName` é um arquivo que deve ser excluído da lista de arquivos.
+ fAddRemove `TRUE`If `lpFileName` é um arquivo que deve ser adicionado à lista de arquivos. Se `FALSE` `lpFileName` , é um arquivo que deve ser excluído da lista de arquivos.
 
- nStatus Status de `lpFileName` (uma combinação da `SCC_STATUS` bits, consulte [código de Status do arquivo](../extensibility/file-status-code-enumerator.md) para obter detalhes).
+ nStatus Status `lpFileName` of (uma `SCC_STATUS` combinação dos bits; consulte [File Status Code](../extensibility/file-status-code-enumerator.md) for details).
 
- caminho completo do diretório de lpFileName do nome do arquivo para adicionar ou excluir da lista.
+ lpFileName Caminho completo do diretório do nome do arquivo para adicionar ou excluir da lista.
 
 ## <a name="return-value"></a>Valor retornado
 
 |Valor|Descrição|
 |-----------|-----------------|
-|`TRUE`|O plug-in pode continuar a chamar essa função.|
-|`FALSE`|Houve um problema no lado do IDE (como uma saída de situação de memória). O plug-in deve interromper a operação.|
+|`TRUE`|O plug-in pode continuar chamando esta função.|
+|`FALSE`|Houve um problema no lado do IDE (como uma situação fora da memória). O plug-in deve parar de funcionar.|
 
 ## <a name="remarks"></a>Comentários
- Para cada arquivo que deseja que o plug-in de controle do código-fonte para adicionar ou excluir da lista de arquivos, ele chama esta função, passando o `lpFileName`. O `fAddRemove` sinalizador indica um novo arquivo a adicionar à lista ou um arquivo antigo a ser excluído. O `nStatus` parâmetro fornece o status do arquivo. Quando o plug-in de SCC for concluída, adicionando e excluindo arquivos, ele retorna dos [SccPopulateList](../extensibility/sccpopulatelist-function.md) chamar.
+ Para cada arquivo que o plug-in de controle de origem deseja adicionar ou excluir `lpFileName`da lista de arquivos, ele chama essa função, passando no . O `fAddRemove` sinalizador indica um novo arquivo para adicionar à lista ou a um arquivo antigo para excluir. O `nStatus` parâmetro dá o status do arquivo. Quando o plug-in SCC terminar de adicionar e excluir arquivos, ele retorna da chamada [SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
 > [!NOTE]
-> O `SCC_CAP_POPULATELIST` bit de recurso é necessário para o Visual Studio.
+> O `SCC_CAP_POPULATELIST` bit de capacidade é necessário para o Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)
-- [Código de status do arquivo](../extensibility/file-status-code-enumerator.md)
+- [Código de status de arquivo](../extensibility/file-status-code-enumerator.md)

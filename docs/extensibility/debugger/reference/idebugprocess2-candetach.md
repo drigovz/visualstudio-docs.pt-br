@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83cb927d86604096eac89da1d0efdf7e64e209be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bfb7b7b586f9c8b86e75d453389525c61a63bc4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724181"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-Determina se o Gerenciador de sessão de depuração (SDM) poderá desanexar o processo.
+Determina se o Gerenciador de depuração de sessão (SDM) pode desvincular o processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,9 +37,9 @@ HRESULT CanDetach(
 int CanDetach();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK.` retorna `S_FALSE` se o depurador não é possível desanexar do processo. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK.` bem-sucedido, retorna retorna se `S_FALSE` o depurador não puder se desvincular do processo. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

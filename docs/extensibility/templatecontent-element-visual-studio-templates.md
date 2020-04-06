@@ -1,5 +1,5 @@
 ---
-title: Elemento TemplateContent (modelos do Visual Studio) | Microsoft Docs
+title: TemplateContent Element (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160008"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699228"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Elemento TemplateContent (modelos do Visual Studio)
 
 Especifica o conteúdo do modelo.
 
-Hierarquia de elemento:
+Hierarquia de elementos:
 
 ```xml
 <VSTemplate>
@@ -46,29 +46,29 @@ Hierarquia de elemento:
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Especifica se deve compilar a solução quando um projeto é criado a partir do modelo.|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Especifica se deve construir a solução quando um projeto é criado a partir do modelo.|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica a organização e o conteúdo de modelos de vários projetos.|
-|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica os arquivos ou diretórios a serem adicionados ao projeto.|
-|[Referências](../extensibility/references-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica as referências de assembly necessárias para um modelo de item.|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica arquivos ou diretórios para adicionar ao projeto.|
+|[Referências](../extensibility/references-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica as referências de montagem necessárias para um modelo de item.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento opcional.<br /><br /> Especifica um arquivo contido no modelo.|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica os parâmetros personalizados que devem ser usados quando um projeto ou item é criado a partir do modelo.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica todos os parâmetros personalizados que devem ser usados quando um projeto ou item é criado a partir do modelo.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit para.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Contém todos os metadados para o modelo do projeto, modelo de item ou kit inicial.|
 
 ## <a name="remarks"></a>Comentários
- `TemplateContent` é um elemento obrigatório.
+ `TemplateContent`é um elemento necessário.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -94,7 +94,7 @@ Hierarquia de elemento:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
