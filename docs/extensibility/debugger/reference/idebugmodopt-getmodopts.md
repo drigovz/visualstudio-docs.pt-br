@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugModOpt::GetModOpts
 - GetModOpts
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5ebced053b80af8dce81d41e6614e89e4ffbf3a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5ab870db3ae3517b60bebd4815e4530f6035b327
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324017"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727057"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 Recupera uma lista de modificadores opcionais.
@@ -42,18 +42,18 @@ int GetModOpts(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `celt`\
-[in] Número de elementos a serem retornados.
+[em] Número de elementos a serem devolvidos.
 
 `rgelt`\
-[out] Retorna uma matriz que contém as opções.
+[fora] Retorna uma matriz que contém as opções.
 
 `pceltFetched`\
-[no, out] Número de elementos retornados no `rgelt` matriz.
+[dentro, fora] Número de elementos `rgelt` retornados na matriz.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

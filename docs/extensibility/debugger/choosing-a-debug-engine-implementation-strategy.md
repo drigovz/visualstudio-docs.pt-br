@@ -5,31 +5,31 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930908b66b5d2234b8c62585b10ddf751c96f61c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739132"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Escolha uma estratégia de implementação do mecanismo de depuração
-Use a arquitetura de tempo de execução para determinar sua estratégia de implementação de (DES) do mecanismo de depuração. Você pode criar o debug mecanismo em processo para o programa que você está depurando. Crie o debug mecanismo em processo para o Gerenciador de depuração de sessão do Visual Studio (SDM). Ou crie a depuração mecanismo fora de processo para os dois. As diretrizes a seguir devem ajudá-lo a escolher entre essas três estratégias.
+Use a arquitetura de tempo de execução para determinar a estratégia de implementação do mecanismo de depuração (DE). Você pode criar o mecanismo de depuração em processo para o programa que você está depurando. Crie o mecanismo de depuração em processo para o Gerenciador de depuração de sessão do Visual Studio (SDM). Ou, criar o motor de depuração fora de processo para ambos. As seguintes diretrizes devem ajudá-lo a escolher entre essas três estratégias.
 
 ## <a name="guidelines"></a>Diretrizes
- Embora seja possível para o DE ser out-of-process para o SDM e o programa que você está depurando, normalmente há nenhum motivo para fazer isso. Chamadas entre limites de processo são relativamente lentas.
+ Embora seja possível que o DE esteja fora de processo tanto para o SDM quanto para o programa que você está depurando, normalmente não há razão para fazê-lo. As chamadas através dos limites do processo são relativamente lentas.
 
- Depurar mecanismos já são fornecidos para o ambiente de tempo de execução nativo do Win32 e para o ambiente de tempo de execução de linguagem comum. Se você precisa substituir o DE para qualquer ambiente, você deve criar o DE processo com o SDM.
+ Os motores de depuração já são fornecidos para o ambiente de tempo de execução nativo Win32 e para o ambiente de tempo de execução comum. Se você tiver que substituir o DE por qualquer ambiente, você deve criar o DE em processo com o SDM.
 
- Caso contrário, você cria o DE em processo para o SDM ou em processo para o programa que você está depurando. Você precisará considerar se o avaliador de expressão de requer acesso frequente para o repositório de símbolos do programa. Ou, se o repositório de símbolos pode ser carregado na memória para acesso rápido. Além disso, considere as seguintes abordagens:
+ Caso contrário, você cria o DE em processo para o SDM ou em processo para o programa que você está depurando. Você precisará considerar se o avaliador de expressão do DE requer acesso frequente à loja de símbolos do programa. Ou, se a loja de símbolos pode ser carregada na memória para acesso rápido. Além disso, considere as seguintes abordagens:
 
-- Se não houver muitas chamadas entre o avaliador de expressão e o repositório de símbolos, ou se o repositório de símbolos pode ser lidos no espaço de memória do SDM, crie o DE em processo para o SDM. Você deve retornar o CLSID do mecanismo de depuração para o SDM quando ele se conecta ao seu programa. O SDM usa este CLSID para criar uma instância no processo de.
+- Se não houver muitas chamadas entre o avaliador de expressão e o armazenamento de símbolos, ou se o armazenamento de símbolos puder ser lido no espaço de memória SDM, crie o DE em processo para o SDM. Você deve devolver o CLSID do mecanismo de depuração ao SDM quando ele se conectar ao seu programa. O SDM usa este CLSID para criar uma instância em processo do DE.
 
-- Se o DE deve chamar o programa para acessar o repositório de símbolos, crie o DE processo com o programa. Nesse caso, o programa cria a instância do DE.
+- Se o DE deve chamar o programa para acessar a loja de símbolos, crie o DE em processo com o programa. Neste caso, o programa cria a instância do DE.
 
-## <a name="see-also"></a>Consulte também
-- [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+## <a name="see-also"></a>Confira também
+- [Extensibilidade do depurador visual studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

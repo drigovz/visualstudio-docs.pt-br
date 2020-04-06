@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c500c6a54cc63dbcb8c7c6ad23c92d2105b9842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735397"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Essa interface informa o Gerenciador de sessão de depuração (SDM) que a interrupção assíncrona foi concluída com êxito.
+Esta interface informa ao Gerenciador de Depuração de Sessão (SDM) que uma quebra assíncrona foi concluída com sucesso.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,23 +28,23 @@ Essa interface informa o Gerenciador de sessão de depuração (SDM) que a inter
 IDebugBreakEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface para dar suporte a quebras de usuário em um programa. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface).
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa essa interface para suportar pausas de usuário em um programa. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface (o SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface).
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- As chamadas SDM [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando o usuário solicitou o programa que está sendo depurado para ser pausado. Quando o programa foi pausado com êxito, o DE envia o `IDebugBreakEvent2` eventos. Esse evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O SDM chama [causebreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando o usuário solicitou que o programa que está sendo depurado seja pausado. Quando o programa foi pausado com `IDebugBreakEvent2` sucesso, o DE envia o evento. Este evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, um usuário pode selecionar o **interromper tudo** comando as **depurar** menu Sair de um programa que está executando um loop infinito. O SDM informa o programa parar, chamando [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). O envia DE `IDebugBreakEvent2` quando o programa é interrompido por último.
+ Por exemplo, um usuário pode selecionar o comando **Break All** no menu **Debug** para sair de um programa que está executando um loop infinito. O SDM diz ao programa para parar chamando [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). O DE `IDebugBreakEvent2` envia quando o programa finalmente pára.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

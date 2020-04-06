@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319125"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738032"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-Descreve o local de um ponto de interrupção em um endereço no código.
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
+Descreve a localização de um ponto de ruptura em um endereço em código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Membros
 `bstrContext`\
-O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.
+O contexto do ponto de ruptura, tipicamente um método ou nome de função como visto em uma pilha de chamadas.
 
 `bstrModuleUrl`\
-A URL do módulo que contém o ponto de interrupção.
+A URL do módulo que contém o ponto de ruptura.
 
 `bstrFunction`\
-O nome da função que contém o ponto de interrupção.
+O nome da função que contém o ponto de ruptura.
 
 `bstrAddress`\
-O endereço do ponto de interrupção, que é analisada por um avaliador de expressão para associá-lo para um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
+O endereço do ponto de ruptura, que é analisado por um avaliador de expressão para vinculá-lo a um objeto [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.
+Essa estrutura é membro da estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de um sindicato.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350748"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734426"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtém o nome do indexador padrão.
@@ -39,14 +39,14 @@ int GetDefaultIndexer(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
-`pbstrIndexer` [out] Retorna uma cadeia de caracteres que contém o nome do indexador padrão.
+## <a name="parameters"></a>parâmetros
+`pbstrIndexer`[fora] Retorna uma seqüência contendo o nome do indexador padrão.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum indexador padrão. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retorna S_OK ou retorna S_FALSE se não houver indexador padrão. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O indexador padrão de uma classe é a propriedade que está marcada como o `Default` propriedade para acessos de matriz. Isso é específico para [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Aqui está um exemplo de um indexador padrão declarado no [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] e como ele é usado.
+ O indexador padrão de uma classe é `Default` a propriedade marcada como a propriedade para acessos de matriz. Isso é [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]específico para. Aqui está um exemplo de um [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] indexador padrão declarado e como ele é usado.
 
 ```vb
 Imports System.Collections;
@@ -78,5 +78,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

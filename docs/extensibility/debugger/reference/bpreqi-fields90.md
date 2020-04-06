@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350539"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737736"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Enumera os valores válidos que especificam as informações a serem recuperados sobre uma solicitação de ponto de interrupção. Esta enumeração estende o [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração.
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
+Enumera os valores válidos que especificam as informações a serem recuperadas sobre uma solicitação de ponto de ruptura. Essa enumeração estende a [enumeração BPREQI_FIELDS.](../../../extensibility/debugger/reference/bpreqi-fields.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,56 +78,56 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>Campos
 `BPREQI90_BPLOCATION`\
-Inicializar ou usar o `bpLocation` campo (localização do ponto de interrupção) a [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura.
+Inicialize ou `bpLocation` use o campo (localização de ponto de ruptura) da estrutura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 `BPREQI90_LANGUAGE`\
-Inicializar ou usar o `guidLanguage` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `guidLanguage` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_PROGRAM`\
-Inicializar ou usar o `pProgram` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `pProgram` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_PROGRAMNAME`\
-Inicializar ou usar o `bstrProgramName` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bstrProgramName` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_THREAD`\
-Inicializar ou usar o `pThread` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `pThread` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_THREADNAME`\
-Inicializar ou usar o `bstrThreadName` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bstrThreadName` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_PASSCOUNT`\
-Inicializar ou usar o `bpPassCount` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bpPassCount` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_CONDITION`\
-Inicializar ou usar o `bpCondition` campo (condição de ponto de interrupção) da `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bpCondition` use o campo (condição `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de ponto de ruptura) da ou estrutura.
 
 `BPREQI90_FLAGS`\
-Inicializar ou usar o `dwFlags` campo do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `dwFlags` use o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` campo da ou estrutura.
 
 `BPREQI90_ALLOLDFIELDS`\
-Inicializar ou usar todos os campos para o do `BP_REQUEST_INFO` estrutura.
+Inicialize ou use todos os `BP_REQUEST_INFO` campos para a estrutura.
 
 `BPREQI90_VENDOR`\
-Inicializar ou usar o `guidVendor` campo de `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `guidVendor` use `BP_REQUEST_INFO2` o campo de estrutura.
 
 `BPREQI90_CONSTRAINT`\
-Inicializar ou usar o `bstrConstraint` campo de `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bstrConstraint` use `BP_REQUEST_INFO2` o campo de estrutura.
 
 `BPREQI90_TRACEPOINT`\
-Inicializar ou usar o `bstrTracepoint` campo de `BP_REQUEST_INFO2` estrutura.
+Inicialize ou `bstrTracepoint` use `BP_REQUEST_INFO2` o campo de estrutura.
 
 `BPREQI90_MACROTRACEPOINT`\
-Inicializar ou usar o `bstrMacroTracepoint` campo de `BP_REQUEST_INFO2` estrutura. BPREQI_ALLFIELDS não incluir esse campo.
+Inicialize ou `bstrMacroTracepoint` use `BP_REQUEST_INFO2` o campo de estrutura. BPREQI_ALLFIELDS não inclui este campo.
 
 `BPREQI90_ALLFIELDS`\
-Especifica todos os campos para o `BP_REQUEST_INFO2` estrutura.
+Especifica todos os `BP_REQUEST_INFO2` campos para a estrutura.
 
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: Msdbg90.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

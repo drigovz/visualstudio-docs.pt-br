@@ -6,23 +6,23 @@ helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 018557732727c9a4e6669a983ec54fec83263ff5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338589"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729161"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-Interrompe e limpa o avaliador de expressão.
+Pára e limpa o avaliador de expressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,14 +36,14 @@ HRESULT Terminate (
 int Terminate ();
 ```
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Informa o avaliador de expressão quando ele estiver sendo limpo.
+Diz ao avaliador de expressão quando está sendo limpo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **ExpressionEvaluatorPackage** objeto que expõe a [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **ExpressionEvaluatorPackage** que expõe a interface [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
@@ -59,5 +59,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

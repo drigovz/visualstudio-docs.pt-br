@@ -1,30 +1,30 @@
 ---
-title: Campo asyncvoidmethodbuilder. M_objectidfordebugger | Microsoft Docs
+title: Campo AsyncVoidMethodBuilder.m_objectIdForDebugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e744b766a32232470e6d79b1cf8bfba08e1636c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739319"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo asyncvoidmethodbuilder. M_objectidfordebugger
-Representa o objeto de inicialização ociosa usado pelo depurador para identificar exclusivamente esse construtor.
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>Campo AsyncVoidMethodBuilder.m_objectIdForDebugger
+Representa o objeto preguiçosamente inicializado usado pelo depurador para identificar exclusivamente este construtor.
 
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Espaço de nome:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assembly:** mscorlib (em mscorlib. dll)
+ **Montagem:** mscorlib (in mscorlib.dll)
 
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).
+ Como você não pode acessar este membro interno do Quadro .NET, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,6 +32,6 @@ Representa o objeto de inicialização ociosa usado pelo depurador para identifi
 .field private object m_objectIdForDebugger
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Elementos internos de extensões paralelas para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internos de extensão paralelas para o Quadro .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

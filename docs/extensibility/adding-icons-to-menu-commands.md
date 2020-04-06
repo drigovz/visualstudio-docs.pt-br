@@ -1,5 +1,5 @@
 ---
-title: Adicionando ícones a comandos de Menu | Microsoft Docs
+title: Adicionando ícones aos comandos do menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,44 +7,44 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4b71f981472451766f526cf62e975e571cf46da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352371"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740158"
 ---
-# <a name="add-icons-to-menu-commands"></a>Adicionar ícones a comandos de menu
-Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferramentas, é comum para um comando a ser exibido com apenas um ícone (para economizar espaço) ao mesmo tempo nos menus de que um comando normalmente aparece com um ícone e o texto.
+# <a name="add-icons-to-menu-commands"></a>Adicionar ícones aos comandos do menu
+Os comandos podem aparecer em menus e barras de ferramentas. Nas barras de ferramentas, é comum que um comando seja exibido com apenas um ícone (para economizar espaço) enquanto nos menus um comando normalmente aparece com um ícone e um texto.
 
- Ícones são 16 pixels de largura por 16 pixels de altura e podem ser a intensidade de cor de 8 bits (256 cores) ou a profundidade de cor de 32 bits (cor true). ícones de cores de 32 bits são preferidos. Ícones normalmente são organizados em uma única linha horizontal em um único bitmap, embora vários bitmaps são permitidos. Esse bitmap é declarado na *VSCT* arquivo juntamente com os ícones individuais disponíveis no bitmap. Consulte a referência para o [elemento Bitmaps](../extensibility/bitmaps-element.md) para obter mais detalhes.
+ Os ícones têm 16 pixels de largura por 16 pixels de altura e podem ser de 8 bits de profundidade de cor (256 cores) ou profundidade de cor de 32 bits (cor verdadeira). Ícones de cores de 32 bits são preferidos. Os ícones são tipicamente organizados em uma única linha horizontal em um único bitmap, embora vários bitmaps sejam permitidos. Este bitmap é declarado no arquivo *.vsct* juntamente com os ícones individuais disponíveis no bitmap. Consulte a referência para o [elemento Bitmaps](../extensibility/bitmaps-element.md) para obter mais detalhes.
 
-## <a name="add-an-icon-to-a-command"></a>Adicionar um ícone para um comando
- O procedimento a seguir pressupõe que você tenha um projeto de VSPackage existente com um comando de menu. Para saber como fazer isso, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+## <a name="add-an-icon-to-a-command"></a>Adicione um ícone a um comando
+ O procedimento a seguir pressupõe que você tenha um projeto VSPackage existente com um comando menu. Para saber como fazer isso, consulte [Criar uma extensão com um comando menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-1. Crie um bitmap com uma profundidade de cor de 32 bits. Um ícone é sempre um múltiplo de 16 pixels de largura e de 16 x 16 para que este bitmap deve ser 16 pixels de altura.
+1. Crie um bitmap com uma profundidade de cor de 32 bits. Um ícone é sempre 16 x 16, então este bitmap deve ter 16 pixels de altura e um múltiplo de 16 pixels de largura.
 
-     Cada ícone é colocado no bitmap próximos uns dos outros em uma única linha. Use o canal alfa para indicar casas de transparência em cada ícone.
+     Cada ícone é colocado no bitmap um ao lado do outro em uma única linha. Use o canal alfa para indicar locais de transparência em cada ícone.
 
-     Se você usar uma profundidade de cor de 8 bits, use o magenta, `RGB(255,0,255)`, como a transparência. No entanto, os ícones de cores de 32 bits são preferidos.
+     Se você usar uma profundidade de cor de `RGB(255,0,255)`8 bits, use magenta, como transparência. No entanto, os ícones de cores de 32 bits são preferidos.
 
-2. Copie o arquivo de ícone para o *recursos* diretório em seu projeto de VSPackage. No **Gerenciador de soluções**, adicionar o ícone para o projeto. (Selecione **recursos**e no menu de contexto, clique em **Add**, em seguida, **Item existente**e selecione o arquivo de ícone.)
+2. Copie o arquivo de ícone sicompara o diretório *Recursos* em seu projeto VSPackage. No **Solution Explorer,** adicione o ícone ao projeto. (Selecione **Recursos**e, no menu de contexto, clique em **Adicionar,** em seguida, **Item existente**e selecione seu arquivo de ícone.)
 
-3. Abra o *VSCT* arquivo no editor.
+3. Abra o arquivo *.vsct* no editor.
 
-4. Adicionar um `GuidSymbol` elemento com um nome de **testIcon**. Criar um GUID (**ferramentas** > **criar GUID**, em seguida, selecione **formato de registro** e clique em **cópia**) e cole-o `value` atributo. O resultado deve ter esta aparência:
+4. Adicione `GuidSymbol` um elemento com um nome de **testIcon**. Crie um GUID **(Ferramentas** > **Criar GUID,** selecione **Formato de Registro** e clique em **Copiar)** e cole-o no atributo. `value` O resultado deve ser assim:
 
     ```xml
     <!-- Create your own GUID -->
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">
     ```
 
-5. Adicionar um `<IDSymbol>` para o ícone. O `name` atributo é a ID do ícone e o `value` indica sua posição na fita, se houver. Se houver apenas um ícone, adicione 1. O resultado deve ter esta aparência:
+5. Adicione `<IDSymbol>` um para o ícone. O `name` atributo é o ID `value` do ícone, e indica sua posição na tira, se houver. Se houver apenas um ícone, adicione 1. O resultado deve ser assim:
 
     ```xml
     <!-- Create your own GUID -->
@@ -53,21 +53,21 @@ Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferrament
     </GuidSymbol>
     ```
 
-6. Criar uma `<Bitmap>` no `<Bitmaps>` seção o *. VSCT* arquivo para representar o bitmap que contém os ícones.
+6. Crie `<Bitmap>` um `<Bitmaps>` na seção do arquivo *.vsct* para representar o bitmap que contém os ícones.
 
-    - Defina as `guid` valor para o nome da `<GuidSymbol>` elemento que você criou na etapa anterior.
+    - Defina `guid` o valor para `<GuidSymbol>` o nome do elemento que você criou na etapa anterior.
 
-    - Defina as `href` valor para o caminho relativo do arquivo de bitmap (nesse caso **recursos\\< nome do arquivo de ícone\>** .
+    - Defina `href` o valor para o caminho relativo do arquivo bitmap (neste **caso, recursos\\<nome\>do arquivo de ícone**.
 
-    - Defina o `usedList` valor para o IDSymbol que você criou anteriormente. Esse atributo especifica uma lista delimitada por vírgulas dos ícones para ser usado em um VSPackage. Ícones não está na lista são excluídos do formulário de compilação.
+    - Defina `usedList` o valor para o IDSymbol que você criou anteriormente. Este atributo especifica uma lista delimitada de vírgulas dos ícones a serem usados no VSPackage. Os ícones que não estão na lista são excluídos da compilação de formulários.
 
-         O bloco de Bitmap deve ter esta aparência:
+         O bloco Bitmap deve ficar assim:
 
         ```xml
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>
         ```
 
-7. Existentes `<Button>` elemento, defina o `Icon` elemento com os valores de GUIDSymbol e IDSymbol que você criou anteriormente. Aqui está um exemplo de um elemento de botão com esses valores:
+7. No elemento `<Button>` existente, defina o `Icon` elemento para os valores GUIDSymbol e IDSymbol que você criou anteriormente. Aqui está um exemplo de um elemento Button com esses valores:
 
     ```xml
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,8 +79,8 @@ Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferrament
     </Button>
     ```
 
-8. Teste seu ícone. Compile o projeto e comece a depuração. Na instância experimental, encontre o comando. Ele deve mostrar o ícone que você adicionou.
+8. Teste seu ícone. Compile o projeto e comece a depuração. No caso experimental, encontre o comando. Ele deve mostrar o ícone que você adicionou.
 
-## <a name="see-also"></a>Consulte também
-- [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)
-- [Referência de esquema XML do VSCT](../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Confira também
+- [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)
+- [Referência de esquema VSCT XML](../extensibility/vsct-xml-schema-reference.md)

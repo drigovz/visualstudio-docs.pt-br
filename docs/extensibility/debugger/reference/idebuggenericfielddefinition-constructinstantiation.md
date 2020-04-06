@@ -6,23 +6,23 @@ helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f7ecfc79cc2a4279a8ca0fccfc527ef63e603b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313207"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728257"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Constrói uma instância do campo considerando uma matriz de argumentos de tipo.
+Constrói uma instância de campo dada uma matriz de argumentos de tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ int ConstructInstantiation(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `cArgs`\
-[in] Número de argumentos no `ppArgs` matriz.
+[em] Número de argumentos `ppArgs` na matriz.
 
 `ppArgs`\
-[in] Matriz que contém os argumentos de tipo. Os argumentos de tipo devem ser tipos fechados (genéricos não genéricas ou totalmente instanciados).
+[em] Matriz que contém os argumentos do tipo. Os argumentos do tipo devem ser tipos fechados (genéricos não genéricos ou totalmente instanciados).
 
 `ppConstructedField`\
-[out] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface que representa o novo campo.
+[fora] Retorna a interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o novo campo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  As restrições não são verificadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

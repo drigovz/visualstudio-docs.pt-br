@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331654"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725568"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Obtém o objeto apontado.
+Aponta o objeto para.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int Dereference(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dwIndex`\
-[in] Um deslocamento de byte simples desde o início do objeto apontado.
+[em] Um simples byte offset desde o início do objeto apontou para.
 
 `ppObject`\
-[out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) do objeto que representa o objeto apontado, e o deslocamento, se houver.
+[fora] Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando o objeto apontado para, mais deslocamento, se houver.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro. Retornará E_FAIL se este objeto não apontar para outro objeto.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro. Retorna E_FAIL se este objeto não apontar para outro objeto.
 
 ## <a name="remarks"></a>Comentários
- O objeto apontado pode ser um primitivo ou um tipo mais complexo, como uma classe ou estrutura.
+ O objeto apontado pode ser um tipo primitivo ou mais complexo, como uma classe ou estrutura.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveSetException
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45c3cec5ab0511ea80a6b04d9b3ee575afd9d149
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730927"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
-Remove a exceção especificada, para que ele não é tratado pelo mecanismo de depuração.
+Remove a exceção especificada para que não seja mais manuseada pelo motor de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ int RemoveSetException( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pException`\
-[in] Uma [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura que descreve a exceção a ser removido.
+[em] Uma estrutura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) que descreve a exceção a ser removida.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A exceção que está sendo removida deve ter sido anteriormente definida por uma chamada anterior para o [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) método.
+ A exceção a ser removida deve ter sido previamente definida por uma chamada anterior para o método [SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 
- Para remover todas as exceções do conjunto ao mesmo tempo, chame o [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) método.
+ Para remover todas as exceções definidas de uma só vez, chame o método [RemoveAllSetExceptions.](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

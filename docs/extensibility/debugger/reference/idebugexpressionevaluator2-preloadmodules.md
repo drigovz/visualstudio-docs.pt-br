@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46df8c3d50a08098ca75e7b115a931ad7580a91b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325504"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729323"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Pré-carrega os módulos designados pelo provedor do símbolo especificado.
+Pré-carrega os módulos designados pelo provedor de símbolos especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,18 +38,18 @@ int PreloadModules (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pSym`\
-[in] Provedor de símbolos para o qual os módulos serão pré-carregadas.
+[em] Provedor de símbolos para o qual os módulos serão pré-carregados.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Esse método opcional é usado quando você fizer uma anexação de processo de hospedagem. Ele dá o EE uma chance para 'aquecimento' como parte do attach.
+Este método opcional é usado quando você faz uma anexação de processo de hospedagem. Dá ao EE a chance de 'aquecer' como parte do anexo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **ExpressionEvaluatorPackage** objeto que expõe a [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **ExpressionEvaluatorPackage** que expõe a interface [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules
@@ -77,5 +77,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

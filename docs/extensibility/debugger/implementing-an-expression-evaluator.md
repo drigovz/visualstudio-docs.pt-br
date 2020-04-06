@@ -1,36 +1,36 @@
 ---
-title: Implementando um avaliador de expressão | Microsoft Docs
+title: Implementando um Avaliador de Expressão | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1a0cb78036982923d20e39a3a4c32b288e459
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326204"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738547"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementar um avaliador de expressão
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Avaliar uma expressão é uma interação complexa entre o mecanismo de depuração (DE), o provedor de símbolo (SP), o objeto de associador e o avaliador de expressão (EE). Estes quatro componentes é conectado por interfaces que são implementados por um componente e consumidos por outro.
+ Avaliar uma expressão é uma interação complexa entre o mecanismo de depuração (DE), o provedor de símbolos (SP), o objeto de aglutinante e o avaliador de expressão (EE). Esses quatro componentes são conectados por interfaces que são implementadas por um componente e consumidas por outro.
 
- O EE usa uma expressão de na forma de uma cadeia de caracteres e analisa ou avalia a ele. O EE executa as seguintes interfaces são consumidas por um DE:
+ O EE toma uma expressão do DE na forma de uma seqüência e analisa ou avalia-a. O EE executa as seguintes interfaces, que são consumidas pelo DE:
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-  O EE chama o objeto de fichário, fornecido pelo DE, para obter o valor de símbolos e objetos. O EE consome as seguintes interfaces são implementadas por um DE:
+  O EE chama o objeto de encadernação, fornecido pelo DE, para obter o valor de símbolos e objetos. O EE consome as seguintes interfaces, que são implementadas pelo DE:
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
@@ -46,9 +46,9 @@ ms.locfileid: "66326204"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Executa o EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que, em seguida, exibe as informações apropriadas na **Locals**, **Watch** , ou **imediato** janela.
+  O EE executa [o IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2`fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que exibe as informações apropriadas na janela **Locals**, **Watch**ou **Immediate.**
 
-  O SP é fornecido para o EE DE quando ele solicita informações. O SP será executado a interfaces que descrevem endereços e campos, como as interfaces a seguir e seus derivados:
+  O SP é entregue ao EE pelo DE quando pede informações. A SP executa interfaces que descrevem endereços e campos, como as seguintes interfaces e seus derivados:
 
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "66326204"
   O EE consome todas essas interfaces.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Estratégia de implementação do avaliador de expressão](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) define um processo de três etapas para a estratégia de implementação de (EE) do avaliador de expressão.
+ [Estratégia de implementação do avaliador de expressão](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Define um processo de três etapas para a estratégia de implementação do avaliador de expressão (EE).
 
-## <a name="see-also"></a>Consulte também
-- [Escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Confira também
+- [Escrevendo um avaliador de expressão CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

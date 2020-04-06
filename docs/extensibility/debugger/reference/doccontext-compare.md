@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737236"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-Especifica os critérios para comparar dois contextos de documento.
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
+Especifica os critérios para comparar dois contextos de documentos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,29 +48,29 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>Campos
 `DOCCONTEXT_EQUAL`\
-Localize o contexto do documento primeiro na lista que é igual para o contexto do documento de destino.
+Encontre o primeiro contexto de documento na lista que seja igual ao contexto do documento-alvo.
 
 `DOCCONTEXT_LESS_THAN`\
-Localize o contexto do documento primeiro na lista que é menor que o contexto do documento de destino.
+Encontre o primeiro contexto de documento na lista que seja menor que o contexto do documento-alvo.
 
 `DOCCONTEXT_GREATER_THAN`\
-Localize o contexto do documento primeiro na lista que é maior que o contexto do documento de destino.
+Encontre o primeiro contexto de documento na lista que é maior do que o contexto do documento-alvo.
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-Localize o contexto do documento primeiro na lista que está no mesmo documento que o contexto do documento de destino.
+Encontre o primeiro contexto de documento na lista que está no mesmo documento do contexto do documento-alvo.
 
 ## <a name="remarks"></a>Comentários
-Passado como um argumento para o [comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) método.
+Passou como um argumento para o método [Compare.](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
 
-Esses valores são usados para especificar um critério de comparação para localizar o contexto do documento primeiro em uma lista. Um contexto de documento é dada uma lista de contextos de documento para comparar a próprio em relação a por meio de `IDebugDocumentContext2::Compare` método. O contexto do documento primeiro na lista para o qual o operador de comparação é `true` , em seguida, será retornado.
+Esses valores são usados para especificar um critério de comparação para encontrar o primeiro contexto do documento em uma lista. Um contexto de documento recebe uma lista de contextos documentais para se comparar através do `IDebugDocumentContext2::Compare` método. O primeiro contexto de documento na lista `true` para a qual o operador de comparação é então devolvido.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [Comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

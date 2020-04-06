@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e335a9461917077439fc7dfe49e8c061891a9cd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352674"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728914"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
-Esse método obtém o contêiner de um campo.
+Este método obtém o recipiente de um campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ int GetContainer(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppContainerField`\
-[out] Retorna o contêiner, conforme representado pela [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface.
+[fora] Retorna o contêiner como representado pela interface [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se esse campo não tem um contêiner, retornado `ppContainerField` será um valor nulo.
+ Se este campo não tiver um `ppContainerField` contêiner, o devolvido será um valor nulo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

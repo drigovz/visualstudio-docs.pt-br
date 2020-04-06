@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728865"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Esse método obtém informações estendido sobre um campo.
+Este método obtém informações estendidas sobre um campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,26 +43,26 @@ int GetExtendedInfo(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidExtendedInfo`\
-[in] Seleciona as informações a serem retornados. Os valores válidos são:
+[em] Seleciona as informações a serem devolvidas. Os valores válidos são:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|`guidConstantValue`|O valor como uma sequência de bytes.|
+|`guidConstantValue`|O valor como uma seqüência de bytes.|
 |`guidConstantType`|O tipo como uma assinatura de tipo.|
 
 `prgBuffer`\
-[out] Retorna as informações estendidas.
+[fora] Retorna as informações estendidas.
 
 `pdwLen`\
-[no, out] Retorna o tamanho das informações estendidas, em bytes.
+[dentro, fora] Retorna o tamanho das informações estendidas, em bytes.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Atualmente, esse método retorna apenas o tipo ou valor de uma constante. O chamador deve liberar o buffer retornado no `prgBuffer` chamando do COM `CoTaskMemFree` função (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).
+ Atualmente, este método retorna apenas o tipo ou valor de uma constante. O chamador deve liberar `prgBuffer` o buffer retornado ligando para a função do `CoTaskMemFree` COM (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

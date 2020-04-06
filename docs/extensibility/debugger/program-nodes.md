@@ -1,5 +1,5 @@
 ---
-title: Nós de programa | Microsoft Docs
+title: Nódulos do programa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 084a386cc7d7f9c6d606e7015e593a4075ba53a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351435"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738222"
 ---
-# <a name="program-nodes"></a>Nós de programa
-Na arquitetura do depurador, uma *nó do programa*:
+# <a name="program-nodes"></a>Nódulos do programa
+Na arquitetura dedepurador, um *nó de programa*:
 
-- É uma descrição simples de um programa.
+- É uma descrição leve de um programa.
 
-- Pode identificar em si e o processo que está executando no. Um nó de programa pode ser anexado para ser desanexado do e descrever o mecanismo de depuração (DES) que criou, se houver.
+- Pode identificar-se e o processo em que está sendo executado. Um nó de programa pode ser anexado, ser separado e descrever o mecanismo de depuração (DE) que o criou, se houver.
 
-- É representado por um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface, geralmente criado por uma porta ou DE. Nós de programa são adicionados a uma porta chamando [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando um nó do programa é adicionado a uma porta, ele é adicionado ao processo que contém o programa que representa este nó do programa.
+- É representado por uma interface [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) normalmente criada por um DE ou porto. Os nós do programa são adicionados a uma porta [chamando-o de AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando um nó de programa é adicionado a uma porta, ele é adicionado ao processo que contém o programa que este nó de programa representa.
 
-  Em algum momento depois que uma sessão de depuração é iniciada, dependendo da implementação do pacote de depuração, nós de programa são usados para criar programas correspondentes. Quando um processo é consultado para seus programas, os programas são enumerados, uma para cada nó do programa.
+  Algum tempo após o início de uma sessão de depuração, dependendo da implementação do pacote de depuração, os nós do programa são usados para criar programas correspondentes. Quando um processo é questionado para seus programas, os programas são enumerados, um para cada nó do programa.
 
-  Antes de um programa estiver anexado a, o IDE precisa de apenas uma descrição simples do programa. Essas informações podem ser obtidas a partir do nó do programa. Depois que o programa é anexado ao, o IDE exibirá informações mais detalhadas, como uma lista de todos os threads em execução no programa. Essas informações são obtidas do programa em si.
+  Antes de um programa ser anexado, o IDE precisa apenas de uma descrição leve do programa. Essas informações podem ser obtidas do nó do programa. Uma vez que o programa é anexado, o IDE exibe informações mais detalhadas, como uma lista de todos os segmentos em execução no programa. Essas informações são obtidas do próprio programa.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Programas](../../extensibility/debugger/programs.md)
 - [Processos](../../extensibility/debugger/processes.md)
-- [Mecanismo de depuração](../../extensibility/debugger/debug-engine.md)
-- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Motor de depuração](../../extensibility/debugger/debug-engine.md)
+- [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

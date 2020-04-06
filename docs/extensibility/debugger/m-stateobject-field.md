@@ -1,30 +1,30 @@
 ---
-title: m_stateObject Field | Microsoft Docs
+title: campo m_stateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95947a1367ea1ddf4aa88689f731971d5c7d0a6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330840"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738379"
 ---
-# <a name="mstateobject-field"></a>m_stateObject field
-Um objeto que representa os dados que usará a ação.
+# <a name="m_stateobject-field"></a>m_stateObject campo
+Um objeto que representa dados que a ação usará.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (em *mscorlib. dll*)
+ **Montagem:** mscorlib (in *mscorlib.dll*)
 
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).
+ Como você não pode acessar este membro interno do .NET Framework, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +33,7 @@ Um objeto que representa os dados que usará a ação.
 ```
 
 ## <a name="remarks"></a>Comentários
- Esse é o `state` parâmetro no <xref:System.Threading.Tasks.Task.%23ctor%2A> construtor. Também é o campo de suporte para o <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> propriedade.
+ Este é `state` o parâmetro <xref:System.Threading.Tasks.Task.%23ctor%2A> na construtora. É também o campo <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> de apoio para a propriedade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

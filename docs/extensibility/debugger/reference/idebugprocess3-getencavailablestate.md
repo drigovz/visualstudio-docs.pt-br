@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetENCAvailableState
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99ec4ff53fe9baad2c3a36f252c652f37822ba83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313951"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723648"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Esse método obtém o estado atual de editar e continuar do processo. Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
+Este método obtém o estado atual de Editar e Continuar do processo. Um fornecedor de porto personalizado deve sempre retornar `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ int GetENCAvailableState(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pReason`\
-[out] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
+[fora] Um valor da [enumeração EncUnavailableReason.](../../../extensibility/debugger/reference/encunavailablereason.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
 > [!NOTE]
-> Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
+> Um fornecedor de porto personalizado deve sempre retornar `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Comentários
- Esse estado pode ser afetado pelas [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
+ Este estado pode ser afetado por [DisablENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)
