@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169385"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880228"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como configurar o criador de perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio
 
@@ -22,7 +22,7 @@ Você pode usar o adaptador de dados de diagnóstico do criador de perfil do ASP
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Esse adaptador de dados de diagnóstico não pode ser usado para testes que são executados usando o Microsoft Test Manager. Você pode usar o adaptador de diagnóstico do Criador de Perfil do ASP.NET com testes de carga usando sites que exigem apenas o Visual Studio Enterprise.
+> Este adaptador de dados de diagnóstico não pode ser usado para testes que são executados usando o Microsoft Test Manager (preterido no Visual Studio 2017). Você pode usar o adaptador de diagnóstico do Criador de Perfil do ASP.NET com testes de carga usando sites que exigem apenas o Visual Studio Enterprise.
 
 O adaptador de dados de diagnóstico do criador de perfil do ASP.NET permite coletar dados do criador de perfil do ASP.NET da camada de aplicativo quando você executa um teste de carga. Você não deve executar o criador de perfis para testes de carga longos, por exemplo, que durem mais de uma hora. Isso porque o arquivo do criador de perfis pode ficar grande, talvez com centenas de megabytes. Em vez disso, execute testes de carga mais curtos usando o criador de perfil do ASP.NET, o que ainda lhe proporcionará o benefício de diagnosticar detalhadamente os problemas de desempenho.
 

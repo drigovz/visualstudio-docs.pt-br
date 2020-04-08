@@ -5,18 +5,18 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/02/2020
+ms.date: 04/07/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 84c9ec08ffff8ede6465d43e799d2f257a076e5b
-ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
+ms.openlocfilehash: 130903670a9128ceeef5b2b016ccd1d75338b4fc
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80620662"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880202"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -28,6 +28,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.3 | Versão | 7 de abril de 2020 | 16.5.30002.166 |
 | 16.6.0 | Preview 2.1 | 2 de abril de 2020 | 16.6.30001.183 |
 | 16.5.2 | Versão | 31 de março de 2020 | 16.5.29926.136 |
 | 16.6.0 | Preview 2 | 26 de março de 2020 | 16.6.29924.181 |

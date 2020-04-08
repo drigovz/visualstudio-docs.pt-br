@@ -9,16 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566820"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880124"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Use os Azure Test Plans, em vez do Lab Management, para executar os testes automatizados
 
 Se você usa o Microsoft Test Manager e o Lab Management para testes automatizados ou para a automação das ações de compilar-implantar-testar, este tópico explica como você pode obter as mesmas metas usando os recursos de [build e versão](/azure/devops/pipelines/index?view=vsts) no Azure Pipelines e no TFS (Team Foundation Server).
+
+> [!NOTE]
+> O Microsoft Test Manager é preterido no Visual Studio 2017 e removido no Visual Studio 2019.
 
 ## <a name="build-deploy-test-automation"></a>Automação de compilar-implantar-testar
 

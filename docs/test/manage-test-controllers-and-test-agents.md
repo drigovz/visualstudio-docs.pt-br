@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584407"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880189"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -20,7 +20,9 @@ Se quiser usar o Visual Studio para executar testes remotamente, distribuir test
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Se você usa o Microsoft Test Manager para executar testes em ambientes de laboratório, você gerencia controladores de teste e seus agentes usando o **Gerenciador do Controlador de Teste** na **Central do Laboratório** para o Microsoft Test Manager. Este tópico só será aplicável se você usar o Visual Studio para executar testes.
+::: moniker-end
 
 Para obter informações sobre como instalar e configurar agentes de teste e controladores de teste para executar testes no Visual Studio, consulte [Configurar agentes e controladores de teste](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -90,25 +92,36 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
 
 Um agente de teste deve ser definido para o estado offline antes de ser removido.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Você não pode usar este procedimento para remover agentes registrados em um controlador como parte de um ambiente de laboratório. Para remover esses agentes de um controlador, você precisa remover o ambiente usando o Microsoft Test Manager.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Você não pode usar este procedimento para remover agentes registrados em um controlador como parte de um ambiente de laboratório.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Para excluir um agente de teste de um controlador de teste
 
-1. Se o controlador de teste não estiver registrado em um projeto, siga estas etapas.
+::: moniker range=">=vs-2019"
+No Visual Studio 2019, você não pode remover um agente de teste se o controlador de teste estiver registrado em um projeto.
+::: moniker-end
+Se o controlador de teste não estiver registrado em um projeto, siga estas etapas.
 
-    1. No Visual Studio, abra o arquivo de configurações de teste do seu projeto de teste, selecione **Função**, em seguida, **Gerenciar Controladores de Teste** no menu suspenso do campo **Controlador**.
+1. No Visual Studio, abra o arquivo de configurações de teste do seu projeto de teste, selecione **Função**, em seguida, **Gerenciar Controladores de Teste** no menu suspenso do campo **Controlador**.
 
-         A caixa de diálogo **Administrar Controlador de Teste** é exibida.
+   A caixa de diálogo **Administrar Controlador de Teste** é exibida.
 
-    2. Na lista suspensa **Controlador**, digite o nome do computador no qual você instalou o controlador de teste. Se tiver administrado um controlador de teste específico anteriormente, você poderá selecionar o nome na lista.
+2. Na lista suspensa **Controlador**, digite o nome do computador no qual você instalou o controlador de teste. Se tiver administrado um controlador de teste específico anteriormente, você poderá selecionar o nome na lista.
 
-    3. No painel **Agentes**, selecione o nome do agente de teste. Se o agente ainda estiver online, escolha **Offline**. Para removê-lo, clique em **Remover**.
+3. No painel **Agentes**, selecione o nome do agente de teste. Se o agente ainda estiver online, escolha **Offline**. Para removê-lo, clique em **Remover**.
 
-        > [!NOTE]
-        > Remover um agente de teste apenas o desassocia do controlador de teste. Para desinstalar completamente o agente de teste, use **Programas e Recursos** do Painel de Controle no computador do agente de teste.
+   > [!NOTE]
+   > Remover um agente de teste apenas o desassocia do controlador de teste. Para desinstalar completamente o agente de teste, use **Programas e Recursos** do Painel de Controle no computador do agente de teste.
 
-2. Se o controlador de teste estiver registrado com um projeto, remova o agente usando o Microsoft Test Manager.
+::: moniker range="vs-2017"
+Se o controlador de teste estiver registrado com um projeto, remova o agente usando o Microsoft Test Manager.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Alterar as configurações de um agente de teste
 
@@ -125,8 +138,10 @@ Você pode alterar o status e outras configurações para um agente de teste que
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Para alterar as configurações de um agente de teste
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Se o agente de teste estiver registrado em um controlador de teste registrado em um projeto, altere as configurações no Microsoft Test Manager.
+::: moniker-end
 
 1. Para configurar e monitorar o controlador de teste e quaisquer agentes registrados de um teste de carga, selecione o menu **Teste de Carga** no Visual Studio e escolha **Gerenciar Controladores de Teste**. Para quaisquer outros testes, abra o arquivo de configurações de teste do seu projeto de teste no Visual Studio, selecione **Função**, em seguida, **Gerenciar Controladores de Teste** no menu suspenso do campo **Controlador**.
 

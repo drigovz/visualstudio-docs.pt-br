@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589208"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880137"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Como configurar a emulação de rede usando configurações de teste no Visual Studio
 
@@ -24,12 +24,19 @@ Você pode configurar o adaptador de dados de diagnóstico para testar o aplicat
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 O procedimento a seguir descreve como configurar a emulação de rede no editor de configuração. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e ao Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+O procedimento a seguir descreve como configurar a emulação de rede no editor de configuração. Essas etapas se aplicam ao editor de configuração do Visual Studio.
+::: moniker-end
 
 > [!NOTE]
-> O adaptador de dados de diagnóstico de emulação de rede só se aplica às configurações de teste do Visual Studio. Ele não é usado para configurações de teste no Microsoft Test Manager.
+> O adaptador de dados de diagnóstico de emulação de rede só se aplica às configurações de teste do Visual Studio. Ele não é usado para configurações de teste no Microsoft Test Manager (preterido no Visual Studio 2017).
 
+::: moniker range="vs-2017"
 Uma conta que tenha privilégios de administrador deve ser usada para a emulação de rede. Se tiver selecionado a emulação de rede para uma função local que executa testes manuais, você deverá iniciar o Microsoft Test Manager usando privilégios de administrador. Se você selecionou a emulação de rede para qualquer outra função, deverá verificar se o agente de teste no computador dessa função usa uma conta de usuário que seja membro do grupo de administradores. Para obter mais informações sobre como configurar a conta para seu agente de teste, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+::: moniker-end
 
 > [!NOTE]
 > A conta do Serviço de Rede, que é a conta padrão para o agente de teste, não é membro do grupo de administradores.

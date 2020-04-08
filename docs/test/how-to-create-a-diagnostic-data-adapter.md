@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589169"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880150"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como criar um adaptador de dados de diagnóstico
 
@@ -23,7 +23,7 @@ Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de class
 
 Você pode criar um adaptador de dados de diagnóstico que afeta o computador onde seus testes são executados, ou um computador que é parte do ambiente que você está usando para executar o aplicativo do teste. Por exemplo, coletando arquivos em seu computador de teste onde os testes são executados ou coletando arquivos no computador que serve na função de servidor Web para seu aplicativo.
 
-Você pode dar ao adaptador de dados de diagnóstico um nome amigável a ser exibido quando você criar suas configurações de teste usando o Microsoft Test Manager ou usando o Visual Studio. As configurações de teste permitem que você defina qual função de computador executará adaptadores de dados de diagnóstico específicos em seu ambiente quando você executar os testes. Você também pode configurar os adaptadores de dados de diagnóstico ao criar suas configurações de teste. Por exemplo, você pode criar um adaptador de dados de diagnóstico que colete logs personalizados do servidor Web. Quando você cria suas configurações de teste, você pode selecionar para executar este adaptador de dados de diagnóstico no computador ou computadores que estão executando esta função do servidor Web, e pode alterar a configuração para que suas configurações de teste coletem somente os últimos três logs que foram criados. Para obter mais informações sobre as configurações do teste, consulte [Coletar informações de diagnóstico usando as configurações do teste](../test/collect-diagnostic-information-using-test-settings.md).
+Você pode dar ao seu adaptador de dados de diagnóstico um nome amigável que exibe quando você cria suas configurações de teste usando o Visual Studio ou o Microsoft Test Manager (preterido no Visual Studio 2017). As configurações de teste permitem que você defina qual função de computador executará adaptadores de dados de diagnóstico específicos em seu ambiente quando você executar os testes. Você também pode configurar os adaptadores de dados de diagnóstico ao criar suas configurações de teste. Por exemplo, você pode criar um adaptador de dados de diagnóstico que colete logs personalizados do servidor Web. Quando você cria suas configurações de teste, você pode selecionar para executar este adaptador de dados de diagnóstico no computador ou computadores que estão executando esta função do servidor Web, e pode alterar a configuração para que suas configurações de teste coletem somente os últimos três logs que foram criados. Para obter mais informações sobre as configurações do teste, consulte [Coletar informações de diagnóstico usando as configurações do teste](../test/collect-diagnostic-information-using-test-settings.md).
 
 Os eventos são gerados quando você executa seus testes de modo que o adaptador de dados de diagnóstico possa executar tarefas nesse ponto no teste.
 
@@ -255,7 +255,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
 14. Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-15. Para selecionar o adaptador de dados de diagnóstico, primeiro você deve selecionar as configurações existentes de um teste ou criar um novo do Microsoft Test Manager ou do Visual Studio. O adaptador é exibido na guia **Dados e Diagnósticos** das configurações de teste com o nome amigável que você atribuiu à classe.
+15. Para selecionar o adaptador de dados de diagnóstico, primeiro você deve selecionar as configurações de teste existentes ou criar uma nova no Visual Studio ou no Microsoft Test Manager (preterido no Visual Studio 2017). O adaptador é exibido na guia **Dados e Diagnósticos** das configurações de teste com o nome amigável que você atribuiu à classe.
 
 16. Defina as configurações de teste como ativas. Para obter mais informações sobre as configurações do teste, consulte [Coletar informações de diagnóstico usando as configurações do teste](../test/collect-diagnostic-information-using-test-settings.md).
 
