@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Bulk add ou os grupos de diretórioativo ativo do Microsoft Azure
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
+ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274057"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80994447"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -72,8 +72,6 @@ O uso deste recurso facilita a permanência em suas atribuições de assinatura.
 
 
 > [!IMPORTANT]
->
-> O uso de grupos Azure AD está sendo habilitado em fases.  Você pode não ver imediatamente o recurso ativado para o seu contrato(s).
 >
 > As seguintes limitações se aplicam ao uso de grupos AD do Azure para adicionar assinantes:
 > - Os grupos devem conter pelo menos um membro.  Grupos vazios não são suportados.
