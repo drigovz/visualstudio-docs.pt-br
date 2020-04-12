@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/07/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: 'As assinaturas do Visual Studio: por que estou vendo endereços do Hotmail ou do Gmail para os assinantes?'
-ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808333"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223678"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Assinaturas do Visual Studio – Por que vejo contas pessoais para meus assinantes?
-Depois que as empresas migraram do Centro de Serviços de Licenciamento de Volume (VLSC) para o novo Portal de Administração de Assinaturas do Visual Studio, os administradores ficaram [surpresos](https://manage.visualstudio.com)ao descobrir que o "Endereço de e-mail de login" para alguns assinantes mostra um endereço de e-mail pessoal como Hotmail ou Outlook.  Para saber mais, confira [este vídeo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
+Depois que as empresas migraram do Centro de Serviços de Licenciamento de Volume (VLSC) para o novo Portal de Administração de Assinaturas do Visual Studio, os administradores ficaram [surpresos](https://manage.visualstudio.com)ao descobrir que o "Endereço de e-mail de login" para alguns assinantes mostra um endereço de e-mail pessoal como Hotmail ou Outlook.  
 
 ## <a name="cause"></a>Causa
 Esse cenário ocorre devido aos processos de entrada que estavam associados à experiência herdada de assinante do MSDN. Os usuários foram migrados do VLSC para o portal de administração de assinaturas do Visual Studio sem modificações. Os administradores talvez não soubessem que os usuários estavam usando contas pessoais para acessar os benefícios de assinatura. Antes das migrações de assinante do Visual Studio, que foram concluídas em 2016, havia duas ações necessárias para usar com êxito uma assinatura do Visual Studio:

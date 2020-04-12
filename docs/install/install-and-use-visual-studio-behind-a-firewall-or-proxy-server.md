@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303004"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223652"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -35,7 +35,7 @@ Se você ou sua organização usa medidas de segurança como um firewall ou um s
 > [!NOTE]
 > Este artigo foi escrito para o Visual Studio no Windows, mas determinadas informações também são aplicáveis à [instalação do Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) por trás de um firewall ou de um servidor proxy.
 
-## <a name="install-visual-studio"></a>Instalar Visual Studio
+## <a name="install-visual-studio"></a>Instalar o Visual Studio
 
 ### <a name="urls-to-add-to-an-allow-list"></a>URLs para adicionar a uma lista de permissões
 
@@ -97,8 +97,8 @@ Para garantir que você tenha acesso a tudo o que deseja quando usar o Visual St
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Usada para fornecer informações no editor sobre quando um arquivo foi atualizado pela última, a linha do tempo de alterações, os itens de trabalho aos quais as alterações estão associadas, os autores e muito mais |
-| Experimental <br>de recurso experimental | visualstudio-devdiv-c2s.msedge.net | 80 | Usada para ativar novos recursos experimentais ou alterações de recurso |
-| “Notificação” de identidade <br>(nome de usuário e avatar)<br>e <br>Configurações de roaming | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Usada para exibir o nome do usuário e o avatar no IDE <br><br> Usada para garantir que as alterações de configuração atravessem de um computador para outro |
+| Habilitação <br>de recurso experimental | visualstudio-devdiv-c2s.msedge.net | 80 | Usada para ativar novos recursos experimentais ou alterações de recurso |
+| "Crachá" de identidade <br>(nome de usuário e avatar)<br>e <br>Configurações de roaming | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Usada para exibir o nome do usuário e o avatar no IDE <br><br> Usada para garantir que as alterações de configuração atravessem de um computador para outro |
 | Configurações Remotas | az700632.vo.msecnd.net | 443 | Usada para desativar extensões que são conhecidas por causar problemas no Visual Studio |
 | Ferramentas do Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Usada para cenários de armazenamento de aplicativos do Windows |
 | Esquema JSON <br>Descoberta <br><br>Esquema JSON <br>Definição<br><br>Esquema JSON <br>O suporte para <br>Recursos do Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Usada para descobrir e baixar os esquemas JSON que o usuário pode usar durante a edição de documentos JSON <br><br>Usada para obter o esquema de metavalidação para JSON<br><br>Usada para obter o esquema atual para modelos de implantação do Azure Resource Manager |
@@ -109,7 +109,7 @@ Para garantir que você tenha acesso a tudo o que deseja quando usar o Visual St
 | Linters da Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http/80 | |
 | Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
 | Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Novo <br>Python <br> project <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br>Usada para resolver os seguintes novos modelos de projeto do Python para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
-| Web do Office <br>add-in <br> Manifesto <br>Verificação <br>Serviço | verificationservice.osi.office.net | https/443 | Usada para validar os manifestos de suplementos de Web do Office |
+| Web do Office <br>add-in <br> Manifest <br>Verificação <br>Serviço | verificationservice.osi.office.net | https/443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>e do Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Usado para publicar e testar Add-ins do SharePoint e do Office no SharePoint Online e no Office 365 |
 | Serviço de teste do <br>Gerenciador de Fluxo de Trabalho<br> Host | | http/12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
 | Estatísticas de confiabilidade <br>coletadas automaticamente <br>e outros <br>CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário)<br> para o SDK do Azure <br>para Ferramentas do SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Usada para enviar as estatísticas de confiabilidade (dados de travamento ou falha) do usuário à Microsoft. Os despejos de travamento/falha reais ainda serão carregados se o Relatório de Erros do Windows estiver habilitado, apenas informações estatísticas serão suprimidas; <br>Usada para revelar padrões de uso anônimos para a extensão do SDK de Ferramentas do Azure para o Visual Studio e para padrões de uso para ferramentas do SQL para Visual Studio |
@@ -147,7 +147,7 @@ Para garantir que você tenha acesso a tudo o que deseja quando usar o Visual St
 
 ## <a name="get-support"></a>Obtenha suporte
 
-Oferecemos uma opção de suporte por [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
+Oferecemos uma opção [**de suporte de chat de instalação**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
 
 Aqui estão algumas outras opções de suporte:
 
@@ -160,5 +160,5 @@ Aqui estão algumas outras opções de suporte:
 * [Requisitos de conectividade do Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Solução de erros relacionados à rede no Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Instalar por trás de um firewall ou de um servidor proxy (Visual Studio para Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
