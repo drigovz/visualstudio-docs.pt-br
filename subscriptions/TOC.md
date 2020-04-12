@@ -75,7 +75,6 @@
 ### [Superadministradores e administradores](admin-roles.md)
 ### [Definir preferências de contrato](admin-prefs.md)
 ### [Visão geral](using-admin-portal.md)
-### [Tutorial em vídeo: Usar o portal de administração](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Atribuir assinaturas
 #### [Adicionar usuários únicos](assign-license.md)
 #### [Adicionar vários usuários](assign-license-bulk.md)
