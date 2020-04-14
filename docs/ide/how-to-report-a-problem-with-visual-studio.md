@@ -4,17 +4,17 @@ description: Saiba como relatar um problema com o Visual Studio
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64556723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276495"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -43,7 +43,7 @@ Você pode relatar um problema do Visual Studio ou de seu instalador usando a Fe
 
    ![Pesquisar e votar em problemas semelhantes](../ide/media/search-and-vote.png)
 
-1. Se você não encontrar o problema enfrentado, escolha **Relatar novo problema** na parte inferior da tela.
+1. Se você não encontrar o problema encontrado, escolha **Relatar novo problema** na parte inferior da tela.
 
    > [!NOTE]
    > O botão **Relatar novo problema** aparece apenas na interface do Visual Studio para a Comunidade de Desenvolvedores. Você não pode relatar um problema diretamente no site da [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).

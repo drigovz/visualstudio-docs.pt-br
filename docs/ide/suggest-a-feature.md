@@ -3,21 +3,21 @@ title: Sugerir um recurso
 description: Descreve quais sugestões são apresentadas na Comunidade de Desenvolvedores, como enviar uma sugestão e como as sugestões são usadas pela Microsoft no roteiro do Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276482"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
 
-Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
+Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Esta é uma nova maneira de se capacitar para se envolver diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
 ![Botão Sugerir uma Funcionalidade na Comunidade de Desenvolvedores](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,7 +83,7 @@ Uma sugestão de recurso marcada com **Precisamos de Mais Informações** signif
 
 ![Estado Fechado – Informações Insuficientes para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Fechado – Informações Insuficientes** indica que, após várias tentativas, ainda não recebemos informações suficientes para entender totalmente sua sugestão de recurso. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
+**Fechado - Não basta sumido Informações** indica que, após várias tentativas, não recebemos informações suficientes para entender completamente sua sugestão de recurso. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
 
 Encontrou as informações que estava procurando? Você pode solicitar para reativar o tíquete quando tiver as informações adicionais.
 
@@ -103,7 +103,7 @@ Encontrou as informações que estava procurando? Você pode solicitar para reat
 
 ## <a name="faq"></a>Perguntas frequentes
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Por que não consigo ver minha ideia no Voz do Usuário na Comunidade de Desenvolvedores?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Por que não consigo ver minha ideia de Voz de Usuário na Comunidade de Desenvolvedores?
 
 As novas sugestões de recursos do antigo fórum Voz do Usuário foram migradas para a Comunidade de Desenvolvedores com base no impacto da comunidade mais ampla e nas prioridades do roteiro de nossos produtos. Se você acha que esquecemos de migrar sua sugestão, adicione-a como uma nova sugestão à Comunidade de Desenvolvedores.
 

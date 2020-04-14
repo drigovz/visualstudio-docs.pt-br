@@ -11,12 +11,13 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 130903670a9128ceeef5b2b016ccd1d75338b4fc
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+open_to_public_contributors: false
+ms.openlocfilehash: 4f157413909d512cd88de7bde67a6c197a0c8d92
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880202"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276312"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -26,7 +27,7 @@ ms.locfileid: "80880202"
 
 A tabela a seguir lista os números de build e as datas de lançamento do Visual Studio 2019 até o momento.
 
-| **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
+| **Versão**| **Canal** | **Data de liberação** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.5.3 | Versão | 7 de abril de 2020 | 16.5.30002.166 |
 | 16.6.0 | Preview 2.1 | 2 de abril de 2020 | 16.6.30001.183 |
@@ -133,7 +134,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 A tabela a seguir relaciona os números de build e as datas de lançamento do Visual Studio 2017 até o momento.
 
-| **Versão**| **Canal** | **Data de lançamento** | **Versão de construção** |
+| **Versão**| **Canal** | **Data de liberação** | **Versão de construção** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.21 | Versão | 10 de março de 2020 | 15.9.28307.1064 |
 | 15.9.20 | Versão | 11 de fevereiro de 2020 | 15.9.28307.1033 |
