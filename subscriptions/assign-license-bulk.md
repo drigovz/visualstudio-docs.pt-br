@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Bulk add ou os grupos de diretórioativo ativo do Microsoft Azure
-ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
-ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80994447"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385518"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -75,10 +75,10 @@ O uso deste recurso facilita a permanência em suas atribuições de assinatura.
 >
 > As seguintes limitações se aplicam ao uso de grupos AD do Azure para adicionar assinantes:
 > - Os grupos devem conter pelo menos um membro.  Grupos vazios não são suportados.
-> - Grupos devem ter menos de 1.000 usuários 
-> - Todos os usuários devem estar no nível superior do grupo.  Grupos aninhados não são suportados
-> - Apenas acordos confiáveis são suportados
-> - Todos os membros do grupo devem ter um endereço de e-mail associado à sua conta Azure AD
+> - Os grupos devem ter menos de 1.000 usuários. 
+> - Todos os usuários devem estar no nível superior do grupo.  Grupos aninhados não são suportados.
+> - Apenas acordos confiáveis são suportados.
+> - Todos os membros do grupo devem ter um endereço de e-mail associado à sua conta Azure AD.
 > - Endereços de e-mail separados para notificações não são suportados para assinaturas adicionadas usando grupos AD do Azure.  
 
 1. Faça login no Portal de Administração [https://manage.visualstudio.com](https://manage.visualstudio.com)de Assinaturas do Visual Studio em .
@@ -106,6 +106,7 @@ O uso deste recurso facilita a permanência em suas atribuições de assinatura.
 > [!NOTE]
 > Se você já tiver atribuído assinaturas individualmente aos usuários que são adicionados posteriormente como parte de um grupo AD do Azure, eles serão adicionados como parte do grupo e não serão mais listados individualmente. No entanto, se a assinatura individual for para um nível de assinatura diferente, eles terão duas assinaturas.  Exemplo: Se um usuário tiver uma assinatura individual do Visual Studio Professional e for membro de um grupo ao qual você atribui assinaturas do Visual Studio Enterprise, ele terá ambos.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
