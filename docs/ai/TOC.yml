@@ -1,12 +1,12 @@
 - name: Ferramentas do Visual Studio para IA
   items:
     - name: Ferramentas do Visual Studio para IA
-      href: index.yml
+      href: overview.md
     - name: Visão geral
       href: about-ai-tools.md
     - name: Instalação
       href: installation.md
-    - name: Inícios rápidos
+    - name: Guias de Início Rápido
       items:
         - name: TensorFlow + Python
           href: tensorflow-local.md
@@ -26,7 +26,7 @@
               href: create-project.md
             - name: Criar um projeto com base em um repositório do GitHub
               href: create-project-repo.md
-        - name: Treinar seu modelo
+        - name: Treinar o modelo
           href: train-model.md
         - name: Exibir detalhes do trabalho
           href: job-details.md
@@ -34,7 +34,7 @@
           href: monitor-gpu.md
         - name: Monitorar o TensorBoard
           href: monitor-tensorboard.md
-        - name: Gerenciamento do armazenamento
+        - name: Gerenciar o armazenamento
           href: manage-storage.md
     - name: Exemplos
       items:
