@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385396"
+ms.locfileid: "81397370"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está configurado corretamente na máquina remota ou a máquina remota está inacessível devido a problemas de rede ou à presença de um firewall.
@@ -34,6 +34,7 @@ A `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` me
 
 - [O depurador não pode se conectar ao computador remoto. O depurador não conseguiu resolver o nome do computador especificado](#cannot_connect)
 - [Pedido de conexão foi rejeitado pelo depurador remoto](#rejected)
+- [A conexão com o ponto final remoto foi encerrada](#connection_terminated)
 - [Acesso inválido ao local de memória](#invalid_access)
 - [Não há servidor pelo nome especificado em execução no computador remoto](#no_server)
 - [O nome solicitado era válido, mas nenhum dado do tipo solicitado foi encontrado](#valid_name)
@@ -67,17 +68,19 @@ Na caixa de diálogo **Anexar ao processo** ou nas propriedades do projeto, cert
 
 Se esses valores estiverem corretos e a mensagem mencionar o modo **de autenticação** do Windows, verifique se o depurador remoto está no modo de autenticação correto **(Ferramentas > Opções).**
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>A conexão com o ponto final remoto foi encerrada
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>A conexão com o ponto final remoto foi encerrada
 
 Se você estiver depurando um aplicativo do Azure App Service, tente usar o comando [Attach Debugger](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) do Cloud Explorer ou Server Explorer em vez de **Anexar ao Processo**.
 
 Se você estiver usando **'Anexar ao processo'** para depurar:
 
-1. Na caixa de diálogo **Anexar ao processo** ou nas propriedades do projeto, certifique-se de que o nome do computador remoto e o número da porta correspondam ao nome e ao número da porta mostrados na janela de depurador remota. Se estiver incorreto, conserte e tente novamente.
+- Na caixa de diálogo **Anexar ao processo** ou nas propriedades do projeto, certifique-se de que o nome do computador remoto e o número da porta correspondam ao nome e ao número da porta mostrados na janela de depurador remota. Se estiver incorreto, conserte e tente novamente.
 
-2. Verifique o registro do aplicativo no servidor (Visualizador de Eventos no Windows) para obter informações mais detalhadas para ajudar a resolver o problema.
+- Se você estiver tentando se conectar usando um nome de host, tente um endereço IP em vez disso.
 
-3. Caso contrário, tente reiniciar o Visual Studio com privilégios de administrador e tente novamente.
+- Verifique o registro do aplicativo no servidor (Visualizador de Eventos no Windows) para obter informações mais detalhadas para ajudar a resolver o problema.
+
+- Caso contrário, tente reiniciar o Visual Studio com privilégios de administrador e tente novamente.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>Acesso inválido ao local de memória
 

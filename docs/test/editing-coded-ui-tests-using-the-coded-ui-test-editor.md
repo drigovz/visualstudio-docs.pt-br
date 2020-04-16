@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589650"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445032"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
@@ -74,7 +74,7 @@ Por meio do Editor de Teste de IU Codificado, é possível localizar e exibir ra
 
 Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.
 
-Por exemplo, se um servidor não estiver disponível e você tiver uma ação de interface do usuário `'http://Contoso2/default.aspx'`associada ao seu navegador da Web que diz **'Go to Web page ',<http://Contoso1/default.aspx>** você pode alterar a URL para .
+Por exemplo, se um servidor não estiver disponível e você tiver uma ação de interface do usuário associada ao seu navegador que diz **Ir para a página da Web http:\//Contoso1/default.aspx**, você pode alterar a URL para `http://Contoso2/default.aspx`.
 
 ![Propriedades de controle](../test/media/codeduitestcontrolprop.png)
 
@@ -194,5 +194,5 @@ Se for necessário garantir que um controle específico esteja disponível antes
 
 - [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
-- [Criar um teste de IU codificado controlado por dados](../test/creating-a-data-driven-coded-ui-test.md)
+- [Crie um teste de iu codificado por dados](../test/creating-a-data-driven-coded-ui-test.md)
 - [Passo a passo: criar, editar e manter um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

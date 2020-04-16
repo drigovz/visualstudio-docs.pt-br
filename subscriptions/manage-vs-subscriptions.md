@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232352"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444863"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -52,7 +52,6 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 **Assinaturas adquiridas por meio de programas:** se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa. Fale com os seus contatos do programa para obter informações adicionais.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durant
 |    VLSC (Centro de Serviços de Licenciamento por Volume)              |    180          |
 |    MPSA (Contrato de Produtos e Serviços da Microsoft)    |    180          |
 |    Assinaturas na nuvem do Visual Studio                   |    180          |
-|    Programa (por exemplo, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programa (por exemplo, MCT, MPN, Imagine)          |    180          |
 |    Proibida a revenda (por exemplo, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

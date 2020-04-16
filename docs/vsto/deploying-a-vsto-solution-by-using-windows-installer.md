@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432360"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444900"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Implantando um Visual Studio Tools para solução de escritório usando o Instalador do Windows
 
@@ -122,7 +122,7 @@ O primeiro passo é criar o projeto de configuração.
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. Na **caixa de diálogo Adicionar um novo projeto,** selecione o modelo **'Projeto de configuração'.**
-4. Clique em **Avançar**.
+4. Clique em **Próximo**.
 ::: moniker-end
 
 5. Na **caixa Nome,** **digite OfficeAddInSetup**.
@@ -236,7 +236,7 @@ O Microsoft Office localiza add-ins usando chaves de registro. As teclas da\_\_c
    >[!WARNING]
    >Você deve ter muito cuidado com o Editor de Registro no Visual Studio. Por exemplo, se você acidentalmente definir DeleteAtUninstall para a chave errada, você pode excluir uma parte ativa do registro, deixando o computador do usuário em um estado inconsistente, ou pior ainda pior.
 
-Versões de 64 bits do Office usarão a colmeia de registro de 64 bits para procurar complementos. Para registrar add-ins a colmeia de registro de 64 bits, a plataforma-alvo do projeto de configuração deve ser definida apenas como 64 bits.
+Versões de 64 bits do Office usarão a colmeia de registro de 64 bits para procurar complementos. Para registrar add-ins sob a colmeia de registro de 64 bits, a plataforma-alvo do projeto de configuração deve ser definida apenas como 64 bits.
 
 1. Selecione o projeto **OfficeAddInSetup** no explorador de soluções.
 2. Vá para a janela **Propriedades** e defina a propriedade **TargetPlatform** como **x64**.
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>Sobre os autores
 
 Wouter van Vugt é um MVP da Microsoft com tecnologias Office Open XML e um consultor independente com foco na criação de OBAs (Office Business Applications, aplicativos de negócios do Office) com sharepoint, Microsoft Office e tecnologias .NET relacionadas.
-Wouter é um contribuinte frequente para sites de desenvolvedores da comunidade, como [OpenXmlDeveloper.org](http://openxmldeveloper.org/) e [MSDN.](/previous-versions/office/developer/office-2007/bb879915(v=office.12)) Ele publicou vários white papers e artigos, bem como um livro disponível na linha intitulado Open XML: Explained e-book.
-Wouter é o fundador da Code-Counsel, uma empresa holandesa focada em fornecer conteúdo técnico de ponta através de uma variedade de canais. Você pode saber mais sobre Wouter lendo seu blog e visitando o [site do Code-Counsel](http://www.code-counsel.net/).
+Wouter é um contribuinte frequente para sites de comunidade de desenvolvedores, como [o MSDN.](/previous-versions/office/developer/office-2007/bb879915(v=office.12)) Ele publicou vários white papers e artigos, bem como um livro disponível na linha intitulado Open XML: Explained e-book.
+Wouter é o fundador da Code-Counsel, uma empresa holandesa focada em fornecer conteúdo técnico de ponta através de uma variedade de canais. Você pode saber mais sobre Wouter lendo seu blog.
 
 Ted Pattison é MVP do SharePoint, autor, treinador e fundador do Ted Pattison Group. No outono de 2005, Ted foi contratado pelo grupo De Sanearismo da Plataforma de Desenvolvedores da Microsoft para criar o currículo de treinamento de desenvolvedores Ascend para o Windows SharePoint Services 3.0 e o Microsoft Office SharePoint Server 2007. Desde então, Ted tem sido inteiramente focado em educar desenvolvedores profissionais sobre as tecnologias SharePoint 2007. Ted terminou de escrever um livro para a Microsoft Press intitulado Inside Windows SharePoint Services 3.0 que se concentra em como usar o SharePoint como uma plataforma de desenvolvimento para a construção de soluções de negócios. Ted também escreve uma coluna focada em desenvolvedores para a Revista MSDN intitulada Office Space.

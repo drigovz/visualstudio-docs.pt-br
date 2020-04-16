@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702034"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444642"
 ---
 # <a name="private-galleries"></a>Galerias privadas
 Você pode compartilhar os controles, modelos e ferramentas que você desenvolve postando-os em uma *galeria privada* na intranet para sua organização, da seguinte forma:
@@ -42,9 +42,9 @@ Você pode compartilhar os controles, modelos e ferramentas que você desenvolve
 
 5. No campo **URL,** digite a URL do feed do Átomo ou do site SharePoint que hospeda a galeria privada.
 
-    1. Se o host for um feed do Átomo que se conecta à http://www.mywebsite/mygallery/atom.xmlgaleria privada, a URL se assemelharia a esta: .  Esta URL pode se referir a um arquivo ou a um caminho de rede.
+    1. Se o host for um feed do Átomo que se conecta à `http://www.mywebsite/mygallery/atom.xml`galeria privada, a URL se assemelharia a esta: .  Esta URL pode se referir a um arquivo ou a um caminho de rede.
 
-    2. Se o host for um site do SharePoint, a URL se assemelharia a este: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Se o host for um site do SharePoint, a URL se assemelharia a este: `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`.
 
 ### <a name="manage-private-galleries"></a>Gerencie galerias privadas
  Um administrador pode disponibilizar uma galeria privada para vários computadores ao mesmo tempo modificando o registro do sistema em cada computador. Para isso, crie um arquivo *.pkgdef* que descreva as novas chaves de registro e seus valores.  O formato deste arquivo é o seguinte.
