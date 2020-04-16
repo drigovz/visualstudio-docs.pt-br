@@ -2,7 +2,7 @@
 # [Novidades](whats-new-in-subscriptions.md)
 # Assinaturas
 ## Comprar assinaturas
-### [Varejo](https://visualstudio.microsoft.com/vs/pricing)
+### [Varejo](buy-activate-retail.md)
 ### Nuvem 
 #### [Visão geral](vscloud-overview.md)
 #### [Perguntas frequentes sobre faturamento](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Gerenciar assinaturas do MPN](manage-mpn-subscriptions.md)
 ### [Microsoft para startups](program-startups.md)
 ## Entrar 
-### [Ativar assinaturas de varejo](activate-store-subscriptions.md)
 ### [Entrar com contas Microsoft](sign-in-msa.md)
 ### [Entrar com contas corporativas ou de estudante](sign-in-work.md)
 ### [Entrar com o GitHub](sign-in-github.md)
