@@ -4,19 +4,19 @@ description: Saiba como migrar e publicar seu aplicativo Web em um serviço de n
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624130"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489669"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como: Migrar e publicar um aplicativo Web em um serviço de nuvem do Azure usando o Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como migrar e publicar um aplicativo Web em um serviço de nuvem do Azure por meio do Visual Studio
 
 Para tirar proveito dos serviços de hospedagem e a escalabilidade do Azure, você pode migrar e implantar seu aplicativo Web em um serviço de nuvem do Azure. Somente alteração mínimas são necessárias. Este artigo aborda somente a implantação em serviços de nuvem; para o Serviço de Aplicativo, consulte [Implantar um aplicativo Web no Serviço de Aplicativo do Azure](/azure/app-service/app-service-deploy-local-git).
 
@@ -36,7 +36,7 @@ Para tirar proveito dos serviços de hospedagem e a escalabilidade do Azure, voc
 
 Quaisquer avisos ou erros indicam problemas a serem corrigidos antes de implantar o Azure, como assemblies ausentes.
 
-Se você criar seu aplicativo, executá-lo localmente usando o emulador de computação ou publicá-lo no Azure, você poderá ver o erro: "O caminho e/ou o nome do arquivo especificado são muito longos." Esse erro indica que o comprimento do nome totalmente qualificado do projeto do Azure excede 146 caracteres. Para corrigir o problema, mova sua solução para uma pasta diferente com um caminho mais curto.
+Se você compilar seu aplicativo, executá-lo localmente usando o emulador de computação ou publicá-lo no Azure, poderá ver o seguinte erro: “O caminho especificado, o nome do arquivo ou ambos são muito longos”. Esse erro indica que o comprimento do nome totalmente qualificado do projeto do Azure excede 146 caracteres. Para corrigir o problema, mova sua solução para uma pasta diferente com um caminho mais curto.
 
 Para obter mais informações sobre como tratar avisos como erros, consulte [Configurar um projeto de serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -45,9 +45,9 @@ Para obter mais informações sobre como tratar avisos como erros, consulte [Con
 1. No **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse no projeto do serviço de nuvem adicionado e selecione **Configurar como Projeto de Inicialização**.
 1. Selecione **Depurar > Iniciar depuração** (F5) para inicializar o ambiente de depuração do Azure. Esse ambiente fornece especificamente emulação de vários serviços do Azure.
 
-### <a name="use-an-azure-sql-database-for-your-application"></a>Usar um Banco de Dados SQL do Microsoft Azure para seu aplicativo
+### <a name="use-an-azure-sql-database-for-your-application"></a>Usar um Banco de Dados SQL do Azure para seu aplicativo
 
-Se tiver uma cadeia de conexão para seu aplicativo Web que usa um banco de dados SQL Server local, você deve migrar seu banco de dados para o Banco de Dados SQL do Microsoft Azure e atualizar a cadeia de conexão. Para obter orientações com esse processo, consulte os tópicos a seguir:
+Se tiver uma cadeia de conexão para seu aplicativo Web que usa um banco de dados SQL Server local, você deve migrar seu banco de dados para o Banco de Dados SQL do Azure e atualizar a cadeia de conexão. Para obter orientações com esse processo, consulte os tópicos a seguir:
 
 - [Migração de banco de dados do SQL Server para o Banco de Dados SQL na nuvem](/azure/sql-database/sql-database-cloud-migrate)
 - [Usar o .NET (C#) com o Visual Studio para conectar e consultar um banco de dados SQL do Azure](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
@@ -56,9 +56,9 @@ Se tiver uma cadeia de conexão para seu aplicativo Web que usa um banco de dado
 
 1. Crie o serviço de nuvem e as contas de armazenamento necessários em sua assinatura do Azure, conforme descrito em [Preparar para publicar ou implantar um aplicativo do Azure a partir do Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. No Visual Studio, clique com botão direito no projeto do aplicativo e selecione **Publicar no Microsoft Azure...** (que é diferente do comando “Publicar...”).
-1. No **Publicar aplicativo do Azure** que aparece, entre usando a conta com sua assinatura do Azure e selecione **Avançar >** .
+1. No **Publicar aplicativo do Azure** que aparece, entre usando a conta com sua assinatura do Azure e selecione **Avançar >**.
 1. Na guia **Configurações > Configurações Comuns**, selecione o serviço de nuvem de destino na lista suspensa **Serviço de Nuvem**, juntamente com o ambiente e as configurações escolhidas.
-1. Em **Configurações > Configurações Avançadas**, selecione a conta de armazenamento a ser usada e depois selecione **Avançar >** .
+1. Em **Configurações > Configurações Avançadas**, selecione a conta de armazenamento a ser usada e depois selecione **Avançar >**.
 1. Em **Diagnósticos**, escolha se deseja enviar informações ao Application Insights.
 1. Selecione **Avançar >** para exibir um resumo, depois selecione **Publicar** para iniciar a implantação.
 1. O Visual Studio abre uma janela de log de atividade na qual você pode acompanhar o progresso:
@@ -80,7 +80,7 @@ A tabela a seguir fornece detalhes sobre como iniciar o aplicativo no Azure:
 | Aplicativo Web do ASP.NET<br/>(incluindo MVC 2, MVC 3, MVC 4) | Selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. |
 | Aplicativo Web ASP.NET vazio | Caso tenha uma página `.aspx` padrão em seu aplicativo, selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. Para navegar para uma página diferente, insira uma URL do formulário a seguir em um navegador: `<deployment_url>/<page_name>.aspx` |
 | Aplicativo Silverlight<br/>Aplicativo de negócios Silverlight<br/>Aplicativo de navegação Silverlight | Navegue até a página específica do seu aplicativo usando o seguinte formato de URL: `<deployment_url>/<page_name>.aspx` |
-| Aplicativo de serviço WCF<br/>Aplicativo de Serviço de Fluxo de Trabalho do WCF | Defina o arquivo `.svc` como a página inicial do seu projeto de Serviço WCF. Depois navegue até `<deployment_url>/<service_file>.svc` |
+| Aplicativo de serviço WCF<br/>Aplicativo de serviço de fluxo de trabalho WCF | Defina o arquivo `.svc` como a página inicial do seu projeto de Serviço WCF. Depois navegue até `<deployment_url>/<service_file>.svc` |
 | Entidades dinâmicas do ASP.NET<br/>Dados dinâmicos ASP.NET Linq to SQL | Atualize a cadeia de conexão conforme descrito na próxima seção. Depois navegue até `<deployment_url>/<page_name>.aspx`. Para Linq em SQL, você deve usar um banco de dados SQL do Azure. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Atualizar uma cadeia de conexão para Entidades dinâmicas do ASP.NET
@@ -107,7 +107,7 @@ A tabela a seguir fornece detalhes sobre como iniciar o aplicativo no Azure:
 
 Aplicativos que podem ser migrados e publicados nos serviços de nuvem devem usar um dos modelos da tabela a seguir. Não há suporte para o ASP.NET Core.
 
-| Grupo de modelos | Modelo de projeto |
+| Grupo de modelos | Modelo do projeto |
 | --- | --- |
 | Web | Aplicativo Web do ASP.NET (.NET Framework) |
 | Web | Aplicativo Web ASP.NET MVC 2 |
@@ -121,8 +121,8 @@ Aplicativos que podem ser migrados e publicados nos serviços de nuvem devem usa
 | Silverlight | Aplicativo de negócios Silverlight |
 | Silverlight | Aplicativo de navegação Silverlight |
 | WCF | Aplicativo de serviço WCF |
-| WCF | Aplicativo de Serviço de Fluxo de Trabalho do WCF |
-| Fluxo de trabalho | Aplicativo de Serviço de Fluxo de Trabalho do WCF |
+| WCF | Aplicativo de serviço de fluxo de trabalho WCF |
+| Fluxo de trabalho | Aplicativo de serviço de fluxo de trabalho WCF |
 
 ## <a name="next-steps"></a>Próximas etapas
 

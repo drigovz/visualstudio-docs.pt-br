@@ -5,16 +5,16 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e8bbf5cdf3843bbd1fafd3e8cdebec17932c3cc4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911796"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489630"
 ---
 # <a name="optimizing-your-azure-code"></a>Otimizando o código do Azure
 Quando você está programando aplicativos que usam o Microsoft Azure, existem algumas práticas de codificação que você deve seguir para ajudar a evitar problemas de escalabilidade, comportamento e desempenho do aplicativo em um ambiente de nuvem. A Microsoft fornece uma ferramenta de análise de código do Azure que reconhece e identifica vários desses problemas comumente encontrados e ajuda a resolvê-los. Você pode baixar a ferramenta no Visual Studio, via NuGet.
@@ -34,7 +34,7 @@ Compartilhe suas ideias e comentários em [Comentários de análise de código d
 ### <a name="reason"></a>Motivo
 Por padrão, o modo de estado de sessão especificado no arquivo web.config está em processo. Além disso, se nenhuma entrada for especificada no arquivo de configuração, o modo de estado de sessão assume o padrão de em processo. O modo em processo armazena o estado de sessão na memória, no servidor Web. Quando uma instância é reiniciada ou uma nova instância é usada para balanceamento de carga ou suporte a failover, o estado de sessão armazenado na memória no servidor Web não é salvo. Essa situação impede que o aplicativo seja escalonável na nuvem.
 
-O estado de sessão ASP.NET dá suporte a várias opções de armazenamento diferentes para dados de estado de sessão: InProc, StateServer, SQLServer, personalizado e desativado. É recomendável que você use o modo Personalizado para hospedar dados em um armazenamento de estado da sessão externo, como [Provedor de estado de sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/).
+O estado da sessão ASP.NET dá suporte a várias opções diferentes de armazenamento para dados de estado de sessão: InProc, StateServer, SQLServer, Personalizado e Desativado. É recomendável que você use o modo Personalizado para hospedar dados em um armazenamento de estado da sessão externo, como [Provedor de estado de sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/).
 
 ### <a name="solution"></a>Solução
 É uma solução recomendada armazenar o estado de sessão em um serviço de cache gerenciado. Saiba como usar [provedor de Estado de Sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) para armazenar o estado de sessão. Você também pode armazenar o estado de sessão em outros locais para garantir que seu aplicativo seja escalonável na nuvem. Para saber mais sobre as soluções alternativas, leia [Modos de estado de sessão](https://msdn.microsoft.com/library/ms178586).
@@ -49,7 +49,7 @@ Crie métodos assíncronos (como [await](https://msdn.microsoft.com/library/hh15
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-A chamada de métodos assíncronos dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) método faz com que o tempo de execução do serviço de nuvem recicle a função de trabalho. Quando uma função de trabalho é iniciada, todas as execuções do programa ocorrem dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Sair do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) faz com que a função de trabalho reinicie. Quando o runtime da função de trabalho atinge o método assíncrono, ele envia todas as operações posteriores ao método assíncrono e retorna. Isso faz com que a função de trabalho saia do método [[[[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e reinicialize. Na próxima iteração da execução, a função de trabalho atinge o método assíncrono novamente e reinicia, fazendo com que a função de trabalho seja reciclada novamente.
+A chamada de métodos assíncronos dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) método faz com que o runtime do serviço de nuvem recicle a função de trabalho. Quando uma função de trabalho é iniciada, todas as execuções do programa ocorrem dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Sair do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) faz com que a função de trabalho reinicie. Quando o runtime da função de trabalho atinge o método assíncrono, ele envia todas as operações posteriores ao método assíncrono e retorna. Isso faz com que a função de trabalho saia do método [[[[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e reinicialize. Na próxima iteração da execução, a função de trabalho atinge o método assíncrono novamente e reinicia, fazendo com que a função de trabalho seja reciclada novamente.
 
 ### <a name="solution"></a>Solução
 Coloque todas as operações assíncronas fora do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Chame o método async refatorado de dentro do método [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , como RunAsync().wait. A ferramenta de análise de código do Azure pode ajudá-lo a corrigir esse problema.
@@ -344,7 +344,7 @@ Para obter mais informações, consulte [Criar e usar uma assinatura de acesso c
 AP4000
 
 ### <a name="description"></a>Descrição
-O uso da classe [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) para projetos como o site do Azure e serviços móveis do Azure não introduzirá problemas de tempo de execução. Como melhor prática, no entanto, é uma boa ideia usar Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) como uma forma unificada de gerenciamento de configurações para todos os aplicativos de nuvem do Azure.
+O uso da classe [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) para projetos como o site do Azure e serviços móveis do Azure não introduzirá problemas de runtime. Como melhor prática, no entanto, é uma boa ideia usar Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) como uma forma unificada de gerenciamento de configurações para todos os aplicativos de nuvem do Azure.
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
@@ -356,11 +356,11 @@ CloudConfigurationManager lê o arquivo de configuração apropriado para o ambi
 ### <a name="solution"></a>Solução
 Refatore seu código para usar a classe [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Uma correção de código para esse problema é fornecida pela ferramenta de análise de código do Azure.
 
-O snippet de código a seguir demonstra a correção de código para esse problema. Substituir
+O snippet de código a seguir demonstra a correção de código para esse problema. Substitua
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
-with
+por
 
 `var settings = CloudConfigurationManager.GetSetting("mySettings");`
 
@@ -395,7 +395,7 @@ Armazene cadeias de conexão em arquivos de configuração ou ambientes do Azure
 * Para aplicativos autônomos, use o web.config para armazenar cadeias de conexão.
 * Para aplicativos do vNext do ASP.NET, use configuration.json para armazenar cadeias de conexão.
 
-Para obter informações sobre como usar arquivos de configurações, como web.config ou app.config, consulte [Diretrizes de configuração Web do ASP.NET](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations). Para obter informações sobre como funcionam as variáveis de ambiente do Azure, consulte [sites do Azure: como as cadeias de caracteres do aplicativo e as cadeias de conexão funcionam](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obter informações sobre o armazenamento de cadeia de conexão no controle do código-fonte, consulte [Evitar colocar informações confidenciais, como cadeias de conexão em arquivos armazenados no repositório de código-fonte](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Para obter informações sobre como usar arquivos de configurações, como web.config ou app.config, consulte [Diretrizes de configuração Web do ASP.NET](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations). Para obter informações sobre como variáveis de ambiente do Azure funcionam, consulte [Sites do Azure: como as cadeias de aplicativo e cadeias de conexão funcionam](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obter informações sobre o armazenamento de cadeia de conexão no controle do código-fonte, consulte [Evitar colocar informações confidenciais, como cadeias de conexão em arquivos armazenados no repositório de código-fonte](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Usar arquivo de configuração de diagnóstico
 ### <a name="id"></a>ID

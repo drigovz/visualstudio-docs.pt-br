@@ -4,17 +4,17 @@ description: Saiba como definir as diversas configurações no Assistente Public
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550289"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489643"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso do Assistente Publicar Aplicativo do Azure do Visual Studio
 
@@ -114,10 +114,10 @@ Depois de definir todas as configurações da implantação do projeto, selecion
 
 - [Saiba como usar o Visual Studio para publicar um serviço de nuvem do Azure](./vs-azure-tools-publishing-a-cloud-service.md)
 
-- [Depuração de um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
+- [Depurando um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
 
 - [Testar o desempenho de um serviço de nuvem do Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configuração do Diagnóstico para os serviços de nuvem do Azure e máquinas virtuais](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configuração de diagnósticos para serviços de nuvem do Azure e máquinas virtuais](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [O que é o Application Insights?](/azure/application-insights/app-insights-overview)
