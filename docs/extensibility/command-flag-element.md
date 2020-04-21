@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649364"
 ---
 # <a name="command-flag-eelement"></a>Bandeira de comando Eelement
 Modifica seu elemento pai.
@@ -60,7 +60,6 @@ Modifica seu elemento pai.
 |Pós-Executivo|Faz com que o comando não bloqueie. O ambiente de desenvolvimento adia a execução até que todas as consultas de pré-processamento sejam concluídas.<br /><br /> Válido para:`Button`|
 |RouteToDocs|O comando é encaminhado para o documento ativo.<br /><br /> Válido para:`Button`|
 |AlongamentoHorizontalmente|Quando este sinalizador é definido, a largura se torna a largura mínima para a caixa de combinação, e se houver espaço na barra de ferramentas, a caixa de combinação se estende para preencher o espaço disponível. Isso só ocorre se a barra de ferramentas estiver encaixada horizontalmente, e apenas uma caixa de combinação na barra de ferramentas pode usar o sinalizador (o sinalizador é ignorado em todos, exceto na primeira caixa de combinação).<br /><br /> Válido para:`Combo`|
-|TextMenuUseUseButton|Use `ButtonText` o campo para menus. O campo `MenuText` padrão é se for especificado.<br /><br /> Válido para:`Button`|
 |Troca de texto|O texto de comando ou menu pode ser `QueryStatus` alterado em tempo de execução, normalmente através do método.<br /><br /> Válido para: `Button`,`Menu`|
 |Texto''''''''''|Válido para:`Button`|
 |Comando TextIsAnchor|Para um controlador de menu, o texto do menu é retirado do comando padrão (âncora). Um comando âncora é o último comando selecionado ou travado. Se este sinalizador não estiver definido, `MenuText` o controlador de menu usará seu próprio campo. No entanto, clicar no controlador de menu ainda habilita o último comando selecionado desse controlador.<br /><br /> Recomendamos que você combine `TextChanges` esta bandeira com a bandeira.<br /><br /> Este sinalizador se aplica apenas aos menus do tipo MenuController ou MenuControllerLatched.<br /><br /> Válido para:`Menu`|

@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233077"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649624"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -58,7 +58,7 @@ As configurações necessárias para o arquivo tsconfig são as seguintes:
 O local de saída, bem como pastas não pertencentes ao projeto como `node_modules` ou `temp`, devem ser adicionados a essa configuração.
 - `enableAutoDiscovery`: essa configuração habilita a detecção automática e o download de arquivos de definição, conforme descrito anteriormente.
 - `compileOnSave`: essa configuração informa ao compilador se ele deve recompilar sempre que um arquivo de origem é salvo no Visual Studio.
-- `typeAcquisition`: este conjunto de configurações controlam o comportamento de aquisição de tipo automática (explicado com mais detalhes [nesta seção](/visualstudio/ide/javascript-intellisense#Auto))
+- `typeAcquisition`: este conjunto de configurações controlam o comportamento de aquisição de tipo automática (explicado com mais detalhes [nesta seção](../ide/javascript-intellisense.md#Auto))
 
 Para converter arquivos JavaScript em módulos CommonJS e colocá-los em uma pasta `./out`, você pode usar o arquivo `tsconfig.json` a seguir:
 
@@ -260,7 +260,7 @@ Você pode aprender mais sobre a criação de arquivos de declaração (`.d.ts`)
 Já que o novo serviço de linguagem é alimentado por análise estática em vez de um mecanismo de execução (leia sobre [esse problema](https://github.com/Microsoft/TypeScript/issues/4789) para obter informações sobre as diferenças), há alguns padrões de JavaScript que não podem mais ser detectados.
 O padrão mais comum é o padrão "expando".
 Atualmente o serviço de linguagem não pode fornecer o IntelliSense em objetos que têm propriedades incluídas após a declaração.
-Por exemplo: 
+Por exemplo:
 
 ```js
 var obj = {};

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649390"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
@@ -202,7 +202,7 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
    Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. Se você tem como objetivo o runtime herdado, as Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity herdado. Se você tem como objetivo o novo runtime e usa o Portable-PDB, o Ferramentas do Visual Studio para Unity não tentará fazer nenhuma conversão de símbolo, pois o novo runtime do Unity é capaz de consumir nativamente PDBs portáteis.
 
-   Veja mais informações sobre a geração de PDB [aqui](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se você tem como objetivo o novo runtime, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o runtime herdado, precisará usar "Full".
+   Veja mais informações sobre a geração de PDB [aqui](../debugger/how-to-set-debug-and-release-configurations.md). Se você tem como objetivo o novo runtime, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o runtime herdado, precisará usar "Full".
 
 4. Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
 

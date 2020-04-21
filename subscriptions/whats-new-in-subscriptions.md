@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544046"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649690"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -39,6 +39,23 @@ Se sua organização usar o Azure Active Directory (Azure AD), agora você pode 
 Temos o prazer de anunciar uma expansão dos benefícios oferecidos pelo nosso parceiro, o CAST Highlight. 
 - A duração do benefício incluída nas assinaturas do Visual Studio Enterprise foi estendida para seis meses.  
 - Os assinantes do Visual Studio Professional agora podem receber uma assinatura permitindo que eles avaliem um único aplicativo por três meses. 
+
+## <a name="2020-q2-april-june"></a>2º trimestre de 2020 (abril a junho)
+
+### <a name="visual-studio-subscriptions-portal"></a>Portal de Assinaturas do Visual Studio
+
+O Portal de Assinaturas do Visual Studio sofreu mudanças significativas na aparência e facilidade de uso.  
+
+- As telhas de benefícios foram redimensionadas e são todas exibidas na janela para que você não precise rolar para a esquerda ou para a direita para ver todas as telhas em uma determinada categoria. 
+- Você pode optar por exibir todos os seus benefícios disponíveis ou exibir apenas uma categoria usando o Seletor de categorias.
+   > [!div class="mx-imgBorder"]
+   > ![O novo catador de categoria de benefícios](_img/whats-new/whats-new-category-picker.png)
+- Também mudamos o Seletor de Assinaturas do canto superior direito da janela para um local mais acessível.
+   > [!div class="mx-imgBorder"]
+   > ![O novo seletor de assinaturas](_img/whats-new/whats-new-sub-picker.png)
+- Adicionamos um "benefício em destaque" no topo da lista de benefícios para chamar benefícios novos ou populares.  
+   > [!div class="mx-imgBorder"]
+   > ![O novo benefício em destaque](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 - Confira o novo [portal de Administração de Assinaturas](https://manage.visualstudio.com) UI com suas novas funcionalidades

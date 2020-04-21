@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 Pro Plus incluído em algumas assinaturas do Visual Studio.
-ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 3db596912739562b65a0568864dfdf224cc28b3a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649491"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus em Assinaturas do Visual Studio
 
@@ -33,7 +33,7 @@ Siga estas etapas para baixar e ativar o Office 365 Pro Plus:
 3. Você verá uma lista de downloads em destaque. Na lista do Office, escolha **office 365 Pro Plus**.
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro Plus Downloads](_img/vs-office365/vs-office365-downloads.png)
-0. Para instalar o Office 365 Pro Plus, você precisará de uma chave de produto.  Clique no link **Obter chave** a listagem Office 365 Pro Plus.
+0. Para instalar o Office 365 Pro Plus, você precisará de uma chave de produto.  Clique no link **Obter chave** sob a listagem Office 365 Pro Plus.
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro Plus obter chave de produto](_img/vs-office365/vs-office365-get-key.png)
 0. Uma janela de submenu mostrará a você quaisquer chaves que você já tiver solicitado, bem como aquelas que estejam disponíveis para você.  Para obter uma nova chave, clique em **Solicitar chave** na listagem **Office Professional Plus 2019**.

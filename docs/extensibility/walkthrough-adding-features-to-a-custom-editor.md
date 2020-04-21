@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649839"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Passo a passo: Adicione recursos a um editor personalizado
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.
@@ -34,7 +34,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
 3. Implemente uma fábrica de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> editores configurando a interface.
 
-     Para obter mais informações, consulte [As fábricas do Editor](../extensibility/editor-factories.md).
+     Para obter mais informações, consulte [As fábricas do Editor](/visualstudio/extensibility/editor-factories?view=vs-2015).
 
 4. Decida se deseja que seu editor use ativação no local ou incorporação simplificada para gerenciar a janela de objeto de exibição de documento.
 
