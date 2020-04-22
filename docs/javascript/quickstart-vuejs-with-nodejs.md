@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235100"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744981"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js
 
@@ -103,19 +103,24 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
 
 ## <a name="build-the-project"></a>Compilar o projeto
 
-1. (Somente projeto TypeScript) No Visual Studio, escolha **Build** > **Clean Solution**.
+::: moniker range=">=vs-2019"
+1. Em seguida, escolha **Compilar** > **Compilar Solução** para criar o projeto.
 
-    ::: moniker range=">=vs-2019"
-    No modelo TypeScript incluído no Visual Studio 2019, pule esta etapa.
-    ::: moniker-end
+1. Verifique a janela de **Saída** para ver os resultados do build e escolha **Build** na lista **Mostrar saída de**.
+::: moniker-end
+::: moniker range="vs-2017"
+1. (Somente projeto TypeScript) No Visual Studio, escolha **Compilar** > **Limpar Solução**.
 
-1. Em seguida, escolha **Build** > **Build Solution** para construir o projeto. Verifique a janela de **Saída** para ver os resultados do build e escolha **Build** na lista **Mostrar saída de**.
+1. Em seguida, escolha **Compilar** > **Compilar Solução** para criar o projeto.
 
-    O modelo de projeto JavaScript Vue.js (e versões mais antigas do modelo TypeScript) usa o `build` script npm configurando um evento de compilação pós-publicação. Se você quiser modificar esta configuração, abra o arquivo do projeto*\<(projectname\>.njsproj)* do Windows Explorer e localize esta linha de código:
+1. Verifique a janela de **Saída** para ver os resultados do build e escolha **Build** na lista **Mostrar saída de**.
+::: moniker-end
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+O modelo de projeto JavaScript Vue.js (e versões mais antigas do modelo TypeScript) usa o `build` script npm configurando um evento de compilação pós-publicação. Se você quiser modificar esta configuração, abra o arquivo do projeto*\<(projectname\>.njsproj)* do Windows Explorer e localize esta linha de código:
+
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
@@ -135,6 +140,6 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
 
 ## <a name="next-steps"></a>Próximas etapas
 
+- Repassar o artigo para [Vue.js](create-application-with-vuejs.md)
 - Veja o [Tutorial para Node.js e Express](tutorial-nodejs.md)
-- Veja o [Tutorial para Node.js e React](tutorial-nodejs-with-react-and-jsx.md)
 - [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)

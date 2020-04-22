@@ -1,8 +1,8 @@
 ---
 title: Criar um aplicativo Node.js e React
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
-ms.custom: mvc
-ms.date: 4/20/2020
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649233"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760087"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -106,7 +106,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
 
     (3) O nó do npm mostra os pacotes npm instalados. Clique com o botão direito do mouse no nó do npm para pesquisar e instalar pacotes npm usando uma caixa de diálogo ou instalar e atualizar pacotes usando as configurações de *package.json* e as opções de clique com o botão direito do mouse no nó do npm.
 
-    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações sobre esse arquivo, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações, consulte [Gerenciar pacotes npm](../javascript/npm-package-management.md).
 
     (5) Arquivos de projeto como *server.js* aparecem no nó do projeto. *server.js* é o arquivo de inicialização do projeto e é por isso que ele é exibido em **negrito**. Defina o arquivo de inicialização clicando com o botão direito do mouse em um arquivo no projeto e selecionando **Definir como arquivo de inicialização do Node.js**.
 
@@ -129,7 +129,7 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
 1. Na caixa de diálogo **Instalar Novos Pacotes npm**, procure o pacote react e selecione **Instalar Pacote** para instalá-lo.
 
-    ![Instalar pacotes npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Instalar pacotes npm](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Selecione a janela de **Saída** para ver o progresso da instalação do pacote (selecione **Npm** no campo **Mostrar saída de**). Quando instalado, o pacote é exibido sob o nó **npm**.
 
@@ -162,7 +162,7 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
     Estes são os módulos npm que aparecem no Gerenciador de Soluções após a instalação.
 
-    ![Pacotes npm](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![Pacotes npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Se você preferir instalar pacotes npm usando a linha de comando, clique com o botão direito do mouse no nó do projeto e escolha **Abrir Prompt de Comando Aqui**. Usar comandos padrão do Node.js para instalar pacotes.
@@ -312,7 +312,7 @@ Nas etapas anteriores, você adicionou *webpack-config.js* ao projeto. Em seguid
 
     A janela do prompt de comando mostra o resultado.
 
-    ![Execute o webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Execute o webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Se encontrar erros em vez da saída anterior, você precisará resolvê-para que seu aplicativo funcione. Se as versões de seu pacote npm forem diferentes das versões mostradas neste tutorial, isso poderá ser uma fonte de erros. Uma maneira de corrigir erros é usar as versões exatas mostradas nas etapas anteriores. Além disso, se uma ou mais dessas versões de pacote tiver sido preterida e gerar um erro, talvez você precise instalar uma versão mais recente para corrigir erros. Para obter informações sobre como usar *package.json* para controlar as versões do pacote de npm, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md).
 
@@ -342,7 +342,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
 
 ## <a name="run-the-app"></a>Executar o aplicativo
 
-1. Selecione o Microsoft Edge ou o Chrome como o alvo de depuração atual.
+1. Selecione **o Web Server (Google Chrome)** ou o Web Server **(Microsoft Edge)** como o destino de depuração atual.
 
     ::: moniker range=">=vs-2019"
     ![Selecione o Chrome como destino de depuração](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -351,12 +351,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
     ![Selecione o Chrome como destino de depuração](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Se o Chrome estiver disponível na sua máquina, mas não aparecer como uma opção, escolha **o Navegador da Web (nome do navegador)** > **Selecione** o Navegador da Web na lista de desoneração de destino de depuração e selecione o **Chrome** como o destino padrão do navegador.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Se o Chrome estiver disponível na sua máquina, mas não aparecer como uma opção, escolha o **Google Chrome** do Navegador da Web (nome do **navegador)** > na lista de desinicialização de destino de depuração e selecione o **Chrome** como o destino padrão do navegador.
-    ::: moniker-end
+    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
 
 1. Para executar o aplicativo, pressione **F5** (**Depurar** > **Iniciar Depuração**) ou no botão de seta verde.
 

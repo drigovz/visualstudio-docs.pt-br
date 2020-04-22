@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649503"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760173"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -84,15 +84,15 @@ Os pacotes do npm são mostrados no Gerenciador de Soluções. As entradas no n�
 ::: moniker range=">=vs-2019"
 Clique com o botão direito do mouse no nó **npm** para tomar uma das seguintes ações:
 
-* **Instale novos pacotes npm** Abre a ui para instalar novos pacotes
+* **Instale novos pacotes npm** Abre a ui para instalar novos pacotes.
 * **Instale pacotes npm** Executa o comando npm install para instalar todos os pacotes listados em *package.json*. (Corre `npm install`.)
-* **Atualizar pacotes npm** Atualiza um pacote para a versão especificada no *package.json*. (Corre `npm update --save`.)
+* **Atualizar pacotes npm** Atualiza pacotes para as versões mais recentes, de acordo com a gama semver especificada em *package.json*. (Runs `npm update --save`.). Os intervalos semver são tipicamente especificados usando "~" ou "^". Para obter mais informações, [configuração package.json](../javascript/configure-packages-with-package-json.md).
 
 Clique com o botão direito do mouse em um nó de pacote para tomar uma das seguintes ações:
 
 * **Instale npm Package(s)** Executa o comando npm install para instalar a versão do pacote listada em *package.json*. (Corre `npm install`.)
-* **Atualizar npm Pacotes** Atualiza um pacote para a versão especificada no *package.json*. (Corra `npm update --save`.)
-* **Desinstale npm Package(s)** Desinstale o pacote e remova-o `npm uninstall --save`do *package.json* (Executa .)
+* **Atualizar npm Pacotes** Atualiza o pacote para a versão mais recente, de acordo com a gama semver especificada no *package.json*. (Corra `npm update --save`.) Os intervalos semver são tipicamente especificados usando "~" ou "^".
+* **Desinstale npm Package(s)** Desinstala o pacote e remove-o do *package.json* (Executa `npm uninstall --save`.)
 ::: moniker-end
 ::: moniker range="vs-2017"
 Clique com o botão direito do mouse em um nó de pacote ou no nó do **npm** para executar uma das seguintes ações:
