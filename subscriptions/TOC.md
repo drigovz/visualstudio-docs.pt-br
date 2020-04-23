@@ -77,6 +77,7 @@
 ### Atribuir assinaturas
 #### [Adicionar usuários únicos](assign-license.md)
 #### [Adicionar vários usuários](assign-license-bulk.md)
+#### [Atribuir assinaturas específicas](assign-guid.md)
 ### [Editar assinaturas](edit-license.md)
 ### [Excluir assinaturas](delete-license.md)
 ### [Procurar uma assinatura](search-license.md)
