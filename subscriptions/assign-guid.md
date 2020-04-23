@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem fazer uma assinatura específica do GUID para assinantes
-ms.openlocfilehash: 722aaedcd6da0224311960d1587d0c2c24eec60f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760166"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072587"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Atribua assinaturas específicas no Portal de Administração de Assinaturas do Visual Studio
 
@@ -49,6 +49,7 @@ O passo final é baixar o modelo **Bulk add,** preencher as informações necess
 
 > [!IMPORTANT]
 > Para garantir um upload bem-sucedido, certifique-se de que:
+> - Você está usando o modelo vinculado na caixa de diálogo quando você **seleciona Adicionar em massa**.  Não use uma cópia armazenada localmente do modelo, pois ele pode não conter todos os campos necessários.  O uso de um modelo antigo fará com que o upload falhe. 
 > - Todos os campos mostrados como **Exigidos** no modelo estão completos.
 > - Não há erros listados na coluna **Mensagem de erro.**
 > - Cada GUID é usado apenas uma vez no modelo. 
