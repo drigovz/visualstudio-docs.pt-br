@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/16/2020
+ms.date: 04/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c9021e2202701e01ee0e34fbf074f07fc1c1b8f0
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33d82e84b28fa85bf4cfb014ecd292f31e0c84cb
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544348"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109449"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -27,8 +27,9 @@ ms.locfileid: "81544348"
 
 A tabela a seguir lista os números de build e as datas de lançamento do Visual Studio 2019 até o momento.
 
-| **Versão**| **Canal** | **Data de liberação** | **Versão de construção** |
+| **Versão**| **Canal** | **Data de liberação** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Visualização 4 | 23 de abril de 2020 | 16.6.30021.99 |
 | 16.6.0 | Versão Prévia 3 | 16 de abril de 2020 | 16.6.30014.187 |
 | 16.0.13 | Versão | 14 de abril de 2020 | 16.0.28803.718 |
 | 16.4.7 | Versão | 14 de abril de 2020 | 16.4.30011.19 |
@@ -138,7 +139,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 A tabela a seguir relaciona os números de build e as datas de lançamento do Visual Studio 2017 até o momento.
 
-| **Versão**| **Canal** | **Data de liberação** | **Versão de construção** |
+| **Versão**| **Canal** | **Data de liberação** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.22 | Versão | 14 de abril de 2020 | 15.9.28307.1093 |
 | 15.9.21 | Versão | 10 de março de 2020 | 15.9.28307.1064 |
@@ -313,9 +314,9 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-* [Visual Studio lança ritmo](/visualstudio/productinfo/release-rhythm/)
+* [Ritmo de versão do Visual Studio](/visualstudio/productinfo/release-rhythm/)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
