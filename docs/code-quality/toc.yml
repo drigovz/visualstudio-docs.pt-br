@@ -332,6 +332,10 @@
                   href: ca1064.md
                 - name: 'CA1065: Não acionar exceções em locais inesperados'
                   href: ca1065.md
+                - name: 'CA1066: Implementar IEquatable ao substituir Equals'
+                  href: ca1066.md
+                - name: 'CA1067: Substituir Equals ao implementar IEquatable'
+                  href: ca1067.md
                 - name: 'CA1068: Os parâmetros CancellationToken devem vir por último'
                   href: ca1068.md
                 - name: 'CA2210: Assemblies devem ter nomes fortes válidos'
