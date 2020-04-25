@@ -1,6 +1,6 @@
 ---
 title: Criar stubs de método de teste de unidade
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844311"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82152999"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
 
@@ -22,11 +22,11 @@ O comando **Criar Testes de Unidade** cria os stubs de método de teste de unida
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> O comando de menu **Criar Testes de Unidade** está disponível somente para o código gerenciado direcionado ao .NET Framework (mas não ao .NET Core).
+> O comando de menu **criar testes de unidade** só está disponível para código C# destinado a .NET Framework (mas não ao .NET Core).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> O **comando Create Unit Tests** menu está disponível apenas para código gerenciado.
+> O comando de menu **criar testes de unidade** só está disponível para código C#.
 ::: moniker-end
 
 O comando de menu **Criar Testes de Unidade** é extensível e pode ser usado para gerar testes para MSTest, MSTest V2, NUnit e xUnit.
@@ -56,7 +56,7 @@ Use esse recurso sempre que precisar criar testes de unidade, mas especialmente 
 
 No entanto, esse recurso é igualmente aplicável quando um desenvolvedor começa escrevendo um pouco de código e o usa para inicializar testes de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como criar stubs de método de teste de unidade com "Criar Testes de Unidade"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Postagens no blog sobre testes de unidade](https://devblogs.microsoft.com/devops/?s=unit+testing)
