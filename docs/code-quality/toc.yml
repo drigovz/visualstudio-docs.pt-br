@@ -430,6 +430,8 @@
                   href: ca1506.md
                 - name: 'CA1507: Usar nameof no lugar da cadeia de caracteres'
                   href: ca1507.md
+                - name: 'CA1508: Evitar código condicional morto'
+                  href: ca1508.md
             - name: Avisos de mobilidade
               items:
                 - name: Visão geral
