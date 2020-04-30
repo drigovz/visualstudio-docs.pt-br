@@ -107,6 +107,7 @@ f1_keywords:
 - CA1506
 - CA1507
 - CA1508
+- CA1509
 - CA1600
 - CA1601
 - CA1700
@@ -172,6 +173,7 @@ f1_keywords:
 - CA2004
 - CA2006
 - CA2007
+- CA2009
 - CA2100
 - CA2101
 - CA2102
@@ -270,12 +272,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 4b4b0929830f825b2c1f7fd568620a3f743308f4
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167378"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586301"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
@@ -283,7 +285,6 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 
 | CheckId | Aviso | Descrição |
 |---------| - | - |
-| CA2007 | [CA2007: não aguardar diretamente uma tarefa](ca2007.md) | Um método assíncrono [aguarda](/dotnet/csharp/language-reference/keywords/await) um <xref:System.Threading.Tasks.Task> diretamente. Quando um método assíncrono aguarda uma <xref:System.Threading.Tasks.Task> continuação direta, ocorre no mesmo thread que criou a tarefa. Esse comportamento pode ser dispendioso em termos de desempenho e pode resultar em um deadlock no thread da interface do usuário. Considere chamar <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> para sinalizar sua intenção para continuação. |
 | CA1000 | [CA1000: Não declarar membros estáticos em tipos genéricos](../code-quality/ca1000.md) | Quando um membro estático de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. Nesses dois casos, a sintaxe para especificar o argumento de tipo é diferente e facilmente confundida. |
 | CA1001 | [CA1001: Tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001.md) | Uma classe declara e implementa um campo de instância que é um tipo System.IDisposable, e a classe não implementa IDisposable. Uma classe que declara um campo IDisposable indiretamente possui um recurso não gerenciado e deve implementar a interface IDisposable. |
 | CA1002 | [CA1002: Não expor listas genéricas](../code-quality/ca1002.md) | System. Collections. Generic. List< (Of \<(T>) >) é uma coleção genérica que é projetada para desempenho, não herança. Por isso, List não contém membros virtuais. As coleções genéricas projetadas para herança devem ser expostas em seu lugar. |
@@ -383,6 +384,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1506 | [CA1506: Evitar acoplamento de classes excessivo](../code-quality/ca1506.md) | Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém. |
 | CA1507 | [CA1507: Usar nameof no lugar da cadeia de caracteres](../code-quality/ca1507.md) | Um literal de cadeia de caracteres é usado como um `nameof` argumento em que uma expressão pode ser usada. |
 | CA1508 | [CA1508: Evitar código condicional morto](../code-quality/ca1508.md) | Um método tem código condicional que sempre é avaliado como `true` ou `false` em tempo de execução. Isso leva a um código inativo `false` na ramificação da condição. |
+| CA1509 | [CA1509: entrada inválida no arquivo de configuração de métricas de código](../code-quality/ca1509.md) | As regras de métricas de código, como [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) e [CA1506](ca1506.md), forneciam um `CodeMetricsConfig.txt` arquivo de configuração chamado que tem uma entrada inválida. |
 | CA1600 | [CA1600: Não usar prioridade de processo ociosa](../code-quality/ca1600.md) | Não defina a prioridade do processo como Ocioso. Os processos que têm System.Diagnostics.ProcessPriorityClass.Idle ocuparão a CPU quando estariam ociosos e, assim, bloquearão a espera. |
 | CA1601 | [CA1601: Não usar temporizadores que impedem alterações no estado de energia](../code-quality/ca1601.md) | A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos. |
 | CA1700 | [CA1700: Não nomear valores de enumeração 'Reserved'](../code-quality/ca1700.md) | Esta regra pressupõe que um membro da enumeração que tenha um nome que contém "reserved" não é usado atualmente, mas é um espaço reservado a ser renomeado ou removido em uma versão futura. Renomear ou remover um membro é uma alteração drástica. |
@@ -428,10 +430,10 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1823 | [CA1823: Evitar campos particulares não utilizados](../code-quality/ca1823.md) | Foram detectados campos particulares que aparentemente não são acessados no assembly. |
 | CA1824 |[CA1824: Marque assemblies com NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | O atributo NeutralResourcesLanguage informa o Gerenciador de recursos da linguagem que foi usada para exibir os recursos de uma cultura neutra para um assembly. Isso melhora o desempenho da pesquisa para o primeiro recurso carregado e pode reduzir o conjunto de trabalho. |
 | CA1825 |[CA1825: Evitar alocações de matriz de comprimento zero](../code-quality/ca1825.md) | A inicialização de uma matriz de comprimento zero leva à alocação de memória desnecessária. Em vez disso, use a instância de matriz vazia estaticamente alocada chamando <xref:System.Array.Empty%2A?displayProperty=nameWithType>. A alocação de memória é compartilhada entre todas as invocações desse método. |
-| CA1826 |[CA1826: Use a propriedade em vez do método Enumerable do LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>O método LINQ foi usado em um tipo que dá suporte a uma propriedade equivalente e mais eficiente. |
-| CA1827 |[CA1827: não use Count/LongCount quando qualquer um puder ser usado](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>o <xref:System.Linq.Enumerable.LongCount%2A> método or foi usado <xref:System.Linq.Enumerable.Any%2A> onde o método seria mais eficiente. |
-| CA1828 |[CA1828: não use CountAsync/LongCountAsync quando AnyAsync puder ser usado](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>o <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> método or foi usado <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> onde o método seria mais eficiente. |
-| CA1829 |[CA1829: Use a propriedade Length/Count em vez do método Enumerable. Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>O método LINQ foi usado em um tipo que dá suporte a uma propriedade `Length` equivalente `Count` , mais eficiente ou. |
+| CA1826 |[CA1826: Usar a propriedade em vez do método Linq Enumerable](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>O método LINQ foi usado em um tipo que dá suporte a uma propriedade equivalente e mais eficiente. |
+| CA1827 |[CA1827: Não usar Count/LongCount quando Any puder ser usado](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>o <xref:System.Linq.Enumerable.LongCount%2A> método or foi usado <xref:System.Linq.Enumerable.Any%2A> onde o método seria mais eficiente. |
+| CA1828 |[CA1828: Não usar CountAsync/LongCountAsync quando AnyAsync puder ser usado](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>o <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> método or foi usado <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> onde o método seria mais eficiente. |
+| CA1829 |[CA1829: Usar a propriedade Length/Count em vez do método Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>O método LINQ foi usado em um tipo que dá suporte a uma propriedade `Length` equivalente `Count` , mais eficiente ou. |
 | CA1900 | [CA1900: Campos de tipo de valor devem ser portáteis](../code-quality/ca1900.md) | Essa regra verifica se as estruturas declaradas usando-se o layout explícito serão alinhadas corretamente durante a realização de marshaling para o código não gerenciado em sistemas operacionais de 64 bits. |
 | CA1901 | [CA1901: as declarações P/Invoke devem ser portáteis](../code-quality/ca1901.md) | Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke, além de verificar se o tamanho do parâmetro está correto durante a realização de marshaling para código não gerenciado em sistemas operacionais 32 e 64 bits. |
 | CA1903 | [CA1903: Usar apenas a API da estrutura de destino](../code-quality/ca1903.md) | Um membro ou um tipo está usando um membro ou um tipo que foi introduzido em um service pack não incluído com a estrutura de destino do projeto. |
@@ -441,6 +443,8 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA2003 |[CA2003: Não tratar fibras como threads](../code-quality/ca2003.md) | Um thread gerenciado está sendo tratado como um thread do [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]. |
 | CA2004 | [CA2004: Remover as chamadas a GC.KeepAlive](../code-quality/ca2004.md) | Se você converter no uso de SafeHandle, remova todas as chamadas para GC.KeepAlive (objeto). Nesse caso, as classes não precisarão chamar GC.KeepAlive. Isso pressupõe que elas não tenham um finalizador, mas dependam de SafeHandle para finalizar o identificador do sistema operacional para elas. |
 | CA2006 | [CA2006: Usar SafeHandle para encapsular recursos nativos](../code-quality/ca2006.md) | O uso de IntPtr em código gerenciado pode indicar um problema de segurança e confiabilidade em potencial. Todos os usos de IntPtr devem ser examinados para determinar se o uso de um SafeHandle, ou tecnologia semelhante, é necessário em seu lugar. |
+| CA2007 | [CA2007: não aguardar diretamente uma tarefa](ca2007.md) | Um método assíncrono [aguarda](/dotnet/csharp/language-reference/keywords/await) um <xref:System.Threading.Tasks.Task> diretamente. Quando um método assíncrono aguarda uma <xref:System.Threading.Tasks.Task> continuação direta, ocorre no mesmo thread que criou a tarefa. Esse comportamento pode ser dispendioso em termos de desempenho e pode resultar em um deadlock no thread da interface do usuário. Considere chamar <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> para sinalizar sua intenção para continuação. |
+| CA2009 | [CA2009: não chamar ToImmutableCollection em um valor imutável](ca2009.md) | `ToImmutable`o método não era necessariamente chamado em uma coleção imutável do <xref:System.Collections.Immutable> namespace. |
 | CA2100 | [CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança](../code-quality/ca2100.md) | Um método define a propriedade System.Data.IDbCommand.CommandText usando uma cadeia de caracteres criada com base em um argumento da cadeia de caracteres para o método. Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. |
 | CA2101 |[CA2101: especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101.md) | Um membro de invocação da plataforma permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não realiza marshaling da cadeia de caracteres explicitamente. Isso pode causar uma vulnerabilidade de segurança em potencial. |
 | CA2102 | [CA2102: Capturar exceções não CLSCompliant em manipuladores gerais](../code-quality/ca2102.md) | Um membro em um assembly que não é marcado usando-se o RuntimeCompatibilityAttribute ou que é marcado como RuntimeCompatibility (WrapNonExceptionThrows = false) contém um bloco de captura que trata System.Exception e não contém um bloco de captura geral imediatamente posterior. |

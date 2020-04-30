@@ -14,19 +14,19 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c57fab57b4f9baf24212e2806d6d4acd913dff91
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75843995"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586741"
 ---
 # <a name="debugging-gpu-code"></a>Depurando código de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode depurar código C++ que está sendo executado na unidade de processamento gráfico (GPU). O suporte à depuração de GPU no Visual Studio inclui a detecção de concorrência, início de processos e anexação a eles, e a integração nas janelas de depuração.  
   
-## <a name="supported-platforms"></a>Plataformas compatíveis  
+## <a name="supported-platforms"></a>Plataformas com suporte  
  A depuração tem suporte no [!INCLUDE[win7](../includes/win7-md.md)], no [!INCLUDE[win8](../includes/win8-md.md)], no [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] e no [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar no emulador de software, é necessário o [!INCLUDE[win8](../includes/win8-md.md)] ou [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar no hardware, você deve instalar os drivers para a sua placa gráfica. Nem todos os fornecedores de hardware implementam todos os recursos do depurador. Consulte a documentação do fornecedor para conhecer as restrições.  
   
 > [!NOTE]
@@ -50,17 +50,17 @@ Você pode depurar código C++ que está sendo executado na unidade de processam
 2. O comando **Executar Bloco Atual até o Cursor** executa seu aplicativo até que todos os threads no bloco atual atinjam o cursor e, em seguida, seja interrompido.  
   
 ## <a name="debugging-windows"></a>Janelas de depuração  
- Ao usar determinadas janelas de depuração, você pode examinar, sinalizar e congelar threads de GPU. Para obter mais informações, consulte .  
+ Ao usar determinadas janelas de depuração, você pode examinar, sinalizar e congelar threads de GPU. Para obter mais informações, consulte:  
   
 - [Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)  
   
 - [Usando a janela Tarefas](../debugger/using-the-tasks-window.md)  
   
-- [Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Como: usar a janela de inspeção paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 - [Depurar threads e processos](../debugger/debug-threads-and-processes.md) (barra de ferramentas do local de depuração)  
   
-- [Como usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+- [Como: usar a janela threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Exceções de sincronização de dados  
  O depurador pode identificar várias condições de sincronização de dados durante a execução. Quando uma condição for detectada, o depurador entrará no estado de interrupção. Você tem duas opções: **Interromper** ou **Continuar**. Usando a caixa de diálogo **Exceções**, você pode configurar se o depurador detecta essas condições e também para quais condições ele interromperá. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md). Você também pode usar a caixa de diálogo **Opções** para especificar que o depurador deve ignorar exceções se os dados gravados não alterarem o valor dos dados. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).  
@@ -68,13 +68,13 @@ Você pode depurar código C++ que está sendo executado na unidade de processam
 ## <a name="troubleshooting"></a>Solução de problemas  
   
 ### <a name="specifying-an-accelerator"></a>Especificando um acelerador  
- Os pontos de interrupção no código de GPU serão atingidos apenas se o código estiver em execução no acelerador [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se você não especificar um acelerador em seu código, o acelerador REF será selecionado automaticamente como o **Tipo de Acelerador de Depuração** nas propriedades do projeto. Se seu código selecionar explicitamente um acelerador, o acelerador REF não será usado durante a depuração e os pontos de interrupção não serão atingidos a menos que seu hardware de GPU tiver suporte à depuração. Você pode solucionar isso escrevendo seu código de forma que use um acelerador REF durante a depuração. Para obter mais informações, consulte Project Properties e [using Accelerator and Accelerator_view Objects](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) and [Project Settings C++ for a Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Os pontos de interrupção no código de GPU serão atingidos apenas se o código estiver em execução no acelerador [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se você não especificar um acelerador em seu código, o acelerador REF será selecionado automaticamente como o **Tipo de Acelerador de Depuração** nas propriedades do projeto. Se seu código selecionar explicitamente um acelerador, o acelerador REF não será usado durante a depuração e os pontos de interrupção não serão atingidos a menos que seu hardware de GPU tiver suporte à depuração. Você pode solucionar isso escrevendo seu código de forma que use um acelerador REF durante a depuração. Para obter mais informações, consulte Propriedades do projeto e [uso de objetos de acelerador e accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) e [configurações de projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Pontos de interrupção condicionais  
  Os pontos de interrupção condicionais no código de GPU têm suporte, mas nem todas as expressões podem ser avaliadas no dispositivo. Quando uma expressão não pode ser avaliada no dispositivo, ela será avaliada no depurador. O depurador provavelmente será executado com mais lentidão do que no dispositivo.  
   
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Erro: problema de configuração no Tipo de Acelerador de Depuração.  
- Esse erro ocorre quando há uma inconsistência entre as configurações de projeto e a configuração do PC no qual você está depurando. Para obter mais informações, consulte [configurações de projeto C++ para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Esse erro ocorre quando há uma inconsistência entre as configurações de projeto e a configuração do PC no qual você está depurando. Para obter mais informações, consulte [configurações de projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Erro: o driver de depuração do Tipo de Acelerador de Depuração selecionado não está instalado no computador de destino.  
  Esse erro ocorrerá se você estiver depurando em um PC remoto. O depurador não poderá determinar até o tempo de execução se os drivers estiverem instalados no PC remoto. Os drivers estão disponíveis com o fabricante da placa gráfica.  
@@ -82,7 +82,7 @@ Você pode depurar código C++ que está sendo executado na unidade de processam
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Erro: a TDR (Detecção de Tempo Limite e Recuperação) deve ser desabilitada no site remoto.  
  É possível que as computações de C++ AMP excedam o intervalo de tempo padrão que é definido pela detecção de tempo limite do Windows e pelo processo de recuperação (TDR). Quando isso acontecer, a computação será cancelada e os dados serão perdidos. Para obter mais informações, confira [Manipulando TDRs em C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx).  
   
-## <a name="see-also"></a>Veja também  
- [Walkthrough: Depurando um C++ aplicativo amp](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+## <a name="see-also"></a>Consulte Também  
+ [Walkthrough: Depurando um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Iniciar a depuração de GPU no Visual Studio](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx)
+ [Iniciar a depuração de GPU no Visual Studio](https://docs.microsoft.com/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

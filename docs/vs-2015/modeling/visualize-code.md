@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851354"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586760"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar as ferramentas de visualização e modelagem no Visual Studio para ajudá-lo a entender o código existente e a descrever seu aplicativo. Isso permite aprender visualmente como suas mudanças poderiam afetar o código e ajudar a avaliar o trabalho e os riscos resultantes dessas mudanças. Por exemplo:
+Você pode usar as ferramentas de visualização e modelagem no Visual Studio para ajudá-lo a entender o código existente e a descrever seu aplicativo. Isso permite que você aprenda visualmente como suas alterações podem afetar o código e ajudá-lo a avaliar o trabalho e os riscos resultantes dessas alterações. Por exemplo: 
 
 - Para entender as relações em seu código, mapeie essas relações visualmente.
 
@@ -41,18 +41,18 @@ Você pode usar as ferramentas de visualização e modelagem no Visual Studio pa
 
 |||
 |-|-|
-|**Entenda o código e suas relações:**<br /><br /> Mapeie as relações entre partes específicas do código.<br /><br /> Consulte uma visão geral das relações em seu código para a solução inteira.<br /><br /> **Observação**: nesta versão do Visual Studio, o termo *mapa de código* é usado no lugar do *grafo de dependência*.|-   [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [usar mapas de código para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [encontrar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [métodos de mapeamento na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Entenda o código e suas relações:**<br /><br /> Mapeie as relações entre partes específicas do código.<br /><br /> Consulte uma visão geral das relações em seu código para a solução inteira.<br /><br /> **Observação**: nesta versão do Visual Studio, o termo *mapa de código* é usado no lugar do *grafo de dependência*.|-   [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usar mapas de código para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Localizar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Entenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto Criando diagramas de classe do código.|[Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Descreva o design do sistema de alto nível e valide o código em relação a este design:**<br /><br /> Descreva o design do sistema de alto nível e suas dependências pretendidas Criando diagramas de camada. Valide o código em relação a esse design para garantir que as dependências no código permaneçam consistentes com o design.|-   [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de camada de -   : referência](../modeling/layer-diagrams-reference.md)<br />[diagramas de camada de -   : diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|
-|**Comunique os requisitos e a arquitetura do usuário:**<br /><br /> Modele os requisitos de usuário e a arquitetura do seu sistema de software desenhando os seguintes diagramas UML: atividade, componente, classe, sequência e caso de uso.|-   [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)<br />[requisitos de usuário do modelo](../modeling/model-user-requirements.md) de -   <br />-   [modelar a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md)|
+|**Descreva o design do sistema de alto nível e valide o código em relação a este design:**<br /><br /> Descreva o design do sistema de alto nível e suas dependências pretendidas Criando diagramas de camada. Valide o código em relação a esse design para garantir que as dependências no código permaneçam consistentes com o design.|-   [Crie diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|
+|**Comunique os requisitos e a arquitetura do usuário:**<br /><br /> Modele os requisitos de usuário e a arquitetura do seu sistema de software desenhando os seguintes diagramas UML: atividade, componente, classe, sequência e caso de uso.|-   [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)<br />-   [Requisitos de usuário de modelo](../modeling/model-user-requirements.md)<br />-   [Modele a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="external-resources"></a>Recursos Externos
+## <a name="external-resources"></a>Recursos externos
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Fóruns**|-   [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artigos técnicos e diários**|[Fórum de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [análise e arquitetura de modelagem](../modeling/analyze-and-model-your-architecture.md) [criar modelos para o modelo de aplicativo](../modeling/create-models-for-your-app.md) [modelo de requisitos de usuário](../modeling/model-user-requirements.md) [a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md) [usa modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
