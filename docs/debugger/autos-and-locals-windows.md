@@ -1,4 +1,4 @@
----
+﻿---
 title: Inspecionar variáveis – Janelas automáticas e locais Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
@@ -91,7 +91,7 @@ Você também pode alternar os nomes de propriedade e filtrar as propriedades n�
 
 Você pode usar a barra de ferramentas **Local de Depuração** para selecionar uma função desejada, thread ou processo, que altera o contexto para as janelas **Autos** e **Locals**.
 
-Para habilitar a barra de ferramentas **local de depuração**, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição**  >  **Barras de ferramentas**  >  **local de depuração**.
+Para habilitar a barra de ferramentas **local de depuração**, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição** > **Barras de ferramentas** > **local de depuração**.
 
 Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, a execução para e você pode ver o local na barra de ferramentas **local de depuração**.
 
