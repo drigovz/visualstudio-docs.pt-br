@@ -1,5 +1,5 @@
 ---
-title: IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs
+title: IDebugReturnValueEvent2:GetReturnValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2::GetReturnValue
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddba529115bfb868fc913c37f9b15f1b4f658ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720283"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-Obtém o valor retornado no passo a passo de ou em uma função.
+Obtém o valor devolvido ao sair ou sobre uma função.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ int GetReturnValue ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppReturnValue`\
-[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o valor a ser recuperado.
+[fora] Retorna um objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa o valor a ser recuperado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

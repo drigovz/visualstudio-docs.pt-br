@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetHitCount method
 - IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8e59fadb019124cca111f23e99220b77df2a88d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314467"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735408"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Define a contagem de ocorrências para o ponto de interrupção associada.
+Define a contagem de acertos para o ponto de ruptura vinculado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ int SetHitCount( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dwHitCount`\
-[in] A contagem de ocorrências para definir.
+[em] A contagem de acertos para definir.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto associado de ponto de interrupção é definido como `BPS_DELETED` (parte do [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração).
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de `BPS_DELETED` ponto de ruptura vinculado estiver definido como (parte da [enumeração BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Comentários
- A contagem de ocorrências é o número de vezes que este ponto de interrupção foi disparado durante a execução da sessão atual.
+ A contagem de acertos é o número de vezes que este ponto de partida foi disparado durante a atual execução da sessão.
 
- Normalmente, esse método é chamado pelo mecanismo de depuração para atualizar a contagem de ocorrências atual no ponto de interrupção.
+ Este método é normalmente chamado pelo mecanismo de depuração para atualizar a contagem de acertos atuais neste ponto de breakpoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

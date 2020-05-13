@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337441"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735468"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Define ou altera a condição associada a este ponto de interrupção associado.
+Define ou altera a condição associada a este ponto de ruptura vinculado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ int SetCondition( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `bpCondition`\
-[in] Um valor a partir de [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumeração que descreve a condição.
+[em] Um valor da [enumeração BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que descreve a condição.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto associado de ponto de interrupção é definido como `BPS_DELETED` (parte do [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração).
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de `BPS_DELETED` ponto de ruptura vinculado estiver definido como (parte da [enumeração BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Comentários
- Qualquer condição que foi previamente associada este ponto de interrupção será perdida.
+ Qualquer condição anteriormente associada a este ponto de ruptura está perdida.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

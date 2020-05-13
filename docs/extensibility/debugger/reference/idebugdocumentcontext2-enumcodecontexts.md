@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: caa6be915fad9e64fb065babbf218f33f2848200
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349977"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731852"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
-Recupera uma lista de todos os contextos de código associado a este contexto de documento.
+Recupera uma lista de todos os contextos de código associados a este contexto de documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ int EnumCodeContexts(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppEnumCodeCxts`\
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Um contexto de documento único pode gerar vários contextos de código quando o documento está usando modelos ou arquivos de inclusão.
+Um único contexto de documento pode gerar vários contextos de código quando o documento está usando modelos ou incluir arquivos.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um simples `CDebugContext` objeto que expõe o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.
+O exemplo a seguir mostra como `CDebugContext` implementar esse método para um objeto simples que expõe a interface [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)
@@ -107,6 +107,6 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

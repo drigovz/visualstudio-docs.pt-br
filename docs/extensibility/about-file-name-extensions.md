@@ -6,24 +6,24 @@ helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313716"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740351"
 ---
 # <a name="about-file-name-extensions"></a>Sobre extensões de nome de arquivo
-Quando você registra uma extensão de arquivo de um VSPackage, associá-la com uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso é importante se mais de uma versão de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é instalado em um computador.
+Quando você registra uma extensão de arquivo de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage, você o associa a uma versão de . Isso é importante se mais [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de uma versão do for instalado em um computador.
 
- Extensões de arquivo para os VSPackages são registradas em **HKEY_CLASSES_ROOT** chave com um valor padrão que aponta para o identificador associado programático (ProgID).
+ As extensões de arquivo para VSPackages são registradas em **HKEY_CLASSES_ROOT** chave com um valor padrão que aponta para o identificador programático associado (ProgID).
 
- O exemplo a seguir mostra informações de registro para o *vcproj* extensão de arquivo:
+ O exemplo a seguir mostra informações de registro para a extensão de arquivo *.vcproj:*
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Arquivos associados [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] devem ter um ProgID com controle de versão, como `VisualStudio.vcproj.8.0`. Um ProgID com controle de versão permite instalações lado a lado do produto para manter as associações de extensão de arquivo entre as versões do produto. Um ProgID específico da versão também permite que você use verbos padrão, como abrir, editar e assim por diante, sem a preocupação de substituir ou ser substituído por outros aplicativos ou versões do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Os arquivos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] associados devem ter um ProgID versionado, como `VisualStudio.vcproj.8.0`. Um ProgID versão permite instalações lado a lado do produto para manter associações de extensão de arquivo entre as versões do produto. Um ProgID específico da versão também permite que você use verbos padrão, como abrir, editar e assim por diante, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]sem a preocupação de substituir ou ser substituído por outros aplicativos ou versões de .
 
- Em alguns casos, o ProgID associado com uma extensão de arquivo não deve ser alterado. Por exemplo, o ProgID para o *. htm* extensão de arquivo (progid = htmlfile) é embutido no código em vários locais no sistema operacional e é amplamente conhecida e usada em associação com *. htm* e *. HTML* arquivos.
+ Em certos casos, o ProgID associado a uma extensão de arquivo não deve ser alterado. Por exemplo, o ProgID para a extensão de arquivo *.htm* (progid = htmlfile) é codificado em vários lugares do sistema operacional, e é amplamente conhecido e usado em associação com arquivos *.htm* e *.html.*
 
-## <a name="see-also"></a>Consulte também
-- [Registrar as extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Especificar identificadores de arquivo para extensões de nome de arquivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+## <a name="see-also"></a>Confira também
+- [Registre extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Especificar manipuladores de arquivos para extensões de nome de arquivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

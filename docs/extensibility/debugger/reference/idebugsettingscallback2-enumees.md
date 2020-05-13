@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc9073ae5244b05234b3f37874bd6bcd6347954f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720243"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera os avaliadores de expressão disponível considerando os identificadores de idioma e o fornecedor.
+Enumera os avaliadores de expressão disponíveis, dado o idioma e os identificadores do fornecedor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ public int EnumEEs(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `celtBuffer`\
-[in] Número de elementos no `pceltEEs` buffer.
+[em] Número de elementos no `pceltEEs` buffer.
 
 `rgguidLang`\
-[no, out] Identificador exclusivo para a linguagem de programação.
+[dentro, fora] Identificador exclusivo para a linguagem de programação.
 
 `rgguidVendor`\
-[no, out] Identificador exclusivo para o fornecedor.
+[dentro, fora] Identificador exclusivo para o fornecedor.
 
 `pceltEEs`\
-[no, out] Matriz de avaliadores de expressão.
+[dentro, fora] Matriz de avaliadores de expressão.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

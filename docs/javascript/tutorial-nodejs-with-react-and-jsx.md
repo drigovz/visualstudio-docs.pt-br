@@ -1,8 +1,8 @@
 ---
 title: Criar um aplicativo Node.js e React
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
-ms.custom: mvc
-ms.date: 11/01/2019
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550024"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760087"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -72,7 +72,7 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
 * Você precisa ter o runtime do Node.js instalado.
 
-    Este tutorial foi testado com a versão 10.16.0.
+    Este tutorial foi testado com a versão 12.6.2.
 
     Se você não o tiver instalado, recomendamos que você instale a versão LTS do site [node.js](https://nodejs.org/en/download/) para melhor compatibilidade com frameworks e bibliotecas externas. O Node.js é construído para arquiteturas de 32 bits e 64 bits. As ferramentas Node.js no Visual Studio, incluídas na carga de trabalho do Node.js, suportam ambas as versões. Apenas um é necessário e o instalador Node.js suporta apenas um sendo instalado por vez.
     
@@ -106,7 +106,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
 
     (3) O nó do npm mostra os pacotes npm instalados. Clique com o botão direito do mouse no nó do npm para pesquisar e instalar pacotes npm usando uma caixa de diálogo ou instalar e atualizar pacotes usando as configurações de *package.json* e as opções de clique com o botão direito do mouse no nó do npm.
 
-    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações sobre esse arquivo, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações, consulte [Gerenciar pacotes npm](../javascript/npm-package-management.md).
 
     (5) Arquivos de projeto como *server.js* aparecem no nó do projeto. *server.js* é o arquivo de inicialização do projeto e é por isso que ele é exibido em **negrito**. Defina o arquivo de inicialização clicando com o botão direito do mouse em um arquivo no projeto e selecionando **Definir como arquivo de inicialização do Node.js**.
 
@@ -125,11 +125,11 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
 1. No Gerenciador de Soluções (painel direito), clique com botão direito do mouse no nó **npm** do projeto e escolha **Instalar Novos Pacotes npm**.
 
-    Na caixa de diálogo **Instalar Novos Pacotes npm**, você pode optar por instalar a versão mais recente do pacote ou especificar uma versão. Se você optar por instalar a versão atual desses pacotes, mas tiver erros inesperados posteriormente, talvez seja necessário instalar as versões exatas do pacote descritas nas próximas etapas.
+    Na caixa de diálogo **Instalar Novos Pacotes npm**, você pode optar por instalar a versão mais recente do pacote ou especificar uma versão. Se você optar por instalar a versão atual desses pacotes, mas encontrar erros inesperados mais tarde, você pode querer instalar as versões exatas do pacote descritas mais tarde nessas etapas.
 
 1. Na caixa de diálogo **Instalar Novos Pacotes npm**, procure o pacote react e selecione **Instalar Pacote** para instalá-lo.
 
-    ![Instalar pacotes npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Instalar pacotes npm](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Selecione a janela de **Saída** para ver o progresso da instalação do pacote (selecione **Npm** no campo **Mostrar saída de**). Quando instalado, o pacote é exibido sob o nó **npm**.
 
@@ -139,14 +139,14 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -154,13 +154,15 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
 1. Salve as alterações.
 
-1. Clique com o botão direito do mouse no nó **npm** no projeto e escolha **Atualizar Pacotes npm**.
+1. Clique com o botão direito do mouse no nó **npm** em seu projeto e escolha **Instalar pacotes npm**.
+
+    Este comando executa diretamente o comando npm install.
 
     No painel inferior, escolha a janela de **Saída** para ver o progresso da instalação dos pacotes. A instalação pode levar alguns minutos e talvez você não veja os resultados imediatamente. Para ver a saída, verifique se marcou **Npm** no campo **Mostrar saída de** na janela de **Saída**.
 
     Estes são os módulos npm que aparecem no Gerenciador de Soluções após a instalação.
 
-    ![Pacotes npm](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![Pacotes npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Se você preferir instalar pacotes npm usando a linha de comando, clique com o botão direito do mouse no nó do projeto e escolha **Abrir Prompt de Comando Aqui**. Usar comandos padrão do Node.js para instalar pacotes.
@@ -310,7 +312,7 @@ Nas etapas anteriores, você adicionou *webpack-config.js* ao projeto. Em seguid
 
     A janela do prompt de comando mostra o resultado.
 
-    ![Execute o webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Execute o webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Se encontrar erros em vez da saída anterior, você precisará resolvê-para que seu aplicativo funcione. Se as versões de seu pacote npm forem diferentes das versões mostradas neste tutorial, isso poderá ser uma fonte de erros. Uma maneira de corrigir erros é usar as versões exatas mostradas nas etapas anteriores. Além disso, se uma ou mais dessas versões de pacote tiver sido preterida e gerar um erro, talvez você precise instalar uma versão mais recente para corrigir erros. Para obter informações sobre como usar *package.json* para controlar as versões do pacote de npm, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md).
 
@@ -340,7 +342,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
 
 ## <a name="run-the-app"></a>Executar o aplicativo
 
-1. Selecione o Microsoft Edge ou o Chrome como o alvo de depuração atual.
+1. Selecione **o Web Server (Google Chrome)** ou o Web Server **(Microsoft Edge)** como o destino de depuração atual.
 
     ::: moniker range=">=vs-2019"
     ![Selecione o Chrome como destino de depuração](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -349,12 +351,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
     ![Selecione o Chrome como destino de depuração](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Se o Chrome estiver disponível na sua máquina, mas não aparecer como uma opção, escolha **o Navegador da Web (nome do navegador)** > **Selecione** o Navegador da Web na lista de desoneração de destino de depuração e selecione o **Chrome** como o destino padrão do navegador.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Se o Chrome estiver disponível na sua máquina, mas não aparecer como uma opção, escolha o **Google Chrome** do Navegador da Web (nome do **navegador)** > na lista de desinicialização de destino de depuração e selecione o **Chrome** como o destino padrão do navegador.
-    ::: moniker-end
+    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
 
 1. Para executar o aplicativo, pressione **F5** (**Depurar** > **Iniciar Depuração**) ou no botão de seta verde.
 

@@ -1,7 +1,7 @@
 ---
 title: Anexar aos processos em execução com o depurador | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233021"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385487"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio a um processo de execução em um computador local ou remoto. Após a execução do processo, selecione **Depurar** > **Anexar ao processo** ou pressione **Ctrl**+**Alt**+**P** no Visual Studio e use a caixa de diálogo Anexar ao **processo** para anexar o depurador ao processo.
@@ -253,15 +253,15 @@ Para alguns tipos de aplicativos, como aplicativos Universal Windows App (UWP), 
 
 Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente vinculando à opção do vinculador [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
-Para depuração de script do lado do cliente, a depuração de script deve ser ativada no navegador. Para depurar o script do lado do cliente no Chrome, escolha o **kit da Web** como o tipo de código e, `chrome.exe --remote-debugging-port=9222` dependendo do tipo de aplicativo, você pode precisar fechar todas as instâncias do Chrome e iniciar o navegador no modo de depuração (digite a partir de uma linha de comando).
+Para depuração de script do lado do cliente, a depuração de script deve ser ativada no navegador. Para depurar o script do lado do cliente no Chrome, escolha **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge - Chromium)** como o tipo de código `chrome.exe --remote-debugging-port=9222` e, dependendo do tipo de aplicativo, você pode precisar fechar todas as instâncias do Chrome e iniciar o navegador no modo de depuração (digite a partir de uma linha de comando). Nas versões anteriores do Visual Studio, o depurador de script para o Chrome era **o web kit**.
 
 Para selecionar rapidamente um processo de execução para anexar, no Visual Studio, digite **Ctrl**+**Alt**+**P**e digite a primeira letra do nome do processo.
 
 |Cenário|Método de depuração|Nome do processo|Notas e links|
 |-|-|-|-|
 |Depuração remota ASP.NET 4 ou 4.5 em um servidor IIS|Use ferramentas remotas **e conecte-se ao processo**|*w3wp.exe*|Consulte [ASP.NET de depuração remota em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Depuração remota ASP.NET Core em um servidor IIS|Use ferramentas remotas **e conecte-se ao processo**|*dotnet.exe* ou *appname.exe*|Para a implantação do aplicativo, consulte [Publicar para IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [Depuração remota ASP.NET Core em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Depurar o script do lado do cliente em um servidor IIS local, para tipos de aplicativos suportados |Usar **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|A depuração do script deve ser ativada. Para o Chrome, você também deve executar o Chrome no modo de depuração e selecionar **código Webkit** no **campo 'Anexar'.**|
+|Depuração remota ASP.NET Core em um servidor IIS|Use ferramentas remotas **e conecte-se ao processo**|*w3wp.exe* ou *dotnet.exe*|A partir do .NET Core 3, o processo *w3wp.exe* é usado para o modelo padrão [de hospedagem no aplicativo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models). Para a implantação do aplicativo, consulte [Publicar para IIS](/aspnet/core/host-and-deploy/iis/). Para obter informações mais detalhadas, consulte [Depuração remota ASP.NET Core em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|Depurar o script do lado do cliente em um servidor IIS local, para tipos de aplicativos suportados |Usar **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|A depuração do script deve ser ativada. Para o Chrome, você também deve executar `chrome.exe --remote-debugging-port=9222` o Chrome no modo de depuração (digite a partir de uma linha de comando) e selecionar **JavaScript (Chrome)** no **campo 'Anexar ao** campo'.|
 |Depurar um aplicativo C#, Visual Basic ou C++ na máquina local|Use depuração padrão **(F5)** ou **Conecte-se ao processo**|*\<nome de aplicativo>.exe*|Na maioria dos cenários, use depuração padrão e não **seja anexado ao processo.**|
 |Depuração remota de um aplicativo de desktop do Windows|Ferramentas remotas|N/D| Consulte [depurar remotamente um aplicativo C# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [depurar remotamente um aplicativo C++](../debugger/remote-debugging-cpp.md)|
 |Debug .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe*|Para usar o SSH, consulte [Debug Remote .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |

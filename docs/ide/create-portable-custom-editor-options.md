@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648531"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -104,7 +104,7 @@ Há algumas outras maneiras de adicionar um arquivo EditorConfig ao seu projeto:
 
 - O [recurso de inferência de código](/visualstudio/intellicode/code-style-inference) do IntelliCode para Visual Studio infere seus estilos de código com base no código existente. Ele cria um arquivo EditorConfig não vazio com suas preferências de estilo de código já definidas.
 
-- A partir do Visual Studio 2019, você pode [gerar um arquivo EditorConfig com base em suas configurações de estilo de código](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) em **Ferramentas** > **Opções**.
+- A partir do Visual Studio 2019, você pode [gerar um arquivo EditorConfig com base em suas configurações de estilo de código](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) em **Ferramentas** > **Opções**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Precedência e hierarquia de arquivos
 

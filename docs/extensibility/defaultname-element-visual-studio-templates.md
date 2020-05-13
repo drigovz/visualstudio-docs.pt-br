@@ -1,5 +1,5 @@
 ---
-title: Elemento DefaultName (modelos do Visual Studio) | Microsoft Docs
+title: DefaultName Element (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dbb720bf04c36b2d9f018be5418a25088e259f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348148"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712315"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (modelos do Visual Studio)
-Especifica o nome que o sistema de projeto do Visual Studio gerará para o projeto ou item quando ele é criado.
+Especifica o nome que o sistema de projeto Visual Studio irá gerar para o projeto ou item quando for criado.
 
- \<VSTemplate > \<TemplateData > \<DefaultName >
+ \<VSTemplate> \<TemplateData \<>Nome padrão>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,33 +37,33 @@ Especifica o nome que o sistema de projeto do Visual Studio gerará para o proje
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- Esse texto Especifica o nome padrão do projeto ou item.
+ Este texto especifica o nome padrão do projeto ou item.
 
 ## <a name="remarks"></a>Comentários
  `DefaultName` é um elemento opcional.
 
- Para projetos, esse elemento Especifica o nome do diretório que armazena o projeto no disco. Para itens, ele especifica o nome do arquivo do arquivo de origem.
+ Para projetos, esse elemento especifica o nome do diretório que armazena o projeto em disco. Para itens, ele especifica o nome do arquivo do arquivo de origem.
 
- Quando você cria um projeto ou item, você pode modificar o nome padrão usando o **nome** opção, que está disponível em um a **novo projeto** caixa de diálogo ou **Add New Item** caixa de diálogo.
+ Ao criar um projeto ou item, você pode modificar o nome padrão usando a opção **Nome,** que está disponível na caixa de diálogo **Novo Projeto** ou adicionar caixa de diálogo De **novo item.**
 
- Se você não deseja que o sistema de projeto para gerar o nome padrão para o projeto ou item, em seguida, defina as [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) elemento `False`.
+ Se você não quiser que o sistema de projeto gere o nome padrão para `False`o projeto ou item, defina o elemento [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) para .
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para o modelo de item padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] classe.
+ O exemplo a seguir ilustra os metadados para [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o modelo de item padrão de uma classe.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -81,6 +81,6 @@ Especifica o nome que o sistema de projeto do Visual Studio gerará para o proje
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)

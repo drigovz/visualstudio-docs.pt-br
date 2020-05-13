@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetReason
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b219973e0fced92a588a87ed472cf7a57d312d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337268"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734529"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-Obtém o motivo por que deseja interromper o mecanismo de depuração (DES).
+Fica por isso que o motor de depuração (DE) quer parar.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,19 +39,19 @@ int GetReason( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pcr`\
-[out] Retorna um valor da [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) enumeração que descreve o motivo para esse evento.
+[fora] Retorna um valor da enumeração [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) que descreve o motivo deste evento.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Normalmente, esse método é chamado antes do [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) método para que o chamador possa determinar se deve passar diferente de zero (`TRUE`) para o `IDebugCanStopEvent2::CanStop` método.
+ Este método é tipicamente chamado antes do método [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para que`TRUE`o chamador possa determinar se deve passar não-zero ( ) para o `IDebugCanStopEvent2::CanStop` método.
 
- O motivo para interrupção pode ser `CANSTOP_ENTRYPOINT`, que significa que o DE atingiu um ponto de entrada, ou `CANSTOP_STEPIN`, que significa que o DE tiver entrado em uma função.
+ A razão para parar `CANSTOP_ENTRYPOINT`pode ser, o que significa `CANSTOP_STEPIN`que o DE atingiu um ponto de entrada, ou , o que significa que o DE entrou em uma função.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)
 - [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)

@@ -1,32 +1,32 @@
 ---
-title: GUIDs e constantes no SDK do Visual Studio | Microsoft Docs
+title: GUIDs e Constantes no Visual Studio SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77674faa43ce687fcd3df4412437ecb5cda10dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ecb443f3b5d6dd7b45d8dd77a8739b12b8891832
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342236"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711145"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs e constantes no SDK do Visual Studio
-O <xref:Microsoft.VisualStudio.VSConstants> classe fornece acesso a uma seleção de ambiente GUIDs e constantes.
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs e constantes no Visual Studio SDK
+A <xref:Microsoft.VisualStudio.VSConstants> classe oferece acesso a uma seleção de GUIDs e constantes de ambiente.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [GUIDs IDE](../extensibility/ide-guids.md) listas de GUIDs fornecidos pelo <xref:Microsoft.VisualStudio.VSConstants>.
+- [Guids IDE](../extensibility/ide-guids.md) Lista GUIDs fornecidos por <xref:Microsoft.VisualStudio.VSConstants>.
 
-- [Constantes IDE](../extensibility/ide-constants.md) constantes SDK lista fornecidas pelo <xref:Microsoft.VisualStudio.VSConstants>.
+- [Constantes de IDE](../extensibility/ide-constants.md) Lista as constantes de <xref:Microsoft.VisualStudio.VSConstants>SDK fornecidas por .
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Constantes de COM em código gerenciado](../extensibility/com-constants-in-managed-code.md) listas COM o padrão de constantes disponíveis para código gerenciado do Framework de pacote gerenciado (MPF).
+- [Com constantes em código gerenciado](../extensibility/com-constants-in-managed-code.md) Lista as constantes com padrão disponíveis para código gerenciado do MPF (Managed Package Framework, quadro de pacotes gerenciados).
 
-- [Comandos definidos pelo IDE para estender sistemas de projeto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) lista tipos diferentes de itens de comando usados para estender sistemas de projeto.
+- [Comandos definidos pelo IDE para a ampliação de sistemas de projeto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Lista diferentes tipos de itens de comando usados para estender sistemas de projeto.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f4507f631887f8ffda37abec8b597087a0e57f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e8dfafffb485150687b1877295a00a8ec6b71cfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317808"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733115"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Recupera uma porta específica.
@@ -41,16 +41,16 @@ int GetPort( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidPort`\
-[in] GUID da porta a ser recuperado.
+[em] GUID do porto a ser recuperado.
 
 `ppPort`\
-[out] Retorna um [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa a porta desejada.
+[fora] Retorna um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) representando a porta desejada.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_PORTSUPPLIER_NO_PORT` se não houver nenhuma porta com o identificador fornecido.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_PORTSUPPLIER_NO_PORT` se não houver porta com o identificador dado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

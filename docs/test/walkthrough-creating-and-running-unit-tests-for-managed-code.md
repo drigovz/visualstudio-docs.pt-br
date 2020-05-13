@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094680"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223665"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: criar e executar testes de unidade para código gerenciado
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
 Este artigo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você altera o código do projeto e executa os testes novamente.
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Testar, gravar e analisar novamente
 
-Suponha que haja um bug no método em teste e que o método `Debit` ainda não gerou uma <xref:System.ArgumentOutOfRangeException>. Desconsidere a geração da mensagem correta com a exceção. Atualmente, o método de teste não lida com esse caso. Se `debitAmount` o valor for válido (ou seja, menor que o saldo e maior que zero), nenhuma exceção é capturada, de modo que a afirmação nunca dispara. Ainda assim, o método de teste é aprovado. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
+Atualmente, o método de teste não lida com todos os casos que deveria. Se o método em `Debit` teste, o <xref:System.ArgumentOutOfRangeException> método, `debitAmount` não conseguiu lançar um quando o era maior que o saldo (ou menor que zero), o método de teste passaria. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
 
 Esse é um bug no método de teste. Para resolver o problema, adicione uma declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> ao final do método de teste para lidar com o caso em que nenhuma exceção é gerada.
 

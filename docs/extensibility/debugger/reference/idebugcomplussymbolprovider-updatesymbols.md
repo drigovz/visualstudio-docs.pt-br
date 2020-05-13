@@ -6,23 +6,23 @@ helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: def89659f49b25b09e777abf3df1d71db5506537
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352764"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733496"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Atualiza os símbolos de depuração na memória com aqueles do fluxo de dados especificado.
+Atualiza os símbolos de depuração na memória com os do fluxo de dados especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ int UpdateSymbols (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ulAppDomainID`\
-[in] Identificador do domínio do aplicativo.
+[em] Identificador do domínio do aplicativo.
 
 `guidModule`\
-[in] Identificador exclusivo do módulo.
+[em] Identificador único do módulo.
 
 `pUpdateStream`\
-[in] Fluxo de dados que contém os símbolos de depuração atualizado.
+[em] Fluxo de dados que contém os símbolos de depuração atualizados.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(
@@ -91,8 +91,8 @@ Error:
 }
 ```
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

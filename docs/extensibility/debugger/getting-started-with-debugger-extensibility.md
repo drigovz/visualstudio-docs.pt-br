@@ -1,5 +1,5 @@
 ---
-title: Introdução à extensibilidade do depurador | Microsoft Docs
+title: Começando com extensibilidade de depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,40 +7,40 @@ helpviewer_keywords:
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e2dabf18d3d00034d65a94c41f2e435ad64114
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350008"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738597"
 ---
-# <a name="get-started-with-debugger-extensibility"></a>Introdução a extensibilidade do depurador
-O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações que você precisa para criar e personalizar componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.
+# <a name="get-started-with-debugger-extensibility"></a>Comece com a extensibilidade do depurador
+O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações necessárias para criar e personalizar componentes dedepuradores usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração adicionou melhorias derivadas a usabilidade extenso teste realizado no anterior [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar em interrupções de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a depuração adicionou melhorias derivadas do extenso [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] teste de usabilidade realizado em depuradores anteriores. Você pode [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar a depuração para passar por um aplicativo de vários idiomas ou implementar a edição on-the-fly de variáveis enquanto depura aplicativos e soluções multi-idiomas.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração é executada fora do processo com o programa que está sendo depurado e, portanto, é menos intrusiva no espaço de processo do aplicativo. Consequentemente, é mais fácil escrever componentes que interagem com o depurador sem afetar o seu programa de depuração.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a depuração é executada fora de processo com o programa sendo depurado e, portanto, menos intrusivo no espaço de processo do aplicativo. Consequentemente, é mais fácil escrever componentes que interagem com o depurador sem afetar seu programa de depuração.
 
- Usar melhor o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], você deve estar familiarizado com os seguintes itens:
+ Para melhor [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]usar o , você deve estar familiarizado com os seguintes itens:
 
-- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE)
+- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE)
 
-- A linguagem de programação do C++
+- A linguagem de programação C++
 
 - ATL COM
 
 ## <a name="in-this-section"></a>Nesta seção
- [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) descreve o processo de implementação de depuração no seu produto, dependendo do seu compilador e sua saída.
+ [Roteiro para a extensão do depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Descreve o processo de implementação da depuração em seu produto, dependendo do seu compilador e sua saída.
 
- [Componentes do depurador](../../extensibility/debugger/debugger-components.md) fornece uma visão geral de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração componentes, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolo (SH).
+ [Componentes do depurador](../../extensibility/debugger/debugger-components.md) Fornece uma visão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] geral dos componentes de depuração, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolos (SH).
 
- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md) descreve os principais conceitos de arquiteturas de depuração.
+ [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md) Descreve os principais conceitos arquitetônicos de depuração.
 
- [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md) explica como o mecanismo de depuração (DES) opera simultaneamente em contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevante a ele.
+ [Contextos de depuração](../../extensibility/debugger/debugger-contexts.md) Explica como o mecanismo de depuração (DE) opera simultaneamente dentro dos contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevantes para ele.
 
- [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.
+ [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) Contém links para várias tarefas de depuração, como o lançamento de um programa e a avaliação de expressões.

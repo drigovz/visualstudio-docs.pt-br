@@ -3,17 +3,17 @@ title: Cores e Estilo para Visual Studio | Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303151"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699861"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilo para Visual Studio
 
@@ -354,7 +354,7 @@ Para implementar categorias personalizadas ou exibir itens, um VSPackage deve:
 
 #### <a name="to-create-or-identify-categories"></a>Para criar ou identificar categorias
 
-Construa um tipo especial `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` de `<Category>` registro de categoria onde está o nome não localizado da categoria.
+Construa um tipo especial `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` de `<Category>` registro de categoria sob onde está o nome não localizado da categoria.
 
 Preencha o registro com dois valores:
 
@@ -367,7 +367,7 @@ Preencha o registro com dois valores:
 
 #### <a name="to-create-or-identify-groups"></a>Para criar ou identificar grupos
 
-Construa um tipo especial `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` de `<group>` registro de categoria onde está o nome não localizado do grupo.
+Construa um tipo especial `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` de `<group>` registro de categoria sob onde está o nome não localizado do grupo.
 
 Preencha o registro com dois valores:
 
@@ -421,7 +421,7 @@ Para fazer isso, um VSPackage deve:
 
 - **lidar com eventos gerados** pelo IDE implementando a interface [IVsFontAndColorEvents.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) O IDE chama o método apropriado após modificações do usuário da página Fontes e Cores. Por exemplo, ele chama o método [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) se uma nova fonte for selecionada.
 
-  **Ou**
+  **OU**
 
 - **enquete o IDE para mudanças**. Isso pode ser feito através da interface [IVsFontAndColorStorage,](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada pelo sistema. Embora principalmente para suporte à persistência, o método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) pode obter informações de fonte e cores para itens de exibição. Para obter mais informações sobre as configurações de fonte e cor, consulte o artigo MSDN [acessando as configurações de fonte e cor armazenadas](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 

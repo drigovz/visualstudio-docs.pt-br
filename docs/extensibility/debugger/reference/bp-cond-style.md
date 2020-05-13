@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351821"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738120"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Especifica o estilo de condição de ponto de interrupção para pendentes e associados a pontos de interrupção.
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+Especifica o estilo de condição de ponto de interrupção para pontos de interrupção pendentes e vinculados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,24 +46,24 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Campos
 `BP_COND_NONE`\
-Dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
+Dispara o ponto de ruptura quando a posição do ponto de ruptura é atingida. Nenhuma condição de ponto de ruptura especificada.
 
 `BP_COND_WHEN_TRUE`\
-Dispara o ponto de interrupção somente quando a expressão condicional é associado com o ponto de interrupção é avaliada como `true`.
+Dispara o ponto de ruptura somente quando a expressão `true`condicional associada ao ponto de ruptura é avaliada em .
 
 `BP_COND_WHEN_CHANGED`\
-Dispara o ponto de interrupção somente quando o valor da expressão condicional associado com o ponto de interrupção foi alterado de sua avaliação anterior.
+Dispara o ponto de ruptura somente quando o valor da expressão condicional associada ao ponto de ruptura mudou de sua avaliação anterior.
 
 ## <a name="remarks"></a>Comentários
-Usado para o `styleCondition` membro a [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura.
+Usado para `styleCondition` o membro da estrutura [BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

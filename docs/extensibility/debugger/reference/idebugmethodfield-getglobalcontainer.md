@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77f3d82beab43b227dd3beb772dd41353d89b6fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37e3b26a265fe651216e46fa299bdd827416b8ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324185"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727130"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Obtém o contêiner global do método.
+Fica com o recipiente global do método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ int GetGlobalContainer(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppClass`\
-[out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o módulo no qual esse método é definido.
+[fora] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) representando o módulo no qual este método é definido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Retornado [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto representa o módulo de inteiro e é um objeto artificial, ou seja, o próprio módulo não tem uma classe real, mas ele pode ser representado por um `IDebugClassField` objeto, permitindo que os vários elementos do módulo a ser enumerado e descobertos.
+ O objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) retornado representa todo o módulo e é um objeto artificial, ou seja, o `IDebugClassField` módulo em si não tem uma classe real, mas pode ser representado por um objeto, permitindo que os vários elementos do módulo sejam enumerados e descobertos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

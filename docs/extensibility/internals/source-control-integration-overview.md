@@ -1,80 +1,80 @@
 ---
-title: Visão geral da integração de controle do código-fonte | Microsoft Docs
+title: Visão geral da integração de controle de fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f714bfdfc94cb9481071becf1cdc95f5259e975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723530"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705117"
 ---
 # <a name="source-control-integration-overview"></a>Visão geral da integração do controle do código-fonte
-Esta seção compara as duas maneiras de integrar-se ao controle do código-fonte do Visual Studio; um plug-in de controle de origem e um VSPackage que fornece uma solução de controle do código-fonte e realça os novos recursos de controle do código-fonte. O Visual Studio permite a alternância manual entre o controle do código-fonte VSPackages e os plug-ins de controle do código-fonte, bem como a alternância automática baseada em soluções.
+Esta seção compara as duas maneiras de integrar-se ao controle de origem do Visual Studio; um plug-in de controle de origem e um VSPackage que fornece uma solução de controle de origem e destaca os novos recursos de controle de origem. O Visual Studio permite a troca manual entre o controle de origem VSPackages e plug-ins de controle de origem, bem como a comutação automática baseada em soluções.
 
 ## <a name="source-control-integration"></a>Integração de controle do código-fonte
- o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a dois tipos de opções de integração de controle do código-fonte. Em todas as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você ainda pode integrar um plug-in com base na API de plug-in de controle do código-fonte (anteriormente conhecida como API MSSCCI), que fornece a funcionalidade básica de controle do código-fonte ao usar a interface do usuário do controle do código-fonte do Visual Studio. Um VSPackage de controle do código-fonte, por outro lado, fornece um caminho novo e de integração profunda [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] adequado para integração de controle do código-fonte que exige um alto nível de sofisticação e autonomia em seu modelo de controle do código-fonte.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]suporta dois tipos de opções de integração de controle de origem. Em todas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]as versões de, você ainda pode integrar um plug-in baseado na API plug-in de controle de fonte (anteriormente também referida como API MSSCCI), que fornece funcionalidade básica de controle de origem ao usar a interface de usuário de controle de fonte do Visual Studio (UI). Um controle de origem VSPackage, por outro lado, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece um novo caminho de integração profunda adequado para a integração de controle de origem que exige um alto nível de sofisticação e autonomia em seu modelo de controle de origem.
 
- ![Visão geral do controle do código-fonte](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")
+ ![Visão geral do controle de fonte](../../extensibility/internals/media/sourcectnrloverview.gif "Visão geral do SourceCtnrl")
 
-## <a name="source-control-plug-in"></a>Plug-in de controle do código-fonte
- Todas as versões do Visual Studio dão suporte à especificação da API de plug-in de controle do código-fonte versão 1,2 como um caminho de integração. Um implementador de plug-in de controle do código-fonte grava uma DLL que implementa as funções da API de plug-in de controle do código-fonte para integração e registro de controle do código-fonte, conforme descrito em [criando um plug-in de controle](../../extensibility/internals/creating-a-source-control-plug-in.md) Nessa abordagem, o ambiente de desenvolvimento integrado (IDE) usa a interface do usuário do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para caixas de diálogo, como check-in, check-in, ferramentas/opções páginas de propriedades, barras de ferramentas e glifos de controle do código-fonte. A adesão estrita à API de plug-in de controle do código-fonte garante uma fácil integração no Visual Studio e uma experiência sem problemas para o usuário. Isso significa que o plug-in de controle do código-fonte deve implementar a maioria das funções e retornos de chamada detalhados na API.
+## <a name="source-control-plug-in"></a>Plug-in de controle de origem
+ Todas as versões do Visual Studio suportam a especificação de API plug-in de controle de fonte versão 1.2 como um caminho de integração. Um implementador plug-in de controle de origem grava uma DLL que implementa as funções de API plug-in de controle de fonte para integração e registro de controle de origem, conforme descrito no [Creating a Source Control Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md). Nesta abordagem, o Ambiente de Desenvolvimento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrado (IDE) usa a ui para caixas de diálogo, como check-in, check-out, páginas de propriedades de ferramentas/opções, barras de ferramentas e glifos de controle de origem. A adesão rigorosa à API plug-in de controle de origem garante uma fácil integração ao Visual Studio e uma experiência sem problemas para o usuário. Isso significa que o plug-in de controle de origem deve implementar a maioria das funções e retornos de chamada detalhados na API.
 
- Para implementar um plug-in de controle do código-fonte usando a API de plug-in de controle do código-fonte, siga estas etapas:
+ Para implementar um plug-in de controle de origem usando a API plug-in de controle de origem, siga estas etapas:
 
-1. Crie uma DLL que implemente as funções especificadas em [plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md).
+1. Crie uma DLL que implemente as funções especificadas nos [Plug-ins de controle de fonte](../../extensibility/source-control-plug-ins.md).
 
-2. Registre a DLL fazendo as entradas de registro apropriadas (descritas em [como instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
+2. Registre o DLL fazendo as entradas de registro apropriadas (descritas em [Como: Instalar um Plug-in de Controle de Origem](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
 
-3. Criar uma interface do usuário auxiliar e exibir quando solicitado pelo pacote do adaptador de controle do código-fonte (o componente do Visual Studio que manipula a funcionalidade de controle de origem por meio de plug-ins de controle do código-fonte
+3. Crie uma im e uma ims e exibição do helper quando solicitado pelo Pacote adaptador de controle de fonte (o componente do Visual Studio que lida com a funcionalidade de controle de origem através de plug-ins de controle de origem)
 
-   Em resposta a um comando de controle do código-fonte, o IDE do Visual Studio apresenta uma interface do usuário padrão para as operações básicas e passa as informações para o plug-in de controle do código-fonte por meio das funções definidas na API de plug-in de controle do código-fonte. Para opções avançadas, o plug-in de controle do código-fonte pode ser chamado em para apresentar sua própria interface do usuário, por exemplo, procurando um projeto de origem controlada. Isso significa que o usuário pode receber dois estilos possivelmente diferentes de interface de usuário ao lidar com o controle do código-fonte: a interface de usuário que o Visual Studio apresenta e a interface do usuário que o plug-in de controle do código-fonte apresenta. Isso é mais perceptível com as operações avançadas de controle do código-fonte.
+   Em resposta a um comando de controle de origem, o Visual Studio IDE apresenta uma ui padrão para as operações básicas e, em seguida, passa as informações para o plug-in de controle de origem através das funções definidas na API plug-in de controle de fonte. Para opções avançadas, o plug-in de controle de origem pode ser chamado para apresentar sua própria ui, por exemplo, navegando por um projeto controlado por origem. Isso significa que o usuário pode ser apresentado com dois estilos possivelmente diferentes de IU ao lidar com o controle de origem: a UI que o Visual Studio apresenta e a UI que o plug-in de controle de origem apresenta. Isso é mais perceptível com operações avançadas de controle de fonte.
 
-### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Desvantagens da implementação de um plug-in de controle do código-fonte
+### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Desvantagens em implementar um plug-in de controle de origem
 
-- Para recursos avançados, o usuário pode ver dois estilos diferentes de interfaces, levando a uma possível confusão.
+- Para recursos avançados, o usuário pode ver dois estilos diferentes de interfaces, levando a possíveis confusão.
 
-- O plug-in de controle do código-fonte é restrito ao modelo de controle do código-fonte implícito pela API de plug-in de controle do código-fonte.
+- O plug-in de controle de origem está confinado ao modelo de controle de origem implícito pela API plug-in de controle de origem.
 
-- A API de plug-in de controle do código-fonte pode ser muito restritiva para alguns cenários de controle do código-fonte.
+- A API plug-in de controle de origem pode ser muito restritiva para alguns cenários de controle de origem.
 
-### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Vantagens de implementar um plug-in de controle do código-fonte
+### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Vantagens em implementar um plug-in de controle de origem
 
-- O Visual Studio fornece toda a interface do usuário para todas as operações básicas de controle do código-fonte para que o plug-in de controle do código-fonte não precise implementar uma interface do usuário potencialmente complexa.
+- O Visual Studio fornece toda a ui para todas as operações básicas de controle de origem para que o plug-in de controle de origem não precise implementar a ui potencialmente complexa.
 
-- Devido à API estrita, o plug-in de controle do código-fonte pode interagir prontamente com programas de controle do código-fonte externo para fornecer funcionalidade mais abrangente; O Visual Studio não se preocupa muito com a forma como a funcionalidade de controle do código-fonte é realizada, apenas que é realizada de acordo com a API de plug-in de controle do código-fonte.
+- Devido à API rigorosa, o plug-in de controle de origem pode interagir facilmente com programas externos de controle de fonte para fornecer funcionalidade mais extensa; O Visual Studio não se importa muito com a forma como a funcionalidade de controle de origem é realizada, apenas que ela é realizada de acordo com a API plug-in de controle de fonte.
 
-- É mais fácil implementar um plug-in de controle do código-fonte do que um VSPackage de controle do código-fonte.
+- É mais fácil implementar um plug-in de controle de origem do que um vsPackage de controle de origem.
 
-## <a name="source-control-vspackage"></a>VSPackage de controle do código-fonte
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permite uma integração profunda com o Visual Studio com controle total da funcionalidade de controle do código-fonte e a substituição da interface do usuário do controle do código-fonte fornecida pelo Visual Studio. Um VSPackage de controle do código-fonte é registrado com o Visual Studio e fornece funcionalidade de controle do código-fonte. Embora vários VSPackages de controle do código-fonte possam ser registrados com o Visual Studio, apenas um deles pode estar ativo a qualquer momento. Um VSPackage de controle do código-fonte tem controle total sobre a funcionalidade de controle do código-fonte e a aparência no Visual Studio enquanto ele está ativo. Todas as outras VSPackages de controle do código-fonte que podem ser registradas no sistema estão inativas e não exibirão nenhuma interface do usuário.
+## <a name="source-control-vspackage"></a>Controle de origem VSPackage
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]permite uma profunda integração no Visual Studio com controle total da funcionalidade de controle de fonte e substituição completa da interface de usuário de controle de fonte fornecida pelo Visual Studio. Um controle de origem VSPackage é registrado no Visual Studio e fornece funcionalidade de controle de origem. Embora vários vsPackages de controle de origem possam ser registrados no Visual Studio, apenas um deles pode estar ativo a qualquer momento. Um controle de origem VSPackage tem controle total sobre a funcionalidade de controle de origem e aparência no Visual Studio enquanto ele está ativo. Todos os outros vsPacotes de controle de origem que podem ser registrados no sistema estão inativos e não exibirão nenhuma ui.
 
- A implementação de um VSPackage de controle do código-fonte requer uma estratégia "tudo ou nada". O criador de um VSPackage de controle do código-fonte deve investir uma quantidade significativa de esforço na implementação de uma série de interfaces de controle do código-fonte e novos elementos da interface do usuário (caixas de diálogo, menus e barras de ferramentas) para cobrir toda a funcionalidade de controle do código-fonte. Consulte [criando um controle do código-fonte VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md) para obter mais detalhes.
+ Implementar um controle de origem VSPackage requer uma estratégia de "tudo ou nada". O criador de um controle de origem VSPackage deve investir uma quantidade significativa de esforço na implementação de uma série de interfaces de controle de fonte e novos elementos de Interface de Interface (caixas de diálogo, menus e barras de ferramentas) para cobrir toda a funcionalidade de controle de origem. Consulte [Criando um Pacote DE Controle de Origem VSPara](../../extensibility/internals/creating-a-source-control-vspackage.md) obter mais detalhes.
 
-### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Desvantagens da implementação de um controle do código-fonte VSPackage
+### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Desvantagens em implementar um vspackage de controle de origem
 
-- O VSPackage deve implementar várias interfaces complexas para integrar com êxito com o Visual Studio.
+- O VSPackage deve implementar uma série de interfaces complexas para se integrar com sucesso ao Visual Studio.
 
-- O VSPackage deve fornecer toda a interface do usuário necessária para o controle do código-fonte; O Visual Studio não oferecerá nenhuma assistência nessa área.
+- O VSPackage deve fornecer toda a iu necessária para o controle de origem; O Visual Studio não prestará assistência nesta área.
 
-- Um VSPackage de controle do código-fonte está intimamente ligado ao Visual Studio e não pode operar com programas autônomos, portanto, a funcionalidade não pode ser facilmente compartilhada com uma versão externa do programa de controle do código-fonte.
+- Um controle de origem VSPackage está intimamente vinculado ao Visual Studio e não pode operar com programas autônomos, portanto, a funcionalidade não pode ser tão facilmente compartilhada com uma versão externa do programa de controle de origem.
 
-### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vantagens de implementar um controle do código-fonte VSPackage
+### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vantagens para implementar um vspackage de controle de origem
 
-- Como o VSPackage tem controle total sobre a interface do usuário do controle do código-fonte e a funcionalidade, o usuário recebe uma interface direta para o controle do código-fonte.
+- Como o VSPackage tem controle total sobre a interface de usuário e funcionalidade do controle de origem, o usuário é apresentado com uma interface perfeita para controle de origem.
 
-- O VSPackage não é confinado para um modelo de controle do código-fonte específico.
+- O VSPackage não se limita a um modelo específico de controle de origem.
 
-## <a name="see-also"></a>Consulte também
-- [Controle do código-fonte](../../extensibility/internals/source-control.md)
-- [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="see-also"></a>Confira também
+- [Controle de Origem](../../extensibility/internals/source-control.md)
+- [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)
 - [Novidades no controle do código-fonte](../../extensibility/internals/what-s-new-in-source-control.md)

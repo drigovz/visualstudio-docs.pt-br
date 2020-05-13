@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bae4a63ef03ca3b8d3fa642f7333ff2357084b47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352941"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735047"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Essa interface informa o Gerenciador de sessão de depuração (SDM) que um ponto de interrupção pendente não pôde ser associado a um programa carregado, por causa de um aviso ou erro.
+Esta interface informa ao SDM (Session Debug Manager, gerenciador de depuração) que um ponto de ruptura pendente não poderia ser vinculado a um programa carregado, seja por causa de um aviso ou de um erro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,32 +28,32 @@ Essa interface informa o Gerenciador de sessão de depuração (SDM) que um pont
 IDebugBreakpointErrorEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface como parte de seu suporte para pontos de interrupção. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface).
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa essa interface como parte de seu suporte para pontos de interrupção. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface (o SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface).
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia esse objeto de evento quando um ponto de interrupção pendente não pode ser associado ao programa que está sendo depurado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O DE cria e envia esse objeto de evento quando um ponto de ruptura pendente não pode ser vinculado ao programa que está sendo depurado. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugBreakpointErrorEvent2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugBreakpointErrorEvent2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtém o [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interface que descreve o erro ou aviso.|
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtém a interface [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que descreve o aviso ou erro.|
 
 ## <a name="remarks"></a>Comentários
- Sempre que um ponto de interrupção está associado, um evento é enviado para o SDM. Se o ponto de interrupção não pode ser associado, uma `IDebugBreakpointErrorEvent2` é enviada; caso contrário, uma [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) é enviada.
+ Sempre que um ponto de ruptura é vinculado, um evento é enviado para o SDM. Se o ponto de ruptura `IDebugBreakpointErrorEvent2` não puder ser vinculado, um é enviado; caso contrário, um [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) é enviado.
 
- Por exemplo, quando não conseguir analisar ou avaliar a condição associada com o ponto de interrupção pendente, um aviso é enviado de que o ponto de interrupção pendente não pode ser associado no momento. Isso pode ocorrer se o código para o ponto de interrupção não tiver sido carregado ainda.
+ Por exemplo, quando a condição associada ao ponto de ruptura pendente não analisar ou avaliar, um aviso é enviado de que o ponto de ruptura pendente não pode ser vinculado neste momento. Isso pode ocorrer se o código do ponto de ruptura ainda não tiver sido carregado.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

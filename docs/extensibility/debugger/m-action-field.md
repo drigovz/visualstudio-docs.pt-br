@@ -1,30 +1,30 @@
 ---
-title: Campo m_action | Microsoft Docs
+title: campo m_action | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_action field, Task class [.NET Framework debug engines]
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33d356f606dc2622647de53b50f5c677b3c14eb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925141733356ac7730e2708673ebdad793fd465b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330977"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738440"
 ---
-# <a name="maction-field"></a>campo m_action
-O delegado que representa o código seja executado no <xref:System.Threading.Tasks.Task> objeto.
+# <a name="m_action-field"></a>m_action campo
+O delegado que representa o código <xref:System.Threading.Tasks.Task> para executar no objeto.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (em *mscorlib. dll*)
+ **Montagem:** mscorlib (in *mscorlib.dll*)
 
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).
+ Como você não pode acessar este membro interno do .NET Framework, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +33,7 @@ O delegado que representa o código seja executado no <xref:System.Threading.Tas
 ```
 
 ## <a name="remarks"></a>Comentários
- Esse é o `action` parâmetro no <xref:System.Threading.Tasks.Task.%23ctor%2A> construtor.
+ Este é `action` o parâmetro <xref:System.Threading.Tasks.Task.%23ctor%2A> na construtora.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

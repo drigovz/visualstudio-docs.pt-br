@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8775087b9ec212f7e7d7e1547d01a5f175c4dc22
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329819"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720620"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Obtém a referência do mais derivado de uma referência. Reservado para uso futuro.
+Obtém a referência mais derivada de uma referência. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetDerivedMostReference( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppDerivedMost`\
-[out] Retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa a propriedade mais derivado.
+[fora] Retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa a propriedade derivada.
 
-## <a name="return-value"></a>Valor de retorno
- Sempre retorna `E_NOTIMPL`.
+## <a name="return-value"></a>Valor retornado
+ Retorna sempre `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, se esta propriedade descreve um objeto que implementa `ClassRoot` , mas o que é realmente uma instanciação de `ClassDerived` que é derivada de `ClassRoot`, em seguida, esse método retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa uma referência para o `ClassDerived` objeto.
+ Por exemplo, se esta propriedade descreve `ClassRoot` um objeto que implementa, `ClassDerived` mas que `ClassRoot`na verdade é uma instanciação disso é derivado, então esse método retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) representando uma referência ao `ClassDerived` objeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

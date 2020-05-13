@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337432"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738095"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
-Descreve as condições sob as quais um ponto de interrupção é disparado.
+# <a name="bp_condition"></a>BP_CONDITION
+Descreve as condições sob as quais um ponto de ruptura dispara.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,33 +49,33 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Membros
 `pThread`\
-O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread ativo para o aplicativo que contém o ponto de interrupção.
+O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento ativo para o aplicativo que contém o ponto de ruptura.
 
 `styleCondition`\
-Um valor a partir de [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeração que descreve o estilo dessa condição de ponto de interrupção.
+Um valor da enumeração [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) descrevendo o estilo desta condição de ponto de ruptura.
 
 `bstrContext`\
-O local do ponto de interrupção.
+A localização do ponto de ruptura.
 
 `bstrCondition`\
-A condição de disparo do ponto de interrupção.
+A condição de disparo do ponto de ruptura.
 
 `nRadix`\
-Base a ser usado na avaliação de todas as informações numéricas.
+Radix para ser usado na avaliação de qualquer informação numérica.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é um membro do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.
+Esta estrutura é um membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Essa estrutura também é passada como um parâmetro para o [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) métodos.
+Essa estrutura também é passada como parâmetro para os métodos [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

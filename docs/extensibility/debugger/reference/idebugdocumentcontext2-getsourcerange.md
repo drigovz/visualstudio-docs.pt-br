@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetSourceRange
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 210ac493a2b717b901e989dcb248efe29ad3fe75
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311850"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731791"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
-Obtém o intervalo de código de origem deste contexto de documento.
+Obtém o intervalo de código fonte deste contexto de documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,22 +41,22 @@ int GetSourceRange( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pBegPosition`\
-[no, out] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura será preenchida com a posição inicial. Defina este argumento como um valor nulo se essa informação não é necessária.
+[dentro, fora] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição inicial. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
 
 `pEndPosition`\
-[no, out] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura será preenchida com a posição final. Defina este argumento como um valor nulo se essa informação não é necessária.
+[dentro, fora] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição final. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um intervalo de origem é o intervalo inteiro de código-fonte, da parte traseira da instrução atual para somente após a instrução anterior que contribuíram de código. O intervalo de origem normalmente é usado para misturar as instruções de código-fonte, incluindo comentários, com o código na janela de desmontagem.
+ Um intervalo de origem é toda a gama de código-fonte, desde a declaração atual até logo após a declaração anterior que contribuiu com o código. O intervalo de origem é normalmente usado para misturar declarações de origem, incluindo comentários, com código na janela de desmontagem.
 
- Para obter o intervalo para apenas as instruções de código contidas neste contexto de documento, chame o [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) método.
+ Para obter o intervalo apenas para as instruções de código contidas neste contexto de documento, ligue para o método [GetStatementRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

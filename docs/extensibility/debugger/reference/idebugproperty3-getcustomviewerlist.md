@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348864"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721166"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Obtém uma lista de visualizadores personalizados associados a essa propriedade.
+Obtém uma lista de espectadores personalizados associados a esta propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,29 +45,29 @@ int GetCustomViewerList(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `celtSkip`\
-[in] O número de visualizadores de ignorar.
+[em] O número de espectadores para pular.
 
 `celtRequested`\
-[in] O número de visualizadores para recuperar (também especifica o tamanho do `rgViewers` matriz).
+[em] O número de espectadores a recuperar (também especifica o tamanho da `rgViewers` matriz).
 
 `rgViewers`\
-[no, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estruturas a serem preenchidos.
+[dentro, fora] Matriz de estruturas [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) a serem preenchidas.
 
 `pceltFetched`\
-[out] O número real de visualizadores é retornado.
+[fora] O número real de espectadores retornou.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Para dar suporte a visualizadores de tipo, esse método encaminha a chamada para o [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) método. Se o avaliador de expressão também dá suporte a visualizadores personalizados para o tipo dessa propriedade, esse método pode acrescentar os visualizadores personalizados apropriados à lista.
+Para suportar visualizadores de tipo, este método encaminha a chamada para o método [GetCustomViewerList.](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) Se o avaliador de expressão também suportar espectadores personalizados para o tipo desta propriedade, este método pode anexar os espectadores personalizados apropriados à lista.
 
-Ver [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) para obter detalhes sobre as diferenças entre os visualizadores de tipo e visualizadores personalizados.
+Consulte [O Visualizador de Tipo e o Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) para obter detalhes sobre as diferenças entre visualizadores de tipo e espectadores personalizados.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CProperty** objeto que expõe a [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CProperty** que expõe a interface [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)
@@ -88,7 +88,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

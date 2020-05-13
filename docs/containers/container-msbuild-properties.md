@@ -1,23 +1,23 @@
 ---
-title: Ferramentas de contêineres do Visual Studio constroem propriedades
+title: Propriedades de compilação das ferramentas de contêiner do Visual Studio
 author: ghogen
-description: Visão geral do processo de compilação de ferramentas de contêiner
+description: Visão geral do processo de Build das ferramentas de contêiner
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472673"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189485"
 ---
-# <a name="container-tools-build-properties"></a>Ferramentas de contêiner constroem propriedades
+# <a name="container-tools-build-properties"></a>Propriedades de compilação das ferramentas de contêiner
 
-Você pode personalizar como o Visual Studio constrói seus projetos de contêineres definindo as propriedades que o MSBuild usa para construir seu projeto. Por exemplo, você pode alterar o nome do Arquivo Docker, especificar tags e rótulos para suas imagens, fornecer argumentos adicionais passados aos comandos Docker e controlar se o Visual Studio faz certas otimizações de desempenho, como construir fora do ambiente de contêineres. Você também pode definir propriedades de depuração, como o nome do executável para inicial, e os argumentos da linha de comando a serem fornecidos.
+Você pode personalizar como o Visual Studio cria seus projetos de contêiner definindo as propriedades que o MSBuild usa para criar seu projeto. Por exemplo, você pode alterar o nome do Dockerfile, especificar marcas e rótulos para suas imagens, fornecer argumentos adicionais passados para comandos do Docker e controlar se o Visual Studio realiza determinadas otimizações de desempenho, como a criação fora do ambiente de contêiner. Você também pode definir propriedades de depuração, como o nome do executável a ser iniciado, e os argumentos de linha de comando a serem fornecidos.
 
-Para definir o valor de uma propriedade, edite o arquivo do projeto. Por exemplo, suponha que seu Arquivo Docker se chama *MyDockerfile*. Você pode `DockerfileFile` definir a propriedade no arquivo do projeto da seguinte forma.
+Para definir o valor de uma propriedade, edite o arquivo de projeto. Por exemplo, suponha que seu Dockerfile seja chamado de *MyDockerfile*. Você pode definir a `DockerfileFile` Propriedade no arquivo de projeto da seguinte maneira.
 
 ```xml
 <PropertyGroup>
@@ -25,37 +25,65 @@ Para definir o valor de uma propriedade, edite o arquivo do projeto. Por exemplo
 </PropertyGroup>
 ```
 
-Você pode adicionar a configuração `PropertyGroup` de propriedade a um elemento existente, `PropertyGroup` ou se não houver um, criar um novo elemento.
+Você pode adicionar a configuração de propriedade a um `PropertyGroup` elemento existente ou, se não houver um, crie um `PropertyGroup` novo elemento.
 
-A tabela a seguir mostra as propriedades mSBuild disponíveis para projetos de contêineres. A versão do pacote NuGet se aplica ao [Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
+A tabela a seguir mostra as propriedades do MSBuild disponíveis para projetos de contêiner. A versão do pacote NuGet aplica-se a [Microsoft. VisualStudio. Azure. containers. Tools. targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
 | Nome da propriedade | Descrição | Valor padrão  | Versão do pacote NuGet|
 |---------------|-------------|----------------|----------------------|
-| ContainerDevelopmentMode | Controla se a otimização "build-on-host" (depuração do "Modo Rápido" está ativada.  Os valores permitidos são **Rápidos** e **Regulares**. | Rápido |1.0.1872750 ou mais novo|
-| ContainerVsDbgPath | O caminho para o depurador VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 ou mais novo|
-| DockerDebuggeeArguments | Ao depurar, o depurador é instruído a passar esses argumentos para o executável iniciado. | Não aplicável a ASP.NET projetos do Framework .NET |1.7.8 ou mais novo|
-| DockerDebuggeeProgram | Ao depurar, o depurador é instruído a iniciar este executável. | Para projetos .NET Core: dotnet, ASP.NET .NET Framework projects: Não aplicável (IIS é sempre usado) |1.7.8 ou mais novo|
-| DockerDebuggeeKillProgram | Este comando é usado para matar o processo de execução em um contêiner. | Não aplicável a ASP.NET projetos do Framework .NET |1.7.8 ou mais novo|
-| DockerDebuggeeWorkingDirectory | Ao depurar, o depurador é instruído a usar esse caminho como o diretório de trabalho. | C:\app (Windows) ou /app (Linux) |1.7.8 ou mais novo|
-| DockerDefaultTargetOS | O sistema operacional de destino padrão usado ao construir a imagem Docker. | Definido por Visual Studio. |1.0.1985401 ou mais novo|
-| DockerImageRótulos | O conjunto padrão de rótulos aplicados à imagem do Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 ou mais novo|
-| DockerFastModeProjectMountDirectory|No **Modo Rápido,** esta propriedade controla onde o diretório de saída do projeto é montado em volume no contêiner em execução.|C:\app (Windows) ou /app (Linux)|1.9.2 ou mais novo|
-| DockerfileBuildArguments | Argumentos adicionais passaram para o comando de compilação do Docker. | Não aplicável. |1.0.1872750 ou mais novo|
-| DockerfileContext | O contexto padrão usado ao construir a imagem Docker, como um caminho relativo ao arquivo Docker. | Definido por Visual Studio. |1.0.1872750 ou mais novo|
-| DockerfileFastModeStage | O estágio Dockerfile (ou seja, alvo) a ser usado ao construir a imagem no modo de depuração. | Primeiro estágio encontrado no Arquivo Docker (base) |
-| Arquivo de arquivo docker | Descreve o arquivo Docker padrão que será usado para construir/executar o contêiner para o projeto. Este pode ser um caminho também. | Dockerfile |1.0.1872750 ou mais novo|
-| DockerfileRunArguments | Argumentos adicionais passaram para o comando de execução do Docker. | Não aplicável. |1.0.1872750 ou mais novo|
-| Arquivo de dockersExecutararquivosdeambiente | Lista delimitada de ponto e vírgula de arquivos de ambiente aplicados durante a execução do Docker. | Não aplicável. |1.0.1872750 ou mais novo|
-| DockerfileTag | A tag que será usada ao construir a imagem do Docker. Na depuração, um ":dev" é anexado à tag. | Nome de montagem após a retirada de caracteres não alfanuméricos com as seguintes regras: <br/> Se a tag resultante for toda numérica, então "imagem" será inserida como um prefixo (por exemplo, imagem2314) <br/> Se a tag resultante for uma seqüência de string vazia, então "image" será usado como tag. |1.0.1872750 ou mais novo|
+| ContainerDevelopmentMode | Controla se a otimização "Build-on-host" (depuração "modo rápido") está habilitada.  Os valores permitidos são **rápido** e **regular**. | Rápido |1.0.1872750 ou mais recente|
+| ContainerVsDbgPath | O caminho para o depurador VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 ou mais recente|
+| DockerDebuggeeArguments | Durante a depuração, o depurador é instruído a passar esses argumentos para o executável iniciado. | Não aplicável a projetos de .NET Framework ASP.NET |1.7.8 ou mais recente|
+| DockerDebuggeeProgram | Durante a depuração, o depurador é instruído a iniciar este executável. | Para projetos do .NET Core: dotnet, ASP.NET .NET Framework projetos: não aplicável (o IIS é sempre usado) |1.7.8 ou mais recente|
+| DockerDebuggeeKillProgram | Esse comando é usado para eliminar o processo em execução em um contêiner. | Não aplicável a projetos de .NET Framework ASP.NET |1.7.8 ou mais recente|
+| DockerDebuggeeWorkingDirectory | Durante a depuração, o depurador é instruído a usar esse caminho como o diretório de trabalho. | C:\app (Windows) ou/app (Linux) |1.7.8 ou mais recente|
+| DockerDefaultTargetOS | O sistema operacional de destino padrão usado ao criar a imagem do Docker. | Definido pelo Visual Studio. |1.0.1985401 ou mais recente|
+| DockerImageLabels | O conjunto padrão de rótulos aplicados à imagem do Docker. | com. Microsoft. Created-by = Visual-Studio; com. Microsoft. Visual-Studio. Project-Name = $ (MSBuildProjectName) |1.5.4 ou mais recente|
+| DockerFastModeProjectMountDirectory|No **modo rápido**, essa propriedade controla onde o diretório de saída do projeto é montado em volume no contêiner em execução.|C:\app (Windows) ou/app (Linux)|1.9.2 ou mais recente|
+| DockerfileBuildArguments | Argumentos adicionais passados para o comando de [Build do Docker](https://docs.docker.com/engine/reference/commandline/build/) . | Não aplicável. |1.0.1872750 ou mais recente|
+| DockerfileContext | O contexto padrão usado ao criar a imagem do Docker, como um caminho relativo ao Dockerfile. | Definido pelo Visual Studio. |1.0.1872750 ou mais recente|
+| DockerfileFastModeStage | O estágio Dockerfile (ou seja, Target) a ser usado ao criar a imagem no modo de depuração. | Primeiro estágio encontrado no Dockerfile (base) |
+| DockerfileFile | Descreve o Dockerfile padrão que será usado para compilar/executar o contêiner para o projeto. Isso também pode ser um caminho. | Dockerfile |1.0.1872750 ou mais recente|
+| DockerfileRunArguments | Argumentos adicionais passados para o comando de [execução do Docker](https://docs.docker.com/engine/reference/commandline/run/) . | Não aplicável. |1.0.1872750 ou mais recente|
+| DockerfileRunEnvironmentFiles | Lista delimitada por ponto e vírgula dos arquivos de ambiente aplicados durante a execução do Docker. | Não aplicável. |1.0.1872750 ou mais recente|
+| DockerfileTag | A marca que será usada ao criar a imagem do Docker. Na depuração, um ":d EV" é acrescentado à marca. | Nome do assembly após a remoção de caracteres não alfanuméricos com as seguintes regras: <br/> Se a marca resultante for todos numéricas, "Image" será inserida como um prefixo (por exemplo, image2314) <br/> Se a marca resultante for uma cadeia de caracteres vazia, "Image" será usada como a marca. |1.0.1872750 ou mais recente|
+
+## <a name="example"></a>Exemplo
+
+O arquivo de projeto a seguir mostra exemplos de algumas dessas configurações.
+
+```xml
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
+         folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
+         set to the same folder as the Dockerfile. -->
+    <DockerfileContext>.</DockerfileContext>
+    <!-- Set `docker run` arguments to mount a volume -->
+    <DockerfileRunArguments>-v $(pwd)/host-folder:/container-folder:ro</DockerfileRunArguments>
+    <!-- Set `docker build` arguments to add a custom tag -->
+    <DockerfileBuildArguments>-t contoso/front-end:v2.0</DockerfileBuildArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+  </ItemGroup>
+
+</Project>
+```
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter informações sobre propriedades MSBuild em geral, consulte [MSBuild Properties](../msbuild/msbuild-properties.md).
+Para obter informações sobre propriedades do MSBuild em geral, consulte [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="see-also"></a>Confira também
 
-[Docker Compor propriedades de construção](docker-compose-properties.md)
+[Docker Compose Propriedades de compilação](docker-compose-properties.md)
 
-[Configurações de lançamento do Container Tools](container-launch-settings.md)
+[Configurações de inicialização das ferramentas de contêiner](container-launch-settings.md)
 
-[MSBuild propriedades reservadas e bem conhecidas](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

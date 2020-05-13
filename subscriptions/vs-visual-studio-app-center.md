@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
-ms.openlocfilehash: abe929398035bef8800949712ad6cc4e0ac93721
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: d47e3cfef8be2a3a03dab94d6a38f2ecde160f0c
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301866"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649787"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -24,7 +24,7 @@ O App Center é o controle de missões para aplicativos.
 
 ## <a name="activation-steps"></a>Etapas de ativação
 É fácil começar a usar o App Center do Visual Studio.
-1. Faça login [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)em .
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do App Center do Visual Studio e clique em **Introdução**.
     > [!div class="mx-imgBorder"]

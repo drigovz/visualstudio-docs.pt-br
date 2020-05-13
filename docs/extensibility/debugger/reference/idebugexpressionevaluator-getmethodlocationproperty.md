@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft Docs
+title: IDebugExpressionAtor::GetMethodLocationProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: faa2767e54e9821c7b3270fa60f5be232a2c232f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325764"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729524"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-Este método converte um local de método e o deslocamento em um endereço de memória.
+Este método converte um local de método e compensa em um endereço de memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,31 +47,31 @@ int GetMethodLocationProperty(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `upstrFullyQualifiedMethodPlusOffset`\
-[in] O método local e o deslocamento, expresso como uma cadeia de caracteres.
+[em] A localização do método e deslocamento, expressa como uma string.
 
 `pSymbolProvider`\
-[in] O provedor de símbolo é expresso como uma [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.
+[em] O provedor de símbolos expressa como um objeto [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] Um endereço dentro do método, expressado como uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
+[em] Um endereço dentro do método, expresso como um objeto [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pBinder`\
-[in] O associador expresso como uma [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.
+[em] O fichário expressa como um objeto [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `ppProperty`\
-[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface que representa o endereço de memória.
+[fora] Retorna uma interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa o endereço de memória.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O endereço retornado pode ser usado para definir um ponto de interrupção, por exemplo.
+ O endereço retornado pode ser usado para definir um ponto de ruptura, por exemplo.
 
- Apesar do nome `upstrFullyQualifiedMethodPlusOffset`, esse parâmetro pode ser passado como um nome de método parcialmente qualificado. Nesse caso, o método selecionado é aquele que circunscreve `pAddress`. Como esse parâmetro é interpretado é até a implementação do avaliador de expressão e o idioma que ele dá suporte.
+ Apesar `upstrFullyQualifiedMethodPlusOffset`do nome, este parâmetro pode ser aprovado como um nome de método parcialmente qualificado. Nesse caso, o método selecionado é o `pAddress`que inclui . A forma como esse parâmetro é interpretado depende da implementação do avaliador de expressão e da linguagem que ele apoia.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310272"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731963"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Obtém o nome do documento em uma das várias formas.
@@ -41,19 +41,19 @@ int GetName( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `gnType`\
-[in] Um valor a partir de [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeração que determina o tipo de nome a ser retornado.
+[em] Um valor da [enumeração GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) que determina o tipo de nome a retornar.
 
 `pbstrFileName`\
-[out] Retorna uma cadeia de caracteres que contém o nome do documento.
+[fora] Retorna uma seqüência contendo o nome do documento.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método pode, por exemplo, retornar o nome do documento como um título ou como um nome de arquivo ou até mesmo parte de um nome de arquivo.
+ Este método pode, por exemplo, retornar o nome do documento como um título ou como um nome de arquivo ou até mesmo parte de um nome de arquivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

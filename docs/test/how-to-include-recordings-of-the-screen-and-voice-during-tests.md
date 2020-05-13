@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d53f03ed711b613a44aaf7cd243bd9aadeb2c93b
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589013"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880319"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como incluir gravações da tela e de voz durante testes usando as configurações de teste
 
@@ -58,8 +58,14 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
 7. Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
 
+    ::: moniker range="vs-2017"
     > [!TIP]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio e **Redefinir como padrão** para o Microsoft Test Manager.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!TIP]
+    > Para redefinir a configuração deste adaptador de dados de diagnóstico, escolha **Redefinir a configuração padrão** no Visual Studio.
+    ::: moniker-end
 
 ## <a name="see-also"></a>Confira também
 

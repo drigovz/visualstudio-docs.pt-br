@@ -1,50 +1,50 @@
 ---
-title: Criar um VSPackage de controle do código-fonte | Microsoft Docs
+title: Criando um Pacote VS de Controle de Origem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259273eee51c74eb7cb5ca4534db9bc575fd1758
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345485"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709185"
 ---
-# <a name="create-a-source-control-vspackage"></a>Criar um VSPackage de controle do código-fonte
-Esta documentação inclui links para a visão geral da arquitetura de um pacote de controle do código-fonte integrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], a API que é definida por as interfaces a serem implementados e os serviços a serem consumidos e um exemplo que ilustra uma simple fonte controle a implementação do pacote.
+# <a name="create-a-source-control-vspackage"></a>Crie um controle de origem VSPackage
+Essa documentação inclui links para a visão geral da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]arquitetura de um pacote de controle de origem integrado com , a API que é definida pelas interfaces a serem implementadas e os serviços a serem consumidos, e uma amostra que ilustra uma implementação simples do pacote de controle de origem.
 
- Com um controle do código-fonte VSPackage, você pode criar um caminho de integração profunda para controle de origem integrar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ele permite que o pacote ignorar o controle de fonte padrão da interface do usuário hospedada por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]responder a solicitações de controle do código-fonte do sistema de projeto e interagir com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes, tais como **Gerenciador de soluções**. O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] capacita [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] com um mecanismo para criar um VSPackage que pode se integrar a parceiros [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando um modelo de serviço.
+ Com um vsPackage de controle de origem, você pode [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]criar um caminho de integração profunda para que o controle de origem se integre com . Ele permite que o pacote contorne a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ui de controle de origem padrão hospedada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] por , responda às solicitações de controle de origem do sistema de projeto e interaja com componentes como **o Solution Explorer**. O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] empodera-se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] parceiros com um mecanismo para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] criar um VSPackage que possa se integrar com o uso de um modelo de serviço.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
- Discute o pacote de controle do código-fonte, que é uma alternativa mais avançada para o plug-in para implementar recursos de controle do código-fonte no controle de fonte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Discute o pacote de controle de origem, que é uma alternativa mais avançada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ao plug-in de controle de origem para implementar recursos de controle de origem em .
 
 - [Arquitetura](../../extensibility/internals/source-control-vspackage-architecture.md)
 
- Apresenta um diagrama e explica os componentes de um pacote de controle do código-fonte.
+ Apresenta um diagrama e explica os componentes de um pacote de controle de origem.
 
 - [Recursos](../../extensibility/internals/source-control-vspackage-features.md)
 
- Descreve os vários recursos de um pacote de controle do código-fonte.
+ Descreve as várias características de um pacote de controle de origem.
 
 - [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)
 
- Descreve a estrutura de VSPackage que um pacote de controle de origem deve implementar para integração profunda.
+ Descreve a estrutura do VSPackage que um pacote de controle de origem deve implementar para uma integração profunda.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Criar um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Criar um plug-in de controle de origem](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Discute como criar um plug-in de controle de fonte que fornece funcionalidade de controle do código-fonte no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface de usuário de controle do código-fonte (UI).
+ Discute como criar um plug-in de controle de origem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que forneça a funcionalidade de controle de origem na interface do usuário de controle de origem (UI).
 
 - [Controle de origem](../../extensibility/internals/source-control.md)
 
- Discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Discute as opções para implementar o controle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]de origem como uma característica integrada de .

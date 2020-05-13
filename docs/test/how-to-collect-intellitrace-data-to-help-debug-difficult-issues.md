@@ -11,16 +11,16 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594767"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880215"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
-Você pode configurar o adaptador de dados de diagnóstico para que o IntelliTrace colete informações de rastreamento de diagnóstico específicas no Visual Studio. Os testes podem usar esse adaptador, o teste pode coletar eventos de diagnóstico significativos para o aplicativo que um desenvolvedor poderá usar depois para rastrear o código para encontrar a causa de um bug. O adaptador de dados de diagnóstico para IntelliTrace pode ser usado em testes manuais ou automatizados.
+Você pode configurar o adaptador de dados de diagnóstico da IntelliTrace para coletar informações específicas de rastreamento de diagnóstico no Visual Studio. Os testes podem usar esse adaptador, o teste pode coletar eventos de diagnóstico significativos para o aplicativo que um desenvolvedor poderá usar depois para rastrear o código para encontrar a causa de um bug. O adaptador de dados de diagnóstico para IntelliTrace pode ser usado em testes manuais ou automatizados.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,14 +40,24 @@ Os dados coletados no arquivo do IntelliTrace aumentam a produtividade de depura
 > [!WARNING]
 > O adaptador de dados de diagnóstico do IntelliTrace funciona com a instrumentação de um processo gerenciado, que deverá ser realizado depois que os testes da execução de teste forem carregados. Se o processo que você deseja monitorar já tiver começado, nenhum arquivo do IntelliTrace será coletado porque o processo já está em execução. Para evitar isso, certifique-se de que o processo esteja parado antes dos testes serem carregados. Inicie o processo depois que os testes forem carregados ou o primeiro teste for iniciado.
 
+::: moniker range="vs-2017"
 O procedimento a seguir descreve como configurar os dados do IntelliTrace que você deseja coletar. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e à caixa de diálogo Configurações de Teste no Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+O procedimento a seguir descreve como configurar os dados do IntelliTrace que você deseja coletar. Essas etapas se aplicam à caixa de diálogo Configurações de teste no Visual Studio.
+::: moniker-end
 
 > [!NOTE]
 > A conta de usuário do agente de teste usada para coletar dados do IntelliTrace deve ser um membro do grupo Administradores. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Configurar os dados a serem coletados com o adaptador de dados de diagnóstico do IntelliTrace
 
+::: moniker range="vs-2017"
 Antes de executar as etapas nesse procedimento, você deverá abrir as configurações de teste no Microsoft Test Manager ou no Visual Studio e selecionar a página **Dados e Diagnósticos**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.
+::: moniker-end
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Para configurar os dados a serem coletados com o adaptador de dados de diagnóstico do IntelliTrace
 
@@ -103,10 +113,16 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     > [!NOTE]
     > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise.
 
-12. Se estiver usando o Microsoft Test Manager, escolha **Salvar**. Se estiver usando o Visual Studio, escolha **OK**. As configurações do IntelliTrace agora estão definidas e salvas em suas configurações de teste.
+12. Se você estiver usando o Microsoft Test Manager (preterido no Visual Studio 2017), escolha **Salvar**. Se estiver usando o Visual Studio, escolha **OK**. As configurações do IntelliTrace agora estão definidas e salvas em suas configurações de teste.
 
+    ::: moniker range="vs-2017"
     > [!NOTE]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio ou **Redefinir como padrão** para o Microsoft Test Manager.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Para redefinir a configuração deste adaptador de dados de diagnóstico, escolha **Redefinir a configuração padrão** no Visual Studio.
+    ::: moniker-end
 
 ## <a name="see-also"></a>Confira também
 

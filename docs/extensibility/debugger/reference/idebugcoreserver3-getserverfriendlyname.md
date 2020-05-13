@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+title: IDebugCoreServer3:GetServerFriendlyName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326946"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732889"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Recupera um nome amigável para o servidor.
@@ -39,21 +39,21 @@ int GetServerFriendlyName(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pbstrName`\
-[out] Retorna um nome amigável para o servidor.
+[fora] Retorna um nome amigável para o servidor.
 
 > [!NOTE]
-> O chamador é responsável por liberar a cadeia de caracteres.
+> O interlocutor é responsável por liberar a seqüência.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para servidores iniciado pelo usuário, o nome retornado por esse método é o nome completo do servidor. Para servidores iniciado automaticamente, o nome é que, da máquina, o servidor está executando no.
+ Para servidores iniciados pelo usuário, o nome retornado por este método é o nome completo do servidor. Para servidores lançados automaticamente, o nome é o da máquina em que o servidor está sendo executado.
 
- Para um nome orientado por máquina, chame o [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) método.
+ Para obter um nome orientado à máquina, chame o método [GetServerName.](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
+- [Obternome de servidor](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetSize
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b76a6a563a4a9ecd63c81c897a1ba21b3a977b80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f57a742bae0217493d8869b257e4a17839e4e14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314643"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721336"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Obtém o tamanho, em bytes, do valor da propriedade.
@@ -39,12 +39,12 @@ int GetSize ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pdwSize`\
-[out] Retorna o tamanho, em bytes, do valor da propriedade.
+[fora] Devolve o tamanho, em bytes, do valor da propriedade.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETSIZE_NO_SIZE` se a propriedade não tem nenhum tamanho.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro. Retorna `S_GETSIZE_NO_SIZE` se a propriedade não tiver tamanho.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

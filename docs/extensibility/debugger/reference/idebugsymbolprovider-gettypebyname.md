@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347416"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719189"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Esse método mapeia um nome de símbolo para um tipo de símbolo.
+Este método mapeia um nome de símbolo para um tipo de símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ int GetTypeByName(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszClassName`\
-[in] O nome do símbolo.
+[em] O nome símbolo.
 
 `nameMatch`\
-[in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.
+[em] Seleciona o tipo de correspondência, por exemplo, sensível a maiúsculas e minúsculas. Um valor da [enumeração NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppField`\
-[out] Retorna o tipo de símbolo como um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+[fora] Retorna o tipo de símbolo como um objeto [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é uma versão genérica do [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
+ Este método é uma versão genérica do [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

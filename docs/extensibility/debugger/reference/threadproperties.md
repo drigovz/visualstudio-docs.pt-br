@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316179"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713433"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-Descreve as propriedades de um thread.
+Descreve as propriedades de um fio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,37 +53,37 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Membros
  `dwFields`\
- Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração, que descreve quais campos nessa estrutura são válidos.
+ Uma combinação de bandeiras da [enumeração THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) descrevendo quais campos nesta estrutura são válidos.
 
  `dwThreadId`\
- A ID do thread.
+ A im.
 
  `dwSuspendCount`\
- Contagem de suspensões do thread.
+ A contagem de suspensão de linha.
 
  `dwThreadState`\
- Um valor a partir de [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeração que indica o estado do thread operacional.
+ Um valor da enumeração [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) indicando o estado do segmento operacional.
 
  `bstrPriority`\
- Uma cadeia de caracteres que especifica a prioridade de thread; Por exemplo, "Acima do Normal", "Normal" ou "Tempo crítico".
+ Uma seqüência especificando a prioridade de segmento; por exemplo, "Acima do Normal", "Normal" ou "Time Critical".
 
  `bstName`\
- O nome do thread.
+ O nome da linha.
 
  `bstrLocation`\
- O local de thread (normalmente, o quadro de pilha mais alto), geralmente expressado como o nome do método em que a execução é interrompida no momento.
+ O local de rosca (geralmente o quadro de pilha superior), normalmente expresso como o nome do método onde a execução é atualmente interrompida.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é preenchida por uma chamada para o [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método. As informações retornadas então normalmente são usadas no preenchimento de **Threads** janela.
+ Essa estrutura é preenchida por uma chamada para o método [GetThreadProperties.](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) As informações tão retornadas são normalmente usadas na preencher a janela **Threads.**
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

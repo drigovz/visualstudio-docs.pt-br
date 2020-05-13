@@ -1,16 +1,16 @@
 ---
 title: Como você pode aumentar as chances de um problema de desempenho ser corrigido
 description: Informações adicionais e melhores práticas para envio de problemas de desempenho no Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918157"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615045"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -74,17 +74,17 @@ Para esses problemas, siga as etapas em "[Como relatar um problema](/visualstudi
 Se você não tem certeza do que está causando seus acidentes ou eles parecem aleatórios, então você pode capturar dumps localmente cada vez que o Visual Studio falhar e anexá-los a itens de feedback separados. Para salvar dumps localmente quando o Visual Studio falhar, execute os seguintes comandos em uma janela de comando do administrador:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe"
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
 
-reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
-Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
+Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 Personalize a contagem de despejos e a pasta de despejo conforme apropriado. Encontre mais informações sobre essas configurações [aqui](/windows/win32/wer/collecting-user-mode-dumps).

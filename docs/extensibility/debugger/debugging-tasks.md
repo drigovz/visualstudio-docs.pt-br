@@ -5,44 +5,44 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774999dbdcb9eaf4a948364956ed95ab57e24d10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d41f53ab1392ea3c31908faf65a871fa100fbb3f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345847"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738961"
 ---
-# <a name="debug-tasks"></a>As tarefas de depuração
-Para depurar um programa, ele deve ser iniciado e um mecanismo de depuração (DES) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Depois de anexada, o DE deve gerar determinados eventos de inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atinge um ponto de interrupção associado, ele é interrompida e aguarda a entrada do usuário.
+# <a name="debug-tasks"></a>Tarefas de depuração
+Para depurar um programa, ele deve ser lançado e um motor de depuração (DE) deve ser anexado a ele, ou então o DE deve ser anexado a um programa lançado anteriormente. Uma vez anexado, o DE deve gerar certos eventos de inicialização. Em resposta, o pacote de depuração tenta vincular os pontos de interrupção definidos no IDE. Quando o programa atinge um ponto de interrupção vinculado, ele pára e espera pela entrada do usuário.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Problemas de segurança](../../extensibility/debugger/security-issues.md) discute as etapas de segurança que são necessários para depurar um programa.
+ [Problemas de segurança](../../extensibility/debugger/security-issues.md) Discute as etapas de segurança necessárias para depurar um programa.
 
- [Iniciar um programa](../../extensibility/debugger/launching-a-program.md) fornece instruções passo a passo sobre como especificar a DE, que chama o sistema operacional para iniciar o programa.
+ [Lançar um programa](../../extensibility/debugger/launching-a-program.md) Fornece instruções passo-a-passo sobre como especificar um DE, que chama o sistema operacional para iniciar o programa.
 
- [Conectar diretamente a um programa](../../extensibility/debugger/attaching-directly-to-a-program.md) descreve o processo usado para depurar um programa em um processo que já está em execução.
+ [Anexar diretamente a um programa](../../extensibility/debugger/attaching-directly-to-a-program.md) Descreve o processo usado para depurar um programa em um processo que já está sendo executado.
 
- [Enviar eventos de inicialização após uma inicialização](../../extensibility/debugger/sending-startup-events-after-a-launch.md) lista os eventos que ocorrem depois que o DE que é anexado ao programa, até que o programa está em seu ponto de entrada principal e está pronto para depuração.
+ [Envie eventos de startup após um lançamento](../../extensibility/debugger/sending-startup-events-after-a-launch.md) Lista os eventos que ocorrem uma vez que o DE é anexado ao programa, até que o programa esteja em seu ponto de entrada principal e esteja pronto para depuração.
 
- [Controle de execução](../../extensibility/debugger/control-of-execution.md) explica como o DE envia normalmente um evento de ponto de entrada, um evento de conclusão de carga ou um evento de interrupção, dependendo das circunstâncias.
+ [Controle da execução](../../extensibility/debugger/control-of-execution.md) Explica como o DE normalmente envia um evento de ponto de entrada, um evento completo de carga ou um evento de parada, dependendo das circunstâncias.
 
- [Associar os pontos de interrupção](../../extensibility/debugger/binding-breakpoints.md) descreve como fazer isso, se o usuário define um ponto de interrupção, o IDE Formula a solicitação e solicita que a sessão de depuração para criar o ponto de interrupção.
+ [Pontos de interrupção de vinculação](../../extensibility/debugger/binding-breakpoints.md) Descreve como, se o usuário define um ponto de ruptura, o IDE formula a solicitação e solicita a sessão de depuração para criar o ponto de ruptura.
 
- [Avaliar expressões](../../extensibility/debugger/evaluating-expressions.md) explica como as expressões são criadas e o que acontece quando uma expressão é avaliada.
+ [Avaliar expressões](../../extensibility/debugger/evaluating-expressions.md) Explica como as expressões são criadas e o que acontece quando uma expressão é avaliada.
 
- [Visualizar e exibir dados](../../extensibility/debugger/visualizing-and-viewing-data.md) explica como os visualizadores de tipo e visualizadores personalizados são suportados pelo avaliador de expressão (EE).
+ [Visualize e visualize dados](../../extensibility/debugger/visualizing-and-viewing-data.md) Explica como visualizadores de tipo e visualizadores personalizados são suportados pelo avaliador de expressão (EE).
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md) descreve os principais conceitos de arquiteturas de depuração.
+ [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md) Descreve os principais conceitos arquitetônicos de depuração.
 
- [Componentes do depurador](../../extensibility/debugger/debugger-components.md) fornece uma visão geral dos componentes, que incluem o DE, EE e o manipulador de símbolo (SH) de depuração do Visual Studio.
+ [Componentes do depurador](../../extensibility/debugger/debugger-components.md) Fornece uma visão geral dos componentes de depuração do Visual Studio, que incluem o DE, EE e o manipulador de símbolos (SH).
 
- [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md) explica como o DE opera simultaneamente em contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevante a ele.
+ [Contextos de depuração](../../extensibility/debugger/debugger-contexts.md) Explica como o DE opera simultaneamente dentro de contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevantes para ele.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
  [Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

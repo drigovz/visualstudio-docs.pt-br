@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59d58e136045bb4177755c981f91974f9ac2fa77
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45d555cbea6bf8239ef4527ba982072e17532af4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323642"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726547"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Obtém o valor do objeto consecutivos de bytes.
+Obtém o valor do objeto como uma série consecutiva de bytes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int GetValue(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pValue`\
-[no, out] Uma matriz que é preenchida com uma série consecutiva de bytes que representa o valor do objeto.
+[dentro, fora] Uma matriz que é preenchida com uma série consecutiva de bytes representando o valor do objeto.
 
 `nSize`\
-[in] O número máximo de bytes para buscar.
+[em] O número máximo de bytes para buscar.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Obter o número total de bytes do valor que pode ser buscadas chamando o [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) método.
+ Obtenha o número total de bytes de valor que podem ser buscados chamando o método [GetSize.](../../../extensibility/debugger/reference/idebugobject-getsize.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

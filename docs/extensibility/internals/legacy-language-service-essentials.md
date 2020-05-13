@@ -1,5 +1,5 @@
 ---
-title: Fundamentos do serviço de linguagem herdado | Microsoft Docs
+title: Essenciais do serviço de linguagem legado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,41 +8,41 @@ helpviewer_keywords:
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6259adde14f6579b43d63adc44a66b02aea3957f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344885"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707418"
 ---
 # <a name="legacy-language-service-essentials"></a>Conceitos básicos do serviço de linguagem herdado
-Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação no Visual Studio. Este tópico explica os recursos disponíveis nos serviços de linguagem herdada.
+Você deve fornecer um serviço de idiomas para integrar uma linguagem de programação no Visual Studio. Este tópico explica os recursos disponíveis em serviços de idioma legado.
 
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).
+ Os serviços de linguagem legados são implementados como parte de um VSPackage, mas a maneira mais nova de implementar recursos de serviço de idioma é usar extensões MEF. Para saber mais sobre a nova maneira de implementar um serviço de idiomas, consulte [Editor e Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> Recomendamos que você comece a usar a Nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de idiomas e permitirá que você aproveite os novos recursos do editor.
 
- Serviços de linguagem herdado fornecem os seguintes recursos:
+ Os serviços de idioma legado fornecem os seguintes recursos:
 
 |Recurso|Descrição|
 |-------------|-----------------|
-|Coloração de sintaxe|Faz com que a exibição do editor exibir cores diferentes e estilos de fonte para os diferentes elementos de um idioma. Essa diferenciação pode tornar mais fácil de ler e editar arquivos.<br /><br /> Para obter informações gerais, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na estrutura de pacote gerenciado (MPF), consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
-|Conclusão da instrução|Conclui uma instrução ou palavra-chave que o usuário começa a digitar. Preenchimento de declaração ajuda os usuários a inserir instruções difícil mais facilmente, com menos digitação e menos chances para erro.<br /><br /> Para obter informações gerais, consulte [preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [preenchimento automático de palavras em um serviço de linguagem herdado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
-|Correspondência de chaves|Destaques emparelhado caracteres como chaves. Quando o usuário digita um caractere de fechamento, como "}", correspondência de chaves destaca correspondente a abertura de caractere, como "{". Quando há vários níveis de delimitar caracteres, esse recurso ajuda os usuários confirmar que os caracteres delimitadores estão emparelhados corretamente.<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [correspondência de chaves em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
-|Dicas de ferramentas de informações de parâmetro|Exibe uma lista de assinaturas possíveis para o método sobrecarregado que o usuário está digitando no momento.<br /><br /> Para obter informações gerais, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obter informações sobre esse recurso na MPF, consulte [informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
-|Marcadores de erro|Exibe um sublinhado vermelho ondulado, também conhecido como uma linha ondulado, sob o texto que está sintaticamente incorreto. Marcadores de erro geralmente são usados para tornar os usuários ciente das palavras-chave incorretas, não fechados parênteses, caracteres inválidos e erros semelhantes.<br /><br /> As classes MPF, marcadores de erro são tratadas automaticamente na <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> método da <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|
+|Coloração de sintaxe|Faz com que a visualização do editor exiba diferentes cores e estilos de fonte para os diferentes elementos de uma linguagem. Essa diferenciação pode facilitar a leitura e a edição de arquivos.<br /><br /> Para obter informações gerais, consulte [Coloração de Sintaxe em um serviço de linguagem legado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso no framework de pacote gerenciado (MPF), consulte [Sintaxdimensionar colorir em um serviço de linguagem legado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
+|Conclusão da instrução|Completa uma declaração ou palavra-chave que o usuário começou a digitar. A conclusão da declaração ajuda os usuários a inserir declarações difíceis mais facilmente, com menos digitação e menos chances de erro.<br /><br /> Para obter informações gerais, consulte [Conclusão da declaração em um serviço de linguagem legado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obter informações sobre esse recurso no MPF, consulte [Conclusão do Word em um serviço de linguagem legado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Correspondência de chaves|Destaca personagens emparelhados, como aparelhos. Quando o usuário digita um caractere de fechamento como "}", a correspondência de chaves destaca o caractere de abertura correspondente, como "{". Quando há vários níveis de caracteres de fechamento, esse recurso ajuda os usuários a confirmar que os caracteres de fechamento são emparelhados corretamente.<br /><br /> Para obter informações sobre esse recurso no MPF, consulte [Brace Matching em um serviço de linguagem legado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
+|Dicas de ferramentas de informações de parâmetros|Exibe uma lista de possíveis assinaturas para o método sobrecarregado que o usuário está digitando no momento.<br /><br /> Para obter informações gerais, consulte [Parameter Info em um serviço de linguagem legado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obter informações sobre esse recurso no MPF, consulte [Parâmetro Sinfonado em um Serviço de Linguagem Legado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
+|Marcadores de erro|Exibe um sublinhado vermelho ondulado, também conhecido como squiggly, em texto que é sintáticamente incorreto. Marcadores de erro geralmente são usados para conscientizar os usuários sobre palavras-chave mal escritas, parênteses não fechados, caracteres inválidos e erros semelhantes.<br /><br /> Nas classes mpf, os marcadores de erro <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> são <xref:Microsoft.VisualStudio.Package.AuthoringSink> tratados automaticamente no método da classe.|
 
- Muitos desses recursos exigem que o serviço de linguagem para analisar o código-fonte. Você geralmente pode reutilizar os tokens e analisar o código para o compilador ou interpretador.
+ Muitos desses recursos exigem o serviço de idioma para analisar o código fonte. Muitas vezes você pode reutilizar o código de tokenização e análise para o seu compilador ou intérprete.
 
- Os recursos a seguir estão relacionados ao suporte para linguagens de programação, mas não fazem parte dos serviços de linguagem:
+ Os seguintes recursos estão relacionados ao suporte a linguagens de programação, mas não fazem parte dos serviços de idiomas:
 
 | Recurso | Descrição |
 |-----------------------| - |
-| Avaliadores de expressão | Dá suporte a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador validar pontos de interrupção e fornecendo uma lista de expressões a serem exibidos na **Autos** janela de depuração.<br /><br /> Para obter mais informações, consulte [suporte do serviço de linguagem para depuração](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Ferramentas de navegação de símbolo | Dá suporte à **Pesquisador de objetos**, **exibição de classe**, **Pesquisador de chamadas**, e **localizar resultados de símbolos**. |
+| Avaliadores de expressão | Suporta o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador validando pontos de interrupção e fornecendo uma lista de expressões a serem exibidas na janela de depuração **Autos.**<br /><br /> Para obter mais informações, consulte [o suporte ao serviço de idiomas para depuração](../../extensibility/internals/language-service-support-for-debugging.md). |
+| Ferramentas de navegação por símbolos | Suporta **navegador de objeto,** **visualização de classe,** **navegador de chamadas**e resultados de **símbolos**. |

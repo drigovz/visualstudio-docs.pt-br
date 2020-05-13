@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342407"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734350"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Obtém o contexto do documento que corresponde a este contexto de código. O contexto do documento representa uma posição no arquivo de origem que corresponde ao código-fonte que gerou essa instrução.
+Obtém o contexto do documento que corresponde a este contexto de código. O contexto do documento representa uma posição no arquivo de origem que corresponde ao código fonte que gerou essa instrução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ int GetDocumentContext( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppSrcCxt`\
-[out] Retorna o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que corresponde ao contexto de código. Se `S_OK` for retornado, ths deve ser não -`null`.
+[fora] Retorna o objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que corresponde ao contexto de código. Se `S_OK` for devolvido, deve ser`null`não- .
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Um mecanismo de depuração deve retornar um código de falha, como `E_FAIL` quando o `out` parâmetro é `null` como quando o contexto de código não tem nenhuma posição de origem associada.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Um mecanismo de depuração deve `E_FAIL` retornar `out` um `null` código de falha, como quando o parâmetro é como quando o contexto de código não tem posição de origem associada.
 
 ## <a name="remarks"></a>Comentários
- Em geral, o contexto do documento pode ser pensado como uma posição em um arquivo de código-fonte enquanto o contexto de código é uma posição de uma instrução de código em um fluxo de execução.
+ Geralmente, o contexto do documento pode ser pensado como uma posição em um arquivo de origem, enquanto o contexto do código é uma posição de uma instrução de código em um fluxo de execução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

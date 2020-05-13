@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Continue
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7d20a375644cbbac975f62db216377f271a2675
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8fa2e21e31297279a173c9c9edd087adc560903
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314039"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723772"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Continua a execução desse processo de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o processo inicia a execução novamente.
+Continua executando este processo a partir de um estado parado. Qualquer estado de execução anterior (como uma etapa) é preservado, e o processo começa a ser executado novamente.
 
 > [!NOTE]
-> Esse método deve ser usado em vez de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+> Este método deve ser usado em vez de [Continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,19 +42,19 @@ int Continue(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pThread`\
-[in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread a ser continuado.
+[em] Um objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) representando o segmento a ser continuado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é chamado sobre esse processo, independentemente de quantos processos estão sendo depurados ou processo que gerou o evento de interrupção. A implementação deve manter o estado de execução anterior (por exemplo, uma etapa) e continuar a execução como se ele nunca foi interrompido antes de concluir sua execução anterior. Ou seja, se um thread nesse processo estava fazendo uma operação de percorrer e foi interrompido porque algum outro processo é interrompido e, em seguida, `Continue` foi chamado, especificado thread deve concluir a operação percorrer original.
+ Esse método é chamado neste processo, independentemente de quantos processos estão sendo depurados ou qual processo gerou o evento de parada. A implementação deve manter o estado de execução anterior (como um passo) e continuar a execução como se nunca tivesse parado antes de completar sua execução anterior. Ou seja, se um segmento nesse processo estava fazendo uma operação de step-over e foi interrompido porque algum outro processo parou, e depois `Continue` foi chamado, o segmento especificado deve concluir a operação de over-over original.
 
- **Aviso** envia um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
+ **Aviso** Não envie um evento de parada ou um evento imediato (síncrono) para [o Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante o tratamento desta chamada; caso contrário, o depurador pode travar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

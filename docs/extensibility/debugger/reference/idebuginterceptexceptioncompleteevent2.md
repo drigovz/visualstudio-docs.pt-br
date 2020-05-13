@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugInterceptExceptionCompleteEvent2
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847565b4e0e1f3e8d9a19f6572531834197b39ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a07f2808c1aaeca3c1631fce658fdf6e8da32d60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349485"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727772"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
-Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando o DE foi concluída a manipulação de um evento interceptado.
+Esta interface é enviada pelo mecanismo de depuração (DE) para o gerenciador de depuração de sessão (SDM) quando o DE tiver concluído o manuseio de um evento interceptado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,29 +28,29 @@ Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador 
 IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface para relatar que o processamento de uma exceção interceptada foi concluído. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface. Usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa esta interface para informar que o processamento de uma exceção interceptada foi concluído. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface. O SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia esse objeto de evento para relatar a conclusão de uma exceção interceptada. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O DE cria e envia este objeto de evento para relatar a conclusão de uma exceção interceptada. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- O `IDebugInterceptExceptionCompleteEvent2` interface implementa os métodos a seguir.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A `IDebugInterceptExceptionCompleteEvent2` interface implementa os seguintes métodos.
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Retorna o valor exclusivo associado com a exceção tratada.|
+|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Devolve o valor único associado à exceção manuseada.|
 
 ## <a name="remarks"></a>Comentários
- Esse evento será enviado por [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) quando esse método for concluída com êxito tratando uma exceção interceptada.
+ Este evento será enviado pelo [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) quando esse método tiver concluído com sucesso o manuseio de uma exceção interceptada.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

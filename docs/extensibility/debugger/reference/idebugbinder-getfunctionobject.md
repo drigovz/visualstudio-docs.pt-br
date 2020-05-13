@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetFunctionObject method
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03078a09de94b886a659059192a5b67430cb5137
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01d501367f47e520e9170118da8b6fdfcb326137
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736002"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
-Esse método obtém uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto usado para criar parâmetros de função.
+Este método obtém um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) usado para criar parâmetros de função.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ int GetFunctionObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppFunction`\
-[out] Retorna o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface que é usado para criar parâmetros de função.
+[fora] Retorna a interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que é usada para criar parâmetros de função.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

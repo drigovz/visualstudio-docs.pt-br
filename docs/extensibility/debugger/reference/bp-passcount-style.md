@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737923"
 ---
-# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Especifica a condição associada com a contagem de passagem do ponto de interrupção que faz com que o ponto de interrupção seja acionado.
+# <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
+Especifica a condição associada à contagem de passes de ponto de ruptura que faz com que o ponto de ruptura seja acionado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,28 +48,28 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Campos
 `BP_PASSCOUNT_NONE`\
-Não especifica nenhum estilo de contagem de passagem do ponto de interrupção.
+Não especifica nenhum estilo de contagem de passes de ponto de ruptura.
 
 `BP_PASSCOUNT_EQUAL`\
-Define o estilo de contagem de passagem de ponto de interrupção para ser igual. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual a contagem de passagem.
+Define o estilo de contagem de passes de ponto de quebra igual. O ponto de partida dispara quando o número de vezes que o ponto de partida é atingido é igual à contagem de passes.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-Define o estilo de contagem de passagem do ponto de interrupção para igual ou maior. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual ou maior que a contagem de passagem.
+Define o estilo de contagem de passes de ponto de ruptura igual ou maior. O ponto de partida dispara quando o número de vezes que o ponto de ruptura é atingido é igual ou maior do que a contagem de passes.
 
 `BP_PASSCOUNT_MOD`\
-Especifica uma contagem de aprovações de módulo. Por exemplo, se a contagem de passagem é do tipo `BP_PASSCOUNT_MOD` e o valor de contagem de passagem é 4, o ponto de interrupção é disparado sempre que a contagem de ocorrências for um múltiplo de 4.
+Especifica uma contagem de passes de módulo. Por exemplo, se a contagem `BP_PASSCOUNT_MOD` de passes for do tipo e o valor da contagem de passes for 4, o ponto de partida é acionado toda vez que a contagem de acertos for um múltiplo de 4.
 
 ## <a name="remarks"></a>Comentários
-Usado para o `stylePassCount` membro do [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que por sua vez é um membro da estrutura a [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.
+Usado para `stylePassCount` o membro da estrutura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que, por sua vez, é membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

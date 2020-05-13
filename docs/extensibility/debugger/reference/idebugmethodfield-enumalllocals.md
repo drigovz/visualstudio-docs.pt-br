@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd0bc879cccf2bc806d73bfac47bc4795749e0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346940"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727335"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Cria um enumerador para todas as variáveis locais do método, inclusive aquelas geradas internamente por um compilador.
+Cria um enumerador para todas as variáveis locais do método, incluindo aquelas geradas internamente por um compilador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,22 +41,22 @@ int EnumAllLocals(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pAddress`\
-[in] Uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) que representa um endereço de depuração dentro do método, que aponta para um determinado escopo ou contexto de objeto.
+[em] Um objeto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) representando um endereço de depuração dentro do método, apontando para um escopo ou contexto específico.
 
 `ppLocals`\
-[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de todos os locais no escopo especificado; caso contrário, retornará um valor nulo que indica nenhuma locais.
+[fora] Retorna um objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) representando a lista de todos os locais no escopo especificado; caso contrário, retorna um valor nulo indicando nenhum local.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum locais. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK ou retorna S_FALSE se não houver moradores locais. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Somente as variáveis definidas dentro do bloco que contém o endereço de depuração determinado são enumeradas. Esse método inclui qualquer locais gerados pelo compilador. Se tudo o que é necessário são os locais definidos explicitamente na origem, a chamada a [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) método.
+ Apenas as variáveis definidas dentro do bloco que contém o endereço de depuração dado são enumeradas. Este método inclui qualquer local gerado pelo compilador. Se tudo o que é necessário são os locais explicitamente definidos na fonte, chame o método [EnumLocals.](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)
 
- Um método pode conter vários contextos ou blocos de escopo.
+ Um método pode conter vários contextos de escopo ou blocos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

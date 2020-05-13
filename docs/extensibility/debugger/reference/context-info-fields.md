@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ed50d43061ee714f8f892e03bb164f16e2e33d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346380"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737596"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Especifica quais informações devem ser recuperadas sobre um contexto de memória.
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
+Especifica quais informações recuperar sobre um contexto de memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,38 +54,38 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Campos
 `CIF_MODULEURL`\
-Inicialização/usar o `bstrModuleUrl` campo do [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estrutura.
+Inicializar/utilizar `bstrModuleUrl` o campo da estrutura [CONTEXT_INFO.](../../../extensibility/debugger/reference/context-info.md)
 
 `CIF_FUNCTION`\
-Inicialização/usar o `bstrFunction` campo do `CONTEXT_INFO` estrutura.
+Inicializar/utilizar `bstrFunction` o campo `CONTEXT_INFO` da estrutura.
 
 `CIF_FUNCTIONOFFSET`\
-Inicialização/usar o `posFunctionOffset` campo do `CONTEXT_INFO` estrutura.
+Inicializar/utilizar `posFunctionOffset` o campo `CONTEXT_INFO` da estrutura.
 
 `CIF_ADDRESS`\
-Inicialização/usar o `bstrAddress` campo do `CONTEXT_INFO` estrutura.
+Inicializar/utilizar `bstrAddress` o campo `CONTEXT_INFO` da estrutura.
 
 `CIF_ADDRESSOFFSET`\
-Inicialização/usar o `bstrAddressOffset` campo do `CONTEXT_INFO` estrutura.
+Inicializar/utilizar `bstrAddressOffset` o campo `CONTEXT_INFO` da estrutura.
 
 `CIF_ALLFIELDS`\
-Inicialização/usar todos os campos do `CONTEXT_INFO` estrutura.
+Inicializar/utilizar todos os `CONTEXT_INFO` campos da estrutura.
 
 ## <a name="remarks"></a>Comentários
-Esses valores são passados a um parâmetro para o [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método para indicar quais campos da [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) são de estrutura a ser inicializado.
+Esses valores são passados um parâmetro para o método [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) para indicar quais campos da estrutura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) devem ser inicializados.
 
-Esses sinalizadores também são usados para indicar quais campos do `CONTEXT_INFO` estrutura são usados e válidos quando a estrutura é retornada.
+Essas bandeiras também são usadas `CONTEXT_INFO` para indicar quais campos da estrutura são usados e válidos quando a estrutura é devolvida.
 
-Esses valores podem ser combinados com um OR bit a bit.
+Esses valores podem ser combinados com um pouco de OR.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
+title: IDebugPendingBreakpoint2::Habilitar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311679"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725897"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Alterna o estado habilitado do ponto de interrupção pendente.
+Alterna o estado habilitado do ponto de ruptura pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ int Enable(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `fEnable`\
-[in] Definido como não zero (`TRUE`) para habilitar um ponto de interrupção pendente, ou zero (`FALSE`) para desabilitar.
+[em] Defina-se`TRUE`como não zero ( ) para`FALSE`habilitar um ponto de ruptura pendente, ou para zero ( ) desativar.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de ruptura tiver sido excluído.
 
 ## <a name="remarks"></a>Comentários
-Quando um ponto de interrupção pendente está habilitado ou desabilitado, todos os pontos de interrupção associados dele são definidos para o mesmo estado.
+Quando um ponto de interrupção pendente é ativado ou desativado, todos os pontos de interrupção vinculados a ele são definidos para o mesmo estado.
 
-Esse método pode ser chamado quantas vezes forem necessárias, mesmo se o ponto de interrupção já está habilitado ou desabilitado.
+Esse método pode ser chamado quantas vezes for necessário, mesmo que o ponto de ruptura já esteja ativado ou desativado.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um simples `CPendingBreakpoint` objeto que expõe o [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.
+O exemplo a seguir mostra como `CPendingBreakpoint` implementar este método para um objeto simples que expõe a interface [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

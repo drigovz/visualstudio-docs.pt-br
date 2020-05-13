@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_CODE structure
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ffa96e6114ad741e3d3cfd3c19e69af7785af60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbfd16025d338b54bec8e2e4276de62c8d00477e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350619"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737849"
 ---
-# <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-Descreve o local de um ponto de interrupção de código.
+# <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
+Descreve a localização de um ponto de quebra de código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ public struct BP_RESOLUTION_CODE {
 
 ## <a name="members"></a>Membros
 `pCodeContext`\
-O [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que identifica a posição do ponto de interrupção no código.
+O objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que identifica a posição do ponto de ruptura no código.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é um membro do [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) estrutura, que está em um membro de ativar o [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura retornada pelo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)método.
+Essa estrutura é membro da estrutura [BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) que por sua vez é membro da estrutura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) devolvida pelo método [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

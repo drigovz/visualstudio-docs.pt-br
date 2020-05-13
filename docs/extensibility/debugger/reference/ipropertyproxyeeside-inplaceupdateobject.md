@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject | Microsoft Docs
+title: iPropertyproxyeeside::InplaceUpdateobject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329419"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714899"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
-Atualiza os dados do objeto com o objeto de dados fornecido e retorna um novo objeto de dados que representa os dados do objeto novo.
+Atualiza os dados do objeto com o objeto de dados dado e retorna um novo objeto de dados representando os novos dados do objeto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,24 +41,24 @@ int InPlaceUpdateObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dataIn`\
-[in] Uma [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os novos dados.
+[em] Um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os novos dados.
 
 `dataOut`\
-[out] Retorna um novo `IEEDataStorage` objeto que contém os dados substituídos.
+[fora] Retorna um `IEEDataStorage` novo objeto contendo os dados substituídos.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Na verdade, esse método atualiza os dados do objeto. Os dados em retornado [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto não precisa ser o mesmo que os dados de entrada `IEEDataStorage` objeto, mas o objeto retornado deve refletir o valor da propriedade atual.
+ Este método realmente atualiza os dados do objeto. Os dados do objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) retornado não precisam ser os mesmos que os dados no objeto de entrada, `IEEDataStorage` mas o objeto retornado deve refletir o valor atual da propriedade.
 
- O objeto de dados de entrada não costuma ser implementado pelo EE. No entanto, o objeto retornado por esse método sempre é implementado pelo EE, que permite que o implemente EE o `IEEDataStorage` interface em qualquer classe for desejada.
+ O objeto de dados de entrada normalmente não é implementado pelo EE. No entanto, o objeto retornado por este método é sempre implementado `IEEDataStorage` pelo EE, que permite ao EE implementar a interface em qualquer classe desejada.
 
- O [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) método cria um objeto de dados com base no objeto de entrada de dados, mas não afeta os dados de original da propriedade.
+ O método [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) cria um objeto de dados com base no objeto de dados de entrada, mas não afeta os dados originais da propriedade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

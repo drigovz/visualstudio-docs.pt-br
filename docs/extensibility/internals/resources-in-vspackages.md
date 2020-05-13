@@ -7,45 +7,45 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705595"
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
-Você pode inserir recursos localizados em DLLs de interface do usuário satélite nativas, DLLs satélite gerenciadas ou em um VSPackage gerenciado.
+Você pode incorporar recursos localizados em DLLs de satélite nativo, DLLs de satélite gerenciados ou em um VSPackage gerenciado.
 
- Alguns recursos não podem ser inseridos em VSPackages. Os seguintes tipos gerenciados podem ser inseridos:
+ Alguns recursos não podem ser incorporados em VSPackages. Os seguintes tipos gerenciados podem ser incorporados:
 
 - Cadeias de caracteres
 
-- Chaves de carregamento de pacote (que também são cadeias de caracteres)
+- Teclas de carga do pacote (que também são strings)
 
-- Ícones da janela de ferramentas
+- Ícones da janela da ferramenta
 
-- Arquivos de saída de tabela de comando compilado (CTO)
+- Arquivos CTO (Command Table Output, saída de tabela de comando compiladas)
 
 - Bitmaps do CTO
 
-- Ajuda da linha de comando
+- Ajuda de linha de comando
 
-- Sobre os dados da caixa de diálogo
+- Sobre dados da caixa de diálogo
 
-  Os recursos em um pacote gerenciado são selecionados pela ID do recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.
+  Os recursos em um pacote gerenciado são selecionados por iD de recurso. Uma exceção é o arquivo CTO, que deve ser chamado CTMENU. O arquivo CTO deve aparecer na `byte[]`tabela de recursos como a . Todos os outros itens de recurso são identificados por tipo.
 
-  Você pode usar o atributo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> para indicar a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que os recursos gerenciados estão disponíveis.
+  Você pode <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] atributo para indicar que os recursos gerenciados estão disponíveis.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  Definir <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ignorar DLLs satélite não gerenciadas ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encontrar dois ou mais recursos que tenham a mesma ID de recurso, ele usará o primeiro recurso que encontrar.
+  A <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> configuração desta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] maneira indica que deve ignorar DLLs de satélite não <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>gerenciados quando ele procura recursos, por exemplo, usando . Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encontrar dois ou mais recursos que tenham o mesmo ID de recurso, ele usará o primeiro recurso encontrado.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir é uma representação gerenciada de um ícone de janela de ferramenta.
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- O exemplo a seguir demonstra como inserir a matriz de bytes CTO, que deve ser nomeada CTMENU.
+ O exemplo a seguir demonstra como incorporar a matriz de bytes CTO, que deve ser chamada CTMENU.
 
 ```
 <data name="CTMENU"
@@ -81,10 +81,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Notas de implementação
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] atrasa o carregamento de VSPackages sempre que possível. Uma consequência de inserir um arquivo CTO em um VSPackage é que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve carregar todos esses VSPackages na memória durante a instalação, que é quando ele cria uma tabela de comando mesclada. Os recursos podem ser extraídos de um VSPackage examinando os metadados sem executar código no VSPackage. O VSPackage não é inicializado no momento, portanto, a perda de desempenho é mínima.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]atrasa o carregamento de VSPackages sempre que possível. Uma conseqüência de incorporar um arquivo CTO [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] em um VSPackage é que deve carregar todos esses VSPackages na memória durante a configuração, que é quando ele constrói uma tabela de comando mesclada. Os recursos podem ser extraídos de um VSPackage examinando os metadados sem executar código no VSPackage. O VSPackage não é inicializado no momento, então a perda de desempenho é mínima.
 
- Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicita um recurso de um VSPackage após a instalação, esse pacote provavelmente já estará carregado e inicializado, portanto, a perda de desempenho será mínima.
+ Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicita um recurso de um VSPackage após a configuração, é provável que esse pacote já esteja carregado e inicializado, de modo que a perda de desempenho é mínima.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)
 - [Recursos localizados em aplicativos MFC: DLLs satélites](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

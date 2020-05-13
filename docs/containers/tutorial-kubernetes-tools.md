@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916957"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444681"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Comece com o Visual Studio Kubernetes Tools
 
@@ -40,7 +40,7 @@ Para aproveitar essa nova funcionalidade, você precisará:
 
     1. Um cluster do Serviço de Kubernetes do Azure. Para obter mais informações, consulte [Criando um cluster AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Certifique-se de [se conectar ao cluster a](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) partir de sua estação de trabalho de desenvolvimento.
 
-    1. Helm CLI instalado em sua estação de trabalho de desenvolvimento. Para obter mais informações, consulte [Installing Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI instalado em sua estação de trabalho de desenvolvimento. Para obter mais informações, consulte [Installing Helm](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. O leme configurado contra o `helm init` cluster AKS usando o comando. Para obter mais informações sobre como fazer isso, consulte [Como configurar o Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
@@ -131,7 +131,7 @@ Com todos esses arquivos no lugar, você pode usar o Visual Studio IDE para escr
 
 Uma vez que você tenha seu código funcionando do jeito que você quer, você pode publicar diretamente do Visual Studio para um cluster AKS.
 
-Para fazer isso, primeiro você precisa verificar duas vezes se você instalou tudo conforme descrito na seção [Pré-requisitos](#prerequisites) o item para publicação no AKS, e executar todas as etapas da linha de comando dadas nos links. Em seguida, configure um perfil de publicação que publique sua imagem de contêiner no Azure Container Registry (ACR). Em seguida, o AKS pode puxar a imagem do contêiner do ACR e implantá-la no cluster.
+Para fazer isso, primeiro você precisa verificar duas vezes se você instalou tudo conforme descrito na seção [Pré-requisitos](#prerequisites) sob o item para publicação no AKS, e executar todas as etapas da linha de comando dadas nos links. Em seguida, configure um perfil de publicação que publique sua imagem de contêiner no Azure Container Registry (ACR). Em seguida, o AKS pode puxar a imagem do contêiner do ACR e implantá-la no cluster.
 
 1. No **Solution Explorer,** clique com o botão direito do mouse no *seu projeto* e escolha **Publicar**.
 

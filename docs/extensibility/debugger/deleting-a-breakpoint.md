@@ -1,31 +1,31 @@
 ---
-title: Excluindo um ponto de interrupção | Microsoft Docs
+title: Excluindo um Breakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, deleting
 - debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7551ee12993780544bbb9c9eb127a9bfb4364e8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738944"
 ---
-# <a name="deleting-a-breakpoint"></a>Excluindo um ponto de interrupção
-O exemplo a seguir descreve o processo ao excluir um ponto de interrupção pendente:
+# <a name="deleting-a-breakpoint"></a>Excluindo um ponto de ruptura
+O seguinte descreve o processo ao excluir um ponto de ruptura pendente:
 
 ## <a name="deletion-process"></a>Processo de exclusão
- O Gerenciador de sessão de depuração (SDM) chama o [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) método para remover o ponto de interrupção pendente e acoplados todos os pontos de interrupção associado dele.
+ O SDM (Session Debug Manager, gerenciador de depuração de sessão) chama o [método IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) para remover o breakpoint pendente e todos os pontos de interrupção vinculados vinculados a partir dele.
 
 > [!NOTE]
-> Também é possível excluir um único ponto de interrupção associado por uma chamada para [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Um único ponto de ruptura vinculado também pode ser excluído por uma chamada para [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
-## <a name="see-also"></a>Consulte também
-- [Chamar eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Confira também
+- [Eventos de depurador de chamadas](../../extensibility/debugger/calling-debugger-events.md)

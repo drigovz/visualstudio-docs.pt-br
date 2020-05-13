@@ -18,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633168"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072574"
 ---
 # <a name="msbuild-task"></a>tarefa MSBuild
 
 Constrói projetos msbuild a partir de outro projeto MSBuild.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `MSBuild`.
 
@@ -37,11 +37,12 @@ Constrói projetos msbuild a partir de outro projeto MSBuild.
 |-----------------------------------| - |
 | `BuildInParallel` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os projetos especificados no parâmetro `Projects` serão criados em paralelo, se possível. O padrão é `false`. |
 | `Projects` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos de projeto para compilar. |
-| `Properties` | Parâmetro `String` opcional.<br /><br /> Uma lista delimitada por ponto-e-vírgula de pares de nome/valor de propriedade para aplicar como propriedades globais para o projeto filho. Quando você especifica este parâmetro, ele é funcionalmente equivalente a configuração de propriedades que têm o switch **-propriedade** quando você constrói com [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por exemplo: <br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Quando você passa propriedades para `Properties` o projeto através do parâmetro, o MSBuild pode criar uma nova instância do projeto, mesmo que o arquivo do projeto já tenha sido carregado. O MSBuild cria uma única instância de projeto para um determinado caminho de projeto e um conjunto único de propriedades globais. Por exemplo, esse comportamento permite criar várias tarefas do MSBuild que chamam *myproject.proj*, com Configuration=Release, e você obtém uma única instância do *myproject.proj* (se não houver propriedades exclusivas especificadas na tarefa). Se você especificar uma propriedade que ainda não foi vista pelo MSBuild, o MSBuild criará uma nova instância do projeto, que pode ser construída paralelamente a outras instâncias do projeto. Por exemplo, uma configuração de versão poderia ser compilada ao mesmo tempo como uma configuração de depuração.|
+| `Properties` | Parâmetro `String` opcional.<br /><br /> Uma lista delimitada por ponto-e-vírgula de pares de nome/valor de propriedade para aplicar como propriedades globais para o projeto filho. Quando você especifica este parâmetro, ele é funcionalmente equivalente a configuração de propriedades que têm o switch **-propriedade** quando você constrói com [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por exemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Quando você passa propriedades para `Properties` o projeto através do parâmetro, o MSBuild pode criar uma nova instância do projeto, mesmo que o arquivo do projeto já tenha sido carregado. O MSBuild cria uma única instância de projeto para um determinado caminho de projeto e um conjunto único de propriedades globais. Por exemplo, esse comportamento permite criar várias tarefas do MSBuild que chamam *myproject.proj*, com Configuration=Release, e você obtém uma única instância do *myproject.proj* (se não houver propriedades exclusivas especificadas na tarefa). Se você especificar uma propriedade que ainda não foi vista pelo MSBuild, o MSBuild criará uma nova instância do projeto, que pode ser construída paralelamente a outras instâncias do projeto. Por exemplo, uma configuração de versão poderia ser compilada ao mesmo tempo como uma configuração de depuração.|
 | `RebaseOutputs` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os caminhos relativos dos itens de saída de destino de projetos de compilação terão seus caminhos ajustados para serem relativos ao projeto de chamada. O padrão é `false`. |
 | `RemoveProperties` | Parâmetro `String` opcional.<br /><br /> Especifica o conjunto de propriedades globais para remover. |
 | `RunEachTargetSeparately` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa MSBuild invoca cada destino na lista passou para o MSBuild um de cada vez, em vez de ao mesmo tempo. Definir esse parâmetro como `true` garante que os destinos subsequentes sejam chamados mesmo se os destinos chamados anteriormente tiverem falhado. Caso contrário, um erro de build pararia a invocação de todos os destinos subsequentes. O padrão é `false`. |
 | `SkipNonexistentProjects` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os arquivos de projeto que não existem no disco serão ignorados. Caso contrário, esses projetos causarão um erro. |
+|`SkipNonexistentTargets`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, arquivos de projeto que `Targets` existem, mas não contêm o nome serão ignorados. Caso contrário, esses projetos causarão um erro. Introduzido no MSBuild 15.5.|
 | `StopOnFirstFailure` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, quando um dos projetos falhar em compilar, os projetos não serão mais compilados. Atualmente isso não tem suporte na criação em paralelo (com vários processadores). |
 | `TargetAndPropertyListSeparators` | Parâmetro `String[]` opcional.<br /><br /> Especifica uma lista de destinos e de propriedades como metadados de item `Project`). Separadores não serão escapados antes do processamento. Por exemplo, %3B (um escape ';') será tratado como se não fosse escapado ';'. |
 | `TargetOutputs` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Retorna as saídas dos destinos compilados de todos os arquivos de projeto. Somente as saídas de destinos que foram especificados são retornadas, não as saídas que podem existir em destinos dos quais esses destinos dependem.<br /><br /> O parâmetro `TargetOutputs` também contém os metadados a seguir:<br /><br /> -   `MSBuildSourceProjectFile`: O arquivo do projeto MSBuild que contém o destino que define as saídas.<br />-   `MSBuildSourceTargetName`: o destino que define as saídas. **Observação:** para identificar as saídas de cada arquivo de projeto ou destino separadamente, execute a tarefa `MSBuild` separadamente para cada arquivo de projeto ou destino. Se você executar a tarefa `MSBuild` apenas uma vez para compilar todos os arquivos de projeto, as saídas de todos os destinos serão coletadas em uma matriz. |
@@ -56,7 +57,7 @@ Constrói projetos msbuild a partir de outro projeto MSBuild.
 
  Essa tarefa pode processar não somente arquivos de projeto, mas também arquivos de solução.
 
- Qualquer configuração exigida pelo MSBuild para permitir que os projetos sejam construídos ao mesmo tempo, mesmo que a configuração envolva infra-estrutura remota (por exemplo, portas, protocolos, tempoouts, repetições e assim por diante), deve ser configurada usando um arquivo de configuração. Quando possível, itens de configuração deverão ser capazes de ser especificados como parâmetros de tarefa na tarefa `MSBuild`.
+ Qualquer configuração necessária pelo MSBuild para permitir que os projetos sejam construídos ao mesmo tempo, mesmo que a configuração envolva infra-estrutura remota (por exemplo, portas, protocolos, tempoouts, repetições e assim por diante), deve ser configurada usando um arquivo de configuração. Quando possível, itens de configuração deverão ser capazes de ser especificados como parâmetros de tarefa na tarefa `MSBuild`.
 
  A partir do MSBuild 3.5, os projetos de solução agora superam as Saídas de Destino de todos os subprojetos que ele constrói.
 

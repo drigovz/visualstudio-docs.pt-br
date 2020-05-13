@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d204b29b46e257d4ca0b8c4102c3a64e9e78adf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317236"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716888"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
-Essa interface enumera os pontos de interrupção de erro associados com um ponto de interrupção pendente.
+Esta interface enumera os pontos de interrupção de erro associados a um ponto de interrupção pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,34 +28,34 @@ Essa interface enumera os pontos de interrupção de erro associados com um pont
 IEnumDebugErrorBreakpoints2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O mecanismo de depuração (DES) implementa essa interface como parte de seu suporte para pontos de interrupção.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O mecanismo de depuração (DE) implementa essa interface como parte de seu suporte para pontos de interrupção.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chamadas do Visual Studio [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) para obter essa interface que representa uma lista de pontos de interrupção não pode ser associado, ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) para obter essa interface que representa uma lista de pontos de interrupção que não foram associados.
+ O Visual Studio chama [o CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) para obter essa interface representando uma lista de pontos de interrupção que não podem ser vinculados, ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) para obter essa interface representando uma lista de pontos de interrupção que não foram vinculados.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IEnumDebugErrorBreakpoints2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IEnumDebugErrorBreakpoints2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Recupera um número especificado de pontos de interrupção de erro em uma sequência de enumeração.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Ignora um número especificado de pontos de interrupção de erro em uma sequência de enumeração.|
-|[Reiniciar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Redefine uma sequência de enumeração para o início.|
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
+|[Avançar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Recupera um número especificado de pontos de interrupção de erro em uma seqüência de enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Salta um número especificado de pontos de interrupção de erro em uma seqüência de enumeração.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Reinicia uma seqüência de enumeração para o início.|
+|[Clonar](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Obtém o número de pontos de interrupção de erro em um enumerador.|
 
 ## <a name="remarks"></a>Comentários
- Essa interface contém uma lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaces, cada um deles descreve um ponto de interrupção que não pôde ser associado e por que ele não pôde ser associado. O Visual Studio usa o `IEnumDebugErrorBreakpoint2` interface para atualizar os pontos de interrupção mostrados no IDE.
+ Esta interface contém uma lista de interfaces [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) cada uma das quais descreve um ponto de ruptura que não poderia ser vinculado e por que não poderia ser vinculado. O Visual `IEnumDebugErrorBreakpoint2` Studio usa a interface para atualizar os pontos de interrupção mostrados no IDE.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

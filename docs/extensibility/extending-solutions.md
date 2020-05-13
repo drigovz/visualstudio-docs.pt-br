@@ -1,26 +1,26 @@
 ---
-title: Estendendo soluções | Microsoft Docs
+title: Ampliando soluções | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fd58ea0f898f1840d63a436b4fe28787e89e613
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313018"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711719"
 ---
-# <a name="extend-solutions"></a>Estender soluções
+# <a name="extend-solutions"></a>Ampliar soluções
 Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo.
 
 ## <a name="in-this-section"></a>Nesta seção
- As instruções a seguir mostra algumas maneiras em que você pode estender as soluções.
+ Os passoados a seguir mostram algumas maneiras pelas quais você pode estender soluções.
 
-1. [Estender o filtro do Gerenciador de soluções](../extensibility/extending-the-solution-explorer-filter.md) explica como filtrar o que exibe o Gerenciador de soluções.
+1. [Estender o filtro Solution Explorer](../extensibility/extending-the-solution-explorer-filter.md) explica como filtrar o que o Solution Explorer exibe.
 
-2. [Gerenciar o carregamento do projeto em uma solução](../extensibility/managing-project-loading-in-a-solution.md) explica como gerenciar o carregamento do projeto para melhorar o desempenho quando um usuário carrega uma solução.
+2. [Gerenciar o carregamento de projetos em uma solução](../extensibility/managing-project-loading-in-a-solution.md) explica como gerenciar o carregamento do projeto para melhorar o desempenho quando um usuário carrega uma solução.

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Microsoft Docs
+title: IDebugObject::Equalequal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf592fa83a18c47bf676b84073c0be0e4cb476e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323581"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726508"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-Compara um objeto com esse objeto.
+Compara um objeto com este objeto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int IsEqual(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pObject`\
-[in] Uma [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa o objeto a ser comparado.
+[em] Um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando o objeto para comparar.
 
 `pfIsEqual`\
-[out] Retorna não zero (`TRUE`) se os valores dos objetos forem iguais; caso contrário, retornará zero (`FALSE`).
+[fora] Retorna não-zero`TRUE`( ) se os valores dos objetos forem iguais; caso contrário, retorna`FALSE`zero ( ).
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Normalmente, esse método pode comparar os endereços dos valores representados pelo `pObject` parâmetro e isso [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto; se os endereços são iguais e, em seguida, os objetos podem ser considerados iguais.
+ Normalmente, este método pode comparar os endereços dos valores representados pelo `pObject` parâmetro e este objeto [IDebugObject;](../../../extensibility/debugger/reference/idebugobject.md) se os endereços são iguais, então os objetos podem ser considerados iguais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

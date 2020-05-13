@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349927"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714127"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-Especifica o tipo de um objeto do avaliador de expressão.
+# <a name="object_type"></a>Object_Type
+Especifica o tipo de objeto do avaliador de expressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -70,34 +70,34 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Campos
  `OBJECT_TYPE_BOOLEAN`\
- Indica que o objeto é um valor booliano.
+ Indica que o objeto é um booleano.
 
  `OBJECT_TYPE_CHAR`\
  Indica que o objeto é um caractere.
 
  `OBJECT_TYPE_I1`\
- Indica que o objeto é um inteiro com sinal de um byte.
+ Indica que o objeto é um inteiro assinado por um byte.
 
  `OBJECT_TYPE_U1`\
- Indica que o objeto é um inteiro sem sinal de um byte.
+ Indica que o objeto é um inteiro não assinado de um byte.
 
  `OBJECT_TYPE_I2`\
- Indica que o objeto é um inteiro com sinal de dois bytes.
+ Indica que o objeto é um inteiro assinado por dois bytes.
 
  `OBJECT_TYPE_U2`\
- Indica que o objeto é um inteiro sem sinal de dois bytes.
+ Indica que o objeto é um inteiro não assinado de dois bytes.
 
  `OBJECT_TYPE_I4`\
- Indica que o objeto é um inteiro com sinal de quatro bytes.
+ Indica que o objeto é um inteiro assinado por quatro bytes.
 
  `OBJECT_TYPE_U4`\
- Indica que o objeto é um inteiro sem sinal de quatro bytes.
+ Indica que o objeto é um inteiro não assinado de quatro bytes.
 
  `OBJECT_TYPE_I8`\
- Indica que o objeto é um inteiro com sinal de oito bytes.
+ Indica que o objeto é um inteiro assinado por oito bytes.
 
  `OBJECT_TYPE_U8`\
- Indica que o objeto é um inteiro sem sinal de oito bytes.
+ Indica que o objeto é um inteiro não assinado de oito bytes.
 
  `OBJECT_TYPE_R4`\
  Indica que o objeto é um número de ponto flutuante de quatro bytes.
@@ -109,22 +109,22 @@ public enum enum_OBJECT_TYPE { 
  Indica que o objeto é um objeto.
 
  `OBJECT_TYPE_NULL`\
- Indica que o objeto é nulo.
+ Indica que o objeto é NULO.
 
  `OBJECT_TYPE_CLASS`\
  Indica que o objeto é uma classe.
 
 ## <a name="remarks"></a>Comentários
- Passado como um argumento para o [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.
+ Passou como um argumento para os métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
 
 ## <a name="requirements"></a>Requisitos
  Cabeçalho: ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
 - [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

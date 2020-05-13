@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: IDebugBreakpointUnboundEvent2:GetReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734726"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Obtém o motivo pelo qual que o ponto de interrupção foi desassociado.
+Fica a razão pela qual o ponto de ruptura foi desvinculado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ int GetReason(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pdwUnboundReason`\
-[out] Retorna um valor da [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeração que especifica o motivo pelo qual o ponto de interrupção foi desassociado.
+[fora] Retorna um valor da enumeração [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) especificando a razão pela qual o ponto de ruptura foi desvinculado.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Os motivos incluem um ponto de interrupção que está sendo religado para um local diferente após uma operação de editar e continuar, ou a uma determinação de que um ponto de interrupção foi vinculado em erro.
+As razões incluem um ponto de ruptura sendo rebote para um local diferente após uma operação de edição e continuação, ou uma determinação de que um breakpoint foi vinculado a erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CBreakpointUnboundDebugEventBase** objeto que expõe a [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CBreakpointUnboundDebugEventBase** que expõe a interface [IDebugBreakpointUnboundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
@@ -71,5 +71,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

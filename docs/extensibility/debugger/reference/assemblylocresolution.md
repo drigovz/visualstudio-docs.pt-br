@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
+title: RESOLUÇÃO DE MONTAGEM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738143"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Especifica onde um assembly está localizado.
+Especifica onde um conjunto está localizado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,30 +48,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Campos
 `ALR_NAME`\
-Assembly está localizado no namespace atual.
+O conjunto está localizado no namespace atual.
 
 `ALR_USERDIR`\
-Assembly está localizado em um diretório de usuário.
+O conjunto está localizado em um diretório de usuários.
 
 `ALR_SHAREDDIR`\
-Assembly está localizado no diretório compartilhado.
+A montagem está localizada em diretório compartilhado.
 
 `ALR_REMOTEDIR`\
-Assembly está localizado em um diretório remoto.
+A montagem está localizada em um diretório remoto.
 
 ## <a name="remarks"></a>Comentários
-Esses valores são retornados pela [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.
+Esses valores são devolvidos pelos métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
 
-Esses valores podem ser combinados com o `OR` operação.
+Esses valores podem ser `OR` combinados com a operação.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

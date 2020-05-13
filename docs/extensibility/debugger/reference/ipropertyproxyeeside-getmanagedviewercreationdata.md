@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: iPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 435f6924948ab1273abbded633bcce757b57d9b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329508"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714957"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Recupera informações sobre o visualizador para esse tipo de propriedade para instanciar esse visualizador.
+Recupera informações sobre o visualizador para este tipo de propriedade, a fim de instanciar esse visualizador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,32 +49,32 @@ int GetManagedViewerCreationData(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `assemName`\
-[out] Retorna o nome do assembly que contém este objeto.
+[fora] Retorna o nome da montagem segurando este objeto.
 
 `assemBytes`\
-[out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os bytes de assembly do objeto (esse é um valor nulo se não há bytes estão disponíveis).
+[fora] Retorna um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os bytes de montagem deste objeto (este é um valor nulo se não houver bytes disponíveis).
 
 `assemPdb`\
-[out] Retorna um `IEEDataStorage` objeto que contém o símbolo de armazena informações para esse objeto (esse é um valor nulo se nenhum repositório de símbolos está disponível).
+[fora] Retorna `IEEDataStorage` um objeto contendo as informações do armazenamento de símbolos para este objeto (este é um valor nulo se não houver nenhum armazenamento de símbolos disponível).
 
 `className`\
-[out] Retorna o nome da classe que contém este objeto.
+[fora] Retorna o nome da classe que contém este objeto.
 
 `alr`\
-[out] Retorna um valor da [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeração que indica o local do assembly.
+[fora] Retorna um valor da [enumeração ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indicando o local da montagem.
 
 `replacementOk`\
-[out] Retorna não zero (`TRUE`) se o valor desse objeto pode ser alterado; zero (`FALSE`) se o objeto é somente leitura.
+[fora] Retorna não`TRUE`zero ( ) se o valor deste objeto pode ser alterado; zero`FALSE`( ) se o objeto for somente leitura.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é usado por visualizadores de tipo para instanciar um visualizador gerenciado.
+ Este método é usado por visualizadores de tipo para instanciar um visualizador gerenciado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

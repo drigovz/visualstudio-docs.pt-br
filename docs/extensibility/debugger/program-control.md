@@ -1,50 +1,50 @@
 ---
-title: Controle do programa | Microsoft Docs
+title: Controle de Programa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a19769925689ae8131c6443ab80ccefeefa82290
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351436"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738233"
 ---
 # <a name="program-control"></a>Controle do programa
-No Visual Studio de depuração, todos os procedimentos passo a passo e continuando rotinas ocorrerem no nível do programa:
+Na depuração do Visual Studio, todas as seguintes etapas e rotinas contínuas ocorrem no nível do programa:
 
-- Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro
+- Definindo a próxima instrução, ou seja, definindo seu computador para a próxima instrução a ser executada em um ambiente de quadro específico
 
-- Ou seja, executar, continuando sair do modo de depuração
+- Executando, isto é, continuar a sair do modo de pisar
 
-- Passo a passo para a próxima instrução
+- Indo para a próxima instrução
 
-- Continuando com o modo de depuração atual
+- Continuando com o modo de revisão atual
 
-- Suspender os threads contidos pelo programa
+- Suspensão dos fios contidos pelo programa
 
-- Retomar os threads contidos pelo programa
+- Retomando os segmentos contidos pelo programa
 
 > [!NOTE]
-> Exibindo a pilha de chamadas é implementada no nível do thread. Para enumerar as informações do quadro ao exibir a pilha de chamadas para um thread, você deve implementar todos os métodos do [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.
+> A visualização da pilha de chamadas é implementada no nível de segmento. Para enumerar as informações do quadro ao visualizar a pilha de chamadas para um segmento, você deve implementar todos os métodos da interface [IEnumDebugFrameInfo2.](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
 
 ## <a name="methods-of-program-control"></a>Métodos de controle do programa
- A tabela a seguir mostra os métodos de [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) que deve ser implementada para um mecanismo de depuração minimamente funcional (DES) e o controle de execução.
+ A tabela a seguir mostra os métodos do [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) que devem ser implementados para um mecanismo de depuração minimamente funcional (DE) e controle de execução.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Continuar em execução por todos os threads contidos por um programa de um estado parado. Necessário para o controle de execução.|
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Continuar em execução por todos os threads contidos por um programa de um estado parado. Necessário para o controle de execução.|
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Executa uma etapa em determinado thread. Continua em execução a todos os outros threads contidos pelo programa. Necessário para o controle de execução.|
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Continua executando todos os segmentos contidos por um programa de um estado parado. Necessário para o controle de execução.|
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Continua executando todos os segmentos contidos por um programa de um estado parado. Necessário para o controle de execução.|
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Executa um passo no fio dado. Continua executando todos os outros tópicos contidos pelo programa. Necessário para o controle de execução.|
 
- Para os programas multithread, você também deve implementar o [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) método e todos os métodos do [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) interface.
+ Para programas multithreaded, você também deve implementar o método [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) e todos os métodos da interface [IEnumDebugThreads2.](../../extensibility/debugger/reference/ienumdebugthreads2.md)
 
-## <a name="see-also"></a>Consulte também
-- [Avaliação de controle e o estado de execução](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Confira também
+- [Controle de execução e avaliação do estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)

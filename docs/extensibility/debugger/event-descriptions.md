@@ -5,44 +5,44 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738791"
 ---
 # <a name="event-descriptions"></a>Descrições de eventos
-Cada tipo de evento tem uma finalidade específica.
+Cada tipo de evento tem um propósito específico.
 
-## <a name="events-and-the-reasons-for-their-use"></a>Eventos e os motivos para seu uso
+## <a name="events-and-the-reasons-for-their-use"></a>Eventos e as razões para seu uso
 
-|evento|Descrição|
+|Evento|Descrição|
 |-----------|-----------------|
-|Ativar eventos do documento|Ocorre quando o mecanismo de depuração (DES) deseja que o IDE para abrir ou abrir um documento para o primeiro plano.|
-|Ponto de interrupção associada ou eventos de erro de ponto de interrupção|Enviado quando um ponto de interrupção está associado ou quando não é possível associar a um ponto de interrupção e um erro será retornado.|
-|Eventos de ponto de interrupção não associado|Ocorre quando um ponto de interrupção associado desvincula do código.|
-|Pode interromper eventos|Enviado para o IDE para determinar se o usuário deseja parar em um ponto especificado no código.|
-|Eventos de ponto de interrupção|Ocorra quando um ponto de interrupção de dados ou de código é atingido.|
-|Eventos de texto do documento|Ocorre quando o texto em um documento é alterado. Esses eventos não são enviados por meio de `IDebugEventCallBack2::Event` método.|
-|Criar eventos do mecanismo|Enviado quando um mecanismo é criado.|
-|Eventos de ponto de entrada|Enviado quando o programa que está sendo depurado tem executar seu código de inicialização e atingido seu primeiro ponto de entrada do usuário.|
+|Ativar eventos de documentos|Ocorra quando o motor de depuração (DE) deseja que o IDE abra ou leve um documento para o primeiro plano.|
+|Eventos de erro de ponto de ruptura ou de ponto de ruptura|Enviado quando um ponto de ruptura está vinculado ou quando um ponto de ruptura não pode vincular e um erro é retornado.|
+|Eventos desvinculados de breakpoint|Ocorre quando um ponto de ruptura vinculado se desvincula do código.|
+|Pode parar eventos|Enviado ao IDE para determinar se o usuário gostaria de parar em um ponto especificado no código.|
+|Eventos de breakpoint|Ocorre quando um ponto de ruptura de código ou de dados é atingido.|
+|Eventos de texto de documento|Ocorre quando o texto em um documento é alterado. Esses eventos não são `IDebugEventCallBack2::Event` enviados através do método.|
+|Eventos de criação de motores|Enviado quando um motor é criado pela primeira vez.|
+|Eventos de ponto de entrada|Enviado quando o programa está sendo depurado executou seu código de inicialização e atingiu seu primeiro ponto de entrada do usuário.|
 |Eventos de exceção|Enviado quando um programa em execução atinge uma exceção.|
-|Eventos de conclusão de avaliação de expressão|Enviado quando a avaliação da expressão assíncrona for concluída.|
-|Encontrar eventos de símbolo|Enviado sempre que o DE precisa solicitar que o usuário para localizar símbolos para um módulo.|
-|Eventos de conclusão de carga|Enviado apenas quando a carga inicial do programa for concluída e o primeiro código está prestes a ser executado no programa.|
-|Eventos de mensagem|Enviado quando as mensagens são enviadas aos usuários.|
-|Eventos de carregamento de módulo|Enviado quando um novo módulo é carregado ou descarregado.|
-|Eventos de cadeia de caracteres de saída|Enviado quando o programa grava a saída de depuração.|
-|Criar e destruir a eventos|Enviado para anunciar a criação ou destruição de threads, programas, propriedades, sessões e processos, portanto o IDE do Visual Studio pode acompanhar o estado dos programas que está sendo depurado.|
-|Eventos de conclusão da etapa|Enviado quando uma etapa for concluída.|
-|Eventos de alteração de nome de thread|Enviado quando o usuário altera o nome de um thread.|
-|Eventos de alteração de nome de programa|Enviado quando o usuário altera o nome de um programa.|
+|Avaliação de expressões eventos completos|Enviado quando a avaliação de expressão assíncrona estiver completa.|
+|Encontrar eventos de símbolo|Enviado sempre que o DE precisa pedir ao usuário para encontrar símbolos para um módulo.|
+|Carregar eventos completos|Enviado somente quando a carga inicial do programa estiver concluída e o primeiro código estiver prestes a ser executado no programa.|
+|Eventos de mensagens|Enviado quando as mensagens são enviadas aos usuários.|
+|Eventos de carga de módulo|Enviado quando um novo módulo é carregado ou descarregado.|
+|Eventos de cadeia de saída|Enviado quando o programa grava saída de depuração.|
+|Criar e destruir eventos|Enviado para anunciar a criação ou destruição de processos, programas, propriedades, sessões e threads para que o Visual Studio IDE possa acompanhar o estado dos programas que estão sendo depurados.|
+|Eventos completos da etapa|Enviado quando um passo está completo.|
+|Eventos de alteração de nome do segmento|Enviado quando o usuário altera o nome de um segmento.|
+|Eventos de alteração de nome do programa|Enviado quando o usuário altera o nome de um programa.|
 
-## <a name="see-also"></a>Consulte também
-- [Envio de eventos](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Confira também
+- [Enviando eventos](../../extensibility/debugger/sending-events.md)

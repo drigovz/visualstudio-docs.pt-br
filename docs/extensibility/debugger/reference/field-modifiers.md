@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324490"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736849"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Especifica os modificadores para um tipo de campo.
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
+Especifica modificadores para um tipo de campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -118,10 +118,10 @@ Indica que o campo tem acesso protegido.
 Indica que o campo tem acesso privado.
 
 `FIELD_MOD_NOMODIFIERS`\
-Indica que o campo não tiver nenhum modificador.
+Indica que o campo não tem modificadores.
 
 `FIELD_MOD_STATIC`\
-Indica que o campo é estático.
+Indica que o campo está estático.
 
 `FIELD_MOD_CONSTANT`\
 Indica que o campo é uma constante.
@@ -139,7 +139,7 @@ Indica que o campo é abstrato.
 Indica que o campo é nativo.
 
 `FIELD_MOD_SYNCHRONIZED`\
-Indica que o campo será sincronizado.
+Indica que o campo está sincronizado.
 
 `FIELD_MOD_VIRTUAL`\
 Indica que o campo é virtual.
@@ -151,7 +151,7 @@ Indica que o campo é uma interface.
 Indica que o campo é final.
 
 `FIELD_MOD_SENTINEL`\
-Indica que o campo é uma Sentinela.
+Indica que o campo é uma sentinela.
 
 `FIELD_MOD_INNERCLASS`\
 Indica que o campo é uma classe interna.
@@ -160,42 +160,42 @@ Indica que o campo é uma classe interna.
 Indica que o campo é opcional.
 
 `FIELD_MOD_BYREF`\
-Indica que o campo é um argumento de referência. Isso é especificamente para argumentos de método.
+Indica que o campo é um argumento de referência. Isto é especificamente para argumentos de método.
 
 `FIELD_MOD_HIDDEN`\
-Indica que o campo deve ser ocultado ou apresentado em outro contexto; Por exemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] estáticos locais.
+Indica que o campo deve ser oculto ou apresentado em outro contexto; por exemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] locais estáticos.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indica que o campo representa um objeto com um `IUnknown` interface.
+Indica que o campo representa `IUnknown` um objeto com uma interface.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indica que o campo tem um nome especial, por exemplo, `.ctor` para um construtor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
+Indica que o campo tem um `.ctor` nome especial,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] por exemplo, para um construtor (somente).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indica que o campo tem o `Overloads` palavra-chave aplicada a ele ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
+Indica que o `Overloads` campo tem a palavra-chave aplicada a ele (apenas).[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]
 
 `FIELD_MOD_WRITEONLY`\
-Indica que o campo é somente gravação. Esse valor não está incluído no `FIELD_MOD_ALL`, conforme o uso apenas esses campos somente gravação é para a avaliação da função. Um usuário deve solicitar explicitamente `FIELD_MOD_WRITEONLY` campos.
+Indica que o campo é somente para gravação. Este valor não `FIELD_MOD_ALL`está incluído, pois o único uso desses campos somente para gravação é para avaliação de funções. Um usuário deve pedir `FIELD_MOD_WRITEONLY` explicitamente campos.
 
 `FIELD_MOD_ACCESS_MASK`\
-Indica uma máscara de acesso de campo.
+Indica uma máscara para acesso ao campo.
 
 `FIELD_MOD_MASK`\
 Indica uma máscara para modificadores de campo.
 
 ## <a name="remarks"></a>Comentários
-Usado para o `dwModifiers` membro a [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
+Usado para `dwModifiers` o membro da estrutura [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
 
-Esses valores também são passados para o [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) método para filtrar por campos específicos.
+Esses valores também são passados para o método [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) para filtrar para campos específicos.
 
 ## <a name="requirements"></a>Requisitos
-Header: sh.h
+Cabeçalho: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

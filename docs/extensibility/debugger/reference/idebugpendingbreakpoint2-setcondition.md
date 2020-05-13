@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugPendingBreakpoint2::SetCondition method
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a71e22d118b64e15bb9da15b2f9152a90440f1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347660"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725727"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-Define ou altera a condição associada com o ponto de interrupção pendente.
+Define ou altera a condição associada ao ponto de ruptura pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ int SetCondition( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `bpCondition`\
-[in] Um [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que especifica a condição a ser definido.
+[em] Uma [estrutura BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que especifica a condição a ser definida.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Qualquer condição que foi previamente associada com o ponto de interrupção pendente será perdida. Todos os pontos de interrupção associados deste pendente do ponto de interrupção são chamados para definir suas condições como o valor especificado no `bpCondition` parâmetro.
+ Qualquer condição anteriormente associada ao ponto de ruptura pendente está perdida. Todos os pontos de interrupção vinculados a partir deste ponto de `bpCondition` interrupção pendente são chamados para definir sua condição para o valor especificado no parâmetro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

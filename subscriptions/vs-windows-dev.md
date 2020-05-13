@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 795eccdf72fad7df760d709b44351444b6dea424
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301848"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649726"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 A Conta de Desenvolvedor para Windows, incluída com assinaturas selecionadas do Visual Studio, permite que você envie aplicativos do Windows gratuitos e pagos para a Windows Store.
@@ -22,7 +22,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 
 É recomendável criar uma janela do navegador "privada" para esse processo.  Por exemplo, no Google Chrome, crie uma nova janela "incógnito".  No Internet Explorer, crie uma janela "InPrivate".
 
-1. Faça login [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)em .
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Localize o bloco Conta de Desenvolvedor do Windows na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.  Copie o código na área de transferência e clique **em Ativar**.
    > [!div class="mx-imgBorder"]
    > ![Bloco do benefício Desenvolvedor do Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
@@ -36,7 +36,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 7. Crie seu nome de exibição do editor.  Esse será o nome exclusivo que seus clientes verão associado aos seus aplicativos, serviços e suplementos.
 8. Forneça suas informações de contato e o idioma preferencial do email e clique em **Avançar**.
 9. Poderá ser solicitado que você verifique a senha.  Insira-a e clique em **Entrar**.
-10. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Avançar**.
+10. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Próximo**.
 11. Examine as informações da conta, examine o Contrato de Desenvolvedor de Aplicativos e clique na caixa de seleção para indicar que você aceita os termos e condições.  Em seguida, clique em **Concluir**.
 12. Clique em **Acessar painel** para começar a usar sua conta de desenvolvedor do Windows!
 

@@ -1,6 +1,6 @@
 ---
 title: Introdução ao teste de unidade
-ms.date: 03/04/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78289848"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153045"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -26,7 +26,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Abra o projeto que você deseja testar no Visual Studio.
 
-   Com o propósito de demonstrar um teste de unidade de exemplo, este artigo testa um projeto simples "Hello World" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
+   Para fins de demonstração de um exemplo de teste de unidade, este artigo testa um projeto simples de "Olá, Mundo" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +40,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
       }
    ```
 
-1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menu superior, selecione > **'Adicionar** > **arquivo', novo projeto**. **File**
+1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **arquivo** > **Adicionar** > **novo projeto**.
 
 1. Na caixa de diálogo Novo Projeto, localize um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar e selecione-o.
 
@@ -72,7 +72,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Adicione código ao método de teste de unidade.
 
-   Por exemplo, para um projeto MSTest, você pode usar o seguinte código.
+   Por exemplo, para um projeto MSTest, você pode usar o código a seguir.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,16 +101,15 @@ Esta seção descreve como criar um projeto de teste de unidade.
    }
    ```
 
-   Ou, para um projeto NUnit, você pode usar o seguinte código.
+   Ou, para um projeto NUnit, você pode usar o código a seguir.
 
    ```csharp
-   using using NUnit.Framework;
+   using NUnit.Framework;
    using System.IO;
    using System;
 
    namespace HelloWorldTests
    {
-      [TestClass]
       public class Tests
       {
          private const string Expected = "Hello World!";
@@ -136,17 +135,17 @@ Esta seção descreve como criar um projeto de teste de unidade.
    ```
 
 > [!TIP]
-> Para obter mais detalhes sobre a criação de testes unitários, consulte [Criar e executar testes unitários para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Para obter mais detalhes sobre como criar testes de unidade, consulte [criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
-1. [Explorador de teste aberto](../test/run-unit-tests-with-test-explorer.md).
+1. Abra o [Gerenciador de testes](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Para abrir o Test Explorer, escolha **Test** > **Explorer** na barra superior do menu.
+   Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador** de testes na barra de menus superior.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Para abrir o Test Explorer, escolha **Test** > **Windows** > **Test Explorer** na barra superior do menu.
+   Para abrir o Gerenciador de testes, escolha **testar** > o **Gerenciador de testes** do **Windows** > na barra de menus superior.
    ::: moniker-end
 
 1. Execute seus testes de unidade clicando em **Executar Tudo**.
@@ -202,7 +201,7 @@ Quando executa o IntelliTest, você pode ver quais testes estão falhando e adic
 
 ## <a name="analyze-code-coverage"></a>Analisar a cobertura de código
 
-Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem usar uma grande proporção do seu código. Para saber como, consulte [Usar a cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem usar uma grande proporção do seu código. Para saber como, consulte [usar a cobertura de código para determinar a quantidade de código que está sendo testada](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-third-party-test-framework"></a>Usar uma estrutura de teste de terceiros
 
@@ -244,9 +243,9 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-* [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de testes de unidade](create-unit-tests-menu.md)
 * [Gerar testes com o IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)

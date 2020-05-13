@@ -1,5 +1,5 @@
 ---
-title: Elemento WizardExtension (modelos do Visual Studio) | Microsoft Docs
+title: WizardExtension Element (modelos de estúdio visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748942"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740378"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelos do Visual Studio)
 Contém os elementos de registro para personalizar o assistente de modelo.
 
- \<VSTemplate >... \<WizardExtension >
+ \<VSTemplate> ... \<> de extensão do assistente
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,26 +39,26 @@ Contém os elementos de registro para personalizar o assistente de modelo.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> Especifica o nome ou nome forte de um assembly que aparece no cache de assembly global. Deve haver pelo menos um elemento `Assembly` em um elemento `WizardExtension`.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> O nome totalmente qualificado da classe que implementa a interface `IWizard`. Deve haver pelo menos um elemento `FullClassName` em um elemento `WizardExtension`.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> Especifica o nome ou nome forte de um conjunto que aparece no cache de montagem global. Deve haver pelo `Assembly` menos um `WizardExtension` elemento em um elemento.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> O nome totalmente qualificado da classe `IWizard` que implementa a interface. Deve haver pelo `FullClassName` menos um `WizardExtension` elemento em um elemento.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados do modelo de projeto, modelo de item ou kit do iniciante.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados para o modelo do projeto, modelo de item ou kit inicial.|
 
 ## <a name="remarks"></a>Comentários
- O `WizardExtension` é um elemento filho opcional de `VSTemplate`.
+ `WizardExtension`é um elemento `VSTemplate`infantil opcional de .
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um aplicativo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows.
+ O exemplo a seguir ilustra os metadados [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] do modelo padrão do projeto para um aplicativo Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,7 +88,7 @@ Contém os elementos de registro para personalizar o assistente de modelo.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

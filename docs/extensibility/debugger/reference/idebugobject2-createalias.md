@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317405"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726301"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Cria uma ID exclusiva ou um alias para esse objeto ou retorna um alias existente.
+Cria um ID ou alias exclusivo para este objeto ou retorna um alias existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ int CreateAlias(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppAlias`\
-[out] O alias de novo (ou existente).
+[fora] O novo (ou existente) alias.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um alias é um rótulo que representa um objeto específico, enquanto o objeto está na memória.
+ Um alias é um rótulo que representa um objeto em particular enquanto o objeto está na memória.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

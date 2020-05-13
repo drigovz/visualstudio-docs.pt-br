@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6927a63241e2f2794fb5c70945962e00a1676431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734400"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Obtém a classe que engloba essa classe.
+Tem a classe que encerra essa aula.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetEnclosingClass(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppClassField`\
-[out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) a classe de objeto que representa o delimitador. Retorna um valor nulo se não houver nenhuma classe delimitadora.
+[fora] Retorna um objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) representando a classe de fechamento. Retorna um valor nulo se não houver classe de encerramento.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Se a classe representada por este [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto é uma classe aninhada, em seguida, a `ppClassField` parâmetro retorna um `IDebugClassField` a classe de objeto que representa o delimitador. Por exemplo, dada esta definição de classe:
+Se a classe representada por este objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) `ppClassField` for uma `IDebugClassField` classe aninhada, o parâmetro reacircunda um objeto representando a classe de fechamento. Por exemplo, dada essa definição de classe:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Chamando o `GetEnclosingClass` método em de `IDebugClassField` objeto que representa o `NestedClass` classe retorna um `IDebugClassField` que representa a classe de objeto `RootClass`.
+Chamar `GetEnclosingClass` o método `IDebugClassField` no objeto `NestedClass` representando `IDebugClassField` a classe retorna `RootClass`um objeto representando a classe .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

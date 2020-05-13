@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 353b6d6f2a448cb7ac1bfdc98cc489688db9ee74
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345032"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730277"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-Esse método retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o nome da enumeração.
+Este método retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o nome da enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ int GetUnderlyingSymbol(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppField`\
-[out] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) descrevendo o nome dessa enumeração.
+[fora] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) descrevendo o nome desta enumeração.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O nome da enumeração também contém o tipo de enumeração, que é associado a um local de memória usando [associar](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+ O nome da enumeração também contém o tipo de enumeração, que é vinculado a um local de memória usando [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [Associar](../../../extensibility/debugger/reference/idebugbinder-bind.md)

@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 824b947af25ef825d4f02983e17ecad3105028f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720041"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Recupera o arquivo métrica de avaliador de expressão considerando o nome ou a métrica.
+Recupera o arquivo métrico avaliador de expressão dado o nome ou a métrica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ private int GetEEMetricFile(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidLang`\
-[in] Identificador exclusivo da linguagem de programação.
+[em] Identificador único da linguagem de programação.
 
 `guidVendor`\
-[in] Identificador exclusivo do fornecedor.
+[em] Identificador exclusivo do fornecedor.
 
 `pszMetric`\
-[in] Nome da métrica.
+[em] Nome da métrica.
 
 `pbstrValue`\
-[out] Retorna o conteúdo do arquivo de métrica como uma cadeia de caracteres.
+[fora] Retorna o conteúdo do arquivo métrico como uma seqüência de string.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

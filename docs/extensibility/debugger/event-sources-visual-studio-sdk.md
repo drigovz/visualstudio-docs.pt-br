@@ -1,27 +1,27 @@
 ---
-title: Origens de eventos (Visual Studio SDK) | Microsoft Docs
+title: Fontes de eventos (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315305"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738778"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Fontes de evento (SDK do Visual Studio)
-Há duas fontes de eventos: o mecanismo de depuração (DE) e a sessão de depuração SDM (Gerenciador de). Eventos enviados a partir DE tem o mecanismo não nulo, enquanto eventos enviados pelo SDM têm um mecanismo de NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Fontes de eventos (Visual Studio SDK)
+Existem duas fontes de eventos: o motor de depuração (DE) e o Session Debug Manager (SDM). Os eventos enviados de um DE têm um motor não-NULO, enquanto os eventos enviados do SDM têm um motor NULL.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como enviar a **IDebugProgramCreateEvent2** de para o SDM.
+O exemplo a seguir mostra como enviar o **IDebugProgramCreateEvent2** do DE para o SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -72,5 +72,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Envio de eventos](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Confira também
+- [Enviando eventos](../../extensibility/debugger/sending-events.md)

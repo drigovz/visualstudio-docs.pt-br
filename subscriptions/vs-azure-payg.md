@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231978"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444838"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Assinaturas do Azure DevTest Pay-As-You-Go
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.
@@ -39,7 +39,7 @@ Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>P: E se eu quiser fazer alterações nesta assinatura?
 A: Para fazer alterações em qualquer uma de suas assinaturas do Azure:
-1. Faça login no [portal Azure](https://portal.azure.com).
+1. Entre no [portal do Azure](https://portal.azure.com).
 2. Na lista no painel esquerdo, selecione **Gerenciamento de Custos + Cobrança**.
 3. Você verá uma lista das suas assinaturas na caixa **Minhas assinaturas**. Clique na assinatura desejada.
 4. Agora você terá opções para gerenciar ou cancelar a assinatura, renomeá-la, alterar o diretório ou transferir a propriedade de cobrança.

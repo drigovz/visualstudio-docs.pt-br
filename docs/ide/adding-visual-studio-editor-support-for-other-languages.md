@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590872"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892769"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -90,5 +90,7 @@ Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: in
 ## <a name="see-also"></a>Confira também
 
 - [Adicionar uma extensão do Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
-- [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: Para criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Exemplo de código: TextMate Grammar](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [Código de exemplo: suporte personalizado ao idioma](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

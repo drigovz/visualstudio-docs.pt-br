@@ -1,47 +1,47 @@
 ---
-title: Adicionando uma barra de ferramentas para uma janela de ferramentas | Microsoft Docs
+title: Adicionando uma barra de ferramentas a uma janela de ferramentas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4f4d37af94ba3a7dcdffc249e8b5e681025b78
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 094515eb94279623974bd7b55cc9923c49625a70
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740251"
 ---
-# <a name="add-a-toolbar-to-a-tool-window"></a>Adicionar uma barra de ferramentas para uma janela de ferramentas
-Este passo a passo mostra como adicionar uma barra de ferramentas para uma janela de ferramentas.
+# <a name="add-a-toolbar-to-a-tool-window"></a>Adicione uma barra de ferramentas a uma janela de ferramenta
+Este passo a passo mostra como adicionar uma barra de ferramentas a uma janela de ferramenta.
 
- Uma barra de ferramentas é uma faixa horizontal ou vertical que contém os botões associados a comandos. O comprimento de uma barra de ferramentas em uma janela de ferramenta é sempre o mesmo que a largura ou altura da janela de ferramenta, dependendo de onde a barra de ferramentas é encaixada.
+ Uma barra de ferramentas é uma tira horizontal ou vertical que contém botões ligados a comandos. O comprimento de uma barra de ferramentas em uma janela de ferramenta é sempre o mesmo que a largura ou altura da janela da ferramenta, dependendo de onde a barra de ferramentas está encaixada.
 
- Ao contrário de barras de ferramentas no IDE, uma barra de ferramentas em uma janela de ferramenta deve ser encaixada e não pode ser movida ou personalizada. Se o VSPackage é escrito em código umanaged, a barra de ferramentas pode ser encaixada em qualquer uma das bordas.
+ Ao contrário das barras de ferramentas no IDE, uma barra de ferramentas em uma janela de ferramenta deve ser encaixada e não pode ser movida ou personalizada. Se o VSPackage estiver escrito em umanaged code, a barra de ferramentas pode ser encaixada em qualquer borda.
 
- Para obter mais informações sobre como adicionar uma barra de ferramentas, consulte [adicionando uma barra de ferramentas](../extensibility/adding-a-toolbar.md).
+ Para obter mais informações sobre como adicionar uma barra de ferramentas, consulte [Adicionar uma barra de ferramentas](../extensibility/adding-a-toolbar.md).
 
-## <a name="prerequisites"></a>Prerequisites
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Pré-requisitos
+ A partir do Visual Studio 2015, você não instala o Visual Studio SDK a partir do centro de downloads. Ele está incluído como um recurso opcional na configuração do Visual Studio. Você também pode instalar o VS SDK mais tarde. Para obter mais informações, consulte [Instalando o Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-toolbar-for-a-tool-window"></a>Criar uma barra de ferramentas para uma janela de ferramentas
+## <a name="create-a-toolbar-for-a-tool-window"></a>Crie uma barra de ferramentas para uma janela de ferramenta
 
-1. Crie um projeto do VSIX chamado `TWToolbar` que possui um comando menu denominado **TWTestCommand** e uma janela de ferramenta chamada **TestToolWindow**. Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md) e [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md). Você precisará adicionar o modelo de item de comando antes de adicionar o modelo de janela de ferramenta.
+1. Crie um projeto `TWToolbar` VSIX chamado que tenha um comando de menu chamado **TWTestCommand** e uma janela de ferramenta chamada **TestToolWindow**. Para obter mais informações, consulte [Criar uma extensão com um comando menu](../extensibility/creating-an-extension-with-a-menu-command.md) e Criar uma [extensão com uma janela de ferramenta](../extensibility/creating-an-extension-with-a-tool-window.md). Você precisa adicionar o modelo de item de comando antes de adicionar o modelo da janela da ferramenta.
 
-2. Na *TWTestCommandPackage.vsct*, procure a seção de símbolos. No nó do GuidSymbol chamado guidTWTestCommandPackageCmdSet declare uma barra de ferramentas e um grupo de barra de ferramentas, da seguinte maneira.
+2. Em *TWTestCommandPackage.vsct,* procure a seção Símbolos. No nó GuidSymbol chamado guidTWTestCommandPackageCmdSet declare uma barra de ferramentas e um grupo de barras de ferramentas, da seguinte forma.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
     <IDSymbol name="TWToolbarGroup" value="0x1050" />
     ```
 
-3. Na parte superior do `Commands` seção, crie um `Menus` seção. Adicionar um `Menu` elemento para definir a barra de ferramentas.
+3. Na parte superior `Commands` da seção, crie uma `Menus` seção. Adicione `Menu` um elemento para definir a barra de ferramentas.
 
     ```xml
     <Menus>
@@ -55,9 +55,9 @@ Este passo a passo mostra como adicionar uma barra de ferramentas para uma janel
     </Menus>
     ```
 
-     Barras de ferramentas não podem ser aninhadas, como submenus. Portanto, você não precisa atribuir a um pai. Além disso, você não precisa definir uma prioridade, pois o usuário pode mover as barras de ferramentas. Normalmente, o posicionamento inicial de uma barra de ferramentas é definido por meio de programação, mas as alterações subsequentes pelo usuário são persistentes.
+     Barras de ferramentas não podem ser aninhadas como submenus. Portanto, você não tem que designar um pai. Além disso, você não precisa definir uma prioridade, porque o usuário pode mover barras de ferramentas. Normalmente, a colocação inicial de uma barra de ferramentas é definida programáticamente, mas as alterações subseqüentes pelo usuário são persistidas.
 
-4. Na seção grupos, defina um grupo para conter os comandos da barra de ferramentas.
+4. Na seção Grupos, defina um grupo para conter os comandos da barra de ferramentas.
 
     ```xml
 
@@ -66,7 +66,7 @@ Este passo a passo mostra como adicionar uma barra de ferramentas para uma janel
     </Group>
     ```
 
-5. Na seção de botões, altere o pai do elemento de botão existente para o grupo de barra de ferramentas para que a barra de ferramentas será exibida.
+5. Na seção Botões, altere o pai do elemento Button existente para o grupo da barra de ferramentas para que a barra de ferramentas seja exibida.
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">
@@ -78,40 +78,40 @@ Este passo a passo mostra como adicionar uma barra de ferramentas para uma janel
     </Button>
     ```
 
-     Por padrão, se uma barra de ferramentas não tem nenhum comando, ele não aparece.
+     Por padrão, se uma barra de ferramentas não tiver comandos, ela não aparecerá.
 
-     Como a nova barra de ferramentas não é adicionada automaticamente para a janela da ferramenta, a barra de ferramentas deve ser adicionada explicitamente. Isso é abordado na próxima seção.
+     Como a nova barra de ferramentas não é adicionada automaticamente à janela da ferramenta, a barra de ferramentas deve ser adicionada explicitamente. Isso é abordado na próxima seção.
 
-## <a name="add-the-toolbar-to-the-tool-window"></a>Adicionar a barra de ferramentas para a janela da ferramenta
+## <a name="add-the-toolbar-to-the-tool-window"></a>Adicione a barra de ferramentas à janela da ferramenta
 
-1. Na *TWTestCommandPackageGuids.cs* adicionar linhas a seguir.
+1. Em *TWTestCommandPackageGuids.cs* adicionar as seguintes linhas.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. Na *TestToolWindow.cs* adicione a seguinte instrução using.
+2. Em *TestToolWindow.cs* adicione a seguinte declaração usando.
 
     ```csharp
     using System.ComponentModel.Design;
     ```
 
-3. No construtor TestToolWindow, adicione a seguinte linha.
+3. No construtor TestToolWindow adicione a seguinte linha.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);
     ```
 
-## <a name="test-the-toolbar-in-the-tool-window"></a>A barra de ferramentas de teste na janela da ferramenta
+## <a name="test-the-toolbar-in-the-tool-window"></a>Teste a barra de ferramentas na janela da ferramenta
 
 1. Compile o projeto e comece a depuração. A instância experimental do Visual Studio deve aparecer.
 
-2. No **exibição / Windows outras** menu, clique em **teste ToolWindow** para exibir a janela de ferramenta.
+2. No **menu Exibir / Outros Windows,** clique em **Testar ferramentaJanela** para exibir a janela da ferramenta.
 
-     Você verá uma barra de ferramentas (ele se parece com o ícone padrão) na parte superior esquerda da janela de ferramenta, logo abaixo do título.
+     Você deve ver uma barra de ferramentas (parece o ícone padrão) no canto superior esquerdo da janela da ferramenta, logo abaixo do título.
 
-3. Na barra de ferramentas, clique no ícone para exibir a mensagem **TWTestCommandPackage dentro TWToolbar.TWTestCommand.MenuItemCallback()** .
+3. Na barra de ferramentas, clique no ícone para exibir a mensagem **TWTestCommandPackage Dentro do TWToolbar.TWTestCommand.MenuItemCallback()**.
 
-## <a name="see-also"></a>Consulte também
-- [Adicionar uma barra de ferramentas](../extensibility/adding-a-toolbar.md)
+## <a name="see-also"></a>Confira também
+- [Adicione uma barra de ferramentas](../extensibility/adding-a-toolbar.md)

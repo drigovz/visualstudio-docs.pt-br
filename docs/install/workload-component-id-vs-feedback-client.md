@@ -16,12 +16,13 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113837"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276299"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio
 
@@ -63,7 +64,7 @@ n/d | n/d | n/d
 ## <a name="see-also"></a>Confira também
 
 * [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
-* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
-* [Crie uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)

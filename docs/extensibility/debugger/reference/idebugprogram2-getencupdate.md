@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb92e7076c308663ddf9ec760d1f2276affd0c87
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320846"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722840"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Esse método obtém a atualização de editar e continuar (ENC) para este programa. Um mecanismo de depuração personalizado sempre retorna `E_NOTIMPL`.
+Este método recebe a atualização Editar e Continuar (ENC) para este programa. Um motor de depuração personalizado sempre retorna `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetENCUpdate(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppUpdate`\
-[out] Retorna uma interface interna que pode ser usada para atualizar este programa.
+[fora] Retorna uma interface interna que pode ser usada para atualizar este programa.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 > [!NOTE]
-> Um mecanismo de depuração personalizado deve sempre retornar `E_NOTIMPL`.
+> Um motor de depuração personalizado deve sempre retornar `E_NOTIMPL`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

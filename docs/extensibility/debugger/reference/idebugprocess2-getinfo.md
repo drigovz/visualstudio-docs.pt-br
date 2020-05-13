@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6227e8a4397dac03e9ecc70eedf2b902888cdbb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353149"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724026"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
-Obtém uma descrição do processo.
+Tem uma descrição do processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `Fields`\
-[in] Uma combinação de valores da [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumeração que especifica quais campos do `pProcessInfo` parâmetro devem ser preenchidos.
+[em] Uma combinação de valores da enumeração [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) `pProcessInfo` que especifica quais campos do parâmetro devem ser preenchidos.
 
 `pProcessInfo`\
-[out] Um [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estrutura será preenchida com uma descrição do processo.
+[fora] Uma [estrutura PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) que é preenchida com uma descrição do processo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

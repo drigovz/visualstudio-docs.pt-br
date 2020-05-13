@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98bf0054f02ff85f67f21cd817309bb569dfe678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323769"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726681"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Cria uma cópia do objeto gerenciado no espaço de endereço do mecanismo de depuração.
@@ -39,16 +39,16 @@ int GetManagedDebugObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppObject`\
-[out] Retorna um [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto que representa o objeto gerenciado recém-criado.
+[fora] Retorna um objeto [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) representando o objeto gerenciado recém-criado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro. Retornará E_FAIL se este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) não representa uma instância da classe de valor gerenciado.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro. Retorna E_FAIL se este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) não representar uma instância de classe de valor gerenciado.
 
 ## <a name="remarks"></a>Comentários
- Isso [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto deve representar uma instância da classe de valor gerenciado, como um `System.Decimal` instância. Fazendo uma cópia local, a sobrecarga da chamada [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) é eliminado.
+ Este objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) deve representar uma instância de `System.Decimal` classe de valor gerenciada, como uma instância. Por ter uma cópia local, a sobrecarga de chamada [Avaliar](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) é eliminada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

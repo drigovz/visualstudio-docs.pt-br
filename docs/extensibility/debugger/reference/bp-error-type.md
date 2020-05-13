@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319303"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738069"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
-Especifica o tipo de erro de um ponto de interrupção.
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
+Especifica o tipo de erro de um ponto de ruptura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,51 +62,51 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Campos
 `BPET_NONE`\
-Não especifica que nenhum erro de ponto de interrupção.
+Não especifica nenhum erro de ponto de ruptura.
 
 `BPET_TYPE_WARNING`\
-Especifica um erro de ponto de interrupção de estilo de aviso.
+Especifica um erro de ponto de quebra no estilo de aviso.
 
 `BPET_TYPE_ERROR`\
-Especifica um erro de ponto de interrupção de estilo de erro.
+Especifica um erro de ponto de quebra no estilo de erro.
 
 `BPET_SEV_HIGH`\
-Especifica um erro de ponto de interrupção de alta gravidade.
+Especifica um erro de ponto de ruptura de alta gravidade.
 
 `BPET_SEV_GENERAL`\
-Especifica um erro de ponto de interrupção de severidade média.
+Especifica um erro de ponto de ruptura de gravidade média.
 
 `BPET_SEV_LOW`\
-Especifica um erro de ponto de interrupção de baixa severidade.
+Especifica um erro de ponto de ruptura de baixa gravidade.
 
 `BPET_TYPE_MASK`\
-Especifica um erro de ponto de interrupção de estilo de máscara.
+Especifica um erro de ponto de ruptura no estilo da máscara.
 
 `BPET_SEV_MASK`\
-Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.
+Especifica um erro de ponto de ruptura no estilo severidade da máscara.
 
 `BPET_GENERAL_WARNING`\
-Especifica um erro de ponto de interrupção de estilo de aviso geral.
+Especifica um erro de ponto de quebra no estilo de aviso geral.
 
 `BPET_GENERAL_ERROR`\
-Especifica um erro de ponto de interrupção de estilo de erro geral.
+Especifica um erro de ponto de quebra no estilo de erro geral.
 
 `BPET_ALL`\
-Especifica todos os tipos de erros de ponto de interrupção.
+Especifica todos os tipos de erro de ponto de ruptura.
 
 ## <a name="remarks"></a>Comentários
-Esses valores podem ser combinados com um bit a bit `OR` e é usado para o `dwType` membro a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura. Passado como um parâmetro para o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.
+Esses valores podem ser combinados com um pouco e utilizados `OR` para o `dwType` membro da estrutura [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Passou como parâmetro para o método [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
 
-Um tipo de erro de ponto de interrupção é composto de um tipo e severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR`,) ou uma severidade (por exemplo, `BPET_SEV_GENERAL`) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornecem valores predefinidos para pontos de interrupção de aviso e erro geral.
+Um tipo de erro de ponto de ruptura é composto de um tipo e uma gravidade. Isso significa que um tipo de erro de ponto `BPET_TYPE_ERROR`de ruptura nunca é apenas `BPET_SEV_GENERAL`um tipo (por exemplo, ,) ou uma gravidade (por exemplo, ) por si só. `BPET_GENERAL_WARNING`e `BPET_GENERAL_ERROR` fornecer valores predefinidos para pontos de interrupção de advertência e erro gerais.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

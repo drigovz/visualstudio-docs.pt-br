@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetDocumentContext
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c3d409b0fa4438331d1a798e5fd6e21b2c10ca9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e3dc5e4bd7144db7fa94425371488bfd8c0e57ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349539"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734546"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Obtém o contexto do documento que descreve o local desse evento.
+Obtém o contexto do documento que descreve a localização deste evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,19 +39,19 @@ int GetDocumentContext ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppDocCxt`\
-[out] Retorna o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface que representa uma posição em um documento do arquivo de origem correspondente para o local atual do código.
+[fora] Retorna a interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representa uma posição em um documento de arquivo-fonte correspondente à localização atual do código.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Em geral, o contexto do documento pode ser pensado como uma posição em um arquivo de origem.
+ Geralmente, o contexto do documento pode ser considerado como uma posição em um arquivo de origem.
 
- Para obter o contexto de código, que é orientado para instruções de código, chame o [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) método.
+ Para obter o contexto de código, orientado para instruções de código, ligue para o método [GetCodeContext.](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)

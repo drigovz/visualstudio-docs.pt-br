@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847296"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880332"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -53,6 +53,7 @@ Você pode executar testes automatizados e a automação de compilar-implantar-t
 
 Para saber mais, veja [Use o Build ou o Release Management](use-build-or-rm-instead-of-lab-management.md).
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Usar os recursos do Lab Management do Visual Studio do Microsoft Test Manager
 
 Crie e gerencie ambientes de laboratório com as funcionalidades do Lab Management do Visual Studio do Microsoft Test Manager ao usar o Visual Studio Enterprise Edition.
@@ -136,6 +137,7 @@ Para saber mais sobre como configurar ambientes, veja:
 * [Ambientes de laboratório padrão](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Ambientes SCVMM (virtuais)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>Confira também
 

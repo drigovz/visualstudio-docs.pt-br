@@ -332,6 +332,10 @@
                   href: ca1064.md
                 - name: 'CA1065: Não acionar exceções em locais inesperados'
                   href: ca1065.md
+                - name: 'CA1066: Implementar IEquatable ao substituir Equals'
+                  href: ca1066.md
+                - name: 'CA1067: Substituir Equals ao implementar IEquatable'
+                  href: ca1067.md
                 - name: 'CA1068: Os parâmetros CancellationToken devem vir por último'
                   href: ca1068.md
                 - name: 'CA2210: Assemblies devem ter nomes fortes válidos'
@@ -426,6 +430,10 @@
                   href: ca1506.md
                 - name: 'CA1507: Usar nameof no lugar da cadeia de caracteres'
                   href: ca1507.md
+                - name: 'CA1508: Evitar código condicional morto'
+                  href: ca1508.md
+                - name: 'CA1509: Entrada inválida no arquivo de configuração de métrica de código'
+                  href: ca1509.md
             - name: Avisos de mobilidade
               items:
                 - name: Visão geral
@@ -531,6 +539,14 @@
                   href: ca1824.md
                 - name: 'CA1825: Evitar alocações de matriz de comprimento zero'
                   href: ca1825.md
+                - name: 'CA1826: Usar a propriedade em vez do método Linq Enumerable'
+                  href: ca1826.md
+                - name: 'CA1827: Não usar Count/LongCount quando Any puder ser usado'
+                  href: ca1827.md
+                - name: 'CA1828: Não usar CountAsync/LongCountAsync quando AnyAsync puder ser usado'
+                  href: ca1828.md
+                - name: 'CA1829: Usar a propriedade Length/Count em vez do método Enumerable.Count'
+                  href: ca1829.md
             - name: Avisos de portabilidade
               items:
                 - name: Visão geral
@@ -561,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: não aguardar diretamente uma tarefa'
                   href: ca2007.md
+                - name: 'CA2009: Não chamar ToImmutableCollection em um valor ImmutableCollection'
+                  href: ca2009.md
             - name: Avisos de segurança
               items:
                 - name: Visão geral

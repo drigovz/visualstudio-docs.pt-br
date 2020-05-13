@@ -1,45 +1,45 @@
 ---
-title: Desativar avisos de compatibilidade para Plug-ins de controle do código-fonte | Microsoft Docs
+title: Desativar avisos de compatibilidade para plug-ins de controle de origem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc8edcb6ee10be8b020424d8f8c247770a98f27
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324804"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710719"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Como: Desativar avisos de compatibilidade para plug-ins de controle de origem
-Um usuário pode ver vários avisos de compatibilidade durante o emprego de controle de origem no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Os avisos apresentados dependem dos recursos de plug-in de controle do código-fonte e podem ser desabilitados como detalhada aqui.
+Um usuário pode ver vários avisos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]compatibilidade ao empregar o controle de origem em . Os avisos apresentados dependem das capacidades do plug-in de controle de origem e podem ser desativados conforme detalhado aqui.
 
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Para desabilitar o aviso: "Para garantir a integração de controle de código-fonte ideal com o Visual Studio"
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Para desativar o aviso: "Para garantir a integração ideal de controle de origem com o Visual Studio"
 
-- Defina a seguinte entrada do registro (adicionando o valor, se necessário):
+- Defina a seguinte entrada de registro (adicionando o valor, se necessário):
 
    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**
 
-   Esse aviso é exibido para todos os não -[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] plug-ins.
+   Este aviso é exibido para[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] todos os não-plug-ins.
 
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Para desabilitar o aviso: "O provedor de controle de origem instalado não oferece suporte a todos os recursos"
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Para desativar o aviso: "O provedor de controle de origem instalado não suporta todos os recursos"
 
-- Defina os seguintes valores de registro de dois (adicionando os valores se necessário):
+- Defina os dois valores de registro a seguir (adicionando os valores, se necessário):
 
      **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**
 
     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword:00000001**
 
-     Esse aviso é exibido se o plug-in de controle do código-fonte não suporte explicitamente reentrância para vários projetos (ou seja, se ele pode verificar em apenas um arquivo e projeto cada vez).
+     Este aviso é exibido se o plug-in de controle de origem não suportar explicitamente a reentrada para vários projetos (isto é, se ele pode verificar apenas um arquivo e projeto por vez).
 
-     É melhor dar suporte a reentrância (`SCC_CAP_REENTRANT` capacidade); portanto, irá remover este aviso. No entanto, se esse suporte não for possível, essas entradas do Registro podem ser definidas.
+     É melhor apoiar a reentrada (capacidade);`SCC_CAP_REENTRANT` fazendo isso removerá este aviso. No entanto, se esse suporte não for possível, essas entradas de registro podem ser definidas.
 
-## <a name="see-also"></a>Consulte também
-- [Sinalizadores de recurso](../extensibility/capability-flags.md)
+## <a name="see-also"></a>Confira também
+- [Bandeiras de capacidade](../extensibility/capability-flags.md)

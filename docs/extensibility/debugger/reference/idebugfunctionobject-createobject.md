@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc0632f429a547d4b17fe57bec4582fea623ee24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320942"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728601"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Cria um objeto usando um construtor.
@@ -45,27 +45,27 @@ int CreateObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pConstructor`\
-[in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
+[em] Um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) representando o construtor do objeto a ser criado.
 
 `dwArgs`\
-[in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
+[em] O número de `pArg` parâmetros na matriz. Representa o número de parâmetros passados para o construtor.
 
 `pArg`\
-[in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representam os parâmetros passados para o construtor.
+[em] Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando os parâmetros passados para o construtor.
 
 `ppObject`\
-[out] Retorna um `IDebugObject` que representa o objeto recém-criado.
+[fora] Retorna `IDebugObject` um representando o objeto recém-criado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame esse método para criar um objeto que representa uma instância de uma classe (ou outro tipo complexo que exige um construtor) que é um parâmetro para a função que é representado pela [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.
+ Chame este método para criar um objeto que represente uma instância de uma classe (ou outro tipo complexo que requer um construtor) que seja um parâmetro para a função representada pela interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Se o parâmetro de objeto não exige um construtor, chame o [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) método.
+ Se o parâmetro de objeto não exigir um construtor, chame o método [CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

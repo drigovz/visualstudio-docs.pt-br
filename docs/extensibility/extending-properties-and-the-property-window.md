@@ -1,5 +1,5 @@
 ---
-title: Estendendo propriedades e a janela de propriedade | Microsoft Docs
+title: Ampliação de Propriedades e janela de propriedades | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313050"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711733"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Estender propriedades e a janela de propriedade
-O **propriedades** janela é usada para exibir e editar as propriedades de tempo de design e os eventos dos objetos selecionados.
+# <a name="extend-properties-and-the-property-window"></a>Estender propriedades e a janela Propriedade
+A janela **Propriedades** é usada para visualizar e editar as propriedades e eventos do tempo de projeto dos objetos selecionados.
 
- Quando você seleciona um objeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], as propriedades públicas do objeto são exibidos na **propriedades** janela. Para obter mais informações, consulte [visão geral da janela de propriedades](../extensibility/internals/properties-window-overview.md).
+ Quando você seleciona [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]um objeto em , as propriedades públicas desse objeto aparecem na janela **Propriedades.** Para obter mais informações, consulte ['Propriedades' visão geral da janela](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Expor propriedades à janela de propriedades](../extensibility/exposing-properties-to-the-properties-window.md) explica como você pode ter suas propriedades personalizadas, exibidas na janela Propriedades.
+- [Expor propriedades à janela Propriedades](../extensibility/exposing-properties-to-the-properties-window.md) Explica como você pode ter suas propriedades personalizadas exibidas na janela Propriedades.
 
-- [Obter propriedades do projeto](../extensibility/getting-project-properties.md) explica como obter as propriedades do projeto.
+- [Obtenha propriedades do projeto](../extensibility/getting-project-properties.md) Explica como obter propriedades do projeto.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4884da23d3be45067884c295f80305683cb16abb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352842"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734751"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
-Essa interface representa as informações que descrevem um ponto de interrupção associado.
+Esta interface representa a informação que descreve um ponto de ruptura vinculado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,26 +28,26 @@ Essa interface representa as informações que descrevem um ponto de interrupç�
 IDebugBreakpointResolution2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O mecanismo de depuração (DES) implementa essa interface como parte de seu suporte para pontos de interrupção. Essa interface fornece uma descrição de um ponto de interrupção associada que usa o Gerenciador de sessão de depuração quando um usuário exibe propriedades do ponto de interrupção.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O mecanismo de depuração (DE) implementa essa interface como parte de seu suporte para pontos de interrupção. Esta interface fornece uma descrição de um ponto de ruptura vinculado que o gerenciador de depuração de sessão usa quando um usuário visualiza as propriedades de um ponto de ruptura.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Uma chamada para [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) retorna essa interface.
+ Uma chamada para [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) retorna esta interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugBreakpointResolution2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugBreakpointResolution2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtém o tipo do ponto de interrupção representado por essa resolução.|
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtém as informações de resolução de ponto de interrupção que descreve este ponto de interrupção.|
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtém o tipo de ponto de ruptura representado por esta resolução.|
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtém as informações de resolução de ponto de ruptura que descrevem esse ponto de ruptura.|
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

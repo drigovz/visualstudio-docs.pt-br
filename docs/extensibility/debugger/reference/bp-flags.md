@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319220"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738065"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-Fornece sinalizadores opcionais que podem ser usados para especificar informações adicionais ao definir um ponto de interrupção.
+# <a name="bp_flags"></a>BP_FLAGS
+Fornece sinalizadores opcionais que podem ser usados para especificar informações adicionais ao definir um ponto de ruptura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,27 +46,27 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>Campos
 `BP_FLAG_NONE`\
-Não especifica que nenhum sinalizador de ponto de interrupção.
+Não especifica nenhum sinalizador de ponto de ruptura.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Especifica que o mecanismo de depuração (DES) deve mapear o ponto de interrupção usando a posição do documento. Isso é aplicável somente a pontos de interrupção definidos em arquivos de origem e orientada a script, como Active Server Pages (ASP).
+Especifica que o mecanismo de depuração (DE) deve mapear o ponto de ruptura usando a posição do documento. Isso é aplicável apenas aos pontos de interrupção definidos em arquivos de origem orientados a script, como ASP (Active Server Pages, páginas de servidor ativo).
 
 `BP_FLAG_DONT_STOP`\
-Especifica que o ponto de interrupção deve ser processado pelo mecanismo de depuração, mas que o mecanismo de depuração, por fim, não deve parar existe (ou seja, uma [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) objeto de evento não deve ser enviado). Esse sinalizador é projetado para ser usado principalmente com tracepoints.
+Especifica que o ponto de partida deve ser processado pelo mecanismo de depuração, mas que o motor de depuração não deve parar por aí (ou seja, um objeto de evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) não deve ser enviado). Esta bandeira foi projetada para ser usada principalmente com pontos de rastreamento.
 
 ## <a name="remarks"></a>Comentários
-Usado para o `dwFlags` membro a [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.
+Usado para `dwFlags` o membro das estruturas [de BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Esses valores podem ser combinados com um bit a bit `OR`.
+Esses valores podem ser combinados com um pouco `OR`.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

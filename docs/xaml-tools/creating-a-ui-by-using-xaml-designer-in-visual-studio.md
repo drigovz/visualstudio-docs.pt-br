@@ -12,16 +12,16 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79190338"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649619"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
-No Visual Studio e no Blend para Visual Studio, o Designer XAML fornece uma interface visual para ajudar você a criar aplicativos baseados em XAML, como aplicativos WPF, UWP e Xamarin.Forms. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da janela Caixa de Ferramentas (janela Ativos no Blend para Visual Studio) e configurando propriedades na janela Propriedades. Você também pode editar XAML diretamente no modo de exibição XAML.
+O XAML Designer em Visual Studio e Blend for Visual Studio fornece uma interface visual para ajudá-lo a projetar aplicativos baseados em XAML, como WPF e UWP. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da janela Caixa de Ferramentas (janela Ativos no Blend para Visual Studio) e configurando propriedades na janela Propriedades. Você também pode editar XAML diretamente no modo de exibição XAML.
 
 Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
@@ -141,11 +141,11 @@ Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não pod
 
 A opção na parte superior das janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo, que mostra um símbolo de seta para cima, retorna ao escopo anterior. O controle de escopo só é aplicável quando você está no escopo de um estilo ou modelo.
 
-## <a name="properties-window"></a>Janela Propriedades
+## <a name="properties-window"></a>Janela de Propriedades
 
 A janela **Propriedades** permite definir valores de propriedade em controles. Veja como ela se parece:
 
-![Janela Propriedades](media/xaml-designer-properties-window.png)
+![Janela de Propriedades](media/xaml-designer-properties-window.png)
 
 Há várias opções na parte superior da janela **Propriedades**:
 

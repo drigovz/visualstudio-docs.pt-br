@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9a8e6e16aa9279bb7324f5d08f0da3035f2b85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343991"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732812"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
-Essa interface fornece acesso às informações sobre o processo está em execução no servidor.
+Esta interface dá acesso a informações sobre o servidor em que o processo está sendo executado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,36 +28,36 @@ Essa interface fornece acesso às informações sobre o processo está em execu�
 IDebugCoreServer3 : IDebugCoreServer2
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Visual Studio implementa essa interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O Visual Studio implementa essa interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface de um [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interface. Uma chamada para [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) também pode retornar a esta interface. Essa interface é usada com mais frequência por um fornecedor de porta personalizado para iniciar programas em um servidor (local ou remoto).
+ Use [queryInterface](/cpp/atl/queryinterface) para obter esta interface a partir de uma interface [IDebugCoreServer2.](../../../extensibility/debugger/reference/idebugcoreserver2.md) Uma chamada para [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) também pode retornar esta interface. Essa interface é usada mais frequentemente por um fornecedor de porta personalizado para lançar programas em um servidor (local ou remoto).
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos na [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interface, essa interface implementa os seguintes métodos:
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ Além dos métodos na interface [IDebugCoreServer2,](../../../extensibility/debugger/reference/idebugcoreserver2.md) esta interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Recupera o nome do servidor.|
+|[Obternome de servidor](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Recupera o nome do servidor.|
 |[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Recupera uma versão amigável do nome do servidor|
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Informa os mecanismos de depuração específicas para anexar automaticamente a processos quando iniciar esses processos.|
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Recupera um código de erro específico ao Falha ao anexar automático.|
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Informa os mecanismos específicos de depuração para se conectar automaticamente aos processos quando esses processos começarem.|
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Recupera um código de erro específico quando o attach automático falha.|
 |[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Cria uma instância de um mecanismo de depuração no servidor.|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Recupera um sinalizador que indica se o servidor está no mesmo computador que o chamador.|
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera um valor que indica o protocolo usado para se comunicar com o servidor.|
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Desabilita todos os a anexação automática as configurações para todos os mecanismos de depuração, que esse servidor sabe sobre.|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Recupera um sinalizador indicando se o servidor está na mesma máquina que o chamador.|
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera um valor que indica o protocolo que está sendo usado para se comunicar com o servidor.|
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Desativa todas as configurações de conexão automática para todos os motores de depuração que este servidor conhece.|
 
 ## <a name="remarks"></a>Comentários
- Um fornecedor de porta personalizada recebe o [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interface em uma chamada para [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). O `IDebugCoreServer3` interface pode ser obtido da interface.
+ Um fornecedor de porta personalizado recebe a interface [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) em uma chamada para [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). A `IDebugCoreServer3` interface pode ser obtida a partir dessa interface.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

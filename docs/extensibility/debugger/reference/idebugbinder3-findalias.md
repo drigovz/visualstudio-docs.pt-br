@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8387a3302395d6e25c2b00dd360286e533531168
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344416"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735868"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Esse método localiza um alias, dado um nome. Isso irá procurar todos os aliases no programa.
+Este método localiza um alias, dado um nome. Isso irá procurar todos os pseudônimos no programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ int FindAlias(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pcstrName`\
-[in] Nome do alias para localizar.
+[em] Nome do pseudônimo para encontrar.
 
 `ppAlias`\
-[out] Alias encontrada (se houver) representado pela [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interface.
+[fora] Alias encontrado (se houver) representado pela interface [IDebugAlias.](../../../extensibility/debugger/reference/idebugalias.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` (se o alias não for encontrado) ou um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, `S_FALSE` retornas (se alias não for encontrado) ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método inicializa o objeto de destino para nulo antes de chamar; em seguida, ele testa um valor nulo determinar se o alias foi encontrado.
+ Este método inicializa o objeto de destino a nulo antes de chamar; em seguida, ele testa um valor nulo depois para determinar se o alias foi encontrado ou não.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

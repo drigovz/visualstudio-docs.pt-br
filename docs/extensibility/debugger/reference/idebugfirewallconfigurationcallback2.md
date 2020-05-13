@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
 ms.assetid: 0827361c-b97c-4851-9898-ab6d88c81811
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b4c04b996d180f1975ee1e9ad3a9a95cd1b76a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 635771fc87326b28566058a43d4922b131ae1975
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337458"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728717"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
-Permite que um mecanismo de depuração que usa DCOM para perguntar a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário para certificar-se de que o firewall não bloqueará a depuração remota.
+Habilita um mecanismo de depuração [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] que usa DCOM para pedir à ui para garantir que o firewall não bloqueie a depuração remota.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,11 +26,11 @@ Permite que um mecanismo de depuração que usa DCOM para perguntar a [!INCLUDE[
 IDebugFirewallConfigurationCallback2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Implementado pelo objeto de porta do Gerenciador de sessão de depuração.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Implementado pelo objeto de porta do gerenciador de depuração de sessão.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir mostra os métodos de `IDebugFirewallConfigurationCallback2`.
+ A tabela a seguir `IDebugFirewallConfigurationCallback2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
@@ -41,4 +41,4 @@ IDebugFirewallConfigurationCallback2 : IUnknown
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll

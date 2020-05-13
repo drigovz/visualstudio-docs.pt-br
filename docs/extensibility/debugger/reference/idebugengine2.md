@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2 interface
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce60ffb1143dd763ea14390b0b55e105f74d1b53
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352564"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730855"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
-Essa interface representa um mecanismo de depuração (DES). Ele é usado para gerenciar vários aspectos de uma sessão de depuração, desde a criação de pontos de interrupção para definir e apagar as exceções.
+Esta interface representa um mecanismo de depuração (DE). Ele é usado para gerenciar vários aspectos de uma sessão de depuração, desde a criação de pontos de interrupção até a definição e a compensação de exceções.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,38 +28,38 @@ Essa interface representa um mecanismo de depuração (DES). Ele é usado para g
 IDebugEngine2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Essa interface é implementada por uma personalizado DE gerenciar a depuração de programas. Esta interface deve ser implementada por DE.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Esta interface é implementada por um DE personalizado para gerenciar a depuração de programas. Esta interface deve ser implementada pelo DE.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Essa interface é chamada pelo Gerenciador de depuração (SDM) para gerenciar a sessão de depuração, incluindo gerenciamento de exceções, criando pontos de interrupção e respondendo a eventos síncronos enviados pelo DE sessão.
+ Essa interface é chamada pelo SDM (Session Debug Manager, gerenciador de depuração) para gerenciar a sessão de depuração, incluindo gerenciamento de exceções, criação de pontos de interrupção e resposta a eventos síncronos enviados pelo DE.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugEngine2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugEngine2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Cria um enumerador para todos os programas sendo depurado por um DE.|
-|[Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Anexa a DE um programa.|
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Cria um ponto de interrupção pendente em DE.|
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Cria um enumerador para todos os programas que estão sendo depurados por um DE.|
+|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Anexa um DE a um programa.|
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Cria um ponto de ruptura pendente no DE.|
 |[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Especifica como o DE deve lidar com uma determinada exceção.|
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Remove a exceção especificada, para que ele não é tratado pelo mecanismo de depuração.|
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Remove a lista de exceções, que o IDE foi definido para um idioma ou a arquitetura de tempo de execução específica.|
-|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Obtém o GUID DE.|
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informa a DE que o programa especificado foi encerrado atypically e que o DE deve limpar todas as referências para o programa e enviar um programa de destruir o evento.|
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Chamado pelo SDM para indicar que um evento de depuração síncrona, enviado anteriormente pelo DE para o SDM, foi recebido e processado.|
-|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Define a localidade de.|
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Define a raiz do registro atualmente em uso por DE.|
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Remove a exceção especificada para que não seja mais manuseada pelo motor de depuração.|
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Remove a lista de exceções definidas pelo IDE para uma arquitetura ou idioma em tempo de execução específico.|
+|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Recebe o GUID do DE.|
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informa a a de que o programa especificado foi atipicamente encerrado e que o DE deve limpar todas as referências ao programa e enviar um evento de destruição do programa.|
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Chamado pelo SDM para indicar que um evento de depuração síncrona, anteriormente enviado pelo DE ao SDM, foi recebido e processado.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Define a localidade do DE.|
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Define a raiz de registro atualmente em uso pelo DE.|
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Define uma métrica.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Solicitações que todos os programas sendo depurados por este DE parar a execução na próxima vez que um dos seus threads tenta ser executado.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Solicita que todos os programas que estão sendo depurados por este DE interrompam a execução na próxima vez que um de seus threads tentar ser executado.|
 
 ## <a name="requirements"></a>Requisitos
  Cabeçalho: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+## <a name="see-also"></a>Confira também
+- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

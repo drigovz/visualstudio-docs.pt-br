@@ -1,19 +1,19 @@
 ---
-title: Ferramentas de contêineres do Visual Studio com ASP.NET Core e React.js
+title: Ferramentas de contêiner do Visual Studio com ASP.NET Core e reajam. js
 author: ghogen
 description: Saiba como usar as Ferramentas do Visual Studio para Contêineres e o Docker for Windows
 ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75916744"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255552"
 ---
-# <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Quickstart: Use docker com um aplicativo de página única react no Visual Studio
+# <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Início rápido: usar o Docker com um aplicativo de página única reagir no Visual Studio
 
 Com o Visual Studio, você pode criar, depurar e executar aplicativos do ASP.NET Core facilmente em contêineres, incluindo aqueles com aplicativo de página única do React.js, e publicá-los no ACR (Registro de Contêiner do Azure), no Docker Hub, no Serviço de Aplicativo do Azure ou no seu próprio registro de contêiner. Neste artigo, publicaremos no ACR.
 
@@ -22,22 +22,22 @@ Com o Visual Studio, você pode criar, depurar e executar aplicativos do ASP.NET
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com as workloads **Desenvolvimento para a Web**, **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instaladas
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para um teste gratuito](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
-* Para contêineres do Windows, windows 10 versão 1903 ou posterior, para usar as imagens Docker referenciadas neste artigo.
+* Para contêineres do Windows, Windows 10 versão 1903 ou posterior, para usar as imagens do Docker referenciadas neste artigo.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
 * [Ferramentas de desenvolvimento do .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para o desenvolvimento com .NET Core 2.2
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para um teste gratuito](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
-* Para contêineres do Windows, windows 10 versão 1903 ou posterior, para usar as imagens Docker referenciadas neste artigo.
+* Para contêineres do Windows, Windows 10 versão 1903 ou posterior, para usar as imagens do Docker referenciadas neste artigo.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Instalação e configuração
 
-Para a instalação do Docker, primeiro revise as informações no [Docker Desktop para Windows: O que saber antes de instalar](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Para a instalação do Docker, primeiro examine as informações no [Docker desktop para Windows: o que saber antes de instalar](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)o. Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="create-a-project-and-add-docker-support"></a>Criar um projeto e adicionar suporte ao Docker
 
@@ -66,11 +66,11 @@ Para a instalação do Docker, primeiro revise as informações no [Docker Deskt
 1. Selecione o tipo de contêiner.
 ::: moniker-end
 
-O próximo passo é diferente, dependendo se você está usando contêineres Linux ou contêineres windows.
+A próxima etapa é diferente, dependendo se você estiver usando contêineres do Linux ou contêineres do Windows.
 
-## <a name="modify-the-dockerfile-linux-containers"></a>Modificar o Arquivo Docker (contêineres Linux)
+## <a name="modify-the-dockerfile-linux-containers"></a>Modificar o Dockerfile (contêineres do Linux)
 
-Um *Dockerfile*, ou seja, a receita para criar uma imagem final do Docker, é criado no projeto. Consulte a [referência dockerfile](https://docs.docker.com/engine/reference/builder/) para obter uma compreensão dos comandos dentro dele.
+Um *Dockerfile*, ou seja, a receita para criar uma imagem final do Docker, é criado no projeto. Consulte a [referência do Dockerfile](https://docs.docker.com/engine/reference/builder/) para obter uma compreensão dos comandos dentro dele.
 
 Abra o *Dockerfile* no projeto e adicione as linhas a seguir para instalar o Node.js 10.x no contêiner. Certifique-se de adicionar essas linhas na primeira seção, para adicionar a instalação de *npm.exe* do Gerenciador de pacotes do nó à imagem base usada nas etapas subsequentes.
 
@@ -110,18 +110,18 @@ O *Dockerfile* anterior baseia-se na imagem [microsoft/aspnetcore](https://hub.d
 
 Quando a caixa de seleção **Configurar para HTTPS** do novo projeto estiver marcada, o *Dockerfile* exibirá duas portas. Uma porta é usada para o tráfego HTTP; a outra porta é usada para o HTTPS. Se a caixa de seleção não estiver marcada, uma única porta (80) será exposta para o tráfego HTTP.
 
-## <a name="modify-the-dockerfile-windows-containers"></a>Modificar o arquivo Docker (contêineres do Windows)
+## <a name="modify-the-dockerfile-windows-containers"></a>Modificar o Dockerfile (contêineres do Windows)
 
-Abra o arquivo do projeto clicando duas vezes no nó do projeto e atualize o arquivo do projeto `<PropertyGroup>` (*.csproj) adicionando a seguinte propriedade como filho do elemento:
+Abra o arquivo de projeto clicando duas vezes no nó do projeto e atualize o arquivo de projeto (*. csproj) adicionando a seguinte propriedade como um filho do `<PropertyGroup>` elemento:
 
    ```xml
     <DockerfileFastModeStage>base</DockerfileFastModeStage>
    ```
 
-Atualize o arquivo Docker adicionando as seguintes linhas. Isso copiará o nó e o npm para o contêiner.
+Atualize o Dockerfile adicionando as linhas a seguir. Isso copiará o nó e o NPM para o contêiner.
 
-   1. Adicione ``# escape=` `` à primeira linha do Arquivo Docker
-   1. Adicione as seguintes linhas antes`FROM … base`
+   1. Adicionar ``# escape=` `` à primeira linha do Dockerfile
+   1. Adicione as seguintes linhas antes de`FROM … base`
 
       ```
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
@@ -131,13 +131,13 @@ Atualize o arquivo Docker adicionando as seguintes linhas. Isso copiará o nó e
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Adicione a seguinte linha antes e depois`FROM … build`
+   1. Adicione a seguinte linha antes e depois de`FROM … build`
 
       ```
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. O arquivo Docker completo deve agora se parecer com algo assim:
+   1. O Dockerfile completo agora deve ser semelhante a este:
 
       ```
       # escape=`
@@ -146,8 +146,8 @@ Atualize o arquivo Docker adicionando as seguintes linhas. Isso copiará o nó e
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
-      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
-      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
       FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
       WORKDIR /app
@@ -173,11 +173,11 @@ Atualize o arquivo Docker adicionando as seguintes linhas. Isso copiará o nó e
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Atualize o arquivo .dockerignore `**/bin`removendo o .
+1. Atualize o arquivo. dockerignore removendo o `**/bin`.
 
 ## <a name="debug"></a>Depurar
 
-Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e inicie a depuração do aplicativo. Poderá aparecer uma mensagem com um aviso sobre a confiança em um certificado, escolha confiar no certificado para continuar.  A primeira vez que você constrói, docker baixa as imagens base, então pode demorar um pouco mais.
+Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e inicie a depuração do aplicativo. Poderá aparecer uma mensagem com um aviso sobre a confiança em um certificado, escolha confiar no certificado para continuar.  Na primeira vez que você cria, o Docker baixa as imagens base, portanto, pode demorar um pouco mais.
 
 A opção **Ferramentas de Contêiner** na janela **Saída** mostra quais ações estão ocorrendo. Você deve ver as etapas de instalação associadas a *npm.exe*.
 
@@ -226,8 +226,8 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
     | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
-    | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
-    | **[Sku](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
+    | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
     | **Localização do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]

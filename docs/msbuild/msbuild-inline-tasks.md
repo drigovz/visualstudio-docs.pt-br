@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633311"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638040"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
 
@@ -52,7 +52,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
 
 - O atributo `TaskFactory` nomeia a classe que implementa a fábrica de tarefas em linha.
 
-- O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Como alternativa, você pode usar o atributo `AssemblyName` para especificar o nome totalmente qualificado da classe de fábrica de tarefas em linha, que normalmente está localizado no GAC (cache de assembly global).
+- O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Alternativamente, você pode `AssemblyName` usar o atributo para especificar o nome totalmente qualificado da `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`classe de fábrica de tarefas inline, que normalmente está localizada em .
 
 Os elementos restantes da tarefa `DoNothing` estão vazios w são fornecidos para ilustrar a ordem e a estrutura de uma tarefa em linha. Um exemplo mais robusto será apresentado posteriormente neste tópico.
 

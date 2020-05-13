@@ -1,54 +1,54 @@
 ---
-title: Criar uma categoria de configurações | Microsoft Docs
+title: Criando uma categoria de configurações | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f4b2fa9d82181d0eb899bf9680e8a9debd6c50b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341592"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739613"
 ---
 # <a name="create-a-settings-category"></a>Criar uma categoria de configurações
 
-Neste passo a passo, você cria uma categoria de configurações do Visual Studio e usá-lo para salvar os valores e restaurar os valores de um arquivo de configurações. Uma categoria de configurações é um grupo de propriedades relacionadas que são exibidos como um "ponto de configurações personalizadas"; ou seja, como uma caixa de seleção na **importação e exportação de configurações** assistente. (Você pode encontrá-lo sobre a **ferramentas** menu.) Configurações salvos ou restauradas como uma categoria e as configurações individuais não são exibidas no assistente. Para obter mais informações, confira [Configurações do ambiente](../ide/environment-settings.md).
+Neste passo a passo, você cria uma categoria de configurações do Visual Studio e a usa para salvar valores e restaurar valores de um arquivo de configurações. Uma categoria de configurações é um grupo de propriedades relacionadas que aparecem como um "ponto de configurações personalizado"; ou seja, como uma caixa de seleção no assistente **de Configurações de Importação e Exportações.** (Você pode encontrá-lo no menu **Ferramentas.)** As configurações são salvas ou restauradas como uma categoria, e as configurações individuais não são exibidas no assistente. Para obter mais informações, confira [Configurações do ambiente](../ide/environment-settings.md).
 
-Criar uma categoria de configurações derivando-lo do <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.
+Você cria uma categoria de configurações, derivando-a da <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.
 
-Para iniciar este passo a passo, você deve primeiro concluir a primeira seção do [criar uma página de opções](../extensibility/creating-an-options-page.md). A grade de propriedade opções resultante permite examinar e alterar as propriedades na categoria. Depois de salvar a categoria de propriedade em um arquivo de configurações, você pode examinar o arquivo para ver como os valores de propriedade são armazenados.
+Para iniciar este passo a passo, você deve primeiro concluir a primeira seção da [página Criar uma opção](../extensibility/creating-an-options-page.md). A grade de propriedades Options resultante permite examinar e alterar as propriedades na categoria. Depois de salvar a categoria de propriedade em um arquivo de configurações, você examina o arquivo para ver como os valores da propriedade são armazenados.
 
-## <a name="prerequisites"></a>Prerequisites
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Pré-requisitos
+ A partir do Visual Studio 2015, você não instala o Visual Studio SDK a partir do centro de downloads. Ele está incluído como um recurso opcional na configuração do Visual Studio. Você também pode instalar o VS SDK mais tarde. Para obter mais informações, consulte [Instalar o Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-settings-category"></a>Criar uma categoria de configurações
- Nesta seção, você pode usar um ponto de configurações personalizadas para salvar e restaurar os valores da categoria de configurações.
+ Nesta seção, você usa um ponto de configurações personalizado para salvar e restaurar os valores da categoria configurações.
 
 ### <a name="to-create-a-settings-category"></a>Para criar uma categoria de configurações
 
-1. Conclua o [criar uma página de opções](../extensibility/creating-an-options-page.md).
+1. Complete a [página Criar uma opções](../extensibility/creating-an-options-page.md).
 
-2. Abra o *VSPackage.resx* arquivo e adicione estes recursos de cadeia de caracteres de três:
+2. Abra o arquivo *VSPackage.resx* e adicione esses três recursos de seqüência:
 
     |Nome|Valor|
     |----------|-----------|
     |106|Minha categoria|
-    |107|Minhas configurações|
+    |107|Minhas Configurações|
     |108|OptionInteger e OptionFloat|
 
-     Isso cria recursos esse nome de categoria "My Category", o objeto "My Settings" e a descrição da categoria "OptionInteger e OptionFloat".
+     Isso cria recursos que nomeiam a categoria "Minha categoria", o objeto "Minhas Configurações" e a descrição da categoria "OptionInteger e OptionFloat".
 
     > [!NOTE]
-    > Esses três, apenas o nome da categoria não consta o **importar e exportar configurações** assistente.
+    > Desses três, apenas o nome da categoria não aparece no assistente **De importações e configurações de exportação.**
 
-3. No *MyToolsOptionsPackage.cs*, adicione uma `float` propriedade denominada `OptionFloat` para o `OptionPageGrid` de classe, conforme mostrado no exemplo a seguir.
+3. Em *MyToolsOptionsPackage.cs,* `float` adicione `OptionFloat` uma `OptionPageGrid` propriedade nomeada à classe, como mostrado no exemplo a seguir.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -76,51 +76,51 @@ Para iniciar este passo a passo, você deve primeiro concluir a primeira seção
     ```
 
     > [!NOTE]
-    > O `OptionPageGrid` categoria chamada "My Category" agora consiste em duas propriedades, `OptionInteger` e `OptionFloat`.
+    > A `OptionPageGrid` categoria denominada "Minha Categoria" agora `OptionInteger` consiste `OptionFloat`nas duas propriedades, e .
 
-4. Adicionar um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> para o `MyToolsOptionsPackage` de classe e dê a ele CategoryName "My Category", dê a ele o ObjectName "My Settings" e defina isToolsOptionPage como true. Defina o categoryResourceID, objectNameResourceID e DescriptionResourceID para o recurso de cadeia de caracteres correspondente que IDs criadas anteriormente.
+4. Adicione <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a `MyToolsOptionsPackage` à classe e dê-lhe o Nome da categoria "Minha categoria", dê-lhe o Nome do Objeto "Minhas Configurações" e defina isToolsOptionPage como true. Defina a categoriaResourceID, objectNameResourceID e DescriptionResourceID para os IDs de recurso de seqüência correspondentes criados anteriormente.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5. Compile o projeto e comece a depuração. Na instância experimental, você deverá ver que **minha grade página** agora tem valores flutuantes e inteiros.
+5. Compile o projeto e comece a depuração. No caso experimental, você deve ver que **My Grid Page** agora tem valores inteiros e flutuantes.
 
 ## <a name="examine-the-settings-file"></a>Examine o arquivo de configurações
- Nesta seção, você pode exportar os valores de categoria de propriedade para um arquivo de configurações. Examine o arquivo e, em seguida, importe os valores novamente para a categoria de propriedade.
+ Nesta seção, você exporta valores de categoria de propriedade para um arquivo de configurações. Você examina o arquivo e, em seguida, importa os valores de volta para a categoria de propriedade.
 
-1. Inicie o projeto no modo de depuração pressionando **F5**. Isso inicia a instância experimental.
+1. Inicie o projeto no modo de depuração pressionando **F5**. Isso começa a instância experimental.
 
-2. Abra o **ferramentas** > **opções** caixa de diálogo.
+2. Abra a caixa de diálogo**Opções de** **ferramentas.** > 
 
-3. Na exibição de árvore no painel esquerdo, expanda **My Category** e, em seguida, clique em **minha página de grade**.
+3. Na visualização da árvore no painel esquerdo, expanda **Minha Categoria** e clique em My **Grid Page**.
 
-4. Altere o valor de **OptionFloat** para 3.1416 e **OptionInteger** a 12. Clique em **OK**.
+4. Alterar o valor de **OptionFloat** para 3.1416 e **OptionInteger** para 12. Clique em **OK**.
 
 5. No menu, **Ferramentas**, clique em **Importar e Exportar Configurações**.
 
-     O **importar e exportar configurações** assistente é exibido.
+     O assistente **De importações e configurações de exportação** é exibido.
 
-6. Certifique-se **exportar configurações de ambiente selecionadas** está selecionado e, em seguida, clique em **próxima**.
+6. Certifique-se de que **as configurações do ambiente selecionadas de exportação** estão selecionadas e, em seguida, clique **em Avançar**.
 
-     O **escolher configurações para exportar** página será exibida.
+     A **página '''''''''''''''''''''''''''**
 
-7. Clique em **minhas configurações**.
+7. Clique **em Minhas configurações**.
 
-     O **descrição** alterações **OptionInteger e OptionFloat**.
+     A **descrição** muda para **OptionInteger e OptionFloat**.
 
-8. Certifique-se de que **minhas configurações** é a única categoria que está selecionada e, em seguida, clique em **próxima**.
+8. Certifique-se de que **Minhas configurações** é a única categoria selecionada e, em seguida, clique **em Next**.
 
-     O **nome do seu arquivo de configurações** página será exibida.
+     A **página Nome seu arquivo de configurações** é exibida.
 
-9. Nomeie o novo arquivo de configurações *MySettings.vssettings* e salve-o em um diretório apropriado. Clique em **Finalizar**.
+9. Nomeie o arquivo de novas configurações *MySettings.vssettings* e salve-o em um diretório apropriado. Clique em **Concluir**.
 
-     O **Exportação concluída** página relatórios de que suas configurações foram exportadas com êxito.
+     A **página Exportar concluir** informa que suas configurações foram exportadas com sucesso.
 
-10. Sobre o **arquivo** , aponte para **abra**e, em seguida, clique em **arquivo**. Localize *MySettings.vssettings* e abri-lo.
+10. No menu **Arquivo** , aponte para **Abrir**e clique em **Arquivo**. Localize *MySettings.vssettings* e abra-o.
 
-     Você pode encontrar a categoria de propriedade que você exportou na seção a seguir do arquivo (e seus GUIDs serão diferente).
+     Você pode encontrar a categoria de propriedade que você exportou na seção a seguir do arquivo (seus GUIDs diferem).
 
     ```
     <Category name="My Category_My Settings"
@@ -133,24 +133,24 @@ Para iniciar este passo a passo, você deve primeiro concluir a primeira seção
     </Category>
     ```
 
-     Observe que o nome da categoria completo é formado pela adição de um caractere de sublinhado para o nome da categoria seguido pelo nome do objeto. OptionFloat e OptionInteger aparecem na categoria, junto com seus valores exportados.
+     Observe que o nome completo da categoria é formado pela adição de um sublinhado ao nome da categoria seguido pelo nome do objeto. OptionFloat e OptionInteger aparecem na categoria, juntamente com seus valores exportados.
 
 11. Feche o arquivo de configurações sem alterá-lo.
 
-12. No **ferramentas** menu, clique em **opções**, expanda **My Category**, clique em **minha página de grade** e, em seguida, altere o valor de  **OptionFloat** 1,0 e **OptionInteger** como 1. Clique em **OK**.
+12. No menu **Ferramentas,** clique em **Opções,** **expanda Minha Categoria,** clique em **Minha Página de Grade** e, em seguida, altere o valor de **OptionFloat** para 1.0 e **OptionInteger** para 1. Clique em **OK**.
 
-13. Sobre o **ferramentas** menu, clique em **importar e exportar configurações**, selecione **importar configurações de ambiente selecionadas**e, em seguida, clique em **Avançar**.
+13. No menu **Ferramentas,** clique em **'Importar e Exportar configurações',** selecione **Importar configurações de ambiente selecionadas**e clique **em 'Avançar**' .
 
-     O **salvar configurações atuais** página será exibida.
+     A **página Salvar configurações de corrente** é exibida.
 
-14. Selecione **não, apenas importe as novas configurações** e, em seguida, clique em **próxima**.
+14. Selecione **Não, basta importar novas configurações** e, em seguida, clique **em Seguir**.
 
-     O **escolha uma coleção de configurações a importar** página será exibida.
+     A **página Escolher uma coleção de configurações para importar** é exibida.
 
-15. Selecione o *MySettings.vssettings* arquivo na **minhas configurações** nó do modo de exibição de árvore. Se o arquivo não aparecer na exibição de árvore, clique em **procurar** e encontrá-lo. Clique em **Avançar**.
+15. Selecione o arquivo *MySettings.vssettings* no nó **Minhas Configurações** da exibição da árvore. Se o arquivo não aparecer na exibição da árvore, clique em **Procurar** e encontrá-lo. Clique em **Próximo**.
 
-     O **escolher configurações a importar** caixa de diálogo é exibida.
+     A caixa de diálogo **''''''''''''''''''''''''''''**
 
-16. Certifique-se de que **minhas configurações** está selecionado e, em seguida, clique em **concluir**. Quando o **importação completa** página for exibida, clique em **fechar**.
+16. Certifique-se de que **minhas configurações** estão selecionadas e, em seguida, clique **em Concluir**. Quando a **página Importar concluir** for exibida, clique em **Fechar**.
 
-17. Sobre o **ferramentas** menu, clique em **opções**, expanda **My Category**, clique em **minha página de grade** e verifique se os valores de categoria de propriedade tem foi restaurado.
+17. No menu **Ferramentas,** clique em **Opções,** **expanda Minha Categoria,** clique em **Minha Página da Grade** e verifique se os valores da categoria de propriedade foram restaurados.

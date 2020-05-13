@@ -1,5 +1,5 @@
 ---
-title: Elemento extern | Microsoft Docs
+title: Elemento Extern | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342795"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711493"
 ---
 # <a name="extern-element"></a>Elemento extern
-O elemento Extern faz referência a qualquer cabeçalho externo ( *. h*) arquivos para mesclar com o *VSCT* arquivo em tempo de compilação. Os arquivos a serem mescladas devem estar no caminho de inclusão fornecido ao compilador VSCT ou referenciado por um [elemento Include](../extensibility/include-element.md). Os arquivos podem ser outros *VSCT* arquivos ou arquivos de cabeçalho C++.
+O elemento Extern faz referência a qualquer cabeçalho externo *(.h)* para mesclar com o arquivo *.vsct* no momento da compilação. Os arquivos a serem mesclados devem estar no caminho Incluir dado ao compilador VSCT ou referenciado por um [elemento Incluir](../extensibility/include-element.md). Os arquivos podem ser outros arquivos *.vsct* ou arquivos de cabeçalho C++.
 
- As definições em arquivos de cabeçalho devem estar no formato "#define [Symbol] [valor]" o valor pode ser outro símbolo, caso ele seja definido anteriormente. Definições podem ser usadas em instruções condicionais de itens de comando. Qualquer símbolo, na verdade não usado será descartado.
+ Definições em arquivos de cabeçalho devem ser do formulário "#define [Símbolo] [Valor]" O valor pode ser outro símbolo se for definido anteriormente. As definições podem ser usadas em declarações condicionais de itens de comando. Qualquer símbolo não usado será descartado.
 
- Elemento do elemento CommandTable Extern
+ Elemento extern elemento de comando
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ O elemento Extern faz referência a qualquer cabeçalho externo ( *. h*) arquivo
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|{1&gt;href&lt;1}|Necessário. O caminho para o arquivo de cabeçalho:<br /><br /> href="stdidcmd.h"|
+|href|Obrigatórios. O caminho para o arquivo de cabeçalho:<br /><br /> href="stdidcmd.h"|
 |Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|linguagem|Opcional. O idioma padrão de todos os [ \<cadeias de caracteres >](../extensibility/strings-element.md) elementos na tabela de comandos:<br /><br /> language="en-us"|
+|Linguagem|Opcional. A linguagem padrão de todas as [ \<strings>elementos](../extensibility/strings-element.md) na tabela de comando:<br /><br /> linguagem="en-us"|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|nenhuma.|nenhuma.|
+|Nenhum.|Nenhum.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -68,7 +68,7 @@ O elemento Extern faz referência a qualquer cabeçalho externo ( *. h*) arquivo
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Confira também
+- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Como o VSPackages adiciona elementos de interface de usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

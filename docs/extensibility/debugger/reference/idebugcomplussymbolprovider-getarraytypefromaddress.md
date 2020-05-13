@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dff0080dbdbe0c312f82ce66a3556ed50f9220a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 048a086bae946b5ce730bdfe2c343b6cde1b29e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338691"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733998"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Recupera informações de tipo sobre a matriz especificada, dada seu endereço de depuração.
+Recupera informações de tipo sobre a matriz especificada dado seu endereço de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,24 +44,24 @@ int GetArrayTypeFromAddress(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pAddress`\
-[in] O endereço de depuração é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[em] O endereço de depuração representado por uma interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pSig`\
-[in] A matriz para examinar.
+[em] A matriz para examinar.
 
 `dwSigLength`\
-[in] Comprimento em bytes do `pSig` matriz.
+[em] Comprimento em bytes `pSig` da matriz.
 
 `ppField`\
-[out] Retorna o tipo de matriz, conforme representado por um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
+[fora] Retorna o tipo de matriz representado por uma interface [IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(
@@ -96,5 +96,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

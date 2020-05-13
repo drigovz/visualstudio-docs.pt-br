@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Terminate
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a4b44cfc9655c619089d341156328b77594dad9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8da1b2719e8b37df009e3bbef99e57c24117a963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314144"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723810"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
-Encerra o processo.
+Termina o processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ HRESULT Terminate( 
 int Terminate();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando um processo for encerrado, todos os programas do processo são finalizados. Nenhum têm permissão para executar qualquer código mais.
+ Quando um processo é encerrado, todos os programas dentro desse processo são encerrados; ninguém tem permissão para executar mais código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

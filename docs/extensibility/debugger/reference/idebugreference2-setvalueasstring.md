@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339824"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720286"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Define o valor de uma referência de uma cadeia de caracteres. Reservado para uso futuro.
+Define o valor de uma referência a partir de uma seqüência de string. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,18 +43,18 @@ int SetValueAsString ( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszValue`\
-[in] O valor como uma cadeia de caracteres.
+[em] O valor como uma seqüência.
 
 `dwRadix`\
-[in] A base a ser usada na formatação de todas as informações numéricas.
+[em] O rádio a ser usado na formatação de qualquer informação numérica.
 
 `dwTimeout`\
-[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
+[em] Tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use `INFINITE` para esperar indefinidamente.
 
-## <a name="return-value"></a>Valor de retorno
- Sempre retorna `E_NOTIMPL`.
+## <a name="return-value"></a>Valor retornado
+ Retorna sempre `E_NOTIMPL`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

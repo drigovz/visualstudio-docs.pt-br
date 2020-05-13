@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75851440"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223691"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Como configurar e usar o Live Unit Testing
 
@@ -130,12 +130,13 @@ A partir do teste falho, você pode facilmente depurar o código do produto, faz
 
 Por exemplo, a falha de teste mostrada na imagem anterior foi causada por `true` uma suposição <xref:System.Char.IsLower%2A?displayProperty=fullName> incorreta no método de teste de que caracteres não alfabéticos retornam quando passados para o método. Depois de corrigir o método de teste, todos os testes devem passar. Você não precisa pausar ou parar o teste da unidade ao vivo.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Gerenciador de Testes
 
 **Test Explorer** fornece uma interface que permite executar e depurar testes e analisar os resultados do teste. O Live Unit Testing é integrado ao **Gerenciador de Testes**. Quando o Live Unit Testing não está habilitado ou está parado, o **Gerenciador de Testes** exibe o status dos testes de unidade na última vez que um teste foi executado. Alterações no código-fonte exigem uma nova execução dos testes. Por outro lado, quando o Live Unit Testing está habilitado, o status dos testes de unidade no **Gerenciador de Testes** é atualizado imediatamente. Você não precisa fazer os testes da unidade explicitamente.
 
 > [!TIP]
-> Abra **o Test Explorer** selecionando **Test** > **Windows** > Test**Explorer** no menu de alto nível do Visual Studio.
+> Abra **o Teste da Unidade Ao Vivo** selecionando **test** > **windows** > test**explorer** no menu de alto nível do Visual Studio.
 
 Você pode notar na janela **do Test Explorer** que alguns testes estão desbotados. Por exemplo, quando você habilita o Teste de Unidade Viva depois de abrir um projeto previamente salvo, a janela **do Test Explorer** tinha desaparecido tudo, menos o teste com falha, como mostra a imagem a seguir. Neste caso, o Live Unit Testing reexecutou o teste reprovado, mas não reexecutou os testes bem sucedidos. Isso porque os dados persistindo do Live Unit Testing indicam que não houve alterações desde que os testes foram executados pela última vez com sucesso.
 
@@ -148,6 +149,28 @@ Há algumas diferenças entre a execução e atualização automáticas dos resu
 - A execução ou depuração de testes na janela Gerenciador de Testes executa binários regulares, ao passo que o Live Unit Testing executa binários instrumentados.
 - O Live Unit Testing não cria um novo domínio de aplicativo para executar testes; em vez disso, ele executa testes no domínio padrão. Os testes executados na janela **Gerenciador de Testes** criam um novo domínio de aplicativo.
 - O Live Unit Testing executa testes em cada assembly de teste sequencialmente. Na janela **Test Explorer,** você pode optar por executar vários testes em paralelo.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Janela de teste da unidade ao vivo
+
+**O Live Unit Testing**, semelhante ao **Test Explorer,** fornece uma interface que permite executar e depurar testes e analisar os resultados dos testes. Quando o teste da unidade viva é ativado, o status dos testes unitários no **Test Explorer** é atualizado imediatamente. Você não precisa fazer os testes da unidade explicitamente. Quando o teste da unidade viva não está ativado ou é interrompido, o **Live Unit Testing** exibe o status dos testes unitários da última vez que um teste foi executado. Depois de reiniciar o Teste de Unidade Viva, uma alteração de código fonte é necessária para executar novamente os testes.
+
+> [!TIP]
+> Inicie o teste da unidade ao vivo selecionando **Test** > **Live Unit Testing** > **Start** a partir do menu de alto nível do Visual Studio. Você também pode abrir a janela **de teste da unidade ao vivo** usando a janela de teste de **visualização** > outra**unidade ao vivo do****Windows** > .
+
+Você pode notar na janela de teste da **unidade ao vivo** que alguns testes estão desbotados. Por exemplo, quando você para e reinicia o Teste de Unidade Ao Vivo, a janela **de teste da unidade viva** desaparece de todos os testes, como mostra a imagem a seguir. Os resultados dos testes desbotados indicam que o teste não fazia parte da última execução do Teste de Unidade Viva. Os testes só são executados quando uma alteração no teste ou as dependências do teste são detectadas. Se não houver mudança, evita a realização desnecessariamente do teste. Neste caso, o resultado do teste acinzentado ainda está "atualizado", embora não tenha feito parte da última corrida.
+
+![Testes desbotados no Test Explorer](media/vs-2019/lut-test-explorer.png)
+
+Você pode refazer todos os testes que parecerem desbotados fazendo uma alteração de código.
+
+Há algumas diferenças entre a execução e atualização automáticas dos resultados de teste do Live Unit Testing e a execução explícita de testes no **Gerenciador de Testes**. Entre elas, podemos incluir:
+
+- A execução ou depuração de testes na janela Gerenciador de Testes executa binários regulares, ao passo que o Live Unit Testing executa binários instrumentados.
+- O Live Unit Testing não cria um novo domínio de aplicativo para executar testes; em vez disso, ele executa testes no domínio padrão. Os testes executados na janela **Gerenciador de Testes** criam um novo domínio de aplicativo.
+- O Live Unit Testing executa testes em cada assembly de teste sequencialmente. Na janela **Test Explorer,** você pode optar por executar vários testes em paralelo.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Grandes soluções
 

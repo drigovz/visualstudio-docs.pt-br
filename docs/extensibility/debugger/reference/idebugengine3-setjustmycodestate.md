@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f53b0eb95a2a91f34917b05cadffda2f4aa9a8b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322321"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730676"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Esse método informa o mecanismo de depuração sobre as informações de estado de JustMyCode.
+Este método informa o mecanismo de depuração sobre as informações do estado JustMyCode.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ int SetJustMyCodeState(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `fUpdate`\
-[in] Diferente de zero (`TRUE`) para atualizar as informações atuais, zero (`FALSE`) para redefinir todas as informações (ignorando tudo definido anteriormente).
+[em] Não zero`TRUE`( ) para atualizar`FALSE`as informações atuais, zero ( ) para redefinir todas as informações (ignorando qualquer coisa previamente definida).
 
 `dwModules`\
-[in] Número de estruturas de informações em `rgJMCSpec.`
+[em] Número de estruturas de informação em`rgJMCSpec.`
 
 `rgJMCSpec`\
-[in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) estruturas para usar.
+[em] Matriz [de](../../../extensibility/debugger/reference/jmc-code-spec.md) JMC_CODE_SPEC estruturas para usar.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
 ## <a name="remarks"></a>Comentários
- JustMyCode é o conceito de depuração somente o código que pertence a um usuário e ignorando todo o código intermediário, como o código do sistema — mesmo se o código-fonte está disponível para esse código do sistema.
+ JustMyCode é o conceito de depurar apenas o código que pertence a um usuário e ignorar todos os códigos intermediários, como o código do sistema — mesmo que o código-fonte esteja disponível para esse código do sistema.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f5b43a685bcaadccdac1d12ffce2df578a842ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350077"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734567"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-Obtém o contexto de código que descreve o local desse evento.
+Obtém o contexto de código que descreve a localização deste evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,19 +39,19 @@ int GetCodeContext( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppCodeContext`\
-[out] Retorna o [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o local atual do código.
+[fora] Retorna o objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa a localização atual do código.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para a maioria das arquiteturas de tempo de execução, um contexto de código pode ser pensado como um endereço no fluxo de execução de um programa, que aponta para uma instrução específica.
+ Para a maioria das arquiteturas de tempo de execução, um contexto de código pode ser pensado como um endereço no fluxo de execução de um programa, apontando para uma instrução específica.
 
- Para obter o contexto de documento, que é orientado para linhas de código-fonte, chame o [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) método.
+ Para obter o contexto do documento, que é orientado para linhas de código-fonte, ligue para o método [GetDocumentContext.](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

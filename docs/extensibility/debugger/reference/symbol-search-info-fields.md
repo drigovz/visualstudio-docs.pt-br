@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322361"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713473"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Especifica o tipo de informações de símbolo para recuperar.
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
+Especifica o tipo de informação de símbolo a ser recuperada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,24 +47,24 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Campos
  `SSIF_NONE`\
- Não indica nenhum sinalizador
+ Indica que não há bandeiras
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- Retorna que todos os caminhos de pesquisa de usada para localizar símbolos
+ Retorna todos os caminhos de pesquisa usados para encontrar símbolos
 
 ## <a name="remarks"></a>Comentários
- Esses sinalizadores são passados como um parâmetro para o [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) retornado do método para determinar a quantidade de informações.
+ Esses sinalizadores são passados como parâmetro para o método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) para determinar a quantidade de informações retornadas.
 
 > [!NOTE]
-> Atualmente, apenas `SSIF_VERBOSE_SEARCH_INFO` tem suporte, e ele deve ser especificado como o `dwFlags` parâmetro `IDebugModule3::GetSymbolInfo`. Todos os outros valores retornam um erro.
+> Atualmente, `SSIF_VERBOSE_SEARCH_INFO` apenas é suportado, e deve `dwFlags` ser especificado como parâmetro para `IDebugModule3::GetSymbolInfo`. Todos os outros valores retornam um erro.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

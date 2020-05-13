@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66b72edc81cdde1d3d83e4c3534b50e40dd2cf19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae151484a7c2fd5828888a8a551b710c6fda44c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730759"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Esse método define o mecanismo de depuração (DES) `GUID`.
+Este método define o motor de `GUID`depuração (DE) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int SetEngineGuid(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidEngine`\
-[in] `GUID` do mecanismo.
+[em] `GUID` do motor.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

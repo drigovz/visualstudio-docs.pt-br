@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba8b4410b42b6369831c1be075042121b84170
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce326c63f97dfafd06e3e2b3e760b1c06e60d442
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322160"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720059"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
-Recupera um valor que corresponde à métrica do avaliador de expressão especificada.
+Recupera um valor que corresponde à métrica especificada do avaliador de expressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ private int GetEEMetricDword(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `guidLang`\
-[in] Identificador exclusivo da linguagem de programação.
+[em] Identificador único da linguagem de programação.
 
 `guidVendor`\
-[in] Identificador exclusivo do fornecedor.
+[em] Identificador exclusivo do fornecedor.
 
 `pszMetric`\
-[in] Nome da métrica.
+[em] Nome da métrica.
 
 `pdwValue`\
-[out] Retorna o valor que corresponde à cadeia de métrica.
+[fora] Retorna o valor correspondente à seqüência métrica.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

@@ -1,49 +1,49 @@
 ---
-title: Gerenciamento de titular de bloqueio de documentos | Microsoft Docs
+title: Gestão do suporte do bloqueio de documentos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 122c62728840e725713c57d31616b978e43bd220
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347928"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712132"
 ---
-# <a name="document-lock-holder-management"></a>Gerenciamento de titular de bloqueio de documento
+# <a name="document-lock-holder-management"></a>Gerenciamento do suporte de bloqueio de documentos
 
-A tabela de documento (RDT) em execução mantém uma contagem de documentos abertos e todos eles têm os bloqueios de edição. Você pode colocar um bloqueio de edição em um documento no RDT quando é editado por meio de programação em segundo plano sem que o usuário ver um documento aberto em uma janela do documento. Essa funcionalidade é frequentemente usada pelos designers que modificar vários arquivos através de uma interface gráfica do usuário.
+A tabela de documentos em execução (RDT) mantém uma contagem de documentos abertos e quaisquer bloqueios de edição que eles tenham. Você pode colocar um bloqueio de edição em um documento no RDT quando ele é editado programicamente em segundo plano sem que o usuário veja um documento aberto em uma janela de documento. Essa funcionalidade é frequentemente usada por designers que modificam vários arquivos através de uma interface gráfica do usuário.
 
-## <a name="document-lock-holder-scenarios"></a>Cenários de titular de bloqueio de documento
+## <a name="document-lock-holder-scenarios"></a>Cenários de suporte de bloqueio de documento
 
-### <a name="file-a-has-a-dependence-on-file-b"></a>Arquivo de "a" tem uma dependência no arquivo "b"
+### <a name="file-a-has-a-dependence-on-file-b"></a>Arquivo "a" tem uma dependência do arquivo "b"
 
-Considere uma situação em que você implementar um editor padrão "A" de tipo de arquivo "a" e cada arquivo do tipo "a" tem uma referência a (ou a dependência de) um arquivo do tipo "b". Existe um editor padrão "B" para arquivos do tipo "b". Quando o editor de "A" abre o arquivo "r" recupera a referência para o arquivo correspondente "b". O arquivo "b" não é exibido, mas o editor "A" pode modificá-lo. Editor de "A" obtém uma referência aos dados de documento do arquivo de "b" do <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método e também mantém um bloqueio de edição no arquivo "b". Depois que o editor "A" é feito modificando o arquivo "b", você pode diminuir o bloqueio de edição contar com o arquivo "b" chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> método. Você pode omitir essa etapa se você tivesse chamado de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método com o parâmetro `dwRDTLockType` definido como [_VSRDTFLAGS. RDT_NoLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_NoLock>).
+Considere uma situação em que você implemente um editor padrão "A" para o tipo de arquivo "a", e cada arquivo do tipo "a" tem uma referência (ou dependência de) um arquivo do tipo "b". Existe um editor padrão "B" para arquivos do tipo "b". Quando o editor "A" abre o arquivo "a" ele recupera a referência ao arquivo correspondente "b". O arquivo "b" não é exibido, mas o editor "A" pode modificá-lo. O editor "A" obtém uma referência aos dados <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> do documento do arquivo "b" do método e também mantém um bloqueio de edição no arquivo "b". Depois que o editor "A" terminar de modificar o arquivo "b" você pode <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> diminuir a contagem de bloqueio de edição no arquivo "b" chamando o método. Você pode omitir este passo <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> se você `dwRDTLockType` tivesse chamado o método com o parâmetro definido para [_VSRDTFLAGS. RDT_NoLock.](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_NoLock>)
 
-### <a name="file-b-is-opened-by-a-different-editor"></a>O arquivo "b" é aberto por um outro editor
+### <a name="file-b-is-opened-by-a-different-editor"></a>Arquivo "b" é aberto por um editor diferente
 
-No caso em que o arquivo "b" já está aberto por editor "B", quando o editor de "A" tenta abri-lo, há dois cenários separados para lidar com:
+Caso o arquivo "b" já seja aberto pelo editor "B" quando o editor "A" tentar abri-lo, existem dois cenários separados para lidar:
 
-- Se o arquivo "b" está aberto em um editor compatível, você deve ter A"editor" registrar um bloqueio de edição de documento no arquivo "b" usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> método. Depois que o seu editor de "A" é feito modificando arquivos "b", cancelar o registro do documento editar bloqueio usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> método.
+- Se o arquivo "b" estiver aberto em um editor compatível, você deve ter o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> editor "A" registrar uma trava de edição de documento no arquivo "b" usando o método. Depois que seu editor "A" terminar de modificar o arquivo "b", desregistre o bloqueio de edição de documento usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> método.
 
-- Se o arquivo "b" está aberto em um modo incompatível, você pode deixar que a tentativa abertura de arquivo "b" por "A" falha, ou você pode permitir que o modo de exibição associado ao editor "A" parcialmente abre e exibe uma mensagem de erro apropriado de editor. A mensagem de erro deve instruir o usuário fechar o arquivo "b" no editor incompatível e, em seguida, abra novamente o arquivo usando o "a" editor "A". Você também pode implementar o [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] método <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> para avisar o usuário fechar o arquivo "b" que é aberto no editor incompatível. Se o usuário fechar o arquivo "b", a abertura do arquivo de "a" no editor "A" continuará normalmente.
+- Se o arquivo "b" estiver aberto de forma incompatível, você pode deixar a tentativa de abertura do arquivo "b" pelo editor "A" falhar, ou pode deixar a exibição associada ao editor "A" abrir parcialmente e exibir uma mensagem de erro apropriada. A mensagem de erro deve instruir o usuário a fechar o arquivo "b" no editor incompatível e, em seguida, reabrir o arquivo "a" usando o editor "A". Você também pode [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> implementar o método para solicitar ao usuário que feche o arquivo "b" que está aberto no editor incompatível. Se o usuário fechar o arquivo "b", a abertura do arquivo "a" no editor "A" continua normalmente.
 
-## <a name="additional-document-edit-lock-considerations"></a>Considerações de bloqueio de edição de documentos adicionais
+## <a name="additional-document-edit-lock-considerations"></a>Considerações adicionais de bloqueio de edição de documentos
 
-Você obterá um comportamento diferente, se o editor de "A" é o único editor que tem um documento de editar o bloqueio no arquivo "b" do que o editor "B" também contém um documento editar bloqueio no arquivo "b". Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Designer de classe** é um exemplo de um designer visual que não mantém um bloqueio de editar o arquivo de código associado. Ou seja, se o usuário tem um diagrama de classe abrir no modo de exibição de design e o arquivo de código associado abertos simultaneamente, e se o usuário modifica o arquivo de código, mas não salvar as alterações, as alterações também serão perdidas ao arquivo de diagrama (. CD) de classe. Se o **Designer de classe** tem o documento apenas editar bloqueio no arquivo de código, o usuário não será solicitado a salvar as alterações ao fechar o arquivo de código. O IDE pede ao usuário para salvar as alterações somente depois que o usuário fecha o **Designer de classe**. As alterações salvas são refletidas em ambos os arquivos. Se ambos os **Designer de classe** e o editor de arquivo de código mantidos bloqueios de edição de documento no arquivo de código, em seguida, o usuário é solicitado a salvar ao fechar o arquivo de código ou o formulário. Nesse ponto, as alterações salvas são refletidas no formulário e o arquivo de código. Para obter mais informações sobre diagramas de classe, consulte [trabalhar com diagramas de classe (Designer de classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
+Você tem um comportamento diferente se o editor "A" for o único editor que tem um bloqueio de edição de documento no arquivo "b" do que você teria se o editor "B" também tiver um bloqueio de edição de documento no arquivo "b". In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Class Designer** é um exemplo de um designer visual que não mantém um bloqueio de edição no arquivo de código associado. Ou seja, se o usuário tiver um diagrama de classe aberto na exibição de design e o arquivo de código associado aberto simultaneamente, e se o usuário modificar o arquivo de código, mas não salvar as alterações, as alterações também serão perdidas para o arquivo de diagrama de classe (.cd). Se o **Class Designer** tiver o único bloqueio de edição de documento no arquivo de código, o usuário não será solicitado a salvar as alterações ao fechar o arquivo de código. O IDE pede ao usuário para salvar as alterações somente depois que o usuário fecha o **Class Designer**. As alterações salvas são refletidas em ambos os arquivos. Se o **Designer de classe** e o editor de arquivos de código mantiverem bloqueios de edição de documentos no arquivo de código, então o usuário será solicitado a salvar ao fechar o arquivo de código ou o formulário. Nesse ponto, as alterações salvas são refletidas tanto no formulário quanto no arquivo de código. Para obter mais informações sobre diagramas de classe, consulte [Trabalhe com diagramas de classe (Class Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
-Observe que se você precisar colocar um bloqueio de edição em um documento para um não-editor, você deve implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> interface.
+Observe que se você precisar colocar um bloqueio de edição em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> documento para um não-editor, você deve implementar a interface.
 
-Muitas vezes um interface do usuário designer que modifica os arquivos de código por meio de programação faz alterações em mais de um arquivo. Nesses casos, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> método manipula o salvamento de um ou mais documentos por meio das **você deseja salvar as alterações aos seguintes itens?** caixa de diálogo.
+Muitas vezes um designer de ia que modifica arquivos de código faz alterações em mais de um arquivo. Nesses casos, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> o método lida com a salvação de um ou mais documentos por meio do **:Você deseja salvar alterações na** caixa de diálogo a seguir?
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [tabela de documento em execução](../extensibility/internals/running-document-table.md)
-- [Tabela de documento em execução e persistência](../extensibility/internals/persistence-and-the-running-document-table.md)
+- [Tabela de documentos em execução](../extensibility/internals/running-document-table.md)
+- [Persistência e a tabela de documentos em execução](../extensibility/internals/persistence-and-the-running-document-table.md)

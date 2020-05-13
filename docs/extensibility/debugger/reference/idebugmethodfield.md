@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField interface
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4b8557226ad010968772562aa787472f159900
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324099"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727067"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
-Essa interface descreve um método.
+Esta interface descreve um método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,37 +28,37 @@ Essa interface descreve um método.
 IDebugMethodField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Um provedor de símbolo implementa essa interface no mesmo objeto que implementa o [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface. Essa interface é uma especialização que apresenta um método.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um provedor de símbolos implementa essa interface no mesmo objeto que implementa a interface [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Esta interface é uma especialização que apresenta um método.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface da [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_METHOD`. Além disso, os métodos [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md), [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md), e [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md), retornam o `IDebugMethodField` interface.
+ Use [queryInterface](/cpp/atl/queryinterface) para obter esta interface a partir da `FIELD_TYPE_METHOD`interface [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) se [getKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retornar . Além disso, os métodos, [GetPropertyGetter,](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)e [EnumConstructors,](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)retornam a `IDebugMethodField` interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaces, essa interface implementa os seguintes métodos:
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ Além dos métodos nas interfaces [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) esta interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
 |[EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)|Cria um enumerador para os parâmetros do método.|
-|[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|Obtém o ponteiro "this" do objeto que contém o método.|
+|[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|Obtém o ponteiro "este" do objeto que contém o método.|
 |[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)|Cria um enumerador para todas as variáveis locais do método.|
-|[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)|Cria um enumerador para variáveis locais selecionados do método.|
+|[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)|Cria um enumerador para variáveis locais selecionadas do método.|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugmethodfield-iscustomattributedefined.md)|Determina se um atributo personalizado específico foi definido.|
 |[EnumStaticLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumstaticlocals.md)|Cria um enumerador para variáveis locais estáticas do método.|
-|[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Obtém o contêiner global do método.|
-|[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Cria um enumerador para o tipo de cada argumento necessário para chamar o método.|
+|[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Fica com o recipiente global do método.|
+|[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Cria um enumerador para o tipo de argumento necessário para chamar o método.|
 
 ## <a name="remarks"></a>Comentários
- Um método pode conter parâmetros, bem como as variáveis locais.
+ Um método pode conter parâmetros, bem como variáveis locais.
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
