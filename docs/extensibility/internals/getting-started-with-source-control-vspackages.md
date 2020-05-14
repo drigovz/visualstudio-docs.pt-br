@@ -1,5 +1,4 @@
----
-title: Começando com o Controle de Origem VSPacotes | Microsoft Docs
+title: Introdução a VSPackages de controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:

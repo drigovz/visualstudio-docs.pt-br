@@ -1,4 +1,4 @@
----
+﻿---
 title: Selecionar e instalar interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
 ms.date: 06/05/2019

@@ -1,4 +1,4 @@
----
+﻿---
 title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 5, autenticação
 titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
