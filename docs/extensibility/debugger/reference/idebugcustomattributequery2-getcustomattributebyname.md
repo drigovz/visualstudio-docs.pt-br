@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d874a00c3c82108c224f18922f2b4853279beaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 47471f2743e705b06fb9a1bda6752b24a7836d1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322210"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732566"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Obtém os bytes de atributos personalizados, considerando o nome do atributo personalizado.
+Obtém os bytes de atributos personalizados dado o nome do atributo personalizado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,26 +43,26 @@ int GetCustomAttributeByName(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszCustomAttributeName`\
-[in] Uma cadeia de caracteres que contém o nome do atributo personalizado a ser procurado.
+[em] Uma seqüência contendo o nome do atributo personalizado a procurar.
 
 `ppBlob`\
-[no, out] Uma matriz que é preenchida com os bytes de atributo personalizado.
+[dentro, fora] Uma matriz que é preenchida com os bytes de atributo personalizado.
 
 `pdwLen`\
-[no, out] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes realmente gravados na matriz.
+[dentro, fora] Especifica o número máximo de bytes `ppBlob` para retornar na matriz e retorna o número de bytes realmente gravados na matriz.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se o atributo personalizado não existe. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retorna S_OK ou retorna S_FALSE se o atributo personalizado não existir. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Defina o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz em para o `ppBlob` parâmetro.
+ Defina `ppBlob` o parâmetro como um valor nulo para retornar o número de atributos bytes disponíveis. Em seguida, aloque uma `ppBlob` matriz e passe essa matriz para o parâmetro.
 
  Os bytes de atributo representam os dados brutos do atributo personalizado.
 
- Se o `ppBlob` e `pdwLen` parâmetros são definidos como um valor nulo, esse método pode ser usado para determinar se o atributo personalizado simplesmente existe. No entanto, é uma alternativa mais fácil chamar o [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) método.
+ Se `ppBlob` os `pdwLen` parâmetros e os parâmetros forem definidos como um valor nulo, este método pode ser usado para determinar se o atributo personalizado simplesmente existe. Uma alternativa mais fácil, no entanto, é chamar o método [IsCustomAttributeDefined.](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

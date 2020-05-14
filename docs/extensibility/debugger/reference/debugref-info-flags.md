@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318363"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737381"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Especifica quais informações devem ser recuperadas sobre um objeto de referência de depuração.
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+Especifica quais informações recuperar sobre um objeto de referência de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,47 +58,47 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Campos
 `DEBUGREF_INFO_NAME`\
-Inicialização/usar o `bstrName` campo na estrutura.
+Inicializar/usar `bstrName` o campo na estrutura.
 
 `DEBUGREF_INFO_TYPE`\
-Inicialização/usar o `bstrType` campo na estrutura.
+Inicializar/usar `bstrType` o campo na estrutura.
 
 `DEBUGREF_INFO_VALUE`\
-Inicialização/usar o `bstrValue` campo na estrutura.
+Inicializar/usar `bstrValue` o campo na estrutura.
 
 `DEBUGREF_INFO_ATTRIB`\
-Inicialização/usar o `dwAttrib` campo na estrutura.
+Inicializar/usar `dwAttrib` o campo na estrutura.
 
 `DEBUGREF_INFO_REFTYPE`\
-Inicialização/usar o `dwRefType` campo na estrutura.
+Inicializar/usar `dwRefType` o campo na estrutura.
 
 `DEBUGREF_INFO_REF`\
-Inicialização/usar o `pReference` campo na estrutura.
+Inicializar/usar `pReference` o campo na estrutura.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-O campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.
+O campo de valor deve conter o valor expandido automaticamente, se disponível, para este tipo de objeto.
 
 `DEBUGREF_INFO_NONE`\
-Indica que nenhum sinalizador está definido.
+Indica que nenhuma bandeira está definida.
 
 `DEBUGREF_INFO_ALL`\
-Indica uma máscara dos sinalizadores.
+Indica uma máscara das bandeiras.
 
 ## <a name="remarks"></a>Comentários
-Esses sinalizadores são passados para o [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) métodos para indicar quais campos dos [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) são de estrutura a ser inicializado.
+Essas bandeiras são passadas para os métodos [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) para indicar quais campos da estrutura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) devem ser inicializados.
 
-Usado para o `dwFields` membro o `DEBUG_REFERENCE_INFO` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.
+Usado para `dwFields` o `DEBUG_REFERENCE_INFO` membro da estrutura para indicar quais campos são usados e válidos quando a estrutura é devolvida.
 
-Esses valores podem ser combinados com um bit a bit `OR`.
+Esses valores podem ser combinados com um pouco `OR`.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

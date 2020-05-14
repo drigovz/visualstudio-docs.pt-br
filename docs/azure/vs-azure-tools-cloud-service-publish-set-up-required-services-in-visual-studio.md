@@ -4,19 +4,19 @@ description: Conheça os procedimentos para configurar serviços de conta de arm
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 81c5787e3c058848c97c69fad03827223c9fc582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6174f8294f3a9e990893ca9a45d77f2a069692e
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572403"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489656"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparar para publicar ou implantar um serviço de nuvem usando o Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparar para publicar ou implantar um serviço de nuvem do Visual Studio
 
 Para publicar um projeto de serviço de nuvem, você deve configurar os seguintes serviços, conforme descrito neste artigo:
 
@@ -36,7 +36,7 @@ Um serviço de nuvem executa suas funções no ambiente do Azure. Você pode cri
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Criar um serviço de nuvem no portal do Azure
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
+1. Entre no [portal do Azure](https://portal.azure.com/).
 1. Selecione **Serviços de Nuvem (clássico)** no lado esquerdo da página.
 1. Selecione **+ Adicionar**, depois forneça as informações necessárias (Nome DNS, assinatura, grupo de recursos e local). Não é necessário carregar um pacote no momento, você pode fazer isso mais tarde no Visual Studio.
 1. Selecione **Criar** para concluir o processo.
@@ -55,7 +55,7 @@ Uma conta de armazenamento fornece acesso aos serviços de blob, fila e tabela. 
 
 ### <a name="create-a-storage-account-through-the-azure-portal"></a>Criar uma conta de armazenamento no Portal do Azure
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
+1. Entre no [portal do Azure](https://portal.azure.com/).
 1. Selecione **+ Novo** no painel à esquerda.
 1. Selecione **Armazenamento** em "Azure Marketplace", depois **Conta de Armazenamento - blob, arquivo, tabela, fila** do lado direito.
 1. Forneça as informações necessárias (nome, modelo de implantação e assim por diante.

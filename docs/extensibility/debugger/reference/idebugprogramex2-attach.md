@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Microsoft Docs
+title: IDebugProgramEx2::Anexar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db27f29b37480081d29e452d74a6da0c5cea59a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325179"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722384"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Anexe uma sessão em um programa.
+Anexar uma sessão a um programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ int Attach( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pCallback`\
-[in] Uma [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que representa a função de retorno de chamada que o mecanismo de depuração anexado envia eventos para.
+[em] Um objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que representa a função de retorno de chamada para a a que o mecanismo de depuração anexado envia eventos.
 
 `dwReason`\
-[in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que descreve o motivo para a operação de anexação.
+[em] Um valor da [enumeração ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) que descreve o motivo da operação de anexação.
 
 `pSession`\
-[in] Um valor que identifica exclusivamente a sessão que está sendo anexado ao programa.
+[em] Um valor que identifica exclusivamente a sessão que está anexando ao programa.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Esse método deverá retornar `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` se o programa já está anexado.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Este método `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` deve retornar se o programa já estiver conectado.
 
 ## <a name="remarks"></a>Comentários
- A porta que contém o programa pode usar o valor em `pSession` para determinar qual sessão está tentando anexar ao programa. Por exemplo, se uma porta permite que a sessão de depuração somente uma anexar a um processo por vez, a porta pode determinar se a mesma sessão já está anexada a outros programas no processo.
+ A porta que contém o programa `pSession` pode usar o valor para determinar qual sessão está tentando anexar ao programa. Por exemplo, se uma porta permitir que apenas uma sessão de depuração seja anexada a um processo por vez, a porta poderá determinar se a mesma sessão já está anexada a outros programas no processo.
 
 > [!NOTE]
-> A interface passado `pSession` deve ser tratada apenas como um cookie, um valor que identifica exclusivamente o Gerenciador de sessão de depuração anexar a este programa; nenhum dos métodos na interface fornecido são funcionais.
+> A interface `pSession` passada deve ser tratada apenas como um cookie, um valor que identifica exclusivamente o gerenciador de depuração de sessão anexado a este programa; nenhum dos métodos na interface fornecida é funcional.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

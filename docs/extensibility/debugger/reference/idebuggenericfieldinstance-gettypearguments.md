@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetTypeArguments
 - IDebugGenericFieldInstance::GetTypeArguments
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7fbd896e2798ed42c382d9975ec70a7e8aebbd7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351238"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728187"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Recupera os argumentos de parâmetro de tipo para esta instância.
+Recupera os argumentos do parâmetro de tipo para este caso.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ int GetTypeArguments(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `cArgs`\
-[in] Número de parâmetros de tipo.
+[em] Número de parâmetros de tipo.
 
 `ppArgs`\
-[out] Retorna uma matriz de parâmetros de tipo.
+[fora] Retorna uma matriz de parâmetros de tipo.
 
 `pcArgs`\
-[no, out] Número de membros no `ppArgs` matriz.
+[dentro, fora] Número de membros `ppArgs` na matriz.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

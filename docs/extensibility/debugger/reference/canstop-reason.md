@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737686"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
-Usado para determinar se um programa pode interromper a execução depois de atingir um ponto específico na execução.
+# <a name="canstop_reason"></a>CANSTOP_REASON
+Usado para determinar se um programa pode parar a execução depois de atingir um ponto específico na execução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ public enum enum_CANSTOP_REASON {
 
 ## <a name="fields"></a>Campos
 `CANSTOP_ENTRYPOINT`\
-Especifica o ponto de entrada de um determinado programa.
+Especifica o ponto de entrada do programa dado.
 
 `CANSTOP_STEPIN`\
-Especifica a entrar em uma função.
+Especifica entrar em uma função.
 
 ## <a name="remarks"></a>Comentários
-Passado como um argumento para o [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método para confirmar com a sessão de depuração SDM (Gerenciador de), se ele for okey parar depois de atingir o ponto de entrada do programa, ou depois de passar para uma função ou método.
+Passou como um argumento para o método [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar com o Session Debug Manager (SDM) se não há problema em parar depois de chegar ao ponto de entrada do programa ou depois de entrar em uma função ou método.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

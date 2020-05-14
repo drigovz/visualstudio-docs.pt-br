@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649203"
 ---
 # <a name="remove-visual-studio"></a>Remover o Visual Studio
 
@@ -51,20 +51,20 @@ Veja como executar a `InstallCleanup.exe` ferramenta:
 1. Abra um prompt de comando do administrador. Para abrir um prompt de comando de administrador, siga estas etapas:
    * Digite **cmd** na caixa "Digite aqui para pesquisar".
    * Clique com o botão direito do mouse em **Prompt de Comando** e escolha **Executar como administrador**.
-1. Digite o caminho `InstallCleanup.exe` completo da ferramenta e adicione o switch de linha de comando que você preferir. Por padrão, o caminho da ferramenta é o seguinte:
+1. Digite o caminho `InstallCleanup.exe` completo da ferramenta e adicione o switch de linha de comando que você preferir. Por padrão, o caminho da ferramenta é o seguinte. As aspas duplas encerram um comando contendo espaços:
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
-   > Se você não `InstallCleanup.exe` pode encontrar o diretório Visual Studio Installer, que está sempre localizado em `%ProgramFiles(x86)%\Microsoft Visual Studio`, aqui está o que fazer a seguir. Siga as instruções para [instalar o Visual Studio](install-visual-studio.md). Em seguida, quando a tela de seleção de carga de trabalho for exibida, feche a janela e siga os passos nesta página novamente.
+   > Se você não `InstallCleanup.exe` pode encontrar sob o diretório Visual Studio Installer, que está sempre localizado em `%ProgramFiles(x86)%\Microsoft Visual Studio`, aqui está o que fazer a seguir. Siga as instruções para [instalar o Visual Studio](install-visual-studio.md). Em seguida, quando a tela de seleção de carga de trabalho for exibida, feche a janela e siga os passos nesta página novamente.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Confira também
 
-* [Instale o Visual Studio](install-visual-studio.md)
+* [Instalar o Visual Studio](install-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
 * [Modificar o Visual Studio](modify-visual-studio.md)
 * [Desinstalar o Visual Studio](uninstall-visual-studio.md)

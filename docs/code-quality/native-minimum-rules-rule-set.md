@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55eb9948aba4579b58bb3c24580fe9ec16079812
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8abf4d4c5d2158ab4a3c9deeb11ab93e31b4cc3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587284"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649345"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 
-As regras mínimas nativas da Microsoft concentram-se nos problemas mais críticos no código nativo, incluindo falhas de segurança e falhas do aplicativo.
+As regras mínimas nativas da Microsoft se concentram nos problemas mais críticos do código nativo, incluindo possíveis falhas de segurança e falhas de aplicativos.
 
-Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para projetos nativos.
+Inclua esta regra definida em qualquer conjunto de regras personalizadas criadas para projetos nativos.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -92,18 +92,18 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_êxito\_ ou \_em\_falha\_ usada em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_Sucesso\_ \_ou\_\_ Falha usada em um contexto ilegal|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|O \_usar\_\_anotações\_ anotação deve ser usada para fazer referência, sem modificação, uma declaração anterior.|
+|[C28213](../code-quality/c28213.md)|A \_\_anotação de\_\_ anotações de Uso deve ser usada para referenciar, sem modificação, uma declaração prévia.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
 |[C28217](../code-quality/c28217.md)|Para função, o número de parâmetros para anotação não corresponde ao encontrado no arquivo|
-|[C28218](../code-quality/c28218.md)|Para o parâmetro de função, o parâmetro da anotação não corresponde ao encontrado no arquivo|
+|[C28218](../code-quality/c28218.md)|Para parâmetro de função, o parâmetro da anotação não corresponde ao encontrado no arquivo|
 |[C28219](../code-quality/c28219.md)|Membro de enumeração esperada para anotação do parâmetro na anotação|
 |[C28220](../code-quality/c28220.md)|Expressão inteira esperada para anotação do parâmetro na anotação|
 |[C28221](../code-quality/c28221.md)|Expressão de sequência de caracteres esperada para o parâmetro na anotação|
@@ -140,7 +140,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_macro\_valor\_ é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro \_para\_\_ macro é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
@@ -158,4 +158,4 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28304](../code-quality/c28304.md)|Foi encontrado um operador \_Notref\_ posicionado inadequadamente aplicado ao token.|
 |[C28305](../code-quality/c28305.md)|Foi encontrado um erro durante a análise de um token.|
 |[C28350](../code-quality/c28350.md)|A anotação descreve uma situação que não é aplicável condicionalmente.|
-|[C28351](../code-quality/c28351.md)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
+|[C28351](/cpp/code-quality/c28351)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|

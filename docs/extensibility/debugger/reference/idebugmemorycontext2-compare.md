@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Compare | Microsoft Docs
+title: IDebugMemoryContext2:Compare | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Compare method
 - Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9994f99759d570780729fe1c62e6604786e4eb90
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347038"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727495"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
-Compara o contexto de memória para cada contexto na matriz fornecida da maneira indicada por sinalizadores de comparação, retornando um índice do primeiro contexto que corresponde ao.
+Compara o contexto de memória com cada contexto da dada matriz da maneira indicada pela comparação de bandeiras, retornando um índice do primeiro contexto que corresponde.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,25 +46,25 @@ int Compare(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `compare`\
-[in] Um valor a partir de [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) enumeração que determina o tipo de comparação.
+[em] Um valor da [enumeração CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) que determina o tipo de comparação.
 
 `rgpMemoryContextSet`\
-[in] Uma matriz de referências para o [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objetos a ser comparada.
+[em] Uma matriz de referências aos objetos [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) para comparar.
 
 `dwMemoryContextSetLen`\
-[in] O número de contextos no `rgpMemoryContextSet` matriz.
+[em] O número de contextos na `rgpMemoryContextSet` matriz.
 
 `pdwMemoryContext`\
-[out] Retorna o índice do primeiro contexto de memória que satisfaz a comparação.
+[fora] Retorna o índice do primeiro contexto de memória que satisfaz a comparação.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_COMPARE_CANNOT_COMPARE` se os dois contextos não podem ser comparados.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_COMPARE_CANNOT_COMPARE` se os dois contextos não puderem ser comparados.
 
 ## <a name="remarks"></a>Comentários
- Um mecanismo de depuração (DES) oferecem suporte a todos os tipos de comparações, mas ele deve suportar pelo menos `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` e `CONTEXT_SAME_SCOPE`.
+ Um motor de depuração (DE) não precisa suportar todos os `CONTEXT_EQUAL`tipos `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` de `CONTEXT_SAME_SCOPE`comparações, mas deve suportar pelo menos , e .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

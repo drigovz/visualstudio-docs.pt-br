@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233158"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808364"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do Portal de Administrador de Assinaturas do Visual Studio
 
 O Portal de Administração de Assinaturas do Visual Studio fornece as ferramentas necessárias para gerenciar as assinaturas da sua organização em um único lugar. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Considerações importantes
 Lembre-se desses pontos ao usar o Portal de Administração de Assinaturas do Visual Studio:
@@ -50,9 +52,9 @@ Para obter mais informações sobre o contrato que você está visualizando, sel
 > ![Página Detalhes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Recursos
-- [Visual Studio licenciamento de papel branco](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Compare opções de assinatura e preços](https://visualstudio.microsoft.com/vs/pricing)
-- [Compare os recursos do Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
+- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
+- [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Confira também

@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
+title: IDebugSettingsCallback2:GetMetricGuid | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b46037619bf7e43b647d4e3bc557c8ae9290cbd1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08f03e0d09db17e3dbcda30588191ff3efcb1c41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322000"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719982"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Recupera o identificador exclusivo de uma métrica, dado seu nome.
+Recupera o identificador exclusivo de uma métrica dada a seu nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ private int GetMetricGuid(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszType`\
-[in] Tipo de métrica.
+[em] Tipo da métrica.
 
 `guidSection`\
-[in] Identificador exclusivo da seção.
+[em] Identificador único da seção.
 
 `pszMetric`\
-[in] Nome da métrica.
+[em] Nome da métrica.
 
 `pguidValue`\
-[out] Retorna o identificador exclusivo da métrica.
+[fora] Retorna o identificador exclusivo da métrica.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

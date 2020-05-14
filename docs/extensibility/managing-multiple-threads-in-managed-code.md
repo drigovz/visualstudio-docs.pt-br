@@ -1,31 +1,31 @@
 ---
-title: 'Como: Gerenciar vários Threads em código gerenciado | Microsoft Docs'
+title: 'Como: Gerenciando vários threads em código gerenciado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 307ee61380b137cc7426c641a85844934ff0377a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ceaa0af4f57fe374cf9cf4b2dd8b4f40af74a852
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340584"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702774"
 ---
-# <a name="how-to-manage-multiple-threads-in-managed-code"></a>Como: Gerenciar vários threads em código gerenciado
-Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assíncronos ou tem operações executadas em threads diferentes do thread de interface de usuário do Visual Studio, você deve seguir as diretrizes abaixo. Você pode manter o thread de interface do usuário responsiva porque ele não precisa aguardar o trabalho em outro thread para concluir. Você pode tornar seu código mais eficiente, porque você não tem threads extras que ocupam espaço na pilha, e você pode torná-lo mais confiável e fácil de depurar porque você evita deadlocks e travamentos.
+# <a name="how-to-manage-multiple-threads-in-managed-code"></a>Como: Gerenciar vários segmentos em código gerenciado
+Se você tiver uma extensão VSPackage gerenciada que chame métodos assíncronos ou tenha operações que executem em outros segmentos além do segmento Visual Studio UI, você deve seguir as diretrizes dadas abaixo. Você pode manter o segmento de ia responsivo porque não precisa esperar o trabalho em outro segmento para ser concluído. Você pode tornar seu código mais eficiente, porque você não tem threads extras que tomam espaço de pilha, e você pode torná-lo mais confiável e mais fácil de depurar porque você evita impasses e travas.
 
- Em geral, você pode alternar do thread de interface do usuário para um thread diferente, ou vice-versa. Quando o método retorna, o thread atual é o thread do qual ele foi originalmente chamado.
+ Em geral, você pode mudar do segmento de IA para um segmento diferente, ou vice-versa. Quando o método retorna, o segmento atual é o segmento do qual foi originalmente chamado.
 
 > [!IMPORTANT]
-> As diretrizes a seguir usam as APIs na <xref:Microsoft.VisualStudio.Threading> namespace, em particular, o <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. As APIs neste namespace são novas no [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Você pode obter uma instância de um <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> do <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propriedade `ThreadHelper.JoinableTaskFactory`.
+> As seguintes diretrizes usam <xref:Microsoft.VisualStudio.Threading> as APIs no <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> namespace, em particular, a classe. As APIs neste namespace [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]são novas em . Você pode obter uma <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> instância <xref:Microsoft.VisualStudio.Shell.ThreadHelper> `ThreadHelper.JoinableTaskFactory`de um da propriedade.
 
-## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Alternar do thread de interface do usuário para um thread em segundo plano
+## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Mude do segmento de ia para um segmento de plano de fundo
 
-1. Se você estiver usando o thread de interface do usuário e você deseja fazer o trabalho assíncrono em um thread em segundo plano, use `Task.Run()`:
+1. Se você estiver no segmento de ia e quiser fazer um trabalho `Task.Run()`assíncrono em um segmento de fundo, use:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assí
 
     ```
 
-2. Se você estiver usando o thread de interface do usuário e você deseja bloquear sincronicamente enquanto você estiver executando o trabalho em um thread em segundo plano, use o <xref:System.Threading.Tasks.TaskScheduler> propriedade `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Se você estiver no segmento de ia de ui e quiser bloquear sincronizadamente <xref:System.Threading.Tasks.TaskScheduler> enquanto estiver executando o trabalho em um segmento de fundo, use a propriedade `TaskScheduler.Default` dentro <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -47,18 +47,18 @@ Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assí
     });
     ```
 
-## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Alternar de um thread em segundo plano para o thread de interface do usuário
+## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Mude de um segmento de fundo para o segmento de IA
 
-1. Se você estiver em um thread em segundo plano e você deseja fazer algo no thread da interface do usuário, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Se você estiver em um segmento de fundo e quiser fazer <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>algo no segmento de ia de ida e volta, use:
 
     ```csharp
     // Switch to main thread
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
     ```
 
-     Você pode usar o <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> método para alternar para o thread de interface do usuário. Esse método envia uma mensagem para o thread de interface do usuário com a continuação do método assíncrona atual e também se comunica com o restante do framework threading para definir a prioridade correta e evitar deadlocks.
+     Você pode <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> usar o método para mudar para o segmento de ia. Este método posta uma mensagem para o segmento de IA com a continuação do método assíncrono atual, e também se comunica com o resto da estrutura de rosca para definir a prioridade correta e evitar impasses.
 
-     Se seu método de thread em segundo plano não é assíncrono e não é torná-la assíncrona, você ainda pode usar o `await` sintaxe para alternar para o thread de interface do usuário, encapsulando seu trabalho com <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, como neste exemplo:
+     Se o seu método de segmento de fundo não for assíncrono e você `await` não puder torná-lo assíncrono, <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>você ainda pode usar a sintaxe para mudar para o segmento de UI, envolvendo seu trabalho com , como neste exemplo:
 
     ```csharp
     ThreadHelper.JoinableTaskFactory.Run(async delegate {

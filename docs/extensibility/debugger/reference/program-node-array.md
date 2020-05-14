@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b2cbda4bce24c08297734e9b50a004ea9a67dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713808"
 ---
-# <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Contém uma matriz de objetos que descrevem os programas de interesse.
+# <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
+Contém uma matriz de objetos que descrevem programas de interesse.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ public struct tagPROGRAM_NODE_ARRAY {
 
 ## <a name="members"></a>Membros
  `dwCount`\
- Número de objetos no `Members` matriz.
+ Número de objetos na `Members` matriz.
 
  `Members`\
- Uma matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que descrevem os programas solicitados.
+ Uma matriz de objetos [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) descrevendo os programas solicitados.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é parte do [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura que por sua vez é preenchida por uma chamada para o [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método.
+ Essa estrutura faz parte da estrutura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) que, por sua vez, é preenchida por uma chamada para o método [GetProviderProcessData.](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

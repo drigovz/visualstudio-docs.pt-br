@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Microsoft Docs
+title: IDebugMemoryContext2::Subtrair | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a320b7c67cd2603dfea11983d2d62c344f347ab4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347027"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727441"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Subtrai o valor especificado do contexto atual e retorna um novo contexto.
@@ -42,20 +42,20 @@ int Subtract(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dwCount`\
-[in] O número de bytes de memória para diminuir.
+[em] O número de bytes de memória para decretar.
 
 `ppMemCxt`\
-[out] Retorna um novo [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
+[fora] Retorna um novo objeto [IDebugMemoryContext2.](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um contexto de memória é um endereço, portanto, subtrair um valor de um endereço produz um novo endereço que requer uma nova interface de contexto.
+ Um contexto de memória é um endereço, então subtrair um valor de um endereço produz um novo endereço que requer uma nova interface de contexto.
 
- Esse método sempre deve produzir um novo contexto, mesmo se o endereço resultante está fora do espaço de memória associado a este contexto. A única exceção a isso é se nenhuma memória pode ser alocada para o novo contexto ou se `ppMemCxt` é um valor nulo (que é um erro).
+ Esse método deve sempre produzir um novo contexto, mesmo que o endereço resultante esteja fora do espaço de memória associado a esse contexto. A única exceção a isso é se nenhuma memória `ppMemCxt` pode ser alocada para o novo contexto ou se for um valor nulo (o que é um erro).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

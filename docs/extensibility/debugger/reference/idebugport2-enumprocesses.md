@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343808"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725457"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 Retorna uma lista de todos os processos em execução em uma porta.
@@ -39,13 +39,13 @@ int EnumProcesses( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppEnum`\
-[out] Retorna um [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objeto que contém uma lista de todos os processos em execução em uma porta.
+[fora] Retorna um objeto [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) que contém uma lista de todos os processos em execução em uma porta.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

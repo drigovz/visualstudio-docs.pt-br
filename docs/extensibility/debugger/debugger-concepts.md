@@ -1,51 +1,51 @@
 ---
-title: Conceitos do depurador | Microsoft Docs
+title: Conceitos de depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345928"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738988"
 ---
-# <a name="debugger-concepts"></a>Conceitos do depurador
-Para compilar no pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquiteturas usados na criação do pacote.
+# <a name="debugger-concepts"></a>Conceitos de depurador
+Para construir sobre o pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos arquitetônicos usados na concepção do pacote.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Sessão de depuração](../../extensibility/debugger/debug-session.md) explica a função de uma sessão na arquitetura de depuração.
+ [Sessão de depuração](../../extensibility/debugger/debug-session.md) Explica o papel de uma sessão na arquitetura de depuração.
 
- [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md) define quais um servidor está em termos de depuração de arquitetura, em termos de abstratos e físicos.
+ [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md) Define o que é um servidor em termos de arquitetura de depuração, tanto em termos abstratos quanto físicos.
 
- [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md) define quais um fornecedor de porta está em termos de arquitetura de depuração.
+ [Fornecedores portuários](../../extensibility/debugger/port-suppliers.md) Define o que é um fornecedor de portas em termos de arquitetura de depuração.
 
- [Portas](../../extensibility/debugger/ports.md) define quais uma porta está em termos de arquitetura de depuração.
+ [Portos](../../extensibility/debugger/ports.md) Define o que é uma porta em termos de arquitetura de depuração.
 
- [Processos](../../extensibility/debugger/processes.md) define que um processo está em termos de arquitetura de depuração.
+ [Processos](../../extensibility/debugger/processes.md) Define o que é um processo em termos de arquitetura de depuração.
 
- [Nós de programa](../../extensibility/debugger/program-nodes.md) define um nó de programa em termos de depuração de arquitetura, incluindo como ele pode identificar em si e o processo que está executando no.
+ [Nódulos do programa](../../extensibility/debugger/program-nodes.md) Define um nó de programa em termos de arquitetura de depuração, incluindo como ele pode se identificar e o processo em que está sendo executado.
 
- [Programas](../../extensibility/debugger/programs.md) define um programa em termos de arquitetura de depuração.
+ [Programas](../../extensibility/debugger/programs.md) Define um programa em termos de arquitetura de depuração.
 
- [Threads](../../extensibility/debugger/threads.md) define as características de threads em termos de arquitetura de depuração.
+ [Linhas](../../extensibility/debugger/threads.md) Define as características dos segmentos em termos de arquitetura de depuração.
 
- [Registros de ativação](../../extensibility/debugger/stack-frames.md) define um quadro de pilha em termos de arquitetura de depuração. Um quadro de pilha é uma abstração de uma pilha que fornece o contexto de execução de um thread.
+ [Quadros de pilha](../../extensibility/debugger/stack-frames.md) Define um quadro de pilha em termos de arquitetura de depuração. Um quadro de pilha é uma abstração de uma pilha que fornece o contexto de execução de um segmento.
 
- [Módulos](../../extensibility/debugger/modules.md) define um módulo, em termos de arquitetura, como um contêiner físico de código, como um arquivo executável ou uma DLL de depuração.
+ [Módulos](../../extensibility/debugger/modules.md) Define um módulo, em termos de arquitetura de depuração, como um recipiente físico de código, como um arquivo executável ou um DLL.
 
- [Pontos de interrupção](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) define três tipos de pontos de interrupção, pendente, associação e o erro — em termos de arquitetura de depuração.
+ [Pontos de interrupção](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Define os três tipos de pontos de interrupção — pendentes, vinculados e erros — em termos de arquitetura de depuração.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md) explica como o mecanismo de depuração (DES) opera simultaneamente em contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevante a ele.
+ [Contextos de depuração](../../extensibility/debugger/debugger-contexts.md) Explica como o mecanismo de depuração (DE) opera simultaneamente dentro dos contextos de avaliação de código, documentação e expressão. Descreve, para cada um dos três contextos, a localização, posição ou avaliação relevantes para ele.
 
- [Componentes do depurador](../../extensibility/debugger/debugger-components.md) fornece uma visão geral do que os componentes de depuração do Visual Studio, que inclui o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolo (SH).
+ [Componentes do depurador](../../extensibility/debugger/debugger-components.md) Fornece uma visão geral dos componentes de depuração do Visual Studio, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolos (SH).
 
- [As tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.
+ [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) Contém links para várias tarefas de depuração, como o lançamento de um programa e a avaliação de expressões.

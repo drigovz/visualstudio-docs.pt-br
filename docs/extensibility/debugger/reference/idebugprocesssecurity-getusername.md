@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a42b67eb3fd308011bf725f8dd7e24a4d9ddca6f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311517"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723252"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Obtém o nome de usuário do fornecedor de porta.
+Obtém o nome de usuário do fornecedor do porto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,15 +37,15 @@ int GetUserName (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pbstrUserName`\
-[out] Uma cadeia de caracteres que contém o nome de usuário.
+[fora] Uma seqüência contendo o nome de usuário.
 
-## <a name="return-value"></a>Valor de retorno
- Se o método for bem-sucedido, ele retornará `S_OK`. Caso contrário, ele retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se o método for bem-sucedido, retornará `S_OK`. Caso contrário, ele retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- `GetUserName` Retorna o nome de usuário que é exibido na **nome de usuário** coluna o **anexar ao processo** caixa de diálogo. Para exibir o **anexar ao processo** caixa de diálogo, clique em **anexar ao processo** no **ferramentas** menu no [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE).
+ `GetUserName`retorna o nome de usuário exibido na coluna Nome de **usuário** da caixa de diálogo **Anexar ao processo.** Para exibir a caixa de diálogo **Anexar ao processo,** [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] clique em Anexar ao **processo** no menu **Ferramentas** no ambiente de desenvolvimento integrado (IDE).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

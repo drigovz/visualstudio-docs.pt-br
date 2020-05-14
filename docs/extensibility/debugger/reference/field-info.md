@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337695"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736890"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-Essa estrutura descreve uma variável local, parâmetro ou outro campo.
+# <a name="field_info"></a>FIELD_INFO
+Esta estrutura descreve uma variável local, parâmetro ou outro campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Membros
 `dwFields`\
-Uma combinação de sinalizadores do [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumeração que especifica quais membros são preenchidos.
+Uma combinação de bandeiras da enumeração [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica quais membros estão preenchidos.
 
 `bstrFullName`\
 O nome completo do campo.
@@ -61,19 +61,19 @@ O nome curto do campo.
 O tipo do campo.
 
 `dwModifiers`\
-Uma combinação de sinalizadores do [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeração que descreve o campo.
+Uma combinação de bandeiras da [enumeração FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que descreve o campo.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método onde ele é preenchido.
+Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) onde é preenchida.
 
 ## <a name="requirements"></a>Requisitos
-Header: sh.h
+Cabeçalho: sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)

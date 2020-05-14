@@ -1,5 +1,5 @@
 ---
-title: Comandos e Menus que usam Assemblies de interoperabilidade | Microsoft Docs
+title: Comandos e menus que usam montagens interop | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342021"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709482"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandos e menus que usam assemblies de interoperabilidade
-Um VSPackage que implementa os comandos de menu e barra de ferramentas usando assemblies de interoperabilidade deve:
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandos e menus que usam conjuntos Interop
+Um VSPackage que implementa comandos de menu e barra de ferramentas usando conjuntos Interop deve:
 
-- Informar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) sobre os comandos que ele suporta e se elas estão habilitadas.
+- Informe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) sobre os comandos que suporta e se eles estão habilitados atualmente.
 
-- Aderir às regras (contrato) para lidar com comandos.
+- Aderir às regras (contrato) para manusear comandos.
 
-- Implementar explicitamente a manipulação de comando, usando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.
+- Implemente explicitamente o manuseio de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> comando usando a interface ou a interface.
 
-  A seção a seguir descreve como realizar essas tarefas.
+  A seção a seguir descreve como fazer essas tarefas.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Determinar o status de comando usando assemblies de interoperabilidade](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
+- [Determine o status do comando usando conjuntos Interop](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- Descreve como um VSPackage notifica o IDE sobre os comandos que ele dá suporte e se elas estão habilitadas.
+ Descreve como um VSPackage notifica o IDE sobre quais comandos ele suporta e se eles estão habilitados no momento.
 
-- [Contratos de comando em assemblies de interoperabilidade](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
+- [Contratos de comando em assembléias interop](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- Fornece uma definição do contrato comando básico usado por todos os VSPackages implementando comandos usando assemblies de interoperabilidade.
+ Fornece uma definição do contrato de comando básico usado por todos os VSPackages implementando comandos usando conjuntos Interop.
 
-- [Implementação do comando](../../extensibility/internals/command-implementation.md)
+- [Implementação de comando](../../extensibility/internals/command-implementation.md)
 
  Fornece uma visão geral de como um VSPackage implementa um comando.
 
-- [Registrar manipuladores de comandos do assembly de interoperabilidade](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+- [Registre os manipuladores de comando de montagem Interop](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
 
- Descreve as entradas do registro necessárias para notificar o IDE que um VSPackage fornece um manipulador de comandos.
+ Descreve as entradas de registro necessárias para notificar o IDE de que um VSPackage fornece um manipulador de comando.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Disponibilidade do comando](../../extensibility/internals/command-availability.md)
+- [Disponibilidade de comando](../../extensibility/internals/command-availability.md)
 
- Descreve os critérios que são usados pelo IDE para determinar quais comandos VSPackage estão disponíveis e trata nos quais o objeto.
+ Descreve critérios usados pelo IDE para determinar quais comandos VSPackage estão disponíveis e qual objeto os lida.
 
-- [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Como o VSPackages adiciona elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Fornece detalhes sobre como criar uma interface do usuário que usa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] suporte de comando.
+ Fornece detalhes sobre como criar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uma ui que usa suporte a comandos.
 
-- [Roteamento de comando em VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
+- [Roteamento de comando em VSPacotes](../../extensibility/internals/command-routing-in-vspackages.md)
 
- Uma visão geral do processo usado para relacionar um objeto com a solicitação de comando correto.
+ Uma visão geral do processo usado para relacionar um objeto com a solicitação de comando correta.

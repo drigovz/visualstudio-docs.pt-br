@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327041"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735723"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Esse método recupera um objeto de memória que representa a memória que esse objeto está associado.
+Este método recupera um objeto de memória que representa a memória à que este objeto está vinculado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,20 +43,20 @@ int GetMemoryObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pField`\
-[in] Especifica qual campo para obter o objeto de memória para.
+[em] Especifica para qual campo obter o objeto de memória.
 
 `uConstant`\
-[in] Representa um valor para um valor constante ou um endereço de memória.
+[em] Representa um endereço de memória ou valor para um valor constante.
 
 `ppObject`\
-[out] Uma [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa a memória que esse objeto está associado.
+[fora] Um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando a memória à que este objeto está vinculado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

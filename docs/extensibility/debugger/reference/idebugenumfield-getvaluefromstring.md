@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345128"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730266"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-Esse método retorna o valor associado com o nome de uma constante de enumeração.
+Este método retorna o valor associado ao nome de uma constante de enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ int GetValueFromString(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszValue`\
-[in] Uma cadeia de caracteres especificando o nome para o qual obter o valor. Observe que, para C++, isso é uma cadeia de caracteres largos.
+[em] Uma seqüência especificando o nome para qual obter o valor. Note que para C++, esta é uma seqüência de caracteres ampla.
 
 `pValue`\
-[out] Retorna o valor numérico associado.
+[fora] Retorna o valor numérico associado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE`, se o nome não é parte de enumeração ou um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, `S_FALSE`retorna, se o nome não faz parte da enumeração, ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é diferencia maiusculas de minúsculas. Se uma pesquisa diferencia maiusculas de minúsculas (por exemplo, em uma linguagem como Visual Basic em que os nomes não diferenciam maiusculas de minúsculas), use [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
+ Este método é sensível a maiúsculas e minúsculas. Se for necessária uma pesquisa insensível a casos (por exemplo, em um idioma como visual básico, onde os nomes não são sensíveis a maiúsculas e minúsculas), use [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

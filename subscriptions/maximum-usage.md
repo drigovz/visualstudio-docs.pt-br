@@ -4,18 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 03/03/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232265"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808354"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Use o recurso de uso máximo para rastrear o número de assinaturas atribuídas
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 
+
+## <a name="maximum-usage-overview"></a>Visão geral do uso máximo
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>Exibir seu uso máximo
 Para ver o número máximo de assinaturas atribuídas para qualquer nível de assinatura e de contrato:
@@ -38,9 +41,9 @@ Para cada nível de assinatura, o relatório mostra a data em que você atingiu 
 R: As informações na visão geral mostram as atribuições *atuais* e as assinaturas disponíveis para cada nível de assinatura.  Isso pode ser muito diferente do número máximo de assinaturas atribuídas para o contrato durante o ano atual ou a vida útil do contrato.  O recurso de uso máximo permite ver quando os níveis máximos de atribuição foram atingidos e quais eram os níveis.  Essa é uma distinção importante, já que a cobrança de assinaturas durante a adequação ("true-up") é baseada no número máximo de assinaturas atribuídas a qualquer momento ao longo do ano. 
 
 ## <a name="resources"></a>Recursos
-- [Visual Studio licenciamento de papel branco](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Termos de licenciamento de volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)

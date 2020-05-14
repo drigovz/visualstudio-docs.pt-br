@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852176"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586367"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 
 - A comunicação com modelos ajuda a comunicar conceitos importantes menos de forma ambígua do que com linguagem natural. Para obter mais informações, consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md).
 
-- Às vezes, você pode usar modelos para gerar código ou outros artefatos, como esquemas ou documentos de banco de dados. Por exemplo, os componentes de modelagem do [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] são gerados a partir de um modelo.  Para obter mais informações, consulte [gerar e configurar seu aplicativo de modelos](../modeling/generate-and-configure-your-app-from-models.md).
+- Às vezes, você pode usar modelos para gerar código ou outros artefatos, como esquemas ou documentos de banco de dados. Por exemplo, os componentes de modelagem [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] do são gerados a partir de um modelo.  Para obter mais informações, consulte [gerar e configurar seu aplicativo de modelos](../modeling/generate-and-configure-your-app-from-models.md).
 
   Você pode usar modelos em uma ampla variedade de processos, de extrema agilidade a uma cerimônia de alta.
 
@@ -48,7 +48,7 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
  Em ambos os casos, a criação de um modelo quase sempre resulta em uma redução significativa em inconsistências e ambiguidades. Diferentes participantes com frequência têm diferentes entendimentos do mundo de negócios em que o sistema funciona, e diferentes desenvolvedores com frequência têm diferentes entendimentos de como o sistema funciona. O uso de um modelo como o foco de uma discussão geralmente expõe essas diferenças. Para obter mais informações sobre como usar um modelo para reduzir inconsistências, consulte [requisitos de usuário de modelo](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Usar modelos com outros artefatos
- Um modelo não é, por si só, uma especificação de requisitos ou uma arquitetura. É uma ferramenta para expressar alguns aspectos dessas coisas de forma mais clara, mas nem todos os conceitos necessários durante o design de software podem ser expressos. Os modelos devem, portanto, ser usados em conjunto com outros meios de comunicação, como páginas do OneNote ou parágrafos, Microsoft Office documentos, itens de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)]ou notas auto-adesivas no mural da sala do projeto. Além do último item, todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
+ Um modelo não é, por si só, uma especificação de requisitos ou uma arquitetura. É uma ferramenta para expressar alguns aspectos dessas coisas de forma mais clara, mas nem todos os conceitos necessários durante o design de software podem ser expressos. Os modelos devem, portanto, ser usados junto com outros meios de comunicação, como páginas do OneNote ou parágrafos, Microsoft Office documentos, itens [!INCLUDE[esprfound](../includes/esprfound-md.md)]de trabalho ou notas auto-adesivas no mural da sala do projeto. Além do último item, todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
 
  Outros aspectos da especificação que normalmente são usados juntamente com modelos incluem o seguinte. Dependendo da escala e do estilo do seu projeto, você pode usar vários desses aspectos ou não usar nenhum:
 
@@ -86,14 +86,14 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 
 - Próximo ao final de cada iteração, mantenha um workshop de requisitos para definir em detalhes os requisitos ou as histórias de usuários que serão desenvolvidos na próxima iteração. Convide usuários e participantes de negócios que podem decidir sobre prioridades, bem como desenvolvedores e testadores de sistemas. Permita três horas para definir os requisitos para uma iteração de 2 semanas.
 
-- O objetivo do workshop é que todos concordem com o que será realizado no final da próxima iteração. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma pendência de iteração: ou seja, uma lista de tarefas de desenvolvimento em [!INCLUDE[esprfound](../includes/esprfound-md.md)] e conjuntos de testes no [!INCLUDE[TCMext](../includes/tcmext-md.md)].
+- O objetivo do workshop é que todos concordem com o que será realizado no final da próxima iteração. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma pendência de iteração: ou seja, uma lista de tarefas de [!INCLUDE[esprfound](../includes/esprfound-md.md)] desenvolvimento no e pacotes [!INCLUDE[TCMext](../includes/tcmext-md.md)]de teste no.
 
 - No workshop de requisitos, discuta o design apenas insofár, pois você precisa determinar as estimativas para as tarefas de desenvolvimento. Caso contrário, mantenha a discussão sobre o comportamento do sistema que os usuários podem enfrentar diretamente. Mantenha o modelo de requisitos separado do modelo arquitetônico.
 
 - Os participantes não técnicos geralmente não têm problemas para entender os diagramas UML, com algumas diretrizes de você.
 
 #### <a name="link-model-to-work-items"></a>Vincular modelo a itens de trabalho
- Após o workshop de requisitos, elabore os detalhes do modelo de requisitos e vincule o modelo às tarefas de desenvolvimento. Você pode fazer isso vinculando itens de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)] a elementos no modelo. Para saber como fazer isso, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).
+ Após o workshop de requisitos, elabore os detalhes do modelo de requisitos e vincule o modelo às tarefas de desenvolvimento. Você pode fazer isso vinculando itens de trabalho [!INCLUDE[esprfound](../includes/esprfound-md.md)] em elementos no modelo. Para saber como fazer isso, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).
 
  Você pode vincular qualquer elemento a itens de trabalho, mas os elementos mais úteis são os seguintes:
 
@@ -128,14 +128,14 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 |Padrões de design<br /><br /> Convenções e métodos de solução de problemas de design que são usados em todas as partes do design|-Os diagramas de classe UML descrevem as estruturas de um padrão<br />-Os diagramas de sequência ou de atividade mostram as interações e os algoritmos|
 |Análise de código<br /><br /> Vários tipos de diagrama podem ser gerados a partir do código.|-Os diagramas de sequência mostram a interação entre objetos no código.<br />-Os diagramas de camada mostram as dependências entre classes. O código atualizado pode ser validado em um diagrama de camada.<br />-Os diagramas de classe mostram as classes no código.|
 
-## <a name="external-resources"></a>Recursos Externos
+## <a name="external-resources"></a>Recursos externos
 
 |**Categoria**|**Links**|
 |------------------|---------------|
 |**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
-|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Fóruns**|-   [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Orientação de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [criar modelos para o](../modeling/create-models-for-your-app.md) modelo de [requisitos de usuário modelo](../modeling/model-user-requirements.md) de aplicativo [a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) [desenvolver testes de uma estrutura de modelo](../modeling/develop-tests-from-a-model.md) [sua solução de modelagem](../modeling/structure-your-modeling-solution.md)

@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318274"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737255"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera os valores válidos que representam os tipos de informações para levar de uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de objeto e exibir para o usuário.
+Enumera os valores válidos que representam os tipos de informações a serem retiradas de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e exibem para o usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,12 +55,12 @@ Nome do campo.
 Tipo de campo.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: EE.h
+Cabeçalho: Ee.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

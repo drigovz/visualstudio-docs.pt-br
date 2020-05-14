@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851214"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586339"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -42,7 +42,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
 - Instale os [componentes Selenium para testes de IU codificados entre navegadores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-  **O que tem suporte por todos os navegadores da Web?**
+  **O que tem suporte em todos os navegadores da Web?**
 
 - [Adicionar código personalizado para recursos de controle, ](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
 
@@ -80,7 +80,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
    Para obter mais informações sobre a criação e o uso de testes de IU codificados, confira [Criação de testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
-### <a name="enable-debugging"></a>Habilitar a depuração
+### <a name="enable-debugging"></a>Habilitar depuração
  Para habilitar a depuração em seu aplicativo Web, conclua as seguintes opções de configuração:
 
 1. Habilitar Apenas Meu Código:
@@ -95,7 +95,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
     2. Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.
 
-## <a name="generate"></a>*Não vejo a opção de alterar BrowserWindow. CurrentBrowser no teste de interface do usuário codificado.*
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *Não vejo a opção para alterar BrowserWindow.CurrentBrowser no teste de IU codificado.*
  Você pode usar uma versão do [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] que não oferece suporte a testes de IU codificados usando vários navegadores da Web. Para usar tais testes de IU codificados, você precisa usar o Visual Studio Enterprise.
 
  *O que mais eu deveria saber?*
@@ -125,9 +125,9 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
     Para obter mais informações, consulte [Analisando Testes de IU Codificado usando o Logs de Teste de IU Codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="external-resources"></a>Recursos Externos
+## <a name="external-resources"></a>Recursos externos
 
-### <a name="videos"></a>Vídeos
+### <a name="videos"></a>vídeos
  [Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [Criar testes entre navegadores de autor com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -138,18 +138,18 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>{1&gt;Orientação&lt;1}
+### <a name="guidance"></a>Orientação
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://msdn.microsoft.com/library/jj159335.aspx)
+ [Teste para entrega contínua com o Visual Studio 2012 – capítulo 5: automatizando testes do sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Perguntas frequentes
- [Perguntas frequentes sobre testes de IU codificados – 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [Perguntas frequentes sobre testes de IU codificados – 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Perguntas frequentes sobre testes de IU codificados – 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Fórum
  [Teste de automação da interface do usuário do Visual Studio (inclui IU codificada)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Use a automação da interface do usuário para testar suas](../test/use-ui-automation-to-test-your-code.md) [configurações e plataformas com suporte de código para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analisando testes de IU codificados usando logs de teste de IU codificados](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

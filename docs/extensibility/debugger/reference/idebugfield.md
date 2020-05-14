@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80def3f9c3d270ebd6f2217f6ce39f07ef27b119
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337518"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728760"
 ---
 # <a name="idebugfield"></a>IDebugField
-Essa interface representa um campo, ou seja, uma descrição de um tipo ou um símbolo.
+Esta interface representa um campo, ou seja, uma descrição de um símbolo ou tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,31 +28,31 @@ Essa interface representa um campo, ou seja, uma descrição de um tipo ou um s�
 IDebugField : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Um provedor de símbolo implementa essa interface como a classe base para todos os campos.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um provedor de símbolos implementa essa interface como a classe base para todos os campos.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Essa interface é a classe base para todos os campos. Com base no valor de retorno [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), essa interface pode retornar mais especializadas interfaces usando [QueryInterface](/cpp/atl/queryinterface). Além disso, várias interfaces de retorno `IDebugField` objetos de vários métodos.
+ Esta interface é a classe base para todos os campos. Com base no valor de retorno do [GetKind,](../../../extensibility/debugger/reference/idebugfield-getkind.md)esta interface pode retornar interfaces mais especializadas usando [o QueryInterface](/cpp/atl/queryinterface). Além disso, muitas `IDebugField` interfaces retornam objetos de vários métodos.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugField`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugField`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Obtém as informações que pode ser exibidas sobre o símbolo ou um tipo.|
-|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Obtém o tipo de campo.|
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Obtém o tipo de campo.|
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Obtém o contêiner do campo.|
-|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Obtém o endereço do campo.|
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Obtém o tamanho de um campo, em bytes.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Obtém informações exibidas sobre o símbolo ou tipo.|
+|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Fica com o tipo de campo.|
+|[Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Tem o tipo de campo.|
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Pega o recipiente do campo.|
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Pega o endereço do campo.|
+|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Fica do tamanho de um campo, em bytes.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Obtém informações estendidas sobre um campo.|
 |[Igual](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compara dois campos.|
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtém informações de tipo independente sobre o símbolo ou um tipo.|
+|[Gettypeinfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtém informações independentes sobre o símbolo ou tipo.|
 
 ## <a name="remarks"></a>Comentários
- Um tipo é equivalente a uma linguagem C `typedef`.
+ Um tipo é equivalente `typedef`a uma língua C.
 
- No exemplo a seguir language de C++, `weather` é um tipo de classe, e `sunny` e `stormy` são símbolos:
+ No exemplo de linguagem C++, `weather` é `sunny` um `stormy` tipo de classe e são símbolos:
 
 ```cpp
 class weather;
@@ -60,14 +60,14 @@ weather sunny;
 weather stormy;
 ```
 
- Se um campo representa um símbolo ou tipo pode ser determinado chamando [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) e examinando a [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) resultado. Se o `FIELD_KIND_TYPE` bit estiver definido, o campo é um tipo e se o `FIELD_KIND_SYMBOL` bit estiver definido, ele é um símbolo.
+ Se um campo representa um símbolo ou tipo pode ser determinado ligando para [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) e examinando o [resultado FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md) Se `FIELD_KIND_TYPE` a broca estiver definida, o campo `FIELD_KIND_SYMBOL` é um tipo e, se a broca estiver definida, será um símbolo.
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

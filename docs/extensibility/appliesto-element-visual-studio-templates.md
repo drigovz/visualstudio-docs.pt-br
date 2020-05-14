@@ -1,28 +1,28 @@
 ---
-title: Elemento AppliesTo (modelos do Visual Studio) | Microsoft Docs
+title: AplicaElementoDo (Modelos de Estúdio Visual) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33288876d1a9101d96d4d2c0c0c7beb5e6f1ac72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740078"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelos do Visual Studio)
+# <a name="appliesto-element-visual-studio-templates"></a>AplicaElementoDe (modelos do Visual Studio)
 
-Especifica uma expressão opcional para corresponder a um ou mais recursos (consulte <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Recursos são expostos pelos tipos de projeto por meio da hierarquia como uma propriedade [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). Dessa maneira, o modelo pode ser compartilhado por vários tipos de projeto que têm recursos aplicáveis comuns.
+Especifica uma expressão opcional para corresponder a <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>um ou mais recursos (ver ). Os recursos são expostos por tipos de projeto através da hierarquia como uma [propriedade __VSHPROPID5. VSHPROPID_ProjectCapabilities.](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>) Dessa maneira, o modelo pode ser compartilhado por vários tipos de projeto que têm recursos aplicáveis comuns.
 
 Esse elemento é opcional. Pode haver um máximo de uma instância em um arquivo de modelo. Esse elemento permite que apenas um modelo de item seja aceito como aplicável, com base nos recursos do projeto ativo atualmente selecionado. Ele não pode ser usado para tornar um modelo de item não aplicável. Se `AppliesTo` estiver ausente ou a expressão não for aceita com sucesso, `TemplateID` ou `TemplateGroupID` serão usados para tornar o modelo aplicável, como nas versões anteriores do produto.
 
-Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta, consulte [referenciar assemblies entregues no Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
+Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência à versão correta, consulte [os conjuntos de referência entregues no Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
 
 ```xml
 <VSTemplate>
@@ -42,11 +42,11 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-nenhuma.
+Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
-nenhuma.
+Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -60,11 +60,11 @@ Um valor de texto é obrigatório. Esse texto especifica os recursos do projeto.
 
 A sintaxe da expressão válida é definida como:
 
-- A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- A expressão de capacidade, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
-- O "&#124;" é o operador OR.
+- O "&#124;" é o operador de OR.
 
-- O "&" e "+" caracteres são operadores AND.
+- Os caracteres "&" e "+" são ambos operadores e operadores.
 
 - O caractere "!" é o operador NOT.
 
@@ -72,11 +72,11 @@ A sintaxe da expressão válida é definida como:
 
 - Uma expressão nula ou vazia é avaliada como uma correspondência.
 
-- Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Os recursos do projeto podem ser qualquer personagem, exceto esses\\caracteres reservados: "'';;,+-*/ !~&#124;&%$@^(]<>?{} \t\b\n\r
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra três modelos diferentes. `Template1` aplica-se a todos os tipos de projeto do C# ou a qualquer outro tipo de projeto que ofereça suporte ao recurso `WindowsAppContainer`. `Template2` aplica-se a todos os projetos do C# de qualquer tipo. `Template3` aplica-se aos projetos do C# que não são projetos `WindowsAppContainer`.
+O exemplo a seguir mostra três modelos diferentes. `Template1`aplica-se a todos os tipos de projeto C# `WindowsAppContainer` ou a qualquer outro tipo de projeto que suporte o recurso. `Template2`aplica-se a todos os projetos C# de qualquer tipo. `Template3`aplica-se a projetos C# que não `WindowsAppContainer` são projetos.
 
 ```xml
 <!--  Template 1 -->
@@ -104,7 +104,7 @@ O exemplo a seguir mostra três modelos diferentes. `Template1` aplica-se a todo
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

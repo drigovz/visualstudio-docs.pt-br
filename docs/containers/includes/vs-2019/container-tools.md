@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80501910"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389990"
 ---
 Com o Visual Studio, você pode facilmente construir, depurar e executar aplicativos .NET, ASP.NET e ASP.NET Core e publicá-los no Azure Container Registry (ACR), Docker Hub, Azure App Service ou no seu próprio registro de contêineres. Neste artigo, publicaremos um aplicativo ASP.NET Core para a ACR.
 
@@ -21,7 +21,7 @@ Com o Visual Studio, você pode facilmente construir, depurar e executar aplicat
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
 * [.NET Core Development Tools](https://dotnet.microsoft.com/download/dotnet-core/) para desenvolvimento com .NET Core
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para um teste gratuito](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para um teste gratuito](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Instalação e configuração
 
@@ -112,7 +112,7 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]
 
-1. Clique **em Criar**
+1. Clique em **Criar**
 
    ![Captura de tela mostrando a publicação bem-sucedida](../../media/container-tools/publish-succeeded.png)
 

@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255b3de916215759615384dce26c5affbc07a995
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 95a00fe4b87a0a9e1ee55497b84c59536d66d285
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569096"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649443"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Caneta no Blend para Visual Studio
 
-A tabela a seguir lista os atalhos que você pode usar para modificar um demarcador durante sua criação com a ferramenta **Caneta** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.
+A tabela a seguir lista os atalhos que você pode usar para modificar um demarcador durante sua criação com a ferramenta **Caneta**![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.
 
 |Para realizar esta ação|Faça isto|Ponteiro|
 | - |-------------|-------------|
@@ -26,7 +26,7 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um demarca
 |Criar um ponto para iniciar um segmento em linha curva|Clique para criar o novo ponto, e então, arraste para ajustar as alças de tangentes antes de soltar o botão do mouse|![Criar um ponto para iniciar um segmento em linha curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Ponteiro de caneta|
 |Ajustar a última tangente sem a restrição suave, permitindo que você faça uma curva fechada|Clique para criar o ponto e, em seguida, pressione **Alt** antes de liberar o botão do mouse|![Ajustar a última tangente sem a restrição suave](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|
 |Dividir a última tangente de modo que os pontos finais da tangente operem de forma independente, permitindo que você faça uma curva fechada|Clique para criar o ponto e, em seguida, mantenha a tecla **Alt** pressionada e arraste o ponto antes de liberar o botão do mouse|![Dividir a última tangente de modo que os pontos de extremidade de tangente operem de forma independente](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|
-|Mover o ponto final da tangente em torno do novo ponto em incrementos de 15 graus|Clique para criar o ponto e, em seguida, mantenha as teclas **Shift**+**Alt** pressionadas e arraste o ponto antes de liberar o botão do mouse|![Mover o ponto final da tangente em torno do novo ponto em incrementos de 15 graus](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|
+|Mover o ponto final da tangente em torno do novo ponto em incrementos de 15 graus|Clique para criar o novo ponto e, em seguida, segure **Shift**+**Alt** e arraste antes de soltar o botão do mouse|![Mover o ponto final da tangente em torno do novo ponto em incrementos de 15 graus](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|
 |Reduzir a tangente em um ponto final para comprimento zero|Clique no ponto final|![Reduzir a tangente em um ponto final para comprimento zero](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|
 |Adicionar um novo ponto a um caminho existente|Clique no caminho no local onde você deseja o novo ponto|![Adicionar um novo ponto a um caminho existente](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Ponteiro de inserção da caneta|
 |Remover um ponto de um caminho|Passe o mouse sobre um ponto existente e clique|![Remover um ponto do caminho](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Caneta ponteiro de exclusão|
@@ -36,8 +36,8 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um demarca
 |Criar uma curva suave ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta**, clique em um ponto final de um dos demarcadores e arraste um ponto final do outro demarcador|![Criar uma curva suave ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
 |Criar um novo demarcador|Mantenha a tecla **Ctrl** pressionada e clique fora do demarcador anterior para parar de adicionar pontos ao demarcador anterior. Em seguida, clique no local ou arraste o ponto para o local em que deseja que o novo demarcador comece|![Criar um novo demarcador](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Caneta ponteiro de inicialização|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Teclas modificadoras da prancheta](../designers/artboard-modifier-keys-in-blend.md)
+- [Teclas modificadoras da prancheta](artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras da ferramenta Seleção Direta](direct-selection-tool-modifier-keys-in-blend.md)
-- [Desenhar formas e demarcadores](draw-shapes-and-paths.md)
+- [Desenhar formas e caminhos](draw-shapes-and-paths.md)

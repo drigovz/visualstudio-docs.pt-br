@@ -6,23 +6,23 @@ helpviewer_keywords:
 - HasBaseIndices
 - IDebugArrayObject2::HasBaseIndices
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75c29c5bf4dd3c809a219fe009266999ada39ddf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 48250b3328310c3f1cb1c84c8fe1a9c61c534cad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349706"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736135"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Determina se a matriz tem base índices (limites inferiores) definidos.
+Determina se a matriz tem índices base (limites inferiores) definidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,9 +38,9 @@ int HasBaseIndices (
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pfHasBaseIndices`\
-[out] TRUE para especificar que a matriz tem índices de base (limites inferiores); Caso contrário, FALSE.
+[fora] TRUE para especificar que a matriz tem índices base (limites inferiores); caso contrário, FALSE.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.

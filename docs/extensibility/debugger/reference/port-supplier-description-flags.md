@@ -5,22 +5,22 @@ ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309480"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713991"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
 Define os metadados que podem ser recuperados sobre um fornecedor de porta.
 
@@ -44,11 +44,11 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Campos
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-Se selecionado, o ícone de aviso será exibido na interface do usuário.
+Se selecionado, o ícone de aviso será exibido na ui.
 
 ## <a name="remarks"></a>Comentários
 
-Essa enumeração é retornada pela [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) método.
+Esta enumeração é devolvida pelo método [GetDescription.](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Cabeçalho: Msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

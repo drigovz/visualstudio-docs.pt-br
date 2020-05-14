@@ -5,48 +5,48 @@ ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be901dcb4692fa556008199aeea250c9427b3167
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332526"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739197"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Pontos de interrupção (SDK do Visual Studio)
-Há três tipos de pontos de interrupção: pendente, associação e o erro.
+Existem três tipos de pontos de interrupção: pendente, vinculado e erro.
 
- **Um ponto de interrupção:**
+ **Um ponto de ruptura pendente:**
 
-- É uma abstração que contém todas as informações necessárias para associar um ponto de interrupção para um ou mais contextos de código em um ou mais programas. Cada vez que um programa que está sendo depurado causa o código para carregar, o mecanismo de depuração verifica todos os pontos de interrupção pendentes para ver se elas podem ser associadas.
+- É uma abstração que contém todas as informações necessárias para vincular um ponto de ruptura a um ou mais contextos de código em um ou mais programas. Cada vez que um programa sendo depurado causa código para carregar, o mecanismo de depuração verifica todos os pontos de interrupção pendentes para ver se eles podem ser vinculados.
 
-   Um ponto de interrupção pendente em si nunca se associa ao código, mas em vez disso, coleta e deve conter todos os acoplado pontos de interrupção que ele gera.
+   Um ponto de interrupção pendente em si nunca se liga ao código, mas sim coleta e é dito para conter todos os pontos de interrupção vinculados que ele gera.
 
-- É representado por um [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.
+- É representado por uma interface [IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
-  **Um ponto de interrupção associado:**
+  **Um ponto de ruptura vinculado:**
 
-- É uma abstração para um ponto de interrupção associada com ou associada a um contexto de código único. Cada ponto de interrupção associado é gerado em resposta a um ponto de interrupção pendente. Um ponto de interrupção pendente pode, no entanto, gerar mais de um ponto de interrupção associado.
+- É uma abstração para um ponto de ruptura associado ou vinculado a um único contexto de código. Cada ponto de ruptura vinculado é gerado em resposta a um ponto de ruptura pendente. Um ponto de ruptura pendente pode, no entanto, gerar mais de um ponto de ruptura vinculado.
 
-   Quando o código é descarregado, um ponto de interrupção associado pode ser desacoplado e descartado.
+   Quando o código é descarregado, um ponto de ruptura vinculado pode ser desvinculado e descartado.
 
-- É representado por um [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+- É representado por uma interface [IDebugBoundBreakpoint2.](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
-  **Um ponto de interrupção de erro:**
+  **Um ponto de quebra de erro:**
 
-- É uma abstração para descrever um erro ao tentar associar um ponto de interrupção pendente para um contexto de código. Um ponto de interrupção de erro descreve um erro no local ou na expressão de ponto de interrupção em si. Para obter mais informações, consulte [associar pontos de interrupção](../../extensibility/debugger/binding-breakpoints.md).
+- É uma abstração para descrever um erro na tentativa de vincular um ponto de ruptura pendente a um contexto de código. Um ponto de ruptura de erro descreve um erro de localização ou na própria expressão de ponto de ruptura. Para obter mais informações, consulte [Pontos de interrupção de Vinculação](../../extensibility/debugger/binding-breakpoints.md).
 
-   O erro de ponto de interrupção pode ser um erro ou um aviso.
+   O erro de ponto de partida pode ser um erro ou um aviso.
 
-- É representado por um [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interface.
+- É representado por uma interface [IDebugErrorBreakpoint2.](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Programas](../../extensibility/debugger/programs.md)
-- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md)
 - [Contexto de código](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

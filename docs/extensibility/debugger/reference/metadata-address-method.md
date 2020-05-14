@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347357"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714449"
 ---
-# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
-Essa estrutura representa o endereço de um método de uma classe.
+# <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
+Esta estrutura representa o endereço de um método de uma classe.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,27 +45,27 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>Membros
  `tokMethod`\
- A ID do método.
+ A id do método.
 
- [C++] `_mdToken` é um `typedef` de 32 bits `int`.
+ [C++] `_mdToken` é `typedef` um para um `int`de 32 bits .
 
  `dwOffset`\
- O deslocamento desde o início da classe para esse método (pode representar o deslocamento em vtable).
+ O deslocamento da classe começa para este método (pode representar o deslocamento para a tabela).
 
  `dwVersion`\
- A versão do método (esse valor é exclusivo para o provedor de símbolos).
+ A versão do método (este valor é exclusivo do provedor símbolo).
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_METHOD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).
+ Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_METHOD` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

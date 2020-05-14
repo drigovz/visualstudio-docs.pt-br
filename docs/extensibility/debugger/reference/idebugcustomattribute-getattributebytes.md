@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315192"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732804"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Obtém as informações de atributo como um blob de bytes.
+Obtém a informação do atributo como uma bolha de bytes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,20 +41,20 @@ int GetAttributeBytes(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppBlob`\
-[no, out] Uma matriz que é preenchida com os bytes de atributo.
+[dentro, fora] Uma matriz que é preenchida com os bytes de atributo.
 
 `pdwLen`\
-[no, out] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes realmente gravados na matriz.
+[dentro, fora] Especifica o número máximo de bytes `ppBlob` para retornar na matriz e retorna o número de bytes realmente gravados na matriz.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Defina o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz em para o `ppBlob` parâmetro.
+ Defina `ppBlob` o parâmetro como um valor nulo para retornar o número de atributos bytes disponíveis. Em seguida, aloque uma `ppBlob` matriz e passe essa matriz para o parâmetro.
 
  Os bytes de atributo representam os dados brutos do atributo personalizado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

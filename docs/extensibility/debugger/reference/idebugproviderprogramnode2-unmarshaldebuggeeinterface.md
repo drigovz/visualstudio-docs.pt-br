@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
+title: IDebugProviderProgramNode2:DemarshalDebuggeeInterface | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30163fe2dad42f42dd635eddcc2afdf3e1acaf0a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c0f6e66b6585eafde656cd7be88d0c76bbb3f37
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350039"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720709"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Obtém uma interface especificada nos limites do processo.
+Obtém uma interface especificada entre os limites do processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int UnmarshalDebuggeeInterface(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `riid`\
-[in] GUID da interface para obter.
+[em] GUID da interface para obter.
 
 `ppvObject`\
-[out] Retorna o objeto que implementa a interface desejada. [C++] isso pode ser convertido diretamente para o tipo de interface desejado. [C#] use o <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> o método para obter a interface desejada.
+[fora] Retorna o objeto que implementa a interface desejada. [C++] isso pode ser lançado diretamente para o tipo de interface desejado. [C#] use <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> o método para obter a interface desejada.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é usado quando o mecanismo de depuração estiver em execução [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] espaço de processo e o programa que está sendo depurado está em execução em seu próprio espaço de processo.
+ Este método é usado quando o motor [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] de depuração está funcionando no espaço de processo e o programa que está sendo depurado está sendo executado em seu próprio espaço de processo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

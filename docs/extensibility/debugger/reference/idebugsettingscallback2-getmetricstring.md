@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 119fa1ac0f90cd6ebef22633130a3683c039a204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719968"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Recupera a cadeia de caracteres do valor da métrica dada seu nome.
+Recupera a seqüência de valor da métrica dada ao seu nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ private int GetMetricString(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszType`\
-[in] Tipo de métrica.
+[em] Tipo da métrica.
 
 `guidSection`\
-[in] Identificador exclusivo da seção.
+[em] Identificador único da seção.
 
 `pszMetric`\
-[in] Nome da métrica.
+[em] Nome da métrica.
 
 `pbstrValue`\
-[out] Retorna a cadeia de caracteres do valor da métrica.
+[fora] Retorna a seqüência de valor da métrica.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

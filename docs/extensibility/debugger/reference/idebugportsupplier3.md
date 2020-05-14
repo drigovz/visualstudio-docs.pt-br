@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b471e0799409e68b5a843e39975f54f2ce3b5bc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724440"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-Essa interface permite que um chamador determinar se um fornecedor de porta pode preservar as portas (gravá-los em disco) entre as invocações do depurador e, em seguida, obter uma lista dessas portas preservado.
+Essa interface permite que um chamador determine se um fornecedor de portas pode preservar portas (escrevendo-as em disco) entre invocações do depurador e, em seguida, obter uma lista dessas portas preservadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,32 +28,32 @@ Essa interface permite que um chamador determinar se um fornecedor de porta pode
 IDebugPortSupplier3 : IDebugPortSupplier2
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Um fornecedor de porta personalizada implementa essa interface para dar suporte a persistir ou salvar informações de porta para o disco. Esta interface deve ser implementada no mesmo objeto como o [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um fornecedor de porta personalizado implementa essa interface para suportar a persistência ou salvar informações da porta em disco. Esta interface deve ser implementada no mesmo objeto que a interface [IDebugPortSupplier2.](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chame [QueryInterface](/cpp/atl/queryinterface) sobre o `IDebugPortSupplier2` interface para obter essa interface.
+ Ligue para a `IDebugPortSupplier2` [QueryInterface](/cpp/atl/queryinterface) na interface para obter esta interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos herdados do [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface, essa interface dá suporte para o seguinte:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+ Além dos métodos herdados da interface [IDebugPortSupplier2,](../../../extensibility/debugger/reference/idebugportsupplier2.md) esta interface suporta o seguinte:
 
 |Método|Descrição|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retorna se o fornecedor de porta pode persistir portas (gravando-os em disco) entre as invocações do depurador.|
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retorna um objeto que pode ser usado para enumerar todas as portas que foram gravados no disco por esse fornecedor de porta.|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retorna se o fornecedor de portas pode persistir portas (escrevendo-as em disco) entre invocações do depurador.|
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retorna um objeto que pode ser usado para enumerar todas as portas que foram escritas em disco por este fornecedor de portas.|
 
 ## <a name="remarks"></a>Comentários
- Se um fornecedor de porta pode persistir as portas entre invocações, ele deve implementar essa interface. As portas devem ser carregadas quando o fornecedor de porta é instanciado e gravado em disco quando o fornecedor de porta é destruído.
+ Se um fornecedor de portas pode persistir portas através de invocações, ele deve implementar esta interface. As portas devem ser carregadas quando o fornecedor da porta estiver instanciado e gravado em disco quando o fornecedor da porta for destruído.
 
- Normalmente, um mecanismo de depuração não interage com um fornecedor de porta e não terá nenhum uso para essa interface.
+ Um mecanismo de depuração normalmente não interage com um fornecedor de porta e não terá uso para esta interface.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ed7abc9682d0a9f56c50fe7510ed3f276a6bf5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315202"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732764"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Obtém o nome do atributo personalizado.
@@ -39,15 +39,15 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `bstrName`\
-[out] Retorna uma cadeia de caracteres que contém o nome do atributo personalizado.
+[fora] Retorna uma seqüência contendo o nome do atributo personalizado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Nomeado retornado por esse método corresponde ao nome da classe usada para declarar o atributo. Não exatamente, isso pode corresponder ao nome da classe de atributo personalizado em si como o c# permite que o sufixo "Attribute" a ser removido de um nome de atributo personalizado quando ele é usado em uma declaração.
+ O nome retornado por este método corresponde ao nome da classe usada para declarar o atributo. Isso pode não corresponder exatamente ao nome da classe de atributo personalizado em si, pois c# permite que o sufixo "Atributo" seja descartado de um nome de atributo personalizado quando ele é usado em uma declaração.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

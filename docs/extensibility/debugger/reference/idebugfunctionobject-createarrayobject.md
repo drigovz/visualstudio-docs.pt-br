@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8d5f6ea8b33605c51fa88464b091ccd3714730d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728609"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-Cria um objeto de matriz. Esta matriz pode conter qualquer um dos primitivos ou valores de instância do objeto.
+Cria um objeto de matriz. Esta matriz pode conter valores primitivos ou de instância de objeto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,30 +49,30 @@ int CreateArrayObject(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ot`\
-[in] Especifica um valor a partir de [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeração que indica o tipo do novo objeto de matriz.
+[em] Especifica um valor da enumeração [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) indicando o tipo do novo objeto de matriz.
 
 `pClassField`\
-[in] Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa a classe de um objeto, se os valores de instância de criação de uma matriz de objetos. Se criar uma matriz de objetos primitivos, este parâmetro é um valor nulo.
+[em] Um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) representando a classe de um objeto, se criar uma matriz de valores de instância de objeto. Se criar uma matriz de objetos primitivos, este parâmetro é um valor nulo.
 
 `dwRank`\
-[in] A classificação ou o número de dimensões da matriz.
+[em] A classificação ou número de dimensões da matriz.
 
 `dwDims`\
-[in] Os tamanhos de cada dimensão da matriz.
+[em] Os tamanhos de cada dimensão da matriz.
 
 `dwLowBounds`\
-[in] A origem de cada dimensão (geralmente 0 ou 1).
+[em] A origem de cada dimensão (tipicamente 0 ou 1).
 
 `ppObject`\
-[out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa a matriz criada recentemente. Isso é, na verdade, uma [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) objeto.
+[fora] Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando a matriz recém-criada. Este é, na verdade, um objeto [IDebugArrayObject.](../../../extensibility/debugger/reference/idebugarrayobject.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame esse método para criar um objeto que representa um parâmetro de matriz para a função que é representada pela [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.
+ Chame este método para criar um objeto que represente um parâmetro de matriz para a função que é representada pela interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

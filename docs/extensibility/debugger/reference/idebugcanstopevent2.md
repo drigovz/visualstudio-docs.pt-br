@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab364b426005c838072fabc1a3c7ed2f7d64ac6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337338"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734517"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Essa interface é usada para o Gerenciador de sessão de depuração (SDM) de perguntar se deseja interromper no local atual do código.
+Esta interface é usada para perguntar ao Gerenciador de depuração de sessão (SDM) se deve parar no local de código atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,34 +28,34 @@ Essa interface é usada para o Gerenciador de sessão de depuração (SDM) de pe
 IDebugCanStopEvent2 : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O mecanismo de depuração (DES) implementa essa interface para dar suporte a percorrer o código-fonte. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](/cpp/atl/queryinterface) para acessar o `IDebugEvent2` interface).
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O mecanismo de depuração (DE) implementa essa interface para suportar a passagem através do código-fonte. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface (o SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface).
 
- A implementação dessa interface deve se comunicar a chamada do SDM [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para o mecanismo de depuração. Por exemplo, isso pode ser feito com uma mensagem publicada em um thread de manipulação de mensagens do mecanismo de depuração ou o objeto que implementa essa interface pode conter uma referência para o mecanismo de depuração e retornou a chamada para o mecanismo de depuração com o sinalizador passado para `IDebugCanStopEvent2::CanStop`.
+ A implementação desta interface deve comunicar a chamada do SDM do [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para o mecanismo de depuração. Por exemplo, isso pode ser feito com uma mensagem postada no segmento de manuseio de mensagens do mecanismo de depuração ou o objeto que `IDebugCanStopEvent2::CanStop`implementa esta interface pode conter uma referência ao mecanismo de depuração e chamar de volta para o mecanismo de depuração com o sinalizador passado para .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE pode enviar esse método sempre que o DE é solicitado a continuar a execução e o DE está percorrendo o código. Esse evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O DE pode enviar este método cada vez que o DE é solicitado a continuar a execução e o DE está pisando através do código. Este evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugCanStopEvent2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugCanStopEvent2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Obtém o motivo para esse evento.|
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Especifica se o programa que está sendo depurado deve parar no local do evento (e enviar um evento que descreve o motivo para interrupção) ou simplesmente continuar a execução.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtém o contexto do documento que descreve o local desse evento.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtém o contexto de código que descreve o local desse evento.|
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Fica a razão para este evento.|
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Especifica se o programa que está sendo depurado deve parar no local deste evento (e enviar um evento que descreve o motivo da parada) ou apenas continuar a execução.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtém o contexto do documento que descreve a localização deste evento.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtém o contexto de código que descreve a localização deste evento.|
 
 ## <a name="remarks"></a>Comentários
- O DE envia essa interface se as etapas de usuário em uma função e o DE não encontrar nenhuma informação de depuração ou informações de depuração existem, mas a DE não sabe se o código-fonte pode ser exibido para esse local.
+ O DE envia essa interface se o usuário entrar em uma função e o DE não encontrar informações de depuração lá ou depurar informações, mas o DE não sabe se o código-fonte pode ser exibido para esse local.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

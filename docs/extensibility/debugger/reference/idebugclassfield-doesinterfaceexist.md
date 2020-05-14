@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57bf8d0af54773b03fd23994b83fe6d2fac1306c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337238"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734502"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Determina se uma interface específica é definida na classe.
@@ -39,15 +39,15 @@ int DoesInterfaceExist(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszInterfaceName`\
-[in] Uma cadeia de caracteres que contém o nome da interface a ser procurado.
+[em] Uma seqüência contendo o nome da interface para procurar.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, Retorna S_OK, retorna S_FALSE se a interface não existir; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retorna S_OK, retorna S_FALSE se a interface não existir; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Em vigor, esse método obtém uma enumeração de todas as interfaces e pesquisa a lista para uma interface correspondente.
+ Este método em vigor obtém uma enumeração de todas as interfaces e pesquisa a lista para obter uma interface correspondente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

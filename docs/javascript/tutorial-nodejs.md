@@ -1,7 +1,7 @@
 ---
 title: Criar um aplicativo Node.js e Express
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235074"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744893"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -56,7 +56,7 @@ npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes fac
 
 ### <a name="what-is-express"></a>O que é o Express?
 
-O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Express permite que você use e escolha diferentes estruturas front-end para criar uma interface do usuário, como o Pug (anteriormente chamado de Jade). O Pug é usado neste tutorial.
+O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Expresso permite que você escolha diferentes frameworks front-end para criar uma ui, como pug (anteriormente chamada jade). O Pug é usado neste tutorial.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -109,13 +109,13 @@ Neste tutorial, você começará com um projeto simples que contém o código pa
 
     (3) O nó do npm mostra os pacotes npm instalados. Clique com o botão direito do mouse no nó do npm para pesquisar e instalar pacotes npm usando uma caixa de diálogo ou instalar e atualizar pacotes usando as configurações de *package.json* e as opções de clique com o botão direito do mouse no nó do npm.
 
-    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações sobre esse arquivo, confira [Configuração de package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente. Para obter mais informações, consulte [Gerenciar pacotes npm](../javascript/npm-package-management.md).
 
     (5) Os arquivos de projeto como *app.js* são mostrados no nó do projeto. *app.js* é o arquivo de inicialização do projeto e é por isso que ele é exibido em **negrito**. Defina o arquivo de inicialização clicando com o botão direito do mouse em um arquivo no projeto e selecionando **Definir como arquivo de inicialização do Node.js**.
 
 1. Abra o nó **npm** e certifique-se de que todos os pacotes de npm necessários estejam presentes.
 
-    Se um pacote estiver ausente (ícone de ponto de exclamação), clique com o botão direito do mouse no nó **npm** e escolha **Instalar Pacotes npm Ausentes**.
+    Se algum pacote estiver faltando (ícone de ponto de exclamação), clique com o botão direito do mouse no nó **npm** e escolha **Instalar pacotes npm**.
 
 ## <a name="add-some-code"></a>Adicionar código
 
@@ -194,7 +194,7 @@ O IntelliSense é uma ferramenta do Visual Studio que ajuda você na codificaç�
 
     A última linha desta mensagem informa que o interpretador de JavaScript esperava uma vírgula (`,`).
 
-1. No painel inferior, clique na guia **Lista de Erros**.
+1. No painel inferior, clique na guia **Lista de erros** e selecione Build + **IntelliSense** para o tipo de problemas relatados.
 
     Você verá o aviso e a descrição juntamente com o nome de arquivo e número de linha.
 
@@ -218,7 +218,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
-1. Selecione o destino de depuração na barra de ferramentas Depurar, como Microsoft Edge ou Chrome.
+1. Selecione o destino de depuração na barra de ferramentas Debug, como **o Web Server (Google Chrome)** ou **o Web Server (Microsoft Edge).**
 
     ::: moniker range=">=vs-2019"
     ![Selecionar o destino de depuração](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fb0e8c4ae8b2b4371234e9cf09d9c21727dfdf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350191"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718083"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
-Esse método altera o objeto que representa o visualizador.
+Este método altera o objeto que o visualizador representa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ int SetObjectForVisualizer(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pNewObject`\
-[in] O objeto a ser definido.
+[em] O objeto a definir.
 
 `error`\
-[out] Se houver um erro ao configurar o objeto, essa cadeia de caracteres contém a mensagem de erro.
+[fora] Se houve um erro na configuração do objeto, esta seqüência segura a mensagem de erro.
 
 `pException`\
-[out] Se houver um erro, esse objeto contém as informações de exceção.
+[fora] Se houve um erro, este objeto contém as informações de exceção.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Cabe ao implementador para determinar como as informações de erro são retornadas. No entanto, é possível que alguns os chamadores podem ser somente olhada para ver se um objeto de exceção foi retornado, sabemos que existe foi um erro, portanto, esse método sempre deve retornar um objeto de exceção se ocorreu um erro. A cadeia de caracteres de erro também deve ser fornecida, caso o chamador deseja tornar usá-lo.
+ Cabe ao implementador determinar como as informações de erro são devolvidas. No entanto, é possível que alguns chamadores só possam olhar para ver se um objeto de exceção foi devolvido para saber que houve um erro, então este método deve sempre retornar um objeto de exceção se houve um erro. A seqüência de erro também deve ser fornecida no caso de o chamador querer usá-la.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

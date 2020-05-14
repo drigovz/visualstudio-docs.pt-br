@@ -1,40 +1,40 @@
 ---
-title: Criar uma extensão com uma janela de ferramentas | Microsoft Docs
+title: Criando uma extensão com uma janela de ferramentas | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a38c9912be87c94c79076675b5db25663fb5f0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17f72cf130c5ff0f2d6d03ca8c460aa98ea39111
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345442"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739545"
 ---
-# <a name="create-an-extension-with-a-tool-window"></a>Criar uma extensão com uma janela de ferramentas
+# <a name="create-an-extension-with-a-tool-window"></a>Crie uma extensão com uma janela de ferramenta
 
-Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **janela de ferramenta personalizada** modelo de item para criar uma extensão com uma janela de ferramentas.
+Neste procedimento, você aprende a usar o modelo de projeto VSIX e o modelo de item **custom tool window** para criar uma extensão com uma janela de ferramenta.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir do Visual Studio 2015, você não instala o Visual Studio SDK a partir do centro de downloads. Ele está incluído como um recurso opcional na configuração do Visual Studio. Você também pode instalar o VS SDK mais tarde. Para obter mais informações, consulte [Instalar o Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="create-a-tool-window"></a>Criar uma janela de ferramentas
+### <a name="create-a-tool-window"></a>Criar uma janela de ferramenta
 
-1. Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
+1. Crie um projeto VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **Projeto Novo** procurando por "vsix".
 
-2. Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **MyWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#**  > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta *MyWindow.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de janela de ferramenta chamado **MyWindow**. No **Solution Explorer,** clique com o botão direito do mouse no nó do projeto e **selecione Adicionar** > **novo item**. Na **caixa de diálogo Adicionar novo item,** vá para A**Extensibilidade** **Visual C#** > e selecione **Janela de ferramenta personalizada**. No **campo Nome,** na parte inferior da janela, altere o nome do arquivo da janela da ferramenta para *MyWindow.cs*.
 
 3. Compile o projeto e comece a depuração.
 
-   A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância experimental](../extensibility/the-experimental-instance.md).
+   A instância experimental do Visual Studio aparece. Para obter mais informações sobre a instância experimental, consulte [A instância experimental](../extensibility/the-experimental-instance.md).
 
-4. Na instância experimental, vá para **modo de exibição** > **Other Windows**.
+4. Na instância experimental, vá para **Exibir** > **outros Windows**.
 
-   Você deve ver um item de menu **MyWindow**. Clique nele.
+   Você deve ver um item de menu para **MyWindow**. Clique.
 
-   Você deverá ver uma janela de ferramenta com o título **MyWindow** e uma fala botão **Click Me!.**
+   Você deve ver uma janela de ferramenta com o título **MyWindow** e um botão dizendo **Clique em Mim!.**

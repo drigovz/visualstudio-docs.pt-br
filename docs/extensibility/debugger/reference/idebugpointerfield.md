@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6939296fa2bfa59aad1824529f8b708a4cd5cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308853"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725601"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
-Essa interface representa um tipo de ponteiro.
+Esta interface representa um tipo de ponteiro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,30 +28,30 @@ Essa interface representa um tipo de ponteiro.
 IDebugPointerField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O provedor de símbolo implementa essa interface para representar um ponteiro.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O provedor de símbolos implementa essa interface para representar um ponteiro.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_POINTER`.
+ Use [queryInterface](/cpp/atl/queryinterface) para obter esta interface a partir da `FIELD_TYPE_POINTER`interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se [getKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retornar .
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos na `IDebugField` e `IDebugContainerField` interfaces, essa interface implementa o método a seguir:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+ Além dos métodos e `IDebugField` `IDebugContainerField` interfaces, esta interface implementa o seguinte método:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) descrevendo a meta do ponteiro.|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) descrevendo o alvo do ponteiro.|
 
 ## <a name="remarks"></a>Comentários
- Em C/C++, um ponteiro pode ser um contêiner se ele for usado com a notação de matriz. Por exemplo, dada `char *pString`, `pString` tem um tipo de ponteiro para `char`. `pString[3]` tem o tipo de um contêiner que é um ponteiro para `char` que referencia o quarto elemento do contêiner.
+ Em C/C++, um ponteiro pode ser um recipiente se for usado com notação de matriz. Por exemplo, `char *pString` `pString` dado, tem `char`um tipo de ponteiro para . `pString[3]`tem o tipo de recipiente que `char` é um ponteiro para que faz referência ao quarto elemento desse recipiente.
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

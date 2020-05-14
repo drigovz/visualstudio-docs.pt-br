@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28b99041fd5b3804719430960b70aa347f07ddd3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350463"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737713"
 ---
-# <a name="bstrarray"></a>BSTR_ARRAY
-Uma estrutura que descreve uma matriz de cadeias de caracteres.
+# <a name="bstr_array"></a>BSTR_ARRAY
+Uma estrutura que descreve uma matriz de cordas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>Membros
 `dwCount`\
-Número de cadeias de caracteres em `Members` matriz.
+Número de strings na `Members` matriz.
 
 `Members`\
-Matriz de cadeias de caracteres.
+Matriz de cordas.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é retornada a partir de [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.
+Esta estrutura é devolvida a partir do método [EnumPersistedPorts.](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
 
- [C++ somente] Cada cadeia de caracteres individual deve ser liberada usando `SysFreeString`e o `Members` matriz deve ser liberada com `CoTaskMemFree`.
+ [Somente C++] Cada seqüência individual `SysFreeString`deve `Members` ser liberada usando `CoTaskMemFree`, e a matriz deve ser liberada com .
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

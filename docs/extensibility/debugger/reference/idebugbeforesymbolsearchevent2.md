@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e71b6059f19840311075261940942010f2e99e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d6f3f78e165ba2f4453131b7b459e3061243ff6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349554"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736118"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
-O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) para definir o status de mensagem da barra durante cargas de símbolo.
+O mecanismo de depuração (DE) envia essa interface para o Gerenciador de depuração de sessão (SDM) para definir a mensagem da barra de status durante as cargas de símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,22 +26,22 @@ O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sess
 IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface quando ele deve definir a mensagem da barra de status durante cargas de símbolo. Essa interface é implementada somente por mecanismos de depuração que funcionam com ou fazem parte de interpretadores do script. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM **QueryInterface** para acessar o **IDebugEvent2** interface).
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa essa interface quando deve definir a mensagem da barra de status durante as cargas do símbolo. Esta interface é implementada apenas por mecanismos de depuração que trabalham com ou fazem parte de intérpretes de script. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto desta interface (o SDM usa **queryInterface** para acessar a interface **IDebugEvent2).**
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia esse objeto de evento quando ele deve definir a mensagem da barra de status durante cargas de símbolo. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada fornecida pelo SDM quando anexado a programa que está sendo depurado.
+ O DE cria e envia esse objeto de evento quando ele deve definir a mensagem da barra de status durante as cargas do símbolo. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir mostra os métodos de `IDebugBeforeSymbolSearchEvent2`.
+ A tabela a seguir `IDebugBeforeSymbolSearchEvent2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Recupera o nome do módulo que está sendo depurado no momento.|
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Recupera o nome do módulo atualmente em depuração.|
 
 ## <a name="requirements"></a>Requisitos
  Cabeçalho: Msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: IDebugDocumentText2:GetText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731579"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera o texto da posição especificada no documento.
@@ -45,24 +45,24 @@ int GetText(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pos`\
-[in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.
+[em] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica a localização do texto a ser recuperado.
 
 `cMaxChars`\
-[in] O número máximo de caracteres do texto a ser recuperado.
+[em] O número máximo de caracteres do texto a ser recuperado.
 
 `pText`\
-[no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.
+[dentro, fora] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Este buffer deve ser capaz `cMaxChars` de conter pelo menos um número de caracteres largos.
 
 `pcNumChars`\
-[out] Retorna o número de caracteres realmente recuperados.
+[fora] Retorna o número de caracteres realmente recuperados.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como esse método pode ser chamado do c#.
+Este exemplo mostra como este método pode ser chamado de C#.
 
 ```csharp
 using System.Runtime.Interop.Services;
@@ -100,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

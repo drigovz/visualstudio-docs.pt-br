@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308874"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725523"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtém o valor apontado como uma série de bytes consecutivos.
@@ -45,25 +45,25 @@ int GetBytes(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dwStart`\
-[in] Um deslocamento, em bytes, desde o início do objeto apontado.
+[em] Um deslocamento, em bytes, desde o início do objeto apontado para.
 
 `dwCount`\
-[in] O número de bytes a serem recuperados.
+[em] O número de bytes para recuperar.
 
 `pBytes`\
-[no, out] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando no deslocamento especificado do objeto apontado.
+[dentro, fora] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando pelo deslocamento dado do objeto apontado para.
 
 `pdwBytes`\
-[out] Retorna o número de bytes realmente recuperados.
+[fora] Retorna o número de bytes realmente recuperado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é usado se o ponteiro, conforme representado por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) aponta para um tipo primitivo ou uma matriz de tipos primitivos (ou seja, uma matriz que pode ser representado por uma simple sequência de bytes).
+ Este método é usado se o ponteiro representado por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apontar para um tipo primitivo ou uma matriz simples de tipos primitivos (ou seja, uma matriz que pode ser representada por uma simples seqüência de bytes).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [Setbytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

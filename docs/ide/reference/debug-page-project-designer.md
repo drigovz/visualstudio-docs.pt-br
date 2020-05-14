@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649431"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 
@@ -84,8 +84,8 @@ Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depu
 
 ## <a name="see-also"></a>Confira também
 
-- [Primeiro olhe para o depurador](../../debugger/debugger-feature-tour.md)
+- [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
 - [Configurações do projeto para configurações de depuração C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configurações do projeto para uma configuração de depuração básica visual](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Aplicativos secure ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Como: Criar e Editar configurações](../../ide/how-to-create-and-edit-configurations.md)

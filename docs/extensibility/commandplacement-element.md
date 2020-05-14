@@ -1,27 +1,27 @@
 ---
-title: Elemento CommandPlacement | Microsoft Docs
+title: Elemento de posicionamento de comando | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c43dab922d51d2d3f96ffaba0ef24f8f0e18fa1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341876"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739734"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
-O elemento CommandPlacement permite que os botões, grupos e menus a serem incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, não é preciso redefinir completamente esses itens para modificar a aparência de uma interface do usuário.
+O elemento CommandPlacement permite que botões, grupos e menus sejam incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, você não precisa redefinir completamente esses itens para modificar a aparência de uma interface de usuário.
 
- Para obter mais informações, consulte [criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md).
+ Para obter mais informações, consulte [Criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,22 +38,22 @@ O elemento CommandPlacement permite que os botões, grupos e menus a serem inclu
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|GUID|Necessário. O guid do conjunto de comandos, conforme definido na [elemento Symbols](../extensibility/symbols-element.md).|
-|id|Necessário. A id do menu, grupo ou o comando a ser colocado, conforme definido no `Symbols Element`.|
-|priority|Necessário. Determina a posição visual do item em seu elemento pai.|
-|Condição|Opcional. Ver [Aattributes condicional](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obrigatórios. A orientação do conjunto de comandos, conforme definido no [elemento Símbolos](../extensibility/symbols-element.md).|
+|id|Obrigatórios. O id do menu, grupo ou comando a ser `Symbols Element`colocado, conforme definido no .|
+|priority|Obrigatórios. Determina a posição visual do item em seu elemento pai.|
+|Condição|Opcional. Ver [Atributos Condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|Pai|Necessário. O menu ou grupo que hospeda o item a ser colocado.|
+|Pai|Obrigatórios. O menu ou grupo que hospeda o item a ser colocado.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Especifica os grupos de elementos CommandPlacements e CommandPlacement.|
+|[Elemento ComandosDe posicionamento](../extensibility/commandplacements-element.md)|Especifica grupos de comandos e elementos de posicionamento de comando.|
 
 ## <a name="example"></a>Exemplo
 
@@ -66,6 +66,6 @@ O elemento CommandPlacement permite que os botões, grupos e menus a serem inclu
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)
-- [Arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Confira também
+- [Elemento ComandosDe posicionamento](../extensibility/commandplacements-element.md)
+- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

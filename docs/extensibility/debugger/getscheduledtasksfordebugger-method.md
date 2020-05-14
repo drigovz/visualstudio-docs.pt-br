@@ -1,30 +1,30 @@
 ---
-title: Método GetScheduledTasksForDebugger | Microsoft Docs
+title: Obtertarefas programadasParao método dedepuração | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49a63462eece9bef09579c7284f72790a3914bc2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353727"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738654"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Método GetScheduledTasksForDebugger
-Recupera uma matriz de todas as tarefas agendadas.
+Recupera uma matriz de todas as tarefas programadas.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (em *mscorlib. dll*)
+ **Montagem:** mscorlib (in *mscorlib.dll*)
 
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).
+ Como você não pode acessar este membro interno do .NET Framework, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,11 +32,11 @@ Recupera uma matriz de todas as tarefas agendadas.
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Uma matriz de todas as tarefas agendadas. Cada tarefa está em execução ou tiver concluído a execução.
+## <a name="return-value"></a>Valor retornado
+ Uma série de tarefas programadas. Cada tarefa está executando ou terminou de executar.
 
 ## <a name="remarks"></a>Comentários
- Esse método não é thread-safe e não deve ser usada simultaneamente com outras instâncias do <xref:System.Threading.Tasks.TaskScheduler>. Chame esse método de um depurador somente quando o depurador suspendeu a todos os outros threads.
+ Este método não é seguro para rosca e você não <xref:System.Threading.Tasks.TaskScheduler>deve usá-lo simultaneamente com outras instâncias de . Chame este método de um depurador somente quando o depurador tiver suspendido todos os outros segmentos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Microsoft Docs
+title: IDebugObject::IsnullReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsNullReference method
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fb6b5c0692ec43feec0cf4de48d9ce730b0032e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323522"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726522"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Testa se este objeto é uma referência nula.
+Testa se esse objeto é uma referência nula.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int IsNullReference(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pfIsNull`\
-[out] Retorna não zero (`TRUE`) se esse objeto for uma referência nula; caso contrário, retorna zero (`FALSE`).
+[fora] Retorna não-zero`TRUE`( ) se este objeto for uma referência nula; caso contrário, retorna`FALSE`zero ( ).
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Uma referência nula significa que um objeto vazio ou um objeto que não foi atribuído a.
+ Uma referência nula significa um objeto vazio ou um objeto que não foi atribuído.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

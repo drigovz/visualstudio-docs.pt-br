@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16a6d60173090642bda7d8fd940ecf0699e1d7ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 913c90e34e308ce5bb4ceecface739afc8d03f3d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331503"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722753"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
-Encerra o programa.
+Termina o programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,14 +37,14 @@ HRESULT Terminate( 
 int Terminate();
 ```
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se possível, o programa será encerrado e descarregado do processo; Caso contrário, o mecanismo de depuração (DES) executará qualquer limpeza necessária.
+ Se possível, o programa será encerrado e descarregado do processo; caso contrário, o motor de depuração (DE) realizará qualquer limpeza necessária.
 
- Esse método ou o [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) método é chamado pelo IDE, geralmente em resposta ao usuário interrompendo a depuração de todos os. A implementação desse método Idealmente, deve, encerrar o programa dentro do processo. Se isso não for possível, o DE deve impedir que o programa em execução mais nesse processo (e fazer qualquer limpeza necessária). Se o `IDebugProcess2::Terminate` método foi chamado pelo IDE, todo o processo será encerrado em algum momento depois o `IDebugProgram2::Terminate` método é chamado.
+ Este método ou o método [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) é chamado pelo IDE, normalmente em resposta ao usuário parar toda a depuração. A implementação desse método deve, idealmente, encerrar o programa dentro do processo. Se isso não for possível, o DE deve impedir que o programa seja executado mais neste processo (e faça qualquer limpeza necessária). Se `IDebugProcess2::Terminate` o método foi chamado pelo IDE, todo o processo `IDebugProgram2::Terminate` será encerrado algum tempo após o método ser chamado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-- [Terminar](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+- [Encerrar](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

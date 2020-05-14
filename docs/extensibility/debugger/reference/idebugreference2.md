@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66d35b636516df1052ffa2a70c25da79851dd833
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329649"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720267"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
-Essa interface representa uma referência a uma propriedade de quadro de pilha ou outra propriedade.
+Esta interface representa uma referência a uma propriedade de quadro de pilha ou alguma outra propriedade.
 
 > [!NOTE]
-> `IDebugReference2` é reservado para uso futuro e todos os seus métodos devem retornar `E_NOTIMPL`.
+> `IDebugReference2`é reservado para uso futuro, e `E_NOTIMPL`todos os seus métodos devem retornar .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,49 +31,49 @@ Essa interface representa uma referência a uma propriedade de quadro de pilha o
 IDebugReference2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O DE implementa essa interface para representar uma referência a um determinado tipo de valor. Por exemplo, o valor pode ser um valor numérico como resultado de uma avaliação de expressão, um contexto de memória usado para exibir a memória ou uma lista de registros e seus valores.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O DE implementa essa interface para representar uma referência a um determinado tipo de valor. Por exemplo, o valor pode ser um valor numérico como resultado de uma avaliação de expressão, um contexto de memória usado para exibir memória ou uma lista de registros e seus valores.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Chame [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) para obter essa interface. [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) e [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) também retornar essa interface.
+ Ligue para [getReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) para obter esta interface. [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) e [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) também retornam essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugReference2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugReference2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Obtém o [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura que descreve esta referência.|
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Define o valor dessa referência de uma cadeia de caracteres.|
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Define o valor dessa referência de outra referência.|
-|[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Enumera os filhos dessa referência.|
-|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Obtém o pai dessa referência.|
-|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Obtém a referência mais derivada dessa referência.|
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Obtém os bytes de memória ao qual esta referência se refere.|
+|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Obtém a [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura que descreve essa referência.|
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Define o valor desta referência a partir de uma seqüência de string.|
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Define o valor desta referência a partir de outra referência.|
+|[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Enumera as crianças desta referência.|
+|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Fica com o pai desta referência.|
+|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Obtém a referência mais derivada desta referência.|
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Obtém os bytes de memória aos quais esta referência se refere.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Obtém um contexto de memória para esta referência.|
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Obtém o tamanho, em bytes, dessa referência.|
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Obtém o tamanho, em bytes, desta referência.|
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Define este tipo de referência.|
-|[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compara essa referência com outra.|
+|[Comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compara essa referência com outra.|
 
 ## <a name="remarks"></a>Comentários
 
 > [!NOTE]
-> Esse uso de "property" não deve ser confundido com esse que significa que uma variável de membro de uma classe, embora um `IDebugReference2` pode representar essa entidade.
+> Esse uso de "propriedade" não deve ser confundido com esse `IDebugReference2` significado de uma variável membro de uma classe, embora possa representar tal entidade.
 
-- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) representa uma propriedade, enquanto `IDebugReference2` representa uma referência a uma propriedade, normalmente uma referência a um objeto no programa que está sendo depurado.
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) representa uma propriedade, enquanto `IDebugReference2` representa uma referência a uma propriedade, tipicamente uma referência a um objeto no programa que está sendo depurado.
 
- A principal diferença entre uma propriedade e uma referência é que uma propriedade se refere a uma instância nomeada de um objeto, enquanto uma referência se refere a uma instância sem nome. Por exemplo, uma propriedade pode se referir a um objeto no heap do programa por `"a.b"`. Outra propriedade pode se referir ao mesmo objeto como `"c.d"`. A maneira de se referir a essa propriedade requer que `"a.b"` ou `"c.d"` estar no escopo. Uma referência a esse mesmo objeto é sem nome; o objeto pode ser referenciado como a memória para esse objeto é válida.
+ A principal diferença entre uma propriedade e uma referência é que uma propriedade se refere a uma instância nomeada de um objeto, enquanto uma referência refere-se a uma instância não nomeada. Por exemplo, uma propriedade pode se referir a `"a.b"`um objeto no monte do programa por . Outra propriedade pode se referir `"c.d"`ao mesmo objeto que . A maneira de se referir `"a.b"` a `"c.d"` esta propriedade requer isso ou estar no escopo. Uma referência a este mesmo objeto é sem nome; o objeto pode ser referido desde que a memória desse objeto seja válida.
 
- Um `IDebugProperty2` interface pode ser pensada como um valor com um nome, um tipo e um endereço. Um `IDebugReference2`, por outro lado, pode ser pensada como um tipo e um endereço.
+ Uma `IDebugProperty2` interface pode ser considerada como um valor com um nome, um tipo e um endereço. Um `IDebugReference2`, por outro lado, pode ser pensado como um tipo e um endereço.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-- [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+- [Getreference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

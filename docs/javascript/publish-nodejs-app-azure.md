@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474022"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445006"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 
@@ -109,7 +109,7 @@ Para configurar o GitHub para o Visual Studio:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Criar um Serviço de Aplicativo do Linux no Azure
 
-1. Faça login no [portal Azure](https://portal.azure.com).
+1. Entre no [portal do Azure](https://portal.azure.com).
 
 2. Selecione **Serviços de Aplicativos** na lista de serviços à esquerda e, em seguida, clique em **Adicionar**.
 
@@ -173,7 +173,7 @@ Para configurar o GitHub para o Visual Studio:
 ## <a name="troubleshooting"></a>Solução de problemas
 
 * Se o processo do node.exe se tornar inativo (ou seja, uma exceção sem tratamento ocorrer), o contêiner será reinicializado.
-* Quando o contêiner for iniciado, ele percorrerá várias heurísticas para descobrir como iniciar o processo do Node.js. Veja os detalhes da implementação em [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* Quando o contêiner for iniciado, ele percorrerá várias heurísticas para descobrir como iniciar o processo do Node.js. Veja os detalhes da implementação em [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Conecte-se ao contêiner em execução por meio do SSH para fazer investigações. Faça isso com facilidade usando o portal do Azure. Selecione o Serviço de Aplicativo e role a lista de ferramentas para baixo até chegar a **SSH**, na seção **Ferramentas de Desenvolvimento**.
 * Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/*_docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
 * Um nome de domínio personalizado pode ser atribuído ao site, em vez da URL *.azurewebsites.net atribuída por padrão. Para obter mais detalhes, confira o tópico [Mapear domínio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).

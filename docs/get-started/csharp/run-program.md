@@ -1,5 +1,5 @@
 ---
-title: Como executar um programa C#
+title: Como executar um programa (C#)
 description: Guia de iniciantes sobre como executar um programa C# no Visual Studio.
 ms.custom: get-started
 ms.date: 10/16/2019
@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2ffe52fc2bf7d05084307b4d972e45f4b1d2acdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "76924612"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649646"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Como: Executar um programa C# no Visual Studio
 
-O que você precisa fazer para executar um programa depende do que você está começando, que tipo de programa, aplicativo ou serviço é, e se você quer executá-lo o depurador ou não. No caso mais simples, quando você tiver um projeto aberto no Visual Studio, construa e execute-o pressionando **Ctrl**+**F5** **(Iniciar sem depuração)** ou **F5** **(Comece com a depuração),** ou pressione o arqueiro verde **(Botão de Partida)** na barra de ferramentas principal do Visual Studio.
+O que você precisa fazer para executar um programa depende do que você está começando, que tipo de programa, aplicativo ou serviço é, e se você quer executá-lo sob o depurador ou não. No caso mais simples, quando você tiver um projeto aberto no Visual Studio, construa e execute-o pressionando **Ctrl**+**F5** **(Iniciar sem depuração)** ou **F5** **(Comece com a depuração),** ou pressione o arqueiro verde **(Botão de Partida)** na barra de ferramentas principal do Visual Studio.
 
 ![Captura de tela mostrando botão de partida](media/vs-start-button.png)
 
@@ -74,7 +74,7 @@ Se o código que você deseja executar estiver no GitHub ou em um repo Azure Dev
 
 ## <a name="run-the-program"></a>Execute o programa
 
-Para iniciar o programa, pressione o arqueiro verde (botão**Iniciar)** na barra de ferramentas principal do Visual Studio ou pressione **F5** ou **Ctrl**+**F5** para executar o programa. Quando você usa o botão **Iniciar,** ele é executado o depurador.  O Visual Studio tenta construir o código em seu projeto e executá-lo.  Se isso for bem sucedido, ótimo! Mas se não, continue lendo algumas ideias sobre como fazê-lo construir com sucesso.
+Para iniciar o programa, pressione o arqueiro verde (botão**Iniciar)** na barra de ferramentas principal do Visual Studio ou pressione **F5** ou **Ctrl**+**F5** para executar o programa. Quando você usa o botão **Iniciar,** ele é executado sob o depurador.  O Visual Studio tenta construir o código em seu projeto e executá-lo.  Se isso for bem sucedido, ótimo! Mas se não, continue lendo algumas ideias sobre como fazê-lo construir com sucesso.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 

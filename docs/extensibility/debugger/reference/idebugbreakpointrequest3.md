@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9101f1c2faeedf8b08b3b11044eaa22f6c6d512a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352872"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734822"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
-Essa interface representa as informações necessárias para criar e associar a qualquer tipo de ponto de interrupção. Ele é uma extensão da [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
+Esta interface representa as informações necessárias para criar e vincular qualquer tipo de ponto de ruptura. É uma extensão do [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,29 +28,29 @@ Essa interface representa as informações necessárias para criar e associar a 
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O Gerenciador de sessão de depuração (SDM) normalmente implementa essa interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O SDM (Session Debug Manager, gerenciador de depuração de sessão) normalmente implementa essa interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O mecanismo de depuração (DES) acessa essa interface chamando [QueryInterface](/cpp/atl/queryinterface) na interface IDebugBreakpointRequest2 recebido em uma chamada para [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).
+ O mecanismo de depuração (DE) acessa esta interface chamando [QueryInterface](/cpp/atl/queryinterface) na interface IDebugBreakpointRequest2 recebida em uma chamada para [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos herdados de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), o `IDebugBreakpointRequest3` interface expõe o método a seguir.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ Além dos métodos herdados do [IDebugBreakpointRequest2,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)a `IDebugBreakpointRequest3` interface expõe o seguinte método.
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.|
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtém as informações de solicitação de ponto de ruptura que descrevem essa solicitação de ponto de ruptura.|
 
 ## <a name="remarks"></a>Comentários
- Essa interface é usada para fornecer informações adicionais para o DE por meio de [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura. Essas informações adicionais incluem a ID do fornecedor da Alemanha (na forma de um GUID), o nome de um tracepoint e o nome de uma restrição de ponto de interrupção.
+ Esta interface é usada para fornecer informações adicionais ao DE através da estrutura [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md) Essas informações adicionais incluem o ID do fornecedor do DE (na forma de um GUID), o nome de um ponto de rastreamento e o nome de uma restrição de ponto de ruptura.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: IDebugDisassemblyStream2::Leia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c74ed1de1d12cc7384ee8f7d27dad910c7b9c9d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310349"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732101"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Lê a partir da posição atual no fluxo de desmontagem de instruções.
+Leia as instruções a partir da posição atual no fluxo de desmontagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,32 +45,32 @@ int Read( 
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `dwInstructions`\
-[in] O número de instruções para desmontar. Esse valor também é o comprimento máximo da `prgDisassembly` matriz.
+[em] O número de instruções para desmontar. Este valor também é o `prgDisassembly` comprimento máximo da matriz.
 
 `dwFields`\
-[in] Uma combinação de sinalizadores do [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) enumeração que indicam quais campos de `prgDisassembly` devem ser preenchidos.
+[em] Uma combinação de [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) bandeiras da enumeração `prgDisassembly` DISASSEMBLY_STREAM_FIELDS que indicam quais campos devem ser preenchidos.
 
 `pdwInstructionsRead`\
-[out] Retorna o número de instruções, na verdade, desmontado.
+[fora] Retorna o número de instruções realmente desmontadas.
 
 `prgDisassembly`\
-[out] Uma matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estruturas que será preenchido com o código desmontado, uma estrutura por instrução desmontada. O comprimento dessa matriz é determinado pelo `dwInstructions` parâmetro.
+[fora] Uma matriz de estruturas de [DesmontagemData](../../../extensibility/debugger/reference/disassemblydata.md) que é preenchida com o código desmontado, uma estrutura por instrução desmontada. O comprimento desta matriz é `dwInstructions` ditado pelo parâmetro.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O número máximo de instruções que estão disponíveis no escopo atual pode ser obtido chamando o [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) método.
+ O número máximo de instruções disponíveis no escopo atual pode ser obtido ligando para o método [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
 
- A posição atual em que a próxima instrução é lido do pode ser alterada por meio da chamada a [busca](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.
+ A posição atual de onde a próxima instrução é lida pode ser alterada chamando o método [Buscar.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
- O `DSF_OPERANDS_SYMBOLS` sinalizador pode ser adicionado para o `DSF_OPERANDS` sinalizador no `dwFields` parâmetro para indicar que os nomes de símbolos devem ser usados quando a desmontagem de instruções.
+ A `DSF_OPERANDS_SYMBOLS` bandeira pode ser `DSF_OPERANDS` adicionada `dwFields` à bandeira no parâmetro para indicar que os nomes dos símbolos devem ser usados ao desmontar as instruções.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
-- [Buscar](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+- [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

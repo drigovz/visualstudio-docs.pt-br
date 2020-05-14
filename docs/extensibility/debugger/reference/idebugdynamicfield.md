@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a4838afc0d52ab60ae0a11de419393d68dfc06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351339"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731321"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Essa interface representa um tipo de uma variável.
+Esta interface representa um tipo de variável.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,22 +28,22 @@ Essa interface representa um tipo de uma variável.
 IDebugDynamicField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Essa interface é implementada por provedores de símbolo como uma classe base para qualquer tipo que pode ser determinada em tempo de execução. Isso é apenas para código gerenciado.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Esta interface é implementada por provedores de símbolos como uma classe base para qualquer tipo que possa ser determinada em tempo de execução. Isto é apenas para código gerenciado.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Essa interface representa uma classe base da qual as interfaces mais especializadas podem ser derivadas.
+ Esta interface representa uma classe base da qual interfaces mais especializadas podem ser derivadas.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Essa interface fornece métodos que não sejam aqueles herdados de `IDebugField`.
+## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+ Esta interface não fornece nenhum método diferente `IDebugField`daqueles herdados .
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724447"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Esse método recupera um objeto que permite a enumeração da lista de portas persistentes.
+Este método recupera um objeto que permite a enumeração da lista de portas persistidas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,20 +41,20 @@ int EnumPersistedPorts(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `PortNames`\
-[in] Um [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) estrutura que contém uma lista de nomes de porta para encontrar e retornar entre as portas persistentes. Somente as portas persistentes com esses nomes serão retornadas.
+[em] Uma [estrutura BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) que contém uma lista de nomes de portas para encontrar e retornar entre as portas persistidas. Apenas as portas persistidas com esses nomes serão devolvidas.
 
 `ppEnum`\
-[out] Um objeto que implementa o [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interface.
+[fora] Um objeto que implementa a interface [IEnumDebugPorts2.](../../../extensibility/debugger/reference/ienumdebugports2.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Portas persistentes são carregadas quando um fornecedor de porta é instanciado e salvo quando o fornecedor de porta é destruído.
+ As portas persistidas são carregadas quando um fornecedor de porta é instanciado e salvo quando o fornecedor de porta é destruído.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784585"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586567"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
 
@@ -44,7 +44,7 @@ Para este passo a passo, você precisa de um projeto de aplicativo Web com base 
 
 A publicação no Azure requer um Serviço de Aplicativo de destino. Para essa finalidade, você pode criar um Serviço de Aplicativo usando uma assinatura do Azure ou pode usar um site temporário.
 
-Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/free/), que inclui créditos generosos para os serviços do Azure. Considere também se inscrever no [Visual Studio Dev Essentials,](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)que lhe dá $25 de crédito por mês durante um ano inteiro.
+Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/free/), que inclui créditos generosos para os serviços do Azure. Considere também inscrever-se para [Visual Studio dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), que oferece crédito de $25 todos os meses por um ano inteiro.
 
 > [!Tip]
 > Embora o Azure solicite um cartão de crédito para verificar a sua conta, o cartão não será cobrado. Você também pode definir um [limite de gastos](/azure/billing/billing-spending-limit) igual a seus créditos gratuitos para garantir que não haja encargos adicionais. Além disso, o Azure oferece uma camada gratuita do Plano do Serviço de Aplicativo, que é ideal para aplicativos de teste simples, conforme descrito na próxima seção.
@@ -63,7 +63,7 @@ Com uma assinatura ativa do Azure, crie um Serviço de Aplicativo com um aplicat
 
 Crie um Serviço de Aplicativo temporário sem a necessidade de uma assinatura do Azure da seguinte maneira:
 
-1. Abra o navegador em [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Abra o navegador para [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
 1. Selecione **Aplicativo Web** para o tipo de aplicativo e, em seguida, selecione **Avançar**.
 1. Selecione **Site Vazio** e, depois, **Criar**.
 1. Entre com um logon social de sua escolha e, após alguns instantes, seu site estará pronto na URL exibida.
@@ -79,7 +79,7 @@ Se desejar, você também pode instalar o pacote `bottle` usando o processo naqu
 
 A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017 e posterior copia somente os arquivos do seu projeto para o servidor. Portanto, é necessário criar os arquivos pertinentes para configurar o ambiente de servidor.
 
-1. No Visual Studio **Solution Explorer,** clique com o botão direito do mouse no projeto e **selecione Adicionar > Novo Item...**. Na caixa de diálogo que aparece, selecionando o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz de seu projeto.
+1. No Visual Studio **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Adicionar > novo item...**. Na caixa de diálogo exibida, selecione o modelo "Azure Web. config (CGI rápido)" e selecione OK. Isso cria um arquivo `web.config` na raiz de seu projeto.
 
 1. Modifique a entrada `PythonHandler` em `web.config` para que o caminho corresponda à instalação do Python no servidor (consulte [Referência de configuração do IIS](https://www.iis.net/configreference) (iis.net) para obter detalhes exatos). Por exemplo, para o Python 3.6.1 x64, a entrada deve ser semelhante ao seguinte:
 
@@ -145,7 +145,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
     ![Etapa 1 de publicação no Azure, Visual Studio 2017 e posterior, assinaturas existentes](media/tutorials-common-publish-1a-2017.png)
 
-    b. Se você estiver usando um Serviço de Aplicativo temporário no try.azurewebsites.net ou precisar **>** usar um perfil de publicação, selecione o controle para encontrar **o perfil Importar,** selecione essa opção e selecione **Publicar**. Isso solicitará o local do arquivo `.publishsettings` baixado anteriormente.
+    b. Se você estiver usando um serviço de aplicativo temporário em try.azurewebsites.net ou precisar usar um perfil de publicação, selecione o controle **>** para localizar o **perfil de importação**, selecione essa opção e, em seguida, selecione **publicar**. Isso solicitará o local do arquivo `.publishsettings` baixado anteriormente.
 
     ![Etapa 1 de publicação no Azure, Visual Studio 2017 e posterior, serviço de aplicativo temporário](media/tutorials-common-publish-1b-2017.png)
 

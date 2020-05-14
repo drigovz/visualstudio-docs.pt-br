@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f4359d2360f1186404229397bbb00f916fbcea8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346070"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732623"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Determina se o atributo personalizado especificado é definido.
+Determina se o atributo personalizado especificado está definido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,15 +38,15 @@ int IsCustomAttributeDefined(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszCustomAttributeName`\
-[in] Nome do atributo personalizado.
+[em] Nome do atributo personalizado.
 
-## <a name="return-value"></a>Valor de retorno
-Se o atributo personalizado é definido, retornará `S_OK`; caso contrário, retorna `S_FALSE`.
+## <a name="return-value"></a>Valor retornado
+Se o atributo personalizado `S_OK`for definido, retorna; caso contrário, `S_FALSE`retorna.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugClassFieldSymbol** objeto que expõe a [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugClassFieldSymbol** que expõe a interface [IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(
@@ -85,5 +85,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

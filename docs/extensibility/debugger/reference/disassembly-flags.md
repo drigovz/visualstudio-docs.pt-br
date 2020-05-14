@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318384"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737378"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Especifica os sinalizadores de desmontagem.
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
+Especifica as bandeiras para desmontagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,35 +52,35 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>Campos
 `DF_DOCUMENTCHANGE`\
-Indica que essa instrução está em um documento diferente que a anterior.
+Indica que esta instrução está em um documento diferente do anterior.
 
 `DF_DISABLED`\
-Indica que essa instrução não será executada.
+Indica que esta instrução não será executada.
 
 `DF_INSTRUCTION_ACTIVE`\
-Indica que essa instrução é uma das próximas instruções a ser executado (pode haver mais de um).
+Indica que esta instrução é uma das próximas instruções a serem executadas (pode haver mais de uma).
 
 `DF_DATA`\
-Indica que essa instrução é realmente dados (não no código).
+Indica que esta instrução é realmente dados (não código).
 
 `DF_HASSOURCE`\
-Indica que essa instrução tem origem. Algumas instruções, como o código de coleta de lixo ou a criação de perfil, não tem nenhum código-fonte correspondente.
+Indica que esta instrução tem origem. Algumas instruções, como perfil ou código de coleta de lixo, não têm fonte correspondente.
 
 `DF_DOCUMENT_CHECKSUM`\
-Indica que `bstrDocumentUrl` campo contiver dados de soma de verificação após a URL do documento. Consulte a seção comentários para o [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estrutura para como os dados de soma de verificação são armazenados.
+Indica `bstrDocumentUrl` que o campo contém dados de soma de cheques após a URL do documento. Consulte a seção Observações para a estrutura [DesassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) para saber como os dados do soma de verificação são armazenados.
 
 ## <a name="remarks"></a>Comentários
-Usado como o `dwFlags` membro a [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estrutura.
+Usado como `dwFlags` membro da estrutura [DesassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Esses sinalizadores podem ser combinados com um bit a bit `OR`.
+Essas bandeiras podem ser combinadas com um pouco `OR`.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

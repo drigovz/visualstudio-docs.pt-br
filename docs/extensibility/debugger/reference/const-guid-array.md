@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737627"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
-Uma estrutura que contém uma lista de `GUID`s.
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
+Uma estrutura que contém `GUID`uma lista de s.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Membros
 `dwCount`\
-Número de `GUID`s no `Members` matriz.
+Número `GUID`de s `Members` na matriz.
 
 `Members`\
-Matriz de `GUID`s.
+Matriz `GUID`de s.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é passada para o [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método e é retornado do [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) métodos.
+Essa estrutura é passada para o método [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e é devolvida dos métodos [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
-O proprietário de uma instância dessa estrutura é responsável por liberar toda a memória alocada.
+O proprietário de uma instância desta estrutura é responsável por liberar qualquer memória alocada.
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

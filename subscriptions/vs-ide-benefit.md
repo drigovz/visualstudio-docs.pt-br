@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
-ms.openlocfilehash: 154e5449603a8a92d2c2a52887fc4631b8dd0ab9
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273966"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649544"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>O benefício do Visual Studio 2019
 
@@ -23,7 +23,7 @@ Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A ve
 *(O Visual Studio Enterprise é usado para este exemplo).*
 
 Para baixar o IDE:
-1. Faça login [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)em .
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Localize o bloco IDE do Visual Studio na seção de Ferramentas e clique no link **Download** na parte inferior do bloco do benefício.  Você também pode baixar na página [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
    > ![Bloco do Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)

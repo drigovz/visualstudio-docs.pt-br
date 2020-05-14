@@ -2,7 +2,7 @@
 # [Novidades](whats-new-in-subscriptions.md)
 # Assinaturas
 ## Comprar assinaturas
-### [Varejo](https://visualstudio.microsoft.com/vs/pricing)
+### [Varejo](buy-activate-retail.md)
 ### Nuvem 
 #### [Visão geral](vscloud-overview.md)
 #### [Perguntas frequentes sobre faturamento](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Gerenciar assinaturas do MPN](manage-mpn-subscriptions.md)
 ### [Microsoft para startups](program-startups.md)
 ## Entrar 
-### [Ativar assinaturas de varejo](activate-store-subscriptions.md)
 ### [Entrar com contas Microsoft](sign-in-msa.md)
 ### [Entrar com contas corporativas ou de estudante](sign-in-work.md)
 ### [Entrar com o GitHub](sign-in-github.md)
@@ -75,10 +74,10 @@
 ### [Superadministradores e administradores](admin-roles.md)
 ### [Definir preferências de contrato](admin-prefs.md)
 ### [Visão geral](using-admin-portal.md)
-### [Tutorial em vídeo: Usar o portal de administração](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Atribuir assinaturas
 #### [Adicionar usuários únicos](assign-license.md)
 #### [Adicionar vários usuários](assign-license-bulk.md)
+#### [Atribuir assinaturas específicas](assign-guid.md)
 ### [Editar assinaturas](edit-license.md)
 ### [Excluir assinaturas](delete-license.md)
 ### [Procurar uma assinatura](search-license.md)

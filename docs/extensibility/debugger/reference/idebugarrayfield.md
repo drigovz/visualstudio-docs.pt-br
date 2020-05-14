@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField interface
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 088ff752513feb9d73e35c3174492bc34a5034f5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349135"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736296"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
-Essa interface descreve um tipo ou um símbolo de matriz.
+Esta interface descreve um símbolo ou tipo de matriz.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,14 +28,14 @@ Essa interface descreve um tipo ou um símbolo de matriz.
 IDebugArrayField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- O provedor de símbolo implementa essa interface no mesmo objeto que implementa o [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface. Essa interface é uma especialização que representam os objetos de matriz.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O provedor de símbolos implementa essa interface no mesmo objeto que implementa a interface [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Esta interface é uma especialização que representa objetos de matriz.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Use [QueryInterface](/cpp/atl/queryinterface) para obter essa interface da [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna o sinalizador `FIELD_TYPE_ARRAY`.
+ Use [queryInterface](/cpp/atl/queryinterface) para obter esta interface a partir da interface `FIELD_TYPE_ARRAY` [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) se [getKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retornar o sinalizador .
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Além dos métodos na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaces, essa interface implementa o seguinte:
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ Além dos métodos nas interfaces [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) esta interface implementa o seguinte:
 
 |Método|Descrição|
 |------------|-----------------|
@@ -44,13 +44,13 @@ IDebugArrayField : IDebugContainerField
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Obtém a classificação da matriz.|
 
 ## <a name="requirements"></a>Requisitos
- Header: sh.h
+ Cabeçalho: sh.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
-- [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>Confira também
+- [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d3f0ea4a9c9cef92feba511afe84f44e06f1f8c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a5990c84fbaeb5ebb3b1e188d3317234afda06b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733014"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
-Essa interface é usada para representar e obter informações de um servidor em um computador na rede.
+Esta interface é usada para representar e obter informações de um servidor em uma máquina na rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,39 +28,39 @@ Essa interface é usada para representar e obter informações de um servidor em
 IDebugCoreServer2 : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Visual Studio implementa essa interface para representar um servidor. Cada instância do Visual Studio cria uma instância dessa interface.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ O Visual Studio implementa essa interface para representar um servidor. Cada instância do Visual Studio cria uma instância desta interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Um fornecedor de porta personalizada recebe essa interface em uma chamada para [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md).
+ Um fornecedor de porta personalizado recebe essa interface em uma chamada para [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md).
 
- Um mecanismo de depuração pode obter essa interface indiretamente por meio de uma chamada para [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (que retorna [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), uma interface que é derivada de `IDebugCoreServer2`).
+ Um mecanismo de depuração pode obter essa interface indiretamente através de uma chamada para [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (que retorna [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), uma interface derivada de `IDebugCoreServer2`).
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugCoreServer2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugCoreServer2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|Obtém o nome e os atributos de uma máquina.|
-|[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|Obtém o nome de uma máquina.|
-|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Obtém um fornecedor de porta que existe em um computador.|
-|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Obtém uma porta que já existe em um computador.|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Cria um enumerador para todas as portas em um computador.|
-|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Cria um enumerador para todos os fornecedores de porta em um computador.|
-|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Obtém os utilitários de máquina para uma máquina.|
+|[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|Obtém o nome e atributos de uma máquina.|
+|[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|Recebe o nome de uma máquina.|
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Consegue um fornecedor de porto que existe em uma máquina.|
+|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Tem uma porta que já existe em uma máquina.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Cria um enumerador para todas as portas em uma máquina.|
+|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Cria um enumerador para todos os fornecedores portuários em uma máquina.|
+|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Pega os utilitários da máquina para uma máquina.|
 
 ## <a name="remarks"></a>Comentários
- Essa interface também é usada pelo Visual Studio para navegar os processos em execução em computadores na rede.
+ Esta interface também é usada pelo Visual Studio para navegar processos em execução em máquinas na rede.
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
-- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

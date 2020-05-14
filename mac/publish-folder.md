@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715901"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224492"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publique para uma pasta usando o Visual Studio para Mac
 
@@ -52,7 +52,7 @@ Usando o Visual Studio para Mac, você pode publicar seus projetos .NET Core par
 
 ## <a name="customize-publish-options"></a>Personalizar as opções de publicação
 
-Para alterar o nome do perfil de publicação (que é exibido no menu de contexto de publicação), renomeie o arquivo de perfil de publicação. Não altere a extensão do arquivo (`.puxbml`).
+Para alterar o nome do perfil de publicação (que é exibido no menu de contexto de publicação), renomeie o arquivo de perfil de publicação. Não altere a extensão do arquivo (`.pubxml`).
 
 Para alterar o caminho da pasta de publicação, abra o perfil de publicação e edite o valor de `publishUrl`.
 

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e084b7f6861a8a01a2998c5a5e9ef1feba1daf2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334720"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733425"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Recupera um tipo de dado seu nome.
+Recupera um tipo dado seu nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,24 +42,24 @@ int GetTypesByName(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pszClassName`\
-[in] Nome do tipo.
+[em] Nome do tipo.
 
 `nameMatch`\
-[in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.
+[em] Seleciona o tipo de correspondência, por exemplo, sensível a maiúsculas e minúsculas. Um valor da [enumeração NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppEnum`\
-[out] Um enumerador que contém o tipo ou tipos com o nome fornecido.
+[fora] Um enumerador que contém o tipo ou tipos com o nome dado.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Para tipos genéricos, o nome para procurar backup de ' lista\<int >' ou ' lista\<int, int >' seria 'List'. Se os tipos de mesmo nome são exibidos em vários módulos, o `ppEnum` parâmetro conterá todas as cópias. Você deve usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) e distinguir com base no `guidModule` parâmetro.
+Para tipos genéricos, o nome\<para procurar 'Listar\<int>' ou 'Listar int,int>' seria 'Lista'. Se os tipos de mesmo nome aparecerem em vários módulos, o `ppEnum` parâmetro conterá todas as cópias. Você tem que usar [getTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) `guidModule` e distinguir com base no parâmetro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(
@@ -124,5 +124,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

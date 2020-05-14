@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0524121d17158471b3e5aa81945a8e11db5ec58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1be3d839cabe3fce07cdd42720306bdac47282f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728995"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
-Esse método obtém o endereço de depuração de um campo.
+Este método obtém o endereço de depuração de um campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ int GetAddress(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `ppAddress`\
-[out] Retorna o endereço como um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
+[fora] Retorna o endereço como um objeto [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornar um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorne um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

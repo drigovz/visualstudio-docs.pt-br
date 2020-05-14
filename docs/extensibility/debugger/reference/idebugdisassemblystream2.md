@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf91235b1321b13571505c51af077643c606c4a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732038"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
-Essa interface representa um fluxo de instruções.
+Esta interface representa um fluxo de instruções.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,37 +28,37 @@ Essa interface representa um fluxo de instruções.
 IDebugDisassemblyStream2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Um mecanismo de depuração implementa essa interface para dar suporte a desmontagem do código do programa.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Um mecanismo de depuração implementa essa interface para suportar a desmontagem do código de um programa.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Uma chamada para o [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) método retorna essa interface.
+ Uma chamada para o método [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) retorna esta interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- A tabela a seguir mostra os métodos de `IDebugDisassemblyStream2`.
+## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
+ A tabela a seguir `IDebugDisassemblyStream2`mostra os métodos de .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Ler](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Lê a partir da posição atual no fluxo de desmontagem de instruções.|
-|[Buscar](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Move o ponteiro de leitura no fluxo de desmontagem um determinado número de instruções em relação a uma posição especificada.|
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Retorna um identificador de local de código para um contexto de código em particular.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Retorna um objeto de contexto de código correspondente a um identificador de local de código especificada.|
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Retorna um identificador de local do código que representa o local atual do código.|
+|[Ler](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Leia as instruções a partir da posição atual no fluxo de desmontagem.|
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Move o ponteiro de leitura no fluxo de desmontagem um determinado número de instruções relativas a uma posição especificada.|
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Retorna um identificador de localização de código para um contexto de código específico.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Retorna um objeto de contexto de código correspondente a um identificador de local de código especificado.|
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Retorna um identificador de localização de código que representa a localização atual do código.|
 |[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Obtém o documento de origem associado a este fluxo de desmontagem.|
 |[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Obtém o escopo deste fluxo de desmontagem.|
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Obtém o tamanho deste fluxo de desmontagem.|
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Fica com o tamanho deste fluxo de desmontagem.|
 
 ## <a name="remarks"></a>Comentários
- O fluxo de desmontagem pode ser criado para representar o espaço de endereço inteiro ou apenas uma função ou módulo dentro do espaço. Cada instrução é representada por um [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estrutura retornada por uma chamada para o [leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método.
+ O fluxo de desmontagem pode ser criado para representar todo o espaço de endereço ou apenas uma função ou módulo dentro do espaço. Cada instrução é representada por uma estrutura [de DesmontagemData](../../../extensibility/debugger/reference/disassemblydata.md) retornada por uma chamada para o método [Read.](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

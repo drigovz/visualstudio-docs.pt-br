@@ -1,47 +1,47 @@
 ---
-title: O que há de novo no SDK do Visual Studio 2019 | Microsoft Docs
+title: Novidades no Visual Studio 2019 SDK | Microsoft Docs
 ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4be152cfb39ddea9ddaeea56464a3447be4f2c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 187d3df4b5bcefefc0135c010c7d98951e9b3af8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320603"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740404"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Novidades do SDK do Visual Studio 2019
 
-O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visual Studio de 2019.
+O Visual Studio SDK tem os seguintes recursos novos e atualizados para o Visual Studio 2019.
 
-## <a name="synchronously-autoloaded-extensions-warning"></a>Forma síncrona extensões carregado automaticamente de aviso
+## <a name="synchronously-autoloaded-extensions-warning"></a>Aviso de extensões carregadas de forma sincronizada auto-carregada
 
-Agora os usuários verão um aviso se qualquer uma das suas extensões instaladas sincronicamente são carregados automaticamente na inicialização. Você pode aprender mais sobre o aviso no [sincronicamente carregado automaticamente extensões](synchronously-autoloaded-extensions.md).
+Os usuários agora verão um aviso se alguma de suas extensões instaladas for carregada sincronicamente na inicialização. Você pode aprender mais sobre o aviso em [extensões síncronicamente carregadas automaticamente](synchronously-autoloaded-extensions.md).
 
-## <a name="single-unified-visual-studio-sdk"></a>Único e unificado SDK do Visual Studio
+## <a name="single-unified-visual-studio-sdk"></a>Único, unificado Visual Studio SDK
 
-Agora você pode obter todos os ativos do SDK do Visual Studio por meio de um único pacote NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
+Agora você pode obter todos os ativos Do Visual Studio SDK através de um único pacote NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
 
-## <a name="editor-registration-enhancements"></a>Aprimoramentos de registro de editor
+## <a name="editor-registration-enhancements"></a>Aprimoramentos de registro de editores
 
-Desde sua criação, Visual Studio tem suporte para registro de editor personalizado em que um editor pode declarar sua afinidade para extensões específicas (por exemplo,. XAML e. rc) ou que ele é adequado para qualquer extensão (. *). A partir do Visual Studio 2019 versão 16.1, podemos ampliar o suporte para o editor de registro.
+Desde a sua criação, o Visual Studio tem suportado o registro personalizado do editor onde um editor pode declarar sua afinidade por extensões específicas (por exemplo, .xaml e .rc), ou que é adequado para qualquer extensão (.*). A partir do Visual Studio 2019 versão 16.1, ampliamos o suporte para registro de editor.
 
 ### <a name="filenames"></a>Nomes de arquivos
 
-Além ou em vez de, registrando o suporte para uma extensão de arquivo específico, um editor pode registrar que ele dá suporte a nomes de arquivos específicos ao aplicar o novo `ProvideEditorFilename` ao pacote do editor de atributo.
+Além de registrar o suporte para uma determinada extensão de arquivo, um editor pode registrar que `ProvideEditorFilename` ele suporta nomes de arquivos específicos aplicando o novo atributo ao pacote do editor.
 
-Por exemplo, um editor que dá suporte a todos os arquivos. JSON aplicaria isso `ProvideEditorExtension` de atributo para o seu pacote:
+Por exemplo, um editor que suporta todos os `ProvideEditorExtension` arquivos .json aplicaria esse atributo ao seu pacote:
 
 ```cs
 [ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
 ```
 
-Começando com 16.1, se MyEditor só dá suporte a dois arquivos. JSON bem conhecido, ele pode em vez disso, aplicá-las `ProvideEditorFilename` atributos ao seu pacote:
+A partir do 16.1, se o MyEditor só suportar alguns arquivos .json bem conhecidos, ele pode, em vez disso, aplicar esses `ProvideEditorFilename` atributos ao seu pacote:
 
 ```cs
 [ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
@@ -50,16 +50,16 @@ Começando com 16.1, se MyEditor só dá suporte a dois arquivos. JSON bem conhe
 
 ### <a name="uicontexts"></a>UIContexts
 
-Um editor pode registrar um ou mais UIContexts que representam quando ele é habilitado. UIContexts são registrados por meio da aplicação de uma ou mais instâncias de `ProvideEditorUIContextAttribute` ao pacote que registra o editor.
+Um editor pode registrar um ou mais UIContexts que representam quando ele está ativado. UIContexts são registrados aplicando uma ou `ProvideEditorUIContextAttribute` mais instâncias do pacote que registra o editor.
 
-Se um editor tem UIContexts registrados:
+Se um editor tiver registrado UIContexts:
 
-- Se pelo menos um dos seus UIContexts registrado estiver ativo quando um arquivo com a extensão fornecida é aberto, o editor está incluído na pesquisa do editor.
-- Se nenhum do UIContexts registrado estiver ativo, o editor não está incluído na pesquisa do editor.
+- Se pelo menos um de seus UIContexts registrados estiver ativo quando um arquivo com a extensão dada for aberto, o editor será incluído na pesquisa do editor.
+- Se nenhum dos UIContexts registrados estiver ativo, o editor não será incluído na pesquisa do editor.
 
-Se um editor não registra quaisquer UIContexts, ele é sempre incluído na pesquisa de editor para essa extensão.
+Se um editor não registrar nenhum UIContexts, ele está sempre incluído na pesquisa do editor por essa extensão.
 
-Por exemplo, se um editor está disponível apenas quando um C# projeto estiver aberto, ele pode declarar este afinidade aplicando uma `ProvideEditorUIContext` atributo:
+Por exemplo, se um editor estiver disponível apenas quando um projeto C# `ProvideEditorUIContext` estiver aberto, ele poderá declarar essa afinidade aplicando um atributo:
 
 ```cs
 [ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]

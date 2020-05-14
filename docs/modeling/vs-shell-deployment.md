@@ -7,25 +7,25 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ef0124c06cd6f1a4d24e29b2c02cd0b50a37b0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ca497244a806324d9d2315fa1b1b89404838ff3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115275"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444993"
 ---
 # <a name="vs-shell-deployment"></a>Implantação do VS Shell
 
-Um shell isolado permite que você determine qual funcionalidade do Visual Studio você precisa para interagir com sua linguagem específica de domínio e como essa solução deve ser exibida. Para obter mais informações sobre o Shell isolado do Visual Studio, consulte [Personalizando o Shell isolado](https://vspartner.com/pages/vsshells).
+Um shell isolado permite determinar qual funcionalidade do Visual Studio você precisa para interagir com seu idioma específico de domínio e como essa solução deve aparecer. Para obter mais informações sobre o shell isolado do Visual Studio, consulte [Personalizando a Concha Isolada](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
 
-Para definir um shell do Visual Studio como o destino de implantação:
+Para definir um Visual Studio Shell como alvo de implantação:
 
-1. No projeto **DslPackage** , abra **Source.Extension.tt**.
+1. No projeto **DslPackage,** **abra source.extension.tt**.
 
-2. Em `<SupportedProducts>` inserir:
+2. Sob `<SupportedProducts>` a inserção:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Substitua *MyIsolatedShell* pelo nome do seu pacote de shell isolado.
+   Substitua *myisolatedshell* pelo nome do seu pacote shell isolado.

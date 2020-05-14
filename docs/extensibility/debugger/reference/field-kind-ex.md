@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309009"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736882"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
-Enumera os tipos de campos adicionais que um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto pode conter. Esta enumeração estende o [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeração.
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
+Enumera tipos adicionais de campos que um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pode conter. Essa enumeração estende a [enumeração FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,21 +46,21 @@ public enum enum_FIELD_KIND_EX
 
 ## <a name="fields"></a>Campos
 `FIELD_KIND_EX_NONE`\
-Campo não contém um tipo estendido.
+O campo não contém um tipo estendido.
 
 `FIELD_TYPE_EX_METHODVAR`\
-Campo contém uma variável do método.
+O campo contém uma variável de método.
 
 `FIELD_TYPE_EX_CLASSVAR`\
-Campo contém uma variável de classe.
+O campo contém uma variável de classe.
 
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: Sh.h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

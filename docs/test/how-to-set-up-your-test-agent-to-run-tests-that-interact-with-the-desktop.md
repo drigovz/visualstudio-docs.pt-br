@@ -8,21 +8,28 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588961"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880176"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
+::: moniker range="vs-2017"
 Se desejar executar testes automatizados que interajam com a área de trabalho, configure o agente para ser executado como um processo em vez de um serviço. Por exemplo, se você desejar executar um teste de IU codificado remotamente usando um controlador de teste e um agente de teste ou se desejar executar um teste e capturar uma gravação de vídeo ao executá-lo, será preciso configurar o agente para ser executado como um processo. Quando você atribui agentes a funções nas configurações de teste usando o Visual Studio ou atribui agentes a funções no seu ambiente usando o Microsoft Test Manager, é preciso alterar a configuração para todos os agentes atribuídos às funções que têm que interagir com a área de trabalho.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Se desejar executar testes automatizados que interajam com a área de trabalho, configure o agente para ser executado como um processo em vez de um serviço. Por exemplo, se você desejar executar um teste de IU codificado remotamente usando um controlador de teste e um agente de teste ou se desejar executar um teste e capturar uma gravação de vídeo ao executá-lo, será preciso configurar o agente para ser executado como um processo. Quando você atribui agentes a funções em suas configurações de teste usando o Visual Studio, você deve alterar a configuração para quaisquer agentes atribuídos a funções que tenham que interagir com a área de trabalho.
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Se você usar o Microsoft Test Manager para configurar um ambiente de laboratório, ele instalará o agente de teste. No **Assistente para Criação de Ambiente**, especifique que você deseja configurar uma das funções para executar testes de IU codificados.
+:::moniker-end
 
 > [!IMPORTANT]
 > O computador que está executando um agente no qual você deseja executar testes de IU codificados não pode ser bloqueado nem ter um protetor de tela ativo.
@@ -73,7 +80,9 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
    > [!NOTE]
    > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo se ele não estiver sendo executado, escolha **Iniciar** > **o Visual Studio** > **Microsoft Visual Studio Test Agent**.
 
+   ::: moniker range="vs-2017"
    Se o controlador de teste para o agente de teste estiver registrado no Team Foundation Server, o status de um agente de teste que estiver sendo executado como um processo interativo será exibido no modo de exibição **Controladores** na **Central do Laboratório** do Microsoft Test Manager. Ele é listado com um símbolo de asterisco precedente para denotar que está sendo executado como um processo interativo. Para reiniciar o agente de teste, você deve usar a ferramenta que é executada no computador para o agente de teste e não o modo de exibição **Controladores**.
+   ::: moniker-end
 
 ## <a name="see-also"></a>Confira também
 

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344499"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736023"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Esse método obtém o contexto de memória ou um objeto que contém o valor atual do símbolo.
+Este método obtém o contexto de memória ou objeto que contém o valor atual do símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,20 +43,20 @@ int Bind(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 `pContainer`\
-[in] O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que contém o filho referenciado por `pField`.
+[em] O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que contém a `pField`criança referenciada por .
 
 `pField`\
-[in] O [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o símbolo.
+[em] O [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o símbolo.
 
 `ppObject`\
-[out] Retorna o `IDebugObject` que representa a instância do símbolo.
+[fora] Retorna `IDebugObject` o que representa a instância do símbolo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

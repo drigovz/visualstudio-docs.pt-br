@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70180272"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744935"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
 
@@ -51,7 +51,7 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 
     Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um runtime instalado, você poderá configurar o projeto para referenciar o runtime instalado na página de propriedades. (Depois de criar um projeto, clique com o botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
-## <a name="create-a-vuejs-project-using-a-template"></a>Criar um projeto Vue.js usando um modelo
+## <a name="create-a-vuejs-project-using-nodejs"></a>Crie um projeto Vue.js usando node.js
 
 Use os novos modelos do Vue.js para criar um projeto. O uso do modelo é a maneira mais fácil de começar. Para obter etapas detalhadas, confira [Usar o Visual Studio para criar seu primeiro aplicativo Vue.js](../javascript/quickstart-vuejs-with-nodejs.md).
 

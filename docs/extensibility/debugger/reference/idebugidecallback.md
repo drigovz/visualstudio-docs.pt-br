@@ -5,23 +5,23 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a489256b14b828fd548b3e2da3c2c02f9d5317
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 585ff354cef9686097325ea4dea25cd08c4cbb1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349575"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727831"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Permite que um avaliador de expressão (EE) exibir uma mensagem na janela de saída do depurador.
+ Habilita que um avaliador de expressão (EE) exiba uma mensagem na janela de saída do depurador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -29,22 +29,22 @@ ms.locfileid: "66349575"
 IDebugIDECallback : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Observações para implementadores
- Esse retorno de chamada é implementado pelo mecanismo de depuração gerenciada.
+## <a name="notes-for-implementers"></a>Notas para implementadores
+ Este retorno de chamada é implementado pelo mecanismo de depuração gerenciado.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Ele pode ser consumido por um avaliador de expressão para enviar a saída para a janela de saída do depurador.
+ Ele pode ser consumido por um avaliador de expressão para enviar saída para a janela de saída do depurador.
 
 ## <a name="methods"></a>Métodos
- Essa interface implementa o método a seguir:
+ Esta interface implementa o seguinte método:
 
 |Método|Descrição|
 |------------|-----------------|
-|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Envia a cadeia de caracteres de mensagem especificada para a janela de saída do depurador.|
+|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Envia a seqüência de mensagens especificada para a janela de saída do depurador.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: EE.h
+ Cabeçalho: Ee.h
 
  Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
