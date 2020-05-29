@@ -9,20 +9,20 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916015"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84179954"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste
 
 Quando você cria um aplicativo Web no Visual Studio, pode gerar um script do Windows PowerShell que pode usar posteriormente para automatizar a publicação de seu site no Azure como um aplicativo Web no Serviço de Aplicativo do Azure ou em uma máquina virtual. Você pode editar e estender o script do Windows PowerShell no editor do Visual Studio para atender às suas necessidades ou integrar o script a scripts de compilação, teste e publicação existentes.
 
 Usando esses scripts, você pode provisionar versões personalizadas (também conhecidas como ambientes de desenvolvimento e teste) do seu site para uso temporário. Por exemplo, você pode configurar uma versão específica do seu site em uma máquina virtual do Azure ou no slot de preparo em um site para executar um conjunto de testes, reproduzir um bug, testar uma correção de bug, avaliar uma alteração de proposta ou configurar um ambiente personalizado para uma demonstração ou apresentação. Depois de criar um script que publica seu projeto, você pode recriar ambientes idênticos ao executar novamente o script conforme necessário ou executar o script com seu próprio build do aplicativo Web para criar um ambiente personalizado de teste.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 * O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
@@ -38,7 +38,7 @@ Você pode gerar scripts de publicação para uma máquina virtual que hospeda s
 
 ## <a name="scripts-that-visual-studio-generates"></a>Scripts gerados pelo Visual Studio
 
-O Visual Studio gera uma pasta de nível de solução chamada **PublishScripts** que contém dois arquivos do Windows PowerShell, um script de publicação para sua máquina virtual ou site e um módulo que contém funções que você pode usar nos scripts. O Visual Studio também gera um arquivo no formato JSON que especifica os detalhes do projeto que você está implantando.
+O Visual Studio gera uma pasta de nível de solução chamada **PublishScripts** que contém dois arquivos do Windows PowerShell, um script de publicação para sua máquina virtual ou site, e um módulo que contém funções que você pode usar nos scripts. O Visual Studio também gera um arquivo no formato JSON que especifica os detalhes do projeto que você está implantando.
 
 ### <a name="windows-powershell-publish-script"></a>Script de publicação do Windows PowerShell
 
@@ -50,7 +50,7 @@ O módulo do Windows PowerShell que o Visual Studio gera contém funções que o
 
 ### <a name="json-configuration-file"></a>Arquivo de configuração JSON
 
-O arquivo JSON é criado na pasta **Configurações** pasta e contém dados de configuração que especificam exatamente quais recursos implantar no Azure. O nome do arquivo que o Visual Studio gera é project-name-WAWS-dev.json se você tiver criado um site, ou o projeto name-VM-dev.json se você tiver criado uma máquina virtual. Aqui está um exemplo de um arquivo de configuração JSON é gerado quando você cria um site. A maior parte dos valores é autoexplicativa. O nome do site é gerado pelo Azure, portanto não pode coincidir com o nome do projeto.
+O arquivo JSON é criado na pasta **Configurações** e contém dados de configuração que especificam exatamente quais recursos implementar no Azure. O nome do arquivo que o Visual Studio gera é project-name-WAWS-dev.json se você tiver criado um site, ou o projeto name-VM-dev.json se você tiver criado uma máquina virtual. Aqui está um exemplo de um arquivo de configuração JSON é gerado quando você cria um site. A maior parte dos valores é autoexplicativa. O nome do site é gerado pelo Azure, portanto não pode coincidir com o nome do projeto.
 
 ```json
 {
@@ -142,17 +142,17 @@ Quando você cria uma máquina virtual, o arquivo de configuração JSON é seme
 
 Você pode editar a configuração JSON para alterar o que acontece quando você executa scripts de publicação. As seções `cloudService` e `virtualMachine` são necessárias, mas você pode excluir a seção `databases` se não precisar dela. As propriedades vazias no arquivo de configuração padrão que o Visual Studio gera são opcionais; as propriedades com valores no arquivo de configuração padrão são obrigatórias.
 
-Se você tiver um site com vários ambientes de implantação (conhecidos como slots) em vez de um único site de produção no Azure, pode incluir o nome do slot no nome do site no arquivo de configuração JSON. Por exemplo, se você tiver um site chamado **meusite** e um slot para ele chamado **teste**, o URI será `mysite-test.cloudapp.net`, mas o nome correto a ser usado no arquivo de configuração é meusite(teste). Você só pode fazer isso se o site e os slots já existirem em sua assinatura. Se não existirem, crie o site executando o script sem especificar o slot e depois crie o slot no [portal do Azure](https://portal.azure.com/)e execute o script com o nome do site modificado. Para obter mais informações sobre os slots de implantação para aplicativos Web, consulte [Configurar ambientes de preparo para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-staged-publishing).
+Se você tiver um site com vários ambientes de implantação (conhecidos como slots) em vez de um único site de produção no Azure, pode incluir o nome do slot no nome do site no arquivo de configuração JSON. Por exemplo, se você tiver um site que seja nomeado como **mysite** e um slot para ele nomeado **test** então o URI seria `mysite-test.cloudapp.net`, mas o nome correto a ser usado no arquivo de configuração será mysite(test). Você só pode fazer isso se o site e os slots já existirem em sua assinatura. Se não existirem, crie o site executando o script sem especificar o slot e depois crie o slot no [portal do Azure](https://portal.azure.com/)e execute o script com o nome do site modificado. Para obter mais informações sobre os slots de implantação para aplicativos Web, consulte [Configurar ambientes de preparo para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-staged-publishing).
 
 ## <a name="how-to-run-the-publish-scripts"></a>Como gerar scripts de publicação
 
 Se você nunca executou um script do Windows PowerShell antes, deve primeiro definir a política de execução para habilitar a execução dos scripts. A política é um recurso de segurança para impedir que usuários executem scripts do Windows PowerShell se estiverem vulneráveis a malware ou vírus que envolvem a execução de scripts.
 
-### <a name="run-the-script"></a>Execute o script
+### <a name="run-the-script"></a>Executar o script
 
 1. Crie o pacote de implantação na Web para seu projeto. Um pacote de implantação na Web é um arquivo compactado (arquivo .zip) que contêm arquivos que você deseja copiar em seu site ou máquina virtual. Você pode criar pacotes de implantação na Web no Visual Studio para qualquer aplicativo Web.
 
-   ![Criar pacote de implantação da Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Criar pacote de implantação na Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
    Consulte [Como criar um pacote de implantação na Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
@@ -306,18 +306,18 @@ return $WebDeployPackage
     Para automatizar o teste do seu aplicativo, adicione código ao `Test-WebApplication`. Certifique-se de cancelar os comentários das linhas em **Publish-WebApplication.ps1** no qual essas funções são chamadas. Se você não fornecer uma implementação, poderá compilar manualmente seu projeto com o Visual Studio e depois executar o script de publicação para publicar no Azure.
 
 ## <a name="publishing-function-summary"></a>Resumo da função de publicação
-Para obter ajuda para as funções que você pode usar no prompt de comando do Windows PowerShell, use o comando `Get-Help function-name`. A Ajuda inclui exemplos e ajuda de parâmetro. O mesmo texto da Ajuda está também nos arquivos de origem de script **AzureWebAppPublishModule.psm1** e **Publish-WebApplication.ps1**. O script e a ajuda estão localizados em seu idioma do Visual Studio.
+Para obter ajuda para as funções que você pode usar no prompt de comando do Windows PowerShell, use o comando `Get-Help function-name`. A Ajuda inclui exemplos e ajuda de parâmetro. O mesmo texto de ajuda também está nos arquivos de origem do script **AzureWebAppPublishModule. psm1** e **Publish-WebApplication. ps1**. O script e a ajuda estão localizados em seu idioma do Visual Studio.
 
 **AzureWebAppPublishModule**
 
 | Nome da função | Descrição |
 | --- | --- |
 | Add-AzureSQLDatabase |Cria um novo banco de dados SQL do Azure. |
-| Add-AzureSQLDatabases |Cria os bancos de dados de SQL do Azure com base nos valores no arquivo de configuração JSON que o Visual Studio gera. |
+| Add-AzureSQLDatabases |Cria os bancos de dados SQL do Azure com base nos valores no arquivo de configuração JSON que o Visual Studio gera. |
 | Add-AzureVM |Cria uma máquina virtual do Azure e retorna a URL da VM implantada. A função configura os pré-requisitos e, em seguida, chama a função **New-AzureVM** (módulo do Azure) para criar uma nova máquina virtual. |
 | Add-AzureVMEndpoints |Adiciona novos pontos de extremidade de entrada a uma máquina virtual e retorna a máquina virtual com o novo ponto de extremidade. |
 | Add-AzureVMStorage |Cria uma nova conta de armazenamento do Azure na assinatura atual. O nome da conta começa com "devtest", seguido por uma cadeia de caracteres alfanumérica exclusiva. A função retorna o nome da nova conta de armazenamento. Especifique um local ou um grupo de afinidades para a nova conta de armazenamento. |
-| Add-AzureWebsite |Cria um site com nome e local especificados. Essa função chama a função **New-AzureWebsite** no módulo do Azure. Se a assinatura ainda não incluir um site com o nome especificado, essa função criará o site e retornará um objeto de site. Caso contrário, retornará `$null`. |
+| Add-AzureWebsite |Cria um site com nome e local especificados. Essa função chama a função **New-AzureWebsite** no módulo do Azure. Se a assinatura ainda não incluir um site com o nome especificado, essa função criará o site e retornará um objeto de site. Caso contrário, ele retornará `$null`. |
 | Assinatura de backup |Salva a assinatura atual do Azure na variável `$Script:originalSubscription` no escopo do script. Essa função salva a assinatura do Azure atual (conforme obtidas pelo `Get-AzureSubscription -Current`) e sua conta de armazenamento e a assinatura é alterada por esse script (armazenado na variável `$UserSpecifiedSubscription`) e sua conta de armazenamento, no escopo de script. Ao salvar os valores, você pode usar uma função, como `Restore-Subscription`, para restaurar a assinatura atual original em a conta de armazenamento ao status atual, se o status atual foi alterado. |
 | Find-AzureVM |Obtém a máquina virtual especificada do Azure. |
 | Format-DevTestMessageWithTime |Anexa data e hora a uma mensagem. Essa função destina-se a mensagens gravadas em fluxos de erro e detalhes. |
@@ -332,7 +332,7 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Test-AzureModule |Retorna `$true` se a versão do módulo do Azure instalado for 0.7.4 ou posterior. Retorna `$false` se o módulo não estiver instalado ou for uma versão anterior. Essa função não tem parâmetros. |
 | Test-AzureModuleVersion |Retorna `$true` se a versão do módulo do Azure for 0.7.4 ou posterior. Retorna `$false` se o módulo não estiver instalado ou for uma versão anterior. Essa função não tem parâmetros. |
 | Test-HttpsUrl |Converte a URL de entrada em um objeto System.Uri. Retorna `$True` se a URL for absoluta e seu esquema for https. Retorna `$false` se a URL for relativa, seu esquema não for HTTPS ou a cadeia de caracteres de entrada não puder ser convertida em URL. |
-| Test-Member |Retorna `$true` se uma propriedade ou método for um membro do objeto. Caso contrário, retornará `$false`. |
+| Test-Member |Retorna `$true` se uma propriedade ou método for um membro do objeto. Caso contrário, retorna `$false`. |
 | Write-ErrorWithTime |Grava uma mensagem de erro prefixada com a hora atual. Essa função chama a função **Format-DevTestMessageWithTime** para prefixar a hora antes de gravar a mensagem no fluxo de erro. |
 | Write-HostWithTime |Grava uma mensagem no programa host (**Write-Host**) prefixada com a hora atual. O efeito da gravação no programa host varia. A maioria dos programas que hospeda o Windows PowerShell grava essas mensagens na saída padrão. |
 | Write-VerboseWithTime |Grava uma mensagem detalhada prefixada com a hora atual. Como a mensagem chama **Write-Verbose**, ela será exibida somente quando o script for executado com o parâmetro **Detalhado** ou quando a preferência **VerbosePreference** é definida como **Continuar**. |
@@ -347,5 +347,5 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Publish-WebApplication |Cria e implanta aplicativos Web, máquinas virtuais, bancos de dados SQL e contas de armazenamento para um projeto Web do Visual Studio. |
 | Test-WebApplication |Essa função não está implementada. Você pode adicionar comandos a essa função para testar o aplicativo. |
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
-Saiba mais sobre os scripts do PowerShell ao ler [Criando scripts com o Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) e confira outros scripts do Azure PowerShell no [Script Center](https://azure.microsoft.com/documentation/scripts/).
+## <a name="next-steps"></a>Próximas etapas
+Saiba mais sobre os scripts do PowerShell ao ler [Criando scripts com o Windows PowerShell](/powershell/scripting/overview) e confira outros scripts do Azure PowerShell no [Script Center](https://azure.microsoft.com/documentation/scripts/).

@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276495"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180552"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "81276495"
 
 Você pode relatar um problema do Visual Studio ou de seu instalador usando a Ferramenta de Comentários incluída neles. A Ferramenta de Comentários permite que você inclua facilmente informações de diagnóstico nos seus comentários e ajuda as equipes do Visual Studio a diagnosticar e corrigir problemas com muito mais eficiência. Aqui estão as etapas para relatar um problema.
 
-1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de feedback do menu **Ajude a** > **enviar relatório de feedback** > **um problema**.
+1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar**a  >  **enviar comentários**para  >  **relatar um problema**.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/vsfeedbackentry.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
 
@@ -43,10 +43,7 @@ Você pode relatar um problema do Visual Studio ou de seu instalador usando a Fe
 
    ![Pesquisar e votar em problemas semelhantes](../ide/media/search-and-vote.png)
 
-1. Se você não encontrar o problema encontrado, escolha **Relatar novo problema** na parte inferior da tela.
-
-   > [!NOTE]
-   > O botão **Relatar novo problema** aparece apenas na interface do Visual Studio para a Comunidade de Desenvolvedores. Você não pode relatar um problema diretamente no site da [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
+1. Se você não encontrar o problema encontrado, escolha **relatar novo problema** na parte inferior da tela.
 
 1. Crie um título descritivo para o problema que nos ajude a encaminhá-lo à equipe correta do Visual Studio.
 
@@ -54,7 +51,7 @@ Você pode relatar um problema do Visual Studio ou de seu instalador usando a Fe
 
    ![Relatar um problema novo](../ide/media/report-new-problem.png)
 
-1. Selecione **Ao lado** para mover-se para a guia **Anexos.** Aqui, você pode capturar sua tela atual para enviá-la para a Microsoft. Para anexar capturas de tela adicionais ou outros arquivos, escolha **Anexar Arquivos Adicionais**.
+1. Selecione **Avançar** para ir para a guia **anexos** . Aqui, você pode capturar a tela atual para enviá-la à Microsoft. Para anexar capturas de tela adicionais ou outros arquivos, escolha **Anexar Arquivos Adicionais**.
 
    ![Anexe uma captura de tela a um relatório de problema do Visual Studio](media/report-a-problem-screenshot.png)
 
@@ -72,7 +69,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 
 1. Selecione a guia **Gravar**.
 
-1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se ** \<** o Visual Studio estiver pendurado, selecione Criar uma nova instância>gravar as ações em uma nova instância do Visual Studio.
+1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se o Visual Studio estiver suspenso, selecione **\<Create a new instance>** para registrar as ações em uma nova instância do Visual Studio.
 
 1. Selecione **Iniciar Gravação**. Conceda permissão para executar a ferramenta.
 
@@ -120,10 +117,10 @@ Se você não quiser ou não puder usar o Visual Studio para relatar um problema
 
 Se você não tem um problema a ser relatado, mas deseja sugerir um recurso, há um local para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Relatar um problema com C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Comunidade de desenvolvedores do Estúdio Visual](https://developercommunity.visualstudio.com/)
+* [Comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

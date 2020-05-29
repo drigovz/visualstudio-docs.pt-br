@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911593"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182866"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos da depuração de instantâneos no Visual Studio
 
-Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou informe um novo problema escolhendo **ajuda** > **enviar comentários** > **relatar um problema** no Visual Studio.
+Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou informe um novo problema, escolhendo **ajudar**  >  **enviar comentários**para  >  **relatar um problema** no Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Attach Depurador de Instantâneos" encontra um erro de código de status HTTP
 
@@ -30,14 +30,38 @@ Se você vir o erro a seguir na janela de **saída** durante a tentativa de anex
 
 ### <a name="401-unauthorized"></a>(401) não autorizado
 
-Esse erro indica que a chamada REST emitida pelo Visual Studio para o Azure usa uma credencial inválida. Um bug conhecido com o módulo fácil Azure Active Directory OAuth pode produzir esse erro.
+Esse erro indica que a chamada REST emitida pelo Visual Studio para o Azure usa uma credencial inválida. 
 
 Siga estas etapas:
 
-* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo em **depurar** > **anexar depurador de instantâneos...**  > **recurso do Azure** > **selecione existente**ou no Cloud Explorer.
+* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo do **debug**  >  **Attach depurador de instantâneos...**  >  **Recurso**  >  do Azure **Selecione existente**ou no Cloud Explorer.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
-### <a name="403-forbidden"></a>(403) proibido
+Se você tiver habilitado a autenticação/autorização (EasyAuth) em seu serviço de aplicativo, poderá encontrar um erro 401 com LaunchAgentAsync na mensagem de erro da pilha de chamadas. Verifique se a **ação a ser tomada quando a solicitação não está autenticada** está definida para **Permitir solicitações anônimas (nenhuma ação)** no portal do Azure e forneça um Authorization. JSON em D:\Home\sites\wwwroot com o conteúdo a seguir em vez disso. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+A primeira rota efetivamente protege seu domínio de aplicativo semelhante a **fazer logon com [identityprovider]**. A segunda rota expõe o ponto de extremidade SnapshotDebugger AgentLaunch fora da autenticação, que executa a ação predefinida de iniciar o agente de diagnóstico SnapshotDebugger *somente se* a extensão de site pré-instalada do SnapshotDebugger estiver habilitada para seu serviço de aplicativo. Para obter mais detalhes sobre a configuração Authorization. JSON, consulte [regras de autorização de URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+
+### <a name="403-forbidden"></a>(403) Proibido
 
 Esse erro indica que a permissão foi negada. Isso pode ser causado por muitos problemas diferentes.
 
@@ -54,8 +78,8 @@ Esse erro indica que o site não pôde ser encontrado no servidor.
 Siga estas etapas:
 
 * Verifique se você tem um site implantado e em execução no recurso de serviço de aplicativo ao qual você está anexando.
-* Verifique se o site está disponível em https://\<recurso\>. azurewebsites.net
-* Verifique se o aplicativo Web personalizado em execução correta não retorna um código de status 404 quando acessado em https://\<recurso\>. azurewebsites.net
+* Verifique se o site está disponível em https:// \<resource\> . azurewebsites.net
+* Verifique se o aplicativo Web personalizado em execução correta não retorna um código de status 404 quando acessado em https:// \<resource\> . azurewebsites.net
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 ### <a name="406-not-acceptable"></a>(406) não aceitável
@@ -64,7 +88,7 @@ Esse erro indica que o servidor não pode responder ao tipo definido no cabeçal
 
 Siga estas etapas:
 
-* Verifique se seu site está disponível em https://\<recurso\>. azurewebsites.net
+* Verifique se seu site está disponível em https:// \<resource\> . azurewebsites.net
 * Verifique se o site não foi migrado para novas instâncias. Depurador de Instantâneos usa a noção de ARRAffinity para rotear solicitações para instâncias específicas que podem produzir esse erro intermitentemente.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
@@ -181,7 +205,7 @@ Logs de agente podem ser encontrados nos seguintes locais:
   - Navegue até o site do Kudu do Serviço de Aplicativo (ou seja, seu serviçodeaplicativo.**scm**.azurewebsites.net) e vá até o Console de Depuração.
   - Os logs de agente são armazenados no seguinte diretório: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - Entre na sua VM; os logs de agente estão armazenados da seguinte maneira: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Entre em sua VM, os logs de agente são armazenados da seguinte maneira: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ *. txt
 - AKS
   - Navegue até o diretório a seguir: /tmp/diag/AgentLogs/*
 
@@ -190,7 +214,7 @@ Logs de agente podem ser encontrados nos seguintes locais:
 Logs de instrumentação podem ser encontrados nos seguintes locais:
 
 - Serviços de Aplicativos:
-  - O log de erros é enviado automaticamente para o D:\Home\LogFiles\eventlog.xml, os eventos são marcados com `<Provider Name="Instrumentation Engine" />` ou "pontos de interrupção de produção"
+  - O log de erros é enviado automaticamente para D:\Home\LogFiles\eventlog.xml, os eventos são marcados com `<Provider Name="Instrumentation Engine" />` ou "pontos de interrupção de produção"
 - VM/VMSS:
   - Entre em sua VM e abra o Visualizador de Eventos.
   - Abra a exibição a seguir: *Logs do Windows > Aplicativo*.
@@ -199,7 +223,7 @@ Logs de instrumentação podem ser encontrados nos seguintes locais:
   - Logs de mecanismo de instrumentação em /tmp/diag/log.txt /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath no DockerFile)
   - Log de ponto de interrupção de produção em /tmp/diag/shLog.txt
 
-## <a name="known-issues"></a>Problemas Conhecidos
+## <a name="known-issues"></a>Problemas conhecidos
 
 - Atualmente, não há suporte para a depuração de instantâneos com vários clientes do Visual Studio no mesmo Serviço de Aplicativo.
 - Otimizações Roslyn IL não têm suporte total em projetos ASP.NET Core. Para alguns projetos ASP.NET Core, talvez não seja possível ver algumas variáveis ou usar algumas variáveis em instruções condicionais.
@@ -218,10 +242,10 @@ A depuração de instantâneos e o Application Insights dependem de um ICorProfi
 - Inicie o site do Slot. Recomendamos que você visite o site para aquecê-lo novamente.
 - Troque o Slot com a produção.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
-- [Depurar aplicativos ASP.NET ao vivo usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)
-- [Depurar conjuntos de dimensionamento de máquinas Machines\Virtual virtuais do ASP.NET do Azure em tempo real usando o Depurador de Instantâneos](../debugger/debug-live-azure-virtual-machines.md)
-- [Debug Live ASP.NET Azure kubernetes usando o Depurador de Instantâneos](../debugger/debug-live-azure-kubernetes.md)
-- [Perguntas frequentes sobre depuração de instantâneos](../debugger/debug-live-azure-apps-faq.md)
+- [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)
+- [Depurar Máquinas Virtuais ASP.NET Azure\Conjuntos de Dimensionamento de VMs dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-virtual-machines.md)
+- [Depurar Kubernetes ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-kubernetes.md)
+- [Perguntas frequentes sobre depuração de instantâneo](../debugger/debug-live-azure-apps-faq.md)
