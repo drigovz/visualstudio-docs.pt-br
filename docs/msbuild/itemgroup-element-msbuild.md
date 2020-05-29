@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633636"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173506"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
-Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto MSBuild deve `ItemGroup` ser especificado como filho de um elemento.
+Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto do MSBuild deve ser especificado como um filho de um `ItemGroup` elemento.
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,7 +63,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 | [Destino](../msbuild/target-element-msbuild.md) | A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Exemplo
@@ -86,8 +87,12 @@ O exemplo de código a seguir mostra as coleções de itens definidos pelo usuá
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+Em um arquivo de projeto simples, você normalmente usa um único `ItemGroup` elemento, mas também pode usar vários `ItemGroup` elementos. Quando vários `ItemGroup` elementos são usados, os itens são combinados em um único `ItemGroup` . Por exemplo, alguns itens podem ser incluídos por um `ItemGroup` elemento separado que é definido em um arquivo importado.
+
+Os RowGroups podem ter condições aplicadas usando o `Condition` atributo. Nesse caso, os itens só serão adicionados à lista de itens se a condição for satisfeita. Consulte as [condições do MSBuild](msbuild-conditions.md)
+
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)
-- [Itens comuns do projeto MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
