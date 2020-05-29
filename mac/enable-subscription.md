@@ -3,14 +3,14 @@ title: Habilitar Assinatura
 description: Este artigo descreve como usar sua conta da Microsoft para ativar sua assinatura e desbloquear recursos no Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984037"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183932"
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
 
@@ -28,7 +28,7 @@ Para começar a usar uma assinatura, faça logon no Visual Studio para Mac segui
 
 Se sua assinatura tiver expirado, você terá duas opções:
 
-1. Renovar sua assinatura. Você pode renovar sua [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)assinatura navegando para .
+1. Renovar sua assinatura. Você pode renovar sua assinatura navegando até [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
 
 2. Se você tiver outra conta com uma assinatura ativa, poderá adicioná-la ao Visual Studio para Mac conforme detalhado no artigo [Adicionar várias contas de usuário](signing-in.md). O Visual Studio para Mac detectará a melhor licença disponível de todas as contas que você adicionou.
 
@@ -44,6 +44,6 @@ Atualmente não é possível utilizar uma chave do produto (Product Key) para ha
 
 Se você tiver comprado o Visual Studio Enterprise 2019 para Mac para computadores sem uma conexão de Internet, poderá continuar a usar o Visual Studio para Mac sem ativação, mas o Xamarin Inspector, Xamarin Profiler e recursos de assemblies inseridos não estarão disponíveis.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)

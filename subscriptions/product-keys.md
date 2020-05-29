@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
-ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232223"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183919"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -21,6 +21,9 @@ As assinaturas do Visual Studio fornecem acesso a grande variedade de produtos d
 As assinaturas do Visual Studio geralmente incluem cinco chaves do produto (Product Keys) para as versões atuais dos produtos do Windows e do Office, além de três chaves para as versões anteriores.
 
 A maioria das chaves do produto (Product Keys) também permite várias ativações do produto para cada chave.  Muitos produtos também permitem instalar e usar o produto por 30 dias ou mais sem a ativação.  Para a maioria dos assinantes, isso fornece uma quantidade mais do que suficiente de ativações para atender às suas necessidades.  No entanto, se as ativações disponíveis para um produto estiverem esgotadas, você poderá enviar uma solicitação de chaves adicionais por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+
+> [!NOTE]
+> Se sua assinatura for fornecida por seu trabalho ou escola, o administrador da assinatura controlará se você tem acesso aos downloads de software.  Se o acesso aos downloads estiver desabilitado para sua assinatura, o acesso às chaves do produto também será desabilitado.  Se você precisar de downloads e/ou chaves de produto, [contate o administrador](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Ativando um produto
 A ativação é necessária para determinados produtos.  Geralmente, nas assinaturas do Visual Studio, isso se limita ao Windows, ao Windows Server, aos aplicativos cliente do Microsoft Office e ao Expression Studio. Quando a ativação é necessária, muitos produtos, incluindo o Windows e o Office, permitem a instalação e o uso do produto sem ativação por 30 dias ou mais. Se você refizer a imagem de seus computadores com frequência (pelo menos uma vez a cada 30 dias), considere NÃO ativar o produto. As chaves do produto (Product Keys) fornecidas como parte da assinatura do Visual Studio não permitem ativações ilimitadas de um produto.
@@ -63,7 +66,7 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 |    Tipo de Chave           |    Descrição                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Não Aplicável                    |    Nenhuma chave é necessária para instalar este produto.                                                       |
-|    Varejo                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
+|    Retail                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
 |    Ativação múltipla        |    Uma MAK (Chave de Ativação Múltipla) permite ativar várias instalações de um produto com a mesma chave. Normalmente, as MAKs são usadas com as versões de licenciamento por volume dos produtos. Geralmente, é fornecida somente uma chave MAK por assinatura.    |
 |    Chave de ativação estática    |    As chaves de ativação estática são fornecidas para produtos que não exigem ativação. Elas podem ser usadas para um número ilimitado de instalações.                                                                                                                  |
 |    Chave personalizada                 |    As chaves personalizadas permitem ações especiais ou fornecem informações para ativar ou instalar o produto.                                                                                                                                                                |
@@ -76,7 +79,7 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 
 Você pode solicitar uma chave na página de download do produto ou pesquisar a chave que você precisa na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

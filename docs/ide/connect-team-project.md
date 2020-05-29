@@ -1,16 +1,16 @@
 ---
 title: Conectar-se a projetos no Team Explorer
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472744"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183698"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conectar-se a projetos no Team Explorer
 
@@ -19,7 +19,7 @@ Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de c
 ![Home page do Team Explorer no Visual Studio](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Se você abrir o Visual Studio e o **Team Explorer** não for exibido, abra-o escolhendo **Exibir** > **Team Explorer** na barra de menus.
+> Se você abrir o Visual Studio e **Team Explorer** não aparecer, abra-o escolhendo **Exibir**  >  **Team Explorer** na barra de menus ou pressionando **Ctrl** + **&#92;**, **Ctrl** + **M**.
 
 ## <a name="connect-to-a-project-or-repository"></a>Conectar-se a um projeto ou um repositório
 
@@ -40,8 +40,8 @@ Para se conectar a um projeto:
 > [!TIP]
 > Caso precise criar um projeto ou adicionar usuários a um projeto, confira [Criar um projeto (Azure DevOps)](/azure/devops/organizations/projects/create-project) e [Adicionar usuários a um projeto ou uma equipe (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do Team Explorer](reference/team-explorer-reference.md)
 - [Conectar-se a um projeto (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [Solução de problemas conectando-se a um projeto](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [Solucionar problemas de conexão com um projeto](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

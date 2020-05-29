@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071941"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183100"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
@@ -28,9 +28,6 @@ As estruturas compatíveis são:
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Executor de Exportação (essa estrutura é específica das Ferramentas Node.js para Visual Studio)
-
-> [!WARNING]
-> Atualmente, um problema no Tape impede a execução dos testes do Tape. Se o [PR #361](https://github.com/substack/tape/pull/361) for mesclado, o problema deverá ser resolvido.
 
 Se não houver suporte para sua estrutura favorita, confira [Adicionar suporte para uma estrutura de teste de unidade](#addingFramework) para obter informações sobre como adicionar o suporte.
 
@@ -70,7 +67,7 @@ Se você não definiu as opções de teste de unidade nas propriedades do projet
 > [!Note]
 > As opções de teste de unidade terão preferência em relação às configurações de arquivos individuais.
 
-Após abrir o Test Explorer (escolha **Test** > **Windows** > **Test Explorer),** o Visual Studio descobre e exibe testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
+Depois de abrir o Gerenciador de testes (escolha **testar**o  >  **Windows**  >  **Test Explorer**), o Visual Studio descobre e exibe os testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
 
 ![Gerenciador de Testes](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -91,7 +88,7 @@ Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. O
 > [!NOTE]
 > No momento, não damos suporte à criação de perfil de testes nem à cobertura de código.
 
-### <a name="run-tests-from-the-command-line"></a>Executar testes da linha de comando
+### <a name="run-tests-from-the-command-line"></a>Executar testes na linha de comando
 
 Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) do Visual Studio 2017 usando o seguinte comando:
 
@@ -174,4 +171,4 @@ Além das propriedades acima, também será necessário instalar o pacote [Micro
 </PropertyGroup>
 ```
 
-Algumas estruturas de teste podem exigir pacotes npm adicionais para detecção de teste. Por exemplo, a brincadeira requer o pacote npm de suporte ao editor-jest. Se necessário, verifique a documentação para o quadro específico.
+Algumas estruturas de teste podem exigir pacotes NPM adicionais para detecção de teste. Por exemplo, Jest requer o pacote Jest-editor-support NPM. Se necessário, verifique a documentação da estrutura específica.

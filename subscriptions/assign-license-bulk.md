@@ -4,23 +4,27 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564180"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182892"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
 
 Para adicionar grandes grupos de usuários, você pode usar o recurso adição em massa ou, se sua organização estiver usando Microsoft Azure Active Directory (Azure AD), você poderá usar grupos do Azure AD. Este artigo explicará o processo para ambas as opções. 
 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
+
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Usar adição em massa para atribuir assinaturas
-1. Entre no portal de administração das assinaturas do Visual Studio em https://manage.visualstudio.com.
+1. Entre no portal de administração das assinaturas do Visual Studio em https://manage.visualstudio.com .
 
 2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** . escolha a guia **Adicionar** e, em seguida, escolha **Adicionar em massa** na lista suspensa.  
 
@@ -32,6 +36,9 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
    > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
 
 3. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (A*referência* é um campo opcional.) Salve o arquivo localmente depois de terminar.
+
+    > [!NOTE]
+    > Um dos campos no modelo permite que os administradores habilitem ou desabilitem a capacidade dos assinantes de baixar o software.  A desabilitação dos downloads também desabilita o acesso às chaves do produto.
 
    Para que não haja problemas com o upload, observe as seguintes melhores práticas:
 
@@ -74,6 +81,7 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > [!IMPORTANT]
 >
 > As seguintes limitações se aplicam ao uso de grupos do Azure AD para adicionar assinantes:
+> - O administrador deve ser membro do locatário do AAD ao adicionar inicialmente um grupo ao portal de administração.  Depois que o grupo tiver sido adicionado, as alterações na associação dos grupos não exigirão o envolvimento do administrador. 
 > - Os grupos devem conter pelo menos um membro.  Não há suporte para grupos vazios.
 > - Os grupos devem ter menos de 1.000 usuários. 
 > - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados.
@@ -81,7 +89,11 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD.
 > - Endereços de email separados para notificações não têm suporte para assinaturas adicionadas usando grupos do Azure AD.  
 
-1. Entre no portal de administração das assinaturas do Visual Studio em [https://manage.visualstudio.com](https://manage.visualstudio.com).
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+
+1. Entre no portal de administração das assinaturas do Visual Studio em [https://manage.visualstudio.com](https://manage.visualstudio.com) .
 
 2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** .
 
@@ -106,9 +118,6 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > [!NOTE]
 > Se você já tiver atribuído assinaturas individualmente a usuários que são adicionados subsequentemente como parte de um grupo do Azure AD, eles serão adicionados como parte do grupo e não serão mais listados individualmente. No entanto, se a assinatura individual for para um nível de assinatura diferente, ela terá duas assinaturas.  Exemplo: se um usuário tiver uma assinatura de Visual Studio Professional individual e for um membro de um grupo ao qual você atribui Visual Studio Enterprise assinaturas, eles terão ambos.  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>P: posso escolher vários níveis de assinatura a serem atribuídos dentro de um grupo do Azure AD? 
@@ -120,7 +129,7 @@ R: não--para modificar as informações de um assinante individual, você preci
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: adicionei alguém ao meu grupo de segurança do Azure AD, mas não os vejo adicionados no portal de administração de assinaturas e eles não têm uma assinatura. Por que não?  
 R: dependendo de como sua organização tiver configurado o Azure AD, você poderá ver atrasos de até 24 horas antes que o usuário seja adicionado. Se tiver sido mais de 24 horas, [entre em contato com o suporte](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

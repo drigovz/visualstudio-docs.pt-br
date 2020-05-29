@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128207"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184143"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta local usando o Visual Studio
 
@@ -24,29 +24,29 @@ ms.locfileid: "71128207"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Se você precisar publicar um aplicativo da área de trabalho do Windows em uma pasta local, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLI, consulte [Implantar um aplicativo nativo usando O ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, consulte Implantar um aplicativo nativo usando um projeto de [configuração](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Se você precisar publicar um aplicativo da área de trabalho do Windows em uma pasta local, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Implantar em uma pasta local
 
 1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
-    ![O comando Publicar no menu de contexto do projeto no Solution Explorer](../deployment/media/quickstart-publish.png "Escolha Publicar")
+    ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
-1. Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Selecione **Criar novo perfil**.
+1. Na caixa de diálogo **publicar** , selecione **pasta**.
 
-1. Na caixa de diálogo **Escolher um destino de publicação**, escolha **Pasta**.
+    ![Escolher pasta como um destino de publicação](../deployment/media/quickstart-publish-folder.png "Escolher pasta")
 
-    ![Escolha a pasta local como um destino de publicação](../deployment/media/quickstart-publish-folder.png "Escolher pasta")
+1. Insira um caminho ou selecione **procurar** para especificar uma pasta.
 
-1. Insira um caminho ou selecione **Procurar** para especificar uma pasta local.
+    ![Especifique o caminho para a pasta](../deployment/media/quickstart-publish-folder-path.png "Escolher pasta")
 
 1. Selecione **Publicar**. O Visual Studio cria o projeto e o publica na pasta especificada. O painel **Publicar** das propriedades do projeto é exibido, mostrando um resumo do perfil.
 
     ![Publicar painel de propriedade mostrando um resumo do perfil](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Para definir as configurações de implantação, selecione **Configurar** no resumo do perfil e selecione a guia **Configurações**.
+1. Para definir as configurações de implantação, selecione **Editar** no resumo do perfil de publicação e selecione a guia **configurações** .
 
-    ![Configurações do perfil](../deployment/media/quickstart-profile-settings.png "Configurações de perfil")
+    ![Configurações de perfil](../deployment/media/quickstart-profile-settings.png "Configurações de perfil")
 
 1. Configure opções como se deseja implantar uma configuração de depuração ou de versão e, em seguida, selecione **Salvar**.
 
@@ -56,6 +56,6 @@ Implante os arquivos publicados na maneira que desejar. Por exemplo, é possíve
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar um aplicativo do .NET Core com a ferramenta de publicação](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Implantar um aplicativo .NET Core com a ferramenta de publicação](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - (.NET) [Implantar o .NET Framework e aplicativos](/dotnet/framework/deployment/)

@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416419"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183841"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Walkthrough: Depurando um aplicativo paralelo no VisualC#Studio (, C++Visual Basic,)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Walkthrough: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
 
 Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo. Essas janelas ajudam você a entender e verificar o comportamento de tempo de execução do código que usa a [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Após a interrupção do código, este passo a passo mostra como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para examiná-lo.
 
@@ -45,8 +45,8 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 - Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.
 
-## <a name="prerequisites"></a>Prerequisites
- Este tutorial pressupõe que **apenas meu código** esteja habilitado (ele é habilitado por padrão em versões mais recentes do Visual Studio). No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
+## <a name="prerequisites"></a>Pré-requisitos
+ Este tutorial pressupõe que **apenas meu código** esteja habilitado (ele é habilitado por padrão em versões mais recentes do Visual Studio). No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
 
 ## <a name="c-sample"></a>Exemplo de C#
  Se você usar o exemplo do C#, este passo a passo também pressuporá que o código externo está oculto. Para ativar ou desativar a exibição do código externo, clique com o botão direito do mouse no cabeçalho de tabela **Nome** da janela **Pilha de Chamadas** e, depois, marque ou desmarque **Mostrar Código Externo**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
@@ -66,28 +66,28 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
    ::: moniker range=">=vs-2019"
 
-   Se a janela iniciar não estiver aberta, escolha **arquivo** > **janela iniciar**.
+   Se a janela iniciar não estiver aberta, escolha **arquivo** > **Iniciar janela**.
 
-   Na tela Iniciar, selecione **Criar um novo projeto**.
+   Na janela iniciar, escolha **criar um novo projeto**.
 
-   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, **C#** escolha **C++** , ou **Visual Basic** na lista idioma e, em seguida, escolha **Windows** na lista plataforma. 
+   Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **C#**, **C++** ou **Visual Basic** na lista idioma e, em seguida, escolha **Windows** na lista plataforma. 
 
-   Depois de aplicar os filtros de idioma e plataforma, escolha **o aplicativo de console (.NET Core)** ou C++, para, modelo de **aplicativo de console** e escolha **Avançar**.
+   Depois de aplicar os filtros de idioma e plataforma, escolha o **aplicativo de console (.NET Core)** ou, para C++, modelo de **aplicativo de console** e escolha **Avançar**.
 
    > [!NOTE]
-   > Se você não vir o modelo correto, vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+   > Se você não vir o modelo correto, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre a instalador do Visual Studio. Escolha o desenvolvimento de **área de trabalho .net** ou **desenvolvimento de desktop com** carga de trabalho C++ e, em seguida, escolha **Modificar**.
 
-   Na janela **configurar seu novo projeto** , digite um nome ou use o nome padrão na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+   Na janela **configurar seu novo projeto** , digite um nome ou use o nome padrão na caixa **nome do projeto** . Em seguida, escolha **criar**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
+   Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
 
-   - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
-   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)** .
-   - Para um C++ aplicativo, em **Visual C++** , escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
+   - Para um aplicativo C#, em **Visual C#**, escolha **Windows Desktop**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo C++, em **Visual C++**, escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
 
-   Se você não vir o **aplicativo de console (.NET Core)** ou, C++para, o modelo de projeto de **aplicativo de Console** , vá para **ferramentas** > **obter ferramentas e recursos...** , que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+   Se você não vir o **aplicativo de console (.NET Core)** ou, para C++, o modelo de projeto de **aplicativo de console** , vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre a instalador do Visual Studio. Escolha o desenvolvimento de **área de trabalho .net** ou **desenvolvimento de desktop com** carga de trabalho C++ e, em seguida, escolha **Modificar**.
 
    Em seguida, digite um nome ou use o nome padrão e clique em **OK**.
 
@@ -111,7 +111,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: exibição de Threads
- No menu **Depurar** , clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
+ No menu **depurar** , clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para exibir a pilha de chamadas de um único thread
 
@@ -211,7 +211,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      A **Exibição Panorâmica** também é útil com diagramas grandes na janela **Pilhas Paralelas**. Por padrão, a **exibição vista da pássaro** está ativada. Mas você pode ativá-lo clicando no botão entre as barras de rolagem no canto inferior direito da janela, conforme mostrado na ilustração a seguir.
 
-     ![Exibição do&#45;olho da pássaro na janela de pilhas paralelas](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![Exibição de olho de&#45;de pássaro na janela de pilhas paralelas](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
      No modo de exibição de panorâmica, você pode mover o retângulo para se deslocar rapidamente pelo diagrama.
 
@@ -232,7 +232,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 2. No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**. Encaixe a janela **Threads** na parte inferior do Visual Studio.
 
-3. No menu **Depurar**, aponte para **Janelas** e clique em **Pilha de Chamadas**. Encaixe a janela **Pilha de Chamadas** na parte inferior do Visual Studio.
+3. No menu **Depurar**, aponte para **Janelas** e clique em **Pilha de Chamadas**. Encaixe a janela **pilha de chamadas** na parte inferior do Visual Studio.
 
 4. Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm a seta amarela. Quando você altera o thread atual, as outras janelas são atualizadas. Em seguida, examinaremos tarefas.
 
@@ -256,7 +256,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      ![Duas tarefas em espera na janela tarefas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas** > **atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
+     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas**  >  **Atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
 
      ![Tarefa de espera e dica de ferramenta na janela tarefas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -282,7 +282,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      Para visualizar melhor a relação pai-filho, clique com o botão direito do mouse na linha de cabeçalho da coluna e clique em **exibição pai filho**. Você verá a ilustração a seguir.
 
-     ![Exibição&#45;de filho pai na janela tarefas](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
+     ![Exibição filho de&#45;pai na janela tarefas](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
 
      Observe que a tarefa 4 e a tarefa 5 estão em execução no mesmo thread (Mostrar a coluna **atribuição de thread** se ela estiver oculta). Essas informações não são exibidas na janela **threads** ; vê-lo aqui está outro benefício da janela **tarefas** . Para confirmar isso, exiba a janela **Pilhas Paralelas**. Verifique se você está exibindo **Tarefas**. Localize as tarefas 4 e 5 clicando duas vezes nelas na janela **tarefas** . Quando você fizer isso, o realce azul na janela **Pilhas Paralelas** será atualizado. Você também pode localizar as tarefas 4 e 5 examinando as dicas de ferramenta na janela **Pilhas Paralelas**.
 
@@ -300,7 +300,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      ![Quatro Estados de tarefa na janela de pilhas paralelas](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 
-     Como a tarefa 5 foi concluída, ele não é mais exibida. Se esse não for o caso no seu computador e o deadlock não for mostrado, pule uma etapa pressionando **F11**.
+     Como a tarefa 5 foi concluída, ele não é mais exibida. Se esse não for o caso no seu computador e o deadlock não for mostrado, passe uma vez, pressionando **F11**.
 
      A tarefa 3 e a tarefa 4 estão agora esperando umas às outras e são bloqueadas. Também há 5 novas tarefas que são filhos da tarefa 2 e estão agendadas agora. As tarefas agendadas são aquelas iniciadas no código mas que ainda não foram executadas. Portanto, as colunas **Local** e **Atribuição de Thread** estão vazias.
 
@@ -323,7 +323,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 ## <a name="summary"></a>Resumo
  Este passo a passo demonstrou as janelas do depurador **Tarefas Paralelas** e **Pilhas Paralelas**. Use essas janelas em projetos reais que utilizam código multi-threaded. Você pode examinar o código paralelo escrito no C++, no C# ou no Visual Basic.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depuração de aplicativos multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)

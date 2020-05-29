@@ -12,18 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114964"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184387"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 
 Atualizamos o Visual Studio com frequência durante seu ciclo de vida de produto. Há dois tipos de atualizações: 
 
-* **Pequenas atualizações**&mdash;de versão, por exemplo, 16.0 a 16.1&mdash;que incluem novos recursos e componentes.  
+* Atualizações de versão **secundária** &mdash; por exemplo, 16,0 a 16,1 &mdash; que incluem novos recursos e componentes.  
 * **Atualizações de manutenção**, por exemplo, 16.0.4 a 16.0.5, que incluem apenas correções direcionadas para problemas críticos.
 
 Os administradores do Enterprise podem optar por manter seus clientes em uma linha de base de manutenção. Uma linha de base de manutenção é compatível com as atualizações de manutenção por um ano após o lançamento da próxima linha de base de manutenção.
@@ -80,12 +81,12 @@ Para uma instalação baseada na internet, execute o novo instalador de versão 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-* [Instale o Visual Studio](install-visual-studio.md)
-* [Guia de administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalar o Visual Studio](install-visual-studio.md)
+* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
+* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Como definir as configurações em um arquivo de resposta](automated-installation-with-response-file.md)
 * [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
-* [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)

@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
-ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232328"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183048"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 
@@ -24,7 +24,7 @@ Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele re
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Principais benefícios do Visual Studio para ganhar pelo menos uma competência de qualquer tipo
 
-| Competências conquistadas apenas no nível de prata               | Pelo menos uma competência conquistada no nível de ouro   |
+| Competências obtidas apenas no nível prateado               | Pelo menos uma competência obtida no nível ouro   |
 |------------------------------------------------------------|----------------------------------------------------|
 | Cinco assinaturas do Visual Studio Enterprise                   | 10 assinaturas do Visual Studio Enterprise          |
 
@@ -38,7 +38,7 @@ Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele re
 | Produtividade de nuvem                          | Cinco assinaturas do Visual Studio Enterprise                  | 25 assinaturas do Visual Studio Enterprise               |
 | DevOps                                      | Cinco assinaturas do Visual Studio Enterprise                  | 25 assinaturas do Visual Studio Enterprise                |
 
-Independentemente de quantas competências um parceiro ganha, o número de assinaturas do Visual Studio é limitado da seguinte forma:
+Independentemente de quantas competências um parceiro ganha, o número de assinaturas do Visual Studio é limitado da seguinte maneira:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Limites para assinaturas do Visual Studio ganhadas por meio de competências
 
@@ -48,7 +48,7 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 
-Parceiros com competência são elegíveis para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
+Os parceiros com uma competência estão qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
 
 Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)**. O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
 
@@ -58,13 +58,13 @@ Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Profess
 
 Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares para desenvolvimento, incluindo o SQL Server Developer Edition.
 
-A assinatura do Visual Studio Professional (MPN) não inclui benefícios do Azure DevOps Services, crédito individual do Azure DevTest, suporte técnico, treinamento ou outros benefícios para assinantes que estão disponíveis com assinaturas do Visual Studio que são oferecidas Comercialmente.
+A assinatura do Visual Studio Professional (MPN) não inclui Azure DevOps Services benefícios, crédito individual do Azure DevTest, suporte técnico, treinamento ou outros benefícios do Assinante que estão disponíveis com as assinaturas do Visual Studio que são oferecidas comercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrição somente para uso interno
 
 As regras do MPN estipulam que todos os softwares oferecidos como um benefício do programa somente podem ser usados internamente. Isso se aplica aos softwares oferecidos para serem usados pelos assinantes individuais do Visual Studio e aos benefícios gerais de licença de software do MPN.
 
-Essa restrição de uso somente interno significa basicamente que os parceiros não podem usar o software como parte do trabalho que realizam para entidades externas à sua própria organização. Construir um aplicativo que será usado por funcionários parceiros só é bom, mas construir um aplicativo que faça parte de um projeto de cliente não é permitido.
+Essa restrição de uso somente interno significa basicamente que os parceiros não podem usar o software como parte do trabalho que realizam para entidades externas à sua própria organização. A criação de um aplicativo que será usado pelos funcionários de parceiros só é boa, mas não é permitido criar um aplicativo que faça parte de um projeto de cliente.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Entrada necessária com o Visual Studio
 
@@ -72,12 +72,12 @@ Nas assinaturas de nuvem do Visual Studio oferecidas pelo MPN, o usuário licenc
 
 ## <a name="resources"></a>Recursos
 
-- [Guia do Administrador do Programa MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) – inclui instruções de como atribuir assinaturas do Visual Studio para funcionários do MPN.
+- [Guia de programas do Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Atribuir assinaturas do Visual Studio para funcionários do MPN](manage-mpn-subscriptions.md)
 - [Termos de uso](https://www.microsoft.com/useterms/) – as assinaturas do Visual Studio oferecidas por meio do MPN estão sujeitas aos termos de licença das assinaturas do Visual Studio NFR (Proibida a revenda).
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -1,31 +1,31 @@
 ---
-title: Depuração com Visual Studio para Mac
+title: Depurando com Visual Studio para Mac
 description: A depuração é uma parte comum e necessária da programação. Como um IDE consolidado, o Visual Studio para Mac contém um pacote completo de recursos para facilitar a depuração. Desde depuração com segurança até a visualização de dados, este artigo explicará como usar todo o potencial de depuração no Visual Studio para Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 12/13/2019
+ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75397982"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183971"
 ---
-# <a name="debugging-with-visual-studio-for-mac"></a>Depuração com Visual Studio para Mac
+# <a name="debugging-with-visual-studio-for-mac"></a>Depurando com Visual Studio para Mac
 
-O Visual Studio para Mac tem depuradores com suporte para aplicativos .Net Core, .NET Framework, Unity e Xamarin.
+Visual Studio para Mac tem depuradores com suporte para aplicativos .Net Core, .NET Framework, Unity e Xamarin.
 
 O Visual Studio para Mac usa o [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), que foi implementado no runtime Mono, permitindo que o Visual Studio para Mac depure código gerenciado em todas as plataformas.
 
 ## <a name="the-debugger"></a>O depurador
 
-O Visual Studio para Mac usa o Mono Soft Debugger para depurar código gerenciado (C# ou F#) em todos os aplicativos Xamarin. O depurador Mono Soft é diferente dos depuradores regulares, pois é um depurador cooperativo que é incorporado no tempo de execução Mono; o código gerado e o tempo de execução Mono cooperam com o IDE para fornecer uma experiência de depuração. O runtime Mono expõe a funcionalidade de depuração por meio de um protocolo de transmissão, sobre o qual você pode conhecer mais [na documentação do Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+O Visual Studio para Mac usa o Mono Soft Debugger para depurar código gerenciado (C# ou F#) em todos os aplicativos Xamarin. O soft Debugger do Mono é diferente dos depuradores regulares, pois é um depurador cooperativo criado no tempo de execução do mono; o código gerado e o tempo de execução mono cooperam com o IDE para fornecer uma experiência de depuração. O runtime Mono expõe a funcionalidade de depuração por meio de um protocolo de transmissão, sobre o qual você pode conhecer mais [na documentação do Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Depuradores inflexíveis, como o [LLDB]( http://lldb.llvm.org/index.html) ou o [GDB]( https://www.gnu.org/software/gdb/), controlam um programa sem o conhecimento ou a cooperação do programa depurado, mas ainda podem ser úteis ao depurar aplicativos Xamarin caso você precise depurar código Android ou iOS nativo.
 
-Para aplicativos .NET Core e ASP.NET Core, o Visual Studio for Mac usa o depurador .NET Core. Este depurador também é um depurador cooperativo e funciona com o tempo de execução .NET.
+Para aplicativos .NET Core e ASP.NET Core, Visual Studio para Mac usa o depurador do .NET Core. Esse depurador também é um depurador cooperativo e funciona com o tempo de execução do .NET.
 
 ## <a name="using-the-debugger"></a>Usando o depurador
 
@@ -45,10 +45,10 @@ Você pode exibir todos os pontos de interrupção definidos em seu código indo
 
 ## <a name="start-debugging"></a>Iniciar a depuração
 
-Para iniciar a depuração, selecione o navegador de destino, dispositivo ou simulador/emulador:
+Para iniciar a depuração, selecione o navegador de destino, o dispositivo ou o simulador/emulador:
 
-![Configuração](media/debugging-image_0.png)
-![de depuração Selecionar dispositivo de destino](media/debugging-image1.png)
+![Configuração de depuração ](media/debugging-image_0.png)
+ ![ selecionar dispositivo de destino](media/debugging-image1.png)
 
 Em seguida, implante seu aplicativo pressionando o botão **Executar** ou **Cmd + Enter**. Quando você atingir um ponto de interrupção, o código será realçado em amarelo:
 
@@ -83,9 +83,18 @@ Quando um ponto de interrupção for atingido, as Ferramentas de depuração per
 Esses são os quatro botões:
 
 * **Executar** – Inicia a execução do código até o próximo ponto de interrupção.
-* **Step Over** - Isso executará a próxima linha de código. Se a próxima linha for uma chamada de função, Step Over executará a função e interromperá na próxima linha de código *após* a função.
+* Passar **por cima** – isso executará a próxima linha de código. Se a próxima linha for uma chamada de função, passará a executar a função e será interrompido na próxima linha de código *após* a função.
 * **Intervir** – Também executa a próxima linha de código. Se a próxima linha é uma chamada de função, Intervir parará na primeira linha da função, permitindo que você continue a depuração da função linha a linha. Se a próxima linha não for uma função, ela se comportará como Passar.
 * **Sair** – Retorna para a linha na qual a função atual foi chamada.
+
+## <a name="change-which-statement-is-executed-next"></a>Alterar qual instrução é executada em seguida
+
+Enquanto o depurador está em pausa, uma seta na margem mostra qual linha de código será executada em seguida. Você pode clicar e arrastar a seta para uma linha de código diferente para alterar a instrução que será executada. Você pode obter a mesma coisa também clicando com o botão direito do mouse em uma linha de código e selecionando **definir próxima instrução** no menu de contexto.
+
+![Arraste e solte a seta para definir a próxima instrução](media/debugger-drag-setnextstatement.gif)
+
+> [!CAUTION]
+> A alteração da linha atual de execução pode causar um comportamento inesperado em um aplicativo. Também há algumas condições em que a alteração da próxima instrução a ser executada não é possível. Por exemplo, arrastar a seta de um método para outro método não funcionará. Nesses casos sem suporte, Visual Studio para Mac exibirá uma caixa de diálogo para que você saiba que não foi possível alterar a linha atual da execução. 
 
 ## <a name="debugging-monos-class-libraries"></a>Depuração de bibliotecas de classes Mono
 
@@ -93,10 +102,10 @@ Os produtos Xamarin são fornecidos com o código-fonte para bibliotecas de clas
 
 Como esse recurso consome mais memória durante a depuração, ele fica desligado por padrão.
 
-Para habilitar esse recurso, navegue no **Visual Studio para obter opções > > Depurador de > do Visual Studio** e certifique-se de que a opção " Passo para código**externo**" seja **selecionada,** conforme ilustrado abaixo:
+Para habilitar esse recurso, navegue até **Visual Studio para Mac preferências de > > depurador** e verifique se a opção "**etapa em código externo**" está **selecionada**, conforme ilustrado abaixo:
 
-![Passo para a opção de código externo](media/debugging-image8.png)
+![Opção entrar em código externo](media/debugging-image8.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Depurando no Visual Studio (no Windows)](/visualstudio/debugger/)

@@ -1,100 +1,102 @@
 ---
-title: Crie aplicativos web Blazor
-description: Fornece informações sobre o suporte ao Blazor em ASP.NET aplicativos Core no Visual Studio para Mac.
+title: Criar aplicativos Web mais podestas
+description: Fornece informações sobre o suporte mais incrivelmente em aplicativos ASP.NET Core no Visual Studio para Mac.
 author: jongalloway
 ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: dbc49a0ea9b4e4fa7880b6226331d447339b6575
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75737582"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180267"
 ---
-# <a name="create-blazor-web-apps"></a>Crie aplicativos web Blazor
+# <a name="create-blazor-web-apps"></a>Criar aplicativos Web mais podestas
 
-Este guia oferece uma introdução para criar o seu primeiro aplicativo web Blazor. Para obter uma orientação mais aprofundada, consulte [Introdução ao ASP.NET Core Blazor](/aspnet/core/blazor/index).
+Este guia oferece uma introdução à criação do seu primeiro aplicativo Web de mais incrivelmente. Para obter diretrizes mais detalhadas, consulte [introdução ao ASP.NET Core](/aspnet/core/blazor/index)mais alto.
 
-Visual Studio para Mac (começando pela versão 8.4) inclui suporte para o desenvolvimento e publicação ASP.NET aplicativos Core Blazor Server. Blazor é uma estrutura para construir uma web ui interativa do lado do cliente com a .NET, que oferece as seguintes vantagens para desenvolvedores web:
+ASP.NET Core mais incrivelmente dá suporte a duas opções de hospedagem diferentes; Servidor e Webassembly de mais incrivelmente. O Visual Studio para Mac dá suporte a ambos os modelos de hospedagem. O Visual Studio para Mac 8.4 + dá suporte a um servidor mais incrivelmente e o Visual Studio para Mac 8.6 + dá suporte a ambos. Para obter mais informações sobre modelos de hospedagem mais incrivelmente, confira [ASP.NET Core modelos de hospedagem mais incrivelmente ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). O suporte para depuração de projetos de Webassembly mais povelativos em Visual Studio para Mac será lançado em uma versão posterior a 8,6.
+
+O que é mais incrivelmente? O mais vantajoso é uma estrutura para a criação de interface do usuário da Web interativa do lado do cliente com o .NET, que oferece as seguintes vantagens aos desenvolvedores da Web:
 
 * escreva o código em C# em vez de JavaScript.
 * Aproveite o ecossistema .NET existente das bibliotecas .NET.
 * Compartilhe a lógica de aplicativo entre o servidor e o cliente.
-* Beneficie-se de . Desempenho, confiabilidade e segurança da NET.
-* Mantenha-se produtivo com o Visual Studio no PC, Linux e macOS.
+* Beneficie-se do. Desempenho, confiabilidade e segurança da rede.
+* Mantenha-se produtivo com o Visual Studio em PC, Linux e macOS.
 * Crie um conjunto comum de linguagens, estruturas e ferramentas que são estáveis, com recursos avançados e fáceis de usar.
 
-## <a name="creating-a-new-blazor-project"></a>Criando um novo projeto Blazor
+## <a name="creating-a-new-blazor-server-project"></a>Criando um novo projeto de servidor de mais novos
 
-1. Na **janela Iniciar,** selecione **Novo** para criar um novo projeto:
+1. Na **janela iniciar**, selecione **novo** para criar um novo projeto:
 
-   ![Visual Studio para Mac Start Window com nova seleção em destaque](media/blazor-new-project.png)
-1. Na caixa de diálogo **do Novo Projeto,** selecione **.NET** > **Core App** > **Blazor Server App** e selecione **Next**: ![Escolha um modelo para o seu novo diálogo de projeto com o modelo do aplicativo Blazor Server selecionado](media/blazor-project-template.png)
+   ![Visual Studio para Mac janela inicial com a nova seleção realçada](media/blazor-new-project.png)
+1. Na caixa de diálogo **novo projeto** , selecione aplicativo do servidor **.NET Core** > **App** > **Blazor Server App** e selecione **Avançar**: ![ escolha um modelo para a caixa de diálogo novo projeto com o modelo de aplicativo de servidor mais novo selecionado](media/blazor-project-template.png)
 
-1. Selecione .NET Core 3.1 como o framework de destino e selecione **'Seguinte**' 
-   ![Configure a nova caixa de diálogo do Aplicativo Blazor Server exibida com o Target Framework selecionado para .NET Core 3.1](media/blazor-select-target-framework.png)
+1. Selecione .NET Core 3,1 como a estrutura de destino e, em seguida, selecione **Avançar**. 
+   ![Configure sua nova caixa de diálogo de aplicativo de servidor do mais novo, exibida com a estrutura de destino selecionada para o .NET Core 3,1](media/blazor-select-target-framework.png)
 
-1. Escolha um nome para o seu projeto e adicione o suporte ao Git, se desejar. Selecione **Criar** para criar o cluster.
-   ![BConfigure sua nova caixa de diálogo blazor server app exibida ao inserir Nome do Projeto](media/blazor-name-project.png)
+1. Escolha um nome para seu projeto e adicione o suporte do git, se desejado. Selecione **Criar** para criar o cluster.
+   ![BConfigure a caixa de diálogo do novo aplicativo de servidor mais incrivelmente exibida ao inserir o nome do projeto](media/blazor-name-project.png)
 
-   Visual Studio for Mac abre seu projeto na janela de layout Código.
-1. Selecione **Executar** > **iniciar sem depuração** para executar o aplicativo.
+   Visual Studio para Mac abre seu projeto na janela de layout de código.
+1. Selecione **executar**  >  **Iniciar sem depuração** para executar o aplicativo.
 
-   O Visual Studio inicia o `https://localhost:5001` [Kestrel,](/aspnet/core/fundamentals/servers/kestrel)abre um navegador para e exibe seu aplicativo web Blazor.
+   O Visual Studio inicia o [Kestrel](/aspnet/core/fundamentals/servers/kestrel), abre um navegador para `https://localhost:5001` e exibe o seu aplicativo Web mais incrivelmente.
 
-   ![Aplicativo web Blazor em Safari](media/blazor-new-app-in-edge.png)
+   ![Aplicativo Web mais incrivelmente no Safari](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Suporte blazor no Visual Studio para Mac
+## <a name="blazor-support-in-visual-studio-for-mac"></a>Suporte mais incrivelmente no Visual Studio para Mac
 
-Visual Studio para Mac (começando pela versão 8.4) inclui novos recursos para ajudá-lo a criar novos projetos de servidor Blazor. Além disso, ele fornece o suporte padrão que você esperaria, como construir, executar e depurar projetos Blazor. 
+A Visual Studio para Mac (a partir da versão 8,4) inclui novos recursos para ajudá-lo a criar novos projetos de servidor mais avançados. Além de isso, ele fornece o suporte padrão que você esperaria, como a criação, a execução e a depuração de projetos mais elaborados. No Visual Studio para Mac suporte 8,6 para criação, criação e execução de projetos Webassembly de maior e/.
 
-No passo a passo acima, vimos como o modelo de projeto do Aplicativo Blazor Server ajuda você a criar um novo projeto do Aplicativo Blazor Server. Vamos dar uma olhada em alguns dos recursos adicionais no Visual Studio para Mac para apoiar o desenvolvimento de projetos de servidor Blazor.
+No passo a passos acima, vimos como o modelo de projeto de aplicativo de servidor mais recente ajuda você a criar um novo projeto de aplicativo de servidor mais recente. Vamos dar uma olhada em alguns dos recursos adicionais do Visual Studio para Mac para dar suporte ao desenvolvimento de projetos mais incrivelmente.
 
-### <a name="editor-support-for-razor-files"></a>Suporte ao editor para arquivos *.razor*
-Visual Studio for Mac inclui suporte para editar arquivos .razor - a maioria dos arquivos que você estará usando ao criar aplicativos Blazor. A versão do Windows e Mac do IDE compartilham o mesmo editor para arquivos .razor. Você verá suporte completo de coloração e conclusão para seus arquivos .razor, incluindo conclusões para componentes razor declarados no projeto.
+### <a name="editor-support-for-razor-files"></a>Suporte do editor para arquivos *. Razor*
+O Visual Studio para Mac inclui suporte para edição de arquivos. Razor-a maioria dos arquivos que você usará ao criar aplicativos mais podestas. A versão do Windows e Mac do IDE compartilham o mesmo editor para arquivos. Razor. Você verá a colorização completa e o suporte de conclusão para seus arquivos. Razor, incluindo as conclusões dos componentes do Razor declarados no projeto.
 
-![Visual Studio para mac janela editor mostrando Intellisense para Blazor](media/blazor-intellisense.png)
+![Janela do editor de Visual Studio para Mac mostrando o IntelliSense para um mais incrivelmente](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>Publicando aplicativos Blazor para o Serviço de Aplicativos Do Azure
-Você também pode publicar aplicativos Blazor diretamente no Azure App Service. Se você não tem uma conta no Azure para executar seu aplicativo Blazor no Azure, você sempre pode [se inscrever para um gratuito aqui](https://azure.microsoft.com/free) que também vem 12 meses de serviços populares gratuitos, $200 créditos gratuitos do Azure e mais de 25 serviços sempre gratuitos.
+### <a name="publishing-blazor-applications-to-azure-app-service"></a>Publicando aplicativos de mais incrivelmente em Azure App serviço
+Você também pode publicar aplicativos mais incrivelmente diretamente no serviço Azure App. Se você não tiver uma conta do Azure para executar seu aplicativo mais novo no Azure, você sempre poderá [se inscrever em um aqui gratuito](https://azure.microsoft.com/free) que também vem de 12 meses de serviços populares gratuitos, $200 créditos gratuitos do Azure e mais de 25 serviços sempre gratuitos.
 
 ![Visual Studio para Mac mostrando a experiência de publicação do Azure](media/blazor-azure-publish.png)
 
 ## <a name="project-anatomy"></a>Anatomia do projeto
 
-Os aplicativos web Blazor incluem alguns diretórios e arquivos por padrão. Como você está começando, aqui estão os principais que você precisa estar familiarizado:
+Os aplicativos Web mais incrivelmente incluem alguns diretórios e arquivos por padrão. Como você está começando, aqui estão os principais que você precisará estar familiarizados com:
 
 ### <a name="pages-folder"></a>Pasta Páginas
 
-Esta pasta contém as páginas da Web de um projeto, que usam uma extensão de arquivo *.razor.*
+Esta pasta contém as páginas da Web de um projeto, que usam uma extensão de arquivo *. Razor* .
 
 ### <a name="shared-folder"></a>Pasta compartilhada
 
-Esta pasta inclui componentes compartilhados, também usando a extensão *.razor.* Você verá que isso inclui *MainLayout.razor*, que é usado para definir layout comum em todo o aplicativo. Ele também inclui o componente *NavMenu.razor* compartilhado, que é usado em todas as páginas. Se você estiver criando componentes reutilizáveis, eles irão para a pasta **Compartilhada.**
+Essa pasta inclui componentes compartilhados, também usando a extensão *. Razor* . Você verá que isso inclui o *MainLayout. Razor*, que é usado para definir o layout comum em todo o aplicativo. Ele também inclui o componente *NavMenu. Razor* compartilhado, que é usado em todas as páginas. Se você estiver criando componentes reutilizáveis, eles irão para a pasta **compartilhada** .
 
-### <a name="app-settings"></a>Configurações do aplicativo
+### <a name="app-settings"></a>Configurações de aplicativo
 
-O arquivo *appSettings.json* contém dados de configuração, como strings de conexão.
+O arquivo *appSettings. JSON* contém dados de configuração, como cadeias de conexão.
 
-Para obter mais informações sobre a configuração, consulte o [guia Configuração em ASP.NET](/aspnet/core/fundamentals/configuration/index).
+Para obter mais informações sobre a configuração, consulte a [configuração no guia do ASP.net](/aspnet/core/fundamentals/configuration/index).
 
 ### <a name="wwwroot-folder"></a>Pasta wwwroot
 
-Esta pasta contém arquivos estáticos, como arquivos HTML, JavaScript e CSS. Saiba mais em [Arquivos estáticos no ASP.NET Core](/aspnet/core/fundamentals/static-files).
+Essa pasta contém arquivos estáticos, como HTML, JavaScript e arquivos CSS. Saiba mais em [Arquivos estáticos no ASP.NET Core](/aspnet/core/fundamentals/static-files).
 
 ### <a name="programcs"></a>Module.vb
 
-Este arquivo contém o ponto de entrada do programa. Saiba mais em [Host da Web do ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
+Esse arquivo contém o ponto de entrada para o programa. Saiba mais em [Host da Web do ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="startupcs"></a>Startup.cs
 
-Este arquivo contém código que configura o comportamento do aplicativo, como se o aplicativo requer consentimento para cookies. Saiba mais em [Inicialização de aplicativos no ASP.NET Core](/aspnet/core/fundamentals/startup).
+Esse arquivo contém um código que configura o comportamento do aplicativo, como se o aplicativo requer consentimento para cookies. Saiba mais em [Inicialização de aplicativos no ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="summary"></a>Resumo
-Neste tutorial, você viu como criar um novo Aplicativo Blazor Server no Visual Studio para Mac, e aprendeu sobre alguns dos recursos que o Visual Studio for Mac oferece para ajudá-lo a criar aplicativos Blazor.
+Neste tutorial, você viu como criar um novo aplicativo de servidor de mais novos Visual Studio para Mac e aprendeu sobre alguns dos recursos que Visual Studio para Mac oferece para ajudá-lo a criar aplicativos mais avançados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-Para obter um guia mais abrangente para criar aplicativos web Blazor, consulte [Introdução a ASP.NET Core Blazor](/aspnet/core/blazor/index).
+Para obter um guia mais abrangente para criar aplicativos Web mais completos, consulte [introdução ao ASP.NET Core](/aspnet/core/blazor/index)mais grande.

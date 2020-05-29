@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543963"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182996"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
-Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (Muitos tipos de aplicativos suportam outras ferramentas de implantação, como a implantação da linha de comando que não está descrita aqui.)
+Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (Muitos tipos de aplicativo são compatíveis com outras ferramentas de implantação como implantação de linha de comando ou o NuGet, as quais não são descritas aqui).
 
 Confira os guias de Início Rápido e Tutoriais para obter instruções passo a passo de implantação. Para uma visão geral sobre as opções de implantação, confira [Quais opções de publicação são adequadas para mim?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -40,15 +40,15 @@ Confira os guias de Início Rápido e Tutoriais para obter instruções passo a 
 
 A implantação em uma pasta local é normalmente usada para teste ou para iniciar uma implantação de teste em que outra ferramenta é usada para a implantação final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e .**NET Core**: use a ferramenta Publicar para implantar em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você não tiver configurado anteriormente nenhum perfil de publicação, você deve clicar em **Criar novo perfil**.) Em seguida, escolha **Pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e .**NET Core**: use a ferramenta Publicar para implantar em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você não tiver configurado anteriormente nenhum perfil de publicação, será necessário clicar em **criar novo**.) Em seguida, escolha **pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
 
     ![Escolha Publicar](../deployment/media/quickstart-publish.png)
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLI, consulte [Implantar um aplicativo nativo usando O ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, consulte Implantar um aplicativo nativo usando um projeto de [configuração](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**e **Node.js**: Publique no Azure App Service ou no Azure App Service Linux (usando contêineres) usando um dos seguintes métodos.
+- **ASP.net**, **ASP.NET Core**, **Python**e **Node. js**: publicar no serviço Azure app ou Azure app serviço Linux (usando contêineres) usando um dos métodos a seguir.
 
   - Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
@@ -56,9 +56,9 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
   Para a implantação que fornece uma configuração mais personalizada do servidor, você também pode usar a ferramenta **Publicar** para implantar aplicativos para uma máquina Virtual do Azure.
 
-  Para usar a ferramenta **Publicar**, clique com o botão direito do mouse no Gerenciador de Soluções e escolha **Publicar**. (Se você configurou anteriormente quaisquer perfis de publicação, você deve clicar em **Criar novo perfil**.) Na caixa de diálogo Publicar, escolha **o Serviço de Aplicativo** ou as **Máquinas Virtuais do Azure**e siga as etapas de configuração.
+  Para usar a ferramenta **Publicar**, clique com o botão direito do mouse no Gerenciador de Soluções e escolha **Publicar**. (Se você tiver configurado anteriormente os perfis de publicação, deverá clicar em **criar novo perfil**.) Na caixa de diálogo publicar, escolha **serviço de aplicativo** ou **máquinas virtuais do Azure**e siga as etapas de configuração.
 
-  ![Escolha o serviço de aplicativos do Azure](../deployment/media/quickstart-publish-azure.png "Escolha o serviço de aplicativos do Azure")
+  ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-azure.png "Escolher serviço de Azure App")
 
   No Visual Studio 2017 versão 15.7 e posteriores, você pode implantar aplicativos ASP.NET Core no **Serviço de Aplicativo para Linux**.
 
@@ -75,15 +75,15 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: você pode usar a ferramenta Publicar para implantar em um site usando FTP ou Implantação da Web. Para obter mais informações, confira [Implantar um site da Web](quickstart-deploy-to-a-web-site.md).
 
-    No Solution Explorer, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você configurou anteriormente quaisquer perfis de publicação, você deve clicar em **Criar novo perfil**.) Na ferramenta Publicar, escolha a opção desejada e siga as etapas de configuração.
+    Em Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **publicar**. (Se você tiver configurado anteriormente os perfis de publicação, deverá clicar em **criar novo perfil**.) Na ferramenta de publicação, escolha a opção desejada e siga as etapas de configuração.
 
-    ![Escolha IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![Escolher IIS](../deployment/media/quickstart-publish-iis.png)
 
     Para obter informações sobre como importar um perfil de publicação no Visual Studio, confira [Importar configurações de publicação e implantar no IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Você também pode implantar aplicativos e serviços ASP.NET de várias outras maneiras. Para obter mais informações, confira [Implantando aplicativos e serviços Web ASP.NET](/aspnet/mvc/overview/deployment/).
+    Você também pode implantar aplicativos e serviços ASP.NET de várias outras maneiras. Para obter mais informações, confira [Implantando aplicativos e serviços Web ASP.NET](/aspnet/overview/deployment).
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLI, consulte [Implantar um aplicativo nativo usando O ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, consulte Implantar um aplicativo nativo usando um projeto de [configuração](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publicar na Microsoft Store
 
@@ -93,16 +93,9 @@ No Visual Studio, você pode criar pacotes de aplicativos para implantação na 
 
     ![Criar um pacote de aplicativo](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows desktop**: Você pode implantar na Microsoft Store a partir da versão 15.4 do Visual Studio 2017. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, consulte [Pacote um aplicativo de desktop para Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
+- **Área de trabalho do Windows**: você pode implantar na Microsoft Store usando a Ponte de Desktop do Visual Studio 2017 versão 15.4 em diante. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Empacote um aplicativo de desktop](../deployment/media/feature-tour-desktop-bridge.png)
-
-## <a name="deploy-net-packages-to-nugetorg"></a>Implantar pacotes .NET no NuGet.org
-
-Para implantar código em "pacotes" que contenham código compilado (como as DLLs) e outro conteúdo necessário para projetos que consumam esses pacotes, você pode usar o Visual Studio para criar o pacote NuGet e uma ferramenta de CLI tool para emitir o comando final de implantação.
-
-- [Criar e publicar um pacote do .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [Criar e publicar um pacote do .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+    ![Ponte de Desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>Implantar em um dispositivo (UWP)
 
@@ -112,13 +105,12 @@ Se você estiver implantando um aplicativo UWP para testar em um dispositivo, co
 
 Se precisa de uma instalação mais complexa de um aplicativo da área de trabalho do que o [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) pode oferecer, você pode criar um pacote do Windows Installer (arquivo de instalação MSI ou EXE) ou um bootstrapper personalizado.
 
-- Um pacote de instalador baseado em MSI pode ser criado usando a [Extensão Conjunto de Ferramentas do WiX](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Este é um conjunto de ferramentas de linha de comando.
+- Um pacote de instalador baseado em MSI pode ser criado usando a [Extensão WiX Toolset do Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Este é um conjunto de ferramentas de linha de comando.
 
-   ::: moniker range=">=vs-2019"
-   Para o Visual Studio 2019, obtenha a [Extensão do Conjunto de Ferramentas WiX do Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
-   ::: moniker-end
+- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 e versões posteriores (não compatível com a Community Edition). 
 
-- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 e versões posteriores (não compatível com a Community Edition). Observe que o InstallShield Limited Edition não está mais incluído no Visual Studio e não é compatível com o Visual Studio 2017 e versões posteriores: entre em contato com a [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para informações sobre a disponibilidade futura.
+  > [!NOTE]
+  > O InstallShield Limited Edition não está mais incluído no Visual Studio e não tem suporte no Visual Studio 2017 e versões posteriores; Verifique com o [Flexera software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) sobre disponibilidade futura.
 
 - Um pacote do instalador EXE ou MSI pode ser criado usando um projeto de instalação (vdproj). Para usar essa opção, instale a [extensão de Projetos de Instalador do Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
@@ -138,16 +130,16 @@ Você pode usar Azure Pipelines para permitir a implantação contínua do seu a
 
 - [Implantar um Projeto do Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
 
-- [Implantar projetos e pacotes de Serviços de Integração (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+- [Implantar projetos e pacotes do Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 
-- [Construir e implantar em um banco de dados local](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
+- [Compilar e implantar em um banco de dados local](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Implantação de outros tipos de aplicativos
 
 | Tipo de aplicativo | Cenário de implantação | Link |
 | --- | --- | --- |
-| **Aplicativo do Office** | Você pode publicar um suplemento do Office no Visual Studio. | [Implantar e publicar seu suplemento do Office](/office/dev/add-ins/publish/publish) |
-| **Serviço WCF ou OData** | Outros aplicativos podem usar os serviços RIA WCF que você implanta em um servidor Web. | [Desenvolvimento e implantação de Serviços de Dados WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Aplicativo do Office** | Você pode publicar um suplemento do Office no Visual Studio. | [Implantar e publicar seu suplemento do Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Serviço WCF ou OData** | Outros aplicativos podem usar os serviços RIA WCF que você implanta em um servidor Web. | [Desenvolvendo e implantando WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | O LightSwitch não é mais compatível desde o Visual Studio 2017, mas ainda pode ser implantado no Visual Studio 2015 e anteriores. | [Implantando aplicativos LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Próximas etapas

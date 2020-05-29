@@ -8,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633194"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183347"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 
-Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
+Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para ser executado no .NET Framework 2,0 em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
 
 > [!IMPORTANT]
 > Este artigo mostra a maneira antiga de especificar uma estrutura de destino. Os projetos no estilo SDK permitem TargetFrameworks diferentes, como o netstandard. Para obter mais informações, confira [Estruturas de destino](/dotnet/standard/frameworks).
@@ -30,13 +30,13 @@ Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*,
 
 - O .NET Framework 2.0 (incluído no Visual Studio 2005)
 
-- O .NET Framework 3.0 (incluído no Windows Vista)
+- O .NET Framework 3,0 (incluído no Windows Vista)
 
-- O .NET Framework 3.5 (incluído no Visual Studio 2008)
+- O .NET Framework 3,5 (incluído no Visual Studio 2008)
 
 - O .NET Framework 4.5.2
 
-- O .NET Framework 4.6 (incluído no Visual Studio 2015)
+- O .NET Framework 4,6 (incluído no Visual Studio 2015)
 
 - O .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
  Um *perfil de destino* é um subconjunto de uma estrutura de destino. Por exemplo, o .NET Framework 4 Client Profile não inclui referências aos assemblies do MSBuild.
 
  > [!NOTE]
- > Os perfis-alvo aplicam-se apenas a [bibliotecas de classe portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+ > Os perfis de destino se aplicam somente a [bibliotecas de classes portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
 
  O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE.
 
@@ -89,7 +89,7 @@ Uma *plataforma de destino* é a plataforma específica na qual seu projeto é c
 
 ```
 
-Uma *configuração de destino* é um subconjunto de uma plataforma de destino. Por exemplo, a configuração `x86``Debug` não inclui a maioria das otimizações de código. A configuração de destino é especificada na propriedade de build `Configuration` em um arquivo de projeto. Você pode alterar a configuração de destino usando as páginas de propriedades do projeto ou **Gerenciador de Configurações**.
+Uma *configuração de destino* é um subconjunto de uma plataforma de destino. Por exemplo, a configuração `x86` `Debug` não inclui a maioria das otimizações de código. A configuração de destino é especificada na propriedade de build `Configuration` em um arquivo de projeto. Você pode alterar a configuração de destino usando as páginas de propriedades do projeto ou **Gerenciador de Configurações**.
 
 ```xml
 <PropertyGroup>
@@ -99,6 +99,6 @@ Uma *configuração de destino* é um subconjunto de uma plataforma de destino. 
 
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
