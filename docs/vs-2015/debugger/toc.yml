@@ -10,9 +10,9 @@
       href: navigating-through-code-with-the-debugger.md
     - name: Usando pontos de interrupção
       href: using-breakpoints.md
-    - name: Janelas do depurador
+    - name: Janelas do Depurador
       items:
-        - name: Janelas do depurador
+        - name: Janelas do Depurador
           href: debugger-windows.md
         - name: Janelas autos e locais
           href: autos-and-locals-windows.md
@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Anexar aos processos em execução
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Especificar arquivos de símbolo (.pdb) e de origem
+    - name: Especificar os arquivos de origem e símbolo (.pdb)
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Depurar aplicativos de 64 bits
       href: debug-64-bit-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Restaurar comandos ocultos do depurador
       href: how-to-restore-hidden-debugger-commands.md
-- name: Depuração Remota
+- name: Depuração remota
   items:
-    - name: Depuração Remota
+    - name: Depuração remota
       href: remote-debugging.md
     - name: Configurar o Firewall do Windows para depuração remota
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -244,9 +244,7 @@
       items:
         - name: Erros de depuração remota e solução de problemas
           href: remote-debugging-errors-and-troubleshooting.md
-        - name: O Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto não tem permissão para se conectar a este computador
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
-        - name: Ocorreu um erro de DCOM durante a tentativa de contatar o computador remoto. Acesso negado.
+        - name: Ocorreu um erro de DCOM durante a tentativa de contatar o computador remoto. O acesso foi negado.
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: O Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto está sendo executado como um usuário diferente
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -258,8 +256,6 @@
           href: error-kerberos-authentication-failed.md
         - name: Verifique se o DNS está configurado corretamente no computador de destino
           href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
-        - name: O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
         - name: Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
           href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
         - name: Não é possível iniciar a comunicação DCOM
@@ -278,7 +274,7 @@
           href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
         - name: O processo de trabalho do site foi terminado pelo IIS
           href: error-web-site-worker-process-has-been-terminated-by-iis.md
-        - name: Não é possível se conectar ao computador \<nome>. Não foi possível encontrar o computador na rede.
+        - name: Não é possível se conectar ao computador \<name>. Não foi possível encontrar o computador na rede.
           href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
         - name: Só há suporte para a depuração de modo misto quando o Microsoft .NET Framework 2.0 ou superior é usado
           href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
@@ -390,7 +386,7 @@
                   href: refresh-an-app-javascript.md
                 - name: Depurar um controle do WebView
                   href: debug-a-webview-control.md
-                - name: Atalhos do teclado
+                - name: Atalhos de teclado
                   href: keyboard-shortcuts-html-and-javascript.md
                 - name: 'Depurar código de exemplo em HTML, CSS e JavaScript'
                   href: debug-html-css-and-javascript-sample-code.md
@@ -406,11 +402,11 @@
               href: debug-xaml-in-blend.md
             - name: 'Navegar por uma sessão de depuração (XAML e C#)'
               items:
-                - name: 'Navegar por uma sessão de depuração (XAML e C#)'
+                - name: 'Navegar na sessão de depuração (XAML e C#)'
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Código de exemplo da navegação do depurador (XAML e C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Disparar eventos de suspensão, retomada e segundo plano para a Windows Store'
+            - name: 'Disparar eventos de suspensão, retomada e de segundo plano para Windows Store)'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Executar pré-busca de conteúdo para aplicativos da Windows Store
           href: prefetch-content-for-windows-store-apps.md
@@ -418,13 +414,13 @@
       items:
         - name: Depurando código gerenciado
           href: debugging-managed-code.md
-        - name: 'Tipos de projeto C#, F# e Visual Basic'
+        - name: 'Tipos de projeto do Visual Basic, C# e F#'
           items:
             - name: 'Tipos de projeto C#, F# e Visual Basic'
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Configurações de propriedades recomendadas
               href: managed-debugging-recommended-property-settings.md
-            - name: Aplicativos dos Windows Forms
+            - name: Aplicativos do Windows Forms
               href: debugging-preparation-windows-forms-applications.md
             - name: Serviços Windows
               href: debugging-preparation-windows-services.md
@@ -564,7 +560,7 @@
           href: visual-studio-graphics-diagnostics.md
         - name: Visão geral
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: Introdução
+        - name: Guia de Introdução
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: Capturando informações de gráficos
           href: capturing-graphics-information.md
@@ -572,7 +568,7 @@
           href: gpu-usage.md
         - name: Documentos de log de gráfico
           href: graphics-log-document.md
-        - name: Análise de Quadros
+        - name: Análise de quadros
           items:
             - name: Análise de Quadros
               href: graphics-frame-analysis.md
@@ -674,7 +670,7 @@
               items:
                 - name: Preparando-se para depurar ASP.NET
                   href: preparing-to-debug-aspnet.md
-                - name: Requisitos do Sistema
+                - name: Requisitos de sistema
                   href: aspnet-debugging-system-requirements.md
                 - name: Habilitar a depuração para aplicativos ASP.NET
                   items:
@@ -716,9 +712,9 @@
           items:
             - name: erros e solução de problemas
               href: debugging-web-applications-errors-and-troubleshooting.md
-            - name: solução de problemas
+            - name: Solução de problemas
               items:
-                - name: solução de problemas
+                - name: Solução de problemas
                   href: debugging-web-applications-troubleshooting.md
                 - name: Verificar as configurações de propriedade do IIS
                   href: how-to-verify-iis-property-settings.md
