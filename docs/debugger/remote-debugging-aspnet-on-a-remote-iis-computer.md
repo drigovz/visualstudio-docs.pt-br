@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core de depuração remota em um computador IIS remoto | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3e11480949545781630dec0c533949dd200ecbc7
-ms.sourcegitcommit: 7a9d5c10690c594dcdb414d88b20e070d43e7a4c
+ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82218880"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173858"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core de depuração remota em um computador IIS remoto no Visual Studio
 
@@ -37,6 +37,7 @@ O Visual Studio 2017 é necessário para seguir as etapas mostradas neste artigo
 Esses procedimentos foram testados nessas configurações de servidor:
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
+* Windows Server 2019 e IIS 10
 
 ## <a name="network-requirements"></a>Requisitos de rede
 
@@ -61,7 +62,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
     No Visual Studio 2017, escolha **arquivo > novo projeto de >** e, em seguida, selecione **Visual C# > Web > ASP.NET Core aplicativo Web**. Na seção modelos de ASP.NET Core, selecione **aplicativo Web (Model-View-Controller)**. Certifique-se de que ASP.NET Core 2,1 está selecionado, que **habilitar o suporte ao Docker** não está selecionado e que a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.
     ::: moniker-end
 
-4. Abra o arquivo About.cshtml.cs e defina um ponto de interrupção `OnGet` no método (em modelos mais antigos, abra HomeController.cs em vez disso e defina `About()` o ponto de interrupção no método).
+4. Abra o arquivo About.cshtml.cs e defina um ponto de interrupção no `OnGet` método (em modelos mais antigos, abra HomeController.cs em vez disso e defina o ponto de interrupção no `About()` método).
 
 ## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalar e configurar o IIS no Windows Server
 
@@ -80,7 +81,10 @@ Ao baixar o software, você pode obter solicitações para conceder permissão p
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalar o ASP.NET Core no Windows Server
 
-1. Instale o [pacote de hospedagem do Windows Server do .NET Core](https://aka.ms/dotnetcore-2-windowshosting) no sistema de hospedagem. O pacote instala o Runtime .NET Core, a Biblioteca do .NET Core e o Módulo do ASP.NET Core. Para obter instruções mais detalhadas, consulte [publicando no IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Instale o pacote de hospedagem do .NET Core no sistema de hospedagem. O pacote instala o Runtime .NET Core, a Biblioteca do .NET Core e o Módulo do ASP.NET Core. Para obter instruções mais detalhadas, consulte [publicando no IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+
+    Para o .NET Core 3, instale o [pacote de hospedagem do .NET Core](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer).
+    Para o .NET Core 2, instale a [hospedagem do Windows Server do .NET Core](https://aka.ms/dotnetcore-2-windowshosting).
 
     > [!NOTE]
     > Se o sistema não tiver uma conexão com a Internet, obtenha e instale os *[Pacotes redistribuíveis do Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)* antes de instalar o pacote de hospedagem do Windows Server do .NET Core.
@@ -100,7 +104,13 @@ Se precisar de ajuda para implantar o aplicativo no IIS, considere estas opçõe
 Você pode usar essa opção para criar um arquivo de configurações de publicação e importá-lo para o Visual Studio.
 
 > [!NOTE]
-> Esse método de implantação usa Implantação da Web. Se desejar configurar Implantação da Web manualmente no Visual Studio em vez de importar as configurações, você poderá instalar Implantação da Web 3,6 em vez de Implantação da Web 3,6 para servidores de hospedagem. No entanto, se você configurar Implantação da Web manualmente, será necessário certificar-se de que uma pasta de aplicativo no servidor esteja configurada com os valores e permissões corretos (consulte [configurar site da ASP.net](#BKMK_deploy_asp_net)).
+> Esse método de implantação usa Implantação da Web, que deve ser instalado no servidor. Se desejar configurar Implantação da Web manualmente em vez de importar as configurações, você poderá instalar o Implantação da Web 3,6 em vez de Implantação da Web 3,6 para servidores de hospedagem. No entanto, se você configurar Implantação da Web manualmente, será necessário certificar-se de que uma pasta de aplicativo no servidor esteja configurada com os valores e permissões corretos (consulte [configurar site da ASP.net](#BKMK_deploy_asp_net)).
+
+### <a name="configure-the-aspnet-core-web-site"></a>Configurar o site da ASP.NET Core
+
+1. No Gerenciador do IIS, no painel esquerdo, em **conexões**, selecione **pools de aplicativos**. Abra **DefaultAppPool** e defina a **versão .NET CLR** como **sem código gerenciado**. Isso é necessário para ASP.NET Core. O site padrão usa DefaultAppPool.
+
+2. Pare e reinicie o DefaultAppPool.
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalar e configurar Implantação da Web para servidores de hospedagem no Windows Server
 
@@ -114,11 +124,11 @@ Você pode usar essa opção para criar um arquivo de configurações de publica
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado automaticamente. Se o aplicativo não iniciar no Visual Studio, inicie o aplicativo no IIS. Para ASP.NET Core, é necessário certificar-se de que o campo do pool de aplicativos para o **DefaultAppPool** está definido como **Sem código gerenciado**.
+Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado automaticamente. Se o aplicativo não iniciar no Visual Studio, inicie o aplicativo no IIS para verificar se ele é executado corretamente. Por ASP.NET Core, você também precisa certificar-se de que o campo pool de aplicativos para **DefaultAppPool** esteja definido como **nenhum código gerenciado**.
 
 1. Na caixa de diálogo **configurações** , habilite a depuração clicando em **Avançar**, escolha uma configuração de **depuração** e, em seguida, escolha **remover arquivos adicionais no destino** nas opções de **publicação de arquivo** .
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > Se você escolher uma configuração de versão, desabilite a depuração no arquivo *Web. config* quando publicar.
 
 1. Clique em **salvar** e Republique o aplicativo.
@@ -176,15 +186,15 @@ Para obter informações sobre como executar o depurador remoto como um serviço
     > [!TIP]
     > No Visual Studio 2017 e versões posteriores, você pode reanexar ao mesmo processo ao qual você anexou anteriormente usando **Debug > reanexar para processar...** (Shift + Alt + P).
 
-3. Defina o campo qualificador como ** \<nome do computador remoto>** e pressione **Enter**.
+3. Defina o campo qualificador como **\<remote computer name>** e pressione **Enter**.
 
-    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<nome do computador remoto>:p classificar**
+    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<remote computer name> :p classificar**
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, você deve ver ** \<o nome do computador remoto>:4024**
+    No Visual Studio 2019, você deve ver ** \<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    No Visual Studio 2017, você deve ver ** \<o nome do computador remoto>:4022**
+    No Visual Studio 2017, você deve ver ** \<remote computer name> : 4022**
     ::: moniker-end
     A porta é necessária. Se você não vir o número da porta, adicione-o manualmente.
 
@@ -214,7 +224,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 7. Clique em **Anexar**.
 
-8. Abra o site do computador remoto. Em um navegador, acesse **http://\<nome do computador remoto>**.
+8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name> **.
 
     Você deve ver a página da Web do ASP.NET.
 
