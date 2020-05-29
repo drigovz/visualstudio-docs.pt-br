@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Trabalhar com várias contas de usuário
           href: ide/work-with-multiple-user-accounts.md
+        - name: Trabalhar com contas que exigem a autenticação multifator
+          href: ide/work-with-multi-factor-authentication.md
         - name: Estender uma versão de avaliação ou atualizar uma licença
           href: ide/how-to-unlock-visual-studio.md
     - name: Ajustar o desempenho do Visual Studio
