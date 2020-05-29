@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143538"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173857"
 ---
 
 1. No computador em que você tem o projeto ASP.NET aberto no Visual Studio, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e escolha **Publicar**.
@@ -17,7 +17,7 @@ ms.locfileid: "68143538"
 
 1. Navegue até a localização do arquivo de configurações de publicação que você criou na seção anterior.
 
-1. Na caixa de diálogo **Importar arquivo de configurações de publicação**, navegue até o perfil criado na seção anterior, selecione-o e clique em **Abrir**.
+1. Na caixa de diálogo **Importar arquivo de configurações de publicação** , navegue até e selecione o perfil que você criou na seção anterior e clique em **abrir**.
 
     O Visual Studio inicia o processo de implantação e a janela de Saída mostra o andamento e os resultados.
 

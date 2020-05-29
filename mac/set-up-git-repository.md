@@ -1,16 +1,16 @@
 ---
 title: Configurando um Repositório Git
 description: Usando o Git e o Subversion no Visual Studio para Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 02/15/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107899"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173298"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
 
@@ -46,13 +46,13 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
 1. Selecione o nome da Solução do Painel de Soluções do Visual Studio para Mac.
 
-2. Na barra de menus, selecione **Controle de Versão > Publicar no Controle de Versão** para exibir a caixa de diálogo **Selecionar Repositório**:
+2. Na barra de menus, selecione **controle de versão > publicar no controle de versão** para exibir a caixa de diálogo **clonar repositório** :
 
-    ![Iniciar o check-out no Visual Studio para Mac](media/version-control-git4-sml.png)
+    ![Iniciar o check-out no Visual Studio para Mac](media/version-control-git4.png)
 
     Se esse item de menu aparecer esmaecido no menu, verifique se você selecionou o nome da Solução.
 
-3. Escolha a guia **Repositórios registrados** e pressione o botão **Adicionar**:
+3. Escolha a guia **selecionar de registrado** e pressione o botão **Adicionar** :
 
     ![](media/version-control-git5.png)
 
@@ -62,7 +62,7 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
     Também é possível usar SSH para conectar-se ao GIT.
 
-5. Para tentar publicar o aplicativo no Git, selecione o repositório e certifique-se de que ambos os campos de texto Nome e **Mensagem** **do Módulo** estejam concluídos:
+5. Para tentar publicar o aplicativo no git, selecione o repositório e verifique se os campos **nome do módulo** e texto da **mensagem** estão concluídos:
 
     ![Tentativa de publicar o projeto para o git](media/version-control-git7.png)
 
@@ -81,7 +81,7 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
     ![Menu de Controle de versão](media/version-control-git10.png)
 
-10. Depois de começar a fazer mais alterações, selecione **Efetuar push nas alterações** para enviar por push as alterações no repositório **remoto**. Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
+10. Depois de começar a fazer alterações adicionais, primeiro use o **controle de versão > menu revisar e confirmar** para abrir o modo de exibição de status. Depois de selecionar e confirmar as alterações, selecione **enviar por** push para enviar as alterações para o repositório remoto. Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
 
     ![Efetuar push das alterações para um repositório remoto](media/version-control-git11.png)
 
@@ -96,7 +96,7 @@ Siga as etapas abaixo para efetuar push do seu novo repositório local para um n
 > [!NOTE]
 > Se você ainda não tiver criado um repositório do GitHub, consulte a seção [Criando um repositório remoto no GitHub](#creating-a-remote-repo-on-github).
 
-1. Crie sua primeira confirmação acessando **Controle de versão > Examinar a solução e confirmar** na Barra de Menus.
+1. Crie sua primeira confirmação acessando o **controle de versão > revisar e confirmar** na barra de menus.
 
 2. Na guia Status, escolha **Confirmar** no canto superior esquerdo.
 
@@ -127,23 +127,23 @@ O Visual Studio para Mac agora efetuará push das alterações para o repositór
 
 ![Confirmação de que a operação efetuar push foi concluída com êxito](media/version-control-git11.png)
 
-## <a name="check-out-an-existing-repository"></a>Fazer check-out de um repositório existente
+## <a name="clone-an-existing-repository"></a>Clonar um repositório existente
 
-Provavelmente você precisará trabalhar com um repositório do GitHub que exista apenas remotamente e não em seu computador local. O Visual Studio para Mac permite que você faça rapidamente o check-out desse repositório. Siga as etapas abaixo para cloná-lo em seu computador:
+Provavelmente você precisará trabalhar com um repositório do GitHub que exista apenas remotamente e não em seu computador local. Visual Studio para Mac permite clonar esse repositório rapidamente. Siga as etapas abaixo para cloná-lo em seu computador:
 
-1. Na barra menu, selecione **Verificação de > de controle de versão**:
+1. Na barra de menus, selecione **controle de versão > repositório de clones**:
 
-2. Isso exibirá a guia **Conectar ao Repositório**:
+2. Isso exibe a guia **conectar-se com a URL** :
 
-    ![Conectar-se à guia Repositório com os detalhes inseridos](media/version-control-git13.png)
+    ![Guia conectar com a URL com detalhes inseridos](media/version-control-git13.png)
 
 3. Na página do GitHub do repositório remoto, pressione o botão **Clonar ou Baixar** e copie a URL fornecida:
 
     ![url do github exibida](media/version-control-git14.png)
 
-4. Substitua todo o texto no campo de entrada **url** na guia **Conectar ao repositório.** Isso preencherá a maioria dos outros campos nesta guia para você, conforme ilustrado na imagem na etapa #2.
+4. Substitua todo o texto no campo entrada de **URL** na guia **conectar com URL** . Isso preencherá a maioria dos outros campos nesta guia para você, conforme ilustrado na imagem na etapa #2.
 
-5. Insira o diretório no qual você deseja clonar o repositório e pressione **Check-out**.
+5. Insira o diretório no qual você deseja clonar o repositório e pressione **clonagem**.
 
 > [!NOTE]
 > Poderão ocorrer problemas se o repositório tiver mais de 4 GB de tamanho.
@@ -162,6 +162,6 @@ Se houver problemas ao inicializar seu projeto com um repositório remoto vazio,
 1. Navegue para o menu de Controle de versão e escolha **Publicar no controle de versão**.
 1. Siga as etapas do tutorial acima a partir da etapa 6.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Controle de versão no Visual Studio (no Windows)](/visualstudio/version-control/)

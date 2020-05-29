@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127928"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173665"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publique um aplicativo Web em um site usando o Visual Studio
 
@@ -24,33 +24,29 @@ ms.locfileid: "71127928"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Se você precisar publicar um aplicativo da área de trabalho do Windows em um compartilhamento de arquivo de rede, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLI, consulte [Implantar um aplicativo nativo usando O ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, consulte Implantar um aplicativo nativo usando um projeto de [configuração](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Se você precisar publicar um aplicativo da área de trabalho do Windows em um compartilhamento de arquivo de rede, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Publicar em um site
 
 1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
-    ![O comando Publicar no menu de contexto do projeto no Solution Explorer](../deployment/media/quickstart-publish.png "Escolha Publicar")
+    ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
 1. Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Selecione **Criar novo perfil**.
 
-1. Na caixa de diálogo **Escolher um destino de publicação**, escolha **IIS, FTP, etc**.
+1. Na caixa de diálogo **publicar** , escolha **servidor Web (IIS)**.
 
-    ![Escolha IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "Escolha IIS, FTP, etc.")
+    ![Escolher destino de publicação](../deployment/media/quickstart-publish-iis.png "Escolha IIS, FTP, etc.")
 
-1. Selecione **Publicar**. A caixa de diálogo de configurações de publicação do perfil é aberta.
+1. Escolha **implantação da Web** como o método de implantação. A Implantação da Web simplifica a implantação de aplicativos Web e sites para servidores do IIS e precisa ser instalada como um aplicativo no servidor. Use o [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) para instalá-la.
 
-    ![Escolher pasta](../deployment/media/quickstart-publish-settings-web.png "Escolher pasta")
+    ![Escolher método de implantação](../deployment/media/quickstart-publish-iis-web-deploy.png "Escolha IIS, FTP, etc.")
 
-1. No campo **Método de publicação**, escolha um método como **Implantação da Web** ou **FTP**. As configurações que você vir a seguir correspondem a seu método de publicação. A Implantação da Web simplifica a implantação de aplicativos Web e sites para servidores do IIS e precisa ser instalada como um aplicativo no servidor. Use o [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) para instalá-la.
+1. Defina as configurações necessárias para o método de publicação e selecione **concluir**. 
 
-1. Defina as configurações necessárias para o método de publicação e selecione **Validar conexão**. Se o servidor ou o destino estiver disponível e as configurações estiverem corretas, uma mensagem que indica a conexão será validada e você estará pronto para publicar.
+    ![Detalhes da conexão do Implantação da Web](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![Validar sua conexão](../deployment/media/quickstart-publish-web-deploy.png "Validar sua conexão")
-
-1. Selecione **Configurações** para definir outras configurações de implantação, como se deseja implantar uma configuração de depuração ou de versão e, em seguida, selecione **Salvar**. Se você estiver depurando remotamente, será necessária uma configuração de depuração.
-
-1. Para publicar, selecione **Publicar**. A janela de Saída mostra o progresso da implantação e os resultados.
+1. Para publicar, selecione **publicar** na página Resumo. A janela de Saída mostra o progresso da implantação e os resultados.
 
 ## <a name="next-steps"></a>Próximas etapas
 

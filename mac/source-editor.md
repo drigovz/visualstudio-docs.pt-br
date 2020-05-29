@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493268"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173090"
 ---
 # <a name="source-editor"></a>Editor de código-fonte
 
@@ -30,7 +30,7 @@ O Visual Studio para Mac oferece muitos recursos poderosos para tornar o desenvo
 
 O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte grandes permitindo aos desenvolvedores mostrar ou ocultar seções completas do código, tal como o uso de diretivas, código clichê, comentários e instruções de #region. O dobramento de código é desativado por padrão no Visual Studio para Mac
 
-Para ativar o dobramento de código, navegue até **o Visual Studio > Preferências > Editor de Texto > Código geral de > Dobrando**:
+Para ativar o dobramento de código, navegue até **Visual Studio > preferências > editor de texto > geral > dobramento de código**:
 
 ![Opções de dobramento de código](media/source-neweditor-image1.png)
 
@@ -52,7 +52,7 @@ A quebra automática de linha pode ajudá-lo a gerenciar espaço ao trabalhar em
 
 A quebra automática de linha é desabilitada por padrão, mas pode ser habilitada por meio de **Preferências** no Visual Studio para Mac. 
 
-Para habilitar a quebra automática de linha, navegue até o **Visual Studio > Preferências > Editor de Texto > Novo Editor > Quebra Automática de Linha**:
+Para habilitar a quebra automática de texto, navegue até o **Visual Studio > preferências > editor de texto > quebra automática de palavra**:
 
 ![Opções de quebra automática de linha](media/source-neweditor-wordwrap1.png)
 
@@ -78,7 +78,7 @@ A cor de realce também útil para indicar que algo está sendo atribuído ou re
 
 ![exemplo mostrando a cor do realce](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do editor de código (Visual Studio no Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Estrutura de tópicos (Visual Studio no Windows)](/visualstudio/ide/outlining)
