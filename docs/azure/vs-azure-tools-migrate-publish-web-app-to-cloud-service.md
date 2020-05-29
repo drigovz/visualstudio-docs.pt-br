@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489669"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84179993"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como migrar e publicar um aplicativo Web em um serviço de nuvem do Azure por meio do Visual Studio
 
 Para tirar proveito dos serviços de hospedagem e a escalabilidade do Azure, você pode migrar e implantar seu aplicativo Web em um serviço de nuvem do Azure. Somente alteração mínimas são necessárias. Este artigo aborda somente a implantação em serviços de nuvem; para o Serviço de Aplicativo, consulte [Implantar um aplicativo Web no Serviço de Aplicativo do Azure](/azure/app-service/app-service-deploy-local-git).
 
 > [!Important]
-> Essa migração tem suporte apenas dos projetos específicos do ASP.NET, Silverlight, WCF, Fluxo de trabalho WCF. Não há suporte para projetos do ASP.NET Core. Consulte [Modelos de projeto com suporte](#supported-project-templates).
+> Essa migração só tem suporte para os projetos específicos de fluxo de trabalho ASP.NET, WCF e WCF. Não há suporte para projetos do ASP.NET Core. Consulte [Modelos de projeto com suporte](#supported-project-templates).
 
 ## <a name="migrate-a-project-to-cloud-services"></a>Migrar um projeto para serviços de nuvem
 
-1. Clique com o botão direito no projeto de aplicativo Web e selecione **Converter > Converter em Projeto de Serviço de Nuvem do Microsoft Azure**. (Observe que esse comando não será exibido se você já tiver um projeto de função web na solução.)
-1. O Visual Studio cria um projeto de serviço de nuvem na solução que contém a função web necessária. O nome desse projeto é o mesmo que o seu projeto de aplicativo com a adição do sufixo `.Azure`.
-1. O Visual Studio também define a propriedade **Copiar Local** como verdadeira para todos os assemblies que são necessários para MVC 2, MVC 3, MVC 4 e Aplicativos de negócios do Silverlight. Essa propriedade adiciona esses assemblies ao pacote de serviço usado para a implantação.
+1. Clique com o botão direito do mouse no nó da solução e selecione **adicionar > novo projeto...** e adicione um novo projeto do **serviço de nuvem do Azure (clássico)** à solução existente.
+1. Na caixa de diálogo **novo serviço de nuvem Microsoft Azure (clássico)** , clique em OK sem adicionar nenhuma função ao projeto.
+1. Clique com o botão direito do mouse no nó funções no projeto serviços de nuvem recém-adicionado e selecione **Adicionar projeto de função Web na solução...**.
+1. Na caixa de diálogo **associar ao projeto de função** , selecione o projeto que você deseja associar como uma função Web.
 
    > [!Important]
    > Se tiver outros assemblies ou arquivos necessários para o aplicativo Web, você precisa definir manualmente as propriedades para esses arquivos. Para obter informações sobre como definir essas propriedades, consulte [Incluir arquivos no pacote de serviço](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
@@ -79,7 +80,6 @@ A tabela a seguir fornece detalhes sobre como iniciar o aplicativo no Azure:
 | --- | --- |
 | Aplicativo Web do ASP.NET<br/>(incluindo MVC 2, MVC 3, MVC 4) | Selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. |
 | Aplicativo Web ASP.NET vazio | Caso tenha uma página `.aspx` padrão em seu aplicativo, selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. Para navegar para uma página diferente, insira uma URL do formulário a seguir em um navegador: `<deployment_url>/<page_name>.aspx` |
-| Aplicativo Silverlight<br/>Aplicativo de negócios Silverlight<br/>Aplicativo de navegação Silverlight | Navegue até a página específica do seu aplicativo usando o seguinte formato de URL: `<deployment_url>/<page_name>.aspx` |
 | Aplicativo de serviço WCF<br/>Aplicativo de serviço de fluxo de trabalho WCF | Defina o arquivo `.svc` como a página inicial do seu projeto de Serviço WCF. Depois navegue até `<deployment_url>/<service_file>.svc` |
 | Entidades dinâmicas do ASP.NET<br/>Dados dinâmicos ASP.NET Linq to SQL | Atualize a cadeia de conexão conforme descrito na próxima seção. Depois navegue até `<deployment_url>/<page_name>.aspx`. Para Linq em SQL, você deve usar um banco de dados SQL do Azure. |
 
@@ -117,9 +117,6 @@ Aplicativos que podem ser migrados e publicados nos serviços de nuvem devem usa
 | Web | Aplicativo Web ASP.NET MVC 2 vazio |
 | Web | Aplicativo Web de entidades de dados dinâmicos ASP.NET |
 | Web | Aplicativo Web de dados dinâmicos ASP.NET Linq do SQL |
-| Silverlight | Aplicativo Silverlight |
-| Silverlight | Aplicativo de negócios Silverlight |
-| Silverlight | Aplicativo de navegação Silverlight |
 | WCF | Aplicativo de serviço WCF |
 | WCF | Aplicativo de serviço de fluxo de trabalho WCF |
 | Fluxo de trabalho | Aplicativo de serviço de fluxo de trabalho WCF |

@@ -6,20 +6,20 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3ec4b28f9af769d4765750ab48048e3b155fb48e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543892"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180332"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
- Visual Studio for Mac facilita o desenvolvimento do serviço do seu aplicativo com o suporte para a mais recente plataforma de desenvolvimento web ASP.NET. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o runtime. Ele foi ajustado para desempenho rápido, fatorado para pequenos tamanhos de instalação, e reimaginado para ser executado no Linux e macOS, bem como no Windows.
+ Visual Studio para Mac facilita o desenvolvimento do serviço do aplicativo com seu suporte para a mais recente ASP.NET Core plataforma de desenvolvimento para a Web. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o runtime. Ele foi ajustado para desempenho rápido, fatorado para pequenos tamanhos de instalação e reimaginado para ser executado no Linux e no macOS, bem como no Windows.
 
 ## <a name="installing-net-core"></a>Instalando o .NET Core
 
-O .NET Core 2.1 é instalado automaticamente quando você instala o Visual Studio para Mac.
+O .NET Core 3,1 é instalado automaticamente quando você instala o Visual Studio para Mac. Para obter mais informações sobre as versões do .NET Core com suporte no Visual Studio para Mac consulte [suporte do .NET Core](/visualstudio/mac/net-core-support).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Criar um aplicativo do ASP.NET Core no Visual Studio para Mac
 
@@ -35,14 +35,16 @@ Diversos projetos fornecem um modelo criado previamente para começar a criar se
 - **.NET Core > API**
 - **.NET Core > Aplicativo Web**
 - **.NET Core > Aplicativo Web (Model-View-Controller)**
+- **Aplicativo de servidor do .NET Core > mais incrivelmente**
+- **.NET Core > aplicativo Webassembly de mais incrivelmente**
 
 ![Opções do projeto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo da almofada de solução, expanda a segunda seta e selecione **Startup.cs**. Deve ser semelhante à imagem abaixo:
+Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo do Solution pad, expanda a segunda seta e, em seguida, selecione **Startup.cs**. Ele deve ser semelhante à imagem abaixo:
 
 ![Nova exibição Projeto ASP.NET Core vazio](media/asp-net-core-2019-empty-project.png)
 
-O modelo ASP.NET Core Empty cria um aplicativo web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta Dependencies, que contém as dependências do pacote NuGet do projeto, como ASP.NET Core, o framework .NET Core e os alvos do MSBuild que constroem o projeto:
+O modelo ASP.NET Core vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta Dependencies, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, o .NET Core Framework e os destinos do MSBuild que criam o projeto:
 
 ![Painel de Soluções exibindo as dependências](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -64,7 +66,7 @@ Abra e inspecione o arquivo **Program.cs** no seu projeto. Observe que várias c
     }
 ```
 
-Um aplicativo ASP.NET Core cria um servidor web em seu método principal, configurando e lançando um host através de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
+Um aplicativo ASP.NET Core cria um servidor Web em seu método principal Configurando e iniciando um host por meio de uma instância do [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
 * `.UseStartup<Startup>()`: especifica a classe Startup.
 
@@ -118,7 +120,7 @@ Você pode configurar delegados usando os métodos `Run`,`Map` e `Use` métodos 
 
 O método `Configure` do modelo criado previamente é composto para realizar algumas tarefas. Primeiro, ele configura uma página de tratamento de exceções para ser usada durante o desenvolvimento. Em seguida, ele envia uma resposta para a página da Web solicitante com um simples “Olá, Mundo”.
 
-Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo, você pode selecionar qual navegador deseja executar o aplicativo usando o direito de saque do botão Play, ou simplesmente apertar o botão Play (triangular) para usar seu navegador padrão:
+Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo, você pode selecionar em qual navegador você deseja executar o aplicativo usando o menu suspenso à direita do botão reproduzir ou simplesmente pressionar o botão reproduzir (triangular) para usar o navegador padrão:
 
 ![Execução do navegador](media/asp-net-web-picker.png)
 

@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633324"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183516"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma do MSBuild
 
@@ -36,11 +36,11 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
 
 ## <a name="target-framework-and-platform"></a>Estrutura e plataforma de destino
 
- Uma *estrutura de destino* é a versão do .NET Framework sobre a qual um projeto é compilado para executar, e uma *plataforma de destino* é a plataforma do sistema em que o projeto é compilado para executar.  Por exemplo, você talvez queira um aplicativo .NET Framework 2.0 para ser executado em uma plataforma de 32 bits que seja compatível com a família de processadores x86 802 (x86) de destino. A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*. Para obter mais informações, confira [Estrutura de destino e plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Uma *estrutura de destino* é a versão do .NET Framework sobre a qual um projeto é compilado para executar, e uma *plataforma de destino* é a plataforma do sistema em que o projeto é compilado para executar.  Por exemplo, talvez você queira direcionar um aplicativo .NET Framework 2,0 para ser executado em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 (x86). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*. Para obter mais informações, confira [Estrutura de destino e plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe*, o arquivo de alvos comuns *(microsoft.common.targets)* e o arquivo de tarefas comuns *(microsoft.common.tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *CSC. exe* e *Vbc. exe*, o arquivo de destinos comuns (*Microsoft. Common. targets*) e o arquivo de tarefas comuns (*Microsoft. Common. Tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblies de referência
 

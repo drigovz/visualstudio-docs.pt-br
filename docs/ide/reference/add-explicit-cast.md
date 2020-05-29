@@ -1,40 +1,40 @@
 ---
-title: Adicionar elenco explícito
+title: Adicionar conversão explícita
 ms.date: 03/26/2020
 ms.topic: reference
-author: y87feng
-ms.author: t-yufen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a61a8ed782df935a146b111bbc4107fa7c6d82
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80417318"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182970"
 ---
-# <a name="add-explicit-cast"></a>Adicionar elenco explícito
+# <a name="add-explicit-cast"></a>Adicionar conversão explícita
 
 Esta geração de código aplica-se a:
 
 - C#
 
-**O que é isso?** Permite adicionar automaticamente um elenco explícito a uma expressão, com base no uso.
+**O que:** Permite adicionar automaticamente uma conversão explícita a uma expressão, com base no uso.
 
-**Quando:** Você precisa adicionar um elenco explícito a uma expressão e deseja atribuí-la automaticamente.
+**Quando:** Você precisa adicionar uma conversão explícita a uma expressão e desejar atribuí-la corretamente automaticamente.
 
-**Por que:** Você pode adicionar um elenco explícito a uma expressão manualmente, no entanto, este recurso adiciona-o automaticamente com base no contexto do código.
+**Por que:** Você pode adicionar uma conversão explícita a uma expressão manualmente; no entanto, esse recurso a adiciona automaticamente com base no contexto do código.
 
-## <a name="how-to-use-it"></a>Como usar
+## <a name="how-to-use-it"></a>Como usá-lo
 
-1. Coloque seu cuidado no erro.
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
-3. Selecione **Adicionar elenco explícito**.
+1. Coloque o cursor sobre o erro.
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
+3. Selecione **Adicionar conversão explícita**.
 
-   ![Adicione ação rápida de elenco explícito no Visual Studio](media/add-explicit-cast.png)
+   ![Adicionar ação rápida de conversão explícita no Visual Studio](media/add-explicit-cast.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Geração de Código](../code-generation-in-visual-studio.md)
+- [Geração de código](../code-generation-in-visual-studio.md)
 - [Refatoração](../refactoring-in-visual-studio.md)

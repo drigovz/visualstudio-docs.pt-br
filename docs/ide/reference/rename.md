@@ -1,6 +1,6 @@
 ---
 title: Renomeação de refatoração
-ms.date: 01/26/2018
+ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565455"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182945"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -45,7 +45,7 @@ Esta refatoração aplica-se a:
 
        ![Código realçado – Visual Basic](media/rename-highlight-vb.png)
 
-2. Depois, siga um destes procedimentos:
+2. Em seguida, use o teclado ou o mouse da seguinte maneira:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+R**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
@@ -70,17 +70,19 @@ Esta refatoração aplica-se a:
 
 ## <a name="remarks"></a>Comentários
 
-- A partir do Visual Studio 2019 versão 16.3, quando você renomear um tipo que corresponda ao nome do arquivo em que está, uma caixa de seleção aparece que permite que você renomeie o arquivo ao mesmo tempo. Essa opção aparece quando você renomeia uma classe, interface ou enumeração. Esta opção não é suportada para tipos parciais com múltiplas definições.
+- A partir do Visual Studio 2019 versão 16,3, quando você renomeia um tipo que corresponde ao nome do arquivo no qual ele está, uma caixa de seleção é exibida, permitindo que você renomeie o arquivo ao mesmo tempo. Essa opção é exibida quando você renomeia uma classe, interface ou enumeração. Não há suporte para essa opção em tipos parciais com várias definições.
 
-   ![Renomear animação com arquivo - C #](media/rename-with-file-animated-cs.gif)
+   ![Renomear animação com o arquivo-C #](media/rename-with-file-animated-cs.gif)
 
 - Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
 
    ![Conflito de renomeação](media/rename-conflict-cs.png)
 
-- Outra maneira de renomear um símbolo é alterar seu nome no editor. Em seguida, com o cursor no nome do símbolo, **pressione Ctrl**+**.** ou apenas expanda o menu do ícone da lâmpada que aparece e escolha **Renomear \<nome antigo> para \<nome novo>**.
+- Outra maneira de renomear um símbolo é alterar seu nome no editor. Em seguida, com o cursor no nome do símbolo, pressione **Ctrl** + **.** ou simplesmente expanda o menu de ícone de lâmpada que aparece e escolha **renomear \<old name> como \<new name> **.
 
-## <a name="see-also"></a>Confira também
+   ![Renomear no editor](media/rename-with-editor-cs.png)
+
+## <a name="see-also"></a>Veja também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)
