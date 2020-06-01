@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386165"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200535"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Como fazer para atribuir assinaturas do Visual Studio?
 
@@ -22,7 +22,7 @@ Para atribuir assinaturas individualmente:
 
 1. Selecione a [guia Gerenciar Assinantes](https://manage.visualstudio.com/subscribers) na parte superior da página em [manage.visualstudio.com](https://manage.visualstudio.com)
 2. Selecione Adicionar e digite o nome e o endereço de email do usuário ao qual você deseja atribuir uma assinatura.
-    - Caso sua organização esteja usando o Azure Active Directory, o campo de nome faz uma pesquisa para encontrar pessoas no seu diretório atual. Selecione uma delas nos resultados da pesquisa ou adicione alguém manualmente.
+    1. Caso sua organização esteja usando o Azure Active Directory, o campo de nome faz uma pesquisa para encontrar pessoas no seu diretório atual. Selecione uma delas nos resultados da pesquisa ou adicione alguém manualmente.
 3. Caso deseje que esse assinante tenha acesso aos downloads de software quando ele entrar no [Portal de Assinaturas do Visual Studio](https://my.visualstudio.com/), mantenha a alternância de downloads habilitada na seção Configurações de download.
 4. Preencha a seção Opções de Comunicação para nos informar do idioma em que devemos enviar o email de atribuição de assinantes.
 5. Caso deseje adicionar alguma anotação associada à atribuição, use a seleção Referência.
