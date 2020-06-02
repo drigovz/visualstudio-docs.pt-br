@@ -193,7 +193,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
    Os arquivos de mapa de origem são necessários para depuração.
 
-## <a name="run-the-application"></a>Execute o aplicativo
+## <a name="run-the-application"></a>Executar o aplicativo
 
 1. Pressione **F5** (**Depurar** > **Iniciar Depuração**) para executar o aplicativo.
 
