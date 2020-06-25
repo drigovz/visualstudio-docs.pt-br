@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283340"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
 
@@ -72,6 +72,7 @@ Os avisos de uso dão suporte ao uso adequado do .NET.
 |[CA2241: Fornecer argumentos corretos para métodos de formatação](../code-quality/ca2241.md)|O argumento de formato passado para System. String. Format não contém um item de formato que corresponde a cada argumento de objeto ou vice-versa.|
 |[CA2242: Testar para NaN corretamente](../code-quality/ca2242.md)|Essa expressão testa um valor em Single.Nan ou Double.Nan. Use Single.IsNan (único) ou Double.IsNan (duplo) para testar o valor.|
 |[CA2243: Literais de cadeias de caracteres de atributo devem ser analisados corretamente](../code-quality/ca2243.md)|O parâmetro literal da cadeia de caracteres de um atributo não é analisado corretamente para uma URL, um GUID ou uma versão.|
-|[CA2244: não duplicar inicializações de elemento indexado](../code-quality/ca2244.md)|Um inicializador de objeto tem mais de um inicializador de elemento indexado com o mesmo índice de constante. Todos, exceto o último inicializador, são redundantes.|
-|[CA2245: não atribua uma propriedade a si mesmo](../code-quality/ca2245.md)|Uma propriedade foi acidentalmente atribuída a ela mesma.|
-|[CA2246: não atribua um símbolo e seu membro na mesma instrução](../code-quality/ca2246.md)|Não é recomendável atribuir um símbolo e seu membro, ou seja, um campo ou uma propriedade, na mesma instrução. Não fica claro se o acesso de membro foi projetado para usar o valor antigo do símbolo antes da atribuição ou o novo valor da atribuição nesta instrução.|
+|[CA2244: Não duplicar inicializações de elementos indexados](../code-quality/ca2244.md)|Um inicializador de objeto tem mais de um inicializador de elemento indexado com o mesmo índice de constante. Todos, exceto o último inicializador, são redundantes.|
+|[CA2245: Não atribuir uma propriedade a si mesma](../code-quality/ca2245.md)|Uma propriedade foi acidentalmente atribuída a ela mesma.|
+|[CA2246: Não designar um símbolo e o membro dele na mesma instrução](../code-quality/ca2246.md)|Não é recomendável atribuir um símbolo e seu membro, ou seja, um campo ou uma propriedade, na mesma instrução. Não fica claro se o acesso de membro foi projetado para usar o valor antigo do símbolo antes da atribuição ou o novo valor da atribuição nesta instrução.|
+|[CA2248: forneça o argumento ' Enum ' correto para ' Enum. HasFlag '](../code-quality/ca2248.md)|O tipo de enumeração passado como um argumento para a `HasFlag` chamada do método é diferente do tipo de enumeração de chamada.|
