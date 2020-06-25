@@ -1,17 +1,18 @@
 ---
 title: Editor de código XAML
+description: Faça um tour pelo editor de código XAML no Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290079"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329183"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
@@ -182,7 +183,7 @@ A maioria dos recursos a seguir está disponível universalmente no IDE do Visua
 
 Os trechos de código são pequenos blocos de código reutilizáveis que você pode inserir em um arquivo de código usando o comando de menu de contexto de clique com o botão direito do mouse **Inserir trecho** ou uma combinação de atalhos de teclado (**Ctrl** + **K**, **Ctrl** + **X**). Aprimoramos o [IntelliSense](../ide/using-intellisense.md) para que ele dê suporte à exibição de trechos de código XAML, que funcionam para trechos de código internos e quaisquer trechos de código personalizados que você adicionar manualmente. Alguns trechos de código XAML prontos para uso incluem,, `#region` , `Column definition` `Row definition` `Setter` e `Tag` .
 
-![O editor de código XAML com #region opções mostradas no IntelliSense](media/xaml-code-snippets.png "Captura de tela do editor de código XAML com #region opções exibidas no IntelliSense")
+![O editor de código XAML com opções de trecho de código XAML mostradas no IntelliSense](media/xaml-code-snippets.png "Captura de tela do editor de código XAML com opções de trecho de código XAML mostradas no IntelliSense")
 
 Para obter mais informações, consulte as páginas [trechos de código](../ide/code-snippets.md) e [trechos de código C#](../ide/visual-csharp-code-snippets.md) .
 

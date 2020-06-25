@@ -1,7 +1,7 @@
 ---
-title: 'DA0004: alto uso de processador | Microsoft Docs'
+title: DA0004-alto uso do processador | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3a067ae9e884ca7f6a4592dbd827eb0c028876a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777719"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332045"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
+# <a name="da0004-high-processor-usage"></a>DA0004: Uso do processador elevado
 
 |||
 |-|-|

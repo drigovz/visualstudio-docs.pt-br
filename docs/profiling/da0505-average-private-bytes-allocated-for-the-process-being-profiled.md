@@ -1,7 +1,7 @@
 ---
-title: 'DA0505: média de bytes privados alocados para o processo do qual o perfil está sendo criado | Microsoft Docs'
+title: DA0505-média de bytes privados alocados para o processo que está sendo criado com perfil | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4be7d00288330e006a8302cfdb98621b1e660842
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777397"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330292"
 ---
-# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: média de bytes particulares alocados para o processo com criação de perfil
+# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Média de Bytes Privados alocados para o Processo cujo perfil está sendo criado
 
 |||
 |-|-|
 |ID de regra|DA0505|
 |Categoria|Gerenciamento de recursos|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|Tudo|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é a média calculada de todos os intervalos de medição.|
 |Tipo de regra|Informações|
 
