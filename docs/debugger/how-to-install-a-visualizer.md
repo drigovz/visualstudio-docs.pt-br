@@ -1,6 +1,6 @@
 ---
 title: Como instalar um visualizador | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183620"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286382"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar um visualizador é um processo simples.
@@ -53,6 +53,10 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
     - `net2.0`para depuradores que executam o `.NET Framework` tempo de execução.
     - `netstandard2.0`para os depuradores que usam um tempo de execução que dá suporte a `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
     - `netcoreapp`para depuradores que executam o `.NET Core` tempo de execução. (dá suporte a `.NET Core 2.0+` )
+
+   Uma DLL do lado do depurador será necessária se você quiser criar um visualizador autônomo. Essa DLL contém código para o objeto de dados, que pode implementar métodos de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+
+   Se você estiver com vários destinos no código do lado do depurador, a DLL do lado do depurador deverá ser colocada na pasta para TFM com suporte mínimo.
 
 4. Reinicie a sessão de depuração.
 

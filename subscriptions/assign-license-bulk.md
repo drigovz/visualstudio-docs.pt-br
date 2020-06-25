@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182892"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289125"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -24,18 +24,18 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Usar adição em massa para atribuir assinaturas
-1. Entre no portal de administração das assinaturas do Visual Studio em https://manage.visualstudio.com .
+1. Entre no portal de administração das assinaturas do Visual Studio em <https://manage.visualstudio.com> .
 
-2. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** . escolha a guia **Adicionar** e, em seguida, escolha **Adicionar em massa** na lista suspensa.  
+1. Para adicionar vários assinantes ao mesmo tempo, navegue até a guia **gerenciar assinantes** . escolha a guia **Adicionar** e, em seguida, escolha **Adicionar em massa** na lista suspensa.  
 
-2. A adição em massa usa um modelo do Microsoft Excel para carregar informações do Assinante. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
+1. A adição em massa usa um modelo do Microsoft Excel para carregar informações do Assinante. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
    > [!div class="mx-imgBorder"]
    > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
 
-3. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (A*referência* é um campo opcional.) Salve o arquivo localmente depois de terminar.
+1. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (A*referência* é um campo opcional.) Salve o arquivo localmente depois de terminar.
 
     > [!NOTE]
     > Um dos campos no modelo permite que os administradores habilitem ou desabilitem a capacidade dos assinantes de baixar o software.  A desabilitação dos downloads também desabilita o acesso às chaves do produto.
@@ -48,11 +48,11 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
     - Verifique se todos os campos obrigatórios foram concluídos. 
     - Verifique a coluna **mensagem de erro** .  Se houver erros listados, resolva-os antes de tentar carregar o arquivo. 
 
-4. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **Carregar Vários Assinantes**, clique em **Procurar**.
+1. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **Carregar Vários Assinantes**, clique em **Procurar**.
    > [!div class="mx-imgBorder"]
    > ![Navegar para o modelo salvo para carregar vários assinantes](media/bulk-add-browse-saved-template.png)
 
-5. Navegue para o arquivo do Excel que você salvou e, em seguida, clique em **OK**.
+1. Navegue para o arquivo do Excel que você salvou e, em seguida, clique em **OK**.
    > [!div class="mx-imgBorder"]
    > ![Carregar o modelo do Excel para carregar vários assinantes](media/bulk-upload-subscribers.png)
 

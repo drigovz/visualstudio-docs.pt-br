@@ -1,7 +1,7 @@
 ---
 title: Criar um teste de serviço Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 67aff3b1486224c93a6a8302feb96caea91afcff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589091"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287890"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
 
@@ -23,7 +23,7 @@ Você pode usar um teste de desempenho na Web para testar serviços Web. Usando 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Você pode baixá-lo a partir de [ASP.NET commerce starter kit](https://sourceforge.net/projects/ppcsk/).
+Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Você pode baixá-lo do [Kit de início do ASP.net Commerce](https://sourceforge.net/projects/ppcsk/).
 
 **Requisitos**
 
@@ -37,7 +37,7 @@ Visual Studio Enterprise
 
 3. Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4. Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço.** Selecione o método que você deseja testar e examine a mensagem SOAP. Ele contém um `SOAPAction`.
+4. Abra uma sessão separada do navegador e digite a URL da página *. asmx* na barra de ferramentas de **endereço** . Selecione o método que você deseja testar e examine a mensagem SOAP. Ele contém um `SOAPAction`.
 
 5. No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse na solicitação e selecione **Adicionar Cabeçalho** para adicionar um novo cabeçalho. Na propriedade **Nome**, digite `SOAPAction`. Na propriedade **Valor**, digite o valor que você vê em `SOAPAction`, como `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Visual Studio Enterprise
      </soap:Envelope>
      ```
 
-9. Retorne ao **Web Performance Test Editor** e escolha as elipses **(...)** na propriedade **String Body.** Cole o conteúdo da área de transferência na propriedade.
+9. Volte para a **Editor de testes de desempenho Web** e escolha as reticências **(...)** na propriedade de **corpo da cadeia de caracteres** . Cole o conteúdo da área de transferência na propriedade.
 
 10. Você deve substituir todos os valores de espaço reservado do XML com os valores válidos para que o teste seja aprovado. No exemplo anterior, substitua as duas instâncias de `string` e uma de `int`. Essa operação de serviço Web somente será concluída se houver um usuário registrado que tenha feito um pedido.
 
@@ -71,8 +71,8 @@ Visual Studio Enterprise
     > [!NOTE]
     > Você pode usar a vinculação de dados no corpo SOAP para substituir o valor de qualquer espaço reservado por valores associados a dados usando a sintaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Execute o teste. No painel superior do **Visualizador de Resultados de Teste de Desempenho na Web**, selecione a solicitação de serviço Web. No painel inferior, selecione a guia Navegador da Web. O XML que é devolvido pelo serviço web, e os resultados de qualquer operação, serão exibidos.
+13. Execute o teste. No painel superior do **Visualizador de Resultados de Teste de Desempenho na Web**, selecione a solicitação de serviço Web. No painel inferior, selecione a guia navegador da Web. O XML que é retornado pelo serviço Web e os resultados de quaisquer operações serão exibidos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
