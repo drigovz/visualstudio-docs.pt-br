@@ -1,7 +1,7 @@
 ---
-title: 'DA0021: alta taxa de coletas de lixo da Ger 1 | Microsoft Docs'
+title: DA0021-alta taxa de coletas de lixo de Gen 1 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.21
 - vs.performance.DA0021
@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 36350b59a3d70f8553fddc5f58bf5c79716fa3aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 13ff757b0ccb1a6ac9a011a8afa7d9824959dafb
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777654"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329487"
 ---
-# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: taxa alta de coletas de lixo Gen 1
+# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Alta taxa de coletas de lixo de Geração 1
 
 |||
 |-|-|
 |ID de regra|DA0021|
 |Categoria|Uso do .NET Framework|
-|Métodos de criação de perfil|Todos|
+|Métodos de criação de perfil|Tudo|
 |Mensagem|Há uma taxa bem alta de coletas de lixo da Ger 1 ocorrendo. Se, por design, a maioria das estruturas de dados do programa for alocada e persistida por um longo tempo, normalmente, isso não será um problema. No entanto, se esse comportamento não for intencional, o aplicativo poderá estar fixando objetos. Se não tiver certeza, você poderá coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado pelo aplicativo.|
 |Tipo de regra|Informações|
 

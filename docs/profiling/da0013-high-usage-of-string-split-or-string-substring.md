@@ -1,7 +1,7 @@
 ---
-title: 'DA0013: alto uso de String.Split ou String.Substring | Microsoft Docs'
+title: DA0013-alto uso de String. Split ou String. substring | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -17,14 +17,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49c403c401a3a60213519d0b01131e811f5105dd
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779396"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328090"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: uso alto de String.Split ou String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Alto uso de String.Split ou String.Substring
 
 |||
 |-|-|
@@ -43,4 +43,4 @@ ms.locfileid: "74779396"
  Se o gerenciamento de alocações de memória for crítico para seu aplicativo, considere o uso de alternativas aos métodos String.Split e String.Substr. Por exemplo, é possível usar o método IndexOf ou IndexOfAny para localizar uma subcadeia de caracteres específica em uma String de caracteres sem criar uma nova instância da classe String.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
- Clique duas vezes na mensagem na janela **Lista de erros** para navegar até a exibição de [detalhes](../profiling/function-details-view.md) da função dos dados do perfil de amostragem. Examine as funções de chamada para encontrar as seções do programa que fazem o uso mais frequente dos métodos System.String.Split ou System.String.Substr. Se possível, use o método IndexOf ou IndexOfAny para localizar uma subcadeia de caracteres específica em uma String de caracteres sem criar uma nova instância da classe String.
+ Clique duas vezes na mensagem na janela **lista de erros** para navegar até a [exibição detalhes da função](../profiling/function-details-view.md) dos dados do perfil de amostragem. Examine as funções de chamada para encontrar as seções do programa que fazem o uso mais frequente dos métodos System.String.Split ou System.String.Substr. Se possível, use o método IndexOf ou IndexOfAny para localizar uma subcadeia de caracteres específica em uma String de caracteres sem criar uma nova instância da classe String.
