@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85347866"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418776"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Diga ao depurador o que mostrar usando o atributo DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
@@ -27,10 +27,10 @@ O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de carac
 
 Se uma classe tiver um `ToString()` método substituído, o depurador usará o método substituído em vez do padrão `{<typeName>}` . Portanto, se você tiver substituído o `ToString()` método, o depurador usará o método substituído em vez do padrão `{<typeName>}` , e você não precisará usar `DebuggerDisplay` . Se você usar ambos, o `DebuggerDisplay` atributo terá precedência sobre o `ToString()` método substituído. O `DebuggerDisplay` atributo também tem precedência sobre o `ToString()` método substituído em uma subclasse.
 
-Se o depurador avaliar essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
+Se o depurador avaliar essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** .
 
 > [!IMPORTANT]
-> Se a caixa de seleção **Mostrar estrutura bruta de objetos em variáveis do Windows** estiver marcada na caixa de diálogo **ferramentas/opts/Debugging** , o `DebuggerDisplay` atributo será ignorado.
+> Se a caixa de seleção **Mostrar estrutura bruta de objetos em variáveis do Windows** estiver marcada na caixa de diálogo **ferramentas/opções/depuração** , o `DebuggerDisplay` atributo será ignorado.
 
 > [!NOTE]
 > Para código nativo, esse atributo tem suporte apenas no código C++/CLI.
