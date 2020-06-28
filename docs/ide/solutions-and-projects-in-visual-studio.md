@@ -1,6 +1,6 @@
 ---
 title: Soluções e projetos
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285225"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468724"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -53,7 +53,7 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Nome|Descrição|
+|Extensão|Name|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
@@ -74,13 +74,16 @@ Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções**
 
 Muitos comandos de menu estão disponíveis no menu do botão direito em vários itens no **Gerenciador de Soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns. A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
 
+> [!TIP]
+> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha **Window**  >  o**layout da janela de redefinição** de janela na barra de menus.
+
 Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninhados no **Gerenciador de Soluções**. Para saber mais, confira [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte a página de [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md) .
+E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Veja também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projetos e soluções (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
 - [Adicionar e remover itens do projeto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)
