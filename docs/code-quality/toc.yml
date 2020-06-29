@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: 'CA1829: Usar a propriedade Length/Count em vez do método Enumerable.Count'
                   href: ca1829.md
+                - name: 'CA1830: Preferir os métodos Acrescentar e Inserir fortemente tipados provoca uma sobrecarga no StringBuilder'
+                  href: ca1830.md
                 - name: 'CA1831: Usar AsSpan em vez de indexadores baseados em intervalo na cadeia de caracteres quando apropriado'
                   href: ca1831.md
                 - name: 'CA1832: Usar AsSpan ou AsMemory em vez de indexadores baseados em intervalo para obter a parte ReadOnlySpan ou ReadOnlyMemory de uma matriz'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: Não designar um símbolo e o membro dele na mesma instrução'
                   href: ca2246.md
+                - name: 'CA2247: O argumento passado para o construtor TaskCompletionSource deve ser a enumeração TaskCreationOptions em vez da enumeração TaskContinuationOptions'
+                  href: ca2247.md
                 - name: 'CA2248: Fornecer o argumento de enumeração correto para Enum.HasFlag'
                   href: ca2248.md
             - name: Suspensão automática de recursos

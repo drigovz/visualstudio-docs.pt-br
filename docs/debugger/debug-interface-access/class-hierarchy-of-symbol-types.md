@@ -40,12 +40,12 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
 |[VTable](../../debugger/debug-interface-access/vtable.md)|Símbolo de uma tabela virtual.|
 |[CustomType](../../debugger/debug-interface-access/customtype.md)|Símbolo do tipo definido pelo fornecedor.|
 |[ManagedType](../../debugger/debug-interface-access/managedtype.md)|Símbolo para um tipo definido em metadados.|
-|[Dimensões](../../debugger/debug-interface-access/dimension.md)|Símbolo para dimensões de matriz.|
+|[Dimensão](../../debugger/debug-interface-access/dimension.md)|Símbolo para dimensões de matriz.|
 
 > [!NOTE]
 > Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Símbolos e marcas de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

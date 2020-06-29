@@ -28,5 +28,5 @@ Para depurar código nativo e gerenciado Misto, você deve ter .NET Framework ve
 
 - Atualize o .NET Framework para a versão 2,0, 3,0, 3,5 ou 4,0.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração remota](../debugger/remote-debugging.md)
