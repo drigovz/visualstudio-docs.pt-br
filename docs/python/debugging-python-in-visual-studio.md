@@ -2,7 +2,7 @@
 title: Depurar o código Python
 description: O Visual Studio fornece depuração avançada para o código Python, incluindo a definição de pontos de interrupção, execução em etapas, inspeção de valores, análise de exceções e depuração na janela interativa.
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285641"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541148"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -261,6 +261,6 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 
 1. Inicie a depuração e reproduza o problema novamente. Os logs de depurador podem ser encontrados em `%temp%\DebugAdapterHostLog.txt`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugger-feature-tour.md).
