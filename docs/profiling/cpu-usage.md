@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329432"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543384"
 ---
 # <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
@@ -61,7 +61,7 @@ A partir do Visual Studio 2019, você pode clicar nos botões **Expandir Afunila
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colunas de dados de Uso da CPU
 
-|||
+|Nome|Descrição|
 |-|-|
 |**CPU total [unidade, %]**|![Equação total de dados de %](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Os milissegundos e o percentual da CPU usados por chamadas à função e as funções chamadas por ela, no intervalo de tempo selecionado. Isso é diferente do grafo de linha de tempo **Uso da CPU**, que compara a atividade total da CPU em um intervalo de tempo com a CPU total disponível.|
 |**CPU própria [unidade, %]**|![Equação % própria](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Os milissegundos e o percentual da CPU usados por chamadas à função no intervalo de tempo selecionado, excluindo funções chamadas pela função.|
@@ -80,7 +80,7 @@ Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página 
 ![Estrutura de árvore de chamada](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Estrutura da árvore de chamadas")
 ::: moniker-end
 
-|||
+|Imagem|Descrição|
 |-|-|
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamadas de Uso da CPU é um pseudonó.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção **Mostrar Código Externo** está desabilitada, o nó de segundo nível é um **[Código Externo]**. O nó contém o código do sistema e do framework que inicia e interrompe o aplicativo, elabora a interface do usuário, controla o agendamento de threads e fornece ao aplicativo outros serviços de nível baixo.|
