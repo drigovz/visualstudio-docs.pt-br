@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 368dfd4c67277305672a89be9e5ab811d341b009
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548116"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome do arquivo de dados de desempenho
 
@@ -24,7 +24,7 @@ Por padrão, um arquivo de dados de criação de perfil (.*vsp*) é salvo usando
 
 Você pode alterar qualquer parâmetro de nomeação na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho.
 
-|||
+|Parâmetro|Descrição|
 |-|-|
 |*Caminho*|O diretório que contém o relatório. O local padrão é a pasta da solução ou o local padrão para projetos e soluções do usuário.|
 |*VSP-arquivo*|O nome do arquivo de dados de criação de perfil. O nome padrão é o nome da solução ou do executável que está sendo analisado.|
@@ -39,7 +39,7 @@ Você pode alterar qualquer parâmetro de nomeação na página **Geral** da cai
 
 3. Em **Relatório**, altere qualquer uma das seguintes configurações:
 
-    |||
+    |Nome|Descrição|
     |-|-|
     |**Local do relatório**|Especifica um diretório para armazenar os arquivos de dados de criação de perfil.|
     |**Nome do relatório**|Especifica um nome de base para os arquivos.|
