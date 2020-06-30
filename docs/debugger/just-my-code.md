@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e233be301630b00031bb90cd95fc78c2697c4e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348425"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536559"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar apenas o código de usuário com Apenas Meu Código
 
@@ -196,7 +196,7 @@ Um arquivo *. natstepfilter* é um arquivo XML com esta sintaxe:
 
 <a name="BKMK_JS_User_and_non_user_code"></a>O JavaScript Apenas Meu Código controla a depuração e a exibição da pilha, categorizando o código em uma dessas classificações:
 
-|||
+|classificação|Descrição|
 |-|-|
 |**MyCode**|Código do usuário que você possui e controla.|
 |**LibraryCode**|Código não-usuário de bibliotecas que você usa regularmente e seu aplicativo depende para funcionar corretamente (por exemplo, WinJS ou jQuery).|
@@ -279,7 +279,7 @@ As especificações nesse arquivo substituem as classificações padrão e a *my
 
 Os pares chave-valor **Eval**, **Function** e **ScriptBlock** determinam como o código gerado dinamicamente é classificado:
 
-|||
+|Nome|Descrição|
 |-|-|
 |**Eval**|Script que é executado passando uma cadeia de caracteres à função `eval` fornecida pelo host. Por padrão, o script Eval é classificado como **MyCode**.|
 |**Função**|Script que é executado passando uma cadeia de caracteres para o construtor `Function`. Por padrão, o script Function é classificado como **LibraryCode**.|
@@ -295,7 +295,7 @@ Você pode alterar o valor para um destas palavras-chave:
 
 Os pares chave-valor **MyCode**, **Libraries** e **Unrelated** especificam as URLs ou os arquivos que você deseja incluir em uma classificação:
 
-|||
+|Nome|Descrição|
 |-|-|
 |**MyCode**|Uma matriz de URLs ou arquivos classificados como **MyCode**.|
 |**Bibliotecas**|Uma matriz de URLs ou arquivos classificados como **LibraryCode**.|

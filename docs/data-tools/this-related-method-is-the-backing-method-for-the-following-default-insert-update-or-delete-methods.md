@@ -3,17 +3,17 @@ title: Este método relacionado é o método de suporte para a seguir inserção
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60634bb2cdc0cf85bfaee441a3fb3d3eb55b3159
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 252303c4933501dd3a4672329d66ef4910238a08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281273"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535246"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 
@@ -31,6 +31,6 @@ O `DataContext` método selecionado é usado atualmente como um dos `Insert` mé
 
    A caixa de mensagem fecha e nenhuma alteração é feita.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

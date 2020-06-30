@@ -16,25 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460384"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536663"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador
 Esse erro significa que o serviço de depurador remoto está sendo executado sob uma conta de usuário que não pode se autenticar quando tenta se conectar ao computador do qual você está depurando. Esse erro pode ocorrer quando a depuração remota está usando o mecanismo de depuração herdado e o depurador remoto está sendo executado como um serviço.
 
  A tabela a seguir mostra quais contas podem acessar o computador:
 
-|||||
+|Cenário|Conta de LocalSystem|Conta do domínio|Contas locais que têm o mesmo nome de usuário e senha nos dois computadores|
 |-|-|-|-|
-||Conta de LocalSystem|Conta do domínio|Contas locais que têm o mesmo nome de usuário e senha nos dois computadores|
-|Ambos os computadores no mesmo domínio|Sim|Sim|Yes|
-|Ambos os computadores em domínios que tenham a confiança bidirecional|No|Não|Sim|
-|Um ou ambos os computadores em um grupo de trabalho|No|Não|Sim|
-|Computadores em domínios diferentes|No|Não|Sim|
+|Ambos os computadores no mesmo domínio|Sim|Sim|Sim|
+|Ambos os computadores em domínios que tenham a confiança bidirecional|Não|Não|Sim|
+|Um ou ambos os computadores em um grupo de trabalho|Não|Não|Sim|
+|Computadores em domínios diferentes|Não|Não|Sim|
 
  Além disso:
 
@@ -74,6 +73,6 @@ Esse erro significa que o serviço de depurador remoto está sendo executado sob
 
 - Execute o Monitor de Depuração Remota como um aplicativo em vez de um serviço.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Depuração remota](../debugger/remote-debugging.md)

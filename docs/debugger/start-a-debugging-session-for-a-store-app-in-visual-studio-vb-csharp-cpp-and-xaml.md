@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b11ea380f9012bc64f577d2da54a4a88b9f94daf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348230"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536546"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar uma sessão de depuração de um aplicativo UWP
 
@@ -76,7 +76,7 @@ A depuração continua até que um ponto de interrupção seja atingido, você s
 
 Você pode definir o destino de depuração na barra de ferramentas do Visual Studio ou na página de propriedades de depuração do projeto. Selecione uma das seguintes opções:
 
-|||
+|Nome|Descrição|
 |-|-|
 |**Computador local**|Depura o aplicativo na sessão atual no computador local.|
 |**Simula**|Depure o aplicativo no simulador do Visual Studio para aplicativos UWP. O simulador é uma janela da área de trabalho que simula funções de dispositivo, como gestos de toque e rotação de dispositivo, que podem não existir no computador local. A opção simulador estará disponível somente se a plataforma de destino do aplicativo **min. Version** for menor ou igual ao sistema operacional no computador local. Para obter mais informações, consulte [executar aplicativos UWP no simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ Em aplicativos C++, o Visual Studio decorre o código nativo por padrão. Você 
 
 - Para aplicativos C++, selecione um dos seguintes depuradores na lista suspensa **tipo de depurador** na página de propriedades **depuração** .
 
-|||
+|Nome|Descrição|
 |-|-|
 |**Somente Gerenciado**|Depura o código gerenciado no aplicativo. O código JavaScript e o código C/C++ nativo são ignorados.|
 |**Somente nativo**|Depura o código C/C++ nativo no aplicativo. O código gerenciado e o código JavaScript são ignorados.|
@@ -216,6 +216,6 @@ Para anexar o depurador a um aplicativo [!INCLUDE[win8_appname_long](../debugger
 > A maneira mais fácil de anexar ao aplicativo JavaScript é fechar todos os outros aplicativos JavaScript. Ou, você pode observar os PIDs de processos de *wwahost.exe* em execução no Gerenciador de tarefas do Windows antes de iniciar seu aplicativo. Quando você inicia seu aplicativo, seu *wwahost.exe* PID será aquele que for diferente daqueles que você anotou anteriormente.
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurar aplicativos no Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536884"
 ---
 # <a name="deploy-to-docker-hub"></a>Implantar no Docker Hub
 
@@ -29,17 +29,17 @@ Se você não tiver um repositório do Hub do Docker, crie um no [Hub do Docker]
 
 1. Clique com o botão direito do mouse no nó do projeto e escolha **publicar...**. É exibida uma tela mostrando as opções de implantação.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Captura de tela das opções de implantação](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. Em **escolher um destino de publicação**, escolha **registro de contêiner**e, em seguida, selecione **Hub do Docker**. A caixa de diálogo **Hub do Docker** é exibida.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Captura de tela da caixa de diálogo do Hub do Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Se você estiver se conectando ao seu próprio repositório (não faz parte de uma organização), deixe a caixa de seleção **publicar em um repositório pessoal** verificada. Se o repositório for de propriedade de uma organização, desmarque a caixa de seleção e insira o nome da organização. Insira o nome de usuário e a senha do Docker para sua conta do Docker que tenha permissões para acessar o repositório ao qual você está se conectando e, em seguida, selecione **salvar**.  
 
-   O Visual Studio tenta implantar a imagem no Hub do Docker.  Se for bem-sucedida, a tela de **publicação** aparecerá com a URL da imagem do repositório, a marca de imagem, o repositório e a configuração de compilação * * (por exemplo, **versão**).
+   O Visual Studio tenta implantar a imagem no Hub do Docker.  Se for bem-sucedida, a tela de **publicação** aparecerá com a URL da imagem do repositório, a marca da imagem, o repositório e a configuração da compilação (por exemplo, **versão**).
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Captura de tela de publicação](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. Você pode atualizar a imagem a qualquer momento clicando no botão **publicar** nesta página.  Ou, você pode modificar ou remover o perfil usando os links abaixo da URL.
 
@@ -49,7 +49,7 @@ Publique no [registro de contêiner do Azure](/azure/container-registry/) seguin
 
 Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Implantar no serviço Azure app](deploy-app-service.md) 
  [Ferramentas de contêiner do Visual Studio](/visualstudio/containers/).
