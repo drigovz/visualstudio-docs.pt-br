@@ -2,7 +2,7 @@
 title: Publicar um aplicativo do Python no Serviço de Aplicativo do Azure no Windows
 description: Como publicar um aplicativo Web em Python diretamente no Serviço de Aplicativo do Azure no Windows desde o Visual Studio, incluindo o conteúdo necessário para o arquivo web.config.
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289164"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531840"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
 
