@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 00f8543c2fdb204a165292844cb5bf5b925c63e8
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330496"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520361"
 ---
 # <a name="vsperf"></a>VSPerf
 Use a ferramenta de linha de comando **VsPerf** para:
@@ -28,7 +28,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
 ## <a name="uwp-apps-only"></a>Apenas os aplicativos UWP
  Essas opções se aplicam somente aos aplicativos UWP.
 
-|||
+|Opção|Descrição|
 |-|-|
 |**/app:{AppName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|
 |**/package:{PackageFullName}**|Inicia o criador de perfil e aguarda o lançamento do aplicativo especificado no menu Iniciar.<br /><br /> Execute `vsperf /listapps` para exibir o nome do aplicativo e o PackageFullName de aplicativos instalados.|
@@ -39,7 +39,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Somente aplicativos da área de trabalho do Windows 8 e do Windows Server 2012
  Essas opções não funcionam em aplicativos UWP.
 
-|||
+|Opção|Descrição|
 |-|-|
 |**/launch:{Executable}**|Inicia e começa a criação de perfil do arquivo executável especificado.|
 |**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando que passarão o destino **/launch**.|
@@ -48,7 +48,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
 ## <a name="all-applications"></a>Todos os aplicativos
  Essas opções aplicam-se a qualquer aplicativo Windows 8 ou o Windows Server 2012.
 
-|||
+|Opção|Descrição|
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Coleta dados dos processos especificados.<br /><br /> Use o Gerenciador de Tarefas para exibir a PID (ID do Processo) e processar os nomes dos aplicativos em execução.|
 |**/file:{ReportName}**|Opcional. Especifica o arquivo de saída (substitui o arquivo existente).<br /><br /> Use somente com /package ou /attach.|
@@ -58,6 +58,6 @@ Use a ferramenta de linha de comando **VsPerf** para:
 |**/Detach**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|
 |**/status**|Mostre status do criador de perfil.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622015ecbc2730c5b0a8cdf7b2ba92c4f5963886
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329817"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520621"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Como criar um relatório ETW das ferramentas de criação de perfil
 O Relatório de Rastreamento de Eventos para Windows (ETW) lista os eventos ETW que são registrados em uma sessão de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Os dados ETW são coletados em um binário (.* ETL*). Para obter mais informações sobre esse relatório, consulte [relatório de ETW (rastreamento de eventos para Windows)](../profiling/event-tracing-for-windows-etw-report.md).
@@ -34,7 +34,7 @@ O Relatório de Rastreamento de Eventos para Windows (ETW) lista os eventos ETW 
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 
-    |||
+    |Item|Descrição|
     |-|-|
     |*ToolsPath*|O caminho do utilitário de Ferramentas de Criação de Perfil. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*VSPFile*|Os dados de criação de perfil (.* VSP* ou. *vsps*) Grupo. Caminhos completos e parciais são aceitos.|

@@ -1,7 +1,7 @@
 ---
 title: Usar pontos de interrupção no depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348009"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769404"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 
@@ -50,7 +50,7 @@ Os pontos de interrupção são uma das técnicas de depuração mais importante
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Definir pontos de interrupção no código-fonte
 
-Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código C# a seguir, você pode definir um ponto de interrupção na declaração da variável, no `for` loop ou em qualquer código dentro do `for` loop. Você não pode definir um ponto de interrupção nas declarações de namespace ou de classe ou na assinatura do método.
+Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código C# a seguir, você pode definir um ponto de interrupção na linha de código com a atribuição de variável ( `int testInt = 1` ), o `for` loop ou qualquer código dentro do `for` loop. Você não pode definir um ponto de interrupção em assinaturas de método, declarações para um namespace ou classe, ou declarações de variável, se não houver nenhuma atribuição e nenhum getter/setter.
 
 Para definir um ponto de interrupção no código-fonte, clique na margem da extrema esquerda ao lado de uma linha de código. Você também pode selecionar a linha e pressionar **F9**, selecionar **Debug**  >  **ponto de interrupção de alternância**de depuração, ou clicar com o botão direito do mouse e selecionar **ponto de**interrupção  >  **Inserir ponto**de interrupção. O ponto de interrupção aparece como vermelho na margem esquerda.
 
@@ -319,7 +319,7 @@ Para rastrear visualmente pontos de interrupção durante a execução do códig
 
 2. Na janela **desmontagem** , clique na margem esquerda da instrução que você deseja interromper. Você também pode selecioná-lo e pressionar **F9**, ou clicar com o botão direito do mouse **e selecionar ponto**de interrupção de inserção de pontos de interrupção  >  **Insert Breakpoint**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Escreva um código C# melhor usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)
