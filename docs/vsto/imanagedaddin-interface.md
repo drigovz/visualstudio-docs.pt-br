@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Métodos
  A tabela a seguir lista os métodos que são definidos pela interface IManagedAddin.
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Chamado quando um aplicativo Microsoft Office carrega um suplemento VSTO gerenciado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Chamado logo antes de um Microsoft Office aplicativo descarrega um suplemento do VSTO gerenciado.|
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Esse CLSID também é usado pelo *VSTOLoader.dll* no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Portanto, se você usar o IManagedAddin para criar seu próprio carregador de suplemento do VSTO e o componente de tempo de execução, não será possível implantar seu componente em computadores que executam suplementos do VSTO que dependem do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de API não gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 266bf906c37ae6de4bdcb9b7be9688b95bcaa8a4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332380"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544632"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR não compatível
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA0029|
 |Categoria|Uso das ferramentas de criação de perfil|

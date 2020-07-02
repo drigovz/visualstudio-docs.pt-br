@@ -57,6 +57,6 @@ Ao exportar um mapa de código como um arquivo XPS, você pode vê-lo em visuali
 
 3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS ( \* . XPS)**. Selecione **Salvar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapear dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md)

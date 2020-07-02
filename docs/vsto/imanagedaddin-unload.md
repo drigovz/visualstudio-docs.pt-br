@@ -34,6 +34,6 @@ HRESULT Unload();
 ## <a name="remarks"></a>Comentários
  Esse método não é chamado pelas versões atuais do Microsoft Office. Este método está reservado para uso futuro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interface IManagedAddin](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Load](../vsto/imanagedaddin-load.md)

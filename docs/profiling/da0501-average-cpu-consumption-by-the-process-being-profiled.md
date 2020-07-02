@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 27537175b1df4a9b6d9ba10edf8257c71057c7df
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 7f03a65842664ec5d0ed2841f791dd168d82860e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332318"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544567"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: consumo médio da CPU pelo processo que está sendo analisado.
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA501|
 |Categoria|Monitoramento de recursos|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|Consumo médio de CPU pelo Processo cujo perfil está sendo criado.|
 |Tipo de regra|Informações|
 

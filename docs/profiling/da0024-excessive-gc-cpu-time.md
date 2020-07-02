@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd2ba84485efca0989394380188770bd6581282
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 20736e7af905bbbc72c1c2bec1e5b79d68259217
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544645"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: tempo excessivo de CPU no GC
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA0024|
 |Categoria|Uso do .NET Framework|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|O % de tempo no GC é muito alto. Há uma quantidade excessiva de sobrecarga de coleta de lixo.|
 |Tipo de regra|Aviso|
 

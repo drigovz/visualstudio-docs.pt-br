@@ -80,7 +80,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 O IPython tem muitos outros recursos úteis, como saída para o Shell do sistema, substituição de variáveis, saída de captura, etc. Consulte a [documentação do ipython](https://ipython.org/documentation.html) para obter mais informações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 
