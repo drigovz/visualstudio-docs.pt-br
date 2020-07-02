@@ -1,7 +1,7 @@
 ---
 title: Alterar as fontes e as cores do editor
 ms.date: 06/01/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283691"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770426"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: alterar fontes e cores para o editor no Visual Studio
 
@@ -55,7 +55,7 @@ Você pode alterar o tipo de fonte padrão, ajustar o tamanho da fonte e alterar
 
 Para saber mais sobre as alterações de fonte e cor que você pode fazer no IDE usando a caixa de diálogo **Opções** , consulte a página da [caixa de diálogo fontes e cores, ambiente, opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Como alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

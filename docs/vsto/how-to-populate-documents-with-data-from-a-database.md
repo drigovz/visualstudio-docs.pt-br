@@ -66,7 +66,7 @@ Quando você executa o projeto, o controle exibe o primeiro registro na fonte de
 
 Para obter informações sobre como enviar atualizações para o dataset tipado e o banco de [dados, consulte How to: Update a data source with data of a host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)

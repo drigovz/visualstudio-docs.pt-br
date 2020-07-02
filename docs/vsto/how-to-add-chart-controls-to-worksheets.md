@@ -82,7 +82,7 @@ ms.locfileid: "85546231"
 
 - Dados a serem colocados em gráfico, armazenados no intervalo de a5 a D8 na planilha.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Controle de gráfico](../vsto/chart-control.md)

@@ -60,5 +60,5 @@ ms.locfileid: "85546556"
 |**Arquivo de validação**|ProjectItemModelSchema. xsd|
 |**Pode estar vazio**|Não|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
