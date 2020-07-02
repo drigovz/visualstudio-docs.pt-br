@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 615c8c2229a3444b02148b8068964e0ed6def47d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332294"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531801"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo autônomo do .NET Framework e coletar estatísticas de aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar estatísticas de desempenho usando o método de amostragem.
@@ -73,9 +73,8 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
    - Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente uma vez a cada 10 segundos em um processador de 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo do ciclo do relógio ou para especificar um evento de amostragem diferente. [/TargetCLR](../profiling/targetclr.md)**:** `Version` especifica a versão do CLR para o perfil quando mais de uma versão do tempo de execução é carregada em um aplicativo. Opcional.
 
-   |||
-   |-|-|
    |Evento de exemplo|Descrição|
+   |-|-|
    |[/timer](../profiling/timer.md) **:**`Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados pelo `Interval`.|
    |[/PF](../profiling/pf.md) [**:** `Interval` ]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
    |[/Sys](../profiling/sys-vsperfcmd.md) [**:** `Interval` ]|Altera o evento de amostragem para chamadas do sistema do processo para o kernel do sistema operacional (syscalls). Se `Interval` for especificado, define o número de chamadas entre as amostras. O padrão é 10.|
@@ -115,6 +114,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f98e27408f889f95df706fdfcf304b34a0e7faef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9a5b15b481115a1ba8cab59d7839153bd0a611a1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332258"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532152"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Conjunto de trabalho máximo em bytes para o processo cujo perfil está sendo criado
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA0504|
 |Categoria|Gerenciamento de recursos|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é o máximo observado em todos os intervalos de medição.|
 |Tipo de regra|Informações|
 

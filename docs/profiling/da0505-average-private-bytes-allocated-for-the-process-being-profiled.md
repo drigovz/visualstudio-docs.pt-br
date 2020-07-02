@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be7d00288330e006a8302cfdb98621b1e660842
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 79150cf63fb8177534d2e5cb0506a64c703e5d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330292"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532101"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Média de Bytes Privados alocados para o Processo cujo perfil está sendo criado
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA0505|
 |Categoria|Gerenciamento de recursos|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é a média calculada de todos os intervalos de medição.|
 |Tipo de regra|Informações|
 

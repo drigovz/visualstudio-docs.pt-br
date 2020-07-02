@@ -13,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46215f44cad7b6125af4aa34cf42e58dbad3771f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330274"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532087"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de Bytes Privados alocados para o Processo cujo perfil está sendo criado
 
-|||
+|Item|Valor|
 |-|-|
 |ID de regra|DA0506|
 |Categoria|Monitoramento de recursos|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é o máximo observado em todos os intervalos de medição.|
 |Tipo de regra|Informações|
 
