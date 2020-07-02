@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280214"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816678"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
+# <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
 O Visual Studio fornece uma variedade de ferramentas de criação de perfil para ajudá-lo a diagnosticar diferentes tipos de problemas de desempenho, dependendo do tipo do aplicativo. Neste artigo, vamos dar uma olhada rápida nas ferramentas de criação de perfil mais comuns.
 
@@ -204,9 +204,9 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[Alocação de objeto .NET](../profiling/dotnet-alloc-tool.md)|Sim (somente .NET)|sim|sim|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|não|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|não|
-|[Visualizador de eventos](../profiling/perftips.md)|sim|sim|sim|
-|[Async .NET](../profiling/perftips.md)|Sim (somente .NET)|sim|sim|
-|[Backup de banco de dados](../profiling/perftips.md)|Sim (somente no .NET Core)|não|Sim (somente ASP.NET Core)|
+|[Visualizador de eventos](../profiling/events-viewer.md)|sim|sim|sim|
+|[.NET Async](../profiling/analyze-async.md)|Sim (somente .NET)|sim|sim|
+|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|não|Sim (somente ASP.NET Core)|
 |[Performance Explorer](../profiling/performance-explorer.md)|não|não|não|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 ::: moniker-end
