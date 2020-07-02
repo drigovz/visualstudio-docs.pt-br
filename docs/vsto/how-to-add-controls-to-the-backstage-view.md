@@ -62,7 +62,7 @@ ms.locfileid: "85538340"
 
 4. Arraste os controles para movê-los para novas posições no menu.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer de faixa de das](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)

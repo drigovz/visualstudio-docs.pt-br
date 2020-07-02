@@ -88,7 +88,7 @@ Este exemplo de código requer o seguinte:
 
 - Para salvar um documento com um novo nome, um diretório chamado *teste* deve existir na unidade C.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)

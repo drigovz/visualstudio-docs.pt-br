@@ -63,6 +63,6 @@ ms.locfileid: "85539809"
 |**Arquivo de validação**|ProjectItemModelSchema. xsd|
 |**Pode estar vazio**|Não|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Como: Adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)
