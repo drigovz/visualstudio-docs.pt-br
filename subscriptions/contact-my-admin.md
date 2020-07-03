@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Saiba como contatar o administrador da assinatura para obter assistência em caso de dúvidas ou problemas.
-ms.openlocfilehash: 117bdb82c878e498862dd967615fde9d6ba632eb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289099"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904569"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenha assistência de seu administrador de assinaturas
 Caso sua assinatura do Visual Studio seja fornecida pelo trabalho ou pela escola, provavelmente, ela foi atribuída a você por um administrador de assinaturas ou "administrador".  Os administradores podem atribuir ou remover assinaturas, alterar endereços de email de credenciais, determinar se você tem a capacidade de baixar software e executar outras funções relacionadas à sua assinatura.
@@ -35,7 +35,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
@@ -43,7 +43,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 
 ## <a name="next-steps"></a>Próximas etapas
 Caso ainda não tenha feito isso, recomendamos a ativação desses benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
-- [Visual Studio IDE](vs-ide-benefit.md)
+- [IDE do Visual Studio](vs-ide-benefit.md)
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 

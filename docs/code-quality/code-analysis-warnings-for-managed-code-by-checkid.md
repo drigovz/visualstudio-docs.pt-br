@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,18 +290,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814792"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835427"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
 A tabela a seguir lista avisos de análise de código para código gerenciado pelo identificador CheckId do aviso.
 
-| CheckId | Aviso | Description |
+| CheckId | Aviso | Descrição |
 |---------| - | - |
 | CA1000 | [CA1000: Não declarar membros estáticos em tipos genéricos](../code-quality/ca1000.md) | Quando um membro estático de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. Nesses dois casos, a sintaxe para especificar o argumento de tipo é diferente e facilmente confundida. |
 | CA1001 | [CA1001: Tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001.md) | Uma classe declara e implementa um campo de instância que é um tipo System.IDisposable, e a classe não implementa IDisposable. Uma classe que declara um campo IDisposable indiretamente possui um recurso não gerenciado e deve implementar a interface IDisposable. |
@@ -475,6 +476,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA2013 | [CA2013: Não usar ReferenceEquals com tipos de valor](ca2013.md) | Ao comparar valores usando <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , se objA e objB forem tipos de valor, eles estarão em caixa antes de serem passados para o <xref:System.Object.ReferenceEquals%2A> método. Isso significa que, mesmo que objA e objB representem a mesma instância de um tipo de valor, o método, no <xref:System.Object.ReferenceEquals%2A> entanto, retorna false. |
 | CA2014 | [CA2014: não use stackalloc em loops.](ca2014.md) | O espaço de pilha alocado por um stackalloc é liberado apenas no final da invocação do método atual.  Usá-lo em um loop pode resultar em aumento de pilha não associado e condições de estouro de pilha eventual. |
 | CA2015 | [CA2015: não definir finalizadores para tipos derivados de MemoryManager &lt; T&gt;](ca2015.md) | Adicionar um finalizador a um tipo derivado de <xref:System.Buffers.MemoryManager%601> pode permitir que a memória seja liberada enquanto ainda estiver em uso por um <xref:System.Span%601> . |
+| CA2016 | [CA2016: encaminhe o parâmetro CancellationToken para métodos que usam um](ca2016.md) | Encaminhe o `CancellationToken` parâmetro para os métodos que usam um para garantir que as notificações de cancelamento da operação sejam propagadas corretamente ou repassem `CancellationToken.None` explicitamente para indicar, de forma intencional, não a propagação do token. |
 | CA2100 | [CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança](../code-quality/ca2100.md) | Um método define a propriedade System.Data.IDbCommand.CommandText usando uma cadeia de caracteres criada com base em um argumento da cadeia de caracteres para o método. Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. |
 | CA2101 |[CA2101: especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101.md) | Um membro de invocação da plataforma permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não realiza marshaling da cadeia de caracteres explicitamente. Isso pode causar uma vulnerabilidade de segurança em potencial. |
 | CA2102 | [CA2102: Capturar exceções não CLSCompliant em manipuladores gerais](../code-quality/ca2102.md) | Um membro em um assembly que não é marcado usando-se o RuntimeCompatibilityAttribute ou que é marcado como RuntimeCompatibility (WrapNonExceptionThrows = false) contém um bloco de captura que trata System.Exception e não contém um bloco de captura geral imediatamente posterior. |

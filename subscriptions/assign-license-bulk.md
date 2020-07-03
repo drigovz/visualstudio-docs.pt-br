@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289125"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903277"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -129,7 +129,7 @@ R: não--para modificar as informações de um assinante individual, você preci
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: adicionei alguém ao meu grupo de segurança do Azure AD, mas não os vejo adicionados no portal de administração de assinaturas e eles não têm uma assinatura. Por que não?  
 R: dependendo de como sua organização tiver configurado o Azure AD, você poderá ver atrasos de até 24 horas antes que o usuário seja adicionado. Se tiver sido mais de 24 horas, [entre em contato com o suporte](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -5,14 +5,14 @@ ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 06/23/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Saiba como comprar recentemente as assinaturas mensais do Visual Studio para o portal de administração de assinaturas
-ms.openlocfilehash: abe0b7a84f0979de4bc1f59b6f82144c804c8c7e
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85307012"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904696"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Adicionar novas assinaturas mensais do Visual Studio ao portal de administração de assinaturas
 Quando você adquire novas assinaturas mensais do Visual Studio usando uma assinatura do Azure, talvez seja necessário adicioná-las ao portal de administração de assinaturas para atribuí-las aos usuários.  
@@ -47,7 +47,7 @@ Agora que você adicionou assinaturas, você está pronto para atribuí-las aos 
 - [Atribuir assinaturas a vários usuários](assign-license-bulk.md)
 - [Atribuir assinaturas específicas a usuários específicos](assign-guid.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

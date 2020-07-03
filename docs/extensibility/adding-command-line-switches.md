@@ -1,7 +1,7 @@
 ---
 title: Adicionando opções de linha de comando | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536273"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903478"
 ---
 # <a name="add-command-line-switches"></a>Adicionar opções de linha de comando
 Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackage quando *devenv.exe* é executado. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar o nome do comutador e suas propriedades. Neste exemplo, a opção mySwitch é adicionada a uma subclasse de VSPackage chamada **AddCommandSwitchPackage** sem argumentos e com o VSPackage carregado automaticamente.
