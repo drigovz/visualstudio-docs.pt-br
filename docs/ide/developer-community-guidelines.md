@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b29cc0b6af8fed9ee64a92b2d43e29062b498a
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85837731"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938262"
 ---
 # <a name="developer-community-guidelines"></a>Diretrizes da comunidade de desenvolvedores
 
@@ -91,7 +91,7 @@ Acompanhe o progresso de sua sugestão de recurso referenciando os [Estados de s
 
 Para manter a conversa clara e transparente, limite a discussão para o inglês e mantenha as coisas relevantes para o problema. Seja considerem para outras pessoas e sempre tente ser educado e Professional.
 
-Para obter mais informações, consulte o [código de conduta da Comunidade da Microsoft](https://answers.microsoft.com/page/codeofconduct).
+Para obter mais informações, consulte o [código de conduta da Comunidade da Microsoft](https://answers.microsoft.com/en-us/page/codeofconduct).
 
 Quaisquer violações no etiqueta de discussão podem levar à remoção do comentário e, eventualmente, à proibição do usuário.
 

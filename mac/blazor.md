@@ -6,12 +6,13 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: ac7fcd9044aa6367f140ac4aa96e6aaf4a9f5885
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180267"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939139"
 ---
 # <a name="create-blazor-web-apps"></a>Criar aplicativos Web mais podestas
 
@@ -76,9 +77,9 @@ Esta pasta contém as páginas da Web de um projeto, que usam uma extensão de a
 
 Essa pasta inclui componentes compartilhados, também usando a extensão *. Razor* . Você verá que isso inclui o *MainLayout. Razor*, que é usado para definir o layout comum em todo o aplicativo. Ele também inclui o componente *NavMenu. Razor* compartilhado, que é usado em todas as páginas. Se você estiver criando componentes reutilizáveis, eles irão para a pasta **compartilhada** .
 
-### <a name="app-settings"></a>Configurações de aplicativo
+### <a name="app-settings"></a>Configurações do aplicativo
 
-O arquivo *appSettings. JSON* contém dados de configuração, como cadeias de conexão.
+O *appSettings.jsno* arquivo contém dados de configuração, como cadeias de conexão.
 
 Para obter mais informações sobre a configuração, consulte a [configuração no guia do ASP.net](/aspnet/core/fundamentals/configuration/index).
 
@@ -97,6 +98,6 @@ Esse arquivo contém um código que configura o comportamento do aplicativo, com
 ## <a name="summary"></a>Resumo
 Neste tutorial, você viu como criar um novo aplicativo de servidor de mais novos Visual Studio para Mac e aprendeu sobre alguns dos recursos que Visual Studio para Mac oferece para ajudá-lo a criar aplicativos mais avançados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 Para obter um guia mais abrangente para criar aplicativos Web mais completos, consulte [introdução ao ASP.NET Core](/aspnet/core/blazor/index)mais grande.
