@@ -7,12 +7,13 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.topic: how-to
+ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289411"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950617"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalar o Visual Studio 2017 para Mac
 
@@ -33,7 +34,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 - Xcode 9.3 ou posterior. A versão estável mais recente geralmente é recomendada.
 - Uma ID da Apple. Se ainda não tiver uma ID da Apple, crie uma nova em https://appleid.apple.com. Será necessário ter uma ID da Apple para instalar e entrar no Xcode.
 
-## <a name="install"></a>Instalar o
+## <a name="install"></a>Instalar
 
 1. Baixar o Visual Studio para Mac de [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
