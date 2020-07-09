@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770515"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092304"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar Definição (Alt+F12)
 
@@ -74,7 +74,7 @@ Você pode usar estes atalhos de teclado com a janela **Inspecionar Definição*
 |-------------------|:-----------------------:|
 |Abrir a janela de definição|**ALT** + **F12**|
 |Fechar a janela de definição|**Esc**|
-|Promover a janela de definição para uma guia de documento regular|**Shift** + **ALT** + **Página inicial**|
+|Promover a janela de definição para uma guia de documento regular|**Ctrl** + **ALT** + **Página inicial**|
 |Navegar entre janelas de definição|**Ctrl** + **Alt** + ALT **-** e **Ctrl** + **ALT**+**=**|
 |Navegar entre vários resultados|**F8** e **Shift** + **F8**|
 |Alternar entre a janela do editor de códigos e a janela de definição|**Shift** + **ESC**|

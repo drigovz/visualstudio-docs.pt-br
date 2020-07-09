@@ -1,5 +1,5 @@
 ---
-title: Diretrizes da comunidade de desenvolvedores
+title: Diretrizes do Developer Community
 description: Descreve as diretrizes para trabalhar com a comunidade de desenvolvedores do Visual Studio.
 ms.date: 6/30/2020
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938262"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137561"
 ---
-# <a name="developer-community-guidelines"></a>Diretrizes da comunidade de desenvolvedores
+# <a name="developer-community-guidelines"></a>Diretrizes do Developer Community
 
 A comunidade de desenvolvedores rastreia problemas e sugestões de recursos para o Visual Studio.
 
@@ -64,6 +64,17 @@ Quando faltam informações importantes no problema, atribuímos o estado de _ma
 ### <a name="wont-fix-bugs"></a>Não corrigirá bugs
 
 Nós fechamos alguns bugs quando há um saldo negativo de custo-benefício. Por exemplo, se a correção for tão complexa regressão de riscos de ti para muitos usuários, a correção poderá não ser razoável. Quando fecharmos um bug como este, explicaremos por que fazemos isso.
+
+### <a name="other-product"></a>Outro produto
+
+Às vezes, ao relatar um problema, ele se torna causado por outro produto e não pelo Visual Studio. Pode ser outro aplicativo relacionado ou uma extensão. 
+
+Quando isso acontecer, fecharemos o problema e solicitaremos que você o abra com o outro produto. Aqui estão alguns locais comuns para arquivar esses problemas:
+
+* [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
+* [Suporte à assinatura do Visual Studio](https://feedback.azure.com/forums/908035-sql-server)
+* [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
 #### <a name="additional-information"></a>Informações adicionais
 
