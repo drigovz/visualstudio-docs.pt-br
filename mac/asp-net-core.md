@@ -6,13 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
+no-loc:
+- Blazor
+- Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 5e9eb15ee006ba23328c53511263724140bca1f9
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939025"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211659"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -30,14 +33,14 @@ Abra o Visual Studio para Mac. Na tela inicial, selecione **Novo Projeto...**
 
 Isso exibirá a caixa de diálogo Novo projeto, permitindo que você selecione um modelo para criar seu aplicativo.
 
-Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Estes são:
+Diversos projetos fornecem um modelo criado previamente para começar a criar seu aplicativo do ASP.NET Core. Eles são:
 
 - **.NET Core > Vazio**
 - **.NET Core > API**
 - **.NET Core > Aplicativo Web**
 - **.NET Core > Aplicativo Web (Model-View-Controller)**
-- **Aplicativo de servidor do .NET Core > mais incrivelmente**
-- **.NET Core > aplicativo Webassembly de mais incrivelmente**
+- **Aplicativo do .NET Core > Blazor Server**
+- **Aplicativo > .NET Core Blazor WebAssembly**
 
 ![Opções do projeto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 

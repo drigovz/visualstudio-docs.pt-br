@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288761"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211604"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
 
@@ -67,7 +67,7 @@ Há três maneiras de especificar um arquivo de configurações de execução no
     </Project>
     ```
 
-- Coloque um arquivo de configurações de execução chamado ". RunSettings" na raiz da sua solução.
+- Coloque um arquivo de configurações de execução chamado *. RunSettings* na raiz da sua solução.
 
   Se a detecção automática de arquivos de configurações de execução estiver habilitada, as configurações nesse arquivo serão aplicadas em todos os testes executados. Você pode ativar a detecção automática de arquivos RunSettings de dois locais:
   
@@ -88,7 +88,7 @@ Há três maneiras de especificar um arquivo de configurações de execução no
 
 ::: moniker-end
 
-### <a name="command-line"></a>Linha de comando
+### <a name="command-line"></a>Linha de Comando
 
 Para executar testes da linha de comando, use *vstest.console.exe*e especifique o arquivo de configurações usando o parâmetro **/Settings** .
 
@@ -205,6 +205,11 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ O coletor de dados de vídeo captura uma gravação de tela quando os testes sã
 
 Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, use um [arquivo de configurações do teste](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Coletor de dados de culpa
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Essa opção pode ajudá-lo a isolar um teste problemático que causa uma falha no host de teste. A execução do coletor cria um arquivo de saída (*Sequence.xml*) em *TestResults*, que captura a ordem de execução do teste antes da falha. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ Para usar parâmetros de execução de teste, adicione um campo <xref:Microsoft.
   </LoggerRunSettings>
 ```
 
-`LoggerRunSettings`a seção define um ou mais agentes de log a serem usados para a execução de teste. Os agentes mais comuns são console, TRX e HTML. 
+A `LoggerRunSettings` seção define um ou mais agentes de log a serem usados para a execução de teste. Os agentes mais comuns são console, TRX e HTML. 
 
 ### <a name="mstest-run-settings"></a>Configurações de execução do MSTest
 
@@ -387,7 +403,34 @@ Essas configurações são específicas para o adaptador de teste que executa os
 |**InProcMode**|false|Caso deseje que os testes sejam executados no mesmo processo do adaptador MSTest, defina esse valor como **true**. Essa configuração fornece um ganho menor de desempenho. No entanto, se um teste for encerrado com uma exceção, os testes restantes não serão executados.|
 |**AssemblyResolution**|false|É possível especificar caminhos para outros assemblies ao localizar e executar testes de unidade. Por exemplo, use esses caminhos para assemblies de dependência que não estão no mesmo diretório do assembly de teste. Para especificar um caminho, use um elemento **Caminho do Diretório**. Os caminhos podem incluir variáveis de ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Veja também
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Especificar variáveis de ambiente no arquivo *. RunSettings*
+
+As variáveis de ambiente podem ser definidas no arquivo *. RunSettings* , que pode interagir diretamente com o host de teste. A especificação de variáveis de ambiente no arquivo *. RunSettings* é necessária para dar suporte a projetos não triviais que exigem a configuração de variáveis de ambiente, como *DOTNET_ROOT*. Essas variáveis são definidas durante a geração do processo de host de teste e estão disponíveis no host.
+
+### <a name="example"></a>Exemplo
+
+O código a seguir é um arquivo *. RunSettings* de exemplo que passa variáveis de ambiente:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma variável de ambiente pode ser especificada como um nome de elemento e seu valor.
+
+> [!NOTE]
+> Como essas variáveis de ambiente sempre devem ser definidas quando o host de teste é iniciado, os testes sempre devem ser executados em um processo separado. Para isso, o sinalizador */InIsolation* será definido quando houver variáveis de ambiente para que o host de teste sempre seja invocado.
+
+## <a name="see-also"></a>Confira também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)

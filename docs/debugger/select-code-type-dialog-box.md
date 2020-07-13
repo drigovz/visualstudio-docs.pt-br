@@ -15,18 +15,20 @@ helpviewer_keywords:
 - debugging [Visual Studio], engine selection
 - debugger, engine selection
 - debugging engine selection dialog box
+no-loc:
+- Blazor WebAssembly
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285420"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211572"
 ---
 # <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
 
@@ -37,7 +39,7 @@ Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo
 **Depurar esses tipos de código:** Na lista fornecida, escolha os tipos de código que você deseja depurar. Isso pode ser útil ao [solucionar problemas de uma falha ao anexar](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Essa opção restringe a detecção para apenas os tipos de código que você deseja depurar.
 
    ::: moniker range=">=vs-2019"
-   - Webassembly de mais alto-assembly da webassembler do cliente
+   - Blazor WebAssembly-Lado do clienteBlazor WebAssembly
    - GPU-emulador de software-código C++ em execução em um emulador de software de GPU
    - JavaScript (Chrome)-JavaScript em execução no Chrome
    - JavaScript (Microsoft Edge-Chromium)-JavaScript em execução no Microsoft Edge baseado em Chromium para Windows 10
@@ -57,6 +59,6 @@ Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo
 
    Para a maioria dos cenários, não há suporte para a anexação de vários depuradores na mesma sessão de depuração. Você pode fazer isso usando uma segunda instância do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Anexar aos processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

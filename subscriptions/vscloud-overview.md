@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise mês a mês ou anualmente, sem nenhum contrato de longo prazo.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906019"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211634"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
 Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Elas são chamadas de **"assinaturas de nuvem"**.
@@ -40,7 +40,7 @@ Qualquer pessoa com [proprietário](https://docs.microsoft.com/azure/role-based-
 
 4. Selecione o número de assinaturas a serem compradas.
     > [!div class="mx-imgBorder"]
-    > ![Selecionar número de assinaturas](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Selecionar número de assinaturas](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Escolha o número de assinaturas a serem compradas")
 
     Se não desejar assinaturas atribuídas a você, desmarque **Atribuir esta assinatura a mim**.
 
@@ -62,12 +62,18 @@ Se você comprou mais de uma assinatura, acesse o [Portal de administração de 
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Cancelar as renovações das assinaturas de nuvem que você comprou
 
-* Para alterar o número de assinaturas compradas:
+Para cancelar as assinaturas, você só precisa definir o número de assinaturas para o seu contrato como zero (0).  Siga estas etapas para reduzir o número de assinaturas:
+1. Entrar no<https://manage.visualstudio.com>
+1. Se você tiver mais de um contrato, escolha o contrato desejado na lista suspensa.
+1. Clique no ícone de **visão geral** na parte superior esquerda para exibir informações sobre suas assinaturas.  
+> [!div class="mx-imgBorder"]
+> ![Exibir visão geral da assinatura](_img/buy-vs-subscriptions/overview-button.png "Clique no botão visão geral para exibir detalhes da assinatura")
+
+4. Localize a entrada para as assinaturas que você deseja cancelar e clique em **Alterar quantidade**.
+1. Defina a quantidade como zero (0). Suas assinaturas permanecerão em vigor até a data de cobrança agendada, mas não serão renovadas quando a data de cobrança for atingida.   
 
 > [!div class="mx-imgBorder"]
-> ![Alterar assinaturas](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Para cancelar essas assinaturas, reduza o número de assinaturas para zero (0). Elas não serão renovadas no início do próximo período de cobrança (no primeiro dia do próximo mês para assinaturas de nuvem mensais e 12 meses depois para assinaturas de nuvem anuais).
+> ![Alterar assinaturas](_img/buy-vs-subscriptions/manage-subscriptions.png "Clique em ' Alterar quantidade ' para cancelar as assinaturas")
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
