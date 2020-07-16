@@ -5,16 +5,17 @@ metadata:
   title: Depurando no Visual Studio
   description: Saiba como usar o Visual Studio para depurar aplicativos e códigos.
   ms.topic: landing-page
+  ms.technology: vs-ide-debug
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77579270"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405416"
 landingContent:
 - title: Sobre a depuração
   linkLists:
@@ -50,7 +51,7 @@ landingContent:
       url: using-breakpoints.md
     - text: Editar o código e continuar a depuração
       url: edit-and-continue.md
-- title: Inspecionar os dados
+- title: Inspecionar dados
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -74,7 +75,7 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: Depurar problemas de desempenho >>
       url: ../profiling/profiling-feature-tour.md
-- title: Colaborar
+- title: Colaboração
   linkLists:
   - linkListType: tutorial
     links:
