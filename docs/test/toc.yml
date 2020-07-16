@@ -42,6 +42,8 @@
       items:
         - name: Executar testes de unidade com o Gerenciador de Testes
           href: run-unit-tests-with-test-explorer.md
+        - name: Depurar testes de unidade com o Gerenciador de Testes
+          href: debug-unit-tests-with-test-explorer.md
         - name: Perguntas Frequentes sobre o Gerenciador de Testes
           href: test-explorer-faq.md
     - name: Executar testes na linha de comando
@@ -103,7 +105,7 @@
       items:
         - name: Teste de unidade em uma DLL da UWP C++
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Teste de unidade de código do Visual C# em aplicativos UWP'
+        - name: Teste de unidade de código do Visual C# em aplicativos UWP
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Passo a passo: Criar e executar testes de unidade para aplicativos UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
