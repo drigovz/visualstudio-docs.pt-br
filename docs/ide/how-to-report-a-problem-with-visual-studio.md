@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769927"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387311"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -69,7 +69,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 
 1. Selecione a guia **Gravar**.
 
-1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se o Visual Studio estiver suspenso, selecione **\<Create a new instance>** para registrar as ações em uma nova instância do Visual Studio.
+1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se o Visual Studio parar de responder, selecione **\<Create a new instance>** para registrar as ações em uma nova instância do Visual Studio.
 
 1. Selecione **Iniciar Gravação**. Conceda permissão para executar a ferramenta.
 

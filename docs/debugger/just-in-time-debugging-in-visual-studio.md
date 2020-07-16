@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903859"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386115"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Desabilitar o Depurador Just-In-Time
 
@@ -32,15 +32,15 @@ Se você não tiver o Visual Studio instalado, poderá evitar a depuração Just
 
 - Se você estiver tentando executar um aplicativo Web, desabilite a depuração de script:
 
-  No **painel de controle** do Windows > opções **de rede e Internet** > **Internet**, selecione **Desabilitar depuração de script (Internet Explorer)** e **Desabilitar depuração de script (outros)** . As etapas e configurações exatas dependem da sua versão do Windows e do seu navegador.
+  Nas opções de rede e Internet do **painel de controle**do Windows  >  **Network and Internet**  >  **Internet Options**, selecione **Desabilitar depuração de script (Internet Explorer)** e **Desabilitar depuração de script (outros)**. As etapas e configurações exatas dependem da sua versão do Windows e do seu navegador.
 
   ![Opções de Internet JIT](../debugger/media/jitinternetoptions.png "Opções de Internet JIT")
 
 - Se você estiver hospedando um aplicativo Web ASP.NET no IIS, desabilite a depuração no lado do servidor:
 
   1. Na exibição de **recursos**do Gerenciador do IIS, na seção **ASP.net** , clique duas vezes em **compilação .net**ou selecione-a e, em seguida, selecione **abrir recurso** no painel **ações** .
-  1. Em **comportamento** > **depurar**, selecione **falso**. As etapas são diferentes em versões mais antigas do IIS.
+  1. Em **Behavior**  >  **depuração**de comportamento, selecione **false**. As etapas são diferentes em versões mais antigas do IIS.
 
 Depois de desabilitar a depuração Just-in-time, o aplicativo pode ser capaz de lidar com o erro e executar normalmente.
 
-Se o aplicativo ainda tiver um erro sem tratamento, você poderá ver uma mensagem de erro ou o aplicativo poderá falhar ou travar. O aplicativo não será executado normalmente até que o erro seja corrigido. Você pode tentar entrar em contato com o proprietário do aplicativo e pedir que ele o corrija.
+Se o aplicativo ainda tiver um erro sem tratamento, você poderá ver uma mensagem de erro ou o aplicativo poderá falhar ou parar de responder. O aplicativo não será executado normalmente até que o erro seja corrigido. Você pode tentar entrar em contato com o proprietário do aplicativo e pedir que ele o corrija.

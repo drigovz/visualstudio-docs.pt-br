@@ -1,7 +1,7 @@
 ---
-title: Executar e executar testes de unidade com o Gerenciador de Testes
-description: Saiba como executar testes com o Gerenciador de Testes no Visual Studio. Este tópico aborda como habilitar execuções de teste automáticas após o build, exibir resultados do teste, agrupar e filtrar a lista de testes, criar playlists, depurar testes e usar atalhos de teste.
-ms.date: 07/29/2019
+title: Executar testes de unidade com o Gerenciador de Testes
+description: Saiba como executar testes com o Gerenciador de Testes no Visual Studio. Este tópico aborda como habilitar execuções de teste automáticas após a compilação, exibir resultados de teste, agrupar e filtrar a lista de testes, criar listas de reprodução e usar atalhos de teste.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86156826"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386635"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
-Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou projetos de teste de unidade de terceiros. Você também pode usar o Gerenciador de Testes para agrupar os testes em categorias, filtrar a lista de testes, criar, salvar e executar playlists de testes. É possível depurar testes e analisar um teste de desempenho e cobertura de código.
+Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou projetos de teste de unidade de terceiros. Você também pode usar o Gerenciador de Testes para agrupar os testes em categorias, filtrar a lista de testes, criar, salvar e executar playlists de testes. Você também pode analisar a cobertura de código e [depurar testes de unidade](../test/debug-unit-tests-with-test-explorer.md).
+
+O **Gerenciador de testes** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET, o projeto de teste pode ser escrito em qualquer linguagem que também seja direcionada ao .NET, independentemente da linguagem do código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.
+
+## <a name="build-your-test-project"></a>Crie seu projeto de teste
+
+Se você ainda não tiver um projeto de teste configurado em sua solução do Visual Studio, deverá primeiro criar e compilar um projeto de teste.
+
+- [Introdução ao teste de unidade (.NET)](../test/getting-started-with-unit-testing.md)
+- [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 
 O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. No entanto, o Gerenciador de Testes também pode executar qualquer estrutura de teste de unidade que implementou um adaptador de Gerenciador de Testes. Para obter mais informações sobre como instalar estruturas de teste de unidade de terceiros, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
-O **Gerenciador de testes** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET, o projeto de teste pode ser escrito em qualquer linguagem que também seja direcionada ao .NET, independentemente da linguagem do código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++. Para obter mais informações, confira [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Executar testes de unidade no Gerenciador de Testes
 
-Quando você [cria o projeto de teste](../test/getting-started-with-unit-testing.md), os testes aparecem no Gerenciador de testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
+Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
 
 ::: moniker range="vs-2017"
 ![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
@@ -304,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes que incluem "MyClass" em seu nome, exceto os testes que também incluem "PerfTest" em seu nome.
 
-## <a name="debug-and-analyze-unit-tests"></a>Depurar e analisar testes de unidade
-
-Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
-
-1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
-
-    > [!NOTE]
-    > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
-
-2. No Gerenciador de Testes, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu do clique com o botão direito.
-
-   Para obter mais informações sobre o depurador, confira [Depuração no Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de desempenho do método de teste
-
-Para diagnosticar por que um método de teste está demorando para ser executado, selecione o método no Gerenciador de Testes e, em seguida, escolha **Analisar o Teste Selecionado** no menu de clique com o botão direito. Consulte [relatório de criação de perfil de instrumentação](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analisar a cobertura de código de teste de unidade
 
 É possível determinar a quantidade do código de produto que realmente está sendo testada por seus testes de unidade com a ferramenta de cobertura de código do Visual Studio que está disponível na edição Enterprise do Visual Studio. Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução.
@@ -351,7 +341,7 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 
 ## <a name="test-shortcuts"></a>Atalhos de teste
 
-Os testes podem ser executados no Gerenciador de testes clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os atalhos padrão do [Gerenciador de testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
+Os testes podem ser executados no Gerenciador de testes clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os atalhos padrão do [Gerenciador de testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou [depuram testes](../test/debug-unit-tests-with-test-explorer.md) com base em onde o cursor está no editor de códigos. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
 
 |Comandos frequentes| Atalhos do teclado|
 |-|------------------------|
@@ -363,8 +353,9 @@ Os testes podem ser executados no Gerenciador de testes clicando com o botão di
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Depurar testes de unidade com o Gerenciador de testes](../test/debug-unit-tests-with-test-explorer.md)
 - [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Perguntas Frequentes sobre o Gerenciador de Testes](test-explorer-faq.md)

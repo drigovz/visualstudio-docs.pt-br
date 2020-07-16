@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904416"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387129"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -36,7 +36,7 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 
 5. Insira suas informações pessoais, escolha um nome de usuário e uma senha e clique em **Cadastre-se agora**.
 
-6. Especifique seu país e CEP e, em seguida, clique em **Próximo**.
+6. Especifique seu país/região e CEP e clique em **Avançar**.
 
 7. Em seguida, você colocará algumas informações no seu perfil.  Indique se é estudante e coloque seu último cargo, empresa e setor.
 

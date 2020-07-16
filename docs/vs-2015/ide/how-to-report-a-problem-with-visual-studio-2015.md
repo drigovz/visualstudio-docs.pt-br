@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651778"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386544"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ A Microsoft respeita sua privacidade. Para obter informações sobre como tratam
 
 Clique no ícone de comentários do usuário ao lado de **Início Rápido** na barra de título ou clique em **Ajuda > Enviar Comentários > Relatar um Problema**.
 
-![Relatar um item de menu com problema](../ide/media/report-a-problem-menu-item.png "|::ref1::|")
+![Relatar um item de menu com problema](../ide/media/report-a-problem-menu-item.png "Relatar um item de menu com problema")
 
 ## <a name="describe-the-problem"></a>Descrever o problema
 
@@ -41,7 +41,7 @@ Clique no ícone de comentários do usuário ao lado de **Início Rápido** na b
 
 3. Escolha uma área de problema no menu suspenso. Se você não tiver certeza, faça a melhor suposição.
 
-   ![Relatar uma caixa de diálogo de problema](../ide/media/report-a-problem-dialog.png "|::ref2::|")
+   ![Relatar uma caixa de diálogo de problema](../ide/media/report-a-problem-dialog.png "Relatar uma caixa de diálogo de problema")
 
 ## <a name="provide-a-screenshot-optional"></a>Fornecer uma captura de tela (opcional)
 
@@ -53,13 +53,13 @@ Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft.
 
 1. Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar a diagnosticar problemas.   Apreciamos muito quando você usa a ferramenta Relatar um Problema para registrar as etapas de reprodução e enviar os dados para a Microsoft.
 
-2. Clique na divisa ao lado **Registrar suas ações para reproduzir o problema**. Se o problema estiver fazendo com que o Visual Studio trave ou falhe, abra outra instância do Visual Studio e selecione-o na exibição de lista.
+2. Clique na divisa ao lado **Registrar suas ações para reproduzir o problema**. Se o problema estiver fazendo com que o Visual Studio pare de responder ou falhe, abra outra instância do Visual Studio e selecione-o na exibição de lista.
 
 3. Clique em **Iniciar Gravação** e execute as etapas que reproduzem o problema. Quando terminar, clique no botão **Parar Gravação** na janela flutuante.
 
 4. Aguarde alguns minutos para o Visual Studio coletar e compactar as informações gravadas. A caixa de diálogo terá uma aparência semelhante a essa quando o processo de coleção for concluído:
 
-     ![Registrar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "|::ref3::|")
+     ![Registrar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "Registrar um arquivo de rastreamento")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Descrever a solução alternativa, se houver uma
 
@@ -69,6 +69,6 @@ Se você conseguir contornar o problema, descreva a solução alternativa na cai
 
 Clique no botão Enviar para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. Se o botão **Enviar** estiver esmaecido, certifique-se de que você forneceu um título e uma descrição.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 
 - [Fale conosco](../ide/talk-to-us.md)

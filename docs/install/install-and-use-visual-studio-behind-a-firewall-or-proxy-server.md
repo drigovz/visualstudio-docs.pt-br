@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce11689cc8cba45473a918668a07ddcc6cdc2ee3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283470"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387155"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -93,7 +93,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | - | - | -: | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
 | Start Page | vsstartpage.blob.core.windows.net | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
-| Direcionado<br> Notification <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
+| Direcionado<br> Notificação <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Usada para fornecer informações no editor sobre quando um arquivo foi atualizado pela última, a linha do tempo de alterações, os itens de trabalho aos quais as alterações estão associadas, os autores e muito mais |
@@ -112,7 +112,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Web do Office <br>add-in <br> Manifesto <br>Verificação <br>Serviço | verificationservice.osi.office.net | https/443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>Suplementos do Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Usado para publicar e testar os suplementos do SharePoint e do Office no SharePoint Online e no Office 365 |
 | Serviço de teste do <br>Gerenciador de Fluxo de Trabalho<br> Host | | http/12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
-| Estatísticas de confiabilidade <br>coletadas automaticamente <br>e outros <br>CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário)<br> para o SDK do Azure <br>para Ferramentas do SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Usada para enviar as estatísticas de confiabilidade (dados de travamento ou falha) do usuário à Microsoft. Os despejos de travamento/falha reais ainda serão carregados se o Relatório de Erros do Windows estiver habilitado, apenas informações estatísticas serão suprimidas; <br>Usada para revelar padrões de uso anônimos para a extensão do SDK de Ferramentas do Azure para o Visual Studio e para padrões de uso para ferramentas do SQL para Visual Studio |
+| Estatísticas de confiabilidade <br>coletadas automaticamente <br>e outros <br>CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário)<br> para o SDK do Azure <br>para Ferramentas do SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Usado para enviar estatísticas de confiabilidade (dados de falha/sem resposta) do usuário para a Microsoft. Os despejos de falha reais/sem resposta ainda serão carregados se Relatório de Erros do Windows estiver habilitado; somente as informações estatísticas serão suprimidas; <br>Usada para revelar padrões de uso anônimos para a extensão do SDK de Ferramentas do Azure para o Visual Studio e para padrões de uso para ferramentas do SQL para Visual Studio |
 | Visual Studio <br> CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Usada para coletar logs de erro e padrões de uso anônimos <br><br>Usada para rastrear problemas de congelamento da interface do usuário |
 | Criação e<br>Gerenciamento de <br>Recursos do Azure | management.azure.com <br>management.core.windows.net | https/443 | Usada para criar sites do Azure ou outros recursos para dar suporte à publicação de aplicativos Web, Azure Functions ou WebJobs |
 | Recomendações de <br>extensão e verificações de <br>filmes | marketplace.visualstudio.com | https/443 | Usada para verificar a disponibilidade de ferramentas de publicação atualizadas. Se desabilitada, uma potencial extensão recomendada para publicação Web poderá não ser mostrada |
@@ -157,7 +157,7 @@ Aqui estão algumas outras opções de suporte:
 * Sugira um recurso, acompanhe os problemas do produto e encontre respostas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
 * Use sua conta do [GitHub](https://github.com/) para falar conosco e com outros desenvolvedores do Visual Studio nas [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Requisitos de conectividade do Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)

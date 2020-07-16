@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183048"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387142"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 
@@ -44,7 +44,7 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 
 | Benefício máximo para parceiros somente com Competências Silver                   | Benefício máximo para parceiros com pelo menos uma Competência Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 assinaturas do Visual Studio Enterprise por país, 75 globalmente          | 50 assinaturas do Visual Studio Enterprise por país, 150 globalmente         |
+| 25 Visual Studio Enterprise assinaturas por país/região; 75 em todo o mundo          | 50 assinaturas de Visual Studio Enterprise por país/região; 150 em todo o mundo         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 
@@ -77,7 +77,7 @@ Nas assinaturas de nuvem do Visual Studio oferecidas pelo MPN, o usuário licenc
 - [Termos de uso](https://www.microsoft.com/useterms/) – as assinaturas do Visual Studio oferecidas por meio do MPN estão sujeitas aos termos de licença das assinaturas do Visual Studio NFR (Proibida a revenda).
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

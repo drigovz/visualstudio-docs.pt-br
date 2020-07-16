@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652467"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387246"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Logs gerados pelo sistema coletados pelo Visual Studio
 
@@ -20,11 +20,11 @@ O Visual Studio coleta logs gerados pelo sistema para corrigir problemas e melho
 
 ## <a name="types-of-collected-data"></a>Tipos de dados coletados
 
-O Visual Studio coleta logs gerados pelo sistema sobre falhas, travamentos, falta de resposta da interface do usuário e alto uso da CPU ou de memória. Também coletamos informações sobre os erros encontrados durante a instalação ou o uso do produto. Os dados coletados variam de acordo com o erro e podem incluir rastreamentos de pilha, despejos de memória e informações de exceção:
+O Visual Studio coleta logs gerados pelo sistema para falhas, falta de resposta da interface do usuário e alta utilização de CPU ou memória. Também coletamos informações sobre os erros encontrados durante a instalação ou o uso do produto. Os dados coletados variam de acordo com o erro e podem incluir rastreamentos de pilha, despejos de memória e informações de exceção:
 
 - Para alto uso da CPU e falta de resposta, são coletados rastreamentos de pilha de threads relevantes do Visual Studio.
 
-- Para casos em que os rastreamentos de pilha de alguns threads não são suficientes para determinar a causa raiz do problema, por exemplo, falhas, travamentos ou alto uso de memória, coletamos um *despejo* de memória. O despejo representa o estado do processo durante o erro.
+- Para casos em que os rastreamentos de pilha de alguns threads não são suficientes para determinar a causa raiz do problema, por exemplo, falhas, falta de resposta ou alto uso de memória, coletamos um *despejo*de memória. O despejo representa o estado do processo durante o erro.
 
 - Para condições de erro inesperadas, por exemplo, uma exceção ao tentar fazer uma gravação em um arquivo em disco, coletamos informações sobre a exceção. As informações incluem o nome da exceção, o rastreamento de pilha do thread no qual ocorreu a exceção, a mensagem associada à exceção e outras informações relevantes à exceção específica.
 
@@ -52,7 +52,7 @@ O fluxo de trabalho para determinar a causa raiz do erro varia conforme o tipo d
 
 ### <a name="error-classification"></a>Classificação de erros
 
-Com base nos logs, os erros são classificados e contados a fim de priorizar sua investigação. Por exemplo, podemos descobrir que “System.IO.\__Error.WinIOError” em “System.IO.FileStream.Init” ocorreu 500 vezes na versão \<x> do produto, e tem a maior taxa de ocorrência nessa versão.
+Com base nos logs, os erros são classificados e contados a fim de priorizar sua investigação. Por exemplo, poderemos descobrir que "System.IO. \_ _Error. WinIOError "at" System.IO.FileStream.Init "ocorreu 500 vezes na versão \<x> do produto e tem a taxa mais alta de ocorrência nessa versão.
 
 ### <a name="work-items-for-tracking"></a>Itens de trabalho para acompanhamento
 

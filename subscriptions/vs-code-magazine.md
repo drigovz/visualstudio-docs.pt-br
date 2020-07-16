@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906081"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387168"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
 
@@ -28,7 +28,7 @@ O processo para configurar sua assinatura da revista de código é simples.  Bas
 3. Você verá uma mensagem informando que seu código foi recuperado.  Clique em **Ativar** para continuar.  (Se você não estiver pronto para ativar, tudo bem.  Você sempre pode voltar para o bloco para ativar.  O link "obter código" vai ler "ativar" depois que você recuperar seu código.)
    > [!div class="mx-imgBorder"]
    > ![Código da revista de código recuperado](_img/vs-code-magazine/vs-code-magazine-success.png "Código recuperado com êxito")
-4. Você será redirecionado para a página inicial da revista de código. Selecione seu país e escolha como você gostaria de receber a revista. 
+4. Você será redirecionado para a página inicial da revista de código. Selecione seu país/região e escolha como você gostaria de receber a revista. 
    > [!NOTE]
    > Visual Studio Dev Essentials Membros têm acesso somente à assinatura digital. 
 5. Com base em suas seleções, você verá uma observação mostrando o preço de sua assinatura junto com a quantidade do cupom que foi aplicado.

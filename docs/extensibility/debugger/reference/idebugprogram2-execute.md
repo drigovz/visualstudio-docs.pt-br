@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Execute | Microsoft Docs
+title: 'IDebugProgram2:: execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f34ebea67ff95d1da6d777cdd828604f4a2f56e8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722988"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386739"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
-Continua executando este programa de um estado parado. Qualquer estado de execução anterior (como um passo) é liberado, e o programa começa a ser executado novamente.
+Continua executando este programa a partir de um estado parado. Qualquer estado de execução anterior (como uma etapa) é limpo e o programa começa a ser executado novamente.
 
 > [!NOTE]
-> Esse método é preterido. Use o método [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) em vez disso.
+> Esse método é preterido. Em vez disso, use o método [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int Execute();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando o usuário inicia a execução a partir de um estado parado no segmento de algum outro programa, este método é chamado neste programa. Esse método também é chamado quando o usuário seleciona o comando **Iniciar** no menu **Depurar** no IDE. A implementação deste método pode ser tão simples quanto chamar o método [Retomar](../../../extensibility/debugger/reference/idebugthread2-resume.md) no segmento atual do programa.
+ Quando o usuário inicia a execução de um estado parado em algum outro thread do programa, esse método é chamado neste programa. Esse método também é chamado quando o usuário seleciona o comando **Iniciar** no menu **depurar** no IDE. A implementação desse método pode ser tão simples quanto chamar o método [resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) no thread atual do programa.
 
 > [!WARNING]
-> Não envie um evento de parada ou um evento imediato (síncrono) para [o Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante o tratamento desta chamada; caso contrário, o depurador pode travar.
+> Não enviar um evento de interrupção ou um evento imediato (síncrono) para [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao lidar com essa chamada; caso contrário, o depurador pode parar de responder.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [Continuar](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Retomar](../../../extensibility/debugger/reference/idebugthread2-resume.md)

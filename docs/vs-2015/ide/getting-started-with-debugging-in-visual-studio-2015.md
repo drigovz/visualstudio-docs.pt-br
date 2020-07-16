@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300193"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386882"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introdução à depuração no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,24 +32,24 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
  A configuração de build padrão é **Depuração**.
 
- ![Botão de compilação de depuração do Visual Studio](../ide/media/vs-ide-gs-debug-build-type1.PNG "|::ref1::|")
+ ![Botão de compilação de depuração do Visual Studio](../ide/media/vs-ide-gs-debug-build-type1.PNG "Vs_ide_gs_debug_build_type1")
 
  Você também pode especificar uma plataforma de build específica para o destino, como **x86** (CPUs Intel de 32 bits), **x64** (CPUs Intel de 64 bits) e **ARM** (CPUs ARM, com suporte apenas para determinados tipos de aplicativo). O padrão é **x86** para projetos gerenciados e nativos. Para alterá-lo, clique no menu suspenso de plataforma de build e selecione uma plataforma diferente ou **Gerenciador de Configurações...**
 
- ![Janela do Gerenciador de arquivos de configuração do Visual Studio](../ide/media/vs-ide-gs-debug-build-cf-mgr.PNG "|::ref2::|")
+ ![Janela do Gerenciador de arquivos de configuração do Visual Studio](../ide/media/vs-ide-gs-debug-build-cf-mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")
 
  Você pode especificar uma configuração de build de destino usando o **Gerenciador de Configurações**. Inicie-o, clique na lista suspensa **Configuração** ou **CPU** e selecione **Novo...** para criar uma nova plataforma ou build.
 
- ![Janela de Configuration Manager do Visual Studio](../ide/media/vs-ide-gs-debug-build-cf-mgr-2.PNG "|::ref3::|")
+ ![Janela de Configuration Manager do Visual Studio](../ide/media/vs-ide-gs-debug-build-cf-mgr-2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")
 
  Ao começar, basta usar **Depuração** e **x86** como sua configuração de build e plataforma, respectivamente. Quando você terminar de codificar e depurar, altere a configuração para **Versão** e direcione para uma plataforma específica. (As versões mais antigas do Visual Studio forneciam uma plataforma padrão **AnyCPU** para projetos de código .Net.)
 
- Observação: quando você compila seu projeto, os valores de configuração e plataforma também são usados para determinar que caminho de diretório do projeto é criado para armazenar o executável. Normalmente, ele é **\<caminho-para-o-projeto>\\<nome-do-projeto>\>\\<configuração\>\\<plataforma\>** . Por exemplo, um projeto com uma configuração de `Debug` e uma plataforma de `x86` seria encontrado em `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Isso poderá ser útil se você tiver suas próprias ferramentas ou scripts que gerenciam esses executáveis compilados.
+ Observação: quando você compila seu projeto, os valores de configuração e plataforma também são usados para determinar que caminho de diretório do projeto é criado para armazenar o executável. Normalmente, é ** \<path-to-project> \\<nome do projeto \> \\<configuração do \> \\<plataforma \> **. Por exemplo, um projeto com uma configuração de `Debug` e uma plataforma de `x86` seria encontrado em `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Isso poderá ser útil se você tiver suas próprias ferramentas ou scripts que gerenciam esses executáveis compilados.
 
 ### <a name="building-your-code"></a>Compilando seu código
  Com seu build configurado, é hora de realmente compilar seu projeto. A maneira mais fácil de fazer isso é pressionar F7, mas você também pode iniciar o build selecionando **Compilar->Compilar Solução** no menu principal.
 
- ![Seleção do menu de projeto de build do Visual Studio](../ide/media/vs-ide-gs-debug-build-menu-item.png "|::ref4::|")
+ ![Seleção do menu de projeto de build do Visual Studio](../ide/media/vs-ide-gs-debug-build-menu-item.png "Vs_ide_gs_debug_build_menu_item")
 
  Você pode observar o processo de build na janela de status **Saída** na parte inferior da interface do usuário do Visual Studio. Os erros, avisos e operações de build são exibidos aqui. Se você tiver erros (ou se tiver um aviso acima de um nível configurado), haverá falha no build. Você pode clicar nos erros e avisos para ir para a linha em que eles ocorreram. Recompile o projeto pressionando **F7** novamente (para recompilar apenas os arquivos com erros) ou **Ctrl+Alt+F7** (para uma recompilação completa e limpa).
 
@@ -57,33 +57,33 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
  Quando bem-sucedida, você verá resultados semelhantes a esse na janela **Saída**.
 
- ![Saída de build bem-sucedida do Visual Studio](../ide/media/vs-ide-gs-debug-success-build.PNG "|::ref5::|")
+ ![Saída de build bem-sucedida do Visual Studio](../ide/media/vs-ide-gs-debug-success-build.PNG "vs_ide_gs_debug_success_build")
 
 ### <a name="reviewing-the-error-list"></a>Revisando a Lista de Erros
- A menos que não tenha feito nenhuma modificação no código compilado com êxito anteriormente, provavelmente você tem um erro. Se você não estiver familiarizado com a codificação, provavelmente terá muitos deles. Às vezes os erros são óbvios, como um erro de sintaxe simples ou um nome de variável incorreto e às vezes eles são difíceis de entender, com apenas um código confuso para orientá-lo. Para uma exibição mais clara dos problemas, navegue até o final da janela **Saída** do build e clique na guia **Lista de Erros**. Isso leva a uma exibição mais organizada dos erros e avisos para o projeto e oferece algumas opções adicionais também.
+ A menos que não tenha feito nenhuma modificação no código compilado com êxito anteriormente, provavelmente você tem um erro. Se você não estiver familiarizado com a codificação, provavelmente terá muitos deles. Às vezes os erros são óbvios, como um erro de sintaxe simples ou um nome de variável incorreto e às vezes eles são difíceis de entender, com apenas um código confuso para orientá-lo. Para obter uma exibição mais limpa dos problemas, navegue até a parte inferior da janela de **saída** da compilação e clique na guia **lista de erros** . Isso o levará a uma exibição mais organizada dos erros e avisos do seu projeto e também fornecerá algumas opções extras.
 
- ![Lista de Erros e saída do Visual Studio 2015](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "|::ref6::|")
+ ![Lista de Erros e saída do Visual Studio 2015](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "Vs_ide_gs_debug_bad_build_error_list")
 
  Clique na linha de erro na janela **Lista de Erros** e pule para a linha em que ocorre o erro. (Ou ative os números de linha clicando na barra **Início Rápido** na parte superior direita, digitando "números de linha" nela e pressionando Enter. Essa é a maneira mais rápida para chegar à entrada da janela **Opções** em que é possível ativar os números de linha. Saiba como usar a barra **Início Rápido** e poupe muitos cliques na interface do usuário!)
 
- ![Editor do Visual Studio com números de linha](../ide/media/vs-ide-gs-debug-line-numbers.png "|::ref7::|")
+ ![Editor do Visual Studio com números de linha](../ide/media/vs-ide-gs-debug-line-numbers.png "Vs_ide_gs_debug_line_numbers")
 
- ![Opção de números de linha do Visual Studio](../ide/media/vs-ide-gs-debug-options-line-numbers.png "|::ref8::|")
+ ![Opção de números de linha do Visual Studio](../ide/media/vs-ide-gs-debug-options-line-numbers.png "Vs_ide_gs_debug_options_line_numbers")
 
  Use Ctrl+G para ir rapidamente para o número de linha em que ocorreu o erro.
 
  O erro é identificado por um sublinhado vermelho de "rabisco". Passe o mouse sobre ele para obter detalhes adicionais. Faça a correção e ele desaparecerá, embora você possa inserir um novo erro com a correção. (Isso é chamado de "regressão".)
 
- ![Focalização de erro do Visual Studio](../ide/media/vs-ide-gs-debug-error-hover1.png "|::ref9::|")
+ ![Focalização de erro do Visual Studio](../ide/media/vs-ide-gs-debug-error-hover1.png "Vs_ide_gs_debug_error_hover1")
 
  Percorra a lista de erros e resolva todos os erros em seu código.
 
- ![Janela Depurar erros do Visual Studio](../ide/media/vs-ide-gs-debug-error-list.PNG "|::ref10::|")
+ ![Janela Depurar erros do Visual Studio](../ide/media/vs-ide-gs-debug-error-list.PNG "Vs_ide_gs_debug_error_list")
 
 ### <a name="reviewing-errors-in-detail"></a>Revisando os erros detalhadamente
  Muitos erros podem não fazem sentido para você, formulados como eles estão nos termos do compilador. Nesses casos, você precisará de informações adicionais. Na janela **Lista de Erros**, você pode realizar uma pesquisa automática do Bing para obter mais informações sobre o erro (ou aviso) clicando com o botão direito do mouse na linha de entrada correspondente e selecionando **Mostrar Ajuda para Erros** no menu de contexto.
 
- ![Lista de erros do Visual Studio da pesquisa do Bing](../ide/media/vs-ide-gs-debug-error-list-error-help.png "|::ref11::|")
+ ![Lista de erros do Visual Studio da pesquisa do Bing](../ide/media/vs-ide-gs-debug-error-list-error-help.png "Vs_ide_gs_debug_error_list_error_help")
 
  Isso inicia uma guia dentro do Visual Studio 2015 que hospeda os resultados de uma pesquisa do Bing para o código de erro e o texto. Os resultados são de muitas origens diferentes na Internet e nem todos podem ser úteis.
 
@@ -94,62 +94,62 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
  Pressione Alt+F11 (ou selecione **Analisar->Executar Análise de Código na Solução** no menu superior) para iniciar a análise de código estático. Isso poderá levar algum tempo se você tiver muito código.
 
- ![Item de menu de análise de código do Visual Studio 2015](../ide/media/vs-ide-gs-debug-run-code-analysis.png "|::ref12::|")
+ ![Item de menu de análise de código do Visual Studio 2015](../ide/media/vs-ide-gs-debug-run-code-analysis.png "Vs_ide_gs_debug_run_code_analysis")
 
  Os avisos novos ou atualizados aparecerão na guia **Lista de Erros** na parte inferior do IDE. Clique nos avisos para acessá-los.
 
- ![Lista de Erros do Visual Studio 2015 com avisos](../ide/media/vs-ide-gs-debug-code-analysis-warning-error-list.PNG "|::ref13::|")
+ ![Lista de Erros do Visual Studio 2015 com avisos](../ide/media/vs-ide-gs-debug-code-analysis-warning-error-list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")
 
  Os avisos serão identificados com um rabisco verde-amarelo brilhante em vez de um vermelho. Passe o mouse sobre eles para obter mais detalhes e clique com o botão direito do mouse neles para obter um menu de contexto para auxiliar nas opções de correção ou refatoração.
 
- ![Foco de aviso de análise de Visual Studio Code](../ide/media/vs-ide-gs-debug-code-analysis-warning-hover.png "|::ref14::|")
+ ![Foco de aviso de análise de Visual Studio Code](../ide/media/vs-ide-gs-debug-code-analysis-warning-hover.png "vs_ide_gs_debug_code_analysis_warning_hover")
 
 ### <a name="using-light-bulbs-to-fix-or-refactor-code"></a>Usando as lâmpadas para corrigir ou refatorar o código
  As lâmpadas são um novo recurso para o Visual Studio 2015 que permite refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência. Para acessá-las, clique com botão direito do mouse em um rabisco de aviso (ou pressione Ctrl+. ao passar o mouse sobre o rabisco) e, em seguida, selecione **Ações Rápidas**.
 
- ![Opções rápidas de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb1.png "|::ref15::|")
+ ![Opções rápidas de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb1.png "Vs_ide_gs_debug_light_bulb1")
 
  Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
 
- ![Visualização de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb-preview-changes.PNG "|::ref16::|")
+ ![Visualização de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb-preview-changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")
 
  As lâmpadas podem ser usadas sempre que os analisadores de código determinem que há uma oportunidade para corrigir, refatorar ou melhorar seu código. Clique em qualquer linha de código, clique com botão direito do mouse para abrir o menu de contexto e selecione **Ações Rápidas** (ou, novamente, se preferir eficiência, pressione Ctrl+.). Se houver opções de melhoria ou refatoração de área disponíveis, elas serão exibidas, caso contrário, a mensagem `No quick options available here` será exibida no bisel do canto inferior esquerdo do IDE.
 
- ![Texto ' no Option ' de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb-no-options.PNG "|::ref17::|")
+ ![Texto ' no Option ' de lâmpada do Visual Studio 2015](../ide/media/vs-ide-gs-debug-light-bulb-no-options.PNG "Vs_ide_gs_debug_light_bulb_no_options")
 
  Com a experiência, você poderá usar rapidamente as teclas de direção e Ctrl+. para verificar se há oportunidades de refatoração da Opção Rápida e limpar seu código.
 
- Para obter mais informações sobre as lâmpadas, leia [Realizar ações rápidas com lâmpadas](../ide/perform-quick-actions-with-light-bulbs.md).
+ Para saber mais sobre lâmpadas leves, leia [executar ações rápidas com lâmpadas leves](../ide/perform-quick-actions-with-light-bulbs.md).
 
 ### <a name="debugging-your-running-code"></a>Depurando seu código em execução
  Agora que você compilou seu código com êxito e realizou um pouco de limpeza, execute-o pressionando F5 ou selecionando **Depurar->Iniciar Depuração**. Isso iniciará o aplicativo em um ambiente de depuração para que você pode observar seu comportamento em detalhes. O IDE do Visual Studio 2015 muda enquanto o aplicativo é executado: a janela de **Saída** é substituída por duas novas (na configuração de janela padrão), a janela com guias **Autos/Locais/Módulos/Inspeção** e a janela com guias **Pilha de Chamadas/Pontos de Interrupção/Configurações de Exceção/Saída**. Essas janelas têm várias guias que permitem inspecionar e avaliar as variáveis, os threads, as filas de chamadas e vários outros comportamentos do aplicativo enquanto ele é executado.
 
- ![VS2015 automáticos e janelas de pilha de chamadas](../ide/media/vs-ide-gs-debug-autos-and-call-stack.PNG "|::ref18::|")
+ ![VS2015 automáticos e janelas de pilha de chamadas](../ide/media/vs-ide-gs-debug-autos-and-call-stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")
 
  Tente várias ações com seu aplicativo e observe as alterações. Se algo parecer anormal, pause o aplicativo pressionando Ctrl+Alt+Break (ou clique no botão **Pausar**).
 
- ![Botão interromper tudo do Visual Studio](../ide/media/vs-ide-gs-debug-break-all-button.png "|::ref19::|")
+ ![Botão interromper tudo do Visual Studio](../ide/media/vs-ide-gs-debug-break-all-button.png "vs_ide_gs_debug_break_all_button")
 
  Pressione F5 para continuar a execução do aplicativo (ou clique no botão **Continuar**).
 
- ![Botão de depuração de continuação do Visual Studio](../ide/media/vs-ide-gs-debug-continue-button.png "|::ref20::|")
+ ![Botão de depuração de continuação do Visual Studio](../ide/media/vs-ide-gs-debug-continue-button.png "Vs_ide_gs_debug_continue_button")
 
  Você pode parar o aplicativo pressionando Shift+F5 ou clicando no botão **Parar**. Ou, pode simplesmente fechar a janela principal do aplicativo (ou caixa de diálogo de linha de comando).
 
- Se seu código for executado perfeitamente e exatamente como esperado, parabéns! Altere a configuração de build para **Versão** e recompile-o para implantação. (No entanto, os profissionais talvez desejem pular para a parte sobre Teste de unidade no final.) No entanto, se ele parou, falhou ou forneceu alguns resultados estranhos, você precisará localizar a origem desses problemas e corrigir os bugs.
+ Se seu código for executado perfeitamente e exatamente como esperado, parabéns! Altere a configuração de build para **Versão** e recompile-o para implantação. (No entanto, os profissionais podem querer ir até o bit no teste de unidade.) No entanto, se ele parar de responder ou tiver falhado ou tiver dado a você alguns resultados estranhos, você precisará encontrar a origem desses problemas e corrigir os bugs.
 
 ### <a name="setting-simple-breakpoints"></a>Configuração pontos de interrupção simples
  Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não. Você NÃO precisa recompilar um projeto após configurar e remover pontos de interrupção.
 
  Defina um ponto de interrupção clicando na margem distante da linha em que você deseja que a interrupção ocorra ou selecione a linha de código e pressione F9. Quando você executar o código, ele será parado antes que as instruções para esta linha de código sejam executadas.
 
- ![Ponto de interrupção do Visual Studio](../ide/media/vs-ide-gs-debug-breakpoint1.png "|::ref21::|")
+ ![Ponto de interrupção do Visual Studio](../ide/media/vs-ide-gs-debug-breakpoint1.png "Vs_ide_gs_debug_breakpoint1")
 
  Quando o código for parado, a linha de código marcada ainda não terá sido executada. Neste ponto, convém executar as instruções para a linha de código marcada pelo ponto de interrupção e inspecionar os valores alterados. Isso é chamado de “intervir” no código. Se o código marcado for uma chamada de método, você poderá intervir nele pressionando F11. Você também pode "ultrapassar" a linha de código pressionando F10. Para obter mais detalhes sobre as ações da etapa de ponto de interrupção, leia [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
  Os usos comuns para os pontos de interrupção incluem:
 
-1. Para restringir a origem de uma falha ou travamento, dispersá-la ao longo e ao redor do código da chamada de método que você acredita que está causando a falha. Conforme você percorre o código, remova e redefina os pontos de interrupção mais próximos até encontrar a linha de código incorreta.
+1. Para restringir a origem de uma falha ou programa que não está respondendo, dispersão-as em todo o código da chamada do método que você considera que está causando a falha. Conforme você percorre o código, remova e redefina os pontos de interrupção mais próximos até encontrar a linha de código incorreta.
 
 2. Ao introduzir um novo código, defina um ponto de interrupção no início dele e percorra o código para verificar se ele está se comportando conforme o esperado.
 
@@ -157,31 +157,31 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
 4. Se estiver escrevendo código C ou C++, use de pontos de interrupção para parar o código para que você possa inspecionar os valores de endereço (procure por NULL) e contagens de referência ao depurar para falhas relacionadas à memória.
 
-   Para obter mais informações sobre como usar pontos de interrupção, leia [Usando pontos de interrupção](../debugger/using-breakpoints.md)
+   Para obter mais informações sobre como usar pontos de interrupção, leia [usando pontos de interrupção](../debugger/using-breakpoints.md)
 
 ### <a name="setting-conditional-breakpoints"></a>Configurando pontos de interrupção condicionais
  Se você tiver um ponto de interrupção em um loop ou recursão ou se tiver muitos pontos de interrupção que percorre com frequência, use um ponto de interrupção condicional para garantir que seu código seja suspenso APENAS quando condições específicas forem atendidas. Caso contrário, você pressionará F11 muitas vezes.
 
  Para definir um ponto de interrupção condicional e suspender seu código quando uma variável for definida para um determinado valor ou passar um certo limite, clique na margem para definir um ponto de interrupção e, em seguida, selecione a "engrenagem" no menu de foco que aparece.
 
- ![Configurações de ponto de interrupção do Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-settings.png "|::ref22::|")
+ ![Configurações de ponto de interrupção do Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-settings.png "Vs_ide_gs_debug_breakpoint_settings")
 
  Você verá uma caixa de diálogo semelhante a essa em que pode definir condições específicas para que a interrupção ocorra.
 
- ![Ponto de interrupção condicional do Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
+ ![Ponto de interrupção condicional do Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")
 
  Para obter mais detalhes de como declarar as expressões usadas para avaliar os pontos de interrupção condicionais, confira o vídeo do Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiência de configuração de ponto de interrupção no Visual Studio).
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspecionando seu código em tempo de execução
  Quando o código em execução atinge um ponto de interrupção e é interrompido, você pode inspecionar variáveis e pilhas de chamadas para determinar o que está acontecendo. Os valores estão nos intervalos que você espera ver? As chamadas estão sendo feitas na ordem correta?
 
- ![Inspeção do valor de&#45;tempo de execução do Visual Studio 2015](../ide/media/vs-ide-gs-debug-inspect-value.PNG "|::ref24::|")
+ ![Inspeção de valor de tempo&#45;de execução do Visual Studio 2015](../ide/media/vs-ide-gs-debug-inspect-value.PNG "vs_ide_gs_debug_inspect_value")
 
  Passe o mouse sobre uma variável para ver os valores e referências que ela contém no momento. Se você vir um valor que não esperava, provavelmente haverá um bug nas linhas de código anteriores ou de chamada. Mova os pontos de interrupção para cima ou adicione condições aos pontos de interrupção existentes para restringir ainda mais sua pesquisa.
 
  Além disso, o Visual Studio 2015 exibe a janela Ferramentas de Diagnóstico, em que você pode observar a utilização de CPU e memória do seu aplicativo ao longo do tempo. Use-os para procurar alocação de memória ou uso da CPU intenso inesperado. Use-o em conjunto com a janela **Inspeção** e pontos de interrupção para determinar o que está causando os recursos não liberados ou o uso intenso inesperado.
 
- ![Janela de Ferramentas de Diagnóstico do Visual Studio 2015](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "|::ref25::|")
+ ![Janela de Ferramentas de Diagnóstico do Visual Studio 2015](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Executando testes de unidade
  Testes de unidade são programas que executam caminhos de código no aplicativo ou serviço. O Visual Studio 2015 instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. Use uma estrutura de teste de unidade para criar testes de unidade, executá-los e relatar os resultados desses testes. Execute os testes de unidade novamente quando realizar alterações para testar se o código ainda está funcionando corretamente. Ao usar o Visual Studio 2015 Enterprise, você pode executar testes automaticamente após cada compilação.
@@ -190,5 +190,5 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
  Para saber mais sobre os testes de unidade no Visual Studio 2015 e como eles podem ajudá-lo a criar um código de qualidade melhor, leia [noções básicas de teste de unidade](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Depuração nas configurações do depurador do Visual Studio e depuração de](../debugger/debugging-in-visual-studio.md) [preparação](../debugger/debugger-settings-and-preparation.md) [aplicativos de 64 bits](../debugger/debug-64-bit-applications.md) [noções básicas do depurador](../debugger/debugger-basics.md)

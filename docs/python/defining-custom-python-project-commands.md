@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540862"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386979"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para projetos do Python
 
@@ -133,7 +133,7 @@ Para referenciar propriedades do projeto ou variáveis de ambiente em valores de
 
 | Atributo | Obrigatório | Descrição |
 | --- | --- | --- |
-| Name | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
+| Nome | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
 | Rotular | Sim | O nome de exibição da interface do usuário que é exibido no submenu Python. |
 | Retornos | Sim | Deve conter `@(Commands)`, que identifica o destino como um comando. |
 
@@ -384,7 +384,7 @@ Indica que o conteúdo dos elementos `<Target>` ou `<CreatePythonCommandItem>` e
 
 Os valores de atributo poderão ficar vazios se você fizer referência a uma propriedade que não esteja definida. Por exemplo, se você usar o token `$(StartupFile)`, mas nenhum arquivo de inicialização tiver sido definido no projeto, o token será resolvido como uma cadeia de caracteres vazia. Nesses casos, é interessante definir um valor padrão. Por exemplo, os comandos **Executar servidor** e **Executar servidor de depuração** definidos nos modelos de projeto do Bottle, do Flask e do Django usarão como padrão *manage.py* se você não especificar um arquivo de inicialização do servidor nas propriedades do projeto.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>O Visual Studio trava e falha ao executar o comando
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>O Visual Studio para de responder e falha ao executar o comando
 
 Provavelmente você está tentando executar um comando do console com `ExecuteIn="output"` e, nesse caso, o Visual Studio pode falhar ao tentar analisar a saída. Use `ExecuteIn="console"` em vez disso. (Confira o [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
