@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: db4d114b743484e651d12831cfbe639fe41246ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283223"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454157"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -137,12 +137,12 @@ A partir daí, você pode exibir as informações do contêiner, exibir ou baixa
 
 Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **Exibir**  >  **outra**  >  **atividade de publicação na Web**do Windows e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
 
-No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto e escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
+No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto, escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre o [serviço de Azure app](/azure/app-service/overview).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Implantar no Registro de Contêiner do Azure](hosting-web-apps-in-docker.md)
