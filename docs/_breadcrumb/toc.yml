@@ -76,6 +76,15 @@
             - name: Diretrizes da Experiência do Usuário
               tocHref: /visualstudio/extensibility/ux-guidelines/
               topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+        - name: Introdução (CSharp)
+          tocHref: /visualstudio/get-started/csharp/
+          topicHref: /visualstudio/get-started/csharp/index
+        - name: Introdução (Visual Basic)
+          tocHref: /visualstudio/get-started/visual-basic/
+          topicHref: /visualstudio/get-started/visual-basic/index
+        - name: Ferramentas de Contêiner
+          tocHref: /visualstudio/containers/
+          topicHref: /visualstudio/containers/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild

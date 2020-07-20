@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: 'CA1835: Escolher as sobrecargas de memória dos métodos Stream ReadAsync/WriteAsync'
                   href: ca1835.md
+                - name: 'CA1836: Prefira IsEmpty em vez de Count quando disponível'
+                  href: ca1836.md
             - name: Avisos de portabilidade
               items:
                 - name: Visão geral
