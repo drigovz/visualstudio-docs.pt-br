@@ -1,6 +1,6 @@
 ---
 title: Opções da linha de comando de VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211568"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869588"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -35,7 +35,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 | Opção | Descrição |
 |---|---|
 |**[*nomes dos arquivos de teste*]**|Executa testes dos arquivos especificados. Separa vários nomes de arquivo de teste com espaços.<br />Exemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*nome do arquivo*]**|Execute testes com configurações adicionais, como coletores de dados.<br />Exemplo: `/Settings:Local.RunSettings`|
+|**/Settings:[*nome do arquivo*]**|Execute testes com configurações adicionais, como coletores de dados. Para obter mais informações, consulte [Configurar testes de unidade usando um arquivo. RunSettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)<br />Exemplo: `/Settings:local.runsettings`|
 |**/Tests:[*nome do teste*]**|Executa testes com nomes que contêm os valores fornecidos. Para fornecer vários valores, separe-os por vírgulas.<br />Exemplo: `/Tests:TestMethod1,testMethod2`<br />A opção de linha de comando **/Tests** não pode ser usada com a opção de linha de comando **/TestCaseFilter**.|
 |**/Parallel**|Especifica que os testes sejam executados em paralelo. Por padrão, todos os núcleos disponíveis no computador podem ser usados. Você pode configurar o número de núcleos a serem usados em um arquivo de configurações.|
 |**/Enablecodecoverage**|Permite o adaptador de diagnóstico de dados CodeCoverage na execução de teste.<br />As configurações padrão serão usadas se não forem especificadas usando o arquivo de configurações.|

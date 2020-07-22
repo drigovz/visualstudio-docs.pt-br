@@ -3,17 +3,17 @@ title: Designer de atividades Designer de Fluxo de Trabalho-FinalState
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b8f25167f3a67e2d1349354ce568c076697e3e73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650468"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875586"
 ---
 # <a name="finalstate-activity-designer"></a>Designer de atividade de FinalState
 
@@ -21,19 +21,19 @@ O designer de <xref:System.Activities.Core.Presentation.FinalState> é usado par
 
 ## <a name="using-the-finalstate-activity-designer"></a>Usando o designer de atividade de FinalState
 
-O designer **FinalState** é usado para criar um <xref:System.Activities.Statements.State> que é pré-configurado como um estado de encerramento em um computador de estado. Um <xref:System.Activities.Statements.State> que é criado usando o designer de atividade de <xref:System.Activities.Core.Presentation.FinalState> tem sua propriedade <xref:System.Activities.Statements.State.IsFinal%2A> definida como **true**, não tem nenhuma atividade de <xref:System.Activities.Statements.State.Exit%2A> e nenhuma transição proveniente dela. Para usar o <xref:System.Activities.Core.Presentation.FinalState> designer de atividade para adicionar uma atividade de <xref:System.Activities.Statements.State> que é pré-configurada como um estado de encerramento em um computador de estado, arraste o designer de atividade **FinalState** da seção **máquina de estado** da **caixa de ferramentas** e solte-o no Designer de fluxo de trabalho. O designer de atividade de <xref:System.Activities.Core.Presentation.FinalState> pode ser solto em <xref:System.Activities.Statements.StateMachine> e as transições adicionados posteriormente; ou uma transição pode ser criada como o designer de atividade de <xref:System.Activities.Core.Presentation.FinalState> é descartada. Para obter mais informações sobre a criação de transições, consulte [Transition](../workflow-designer/transition-activity-designer.md).
+O designer **FinalState** é usado para criar um <xref:System.Activities.Statements.State> que é pré-configurado como um estado de encerramento em um computador de estado. Um <xref:System.Activities.Statements.State> que é criado usando o <xref:System.Activities.Core.Presentation.FinalState> Designer de atividade tem sua <xref:System.Activities.Statements.State.IsFinal%2A> propriedade definida como **true**, não tem <xref:System.Activities.Statements.State.Exit%2A> atividade e nenhuma transição proveniente dela. Para usar o <xref:System.Activities.Core.Presentation.FinalState> Designer de atividade para adicionar uma <xref:System.Activities.Statements.State> atividade que é pré-configurada como um estado de encerramento em um computador de estado, arraste o designer de atividade **FinalState** da seção **máquina de estado** da caixa de **ferramentas** e solte-o no designer de fluxo de trabalho. O designer de atividade de <xref:System.Activities.Core.Presentation.FinalState> pode ser solto em <xref:System.Activities.Statements.StateMachine> e as transições adicionados posteriormente; ou uma transição pode ser criada como o designer de atividade de <xref:System.Activities.Core.Presentation.FinalState> é descartada. Para obter mais informações sobre a criação de transições, consulte [Transition](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Propriedades de atividade do estado em Designer de Fluxo de Trabalho
 
 A tabela a seguir mostra as propriedades que podem ser definidas usando o designer de <xref:System.Activities.Core.Presentation.FinalState> e descreve como elas são usadas no designer. Algumas dessas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície de designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.State> no cabeçalho. O valor padrão é **State**. O valor pode ser editado na grade de propriedade ou diretamente no cabeçalho do designer de atividade. <xref:System.Activities.Statements.State.DisplayName%2A> é usado em navegação de rastreamento que é exibida na parte superior do designer de fluxo de trabalho.<br /><br /> Embora não seja necessário <xref:System.Activities.Statements.State.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica a ação que ocorre quando esse estado é feito a transição para. Esse valor pode ser definido arrastando uma atividade da **caixa de ferramentas** e soltando-a na seção <xref:System.Activities.Statements.State.Entry%2A> do estado.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|Falso|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.State> no cabeçalho. O valor padrão é **State**. O valor pode ser editado na grade de propriedade ou diretamente no cabeçalho do designer de atividade. <xref:System.Activities.Statements.State.DisplayName%2A> é usado em navegação de rastreamento que é exibida na parte superior do designer de fluxo de trabalho.<br /><br /> Embora não seja necessário <xref:System.Activities.Statements.State.DisplayName%2A> restrita, é uma prática recomendada usar um.|
+|<xref:System.Activities.Statements.State.Entry%2A>|Falso|Especifica a ação que ocorre quando esse estado é feito a transição para. Esse valor pode ser definido arrastando uma atividade da **caixa de ferramentas** e soltando-a na <xref:System.Activities.Statements.State.Entry%2A> seção do estado.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
-- [Estado](../workflow-designer/state-activity-designer.md)
+- [State](../workflow-designer/state-activity-designer.md)
 - [Transição](../workflow-designer/transition-activity-designer.md)

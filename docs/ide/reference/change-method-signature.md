@@ -1,7 +1,7 @@
 ---
 title: Alterar assinatura do método
 description: Adicione, remova ou altere a ordem dos parâmetros de um método. Clique com o botão direito do mouse no método, selecione Ações Rápidas e Refatorações e selecione Alterar Assinatura.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283860"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869562"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
 
@@ -75,18 +75,9 @@ Esta refatoração aplica-se a:
 
     ![Caixa de diálogo Adicionar parâmetro-C #](media/add-parameter-dialog.png)
 
-5. Quando terminar de adicionar um parâmetro, pressione o botão **OK** para visualizar as alterações.
+5. Quando terminar de adicionar um parâmetro, pressione **OK** para visualizar as alterações.
 
     ![Caixa de diálogo Alterar Assinatura](media/change-signature.png)
-
-6. Pressione **OK** para exibir as alterações.
-   - C#:
-
-      ![Resultado da alteração de assinatura – C#](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![Resultado da alteração de assinatura – Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Veja também
 

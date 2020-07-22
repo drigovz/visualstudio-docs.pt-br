@@ -5,35 +5,35 @@ ms.topic: reference
 f1_keywords:
 - MessageContent.UI
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4925d6f6321cd039daca469844ebac6627b08f81
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189792"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876197"
 ---
 # <a name="content-definition-dialog-box"></a>Caixa de diálogo de conteúdo da definição
 
-A caixa de diálogo **definição de conteúdo** é usada em Designer de fluxo de trabalho para configurar as propriedades de **conteúdo** das atividades <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply> e <xref:System.ServiceModel.Activities.ReceiveReply>. Para obter mais informações sobre os designers de atividade que usam essa caixa, consulte os tópicos [Enviar](../workflow-designer/send-activity-designer.md), [receber](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
+A caixa de diálogo **definição de conteúdo** é usada em Designer de fluxo de trabalho para configurar as propriedades de **conteúdo** das <xref:System.ServiceModel.Activities.Send> atividades,, <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> e <xref:System.ServiceModel.Activities.ReceiveReply> . Para obter mais informações sobre os designers de atividade que usam essa caixa, consulte os tópicos [Enviar](../workflow-designer/send-activity-designer.md), [receber](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **inicializar correlação** :
 
-|Elemento da Interface do Usuário|Descrição|
+|Elemento da interface do usuário|Descrição|
 |-|-----------------|
-|**Message**|Especifica o conteúdo da mensagem com a caixa de texto expressão de **dados da mensagem** e o tipo usando a caixa de listagem suspensa **tipo de mensagem** . Por padrão, a **definição de conteúdo** usa o <xref:System.ServiceModel.Activities.ReceiveMessageContent>, que espera um <xref:System.ServiceModel.Channels.Message> ou um tipo de contrato de mensagem na definição do serviço de fluxo de trabalho.|
-|**Parâmetros**|Clique no botão de opção **parâmetros** para usar <xref:System.ServiceModel.Activities.ReceiveParametersContent>, o que espera um contrato de dados. Use a grade de dados para definir uma coleção genérica de pares chave/valor de <xref:System.Activities.OutArgument> cujos valores são atribuídos aos parâmetros variáveis no fluxo de trabalho atual.|
+|**Mensagem**|Especifica o conteúdo da mensagem com a caixa de texto expressão de **dados da mensagem** e o tipo usando a caixa de listagem suspensa **tipo de mensagem** . Por padrão, a **definição de conteúdo** usa o <xref:System.ServiceModel.Activities.ReceiveMessageContent> , que espera um <xref:System.ServiceModel.Channels.Message> ou um tipo de contrato de mensagem na definição do serviço de fluxo de trabalho.|
+|**Parâmetros**|Clique no botão de opção **parâmetros** a ser usado <xref:System.ServiceModel.Activities.ReceiveParametersContent> , o que espera um contrato de dados. Use a grade de dados para definir uma coleção genérica de pares chave/valor de <xref:System.Activities.OutArgument> cujos valores são atribuídos aos parâmetros variáveis no fluxo de trabalho atual.|
 
 A caixa de diálogo **definição de conteúdo** é usada pelos designers **Enviar**, **receber**, **ReceiveAndSendReply**e **SendAndReceiveReply** . Acessá-lo é semelhante em cada caso e exemplos de receptor são usados aqui para ilustrar o procedimento.
 
 O designer de atividade **Receive** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. Selecione o designer de atividade de **recebimento** e clique no botão de reticências ao lado do texto (conteúdo) da propriedade **conteúdo** na grade de propriedades da caixa de diálogo **definição de conteúdo** a ser exibida.
 
-O conteúdo pode ser especificado na seção de **mensagem** para uma atividade de <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou dentro da seção de **parâmetro** para uma atividade de <xref:System.ServiceModel.Activities.ReceiveParametersContent>.
+O conteúdo pode ser especificado na seção de **mensagem** para uma <xref:System.ServiceModel.Activities.ReceiveMessageContent> atividade ou dentro da seção de **parâmetro** para uma <xref:System.ServiceModel.Activities.ReceiveParametersContent> atividade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Ajuda da interface do usuário do Designer de Fluxo de Trabalho](browse-and-select-a-dotnet-type-dialog-box.md)
+- [Ajuda de Designer de Fluxo de Trabalho interface de usuário](browse-and-select-a-dotnet-type-dialog-box.md)
