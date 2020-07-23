@@ -10,15 +10,15 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 85929f803733026dfbf7ced8cf8553c3e96ed1c3
+  ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77904055"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86944588"
 highlightedContent:
   items:
-  - title: Configuração e instalação
+  - title: Instalação e configuração
     itemType: download
     url: /visualstudio/install/install-visual-studio
   - title: Bem-vindo ao IDE do Visual Studio
@@ -94,7 +94,7 @@ conceptualContent:
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
-  title: Languages
+  title: Linguagens
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -148,13 +148,13 @@ additionalContent:
     - title: Medir o desempenho
       summary: Identifique os gargalos e otimize o desempenho do código usando ferramentas de diagnóstico.
       url: ../profiling/index.yml
-    - title: Extend
+    - title: Estender
       summary: Adicione sua própria funcionalidade ao IDE do Visual Studio para melhorar sua experiência de desenvolvimento.
       url: ../extensibility/index.yml
-    - title: data
+    - title: Dados
       summary: Crie aplicativos de dados que se conectem a qualquer banco de dados ou serviço e em qualquer lugar – no local ou na nuvem.
       url: ../data-tools/accessing-data-in-visual-studio.md
-    - title: Colaborar
+    - title: Colaboração
       summary: Compartilhar, editar e depurar o código em um ambiente de colaboração em tempo real.
       url: /visualstudio/liveshare/
     - title: Desenvolver com contêineres do Docker
@@ -205,6 +205,6 @@ additionalContent:
         url: ../extensibility/index.yml
       - text: Desenvolvimento de Linux com C++
         url: /cpp/linux/
-      - text: Desenvolvimento multiplataforma com o .NET Core
+      - text: Desenvolvimento de plataforma cruzada do .NET Core
         url: /dotnet/core/
-  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/talk-to-us.md) - [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Solução de Problemas](/troubleshoot/visualstudio/welcome-visual-studio)'
