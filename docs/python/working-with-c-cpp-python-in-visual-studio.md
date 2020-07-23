@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543722"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972355"
 ---
 # <a name="create-a-c-extension-for-python"></a>Criar uma extensão do C++ para o Python
 
@@ -183,7 +183,7 @@ Se você estiver trabalhando com o Python 2.7, consulte em vez disso [Extending 
     #include <Python.h>
     ```
 
-1. Modifique o método `tanh_impl` para aceitar e retornar tipos Python (um `PyOjbect*`, que é):
+1. Modifique o método `tanh_impl` para aceitar e retornar tipos Python (um `PyObject*`, que é):
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
@@ -410,6 +410,6 @@ Há uma variedade de meios para criar extensões Python, conforme descrito na ta
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidade de integração, compatibilidade com o PyPy. | Mais novo, menos maduro. |
 | [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Semelhante ao cffi usando C++. | Mais recente, pode ter alguns problemas com o VS 2017. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 O exemplo completo deste passo a passo pode ser encontrado em [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
