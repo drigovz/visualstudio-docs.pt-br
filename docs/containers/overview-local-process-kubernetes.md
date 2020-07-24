@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Descreve os processos para usar o processo local com o kubernetes para conectar seu computador de desenvolvimento ao cluster kubernetes
 keywords: Processo local com kubernetes, Docker, kubernetes, Azure, contêineres
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454290"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133964"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Como o processo local com Kubernetes funciona
 
@@ -40,6 +40,44 @@ Quando o processo local com kubernetes estabelece uma conexão com o cluster, el
 
 Depois de estabelecer uma conexão com o cluster, você pode executar e depurar o código nativamente em seu computador, sem a Containerização, e o código pode interagir diretamente com o restante do cluster. Qualquer tráfego de rede que o agente remoto recebe é redirecionado para a porta local especificada durante a conexão para que seu código em execução nativamente possa aceitar e processar esse tráfego. As variáveis de ambiente, os volumes e os segredos do seu cluster são disponibilizados para o código em execução no seu computador de desenvolvimento. Além disso, devido às entradas de arquivo de hosts e encaminhamento de porta adicionados ao seu computador de desenvolvedor por processo local com o kubernetes, seu código pode enviar tráfego de rede para serviços em execução no cluster usando os nomes de serviço do cluster e esse tráfego é encaminhado para os serviços em execução no cluster. O tráfego é roteado entre o computador de desenvolvimento e o cluster todo o tempo que você está conectado.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Usando recursos de roteamento para o desenvolvimento em isolamento
+
+Por padrão, o processo local com kubernetes redireciona todo o tráfego de um serviço para o seu computador de desenvolvimento. Você também tem a opção de usar os recursos de roteamento para redirecionar apenas as solicitações para um serviço proveniente de um subdomínio para seu computador de desenvolvimento. Esses recursos de roteamento permitem que você use o processo local com o kubernetes para desenvolver em isolamento e evitar a interrupção de outro tráfego no cluster.
+
+A animação a seguir mostra dois desenvolvedores que trabalham no mesmo cluster isoladamente:
+
+![Isolamento animado de ilustração de GIF](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Quando você habilita o trabalho em isolamento, o processo local com kubernetes faz o seguinte, além de se conectar ao seu cluster kubernetes:
+
+* Verifica se o cluster kubernetes não tem Azure Dev Spaces habilitado.
+* Replica o serviço escolhido no cluster no mesmo namespace e adiciona um rótulo *Routing.VisualStudio.Io/Route-from=service_name* e *Routing.VisualStudio.Io/Route-on-header=kubernetes-Route-as: GENERATED_NAME* anotação.
+* Configura e inicia o Gerenciador de roteamento no mesmo namespace no cluster kubernetes. O Gerenciador de roteamento usa um seletor de rótulo para procurar o rótulo *Routing.VisualStudio.Io/Route-from=service_name* e *Routing.VisualStudio.Io/Route-on-header=kubernetes-Route-as: GENERATED_NAME* anotação ao configurar o roteamento em seu namespace.
+
+Se o processo local com kubernetes detectar que Azure Dev Spaces está habilitado no cluster do kubernetes, será solicitado que você desabilite Azure Dev Spaces antes de poder usar o processo local com o kubernetes.
+
+O Gerenciador de roteamento faz o seguinte quando é iniciado:
+* Duplica todas as insere encontradas no namespace usando o *GENERATED_NAME* para o subdomínio. 
+* Cria um pod Envoy para cada serviço associado ao insere duplicado com o subdomínio *GENERATED_NAME* .
+* Cria um pod Envoy adicional para o serviço no qual você está trabalhando isoladamente. Isso permite que as solicitações com o subdomínio sejam roteadas para o computador de desenvolvimento.
+* Configura as regras de roteamento para cada pod Envoy para manipular o roteamento de serviços com o subdomínio.
+
+Quando uma solicitação com o subdomínio *GENERATED_NAME* é recebida no cluster, um cabeçalho *kubernetes-Route-as = GENERATED_NAME* é adicionado ao à solicitação. O Envoy pods manipula o roteamento dessa solicitação para o serviço apropriado no cluster. Se a solicitação for roteada para o serviço que está sendo trabalhado no isolamento, essa solicitação será redirecionada para o computador de desenvolvimento pelo agente remoto.
+
+Quando uma solicitação sem o subdomínio *GENERATED_NAME* é recebida no cluster, nenhum cabeçalho é adicionado à solicitação. O Envoy pods manipula o roteamento dessa solicitação para o serviço apropriado no cluster. Se a solicitação for roteada para o serviço que está sendo substituído, essa solicitação será roteada para o serviço original em vez do agente remoto.
+
+> [!IMPORTANT]
+> Cada serviço no cluster deve encaminhar o cabeçalho *kubernetes-Route-as = GENERATED_NAME* ao fazer solicitações adicionais. Por exemplo, quando o *servicea* recebe uma solicitação, ele faz uma solicitação para *serviceB* antes de retornar uma resposta. Neste exemplo, o *servicea* precisa encaminhar o cabeçalho *kubernetes-Route-as = GENERATED_NAME* em sua solicitação para *serviceB*. Algumas linguagens, como [ASP.net][asp-net-header], podem ter métodos para manipular a propagação do cabeçalho.
+
+Quando você se desconecta do cluster, por padrão, o processo local com kubernetes removerá todos os pods de envoy e o serviço duplicado. 
+
+> ANOTAÇÕES A implantação e o serviço do Gerenciador de roteamento permanecerão em execução no seu namespace. Para remover a implantação e o serviço, execute os comandos a seguir para seu namespace.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnóstico e registro em log
 
 Ao usar o processo local com o kubernetes para se conectar ao cluster, os logs de diagnóstico do cluster são registrados no [diretório temporário][azds-tmp-dir]do computador de desenvolvimento.
@@ -52,11 +90,17 @@ O processo local com kubernetes tem as seguintes limitações:
 * Um serviço deve ser apoiado por um único pod para se conectar a esse serviço. Você não pode se conectar a um serviço com vários pods, como um serviço com réplicas.
 * Um pod pode ter apenas um único contêiner em execução nesse pod para o processo local com kubernetes para se conectar com êxito. O processo local com kubernetes não pode se conectar a serviços com pods que têm contêineres adicionais, como contêineres sidecar injetados por malhas de serviços.
 * O processo local com kubernetes precisa de permissões elevadas para executar em seu computador de desenvolvimento para editar o arquivo de hosts.
+* O processo local com kubernetes não pode ser usado em clusters com Azure Dev Spaces habilitado.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Processo local com kubernetes e clusters com Azure Dev Spaces habilitado
+
+Você não pode usar o processo local com o kubernetes em um cluster com Azure Dev Spaces habilitado. Se você quiser usar o processo local com kubernetes em um cluster com Azure Dev Spaces habilitado, será necessário desabilitar o Azure Dev Spaces antes de se conectar ao cluster.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Para começar a usar o processo local com o kubernetes para se conectar ao seu computador de desenvolvimento local ao cluster, consulte [usar processo local com kubernetes](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
