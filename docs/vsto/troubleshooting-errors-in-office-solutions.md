@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537313"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234686"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas ao desenvolver soluções do Office no Visual Studio:
@@ -217,3 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Solucionar problemas de soluções do Office](../vsto/troubleshooting-office-solutions.md)
 - [Solucionar problemas de segurança da solução do Office](../vsto/troubleshooting-office-solution-security.md)
 - [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

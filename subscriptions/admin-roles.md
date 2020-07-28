@@ -7,20 +7,20 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: Saiba mais sobre as funções Superadministrador e Administrador e como atribuir administradores.
-ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808381"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234621"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministradores e administradores para contratos de assinatura do Visual Studio
 
 Há duas funções diferentes no novo Portal de Administração de Assinaturas do Visual Studio para clientes do licenciamento por volume. Essas funções são semelhantes à função Contato Principal/para Notificações e à função Gerente de Assinaturas que existiam no VLSC.
 
-**Super admins:** Quando uma organização é inicialmente configurada, o Contato primário ou avisos torna-se um super admin por padrão. O contato principal ou para notificações pode optar por atribuir superadministradores ou administradores adicionais. Um superadministrador pode adicionar e remover outros administradores e também assinantes. Se houver mais de dois superadministradores no sistema, um superadministrador poderá excluir todos, exceto os dois últimos por segurança.
+**Superadministradores:** Quando uma organização é inicialmente configurada, o contato principal ou avisos se torna um superadministrador por padrão. O contato principal ou para notificações pode optar por atribuir superadministradores ou administradores adicionais. Um superadministrador pode adicionar e remover outros administradores e também assinantes. Se houver mais de dois superadministradores no sistema, um superadministrador poderá excluir todos, exceto os dois últimos por segurança.
 
-**Administradores:** Um administrador só pode ser designado por um super administrador. Um administrador só pode gerenciar assinantes nos contratos que o super administrador atribui a eles.
+**Administradores:** Um administrador só pode ser atribuído por um superadministrador. Um administrador só pode gerenciar assinantes nos acordos que o superadministrador atribui a eles.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
@@ -30,10 +30,10 @@ Para atribuir novos administradores:
 2. Clique na guia rotulada **Gerenciar Administradores**.
 3. Clique em **Adicionar**.
    > [!div class="mx-imgBorder"]
-   > ![Adicionar administradores](_img/admin-roles/add-admins.png)
+   > ![Adicionar administradores](_img/admin-roles/add-admins.png "Clique na folha gerenciar administradores e, em seguida, clique em Adicionar para atribuir novos administradores.")
 4. Preencha o formulário com as informações do novo administrador.  
    > [!div class="mx-imgBorder"]
-   > ![Formulário Adicionar administrador](_img/admin-roles/add-form.png)
+   > ![Formulário Adicionar administrador](_img/admin-roles/add-form.png "Insira as informações de entrada para o novo administrador e escolha se deseja torná-las um superadministrador.  Em seguida, clique em Adicionar.")
 
    > [!NOTE]
    > Caso deseje que esse administrador tenha a capacidade de atribuir administradores adicionais, lembre-se de marcar a caixa **Superadministrador**.

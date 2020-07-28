@@ -1,6 +1,6 @@
 ---
 title: Recursos para solucionar erros
-ms.date: 07/17/2020
+ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459275"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234725"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar erros do ambiente de desenvolvimento integrado
 
@@ -109,7 +109,7 @@ Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. S
 
 ## <a name="knowledge-base-articles"></a>Artigos da Base de Dados de Conhecimento
 
-É possível pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode acessar artigos da KB no site de [Suporte da Microsoft](https://support.microsoft.com). Você também pode exibir uma coleção de artigos da base de conhecimento para o Visual Studio na página de [solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
+É possível pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode exibir artigos da base de conhecimento para o Visual Studio na página de [solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 
 ## <a name="developer-forums"></a>Fóruns para desenvolvedores
 
@@ -124,4 +124,5 @@ Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os 
 ## <a name="see-also"></a>Confira também
 
 * [Solução de problemas relacionados à rede ou erros de proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Solução de problemas (Visual Studio para Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [Solução de problemas (Visual Studio para Mac)](/visualstudio/mac/troubleshooting)

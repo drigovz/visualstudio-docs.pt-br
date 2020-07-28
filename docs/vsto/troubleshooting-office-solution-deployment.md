@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545737"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234972"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.
@@ -125,7 +125,8 @@ ms.locfileid: "85545737"
 
  Defina a extensão para **. vsto** e o tipo MIME como **Application/x-MS-VSTO**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
+- [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

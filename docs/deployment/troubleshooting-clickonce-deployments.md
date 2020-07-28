@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e3c2ca89535578e8aefbde25223ade752a2aab
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381737"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235167"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solucionar problemas de implantações do ClickOnce
 Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.
@@ -56,7 +56,8 @@ Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com 
 
  Descreve uma técnica para depurar aplicativos ClickOnce que usam System. Deployment. Application.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903277"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235128"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -30,7 +30,7 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 
 1. A adição em massa usa um modelo do Microsoft Excel para carregar informações do Assinante. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
    > [!div class="mx-imgBorder"]
-   > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png)
+   > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png "Baixe o modelo em branco do Excel para iniciar o processo de atribuição em massa.")
    >
    > [!NOTE]
    > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
@@ -50,17 +50,17 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 
 1. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **Carregar Vários Assinantes**, clique em **Procurar**.
    > [!div class="mx-imgBorder"]
-   > ![Navegar para o modelo salvo para carregar vários assinantes](media/bulk-add-browse-saved-template.png)
+   > ![Navegar para o modelo salvo para carregar vários assinantes](media/bulk-add-browse-saved-template.png "Você pode navegar até o local do arquivo ou arrastá-lo e soltá-lo nessa caixa de diálogo.")
 
 1. Navegue para o arquivo do Excel que você salvou e, em seguida, clique em **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Carregar o modelo do Excel para carregar vários assinantes](media/bulk-upload-subscribers.png)
+   > ![Carregar o modelo do Excel para carregar vários assinantes](media/bulk-upload-subscribers.png "O modelo com seus dados aparecerá aqui.  Clique em OK para iniciar o carregamento.")
 
     Uma caixa de diálogo de progresso do upload será exibida.
 
     Se o modelo contiver erros, o upload falhará e os erros serão mostrados para que você possa corrigir o modelo e tentar o upload em massa novamente.
    > [!div class="mx-imgBorder"]
-   > ![Mensagem de erro em caso de falha no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Mensagem de erro em caso de falha no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-failure.png "Essa mensagem será exibida se o arquivo que você carregou continha erros.  Resolva os erros e execute o processo de adição em massa novamente.")
 
    Se você encontrar uma falha, siga estas etapas:
    1. Abra o arquivo do Excel que você criou, corrija os problemas e salve o arquivo.
@@ -72,7 +72,7 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 
     Quando o upload for bem-sucedido, você verá a lista de assinantes e uma mensagem de confirmação.
    > [!div class="mx-imgBorder"]
-   > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](_img/assign-license-bulk/bulk-add-upload-success.png "Quando o carregamento for concluído com êxito, você receberá uma mensagem de confirmação.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usar grupos de Azure Active Directory para atribuir assinaturas 
 O uso desse recurso facilita a permanência de suas atribuições de assinatura. Você pode adicionar Azure Active Directory grupos de segurança no portal de administração de assinaturas, o que garantirá que todos os indivíduos do grupo sejam atribuídos a uma assinatura. E para facilitar, quando as pessoas deixam sua organização e são removidas da Azure Active Directory, o acesso às assinaturas também é removido. 
@@ -100,14 +100,14 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 3. Escolha a guia **Adicionar** e, em seguida, selecione **Azure Active Directory grupo** na lista suspensa.  
 
    > [!div class="mx-imgBorder"]
-   > ![Escolher adição em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Escolher adição em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Escolha o recurso Adicionar em massa usando o Azure AD para receber assinantes do seu grupo de Azure Active Directory.")
 
 4. Comece a inserir o nome do grupo do Azure AD que você deseja adicionar ao campo de formulário. Isso pesquisará os grupos do Azure AD disponíveis em sua organização. 
 
 5. Ao selecionar o grupo, o campo será preenchido automaticamente com o nome do grupo. Você terá a opção de exibir os usuários nesse grupo antes de adicioná-los. Em seguida, você pode escolher o nível da assinatura, os direitos de download e as preferências de comunicação para o grupo. Você pode adicionar detalhes ao campo de referência, se desejar. 
 
    > [!div class="mx-imgBorder"]
-   > ![Escolher adição em massa usando o Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Escolha seu grupo do Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Escolha o nome do seu grupo do Azure AD para adicionar assinantes desse grupo.")
 
 6. Clique em **Adicionar** e em **confirmar**. 
 

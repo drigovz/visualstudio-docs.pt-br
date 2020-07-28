@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588396f3f152222c4e79b03a1d733524a8ff3ca9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905725"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234946"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: solucionar problemas de serviços
 Há vários problemas comuns que podem ocorrer quando você tenta obter um serviço:
@@ -70,3 +70,4 @@ if (log == null) return;
 - [Lista de serviços disponíveis](../extensibility/internals/list-of-available-services.md)
 - [Usar e fornecer serviços](../extensibility/using-and-providing-services.md)
 - [Noções básicas do serviço](../extensibility/internals/service-essentials.md)
+- [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

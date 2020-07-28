@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Saiba como definir preferências de idioma, contatos, nível de assinatura e outros no Portal de Administração
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183490"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234608"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Definir preferências para os contratos no Portal de Administração
 Os superadministradores podem definir certas preferências no portal de administração (Portal do administrador) que serão aplicadas globalmente para cada contrato.  Essas preferências preencherão automaticamente os detalhes da assinatura para seus administradores quando eles estiverem adicionando assinantes e só poderão ser modificados globalmente por superadministradores.  
@@ -24,13 +24,13 @@ Para definir suas preferências:
 1. Entre no portal de administração com uma ID que tenha privilégios de superadministrador.
 2. Clique na guia **Gerenciar Administradores**.
    > [!div class="mx-imgBorder"]
-   > ![Botão Preferências de Administrador](_img/admin-prefs/admin-prefs-button.png)
+   > ![Botão Preferências de Administrador](_img/admin-prefs/admin-prefs-button.png "Clique em gerenciar administradores e, em seguida, as preferências de contrato para exibir as preferências")
 
 3. Clique em **Preferências de Contrato**.
 Um painel será aberto à direita e as preferências disponíveis serão exibidas. 
 
    > [!div class="mx-imgBorder"]
-   > ![Caixa de diálogo de submenu Preferências de Administrador](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Caixa de diálogo de submenu Preferências de Administrador](_img/admin-prefs/admin-prefs-flyout.png "Defina suas preferências e clique em salvar")
 
 ## <a name="set-your-preferences"></a>Definir suas preferências
 Vamos explorar cada uma das preferências disponíveis e seus efeitos. 
@@ -74,7 +74,7 @@ R: se nenhum endereço de email específico for definido na preferência de **en
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
@@ -86,6 +86,3 @@ Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Atribuir várias assinaturas](assign-license-bulk.md)
 - [Editar assinaturas](edit-license.md)
 - [Determinar o uso máximo](maximum-usage.md)
-
-
-

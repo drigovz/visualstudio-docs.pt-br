@@ -100,6 +100,7 @@ f1_keywords:
 - CA1413
 - CA1414
 - CA1415
+- CA1417
 - CA1500
 - CA1501
 - CA1502
@@ -291,12 +292,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454183"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235089"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
@@ -397,6 +398,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1413 | [CA1413: Evitar campos não públicos em tipos de valor visíveis no COM](../code-quality/ca1413.md) | Os campos de instância não pública dos tipos de valor visíveis por COM permanecem visíveis para clientes COM. Revise o conteúdo dos campos em busca de informações que não devem ser expostas, ou isso terá efeitos não intencionais sobre o design ou a segurança. |
 | CA1414 | [CA1414: marcar argumentos P/Invoke boolianos com MarshalAs](../code-quality/ca1414.md) | O tipo de dados Booliano tem várias representações em código não gerenciado. |
 | CA1415 | [CA1415: declarar P/Invokes corretamente](../code-quality/ca1415.md) | Esta regra procura declarações do método de invocação do sistema operacional com funções [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] como destino que tenham um ponteiro para um parâmetro de estrutura OVERLAPPED e o parâmetro gerenciado correspondente não seja um ponteiro para uma estrutura System.Threading.NativeOverlapped. |
+| CA1417 | [CA1417: não usar `OutAttribute` em parâmetros de cadeia de caracteres para P/Invokes](../code-quality/ca1417.md) | Parâmetros de cadeia de caracteres passados por valor com o `OutAttribute` podem desestabilizar o tempo de execução se a cadeia de caracteres for uma cadeia de caracteres interna. |
 | CA1500 | [CA1500: Nomes de variável não devem corresponder a nomes de campo](../code-quality/ca1500.md) | Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo da instância do tipo declarante, o que leva a erros. |
 | CA1501 | [CA1501: Evitar herança excessiva](../code-quality/ca1501.md) | Um tipo está mais de quatro níveis abaixo na hierarquia de herança. As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. |
 | CA1502 | [CA1502: Evitar complexidade excessiva](../code-quality/ca1502.md) | Esta regra mede o número de caminhos linearmente independentes por meio do método, o que é determinado pelo número e pela complexidade das ramificações condicionais. |

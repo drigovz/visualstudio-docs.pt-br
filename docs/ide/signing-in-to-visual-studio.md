@@ -2,7 +2,7 @@
 title: Entrar no Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285290"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235193"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -38,7 +38,7 @@ Quando você entrar, enriquecerá sua experiência no Visual Studio. Por exemplo
 Veja uma lista completa do que é possível esperar e fazer após entrar:
 - **Estender o período de avaliação gratuita do Visual Studio** – É possível usar o Visual Studio Professional ou o Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação gratuita de 30 dias. Para obter mais informações, consulte [estender uma versão de avaliação ou atualizar uma licença](../ide/how-to-unlock-visual-studio.md).
 
-- **Desbloquear o Visual Studio Community Edition** – Se a instalação do Community Edition solicitar uma licença, entre no IDE para desbloqueá-la.
+- **Continue usando o Visual Studio Community Edition** – se sua instalação da Community Edition solicitar uma licença, entre no IDE para continuar usando o Visual Studio Community **gratuitamente**. 
 
 - **Desbloquear o Visual Studio se você usar uma conta associada a uma Assinatura do Visual Studio ou a uma organização do Azure DevOps**. Para obter instruções detalhadas, consulte [estender uma versão de avaliação ou atualizar uma licença](../ide/how-to-unlock-visual-studio.md).
 
@@ -80,7 +80,7 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 Se você encontrar problemas ao entrar, consulte a página de [suporte à assinatura](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Estender uma versão de avaliação ou atualizar uma licença](../ide/how-to-unlock-visual-studio.md)
 * [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
