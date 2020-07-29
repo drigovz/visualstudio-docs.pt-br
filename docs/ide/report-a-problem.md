@@ -1,5 +1,5 @@
 ---
-title: 'Relatar um problema: Estados e PERGUNTAS FREQUENTES'
+title: 'Relatar um problema: Estados e perguntas frequentes'
 description: Fornece uma visão geral da ferramenta Relatar um problema e inclui estados e definições de problemas
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276469"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330954"
 ---
-# <a name="report-a-problem-states-and-faq"></a>Relatar um problema: Estados e PERGUNTAS FREQUENTES
+# <a name="report-a-problem-states-and-faq"></a>Relatar um problema: Estados e perguntas frequentes
 
 A ferramenta Relatar um problema permite que a comunidade de desenvolvedores do Visual Studio envie problemas. Cada um dos seus relatórios do problema se torna um item de trabalho em nosso sistema de engenharia principal, capacitando você para interagir diretamente com nossas equipes de produtos para nos ajudar a identificar e a resolver problemas com impacto. Os comentários enviados com informações avançadas de diagnóstico são fundamentais para melhorar a família de produtos do Visual Studio. Nós realmente agradecemos seu tempo para relatar problemas.
 
@@ -95,12 +95,6 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 ![Estado Fechado – Outro Produto para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 **Fechado – Outro Produto** indica que determinamos que seu problema se aplica a outro produto. Confira o comentário da Microsoft para quais produtos e links relacionados.
-
-- - -
-
-![Estado Fechado – Não será Corrigido para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-**Fechado – Não será Corrigido** indica que não estamos resolvendo esse problema devido a fatores como a falta de alinhamento de direção do produto ou do impacto na comunidade. Confira o comentário da Microsoft para maior clareza.  Embora não seja possível resolver esse problema específico, tenha certeza de que todos os seus comentários são valiosos e ajudam a melhorar o Visual Studio.
 
 - - -
 
