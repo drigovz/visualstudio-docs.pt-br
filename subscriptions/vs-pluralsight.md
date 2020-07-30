@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902811"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375892"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -82,13 +82,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 R: Nem todas as assinaturas do Visual Studio Enterprise incluem os benefícios do Pluralsight.  Verifique a [tabela de qualificação](#eligibility) para ver se sua assinatura está qualificada.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: Tenho acesso a playlists ou canais de aprendizado personalizados?
-R: Sim. Como assinante do Visual Studio, você obtém acesso a canais especializados como parte de seu benefício de treinamento do Pluralsight. Esses canais foram especialmente coletados por especialistas da Microsoft e se destinam ao aprendizado nas áreas do .NET, Azure, DevOps e Mobility. Ative seu benefício da Pluralsight por meio do portal de assinatura do Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obter acesso a esses canais na página de aterrissagem do pluralsight –
-
-• Scott Hanselmann (.net, Azure)-[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-• Donovan Brown (DevOps) –[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-• James Montemagno (mobilidade) –[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+A: Sim. Como assinante do Visual Studio, você obtém acesso a funções em destaque, roteiros de aprendizado e canais personalizados (listas de reprodução) como parte do seu benefício de treinamento da Pluralsight. O conteúdo em destaque foi especialmente organizado pela Microsoft e Pluralsight e é voltado para o aprendizado em áreas-chave de interesse. Ative seu benefício da Pluralsight por meio de seu portal de assinatura do Visual Studio <https://my.visualstudio.com/benefits> para obter acesso a esse e a outros conteúdos no Home Page pluralsight.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: O que acontece quando minha assinatura Pluralsight termina?
 R: ao final da sua assinatura gratuita do Pluralsight, você poderá optar por comprar uma assinatura diretamente do Pluralsight.  Entre em contato com [Pluralsight](https://www.pluralsight.com) para obter todos os detalhes.

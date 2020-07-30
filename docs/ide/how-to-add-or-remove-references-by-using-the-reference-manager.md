@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284720"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390256"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -47,6 +47,9 @@ A caixa de diálogo Gerenciador de Referências mostra diferentes categorias à 
 - **Windows**, com os subgrupos **Core** e **Extensões**. É possível explorar as referências no SDK do Windows ou nos SDKs de extensão usando o **Pesquisador de Objetos**.
 
 - **Procurar**, com o subgrupo **Recente**
+ 
+    > [!NOTE]
+    > Talvez você não veja **procurar** na caixa de diálogo Gerenciador de referências se estiver desenvolvendo projetos C++.
 
 ## <a name="add-a-reference"></a>Adicionar uma referência
 
@@ -209,6 +212,6 @@ Os **assemblies**, **com**, **Windows**e **Browse** oferecem suporte a uma guia 
 
 A barra de pesquisa na caixa de diálogo Gerenciador de Referências opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contenha “Sistema”.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)
