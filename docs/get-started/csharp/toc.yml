@@ -14,7 +14,12 @@
   expanded: true
   items:
     - name: Criar seu primeiro aplicativo em C#
-      href: tutorial-console.md
+      expanded: true
+      items:
+        - name: 'Parte 1: criar um aplicativo de console em C#'
+          href: tutorial-console.md
+        - name: 'Parte 2: estender o aplicativo de console em C#'
+          href: tutorial-console-part-2.md
     - name: Como criar um aplicativo Web
       href: tutorial-aspnet-core.md
     - name: Criar um aplicativo UWP

@@ -2,17 +2,17 @@
 title: Baixar títulos de software em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 03/07/2020
+ms.date: 07/29/2020
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bf2afafc99993b2b3717f0264fee89b747eab58a
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180227"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434298"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
@@ -27,11 +27,11 @@ Se sua assinatura for fornecida por seu trabalho ou escola, o administrador de a
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante?
 Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página.
 > [!div class="mx-imgBorder"]
-> ![Página de downloads do assinante](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![Página de downloads do assinante](_img/subscriber-downloads/subscriber-downloads-resized.png "Os downloads mais populares são exibidos quando você clica na folha downloads.")
 
 Por exemplo, se você escolher o **Visual Studio 2019** na lista Ferramentas para Desenvolvedores, será exibida uma lista de downloads do Visual Studio 2019 disponíveis.
 > [!div class="mx-imgBorder"]
-> ![Downloads do Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Downloads do Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png "Quando você seleciona um produto, uma lista de versões disponíveis é exibida.")
 
 Selecione facilmente sua arquitetura, linguagem e tipo de arquivo usando os menus suspensos disponíveis. Escolha as opções de preferência e clique em **Baixar** para começar a baixar o produto.
 
@@ -41,16 +41,16 @@ Selecione facilmente sua arquitetura, linguagem e tipo de arquivo usando os menu
 ### <a name="displaying-download-details"></a>Exibindo detalhes do download
 Clicar no nome do produto ou no link **Informações** exibirá os detalhes desse download e fornecerá acesso às notas de versão do produto.
 > [!div class="mx-imgBorder"]
-> ![Detalhes de download do Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png)
+> ![Detalhes de download do Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "A guia informações exibe informações sobre o download e fornece acesso às notas de versão.")
 
 No painel de detalhes, também é possível clicar na guia **Chaves** para verificar o status das suas chaves do produto (Product Keys).
 > [!div class="mx-imgBorder"]
-> ![Chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png)
+> ![Chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "A guia chaves mostra quantas chaves você permaneceu e permite que você solicite as chaves disponíveis.")
 
 ### <a name="obtaining-product-keys"></a>Obtendo chaves do produto (Product Keys)
 Para obter uma chave do produto (Product Key) para o download, é possível clicar na chave azul com o rótulo **Obter chave** ou, se você já estiver exibindo o painel de detalhes, clique em **Solicitar chave** na guia **chaves**.
 > [!div class="mx-imgBorder"]
-> ![Reivindicar chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Reivindicar chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Clique em chave de declaração para declarar as chaves restantes.")
 
 ## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -67,7 +67,3 @@ Saiba como aproveitar outros benefícios excelentes, como:
 - [Crédito individual do Azure DevTest](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio IDE](vs-ide-benefit.md)
-
-
-
-

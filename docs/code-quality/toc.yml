@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415: Declarar P-Invokes corretamente'
                   href: ca1415.md
+                - name: 'CA1417: Não usar OutAttribute em parâmetros de cadeia de caracteres para P/Invokes'
+                  href: ca1417.md
             - name: Avisos de facilidade de manutenção
               items:
                 - name: Visão geral

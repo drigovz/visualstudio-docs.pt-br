@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Saiba como contatar o administrador da assinatura para obter assistência em caso de dúvidas ou problemas.
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904569"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434259"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenha assistência de seu administrador de assinaturas
 Caso sua assinatura do Visual Studio seja fornecida pelo trabalho ou pela escola, provavelmente, ela foi atribuída a você por um administrador de assinaturas ou "administrador".  Os administradores podem atribuir ou remover assinaturas, alterar endereços de email de credenciais, determinar se você tem a capacidade de baixar software e executar outras funções relacionadas à sua assinatura.
@@ -24,7 +24,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 2. Clique na guia **Assinaturas**. 
 3. Clique no botão **Contatar meu Administrador** no canto superior direito. 
    > [!div class="mx-imgBorder"]
-   > ![Contatar meu Administrador](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![Contatar meu Administrador](_img/contact-my-admin/contact-my-admin-button.png "Clique no botão contatar meu administrador, insira sua mensagem e clique em enviar.")
 4. Insira a mensagem para o administrador.
 5. Caso deseje receber uma cópia da mensagem enviada ao administrador, clique na caixa de seleção **Enviar-me uma cópia**. 
 6. Por fim, clique em **Enviar**.
@@ -35,7 +35,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
@@ -43,7 +43,7 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 
 ## <a name="next-steps"></a>Próximas etapas
 Caso ainda não tenha feito isso, recomendamos a ativação desses benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
-- [IDE do Visual Studio](vs-ide-benefit.md)
+- [Visual Studio IDE](vs-ide-benefit.md)
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 

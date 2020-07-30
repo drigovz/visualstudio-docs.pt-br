@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182905"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425388"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
@@ -41,7 +41,7 @@ Representa uma referência de assembly (gerenciado) no projeto.
 |FusionName|Cadeia de caracteres opcional. Especifica o nome de fusão simples ou forte para o item.<br /><br /> Quando esse atributo estiver presente, é possível economizar tempo, pois o arquivo do assembly não precisa ser aberto para obter o nome de fusão.|
 |SpecificVersion|Booliano opcional. Especifica se apenas a versão no nome de fusão deve ser referenciada.|
 |Aliases|Cadeia de caracteres opcional. Quaisquer aliases da referência.|
-|Particular|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
+|Privado|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -55,7 +55,7 @@ Representa uma referência a um componente COM (não gerenciado) no projeto. Est
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
-|Isolado|Booliano opcional. Especifica se o componente é um componente sem registro.|
+|Isolada|Booliano opcional. Especifica se o componente é um componente sem registro.|
 
 ### <a name="comfilereference"></a>COMFileReference
 
@@ -166,7 +166,8 @@ Representa o projeto do FxCop a ser importado.
 
 Representa assemblies cujos namespaces devem ser importados pelo compilador Visual Basic.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propriedades do MSBuild para projetos SDK do .NET Core](/dotnet/core/project-sdk/msbuild-props)
+- [Metadados comuns de item do MSBuild](common-msbuild-item-metadata.md)
