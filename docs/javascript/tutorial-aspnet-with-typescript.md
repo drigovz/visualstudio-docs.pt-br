@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283561"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453690"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: criar um aplicativo ASP.NET Core com TypeScript no Visual Studio
 
@@ -34,12 +34,12 @@ Se você ainda não instalou o Visual Studio, vá para a página de [downloads d
 
 ::: moniker-end
 
-Neste tutorial, você aprenderá a:
+Neste tutorial, você aprende a:
 > [!div class="checklist"]
 > * Criar um projeto ASP.NET Core
 > * Adicionar o pacote NuGet para o suporte do TypeScript
 > * Adicionar um código TypeScript
-> * Executar o aplicativo
+> * Execute o aplicativo
 > * Adicionar uma biblioteca de terceiros usando NPM
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -91,9 +91,6 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
    ![Adicionar pacote NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
    O Visual Studio adiciona o pacote NuGet sob o nó **dependências** em Gerenciador de soluções.
-
-   > [!NOTE]
-   > Este tutorial requer o pacote NuGet. Como alternativa, em seus próprios aplicativos, talvez você queira usar o [pacote NPM TypeScript](https://www.npmjs.com/package/typescript).
 
 1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript**e clique em **Adicionar**.
 
@@ -183,7 +180,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
     <script src="~/js/app.js"></script>
     ````
 
-## <a name="build-the-application"></a>Compilar o aplicativo
+## <a name="build-the-application"></a>Criar o aplicativo
 
 1. Escolha **compilar > Compilar solução**.
 

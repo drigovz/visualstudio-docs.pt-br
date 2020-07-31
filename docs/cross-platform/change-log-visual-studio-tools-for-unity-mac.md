@@ -10,16 +10,74 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184556"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471526"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2710"></a>2.7.1.0
+Lançado em 5 de agosto de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integrar**
+
+  - API de mensagens do Unity atualizada para 2019,4.
+
+  - Adicionado o [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) supressor para `CA1823` . Campos particulares com os `SerializeField` `SerializeReference` atributos ou não devem ser marcados como não utilizados (FxCop).
+  
+  - Adicionado o [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) supressor para `CA1822` . As mensagens do Unity não devem ser sinalizadas como candidatos para o `static` modificador (FxCop).
+
+  - Adicionado o [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) supressor para `CA1801` . Os parâmetros não utilizados não devem ser removidos das mensagens do Unity (FxCop).
+  
+  - `MenuItem`Suporte adicionado ao [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) supressor.  
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Fixos [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) e [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) supressers que não funcionam com parênteses extras ou com argumentos de método.
+  
+  - Atualização de banco de dados de ativo obrigatório fixa, mesmo quando a atualização automática foi desabilitada nas configurações do Unity.
+
+## <a name="2700"></a>2.7.0.0
+Lançado em 23 de junho de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integrar**
+
+  - Suporte adicionado para manter as pastas da solução quando o Unity está regenerando a solução e os projetos.
+
+  - [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md)Diagnóstico adicionado. Detectar assinatura de método incorreta com o `InitializeOnLoadMethod` `RuntimeInitializeOnLoadMethod` atributo ou.
+
+  - [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md)Diagnóstico adicionado. Usar `Invoke` , `InvokeRepeating` `StartCoroutine` ou `StopCoroutine` com um primeiro argumento sendo um literal de cadeia de caracteres não é de tipo seguro.
+
+  - [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md)Diagnóstico adicionado. `SetPixels`a invocação está lenta.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Depurador**
+
+  - Correção da criação de pontos de interrupção enquanto o jogo está em execução no tempo de execução mono antigo (tentando associar o ponto de interrupção assim que ele é criado). 
+  
+- **Integrar**
+
+  - Não redefina a seleção ao filtrar mensagens no assistente de mensagem do Unity.
+  
+  - Corrigidos [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) e [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) supressers com as seguintes regras: suprimir `IDE0044` (ReadOnly), `IDE0051` (não usado), `CS0649` (nunca atribuído) para todos os campos decorados com o atributo serializefield. Suprimir `CS0649` (nunca atribuído) para campos públicos de todos os tipos que se estendem `Unity.Object` .
+
+  - Correção de parâmetro de tipo genérico corrigido para [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) .
+
+- **Período**
+
+  - Correção da comparação de igualdade com enums.
 
 ## <a name="2610"></a>2.6.1.0
 Lançado em 19 de maio de 2020
@@ -43,19 +101,19 @@ Lançado em 14 de abril de 2020
 
 - **Integrar**
 
-  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md)Diagnóstico adicionado. Detectar e encapsular chamadas para corrotinas no `StartCoroutine()` .
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md)Diagnóstico adicionado. Detectar e encapsular chamadas para corrotinas no `StartCoroutine()` .
 
-  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md)Diagnóstico adicionado. Detectar e remover atributo inválido ou redundante `SerializeField` .
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md)Diagnóstico adicionado. Detectar e remover atributo inválido ou redundante `SerializeField` .
 
-  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md)Diagnóstico adicionado. Detecção `GetComponent()` chamada com tipo não componente ou não de interface.
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md)Diagnóstico adicionado. Detecção `GetComponent()` chamada com tipo não componente ou não de interface.
 
-  - Adicionado o [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) supressor para `IDE0051` . Não sinalize os métodos com o `ContextMenu` atributo ou referenciado por um campo com o `ContextMenuItem` atributo como não utilizado.
+  - Adicionado o [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) supressor para `IDE0051` . Não sinalize os métodos com o `ContextMenu` atributo ou referenciado por um campo com o `ContextMenuItem` atributo como não utilizado.
 
-  - Adicionado o [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) supressor para `IDE0051` . Não sinalize campos com o `ContextMenuItem` atributo como não usado.
+  - Adicionado o [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) supressor para `IDE0051` . Não sinalize campos com o `ContextMenuItem` atributo como não usado.
 
-  - Adicionado o [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) supressor para `IDE0044` . Não crie campos com o `ContextMenuItem` atributo somente leitura.
+  - Adicionado o [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) supressor para `IDE0044` . Não crie campos com o `ContextMenuItem` atributo somente leitura.
 
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)e [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) agora estão trabalhando para ambos os `SerializeReference` `SerializeField` atributos e.
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md)e [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) agora estão trabalhando para ambos os `SerializeReference` `SerializeField` atributos e.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -67,7 +125,7 @@ Lançado em 14 de abril de 2020
 
   - Escopo de mensagem fixo para a `CreateInspectorGUI` mensagem.
 
-  - Não relate [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) métodos com modificadores polimórficos.
+  - Não relate [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) métodos com modificadores polimórficos.
 
 - **Período**
 
@@ -93,7 +151,7 @@ Lançado em 3 de março de 2020
 
 - **Integrar**
 
-  - Adicionado o [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) supressor para `IDE0051` . Os métodos privados usados com Invoke, InvokeRepeating, StartCoroutine ou StopCoroutine não devem ser marcados como não utilizados.
+  - Adicionado o [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) supressor para `IDE0051` . Os métodos privados usados com Invoke, InvokeRepeating, StartCoroutine ou StopCoroutine não devem ser marcados como não utilizados.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -113,7 +171,7 @@ Lançado em 19 de fevereiro de 2020
 
 - **Integrar**
 
-  - Correção [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) da verificação de diagnóstico para assinatura de mensagem incorreta. Ao inspecionar tipos com vários níveis de herança, esse diagnóstico pode falhar com a seguinte mensagem: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
+  - Correção [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) da verificação de diagnóstico para assinatura de mensagem incorreta. Ao inspecionar tipos com vários níveis de herança, esse diagnóstico pode falhar com a seguinte mensagem: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
 
 ## <a name="2500"></a>2.5.0.0
 
@@ -129,9 +187,9 @@ Lançado em 22 de janeiro de 2020
   
   - Alternado para uma nova grade de propriedades acessível para configurações.
 
-  - Adicionado o [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) supressor para `IDE0051` . Campos privados com o `SerializeField` atributo não devem ser marcados como não utilizados.
+  - Adicionado o [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) supressor para `IDE0051` . Campos privados com o `SerializeField` atributo não devem ser marcados como não utilizados.
 
-  - Adicionado o [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) supressor para `CS0649` . Os campos com o `SerializeField` atributo não devem ser marcados como não atribuídos.  
+  - Adicionado o [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) supressor para `CS0649` . Os campos com o `SerializeField` atributo não devem ser marcados como não atribuídos.  
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -187,7 +245,7 @@ Lançado em 15 de outubro de 2019
 
 - **Integrar**
 
-  - Adicionado o [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) supressor para `IDE0060` (parâmetro não usado) para todas as mensagens do Unity.
+  - Adicionado o [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supressor para `IDE0060` (parâmetro não usado) para todas as mensagens do Unity.
 
   - Adicionada uma dica de ferramenta rápida para campos marcados com `TooltipAttribute` . (Isso também funcionará para um acessador get simples usando esse campo).
 

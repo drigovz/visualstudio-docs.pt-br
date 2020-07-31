@@ -2,17 +2,17 @@
 title: Editar assinaturas no portal do de administração | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: Saiba como os administradores podem editar atribuições de assinatura.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902926"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453732"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Editar atribuições de assinatura do Visual Studio
 Como administrador de assinaturas, você pode fazer alterações nas assinaturas atribuídas às pessoas na organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias.
@@ -25,7 +25,7 @@ Você pode editar as informações do assinante para corrigir erros ou para atua
 
 Para editar um assinante, selecione as reticências (...) que aparecem ao lado do endereço de email do assinante ao passar o mouse sobre ele. Será exibida uma lista suspensa.  Selecione **Editar** para modificar os detalhes do assinante. 
 > [!div class="mx-imgBorder"]
-> ![Selecione um assinante a ser editado](_img/edit-license/select-subscriber.png)
+> ![Selecione um assinante a ser editado](_img/edit-license/select-subscriber.png "Clique nas reticências e escolha Editar.")
 
 Você pode atualizar o nome, sobrenome, nível de assinatura, endereço de email, país, idioma, downloads e campo de referência do Assinante. Edite as informações do assinante e clique em **salvar**.
 
@@ -45,17 +45,17 @@ Você pode editar vários assinantes de uma vez usando o processo de edição em
 
 2. A edição em massa usa um modelo do Excel para fazer edições nas informações dos assinantes. Na caixa de edição em massa, clique em **Exportar este Excel** para baixar a lista atual de assinantes, incluindo todas as suas informações.
    > [!div class="mx-imgBorder"]
-   > ![Editando uma licença – exportar a lista de edições em massa](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![Editando uma licença – exportar a lista de edições em massa](_img/edit-license/edit-license-bulk-edit-export.png "Clique em exportar este Excel para criar uma lista de suas assinaturas atuais.")
 
 3. Em seguida, salve o arquivo localmente para que ele possa ser encontrado com facilidade e faça as alterações necessárias antes de carregá-lo. Para garantir um upload bem-sucedido, **não edite o nível da assinatura ou o GUID da assinatura** no arquivo de edição em massa, pois isso fará com que o carregamento falhe.
 
 4. Retorne ao Portal de Administração de Assinaturas do Visual Studio e na caixa de diálogo Edição em Massa, clique em **Procurar**. Selecione o arquivo do Excel que você salvou e clique em **OK**. O andamento do upload será exibido na tela.
    > [!div class="mx-imgBorder"]
-   > ![Editando uma licença – upload do arquivo de edições em massa](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![Editando uma licença – upload do arquivo de edições em massa](_img/edit-license/edit-license-bulk-file-upload1.png "Navegue até o local do arquivo concluído do Excel, selecione-o e clique em OK.")
 
 5. Depois de carregar o arquivo, será exibida uma notificação informando que o upload foi bem-sucedido. Neste ponto, suas edições serão refletidas nas informações do assinante.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
@@ -65,5 +65,3 @@ Você pode editar vários assinantes de uma vez usando o processo de edição em
 - Precisa atribuir uma ID de assinatura específica? Confira atribuindo uma ID de assinatura. 
 - Para obter ajuda para encontrar uma assinatura específica, confira [Pesquisar por uma assinatura](search-license.md).
 - Precisa criar uma lista de todas as suas assinaturas?  Confira [Exportar assinaturas](exporting-subscriptions.md).
-
-

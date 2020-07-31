@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289086"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453761"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta breve introdução ao editor de códigos do Visual Studio, examinaremos algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
 > [!TIP]
-> Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio.
+> Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio. Para obter mais informações sobre como obter o serviço de linguagem para TypeScript, consulte [suporte ao typescript](../javascript/javascript-in-vs-2019.md#typescript-support).
 
 Este artigo pressupõe que você já esteja familiarizado com o desenvolvimento em JavaScript. Caso contrário, sugerimos que você primeiro examine um tutorial, como [Criar um aplicativo Node.js e Express](../javascript/tutorial-nodejs.md).
 
@@ -65,6 +65,8 @@ No painel inferior, clique na guia **Lista de Erros** para ver o aviso e a descr
 ![Exibir lista de erros](../javascript/media/write-code-error-list.png)
 
 Corrija esse código adicionando a vírgula (`,`) antes de `"data"`.
+
+Para obter informações adicionais sobre o refiapoing, consulte [fiapoing](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
 
 ## <a name="comment-out-code"></a>Comentar o código
 
@@ -118,7 +120,7 @@ Você pode examinar os trechos de código disponíveis para a sua linguagem esco
 
 ## <a name="see-also"></a>Veja também
 
-- [Trechos de código](../ide/code-snippets.md)
+- [Snippets de código](../ide/code-snippets.md)
 - [Navegue pelos códigos](../ide/navigating-code.md)
 - [Estrutura de tópicos](../ide/outlining.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
