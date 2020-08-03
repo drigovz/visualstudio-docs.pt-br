@@ -32,7 +32,7 @@ Diferentes operações de refatoração estão disponíveis para diferentes ling
 - Para saber mais sobre a refatoração de código C++, confira [Escrevendo e refatorando um código (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - O suporte à refatoração no F# é fornecido pelo [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), uma extensão do Visual Studio de terceiros.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ações Rápidas](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
