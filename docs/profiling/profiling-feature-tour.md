@@ -3,7 +3,11 @@ title: Medir o desempenho com ferramentas de criação de perfil
 description: Dê uma olhada rápida em diferentes ferramentas de diagnóstico disponíveis no Visual Studio.
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816678"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507983"
 ---
 # <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
@@ -168,7 +172,7 @@ Para diagnosticar a capacidade de resposta de IU, tempo de carregamento lento e 
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analisar o uso de rede (UWP)
 
-Em aplicativos UWP, é possível analisar as operações de rede executadas usando a API `Windows.Web.Http`. Essa ferramenta pode ajudá-lo a resolver problemas, como problemas de acesso e autenticação, uso de cache incorreto e desempenho insatisfatório de exibição e download. Para usar a ferramenta, escolha **Rede** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
+Em aplicativos UWP, você pode analisar as operações de rede executadas usando a `Windows.Web.Http` API. Essa ferramenta pode ajudá-lo a resolver problemas como problemas de acesso e autenticação, o uso incorreto do cache e a exibição ruim e o desempenho do download. Para usar a ferramenta, escolha **Rede** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
 
 ![Ferramenta de criação de perfil de uso de rede](../profiling/media/prof-tour-network-usage.png "Uso de rede de diagnóstico")
 
@@ -221,11 +225,11 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Performance Explorer](../profiling/performance-explorer.md)|sim|não|sim|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
-|[Uso da rede](../profiling/network-usage.md)|não|sim|não|
+|[Uso de Rede](../profiling/network-usage.md)|não|sim|não|
 |[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|não|sim para HTML, não para XAML|não|
 |[Memória JavaScript](../profiling/javascript-memory.md)|não|sim para HTML, não para XAML|não|
 ::: moniker-end
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Depurando no Visual Studio](../debugger/debugger-feature-tour.md)

@@ -8,25 +8,26 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649619"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507957"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
-O XAML Designer em Visual Studio e Blend for Visual Studio fornece uma interface visual para ajudá-lo a projetar aplicativos baseados em XAML, como WPF e UWP. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da janela Caixa de Ferramentas (janela Ativos no Blend para Visual Studio) e configurando propriedades na janela Propriedades. Você também pode editar XAML diretamente no modo de exibição XAML.
+O Designer XAML no Visual Studio e Blend para Visual Studio fornece uma interface visual para ajudá-lo a criar aplicativos baseados em XAML, como o WPF e o UWP. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da janela Caixa de Ferramentas (janela Ativos no Blend para Visual Studio) e configurando propriedades na janela Propriedades. Você também pode editar XAML diretamente no modo de exibição XAML.
 
 Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin.Forms não suporta um designer XAML. Para visualizar suas UIs Xamarin.Forms XAML e editá-las enquanto o aplicativo estiver em execução, use o XAML Hot Reload para Xamarin.Forms. Para obter mais informações, consulte a página [XAML Hot Reload for Xamarin.Forms (Preview).](/xamarin/xamarin-forms/xaml/hot-reload/)
+> O Xamarin. Forms não dá suporte a um designer XAML. Para exibir as UIs do XAML do Xamarin. Forms e editá-las enquanto o aplicativo estiver em execução, use o Hot recarregamento XAML para Xamarin. Forms. Para obter mais informações, consulte a página o [recarregamento de XAML para Xamarin. Forms (versão prévia)](/xamarin/xamarin-forms/xaml/hot-reload/) .
 
 ## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML
 
@@ -90,7 +91,7 @@ Exibe ou oculta a grade de ajuste que mostra as linhas de grade. As linhas de gr
 
 **Ativar/desativar ajuste às linhas de grade**
 
-Se **a encaixe nas linhas de grade** estiver habilitada, um elemento tende a se alinhar com as linhas de grade horizontais e verticais mais próximas quando você arrastá-la para a prancheta.
+Se o **ajuste para linhas de grade** estiver habilitado, um elemento tende a se alinhar com as linhas de grade horizontais e verticais mais próximas ao arrastá-lo para a prancheta.
 
 **Alternar plano de fundo da prancheta**
 
@@ -122,20 +123,20 @@ A janela Estrutura de Tópicos do Documento no Visual Studio é semelhante à ja
 
 - [Criar animações](animate-objects-in-xaml-designer.md) (somente no Blend para Visual Studio).
 
-Para exibir a janela Contorno de documentos no Visual Studio, na barra de menu seleção **Exibir** > **outro** > **contorno de documento do Windows**.
-Para exibir a janela Objetos e linha do tempo em Blend for Visual Studio, na barra de menu seleção **Exibir** > **contorno de documento**.
+Para exibir a janela de estrutura de tópicos do documento no Visual Studio, na barra de menus, selecione **Exibir**  >  **outra**  >  **estrutura de tópicos do documento**do Windows.
+Para exibir a janela de objetos e linha do tempo no Blend para Visual Studio, na barra de menus, selecione **Exibir**  >  **estrutura de tópicos do documento**.
 
 ![Janela Estrutura de Tópicos do Documento no Visual Studio](media/document-outline-window.png)
 
-O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. As seguintes opções estão disponíveis na janela Contorno/Objetos de documento e linha do tempo:
+O modo de exibição principal nas janelas Estrutura de Tópicos do Documento/Objetos e Linha do Tempo exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos. As opções a seguir estão disponíveis na janela estrutura de tópicos/Objetos e Linha do Tempo do documento:
 
 **Mostrar/ocultar**
 
-Exibe ou oculta elementos da prancheta. Aparece como um símbolo de olho quando exibida. Você também pode pressionar **Ctrl**+**H** para ocultar um elemento e **Shift**+**Ctrl**+**H** para mostrá-lo.
+Exibe ou oculta elementos da prancheta. Aparece como um símbolo de olho quando exibida. Você também pode pressionar **Ctrl** + **h** para ocultar um elemento e **Shift** + **Ctrl** + **h** para mostrá-lo.
 
 **Bloquear/desbloquear**
 
-Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não podem ser modificados. Aparece como um símbolo de cadeado quando bloqueado. Você também pode pressionar **Ctrl**+**L** para bloquear um elemento e **Shift**+**Ctrl**+**L** para desbloqueá-lo.
+Bloqueia ou desbloqueia elementos da prancheta. Os elementos bloqueados não podem ser modificados. Aparece como um símbolo de cadeado quando bloqueado. Você também pode pressionar **Ctrl** + **l** para bloquear um elemento e **Shift** + **Ctrl** + **l** para desbloqueá-lo.
 
 **Retornar escopo para pageRoot**
 
@@ -143,7 +144,7 @@ A opção na parte superior das janelas Estrutura de Tópicos do Documento/Objet
 
 ## <a name="properties-window"></a>Janela de Propriedades
 
-A janela **Propriedades** permite definir valores de propriedade em controles. Veja como ela se parece:
+A janela **Propriedades** permite definir valores de propriedade em controles. Esta é a aparência dele:
 
 ![Janela de Propriedades](media/xaml-designer-properties-window.png)
 
@@ -161,7 +162,7 @@ Algumas propriedades permitem que você defina propriedades avançadas seleciona
 
 Para obter mais informações sobre como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)
