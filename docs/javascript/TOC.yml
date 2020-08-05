@@ -26,18 +26,26 @@
       href: publish-nodejs-app-azure.md
 - name: Guias de instruções
   items:
-    - name: Escrever e editar o código
-      href: write-and-edit-code.md
-    - name: Criar um aplicativo Vue.js
-      href: create-application-with-vuejs.md
+    - name: Editor
+      items:
+        - name: Escrever e editar o código
+          href: write-and-edit-code.md
+        - name: JavaScript IntelliSense
+          href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: Build
+      items:
+        - name: Compilar o código TypeScript usando TSC
+          href: compile-typescript-code-npm.md
+        - name: Compilar o código TypeScript usando NuGet
+          href: compile-typescript-code-nuget.md
     - name: Gerenciar pacotes npm
       href: npm-package-management.md
     - name: Desenvolver sem projetos nem soluções ("Abrir Pasta")
       href: develop-javascript-code-without-solutions-projects.md
+    - name: Criar um aplicativo Vue.js
+      href: create-application-with-vuejs.md
     - name: Usar a o REPL interativo do Node.js
       href: nodejs-interactive-repl.md
-    - name: JavaScript IntelliSense
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
     - name: Depurar
       href: debug-nodejs.md
     - name: Teste de unidade
