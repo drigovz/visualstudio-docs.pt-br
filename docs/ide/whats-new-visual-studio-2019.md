@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387038"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818580"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
-**Atualizado para a [versão 16,6](/visualstudio/releases/2019/release-notes/)**
+**Atualizado para a [versão 16,7](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Baixar o Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ Para obter mais informações sobre o IntelliCode, consulte as postagens no blog
 
 ### <a name="code-cleanup"></a>Limpeza de Código
 
-Juntamente com um novo indicador de integridade do documento, temos um novo comando de limpeza de código. Você pode usar esse novo comando para identificar e depois corrigir avisos e sugestões com o clique de um botão.
+Juntamente com um novo indicador de integridade do documento, temos um novo comando de limpeza de código. Você pode usar esse novo comando para identificar e, em seguida, corrigir avisos e sugestões com uma única ação (ou clique em um botão).
 
 A limpeza formata o código e aplica todas as correções de código conforme sugerido pelas [configurações atuais](code-styles-and-code-cleanup.md) e [arquivos .editorconfig](create-portable-custom-editor-options.md).
 
@@ -118,7 +118,7 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 
 Para obter mais informações, consulte a postagem no blog [anunciando o .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Colaborar
+## <a name="collaborate"></a>Colaboração
 
 Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Tamanho do vídeo: 4,22 minutos*
 
@@ -178,7 +178,7 @@ Você provavelmente já esteve lá antes, procurando na janela Inspeção por um
 
    ![Animação que mostra a janela de pesquisa de depuração no Visual Studio 2019](media/vs-2019/debug-window-search.gif)
 
-Você também pode formatar o modo como um valor é exibido dentro das janelas Inspeção, Locais e Autos.  Clique duas vezes em um dos itens em qualquer uma das janelas e adicione uma vírgula (",") para acessar a lista suspensa de especificadores de formato possíveis, cada um dos quais inclui uma descrição de seu efeito pretendido.
+Você também pode formatar o modo como um valor é exibido dentro das janelas Inspeção, Locais e Autos. Selecione (clicando duas vezes em um dos itens em qualquer uma das janelas e adicione uma vírgula (",") para acessar a lista suspensa de possíveis especificadores de formato, cada um dos quais inclui uma descrição de seu efeito pretendido.
 
    ![A nova janela Inspeção e o novo recurso de formatação de valores no Visual Studio 2019](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Para obter mais informações, consulte as [Propriedades fixas: Debug & exibir o
 
 O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Para saber mais sobre nossas inovações mais recentes, confira o [blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). Para obter um registro do que lançamos em versão prévia até o momento, veja as [notas de versão de visualização](/visualstudio/releases/2019/release-notes-preview/). Para obter uma lista do que estamos planejando lançar em seguida, consulte o [mapa do Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-Quer saber mais sobre as novidades do Visual Studio 2019? Confira o [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+Enquanto isso, aqui estão alguns dos nossos novos recursos atualmente no Works.
+
+- **Suporte do Visual Studio 2019 para Visual Studio Codespaces (versão prévia)**
+
+  Agora, mais do que nunca, os desenvolvedores estão malabarismos com vários projetos no trabalho e em casa. Novos recursos, correções de bugs, revisões de PR, &amp; protótipos todos conpetem por tempo e exigem alternância de contexto constante. O [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) pode ajudar. Você pode desenvolver totalmente na nuvem e criar ambientes dedicados e personalizados para cada um de seus projetos em segundos. Com o Visual Studio 2019, você pode se conectar ao seu codespace e trabalhar da mesma maneira que faria localmente.
+
+  Para obter mais informações, consulte a página [o que é o Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+
+- **Experiência do git aprimorada no Visual Studio 2019 (visualização)**
+
+   Continuamos Iterando uma experiência remodelada do git para melhorar sua produtividade ao trabalhar com código no GitHub, Azure Repos e outros serviços de hospedagem remoto. Você pode inicializar e enviar por push de dentro do Visual Studio 2019 com uma única ação (ou clique). Você também pode criar novos branches, gerenciar branches atuais e resolver conflitos de mesclagem.
+
+   Para obter mais informações, consulte a postagem [empolgante novas atualizações para a experiência de git no blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+
+Para obter mais informações sobre a versão de visualização &mdash; e um link de download, se você quiser experimentá-lo, &mdash; consulte a página de **[visualização do Visual Studio](https://visualstudio.microsoft.com/vs/preview/)** .
 
 ## <a name="give-us-feedback"></a>Fornecer comentários
 
