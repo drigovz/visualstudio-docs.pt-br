@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507892"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913273"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Usar processo local com kubernetes (versão prévia)
 
@@ -146,7 +146,7 @@ O processo local com kubernetes pode manipular o tráfego de roteamento e replic
 
 ## <a name="using-logging-and-diagnostics"></a>Usando log e diagnóstico
 
-Você pode encontrar os logs de diagnóstico no `Azure Dev Spaces` diretório no [diretório *temporário* do seu computador de desenvolvimento][azds-tmp-dir].
+Você pode encontrar os logs de diagnóstico no `Local Process with Kubernetes` diretório no diretório *temporário* do seu computador de desenvolvimento. 
 
 ## <a name="remove-the-sample-application-from-your-cluster"></a>Remover o aplicativo de exemplo do cluster
 
@@ -164,7 +164,6 @@ Saiba como o processo local kubernetes funciona.
 > [Como o processo local com Kubernetes funciona](overview-local-process-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates
 [azure-cloud-shell]: /azure/cloud-shell/w.md

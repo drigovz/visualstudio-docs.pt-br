@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507879"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913260"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Como o processo local com Kubernetes funciona
 
@@ -47,6 +47,9 @@ Quando o processo local com kubernetes estabelece uma conexão com o cluster, el
 Depois de estabelecer uma conexão com o cluster, você pode executar e depurar o código nativamente em seu computador, sem a Containerização, e o código pode interagir diretamente com o restante do cluster. Qualquer tráfego de rede que o agente remoto recebe é redirecionado para a porta local especificada durante a conexão para que seu código em execução nativamente possa aceitar e processar esse tráfego. As variáveis de ambiente, os volumes e os segredos do seu cluster são disponibilizados para o código em execução no seu computador de desenvolvimento. Além disso, devido às entradas de arquivo de hosts e encaminhamento de porta adicionados ao seu computador de desenvolvedor por processo local com o kubernetes, seu código pode enviar tráfego de rede para serviços em execução no cluster usando os nomes de serviço do cluster e esse tráfego é encaminhado para os serviços em execução no cluster. O tráfego é roteado entre o computador de desenvolvimento e o cluster todo o tempo que você está conectado.
 
 Além disso, o processo local com o kubernetes fornece uma maneira de replicar as variáveis de ambiente e os arquivos montados disponíveis para pods no cluster no seu computador de desenvolvimento por meio do `KubernetesLocalProcessConfig.yaml` arquivo. Você também pode usar esse arquivo para criar novas variáveis de ambiente e montagens de volume.
+
+> [!NOTE]
+> Para a duração da conexão com o cluster (mais 15 minutos adicionais), o processo local com kubernetes executa um processo chamado *EndpointManager* com permissões de administrador no computador local.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuração adicional com KubernetesLocalProcessConfig. YAML
 
@@ -92,7 +95,7 @@ Quando você se desconecta do cluster, por padrão, o processo local com kuberne
 
 ## <a name="diagnostics-and-logging"></a>Diagnóstico e registro em log
 
-Ao usar o processo local com o kubernetes para se conectar ao cluster, os logs de diagnóstico do cluster são registrados no [diretório temporário][azds-tmp-dir]do computador de desenvolvimento.
+Ao usar o processo local com o kubernetes para se conectar ao cluster, os logs de diagnóstico do cluster são registrados no diretório *Temp* do computador de desenvolvimento no *processo local com* a pasta kubernetes.
 
 ## <a name="limitations"></a>Limitações
 
