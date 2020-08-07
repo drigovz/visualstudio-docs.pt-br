@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137561"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972467"
 ---
 # <a name="developer-community-guidelines"></a>Diretrizes do Developer Community
 
@@ -89,12 +89,15 @@ Se você sugeriu um recurso, talvez esteja desapontado que não planejamos atend
 
 Em nosso processo de tomada de decisão, examinamos as seguintes características sobre a sugestão de recurso:
 
+- Ele corresponde à nossa direção geral do produto?
 - Podemos criar e mantê-lo?
 - Ele se alinha com nossa estratégia geral de [roteiro](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
 - Ele tem suporte da Comunidade, conforme indicado por votos e comentários?
 - Nós adoramos isso, mesmo com baixo suporte da Comunidade?
 
 Quando não for possível responder "Sim" a qualquer uma dessas perguntas, vamos fechá-la. Mas, muitas vezes, a sugestão permanecerá aberta como _sob análise_ para reunir mais comentários da Comunidade.
+
+Se uma sugestão não corresponder à nossa direção geral do produto, nós a fecharemos como *fora do escopo*. Por exemplo, poderemos ter investimentos semelhantes em outros membros da família de produtos Visual Studio. Ou o recurso sugerido pode ser relevante apenas para algumas pessoas, tornando uma extensão mais adequada para fornecê-la.
 
 Acompanhe o progresso de sua sugestão de recurso referenciando os [Estados de sugestão e as perguntas frequentes](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 
