@@ -441,6 +441,8 @@
           href: common-msbuild-project-properties.md
         - name: Itens de projeto comuns do MSBuild
           href: common-msbuild-project-items.md
+        - name: Metadados de itens comuns do MSBuild
+          href: common-msbuild-item-metadata.md
         - name: Referência de linha de comando do MSBuild
           href: msbuild-command-line-reference.md
         - name: Arquivos .targets do MSBuild
