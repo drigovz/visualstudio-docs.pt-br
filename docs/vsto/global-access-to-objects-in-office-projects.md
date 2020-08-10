@@ -30,22 +30,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253440"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041045"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
-  Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma `Globals` classe chamada no projeto. Você pode usar a `Globals` classe para acessar vários itens de projeto diferentes em tempo de execução de qualquer código no projeto.
+  Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe chamada `Globals` no projeto. Você pode usar a `Globals` classe para acessar vários itens de projeto diferentes em tempo de execução de qualquer código no projeto.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="how-to-use-the-globals-class"></a>Como usar a classe Globals
  `Globals`é uma classe estática que mantém referências a determinados itens em seu projeto. Usando a `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:
 
-- As `ThisWorkbook` classes `Sheet`e *n* em uma pasta de trabalho ou projeto de modelo do Excel. Você pode acessar esses objetos usando as `Globals.ThisWorkbook` Propriedades e `Sheet` *n* .
+- As `ThisWorkbook` classes e `Sheet` *n* em uma pasta de trabalho ou projeto de modelo do Excel. Você pode acessar esses objetos usando as `Globals.ThisWorkbook` Propriedades e `Sheet` *n* .
 
 - A `ThisDocument` classe em um documento do Word ou projeto de modelo. Você pode acessar esse objeto usando a `Globals.ThisDocument` propriedade.
 
@@ -55,28 +55,27 @@ ms.locfileid: "71253440"
 
 - Todas as regiões de formulário do Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando a `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).
 
-- Um objeto de fábrica que permite que você crie controles de faixa de faixas e itens de host em tempo de execução [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] em projetos [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]direcionados ao ou ao. Você pode acessar esse objeto usando a `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implementa uma das seguintes interfaces:
+- Um objeto de fábrica que permite que você crie controles de faixa de faixas e itens de host em tempo de execução em projetos direcionados ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] . Você pode acessar esse objeto usando a `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implementa uma das seguintes interfaces:
 
-  - <xref:Microsoft.Office.Tools.Factory>
+  - [Microsoft. Office. Tools. Factory](xref:Microsoft.Office.Tools.Factory)
 
-  - <xref:Microsoft.Office.Tools.Excel.Factory>
+  - [Microsoft. Office. Tools. Excel. Factory](xref:Microsoft.Office.Tools.Excel.Factory)
 
-  - <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - [Microsoft. Office. Tools. Outlook. Factory](xref:Microsoft.Office.Tools.Outlook.Factory)
 
-  - <xref:Microsoft.Office.Tools.Word.Factory>
+  - [Microsoft. Office. Tools. Word. Factory](xref:Microsoft.Office.Tools.Word.Factory)
 
   Por exemplo, você pode usar a `Globals.Sheet1` propriedade para inserir texto em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle em `Sheet1` quando um usuário clica em um botão no painel Ações em um projeto de nível de documento para o Excel.
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
-## <a name="initialize-the-globals-class"></a>Inicializar a classe Globals
- O código que tenta usar a `Globals` classe antes que o documento ou suplemento do VSTO seja inicializado pode gerar uma exceção de tempo de execução. Por exemplo, usar `Globals` quando declarar uma variável em nível de classe pode falhar porque `Globals` a classe pode não ser inicializada com referências a todos os itens de host antes que o objeto declarado seja instanciado.
+ O código que tenta usar a `Globals` classe antes que o documento ou suplemento do VSTO seja inicializado pode gerar uma exceção de tempo de execução. Por exemplo, usar `Globals` quando declarar uma variável em nível de classe pode falhar porque a `Globals` classe pode não ser inicializada com referências a todos os itens de host antes que o objeto declarado seja instanciado.
 
 > [!NOTE]
-> A `Globals` classe nunca é inicializada em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade `Globals` da classe de dentro de uma classe de controle de usuário, deverá verificar se a propriedade retorna **NULL** antes de tentar usar o objeto retornado.
+> A `Globals` classe nunca é inicializada em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade da `Globals` classe de dentro de uma classe de controle de usuário, deverá verificar se a propriedade retorna **NULL** antes de tentar usar o objeto retornado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
