@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 9b5a03c9cb7ae7c5a5c81bd452dbb04d8db4c09d
+ms.sourcegitcommit: ed17ca9ae5f92c229c4e46233bcfe0a49d29ec43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386349"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88052616"
 ---
 # <a name="security-warnings"></a>Avisos de segurança
 
@@ -89,13 +89,15 @@ Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguro
 |[CA2328: Verificar se as JsonSerializerSettings são seguras](../code-quality/ca2328.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2329: Não desserializar com JsonSerializer usando uma configuração não segura](../code-quality/ca2329.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2330: Verificar se o JsonSerializer tem uma configuração segura durante a desserialização](../code-quality/ca2330.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
-|[CA2350: Verifique se a entrada de DataTable. ReadXml () é confiável](ca2350.md)|Ao desserializar um <xref:System.Data.DataTable> com uma entrada não confiável, um invasor pode criar uma entrada mal-intencionada para executar um ataque de negação de serviço. Pode haver vulnerabilidades de execução remota de código desconhecido.|
-|[CA2351: Verifique se a entrada do conjunto de dados. ReadXml () é confiável](ca2351.md)|Ao desserializar um <xref:System.Data.DataSet> com uma entrada não confiável, um invasor pode criar uma entrada mal-intencionada para executar um ataque de negação de serviço. Pode haver vulnerabilidades de execução remota de código desconhecido.|
-|[CA2352: DataSet ou DataTable não seguro em tipo serializável pode ser vulnerável a ataques de execução remota de código](ca2352.md)|Uma classe ou estrutura marcada com <xref:System.SerializableAttribute> contém um <xref:System.Data.DataSet> <xref:System.Data.DataTable> campo ou propriedade, e não tem um <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> .|
-|[CA2353: DataSet ou DataTable não seguro em tipo serializável](ca2353.md)|Uma classe ou struct marcada com um atributo de serialização XML ou um atributo de contrato de dados contém um <xref:System.Data.DataSet> <xref:System.Data.DataTable> campo ou propriedade.|
-|[CA2354: DataSet ou DataTable não seguro em um grafo de objeto desserializado pode ser vulnerável a ataques de execução remota de código](ca2354.md)|A desserialização com uma <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> serializada e o grafo de objeto do tipo convertido podem incluir um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> .|
-|[CA2355: DataSet ou DataTable não seguro no grafo de objeto desserializado](ca2355.md)|Desserializando quando o grafo de objeto do tipo convertido ou especificado pode incluir um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> .|
+|[CA2350: verifique se a entrada do DataTable.ReadXml() é confiável](ca2350.md)|Ao desserializar um <xref:System.Data.DataTable> com uma entrada não confiável, um invasor pode criar uma entrada mal-intencionada para executar um ataque de negação de serviço. Pode haver vulnerabilidades de execução remota de código desconhecido.|
+|[CA2351: verifique se a entrada do DataSet.ReadXml() é confiável](ca2351.md)|Ao desserializar um <xref:System.Data.DataSet> com uma entrada não confiável, um invasor pode criar uma entrada mal-intencionada para executar um ataque de negação de serviço. Pode haver vulnerabilidades de execução remota de código desconhecido.|
+|[CA2352: DataSet ou DataTable não seguros no tipo serializável podem ser vulneráveis a ataques de execução de código remoto](ca2352.md)|Uma classe ou estrutura marcada com <xref:System.SerializableAttribute> contém um <xref:System.Data.DataSet> <xref:System.Data.DataTable> campo ou propriedade, e não tem um <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> .|
+|[CA2353: DataSet ou DataTable não seguros no tipo serializável](ca2353.md)|Uma classe ou struct marcada com um atributo de serialização XML ou um atributo de contrato de dados contém um <xref:System.Data.DataSet> <xref:System.Data.DataTable> campo ou propriedade.|
+|[CA2354: DataSet ou DataTable não seguros no grafo de objetos desserializados podem ser vulneráveis a ataques de execução de código remoto](ca2354.md)|A desserialização com uma <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> serializada e o grafo de objeto do tipo convertido podem incluir um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> .|
+|[CA2355: DataSet ou DataTable não seguros no grafo de objetos desserializados](ca2355.md)|Desserializando quando o grafo de objeto do tipo convertido ou especificado pode incluir um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> .|
 |[CA2356: DataSet não seguro ou DataTable no grafo de objeto desserializado da Web](ca2356.md)|Um método com um <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> ou <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> tem um parâmetro que pode fazer referência a um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> .|
+|[CA2361: garanta que a classe gerada automaticamente contendo DataSet. ReadXml () não seja usada com dados não confiáveis](ca2361.md)|Ao desserializar um <xref:System.Data.DataSet> com uma entrada não confiável, um invasor pode criar uma entrada mal-intencionada para executar um ataque de negação de serviço. Pode haver vulnerabilidades de execução remota de código desconhecido.|
+|[CA2362: DataSet ou DataTable não seguro em tipo serializável gerado automaticamente pode ser vulnerável a ataques de execução remota de código](ca2362.md)|Ao desserializar a entrada não confiável com <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> o e o grafo de objeto desserializado contiver um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> , um invasor poderá criar uma carga mal-intencionada para executar um ataque de execução remota de código.|
 |[CA3001: Examinar código quanto a vulnerabilidades de injeção de SQL](../code-quality/ca3001.md)|Ao trabalhar com comandos de entrada e SQL não confiáveis, lembre-se dos ataques de injeção de SQL. Um ataque de injeção de SQL pode executar comandos SQL mal-intencionados, comprometendo a segurança e a integridade do seu aplicativo.|
 |[CA3002: Examinar código quanto a vulnerabilidades de XSS](../code-quality/ca3002.md)|Ao trabalhar com entrada não confiável de solicitações da Web, tenha cuidado com ataques XSS (scripts entre sites). Um ataque XSS injeta entrada não confiável em saída HTML bruta, permitindo que o invasor execute scripts mal-intencionados ou modifique conteúdo de forma mal-intencionada em sua página da Web.|
 |[CA3003: Examinar código quanto a vulnerabilidades de injeção de caminho](../code-quality/ca3003.md)|Ao trabalhar com entrada não confiável de solicitações da Web, lembre-se de usar a entrada controlada pelo usuário ao especificar caminhos para arquivos.|
