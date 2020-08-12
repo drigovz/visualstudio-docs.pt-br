@@ -748,6 +748,10 @@
                   href: ca2355.md
                 - name: 'CA2356: tipos DataSet ou DataTable não seguros no grafo de objetos desserializados da Web'
                   href: ca2356.md
+                - name: 'CA2361: verifique se a classe gerada automaticamente que contém DataSet.ReadXml() não é usada quando os dados não são confiáveis'
+                  href: ca2361.md
+                - name: 'CA2362: DataSet ou DataTable não seguros em um tipo serializável gerado automaticamente podem ser vulneráveis a ataques de execução remota de código'
+                  href: ca2362.md
                 - name: 'CA2330: Verificar se o JsonSerializer tem uma configuração segura durante a desserialização'
                   href: ca2330.md
                 - name: 'CA3001: Examinar código quanto a vulnerabilidades de injeção de SQL'
