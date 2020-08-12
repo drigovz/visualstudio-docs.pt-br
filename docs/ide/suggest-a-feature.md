@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276482"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114198"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
 
-Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Esta é uma nova maneira de se capacitar para se envolver diretamente com o fluxo de trabalho de engenharia do Visual Studio.
+Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira que você pode ser capacitada a se envolver diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
 ![Botão Sugerir uma Funcionalidade na Comunidade de Desenvolvedores](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -35,7 +35,7 @@ O site do UserVoice tornou-se somente leitura. Você poderá ler o conteúdo já
 
 Migramos um conjunto inicial de ideias do fórum UserVoice para a Comunidade de Desenvolvedores. A migração foi feita com base no impacto na comunidade dos comentários e nossas prioridades de roteiro do produto. Se você esperava ver aqui uma sugestão que talvez não tenhamos percebido, fique à vontade para adicioná-la à Comunidade de Desenvolvedores.
 
-## <a name="votes"></a>Votes
+## <a name="votes"></a>Votos
 
 O sistema de votação na Comunidade de Desenvolvedores é diferente do UserVoice. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.
 
@@ -83,9 +83,16 @@ Uma sugestão de recurso marcada com **Precisamos de Mais Informações** signif
 
 ![Estado Fechado – Informações Insuficientes para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Fechado - Não basta sumido Informações** indica que, após várias tentativas, não recebemos informações suficientes para entender completamente sua sugestão de recurso. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
+**Fechado – informações insuficientes** indicam que, após várias tentativas, não recebemos informações suficientes para entender totalmente sua sugestão de recursos. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
 
 Encontrou as informações que estava procurando? Você pode solicitar para reativar o tíquete quando tiver as informações adicionais.
+
+- - -
+
+![Fechado-fora do estado do escopo para sugestões na Comunidade de desenvolvedores](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**Fechado fora do escopo** Se uma sugestão não corresponder à nossa direção geral do produto, nós a fecharemos como *fora do escopo*. Por exemplo, poderemos ter investimentos semelhantes em outros membros da família de produtos Visual Studio. Ou o recurso sugerido pode ser relevante apenas para algumas pessoas, tornando uma extensão mais adequada para fornecê-la.
+
 
 - - -
 
@@ -103,7 +110,7 @@ Encontrou as informações que estava procurando? Você pode solicitar para reat
 
 ## <a name="faq"></a>Perguntas frequentes
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Por que não consigo ver minha ideia de Voz de Usuário na Comunidade de Desenvolvedores?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Por que não consigo ver minha ideia de voz de usuário na Comunidade de desenvolvedores?
 
 As novas sugestões de recursos do antigo fórum Voz do Usuário foram migradas para a Comunidade de Desenvolvedores com base no impacto da comunidade mais ampla e nas prioridades do roteiro de nossos produtos. Se você acha que esquecemos de migrar sua sugestão, adicione-a como uma nova sugestão à Comunidade de Desenvolvedores.
 

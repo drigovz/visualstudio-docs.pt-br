@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235089"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114143"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
@@ -603,3 +604,4 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA5400 | [CA5400 garantir que a verificação da lista de certificados revogados do HttpClient não esteja desabilitada](../code-quality/ca5400.md) | Um certificado revogado não é mais confiável. Ele pode ser usado por invasores passando dados mal-intencionados ou roubando dados confidenciais na comunicação HTTPS. |
 | CA5401 | [CA5401 não use createencryptr com IV não padrão](../code-quality/ca5401.md) | A criptografia simétrica sempre deve usar um vetor de inicialização não reproduzível para evitar ataques de dicionário. |
 | CA5402 | [CA5402 usar createencryptr com o IV padrão](../code-quality/ca5402.md) | A criptografia simétrica sempre deve usar um vetor de inicialização não reproduzível para evitar ataques de dicionário. |
+| IL3000 | [IL3000 Evite usar o caminho do arquivo de assembly de acesso ao publicar como um arquivo único](../code-quality/il3000.md) | Evite usar o caminho do arquivo de assembly de acesso ao publicar como um arquivo único |

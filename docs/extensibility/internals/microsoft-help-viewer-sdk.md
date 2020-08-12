@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536182"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114252"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -445,16 +445,16 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 
 **Branding.xml**
 
-| | |
+| Recurso | Descrição |
 | - | - |
 | Recurso: | **CollapsibleArea** |
 | Use: | Expande recolhe o texto de controle de conteúdo |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | ExpandText | Expanda |
 | CollapseText | Recolher |
 | Recurso: | **CodeSnippet** |
 | Use: | Texto de controle de trecho de código.  Observação: o conteúdo do trecho de código com espaço "não separável" será alterado para espaço. |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | CopyToClipboard | Copiar para a Área de Transferência |
 | ViewColorizedText | Exibir colorido |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemplo) |
@@ -462,7 +462,7 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 | VBUsage | Uso |
 | Recurso: | **Comentários, rodapé e logotipo** |
 | Use: | Forneça um controle de comentários para que o cliente forneça comentários sobre o tópico atual por email.  Texto de direitos autorais do conteúdo.  Definição do logotipo. |
-| **Elemento** | **Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)** |
+| **Element** | **Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)** |
 | Internacionais | © 2013 Microsoft Corporation. Todos os direitos reservados. |
 | SendFeedback | \<a href="{0}" {1}>Envie comentários \</a> sobre este tópico para a Microsoft. |
 | FeedbackLink | |
@@ -471,7 +471,7 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 | LogoFileNameHC | vs_logo_wh.gif |
 | Recurso: | **Isenção de responsabilidade** |
 | Use: | Um conjunto de isenções específicas do caso para conteúdo traduzido por computador. |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | MT_Editable | Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo. |
 | MT_NonEditable | Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo. |
 | MT_QualityEditable | Este artigo foi traduzido manualmente. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo. |
@@ -480,14 +480,14 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 | MT_BetaRecycledContents | Este artigo foi traduzido manualmente para uma versão preliminar. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo. |
 | Recurso: | **Linktable** |
 | Use: | Suporte para links de tópico online |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | LinkTableTitle | Vincular tabela |
 | TopicEnuLinkText | Exiba a versão em inglês \</a> deste tópico que está disponível no seu computador. |
 | TopicOnlineLinkText | Exibir este tópico \<a href="{0}" {1}> online\</a> |
 | OnlineText | Online |
 | Recurso: | **Controle de áudio de vídeo** |
 | Use: | Exibir elementos e texto para conteúdo de vídeo |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | MultiMediaNotSupported | O Internet Explorer 9 ou superior deve estar instalado para dar suporte ao {0} conteúdo. |
 | VideoText | exibindo vídeo |
 | AudioText | áudio de streaming |
@@ -495,25 +495,25 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 | OnlineAudioLinkText | \<p>Para ouvir o áudio associado a este tópico, clique {0} \<a href="{1}"> {2} aqui \</a> .\</p> |
 | Recurso: | **Controle de conteúdo não instalado** |
 | Use: | Elementos de texto (cadeias de caracteres) usados para o processamento de contentnotinstalled.htm |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | ContentNotInstalledTitle | Nenhum conteúdo foi encontrado no seu computador. |
 | ContentNotInstalledDownloadContentText | \<p>Para baixar o conteúdo para o seu computador, \<a href="{0}" {1}> clique na guia Gerenciar \</a> .\</p> |
 | ContentNotInstalledText | \<p>Nenhum conteúdo está instalado em seu computador. Consulte o administrador para a instalação do conteúdo da ajuda local.\</p> |
 | Recurso: | **Controle de tópico não encontrado** |
 | Use: | Elementos de texto (cadeias de caracteres) usados para o processamento de topicnotfound.htm |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | TopicNotFoundTitle | Não é possível localizar o tópico solicitado no seu computador. |
 | TopicNotFoundViewOnlineText | \<p>O tópico solicitado não foi encontrado no seu computador, mas você pode \<a href="{0}" {1}> Exibir o tópico online \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Consulte o painel de navegação para obter links para tópicos semelhantes ou \<a href="{0}" {1}> clique na guia Gerenciar \</a> para baixar conteúdo para o seu computador.\</p> |
 | TopicNotFoundText | \<p>O tópico solicitado não foi encontrado no seu computador.\</p> |
 | Recurso: | **Tópico controle corrompido** |
 | Use: | Elementos de texto (cadeias de caracteres) usados para o processamento de topiccorrupted.htm |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | TopicCorruptedTitle | Não é possível exibir o tópico solicitado. |
 | TopicCorruptedViewOnlineText | \<p>O Visualizador da ajuda não pode exibir o tópico solicitado. Pode haver um erro no conteúdo do tópico ou em uma dependência de sistema subjacente.\</p> |
 | Recurso: | **Controle de página inicial** |
 | Use: | Texto que dá suporte à exibição do conteúdo do nó de nível superior do Help Viewer. |
-| **Elemento** | **Valor** |
+| **Element** | **Valor** |
 | HomePageTitle | Página inicial do Help Viewer |
 | HomePageIntroduction | \<p>Bem-vindo ao Microsoft Help Viewer, uma fonte essencial de informações para todos que usam ferramentas, produtos, tecnologias e serviços da Microsoft. O Help Viewer fornece acesso a informações de instruções e referência, código de exemplo, artigos técnicos e muito mais. Para localizar o conteúdo de que você precisa, procure o Sumário, use a pesquisa de texto completo ou navegue pelo conteúdo usando o índice de palavra-chave.\</p> |
 | HomePageContentInstallText | \<p>\<br />Use a \<a href="{0}" {1}> guia gerenciar conteúdo \</a> para fazer o seguinte: \<ul> \<li> adicionar conteúdo ao seu computador. \</li> \<li> Verifique se há atualizações para seu conteúdo local. \</li> \<li> Remova o conteúdo do seu computador.\</li>\</ul>\</p> |
@@ -563,7 +563,7 @@ O arquivo de branding.js contém o JavaScript usado pelos elementos de identidad
 
 O pacote de identidade visual contém um conjunto de arquivos HTM que dão suporte a cenários para a comunicação de informações de chave para ajudar os usuários de conteúdo, por exemplo, uma home page que contém uma seção que descreve quais conjuntos de conteúdo são instalados e as páginas que dizem ao usuário quando os tópicos não podem ser encontrados no conjunto de tópicos local. Esses arquivos HTM podem ser modificados por produto.  Os fornecedores de shell ISO são capazes de usar o pacote de identidade visual padrão e alterar o comportamento e o conteúdo dessas páginas para atender às suas necessidades.  Esses arquivos fazem referência ao respectivo pacote de identidade visual para que as marcas de identidade visual obtenham o conteúdo correspondente do arquivo de branding.xml.
 
-|**Arquivo**|**Utilizá**|**Fonte de conteúdo exibida**|
+|**Arquivo**|**Uso**|**Fonte de conteúdo exibida**|
 |-|-|-|
 |homepage.htm|Esta é uma página que exibe o conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Esse arquivo tem o atributo de metadados adicional "Microsoft.Help.Id" content = "-1", que coloca esse conteúdo na parte superior do Sumário de conteúdo local.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, marca\<HomePageTitle>|
@@ -597,7 +597,7 @@ Os arquivos. CSS de identidade visual incluem definições para a apresentação
 
 O conteúdo do Visual Studio exibe um logotipo do Visual Studio, bem como outros gráficos.  A lista completa de arquivos gráficos no pacote de identidade visual do Visualizador da ajuda é mostrada abaixo.
 
-|**Arquivo**|**Utilizá**|**Exemplos**|
+|**Arquivo**|**Uso**|**Exemplos**|
 |-|-|-|
 |clear.gif|Usado para renderizar a área recolhível||
 |footer_slice.gif|Apresentação de rodapé||

@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521232"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114109"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 </ImageManifest>  
 ```  
 
- **Símbolos**  
+ **Symbol**  
 
  Como auxílio à legibilidade e à manutenção, o manifesto da imagem pode usar símbolos para valores de atributo. Os símbolos são definidos da seguinte maneira:  
 
@@ -157,16 +157,14 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
  </Source>  
 ```  
 
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Atributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      Uri      |                                                                                                                                                                                                                                                                                                               Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) usando a autoridade Application:///<br />-Uma referência de recurso de componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo                                                                                                                                                                                                                                                                                                               |
-|  Segundo plano   | Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> <em>Escuro:</em> A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem. |
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|**Atributo**|**Definição**|  
+|-|-|  
+| Uri | Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) usando a autoridade Application:///<br />-Uma referência de recurso de componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo |
+| Segundo plano  | Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> <em>Escuro:</em> A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem. |
 
  Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:  
 
-|**Elemento**|**Atributos (todos obrigatórios)**|**Definição**|  
+|**Element**|**Atributos (todos obrigatórios)**|**Definição**|  
 |-|-|-|  
 |\<Size>|Valor|A fonte será usada para imagens do tamanho determinado (em unidades do dispositivo). A imagem será quadrada.|  
 |\<SizeRange>|MinSize, MaxSize|A fonte será usada para imagens de MinSize para MaxSize (em unidades de dispositivo) inclusivamente. A imagem será quadrada.|  
@@ -437,11 +435,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. Consulte a etapa #1 da "como usar os monikers de imagem em uma nova janela de ferramenta?" seção acima.  
+   2. Consulte a etapa #1 da "como usar os monikers de imagem em uma nova janela de ferramenta?" acima.  
 
 4. O comando para abrir a janela de ferramentas.  
 
-   - Consulte a etapa #2 da "como usar os monikers de imagem em uma nova janela de ferramenta?" seção acima.  
+   - Consulte a etapa #2 da "como usar os monikers de imagem em uma nova janela de ferramenta?" acima.  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Como fazer usar monikers de imagem em um arquivo. vsct?  
  Atualize seu arquivo. vsct conforme indicado pelas linhas comentadas abaixo:  
