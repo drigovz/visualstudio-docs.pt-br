@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Microsoft Docs
+title: 'IDispatchEx:: GetMemberProperties | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 488f8790ec25532fb611f18e8b24e7e7dba2e2f4
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574092"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144540"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Recupera as propriedades de um membro.  
@@ -37,7 +37,7 @@ HRESULT GetMemberProperties(
 );  
 ```  
   
-#### <a name="parameters"></a>Parâmetros  
+#### <a name="parameters"></a>parâmetros  
  `id`  
  Identifica o membro. Usa `GetDispID` ou `GetNextDispID` para obter o identificador de expedição.  
   
@@ -74,7 +74,7 @@ HRESULT GetMemberProperties(
 ## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|||  
+|Valor|Significado|
 |-|-|  
 |`S_OK`|Êxito.|  
 |`DISP_E_UNKNOWNNAME`|O nome não era conhecido.|  
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
-   de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>Confira também  
+ [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

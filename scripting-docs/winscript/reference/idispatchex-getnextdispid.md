@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: 'IDispatchEx:: GetNextDispID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997318"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144423"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -38,32 +38,32 @@ HRESULT GetNextDispID(
 );
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 `grfdex`\
-Determina qual conjunto de itens a serem enumerados. Isso pode ser uma combinação dos seguintes valores:
+Determina qual conjunto de itens deve ser enumerado. Isso pode ser uma combinação dos seguintes valores:
 
 |Valor|Significado|
 |-----------|-------------|
-|fdexEnumDefault|Solicita que o objeto enumera os elementos padrão. O objeto tem permissão para enumerar qualquer conjunto de elementos.|
-|fdexEnumAll|Solicita que o objeto enumera todos os elementos. O objeto tem permissão para enumerar qualquer conjunto de elementos.|
+|fdexEnumDefault|Solicita que o objeto enumere os elementos padrão. O objeto tem permissão para enumerar qualquer conjunto de elementos.|
+|fdexEnumAll|Solicita que o objeto Enumere todos os elementos. O objeto tem permissão para enumerar qualquer conjunto de elementos.|
 
 `id`\
-Identifica o membro atual. GetNextDispID recupera o item na enumeração depois deste. Usa GetDispID ou uma chamada anterior a GetNextDispID para obter esse identificador. Usa o valor DISPID_STARTENUM para obter o identificador do primeiro item da primeira.
+Identifica o membro atual. GetNextDispID recupera o item na enumeração após este. Usa getdispid ou uma chamada anterior para GetNextDispID para obter esse identificador. Usa o valor DISPID_STARTENUM para obter o primeiro identificador do primeiro item.
 
 `pid`\
 Endereço de uma variável DISPID que recebe o identificador do próximo item na enumeração.
 
-Se um membro for excluído pelo `DeleteMemberByName` ou `DeleteMemberByDispID`, o `DISPID` deve permanecer válida para `GetNextDispID`.
+Se um membro for excluído pelo `DeleteMemberByName` ou `DeleteMemberByDispID` , o `DISPID` precisa permanecer válido para `GetNextDispID` .
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes valores:
 
-|||
+|Valor|Significado|
 |-|-|
 |`S_OK`|Êxito.|
-|`S_FALSE`|Enumeração é feita.|
+|`S_FALSE`|A enumeração é feita.|
 
 ## <a name="example"></a>Exemplo
 
@@ -88,7 +88,7 @@ Retorna um dos seguintes valores:
    }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)
 - [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)

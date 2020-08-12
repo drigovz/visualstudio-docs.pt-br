@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576619"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144591"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Exclui um membro por nome.  
@@ -36,12 +36,12 @@ HRESULT DeleteMemberByName(
   
 ```  
   
-#### <a name="parameters"></a>Parâmetros  
+#### <a name="parameters"></a>parâmetros  
  `bstrName`  
  Nome do membro a ser excluído.  
   
  `grfdex`  
- Determina se o nome do membro diferencia maiúsculas de minúsculas. Isso pode ser um dos seguintes valores:  
+ Determina se o nome do membro diferencia maiúsculas de minúsculas. Esse valor pode ser um dos seguintes:  
   
 |Valor|Significado|  
 |-----------|-------------|  
@@ -51,13 +51,13 @@ HRESULT DeleteMemberByName(
 ## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|||  
+|Valor|Significado|
 |-|-|  
 |`S_OK`|Êxito.|  
 |`S_FALSE`|O membro existe, mas não pode ser excluído.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o membro for excluído, o DISPID precisa permanecer válido por `GetNextDispID`.  
+ Se o membro for excluído, o DISPID precisa permanecer válido para `GetNextDispID` .  
   
  Se um membro com um determinado nome for excluído e posteriormente um membro com o mesmo nome for recriado, o DISPID deverá ser o mesmo. (Se os membros que diferem apenas em maiúsculas e minúsculas são os "mesmos" dependentes do objeto.)  
   
@@ -71,5 +71,5 @@ IDispatchEx *pdex;
 pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Confira também  
  [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)

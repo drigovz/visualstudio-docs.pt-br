@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286824"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144682"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -34,9 +34,14 @@ Aqui estão exemplos de topologias comuns de ambientes de laboratório:
 |![Ambiente de laboratório de nuvem](../media/topology_cloud.png)| Esse ambiente de laboratório fornece funcionalidades e recursos semelhantes que a _topologia de rede_, mas remove a necessidade de máquinas virtuais ou computadores físicos em execução em um ambiente local, o que pode reduzir o tempo de configuração, simplificar a manutenção e minimizar o custo. Configurar vários sites e máquinas virtuais, junto o serviço de rede personalizado, é rápido e fácil em um ambiente de nuvem como o Microsoft Azure.|
 |![Ambiente de laboratório de cliente-servidor](../media/topology_clientserver.png)| Este ambiente de laboratório te uma *topologia cliente/servidor*, frequentemente usada para testar um aplicativo com componentes de servidor e de cliente. Em uma topologia cliente/servidor, todos os computadores cliente e servidor usados para testar seu aplicativo estão em seu ambiente de laboratório. Quando você usa essa topologia, pode coletar dados de teste de cada computador que impacta seus testes.|
 
-| | |
-|---|---|
-| ![ícone de câmera para vídeo](../../install/media/video-icon.png) | [Assistir a um vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre como gerenciar ambientes de laboratório para teste. |
+:::row:::
+    :::column:::
+        ![ícone de câmera para vídeo](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Assistir a um vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre como gerenciar ambientes de laboratório para teste.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usar a nuvem com o Azure Pipelines ou o Team Foundation Server Build and Release
 
@@ -108,7 +113,7 @@ Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No ent
 |Salvar e implantar o estado de um ambiente de laboratório usando instantâneos de ambiente|Com suporte|Sem suporte|
 |Criar ambientes de laboratório a partir de modelos VM|Com suporte|Sem suporte|
 |Ambiente de início/parada/instantâneo|Com suporte|Sem suporte|
-|Conecte-se ao ambiente usando o Visualizador de Ambiente|Suportado|Com suporte|
+|Conecte-se ao ambiente usando o Visualizador de Ambiente|Suportado|Suportado|
 |Executa várias cópias de um ambiente ao mesmo tempo usando isolamento de rede|Com suporte|Sem suporte|
 
 ### <a name="lab-management-concepts"></a>Conceitos de Lab Management
@@ -139,7 +144,7 @@ Para saber mais sobre como configurar ambientes, veja:
 * [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
 * [Guia do Lab Management do Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

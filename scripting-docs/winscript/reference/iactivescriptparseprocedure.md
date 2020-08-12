@@ -13,22 +13,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c20947a125766547565d99c5762c20e23652da1a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3567a22eac2ad270739e62e0f0fb9914bdf4a9ec
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561674"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144565"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Se o mecanismo de script do Windows permitir que o texto do código-fonte de procedimentos seja adicionado ao script, ele implementará a interface `IActiveScriptParseProcedure`. Para linguagens de script interpretadas que não têm um ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse` ou `IPersist` *) para adicionar procedimentos de script ao namespace.  
+Se o mecanismo de script do Windows permitir que o texto do código-fonte de procedimentos seja adicionado ao script, ele implementará a `IActiveScriptParseProcedure` interface. Para linguagens de script interpretadas que não têm um ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse` ou `IPersist` *) para adicionar procedimentos de script ao namespace.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
-|||  
-|-|-|  
-|Método|Descrição|  
+|Método|Descrição|
+|-|-|
 |[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Analisa o procedimento de código fornecido e adiciona o procedimento ao namespace.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Confira também  
  [Interfaces de script ativo](../../winscript/reference/active-script-interfaces.md)

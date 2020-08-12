@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName | Microsoft Docs
+title: 'IDispatchEx:: GetMemberName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574102"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144604"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Recupera o nome de um membro.  
@@ -36,7 +36,7 @@ HRESULT GetMemberName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parâmetros  
+#### <a name="parameters"></a>parâmetros  
  `id`  
  Identifica o membro. Usa `GetDispID` ou `GetNextDispID` para obter o identificador de expedição.  
   
@@ -46,7 +46,7 @@ HRESULT GetMemberName(
 ## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|||  
+|Valor|Significado|
 |-|-|  
 |`S_OK`|Êxito.|  
 |`DISP_E_UNKNOWNNAME`|O nome não era conhecido.|  
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
-   de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>Confira também  
+ [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

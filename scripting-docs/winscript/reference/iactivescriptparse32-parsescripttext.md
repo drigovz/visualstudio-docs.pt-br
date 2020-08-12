@@ -10,12 +10,12 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 9fd497dcda7e40cf0dbe6409193019ddae84c80b
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835362"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144396"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analisa o scriptlet de código fornecido, adicionando declarações ao namespace e avaliando o código conforme apropriado.  
@@ -38,7 +38,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parâmetros  
   
-|||  
+| Parâmetro | Descrição |  
 |-|-|  
 |`pstrCode`|no Endereço do texto de scriptlet a ser avaliado. A interpretação dessa cadeia de caracteres depende da linguagem de script.|  
 |`pstrItemName`|no Endereço do nome do item que fornece o contexto no qual o scriptlet deve ser avaliado. Se esse parâmetro for nulo, o código será avaliado no contexto global do mecanismo de script.|  
@@ -54,15 +54,15 @@ HRESULT ParseScriptText(
 |SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante essa chamada deve ser salvo se o mecanismo de script for salvo (por exemplo, por meio de uma chamada para `IPersist*::Save` ) ou se o mecanismo de script for redefinido por meio de uma transição de volta para o estado inicializado.|  
 |SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve estar visível (e, portanto, pode ser chamado por nome) como um método global no espaço de nome do script.|  
   
-|||  
+| Parâmetro | Descrição |  
 |-|-|  
 |`pvarResult`|fora Endereço de um buffer que recebe os resultados do processamento de scriptlet, ou `NULL` se o chamador não espera nenhum resultado (ou seja, o valor de SCRIPTTEXT_ISEXPRESSION não está definido).|  
 |`pexcepinfo`|fora Endereço de uma estrutura que recebe informações de exceção. Essa estrutura será preenchida se o `IActiveScriptParse::ParseScriptText` retornar DISP_E_EXCEPTION.|  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor Retornado|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`DISP_E_EXCEPTION`|Ocorreu uma exceção no processamento do scriptlet. O `pexcepinfo` parâmetro contém informações sobre a exceção.|  
