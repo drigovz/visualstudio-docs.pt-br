@@ -1,5 +1,5 @@
 ---
-title: Atualizar o Visual Studio usando um layout mínimo de offline
+title: Atualizar o Visual Studio usando um layout offline mínimo
 description: Saiba como atualizar o Visual Studio usando um layout mínimo de offline.
 ms.date: 07/21/2020
 ms.custom: seodec18
@@ -12,14 +12,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869872"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168743"
 ---
-# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Atualizar o Visual Studio usando um layout mínimo de offline
+# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Atualizar o Visual Studio usando um layout offline mínimo
 
 Para computadores que não estão conectados à Internet, a criação de um layout mínimo é a maneira mais fácil e rápida de atualizar suas instâncias offline do Visual Studio.
 
@@ -56,12 +56,13 @@ Essa ferramenta cria layouts de atualização para o Visual Studio 2017 (15,9) e
 #### <a name="commands"></a>Comandos
 * **Visualização**: Use este comando para visualizar quantos pacotes serão baixados e o espaço total usado para criar esse layout. 
 * **Gerar**: Use este comando para gerar o layout mínimo para atualizar o Visual Studio.
-* **Regenerar**: Use este comando para regenerar um layout usando um arquivo de resposta de layout mínimo existente. Cada layout mínimo produz um `MinimalLayout.json` arquivo de resposta, que contém os parâmetros de entrada de layout mínimos originais. Você pode usar o comando **regenerar** e um `MinimalLayout.json` arquivo de resposta para regenerar o layout mínimo. Isso será útil se você quiser criar um layout mínimo para uma nova atualização do Visual Studio com base no arquivo de resposta do layout mínimo anterior. 
-   - Para esse comando, `MinimalLayout.json` é necessário um caminho de arquivo de um layout já gerado. 
+* **Regenerar**: Use este comando para regenerar um layout usando um arquivo de resposta de layout mínimo existente. Cada layout mínimo produz um `MinimalLayout.json` arquivo de resposta, que contém os parâmetros de entrada de layout mínimos originais. Você pode usar o comando **regenerar** e um `MinimalLayout.json` arquivo de resposta para regenerar o layout mínimo. Isso será útil se você quiser criar um layout mínimo para uma nova atualização do Visual Studio com base no arquivo de resposta do layout mínimo anterior.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Para esse comando, `MinimalLayout.json` é necessário um caminho de arquivo de um layout já gerado. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Verificar**: Use este comando para determinar se a pasta de layout está corrompida.
 * **Correção**: Use esse comando para corrigir uma pasta de layout corrompida, incluindo a substituição de pacotes ausentes da pasta de layout.
@@ -177,7 +178,7 @@ A atualização é aplicada a uma instância do Visual Studio em duas etapas. Co
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

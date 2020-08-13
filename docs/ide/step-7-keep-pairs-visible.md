@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579297"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168717"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Etapa 7: Manter os pares visíveis
 O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que não correspondam. Porém, considere o que deve acontecer quando o jogador escolher um par correspondente. Em vez de fazer os ícones desaparecerem ativando o temporizador (usando o método <xref:System.Windows.Forms.Timer.Start>), o jogo deve redefinir a si próprio para que ele não acompanhe mais nenhum rótulo usando as variáveis de referência `firstClicked` e `secondClicked`, sem redefinir as cores dos dois rótulos que foram escolhidos.
@@ -30,12 +30,12 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
 
-       > [!IMPORTANT]
-       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     > [!IMPORTANT]
+     > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho de código C# ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     A primeira linha da instrução `if` que você acabou de adicionar verifica se o ícone no primeiro rótulo que o jogador escolhe é igual ao ícone no segundo rótulo. Se os ícones forem idênticos, o programa executará as três instruções entre as chaves no C# ou as três instruções na instrução `if` do Visual Basic. As primeiras duas instruções redefinem as variáveis de referência `firstClicked` e `secondClicked` para que elas não acompanhem mais nenhum dos rótulos. (Você pode reconhecer essas duas declarações <xref:System.Windows.Forms.Timer.Tick> do manipulador de eventos do temporizador.) A terceira declaração é uma `return` declaração, que diz ao programa para pular o resto das declarações no método sem executá-las.
+     A primeira linha da instrução `if` que você acabou de adicionar verifica se o ícone no primeiro rótulo que o jogador escolhe é igual ao ícone no segundo rótulo. Se os ícones forem idênticos, o programa executará as três instruções entre as chaves no C# ou as três instruções na instrução `if` do Visual Basic. As primeiras duas instruções redefinem as variáveis de referência `firstClicked` e `secondClicked` para que elas não acompanhem mais nenhum dos rótulos. (Você pode reconhecer essas duas instruções do manipulador de eventos do temporizador <xref:System.Windows.Forms.Timer.Tick> .) A terceira instrução é uma `return` instrução, que diz ao programa para ignorar o restante das instruções no método sem executá-las.
 
-     Se a programação em C#, você deve ter notado que`=`parte do código usa um`==`único sinal igual ( ), enquanto outras instruções usam dois sinais iguais ( ). Leve em consideração por que `=` é usado em alguns locais, mas `==` é usado em outros.
+     Se estiver programando em C#, talvez você tenha notado que parte do código usa um único sinal de igual ( `=` ), enquanto outras instruções usam dois sinais de igual ( `==` ). Leve em consideração por que `=` é usado em alguns locais, mas `==` é usado em outros.
 
      Esse é um bom exemplo que mostra a diferença. Observe atentamente o código entre os parênteses na instrução `if`.
 
@@ -57,15 +57,15 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
     firstClicked = null;
     ```
 
-     A primeira dessas duas instruções verifica se dois ícones são iguais. Como dois valores estão sendo comparados, o programa C# usa o operador de `==` igualdade. A segunda instrução realmente altera o valor (chamado *atribuição*), definindo a variável de referência `firstClicked` igual a `null` para redefini-la. Por esse motivo, ela usa o operador de atribuição `=` no lugar. C# `=` usa para definir `==` valores, e para compará-los. O Visual Basic usa `=` para atribuição de variável e comparação.
+     A primeira dessas duas instruções verifica se dois ícones são iguais. Como dois valores estão sendo comparados, o programa C# usa o `==` operador de igualdade. A segunda instrução realmente altera o valor (chamado *atribuição*), definindo a variável de referência `firstClicked` igual a `null` para redefini-la. Por esse motivo, ela usa o operador de atribuição `=` no lugar. O C# usa `=` para definir valores e `==` compará-los. O Visual Basic usa `=` para atribuição de variável e comparação.
 
-2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par `if` correspondente, a nova declaração será executada e a declaração de retorno faz com que o método pule o código que inicia o temporizador, para que os ícones permaneçam visíveis, como mostrado na imagem a seguir.
+2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par correspondente, a nova `if` instrução será executada e a instrução de retorno fará com que o método ignore o código que inicia o temporizador, para que os ícones fiquem visíveis, conforme mostrado na imagem a seguir.
 
      ![Jogo criado neste tutorial](../ide/media/express_finishedgame.png)<br/>
-***Jogo correspondente*** *com pares de ícones visíveis*
+***Jogo de correspondência*** *com pares de ícones visíveis*
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[Passo 8: Adicione um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**.
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 8: adicionar um método para verificar se o jogador venceu](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**.
 
-- Para retornar à etapa tutorial anterior, consulte [Passo 6: Adicione um temporizador](../ide/step-6-add-a-timer.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 6: adicionar um temporizador](../ide/step-6-add-a-timer.md).

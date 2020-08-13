@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114252"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168730"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -445,7 +445,7 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 
 **Branding.xml**
 
-| Recurso | Descrição |
+| Elemento | Descrição |
 | - | - |
 | Recurso: | **CollapsibleArea** |
 | Use: | Expande recolhe o texto de controle de conteúdo |
