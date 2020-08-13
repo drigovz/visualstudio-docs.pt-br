@@ -1,7 +1,7 @@
 ---
 title: Configurações de confiança de arquivos e pastas
 description: Saiba como alterar as configurações de confiança de arquivos e pastas para proteger o Visual Studio.
-author: abuchholtzau
+author: 2percentsilk
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
+ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62789614"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88197384"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Definir configurações de confiança de arquivos e pastas
 
@@ -31,7 +31,7 @@ O Visual Studio solicita a aprovação do usuário antes de abrir projetos que t
 
 Para alterar as configurações de confiança, siga estas etapas:
 
-1. Abrir **ferramentas** > **Opções De** > **confiança Configurações** e selecionar o link Configurar **configurações de confiança** no painel à direita.
+1. Abra **ferramentas**  >  **Opções**  >  **configurações de confiança** e selecione o link **definir configurações de confiança** no painel à direita.
 
 2. Escolha o nível das verificações que você gostaria de ter para os arquivos e pastas. É possível ter verificações diferentes para cada um deles. As opções são:
 
@@ -47,7 +47,7 @@ Para alterar as configurações de confiança, siga estas etapas:
 
 Para adicionar caminhos confiáveis, siga estas etapas:
 
-1. Abrir **ferramentas** > **Opções De** > **confiança Configurações** e selecionar o link Configurar **configurações de confiança** no painel à direita.
+1. Abra **ferramentas**  >  **Opções**  >  **configurações de confiança** e selecione o link **definir configurações de confiança** no painel à direita.
 
 2. Clique em **Adicionar** na caixa de diálogo **Configurações de Confiança** e, em seguida, selecione **Arquivo** ou **Pasta**.
 
@@ -61,7 +61,7 @@ Para adicionar caminhos confiáveis, siga estas etapas:
 
 Para remover caminhos confiáveis, siga estas etapas:
 
-1. Abrir **ferramentas** > **Opções De** > **confiança Configurações** e selecionar o link Configurar **configurações de confiança** no painel à direita.
+1. Abra **ferramentas**  >  **Opções**  >  **configurações de confiança** e selecione o link **definir configurações de confiança** no painel à direita.
 
 2. Selecione o caminho que gostaria de remover na lista **Caminhos Confiáveis** e, em seguida, clique em **Remover**.
 
