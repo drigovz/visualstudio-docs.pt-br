@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Suspensão automática de recursos
               href: automatic-feature-suspension.md
+            - name: Avisos de publicação
+              items:
+                - name: Visão geral
+                  displayName: publish warnings
+                - name: 'IL3000: evite usar o acesso ao Caminho do arquivo do assembly na publicação como um arquivo único'
+                  href: il3000.md
