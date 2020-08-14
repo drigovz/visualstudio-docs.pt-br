@@ -1,25 +1,25 @@
 ---
 title: Dicas para melhorar o desempenho
-ms.date: 08/14/2018
+ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303018"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214592"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
 As recomendações de desempenho do Visual Studio destinam-se a situações de baixa memória, o que podem ocorrer em casos raros. Nessas situações, é possível otimizar determinados recursos do Visual Studio que você talvez não esteja usando. As dicas a seguir não devem ser consideradas como as recomendações gerais.
 
 > [!NOTE]
-> Se você estiver tendo dificuldade em usar o produto por causa de problemas de memória, avise-nos através da [ferramenta de feedback](../ide/how-to-report-a-problem-with-visual-studio.md).
+> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, informe-nos por meio da [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Usar um sistema operacional de 64 bits
 
@@ -33,23 +33,23 @@ O Visual Studio reabre automaticamente os documentos que foram deixados abertos 
 
 O Visual Studio notifica você em uma barra amarela quando a restauração automática de documentos está fazendo com que a solução seja carregada de maneira significativamente mais lenta. Você pode desabilitar a reabertura de arquivo automática seguindo estas etapas:
 
-1. Selecione **Opções de** > **ferramentas** para abrir a caixa de diálogo **Opções.**
+1. Selecione **ferramentas**  >  **Opções** para abrir a caixa de diálogo **Opções** .
 
-1. Na página **Projetos e Solução** > **Geral,** desmarque **Reabrir documentos na carga de solução**.
+1. Na página geral de **projetos e soluções**  >  **General** , desmarque **reabrir documentos na carga da solução**.
 
 Caso você desabilite a restauração automática de arquivos, uma maneira rápida de navegar para os arquivos que deseja abrir é usar um dos comandos [Ir para](../ide/go-to.md):
 
 - Para a funcionalidade **Ir para** general, selecione **Editar** > **Ir para** > **Ir para Todos** ou pressione **Ctrl**+**T**.
 
-- Pule para o último local de edição em uma solução usando **Edit** > **Go To** > **Go To Last Edit Location**ou pressionando **Ctrl**+**Shift**+**Backspace**.
+- Vá para o último local de edição em uma solução usando **Editar**  >  **ir para**  >  **ir para o último local de edição**ou pressionando **Ctrl** + **Shift** + **Backspace**.
 
-- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar** > **ir para** > **ir para arquivo recente,** ou pressionar **Ctrl**+**1**, **Ctrl**+**R**.
+- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar**  >  **ir**para  >  **ir para arquivo recente**ou pressione **Ctrl** + **1**, **Ctrl** + **R**.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
 
 Se você tem ficado com pouca memória durante as sessões de depuração normalmente, você pode otimizar o desempenho fazendo uma ou mais alterações de configuração.
 
-- **Habilite apenas meu código**
+- **Habilitar Apenas Meu Código**
 
     A otimização mais simples é habilitar o recurso **Apenas Meu Código**, que só carrega símbolos para o seu projeto. Habilitar esse recurso pode resultar em uma economia significativa de memória para depurar aplicativos gerenciados (.NET). Esta opção já fica habilitada por padrão em alguns tipos de projeto.
 
@@ -57,11 +57,11 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
 - **Especificar os símbolos a serem carregados**
 
-    Para depuração nativa, o carregamento de arquivos de símbolos *(.pdb)* é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
+    Para a depuração nativa, carregar arquivos de símbolo (*. pdb*) é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
 
-    Para especificar o carregamento de**símbolos,** escolha **Símbolos** > de**depuração de** > **opções** > de ferramentas .
+    Para especificar o carregamento de símbolos, escolha **ferramentas**  >  **Opções**  >  **Debugging**  >  **símbolos**de depuração.
 
-    Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **Depurar** > **módulos do****Windows** > .)
+    Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **depurar**  >  **Windows**  >  **Módulos**.)
 
     Para obter mais informações, consulte [Noções básicas sobre arquivos de símbolo](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
 
@@ -84,7 +84,7 @@ Algumas ferramentas ou extensões podem ser desabilitadas para melhorar o desemp
 
 Para obter mais informações sobre as considerações de desempenho do .NET Compiler Platform (“Roslyn"), consulte [Considerações de desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-- **Desativar a análise completa da solução**
+- **Desabilitar análise de solução completa**
 
     O Visual Studio executa a análise em toda a sua solução para proporcionar uma experiência avançada sobre os erros antes de invocar um build. Esse recurso é útil para identificar erros assim que possível. No entanto, para soluções grandes, esse recurso pode consumir recursos significativos de memória. Se você estiver tendo problemas semelhantes ou pressão de memória, desabilite essa experiência para liberar esses recursos. Por padrão, essa opção é habilitada para o Visual Basic e desabilitada para C#.
 
@@ -117,11 +117,25 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
    ::: moniker-end
 
+- **Desabilitar modo de mapa**
+
+    O [**modo de mapa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) exibe linhas de código, em miniatura, na barra de rolagem. O modo de mapa está habilitado por padrão.
+
+    Para desabilitar o modo de mapa, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **barras de rolagem**e, na seção **comportamento** , desmarque a opção **usar modo de mapa para barra de rolagem vertical** .
+
+- **Desabilitar quebra automática de palavra**
+
+    [**Quebra automática**](./reference/how-to-manage-word-wrap-in-the-editor.md) de linha exibe a parte de um longo trecho de código que se estende além da largura atual da janela do editor de código. A quebra automática de texto está ativada por padrão.
+
+    Para desabilitar a quebra automática de texto de um projeto no qual você está trabalhando no momento, vá para **Editar**  >  **Advanced**  >  **quebra automática de palavra**avançada. (Você pode alternar essa configuração usando os mesmos comandos de menu.)
+
+    Para desabilitar a quebra automática de palavra para todos os projetos, vá para **ferramentas**  >  **Opções**  >  **General**  >  **Editor de texto**geral  >  **todos os idiomas**  >  **geral**e, na seção **configurações** , desmarque a opção **quebra automática de palavra** .
+
 - **Desabilitar o XAML Designer**
 
-    O designer XAML é habilitado por padrão, mas só consome recursos se você abrir um arquivo *.xaml.* Se você trabalha com arquivos XAML, mas não quer usar a funcionalidade do designer, desabilite esse recurso para liberar memória.
+    O designer XAML é habilitado por padrão, mas só consome recursos se você abrir um arquivo *. XAML* . Se você trabalha com arquivos XAML, mas não quer usar a funcionalidade do designer, desabilite esse recurso para liberar memória.
 
-    Para desabilitar o **Designer XAML**, acesse **Ferramentas** > **Opções** > **Designer XAML** > **Habilitar o Designer XAML** e desmarque a opção.
+    Para desabilitar designer XAML, vá para **ferramentas**  >  **Opções**  >  **Designer XAML**  >  **Habilitar designer XAML**e desmarque a opção.
 
 - **Remover as cargas de trabalho**
 
@@ -129,9 +143,9 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
 ## <a name="force-a-garbage-collection"></a>Forçar uma coleta de lixo
 
-O CLR usa um sistema de gerenciamento de memória de coleta de lixo. Nesse sistema, às vezes a memória é usada pelos objetos que não são mais necessários. Esse estado é temporário. O coletor de lixo liberará esta memória com base em seu desempenho e a heurística de uso de recursos. Você pode forçar o CLR a coletar a memória não utilizada usando uma tecla de atalho no Visual Studio. Se houver uma quantidade significativa de lixo esperando pela coleta e você forçar uma coleta de lixo, você deve ver o uso da memória do processo *devenv.exe* cair no **Task Manager**. Raramente é necessário usar esse método. No entanto, após uma operação cara (como um build completo, sessão de depuração ou um evento de abertura de solução), ele pode ajudar a determinar a quantidade de memória que realmente está sendo usado pelo processo. Como o Visual Studio é misto (gerenciado e nativo), geralmente é possível que o alocador nativo e o coletor de lixo disputem pelos recursos de memória limitada. Em condições de alto uso de memória, pode ser útil forçar o coletor de lixo a ser executado.
+O CLR usa um sistema de gerenciamento de memória de coleta de lixo. Nesse sistema, às vezes a memória é usada pelos objetos que não são mais necessários. Esse estado é temporário. O coletor de lixo liberará esta memória com base em seu desempenho e a heurística de uso de recursos. Você pode forçar o CLR a coletar a memória não utilizada usando uma tecla de atalho no Visual Studio. Se houver uma quantidade significativa de lixo aguardando pela coleta e você forçar uma coleta de lixo, você deverá ver o uso de memória da queda de *devenv.exe* processo no **Gerenciador de tarefas**. Raramente é necessário usar esse método. No entanto, após uma operação cara (como um build completo, sessão de depuração ou um evento de abertura de solução), ele pode ajudar a determinar a quantidade de memória que realmente está sendo usado pelo processo. Como o Visual Studio é misto (gerenciado e nativo), geralmente é possível que o alocador nativo e o coletor de lixo disputem pelos recursos de memória limitada. Em condições de alto uso de memória, pode ser útil forçar o coletor de lixo a ser executado.
 
-Para forçar uma coleta de lixo, use a tecla: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (pressione-o duas vezes).
+Para forçar uma coleta de lixo, use a tecla de atalho: **Ctrl** + **ALT** + **Shift** + **F12**, **Ctrl** + **ALT** + **Shift** + **F12** (pressione-a duas vezes).
 
 Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, relate isso na ferramenta de comentários do Visual Studio, pois esse comportamento provavelmente trata-se de um bug.
 

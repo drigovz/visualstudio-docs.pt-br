@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 9d6fd5ffefcd6696fa67302a8d59fd46e498a472
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950600"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214700"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
 
@@ -55,7 +55,7 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
 3. Escolha a guia **selecionar de registrado** e pressione o botão **Adicionar** :
 
-    ![](media/version-control-git5.png)
+    ![Caixa de diálogo Adicionar um repositório registrado.](media/version-control-git5.png)
 
 4. Digite o nome do repositório como você gostaria de exibi-lo localmente e cole a URL da etapa 3. A caixa de diálogo de Configuração do repositório deve ser semelhante ao seguinte. Pressione OK:
 
@@ -163,6 +163,6 @@ Se houver problemas ao inicializar seu projeto com um repositório remoto vazio,
 1. Navegue para o menu de Controle de versão e escolha **Publicar no controle de versão**.
 1. Siga as etapas do tutorial acima a partir da etapa 6.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Controle de versão no Visual Studio (no Windows)](/visualstudio/version-control/)

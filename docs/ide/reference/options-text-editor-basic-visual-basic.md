@@ -1,6 +1,6 @@
 ---
 title: Opções, Editor de Texto, Basic (VB), Avançado
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,26 +13,26 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431469"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214640"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
 
 ## <a name="analysis"></a>Análise
 
-- Análise de código ao vivo ou escopo de análise de antecedentes
+- Análise de código ao vivo ou escopo de análise em segundo plano
 
-   Configure o escopo de análise de fundo para código gerenciado. Para obter mais informações, [consulte Como: Configurar o escopo de análise de código ao vivo para código gerenciado](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
+   Configure o escopo de análise em segundo plano para código gerenciado. Para obter mais informações, consulte [como: configurar o escopo de análise de código ao vivo para código gerenciado](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Usando diretivas
 
@@ -55,7 +55,7 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 
  **Habilitar realce de referências e palavras-chave**
 
-O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências destacadas ou palavras-chave pressionando **ctrl** + **shift** + **seta para baixo** ou**seta** **Ctrl** + **Shift** + Up .
+O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências realçadas ou palavras-chave pressionando **Ctrl**  +  **Shift**  +  **seta para baixo** ou **Ctrl**  +  **Shift**  +  **seta para cima**.
 
 ## <a name="outlining"></a>Estrutura de tópicos
 
@@ -65,7 +65,7 @@ Ao abrir um arquivo no editor de código, você pode exibir o documento no modo 
 
 **Mostrar separadores de linha do procedimento**
 
-O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto em locais listados na tabela a seguir:
+O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *. vb* do seu projeto nos locais listados na tabela a seguir:
 
 |Local no arquivo de origem .vb|Exemplo de local da linha|
 |---------------------------------|------------------------------|
@@ -78,6 +78,13 @@ O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenha
 Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código. Por exemplo, você verá uma linha entre `Sub` e `EndSub` em uma instrução `Sub`.
 
 ## <a name="editor-help"></a>Ajuda do Editor
+
+::: moniker range=">=vs-2019"
+**Dicas de nome de parâmetro embutido**    
+Quando selecionado, insere dicas de nome de parâmetro para literais, literais convertidos e instanciações de objeto antes de cada argumento nas chamadas de função.  
+
+![Dicas de nome de parâmetro embutido para Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **Reformatação automática do código** O editor de texto reformata seu código conforme o necessário. Quando essa opção é selecionada, o editor de códigos:
 
@@ -97,7 +104,7 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 
 **Inserção automática de constructos finais**
 
-Quando você digita — por exemplo, a `Sub Main`primeira linha de uma declaração `End Sub` de procedimento — e **pressiona Enter**, o editor de texto adiciona uma linha correspondente. Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
+Quando você digita, por exemplo, a primeira linha de uma declaração de procedimento, `Sub Main` — e pressiona **Enter**, o editor de texto adiciona uma linha correspondente `End Sub` . Da mesma forma, se você adicionar um loop [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), o editor de texto adicionará uma instrução `Next` correspondente. Quando essa opção é selecionada, o editor de código adiciona automaticamente o constructo final.
 
 **Inserção automática de membros Interface e MustOverride**
 

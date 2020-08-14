@@ -1,21 +1,21 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181060"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214686"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -128,12 +128,18 @@ Use a página de opções **Avançado** para modificar as configurações de for
 Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves ( **{}** ) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções no nível do código.
 
 ## <a name="editor-help"></a>Ajuda do Editor
-
+::: moniker range=">=vs-2019"
+- Dicas de nome de parâmetro embutido 
+    
+    Quando selecionado, insere dicas de nome de parâmetro para literais, literais convertidos e instanciações de objeto antes de cada argumento nas chamadas de função.  
+    
+    ![Dicas de nome de parâmetro embutido para CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - Gerar comentários da documentação XML para ///
 
    Quando selecionado, insere os elementos XML dos comentários da documentação XML depois que você digita a introdução de comentário `///`. Para obter mais informações sobre a documentação XML, confira [Comentários da documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentários de documentação XML (guia de programação C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
