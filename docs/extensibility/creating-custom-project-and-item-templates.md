@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c702aaaa51d86e2b8aac18a6b55201be03a635f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903326"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248581"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Criar modelos de item e projeto personalizados
 
@@ -72,9 +72,9 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
 
 1. Crie um projeto VSIX. Para obter mais informações, consulte [modelo de projeto VSIX](../extensibility/vsix-project-template.md).
 
-2. Defina o projeto VSIX como o projeto de inicialização. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX, clique com o botão direito do mouse e selecione **definir como projeto de inicialização**.
+2. Defina o projeto VSIX como o projeto de inicialização. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX, selecione e mantenha pressionado (ou clique com o botão direito do mouse) e selecione **definir como projeto de inicialização**.
 
-3. Defina o projeto de modelo de projeto como um ativo do projeto VSIX. Abra o arquivo *. vsixmanifest* . Vá para a guia **ativos** e clique em **novo**.
+3. Defina o projeto de modelo de projeto como um ativo do projeto VSIX. Abra o arquivo *. vsixmanifest* . Vá para a guia **ativos** e selecione **novo**.
 
     1. Defina o campo de **tipo** para **Microsoft. VisualStudio. ProjectTemplate** ou **Microsoft. VisualStudio. ItemTemplate**.
 
@@ -82,9 +82,9 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
 
 4. Compile a solução e pressione **F5**. A instância experimental é exibida.
 
-5. Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na caixa de diálogo **novo projeto** (**arquivo**  >  **novo**  >  **projeto**), no nó Visual C# ou Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo **Adicionar novo item** . Para exibir a caixa de diálogo **Adicionar novo item** , na **Gerenciador de soluções**, selecione o nó do projeto e clique em **Adicionar**  >  **novo item**).
+5. Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na caixa de diálogo **novo projeto** (**arquivo**  >  **novo**  >  **projeto**), no nó Visual C# ou Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo **Adicionar novo item** . Para exibir a caixa de diálogo **Adicionar novo item** , na **Gerenciador de soluções**, selecione o nó do projeto e selecione **Adicionar**  >  **novo item**).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de modelo do Visual Studio](../ide/creating-project-and-item-templates.md)
 - [Pacotes NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

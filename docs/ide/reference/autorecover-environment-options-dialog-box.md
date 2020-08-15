@@ -1,6 +1,6 @@
 ---
 title: AutoRecover, Caixa de diálogo Opções, Ambiente
-ms.date: 11/04/2016
+ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -17,27 +17,42 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585659"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250296"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Caixa de diálogo AutoRecuperação, Ambiente, Opções
 
 Use essa página da caixa de diálogo **Opções** para especificar se o backup automático dos arquivos deve ser feito ou não. Especifique também se deseja restaurar os arquivos modificados caso o Visual Studio seja desligado inesperadamente.
 
-Acesse essa caixa de diálogo selecionando o menu **Ferramentas**, escolhendo **Opções** e, em seguida, clicando em **Ambiente** > **AutoRecuperação**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
+Para acessar essa caixa de diálogo, acesse **ferramentas**  >  **Opções**  >  **ambiente**de  >  **recuperação automática**.
+
+:::image type="content" source="media/autorecover-options.png" alt-text="Captura de tela da seção AutoRecuperação na caixa de diálogo opções":::
 
 **Salvar informações de AutoRecuperação a cada [n] minutos**
 
-Use esta opção para personalizar a frequência com que um arquivo é salvo automaticamente no editor. Para arquivos já salvos, uma cópia do arquivo é salva em *%USERPROFILE%\Documents\Visual Studio\\[versão]\Backup Files\\[nomedoprojeto]*. Se o arquivo for novo e você ainda não o tiver salvado, ele será salvo automaticamente com um nome de arquivo gerado aleatoriamente.
+::: moniker range="vs-2019"
 
-**Mantenha as informações do AutoRecover por [n] dias**
+Use esta opção para personalizar a frequência com que um arquivo é salvo automaticamente no editor. Para arquivos salvos anteriormente, o Visual Studio 2019 versão 16,2 e posterior salva uma cópia do arquivo em ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]***. Se o arquivo for novo e você ainda não o tiver salvo, o Visual Studio o salvará automaticamente usando um nome de arquivo gerado aleatoriamente.
+
+> [!NOTE]
+> Se você estiver usando o Visual Studio 2019 versão 16,1 ou anterior, o local do arquivo será *%USERPROFILE%\Documents\Visual Studio [Version] \backup files \\ [ProjectName]*. Para obter mais informações, consulte a página [histórico das notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Use esta opção para personalizar a frequência com que um arquivo é salvo automaticamente no editor. Para arquivos salvos anteriormente, o Visual Studio 2017 salva uma cópia do arquivo no *%USERPROFILE%\Documents\Visual Studio [Version] \backup files \\ [ProjectName]*. Se o arquivo for novo e você ainda não o tiver salvo, o Visual Studio o salvará automaticamente usando um nome de arquivo gerado aleatoriamente.
+
+::: moniker-end
+
+**Manter informações de AutoRecuperação por [n] dias**
 
 Use esta opção para especificar por quanto tempo o Visual Studio manterá arquivos criados para AutoRecuperação.
 
-### <a name="see-also"></a>Confira também
+### <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo de opções](../../ide/reference/options-dialog-box-visual-studio.md)
+- [caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)

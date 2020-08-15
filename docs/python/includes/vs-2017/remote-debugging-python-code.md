@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541058"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246339"
 ---
 O Visual Studio pode iniciar e depurar aplicativos Python localmente e remotamente em um computador Windows (consulte [depuração remota](../../../debugger/remote-debugging.md)). Ela também pode depurar remotamente em um dispositivo ou sistema operacional diferente ou em uma implementação Python que não seja o CPython usando a [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Ao usar a ptvsd, o código do Python que está sendo depurado hospeda o servidor de depuração ao qual o Visual Studio pode se anexar. Essa hospedagem exige uma pequena modificação no código para importar e habilitar o servidor e pode exigir configurações de rede ou de firewall no computador remoto para permitir conexões TCP.
 
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../../../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução à depuração remota, consulte [aprofundamento: depuração remota de plataforma cruzada](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), que se aplica ao Visual Studio 2015 e 2017. |
+![ícone de câmera de filme para vídeo](../../../install/media/video-icon.png "Assistir a um vídeo") Para obter uma introdução à depuração remota, consulte [aprofundamento: depuração remota de plataforma cruzada](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), que se aplica ao Visual Studio 2015 e 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Configurar um computador Linux
 
