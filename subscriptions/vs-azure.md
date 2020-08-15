@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902915"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247331"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -20,19 +20,19 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 ## <a name="activation-steps"></a>Etapas de ativação
 1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
+2. Localize o bloco do Azure na seção ferramentas na página benefícios e selecione **Ativar** link na parte inferior do bloco benefício.
    > [!div class="mx-imgBorder"]
    > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e clicar em **Avançar**.
+3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e, em seguida, selecionar **Avançar**.
    > [!div class="mx-imgBorder"]
    > ![Inscrição do Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e clique em **verificar código**.   
+4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e selecione **verificar código**.   
    > [!div class="mx-imgBorder"]
    > ![Preparação do Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Para a etapa final, clique na caixa de seleção para aceitar os termos e, em seguida, clique em **inscrever-se**.  Isso é tudo!
+5. Para a etapa final, marque a caixa de seleção para aceitar os termos e, em seguida, selecione **inscrever-se**.  Isso é tudo!
    > [!div class="mx-imgBorder"]
    > ![Preparação do Azure](_img/vs-azure/vs-azure-agreement.png)
 
@@ -111,12 +111,12 @@ R: a propriedade intelectual produzida por um funcionário criado nos recursos f
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de Ajuda com o Azure?  Confira estes recursos:
-  - Suporte técnico:[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - Suporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Dicas do Azure & truques](https://microsoft.github.io/AzureTipsAndTricks/ "Dicas do Azure & truques") 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
@@ -126,4 +126,4 @@ R: a propriedade intelectual produzida por um funcionário criado nos recursos f
 Para obter mais informações sobre ferramentas e serviços da Microsoft, confira a documentação do:
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
-- [IDE do Visual Studio](/visualstudio/)
+- [Visual Studio IDE](/visualstudio/)

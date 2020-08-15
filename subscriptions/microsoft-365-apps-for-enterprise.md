@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Saiba mais e instale os aplicativos Microsoft 365 para empresas
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902983"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250751"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplicativos para empresas em assinaturas do Visual Studio
 Microsoft 365 aplicativos para empresas (anteriormente conhecido como Office 365 Pro Plus) estão disponíveis em assinaturas do Visual Studio selecionadas. 
@@ -25,30 +25,30 @@ Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão 
 ## <a name="activation-steps"></a>Etapas de ativação
 O processo de ativação de seus aplicativos Microsoft 365 para a assinatura Enterprise é simples.  Siga estas etapas para ativar sua assinatura e instalar seus aplicativos:
 
-1. Entre em sua assinatura do Visual Studio em[https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-1. Localize o bloco Microsoft 365 aplicativos para o Enterprise e clique em **Ativar**.
+1. Entre em sua assinatura do Visual Studio em [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Localize o bloco Microsoft 365 aplicativos para o Enterprise e selecione **Ativar**.
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 aplicativos para o bloco Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Clique em ' Ativar ' para começar a sua assinatura.")
+   > ![Microsoft 365 aplicativos para o bloco Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Selecione ' Ativar ' para começar a usar sua assinatura.")
 
-1. Na caixa de diálogo "bem-vindo, vamos conhecer você", forneça as informações de contato pessoal solicitadas e clique em **Avançar**.
+1. Na caixa de diálogo "bem-vindo, vamos conhecer você", forneça as informações de contato pessoal solicitadas e, em seguida, selecione **Avançar**.
    > [!div class="mx-imgBorder"]
    > ![Aplicativos de Microsoft 365 para informações de clientes empresariais](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Insira suas informações de contato")
 
-1. Na caixa de diálogo "criar sua ID de usuário", crie o nome de seu usuário e a senha para seu locatário e, em seguida, clique em **criar meu conta**.
+1. Na caixa de diálogo "criar sua ID de usuário", crie o nome de seu usuário e a senha para seu locatário e, em seguida, selecione **criar meu conta**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplicativos para a criação da ID de usuário empresarial](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Criar sua ID de usuário e senha")
 
-1. Em seguida, você será solicitado a fornecer um código para provar que não é um robô.  Você pode fazer com que o código seja enviado a você como uma mensagem de texto.  Insira o código e clique em **Avançar**. 
+1. Em seguida, você será solicitado a fornecer um código para provar que não é um robô.  Você pode fazer com que o código seja enviado a você como uma mensagem de texto.  Insira o código e selecione **Avançar**. 
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplicativos para o Enterprise provam que você não é um robô](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "Solicite um código e insira-o para continuar")
 
-1. Depois que sua conta tiver sido criada com êxito, você verá uma caixa de diálogo exibindo a página de entrada para o portal do Office e sua nova ID de usuário.  Anote essas informações para uso posterior e clique em **Iniciar instalação** para começar a instalar seus Microsoft 365 aplicativos.
+1. Depois que sua conta tiver sido criada com êxito, você verá uma caixa de diálogo exibindo a página de entrada para o portal do Office e sua nova ID de usuário.  Anote essas informações para uso posterior e selecione **Iniciar instalação** para começar a instalar seus Microsoft 365 aplicativos.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplicativos para a empresa Salve estas informações](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Salve sua nova ID de usuário e o link para o portal do Office.")
 
-1. Você será automaticamente conectado ao portal do Office e agora estará pronto para instalar seus aplicativos.  Clique no botão **instalar** para começar.
+1. Você será automaticamente conectado ao portal do Office e agora estará pronto para instalar seus aplicativos.  Selecione o botão **instalar** para começar.
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 aplicativos para instalação empresarial](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Clique no botão ' instalar ' para instalar seus aplicativos.")
+   > ![Microsoft 365 aplicativos para instalação empresarial](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Selecione o botão ' instalar ' para instalar seus aplicativos.")
 1. Siga os prompts para instalar os aplicativos selecionados.  
 
 ## <a name="eligibility"></a>Qualificação
@@ -77,7 +77,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -12,14 +12,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234959"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248291"
 ---
-# <a name="learn-to-use-the-code-editor-with-c"></a>Aprenda a usar o editor de código com C #
+# <a name="learn-to-use-the-code-editor-with-c"></a>Aprenda a usar o editor de código com C\#
 
 Nesta introdução de 10 minutos ao editor de código no Visual Studio, adicionaremos código a um arquivo para examinar algumas das maneiras como o Visual Studio torna a escrita, a navegação e a compreensão do código C# mais fáceis.
 
@@ -188,7 +188,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../../ide/code-snippets.md)
 - [Navegue pelos códigos](../../ide/navigating-code.md)

@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
-ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289346"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247311"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 Quando você compra as assinaturas do Visual Studio por meio do programa MPSA, há algumas coisas a serem consideradas antes que você possa se tornar um administrador de assinaturas do Visual Studio e atribuir assinaturas a seus usuários. Se você já tiver sido configurado como administrador, acesse diretamente o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio.
@@ -39,14 +39,14 @@ Aqui estão alguns requisitos ou etapas necessárias para tornar-se um administr
 
 Depois de atender aos critérios acima, você poderá associar sua conta de compra ao locatário seguindo as etapas abaixo.
 1. Faça logon no [Centro de Empresas](https://businessaccount.microsoft.com/Customer).
-2. Clique na guia **Conta** e escolha **Associar Domínios**.
+2. Selecione a guia **conta** e escolha **associar domínios**.
 3. Selecione a **Conta de Compra** (se você tiver mais de uma).
 4. Selecione o **locatário** (por exemplo, contoso.onmicrosoft.com).
-5. Clique em **Associar Domínio**.
+5. Selecione **associar domínio**.
 
 Após a associação, todos os usuários que atenderem aos critérios serão provisionados como administradores de assinaturas do Visual Studio em questão de minutos. No entanto, às vezes isso pode levar até 24 horas. Após o provisionamento do locatário, você poderá acessar o portal de administração de assinaturas do Visual Studio. Se isso demorar mais de 24 horas, entre em contato com o suporte do MPSA usando estas etapas:
-1. Conectar-se a<https://www.microsoft.com/licensing/mpsa/default>
-2. Clique no menu **mais** na parte superior da página. 
+1. Conectar-se a <https://www.microsoft.com/licensing/mpsa/default>
+2. Selecione o menu **mais** na parte superior da página. 
 3. Escolha o **suporte**
 4. Escolher **suporte de licenciamento**
 5. Selecione a opção de suporte que melhor atenda às suas necessidades. 
@@ -62,7 +62,7 @@ Para obter uma explicação mais detalhada desse processo, use os [guias de Iní
 > [!NOTE]
 > Depois de concluir o processo de tomada de controle de domínio, você precisará atender aos critérios das cinco etapas na seção Pré-associação do locatário (gerenciado). Quando os critérios forem atendidos, bastará contatar o suporte do MPSA para provisionar outros administradores de assinaturas do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

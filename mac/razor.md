@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950519"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249532"
 ---
 # <a name="create-razor-web-apps"></a>Criar aplicativos Web Razor
 
@@ -48,16 +48,16 @@ Os aplicativos Web do Razor incluem os componentes a seguir.
 ### <a name="pages-folder"></a>Pasta Páginas
 
 Esta pasta contém as páginas da Web de um projeto, juntamente com o code-behind para cada uma:
-   - Um arquivo * \* . cshtml* para a marcação HTML e sintaxe Razor.
-   - Um arquivo * \* . cshtml.cs* para o code-behind do C# para manipular eventos de página.
+- Um arquivo * \* . cshtml* para a marcação HTML e sintaxe Razor.
+- Um arquivo * \* . cshtml.cs* para o code-behind do C# para manipular eventos de página.
 
-Arquivos de suporte têm nomes que começam com um sublinhado. Por exemplo, o arquivo _Layout.cshtml configura os elementos de interface do usuário comuns a todas as páginas. Esse arquivo configura o menu de navegação na parte superior da página e o aviso de direitos autorais na parte inferior. Saiba mais em [Layout no ASP.NET Core](/aspnet/core/mvc/views/layout).
+Arquivos de suporte têm nomes que começam com um sublinhado. Por exemplo, o arquivo * \_ layout. cshtml* configura elementos da interface do usuário comuns a todas as páginas. Esse arquivo configura o menu de navegação na parte superior da página e o aviso de direitos autorais na parte inferior. Saiba mais em [Layout no ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Configurações de inicialização
 
 O *launchSettings.jsno* arquivo contém as configurações do IIS, a URL do aplicativo e outras configurações relacionadas.
 
-### <a name="app-settings"></a>Configurações do aplicativo
+### <a name="app-settings"></a>Configurações de aplicativo
 
 O *appSettings.jsno* arquivo contém dados de configuração, como cadeias de conexão.
 
@@ -75,6 +75,6 @@ Esse arquivo contém o ponto de entrada para o programa. Saiba mais em [Host da 
 
 Esse arquivo contém um código que configura o comportamento do aplicativo, como se o aplicativo requer consentimento para cookies. Saiba mais em [Inicialização de aplicativos no ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 Para obter um guia mais abrangente para a criação de aplicativos Web do Razor, consulte [Introduction to Razor pages in ASP.NET Core](/aspnet/core/razor-pages/index).

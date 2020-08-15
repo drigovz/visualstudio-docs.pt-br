@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280857"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250855"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurar funções de serviço de nuvem do Azure com o Visual Studio
 Um serviço de nuvem do Azure pode ter uma ou mais funções web ou de trabalho. Para cada função, você precisa definir como essa função é instalada e também configurar como ela é executada. Para saber mais sobre as funções em serviços de nuvem, assista ao vídeo [Introdução aos Serviços de Nuvem do Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -90,7 +90,7 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selecione a guia **configurações** .
+1. Selecione a guia **Settings** (Configurações).
 
     ![Guia Configurações](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -112,7 +112,7 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
 1. Na caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**, selecione uma opção para **Cadeia de Conexão**. Em seguida, siga as instruções para a opção selecionada:
 
-    - **Emulador de Armazenamento do Microsoft Azure** — se selecionar essa opção, as configurações restantes na caixa de diálogo serão desabilitadas, uma vez que se aplicam apenas ao Azure. Selecione **OK**.
+    - **Emulador de armazenamento do Microsoft Azure** -se você selecionar essa opção, as configurações restantes na caixa de diálogo serão desabilitadas, pois se aplicam somente ao Azure. Selecione **OK**.
     - **Sua assinatura** — se selecionar essa opção, use a lista suspensa para selecionar e entrar em uma conta da Microsoft ou adicionar uma conta da Microsoft. Selecione uma assinatura do Azure e a conta de armazenamento. Selecione **OK**.
     - **Credenciais inseridas manualmente** — digite o nome da conta de armazenamento e a chave primária ou secundária. Selecione uma opção para **conexão** (o HTTPS é recomendado para a maioria dos cenários.) Selecione **OK**.
 
@@ -152,7 +152,7 @@ Ao usar um valor diferente para cada configuração de serviço, você não prec
 
     ![Menu de contexto da função do Azure no Gerenciador de Soluções](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selecione a guia **configurações** .
+1. Selecione a guia **Settings** (Configurações).
 
     ![Guia Configurações](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
