@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273823"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249379"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
@@ -34,7 +34,7 @@ R: Não. Se você quiser comprar somente assinaturas de nuvem do Visual Studio p
 R: Sim, você pode. Você precisará ser proprietário ou colaborador de uma assinatura do Azure criada para o EA. Faça suas compras de assinaturas de nuvem do Visual Studio diretamente no Visual Studio Marketplace. Não é possível comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: Como posso saber se tenho os privilégios necessários para comprar serviços no Visual Studio Marketplace por meio Contrato Enterprise da minha organização?
-R: O método mais fácil de determinar se você tem os privilégios corretos é clicar no botão **Comprar** de um serviço oferecido no Visual Studio Marketplace.
+R: a abordagem mais fácil para determinar se você tem os privilégios certos é selecionar o botão **comprar** para um serviço oferecido na Visual Studio Marketplace.
 Você precisa selecionar uma assinatura do Azure (que é uma conta de cobrança) em uma lista apresentada de assinaturas do Azure que estão vinculadas ao seu logon no momento.
 Como o nome da assinatura do Azure assume como padrão o tipo de conta de cobrança ("Pago Conforme o Uso", "Contrato Enterprise", etc.), geralmente fica claro se a assinatura do Azure faz parte do Contrato Enterprise.
 
@@ -74,29 +74,29 @@ Por exemplo, se você comprar seis assinaturas mensais do Visual Studio Professi
 Além disso, o desconto aplica-se somente aos encargos em um determinado período de cobrança mensal. Então, se você comprar cinco assinaturas anuais do Visual Studio Professional em um mês e, em seguida, comprar mais cinco no próximo mês, você pagará o preço normal nas 10 assinaturas.
 
 > [!NOTE]
-> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Novos clientes são incentivados a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) ir para explorar diferentes opções para comprar o Visual Studio.
+> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Novos clientes são incentivados a ir para [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a fim de explorar diferentes opções para comprar o Visual Studio.
 
 ## <a name="other-questions"></a>Outras perguntas
-### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>P: Posso usar o crédito individual mensal do Azure DevTest como assinante do Visual Studio para comprar mais assinaturas em nuvem do Visual Studio?
-R: Não, você não pode usar seu [crédito individual mensal do Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) como assinante do Visual Studio para pagar as compras do Visual Studio Marketplace. Nenhuma compra de assinatura de nuvem do Visual Studio será cobrada em seu cartão de crédito.
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>P: posso usar o crédito individual do Azure DevTest mensal como um assinante do Visual Studio para comprar mais assinaturas de nuvem do Visual Studio?
+R: não, você não pode usar seu [crédito individual do Azure DevTest mensalmente](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) como um assinante do Visual Studio para pagar Visual Studio Marketplace compras. Nenhuma compra de assinatura de nuvem do Visual Studio será cobrada em seu cartão de crédito.
 Antes de fazer compras, você precisará [remover seu limite de gastos](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: Qual é a diferença entre as assinaturas de nuvem anuais e mensais?
-R: As assinaturas de nuvem mensais incluem o Visual Studio mais o uso do Azure DevOps Services e do TFS. As assinaturas anuais em nuvem também têm isso, mas também incluem benefícios para assinantes, incluindo o uso do Windows e outros softwares da Microsoft para instalar e executar para desenvolvimento e testes, um crédito individual mensal do Azure DevTest para usar para experimentar com o Azure serviços e fazer desenvolvimento e testes na nuvem, treinamento, suporte e muito mais.
-[Compare os benefícios da assinatura em nuvem e os preços](https://visualstudio.microsoft.com/vs/pricing/)
+R: As assinaturas de nuvem mensais incluem o Visual Studio mais o uso do Azure DevOps Services e do TFS. As assinaturas de nuvem anuais também têm isso, mas incluem benefícios para o Assinante, incluindo o uso do Windows e de outros softwares da Microsoft para instalação e execução para desenvolvimento e teste, um crédito individual DevTest do Azure mensal para ser usado para experimentar os serviços do Azure e fazer desenvolvimento e testes na nuvem, treinamento, suporte e muito mais.
+[Compare os benefícios e os preços da assinatura na nuvem](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: Posso obter as novas versões do Visual Studio se eu comprar uma assinatura de nuvem do Visual Studio?
 R: Sim. Quando novas versões são lançadas, você pode baixar e executá-las. Além disso, você também pode continuar a executar as versões anteriores.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>P: Posso comprar assinaturas de nuvem do Visual Studio do meu revendedor de software?
-R: Sim, você pode, se o seu revendedor participar do programa Cloud Solution Provider (CSP). Pergunte isso a ele.
+R: Sim, você pode, se o revendedor participar do programa CSP (provedor de soluções na nuvem). Pergunte isso a ele.
 
 ## <a name="related-resources"></a>Recursos relacionados
 - [Portal de administração de assinaturas do Studio Visual](https://manage.visualstudio.com/)
 - [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

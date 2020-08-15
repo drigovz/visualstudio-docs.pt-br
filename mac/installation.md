@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938958"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250549"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalar o Visual Studio 2019 para Mac
 
@@ -53,18 +53,16 @@ Para criar aplicativos Xamarin para iOS ou macOS, você também precisará de:
 
    Se você não quiser instalar todas as plataformas, use o guia abaixo como ajuda para decidir quais plataformas serão instaladas:
 
-
-|Tipo de aplicativo  |Destino  |Seleção  |Observações  |
-|---------|---------|---------|---------|
-|**Aplicativos usando o Xamarin**| Xamarin.Forms|Selecionar plataformas **Android** e **Ios** |Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/) |
-||Somente iOS|Selecionar plataforma **Ios**|Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/)|
-||Somente Android|Selecionar plataforma **Android**|Observe que você também deve selecionar as dependências relevantes|
-||Somente Mac|Selecione a plataforma **MacOS (Cocoa)**|Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/)|
-|**Aplicativos .NET Core**|         |Selecione plataforma **.NET Core** .|         |
-|**Aplicativos Web ASP.NET Core**|         |Selecione plataforma **.NET Core** .|         |
-|**Azure Functions**|         |Selecione plataforma **.NET Core** .|         |
-|**Desenvolvimento de jogos do Unity de plataforma cruzada**|         |Nenhuma plataforma adicional precisa ser instalada além Visual Studio para Mac.| Confira o [Guia de instalação do Unity](/visualstudio/mac/setup-vsmac-tools-unity) para saber mais sobre como instalar a extensão do Unity.|
-
+   |Tipo de aplicativo  |Destino  |Seleção  |Observações  |
+   |---------|---------|---------|---------|
+   |**Aplicativos usando o Xamarin**| Xamarin.Forms|Selecionar plataformas **Android** e **Ios** |Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/) |
+   ||Somente iOS|Selecionar plataforma **Ios**|Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/)|
+   ||Somente Android|Selecionar plataforma **Android**|Observe que você também deve selecionar as dependências relevantes|
+   ||Somente Mac|Selecione a plataforma **MacOS (Cocoa)**|Será necessário instalar o [ **Xcode**](https://developer.apple.com/xcode/)|
+   |**Aplicativos .NET Core**|         |Selecione plataforma **.NET Core** .|         |
+   |**Aplicativos Web ASP.NET Core**|         |Selecione plataforma **.NET Core** .|         |
+   |**Azure Functions**|         |Selecione plataforma **.NET Core** .|         |
+   |**Desenvolvimento de jogos do Unity de plataforma cruzada**|         |Nenhuma plataforma adicional precisa ser instalada além Visual Studio para Mac.| Confira o [Guia de instalação do Unity](/visualstudio/mac/setup-vsmac-tools-unity) para saber mais sobre como instalar a extensão do Unity.|
 
 7. Após você ter feito suas seleções, pressione o botão **Instalar**.
 8. O instalador exibirá o andamento conforme o download acontece e instalará o Visual Studio para Mac e as cargas de trabalho selecionadas. Você será solicitado a inserir sua senha para conceder os privilégios necessários para a instalação.:
@@ -115,6 +113,6 @@ Para outras cargas de trabalho, confira a página [Cargas de trabalho](workloads
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instalar o Visual Studio (no Windows)](/visualstudio/install/install-visual-studio)

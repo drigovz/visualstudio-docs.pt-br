@@ -1,5 +1,5 @@
 ---
-title: Guia do Visual Studio Enterprise
+title: Guia do Visual Studio para empresas
 description: Configurar e solucionar problemas do Visual Studio em um ambiente corporativo.
 ms.date: 07/29/2020
 ms.custom: seodec18
@@ -16,14 +16,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d223d6e1e6ed3bf4b75b1c66bcc0f9dc897cfed
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87440670"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247643"
 ---
-# <a name="visual-studio-enterprise-guide"></a>Guia do Visual Studio Enterprise
+# <a name="visual-studio-enterprise-guide"></a>Guia do Visual Studio para empresas
 Se você estiver procurando economizar tempo enquanto está fazendo sua empresa em execução no Visual Studio, comece aqui. Este guia da empresa inclui dicas que podem ajudá-lo a instalar e atualizar o Visual Studio em cenários empresariais comuns, ficar desbloqueado se você tiver problemas e aprender a relatar um problema se precisar de mais ajuda. 
 
 ## <a name="get-started"></a>Introdução 
@@ -67,9 +67,6 @@ Saiba como atualizar o Visual Studio com êxito e corrigir problemas de atualiza
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também 
+## <a name="see-also"></a>Consulte também 
 
 - [Guia de produtividade do Visual Studio](../ide/productivity-features.md)
-
-
-

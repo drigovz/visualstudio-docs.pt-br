@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281000"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249208"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 
@@ -44,7 +44,7 @@ Você pode usar **anexar ao processo** para depurar a execução de aplicativos 
 > [!TIP]
 > Não tem certeza se deseja usar **anexar ao processo** para seu cenário de depuração? Consulte [cenários comuns de depuração](#BKMK_Scenarios).
 
-## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a>Anexar a um processo em execução no computador local
+## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
 
 Para reanexar rapidamente a um processo que você anexou anteriormente, consulte [reanexar a um processo](#BKMK_reattach).
 
@@ -157,7 +157,7 @@ Para obter instruções mais completas sobre a depuração de aplicativos ASP.NE
 
 Em alguns casos, quando você depura em uma sessão Área de Trabalho Remota (serviços de terminal), a lista de **processos disponíveis** não exibirá todos os processos disponíveis. Se você estiver executando o Visual Studio como um usuário que tem uma conta de usuário limitada, a lista de **processos disponíveis** não mostrará os processos em execução na sessão 0. A sessão 0 é usada para serviços e outros processos de servidor, incluindo *w3wp.exe*. Você pode resolver o problema executando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em uma conta de administrador ou executando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no console do servidor em vez de uma sessão de Serviços de Terminal.
 
-Se nenhuma dessas soluções alternativas é possível, uma terceira opção é anexar ao processo executando `vsjitdebugger.exe -p <ProcessId>` na linha de comando do Windows. Você pode determinar a ID do processo usando *tlist.exe*. Para obter *tlist.exe*, baixe e instale as ferramentas de depuração para Windows, disponíveis em [downloads do WDK e do WinDbg](/windows-hardware/drivers/download-the-wdk).
+Se nenhuma dessas soluções alternativas é possível, uma terceira opção é anexar ao processo executando `vsjitdebugger.exe -p <ProcessId>` na linha de comando do Windows. Você pode determinar a ID do processo usando *tlist.exe*. Para obter *tlist.exe*, baixe e instale as ferramentas de depuração para Windows, disponíveis em  [downloads do WDK e do WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ::: moniker range=">= vs-2019"
 
@@ -165,7 +165,7 @@ Se nenhuma dessas soluções alternativas é possível, uma terceira opção é 
 
 Para obter mais informações, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a>Anexar a um processo em execução em um contêiner do Docker do Linux
+## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Anexar a um processo em execução em um contêiner do Docker do Linux
 
 Você pode anexar o depurador do Visual Studio a um processo em execução em um contêiner do Docker do Linux .NET Core em seu computador local ou remoto usando a caixa de diálogo **anexar ao processo** .
 
@@ -199,17 +199,15 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
         ![Conectar-se a um sistema remoto](../debugger/media/connect-remote-system.png "Conectar-se a um sistema remoto")
         1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao SSH ou ao daemon com êxito e pressione **OK**.
 
-    
     1. ***Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em **host do Docker (opcional)** e clique no link atualizar.
         1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao daemon com êxito e pressione **OK**.
 
 4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C# no Visual Studio!
 
-    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete.png "Menu de anexação do Docker do Linux concluído")
-    
+    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete.png "Menu de anexação do Docker do Linux concluído")    
 
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a>Anexar a um processo em execução em um contêiner do Docker do Windows
+## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Anexar a um processo em execução em um contêiner do Docker do Windows
 
 Você pode anexar o depurador do Visual Studio a um processo em execução em um contêiner do Docker do Windows em seu computador local usando a caixa de diálogo **anexar ao processo** .
 
@@ -238,21 +236,19 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C#.
 
     ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete-windows.png "Menu de anexação do Docker do Windows concluído")
-    
 
 5.  Escolha o processo de contêiner correspondente na lista de processos disponíveis e escolha **anexar** para iniciar a depuração do processo de contêiner do C#.
 
-
 ::: moniker-end
 
-## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a>Reanexar a um processo
+## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a> Reanexar a um processo
 
 Você pode reanexar rapidamente aos processos aos quais você estava anexado anteriormente, escolhendo **depurar**  >  **reanexar para processar** (**Shift** + **ALT** + **P**). Quando você escolher esse comando, o depurador tentará imediatamente se anexar aos últimos processos anexados pela primeira vez tentando corresponder à ID do processo anterior e, se isso falhar, correspondendo ao nome do processo anterior. Se nenhuma correspondência for encontrada ou se vários processos tiverem o mesmo nome, a caixa de diálogo **anexar ao processo** será aberta para que você possa selecionar o processo correto.
 
 > [!NOTE]
 > O comando **reanexar ao processo** está disponível a partir do Visual Studio 2017.
 
-## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a>Cenários comuns de depuração
+## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a> Cenários comuns de depuração
 
 Para ajudá-lo a determinar se deve usar **anexar ao processo** e a qual processo anexar, a tabela a seguir mostra alguns cenários comuns de depuração, com links para mais instruções, quando disponíveis. (A lista não é exaustiva.)
 
@@ -321,7 +317,7 @@ Se você quiser obter informações mais específicas sobre por que o depurador 
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurar vários processos](../debugger/debug-multiple-processes.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)

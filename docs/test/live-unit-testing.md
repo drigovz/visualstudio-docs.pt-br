@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906218"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249902"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Como configurar e usar Live Unit Testing
 
@@ -142,7 +142,7 @@ Você pode observar na janela **Test Explorer** que alguns testes estão desbota
 
 ![Falha no teste no Gerenciador de testes](media/lut-test-explorer.png)
 
-Você pode executar novamente os testes que aparecem desbotados selecionando as opções **executar tudo** ou **executar** no menu **Gerenciador de teste** . Ou, selecione um ou mais testes no menu **Gerenciador de testes** , clique com o botão direito do mouse e selecione **executar testes selecionados** ou **depurar testes selecionados** no menu pop-up. Conforme os testes são executados, eles são agrupados na parte superior.
+Você pode executar novamente os testes que aparecem desbotados selecionando as opções **executar tudo** ou **executar** no menu **Gerenciador de teste** . Ou, selecione um ou mais testes no menu  **Gerenciador de testes** , clique com o botão direito do mouse e selecione **executar testes selecionados** ou **depurar testes selecionados** no menu pop-up. Conforme os testes são executados, eles são agrupados na parte superior.
 
 Há algumas diferenças entre a execução e atualização automáticas dos resultados de teste do Live Unit Testing e a execução explícita de testes no **Gerenciador de Testes**. Entre elas, podemos incluir:
 
@@ -191,16 +191,16 @@ Para soluções com muitos projetos de teste, você pode controlar quais projeto
 
 Para selecionar os projetos individuais em testes de unidade, faça o seguinte após a inicialização do Live Unit Testing:
 
-1. Clique com o botão direito do mouse no **Gerenciador de Soluções** e escolha **Testes Dinâmicos** > **Excluir** para excluir toda a solução.
-1. Clique com o botão direito do mouse em cada projeto de teste que você gostaria de incluir nos testes e escolha **testes ao vivo**,  >  **incluindo**.
+1. Clique com o botão direito do mouse na solução em **Gerenciador de soluções** e escolha **Live Unit Testing**  >  **excluir** para excluir a solução inteira.
+1. Clique com o botão direito do mouse em cada projeto de teste que você gostaria de incluir nos testes e escolha **Live Unit Testing**  >  **incluir**.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Excluir testes individuais da janela do editor de códigos
 
 É possível usar a janela do editor de código para incluir ou excluir métodos de teste individuais. Clique com o botão direito do mouse na assinatura do método de teste na janela Editor de código e selecione uma das seguintes opções:
 
-- **Testes**  >  ao vivo **Incluir \<selected method> **
-- **Testes**  >  ao vivo **Excluir \<selected method> **
-- **Testes**  >  ao vivo **Excluir tudo, \<selected method> exceto**
+- **Live Unit Testing**  >  **Incluir \<selected method> **
+- **Live Unit Testing**  >  **Excluir \<selected method> **
+- **Live Unit Testing**  >  **Excluir tudo, \<selected method> exceto**
 
 ### <a name="exclude-tests-programmatically"></a>Excluir testes programaticamente
 
@@ -218,7 +218,7 @@ Use os seguintes atributos para excluir um assembly inteiro de testes de Live Un
 - Para NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
 - Para MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de teste de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog de Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)

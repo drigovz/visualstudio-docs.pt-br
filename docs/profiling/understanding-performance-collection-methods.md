@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285745"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250773"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
 
@@ -86,21 +86,21 @@ Você também pode coletar contadores de desempenho de CPU e software usando o m
 
 A criação de perfil de simultaneidade coleta informações sobre aplicativos multissegmentados. A criação de perfil de contenção de recursos coleta informações detalhadas da pilha de chamadas sempre que os threads concorrentes aguardam o acesso a um recurso compartilhado. A visualização de simultaneidade também coleta informações mais gerais sobre como seu aplicativo multithread interage com:
 
-  - Próprio.
-  - O hardware.
-  - O sistema operacional.
-  - Outros processos no computador host.
+- Próprio.
+- O hardware.
+- O sistema operacional.
+- Outros processos no computador host.
 
 Relatórios de contenção de recursos exibem o número total de contenções. Eles também relatam o tempo total que os módulos, as funções, as linhas de código-fonte e as instruções aguardaram por um recurso. Os gráficos de linha do tempo mostram as contenções que ocorreram.
 
 O Visualizador de simultaneidade exibe informações gráficas para ajudá-lo a localizar:
 
-  - Afunilamentos de desempenho.
-  - Subutilização da CPU.
-  - Contenção de thread.
-  - Migração de threads.
-  - Atrasos de sincronização.
-  - Áreas de e/s sobrepostas.
+- Afunilamentos de desempenho.
+- Subutilização da CPU.
+- Contenção de thread.
+- Migração de threads.
+- Atrasos de sincronização.
+- Áreas de e/s sobrepostas.
 
   Quando possível, a saída gráfica é vinculada aos dados da pilha de chamadas e do código-fonte. Os dados de visualização de simultaneidade podem ser coletados somente para aplicativos de linha de comando e aplicativos do Windows.
 
@@ -146,7 +146,7 @@ Para obter informações sobre dados de interação de camada coletados por ferr
 
 [Modos de exibição de interação de camada](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 [Como coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 

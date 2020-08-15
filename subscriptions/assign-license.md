@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: e8eba6ad97d0f5e7e1da0e75093c33658f26a56a
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235011"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249473"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -34,7 +34,7 @@ Veja como atribuir uma assinatura do Visual Studio a um novo usuário para que e
 1. Entre no portal de [Administração](https://manage.visualstudio.com).
 2. Para atribuir uma licença a um único assinante do Visual Studio, na parte superior da tabela, selecione **Adicionar**e, em seguida, escolha **assinante individual**.
    > [!div class="mx-imgBorder"]
-   > ![Adicionar um único assinante](_img/assign-license-add/add-subscriber-individual.png "Clique em Adicionar e escolha assinante individual para atribuir uma única assinatura.")
+   > ![Adicionar um único assinante](_img/assign-license-add/add-subscriber-individual.png "Selecione Adicionar e, em seguida, escolha assinante individual para atribuir uma única assinatura.")
 3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, o campo **Nome** terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o email de conexão e o email de notificação serão populados automaticamente.
    > [!div class="mx-imgBorder"]
    > ![Detalhes do assinante](_img/assign-license-add/subscriber-details.png "Insira o nome do assinante e outros detalhes ou escolha um dos membros do locatário.")
@@ -53,12 +53,12 @@ Veja como atribuir uma assinatura do Visual Studio a um novo usuário para que e
 
     Quando terminar de selecionar as opções e inserir os dados do assinante, escolha **Adicionar** na parte inferior do submenu **Adicionar Assinante**.
    > [!div class="mx-imgBorder"]
-   > ![Escolha o botão Adicionar](media/add-button.png "Clique em Adicionar para salvar as informações e atribuir a assinatura ao Assinante.")
+   > ![Escolha o botão Adicionar](media/add-button.png "Selecione Adicionar para salvar as informações e atribuir a assinatura ao Assinante.")
 
 ## <a name="resend-assignment-emails"></a>Reenviar emails de atribuição
-Depois de adicionar um assinante, um email de atribuição será enviado automaticamente para o novo assinante com mais instruções. Você pode enviar o email de atribuição novamente a qualquer momento selecionando o Assinante e clicando no botão **reenviar** no menu superior.  Para reenviar emails a vários usuários, mantenha pressionada a tecla **Ctrl** enquanto seleciona os assinantes.  Ao clicar no botão **reenviar** , você verá uma caixa de diálogo solicitando que você confirme que deseja reenviar para esses assinantes.  
+Depois de adicionar um assinante, um email de atribuição será enviado automaticamente para o novo assinante com mais instruções. Você pode enviar o email de atribuição novamente a qualquer momento selecionando o Assinante e, em seguida, selecionando o botão **reenviar** no menu superior.  Para reenviar emails a vários usuários, mantenha pressionada a tecla **Ctrl** enquanto seleciona os assinantes.  Ao selecionar o botão **reenviar** , você verá uma caixa de diálogo solicitando que você confirme se deseja reenviar para esses assinantes.  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

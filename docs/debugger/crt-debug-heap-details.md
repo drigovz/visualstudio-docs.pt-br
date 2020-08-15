@@ -73,35 +73,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d09319e412d693fc9df95d9ae9b9773f0869afc3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745622"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247941"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 Este tópico fornece um aspecto detalhado na heap de depuração de CRT.
 
-## <a name="BKMK_Contents"></a> Conteúdo
-[Localizar estouros de buffer com heap de depuração](#BKMK_Find_buffer_overruns_with_debug_heap)
+## <a name="contents"></a><a name="BKMK_Contents"></a> Índice
+[Localizar saturações de buffer com heap de depuração](#BKMK_Find_buffer_overruns_with_debug_heap)
 
 [Tipos de blocos na heap de depuração](#BKMK_Types_of_blocks_on_the_debug_heap)
 
-[Verifique a integridade e vazamentos de memória do heap](#BKMK_Check_for_heap_integrity_and_memory_leaks)
+[Verificar a integridade de heap e vazamentos de memória](#BKMK_Check_for_heap_integrity_and_memory_leaks)
 
-[Configurar o heap de depuração](#BKMK_Configure_the_debug_heap)
+[Configurar heap de depuração](#BKMK_Configure_the_debug_heap)
 
 [new, delete e _CLIENT_BLOCKs no heap de depuração C++](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
 
 [Funções de relatório de estado de heap](#BKMK_Heap_State_Reporting_Functions)
 
-[Solicitações de alocação da heap de rastreamento](#BKMK_Track_Heap_Allocation_Requests)
+[Rastrear solicitações de alocação de heap](#BKMK_Track_Heap_Allocation_Requests)
 
-## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Localizar estouros de buffer com heap de depuração
+## <a name="find-buffer-overruns-with-debug-heap"></a><a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Localizar estouros de buffer com heap de depuração
 Dois dos problemas intratáveis mais comuns que os programadores encontram estão substituindo o final de um buffer alocado e os vazamentos de memória (não liberam alocações depois que não são mais necessários.) O heap de depuração fornece ferramentas avançadas para resolver problemas de alocação de memória desse tipo.
 
-As versões de depuração de funções heap chamam o padrão ou as versões de base usadas nas compilações da release. Quando você solicita um bloco de memória, o gerenciador da heap de depuração aloca um bloco de memória ligeiramente maior do que o solicitado da heap de base e retorna um ponteiro para sua parte desse bloco. Por exemplo, suponha que seu aplicativo contém a chamada: `malloc( 10 )`. Em uma compilação de versão, o [malloc](/cpp/c-runtime-library/reference/malloc) chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes. Em uma compilação de depuração, no entanto, `malloc` chamaria [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), que chamaria a rotina de alocação de heap base solicitando uma alocação de 10 bytes mais aproximadamente 36 bytes de memória adicional. Todos os blocos de memória resultantes no heap de depuração estão conectados em uma única lista vinculada, ordenados de acordo com a data em que foram alocados.
+As versões de depuração de funções heap chamam o padrão ou as versões de base usadas nas compilações da release. Quando você solicita um bloco de memória, o gerenciador da heap de depuração aloca um bloco de memória ligeiramente maior do que o solicitado da heap de base e retorna um ponteiro para sua parte desse bloco. Por exemplo, suponha que seu aplicativo contém a chamada: `malloc( 10 )`. Em uma compilação de versão, o [malloc](/cpp/c-runtime-library/reference/malloc) chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes. Em uma compilação de depuração, no entanto, `malloc` chamaria [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), o que chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes mais aproximadamente 36 bytes de memória adicional. Todos os blocos de memória resultantes no heap de depuração estão conectados em uma única lista vinculada, ordenados de acordo com a data em que foram alocados.
 
 Memória adicional alocada por rotinas da heap de depuração é usada para informações de contabilidade, para ponteiros que vinculam blocos de memória de depuração juntos, e para buffers pequenos em ambos os lados de seus dados para capturar substituições da região alocada.
 
@@ -134,13 +134,13 @@ Os buffers de `NoMansLand` em ambos os lados da área de dados do usuário do bl
 
 NoMansLand (0xFD) os buffers "NoMansLand" em ambos os lados da memória usada por um aplicativo estão atualmente preenchidos com 0xFD.
 
-Blocos liberados (0xDD) os blocos liberados mantidos não usados na lista vinculada do heap de depuração quando o sinalizador de `_CRTDBG_DELAY_FREE_MEM_DF` está definido está atualmente preenchido com 0xDD.
+Blocos liberados (0xDD) os blocos liberados mantidos não usados na lista vinculada do heap de depuração quando o `_CRTDBG_DELAY_FREE_MEM_DF` sinalizador está definido está atualmente preenchido com 0xDD.
 
 Novos objetos (0xCD) novos objetos são preenchidos com 0xCD quando são alocados.
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de blocos na heap de depuração
+## <a name="types-of-blocks-on-the-debug-heap"></a><a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de blocos no heap de depuração
 Cada bloco de memória no heap de depuração é atribuído a um dos cinco tipos de alocação. Esses tipos são controlados e relatados de maneira diferente para fins de relatórios de estado e de detecção de vazamento. Você pode especificar o tipo de bloco atribuindo-o e usando uma chamada direta para uma das funções de alocação do heap de depuração como [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Os cinco tipos de blocos de memória no heap de depuração (definido no membro de **nBlockUse** da estrutura de **_CrtMemBlockHeader**) são:
 
 **_NORMAL_BLOCK** Uma chamada para [malloc](/cpp/c-runtime-library/reference/malloc) ou [calloc](/cpp/c-runtime-library/reference/calloc) cria um bloco normal. Se pretender usar somente os blocos Normais e não tiver necessidade de blocos Clientes, defina [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), que fará com que todas as chamadas de alocação de heap sejam mapeadas para os equivalentes de depuração em builds de depuração. Isso permitirá que informações de número de linha e de nome de arquivo sobre cada chamada de alocação sejam armazenadas no cabeçalho de bloco correspondente.
@@ -169,7 +169,7 @@ Para determinar o tipo e o subtipo de um bloco determinado, use a função [_Crt
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Verifique a integridade e vazamentos de memória do heap
+## <a name="check-for-heap-integrity-and-memory-leaks"></a><a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Verifique a integridade e vazamentos de memória do heap
 Vários dos recursos da heap de depuração devem ser acessados de dentro de seu código. A seção a seguir descreve alguns dos recursos e como usá-los.
 
 `_CrtCheckMemory`Você pode usar uma chamada para [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory), por exemplo, para verificar a integridade do heap a qualquer momento. Essa função inspeciona cada bloco de memória na heap, verifica se as informações de cabeçalho do bloco de memória são válidas, e confirma que os buffers não foram alterados.
@@ -178,17 +178,17 @@ Vários dos recursos da heap de depuração devem ser acessados de dentro de seu
 
 O sinalizador **_crtDbgFlag** contém os seguintes campos de bits:
 
-|Campo de bits|Padrão<br /><br /> Valor|Descrição|
+|Campo de bits|Padrão<br /><br /> value|Descrição|
 |---------------|-----------------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|On|Ativa a alocação de depuração. Quando esse bit está desativado, as alocações permanecem encadeadas juntas, mas seu tipo de bloco é **_IGNORE_BLOCK**.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|Impede que a memória seja liberada realmente para simular condições de memória baixa. Quando esse bit estiver ativado, os blocos liberados são mantidos na lista vinculada da heap de depuração, mas são marcados como **_FREE_BLOCK** e preenchidos com um valor especial de byte.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|Off|Faz com que **_CrtCheckMemory** seja chamado em cada alocação e desalocação. Isso deixa a execução lenta, mas captura os erros rapidamente.|
-|**_CRTDBG_CHECK_CRT_DF**|Off|Faz com que blocos marcados como o tipo **_CRT_BLOCK** sejam inclusos em operações de detecção de escape e diferença de estado. Quando esse bit está desativado, a memória usada internamente pela biblioteca em tempo de execução é ignorada durante essas operações.|
-|**_CRTDBG_LEAK_CHECK_DF**|Off|Faz com que a verificação de escape seja executada na saída do programa através de uma chamada a **_CrtDumpMemoryLeaks**. Um relatório de erro é gerado se o aplicativo não liberou qualquer memória atribuída.|
+|**_CRTDBG_ALLOC_MEM_DF**|Por|Ativa a alocação de depuração. Quando esse bit está desativado, as alocações permanecem encadeadas juntas, mas seu tipo de bloco é **_IGNORE_BLOCK**.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Desativado|Impede que a memória seja liberada realmente para simular condições de memória baixa. Quando esse bit estiver ativado, os blocos liberados são mantidos na lista vinculada da heap de depuração, mas são marcados como **_FREE_BLOCK** e preenchidos com um valor especial de byte.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|Desativado|Faz com que **_CrtCheckMemory** seja chamado em cada alocação e desalocação. Isso deixa a execução lenta, mas captura os erros rapidamente.|
+|**_CRTDBG_CHECK_CRT_DF**|Desativado|Faz com que blocos marcados como o tipo **_CRT_BLOCK** sejam inclusos em operações de detecção de escape e diferença de estado. Quando esse bit está desativado, a memória usada internamente pela biblioteca em tempo de execução é ignorada durante essas operações.|
+|**_CRTDBG_LEAK_CHECK_DF**|Desativado|Faz com que a verificação de escape seja executada na saída do programa através de uma chamada a **_CrtDumpMemoryLeaks**. Um relatório de erro é gerado se o aplicativo não liberou qualquer memória atribuída.|
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Configure_the_debug_heap"></a> Configurar o heap de depuração
+## <a name="configure-the-debug-heap"></a><a name="BKMK_Configure_the_debug_heap"></a> Configurar o heap de depuração
 Todas as chamadas para funções heap, como `malloc`, `free`, `calloc`, `realloc`, `new` e `delete` resolvem depurar versões dessas funções que operam no heap de depuração. Quando você libera um bloco de memória, a heap de depuração verifica automaticamente a integridade dos buffers em ambos os lados de sua área atribuída e emite um relatório de erro case a substituição tenha ocorrido.
 
 **Para usar a heap de depuração**
@@ -199,9 +199,9 @@ Todas as chamadas para funções heap, como `malloc`, `free`, `calloc`, `realloc
 
 1. Chamar `_CrtSetDbgFlag` com o parâmetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obter o estado atual de `_crtDbgFlag`) e armazenar o valor retornado em uma variável temporária.
 
-2. Ative todos os bits por `OR`-ing (símbolo &#124; bit-a) a variável temporária com as bitmasks correspondentes (representadas no código do aplicativo por constantes do manifesto).
+2. Ative qualquer bit a `OR` -ing (símbolo de &#124; bits) a variável temporária com as bitmasks correspondentes (representadas no código do aplicativo por constantes do manifesto).
 
-3. Desative os outros bits por `AND`-ing (símbolo de & bits) a variável com um `NOT` (símbolo ~ bit ~) das máscaras de bits apropriadas.
+3. Desative os outros bits por `AND` -ing (bit & Symbol) da variável com um `NOT` (símbolo bit ~) dos bitmasks apropriados.
 
 4. Chamar `_CrtSetDbgFlag` com o parâmetro de `newFlag` definido como o valor armazenado na variável temporária para criar o novo estado para `_crtDbgFlag`.
 
@@ -223,7 +223,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete e _CLIENT_BLOCKs no heap de depuração C++
+## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> novos, excluir e \_ \_ blocos de cliente no heap de depuração do C++
 As versões de depuração de biblioteca em tempo de execução de C contêm versões de depuração do C++ `new` e operadores de `delete`. Se você usar o tipo de alocação `_CLIENT_BLOCK`, deverá chamar a versão de depuração do operador `new` diretamente ou criar macros que substituam o operador `new` no modo de depuração, como mostrado no exemplo a seguir:
 
 ```cpp
@@ -261,7 +261,7 @@ A versão de depuração do operador `delete` funciona com todos os tipos de blo
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funções de relatório de estado de heap
+## <a name="heap-state-reporting-functions"></a><a name="BKMK_Heap_State_Reporting_Functions"></a> Funções de relatório de estado de heap
  **_CrtMemState**
 
  Para capturar um instantâneo de resumo do estado da heap em um determinado momento, use a estrutura _CrtMemState definida em CRTDBG.H:
@@ -298,7 +298,7 @@ As funções a seguir informam o estado e o conteúdo da heap e usam as informa�
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Track_Heap_Allocation_Requests"></a> Solicitações de alocação da heap de rastreamento
+## <a name="track-heap-allocation-requests"></a><a name="BKMK_Track_Heap_Allocation_Requests"></a> Solicitações de alocação da heap de rastreamento
 Apesar de localizar o nome do arquivo de origem e o número da linha, no qual uma declaração ou uma macro de relatório executa, é geralmente muito útil localizar a causa de um problema, provavelmente o mesmo não é verdade para funções de alocação do heap. Quando macros podem ser inseridas em vários pontos apropriados na árvore de lógica de um aplicativo, uma alocação geralmente é ocultada em uma rotina especial que é chamada de vários locais diferentes em muitas vezes diferentes. A pergunta geralmente não é qual linha de código fez uma alocação incorreta, mas qual das milhares de alocações feitas por essa linha de código está incorreta e porque.
 
 **Números de solicitação de alocação exclusiva e _crtBreakAlloc**

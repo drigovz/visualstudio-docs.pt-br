@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284302"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250517"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -32,15 +32,15 @@ Muitos problemas podem não ter nenhuma assinatura ou etapa distinta para reprod
 
 Descritos abaixo estão os problemas que são difíceis de diagnosticar sem bons arquivos de diagnóstico. Depois de identificar o caso que melhor descreve seu problema, siga as etapas de comentários específicas para esse caso.
 
--   [Falhas:](#crashes) Uma falha ocorre quando o processo (Visual Studio) termina inesperadamente.
+- [Falhas:](#crashes) Uma falha ocorre quando o processo (Visual Studio) termina inesperadamente.
 
--   [Falta de resposta:](#unresponsiveness) O VS deixa de responder por um longo período de tempo.
+- [Falta de resposta:](#unresponsiveness) O VS deixa de responder por um longo período de tempo.
 
--   [Problemas de lentidão:](#slowness-and-high-cpu-issues) Qualquer ação específica no VS é mais lenta do que o desejado
+- [Problemas de lentidão:](#slowness-and-high-cpu-issues) Qualquer ação específica no VS é mais lenta do que o desejado
 
--   [Alta CPU:](#slowness-and-high-cpu-issues) Períodos estendidos de alto uso inesperado da CPU
+- [Alta CPU:](#slowness-and-high-cpu-issues) Períodos estendidos de alto uso inesperado da CPU
 
--   [Problemas fora do processo:](#out-of-process-issues) Um problema causado por um processo de satélite do Visual Studio
+- [Problemas fora do processo:](#out-of-process-issues) Um problema causado por um processo de satélite do Visual Studio
 
 ## <a name="crashes"></a>Falhas
 Uma falha ocorre quando o processo (Visual Studio) termina inesperadamente.
@@ -57,14 +57,13 @@ Falhas que podem ser reproduzidas diretamente são casos que têm todas as segui
 
 Para esses problemas, siga as etapas em "[como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e certifique-se de incluir:
 
--   As etapas para reproduzir o problema
+- As etapas para reproduzir o problema
 
--   Um projeto de reprodução autônomo, conforme descrito acima. Se a reprodução autônoma não for possível, inclua:
+- Um projeto de reprodução autônomo, conforme descrito acima. Se a reprodução autônoma não for possível, inclua:
 
-    -   O idioma dos projetos abertos (C \# , C++, etc.)
+  - O idioma dos projetos abertos (C \# , C++, etc.)
 
-    -   O tipo de projeto (aplicativo de console, ASP.NET, etc.)
-
+  - O tipo de projeto (aplicativo de console, ASP.NET, etc.)
 
 > [!NOTE]
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o conjunto de etapas para reproduzir o problema junto com o código-fonte de exemplo.
@@ -99,11 +98,11 @@ Cada vez que o Visual Studio falhar, ele criará um arquivo de despejo **devenv.
 
 Em seguida, use o Visual Studio "relatar um problema..." recurso. Ele permitirá que você anexe o despejo apropriado.
 
-1.  Localize o arquivo de despejo para a falha que você está relatando (procure um arquivo com o horário de criação correto)
+1. Localize o arquivo de despejo para a falha que você está relatando (procure um arquivo com o horário de criação correto)
 
-2.  Se possível, compacte o arquivo ( \* . zip) para reduzir seu tamanho antes de enviar comentários
+2. Se possível, compacte o arquivo ( \* . zip) para reduzir seu tamanho antes de enviar comentários
 
-3.  Siga as etapas em "[como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e anexe o despejo de heap a um novo item de comentário.
+3. Siga as etapas em "[como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e anexe o despejo de heap a um novo item de comentário.
 
 > [!NOTE] 
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o despejo de heap capturado no momento da falha.
@@ -135,33 +134,33 @@ Por exemplo, se a digitação e a navegação forem lentas, siga as etapas abaix
 
 Para obter melhores resultados na captura do desempenho, siga estas etapas:
 
-1.  Se ainda não estiver em execução, tenha uma cópia do Visual Studio aberta onde você irá reproduzir o problema
+1. Se ainda não estiver em execução, tenha uma cópia do Visual Studio aberta onde você irá reproduzir o problema
 
-    -   Configure tudo para reproduzir o problema. Por exemplo, se você precisar que um projeto específico seja carregado com um arquivo específico aberto, certifique-se de que ambas as etapas sejam concluídas antes de continuar.
+    - Configure tudo para reproduzir o problema. Por exemplo, se você precisar que um projeto específico seja carregado com um arquivo específico aberto, certifique-se de que ambas as etapas sejam concluídas antes de continuar.
 
-    -   Se você *não* estiver relatando um problema específico para carregar uma solução, tente aguardar 5-10 minutos (ou mais, dependendo do tamanho da solução) depois de abrir a solução antes de gravar o rastreamento de desempenho. O processo de carregamento da solução produz uma grande quantidade de dados, portanto, aguardando alguns minutos nos ajuda a concentrar-se no problema específico que você está relatando.
+    - Se você *não* estiver relatando um problema específico para carregar uma solução, tente aguardar 5-10 minutos (ou mais, dependendo do tamanho da solução) depois de abrir a solução antes de gravar o rastreamento de desempenho. O processo de carregamento da solução produz uma grande quantidade de dados, portanto, aguardando alguns minutos nos ajuda a concentrar-se no problema específico que você está relatando.
 
-2.  Iniciar uma segunda cópia do Visual Studio sem *uma solução aberta*
+2. Iniciar uma segunda cópia do Visual Studio sem *uma solução aberta*
 
-3.  Na nova cópia do Visual Studio, abra o **relatório uma ferramenta de problema**
+3. Na nova cópia do Visual Studio, abra o **relatório uma ferramenta de problema**
 
-4.  Siga as etapas em [como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) até chegar à etapa "fornecer um rastreamento e despejo de heap (opcional)".
+4. Siga as etapas em [como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) até chegar à etapa "fornecer um rastreamento e despejo de heap (opcional)".
 
-5.  Opte por registrar a primeira cópia do Visual Studio (a ocorrência de um problema de desempenho) e iniciar a gravação.
+5. Opte por registrar a primeira cópia do Visual Studio (a ocorrência de um problema de desempenho) e iniciar a gravação.
 
-    -   O aplicativo do gravador de etapas será exibido e começará a gravar.
+    - O aplicativo do gravador de etapas será exibido e começará a gravar.
 
-    -   **Durante a gravação,** execute a ação problemática na primeira cópia do Visual Studio. É difícil para nós corrigir problemas de desempenho específicos se eles não aparecerem dentro do tempo registrado.
+    - **Durante a gravação,** execute a ação problemática na primeira cópia do Visual Studio. É difícil para nós corrigir problemas de desempenho específicos se eles não aparecerem dentro do tempo registrado.
 
-    -   Se a ação for menor que 30 segundos e puder ser repetida com facilidade, repita a ação para demonstrar mais o problema.
+    - Se a ação for menor que 30 segundos e puder ser repetida com facilidade, repita a ação para demonstrar mais o problema.
 
-    -   Na maioria dos casos, um rastreamento de 60 segundos é suficiente para demonstrar os problemas, especialmente se a ação problemática duração (ou foi repetida) por mais de 30 segundos. A duração pode ser ajustada conforme necessário para capturar o comportamento que você gostaria de corrigir.
+    - Na maioria dos casos, um rastreamento de 60 segundos é suficiente para demonstrar os problemas, especialmente se a ação problemática duração (ou foi repetida) por mais de 30 segundos. A duração pode ser ajustada conforme necessário para capturar o comportamento que você gostaria de corrigir.
 
-6.  Clique em "parar registro" no gravador de etapas assim que a operação lenta ou o evento de CPU alto que você deseja relatar for concluído. Pode levar alguns minutos para processar o rastreamento de desempenho.
+6. Clique em "parar registro" no gravador de etapas assim que a operação lenta ou o evento de CPU alto que você deseja relatar for concluído. Pode levar alguns minutos para processar o rastreamento de desempenho.
 
-7.  Depois de concluído, haverá vários anexos para seus comentários. Anexe qualquer arquivo adicional que possa ajudar a reproduzir o problema (um projeto de exemplo, capturas de tela, vídeos, etc.).
+7. Depois de concluído, haverá vários anexos para seus comentários. Anexe qualquer arquivo adicional que possa ajudar a reproduzir o problema (um projeto de exemplo, capturas de tela, vídeos, etc.).
 
-8.  Envie os comentários.
+8. Envie os comentários.
 
 Durante a gravação de um rastreamento de desempenho, se a operação lenta ou a alta CPU que você está relatando chegar a um fim, pare imediatamente a gravação. Se muitas informações forem coletadas, as informações mais antigas serão substituídas. Se o rastreamento não for interrompido em breve (dentro de alguns segundos) após a operação interessante, os dados de rastreamento úteis serão substituídos.
 
@@ -183,15 +182,15 @@ Há vários processos de satélite que são executados paralelamente ao Visual S
 
 O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionais que podem ser coletados seguindo estas etapas:
 
-1.  Se esse for um problema diretamente reproduzível, comece excluindo a pasta **% Temp%/servicehub/logs** Se você não puder reproduzir esse problema, mantenha essa pasta intacta e ignore os seguintes marcadores:
+1. Se esse for um problema diretamente reproduzível, comece excluindo a pasta **% Temp%/servicehub/logs** Se você não puder reproduzir esse problema, mantenha essa pasta intacta e ignore os seguintes marcadores:
 
-    -   Definir a variável de ambiente global **ServiceHubTraceLevel** como **All**
-    -   Reproduza o problema.
+    - Definir a variável de ambiente global **ServiceHubTraceLevel** como **All**
+    - Reproduza o problema.
 
-2.  Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
-3.  Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
+2. Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
+3. Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)

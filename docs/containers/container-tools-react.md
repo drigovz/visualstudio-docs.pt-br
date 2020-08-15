@@ -1,17 +1,17 @@
 ---
-title: Ferramentas de contêiner do Visual Studio com ASP.NET Core e reajam. js
+title: Ferramentas de contêiner do Visual Studio com ASP.NET Core e React.js
 author: ghogen
 description: Saiba como usar as Ferramentas do Visual Studio para Contêineres e o Docker for Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182776"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249198"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Início rápido: usar o Docker com um aplicativo de página única reagir no Visual Studio
 
@@ -72,7 +72,7 @@ A próxima etapa é diferente, dependendo se você estiver usando contêineres d
 
 Um *Dockerfile*, ou seja, a receita para criar uma imagem final do Docker, é criado no projeto. Consulte a [referência do Dockerfile](https://docs.docker.com/engine/reference/builder/) para obter uma compreensão dos comandos dentro dele.
 
-Abra o *Dockerfile* no projeto e adicione as linhas a seguir para instalar o Node.js 10.x no contêiner. Certifique-se de adicionar essas linhas na primeira seção, para adicionar a instalação do Gerenciador de pacotes do nó *NPM. exe* à imagem base, bem como na `build` seção.
+Abra o *Dockerfile* no projeto e adicione as linhas a seguir para instalar o Node.js 10.x no contêiner. Certifique-se de adicionar essas linhas na primeira seção, para adicionar a instalação do Gerenciador de pacotes do nó *npm.exe* à imagem base, bem como na `build` seção.
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -123,7 +123,7 @@ Abra o arquivo de projeto clicando duas vezes no nó do projeto e atualize o arq
 Atualize o Dockerfile adicionando as linhas a seguir. Isso copiará o nó e o NPM para o contêiner.
 
    1. Adicionar ``# escape=` `` à primeira linha do Dockerfile
-   1. Adicione as seguintes linhas antes de`FROM … base`
+   1. Adicione as seguintes linhas antes de `FROM … base`
 
       ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
@@ -133,7 +133,7 @@ Atualize o Dockerfile adicionando as linhas a seguir. Isso copiará o nó e o NP
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Adicione a seguinte linha antes e depois de`FROM … build`
+   1. Adicione a seguinte linha antes e depois de `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
@@ -177,7 +177,7 @@ Atualize o Dockerfile adicionando as linhas a seguir. Isso copiará o nó e o NP
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Atualize o arquivo. dockerignore removendo o `**/bin` .
+   1. Atualize o arquivo. dockerignore removendo o `**/bin` .
 
 ## <a name="debug"></a>Depurar
 
@@ -232,7 +232,7 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
     | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
-    | **Localização do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
+    | **Local do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]
 

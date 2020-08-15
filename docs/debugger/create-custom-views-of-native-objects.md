@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350700"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248053"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Criar exibições personalizadas de objetos C++ no depurador usando a estrutura Natvis
 
@@ -99,6 +99,7 @@ O depurador do Visual Studio carrega arquivos *. natvis* em projetos C++ automat
 Um pacote VSIX pode instalar e registrar arquivos *. natvis* . Não importa onde eles estejam instalados, todos os arquivos *. natvis* registrados são automaticamente coletados durante a depuração.
 
 1. Inclua o arquivo *. natvis* no pacote VSIX. Por exemplo, para o seguinte arquivo de projeto:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ Um pacote VSIX pode instalar e registrar arquivos *. natvis* . Não importa onde
    ```
 
 2. Registre o arquivo *. natvis* no arquivo *Source. Extension. vsixmanifest* :
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -118,7 +120,7 @@ Um pacote VSIX pode instalar e registrar arquivos *. natvis* . Não importa onde
    </PackageManifest>
    ```
 
-### <a name="natvis-file-locations"></a><a name="BKMK_natvis_location"></a>Locais de arquivo Natvis
+### <a name="natvis-file-locations"></a><a name="BKMK_natvis_location"></a> Locais de arquivo Natvis
 
 Você pode adicionar arquivos *. natvis* ao seu diretório de usuário ou a um diretório do sistema, se quiser que eles se apliquem a vários projetos.
 
@@ -187,7 +189,7 @@ Na janela **Watch** , use o especificador de formato **View** para especificar u
 
 ![janela Inspeção com exibição simples](../debugger/media/watch-simpleview.png "janela Inspeção com exibição simples")
 
-## <a name="natvis-errors"></a><a name="BKMK_Diagnosing_Natvis_errors"></a>Erros de Natvis
+## <a name="natvis-errors"></a><a name="BKMK_Diagnosing_Natvis_errors"></a> Erros de Natvis
 
 Quando o depurador encontra erros em uma entrada de visualização, ele os ignora. Ele exibe o tipo em seu formato bruto ou escolhe outra visualização adequada. Você pode usar o diagnóstico de Natvis para entender por que o depurador ignorou uma entrada de visualização e para ver a sintaxe subjacente e os erros de análise.
 
@@ -197,10 +199,10 @@ Quando o depurador encontra erros em uma entrada de visualização, ele os ignor
 
 Os erros aparecem na janela **saída** .
 
-## <a name="natvis-syntax-reference"></a><a name="BKMK_Syntax_reference"></a>Referência de sintaxe de Natvis
+## <a name="natvis-syntax-reference"></a><a name="BKMK_Syntax_reference"></a> Referência de sintaxe de Natvis
 
 ### <a name="autovisualizer-element"></a><a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer
-O `AutoVisualizer` elemento é o nó raiz do arquivo *. natvis* e contém o `xmlns:` atributo namespace.
+O `AutoVisualizer`  elemento é o nó raiz do arquivo *. natvis* e contém o `xmlns:` atributo namespace.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -212,7 +214,7 @@ O `AutoVisualizer` elemento é o nó raiz do arquivo *. natvis* e contém o `xml
 
 O `AutoVisualizer` elemento pode ter os filhos [Type](#BKMK_Type), [HRESULT](#BKMK_HResult), [UIVisualizer](#BKMK_UIVisualizer)e [CustomVisualizer](#BKMK_CustomVisualizer) .
 
-### <a name="type-element"></a><a name="BKMK_Type"></a>Elemento Type
+### <a name="type-element"></a><a name="BKMK_Type"></a> Elemento Type
 
 Um básico `Type` é semelhante a este exemplo:
 
@@ -332,7 +334,7 @@ Os `IncludeView` `ExcludeView` atributos e especificam os elementos a serem exib
 
 Você pode usar os `IncludeView` `ExcludeView` atributos e em tipos e em membros individuais.
 
-### <a name="version-element"></a><a name="BKMK_Versioning"></a>Elemento Version
+### <a name="version-element"></a><a name="BKMK_Versioning"></a> Elemento Version
 O `Version` elemento escopou uma entrada de visualização para um módulo e uma versão específicos. O `Version` elemento ajuda a evitar colisões de nome, reduz incompatibilidades involuntárias e permite diferentes visualizações para diferentes versões de tipo.
 
 Se um arquivo de cabeçalho comum usado por diferentes módulos definir um tipo, a visualização com controle de versão aparecerá somente quando o tipo estiver na versão do módulo especificada.
@@ -353,7 +355,7 @@ Você não precisa `Min` de e `Max` . Eles são atributos opcionais. Não há su
 
 O `Name` atributo está no formato *filename. ext*, como *hello.exe* ou *some.dll*. Nenhum nome de caminho é permitido.
 
-### <a name="displaystring-element"></a><a name="BKMK_DisplayString"></a>Elemento DisplayString
+### <a name="displaystring-element"></a><a name="BKMK_DisplayString"></a> Elemento DisplayString
 O `DisplayString` elemento Especifica uma cadeia de caracteres a ser mostrada como o valor de uma variável. Aceita cadeias de caracteres arbitrárias misturadas a expressões. Tudo dentro das chaves é interpretado como uma expressão. Por exemplo, a seguinte `DisplayString` entrada:
 
 ```xml
@@ -371,7 +373,7 @@ Na `DisplayString` expressão, `x` e `y` , que são membros de `CPoint` , estão
 > [!NOTE]
 > O `DisplayString` elemento é o único elemento que aceita cadeias de caracteres arbitrárias e a sintaxe de chaves. Todos os outros elementos de visualização aceitam apenas expressões que o depurador pode avaliar.
 
-### <a name="stringview-element"></a><a name="BKMK_StringView"></a>Elemento StringView
+### <a name="stringview-element"></a><a name="BKMK_StringView"></a> Elemento StringView
 
 O `StringView` elemento define um valor que o depurador pode enviar para o Visualizador de texto interno. Por exemplo, considerando a seguinte visualização para o `ATL::CStringT` tipo:
 
@@ -400,7 +402,7 @@ Durante a depuração, você pode selecionar o ícone de lupa ao lado da variáv
 
 A expressão `{m_pszData,su}` inclui um de especificador de formato C++ **Su**, para exibir o valor como uma cadeia de caracteres Unicode. Para obter mais informações, consulte [Formatar especificadores em C++](../debugger/format-specifiers-in-cpp.md).
 
-### <a name="expand-element"></a><a name="BKMK_Expand"></a>Expandir elemento
+### <a name="expand-element"></a><a name="BKMK_Expand"></a> Expandir elemento
 
 O `Expand` nó opcional personaliza os filhos de um tipo visualizado quando você expande o tipo em uma janela variável. O `Expand` nó aceita uma lista de nós filho que definem os elementos filho.
 
@@ -481,7 +483,7 @@ Você também pode especificar matrizes multidimensionais. Nesse caso, o depurad
 </Type>
 ```
 
-- `Direction`Especifica se a matriz está na ordem de linha-principal ou coluna-principal.
+- `Direction` Especifica se a matriz está na ordem de linha-principal ou coluna-principal.
 - `Rank` especifica a classificação da matriz.
 - O elemento `Size` aceita o parâmetro implícito `$i`, que ele substitui pelo índice de dimensão para descobrir o tamanho da matriz na dimensão. No exemplo anterior, a expressão `_M_extent.M_base[0]` deve dar o comprimento da dimensão 0º, `_M_extent._M_base[1]` a 1ª e assim por diante.
 
@@ -532,9 +534,9 @@ Se o tipo visualizado representa uma lista vinculada, o depurador pode exibir se
 
 O elemento `Size` faz referência ao comprimento da lista. `HeadPointer` aponta para o primeiro elemento, `NextPointer` refere-se ao próximo elemento e `ValueNode` refere-se ao valor do item.
 
-O depurador avalia as `NextPointer` expressões e `ValueNode` no contexto do `LinkedListItems` elemento node, não o tipo de lista pai. No exemplo anterior, `CAtlList` tem uma `CNode` classe (encontrada em `atlcoll.h` ) que é um nó da lista vinculada. `m_pNext`e `m_element` são campos dessa `CNode` classe, e não da `CAtlList` classe.
+O depurador avalia as `NextPointer` expressões e `ValueNode` no contexto do `LinkedListItems` elemento node, não o tipo de lista pai. No exemplo anterior, `CAtlList` tem uma `CNode` classe (encontrada em `atlcoll.h` ) que é um nó da lista vinculada. `m_pNext` e `m_element` são campos dessa `CNode` classe, e não da `CAtlList` classe.
 
-`ValueNode`pode ser deixado em branco ou usar `this` para se referir ao `LinkedListItems` próprio nó.
+`ValueNode` pode ser deixado em branco ou usar `this` para se referir ao `LinkedListItems` próprio nó.
 
 #### <a name="customlistitems-expansion"></a>Expansão de CustomListItems
 
@@ -593,7 +595,7 @@ O seguinte Visualizador de `CAtlMap` é um exemplo excelente, onde `CustomListIt
 </Type>
 ```
 
-A sintaxe é semelhante ao `LinkedListItems` nó. `LeftPointer`, `RightPointer` e `ValueNode` são avaliados sob o contexto da classe de nó de árvore. `ValueNode`pode ser deixado em branco ou usar `this` para se referir ao `TreeItems` próprio nó.
+A sintaxe é semelhante ao `LinkedListItems` nó. `LeftPointer`, `RightPointer` e `ValueNode` são avaliados sob o contexto da classe de nó de árvore. `ValueNode` pode ser deixado em branco ou usar `this` para se referir ao `TreeItems` próprio nó.
 
 #### <a name="expandeditem-expansion"></a><a name="BKMK_ExpandedItem_expansion"></a> Expansão de ExpandedItem
  O `ExpandedItem` elemento gera uma exibição filho agregada exibindo as propriedades de classes base ou membros de dados como se fossem filhos do tipo visualizado. O depurador avalia a expressão especificada e acrescenta os nós filho do resultado à lista de filhos do tipo visualizado.
@@ -651,7 +653,7 @@ O especificador de formato **nd**, que desativa a correspondência de visualiza�
 
  ![Concurrency:: array com expansão de elemento sintético](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array com expansão de elemento sintético")
 
-### <a name="hresult-element"></a><a name="BKMK_HResult"></a>Elemento HResult
+### <a name="hresult-element"></a><a name="BKMK_HResult"></a> Elemento HResult
  O `HResult` elemento permite que você personalize as informações mostradas para um **HRESULT** nas janelas do depurador. O elemento `HRValue` deve conter o valor de 32 bits do **HRESULT** que deve ser personalizado. O `HRDescription` elemento contém as informações a serem exibidas na janela do depurador.
 
 ```xml
@@ -662,7 +664,7 @@ O especificador de formato **nd**, que desativa a correspondência de visualiza�
 </HResult>
 ```
 
-### <a name="uivisualizer-element"></a><a name="BKMK_UIVisualizer"></a>Elemento UIVisualizer
+### <a name="uivisualizer-element"></a><a name="BKMK_UIVisualizer"></a> Elemento UIVisualizer
 Um elemento `UIVisualizer` registra um plug-in de visualizador gráfico no depurador. Um visualizador gráfico cria uma caixa de diálogo ou outra interface que mostra uma variável ou objeto de forma consistente com seu tipo de dados. O plug-in do visualizador deve ser criado como um [VSPackage](../extensibility/internals/vspackages.md)e deve expor um serviço que o depurador pode consumir. O arquivo *. natvis* contém informações de registro para o plug-in, como seu nome, o GUID do serviço exposto e os tipos que ele pode visualizar.
 
 Veja um exemplo de um elemento UIVisualizer:
@@ -679,7 +681,7 @@ Veja um exemplo de um elemento UIVisualizer:
 </AutoVisualizer>
 ```
 
-- Um `ServiceId`  -  `Id` par de atributos identifica um `UIVisualizer` . O `ServiceId` é o GUID do serviço que o pacote do visualizador expõe. `Id`é um identificador exclusivo que diferencia os visualizadores, se um serviço fornecer mais de um. No exemplo anterior, o mesmo serviço de visualizador fornece dois visualizadores.
+- Um `ServiceId`  -  `Id` par de atributos identifica um `UIVisualizer` . O `ServiceId` é o GUID do serviço que o pacote do visualizador expõe. `Id` é um identificador exclusivo que diferencia os visualizadores, se um serviço fornecer mais de um. No exemplo anterior, o mesmo serviço de visualizador fornece dois visualizadores.
 
 - O `MenuName` atributo define um nome do visualizador para exibir na lista suspensa ao lado do ícone de lupa no depurador. Por exemplo:
 
@@ -696,13 +698,13 @@ Cada tipo definido no arquivo *. natvis* deve listar explicitamente qualquer vis
  Você pode ver um exemplo de uma `UIVisualizer` na extensão de [inspeção de imagem](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) usada para exibir bitmaps na memória.
 
 ### <a name="customvisualizer-element"></a><a name="BKMK_CustomVisualizer"></a>Elemento CustomVisualizer
- `CustomVisualizer`é um ponto de extensibilidade que especifica uma extensão VSIX que você escreve para controlar as visualizações no Visual Studio Code. Para obter mais informações sobre como escrever extensões VSIX, consulte o [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+ `CustomVisualizer` é um ponto de extensibilidade que especifica uma extensão VSIX que você escreve para controlar as visualizações no Visual Studio Code. Para obter mais informações sobre como escrever extensões VSIX, consulte o [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 É muito mais trabalho escrever um visualizador personalizado do que uma definição de Natvis XML, mas você está livre de restrições sobre o que o Natvis faz ou não dá suporte. Visualizadores personalizados têm acesso ao conjunto completo de APIs de extensibilidade do depurador, que podem consultar e modificar o processo de depuração ou se comunicar com outras partes do Visual Studio.
 
  Você pode usar os `Condition` `IncludeView` atributos, e `ExcludeView` nos `CustomVisualizer` elementos.
 
- ## <a name="limitations"></a>Limitações
+## <a name="limitations"></a>Limitações
 
 As personalizações de Natvis funcionam com classes e estruturas, mas não com TYPEDEFs.
 

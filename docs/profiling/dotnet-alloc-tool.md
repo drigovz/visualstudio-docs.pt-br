@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330456"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247790"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analisar o uso de memória usando a ferramenta de alocação de objeto .NET
 
@@ -118,11 +118,11 @@ O modo de exibição de **funções** mostra processos, módulos e funções que
 - A coluna **nome** mostra processos como os nós de nível mais alto. Os processos abaixo são módulos e os módulos abaixo são funções.
 - Essas colunas mostram as mesmas informações que fazem nas exibições de árvore de **alocação** e de **chamada** :
 
-   - **Total (alocações)**
-   - **Auto (alocações)**
-   - **Tamanho total (bytes)**
-   - **Autotamanho (bytes)**
-   - **Tamanho médio (bytes)**
+  - **Total (alocações)**
+  - **Auto (alocações)**
+  - **Tamanho total (bytes)**
+  - **Autotamanho (bytes)**
+  - **Tamanho médio (bytes)**
 
 ### <a name="collection"></a>Coleção
 

@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902942"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249863"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
 
@@ -42,7 +42,7 @@ Depois de atribuir assinaturas, a guia Gerenciar assinantes fornece informaçõe
 
 No canto superior esquerdo da página, há vários ícones que você pode selecionar para revelar uma visão geral da atribuição de assinatura, os detalhes do contrato e o relatório de uso máximo.
 
-Para ver informações adicionais sobre o número de licenças de assinatura adquiridas, atribuídas e ainda disponíveis em sua organização para cada contrato, clique no ícone superior para habilitar o painel de deslizamento.
+Para ver informações adicionais sobre o número de licenças de assinatura adquiridas, atribuídas e ainda disponíveis em sua organização para cada contrato, selecione o ícone superior para habilitar o painel de deslizamento.
 > [!div class="mx-imgBorder"]
 > ![Página Assinantes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
@@ -57,7 +57,7 @@ Para obter mais informações sobre o contrato que você está exibindo, selecio
 - [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

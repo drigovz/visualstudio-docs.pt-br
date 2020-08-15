@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 32766fdf69136f3882186bbcad08aaf83d2e573e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815740"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250094"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 
@@ -66,13 +66,11 @@ Se você já tiver o Visual Studio instalado ou preferir instalar manualmente, e
 
 1. Clique em **Modificar** (se já estiver instalado) ou em **Instalar** (para novas instalações) no canto inferior direito da janela do instalador.
 
-
 #### <a name="check-for-updates-to-visual-studio"></a>Verificar se há atualizações para o Visual Studio
 
 É recomendável verificar se há atualizações no Visual Studio para garantir que você tenha acesso às ferramentas e recursos mais recentes. Isso não interromperá seu projeto do Unity.
 
 - [Atualizar o Visual Studio](../install/update-visual-studio.md)
-
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Configurar o Unity para ser usado com o Visual Studio
 
@@ -98,7 +96,6 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
    ![Selecionar o Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-
 4. Se **Procurar... ** for selecionado, navegue até o diretório **Common7/IDE** dentro do seu diretório de instalação do Visual Studio e selecione **devenv.exe**. Em seguida, clique em **Abrir**.
 
    :::moniker range="vs-2017"
@@ -123,7 +120,6 @@ Baixe e instale as Ferramentas do Visual Studio para Unity do Visual Studio Mark
 > [!NOTE]
 > As Ferramentas do Visual Studio para Unity exigem o Unity 5.2 e superiores, além de uma versão do Visual Studio que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. Para verificar se as Ferramentas do Visual Studio para Unity estão habilitadas na sua instalação do Unity, selecione **Sobre o Unity** no menu do **Ajuda** e procure o texto “Ferramentas do Microsoft Visual Studio para Unity habilitadas” na parte inferior esquerda da caixa de diálogo.
 > ![Sobre o Unity](media/vs-2019/vstu-about-unity.png)
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,5 +1,5 @@
 ---
-title: 'Passo 3: Trabalhar com dados no seu ASP.NET aplicativo core'
+title: 'Etapa 3: trabalhando com dados em seu aplicativo ASP.NET Core'
 description: Comece a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580073"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250802"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Passo 3: Trabalhar com dados usando o Framework entityentity
+# <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: trabalhar com dados usando Entity Framework
 
 Siga estas etapas para começar a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core.
 
@@ -54,7 +54,7 @@ public class Game
 
 Agora estamos prontos para criar as páginas que usaremos para gerenciar nossa biblioteca de jogos. Isso pode parecer intimidador, mas é surpreendentemente fácil. Primeiro, precisamos decidir onde em nosso aplicativo essa funcionalidade deve residir. Abra a pasta Páginas no projeto da Web e adicione uma nova pasta lá. Chame-a de *Jogos*.
 
-Agora clique com o botão direito do mouse em Jogos e escolha **Adicionar** > **novo item de andaime**. Escolha as Razor Pages usando a opção **Entity Framework (CRUD)**. CRUD significa "Criar, ler, atualizar, excluir", e este modelo criará páginas para cada uma dessas operações (incluindo uma página "Listar tudo" e uma página "Exibir detalhes de um item").
+Agora, clique com o botão direito do mouse em jogos e escolha **Adicionar**  >  **novo item com Scaffold**. Escolha as Razor Pages usando a opção **Entity Framework (CRUD)**. CRUD significa "Criar, ler, atualizar, excluir", e este modelo criará páginas para cada uma dessas operações (incluindo uma página "Listar tudo" e uma página "Exibir detalhes de um item").
 
 ![Adicionar páginas geradas por scaffold do ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<AppDbContext>();
+            var context = services.GetRequiredService<Data.AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -117,7 +117,7 @@ Use o nome do seu projeto, em vez de WebApplication1 em seu código.
 
 A maior parte do código é apenas para tratamento de erro e para fornecer acesso ao EF Core `AppDbContext` antes que o aplicativo entre em execução. A linha importante é a que diz `context.Database.EnsureCreated()`, que criará o banco de dados se ele ainda não existir. Agora, o aplicativo está pronto para ser executado.
 
-## <a name="test-it-out"></a>Testar
+## <a name="test-it-out"></a>Teste-o
 
 Execute o aplicativo e navegue para `/Games` na barra de endereços. Você verá uma página de lista vazia. Selecione **Criar Novo** para adicionar um novo `Game` à coleção. Preencha o formulário e clique em **Criar**. Você deve vê-lo na exibição de lista. Clique em **Detalhes** para ver os detalhes de um único registro.
 
@@ -131,9 +131,9 @@ Isso é o necessário para começar a trabalhar com dados em um aplicativo ASP.N
 
 No próximo vídeo, você aprenderá como adicionar suporte à API Web em seu aplicativo.
 
-[Passo 4: Expor uma API web do seu ASP.NET aplicativo core](tutorial-aspnet-core-ef-step-04.md)
+[Etapa 4: expondo uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Razor Pages com o Entity Framework Core no ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [Razor Pages do ASP.NET Core com EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

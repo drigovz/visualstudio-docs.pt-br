@@ -5,28 +5,28 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77567966"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247378"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
 
-Para obter informações sobre acessibilidade do teclado, consulte [Como: Usar navegação no teclado](~/accessibility-keyboard.md).
+Para obter informações sobre acessibilidade de teclado, consulte [como usar a navegação por teclado](~/accessibility-keyboard.md).
 
-Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de vinculação de teclas **Visual Studio for Mac.** Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Você também pode personalizar atalhos para um comando usando o item do menu **Visual Studio for Mac** > **Preferences** e escolhendo**Vinculações de chave de** **ambiente** > na janela **Preferências.**
+Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Você também pode personalizar atalhos para um comando usando o item de menu **Visual Studio para Mac**  >  **preferências** e **Environment**escolhendo  >  **associações de chave** de ambiente na janela **preferências** .
 
 > [!TIP]
 > Os atalhos de teclado exibidos neste documento e as preferências de associação de teclas no Visual Studio para Mac são apresentados usando os símbolos mais usados no macOS. Se não tiver certeza de um símbolo, confira a [Tabela de pesquisa de símbolos de teclas do macOS](#macos-key-symbols-lookup).
 
-## <a name="downloadable-quick-ref-pdfs"></a>Pdfs rápidos para download
+## <a name="downloadable-quick-ref-pdfs"></a>PDFs de referência rápida baixáveis
 
-Compilamos os atalhos de teclado mais usados e mais úteis em um arquivo pdf para download. Temos duas versões, uma que mostra atalhos para o Visual Studio para Mac, e uma versão que mostra os shorts do Visual Studio lado a lado para usuários que têm experiência prévia com o Visual Studio ao usar o Windows.
+Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PDF que pode ser baixado. Temos duas versões, uma que mostra atalhos para Visual Studio para Mac, e uma versão que mostra o Visual Studio shorts lado a lado para usuários que têm experiência anterior com o Visual Studio ao usar o Windows.
 
- - [Visual Studio para mac atalho de teclado árbitro rápido](https://aka.ms/vsm-keys)
- - [Visual Studio & Visual Studio para mac atalho de teclado árbitro rápido](https://aka.ms/vsm-vs-keys)
+- [Referência rápida de atalho de teclado Visual Studio para Mac](https://aka.ms/vsm-keys)
+- [Referência rápida de atalho de teclado do Visual Studio & Visual Studio para Mac](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Navegação de código
 
@@ -35,228 +35,228 @@ Compilamos os atalhos de teclado mais usados e mais úteis em um arquivo pdf par
 |Localizar referências|**⇧⌘R**, **F12**|
 |Ir para a declaração|**⌘D**, **F12**|
 |Próximo erro|**⌥⇧⇟**, **⇧⌘F12**|
-|Próximo problema no arquivo|**O que é isso?**|
-|Erro anterior|**A iM.**|
-|Problema anterior no arquivo|**O que é isso?**|
+|Próximo problema no arquivo|**⌥⇟**|
+|Erro anterior|**⌥⇧⇞**|
+|Problema anterior no arquivo|**⌥⇞**|
 
 ## <a name="debug"></a>Depurar
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Habilitar ou desabilitar ponto de interrupção|**A** **F9**|
+|Habilitar ou desabilitar ponto de interrupção|**⌥ ⌘/**, **⌘ F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
-|Remover Todos os Pontos de Interrupção|**F9**|
-|Executar até o cursor|**F10**|
-|Definir próxima instrução|**F10**|
-|Mostrar Próxima Instrução|**Em 1998\***|
+|Remover Todos os Pontos de Interrupção|**⇧ ⌘ F9**|
+|Executar até o cursor|**⌘ F10**|
+|Definir próxima instrução|**⇧ ⌘ F10**|
+|Mostrar Próxima Instrução|**⌥\***|
 |Depuração Completa|**⇧⌘I**, **⌘F11**|
 |Depuração Circular|**⇧⌘U**, **⇧⌘F11**|
 |Depuração Parcial|**⇧⌘O**, **F10**|
 |Alternar Ponto de Interrupção|**⌘\\**, **F9**|
-|Exibir pontos de interrupção|**A iB**|
+|Exibir pontos de interrupção|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Designer
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Alternar entre arquivos relacionados|**O que é isso?**|
+|Alternar entre arquivos relacionados|**⌃⌘↑**|
 
 ## <a name="edit"></a>Editar
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Modo de edição de restrição|**E**|
-|Cópia|**(C)**|
-|Recortar|**X**|
-|Excluir|**O que é isso?**|
-|Formatar Documento|**Eu.**|
-|Recuar seleção|**]]**|
-|Colar|**V**|
-|Preferências|**⌘**|
-|Refaz|**"Z",**|
+|Modo de edição de restrição|**⌘ E**|
+|Copiar|**⌘ C**|
+|Recortar|**⌘ X**|
+|Excluir|**⌘⌫**|
+|Formatar Documento|**⌃ I**|
+|Recuar seleção|**⌘]**|
+|Colar|**⌘ V**|
+|Preferências|**⌘,**|
+|Refaz|**⇧ ⌘ Z**|
 |Renomear|**⌘R**, **F2**|
-|Selecionar Tudo|**A**|
-|Mostrar geração de código|**Eu .**|
-|Ativar/desativar todas as dobras|**O que é isso?**|
-|Ativar/desativar definições|**O que é isso?**|
-|Ativar/desativar dobra|**"A IMIN.]**|
-|Ativar/desativar comentários da linha|**".**|
-|Desfazer|**Rio Z**|
-|Retirar recuo da seleção|**[[**|
-|Quadro de atualização de restrições|**"R.R.**|
+|Selecionar Tudo|**⌘ A**|
+|Mostrar geração de código|**⌘ I**|
+|Ativar/desativar todas as dobras|**⌥⇧⌘↑**|
+|Ativar/desativar definições|**⌥⇧⌘↓**|
+|Ativar/desativar dobra|**⌥ ⇧ ⌘ ←**|
+|Ativar/desativar comentários da linha|**⌘/**|
+|Desfazer|**⌘ Z**|
+|Retirar recuo da seleção|**⌘[**|
+|Quadro de atualização de restrições|**⇧ ⌘ R**|
 
 ## <a name="f-integration"></a>Integração de F#
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Limpar F# Interativo|**Em Dezembro do C.**|
-|F# Interativo|**A iCarros**|
-|Reiniciar F# Interativo|**Em**|
-|Enviar linha para F# Interativo|**Em 2008,**|
-|Enviar referências para F# Interativo|**Em P.I.**|
-|Enviar seleção para F# Interativo|**O que é isso?**|
+|Limpar F# Interativo|**⌃ ⌥ C**|
+|F# Interativo|**⌃ ⌥ F**|
+|Reiniciar F# Interativo|**⌃ ⌥ R**|
+|Enviar linha para F# Interativo|**⌃ ⌥ L**|
+|Enviar referências para F# Interativo|**⌃ ⌥ P**|
+|Enviar seleção para F# Interativo|**⌃⏎**|
 
 ## <a name="file"></a>Arquivo
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Fechar tudo|**"W"**|
-|Fechar arquivo|**Em 2005**|
-|Fechar workspace|**Em 2008, o que é isso?**|
-|Novo arquivo|**Em**|
-|Nova solução|**"A.N."**|
-|Aberto|**O**|
-|Imprimir|**Em 2008.**|
-|Sair|**A**|
-|Reverter|**Em que si (u)**|
-|Salvar|**S.**|
-|Salvar Tudo|**"Sionhs"**|
+|Fechar tudo|**⇧ ⌘ W**|
+|Fechar arquivo|**⌘ W**|
+|Fechar workspace|**⌥ ⌘ W**|
+|Novo arquivo|**⌘ N**|
+|Nova solução|**⇧ ⌘ N**|
+|Abrir|**⌘ O**|
+|Impressão|**⌘ P**|
+|Encerrar|**⌘ Q**|
+|Reverter|**⌘ U**|
+|Salvar|**⌘ S**|
+|Salvar Tudo|**⇧ ⌘ S**|
 
 ## <a name="help"></a>Ajuda
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Documentação da API|**O que é isso?**|
-|Referência da API do Unity|**"'**|
+|Documentação da API|**⌥⌘?**|
+|Referência da API do Unity|**⌘'**|
 
-## <a name="other"></a>Outros
+## <a name="other"></a>Outro
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Implementar mensagens do Unity|**"A.M."**|
-|Inspecionar|**Eu não sei o que fazer.**|
+|Implementar mensagens do Unity|**⇧ ⌘ M**|
+|Inspecionar|**⌥ ⌘ I**|
 
 ## <a name="project"></a>Project
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Adicionar arquivos|**A.**|
+|Adicionar arquivos|**⌥ ⌘ A**|
 |Build|**⌘K**, **⇧F6**|
 |Compilar tudo|**⌘B**, **F6**|
-|Clean|**K**|
-|Recriar|**O que é isso?**|
-|Recompilar tudo|**A iB**|
-|Iniciar Depuração|**(F5)** **F5**|
-|Iniciar sem depuração|**O f5** **⌃F5**|
+|Clean|**⇧ ⌘ K**|
+|Recompilar|**⌃ ⌘ K**|
+|Recompilar tudo|**⌃ ⌘ B**|
+|Iniciar Depuração|**⌘ ⏎**, **F5**|
+|Iniciar sem depuração|**⌥ ⌘ ⏎**, **⌃ F5**|
 |Stop|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>Refatoração
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Importar símbolo|**O que é isso?**|
-|Correção rápida|**O que é isso?**|
+|Importar símbolo|**⌃⌥␣**|
+|Correção rápida|**⌥⏎**|
 
 ## <a name="search"></a>Search
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Comando|**Em 2008.**|
-|Localizar em Arquivos|**A f.f.**|
+|Comando|**⇧ ⌘ P**|
+|Localizar em Arquivos|**⇧ ⌘ F**|
 |Localizar Próximo|**⌘G**, **F3**|
 |Localizar próxima seleção igual|**⌘E**, **⌘F3**|
-|Localizar Anterior|**G ,** **F3**|
-|Localizar seleção igual anterior|**F3**|
-|Localizar|**F**|
-|Ir para arquivo|**"A iD**|
-|Ir para linha|**A .l**|
-|Ir para tipo|**O que é isso?**|
+|Localizar Anterior|**⇧ ⌘ G**, **⇧ F3**|
+|Localizar seleção igual anterior|**⇧ ⌘ F3**|
+|Localizar|**⌘ F**|
+|Ir para arquivo|**⇧ ⌘ D**|
+|Ir para linha|**⌘ L**|
+|Ir para tipo|**⇧ ⌘ T**|
 |Navegar para|**⌘.**|
-|Substituir em Arquivos|**O que é isso?**|
-|Substitua|**Em 1998**|
+|Substituir em Arquivos|**⌥ ⇧ ⌘ F**|
+|Substitua|**⌥ ⌘ F**|
 
 ## <a name="text-editor"></a>Editor de Texto
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Completar Palavra|**O que é isso?**|
-|Excluir caractere à esquerda|**A iH**|
-|Excluir a próxima subpalavra|**O que é isso?**|
-|Excluir a próxima palavra|**O que é isso?**|
-|Excluir a subpalavra anterior|**O que é isso?**|
-|Excluir a palavra anterior|**O que é isso?**|
-|Excluir caractere à direita|**A D**|
-|Excluir até o fim da linha|**A.C.**|
-|Abreviação dinâmica|**".**|
-|Expandir seleção|**O que é isso?**|
-|Expandir seleção|**O que é isso?**|
-|Expandir a seleção para o final do documento|**↘** **⇧⌘↘**|
-|Expandir a seleção para o início do documento|**↖** **⇧⌘↖**|
-|Expandir a seleção para o final da linha|**↘** **,**|
-|Expandir a seleção para o início da linha|**↖** **.**|
-|Expandir a seleção para a próxima linha|**".**|
-|Expandir a seleção para a próxima palavra|**A.C.**|
-|Expandir a seleção para a página abaixo|**"A iM.**|
-|Expandir a seleção para a página acima|**"A iM.**|
-|Expandir a seleção para a linha anterior|**A .↑**|
-|Expandir a seleção para a palavra anterior|**"A.'**|
-|Expandir a seleção à esquerda|**".**|
-|Expandir a seleção à direita|**"A.C.**|
+|Completar Palavra|**⌃␣**|
+|Excluir caractere à esquerda|**⌃ H**|
+|Excluir a próxima subpalavra|**⌃⌦**|
+|Excluir a próxima palavra|**⌥⌦**|
+|Excluir a subpalavra anterior|**⌃⌫**|
+|Excluir a palavra anterior|**⌥⌫**|
+|Excluir caractere à direita|**⌃ D**|
+|Excluir até o fim da linha|**⌃ K**|
+|Abreviação dinâmica|**⌃/**|
+|Expandir seleção|**⌥⇧↓**|
+|Expandir seleção|**⌥⇧↑**|
+|Expandir a seleção para o final do documento|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
+|Expandir a seleção para o início do documento|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
+|Expandir a seleção para o final da linha|**⇧ ↘**, **⇧ ⌘ →**|
+|Expandir a seleção para o início da linha|**⇧ ↖**, **⇧ ⌘ ←**|
+|Expandir a seleção para a próxima linha|**⇧↓**|
+|Expandir a seleção para a próxima palavra|**⌥ ⇧ →**|
+|Expandir a seleção para a página abaixo|**⇧⇟**|
+|Expandir a seleção para a página acima|**⇧⇞**|
+|Expandir a seleção para a linha anterior|**⇧↑**|
+|Expandir a seleção para a palavra anterior|**⌥ ⇧ ←**|
+|Expandir a seleção à esquerda|**⇧ ←**|
+|Expandir a seleção à direita|**⇧ →**|
 |Localizar cursor|**⌘\|**|
-|Ir um caractere à esquerda|**B**|
-|Ir um caractere à direita|**F.**|
-|Ir para o início do documento|**↑↑**|
+|Ir um caractere à esquerda|**⌃ B**|
+|Ir um caractere à direita|**⌃ F**|
+|Ir para o início do documento|**⌘↑**|
 |Ir para o início da linha|**⌘←**, **⌃A**|
-|Ir para o fim do documento|**"A iM.**|
-|Ir para o fim da linha|**⌘→**, **⌃E**|
-|Ir para chave correspondente|**"A iM.\\**|
-|Ir para a próxima linha|**Em**|
-|Ir para a próxima palavra|**Em Vez de.**|
-|Ir para a linha anterior|**Em P.P.**|
-|Ir para a palavra anterior|**"A iM.**|
-|Inserir quebra de linha após o cursor|**"O"**|
-|Mover o cursor para o fim da linha e inserir nova linha|**"A iM.**|
-|Mover a linha ou texto selecionado para baixo|**Em Casa, eu não vou fazer isso**|
-|Mover a linha ou texto selecionado para cima|**Em seguida.**|
-|Mover para o próximo uso|**O que é isso?**|
-|Mover para o uso anterior|**O que é isso?**|
-|Mostrar lista de parâmetros|**É o que eu disse.**|
-|Mostrar informações rápidas|**F1**|
-|Mostrar escopos|**Em São.Feiras**|
-|Transpor caracteres|**O que é isso?**|
-|Encapsular com &lt;div&gt;|**Em A.**|
+|Ir para o fim do documento|**⌘↓**|
+|Ir para o fim da linha|**⌘ →**, **⌃ E**|
+|Ir para chave correspondente|**⇧⌘\\**|
+|Ir para a próxima linha|**⌃ N**|
+|Ir para a próxima palavra|**⌥ →**|
+|Ir para a linha anterior|**⌃ P**|
+|Ir para a palavra anterior|**⌥ ←**|
+|Inserir quebra de linha após o cursor|**⌃ O**|
+|Mover o cursor para o fim da linha e inserir nova linha|**⇧⏎**|
+|Mover a linha ou texto selecionado para baixo|**⌥↓**|
+|Mover a linha ou texto selecionado para cima|**⌥↑**|
+|Mover para o próximo uso|**⌃⌥⌘↓**|
+|Mover para o uso anterior|**⌃⌥⌘↑**|
+|Mostrar lista de parâmetros|**⌃⇧␣**|
+|Mostrar informações rápidas|**⌘ F1**|
+|Mostrar escopos|**⌥ ⇧ ⌘ P**|
+|Transpor caracteres|**⌃ T**|
+|Encapsular com &lt;div&gt;|**⌥ ⇧ W**|
 
 ## <a name="view"></a>Visualizar
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Centralizar e focalizar documento|**Em 2008.**|
+|Centralizar e focalizar documento|**⌃ L**|
 |Focalizar documento|**F7**|
-|Tela inteira|**Em 1998**|
-|Mover para o próximo notebook|**"A.C.:**|
-|Mover para o notebook anterior|**"A iM.**|
-|Navegação Regressiva|**"A iM.**|
-|Avançar navegação|**"A.C.:**|
-|Tamanho normal|**00**|
-|Uma coluna de editor|**Em 1º**|
+|Tela inteira|**⌃ ⌘ F**|
+|Mover para o próximo notebook|**⌥ ⌘ →**|
+|Mover para o notebook anterior|**⌥ ⌘ ←**|
+|Navegação Regressiva|**⌃ ⌘ ←**|
+|Avançar navegação|**⌃ ⌘ →**|
+|Tamanho normal|**⌘ 0**|
+|Uma coluna de editor|**⌥ ⌘ 1**|
 |Mostrar próximo|**⌥⌘↓**, **F8**|
-|Mostrar anterior|**A** **f8**|
-|Duas colunas de editor|**A 2**|
-|Ampliar|**[++** **)=**|
-|Reduzir|**..._** **⌘_**|
+|Mostrar anterior|**⌥ ⌘ ↑**, **⇧ F8**|
+|Duas colunas de editor|**⌥ ⌘ 2**|
+|Ampliar|**⌘ +**, **⌘ =**|
+|Reduzir|**⌘-**, **⌘ _**|
 
 ## <a name="window"></a>Janela
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Ativar 1|**Em 1º**|
-|Ativar 2|**2**|
-|Ativar 3|**Em 2003.**|
-|Ativar 4|**(4)**|
-|Ativar 5|**5 .5**|
-|Ativar 6|**Em 2006.**|
-|Ativar 7|**7 .7**|
-|Ativar 8|**8 .8**|
-|Ativar 9|**9**|
-|Ocultar outros|**A IH**|
-|Ocultar o Visual Studio|**A H**|
-|Minimizar|**A .m**|
-|Próximo documento|**[}**, **"F6"**|
+|Ativar 1|**⌘ 1**|
+|Ativar 2|**⌘ 2**|
+|Ativar 3|**⌘ 3**|
+|Ativar 4|**⌘ 4**|
+|Ativar 5|**⌘ 5**|
+|Ativar 6|**⌘ 6**|
+|Ativar 7|**⌘ 7**|
+|Ativar 8|**⌘ 8**|
+|Ativar 9|**⌘ 9**|
+|Ocultar outros|**⌥ ⌘ H**|
+|Ocultar o Visual Studio|**⌘ H**|
+|Minimizar|**⌘ M**|
+|Próximo documento|**⌘}**, **⌘ F6**|
 |Documento anterior|**⌘{**, **⇧⌘F6**|
-|Alternar para o próximo documento|**O que é isso?**|
-|Alternar para o próximo painel|**O que é isso?**|
-|Alternar para o documento anterior|**A iM.**|
-|Alternar para o painel anterior|**É o que eu disse.**|
+|Alternar para o próximo documento|**⌃⇥**|
+|Alternar para o próximo painel|**⌃⌥⇥**|
+|Alternar para o documento anterior|**⌃⇧⇥**|
+|Alternar para o painel anterior|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Pesquisa de símbolos de teclas do macOS
 
@@ -264,19 +264,19 @@ Compilamos os atalhos de teclado mais usados e mais úteis em um arquivo pdf par
 |-|-|
 |⌘|**Comando** (**cmd**)|
 |⌥|**Opção** (**alt**)|
-|⇧|**Turno**|
+|⇧|**Alternância**|
 |⌃|**Controle** (**ctrl**)
 |⇞|**Página acima** (**Pg Up**)|
 |⇟|**Página abaixo** (**Pg Dn**)|
 |⌫|**Excluir** (**Backspace**)|
 |⌦|**Excluir para frente**|
-|⏎|**Retorno**|
-|←→↑↓|**Setas**|
+|⏎|**Exibir**|
+|←→↑↓|**Teclas de direção**|
 |↖|**Início**|
-|↘|**Final**|
+|↘|**Completo**|
 |␣|**Barra de espaço**|
-|⇥|**Guia**|
+|⇥|**Tab**|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Atalhos de teclado no Visual Studio (no Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

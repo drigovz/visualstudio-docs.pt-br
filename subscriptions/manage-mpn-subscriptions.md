@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902867"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250725"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciar assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -29,7 +29,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 6. Selecione **Privilégios**
 7. Selecione **Assinaturas do Visual Studio** (observação: atualização pendente da assinatura do Visual Studio)
 8. Selecione o **Indivíduo** desejado
-9. Clique em **Enviar**
+9. Selecione **Enviar**
 10. A pessoa receberá um email
 11. O indivíduo atribuído será acessado [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para entrar
 12. Uma página de perfil do Visual Studio pode ser exibida, incluindo:
@@ -43,7 +43,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 2. Selecione **Privilégios**
 3. Selecione **Assinaturas do MSDN** (observação: em breve essa opção será renomeada como "Assinaturas do Visual Studio")
 4. Localize o **indivíduo** desejado
-5. Clique em **Enviar**
+5. Selecione **Enviar**
 6. A pessoa receberá um email
 7. O indivíduo atribuído será acessado [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para entrar
 8. Uma página de perfil do Visual Studio pode ser exibida
@@ -60,7 +60,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
   > A Função de Contato Técnico é necessária para assinaturas do Visual Studio
   - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

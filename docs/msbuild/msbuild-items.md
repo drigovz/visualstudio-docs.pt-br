@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183659"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247589"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 
@@ -144,7 +144,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Metadados de item conhecido
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Metadados de item conhecido
 
  Sempre que um item é adicionado a um tipo de item, esse item é atribuído a alguns metadados conhecidos. Por exemplo, todos os itens têm o%(de metadados bem conhecido \<Filename> ), cujo valor é o nome do arquivo do item (sem a extensão). Para obter mais informações, confira [Metadados de item conhecidos](../msbuild/msbuild-well-known-item-metadata.md).
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Atualizando metadados em itens em um item de grupo fora de um destino
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Atualizando metadados em itens em um item de grupo fora de um destino
 
 Os itens fora dos destinos podem ter seus metadados existentes atualizados por meio do `Update` atributo. Este atributo **não** está disponível para itens sob destinos.
 
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

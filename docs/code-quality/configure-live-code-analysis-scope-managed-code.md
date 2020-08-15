@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b1e4362755bbbfa9ea220fcbdf92abf92723521
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462117"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249184"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Como: configurar o escopo de análise de código ao vivo para código gerenciado
 
@@ -25,17 +25,17 @@ ms.locfileid: "85462117"
 O Visual Studio executa várias análises de código ao vivo, também chamadas de *análise em segundo plano*, enquanto você edita os arquivos de origem no editor. Algumas delas são necessárias para uma análise mínima de uma experiência aceitável de edição do IDE do Visual Studio. Alguns deles são para uma capacidade de resposta aprimorada para os recursos do IDE. Embora seja possível habilitar funcionalidades adicionais do IDE, como diagnóstico e correções de código de analisadores Roslyn. Com base na funcionalidade, essas análises podem ser agrupadas da seguinte maneira:
 
 - **Computação em segundo plano de diagnóstico**: análise para computar erros, avisos e sugestões em arquivos de origem. Esses diagnósticos aparecem como entradas na lista de erros e como rabiscos no editor. Eles podem ser classificados em duas categorias:
-    - Diagnóstico de compilador do C# e do Visual Basic
-    - Diagnóstico do Roslyn Analyzer, que inclui:
+  - Diagnóstico de compilador do C# e do Visual Basic
+  - Diagnóstico do Roslyn Analyzer, que inclui:
 
-        - Analisadores de IDE internos para sugestões de estilo de código e
-        - Pacotes do analisador de terceiros [instalados](./install-roslyn-analyzers.md) para projetos na solução atual.
+    - Analisadores de IDE internos para sugestões de estilo de código e
+    - Pacotes do analisador de terceiros [instalados](./install-roslyn-analyzers.md) para projetos na solução atual.
 
 - **Outras análises em segundo plano**: análise para melhorar a capacidade de resposta e a interação do Visual Studio para recursos do IDE. Alguns exemplos dessas análises são:
-    - Análise em segundo plano de arquivos abertos.
-    - Compilação em segundo plano de projetos com arquivos abertos para obter símbolos para uma capacidade de resposta aprimorada de determinados recursos do IDE.
-    - Criando caches de sintaxe e de símbolos.
-    - Detectando a associação do designer para arquivos de origem, como formulários, controles, etc.
+  - Análise em segundo plano de arquivos abertos.
+  - Compilação em segundo plano de projetos com arquivos abertos para obter símbolos para uma capacidade de resposta aprimorada de determinados recursos do IDE.
+  - Criando caches de sintaxe e de símbolos.
+  - Detectando a associação do designer para arquivos de origem, como formulários, controles, etc.
 
 ## <a name="default-analysis-scope"></a>Escopo de análise padrão
 
@@ -74,7 +74,7 @@ Se o Visual Studio detectar que 200 MB ou menos de memória do sistema está dis
 
 ![Texto de alerta minimizando o escopo de análise](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Suspensão automática de recursos](./automatic-feature-suspension.md)
 - [Solicitação de recurso do modo de economia de energia](https://github.com/dotnet/roslyn/issues/38429)

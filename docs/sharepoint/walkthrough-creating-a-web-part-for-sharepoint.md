@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014581"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247653"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Walkthrough: criar uma Web Part para o SharePoint
 
@@ -203,7 +204,7 @@ Para preencher a grade de dados que aparece na Web Part, especifique o caminho d
 
 ## <a name="test-the-web-part-verb"></a>Testar o verbo da Web Part
 
-Mostre e oculte os funcionários que não são gerentes clicando em um item que aparece no menu de verbos da Web Part.
+Mostre e oculte os funcionários que não são gerentes selecionando um item que aparece no menu de verbos da Web Part.
 
 1. Escolha a seta que aparece no lado direito da Web Part e, em seguida, escolha **Mostrar gerentes somente** no menu que aparece.
 

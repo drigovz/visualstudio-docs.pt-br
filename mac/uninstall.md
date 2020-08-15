@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: ee30af4ed578bbc59924fcd8968b97dcf9306619
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 518dd80d230e3d2518ae69520781818826363ecc
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950030"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247452"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalando o Visual Studio para Mac
 
@@ -222,11 +222,7 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-* * * 
-
-
-
-
+* * *
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Desinstalar a versão prévia do Visual Studio 2019 para Mac
 
@@ -244,6 +240,6 @@ Você também pode remover o arquivo plist Preview com o seguinte comando:
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Desinstalar Visual Studio (no Windows)](/visualstudio/install/uninstall-visual-studio)

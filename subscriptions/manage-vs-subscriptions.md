@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453686"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248437"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -30,10 +30,10 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para alternar entre as assinaturas, você pode:
 
-- Clicar na lista suspensa no canto superior direito e escolher a assinatura na lista
-- Clicar na guia Assinaturas e, em seguida, clicar na assinatura desejada
+- Selecione o menu suspenso no canto superior direito e escolha a assinatura na lista
+- Selecione a guia assinaturas e, em seguida, selecione a assinatura desejada
   > [!div class="mx-imgBorder"]
-  > ![Mudando de assinatura](_img/manage-vs-subscriptions/change-subscription-resized.png "Clique na guia assinaturas para ver informações detalhadas sobre todas as suas assinaturas e para alternar entre elas.")
+  > ![Mudando de assinatura](_img/manage-vs-subscriptions/change-subscription-resized.png "Selecione a guia assinaturas para ver informações detalhadas sobre todas as suas assinaturas e para alternar entre elas.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se sua assinatura não estiver visível...
 
@@ -68,17 +68,17 @@ O portal de assinaturas permite criar e gerenciar um perfil, facilitando o geren
 
 Você pode alterar facilmente as informações de contato e as preferências em seu perfil.
 
-1. Clique em seu nome no canto superior direito do Portal do Assinante.
-2. Clique no botão **Editar perfil**.
+1. Selecione seu nome no canto superior direito do portal do Assinante.
+2. Selecione o botão **Editar perfil** .
 3. Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **preferências** , você pode selecionar o idioma preferencial, os padrões de data e hora, o fuso horário e o tema da interface do usuário.
-4. Ao concluir as alterações, clique em **Salvar**.
-5. Clique no botão **Voltar** do navegador para retornar à página Benefícios.
+4. Quando você tiver finalizado as alterações, selecione **salvar**.
+5. Selecione o botão **voltar** do navegador para retornar à página de benefícios.
 
 ### <a name="setting-communications-preferences"></a>Definir preferências de comunicação
 Se você quiser receber atualizações periódicas sobre sua assinatura e seus benefícios, incluindo o boletim mensal de Assinaturas do Visual Studio, [atualize suas preferências](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), marcando a caixa de Assinaturas do Visual Studio no seu perfil do Visual Studio. Você pode alterar essas preferências e cancelar a assinatura a qualquer momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Definir preferências](_img/manage-vs-subscriptions/change-prefs.png "Clique na caixa de seleção emails do programa de assinaturas do Visual Studio para receber atualizações.")
+   > ![Definir preferências](_img/manage-vs-subscriptions/change-prefs.png "Marque a caixa de seleção emails do programa de assinaturas do Visual Studio para receber atualizações.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular minha assinatura a assinaturas existentes do Azure DevOps Services ou do Azure
 Se entrar em sua assinatura usando uma MSA (conta Microsoft) pessoal e tiver uma assinatura que inclui o Azure DevOps Services ou o Microsoft Azure usando uma conta corporativa ou de estudante gerenciada pelo Azure, você poderá vincular as duas assinaturas. Ela é chamada de "conta alternativa" e permite usar sua MSA para entrar na assinatura e continuar tendo acesso aos recursos existentes do Azure, do Azure DevOps Services ou do IDE associados à sua conta corporativa ou de estudante.
@@ -88,11 +88,11 @@ Mesmo que ambas as contas usem o mesmo endereço de email, você precisará adic
 Para adicionar uma conta alternativa:
 
 1. Entre no [Portal do Assinante](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sua MSA (Conta da Microsoft).
-2. Clique na guia **Assinaturas**.
+2. Selecione a guia **Assinaturas** .
 3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
-4. Insira o endereço de email de sua conta corporativa ou de estudante e clique em **Adicionar**.
+4. Insira seu endereço de email da conta corporativa/de estudante e selecione **Adicionar**.
 
-Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.
+Depois de adicionar uma conta alternativa, você pode atualizá-la ou removê-la a qualquer momento selecionando a guia **assinaturas** e escolhendo a opção apropriada na seção **links relacionados** .
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -113,7 +113,7 @@ R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durant
 > - Se optar por fechar sua conta Microsoft ou o Azure AD, seus dados pessoais serão tornados anônimos imediatamente.
 > - Não removeremos completamente todos os seus dados pessoais se você tiver assinaturas ativas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
