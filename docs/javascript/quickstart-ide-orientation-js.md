@@ -1,5 +1,5 @@
 ---
-title: Tour do IDE do Visual Studio
+title: Introdução ao IDE do Visual Studio
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527933"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238862"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -21,13 +21,13 @@ Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integra
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Se você ainda não instalou o Visual Studio, vá para a página [de downloads](
 
 A primeira coisa que você verá depois de iniciar o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para fechar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
 
-[![A janela de início no Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![A janela inicial no Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
 
@@ -90,7 +90,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
 ::: moniker-end
 
-   O projeto é criado e um arquivo chamado *server.js* é aberto na janela **Editor.** O **Editor** mostra o conteúdo dos arquivos, e é onde você fará a maior parte do seu trabalho de codificação no Visual Studio.
+   O projeto é criado e um arquivo chamado *server.js* é aberto na janela do **Editor** . O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
 
    ![Editor no Visual Studio](media/editor.png)
 
@@ -118,7 +118,7 @@ A **Lista de Erros** mostra erros, avisos e mensagens sobre o estado atual do c�
 
 A janela de **Saída** mostra as mensagens de saída do build do projeto e do provedor de controle do código-fonte.
 
-Vamos criar o projeto para ver uma saída de build. No menu **Build,** escolha **Build Solution**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
+Vamos criar o projeto para ver uma saída de build. No menu **Compilar** , escolha **Compilar solução**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
@@ -156,7 +156,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais recursos do Visual Studio 2017](../ide/advanced-feature-overview.md)

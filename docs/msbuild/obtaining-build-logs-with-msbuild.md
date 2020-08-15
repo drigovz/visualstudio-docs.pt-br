@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184049"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238602"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obter logs de build com o MSBuild
 
@@ -47,10 +47,10 @@ msbuild MyProject.proj -t:go -v:diag
 
 A tabela a seguir mostra como os detalhes do log (valores de coluna) afetam quais tipos de mensagem (valores de linha) são registrados em log.
 
-|                                       | Silenciosa | Minimal | Normal | Detalhado | Diagnostic |
+| Tipo de mensagem/detalhes              | Quiet | Minimal | Normal | Detalhado | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
-| Warnings                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Avisos                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de alta prioridade              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de prioridade normal           |       |         |    ✅   |     ✅    |      ✅     |
 | Mensagens de baixa prioridade              |       |         |        |     ✅    |      ✅     |
@@ -102,10 +102,10 @@ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-co
 
  Na linha de comando do MSBuild, você especifica o agente de log personalizado usando a opção **-logger** . Você também pode usar a opção **-noconsolelogger** para desabilitar o agente de log de console padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
-- [Compilar agentes](../msbuild/build-loggers.md)
-- [Fazendo logon em um ambiente com vários processadores](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Agentes de build](../msbuild/build-loggers.md)
+- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
 - [Como criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

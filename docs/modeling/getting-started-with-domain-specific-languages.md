@@ -7,19 +7,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596561"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238537"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
 Este tópico explica os conceitos básicos de definição e uso de uma DSL (linguagem específica de domínio) criada com o SDK de modelagem do Visual Studio.
 
 > [!NOTE]
-> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [SDK de modelagem e visualização](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,13 +37,13 @@ Um dos principais aplicativos de DSLs é gerar código de programa, arquivos de 
 
 O restante desta visão geral é uma explicação que apresenta as operações básicas de criação e uso de uma linguagem específica de domínio no Visual Studio.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-| | |
+| Componente | Link |
 |-|-|
-| {1&gt;Visual Studio&lt;1} | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | SDK de modelagem para Visual Studio | |
 
@@ -53,7 +53,7 @@ Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 Para criar uma nova linguagem específica de domínio, você cria uma nova solução do Visual Studio usando o modelo de projeto de linguagem específica de domínio.
 
-1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+1. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
 
 2. Em **tipos de projeto**, expanda o nó **outros tipos de projeto** e clique em **extensibilidade**.
 
@@ -100,7 +100,7 @@ Observe os seguintes aspectos da nova solução:
 
 - **Projeto DslPackage** Este projeto contém código que permite que instâncias do DSL sejam abertas e editadas no Visual Studio.
 
-## <a name="Debugging"></a>Executando a DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Executando a DSL
 
 Você pode executar a solução DSL assim que a tiver criado. Posteriormente, você pode modificar a definição de DSL gradualmente, executando a solução novamente após cada alteração.
 
@@ -119,7 +119,7 @@ Você pode executar a solução DSL assim que a tiver criado. Posteriormente, vo
 
 3. Na instância experimental do Visual Studio, abra o arquivo de modelo chamado **teste** de **Gerenciador de soluções**.
 
-     \- ou -
+     \- ou –
 
      Clique com o botão direito do mouse no projeto de depuração, aponte para **Adicionar**e clique em **Item**. Na caixa de diálogo **Adicionar item** , selecione o tipo de arquivo de sua DSL.
 
@@ -141,19 +141,19 @@ Seu Visual Studio experimental se assemelhará ao exemplo a seguir:
 
 ### <a name="the-content-of-a-model"></a>O conteúdo de um modelo
 
-O conteúdo de um arquivo que é uma instância de uma DSL é chamado de *modelo*. O modelo contém <em>elementos</em> de modelo e *links* entre os elementos. A definição de DSL especifica que tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada a partir do modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
+O conteúdo de um arquivo que é uma instância de uma DSL é chamado de *modelo*. O modelo contém *model* <em>elementos</em> de modelo e *links* entre os elementos. A definição de DSL especifica que tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada a partir do modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
 
 A definição de DSL pode especificar como o modelo aparece em um diagrama. Você pode escolher entre uma variedade de estilos de formas e conectores. Você pode especificar que algumas formas apareçam dentro de outras formas.
 
 Você pode exibir um modelo como uma árvore no modo de exibição do **Explorer** enquanto estiver editando um modelo. À medida que você adiciona formas ao diagrama, os elementos de modelo também aparecem no Gerenciador. O Gerenciador pode ser usado mesmo se não houver nenhum diagrama.
 
-Se você não conseguir ver o Explorer na instância de depuração do Visual Studio, no menu **Exibir** aponte para **outras janelas**e clique em *\<seu idioma >* **Explorer**.
+Se você não conseguir ver o Explorer na instância de depuração do Visual Studio, no menu **Exibir** aponte para **outras janelas**e clique em *\<Your Language>* **Gerenciador**.
 
 ### <a name="the-api-of-your-dsl"></a>A API de sua DSL
 
 Sua DSL gera uma API que permite que você leia e atualize modelos que são instâncias da DSL. Um aplicativo da API é para gerar arquivos de texto de um modelo. Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-Na solução de depuração, abra os arquivos de modelo com a extensão ". tt". Esses exemplos demonstram como você pode gerar texto de modelos e permitem testar a API de sua DSL. Um dos exemplos é escrito em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], o outro no [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
+Na solução de depuração, abra os arquivos de modelo com a extensão ". tt". Esses exemplos demonstram como você pode gerar texto de modelos e permitem testar a API de sua DSL. Um dos exemplos é escrito em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , o outro no [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 Em cada arquivo de modelo está o arquivo que ele gera. Expanda o arquivo de modelo em Gerenciador de Soluções e abra o arquivo gerado.
 
@@ -171,7 +171,7 @@ Ao alterar um arquivo de modelo, você verá as alterações correspondentes nos
 
 3. Clique em **transformar todos os modelos** na barra de ferramentas de **Gerenciador de soluções**.
 
-     \- ou -
+     \- ou –
 
      Clique com o botão direito do mouse nos modelos que você deseja regenerar e clique em **executar ferramenta personalizada**.
 
@@ -201,7 +201,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 1. No diagrama DslDefinition, renomeie **ExampleModel** como **FamilyTreeModel**, **exampleelement** para **Person**, **targets** para **pais**e **fontes** para **filhos**. Você pode clicar em cada rótulo para alterá-lo.
 
-     ![Modelo de árvore &#45; da família de diagrama de definição de DSL](../modeling/media/familyt_person.png)
+     ![Diagrama de definição de DSL &#45; modelo de árvore da família](../modeling/media/familyt_person.png)
 
 2. Renomeie as ferramentas de elemento e conector.
 
@@ -209,7 +209,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     2. Abra o janela Propriedades e posicione-o para que você possa ver o Gerenciador de DSL e as propriedades ao mesmo tempo.
 
-    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, *\<> DSL*e, em seguida, **ferramentas**.
+    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, e, *\<your DSL>* em seguida, **ferramentas**.
 
     4. Clique no **exemploelement**. Esse é o item da caixa de ferramentas usado para criar elementos.
 
@@ -225,7 +225,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     2. Clique em **transformar todos os modelos** na barra de ferramentas de Gerenciador de soluções
 
-    3. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1} Aguarde até que a instância experimental do Visual Studio seja exibida.
+    3. Pressione F5. Aguarde até que a instância experimental do Visual Studio seja exibida.
 
 4. Na solução de depuração na instância experimental do Visual Studio, abra um arquivo de modelo de teste. Arraste elementos para ele na caixa de ferramentas. Observe que as legendas da ferramenta e os nomes de tipo no Gerenciador de DSL foram alterados.
 
@@ -333,7 +333,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     1. No **Gerenciador de DSL**, expanda o **Editor** e as guias da **caixa de ferramentas**.
 
-    2. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de elemento**.
+    2. Clique com o botão direito do mouse *\<your DSL>* e clique em **Adicionar novo elemento ferramenta**.
 
     3. Defina a propriedade **Name** da nova ferramenta e defina sua propriedade de **classe** como cidade.
 
@@ -341,7 +341,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 7. Crie uma ferramenta de conector para fazer um vínculo entre cidades e pessoas.
 
-    1. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de conector**.
+    1. Clique com o botão direito do mouse *\<your DSL>* e clique em **Adicionar nova ferramenta de conector**.
 
     2. Defina a propriedade Name da nova ferramenta.
 
@@ -394,7 +394,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
  Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="Reset"></a>Removendo DSLs experimentais antigas
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Removendo DSLs experimentais antigas
  Se você tiver criado DSLs experimentais que não deseja mais, poderá removê-las do computador redefinindo a instância experimental do Visual Studio.
 
  Isso removerá do seu computador todas as DSLs experimentais e outras extensões experimentais do Visual Studio. Essas são extensões que foram executadas no modo de depuração.
@@ -407,7 +407,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais do Visual Studio que você ainda deseja usar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
-- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
+- [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)

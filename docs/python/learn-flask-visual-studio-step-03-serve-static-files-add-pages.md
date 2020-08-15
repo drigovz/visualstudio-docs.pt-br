@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985177"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238736"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Etapa 3: fornecer arquivos estáticos, adicionar páginas e usar a herança de modelo com o aplicativo Flask
 
 **Etapa anterior: [Criar um aplicativo do Flask com modos de exibição e modelos de página](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -56,9 +56,9 @@ Em qualquer caso, você pode organizar os arquivos em *static* como desejar.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usar um arquivo estático em um modelo
 
-1. No **Solution Explorer,** clique com o botão direito do mouse na pasta **HelloFlask** no projeto Visual Studio, selecione **Adicionar** > **nova pasta**e nomeie a pasta `static`.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na pasta **HelloFlask** no projeto do Visual Studio, selecione **Adicionar**  >  **nova pasta**e nomeie a pasta `static` .
 
-1. Clique com o botão direito do mouse na pasta **static** e selecione **Adicionar** > **Novo item**. Na caixa de diálogo que aparece, selecione `site.css`o modelo **'Folha de estilos',** nomeie o arquivo e selecione **OK**. O arquivo **site.css** é exibido no projeto e aberto no editor. A estrutura de pastas deve ser semelhante à imagem a seguir:
+1. Clique com o botão direito do mouse na pasta **static** e selecione **Adicionar** > **Novo item**. Na caixa de diálogo exibida, selecione o modelo de **folha de estilos** , nomeie o arquivo `site.css` e selecione **OK**. O arquivo **site.css** é exibido no projeto e aberto no editor. A estrutura de pastas deve ser semelhante à imagem a seguir:
 
     ![Estrutura de arquivos estáticos, conforme mostrado no Gerenciador de Soluções](media/flask/step03-static-file-structure.png)
 
@@ -119,7 +119,7 @@ Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à sua pas
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pergunta: Como fazer para manipular variáveis de URL e parâmetros de consulta em uma API?
 
-Resposta: Veja a resposta na etapa 1-4 para [pergunta: Como o Flask funciona com rotas de URL variáveis e parâmetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Resposta: Veja a resposta na etapa 1-4 para [pergunta: como o Flask funciona com rotas de URL variável e parâmetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Etapa 3-3: Adicionar uma página ao aplicativo
 
@@ -168,7 +168,7 @@ As etapas a seguir adicionam uma página "Sobre" ao projeto "HelloFlask" e links
     <div><a href="about">About</a></div>
     ```
 
-1. Salve todos os arquivos usando o comando **File** > **Save All** menu ou apenas **pressione Ctrl**+**Shift**+**S**. (Tecnicamente, essa etapa não é necessária, pois a execução do projeto no Visual Studio salva os arquivos automaticamente. No entanto, é bom conhecer esse comando).
+1. Salve todos os arquivos usando o comando de menu **arquivo**  >  **salvar tudo** ou apenas pressione **Ctrl** + **Shift** + **S**. (Tecnicamente, essa etapa não é necessária, pois a execução do projeto no Visual Studio salva os arquivos automaticamente. No entanto, é bom conhecer esse comando).
 
 1. Execute o projeto para observar os resultados e verificar a navegação entre as páginas. Interrompa o aplicativo quando terminar.
 
@@ -188,7 +188,7 @@ O sistema de modelos do Flask (Jinja por padrão) fornece dois meios para reutil
 
 Em ambos os casos, `<template_path>` é relativo à pasta *templates* do aplicativo (`../` ou `./` também é permitido).
 
-Um modelo base delineia `{% endblock %}` *blocos* usando `{% block <block_name> %}` e tags. Se um modelo de referência usar marcações com o mesmo nome de bloco, o conteúdo do bloco substituirá o do modelo de base.
+Um modelo base delineia *blocos* usando `{% block <block_name> %}` marcas e `{% endblock %}` . Se um modelo de referência usar marcações com o mesmo nome de bloco, o conteúdo do bloco substituirá o do modelo de base.
 
 As etapas a seguir demonstram a herança:
 

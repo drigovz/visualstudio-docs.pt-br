@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544242"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238238"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionar uma propriedade de controle a uma definição de Linguagem Específica de Domínio
 
@@ -46,7 +46,7 @@ Neste tutorial, você cria uma DSL (linguagem específica de domínio) que tem u
 
 Antes de poder iniciar este passo a passos, você deve primeiro instalar estes componentes:
 
-| | |
+| Componente | Link |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
@@ -54,7 +54,7 @@ Antes de poder iniciar este passo a passos, você deve primeiro instalar estes c
 
 ## <a name="create-the-project"></a>Criar o projeto
 
-1. Crie um projeto Designer de Linguagem Específica de Domínio. Nomeie-o como `TrackingPropertyDSL`.
+1. Crie um projeto Designer de Linguagem Específica de Domínio. Nomeie-o `TrackingPropertyDSL`.
 
 2. No **Assistente de designer de linguagem específica de domínio**, defina as seguintes opções:
 
@@ -718,7 +718,7 @@ A próxima etapa é criar e executar o designer de DSL em uma nova instância do
 
 1. No menu **Compilar**, clique em **Recompilar Solução**.
 
-2. No menu **depurar** , clique em **Iniciar Depuração**.
+2. No menu **Depurar** , clique em **Iniciar Depuração**.
 
     A compilação experimental do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre a solução de **depuração** , que contém um arquivo de teste vazio.
 
@@ -754,7 +754,7 @@ A próxima etapa é criar e executar o designer de DSL em uma nova instância do
 
 Se você planeja usar mais de uma propriedade de controle ou implementar propriedades de rastreamento em mais de uma DSL, você pode criar um modelo de texto para gerar o código comum para dar suporte a cada propriedade de controle. Para obter mais informações sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

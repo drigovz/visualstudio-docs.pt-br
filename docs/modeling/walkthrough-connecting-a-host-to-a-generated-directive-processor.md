@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535857"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237991"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: conectar um host a um processador de diretiva gerado
 
@@ -41,7 +41,7 @@ Esta explicação passo a passo inclui as seguintes tarefas:
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-| | |
+| Componente | Link |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -72,7 +72,7 @@ Neste tutorial, você usa o assistente de Designer de Linguagem Específica de D
    > [!IMPORTANT]
    > Esta etapa gera o processador de diretiva e adiciona a chave para ele no registro.
 
-3. No menu **depurar** , clique em **Iniciar Depuração**.
+3. No menu **Depurar** , clique em **Iniciar Depuração**.
 
     Uma segunda instância do Visual Studio é aberta.
 
@@ -360,6 +360,6 @@ Para testar o host de modelo de texto personalizado, primeiro você deve escreve
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções passo a passo: criando um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md)

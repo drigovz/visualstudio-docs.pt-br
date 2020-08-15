@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: d66d119c80c2b089c3d8a75a8e95d7095e9f9797
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575679"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238797"
 ---
 # <a name="scriptstate-enumeration"></a>Enumeração SCRIPTSTATE
 Especifica o estado de um mecanismo de script. Essa enumeração é usada pelos métodos [IActiveScript:: Getscriptstate](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) e [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .  
@@ -42,9 +42,9 @@ typedef enum tagSCRIPTSTATE {
   
 ## <a name="enumeration-values"></a>Valores de enumeração  
   
-|||  
+|Valor|Estado de script|  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|O script acabou de ser criado, mas ainda não foi inicializado usando uma interface `IPersist*` e [IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_UNINITIALIZED|O script acabou de ser criado, mas ainda não foi inicializado usando uma `IPersist*` interface e [IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
 |SCRIPTSTATE_INITIALIZED|O script foi inicializado, mas não está em execução (conectando-se a outros objetos ou eventos de coletor) ou executando qualquer código. O código pode ser consultado para execução chamando o método [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) .|  
 |SCRIPTSTATE_STARTED|O script pode executar código, mas ainda não está coletando os eventos de objetos adicionados pelo método [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
 |SCRIPTSTATE_CONNECTED|O script é carregado e conectado para eventos de coletor.|  

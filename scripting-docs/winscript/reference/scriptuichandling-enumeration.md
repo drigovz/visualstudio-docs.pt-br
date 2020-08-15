@@ -11,15 +11,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d21be6a4e0d6fb24bec95cd7232a33dd20c67f31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0c6505449e6b54bdbc02998e78770c7cde54976
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840168"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238251"
 ---
 # <a name="scriptuichandling-enumeration"></a>Enumeração SCRIPTUICHANDLING
-Representa a maneira que o controle de interface do usuário deve ser tratado.  
+Representa a maneira como o controle de interface do usuário deve ser manipulado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -27,10 +27,10 @@ Representa a maneira que o controle de interface do usuário deve ser tratado.
 typedef enum tagSCRIPTUICHANDLING {     SCRIPTUICHANDLING_ALLOW = 0,     SCRIPTUICHANDLING_NOUIERROR = 1,     SCRIPTUICHANDLING_NOUIDEFAULT = 2, } SCRIPTUICHANDLING;   
 ```  
   
-## <a name="enumeration-value"></a>Valor de Enumeração  
+## <a name="enumeration-value"></a>Valor de enumeração  
   
-|||  
+|Valor|Método de manipulação de UIC|  
 |-|-|  
-|SCRIPTUICHANDLING_ALLOW|Permitir que o controle a ser exibido.|  
+|SCRIPTUICHANDLING_ALLOW|Permitir que o controle seja exibido.|  
 |SCRIPTUICHANDLING_NOUIERROR||  
 |SCRIPTUICHANDLING_NOUIDEFAULT||

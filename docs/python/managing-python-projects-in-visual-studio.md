@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302808"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238784"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -31,7 +31,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> O Visual Studio 2019 dá suporte à abertura de uma pasta que contém o código do Python e à execução do código sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, consulte [Quickstart: Abra e execute o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md). No entanto, há benefícios em usar um arquivo de projeto, conforme explicado nesta seção.
+> O Visual Studio 2019 dá suporte à abertura de uma pasta que contém o código do Python e à execução do código sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, consulte [início rápido: abrir e executar o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md). No entanto, há benefícios em usar um arquivo de projeto, conforme explicado nesta seção.
 ::: moniker-end
 
 > [!Tip]
@@ -39,20 +39,18 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 >
 > É simples criar um projeto do Visual Studio com base em um código existente, conforme descrito em [Criar um projeto com base em arquivos existentes](#create-project-from-existing-files).
 
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Deep Dive: Use controle de origem com projetos Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8m 55s). |
+![ícone de câmera de filme para](../install/media/video-icon.png "Assistir a um vídeo") [aprofundamento do vídeo: Use o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (YouTube.com, 8 m 55s).
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 
-À medida que você desenvolve seu aplicativo, normalmente, você precisa adicionar novos arquivos de diferentes tipos ao projeto. A adição desses arquivos é feita clicando com o botão direito do mouse no projeto e selecionando **Adicionar** > **item existente** com o qual você navega por um arquivo para adicionar, ou **Adicionar** > novo**item,** o que traz uma caixa de diálogo com uma variedade de modelos de itens. Conforme descrito na referência de [modelos de item](python-item-templates.md), as opções incluem arquivos vazios do Python, uma classe do Python, um teste de unidade e vários arquivos relacionados a aplicativos Web. Explore essas opções com um projeto de teste para saber o que está disponível em sua versão do Visual Studio.
+À medida que você desenvolve seu aplicativo, normalmente, você precisa adicionar novos arquivos de diferentes tipos ao projeto. Adicionar esses arquivos é feito clicando com o botão direito do mouse no projeto e selecionando **Adicionar**  >  **Item existente** com o qual você procura um arquivo a ser adicionado ou **adiciona**  >  um**novo item**, que abre uma caixa de diálogo com uma variedade de modelos de item. Conforme descrito na referência de [modelos de item](python-item-templates.md), as opções incluem arquivos vazios do Python, uma classe do Python, um teste de unidade e vários arquivos relacionados a aplicativos Web. Explore essas opções com um projeto de teste para saber o que está disponível em sua versão do Visual Studio.
 
-Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no **Gerenciador de Soluções**. O arquivo de inicialização é o arquivo executado quando você inicia a depuração **(F5** ou **Debug** > **Start Debugging)** ou quando você executa seu projeto na janela **Interactive** **(Shift**+**Alt F5**+**F5** ou **Debug** > **Execute Project in Python Interactive**). Para alterar, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Item de Inicialização** (ou **Definir como Arquivo de Inicialização** em versões mais antigas do Visual Studio).
+Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no **Gerenciador de Soluções**. O arquivo de inicialização é o arquivo que é executado quando você inicia a depuração (**F5** ou **debug**  >  **inicia a depuração**) ou quando você executa o projeto na janela **interativa** (**Shift** + **ALT** + **F5** ou **debug**  >  **Execute Project no Python Interactive**). Para alterar, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Item de Inicialização** (ou **Definir como Arquivo de Inicialização** em versões mais antigas do Visual Studio).
 
 > [!Tip]
 > Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, o Visual Studio não saberá com qual arquivo do Python iniciar quando tentar executar o projeto. Nesse caso, o Visual Studio 2017 versão 15.6 e posterior mostra um erro; as versões anteriores abrem uma janela de Saída com o interpretador do Python em execução ou você vê a janela de Saída aparecer, mas, em seguida, desaparecer quase imediatamente. Se você observar algum desses comportamentos, verifique se haverá um arquivo de inicialização atribuído.
 >
-> Se quiser manter a janela de saída aberta por qualquer motivo, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o intérprete entre no modo interativo após a conclusão de um programa, mantendo assim a janela aberta até que você digite **Ctrl**+**Z** > **Enter** para sair.
+> Se quiser manter a janela de saída aberta por qualquer motivo, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o intérprete entre no modo interativo após a conclusão de um programa, mantendo a janela aberta até que você insira **Ctrl** + **Z**  >  **Enter** para sair.
 
 ::: moniker range="vs-2017"
 Um novo projeto sempre é associado ao ambiente global padrão do Python. Para associar o projeto a outro ambiente (incluindo ambientes virtuais), clique com o botão direito do mouse no nó **Ambientes do Python** do projeto, selecione **Adicionar/Remover Ambientes do Python** e selecione os ambientes desejados.
@@ -71,7 +69,7 @@ Para alterar o ambiente ativo, clique com o botão direito do mouse no ambiente 
 
 ## <a name="project-templates"></a>Modelos de projeto
 
-O Visual Studio fornece várias maneiras para configurar um projeto do Python, do zero ou com base em um código existente. Para usar um modelo, selecione o comando de menu **Arquivo** > **Novo** > **Projeto** ou clique com o botão direito do mouse na solução no Solution **Explorer** e selecione **Adicionar** > novo**projeto,** ambos com o diálogo Novo **Projeto** abaixo. Para ver modelos específicos do Python, pesquise em "Python" ou selecione o nó**Python** **instalado:** > 
+O Visual Studio fornece várias maneiras para configurar um projeto do Python, do zero ou com base em um código existente. Para usar um modelo, selecione o comando **arquivo**  >  **novo**  >  **projeto** de menu ou clique com o botão direito do mouse na solução em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo projeto**, que exibirá a caixa de diálogo **novo projeto** abaixo. Para ver os modelos específicos do Python, pesquise "Python" ou selecione o nó **Installed**  >  **python** instalado:
 
 ![Nova caixa de diálogo do projeto com modelos do Python](media/projects-new-project-dialog.png)
 
@@ -81,8 +79,8 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 e posteri
 | --- | --- |
 | [**Com base em um código existente do Python**](#create-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
 | **Aplicativo do Python** | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](selecting-a-python-environment-for-a-project.md). |
-| [**Serviço de nuvem azure**](python-azure-cloud-service-project-template.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
-| [**Projetos web**](python-web-application-project-templates.md) | Projetos para aplicativos Web baseados em várias estruturas, incluindo Bottle, Django e Flask. |
+| [**Serviço de nuvem do Azure**](python-azure-cloud-service-project-template.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
+| [**Projetos da Web**](python-web-application-project-templates.md) | Projetos para aplicativos Web baseados em várias estruturas, incluindo Bottle, Django e Flask. |
 | **Aplicativo do IronPython** | Semelhante ao modelo de Aplicativo do Python, mas usa o IronPython, por padrão, habilitando a interoperabilidade do .NET e a depuração de modo misto com as linguagens .NET. |
 | **Aplicativo WPF do IronPython** | Uma estrutura de projeto que usa o IronPython com arquivos XAML do Windows Presentation Foundation para a interface do usuário do aplicativo. O Visual Studio fornece um designer de interface do usuário XAML, code-behind pode ser escrito no Python e o aplicativo é executado sem exibir um console. |
 | **Página da Web do IronPython Silverlight** | Um projeto do IronPython executado em um navegador usando o Silverlight. O código do aplicativo do Python é incluído na página da Web como um script. Uma marca de script de texto clichê puxa um código JavaScript que inicializa o IronPython em execução dentro do Silverlight, no qual o código do Python pode interagir com o DOM. |
@@ -106,7 +104,7 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 e posteri
 
 Os arquivos vinculados são aqueles que são inseridos em um projeto, mas que geralmente residem fora das pastas do projeto do aplicativo. Eles são exibidos no **Gerenciador de Soluções** como arquivos normais com um ícone de atalho sobreposto: ![Ícone de arquivo vinculado](media/projects-linked-file-icon.png)
 
-Os arquivos vinculados são especificados no arquivo *.pyproj* usando o elemento `<Compile Include="...">`. Os arquivos vinculados estão implícitos se eles usam um caminho relativo fora da estrutura do diretório, ou explícitos se eles usam caminhos dentro **do Solution Explorer**:
+Os arquivos vinculados são especificados no arquivo *.pyproj* usando o elemento `<Compile Include="...">`. Os arquivos vinculados serão implícitos se usarem um caminho relativo fora da estrutura de diretório, ou explícito se usarem caminhos dentro de **Gerenciador de soluções**:
 
 ```xml
 <Compile Include="..\test2.py">
@@ -123,9 +121,9 @@ Arquivos vinculados são ignorados em uma das seguintes condições:
 
 ### <a name="work-with-linked-files"></a>Trabalhar com arquivos vinculados
 
-Para adicionar um item existente como um link, clique com o botão direito do mouse na pasta no projeto onde deseja adicionar o arquivo e, em seguida, **selecione Adicionar** > **item existente**. Na caixa de diálogo exibida, selecione um arquivo e escolha **Adicionar como Link** no menu suspenso do botão **Adicionar**. Desde que não existam arquivos conflitantes, esse comando criará um link na pasta selecionada. No entanto, o link não será adicionado se já existir um arquivo com o mesmo nome ou se já existir um link para esse arquivo no projeto.
+Para adicionar um item existente como um link, clique com o botão direito do mouse na pasta no projeto em que você deseja adicionar o arquivo e selecione **Adicionar**  >  **Item existente**. Na caixa de diálogo exibida, selecione um arquivo e escolha **Adicionar como Link** no menu suspenso do botão **Adicionar**. Desde que não existam arquivos conflitantes, esse comando criará um link na pasta selecionada. No entanto, o link não será adicionado se já existir um arquivo com o mesmo nome ou se já existir um link para esse arquivo no projeto.
 
-Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **'Salvar arquivos'** > **como** para salvar o arquivo em um local fora da hierarquia do projeto; O Visual Studio converte-o automaticamente em um link. Da mesma forma, um link pode ser convertido de volta usando **o File** > **Save As** para salvar o arquivo em algum lugar dentro da hierarquia do projeto.
+Se você tentar vincular a um arquivo que já existe nas pastas do projeto, ele será adicionado como um arquivo normal e não como um link. Para converter um arquivo em um link, selecione **arquivo**  >  **salvar como** para salvar o arquivo em um local fora da hierarquia do projeto; O Visual Studio converte-o automaticamente em um link. Da mesma forma, um link pode ser convertido novamente usando o **arquivo**  >  **salvar como** para salvar o arquivo em algum lugar na hierarquia do projeto.
 
 Se você mover um arquivo vinculado no **Gerenciador de Soluções**, o link será movido, mas o arquivo real não será afetado. Da mesma forma, a exclusão de um link removerá o link sem afetar o arquivo.
 
@@ -143,7 +141,7 @@ Geralmente, referências de extensão indicam dependências entre projetos e sã
 
 Uma referência a um arquivo *.pyd* habilita o IntelliSense no módulo gerado. O Visual Studio carrega o arquivo *.pyd* no interpretador do Python e examina seus tipos e suas funções. Ele também tenta analisar as cadeias de caracteres doc em funções para fornecer ajuda da assinatura.
 
-Se, a qualquer momento, o módulo de extensão é atualizado em disco, o Visual Studio analisa o módulo novamente em segundo plano. Esta ação não tem efeito sobre o comportamento de tempo de execução, mas algumas conclusões não estão disponíveis até que a análise esteja concluída.
+Se, a qualquer momento, o módulo de extensão é atualizado em disco, o Visual Studio analisa o módulo novamente em segundo plano. Essa ação não tem efeito sobre o comportamento de tempo de execução, mas algumas conclusões não estão disponíveis até que a análise seja concluída.
 
 Talvez você também precise adicionar um [caminho de pesquisa](search-paths.md) à pasta que contém o módulo.
 
@@ -169,6 +167,6 @@ from System.Windows.Forms import *
 É possível adicionar referências a entradas de produto do WebPI para implantação nos Serviços de Nuvem do Microsoft Azure, em que é possível instalar componentes adicionais por meio do feed do WebPI. Por padrão, o feed exibido é específico ao Python e inclui o Django, o CPython e outros componentes básicos. Você também pode selecionar seu próprio feed, conforme mostrado abaixo. Ao publicar no Microsoft Azure, uma tarefa de instalação instala todos os produtos referenciados.
 
 > [!IMPORTANT]
-> Os projetos webpi não estão disponíveis no Visual Studio 2017 ou visual studio 2019.
+> Os projetos do WebPI não estão disponíveis no Visual Studio 2017 ou no Visual Studio 2019.
 
 ![Referências do WebPI](media/projects-webPI-components.png)

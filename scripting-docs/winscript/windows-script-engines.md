@@ -13,19 +13,18 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27a500f9df91738e2db563f7e37ee646925b674e
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 449e6a2aa51b0e05a9909e5504211c4d4f236090
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835687"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238628"
 ---
 # <a name="windows-script-engines"></a>Mecanismos de script do Windows
 Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE COM que dá suporte às interfaces a seguir.  
   
-|||  
-|-|-|  
 |Interface|Descrição|  
+|-|-|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Fornece a capacidade de script básico. A implementação dessa interface é necessária.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Fornece a capacidade de adicionar texto de script, avaliar expressões e assim por diante. A implementação dessa interface é opcional. No entanto, se ela não for implementada, o mecanismo de script deverá implementar uma das interfaces IPersist* para carregar um script.|  
 |IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: dá suporte ao atributo PARAM= na marca OBJECT.|  
@@ -40,9 +39,8 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 ## <a name="registry-standard"></a>Padrão de Registro  
  Um mecanismo do Windows Script pode se identificar usando identificadores de categoria. Atualmente, o Windows Script define dois identificadores de categoria.  
   
-|||  
-|-|-|  
 |Categoria|Descrição|  
+|-|-|  
 |CATID_ActiveScript|Indica que os identificadores de classe (CLSIDs) são mecanismos de script do Windows que suportam, no mínimo, a interface [IActiveScript](../winscript/reference/iactivescript.md) e um mecanismo de persistência (a `IPersistStorage` `IPersistStreamInit` interface, ou IPersistPropertyBag).|  
 |CATID_ActiveScriptParse|Indica que o CLSIDs são mecanismos do Windows Script que dão suporte a, no mínimo, as interfaces [IActiveScript](../winscript/reference/iactivescript.md) e [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|  
   
@@ -51,9 +49,8 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 ## <a name="script-engine-states"></a>Estados de mecanismo de script  
  A qualquer determinado momento, um mecanismo do Windows Script pode estar em um de vários estados.  
   
-|||  
-|-|-|  
 |Estado|Descrição|  
+|-|-|  
 |não inicializado|O script não foi inicializado ou carregado usando uma interface IPersist* ou não tem uma interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) definida. O mecanismo de script geralmente não é utilizável neste estado até o script ser carregado.|  
 |inicializado|O script foi inicializado com uma interface `IPersist*` e tem uma interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) definida, mas não está conectado a objetos de host e eventos de coletor. Observe que esse estado significa simplesmente que o método `IPersist*::Load`, `IPersist*::InitNew` ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) foi concluído e que o método [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md) foi chamado. O mecanismo não é capaz de executar o código nesse modo. O mecanismo coloca na fila o código que o host passa a ele por meio do método [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) e executa o código após transicionar para o estado iniciado.<br /><br /> Já que as linguagens podem variar amplamente quanto à semântica, mecanismos de script não são necessários para dar suporte a essa transição de estado. Mecanismos que dão suporte ao método [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) devem, no entanto, dar suporte a essa transição de estado. Os hosts devem se preparar para essa transição e executar a ação apropriada: liberar o mecanismo de script atual, criar um novo mecanismo de script e chamar `IPersist*::Load`, `IPersist*::InitNew` ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) (e possivelmente também chamar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)). O uso dessa transição deve ser considerado uma otimização das etapas acima. Observe que todas as informações que o mecanismo de script obteve sobre os nomes dos itens nomeados e as informações de tipo que descrevem itens nomeados permanecem válidas.<br /><br /> Já que as linguagens variarem muito, definir a semântica exata dessa transição é difícil. No mínimo, o mecanismo de script deve desconectar todos os eventos e liberar todos os ponteiros SCRIPTINFO_IUNKNOWN obtidos chamando o método [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md). O mecanismo deverá obter novamente esses ponteiros depois que o script for executado novamente. O mecanismo de script também deve redefinir o script de volta para um estado inicial que apropriado para a linguagem. VBScript, por exemplo, redefine todas as variáveis e mantém qualquer código adicionado dinamicamente ao chamar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) com o sinalizador SCRIPTTEXT_ISPERSISTENT definido. Outras linguagens talvez precisem manter os valores atuais (assim como Lisp, porque não há nenhuma separação de dados do código) ou redefinir para um estado conhecido (incluindo linguagens com variáveis inicializadas estaticamente).<br /><br /> Observe que a transição para o estado iniciado deve ter a mesma semântica (ou seja, ela deve deixar o mecanismo de script no mesmo estado) de uma chamada a `IPersist*::Save` para salvar o mecanismo de script e, em seguida, de uma chamada a `IPersist*::Load` para carregar um novo mecanismo de script; essas ações devem ter a mesma semântica de [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md). Os mecanismos de script que ainda não dão suporte a `IActiveScript::Clone` nem a `IPersist*` devem considerar com cautela como a transição para o estado iniciado deve se comportar, de modo que uma transição como essa não viole as condições acima caso o suporte a `IActiveScript::Clone` ou a `IPersist*` tenha sido adicionado posteriormente.<br /><br /> Durante a transição para o estado iniciado, o mecanismo de script se desconectará dos coletores de eventos após os destruidores apropriados serem executados no script. Para evitar que esses destruidores sejam executados, o host pode primeiro passar o script para o estado desconectado antes de passá-lo para o estado iniciado.<br /><br /> Use [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread em execução do script sem aguardar a conclusão da execução de eventos atuais.|  
 |iniciado|A transição do estado inicializado para o estado iniciado faz com que o mecanismo execute qualquer código que tenha sido colocado em fila no estado inicializado. O mecanismo pode executar código enquanto está no estado iniciado, mas ele não está conectado a nenhum evento adicionado por meio do método [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md). O mecanismo pode executar código chamando a interface IDispatch obtida do método [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md) ou chamando [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). É possível que mais inicialização em segundo plano (carregamento progressivo) ainda esteja em andamento e que chamar o método [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) com o sinalizador SCRIPTSTATE_CONNECTED definido pode fazer com que o script seja bloqueado até que a inicialização seja concluída.|  
@@ -76,5 +73,5 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
   
  O site de script nunca é chamado de dentro do contexto de um simples método de controle de estado de thread (por exemplo, o método [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)) ou o método [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
-## <a name="see-also"></a>Confira também  
+## <a name="see-also"></a>Consulte também  
  [Interfaces do Windows Script](../winscript/windows-script-interfaces.md)

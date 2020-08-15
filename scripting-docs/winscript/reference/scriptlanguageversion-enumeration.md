@@ -11,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 511bc3525480306e0fe3075231c1e55794f01e9e
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574372"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238680"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>Enumeração SCRIPTLANGUAGEVERSION
 Especifica as versões de script possíveis.  
@@ -29,7 +29,7 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
   
 ## <a name="enumeration-values"></a>Valores de enumeração  
   
-|||  
+|Valor|Versão de script|  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|A versão padrão. O valor inteiro é 0.|  
 |SCRIPTLANGUAGEVERSION_5_7|Windows scripting versão 5,7. O valor inteiro é 1.|  

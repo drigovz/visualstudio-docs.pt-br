@@ -1,5 +1,5 @@
 ---
-title: Recursos do serviço de idioma legado2 | Microsoft Docs
+title: Features2 do serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,25 +10,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f12e816476aa54f334988b99b9e86e820784f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 04e7df7fc5c7532d2db45bc2b643a249d1e566c7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707365"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237900"
 ---
-# <a name="legacy-language-service-features"></a>Recursos do serviço de linguagem herdado
-Os tópicos a seguir listam alguns dos recursos de serviço de idioma legado que você pode fornecer.
+# <a name="legacy-language-service-features-2"></a>Recursos do serviço de linguagem herdada 2
+Os tópicos a seguir listam alguns dos recursos de serviço herdado de linguagem que você pode fornecer.
 
- Os serviços de linguagem legados são implementados como parte de um VSPackage, mas a maneira mais nova de implementar recursos de serviço de idioma é usar extensões MEF. Para saber mais sobre a nova maneira de implementar um serviço de idiomas, consulte [Editor e Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar um serviço de linguagem, consulte [extensões de serviço de editor e linguagem](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Recomendamos que você comece a usar a Nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de idiomas e permitirá que você aproveite os novos recursos do editor.
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Explica como implementar a coloração da sintaxe.
+ Explica como implementar a cor da sintaxe.
 
 - [Formatação automática em um serviço de linguagem herdado](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)
 
@@ -36,18 +36,18 @@ Os tópicos a seguir listam alguns dos recursos de serviço de idioma legado que
 
 - [Informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Explica como implementar a dica de ferramenta de informações do parâmetro IntelliSense.
+ Explica como implementar a dica de ferramenta de informações de parâmetro do IntelliSense.
 
 - [Preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Explica como implementar a lista de declarações do IntelliSense e a lista de conclusão de membros.
+ Explica como implementar a lista de instruções do IntelliSense e a lista de conclusão de membros.
 
 - [Estrutura de tópicos e texto oculto em um serviço de linguagem herdado](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)
 
- Explica como implementar o delineamento ou texto oculto.
+ Explica como implementar a estrutura de tópicos ou texto oculto.
 
 - [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Explica algumas das etapas na implementação do suporte ao depurador..
+ Explica algumas das etapas na implementação do suporte a depurador.
 
 ## <a name="related-sections"></a>Seções relacionadas

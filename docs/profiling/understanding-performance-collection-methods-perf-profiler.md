@@ -1,5 +1,5 @@
 ---
-title: Noções básicas sobre métodos de coleta de desempenho | Microsoft Docs
+title: Entender os métodos de coleta de desempenho do criador de perfil
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords: ''
@@ -11,14 +11,14 @@ manager: jillfra
 monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a49763a682f6b98b02fe40ba957efa8f5483c8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f0e24f3fc33ea456ad02bf9797b934a1a56d4492
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290055"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238576"
 ---
-# <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
+# <a name="understand-profiler-performance-collection-methods"></a>Entender os métodos de coleta de desempenho do criador de perfil
 
 Este documento descreve os métodos de coleta de dados que as ferramentas do criador de perfil de desempenho do Visual Studio utilizam. 
 

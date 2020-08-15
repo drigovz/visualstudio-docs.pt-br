@@ -1,5 +1,5 @@
 ---
-title: Registrando um serviço de idioma legado1 | Microsoft Docs
+title: Registrando um Service1 de linguagem herdada | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91776382fff1818986049558c9d86e8fce4d0dd7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80705899"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238875"
 ---
-# <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
-No mpf (framework de pacote gerenciado), o serviço de idiomaé oferecido por um VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (ver [VSPackages](../../extensibility/internals/vspackages.md)) e é registrado adicionando chaves de registro e entradas. Este processo de registro é feito em parte durante a instalação e em parte em tempo de execução.
+# <a name="registering-a-legacy-language-service-1"></a>Registrando um serviço de idioma herdado 1
+Na MPF (estrutura de pacote gerenciada), o serviço de linguagem é proffered por um VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) e é registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] adicionando chaves e entradas do registro. Esse processo de registro é feito parcialmente durante a instalação e, em parte, no tempo de execução.
 
-## <a name="register-the-language-service-by-using-attributes"></a>Registre o serviço de idioma usando atributos
- Os seguintes atributos são usados para registrar um serviço de idioma.
+## <a name="register-the-language-service-by-using-attributes"></a>Registrar o serviço de idioma usando atributos
+ Os atributos a seguir são usados para registrar um serviço de idioma.
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>
 
@@ -36,7 +36,7 @@ No mpf (framework de pacote gerenciado), o serviço de idiomaé oferecido por um
   Esses atributos são explicados abaixo
 
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute
- Este atributo registra seu serviço de idioma como um serviço.
+ Esse atributo registra o serviço de idioma como um serviço.
 
 ### <a name="example"></a>Exemplo
 
@@ -55,7 +55,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- Este atributo registra seu serviço de idioma especificamente como um serviço de idiomas. Ele permite definir opções que especificam os recursos que seu serviço de idioma oferece. O exemplo mostra um subconjunto das opções que um serviço de idioma pode fornecer. Para obter o conjunto completo <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>de opções de serviço de idioma, consulte .
+ Esse atributo registra o serviço de idioma especificamente como um serviço de linguagem. Ele permite que você defina opções que especificam os recursos que o serviço de linguagem oferece. O exemplo mostra um subconjunto das opções que um serviço de linguagem pode fornecer. Para obter o conjunto completo de opções de serviço de linguagem, consulte <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .
 
 ### <a name="example"></a>Exemplo
 
@@ -80,7 +80,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
- Este atributo associa seu serviço de idioma a uma extensão de arquivo. Sempre que um arquivo com essa extensão é carregado, em qualquer projeto, seu serviço de idioma é iniciado e usado para exibir o conteúdo do arquivo.
+ Esse atributo associa o serviço de linguagem a uma extensão de arquivo. Sempre que um arquivo com essa extensão é carregado, em qualquer projeto, seu serviço de idioma é iniciado e usado para exibir o conteúdo do arquivo.
 
 ### <a name="example"></a>Exemplo
 
@@ -98,8 +98,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguagecodeexpansionattribute"></a>FornecerLanguageCodeExpansionAttribute
- Este atributo registra um local a partir do qual os modelos de expansão de código ou trechos são obtidos. Essas informações são usadas pelo **Navegador Code Snippets** e pelo editor quando um trecho de código é inserido no arquivo de origem.
+### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
+ Esse atributo registra um local do qual os modelos de expansão de código ou de trecho são obtidos. Essas informações são usadas pelo **navegador de trechos de código** e pelo editor quando um trecho de código é inserido no arquivo de origem.
 
 ### <a name="example"></a>Exemplo
 
@@ -124,11 +124,11 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageeditoroptionpageattribute"></a>FornecerLanguageEditorPáginadepáginadedo
- Este atributo registra uma página de propriedade a ser exibida na caixa de diálogo **Opções** na categoria **Editor de texto.** Use um desses atributos para cada página a ser exibida para o seu serviço de idioma. Se você precisar organizar suas páginas em uma estrutura de árvore, use atributos adicionais para definir cada nó da árvore.
+### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
+ Esse atributo registra uma página de propriedades a ser exibida na caixa de diálogo **Opções** na categoria **Editor de texto** . Use um desses atributos para cada página a ser exibida para o serviço de idioma. Se você precisar organizar suas páginas em uma estrutura de árvore, use atributos adicionais para definir cada nó da árvore.
 
 ### <a name="example"></a>Exemplo
- Este exemplo mostra duas páginas de propriedade, **Opções** e **Recuse,** e um nó que contém a segunda página de propriedade.
+ Este exemplo mostra duas páginas de propriedades, **Opções** e **recuo**e um nó que contém a segunda página de propriedades.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -159,11 +159,11 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="proffer-the-language-service-at-run-time"></a>Ofereça o Serviço de Idiomas em tempo de execução
- Quando o pacote de idiomas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estiver carregado, você deve dizer que seu serviço de idioma está pronto. Você faz isso oferecendo o serviço. Isso é feito <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> no método. Além disso, você precisa iniciar um temporizador que ligue seu serviço de idioma durante períodos ociosos para que o análise de fundo possa ser realizado. Este temporizador ocioso também é usado <xref:Microsoft.VisualStudio.Package.DocumentProperties> para atualizar propriedades de documentos se você tiver implementado alguma através da classe. Para suportar um temporizador, seu <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> pacote deve <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> implementar a interface (apenas o método precisa ser totalmente implementado; os demais métodos podem retornar valores padrão).
+## <a name="proffer-the-language-service-at-run-time"></a>Oferecer o serviço de idioma em tempo de execução
+ Quando o pacote de idiomas for carregado, você deverá informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que o serviço de idioma está pronto. Para fazer isso, Proffering o serviço. Isso é feito no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método. Além disso, você precisa iniciar um temporizador que chama seu serviço de idioma durante períodos ociosos para que a análise em segundo plano possa ser realizada. Esse temporizador ocioso também é usado para atualizar as propriedades do documento se você tiver implementado qualquer por meio da <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe. Para dar suporte a um temporizador, seu pacote deve implementar a <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interface (somente o <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> método precisa ser totalmente implementado; os métodos restantes podem retornar valores padrão).
 
 ### <a name="example"></a>Exemplo
- Este exemplo mostra uma abordagem típica para oferecer um serviço e fornecer um temporizador ocioso.
+ Este exemplo mostra uma abordagem típica para Proffering um serviço e fornecer um temporizador ocioso.
 
 ```csharp
 

@@ -11,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 5f28e0ddd3764b3810d25bfbb9403c391c1bfd54
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574387"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238446"
 ---
 # <a name="scriptgctype-enumeration"></a>Enumeração SCRIPTGCTYPE
 O tipo de coleta de lixo a ser executado. Usado no método [IActiveScriptGarbageCollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
@@ -29,7 +29,7 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 ## <a name="enumeration-values"></a>Valores de enumeração  
   
-|||  
+|Valor|Tipo de coleta de lixo|  
 |-|-|  
 |SCRIPTGCTYPE_NORMAL|Faça a coleta de lixo normal. O valor inteiro é 0.|  
 |SCRIPTGCTYPE_EXHAUSTIVE|Faça uma coleta de lixo exaustiva. O valor inteiro é 1.|  

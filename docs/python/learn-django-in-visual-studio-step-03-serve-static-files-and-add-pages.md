@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279803"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238524"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Etapa 3: fornecer arquivos estáticos, adicionar páginas e usar a herança de modelo com o aplicativo Django
 
 **Etapa anterior: [Criar um aplicativo do Django com modos de exibição e modelos de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -180,7 +180,7 @@ As etapas a seguir adicionam uma página "Sobre" ao projeto "HelloDjangoApp" e l
 
 1. Execute o projeto para observar os resultados e verificar a navegação entre as páginas. Feche o servidor ao terminar.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a página inicial, mas não funcionou. Por que?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a página inicial, mas não funcionou. Por quê?
 
 Resposta: Embora a função de exibição em *views.py* seja nomeada `index`, os padrões de roteamento de URL no arquivo *urls.py* do projeto do Django não contêm uma expressão regular que corresponda à cadeia de caracteres "index". Para fazer a correspondência com essa cadeia de caracteres, você precisa adicionar outra entrada para o padrão `^index$`.
 

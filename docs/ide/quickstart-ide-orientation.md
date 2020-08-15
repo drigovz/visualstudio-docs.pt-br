@@ -1,5 +1,5 @@
 ---
-title: Tour do IDE do Visual Studio
+title: 'Início rápido: tour pelo IDE do Visual Studio'
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596964"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238849"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
 
@@ -21,13 +21,13 @@ Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integra
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Se você fechar a **Página Inicial** e desejar vê-la novamente, será possíve
 
 A primeira coisa que você verá depois de abrir o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para clonar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
 
-[![Janela de início no Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Iniciar janela no Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
 
@@ -79,7 +79,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
 ::: moniker range=">=vs-2019"
 
-1. Na janela inicial, escolha **Criar um novo projeto**.
+1. Na janela iniciar, escolha **criar um novo projeto**.
 
    Uma caixa de diálogo é aberta com o título **Criar um novo projeto**. Aqui, você pode pesquisar, filtrar e, em seguida, escolher um modelo de projeto. Ela também mostra uma lista dos modelos de projeto usados recentemente por você.
 
@@ -127,11 +127,11 @@ A **Lista de Erros** mostra erros, avisos e mensagens sobre o estado atual do c�
 
 ![Lista de Erros no Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Janela de Saída
+## <a name="output-window"></a>janela Saída
 
 A janela de **Saída** mostra as mensagens de saída do build do projeto e do provedor de controle do código-fonte.
 
-Vamos criar o projeto para ver uma saída de build. No menu **Build,** escolha **Build Solution**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
+Vamos criar o projeto para ver uma saída de build. No menu **Compilar** , escolha **Compilar solução**. A janela **Saída** obtém o foco automaticamente e exibe uma mensagem de build bem-sucedido.
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
@@ -141,7 +141,7 @@ A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente t
 
 ::: moniker range="vs-2017"
 
-1. Localize a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Alternativamente, **pressione Ctrl**+**Q** para acessá-lo.)
+1. Localize a caixa de pesquisa **Início Rápido** no canto superior direito do IDE. (Como alternativa, pressione **Ctrl** + **P** para acessá-lo.)
 
 2. Digite **detalhamento** na caixa de pesquisa. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
 
@@ -153,7 +153,7 @@ A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente t
 
 ::: moniker range=">=vs-2019"
 
-1. Pressione **Ctrl**+**Q** para ativar a caixa de pesquisa na parte superior do IDE.
+1. Pressione **Ctrl** + **Q** para ativar a caixa de pesquisa na parte superior do IDE.
 
 2. Digite **detalhamento** na caixa de pesquisa. A partir dos resultados exibidos, escolha **Alterar detalhamento do MSBuild**.
 
@@ -197,7 +197,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais funcionalidades do Visual Studio](../ide/advanced-feature-overview.md)

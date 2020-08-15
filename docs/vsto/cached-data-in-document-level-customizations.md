@@ -1,5 +1,5 @@
 ---
-title: Dados armazenados em cache em personalizações no nível de documento
+title: Dados armazenados em cache em personalizações em nível de documento
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,47 +18,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b0d04e37072af1f0053a6e395edcb856a115c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939313"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238342"
 ---
-# <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações no nível de documento
-  É dos principais objetivos das personalizações em nível de documento separar dados de exibição em documentos do Office. Dados refere-se às informações que são armazenadas no documento, incluindo números e texto. Modo de exibição refere-se a interface do usuário e o modelo de objeto do Microsoft Office Word e Microsoft Office Excel.
+# <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações em nível de documento
+  Um objetivo principal das personalizações no nível do documento é separar dados da exibição em documentos do Office. Os dados referem-se às informações armazenadas no documento, incluindo números e texto. A exibição refere-se à interface do usuário e ao modelo de objeto do Microsoft Office Word e Microsoft Office Excel.
 
- Visual Studio separa os dados da exibição no nível do documento, permitindo que os dados a ser inserido como uma *ilha de dados*, também chamado de *cache de dados*. Você pode ler ou modificar os dados diretamente sem iniciar o Word ou Excel. Isso é útil quando você precisa modificar dados em documentos em um servidor que não tenha o Microsoft Office instalado. Word e Excel são destinadas para uso em ambientes de cliente; eles não são projetados para ser executado em um servidor.
+ O Visual Studio separa os dados da exibição em personalizações em nível de documento, permitindo que os dados sejam inseridos como uma *ilha de dados*, também chamada de *cache de dados*. Você pode ler ou modificar os dados diretamente sem iniciar o Word ou o Excel. Isso é útil quando você precisa modificar dados em documentos em um servidor que não tem Microsoft Office instalado. O Word e o Excel são destinados ao uso em ambientes de cliente; Eles não foram projetados para serem executados em um servidor.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Para obter mais informações sobre personalizações em nível de documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).
+ Para obter mais informações sobre personalizações em nível de documento, consulte [visão geral do desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) e [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md).
 
-## <a name="understand-the-cached-data-programming-model"></a>Entender o modelo de programação de dados armazenados em cache
- Ilha de dados pode conter qualquer objeto em sua solução que atenda a certos requisitos. Esses objetos incluem <xref:System.Data.DataSet> objetos, <xref:System.Data.DataTable> objetos e qualquer outro objeto que pode ser serializado pelo <xref:System.Xml.Serialization.XmlSerializer> classe. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
+## <a name="understand-the-cached-data-programming-model"></a>Entender o modelo de programação de dados em cache
+ A ilha de dados pode conter qualquer objeto em sua solução que atenda a determinados requisitos. Esses objetos incluem <xref:System.Data.DataSet> objetos, <xref:System.Data.DataTable> objetos e qualquer outro objeto que possa ser serializado pela <xref:System.Xml.Serialization.XmlSerializer> classe. Para obter mais informações, consulte [armazenar dados em cache](../vsto/caching-data.md).
 
- Para fornecer o modo de exibição para os dados em cache, você pode associar controles dos Windows Forms e *hospedar controles* no documento para objetos na ilha de dados. Associação de dados entre os controles ligados a dados e da ilha de dados mantém as duas sincronizadas. Você também pode adicionar código de validação para os dados que não independentes dos controles. Para obter mais informações, consulte [ligar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Para fornecer a exibição dos dados armazenados em cache, você pode associar controles de Windows Forms e de *host* no documento a objetos na ilha de dados. A vinculação de dados entre a ilha de dados e os controles associados a dados mantém as duas sincronizadas. Você também pode adicionar código de validação aos dados que são independentes dos controles. Para obter mais informações, consulte [associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
- Controles de host são estendidos versões de objetos nativos em modelos de objeto do Excel e Word. Ao contrário de objetos nativos, controles de host podem ser vinculados diretamente a objetos de dados gerenciados. Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md) e [controles de formulários do Windows de visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ Os controles de host são versões estendidas de objetos nativos nos modelos de objetos do Excel e do Word. Ao contrário dos objetos nativos, os controles de host podem ser associados diretamente a objetos de dados gerenciados. Para obter mais informações, consulte Visão geral de [itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md) e [controles de Windows Forms em documentos do Office visão geral](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-## <a name="access-cached-data-on-the-server"></a>Dados de acesso armazenada em cache no servidor
- Para acessar dados armazenados em cache em um documento, você pode usar o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Essa classe faz parte do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], e ele pode ser usado em um servidor sem execução Excel ou Word. Quando o usuário abre o documento depois que você modificar os dados armazenados em cache, todos os controles que são associados aos dados são sincronizados automaticamente com as alterações e o usuário é apresentado com os dados atualizados. Para obter mais informações, consulte [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md).
+## <a name="access-cached-data-on-the-server"></a>Acessar dados armazenados em cache no servidor
+ Para acessar dados armazenados em cache em um documento, você pode usar a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Essa classe faz parte do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e pode ser usada em um servidor sem executar o Excel ou o Word. Quando o usuário abre o documento depois de modificar os dados armazenados em cache, todos os controles associados aos dados são automaticamente sincronizados com as alterações e o usuário recebe os dados atualizados. Para obter mais informações, consulte [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md).
 
- Excel e Word não são necessários para gravar os dados no servidor, apenas para exibi-lo no cliente. Excel e Word precisa nem ser instalado no servidor. Isso fornece maior escalabilidade e a capacidade de executar o processamento de lote rápida de documentos que contêm as ilhas de dados.
+ O Excel e o Word não são necessários para gravar nos dados no servidor, apenas para exibi-lo no cliente. O Excel e o Word não precisam nem ser instalados no servidor. Isso fornece uma escalabilidade aprimorada e a capacidade de executar processamento rápido em lote de documentos que contêm ilhas de dados.
 
-## <a name="data-caching-for-offline-use"></a>Dados em cache para uso offline
- Armazenamento de dados na ilha de dados permite cenários offline. Quando um usuário abre um documento ou solicita o documento do servidor, a ilha de dados é preenchida com os dados mais recentes. Ilha de dados é armazenado em cache no documento e, em seguida, está disponível offline. O usuário (e seu código) podem manipular os dados, mesmo que nenhuma conexão ao vivo está disponível. Quando o usuário reconecta, as alterações aos dados podem ser propagadas de volta para uma fonte de dados do servidor.
+## <a name="data-caching-for-offline-use"></a>Cache de dados para uso offline
+ O armazenamento de dados na ilha de dados permite cenários offline. Quando um usuário abre um documento pela primeira vez ou solicita o documento do servidor, a ilha de dados é preenchida com os dados mais recentes. A ilha de dados é armazenada em cache no documento e fica disponível offline. O usuário (e seu código) pode manipular os dados, embora nenhuma conexão dinâmica esteja disponível. Quando o usuário se reconecta, as alterações nos dados podem ser propagadas de volta para uma fonte de dados do servidor.
 
-## <a name="cached-data-and-custom-xml-parts-compared"></a>Dados armazenados em cache e partes XML personalizadas em comparação comparadas
- Partes XML personalizadas foram introduzidas no 2007 Microsoft Office system como uma maneira de armazenar partes arbitrárias de XML em um documento. Embora partes XML personalizadas são úteis em muitos dos mesmos cenários como o cache de dados, há algumas diferenças entre a ilha de dados e partes XML personalizadas. Para obter mais informações sobre partes XML personalizadas, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).
+## <a name="cached-data-and-custom-xml-parts-compared"></a>Dados armazenados em cache e partes XML personalizadas comparadas
+ As partes XML personalizadas foram introduzidas no sistema de Microsoft Office de 2007 como uma maneira de armazenar partes arbitrárias de XML em um documento. Embora partes XML personalizadas sejam úteis em muitos dos mesmos cenários que o cache de dados, há algumas diferenças entre a ilha de dados e as partes XML personalizadas. Para obter mais informações sobre partes XML personalizadas, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).
 
  A tabela a seguir lista algumas das diferenças e semelhanças.
 
-||Cache de dados|Partes XML personalizadas|
+|Pergunta/característica|Cache de dados|Partes XML personalizadas|
 |-|----------------|----------------------|
-|Quais aplicativos do Office podem usá-los?|Personalizações no nível de documento para os seguintes aplicativos:<br /><br /> -Excel<br />-   Word|Soluções de nível de documento e o nível de aplicativo para os seguintes aplicativos:<br /><br /> -Excel<br />-   PowerPoint<br />-   Word|
-|Quais tipos de dados pode armazenar?|Qualquer objeto público no seu assembly de personalização que atenda a certos requisitos. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).|Todos os dados XML.|
-|Você pode acessar os dados sem iniciar aplicativos do Microsoft Office?|Sim, usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornecida pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Sim, usando classes no <xref:System.IO.Packaging> namespace, ou usando o SDK de formato XML aberto.|
+|Quais aplicativos do Office podem usá-los?|Personalizações em nível de documento para os seguintes aplicativos:<br /><br /> -Excel<br />-Palavra|Soluções de nível de documento e de aplicativo para os seguintes aplicativos:<br /><br /> -Excel<br />-PowerPoint<br />-Palavra|
+|Quais tipos de dados você pode armazenar?|Qualquer objeto público em seu assembly de personalização que atenda a determinados requisitos. Para obter mais informações, consulte [armazenar dados em cache](../vsto/caching-data.md).|Quaisquer dados XML.|
+|Você pode acessar os dados sem iniciar Microsoft Office aplicativos?|Sim, usando a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornecida pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Sim, usando classes no <xref:System.IO.Packaging> namespace ou usando o SDK de formato XML aberto.|
 
 ## <a name="see-also"></a>Consulte também
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)

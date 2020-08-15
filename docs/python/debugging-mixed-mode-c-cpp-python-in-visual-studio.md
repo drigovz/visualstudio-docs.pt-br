@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533556"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238654"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -36,9 +36,8 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
 ![Depuração de modo misto do Python no Visual Studio](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução ao build, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista ao vídeo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Aprofundamento: Criar módulos nativos) (youtube.com, 9min09s). O vídeo aplica-se para o Visual Studio 2015 e 2017. |
+![ícone de câmera de filme para vídeo](../install/media/video-icon.png "Assistir a um vídeo") Para obter uma introdução à criação, ao teste e à depuração de módulos C nativos com o Visual Studio, confira [aprofundamento: criar módulos nativos](https://youtu.be/D9RlT06a1EI) (YouTube.com, 9 min 09s). O vídeo aplica-se para o Visual Studio 2015 e 2017.
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitar a depuração de modo misto em um projeto do Python
 

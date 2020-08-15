@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544190"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238888"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -75,11 +75,11 @@ Para obter mais informações sobre Team Foundation Server, consulte:
 
 - [Testando, validando e verificando o código atualizado](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>Funções de diagramas de arquitetura e modelagem no desenvolvimento de software
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> Funções de diagramas de arquitetura e modelagem no desenvolvimento de software
 
 A tabela a seguir descreve as funções que essas ferramentas podem reproduzir durante vários e vários estágios do ciclo de vida do desenvolvimento de software:
 
-||**Modelagem de requisitos de usuário**|**Modelagem de processos de negócios**|**Arquitetura do sistema & design**|**Visualização de código & exploração**|**Verificação**|
+|Ferramenta/função|Modelagem de requisitos de usuário|Modelagem de processos de negócios|Arquitetura do sistema & design|Visualização de código & exploração|Verificação|
 |------|-|-|-|-|-|
 |Diagrama de DSL (linguagem específica do domínio)|Sim|Sim|Sim|||
 |Diagrama de dependência, validação de camada|||Sim|Sim|Sim|
@@ -167,7 +167,7 @@ Agora, o jantar deve estimar o custo da reunião do novo requisito. Isso depende
 |-|-|
 |*Diagrama de classe baseado em código*<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existentes no código.|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>Manter o código consistente com o design
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> Manter o código consistente com o design
  Agora, o jantar deve garantir que o código atualizado permaneça consistente com o design. Eles criam diagramas de dependência que descrevem as camadas de funcionalidade no sistema, especificam as dependências permitidas entre elas e associam os artefatos de solução a essas camadas.
 
 |**Diagrama**|**Descrita**|
@@ -220,7 +220,7 @@ Consulte:
 
 - [Criar sua lista de pendências e tarefas usando o Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>Testar, validar e fazer check-in de código
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> Testar, validar e fazer check-in de código
 
 Conforme as equipes concluem cada tarefa, elas verificam seu código no controle do código-fonte e recebem lembretes de Team Foundation Server, caso se esqueçam. Antes que Team Foundation Server aceite seus check-ins, as equipes executam testes de unidade e validação de dependência para verificar o código em relação aos seus casos de teste e ao design. Eles usam Team Foundation Server para executar compilações, testes de unidade automatizados e validação de dependência regularmente. Isso ajuda a garantir que o código atenda aos seguintes critérios:
 
@@ -262,7 +262,7 @@ Consulte:
 
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>Visualizar código existente: mapas de código
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> Visualizar código existente: mapas de código
 
 Os mapas de código mostram a organização atual e as relações no código. Os itens são representados por *nós* no mapa e as relações são representadas por *links*. Os mapas de código podem ajudá-lo a executar os seguintes tipos de tarefas:
 
@@ -332,7 +332,7 @@ Esse mapa mostra que a classe PaymentApprover agora está no namespace DinnerNow
 |Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para garantir que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependências ou dependências pretendidas existentes, crie um mapa de código e itens relacionados ao grupo. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de classe (baseado em código)|Classes existentes no código para um projeto específico.<br /><br /> Para visualizar e modificar uma classe existente no código, use Designer de Classe.<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>Definir um glossário de tipos: diagramas de classe
+### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a> Definir um glossário de tipos: diagramas de classe
  Os diagramas de classe definem as entidades, os termos ou os conceitos que participam do sistema e suas relações entre si. Por exemplo, você pode usar esses diagramas durante o desenvolvimento para descrever os atributos e as operações de cada classe, independentemente de seu idioma ou estilo de implementação.
 
  Para ajudar a Lucerne a descrever e discutir as entidades que participam do caso de uso de pagamento do processo, elas desenham o seguinte diagrama de classe:
@@ -401,7 +401,7 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 |Diagrama de dependência|Defina a arquitetura lógica do sistema como está relacionada às classes.<br /><br /> Use a validação de dependência para garantir que o código permaneça consistente com o design.<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para identificar classes, suas relações e seus métodos, crie um mapa de código que mostre esses elementos.<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>Descrever a arquitetura lógica: diagramas de dependência
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> Descrever a arquitetura lógica: diagramas de dependência
  Os diagramas de dependência descrevem a arquitetura lógica de um sistema organizando os artefatos em sua solução em grupos abstratos ou *camadas*. Os artefatos podem ser muitas coisas, como namespaces, projetos, classes, métodos e assim por diante. As camadas representam e descrevem as funções ou tarefas que os artefatos executam no sistema. Você também pode incluir a validação de camada em suas operações de criação e check-in para garantir que o código permaneça consistente com seu design.
 
  Para manter o código consistente com o design, o jantar agora e a Lucerne usam o diagrama de dependência a seguir para validar seu código à medida que ele evolui:
@@ -480,7 +480,7 @@ Os diagramas de dependência ajudam você a:
 |-|-|
 |**Fóruns**|- [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

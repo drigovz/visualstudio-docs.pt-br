@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547310"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238355"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Criar uma linguagem específica de domínio baseada em Windows Forms
 
@@ -30,10 +30,8 @@ O modelo DSL **mínimo do WinForm designer** cria uma DSL mínima que você pode
 
     Neste tutorial, os seguintes nomes são assumidos:
 
-   | | |
-   |-|-|
-   | Nome da solução e DSL | FarmApp |
-   | Namespace | Company. FarmApp |
+    - Nome da solução e da DSL: `FarmApp`
+    - Namespace `Company.FarmApp`
 
 2. Experimente o exemplo inicial que o modelo fornece:
 
@@ -51,9 +49,9 @@ O modelo DSL **mínimo do WinForm designer** cria uma DSL mínima que você pode
 
    Na instância principal do Visual Studio, observe os seguintes pontos sobre a solução de DSL:
 
-- `DslDefinition.dsl`Não contém elementos de diagrama. Isso ocorre porque você não usará diagramas de DSL para exibir modelos de instância dessa DSL. Em vez disso, você associará um formulário do Windows ao modelo e os elementos no formulário exibirão o modelo.
+- `DslDefinition.dsl` Não contém elementos de diagrama. Isso ocorre porque você não usará diagramas de DSL para exibir modelos de instância dessa DSL. Em vez disso, você associará um formulário do Windows ao modelo e os elementos no formulário exibirão o modelo.
 
-- Além dos `Dsl` `DslPackage` projetos e, a solução contém um terceiro projeto chamado `UI.` projeto de **interface do usuário** contém a definição de um controle de Windows Forms. `DslPackage`depende `UI` e `UI` depende de `Dsl` .
+- Além dos `Dsl` `DslPackage` projetos e, a solução contém um terceiro projeto chamado `UI.` projeto de **interface do usuário** contém a definição de um controle de Windows Forms. `DslPackage` depende `UI` e `UI` depende de `Dsl` .
 
 - No `DslPackage` projeto, `UI\DocView.cs` contém o código que exibe o controle de Windows Forms definido no `UI` projeto.
 
@@ -86,9 +84,9 @@ A definição de DSL a seguir é usada neste passo a passos.
 
 4. Use a ferramenta de **classe de domínio nomeada** para criar as seguintes classes de domínio:
 
-    - `Field`-Forneça uma propriedade de domínio adicional chamada `Size` .
+    - `Field` -Forneça uma propriedade de domínio adicional chamada `Size` .
 
-    - `Animal`-No janela Propriedades, defina **modificador de herança** como **abstrato**.
+    - `Animal` -No janela Propriedades, defina **modificador de herança** como **abstrato**.
 
 5. Use a ferramenta de **classe de domínio** para criar as seguintes classes:
 
@@ -162,7 +160,7 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
      Defina a propriedade **DataMember** como **animais** ou **Fields**.
 
-10. Defina as propriedades **DataSource** de `AnimalGridView` como `AnimalBinding` e de `FieldGridView` para `FieldBinding` .
+10. Defina as propriedades **DataSource** de `AnimalGridView` como `AnimalBinding` e de  `FieldGridView` para `FieldBinding` .
 
 11. Ajuste o layout do controle de farm para o seu gosto.
 
@@ -220,7 +218,7 @@ A solução DSL agora pode ser criada e executada, embora você queira adicionar
 
 3. No **FarmApp Explorer**, abra o menu de atalho no nó raiz do **farm** e escolha **Adicionar novo pastor**.
 
-     `Goat1`aparece no modo de exibição **animais** .
+     `Goat1` aparece no modo de exibição **animais** .
 
     > [!WARNING]
     > Você deve usar o menu de atalho no nó do **farm** , não no nó **animais** .
@@ -321,7 +319,7 @@ No entanto, esse código não define um nome padrão para o novo item. Ele não 
 
 Portanto, recomendamos que você use <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para criar novos elementos. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
