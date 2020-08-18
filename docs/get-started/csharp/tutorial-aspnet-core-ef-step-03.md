@@ -133,7 +133,7 @@ No próximo vídeo, você aprenderá como adicionar suporte à API Web em seu ap
 
 [Etapa 4: expondo uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Razor Pages com o Entity Framework Core no ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [Razor Pages do ASP.NET Core com EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
