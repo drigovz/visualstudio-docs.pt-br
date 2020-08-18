@@ -1,5 +1,5 @@
 ---
-title: Medir o desempenho da linha de comando
+title: Medir o desempenho na linha de comando
 description: Meça o desempenho da CPU e o uso da memória gerenciada em seu aplicativo na linha de comando.
 ms.custom: ''
 ms.date: 02/21/2020
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285838"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507993"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
 
@@ -41,9 +41,9 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
 
 1. Inicie o Bloco de notas e, em seguida, abra o Gerenciador de Tarefas para obter o PID (ID de processo). No Gerenciador de Tarefas, encontre o PID na guia **Detalhes**.
 
-1. Abra um prompt de comando e altere para o diretório com o executável do agente de coleta, normalmente aqui.
+1. Abra um prompt de comando e altere para o diretório com o executável do agente de coleta, normalmente aqui (por Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Inicie *VSDiagnostics.exe* digitando o comando a seguir.
 
@@ -53,9 +53,15 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
 
    Os argumentos que precisam ser incluídos são:
 
-   * \<*id*>Identifica a sessão de coleta. A ID precisa ser um número entre 1 e 255.
-   * \<*pid*>, O PID do processo no qual você deseja criar o perfil, nesse caso, o PID encontrado na etapa 1
+   * \<*id*> Identifica a sessão de coleta. A ID precisa ser um número entre 1 e 255.
+   * \<*pid*>, O PID do processo no qual você deseja criar o perfil, nesse caso, o PID encontrado na etapa 1.
    * \<*configFile*>, o arquivo de configuração para o agente de coleta que você deseja iniciar. Para obter mais informações, confira [Arquivos de configuração para os agentes](#config_file).
+
+   Por exemplo, você pode usar o comando a seguir para o agente CPUUsageBase substituindo o *pid* conforme descrito anteriormente.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Redimensione o Bloco de notas ou digite algo para garantir que algumas informações interessantes de criação de perfil sejam coletadas.
 
@@ -65,7 +71,9 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Acesse a saída de arquivo do comando anterior e abra-a no Visual Studio para examinar as informações coletadas.
+1. Localize a saída do arquivo *. diagsession* do comando anterior e abra-o no Visual Studio (**arquivo**  >  **aberto**) para examinar as informações coletadas.
+
+   Para analisar os resultados, consulte a documentação da ferramenta de desempenho correspondente. Por exemplo, isso pode ser o [uso da CPU](../profiling/cpu-usage.md), a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md)ou a ferramenta de [banco de dados](../profiling/analyze-database.md) .
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> Arquivos de configuração do Agente
 

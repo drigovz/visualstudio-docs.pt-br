@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285875"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508074"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -89,88 +89,4 @@ Você pode salvar os relatórios e abri-los na lista de **sessões abertas recen
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Coletar dados de criação de perfil da linha de comando
 
-Para medir os dados de desempenho da linha de comando, você pode usar VSDiagnostics.exe, que está incluído com o Visual Studio ou o Ferramentas Remotas. Isso é útil para capturar rastreamentos de desempenho em sistemas nos quais o Visual Studio não está instalado ou para gerar scripts da coleção de rastreamentos de desempenho. Ao usar VSDiagnostics.exe, você começa uma sessão de diagnóstico que captura e armazena dados de criação de perfil até que a ferramenta seja interrompida. Nesse ponto, esses dados são exportados para um arquivo. diagsession e você pode abrir esse arquivo no Visual Studio para analisar os resultados.
-
-### <a name="launch-an-application"></a>Iniciar um aplicativo
-
-1. Abra um prompt de comando e altere para o diretório com VSDiagnostics.exe:
-
-   ```
-   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-2. Inicie VSDiagnostics.exe com o seguinte comando:
-
-   ```
-   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
-   ```
-
-   Você deve incluir os seguintes argumentos:
-
-   - \<id\>: Identifica a sessão de coleta. A ID precisa ser um número entre 1 e 255.
-   - \<appToLaunch\>: O arquivo executável a ser iniciado e perfil.
-   - \<configFile\>: O arquivo de configuração para o agente de coleta que você deseja iniciar.
-
-3. Para interromper a coleta e exibir seus resultados, siga as etapas na seção "parar coleta" mais adiante neste artigo.
-
-### <a name="attach-to-an-existing-application"></a>Anexar a um aplicativo existente
-
-1. Abra um aplicativo, como o bloco de notas e, em seguida, abra o **Gerenciador de tarefas** para obter sua ID de processo (PID). No Gerenciador de tarefas, localize o PID na guia **detalhes**   .
-2. Abra um prompt de comando e altere para o diretório com o executável do agente de coleta. Normalmente, está aqui:
-
-   ```
-   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-3. Inicie o arquivo de VSDiagnostics.exe digitando o comando a seguir.
-
-   ```
-   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
-   ```
-
-   Você deve incluir os seguintes argumentos:
-
-   - \<id\>: Identifica a sessão de coleta. A ID precisa ser um número entre 1 e 255.
-   - \<pid\>: O PID do processo no qual você deseja criar o perfil, que nesse caso é o PID encontrado na etapa 1.
-   - \<configFile\>: O arquivo de configuração para o agente de coleta que você deseja iniciar. Para obter mais informações, consulte [arquivos de configuração para agentes](../profiling/profile-apps-from-command-line.md).
-
-4. Para interromper a coleta e exibir seus resultados, siga as etapas na próxima seção.
-
-### <a name="stop-collection"></a>Parar coleta
-
-1. Pare a sessão de coleta e envie a saída para um arquivo, digitando o comando a seguir.
-
-   ```
-   VSDiagnostics.exe stop <id> /output:<path to file>
-   ```
-
-2. Acesse a saída de arquivo do comando anterior e abra-a no Visual Studio para examinar as informações coletadas.
-
-## <a name="agent-configuration-files"></a> Arquivos de configuração do Agente
-
-Os agentes de coleta são componentes intercambiáveis que coletam tipos diferentes de dados, dependendo do que você está tentando medir.
-Para sua conveniência, você pode armazenar essas informações em um arquivo de configuração do agente. O arquivo de configuração é um arquivo. JSON que contém, no mínimo, o nome do arquivo. dll e seu CLSID de COM. Estes são os arquivos de configuração de exemplo que podem ser encontrados na seguinte pasta:
-
-```
-<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
-```
-
-Consulte os links a seguir para baixar e exibir os arquivos de configuração do agente:
-
-- https://aka.ms/vs/diaghub/agentconfig/cpubase
-- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
-- https://aka.ms/vs/diaghub/agentconfig/cpulow
-- https://aka.ms/vs/diaghub/agentconfig/database
-- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
-
-As configurações de os (base/alta/baixa) correspondem aos dados coletados para a ferramenta de criação de perfil de [uso da CPU](../profiling/cpu-usage.md) .
-As configurações de DotNetObjectAlloc (base/baixa) correspondem aos dados coletados para a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md).
-
-As configurações Base/Baixa/Alta referem-se à taxa de amostragem. Por exemplo, Baixa representa 100 amostras/segundo e Alta, 4.000 amostras/segundo.
-Para que a ferramenta VSDiagnostics.exe funcione com um agente de coleta, ela requer uma DLL e um CLSID COM para o agente apropriado. O agente também pode ter opções de configuração adicionais. Se você usar um agente sem um arquivo de configuração, use o formato no seguinte comando:
-
-```
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+Para medir os dados de desempenho da linha de comando, você pode usar VSDiagnostics.exe, que está incluído com o Visual Studio ou o Ferramentas Remotas. Isso é útil para capturar rastreamentos de desempenho em sistemas nos quais o Visual Studio não está instalado ou para gerar scripts da coleção de rastreamentos de desempenho. Para obter instruções detalhadas, consulte [medir o desempenho do aplicativo na linha de comando](../profiling/profile-apps-from-command-line.md).
