@@ -9,116 +9,85 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387311"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584522"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
 > [!NOTE]
 > Para o Visual Studio para Mac, confira [Como relatar um problema no Visual Studio para Mac](/visualstudio/mac/report-a-problem).
 
-Você pode relatar um problema do Visual Studio ou de seu instalador usando a Ferramenta de Comentários incluída neles. A Ferramenta de Comentários permite que você inclua facilmente informações de diagnóstico nos seus comentários e ajuda as equipes do Visual Studio a diagnosticar e corrigir problemas com muito mais eficiência. Aqui estão as etapas para relatar um problema.
+Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A ferramenta de comentários interna permite que você adicione facilmente informações de diagnóstico que ajudam as equipes do Visual Studio a diagnosticar e corrigir os problemas. Aqui estão as etapas para relatar um problema.
 
 1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar**a  >  **enviar comentários**para  >  **relatar um problema**.
-![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/vsfeedbackentry.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
+![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/feedback-button.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
 
-1. Se não tiver entrado, selecione **Entrar** conforme mostrado na seguinte captura de tela. Siga as instruções na tela para se conectar.
+1. Ao clicar em **relatar um problema** , você abrirá o navegador padrão e entrará usando a mesma conta usada para entrar no Visual Studio
 
-   ![Entrar para relatar um problema](../ide/media/sign-in-new-ux.png)
+   ![Entrar para relatar um problema](../ide/media/feedback-browser-top.png)
 
-   Você não só pode relatar um problema quando está conectado, mas também pode votar e comentar sobre qualquer comentário existente.
+1. Comece inserindo o título descritivo do seu relatório de bugs. Deve ter pelo menos 25 caracteres.
 
-1. Depois de entrar, você poderá ver seus **Problemas** e **Atividade** na tela **Itens que Acompanho**
+    ![Relatar um problema](../ide/media/feedback-report.png)
 
-   ![Itens que Acompanho](../ide/media/items-i-follow.png)
+1. Depois de começar a digitar, as duplicatas possíveis são mostradas no campo título
 
-1. O Visual Studio fornece uma interface para pesquisar o problema e ver se outras pessoas já o relataram. Se alguém tiver relatado, "vote como positivo" para nos informar.
-   > [!NOTE]
-   > Para pesquisar, insira o texto desejado na caixa de pesquisa e clique em Enter ou pressione o ícone Pesquisar.
+    ![Pesquisar duplicatas](../ide/media/feedback-search.png)
 
-   ![Pesquisar e votar em problemas semelhantes](../ide/media/search-and-vote.png)
+1. Selecione os possíveis relatórios de erros duplicados para ver se há um correspondente ao seu próprio problema. Se houver, vote para ele em vez de criar seu próprio tíquete.
 
-1. Se você não encontrar o problema encontrado, escolha **relatar novo problema** na parte inferior da tela.
+    ![Vote em duplicatas](../ide/media/feedback-duplicate.png)
 
-1. Crie um título descritivo para o problema que nos ajude a encaminhá-lo à equipe correta do Visual Studio.
+2. Se nenhuma duplicata for encontrada, continue inserindo uma descrição do problema. É importante ser o mais claro possível para aumentar as chances de que possamos reproduzir o bug. Certifique-se de incluir etapas claras de reprodução.
 
-1. Forneça todos os detalhes adicionais e, se possível, forneça as etapas para reproduzir o problema.
+3. Se relevante para o relatório de bugs, faça uma captura de tela marcando a caixa de seleção *incluir captura de tela do Visual Studio* .
 
-   ![Relatar um problema novo](../ide/media/report-new-problem.png)
+    ![Fazer uma captura de tela ](../ide/media/feedback-screenshot.png) *somente engenheiros da Microsoft podem ver a captura de tela*
 
-1. Selecione **Avançar** para ir para a guia **anexos** . Aqui, você pode capturar a tela atual para enviá-la à Microsoft. Para anexar capturas de tela adicionais ou outros arquivos, escolha **Anexar Arquivos Adicionais**.
+    Você pode até mesmo cortar a captura de tela diretamente no navegador para remover partes confidenciais ou não relacionadas.
 
-   ![Anexe uma captura de tela a um relatório de problema do Visual Studio](media/report-a-problem-screenshot.png)
+4. Uma das melhores maneiras de ajudar a equipe de engenharia do Visual Studio a resolver o problema é fornecer um rastreamento e arquivos de despejo de heap a serem examinados. Você pode fazer isso facilmente registrando as etapas que resultaram no bug. 
 
-1. Se você não quiser anexar uma captura de tela ou [gravar uma reprodução](#record-a-repro), selecione **Avançar** para passar para a guia **Resumo**.
+    ![Registrar suas ações ](../ide/media/feedback-recording.png) *somente engenheiros da Microsoft podem ver a gravação*
 
-1. Selecione **Enviar** para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. (Se o botão **Enviar** estiver esmaecido, verifique se você forneceu um título e uma descrição para o relatório.)
+5. Examine os arquivos anexados e carregue arquivos adicionais se você acreditar que ele ajudará a diagnosticar o problema.   
 
-   Para obter informações sobre quais dados são coletados, consulte [Data we collect](developer-community-privacy.md#data-we-collect) (Dados que coletamos).
+    ![Arquivos anexados ](../ide/media/feedback-attachments.png) *somente engenheiros da Microsoft podem ver os arquivos anexados*
 
-## <a name="record-a-repro"></a>Gravar uma reprodução
+6. A última etapa é pressionar o botão **Submit (enviar** ). O envio do relatório o enviará diretamente para o sistema interno de relatórios de bugs do Visual Studio aguardando a triagem.
 
-Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar a diagnosticar problemas. Apreciamos quando você usa a ferramenta **Relatar um Problema** para registrar as etapas de reprodução e enviar os dados para a Microsoft. Veja como fazer isso:
+## <a name="when-further-information-is-needed"></a>Quando forem necessárias mais informações
 
-1. Depois de inserir um título e uma descrição para o problema, selecione **Avançar** para passar para a guia **Anexos**.
+Quando faltam informações importantes no problema, atribuímos o estado de **mais informações** . Comentamos o problema com as informações específicas de que precisamos e você receberá uma notificação por email. Se não recebermos as informações dentro de sete dias, enviaremos um lembrete. Depois disso, fechamos o tíquete após 14 dias de inatividade.
 
-1. Selecione a guia **Gravar**.
+1. Siga o link no email para o relatório de problemas ou vá para meus comentários para ver todos os relatórios no estado de **mais informações** .
 
-1. Em **Gravar suas ações**, selecione a instância atual do Visual Studio se você puder reproduzir o problema nela. Se você não puder, por exemplo, se o Visual Studio parar de responder, selecione **\<Create a new instance>** para registrar as ações em uma nova instância do Visual Studio.
+    ![Meus comentários](../ide/media/feedback-my-feedback.png)
 
-1. Selecione **Iniciar Gravação**. Conceda permissão para executar a ferramenta.
+1. A seleção do link fornecer mais informações no relatório de problemas o leva para uma nova tela. A partir daqui, você pode ver quais informações estão sendo solicitadas.
 
-   ![Escolha “Iniciar Gravação” para fornecer um arquivo de despejo de heap e rastreamento em um relatório de problema do Visual Studio](../ide/media/record-dialog-box.png)
-
-1. Quando a ferramenta **Gravador de Passos** aparecer, execute as etapas que reproduzem o problema.
-
-1. Ao terminar, escolha o botão **Parar Gravação**.
-
-1. Aguarde alguns minutos para o Visual Studio coletar e compactar as informações gravadas.
-
-   Para obter informações sobre quais dados são coletados, consulte [Data we collect](developer-community-privacy.md#data-we-collect) (Dados que coletamos).
-
-## <a name="when-further-information-is-needed-need-more-info"></a>Quando mais informações são necessárias (Precisa de Mais Informações)
-
-Começando no Visual Studio 2017 versão 15.5, há um novo fluxo de trabalho para ajudar os usuários a fornecerem informações adicionais sobre relatórios de problemas.
-
-1. Quando um engenheiro da Microsoft define o problema da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/) com o estado **Precisa de Mais Informações**, todos os usuários que postaram, votaram, seguiram ou comentaram no problema recebem uma notificação na ferramenta **Relatar um Problema** no Visual Studio.
-
-   ![Notificação de Precisa de Mais Informações no Visual Studio](../ide/media/nmi-notification.png)
-
-1. Clique no link **Exibir Problemas** para filtrar e classificar a exibição dos problemas que precisam de atenção. Esses problemas também têm um indicador ao lado deles para diferenciá-los na pesquisa geral.
-
-1. Clique em um problema para ver a exibição dos detalhes do problema.
-
-   ![Notificação de Precisa de Mais Informações](../ide/media/nmi-details-view.png)
-
-1. Para exibir a solicitação **Precisa de Mais Informações**, clique no link **Exibir a solicitação e responder** na exibição de detalhes do problema. Uma caixa de diálogo mostra a solicitação.
-
-   ![Notificação de Precisa de Mais Informações](../ide/media/nmi-request.png)
+   ![Meus comentários](../ide/media/feedback-need-more-info.png)
 
 1. Você pode fornecer mais informações adicionando comentários, anexos ou gravando as etapas. Essa experiência é semelhante a relatar um novo problema ou fornecer informações adicionais ao votar em um problema.
 
 1. O engenheiro da Microsoft fazendo a solicitação recebe uma notificação sobre as informações extras fornecidas. Se ele tiver informações suficientes para investigar, o estado do problema mudará. Caso contrário, o engenheiro solicita ainda mais informações.
 
-   > [!NOTE]
-   > * Quando você responde, a notificação desaparece. No seu lugar, você vê uma faixa que agradece e torna fácil uma maneira de fornecer ainda mais informações.
-   > * Depois que o problema muda o estado, a notificação desaparece para todas as pessoas que estão acompanhando o problema.
-   > * Mais de uma pessoa pode responder na mesma solicitação de **Precisa de Mais Informações**.
-   > * Não existe um fluxo de trabalho de **Precisa de Mais Informações** na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/) quando você a acessa diretamente por meio de um navegador da Web, mas também é possível fornecer comentários e anexos lá.
+Você pode ver essas solicitações na tela **meus comentários** junto com todos os outros **problemas** e **sugestões**.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Pesquisar soluções ou fornecer comentários
 
 Se você não quiser ou não puder usar o Visual Studio para relatar um problema, há a possibilidade de que o problema já tenha sido relatado e uma solução tenha sido postada na página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
 
-Se você não tem um problema a ser relatado, mas deseja sugerir um recurso, há um local para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Se você não tiver um problema para relatar, mas desejar sugerir um recurso, há um lugar para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Confira também
 
+* [Diretrizes da comunidade de desenvolvedores](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Relatar um problema com C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
