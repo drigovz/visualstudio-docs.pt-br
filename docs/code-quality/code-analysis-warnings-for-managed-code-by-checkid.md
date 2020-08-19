@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214602"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612871"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
@@ -375,7 +376,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1070 | [CA1070: Não declarar os campos de evento como virtuais](../code-quality/ca1070.md) | Um [evento do tipo campo](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) foi declarado como virtual. |
 | CA1200 | [CA1200: Evitar o uso de marcas cref com um prefixo](../code-quality/ca1200.md) | O atributo [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) em uma marca de documentação XML significa "referência de código". Ele especifica que o texto interno da marca é um elemento de código, como um tipo, método ou propriedade. Evite usar `cref` marcas com prefixos, pois isso impede que o compilador Verifique as referências. Ele também impede que o IDE (ambiente de desenvolvimento integrado) do Visual Studio Localize e atualize essas referências de símbolo durante refatoração. |
 | CA1300 | [CA1300: Especificar MessageBoxOptions](../code-quality/ca1300.md) | Para exibir corretamente uma caixa de mensagem para as culturas que usam uma ordem de leitura da direita para a esquerda, os membros RightAlign e RtlReading da enumeração MessageBoxOptions devem ser passados para o método Show. |
-| CA1301 | [CA1301: Evitar aceleradores duplicados](../code-quality/ca1301.md) | Uma tecla de acesso, também conhecida como acelerador, dá ao teclado acesso a um controle usando-se a tecla ALT. Quando vários controles têm chaves de acesso duplicadas, o comportamento da tecla de acesso não é bem definido. |
+| CA1301 | [CA1301: Evitar aceleradores duplicados](../code-quality/ca1301.md) | Uma tecla de acesso, também conhecida como acelerador, dá ao teclado acesso a um controle usando-se a tecla ALT. Quando vários controles têm teclas de acesso duplicadas, o comportamento da tecla de acesso não é bem definido. |
 | CA1302 | [CA1302: Não embutir no código cadeias de caracteres específicas da localidade](../code-quality/ca1302.md) | A enumeração System.Environment.SpecialFolder contém membros que fazem referência às pastas especiais do sistema. Os locais dessas pastas podem ter valores diferentes em diferentes sistemas operacionais; o usuário pode alterar alguns dos locais; e os locais são diferentes para cada linguagem. O método Environment.GetFolderPath retorna os locais associados à enumeração Environment.SpecialFolder, localizada e apropriada para o computador atualmente em execução. |
 | CA1303 | [CA1303: Não passar literais como parâmetros localizados](../code-quality/ca1303.md) | Um método visível externamente passa um literal de cadeia de caracteres como um parâmetro para um construtor ou método .NET, e essa cadeia de caracteres deve ser localizável. |
 | CA1304 | [CA1304: Especificar CultureInfo](../code-quality/ca1304.md) | Um método ou um construtor chama um membro que tem uma sobrecarga que aceita um parâmetro System.Globalization.CultureInfo, e o método ou o construtor não chama a sobrecarga que utiliza o parâmetro CultureInfo. Quando um objeto CultureInfo ou System.IFormatProvider não for fornecido, o valor padrão fornecido pelo membro sobrecarregado poderá não ter o efeito desejado em todas as localidades. |
@@ -464,7 +465,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1831 |[CA1831: Usar AsSpan em vez de indexadores baseados em intervalo na cadeia de caracteres quando apropriado](../code-quality/ca1831.md) | Ao usar um indexador de intervalo em uma cadeia de caracteres e atribuir implicitamente o valor ao &lt; tipo de Char ReadOnlySpan &gt; , o método <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> será usado em vez de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que produz uma cópia da parte solicitada da cadeia de caracteres. |
 | CA1832 |[CA1832: Usar AsSpan ou AsMemory em vez de indexadores baseados em intervalo para obter a parte ReadOnlySpan ou ReadOnlyMemory de uma matriz](../code-quality/ca1832.md) | Ao usar um indexador de intervalo em uma matriz e atribuir implicitamente o valor a um <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo ou, o método <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> será usado em vez de, o <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> que produzirá uma cópia da parte solicitada da matriz. |
 | CA1833 |[CA1833: Usar AsSpan ou AsMemory em vez de indexadores baseados em intervalo para obter a parte Span ou Memory de uma matriz](../code-quality/ca1833.md) | Ao usar um indexador de intervalo em uma matriz e atribuir implicitamente o valor a um <xref:System.Span%601> <xref:System.Memory%601> tipo ou, o método <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> será usado em vez de, o <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> que produzirá uma cópia da parte solicitada da matriz. |
-| CA1835 |[CA1835: prefira as sobrecargas baseadas em Memory' para ' ReadAsync ' e ' WriteAsync '](../code-quality/ca1835.md) | ' Stream ' tem uma sobrecarga ' ReadAsync ' que usa um ' byte de memória &lt; &gt; ' como o primeiro argumento e uma sobrecarga ' WriteAsync ' que usa um ' ReadOnlyMemory &lt; byte &gt; ' como o primeiro argumento. Prefira chamar as sobrecargas com base na memória, que são mais eficientes. |
+| CA1835 |[CA1835: prefira as sobrecargas baseadas em Memory' para ' ReadAsync ' e ' WriteAsync '](../code-quality/ca1835.md) | ' Stream ' tem uma sobrecarga ' ReadAsync ' que usa um ' byte de memória &lt; &gt; ' como o primeiro argumento e uma sobrecarga ' WriteAsync ' que usa um ' ReadOnlyMemory &lt; byte &gt; ' como o primeiro argumento. Prefira chamar sobrecargas com base na memória, que são mais eficientes. |
 | CA1836 |[CA1836: preferir `IsEmpty` `Count` quando disponível](../code-quality/ca1836.md) | Prefira `IsEmpty` a propriedade que seja mais eficiente do que `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> ou <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> para determinar se o objeto contém ou não itens. |
 | CA1838 | [CA1838: Evite `StringBuilder` parâmetros para P/Invokes](../code-quality/ca1838.md) | O marshaling de ' StringBuilder ' sempre cria uma cópia de buffer nativo, resultando em várias alocações para uma operação de marshaling. |
 | CA1900 | [CA1900: Campos de tipo de valor devem ser portáteis](../code-quality/ca1900.md) | Essa regra verifica se as estruturas declaradas usando-se o layout explícito serão alinhadas corretamente durante a realização de marshaling para o código não gerenciado em sistemas operacionais de 64 bits. |
@@ -606,4 +607,5 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA5400 | [CA5400 garantir que a verificação da lista de certificados revogados do HttpClient não esteja desabilitada](../code-quality/ca5400.md) | Um certificado revogado não é mais confiável. Ele pode ser usado por invasores passando dados mal-intencionados ou roubando dados confidenciais na comunicação HTTPS. |
 | CA5401 | [CA5401 não use createencryptr com IV não padrão](../code-quality/ca5401.md) | A criptografia simétrica sempre deve usar um vetor de inicialização não reproduzível para evitar ataques de dicionário. |
 | CA5402 | [CA5402 usar createencryptr com o IV padrão](../code-quality/ca5402.md) | A criptografia simétrica sempre deve usar um vetor de inicialização não reproduzível para evitar ataques de dicionário. |
-| IL3000 | [IL3000 Evite usar o caminho do arquivo de assembly de acesso ao publicar como um arquivo único](../code-quality/il3000.md) | Evite usar o caminho do arquivo de assembly de acesso ao publicar como um arquivo único |
+| IL3000 | [IL3000 Evite acessar o caminho do arquivo de assembly ao publicar como um único arquivo](../code-quality/il3000.md) | Evite usar o caminho do arquivo de assembly de acesso ao publicar como um único arquivo |
+| IL3001 | [IL3001 Evite acessar o caminho do arquivo de assembly ao publicar como um arquivo único](../code-quality/il3001.md) | Evite acessar o caminho do arquivo de assembly ao publicar como um arquivo único |
