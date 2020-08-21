@@ -1,5 +1,5 @@
 ---
-title: Como usar o tema escuro e alterar a cor do texto no Visual Studio
+title: Como usar o tema escuro e alterar a cor do texto no editor
 description: Saiba como definir o tema de cores padrão do Visual Studio para o modo escuro e alterar as cores de fonte no editor de texto.
 ms.date: 08/20/2020
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
+ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711710"
+ms.locfileid: "88724920"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Como personalizar o IDE do Visual Studio e o editor de texto
 
@@ -68,7 +68,7 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Alterar a cor do texto
+## <a name="change-text-colors-in-the-editor"></a>Alterar as cores do texto no editor
 
 Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar um arquivo XML para ver as cores padrão.
 
@@ -128,7 +128,7 @@ Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar 
 
 Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esperamos que você explore as outras opções de personalização na caixa de diálogo **Opções**, para realmente ter um Visual Studio personalizado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Alterar fontes, cores e opções de alto contraste no Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)
