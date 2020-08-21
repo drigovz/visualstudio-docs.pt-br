@@ -989,5 +989,7 @@
               items:
                 - name: Visão geral
                   displayName: publish warnings
-                - name: 'IL3000: evite usar o acesso ao Caminho do arquivo do assembly na publicação como um arquivo único'
+                - name: 'IL3000: evite o acesso ao Caminho do arquivo do assembly na publicação como um arquivo único'
                   href: il3000.md
+                - name: 'IL3001: evite o acesso ao Caminho do arquivo do assembly na publicação como um arquivo único'
+                  href: il3001.md
