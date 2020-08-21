@@ -1,5 +1,5 @@
 ---
-title: Erro-a avaliação da função &#39;função&#39; atingiu o tempo limite e precisava ser anulada de forma não segura | Microsoft Docs
+title: Erro-a avaliação da &apos; função de função &apos; atingiu o tempo limite e precisava ser anulada de forma não segura | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386713"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706549"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: avaliar a função &#39;função&#39; atingiu o tempo limite e precisava ser anulado de forma não segura
 
@@ -33,9 +33,9 @@ Há várias soluções possíveis para esse problema.
 A mensagem de erro informará o nome da função que o depurador tentou chamar. Se você puder modificar essa função, poderá impedir que o depurador chame o método getter ou ToString de propriedade. Tente uma das seguintes opções:
 
 * Altere o método para algum outro tipo de código além de um método getter ou ToString de propriedade e o problema irá desaparecer.
-    -ou-
+    - ou -
 * (Para ToString) Defina um atributo DebuggerDisplay no tipo e você pode fazer com que o depurador avalie algo diferente de ToString.
-    -ou-
+    - ou -
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que precisa permanecer como uma propriedade para motivos de compatibilidade de API, mas deve ser realmente um método.
 
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 da solução: faça com que o código de destino peça ao depurador para anular a avaliação

@@ -1,5 +1,5 @@
 ---
-title: Erro-você não tem permissão para inspecionar o processo&#39;s identidade | Microsoft Docs
+title: Erro-você não tem permissão para inspecionar a identidade do processo &apos; | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85459916"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706523"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: você não tem permissão para inspecionar a identidade do processo&#39;s
 Você não tem permissão para inspecionar a identidade do processo. Isto pode ocorrer devido à configuração do sistema.

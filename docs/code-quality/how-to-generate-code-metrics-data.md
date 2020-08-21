@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250536"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706510"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
 Você pode gerar dados de métricas de código de três maneiras:
 
-- Instalando [analisadores do FxCop](#fxcop-analyzers-code-metrics-rules) e habilitando as quatro regras de métricas de código (manutenção) que ele contém.
+- Habilitando os [analisadores de qualidade de código do .net](#net-code-quality-analyzers-code-metrics-rules) e habilitando as regras de métricas de código (possibilidade de manutenção) que ele contém.
 
 - Escolhendo o comando de menu [ **analisar**  >  **calcular métricas de código** ](#calculate-code-metrics-menu-command) no Visual Studio.
 
 - Na [linha de comando](#command-line-code-metrics) para projetos do C# e do Visual Basic.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>Regras de métricas de código de analisadores do FxCop
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>Regras de métricas de código de analisadores de qualidade de código .NET
 
-O [pacote NuGet do FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) inclui várias regras do [analisador](roslyn-analyzers-overview.md) de métricas de código:
+Os analisadores de qualidade de código .NET incluem várias regras do [analisador](roslyn-analyzers-overview.md) de métricas de código:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -50,7 +50,7 @@ Essas regras são desabilitadas por padrão, mas você pode habilitá-las de [**
 
 ### <a name="configuration"></a>Configuração
 
-Você pode configurar os limites em que as regras de métricas de código no pacote de analisadores do FxCop são acionadas.
+Você pode configurar os limites nos quais as regras de métricas de código são acionadas.
 
 1. Crie um arquivo de texto. Por exemplo, você pode nomeá-lo *CodeMetricsConfig.txt*.
 
@@ -336,7 +336,7 @@ A `LinesOfCode` métrica é mais precisa e confiável na nova ferramenta de mét
 
 Outras métricas, como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas das versões anteriores do *Metrics.exe*, mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics.exe*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
