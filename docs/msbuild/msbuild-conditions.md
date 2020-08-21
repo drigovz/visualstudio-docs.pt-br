@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289229"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711697"
 ---
 # <a name="msbuild-conditions"></a>Condições do MSBuild
 
@@ -58,8 +58,14 @@ Você pode usar métodos de cadeia de caracteres em condições, conforme mostra
 </Project>
 ```
 
+Em arquivos de projeto do MSBuild, não há nenhum tipo booliano verdadeiro. Os dados boolianos são representados nas propriedades que podem estar vazias ou definidas para qualquer valor. Portanto, `'$(Prop)' == 'true'` significa "If prop is `true` ", mas `'$(Prop)' != 'false'` significa "If prop is `true` or undefineble or Set to outra coisa".
+
+A lógica booliana é avaliada apenas no contexto de condições, de modo que as configurações de propriedade, como `<Prop2>'$(Prop1)' == 'true'</Prop>` são representadas como uma cadeia de caracteres (após a expansão da variável), não avaliadas como valores Boolianos.  
+
+O MSBuild implementa algumas regras de processamento especiais para facilitar o trabalho com propriedades de cadeia de caracteres que são usadas como valores Boolianos. Os literais boolianos são aceitos, portanto, `Condition="true"` e `Condition="false"` funcionam conforme o esperado. O MSBuild também inclui regras especiais para dar suporte ao operador de negação booliana. Portanto, se `$(Prop)` for ' true ', `!$(Prop)` expandirá para `!true` e isso será comparado igual a `false` , como você esperaria.
+
 ## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
-- [Walkthrough: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [Passo a passo: Criar um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

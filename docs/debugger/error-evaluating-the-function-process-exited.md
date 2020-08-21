@@ -1,5 +1,5 @@
 ---
-title: Erro-o processo de destino saiu com código &#39;código&#39; ao avaliar a função &#39;função&#39; | Microsoft Docs
+title: Erro-o processo de destino saiu com &apos; código &apos; de código ao avaliar a &apos; função function &apos; | Microsoft Docs
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460772"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711632"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erro: o processo de destino saiu com o código &#39;código&#39; ao avaliar a função &#39;function&#39;
 
@@ -35,9 +35,9 @@ A mensagem de erro informará o nome da função que o depurador tentou chamar. 
 Se você puder modificar essa função, poderá impedir que o depurador chame o método ou getter da propriedade `ToString` . Tente uma das seguintes opções:
 
 * Altere o método para algum outro tipo de código além de um método getter ou ToString de propriedade e o problema irá desaparecer.
-    -ou-
+    - ou -
 * (Para `ToString` ) Defina um `DebuggerDisplay` atributo no tipo e você pode fazer com que o depurador avalie algo diferente de `ToString` .
-    -ou-
+    - ou -
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que precisa permanecer como uma propriedade para motivos de compatibilidade com a API, mas deve realmente ser um método.
 
 Se você não puder modificar esse método, poderá interromper o processo de destino em uma instrução alternativa e tentar novamente a avaliação.

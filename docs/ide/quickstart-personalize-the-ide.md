@@ -1,42 +1,44 @@
 ---
-title: Definir as fontes e o tema de cores
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Como usar o tema escuro e alterar a cor do texto no Visual Studio
+description: Saiba como definir o tema de cores padrão do Visual Studio para o modo escuro e alterar as cores de fonte no editor de texto.
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233147"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711710"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizar o Editor e o IDE do Visual Studio
+# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Como personalizar o IDE do Visual Studio e o editor de texto
 
-Neste tutorial, que leva de 5 a 10 minutos, personalizaremos o tema de cores do Visual Studio, selecionando o tema escuro. Além disso, personalizaremos as cores para dois tipos diferentes de texto no editor de texto.
+Neste artigo de instruções, personalizaremos o tema de cores do Visual Studio selecionando o tema escuro. Além disso, personalizaremos as cores para dois tipos diferentes de texto no editor de texto.
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>Definir o tema de cores
+## <a name="set-the-color-theme-for-the-ide"></a>Definir o tema de cores para o IDE
 
 O tema de cores padrão da interface do usuário do Visual Studio é chamado **Azul**. Vamos alterar para **Escuro**.
 
 1. Na barra de menus, que é a linha de menus, como **Arquivo** e **Editar**, escolha **Ferramentas** > **Opções**.
 
-1. Na página **Deops Meio Ambiente** > **Geral,** altere a seleção **de tema de cor** para **Escuro**e escolha **OK**.
+1. Na **Environment**  >  página opções**gerais** do ambiente, altere a seleção de **tema de cores** para **escuro**e, em seguida, escolha **OK**.
 
    O tema de cores para todo o IDE (ambiente de desenvolvimento) do Visual Studio é alterado para **Escuro**.
 
@@ -55,14 +57,14 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Você pode instalar temas predefinidos adicionais instalando o **Visual Studio Color Theme Editor** do Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
+> Você pode instalar temas predefinidos adicionais instalando o **Editor de tema de cores do Visual Studio** na [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Depois que você instalar essa ferramenta, temas de cores adicionais serão exibidos na lista suspensa **Tema de cores**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Você pode criar seus próprios temas instalando o **Visual Studio Color Theme Designer** do Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+> Você pode criar seus próprios temas instalando o **Designer de tema de cores do Visual Studio** na [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
 
 ::: moniker-end
 
@@ -70,7 +72,7 @@ O tema de cores padrão da interface do usuário do Visual Studio é chamado **A
 
 Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar um arquivo XML para ver as cores padrão.
 
-1. Na barra de menu, escolha **Arquivo** > **novo** > **arquivo**.
+1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **arquivo**.
 
 1. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Arquivo XML** e escolha **Abrir**.
 
@@ -126,7 +128,8 @@ Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar 
 
 Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esperamos que você explore as outras opções de personalização na caixa de diálogo **Opções**, para realmente ter um Visual Studio personalizado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Personalize o editor](../ide/how-to-change-text-case-in-the-editor.md)
-- [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Alterar fontes, cores e opções de alto contraste no Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)
+- [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
