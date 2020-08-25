@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: Referência de API não gerenciada do ClickOnce
           href: clickonce-unmanaged-api-reference.md
+    - name: Referência de Projetos do Instalador do Visual Studio
+      items:
+        - name: Extensão de Projetos do Instalador do Visual Studio e .NET Core 3.1
+          href: installer-projects-net-core.md
