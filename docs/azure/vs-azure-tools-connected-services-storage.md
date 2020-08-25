@@ -9,23 +9,23 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639389"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800509"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adicionando armazenamento do Azure usando os serviços conectados do Visual Studio
 
 Com o Visual Studio, você pode conectar qualquer um dos seguintes itens ao armazenamento do Azure usando o recurso **Serviços conectados** :
 
 - .NET Framework aplicativo de console
-- ASP.NET MVC (.NET Framework) 
+- ASP.NET MVC (.NET Framework)
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Funções do Azure
+- Azure Functions
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -34,7 +34,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Serviços conectados no Visual Studio para Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio com a carga de trabalho do Azure instalada.
 - Um projeto de um dos tipos com suporte

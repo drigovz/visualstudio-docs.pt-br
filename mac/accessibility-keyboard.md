@@ -1,17 +1,17 @@
 ---
 title: Navegação de teclado no Visual Studio para Mac
 description: Usando Visual Studio para Mac com comandos de teclado
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
-ms.openlocfilehash: 8f77c9e3410517e0d2e2285cf455b901ec066246
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938667"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801783"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navegação de teclado no Visual Studio para Mac
 
@@ -37,7 +37,7 @@ Visual Studio para Mac tem uma variedade de atalhos de teclado para várias tare
 
 1. Selecione **Associação de chave**e digite uma combinação de teclas.
 
-1. Escolha **Aplicar**.
+1. Selecione **Aplicar**.
 
 > [!TIP]
 > Você pode escolher entre uma lista de esquemas de associação de chave para atender melhor às suas necessidades se estiver familiarizado com outros atalhos de teclado comuns (por exemplo, Visual Studio no Windows).

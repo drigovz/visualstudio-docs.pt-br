@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286647"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800964"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analisadores do FxCop no Visual Studio
 
@@ -28,7 +28,7 @@ Você pode instalar esses analisadores do FxCop como um pacote NuGet ou como uma
 
 No Visual Studio 2019 versão 16,3 e posterior, você pode instalar o pacote NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) diretamente da página de propriedades de análise de código do projeto:
 
-1. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções**, selecione **Propriedades**e, em seguida, selecione a guia **análise de código** .
+1. Clique com o botão direito do mouse (ou selecione e mantenha pressionado) no nó do projeto em **Gerenciador de soluções**, selecione **Propriedades**e vá para a guia **análise de código** .
 
    ![Instalar o pacote de analisadores do FxCop na página de propriedades no Visual Studio](media/install-fxcop-properties-page.png)
 
@@ -153,7 +153,7 @@ Se você quiser verificar se a extensão está instalada, selecione **extensões
 
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)

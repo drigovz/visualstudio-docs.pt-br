@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371905"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801029"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -26,9 +26,9 @@ Você pode criar um conjunto de regras personalizadas para atender às necessida
 
 Para criar um conjunto de regras personalizado, você pode abrir um conjunto de regras internas no **Editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando uma regra é violada, &mdash; por exemplo, mostrar um aviso ou um erro.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no projeto e selecione **Propriedades**.
 
-2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
+2. Nas páginas de **Propriedades** , vá para a guia **análise de código** .
 
 ::: moniker range="vs-2017"
 
@@ -42,7 +42,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 
 ::: moniker-end
 
-   - Selecione o conjunto de regras que você deseja personalizar.
+   - Escolha o conjunto de regras que você deseja personalizar.
 
      \- ou –
 
@@ -57,7 +57,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 
 Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diálogo **novo arquivo** :
 
-1. Selecione **arquivo**  >  **novo**  >  **arquivo**ou pressione **Ctrl** + **N**.
+1. Selecione **arquivo**  >  **novo**  >  **arquivo**ou selecione **Ctrl** + **N**.
 
 2. Na caixa de diálogo **novo arquivo** , selecione a categoria **geral** à esquerda e, em seguida, selecione **conjunto de regras de análise de código**.
 
@@ -70,9 +70,9 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 > [!NOTE]
 > O procedimento a seguir não se aplica a projetos do .NET Core, que não têm uma guia de propriedade de **análise de código** .
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no projeto e selecione **Propriedades**.
 
-2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
+2. Nas páginas de **Propriedades** , vá para a guia **análise de código** .
 
 ::: moniker range="vs-2017"
 
@@ -86,7 +86,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 
 ::: moniker-end
 
-4. Na caixa de diálogo **Adicionar ou remover conjuntos de regras** , selecione os conjuntos de regras que deseja incluir no novo conjunto de regras.
+4. Na caixa de diálogo **Adicionar ou remover conjuntos de regras** , escolha os conjuntos de regras que deseja incluir no novo conjunto de regras.
 
    ![Caixa de diálogo Adicionar ou remover conjuntos de regras](media/add-remove-rule-sets.png)
 

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235193"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800756"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -24,13 +24,13 @@ O instalador modular do Visual Studio permite que você escolha e instale *carga
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 ## <a name="connect-to-databases"></a>Conectar-se aos bancos de dados
 
-O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o **Server Explorer,** no menu principal, escolha **Exibir** > **o Explorador do Servidor**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
+**Gerenciador de servidores** ajuda a procurar e gerenciar SQL Server instâncias e ativos localmente, remotamente e no Azure, Salesforce.com, Microsoft 365 e sites. Para abrir **Gerenciador de servidores**, no menu principal, escolha **Exibir**  >  **Gerenciador de servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
@@ -126,7 +126,7 @@ A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada n
 
 Também é possível automatizar o processo de build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="extend-visual-studio"></a>Estenda o Visual Studio
+## <a name="extend-visual-studio"></a>Estender o Visual Studio
 
 Se o Visual Studio não tiver a funcionalidade exata de que você precisa, será possível adicioná-la! É possível personalizar o IDE de acordo com o estilo e fluxo de trabalho, adicionar suporte para ferramentas externas que ainda não estão integradas ao Visual Studio e modificar a funcionalidade existente para aumentar a produtividade. Para encontrar a versão mais recente das Ferramentas de Extensibilidade do Visual Studio (SDK do VS), confira [Visual Studio SDK](../extensibility/visual-studio-sdk.md) (SDK do Visual Studio).
 
@@ -136,8 +136,8 @@ Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o
 
 Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novidades do Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

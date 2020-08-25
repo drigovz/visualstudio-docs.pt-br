@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05f2984f135ef363d1a5acfb55f4705404f4ea7d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375853"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800236"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -43,7 +43,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 #### <a name="microsoft-domains"></a>Domínios da Microsoft
 
-| Domain | Finalidade |
+| Domínio | Finalidade |
 | - | - |
 | go.microsoft.com | Resolução da URL de instalação |
 | aka.ms | Resolução da URL de instalação |
@@ -110,7 +110,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Criação do projeto do<br>Explorador do Cookiecutter<br>descobrir <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
 | Pacote do Python <br>descobrir<br><br>Pacote do Python <br>gerenciamento<br><br>Novo <br>Python <br> project <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br>Usada para resolver os seguintes novos modelos de projeto do Python para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
 | Web do Office <br>add-in <br> Manifest <br>Verificação <br>Serviço | verificationservice.osi.office.net | https/443 | Usada para validar os manifestos de suplementos de Web do Office |
-| Suplementos do SharePoint <br>Suplementos do Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Usado para publicar e testar os suplementos do SharePoint e do Office no SharePoint Online e no Office 365 |
+| Suplementos do SharePoint <br>Suplementos do Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Usado para publicar e testar os suplementos do SharePoint e do Office no SharePoint Online e Microsoft 365 |
 | Serviço de teste do <br>Gerenciador de Fluxo de Trabalho<br> Host | | http/12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
 | Estatísticas de confiabilidade <br>coletadas automaticamente <br>e outros <br>CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário)<br> para o SDK do Azure <br>para Ferramentas do SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Usado para enviar estatísticas de confiabilidade (dados de falha/sem resposta) do usuário para a Microsoft. Os despejos de falha reais/sem resposta ainda serão carregados se Relatório de Erros do Windows estiver habilitado; somente as informações estatísticas serão suprimidas; <br>Usada para revelar padrões de uso anônimos para a extensão do SDK de Ferramentas do Azure para o Visual Studio e para padrões de uso para ferramentas do SQL para Visual Studio |
 | Visual Studio <br> CEIP (Programas de Aperfeiçoamento da <br>Experiência do Usuário) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Usada para coletar logs de erro e padrões de uso anônimos <br><br>Usada para rastrear problemas de congelamento da interface do usuário |
@@ -118,8 +118,8 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Recomendações de <br>extensão e verificações de <br>filmes | marketplace.visualstudio.com | https/443 | Usada para verificar a disponibilidade de ferramentas de publicação atualizadas. Se desabilitada, uma potencial extensão recomendada para publicação Web poderá não ser mostrada |
 | Informações de ponto de extremidade de criação <br>de Recurso do Azure atualizadas | \*.blob.core.windows.net | https/443 | Usada para atualizar os pontos de extremidade usados para a criação de Recursos do Azure para determinados Serviços do Azure. Se desabilitada, as últimas localizações de ponto de extremidade baixadas ou inseridas são usadas |
 | Depuração remota e <br>Criação de perfil remota de <br>Websites do Azure | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | Usada para anexar o depurador remoto a sites do Azure. Se desabilitada, a anexação do depurador remoto a sites do Azure não funcionará |
-| Active Directory <br>Grafo | graph.windows.net | https/443 | Usada para provisionar novos aplicativos do Azure Active Directory. Também usado pelo provedor de serviço conectado MSGraph do Office 365 |
-| Funções do Azure <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
+| Active Directory <br>Grafo | graph.windows.net | https/443 | Usada para provisionar novos aplicativos do Azure Active Directory. Também usado pelo provedor de serviços Microsoft 365 MSGraph-conectado |
+| Azure Functions <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
 | Cordova | npmjs.org<br>gradle.org | & de http/80<br/>https/443 | O HTTP é usado para downloads de Gradle durante o build. O HTTPS é usado para incluir plug-ins do Cordova nos projetos |
 | Gerenciador de Nuvem | 1. &#60;ponto de extremidade do cluster&#62; <br>Service Fabric <br>2. &#60;ponto de extremidade de gerenciamento&#62;<br>General Cloud Exp <br>3. &#60;ponto de extremidade do grafo&#62;<br>General Cloud Exp<br>4. &#60;ponto de extremidade da conta de armazenamento&#62;<br>Nós de Armazenamento <br>5. &#60;Azure portal URLs&#62;<br>General Cloud Exp <br>6. &#60;pontos de extremidade do key vault&#62; <br>Nós de VM do Azure Resource Manager<br>7. &#60;Endereço de IP pública do cluster&#62;<br>Depuração remota do Service Fabric e Rastreamentos de ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dinâmico | 1. exemplo: test12.eastus.cloudapp.com<br>2. recupera assinaturas e recupera/gerencia recursos do Azure<br>3. recupera Azure Stack assinaturas<br>4. gerencia recursos de armazenamento (por exemplo: mystorageaccount.blob.core.windows.net)<br>5. opção de menu de contexto "abrir no portal" (abre um recurso no portal do Azure)<br>6. cria e usa cofres de chaves para depuração de VM (exemplo: myvault.vault.azure.net) <br><br>7. o aloca dinamicamente o bloco de portas com base no número de nós no cluster e nas portas disponíveis. <br><br>Um bloco de portas tentará obter três vezes o número dos nós com um mínimo de 10 portas.<br><br>Para rastreamentos de Streaming, é feita uma tentativa para obter o bloco de portas de 810. Se qualquer um dos blocos de portas já estiver em uso, será feita uma tentativa de obter o próximo bloco e assim por diante. (O balanceador de carga está vazio, então as portas de 810 provavelmente serão usadas) <br><br>Da mesma forma para depuração, quatro conjuntos de blocos de portas são reservados: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
 | Serviços de Nuvem | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;serviço de nuvem do usuário&#62;.cloudapp.net <br> &#60;VM do usuário&#62;.&#60;região&#62;.azure.com | 1. rdp/3389 <br><br> 2. https/443 <br><br> 3. https/443 <br><br> 4. https/443 <br><br> 5. https/443 <br><br>6. tcp <br>a) 30398 <br>b) 30400 <br>c) 31398 <br>d) 31400 <br>e) 32398 <br>f) 32400 | 1. Área de Trabalho Remota à VM de serviços de nuvem <br><br> 2. componente de conta de armazenamento da configuração de diagnóstico particular <br><br> 3. portal do Azure <br><br> 4. Gerenciador de Servidores-&#42; de armazenamento do Azure é a conta de armazenamento nomeada do cliente  <br><br> 5. links para abrir o portal &#47; baixar o certificado de assinatura &#47; arquivo de configurações de publicação <br><br>6. a) Porta local do conector para depuração remota para serviço de nuvem e VM<br> 6. b) Porta pública do conector para depuração remota para serviço de nuvem e VM <br> 6. c) Porta local do encaminhador para depuração remota para serviço de nuvem e VM <br> 6. d) Porta pública do encaminhador para depuração remota para serviço de nuvem e VM  <br> 6. e) Porta local do carregador de arquivos para depuração remota para serviço de nuvem e VM <br> 6. f) Porta pública do carregador de arquivos para depuração remota para serviço de nuvem e VM |
@@ -157,7 +157,7 @@ Aqui estão algumas outras opções de suporte:
 * Sugira um recurso, acompanhe os problemas do produto e encontre respostas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
 * Use sua conta do [GitHub](https://github.com/) para falar conosco e com outros desenvolvedores do Visual Studio nas [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Requisitos de conectividade do Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)

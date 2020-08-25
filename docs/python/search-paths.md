@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520374"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801159"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 
@@ -29,7 +29,7 @@ No entanto, o Visual Studio ignora a variável de ambiente do caminho de pesquis
 
 Dessa forma, o Visual Studio fornece um meio para especificar caminhos de pesquisa diretamente nos projetos e ambientes. O código que você executa ou depura no Visual Studio recebe os caminhos de pesquisa no valor de `PYTHONPATH` (e outras variáveis equivalentes). Ao adicionar caminhos de pesquisa, o Visual Studio inspeciona as bibliotecas nessas localizações e compila bancos de dados do IntelliSense para elas quando necessário (Visual Studio 2017 versão 15.5 e anterior; a criação do banco de dados pode demorar algum tempo, dependendo do número de bibliotecas).
 
-Para adicionar um caminho de pesquisa, acesse **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse em **Caminhos de Pesquisa**, selecione **Adicionar Pasta ao Caminho de Pesquisa**:
+Para adicionar um caminho de pesquisa, vá para **Gerenciador de soluções**, expanda o nó do projeto, clique com o botão direito do mouse em **caminhos de pesquisa**e selecione **Adicionar pasta ao caminho de pesquisa**:
 
 ::: moniker range="vs-2017"
 ![Comando Adicionar Pasta ao Caminho de Pesquisa em Caminhos de Pesquisa no Gerenciador de Soluções](media/search-paths-command.png)
@@ -46,7 +46,7 @@ Depois que as pastas forem adicionadas aos caminhos de pesquisa, o Visual Studio
 
 Os arquivos com uma extensão *.zip* ou *.egg* também podem ser adicionados como caminhos de pesquisa selecionando **Adicionar Arquivo Morto Zip ao Caminho de Pesquisa**. Assim como ocorre com pastas, o conteúdo desses arquivos é examinado e disponibilizado para o IntelliSense.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)

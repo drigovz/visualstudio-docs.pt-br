@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e7349717478f18b676b74908da8fb8a6a2fc413
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184582"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801601"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -28,11 +28,11 @@ Você pode fazer grande parte da personalização do diagnóstico do Analyzer do
 
 ![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
 
-Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** + **Enter**.
+Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse (ou selecione e mantenha pressionado) na regra e selecione **Propriedades**, ou selecione a regra e, em seguida, selecione **ALT** + **Enter**.
 
 ![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
 
-Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse no diagnóstico e selecione **Exibir ajuda**.
+Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse (ou selecione e mantenha pressionado) no diagnóstico e selecione **Exibir ajuda**.
 
 Os ícones ao lado de cada diagnóstico no **Gerenciador de soluções** correspondem aos ícones que você vê no conjunto de regras ao abri-lo no editor:
 
@@ -147,11 +147,11 @@ Há duas maneiras de converter um arquivo RuleSet existente em um arquivo Editor
 
        ![Converter RuleSet em arquivo EditorConfig no editor de RuleSet](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
 
-    2. **Clique** no link da barra de links.
+    2. Selecione o link da **barra** de opções.
 
        Isso deve abrir uma caixa de diálogo **salvar como** que permite selecionar o diretório onde você deseja gerar o arquivo EditorConfig.
 
-    3. **Clique** no botão **salvar** para gerar o arquivo EditorConfig.
+    3. Selecione o botão **salvar** para gerar o arquivo EditorConfig.
 
        O EditorConfig gerado deve ser aberto no editor. Além disso, a Propriedade MSBuild `CodeAnalysisRuleSet` é atualizada no arquivo de projeto para que ele não referencie mais o arquivo RuleSet original.
 
@@ -212,7 +212,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
    ![Configurar a severidade da regra no menu de lâmpada no Visual Studio](media/configure-rule-severity.png)
 
-3. A partir daí, selecione uma das opções de gravidade.
+3. A partir daí, escolha uma das opções de severidade.
 
    ![Configurar a severidade da regra como sugestão](media/configure-rule-severity-suggestion.png)
 
@@ -225,13 +225,13 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 O Visual Studio também fornece uma maneira conveniente de configurar a severidade de uma regra no menu de contexto da lista de erros.
 
-1. Após a ocorrência de uma violação, clique com o botão direito do mouse na entrada de diagnóstico na lista de erros.
+1. Após a ocorrência de uma violação, clique com o botão direito do mouse (ou selecione e segure) a entrada de diagnóstico na lista de erros.
 
 2. No menu de contexto, selecione **definir severidade**.
 
    ![Configurar a severidade da regra na lista de erros no Visual Studio](media/configure-rule-severity-error-list.png)
 
-3. A partir daí, selecione uma das opções de gravidade.
+3. A partir daí, escolha uma das opções de severidade.
 
    O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado.
 
@@ -242,12 +242,12 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
 
-1. Em Gerenciador de soluções, expanda **referências**  >  **analisadores** (ou **Dependencies**  >  **analisadores** de dependências para projetos do .NET Core).
+1. Em Gerenciador de soluções, selecione **References**  >  **analisadores** de referências (ou **Dependencies**  >  **analisadores** de dependências para projetos do .NET Core).
 
 2. Expanda o assembly que contém a regra para a qual você deseja definir a severidade.
 
 ::: moniker range=">=vs-2019"
-3. Clique com o botão direito do mouse na regra e selecione **definir severidade**. No menu de contexto, selecione uma das opções de gravidade.
+3. Clique com o botão direito do mouse (ou selecione e segure) a regra e selecione **definir severidade**. No menu de contexto, escolha uma das opções de gravidade.
 
    O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado. Se o seu projeto usa um arquivo RuleSet em vez de um arquivo EditorConfig, a entrada de severidade é adicionada ao arquivo RuleSet.
 
@@ -256,7 +256,7 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Clique com o botão direito do mouse na regra e selecione **definir severidade do conjunto de regras**. No menu de contexto, selecione uma das opções de gravidade.
+3. Clique com o botão direito do mouse (ou selecione e segure) a regra e selecione **definir severidade do conjunto de regras**. No menu de contexto, escolha uma das opções de gravidade.
 
    A severidade da regra é salva no arquivo de conjunto de regras ativo.
 ::: moniker-end
@@ -265,16 +265,19 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 
 ![Arquivo de conjunto de regras no Gerenciador de Soluções](media/ruleset-in-solution-explorer.png)
 
-1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse do **References**  >  nó**analisadores** de referências ou selecionando **abrir** na página de propriedades de **análise de código** do projeto.
+1. Abra o arquivo de conjunto de regras ativo de uma das seguintes maneiras:
 
-   Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio faz uma cópia do arquivo de conjunto de regras padrão, nomeia-o * \<projectname> . RuleSet*e o adiciona ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
+- Em **Gerenciador de soluções**, clique duas vezes no arquivo, clique com o botão direito do mouse (ou selecione e mantenha) **referências**  >  nó**analisadores** e selecione **abrir conjunto de regras ativas**.
+- Na página de propriedades de **análise de código** do projeto, selecione **abrir** .
+
+  Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio faz uma cópia do arquivo de conjunto de regras padrão, nomeia-o * \<projectname> . RuleSet*e o adiciona ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
 
    > [!NOTE]
    > Os projetos .NET Core e .NET Standard não dão suporte aos comandos de menu para conjuntos de regras em **Gerenciador de soluções**, por exemplo, **abrir conjunto de regras ativas**. Para especificar um conjunto de regras não padrão para um projeto do .NET Core ou .NET Standard, [adicione manualmente a propriedade **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) ao arquivo do projeto. Você ainda pode configurar as regras dentro do conjunto de regras na interface do usuário do editor de conjunto de regras do Visual Studio.
 
 1. Navegue até a regra expandindo seu assembly recipiente.
 
-1. Na coluna **ação** , selecione o valor para abrir uma lista suspensa e selecione a severidade desejada na lista.
+1. Na coluna **ação** , selecione o valor para abrir uma lista suspensa e escolha a severidade desejada na lista.
 
    ![Arquivo de conjunto de regras aberto no editor](media/ruleset-file-in-editor.png)
 
@@ -329,17 +332,17 @@ Há várias maneiras de suprimir violações de regra:
 
 - Do **Editor de conjunto de regras**
 
-  Desmarque a caixa ao lado de seu nome ou defina a **ação** como **nenhum**.
+  Desmarque a caixa de seleção ao lado de seu nome ou defina a **ação** como **nenhum**.
 
 - No **Editor de código**
 
-  Coloque o cursor na linha de código com a violação e pressione **Ctrl** + **ponto (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  >  **na origem/no arquivo de supressão**.
+  Coloque o cursor na linha de código com a violação e selecione **Ctrl** + **period (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  >  **na origem/no arquivo de supressão**.
 
   ![Suprimir diagnóstico do menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Da **lista de erros**
 
-  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir**  >  **na origem/no arquivo de supressão**.
+  Escolha as regras que você deseja suprimir e clique com o botão direito do mouse (ou selecione e mantenha pressionado) e selecione **suprimir**  >  **na origem/no arquivo de supressão**.
 
   - Se você suprimir **na origem**, a caixa de diálogo **Visualizar alterações** será aberta e mostrará uma visualização do [aviso de #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) do C# ou Visual Basic diretiva de [aviso de #Disable](/dotnet/visual-basic/language-reference/directives/directives) que é adicionada ao código-fonte.
 
@@ -369,7 +372,7 @@ Quando você cria seu projeto na linha de comando, violações de regra aparecem
 O detalhamento da saída da compilação não afeta se as violações de regra são mostradas. Mesmo com detalhes **silenciosos** , violações de regra aparecem na saída da compilação.
 
 > [!TIP]
-> Se você estiver acostumado a executar a análise herdada na linha de comando, seja com *FxCopCmd. exe* ou por meio do MSBuild com o sinalizador **RunCodeAnalysis** , veja como fazer isso com analisadores de código.
+> Se você estiver acostumado a executar a análise herdada na linha de comando, seja com *FxCopCmd.exe* ou por meio do MSBuild com o sinalizador **RunCodeAnalysis** , veja como fazer isso com analisadores de código.
 
 Para ver as violações do analisador na linha de comando ao compilar seu projeto usando o MSBuild, execute um comando como este:
 

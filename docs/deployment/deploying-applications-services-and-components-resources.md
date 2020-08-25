@@ -1,7 +1,8 @@
 ---
-title: Visão geral da implantação | Microsoft Docs
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: Implantar seu aplicativo do Visual Studio em uma pasta, IIS, Azure ou outro destino
+description: Saiba mais sobre as opções de publicação para seu aplicativo usando o assistente de publicação
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173715"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800821"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Visão geral da implantação no Visual Studio
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
 Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja.
 
@@ -35,19 +36,27 @@ De dentro do Visual Studio, os aplicativos podem ser publicados diretamente nos 
 - [Azure](#azure)
 - [Registro de contêiner do Docker](#docker-container-registry)
 - [Pasta](#folder)
-- [Destinos personalizados (IIS, FTP)](#Custom targets (IIS, FTP))
-
-Na guia **Publicar** é possível selecionar um perfil de publicação existente, importar um perfil existente ou criar um novo perfil usando as opções descritas aqui. Para fazer um tour pelas opções de publicação no IDE para diferentes tipos de aplicativos, confira [Introdução à implantação](../deployment/deploying-applications-services-and-components.md).
+- [Servidor FTP/FTPS](#ftpftps-server)
+- [Servidor Web (IIS)](#web-server-iis)
+- [Importar perfil](#import-profile)
 
 ## <a name="azure"></a>Azure 
 
+Ao escolher o Azure, você pode escolher entre:
+
+- Azure App serviço em execução no Windows, Linux ou como uma imagem do Docker
+- Uma imagem do Docker implantada no registro de contêiner do Azure
+- Uma Máquina Virtual do Azure
+
+![Escolher um serviço do Azure](../deployment/media/quickstart-choose-azure-service.png)
+
 ### <a name="azure-app-service"></a>Serviço de aplicativo do Azure
 
-[Azure app serviço](/azure/app-service/app-service-web-overview) que ajuda os desenvolvedores a criarem rapidamente serviços e aplicativos Web escalonáveis sem manter a infraestrutura. Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem no Azure, mas essas máquinas virtuais são gerenciadas para você. Cada aplicativo em um Serviço de Aplicativo receberá uma URL \*.azurewebsites.net exclusiva; todos os tipos de preço diferentes de Gratuito também permitem a atribuição de nomes de domínio personalizados ao site.
+[Azure app serviço](/azure/app-service/app-service-web-overview) ajuda os desenvolvedores a criarem rapidamente serviços e aplicativos Web escalonáveis sem manter a infraestrutura. Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem no Azure, mas essas máquinas virtuais são gerenciadas para você. Cada aplicativo em um Serviço de Aplicativo receberá uma URL \*.azurewebsites.net exclusiva; todos os tipos de preço diferentes de Gratuito também permitem a atribuição de nomes de domínio personalizados ao site.
 
 Você determina a capacidade de computação que um Serviço de Aplicativo tem escolhendo um [plano ou tipo de preço](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para o Serviço de Aplicativo recipiente. É possível ter vários aplicativos Web (e outros tipos de aplicativos) compartilhando o mesmo Serviço de Aplicativo sem alterar o tipo de preço. Por exemplo, é possível hospedar o desenvolvimento, o preparo e a produção de aplicativos Web juntos no mesmo Serviço de Aplicativo.
 
-### <a name="when-to-choose-azure-app-service"></a>Quando escolher o Serviço de Aplicativo do Azure
+#### <a name="when-to-choose-azure-app-service"></a>Quando escolher o Serviço de Aplicativo do Azure
 
 - Você deseja implantar um aplicativo Web que é acessível pela Internet.
 - Você deseja escalonar automaticamente seu aplicativo Web de acordo com a demanda sem a necessidade de reimplantar.
@@ -56,7 +65,18 @@ Você determina a capacidade de computação que um Serviço de Aplicativo tem e
 
 > Se quiser usar o Serviço de Aplicativo do Azure em seu próprio datacenter ou em outros computadores locais, você poderá fazer isso usando o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Para saber mais sobre como publicar no Serviço de Aplicativo, confira [Início Rápido – Publicar no Serviço de Aplicativo do Azure](quickstart-deploy-to-azure.md) e [Início Rápido – Publicar ASP.NET Core no Linux](quickstart-deploy-to-linux.md).
+Para obter mais informações sobre a publicação no serviço de aplicativo, consulte:
+- [Início rápido-publicar no serviço Azure app](quickstart-deploy-to-azure.md) e [no guia de início rápido-publicar ASP.NET Core no Linux](quickstart-deploy-to-linux.md).
+- [Solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+### <a name="azure-container-registry"></a>Registro de Contêiner do Azure
+
+O [registro de contêiner do Azure](/azure/container-registry/) permite criar, armazenar e gerenciar imagens de contêiner do Docker e artefatos em um registro privado para todos os tipos de implantações de contêiner.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Quando escolher o registro de contêiner do Azure
+
+- Quando você tiver um pipeline de desenvolvimento e implantação de contêiner do Docker existente.
+- Quando você quiser criar imagens de contêiner do Docker no Azure.
 
 ### <a name="azure-virtual-machines"></a>Máquinas Virtuais do Azure
 
@@ -66,7 +86,7 @@ O dimensionamento de um aplicativo hospedado em máquinas virtuais envolve a cri
 
 Para obter informações adicionais, consulte a [comparação detalhada](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) entre o Serviço de Aplicativo do Azure, as Máquinas Virtuais do Azure e outros serviços do Azure que podem ser usados como destinos de implantação, usando a opção Personalizar no Visual Studio.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Quando escolher Máquinas Virtuais de Aplicativo do Azure
+#### <a name="when-to-choose-azure-virtual-machines"></a>Quando escolher máquinas virtuais do Azure
 
 - Você deseja implantar um aplicativo Web que é acessível pela Internet, com controle total sobre o tempo de vida dos endereços IP atribuídos.
 - Você precisa de personalizações em nível de computador em seus servidores que incluem: software adicional, como um sistema de banco de dados especializado, configurações de rede específicas, partições de disco e assim por diante.
@@ -99,26 +119,61 @@ Observe que se, por algum motivo (como acesso ao computador), não for possível
 
 Para saber mais, confira [Início Rápido – Implantar em uma pasta local](quickstart-deploy-to-local-folder.md)
 
-## <a name="custom-targets-iis-ftp"></a>Destinos personalizados (IIS, FTP)
+## <a name="ftpftps-server"></a>Servidor FTP/FTPS
 
-Um destino personalizado permite que você implante seu aplicativo em um destino diferente do Serviço de Aplicativo do Azure, das Máquinas Virtuais do Azure ou do sistema de arquivos local. Ele pode ser implantado em um sistema de arquivos ou qualquer outro servidor (Internet ou Intranet) ao qual você tem acesso, inclusive aqueles em outros serviços de nuvem. Ele pode funcionar com a Implantação da Web (arquivos ou .ZIP) e FTP.
+Um servidor FTP/FTPS permite implantar seu aplicativo em um servidor diferente do Azure. Ele pode ser implantado em um sistema de arquivos ou qualquer outro servidor (Internet ou Intranet) ao qual você tem acesso, inclusive aqueles em outros serviços de nuvem. Ele pode funcionar com a Implantação da Web (arquivos ou .ZIP) e FTP.
 
-Ao escolher um destino personalizado, o Visual Studio solicitará um nome de perfil e, em seguida, coletará informações de **Conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e as credenciais. É possível controlar os seguintes comportamentos na guia **Configurações**:
+Ao escolher um servidor FTP/FTPS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações**:
 
 - A configuração que você deseja implantar.
 - Se os arquivos existentes serão removidos do destino.
 - Se a pré-compilação será feita durante a publicação.
 - Se os arquivos serão excluídos da pasta App_Data da implantação.
 
-É possível criar vários perfis de implantação Personalizados no Visual Studio, possibilitando o gerenciamento dos perfis com configurações diferentes.
+Você pode criar qualquer número de perfis de implantação de FTP/FTPS no Visual Studio, possibilitando o gerenciamento de perfis com configurações diferentes.
 
-### <a name="when-to-choose-custom-deployment"></a>Quando escolher a implantação personalizada
+### <a name="when-to-choose-ftpftps-server-deployment"></a>Quando escolher a implantação de servidor FTP/FTPS
 
 - Você está usando serviços de nuvem em um provedor diferente do Azure que pode ser acessado por meio de URLs.
 - Você deseja implantar usando credenciais diferentes das que você usa no Visual Studio ou daquelas diretamente ligadas às suas contas do Azure.
 - Você deseja excluir os arquivos do destino a cada vez que implantar.
 
-Para saber mais, confira [Início Rápido – Implantar em um site](quickstart-deploy-to-a-web-site.md)
+## <a name="web-server-iis"></a>Servidor Web (IIS)
+
+Um servidor Web do IIS permite que você implante seu aplicativo em um servidor Web diferente do Azure. Ele pode implantar em um servidor IIS (Internet ou intranet) ao qual você tem acesso, incluindo aqueles em outros serviços de nuvem. Ele pode funcionar com Implantação da Web ou um pacote Implantação da Web.
+
+Ao escolher um servidor Web do IIS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações**:
+
+- A configuração que você deseja implantar.
+- Se os arquivos existentes serão removidos do destino.
+- Se a pré-compilação será feita durante a publicação.
+- Se os arquivos serão excluídos da pasta App_Data da implantação.
+
+Você pode criar qualquer número de perfis de implantação do servidor Web do IIS no Visual Studio, tornando possível gerenciar perfis com configurações diferentes.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>Quando escolher a implantação do servidor Web (IIS)
+
+- Você está usando o IIS para publicar um site ou serviço que pode ser acessado por meio de URLs.
+- Você deseja implantar usando credenciais diferentes das que você usa no Visual Studio ou daquelas diretamente ligadas às suas contas do Azure.
+- Você deseja excluir os arquivos do destino a cada vez que implantar.
+
+Para obter mais informações, consulte [início rápido – implantar em um site da Web](quickstart-deploy-to-a-web-site.md). Para obter ajuda para solução de problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+## <a name="import-profile"></a>Importar Perfil
+
+Você pode importar um perfil ao publicar no IIS ou no serviço Azure App. Você pode configurar a implantação usando um *arquivo de configurações de publicação* (* \* . publishsettings*). Um arquivo de configurações de publicação é criado pelo IIS ou pelo Serviço de Aplicativo do Azure ou pode ser criado manualmente e, em seguida, pode ser importado para o Visual Studio.
+
+O uso de um arquivo de configurações de publicação pode simplificar a configuração da implantação e funciona melhor em um ambiente de equipe versus configurar manualmente cada perfil de implantação.
+
+### <a name="when-to-choose-import-profile"></a>Quando escolher o perfil de importação
+
+- Você está publicando no IIS e deseja simplificar a configuração da implantação.
+- Você está publicando no serviço IIS ou Azure App e deseja acelerar a configuração de implantação para reutilização ou para que os membros da equipe publiquem no mesmo serviço.
+
+Para saber mais, consulte o seguinte:
+
+- [Importar configurações de publicação e implantar no IIS](tutorial-import-publish-settings-iis.md)
+- [Importar configurações de publicação e implantar no Azure](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 

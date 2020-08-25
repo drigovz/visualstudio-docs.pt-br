@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531840"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801302"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
 
@@ -30,11 +30,11 @@ O processo de publicação difere entre o Visual Studio 2017 e posterior e o Vis
 > [!Note]
 > Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017 e posterior, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para este passo a passo, você precisa de um projeto de aplicativo Web com base nas estruturas Bottle, Flask ou Django. Se você ainda não tem um projeto e deseja ver como funciona o processo de publicação, crie um projeto de teste simples da seguinte maneira:
 
-1. No Visual Studio, selecione **Arquivo > Novo > Projeto**, pesquise "Bottle", selecione o **Bottle Web Project**, especifique um nome e um caminho para o projeto e clique em **OK**. (O modelo do Bottle está incluído com a carga de trabalho de desenvolvimento do Python; consulte [Instalação](installing-python-support-in-visual-studio.md)).
+1. No Visual Studio, selecione **arquivo > novo projeto de >**, procure "garrafa", selecione o **projeto Web garrafa**, especifique o nome e um caminho para o projeto, selecione **OK**. (O modelo do Bottle está incluído com a carga de trabalho de desenvolvimento do Python; consulte [Instalação](installing-python-support-in-visual-studio.md)).
 
 1. Siga os prompts para instalar pacotes externos, selecionando **Instalar em um ambiente virtual** bem como o interpretador de base preferencial para o ambiente virtual. Normalmente você combina essa opção com a versão do Python instalada no Serviço de Aplicativo.
 
@@ -185,7 +185,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 > [!Note]
 > Um breve vídeo desse processo pode ser encontrado em [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Tutorial do Python do Visual Studio: compilando um site) (youtube.com, 3min10s).
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Publicar**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nome do projeto e selecione **Publicar**.
 
 1. Na caixa de diálogo **Publicar**, selecione **Serviço de Aplicativo do Microsoft Azure**:
 

@@ -1,17 +1,17 @@
 ---
 title: Acessibilidade
 description: Introdução dos recursos de acessibilidade no Visual Studio para Mac e como eles podem ser habilitados.
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d50f92e6de777205f1289f710b27f4a719b61eef
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939068"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800184"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
@@ -21,7 +21,7 @@ Há uma série de ferramentas e recursos de acessibilidade incorporados ao macOS
 * Aumentar o texto de preenchimento
 * Personalização do tema de cores do editor de código
 * Personalização de atalhos de teclado
-* Navegação de teclado
+* Navegação por teclado
 
 > [!NOTE]
 > Este guia refere-se a Visual Studio para Mac. Para o Visual Studio no Windows, consulte [recursos de acessibilidade do Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).

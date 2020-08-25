@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535142"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801575"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
 O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e posterior e pode ser instalado separadamente em versões anteriores do Visual Studio.
 
-O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador do Python enquanto o Visual Studio estiver em execução, clique no botão **página inicial** na barra de ferramentas CookieCutter para detectar o intérprete recentemente instalado. (Veja [ambientes Python](managing-python-environments-in-visual-studio.md) para obter mais informações sobre ambientes em geral.)
+O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um intérprete do Python enquanto o Visual Studio estiver em execução, selecione o botão **página inicial** na barra de ferramentas CookieCutter para detectar o intérprete recentemente instalado. (Veja [ambientes Python](managing-python-environments-in-visual-studio.md) para obter mais informações sobre ambientes em geral.)
 
 Depois de instalado, selecione **Exibir**  >  **CookieCutter Explorer** para abrir sua janela:
 
@@ -35,10 +35,10 @@ Trabalhar com o Cookiecutter é um processo que inclui procurar e selecionar um 
 
 A home page do Cookiecutter exibe uma lista de modelos a serem escolhidos, organizados nos seguintes grupos:
 
-| Agrupar | Descrição |
+| Grupo | Descrição |
 | --- | --- |
 | **Instalado** | Modelos que foram instalados no computador local. Quando um modelo online é usado, seu repositório é clonado automaticamente em uma subpasta de *~/.cookiecutters*. É possível excluir um modelo instalado escolhido pressionando **Delete**. |
-| **Recomendadas** | Modelos carregados do feed recomendado. O feed padrão é coletado pela Microsoft. Consulte [Opções do Cookiecutter](#cookiecutter-options) abaixo para obter detalhes sobre como personalizar o feed. |
+| **Recomendado** | Modelos carregados do feed recomendado. O feed padrão é coletado pela Microsoft. Consulte [Opções do Cookiecutter](#cookiecutter-options) abaixo para obter detalhes sobre como personalizar o feed. |
 | **GitHub** | Resultados da pesquisa do GitHub para a palavra-chave cookiecutter. Os resultados do GitHub retornam paginados e, se houver mais resultados disponíveis, a opção **Carregar Mais** será exibida ao final da lista. |
 | **Personalizado** | Quando uma localização personalizada é inserida na caixa de pesquisa, ela é exibida nesse grupo. É possível digitar um caminho completo para o repositório GitHub ou o caminho completo para uma pasta no disco local. |
 
@@ -98,8 +98,8 @@ A renderização padrão de uma variável de modelo depende do tipo de dados (ca
 | Propriedade | Descrição |
 | --- | --- |
 | Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
-| Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
-| URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. Se você clicar no hiperlink, o navegador padrão do usuário será aberto nessa URL. |
+| Description | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
+| URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. A seleção do hiperlink abre o navegador padrão do usuário para essa URL. |
 | Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: caixa de combinação para escolher entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um botão **...** que abre um diálogo de conexão de banco de dados.</li></ul> |
 
 Exemplo:

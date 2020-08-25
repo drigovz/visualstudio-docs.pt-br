@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247311"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801458"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 Quando você compra as assinaturas do Visual Studio por meio do programa MPSA, há algumas coisas a serem consideradas antes que você possa se tornar um administrador de assinaturas do Visual Studio e atribuir assinaturas a seus usuários. Se você já tiver sido configurado como administrador, acesse diretamente o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio.
 
-Os clientes do MPSA agora gerenciam ativos adquiridos por meio do MPSA em um novo portal chamado de [Centro de Empresas](https://businessaccount.microsoft.com/Customer), que dá suporte a funcionalidades semelhantes às do VLSC (Centro de Serviços de Licenciamento por Volume). Isso inclui a exibição de seu resumo de licenças, pedidos, downloads, chaves, usuários, etc. No entanto, as assinaturas do Visual Studio no MPSA se comportam de maneira muito semelhante aos serviços de nuvem. O Centro de Empresas também usa contas corporativas para entrar, em vez de contas da Microsoft (MSA). Se sua organização usar serviços de nuvem, como o Office 365 ou Azure Active Directory e seu email fizer parte de um desses dois serviços, ela já será uma conta corporativa. Isso permitirá que você se registre no Centro de Empresas com sua senha existente. Se sua organização não estiver usando serviços de nuvem e seu email não for de uma conta corporativa, você poderá usá-lo para se registrar no Centro de Empresas.
+Os clientes do MPSA agora gerenciam ativos adquiridos por meio do MPSA em um novo portal chamado de [Centro de Empresas](https://businessaccount.microsoft.com/Customer), que dá suporte a funcionalidades semelhantes às do VLSC (Centro de Serviços de Licenciamento por Volume). Isso inclui a exibição de seu resumo de licenças, pedidos, downloads, chaves, usuários, etc. No entanto, as assinaturas do Visual Studio no MPSA se comportam de maneira muito semelhante aos serviços de nuvem. O Centro de Empresas também usa contas corporativas para entrar, em vez de contas da Microsoft (MSA). Se sua organização usa serviços de nuvem, como Microsoft 365 ou Azure Active Directory, e seu email faz parte de um desses dois serviços, ele já é uma conta corporativa. Isso permitirá que você se registre no Centro de Empresas com sua senha existente. Se sua organização não estiver usando serviços de nuvem e seu email não for de uma conta corporativa, você poderá usá-lo para se registrar no Centro de Empresas.
 
 Além disso, o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio é onde as assinaturas são atribuídas aos assinantes depois que você se torna um administrador de assinaturas do Visual Studio. No MPSA, as assinaturas do Visual Studio precisam ser provisionadas no respectivo portal de gerenciamento, que é o portal de administração de assinaturas do Visual Studio. Para fazer isso, você precisa associar sua conta de compra a um locatário (por exemplo, contoso.onmicrosoft.com).
 
 Observe que há dois tipos de locatários (gerenciados e não gerenciados). Locatário gerenciado é um locatário que já está sendo gerenciado por administradores internos à organização.
 
-Locatário não gerenciado é um locatário sem nenhum administrador atribuído e que não pode ser usado para serviços online, tais como o Office 365. Os locatários não gerenciados também são criados durante o registro no Centro de Empresas com um email que não é de uma conta corporativa. Se você recebeu uma solicitação para criar uma senha ao se registrar no Centro de Empresas, isso significa que seu email não era de uma conta corporativa e que foi criado um locatário não gerenciado.
+Um locatário não gerenciado é um locatário sem nenhum administrador atribuído e não pode ser usado para serviços online, como o Microsoft 365. Os locatários não gerenciados também são criados durante o registro no Centro de Empresas com um email que não é de uma conta corporativa. Se você recebeu uma solicitação para criar uma senha ao se registrar no Centro de Empresas, isso significa que seu email não era de uma conta corporativa e que foi criado um locatário não gerenciado.
 
 Aqui estão alguns requisitos ou etapas necessárias para tornar-se um administrador de assinaturas do Visual Studio antes de concluir a associação do locatário.
 
@@ -62,7 +62,7 @@ Para obter uma explicação mais detalhada desse processo, use os [guias de Iní
 > [!NOTE]
 > Depois de concluir o processo de tomada de controle de domínio, você precisará atender aos critérios das cinco etapas na seção Pré-associação do locatário (gerenciado). Quando os critérios forem atendidos, bastará contatar o suporte do MPSA para provisionar outros administradores de assinaturas do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

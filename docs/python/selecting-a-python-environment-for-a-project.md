@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520465"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801198"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Como selecionar um ambiente do Python para um projeto
 
@@ -46,7 +46,7 @@ O menu de contexto no nó **Ambientes do Python** também fornece comandos adici
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Para alterar o ambiente para um projeto, clique com botão direito no nó **Ambientes do Python** e selecione **Adicionar Ambiente**, ou selecione **Adicionar Ambiente** na lista suspensa do ambiente na barra de ferramentas do Python.
+Para alterar o ambiente de um projeto, clique com o botão direito do mouse no nó **ambientes Python** e selecione **Adicionar ambiente**. Você também pode selecionar **Adicionar ambiente** na lista suspensa ambiente na barra de ferramentas do Python.
 
 Na caixa de diálogo **Adicionar Ambiente**, selecione a guia **Ambiente existente** e selecione um novo ambiente na lista suspensa **Ambiente**:
 
@@ -86,7 +86,7 @@ Você pode criar um novo ambiente virtual diretamente no Visual Studio da seguin
 
 1. Selecione um ambiente como o interpretador base e selecione **Criar**. O Visual Studio exibe uma barra de progresso enquanto configura o ambiente, e baixa todos os pacotes necessários. Após a conclusão, o ambiente virtual aparecerá na janela **Ambientes de Python** para o projeto que o contém.
 
-1. O ambiente virtual não está ativado por padrão. Para ativá-lo para o projeto, clique com o botão direito e selecione **Ativar Ambiente**.
+1. O ambiente virtual não está ativado por padrão. Para ativar o ambiente virtual para o projeto, clique com o botão direito do mouse nele e selecione **Ativar ambiente**.
 
 > [!Note]
 > Se o caminho do local identificar um ambiente virtual existente, o Visual Studio detectará automaticamente o interpretador base (usando o arquivo *orig-prefix.txt* no diretório *lib* do ambiente) e alterará o botão **Criar** para **Adicionar**.
@@ -169,9 +169,9 @@ Saiba que as entradas exibidas podem não ser precisas e a instalação e desins
 Observe também que o Visual Studio não oferece suporte no momento ao uso de `conda` para instalar os pacotes em um ambiente conda. Use `conda` na linha de comando.
 
 > [!Tip]
-> Uma situação comum em que o Pip não consegue instalar um pacote é quando o pacote inclui o código-fonte para componentes nativos em arquivos * \* . PYD* . Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. `easy_install`geralmente é capaz de baixar binários pré-compilados, e você pode baixar um compilador adequado para versões mais antigas do Python do [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
+> Uma situação comum em que o Pip não consegue instalar um pacote é quando o pacote inclui o código-fonte para componentes nativos em arquivos * \* . PYD* . Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. `easy_install` geralmente é capaz de baixar binários pré-compilados, e você pode baixar um compilador adequado para versões mais antigas do Python do [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)

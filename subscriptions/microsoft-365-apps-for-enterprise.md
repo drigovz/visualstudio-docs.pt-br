@@ -7,17 +7,17 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Saiba mais e instale os aplicativos Microsoft 365 para empresas
-ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250751"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800808"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplicativos para empresas em assinaturas do Visual Studio
 Microsoft 365 aplicativos para empresas (anteriormente conhecido como Office 365 Pro Plus) estão disponíveis em assinaturas do Visual Studio selecionadas. 
 
-Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão sempre atualizados. O Office 365 Pro Plus é uma assinatura que vem com aplicativos premium, como Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponíveis apenas no PC). Os aplicativos podem ser instalados em vários dispositivos, incluindo PCs, Macs, iPads, iPhones, tablets Android e telefones Android. Com uma assinatura, você obtém as últimas versões dos aplicativos e recebe atualizações automaticamente quando elas são disponibilizadas.
+Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão sempre atualizados. Microsoft 365 aplicativos para empresas é uma assinatura que vem com aplicativos Premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponíveis somente no PC). Os aplicativos podem ser instalados em vários dispositivos, incluindo PCs, Macs, iPads, iPhones, tablets Android e telefones Android. Com uma assinatura, você obtém as últimas versões dos aplicativos e recebe atualizações automaticamente quando elas são disponibilizadas.
 
 > [!NOTE]
 > Quando incluído na sua assinatura do Visual Studio, você está licenciado para usar os aplicativos Microsoft 365 para empresas para uso em produção.  
@@ -55,8 +55,8 @@ O processo de ativação de seus aplicativos Microsoft 365 para a assinatura Ent
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Sim          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Yes          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
 | Visual Studio Professional com GitHub Enterprise | VL | Não disponível         |  N/D          |
@@ -77,7 +77,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

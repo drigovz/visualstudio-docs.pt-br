@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248581"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801250"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Criar modelos de item e projeto personalizados
 
@@ -72,7 +72,7 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
 
 1. Crie um projeto VSIX. Para obter mais informações, consulte [modelo de projeto VSIX](../extensibility/vsix-project-template.md).
 
-2. Defina o projeto VSIX como o projeto de inicialização. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX, selecione e mantenha pressionado (ou clique com o botão direito do mouse) e selecione **definir como projeto de inicialização**.
+2. Defina o projeto VSIX como o projeto de inicialização. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX, clique com o botão direito do mouse e selecione **definir como projeto de inicialização**.
 
 3. Defina o projeto de modelo de projeto como um ativo do projeto VSIX. Abra o arquivo *. vsixmanifest* . Vá para a guia **ativos** e selecione **novo**.
 
@@ -84,7 +84,7 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
 
 5. Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado na caixa de diálogo **novo projeto** (**arquivo**  >  **novo**  >  **projeto**), no nó Visual C# ou Visual Basic. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo **Adicionar novo item** . Para exibir a caixa de diálogo **Adicionar novo item** , na **Gerenciador de soluções**, selecione o nó do projeto e selecione **Adicionar**  >  **novo item**).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência de modelo do Visual Studio](../ide/creating-project-and-item-templates.md)
 - [Pacotes NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

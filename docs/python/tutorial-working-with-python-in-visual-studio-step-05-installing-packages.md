@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372891"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801653"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Etapa 5: Instalar pacotes no ambiente do Python
 
@@ -26,16 +26,16 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 
 ## <a name="view-environments"></a>Exibir ambientes
 
-1. Selecione o **comando Exibir** > outros**ambientes python do** **Windows.** >  A janela **Ambientes de Python** será aberta como um par com o **Gerenciador de Soluções** e mostrará os diferentes ambientes disponíveis para você. A lista mostra os dois ambientes que você instalou usando o instalador do Visual Studio e aqueles que você instalou separadamente. Isso inclui ambientes globais, virtuais e conda. O ambiente em negrito é o ambiente padrão, que é usado para novos projetos. Para obter informações adicionais sobre como trabalhar com ambientes, consulte [Como criar e gerenciar ambientes Python em ambientes do Visual Studio](managing-python-environments-in-visual-studio.md).
+1. Selecione o comando de menu **Exibir**  >  **outros**  >  **ambientes Python** do Windows. A janela **Ambientes de Python** será aberta como um par com o **Gerenciador de Soluções** e mostrará os diferentes ambientes disponíveis para você. A lista mostra os ambientes que você instalou usando o instalador do Visual Studio e os que você instalou separadamente. Isso inclui ambientes globais, virtuais e Conda. O ambiente em negrito é o ambiente padrão, que é usado para novos projetos. Para obter informações adicionais sobre como trabalhar com ambientes, consulte [como criar e gerenciar ambientes Python em ambientes do Visual Studio](managing-python-environments-in-visual-studio.md).
 
    ![Janela Ambientes do Python](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > Você também pode abrir a janela Ambientes Python clicando na janela Do Solution Explorer e usando o atalho de teclado Ctrl+K, Ctrl+'. Se o atalho não funcionar e você não conseguir encontrar a janela Ambientes Python no menu, é possível que você não tenha instalado a carga de trabalho python. [Veja como instalar o suporte ao Python no Visual Studio](installing-python-support-in-visual-studio.md) para obter orientações sobre como instalar o Python.
+   > Você também pode abrir a janela ambientes Python selecionando a janela Gerenciador de Soluções e usando o atalho de teclado **Ctrl + K, CTRL + '** . Se o atalho não funcionar e você não conseguir encontrar a janela ambientes Python no menu, é possível que você não tenha instalado a carga de trabalho do Python. Consulte [como instalar o suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) para obter orientação sobre como instalar o Python.
 
-2. A guia **Visão Geral** do ambiente fornece acesso rápido a uma janela **Interativa** para esse ambiente, juntamente com a pasta de instalação do ambiente e intérpretes. Por exemplo, selecione **Abrir janela interativa** e uma janela **Interativa** para esse ambiente específico aparece no Visual Studio.
+2. A guia **visão geral** do ambiente fornece acesso rápido a uma janela **interativa** para esse ambiente, juntamente com a pasta de instalação e os intérpretes do ambiente. Por exemplo, selecione **Abrir janela interativa** e uma janela **interativa** para esse ambiente específico aparece no Visual Studio.
 
-3. Agora, crie um novo projeto com **o File** > **New** > **Project,** selecionando o modelo do Aplicativo **Python.** No arquivo de código que aparece, cole o seguinte código, que cria uma onda cossena como as etapas do tutorial anterior, só que desta vez plotado graficamente. Alternativamente, você pode usar o projeto que você criou anteriormente e substituir o código. 
+3. Agora, crie um novo projeto com **arquivo**  >  **novo**  >  **projeto**, selecionando o modelo de **aplicativo Python** . No arquivo de código que aparece, Cole o código a seguir, que cria uma onda do cosseno como as etapas anteriores do tutorial, apenas neste momento plotado graficamente. Como alternativa, você pode usar o projeto criado anteriormente e substituir o código.
 
     ```python
     from math import radians
@@ -50,45 +50,45 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
     main()
     ```
 
-4. Com um projeto Python aberto, você também pode abrir a janela Ambientes Python do Solution Explorer clicando com o botão direito em Ambientes Python e selecionando **Exibir todos os ambientes Python**
+4. Com um projeto Python aberto, você também pode abrir a janela ambientes Python de Gerenciador de Soluções clicando com o botão direito do mouse em **ambientes Python** e selecionando **Exibir todos os ambientes de Python**
 
    ![Ambiente](media/environments/environments-view-all-2019.png)
 
-5. Olhando para a janela do editor, você notará que se você passar o tempo sobre as `numpy` declarações de importação e `matplotlib` importar que elas não estão resolvidas. Isso porque os pacotes não foram instalados no ambiente global padrão.
+5. Observando a janela do editor, você observará que, se você passar o mouse sobre as `numpy` `matplotlib` instruções e importar, elas não serão resolvidas. Isso ocorre porque os pacotes não foram instalados no ambiente global padrão.
 
-   ![Importação de pacotes não resolvido](media/packages-unresolved-import.png)
+   ![Importação de pacote não resolvido](media/packages-unresolved-import.png)
 
-## <a name="install-packages-using-the-python-environments-window"></a>Instale pacotes usando a janela Ambientes Python
+## <a name="install-packages-using-the-python-environments-window"></a>Instalar pacotes usando a janela ambientes Python
 
-1. Na janela Ambientes Python, clique no ambiente padrão para novos projetos Python e selecione a guia **Pacotes.** Em seguida, você verá uma lista de pacotes que estão atualmente instalados no ambiente.
+1. Na janela ambientes do Python, selecione o ambiente padrão para novos projetos do Python e escolha a guia **pacotes** . Em seguida, você verá uma lista de pacotes que estão atualmente instalados no ambiente.
 
    ![Pacotes instalados em um ambiente](media/environments/environments-installed-packages-2019.png)
 
-2. Instale `matplotlib` inserindo seu nome no campo de pesquisa e, em seguida, selecionando o **comando Executar: pip instalar matplotlib** opção. Isso será `matplotlib`instalado, assim como quaisquer pacotes que dependam `numpy`(neste caso, que inclui ).
+2. Instale o `matplotlib` inserindo seu nome no campo de pesquisa e, em seguida, selecionando a opção **executar comando: Pip install matplotlib** . Isso será instalado `matplotlib` , bem como quaisquer pacotes dos quais depende (nesse caso, inclui `numpy` ).
 
    ![Instalação do matplotlib no ambiente](media/environments/environments-add-matplotlib-2019.png)
 
 5. Dê permissão para a elevação, se for solicitado.
 
-6. Depois que o pacote é instalado, ele aparece na janela **Ambientes Python.** O **X** à direita do pacote serve para desinstalá-lo.
+6. Depois que o pacote é instalado, ele aparece na janela **ambientes Python** . O **X** à direita do pacote serve para desinstalá-lo.
 
    ![Conclusão da instalação do matplotlib no ambiente](media/environments/environments-add-matplotlib2-2019.png)
 
    > [!NOTE]
-   > Uma pequena barra de progresso pode aparecer embaixo do ambiente para indicar que o Visual Studio está construindo seu banco de dados IntelliSense para o pacote recém-instalado. A guia **IntelliSense** também mostra mais informações detalhadas. Esteja ciente de que até que esse banco de dados esteja completo, os recursos do IntelliSense, como a verificação automática de conclusão e sintaxe, não estarão ativos no editor para esse pacote.
-   > 
-   > Visual Studio 2017 versão 15.6 e posteriorusa um método diferente e mais rápido para trabalhar com o IntelliSense, e exibe uma mensagem para esse efeito na guia **IntelliSense.**
+   > Uma pequena barra de progresso pode aparecer embaixo do ambiente para indicar que o Visual Studio está criando seu banco de dados IntelliSense para o pacote recém-instalado. A guia **IntelliSense** também mostra mais informações detalhadas. Lembre-se de que até que esse banco de dados seja concluído, os recursos do IntelliSense, como a conclusão automática e a verificação de sintaxe, não estarão ativos no editor desse pacote.
+   >
+   > O Visual Studio 2017 versão 15,6 e posterior usa um método diferente e mais rápido para trabalhar com o IntelliSense e exibe uma mensagem para esse efeito na guia **IntelliSense** .
 
-## <a name="run-the-program"></a>Execute o programa
+## <a name="run-the-program"></a>Executar o programa
 
-1. Agora que [o matplotlib](https://matplotlib.org/) está instalado, execute o programa com (**F5**) ou sem o depurador **(Ctrl**+**F5**) para ver a saída:
+1. Agora que o [matplotlib](https://matplotlib.org/) está instalado, execute o programa com (**F5**) ou sem o depurador (**Ctrl** + **F5**) para ver a saída:
 
    ![Saída de exemplo de matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Próxima etapa
 
 > [!div class="nextstepaction"]
-> [Trabalhe com Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+> [Trabalhar com o Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 

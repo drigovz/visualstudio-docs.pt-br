@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520582"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801640"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
@@ -26,7 +26,7 @@ O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inici
 
 Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias janelas de ferramentas importantes que você provavelmente usará:
 
-- O [**Gerenciador de Soluções**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior direita) permite exibir, navegar e gerenciar os arquivos de código. **Gerenciador de soluções** pode ajudar a organizar seu código agrupando os arquivos em [soluções e projetos](../get-started/tutorial-projects-solutions.md).
+- [**Gerenciador de soluções**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior direita) permite exibir, navegar e gerenciar seus arquivos de código. **Gerenciador de soluções** pode ajudar a organizar seu código agrupando os arquivos em [soluções e projetos](../get-started/tutorial-projects-solutions.md).
   - Ao lado do **Gerenciador de Soluções** estão os [**Ambientes do Python**](managing-python-environments-in-visual-studio.md), nos quais você gerencia os diferentes interpretadores do Python instalados no computador.
 
   ::: moniker range=">=vs-2019"
@@ -95,8 +95,8 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 ::: moniker-end
 
 - [Colaborar usando o Visual Studio](/visualstudio/liveshare/)
-  
-    O Visual Studio Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, independente da linguagem de programação usada ou dos tipos de aplicativo criados. 
+
+    O Visual Studio Live Share permite que você edite e depure de forma colaborativa com outras pessoas em tempo real, independente da linguagem de programação usada ou dos tipos de aplicativo criados.
 
 - [REPL Interativo do Python](python-interactive-repl-in-visual-studio.md)
 
@@ -110,7 +110,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Depurando o Python no Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interagindo com o C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Interagir com C++](working-with-c-cpp-python-in-visual-studio.md)
 
     Muitas bibliotecas criadas para o Python são escritas em C++ para um desempenho ideal. O Visual Studio fornece funcionalidades sofisticadas para o desenvolvimento de extensões em C++, incluindo a [depuração de modo misto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
@@ -144,7 +144,7 @@ Explore ainda mais o Python no Visual Studio seguindo um destes tutoriais ou in�
 > [!div class="nextstepaction"]
 > [Introdução à estrutura da Web Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - Descubra [mais recursos do Visual Studio](../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

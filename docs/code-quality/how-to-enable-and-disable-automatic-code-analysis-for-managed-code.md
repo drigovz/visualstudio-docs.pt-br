@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371879"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801016"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Como habilitar e desabilitar a análise de código binário para código gerenciado
 
@@ -21,9 +21,9 @@ Você pode configurar a análise de código herdado (análise binária) para ser
 
 Para habilitar ou desabilitar a análise de código herdado:
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e escolha **Propriedades**.
+1. Em **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no projeto e selecione **Propriedades**.
 
-2. Na caixa de diálogo Propriedades do projeto, escolha a guia **análise de código** .
+2. Na caixa de diálogo Propriedades do projeto, vá para a guia **análise de código** .
 
 3. Especifique o tipo de compilação na **configuração** e a plataforma de destino na **plataforma**. (Somente projetos padrão Non-.NET Core/. NET.)
 

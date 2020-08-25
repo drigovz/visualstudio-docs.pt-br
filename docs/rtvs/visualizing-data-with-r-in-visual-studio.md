@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144695"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801614"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Criar gráficos de dados visuais com R
 
@@ -71,7 +71,7 @@ Você cria uma nova janela de plotagem usando o botão da barra de ferramentas o
 
 Os gráficos também são objetos independentes, o que significa que você pode copiá-los ou movê-los entre as janelas de gráficos usando o recurso do tipo “arrastar e soltar” com o mouse ou usando os comandos **Copiar**, **Recortar** e **Colar** no menu de contexto acionado com um clique do botão direito do mouse ou no menu **Editar**.
 
-O comportamento padrão para arrastar e soltar é copiar; para mover, arraste e solte enquanto mantém a tecla **Shift** pressionada.
+O comportamento padrão para arrastar e soltar é copiar; para mover, arraste e solte enquanto pressiona a tecla **Shift** .
 
 ## <a name="plot-history"></a>Histórico de gráficos
 
@@ -82,7 +82,7 @@ O histórico fornece uma lista de miniaturas dos gráficos que foram exibidos ne
 
 ![Janela de histórico de gráficos](media/plotting-plot-history-window.png)
 
-Para abrir um gráfico em sua janela associada, clique duas vezes no gráfico e, em seguida, selecione o botão de barra de ferramentas **Mostrar gráfico** ou clique com o botão direito do mouse e selecione **Mostrar Gráfico**. Você também pode selecionar um gráfico individual e copiar, recortar ou excluir usando o menu de contexto acionado com um clique do botão direito do mouse ou o menu **Editar**.
+Para abrir um gráfico em sua janela associada, clique duas vezes nessa plotagem, selecione-o e, em seguida, selecione o botão da barra de ferramentas **Mostrar plotagem** . Como alternativa, clique com o botão direito do mouse na plotagem e selecione **Mostrar plotagem**. Você também pode selecionar um gráfico individual e copiar, recortar ou excluir dos menus de contexto ou de **edição** .
 
 O tempo de vida de seu histórico de gráficos em todas as janelas está vinculado ao tempo de vida da sessão interativa do R. Se você redefinir a sessão do R ou sair e reiniciar o Visual Studio, o histórico de gráficos será redefinido.
 

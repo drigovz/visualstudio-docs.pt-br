@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248027"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800301"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio
 
@@ -31,7 +31,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>Publicar no serviço de Azure App no Windows
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
+1. Em Gerenciador de soluções, clique com o botão direito do mouse no nó do projeto e escolha **publicar** (ou use o item de menu **criar**  >  **publicação** ).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
@@ -51,7 +51,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
-1. Na caixa de diálogo **publicar** , a instância recém-criada foi selecionada automaticamente. Quando estiver pronto, clique em **concluir**.
+1. Na caixa de diálogo **publicar** , a instância recém-criada foi selecionada automaticamente. Quando estiver pronto, selecione **concluir**.
 
     ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-windows-select-instance.png)
 

@@ -1,5 +1,6 @@
 ---
 title: Criando um controle de caixa de ferramentas de Windows Forms | Microsoft Docs
+description: Este tutorial mostra como usar o modelo de controle de caixa de ferramentas de Windows Forms para criar um controle de contador simples usando o SDK do Visual Studio.
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248603"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801861"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Criar um controle de caixa de ferramentas de Windows Forms
 
 O modelo de item de controle de caixa de ferramentas Windows Forms que está incluído no Ferramentas de Extensibilidade do Visual Studio (SDK do VS), permite criar um controle **caixa de ferramentas** que é adicionado automaticamente quando a extensão é instalada. Este tutorial mostra como usar o modelo para criar um controle de contador simples que você pode distribuir para outros usuários.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -35,7 +36,7 @@ O modelo de controle de caixa de ferramentas Windows Forms cria um controle de u
 
 1. Crie um projeto VSIX denominado `MyWinFormsControl` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** , pesquisando por "VSIX".
 
-2. Quando o projeto for aberto, adicione um modelo de item de **controle de caixa de ferramentas de Windows Forms** chamado `Counter` . Na **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **Windows Forms controle caixa de ferramentas**
+2. Quando o projeto for aberto, adicione um modelo de item de **controle de caixa de ferramentas de Windows Forms** chamado `Counter` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **Windows Forms controle caixa de ferramentas**
 
 3. Isso adiciona um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para posicionar o controle na **caixa de ferramentas**e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
 
@@ -45,7 +46,7 @@ O `Counter` controle requer dois controles filho: a <xref:System.Windows.Forms.L
 
 #### <a name="to-build-the-user-interface"></a>Para criar a interface do usuário
 
-1. Em **Gerenciador de soluções**, toque duas vezes ou clique duas vezes em *Counter.cs* para abri-lo no designer.
+1. Em **Gerenciador de soluções**, clique duas vezes em *Counter.cs* para abri-lo no designer.
 
 2. Remova o **clique aqui!** botão que é incluído por padrão quando você adiciona o modelo de item de controle Windows Forms caixa de ferramentas.
 
@@ -67,7 +68,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 #### <a name="to-code-the-user-control"></a>Para codificar o controle de usuário
 
-1. Toque duas vezes ou clique duas vezes no formulário para abrir o manipulador de eventos de carga na janela de código.
+1. Clique duas vezes no formulário para abrir seu manipulador de eventos de carregamento na janela de código.
 
 2. Acima do método do manipulador de eventos, na classe Control, crie um inteiro para armazenar o valor do contador e uma cadeia de caracteres para armazenar o texto de exibição, conforme mostrado no exemplo a seguir.
 
@@ -130,7 +131,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
     Os chamadores podem adicionar manipuladores a esse evento para responder às alterações no valor do contador.
 
-7. Volte para o modo de exibição de design e toque duas vezes ou clique duas vezes no botão **Redefinir** para gerar o `btnReset_Click` manipulador de eventos. Em seguida, preencha-o como mostrado no exemplo a seguir.
+7. Retorne ao modo de exibição de design e clique duas vezes no botão **Redefinir** para gerar o `btnReset_Click` manipulador de eventos. Em seguida, preencha-o como mostrado no exemplo a seguir.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +163,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 2. Na instância experimental do Visual Studio, crie um projeto de **aplicativo Windows Forms** .
 
-3. Em **Gerenciador de soluções**, toque duas vezes ou clique duas vezes em *Form1.cs* para abri-lo no designer se ele ainda não estiver aberto.
+3. Em **Gerenciador de soluções**, clique duas vezes em *Form1.cs* para abri-lo no designer se ele ainda não estiver aberto.
 
 4. Na **caixa de ferramentas**, o `Counter` controle deve ser exibido na seção **geral** .
 
@@ -172,7 +173,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 7. Arraste um <xref:System.Windows.Forms.Button> controle para o formulário e defina as propriedades Name e Text do botão como `Test` .
 
-8. Toque duas vezes ou clique duas vezes no botão para abrir *Form1.cs* na exibição de código e criar um manipulador de cliques.
+8. Clique duas vezes no botão para abrir *Form1.cs* na exibição de código e criar um manipulador de cliques.
 
 9. No manipulador de cliques, chame `counter1.Increment()` .
 
@@ -215,7 +216,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 Quando você cria um controle de **caixa de ferramentas** , o Visual Studio cria um arquivo chamado *ProjectName. vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle carregando o arquivo *. vsix* em uma rede ou em um site da Web. Quando um usuário abre o arquivo *. vsix* , o controle é instalado e adicionado à **caixa de ferramentas** do Visual Studio no computador do usuário. Como alternativa, você pode carregar o arquivo *. vsix* para [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários possam encontrá-lo navegando **Tools**na  >  caixa de diálogo**extensões e atualizações** de ferramentas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)

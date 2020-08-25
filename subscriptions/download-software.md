@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248224"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801822"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
@@ -22,7 +22,7 @@ Somente os downloads incluídos na sua assinatura são exibidos na página [Down
 Se sua assinatura for fornecida por seu trabalho ou escola, o administrador de assinaturas controlará se você tem acesso aos downloads. Desabilitar o acesso a downloads também desabilita o acesso às chaves do produto. Se você não tiver acesso a downloads e chaves de produto e precisar deles, [contate o administrador](contact-my-admin.md).
 
 > [!NOTE]
-> Estamos cientes de um problema em relação à disponibilidade das chaves de produto do Office 365.  Estamos investigando a causa e atualizaremos este artigo quando o problema for resolvido. 
+> Estamos cientes de um problema em relação à disponibilidade de chaves do produto Microsoft 365.  Estamos investigando a causa e atualizaremos este artigo quando o problema for resolvido. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante?
 Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página.
@@ -52,7 +52,7 @@ Para obter uma chave de produto para o download, você pode selecionar a tecla a
 > [!div class="mx-imgBorder"]
 > ![Reivindicar chaves do produto (Product Keys) do Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Selecione chave de declaração para declarar chaves restantes.")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

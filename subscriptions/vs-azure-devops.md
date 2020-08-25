@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115313"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801068"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 Como assinante ativo do Visual Studio, você pode usar uma gama de funcionalidades do Azure DevOps que estão incluídas como benefício na assinatura. Você poderá usar essas mesmas funcionalidades em cada organização do Azure DevOps de que for membro, independentemente de ter criado a organização ou ter sido adicionado por outra pessoa.
@@ -23,19 +23,19 @@ Como assinante ativo do Visual Studio, você pode usar uma gama de funcionalidad
    > ![Bloco DevOps do Azure](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua assinatura do Visual Studio ou a com sua[identidade alternativa](vs-alternate-identity.md), isso é reconhecido automaticamente.  Dessa forma, também é possível adicionar uma conta corporativa ou de estudante (usada para fazer logon no Visual Studio, no Office 365 ou na rede corporativa ou de estudante), o que permite acessar o Azure DevOps usando sua conta pessoal e sua conta corporativa ou de estudante.
+Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua assinatura do Visual Studio ou a com sua[identidade alternativa](vs-alternate-identity.md), isso é reconhecido automaticamente.  Dessa forma, você também pode adicionar uma conta corporativa ou de estudante (que você usa ao fazer logon no Visual Studio, Microsoft 365, ou em sua rede empresarial ou de estudante), permitindo que você acesse o Azure DevOps usando sua conta pessoal e sua conta de trabalho ou escolar.
 
 [Inscreva-se para uma organização gratuita do Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado  | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL| Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Sim          |
-| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                        | Azure Boards & repositórios (Basic<sup>2</sup>) [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sim          |
-| Visual Studio Professional com GitHub Enterprise | VL| Azure Boards & repositórios (Basic<sup>2</sup>) [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sim          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sim          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sim          |
+| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado  | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Yes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL| Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Yes          |
+| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                        | Azure Boards & repositórios (Basic<sup>2</sup>) [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Yes          |
+| Visual Studio Professional com GitHub Enterprise | VL| Azure Boards & repositórios (Basic<sup>2</sup>)  [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Yes          |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Yes          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans [saiba mais](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Yes          |
 ||
 
 <sup>1</sup>  *inclui: não para revenda (NFR), profissional mais valioso (MVP), diretor regional (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, FTE. Exclusões: MCT software & Services, imagine.*
@@ -57,7 +57,7 @@ R: Sim. Visual Studio Enterprise assinantes obtêm um trabalho paralelo no Team 
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Documentação do Azure DevOps](/azure/devops/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

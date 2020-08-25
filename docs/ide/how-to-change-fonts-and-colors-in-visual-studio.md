@@ -1,6 +1,6 @@
 ---
-title: Como alterar as cores da fonte, o tamanho do texto e as opções de alto contraste
-description: Saiba como alterar a cor da fonte e o tamanho do texto no Visual Studio e como selecionar opções de contraste para preocupações de acessibilidade.
+title: Alterar temas, fontes, texto e contraste para acessibilidade
+description: Saiba como alterar os temas de cores do Visual Studio, as cores de fonte, os tamanhos de texto e as cores de contraste extra para facilitar o uso e as preocupações de acessibilidade.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711684"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801432"
 ---
-# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>Como alterar fontes, cores e opções de alto contraste no Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Como alterar fontes, cores e temas no Visual Studio
 
-Você pode alterar as fontes e as cores no Visual Studio de várias maneiras. Por exemplo, você pode alterar o tema de cor azul padrão para o tema escuro (também conhecido como "modo escuro"). E você pode alterar a fonte padrão e o tamanho do texto para uma fonte e um tamanho diferentes. Você também pode selecionar um tema de alto contraste se mais adequado às suas necessidades.
+Você pode alterar as fontes e as cores no Visual Studio de várias maneiras. Por exemplo, você pode alterar o tema de cor azul padrão para o tema escuro (também conhecido como "modo escuro"). Você também pode selecionar um tema de contraste extra, se mais adequado às suas necessidades. E você pode alterar a fonte padrão e o tamanho do texto no IDE e no editor de código.
 
 ## <a name="change-the-color-theme"></a>Alterar o tema de cores
 
@@ -124,5 +124,6 @@ Para saber mais detalhes sobre todos os elementos da interface do usuário para 
 
 ## <a name="see-also"></a>Veja também
 
-- [Alterar fontes e cores para o editor de códigos](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Como: alterar fontes e cores para o editor no Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizar o IDE do Visual Studio e o editor](../ide/quickstart-personalize-the-ide.md)

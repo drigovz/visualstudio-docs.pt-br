@@ -12,24 +12,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282729"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800626"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar-se a dados em um banco de dados
 
 Você pode se conectar a um banco de dados do Access (um arquivo *. mdb* ou *. accdb* ) usando o Visual Studio. Depois de definir a conexão, os dados são exibidos na janela **Fontes de Dados**. A partir daí, você pode arrastar tabelas ou exibições para a superfície de design.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para usar esses procedimentos, você precisa de um projeto Windows Forms ou WPF e um banco de dados do Access (arquivo *. accdb* ) ou um banco de dados do Access 2000-2003 (arquivo *. mdb* ). Siga o procedimento correspondente ao tipo de arquivo.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Criar um conjunto de um DataSet para um arquivo. accdb
 
-Conecte-se a bancos de dados criados com o Office 365, o Access 2013, o Access 2010 ou o Access 2007 usando o procedimento a seguir.
+Conecte-se a bancos de dados criados com Microsoft 365, acesso 2013, acesso 2010 ou acesso 2007 usando o procedimento a seguir.
 
 1. Abra um projeto de aplicativo Windows Forms ou WPF no Visual Studio.
 

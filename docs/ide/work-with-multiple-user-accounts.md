@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027602"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800223"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
-Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudante, é possível adicionar todas elas no Visual Studio para acessar os recursos de qualquer conta sem a necessidade de entrar nas contas separadamente. Os serviços do Azure, do Application Insights, do Azure DevOps e do Office 365 dão suporte à experiência de conexão simplificada.
+Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudante, é possível adicionar todas elas no Visual Studio para acessar os recursos de qualquer conta sem a necessidade de entrar nas contas separadamente. Os serviços Azure, Application Insights, Azure DevOps e Microsoft 365 oferecem suporte à experiência de entrada simplificada.
 
 Depois que você adicionar várias contas em um computador, esse conjunto de contas fará parte de seu perfil móvel se você entrar no Visual Studio em outro computador.
 
@@ -33,7 +33,7 @@ Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. V
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
 
-Para abrir o Server Explorer, escolha **O View** > **Server Explorer** (ou, se estiver usando as [configurações](../ide/environment-settings.md)do ambiente "Geral", pressione **Ctrl**+**Alt**+**S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
+Para abrir Gerenciador de servidores, escolha **Exibir**  >  **Gerenciador de servidores** (ou, se você estiver usando as [configurações de ambiente](../ide/environment-settings.md)"geral", pressione **Ctrl** + **ALT** + **S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
 
 ![Gerenciador de Servidores com o nó do Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -53,7 +53,7 @@ Na próxima vez que você abrir o **Gerenciador de Servidores**, os recursos des
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Acessar o Azure Active Directory em um projeto Web
 
-O AAD (Azure Active Directory) habilita o suporte para logon único do usuário final em aplicativos Web ASP.NET MVC ou a autenticação do AD em serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao domínio do Active Directory podem usar suas contas existentes do AAD para se conectarem aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio.
+O AAD (Azure Active Directory) habilita o suporte para logon único do usuário final em aplicativos Web ASP.NET MVC ou a autenticação do AD em serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao domínio do Active Directory podem usar suas contas existentes do AAD para se conectarem aos aplicativos Web. Microsoft 365 aplicativos também podem usar a autenticação de domínio.
 
 ::: moniker range="vs-2017"
 
@@ -75,7 +75,7 @@ Para obter mais informações sobre os diferentes tipos de autenticação no ASP
 
 ### <a name="access-your-azure-devops-organization"></a>Acessar sua organização do Azure DevOps
 
-No menu principal, escolha **Team** > **Manage Connections** para abrir a janela **Team Explorer - Connect.** Escolha **Gerenciar conexões** > **Conectar a um projeto**. Na caixa de diálogo **Conectar-se a um Projeto**, selecione um projeto da lista (ou selecione **Adicionar Servidor TFS** e insira a URL do servidor). Ao selecionar uma URL, você será conectado sem precisar reinserir suas credenciais.
+No menu principal, escolha **equipe**  >  **gerenciar conexões** para abrir a janela **Team Explorer-Connect** . Escolha **gerenciar conexões**  >  **conectar a um projeto**. Na caixa de diálogo **Conectar-se a um Projeto**, selecione um projeto da lista (ou selecione **Adicionar Servidor TFS** e insira a URL do servidor). Ao selecionar uma URL, você será conectado sem precisar reinserir suas credenciais.
 
 Para obter mais informações, confira [Conectar-se a projetos no Team Explorer](connect-team-project.md).
 
@@ -83,13 +83,13 @@ Para obter mais informações, confira [Conectar-se a projetos no Team Explorer]
 
 Para adicionar outra conta ao Visual Studio:
 
-1. Escolha**configurações da conta de** **arquivo** > .
+1. Escolha **arquivo**  >  **configurações de conta**.
 
 1. Em **Todas as Contas**, escolha **Adicionar uma conta**.
 
 1. Na página **Entrar em sua conta**, selecione a conta ou escolha **Usar outra conta**. Siga as solicitações para ingressar as credenciais da nova conta.
 
-(Opcional) Agora você pode acessar o **Gerenciador de Servidores** e ver os serviços do Azure associados à conta recém-adicionada. No **Gerenciador de Servidores**, clique com o botão direito do mouse no nó do **Azure** e escolha **Gerenciar e Filtrar Assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao Visual Studio com a segunda conta, você está conectado aos serviços e aos recursos dessa conta. O mesmo vale para **o Project** > **Add Connected Service** e **o Team** > **Connect to Team Foundation Server**.
+(Opcional) Agora você pode acessar o **Gerenciador de Servidores** e ver os serviços do Azure associados à conta recém-adicionada. No **Gerenciador de Servidores**, clique com o botão direito do mouse no nó do **Azure** e escolha **Gerenciar e Filtrar Assinaturas**. Escolha a nova conta clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no **Gerenciador de Servidores**. Você deverá ver todos os serviços associados à assinatura especificada. Embora você não esteja atualmente conectado ao Visual Studio com a segunda conta, você está conectado aos serviços e aos recursos dessa conta. O mesmo vale para o **projeto**  >  **Adicionar serviço conectado** e o **Team**  >  **Connect a Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Adicionar uma conta usando o fluxo de código do dispositivo
 
@@ -99,7 +99,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Abra a página [**Contas**](reference/accounts-environment-options-dialog-box.md) em **Ferramentas** > **Opções** > **Ambiente** e, em seguida, selecione **Habilitar fluxo de código do dispositivo ao adicionar ou reautenticar uma conta**. Escolha **OK** para fechar as páginas de opções.
 
-1. Escolha**Configurações da conta de** **arquivo** > para abrir a página de gerenciamento da conta.
+1. Escolha **File**  >  **configurações de conta** de arquivo para abrir a página de gerenciamento de conta.
 
 1. Escolha **Adicionar uma conta** em **Todas as Contas**.
 
@@ -107,7 +107,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
    ![URL e código do fluxo de código do dispositivo](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. Pressione **Ctrl**+**C** para copiar o texto da caixa de diálogo e, em seguida, escolha **OK** para fechar a caixa de diálogo. Cole o texto copiado em um editor de texto como o Bloco de notas. Isso facilita a cópia do código na próxima etapa.
+1. Pressione **Ctrl** + **C** para copiar o texto da caixa de diálogo e, em seguida, escolha **OK** para fechar a caixa de diálogo. Cole o texto copiado em um editor de texto como o Bloco de notas. Isso facilita a cópia do código na próxima etapa.
 
 1. Navegue para a URL de logon do dispositivo no computador ou no navegador da Web que deseja usar para entrar no Visual Studio e, em seguida, cole ou insira o código copiado na caixa que indica **Código**.
 
@@ -125,7 +125,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Volte para a página de gerenciamento de contas no Visual Studio e você verá a conta recém-adicionada listada em **Todas as Contas**. Escolha **Fechar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Entrar no Visual Studio](signing-in-to-visual-studio.md)
 - [Entrar no Visual Studio para Mac](/visualstudio/mac/signing-in)

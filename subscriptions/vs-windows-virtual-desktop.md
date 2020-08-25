@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Saiba como você pode tirar proveito da área de trabalho virtual do Microsoft Windows por meio de sua assinatura do Visual Studio
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183581"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800600"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acessar a área de trabalho virtual do Windows em assinaturas 
 Os assinantes do Visual Studio agora podem usar seus créditos individuais de desenvolvimento/teste do Azure para os serviços de área de trabalho virtual do Microsoft Windows.  
-A área de trabalho virtual do Windows é um serviço abrangente de virtualização de desktops e aplicativos em execução na nuvem. É a única VDI (Virtual Desktop Infrastructure) que fornece gerenciamento simplificado, várias sessões do Windows 10, otimizações para o Office 365 ProPlus e suporte para ambientes de Serviços de Área de Trabalho Remota (RDS). Implante e dimensione suas áreas de trabalho e aplicativos do Windows no Azure em minutos e obtenha recursos internos de segurança e conformidade.
+A área de trabalho virtual do Windows é um serviço abrangente de virtualização de desktops e aplicativos em execução na nuvem. É a única VDI (Virtual Desktop Infrastructure) que fornece gerenciamento simplificado, várias sessões do Windows 10, otimizações para aplicativos Microsoft 365 para empresas e suporte para ambientes de Serviços de Área de Trabalho Remota (RDS). Implante e dimensione suas áreas de trabalho e aplicativos do Windows no Azure em minutos e obtenha recursos internos de segurança e conformidade.
 Veja o que você pode fazer ao executar a Área de Trabalho Virtual do Windows no Azure:
 - Configurar uma implantação do Windows 10 de várias sessões que fornece uma escalabilidade completa do Windows 10
-- Virtualizar o Office 365 ProPlus e otimizá-lo para execução em cenários virtuais de vários usuários
+- Virtualizar os Aplicativos do Microsoft 365 para Empresas e otimizá-los para execução em cenários virtuais de vários usuários
 - Fornecer áreas de trabalho virtuais do Windows 7 com Atualizações de Segurança Estendida gratuitas
 - Trazer seu RDS (Serviços de Área de Trabalho Remota) existente, além de aplicativos e áreas de trabalho do Windows Server para qualquer computador
 - Virtualizar aplicativos e áreas de trabalho
@@ -46,12 +46,12 @@ Quando todos os seus pré-requisitos estiverem em vigor, você desejará conclui
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Disponível|  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível|  Sim          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                             |  Sim             |
-| Visual Studio Professional com GitHub Enterprise | VL                                       | Disponível                                        |  Sim           |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível|  Sim          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                         |  Sim          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Disponível|  Yes          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível|  Yes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                             |  Yes             |
+| Visual Studio Professional com GitHub Enterprise | VL                                       | Disponível                                        |  Yes           |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível|  Yes          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                         |  Yes          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 

@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
-ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
+ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87818580"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801055"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -152,7 +152,7 @@ Para saber mais, confira as postagem no blog [Visual Studio Live Share for real-
 
 Estamos introduzindo uma nova extensão que você pode baixar para usar com o Visual Studio 2019. Com essa nova extensão, você pode revisar, executar e até mesmo depurar solicitações de pull da equipe sem sair do Visual Studio. Temos suporte para codificação nos repositórios do GitHub e do Azure DevOps.
 
-   ![Captura de tela da nova janela de início do Visual Studio 2019](media/vs-2019/pr-experience.png)
+   ![Uma captura de tela da nova extensão de solicitações pull no Visual Studio 2019](media/vs-2019/pr-experience.png)
 
 Para obter mais informações, consulte a postagem no blog [Revisões de código usando a extensão Solicitações de Pull do Visual Studio](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
@@ -236,14 +236,14 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 * Se você tiver um problema em que o Visual Studio pare de responder, falha ou outro problema de desempenho, você poderá compartilhar facilmente as etapas de reprodução e os arquivos de suporte conosco usando o [relatório de uma ferramenta problemática](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notas de versão do Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [O que há de novo no SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Novidades do C++ no Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-* [O que há de novo no C# 8,0](/dotnet/csharp/whats-new/csharp-8.md)
-* [Novidades do .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1.md)
-* [O que há de novo no .NET Framework](/dotnet/framework/whats-new.md)
+* [Novidades do C++ no Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
+* [O que há de novo no C# 8,0](/dotnet/csharp/whats-new/csharp-8/)
+* [Novidades do .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [O que há de novo no .NET Framework](/dotnet/framework/whats-new/)
 * [Conferência do Microsoft Build](https://www.microsoft.com/build)
 * [Conferência do Microsoft Ignite](https://www.microsoft.com/ignite)

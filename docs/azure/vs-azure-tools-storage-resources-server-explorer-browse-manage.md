@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911712"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800470"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
@@ -22,15 +22,15 @@ ms.locfileid: "72911712"
 
 ## <a name="overview"></a>Visão Geral
 
-Se você instalou as ferramentas do Azure para Microsoft Visual Studio, você pode exibir dados de blob, de fila e de tabela de suas contas de armazenamento do Azure. O nó de **Armazenamento** do Azure no Gerenciador de Servidores mostra os dados que estão em sua conta do emulador de armazenamento local e outras contas de armazenamento do Azure.
+Se você instalou as ferramentas do Azure para Microsoft Visual Studio, você pode exibir dados de blob, de fila e de tabela de suas contas de armazenamento do Azure. O nó **armazenamento** do Azure no Gerenciador de servidores mostra os dados que estão em sua conta do emulador de armazenamento local e suas outras contas de armazenamento do Azure.
 
-Para exibir o Gerenciador de Servidores no Visual Studio, na barra de menus, selecione **Exibir** > **Gerenciador de Servidores**. O nó de **armazenamento** mostra todas as contas de armazenamento que existem em cada assinatura ou certificado do Azure ao qual você está conectado. Se sua conta de armazenamento não aparecer, você poderá adicioná-la seguindo as instruções [mais adiante neste artigo](#add-storage-accounts-by-using-server-explorer).
+Para exibir Gerenciador de servidores no Visual Studio, na barra de menus, selecione **Exibir**  >  **Gerenciador de servidores**. O nó de **armazenamento** mostra todas as contas de armazenamento que existem em cada assinatura ou certificado do Azure ao qual você está conectado. Se sua conta de armazenamento não aparecer, você poderá adicioná-la seguindo as instruções [mais adiante neste artigo](#add-storage-accounts-by-using-server-explorer).
 
-A partir do Azure SDK 2.7, você pode também usar o Cloud Explorer para exibir e gerenciar os recursos do Azure. Para saber mais, consulte [Gerenciando recursos do Azure com o Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
+A partir do Azure SDK 2.7, você pode também usar o Cloud Explorer para exibir e gerenciar os recursos do Azure. Para obter mais informações, consulte [Gerenciando recursos do Azure com o Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Exibir e gerenciar recursos de armazenamento no Visual Studio
 
-O Gerenciador de Servidores automaticamente mostra uma lista de blobs, filas e tabelas na conta do emulador de armazenamento. A conta do emulador de armazenamento está listada no Gerenciador de Servidores no nó de **Armazenamento** como o nó de **Desenvolvimento**.
+O Gerenciador de Servidores automaticamente mostra uma lista de blobs, filas e tabelas na conta do emulador de armazenamento. A conta do emulador de armazenamento é listada em Gerenciador de Servidores no nó de **armazenamento** como o nó de **desenvolvimento** .
 
 Para ver os recursos da conta do emulador de armazenamento, expanda o nó **Desenvolvimento** . Se o emulador de armazenamento não é iniciado quando você expande o nó **Desenvolvimento**, ele será iniciado automaticamente. Esse processo pode levar vários minutos. Você pode continuar a trabalhar em outras áreas do Visual Studio enquanto o emulador de armazenamento é iniciado.
 
@@ -38,7 +38,7 @@ Para exibir recursos em uma conta de armazenamento, expanda o nó da conta de ar
 
 ## <a name="work-with-blob-resources"></a>Trabalhar com recursos de blob
 
-O nó de **Blobs** exibe uma lista de contêineres para a conta de armazenamento selecionada. Contêineres de blob contêm arquivos de blob e você pode organizar esses blobs em pastas e subpastas. Para obter mais informações, consulte o artigo sobre [Como usar o armazenamento de blobs do .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
+O nó **Blobs** mostra a lista de contêineres da conta de armazenamento selecionada. Contêineres de blob contêm arquivos de blob e você pode organizar esses blobs em pastas e subpastas. Para obter mais informações, consulte o artigo sobre [Como usar o armazenamento de blobs do .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
 
 ### <a name="to-create-a-blob-container"></a>Para criar um contêiner de blob
 
@@ -72,9 +72,9 @@ Você pode executar as seguintes operações com blobs usando os botões no cant
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Para criar uma pasta ou subpasta em um contêiner de blob
 
-1. Escolha o contêiner de blob no Cloud Explorer. Na janela do contêiner, selecione o botão **Carregar blob**.
+1. Escolha o contêiner de blob no **Cloud Explorer**. Na janela do contêiner, selecione o botão **Carregar blob**.
 
-1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)** .
+1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)**.
 
    ![Carregar um arquivo em uma pasta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Como as pastas nos contêineres de blob são pastas virtuais, você não pode cr
 
 Você pode filtrar os blobs que são exibidos especificando um prefixo comum.
 
-Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** ( **!** ), serão exibidos apenas os blobs que começam com "hello".
+Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** (**!**), serão exibidos apenas os blobs que começam com "hello".
 
 ![Caixa de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,13 +102,13 @@ A caixa de texto de filtro diferencia maiúsculas de minúsculas e não dá supo
 
 ### <a name="to-download-blob-data"></a>Para baixar os dados de blob
 
-No Gerenciador de nuvem, use qualquer um dos seguintes métodos:
+No **Cloud Explorer**, use qualquer um dos seguintes métodos:
 
 * Abra o menu de atalho para um ou mais blobs e, em seguida, selecione **Abrir**.
 * Escolha o nome do blob e selecione o botão **Abrir**.
 * Clique duas vezes no nome do blob.
 
-O andamento do download de um blob aparece na janela **Log de atividades do Azure** .
+O andamento do download de um blob é exibido na janela **Log de Atividades do Azure**.
 
 O blob é aberto no editor padrão desse tipo de arquivo. Se o sistema operacional reconhecer o tipo de arquivo, o arquivo será aberto em um aplicativo instalado localmente. Caso contrário, será solicitado que você escolha um aplicativo apropriado para o tipo de arquivo do blob. O arquivo local criado quando você baixa um blob está marcado como somente leitura.
 
@@ -134,7 +134,7 @@ Abra o menu de atalho do blob e selecione **Copiar URL**.
 
 ### <a name="to-edit-a-blob"></a>Para editar um blob
 
-Selecione o blob e selecione o botão **Abrir Blob**.
+Escolha o blob e, em seguida, selecione o botão **abrir blob** .
 
 O arquivo é baixado para um local temporário e aberto no computador local. Você deve carregar o blob novamente depois de fazer alterações.
 
@@ -158,7 +158,7 @@ A imagem a seguir mostra uma fila que contém duas mensagens:
 Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](/rest/api/storageservices/Queue-Service-Concepts). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [Filas do barramento de serviço, tópicos e assinaturas](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [filas, tópicos e assinaturas do barramento de serviço](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Trabalhar com recursos de tabela
 
@@ -166,12 +166,12 @@ O Armazenamento de Tabelas do Microsoft Azure armazena grandes quantidades de da
 
 ### <a name="to-create-a-table"></a>Para criar uma tabela
 
-1. No Cloud Explorer, selecione o nó **Tabelas** da conta de armazenamento e selecione **Criar Tabela**.
+1. No **Cloud Explorer**, selecione o nó **tabelas** da conta de armazenamento e, em seguida, selecione **criar tabela**.
 1. Na caixa de diálogo **Criar Tabela** , insira um nome para a tabela.
 
 ### <a name="to-view-table-data"></a>Para exibir dados da tabela
 
-1. No Cloud Explorer, abra o nó **Azure** e clique no nó **Armazenamento**.
+1. No **Cloud Explorer**, abra o nó **do Azure** e, em seguida, abra o nó de **armazenamento** .
 1. Abra o nó de conta de armazenamento no qual está interessado e abra o nó **Tabelas** para ver uma lista de tabelas para a conta de armazenamento.
 1. Abra o menu de atalho para uma tabela e selecione **Exibir Tabela**.
 
@@ -181,20 +181,20 @@ A tabela é organizada por entidades (mostradas nas linhas) e propriedades (most
 
 ### <a name="to-edit-table-data"></a>Para editar dados da tabela
 
-No Designer de Tabela, abra o menu de atalho de uma entidade (uma única linha) ou uma propriedade (uma única célula) e selecione **Editar**.
+No **Designer de tabela**, abra o menu de atalho para uma entidade (uma única linha) ou uma propriedade (uma única célula) e, em seguida, selecione **Editar**.
 
 ![Adicionar ou editar uma entidade de tabela](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entidades em uma única tabela não precisam ter o mesmo conjunto de propriedades (colunas). Tenha em mente as seguintes restrições ao exibir e editar dados da tabela:
 
 * Você não pode exibir ou editar dados binários (`type byte[]`), mas pode armazená-los em uma tabela.
-* Você não pode editar os valores **PartitionKey** ou **RowKey**, porque o armazenamento de tabelas no Azure não dá suporte a essa operação.
+* Não é possível editar os valores **PartitionKey** ou **RowKey** , pois o armazenamento de tabelas do Azure não dá suporte a essa operação.
 * Você não pode criar uma propriedade chamada **Timestamp**. Os serviços de armazenamento do Azure usam uma propriedade com esse nome.
-* Se você inserir um valor **DateTime**, deve seguir o formato apropriado para as configurações de região e idioma do seu computador (por exemplo, MM/DD/AAAA HH:MM:SS [AM|PM] para o inglês dos EUA).
+* Se você inserir um valor de **data e hora** , deverá seguir um formato apropriado para as configurações de região e idioma do seu computador (por exemplo, mm/dd/aaaa hh: mm: SS [AM | PM] para inglês americano).
 
 ### <a name="to-add-entities"></a>Para adicionar entidades
 
-1. No Designer de Tabela, escolha o botão **Adicionar Entidade**.
+1. Em **Designer de tabela**, selecione o botão **Adicionar entidade** .
 
     ![Botão Adicionar Entidade](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -211,13 +211,13 @@ Você pode personalizar o conjunto de entidades que aparecem em uma tabela, se u
 1. Para abrir o construtor de consultas, abra uma tabela para exibir.
 1. Escolha o botão **Construtor de Consultas** na barra de ferramentas de exibição de tabela.
 
-    A caixa de diálogo **Construtor de Consultas** é exibida. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
+    A caixa de diálogo **Construtor de Consultas** aparece. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
 
     ![Construtor de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Após criar a consulta, feche a caixa de diálogo. O formulário de texto resultante da consulta aparece em uma caixa de texto como um filtro do WCF Data Services.
 1. Para executar a consulta, selecione o ícone de triângulo verde.
 
-Você também pode filtrar dados de entidade que aparecem no Designer de tabela se inserir uma cadeia de caracteres de filtro do WCF Data Services diretamente na caixa de texto de filtro. Esse tipo de cadeia de caracteres é semelhante a uma cláusula SQL WHERE, mas é enviado ao servidor como uma solicitação HTTP. Para obter informações sobre como construir cadeias de caracteres de filtro, consulte [Construir cadeias de caracteres de filtro para o Designer de tabela](vs-azure-tools-table-designer-construct-filter-strings.md).
+Você também pode filtrar dados de entidade que aparecem no Designer de tabela se inserir uma cadeia de caracteres de filtro do WCF Data Services diretamente na caixa de texto de filtro. Esse tipo de cadeia de caracteres é semelhante a uma cláusula SQL WHERE, mas é enviado ao servidor como uma solicitação HTTP. Para obter informações sobre como construir cadeias de caracteres de filtro, consulte [construindo cadeias de caracteres de filtro para o designer de tabela](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 A ilustração a seguir mostra um exemplo de uma cadeia de caracteres de filtro válida:
 
@@ -235,7 +235,7 @@ Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de 
 ### <a name="to-refresh-table-data"></a>Para atualizar dados de tabela
 
 * Selecione o nó **Tabelas** sob **Armazenamento** e selecione o botão **Atualizar** na barra de ferramentas do Gerenciador de Servidores.
-* Para atualizar a lista de entidades que é exibida no Designer de Tabela, selecione o botão **Executar** no Designer de Tabela.
+* Para atualizar a lista de entidades que é exibida no **Designer de tabela**, selecione o botão **executar** em Designer de tabela.
 
 ### <a name="to-refresh-queue-data"></a>Para atualizar os dados da fila
 
@@ -279,7 +279,7 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para exibir os pontos de extremidade secundários
 
-Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando **Propriedades**.
+Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando ** Propriedades**.
 
 ![Pontos de extremidade de armazenamento secundários](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 

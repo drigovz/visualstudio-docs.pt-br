@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3ab53bbda2582d1a9b3c60ac07fd3617d51ddf
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248784"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801848"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Adicionar um menu à barra de menus do Visual Studio
 
@@ -33,7 +33,7 @@ Ao concluir este passo a passos, você pode criar um menu chamado **menu de test
 > A partir do Visual Studio 2019, os menus de nível superior contribuídos por extensões são colocados no menu **extensões** .
 :::moniker-end
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -43,13 +43,13 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 ::: moniker range="vs-2017"
 
-2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. Na **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no nó do projeto e selecione **Adicionar**  >   **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para **Visual C#/extensibilidade** e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >   **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para **Visual C#/extensibilidade** e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. Na **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no nó do projeto e selecione **Adicionar**  >   **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para **Visual C#/extensibilidade** e selecione **comando**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **TestCommand**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >   **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para **Visual C#/extensibilidade** e selecione **comando**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *TestCommand.cs*.
 
 ::: moniker-end
 
@@ -167,6 +167,6 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
     Uma caixa de mensagem deve aparecer e exibir a mensagem "TestCommand Inside TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

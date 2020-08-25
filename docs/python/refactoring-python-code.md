@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520556"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801328"
 ---
 # <a name="refactor-python-code"></a>Refatorar o código do Python
 
@@ -71,7 +71,7 @@ Por fim, se algo normalmente precisar ser excluído devido às regras acima, mas
 
 Ao escrever o código, é fácil acabar com instruções `import` para módulos que não estão sendo usados. Como o Visual Studio analisa o código, ele pode determinar automaticamente se uma instrução `import` é necessária, observando se o nome importado é usado dentro do escopo abaixo, no qual a instrução ocorre.
 
-Clique com o botão direito do mouse em qualquer lugar do editor e selecione **Remover Importações**, que oferece opções para remover de **Todos os Escopos** ou apenas do **Escopo Atual**:
+Use clique com o botão direito do mouse em qualquer lugar no editor e selecione **remover importações**, que oferece opções para remover de **todos os escopos** ou apenas do **escopo atual**:
 
 ![Remover o menu de importações](media/code-refactor-remove-imports-1.png)
 

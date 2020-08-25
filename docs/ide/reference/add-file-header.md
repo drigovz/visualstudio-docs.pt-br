@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374163"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801315"
 ---
 # <a name="add-file-header"></a>Adicionar cabeçalho de arquivo
 
@@ -34,12 +34,12 @@ Esta geração de código aplica-se a:
 
 2. Adicione a seguinte regra ao arquivo EditorConfig: *file_header_template*.
 
-3. Defina o valor da regra como igual ao texto do cabeçalho que você deseja aplicar.
+3. Defina o valor da regra como igual ao texto do cabeçalho que você deseja aplicar. Você pode usar `{fileName}` como um espaço reservado para o nome do arquivo.
 
     ![Regra de cabeçalho do arquivo EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> Você não pode ter multilinhas explícitas em um EditorConfig e precisará usar o caractere de nova linha do UNIX para inserir novas linhas.
+    > [!NOTE]
+    > Você não pode ter multilinhas explícitas em um EditorConfig e precisará usar o caractere de nova linha do UNIX para inserir novas linhas.
 
 4. Coloque o cursor na primeira linha de qualquer arquivo em C# ou Visual Basic.
 
@@ -57,7 +57,7 @@ Esta geração de código aplica-se a:
 
 8. Selecione **aplicar** para aplicar as alterações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638574"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800197"
 ---
 # <a name="installation"></a>Instalação
 
@@ -27,17 +27,16 @@ Essa extensão funciona com o Visual Studio 2015 e o Visual Studio 2017, Communi
 
 Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou do Visual Studio:
 
-1. Selecione**Extensões e Atualizações de** **Ferramentas** > .
+1. Selecione **ferramentas**  >  **extensões e atualizações**.
 
    ![Menu Extensões e Atualizações do Visual Studio](media/installation/extensions.png)
 
 2. Na caixa de diálogo **Extensões e Atualizações**, selecione **Online** no lado esquerdo.
 3. Na caixa de pesquisa no canto superior direito, digite ou insira "tools for ai".
 4. Selecione **Visual Studio Tools for AI** nos resultados.
-5. Clique em **Download**.
+5. Selecione **Baixar**.
 
 ## <a name="prepare-your-local-machine"></a>Preparar seu computador local
-
 Antes de começar a treinar os modelos de aprendizagem profunda em seu computador local, verifique se você tem os pré-requisitos aplicáveis instalados. Isso inclui garantir que você tenha os drivers e as bibliotecas mais recentes para sua GPU NVIDIA (se tiver uma). Verifique também se o Python e suas bibliotecas estão instalados, como NumPy e SciPy, bem como as estruturas de aprendizado profundo corretas que você planeja usar em seu projeto, como CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer.
 
 > [!NOTE]
@@ -238,7 +237,7 @@ Por fim, instale o torchvision em não Windows:
 pip3.5 install torchvision
 ```
 
-### <a name="chainer"></a>Encadeador
+### <a name="chainer"></a>Chainer
 
 O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele fornece APIs de diferenciação automática com base na abordagem de definição por execução (também conhecida como gráficos computacionais dinâmicos), além de APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
 

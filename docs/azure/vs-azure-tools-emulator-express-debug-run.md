@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280577"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800366"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso do Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local
 Ao usar o Emulator Express, você poderá testar e depurar um serviço de nuvem sem executar o Visual Studio como um administrador. É possível definir as configurações do projeto para usar o Emulator Express ou o emulador completo, dependendo dos requisitos do seu serviço de nuvem. Para saber mais sobre o emulador completo, consulte [Executar um aplicativo Azure no emulador de computação](/azure/storage/common/storage-use-emulator).
@@ -23,7 +23,7 @@ Quando você cria um projeto n SDK 2.3 ou posterior do Azure, o Emulator Express
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e, no menu de contexto, selecione **Propriedades**.
+1. Em Gerenciador de Soluções, clique com o botão direito do mouse no projeto e, no menu de contexto, selecione **Propriedades**.
 
 1. Nas páginas de propriedades dos projetos, selecione a guia **Web**.
 

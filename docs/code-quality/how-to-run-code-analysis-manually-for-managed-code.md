@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769366"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800158"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Como executar a análise de código manualmente para código gerenciado (requer o Visual Studio 2019 versão 16,5 ou posterior)
 Por padrão, os analisadores de código do .NET Compiler Platform ("Roslyn") analisam seu código C# ou Visual Basic à medida que você digita fazendo análises ao vivo, bem como durante a compilação. Portanto, normalmente você não precisaria disparar manualmente a análise de código. No entanto, há alguns cenários em que você pode querer disparar manualmente a análise de código:
@@ -26,8 +26,8 @@ Por padrão, os analisadores de código do .NET Compiler Platform ("Roslyn") ana
 
 ### <a name="run-code-analysis-manually"></a>Executar análise de código manualmente
 
-1. Em **Gerenciador de soluções**, clique no projeto.
+1. Em **Gerenciador de soluções**, escolha o projeto.
 
-2. No menu **analisar** , clique em **executar análise de código no** *nome do projeto*.
+2. No menu **analisar** , selecione **executar análise de código no** *nome do projeto*.
 
 A análise de código começará a ser executada em segundo plano. Você deve ver a mensagem **executando a análise de código para \<project> ...** na barra de status do Visual Studio até o canto inferior esquerdo. Após a conclusão da análise de código, a mensagem de status será alterada para a **análise de código concluída para \<project> **. A lista de erros será atualizada em breve com todos os diagnósticos de análise de código.

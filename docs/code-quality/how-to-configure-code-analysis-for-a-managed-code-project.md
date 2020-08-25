@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507853"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801042"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Como: configurar a análise herdada para código gerenciado
 
@@ -36,11 +36,11 @@ No Visual Studio, você pode escolher em uma lista de conjuntos de [regras](../c
 
 1. Abra a guia **análise de código** nas páginas de propriedades do projeto. É possível fazer isso de qualquer uma destas maneiras:
 
-   - Em **Gerenciador de soluções**, selecione o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para **.
+   - Em **Gerenciador de soluções**, escolha o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para **.
 
    - Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Propriedades**e, em seguida, selecione a guia **análise de código** .
 
-2. Nas listas de **configuração** e **plataforma** , selecione a configuração de compilação e a plataforma de destino.
+2. Nas listas de **configuração** e **plataforma** , escolha a configuração de compilação e a plataforma de destino.
 
 ::: moniker range="vs-2017"
 
@@ -89,11 +89,11 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos ao 
 
 4. Você pode especificar um conjunto de regras para um ou mais projetos:
 
-    - Para especificar um conjunto de regras para um projeto individual, selecione o nome do projeto.
+    - Para especificar um conjunto de regras para um projeto individual, escolha o nome do projeto.
 
-    - Para especificar um conjunto de regras para vários projetos, mantenha a **tecla CTRL** pressionada e selecione os nomes dos projetos.
+    - Para especificar um conjunto de regras para vários projetos, selecione **Ctrl** e os nomes de projeto.
 
-    - Para especificar todos os projetos na solução, mantenha pressionada a **tecla Shift** e clique na lista projeto.
+    - Para especificar todos os projetos na solução, selecione **Shift** e a lista de projetos.
 
 5. Selecione o campo **conjunto de regras** de um projeto e, em seguida, selecione o nome do conjunto de regras que você deseja aplicar.
 

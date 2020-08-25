@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918633"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801497"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Práticas recomendadas de desenvolvimento para os suplementos COM, VSTO e VBA no Office
   Se você estiver desenvolvendo suplementos COM, VSTO ou VBA para Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajuda a garantir que:
@@ -57,7 +57,7 @@ Se a solução consistir em um suplemento e um processo externo ao Office, não 
 Defina o número de versão dos binários em sua solução e aumente-o com cada atualização. Isso facilitará para os usuários identificarem as alterações entre as versões e avaliar a compatibilidade.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Fornecer instruções de suporte para as versões mais recentes do Office
-Os clientes estão solicitando que os ISVs forneçam instruções de suporte para seus suplementos COM, VSTO e VBA que são executados no Office. A listagem de suas instruções de suporte explícito ajuda os clientes que usam as ferramentas de preparação para o Office 365 ProPlus a entender seu suporte.
+Os clientes estão solicitando que os ISVs forneçam instruções de suporte para seus suplementos COM, VSTO e VBA que são executados no Office. A listagem de suas instruções explícitas de suporte ajuda os clientes que usam aplicativos Microsoft 365 para ferramentas de preparação para empresas a compreender o seu suporte.
 
 Para fornecer instruções de suporte para aplicativos cliente do Office (por exemplo, Word ou Excel), primeiro verifique se os suplementos são executados na versão atual do Office e, em seguida, confirme para fornecer atualizações se o seu suplemento for interrompido em uma versão futura. Você não precisa testar seus suplementos quando a Microsoft lança uma nova compilação ou uma atualização para o Office. A Microsoft raramente altera a plataforma de extensibilidade COM, VSTO e VBA no Office, e essas alterações serão bem documentadas.
 

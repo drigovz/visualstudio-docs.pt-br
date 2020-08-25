@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Como adicionar uma identidade alternativa à sua Assinatura do Visual Studio para ser usada com o Azure DevOps e o Azure
-ms.openlocfilehash: 0db6f0f37127c600d529734085da23c30df73b9b
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248401"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800769"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades para assinantes do Visual Studio
 Quando você ativar sua assinatura do Visual Studio, será vinculada a identidade (ou o logon) que você usou durante a ativação com a assinatura do Visual Studio. Dessa forma, você poderá ser reconhecido no [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), no Azure DevOps e no Azure.
@@ -22,7 +22,7 @@ Como essas funcionalidades são incluídas como um benefício do assinante, voc�
 
 No Azure, verificamos seu status de assinatura do Visual Studio quando você ativa o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) que é um benefício do Assinante.
 
-No [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), talvez você possa adicionar uma **alternativa identidade**, além da identidade usada durante a ativação. É permitido adicionar uma identidade alternativa quando uma conta da Microsoft é usada para ativar a assinatura. Dessa forma, também é possível adicionar uma conta corporativa ou de estudante (usada para fazer logon no Visual Studio, no Office 365 ou na rede corporativa ou de estudante), o que permite acessar o Azure DevOps usando sua conta pessoal e sua conta corporativa ou de estudante.
+No [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), talvez você possa adicionar uma **alternativa identidade**, além da identidade usada durante a ativação. É permitido adicionar uma identidade alternativa quando uma conta da Microsoft é usada para ativar a assinatura. Dessa forma, você também pode adicionar uma conta corporativa ou de estudante (que você usa ao fazer logon no Visual Studio, Microsoft 365, ou em sua rede empresarial ou de estudante), permitindo que você acesse o Azure DevOps usando sua conta pessoal e sua conta de trabalho ou escolar.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Adicionar uma conta alternativa à sua assinatura
 Adicionar uma conta alternativa à sua Assinatura do Visual Studio permite que você acesse os benefícios da assinatura, como o Azure DevOps e o Azure, com uma identidade diferente daquela à qual a assinatura está atribuída. No passado, essa funcionalidade estava disponível somente se a sua assinatura do VS (Visual Studio) fosse atribuída a uma conta da Microsoft (MSA). Nós estendemos essa funcionalidade para contas corporativas ou de estudante no Azure AD (Azure Active Directory).
@@ -57,7 +57,7 @@ R: O Azure DevOps deverá reconhecer sua assinatura automaticamente quando você
 
 Se o Azure DevOps ainda não reconhecer sua assinatura, contate o [suporte do Azure DevOps](https://azure.microsoft.com/support/devops/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)
