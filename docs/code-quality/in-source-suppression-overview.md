@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800847"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893366"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos de análise de código
 
@@ -50,7 +50,7 @@ Em C++/CLI, use o SUPPRESS_MESSAGE de \_ mensagens de AC suprimir a \_ mensagem 
 
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage
 
-Quando você seleciona **suprimir** no contexto ou clica com o botão direito do mouse (ou seleciona e mantém o menu) de um aviso de análise de código na **lista de erros**, um <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo é adicionado em seu código ou ao arquivo de supressão global do projeto.
+Quando você seleciona **suprimir** no menu de contexto ou clique com o botão direito do mouse em um aviso de análise de código na **lista de erros**, um <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo é adicionado no código ou no arquivo de supressão global do projeto.
 
 O <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo tem o seguinte formato:
 
@@ -195,7 +195,7 @@ Para a análise de código herdado, você pode escolher se deseja suprimir aviso
 > [!NOTE]
 > A análise de código ignora `GeneratedCodeAttribute` quando é aplicada a um assembly inteiro ou a um único parâmetro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

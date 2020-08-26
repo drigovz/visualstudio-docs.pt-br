@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801536"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893301"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
 
@@ -23,10 +23,10 @@ O editor de conjunto de regras de análise de código permite especificar as reg
 
 A tabela a seguir mostra as opções de gravidade:
 
-|Ação (severidade)|Description|
+|Ação (severidade)|Descrição|
 |-|-|
 |Aviso|Gera um aviso no **lista de erros** e também no momento da compilação.|
-|Erro|Gera um erro na **lista de erros** e também no momento da compilação.|
+|Erro do|Gera um erro na **lista de erros** e também no momento da compilação.|
 |Informações|Gera uma mensagem no **lista de erros**.|
 |Hidden|A violação não é visível para o usuário. No entanto, o IDE é notificado sobre a violação.|
 |Nenhum|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
@@ -38,7 +38,7 @@ O editor exibe as regras em uma estrutura de árvore que agrupa as regras por um
    > [!TIP]
    > Você pode alterar o modo como as regras são agrupadas na lista suspensa **Agrupar por** .
 
-- No campo **ação** de um grupo, especifique a ação a ser aplicada a todas as regras no grupo.
+- Clique no campo **ação** de um grupo, especifique a ação a ser aplicada a todas as regras no grupo.
 
 - Marque ou desmarque a caixa de seleção de uma regra individual. Quando você marca a caixa de seleção para uma regra, a regra é definida como a ação de **aviso** .
 
@@ -48,7 +48,7 @@ Você pode usar a barra de ferramentas do editor de conjunto de regras para agru
 
 A tabela a seguir descreve os controles na barra de ferramentas do editor de conjunto de regras.
 
-|Controle ToolBar|Description|
+|Controle ToolBar|Descrição|
 |---------------------|-----------------|
 |**Expandir Tudo**|Mostra as regras em todos os grupos.|
 |**Recolher Tudo**|Oculta as regras em todos os grupos.|
@@ -85,6 +85,6 @@ Nos cabeçalhos de coluna da grade de conjunto de regras, você pode classificar
 
 - Para filtrar os conjuntos de regras pelo valor de um campo, selecione o botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar um conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801029"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893262"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -26,9 +26,9 @@ Você pode criar um conjunto de regras personalizadas para atender às necessida
 
 Para criar um conjunto de regras personalizado, você pode abrir um conjunto de regras internas no **Editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando uma regra é violada, &mdash; por exemplo, mostrar um aviso ou um erro.
 
-1. Em **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
-2. Nas páginas de **Propriedades** , vá para a guia **análise de código** .
+2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
 
 ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 
 Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diálogo **novo arquivo** :
 
-1. Selecione **arquivo**  >  **novo**  >  **arquivo**ou selecione **Ctrl** + **N**.
+1. Selecione **arquivo**  >  **novo**  >  **arquivo**ou pressione **Ctrl** + **N**.
 
 2. Na caixa de diálogo **novo arquivo** , selecione a categoria **geral** à esquerda e, em seguida, selecione **conjunto de regras de análise de código**.
 
@@ -70,9 +70,9 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 > [!NOTE]
 > O procedimento a seguir não se aplica a projetos do .NET Core, que não têm uma guia de propriedade de **análise de código** .
 
-1. Em **Gerenciador de soluções**, selecione e mantenha pressionado (ou clique com o botão direito do mouse) no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
-2. Nas páginas de **Propriedades** , vá para a guia **análise de código** .
+2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
 
 ::: moniker range="vs-2017"
 
@@ -145,7 +145,7 @@ Agora que você tem um conjunto de regras, a próxima etapa é personalizar as r
 > [!div class="nextstepaction"]
 > [Modificar regras no editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

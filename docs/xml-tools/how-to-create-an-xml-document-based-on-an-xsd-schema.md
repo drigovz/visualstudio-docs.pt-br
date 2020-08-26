@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a190790b915ac8dd011bc9843fe8abdf2d7381ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249573"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893353"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: criar um documento XML com base em um esquema XSD
 
@@ -43,7 +43,7 @@ Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se
 
 1. Siga as etapas em [como criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), selecione e mantenha pressionado (ou clique com o botão direito do mouse) no `PurchaseOrder` elemento global e, em seguida, selecione **gerar XML de exemplo**.
+2. No [Gerenciador de esquema XML](../xml-tools/xml-schema-explorer.md), clique com o botão direito do mouse no `PurchaseOrder` elemento global e selecione **gerar XML de exemplo**.
 
      Quando você seleciona essa opção, o PurchaseOrder. o arquivo *XML* com o seguinte conteúdo XML de exemplo será gerado e aberto no editor de XML:
 

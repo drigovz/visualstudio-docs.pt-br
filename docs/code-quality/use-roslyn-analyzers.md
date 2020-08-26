@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801601"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893418"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -28,11 +28,11 @@ Você pode fazer grande parte da personalização do diagnóstico do Analyzer do
 
 ![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
 
-Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse (ou selecione e mantenha pressionado) na regra e selecione **Propriedades**, ou selecione a regra e, em seguida, selecione **ALT** + **Enter**.
+Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** + **Enter**.
 
 ![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
 
-Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse (ou selecione e mantenha pressionado) no diagnóstico e selecione **Exibir ajuda**.
+Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse no diagnóstico e selecione **Exibir ajuda**.
 
 Os ícones ao lado de cada diagnóstico no **Gerenciador de soluções** correspondem aos ícones que você vê no conjunto de regras ao abri-lo no editor:
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra as diferentes opções de gravidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Informações | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
@@ -225,7 +225,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 O Visual Studio também fornece uma maneira conveniente de configurar a severidade de uma regra no menu de contexto da lista de erros.
 
-1. Após a ocorrência de uma violação, clique com o botão direito do mouse (ou selecione e segure) a entrada de diagnóstico na lista de erros.
+1. Após a ocorrência de uma violação, clique com o botão direito do mouse na entrada de diagnóstico na lista de erros.
 
 2. No menu de contexto, selecione **definir severidade**.
 
@@ -242,12 +242,12 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
 
-1. Em Gerenciador de soluções, selecione **References**  >  **analisadores** de referências (ou **Dependencies**  >  **analisadores** de dependências para projetos do .NET Core).
+1. Em Gerenciador de soluções, expanda **referências**  >  **analisadores** (ou **Dependencies**  >  **analisadores** de dependências para projetos do .NET Core).
 
 2. Expanda o assembly que contém a regra para a qual você deseja definir a severidade.
 
 ::: moniker range=">=vs-2019"
-3. Clique com o botão direito do mouse (ou selecione e segure) a regra e selecione **definir severidade**. No menu de contexto, escolha uma das opções de gravidade.
+3. Clique com o botão direito do mouse na regra e selecione **definir severidade**. No menu de contexto, escolha uma das opções de gravidade.
 
    O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado. Se o seu projeto usa um arquivo RuleSet em vez de um arquivo EditorConfig, a entrada de severidade é adicionada ao arquivo RuleSet.
 
@@ -256,7 +256,7 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Clique com o botão direito do mouse (ou selecione e segure) a regra e selecione **definir severidade do conjunto de regras**. No menu de contexto, escolha uma das opções de gravidade.
+3. Clique com o botão direito do mouse na regra e selecione **definir severidade do conjunto de regras**. No menu de contexto, escolha uma das opções de gravidade.
 
    A severidade da regra é salva no arquivo de conjunto de regras ativo.
 ::: moniker-end
@@ -267,7 +267,7 @@ O Visual Studio também fornece uma maneira conveniente de configurar a severida
 
 1. Abra o arquivo de conjunto de regras ativo de uma das seguintes maneiras:
 
-- Em **Gerenciador de soluções**, clique duas vezes no arquivo, clique com o botão direito do mouse (ou selecione e mantenha) **referências**  >  nó**analisadores** e selecione **abrir conjunto de regras ativas**.
+- Em **Gerenciador de soluções**, clique duas vezes no arquivo, clique com **References**o botão direito do mouse no  >  nó**analisadores** de referências e selecione **abrir conjunto de regras ativas**.
 - Na página de propriedades de **análise de código** do projeto, selecione **abrir** .
 
   Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio faz uma cópia do arquivo de conjunto de regras padrão, nomeia-o * \<projectname> . RuleSet*e o adiciona ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
@@ -336,13 +336,13 @@ Há várias maneiras de suprimir violações de regra:
 
 - No **Editor de código**
 
-  Coloque o cursor na linha de código com a violação e selecione **Ctrl** + **period (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  >  **na origem/no arquivo de supressão**.
+  Coloque o cursor na linha de código com a violação e pressione **Ctrl** + **ponto (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  >  **na origem/no arquivo de supressão**.
 
   ![Suprimir diagnóstico do menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Da **lista de erros**
 
-  Escolha as regras que você deseja suprimir e clique com o botão direito do mouse (ou selecione e mantenha pressionado) e selecione **suprimir**  >  **na origem/no arquivo de supressão**.
+  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir**  >  **na origem/no arquivo de supressão**.
 
   - Se você suprimir **na origem**, a caixa de diálogo **Visualizar alterações** será aberta e mostrará uma visualização do [aviso de #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) do C# ou Visual Basic diretiva de [aviso de #Disable](/dotnet/visual-basic/language-reference/directives/directives) que é adicionada ao código-fonte.
 
@@ -392,7 +392,7 @@ Em um projeto do .NET Core, se você adicionar uma referência a um projeto que 
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar um bug do analisador de código](https://github.com/dotnet/roslyn-analyzers/issues)
