@@ -2,12 +2,12 @@
   href: index.yml
 - name: Visão geral
   items:
-    - name: Visão geral da implantação
-      href: deploying-applications-services-and-components-resources.md
-- name: Guias de Início Rápido
-  items:
     - name: Introdução à implantação
       href: deploying-applications-services-and-components.md
+    - name: 'Implantar em uma pasta, IIS ou Azure'
+      href: deploying-applications-services-and-components-resources.md
+- name: Inícios rápidos
+  items:
     - name: Implantar no Serviço de Aplicativo do Azure
       href: quickstart-deploy-to-azure.md
     - name: Implantar no Serviço de Aplicativo para Linux
