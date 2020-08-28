@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
+ms.sourcegitcommit: 5823b184bf47fbedaca40e32ca0b3f640a643cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507993"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89053423"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
 
@@ -92,6 +92,7 @@ Consulte os links a seguir para baixar e exibir os arquivos de configuração do
 - https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+- https://aka.ms/vs/diaghub/agentconfig/dotnetcountersbase
 
 As configurações de os (base/alta/baixa) correspondem aos dados coletados para a ferramenta de criação de perfil de [uso da CPU](../profiling/cpu-usage.md) .
 As configurações de DotNetObjectAlloc (base/baixa) correspondem aos dados coletados para a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md).
