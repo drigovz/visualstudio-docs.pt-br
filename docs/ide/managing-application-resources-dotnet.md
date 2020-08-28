@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
+ms.sourcegitcommit: f4d734329c82f2c8005b36af4b2b5516d90e6c63
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593688"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992362"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -31,17 +31,17 @@ Arquivos de recurso são arquivos que fazem parte de um aplicativo, mas não sã
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Gerenciando recursos de aplicativo (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources).
 
-Para obter mais informações sobre recursos em aplicativos de desktop .NET, consulte [Recursos em aplicativos de desktop](/dotnet/framework/resources/index).
+Para obter mais informações sobre os recursos em aplicativos .NET, consulte [recursos em aplicativos .net](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Trabalhar com recursos
 
 Em um projeto de código gerenciado, abra a janela de propriedades do projeto. Você pode abrir a janela Propriedades das seguintes maneiras:
 
-- Clicar com o botão direito do mouse no nó do projeto no **Solution Explorer** e selecionar **Propriedades**
+- Clicando com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecionando **Propriedades**
 - Digitando **propriedades do projeto** na caixa de pesquisa **Ctrl**+**Q**
-- Escolhendo **Alt**+**Enter** in **Solution Explorer**
+- Escolhendo **ALT** + **Enter** no **Gerenciador de soluções**
 
-Selecione a guia **Recursos.** Você pode adicionar um arquivo *.resx* se o seu projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
+Selecione a guia **recursos** . Você pode adicionar um arquivo *. resx* se seu projeto não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
 
 ## <a name="resources-in-other-project-types"></a>Recursos em outros tipos de projeto
 
@@ -52,5 +52,5 @@ Recursos são gerenciados de forma diferente em projetos do .NET que em outros t
 
 ## <a name="see-also"></a>Confira também
 
-- [Recursos em aplicativos de desktop (.NET Framework)](/dotnet/framework/resources/index)
+- [Recursos em aplicativos .NET (.NET Framework)](/dotnet/framework/resources/index)
 - [Gerenciando recursos de aplicativo (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources)
