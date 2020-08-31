@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091480"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176059"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
 
@@ -577,6 +577,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA2245 | [CA2245: Não atribuir uma propriedade a si mesma](../code-quality/ca2245.md) | Uma propriedade foi acidentalmente atribuída a ela mesma. |
 | CA2246 | [CA2246: Não designar um símbolo e o membro dele na mesma instrução](../code-quality/ca2246.md) | Não é recomendável atribuir um símbolo e seu membro, ou seja, um campo ou uma propriedade, na mesma instrução. Não fica claro se o acesso de membro foi projetado para usar o valor antigo do símbolo antes da atribuição ou o novo valor da atribuição nesta instrução. |
 | CA2247 | [CA2247: o argumento passado para o Construtor TaskCompletionSource deve ser TaskCreationOptions enum em vez de TaskContinuationOptions enum.](../code-quality/ca2247.md) | TaskCompletionSource tem construtores que usam TaskCreationOptions que controlam a tarefa subjacente e construtores que assumem o estado do objeto armazenado na tarefa.  Passar acidentalmente um TaskContinuationOptions em vez de um TaskCreationOptions resultará na chamada que trata as opções como estado. |
+| CA2249 | [CA2249: CA2249: considere o uso de String. Contains em vez de String. IndexOf](../code-quality/ca2249.md) | Chamadas para `string.IndexOf` onde o resultado é usado para verificar a presença/ausência de uma subcadeia de caracteres podem ser substituídas por `string.Contains` . |
 | CA5122 | [As declarações P/Invoke CA5122 não devem ser críticas de segurança](../code-quality/ca5122.md) | Os métodos são marcados como SecuritySafeCritical quando executam uma operação confidencial de segurança, mas também são seguros para serem usados pelo código transparente. O código transparente jamais pode chamar diretamente o código nativo por meio de um P/Invoke. Por isso, a marcação de um P/Invoke como crítico de segurança não permitirá que o código transparente o chame, e é enganosa na análise de segurança. |
 | CA5359 | [CA5359 não desabilitar a validação de certificado](../code-quality/ca5359.md) | Um certificado pode ajudar a autenticar a identidade do servidor. Os clientes devem validar o certificado do servidor para garantir que as solicitações sejam enviadas ao servidor pretendido. Se o ServerCertificateValidationCallback sempre retornar `true` , qualquer certificado passará na validação. |
 | CA5360 | [CA5360 não chamar métodos perigosos na desserialização](../code-quality/ca5360.md) | A desserialização insegura é uma vulnerabilidade que ocorre quando dados não confiáveis são usados para proutilizar a lógica de um aplicativo, causarem um ataque de negação de serviço (DoS) ou até mesmo executar um código arbitrário quando ele estiver desserializado. Frequentemente, é possível que usuários mal-intencionados abusam esses recursos de desserialização quando o aplicativo estiver desserializando dados não confiáveis que estão sob seu controle. Especificamente, invoque métodos perigosos no processo de desserialização. Ataques de desserialização inseguros com êxito podem permitir que um invasor execute ataques, como ataques de DoS, desvios de autenticação e execução remota de código. |
