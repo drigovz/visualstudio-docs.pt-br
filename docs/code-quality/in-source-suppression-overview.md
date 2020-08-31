@@ -1,12 +1,12 @@
 ---
-title: Suprimir avisos de análise de código
-ms.date: 12/01/2018
+title: Suprimir violações de análise de código
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893366"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091432"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Suprimir avisos de análise de código
+# <a name="suppress-code-analysis-violations"></a>Suprimir violações de análise de código
 
 Geralmente, é útil indicar que um aviso não é aplicável. Isso indica aos membros da equipe que o código foi revisado e que o aviso pode ser suprimido. A supressão na origem (ISS) usa o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir um aviso. O atributo pode ser colocado próximo ao segmento de código que gerou o aviso. Você pode adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo ao arquivo de origem digitando-o ou pode usar o menu de atalho em um aviso no **lista de erros** para adicioná-lo automaticamente.
 

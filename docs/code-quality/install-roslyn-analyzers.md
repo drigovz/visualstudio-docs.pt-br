@@ -1,24 +1,24 @@
 ---
-title: Instalar analisadores do Roslyn
-ms.date: 08/03/2018
-ms.topic: how-to
+title: Instalar analisadores de terceiros
+ms.date: 08/27/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371749"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091445"
 ---
-# <a name="install-net-compiler-platform-code-analyzers"></a>Instalar analisadores de código .NET Compiler Platform
+# <a name="install-third-party-analyzers"></a>Instalar analisadores de terceiros
 
 O Visual Studio inclui um conjunto principal de analisadores de .NET Compiler Platform (*Roslyn*). Esses analisadores estão sempre ativados. Você pode instalar analisadores adicionais como pacotes NuGet ou como extensões do Visual Studio em arquivos *VSIX* .
 
@@ -26,7 +26,7 @@ O Visual Studio inclui um conjunto principal de analisadores de .NET Compiler Pl
 
 1. Localize o pacote do analisador que você deseja instalar no www.nuget.org.
 
-   Por exemplo, talvez você queira [instalar os analisadores do Microsoft FxCop](install-fxcop-analyzers.md#nuget-package) para verificar seu código quanto a problemas de segurança e desempenho, entre outros. Ou instale o [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) para procurar problemas de estilo em sua base de código.
+   Por exemplo, talvez você queira instalar [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) para procurar problemas de estilo em sua base de código.
 
 2. Instale o pacote no Visual Studio usando o console do [Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou a [interface do usuário do Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
@@ -96,7 +96,7 @@ Se você quiser verificar se a extensão está instalada, selecione **extensões
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Instalar analisadores do FxCop](../code-quality/install-fxcop-analyzers.md)
