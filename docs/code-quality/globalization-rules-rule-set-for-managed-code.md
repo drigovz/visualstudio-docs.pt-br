@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5502989e3866cb28d05e36d4c88e38574e5987c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587596"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219667"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Conjunto de regras de globalização para código gerenciado
 
@@ -28,7 +28,8 @@ Use o conjunto de regras Microsoft Globalization Rules para se concentrar em pro
 |[CA1304](../code-quality/ca1304.md)|Especificar CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Especificar IFormatProvider|
 |[CA1306](../code-quality/ca1306.md)|Definir localidade para tipos de dados|
-|[CA1307](../code-quality/ca1307.md)|Especificar StringComparison|
+|[CA1307](../code-quality/ca1307.md)|Especificar StringComparison para fins de clareza|
 |[CA1308](../code-quality/ca1308.md)|Normalizar cadeias de caracteres em maiúsculas|
 |[CA1309](../code-quality/ca1309.md)|Usar StringComparison ordinal|
+|[CA1310](../code-quality/ca1310.md)|Especificar StringComparison para exatidão|
 |[CA2101](../code-quality/ca2101.md)|Especificar marshaling para argumentos de cadeias de caracteres P/Invoke|
