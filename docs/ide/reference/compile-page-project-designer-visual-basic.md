@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111312"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284311"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 
@@ -59,7 +59,7 @@ Especifica o local dos arquivos de saída para a configuração deste projeto. D
 
 Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado.
 
-**Opção explícita**
+**Opção Explicit**
 
 Especifica se a declaração implícita de variáveis deve ser permitida. Selecione **Ativar** para exigir a declaração explícita de variáveis. Isso faz o compilador relatar erros se variáveis não forem declaradas antes de serem usadas. Selecione **Desativar** para permitir a declaração implícita de variáveis.
 
@@ -105,7 +105,7 @@ A seção **Configurações de Aviso** da **página Compilar** tem configuraçõ
 
 Quando você define **Opção Estrita** como **Ativada**, todas estas três definições de configuração de aviso são definidas como **Erro**. Quando você define **Opção Estrita** como **Desativada**, todas as três configurações são definidas como **Nenhum**.
 
-Você pode alterar individualmente cada definição de configuração de aviso como **Nenhum**, **Aviso** ou **Erro**. Se todas as três configurações de `On` configuração `Option strict` de aviso estiverem definidas como **Erro,** aparecerá na caixa. Se todos os três `Off` estiverem definidos como **Nenhum,** aparecerá nesta caixa. Para qualquer outra combinação dessas configurações, **(personalizado)** será exibido.
+Você pode alterar individualmente cada definição de configuração de aviso como **Nenhum**, **Aviso** ou **Erro**. Se todas as três definições de configuração de aviso estiverem definidas como **erro**, `On` aparecerá na `Option strict` caixa. Se todos os três estiverem definidos como **nenhum**, `Off` aparecerá nesta caixa. Para qualquer outra combinação dessas configurações, **(personalizado)** será exibido.
 
 **Opção comparar**
 
@@ -117,7 +117,7 @@ Se um arquivo de código-fonte contiver uma [Instrução Opção Comparar](/dotn
 
 Ao criar um projeto, a configuração **Opção Comparar** na página **Compilar** é definida como o valor da configuração **Opção Comparar** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração inicial padrão de **Opção Comparar** em **Padrões do VB** é **Binário**.
 
-**Infere opção**
+**Opção Infer**
 
 Especifica se você deve permitir inferência de tipo de variável local nas declarações de variável. Selecione **Ativado** para permitir o uso de inferência de tipo de variável local. Selecione **Desativado** para bloquear a inferência de tipo de variável local.
 
@@ -155,7 +155,7 @@ Por padrão, todos os avisos do compilador são adicionados à Lista de Tarefas 
 
 **Desabilitar todos os avisos**
 
-Especifica se o compilador deve poder emitir notificações conforme especificado na tabela **Condição e Notificação** descrita anteriormente neste documento. Por padrão, essa caixa de seleção é desmarcada. Marque esta caixa de seleção para instruir o compilador a não emitir avisos ou erros.
+Especifica se o compilador deve poder emitir notificações conforme especificado na tabela **Condição e Notificação** descrita anteriormente neste documento. Por padrão, essa caixa de seleção está desmarcada. Marque esta caixa de seleção para instruir o compilador a não emitir avisos ou erros.
 
 Essa configuração corresponde à opção do compilador [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).
 
@@ -179,7 +179,7 @@ Por padrão, essa caixa de seleção está desmarcada, o que especifica que o ap
 
 Essa opção não está disponível para projetos de Aplicativos do Windows ou Aplicativo de Console.
 
-**Eventos de compilação**
+**Eventos de Compilação**
 
 Clique nesse botão para acessar a caixa de diálogo **Eventos de Build**. Use essa caixa de diálogo para especificar as instruções de configuração de pré e de pós-build para o projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Eventos de Build(Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
@@ -191,4 +191,4 @@ Clique neste botão para acessar a caixa de diálogo **Configurações Avançada
 
 - [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [Como: Criar e Editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+- [Como: criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

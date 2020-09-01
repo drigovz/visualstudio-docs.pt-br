@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114111"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284394"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interações com a janela
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interações com a janela
 
 ### <a name="overview"></a>Visão geral
  Os dois tipos de janela principais usados no Visual Studio são editores de documentos e janelas de ferramentas. Raras, mas possíveis, são caixas de diálogo sem janela restrita. Embora todos estejam sem janela restrita no Shell, seus padrões são fundamentalmente diferentes. Este tópico aborda a diferença entre janelas de documentos, janelas de ferramentas e caixas de diálogo sem janela restrita. Os padrões de caixa de diálogo modais são abordados em [caixas de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,7 +40,7 @@ ms.locfileid: "88114111"
 |**Instâncias**|*Várias instâncias*<br /><br /> Vários editores podem ser abertos ao mesmo tempo e editar arquivos diferentes, enquanto alguns editores também permitem que o mesmo arquivo seja aberto em mais de um editor (usando a **janela > novo** comando de janela).<br /><br /> Um único editor pode estar editando um ou vários arquivos ao mesmo tempo (Designer de projeto).|*Instância única ou múltipla*<br /><br /> O conteúdo é alterado para refletir o contexto (como no navegador de propriedades) ou o foco/contexto de push para outras janelas (Lista de Tarefas Gerenciador de Soluções).<br /><br /> As janelas de ferramentas de instância única e várias instâncias devem ser associadas à janela do documento ativo, a menos que haja um motivo convincente para não.|*Instância única*|
 |**Exemplos**|**Editores de texto**, como o editor de código<br /><br /> **Superfícies de design**, como um designer de formulário ou uma superfície de modelagem<br /><br /> **Layouts de controle semelhantes a caixas de diálogo**, como o designer de manifesto|O **Gerenciador de soluções** fornece uma solução e projetos contidos na solução<br /><br /> O **Gerenciador de servidores** fornece uma exibição hierárquica de servidores e conexões de dados que o usuário escolhe abrir na janela. Abrir um objeto da hierarquia de banco de dados, como uma consulta, abre uma janela de documento e permite que o usuário edite a consulta.<br /><br /> O **navegador de propriedades** exibe as propriedades do objeto selecionado em uma janela de documento ou em outra janela de ferramenta. As propriedades são apresentadas em uma exibição de grade hierárquica ou em controles complexos semelhantes a caixas de diálogo e permitem que o usuário defina os valores para essas propriedades.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Janelas de ferramentas
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Janelas de ferramentas
 
 ### <a name="overview"></a>Visão geral
  As janelas de ferramentas dão suporte ao trabalho do usuário que ocorre em janelas de documentos. Eles podem ser usados para exibir uma hierarquia que representa um objeto raiz fundamental que o Visual Studio fornece e pode manipular.
@@ -103,7 +103,7 @@ ms.locfileid: "88114111"
 
 #### <a name="common-tool-windows-and-their-functions"></a>Janelas de ferramentas comuns e suas funções
 
-|Type|Janela de ferramentas|Função|
+|Tipo|Janela de ferramentas|Função|
 |----------|-----------------|--------------|
 |**Hierarquia**|Gerenciador de Soluções|Uma árvore hierárquica que exibe uma lista de documentos contidos em projetos, arquivos diversos e itens de solução. A exibição dos itens dentro de projetos é definida pelo pacote que possui o tipo de projeto (por exemplo, tipos de modo misto ou baseado em referência).|
 |**Hierarquia**|Exibição de Classe|Uma árvore hierárquica das classes e de vários elementos no conjunto de trabalho de documentos, independentemente dos próprios arquivos.|
@@ -122,7 +122,7 @@ ms.locfileid: "88114111"
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Saída|A janela de saída pode ser usada sempre que você tiver eventos de texto ou status para declarar.|
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Memória||
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Pontos de interrupção||
-|**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Executando||
+|**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Em execução||
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Documentos||
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Pilha de chamadas||
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Locais||
@@ -131,7 +131,7 @@ ms.locfileid: "88114111"
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Registros||
 |**Depurador:** um grupo de janelas específicas para depurar tarefas e monitorar atividades|Threads||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Convenções do editor de documento
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Convenções do editor de documento
 
 ### <a name="document-interactions"></a>Interações com documentos
  O "documento bem" é o maior espaço no IDE e é onde o usuário geralmente se concentrou em sua atenção para concluir suas tarefas, assistidas por janelas de ferramentas complementares. Os editores de documento representam as unidades fundamentais de trabalho que o usuário abre e salva no Visual Studio. Eles retêm uma forte noção de seleção vinculada a Gerenciador de Soluções ou outras janelas de hierarquia ativas. O usuário deve ser capaz de apontar para uma dessas janelas de hierarquia e saber onde o documento está contido e sua relação com a solução, o projeto ou outro objeto raiz fornecido por um pacote do Visual Studio.
@@ -239,7 +239,7 @@ ms.locfileid: "88114111"
 
 - Os usuários devem ser capazes de interagir com os controles usando somente o teclado, ativando o editor e tabulando por meio de controles ou usando mnemônicos padrão.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Caixas
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Caixas
 
 ### <a name="introduction"></a>Introdução
  As caixas de diálogo no Visual Studio normalmente devem suportar uma unidade discreta do trabalho do usuário e, em seguida, ser ignoradas.
@@ -295,14 +295,14 @@ ms.locfileid: "88114111"
 
 - Os [assistentes](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) são úteis para direcionar o usuário por meio de uma sequência lógica de etapas para a conclusão de uma tarefa. Uma série de opções são oferecidas em painéis seqüenciais, às vezes apresentando fluxos de trabalho diferentes ("branches") dependentes de uma escolha feita no painel anterior.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Caixas de diálogo simples
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Caixas de diálogo simples
  Uma caixa de diálogo simples é uma apresentação de controles em uma única janela modal. Essa apresentação pode incluir variações de padrões de controle complexos, como um seletor de campo. Para caixas de diálogo simples, siga o layout geral padrão, bem como qualquer layout específico necessário para agrupamentos de controle complexos.
 
  ![Caixa de diálogo simples no Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Criar chave de nome forte é um exemplo de uma caixa de diálogo simples no Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Caixas de diálogo em camadas
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Caixas de diálogo em camadas
  As caixas de diálogo em camadas incluem guias, painéis e árvores incorporadas. Eles são usados para maximizar o espaço real quando há vários grupos de controles oferecidos em uma única parte da interface do usuário. Os agrupamentos são dispostos em camadas para que o usuário possa escolher qual Agrupamento verá a qualquer momento.
 
  No caso mais direto, o mecanismo para alternar entre agrupamentos é um controle guia. Há várias alternativas disponíveis. Consulte priorização e disposição em camadas para saber como escolher o estilo mais apropriado.
@@ -313,7 +313,7 @@ ms.locfileid: "88114111"
 
  **Ferramentas > opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>Assistentes
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> Assistentes
  Os assistentes são úteis para direcionar o usuário por meio de uma sequência lógica de etapas na conclusão de uma tarefa. Uma série de opções são oferecidas em painéis seqüenciais, e o usuário deve continuar em cada etapa antes de prosseguir para a próxima. Quando há padrões suficientes disponíveis, o botão **concluir** é habilitado.
 
  Os assistentes modais são usados para tarefas que:
@@ -385,7 +385,7 @@ ms.locfileid: "88114111"
 #### <a name="access-keys"></a>Chaves de acesso
  Não use chaves de acesso para os botões **OK** / **Cancelar** / **ajuda** . Esses botões são mapeados para teclas de atalho por padrão:
 
-|Nome do botão|Atalho do teclado|
+|Nome do botão|Atalho de teclado|
 |-----------------|-----------------------|
 |OK|Digite|
 |Cancelar|Esc|
@@ -394,7 +394,7 @@ ms.locfileid: "88114111"
 #### <a name="imagery"></a>Imagens
  Use as imagens com moderação em caixas de diálogo. Não use ícones grandes em caixas de diálogo apenas para usar espaço. Use imagens somente se elas forem uma parte importante da transmissão da mensagem para o usuário, como ícones de aviso ou animações de status.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Priorização e disposição em camadas
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Priorização e disposição em camadas
 
 #### <a name="prioritizing-your-ui"></a>Priorizando sua interface do usuário
  Pode ser necessário trazer certos elementos da interface do usuário para o Forefront e colocar comportamentos e opções mais avançadas (incluindo comandos obscuros) em caixas de diálogo. Traga a funcionalidade comumente usada para o Forefront, deixando espaço para ela e tornando-a visível por padrão na interface do usuário com um rótulo de texto quando a caixa de diálogo for exibida.
@@ -425,7 +425,7 @@ ms.locfileid: "88114111"
 ##### <a name="adaptive-ui"></a>Interface do usuário adaptável
  Mostrar ou ocultar a interface do usuário com base no uso ou na experiência autorelata de um usuário é outra maneira de apresentar a interface do usuário necessária e ocultar outras partes. Isso não é recomendado no Visual Studio, pois os algoritmos para decidir quando mostrar ou ocultar a interface do usuário podem ser complicados, e as regras sempre estarão erradas para algum conjunto de casos.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Projeto
+## <a name="projects"></a><a name="BKMK_Projects"></a> Projeto
 
 ### <a name="projects-in-the-solution-explorer"></a>Projetos no Gerenciador de Soluções
  A maioria dos projetos é classificada como baseada em referência, baseada em diretório ou mista. Todos os três tipos de projetos têm suporte simultaneamente no Gerenciador de Soluções. A raiz da experiência do usuário no trabalho com projetos ocorre dentro desta janela. Embora nós de projeto diferentes sejam de referência, diretório ou projetos de tipo de modo misto, há um padrão de interação comum que deve ser aplicado como um ponto de partida antes de divergente em padrões de usuário específicos do projeto.
@@ -491,7 +491,7 @@ ms.locfileid: "88114111"
 #### <a name="reference-based-projects"></a>Projetos baseados em referência
  A tabela a seguir resume as operações de arrastar e soltar (bem como recortar/copiar/colar) que devem ser executadas com base na natureza do item de origem e nas teclas modificadoras pressionadas para projetos de destino baseados em referência:
 
-|Modificador|Operação|Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
+|||Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Link|
 |Nenhum modificador|Destino|Adiciona referência ao item original|Adiciona referência ao item original|
@@ -522,7 +522,7 @@ ms.locfileid: "88114111"
 #### <a name="directory-based-projects"></a>Projetos baseados em diretório
  A tabela a seguir resume as operações de arrastar e soltar (bem como recortar/copiar/colar) que devem ser executadas com base na natureza do item de origem e nas teclas modificadoras pressionadas para projetos de destino baseados em diretório:
 
-|Modificador|Operação|Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
+|||Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Copia o item para o local de destino|Copia o item para o local de destino|
@@ -549,7 +549,7 @@ ms.locfileid: "88114111"
 #### <a name="mixed-target-projects"></a>Projetos de destino misto
  A tabela a seguir resume as operações de arrastar e soltar (bem como recortar/copiar/colar) que devem ser executadas com base na natureza do item de origem e nas teclas modificadoras pressionadas para projetos de destino misto:
 
-|Modificador|Operação|Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
+|||Item de origem: referência/link|Item de origem: Item físico ou sistema de arquivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Adiciona referência ao item original|Copia o item para o local de destino|

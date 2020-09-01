@@ -8,19 +8,19 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114161"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284376"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Elemento License (Esquema do pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Opcional. O caminho de uma versão localizada do arquivo de licença para a extensão.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <License>FilePath\license.txt</License>  
@@ -54,39 +54,13 @@ Opcional. O caminho de uma versão localizada do arquivo de licença para a exte
  Se o `License` elemento for definido, o texto do arquivo de licença designado será exibido durante a instalação e o usuário deverá aceitar a licença para continuar.  
   
 ## <a name="element-information"></a>Informações do elemento  
-
-:::row:::
-    :::column:::
-        Namespace  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nome do Esquema
-    :::column-end:::
-    :::column:::
-        Esquema do pacote de idiomas do VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Arquivo de validação
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Pode estar vazio
-    :::column-end:::
-    :::column:::
-        Não aplicável
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nome do Esquema   |                 Esquema do pacote de idiomas do VSIX                 |
+| Arquivo de validação |                VSIXLanguagePackSchema. xsd                 |
+|  Pode estar vazio   |                      Não se aplica                       |
   
 ## <a name="see-also"></a>Consulte Também  
  [Referência de esquema do pacote de idiomas do VSX](../extensibility/vsx-language-pack-schema-reference.md)   

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 983a5d91fee40245f6a7d6877ccf38e666fa586e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114135"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284397"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 - [Entrada por toque](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Visualização de dados
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Visualização de dados
 
 ### <a name="overview"></a>Visão geral
  Os gráficos são uma maneira visual de agregar e Visualizar dados para aprimorar a tomada de decisões. Eles podem ajudar os usuários a enfrentar muitos dados, mas o significado é ver o que merece atenção e o que pode precisar de uma ação.
@@ -70,7 +70,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 ### <a name="other-charting-considerations"></a>Outras considerações sobre gráficos
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>Cor
  Há uma paleta específica de cores de gráfico definida para uso no Visual Studio. A paleta pode ser acessada para os principais tipos de cegueira de cor e as cores podem ser diferenciadas mesmo quando usadas como fatias muito estreitas de cor. Você pode usar essas cores em qualquer combinação para qualquer tipo de gráfico ou grafo na sua interface do usuário. Você não precisará usar todas as sete cores se não precisar de muitas cores distintas. Essas cores não foram projetadas para serem usadas com elementos de primeiro plano, portanto, não coloque texto nem glifos sobre essas cores. Esses matizes devem ser embutidos em código e expostos à personalização do usuário em **ferramentas > opções** (consulte [expondo cores para usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Essas|Hex|RGB|
@@ -83,7 +83,7 @@ Padrões de composição combinam elementos de interação e design em configura
 |![79D7F2 de amostra](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121.215.242|
 |![B5B5B5 de amostra](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181.181.181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interface do usuário e inspeção do objeto
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> Interface do usuário e inspeção do objeto
  Esta seção fornece contexto para inspecionar, também conhecido como exibição de inspeção de código, um tipo de interface do usuário no objeto exclusiva do Visual Studio.
 
 ### <a name="overview"></a>Visão geral
@@ -163,7 +163,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
     - Durável
 
-    - Automático
+    - Automática
 
     - Sob demanda
 
@@ -249,7 +249,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 - **Nunca** exibir conteúdo em foco que pareça ser editável ou convidar a interação do usuário. Esse comportamento pode frustrar os usuários se eles tentarem mover o cursor sobre o conteúdo de detalhes, uma vez que o comportamento padrão de uma dica de ferramenta é descartar imediatamente quando o cursor não estiver mais sobre o conteúdo mestre que o produziu.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modelos de seleção
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Modelos de seleção
 
 ### <a name="overview"></a>Visão geral
  Um modelo de seleção é o mecanismo usado para indicar e confirmar operações em um ou mais objetos de interesse na interface do usuário. Este tópico discute os padrões de interação de seleção nos editores de documento do Visual Studio: editores de texto, superfícies de design e superfícies de modelagem.
@@ -344,7 +344,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 |Entrada|Result|
 |-----------|------------|
-|Tab|Move o indicador de foco entre a ordem lógica dos objetos no editor. Isso pode ser da esquerda para a direita ou de cima para baixo, dependendo do valor da propriedade **TabIndex** (ou equivalente), da ordem de criação do objeto e da finalidade geral do editor. Shift + Tab inverte a direção do indicador de foco.|
+|Guia|Move o indicador de foco entre a ordem lógica dos objetos no editor. Isso pode ser da esquerda para a direita ou de cima para baixo, dependendo do valor da propriedade **TabIndex** (ou equivalente), da ordem de criação do objeto e da finalidade geral do editor. Shift + Tab inverte a direção do indicador de foco.|
 |Barra de espaços|Ativa o modo panorâmico enquanto a tecla é mantida. A entrada adicional do mouse é necessária para deslocar a posição do visor.|
 |Ctrl+Barra de espaços|Ativa o modo de zoom enquanto a tecla é mantida. A entrada adicional do mouse é necessária para aumentar e diminuir o fator de zoom.|
 |CTRL + ALT + sinal de subtração|Diminui o fator de zoom em um nível.|
@@ -392,7 +392,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
  **Seleção primária com duas seleções secundárias**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Aparência da seleção de objeto gráfico
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico
  As alças de seleção são quadrados desenhados em um padrão retangular ao redor da caixa delimitadora do objeto. O gráfico a seguir mostra exemplos dos vários Estados que um objeto gráfico pode ter com identificador, dimensionamento e aparência de edição in-loco. O tamanho dos identificadores deve ser vinculado à borda da janela e às métricas de borda usando a API **GetSystemMetrics** .
 
 |          Estado          |  Aparência   |                                                                  Detalhes visuais                                                                  |
@@ -473,7 +473,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 - A tecla F2 ativa a edição in-loco para a célula selecionada no momento.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Configurações de persistência e salvamento
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Configurações de persistência e salvamento
 
 ### <a name="overview"></a>Visão geral
  Embora cada componente de software no Visual Studio seja geralmente responsável por seu próprio Estado e persistência, o Visual Studio salva automaticamente as configurações em alguns casos, como com tamanhos e posições de janela. A tabela a seguir é uma combinação de configurações salvas automaticamente e configurações que exigem um usuário explícito ou uma ação programada a ser executada.
@@ -508,7 +508,7 @@ Padrões de composição combinam elementos de interação e design em configura
 #### <a name="profile-specific-layouts"></a>Layouts específicos de perfil
  Cada perfil inclui layouts de janela de ferramentas, organizados de uma maneira familiar a pessoas de desenvolvedor específicas (Visual C++ os desenvolvedores esperam ver a **Gerenciador de soluções** no lado esquerdo do IDE, enquanto os desenvolvedores de C# esperam ver a **Gerenciador de soluções** à direita). Layouts de janela específicos de perfil são carregados depois que o usuário escolhe um perfil na inicialização. Um autor de pacote deve determinar o layout da janela mais adequado para a experiência do cliente, sabendo que as alterações feitas pelo usuário para a configuração da janela serão persistidas.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Entrada por toque
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Entrada por toque
  Os usuários estão cada vez mais usando produtos de desenvolvimento da Microsoft em dispositivos de toque. No entanto, há barreiras que dificultam o uso de ferramentas de desenvolvimento em dispositivos sensíveis ao toque. Os usuários esperam que nossos produtos forneçam uma experiência de toque confiável e precisa. A intenção dessas diretrizes é informar as decisões sobre quais recursos de toque incorporar e incentivar uma experiência de toque consistente no Visual Studio e em produtos relacionados.
 
 ### <a name="levels-of-experience"></a>Níveis de experiência
@@ -522,13 +522,13 @@ Padrões de composição combinam elementos de interação e design em configura
 
 ||Experiência básica|Experiência otimizada|Experiência elevada|
 |-|----------------------|--------------------------|-------------------------|
-|**Permite que os usuários...**|Corrigir a leitura de código e de solução/nível de projeto sem inatividade|Executar tarefas de manutenção, refactores e navegação|Opere em uma experiência consistente, intuitiva e fluida com confiança|
-|**Editor**|Panorâmica e seleção de toque<br /><br /> Toque de ScrollBar para saltar e pressione + arrastar|Pinçar zoom<br /><br /> Rolagem rápida<br /><br /> Seleção<br /><br /> Fácil utilização do menu de contexto||
-|**Principais janelas de ferramentas**|Listar movimento panorâmico<br /><br /> Seleção de item<br /><br /> Toque de ScrollBar para saltar e pressione + arrastar|Fácil rolagem e seleção de itens||
-|**Windowing**||Redimensionar janela<br /><br /> Acesso rápido||
-|**Bem-documento**||Navegação fácil entre arquivos abertos||
-|**Gestos**||Garantir que os gestos comuns funcionem pelo IDE|Ações baseadas em gestos<br /><br /> Suporte a arrastar e soltar e designers|
-|**Outras considerações**|||Teclado personalizado na tela|
+|Permite que os usuários...|Corrigir a leitura de código e de solução/nível de projeto sem inatividade|Executar tarefas de manutenção, refactores e navegação|Opere em uma experiência consistente, intuitiva e fluida com confiança|
+|Editor|Panorâmica e seleção de toque<br /><br /> Toque de ScrollBar para saltar e pressione + arrastar|Pinçar zoom<br /><br /> Rolagem rápida<br /><br /> Seleção<br /><br /> Fácil utilização do menu de contexto||
+|Principais janelas de ferramentas|Listar movimento panorâmico<br /><br /> Seleção de item<br /><br /> Toque de ScrollBar para saltar e pressione + arrastar|Fácil rolagem e seleção de itens||
+|Windowing||Redimensionar janela<br /><br /> Acesso rápido||
+|Bem-documento||Navegação fácil entre arquivos abertos||
+|Gestos||Garantir que os gestos comuns funcionem pelo IDE|Ações baseadas em gestos<br /><br /> Suporte a arrastar e soltar e designers|
+|Outras considerações|||Teclado personalizado na tela|
 
 #### <a name="gestures"></a>Gestos
  Os gestos fornecem aos usuários um atalho para comandos que, de outra forma, poderiam exigir uma interação mais complicada. Consulte as diretrizes do Windows sobre [gestos de toque comuns para aplicativos de área de trabalho](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)e siga estas diretrizes para a maioria dos gestos, incluindo gestos simples, como movimento panorâmico e zoom.
