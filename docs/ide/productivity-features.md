@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184075"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219758"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guia de produtividade do Visual Studio
 
@@ -24,7 +24,7 @@ Para saber mais sobre atalhos de teclado úteis, confira [Atalhos de produtivida
 
 Economize tempo com os menus pesquisando rapidamente tudo o que você precisa, incluindo comandos, configurações, documentação e opções de instalação. Consulte os atalhos de teclado para comandos nos resultados da pesquisa no Visual Studio para que você possa memorizar mais facilmente. 
 
-- **Código fictício usando a lista de tarefas**. Se você não tiver requisitos suficientes para concluir uma parte do código, use Lista de Tarefas para rastrear comentários de código que usam tokens como `TODO` e `HACK` , ou tokens personalizados, e para gerenciar atalhos que levam você diretamente a um local predefinido no código. Para obter mais informações, consulte [usar o lista de tarefas](../ide/using-the-task-list.md.).
+- **Código fictício usando a lista de tarefas**. Se você não tiver requisitos suficientes para concluir uma parte do código, use Lista de Tarefas para rastrear comentários de código que usam tokens como `TODO` e `HACK` , ou tokens personalizados, e para gerenciar atalhos que levam você diretamente a um local predefinido no código. Para obter mais informações, consulte [usar o lista de tarefas](../ide/using-the-task-list.md).
 
 - **Use atalhos de Gerenciador de soluções**. Se você for novo no Visual Studio, esses atalhos serão úteis e pouparão tempo enquanto você estiver chegando a uma nova base de código. Para obter a lista completa de atalhos, consulte [atalhos de teclado padrão no Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 
@@ -60,7 +60,7 @@ Escreva código mais rapidamente usando os seguintes recursos.
 
 - **Use aplicativos de exemplo**. É possível acelerar o desenvolvimento de aplicativos baixando e instalando aplicativos de exemplo do [Microsoft Developer Network](https://code.msdn.microsoft.com/). Você também pode aprender uma tecnologia em particular ou um conceito baixando e explorando um Sample Pack para essa área.
 
-- **Alterar a formatação de chaves com formatação/novas linhas**. Use a página opções de **formatação** para definir opções de formatação de código no editor de código, incluindo novas linhas. Para obter mais informações sobre como usar essa configuração em C#, consulte [caixa de diálogo opções: editor de texto > C# > estilo de código > formatação](../ide/reference/options-text-editor-csharp-formatting.md). Para C++, consulte [definir suas preferências de codificação em c++ no Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Para Python, consulte [Formatar código Python](../python/formatting-python-code.md).
+- **Alterar a formatação de chaves com formatação/novas linhas**. Use a página opções de **formatação**  para definir opções de formatação de código no editor de código, incluindo novas linhas. Para obter mais informações sobre como usar essa configuração em C#, consulte [caixa de diálogo opções: editor de texto > C# > estilo de código > formatação](../ide/reference/options-text-editor-csharp-formatting.md). Para C++, consulte [definir suas preferências de codificação em c++ no Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Para Python, consulte [Formatar código Python](../python/formatting-python-code.md).
 
 - **Altere o recuo com tabulações**. Use configurações personalizadas do editor, adaptadas a cada base de código, para impor estilos de codificação consistentes para vários desenvolvedores trabalhando no mesmo projeto em diferentes editores e IDEs. Verifique se toda a sua equipe segue as mesmas convenções de linguagem, convenções de nomenclatura e regras de formatação. Como essas configurações personalizadas são portáteis e viajam com seu código, você pode impor estilos de codificação mesmo fora do Visual Studio. Para obter mais informações, consulte [Opções, editor de texto, todas as linguagens, guias](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -134,7 +134,7 @@ A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a ac
 
      Para adicionar um DataTip, o depurador deverá estar em modo de interrupção. Coloque o cursor na variável e então escolha o botão de fixação no DataTip em que ele aparece. Quando a depuração é interrompida, um ícone de pino azul aparece no arquivo de origem ao lado da linha de código que contém a variável. Se você apontar para o pino azul, será exibido o valor da variável de sessão de depuração mais recente.
 
-- **Limpar a janela Imediata**. Você pode apagar o conteúdo da [janela imediata](../ide/reference/immediate-window.md) em tempo de design digitando `>cls` ou`>Edit.ClearAll`
+- **Limpar a janela Imediata**. Você pode apagar o conteúdo da [janela imediata](../ide/reference/immediate-window.md) em tempo de design digitando `>cls` ou `>Edit.ClearAll`
 
      Para obter mais informações sobre comandos adicionais, consulte [aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 

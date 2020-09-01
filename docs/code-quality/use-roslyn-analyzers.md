@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893418"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219771"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -66,7 +66,7 @@ A tabela a seguir mostra as diferentes opções de gravidade:
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Informações | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
-| Nenhum | `none` | Suprimido completamente. | Suprimido completamente. |
+| Não | `none` | Suprimido completamente. | Suprimido completamente. |
 | Padrão | `default` | Corresponde à severidade padrão da regra. Para determinar qual é o valor padrão de uma regra, procure na janela Propriedades. | Corresponde à severidade padrão da regra. |
 
 A captura de tela a seguir do editor de código mostra três violações diferentes com severidades diferentes. Observe a cor do Rabisco e o pequeno quadrado colorido na barra de rolagem à direita.
@@ -102,6 +102,9 @@ Você pode definir a severidade para uma categoria específica de regras do anal
 - Definir severidade da regra para todas as regras do analisador:
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> As entradas para configurar várias regras do analisador ao mesmo tempo se aplicam às regras *habilitadas por padrão*. As regras do Analyzer que são marcadas como desabilitadas por padrão no pacote do analisador devem ser habilitadas por meio de entradas explícitas `dotnet_diagnostic.<rule ID>.severity = <severity>` .
 
 Se você tiver várias entradas que são aplicáveis a uma ID de regra específica, o seguinte é a ordem de precedência para escolher a entrada aplicável:
 
@@ -392,7 +395,7 @@ Em um projeto do .NET Core, se você adicionar uma referência a um projeto que 
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar um bug do analisador de código](https://github.com/dotnet/roslyn-analyzers/issues)

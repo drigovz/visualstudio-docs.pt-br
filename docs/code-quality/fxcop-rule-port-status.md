@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189470"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219719"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
@@ -68,14 +68,14 @@ ID da regra | Título
 [CA1063](ca1063.md) | Implementar IDisposable corretamente
 [CA1064](ca1064.md) | Exceções devem ser públicas
 [CA1065](ca1065.md) | Não acionar exceções em locais inesperados
-[CA1066](ca1066.md) | O {0} tipo deve implementar\<IEquatable T> porque ele substitui Equals
-[CA1067](ca1067.md) | Substituir Object. Equals (Object) ao implementar\<IEquatable T>
+[CA1066](ca1066.md) | O tipo {0} deve implementar IEquatable \<T> porque ele substitui Equals
+[CA1067](ca1067.md) | Substituir Object. Equals (Object) ao implementar IEquatable\<T>
 [CA1068](ca1068.md) | Os parâmetros CancellationToken devem vir por último
 CA1200 | Evitar o uso de marcas cref com um prefixo
 [CA1303](ca1303.md) | Não passar literais como parâmetros localizados
 [CA1304](ca1304.md) | Especificar CultureInfo
 [CA1305](ca1305.md) | Especificar IFormatProvider
-[CA1307](ca1307.md) | Especificar StringComparison
+[CA1307](ca1307.md) | Especificar StringComparison para fins de clareza
 [CA1308](ca1308.md) | Normalizar cadeias de caracteres em maiúsculas
 [CA1309](ca1309.md) | Usar comparação de cadeia de caracteres ordinal
 [CA1401](ca1401.md) | P/Invokes não devem ser visíveis
@@ -119,7 +119,7 @@ CA1826 | Não use métodos enumeráveis em coleções indexáveis. Em vez disso,
 [CA2000](ca2000.md) | Descartar objetos antes de perder o escopo
 [CA2002](ca2002.md) | Não bloquear objetos com identidade fraca
 [CA2007](ca2007.md) | Considere chamar ConfigureAwait na tarefa esperada
-CA2008 | Não criar tarefas sem passar um TaskScheduler
+[CA2008](ca2008.md) | Não criar tarefas sem passar um TaskScheduler
 CA2009 | Não chamar ToImmutableCollection em um valor imutável
 CA2010 | Sempre consumir o valor retornado pelos métodos marcados com PreserveSigAttribute
 [CA2100](ca2100.md) | Examinar consultas SQL em busca de vulnerabilidades de segurança
@@ -345,6 +345,6 @@ As seguintes regras de análise herdada do FxCop foram preteridas e não serão 
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Regras Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
