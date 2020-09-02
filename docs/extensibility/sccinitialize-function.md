@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700636"
 ---
 # <a name="sccinitialize-function"></a>Função SccInitialize
-Essa função inicializa o plug-in de controle de origem e fornece recursos e limites para o ambiente de desenvolvimento integrado (IDE).
+Essa função inicializa o plug-in de controle do código-fonte e fornece recursos e limites para o IDE (ambiente de desenvolvimento integrado).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,59 +37,59 @@ SCCRTN SccInitialize (
 );
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  `ppvContext`
 
-[em] O plug-in de controle de origem pode colocar um ponteiro em sua estrutura de contexto aqui.
+no O plug-in de controle do código-fonte pode posicionar um ponteiro para sua estrutura de contexto aqui.
 
  `hWnd`
 
-[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
  `lpCallerName`
 
-[em] O nome do programa chamando o plug-in de controle de origem.
+no O nome do programa que chama o plug-in de controle do código-fonte.
 
  `lpSccName`
 
-[dentro, fora] O buffer onde o plug-in de controle de `SCC_NAME_LEN`origem coloca seu próprio nome (para não exceder ).
+[entrada, saída] O buffer em que o plug-in de controle do código-fonte coloca seu próprio nome (não para exceder `SCC_NAME_LEN` ).
 
  `lpSccCaps`
 
-[fora] Retorna os sinalizadores de capacidade do plug-in de controle de origem.
+fora Retorna os sinalizadores de capacidade do plug-in de controle do código-fonte.
 
  `lpAuxPathLabel`
 
-[dentro, fora] O buffer onde o plug-in de controle `lpAuxProjPath` de origem coloca uma string que descreve o parâmetro retornado pelo `SCC_AUXLABEL_LEN` [SccOpenProject](../extensibility/sccopenproject-function.md) e pelo [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (para não exceder ).
+[entrada, saída] O buffer em que o plug-in de controle do código-fonte coloca uma cadeia de caracteres que descreve o `lpAuxProjPath` parâmetro retornado pelo [SccOpenProject](../extensibility/sccopenproject-function.md) e o [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (não para exceder `SCC_AUXLABEL_LEN` ).
 
  `pnCheckoutCommentLen`
 
-[fora] Retorna o comprimento máximo permitido para um comentário de checkout.
+fora Retorna o comprimento máximo permitido para um comentário de check-out.
 
  `pnCommentLen`
 
-[fora] Retorna o comprimento máximo permitido para outros comentários.
+fora Retorna o comprimento máximo permitido para outros comentários.
 
-## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+## <a name="return-value"></a>Valor Retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A inicialização do controle de origem foi bem sucedida.|
-|SCC_E_INITIALIZEFAILED|O sistema não pôde ser inicializado.|
+|SCC_OK|Inicialização do controle do código-fonte bem-sucedida.|
+|SCC_E_INITIALIZEFAILED|Não foi possível inicializar o sistema.|
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar a operação especificada.|
-|SCC_E_NONSPECFICERROR|Falha não específica; o sistema de controle de origem não foi inicializado.|
+|SCC_E_NONSPECFICERROR|Falha não específica; o sistema de controle do código-fonte não foi inicializado.|
 
 ## <a name="remarks"></a>Comentários
- O IDE chama essa função quando ele carrega pela primeira vez o plug-in de controle de origem. Ele permite que o IDE passe certas informações, como o nome do chamador, para o plug-in. O IDE também recebe de volta certas informações, como o comprimento máximo permitido para comentários e as capacidades do plug-in.
+ O IDE chama essa função quando carrega pela primeira vez o plug-in de controle do código-fonte. Ele permite que o IDE passe determinadas informações, como o nome do chamador, para o plug-in. O IDE também retorna determinadas informações, como o comprimento máximo permitido para comentários e os recursos do plug-in.
 
- Os `ppvContext` pontos `NULL` apontam para um ponteiro. O plug-in de controle de origem pode alocar uma estrutura `ppvContext`para uso próprio e armazenar um ponteiro para essa estrutura em . O IDE passará este ponteiro para todas as outras funções da API VSSCI, permitindo que o plug-in tenha informações de contexto disponíveis sem recorrer ao armazenamento global e para suportar várias instâncias do plug-in. Esta estrutura deve ser desalocada quando o [SccUninitialize](../extensibility/sccuninitialize-function.md) é chamado.
+ O `ppvContext` aponta para um `NULL` ponteiro. O plug-in de controle do código-fonte pode alocar uma estrutura para seu próprio uso e armazenar um ponteiro para essa estrutura no `ppvContext` . O IDE passará esse ponteiro para todas as outras funções da API VSSCI, permitindo que o plug-in tenha informações de contexto disponíveis sem recorrer ao armazenamento global e para dar suporte a várias instâncias do plug-in. Essa estrutura deve ser desalocada quando o [SccUninitialize](../extensibility/sccuninitialize-function.md) é chamado.
 
- Os `lpCallerName` `lpSccName` parâmetros permitem que o IDE e o plug-in de controle de origem troquenomes. Esses nomes podem ser usados simplesmente para distinguir entre várias instâncias, ou podem realmente aparecer em menus ou caixas de diálogo.
+ Os `lpCallerName` `lpSccName` parâmetros e habilitam o IDE e o plug-in de controle do código-fonte para nomes do Exchange. Esses nomes podem ser usados simplesmente para distinguir entre várias instâncias ou podem realmente aparecer em menus ou caixas de diálogo.
 
- O `lpAuxPathLabel` parâmetro é uma string usada como comentário para identificar o caminho do projeto auxiliar armazenado no arquivo da solução e passado para o plug-in de controle de origem em uma chamada para o [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]usa a string "SourceSafe Project:"; outros plug-ins de controle de origem devem abster-se de usar esta seqüência específica.
+ O `lpAuxPathLabel` parâmetro é uma cadeia de caracteres usada como um comentário para identificar o caminho do projeto auxiliar que é armazenado no arquivo de solução e passado para o plug-in de controle do código-fonte em uma chamada para o [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] usa a cadeia de caracteres "SourceSafe Project:"; outros plug-ins de controle do código-fonte devem evitar o uso dessa cadeia de caracteres específica.
 
- O `lpSccCaps` parâmetro dá ao plug-in de controle de origem um lugar para armazenar bitflags indicando as capacidades do plug-in. (Para obter uma lista completa de bitflags de capacidade, consulte [Sinalizadores de capacidade](../extensibility/capability-flags.md)). Por exemplo, se o plug-in planeja gravar resultados em uma função de retorno de chamada fornecida pelo chamador, o plug-in definirá o bit de capacidade SCC_CAP_TEXTOUT. Isso sinalizaria o IDE para criar uma janela para resultados de controle de versão.
+ O `lpSccCaps` parâmetro fornece ao plug-in de controle do código-fonte um local para armazenar bitflags indicando os recursos do plug-in. (Para obter uma lista completa de funcionalidades bitflags, consulte [sinalizadores de capacidade](../extensibility/capability-flags.md)). Por exemplo, se o plug-in planeja gravar resultados em uma função de retorno de chamada fornecida pelo chamador, o plug-in definiria o bit de recurso SCC_CAP_TEXTOUT. Isso sinalizaria ao IDE para criar uma janela para resultados de controle de versão.
 
 ## <a name="see-also"></a>Confira também
 - [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

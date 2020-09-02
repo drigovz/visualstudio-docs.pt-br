@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Microsoft Docs
+title: 'IDebugEvent2:: GetAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729947"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
@@ -39,15 +39,15 @@ int GetAttribute( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pdwAttrib`\
-[fora] Uma combinação de bandeiras da enumeração [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+fora Uma combinação de sinalizadores da enumeração do [eventoattributes](../../../extensibility/debugger/reference/eventattributes.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) é comum a todos os eventos. Este método descreve o tipo de evento; por exemplo, é o evento síncrono ou assíncrono e é um evento de parada.
+ A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) é comum a todos os eventos. Este método descreve o tipo de evento; por exemplo, é o evento síncrono ou assíncrono e é um evento de interrupção.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

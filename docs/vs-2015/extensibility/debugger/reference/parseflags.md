@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a9ebe244f3e1c1f3f95508d6df979edee2d4aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205119"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
@@ -24,7 +24,7 @@ ms.locfileid: "68205119"
 
 Especifica como analisar uma expressão.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PARSEFLAGS {   
@@ -48,22 +48,22 @@ public enum enum_PARSEFLAGS { 
  Indica que a expressão não é uma instrução.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Indica que a expressão deve ser analisado (e avaliado mais tarde) como um endereço.  
+ Indica que a expressão deve ser analisada (e posteriormente avaliada) como um endereço.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Indica que a expressão está sendo analisada durante o tempo de design (ou seja, quando um designer estiver aberto).  
+ Indica que a expressão está sendo analisada durante o tempo de design (ou seja, quando um designer está aberto).  
   
 ## <a name="remarks"></a>Comentários  
- Passado como um parâmetro para o [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [analisar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) métodos.  
+ Passado como um parâmetro para os métodos [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [Analisar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

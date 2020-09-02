@@ -13,18 +13,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af22ef2d8a77b8c44b9e494736630480a0614162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205064"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Contém informações sobre o estado de um ponto de interrupção que está pronto para associar a um local de código.  
+Contém informações sobre o estado de um ponto de interrupção que está pronto para ser associado a um local de código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct _tagPENDING_BP_STATE_INFO {   
@@ -41,23 +41,23 @@ public struct PENDING_BP_STATE_INFO { 
 ```  
   
 ## <a name="members"></a>Membros  
- estado  
- Um valor a partir de [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) enumeração que especifica o estado do ponto de interrupção pendente.  
+ state  
+ Um valor da enumeração [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) que especifica o estado do ponto de interrupção pendente.  
   
  sinalizadores  
- Uma combinação de sinalizadores do [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) enumeração que especifica se o ponto de interrupção é virtualizado.  
+ Uma combinação de sinalizadores da enumeração [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) que especifica se o ponto de interrupção é virtualizado.  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é passada para o [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) método onde ele é preenchido.  
+ Essa estrutura é passada para o método [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) onde está preenchida.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
  [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249208"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
@@ -189,7 +189,7 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
     
     ![Selecionar menu do contêiner do Docker](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
  
-    **B. para depurar um processo de contêiner do Docker remotamente:**
+    **B. Para depurar um processo de contêiner do Docker remotamente:**
     
     > [!NOTE] 
     > Há duas opções para se conectar remotamente a um processo em execução em um contêiner do Docker. A primeira opção, para usar SSH, é ideal se você não tiver as ferramentas do Docker instaladas em seu computador local.  Se você tiver as ferramentas do Docker instaladas localmente e tiver um daemon do Docker configurado para aceitar solicitações remotas, tente a segunda opção, usando um daemon do Docker.
@@ -317,7 +317,7 @@ Se você quiser obter informações mais específicas sobre por que o depurador 
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Depurar vários processos](../debugger/debug-multiple-processes.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676625"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Tarefa GenerateTemporaryTargetAssembly
@@ -35,15 +35,15 @@ A tarefa [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] gera um as
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`AssemblyName`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto e também é o nome do assembly de destino que é gerado temporariamente. Por exemplo, se um projeto gera um executável [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] cujo nome é **WinExeAssembly.exe**, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**.|  
-|`CompileTargetName`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o nome do destino [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] que é usado para gerar assemblies de arquivos de código-fonte. O valor típico para **CompileTargetName** é **CoreCompile**.|  
-|`CompileTypeName`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o tipo de compilação é executada pelo destino que é especificado pelo parâmetro **CompileTargetName**. Para o destino **CoreCompile**, esse valor é **Compile**.|  
-|`CurrentProject`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho completo do arquivo de projeto [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] para o projeto que exige um assembly de destino temporário.|  
-|`GeneratedCodeFiles`|Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de código gerenciado específicos a um idioma que foram gerados pela tarefa [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
-|`IntermediateOutputPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o diretório em que o assembly de destino temporário é gerado.|  
-|`MSBuildBinPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o local do **MSBuild.exe**, que é necessário para compilar o assembly de destino temporário.|  
-|`ReferencePath`|Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica uma lista de assemblies, pelo caminho e nome de arquivo, que são referenciados pelos tipos que são compilados no assembly de destino temporário.|  
-|`ReferencePathTypeName`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o parâmetro usado pelo parâmetro do destino de compilação (**CompileTargetName**) que especifica a lista de referências de assembly (**ReferencePath**). O valor apropriado é **ReferencePath**.|  
+|`AssemblyName`|Parâmetro obrigatório **String**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto e também é o nome do assembly de destino que é gerado temporariamente. Por exemplo, se um projeto gera um executável [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] cujo nome é **WinExeAssembly.exe**, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**.|  
+|`CompileTargetName`|Parâmetro obrigatório **String**.<br /><br /> Especifica o nome do destino [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] que é usado para gerar assemblies de arquivos de código-fonte. O valor típico para **CompileTargetName** é **CoreCompile**.|  
+|`CompileTypeName`|Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de compilação é executada pelo destino que é especificado pelo parâmetro **CompileTargetName**. Para o destino **CoreCompile**, esse valor é **Compile**.|  
+|`CurrentProject`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho completo do arquivo de projeto [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] para o projeto que exige um assembly de destino temporário.|  
+|`GeneratedCodeFiles`|Parâmetro opcional **ITaskItem []** .<br /><br /> Especifica a lista de arquivos de código gerenciado específicos a um idioma que foram gerados pela tarefa [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
+|`IntermediateOutputPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o diretório em que o assembly de destino temporário é gerado.|  
+|`MSBuildBinPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o local do **MSBuild.exe**, que é necessário para compilar o assembly de destino temporário.|  
+|`ReferencePath`|Parâmetro opcional **ITaskItem []** .<br /><br /> Especifica uma lista de assemblies, pelo caminho e nome de arquivo, que são referenciados pelos tipos que são compilados no assembly de destino temporário.|  
+|`ReferencePathTypeName`|Parâmetro obrigatório **String**.<br /><br /> Especifica o parâmetro usado pelo parâmetro do destino de compilação (**CompileTargetName**) que especifica a lista de referências de assembly (**ReferencePath**). O valor apropriado é **ReferencePath**.|  
   
 ## <a name="remarks"></a>Comentários  
  A primeira passagem de compilação de marcação, que é executada pelo [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] em formato binário. Consequentemente, o compilador precisa de uma lista de assemblies referenciados que contêm os tipos que são usados pelos arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. No entanto, se um arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] usa um tipo que é definido no mesmo projeto, um assembly correspondente para esse projeto não é criado até o projeto ser compilado. Portanto, uma referência de assembly não pode ser fornecida durante a primeira passagem de compilação de marcação.  
@@ -73,10 +73,10 @@ A tarefa [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] gera um as
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Compilando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Criando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Visão geral dos aplicativos de navegador XAML do WPF](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

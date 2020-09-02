@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547921"
 ---
 # <a name="safecontrol-element"></a>Elemento SafeControl
@@ -40,7 +40,7 @@ ms.locfileid: "85547921"
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|**Assembly**|Atributo **xs: String** opcional.<br /><br /> O nome do assembly no qual o controle ASPX ou Web Part é definido. Por padrão, esse atributo usa o parâmetro **$SharePoint. Project. AssemblyFullName $** substituível para o nome do assembly. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).|
+|**)**|Atributo **xs: String** opcional.<br /><br /> O nome do assembly no qual o controle ASPX ou Web Part é definido. Por padrão, esse atributo usa o parâmetro **$SharePoint. Project. AssemblyFullName $** substituível para o nome do assembly. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).|
 |**IsSafe**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica se o controle ASPX ou Web Part é seguro para usuários não confiáveis acessarem.|
 |**IsSafeAgainstScript**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica se os usuários não confiáveis podem exibir ou editar as propriedades do controle ASPX ou Web Part.|
 |**Nome**|Atributo **xs: String** opcional.<br /><br /> O nome desta entrada de controle seguro na coleção.|

@@ -12,16 +12,16 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 975fb1604273f4cda80b9f4ebd098a229d8c52c2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547947"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Adicionar parâmetros e adicionar caixas de diálogo de argumentos
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **adicionar parâmetros** usada pelo <xref:System.Activities.Statements.InvokeMethod> Designer.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Direção**|Especifica se o parâmetro representa o fluxo de dados no método, fora do método, ou ambos.|
 |**Tipo**|O nome do tipo do novo parâmetro.|
@@ -29,7 +29,7 @@ A tabela a seguir descreve os elementos da interface do usuário da caixa de di�
 
  A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **adicionar argumentos** usados pelo <xref:System.Activities.Statements.InvokeDelegate> Designer.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Nome**|O nome do argumento.|
 |**Direção**|Especifica se o argumento representa o fluxo de dados no representante, fora do delegado, ou ambos.|

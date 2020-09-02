@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849227"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma caixa de diálogo **Editor de expressão** .
 
- As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Elas contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinadas com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=") em vez de ("= ="), os operadores boolianos são as palavras "and" e "or", em vez dos&#124;&#124;símbolos "& &" e "", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e para alguns exemplos, consulte [operadores e expressões em Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
+ As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Elas contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinadas com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=") em vez de ("= ="), os operadores boolianos são as palavras "and" e "or", em vez dos símbolos "&&" e "&#124;&#124;", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e em alguns exemplos, consulte [operadores e expressões em Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  O **Editor de expressões** se comporta da seguinte maneira:
 
@@ -45,7 +45,7 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 
 3. Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .
 
-     As cadeias de caracteres de marca d' água cinza **\<para >** e **\<inserir uma expressão VB >** são as cadeias de caracteres de texto padrão para editores de expressão na atividade <xref:System.Activities.Statements.Assign>.
+     As cadeias de caracteres de marca d' água cinza **\<To>** e **\<Enter a VB Expression>** são as cadeias de caracteres de texto padrão para editores de expressão na <xref:System.Activities.Statements.Assign> atividade.
 
 4. Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.
 
@@ -53,5 +53,5 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 
      Entrada de maneira alternativa/edição uma expressão é clique nas reticências ao lado do nome da propriedade na grade de propriedade. Isso abrirá o **Editor de expressão** como caixa de diálogo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

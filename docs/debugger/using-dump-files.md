@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386947"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Arquivos de despejo no depurador do Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a>Um *arquivo de despejo* é um instantâneo que mostra o processo que estava em execução e os módulos que foram carregados para um aplicativo em um ponto no tempo. Um despejo com informações de heap também inclui um instantâneo da memória do aplicativo nesse ponto.
+<a name="BKMK_What_is_a_dump_file_"></a> Um *arquivo de despejo* é um instantâneo que mostra o processo que estava em execução e os módulos que foram carregados para um aplicativo em um ponto no tempo. Um despejo com informações de heap também inclui um instantâneo da memória do aplicativo nesse ponto.
 
 Abrir um arquivo de despejo com um heap no Visual Studio é algo como parar em um ponto de interrupção em uma sessão de depuração. Embora não seja possível continuar a execução, você pode examinar as pilhas, os threads e os valores de variáveis do aplicativo no momento do despejo.
 
@@ -90,7 +90,7 @@ Com a [depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-st
    - Para definir locais de carregamento de símbolos, selecione **definir caminhos de símbolo**.
    - Para iniciar a depuração, selecione **depurar com somente gerenciado**, **Depurar somente nativo**, **depurar com misto**ou **depurar com memória gerenciada**.
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Localizar arquivos. exe,. PDB e de origem
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar arquivos. exe,. PDB e de origem
 
 Para usar recursos de depuração completos em um arquivo de despejo, o Visual Studio precisa:
 

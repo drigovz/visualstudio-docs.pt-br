@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 50773821b328ea81381744bc6f32b3907cd1c5bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657915"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
@@ -41,5 +41,5 @@ devenv /updateconfiguration
 Devenv.exe /updateconfiguration
 ```
 
-## <a name="see-also"></a>Veja também
- [Personalizando as configurações de desenvolvimento no Visual Studio ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv opções de linha de comando](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Personalizando as configurações de desenvolvimento nas opções de linha de comando do devenv do Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv Command Line Switches](../../ide/reference/devenv-command-line-switches.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar o código otimizado | Microsoft Docs'
+title: 'Como: depurar código otimizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675609"
 ---
-# <a name="how-to-debug-optimized-code"></a>Como: Depurar o código otimizado
+# <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [OBSERVAÇÃO]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> O [/Zo (aprimorar otimizado de depuração)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)opção de compilador (apresentada na atualização 3 do Visual Studio) gera informações de depuração mais avançadas para código otimizado (projetos que não são criados com o **/Od** opção de compilador. Ver [/O opções (otimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Isso inclui suporte aprimorado para as funções embutidas e variáveis locais de depuração.  
+> A opção de compilador [/zo (aprimorar a depuração otimizada)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(introduzida na atualização 3 do Visual Studio) gera informações de depuração mais avançadas para código otimizado (projetos que não são criados com a opção de compilador **/OD** . Veja [opções/o (otimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Isso inclui suporte aprimorado para depuração de variáveis locais e funções embutidas.  
 >   
-> [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md) é desabilitada quando o **/Zo** ocompiler opção é usada.  
+> [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md) é desabilitado quando a opção **/zo** ocompiler é usada.  
   
  Quando o compilador otimiza o código, ele reposiciona e reclassifica instruções. Isso resulta em um código compilado mais eficiente. Devido a esse rearranjo, o depurador nem sempre pode identificar o código-fonte que corresponde a um conjunto de instruções.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "65675609"
   
 2. Selecione o projeto no Gerenciador de Soluções.  
   
-3. No menu **Exibir**, clique em **Páginas de Propriedades**.  
+3. No menu **Exibir**, clique em **Página de Propriedades**.  
   
 4. Na caixa de diálogo **Páginas de Propriedades**, verifique se `Debug` está selecionado na lista suspensa **Configuração**.  
   
@@ -73,16 +73,16 @@ ms.locfileid: "65675609"
   
 6. Na pasta **C++**, selecione `Optimization`.  
   
-7. Na lista de propriedades à direita, localize `Optimization`. A configuração ao lado provavelmente informa `Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Escolha uma dessas opções (`Minimum Size``(`[O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` ou `Custom`).  
+7. Na lista de propriedades à direita, localize `Optimization`. A configuração ao lado dele provavelmente diz `Disabled (` [/OD](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5) `)` . Escolha uma das outras opções ( `Minimum Size``(` [/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Full Optimization``(` [/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)` ou `Custom` ).  
   
 8. Se você escolher a opção `Custom` para `Optimization`, agora poderá definir opções para qualquer uma das outras propriedades mostradas na lista de propriedades.  
   
-9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` para o **opções adicionais** caixa de texto.  
+9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` à caixa de texto **Opções adicionais** .  
   
     > [!WARNING]
-    > `/Zo` requer o Visual Studio 2013 atualização 3 ou posterior.  
+    > `/Zo` requer Visual Studio 2013 atualização 3 ou uma versão posterior.  
     >   
-    >  Adicionando `/Zo` desabilitará [editar e continuar](../debugger/edit-and-continue-visual-csharp.md).  
+    >  Adicionar `/Zo` irá desabilitar [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md).  
   
    Quando você depura o código otimizado, use a janela **Desmontagem** para ver quais instruções de fato estão criadas e executadas. Quando você define pontos de interrupção, precisa saber que o ponto de interrupção pode mover junto com uma instrução. Por exemplo, considere o seguinte código:  
   
@@ -92,6 +92,6 @@ for (x=0; x<10; x++)
   
  Suponha que você defina um ponto de interrupção nesta linha. Você pode esperar que o ponto de interrupção seja atingido 10 vezes, mas se o código for otimizado, o ponto de interrupção será atingido somente uma vez. Isso ocorre porque a primeira instrução define o valor de `x` como 0. O compilador reconhece que isso somente precisa ser feito uma vez e o move para fora do loop. O ponto de interrupção também será movido. As instruções que comparam e incrementam `x` permanecem dentro do loop. Quando você exibe a janela **Desmontagem**, a [unidade da etapa](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) será definida automaticamente como Instrução para obter maior controle, o que é útil quando você passa por código otimizado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

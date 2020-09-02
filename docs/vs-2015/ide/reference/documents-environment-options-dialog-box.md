@@ -34,10 +34,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 705b1a5992d1a3e7931c316c713d46e7e8c7f72e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657777"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Caixa de diálogo Documentos, Ambiente, Opções
@@ -46,7 +46,7 @@ ms.locfileid: "72657777"
 Use esta página da caixa de diálogo **Opções** para controlar a exibição de documentos no IDE (ambiente de desenvolvimento integrado) e gerenciar alterações externas em documentos e arquivos. É possível acessar essa caixa de diálogo clicando em **Opções** no menu **Ferramentas** e selecionando **Documentos** no nó **Ambiente**. Se **Documentos** não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
 > [!NOTE]
-> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  **Reutilizar janela do documento atual, se estiver salva** Quando estiver selecionado, fechará o documento atual se ele estiver salvo e abrirá um novo documento na mesma janela. Se o documento atual não tiver sido salvo, ele permanecerá aberto e o novo documento será aberto em uma janela separada. Quando essa opção está desmarcada, novos documentos sempre são abertos em janelas separadas.
 
@@ -69,11 +69,11 @@ Use esta página da caixa de diálogo **Opções** para controlar a exibição d
 > [!NOTE]
 > Selecione esta opção para habilitar o comando **Exibir no Navegador** no menu **Arquivo** para documentos da Web não incluídos no aplicativo Web ativo.
 
- **\<** *n* **> itens salvos no projeto arquivos diversos** Especifica o número de arquivos a serem persistidos na pasta **MiscellaneousFiles** do **Gerenciador de Soluções**. Esses arquivos são listados mesmo que não estejam mais abertos em um editor. É possível especificar qualquer número inteiro entre 0 e 256. O número padrão é 0.
+ os ** \<** *n* **> itens salvos no projeto arquivos diversos** especificam o número de arquivos a serem persistidos na pasta **MiscellaneousFiles** do **Gerenciador de soluções**. Esses arquivos são listados mesmo que não estejam mais abertos em um editor. É possível especificar qualquer número inteiro entre 0 e 256. O número padrão é 0.
 
  Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos abertos, quando você fechar todos os 10 arquivos, os 5 primeiros ainda aparecerão na pasta **Arquivos Diversos**.
 
  **Salvar documentos como Unicode quando os dados não puderem ser salvos em página de código** Selecione esta opção para fazer com que os arquivos que contenham informações incompatíveis com a página de código selecionada sejam salvos como Unicode por padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo opções de ambiente](../../ide/reference/environment-options-dialog-box.md) [arquivos diversos](../../ide/reference/miscellaneous-files.md) [localizando e substituindo texto](../../ide/finding-and-replacing-text.md)

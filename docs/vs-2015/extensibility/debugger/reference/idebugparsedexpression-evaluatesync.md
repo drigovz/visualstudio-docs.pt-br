@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: 'IDebugParsedExpression:: EvaluateSync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6761cd5ec9df67d511ab905e173ac0f286c5ee7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194546"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
@@ -52,33 +52,33 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwEvalFlags`  
- [in] Uma combinação de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes que controlam como a expressão será avaliada.  
+ no Uma combinação de constantes [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlam como a expressão deve ser avaliada.  
   
  `dwTimeout`  
- [in] Especifica o tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.  
+ no Especifica o tempo máximo, em milissegundos, a aguardar antes de retornar desse método. Use `INFINITE` para aguardar indefinidamente.  
   
  `pSymbolProvider`  
- [in] O provedor de símbolo, expressado como uma [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface.  
+ no O provedor de símbolos, expresso como uma interface [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
   
  `pAddress`  
- [in] O local atual de execução dentro de um método, expressado como uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ no O local de execução atual dentro de um método, expresso como uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pBinder`  
- [in] O associador, expressado como uma [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface.  
+ no O associador, expresso como uma interface [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
  `bstrResultType`  
- [in] O tipo de resultado deve ser convertido em. Esse argumento pode ser um valor nulo.  
+ no O tipo do qual o resultado deve ser convertido. Esse argumento pode ser um valor nulo.  
   
  `ppResult`  
- [out] Retorna o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface que representa os resultados da avaliação.  
+ fora Retorna a interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa os resultados da avaliação.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O contexto de avaliação da expressão é determinado pela `pAddress`, que torna possível determinar o método de inclusão e, em seguida, o escopo do idioma de uso de regras para determinar o valor dos símbolos na expressão.  
+ O contexto de avaliação de expressão é fornecido pelo `pAddress` , o que torna possível determinar o método que o contém e, em seguida, usar regras de escopo de linguagem para determinar o valor dos símbolos na expressão.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

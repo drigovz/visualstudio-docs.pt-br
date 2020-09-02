@@ -1,5 +1,5 @@
 ---
-title: As configurações para projetos da Web de páginas de propriedade | Microsoft Docs
+title: Configurações de páginas de propriedades para projetos Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3cb7cd3f8c3678d37feb2267f68ab5d2b3d970e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150851"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
@@ -37,22 +37,22 @@ Você pode alterar as configurações de propriedade de uma configuração de de
   
 |**Configuração**|**Descrição**|  
 |-----------------|---------------------|  
-|**Iniciar ação**|Cabeçalho que agrupa as opções relacionadas à inicialização do aplicativo.|  
+|**Iniciar Ação**|Cabeçalho que agrupa as opções relacionadas à inicialização do aplicativo.|  
 |**Usar página atual**|Especifica a página atual como o ponto de inicialização para depuração.|  
 |**Página específica:**|Especifica a página da Web onde você deseja iniciar a depuração.|  
 |**Iniciar programa externo:**|Especifica o comando para iniciar o programa que você deseja depurar.|  
 |**Argumentos de linha de comando:**|Especifica argumentos para o comando especificado acima.|  
 |**Diretório de trabalho:**|Especifica o diretório de trabalho do programa que está sendo depurado. No [!INCLUDE[csprcs](../includes/csprcs-md.md)], o diretório de trabalho é o diretório a partir do qual o aplicativo é iniciado de \bin\debug por padrão.|  
 |**URL inicial**|Especifica o local do aplicativo Web que você deseja depurar.|  
-|**Não abra uma página. Aguardar solicitação de um aplicativo externo**|Diz para aguardar solicitação de um aplicativo externo. Essa opção não inicia o Internet Explorer ou outro aplicativo. Ela apenas prepara para depuração quando for chamada por um aplicativo.|  
+|**Não abra uma página. Aguardar uma solicitação de um aplicativo externo**|Diz para aguardar solicitação de um aplicativo externo. Essa opção não inicia o Internet Explorer ou outro aplicativo. Ela apenas prepara para depuração quando for chamada por um aplicativo.|  
 |**Servidor**|Cabeçalho que agrupa as opções relacionadas ao servidor a ser usado.|  
 |**Usar servidor Web padrão**|Informa para usar o servidor Web padrão.|  
 |**Usar servidor personalizado**|Permite inserir uma URL base para usar como o servidor.|  
 |**Depuradores**|Cabeçalho que agrupa as opções relacionadas ao tipo de depuração a ser feito.|  
-|**Depuração do ASP.NET**|Permite a depuração das páginas do servidor escritas para a plataforma de desenvolvimento do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Você precisa especificar uma URL em **URL inicial**.|  
+|**Depuração ASP.NET**|Permite a depuração das páginas do servidor escritas para a plataforma de desenvolvimento do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Você precisa especificar uma URL em **URL inicial**.|  
 |**Depuração de código nativo**|Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado.|  
 |**Depuração do SQL Server**|Permite depuração de objetos de banco de dados do SQL Server.|  
 |**Depuração do Silverlight**|Permite depuração de componentes do Silverlight.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

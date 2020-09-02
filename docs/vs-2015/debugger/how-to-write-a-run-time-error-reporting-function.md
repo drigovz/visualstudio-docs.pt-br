@@ -1,5 +1,5 @@
 ---
-title: 'Como: Escrever uma função de relatório de erro de tempo de execução | Microsoft Docs'
+title: 'Como: gravar uma função de relatório de erros em tempo de execução | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678902"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como: Escrever uma função de relatório de erro em tempo de execução
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como escrever uma função de relatórios de erro de tempo de execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
@@ -67,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra uma função personalizada de relatório mais complexa. Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`. Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`. A função deve tratar a saída. O primeiro argumento variável nessa função usa um número de erro em tempo de execução. Para obter mais informações, consulte [RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
+ O exemplo a seguir mostra uma função personalizada de relatório mais complexa. Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`. Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`. A função deve tratar a saída. O primeiro argumento variável nessa função usa um número de erro em tempo de execução. Para obter mais informações, consulte [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06).  
   
 ```  
 #include <windows.h>  
@@ -127,5 +127,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Personalização das verificações de tempo de execução nativas](../debugger/native-run-time-checks-customization.md)

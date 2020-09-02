@@ -7,10 +7,10 @@ ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
 ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249198"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Início rápido: usar o Docker com um aplicativo de página única reagir no Visual Studio
@@ -22,7 +22,7 @@ Com o Visual Studio, você pode criar, depurar e executar aplicativos do ASP.NET
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com as workloads **Desenvolvimento para a Web**, **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instaladas
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se em uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
 * Para contêineres do Windows, Windows 10 versão 1903 ou posterior, para usar as imagens do Docker referenciadas neste artigo.
 ::: moniker-end
@@ -30,7 +30,7 @@ Com o Visual Studio, você pode criar, depurar e executar aplicativos do ASP.NET
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
 * [Ferramentas de desenvolvimento do .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para o desenvolvimento com .NET Core 2.2
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se em uma avaliação gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.js](https://nodejs.org/en/download/)
 * Para contêineres do Windows, Windows 10 versão 1903 ou posterior, para usar as imagens do Docker referenciadas neste artigo.
 ::: moniker-end

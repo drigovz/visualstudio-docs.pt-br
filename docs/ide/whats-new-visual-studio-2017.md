@@ -19,10 +19,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386843"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
@@ -391,4 +391,4 @@ Se quiser sugerir melhorias para o Visual Studio ou saber mais sobre as opções
 * [Novidades no C#](/dotnet/csharp/whats-new)
 * [Novidades do Team Foundation Server](/azure/devops/server/whats-new)
 * [O que há de novo no Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Novidades no Visual Studio 2019](whats-new-visual-studio-2019.md)
+* [O que há de novo no Visual Studio 2019](whats-new-visual-studio-2019.md)

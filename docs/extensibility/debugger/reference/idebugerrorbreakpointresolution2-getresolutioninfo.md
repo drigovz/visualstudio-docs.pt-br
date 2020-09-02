@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolução2::GetResolutionInfo | Microsoft Docs
+title: 'IDebugErrorBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730028"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-Obtém as informações de resolução de erro de ponto de ruptura.
+Obtém as informações de resolução de erro de ponto de interrupção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int GetResolutionInfo( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwFields`\
-[em] Uma combinação de bandeiras da [enumeração](../../../extensibility/debugger/reference/bperesi-fields.md) `pErrorResolutionInfo` BPERESI_FIELDS que determinam quais campos devem ser preenchidos.
+no Uma combinação de sinalizadores da enumeração [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) que determina quais campos do `pErrorResolutionInfo` devem ser preenchidos.
 
 `pErrorResolutionInfo`\
-[dentro, fora] A [estrutura BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) que é preenchida com a descrição da resolução do ponto de ruptura.
+[entrada, saída] A estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) que é preenchida com a descrição da resolução do ponto de interrupção.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir implementa `CDebugErrorBreakpointResolution` este método para um objeto simples que expõe a interface [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+O exemplo a seguir implementa esse método para um `CDebugErrorBreakpointResolution` objeto simples que expõe a interface [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) .
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

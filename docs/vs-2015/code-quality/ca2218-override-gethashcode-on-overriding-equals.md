@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538795"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Substituir GetHashCode ao substituir Equals
@@ -36,7 +36,7 @@ ms.locfileid: "85538795"
  Um tipo público substitui <xref:System.Object.Equals%2A?displayProperty=fullName> , mas não substitui <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Object.GetHashCode%2A>Retorna um valor, com base na instância atual, que é adequada para algoritmos de hash e estruturas de dados, como uma tabela de hash. Dois objetos que são do mesmo tipo e são iguais devem retornar o mesmo código de hash para garantir que as instâncias dos seguintes tipos funcionem corretamente:
+ <xref:System.Object.GetHashCode%2A> Retorna um valor, com base na instância atual, que é adequada para algoritmos de hash e estruturas de dados, como uma tabela de hash. Dois objetos que são do mesmo tipo e são iguais devem retornar o mesmo código de hash para garantir que as instâncias dos seguintes tipos funcionem corretamente:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538795"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Tipos que implementam<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Tipos que implementam <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, forneça uma implementação de <xref:System.Object.GetHashCode%2A> . Para um par de objetos do mesmo tipo, você deve garantir que a implementação retorne o mesmo valor se sua implementação de <xref:System.Object.Equals%2A> retornos `true` para o par.
@@ -101,7 +101,7 @@ ms.locfileid: "85538795"
 
  [CA2231: Sobrecarregar operador equals ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

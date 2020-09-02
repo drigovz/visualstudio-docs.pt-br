@@ -13,18 +13,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205093"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica os sinalizadores de estado do ponto de interrupção pendente.  
+Especifica os sinalizadores de estado de ponto de interrupção pendentes.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PENDING_BP_STATE_FLAGS {   
@@ -43,21 +43,21 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
   
 ## <a name="members"></a>Membros  
  PBPSF_NONE  
- Espaço reservado.  
+ Reservado.  
   
  PBPSF_VIRTUALIZED  
- Especifica um virtualizado pendente do ponto de interrupção, que deve ser associado sempre que o novo código é carregado.  
+ Especifica um ponto de interrupção pendente virtualizado, um que deve ser associado toda vez que um novo código for carregado.  
   
 ## <a name="remarks"></a>Comentários  
- Usado para o `flags` membro a [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estrutura.  
+ Usado para o `flags` membro da estrutura de [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
