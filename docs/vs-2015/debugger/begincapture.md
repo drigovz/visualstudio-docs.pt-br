@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b16fdc4d0a12d7082400e697ca44a7ca4c549f9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431791"
 ---
 # <a name="begincapture"></a>BeginCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Inicia um intervalo de captura que terminará com `EndCapture`.  
+Inicia um intervalo de captura que terminará com `EndCapture` .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -28,10 +28,10 @@ void BeginCapture();
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, um intervalo de captura abrange um subconjunto de um quadro, como quando você deseja capturar informações gráficas trata apenas de um determinado tipo de chamada de desenho. Se o intervalo de captura abrange uma chamada para apresentar, dois quadros de informações de gráficos são capturados. O primeiro quadro abrange o intervalo entre a chamada para `BeginCapture` e a chamada para apresentar; o segundo quadro abrange o intervalo entre o primeiro evento do Direct3D após a chamada para apresentar e a chamada para `EndCapture`.  
+ Um intervalo de captura normalmente abrange um subconjunto de um quadro, como quando você deseja capturar informações gráficas apenas sobre um determinado tipo de chamada de desenho. Se o intervalo de captura abranger uma chamada para presente, então dois quadros de informações gráficas serão capturados. O primeiro quadro abrange o intervalo entre a chamada e a `BeginCapture` chamada para Present; o segundo quadro abrange o intervalo entre o primeiro evento do Direct3D após a chamada para Present e a chamada para `EndCapture` .  
   
- Para capturar um intervalo, você deve preparar seu aplicativo para capturar e registrar informações de gráficos — ou seja, você deve ter chamado [Init](../debugger/init.md) por meio de uma instância das `VsgDbg` classe antes de chamar `BeginCapture` ou `EndCapture`.  
+ Para capturar um intervalo, você deve preparar seu aplicativo para capturar e gravar informações gráficas — ou seja, você deve ter chamado [init](../debugger/init.md) por meio de uma instância da `VsgDbg` classe antes de chamar `BeginCapture` ou `EndCapture` .  
   
-## <a name="see-also"></a>Consulte também  
- [EndCapture](../debugger/endcapture.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Fim da captura](../debugger/endcapture.md)   
  [CaptureCurrentFrame](../debugger/capturecurrentframe.md)

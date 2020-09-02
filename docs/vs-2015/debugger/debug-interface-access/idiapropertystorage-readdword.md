@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e92b74fc1165adf359614e354ab60f3fc118e34b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538818"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
@@ -36,16 +36,16 @@ HRESULT ReadDWORD ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `id`  
- [in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).  
+ no Identificador da propriedade a ser lida ( `PROPID` definida em WTypes. h como um `ULONG` ).  
   
  `pValue`  
- [out] Retorna o valor da propriedade.  
+ fora Retorna o valor da propriedade.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `DWORD`.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `DWORD` .  
   
 ## <a name="remarks"></a>Comentários  
  Um `DWORD` é definido pelo Windows como um inteiro sem sinal de 32 bits.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

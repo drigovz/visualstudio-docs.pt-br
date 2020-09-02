@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419980"
 ---
 # <a name="comparing-performance-data-files"></a>Comparando arquivos de dados de desempenho
@@ -35,4 +35,4 @@ A funcionalidade de comparação dos arquivos de dados das Ferramentas de Criaç
  Um limite pode ser definido para reduzir o ruído e filtrar dados na exibição de tabela de comparação das linhas que não tenham sido alterados por uma quantidade especificada.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: Comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md)
+ [Como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md)

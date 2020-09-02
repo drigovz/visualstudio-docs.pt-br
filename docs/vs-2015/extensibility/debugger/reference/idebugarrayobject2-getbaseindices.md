@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: 'IDebugArrayObject2:: GetBaseIndices | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c10fb65ec698bf9c5c9b7623b29e2f47851afe8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423590"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera o índice de base (limites inferiores) para cada índice devido ao número de dimensões na matriz.  
+Recupera os índices de base (limites inferiores) para cada índice, considerando o número de dimensões na matriz.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -41,16 +41,16 @@ int GetBaseIndices (
   
 #### <a name="parameters"></a>Parâmetros  
  `dwRank`  
- [in] O número de dimensões (rank) da matriz.  
+ no O número de dimensões (classificação) da matriz.  
   
  `dwIndices`  
- [out] Os índices base (limites inferiores) para a matriz.  
+ fora Os índices de base (limites inferiores) para a matriz.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Por exemplo, essa função retornará '5' para a matriz criada pelo código a seguir em C#:  
+ Por exemplo, essa função retornaria ' 5 ' para a matriz criada pelo seguinte código C#:  
   
 ```  
 int[] lengths = { 12 };  
@@ -58,5 +58,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

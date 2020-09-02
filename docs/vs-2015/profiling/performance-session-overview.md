@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422104"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
@@ -76,6 +76,6 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
 ## <a name="generate-a-report-of-the-results"></a>Gerar um relatório dos resultados  
  Você pode colar linhas de qualquer exibição de relatório de desempenho em emails e planilhas, bem como pode gerar relatórios que contêm os dados para uma ou mais exibições.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
- [Passo a passo: identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)
+ [Passo a passo: Identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetAddressesFromPosition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27349cfdc438da133c4cea05077649ebb4df376c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547150"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método mapeia uma posição do documento em uma matriz de endereços de depuração.  
+Esse método mapeia uma posição de documento em uma matriz de endereços de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,26 +46,26 @@ int GetAddressesFromPosition( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pDocPos`  
- [in] A posição do documento.  
+ no A posição do documento.  
   
  `fStatmentOnly`  
- [in] Se for TRUE, limita os endereços de depuração para uma única instrução.  
+ no Se for TRUE, limita os endereços de depuração a uma única instrução.  
   
  `ppEnumBegAddresses`  
- [out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.  
+ fora Retorna um enumerador para os endereços de depuração inicial associados a esta instrução ou linha.  
   
  `ppEnumEndAddresses`  
- [out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.  
+ fora Retorna um enumerador [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) para os endereços de depuração finais associados a esta instrução ou linha.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Uma posição de documento normalmente indica um intervalo de linhas de código-fonte. Esse método fornece inicial e endereços de depuração finais associados a essas linhas. Algumas linguagens permitem que as instruções que abrangem várias linhas, ou linhas que contém mais de uma instrução. Esse método fornece um sinalizador para limitar os endereços de depuração para uma única instrução.  
+ Uma posição de documento normalmente indica um intervalo de linhas de origem. Esse método fornece os endereços de depuração inicial e final associados a essas linhas. Algumas linguagens permitem instruções que abrangem várias linhas ou linhas que contêm mais de uma instrução. Esse método fornece um sinalizador para limitar os endereços de depuração a uma única instrução.  
   
- É possível que uma única instrução ter vários endereços de depuração, como no caso de modelos.  
+ É possível que uma única instrução tenha vários endereços de depuração, como no caso de modelos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

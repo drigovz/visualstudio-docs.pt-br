@@ -1,5 +1,5 @@
 ---
-title: Classe ContingentProperties - membros internos | Microsoft Docs
+title: Classe contingentproperties-membros internos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414640"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties – membros internos
@@ -25,11 +25,11 @@ Contém propriedades adicionais para um <xref:System.Threading.Tasks.Task> objet
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (no mscorlib.dll)  
   
- Porque você não pode acessar esses membros internos do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
+ Como você não pode acessar esses membros internos do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
@@ -40,12 +40,12 @@ Contém propriedades adicionais para um <xref:System.Threading.Tasks.Task> objet
   
 ### <a name="fields"></a>Campos  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|A lista de tarefas filho que estão registrados com essa tarefa.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|A lista de tarefas filho que são registradas com esta tarefa.|  
   
 ## <a name="remarks"></a>Comentários  
- O .NET Framework inicializa os campos dessa classe somente quando eles forem necessários.  
+ O .NET Framework Inicializa os campos dessa classe somente quando eles são necessários.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Elementos internos de extensões paralelas para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

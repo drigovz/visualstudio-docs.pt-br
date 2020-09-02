@@ -11,33 +11,33 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a9c2a6a6e69bf47751706710801dd78c832ccd2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546909"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-O mecanismo de depuração (DES) pode enviar esse evento opcional para o Gerenciador de sessão de depuração (SDM) quando um programa foi interrompido.  
+O mecanismo de depuração (DE) pode enviar esse evento opcional para o SDM (Gerenciador de depuração de sessão) quando um programa for interrompido.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugStopCompleteEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Isso é uma nova interface para [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]. Versões anteriores não dava suporte assíncrono parando.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Essa é uma nova interface para o [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] . Versões anteriores não suportavam a interrupção assíncrona.  
   
- [Parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) é chamado pelo SDM em vários processos ou um programas com vários cenários. Quando um programa envia um evento de interrupção para o SDM, o SDM solicita parar, muito de outros programas.  
+ [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) é chamado pelo SDM em cenários de vários processos ou vários programas. Quando um programa envia um evento de parada para o SDM, o SDM solicita que outros programas parem também.  
   
- Ele é usado para informar assincronamente o SDM que um programa foi interrompido. Isso é útil para um mecanismo de depuração do interpretador, às vezes, em que nenhum código é executado dentro do programa depurado, portanto [parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) não pode ser concluída de forma síncrona. Se um mecanismo de depuração deseja empregar essa notificação assíncrona, ela deve retornar `S_ASYNC_STOP` partir [parar](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).  
+ Ele é usado para informar de forma assíncrona o SDM que um programa parou. Isso é útil para um mecanismo de depuração de intérprete, no qual às vezes nenhum código está sendo executado dentro do programa depurado, portanto, [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) não pode ser concluído de forma síncrona. Se um mecanismo de depuração quiser empregar essa notificação assíncrona, ele deverá retornar `S_ASYNC_STOP` de [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

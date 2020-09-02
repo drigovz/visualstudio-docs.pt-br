@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b012136c30f72cfdddadfc1a370ed76f567afffd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429906"
 ---
 # <a name="project-priority"></a>Prioridade do projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Um item de projeto geralmente é um membro de apenas um projeto na solução. Portanto, o IDE pode facilmente determinar qual projeto é usado para abrir o item. No entanto, se um item for um membro de mais de um projeto, o IDE usa um esquema de prioridade para determinar o melhor projeto para abrir o item.  
+Um item de projeto geralmente é um membro de apenas um projeto na solução. Portanto, o IDE pode determinar facilmente qual projeto é usado para abrir o item. No entanto, se um item for membro de mais de um projeto, o IDE usará um esquema de prioridade para determinar o melhor projeto para abrir o item.  
   
  A lista a seguir mostra o esquema de prioridade do projeto:  
   
-- As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> método para cada projeto na solução para determinar se o documento é um membro desse projeto.  
+- O IDE chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> método para cada projeto na solução para determinar se o documento é membro desse projeto.  
   
-- Se o documento é um membro do projeto, o projeto responde com uma prioridade que o projeto atribui acordo com seu tratamento desse documento. Por exemplo, um projeto de linguagem responde com uma prioridade alta para seus arquivos de origem do idioma, mas responde com uma prioridade mais baixa para um tipo de arquivo não reconhecido que não é usado como parte do processo de compilação.  
+- Se o documento for um membro do projeto, o projeto responderá com uma prioridade que o projeto atribui de acordo com seu manuseio desse documento. Por exemplo, um projeto de linguagem responde com uma prioridade alta para seus arquivos de origem de idioma, mas responde com uma prioridade mais baixa para um tipo de arquivo não reconhecido que não é usado como parte de seu processo de compilação.  
   
-- Projetos que oferecem designers ou editores personalizados, específicos do projeto para um documento também recebem uma prioridade alta.  
+- Os projetos que fornecem editores ou designers personalizados e específicos do projeto para um documento também recebem uma prioridade alta.  
   
-- O <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeração fornece o documento de valores de prioridade.  
+- A <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeração fornece os valores de prioridade do documento.  
   
-- O projeto que especifica a prioridade mais alta é considerando o contexto para abrir o documento. Se dois projetos retornam valores de prioridade igual, o projeto ativo é preferencial. Se nenhum projeto na solução responde que ele pode abrir o documento, o IDE coloca o documento no projeto arquivos diversos. Para obter mais informações, consulte [projeto arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md).  
+- O projeto que especifica a prioridade mais alta recebe o contexto para abrir o documento. Se dois projetos retornarem valores de prioridade iguais, o projeto ativo é preferencial. Se nenhum projeto na solução responder que pode abrir o documento, o IDE colocará o documento no projeto de arquivos diversos. Para obter mais informações, consulte [Miscellaneous Files Project](../../extensibility/internals/miscellaneous-files-project.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Projeto arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md)   
- [Como: Abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)   
- [Adicionar modelos projeto e de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+## <a name="see-also"></a>Consulte Também  
+ [Projeto de arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md)   
+ [Como abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Adicionando o projeto e os modelos de item do projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)

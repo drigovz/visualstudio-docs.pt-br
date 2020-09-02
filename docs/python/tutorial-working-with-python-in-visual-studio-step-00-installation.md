@@ -12,16 +12,16 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431276"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
 > [!Note]
-> O suporte ao Python está atualmente disponível apenas no Visual Studio para Windows; no Mac e Linux, o suporte ao Python está disponível através [do Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> O suporte do Python está disponível atualmente apenas no Visual Studio para Windows; no Mac e no Linux, o suporte ao Python está disponível por meio de [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 1. Baixe e execute o instalador do Visual Studio mais recente para Windows (o suporte ao Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
 
@@ -35,7 +35,7 @@ ms.locfileid: "62431276"
 
     ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](media/installation-python-workload.png)
 
-1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, **pressione Alt**+**I** para abrir a janela **Python Interactive** e digite `2+2`. Se você não vir a saída de **4**, verifique as etapas novamente.
+1. Para testar rapidamente o suporte do Python, inicie o Visual Studio, pressione **ALT** + **I** para abrir a janela **interativa do Python** e digite `2+2` . Se você não vir a saída de **4**, verifique as etapas novamente.
 
     ![Testando o Python por meio da janela interativa](media/installation-interactive-test.png)
 
@@ -48,4 +48,4 @@ ms.locfileid: "62431276"
 
 - [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalar o suporte para Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md)
-- [Instalar locais](installing-python-support-in-visual-studio.md#install-locations)
+- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations)

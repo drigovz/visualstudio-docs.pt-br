@@ -14,52 +14,52 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7773c611733ccec525fc25264311e72c1dfe36e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537674"
 ---
 # <a name="feedback-to-the-user"></a>Comentários para o usuário
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento integrado (IDE), comentários visuais sobre funcionalidade disponível é com base na seleção atual do usuário e o contexto de seleção global. A tabela a seguir lista a funcionalidade que está disponível em contextos diferentes de seleção.  
+No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (ambiente de desenvolvimento integrado), os comentários visuais relacionados à funcionalidade disponível baseiam-se na seleção atual do usuário e no contexto de seleção global. A tabela a seguir lista a funcionalidade que está disponível em contextos de seleção diferentes.  
   
 |Contexto de seleção|Funcionalidade disponível|  
 |-----------------------|-----------------------------|  
 |IDE|Global|  
 |Conjunto de produtos atual|Específico do produto|  
-|Hierarquia do Active Directory|Hierarquia de tipo específicas|  
-|Item de hierarquia do Active Directory|Específicos de tipo de item de hierarquia|  
-|Documento ativo|Específico do tipo de documento|  
-|Janela de nível mais alto MDI (interface MDI)|Tipo de janela específicas|  
-|Contexto da seleção atual|Contexto de seleção específico|  
+|Hierarquia ativa|Tipo de hierarquia específico|  
+|Item de hierarquia ativa|Tipo de item de hierarquia específico|  
+|Documento ativo|Tipo de documento específico|  
+|Janela MDI (interface de vários documentos) superior|Específico do tipo de janela|  
+|Contexto de seleção atual|Contexto de seleção específico|  
   
- Se você apenas surgir a funcionalidade que os usuários precisam e fornecem continuamente seleção consistente e comentários de contexto do ambiente, você pode reduzir a complexidade no IDE. As seguintes regras se aplicam sempre que uma janela é aberta no IDE:  
+ Se você só Surface a funcionalidade de que os usuários precisam e fornece continuamente comentários de contexto de ambiente e seleção consistente, reduza a complexidade no IDE. As regras a seguir se aplicam sempre que uma janela é aberta no IDE:  
   
-- Se a janela for alterado em seu contexto de seleção, comentários da seleção está indicado claramente na janela e a janela Ajuda dinâmica, se exibido, é atualizada para refletir o contexto atual.  
+- Se a janela alterar seu contexto de seleção, os comentários de seleção serão indicados claramente na janela e a janela de ajuda dinâmica, se mostrada, será atualizada para refletir o contexto atual.  
   
-- Se a janela altera o contexto de seleção global, todos os menus de contexto específico, a janela hierarquia do Active Directory e a barra de título do aplicativo são atualizados para refletir o contexto atual.  
+- Se a janela alterar o contexto de seleção global, todos os menus específicos de contexto, a janela de hierarquia ativa e a barra de título do aplicativo serão atualizados para refletir o contexto atual.  
   
-- A janela deve revelar as propriedades para a seleção atual na **propriedades** janela e, opcionalmente, se exibido, o **páginas de propriedade** caixa de diálogo.  
+- A janela deve trazer as propriedades de superfície para a seleção atual na janela **Propriedades** e, opcionalmente, se mostrado, a caixa de diálogo **páginas de propriedades** .  
   
-- Se não, a janela Propriedades de superfície ou alterar o contexto de seleção global, comentários da seleção não devem permanecer na janela quando ela não é mais a janela ativa no IDE.  
+- Se a janela não Surface Propriedades ou alterar o contexto de seleção global, os comentários de seleção não deverão permanecer na janela quando ela não for mais a janela ativa no IDE.  
   
-- Todas as janelas de ferramenta específica do documento continuamente devem refletir o documento ativo.  
+- Todas as janelas de ferramentas específicas do documento devem refletir continuamente o documento ativo.  
   
-- Menus, barras de ferramentas e a barra de título do aplicativo devem refletir a janela do cliente de nível mais alto MDI (interface MDI).  
+- Menus, barras de ferramentas e a barra de título do aplicativo devem refletir a janela de cliente MDI (interface de vários documentos) superior.  
   
-  Por exemplo, quando o modo de exibição HTML de um formulário da Web dentro de um projeto de aplicativo Web do Visual Basic é aberto e o usuário seleciona um `<td>` marca, os comentários são fornecidos da seguinte maneira:  
+  Por exemplo, quando o modo de exibição HTML de um formulário da Web dentro de um Visual Basic projeto de aplicativo Web é aberto e o usuário seleciona uma `<td>` marca, os comentários são fornecidos da seguinte maneira:  
   
-- Seleção é indicada na janela ativa e refletida na **propriedades** janela.  
+- A seleção é indicada na janela ativa e refletida na janela **Propriedades** .  
   
-- Específicos do documento **caixa de ferramentas** é atualizada para refletir o documento ativo.  
+- A **caixa de ferramentas** específica do documento é atualizada para refletir o documento ativo.  
   
-- O **Editor** barra de ferramentas e **tabela** menu são exibidas e a barra de título seja atualizada para refletir a janela do formulário da Web.  
+- A barra de ferramentas do **Editor** e o menu **tabela** são exibidos e a barra de título é atualizada para refletir a janela do Web Form.  
   
-- A janela de hierarquia do Active Directory, que é normalmente **Gerenciador de soluções**e sua atualização de barra de título para refletir o contexto atual e o contextual **projeto** comandos de menu agora se aplicam à Web ativa Projeto de aplicativo.  
+- A janela de hierarquia ativa, que normalmente é **Gerenciador de soluções**e sua atualização da barra de título para refletir o contexto atual e os comandos do menu de **projeto** sensível ao contexto agora se aplicam ao projeto de aplicativo Web ativo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md)   
- [Seleção e hierarquias](../../extensibility/internals/hierarchies-and-selection.md)
+ [Hierarquias e seleção](../../extensibility/internals/hierarchies-and-selection.md)

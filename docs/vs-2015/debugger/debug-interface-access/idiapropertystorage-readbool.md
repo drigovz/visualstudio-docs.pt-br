@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64eee421a5ed5bd46a64b51694d913a4f2dc4d41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538870"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
@@ -36,16 +36,16 @@ HRESULT ReadBOOL ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `id`  
- [in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).  
+ no Identificador da propriedade a ser lida ( `PROPID` definida em WTypes. h como um `ULONG` ).  
   
  `pValue`  
- [out] Retorna o valor da propriedade.  
+ fora Retorna o valor da propriedade.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `BOOL`.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `BOOL` .  
   
 ## <a name="remarks"></a>Comentários  
- Para obter resultados consistentes, interpretar os `BOOL` de valor para que sejam valores diferentes de zero `TRUE` e zero é `FALSE`.  
+ Para obter resultados consistentes, interprete o `BOOL` valor de forma que os valores diferentes de `TRUE` zero sejam `FALSE` .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537171"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Criando relatórios de criação de perfil básicos a partir da linha de comando
@@ -27,7 +27,7 @@ Este tópico descreve os comandos básicos do VSPerfReport que geram relatórios
  **VSPerfReport** `VSPFile` **/Summary:All**  
  Gera todos os relatórios disponíveis para o arquivo .vsp ou .vsps.  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType` [,`ReportType`...]  
  Gera os tipos de relatório especificados.  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -38,19 +38,19 @@ Este tópico descreve os comandos básicos do VSPerfReport que geram relatórios
   
 |Parâmetro de Resumo|Descrição do Relatório|Referência de Relatório|  
 |-----------------------|------------------------|----------------------|  
-|**CallerCallee**|Representa os relacionamentos de pai/filho entre funções.|-   [Dados de Amostragem](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dados de Contenção](../profiling/caller-callee-view-contention-data.md)|  
-|**Função**|Lista dados de criação de perfil por função.|-   [Dados de Amostragem](../profiling/functions-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/functions-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de Contenção](../profiling/functions-view-contention-data.md)|  
-|**CallTree**|Representa os caminhos de execução e os dados de criação de perfil de funções na execução de criação de perfil.|-   [Dados de Instrumentação](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Dados de Amostragem](../profiling/call-tree-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de Contenção](../profiling/call-tree-view-contention-data.md)|  
-|**Contador**|Lista marcas de criação de perfil e valores de contador de desempenho do Windows que foram coletados durante a execução da criação de perfil.|-   [Exibição de Marcas](../profiling/marks-view.md)|  
-|**Ip**|Lista dados de criação de perfil por instrução.|-   [Dados de Amostragem](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Contenção](../profiling/instruction-pointers-ips-view-contention-data.md)|  
-|**Vida Útil**|Lista o tempo de vida de objetos alocados.|-   [Exibição do Tempo de Vida do Objeto](../profiling/object-lifetime-view.md)|  
-|**Linha**|Lista dados de criação de perfil por linha de código-fonte.|-   [Dados de Amostragem](../profiling/lines-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Contenção](../profiling/lines-view-contention-data.md)|  
+|**CallerCallee**|Representa os relacionamentos de pai/filho entre funções.|-   [Dados de Amostragem](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/caller-callee-view-contention-data.md)|  
+|**Função**|Lista dados de criação de perfil por função.|-   [Dados de Amostragem](../profiling/functions-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/functions-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/functions-view-contention-data.md)|  
+|**CallTree**|Representa os caminhos de execução e os dados de criação de perfil de funções na execução de criação de perfil.|-   [Dados de Instrumentação](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Dados de Amostragem](../profiling/call-tree-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/call-tree-view-contention-data.md)|  
+|**Contador**|Lista marcas de criação de perfil e valores de contador de desempenho do Windows que foram coletados durante a execução da criação de perfil.|-   [Exibição de marcas](../profiling/marks-view.md)|  
+|**IP**|Lista dados de criação de perfil por instrução.|-   [Dados de Amostragem](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dados de contenção](../profiling/instruction-pointers-ips-view-contention-data.md)|  
+|**Vida Útil**|Lista o tempo de vida de objetos alocados.|-   [Exibição do tempo de vida do objeto](../profiling/object-lifetime-view.md)|  
+|**Linha**|Lista dados de criação de perfil por linha de código-fonte.|-   [Dados de Amostragem](../profiling/lines-view-sampling-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dados de contenção](../profiling/lines-view-contention-data.md)|  
 |**Cabeçalho**|Informações de cabeçalho do arquivo de dados de criação de perfil.|Específico ao arquivo.|  
-|**Marca**|Marcas de criação de perfil coletadas na execução de criação de perfil.|-   [Exibição de Marcas](../profiling/marks-view.md)|  
-|**Módulo**|Lista dados de criação de perfil para módulos.|-   [Dados de Amostragem](../profiling/modules-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/modules-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de Contenção](../profiling/modules-view-contention-data.md)|  
-|**Processo**|Lista dados de criação de perfil para processos.|-   [Exibição do Processo](../profiling/process-view.md)<br />-   [Dados de Contenção](../profiling/process-view-contention-data.md)|  
-|**Thread**|Lista dados de criação de perfil para threads.|-   [Exibição do Processo](../profiling/process-view.md)|  
-|**Tipo**|Lista dados de criação de perfil de alocação por tipo.|-   [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md)|  
-|**Contenção**|Contenções de recursos.|-   [Contenções de Recursos](../profiling/resource-contentions-view-contention-data.md)|  
+|**Marca**|Marcas de criação de perfil coletadas na execução de criação de perfil.|-   [Exibição de marcas](../profiling/marks-view.md)|  
+|**Módulo**|Lista dados de criação de perfil para módulos.|-   [Dados de Amostragem](../profiling/modules-view-sampling-data.md)<br />-   [Dados de Instrumentação](../profiling/modules-view-instrumentation-data.md)<br />-   [Dados de Amostragem de Memória do .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/modules-view-contention-data.md)|  
+|**Processo**|Lista dados de criação de perfil para processos.|-   [Modo de exibição de processo](../profiling/process-view.md)<br />-   [Dados de contenção](../profiling/process-view-contention-data.md)|  
+|**Processo**|Lista dados de criação de perfil para threads.|-   [Modo de exibição de processo](../profiling/process-view.md)|  
+|**Tipo**|Lista dados de criação de perfil de alocação por tipo.|-   [Exibição de alocações](../profiling/dotnet-memory-allocations-view.md)|  
+|**Contenção**|Contenções de recursos.|-   [Contenções de recursos](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Lista problemas de regra de desempenho.|- Lista CheckId, a descrição e o local do código-fonte do problema da regra.|  
-|**ETW**|Lista eventos de Rastreamento de Eventos para Windows (ETW) coletados na execução da criação de perfil.|-   [Relatório de ETW](../profiling/event-tracing-for-windows-etw-report.md)|
+|**ETW**|Lista eventos de Rastreamento de Eventos para Windows (ETW) coletados na execução da criação de perfil.|-   [Relatório ETW](../profiling/event-tracing-for-windows-etw-report.md)|

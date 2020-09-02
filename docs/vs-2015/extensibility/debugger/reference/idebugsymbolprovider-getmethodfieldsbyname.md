@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetMethodFieldsByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: eb26d7382c9c501a1c3235153c2364b2a3e677fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421155"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
@@ -44,20 +44,20 @@ int GetMethodFieldsByName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszFullName`  
- [in] O nome do método.  
+ no O nome do método.  
   
  `nameMatch`  
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas.  
+ no Seleciona o tipo de correspondência, por exemplo, diferencia maiúsculas de minúsculas.  
   
  `ppEnum`  
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os campos associados a esse método.  
+ fora Retorna um enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para os campos associados a este método.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um método pode ser associado a vários campos, se ele está sobrecarregado, por exemplo.  
+ Um método pode ser associado a vários campos se estiver sobrecarregado, por exemplo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

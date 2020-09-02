@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNamespacesUsedAtAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25ea68130f546ea90216c831d321e6498af12a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421285"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método cria um enumerador para os namespaces associados com o endereço de depuração.  
+Esse método cria um enumerador para namespaces associados ao endereço de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -42,17 +42,17 @@ int GetNamespacesUsedAtAddress(
   
 #### <a name="parameters"></a>Parâmetros  
  `pAddress`  
- [in] O endereço de depuração.  
+ no O endereço de depuração.  
   
  `ppEnum`  
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os namespaces.  
+ fora Retorna um enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para os namespaces.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Pode haver vários namespaces associados com um endereço de depuração fornecido, por exemplo, aninhada namespaces ou vários `using` instruções.  
+ Pode haver vários namespaces associados a um determinado endereço de depuração, por exemplo, namespaces aninhados ou várias `using` instruções.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

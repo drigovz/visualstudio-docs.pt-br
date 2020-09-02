@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3c901803d8ab2b35624d185e62588c72a3586ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537134"
 ---
 # <a name="current-tab"></a>Guia Atual
@@ -27,5 +27,5 @@ Ao clicar na guia **Atual**, é possível ver uma pilha de chamadas (se disponí
   
  A guia **Atual** também exibe informações sobre segmentos de atividade do DirectX, marcadores e acesso de E/S.  Para segmentos de atividade do DirectX, são exibidas informações sobre a forma como os pacotes DMA são processados pela fila de hardware.  Para os marcadores, são exibidas informações sobre a descrição e o tipo de marcador.  Para o acesso de E/S, são exibidas informações sobre o arquivo e o número de bytes lidos ou gravados.  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte Também  
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: getlocationtype | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef335232b20fbc74c323fe96ab283280e9d2aad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431505"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém o tipo de local de ponto de interrupção dessa solicitação de ponto de interrupção.  
+Obtém o tipo de local do ponto de interrupção dessa solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,13 +40,13 @@ int GetLocationType( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pBPLocationType`  
- [out] Retorna um valor da [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) enumeração que descreve o local dessa solicitação de ponto de interrupção.  
+ fora Retorna um valor da enumeração [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) que descreve o local dessa solicitação de ponto de interrupção.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_FAIL` se o `bpLocation` campo associado [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura não é válida.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_FAIL` se o `bpLocation` campo na estrutura de [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) associada não for válido.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CDebugBreakpointRequest` objeto que expõe o[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um `CDebugBreakpointRequest` objeto simples que expõe a interface[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) .  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
@@ -79,7 +79,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }    
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   

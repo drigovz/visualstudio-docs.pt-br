@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
+title: 'IDebugProgramPublisher2:: UnpublishProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fed7f35b87ec3e4a761b7adc33876affe778d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423128"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Remove um nó de programa especificado de disponibilidade para depurar os mecanismos de (DEs) e o Gerenciador de sessão de depuração (SDM).  
+Remove um nó de programa especificado da disponibilidade para os mecanismos de depuração (DEs) e o Gerenciador de depuração de sessão (SDM).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,17 +40,17 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>Parâmetros  
  `pProgramNode`  
- [in] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó de programa que está sendo removido.  
+ no Um objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa o nó do programa que está sendo removido.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Depois de removido, o nó de programa não está mais disponível para ser consultado para informações sobre o programa.  
+ Depois de removido, o nó do programa não estará mais disponível para ser consultado quanto às informações do programa.  
   
- Para disponibilizar um nó de programa, chame o [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) método.  
+ Para disponibilizar um nó de programa, chame o método [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

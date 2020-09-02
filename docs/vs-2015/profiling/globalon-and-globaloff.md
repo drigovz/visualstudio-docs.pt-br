@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434215"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
@@ -33,7 +33,7 @@ As opções **GlobalOff** e **GlobalOn** do VSPerfCmd.exe pausam e retomam a cri
   
 - **GlobalOn** imediatamente define a Contagem global de iniciar/parar para 1 e, portanto, retomará a criação de perfil.  
   
-  Confira [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md) para obter mais informações.  
+  Para obter mais informações, consulte [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -51,19 +51,19 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>Opções válidas  
  **GlobalOn** e **GlobalOff** podem ser especificados em linhas de comando que também contêm as seguintes opções.  
   
- **Iniciar:** `Method`  
+ **Início:**`Method`  
  Inicializa a sessão de criador de perfil de linha de comando e define o método de criação de perfil especificado.  
   
- **Inicialize:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.  
   
- **Anexar:** `PID`  
+ **Anexar:**`PID`  
  Inicia a criação de perfil do processo especificado.  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
+ {**ProcessOff**&#124;**processize**} **:**`PID`  
  Interrompe ou inicia a criação de perfil para o processo especificado.  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**Threading**} **:**`TID`  
  Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).  
   
 ## <a name="example"></a>Exemplo  
@@ -84,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criação de perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

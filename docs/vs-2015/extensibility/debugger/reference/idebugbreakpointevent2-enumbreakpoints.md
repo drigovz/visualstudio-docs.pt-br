@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs
+title: 'IDebugBreakpointEvent2:: EnumBreakpoints | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e418b762ee181bf1ed4c382504794b22fe1147e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431544"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cria um enumerador para todos os pontos de interrupção disparado no local atual do código.  
+Cria um enumerador para todos os pontos de interrupção que foram acionados no local do código atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,14 +40,14 @@ int EnumBreakpoints(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppEnum`  
- [out] Retorna um [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos os pontos de interrupção associados com o local atual do código.  
+ fora Retorna um objeto [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) que enumera todos os pontos de interrupção associados ao local do código atual.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Nem todos os pontos de interrupção em um local específico podem ser acionado em um determinado momento (por exemplo, um ponto de interrupção com uma condição não será acionado até que essa condição seja atendida).  
+ Nem todos os pontos de interrupção em um local específico podem ser acionados em um determinado momento (por exemplo, um ponto de interrupção com uma condição não será acionado até que essa condição seja atendida).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Cadeias de caracteres&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: '&lt;&gt;Elemento Strings (Bootstrapper) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,18 +20,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421519"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (Bootstrapper)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Elemento Strings (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
+Define cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Strings>  
@@ -43,19 +43,19 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `Strings` um filho do elemento é o `Package` elemento. Ele não tem atributos.  
+ O `Strings` elemento é um filho do `Package` elemento. Ele não tem atributos.  
   
-## <a name="string"></a>Cadeia de Caracteres  
- O `String` um filho do elemento é o `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
+## <a name="string"></a>String  
+ O `String` elemento é um filho do `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
   
  `String` tem o seguinte atributo.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Name`|Necessário. O nome da cadeia de caracteres.|  
+|`Name`|Obrigatórios. O nome da cadeia de caracteres.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir especifica que todas as cadeias de caracteres em inglês para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] installer.  
+ O exemplo de código a seguir especifica todas as cadeias de caracteres em inglês para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] instalador.  
   
 ```  
 <Strings>  
@@ -76,5 +76,5 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 </Strings>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Elemento \<Package>](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Consulte Também  
+ [\<Package> Elementos](../deployment/package-element-bootstrapper.md)

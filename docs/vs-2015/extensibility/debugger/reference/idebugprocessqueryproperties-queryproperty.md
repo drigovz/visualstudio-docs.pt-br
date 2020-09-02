@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
+title: 'IDebugProcessQueryProperties:: Queryproperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72f91d6cf8554567807e958ae9a32b93f9228c8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537654"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa consulta método um valor da propriedade especificada do processo de depuração.  
+Esse método consulta um valor de propriedade especificado do processo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,7 +38,7 @@ int QueryProperty(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwPropType`  
- [in] Definição da propriedade consultada. Os valores são:  
+ no Definição da propriedade consultada. Os valores são:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -47,13 +47,13 @@ int QueryProperty(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] O valor da propriedade.  
+  fora O valor da propriedade.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é raramente usado.  
+ Esse método raramente é usado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

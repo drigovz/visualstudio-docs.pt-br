@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: 'IDebugBinder:: bind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 547f94cb4534bcb281cce0fdc2ff7db5fefe3593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423537"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método obtém o contexto de memória ou um objeto que contém o valor atual do símbolo.  
+Esse método obtém o contexto de memória ou o objeto que contém o valor atual do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,18 +44,18 @@ int Bind(
   
 #### <a name="parameters"></a>Parâmetros  
  `pContainer`  
- [in] O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que contém o filho referenciado por `pField`.  
+ no O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que contém o filho referenciado por `pField` .  
   
  `pField`  
- [in] O [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o símbolo.  
+ no O [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o símbolo.  
   
  `ppObject`  
- [out] Retorna o `IDebugObject` que representa a instância do símbolo.  
+ fora Retorna o `IDebugObject` que representa a instância do símbolo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

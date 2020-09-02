@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421766"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
@@ -44,20 +44,20 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Parâmetros  
  `pAddress`  
- [in] Um objeto de endereço representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ no Um objeto de endereço representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pguidLanguage`  
- [out] Retorna um `GUID` que especifica o idioma.  
+ fora Retorna um `GUID` que especifica o idioma.  
   
  `pguidLanguageVendor`  
- [out] Retorna um `GUID` que especifica o fornecedor de idioma.  
+ fora Retorna um `GUID` que especifica o fornecedor do idioma.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  O mecanismo de depuração chama esse método para obter as informações necessárias para selecionar o avaliador de expressão correto.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

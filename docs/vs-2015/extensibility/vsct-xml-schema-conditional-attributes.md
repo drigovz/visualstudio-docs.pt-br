@@ -1,5 +1,5 @@
 ---
-title: Atributos condicionais do esquema XML do VSCT | Microsoft Docs
+title: Atributos condicionais de esquema XML VSCT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422143"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionais do esquema XML do VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Atributos condicionais podem ser aplicados a todas as listas e itens. Operadores lógicos e expressões de expansão de símbolo avaliadas como true ou false. Se for true, a lista associada ou o item será incluído na saída resultante.  
+Atributos condicionais podem ser aplicados a todas as listas e itens. Os operadores lógicos e as expressões de expansão de símbolo são avaliados como verdadeiro ou falso. Se for true, a lista ou o item associado será incluído na saída resultante.  
   
- Expansões de token podem ser testados em relação a outras expansões de token ou constantes. A função Defined é usada para testar se um determinado nome tiver sido definido, mesmo se ele não tem nenhum valor.  
+ As expansões de token podem ser testadas em outras expansões ou constantes de token. A função definida () é usada para testar se um nome específico foi definido, mesmo que ele não tenha nenhum valor.  
   
- Quando um atributo Condition é aplicado a uma lista, a condição é aplicada a todos os elementos filho na lista. Se um elemento filho em si contém um atributo Condition, sua condição é combinada com a expressão pai por uma operação AND.  
+ Quando um atributo Condition é aplicado a uma lista, a condição é aplicada a todos os elementos filho na lista. Se um elemento filho contiver um atributo Condition, sua condição será combinada com a expressão pai por uma operação AND.  
   
- Os valores 1, '1' e 'true' são avaliados como true e 0, '0' e 'false' são avaliadas como false.  
+ Os valores 1, ' 1 ' e ' verdadeiro ' são avaliados como verdadeiros, e 0, ' 0 ' e ' falso ' são avaliados como falso.  
   
 ## <a name="operators"></a>Operadores  
  Os operadores a seguir podem ser usados para avaliar expressões condicionais.  
@@ -71,5 +71,5 @@ and !Defined(DEBUG)">
 </Menus>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

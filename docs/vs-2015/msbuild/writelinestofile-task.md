@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419953"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
@@ -44,7 +44,7 @@ Grava os caminhos dos itens especificados no arquivo de texto especificado.
 ## <a name="remarks"></a>Comentários  
  Se `Overwrite` for `true`, criará um novo arquivo, gravará os conteúdos nele e o fechará. Se o arquivo de destino já existir, ele será substituído. Se `Overwrite` for `false`, acrescentará os conteúdos ao arquivo, criando um arquivo de destino, caso ele ainda não exista.  
   
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa a tarefa `WriteLinesToFile` para gravar os caminhos dos itens na coleção de itens `MyItems` no arquivo especificado pela coleção de itens `MyTextFile`.  
@@ -68,6 +68,6 @@ Grava os caminhos dos itens especificados no arquivo de texto especificado.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Tarefa](../msbuild/msbuild-tasks.md)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4a603936f58df37cd54bc32e7b4ea8e35838aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62539112"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Determina se a procura de arquivos. PDB é permitido no diretório raiz do sistema.  
+Determina se a pesquisa de arquivos. pdb é permitida no diretório raiz do sistema.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,11 +31,11 @@ Determina se a procura de arquivos. PDB é permitido no diretório raiz do siste
 HRESULT RestrictSystemRootAccess();  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Qualquer código de retorno diferente de `S_OK` impede que pesquisa a raiz do sistema de arquivos. PDB.  
+ Qualquer código de retorno diferente de `S_OK` impede a pesquisa da raiz do sistema para arquivos. pdb.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
+title: 'IDebugObject2:: GetBackingFieldForProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5eadbed61638ff1442c4ed7033426e245abf930a
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62536380"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém o campo ou variável (se houver) que pode ser fazendo a propriedade representada por este objeto.  
+Obtém o campo ou variável (se houver) que pode estar fazendo backup da propriedade representada por esse objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,13 +40,13 @@ int GetBackingFieldForProperty(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppObject`  
- [out] Uma [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objeto que descreve o campo de suporte.  
+ fora Um objeto [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) que descreve o campo de backup.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objeto representa uma propriedade de classe do código gerenciado, ou seja, um método com um get e/ou o acessador set. Essas propriedades geralmente requerem uma variável para conter o valor manipulado pela propriedade. Essa variável é conhecida como o campo de suporte. Se não houver nenhum campo de suporte para o objeto, em seguida, certifique-se de retornar um valor nulo: alguns chamadores não podem pagar a atenção para o valor de retorno, mas ficará em vez disso, para ver se um valor nulo foi retornado no `ppObject`.  
+ O objeto [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) representa uma propriedade de classe de código gerenciado, ou seja, um método com um acessador get e/ou set. Essas propriedades geralmente exigem uma variável para conter o valor manipulado pela propriedade. Essa variável é conhecida como o campo de backup. Se não houver nenhum campo de apoio para o objeto, certifique-se de retornar um valor nulo: alguns chamadores podem não prestar atenção ao valor de retorno, mas, em vez disso, verificará se um valor nulo foi retornado em `ppObject` .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

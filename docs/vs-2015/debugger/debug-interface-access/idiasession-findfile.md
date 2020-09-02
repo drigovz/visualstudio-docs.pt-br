@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e791bc09ba3dd4f1811c650926eadb0f7f0462a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431635"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera os arquivos de origem pelo nome e compiland.  
+Recupera os arquivos de origem por compiland e nome.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,19 +38,19 @@ HRESULT findFile ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pCompiland`  
- [in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland a ser usado como um contexto para a pesquisa. Definir esse parâmetro como `NULL` para localizar arquivos de origem em todos os compilandos.  
+ no Um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o compiland a ser usado como um contexto para a pesquisa. Defina esse parâmetro como `NULL` para localizar os arquivos de origem em todos os compilandos.  
   
  `name`  
- [in] Especifica o nome do arquivo de origem a ser recuperado. Definir esse parâmetro como `NULL` para todos os arquivos de origem para ser recuperado.  
+ no Especifica o nome do arquivo de origem a ser recuperado. Defina esse parâmetro como `NULL` para todos os arquivos de origem a serem recuperados.  
   
  `option`  
- [in] Especifica as opções de comparação aplicadas à pesquisa de nome. Os valores do [enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) enumeração pode ser usada sozinho ou em combinação.  
+ no Especifica as opções de comparação aplicadas à pesquisa de nomes. Os valores da enumeração de [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) podem ser usados sozinhos ou em combinação.  
   
  `ppResult`  
- [out] Retorna um [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) recuperado do objeto que contém uma lista dos arquivos de origem.  
+ fora Retorna um objeto [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) que contém uma lista dos arquivos de origem recuperados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
   
@@ -59,7 +59,7 @@ IDiaEnumSourceFiles* pEnum;
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

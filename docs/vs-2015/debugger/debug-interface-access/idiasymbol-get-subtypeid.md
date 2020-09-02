@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 853d0032b290f80ede23dddeae2a4b7026f63260
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428259"
 ---
-# <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
+# <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera a ID do tipo sub.  
+Recupera a ID do subtipo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,10 +32,10 @@ HRESULT get_subTypeId(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Um ponteiro para um `DWORD` que contém a ID do tipo sub.  
+ fora Um ponteiro para um `DWORD` que contém a ID de subtipo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

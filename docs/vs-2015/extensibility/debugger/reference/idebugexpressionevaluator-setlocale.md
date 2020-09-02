@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: 'IDebugExpressionEvaluator:: setlocale | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 730a105b12016ea031bdb4753da009223a5d39f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540518"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
@@ -40,13 +40,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parâmetros  
  `wLangID`  
- [in] O identificador de idioma.  
+ no O identificador de idioma.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método pode ser chamado várias vezes enquanto o avaliador de expressão (EE) é carregado, portanto, o EE deve ser capaz de alternar os idiomas em tempo real. O EE usa essa localidade para retornar cadeias de caracteres e mensagens de erro no idioma apropriado.  
+ Esse método pode ser chamado muitas vezes enquanto o avaliador de expressão (EE) é carregado, portanto, o EE deve ser capaz de alternar os idiomas de forma dinâmica. O EE usa essa localidade para retornar mensagens de erro e cadeias de caracteres no idioma apropriado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

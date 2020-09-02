@@ -25,23 +25,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431622"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o **rptn**, e **rptfn** macros, definidas em CRTDBG. H, para substituir o uso de `printf` instruções para depuração. Essas macros desaparecem automaticamente na sua versão de compilação quando **Debug** não estiver definido, portanto, não há nenhuma necessidade de incluí-los em **#ifdef**s.  
+Você pode usar as macros **_RPTn**e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de `printf` instruções para depuração. Essas macros desaparecerão automaticamente na compilação da versão quando **_DEBUG** não estiver definida, portanto, não há necessidade de colocá-las em **#ifdef**s.  
   
 |Macro|Descrição|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gera uma cadeia de caracteres de mensagem e zero a quatro argumentos. Para _RPT1 até **_RPT4**, a cadeia de caracteres de mensagem funciona como uma cadeia de caracteres de formatação de estilo printf para os argumentos.|  
-|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Mesmo que **rptn** , mas essas macros também o número de linha e de nome de arquivo onde se encontra a macro de saída.|  
+|**_RPTF0**, **_RPTF1**, **, _RPTF2** **_RPTF4**|O mesmo que **_RPTn** , mas essas macros também geram o nome do arquivo e o número da linha em que a macro está localizada.|  
   
- Considere o exemplo a seguir:  
+ Considere o seguinte exemplo:  
   
 ```  
 #ifdef _DEBUG  
@@ -74,7 +74,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Uma chamada para **ALERT_IF2** poderia executar todas as funções da **printf** código no início deste tópico:  
+ Uma chamada para **ALERT_IF2** poderia executar todas as funções do código **printf** no início deste tópico:  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
@@ -83,5 +83,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  Como uma macro personalizada pode ser alterada facilmente para reportar mais ou menos informações para os destinos diferentes (dependendo do que é mais conveniente), essa abordagem pode ser útil principalmente à medida que seus requisitos de depuração evoluem.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

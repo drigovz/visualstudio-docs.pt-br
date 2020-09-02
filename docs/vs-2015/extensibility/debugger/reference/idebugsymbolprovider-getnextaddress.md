@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421444"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém o endereço de depuração que segue um endereço de depuração fornecido em um método.  
+Obtém o endereço de depuração que segue um determinado endereço de depuração em um método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,16 +44,16 @@ int GetNextAddress( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pAddress`  
- [in] Dado o endereço de depuração.  
+ no Endereço de depuração fornecido.  
   
  `fStatementOnly`  
- [in] Se for TRUE, limita os endereços de depuração para uma única instrução.  
+ no Se for TRUE, limita os endereços de depuração a uma única instrução.  
   
  `ppAddress`  
- [out] Retorna o próximo endereço de depuração.  
+ fora Retorna o próximo endereço de depuração.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente S_OK.  
+## <a name="return-value"></a>Valor Retornado  
+ Retorna um válido `HRESULT` , normalmente S_OK.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

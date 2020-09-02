@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento TrustInfo (aplicativo ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,18 +24,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420064"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicativo ClickOnce)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;&gt;elemento TrustInfo (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Descreve as permissões de segurança mínima necessárias para o aplicativo seja executado no computador cliente.  
+Descreve as permissões de segurança mínimas necessárias para que o aplicativo seja executado no computador cliente.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -70,41 +70,41 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `trustInfo` elemento é necessário e está no `asm.v2` namespace. Ele não tem atributos e contém os seguintes elementos.  
+ O `trustInfo` elemento é obrigatório e está no `asm.v2` namespace. Ele não tem atributos e contém os elementos a seguir.  
   
 ## <a name="security"></a>segurança  
- Necessário. Esse elemento é um filho de `trustInfo` elemento. Ele contém o `applicationRequestMinimum` elemento e não tem atributos.  
+ Obrigatórios. Esse elemento é um filho do `trustInfo` elemento. Ele contém o `applicationRequestMinimum` elemento e não tem nenhum atributo.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- Necessário. Esse elemento é um filho de `security` elemento e contém o `PermissionSet`, `assemblyRequest`, e `defaultAssemblyRequest`elementos. Esse elemento não tem atributos.  
+ Obrigatórios. Esse elemento é um filho do `security` elemento e contém os `PermissionSet` elementos, e `assemblyRequest` `defaultAssemblyRequest` . Esse elemento não tem atributos.  
   
 ## <a name="permissionset"></a>PermissionSet  
- Necessário. Esse elemento é um filho de `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Este elemento tem os seguintes atributos.  
+ Obrigatórios. Esse elemento é um filho do `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Esse elemento tem os atributos a seguir.  
   
 - `ID`  
   
-     Necessário. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada na `defaultAssemblyRequest` e `assemblyRequest` atributos.  
+     Obrigatórios. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada nos `defaultAssemblyRequest` `assemblyRequest` atributos e.  
   
 - `version`  
   
-     Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.  
+     Obrigatórios. Identifica a versão da permissão. Normalmente, esse valor é `1` .  
   
 ## <a name="ipermission"></a>IPermission  
- Opcional. Esse elemento é um filho de `PermissionSet` elemento. O `IPermission` elemento totalmente identifica uma classe de permissão no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. O `IPermission` elemento tem os seguintes atributos, mas pode ter atributos adicionais que correspondem às propriedades da classe de permissão. Para descobrir a sintaxe para uma permissão específica, consulte os exemplos listados no arquivo config.  
+ Opcional. Esse elemento é um filho do `PermissionSet` elemento. O `IPermission` elemento identifica totalmente uma classe de permissão no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] . O `IPermission` elemento tem os atributos a seguir, mas pode ter atributos adicionais que correspondam às propriedades na classe de permissão. Para descobrir a sintaxe de uma permissão específica, consulte os exemplos listados no arquivo de Security.config.  
   
 - `class`  
   
-     Necessário. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.  
+     Obrigatórios. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 - `version`  
   
-     Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.  
+     Obrigatórios. Identifica a versão da permissão. Normalmente, esse valor é `1` .  
   
 - `Unrestricted`  
   
-     Necessário. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true`, a concessão de permissão é incondicional. Se `false`, ou se esse atributo for indefinido, ele é restrito de acordo com os atributos de permissão específica definidos no `IPermission` marca. Execute as seguintes permissões:  
+     Obrigatórios. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true` , a concessão de permissão é incondicional. Se `false` , ou se esse atributo for indefinido, ele será restrito de acordo com os atributos específicos de permissão definidos na `IPermission` marca. Adote as seguintes permissões:  
   
     ```  
     <IPermission  
@@ -117,57 +117,57 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
       Unrestricted="true" />  
     ```  
   
-     Neste exemplo, a declaração <xref:System.Security.Permissions.EnvironmentPermission> restringe o aplicativo a ler apenas a nome de usuário, da variável de ambiente, enquanto a declaração <xref:System.Security.Permissions.FileDialogPermission> fornece o uso do aplicativo irrestrito de todas as <xref:System.Windows.Forms.FileDialog> classes.  
+     Neste exemplo, a declaração para <xref:System.Security.Permissions.EnvironmentPermission> restringe o aplicativo a ler apenas a variável de ambiente username, enquanto a declaração para <xref:System.Security.Permissions.FileDialogPermission> fornece ao aplicativo o uso irrestrito de todas as <xref:System.Windows.Forms.FileDialog> classes.  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- Opcional. Identifica o conjunto de permissões concedidas a todos os assemblies. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem o seguinte atributo.  
+ Opcional. Identifica o conjunto de permissões concedidas a todos os assemblies. Esse elemento é um filho do `applicationRequestMinimum` elemento e tem o atributo a seguir.  
   
 - `permissionSetReference`  
   
-     Necessário. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.  
+     Obrigatórios. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- Opcional. Identifica as permissões para um assembly específico. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem os seguintes atributos.  
+ Opcional. Identifica as permissões para um assembly específico. Esse elemento é um filho do `applicationRequestMinimum` elemento e tem os atributos a seguir.  
   
 - `Name`  
   
-     Necessário. Identifica o nome do assembly.  
+     Obrigatórios. Identifica o nome do assembly.  
   
 - `permissionSetReference`  
   
-     Necessário. Identifica a ID do conjunto de permissões que requer esse assembly. O conjunto de permissões é declarado no `PermissionSet` elemento.  
+     Obrigatórios. Identifica a ID do conjunto de permissões que este assembly requer. O conjunto de permissões é declarado no `PermissionSet` elemento.  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- Opcional. Esse elemento é um filho de `security` elemento e contém o `requestedExecutionLevel` elemento. Esse elemento não tem atributos.  
+ Opcional. Esse elemento é um filho do `security` elemento e contém o `requestedExecutionLevel` elemento. Esse elemento não tem atributos.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- Opcional. Identifica o nível de segurança no qual o aplicativo solicita a ser executado. Esse elemento não tem filhos e tem os seguintes atributos.  
+ Opcional. Identifica o nível de segurança no qual o aplicativo solicita a execução. Este elemento não tem filhos e tem os atributos a seguir.  
   
 - `Level`  
   
-     Necessário. Indica que o nível de segurança do aplicativo está solicitando. Os possíveis valores são:  
+     Obrigatórios. Indica o nível de segurança que o aplicativo está solicitando. Os valores possíveis são:  
   
-     `asInvoker`, não solicitando nenhuma permissão adicional. Este nível exige que não solicita nenhuma confiança adicional.  
+     `asInvoker`, não solicitando permissões adicionais. Esse nível não requer prompts de confiança adicionais.  
   
      `highestAvailable`, solicitando as permissões mais altas disponíveis para o processo pai.  
   
      `requireAdministrator`, solicitando permissões de administrador completo.  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos instalará apenas com um valor de `asInvoker`. Instalação com qualquer outro valor falhará.  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] os aplicativos serão instalados apenas com um valor de `asInvoker` . A instalação com qualquer outro valor falhará.  
   
 - `uiAccess`  
   
-     Opcional. Indica se o aplicativo requer acesso aos elementos de interface do usuário protegido. Os valores são `true` ou `false`, e o padrão é false. Somente os aplicativos assinados devem ter um valor true.  
+     Opcional. Indica se o aplicativo requer acesso a elementos protegidos da interface do usuário. Os valores são `true` ou `false` , e o padrão é false. Somente aplicativos assinados devem ter um valor de true.  
   
 ## <a name="remarks"></a>Comentários  
- Se um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo pede mais permissões do que o computador cliente, será concedido por padrão, o common language Gerenciador do runtime de confiança solicitará ao usuário se ela deseja conceder ao aplicativo nesse alto nível de confiança. Se ela disser não, o aplicativo não será executado; Caso contrário, ele será executado com as permissões solicitadas.  
+ Se um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo solicitar mais permissões do que o computador cliente concederá por padrão, o Gerenciador de confiança do Common Language Runtime perguntará ao usuário se ele deseja conceder ao aplicativo esse nível elevado de confiança. Se ela disser não, o aplicativo não será executado; caso contrário, ele será executado com as permissões solicitadas.  
   
- Todas as permissões solicitadas usando `defaultAssemblyRequest` e `assemblyRequest` será concedido sem nenhum aviso ao usuário se o manifesto de implantação tiver uma licença de confiança válida.  
+ Todas as permissões solicitadas usando `defaultAssemblyRequest` e `assemblyRequest` serão concedidas sem que o usuário solicite se o manifesto de implantação tiver uma licença de confiança válida.  
   
- Para obter mais informações sobre a elevação de permissões, consulte [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md). Para obter mais informações sobre a implantação de política, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Para obter mais informações sobre elevação de permissões, consulte [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md). Para obter mais informações sobre a implantação de política, consulte [visão geral da implantação de aplicativo confiável](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Exemplos  
- Os exemplos de código de três a seguir ilustram `trustInfo` elementos para o padrão chamado zonas de segurança — Internet, intranet local e FullTrust — para uso em um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo da implantação.  
+ Os três exemplos de código a seguir ilustram `trustInfo` elementos para as zonas de segurança padrão nomeadas — Internet, LocalIntranet e FullTrust — para uso no [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo de uma implantação.  
   
  O primeiro exemplo ilustra o `trustInfo` elemento para as permissões padrão disponíveis na zona de segurança da Internet.  
   
@@ -270,6 +270,6 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   
- [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+ [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

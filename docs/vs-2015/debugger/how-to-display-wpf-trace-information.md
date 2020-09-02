@@ -1,5 +1,5 @@
 ---
-title: 'Como: Exibir informações de rastreamento do WPF | Microsoft Docs'
+title: Como exibir informações de rastreamento do WPF | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537948"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Como: Exibir informações de rastreamento do WPF
+# <a name="how-to-display-wpf-trace-information"></a>Como exibir informações de acompanhamento WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela de **Saída**. Para exibir informações de rastreamento de depuração, o rastreamento do WPF deve estar habilitado.  
@@ -49,7 +49,7 @@ O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode receber
   
      Um controle de lista suspensa aparece na coluna Configurações ao lado de **Associação de Dados** ou de qualquer categoria que você tiver clicado.  
   
-8. Clique na lista suspensa e selecione o tipo de informações de rastreamento que você deseja ver: **Todos os**, **críticas**, **erro**, **aviso**, **informações**, **detalhado**, ou **ActivityTracing**.  
+8. Clique na lista suspensa e selecione o tipo de informações de rastreamento que você quer consultar: **Tudo**, **Crítico**, **Erro**, **Aviso**, **Informações**, **Detalhado** ou **ActivityTracing**.  
   
      **Crítico** habilita o rastreamento apenas de eventos Críticos.  
   
@@ -87,5 +87,5 @@ O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode receber
   
 8. Clique em **OK**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Depurando WPF](../debugger/debugging-wpf.md)

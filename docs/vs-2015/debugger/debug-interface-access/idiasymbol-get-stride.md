@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3eb93749a3190bf2468c8d12e1ca906dc40f0cbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428216"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera a distância da matriz strided ou matriz.  
+Recupera o stride da matriz ou da matriz substituída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,10 +32,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Um ponteiro para um `DWORD` que mantém a distância.  
+ fora Um ponteiro para um `DWORD` que contém o Stride.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,18 +13,18 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8219f12eed091858a43c2bd5092b8b06f8320bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422882"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o starter kit para.  
+Contém todos os metadados sobre o modelo de projeto, modelo de item ou kit do iniciante.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
@@ -41,26 +41,26 @@ Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o star
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Type`|Identifica o modelo como um modelo de projeto ou um modelo de item. Esse atributo pode ter um valor de `Project` ou `Item`.|  
-|`Version`|Especifica um número de versão para o modelo. Modelos no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] têm um `Version` valor de atributo `3.0.0`.|  
+|`Type`|Identifica o modelo como um modelo de projeto ou um modelo de item. Esse atributo pode ter um valor de `Project` ou `Item` .|  
+|`Version`|Especifica um número de versão para o modelo. Modelos no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] têm um `Version` valor de atributo de `3.0.0` .|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica os dados que categoriza o modelo e a define como ele é exibido na **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica o conteúdo do modelo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Especifica os dados que categorizam o modelo e define como ele é exibido na caixa de diálogo **novo projeto** ou **Adicionar novo item** .|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Especifica o conteúdo do modelo.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Elemento opcional.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Elemento opcional.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
- nenhuma.  
+ Nenhum.  
   
 ## <a name="remarks"></a>Comentários  
- O `VSTemplate` é o elemento raiz de arquivos. vstemplate.  
+ O `VSTemplate` elemento é o elemento raiz de arquivos. vstemplate.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +86,6 @@ Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o star
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

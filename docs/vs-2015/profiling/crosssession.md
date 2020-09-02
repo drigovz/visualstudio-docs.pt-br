@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537170"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -35,13 +35,13 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="valid-options"></a>Opções válidas  
  Para habilitar a criação de perfil em outra sessão, a opção **CrossSession** deve ser especificada com a opção **Iniciar**. **CrossSession** também deve ser especificado em qualquer comando **Anexar do VSPerfCmd** e **Desanexar** subsequente.  
   
- **Iniciar:** `Method`  
- A opção **Iniciar** inicializa o criador de perfil para o método de criação de perfil especificado.  
+ **Início:**`Method`  
+  A opção **Iniciar** inicializa o criador de perfil com o método de criação de perfil especificado.  
   
- **Anexar:** _PID_[**,**_PID_]  
+ **Anexar:** _pid_[**,**_pid_]  
  Inicia a criação de perfil dos processos especificados.  
   
- **Desanexar**[**:**_PID_[,_PID_]]  
+ **Detach**[**:**_PID_[,_PID_]]  
  Para a criação de perfil dos processos especificados.  
   
 ## <a name="example"></a>Exemplo  
@@ -52,8 +52,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criação de perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

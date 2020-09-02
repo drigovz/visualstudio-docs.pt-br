@@ -1,5 +1,5 @@
 ---
-title: Introdução ao Plug-ins de controle do código-fonte | Microsoft Docs
+title: Introdução com plug-ins de controle do código-fonte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538155"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Introdução aos plug-ins do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Para criar um controle de fonte plug-in, você deve criar uma DLL que implementa as funções definidas a API de plug-in de controle do código-fonte, e, em seguida, para registrar a DLL com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para torná-lo disponível para uso no controle de versão do código de origem.  
+Para criar um plug-in de controle do código-fonte, você deve criar uma DLL que implemente as funções definidas na API de plug-in de controle do código-fonte e, em seguida, registrar a DLL com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para disponibilizá-la para uso no controle de versão do código-fonte.  
   
- Três versões da API de plug-in de controle do código-fonte (versões 1.1, 1.2 e 1.3) estão disponíveis para o plug-ins de controle de origem. A API de plug-in de controle do código-fonte documentado aqui é a versão 1.3. Ele foi projetado para ser totalmente compatível com o plug-ins de controle de origem que dão suporte a versões 1.1 e 1.2. O [o que há de novo no código-fonte controle plug-in API versão 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) seção detalha os novos recursos de suporte para a versão mais recente da API de plug-in de controle de origem.  
+ Três versões da API de plug-in de controle do código-fonte (versões 1,1, 1,2 e 1,3) estão disponíveis para plug-ins de controle do código-fonte. A API de plug-in de controle do código-fonte documentada aqui é a versão 1,3. Ele foi projetado para ser totalmente compatível com os plug-ins de controle do código-fonte que dão suporte às versões 1,1 e 1,2. A seção o que há de [novo na API de plug-in de controle do código-fonte versão 1,3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) detalha os novos recursos com suporte na versão mais recente da API de plug-in de controle do código-fonte.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- Descreve como criar as entradas do registro que são necessárias para o plug-in de uma DLL de controle do código-fonte.  
+ [Como instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ Descreve como fazer as entradas do registro que são necessárias para conectar uma DLL de controle do código-fonte.  
   
- [Novidades na Versão 1.3 da API do plug-in de controle de código-fonte](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- Fornece uma visão geral das alterações que foram feitas para a API de plug-in de controle do código-fonte na versão 1.3.  
+ [Novidades na API do plug-in de controle do código-fonte versão 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ Fornece uma breve visão geral das alterações que foram feitas na API de plug-in de controle do código-fonte na versão 1,3.  
   
- [Novidades na Versão 1.2 da API do plug-in de controle de código-fonte](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- Fornece uma visão geral das alterações que foram feitas para a API de plug-in de controle do código-fonte na versão 1.2.  
+ [Novidades na API do plug-in de controle do código-fonte versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ Fornece uma breve visão geral das alterações que foram feitas na API de plug-in de controle do código-fonte na versão 1,2.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)  
- Fornece uma lista completa de todos os elementos na API de plug-in de controle de origem.  
+ Fornece uma listagem completa de todos os elementos na API de plug-in de controle do código-fonte.  
   
- [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Define o SDK do plug-in de controle de origem e descreve os recursos incluídos.
+ [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Define o SDK de plug-in de controle do código-fonte e descreve os recursos incluídos.

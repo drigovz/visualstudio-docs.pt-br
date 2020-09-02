@@ -15,52 +15,52 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538132"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs e IDs de comandos do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Os valores GUID e ID dos comandos incluídos no ambiente de desenvolvimento integrado (IDE) do Visual Studio são definidos em arquivos. VSCT que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [IDE-Defined comandos, Menus e grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+Os valores de GUID e ID dos comandos incluídos no IDE (ambiente de desenvolvimento integrado) do Visual Studio são definidos em arquivos. vsct que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
- Para obter mais informações sobre como trabalhar com objetos IDE que são definidos em arquivos. VSCT, consulte [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).
+ Para obter mais informações sobre como trabalhar com objetos IDE definidos em arquivos. vsct, consulte [estendendo menus e comandos](../../extensibility/extending-menus-and-commands.md).
 
-## <a name="finding-a-command-definition"></a>Localizando uma definição de comando
- Como o Visual Studio define mais de mil comandos, não é prático para listá-los tudo aqui. Em vez disso, siga estas etapas para localizar a definição de um comando.
+## <a name="finding-a-command-definition"></a>Encontrando uma definição de comando
+ Como o Visual Studio define mais de 1000 comandos, é impraticável listá-los aqui. Em vez disso, siga estas etapas para localizar a definição de um comando.
 
 #### <a name="to-locate-a-command-definition"></a>Para localizar uma definição de comando
 
-1. No Visual Studio, abra os arquivos a seguir na *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc\ pasta: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
+1. No Visual Studio, abra os seguintes arquivos no *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc\ pasta: SharedCmdDef. vsct, ShellCmdDef. vsct, VsDbgCmdUsed. vsct, Venusmenu. vsct.
 
-    A maioria dos comandos do Visual Studio são definidos em SharedCmdDef.vsct e ShellCmdDef.vsct. VsDbgCmdUsed.vsct define comandos que pertencem ao depurador e Venusmenu.vsct define comandos que são específicos para o desenvolvimento Web.
+    A maioria dos comandos do Visual Studio são definidos em SharedCmdDef. vsct e ShellCmdDef. vsct. VsDbgCmdUsed. vsct define os comandos que pertencem ao depurador, e Venusmenu. vsct define os comandos que são específicos do desenvolvimento para a Web.
 
-2. Se o comando é um item de menu, observe o texto exato do item de menu. Se o comando é um botão em uma barra de ferramentas, observe o texto de dica de ferramenta que aparece quando você pausa nela.
+2. Se o comando for um item de menu, observe o texto exato do item de menu. Se o comando for um botão em uma barra de ferramentas, observe o texto da dica de ferramenta que aparece quando você pausa nele.
 
-3. Pressione CTRL + F para abrir o **localizar** caixa de diálogo.
+3. Pressione CTRL + F para abrir a caixa de diálogo **Localizar** .
 
-4. No **localizar** , digite o texto que você anotou na etapa 2.
+4. Na caixa **Localizar** , digite o texto que você anotou na etapa 2.
 
-5. Verifique **todos os documentos abertos** é exibido na **examinar** caixa.
+5. Verifique se **todos os documentos abertos** são exibidos na caixa **examinar** .
 
-6. Clique no **Localizar próxima** botão até que o texto é selecionado na `<Strings>` seção de uma [elemento Button](../../extensibility/button-element.md).
+6. Clique no botão **Localizar próximo** até que o texto seja selecionado na `<Strings>` seção de um [elemento de botão](../../extensibility/button-element.md).
 
-    O `<Button>` elemento que o comando é exibido no é a definição de comando.
+    O `<Button>` elemento no qual o comando aparece é a definição do comando.
 
-   Depois de encontrar a definição de comando, você pode colocar uma cópia do comando em outro menu ou barra de ferramentas com a criação de um [elemento CommandPlacement](../../extensibility/commandplacement-element.md) que tem o mesmo `guid` e `id` valores como o comando. Para obter mais informações, consulte [criar grupos reutilizáveis de botões](../../extensibility/creating-reusable-groups-of-buttons.md).
+   Quando você encontrar a definição de comando, poderá colocar uma cópia do comando em outro menu ou barra de ferramentas criando um [elemento CommandPlacement](../../extensibility/commandplacement-element.md) que tenha o mesmo `guid` valor e os mesmos valores que `id` o comando. Para obter mais informações, consulte [criando grupos de botões reutilizáveis](../../extensibility/creating-reusable-groups-of-buttons.md).
 
 ### <a name="special-cases"></a>Casos especiais
- Nos casos a seguir, o texto de menu ou o texto de dica de ferramenta pode não corresponder exatamente o que está na definição de comando.
+ Nos casos a seguir, o texto do menu ou a dica de ferramenta pode não corresponder exatamente ao que está na definição de comando.
 
-- Itens de menu que incluem um caractere de sublinhado, como o **Print** comando as **arquivo** menu, em que o P está sublinhado.
+- Itens de menu que incluem um caractere sublinhado, como o comando **Imprimir** no menu **arquivo** , no qual o P é sublinhado.
 
-     Os caracteres que são precedidos pelo caractere '&' em nomes de item de menu são exibidos como sublinhado. No entanto, os arquivos. VSCT são gravados em XML, que usa o caractere '&' para indicar os caracteres especiais e requer um e comercial que deve ser exibido deve ser esclarecido como&amp;'. Portanto, em um arquivo. VSCT, o **Print** comando é exibido como '&amp;Print'.
+     Os caracteres precedidos pelo caractere ' & ' em nomes de itens de menu são exibidos como sublinhados. No entanto, os arquivos. vsct são gravados em XML, que usa o caractere ' & ' para indicar caracteres especiais e requer que um e comercial que seja exibido deva ser escrito como ' &amp; '. Portanto, em um arquivo. vsct, o comando **Print** é exibido como ' &amp; Print '.
 
-- Comandos que contêm texto dinâmico, como **salve** *nome do arquivo atual*e gerado dinamicamente os itens de menu, como os itens no **arquivos recentes** lista.
+- Comandos que têm texto dinâmico, como **salvar** o *nome de arquivo atual*e itens de menu gerados dinamicamente, como os itens na lista de **arquivos recentes** .
 
-     Não há nenhuma maneira confiável para pesquisar texto dinâmico. Em vez disso, localizar um grupo que hospeda o comando desejado por consultoria [GUIDs e IDs do Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs e IDs do Visual Studio barras de ferramentas](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e procure a ID do grupo. Se a definição de comando não tem o grupo como seu [elemento pai](../../extensibility/parent-element.md), procure SharedCmdPlace.vsct e ShellCmdPlace.vsct (ou VsDbgCmdPlace.vsct para comandos de depurador) um `<CommandPlacement>` que define o pai do elemento a comando. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct, ShellCmdPlace.vsct, estão na *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc\ pasta.
+     Não há uma maneira confiável de Pesquisar texto dinâmico. Em vez disso, localize um grupo que hospede o comando desejado por [GUIDs de consultoria e IDs de menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs do Visual Studio e IDs das barras de ferramentas do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e pesquise a ID desse grupo. Se a definição do comando não tiver o grupo como seu [elemento pai](../../extensibility/parent-element.md), pesquise SharedCmdPlace. vsct e ShellCmdPlace. vsct (ou VsDbgCmdPlace. vsct para comandos do depurador) para um `<CommandPlacement>` elemento que defina o pai do comando. SharedCmdPlace. vsct, ShellCmdPlace. vsct, andVsDbgCmdPlace. vsct estão na pasta *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc\.
 
-## <a name="see-also"></a>Consulte também
- [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) [tabela de comando do Visual Studio (. VSCT) arquivos](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [referência de esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Consulte Também
+ [MenuCommands versus OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) [do comando do Visual Studio (. Vsct) arquivos](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct referência de esquema XML](../../extensibility/vsct-xml-schema-reference.md)

@@ -12,35 +12,35 @@ ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: jillfra
 ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434313"
 ---
 # <a name="support-for-state-persistence"></a>Suporte para persistência de estado
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode manter o estado dos objetos comuns. Por exemplo, propriedades de solução e projeto são salvos e restauradas a partir de arquivos de projeto e solução. As configurações do usuário podem ser exportadas para e importadas de arquivos de configurações.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode manter o estado de objetos comuns. Por exemplo, as propriedades da solução e do projeto são salvas e restauradas de arquivos de solução e projeto. As configurações de usuário podem ser exportadas e importadas de arquivos de configurações.  
   
- Os VSPackages normalmente se baseiam no armazenamento local, no registro do sistema ou na pasta de dados do aplicativo para o usuário atual ou o computador. Valores que exigem uma pequena quantidade de espaço de armazenamento, como inteiros e cadeias de caracteres, normalmente são armazenadas no registro do sistema. Os valores que exigem muito espaço para armazenamento, como bitmaps, são salvos em um arquivo. Se o caminho do arquivo pode ser salvos no registro do sistema. O mecanismo de persistência deve ter permissão para acessar o armazenamento local.  
+ VSPackages normalmente dependem do armazenamento local, no registro do sistema ou na pasta de dados do aplicativo para o usuário ou computador atual. Os valores que exigem uma pequena quantidade de espaço para armazenamento, como inteiros e cadeias de caracteres, normalmente são armazenados no registro do sistema. Os valores que exigem muito espaço para armazenamento, como bitmaps, são salvos em um arquivo. O caminho do arquivo pode ser salvo no registro do sistema. O mecanismo de persistência deve ter permissão para acessar o armazenamento local.  
   
-## <a name="support-for-locating-local-storage"></a>Suporte para a localização de armazenamento Local  
- O <xref:Microsoft.VisualStudio.Shell.Package> classe oferece suporte para a localização de informações de estado na pasta do sistema do registro ou o aplicativo de dados para o usuário atual ou o computador.  
+## <a name="support-for-locating-local-storage"></a>Suporte para localização de armazenamento local  
+ A <xref:Microsoft.VisualStudio.Shell.Package> classe fornece suporte para localizar informações de estado no registro do sistema ou na pasta de dados do aplicativo para o usuário ou computador atual.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>  
- Retorna o caminho da raiz do registro do computador local para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], por exemplo, HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0Exp.  
+ Retorna o caminho da raiz do registro do computador local para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , por exemplo, HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp.  
   
- A raiz do Registro local é obtida a <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> service. Se isso não estiver disponível, ele é obtido do <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> atributo do VSPackage.  
+ A raiz do Registro local é obtida do <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> serviço. Se isso não estiver disponível, ele será obtido do <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> atributo do VSPackage.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>  
- Retorna o caminho do usuário atual (por computador) raiz do registro para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], por exemplo, HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp.  
+ Retorna o caminho da raiz do registro do usuário atual (por computador) para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , por exemplo, HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp.  
   
- A raiz do Registro local é obtida a <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> service. Se isso não estiver disponível, ele é obtido do atributo DefaultLocalRegistryRoot do VSPackage.  
+ A raiz do Registro local é obtida do <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> serviço. Se isso não estiver disponível, ele será obtido do atributo DefaultLocalRegistryRoot do VSPackage.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserDataPath%2A>  
- Retorna o caminho do diretório que serve como um repositório comum para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dados para o usuário móvel atual, por exemplo, C:\Documents and Settings\\*YourAccountName*\Application Data\Microsoft\ VisualStudio\8.0Exp.  
+ Retorna o caminho do diretório que serve como um repositório comum de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dados para o usuário móvel atual, por exemplo, C:\Documents and Settings \\ *YourAccountName*\Application Data\Microsoft\VisualStudio\8.0Exp.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserLocalDataPath%2A>  
- Retorna o caminho do diretório que serve como um repositório comum para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dados não roaming usuário atual, por exemplo, C:\Documents and Settings\\*YourAccountName*\Local Data\Microsoft\VisualStudio\8.0Exp.  
+ Retorna o caminho do diretório que serve como um repositório comum de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dados para o usuário não móvel atual, por exemplo, C:\Documents and Settings \\ *YourAccountName*\Local Settings\Application Data\Microsoft\VisualStudio\8.0Exp.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Estado de VSPackage](../misc/vspackage-state.md)

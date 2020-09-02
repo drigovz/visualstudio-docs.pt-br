@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428542"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
@@ -44,10 +44,10 @@ Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../incl
  Os tópicos desta seção fornecem detalhes adicionais sobre como usar esse recurso e que tipos de alterações não são permitidas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: Aplicar edições no modo de interrupção com Editar e Continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Como: aplicar edições no modo de interrupção com editar e continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Explica como aplicar edições do código no modo de Interrupção.  
   
- [Edições sem suporte em Editar e Continuar do Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
+ [Edições não suportadas em Editar e Continuar do Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
  Descreve quais tipos de edições não podem ser executadas em Editar e Continuar do [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)].  
   
 ## <a name="related-sections"></a>Seções relacionadas  
