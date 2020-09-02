@@ -1,5 +1,5 @@
 ---
-title: Quando o ponto de interrupção é a caixa de diálogo ocorrências | Microsoft Docs
+title: Caixa de diálogo quando o ponto de interrupção é atingido | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149415"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Caixa de diálogo Ponto de Interrupção Quando Visitado
@@ -33,7 +33,7 @@ ms.locfileid: "68149415"
 
 Com essa caixa de diálogo, você pode personalizar a ação que ocorre quando um ponto de interrupção é atingido.  
   
-## <a name="uielement-list"></a>Lista UIElement  
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário  
  **Imprimir uma mensagem**  
  Imprime uma mensagem, usando a sintaxe do DebuggerDisplay. Para obter mais informações, consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
@@ -42,6 +42,6 @@ Com essa caixa de diálogo, você pode personalizar a ação que ocorre quando u
  **Continuar a execução**  
  Esse controle só será habilitado quando **Imprimir uma mensagem** for selecionado. Com esse controle selecionado, você pode usar um ponto de interrupção como um tracepoint para rastrear a execução do programa, em vez de interrompê-lo quando o local for atingido.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)   
  [Usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

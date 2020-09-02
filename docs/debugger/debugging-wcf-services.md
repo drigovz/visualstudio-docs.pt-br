@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738071"
 ---
 # <a name="debugging-wcf-services"></a>Depurando serviços WCF
@@ -29,8 +29,8 @@ ms.locfileid: "72738071"
 
  [Como: entrar em serviços WCF](../debugger/how-to-step-into-wcf-services.md) Explica o suporte do depurador para depuração em um serviço WCF.
 
- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Descreve como depurar um serviço WCF que é executado fora do IIS ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o servidor de desenvolvimento.
+ [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Descreve como depurar um serviço WCF que é executado fora do IIS ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desenvolvimento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

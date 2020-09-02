@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153045"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
@@ -40,7 +40,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
       }
    ```
 
-1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **arquivo** > **Adicionar** > **novo projeto**.
+1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **arquivo**  >  **Adicionar**  >  **novo projeto**.
 
 1. Na caixa de diálogo Novo Projeto, localize um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar e selecione-o.
 
@@ -145,7 +145,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
    Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador** de testes na barra de menus superior.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Para abrir o Gerenciador de testes, escolha **testar** > o **Gerenciador de testes** do **Windows** > na barra de menus superior.
+   Para abrir o Gerenciador de testes, escolha **testar** o > **Windows** > **Gerenciador de testes** do Windows na barra de menus superior.
    ::: moniker-end
 
 1. Execute seus testes de unidade clicando em **Executar Tudo**.
@@ -243,7 +243,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de testes de unidade](create-unit-tests-menu.md)

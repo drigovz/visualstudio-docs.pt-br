@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662411"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
@@ -29,7 +29,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 ## <a name="general"></a>Geral
  `DTE.Properties("TextEditor", "General")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Booliano)|Se `True`, pressionar escape enquanto houver uma coleção fará com que o ponto de inserção seja movido para onde a ação que criou a seleção foi iniciada. `False` move o ponto de inserção para outra extremidade da seleção.|
 |DragNDropTextEditing|Get/Set (Booliano)|Determina se você pode arrastar uma região de texto selecionada de um local para outro no documento para copiar ou recortar/colar operações.|
@@ -48,7 +48,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 
  As opções do editor de `PlainText` afetam as configurações do editor quando os arquivos de texto são editados. Cada linguagem de programação e pacote do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tem suas próprias configurações específicas do **Editor de Texto**. Por exemplo, para exibir ou alterar as configurações de editor do [!INCLUDE[csprcs](../../includes/csprcs-md.md)], use `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Para as configurações de editor do **SQL Script**, use `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Booliano)|Determina se uma lista de membros disponível é exibida automaticamente quando um usuário digita um ponto depois de uma referência de variável.|
 |AutoListParams|Get/Set (Booliano)|Determina se uma descrição de uma lista de argumentos é exibida automaticamente quando o usuário digita um "(" depois de um nome de função.|
@@ -58,12 +58,12 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 |WordWrapGlyphs|Get/Set (Booliano)|Exibe um glifo no fim de uma linha; indica que a linha é quebrada para a próxima linha.|
 |EnableLeftClickForURLs|Get/Set (Booliano)|Determina se o editor sublinha URLs e permite que com um único clique no botão esquerdo do mouse seja possível pular para a URL no navegador da Web registrado pelo sistema.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina o estilo do recuo: Padrão, Inteligente ou Nenhum.|
-|TabSize|Get/Set (Longo)|Representa o número de espaços que é igual a uma tabulação. Definir um inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|
+|TabSize|Get/Set (Longo)|Representa o número de espaços que são iguais a uma tabulação. A configuração de um inteiro fora do intervalo de 1 a 60 (inclusivo) falha.|
 |InsertTabs|Get/Set (Booliano)|Se `True`, caracteres de tabulação serão usados no recuo.|
 |IndentSize|Get/Set (Longo)|Representa o número de espaços que é igual a um nível de recuo. Definir um valor inteiro fora do intervalo de 1 a 60 (inclusive) causa falhas.|
 |ShowLineNumbers|Get/Set (Booliano)|Determina se a exibição de um documento de editor de núcleo exibe números de linha ao longo da margem esquerda.|
 |ShowNavigationBar|Get/Set (Booliano)|Determina se as listas suspensas e os botões aparecem na parte superior das janelas do editor.|
 |CutCopyBlankLines|Get/Set (Booliano)|Recorta ou copia linhas em branco quando são selecionadas.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Controlando as configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinando os nomes dos itens de propriedade na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) página opções páginas de opções, propriedades do [nó de ambiente](../../ide/reference/options-page-environment-node-properties.md) [página opções, fontes e cores Propriedades do nó](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

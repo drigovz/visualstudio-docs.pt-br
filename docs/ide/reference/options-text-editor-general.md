@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472827"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo \> opções: Editor de texto geral
+# <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo opções: editor de texto \> geral
 
 Essa caixa de diálogo permite alterar as configurações globais do editor de texto e código do Visual Studio. Para exibir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e selecione **Geral**.
 
@@ -72,7 +72,7 @@ Com essa opção estiver selecionada, você poderá pressionar **Ctrl** e passar
 
 Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código.
 
-## <a name="display"></a>Exibição
+## <a name="display"></a>Monitor
 
 ### <a name="selection-margin"></a>Margem de seleção
 
@@ -94,9 +94,9 @@ Quando selecionado, exibe uma caixa cinza ao redor da linha de código na qual o
 
 Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código.
 
-### <a name="show-file-health-indicator"></a>Mostrar indicador de saúde do arquivo
+### <a name="show-file-health-indicator"></a>Mostrar indicador de integridade do arquivo
 
-Quando selecionado, uma barra de status do indicador de saúde do arquivo (erros, avisos), com opções de limpeza de código, será exibida no canto inferior esquerdo do editor.
+Quando selecionado, uma barra status (erros, avisos) do indicador de integridade do arquivo, com opções de limpeza de código, será exibida no canto inferior esquerdo do editor.
 
 ## <a name="see-also"></a>Confira também
 
@@ -104,5 +104,5 @@ Quando selecionado, uma barra de status do indicador de saúde do arquivo (erros
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personalizando o Editor](../how-to-change-text-case-in-the-editor.md)
+- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

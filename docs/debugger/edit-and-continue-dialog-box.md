@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737939"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Caixa de diálogo Editar e Continuar
@@ -29,6 +29,6 @@ ms.locfileid: "72737939"
 
  **Nunca mostrar esta caixa de diálogo novamente** Se você marcar essa caixa de seleção, **Editar e continuar** aplicarão alterações de código sem pedir permissão no futuro. Você pode ativar esse aviso novamente indo em **Opções** na caixa de diálogo, abrindo a pasta **Depuração**, clicando na página **Editar e Continuar** e selecionando **Chamado por comandos de depuração** e **Pergunte-me primeiro**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)

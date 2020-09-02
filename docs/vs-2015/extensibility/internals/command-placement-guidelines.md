@@ -13,50 +13,50 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d88a477403c98ff11c5f7303b55f5eb713b668c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195094"
 ---
 # <a name="command-placement-guidelines"></a>Diretrizes de posicionamento de comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Práticas recomendadas para comandos de posicionamento no ambiente de desenvolvimento integrado (IDE) do Visual Studio variam dependendo do tamanho do conjunto de comandos. Comandos são definidos e posicionados de acordo com as informações em arquivos. VSCT.  
+As práticas recomendadas para posicionamento de comandos no ambiente de desenvolvimento integrado (IDE) do Visual Studio variam de acordo com o tamanho do conjunto de comandos. Os comandos são definidos e posicionados de acordo com as informações em arquivos. vsct.  
   
 ## <a name="best-practices-for-all-command-sets"></a>Práticas recomendadas para todos os conjuntos de comandos  
  Para cada conjunto de comandos, siga estas diretrizes:  
   
-- Prepare um gráfico da estrutura de comando com antecedência. Identifique os comandos, caixas de combinação, grupos de comando e menus de atalho que serão usados em mais de um único local.  
+- Prepare um gráfico da estrutura de comandos com antecedência. Identifique os comandos, caixas de combinação, grupos de comandos e menus de atalho que serão usados em mais de um local.  
   
-- Comandos que aparecem no mesmo grupo devem estar relacionados.  
+- Os comandos que aparecem no mesmo grupo devem estar relacionados.  
   
-- Grupos que contêm apenas um comando são aceitáveis.  
+- Os grupos que contêm apenas um comando são aceitáveis.  
   
-- Pacotes não devem adicionar muitos dos comandos a menus existentes do Visual Studio. Em vez disso, eles devem criar menus ou submenus para hospedar os novos comandos.  
+- Os pacotes não devem adicionar muitos comandos aos menus existentes do Visual Studio. Em vez disso, eles devem criar menus ou submenus para hospedar os novos comandos.  
   
-- Quando você colocar um comando em um menu existente, nome de comando para que sua finalidade é clara e ela não será ser confundida com os comandos existentes.  
+- Quando você coloca um comando em um menu existente, nomeie o comando para que seu objetivo fique claro e não será confundido com os comandos existentes.  
   
-## <a name="best-practices-for-small-command-sets"></a>Práticas recomendadas para conjuntos de comandos pequeno  
+## <a name="best-practices-for-small-command-sets"></a>Práticas recomendadas para conjuntos de comandos pequenos  
  Se você estiver desenvolvendo um VSPackage que tenha apenas alguns comandos, também siga estas diretrizes:  
   
 - Quando possível, use o [elemento pai](../../extensibility/parent-element.md) de um comando, caixa de combinação, grupo ou menu filho para colocá-lo no grupo apropriado.  
   
-- Atribua grupos aos menus exibidos pelo VSPackage.  
+- Atribua esses grupos aos menus exibidos pelo VSPackage.  
   
-- O pai de um menu filho ou um comando deve ser um [elemento Group](../../extensibility/group-element.md). Atribuir comandos e menus filho aos grupos e, em seguida, atribua os grupos aos menus pai.  
+- O pai de um menu filho ou um comando deve ser um [elemento de grupo](../../extensibility/group-element.md). Atribua comandos e menus filho a grupos e, em seguida, atribua os grupos aos menus pai.  
   
-- Você pode colocar um comando em grupos adicionais com a adição de um [elemento CommandPlacements](../../extensibility/commandplacements-element.md) seção após a definição do comando e, em seguida, adicionando ao `CommandPlacements Element` um [elemento CommandPlacement](../../extensibility/commandplacement-element.md) para cada grupo adicional.  
+- Você pode colocar um comando em grupos adicionais adicionando uma seção de [elemento CommandPlacements](../../extensibility/commandplacements-element.md) após a definição do comando e, em seguida, adicionando ao `CommandPlacements Element` [elemento CommandPlacement](../../extensibility/commandplacement-element.md) para cada grupo adicional.  
   
-## <a name="best-practices-for-large-command-sets"></a>Práticas recomendadas para conjuntos grandes de comando  
- Se o VSPackage terá muitos comandos que serão exibido em vários contextos, também siga estas diretrizes:  
+## <a name="best-practices-for-large-command-sets"></a>Práticas recomendadas para conjuntos de comandos grandes  
+ Se seu VSPackage terá muitos comandos que aparecerão em vários contextos, também siga estas diretrizes:  
   
-- Verifique os menus, grupos e comandos de gerenciamento automaticamente do domínio pai. Ou seja, não atribua um `Parent Element` na definição do item.  
+- Crie menus, grupos e comandos de auto-Parent. Ou seja, não atribua um `Parent Element` na definição do item.  
   
-- Use `CommandPlacement Element` entradas na `CommandPlacements Element` seção colocar menus, grupos e comandos em seus menus pai e grupos.  
+- Use `CommandPlacement Element` entradas na `CommandPlacements Element` seção para colocar menus, grupos e comandos em seus menus e grupos pai.  
   
-- No `CommandPlacements` seção, as entradas que preenchem um determinado menu ou grupo deve ser adjacente um ao outro. Isso auxilia na legibilidade e torna o `Priority` classificações mais fácil de determinar.  
+- Na `CommandPlacements` seção, as entradas que populam um determinado menu ou grupo devem ser adjacentes umas às outras. Isso ajuda a legibilidade e torna as `Priority` classificações mais fáceis de determinar.  
   
-## <a name="see-also"></a>Consulte também  
- [Como os VSPackages adicionam elementos da Interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Arquivos .Vsct (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

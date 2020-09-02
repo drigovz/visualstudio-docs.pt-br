@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87454587"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilar código TypeScript (ASP.NET Core)
@@ -75,7 +75,7 @@ Se o Visual Studio estiver instalado, o node.exe agrupado com ele será automati
 
    A configuração anterior fornece apenas uma introdução básica à configuração do TypeScript. Para obter informações sobre outras opções, consulte [tsconfig.jsem](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-### <a name="build-the-application"></a>Criar o aplicativo
+### <a name="build-the-application"></a>Compilar o aplicativo
 
 1. Adicione arquivos TypeScript (*. TS*) ou typescript JSX (*. TSX*) ao seu projeto e, em seguida, adicione o código TypeScript. Para obter um exemplo simples de TypeScript, use o seguinte:
 
@@ -110,7 +110,7 @@ Se você encontrar problemas em que o Visual Studio está usando uma versão do 
 
 ### <a name="nuget-package-structure-details"></a>Detalhes da estrutura do pacote NuGet
 
-`Microsoft.TypeScript.MSBuild.nupkg`contém duas pastas principais:
+`Microsoft.TypeScript.MSBuild.nupkg` contém duas pastas principais:
 
 - pasta de *Build*
 

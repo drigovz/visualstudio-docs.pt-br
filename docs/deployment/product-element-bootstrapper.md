@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produto&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: '&lt;&gt;Elemento Product (Bootstrapper) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747446"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produto&gt; elemento (bootstrapper)
-O `Product` é o elemento XML de nível superior dentro de um arquivo de produto.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (Bootstrapper)
+O `Product` elemento é o elemento XML de nível superior dentro de um arquivo de produto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -145,7 +145,7 @@ ProductCode
 |`ProductCode`|Um identificador exclusivo para o produto.|
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir mostra um arquivo completo de produtos para instalar o .NET Framework.
+ O exemplo de código a seguir mostra um arquivo de produto completo para instalar o .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -249,5 +249,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

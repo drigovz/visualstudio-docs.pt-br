@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703781"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Solução de problemas com erros de direcionamento do .NET Framework
@@ -36,7 +36,7 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Você novamente direcionou um projeto para uma versão diferente do .NET Framework  
  Se você alterar a versão de destino do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para seu aplicativo, o Visual Studio altera algumas das referências, mas talvez você precise atualizar algumas referências manualmente. Por exemplo, um dos erros mencionados anteriormente pode ocorrer se você alterar um aplicativo de destino de [!INCLUDE[net_v35SP1_long](../includes/net-v35sp1-long-md.md)] e que o aplicativo tem recursos ou configurações que se baseiam no perfil de cliente para o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)].  
   
- Para contornar as configurações do aplicativo, abra o **Solution Explorer**, escolha **Mostrar Todos os Arquivos** e edite o arquivo app.config no editor de XML do Visual Studio. Altere a versão nas configurações para coincidir com a versão apropriada do .NET Framework. Por exemplo, você pode alterar a configuração de versão de 4.0.0.0 para 2.0.0.0. Da mesma forma, para um aplicativo que tenha adicionado recursos, abra o **Solution Explorer**, escolha o botão **Mostrar Todos os Arquivos**, expanda **Meu Projeto** (Visual Basic) ou **Propriedades** (C#) e, em seguida, edite o arquivo Resources.resx no editor XML do Visual Studio. Altere a configuração de versão de 4.0.0.0 para 2.0.0.0.  
+ Para contornar as configurações do aplicativo, abra o **Gerenciador de Soluções**, escolha **Mostrar Todos os Arquivos** e edite o arquivo app.config no editor de XML do Visual Studio. Altere a versão nas configurações para coincidir com a versão apropriada do .NET Framework. Por exemplo, você pode alterar a configuração de versão de 4.0.0.0 para 2.0.0.0. Da mesma forma, para um aplicativo que tenha adicionado recursos, abra o **Gerenciador de Soluções**, escolha o botão **Mostrar Todos os Arquivos**, expanda **Meu Projeto** (Visual Basic) ou **Propriedades** (C#) e, em seguida, edite o arquivo Resources.resx no editor XML do Visual Studio. Altere a configuração de versão de 4.0.0.0 para 2.0.0.0.  
   
  Se seu aplicativo tiver recursos como ícones ou bitmaps ou configurações, como cadeias de conexão de dados, você também pode resolver o erro, removendo todos os itens na página **Configurações** do **Project Designer** e, em seguida, adicionando novamente as configurações necessárias.  
   
@@ -56,8 +56,8 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 > [!NOTE]
 > Depois de fechar e reabrir o projeto, você também deve recompilá-lo para garantir que todas as referências resolver corretamente.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Uma versão do .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
- [Direcionamento para uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: direcionar uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [.NET Framework perfil do cliente](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [Direcionando uma versão de .NET Framework específica](../ide/targeting-a-specific-dotnet-framework-version.md)   
+ [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)

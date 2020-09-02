@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72736155"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
@@ -60,5 +60,5 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 ## <a name="example"></a>Exemplo
  Essa variante compacta as texturas em blocos no tempo de execução, antes da chamada de `CreateTexture2D`. Essa abordagem não é recomendada para códigos de produção porque as texturas não compactadas consomem mais espaço em disco. Além disso, a etapa adicional necessária pode aumentar consideravelmente o tempo de carregamento no aplicativo porque a compactação em blocos requer muitos recursos computacionais para realizar a codificação. Em vez disso, recomendamos que você faça a compactação das texturas quando não estiver conectado, usando um editor ou processador de imagens que faça parte do pipeline da sua compilação. Essas abordagens diminuem o espaço necessário em disco, eliminam a sobrecarga do tempo de execução no aplicativo e proporcionam mais tempo de processamento para que as imagens tenham a melhor qualidade possível.
 
-## <a name="see-also"></a>Consulte também
-- [Variante de metade/um quarto nas dimensões de textura](half-quarter-texture-dimensions-variant.md)
+## <a name="see-also"></a>Confira também
+- [Variante de dimensões de textura de semestre/trimestre](half-quarter-texture-dimensions-variant.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca0b6b7e9753b346b8a995ffd8ddcb6cc53fe7c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697524"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface fornece vários métodos para acessar o servidor de uma porta e instalações de notificação.  
+Essa interface fornece vários métodos para acessar os recursos de notificação e servidor de uma porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,31 +30,31 @@ Essa interface fornece vários métodos para acessar o servidor de uma porta e i
 IDebugDefaultPort2 : IDebugPort2  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Visual Studio implementa essa interface para representar a porta de depuração para acessar os programas. Um fornecedor de porta personalizado também pode implementar essa interface se ele trata a depuração remota.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O Visual Studio implementa essa interface para representar a porta de depuração para acessar programas. Um fornecedor de porta personalizado também pode implementar essa interface se tratar da depuração remota.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Um argumento para métodos na [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface fornece essa interface. Chamando [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em um [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface também pode obter essa interface.  
+ Um argumento para métodos na interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) fornece essa interface. Chamar [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em uma interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) também pode obter essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- Além dos métodos definidos no [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), essa interface implementa os métodos a seguir:  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ Além dos métodos definidos no [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), essa interface implementa os seguintes métodos:  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Obtém a interface de notificação de porta desta porta.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtém a interface para o servidor que hospeda essa porta.|  
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se essa porta está em execução no computador local.|  
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se esta porta está em execução no computador local.|  
   
 ## <a name="remarks"></a>Comentários  
- O nome "`IDebugDefaultPort2`" é um pouco de um nome inapropriado, pois ele não representa uma porta padrão. Ele poderia ser chamado "IDebugPort3".  
+ O nome " `IDebugDefaultPort2` " é um pouco de um nome, pois não representa uma porta padrão. Ele poderia ser chamado de "IDebugPort3".  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072535"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
@@ -27,7 +27,7 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
 
 - Usar itens de build.
 
-Você pode executar o MSBuild no Visual Studio ou na **Janela de Comando**. Nestas instruções passo a passo, você criará um arquivo de projeto do MSBuild usando o Visual Studio. Você editará o arquivo de projeto no Visual Studio e usará a **janela Comando** para compilar o projeto e examinar os resultados.
+Você pode executar o MSBuild no Visual Studio ou na **janela de comando**. Nestas instruções passo a passo, você criará um arquivo de projeto do MSBuild usando o Visual Studio. Você editará o arquivo de projeto no Visual Studio e usará a **janela Comando** para compilar o projeto e examinar os resultados.
 
 ## <a name="create-an-msbuild-project"></a>Criar um projeto do MSBuild
 
@@ -43,7 +43,7 @@ Você pode executar o MSBuild no Visual Studio ou na **Janela de Comando**. Nest
     Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\*. Aceite os padrões para **Solução**, **Nome da solução** (**BuildApp**) e **Estrutura**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** > **Windows Desktop** e, em seguida, escolha **Aplicativo do Windows Forms (.NET Framework)**. Em seguida, escolha **OK**.
+    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** > **Windows Desktop** e, em seguida, escolha **Aplicativo do Windows Forms (.NET Framework)**. Em seguida, escolha **OK**.
 
     Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\*. Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (**BuildApp**).
     ::: moniker-end
@@ -56,16 +56,16 @@ Você pode executar o MSBuild no Visual Studio ou na **Janela de Comando**. Nest
 
 **Para examinar o arquivo de projeto**
 
-1. No **Solution Explorer,** clique no nó de projeto **BuildApp**.
+1. Em **Gerenciador de soluções**, clique no nó do projeto **BuildApp**.
 
-1. No navegador **Propriedades,** observe que a propriedade **Project File** é *BuildApp.csproj*. Todos os arquivos do projeto são nomeados com o sufixo *proj*. Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria *BuildApp.vbproj*.
+1. No navegador de **Propriedades** , observe que a propriedade **arquivo de projeto** é *BuildApp. csproj*. Todos os arquivos de projeto são nomeados com o sufixo *proj*. Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria *BuildApp.vbproj*.
 
 1. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar BuildApp.csproj**. 
 
      O arquivo de projeto aparecerá no editor de códigos.
 
 >[!NOTE]
-> Para alguns tipos de projeto, como C++, você precisa descarregar o projeto (clique com o botão direito do mouse no arquivo do projeto e escolha **descarregar o projeto**) antes de poder abrir e editar o arquivo do projeto.
+> Para alguns tipos de projeto, como C++, você precisa descarregar o projeto (clique com o botão direito do mouse no arquivo de projeto e escolher **descarregar projeto**) antes de poder abrir e editar o arquivo de projeto.
 
 ## <a name="targets-and-tasks"></a>Destinos e tarefas
 
@@ -76,20 +76,20 @@ Os arquivos de projeto são arquivos formatados em XML com o nó raiz [Project](
 <Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-Projetos mais novos do .NET Core (estilo `Sdk` SDK) têm um atributo.
+Projetos mais recentes do .NET Core (estilo SDK) têm um `Sdk` atributo.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 ```
 
-Se o projeto não for um projeto no estilo SDK, você deve especificar o namespace xmlns no elemento Projeto. Se o `ToolsVersion` estiver presente em um novo projeto, ele deverá ser o "15.0".
+Se o projeto não for um projeto no estilo SDK, você deverá especificar o namespace xmlns no elemento Project. Se o `ToolsVersion` estiver presente em um novo projeto, ele deverá ser o "15.0".
 
 O trabalho de compilar um aplicativo é feito com os elementos [Target](../msbuild/target-element-msbuild.md) e [Task](../msbuild/task-element-msbuild.md).
 
 - Uma tarefa é a menor unidade de trabalho ou, em outras palavras, é o "átomo" de um build. As tarefas são componentes executáveis independentes que podem ter entradas e saídas. Não existem tarefas referenciadas ou definidas no arquivo de projeto no momento. Você adicionará tarefas ao arquivo de projeto nas seções a seguir. Para obter mais informações, consulte o tópico [Tarefas](../msbuild/msbuild-tasks.md).
 
 - Um destino é uma sequência nomeada de tarefas. Para obter mais informações, consulte o tópico [Destinos](../msbuild/msbuild-targets.md).
-- [pode ser uma seqüência nomeada de tarefas, mas criticamente, representa algo a ser construído ou feito, por isso deve ser definido de uma forma orientada a objetivos]
+- [pode ser uma sequência nomeada de tarefas, mas, de forma crítica, representa algo a ser criado ou concluído, portanto, deve ser definido de uma maneira orientada a objetivos]
 
 O destino padrão não está definido no arquivo de projeto. Em vez disso, ele será especificado nos projetos importados. O elemento [Import](../msbuild/import-element-msbuild.md) especifica projetos importados. Por exemplo, em um projeto C#, o destino padrão é importado do arquivo *Microsoft.CSharp.targets*.
 
@@ -99,7 +99,7 @@ O destino padrão não está definido no arquivo de projeto. Em vez disso, ele s
 
 Os arquivos importados são efetivamente inseridos no arquivo de projeto sempre que são referenciados.
 
-Em projcts no estilo SDK, você não vê esse elemento de importação, uma vez que o atributo SDK faz com que este arquivo seja importado implicitamente.
+No projcts do estilo SDK, você não vê esse elemento de importação, pois o atributo SDK faz com que esse arquivo seja importado implicitamente.
 
 O MSBuild controla os destinos de um build e garante que cada destino seja compilado não mais de uma vez.
 
@@ -128,30 +128,30 @@ O MSBuild controla os destinos de um build e garante que cada destino seja compi
 
 3. Salve o arquivo de projeto.
 
-A tarefa Message é uma das muitas tarefas fornecidas com o MSBuild. Para obter uma lista completa de tarefas e informações de uso disponíveis, consulte [Referência tarefa](../msbuild/msbuild-task-reference.md).
+A tarefa Message é uma das muitas tarefas fornecidas com o MSBuild. Para obter uma lista completa de tarefas disponíveis e informações de uso, consulte [referência de tarefas](../msbuild/msbuild-task-reference.md).
 
-A tarefa Mensagem pega o valor da seqüência do atributo Texto como entrada e o exibe no dispositivo de saída (ou grava-o em um ou mais logs, se aplicável). O destino HelloWorld executa a tarefa Message duas vezes: primeiro para exibir "Hello" e, em seguida, para exibir "World".
+A tarefa Message usa o valor da cadeia de caracteres do atributo Text como entrada e o exibe no dispositivo de saída (ou grava-o em um ou mais logs, se aplicável). O destino HelloWorld executa a tarefa Message duas vezes: primeiro para exibir "Hello" e, em seguida, para exibir "World".
 
 ## <a name="build-the-target"></a>Compilar o destino
 
-Se você tentar construir este projeto a partir do Visual Studio, ele não construirá o alvo definido. Isso porque o Visual Studio escolhe o destino padrão, que ainda é o do arquivo *importado .targets.*
+Se você tentar compilar este projeto no Visual Studio, ele não criará o destino que você definiu. Isso ocorre porque o Visual Studio escolhe o destino padrão, que ainda é aquele no arquivo *. targets* importado.
 
-Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio para compilar o destino HelloWorld definido acima. Use o interruptor de linha de comando -target ou -t para selecionar o alvo.
+Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio para compilar o destino HelloWorld definido acima. Use a opção de linha de comando-Target ou-t para selecionar o destino.
 
 > [!NOTE]
 > Nós nos referiremos ao **Prompt de Comando do Desenvolvedor** como a **janela Comando** nas seções abaixo.
 
-**Para construir o alvo:**
+**Para compilar o destino:**
 
 1. Abra a **janela de comando**.
 
    (Windows 10) Na caixa de pesquisa na barra de tarefas, comece a digitar o nome da ferramenta, como `dev` ou `developer command prompt`. Isso abre uma lista de aplicativos instalados que correspondem ao seu padrão de pesquisa.
 
-   Caso você precise encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta *<pasta de instalação do visual studio\>\<versão>\Common7\Tools*.
+   Se você precisar encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta * \> \<version> \Common7\Tools<de instalação do VisualStudio* .
 
-2. A partir da janela de comando, navegue até a pasta que contém o arquivo do projeto, neste caso, *D:\BuildApp\BuildApp*.
+2. Na janela de comando, navegue até a pasta que contém o arquivo de projeto, neste caso, *D:\BuildApp\BuildApp*.
 
-3. Executar msbuild com `-t:HelloWorld`o interruptor de comando . Com isso, o destino HelloWorld é selecionado e compilado:
+3. Execute o MSBuild com a opção de comando `-t:HelloWorld` . Com isso, o destino HelloWorld é selecionado e compilado:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -190,7 +190,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
 ```
 
- define a propriedade chamada TargetFrameworkVersion, dando-lhe o valor de string "v4.5".
+ define a propriedade chamada TargetFrameworkVersion, dando a ela o valor de cadeia de caracteres "v 4.5".
 
  As propriedades de build podem ser redefinidas a qualquer momento. Se
 
@@ -202,7 +202,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 
 ## <a name="examine-a-property-value"></a>Examinar um valor da propriedade
 
- Para obter o valor de um imóvel, use `PropertyName` a seguinte sintaxe, onde está o nome do imóvel:
+ Para obter o valor de uma propriedade, use a seguinte sintaxe, em que `PropertyName` é o nome da propriedade:
 
 ```xml
 $(PropertyName)
@@ -250,7 +250,7 @@ Use essa sintaxe para examinar algumas das propriedades no arquivo de projeto.
 
 ### <a name="conditional-properties"></a>Propriedades condicionais
 
-Muitas propriedades `Configuration` como são definidas condicionalmente, ou seja, o atributo `Condition` aparece no elemento de propriedade. As propriedades condicionais serão definidas ou redefinidas somente se a condição for avaliada como "true". Observe que as propriedades indefinidas recebem o valor padrão de uma cadeia de caracteres vazia. Por exemplo,
+Muitas propriedades como `Configuration` são definidas condicionalmente, ou seja, o `Condition` atributo é exibido no elemento Property. As propriedades condicionais serão definidas ou redefinidas somente se a condição for avaliada como "true". Observe que as propriedades indefinidas recebem o valor padrão de uma cadeia de caracteres vazia. Por exemplo,
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -290,11 +290,11 @@ O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".
 
 ## <a name="special-characters"></a>Caracteres especiais
 
-Determinados caracteres têm significado especial em arquivos de projeto do MSBuild. O ponto e vírgula (;) e o asterisco (*) são exemplos desses caracteres. Para usar esses caracteres especiais como literais em um arquivo de projeto, eles precisam ser especificados com a sintaxe %\<xx>, em que \<xx> representa o valor hexadecimal ASCII do caractere.
+Determinados caracteres têm significado especial em arquivos de projeto do MSBuild. O ponto e vírgula (;) e o asterisco (*) são exemplos desses caracteres. Para usar esses caracteres especiais como literais em um arquivo de projeto, eles devem ser especificados usando a sintaxe% \<xx> , em que \<xx> representa o valor hexadecimal ASCII do caractere.
 
 Altere a tarefa Message para mostrar o valor da propriedade Configuration com caracteres especiais para torná-la mais legível.
 
-**Para usar caracteres especiais na tarefa Mensagem:**
+**Para usar caracteres especiais na tarefa de mensagem:**
 
 1. No editor de códigos, substitua ambas as tarefas Message por esta linha:
 
@@ -331,7 +331,7 @@ Todos os itens são elementos filho dos elementos ItemGroup. O nome do item é o
 </ItemGroup>
 ```
 
-define um grupo de itens que contém dois itens. O tipo de item Compile tem dois valores: *Program.cs* e *Propriedades\AssemblyInfo.cs*.
+define um grupo de itens que contém dois itens. O tipo de item compile tem dois valores: *Program.cs* e *Properties\AssemblyInfo.cs*.
 
 O código a seguir cria o mesmo tipo de item declarando os dois arquivos em um atributo Include, separados por ponto e vírgula.
 
@@ -344,7 +344,7 @@ O código a seguir cria o mesmo tipo de item declarando os dois arquivos em um a
 Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 > [!NOTE]
-> Os caminhos do arquivo são relativos à pasta que contém o arquivo do projeto MSBuild, mesmo que o arquivo do projeto seja um arquivo de projeto importado. Há algumas exceções para isso, como ao usar elementos [Importação](import-element-msbuild.md) e [UsingTask.](usingtask-element-msbuild.md)
+> Os caminhos de arquivo são relativos à pasta que contém o arquivo de projeto do MSBuild, mesmo que o arquivo de projeto seja um arquivo de projeto importado. Há algumas exceções para isso, como ao usar elementos [Import](import-element-msbuild.md) e [UsingTask](usingtask-element-msbuild.md) .
 
 ## <a name="examine-item-type-values"></a>Examinar os valores de tipo de item
 
@@ -425,13 +425,13 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 <Photos Include="images\*.jpeg" />
 ```
 
- adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta *imagens* ao tipo de item Fotos, enquanto
+ Adiciona todos os arquivos com a extensão de arquivo *. jpeg* na pasta *imagens* ao tipo de item fotos, enquanto
 
 ```xml
 <Photos Include="images\**\*.jpeg" />
 ```
 
- adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta *imagens,* e todas as suas subpastas, ao tipo de item Fotos. Para mais exemplos, [veja Como: Selecione os arquivos a serem construídos](../msbuild/how-to-select-the-files-to-build.md).
+ Adiciona todos os arquivos com a extensão de arquivo *. jpeg* na pasta *imagens* e todas as suas subpastas, ao tipo de item fotos. Para obter mais exemplos, consulte [como: selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
 
  Observe que, conforme os itens são declarados, eles são adicionados ao tipo de item. Por exemplo,
 
@@ -452,7 +452,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- adiciona todos os arquivos com a extensão de arquivo *.cs* ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres *Designer*. Para mais exemplos, [consulte Como: Excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md).
+ adiciona todos os arquivos com a extensão de arquivo *.cs* ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres *Designer*. Para obter mais exemplos, consulte [como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md).
 
 O atributo Exclude afeta somente os itens adicionados pelo atributo Include no elemento do item que contém ambos. Por exemplo,
 
@@ -542,7 +542,7 @@ Observe que "Compile.DependentUpon" aparece várias vezes. O uso de metadados co
 
 ### <a name="well-known-metadata"></a>Metadados conhecidos
 
- Sempre que um item é adicionado a uma lista de itens, esse item recebe alguns metadados conhecidos. Por exemplo, %(Filename) retorna o nome de arquivo de qualquer item. Para obter uma lista completa de metadados bem conhecidos, consulte [metadados de itens bem conhecidos](../msbuild/msbuild-well-known-item-metadata.md).
+ Sempre que um item é adicionado a uma lista de itens, esse item recebe alguns metadados conhecidos. Por exemplo, %(Filename) retorna o nome de arquivo de qualquer item. Para obter uma lista completa de metadados bem conhecidos, consulte [metadados de item conhecido](../msbuild/msbuild-well-known-item-metadata.md).
 
 **Para examinar metadados bem conhecidos:**
 
@@ -609,7 +609,7 @@ Observe que os metadados expressados nesta sintaxe não causam o envio em lote.
 
 ## <a name="next-steps"></a>Próximas etapas
 
- Para saber como criar um arquivo de projeto simples uma etapa de cada vez, experimente o [Passo a Passo: Criando um arquivo de projeto MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Para saber como criar um arquivo de projeto simples uma etapa de cada vez, experimente o [passo a passos: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Confira também
 

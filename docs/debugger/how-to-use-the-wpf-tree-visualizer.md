@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e210d41541ef2fe0f7f8da149c23dc17645e44f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348490"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Como usar o Visualizador de Árvore WPF
@@ -63,7 +63,7 @@ Você pode usar o visualizador de árvore do WPF para explorar a árvore visual 
 
 - Clique no ícone **Fechar** no canto superior direito da caixa de diálogo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Árvores no WPF](/dotnet/framework/wpf/advanced/trees-in-wpf)
 - [Visão geral das propriedades de dependência](/dotnet/framework/wpf/advanced/dependency-properties-overview)

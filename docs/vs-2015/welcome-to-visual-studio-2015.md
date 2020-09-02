@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543709"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
@@ -38,7 +38,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 
  É possível instalar o Visual Studio 2015 baixando-o em [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/). Para saber mais sobre o processo de instalação, consulte [instalar o Visual Studio 2015](./install/install-visual-studio-2015.md).
 
-## <a name="extend-visual-studio"></a>Estenda o Visual Studio
+## <a name="extend-visual-studio"></a>Estender o Visual Studio
  Adicione sua própria extensão do Visual Studio para incluir uma ferramenta ou script que você normalmente usa durante a codificação. Você pode criar janelas de ferramentas e itens de menu personalizados para integrar suas próprias ferramentas ao IDE do Visual Studio. Você pode estender o editor do Visual Studio para analisar e corrigir código ou adicionar um novo tipo de projeto para incluir tudo o que você precisa.
 
  Para encontrar a versão mais recente das Ferramentas de Extensibilidade do Visual Studio (SDK do VS), confira [Visual Studio SDK](./extensibility/visual-studio-sdk.md) (SDK do Visual Studio).
@@ -81,7 +81,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 ### <a name="check-in-your-code"></a>Faça check-in do código
  Se você trabalha em uma equipe, você precisa compartilhar as versões mais recentes do código para que todos da equipe usem a mesma base de código. O Visual Studio integra-se perfeitamente ao Visual Studio Team Services ou ao Team Foundation Server para fornecer controle de versão com o Git ou o TFVC (Controle de Versão do Team Foundation). Use o Visual Studio Team Services para armazenar seu código na nuvem sem a manutenção de um servidor local. Use o Team Foundation Server se você quiser ter um servidor local. Sempre que você cria um projeto de código, você tem a opção de adicioná-lo ao controle de versão. Para saber mais sobre qual sistema de controle de versão é melhor para suas necessidades, consulte [escolhendo o controle de versão correto para seu projeto](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops).
 
-### <a name="build-your-app"></a>Criar seu aplicativo
+### <a name="build-your-app"></a>Compilar o aplicativo
  Você pode [compilar seu aplicativo localmente](./ide/compiling-and-building-in-visual-studio.md) e verificar se ele funciona de maneira correta. Em seguida, use as [ferramentas de depuração](./debugger/debugging-in-visual-studio.md) para corrigir os problemas com o aplicativo. Ou você pode compilar projetos em servidores de builds compartilhados ou na nuvem. Automatize o processo do build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito.
 
 ### <a name="test-your-app"></a>Testar seu aplicativo
@@ -118,7 +118,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 
 - [Portar, migrar e atualizar projetos do Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
-- [IDE do Visual Studio](./ide/visual-studio-ide.md)
+- [Visual Studio IDE](./ide/visual-studio-ide.md)
 
 - [Extensibilidade no Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 

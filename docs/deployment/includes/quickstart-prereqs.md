@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70197092"
 ---
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -23,7 +23,7 @@ ms.locfileid: "70197092"
 ::: moniker-end
 
 * Um projeto ASP.NET, ASP.NET Core, Python ou Node.js. Se você ainda não tiver um projeto, selecione uma opção abaixo:
-  * ASP.NET Core: Siga o [Quickstart: Use o Visual Studio para criar seu primeiro aplicativo web ASP.NET Core](../../ide/quickstart-aspnet-core.md), ou use **File** > **New Project**, selecione Visual **C#** > **.NET Core,** e selecione **ASP.NET Aplicativo Web Central**. Quando solicitado, selecione o modelo **aplicativo Web (Model-View-Controller)**, verifique se **Sem autenticação** está selecionado e, em seguida, selecione **OK**.
+  * ASP.NET Core: Siga [o início rápido: Use o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core](../../ide/quickstart-aspnet-core.md)ou use **arquivo**  >  **novo projeto**, selecione **Visual C#**  >  **.NET Core**e, em seguida, selecione **ASP.NET Core aplicativo Web**. Quando solicitado, selecione o modelo **aplicativo Web (Model-View-Controller)**, verifique se **Sem autenticação** está selecionado e, em seguida, selecione **OK**.
   * Python: siga [Início Rápido: Criar seu primeiro aplicativo Web Python usando o Visual Studio](../../ide/quickstart-python.md) ou use **Arquivo** > **Novo projeto**, selecione **Python**, e, em seguida, **Projeto Web do Flask**.
   * Node.js: siga [Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js](../../ide/quickstart-nodejs.md) ou use **Arquivo** > **Novo projeto**, selecione **JavaScript** e, em seguida, selecione **Aplicativo Web do Node.js em branco**.
 

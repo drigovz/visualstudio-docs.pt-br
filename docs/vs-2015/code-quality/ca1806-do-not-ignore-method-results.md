@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543865"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Não ignorar resultados do método
@@ -52,7 +52,7 @@ ms.locfileid: "85543865"
 
  Se o método A chama o método B, mas não usa a nova instância de cadeia de caracteres que o método B retorna. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.
 
- -ou-
+ - ou -
 
  Se o método A chama o método B, mas não usa o HRESULT ou o código de erro retornado pelo método. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passe-o como um argumento para outro método.
 

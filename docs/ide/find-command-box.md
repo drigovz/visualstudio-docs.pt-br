@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591522"
 ---
 # <a name="findcommand-box"></a>Caixa Localizar/Comando
 
 É possível pesquisar texto e executar comandos do Visual Studio usando a caixa **Localizar/Comando**. A caixa **Localizar/Comando** ainda está disponível como um controle de barra de ferramentas, mas não fica mais visível por padrão. Você pode exibir a caixa **Localizar/Comando** escolhendo **Adicionar ou Remover Botões** na barra de ferramentas **Padrão** e escolhendo **Localizar**.
 
-Para executar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] um comando, prefácio-o com um sinal maior do que (**>**) .
+Para executar um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comando, preceda-o com um sinal de maior que ( **>** ).
 
 A caixa **Localizar/Comando** retém os últimos 20 itens inseridos e os exibe em uma lista suspensa. É possível navegar pela lista escolhendo as **teclas de direção**.
 
@@ -34,7 +34,7 @@ Por padrão, quando você especifica um texto na caixa **Localizar/Comando** e p
 
 ## <a name="entering-commands"></a>Inserindo comandos
 
-Para usar a caixa **Localizar/Comando** para emitir um único comando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou alias, em vez de pesquisar texto, preceda o comando com um símbolo de maior que (**>**). Por exemplo: 
+Para usar a caixa **Localizar/Comando** para emitir um único comando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou alias, em vez de pesquisar texto, preceda o comando com um símbolo de maior que (**>**). Por exemplo:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ Como alternativa, você também pode usar a janela **Comando** para inserir e ex
 
 ## <a name="escape-characters"></a>Caracteres de escape
 
-Um personagem**^** caret ( ) em um comando significa que o personagem imediatamente seguindo-o é interpretado literalmente, em vez de como um personagem de controle. Isso pode ser usado para inserir aspas retas (**"**), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo: 
+Um caractere de acento circunflexo ( **^** ) em um comando significa que o caractere imediatamente após ele é interpretado literalmente, em vez de um caractere de controle. Isso pode ser usado para inserir aspas retas (**"**), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo:
 
 ```
 >Edit.Find ^^t /regex
@@ -54,5 +54,5 @@ Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas
 
 ## <a name="see-also"></a>Confira também
 
-- [Janela de comando](../ide/reference/command-window.md)
-- [Encontrar e substituir texto](../ide/finding-and-replacing-text.md)
+- [Janela Comando](../ide/reference/command-window.md)
+- [Localizando e substituindo texto](../ide/finding-and-replacing-text.md)

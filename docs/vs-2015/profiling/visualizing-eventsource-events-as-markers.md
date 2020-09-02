@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690211"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
@@ -40,10 +40,10 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |win:LogAlways|Normal|  
 |win:Critical|Crítico|  
 |win:Error|Crítico|  
-|win:Warning|Alta|  
+|win:Warning|Alto|  
 |win:Informational|Normal|  
-|win:Verbose|Baixo|  
-|Maior que win:verbose|Baixo|  
+|win:Verbose|Baixa|  
+|Maior que win:verbose|Baixa|  
   
 ### <a name="series-name"></a>Nome da Série  
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.  
@@ -75,11 +75,11 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |------------------------|---------------------------------------|  
 |0|Normal|  
 |1|Crítico|  
-|2|Alta|  
-|3|Alta|  
+|2|Alto|  
+|3|Alto|  
 |4|Normal|  
-|5|Baixo|  
-|Todos os outros valores|Baixo|  
+|5|Baixa|  
+|Todos os outros valores|Baixa|  
   
 ### <a name="series-name"></a>Nome da Série  
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.  
@@ -96,5 +96,5 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 > [!NOTE]
 > O uso de SpanID para aninhar intervalos, permitir que eles parcialmente sobreponham o mesmo thread ou permitir que eles comecem em um thread e terminem em outro não tem suporte.  
   
-## <a name="see-also"></a>Consulte também  
- [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Consulte Também  
+ [Marcadores do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-markers.md)

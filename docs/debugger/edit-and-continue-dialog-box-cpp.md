@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo Editar e continuarC++() | Microsoft Docs
+title: Caixa de diálogo Editar e continuar (C++) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737965"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
@@ -31,5 +31,5 @@ Editar e Continuar não poderiam aplicar as alterações feitas ao seu código n
 
  Você pode editar o código para corrigir o erro enquanto estiver Depurando, parar a depuração e corrigir o código, ou ignorar o erro e continuar a depuração. Se você continuar sem fazer a correção, suas alterações de código não serão aplicadas imediatamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)

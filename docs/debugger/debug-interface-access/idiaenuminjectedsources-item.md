@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76e89c89bca8b164645c71df6083b230850e61ca
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468269"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
@@ -43,6 +43,6 @@ fora Retorna um objeto [IDiaInjectedSource](../../debugger/debug-interface-acces
 ## <a name="return-value"></a>Valor Retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

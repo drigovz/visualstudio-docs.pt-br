@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70739316"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script do Windows PowerShell)
@@ -40,7 +40,7 @@ O caminho para o arquivo de configuração de JSON que descreve os detalhes da i
 | Necessário? |true |
 | Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
@@ -49,20 +49,20 @@ O nome da assinatura do Azure no qual você deseja criar a máquina virtual.
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |Usa a primeira assinatura no arquivo de assinatura |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação da web para publicar na máquina virtual. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Confira [Como criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+O caminho para o pacote de implantação da web para publicar na máquina virtual. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Consulte [Como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
@@ -71,9 +71,9 @@ Se for verdadeiro, permite o uso de certificados que não está assinado por uma
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |false |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="vmpassword"></a>VMPassword
@@ -82,9 +82,9 @@ As credenciais da conta de máquina virtual. Exemplo: -VMPassword @{Name = "admi
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
@@ -93,9 +93,9 @@ As credenciais do banco de dados SQL no Azure. Exemplo: -DatabaseServerPassword 
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
@@ -104,9 +104,9 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 | Aliases | nenhum |
 | --- | --- |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeado |
 | Valor padrão |false |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="remarks"></a>Comentários

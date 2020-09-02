@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591301"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gerenciar propriedades do projeto e da solução
@@ -33,14 +33,14 @@ As propriedades do projeto são organizadas em grupos e cada grupo tem sua próp
 
 ### <a name="c-visual-basic-and-f-projects"></a>Projetos em C#, Visual Basic e F#
 
-Nos projetos C#, Visual Basic e F#, as propriedades são expostas no **Project Designer**. A ilustração a seguir mostra a página de propriedade **Build** para um projeto WPF em C#:
+Em projetos C#, Visual Basic e F #, as propriedades são expostas no **Designer de projeto**. A ilustração a seguir mostra a página de propriedades de **compilação** para um projeto WPF em C#:
 
 ![Designer de Projeto do Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Para obter informações sobre cada uma das páginas de propriedade no **Project Designer,** consulte [a referência de propriedades do projeto](../ide/reference/project-properties-reference.md).
+Para obter informações sobre cada uma das páginas de propriedades no **Designer de projeto**, consulte referência de [Propriedades do projeto](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> As soluções têm algumas propriedades, assim como os itens do projeto; essas propriedades são acessadas na [janela Propriedades,](../ide/reference/properties-window.md)não **no Project Designer.**
+> As soluções têm algumas propriedades e, portanto, itens de projeto; essas propriedades são acessadas no [janela Propriedades](../ide/reference/properties-window.md), não no **Designer de projeto**.
 
 ### <a name="c-and-javascript-projects"></a>Projetos em C++ e JavaScript
 
@@ -48,11 +48,11 @@ Projetos em C++ e JavaScript têm uma interface do usuário diferente para geren
 
 ![Propriedades de projeto do Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Para obter informações sobre as propriedades do projeto C++, confira [Trabalhar com propriedades do projeto (C++)](/cpp/build/working-with-project-properties). Para obter mais informações sobre as propriedades JavaScript, consulte [Páginas de Propriedade, JavaScript](../ide/reference/property-pages-javascript.md).
+Para obter informações sobre as propriedades do projeto C++, confira [Trabalhar com propriedades do projeto (C++)](/cpp/build/working-with-project-properties). Para obter mais informações sobre as propriedades de JavaScript, consulte [páginas de propriedades, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Propriedades da solução
 
-Para acessar propriedades na solução, clique com o botão direito do mouse no nó da solução no **Gerenciador de Soluções** e escolha **Propriedades**. Na caixa de diálogo, você pode definir configurações de projeto para compilações **Debug** ou **Release,** escolher quais projetos devem ser o projeto de inicialização quando **o F5** é pressionado e definir opções de análise de código.
+Para acessar propriedades na solução, clique com o botão direito do mouse no nó da solução no **Gerenciador de Soluções** e escolha **Propriedades**. Na caixa de diálogo, você pode definir configurações de projeto para compilações de **depuração** ou **versão** , escolher quais projetos devem ser o projeto de inicialização quando **F5** for pressionado e definir opções de análise de código.
 
 ## <a name="see-also"></a>Confira também
 

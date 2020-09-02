@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302612"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315181"
 ---
 # <a name="static-helper-classes"></a>Classes auxiliares estáticas
 
@@ -48,7 +48,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Observações**
+**Comentários**
 
 O código acima é quase equivalente a:
 
@@ -95,7 +95,7 @@ A classe **PexChoose** pode operar em dois modos:
 
 * O código gerado para casos de teste específicos define o provedor de escolha de uma maneira de forma que a nova execução de tal caso de teste fará escolhas específicas para disparar um caminho de execução específico.
 
-**Uso**
+**Usage**
 
 * Basta chamar **PexChoose.Value** para gerar um novo valor:
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 Uma classe estática usada para ignorar restrições em parâmetros e imprimir as informações simbólicas associadas aos valores.
 
-**Uso**
+**Usage**
 
 Normalmente, o IntelliTest tenta abranger todos os caminhos de execução do código durante a execução. No entanto, especialmente ao computar condições de declaração e suposição, ele não deve explorar todos os casos possíveis.
 

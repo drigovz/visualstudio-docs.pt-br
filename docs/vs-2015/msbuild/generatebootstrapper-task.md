@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149633"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
@@ -95,11 +95,11 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
    Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:  
   
-  - `HomeSite`: Indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
+  - `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
   
-  - `Relative`: Indica que o pré-requisito está no mesmo local do aplicativo.  
+  - `Relative`: indica que o pré-requisito está no mesmo local que o aplicativo.  
   
-  - `Absolute`: Indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
+  - `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
   
     Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.  
   
@@ -152,7 +152,7 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
    Se for `true`, o bootstrapper executará a validação do XSD nos itens de entrada do bootstrapper especificados. O valor padrão desse parâmetro é `false`.  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que deve ter o [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] instalado como pré-requisito.  
@@ -178,6 +178,6 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Tarefa](../msbuild/msbuild-tasks.md)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

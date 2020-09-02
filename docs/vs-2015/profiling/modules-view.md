@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195607"
 ---
 # <a name="modules-view"></a>Exibição de módulos
@@ -29,13 +29,13 @@ A exibição de Módulos lista os módulos dos dados de criação de perfil. Cad
   
  Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo.  
   
- Para adicionar ou remover colunas, clique com o botão direito do mouse na janela do relatório e, em seguida, selecione **Adicionar/Remover Colunas**. Você pode classificar os dados em um nome de coluna. Para obter mais informações, confira [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).  
+ Para adicionar ou remover colunas, clique com o botão direito do mouse na janela do relatório e selecione **Adicionar/remover colunas**. Você pode classificar os dados em um nome de coluna. Para obter mais informações, consulte [Como personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).  
   
  As colunas que estão disponíveis na exibição de Módulos dependem do método de criação de perfil (amostragem ou instrumentação) usado para coletar os dados e se os dados de memória .NET foram coletados na execução da criação de perfil.  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição Módulos](../profiling/modules-view-sampling-data.md)   
- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)   
- [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Exibição Módulos](../profiling/modules-view-contention-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de módulos](../profiling/modules-view-sampling-data.md)   
+ [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)   
+ [Exibição de módulos-instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Exibição de módulos](../profiling/modules-view-contention-data.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195521"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
@@ -54,7 +54,7 @@ A janela do **Gerenciador de Desempenho** no IDE (ambiente de desenvolvimento in
   
 - **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)

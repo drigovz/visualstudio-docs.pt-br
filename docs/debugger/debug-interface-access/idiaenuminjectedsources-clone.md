@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a9a16b1c42bc7eedd04636a9b7bbdd6f9216463e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468290"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
@@ -38,5 +38,5 @@ fora Retorna um objeto [IDiaEnumInjectedSources](../../debugger/debug-interface-
 ## <a name="return-value"></a>Valor Retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

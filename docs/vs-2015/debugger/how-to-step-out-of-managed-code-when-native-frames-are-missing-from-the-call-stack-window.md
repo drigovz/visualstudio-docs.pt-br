@@ -1,5 +1,5 @@
 ---
-title: 'Como: Sair do código gerenciado quando quadros nativos estiverem ausentes da janela pilha de chamadas | Microsoft Docs'
+title: 'Como: sair do código gerenciado quando os quadros nativos estão ausentes na janela pilha de chamadas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,19 +26,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63bd55fd254dd263540a9161e8579ea6600e97f1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690096"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Como: Sair do código gerenciado quando quadros nativos estiverem ausentes na janela Pilha de Chamadas
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Como sair do código gerenciado quando quadros nativos não forem encontrados na janela Pilha de Chamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se seu código tiver quadros nativos invisíveis na janela **Pilha de Chamadas**, realizar a depuração circular do código gerenciado poderá produzir resultados inesperados. Como alternativa, você pode usar um ponto de interrupção em vez da **Depuração Circular**.  
   
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Para depurar fora do código gerenciado quando os quadros nativos estiverem ausentes da exibição da pilha de chamadas  
   
@@ -48,5 +48,5 @@ Se seu código tiver quadros nativos invisíveis na janela **Pilha de Chamadas**
   
      Quando a chamada gerenciada for concluída, a execução será interrompida no ponto de interrupção no código nativo.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Usar a janela de pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md)

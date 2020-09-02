@@ -1,5 +1,5 @@
 ---
-title: Web (código gerenciado) de biblioteca de controle | Microsoft Docs
+title: Biblioteca de controle da Web (código gerenciado) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688170"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteca de Controles da Web (código gerenciado)
@@ -47,9 +47,9 @@ O modelo de projeto da Biblioteca de Controles da Web cria uma DLL. Como a bibli
   
 1. Crie o projeto de aplicativo host e o projeto de controle da Web na mesma solução.  
   
-2. Na **Gerenciador de soluções**, o aplicativo host com o botão direito e escolha **adicionar referência**.  
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no aplicativo host e escolha **Adicionar referência**.  
   
 3. Adicione uma referência ao projeto de controle da Web.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Aplicativos Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

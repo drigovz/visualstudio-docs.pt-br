@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195510"
 ---
 # <a name="per-thread-summary-report"></a>Relatório de resumo por thread
@@ -25,12 +25,12 @@ ms.locfileid: "68195510"
 
 Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Tempo de execução (exibição de threads)](../profiling/execution-time-threads-view.md)   
- [Tempo de E/S (exibição de threads)](../profiling/i-o-time-threads-view.md)   
- [Hora de gerenciamento da memória](../profiling/memory-management-time.md)   
+ [Hora de e/s (exibição de threads)](../profiling/i-o-time-threads-view.md)   
+ [Tempo de gerenciamento de memória](../profiling/memory-management-time.md)   
  [Tempo de preempção](../profiling/preemption-time.md)   
  [Tempo de suspensão](../profiling/sleep-time.md)   
  [Tempo de sincronização](../profiling/synchronization-time.md)   
- [Tempo de processamento da interface do usuário](../profiling/ui-processing-time.md)   
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+ [Tempo de processamento da IU](../profiling/ui-processing-time.md)   
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

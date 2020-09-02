@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee6e163bd6587d93c970a56ac1c08383084ddc0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149622"
 ---
 # <a name="formatversion-task"></a>Tarefa FormatVersion
@@ -26,16 +26,16 @@ ms.locfileid: "68149622"
 
 Acrescenta o número de revisão ao número de versão.  
   
-- Caso #1: Entrada: Version=\<undefined>;  Revision=\<don't care>;   Saída: OutputVersion="1.0.0.0"  
+- #1 de caso: entrada: versão = \<undefined> ;  Revisão = \<don't care> ;   Saída: OutputVersion = "1.0.0.0"  
   
 - Caso #2: Entrada: Version="1.0.0.*"  Revision="5"  Saída: OutputVersion="1.0.0.5"  
   
-- Caso #3: Entrada: Version="1.0.0.0"  Revision=\<don't care>;  Saída: OutputVersion="1.0.0.0"  
+- #3 de caso: entrada: versão = "1.0.0.0" revisão = \<don't care> ;  Saída: OutputVersion = "1.0.0.0"  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `FormatVersion`.  
   
-|Parâmetro|DESCRIÇÃO|  
+|Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`FormatType`|Parâmetro `String` opcional.<br /><br /> Especifica o tipo do formato.<br /><br /> -"Versão" = versão.<br />-   "Path" = substituir "." por "_";|  
 |`OutputVersion`|Parâmetro de saída `String` opcional.<br /><br /> Especifica a versão de saída que inclui o número de revisão.|  
@@ -43,8 +43,8 @@ Acrescenta o número de revisão ao número de versão.
 |`Version`|Parâmetro `String` opcional.<br /><br /> Especifica a cadeia de caracteres do número de versão para o formato.|  
   
 ## <a name="remarks"></a>Comentários  
- Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Veja também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Tarefa](../msbuild/msbuild-tasks.md)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)
