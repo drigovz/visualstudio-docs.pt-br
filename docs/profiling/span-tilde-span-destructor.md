@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979660"
 ---
 # <a name="spanspan-destructor"></a>Destruidor span::~span
 
 Destrói o objeto `span` e libera seus recursos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 ~span();
@@ -37,4 +37,4 @@ Destrói o objeto `span` e libera seus recursos.
 
 ## <a name="see-also"></a>Confira também
 
-- [classe de extensão](../profiling/span-class.md)
+- [Classe span](../profiling/span-class.md)

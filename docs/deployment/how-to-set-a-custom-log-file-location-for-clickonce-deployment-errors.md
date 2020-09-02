@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382166"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Como definir o local de um arquivo de log personalizado para erros de implantação do ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]mantém arquivos de log de ativação para todas as implantações. Esses logs documentam os erros que pertencem à instalação e inicialização de uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Por padrão, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cria um arquivo de log para cada ativação de implantação. Ele armazena esses arquivos de log na pasta Temporary Internet Files. O arquivo de log para uma implantação é exibido para o usuário quando ocorre uma falha de ativação e o usuário clica em **detalhes** na caixa de diálogo de erro resultante.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém arquivos de log de ativação para todas as implantações. Esses logs documentam os erros que pertencem à instalação e inicialização de uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Por padrão, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cria um arquivo de log para cada ativação de implantação. Ele armazena esses arquivos de log na pasta Temporary Internet Files. O arquivo de log para uma implantação é exibido para o usuário quando ocorre uma falha de ativação e o usuário clica em **detalhes** na caixa de diálogo de erro resultante.
 
  Você pode alterar esse comportamento para um cliente específico usando o editor do registro (**regedit.exe**) para definir um caminho de arquivo de log personalizado. Nesse caso, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registra os êxitos e as falhas de ativação de todas as implantações em um único arquivo.
 
@@ -46,5 +46,5 @@ ms.locfileid: "85382166"
 
      Esse local deve estar em um diretório ao qual o usuário tenha acesso de gravação. Por exemplo, no Windows Vista, crie a seguinte estrutura de pastas e defina `LogFilePath` como *C:\Users \\ \<username> \Documents\Logs\ClickOnce\installation.log*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

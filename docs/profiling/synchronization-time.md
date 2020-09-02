@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62965304"
 ---
 # <a name="synchronization-time"></a>Tempo de sincronização
@@ -29,4 +29,4 @@ Esses segmentos na linha do tempo estão associados os tempos de bloqueio catego
   Para entender a causa de um evento de bloqueio de thread, examine cuidadosamente o bloqueio de pilhas de chamadas e os relatórios de perfil.
 
 ## <a name="see-also"></a>Confira também
-- [exibição Threads](../profiling/threads-view-parallel-performance.md)
+- [Exibição de threads](../profiling/threads-view-parallel-performance.md)

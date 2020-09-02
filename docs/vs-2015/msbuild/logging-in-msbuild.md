@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162322"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
@@ -24,21 +24,21 @@ ms.locfileid: "68162322"
 O registro em logs oferece uma maneira de monitorar o andamento de um build. O registro em logs captura eventos de build, mensagens, avisos e erros em um arquivo de log.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md)  
+ [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Descreve os vários aspectos de registro em logs em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Agentes de build](../msbuild/build-loggers.md)  
+ [Compilar agentes](../msbuild/build-loggers.md)  
  Descreve as etapas necessárias para criar um agente único.  
   
- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)  
+ [Fazendo logon em um ambiente com vários processadores](../msbuild/logging-in-a-multi-processor-environment.md)  
  Descreve como o registro em logs funciona em um ambiente multiprocessador e os dois modelos de registro em log com multiprocessador.  
   
- [Escrevendo agentes com reconhecimento de multiprocessador](../msbuild/writing-multi-processor-aware-loggers.md)  
+ [Escrevendo agentes com reconhecimento de vários processadores](../msbuild/writing-multi-processor-aware-loggers.md)  
  Descreve como criar agentes de log com reconhecimento de multiprocessador e como usar o ConfigurableForwardingLogger.  
   
- [Criando agentes de log de encaminhamento](../msbuild/creating-forwarding-loggers.md)  
+ [Criando agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)  
  Descreve como criar agentes personalizados de encaminhamento.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Compilando Vários Projetos Paralelamente](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+ [Criando vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Descreve como criar vários projetos mais rápido ao executá-los em paralelo.

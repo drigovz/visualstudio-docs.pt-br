@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938855"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
@@ -91,7 +91,7 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure**: ![ opção de menu publicar no Azure](media/azure-functions-image5.png)
+1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure**:  ![ opção de menu publicar no Azure](media/azure-functions-image5.png)
 2. Se você já conectou conta do Azure ao Visual Studio para Mac, uma lista de serviços de aplicativo disponíveis é exibida. Se você ainda não tiver feito logon, será solicitado que o faça.
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
 4. Na caixa de diálogo **Criar novo serviço de aplicativo**, insira as configurações: ![opção de menu Publicar no Azure](media/azure-functions-image7.png)

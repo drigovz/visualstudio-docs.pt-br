@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40772919031200466999df2dfbf651fae3ee01e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670564"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar definição (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o comando **Inspecionar Definição** para exibir e editar código sem abandonar o código que está escrevendo. **Inspecionar Definição** e **Ir Para Definição** mostram as mesmas informações, mas **Inspecionar Definição** faz a exibição em uma janela pop-up e **Ir Para Definição** mostra o código em uma janela de código separada. **Ir Para Definição** faz com que seu contexto (ou seja, a janela de código ativo, a linha atual e a posição do cursor) mude para a janela de código de definição. Usando **Inspecionar Definição**, você pode exibir e editar a definição e mover ao redor no arquivo de definição para manter seu local no arquivo original do código.
+Você pode usar o comando **Inspecionar Definição** para exibir e editar código sem abandonar o código que está escrevendo. **Inspecionar Definição** e **Ir Para Definição** mostram as mesmas informações, mas **Inspecionar Definição** faz a exibição em uma janela pop-up e **Ir Para Definição** mostra o código em uma janela de código separada. **Ir Para Definição** faz com que seu contexto (ou seja, a janela de código ativo, a linha atual e a posição do cursor) mude para a janela de código de definição. Usando a **definição de Peek**, você pode exibir e editar a definição e mover-se dentro do arquivo de definição, mantendo seu lugar no arquivo de código original.
 
  Você pode usar **Inspecionar Definição** com código C#, Visual Basic e C++. No Visual Basic, **Inspecionar Definição** mostra um link para o **Pesquisador de Objetos** de símbolos sem metadados de definição (por exemplo, os tipos internos do .NET Framework).
 
@@ -42,7 +42,7 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
 
 3. Você pode copiar uma cadeia de caracteres da janela de definição e colá-la no código original. Também é possível arrastar e soltar a cadeia de caracteres da janela de definição para o código original sem excluí-la da janela de definição.
 
-4. Você pode fechar a janela de definição pressionando a tecla ESC ou o botão **Fechar** na guia da janela de definição.
+4. Você pode fechar a janela de definição, escolhendo a tecla Esc ou o botão **Fechar** na guia da janela de definição.
 
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Para abrir uma janela Inspecionar Definição de uma janela Inspecionar Definição
 
@@ -54,7 +54,7 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
 
 - Se você usar **Inspecionar Definição** no código com mais de uma definição (por exemplo, classes parciais), uma lista de resultados aparecerá à direita do modo de exibição de definição de código. É possível escolher qualquer resultado na lista para exibir sua definição.
 
-     ![Exibir janela de vários resultados](../ide/media/peekmultiple.png "PeekMultiple")
+     ![Janela de inspeção de vários resultados](../ide/media/peekmultiple.png "PeekMultiple")
 
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Para editar dentro da janela Inspecionar Definição
 
@@ -69,7 +69,7 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
     |Funcionalidade|Atalho de teclado|
     |-------------------|-----------------------|
     |Abrir a janela de definição|Alt+F12|
-    |Fechar a janela de definição|ESC|
+    |Fechar a janela de definição|Esc|
     |Promover a janela de definição para uma guia de documento regular|Shift+Alt+Home|
     |Navegar entre janelas de definição|Ctrl+Alt+- e Ctrl+Alt+=|
     |Navegar entre vários resultados|F8 e Shift+F8|
@@ -78,5 +78,5 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
     > [!NOTE]
     > Você também pode usar os mesmos atalhos de teclado para editar código em uma janela **Inspecionar Definição**, como usa em qualquer outro lugar no Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282430"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
@@ -52,7 +52,7 @@ Os TableAdapters são componentes gerados pelo designer que se conectam a um ban
 
 ![Fluxo de dados em um aplicativo cliente](../data-tools/media/clientdatadiagram.gif)
 
-Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter não são geradas como classes aninhadas de <xref:System.Data.DataSet> . Eles estão localizados em namespaces separados que são específicos para cada conjunto de informações. Por exemplo, se você tiver um conjunto de um DataSet chamado `NorthwindDataSet` , os TableAdapters associados a <xref:System.Data.DataTable> s no `NorthwindDataSet` estarão no `NorthwindDataSetTableAdapters` namespace. Para acessar um TableAdapter específico de forma programática, você deve declarar uma nova instância do TableAdapter. Por exemplo:
+Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter não são geradas como classes aninhadas de  <xref:System.Data.DataSet> . Eles estão localizados em namespaces separados que são específicos para cada conjunto de informações. Por exemplo, se você tiver um conjunto de um DataSet chamado `NorthwindDataSet` , os TableAdapters associados a  <xref:System.Data.DataTable> s no `NorthwindDataSet` estarão no `NorthwindDataSetTableAdapters` namespace. Para acessar um TableAdapter específico de forma programática, você deve declarar uma nova instância do TableAdapter. Por exemplo:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -89,7 +89,7 @@ A classe TableAdapter não é um tipo .NET. Isso significa que você não pode p
 
 A seguir estão os métodos comumente usados e as propriedades de TableAdapters:
 
-|Membro|Descrição|
+|Membro|DESCRIÇÃO|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popula a tabela de dados associada do TableAdapter com os resultados do comando do TableAdapter `SELECT` .|
 |`TableAdapter.Update`|Envia as alterações de volta ao banco de dados e retorna um inteiro que representa o número de linhas afetadas pela atualização. Para obter mais informações, consulte [atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,7 +126,7 @@ A classe TableAdaptermanager não é um tipo .NET. Portanto, você não pode pro
 
 A seguir estão os métodos e as propriedades usados com frequência da `TableAdapterManager` classe:
 
-|Membro|Descrição|
+|Membro|DESCRIÇÃO|
 |------------|-----------------|
 |Método `UpdateAll`|Salva todos os dados de todas as tabelas de dados.|
 |Propriedade `BackUpDataSetBeforeUpdate`|Determina se deve ser criada uma cópia de backup do conjunto de um antes da execução do `TableAdapterManager.UpdateAll` método. Boolean.|
@@ -137,6 +137,6 @@ A seguir estão os métodos e as propriedades usados com frequência da `TableAd
 
 Quando você usa comandos de dados com uma propriedade CommandType definida como <xref:System.Data.CommandType.Text> , verifique cuidadosamente as informações enviadas de um cliente antes de passá-las para o banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de DataSet](../data-tools/dataset-tools-in-visual-studio.md)

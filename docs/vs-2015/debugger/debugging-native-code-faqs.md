@@ -1,5 +1,5 @@
 ---
-title: Perguntas frequentes do código nativo de depuração | Microsoft Docs
+title: Perguntas frequentes sobre depuração de código nativo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63055cf443f20e353ac87ca3226e9f8208587fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190491"
 ---
 # <a name="debugging-native-code-faqs"></a>Perguntas frequentes de depuração do código nativo
@@ -52,6 +52,6 @@ Os tópicos a seguir contêm respostas a algumas perguntas frequentes:
   
 - [Se estiver interrompido no MFC, como posso voltar para a função que chamou o MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

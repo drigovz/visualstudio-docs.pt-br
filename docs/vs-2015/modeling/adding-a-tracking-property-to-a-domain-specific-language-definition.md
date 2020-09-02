@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545568"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
@@ -59,7 +59,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 #### <a name="to-create-the-project"></a>Para criar o projeto
 
-1. Crie um projeto Designer de Linguagem Específica de Domínio. Nomeie-o como `TrackingPropertyDSL`.
+1. Crie um projeto Designer de Linguagem Específica de Domínio. Nomeie-o `TrackingPropertyDSL`.
 
 2. No **Assistente de designer de linguagem específica de domínio**, defina as seguintes opções:
 
@@ -724,7 +724,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 1. No menu **Compilar**, clique em **Recompilar Solução**.
 
-2. No menu **depurar** , clique em **Iniciar Depuração**.
+2. No menu **Depurar** , clique em **Iniciar Depuração**.
 
      A compilação experimental do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] abre a solução de **depuração** , que contém um arquivo de teste vazio.
 

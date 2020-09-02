@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88041045"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
@@ -43,7 +43,7 @@ ms.locfileid: "88041045"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="how-to-use-the-globals-class"></a>Como usar a classe Globals
- `Globals`é uma classe estática que mantém referências a determinados itens em seu projeto. Usando a `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:
+ `Globals` é uma classe estática que mantém referências a determinados itens em seu projeto. Usando a `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:
 
 - As `ThisWorkbook` classes e `Sheet` *n* em uma pasta de trabalho ou projeto de modelo do Excel. Você pode acessar esses objetos usando as `Globals.ThisWorkbook` Propriedades e `Sheet` *n* .
 
@@ -75,7 +75,7 @@ ms.locfileid: "88041045"
 > [!NOTE]
 > A `Globals` classe nunca é inicializada em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade da `Globals` classe de dentro de uma classe de controle de usuário, deverá verificar se a propriedade retorna **NULL** antes de tentar usar o objeto retornado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)

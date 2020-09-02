@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001056"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores da Visualização Simultânea
@@ -41,13 +41,13 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="known-sources-of-markers"></a>Fontes conhecidas de marcadores
  Qualquer provedor ETW pode gerar marcadores, desde que os provedores obedeçam a determinadas restrições. É possível configurar a Visualização Simultânea para escutar outras fontes de evento para marcadores. Por padrão, ele escuta estas fontes de evento:
 
-- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)
+- [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)
 
 - [Biblioteca de tarefas paralelas (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Fluxo de dados](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Flow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
-- [PLINQ (LINQ paralelo)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
+- [LINQ paralelo (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
 - [Runtime de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime)
 
@@ -62,6 +62,6 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 
 ## <a name="see-also"></a>Confira também
 - [Marcadores de sinalizador](../profiling/flag-markers.md)
-- [Marcadores de mensagens](../profiling/message-markers.md)
-- [Marcadores de extensão](../profiling/span-markers.md)
+- [Marcadores de mensagem](../profiling/message-markers.md)
+- [Marcadores de span](../profiling/span-markers.md)
 - [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c01c034fb08315737c57ef8674230b837a9fa6de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670334"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizando o IDE do Visual Studio
@@ -24,25 +24,25 @@ Esta seção descreve como personalizar o Visual Studio de várias maneiras para
  Muitas das configurações acompanham você entre as instâncias do Visual Studio. Consulte [Synchronized Settings](../ide/synchronized-settings-in-visual-studio.md) (Configurações sincronizadas) para obter mais informações.
 
 ### <a name="window-layouts"></a>Layouts de janela
- Para organizar as posições e o comportamento da janela e salvar os layouts personalizados, consulte [Customizing window layouts](../ide/customizing-window-layouts-in-visual-studio.md) (Personalizando layouts de janela).
+ Para organizar as posições e o comportamento da janela e salvar layouts personalizados, consulte [Personalizando layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="general-environment-options"></a>Opções do ambiente geral
  Para personalizar muitas configurações de ambiente, digite `environment` em **QuickLaunch**. Quando a página de propriedades for exibida, você poderá pressionar **F1** para obter mais ajuda sobre as várias configurações nessa página. Consulte também [Environment Options Dialog Box](../ide/reference/environment-options-dialog-box.md) (Caixa de diálogo Opções de ambiente).
 
 ### <a name="external-tools"></a>Ferramentas externas
- Para personalizar quais ferramentas externas aparecem nos menus e barras de ferramentas, consulte [Managing External Tools](../ide/managing-external-tools.md) (Gerenciando ferramentas externas).
+ Para personalizar quais ferramentas externas aparecem em menus e barras de ferramentas, consulte [Gerenciando ferramentas externas](../ide/managing-external-tools.md).
 
 ### <a name="start-page"></a>Página inicial
- Para criar uma página inicial personalizada para você e sua equipe, consulte [Customizing the Start Page](../ide/customizing-the-start-page-for-visual-studio.md) (Personalizando a página inicial)
+ Para criar uma página inicial personalizada para você e sua equipe, consulte [Personalizando a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)
 
 ### <a name="environment-color-themes"></a>Temas de cores do ambiente
- Para alterar o tema de cores entre claro, escuro e azul, digite ambiente no **QuickLaunch** e escolha **Ambiente &#124; Geral**. Para alterar as opções de colorização no editor, digite `environment` em **QuickLaunch** e escolha **Ambiente &#124; Fontes e Cores**. consulte também [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
+ Para alterar o tema de cores entre claro, escuro e azul, digite ambiente no **QuickLaunch** e escolha **Ambiente &#124; Geral**. Para alterar as opções de colorização no editor, digite `environment` em **QuickLaunch** e escolha **Ambiente &#124; Fontes e Cores**. Consulte também [como alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menus e barras de ferramentas
- Para adicionar ou remover itens de menu ou barra de ferramentas, consulte [How to: Customize Menus and Toolbars](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) (Como personalizar menus e barras de ferramentas).
+ Para adicionar ou remover itens de menu ou barra de ferramentas, consulte [como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
  Devido à demanda popular, você pode alterar as maiúsculas e minúsculas do menu principal entre **Capitalização de Título**, **TODAS EM MAIÚSCULA** digitando `environment` em **QuickLaunch** e escolhendo **Ambiente &#124; Geral**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Visual Studio IDE](../ide/visual-studio-ide.md)

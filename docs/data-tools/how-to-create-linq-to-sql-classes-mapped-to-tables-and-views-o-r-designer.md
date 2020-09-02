@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282118"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]as classes mapeadas para tabelas e exibições de banco de dados são chamadas de *classes de entidade*. A classe de entidade é mapeada para um registro, enquanto as propriedades individuais de uma classe de entidade são mapeadas para as colunas individuais que compõem um registro. Crie classes de entidade baseadas em tabelas ou exibições de banco de dados arrastando tabelas ou exibições de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para as [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O o **/R Designer** gera as classes e aplica os [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributos específicos para habilitar a [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funcionalidade (os recursos de edição e de comunicação de dados do <xref:System.Data.Linq.DataContext> ). Para obter informações detalhadas sobre [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes, consulte [o modelo de objeto LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] as classes mapeadas para tabelas e exibições de banco de dados são chamadas de *classes de entidade*. A classe de entidade é mapeada para um registro, enquanto as propriedades individuais de uma classe de entidade são mapeadas para as colunas individuais que compõem um registro. Crie classes de entidade baseadas em tabelas ou exibições de banco de dados arrastando tabelas ou exibições de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para as [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O o **/R Designer** gera as classes e aplica os [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributos específicos para habilitar a [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funcionalidade (os recursos de edição e de comunicação de dados do <xref:System.Data.Linq.DataContext> ). Para obter informações detalhadas sobre [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes, consulte [o modelo de objeto LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
 > [!NOTE]
 > O o **/R Designer** é um mapeador relacional de objeto simples, pois dá suporte apenas a relações de mapeamento 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. O mapeamento complexo, como o mapeamento de uma classe de entidade para várias tabelas, não tem suporte. No entanto, você pode mapear uma classe de entidade para uma exibição que une várias tabelas relacionadas.
@@ -61,7 +61,7 @@ Depois de criar classes de entidade usando o o **/R Designer**, você pode criar
 
 7. Arraste itens da janela de **Fontes de Dados** para um formulário.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

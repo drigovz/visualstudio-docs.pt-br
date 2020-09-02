@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1e9a4f3451e7ca5c4cb242ecef9374a07213373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163589"
 ---
 # <a name="copy-selection"></a>Copiar seleção
@@ -25,5 +25,5 @@ ms.locfileid: "68163589"
 
 Para copiar toda a pilha de chamadas por meio da guia de relatório, clique em **Copiar**. Em seguida, é possível colar a pilha de chamadas em qualquer programa que dá suporte a essa ação.  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte Também  
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

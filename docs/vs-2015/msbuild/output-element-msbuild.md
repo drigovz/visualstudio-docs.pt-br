@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163595"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
@@ -36,7 +36,7 @@ Armazena valores de saída da tarefa em itens e propriedades.
  \<Task>  
  \<Output>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Output TaskParameter="Parameter"  
@@ -49,19 +49,19 @@ Armazena valores de saída da tarefa em itens e propriedades.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIÇÃO|  
+|Atributo|Descrição|  
 |---------------|-----------------|  
 |`TaskParameter`|Atributo obrigatório.<br /><br /> O nome do parâmetro de saída da tarefa.|  
-|`PropertyName`|O atributo `PropertyName` ou `ItemName` é necessário.<br /><br /> A propriedade que recebe o valor do parâmetro de saída da tarefa. Seu projeto pode fazer referência à propriedade com a sintaxe `$(`*PropertyName*`)`. Esse nome de propriedade pode ser um novo nome de propriedade ou um nome que já esteja definido no projeto.<br /><br /> Este atributo não poderá ser usado se `ItemName` também estiver sendo usado.|  
-|`ItemName`|O atributo `PropertyName` ou `ItemName` é necessário.<br /><br /> O item que recebe o valor do parâmetro de saída da tarefa. Seu projeto pode fazer referência ao item com a sintaxe `@(`*ItemName*`)`. O nome do item pode ser um novo nome de item ou um nome que já esteja definido no projeto.<br /><br /> Este atributo não poderá ser usado se `PropertyName` também estiver sendo usado.|  
+|`PropertyName`|O atributo `PropertyName` ou `ItemName` é necessário.<br /><br /> A propriedade que recebe o valor do parâmetro de saída da tarefa. Seu projeto pode, então, referenciar a propriedade com a `$(` *PropertyName* `)` sintaxe PropertyName. Esse nome de propriedade pode ser um novo nome de propriedade ou um nome que já esteja definido no projeto.<br /><br /> Este atributo não poderá ser usado se `ItemName` também estiver sendo usado.|  
+|`ItemName`|O atributo `PropertyName` ou `ItemName` é necessário.<br /><br /> O item que recebe o valor do parâmetro de saída da tarefa. Seu projeto pode, então, referenciar o item com a `@(` *ItemName* `)` sintaxe ItemName. O nome do item pode ser um novo nome de item ou um nome que já esteja definido no projeto.<br /><br /> Este atributo não poderá ser usado se `PropertyName` também estiver sendo usado.|  
 |`Condition`|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[Tarefa](../msbuild/task-element-msbuild.md)|Cria e executa uma instância de uma tarefa [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
@@ -85,6 +85,6 @@ Armazena valores de saída da tarefa em itens e propriedades.
 </Target>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)

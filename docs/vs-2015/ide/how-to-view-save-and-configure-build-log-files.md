@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffc1c620136c55c42f3468129ed164075d762bff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670501"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como ver, salvar e configurar arquivos de log de build
@@ -25,36 +25,36 @@ Depois de compilar um projeto no Visual Studio IDE, é possível exibir informa�
 
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Para exibir o arquivo de log de build para um projeto C++
 
-1. No **Windows Explorer** ou no **Explorador de Arquivos**, abra o seguinte arquivo: \\...\Visual Studio *Versão*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt
+1. No **Windows Explorer** ou **Explorador de arquivos**, abra o seguinte arquivo: \\ . ..\Visual Studio *versão*\projects \\ *ProjectName* \\ *ProjectName*\debug \\ *ProjectName*. txt
 
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para criar um arquivo de log de build para um projeto de código gerenciado
 
 1. Na barra de menus, escolha **Compilar**, **Compilar Solução**.
 
-2. Na Janela de **Saída**, realce as informações do build e, em seguida, copie-as para a área de transferência.
+2. Na janela **saída** , realce as informações da compilação e, em seguida, copie-as para a área de transferência.
 
 3. Abra um editor de texto, como o Bloco de notas, cole as informações no arquivo e salve-o.
 
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para alterar a quantidade de informações incluídas no log de build
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **ferramentas**, **Opções**.
 
 2. Na página **Projetos e Soluções**, escolha a página **Compilar e Executar**.
 
 3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|DESCRIÇÃO|
+    |Nível de detalhes|Descrição|
     |---------------------|-----------------|
-    |Silenciosa|Exibe apenas um resumo do build.|
-    |Mínimo|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
+    |Quiet|Exibe apenas um resumo do build.|
+    |Minimal|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
     |Normal|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; e as principais etapas do build. Use esse nível de detalhes com mais frequência.|
     |Detalhado|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; todas as etapas do build; e as mensagens categorizadas com base na importância normal.|
-    |Diagnóstico|Exibe todos os dados disponíveis para o build. É possível usar este nível de detalhes para ajudar a depurar problemas com scripts de build personalizados e outros problemas de build.|
+    |Diagnostic|Exibe todos os dados disponíveis para o build. É possível usar este nível de detalhes para ajudar a depurar problemas com scripts de build personalizados e outros problemas de build.|
 
-     Para obter mais informações, consulte [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+     Para obter mais informações, consulte [caixa de diálogo opções, projetos e soluções, compilar e executar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity> .
 
     > [!IMPORTANT]
-    > É necessário recompilar o projeto para que suas alterações tenham efeito na Janela de **Saída** (todos os projetos) e no arquivo *ProjectName*.txt (apenas projetos C++).
+    > Você deve recompilar o projeto para que suas alterações entrem em vigor na janela de **saída** (todos os projetos) e no arquivo *ProjectName*. txt (somente projetos C++).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md) [compilando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [compilando e compilando](../ide/compiling-and-building-in-visual-studio.md)

@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
 ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800509"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adicionando armazenamento do Azure usando os serviços conectados do Visual Studio
@@ -25,7 +25,7 @@ Com o Visual Studio, você pode conectar qualquer um dos seguintes itens ao arma
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Azure Functions
+- Funções do Azure
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -34,7 +34,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Serviços conectados no Visual Studio para Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 - Visual Studio com a carga de trabalho do Azure instalada.
 - Um projeto de um dos tipos com suporte
@@ -117,7 +117,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 1. O serviço conectado de armazenamento aparece sob o nó **Referências de Serviço** do seu projeto.
 :::moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Fórum do Armazenamento do Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Documentação do Armazenamento do Azure](/azure/storage/)
