@@ -1,5 +1,5 @@
 ---
-title: Espaço de trabalho de compilação no Visual Studio | Microsoft Docs
+title: Build do espaço de trabalho no Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,57 +8,57 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553322"
 ---
-# <a name="workspace-build"></a>Compilação de espaço de trabalho
+# <a name="workspace-build"></a>Build do espaço de trabalho
 
-Suporte ao Build [Abrir pasta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) cenários exige que um extensor para fornecer [indexada](workspace-indexing.md) e [contexto do arquivo](workspace-file-contexts.md) dados para o [espaço de trabalho](workspaces.md), como Assim como a ação de compilação para executar.
+O suporte à compilação em cenários de [pasta aberta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) requer um extensor para fornecer dados de [contexto de arquivo](workspace-file-contexts.md) e [indexados](workspace-indexing.md) para o [espaço de trabalho](workspaces.md), bem como a ação de compilação a ser executada.
 
-Abaixo está uma descrição do que a sua extensão será precisa.
+Abaixo está uma descrição do que será necessário para sua extensão.
 
-## <a name="build-file-context"></a>Criar o contexto de arquivo
+## <a name="build-file-context"></a>Contexto do arquivo de compilação
 
-- Fábrica de provedor
-  - `ExportFileContextProviderAttribute` atributo com `supportedContextTypeGuids` de todos os aplicável `string` constantes da `BuildContextTypes`
+- Fábrica de provedores
+  - `ExportFileContextProviderAttribute` atributo com `supportedContextTypeGuids` como todas as `string` constantes aplicáveis de `BuildContextTypes`
   - Implementa `IWorkspaceProviderFactory<IFileContextProvider>`
-  - Provedor de contexto do arquivo
-    - Retornar um `FileContext` para cada build tem suportada de configuração e a operação
-      - `contextType` De <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
-      - `context` implementa <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> com o `Configuration` propriedade como a configuração de build (por exemplo `"Debug|x86"`, `"ret"`, ou `null` se não for aplicável). Como alternativa, use uma instância do <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext>. O valor de configuração **deve** correspondem à configuração do valor de dados de arquivos indexados.
+  - Provedor de contexto de arquivo
+    - Retornar um `FileContext` para cada operação de compilação e configuração com suporte
+      - `contextType` de <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
+      - `context` implementa <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> com a `Configuration` propriedade como a configuração de compilação (por exemplo `"Debug|x86"` , `"ret"` ou `null` se não aplicável). Como alternativa, use uma instância do <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext> . O valor de configuração **deve** corresponder à configuração do valor de dados de arquivo indexado.
 
-## <a name="indexed-build-file-data-value"></a>Valor de dados de arquivo de compilação indexada
+## <a name="indexed-build-file-data-value"></a>Valor de dados de arquivo de compilação indexado
 
-- Fábrica de provedor
+- Fábrica de provedores
   - `ExportFileScannerAttribute` atributo com `IReadOnlyCollection<FileDataValue>` como um tipo com suporte
   - Implementa `IWorkspaceProviderFactory<IFileScanner>`
 - Scanner de arquivo em `ScanContentAsync<T>`
   - Retorna dados quando `FileScannerTypeConstants.FileDataValuesType` é o argumento de tipo
-  - Retorna um valor de dados de arquivo para cada configuração construído com:
-    - `type` as `BuildConfigurationContext.ContextTypeGuid`
-    - `context` como sua configuração de compilação (por exemplo `"Debug|x86"`, `"ret"`, ou `null` se não for aplicável). Esse valor **deve** correspondem à configuração do contexto de arquivo.
+  - Retorna um valor de dados de arquivo para cada configuração construída com:
+    - `type` como `BuildConfigurationContext.ContextTypeGuid`
+    - `context` como sua configuração de compilação (por exemplo `"Debug|x86"` , `"ret"` ou `null` se não aplicável). Esse valor **deve** corresponder à configuração do contexto do arquivo.
 
-## <a name="build-file-context-action"></a>Ação de contexto do arquivo de build
+## <a name="build-file-context-action"></a>Ação de contexto do arquivo de compilação
 
-- Fábrica de provedor
-  - `ExportFileContextActionProvider` atributo com `supportedContextTypeGuids` de todos os aplicável `string` constantes da `BuildContextTypes`
+- Fábrica de provedores
+  - `ExportFileContextActionProvider` atributo com `supportedContextTypeGuids` como todas as `string` constantes aplicáveis de `BuildContextTypes`
   - Implementa `IWorkspaceProviderFactory<IFileContextActionProvider>`
-- Provedor de ação no `IFileContextActionProvider.GetActionsAsync`
-  - Retornar um `IFileContextAction` que corresponde a determinada `FileContext.ContextType` valor
-- Ação de contexto do arquivo
+- Provedor de ações em `IFileContextActionProvider.GetActionsAsync`
+  - Retornar um `IFileContextAction` que corresponda ao `FileContext.ContextType` valor especificado
+- Ação de contexto de arquivo
   - Implementa `IFileContextAction` e <xref:Microsoft.VisualStudio.Workspace.Extensions.VS.IVsCommandItem>
-  - `CommandGroup` propriedade retorna `16537f6e-cb14-44da-b087-d1387ce3bf57`
-  - `CommandId` está `0x1000` para compilação, `0x1010` recriação, ou `0x1020` para limpar
+  - `CommandGroup` retorno da propriedade `16537f6e-cb14-44da-b087-d1387ce3bf57`
+  - `CommandId` é `0x1000` para compilação, `0x1010` para recompilação ou `0x1020` para limpeza
 
 >[!NOTE]
->Uma vez que o `FileDataValue` precisam ser indexados, haverá alguma quantidade de tempo entre abrindo o espaço de trabalho e o ponto em que o arquivo é verificado para a funcionalidade de compilação completa. O atraso será visto em que a primeira abertura de uma pasta porque não há nenhum índice armazenados em cache anteriormente.
+>Como o `FileDataValue` precisa ser indexado, haverá um período de tempo entre a abertura do espaço de trabalho e o ponto no qual o arquivo é examinado quanto à funcionalidade de compilação completa. O atraso será visto na primeira abertura de uma pasta porque não há nenhum índice armazenado em cache anteriormente.
 
-## <a name="reporting-messages-from-a-build"></a>Mensagens de uma compilação de emissão de relatórios
+## <a name="reporting-messages-from-a-build"></a>Relatando mensagens de uma compilação
 
-A compilação pode surgir informações, aviso e mensagens de erro aos usuários uma das duas maneiras. A maneira simples é usar o <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> e forneça um <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>, da seguinte forma:
+A compilação pode trazer informações, avisos e mensagens de erro para os usuários de uma de duas maneiras. A maneira simples é usar o <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> e fornecer um <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> , da seguinte forma:
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -88,22 +88,22 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` e `BuildMessage.LogMessage` controlam o comportamento de onde as informações são apresentadas ao usuário. Qualquer `BuildMessage.TaskType` valor diferente de `None` produzirá um **lista de erros** entrada com os detalhes determinados. `LogMessage` sempre serão gerados na **construir** painel da **saída** janela da ferramenta.
+`BuildMessage.Type` e `BuildMessage.LogMessage` controlar o comportamento de onde as informações são apresentadas ao usuário. Qualquer `BuildMessage.TaskType` valor que não seja `None` produzir uma entrada de **lista de erros** com os detalhes fornecidos. `LogMessage` sempre será apresentado no painel de **compilação** da janela de ferramenta de **saída** .
 
-Como alternativa, as extensões podem interagir diretamente com o **lista de erros** ou **Build** painel. Existe um bug nas versões anteriores do Visual Studio 2017 versão 15.7 no qual o `pszProjectUniqueName` argumento de <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> é ignorado.
+Como alternativa, as extensões podem interagir diretamente com o **lista de erros** ou o painel de **compilação** . Existe um bug em versões anteriores ao Visual Studio 2017 versão 15,7, em que o `pszProjectUniqueName` argumento de <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> é ignorado.
 
 >[!WARNING]
->Os chamadores da `IFileContextAction.ExecuteAsync` pode fornecer implementações subjacentes arbitrárias para o `IProgress<IFileContextActionProgressUpdate>` argumento. Nunca invocar `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` diretamente. Atualmente, não há nenhum diretrizes gerais para usar esse argumento, mas essas diretrizes estão sujeitos a alterações.
+>Os chamadores do `IFileContextAction.ExecuteAsync` podem fornecer implementações subjacentes arbitrárias para o `IProgress<IFileContextActionProgressUpdate>` argumento. Nunca invocar `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` diretamente. Atualmente, não há nenhuma diretriz geral para usar esse argumento, mas essas diretrizes estão sujeitas a alterações.
 
-## <a name="build-related-apis"></a>APIs relacionadas ao build
+## <a name="build-related-apis"></a>Compilar APIs relacionadas
 
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> Fornece detalhes de configuração de compilação.
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> mostra <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s para os usuários.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> fornece detalhes de configuração de compilação.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> mostra <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> os s para os usuários.
 
-## <a name="tasksvsjson-and-launchvsjson"></a>Tasks e Launch
+## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.jse launch.vs.jsem
 
-Para obter informações sobre a criação de um arquivo Tasks ou Launch, consulte [personalizar o build e as tarefas de depuração](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Para obter informações sobre como criar um tasks.vs.jsou launch.vs.jsno arquivo, consulte [Personalizar tarefas de compilação e depuração](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* [Protocolo de idioma do servidor](language-server-protocol.md) -Saiba como integrar os servidores de linguagem no Visual Studio.
+* [Protocolo de servidor de linguagem](language-server-protocol.md) -saiba como integrar os servidores de idiomas ao Visual Studio.

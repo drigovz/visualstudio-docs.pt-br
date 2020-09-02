@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551228"
 ---
 # <a name="cvreleaseprovider-function"></a>Função CvReleaseProvider
@@ -37,11 +37,11 @@ HRESULT CvReleaseProvider(
  `pProvider`  
  Contexto de provedor. Não pode ser NULL.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  S_OK quando o provedor é liberado com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** cvmarkers.h  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Executar o processo de trabalho em uma conta de usuário | Microsoft Docs'
+title: Como executar o processo de trabalho em uma conta de usuário | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157866"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como: Executar o processo de trabalho em uma conta de usuário
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como executar o processo de trabalho em uma conta de usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para configurar o computador de modo que você possa executar o processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe ou w3wp.exe) em uma conta de usuário, siga estas etapas.  
@@ -36,7 +36,7 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 #### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Para executar aspnet_wp.exe em uma conta de usuário  
   
-1. Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o tempo de execução.  
+1. Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o runtime.  
   
 2. Localize a seção &lt;processModel&gt; e altere os atributos de usuário e de senha para o nome e a senha da conta de usuário com a qual você deseja que o aspnet_wp.exe seja executado.  
   
@@ -60,7 +60,7 @@ Para configurar o computador de modo que você possa executar o processo de trab
     iisreset  
     ```  
 
-    – ou —  
+    — ou —  
   
     ```  
     net stop iisadmin /y  
@@ -71,13 +71,13 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 7. Na caixa de diálogo **Propriedades de arquivos temporários do ASP.NET**, clique na guia **Segurança**.  
   
-8. Clique em **Avançadas**.  
+8. Clique em **Avançado**.  
   
 9. Na caixa de diálogo **Configurações de segurança avançadas para arquivos temporários do ASP.Net**, clique em **Adicionar**.  
   
     A **caixa de diálogo Selecionar usuário, computador ou grupo** é exibida.  
   
-10. Digite o nome de usuário na caixa **Inserir o nome do objeto a ser selecionado** e, em seguida, clique em **OK**. O nome de usuário deve seguir este formato: NomeDeDomínio \ nomedeusuário.  
+10. Digite o nome de usuário na caixa **Inserir o nome do objeto a ser selecionado** e, em seguida, clique em **OK**. O nome de usuário deve seguir este formato: NomedeDomínio\NomedeUsuário.  
   
 11. Na caixa de diálogo **Entrada de permissão para arquivos temporários do ASP.NET**, dê ao usuário **Controle Total** e, em seguida, clique em **OK** para fechar a caixa de diálogo **Entrada para arquivos temporários do ASP.NET**.  
   
@@ -85,5 +85,5 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 13. Clique em **OK** para fechar a caixa de diálogo **Propriedades de arquivos temporários do ASP.NET**.  
   
-## <a name="see-also"></a>Consulte também  
-[Depuração do ASP.NET: requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)  
+## <a name="see-also"></a>Consulte Também  
+[Depuração ASP.NET: requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly | Microsoft Docs
+title: 'IDebugObject:: IsReadOnly | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74b55895e440f900e59cd3b517e22dd8a0191414
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159087"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
@@ -40,13 +40,13 @@ int IsReadOnly(
   
 #### <a name="parameters"></a>Parâmetros  
  `pfIsReadOnly`  
- [out] Retorna não zero (`TRUE`) se esse objeto é somente leitura; caso contrário, retornará zero (`FALSE`).  
+ fora Retornará um valor diferente de zero ( `TRUE` ) se esse objeto for somente leitura; caso contrário, retornará zero ( `FALSE` ).  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um objeto somente leitura não pode ter seu valor alterado depois que ele é criado.  
+ Um objeto somente leitura não pode ter seu valor alterado depois de ser criado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f8bba5a4322ba02dfe6686774f3d16647fa87eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655987"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
@@ -24,7 +24,7 @@ ms.locfileid: "72655987"
 Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrastar e outros gestos e fazer com que o elemento responda.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Para interceptar cliques em formas
- No projeto DSL, em um arquivo de código separado dos arquivos de código gerados, escreva uma definição de classe parcial para a classe Shape. Substitua `OnDoubleClick()` ou um dos outros métodos que tem um nome que começa com `On...`. Por exemplo:
+ No projeto DSL, em um arquivo de código separado dos arquivos de código gerados, escreva uma definição de classe parcial para a classe Shape. Substituir `OnDoubleClick()` ou um dos outros métodos que tem um nome que começa com `On...` . Por exemplo:
 
 ```
 public partial class MyShape // change
@@ -38,10 +38,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Defina `e.Handled` como `true`, a menos que você queira que o evento seja passado para a forma ou o diagrama que o contém.
+> Defina `e.Handled` como `true` , a menos que você queira que o evento seja passado para a forma ou diagrama que o contém.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Para interceptar cliques em decoradores
- Os decoradores de imagem são transportados em uma instância da classe ImageField, que tem um método OnDoubleClick. Você pode interceptar os cliques se escrever uma subclasse ImageField. Os campos são configurados no método InitializeShapeFields. Portanto, você deve alterar esse método para instanciar sua subclasse em vez do ImageField regular. O método InitializeShapeFields está no código gerado da classe Shape. Você pode substituir a classe Shape se definir sua propriedade `Generates Double Derived`, conforme descrito no procedimento a seguir.
+ Os decoradores de imagem são transportados em uma instância da classe ImageField, que tem um método OnDoubleClick. Você pode interceptar os cliques se escrever uma subclasse ImageField. Os campos são configurados no método InitializeShapeFields. Portanto, você deve alterar esse método para instanciar sua subclasse em vez do ImageField regular. O método InitializeShapeFields está no código gerado da classe Shape. Você pode substituir a classe Shape se definir sua `Generates Double Derived` propriedade, conforme descrito no procedimento a seguir.
 
  Embora InitializeShapeFields seja um método de instância, ele é chamado apenas uma vez para cada classe. Portanto, apenas uma instância de ClickableImageField existe para cada campo em cada classe, não uma instância para cada forma no diagrama. Quando o usuário clica duas vezes em uma instância, você deve identificar qual instância foi atingida, como demonstra o código no exemplo.
 
@@ -51,7 +51,7 @@ public partial class MyShape // change
 
 2. Escolha ou crie uma forma que tenha um decorador de ícone e mapeie-a para uma classe de domínio.
 
-3. Em um arquivo de código separado dos arquivos na pasta `GeneratedCode`, crie a nova subclasse de ImageField:
+3. Em um arquivo de código separado dos arquivos na `GeneratedCode` pasta, crie a nova subclasse de ImageField:
 
     ```
     using Microsoft.VisualStudio.Modeling;
@@ -116,7 +116,7 @@ public partial class MyShape // change
     }
     ```
 
-1. Criar e executar a solução.
+1. Compile e execute a solução.
 
 2. Clique duas vezes no ícone em uma instância da forma. Sua mensagem de teste deve aparecer.
 
@@ -137,7 +137,7 @@ public partial class MyShape // change
 
 - Um conjunto de manipuladores de eventos de mouse é anexado a cada instância de compartimento quando ele é criado.
 
-- O evento `ClassShape.MouseDown` armazena o item atual.
+- O `ClassShape.MouseDown` evento armazena o item atual.
 
 - Quando o mouse sai do item atual, uma instância de MouseAction é criada, o que define o cursor e captura o mouse até que ele seja liberado.
 
@@ -398,5 +398,5 @@ namespace Company.CompartmentDrag
 
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Respondendo e propagando](../modeling/responding-to-and-propagating-changes.md) [Propriedades de alterações de decoradores](../modeling/properties-of-decorators.md)

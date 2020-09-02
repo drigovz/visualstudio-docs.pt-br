@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147455"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica que tipo de informações para recuperar para um determinado computador.  
+Especifica o tipo de informações a serem recuperadas para um determinado computador.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_MACHINE_INFO_FIELDS {   
@@ -45,29 +45,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
   
 ## <a name="members"></a>Membros  
  MCIF_NAME  
- Inicialização/usar o `bstrName` campo na estrutura.  
+ Inicializar/usar o `bstrName` campo na estrutura.  
   
  MCIF_FLAGS  
- Inicialização/usar o `Flags` campo na estrutura.  
+ Inicializar/usar o `Flags` campo na estrutura.  
   
  MIF_ALL  
- Inicialização/usar todos os campos na estrutura.  
+ Inicializar/usar todos os campos na estrutura.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores são passados para o [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) método para indicar quais membros do [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) são de estrutura a ser inicializado.  
+ Esses valores são passados para o método [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) para indicar quais membros da estrutura de [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) devem ser inicializados.  
   
- Também é usado na `Fields` membro do `MACHINE_INFO` estrutura para indicar quais campos são usados e válido.  
+ Também usado no `Fields` membro da `MACHINE_INFO` estrutura para indicar quais campos são usados e válidos.  
   
- Esses sinalizadores podem ser combinados com um bit a bit `OR`.  
+ Esses sinalizadores podem ser combinados com uma operadora de bits `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

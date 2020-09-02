@@ -1,5 +1,5 @@
 ---
-title: Manutenção diretrizes para aplicativos de Shell de isolados | Microsoft Docs
+title: Diretrizes de manutenção para aplicativos de shell isolados | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159277"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Diretrizes de manutenção para aplicativos de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando você distribui um aplicativo de shell isolado do Visual Studio, você deve ser capaz de fornecer atualizações de software para seu aplicativo após a instalação. Para fazer isso, você deve instalar o aplicativo usando um arquivo do Microsoft Installer (MSI). Esse tipo de instalação permite que as atualizações de software fornecidas pela Microsoft para ser redistribuído através da Web, baixar e consumida por seus clientes sem intervenção personalizada.  
+Ao distribuir um aplicativo de shell isolado do Visual Studio, você deve ser capaz de fornecer atualizações de software para seu aplicativo depois que ele é instalado. Para fazer isso, você deve instalar o aplicativo usando um arquivo do Microsoft Installer (MSI). Esse tipo de instalação permite que as atualizações de software fornecidas pela Microsoft sejam redistribuídas pelo download da Web e consumidas por seus clientes sem intervenção personalizada.  
   
-## <a name="servicing-requirements"></a>Requisitos de serviço  
- Você pode garantir que sua instalação do shell isolado pode permitir que as atualizações, certificando-se de que seu programa de instalação atende aos critérios de três a seguir.  
+## <a name="servicing-requirements"></a>Requisitos de manutenção  
+ Você pode garantir que a instalação do Shell isolado possa permitir atualizações, certificando-se de que seu programa de instalação atenda aos três critérios a seguir.  
   
 ### <a name="redistribute-by-using-an-msi"></a>Redistribuir usando um MSI  
- Você deve usar um MSI para redistribuir o seu aplicativo, porque um MSI preserva a identidade do produto e garante que o aplicativo tem um local físico no computador cliente. Módulos de mesclagem (arquivos. msm) não fornecem essas garantias e não devem ser usados.  
+ Você deve usar um MSI para redistribuir seu aplicativo, pois um MSI preserva a identidade do produto e garante que o aplicativo tenha um local físico no computador cliente. Os módulos de mesclagem (arquivos. msm) não fornecem essas garantias e não devem ser usados.  
   
-### <a name="accounting-for-custom-actions"></a>Estatísticas para ações personalizadas  
- Ações personalizadas são diretivas de instalação não padrão em um programa de instalação. Ações personalizadas alteram parâmetros, como locais de arquivos, configurações do registro, as configurações do usuário ou outros itens de instalação. Ações personalizadas podem manipular os dados no momento da instalação.  
+### <a name="accounting-for-custom-actions"></a>Contabilidade de ações personalizadas  
+ As ações personalizadas são diretivas de instalação não padrão em um programa instalador. As ações personalizadas alteram parâmetros como locais de arquivos, configurações do registro, configurações do usuário ou outros itens de instalação. Ações personalizadas podem manipular dados no momento da instalação.  
   
- Quando você usa ações personalizadas em um programa de instalação, você deve garantir que todas as ações personalizadas durante a instalação devem ter uma ação personalizada correspondente para desfazer a ação quando o usuário desinstala o aplicativo. Se seu programa de instalação falha para fornecer correspondente desinstalar ação personalizada, removendo o aplicativo sairá parcialmente instalado.  
+ Ao usar ações personalizadas em um programa de instalação, você deve garantir que cada ação personalizada de tempo de instalação deve ter uma ação personalizada correspondente para desfazer a ação quando o usuário desinstala o aplicativo. Se o programa de instalação falhar ao fornecer a ação personalizada de desinstalação correspondente, a remoção do aplicativo o deixará parcialmente instalado.  
   
-- Uma ação personalizada que se baseia em uma versão específica de um arquivo ou hash valores falhará quando as atualizações de software, alterar essas versões ou valores de hash. Nesse caso, a ação personalizada deve atualizar manualmente esses valores. Um problema adicional ocorrerá se as versões de um arquivo ou hash valores são compartilhadas entre versões do produto. Evite esta dependência sempre que possível.  
+- Uma ação personalizada que se baseia em uma versão específica de um arquivo ou valores de hash falhará quando as atualizações de software alterarem essas versões ou valores de hash. Nesse caso, a ação personalizada deve atualizar manualmente esses valores. Um problema adicional ocorre se as versões de um arquivo ou valores de hash forem compartilhadas entre as versões do produto. Evite essa dependência sempre que possível.  
   
-### <a name="accounting-for-shared-files"></a>Estatísticas para arquivos compartilhados  
- Arquivos compartilhados têm os mesmos nomes e são instalados no mesmo local por vários produtos. Esses produtos podem diferir em versão, unidade de manter de estoque (SKU) ou ambos, e os produtos podem coexistir em um determinado computador. No entanto, os arquivos compartilhados criar problemas de manutenção por vários motivos:  
+### <a name="accounting-for-shared-files"></a>Contabilidade de arquivos compartilhados  
+ Os arquivos compartilhados têm os mesmos nomes e são instalados no mesmo local por vários produtos. Esses produtos podem diferir em versão, SKU (unidade de manutenção de estoque) ou ambos, e os produtos podem coexistir em um determinado computador. No entanto, os arquivos compartilhados criam problemas de manutenção por vários motivos:  
   
-- Atualizar arquivos compartilhados pode causar problemas de compatibilidade de aplicativos, porque uma atualização para um aplicativo pode alterar a versão de um arquivo usado por um segundo aplicativo que não foi atualizado. Instaladores para produtos que compartilham arquivos de contagem de referências para os arquivos compartilhados. Portanto, a desinstalação de um produto não afeta arquivos compartilhados, além de diminuir a contagem de instâncias instaladas.  
+- A atualização de arquivos compartilhados pode causar problemas de compatibilidade de aplicativos porque uma atualização para um aplicativo pode alterar a versão de um arquivo usado por um segundo aplicativo que não foi atualizado. Instaladores de produtos que compartilham referências de contagem de arquivos para os arquivos compartilhados. Portanto, a desinstalação de um produto não afeta arquivos compartilhados além de decrementar a contagem de instâncias instaladas.  
   
-- O instalador de Quick Fix Engineering (QFE) será revertido para versões de arquivos para as versões dos produtos que o instalador QFE atendido. Esse processo potencialmente interrompe um aplicativo que tinha entregue a um arquivo compartilhado atualizado.
+- O instalador da QFE (Quick Fix Engineering) reverte versões de arquivos para as versões dos produtos atendidos pelo instalador QFE. Esse processo, potencialmente, interrompe um aplicativo que fornecia um arquivo compartilhado atualizado.

@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561841"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
+# <a name="canstop_reason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Usado para determinar se um programa pode interromper a execução depois de atingir um ponto específico na execução.  
+Usado para determinar se um programa pode parar a execução depois de atingir um ponto específico na execução.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_CANSTOP_REASON {   
@@ -43,21 +43,21 @@ public enum enum_CANSTOP_REASON { 
   
 ## <a name="members"></a>Membros  
  CANSTOP_ENTRYPOINT  
- Especifica o ponto de entrada de um determinado programa.  
+ Especifica o ponto de entrada do programa especificado.  
   
  CANSTOP_STEPIN  
- Especifica a entrar em uma função.  
+ Especifica a depuração em uma função.  
   
 ## <a name="remarks"></a>Comentários  
- Passado como um argumento para o [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método para confirmar com a sessão de depuração SDM (Gerenciador de), se ele for okey parar depois de atingir o ponto de entrada do programa, ou depois de passar para uma função ou método.  
+ Passado como um argumento para o método [getmotivo](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar com o SDM (Gerenciador de depuração de sessão) se não houver problema para parar depois de atingir o ponto de entrada do programa ou após a depuração em uma função ou método.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

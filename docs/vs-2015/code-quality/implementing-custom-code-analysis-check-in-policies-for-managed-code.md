@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651585"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementando políticas de check-in de análise do código personalizadas para código gerenciado
@@ -39,7 +39,7 @@ Uma política de check-in de análise de código especifica um conjunto de regra
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para criar a pasta de controle de versão para o conjunto de regras de política de check-in
 
-1. Em [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], expanda o nó projeto de equipe e clique em **controle do código-fonte**.
+1. No [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , expanda o nó projeto de equipe e clique em **controle do código-fonte**.
 
 2. No painel **pastas** , clique com o botão direito do mouse no projeto de equipe e clique em **nova pasta**.
 
@@ -47,7 +47,7 @@ Uma política de check-in de análise de código especifica um conjunto de regra
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Para criar o conjunto de regras de política de check-in
 
-1. No menu **arquivo** , aponte para **novo**e clique em **arquivo**.
+1. No menu **Arquivo** , aponte para **Novo**e clique em **Arquivo**.
 
 2. Na lista **categorias** , clique em **geral**.
 
@@ -82,7 +82,7 @@ Uma política de check-in de análise de código especifica um conjunto de regra
 
 3. Na lista **política de check-in** , clique duas vezes em **análise de código**e verifique se a caixa de seleção **impor análise de código para código gerenciado** está marcada.
 
-4. Na lista **executar este conjunto de regras** , clique em **conjunto de regras \<Select do controle do código-fonte >** .
+4. Na lista **executar este conjunto de regras** , clique em **\<Select Rule Set from Source Control>** .
 
 5. Digite o caminho do arquivo de conjunto de regras de política de check-in no controle de versão.
 
@@ -112,10 +112,10 @@ Uma política de check-in de análise de código especifica um conjunto de regra
 
 4. Se necessário, clique nas opções apropriadas nas listas de **configuração** e **plataforma** .
 
-5. Para executar a análise de código toda vez que o projeto de código for criado usando a configuração especificada, marque a caixa de seleção **Habilitar análise de código na compilação (define constante de CODE_ANALYSIS)** .
+5. Para executar a análise de código toda vez que o projeto de código for criado usando a configuração especificada, marque a caixa de seleção **Habilitar análise de código na compilação (define CODE_ANALYSIS constante)** .
 
 6. Para ignorar o código em componentes de outras empresas, marque a caixa de seleção **suprimir resultados do código gerado** .
 
-7. Na lista **executar este conjunto de regras** , clique em **\<Browse... >** .
+7. Na lista **executar este conjunto de regras** , clique em **\<Browse...>** .
 
 8. Especifique a versão local do arquivo de conjunto de regras da política de check-in.

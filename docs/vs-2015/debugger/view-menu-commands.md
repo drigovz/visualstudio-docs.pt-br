@@ -1,5 +1,5 @@
 ---
-title: Exibir comandos de Menu | Microsoft Docs
+title: Comandos do menu Exibir | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146471"
 ---
 # <a name="view-menu-commands"></a>Comandos do menu Exibir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O **exibição** menu fornece comandos para controlar o Spy + + interface do usuário.  
+O menu **Exibir** fornece comandos para controlar a interface do usuário do Spy + +.  
   
  **Fonte**  
- Abre o **fonte** caixa de diálogo, onde você pode selecionar uma fonte para o uso da exibição atual do Spy + +.  
+ Abre a caixa de diálogo **fonte** , onde é possível selecionar uma fonte para uso na exibição atual do Spy + +.  
   
- **Toolbar**  
+ **Barra de ferramentas**  
  Oculta ou exibe a barra de ferramentas.  
   
- **Barra de status**  
- Oculta ou exibe a barra de Status.  
+ **Barra de Status**  
+ Oculta ou exibe a barra de status.  
   
  **Propriedades**  
- Abre o **propriedades** caixa de diálogo para o modo ativo.
+ Abre a caixa de diálogo **Propriedades** do modo de exibição ativo.

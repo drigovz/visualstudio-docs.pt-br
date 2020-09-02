@@ -1,5 +1,5 @@
 ---
-title: 'Como: Limpar a pilha de desfazer | Microsoft Docs'
+title: 'Como: limpar a pilha de desfazer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549106"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Como: Limpar a pilha de desfazer
+# <a name="how-to-clear-the-undo-stack"></a>Como limpar a pilha de desfazer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O procedimento a seguir explica como limpar a pilha de desfazer.  
   
 ### <a name="to-clear-the-undo-stack"></a>Para limpar a pilha de desfazer  
   
-1. Para limpar o uso da pilha de desfazer a [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este é um exemplo disso:  
+1. Para limpar a pilha de desfazer, use o método [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) . Veja a seguir um exemplo disso:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -44,5 +44,5 @@ O procedimento a seguir explica como limpar a pilha de desfazer.
     }  
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Como: implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)

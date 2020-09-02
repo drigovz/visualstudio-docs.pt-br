@@ -1,5 +1,5 @@
 ---
-title: Depurador de código de exemplo de navegação (Xaml e c#) | Microsoft Docs
+title: Código de exemplo de navegação do depurador (XAML e C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552059"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Código de exemplo da navegação do depurador (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O código neste tópico é o arquivo de exemplo para o [navegar por uma sessão de depuração (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tópico.  
+O código neste tópico é o arquivo de exemplo para o tópico [navegar por uma sessão de depuração (XAML e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .  
   
-## <a name="sample-code"></a>Código de exemplo  
+## <a name="sample-code"></a>Exemplo de código  
   
 ```csharp  
 public MainPage()  

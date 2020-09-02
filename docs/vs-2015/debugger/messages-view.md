@@ -1,5 +1,5 @@
 ---
-title: A exibição de mensagens | Microsoft Docs
+title: Exibição de mensagens | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,73 +14,73 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157472"
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cada janela possui um fluxo de mensagem associado. Uma janela de exibição de mensagens exibe esse fluxo de mensagens. O identificador de janela, o código de mensagem e a mensagem são mostradas. Você pode criar um modo de exibição de mensagens para um thread ou processo também. Isso permite que você exiba as mensagens enviadas para todas as janelas pertencentes a um processo específico ou um thread, que é particularmente útil para capturar as mensagens de inicialização de janela.  
+Cada janela tem um fluxo de mensagens associado. Uma janela de exibição de mensagens exibe esse fluxo de mensagens. O identificador de janela, o código de mensagem e a mensagem são mostrados. Você também pode criar uma exibição de mensagens para um thread ou processo. Isso permite exibir mensagens enviadas a todas as janelas de propriedade de um processo ou thread específico, o que é particularmente útil para capturar mensagens de inicialização de janela.  
   
- Uma típica janela de exibição de mensagens é exibida abaixo. Observe que a primeira coluna contém o identificador de janela e a segunda coluna contém um código de mensagem (explicado [códigos de mensagem](../debugger/message-codes.md)). Mensagem decodificada de parâmetros e valores de retorno estão à direita.  
+ Uma janela de exibição de mensagens típica aparece abaixo. Observe que a primeira coluna contém o identificador de janela e a segunda coluna contém um código de mensagem (explicado em [códigos de mensagem](../debugger/message-codes.md)). Os parâmetros de mensagem decodificados e os valores de retorno estão à direita.  
   
- ![Spy&#43; &#43; a exibição de mensagens](../debugger/media/spy-messagesview.png "Spy + + _MessagesView")  
-Exibição de mensagens em Spy + +  
+ ![Exibição de mensagens do Spy&#43;&#43; ](../debugger/media/spy-messagesview.png "Spy + + _MessagesView")  
+Exibição de mensagens do Spy + +  
   
 ## <a name="procedures"></a>Procedimentos  
   
-#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir um modo de exibição de mensagens para uma janela, processo ou thread  
+#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir uma exibição de mensagens para uma janela, um processo ou um thread  
   
-1. Mover o foco para um [modo de exibição do Windows](../debugger/windows-view.md), [exibição de processos](../debugger/processes-view.md), ou [exibição de Threads](../debugger/threads-view.md) janela.  
+1. Mova o foco para um [modo](../debugger/windows-view.md)de exibição do Windows, [exibição de processos](../debugger/processes-view.md)ou janela de [exibição de threads](../debugger/threads-view.md) .  
   
-2. Localize o nó para o item cujas mensagens que você deseja examinar e selecioná-lo.  
+2. Localize o nó do item cujas mensagens você deseja examinar e selecione-o.  
   
-3. Dos **Spy** menu, escolha **mensagens de Log**.  
+3. No menu do **Spy** , escolha **mensagens de log**.  
   
-     O [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md) é aberta.  
+     A [caixa de diálogo opções de mensagem](../debugger/message-options-dialog-box.md) é aberta.  
   
 4. Selecione as opções para a mensagem que você deseja exibir.  
   
-5. Pressione **Okey** para começar a mensagens de log.  
+5. Pressione **OK** para iniciar o log de mensagens.  
   
-     Um abre a janela de exibição de mensagens e um **mensagens** menu é adicionado à barra de ferramentas Spy + +. Dependendo das opções selecionadas, as mensagens inicia o streaming para a janela de exibição de mensagens ativa.  
+     Uma janela de exibição de mensagens é aberta e um menu **mensagens** é adicionado à barra de ferramentas do Spy + +. Dependendo das opções selecionadas, as mensagens começam a ser transmitidas para a janela de exibição de mensagens ativas.  
   
-6. Quando você ter mensagens suficientes, escolha **parar log** da **mensagens** menu.  
+6. Quando você tiver mensagens suficientes, escolha **parar o registro em log** no menu **mensagens** .  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Controlando a exibição de mensagens](../debugger/how-to-control-messages-view.md)  
+ [Exibição de mensagens de controle](../debugger/how-to-control-messages-view.md)  
  Explica como gerenciar a exibição de mensagens.  
   
- [Procurando por uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Explica como localizar uma mensagem específica na exibição de mensagens.  
+ [Pesquisando uma mensagem no modo de exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Explica como localizar uma mensagem específica no modo de exibição de mensagens.  
   
- [Iniciando e parando a exibição do Log de mensagem](../debugger/how-to-start-and-stop-the-message-log-display.md)  
- Explica como iniciar e parar o log de mensagem.  
+ [Iniciando e parando a exibição do log de mensagens](../debugger/how-to-start-and-stop-the-message-log-display.md)  
+ Explica como iniciar e parar o log de mensagens.  
   
  [Códigos de mensagem](../debugger/message-codes.md)  
- Define os códigos para as mensagens listadas na exibição de mensagens.  
+ Define os códigos para as mensagens listadas no modo de exibição de mensagens.  
   
- [Exibindo propriedades de mensagem](../debugger/how-to-display-message-properties.md)  
+ [Exibindo Propriedades de mensagens](../debugger/how-to-display-message-properties.md)  
  Como mostrar mais informações sobre uma mensagem.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Exibições do Spy++](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
+ Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.  
   
  [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
+ Apresenta a ferramenta Spy + + e explica como ela pode ser usada.  
   
- [Caixa de diálogo Opções de Mensagem](../debugger/message-options-dialog-box.md)  
- Usado para selecionar quais mensagens são listadas na exibição de mensagens do Active Directory.  
+ [Caixa de diálogo Opções da Mensagem](../debugger/message-options-dialog-box.md)  
+ Usado para selecionar quais mensagens são listadas no modo de exibição mensagens ativas.  
   
  [Caixa de diálogo Pesquisa de Mensagens](../debugger/message-search-dialog-box.md)  
- Usado para localizar o nó de uma mensagem específica na exibição de mensagens.  
+ Usado para localizar o nó de uma mensagem específica no modo de exibição de mensagens.  
   
  [Caixa de diálogo Propriedades da Mensagem](../debugger/message-properties-dialog-box.md)  
- Usado para exibir as propriedades de uma mensagem selecionada no modo de exibição de mensagem.  
+ Usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagem.  
   
- [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência de Spy++](../debugger/spy-increment-reference.md)  
+ Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

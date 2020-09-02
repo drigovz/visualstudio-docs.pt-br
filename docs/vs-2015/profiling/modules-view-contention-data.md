@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157357"
 ---
 # <a name="modules-view---contention-data"></a>Modo de Exibição de Módulos – Dados de Contenção
@@ -27,7 +27,7 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
   
  A tabela a seguir descreve os valores das colunas na exibição de módulos de dados de contenção.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Bloqueado Exclusivo**|-Para uma função, a hora em que essa função foi impedida de executar o código no corpo da função. Não inclui o tempo bloqueado nas funções que foram chamadas pela função.<br />– Para um módulo, a soma do tempo de bloqueio exclusivo das funções no módulo.<br />- Para uma linha ou uma instrução, a hora em que esta linha ou instrução foi impedida de executar.|  
 |**% de Tempo Bloqueado Exclusivo**|-Para uma função ou um módulo, a porcentagem de tempo bloqueado todos na criação de perfil que era o tempo bloqueado exclusivo dessa função ou módulo.<br />– Para uma linha ou instrução, o percentual de todo o tempo bloqueado na execução de criação de perfil em que essa linha ou instrução teve sua execução bloqueada.|  
@@ -38,17 +38,17 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
 |**Contenções Inclusivas**|-Para uma função, o número de vezes que essa função ou uma função que foi chamada por esta função foi impedida de executar.<br />-Para um módulo, o número de contenções na qual pelo menos uma função desse módulo foi na pilha.<br />-Para uma linha ou uma instrução, o número de vezes que essa linha ou instrução foi impedida de executar.|  
 |**% de Contenções Inclusivas**|– Para uma função ou um módulo, o percentual de todas as contenções na execução de criação de perfil que eram contenções inclusivas dessa função ou módulo.<br />– Para uma linha ou uma instrução, o percentual de todo o tempo de bloqueio na execução do perfil no qual esta linha ou instrução estava em execução.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Nome do Módulo**|O nome do módulo que contém a função, linha ou ponteiro de instrução.|  
+|**Nome do módulo**|O nome do módulo que contém a função, linha ou ponteiro de instrução.|  
 |**Caminho do Módulo**|O caminho do módulo que contém o módulo, função, linha ou ponteiro de instrução.|  
 |**Nome**|O nome do módulo ou da função.|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
+|**Nome do processo**|O nome do processo.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
   
-## <a name="see-also"></a>Veja também  
- [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
- [Exibição Módulos](../profiling/modules-view.md)   
- [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)   
- [Exibição Módulos](../profiling/modules-view-sampling-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Exibição de módulos](../profiling/modules-view.md)   
+ [Exibição de módulos-instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)   
+ [Exibição de módulos](../profiling/modules-view-sampling-data.md)

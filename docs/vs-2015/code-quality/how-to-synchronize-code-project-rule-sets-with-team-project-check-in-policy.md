@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651596"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto da equipe
@@ -35,7 +35,7 @@ Você sincroniza as configurações de análise de código para projetos de cód
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
-2. Clique em **análise de código**.
+2. Clique em **Análise de código**.
 
 3. Na lista **executar este conjunto de regras** , clique no conjunto de regras da política de check-in.
 
@@ -45,9 +45,9 @@ Você sincroniza as configurações de análise de código para projetos de cód
 
 2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
-3. Clique em **análise de código**.
+3. Clique em **Análise de código**.
 
-4. Na lista **executar este conjunto de regras** , clique em **\<Browse... >** .
+4. Na lista **executar este conjunto de regras** , clique em **\<Browse...>** .
 
 5. Na caixa de diálogo **abrir** , especifique o arquivo de conjunto de regras de política de check-in.
 
@@ -65,6 +65,6 @@ Você sincroniza as configurações de análise de código para projetos de cód
 
 5. Abra a caixa de diálogo Propriedades do projeto de código e exiba a página de **análise de código** .
 
-6. Na lista **executar este conjunto de regras** , clique em **\<Browse... >** .
+6. Na lista **executar este conjunto de regras** , clique em **\<Browse...>** .
 
 7. Na caixa de diálogo **abrir** , especifique o arquivo de conjunto de regras.

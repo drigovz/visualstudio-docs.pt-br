@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145415"
 ---
 # <a name="understanding-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
@@ -52,6 +52,6 @@ O método de criação de perfil de *amostragem* das [!INCLUDE[vsprvs](../includ
 ## <a name="exclusive-percent"></a>Porcentagem Exclusiva  
  O percentual do número total de amostras exclusivas na criação de perfil que são amostras exclusivas do intervalo de dados ou função.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)   
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

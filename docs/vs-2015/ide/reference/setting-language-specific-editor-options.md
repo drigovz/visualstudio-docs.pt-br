@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 868c4e2f8b03002bbf7c6a6d0855f2a9af3fa95f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654300"
 ---
 # <a name="setting-language-specific-editor-options"></a>Definindo opções do Editor específicas do idioma
@@ -26,17 +26,17 @@ ms.locfileid: "72654300"
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferece uma variedade de opções de Editor de Texto que se aplicam a linguagens de programação específicas.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Opções, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Descreve as configurações para os construtores finais, reformatação de código, estrutura de tópicos e sugestões de correção de erros, entre outros, para [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] código.
+ [Opções, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Descreve as configurações de construtores finais, reformatação de código, estrutura de tópicos e sugestões de correção de erros, entre outros, para o [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] código.
 
- [Opções, editor de texto, CC++/, formatação](../../ide/reference/options-text-editor-c-cpp-formatting.md) descreve tópicos, recuo, informações rápidas e outras configurações para C e C++ código.
+ [Opções, editor de texto, C/C++, formatação](../../ide/reference/options-text-editor-c-cpp-formatting.md) Descreve tópicos, recuo, informações rápidas e outras configurações para código C e C++.
 
- [Opções, editor de texto, CC++/, avançado](../../ide/reference/options-text-editor-c-cpp-advanced.md) descreve as configurações para IntelliSense e arquivos de banco de C++dados ao usar C e.
+ [Opções, editor de texto, C/C++, avançado](../../ide/reference/options-text-editor-c-cpp-advanced.md) Descreve as configurações para IntelliSense e arquivos de banco de dados ao usar C e C++.
 
- [Opções, editor de texto C#,, formatação](../../ide/reference/options-text-editor-csharp-formatting.md) descreve as configurações de recuo, nova formatação de linha e quebra automática de texto, entre C# outros, para e J#.
+ [Opções, editor de texto, C#, formatação](../../ide/reference/options-text-editor-csharp-formatting.md) Descreve as configurações de recuo, formatação de nova linha e quebra automática de texto, entre outros, para C# e J#.
 
- [Opções, editor de texto C#,, avançado](../../ide/reference/options-text-editor-csharp-advanced.md) , descreve estrutura de tópicos, identificação de erro e configurações C# de comentário de documentação XML para e J#.
+ [Opções, editor de texto, C#, avançado](../../ide/reference/options-text-editor-csharp-advanced.md) Descreve a estrutura de tópicos, a identificação de erros e as configurações de comentário de documentação XML para C# e J#.
 
- [Opções, editor de texto C#,, o IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) descreve as configurações que especificam como a lista de conclusão do IntelliSense se C# comporta quando você trabalha no e no código do J#.
+ [Opções, editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Descreve as configurações que especificam como a lista de conclusão do IntelliSense se comporta quando você trabalha em código C# e J#.
 
  [Validação, CSS, editor de texto, caixa de diálogo opções](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc) Descreve as configurações de conclusão de instrução e correção de erro para folhas de estilo em cascata (CSS).
 

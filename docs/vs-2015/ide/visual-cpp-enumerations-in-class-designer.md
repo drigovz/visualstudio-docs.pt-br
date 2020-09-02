@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f967420e37d6337ce6d86cc56524f2751218f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651659"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Enumerações do Visual C++ no Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Designer de Classe oferece suporte ao `enum` do C++ e a tipos `enum class` de escopo. Veja um exemplo a seguir:
+O Designer de Classe oferece suporte ao `enum` do C++ e a tipos `enum class` de escopo. A seguir está um exemplo:
 
 ```
 enum CardSuit {
@@ -45,5 +45,5 @@ enum class CardSuit {
 
  Para obter mais informações sobre o uso do tipo `enum`, consulte [Enumerações](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).
 
-## <a name="see-also"></a>Veja também
- Trabalhando com [enumerações](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) de [código Visual C++ (Designer de classe)](../ide/working-with-visual-cpp-code-class-designer.md)
+## <a name="see-also"></a>Consulte Também
+ Trabalhando com [enumerações](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) de [Designer de classe (código de Visual C++)](../ide/working-with-visual-cpp-code-class-designer.md)

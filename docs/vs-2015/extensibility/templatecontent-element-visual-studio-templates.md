@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe87bff62c1044442b579664fb789f918a2e6c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186458"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Elemento TemplateContent (modelos do Visual Studio)
@@ -24,10 +24,10 @@ ms.locfileid: "68186458"
 
 Especifica o conteúdo do modelo.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <TemplateContent>  
@@ -42,7 +42,7 @@ Especifica o conteúdo do modelo.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Especifica se deve compilar a solução quando um projeto é criado a partir do modelo.|  
+|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Especifica se a solução deve ser compilada quando um projeto é criado a partir do modelo.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -58,13 +58,13 @@ Especifica o conteúdo do modelo.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit para.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Contém todos os metadados do modelo de projeto, modelo de item ou kit do iniciante.|  
   
 ## <a name="remarks"></a>Comentários  
  `TemplateContent` é um elemento obrigatório.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -90,6 +90,6 @@ Especifica o conteúdo do modelo.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

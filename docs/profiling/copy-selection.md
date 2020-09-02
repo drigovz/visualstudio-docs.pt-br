@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553221"
 ---
 # <a name="copy-selection"></a>Copiar seleção
 Para copiar toda a pilha de chamadas por meio da guia de relatório, clique em **Copiar**. Em seguida, é possível colar a pilha de chamadas em qualquer programa que dá suporte a essa ação.
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

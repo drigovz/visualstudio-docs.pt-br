@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652907"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
@@ -51,7 +51,7 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
 
 - Passar dados entre formulários.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -62,7 +62,7 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
 
 1. No menu **arquivo** , crie um novo projeto.
 
-2. Nomeie o projeto `PassingDataBetweenForms`.
+2. Dê ao projeto o nome de `PassingDataBetweenForms`.
 
 3. Selecione **Windows Forms aplicativo**e clique em **OK**. Para obter mais informações, consulte [aplicativos cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -146,11 +146,11 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
 
 6. Clique em **Avançar**.
 
-7. Para obter **um nome de DataTableMethod de preenchimento**, digite `FillByCustomerID`.
+7. Para o **preenchimento de um nome de DataTableMethod**, digite `FillByCustomerID` .
 
 8. Desmarque a opção **Retornar uma DataTable** e clique em **Avançar**.
 
-9. Clique em **Finalizar**.
+9. Clique em **Concluir**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Criar um método no Form2 para passar dados para
 
@@ -195,5 +195,5 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
 
 - Adicionar funcionalidade para salvar dados de volta no banco de dados. Para obter mais informações, consulte [salvar dados de volta no banco de dado](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Consulte também
- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

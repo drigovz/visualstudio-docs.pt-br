@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145539"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
@@ -39,11 +39,11 @@ A criação de perfil de interação de camada fornece informações adicionais 
   
 ## <a name="master-pane"></a>Painel principal  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|-   Para uma linha de nível superior, o nome do processo com perfil ou a página da Web.<br />-   Para uma linha de conexão de banco de dados, o nome do servidor que hospeda o banco de dados.|  
 |**Banco de dados**|O nome do banco de dados (somente linhas de conexão de banco de dados).|  
-|**Contagem**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|  
+|**Count**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|  
 |**Tempo total decorrido**|O tempo total gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|  
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|  
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|  
@@ -51,10 +51,10 @@ A criação de perfil de interação de camada fornece informações adicionais 
   
 ## <a name="database-connection-details-pane"></a>Painel Detalhes da Conexão de Banco de Dados  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Texto do comando**|A consulta SQL da solicitação.|  
-|**Contagem de consulta**|O número de vezes que a consulta foi executada.|  
+|**Contagem de consultas**|O número de vezes que a consulta foi executada.|  
 |**Tempo total decorrido**|O tempo total gasto na execução das instâncias da consulta.|  
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma instância da consulta.|  
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma instância da consulta.|  

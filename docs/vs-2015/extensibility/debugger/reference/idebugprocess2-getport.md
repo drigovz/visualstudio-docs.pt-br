@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPort | Microsoft Docs
+title: 'IDebugProcess2:: GetPort | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d77310abb6643ef6e9c17c21b5199d5889b1492
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188060"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém a porta que o processo está sendo executado.  
+Obtém a porta em que o processo está sendo executado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,11 +40,11 @@ int GetPort( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppPort`  
- [out] Retorna um [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa a porta na qual o processo foi iniciado.  
+ fora Retorna um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa a porta na qual o processo foi iniciado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

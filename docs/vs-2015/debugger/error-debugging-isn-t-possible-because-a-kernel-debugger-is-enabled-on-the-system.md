@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema | Microsoft Docs'
+title: 'Erro: a depuração não&#39;o t possível porque um depurador de kernel está habilitado no sistema | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197073"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: Depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: a depuração não&#39;o t possível porque um depurador de kernel está habilitado no sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você depura o código gerenciado, talvez receba a seguinte mensagem de erro:  
@@ -49,15 +49,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 - Atualizar seu aplicativo para usar a versão 4.0 ou 4.5 do CLR  
   
-     —ou—  
+     — ou —  
   
 - Desabilite a depuração de kernel e depure-a no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     —ou—  
+     — ou —  
   
 - Depure usando o depurador de kernel em vez do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     —ou—  
+     — ou —  
   
 - No depurador de kernel, desabilite as exceções em modo de usuário.  
   
@@ -105,6 +105,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)
