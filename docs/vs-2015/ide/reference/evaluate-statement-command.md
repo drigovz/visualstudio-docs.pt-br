@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657705"
 ---
 # <a name="evaluate-statement-command"></a>Comando Avaliar Instrução
@@ -32,7 +32,7 @@ Avalia e exibe a instrução fornecida.
 Debug.EvaluateStatement text
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `text` Necessário. A instrução a ser avaliada.
 
 ## <a name="remarks"></a>Comentários
@@ -60,5 +60,5 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comando de impressão](../../ide/reference/print-command.md) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela](../../ide/reference/command-window.md) de comando [Localizar/comando](../../ide/find-command-box.md) do [Visual Studio aliases de comando](../../ide/reference/visual-studio-command-aliases.md)

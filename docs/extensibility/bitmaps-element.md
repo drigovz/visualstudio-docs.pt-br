@@ -1,5 +1,5 @@
 ---
-title: Elemento Bitmaps | Microsoft Docs
+title: Elemento bitmaps | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739981"
 ---
-# <a name="bitmaps-element"></a>Elemento Bitmaps
-Grupos [elementos do Bitmap.](../extensibility/bitmap-element.md)
+# <a name="bitmaps-element"></a>Elemento bitmaps
+Agrupa elementos de [elemento de bitmap](../extensibility/bitmap-element.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,20 +37,20 @@ Grupos [elementos do Bitmap.](../extensibility/bitmap-element.md)
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Grupos elementos do Bitmap.|
-|[Elemento Bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|
+|[Elemento bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos de bitmap.|
+|[Elemento bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento comandos](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|
 
 ## <a name="example"></a>Exemplo
 
@@ -63,5 +63,5 @@ Grupos [elementos do Bitmap.](../extensibility/bitmap-element.md)
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Como o VSPackages adiciona elementos de interface de usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

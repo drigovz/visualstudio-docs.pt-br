@@ -11,22 +11,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204615"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se o usuário pode editar o campo de localização.  
+Especifica se o usuário pode editar o campo local.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<EnableEditOfLocationField>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <EnableEditOfLocationField> true/false </EnableEditOfLocationField>  
@@ -45,20 +45,20 @@ Especifica se o usuário pode editar o campo de localização.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando que se o usuário pode editar o **local** caixa de texto na **novo projeto** caixa de diálogo.  
+ O texto deve ser `true` ou `false` , indicando se o usuário pode ou não editar a caixa de texto **local** na caixa de diálogo **novo projeto** .  
   
 ## <a name="remarks"></a>Comentários  
- `EnableEditOfLocationField` é um elemento opcional. O valor padrão é `true`, que permite que o usuário edite o valor a **local** caixa de texto a **novo projeto** caixa de diálogo.  
+ `EnableEditOfLocationField` é um elemento opcional. O valor padrão é `true` , que permite ao usuário editar o valor na caixa de texto **local** na caixa de diálogo **novo projeto** .  
   
- No **novo projeto** caixa de diálogo, o **local** caixa de texto Especifica o diretório em que um novo projeto é salvo.  
+ Na caixa de diálogo **novo projeto** , a caixa de texto **local** especifica o diretório em que um novo projeto é salvo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +86,6 @@ Especifica se o usuário pode editar o campo de localização.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

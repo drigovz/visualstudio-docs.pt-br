@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c837e93e7df16acdbbedda58343c7d0d8c10b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657673"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Caixa de diálogo do teclado, ambiente e opções
@@ -23,5 +23,5 @@ ms.locfileid: "72657673"
 
 Use esta página para definir mapeamentos de teclado. Para obter mais informações sobre mapeamentos, consulte [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: Origens de eventos (Visual Studio SDK) | Microsoft Docs
+title: Origens de eventos (SDK do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a01216f8580e5c366cc6072448a0cf7ef4e6d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152808"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Fontes de evento (SDK do Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Há duas fontes de eventos: o mecanismo de depuração (DE) e a sessão de depuração do SDM (Gerenciador). Eventos enviados a partir DE tem o mecanismo não nulo, enquanto eventos enviados pelo SDM têm um mecanismo de NULL.  
+Há duas fontes de eventos: o mecanismo de depuração (DE) e o SDM (Gerenciador de depuração de sessão). Os eventos enviados de um DE têm um mecanismo não nulo, enquanto os eventos enviados do SDM têm um mecanismo nulo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como enviar a **IDebugProgramCreateEvent2** de para o SDM.  
+ O exemplo a seguir mostra como enviar o **IDebugProgramCreateEvent2** do de para o SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -74,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Enviar eventos](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Consulte Também  
+ [Enviando eventos](../../extensibility/debugger/sending-events.md)

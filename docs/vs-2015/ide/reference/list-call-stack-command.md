@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657656"
 ---
 # <a name="list-call-stack-command"></a>Comando Listar Pilha de Chamadas
@@ -36,31 +36,31 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowExternalCode:yes|no] [Thread:n] [index]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `index` Opcional. Define o registro de ativação atual e não exibe nenhuma saída.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  Cada opção pode ser invocada usando sua forma completa ou abreviada.
 
- /Count: `number` [ou]/C: `number` opcional. Número máximo de pilhas de chamadas a exibir. O valor padrão é ilimitado.
+ /Count: `number` [ou]/c: `number` opcional. Número máximo de pilhas de chamadas a exibir. O valor padrão é ilimitado.
 
- /ShowTypes: `yes`&#124; `no` [ou]/t: `yes`&#124; `no` opcional. Especifica se deve tipos de parâmetro devem ser exibidos. O valor padrão é `yes`.
+ /ShowTypes: `yes`&#124;`no` [ou]/t: `yes`&#124;`no` opcional. Especifica se deve tipos de parâmetro devem ser exibidos. O valor padrão é `yes`.
 
- /ShowNames: `yes`&#124; `no` [ou]/n: `yes`&#124; `no` opcional. Especifica se nomes de parâmetro devem ser exibidos. O valor padrão é `yes`.
+ /ShowNames: `yes`&#124;`no` [ou]/n: `yes`&#124;`no` opcional. Especifica se nomes de parâmetro devem ser exibidos. O valor padrão é `yes`.
 
- /ShowValues: `yes`&#124; `no` [ou]/v: `yes`&#124; `no` opcional. Especifica se valores de parâmetro devem ser exibidos. O valor padrão é `yes`.
+ /ShowValues: `yes`&#124;`no` [ou]/v: `yes`&#124;`no` opcional. Especifica se valores de parâmetro devem ser exibidos. O valor padrão é `yes`.
 
- /ShowModule: `yes`&#124; `no` [ou]/m: `yes`&#124; `no` opcional. Especifica se deve o nome do módulo deve ser exibido. O valor padrão é `yes`.
+ /ShowModule: `yes`&#124;`no` [ou]/m: `yes`&#124;`no` opcional. Especifica se deve o nome do módulo deve ser exibido. O valor padrão é `yes`.
 
- /ShowLineOffset: `yes`&#124; `no` [ou]/#: `yes`&#124; `no` opcional. Especifica se o deslocamento de linha deve ser exibido. O valor padrão é `no`.
+ /ShowLineOffset: `yes`&#124;`no` [ou]/#: `yes`&#124;`no` opcional. Especifica se o deslocamento de linha deve ser exibido. O valor padrão é `no`.
 
- /ShowByteOffset: `yes`&#124; `no` [ou]/b: `yes`&#124; `no` opcional. Especifica se o deslocamento de byte deve ser exibido. O valor padrão é `no`.
+ /ShowByteOffset: `yes`&#124;`no` [ou]/b: `yes`&#124;`no` opcional. Especifica se o deslocamento de byte deve ser exibido. O valor padrão é `no`.
 
- /ShowLanguage: `yes`&#124; `no` [ou]/l: `yes`&#124; `no` opcional. Especifica se o idioma deve ser exibido. O valor padrão é `no`.
+ /ShowLanguage: `yes`&#124;`no` [ou]/l: `yes`&#124;`no` opcional. Especifica se o idioma deve ser exibido. O valor padrão é `no`.
 
- /IncludeCallsAcrossThreads: `yes`&#124; `no` [ou]/i: `yes`&#124; `no` opcional. Especifica se chamadas de ou para outros threads devem ser incluídas. O valor padrão é `no`.
+ /IncludeCallsAcrossThreads: `yes`&#124;`no` [ou]/i: `yes`&#124;`no` opcional. Especifica se chamadas de ou para outros threads devem ser incluídas. O valor padrão é `no`.
 
- /ShowExternalCode: `yes`&#124; `no` opcional. Especifica se Apenas Meu Código deve ser exibido para a pilha de chamadas. Quando Apenas Meu Código está desativado, todo o código não do usuário é exibido. Quando Apenas Meu Código está ativado, o código não do usuário é exibido como `[external]` na saída da pilha de chamadas.
+ /ShowExternalCode: `yes`&#124;`no` opcional. Especifica se Apenas Meu Código deve ser exibido para a pilha de chamadas. Quando Apenas Meu Código está desativado, todo o código não do usuário é exibido. Quando Apenas Meu Código está ativado, o código não do usuário é exibido como `[external]` na saída da pilha de chamadas.
 
  Thread: `n` opcional. exibe a pilha de chamadas para o thread `n`. Se nenhum thread for especificado, exibirá a pilha de chamadas do thread atual.
 
@@ -87,5 +87,5 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Listar](../../ide/reference/list-disassembly-command.md) os [threads da lista](../../ide/reference/list-threads-command.md) de comandos de desmontagem do [Visual Studio comandos](../../ide/reference/visual-studio-commands.md) da [janela](../../ide/reference/command-window.md) de comando [Localizar/comandos caixa de comando](../../ide/find-command-box.md) do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

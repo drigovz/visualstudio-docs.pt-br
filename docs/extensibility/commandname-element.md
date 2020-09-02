@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739756"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
-O `CommandName` elemento especifica o texto que aparece na categoria teclado na caixa de diálogo **Opções** e na lista **Comandos** na caixa de diálogo **Personalizar.**
+O `CommandName` elemento Especifica o texto que aparece na categoria teclado na caixa de diálogo **Opções** e na lista **comandos** na caixa de diálogo **Personalizar** .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <CommandName>MyCommand</CommandName>
@@ -40,7 +40,7 @@ O `CommandName` elemento especifica o texto que aparece na categoria teclado na 
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento cordas](../extensibility/strings-element.md)|Grupos de texto `ButtonText` elementos, tais como e `CommandName`.|
+|[Elemento Strings](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` e `CommandName` .|
 
 ## <a name="see-also"></a>Confira também
-- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

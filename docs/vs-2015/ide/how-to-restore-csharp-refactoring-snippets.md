@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670795"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Como restaurar snippets de refatoração C#
@@ -56,5 +56,5 @@ Operações de refatoração C# dependem de snippets de código encontrados no s
 
 6. Clique em **Abrir** na caixa de diálogo **Diretório de Snippets de Código** e clique em **OK** no Gerenciador de Snippets de Código.
 
-## <a name="see-also"></a>Veja também
- [C# ](../ide/visual-csharp-code-snippets.md) [Trechos de código](../ide/code-snippets.md) [de refatoraçãoC#() de](../csharp-ide/refactoring-csharp.md) trechos de código Visual
+## <a name="see-also"></a>Consulte Também
+ [Trechos de código](../ide/code-snippets.md) [de refatoração (C#) de](../csharp-ide/refactoring-csharp.md) [trechos de código do Visual c#](../ide/visual-csharp-code-snippets.md)

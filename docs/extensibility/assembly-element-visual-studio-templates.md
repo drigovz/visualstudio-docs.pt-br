@@ -1,5 +1,5 @@
 ---
-title: Elemento de montagem (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento assembly (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740037"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Elemento de montagem (modelos do Visual Studio)
-Especifica informações sobre um conjunto, que o modelo usa para adicionar uma referência dessa montagem aos projetos.
+# <a name="assembly-element-visual-studio-templates"></a>Elemento assembly (modelos do Visual Studio)
+Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos.
 
- \<VSTemplate \<>ModeloConteúdo \<> \<Referências \<>> de> de>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
+ \<Assembly>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,14 +48,14 @@ Especifica informações sobre um conjunto, que o modelo usa para adicionar uma 
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de montagem para adicionar quando o item é adicionado a um projeto.|
+|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- Este texto especifica o conjunto para adicionar a um projeto quando o modelo de item é instanciado. Este nome de montagem deve ser especificado de uma das seguintes maneiras:
+ Esse texto especifica o assembly a ser adicionado a um projeto quando o modelo de item é instanciado. Esse nome de assembly deve ser especificado de uma das seguintes maneiras:
 
-- Como um nome de assembléia completo. Por exemplo:
+- Como um nome de assembly completo. Por exemplo:
 
     ```
     <Assembly>
@@ -60,19 +63,19 @@ Especifica informações sobre um conjunto, que o modelo usa para adicionar uma 
     </Assembly>
     ```
 
-- Como simples referência de texto. Por exemplo:
+- Como referência de texto simples. Por exemplo:
 
     ```
     <Assembly> System </Assembly>
     ```
 
 ## <a name="remarks"></a>Comentários
- `Assembly`é um elemento `Reference`filho necessário de .
+ `Assembly` é um elemento filho obrigatório de `Reference` .
 
- Os `Reference` `References,` elementos `Assembly` e elementos só podem ser usados `Item`em arquivos *.vstemplate* que tenham um `Type` valor de atributo de .
+ Os `Reference` `References,` elementos e `Assembly` podem ser usados somente em arquivos *. vstemplate* que tenham um `Type` valor de atributo de `Item` .
 
 ## <a name="example"></a>Exemplo
- O exemplo a `TemplateContent` seguir ilustra o elemento de um modelo de item. Este XML adiciona referências aos conjuntos *System.dll* e *System.Data.dll.*
+ O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona referências aos assemblies *System.dll* e *System.Data.dll* .
 
 ```
 <TemplateContent>

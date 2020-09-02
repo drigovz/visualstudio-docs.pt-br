@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: de59aac6bc40e58b6da9b71fd0cc81d432fe41bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670838"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: Diagramas de impressão do modo de gráfico e exibir o modelo de conteúdo
@@ -31,5 +31,5 @@ Este tópico descreve como imprimir um diagrama do modo de gráfico ou do modo d
 
 3. Imprimir a imagem salvo no arquivo XPS usando um visualizador XPS.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  Modelo de conteúdo da [exibição de gráfico](../xml-tools/graph-view.md) [Exibir](../xml-tools/content-model-view.md) [espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)

@@ -17,17 +17,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657739"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [OBSERVAÇÃO]
-> A Lista de Erros exibe informações sobre uma mensagem de erro específica. É possível copiar o número do erro ou o texto da cadeia de caracteres de erro da Janela de Saída. Para exibir a Janela de Saída, pressione Ctrl+Alt+O. Consulte [Janela de Saída](../../ide/reference/output-window.md).
+> A Lista de Erros exibe informações sobre uma mensagem de erro específica. É possível copiar o número do erro ou o texto da cadeia de caracteres de erro da Janela de Saída. Para exibir a Janela de Saída, pressione Ctrl+Alt+O. Consulte [janela de saída](../../ide/reference/output-window.md).
 
  É possível desenvolver aplicativos mais rapidamente usando a janela **Lista de Erros**. Por exemplo, é possível executar as seguintes tarefas:
 
@@ -47,7 +47,7 @@ ms.locfileid: "72657739"
 
   É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.
 
-  Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.
+  Para classificar a lista, clique em qualquer cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste qualquer cabeçalho de coluna para a esquerda ou para a direita.
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar as configurações, clique em **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -77,7 +77,7 @@ ms.locfileid: "72657739"
  É possível copiar a lista de erros e salvá-la em um arquivo. Selecione os erros que você deseja copiar, clique com o botão direito do mouse na seleção e, em seguida, no menu de contexto, selecione **Copiar**. Depois é possível colar os erros em um arquivo. Se você colar os erros em uma planilha do Excel, os campos serão exibidos como colunas diferentes.
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
- Severidade exibe os diferentes tipos de **lista de erros** entrada (**erro**, **mensagem**, **aviso**, **aviso (ativo)** , **aviso (inativo)** .
+ Severidade exibe os diferentes tipos de **lista de erros** entrada (**erro**, **mensagem**, **aviso**, **aviso (ativo)**, **aviso (inativo)**.
 
  Código exibe o código de erro.
 

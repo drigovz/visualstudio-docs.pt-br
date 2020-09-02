@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento FileAssociation (aplicativo ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150838"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (aplicativo ClickOnce)
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;elemento FileAssociation (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identifica uma extensão de arquivo a ser associado com o aplicativo.  
+Identifica uma extensão de arquivo a ser associada ao aplicativo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <fileAssociation  
@@ -41,22 +41,22 @@ Identifica uma extensão de arquivo a ser associado com o aplicativo.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O elemento `fileAssociation` é opcional. O elemento tem os seguintes atributos.  
+ O elemento `fileAssociation` é opcional. O elemento tem os atributos a seguir.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`extension`|Necessário. A extensão de arquivo a ser associado com o aplicativo.|  
-|`description`|Necessário. Uma descrição do tipo de arquivo para uso pelo shell.|  
-|`progid`|Necessário. Um nome que identifica exclusivamente o tipo de arquivo.|  
-|`defaultIcon`|Necessário. Especifica o ícone a ser usado para arquivos com essa extensão. O arquivo de ícone deve ser especificado usando o [ \<arquivo > elemento](../deployment/file-element-clickonce-application.md) dentro de [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md) que contém esse elemento.|  
+|`extension`|Obrigatórios. A extensão de arquivo a ser associada ao aplicativo.|  
+|`description`|Obrigatórios. Uma descrição do tipo de arquivo a ser usado pelo shell.|  
+|`progid`|Obrigatórios. Um nome que identifica exclusivamente o tipo de arquivo.|  
+|`defaultIcon`|Obrigatórios. Especifica o ícone a ser usado para arquivos com esta extensão. O arquivo de ícone deve ser especificado usando o [ \<file> elemento](../deployment/file-element-clickonce-application.md) dentro do [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md) que contém esse elemento.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse elemento deve incluir uma referência ao namespace XML para "urn: schemas-microsoft-com:clickonce.v1". Se o `<fileAssociation>` elemento é usado, ele deve vir após o `<application>` elemento em seu pai [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md).  
+ Esse elemento deve incluir uma referência de namespace XML para "urn: schemas-microsoft-com: ClickOnce. v1". Se o `<fileAssociation>` elemento for usado, ele deverá vir após o `<application>` elemento em seu [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md)pai.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] não substituirá as associações de arquivo existente. No entanto, um aplicativo ClickOnce pode substituir a extensão de arquivo para o usuário atual. Após a desinstalação do aplicativo ClickOnce, ClickOnce exclui a associação de arquivo para o usuário e a associação de por máquina está ativa novamente.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] não substituirá as associações de arquivo existentes. No entanto, um aplicativo ClickOnce pode substituir a extensão do arquivo somente para o usuário atual. Depois que o aplicativo ClickOnce for desinstalado, o ClickOnce excluirá a associação de arquivo para o usuário e a associação por máquina estará ativa novamente.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir ilustra `fileAssociation` elementos em um aplicativo de manifesto para um aplicativo de editor de texto implantado usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Este exemplo de código também inclui o [ \<arquivo > elemento](../deployment/file-element-clickonce-application.md) exigido pelo `defaultIcon` atributo.  
+ O exemplo de código a seguir ilustra os `fileAssociation` elementos em um manifesto de aplicativo para um aplicativo de editor de texto implantado usando o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Este exemplo de código também inclui o [ \<file> elemento](../deployment/file-element-clickonce-application.md) exigido pelo `defaultIcon` atributo.  
   
 ```  
 <file name="text.ico" size="4286">  
@@ -81,5 +81,5 @@ Identifica uma extensão de arquivo a ser associado com o aplicativo.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Consulte Também  
+ [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

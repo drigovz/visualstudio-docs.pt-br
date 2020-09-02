@@ -1,5 +1,5 @@
 ---
-title: Como definir propriedades de análise de código para C-C++ Projects | Microsoft Docs
+title: Como definir propriedades de análise de código para projetos C-C + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277991"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como definir propriedades de análise de código para projetos do C/C++
@@ -38,7 +38,7 @@ Você pode configurar quais regras a ferramenta de análise de código usa para 
  A lista de **configurações** e a lista de **plataformas** permite que você aplique diferentes configurações de análise de código a diferentes combinações de plataforma e configuração de projeto. Por exemplo, você pode direcionar a análise de código para aplicar um conjunto de regras ao seu projeto para compilações de depuração e um conjunto diferente para compilações de versão.  
   
 ## <a name="enabling-code-analysis"></a>Habilitando análise de código  
- Você pode decidir se deseja habilitar a análise de código para seu projeto selecionando **Habilitar análise de códigoC++ para C/no Build**. Em combinação com a lista de **configuração** , você pode, por exemplo, decidir desabilitar a análise de código para compilações de depuração e habilitá-la para compilações de versão.  
+ Você pode decidir se deseja habilitar a análise de código para seu projeto selecionando **Habilitar análise de código para C/C++ na compilação**. Em combinação com a lista de **configuração** , você pode, por exemplo, decidir desabilitar a análise de código para compilações de depuração e habilitá-la para compilações de versão.  
   
  Se o seu projeto contiver código gerenciado, você poderá decidir se deseja habilitar ou desabilitar a análise de código selecionando **Habilitar análise de código na compilação**.  
   
@@ -53,5 +53,5 @@ Você pode configurar quais regras a ferramenta de análise de código usa para 
  Se o seu projeto contiver código gerenciado, você poderá selecionar as regras a serem aplicadas em uma análise de código selecionando um conjunto de regras na lista **executar este conjunto de regras** .  
   
 ## <a name="see-also"></a>Consulte Também  
- [Analisando a Qualidade do Código Gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Análise de código para avisos do C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Analisando a qualidade de código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+ [Análise de código para avisos C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

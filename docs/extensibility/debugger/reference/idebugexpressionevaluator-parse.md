@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionAvaliador::Parse | Microsoft Docs
+title: IDebugExpressionEvaluator::P grosseira | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729497"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
-Este método converte uma seqüência de expressão em uma expressão parsed.
+Esse método converte uma cadeia de caracteres de expressão em uma expressão analisada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,30 +49,30 @@ int Parse(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `upstrExpression`\
-[em] A seqüência de expressão a ser analisado.
+no A cadeia de caracteres de expressão a ser analisada.
 
 `dwFlags`\
-[em] Uma coleção de constantes [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) que determinam como a expressão deve ser analisado.
+no Uma coleção de constantes [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) que determinam como a expressão deve ser analisada.
 
 `nRadix`\
-[em] Radix para ser usado para interpretar qualquer informação numérica.
+no Base a ser usada para interpretar qualquer informação numérica.
 
 `pbstrError`\
-[fora] Retorna o erro como texto legível por humanos.
+fora Retorna o erro como texto legível.
 
 `pichError`\
-[fora] Retorna a posição de caractere do início do erro na seqüência de expressão.
+fora Retorna a posição do caractere do início do erro na cadeia de caracteres da expressão.
 
 `ppParsedExpression`\
-[fora] Retorna a expressão analisado em um objeto [IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+fora Retorna a expressão analisada em um objeto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método produz uma expressão parsed, não um valor real. Uma expressão analisado está pronta para ser avaliada, ou seja, convertida em um valor.
+ Esse método produz uma expressão analisada, não um valor real. Uma expressão analisada está pronta para ser avaliada, ou seja, convertida em um valor.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
