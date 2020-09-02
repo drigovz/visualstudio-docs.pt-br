@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645569"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
@@ -27,18 +27,18 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 
  A sintaxe básica é a seguinte:
 
- \<*caminho para*>\HlpCtntmgr.exe /operation \<*argumento*> /catalogname \<*nome*> /locale \<*localidade*> /sourceuri \<*caminho .msha ou URL*>
+ \<*path to*>\HlpCtntmgr.exe/Operation \<*argument*> /CatalogName \<*name*> /locale \<*locale*> /SourceUri \<*.msha path or URL*>
 
- Para obter mais informações sobre a sintaxe de linha de comando HlpCtntMgr.exe, consulte [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../ide/command-line-arguments-for-the-help-content-manager.md).
+ Para obter mais informações sobre HlpCtntMgr.exe sintaxe de linha de comando, consulte [argumentos de linha de comando para o Gerenciador de conteúdo da ajuda](../ide/command-line-arguments-for-the-help-content-manager.md).
 
  Para obter mais informações sobre como criar conteúdo, criar um ponto de extremidade de serviço de Intranet e tipos de atividades semelhantes, consulte o SDK do Visualizador da Ajuda.
 
 ## <a name="deploying-local-help-content-from-the-internet"></a>Implantando o conteúdo da ajuda local da Internet
  Você pode usar o serviço de empacotamento de conteúdo do MSDN para implantar o conteúdo da ajuda local da Internet para computadores do cliente. Use a seguinte sintaxe:
 
- \\<*caminho para*>\v2.2\HlpCtntmgr.exe /operation \<*nome*> /catalogname \<*nome de catálogo*> /locale \<*localidade*>
+ \\<*caminho para* # C0\v2.2\HlpCtntmgr.exe/Operation \<*name*> /CatalogName \<*catalog name*> /locale \<*locale*>
 
- Para obter mais informações sobre a sintaxe de linha de comando HlpCtntMgr.exe, consulte [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../ide/command-line-arguments-for-the-help-content-manager.md).
+ Para obter mais informações sobre HlpCtntMgr.exe sintaxe de linha de comando, consulte [argumentos de linha de comando para o Gerenciador de conteúdo da ajuda](../ide/command-line-arguments-for-the-help-content-manager.md).
 
  Requisitos:
 
@@ -51,7 +51,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - A fonte padrão para a ajuda ainda será online.
 
   > [!TIP]
-  > Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).
+  > Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Help Content Manager Overrides](../ide/help-content-manager-overrides.md).
 
 - Os clientes serão solicitados ainda a instalar o conteúdo da ajuda básica na primeira inicialização do Visual Studio. Você pode desabilitar esse prompt alterando a chave do Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.
 
@@ -60,7 +60,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 
 ##### <a name="to-install-english-content-from-the-internet"></a>Para instalar o conteúdo em inglês da Internet
 
-1. Escolha **Iniciar** e **Executar**.
+1. Escolha **Iniciar** e, em seguida, escolha **executar**.
 
 2. Digite o seguinte:
 
@@ -78,15 +78,15 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
 
   > [!TIP]
-  > Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).
+  > Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Help Content Manager Overrides](../ide/help-content-manager-overrides.md).
 
   Restrições:
 
-- Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).
+- Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Help Content Manager Overrides](../ide/help-content-manager-overrides.md).
 
 - A fonte padrão para a ajuda ainda será online.
 
-- Os clientes serão solicitados ainda a instalar o conteúdo da ajuda básica na primeira inicialização do Visual Studio. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).
+- Os clientes serão solicitados ainda a instalar o conteúdo da ajuda básica na primeira inicialização do Visual Studio. Para obter mais informações, consulte [Help Content Manager Overrides](../ide/help-content-manager-overrides.md).
 
 ### <a name="create-the-content-set"></a>Crie o conjunto de conteúdo
  Antes de criar o conjunto de conteúdo básico, primeiro você deve desinstalar todo o conteúdo local do Visual Studio no computador de destino.
@@ -127,7 +127,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 
 4. Digite o seguinte:
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome da pasta*>\ /y /e /k /o
+     Xcopy%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
      Por exemplo: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
@@ -201,5 +201,5 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 
 3. Execute o arquivo bat em computadores locais em que o conteúdo da ajuda deve estar instalado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Argumentos de linha de comando para o Gerenciador de conteúdo da ajuda do Gerenciador de conteúdo da](../ide/command-line-arguments-for-the-help-content-manager.md) ajuda [substitui](../ide/help-content-manager-overrides.md)

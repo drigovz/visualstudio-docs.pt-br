@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283054"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
@@ -22,7 +22,7 @@ Você pode testar a conexão com um banco de dados ou serviço e explorar o cont
 
    Instalado por padrão no Visual Studio. Pode ser usado para testar conexões e exibir SQL Server bancos de dados, qualquer outro banco de dados que tenha um provedor ADO.NET instalado e alguns serviços do Azure. Também mostra objetos de baixo nível, como contadores de desempenho do sistema, logs de eventos e filas de mensagens. Se uma fonte de dados não tiver um provedor ADO.NET, ela não aparecerá aqui, mas você ainda poderá usá-la no Visual Studio conectando-se programaticamente.
 
-- Gerenciador de Nuvem
+- Cloud Explorer
 
    Instale essa janela manualmente como uma extensão do Visual Studio de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Fornece uma funcionalidade especializada para explorar e se conectar aos serviços do Azure.
 
@@ -54,6 +54,6 @@ Depois de escolher a fonte de dados, clique em **testar conexão**. Se não tive
 
 Se o teste for bem sucedido, você estará pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que significa realmente um *modelo de dados* com base no serviço ou banco subjacente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

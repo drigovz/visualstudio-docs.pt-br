@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664284"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Código de L2DBForm.xaml.cs
@@ -21,7 +21,7 @@ ms.locfileid: "72664284"
 
 Este tópico contém o conteúdo e a descrição do código-fonte C# no arquivo L2DBForm.xaml.cs. A classe parcial de L2XDBForm contida neste arquivo pode ser dividida em três seções lógicas: membros de dados e o botão de `OnRemove` e de `OnAddBook` clique manipuladores de eventos.
 
-## <a name="data-members"></a>Membros de Dados
+## <a name="data-members"></a>Membros de dados
  Dois membros de dados confidenciais são usados para associar essa classe para recursos da janela usados em L2DBForm.xaml.
 
 - O namespace `myBooks` variável é inicializada a `"http://www.mybooks.com"`.
@@ -135,7 +135,7 @@ namespace LinqToXmlDataBinding {
 ```
 
 ### <a name="comments"></a>Comentários
- Para o código-fonte XAML associado desses manipuladores, consulte [Código-fonte de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md).
+ Para a origem XAML associada para esses manipuladores, consulte [código-fonte L2DBForm. XAML](../designers/l2dbform-xaml-source-code.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Walkthrough: LinqToXmlDataBinding exemplo](../designers/walkthrough-linqtoxmldatabinding-example.md) de [código-fonte L2DBForm. XAML](../designers/l2dbform-xaml-source-code.md)

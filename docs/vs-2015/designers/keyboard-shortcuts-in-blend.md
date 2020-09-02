@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664294"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Atalhos de teclado no Blend
@@ -21,41 +21,41 @@ ms.locfileid: "72664294"
 
 Atalhos de projeto
 
-|Para fazer isso|Faça isto|
+|Para fazer isto|Faça isto|
 |----------------|-------------|
 |Criar um novo projeto|CTRL+SHIFT+N|
-|Abrir um projeto ou uma solução (e não um site)|CTRL+SHIFT+O|
+|Abrir um projeto ou uma solução (e não um site)|Ctrl+Shift+O|
 |Fechar uma solução|CTRL+SHIFT+C|
-|Salvar uma cópia da solução ou do site|CTRL+SHIFT+P|
-|Adicionar um item existente ao projeto|CTRL+I|
+|Salvar uma cópia da solução ou do site|Ctrl+Shift+P|
+|Adicionar um item existente ao projeto|Ctrl+I|
 |Adicionar uma referência a uma DLL (WPF)|ALT+SHIFT+R|
 |Compilar o projeto|CTRL+SHIFT+B|
 |Testar o projeto ou o site|F5|
 
 ## <a name="document-shortcuts"></a>Atalhos de documento
 
-|Para fazer isso|Faça isto|
+|Para fazer isto|Faça isto|
 |----------------|-------------|
 |Alternar entre documentos abertos|CTRL+TAB|
-|Salvar o documento ativo|CTRL+S|
+|Salvar o documento ativo|Ctrl+S|
 |Salvar todos os documentos|CTRL+SHIFT+S|
 |Fechar o documento ativo|CTRL+W|
 |Fechar todos os documentos abertos|CTRL+SHIFT+W|
-|Desfazer a última ação|CTRL+Z|
+|Desfazer a última ação|Ctrl+Z|
 |Refazer a última ação realizada|CTRL+Y ou CTRL+SHIFT+Z|
 |Criar uma anotação de tempo de design|CTRL+SHIFT+T|
 |Recortar|CTRL+X|
 |Copiar|CTRL+C|
 |Colar|CTRL+V|
-|Excluir|DELETE|
+|Excluir|Delete (excluir)|
 |Localizar texto (somente exibição de XAML ou editor de JavaScript)|CTRL+F|
 |Localizar a próxima ocorrência do texto (somente exibição de XAML ou editor de JavaScript)|F3 ou CTRL+H|
 
 ## <a name="object-shortcuts"></a>Atalhos de objeto
 
-|Para fazer isso|Faça isto|
+|Para fazer isto|Faça isto|
 |----------------|-------------|
-|Criar um novo item|CTRL+N|
+|Criar um item|Ctrl+N|
 |Duplicar um objeto|Manter a tecla ALT pressionada e arrastar o objeto|
 |Reassociar um objeto|Arrastar o objeto sobre um painel de layout e pressionar ALT|
 |Editar o texto em um controle|F2 (ESC para sair)|
@@ -75,7 +75,7 @@ Atalhos de projeto
 |Agrupar objetos em um painel de layout|CTRL+G|
 |Desagrupar objetos|CTRL+SHIFT+G|
 |Trazer o objeto selecionado para frente|CTRL+SHIFT+]|
-|Trazer para frente|CTRL+]|
+|Trazer para frente|Ctrl+]|
 |Enviar o objeto selecionado para trás|CTRL+SHIFT+[|
 |Recuar|CTRL+[|
 |Criar um controle de usuário com base nos objetos selecionados (WPF)|F8|
@@ -86,15 +86,15 @@ Atalhos de projeto
 |Criar um caminho composto|CTRL+8|
 |Liberar um caminho composto|CTRL+SHIFT+8|
 |Bloquear seleção|CTRL+L|
-|Desbloquear todos os objetos|CTRL+SHIFT+L|
-|Mostrar seleção|CTRL+T|
-|Ocultar seleção|CTRL+3|
+|Desbloquear todos os objetos|Ctrl+Shift+L|
+|Mostrar seleção|Ctrl+T|
+|Ocultar seleção|Ctrl+3|
 |Selecionar todos os objetos|CTRL+A|
 |Limpar a seleção de todos os objetos|CTRL+SHIFT+A|
 
 ## <a name="view-shortcuts"></a>Exibir atalhos
 
-|Para fazer isso|Faça isto|
+|Para fazer isto|Faça isto|
 |----------------|-------------|
 |Mudar entre os modos de exibição **Design**, **Código** e **Dividir**|F11|
 |Aumentar o zoom no artboard|CTRL+SINAL DE IGUALDADE|
@@ -103,14 +103,14 @@ Atalhos de projeto
 |Mover o artboard para a esquerda ou direita|SHIFT e girar a roda do mouse|
 |Mover o artboard para cima ou baixo|CTRL e girar o roda do mouse|
 |Ajustar a seleção segundo o tamanho da tela|CTRL+0|
-|Exibir a prancheta no tamanho real|CTRL+1|
+|Exibir a prancheta no tamanho real|Ctrl+1|
 |Mostrar ou ocultar alças|F9|
 |Mostrar ou ocultar os limites do objeto|CTRL+SHIFT+H|
 |Mudar entre os modos de exibição **Design**, **XAML** e **Dividir**|F11|
 
 ## <a name="workspace-shortcuts"></a>Atalhos de workspace
 
-|Para fazer isso|Faça isto|
+|Para fazer isto|Faça isto|
 |----------------|-------------|
 |Mudar entre os workspaces **Animação** e **Design**|CTRL+F11|
 |Exibir ou ocultar o painel **Ativos**|CTRL+PONTO|

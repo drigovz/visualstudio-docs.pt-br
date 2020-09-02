@@ -12,30 +12,30 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591665"
 ---
 # <a name="vctooltask-base-class"></a>Classe base VCToolTask
 
 Muitas tarefas são herdadas na classe <xref:Microsoft.Build.Utilities.Task> e na classe [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask). Essa classe adiciona vários parâmetros para as tarefas que derivam dela. Esses parâmetros são listados neste documento.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros das classes base **VCToolTask**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**ActiveToolSwitchesValues**|Cadeia de caracteres opcional **Dictionary\<, parâmetro ToolSwitch>**.|
-|**AdditionalOptions**|Parâmetro opcional **de string.**|
-|**EffectiveWorkingDirectory**|Parâmetro opcional **de string.**|
+|**ActiveToolSwitchesValues**|Parâmetro **de \<string, ToolSwitch> dicionário** opcional.|
+|**AdditionalOptions**|Parâmetro de **cadeia de caracteres** opcional.|
+|**EffectiveWorkingDirectory**|Parâmetro de **cadeia de caracteres** opcional.|
 |**EnableErrorListRegex**|Parâmetro opcional **bool**.<br/><br/>O padrão é `true`.|
-|**ErrorListRegex**|Parâmetro **opcional ITaskItem[].**|
-|**ErrorListListExclusion**|Parâmetro **opcional ITaskItem[].**|
-|**GenerateCommandLine**|Parâmetro opcional **de string.**<br/><br/>Usa valores **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
-|**GenerateCommandLineExceptSwitches**|Parâmetro opcional **de string.**<br/><br/>Usa valores **string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
+|**ErrorListRegex**|Parâmetro opcional **ITaskItem []** .|
+|**ErrorListListExclusion**|Parâmetro opcional **ITaskItem []** .|
+|**GenerateCommandLine**|Parâmetro de **cadeia de caracteres** opcional.<br/><br/>Usa valores **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
+|**GenerateCommandLineExceptSwitches**|Parâmetro de **cadeia de caracteres** opcional.<br/><br/>Usa valores **string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
 
 ## <a name="see-also"></a>Confira também
 

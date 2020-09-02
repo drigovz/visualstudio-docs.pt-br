@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283717"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>Gerar campo privado e Propriedade do Construtor
@@ -41,6 +41,6 @@ Esta refatoração aplica-se a:
 
    ![Gerar campo particular do construtor](media/generate-private-field-from-constructor.png)
 
-## <a name="see-also"></a>Veja também 
+## <a name="see-also"></a>Confira também 
 
 - [Refatoração](../refactoring-in-visual-studio.md)

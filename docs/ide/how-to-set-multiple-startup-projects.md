@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 369b0f0dd41f028e49378d73ebb65c59931bbd60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284081"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Como: Definir vários projetos de inicialização
@@ -32,8 +32,8 @@ O Visual Studio permite especificar como mais de um projeto é executado ao inic
 
 4. Escolha a opção **Vários Projetos de Inicialização** e defina as ações apropriadas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
 - [Criar soluções e projetos](../ide/creating-solutions-and-projects.md)
 - [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)

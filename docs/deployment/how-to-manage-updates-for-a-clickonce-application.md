@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382348"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como gerenciar atualizações em um aplicativo ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como as verificações de atualização são executadas, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como as verificações de atualização são executadas, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.
 
  Você pode configurar o aplicativo para verificar se há atualizações automaticamente antes do início do aplicativo ou em intervalos definidos após o início do aplicativo. Além disso, você pode especificar uma versão mínima necessária; ou seja, uma atualização será instalada se a versão do usuário for menor do que a versão necessária.
 
@@ -105,7 +105,7 @@ ms.locfileid: "85382348"
 
 7. Compile seu aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Caixa de diálogo Atualizações do aplicativo](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

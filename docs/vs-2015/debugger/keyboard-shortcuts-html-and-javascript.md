@@ -1,5 +1,5 @@
 ---
-title: (HTML e JavaScript) de atalhos de teclado | Microsoft Docs
+title: Atalhos de teclado (HTML e JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199678"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
  Atalhos de teclado no Visual Studio para depurar aplicativos da Store usando HTML e JavaScript.  
   
@@ -43,8 +43,8 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 |Ação|Atalho|  
 |------------|--------------|  
-|Executar um comando do console|Enter|  
-|Limpar o console|ESC|  
+|Executar um comando do console|Digite|  
+|Limpar o console|Esc|  
 |Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|  
   
 ## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM  
@@ -55,10 +55,10 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |Selecionar elemento|Ctrl+B|  
 |Alternar entre exibir e ocultar caixas de realce da página da Web usando **Selecionar Elemento**|Ctrl+Shift+I|  
 |Confirmar alterações usando **Editar como HTML**|Ctrl+Enter|  
-|Descartar as alterações usando **Editar como HTML**|ESC|  
+|Descartar as alterações usando **Editar como HTML**|Esc|  
 |Aumentar o valor de CSS escolhido em 1|Seta para Cima|  
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|  
   
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+## <a name="see-also"></a>Consulte Também  
+ [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

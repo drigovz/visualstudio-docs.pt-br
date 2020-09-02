@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Microsoft Docs
+title: 'IDebugBinder3:: getmemoryobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735723"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Este método recupera um objeto de memória que representa a memória à que este objeto está vinculado.
+Esse método recupera um objeto de memória que representa a memória à qual esse objeto está associado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,18 +43,18 @@ int GetMemoryObject(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pField`\
-[em] Especifica para qual campo obter o objeto de memória.
+no Especifica para qual campo obter o objeto de memória.
 
 `uConstant`\
-[em] Representa um endereço de memória ou valor para um valor constante.
+no Representa um endereço de memória ou um valor para um valor constante.
 
 `ppObject`\
-[fora] Um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando a memória à que este objeto está vinculado.
+fora Um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa a memória à qual esse objeto está associado.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

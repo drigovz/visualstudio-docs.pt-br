@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979816"
 ---
 # <a name="spanspan-constructor"></a>Construtor span::span
 
-Inicia uma nova instância da classe `span`.
+Inicializa uma nova instância da classe `span`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ span(
 );
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
 
 `_Series` Contexto de série de marcador válido.
 
@@ -70,4 +70,4 @@ span(
 
 ## <a name="see-also"></a>Confira também
 
-- [classe de extensão](../profiling/span-class.md)
+- [Classe span](../profiling/span-class.md)

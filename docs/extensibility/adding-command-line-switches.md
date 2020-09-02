@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903478"
 ---
 # <a name="add-command-line-switches"></a>Adicionar opções de linha de comando
@@ -29,12 +29,12 @@ Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackag
 
  Os parâmetros nomeados são mostrados nas descrições a seguir.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 | Argumentos | O número de argumentos para a opção. Pode ser "*" ou uma lista de argumentos. |
 | À DEMANDLOAD | Carregue o VSPackage automaticamente se ele estiver definido como 1, caso contrário, definido como 0. |
 | HelpString | A cadeia de caracteres de ajuda ou a ID de recurso da cadeia de caracteres a ser exibida com **devenv/?**. |
-| Nome | A opção. |
+| Name | A opção. |
 | PackageGuid | O GUID do pacote. |
 
  O primeiro valor de argumentos é geralmente 0 ou 1. Um valor especial de ' * ' pode ser usado para indicar que todo o restante da linha de comando é o argumento. Isso pode ser útil para cenários de depuração em que um usuário deve passar uma cadeia de comando de depurador.

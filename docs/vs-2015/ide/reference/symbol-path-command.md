@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651013"
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
@@ -33,7 +33,7 @@ Define a lista de diretórios para o depurador pesquisar símbolos.
 Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `pathname` Opcional. Uma lista de caminhos delimitada por ponto-e-vírgula para que o depurador pesquise símbolos.
 
 ## <a name="remarks"></a>Comentários
@@ -53,5 +53,5 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Veja também
- [Janela de comando ](../../ide/reference/command-window.md) comandos do [Visual Studio](../../ide/reference/visual-studio-commands.md)
+## <a name="see-also"></a>Consulte Também
+ [Command Window](../../ide/reference/command-window.md) [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) da janela de comando

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646822"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configurações sincronizadas no Visual Studio
@@ -40,11 +40,11 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 
   - Todas as configurações da página de opções **Ambiente**, **Inicialização**
 
-  - Todas as configurações das páginas de opções **Editor de Texto**
+  - Todas as configurações nas páginas de opções do **Editor de texto**
 
 - Todas as configurações das páginas de opções Designer XAML
 
-- Alias de comando definidos pelo usuário. Para obter mais informações sobre como definir aliases de comando, consulte [Aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Alias de comando definidos pelo usuário. Para obter mais informações sobre como definir aliases de comando, consulte [aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 - Layouts de janela definidos pelo usuário na página **Janela &#124; Gerenciar Layouts de Janela**
 
@@ -57,5 +57,5 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 > [!WARNING]
 > As configurações não são sincronizadas entre o Visual Studio 2013 e o Visual Studio 2015. Quando você abre o Visual Studio 2015 pela primeira vez, suas configurações do Visual Studio 2013 são migradas, mas não é possível migrá-las de volta ao Visual Studo 2013.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283041"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
@@ -118,6 +118,6 @@ Se você quiser associar a um objeto em um assembly ou projeto que não é exibi
 
 Você pode criar uma fonte de dados de uma lista do SharePoint executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **SharePoint** . O SharePoint expõe dados por meio de WCF Data Services, portanto, criar uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. A seleção do item do **SharePoint** no **Assistente de configuração da fonte de dados** abre a caixa de diálogo **Adicionar referência de serviço** , em que você se conecta ao serviço de dados do SharePoint apontando para o servidor do SharePoint. Isso requer o SDK do SharePoint.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

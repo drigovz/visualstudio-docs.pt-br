@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
 ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87375892"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
@@ -51,7 +51,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 7. Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
 
-8. É isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+8. Pronto!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
 ## <a name="eligibility"></a>Qualificação
 

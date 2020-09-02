@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar um visualizador | Microsoft Docs'
+title: 'Como: usar um visualizador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -24,23 +24,23 @@ caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446424"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64778367"
 ---
-# <a name="how-to-use-a-visualizer"></a>Como: Usar um visualizador
-Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar visualizadores de **DataTips**, um **inspeção** janela, o **Autos** janela, ou o **Locals** janela.  
+# <a name="how-to-use-a-visualizer"></a>Como usar um visualizador
+Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar os visualizadores de **DataTips**, uma janela de **inspeção** , a janela **autos** ou a janela **locais** .  
   
  Os visualizadores não têm suporte na Compact Framework.  
   
 > [!NOTE]
-> Na **Store** aplicativos, somente o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).  
+> Nos aplicativos da **Store** , há suporte apenas para os visualizadores de texto padrão, HTML, XML e JSON. Não há suporte para visualizadores personalizados (criados pelo usuário).  
   
 ### <a name="to-open-a-visualizer"></a>Para abrir um visualizador  
   
-1. Clique no ícone de lupa que aparece ao lado do nome da variável no **DataTips**, um **inspeção** janela, ou nos **Autos**, **Locals**, ou **Inspeção rápida** janela.  
+1. Clique no ícone de lupa que aparece ao lado de um nome de variável em **DataTips**, uma janela de **inspeção** ou na janela **automáticos**, **locais**ou de **inspeção rápida** .  
   
      Uma lista de visualizadores é exibida.  
   
@@ -56,10 +56,10 @@ Você pode usar um visualizador para exibir o conteúdo de uma variável ou obje
   
      - ou -  
   
-     `My Documents\Visual Studio 2010\Visualizers` *Versão do Visual Studio* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers`*Versão do Visual Studio*`\Visualizers`  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Como: Escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Como instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Como escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Exibir valores de dados em dicas de dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

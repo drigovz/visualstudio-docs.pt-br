@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235076"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
@@ -25,7 +25,7 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Confirme que Editor Attaching está habilitado
 
-No menu do Unity, selecione **Editar preferências de >** e, em seguida, selecione a guia **Ferramentas externas** . Confirme se a caixa de seleção **anexação do editor** está habilitada. Para saber mais, confira a [Documentação de preferências do Unity](https://docs.unity3d.com/Manual/Preferences.html).
+No menu do Unity, selecione **Editar preferências de >** e, em seguida, selecione a guia **Ferramentas externas** . Confirme se a caixa de seleção de **anexação do editor** está habilitada. Para saber mais, confira a [Documentação de preferências do Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Não é possível anexar
 

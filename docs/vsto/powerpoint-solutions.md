@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985668"
 ---
 # <a name="powerpoint-solutions"></a>Soluções do PowerPoint
   O Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office PowerPoint. Você pode usar os suplementos do VSTO para automatizar o PowerPoint, estender recursos do PowerPoint ou personalizar a interface do usuário do PowerPoint.
 
- Para obter mais informações sobre os suplementos do VSTO, consulte [introdução à programação de suplementos](getting-started-programming-vsto-add-ins.md) do VSTO e [arquitetura de suplementos do VSTO](architecture-of-vsto-add-ins.md). Se você for novo na programação com o Microsoft Office, consulte [introdução &#40;ao desenvolvimento do Office no&#41;Visual Studio](getting-started-office-development-in-visual-studio.md).
+ Para obter mais informações sobre os suplementos do VSTO, consulte [introdução à programação de suplementos](getting-started-programming-vsto-add-ins.md) do VSTO e [arquitetura de suplementos do VSTO](architecture-of-vsto-add-ins.md). Se você for novo na programação com o Microsoft Office, consulte Introdução [&#40;desenvolvimento do Office no Visual Studio&#41;](getting-started-office-development-in-visual-studio.md).
 
  [!INCLUDE[appliesto_pptallapp](includes/appliesto-pptallapp-md.md)]
 
@@ -42,11 +42,11 @@ ms.locfileid: "72985668"
 
 - Adicionar ou alterar formas em um slide.
 
-  Para acessar o modelo de objeto do PowerPoint de um suplemento do VSTO, use o campo `Application` da classe `ThisAddIn` em seu projeto. O campo `Application` retorna um objeto de [aplicativo](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) que representa a instância atual do PowerPoint. Para obter mais informações, consulte [programar suplementos do VSTO](programming-vsto-add-ins.md).
+  Para acessar o modelo de objeto do PowerPoint a partir de um suplemento do VSTO, use o `Application` campo da `ThisAddIn` classe em seu projeto. O `Application` campo retorna um objeto de [aplicativo](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) que representa a instância atual do PowerPoint. Para obter mais informações, consulte [programar suplementos do VSTO](programming-vsto-add-ins.md).
 
-  Quando você chama o modelo de objeto do PowerPoint, usa os tipos que são fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos no namespace [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) . Para obter mais informações sobre assemblies de interoperabilidade primária, consulte [ &#40;visão&#41; geral do desenvolvimento de soluções do Office VSTO](office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primária do Office](office-primary-interop-assemblies.md)
+  Quando você chama o modelo de objeto do PowerPoint, usa os tipos que são fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos no namespace [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) . Para obter mais informações sobre assemblies de interoperabilidade primária, consulte [visão geral do desenvolvimento de soluções do office &#40;VSTO&#41;](office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primária do Office](office-primary-interop-assemblies.md).
 
-## <a name="WordOMDocumentation"></a>Usar a documentação do modelo de objeto do PowerPoint
+## <a name="use-the-powerpoint-object-model-documentation"></a><a name="WordOMDocumentation"></a> Usar a documentação do modelo de objeto do PowerPoint
  Para obter informações completas sobre o modelo de objeto do PowerPoint, consulte a referência do assembly de interoperabilidade primária do PowerPoint (PIA) e a referência do modelo de objeto do VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primária
@@ -57,7 +57,7 @@ ms.locfileid: "72985668"
 ### <a name="vba-object-model-reference"></a>Referência de modelo de objeto VBA
  A referência do modelo de objeto do VBA documenta o modelo de objeto do PowerPoint como ele é exposto ao código Visual Basic for Applications (VBA). Para obter mais informações, consulte [referência de modelo de objeto do PowerPoint 2010](/office/vba/api/overview/PowerPoint/object-model).
 
- Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA (assembly de interoperabilidade primária) do PowerPoint. Por exemplo, o objeto de apresentação na referência de modelo de objeto do VBA corresponde ao tipo de [apresentação](/previous-versions/office/developer/office-2010/ff761925(v=office.14)) no pia do PowerPoint. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência C# para Visual Basic ou Visual se quiser usá-los em um projeto de suplemento do VSTO do PowerPoint criado por usando o Visual Studio.
+ Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA (assembly de interoperabilidade primária) do PowerPoint. Por exemplo, o objeto de apresentação na referência de modelo de objeto do VBA corresponde ao tipo de [apresentação](/previous-versions/office/developer/office-2010/ff761925(v=office.14)) no pia do PowerPoint. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência para Visual Basic ou Visual C# se quiser usá-los em um projeto de suplemento do VSTO do PowerPoint que você cria usando o Visual Studio.
 
 ## <a name="customize-the-user-interface-of-powerpoint"></a>Personalizar a interface do usuário do PowerPoint
  Você pode modificar a interface do usuário do PowerPoint das seguintes maneiras.
@@ -70,10 +70,10 @@ ms.locfileid: "72985668"
 
  Para obter mais informações sobre como personalizar a interface do usuário do PowerPoint e de outros aplicativos Microsoft Office, consulte [personalização da interface do usuário do Office](office-ui-customization.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [Introdução à programação de suplementos do VSTO](getting-started-programming-vsto-add-ins.md)
-- [Visão geral &#40;do desenvolvimento de soluções do Office VSTO&#41;](office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](office-solutions-development-overview-vsto.md)
 - [Arquitetura de suplementos do VSTO](architecture-of-vsto-add-ins.md)
 - [Como: criar projetos do Office no Visual Studio](how-to-create-office-projects-in-visual-studio.md)
 - [Programar suplementos do VSTO](programming-vsto-add-ins.md)

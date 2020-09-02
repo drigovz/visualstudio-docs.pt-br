@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 606c6595f83003c463d218cf7253407ae2e925d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160753"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (Modelos do Visual Studio)
@@ -20,7 +20,7 @@ ms.locfileid: "68160753"
 
 Especifica que o modelo de item usa uma referência de SDK.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <VSTemplate>      
@@ -34,10 +34,10 @@ Especifica que o modelo de item usa uma referência de SDK.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -49,7 +49,7 @@ Especifica que o modelo de item usa uma referência de SDK.
  Um valor de texto é obrigatório.  
   
 ## <a name="remarks"></a>Comentários  
- Esse texto Especifica a referência SDK para adicionar a um projeto quando o modelo de item é instanciado.  
+ Esse texto especifica a referência do SDK a ser adicionada a um projeto quando o modelo de item é instanciado.  
   
 ```xml  
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">   
@@ -61,8 +61,8 @@ Especifica que o modelo de item usa uma referência de SDK.
 ...  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Elemento References (modelos do Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
- [Elemento de referência (modelos do Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+ [Elemento Reference (modelos do Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

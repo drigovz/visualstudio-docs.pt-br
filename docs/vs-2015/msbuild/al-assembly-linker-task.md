@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85fb11429822d49d1a86697d9480f3a8ab0759de
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684686"
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o AL.exe, consulte [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
+A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre AL.exe, consulte [Al.exe (vinculador de assembly)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `AL`.  
@@ -46,7 +46,7 @@ A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica uma cadeia de caracteres para o campo `Description` no assembly. Para obter mais informações, consulte a documentação da opção `/descr[iption]` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`EmbedResources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Incorpora os recursos especificados na imagem que contém o manifesto do assembly. Essa tarefa copia o conteúdo do arquivo de recurso para a imagem. Os itens passados para esse parâmetro podem ter metadados opcionais chamados `LogicalName` e `Access` anexados a eles. Os metadados `LogicalName` são usados para especificar o identificador interno do recurso.  Os metadados `Access` podem ser definidos como `private` para tornar o recurso não visível para outros assemblies. Para obter mais informações, consulte a documentação da opção `/embed[resource]` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`EvidenceFile`|Parâmetro `String` opcional.<br /><br /> Insere o arquivo especificado no assembly com o nome do recurso de `Security.Evidence`.<br /><br /> Não é possível usar `Security.Evidence` para recursos comuns. Esse parâmetro corresponde à opção `/e[vidence]` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
-|`ExitCode`|Parâmetro somente leitura de saída `Int32` opcional.<br /><br /> Especifica o código de saída fornecido pelo comando executado.|  
+|`ExitCode`|Parâmetro de saída opcional somente leitura `Int32`.<br /><br /> Especifica o código de saída fornecido pelo comando executado.|  
 |`FileVersion`|Parâmetro `String` opcional.<br /><br /> Especifica uma cadeia de caracteres para o campo `File Version` no assembly. Para obter mais informações, consulte a documentação da opção `/fileversion` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Flags`|Parâmetro `String` opcional.<br /><br /> Especifica um valor para o campo `Flags` no assembly. Para obter mais informações, consulte a documentação da opção `/flags` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`GenerateFullPaths`|Parâmetro `Boolean` opcional.<br /><br /> Faz com que a tarefa use o caminho absoluto para todos os arquivos reportados em uma mensagem de erro. Esse parâmetro corresponde à opção `/fullpaths` em [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
@@ -94,6 +94,6 @@ A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE
 </AL>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)

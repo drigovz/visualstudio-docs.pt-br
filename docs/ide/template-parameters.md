@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169359"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
@@ -23,7 +23,7 @@ Você poderá substituir os valores do modelo quando for criada uma instância d
 
 ## <a name="declare-and-enable-template-parameters"></a>Declarar e habilitar parâmetros de modelo
 
-Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo: 
+Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 - $safeprojectname$
 
@@ -58,10 +58,10 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
 |safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
-|safeitemrootname|Igual a `safeitemname`.|
+|safeitemrootname|Mesmo que `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
 |time|A hora atual no formato DD/MM/AAAA 00:00:00.|
-|nome de solução especificado|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedsolutionname` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedsolutionname` estará em branco.|
+|specifiedsolutionname|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedsolutionname` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedsolutionname` estará em branco.|
 |userdomain|O domínio do usuário atual.|
 |Nome de Usuário|O nome de usuário atual.|
 |webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
@@ -121,5 +121,5 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 
 - [Como substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
-- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

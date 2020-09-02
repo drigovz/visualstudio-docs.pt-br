@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
+title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c5e57c003257650f5ca60d4a7c3d9becea3e776
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188454"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Um arquivo executável é iniciado.  
+Inicia um arquivo executável.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -54,38 +54,38 @@ int LaunchSuspended( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pszExe`  
- [in] O nome do executável a ser iniciado. Isso pode ser um caminho completo ou relativo ao diretório de trabalho especificado no `pszDir` parâmetro.  
+ no O nome do executável a ser iniciado. Isso pode ser um caminho completo ou relativo ao diretório de trabalho especificado no `pszDir` parâmetro.  
   
  `pszArgs`  
- [in] Os argumentos a serem passados para o executável. Pode ser um valor nulo se não houver nenhum argumento.  
+ no Os argumentos a serem passados para o executável. Pode ser um valor nulo se não houver argumentos.  
   
  `pszDir`  
- [in] O nome do diretório de trabalho usado pelo executável. Pode ser um valor nulo se nenhum diretório de trabalho é necessário.  
+ no O nome do diretório de trabalho usado pelo executável. Pode ser um valor nulo se nenhum diretório de trabalho for necessário.  
   
  `bstrEnv`  
- [in] Bloco de ambiente de cadeias de caracteres terminada em nulo, seguido por um terminador nulo adicional.  
+ no Bloco de ambiente de cadeias de caracteres terminadas em nulo, seguido por um terminador nulo adicional.  
   
  `hStdInput`  
- [in] Identificador para um fluxo de entrada alternativo. Pode ser 0 se o redirecionamento não for necessário.  
+ no Identificador para um fluxo de entrada alternativo. Pode ser 0 se o redirecionamento não for necessário.  
   
  `hStdOutput`  
- [in] Identificador para um fluxo de saída alternativos. Pode ser 0 se o redirecionamento não for necessário.  
+ no Identificador para um fluxo de saída alternativo. Pode ser 0 se o redirecionamento não for necessário.  
   
  `hStdError`  
- [in] Identificador para um fluxo de saída de erro alternativa. Pode ser 0 se o redirecionamento não for necessário.  
+ no Identificador para um fluxo de saída de erro alternativo. Pode ser 0 se o redirecionamento não for necessário.  
   
  `ppPortProcess`  
- [out] Retorna um [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa o processo iniciado.  
+ fora Retorna um objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa o processo iniciado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método deve iniciar o processo de forma que ele está suspenso e não executar qualquer código. O [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) método é chamado para retomar o processo.  
+ Esse método deve iniciar o processo para que ele seja suspenso e não execute nenhum código. O método [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) é chamado para retomar o processo.  
   
- Um programa também pode ser iniciado de um mecanismo de depuração. Para obter detalhes, consulte [inicializando um programa](../../../extensibility/debugger/launching-a-program.md).  
+ Um programa também pode ser iniciado por meio de um mecanismo de depuração. Para obter detalhes, consulte [iniciando um programa](../../../extensibility/debugger/launching-a-program.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   

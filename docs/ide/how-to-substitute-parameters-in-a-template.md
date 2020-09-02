@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283938"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Como substituir parâmetros em um modelo
@@ -40,7 +40,7 @@ A seção a seguir mostra como modificar um modelo para substituir o nome de um 
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)

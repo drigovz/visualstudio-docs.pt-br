@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382205"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
@@ -119,7 +119,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
    > - A solução está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\` .
    >
    > - A solução é publicada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` .
-   > - A versão mais recente dos arquivos de aplicativo publicados está localizada no seguinte diretório:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - A versão mais recente dos arquivos de aplicativo publicados está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > Você não precisa usar o nome ou os locais de diretório descritos acima. O nome e os locais descritos acima são usados apenas para ilustrar as etapas necessárias para publicar sua solução.
 
@@ -175,7 +175,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
 
    Depois de executar essas etapas, você pode mover os arquivos publicados para o local do qual deseja que os usuários finais instalem o aplicativo. Se você pretende atualizar a solução com frequência, pode mover esses comandos para um script e executar o script sempre que publicar uma nova versão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 -[Solucionando problemas de erros específicos em implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Visão geral dos estilos visuais](/windows/desktop/Controls/visual-styles-overview)

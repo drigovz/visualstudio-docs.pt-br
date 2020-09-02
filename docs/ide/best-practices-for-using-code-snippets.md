@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591704"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
@@ -29,9 +29,9 @@ Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as
 
 Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o seguinte:
 
-- Encontrando um local acessível. Os usuários podem não ter acesso à pasta Arquivos do *programa* do computador, então armazenar arquivos com os arquivos do aplicativo pode não funcionar.
+- Encontrando um local acessível. Os usuários podem não ter acesso à pasta *arquivos de programas* do computador, portanto, o armazenamento de arquivos com os arquivos de aplicativo pode não funcionar.
 
-- Encontrando um local seguro. Armazenar arquivos na pasta raiz *(C:\\*) não é seguro. Para os dados do aplicativo, recomendamos a pasta *Dados do Aplicativo.* Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
+- Encontrando um local seguro. O armazenamento de arquivos na pasta raiz (*C \\ :*) não é seguro. Para dados de aplicativos, recomendamos a pasta *dados de aplicativos* . Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
 
 - Usando um nome de arquivo válido. Você pode usar os controles <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> para reduzir a probabilidade de nomes de arquivo inválidos. Lembre-se de que entre o momento em que o usuário seleciona um arquivo e o momento em que o código manipula o arquivo, o arquivo poderá ser excluído. Além disso, o usuário poderá não ter permissões para gravar no arquivo.
 
@@ -51,7 +51,7 @@ A segurança de um snippet depende do local em que ele é usado no código-fonte
 
 - Passando dados para tecnologias de script
 
-Para obter mais informações, consulte [Aplicativos de proteção](../ide/securing-applications.md).
+Para obter mais informações, consulte [Securing Applications](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Snippets de código baixados
 
@@ -69,6 +69,6 @@ Os snippets de código do IntelliSense instalados pelo Visual Studio não são e
 
 ## <a name="see-also"></a>Confira também
 
-- [Trechos de código Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [Garantia de aplicações](../ide/securing-applications.md)
+- [Visual Basic trechos de código IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Protegendo aplicativos](../ide/securing-applications.md)
 - [Snippets de código](../ide/code-snippets.md)

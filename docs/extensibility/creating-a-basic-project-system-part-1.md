@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903429"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Criar um sistema de projeto básico, parte 1
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Durante a construção da instância, a `ProjectNode` classe base carrega *Resources.imagelis.bmp*, nas quais são inseridos 16 x 16 bitmaps comumente usados de *Resources\imagelis.bmp*. Essa lista de bitmaps é disponibilizada para `SimpleProjectNode` o as `ImageHandler.ImageList` . `SimpleProjectNode`anexa o bitmap do nó do projeto à lista. O deslocamento do bitmap do nó do projeto na lista de imagens é armazenado em cache para uso posterior como o valor da `ImageIndex` propriedade pública. O Visual Studio usa essa propriedade para determinar qual bitmap deve ser exibido como o ícone do nó do projeto.
+  Durante a construção da instância, a `ProjectNode` classe base carrega *Resources.imagelis.bmp*, nas quais são inseridos 16 x 16 bitmaps comumente usados de *Resources\imagelis.bmp*. Essa lista de bitmaps é disponibilizada para `SimpleProjectNode` o as `ImageHandler.ImageList` . `SimpleProjectNode` anexa o bitmap do nó do projeto à lista. O deslocamento do bitmap do nó do projeto na lista de imagens é armazenado em cache para uso posterior como o valor da `ImageIndex` propriedade pública. O Visual Studio usa essa propriedade para determinar qual bitmap deve ser exibido como o ícone do nó do projeto.
 
 ## <a name="test-the-custom-project-node-icon"></a>Testar o ícone do nó de projeto personalizado
  Teste sua fábrica de projetos para ver se ele cria uma hierarquia de projeto que tem o ícone de nó de projeto personalizado.
@@ -601,9 +601,9 @@ Templates
 
 3. Examine os valores dos `nameSpace` parâmetros e `className` .
 
-   - `nameSpace`recebe o valor do \<RootNamespace> elemento no arquivo de modelo de projeto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . Nesse caso, o valor é `MyRootNamespace` .
+   - `nameSpace` recebe o valor do \<RootNamespace> elemento no arquivo de modelo de projeto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . Nesse caso, o valor é `MyRootNamespace` .
 
-   - `className`recebe o valor do nome do arquivo de origem da classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é *AssemblyInfo.cs*; Portanto, o valor de className é `AssemblyInfo` .
+   - `className` recebe o valor do nome do arquivo de origem da classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é *AssemblyInfo.cs*; Portanto, o valor de className é `AssemblyInfo` .
 
 4. Remova o ponto de interrupção e pressione **F5** para continuar a execução.
 

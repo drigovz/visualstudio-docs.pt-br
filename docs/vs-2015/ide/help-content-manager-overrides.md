@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 70c0044a0436dcf27a3b087b3f11a5f759824735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645558"
 ---
 # <a name="help-content-manager-overrides"></a>Substituições do Gerenciador de Conteúdo da Ajuda
@@ -32,5 +32,5 @@ Você pode modificar o Registro para alterar o comportamento padrão do Visualiz
 |Aponte para o repositório de conteúdo local no compartilhamento de rede|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath=”*ContentStoreNetworkShare*”|
 |Desabilitar a instalação de conteúdo na primeira inicialização do recurso do Visual Studio.|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (em um computador de 64 bits)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection--Definido como 1 para desabilitar os recursos da Ajuda que são configurados na primeira vez que o Visual Studio é iniciado.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)
