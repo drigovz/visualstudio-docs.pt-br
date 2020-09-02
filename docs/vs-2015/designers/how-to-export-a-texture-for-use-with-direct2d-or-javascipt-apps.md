@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1bb08a617574839432ee581d563079648cd06976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664453"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt
@@ -54,15 +54,15 @@ O Pipeline de conteúdo de imagem pode gerar texturas que são compatíveis com 
 
 2. Configure o arquivo de textura para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura que acabou de criar e selecione **Propriedades**. Na página **Propriedades de Configuração**, **Geral**, defina a propriedade **Tipo de Item** como **Pipeline de Conteúdo de Imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** e, em seguida, escolha o botão **Aplicar**. A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 
-3. Defina o formato de saída para um dos formatos de compactação em bloco. Na página **Propriedades de configuração**, **Pipeline de conteúdo de imagem**, **Geral**, defina a propriedade **Compactar** para **Compactação BC3_UNORM (/compress:BC3_UNORM)** . Você pode escolher qualquer um dos outros formatos BC1, BC2 ou BC3, dependendo dos seus requisitos. O Direct2D não dá suporte a texturas BC4, BC5, BC6 ou BC7 no momento. Para obter mais informações sobre os diferentes formatos de BC, consulte [Compactação em bloco (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
+3. Defina o formato de saída para um dos formatos de compactação em bloco. Na página **Propriedades de configuração**, **Pipeline de conteúdo de imagem**, **Geral**, defina a propriedade **Compactar** para **Compactação BC3_UNORM (/compress:BC3_UNORM)**. Você pode escolher qualquer um dos outros formatos BC1, BC2 ou BC3, dependendo dos seus requisitos. O Direct2D não dá suporte a texturas BC4, BC5, BC6 ou BC7 no momento. Para obter mais informações sobre os diferentes formatos de BC, consulte [Compactação em bloco (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
 
    > [!NOTE]
    > O formato de compactação especificado determina o formato do arquivo que é produzido pelo Pipeline de conteúdo de imagem. Isso é diferente da propriedade **Format** da imagem de origem no Editor de imagens, que determina o formato do arquivo de imagens de origem quando armazenados em disco, ou seja, o *formato de trabalho*. Normalmente, não é recomendável usar um formato de trabalho compactado.
 
-4. Configure o Pipeline de conteúdo de imagem para gerar uma saída que usa alfa pré-multiplicado. Na página **Propriedades de Configuração**, **Pipeline de Conteúdo de Imagem**, **geral**, defina a propriedade **Converter para formato alfa pré-multiplicado** como **Sim (/ generatepremultipliedalpha)** .
+4. Configure o Pipeline de conteúdo de imagem para gerar uma saída que usa alfa pré-multiplicado. Na página **Propriedades de Configuração**, **Pipeline de Conteúdo de Imagem**, **geral**, defina a propriedade **Converter para formato alfa pré-multiplicado** como **Sim (/ generatepremultipliedalpha)**.
 
 5. Configure o pipeline de conteúdo de imagem para não gerar mipmaps. Na página **Propriedades de configuração**, **Pipeline de conteúdo de imagem**, **Geral**, defina a propriedade **Gerar Mips** como **Não**.
 
-6. Selecione o botão **OK**.
+6. Clique no botão **OK**.
 
    Quando você compila o projeto, o Pipeline de conteúdo de imagem converte a imagem de origem do formato de trabalho para o formato de saída que você especificou, a conversão inclui o formato alfa pré-multiplicado e o resultado é copiado para o diretório de saída do projeto.

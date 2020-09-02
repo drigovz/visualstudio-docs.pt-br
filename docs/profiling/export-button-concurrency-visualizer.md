@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969895"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Botão Exportar (Visualização Simultânea)
@@ -24,4 +24,4 @@ O botão **Exportar** permite que você exporte a pilha de chamadas como um arqu
 
 ## <a name="see-also"></a>Confira também
 - [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

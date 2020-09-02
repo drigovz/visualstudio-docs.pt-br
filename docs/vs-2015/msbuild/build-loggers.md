@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160438"
 ---
 # <a name="build-loggers"></a>Agentes de log de build
@@ -44,12 +44,12 @@ Agentes fornecem uma maneira de personalizar a saída do build e exibir mensagen
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Respondendo a valores de detalhamento do agente  
- Em alguns casos, você talvez queira registrar informações de um evento somente se a opção MSBuild.exe **/verbosity** contiver um determinado valor. Neste exemplo, o manipulador de eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> registrará no log apenas uma mensagem se a propriedade <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, que é definida pela opção **/verbosity**, for igual a <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
+ Em alguns casos, você talvez queira registrar informações de um evento somente se a opção MSBuild.exe **/verbosity** contiver um determinado valor. Neste exemplo, o <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> manipulador de eventos registra apenas uma mensagem se a <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> propriedade, que é definida pela opção **detalhamento** , é igual a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Especificando um agente  
- Depois que o agente for compilado em um assembly, você precisará informar ao [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para usar esse agente durante builds. Isso é feito usando a opção **/logger** com MSBuild.exe. Para obter mais informações sobre as opções disponíveis para MSBuild.exe, consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
+ Depois que o agente for compilado em um assembly, você precisará informar ao [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para usar esse agente durante builds. Isso é feito usando a opção **/logger** com MSBuild.exe. Para obter mais informações sobre as opções disponíveis para MSBuild.exe, consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
  A linha de comando a seguir compila o projeto `MyProject.csproj` e usa a classe de agente implementada em `SimpleLogger.dll`. A opção **/nologo** oculta a faixa e a mensagem de direitos autorais e a opção **/noconsolelogger** desabilita o agente de console [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] padrão.  
   
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Exemplo  
   
-### <a name="description"></a>DESCRIÇÃO  
+### <a name="description"></a>Descrição  
  O exemplo a seguir contém o código completo do agente.  
   
 ### <a name="code"></a>Código  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Exemplo  
   
-### <a name="description"></a>DESCRIÇÃO  
+### <a name="description"></a>Descrição  
  O exemplo a seguir mostra como implementar um agente que grava o log de um arquivo em vez de exibi-lo na janela do console.  
   
 ### <a name="code"></a>Código  
@@ -83,6 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Comentários  
   
-## <a name="see-also"></a>Veja também  
- [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

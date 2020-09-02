@@ -1,5 +1,5 @@
 ---
-title: Gestão de Componentes | Microsoft Docs
+title: Gerenciamento de componentes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709331"
 ---
 # <a name="component-management"></a>Gerenciamento de componentes
-As unidades de tarefas no Instalador do Windows são referidas como componentes do Instalador do Windows (às vezes chamados de WICs ou apenas componentes). Um GUID identifica cada WIC, que é a unidade básica de instalação e contagem de referência para configurações que usam o Windows Installer.
+As unidades de tarefas no Windows Installer são chamadas de componentes Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID identifica cada WIC, que é a unidade básica de instalação e a contagem de referência para as configurações que usam Windows Installer.
 
- Embora você possa usar vários produtos para criar o instalador VSPackage, essa discussão assume o uso de arquivos Windows Installer *(.msi).* Ao criar seu instalador, você deve gerenciar corretamente a implantação do arquivo para que a contagem correta de referência aconteça o tempo todo. Consequentemente, diferentes versões do seu produto não interferirão ou se quebrarão em uma mistura de cenários de instalação e desinstalação.
+ Embora você possa usar vários produtos para criar o instalador do VSPackage, essa discussão pressupõe o uso de arquivos Windows Installer (*. msi*). Ao criar o instalador, você deve gerenciar corretamente a implantação de arquivos para que a contagem de referência correta ocorra em todos os momentos. Consequentemente, versões diferentes do seu produto não interferem ou se interrompem em uma combinação de cenários de instalação e desinstalação.
 
- No Windows Installer, a contagem de referência ocorre no nível do componente. Você deve organizar cuidadosamente seus recursos - arquivos, entradas de registro e assim por diante - em componentes. Existem outros níveis de organização — como módulos, recursos e produtos — que podem ajudar em diferentes cenários. Para obter mais informações, consulte [o básico do Windows Installer](../../extensibility/internals/windows-installer-basics.md).
+ No Windows Installer, a contagem de referência ocorre no nível do componente. Você deve organizar seus recursos cuidadosamente — arquivos, entradas de registro e assim por diante — em componentes. Há outros níveis de organização, como módulos, recursos e produtos, que podem ajudar em cenários diferentes. Para obter mais informações, consulte [noções básicas do Windows Installer](../../extensibility/internals/windows-installer-basics.md).
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Diretrizes de configuração de autoria para instalação lado a lado
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Diretrizes de criação da instalação para instalação lado a lado
 
-- Arquivos de autor e chaves de registro que são compartilhados entre versões em seus próprios componentes.
+- Crie arquivos e chaves do registro que são compartilhados entre versões em seus próprios componentes.
 
-     Isso permite que você os consuma facilmente na próxima versão. Por exemplo, digite bibliotecas registradas globalmente, extensões de arquivo, outros itens registrados em **HKEY_CLASSES_ROOT**e assim por diante.
+     Isso permite que você os consuma facilmente na próxima versão. Por exemplo, as bibliotecas de tipos que são registradas globalmente, extensões de arquivo, outros itens registrados em **HKEY_CLASSES_ROOT**e assim por diante.
 
-- Agrupar componentes compartilhados em módulos de mesclagem separados.
+- Agrupe componentes compartilhados em módulos de mesclagem separados.
 
-     Essa estratégia ajuda você a escrever corretamente para a instalação lado a lado avançando.
+     Essa estratégia ajuda você a criar corretamente para a instalação lado a lado, avançando.
 
-- Instale arquivos compartilhados e chaves de registro usando os mesmos componentes do Windows Installer em versões.
+- Instale arquivos compartilhados e chaves do registro usando os mesmos componentes Windows Installer entre versões.
 
-     Se você usar um componente diferente, arquivos e entradas de registro serão desinstalados quando um VSPackage versãodo é desinstalado, mas outro VSPackage ainda está instalado.
+     Se você usar um componente diferente, os arquivos e as entradas do registro serão desinstalados quando um VSPackage com versão for desinstalado, mas outro VSPackage ainda estiver instalado.
 
-- Não misture itens com versões e compartilhados no mesmo componente.
+- Não misture itens com versão e compartilhados no mesmo componente.
 
-     Isso torna impossível instalar itens compartilhados em um local global e itens versionados em locais isolados.
+     Isso torna impossível instalar itens compartilhados em um local global e itens com controle de versão em locais isolados.
 
-- Não tenha chaves de registro compartilhadas que apontam para arquivos com versões.
+- Não têm chaves de registro compartilhadas que apontam para arquivos com versão.
 
-     Se você fizer isso, as chaves compartilhadas serão substituídas quando outro VSPackage versão do VS for instalado. Depois de remover a segunda versão, o arquivo para o qual a chave está apontando se foi.
+     Se você fizer isso, as chaves compartilhadas serão substituídas quando outro VSPackage com versão for instalado. Depois de remover a segunda versão, o arquivo para o qual a chave está apontando é desaparecido.
 
 ## <a name="see-also"></a>Confira também
-- [Escolha entre VSPackages compartilhados e versões](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [Cenários de configuração do VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
+- [Escolha entre VSPackages compartilhadas e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [Cenários de instalação do VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

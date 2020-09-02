@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169372"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Passo a passo: Usando o Gráfico de Atividade de Usuário Virtual para isolar problemas
@@ -40,13 +40,13 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 2. Abra a solução **ColorWebApp** que contém o *LoadTest1.loadtest*. Este teste de carga é resultado da execução das etapas nas três explicações passo a passo listadas no início deste tópico na seção de pré-requisitos.
 
-     As etapas restantes neste passo assumem um aplicativo web chamado ColorWebApp, um teste de desempenho da Web chamado *ColorWebApp.webtest* e um teste de carga chamado *LoadTest1.loadtest*.
+     As etapas restantes neste passo a passos pressupõem um aplicativo Web chamado ColorWebApp, um teste de desempenho da Web chamado *ColorWebAppTest. WebTest* e um teste de carga chamado *loadtest1. LoadTest*.
 
 ## <a name="run-the-load-test"></a>Executar o teste de carga
 
 Execute o teste de carga para coletar dados da atividade de usuário virtual.
 
-- No **Load Test Editor,** escolha o botão **Executar** na barra de ferramentas. A execução de LoadTest1 iniciará.
+- Na **Editor de teste de carga**, escolha o botão **executar** na barra de ferramentas. A execução de LoadTest1 iniciará.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolar problemas no Gráfico de Atividade de Usuário Virtual
 
@@ -61,7 +61,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 2. No gráfico **Tempo de Resposta de Página**, clique com o botão direito do mouse em um dos ícones de violação de limite e selecione **Ir para detalhe do usuário**.
 
     > [!NOTE]
-    > Use também o botão **Detalhes** na barra de ferramentas do **Editor de Teste de Carga** para abrir o gráfico de Atividade do Usuário. No entanto, se você usar a opção **Ir para o usuário,** o **Gráfico de Atividades do Usuário Virtual** aumentará automaticamente a parte do teste que você clicou com o botão direito do mouse no gráfico.
+    > Use também o botão **Detalhes** na barra de ferramentas do **Editor de Teste de Carga** para abrir o gráfico de Atividade do Usuário. No entanto, se você usar a opção **ir para detalhe do usuário** , o **gráfico de atividade de usuário virtual** ampliará automaticamente a parte do teste que você clicou com o botão direito do mouse no grafo.
 
      A exibição Detalhes é exibida com o **Gráfico de atividade do usuário virtual** focado no período em que as violações de limite ocorreram.
 
@@ -73,13 +73,13 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
 5. No painel **Filtrar resultados**, desmarque as caixas de seleção **Mostrar resultados bem-sucedidos** e **HttpError**, mas deixe a caixa de seleção **ValidationRuleError** marcada.
 
-     O **Gráfico de Atividades do Usuário Virtual** exibe apenas os usuários virtuais que passaram mais de 3 segundos na página *Red.aspx,* conforme especificado pela violação de limiar configurada no passo a passo anterior.
+     O **gráfico de atividade de usuário virtual** exibe somente os usuários virtuais que gastaram mais de 3 segundos na página *Red. aspx* , conforme especificado pela violação de limite configurada no passo a passos anterior.
 
 6. Coloque o ponteiro do mouse na linha horizontal que representa o usuário virtual com o erro da regra de validação da violação de limite.
 
 7. Uma dica de ferramenta é exibida com as seguintes informações:
 
-    - **ID de Usuário**
+    - **ID de usuário**
 
     - **Cenário**
 
@@ -91,7 +91,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
     - **Start Time**
 
-    - **Duração**
+    - **Duration**
 
     - **Agente**
 
@@ -99,7 +99,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
 8. Observe que **Log de teste** é um link. Escolha o link **Log de teste**.
 
-9. O teste de desempenho web ColorWebTest associado ao log é aberto no **Visualizador**de Resultados do Teste de Desempenho da Web . Isso permite isolar onde as violações de limite ocorreram.
+9. O teste de desempenho na Web do ColorWebTest que está associado ao log é aberto no **Visualizador de resultados de teste de desempenho da Web**. Isso permite isolar onde as violações de limite ocorreram.
 
      É possível usar várias configurações nos painéis **Legenda de detalhes** e **Filtrar resultados** para ajudar a isolar problemas de desempenho e erros nos testes de carga. Experimente essas configurações e a ferramenta **Zoom para o período de tempo** para ver como os dados do usuário virtual são apresentados no **Gráfico de atividade do usuário virtual**.
 

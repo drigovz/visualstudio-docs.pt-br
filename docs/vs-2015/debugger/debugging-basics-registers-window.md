@@ -1,5 +1,5 @@
 ---
-title: 'Noções básicas sobre depuração: Janela de registros | Microsoft Docs'
+title: 'Noções básicas de depuração: janela de registros | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686715"
 ---
-# <a name="debugging-basics-registers-window"></a>Noções básicas sobre depuração: Janela registros
+# <a name="debugging-basics-registers-window"></a>Noções básicas sobre depuração: janela Registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A janela **Registros** só ficará disponível se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**.  
@@ -45,7 +45,7 @@ A janela **Registros** só ficará disponível se a depuração do nível de end
   
  Para saber mais sobre como exibir a janela **Registros**, confira [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md).  
   
- Quando você observa a **registra** janela, você verá entradas como este exemplo:  
+ Quando você examinar a janela de **registros** , verá entradas como este exemplo:  
   
 ```  
 EAX = 003110D8  
@@ -58,6 +58,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>Registrar grupos  
  Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito na janela **Registros**, verá um menu de atalho contendo uma lista de grupos que você pode exibir ou ocultar como achar melhor.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: usar a janela de registros](../debugger/how-to-use-the-registers-window.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)

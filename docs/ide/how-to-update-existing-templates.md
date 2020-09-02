@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283912"
 ---
 # <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
@@ -65,7 +65,7 @@ Você pode atualizar um modelo existente sem usar o **Assistente de Exportação
 
 1. Exclua os arquivos de modelo extraídos e o arquivo *.zip* de modelo antigo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

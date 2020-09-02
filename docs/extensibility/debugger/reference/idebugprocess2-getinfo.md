@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetInfo | Microsoft Docs
+title: 'IDebugProcess2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724026"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
-Tem uma descrição do processo.
+Obtém uma descrição do processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `Fields`\
-[em] Uma combinação de valores da enumeração [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) `pProcessInfo` que especifica quais campos do parâmetro devem ser preenchidos.
+no Uma combinação de valores da enumeração [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifica quais campos do `pProcessInfo` parâmetro devem ser preenchidos.
 
 `pProcessInfo`\
-[fora] Uma [estrutura PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) que é preenchida com uma descrição do processo.
+fora Uma estrutura de [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) que é preenchida com uma descrição do processo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

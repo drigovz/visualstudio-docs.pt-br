@@ -17,19 +17,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263065"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 
-Contém uma lista opcional de parâmetros que estarão `UsingTask` `TaskFactory`presentes na tarefa gerada por um . Para obter mais informações, consulte [O elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contém uma lista opcional de parâmetros que estarão presentes na tarefa que é gerada por um `UsingTask` `TaskFactory` . Para obter mais informações, consulte [elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup>
+ \<Project> \<UsingTask>
+ \<ParameterGroup>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ParameterGroup />

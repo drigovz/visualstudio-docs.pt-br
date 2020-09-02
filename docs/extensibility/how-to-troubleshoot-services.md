@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234946"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: solucionar problemas de serviços
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. Nenhum GUID é explicitamente atribuído à interface. Portanto, o sistema cria um GUID padrão para um objeto, conforme necessário.
 
-3. Certifique-se de que a VSPackage solicitando o serviço tenha sido site. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]os sites VSPackage depois de construí-lo e antes de chamar <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. Certifique-se de que a VSPackage solicitando o serviço tenha sido site. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] os sites VSPackage depois de construí-lo e antes de chamar <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     Se você tiver um código em um Construtor VSPackage que precisa de um serviço, mova-o para o `Initialize` método.
 

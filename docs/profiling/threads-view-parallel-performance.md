@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62973742"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Exibição Threads na Visualização Simultânea
@@ -47,13 +47,13 @@ Use a exibição **Threads** para:
 
 ## <a name="use-threads-view"></a>Usar a exibição Threads
 
-Para iniciar o Soilizador, selecione **Analyze** > **Concurrency Visualizer**e selecione uma opção, como **Launch New Process**.
+Para iniciar o Visualizador de simultaneidade, selecione **analisar**  >  **Visualizador de simultaneidade**e, em seguida, selecione uma opção, como **Iniciar novo processo**.
 
 A Visualização Simultânea inicia o aplicativo e coleta um rastreamento até que você selecione **Parar Coleta**. Em seguida, o visualizador analisa o rastreamento e exibe os resultados na página do relatório de rastreamento.
 
 Selecione a guia **Threads** no canto superior esquerdo do relatório para abrir a exibição **Threads**.
 
-![exibição Threads](../profiling/media/threadsviewnarrowing.png "exibição Threads")
+![Exibição de threads](../profiling/media/threadsviewnarrowing.png "exibição Threads")
 
 Selecione intervalos de tempo e threads para iniciar uma análise de desempenho.
 
@@ -118,13 +118,13 @@ A guia **Relatório de Perfil** mostra relatórios para as categorias e os links
 
 - **E/S** O relatório **E/S** mostra as chamadas responsáveis por blocos de E/S, junto com os tempos de bloqueio totais de cada pilha de chamadas. Para obter mais informações, confira [Tempo de E/S (exibição Threads)](../profiling/i-o-time-threads-view.md).
 
-- **Suspensão** O relatório **Suspensão** mostra as chamadas responsáveis por blocos de suspensão, junto com os tempos de bloqueio totais de cada pilha de chamadas. Para obter mais informações, consulte [Sleep time](../profiling/sleep-time.md).
+- **Suspensão** O relatório **Suspensão** mostra as chamadas responsáveis por blocos de suspensão, junto com os tempos de bloqueio totais de cada pilha de chamadas. Para obter mais informações, consulte [tempo de suspensão](../profiling/sleep-time.md).
 
-- **Gerenciamento de Memória** O relatório **Gerenciamento de Memória** mostra as chamadas em que ocorreram blocos de gerenciamento de memória, junto com os tempos de bloqueio totais de cada pilha de chamadas. Use essas informações para identificar as áreas que apresentam problemas de coleta de lixo ou de paginação em excesso.  Para obter mais informações, consulte [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).
+- **Gerenciamento de Memória** O relatório **Gerenciamento de Memória** mostra as chamadas em que ocorreram blocos de gerenciamento de memória, junto com os tempos de bloqueio totais de cada pilha de chamadas. Use essas informações para identificar as áreas que apresentam problemas de coleta de lixo ou de paginação em excesso.  Para obter mais informações, consulte [tempo de gerenciamento de memória](../profiling/memory-management-time.md).
 
-- **Preempção** O relatório **Preempção** mostra em que momentos os processos do sistema impediram o processo atual, bem como os threads individuais que substituíram os threads no processo atual. É possível usar essas informações para identificar os processos e os threads que são mais responsáveis pela preempção. Para obter mais informações, consulte [o tempo de prevenção](../profiling/preemption-time.md).
+- **Preempção** O relatório **Preempção** mostra em que momentos os processos do sistema impediram o processo atual, bem como os threads individuais que substituíram os threads no processo atual. É possível usar essas informações para identificar os processos e os threads que são mais responsáveis pela preempção. Para obter mais informações, consulte o [tempo de preempção](../profiling/preemption-time.md).
 
-- **Processamento de interface do usuário** O relatório **Processamento de interface do usuário** mostra as chamadas responsáveis por blocos de processamento de interface do usuário, junto com os tempos de bloqueio totais de cada pilha de chamadas. Para obter mais informações, consulte [o tempo de processamento da ia](../profiling/ui-processing-time.md).
+- **Processamento de interface do usuário** O relatório **Processamento de interface do usuário** mostra as chamadas responsáveis por blocos de processamento de interface do usuário, junto com os tempos de bloqueio totais de cada pilha de chamadas. Para obter mais informações, consulte [tempo de processamento da IU](../profiling/ui-processing-time.md).
 
 - **Resumo por Thread** Selecione **Resumo por Thread** para exibir um grafo que mostra o estado de threads para o intervalo de tempo atualmente selecionado. As colunas codificadas por cores mostram o tempo total gasto por cada thread nos estados de execução, bloqueio, E/S e outros. Os threads são rotulados na parte inferior. Quando você ajusta o nível de zoom no grafo de linha do tempo, esse grafo é atualizado automaticamente.
 

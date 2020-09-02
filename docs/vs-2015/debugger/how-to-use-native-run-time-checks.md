@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar verificações de tempo de execução nativas | Microsoft Docs'
+title: 'Como: usar verificações nativas em tempo de execução | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,16 +42,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685855"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
+# <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual C++, você pode usar nativo [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) para capturar erros comuns de tempo de execução, como:  
+No Visual C++, você pode usar o [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) nativo para capturar erros comuns de tempo de execução, como:  
   
 - Dano do ponteiro de pilha.  
   
@@ -63,7 +63,7 @@ No Visual C++, você pode usar nativo [runtime_checks](https://msdn.microsoft.co
   
 - Perda de dados em uma atribuição para uma variável mais curta.  
   
-  Se você usar **/RTC** com um otimizado (**/O**) criar um resultados de erro do compilador. Se você usar um pragma `runtime_checks` em uma construção otimizada, o pragma não terá nenhum efeito.  
+  Se você usar **/RTC** com uma compilação otimizada (**/o**), ocorrerá um erro de compilador. Se você usar um pragma `runtime_checks` em uma construção otimizada, o pragma não terá nenhum efeito.  
   
   Quando você depurar um programa que tem as verificações de tempo de execução habilitadas, a ação padrão será para o programa parar e interromper no depurador quando ocorrer um erro em tempo de execução. Você pode alterar este comportamento padrão para qualquer verificação de tempo de execução. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).  
   
@@ -73,17 +73,17 @@ No Visual C++, você pode usar nativo [runtime_checks](https://msdn.microsoft.co
   
 - [Personalizando as verificações de tempo de execução com a biblioteca em tempo de execução C](../debugger/native-run-time-checks-customization.md)  
   
-- [Usando verificações de tempo de execução sem a biblioteca em tempo de execução do C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Usando verificações de tempo de execução sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar as verificações de tempo de execução nativas em uma compilação de depuração  
   
-- Use o **/RTC** opção e vincule com a versão de depuração de uma biblioteca de tempo de execução do C (/ MDd, por exemplo).  
+- Use a opção **/RTC** e o link com a versão de depuração de uma biblioteca de tempo de execução C (/MDD, por exemplo).  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>Para modificar o comportamento nativo de verificação de tempo de execução  
   
 - Use o pragma `runtime_checks`.  
   
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Verificação de erros em tempo de execução](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

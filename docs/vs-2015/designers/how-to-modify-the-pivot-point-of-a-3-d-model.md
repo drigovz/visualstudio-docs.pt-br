@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: baeae2af825edc6a0032445288de7311b1ab1ae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664400"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Como modificar o ponto dinâmico de um modelo 3D
@@ -32,7 +32,7 @@ Este documento demonstra como usar o Editor de Modelo para modificar o *ponto di
 
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Para modificar o ponto dinâmico de um modelo 3D
 
-1. Comece com um modelo 3D existente, como o que é descrito em [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
+1. Comece com um modelo 3D existente, como o que é descrito em [como criar um modelo básico de 3D (3-d](../designers/how-to-create-a-basic-3-d-model.md)).
 
 2. Entre no modo dinâmico. Na barra de ferramentas do **Modo do Editor de Modelo**, escolha o **Modo Dinâmico** para ativar o modo dinâmico. Será exibida uma caixa ao redor do botão **Modo Dinâmico** para indicar que o Editor de Modelo agora está em modo dinâmico. No modo dinâmico, operações como a movimentação afetam o ponto dinâmico do objeto em vez da estrutura do objeto no espaço de mundo.
 
@@ -47,7 +47,7 @@ Este documento demonstra como usar o Editor de Modelo para modificar o *ponto di
 
    Aqui está um modelo que tem um ponto dinâmico modificado:
 
-   ![Um modelo de uma casa que tem um ponto dinâmico modificado](../designers/media/digit-modified-model.png "Dígito-modificado-modelo")
+   ![Um modelo de uma casa com um ponto dinâmico modificado](../designers/media/digit-modified-model.png "Dígito-modificado-modelo")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: criar um](../designers/how-to-create-a-basic-3-d-model.md) [Editor de modelo](../designers/model-editor.md) de modelo 3D básico

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986165"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associar dados a controles em soluções do Office
@@ -35,11 +35,11 @@ ms.locfileid: "72986165"
  Os controles Windows Forms e host usam o modelo de ligação de dados Windows Forms, que dá suporte tanto à vinculação de dados *simples* quanto à *vinculação de dados complexa* a fontes de dados, como conjuntos de dados e tabelas. Para obter informações completas sobre o modelo de associação de dados no Windows Forms, consulte [Associação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
 ## <a name="simple-data-binding"></a>Vinculação de dados simples
- A vinculação de dados simples existe quando uma propriedade de controle está associada a um único elemento de dados, como um valor em uma tabela de dados. Por exemplo, o controle de <xref:Microsoft.Office.Tools.Excel.NamedRange> tem uma propriedade <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> que pode ser associada a um campo em um conjunto de um DataSet. Quando o campo no conjunto de alterações é alterado, o valor no intervalo nomeado também é alterado. Todos os controles de host, exceto para o controle de <xref:Microsoft.Office.Tools.Word.XMLNodes>, dão suporte à vinculação de dados simples. O controle <xref:Microsoft.Office.Tools.Word.XMLNodes> é uma coleção e, portanto, não oferece suporte à vinculação de dados.
+ A vinculação de dados simples existe quando uma propriedade de controle está associada a um único elemento de dados, como um valor em uma tabela de dados. Por exemplo, o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle tem uma <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade que pode ser associada a um campo em um conjunto de uma. Quando o campo no conjunto de alterações é alterado, o valor no intervalo nomeado também é alterado. Todos os controles de host, exceto para o <xref:Microsoft.Office.Tools.Word.XMLNodes> controle, dão suporte à vinculação de dados simples. O <xref:Microsoft.Office.Tools.Word.XMLNodes> controle é uma coleção e, portanto, não oferece suporte à vinculação de dados.
 
- Para executar uma vinculação de dados simples a um controle de host, adicione um <xref:System.Windows.Forms.Binding> à propriedade `DataBindings` do controle. Um objeto <xref:System.Windows.Forms.Binding> representa a associação simples entre um valor de Propriedade do controle e o valor de um elemento de dados.
+ Para executar uma vinculação de dados simples a um controle de host, adicione um <xref:System.Windows.Forms.Binding> à `DataBindings` Propriedade do controle. Um <xref:System.Windows.Forms.Binding> objeto representa a associação simples entre um valor de Propriedade do controle e o valor de um elemento de dados.
 
- O exemplo a seguir demonstra como associar a propriedade <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> a um elemento de dados em um projeto de nível de documento.
+ O exemplo a seguir demonstra como associar a <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> Propriedade a um elemento de dados em um projeto de nível de documento.
 
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
@@ -47,11 +47,11 @@ ms.locfileid: "72986165"
  Para obter orientações que demonstram a vinculação de dados simples, consulte [passo a passos: vinculação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) para um projeto de nível de documento e [passo a passos: vinculação de dados simples no projeto de suplemento](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) do VSTO para um projeto de suplemento do VSTO.
 
 ## <a name="complex-data-binding"></a>Vinculação de dados complexos
- A vinculação de dados complexa existe quando uma propriedade de controle está associada a mais de um elemento de dados, como várias colunas em uma tabela de dados. O controle de <xref:Microsoft.Office.Tools.Excel.ListObject> para Excel é o único controle de host que dá suporte à ligação de dados complexa. Também há muitos Windows Forms controles que dão suporte à ligação de dados complexa, como o controle de <xref:System.Windows.Forms.DataGridView>.
+ A vinculação de dados complexa existe quando uma propriedade de controle está associada a mais de um elemento de dados, como várias colunas em uma tabela de dados. O <xref:Microsoft.Office.Tools.Excel.ListObject> controle para Excel é o único controle de host que dá suporte à ligação de dados complexa. Também há muitos Windows Forms controles que dão suporte à ligação de dados complexa, como o <xref:System.Windows.Forms.DataGridView> controle.
 
- Para executar uma vinculação de dados complexa, defina a propriedade `DataSource` do controle como um objeto de fonte de dados com suporte pela Associação de dados complexa. Por exemplo, a propriedade <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> do controle de <xref:Microsoft.Office.Tools.Excel.ListObject> pode ser associada a várias colunas em uma tabela de dados. Todos os dados na tabela de dados são exibidos no controle de <xref:Microsoft.Office.Tools.Excel.ListObject> e, à medida que os dados na tabela de dados são alterados, o <xref:Microsoft.Office.Tools.Excel.ListObject> também é alterado. Para obter uma lista das fontes de dados que você pode usar para a ligação de dados complexa, consulte [fontes de dados com suporte pelo Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
+ Para executar uma vinculação de dados complexa, defina a `DataSource` Propriedade do controle como um objeto de fonte de dados com suporte pela Associação de dados complexa. Por exemplo, a <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> Propriedade do <xref:Microsoft.Office.Tools.Excel.ListObject> controle pode ser associada a várias colunas em uma tabela de dados. Todos os dados na tabela de dados são exibidos no <xref:Microsoft.Office.Tools.Excel.ListObject> controle e, à medida que os dados na tabela de dados são alterados, o <xref:Microsoft.Office.Tools.Excel.ListObject> também é alterado. Para obter uma lista das fontes de dados que você pode usar para a ligação de dados complexa, consulte [fontes de dados com suporte pelo Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).
 
- O exemplo de código a seguir cria um <xref:System.Data.DataSet> com dois objetos <xref:System.Data.DataTable> e popula uma das tabelas com dados. Em seguida, o código associa o <xref:Microsoft.Office.Tools.Excel.ListObject> à tabela que contém dados. Este exemplo é para um projeto de nível de documento do Excel.
+ O exemplo de código a seguir cria um <xref:System.Data.DataSet> com dois <xref:System.Data.DataTable> objetos e popula uma das tabelas com dados. Em seguida, o código associa a <xref:Microsoft.Office.Tools.Excel.ListObject> à tabela que contém dados. Este exemplo é para um projeto de nível de documento do Excel.
 
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
@@ -64,9 +64,9 @@ ms.locfileid: "72986165"
 ### <a name="drag-controls-from-the-data-sources-window"></a>Arrastar controles da janela fontes de dados
  Um controle é criado no documento quando você arrasta um objeto para ele na janela **fontes de dados** . O tipo de controle criado depende se você está associando uma única coluna de dados ou várias colunas de dados.
 
- Para o Excel, um controle de <xref:Microsoft.Office.Tools.Excel.NamedRange> é criado na planilha para cada campo individual e um controle de <xref:Microsoft.Office.Tools.Excel.ListObject> é criado para cada intervalo de dados que inclui várias linhas e colunas. Você pode alterar esse padrão selecionando a tabela ou o campo na janela **fontes de dados** e escolhendo um controle diferente na lista suspensa.
+ Para o Excel, um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é criado na planilha para cada campo individual e um <xref:Microsoft.Office.Tools.Excel.ListObject> controle é criado para cada intervalo de dados que inclui várias linhas e colunas. Você pode alterar esse padrão selecionando a tabela ou o campo na janela **fontes de dados** e escolhendo um controle diferente na lista suspensa.
 
- Um controle <xref:Microsoft.Office.Tools.Word.ContentControl> é adicionado aos documentos. O tipo de controle de conteúdo depende do tipo de dados do campo que você selecionou.
+ Um <xref:Microsoft.Office.Tools.Word.ContentControl> controle é adicionado aos documentos. O tipo de controle de conteúdo depende do tipo de dados do campo que você selecionou.
 
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Associar dados em projetos de nível de documento em tempo de design
  Os tópicos a seguir mostram exemplos de vinculação de dados em tempo de design:
@@ -91,16 +91,16 @@ ms.locfileid: "72986165"
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Atualizar dados associados a controles de host
  A vinculação de dados entre uma fonte de dados e um controle de host envolve uma atualização bidirecional de dados. Na vinculação de dados simples, as alterações na fonte de dados são refletidas automaticamente no controle de host, mas as alterações no controle de host exigem uma chamada explícita para atualizar a fonte de dados. O motivo é que, em alguns casos, as alterações em um campo associado a dados não são aceitas, a menos que sejam acompanhadas por alterações em outro campo associado a dados. Por exemplo, você pode ter dois campos, um para idade e outro para anos de experiência. A experiência não pode exceder a idade. Um usuário não pode atualizar a idade de 50 para 25 e, em seguida, a experiência de 30 a 10, a menos que ele faça as alterações ao mesmo tempo. Para resolver esse problema, os campos com vinculação de dados simples não são atualizados até que as atualizações sejam explicitamente enviadas pelo código.
 
- Para atualizar uma fonte de dados de controles de host que habilitam a vinculação de dados simples, você deve enviar atualizações para a fonte de dados na memória (como uma <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>) e para o banco de dado de back-end, se sua solução usar uma.
+ Para atualizar uma fonte de dados de controles de host que habilitam a vinculação de dados simples, você deve enviar atualizações para a fonte de dados na memória (como, por exemplo, um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> ) e para o banco de dado de back-end, se sua solução usar uma.
 
- Não é necessário atualizar explicitamente a fonte de dados na memória quando você executa uma vinculação de dados complexa usando o controle de <xref:Microsoft.Office.Tools.Excel.ListObject>. Nesse caso, as alterações são enviadas automaticamente para a fonte de dados na memória sem código adicional.
+ Não é necessário atualizar explicitamente a fonte de dados na memória quando você executa uma vinculação de dados complexa usando o <xref:Microsoft.Office.Tools.Excel.ListObject> controle. Nesse caso, as alterações são enviadas automaticamente para a fonte de dados na memória sem código adicional.
 
  Para obter mais informações, consulte [como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Associação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Como criar um controle de associação simples em um formulário do Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
-- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Dados de cache](../vsto/caching-data.md)

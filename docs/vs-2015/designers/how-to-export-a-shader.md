@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664465"
 ---
 # <a name="how-to-export-a-shader"></a>Como exportar um sombreador
@@ -30,9 +30,9 @@ Este documento demonstra como usar o Designer de Sombreador para exportar um som
 
 #### <a name="to-export-a-shader"></a>Para exportar um sombreador
 
-1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra uma arquivo do **Visual Shader Graph (.dgsl)** .
+1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra uma arquivo do **Visual Shader Graph (.dgsl)**.
 
-     Se você não tem um arquivo do **Visual Shader Graph (.dgsl)** para abrir, crie um conforme descrito em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
+     Se você não tiver um arquivo de **grafo do sombreador Visual (. dgsl)** para abrir, crie um, conforme descrito em [como criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Na barra de ferramentas do **Designer de Sombreador**, escolha **Avançado**, **Exportar** e **Exportar como**. A caixa de diálogo **Exportar Sombreador** é exibida.
 
@@ -48,5 +48,5 @@ Este documento demonstra como usar o Designer de Sombreador para exportar um som
 
 4. Na caixa de combinação **Nome de arquivo**, especifique um nome para o sombreador exportado e, em seguida, escolha o botão **Salvar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: criar um](../designers/how-to-create-a-basic-color-shader.md) [Designer de sombreador](../designers/shader-designer.md) de cores básico

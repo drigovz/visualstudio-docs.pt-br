@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986069"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Introdução (desenvolvimento do Office no Visual Studio)
@@ -27,13 +27,13 @@ ms.locfileid: "72986069"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Visão geral &#40;do desenvolvimento de soluções do Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 
  Fornece informações básicas para o desenvolvimento de soluções do Office no Visual Studio.
 
 - [Alterações no design de projetos do Office direcionados para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
- Descreve o novo design de projetos do Office direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior e lista alterações significativas no código em projetos do Office que você migra para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+ Descreve o novo design de projetos do Office direcionados [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o ou posterior e lista alterações significativas no código em projetos do Office que você migra para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
 - [Recursos disponíveis pelo aplicativo do Office e tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md)
 
@@ -74,7 +74,7 @@ ms.locfileid: "72986069"
 
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 
- Fornece informações sobre como criar um projeto do Office e configurar seu projeto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Fornece informações sobre como criar um projeto do Office e configurar seu projeto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 

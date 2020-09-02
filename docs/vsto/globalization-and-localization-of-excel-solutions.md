@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986051"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalização e localização de soluções do Excel
   Esta seção contém informações sobre considerações especiais para Microsoft Office soluções do Excel que serão executadas em computadores com configurações diferentes do inglês para o Windows. A maioria dos aspectos de globalizar e localizar soluções de Microsoft Office são as mesmas que você encontra ao criar outros tipos de soluções usando o Visual Studio. Para obter informações gerais, consulte [globalizar e localizar aplicativos](../ide/globalizing-and-localizing-applications.md).
 
- Por padrão, os controles de host no Microsoft Office Excel funcionam corretamente em qualquer configuração regional do Windows, desde que todos os dados passados ou manipulados usando código gerenciado sejam formatados usando a formatação em inglês (Estados Unidos). Em projetos que visam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], esse comportamento é controlado pelo Common Language Runtime (CLR).
+ Por padrão, os controles de host no Microsoft Office Excel funcionam corretamente em qualquer configuração regional do Windows, desde que todos os dados passados ou manipulados usando código gerenciado sejam formatados usando a formatação em inglês (Estados Unidos). Em projetos direcionados [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , esse comportamento é controlado pelo Common Language Runtime (CLR).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "72986051"
  Por padrão, quando você desenvolve uma solução do Office no Visual Studio, o modelo de objeto do Excel espera a formatação de dados da ID de localidade 1033 (isso também é chamado de bloquear o modelo de objeto para a ID de localidade 1033). Esse comportamento corresponde à maneira como o Visual Basic for Applications funciona. No entanto, você pode modificar esse comportamento em suas soluções do Office.
 
 ### <a name="understand-how-the-excel-object-model-always-expects-locale-id-1033"></a>Entenda como o modelo de objeto do Excel sempre espera a ID de localidade 1033
- Por padrão, as soluções do Office que você cria usando o Visual Studio não são afetadas pelas configurações de localidade do usuário final e sempre se comportam como se a localidade fosse Inglês (Estados Unidos). Por exemplo, se você obter ou definir a propriedade <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> no Excel, os dados deverão ser formatados da maneira esperada pela ID de localidade 1033. Se você usar um formato de dados diferente, poderá obter resultados inesperados.
+ Por padrão, as soluções do Office que você cria usando o Visual Studio não são afetadas pelas configurações de localidade do usuário final e sempre se comportam como se a localidade fosse Inglês (Estados Unidos). Por exemplo, se você obtiver ou definir a <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> propriedade no Excel, os dados deverão ser formatados da maneira esperada pela ID de localidade 1033. Se você usar um formato de dados diferente, poderá obter resultados inesperados.
 
  Embora você use o formato Inglês (Estados Unidos) para dados que são passados ou manipulados pelo código gerenciado, o Excel interpreta e exibe os dados corretamente de acordo com a configuração de localidade do usuário final. O Excel pode formatar os dados corretamente porque o código gerenciado passa a ID de localidade 1033 junto com os dados, o que indica que os dados estão no formato Inglês (Estados Unidos) e, portanto, devem ser reformatados para corresponder à configuração de localidade do usuário.
 
@@ -44,10 +44,10 @@ ms.locfileid: "72986051"
 ## <a name="localize-document-text"></a>Localizar texto do documento
  O documento, modelo ou pasta de trabalho em seu projeto provavelmente inclui texto estático, que deve ser localizado separadamente do assembly e de outros recursos gerenciados. Uma maneira simples de fazer isso é fazer uma cópia do documento e traduzir o texto usando Microsoft Office Word ou Microsoft Office Excel. Esse processo funciona mesmo que você não faça nenhuma alteração no código, pois qualquer número de documentos pode ser vinculado ao mesmo assembly.
 
- Você ainda deve ter certeza de que qualquer parte do seu código que interage com o texto do documento continua a corresponder ao idioma do texto e que os indicadores, os intervalos nomeados e outros campos de exibição acomodam qualquer reformatação do documento do Office necessário para ajuste para gramática e comprimento de texto diferentes. Para modelos de documento que contêm relativamente pouco texto, convém considerar armazenar o texto em arquivos de recursos e, em seguida, carregar o texto em tempo de execução.
+ Você ainda deve certificar-se de que qualquer parte do seu código que interaja com o texto do documento continue a corresponder ao idioma do texto e que os indicadores, os intervalos nomeados e outros campos de exibição acomodam qualquer reformatação do documento do Office que fosse necessário para se ajustar para gramática e comprimento de texto diferentes. Para modelos de documento que contêm relativamente pouco texto, convém considerar armazenar o texto em arquivos de recursos e, em seguida, carregar o texto em tempo de execução.
 
 ### <a name="text-direction"></a>Direção do texto
- No Excel, você pode definir uma propriedade da planilha para renderizar o texto da direita para a esquerda. Os controles de host ou qualquer controle que tenha uma propriedade `RightToLeft`, que é colocado no designer, correspondem automaticamente a essas configurações em tempo de execução. O Word não tem uma configuração de documento para texto bidirecional (basta alterar seu alinhamento de texto), para que os controles não possam ser mapeados para essa configuração. Em vez disso, você deve definir o alinhamento de texto para cada controle. É possível escrever código para percorrer todos os controles e forçá-los a renderizar texto da direita para a esquerda.
+ No Excel, você pode definir uma propriedade da planilha para renderizar o texto da direita para a esquerda. Os controles de host ou qualquer controle que tenha uma `RightToLeft` propriedade, que é colocado no designer, correspondem automaticamente a essas configurações em tempo de execução. O Word não tem uma configuração de documento para texto bidirecional (basta alterar seu alinhamento de texto), para que os controles não possam ser mapeados para essa configuração. Em vez disso, você deve definir o alinhamento de texto para cada controle. É possível escrever código para percorrer todos os controles e forçá-los a renderizar texto da direita para a esquerda.
 
 ### <a name="change-culture"></a>Alterar cultura
  O código de personalização no nível do documento normalmente compartilha o thread da interface do usuário principal do Excel, portanto, quaisquer alterações feitas na cultura do thread afetarão tudo o que estiver em execução nesse thread; a alteração não é restrita à sua personalização.
@@ -55,7 +55,7 @@ ms.locfileid: "72986051"
  Windows Forms controles são inicializados antes que os suplementos do VSTO no nível do aplicativo sejam iniciados pelo aplicativo host. Nessas situações, a cultura deve ser alterada antes de definir os controles da interface do usuário.
 
 ## <a name="install-the-language-packs"></a>Instalar os pacotes de idiomas
- Se você tiver configurações diferentes do inglês para o Windows, poderá instalar os pacotes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mensagens no mesmo idioma que o Windows. Se qualquer usuário final executar suas soluções com configurações diferentes do inglês para o Windows, eles deverão ter o pacote de idiomas correto para ver as mensagens de tempo de execução no mesmo idioma que o Windows. Os pacotes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estão disponíveis no [centro de download da Microsoft](https://www.microsoft.com/download).
+ Se você tiver configurações diferentes do inglês para o Windows, poderá instalar os [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pacotes de idiomas para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] as mensagens no mesmo idioma que o Windows. Se qualquer usuário final executar suas soluções com configurações diferentes do inglês para o Windows, eles deverão ter o pacote de idiomas correto para ver as mensagens de tempo de execução no mesmo idioma que o Windows. Os [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pacotes de idiomas estão disponíveis no [centro de download da Microsoft](https://www.microsoft.com/download).
 
  Além disso, os pacotes de idiomas .NET Framework redistribuíveis são necessários para mensagens do ClickOnce. Os pacotes de idiomas .NET Framework estão disponíveis no [centro de download da Microsoft](https://www.microsoft.com/download).
 
@@ -82,9 +82,9 @@ Application.ActiveCell.Value2 = "05/12/04"
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
 
- Você deve trabalhar com dados fortemente tipados em vez de literais de cadeia de caracteres sempre que possível. Por exemplo, em vez de armazenar uma data em um literal de cadeia de caracteres, armazená-la como um <xref:System.Double>e, em seguida, convertê-la em um objeto <xref:System.DateTime> para manipulação.
+ Você deve trabalhar com dados fortemente tipados em vez de literais de cadeia de caracteres sempre que possível. Por exemplo, em vez de armazenar uma data em um literal de cadeia de caracteres, armazená-la como um <xref:System.Double> e, em seguida, convertê-la em um <xref:System.DateTime> objeto para manipulação.
 
- O exemplo de código a seguir leva uma data que um usuário insere na célula A5, armazena-a como uma <xref:System.Double>e, em seguida, converte-a em um objeto <xref:System.DateTime> para exibição na célula A7. A célula A7 deve ser formatada para exibir uma data.
+ O exemplo de código a seguir leva uma data que um usuário insere na célula A5, armazena-a como um <xref:System.Double> , em seguida, converte-a em um <xref:System.DateTime> objeto para exibição na célula A7. A célula A7 deve ser formatada para exibir uma data.
 
  [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
  [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
@@ -95,7 +95,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Aplicativos que usam dados externos
  Qualquer código que abre ou, de outra forma, usa dados externos, como arquivos que incluem valores separados por vírgulas (arquivos CSV) exportados de um sistema herdado, também poderá ser afetado se esses arquivos forem exportados usando qualquer formato além de en-US. O acesso ao banco de dados pode não ser afetado porque todos os valores devem estar no formato binário, a menos que o banco de dados armazene datas como cadeias de caracteres ou execute operações que não usem o formato binário. Além disso, se você construir consultas SQL usando dados do Excel, talvez seja necessário garantir que elas estejam no formato en-US, dependendo da função usada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como: direcionar a interface do usuário multilíngüe do Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)

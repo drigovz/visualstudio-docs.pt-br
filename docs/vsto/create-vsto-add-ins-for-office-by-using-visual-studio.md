@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986154"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Criar suplementos do VSTO para o Office usando o Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72986154"
  Para obter as informações mais recentes sobre o desenvolvimento do Office, consulte o [centro de desenvolvedores do Microsoft Office](https://developer.microsoft.com/office/docs).
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Fornece links para informações sobre como configurar um computador de desenvolvimento para criar soluções do Office, como começar a criar soluções do Office e o que há de novo para desenvolvimento do Office no Visual Studio.
 
@@ -97,15 +97,15 @@ ms.locfileid: "72986154"
 
  Fornece links para tópicos que fornecem instruções passo a passo para executar tarefas comuns e aplicativos de exemplo.
 
-- [Referência &#40;geral desenvolvimento do Office no Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [Referência geral &#40;desenvolvimento do Office no Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  Fornece links para informações detalhadas sobre assemblies de interoperabilidade primária do Office, manifestos, elementos de interface do usuário e mensagens de erro.
 
-- [Desenvolvimento do &#40;Office de referência gerenciada no Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Referência gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
  Fornece links para informações sobre namespaces de API e tipos que são usados em projetos do Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obter a documentação de referência de API sobre os namespaces e tipos que são usados em projetos do Office direcionados para o .NET Framework 3,5, consulte a seção de referência a seguir na documentação do Visual Studio 2008: [2007 referência gerenciada pelo sistema](managed-reference-office-development-in-visual-studio.md).
 
-- [Referência &#40;de API não gerenciada desenvolvimento do Office no Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Referência de API não gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Contém links para informações sobre interfaces COM que você pode usar para executar ações como carregar e descarregar suplementos do VSTO gerenciados em aplicativos do Office.
 
@@ -118,4 +118,4 @@ ms.locfileid: "72986154"
 
 - [Desenvolvimento de aplicativos no Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contém links para tópicos que explicam como você pode usar o Visual Studio para projetar, desenvolver, depurar e implantar aplicativos Web, Web Services XML e aplicativos cliente tradicionais.
 
-- [Programação de .NET Framework no Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Discute o desenvolvimento de aplicativos com o .NET Framework em Visual Basic e C#Visual.
+- [Programação de .NET Framework no Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Discute o desenvolvimento de aplicativos com o .NET Framework no Visual Basic e no Visual C#.

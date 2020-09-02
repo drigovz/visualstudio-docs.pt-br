@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964196"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Reter um endereço IP virtual constante para um serviço de nuvem do Azure
@@ -29,7 +29,7 @@ Você pode especificar configurações de implantação no **Assistente de Publi
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Para atualizar um serviço de nuvem sem alterar o respectivo VIP
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio. 
 
-2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nome do projeto. No menu de atalho, selecione **Publicar**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto. No menu de atalho, selecione **Publicar**.
 
     ![Menu Publicar](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 
@@ -37,11 +37,11 @@ Você pode especificar configurações de implantação no **Assistente de Publi
 
     ![Página Publicar Aplicativo do Azure – Entrar](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Na guia **Configurações Comuns**, verifique se o nome do serviço de nuvem no qual você está implantando, o **Ambiente**, a **Configuração de build** e a **Configuração do serviço** estão todos corretos.
+4. Na guia **configurações comuns** , verifique se o nome do serviço de nuvem no qual você está implantando, o **ambiente**, a **configuração de compilação**e a **configuração do serviço** estão todos corretos.
 
     ![Guia Publicar aplicativo do Azure – Configurações Comuns](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Na guia **Configurações Avançadas**, verifique se o **Rótulo de implantação** e a **Conta de armazenamento** estão corretas. Verifique se a caixa de seleção **excluir implantação em caso de falha** está desmarcada e se a caixa de seleção **Atualização de implantação** está selecionada. Ao limpar a caixa de seleção **Excluir implantação em caso de falha**, você garante que o VIP não será perdido se ocorrer um erro durante a implantação. Ao marcar a caixa de seleção **Atualização de implantação**, você garante que a implantação não será excluída e que o VIP não será perdido quando você republicar o aplicativo. 
+5. Na guia **Configurações Avançadas**, verifique se o **Rótulo de implantação** e a **Conta de armazenamento** estão corretas. Verifique se a caixa de seleção **excluir implantação em caso de falha** está desmarcada e se a caixa de seleção **Atualização de implantação** está selecionada. Desmarcando a caixa de seleção **excluir implantação em caso de falha** , você garante que o VIP não será perdido se ocorrer um erro durante a implantação. Ao marcar a caixa de seleção **Atualização de implantação**, você garante que a implantação não será excluída e que o VIP não será perdido quando você republicar o aplicativo. 
 
     ![Guia Publicar aplicativo do Azure – Configurações Avançadas](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -54,4 +54,4 @@ Você pode especificar configurações de implantação no **Assistente de Publi
     ![Página Publicar Aplicativo do Azure – Resumo](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Próximas etapas
-- [Usando o Assistente Publicar Aplicativo do Azure do Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)
+- [Uso do Assistente Publicar Aplicativo do Azure do Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)

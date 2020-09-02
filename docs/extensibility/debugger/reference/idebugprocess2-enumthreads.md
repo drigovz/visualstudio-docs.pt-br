@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads | Microsoft Docs
+title: 'IDebugProcess2:: EnumThreads | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724057"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
-Recupera uma lista de todos os segmentos em execução no processo.
+Recupera uma lista de todos os threads em execução no processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ int EnumThreads(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppEnum`\
-[fora] Retorna um objeto [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) que contém uma lista de todos os segmentos em todos os programas do processo.
+fora Retorna um objeto [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) que contém uma lista de todos os threads em todos os programas no processo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método enumera os segmentos em execução em cada programa e, em seguida, combina-os em uma visão de processo dos segmentos. Um único segmento pode ser executado em vários programas; este método enumera esse segmento apenas uma vez.
+ Esse método enumera os threads em execução em cada programa e os combina em uma exibição de processo dos threads. Um único thread pode ser executado em vários programas; Esse método enumera esse thread apenas uma vez.
 
- Este método apresenta uma lista dos segmentos do processo sem duplicatas. Caso contrário, para enumerar os segmentos em execução em um determinado programa, use o método [EnumThreads.](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+ Esse método apresenta uma lista dos threads do processo sem duplicatas. Caso contrário, para enumerar os threads em execução em um programa específico, use o método [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

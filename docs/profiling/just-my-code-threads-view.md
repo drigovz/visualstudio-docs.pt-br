@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62995349"
 ---
 # <a name="just-my-code-threads-view"></a>Apenas meu código (exibição de threads)
@@ -27,5 +27,5 @@ Ao selecionar essa opção, a pilha de chamadas será filtrada para mostrar apen
  Em alguns casos, a seleção dessa opção pode filtrar a chamada de bloqueio. Caso sejam necessários mais detalhes da pilha de chamadas completa para tomar essa decisão, desmarque essa opção para expor a pilha de chamadas completa.
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
-- [Percentual de redução de ruído](../profiling/noise-reduction-percentage.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+- [Porcentagem de redução de ruído](../profiling/noise-reduction-percentage.md)

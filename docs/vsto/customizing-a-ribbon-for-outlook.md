@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986099"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personalizar uma faixa de faixas para o Outlook
@@ -36,19 +36,19 @@ ms.locfileid: "72986099"
 
  Se você estiver usando o item **da faixa de opções (Visual Designer)** , clique na propriedade **faixa** de opções da faixa de opções na janela **Propriedades** e selecione uma ou mais IDs da faixa de opções na lista de valores.
 
- Você pode adicionar mais de uma faixa de faixas a um projeto. Se mais de uma faixa de faixas compartilhar uma ID da faixa de faixas, substitua o método `CreateRibbonExtensibilityObject` na classe `ThisAddin` do seu projeto para especificar qual faixa de forma exibir em tempo de execução. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização. Para obter mais informações sobre cada tipo de faixa de tipos, consulte o artigo técnico [Personalizar a faixa de visualização no Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ Você pode adicionar mais de uma faixa de faixas a um projeto. Se mais de uma faixa de forma compartilhar uma ID da faixa de uma, substitua o `CreateRibbonExtensibilityObject` método na `ThisAddin` classe do seu projeto para especificar qual faixa de forma exibir em tempo de execução. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização. Para obter mais informações sobre cada tipo de faixa de tipos, consulte o artigo técnico [Personalizar a faixa de visualização no Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Especificar o tipo de faixa de tipos usando o XML da faixa de faixas
- Se você estiver usando o item da faixa de seleção **(XML)** , verifique o valor do parâmetro *RibbonId* no método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> e retorne a faixa de forma apropriada.
+ Se você estiver usando o item da faixa de seleção **(XML)** , verifique o valor do parâmetro *RibbonId* no <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método e retorne a faixa de forma apropriada.
 
- O método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> é gerado automaticamente pelo Visual Studio no arquivo de código da faixa de Ribbon. O parâmetro *RibbonId* é uma cadeia de caracteres que identifica o Gerenciador ou um tipo específico de Inspetor. Para obter uma lista completa dos possíveis valores do parâmetro *RibbonId* , consulte o artigo técnico [Personalizar a faixa de visualização no Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ O <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método é gerado automaticamente pelo Visual Studio no arquivo de código da faixa de Ribbon. O parâmetro *RibbonId* é uma cadeia de caracteres que identifica o Gerenciador ou um tipo específico de Inspetor. Para obter uma lista completa dos possíveis valores do parâmetro *RibbonId* , consulte o artigo técnico [Personalizar a faixa de visualização no Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
- O exemplo de código a seguir demonstra como exibir uma faixa de opções personalizada somente no Inspetor de `Microsoft.Outlook.Mail.Compose`. Este é o inspetor que é aberto quando um usuário cria uma nova mensagem de email. A faixa de visualização a ser exibida é especificada no método `GetResourceText()`, que é gerado na classe **Ribbon** . Para obter mais informações sobre a classe **Ribbon** , consulte [Ribbon XML](../vsto/ribbon-xml.md).
+ O exemplo de código a seguir demonstra como exibir uma faixa de opções personalizada somente no `Microsoft.Outlook.Mail.Compose` inspetor. Este é o inspetor que é aberto quando um usuário cria uma nova mensagem de email. A faixa de visualização a ser exibida é especificada no `GetResourceText()` método, que é gerado na classe **Ribbon** . Para obter mais informações sobre a classe **Ribbon** , consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer de faixa de das](../vsto/ribbon-designer.md)

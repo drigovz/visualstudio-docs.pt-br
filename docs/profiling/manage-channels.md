@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64779246"
 ---
 # <a name="manage-channels"></a>Gerenciar canais
@@ -27,7 +27,7 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
 
 |Critérios|Definição|
 |--------------|----------------|
-|Start Time|Classifica os threads de acordo com os horários de início. Essa é a ordem de classificação padrão.|
+|Hora de início|Classifica os threads de acordo com os horários de início. Essa é a ordem de classificação padrão.|
 |Hora de término|Classifica os threads de acordo com os horários de término.|
 |Execução|Classifica os threads de acordo com o percentual de tempo gasto na execução.|
 |Synchronization|Classifica os threads de acordo com o percentual de tempo gasto na sincronização.|
@@ -60,5 +60,5 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
 
 ## <a name="see-also"></a>Confira também
 - [Controle de zoom (exibição de threads)](../profiling/zoom-control-threads-view.md)
-- [Modo de medida habilitado/desabilitado](../profiling/measure-mode-on-off.md)
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+- [Ativar/desativar modo de medida](../profiling/measure-mode-on-off.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

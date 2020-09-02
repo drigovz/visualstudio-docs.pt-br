@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62960154"
 ---
 # <a name="zoom-control-threads-view"></a>Controle de zoom (exibição de threads)
@@ -26,10 +26,10 @@ O controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir
  Ampliar arrastando na exibição da linha do tempo cria uma área realçada em amarelo. Ao soltar o botão do mouse, a exibição da linha do tempo ampliará o intervalo selecionado.
 
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Ampliar e reduzir usando a roda do mouse
- Clique em qualquer ponto da linha do tempo (para garantir que ele tenha foco no mouse) e, em seguida, pressione **Ctrl** e mova a roda do mouse (a frente amplia; para trás amplia).
+ Clique em qualquer ponto na linha do tempo (para garantir que ele tenha o foco do mouse) e, em seguida, pressione **Ctrl** e mova a roda do mouse (encaminhar zooms para baixo e reduzir).
 
 ## <a name="see-also"></a>Confira também
 - [Gerenciar canais](../profiling/manage-channels.md)
-- [Modo de medida habilitado/desabilitado](../profiling/measure-mode-on-off.md)
-- [exibição Threads](../profiling/threads-view-parallel-performance.md)
+- [Ativar/desativar modo de medida](../profiling/measure-mode-on-off.md)
+- [Exibição de threads](../profiling/threads-view-parallel-performance.md)
 - [Navegador de utilização](../profiling/utilization-navigator.md)

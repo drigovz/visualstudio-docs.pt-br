@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Microsoft Docs
+title: 'IDebugBinder3:: GetAllAliases | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2d512fa6eb7529e11c766d7c173b318aa6f8f2f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735812"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
-Este método recupera uma lista de codinomes do programa.
+Esse método recupera uma lista de aliases do programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,18 +43,18 @@ int GetAllAliases(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `uRequest`\
-[em] O número máximo de aliases a retornar (especifica `ppAliases`o comprimento da matriz passada para ).
+no O número máximo de aliases a serem retornados (especifica o comprimento da matriz passada `ppAliases` ).
 
 `ppAliases`\
-[dentro, fora] Matriz para preencher com pseudônimos (se este `uRequest` for um valor nulo e for 0, a contagem de pseudônimos que podem ser devolvidos será devolvida por `puFetched`).
+[entrada, saída] Matriz para preencher com aliases (se esse for um valor nulo e `uRequest` for 0, a contagem de aliases que podem ser retornados será retornada por `puFetched` ).
 
 `puFetched`\
-[fora] Retorna o número de codinomes obtidos.
+fora Retorna o número de aliases obtidos.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62989792"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparar para publicar ou implantar um serviço de nuvem usando o Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparar para publicar ou implantar um serviço de nuvem do Visual Studio
 
 Para publicar um projeto de serviço de nuvem, você deve configurar os seguintes serviços, conforme descrito neste artigo:
 
@@ -38,7 +38,7 @@ Um serviço de nuvem executa suas funções no ambiente do Azure. Você pode cri
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Criar um serviço de nuvem no portal do Azure
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
+1. Entre no [portal do Azure](https://portal.azure.com/).
 1. Selecione **Serviços de Nuvem (clássico)** no lado esquerdo da página.
 1. Selecione **+ Adicionar**, depois forneça as informações necessárias (Nome DNS, assinatura, grupo de recursos e local). Não é necessário carregar um pacote no momento, você pode fazer isso mais tarde no Visual Studio.
 1. Selecione **Criar** para concluir o processo.
@@ -57,7 +57,7 @@ Uma conta de armazenamento fornece acesso aos serviços de blob, fila e tabela. 
 
 ### <a name="create-a-storage-account-through-the-azure-portal"></a>Criar uma conta de armazenamento no Portal do Azure
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
+1. Entre no [portal do Azure](https://portal.azure.com/).
 1. Selecione **+ Novo** no painel à esquerda.
 1. Selecione **Armazenamento** em "Azure Marketplace", depois **Conta de Armazenamento - blob, arquivo, tabela, fila** do lado direito.
 1. Forneça as informações necessárias (nome, modelo de implantação e assim por diante.

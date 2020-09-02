@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979751"
 ---
 # <a name="span-class"></a>Classe span
 Define uma fase do aplicativo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class span;
@@ -32,9 +32,9 @@ class span;
 
 ### <a name="public-constructors"></a>Construtores públicos
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
-|[Construtor span::span](../profiling/span-span-constructor.md)|Inicia uma nova instância da classe `span`.|
+|[Construtor span::span](../profiling/span-span-constructor.md)|Inicializa uma nova instância da classe `span`.|
 |[Destruidor span::~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
@@ -46,4 +46,4 @@ class span;
  **Namespace:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Confira também
-- [espaço de nome diagnóstico](../profiling/diagnostic-namespace.md)
+- [namespace de diagnóstico](../profiling/diagnostic-namespace.md)

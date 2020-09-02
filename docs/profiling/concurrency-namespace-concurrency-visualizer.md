@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001073"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Namespace de simultaneidade (Visualização Simultânea)
 O namespace `Concurrency` oferece classes e funções que permitem que você acesse o Runtime de simultaneidade, uma estrutura de programação simultânea para C++. Para obter mais informações, consulte [Runtime de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Concurrency;
@@ -32,9 +32,9 @@ namespace Concurrency;
 
 ### <a name="namespaces"></a>Namespaces
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
-|[espaço de nome diagnóstico](../profiling/diagnostic-namespace.md)|O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.|
+|[Namespace de diagnóstico](../profiling/diagnostic-namespace.md)|O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.|
 
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** cvmarkersobj.h

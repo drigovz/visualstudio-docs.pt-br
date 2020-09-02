@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283977"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Como: personalizar a barra de rolagem
@@ -70,6 +70,6 @@ A imagem a seguir mostra a opção **Mostrar dica de ferramenta de visualizaçã
 > [!TIP]
 > Para alterar as cores que você vê no modo de mapa, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores**do ambiente. Em seguida, em **itens de exibição**, escolha qualquer um dos itens precedidos de "visão geral", faça as alterações de cor desejadas e escolha **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

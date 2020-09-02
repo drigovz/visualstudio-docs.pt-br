@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ff0b31512711b8888b05fcfde191c8cb5c47d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664256"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Propriedades dinâmicas LINQ to XML
@@ -21,7 +21,7 @@ ms.locfileid: "72664256"
 
 Esta seção fornece informações de referência sobre as propriedades dinâmicas em LINQ to XML. Especificamente, essas propriedades são expostos por classes de <xref:System.Xml.Linq.XAttribute> e de <xref:System.Xml.Linq.XElement> , que estão no espaço de <xref:System.Xml.Linq> .
 
- Conforme explicado no tópico [Visão geral de vinculação de dados de WPF com LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), cada uma das propriedades dinâmicas é equivalente a uma propriedade pública ou método padrão na mesma classe. Esses membros padrão devem ser usados para a maioria das finalidades; as propriedades dinâmicas são fornecidas especificamente para cenários de associação de dados LINQ to XML. Para obter mais informações sobre membros padrão dessas classes, consulte os tópicos de referência de <xref:System.Xml.Linq.XAttribute> e de <xref:System.Xml.Linq.XElement> .
+ Conforme explicado no tópico [visão geral da ligação de dados do WPF com LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), cada uma das propriedades dinâmicas é equivalente a uma propriedade pública padrão ou método na mesma classe. Esses membros padrão devem ser usados para a maioria das finalidades; as propriedades dinâmicas são fornecidas especificamente para cenários de associação de dados LINQ to XML. Para obter mais informações sobre membros padrão dessas classes, consulte os tópicos de referência de <xref:System.Xml.Linq.XAttribute> e de <xref:System.Xml.Linq.XElement> .
 
  Em relação a seus valores resolvidos, as propriedades dinâmicas nesta seção se enquadram em duas categorias:
 
@@ -29,7 +29,7 @@ Esta seção fornece informações de referência sobre as propriedades dinâmic
 
 - Valores indexados, como as propriedades [Elementos](../designers/elements-xelement-dynamic-property.md) e [Descendentes](../designers/descendants-xelement-dynamic-property.md) de <xref:System.Xml.Linq.XElement>, que são resolvidas em um tipo de indexador. Para que os tipos do indexador são resolvidos com o valor desejado ou à coleção, um parâmetro expandido do nome deve ser-lhes passado.
 
-  Todas as propriedades dinâmicas que retornam um valor indexado de uso de <xref:System.Collections.Generic.IEnumerable%601> de tipo deffered a execução. Para obter mais informações sobre a execução adiada, consulte [Introdução a Consultas de LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
+  Todas as propriedades dinâmicas que retornam um valor indexado de uso de <xref:System.Collections.Generic.IEnumerable%601> de tipo deffered a execução. Para obter mais informações sobre a execução adiada, consulte [introdução às consultas LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -45,5 +45,5 @@ Esta seção fornece informações de referência sobre as propriedades dinâmic
 
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>
 
-## <a name="see-also"></a>Consulte também
- [Associação de dados do WPF com](../designers/wpf-data-binding-with-linq-to-xml.md) [associação de dados LINQ to XML WPF com LINQ to XML visão geral](../designers/wpf-data-binding-with-linq-to-xml-overview.md) [introduçãoC#às consultas LINQ ()](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
+## <a name="see-also"></a>Consulte Também
+ [Associação de dados do WPF com](../designers/wpf-data-binding-with-linq-to-xml.md) [associação de dados LINQ to XML WPF com LINQ to XML visão geral](../designers/wpf-data-binding-with-linq-to-xml-overview.md) [introdução às consultas LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)

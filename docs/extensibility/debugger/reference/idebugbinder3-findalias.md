@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft Docs
+title: 'IDebugBinder3:: FindAlias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735868"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Este método localiza um alias, dado um nome. Isso irá procurar todos os pseudônimos no programa.
+Esse método localiza um alias, dado um nome. Isso pesquisará todos os aliases no programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int FindAlias(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pcstrName`\
-[em] Nome do pseudônimo para encontrar.
+no Nome do alias a ser localizado.
 
 `ppAlias`\
-[fora] Alias encontrado (se houver) representado pela interface [IDebugAlias.](../../../extensibility/debugger/reference/idebugalias.md)
+fora Alias encontrado (se houver) representado pela interface [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, `S_FALSE` retornas (se alias não for encontrado) ou um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` (se o alias não for encontrado) ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método inicializa o objeto de destino a nulo antes de chamar; em seguida, ele testa um valor nulo depois para determinar se o alias foi encontrado ou não.
+ Esse método inicializa o objeto de destino como nulo antes de chamar; em seguida, ele testa um valor nulo posteriormente para determinar se o alias foi encontrado ou não.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

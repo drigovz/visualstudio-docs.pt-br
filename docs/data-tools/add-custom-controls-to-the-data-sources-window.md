@@ -16,10 +16,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283067"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Adicionar controles personalizados à janela Fontes de Dados
@@ -89,7 +89,7 @@ Para adicionar controles à lista de controles associados:
     > [!NOTE]
     > Somente os controles localizados na solução atual ou em um assembly referenciado podem ser adicionados à lista de controles associados. (Os controles também devem implementar um dos atributos de vinculação de dados na tabela anterior.) Para associar dados a um controle personalizado que não está disponível na janela fontes de dados, arraste o controle da **caixa de ferramentas** para a superfície de design e, em seguida, arraste o item para associar da janela **fontes de dados** para o controle.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Caixa de diálogo opções de personalização da interface do usuário de dados](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

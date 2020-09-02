@@ -1,5 +1,5 @@
 ---
-title: Entender a coautoria e suplementos
+title: Entender a coautoria e os suplementos
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978179"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Entender a coautoria e suplementos
+# <a name="understand-coauthoring-and-add-ins"></a>Entender a coautoria e os suplementos
 
-Coautoria é um recurso de área de trabalho do Excel para Windows que permite que você edite uma pasta de trabalho hospedada na nuvem (ou seja, o OneDrive, o OneDrive for Business ou SharePoint Online) simultaneamente com outros usuários. Com a adição desse recurso, talvez você precise fazer ajustes à sua solução do Excel para garantir que ele funcione sem problemas mesmo quando os usuários são coautoria. Ver [sobre coautoria no Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
+A coautoria é um recurso do Excel para Windows desktop que permite que você edite uma pasta de trabalho hospedada na nuvem (ou seja, OneDrive, OneDrive for Business ou SharePoint Online) simultaneamente com outros usuários. Com a adição desse recurso, talvez seja necessário fazer ajustes em sua solução do Excel para garantir que ele funcione suavemente mesmo que os usuários estejam coautom. Consulte [sobre a coautoria no Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Observação: Coautoria para Windows Desktop Excel foi introduzido em 2017 e está disponível para assinantes do Office 365. Os usuários que compraram uma licença perpétua para o Office 2016 ou anterior não tem acesso ao recurso de coautoria no momento. (Excel Online, o Excel para Android, o Excel para iOS e o Excel Mobile na Windows Store também dão suporte coautoria).
+Observação: a coautoria do Windows Desktop Excel foi introduzida no 2017 e está disponível para assinantes do Office365 no momento. Atualmente, os usuários que compraram uma licença perpétua para o Office 2016 ou anterior não têm acesso ao recurso de coautoria. (O Excel online, o Excel para Android, o Excel para iOS e o Excel Mobile na Windows Store também dão suporte à coautoria).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Soluções do Excel](./excel-solutions.md)
