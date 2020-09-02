@@ -1,5 +1,5 @@
 ---
-title: Campo TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
+title: Campo de TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2dfb7ca683b7a05151539feda92a2575197b189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176709"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>Campo TASK_STATE_WAITING_ON_CHILDREN
+# <a name="task_state_waiting_on_children-field"></a>Campo TASK_STATE_WAITING_ON_CHILDREN
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A tarefa terminou de executar seu delegado e está aguardando implicitamente a conclusão de tarefas filho anexadas.  
+A tarefa concluiu a execução de seu delegado e está esperando implicitamente que as tarefas filho anexadas sejam concluídas.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (no mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,7 +35,7 @@ A tarefa terminou de executar seu delegado e está aguardando implicitamente a c
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Se o [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contém esse valor, o <xref:System.Threading.Tasks.Task.Status%2A> propriedade retorna <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Se o campo [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiver esse valor, a <xref:System.Threading.Tasks.Task.Status%2A> propriedade retornará <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

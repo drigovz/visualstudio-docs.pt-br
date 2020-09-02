@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d874d69f36fc8520a7cfbe3e946116c2d85ed88f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539055"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
@@ -61,7 +61,7 @@ ms.locfileid: "85539055"
  É seguro suprimir um aviso dessa regra quando tiver certeza de que o provedor padrão de cultura/formato é a opção correta e onde a manutenção do código não é uma prioridade de desenvolvimento importante.
 
 ## <a name="example"></a>Exemplo
- No exemplo a seguir, `BadMethod` causa duas violações dessa regra. `GoodMethod`corrige a primeira violação passando a cultura invariável para System. String. Compare e corrige a segunda violação passando a cultura atual para <xref:System.String.ToLower%2A> porque `string3` é exibido para o usuário.
+ No exemplo a seguir, `BadMethod` causa duas violações dessa regra. `GoodMethod` corrige a primeira violação passando a cultura invariável para System. String. Compare e corrige a segunda violação passando a cultura atual para <xref:System.String.ToLower%2A> porque `string3` é exibido para o usuário.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387051"
 ---
 # <a name="using-dump-files"></a>Usando arquivos de despejo
@@ -37,7 +37,7 @@ ms.locfileid: "86387051"
 
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arquivo de despejo; localizar os binários, os pdbs e o arquivo de origem de um arquivo de despejo. 
   
-## <a name="contents"></a><a name="BKMK_Contents"></a>Índice  
+## <a name="contents"></a><a name="BKMK_Contents"></a> Índice  
  [O que é um arquivo de despejo?](#BKMK_What_is_a_dump_file_)  
   
  [Arquivos de despejo, com ou sem heaps](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
  [Localizar arquivos binários, de símbolo (.pdb) e de origem](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>O que é um arquivo de despejo?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> O que é um arquivo de despejo?  
  Um *arquivo de despejo* é um instantâneo de um aplicativo no momento em que o despejo é feito. Ele mostra que processo estava sendo executado e que módulos foram carregados. Se o despejo foi salvo com informações de heap, o arquivo de despejo conterá um instantâneo do que estava na memória do aplicativo naquele momento. Abrir um arquivo de despejo com um heap no Visual Studio é como parar em um ponto de interrupção em uma sessão de depuração. Embora não seja possível continuar a execução, você pode examinar as pilhas, os threads e os valores das variáveis do aplicativo no momento em que o despejo ocorreu.  
   
  Os despejos são usados principalmente para depuração de problemas que ocorrem em computadores aos quais o desenvolvedor não tem acesso. Por exemplo, você pode usar um arquivo de despejo da máquina de um cliente quando não puder reproduzir o programa de falha ou sem resposta do cliente em seu computador. Os despejos também são criados por testadores para salvar dados de falha ou de programa sem resposta para que o computador de teste possa ser usado para mais testes. O depurador do Visual Studio pode salvar arquivos de despejo para código gerenciado ou nativo. O depurador pode carregar arquivos de despejo que foram criados pelo Visual Studio ou por outros programas que salvam arquivos no formato de *minidespejo* .  
   
  ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>Arquivos de despejo, com ou sem heaps  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> Arquivos de despejo, com ou sem heaps  
  Você pode criar arquivos de despejo com ou sem informações de heap.  
   
 - **Arquivos de despejo com heaps** contêm um instantâneo da memória do aplicativo. Isso inclui os valores das variáveis no momento em que o despejo foi criado. Se você carregar um arquivo de despejo que foi salvo com um heap, o Visual Studio poderá carregar os símbolos, mesmo se o binário do aplicativo não for encontrado. O Visual Studio também salva os binários de módulos nativos carregados no arquivo de despejo, o que pode facilitar muito a depuração.  
@@ -107,7 +107,7 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 4. Para iniciar a depuração, vá para a seção **ações** e escolha **Depurar somente com nativo** ou **depurar com misto**.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Localizar arquivos binários, de símbolo (. pdb) e arquivos de origem  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar arquivos binários, de símbolo (. pdb) e arquivos de origem  
  Para usar os recursos completos do Visual Studio a fim de depurar um arquivo de despejo, você precisar acessar:  
   
 - O arquivo .exe para o qual o despejo foi feito e outros binários (DLL, etc.) que foram usados no processo de despejo.  

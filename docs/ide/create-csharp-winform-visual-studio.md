@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248729"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Criar um aplicativo Windows Forms no Visual Studio com C\#
@@ -162,7 +162,7 @@ Para saber mais, continue com o tutorial a seguir:
 > [!div class="nextstepaction"]
 > [Tutorial: Criar um visualizador de imagens](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Mais tutoriais sobre C#](/visualstudio/get-started/csharp/)
 * [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)

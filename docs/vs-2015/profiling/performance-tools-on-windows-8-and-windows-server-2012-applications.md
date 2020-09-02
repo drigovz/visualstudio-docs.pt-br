@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847994"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012
@@ -24,18 +24,18 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
 > [!NOTE]
 > As ferramentas de desempenho para outras versões do Windows com suporte (Windows 7 e Windows Server 2008 R2) não foram alteradas.  
   
-## <a name="BKMK_In_this_topic"></a> Neste tópico  
- [Coletando dados nos aplicativos da Windows Store no IDE do Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Neste tópico  
+ [Coletando dados em aplicativos da Windows Store por meio do IDE do Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
- [Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 do IDE do Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
+ [Coletando dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 do IDE do Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
-- [Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 usando amostragem do IDE do Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
+- [Coletando dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 usando a amostragem do IDE do Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
   [Criação de perfil da linha de comando](#BKMK_Profiling_from_the_command_line)  
   
-  [Coletando dados de interação entre camadas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [Coletando dados de interação de camada (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Coletando dados nos aplicativos da Windows Store no IDE do Visual Studio  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Coletando dados nos aplicativos da Windows Store no IDE do Visual Studio  
  Ao analisar um aplicativo da Windows Store escrito em JavaScript e HTML 5, você coleta dados de instrumentação para o código JavaScript. Ao analisar um componente ou aplicativo da Windows Store escrito em Visual C++, Visual C# ou Visual Basic, você coleta dados de amostragem para os códigos nativo e gerenciado. Você pode analisar seu aplicativo localmente ou em um computador remoto.  
   
  Não há suporte para esses recursos e opções de criação de perfil ao criar perfil de aplicativos da Windows Store:  
@@ -56,7 +56,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
   Para obter mais informações sobre a criação de perfil de aplicativos da Windows Store, consulte os seguintes tópicos no centro de desenvolvimento do Windows:  
   
-  [Executar aplicativos da Windows Store no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [Executar aplicativos da Windows Store na máquina local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
   [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
@@ -76,19 +76,19 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
   [Neste tópico](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 do IDE do Visual Studio  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 do IDE do Visual Studio  
  A criação de perfil usando o método de instrumentação não mudou para o Windows 8.  
   
  Não há suporte para TIP (criação de perfil de interação entre camadas) usando o método de amostragem.  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 usando amostragem do IDE do Visual Studio  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 usando amostragem do IDE do Visual Studio  
  Não há suporte para os recursos e opções de criação de perfil ao criar o perfil de aplicativos de área de trabalho do Windows 8 ou aplicativos do Windows Server 2012 usando o método de amostragem:  
   
 - TIP (criação de perfil de interação entre camadas). Há suporte para a coleta de dados TIP usando instrumentação.  
   
 - Opções de amostragem como configurar o evento de amostragem e o intervalo de tempo ou coletar dados do contador de desempenho adicional.  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a> Criação de perfil da linha de comando  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Criação de perfil da linha de comando  
  Você pode usar duas ferramentas de linha de comando para coletar dados de criação de perfil em dispositivos Windows 8 e Windows Server 2012, incluindo dispositivos que não têm uma instalação do Visual Studio:  
   
 |Nome da ferramenta|Descrição|  
@@ -102,7 +102,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
 - Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *% VSINSTALLDIR%* **\Team Tools\Performance Tools\Setups** . Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.  
+- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups**. Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.  
   
 > [!NOTE]
 > Para coletar dados de criação de perfil TIP, você deve instalar o criador de perfil autônomo em seu computador do Visual Studio no computador remoto.  
@@ -115,7 +115,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
 - Opções de amostragem como configurar o evento de amostragem e o intervalo de tempo ou coletar dados do contador de desempenho adicional.  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Coletando dados de interação entre camadas (TIP)  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Coletando dados de interação entre camadas (TIP)  
  A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução de funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de serviços do ADO.NET. Os dados são coletados apenas para chamadas de função síncronas.  
   
  **Edições do Visual Studio**  
@@ -132,11 +132,11 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
    **Assistente de Desempenho e Gerenciador de Desempenho**  
   
-   Você deve adicionar a opção de coleta de dados de interação entre camadas para uma execução de criação de perfil do Gerenciador de Desempenho. Também é necessário adicionar o projeto, o executável ou o site ao nó de Destino do Gerenciador de Desempenho. Consulte [Coletando dados de interação entre camadas](../profiling/collecting-tier-interaction-data.md).  
+   Você deve adicionar a opção de coleta de dados de interação entre camadas para uma execução de criação de perfil do Gerenciador de Desempenho. Também é necessário adicionar o projeto, o executável ou o site ao nó de Destino do Gerenciador de Desempenho. Consulte [coleta de dados de interação de camada](../profiling/collecting-tier-interaction-data.md).  
   
    **Coletando dados TIP em um computador remoto**  
   
-   Para coletar os dados de interação de camada em um computador remoto, é necessário copiar o arquivo **vs\_profiler\_** _\<Plataforma>_ **\_** _\<Linguagem>_ **.exe** da pasta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil no pacote de download do [ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Para coletar dados de interação de camada em um computador remoto, você deve copiar o arquivo do **vs \_ \_ Profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** da pasta _% VSINSTALLDIR%_**\Team Tools\Performance Tools\Setups** de um computador do Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil no pacote de download do [ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.  
   
@@ -144,7 +144,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
    Dados de interação entre camadas só podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ou IDE do [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Os relatórios de interação de camadas baseados em arquivo por meio de [VSPerfReport](../profiling/vsperfreport.md) não estão disponíveis.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

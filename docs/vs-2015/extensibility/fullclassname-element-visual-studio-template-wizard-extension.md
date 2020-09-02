@@ -1,5 +1,5 @@
 ---
-title: Elemento FullClassName (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs
+title: Elemento FullClassName (extensão do assistente de modelo do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,23 +13,23 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204337"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O nome totalmente qualificado da classe que implementa o `IWizard` interface.  
+O nome totalmente qualificado da classe que implementa a `IWizard` interface.  
   
- \<VSTemplate >  
- \<WizardExtension >  
+ \<VSTemplate>  
+ \<WizardExtension>  
  ...  
  \<FullClassName>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <FullClassName>ClassName</FullClassName>  
@@ -39,24 +39,24 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o Assistente de modelo.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o assistente de modelo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- Esse texto Especifica a classe que implementa o `IWizard` interface. A classe especificada deve existir no assembly especificado pela [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elemento.  
+ Esse texto especifica a classe que implementa a `IWizard` interface. A classe especificada deve existir no assembly especificado pelo elemento [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .  
   
 ## <a name="remarks"></a>Comentários  
- O `FullClassName` é um elemento filho obrigatório de `WizardExtension`.  
+ `FullClassName` é um elemento filho obrigatório de `WizardExtension` .  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
@@ -89,7 +89,7 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
+ [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

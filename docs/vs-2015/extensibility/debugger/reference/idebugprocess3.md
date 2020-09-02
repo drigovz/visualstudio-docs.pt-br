@@ -13,19 +13,19 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 490d1e5f8048188e442f0113f8cf91bafe2344ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675395"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface representa um processo em execução e seus programas. Essa interface existe como uma substituição para vários métodos na [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface. Ele fornece controle sobre todos os programas no processo.  
+Essa interface representa um processo em execução e seus programas. Essa interface existe como uma substituição para vários métodos na interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Ele fornece controle sobre todos os programas no processo.  
   
 > [!NOTE]
-> [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), e [etapa](../../../extensibility/debugger/reference/idebugprogram2-step.md) métodos foram preteridos e não deve mais ser usados. Use os métodos correspondentes no `IDebugProcess3` interface em vez disso.  
+> Os métodos [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)e [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) são preteridos e não devem mais ser usados. Em vez disso, use os métodos correspondentes na `IDebugProcess3` interface.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -33,37 +33,37 @@ Essa interface representa um processo em execução e seus programas. Essa inter
 IDebugProcess3 : IDebugProcess2  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Essa interface é implementada por um fornecedor de porta personalizada para gerenciar os programas como um grupo. Quando os programas são gerenciados como um grupo, você pode controlar sua execução e estabelecer um idioma para um avaliador de expressão. Esta interface deve ser implementada pelo fornecedor de porta.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Essa interface é implementada por um fornecedor de porta personalizado para gerenciar programas como um grupo. Quando os programas são gerenciados como um grupo, você pode controlar sua execução e estabelecer um idioma para um avaliador de expressão. Essa interface deve ser implementada pelo fornecedor da porta.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface é chamada principalmente pelo Gerenciador de depuração de sessão (SDM) para interagir com um grupo de programas identificado nesse processo.  
+ Essa interface é chamada principalmente pelo SDM (Gerenciador de depuração de sessão) para interagir com um grupo de programas identificados nesse processo.  
   
- Chame [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em um [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interface para obter essa interface.  
+ Chame [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em uma interface [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) para obter essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- Além dos métodos herdados de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md), `IDebugProcess3` implementa os métodos a seguir.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ Além dos métodos herdados de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md), `IDebugProcess3` o implementa os métodos a seguir.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continua a execução de ou passando por um processo.|  
+|[Continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continua a execução ou percorrendo um processo.|  
 |[Executar](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Inicia a execução de um processo.|  
-|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Etapas de encaminham uma instrução ou instrução no processo.|  
-|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Obtém o motivo que o processo foi iniciado para depuração.|  
-|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Define o idioma de hospedagem para que o mecanismo de depuração possa carregar o avaliador de expressão apropriada.|  
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Recupera o idioma definido atualmente para esse processo.|  
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Desabilita editar e continuar (ENC) para esse processo.<br /><br /> Um fornecedor de porta personalizado não implementa esse método (ele deve sempre retornar `E_NOTIMPL`).|  
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Obter o estado ENC para esse processo.<br /><br /> Um fornecedor de porta personalizado não implementa esse método (ele deve sempre retornar `E_NOTIMPL`).|  
-|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Recupera uma matriz de identificadores exclusivos de mecanismos de depuração disponíveis.|  
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Etapas encaminhar uma instrução ou instrução no processo.|  
+|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Obtém o motivo pelo qual o processo foi iniciado para depuração.|  
+|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Define o idioma de hospedagem para que o mecanismo de depuração possa carregar o avaliador de expressão apropriado.|  
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Recupera o idioma definido atualmente para este processo.|  
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Desabilita a edição e continuação (ENC) para este processo.<br /><br /> Um fornecedor de porta personalizado não implementa esse método (ele sempre deve retornar `E_NOTIMPL` ).|  
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Obtenha o estado ENC para esse processo.<br /><br /> Um fornecedor de porta personalizado não implementa esse método (ele sempre deve retornar `E_NOTIMPL` ).|  
+|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Recupera uma matriz de identificadores exclusivos para os mecanismos de depuração disponíveis.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Msdbg.h  
+ Cabeçalho: Msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

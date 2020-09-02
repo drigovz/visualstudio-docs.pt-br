@@ -1,5 +1,5 @@
 ---
-title: 'Como: Editar arquivos XML | Microsoft Docs'
+title: 'Como: editar arquivos XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670877"
 ---
-# <a name="how-to-edit-xml-files"></a>Como: Editar arquivos XML
+# <a name="how-to-edit-xml-files"></a>Como editar arquivos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O Editor de XML está associado às seguintes extensões de arquivo: .config, .dtd, .xml, .xsd, .xdr, .xsl, .xslt e .vssettings. O Editor de XML também está associado a qualquer outro tipo de arquivo que não tenha nenhum editor específico registrado e que contenha o conteúdo XML ou DTD.
@@ -40,7 +40,7 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Para adicionar um arquivo XML existente a um projeto
 
-1. No menu **projeto** , selecione **Adicionar item existente**.
+1. No menu **Projeto**, selecione **Adicionar Item Existente**.
 
      A caixa de diálogo **Adicionar item existente** é exibida.
 
@@ -50,7 +50,7 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
 1. No menu **arquivo** , selecione **novo**.
 
-     A caixa de diálogo **novo arquivo** é exibida.
+     A caixa de diálogo **Novo Arquivo** será exibida.
 
 2. Selecione o **arquivo XML** para criar um novo arquivo XML; ou então, selecione **arquivo XSLT** para criar uma nova folha de estilo XSLT.
 
@@ -58,9 +58,9 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
 ### <a name="to-create-a-project-for-xml-files"></a>Para criar um projeto para arquivos XML
 
-1. No menu **arquivo** , selecione **novo**e, em seguida, selecione **projeto**.
+1. No menu **Arquivo**, selecione **Novo** e em seguida **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+     A caixa de diálogo **Novo Projeto** aparecerá.
 
 2. Selecione o idioma de código de sua escolha, selecione **projeto vazio**e clique em **OK**.
 
@@ -68,5 +68,5 @@ O editor XML é o novo editor para arquivos XML. Ele pode ser usado em um arquiv
 
      O Editor de XML localiza os esquemas que você adiciona a esse projeto e os usa para validação e IntelliSense em qualquer XML, esquema ou arquivos XSLT que você editar quando o projeto for aberto.
 
-## <a name="see-also"></a>Consulte também
- Propriedades de documento XML do [editor XML](../xml-tools/xml-editor.md) [, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md) [How para: criar um esquema XML de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+## <a name="see-also"></a>Consulte Também
+ [XML Editor](../xml-tools/xml-editor.md) [Propriedades de documento XML do editor XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md) [como criar um esquema XML a partir de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

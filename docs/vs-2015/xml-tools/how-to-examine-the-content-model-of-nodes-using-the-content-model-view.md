@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670852"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como: Examine o modelo de conteúdo de nós usando a exibição do modelo de conteúdo
@@ -29,9 +29,9 @@ Este tópico descreve como explorar seus nós usando a [exibição de modelo de 
 
 3. Copie o código de exemplo do esquema XML do [esquema XML de exemplo: ordem de compra esquema](../xml-tools/sample-xsd-file-purchase-order-schema.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.
 
-4. Selecione o elemento `purchaseOrder` no Gerenciador de esquema clicando com o botão direito do mouse no elemento `purchaseOrder` no editor de XML e selecionando **Mostrar no Gerenciador de XML**.
+4. Selecione o `purchaseOrder` elemento no Gerenciador de esquema clicando com o botão direito do mouse no `purchaseOrder` elemento no editor de XML e selecionando **Mostrar no Gerenciador de XML**.
 
-5. Clique com o botão direito do mouse na `purchaseOrder` no Gerenciador de XML e selecione **Mostrar na exibição de modelo de conteúdo**.
+5. Clique com o botão direito do mouse no `purchaseOrder` no Gerenciador de XML e selecione **Mostrar no modo de exibição de modelo de conteúdo**.
 
      A exibição do modelo de conteúdo exibe o elemento de `purchaseOrder` na superfície de design.
 
@@ -43,4 +43,4 @@ Este tópico descreve como explorar seus nós usando a [exibição de modelo de 
 
 8. Clique no botão **Mostrar documentação** na barra de ferramentas XSD para alternar documentação. Você também pode clicar com o botão direito do mouse na superfície de design para ativar /desativar a documentação.
 
-9. Rick-clique no nó `purchaseOrder` e selecione **gerar XML de exemplo** para ver o documento de instância XML.
+9. Rick-clique no `purchaseOrder` nó e selecione **gerar XML de exemplo** para ver o documento de instância XML.

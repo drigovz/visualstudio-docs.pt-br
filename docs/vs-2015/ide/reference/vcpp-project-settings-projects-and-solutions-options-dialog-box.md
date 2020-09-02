@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657861"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
@@ -33,9 +33,9 @@ Esta caixa de diálogo permite que você defina configurações de projeto [!INC
 
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
-2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++** .
+2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.
 
 ## <a name="build-customization-search-path"></a>Caminho de pesquisa de personalização do build
  Especifica a lista de diretórios que contêm arquivos de .rules, que o ajudarão a definir regras de build para seus projetos.
@@ -46,7 +46,7 @@ Esta caixa de diálogo permite que você defina configurações de projeto [!INC
  **Não** Desativa a geração do arquivo de log de compilação.
 
 ## <a name="build-timing"></a>Tempo de build
- **Sim** Ativa o tempo de compilação. Se selecionado, o tempo necessário para a conclusão do build é publicado na Janela de Saída. Para obter mais informações, consulte [Janela de Saída](../../ide/reference/output-window.md).
+ **Sim** Ativa o tempo de compilação. Se selecionado, o tempo necessário para a conclusão do build é publicado na Janela de Saída. Para obter mais informações, consulte [Janela Saída](../../ide/reference/output-window.md).
 
  **Não** Desativa o tempo de compilação.
 
@@ -69,5 +69,5 @@ Esta caixa de diálogo permite que você defina configurações de projeto [!INC
 
  **Mostrar todos os arquivos** Configura **Gerenciador de soluções** para mostrar os arquivos no projeto e os arquivos no disco na pasta do projeto.
 
-## <a name="see-also"></a>Veja também
- [CriandoC++ ](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) referência c/programas [cC++ /Build](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+## <a name="see-also"></a>Consulte Também
+ Criando a referência de compilação de [programas c/c++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [c/c++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675366"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se o usuário é solicitado para um projeto local por meio de salvamento a **novo projeto** caixa de diálogo ao criar um projeto. Se esse elemento é definido como `true`, em seguida, o usuário é solicitado que você salve local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
+Especifica se o usuário é solicitado a fornecer um local para salvar o projeto por meio da caixa de diálogo **novo projeto** ao criar um projeto. Se esse elemento for definido como `true` , o usuário será solicitado a fornecer um local de salvamento; se `false` , em seguida, eles não serão solicitados. (Ou seja, um projeto temporário é criado.)  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -38,29 +38,29 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, `true` indicando que o usuário será solicitado para um salvamento local ao criar um novo projeto.  
+ O texto deve ser `true` ou `false` , `true` indicando que o usuário será solicitado a fornecer um local de salvamento ao criar um novo projeto.  
   
 ## <a name="remarks"></a>Comentários  
  `PromptForSaveOnCreation` é um elemento opcional. O valor padrão é `false`.  
   
- Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto no disco. Para obter mais informações, consulte [os projetos temporários NIB](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto em disco. Para obter mais informações, consulte [projetos temporários do nib](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir define o valor da `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que o projeto a ser criado como um projeto temporário.  
+ O exemplo a seguir define o valor de `PromptForSaveOnCreation` igual a `false` , que especifica para permitir que o projeto seja criado como um projeto temporário.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

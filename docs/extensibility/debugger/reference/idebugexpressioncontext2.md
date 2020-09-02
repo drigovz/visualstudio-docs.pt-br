@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729634"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
-Esta interface representa um contexto para avaliação de expressão
+Essa interface representa um contexto para a avaliação da expressão
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionContext2 : IUnknown
@@ -32,10 +32,10 @@ IDebugExpressionContext2 : IUnknown
  O mecanismo de depuração (DE) implementa essa interface para representar um contexto no qual uma expressão pode ser avaliada.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Uma chamada para [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) retorna esta interface. Esta interface só é acessível quando o programa que está sendo depurado foi pausado e um quadro de pilha está disponível.
+ Uma chamada para [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) retorna a interface this. Essa interface é acessível somente quando o programa que está sendo depurado tiver sido pausado e um quadro de pilha estiver disponível.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugExpressionContext2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugExpressionContext2` .
 
 |Método|Descrição|
 |------------|-----------------|
@@ -43,16 +43,16 @@ IDebugExpressionContext2 : IUnknown
 |[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analisa uma expressão baseada em texto para avaliação.|
 
 ## <a name="remarks"></a>Comentários
- Um contexto de avaliação pode ser pensado como um escopo para a realização de avaliação de expressão.
+ Um contexto de avaliação pode ser considerado como um escopo para executar a avaliação da expressão.
 
- Quando um programa é interrompido, o SDM (Session Debug Manager, gerenciador de depuração de sessão) obtém um quadro de pilha do DE com uma chamada para [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). O SDM então chama [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obter a `IDebugExpressionContext2` interface. Isso é seguido por uma chamada para [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para criar uma interface [IDebugExpression2,](../../../extensibility/debugger/reference/idebugexpression2.md) que representa a expressão analisado pronta para ser avaliada.
+ Quando um programa é interrompido, o SDM (Gerenciador de depuração de sessão) Obtém um quadro de pilha do com uma chamada para [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). O SDM então chama [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obter a `IDebugExpressionContext2` interface. Isso é seguido por uma chamada para [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para criar uma interface [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , que representa a expressão analisada pronta para ser avaliada.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

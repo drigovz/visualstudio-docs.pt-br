@@ -13,49 +13,49 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716438"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
-Esta interface enumera uma lista de módulos.
+Essa interface enumera uma lista de módulos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugModules2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O mecanismo de depuração (DE) implementa esta interface para representar uma lista de módulos carregados para um programa.
+ O mecanismo de depuração (DE) implementa essa interface para representar uma lista de módulos carregados para um programa.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O Visual Studio chama [enumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) para obter esta interface.
+ O Visual Studio chama [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IEnumDebugModules2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IEnumDebugModules2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Recupera um número especificado de módulos em uma seqüência de enumeração.|
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Salta um número especificado de módulos em uma seqüência de enumeração.|
-|[Redefinir](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Reinicia uma seqüência de enumeração para o início.|
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|
+|[Próximo](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Recupera um número especificado de módulos em uma sequência de enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignora um número especificado de módulos em uma sequência de enumeração.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Redefine uma sequência de enumeração para o início.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Obtém o número de módulos.|
 
 ## <a name="remarks"></a>Comentários
- O Visual Studio usa esta interface principalmente para atualizar a janela **Módulos.**
+ O Visual Studio usa essa interface principalmente para atualizar a janela de **módulos** .
 
- Para efeitos de depuração no Visual Studio, um programa é uma seqüência lógica de instruções de código que podem cruzar os limites do módulo, daí a necessidade de uma lista de módulos para uma única interface [IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) O primeiro módulo da lista normalmente contém o ponto de entrada inicial para o programa associado.
+ Para fins de depuração no Visual Studio, um programa é uma sequência lógica de instruções de código que podem cruzar os limites do módulo, portanto, a necessidade de uma lista de módulos para uma única interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . O primeiro módulo na lista normalmente contém o ponto de entrada inicial para o programa associado.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

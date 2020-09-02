@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657649"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular um caso de uso a documentos e diagramas
@@ -74,7 +74,7 @@ Você pode vincular um caso de uso em um diagrama de caso de uso a outro diagram
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, elemento do OneNote ou página da Web
 
-1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com ' \\ \\ ' ou uma página da Web ou URL do SharePoint começando com ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
+1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com ' \\ \\ ', uma página da Web ou uma URL do SharePoint começando em ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
 
 2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso de uso.
 
@@ -83,5 +83,5 @@ Você pode vincular um caso de uso em um diagrama de caso de uso a outro diagram
     > [!NOTE]
     > Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comum (começando com ' \\ \\ ') ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução for movida. Para adicionar um documento como um documento do Word à sua solução, clique com o botão direito do mouse na solução em Gerenciador de Soluções, aponte para **Adicionar** e clique em **Item existente**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)

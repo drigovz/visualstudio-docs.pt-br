@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698633"
 ---
 # <a name="cl-task"></a>Tarefa CL
@@ -49,7 +49,7 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Parâmetro String opcional.  
   
-   Uma lista de opções de linha de comando. Por exemplo, "/*option1* /*option2* /*option#*". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa.  
+   Uma lista de opções de linha de comando. Por exemplo, "/*opção 1*  / *opção 2*  / *Option #*". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa.  
   
    Para obter mais informações, consulte [Opções do compilador](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
@@ -79,15 +79,15 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NoListing** - *\<none>*  
+  - **Nolistando** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **AssemblyCode**  -  **/FA**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  -  **/Fac**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  -  **/FAS**  
   
-  - **All** - **/FAcs**  
+  - **Todos**  -  **/FACS**  
   
     Para obter mais informações, consulte as opções **/FA**, **/FAc**, **/FAs** e **/FAcs** opções em [/FA, /Fa (Arquivo de Listagem)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -99,13 +99,13 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Default** -                          *\<none>*  
+  - **Os** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  -  **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **EnableFastChecks**  -                           **/RTC1**  
   
     Para obter mais informações, consulte [/RTC (verificações de erro em tempo de execução)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
@@ -147,11 +147,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  -  **/Gd**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **Stdcall**  -                           **/Gz**  
   
     Para obter mais informações, consulte [/Gd, /Gr, /Gv, /Gz (convenção de chamada)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
@@ -163,11 +163,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Default** - *\<none>*  
+  - **Os** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  -  **/TC**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  -  **/TP**  
   
     Para obter mais informações, consulte [/Tc, /Tp, /TC, /TP (especificar o tipo de arquivo de origem)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
@@ -179,17 +179,17 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **false** - *\<none>*  
+  - **for** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **verdadeiro**  -  **/CLR**  
   
-  - **Pure** - **/clr:pure**  
+  - **Puro**  -  **/CLR: Pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **Seguro**  -  **/CLR: safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  -  **/CLR: oldSyntax**  
   
-    Para obter mais informações, consulte [/clr (compilação de Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Para obter mais informações, consulte [/CLR (compilação em tempo de execução de linguagem comum)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -207,11 +207,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **OldStyle** - **/Z7**  
+  - **RAISEERROR**  -  **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **ProgramDatabase**  -  **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **EditAndContinue**  -  **/Zi**  
   
     Para obter mais informações, consulte [/Z7, /Zd, /Zi, /ZI (formato de informação de depuração)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
@@ -239,9 +239,9 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  -  **/Arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/Arch: SSE2**  
   
     Para obter mais informações, consulte [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
@@ -269,13 +269,13 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **None** - **/errorReport:none**  
+  - **Nenhum**  -  **/errorreport: None**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **Aviso**  -  **/errorreport: prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **Fila**  -  **/errorreport: Queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **Enviar**  -  **/errorreport: send**  
   
     Para obter mais informações, consulte [/errorReport (relatório de erros internos do compilador)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
@@ -287,13 +287,13 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **false** - *\<none>*  
+  - **for** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Async**  -  **/EHA**  
   
-  - **Sync** - **/EHsc**  
+  - **Sincronizar**  -  **/EHsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **SyncCThrow**  -  **O/EHS**  
   
     Para obter mais informações, consulte [/EH (modelo de tratamento de exceção)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
@@ -313,11 +313,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Neither** - *\<none>*  
+  - **Delas** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **Tamanho**  -  **/Os**  
   
-  - **Speed** - **/Ot**  
+  - **Velocidade**  -  **/OT**  
   
     Para obter mais informações, consulte [/Os, /Ot (favorecer código pequeno, favorecer código rápido)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
@@ -337,11 +337,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Precise** - **/fp:precise**  
+  - **Preciso**  -  **/fp: preciso**  
   
-  - **Strict** - **/fp:strict**  
+  - **Estrito**  -  **/fp: estrito**  
   
-  - **Fast** - **/fp:fast**  
+  - **Rápida**  -  **/fp: rápido**  
   
     Para obter mais informações, consulte [/fp (especificar comportamento de ponto flutuante)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
@@ -363,7 +363,7 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 - **ForcedUsingFiles**  
   
-   Parâmetro **String[]** opcional.  
+   Parâmetro opcional de **cadeia de caracteres []** .  
   
    Faz o pré-processador processar um ou mais arquivos **#using** especificados.  
   
@@ -395,19 +395,19 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 - **InlineFunctionExpansion**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Especifica o nível de expansão de função embutida para o build.  
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Default** - *\<none>*  
+  - **Os** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **Desabilitado**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  -  **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **AnySuitable**  -  **/Ob2**  
   
     Para obter mais informações, consulte [/Ob (expansão de função embutida)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
@@ -437,15 +437,15 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 - **ObjectFileName**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Especifica um nome de arquivo de objeto (.obj) ou diretório a ser usado no lugar do padrão.  
   
-   Para obter mais informações, consulte [/Fo (nome do arquivo-objeto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Para obter mais informações, consulte [/FO (nome do arquivo de objeto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
-   Parâmetro **String[]** opcional.  
+   Parâmetro opcional de **cadeia de caracteres []** .  
   
    Uma lista de arquivos de objeto.  
   
@@ -473,43 +473,43 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Para obter mais informações, consulte [/openmp (habilitar suporte a OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
-- **Optimization**  
+- **Otimização**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Especifica várias otimizações de código para velocidade e tamanho.  
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Disabled** - **/Od**  
+  - **Desabilitado**  -  **/OD**  
   
-  - **MinSpace** - **/O1**  
+  - **MinSpace**  -  **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **MaxSpeed**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **Completo**  -  **/Ox**  
   
-    Para obter mais informações, consulte Opções de [/S (otimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Para obter mais informações, consulte [/O Options (otimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Crie ou use um arquivo de cabeçalho pré-compilado (.pch) durante o build.  
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NotUsing** - *\<none>*  
+  - **Não usando** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **Criar**  -  **/YC**  
   
-  - **Use** - **/Yu**  
+  - **Usar**  -  o **/Yu**  
   
     Para obter mais informações, consulte [/Yc (Criar arquivo de cabeçalho pré-compilado)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) e [/Yu (Usar arquivo de cabeçalho pré-compilado)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Consulte também os parâmetros **PrecompiledHeaderFile** e **PrecompiledHeaderOutputFile** nessa tabela.  
   
 - **PrecompiledHeaderFile**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Especifica um nome de arquivo de cabeçalho pré-compilado para criar ou usar.  
   
@@ -517,7 +517,7 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 - **PrecompiledHeaderOutputFile**  
   
-   Parâmetro **String** opcional.  
+   Parâmetro de **cadeia de caracteres** opcional.  
   
    Especifica um nome de caminho para um cabeçalho pré-compilado em vez de usar o nome do caminho padrão.  
   
@@ -591,13 +591,13 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **MultiThreaded** - **/MT**  
+  - **Multithread**  -  **/MT**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  -  **/MTD**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  -  **/MD**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  -  **/MDD**  
   
     Para obter mais informações, consulte [/MD, /MT, /LD (usar biblioteca em tempo de execução)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
@@ -625,7 +625,7 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Para obter mais informações, consulte a opção **/RTCc** em [/RTC (Verificações de Erro em Tempo de Execução)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
-- **Sources**  
+- **Fontes**  
   
    Parâmetro `ITaskItem[]` obrigatório.  
   
@@ -647,17 +647,17 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Default** - **/Zp1**  
+  - **Padrão**  -  **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1Byte**  -  **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  -  **/Zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  -  **/Zp16**  
   
     Para obter mais informações, consulte [/Zp (Alinhamento de Membro de Struct)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
@@ -679,11 +679,11 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 - **TreatSpecificWarningsAsErrors**  
   
-   Parâmetro **String[]** opcional.  
+   Parâmetro opcional de **cadeia de caracteres []** .  
   
    Trata a lista especificada de avisos do compilador como erros.  
   
-   Para obter mais informações, consulte a opção **/we**`n` em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de Aviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Para obter mais informações, consulte a opção **/We** `n` em [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/We,/wo,/WV,/WX (nível de aviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -699,7 +699,7 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Se `true`, trate o tipo `wchar_t` como um tipo nativo.  
   
-   Para obter mais informações, consulte [/Zc:wchar_t (wchar_t é o tipo nativo)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+   Para obter mais informações, consulte [/Zc: wchar_t (Wchar_t é o tipo nativo)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
   
 - **UndefineAllPreprocessorDefinitions**  
   
@@ -741,17 +741,17 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  -  **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **EnableAllWarnings**  -  **/Wall**  
   
     Para obter mais informações, consulte a opção **/W**_n_ em [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nível de Aviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
@@ -803,5 +803,5 @@ Encapsula a ferramenta do compilador Visual C++, cl.exe. O compilador produz arq
   
 ## <a name="remarks"></a>Comentários  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

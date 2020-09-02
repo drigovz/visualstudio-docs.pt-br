@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330339"
 ---
 # <a name="events-viewer"></a>Visualizador de eventos
@@ -43,7 +43,7 @@ Para obter mais informações sobre como tornar a ferramenta mais eficiente, con
 |Nome da coluna|Descrição|
 |----------|---------------------|
 |Nome do Provedor|A origem do evento|
-|Nome do Evento|O evento conforme especificado por seu provedor|
+|Nome do evento|O evento conforme especificado por seu provedor|
 |Texto|Descrições do provedor, nome do evento e ID do evento|
 |Carimbo de data/hora (MS)|Quando o evento ocorreu|
 |GUID do provedor|A ID do provedor de eventos|
