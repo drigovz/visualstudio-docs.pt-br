@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar manualmente sessões de desempenho | Microsoft Docs'
+title: Como criar manualmente sessões de desempenho | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192838"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Como: Criar manualmente sessões de desempenho
+# <a name="how-to-manually-create-performance-sessions"></a>Como criar manualmente sessões de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode criar manualmente uma sessão de desempenho. Não é necessário abrir um projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para fazer isso. Para obter mais informações, consulte [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md).  
@@ -39,6 +39,6 @@ Você pode criar manualmente uma sessão de desempenho. Não é necessário abri
   
      Um novo binário é adicionado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)

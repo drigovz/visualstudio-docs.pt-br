@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150068"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lê um bloco de dados de imagem do arquivo executável na memória.  
+Lê um bloco de dados da imagem do executável na memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,23 +39,23 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>Parâmetros  
  `type`  
- [in] Um valor da [enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumeração que especifica o tipo de memória a ser lido.  
+ no Um valor da enumeração de [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) especificando o tipo de memória a ser lido.  
   
  va  
- [in] Endereço virtual na imagem a partir do qual será iniciada a leitura.  
+ no Endereço virtual na imagem a partir da qual começar a ler.  
   
  `cbData`  
- [in] O tamanho do buffer de dados em bytes.  
+ no O tamanho do buffer de dados em bytes.  
   
  `pcbData`  
- [out] Retorna o número de bytes realmente lidos. Se `pbData` é `NULL`, em seguida, isso é o número total de bytes de dados disponíveis.  
+ fora Retorna o número de bytes realmente lidos. Se `pbData` for `NULL` , este é o número total de bytes de dados disponíveis.  
   
  `pbData`  
- [no, out] Um buffer que será preenchido com a memória de leitura.  
+ [entrada, saída] Um buffer que é preenchido com a leitura de memória.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

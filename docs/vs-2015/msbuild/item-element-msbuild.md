@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192610"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
@@ -33,7 +33,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
  \<ItemGroup>  
  \<Item>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Item Include="*.cs"  
@@ -50,7 +50,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIÇÃO|  
+|Atributo|Descrição|  
 |---------------|-----------------|  
 |`Include`|Atributo obrigatório.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|  
 |`Exclude`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser excluído da lista de itens.|  
@@ -62,20 +62,20 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Uma chave de metadados de item definido pelo usuário, que contém o valor de metadados do item. Pode ser que não haja nenhum ou mais de um elemento `ItemMetadata` em um item.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping para itens.|  
   
 ## <a name="remarks"></a>Comentários  
  Os elementos `Item` definem entradas no sistema de compilação e são agrupados em coleções de itens com base em seus nomes de coleção definida pelo usuário. Essas coleções de itens podem ser usadas como parâmetros para [tarefas](../msbuild/msbuild-tasks.md), que usam os itens individuais nas coleções para executar as etapas do processo de build. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
- O uso da notação `@(`*myType*`)` permite que uma coleção de itens do tipo *myType* seja expandida em uma lista de cadeias de caracteres delimitada por ponto e vírgula e passada para um parâmetro. Se o parâmetro for do tipo `string`, então o valor do parâmetro será a lista de elementos, separados por ponto e vírgula. Se o parâmetro for uma matriz de cadeias de caracteres (`string[]`), então cada elemento será inserido na matriz com base na localização dos pontos e vírgulas. Se o parâmetro de tarefa for do tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, então o valor é o conteúdo da coleção de itens juntamente com quaisquer metadados anexados. Para delimitar cada item usando um caractere que não seja ponto e vírgula, use a sintaxe `@(`*myType*`, '`*separator*`')`.  
+ O uso de Notation `@(` *com MyType* `)` permite que uma coleção de itens do tipo *com MyType* seja expandida em uma lista delimitada por ponto e vírgula de cadeias de caracteres e passada para um parâmetro. Se o parâmetro for do tipo `string`, então o valor do parâmetro será a lista de elementos, separados por ponto e vírgula. Se o parâmetro for uma matriz de cadeias de caracteres (`string[]`), então cada elemento será inserido na matriz com base na localização dos pontos e vírgulas. Se o parâmetro de tarefa for do tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, então o valor é o conteúdo da coleção de itens juntamente com quaisquer metadados anexados. Para delimitar cada item usando um caractere que não seja um ponto e vírgula, use o `@(` *myType* `, '` *separador*de sintaxe com MyType `')` .  
   
  O mecanismo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode avaliar curingas como `*` e `?`, bem como curingas recursivos como `/**/*.cs`. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
@@ -91,7 +91,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Itens](../msbuild/msbuild-items.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Los](../msbuild/msbuild-items.md)   
  [Propriedades do MSBuild](msbuild-properties1.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

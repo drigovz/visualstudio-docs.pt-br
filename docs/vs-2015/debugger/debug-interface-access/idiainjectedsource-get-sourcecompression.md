@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e8cafcaf3d245ac2310b93c16812327c381854d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192434"
 ---
-# <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
+# <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o indicador da compactação de fonte usado.  
+Recupera o indicador da compactação de origem usada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_sourceCompression ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o indicador de que a compactação de fonte usado. Um valor de zero indica que nenhuma compactação de origem foi usada.  
+ fora Retorna o indicador da compactação de origem usada. Um valor de zero indica que nenhuma compactação de origem foi usada.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O valor retornado por esse método é específico para o compilador usado. Por exemplo, um compilador pode usar a compactação de codificação de comprimento de execução ou estilo de Huffman.  
+ O valor retornado por esse método é específico para o compilador usado. Por exemplo, um compilador pode usar a codificação de comprimento de execução ou a compactação estilo Huffman.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

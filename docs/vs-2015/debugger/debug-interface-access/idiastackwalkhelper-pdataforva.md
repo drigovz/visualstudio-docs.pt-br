@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5af921caa989d7279bb9f52751c452d91045cf3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150086"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Retorna o bloco de dados PDATA associado com o endereço virtual.  
+Retorna o bloco de dados PDATA associado ao endereço virtual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,24 +38,24 @@ HRESULT pdataForVA( 
   
 #### <a name="parameters"></a>Parâmetros  
  `va`  
- [in] Especifica o endereço virtual dos dados a obter.  
+ no Especifica o endereço virtual dos dados a serem obtidos.  
   
  `cbData`  
- [in] O tamanho dos dados em bytes para obter.  
+ no O tamanho dos dados em bytes a serem obtidos.  
   
  `pcbData`  
- [out] Retorna o tamanho real dos dados em bytes, que foi obtido.  
+ fora Retorna o tamanho real dos dados em bytes que foram obtidos.  
   
  `pbData`  
- [no, out] Um buffer que será preenchido com os dados solicitados. Não pode ser `NULL`.  
+ [entrada, saída] Um buffer que é preenchido com os dados solicitados. Não pode ser `NULL`.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum PDATA para o endereço especificado. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum pData para o endereço especificado. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- PDATA (a seção chamada ". pData") de um compiland contém informações sobre o tratamento de exceção para funções.  
+ O PDATA (a seção denominada ". pData") de um compiland contém informações sobre a manipulação de exceção para funções.  
   
- O chamador sabe a quantidade de dados deve ser retornado para que o chamador tenha nem precisa perguntar para a quantidade de dados está disponível. Portanto, é aceitável para a implementação desse método para retornar um erro se o `pbData` parâmetro é `NULL`.  
+ O chamador sabe a quantidade de dados a ser retornada para que o chamador não precise solicitar a quantidade de dados disponível. Portanto, é aceitável que uma implementação desse método retorne um erro se o `pbData` parâmetro for `NULL` .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

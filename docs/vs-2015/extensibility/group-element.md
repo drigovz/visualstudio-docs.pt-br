@@ -1,5 +1,5 @@
 ---
-title: Elemento de grupo | Microsoft Docs
+title: Elemento Group | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204272"
 ---
 # <a name="group-element"></a>Elemento Group
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define um grupo de comando VSPackage.  
+Define um grupo de comandos VSPackage.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
@@ -38,10 +38,10 @@ Define um grupo de comando VSPackage.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador de comando/ID de GUID.|  
-|id|Necessário. ID do identificador de comando/ID de GUID.|  
+|guid|Obrigatórios. GUID do identificador de comando GUID/ID.|  
+|id|Obrigatórios. ID do identificador de comando de GUID/ID.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -54,7 +54,7 @@ Define um grupo de comando VSPackage.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|  
+|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comandos de um VSPackage.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -64,5 +64,5 @@ Define um grupo de comando VSPackage.
 </Group>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
