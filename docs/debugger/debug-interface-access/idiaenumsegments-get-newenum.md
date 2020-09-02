@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9f2d11de426aeb5b40fc5f2c50121d9b644eb94
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468047"
 ---
 # <a name="idiaenumsegmentsget__newenum"></a>IDiaEnumSegments::get__NewEnum
@@ -38,5 +38,5 @@ fora Retorna a `IUnknown` interface que representa a <xref:System.Runtime.Intero
 ## <a name="return-value"></a>Valor Retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

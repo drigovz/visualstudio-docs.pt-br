@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700914"
 ---
 # <a name="sccenumchangedfiles-function"></a>Função SccEnumChangedFiles
-Dada uma lista de arquivos locais, esta função determina quais arquivos são diferentes das versões correspondentes no banco de dados de controle de código fonte.
+Dada uma lista de arquivos locais, essa função determina quais arquivos são diferentes das versões correspondentes no banco de dados de controle do código-fonte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,29 +34,29 @@ SCCRTN SccEnumChangedFiles(
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pContext
 
-[em] O ponteiro de contexto plug-in de controle de origem.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
- cArquivos
+ recfiles
 
-[em] Número de nomes de `lpFileNames` arquivos especificados na matriz. Também especifica o `plIsFileDifferent` tamanho da matriz.
+no Número de nomes de arquivo especificados na `lpFileNames` matriz. Também especifica o tamanho da `plIsFileDifferent` matriz.
 
  lpFileNames
 
-[em] Matriz de nomes de arquivos locais para verificar.
+no Matriz de nomes de arquivos locais a serem verificados.
 
  plIsFileDifferent
 
-[dentro, fora] Matriz de valores indicando o status de diferença `cFiles` de cada arquivo (matriz deve ter pelo menos entradas). Não zero significa que o arquivo é diferente.
+[entrada, saída] Matriz de valores que indica o status de diferença de cada arquivo (a matriz deve ter pelo menos `cFiles` entradas). Zero significa que o arquivo é diferente.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
@@ -64,4 +64,4 @@ SCCRTN SccEnumChangedFiles(
 |SCC_UNSPECIFIEDERROR|Erro genérico.|
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

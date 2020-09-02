@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 51fe7e0bc0d417ffa182fbc68fd2779ed0b625d9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700916"
 ---
 # <a name="sccendbatch-function"></a>Função SccEndBatch
-Esta função conclui um lote de operações de controle de origem. Estes lotes podem não estar aninhados.
+Essa função conclui um lote de operações de controle do código-fonte. Esses lotes não podem ser aninhados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,20 +28,20 @@ Esta função conclui um lote de operações de controle de origem. Estes lotes 
 SCCRTN SccEndBatch(void);
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
  Nenhum.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|Lote de operações concluídacom sucesso.|
-|SCC_E_UNKNOWNERROR|Falha inespecífica.|
+|SCC_OK|O lote de operações foi concluído com êxito.|
+|SCC_E_UNKNOWNERROR|Falha não específica.|
 
 ## <a name="remarks"></a>Comentários
- Os lotes de controle de origem são usados para executar as mesmas operações de controle de origem em vários projetos ou vários contextos. Os lotes podem ser usados para eliminar caixas de diálogo redundantes da experiência do usuário durante uma operação em lote. O [SccBeginBatch](../extensibility/sccbeginbatch-function.md) `SccEndBatch` e a função são usados como um par para indicar o início e o fim de uma operação. Eles não podem ser aninhados.
+ Os lotes de controle do código-fonte são usados para executar as mesmas operações de controle do código-fonte em vários projetos ou em vários contextos. Os lotes podem ser usados para eliminar caixas de diálogo redundantes da experiência do usuário durante uma operação em lote. O [SccBeginBatch](../extensibility/sccbeginbatch-function.md) e a `SccEndBatch` função são usados como um par para indicar o início e o fim de uma operação. Eles não podem ser aninhados.
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

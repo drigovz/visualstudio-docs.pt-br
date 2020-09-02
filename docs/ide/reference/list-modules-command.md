@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595495"
 ---
 # <a name="list-modules-command"></a>Comando Listar Módulos
@@ -32,7 +32,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 [/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
 /Address:`yes|no`
 
 Opcional. Especifica se os endereços de memória dos módulos devem ser exibidos. O valor padrão é `yes`.
@@ -79,5 +79,5 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 ## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
+- [Janela de comando](../../ide/reference/command-window.md)
 - [Como usar a janela Módulos](../../debugger/how-to-use-the-modules-window.md)

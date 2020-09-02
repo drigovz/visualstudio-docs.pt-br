@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b5cba13e439c69b3502b00c6ae159b6af28178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153242"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica as informações a serem recuperados sobre uma falha na resolução de um ponto de interrupção.  
+Especifica as informações a serem recuperadas sobre uma resolução com falha de um ponto de interrupção.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_BPERESI_FIELDS {   
@@ -51,38 +51,38 @@ public enum enum_BPERESI_FIELDS { 
   
 ## <a name="members"></a>Membros  
  PERESI_BPRESLOCATION  
- Inicialização/usar o `bpResLocation` campo (localização de resolução de ponto de interrupção) a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura.  
+ Inicializar/usar o `bpResLocation` campo (local de resolução de ponto de interrupção) da estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .  
   
  BPERESI_PROGRAM  
- Inicialização/usar o `pProgram` campo do `BP_ERROR_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `pProgram` campo da `BP_ERROR_RESOLUTION_INFO` estrutura.  
   
  BPERESI_THREAD  
- Inicialização/usar o `pThread` campo do `BP_ERROR_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `pThread` campo da `BP_ERROR_RESOLUTION_INFO` estrutura.  
   
  BPERESI_MESSAGE  
- Inicialização/usar o `bstrMessage` campo do `BP_ERROR_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `bstrMessage` campo da `BP_ERROR_RESOLUTION_INFO` estrutura.  
   
  BPERESI_TYPE  
- Inicialização/usar o `dwType` campo (tipo de ponto de interrupção) da `BP_ERROR_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `dwType` campo (tipo de ponto de interrupção) da `BP_ERROR_RESOLUTION_INFO` estrutura.  
   
  BPERESI_ALLFIELDS  
- Inicialização/usar todos os campos do `BP_ERROR_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar todos os campos da `BP_ERROR_RESOLUTION_INFO` estrutura.  
   
 ## <a name="remarks"></a>Comentários  
- Passado como um parâmetro para o [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método para indicar quais campos da [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) são de estrutura a ser inicializado.  
+ Passado como um parâmetro para o método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) para indicar quais campos da estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) devem ser inicializados.  
   
- Esses valores também são usados para indicar quais campos no `BP_ERROR_RESOLUTION_INFO` estrutura são usados e válidos quando essa estrutura é retornada.  
+ Esses valores também são usados para indicar quais campos na `BP_ERROR_RESOLUTION_INFO` estrutura são usados e válidos quando essa estrutura é retornada.  
   
- Esses valores podem ser combinados com um bit a bit `OR`.  
+ Esses valores podem ser combinados com um bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

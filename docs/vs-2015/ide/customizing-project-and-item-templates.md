@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665870"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizando modelos de projeto e de item
@@ -32,7 +32,7 @@ Depois que os modelos de projeto e de item tiverem sido criados, você ainda pod
 
 - Passe parâmetros personalizados para um modelo para substituir os valores existentes.
 
-     Para obter mais informações, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
+     Para obter mais informações, consulte [como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Personalize os assistentes que criam projetos com base em modelos.
 
@@ -47,7 +47,7 @@ Depois que os modelos de projeto e de item tiverem sido criados, você ainda pod
 
  [Como criar modelos de item](../ide/how-to-create-item-templates.md)
 
- [Como criar kits de início](../ide/how-to-create-starter-kits.md)
+ [Como: criar kits de início](../ide/how-to-create-starter-kits.md)
 
  [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 

@@ -14,22 +14,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184243"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se deve criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salve o projeto no local especificado.  
+Especifica se deseja criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salvar o projeto no local especificado.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<CreateInPlace>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <CreateInPlace> true/false </CreateInPlace>  
@@ -39,27 +39,27 @@ Especifica se deve criar o projeto e executar a substituição de parâmetro no 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`. Se `true`, o projeto é criado e substituição de parâmetro é executada no local especificado na **novo projeto** caixa de diálogo. Se `false`, substituição de parâmetro é executada em um local temporário e o projeto, em seguida, é copiado para o local especificado.  
+ O texto deve ser `true` ou `false` . Se `true` , o projeto é criado e a substituição de parâmetro é executada no local especificado na caixa de diálogo **novo projeto** . Se `false` , a substituição de parâmetro será executada em um local temporário e o projeto será copiado para o local especificado.  
   
 ## <a name="remarks"></a>Comentários  
  `CreateInPlace` é um elemento opcional. O valor padrão é `true`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +86,6 @@ Especifica se deve criar o projeto e executar a substituição de parâmetro no 
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

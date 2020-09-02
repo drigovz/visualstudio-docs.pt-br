@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4e8452465873cb66883abd347406d17b469e90a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199997"
 ---
 # <a name="sccproperties-function"></a>Função SccProperties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta função exibe propriedades de controle do código-fonte para um arquivo ou projeto.  
+Essa função exibe propriedades de controle do código-fonte para um arquivo ou projeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,30 +36,30 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>Parâmetros  
  pvContext  
- [in] A estrutura de contexto de plug-in de controle de origem.  
+ no A estrutura de contexto do plug-in de controle do código-fonte.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
+ no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.  
   
  lpFileName  
- [in] O nome de caminho totalmente qualificado do arquivo ou projeto.  
+ no O nome do caminho totalmente qualificado do arquivo ou projeto.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_OK|As propriedades foram exibidas com êxito.|  
-|SCC_I_RELOADFILE|O sistema de controle de versão tiver modificado as propriedades do arquivo, para que o IDE deve recarregar este arquivo.|  
-|SCC_E_PROJNOTOPEN|O projeto especificado não foi aberto no controle de origem.|  
-|SCC_E_NOTAUTHORIZED|O usuário não está autorizado para exibir as propriedades deste arquivo ou projeto.|  
-|SCC_E_FILENOTCONTROLLED|O arquivo especificado ou o projeto não está sob controle do código-fonte.|  
+|SCC_I_RELOADFILE|O sistema de controle de versão modificou as propriedades do arquivo, portanto, o IDE deve recarregar esse arquivo.|  
+|SCC_E_PROJNOTOPEN|O projeto especificado não foi aberto no controle do código-fonte.|  
+|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a exibir as propriedades deste arquivo ou projeto.|  
+|SCC_E_FILENOTCONTROLLED|O arquivo ou projeto especificado não está no controle do código-fonte.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Ocorreu um erro desconhecido ou geral.|  
   
 ## <a name="remarks"></a>Comentários  
  O plug-in de controle do código-fonte exibe as propriedades em sua própria caixa de diálogo.  
   
- As propriedades são definidas pelo plug-in de controle da fonte e podem diferir de plug-in para o plug-in. Se o plug-in permite que o usuário altere as propriedades de controle de origem de um arquivo, ele deverá retornar `SCC_I_RELOAD` para sinalizar o IDE que este arquivo ou o projeto precisa ser recarregado.  
+ As propriedades são definidas pelo plug-in de controle do código-fonte e podem ser diferentes do plug-in para o plug-in. Se o plug-in permitir que o usuário altere as propriedades de controle do código-fonte de um arquivo, ele deverá retornar `SCC_I_RELOAD` para sinalizar ao IDE que esse arquivo ou projeto precisa ser recarregado.  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulte Também  
+ [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

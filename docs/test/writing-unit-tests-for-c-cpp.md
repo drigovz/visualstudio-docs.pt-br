@@ -1,6 +1,6 @@
 ---
 title: Escrever testes de unidade para C/C++
-description: Escreva testes de unidade C++ no Visual Studio usando várias estruturas de teste, incluindo CTest, Boost.Test e Google Test.
+description: Escreva testes de unidade em C++ no Visual Studio usando várias estruturas de teste, incluindo CTest, Boost. Test e Google Test.
 ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
@@ -9,15 +9,15 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649610"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
-Você pode escrever e executar seus testes de unidade C++ usando a janela **Test Explorer.** Funciona como em outras línguas. Para saber mais sobre como usar o **Gerenciador de Testes**, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
+Você pode escrever e executar os testes de unidade do C++ usando a janela **Test Explorer** . Ele funciona exatamente como faz para outros idiomas. Para saber mais sobre como usar o **Gerenciador de Testes**, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
 
 > [!NOTE]
 > Não há suporte para alguns recursos no C++, como o Live Unit Testing, Testes de Interface do Usuário Codificados e IntelliTest.
@@ -29,7 +29,7 @@ O Visual Studio inclui estas estruturas de teste para C++, sem a necessidade de 
 - Boost.Test
 - CTest
 
-Além de usar as estruturas instaladas, você pode escrever seu próprio adaptador de teste para qualquer estrutura que você gostaria de usar dentro do Visual Studio. Um adaptador de teste pode integrar testes de unidade à janela **Gerenciador de Testes**. Vários adaptadores de terceiros são disponibilizados no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Para obter mais informações, consulte [Instalar estruturas de teste de unidades de terceiros](install-third-party-unit-test-frameworks.md).
+Juntamente com o uso das estruturas instaladas, você pode escrever seu próprio adaptador de teste para qualquer estrutura que queira usar no Visual Studio. Um adaptador de teste pode integrar testes de unidade à janela **Gerenciador de Testes**. Vários adaptadores de terceiros são disponibilizados no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Para obter mais informações, consulte [instalar estruturas de teste de unidade de](install-third-party-unit-test-frameworks.md)terceiros.
 
 **Visual Studio 2017 e posterior (Professional e Enterprise)**
 
@@ -37,25 +37,25 @@ Os projetos de teste de unidade C++ são compatíveis com o [CodeLens](../ide/fi
 
 **Visual Studio 2017 e posterior (todas as edições)**
 
-- **O Adaptador de Teste do Google** é incluído como um componente padrão do desenvolvimento da área de trabalho com carga de trabalho **C++.** Ele tem um modelo de projeto que você pode adicionar a uma solução. Use o menu adicionar novo **projeto** com o botão direito do mouse no nó da solução no **Solution Explorer** para adicioná-lo. Ele também tem opções que você pode configurar através **de opções de ferramentas.** > **Options** Para obter mais informações, consulte [Como: Usar o Teste do Google no Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test adaptador** está incluído como um componente padrão do **desenvolvimento de desktop com** carga de trabalho do C++. Ele tem um modelo de projeto que você pode adicionar a uma solução. Use o menu **Adicionar novo projeto** clique com o botão direito do mouse no nó da solução em **Gerenciador de soluções** para adicioná-lo. Ele também tem opções que você pode configurar por meio das opções de **ferramentas**  >  **Options**. Para obter mais informações, consulte [como: usar Google Test no Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** é incluído como um componente padrão do desenvolvimento da área de trabalho com carga de trabalho **C++.** Ele é integrado com **o Test Explorer,** mas atualmente não tem um modelo de projeto. Deve ser configurado manualmente. Para obter mais informações, consulte [Como: Usar boost.test no Visual Studio](how-to-use-boost-test-for-cpp.md).
+- O **Boost. Test** é incluído como um componente padrão do **desenvolvimento de desktop com** carga de trabalho do C++. Ele está integrado ao **Gerenciador de testes**, mas atualmente não tem um modelo de projeto. Ele deve ser configurado manualmente. Para obter mais informações, consulte [como: usar Boost. Test no Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- O suporte para **CTest** está incluído no componente **Ferramentas CMake para C++**, que faz parte da carga de trabalho **Desenvolvimento para desktop com C++**. Para obter mais informações, consulte [Como: Usar CTest no Visual Studio](how-to-use-ctest-for-cpp.md).
+- O suporte para **CTest** está incluído no componente **Ferramentas CMake para C++**, que faz parte da carga de trabalho **Desenvolvimento para desktop com C++**. Para obter mais informações, consulte [como: usar o CTest no Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 e versões anteriores**
 
-Você pode baixar as extensões do adaptador de teste do Google e do Adaptador Boost.Test no Visual Studio Marketplace. Encontre-os no [adaptador de teste para o adaptador Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) e [Test para o Teste do Google](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest).
+Você pode baixar o adaptador de Google Test e aumentar as extensões do adaptador de teste no Visual Studio Marketplace. Encontre-os no [adaptador de teste para o Boost. teste](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) e [adaptador de teste para Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest).
 
 ## <a name="basic-test-workflow"></a>Fluxo de trabalho básico de teste
 
-As seções a seguir mostram as etapas básicas para começar os testes de unidade para C++. A configuração básica é semelhante tanto para as estruturas de teste da Microsoft quanto do Google. O Boost.Test requer a criação manual de um projeto de teste.
+As seções a seguir mostram as etapas básicas para começar os testes de unidade para C++. A configuração básica é semelhante para as estruturas da Microsoft e do Google Test. O Boost.Test requer a criação manual de um projeto de teste.
 
 ::: moniker range="vs-2019"
 
 ### <a name="create-a-test-project-in-visual-studio-2019"></a>Crie um projeto de teste no Visual Studio 2019
 
-Você define e executa testes dentro de um ou mais projetos de teste. Você cria os projetos na mesma solução que o código que deseja testar. Para adicionar um novo projeto de teste a uma solução existente, clique com o botão direito do mouse no nó Solução no **Solution Explorer**. No menu pop-up, escolha **Adicionar** > **novo projeto**. Defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa. A ilustração a seguir mostra os projetos de teste que estão disponíveis quando o **Desenvolvimento de área de trabalho com C++** e a carga de trabalho **Desenvolvimento de UWP** estão instalados:
+Você define e executa testes dentro de um ou mais projetos de teste. Você cria os projetos na mesma solução que o código que deseja testar. Para adicionar um novo projeto de teste a uma solução existente, clique com o botão direito do mouse no nó da solução em **Gerenciador de soluções**. No menu pop-up, escolha **Adicionar**  >  **novo projeto**. Defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa. A ilustração a seguir mostra os projetos de teste que estão disponíveis quando o **Desenvolvimento de área de trabalho com C++** e a carga de trabalho **Desenvolvimento de UWP** estão instalados:
 
 ![Projetos de teste C++ no Visual Studio 2019](media/vs-2019/cpp-new-test-project-vs2019.png)
 
@@ -65,7 +65,7 @@ Você define e executa testes dentro de um ou mais projetos de teste. Você cria
 
 ### <a name="create-a-test-project-in-visual-studio-2017"></a>Crie um projeto de teste no Visual Studio 2017
 
-Você define e executa testes dentro de um ou mais projetos de teste. Você cria os projetos na mesma solução que o código que deseja testar. Para adicionar um novo projeto de teste, clique com o botão direito do mouse no nó Solução no **Solution Explorer** e escolha **Adicionar** > **novo projeto**. No painel esquerdo, escolha **o teste Visual C++.** Em seguida, escolha um dos tipos de projeto no painel central. A ilustração a seguir mostra os projetos de teste disponibilizados quando a carga de trabalho **Desenvolvimento de Área de Trabalho com C++** é instalada:
+Você define e executa testes dentro de um ou mais projetos de teste. Você cria os projetos na mesma solução que o código que deseja testar. Para adicionar um novo projeto de teste, clique com o botão direito do mouse no nó da solução em **Gerenciador de soluções** e escolha **Adicionar**  >  **novo projeto**. No painel esquerdo, escolha **Visual C++ teste**. Em seguida, escolha um dos tipos de projeto no painel central. A ilustração a seguir mostra os projetos de teste disponibilizados quando a carga de trabalho **Desenvolvimento de Área de Trabalho com C++** é instalada:
 
 ![Projetos de teste C++](media/cpp-new-test-project.png)
 
@@ -73,13 +73,13 @@ Você define e executa testes dentro de um ou mais projetos de teste. Você cria
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Criar referências a outros projetos na solução
 
-Para habilitar o acesso às funções do projeto em teste, adicione uma referência ao projeto em seu projeto de teste. Clique com o botão direito do mouse no nó do projeto de teste no **Solution Explorer** para obter um menu pop-up. Escolha **adicionar** > **referência**. Na caixa de diálogo Adicionar referência, escolha os projetos que deseja testar.
+Para habilitar o acesso às funções no projeto em teste, adicione uma referência ao projeto em seu projeto de teste. Clique com o botão direito do mouse no nó Test Project no **Gerenciador de soluções** para um menu pop-up. Escolha **Adicionar**  >  **referência**. Na caixa de diálogo Adicionar referência, escolha os projetos que você deseja testar.
 
 ![Adicionar referência](media/cpp-add-ref-test-project.png)
 
 ### <a name="link-to-object-or-library-files"></a>Vincular a arquivos de biblioteca ou objeto
 
-Se o código de teste não exportar as funções que você deseja testar, será possível adicionar os arquivos .obj ou .lib de saída para as dependências do projeto de teste. Para obter mais informações, consulte [Para vincular os testes aos arquivos do objeto ou da biblioteca](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
+Se o código de teste não exportar as funções que você deseja testar, será possível adicionar os arquivos .obj ou .lib de saída para as dependências do projeto de teste. Para obter mais informações, consulte [para vincular os testes aos arquivos de objeto ou de biblioteca](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
 
 ### <a name="add-include-directives-for-header-files"></a>Adicionar diretivas de inclusão aos arquivos de cabeçalho
 
@@ -87,14 +87,14 @@ Em seguida, no arquivo *.cpp* do teste de unidade, adicione uma diretiva `#inclu
 
 ![Adicionar diretivas de inclusão](media/cpp-add-includes-test-project.png)
 
-Para evitar ter que digitar o caminho completo em cada declaração de incluir no arquivo de origem, você pode adicionar as pastas necessárias nas**propriedades** >  **do projeto** > **C/C++** > **Diretórios adicionais adicionais****gerais** > .
+Para evitar a necessidade de digitar o caminho completo em cada instrução include no arquivo de origem, você pode adicionar as pastas necessárias nas propriedades do **projeto projetos**de  >  **Properties**  >  inclusão adicionais do**C/C++**  >  **geral**  >  **Additional Include Directories**.
 
 ### <a name="write-test-methods"></a>Gravar métodos de teste
 
 > [!NOTE]
 > Esta seção mostra a sintaxe da Microsoft Unit Testing Framework para C/C++. Ela está documentada na [Referência de API do Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Para obter a documentação do Google Test, confira [Prévia do Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Quanto ao Boost.Test, confira [Biblioteca do Boost Test: a estrutura de teste de unidade](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
-O arquivo *.cpp* em seu projeto de teste tem uma classe de stub e um método definidos para você. Eles mostram um exemplo de como escrever código de teste. As assinaturas usam as macros TEST_CLASS e TEST_METHOD, que tornam os métodos descobertos a partir da janela **do Test Explorer.**
+O arquivo *. cpp* em seu projeto de teste tem uma classe stub e um método definido para você. Eles mostram um exemplo de como escrever código de teste. As assinaturas usam as macros TEST_CLASS e TEST_METHOD, que tornam os métodos detectáveis na janela **Gerenciador de testes** .
 
 ![Adicionar diretivas de inclusão](media/cpp-write-test-methods.png)
 
@@ -113,7 +113,7 @@ TEST_METHOD(TestClassInit)
 
 No exemplo anterior, o resultado da chamada `Assert::AreEqual` determina o resultado do teste: aprovação ou falha. A classe Assert contém vários outros métodos para comparar os resultados esperados aos resultados reais.
 
-Você pode adicionar *características* aos métodos de teste para especificar proprietários de teste, prioridade e outras informações. Depois, é possível usar esses valores para classificar e agrupar os testes no **Gerenciador de Testes**. Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
+Você pode adicionar *características* a métodos de teste para especificar proprietários de teste, prioridade e outras informações. Depois, é possível usar esses valores para classificar e agrupar os testes no **Gerenciador de Testes**. Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
 
 ### <a name="run-the-tests"></a>Executar os testes
 
@@ -124,31 +124,31 @@ Você pode adicionar *características* aos métodos de teste para especificar p
    > [!NOTE]
    > A integração do CTest com o **Gerenciador de Testes** ainda não está disponível. Execute testes de CTest no menu principal do CMake.
 
-1. Se nem todos os seus testes estiverem visíveis na janela, construa o projeto de teste clicando com o botão direito do mouse no nó no **Solution Explorer** e escolhendo **Build** or **Rebuild**.
+1. Se nem todos os testes estiverem visíveis na janela, crie o projeto de teste clicando com o botão direito do mouse em seu nó em **Gerenciador de soluções** e escolhendo **Compilar** ou **Recompilar**.
 
-1. No **Test Explorer,** escolha **Executar tudo**ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados. Depois de executar todos os testes, a janela mostrará quais testes foram aprovados e quais falharam:
+1. No **Gerenciador de testes**, escolha **executar tudo**ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados. Depois de executar todos os testes, a janela mostrará quais testes foram aprovados e quais falharam:
 
 ![Gerenciador de Testes depois da execução dos testes](media/cpp-test-explorer-passed.png)
 
-Para testes com falha, a mensagem mostra detalhes que ajudam a diagnosticar a causa. Clique com o botão direito do mouse no teste de falha para um menu pop-up. Escolha **Depuração Testes selecionados** para passar pela função onde ocorreu a falha.
+Para testes com falha, a mensagem mostra detalhes que ajudam a diagnosticar a causa. Clique com o botão direito do mouse no teste com falha de um menu pop-up. Escolha **depurar testes selecionados** para percorrer a função em que a falha ocorreu.
 
 Para saber mais sobre como usar o **Gerenciador de Testes**, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
 
-Para obter mais informações relacionadas ao teste unitário, consulte [os fundamentos básicos do teste unitário](unit-test-basics.md)
+Para obter mais informações relacionadas ao teste de unidade, consulte [noções básicas de teste de unidade](unit-test-basics.md)
 
 ## <a name="use-codelens"></a>Usar o CodeLens
 
 **Visual Studio 2017 e posterior (edições Professional e Enterprise)**
 
-[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite que você veja rapidamente o status de um teste de unidade sem sair do editor de código.
+O [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite que você veja rapidamente o status de um teste de unidade sem sair do editor de código.
 
 Você pode inicializar o CodeLens para um projeto de teste de unidade do C++ em qualquer uma das seguintes formas:
 
 - Editar e compilar sua solução ou projeto de teste.
 - Recompilar sua solução ou projeto.
-- Execute testes da janela do Explorador de **Teste.**
+- Execute testes na janela **Gerenciador de testes** .
 
-Depois de inicializado, você pode ver ícones de status de teste acima de cada teste de unidade.
+Depois de inicializado, você pode ver os ícones de status de teste acima de cada teste de unidade.
 
 ![Ícones do CodeLens C++](media/cpp-test-codelens-icons.png)
 
@@ -158,4 +158,4 @@ Clique no ícone para obter mais informações ou para executar ou depurar o tes
 
 ## <a name="see-also"></a>Confira também
 
-- [Unidade teste seu código](unit-test-your-code.md)
+- [Teste de unidade em seu código](unit-test-your-code.md)

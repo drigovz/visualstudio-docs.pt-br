@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189210"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Criar perfil do desempenho de aplicativos do SharePoint
@@ -63,10 +63,10 @@ Testes de IU codificados direcionam automaticamente seu aplicativo do SharePoint
 |-----------|-----------------|
 |[Walkthrough: criar perfil de um aplicativo do SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Demonstra como executar uma análise de perfil de amostragem em um aplicativo do SharePoint.|
 |[Realizar um teste de desempenho no aplicativo antes do lançamento](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Descreve como criar testes de carga, que ajudam você a enfatizar aplicativos do SharePoint de teste.|
-|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Descreve como encontrar erros lógicos em seu código usando testes de unidade.|
-|[Testando os aplicativos do SharePoint 2010 com testes de IU codificados](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Descreve como testar a interface do usuário de seus aplicativos do SharePoint.|
+|[Teste de unidade de código](../test/unit-test-your-code.md)|Descreve como encontrar erros lógicos em seu código usando testes de unidade.|
+|[Testando aplicativos do SharePoint 2010 com testes de IU codificados](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Descreve como testar a interface do usuário de seus aplicativos do SharePoint.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Melhorar a qualidade do código](../test/improve-code-quality.md)

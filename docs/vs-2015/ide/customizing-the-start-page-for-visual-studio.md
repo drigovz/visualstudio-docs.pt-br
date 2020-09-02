@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665847"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personalizando a página inicial do Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "72665847"
 
 ## <a name="customizing-the-default-start-page"></a>Personalizando a página inicial padrão
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **ferramentas**, **Opções**.
 
 2. Expanda **Ambiente** e escolha **Inicialização**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "72665847"
 
          Veja [Como criar uma página inicial personalizada](../misc/creating-your-own-start-page.md).
 
-2. Na barra de menus, escolha **Ferramentas**, **Opções**.
+2. Na barra de menus, escolha **ferramentas**, **Opções**.
 
 3. Expanda **Ambiente** e escolha **Inicialização**.
 
@@ -61,5 +61,5 @@ ms.locfileid: "72665847"
 > [!NOTE]
 > Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá iniciar o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Como personalizar as configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Como criar uma página inicial personalizada](../misc/creating-your-own-start-page.md)

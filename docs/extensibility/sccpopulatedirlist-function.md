@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700563"
 ---
 # <a name="sccpopulatedirlist-function"></a>Função SccPopulateDirList
-Esta função determina quais diretórios e arquivos (opcionalmente) são armazenados no controle de origem, dada uma lista de diretórios a serem examinados.
+Essa função determina quais diretórios e (opcionalmente) os arquivos são armazenados no controle do código-fonte, dadas uma lista de diretórios a serem examinados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,44 +35,44 @@ SCCRTN SccPopulateDirList(
 );
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  pContext
 
-[em] O ponteiro de contexto plug-in de controle de origem.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  nDirs
 
-[em] Número de caminhos `lpDirPaths` de diretório na matriz.
+no Número de caminhos de diretório na `lpDirPaths` matriz.
 
  lpDirPaths
 
-[em] Matriz de caminhos de diretório a serem examinados.
+no Matriz de caminhos de diretório a serem examinados.
 
  pfnPopulate
 
-[em] Função de retorno de chamada para chamar cada caminho `lpDirPaths` de diretório e (opcionalmente) nome de arquivo em (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obter detalhes).
+no Função de retorno de chamada para chamar cada caminho de diretório e (opcionalmente) nome de arquivo em `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obter detalhes).
 
  pvCallerData
 
-[em] Valor que deve ser passado inalterado para a função de retorno de chamada.
+no Valor que deve ser passado inalterado para a função de retorno de chamada.
 
- fOpções
+ fOptions
 
-[em] Uma combinação de valores que controlam a forma como os diretórios são processados (consulte a seção "PopulateDirList flags" dos [Bitflags usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para possíveis valores).
+no Uma combinação de valores que controlam como os diretórios são processados (consulte a seção "sinalizadores de PopulateDirList" do [Bitflags usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para os valores possíveis).
 
-## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+## <a name="return-value"></a>Valor Retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|Completou com sucesso a operação.|
+|SCC_OK|Operação concluída com êxito.|
 |SCC_E_UNKNOWNERROR|Ocorreu um erro.|
 
 ## <a name="remarks"></a>Comentários
- Apenas os diretórios e (opcionalmente) nomes de arquivos que estão realmente no repositório de controle de origem são passados para a função de retorno de chamada.
+ Somente os diretórios e (opcionalmente) os nomes de arquivo que estão na verdade no repositório do controle do código-fonte são passados para a função de retorno de chamada.
 
 ## <a name="see-also"></a>Confira também
 - [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
-- [Códigos de erro](../extensibility/error-codes.md)
+- [Códigos de Erro](../extensibility/error-codes.md)

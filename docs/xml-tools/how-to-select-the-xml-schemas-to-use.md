@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815962"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: selecionar os esquemas XML a serem usados
@@ -40,11 +40,11 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
 
    - Selecione um esquema listado na caixa de diálogo **esquemas XML** , clique na coluna **usar** e, em seguida, selecione **usar este esquema**.
 
-     -ou-
+     - ou -
 
    - Selecione vários esquemas listados na caixa de diálogo **esquemas XML** e clique com o botão direito do mouse e selecione **usar este esquema**.
 
-4. Selecione **OK**.
+4. Escolha **OK**.
 
    A lista de esquemas selecionados é copiada de volta para a propriedade de documento **esquemas** .
 
@@ -73,7 +73,7 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
    > [!NOTE]
    > Se você ainda tiver uma referência ao esquema por meio de um `schemaLocation` atributo ou se uma correspondência for `targetNamespace` **removida** , isso não funcionará nessa situação devido à associação automática. Nesse caso, é recomendável que você marque o esquema como **não usar esquemas selecionados** na coluna **usar** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Cache de esquema](../xml-tools/schema-cache.md)
 - [Caixa de diálogo esquemas XML](../xml-tools/xml-schemas-dialog-box.md)

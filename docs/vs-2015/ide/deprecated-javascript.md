@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 343f3ebe4bea7ee999f60741c189f35defb0ac7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665812"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;deprecated&gt; (JavaScript)
@@ -33,12 +33,12 @@ Especifica uma função ou um método preterido.
 #### <a name="parameters"></a>Parâmetros
  `type` Opcional. Especifica se a função ou o método será removido em uma versão futura ou se a função ou o método já foi removido e se o seu uso pode resultar em um erro. Defina como `deprecate` para especificar que a função ou o método será removido em uma versão futura. Defina como `remove` para especificar que a função ou o método já foi removido.
 
- `locid` Opcional. O identificador de informações de localização sobre o método ou função. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo do identificador depende do formato especificado no elemento [\<loc>](../ide/loc-javascript.md).
+ `locid` Opcional. O identificador de informações de localização sobre o método ou função. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo de identificador depende do formato especificado no [\<loc>](../ide/loc-javascript.md) elemento.
 
  `description` Opcional. Uma descrição da função ou método que está sendo preterido.
 
 ## <a name="remarks"></a>Comentários
- Os elementos usados para anotar funções, que incluem `<deprecated>`, devem ser colocados no corpo da função antes de qualquer instrução. Ao marcar uma função como preterida, recomendamos que você substitua seu elemento [\<summary >](../ide/summary-javascript.md) pelo elemento `<deprecated>`.
+ Os elementos usados para anotar funções, que incluem `<deprecated>` , devem ser colocados no corpo da função antes de qualquer instrução. Quando você marca uma função como preterida, é recomendável substituir seu [\<summary>](../ide/summary-javascript.md) elemento pelo `<deprecated>` elemento.
 
 ## <a name="example"></a>Exemplo
  O código a seguir mostra como usar o elemento `<deprecated>`.
@@ -55,5 +55,5 @@ function areaFunction(radiusParam) {
 
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)

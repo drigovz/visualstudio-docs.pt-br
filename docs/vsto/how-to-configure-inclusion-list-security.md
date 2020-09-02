@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541629"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Como: configurar a segurança da lista de inclusão
@@ -55,10 +55,10 @@ ms.locfileid: "85541629"
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Desabilitado**|
-    |**Meu**|**Habilitado**|
-    |**Intranet Local**|**Habilitado**|
-    |**TrustedSites**|**Habilitado**|
+    |**UntrustedSites**|**Desabilitada**|
+    |**Meu**|**Habilitada**|
+    |**Intranet Local**|**Habilitada**|
+    |**TrustedSites**|**Habilitada**|
 
      Por padrão, a **Internet** tem o valor **AuthenticodeRequired** e **UntrustedSites** tem o valor **desabilitado**.
 
@@ -113,7 +113,7 @@ ms.locfileid: "85541629"
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Desabilitado**|
+    |**UntrustedSites**|**Desabilitada**|
     |**Internet**|**AuthenticodeRequired**|
     |**Meu**|**AuthenticodeRequired**|
     |**Intranet Local**|**AuthenticodeRequired**|
@@ -170,11 +170,11 @@ ms.locfileid: "85541629"
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Desabilitado**|
-    |**Internet**|**Desabilitado**|
-    |**Meu**|**Desabilitado**|
-    |**Intranet Local**|**Desabilitado**|
-    |**TrustedSites**|**Desabilitado**|
+    |**UntrustedSites**|**Desabilitada**|
+    |**Internet**|**Desabilitada**|
+    |**Meu**|**Desabilitada**|
+    |**Intranet Local**|**Desabilitada**|
+    |**TrustedSites**|**Desabilitada**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Para desabilitar a lista de inclusão programaticamente
 
@@ -207,6 +207,6 @@ ms.locfileid: "85541629"
 
 3. Criar e executar o aplicativo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Confiar em soluções do Office usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

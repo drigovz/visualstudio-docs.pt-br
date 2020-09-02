@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875599"
 ---
 # <a name="dowhile-activity-designer"></a>Designer de atividade DoWhile
@@ -30,7 +30,7 @@ A tabela a seguir mostra as propriedades de atividade mais úteis <xref:System.A
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|Falso|A atividade a ser executada enquanto a condição é **verdadeira**. Para adicionar a <xref:System.Activities.Statements.DoWhile.Body%2A> atividade, remova uma atividade da caixa de ferramentas para o **corpo** de atividade no designer de atividades **DoWhile** com o texto de dica "soltar atividade aqui".|
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|Verdadeiro|A condição a ser avaliada após cada iteração do loop. Para definir o <xref:System.Activities.Statements.DoWhile.Condition%2A> , digite uma expressão de Visual Basic na caixa **condição** no designer de atividade **DoWhile** ou na grade de propriedades.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [While](../workflow-designer/while-activity-designer.md)
-- [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)
+- [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
