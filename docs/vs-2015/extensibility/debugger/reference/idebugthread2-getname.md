@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName | Microsoft Docs
+title: 'IDebugThread2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 509db8c30aabd8a4163ea433bb06a99d4bfa2fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153048"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
@@ -40,14 +40,14 @@ int GetName ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrName`  
- [out] Retorna o nome do thread.  
+ fora Retorna o nome do thread.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O nome recuperado é sempre um nome que pode ser exibido e esse nome descreve o thread. O nome do thread pode ser derivado de uma arquitetura de tempo de execução que oferece suporte a nomeadas threads ou pode ser um nome derivado do mecanismo de depuração. Como alternativa, o nome do thread pode ser definido por uma chamada para o [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) método.  
+ O nome recuperado é sempre um nome que pode ser exibido e esse nome descreve o thread. O nome do thread pode ser derivado de uma arquitetura de tempo de execução que dá suporte a threads nomeados ou pode ser um nome derivado do mecanismo de depuração. Como alternativa, o nome do thread pode ser definido por uma chamada para o método [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

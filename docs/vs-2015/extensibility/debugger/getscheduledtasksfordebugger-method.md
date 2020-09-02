@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152726"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Método GetScheduledTasksForDebugger
@@ -24,9 +24,9 @@ Recupera uma matriz de todas as tarefas agendadas.
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (no mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,11 +34,11 @@ Recupera uma matriz de todas as tarefas agendadas.
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Uma matriz de todas as tarefas agendadas. Cada tarefa está em execução ou tiver concluído a execução.  
+## <a name="return-value"></a>Valor retornado  
+ Uma matriz de todas as tarefas agendadas. Cada tarefa está em execução ou concluiu a execução.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método não é thread-safe e não deve ser usado simultaneamente com outras instâncias do <xref:System.Threading.Tasks.TaskScheduler> deve ser chamado por um depurador somente quando o depurador suspendeu a todos os outros threads.  
+ Esse método não é thread-safe e não deve ser usado simultaneamente com outras instâncias dele <xref:System.Threading.Tasks.TaskScheduler> deve ser chamado a partir de um depurador somente quando o depurador tiver suspenso todos os outros threads.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

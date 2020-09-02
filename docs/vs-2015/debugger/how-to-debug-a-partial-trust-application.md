@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704480"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Como: Depurar um aplicativo de confiança parcial
+# <a name="how-to-debug-a-partial-trust-application"></a>Como depurar um aplicativo parcialmente confiável
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se a aplicativos do Windows e do console.  
   
- [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md) torna mais fácil implantar aplicativos de confiança parcial que aproveitam [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar o acesso a recursos em um computador.  
+ A [segurança e a implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md) facilita a implantação de aplicativos de confiança parcial que aproveitam a segurança de acesso ao [código](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar o acesso a recursos em um computador.  
   
  Depurar um aplicativo de confiança parcial pode ser um desafio, porque os aplicativos de confiança parcial têm permissões de segurança diferentes (e, portanto, comportam-se diferente) dependendo de onde são instalados. Se for instalado da Internet, um aplicativo de confiança parcial terá algumas permissões. Se for instalado de uma intranet local, terá mais permissões e, se for instalado do computador local, terá permissões completas. Você também pode ter zonas personalizados, com permissões personalizadas. Você pode precisar depurar um aplicativo de confiança parcial em algumas ou todas essas condições. Felizmente, o Visual Studio facilita isso também.  
   
@@ -45,42 +45,42 @@ Aplica-se a aplicativos do Windows e do console.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Para escolher uma zona para seu aplicativo de confiança parcial  
   
-1. Dos **Project** menu, escolha _Projectname_**propriedades**.  
+1. No menu **projeto** , escolha Propriedades _ProjectName_**Properties**.  
   
-2. No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
+2. Nas páginas de propriedades *ProjectName* , clique na página **segurança** .  
   
 3. Selecione **Habilitar configurações de segurança do ClickOnce**.  
   
-4. Sob **seu aplicativo será instalado a partir de zona**, clique em caixa de listagem suspensa e escolha a zona que você deseja simular o aplicativo que está sendo instalado em.  
+4. Em **zona em que seu aplicativo será instalado**, clique na caixa de listagem suspensa e escolha a zona na qual você deseja simular a instalação do aplicativo.  
   
-     O **as permissões exigidas pelo aplicativo** grade mostra todas as permissões disponíveis. A marca de seleção indica as permissões concedidas ao aplicativo.  
+     As **permissões exigidas pela grade de aplicativos** mostram todas as permissões disponíveis. A marca de seleção indica as permissões concedidas ao aplicativo.  
   
-5. Se a zona que você escolher foi **(personalizado)**, selecione as configurações personalizadas corretas na **configuração** coluna do **permissões** grade.  
+5. Se a zona escolhida tiver sido **(personalizada)**, selecione as configurações personalizadas corretas na coluna **configuração** da grade **permissões** .  
   
 6. Clique em **OK** para fechar as páginas de propriedades.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Para adicionar uma permissão extra quando ocorrer uma exceção de segurança  
   
-1. O **Assistente de exceção** caixa de diálogo é exibida com a mensagem: **SecurityException sem tratamento.**  
+1. A caixa de diálogo **Assistente de exceção** é exibida com a mensagem: **SecurityException estava sem tratamento.**  
   
-2. No **Assistente de exceção** caixa de diálogo **ações**, clique em **adicionar permissão ao projeto**.  
+2. Na caixa de diálogo **Assistente de exceção** , em **ações**, clique em **adicionar permissão ao projeto**.  
   
-3. O **reiniciar depuração** caixa de diálogo é exibida.  
+3. A caixa de diálogo **reiniciar depuração** é exibida.  
   
-    - Se você deseja reiniciar a sessão de depuração com a nova permissão, clique em **Sim**.  
+    - Se você quiser reiniciar a sessão de depuração com a nova permissão, clique em **Sim**.  
   
     - Se você não quiser reiniciar ainda, clique em **não**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Para exibir as permissões adicionais adicionadas durante a depuração  
   
-1. Dos **Project** menu, escolha _Projectname_**propriedades**.  
+1. No menu **projeto** , escolha Propriedades _ProjectName_**Properties**.  
   
-2. No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
+2. Nas páginas de propriedades *ProjectName* , clique na página **segurança** .  
   
-3. Examine os **as permissões exigidas pelo aplicativo** grade. Qualquer permissão adicional que você adicionou tem dois ícones na **incluídos** coluna: a marca de seleção normal, que tem permissões, todos incluídos e um ícone adicional, que se parece com um balão que contém a letra "i".  
+3. Examine as **permissões exigidas pela grade de aplicativos** . Qualquer permissão extra adicionada tem dois ícones na coluna **incluída** : a marca de seleção normal, que todas as permissões incluídas têm e um ícone adicional, que se parece com um balão que contém a letra "i".  
   
-4. Use a barra de rolagem vertical para exibir todo o **as permissões exigidas pelo aplicativo** grade.  
+4. Use a barra de rolagem vertical para exibir as permissões inteiras **exigidas pela grade de aplicativos** .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Segurança do depurador](../debugger/debugger-security.md)

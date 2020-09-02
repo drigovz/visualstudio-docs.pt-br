@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779721"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET
@@ -34,10 +34,10 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 |Coluna|Descrição|
 |------------|-----------------|
 |**Nome da função**|O nome da função.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Número de Chamadas**|O número total de chamadas que são feitas à função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo da execução de criação de perfil.|
@@ -106,6 +106,6 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 
 ## <a name="see-also"></a>Confira também
 - [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)
-- [Exibição caller/Callee - dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Exibição caller/Callee - dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
+- [Exibição Caller/Callee-dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)

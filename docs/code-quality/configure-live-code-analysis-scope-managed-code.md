@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249184"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Como: configurar o escopo de análise de código ao vivo para código gerenciado
@@ -74,7 +74,7 @@ Se o Visual Studio detectar que 200 MB ou menos de memória do sistema está dis
 
 ![Texto de alerta minimizando o escopo de análise](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Suspensão automática de recursos](./automatic-feature-suspension.md)
 - [Solicitação de recurso do modo de economia de energia](https://github.com/dotnet/roslyn/issues/38429)

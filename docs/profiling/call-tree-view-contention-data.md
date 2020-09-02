@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779773"
 ---
 # <a name="call-tree-view---contention-data"></a>Modo de exibição de árvore de chamadas - Dados de contenção
@@ -39,24 +39,24 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 |**% de Tempo Bloqueado Exclusivo**|O percentual de todo o tempo bloqueado na execução da criação de perfil que representou o tempo bloqueado exclusivo para essa função nesse contexto.|
 |**Contenções Exclusivas**|O número de contenções que ocorreram em instâncias dessa função nesse caminho de execução. O número não inclui contenções de funções filho chamadas pela função.|
 |**% de Contenções Exclusivas**|A porcentagem de todas as contenções na execução da criação de perfil que eram exclusivas das instâncias dessa função e foram chamadas pela função pai na árvore de chamada.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Tempo Bloqueado Inclusivo**|O tempo total em que as instâncias dessa função nesse caminho de execução estiveram bloqueadas durante a execução da criação de perfil. O tempo inclui o período de bloqueio de funções filho chamadas pela função.|
 |**% de Tempo Bloqueado Inclusivo**|O percentual de todo o tempo bloqueado na execução da criação de perfil que representou o tempo bloqueado inclusivo das instâncias dessa função nesse caminho de execução.|
 |**Contenções Inclusivas**|O número total de contenções que bloquearam instâncias dessa função nesse caminho de execução. O número inclui as contenções de funções filho chamadas pela função.|
 |**% de Contenções Inclusivas**|O percentual de todas as contenções na execução da criação de perfil que eram inclusivas das instâncias dessa função nesse caminho de execução.|
-|**Nível**|O nível da função na árvore de chamadas. Somente em relatórios de linha de comando VSReport. Para obter mais informações, consulte [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|O nível da função na árvore de chamadas. Somente em relatórios de linha de comando VSReport. Para obter mais informações, consulte [VSPerfReport](../profiling/vsperfreport.md).|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
 |**Nome do processo**|O nome do processo.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 
 ## <a name="see-also"></a>Confira também
 - [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view.md)
 - [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-instrumentation-data.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-sampling-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-instrumentation-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-sampling-data.md)

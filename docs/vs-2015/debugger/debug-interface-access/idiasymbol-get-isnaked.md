@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64989ca10416ab2ad9606c94b3f3bc977f60c5ee
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702357"
 ---
-# <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
+# <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se a função tem o [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atributo (ou seja, a função não tem nenhum código de prólogo ou epílogo adicionado pelo compilador).  
+Recupera um sinalizador que especifica se a função tem o atributo [Naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) (ou seja, a função não tem um prólogo ou código epílogo adicionado pelo compilador).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,21 +35,21 @@ HRESULT get_isNaked(
   
 #### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- [out] Retorna `TRUE` se a função tem o `naked` atributo; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se a função tem o `naked` atributo; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V DIA SDK 8.0|  
+|Versão:|DIA SDK v 8.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Chamadas de função naked](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)
+ [Chamadas de função Naked](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)

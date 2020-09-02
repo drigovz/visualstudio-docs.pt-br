@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a1fd9dda0e61da4353df7f3fc222df988d022c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152074"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o número de bytes em um bloco.  
@@ -35,13 +35,13 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o número de bytes em um bloco.  
+ fora Retorna o número de bytes em um bloco.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O bloco é o comprimento do código-fonte na linha, conforme representado pela [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.  
+ O bloco é o comprimento do código-fonte na linha, conforme representado pelo objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

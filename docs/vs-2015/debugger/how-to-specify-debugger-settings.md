@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar configurações do depurador | Microsoft Docs'
+title: Como especificar configurações do depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,31 +24,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703614"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
+# <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.  
   
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador  
   
-1. No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas** , clique em **Opções**.  
   
 2. Na caixa de diálogo **Opções**, abra a pasta **Depuração**.  
   
 3. Na pasta **Depuração**, escolha a categoria de opções que você deseja.  
   
-     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
+     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).  
   
 4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.  
   
-## <a name="see-also"></a>Consulte também  
- [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)   
- [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   
- [Macros comuns para compilar comandos e propriedades](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+## <a name="see-also"></a>Consulte Também  
+ [Caixa de diálogo geral, depuração, opções](../debugger/general-debugging-options-dialog-box.md)   
+ [Caixa de diálogo Editar e continuar, Depurando, opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)   
+ [Macros comuns para comandos e propriedades de compilação](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
