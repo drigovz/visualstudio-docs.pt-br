@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816677"
 ---
 # <a name="expected-catch"></a>'catch' esperado
@@ -30,6 +30,6 @@ Você usou o bloco **try** de tratamento de exceção, mas não gravou a instru�
   
 - Tente usar um bloco **finally** em vez de um bloco **Catch** .  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [tentar... capturar... Instrução Finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Objeto de erro](../../javascript/reference/error-object-javascript.md)
+ [Objeto Error](../../javascript/reference/error-object-javascript.md)

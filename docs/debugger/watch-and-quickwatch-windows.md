@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348022"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Observar variáveis com janelas de inspeção e QuickWatch
@@ -116,7 +116,7 @@ Você também pode alternar os nomes de propriedade e filtrar as propriedades n�
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Atualizar valores de inspeção
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a> Atualizar valores de inspeção
 
 Um ícone de atualização (seta circular) pode aparecer na janela de **inspeção** quando uma expressão é avaliada. O ícone de atualização indica um erro ou um valor que está desatualizado.
 
@@ -153,7 +153,7 @@ Para demonstrar o uso do ícone de atualização:
 
 1. Para atualizar o valor, selecione o ícone de atualização ou pressione a barra de espaços. O depurador reavalia a expressão.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Efeitos colaterais da expressão
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a> Efeitos colaterais da expressão
 
 Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do seu aplicativo. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:
 
@@ -169,7 +169,7 @@ Uma maneira de evitar a designação de efeitos colaterais é desativar a avalia
 
 Somente para C#, quando a avaliação de propriedades ou chamadas de função implícitas está desativada, você pode forçar a avaliação adicionando o modificador de formato **AC** a um **nome** de variável na janela **Watch** . Consulte [especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Usar IDs de objeto no janela Inspeção (C# e Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Usar IDs de objeto no janela Inspeção (C# e Visual Basic)
 
 Às vezes, você deseja observar o comportamento de um objeto específico. Por exemplo, talvez você queira acompanhar um objeto referido por uma variável local depois que essa variável sair do escopo. Em C# e Visual Basic, você pode criar IDs de objeto para instâncias específicas de tipos de referência e usá-las na janela **Watch** e nas condições de ponto de interrupção. A ID de objeto é gerada pelos serviços de depuração de Common Language Runtime (CLR) e associada ao objeto.
 
@@ -302,7 +302,7 @@ Para observar a `a` variável,
 
 1. Continue a depuração. Você pode observar a variável na janela **Watch** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

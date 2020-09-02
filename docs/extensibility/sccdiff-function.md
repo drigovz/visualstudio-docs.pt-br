@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701029"
 ---
 # <a name="sccdiff-function"></a>Função SccDiff
-Esta função exibe (ou opcionalmente apenas verifica) as diferenças entre o arquivo atual (no disco local) e sua última versão de check-in no sistema de controle de origem.
+Essa função exibe (ou, opcionalmente, apenas verifica) as diferenças entre o arquivo atual (no disco local) e sua última versão com check-in no sistema de controle do código-fonte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,58 +34,58 @@ SCCRTN SccDiff(
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pvContext
 
-[em] A estrutura de contexto plug-in de controle de origem.
+no A estrutura de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
- Lpfilename
+ lpFileName
 
-[em] Nome do arquivo para o qual a diferença é solicitada.
+no Nome do arquivo para o qual a diferença é solicitada.
 
- fOpções
+ fOptions
 
-[em] Bandeiras de comando. Consulte observações para obter detalhes.
+no Sinalizadores de comando. Consulte comentários para obter detalhes.
 
- pvOpções
+ pvOptions
 
-[em] Opções específicas de plug-in de controle de origem.
+no Opções específicas de plug-ins de controle do código-fonte.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
 |SCC_OK|A cópia de trabalho e a versão do servidor são idênticas.|
-|SCC_I_FILESDIFFERS|A cópia de trabalho difere da versão sob controle de origem.|
+|SCC_I_FILESDIFFERS|A cópia de trabalho difere da versão no controle do código-fonte.|
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|
-|SCC_E_FILENOTCONTROLLED|O arquivo não está sob controle de origem.|
-|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a realizar esta operação.|
-|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção. Recomenda-se uma nova tentativa.|
-|SCC_E_NONSPECIFICERROR|Falha não específica; a diferença de arquivos não foi obtida.|
+|SCC_E_FILENOTCONTROLLED|O arquivo não está no controle do código-fonte.|
+|SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|
+|SCC_E_NONSPECIFICERROR|Falha não específica; diferença de arquivo não obtida.|
 |SCC_E_FILENOTEXIST|O arquivo local não foi encontrado.|
 
 ## <a name="remarks"></a>Comentários
- Esta função serve a dois propósitos diferentes. Por padrão, ele exibe uma lista de alterações em um arquivo. O plug-in de controle de origem abre sua própria janela, em qualquer formato que escolher, para exibir as diferenças entre o arquivo do usuário em disco e a versão mais recente do arquivo sob controle de origem.
+ Essa função atende a duas finalidades diferentes. Por padrão, ele exibe uma lista de alterações em um arquivo. O plug-in de controle do código-fonte abre sua própria janela, em qualquer formato que escolher, para exibir as diferenças entre o arquivo do usuário no disco e a versão mais recente do arquivo sob controle do código-fonte.
 
- Alternativamente, o IDE pode simplesmente precisar determinar se um arquivo foi alterado. Por exemplo, o IDE pode precisar determinar se é seguro verificar um arquivo sem informar o usuário. Nesse caso, o IDE `SCC_DIFF_CONTENTS` passa na bandeira. O plug-in de controle de origem deve verificar o arquivo em disco, byte byte, contra o arquivo controlado por origem e retornar um valor indicando se os dois arquivos são diferentes sem exibir nada ao usuário.
+ Como alternativa, o IDE pode simplesmente precisar determinar se um arquivo foi alterado. Por exemplo, o IDE pode precisar determinar se é seguro fazer check-out de um arquivo sem informar o usuário. Nesse caso, o IDE passa o `SCC_DIFF_CONTENTS` sinalizador. O plug-in de controle do código-fonte deve verificar o arquivo em disco, byte por byte, em relação ao arquivo de origem controlada e retornar um valor que indica se os dois arquivos são diferentes sem exibir nada para o usuário.
 
- Como uma otimização de desempenho, o plug-in de controle de origem pode usar uma alternativa baseada em um `SCC_DIFF_CONTENTS`soma de verificação ou um carimbo de tempo em vez da comparação byte-by-byte solicitada por : essas formas de comparação são obviamente mais rápidas, mas menos confiáveis. Nem todos os sistemas de controle de origem podem suportar esses métodos alternativos de comparação, e o plug-in pode ter que voltar a uma comparação de conteúdo. Todos os plug-ins de controle de origem devem, no mínimo, suportar uma comparação de conteúdo.
+ Como uma otimização de desempenho, o plug-in de controle do código-fonte pode usar uma alternativa com base em uma soma de verificação ou em um carimbo de data/hora, em vez da comparação byte a byte chamada para `SCC_DIFF_CONTENTS` : essas formas de comparação são obviamente mais rápidas, mas menos confiáveis. Nem todos os sistemas de controle do código-fonte podem dar suporte a esses métodos de comparação alternativos, e o plug-in pode ter que fazer fallback para uma comparação de conteúdo. Todos os plug-ins de controle do código-fonte devem, no mínimo, dar suporte a uma comparação de conteúdo.
 
 > [!NOTE]
-> As bandeiras de diferença rápida são mutuamente exclusivas. É válido não passar bandeiras, mas não é válido passar simultaneamente mais de uma. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todas as bandeiras, pode ser usada para testar, mas nunca deve ser passada como parâmetro.
+> Os sinalizadores de diferença rápida são mutuamente exclusivos. Ele é válido para não passar nenhum sinalizador, mas não é válido para passar mais de um simultaneamente. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todos os sinalizadores, pode ser usada para testar, mas ele nunca deve ser passado como um parâmetro.
 
 |`fOption`|Significado|
 |---------------|-------------|
-|SCC_DIFF_IGNORECASE|Comparação insensível a casos (pode ser usada para diferença rápida ou visual).|
-|SCC_DIFF_IGNORESPACE|Ignora o espaço em branco (pode ser usado para diferença rápida ou visual).|
-|SCC_DIFF_QD_CONTENTS|Silenciosamente compara o arquivo, byte byte.|
-|SCC_DIFF_QD_CHECKSUM|Silenciosamente compara o arquivo através de uma soma de cheques quando suportado. Se não for suportado, recua para uma comparação de conteúdo.|
-|SCC_DIFF_QD_TIME|Silenciosamente compara o arquivo através de seu carimbo de tempo quando suportado. Se não for suportado, recua para uma comparação de conteúdo.|
+|SCC_DIFF_IGNORECASE|Comparação que não diferencia maiúsculas de minúsculas (pode ser usada para diferença rápida ou Visual).|
+|SCC_DIFF_IGNORESPACE|Ignora o espaço em branco (pode ser usado para diferença rápida ou Visual).|
+|SCC_DIFF_QD_CONTENTS|Compara silenciosamente o arquivo, byte por byte.|
+|SCC_DIFF_QD_CHECKSUM|Compara silenciosamente o arquivo por meio de uma soma de verificação quando há suporte. Se não houver suporte, retorne para uma comparação de conteúdo.|
+|SCC_DIFF_QD_TIME|Compara silenciosamente o arquivo por meio de seu carimbo de data/hora quando há suporte. Se não houver suporte, retorne para uma comparação de conteúdo.|
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

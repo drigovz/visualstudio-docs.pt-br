@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Depuração de um formulário do Windows | Microsoft Docs'
+title: 'Walkthrough: Depurando um Windows Form | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704906"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Passo a passo: Depurando um Windows Form
@@ -51,15 +51,15 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 1. No menu **Arquivo**, escolha **Novo** e clique em **Projeto**.  
   
-     A caixa de diálogo **Novo Projeto** é exibida.  
+     A caixa de diálogo **Novo Projeto** aparecerá.  
   
-2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++** , em seguida,  
+2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++**, em seguida,  
   
-    1. Para o Visual Basic ou Visual c#, selecione a **Windows** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel.  
+    1. Para Visual Basic ou Visual C#, selecione o nó **Windows** e, em seguida, selecione **aplicativo do Windows Form** no painel **modelos** .  
   
-    2. Para o Visual C++, selecione o **CLR** nó, em seguida, selecione **aplicativo de formulário do Windows** no **modelos** painel...  
+    2. Para Visual C++, selecione o nó **CLR** e, em seguida, selecione **aplicativo do Windows Form** no painel **modelos** .  
   
-3. No **modelos** painel, selecione **aplicativo do Windows**.  
+3. No painel **Modelos**, selecione **Aplicativos do Windows**.  
   
 4. Na caixa **Nome**, dê ao projeto um nome exclusivo (por exemplo, Walkthrough_SimpleDebug).  
   
@@ -129,7 +129,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 4. No menu **Depurar**, escolha **Windows**, em seguida, **Inspeção** e clique em **Watch1**.  
   
-5. Na janela **Watch1**, clique em uma linha em branco. No **nome** coluna, digite `textBox1.Text` (se você estiver usando Visual Basic, Visual c# ou j#) ou `textBox1->Text` (se você estiver usando C++), em seguida, pressione ENTER.  
+5. Na janela **Watch1**, clique em uma linha em branco. Na coluna **nome** , digite `textBox1.Text` (se você estiver usando Visual Basic, Visual C# ou J#) ou `textBox1->Text` (se estiver usando C++) e pressione Enter.  
   
      A janela **Watch1** mostra o valor dessa variável entre aspas como:  
   
@@ -139,7 +139,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 6. No menu **Depurar**, escolha **Intervir**.  
   
-     O valor de TextBox1.Text é alterado na **Watch1** janela para:  
+     O valor de textBox1. Text é alterado na janela **inspeção1** para:  
   
     ```  
     Button was clicked!  
@@ -175,22 +175,22 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
     textBox1->Text = "Button was clicked!";  
     ```  
   
-2. Sobre o **Debug** menu, selecione **Start Without Debugging**.  
+2. No menu **Depurar**, selecione **Iniciar Sem Depurar**.  
   
      O Windows Form inicia a execução no Windows, como se você tivesse clicado duas vezes em seu executável. O depurador não está anexado.  
   
-3. Sobre o **Debug** menu, selecione **anexar ao processo**. (Este comando também está disponível na **ferramentas** menu.)  
+3. No menu **depurar** , selecione **anexar ao processo**. (Esse comando também está disponível no menu **ferramentas** .)  
   
      A caixa de diálogo **Anexar ao Processo** é exibida.  
   
-4. No **processos disponíveis** painel, localize o nome do processo (Walkthrough_SimpleDebug.exe) na **processo** coluna e clique nele.  
+4. No painel **processos disponíveis** , localize o nome do processo (Walkthrough_SimpleDebug.exe) na coluna **processo** e clique nele.  
   
-5. Clique o **Attach** botão.  
+5. Clique no botão **anexar** .  
   
 6. No seu Windows Form, clique no único botão.  
   
      O depurador interromperá a execução do Windows Form no ponto de interrupção.  
   
-## <a name="see-also"></a>Consulte também  
- [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Depuração de código gerenciado](../debugger/debugging-managed-code.md)   
  [Segurança do depurador](../debugger/debugger-security.md)

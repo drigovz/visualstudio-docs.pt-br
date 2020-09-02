@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687082"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referência das tarefas do WPF MSBuild
@@ -39,7 +39,7 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
  Gera um assembly se pelo menos uma página [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] em um projeto referencia um tipo declarado localmente no projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.  
   
  [GetWinFXPath](../msbuild/getwinfxpath-task.md)  
- Retorna o diretório do tempo de execução [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] atual.  
+ Retorna o diretório do runtime [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] atual.  
   
  [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)  
  Converte arquivos de projeto [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] não localizáveis para o formato binário compilado.  
@@ -57,7 +57,7 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
  Verifica, atualiza ou remove identificadores exclusivos (UIDs), para localizar todos os [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] elementos que são incluídos na fonte de [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] arquivos.  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Adiciona o elemento **\<hostInBrowser / >** para o manifesto do aplicativo (*projectname*.exe.manifest) quando um [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] projeto é compilado.  
+ Adiciona o **\<hostInBrowser />** elemento ao manifesto do aplicativo (*ProjectName*. exe. manifest) quando um [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] projeto é compilado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

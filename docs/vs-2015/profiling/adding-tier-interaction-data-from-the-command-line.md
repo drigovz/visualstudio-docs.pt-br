@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705842"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Adicionando dados de interação entre camadas da linha de comando
@@ -34,7 +34,7 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
  **Coletando dados TIP em um computador remoto**  
   
- Para coletar os dados de interação de camada em um computador remoto, é necessário copiar o arquivo **vs\_profiler\_**_\<Plataforma>_**\_**_\<Linguagem>_**.exe** da pasta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil na [as ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) fazer download do pacote.  
+ Para coletar dados de interação de camada em um computador remoto, você deve copiar o arquivo do **vs \_ \_ Profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** da pasta _% VSINSTALLDIR%_**\Team Tools\Performance Tools\Setups** de um computador do Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil no pacote de download do [ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Relatórios TIP**  
   
@@ -138,9 +138,9 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 13. Reinicie o computador para registrar as variáveis de ambiente limpas.  
   
-    Para obter mais informações, consulte um dos seguintes tópicos:  
+    Para obter mais informações, consulte um dos tópicos a seguir.  
   
-    [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Criando perfil de aplicativos Web do ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
     [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)  
   
@@ -153,4 +153,4 @@ A criação de perfil de interação de camadas fornece informações adicionais
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Para obter mais informações sobre o VSPerfASPNETCmd, consulte [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+ Para obter mais informações sobre o VSPerfASPNETCmd, consulte [Rapid Web site profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

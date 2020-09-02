@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541785"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
@@ -65,7 +65,7 @@ Para poder iniciar este procedimento, instale estes componentes:
    > [!NOTE]
    > Se você vir uma mensagem que alerta você não executar modelos de texto de fontes não confiáveis, clique em **OK**. Você pode definir que essa mensagem não apareça novamente.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>As páginas do assistente de Designer de DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> As páginas do assistente de Designer de DSL
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de definir o campo extensão de arquivo.
 
 ### <a name="solution-settings-page"></a>Página de configurações da solução

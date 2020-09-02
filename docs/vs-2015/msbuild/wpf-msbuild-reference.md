@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687061"
 ---
 # <a name="wpf-msbuild-reference"></a>Referência do WPF MSBuild
@@ -33,7 +33,7 @@ O WPF (Windows Presentation Foundation) estende o MSBuild (Microsoft Build Engin
  [Arquivos .Targets](../msbuild/wpf-dot-targets-files.md)  
  Descreve os arquivos .Targets do WPF.  
   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)  
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)  
  Lista as tarefas de build disponíveis do WPF.  
   
  <xref:Microsoft.Build.Tasks>  
@@ -51,5 +51,5 @@ O WPF (Windows Presentation Foundation) estende o MSBuild (Microsoft Build Engin
  <xref:Microsoft.Build.Tasks.Windows>  
  Um assembly das janelas da tarefa de build.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

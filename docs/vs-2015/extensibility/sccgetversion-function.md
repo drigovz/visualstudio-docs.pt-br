@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200054"
 ---
 # <a name="sccgetversion-function"></a>Função SccGetVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa função obtém o número de versão de API de plug-in de controle de origem compatível com o plug-in de controle de origem.  
+Essa função obtém o número de versão da API de plug-in de controle do código-fonte com suporte pelo plug-in de controle do código-fonte.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,10 +31,10 @@ LONG SccGetVersion(void);
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- nenhuma.  
+ Nenhum.  
   
-## <a name="return-value"></a>Valor de retorno  
- Um `LONG` tipo de dados que contém o número de versão de API de plug-in de controle de origem com suporte:  
+## <a name="return-value"></a>Valor Retornado  
+ Um `LONG` tipo de dados que contém o número de versão da API de plug-in de controle do código-fonte com suporte:  
   
 |WORD|Descrição|  
 |----------|-----------------|  
@@ -42,7 +42,7 @@ LONG SccGetVersion(void);
 |LOWORD|Versão secundária|  
   
 ## <a name="remarks"></a>Comentários  
- Por exemplo, se um plug-in de controle de origem dá suporte à versão 1.3 da API de plug-in de controle de origem, essa função retornará 0x0103.  
+ Por exemplo, se um plug-in de controle do código-fonte der suporte à versão 1,3 da API de plug-in de controle do código-fonte, essa função retornará 0x0103.  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulte Também  
+ [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

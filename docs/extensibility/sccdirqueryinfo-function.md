@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700945"
 ---
 # <a name="sccdirqueryinfo-function"></a>Função SccDirQueryInfo
-Esta função examina uma lista de diretórios totalmente qualificados para o seu status atual.
+Essa função examina uma lista de diretórios totalmente qualificados para seu status atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,41 +33,41 @@ LPLONG  lpStatus
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pContext
 
-[em] A estrutura de contexto plug-in de controle de origem.
+no A estrutura de contexto do plug-in de controle do código-fonte.
 
  nDirs
 
-[em] O número de diretórios selecionados para serem consultados.
+no O número de diretórios selecionados a serem consultados.
 
  lpDirNames
 
-[em] Uma série de caminhos totalmente qualificados dos diretórios a serem consultados.
+no Uma matriz de caminhos totalmente qualificados dos diretórios a serem consultados.
 
  lpStatus
 
-[dentro, fora] Uma estrutura de array para o plug-in de controle de origem para retornar os sinalizadores de status (consulte [código de status do diretório](../extensibility/directory-status-code-enumerator.md) para detalhes).
+[entrada, saída] Uma estrutura de matriz para o plug-in de controle do código-fonte para retornar os sinalizadores de status (consulte o [código de status do diretório](../extensibility/directory-status-code-enumerator.md) para obter detalhes).
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A consulta foi bem sucedida.|
-|SCC_E_OPNOTSUPPORTED|O sistema de controle de código fonte não suporta esta operação.|
-|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção. Recomenda-se uma nova tentativa.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Falha inespecífica.|
+|SCC_OK|A consulta foi bem-sucedida.|
+|SCC_E_OPNOTSUPPORTED|O sistema de controle do código-fonte não oferece suporte a essa operação.|
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Falha não específica.|
 
 ## <a name="remarks"></a>Comentários
- A função preenche a matriz de retorno com `SCC_DIRSTATUS` uma máscara de bits da família (veja [código de status do Diretório),](../extensibility/directory-status-code-enumerator.md)uma entrada para cada diretório dado. A matriz de status é alocada pelo chamador.
+ A função preenche a matriz de retorno com um bitmask de bits da `SCC_DIRSTATUS` família (consulte o [código de status do diretório](../extensibility/directory-status-code-enumerator.md)), uma entrada para cada diretório fornecido. A matriz de status é alocada pelo chamador.
 
- O IDE usa essa função antes que um diretório seja renomeado para verificar se o diretório está sob controle de origem, consultando se ele tem um projeto correspondente. Se o diretório não estiver sob controle de origem, o IDE pode fornecer o aviso adequado ao usuário.
+ O IDE usa essa função antes que um diretório seja renomeado para verificar se o diretório está sob controle do código-fonte consultando se ele tem um projeto correspondente. Se o diretório não estiver no controle do código-fonte, o IDE poderá fornecer o aviso apropriado ao usuário.
 
 > [!NOTE]
-> Se um plug-in de controle de origem optar por não implementar um ou mais dos valores de status, os bits não implementados devem ser definidos como zero.
+> Se um plug-in de controle do código-fonte optar por não implementar um ou mais dos valores de status, os bits não implementados deverão ser definidos como zero.
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de status do diretório](../extensibility/directory-status-code-enumerator.md)

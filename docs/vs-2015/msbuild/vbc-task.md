@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6edc8b246055dcd8efdb32f4118f81a535635d55
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683824"
 ---
 # <a name="vbc-task"></a>Tarefa Vbc
@@ -52,14 +52,14 @@ Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâ
 |`Imports`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Importa namespaces de coleções do item especificado. Esse parâmetro corresponde à opção [/imports](https://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) do compilador vbc.exe.|  
 |`KeyContainer`|Parâmetro `String` opcional.<br /><br /> Especifica o nome do contêiner da chave de criptografia. Esse parâmetro corresponde à opção [/keycontainer](https://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) do compilador vbc.exe.|  
 |`KeyFile`|Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo que contém a chave de criptografia. Para saber mais, consulte [/keyfile](https://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]() opcional.<br /><br /> Especifica a versão da linguagem, “9” ou “10”.|  
+|`LangVersion`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]\() opcional.<br /><br /> Especifica a versão da linguagem, “9” ou “10”.|  
 |`LinkResources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Cria um link para um recurso do .NET Framework no arquivo de saída; o arquivo de recurso não é colocado no arquivo de saída. Esse parâmetro corresponde à opção [/linkresource](https://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) do compilador vbc.exe.|  
 |`MainEntryPoint`|Parâmetro `String` opcional.<br /><br /> Especifica a classe ou o módulo que contém o procedimento `Sub Main`. Esse parâmetro corresponde à opção [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) do compilador vbc.exe.|  
 |`ModuleAssemblyName`|Parâmetro `String` opcional.<br /><br /> Especifica o assembly do qual esse módulo faz parte.|  
 |`NoConfig`|Parâmetro `Boolean` opcional.<br /><br /> Especifica que o compilador não deve usar o arquivo vbc.rsp. Esse parâmetro corresponde ao parâmetro [/noconfig](https://msdn.microsoft.com/library/a7405067-bd21-4171-adf4-a126fa3ad6c3) do compilador vbc.exe.|  
 |`NoLogo`|Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, suprimirá a exibição de informações da barra de notificação do compilador. Esse parâmetro corresponde à opção [/nologo](https://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) do compilador vbc.exe.|  
 |`NoStandardLib`|Parâmetro `Boolean` opcional.<br /><br /> Faz com que o compilador não referencie as bibliotecas padrão. Esse parâmetro corresponde à opção [/nostdlib](https://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) do compilador vbc.exe.|  
-|`NoVBRuntimeReference`|Parâmetro `Boolean` opcional.<br /><br /> Apenas para uso interno. Se verdadeiro, impede a referência automática para Microsoft.VisualBasic.dll.|  
+|`NoVBRuntimeReference`|Parâmetro `Boolean` opcional.<br /><br /> Somente para uso interno. Se verdadeiro, impede a referência automática para Microsoft.VisualBasic.dll.|  
 |`NoWarnings`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, a tarefa suprimirá todos os avisos. Para obter mais informações, consulte [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, habilita as otimizações do compilador. Esse parâmetro corresponde à opção [/optimize](https://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) do compilador vbc.exe.|  
 |`OptionCompare`|Parâmetro `String` opcional.<br /><br /> Especifica como são feitas comparações de cadeia de caracteres. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `binary`<br />-   `text`<br /><br /> O valor `binary` especifica que a tarefa usa comparações de cadeia de caracteres binária. O valor `text` especifica que a tarefa usa comparações de cadeia de caracteres de texto. O valor padrão desse parâmetro é `binary`. Esse parâmetro corresponde à opção [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) do compilador vbc.exe.|  
@@ -68,10 +68,10 @@ Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâ
 |`OptionStrict`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa impõe semântica de tipo estrito para restringir conversões de tipo implícito. Esse parâmetro corresponde à opção [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) do compilador vbc.exe.|  
 |`OptionStrictType`|Parâmetro `String` opcional.<br /><br /> Especifica qual semântica de tipo estrito gera um aviso. Atualmente, há suporte para apenas "custom". Esse parâmetro corresponde à opção [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) do compilador vbc.exe.|  
 |`OutputAssembly`|Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome do arquivo de saída. Esse parâmetro corresponde à opção [/out](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) do compilador vbc.exe.|  
-|`Platform`|Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64` `Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [/platform](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1) do compilador vbc.exe.|  
+|`Platform`|Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64``Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [/Platform](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1) do compilador de vbc.exe.|  
 |`References`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Esse parâmetro corresponde à opção [/reference](https://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737) do compilador vbc.exe.|  
 |`RemoveIntegerChecks`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, desabilita a verificação de erro de estouro de inteiro. O valor padrão é `false`. Esse parâmetro corresponde à opção [/removeintchecks](https://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) do compilador vbc.exe.|  
-|`Resources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída. Esse parâmetro corresponde à opção [/resource](https://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) do compilador vbc.exe.|  
+|`Resources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída. Esse parâmetro corresponde à opção [/Resource](https://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) do compilador vbc.exe.|  
 |`ResponseFiles`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica o arquivo de resposta que contém comandos para essa tarefa. Esse parâmetro corresponde à opção [@ (Especificar Arquivo de Resposta)](https://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca) do compilador vbc.exe.|  
 |`RootNamespace`|Parâmetro `String` opcional.<br /><br /> Especifica o namespace raiz para todas as declarações de tipo. Esse parâmetro corresponde à opção [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783) do compilador vbc.exe.|  
 |`SdkPath`|Parâmetro `String` opcional.<br /><br /> Especifica o local de mscorlib.dll e microsoft.visualbasic.dll. Esse parâmetro corresponde à opção [/sdkpath](https://msdn.microsoft.com/library/fec8a3f1-b791-4a37-8af7-344859f8212d) do compilador vbc.exe.|  
@@ -103,7 +103,7 @@ Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâ
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Compilador de linha de comando do Visual Basic](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Compilador de linha de comando Visual Basic](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Tarefa](../msbuild/msbuild-tasks.md)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

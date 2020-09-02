@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875924"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Designer de atividade de TransactedReceiveScope
@@ -41,7 +41,7 @@ A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Verdadeiro|Descarta uma <xref:System.ServiceModel.Activities.Receive> atividade no bloco de **solicitação** na superfície do designer de atividade.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Falso|Descarta um <xref:System.Activities.Activity> no bloco **Body** na superfície do designer de atividade.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

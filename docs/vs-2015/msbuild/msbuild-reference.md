@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683007"
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
@@ -32,7 +32,7 @@ ms.locfileid: "65683007"
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)  
  Descreve os elementos XML que compõem o formato de arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)  
  Descreve algumas das tarefas comuns que estão incluídas no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Condições](../msbuild/msbuild-conditions.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "65683007"
  [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Descreve as propriedades reservadas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)  
+ [Propriedades comuns do projeto MSBuild](../msbuild/common-msbuild-project-properties.md)  
  Descreve as propriedades de projeto que são comuns a todos os tipos de projeto e também propriedades que são geralmente usadas pelos tipos de projeto específicos.  
   
  [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)  
@@ -68,7 +68,7 @@ ms.locfileid: "65683007"
  [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
  Contém uma referência de tarefa e destinos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para o WPF (Windows Presentation Foundation).  
   
- [Caracteres especiais para escape](../msbuild/special-characters-to-escape.md)  
+ [Caracteres especiais para escapar](../msbuild/special-characters-to-escape.md)  
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  

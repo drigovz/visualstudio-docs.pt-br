@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301877"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313023"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Configurações do ambiente do Visual Studio
 
@@ -32,7 +32,7 @@ As seguintes coleções de configurações estão disponíveis:
 
 Para alterar as configurações de desenvolvimento depois de abrir o Visual Studio pela primeira vez, siga estas etapas:
 
-1. Selecione**Configurações de importação e exportação de** **ferramentas** > na barra de menus para abrir o Assistente **de Configurações de Importação e Exportação**.
+1. Selecione **ferramentas**  >  **importar e exportar configurações** na barra de menus para abrir o **Assistente de importação e exportação de configurações**.
 
 1. No **Assistente de Importação e Exportação de Configurações**, selecione **Redefinir todas as configurações** e, em seguida, selecione **Avançar**.
 
