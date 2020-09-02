@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566768"
 ---
 # <a name="settings-page-project-designer"></a>Página de configurações, Designer de Projeto
@@ -29,7 +29,7 @@ Para acessar a página **Configurações**, selecione um nó do projeto no **Ger
 
 A barra de cabeçalho na parte superior da página **Configurações** contém vários controles:
 
-**Sincronizar**
+**Novamente**
 
 **Sincronizar** restaura as configurações no escopo do usuário que o aplicativo usa no tempo de execução ou durante a depuração para seus valores padrão, conforme a definição no tempo de design. Para restaurar os dados, remova os arquivos específicos do aplicativo gerados pelo tempo de execução do disco, não dos dados do projeto.
 
@@ -37,7 +37,7 @@ A barra de cabeçalho na parte superior da página **Configurações** contém v
 
 **Carregar Configurações da Web** exibe uma caixa de diálogo **Logon** que permite carregar as configurações de um usuário autenticado ou de usuários anônimos. Este botão fica habilitado apenas quando você habilita os serviços de aplicativo cliente na página **Serviços** e especifica um **Local de serviço das configurações da Web**.
 
-**Código de exibição**
+**Exibir Código**
 
 Para projetos C#, o botão **Exibir Código** permite que você exiba o código no arquivo *Settings.cs*. Esse arquivo define a classe `Settings`, que permite que você manipule eventos específicos no objeto `Settings`. Em linguagens diferentes do Visual Basic, você precisa chamar o método `Save` explicitamente dessa classe wrapper para que as configurações do usuário persistam. Geralmente isso é feito no manipulador de eventos **Closing** do formulário principal. A seguir está um exemplo de uma chamada ao método `Save`:
 

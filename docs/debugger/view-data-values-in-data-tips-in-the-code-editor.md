@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404276"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir valores de dados em DataTips no editor de código
@@ -35,7 +35,7 @@ DataTips aparecem apenas no modo de interrupção e somente em variáveis que es
 
 ### <a name="display-a-datatip"></a>Exibir um DataTip
 
-1. Defina um ponto de interrupção em seu código e inicie a depuração pressionando **F5** ou selecionando **debug** > **iniciar a depuração**.
+1. Defina um ponto de interrupção em seu código e inicie a depuração pressionando **F5** ou selecionando **depurar**  >  **Iniciar Depuração**.
 
 1. Quando em pausa no ponto de interrupção, passe o mouse sobre qualquer variável no escopo atual. Um DataTip é exibido, mostrando o nome e o valor atual da variável.
 
@@ -75,14 +75,14 @@ Para fechar todas as dicas de DataTips, no menu **depurar** , selecione **limpar
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Fechar todas as dicas de um arquivo específico
 
-Para fechar todas as dicas de seleção de um arquivo específico, no menu **depurar** , selecione **limpar todos os DataTips fixados para \<nome de arquivo >** .
+Para fechar todas as dicas de seleção de um arquivo específico, no menu **depurar** , selecione **limpar todos os DataTips \<Filename> fixados para **.
 
 ## <a name="expand-and-edit-information"></a>Expandir e editar informações
 Você pode usar os DataTips para expandir uma matriz, uma estrutura ou um objeto para exibir seus membros. Você também pode editar o valor de uma variável de um DataTip.
 
 ### <a name="expand-a-variable"></a>Expandir uma variável
 
-Para expandir um objeto em um DataTip para ver seus elementos, passe o mouse sobre as setas de expansão antes dos nomes dos itens para exibir os elementos no formulário de árvore. Para um DataTip fixado, selecione o **+** antes do nome da variável e, em seguida, expanda a árvore.
+Para expandir um objeto em um DataTip para ver seus elementos, passe o mouse sobre as setas de expansão antes dos nomes dos itens para exibir os elementos no formulário de árvore. Para um DataTip fixado, selecione o **+** antes do nome da variável e expanda a árvore.
 
 ![Expandir um DataTip](../debugger/media/dbg-tour-data-tips.png "Expandir um DataTip")
 
@@ -127,20 +127,20 @@ Você pode exportar DataTips para um arquivo XML, que pode ser compartilhado ou 
 
 **Para exportar DataTips:**
 
-1. Selecione **depurar** > **Exportar DataTips**.
+1. Selecione **depurar**  >  **Exportar DataTips**.
 
 1. Na caixa de diálogo **Exportar DataTips** , navegue até o local para salvar o arquivo XML, digite um nome para o arquivo e, em seguida, selecione **salvar**.
 
 **Para importar DataTips:**
 
-1. Selecione **depurar** > **importar DataTips**.
+1. Selecione **depurar**  >  **importar DataTips**.
 
 1. Na caixa de diálogo **importar DataTips** , selecione o arquivo XML DataTips que você deseja abrir e, em seguida, selecione **abrir**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [O que é depuração?](../debugger/what-is-debugging.md)
-- [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
+- [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-- [Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)
+- [Janelas de Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

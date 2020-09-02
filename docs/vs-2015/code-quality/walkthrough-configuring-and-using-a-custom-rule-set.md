@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Configurando e usando um conjunto de regras personalizado | Microsoft Docs'
+title: 'Walkthrough: Configurando e usando um conjunto de regras personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645747"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Passo a passo: Configurando e usando um conjunto de regras personalizado
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial mostra como usar ferramentas de análise de código que foram configuradas para usar um *conjunto de regras* personalizadas em uma biblioteca de classes. Você pode selecionar um conjunto de regras relacionado ao tipo de projeto que você especificou para sua solução, ou pode selecionar conjuntos de regras alternativos para atender a uma necessidade específica, como a verificação de código herdado para problemas que podem ser corrigidos de forma não-quebrada. Em ambos os casos, os conjuntos de regras também podem ser personalizados para ajustá-los aos requisitos do projeto.
@@ -38,7 +38,7 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
 
 - Execute a análise de código e veja como funciona o comportamento de personalização do conjunto de regras.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsPro](../includes/vspro-md.md)]
 
@@ -47,11 +47,11 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
 
 #### <a name="create-a-class-library"></a>Criar uma biblioteca de classes
 
-1. No menu **arquivo** , clique em **novo** e em **projeto**.
+1. No menu **Arquivo**, clique em **Novo** e, depois, em **Projeto**.
 
-2. Na caixa de diálogo **novo projeto** , em **tipos de projeto**, clique em **C#Visual**.
+2. Na caixa de diálogo **novo projeto** , em **tipos de projeto**, clique em **Visual C#**.
 
-3. Em **Visual C#** , selecione **biblioteca de classes**.
+3. Em **Visual C#**, selecione **biblioteca de classes**.
 
 4. Na caixa de texto **nome** , digite **RuleSetSample** e clique em **OK**.
 
@@ -70,9 +70,9 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
     No menu arquivo, clique em **salvar itens selecionados** para atualizar o arquivo de projeto com informações sobre o conjunto de regras que você selecionou e suas configurações.
 
    > [!TIP]
-   > Em uma situação real, uma prática recomendada é usar para priorizar quais problemas você deseja direcionar com a análise de código é começar com o conjunto de regras **mínimo recomendado** e corrigir os problemas desejados e, em seguida, adicionar de forma incremental mais regras ou conjuntos de regra a Encontre e corrija os problemas adicionais.
+   > Em uma situação real, uma boa prática a ser usada para priorizar os problemas que você deseja direcionar com a análise de código é começar com o conjunto de regras **mínimo recomendado** e corrigir os problemas desejados e, em seguida, adicionar de forma incremental mais regras ou conjuntos de regra para localizar e corrigir os problemas adicionais.
 
-   Em seguida, você adicionará um código à biblioteca de classes que será usado para demonstrar violações da regra de análise de código do CA1704 "identificadores devem ser escritos corretamente". Para obter mais informações, consulte [CA1704: Os identificadores devem ser escritos corretamente ](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+   Em seguida, você adicionará um código à biblioteca de classes que será usado para demonstrar violações da regra de análise de código do CA1704 "identificadores devem ser escritos corretamente". Para obter mais informações, consulte [CA1704: identificadores devem ser escritos corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 #### <a name="add-your-own-code"></a>Adicione seu próprio código
 
@@ -140,7 +140,7 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
 
 2. Na guia **Propriedades** , clique em **análise de código**.
 
-    Na lista suspensa **executar este conjunto de regras** , clique em **\<Browse.. >** . Navegue até a pasta raiz do seu projeto de código e, em seguida, selecione **MyCustomRuleSet. RuleSet**. Esse é o novo conjunto de regras que você criou no procedimento anterior.
+    Na lista suspensa **executar este conjunto de regras** , clique em **\<Browse..>** . Navegue até a pasta raiz do seu projeto de código e, em seguida, selecione **MyCustomRuleSet. RuleSet**. Esse é o novo conjunto de regras que você criou no procedimento anterior.
 
 3. No menu **arquivo** , clique em **salvar** para salvar a configuração do projeto. O conjunto de regras personalizado agora pode ser usado com seu projeto.
 
@@ -152,5 +152,5 @@ Este tutorial mostra como usar ferramentas de análise de código que foram conf
 
 2. Na janela Lista de Erros, observe que quando você clica em **avisos**, não vê mais as violações de aviso CA1704 para a regra "identificadores devem ser escritos corretamente".
 
-## <a name="see-also"></a>Consulte também
- [Como: Configurar a análise de código para um projeto de código gerenciado ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [referência de conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Consulte Também
+ [Como configurar a análise de código para uma referência de conjunto de regras de análise de código de projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code analysis rule set reference](../code-quality/code-analysis-rule-set-reference.md)

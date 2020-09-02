@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646934"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
@@ -41,6 +41,6 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para acessar a próxima etapa do tutorial, consulte [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 9: Experimente outros recursos](../ide/step-9-try-other-features.md).
 
 - Para retornar à etapa anterior do tutorial, consulte [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).

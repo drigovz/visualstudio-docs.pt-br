@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNodeAttach2::OnAttach | Microsoft Docs
+title: 'IDebugProgramNodeAttach2:: onattach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dfb8a39af3c030dadddcb148a79a96b57f20e183
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721883"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
-Anexa-se ao programa associado ou adia o processo de anexação ao método [Anexar.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+Anexa ao programa associado ou adia o processo de anexação para o método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int OnAttach(
 };
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `guidProgramId`\
-[em] `GUID` para atribuir ao programa associado.
+[in] `GUID` para atribuir ao programa associado.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o método [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md) não for chamado. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) não deve ser chamado. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é chamado durante o processo de anexação, antes que o método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) seja chamado. O `OnAttach` método pode realizar o próprio processo de `S_FALSE`conexão (nesse caso, `IDebugEngine2::Attach` esse método `OnAttach` retorna) ou adiar o processo de anexação ao método (o método retorna `S_OK`). Em ambos os `OnAttach` casoes, `GUID` o método pode definir o `GUID`programa que está sendo depurado para o dado .
+ Esse método é chamado durante o processo de anexo, antes que o método [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) seja chamado. O `OnAttach` método pode executar o processo de anexo em si (nesse caso, esse método retorna `S_FALSE` ) ou adiar o processo de anexação para o `IDebugEngine2::Attach` método (o `OnAttach` método retorna `S_OK` ). Em qualquer evento, o `OnAttach` método pode definir o `GUID` do programa que está sendo depurado para o determinado `GUID` .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)

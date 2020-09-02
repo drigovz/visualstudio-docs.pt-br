@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565871"
 ---
 # <a name="shell-command"></a>Comando Shell
@@ -43,7 +43,7 @@ Obrigatórios. O caminho e o nome do arquivo a ser executado ou o documento a se
 
 Opcional. Quaisquer argumentos a serem passados para o programa invocado.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
 Opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
@@ -87,7 +87,7 @@ O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta
 ## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Janela de saída](../../ide/reference/output-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Janela de Saída](../../ide/reference/output-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

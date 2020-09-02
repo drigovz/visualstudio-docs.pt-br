@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2:SetLocale | Microsoft Docs
+title: 'IDebugProgramProvider2:: setlocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721767"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Estabelece um local a ser usado para quaisquer recursos específicos do local.
+Estabelece uma localidade a ser usada para qualquer recurso específico de localidade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int SetLocale(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `wLangID`\
-[em] ID da linguagem para estabelecer. Por exemplo, 1033 para inglês.
+no ID de idioma a ser estabelecida. Por exemplo, 1033 para inglês.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

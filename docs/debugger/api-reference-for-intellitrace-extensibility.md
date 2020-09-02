@@ -1,5 +1,5 @@
 ---
-title: Referência da API para extensibilidade do IntelliTrace | Microsoft Docs
+title: Referência de API para extensibilidade do IntelliTrace | Microsoft Docs
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564288"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referência de API para a extensibilidade do IntelliTrace
@@ -29,6 +29,6 @@ Este namespace contém as APIs de extensibilidade do IntelliTrace:
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-[IntelliTrace](../debugger/intellitrace.md) fornece informações sobre como depurar com o IntelliTrace.
+[IntelliTrace](../debugger/intellitrace.md) Fornece informações sobre como depurar com o IntelliTrace.
 
-[Exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/) hospeda um aplicativo de exemplo que mostra como usar a extensibilidade do IntelliTrace.
+[Exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/) Hospeda um aplicativo de exemplo mostrando como usar a extensibilidade do IntelliTrace.

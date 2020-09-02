@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2:GetProgramName | Microsoft Docs
+title: 'IDebugProgramNode2:: getprogramaname | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721989"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
-Fica o nome do programa.
+Obtém o nome do programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ int GetProgramName (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pbstrProgramName`\
-[fora] Retorna o nome do programa.
+fora Retorna o nome do programa.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
 O nome de um programa não é a mesma coisa que o caminho para o programa, embora o nome do programa possa fazer parte desse caminho.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como `CProgram` implementar esse método para um objeto simples que implementa a interface [IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md) A `MakeBstr` função aloca uma cópia da seqüência especificada como um BSTR.
+O exemplo a seguir mostra como implementar esse método para um `CProgram` objeto simples que implementa a interface [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . A `MakeBstr` função aloca uma cópia da cadeia de caracteres especificada como um BSTR.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

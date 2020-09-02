@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565598"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
@@ -68,7 +68,7 @@ Selecione uma referência Web na lista **Referências** e clique nesse botão pa
 
 Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
 
-Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias*de formato = *namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar Importação de Usuário**
 
@@ -91,5 +91,5 @@ Selecione um namespace especificado pelo usuário na lista de namespaces, digite
 ## <a name="see-also"></a>Confira também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
-- [Como: Adicionar ou Remover Espaços de Nomes Importados (Básico Visual)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
-- [Instrução Imports (Namespace de XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
+- [Como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Instrução Imports (namespace XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

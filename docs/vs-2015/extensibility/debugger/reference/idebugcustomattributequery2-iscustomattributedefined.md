@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6ef6a04d263e322d408bb7d7c95da1929d89010c
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569313"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszCustomAttributeName`  
- [in] Uma cadeia de caracteres que contém o nome do atributo personalizado para localizar.  
+ no Uma cadeia de caracteres que contém o nome do atributo personalizado a ser localizado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna que S_OK se o atributo personalizado é definido neste campo, caso contrário retorna S_FALSE.  
+## <a name="return-value"></a>Valor Retornado  
+ Retorna S_OK se o atributo personalizado for definido nesse campo; caso contrário, retorna S_FALSE.  
   
 ## <a name="remarks"></a>Comentários  
- Para obter os bytes de atributo associados com o atributo personalizado, chame o [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) método.  
+ Para obter os bytes de atributo associados ao atributo personalizado, chame o método [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

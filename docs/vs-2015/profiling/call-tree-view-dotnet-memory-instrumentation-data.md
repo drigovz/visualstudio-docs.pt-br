@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185986"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Modo de exibição de árvore de chamadas – Dados de instrumentação de memória do .NET
@@ -35,28 +35,28 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
   
 ## <a name="general"></a>Geral  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
-|**Nome da Função**|O nome da função.|  
-|**Endereço da Função**|O endereço da função.|  
+|**Nome da função**|O nome da função.|  
+|**Endereço da função**|O endereço da função.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
 |**Número de Chamadas**|O número total de chamadas feitas para essa função.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
-|**Nome do Módulo**|O nome do módulo que contém a função.|  
+|**Nome do módulo**|O nome do módulo que contém a função.|  
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome atribuído ao processo.|  
+|**Nome do processo**|O nome atribuído ao processo.|  
 |**Sobrecarga de Investigação Exclusiva de Tempo**|A sobrecarga de tempo para essa função que é causada pela instrumentação. A sobrecarga de investigação foi subtraída de todos os tempos exclusivos.|  
 |**Sobrecarga de Investigação Inclusiva de Tempo**|A sobrecarga de tempo para essa função e as respectivas funções filho que é causada pela instrumentação. A sobrecarga de investigação foi subtraída de todos os tempos inclusivos.|  
 |**Tipo**|O contexto da função:<br /><br /> -   **0** – a função atual<br />-   **1** – uma função que chama a função atual<br />-   **2** – uma função que é chamada pela função atual<br /><br /> Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Nome da Função Raiz**|O nome da função atual. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Nome da Função Raiz**|Nome da função atual. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
   
 ## <a name="net-memory-values"></a>Valores de memória do .NET  
  Os valores de memória do .NET inclusivos de uma função indicam o número (alocações) e o tamanho (bytes) de objetos que foram criados pela função e as funções que foram chamadas pela outa função.  
   
  Os valores de memória exclusivos indicam o número e o tamanho dos objetos que foram criados pelo código no corpo da função, e não por funções chamadas pela outra função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Alocações Inclusivas**|O número de objetos que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número inclui alocações feitas por funções filho.|  
 |**% de Alocações Inclusivas**|A porcentagem de todos os objetos que foram criados na execução da criação de perfil que eram alocações inclusivas das instâncias de função que foram chamadas pela função pai na árvore de chamada.|  
@@ -66,7 +66,7 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
 ## <a name="elapsed-inclusive-values"></a>Valores Inclusivos Decorridos  
  Os valores inclusivos decorridos indicam o tempo que uma função ficou na pilha de chamadas. O tempo inclui o tempo gasto em funções chamadas pela função e em chamadas para o sistema operacional, como mudanças de contexto e operações de entrada/saída.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Inclusivo Decorrido**|O tempo total inclusivo decorrido de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**% de Tempo Inclusivo Decorrido**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo decorrido total dessa função quando foi chamada pela função na árvore de chamadas.|  
@@ -77,7 +77,7 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
 ## <a name="elapsed-exclusive-values"></a>Valores Exclusivos Decorridos  
  Valores exclusivos decorridos indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. O tempo inclui o tempo em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto. No entanto, o tempo não inclui o tempo gasto em funções que foram chamadas pela função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Exclusivo Decorrido**|O tempo total exclusivo decorrido de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**% de Tempo Exclusivo Decorrido**|O percentual do tempo total exclusivo decorrido da execução da criação de perfil que foi gasto no tempo total exclusivo decorrido dessa função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
@@ -88,7 +88,7 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
 ## <a name="application-inclusive-values"></a>Valores Inclusivos do Aplicativo  
  Os valores inclusivos do aplicativo indicam o tempo que uma função ficou na pilha de chamadas. O tempo não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto. O tempo inclui o tempo gasto em funções filho que foram chamadas pela função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Inclusivo do Aplicativo**|O tempo total inclusivo do aplicativo de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**% de Tempo Inclusivo do Aplicativo**|O percentual do tempo total inclusivo decorrido da execução da criação de perfil que foi gasto no tempo total inclusivo do aplicativo dessa função, quando ela tiver sido chamada pela função na árvore de chamadas.|  
@@ -99,7 +99,7 @@ O modo de exibição de árvore de chamada dos dados de criação de perfil de a
 ## <a name="application-exclusive-values"></a>Valores Exclusivos do Aplicativo  
  Valores exclusivos do aplicativo indicam o tempo gasto na função, excluindo o tempo gasto em funções filho chamadas pela função. O tempo também exclui as chamadas para o sistema operacional, como alterações de contexto e operações de entrada/saída.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Exclusivo do Aplicativo**|O tempo total exclusivo do aplicativo de todas as chamadas a esta função, quando ela tiver sido chamada pela função pai na árvore de chamadas.|  
 |**% de Tempo Exclusivo do Aplicativo**|O percentual do tempo total exclusivo decorrido da execução da criação de perfil que foi gasto no tempo total exclusivo do aplicativo dessa função, quando ela tiver sido chamada pela função na árvore de chamadas.|  

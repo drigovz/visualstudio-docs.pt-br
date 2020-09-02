@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: Alto uso de String.Split ou String.Substring | Microsoft Docs'
+title: 'DA0013: alto uso de String.Split ou String.Substring | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,19 +18,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159199"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Alto uso de String.Split ou String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0013 |  
-| Categoria de |. Diretrizes de uso do .NET Framework |  
+ID da regra | DA0013 |  
+| Categoria |. Diretrizes de uso do NET Framework |  
 | Métodos de criação de perfil | Amostragem |  
-| Mensagem | Considere reduzir o uso das funções String. Split e String. substring. |  
+| Mensagem | Considere a possibilidade de reduzir o uso das funções String. Split e String. substring. |  
 | Tipo de regra | Aviso |  
   
 ## <a name="cause"></a>Causa  

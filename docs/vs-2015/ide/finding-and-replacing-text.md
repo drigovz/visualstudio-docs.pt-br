@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645642"
 ---
 # <a name="finding-and-replacing-text"></a>Localizando e substituindo texto
@@ -61,7 +61,7 @@ ms.locfileid: "72645642"
 
  Você pode acessar opções de substituição escolhendo o botão ao lado da caixa de texto **Localizar**. Para fazer uma substituição por vez, escolha o botão **Substituir próximo** ao lado da caixa de texto **Substituir**. Para substituir todas as correspondências, escolha o botão **Substituir tudo**.
 
- Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)** .
+ Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)**.
 
 ### <a name="searching-tool-windows"></a>Pesquisando em janelas de ferramentas
  É possível usar o controle **Localizar** em janelas de texto ou de código, como janelas de **Saída** e janelas **Localizar Resultados**, escolhendo **Localizar e Substituir** no menu **Editar** ou (CTRL + F).
@@ -74,10 +74,10 @@ ms.locfileid: "72645642"
  Quando você escolhe **Localizar tudo**, uma janela **Localizar Resultados** é aberta e lista as correspondências da pesquisa. Selecionar um resultado na lista exibe o arquivo associado e realça a correspondência. Se o arquivo ainda não estiver aberto para edição, ele será aberto em uma guia de visualização no lado direito da guia. É possível usar o controle **Localizar** para pesquisar na lista **Localizar Resultados**.
 
 ### <a name="creating-custom-search-folder-sets"></a>Criando conjuntos de pastas de pesquisa personalizados
- Você pode definir o escopo da pesquisa escolhendo o botão **Escolher Pastas de Pesquisa** (ele se parece com **...** ) ao lado da caixa **Examinar** caixa. Na caixa de diálogo **Escolher Pastas de Pesquisa**, você pode especificar um conjunto de pastas nas quais deseja pesquisar e pode salvar a especificação para utilizá-la novamente mais tarde. Você pode especificar pastas em um computador remoto somente se tiver mapeado sua unidade para o computador local.
+ Você pode definir o escopo da pesquisa escolhendo o botão **Escolher Pastas de Pesquisa** (ele se parece com **... **) ao lado da caixa **Examinar** caixa. Na caixa de diálogo **Escolher Pastas de Pesquisa**, você pode especificar um conjunto de pastas nas quais deseja pesquisar e pode salvar a especificação para utilizá-la novamente mais tarde. Você pode especificar pastas em um computador remoto somente se tiver mapeado sua unidade para o computador local.
 
 ### <a name="creating-custom-component-sets"></a>Criando conjuntos de componentes personalizados
  Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar componentes COM ou .NET instalados, projetos do Visual Studio incluídos em sua solução ou qualquer assembly ou biblioteca de tipos (.dll,.tlb, .olb, .exe ou .ocx). Para pesquisar referências, selecione a caixa **Examinar referências**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)

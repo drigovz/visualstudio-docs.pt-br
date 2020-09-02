@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983564"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
@@ -91,7 +91,7 @@ Examine todas as alterações no seu projeto navegando para o item de menu **Con
 
 Isso permite exibir todas as alterações em cada arquivo de um projeto com a opção de Reverter, Criar um Patch ou Confirmar.
 
-Para comprometer um arquivo no repositório remoto, **pressione 'Comprometer'** digite uma mensagem de confirmação e confirme com o botão Comprometer:
+Para confirmar um arquivo para o repositório remoto, pressione **confirmar**, insira uma mensagem de confirmação e confirme com o botão confirmar:
 
 ![Confirmando um arquivo](media/version-control-gitCommit.png)
 

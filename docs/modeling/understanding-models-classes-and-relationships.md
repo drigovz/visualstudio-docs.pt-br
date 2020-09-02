@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565897"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
@@ -22,7 +22,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
  Este tópico explica os recursos centrais da definição de DSL.
 
 ## <a name="the-dsl-definition"></a>A definição de DSL
- Quando você abre `Dsl\DslDefinition.dsl`, sua janela do Visual Studio é semelhante à imagem a seguir.
+ Quando você abre `Dsl\DslDefinition.dsl` , sua janela do Visual Studio é semelhante à imagem a seguir.
 
  ![Designer de DSL](../modeling/media/dsl_designer.png)
 
@@ -69,7 +69,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
 - Recolha partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.
 
-## <a name="inheritance"></a>{1&gt;Herança&lt;1}
+## <a name="inheritance"></a>Herança
  As classes de domínio podem ser definidas usando a herança. Para criar uma derivação de herança, clique na ferramenta de herança, clique na classe derivada e, em seguida, clique na classe base. Um elemento de modelo tem todas as propriedades que são definidas em sua própria classe de domínio, junto com todas as propriedades herdadas da classe base. Ele também herda suas funções em relações.
 
  A herança também pode ser usada entre relações, formas e conectores. A herança deve ser mantida dentro do mesmo grupo. Uma forma não pode herdar de uma classe de domínio.
@@ -116,7 +116,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Na representação XML do modelo, um link de referência entre dois elementos é representado usando *moniker.* Ou seja, os monikers são nomes que identificam exclusivamente cada elemento no modelo. O nó XML para cada elemento de modelo contém um nó que especifica o nome da relação e o moniker do outro elemento.
 
-## <a name="roles"></a>Funções do
+## <a name="roles"></a>Funções
  Cada relação de domínio tem duas funções, uma função de origem e uma função de destino.
 
  Na figura a seguir, a linha entre a classe de domínio do **Publicador** e a relação de domínio **PublisherCatalog** é a função de origem. A linha entre a relação de domínio e a classe de domínio de **álbum** é a função de destino.
@@ -128,9 +128,9 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
  Quando você cria uma relação em uma definição de DSL, os nomes de propriedade e relação recebem valores padrão. No entanto, você pode alterá-las.
 
 ## <a name="multiplicities"></a>Multiplicidades
- As multiplicidades especificam quantos elementos podem ter a mesma função em um relacionamento de domínio. No exemplo, a configuração de multiplicidade de zero para muitos (0..\*) na função de **Catálogo** especifica que qualquer instância da classe de domínio do **Publicador** pode ter tantos links de relações **PublisherCatalog** quanto você deseja dar a ela.
+ As multiplicidades especificam quantos elementos podem ter a mesma função em um relacionamento de domínio. No exemplo, a configuração de multiplicidade de zero para muitos (0.. \* ) na função de **Catálogo** especifica que qualquer instância da classe de domínio do **Publicador** pode ter tantos links de relações **PublisherCatalog** quanto você deseja dar.
 
- Configure a multiplicidade de uma função digitando no diagrama ou modificando a propriedade `Multiplicity` na janela **Propriedades** . A tabela a seguir descreve as configurações dessa propriedade.
+ Configure a multiplicidade de uma função digitando no diagrama ou modificando a `Multiplicity` Propriedade na janela **Propriedades** . A tabela a seguir descreve as configurações dessa propriedade.
 
 |Tipo de multiplicidade|Descrição|
 |-|-|
@@ -148,6 +148,6 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Uma relação derivada especializa sua relação de base. As classes de domínio para as quais ele se vincula devem ser derivadas ou iguais às classes vinculadas pela relação base. Quando um link da relação derivada é criado em um modelo, ele é uma instância de relações derivadas e base. No código do programa, você pode navegar até a extremidade oposta do link usando as propriedades geradas pelo base ou pela classe derivada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

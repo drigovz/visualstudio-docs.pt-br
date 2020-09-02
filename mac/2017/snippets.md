@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984814"
 ---
 # <a name="code-snippets"></a>Snippets de código
@@ -46,7 +46,7 @@ Pressione os botões **Adicionar** ou **Editar** para criar ou editar snippets.
 
 Depois da inserção de um snippet de código no editor, as palavras-chave definidas são realçadas e podem ser editadas usando tabulações entre elas. Palavras-chave se comportam como uma "variável" no snippet de código. Para defini-las, coloca-se um sinal de cifrão `$` antes e após o nome da palavra-chave. 
 
-A janela **Editar modelo** é exibida abaixo, editando o snippet `prop` interno. O trecho contém duas &ndash; `$type$` palavras-chave e `$name$` &ndash; que podem ter outras propriedades definidas (como um valor padrão e uma dica de ferramenta) no lado direito da janela:
+A janela **Editar modelo** é exibida abaixo, editando o snippet `prop` interno. O trecho de código contém duas palavras-chave &ndash; `$type$` e `$name$` &ndash; que podem ter propriedades adicionais definidas (como um valor padrão e uma dica de ferramenta) no lado direito da janela:
 
 ![Janela Editar modelo](media/source-editor-image12z.png)
 
@@ -82,7 +82,7 @@ Quando usado no editor, a tecla **Tab** alternará entre a primeira instância d
 Há duas palavras-chave reservadas que você pode usar em um snippet de código:
 
 - `$selected$` &ndash; Se o snippet tiver a opção **Modelo surround with** marcada, esta palavra-chave será substituída pelo texto que foi realçado no editor quando o snippet foi escolhido.
-- `$end$`&ndash; Quando o usuário terminar de editar as palavras-chave em um trecho, o `$end$` cursor será colocado no local da palavra-chave.
+- `$end$`&ndash;Quando o usuário terminar de editar as palavras-chave em um trecho de código, o cursor será colocado no local da `$end$` palavra-chave.
 
 O snippet `for` da seção anterior é um exemplo de palavras-chave reservadas.
 

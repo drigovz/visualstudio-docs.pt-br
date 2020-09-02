@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145370"
 ---
 # <a name="utilization-view"></a>Exibição da utilização
@@ -25,9 +25,9 @@ ms.locfileid: "68145370"
 
 A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros recursos do sistema usados pelo processo atual. Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o grafo plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.  
   
- ![Exibição de Utilização de CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![Exibição Utilização da CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
- O gráfico mostra o tempo (no eixo x) e os núcleos lógicos médios utilizados pelo processo de destino, o processo ocioso e o processo do Sistema. (O processo ocioso mostra núcleos ociosos. O processo do Sistema é um processo no Windows que pode executar o trabalho em nome de outros processos.) Os processos restantes em execução na conta do sistema para a utilização de qualquer um dos núcleos restantes.  
+ O gráfico mostra o tempo (no eixo x) e os núcleos lógicos médios utilizados pelo processo de destino, o processo ocioso e o processo do Sistema. (O processo ocioso mostra núcleos ociosos. O processo do sistema é um processo no Windows que pode executar o trabalho em nome de outros processos.) Os processos restantes que estão sendo executados na conta do sistema para a utilização de qualquer núcleo restante.  
   
  O número de núcleos lógicos é mostrado no eixo y. O Windows trata o suporte simultâneo de multithreading em hardware como núcleos lógicos (por exemplo, Hyper-Threading). Portanto, um sistema com um processador quad-core que oferece suporte a dois threads de hardware por núcleo é exibido como um sistema de oito núcleos lógicos. Isso também se aplica à Exibição de Núcleos. Para obter mais informações, consulte [Exibição de Núcleos](../profiling/cores-view.md).  
   
@@ -48,9 +48,9 @@ A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros r
   
  Se você estiver usando a GPU por meio do C++ AMP ou DirectX, poderá ser interessante identificar o número de mecanismos GPU em uso ou de áreas em que a GPU é inesperadamente ociosa.  
   
-## <a name="zooming"></a>Aplicar zoom  
+## <a name="zooming"></a>Zoom  
  Para ampliar o gráfico de Utilização de CPU ou de GPU, selecione uma seção ou use a ferramenta de controle deslizante de zoom acima do gráfico. A configuração de zoom persiste conforme você muda para outros modos. Para reduzir novamente, use a ferramenta de controle deslizante de zoom. Também é possível ampliar usando Ctrl+scroll.  
   
-## <a name="see-also"></a>Veja também  
- [Visualização Simultânea](../profiling/concurrency-visualizer.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Visualizador de simultaneidade](../profiling/concurrency-visualizer.md)   
  [Exibição de núcleos](../profiling/cores-view.md)

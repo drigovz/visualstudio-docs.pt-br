@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550906"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Introdução ao PTVS: editando código
@@ -34,7 +34,7 @@ from math import sin
   
  Durante a codificação, se você usar um identificador que seja desvinculado, mas que pode ser encontrado em suas bibliotecas, o PTVS oferece uma correção rápida pop-up para adicionar a instrução de importação adequada de que precisa.  Por exemplo, se você digitou `cos`, então, você verá **importar da matemática**.  
   
- Você pode usar um snippet para gerar o código.  No menu Editar, selecione IntelliSense e depois insira Snippet.  Agora, selecione Python e, em seguida, def.  Chame a função `make_dot_string` e adicione um parâmetro `x`.  Agora, já é possível adicionar asserções ao arquivo para desenvolvimento orientado por testes e você verá que o PTVS já oferece a nova função em listas de preenchimento.  
+ Você pode usar um snippet para gerar o código.  No menu Editar, selecione IntelliSense e depois insira Snippet.  Agora escolha Python e, em seguida, def.  Chame a função `make_dot_string` e adicione um parâmetro `x` .  Agora, já é possível adicionar asserções ao arquivo para desenvolvimento orientado por testes e você verá que o PTVS já oferece a nova função em listas de preenchimento.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -66,6 +66,6 @@ def main ():
   
  É possível assistir a essas instruções em um breve [vídeo no YouTube](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Documentação do wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Introdução ao PTVS e vídeos de aprofundamento](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

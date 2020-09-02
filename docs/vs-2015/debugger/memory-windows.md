@@ -1,5 +1,5 @@
 ---
-title: Memória Windows | Microsoft Docs
+title: Janelas de memória | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,18 +28,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158464"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O **memória** janela fornece uma exibição no espaço de memória que é usado pelo seu aplicativo. O **Watch** janela, **QuickWatch** caixa de diálogo **Autos** janela, e **Locals** janela Mostrar o conteúdo de variáveis, que são armazenados em locais específicos na memória. Mas o **memória** janela mostra a imagem em grande escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, o **memória** janela não é limitada a exibir dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  
+A janela **memória** fornece uma exibição do espaço de memória usado pelo seu aplicativo. A janela **inspeção** , caixa de diálogo **QuickWatch** , janela **autos** e janela **locais** mostram o conteúdo das variáveis, que são armazenadas em locais específicos na memória. Mas a janela **memória** mostra a imagem em larga escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, a janela de **memória** não está limitada à exibição de dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  
   
- O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
+ A janela **memória** estará disponível somente se a depuração no nível de endereço estiver habilitada na caixa de diálogo **Opções** , nó de**depuração** . A janela **memória** não está disponível para script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
   
 ## <a name="opening-a-memory-window"></a>Abrindo uma janela de memória  
   
@@ -47,10 +47,10 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 1. Inicie a depuração, se você já não estiver no modo de depuração.  
   
-2. No **Debug** , aponte para **Windows**. Em seguida, aponte para **memória** e, em seguida, clique em **Memory 1**, **memória 2**, **memória 3**, ou **memória 4**. (Edições de nível inferior [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm apenas uma única **memória** janela. Se você estiver usando uma dessas edições, basta clicar **memória**.)  
+2. No menu **depurar** , aponte para **Windows**. Em seguida, aponte para **memória** e clique **em memória 1**, **memória 2**, **memória 3**ou **memória 4**. (Edições de nível inferior do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm apenas uma janela de **memória** . Se você estiver usando uma dessas edições, basta clicar em **memória**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Paginação na janela de memória  
- O **memória** janela tem uma barra de rolagem vertical que opera de maneira não padrão. O espaço de endereço de um computador moderno é muito grande e você pode preferir arrastar a caixa de rolagem para um local aleatório. Por esse motivo, a caixa de rolagem é carregada e sempre permanece no centro da barra de rolagem. Em aplicativos de código nativo, você pode rolar a página para cima ou para baixo, mas não pode rolar livremente.  
+ A janela **memória** tem uma barra de rolagem vertical que opera de maneira não padrão. O espaço de endereço de um computador moderno é muito grande e você pode preferir arrastar a caixa de rolagem para um local aleatório. Por esse motivo, a caixa de rolagem é carregada e sempre permanece no centro da barra de rolagem. Em aplicativos de código nativo, você pode rolar a página para cima ou para baixo, mas não pode rolar livremente.  
   
  Um endereço de memória mais alto aparece na parte inferior da janela. Para exibir um endereço mais alto, role para baixo, não para cima.  
   
@@ -61,40 +61,40 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
 2. Para rolar a página para cima (mover para um endereço de memória mais baixo), clique acima da caixa de rolagem na barra de rolagem vertical.  
   
 ## <a name="selecting-a-memory-location"></a>Selecionando um local de memória  
- Se você quiser mover imediatamente para um local selecionado na memória, você poderá fazer isso usando uma operação de arrastar e soltar ou editando o valor de **endereço** caixa. O **endereço** caixa aceita não somente valores numéricos, mas também expressões que são avaliadas como endereços. Por padrão, o **memória** janela trata um **endereço** expressão como uma expressão em tempo real, que é reavaliada à medida que seu programa é executado. As expressões dinâmicas podem ser muito úteis. Por exemplo, você pode usá-las para exibir a memória que é tocada por um ponteiro.  
+ Se você quiser se mover instantaneamente para um local selecionado na memória, poderá fazer isso usando uma operação de arrastar e soltar ou editando o valor na caixa **endereço** . A caixa de **endereço** aceita não apenas valores numéricos, mas também expressões que são avaliadas como endereços. Por padrão, a janela **memória** trata uma expressão de **endereço** como uma expressão dinâmica, que é reavaliada à medida que seu programa é executado. As expressões dinâmicas podem ser muito úteis. Por exemplo, você pode usá-las para exibir a memória que é tocada por um ponteiro.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Para selecionar um local de memória arrastando e soltando  
   
 1. Em qualquer janela, selecione um endereço de memória ou variável de ponteiro que contém um endereço de memória.  
   
-2. Arraste o endereço ou ponteiro para o **memória** janela.  
+2. Arraste o endereço ou o ponteiro para a janela **memória** .  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>Para selecionar um local de memória editando  
   
-1. No **memória** janela, selecione a **endereço** caixa.  
+1. Na janela **memória** , selecione a caixa **endereço** .  
   
-2. Digite ou cole o endereço que você deseja ver e, em seguida, pressione **ENTER**.  
+2. Digite ou cole o endereço que você deseja ver e pressione **Enter**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Alterando o modo como a janela de memória exibe informações  
  Você pode personalizar a maneira como a janela **Memória** mostra o conteúdo da memória. Por padrão, o conteúdo da memória aparece como inteiros de um byte em formato hexadecimal e o número de colunas é determinado automaticamente pela largura atual da janela.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Para alterar o formato do conteúdo de memória  
   
-1. Clique com botão direito do **memória** janela.  
+1. Clique com o botão direito do mouse na janela **memória** .  
   
 2. Escolha o formato que você deseja.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para alterar o número de colunas na janela de memória  
   
-1. Na barra de ferramentas na parte superior a **memória** janela, localize a **colunas** lista.  
+1. Na barra de ferramentas na parte superior da janela **memória** , localize a lista **colunas** .  
   
-2. No **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
+2. Na lista **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
   
-   Se você não quiser que o conteúdo do **memória** janela alterar como o seu programa é executado, você pode desativar a avaliação da expressão dinâmica.  
+   Se você não quiser que o conteúdo da janela de **memória** mude à medida que seu programa for executado, você poderá desativar a avaliação de expressão dinâmica.  
   
 #### <a name="to-toggle-live-evaluation"></a>Para ativar/desativar a avaliação dinâmica  
   
-1. Clique com botão direito do **memória** janela.  
+1. Clique com o botão direito do mouse na janela **memória** .  
   
 2. No menu de atalho, clique em **reavaliar automaticamente**.  
   
@@ -104,7 +104,7 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-toggle-the-toolbar"></a>Para ativar/desativar a barra de ferramentas  
   
-1. Clique com botão direito um **memória** janela.  
+1. Clique com o botão direito do mouse em uma janela de **memória** .  
   
 2. No menu de atalho, clique em **Mostrar barra de ferramentas**.  
   
@@ -115,11 +115,11 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-follow-a-pointer-through-memory"></a>Para seguir um ponteiro pela memória  
   
-1. No **memória** janela **endereço** , digite uma expressão de ponteiro. A variável de ponteiro deve estar no escopo atual. Dependendo da linguagem, você poderá ter que remover a referência a ele.  
+1. Na caixa **endereço** da janela de **memória** , digite uma expressão de ponteiro. A variável de ponteiro deve estar no escopo atual. Dependendo da linguagem, você poderá ter que remover a referência a ele.  
   
 2. Pressione **ENTER**.  
   
-     Agora, quando você usa um comando de execução como **etapa**, o endereço de memória que é exibido automaticamente será alterado quando o ponteiro muda.  
+     Agora, quando você usar um comando de execução como **etapa**, o endereço de memória exibido será alterado automaticamente conforme o ponteiro for alterado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

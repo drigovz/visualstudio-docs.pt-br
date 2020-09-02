@@ -12,11 +12,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ad203c5ae85d65bed400772967202b313601083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646186"
 ---
-# <a name="domain-relationships-in-the-generated-api"></a>Relações de domínio na API gerada
+# <a name="domain-relationships-in-the-generated-api"></a>Relacionamentos de domínio na API gerada
 Este tópico foi consolidado com outro conteúdo. Vá para [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).

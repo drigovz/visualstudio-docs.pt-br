@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983440"
 ---
 # <a name="customizing-the-build-system"></a>Personalizando o sistema de build
 
-O MSBuild é um mecanismo de build desenvolvido pela Microsoft, que permite criar aplicativos principalmente para .NET. A estrutura Mono também tem sua própria implementação do Build Engine da Microsoft, chamado **xbuild**. No entanto, o xbuild foi desativado para favorecer o uso do MSBuild em todos os sistemas operacionais.
+O MSBuild é um mecanismo de build desenvolvido pela Microsoft, que permite criar aplicativos principalmente para .NET. A estrutura mono também tem sua própria implementação do mecanismo de compilação da Microsoft, chamada **xbuild**. No entanto, o xbuild foi desativado para favorecer o uso do MSBuild em todos os sistemas operacionais.
 
 O **MSBuild** é usado principalmente como sistema de build para projetos no Visual Studio para Mac.
 
@@ -104,4 +104,4 @@ Por exemplo, o snippet de código a seguir cria telas de inicialização do iOS.
 Os recursos a seguir podem ser usados para conhecer melhor o MSBuild:
 
 * [Visão geral do MSBuild](/visualstudio/msbuild/msbuild)
-* [Conceitos msbuild](/visualstudio/msbuild/msbuild-concepts)
+* [Conceitos do MSBuild](/visualstudio/msbuild/msbuild-concepts)

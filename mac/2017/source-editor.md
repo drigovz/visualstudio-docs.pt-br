@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985209"
 ---
 # <a name="source-editor"></a>Editor de código-fonte
@@ -30,7 +30,7 @@ O Visual Studio para Mac oferece muitos recursos poderosos para tornar o desenvo
 
 O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte grandes permitindo aos desenvolvedores mostrar ou ocultar seções completas do código, tal como o uso de diretivas, código clichê, comentários e instruções de #region. O dobramento de código é desativado por padrão no Visual Studio para Mac
 
-Para ativar o dobramento de código, navegue até **o Visual Studio > Preferências > Editor de Texto > Código geral de > Dobrando**:
+Para ativar o dobramento de código, navegue até **Visual Studio > preferências > editor de texto > geral > dobramento de código**:
 
 ![Opções de dobramento de código](media/source-editor-image1.png)
 
@@ -50,7 +50,7 @@ Este item de menu também pode ser usado para habilitar ou desabilitar o dobrame
 
 Pode ser necessário que você exiba caracteres invisíveis no código-fonte. É uma maneira visível de garantir que você esteja atendendo aos padrões de codificação e não desperdiçando espaço desnecessariamente. Isso também é útil ao escrever em F#, que depende de linhas recuadas com precisão para avaliar o código.
 
-Defina as opções para mostrar o espaço em branco navegando para **Visual Studio > Preferências > Editor de texto > Marcadores e Réguas**. A seleção dessa opção permite a configuração _quando_ os caracteres invisíveis serão mostrados: Nunca, Na Seleção ou sempre:
+Defina as opções para mostrar o espaço em branco navegando para **Visual Studio > Preferências > Editor de texto > Marcadores e Réguas**. A seleção dessa opção permite definir _quando_   caracteres invisíveis serão mostrados: nunca, na seleção ou sempre:
 
 ![Mostrar opções de caracteres invisíveis](media/source-editor-image3.png)
 

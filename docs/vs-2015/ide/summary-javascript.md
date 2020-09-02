@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646842"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,12 +32,12 @@ Especifica a descrição de uma função ou um método.
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `locid` Opcional. O identificador de informações de localização sobre o método ou função. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo do identificador depende do formato especificado no elemento [\<loc>](../ide/loc-javascript.md).
+ `locid` Opcional. O identificador de informações de localização sobre o método ou função. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo de identificador depende do formato especificado no [\<loc>](../ide/loc-javascript.md) elemento.
 
  `description` Opcional. Uma descrição da função ou do método.
 
 ## <a name="remarks"></a>Comentários
- Os elementos usados para anotar as funções, que incluem [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) e [\<returns>](../ide/returns-javascript.md), precisam ser colocados no corpo da função antes de quaisquer instruções.
+ Os elementos usados para anotar funções, que incluem [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) e [\<returns>](../ide/returns-javascript.md) , devem ser colocados no corpo da função antes de qualquer instrução.
 
 ## <a name="example"></a>Exemplo
  O código a seguir mostra como usar o elemento `<summary>`.
@@ -55,5 +55,5 @@ function areaFunction(radiusParam)
 
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)
