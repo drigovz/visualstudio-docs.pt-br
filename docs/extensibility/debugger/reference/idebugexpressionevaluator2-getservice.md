@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: GetService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729356"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Recupera um objeto de serviço dado seu identificador único.
+Recupera um objeto de serviço de acordo com seu identificador exclusivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ int GetService (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `uid`\
-[em] Identificador exclusivo do serviço para recuperar.
+no Identificador exclusivo do serviço a ser recuperado.
 
 `ppService`\
-[fora] Retorna um objeto que representa o serviço.
+fora Retorna um objeto que representa o serviço.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Isso pode ser consumido por um avaliador de expressão de terceiros para obter serviços de outro avaliador de expressão. Por exemplo, este método poderia ser usado para obter a interface para o serviço de visualização do avaliador de expressão padrão. É improvável que avaliadores de expressão de terceiros precisem implementar essa interface.
+ Isso pode ser consumido por um avaliador de expressão de terceiros para obter serviços de outro avaliador de expressão. Por exemplo, esse método pode ser usado para obter a interface do serviço Visualizador do avaliador de expressão padrão. Não é improvável que os avaliadores de expressão de terceiros precisem implementar essa interface.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

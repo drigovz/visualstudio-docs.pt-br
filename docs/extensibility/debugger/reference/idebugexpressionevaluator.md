@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionAvaliador | Microsoft Docs
+title: IDebugExpressionEvaluator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729378"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Esta interface representa o avaliador de expressão.
+Essa interface representa o avaliador de expressão.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionEvaluator : IUnknown
@@ -35,33 +35,33 @@ IDebugExpressionEvaluator : IUnknown
 O avaliador de expressão deve implementar essa interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Para obter essa interface, instanciar `CoCreateInstance` o avaliador de expressão através do método utilizando o ID de classe (CLSID) do avaliador. Veja o Exemplo.
+Para obter essa interface, crie uma instância do avaliador de expressão por meio do `CoCreateInstance` método usando a ID de classe (CLSID) do avaliador. Consulte o exemplo.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
-A tabela a seguir `IDebugExpressionEvaluator`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+A tabela a seguir mostra os métodos de `IDebugExpressionEvaluator` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Analisar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Converte uma seqüência de expressão em uma expressão analisada.|
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtém as variáveis locais, argumentos e outras propriedades de um método.|
-|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Converte um local de método e deslocamento em um endereço de memória.|
+|[Analisar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Converte uma cadeia de caracteres de expressão em uma expressão analisada.|
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtém as variáveis locais, os argumentos e outras propriedades de um método.|
+|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Converte um local de método e um deslocamento em um endereço de memória.|
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Determina qual idioma usar para criar resultados imprimíveis.|
 |[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Define a raiz do registro. Usado para depuração lado a lado.|
 
 ## <a name="remarks"></a>Comentários
-Em uma situação típica, o mecanismo de depuração (DE) instancia o avaliador de expressão (EE) como resultado de uma chamada para [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Como o DE conhece o idioma e o fornecedor do EE que deseja usar, o DE obtém o CLSID do `GetEEMetric`EE do registro (os [Ajudantes do SDK para depuração,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , ajuda com essa recuperação).
+Em uma situação típica, o mecanismo de depuração (DE) cria uma instância do avaliador de expressão (EE) como resultado de uma chamada para [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Como o de conhece a linguagem e o fornecedor do EE que deseja usar, o DE Obtém o CLSID do registro (os [auxiliares do SDK para a função de depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `GetEEMetric` , ajuda com essa recuperação).
 
-Depois que o EE é instanciado, o DE chama [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para analisar a expressão e armazená-la em um objeto [IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md) Mais tarde, uma chamada para [AssessSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) avalia a expressão.
+Depois que o EE é instanciado, o DE chama [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para analisar a expressão e armazená-la em um objeto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) . Posteriormente, uma chamada para [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) avalia a expressão.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: ee.h
+Cabeçalho: EE. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como instanciar o avaliador de expressão dado a um provedor de símbolos e um endereço no código-fonte. Este exemplo usa `GetEEMetric`uma função, da biblioteca [SDK Helpers for Debugging,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) dbgmetric.lib.
+Este exemplo mostra como criar uma instância do avaliador de expressão, dado um provedor de símbolos e um endereço no código-fonte. Este exemplo usa uma função, `GetEEMetric` , dos [auxiliares do SDK para depurar a](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) biblioteca, dbgmetric. lib.
 
 ```cpp
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,

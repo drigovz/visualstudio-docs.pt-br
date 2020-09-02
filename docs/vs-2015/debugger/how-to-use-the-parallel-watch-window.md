@@ -1,5 +1,5 @@
 ---
-title: 'Como: Use a janela Inspeção paralela | Microsoft Docs'
+title: 'Como: usar a janela de inspeção paralela | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697487"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Como: Use a janela Inspeção paralela
+# <a name="how-to-use-the-parallel-watch-window"></a>Como usar a janela Inspeção Paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:  
@@ -37,9 +37,9 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 - Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
   
   > [!TIP]
-  > Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
+  > Você deve abrir a janela de **tarefa paralela** para exibir as informações da tarefa na janela de **inspeção paralela** .  
   
-- O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
+- A **\<Add Watch>** coluna, na qual você pode inserir expressões a serem inspecionadas.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 ### <a name="to-add-a-watch-expression"></a>Para adicionar uma expressão de inspeção  
   
-- Selecione  **\<Adicionar inspeção >** e, em seguida, especifique uma expressão de inspeção.  
+- Selecione **\<Add Watch>** e especifique uma expressão de inspeção.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread  
   
-- Selecione a coluna do sinalizador para a linha, ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.  
+- Selecione a coluna sinalizador para a linha ou abra o menu de atalho para o thread e escolha **sinalizar** ou **desmarcar**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados  
   
-- Escolha o botão Mostrar apenas sinalizados no canto superior esquerdo dos **inspeção paralela** janela.  
+- Escolha o botão Mostrar somente sinalizado no canto superior esquerdo da janela de **inspeção paralela** .  
   
 ### <a name="to-switch-frames"></a>Para alternar quadros  
   
-- Clique duas vezes na coluna do quadro. (Teclado: Selecione a linha e pressione Enter.)  
+- Clique duas vezes na coluna do quadro. (Teclado: selecione a linha e pressione Enter.)  
   
 ### <a name="to-sort-a-column"></a>Para classificar uma coluna  
   
@@ -87,7 +87,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 - Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.  
   
-## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Como: Usar a janela Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Passo a passo: depurar um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+## <a name="see-also"></a>Consulte Também  
+ [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Como: usar a janela threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Walkthrough: Depurando um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

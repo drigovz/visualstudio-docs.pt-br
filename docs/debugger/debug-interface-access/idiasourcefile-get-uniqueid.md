@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f159211854e5b408d34c253a77893caf763bf2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465195"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
@@ -41,5 +41,5 @@ fora Retorna um valor de chave de inteiro simples que é exclusivo para esta ima
 ## <a name="remarks"></a>Comentários
  Comparar chaves em vez de cadeias de caracteres pode acelerar o processamento de números de linha.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

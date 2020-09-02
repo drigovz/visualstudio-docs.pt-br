@@ -1,5 +1,5 @@
 ---
-title: Personalização das verificações de tempo de execução nativas | Microsoft Docs
+title: Personalização de verificações de tempo de execução nativa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,16 +27,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 434f2425b1eeefd82b954e47a8ced55491a7ec11
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697816"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalização das verificações de tempo de execução nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando você compila com **/RTC** (verificações de tempo de execução) ou usar o `runtime_checks` pragma, a biblioteca de tempo de execução C fornece verificações de tempo de execução nativas. Em alguns casos, você pode personalizar a verificação de tempo de execução:  
+Quando você compila com **/RTC** (verificações de tempo de execução) ou usa o `runtime_checks` pragma, a biblioteca de tempo de execução do C fornece verificações de tempo de execução nativas. Em alguns casos, você pode personalizar a verificação de tempo de execução:  
   
 - Para rotear mensagens de verificação de tempo de execução para um arquivo ou destino diferente do padrão.  
   
@@ -46,7 +46,7 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
   
   Para personalizar a verificação de erro em tempo de execução, você pode:  
   
-- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, confira [Como: Escrever uma função de relatório de erro em tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como: gravar uma função de relatório de erros em tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
 - Personalize o destino da mensagem de erro.  
   
@@ -58,9 +58,9 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
  Se você usar uma função personalizada de relatório, use `_RTC_SetErrorType` para associar um erro com um tipo de relatório.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Consulte para obter informações sobre verificações de tempo de execução  
- `_RTC_NumErrors` retorna o número de tipos de erros detectados por verificações de erros em tempo de execução. Para obter uma breve descrição de cada erro, você poderá executar um loop de 0 para o valor de retorno de `_RTC_NumErrors`, passando o valor da iteração para `_RTC_GetErrDesc` em cada loop. Para obter mais informações, consulte [RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) e [RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
+ `_RTC_NumErrors` retorna o número de tipos de erros detectados por verificações de erros em tempo de execução. Para obter uma breve descrição de cada erro, você poderá executar um loop de 0 para o valor de retorno de `_RTC_NumErrors`, passando o valor da iteração para `_RTC_GetErrDesc` em cada loop. Para obter mais informações, consulte [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) e [_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: usar verificações nativas em tempo de execução](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [_CrtDbgReport, _CrtDbgReportW](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)

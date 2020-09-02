@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386979"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para projetos do Python
@@ -133,7 +133,7 @@ Para referenciar propriedades do projeto ou variáveis de ambiente em valores de
 
 | Atributo | Obrigatório | Descrição |
 | --- | --- | --- |
-| Nome | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
+| Name | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
 | Rotular | Sim | O nome de exibição da interface do usuário que é exibido no submenu Python. |
 | Retornos | Sim | Deve conter `@(Commands)`, que identifica o destino como um comando. |
 
@@ -386,7 +386,7 @@ Os valores de atributo poderão ficar vazios se você fizer referência a uma pr
 
 ### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>O Visual Studio para de responder e falha ao executar o comando
 
-Provavelmente você está tentando executar um comando do console com `ExecuteIn="output"` e, nesse caso, o Visual Studio pode falhar ao tentar analisar a saída. Use `ExecuteIn="console"` em vez disso. (Confira o [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Provavelmente você está tentando executar um comando do console com `ExecuteIn="output"` e, nesse caso, o Visual Studio pode falhar ao tentar analisar a saída. Use `ExecuteIn="console"` em seu lugar. (Confira o [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>O comando executável "não é reconhecido como um comando interno ou externo, programa operável ou arquivo em lotes"
 

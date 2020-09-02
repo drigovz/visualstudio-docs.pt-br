@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670678"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
@@ -36,7 +36,7 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
 
 #### <a name="to-specify-a-build-event"></a>Para especificar um evento de build
 
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Compilar**.
 
@@ -45,7 +45,7 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
 4. Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.
 
     > [!NOTE]
-    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.
@@ -63,9 +63,9 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
 
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para criar um comando .exe para alterar o manifesto do aplicativo
 
-1. Crie um aplicativo de console para o comando. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
+1. Crie um aplicativo de console para o comando. No menu **arquivo** , clique em **novo**e em **projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionVB`.
+2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativo de Console**. Dê ao projeto o nome de `ChangeOSVersionVB`.
 
 3. Em Module1.vb, adicione a seguinte linha às outras instruções `Imports` na parte superior do arquivo:
 
@@ -126,9 +126,9 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
 
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar um evento de pós-build para alterar o manifesto do aplicativo
 
-1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
+1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **arquivo** , clique em **novo**e em **projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativos do Windows**. Nomeie o projeto `VBWinApp`.
+2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativos do Windows**. Dê ao projeto o nome de `VBWinApp`.
 
 3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
@@ -164,5 +164,5 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Consulte também
- [Gerenciando Propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [página de compilação, designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Publicar página,](../ide/reference/publish-page-project-designer.md) [evento de pré-compilação do projeto/pós-compilação evento de linha de comando](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [de eventosC#como: especificar eventos de compilação () ](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>Consulte Também
+ [Gerenciando Propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [página de compilação, designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Publicar página,](../ide/reference/publish-page-project-designer.md) [evento de pré-compilação de projeto/pós-compilação evento de caixa de diálogo de linha de comando](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [como: especificar eventos de compilação (C#)](../ide/how-to-specify-build-events-csharp.md)

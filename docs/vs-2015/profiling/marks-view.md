@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699759"
 ---
 # <a name="marks-view"></a>Exibição de marcas
@@ -28,7 +28,7 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
   
  As marcas padrão que são pré-populadas no rótulo de relatório no início e no final do programa.  
   
- Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, confira [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, consulte [Como coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Para criar um filtro entre duas marcas, selecione a marca, clique com o botão direito do mouse clique em **Adicionar filtro por marcas** ou **Adicionar filtro por carimbo de data/hora**.  
   
@@ -40,15 +40,15 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
  **Nome da Marca**  
  O nome do evento.  
   
- **Carimbo de data/hora**  
+ **Timestamp**  
  Hora de início da criação de perfil até a hora em que o evento é registrado.  
   
  Dados do contador de desempenho do Windows  
  Quando os dados do contador de desempenho do Windows são coletados, os valores são exibidos em uma coluna que tem o nome do contador.  
   
-## <a name="see-also"></a>Consulte também  
- [Visão geral de Relatório de Desempenho](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > como: Configurar marcas de criação de perfil](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > como: Inserir marcas em um arquivo de dados do Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
- [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Visão geral do relatório de desempenho](../profiling/performance-report-overview.md)   
+ [<PAVE_OVER> como: configurar marcas de criação de perfil](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [<PAVE_OVER> como: inserir marcas em um arquivo de dados do profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [Como: coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; Janela de Controle de Coleta de Dados](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

@@ -1,5 +1,5 @@
 ---
-title: 'Erro: O Monitor de depuração remota do Microsoft Visual Studio no computador remoto está em execução como um usuário diferente | Microsoft Docs'
+title: 'Erro: o Monitor de Depuração Remota de Microsoft Visual Studio no computador remoto está sendo executado como um usuário diferente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dffaafbca80828a7501f5f7d24e525225284f5a8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697304"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Erro: O Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto está sendo executado como um usuário diferente
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto está sendo executado como um usuário diferente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao tentar fazer a depuração remota, você pode receber a seguinte mensagem de erro:  
@@ -47,8 +47,8 @@ Ao tentar fazer a depuração remota, você pode receber a seguinte mensagem de 
 > [!CAUTION]
 > Conceder permissões a outros usuários para se conectar permite a possibilidade de acidentalmente conectar à sessão de depuração remota incorreta. A depuração no modo **Sem Autenticação** nunca é segura e deve ser usada com cuidado.  
   
- Para obter mais informações, consulte [iniciar o Monitor de depuração remota](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
+ Para obter mais informações, consulte [iniciar o monitor de depuração remota](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
   
-## <a name="see-also"></a>Consulte também  
- [Solução de problemas e erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Depuração remota](../debugger/remote-debugging.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 434cfc541da3c670d8d444b9a4259b33476a17d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670518"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Como visualizar uma associação de coleção (Designer de Classe)
@@ -38,5 +38,5 @@ Propriedades e campos que são coleções de outros tipos podem ser exibidos no 
 
      A propriedade ou o campo é mostrado como uma linha de associação vinculando ao tipo coletado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como criar associações entre tipos (Designer de classe)](../ide/how-to-create-associations-between-types-class-designer.md) [criando classes e tipos (Designer de classe)](../ide/designing-classes-and-types-class-designer.md) [exibindo tipos e relações (Designer de classe)](../ide/viewing-types-and-relationships-class-designer.md)

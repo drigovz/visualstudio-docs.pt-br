@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192901"
 ---
 # <a name="item-functions"></a>Funções de itens
@@ -54,7 +54,7 @@ Começando com o MSBuild 4.0, o código em tarefas e destinos pode chamar funç�
 ## <a name="intrinsic-item-functions"></a>Funções Intrínsecas de Item  
  A tabela a seguir lista as funções intrínsecas disponíveis para itens.  
   
-|Função|Exemplo|DESCRIÇÃO|  
+|Função|Exemplo|Descrição|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Retorna a contagem dos itens.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retorna o equivalente de `Path.DirectoryName` para cada item.|  
@@ -102,5 +102,5 @@ Começando com o MSBuild 4.0, o código em tarefas e destinos pode chamar funç�
   -->  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Itens](../msbuild/msbuild-items.md)
