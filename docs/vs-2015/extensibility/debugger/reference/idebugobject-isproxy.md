@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsProxy | Microsoft Docs
+title: 'IDebugObject:: isproxy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0777a7e9696009124841ba177af70e5a23a6ea52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180515"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se o objeto for um proxy transparente.  
+Determina se o objeto é um proxy transparente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,13 +39,13 @@ int IsProxy (
   
 #### <a name="parameters"></a>Parâmetros  
  `pfIsProxy`  
- [out] `TRUE` se o objeto for um proxy transparente; caso contrário, `FALSE`.  
+ [fora] `TRUE` Se o objeto for um proxy transparente; caso contrário, `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é implementado pelo mecanismo de depuração de C++ padrão.  
+ Esse método é implementado pelo mecanismo de depuração padrão do C++.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

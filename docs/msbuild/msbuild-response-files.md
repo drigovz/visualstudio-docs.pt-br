@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302892"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315142"
 ---
 # <a name="msbuild-response-files"></a>Arquivos de resposta do MSBuild
 
-Arquivos de resposta (*.rsp*) são arquivos de texto que contêm as opções de linha de comando do *MSBuild.exe*. Cada opção pode estar em uma linha separada ou todas as opções podem estar em uma linha. As linhas de comentários **#** são pré-confrontadas com um símbolo. O **@** switch é usado para passar outro arquivo de resposta para *mSBuild.exe*.
+Arquivos de resposta (*.rsp*) são arquivos de texto que contêm as opções de linha de comando do *MSBuild.exe*. Cada opção pode estar em uma linha separada ou todas as opções podem estar em uma linha. As linhas de comentário são precedidas por um **#** símbolo. A **@** opção é usada para passar outro arquivo de resposta para *MSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 

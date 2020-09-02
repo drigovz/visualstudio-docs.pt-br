@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717591"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
-Esta interface representa uma coleção de objetos que implementam a interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+Essa interface representa uma coleção de objetos que implementam a interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugAdresses : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Essa interface é implementada pelo provedor de símbolos para fornecer conjuntos de objetos que implementam a interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Observe que esta não é uma enumeração COM padrão devido à presença do método [GetCount.](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)
+ Essa interface é implementada pelo provedor de símbolos para fornecer conjuntos de objetos que implementam a interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Observe que essa não é uma enumeração COM padrão devido à presença do método [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Esta interface é retornada por [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) e [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
+ Essa interface é retornada por [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) e [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
- Esta interface implementa os seguintes métodos.
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Essa interface implementa os métodos a seguir.
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera o próximo conjunto de objetos [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) da enumeração.|
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Salta um número especificado de entradas.|
+|[Próximo](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera o próximo conjunto de objetos [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) da enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignora um número especificado de entradas.|
 |[Redefinir](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Redefine a enumeração para a primeira entrada.|
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera uma cópia da enumeração atual.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera uma cópia da enumeração atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera o número de entradas na enumeração.|
 
 ## <a name="remarks"></a>Comentários
- Esta interface é normalmente usada pelo mecanismo de depuração para ajudar a determinar o endereço apropriado para dar ao avaliador de expressão.
+ Essa interface é normalmente usada pelo mecanismo de depuração para ajudar a determinar o endereço apropriado para dar ao avaliador de expressão.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

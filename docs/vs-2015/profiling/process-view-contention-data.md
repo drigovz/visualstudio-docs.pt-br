@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180228"
 ---
 # <a name="process-view---contention-data"></a>Exibição de processo – dados de contenção
@@ -27,7 +27,7 @@ A exibição Processo exibe dados de contenção para os processos e threads que
   
  A tabela a seguir explica os valores das colunas na tabela de exibição Processo.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Hora de início**|O número de milissegundos ou ciclos de processador desde o início da criação de perfil até o início do processo ou thread.|  
 |**Tempo bloqueado**|O tempo total durante o qual a execução das funções do processo ou thread foi bloqueada.|  
@@ -37,10 +37,10 @@ A exibição Processo exibe dados de contenção para os processos e threads que
 |**Hora de término**|O número de milissegundos ou ciclos de processador desde o início da criação de perfil até o fim do processo ou thread.|  
 |**ID**|O identificador do processo ou thread gerado pelo sistema.|  
 |**Tempo de vida**|O número de milissegundos ou ciclos de processador desde o início do processo ou thread até seu fim, thread ou o fim da criação de perfil.|  
-|**Tipo**|O tipo de linha, processo ou thread.<br /><br /> Somente em relatórios de linha de comando **VSReport**. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Tipo**|O tipo de linha, processo ou thread.<br /><br /> Somente em relatórios de linha de comando do **VSReport** . Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Nome**|O nome do processo ou thread.|  
 |**ID exclusiva**|Um identificador gerado pelo criador de perfil que é exclusivo ao processo ou thread.|  
   
-## <a name="see-also"></a>Veja também  
- [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
- [Exibição de Processo](../profiling/process-view.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Exibição de processo](../profiling/process-view.md)

@@ -1,5 +1,5 @@
 ---
-title: Comandos do Console do JavaScript | Microsoft Docs
+title: Comandos do console do JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,20 +19,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690592"
 ---
 # <a name="javascript-console-commands"></a>Comandos do Console JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
- Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). As informações neste tópico se aplica a aplicativos Windows Store, Windows Phone Store de aplicativos e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para obter informações sobre os comandos de console com suporte em aplicativos Cordova, consulte [depuração do seu aplicativo](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para saber mais sobre como usar o console nas ferramentas F12 do Internet Explorer, confira [este tópico](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). As informações neste tópico se aplicam a aplicativos da Windows Store, Windows Phone aplicativos da loja e aplicativos criados usando Ferramentas do Visual Studio para Apache Cordova. Para obter informações sobre comandos de console com suporte em aplicativos Cordova, consulte [depurar seu aplicativo](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para saber mais sobre como usar o console nas ferramentas F12 do Internet Explorer, confira [este tópico](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
- Se a janela do Console do JavaScript estiver fechada, você pode abri-lo enquanto você estiver depurando no Visual Studio escolhendo **Debug** > **Windows** > **JavaScript Console**.  
+ Se a janela do console do JavaScript estiver fechada, você poderá abri-la enquanto estiver depurando no Visual Studio escolhendo **depurar**  >  console do**Windows**  >  **JavaScript**.  
   
 > [!NOTE]
 > Se a janela não estiver disponível durante uma sessão de depuração, verifique se o tipo de depurador está definido para **Script** nas propriedades de depuração do projeto.  
@@ -59,9 +59,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |`groupEnd()`|Encerra o grupo atual.<br /><br /> Requisitos:<br /><br /> Visual Studio 2013|Consulte o exemplo do comando `group`.|  
 |`info(message)`|Envia `message` para a janela do console. A mensagem é prefaciada por um símbolo de informação.|`console.info("info message");`<br /><br /> Para obter mais exemplos, confira [Formatando a saída do console.log](#ConsoleLog) mais adiante neste tópico.|  
 |`log(message)`|Envia `message` para a janela do console.<br /><br /> Se você transmitir um objeto, este comando o enviará para a janela do console e o exibirá num visualizador de objeto. Você pode usar o visualizador para inspecionar propriedades na janela do console.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Sem suporte.|  
-|`profile(reportName)`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Sem suporte.|  
-|`profileEnd()`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Sem suporte.|  
+|`msIsIndependentlyComposed(element)`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Não há suporte.|  
+|`profile(reportName)`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Não há suporte.|  
+|`profileEnd()`|Usado em aplicativos da Web. Sem suporte em aplicativos da Store usando JavaScript.|Não há suporte.|  
 |`select(element)`|Seleciona o HTML especificado `element` no [Explorador do DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Inicia um temporizador que é identificado pelo parâmetro `name` opcional. Quando usado com `console.timeEnd`, calcula o tempo decorrido entre `time` e `timeEnd` e envia o resultado (medido em ms) ao console usando a cadeia de caracteres `name` como prefixo. Usado para habilitar a instrumentação de código do aplicativo para medir o desempenho.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Interrompe um temporizador que é identificado pelo parâmetro `name` opcional. Consulte o comando `time` do console.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
@@ -73,7 +73,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 |Comando|Descrição|Exemplo|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Retorna o elemento especificado para a janela do console. `$0` retorna o elemento selecionado atualmente no Explorador do DOM, `$1` retorna o elemento selecionado anteriormente no Explorador do DOM e assim por diante, até o quarto elemento selecionado anteriormente.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Retorna o elemento especificado para a janela do console. `$0` retorna o elemento selecionado atualmente no Explorador do DOM, `$1` retorna o elemento selecionado anteriormente no Explorador do DOM e assim por diante, até o quarto elemento selecionado anteriormente.|U$3|  
 |`$(id)`|Retorna um elemento por ID. Este é um comando de atalho para `document.getElementById(id)`, em que `id` é uma cadeia de caracteres que representa a ID do elemento.|`$("contenthost")`|  
 |`$$(selector)`|Retorna uma matriz de elementos que correspondem ao seletor especificado usando a sintaxe do seletor de CSS. Este é um comando de atalho para `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permite que você altere o contexto de avaliação da expressão, da janela de nível superior padrão da página para a janela do quadro especificado. Chamar `cd()` sem parâmetros reverte o contexto para a janela de nível superior.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -91,9 +91,9 @@ if (console && console.log) {
 ```  
   
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examinando objetos na janela Console do JavaScript  
- Você pode interagir com qualquer objeto que esteja no escopo usando a janela Console do JavaScript. Para inspecionar um objeto fora do escopo na janela do console, use `console.log`, `console.dir` ou outros comandos do seu código. Como alternativa, você pode interagir com o objeto da janela do console enquanto está no escopo, definindo um ponto de interrupção no seu código (**ponto de interrupção** > **Inserir ponto de interrupção**).  
+ Você pode interagir com qualquer objeto que esteja no escopo usando a janela Console do JavaScript. Para inspecionar um objeto fora do escopo na janela do console, use `console.log`, `console.dir` ou outros comandos do seu código. Como alternativa, você pode interagir com o objeto da janela do console enquanto ele estiver no escopo definindo um ponto de interrupção em seu código (ponto de interrupção de inserção do**ponto**de interrupção  >  **Insert Breakpoint**).  
   
-## <a name="ConsoleLog"></a> Formatando a saída do console.log  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formatando a saída do console.log  
  Se você transmitir diversos argumentos para `console.log`, o console os tratará como uma matriz e concatenará a saída.  
   
 ```javascript  
@@ -137,6 +137,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>Consulte Também  
+ [Início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

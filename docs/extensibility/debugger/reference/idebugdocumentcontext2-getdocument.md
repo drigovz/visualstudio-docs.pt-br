@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetDocument | Microsoft Docs
+title: 'IDebugDocumentContext2:: GetDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6bb93fe3efb4bc114cf583e8e2c066c337109d12
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731830"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
@@ -39,15 +39,15 @@ int GetDocument( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppDocument`\
-[fora] Retorna um objeto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa o documento que contém esse contexto do documento.
+fora Retorna um objeto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa o documento que contém este contexto de documento.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é para aqueles motores de depuração que fornecem documentos diretamente ao IDE. Caso contrário, este `E_NOTIMPL`método deve retornar .
+ Esse método é para os mecanismos de depuração que fornecem documentos diretamente para o IDE. Caso contrário, esse método deve retornar `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

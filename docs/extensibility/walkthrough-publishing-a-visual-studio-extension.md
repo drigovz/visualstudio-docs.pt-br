@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904732"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Walkthrough: publicar uma extensão do Visual Studio
@@ -68,7 +68,7 @@ Este artigo usa uma extensão VSPackage padrão, mas as etapas são válidas par
 
 6. Escolha o Publicador que você deseja usar para carregar sua extensão. Você pode alterar os Publicadores clicando nos nomes dos editores listados à esquerda. Clique em **nova extensão** e selecione **Visual Studio**.
 
-7. Em **1: carregar a extensão**, você pode optar por carregar um arquivo VSIX diretamente no Visual Studio Marketplace ou apenas adicionar um link para seu próprio site. Neste exemplo, a extensão, *TestPublish. vsix* , é carregada. Arraste e solte sua extensão ou use o link **clique** para procurar o arquivo. Localize sua extensão na pasta \bin\Release do projeto.  Clique em **Continue**.
+7. Em **1: carregar a extensão**, você pode optar por carregar um arquivo VSIX diretamente no Visual Studio Marketplace ou apenas adicionar um link para seu próprio site. Neste exemplo, a extensão, *TestPublish. vsix* , é carregada. Arraste e solte sua extensão ou use o link **clique** para procurar o arquivo. Localize sua extensão na pasta \bin\Release do projeto.  Clique em **Continuar**.
 
 8. Em **2: fornecer detalhes de extensão**, alguns campos são preenchidos automaticamente do arquivo *Source. Extension. vsixmanifest* de sua extensão. Encontre mais detalhes sobre cada um deles:
 
@@ -90,7 +90,7 @@ Este artigo usa uma extensão VSPackage padrão, mas as etapas são válidas par
 
     * * * A edição do Visual Studio com suporte permite que você escolha em quais edições do Visual Studio sua extensão trabalhará. Sua extensão é instalada somente nessas edições.
 
-    * **Tipo**. O tipo mais comum de extensões são as **ferramentas**.
+    * **Type**. O tipo mais comum de extensões são as **ferramentas**.
 
     * **Categorias**. Escolha até três que são a melhor opção para sua extensão.
 

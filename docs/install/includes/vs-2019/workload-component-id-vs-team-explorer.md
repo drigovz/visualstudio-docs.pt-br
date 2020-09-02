@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 276a99c6d9f2c1245137cc99d943fe63eb1a3711
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805657"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Editor principal do Visual Studio (incluído no Team Explorer para Visual Studio 2019)
@@ -27,7 +27,7 @@ ms.locfileid: "87805657"
 
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor do Visual Studio Core | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.CoreEditor | Editor do Visual Studio Core | 16.1.28811.260 | Obrigatório
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página inicial do Visual Studio para usuários C++ | 16.0.28315.86 | Opcional
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados

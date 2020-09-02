@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d967ec9cf406f7dae691c3f05eda514e0907c7e3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731605"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
-Representa uma posição em um arquivo de origem como um deslocamento de caracteres.
+Representa uma posição em um arquivo de origem como um deslocamento de caractere.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentPositionOffset2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Implementado pelo IDE e consumido por motores de depuração.
+ Implementado pelo IDE e consumido pelos mecanismos de depuração.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugDocumentPositionOffset2`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugDocumentPositionOffset2` .
 
 |Método|Descrição|
 |------------|-----------------|
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Recupera o intervalo para a posição atual do documento.|
 
 ## <a name="remarks"></a>Comentários
- Isso retorna as mesmas informações `char` que [getrange,](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) mas em deslocamentos desde o início do documento. Isso apresenta o documento como se existisse em um disco, ou seja, uma matriz unidimensional de caracteres, em vez das informações de linha e coluna que normalmente são devolvidas.
+ Isso retorna as mesmas informações que o [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) , mas em `char` deslocamentos do início do documento. Isso apresenta o documento como ele existiria em um disco, ou seja, uma matriz unidimensional de caracteres, em vez das informações de linha e coluna que normalmente são retornadas.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

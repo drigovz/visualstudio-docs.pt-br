@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24bcd0772af8954ae198400734d87df1dad45abc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468332"
 ---
 # <a name="idiaenumframedataget__newenum"></a>IDiaEnumFrameData::get__NewEnum
@@ -38,5 +38,5 @@ fora Retorna a `IUnknown` interface que representa a <xref:System.Runtime.Intero
 ## <a name="return-value"></a>Valor Retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

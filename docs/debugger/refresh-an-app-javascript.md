@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348152"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Atualizar um aplicativo UWP no Visual Studio
@@ -61,5 +61,5 @@ ms.locfileid: "85348152"
 
 8. Altere para o aplicativo. O aplicativo é recarregado e o HTML atualizado é usado para renderizar o aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

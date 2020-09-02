@@ -13,36 +13,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731321"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
-Esta interface representa um tipo de variável.
+Essa interface representa um tipo de variável.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDynamicField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por provedores de símbolos como uma classe base para qualquer tipo que possa ser determinada em tempo de execução. Isto é apenas para código gerenciado.
+ Essa interface é implementada por provedores de símbolos como uma classe base para qualquer tipo que possa ser determinado em tempo de execução. Isso é apenas para código gerenciado.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Esta interface representa uma classe base da qual interfaces mais especializadas podem ser derivadas.
+ Essa interface representa uma classe base da qual interfaces mais especializadas podem ser derivadas.
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
- Esta interface não fornece nenhum método diferente `IDebugField`daqueles herdados .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Esta interface não fornece nenhum método diferente daqueles herdados de `IDebugField` .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Interfaces de provedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

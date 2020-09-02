@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592406"
 ---
 # <a name="xml-document-validation"></a>Validação de documento XML
@@ -43,6 +43,6 @@ Ao editar um arquivo XSLT, o arquivo *XSLT. xsd* localizado no cache de esquema 
 ## <a name="xml-schema-xsd-files"></a>Arquivos de esquema XML (XSD)
 Ao editar um arquivo de esquema XML, o arquivo *xsdSchema. xsd* localizado no cache de esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Todos os erros de compilação também são mostrados com traços ondulados vermelhos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

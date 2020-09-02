@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662674"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Instruções passo a passo: suporte Test-First com a Funcionalidade Gerar a partir do Uso
@@ -42,7 +42,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../misc/generate-from-
 
      ![Caixa de diálogo novo projeto de teste](../ide/media/newproject-test.png "NewProject_Test") Caixa de diálogo novo projeto
 
-4. Clique em **OK** para fechar a caixa de diálogo **Novo Projeto**.
+4. Clique em **OK** para fechar a caixa de diálogo **Novo Projeto** .
 
 5. No seu projeto de classe, em **Gerenciador de Soluções**, clique com o botão direito do mouse na entrada **Referências** e clique em **Adicionar Referência**.
 
@@ -71,13 +71,13 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../misc/generate-from-
 
      ![Sublinhado de marca inteligente no Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![Sublinhado de marca&#35; inteligente em C](../ide/media/genclass-underline.png "GenClass_Underline") VisualizarC#
+     ![Sublinhado de marca inteligente em C&#35;](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. Pare o ponteiro do mouse sobre a marcação inteligente para ver uma mensagem de erro afirmando que nenhum tipo com nome `Automobile` foi definido. Clique na marcação inteligente ou pressione CTRL +. (CTRL + ponto) para abrir o menu de atalho Gerar do Uso, conforme mostrado nas ilustrações a seguir.
 
      ![Menu de contexto de marca inteligente no Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![Menu de contexto de marca inteligente&#35; em C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") VisualizarC#
+     ![Menu de contexto de marca inteligente em C&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. Agora você tem duas opções. Você pode clicar em **Gerar 'Classe Automobile'** para criar um novo arquivo no seu projeto de teste e preenchê-lo com uma classe vazia chamada `Automobile`. Essa é uma maneira rápida para criar uma nova classe em um novo arquivo que tenha os modificadores de acesso padrão no projeto atual. Você também pode clicar em **Gerar novo tipo** para abrir a caixa de diálogo **Gerar Novo Tipo**. Isso fornece opções que incluem colocar a classe em um arquivo existente e adicionar o arquivo em outro projeto.
 
@@ -106,7 +106,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../misc/generate-from-
 
      ![Gerar menu de contexto de propriedade no Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![Gerar menu de contexto de propriedade&#35; em C](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") VisualizarC#
+     ![Gerar menu de contexto de propriedade em C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>Para localizar o código-fonte
 
@@ -175,5 +175,5 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../misc/generate-from-
 
      ![Resultados de teste aprovados](../ide/media/testspassed.png "TestsPassed") Janela de Resultados de Teste
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Gerar de uso de código de](../misc/generate-from-usage.md) [gravação](../ide/writing-code-in-the-code-and-text-editor.md) [usando o IntelliSense](../ide/using-intellisense.md) [testar unidade seu código](../test/unit-test-your-code.md)

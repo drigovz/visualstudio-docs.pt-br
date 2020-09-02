@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586907"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Instruções passo a passo: criando, editando e mantendo um teste de IU codificado
@@ -41,7 +41,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 6. Escolha a pasta em que você salvará o projeto. Na caixa de texto **Local**, digite o nome da pasta.
 
-7. Selecione **OK**.
+7. Escolha **OK**.
 
      O WPF Designer for Visual Studio abre e exibe a MainWindow do projeto.
 
@@ -49,11 +49,11 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 9. Na seção **Todos os Controles do WPF**, arraste um controle **Button**, **CheckBox** e **ProgressBar** para a MainWindow na superfície de design.
 
-10. Selecione o controle Button. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
+10. Selecione o controle Button. No janela Propriedades, altere o valor da propriedade **Name** de \<No Name> para Button1. Em seguida, altere o valor da propriedade **Conteúdo** de Button para Start.
 
-11. Selecione o controle ProgressBar. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
+11. Selecione o controle ProgressBar. No janela Propriedades, altere o valor para o valor da propriedade **Name** de \<No Name> para progressBar1. Em seguida, altere o valor da propriedade **Máximo** de **100** para **10000**.
 
-12. Selecione o controle Checkbox. Na janela Propriedades, altere o valor da propriedade **Nome** de \<No Name> para checkBox1 e desmarque a propriedade **IsEnabled**.
+12. Selecione o controle Checkbox. No janela Propriedades, altere o valor da propriedade **Name** de \<No Name> para checkBox1 e limpe a propriedade **IsEnabled** .
 
      ![Aplicativo WPF simples](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,7 +118,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Criar e executar um teste de IU codificado para SimpleWPFApp
 
-1. Localize o aplicativo SimpleWPFApp criado anteriormente. Por padrão, o aplicativo fica localizado em C:\Users\\<nome de usuário\>\Documents\Visual Studio \<versão>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Localize o aplicativo SimpleWPFApp criado anteriormente. Por padrão, o aplicativo estará localizado em C:\Users \\<username \> \Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. Crie um atalho na área de trabalho para o aplicativo SimpleWPFApp. Clique com o botão direito do mouse em SimpleWPFApp.exe e escolha **Copiar**. Na área de trabalho, clique com o botão direito do mouse e escolha **Colar atalho**.
 
@@ -133,7 +133,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 5. No painel central, selecione o modelo **Projeto de Teste de Interface de Usuário Codificado**.
 
-6. Selecione **OK**.
+6. Escolha **OK**.
 
      No Gerenciador de Soluções, o novo projeto de teste de IU codificado chamado **CodedUITestProject1** é adicionado à solução.
 
@@ -219,7 +219,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
      O método de teste é removido do arquivo UIMap.uitest e não é mais exibido no painel Ações de interface do usuário. Para editar o arquivo de teste movido, abra o arquivo UIMap.cs no Gerenciador de Soluções.
 
-9. Na barra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de ferramentas, escolha **salvar**.
+9. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] barra de ferramentas, escolha **salvar**.
 
      As atualizações do método de teste são salvas no arquivo UIMap.Designer.
 

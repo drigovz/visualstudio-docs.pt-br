@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348438"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Como exibir documentos de script (JavaScript)
@@ -47,5 +47,5 @@ Para alguns tipos de aplicativos que geram dinamicamente páginas, é mais fáci
 
      O arquivo de script do lado do cliente é aberto em uma janela de origem.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

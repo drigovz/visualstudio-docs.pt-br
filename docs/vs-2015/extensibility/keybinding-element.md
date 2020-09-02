@@ -1,5 +1,5 @@
 ---
-title: Elemento KeyBinding | Microsoft Docs
+title: Elemento keybind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180322"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O elemento de associação de teclas Especifica atalhos de teclado para os comandos.  
+O elemento KeyBinding especifica atalhos de teclado para os comandos.  
   
- Comandos podem ter associações de teclas única e duplos associadas a eles. Um exemplo de uma associação de chave única é CTRL + S para o **salvar** comando. Associações de teclas duplas exigem duas combinações de teclas sucessivas para acionar um comando. Um exemplo de uma associação de chave dupla é CTRL + K, CTRL + K para definir um indicador.  
+ Os comandos podem ter associações de chave única e dupla associadas a eles. Um exemplo de uma única Associação de chave é CTRL + S para o comando **Save** . Associações de chave dupla exigem duas combinações de chave sucessivas para disparar um comando. Um exemplo de uma associação de tecla dupla é CTRL + K, CTRL + K para definir um indicador.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
@@ -38,15 +38,15 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário.|  
-|id|Necessário.|  
-|editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
-|CHAVE1|Necessário. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
-|Mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
-|Key2|Opcional. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
-|mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
-|Emulador|Opcional.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Obrigatórios.|  
+|id|Obrigatórios.|  
+|editor|Obrigatórios. O GUID do editor indica o contexto de edição para o qual esse atalho de teclado estará ativo. O valor do escopo de associação global é "guidVSStd97".|  
+|key1|Obrigatórios. Os valores válidos incluem todos os alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
+|mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separada por espaço.|  
+|key2|Opcional. Os valores válidos incluem todos os alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
+|mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separada por espaço.|  
+|emulador|Opcional.|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -59,7 +59,7 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Agrupa elementos de associação de teclas e os outros agrupamentos de associações de teclas.|  
+|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Agrupa os elementos de keybindling e outros agrupamentos de keybindings.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -72,6 +72,6 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Elemento KeyBindings](../extensibility/keybindings-element.md)   
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Elemento keybindings](../extensibility/keybindings-element.md)   
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738366"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versões de depuração das funções de alocação da pilha
@@ -41,12 +41,12 @@ A biblioteca em tempo de execução C contém versões especiais de depuração 
 
 - Armazenar o arquivo de origem e o número da linha em que a solicitação de alocação ocorreu.
 
-  Se você não quiser converter suas chamadas de `malloc` para `_malloc_dbg`, poderá obter as informações do arquivo de origem definindo [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), o que faz com que o pré-processador mapeie diretamente todas as chamadas para `malloc` para `_malloc_dbg` em vez de depender de um wrapper ao contrário `malloc`.
+  Se você não quiser converter suas `malloc` chamadas para `_malloc_dbg` , poderá obter as informações do arquivo de origem definindo [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), o que faz com que o pré-processador mapeie diretamente todas as chamadas para `malloc` em `_malloc_dbg` , em vez de depender de um wrapper `malloc` .
 
   Para controlar os tipos separados de alocações em blocos do cliente, você deverá chamar `_malloc_dbg` diretamente e definir o parâmetro `blockType` como `_CLIENT_BLOCK`.
 
-  Quando _DEBUG não está definido, as chamadas para `malloc` não são incomodadas, chamadas para `_malloc_dbg` são resolvidas para `malloc`, a definição de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) é ignorada e as informações do arquivo de origem pertencentes à solicitação de alocação não são fornecidas. Como `malloc` não tem um parâmetro de tipo de bloco, as solicitações para tipos de `_CLIENT_BLOCK` são tratadas como alocações padrão.
+  Quando _DEBUG não é definido, as chamadas para `malloc` não são incomodadas, chamadas para `_malloc_dbg` são resolvidas para `malloc` , a definição de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) é ignorada e as informações do arquivo de origem pertencentes à solicitação de alocação não são fornecidas. Como `malloc` não tem um parâmetro de tipo de bloco, as solicitações para tipos de `_CLIENT_BLOCK` são tratadas como alocações padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

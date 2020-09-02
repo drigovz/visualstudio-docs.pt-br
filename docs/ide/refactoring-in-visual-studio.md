@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507918"
 ---
 # <a name="refactor-code"></a>Refatorar o código
@@ -32,7 +32,7 @@ Diferentes operações de refatoração estão disponíveis para diferentes ling
 - Para saber mais sobre a refatoração de código C++, confira [Escrevendo e refatorando um código (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - O suporte à refatoração no F# é fornecido pelo [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), uma extensão do Visual Studio de terceiros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Ações Rápidas](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: Problemas de manifesto/de controle de versão de segurança na implantação do ClickOnce
+title: Problemas de segurança/controle de versão/manifesto na implantação do ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,79 +23,79 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745600"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 
-Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] segurança, controle de versão do aplicativo e manifesto sintaxe e semântica que pode causar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação não seja bem-sucedida.
+Há uma variedade de problemas com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] segurança, controle de versão de aplicativo e sintaxe e semântica de manifesto que podem fazer com que uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação não seja bem sucedido.
 
-## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce e controle de conta de usuário do Windows Vista
+## <a name="clickonce-and-windows-vista-user-account-control"></a>Controle de conta de usuário do ClickOnce e do Windows Vista
 
-No [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], por padrão, aplicativos executem como usuário padrão, mesmo se o usuário atual está conectado com uma conta que tenha permissões de administrador. Se um aplicativo deve executar uma ação que requer permissões de administrador, ele informa o sistema operacional, que, em seguida, solicita que o usuário insira suas credenciais de administrador. Esse recurso, que é chamado de controle de conta de usuário (UAC), impede que os aplicativos façam alterações que podem afetar todo o sistema operacional sem aprovação explícita de um usuário. Os aplicativos de Windows declaram que exigem essa elevação de permissão, especificando o `requestedExecutionLevel` de atributo no `trustInfo` seção do seu manifesto do aplicativo.
+No [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] , os aplicativos, por padrão, são executados como um usuário padrão, mesmo que o usuário atual esteja conectado com uma conta que tenha permissões de administrador. Se um aplicativo deve executar uma ação que exige permissões de administrador, ele informa ao sistema operacional que solicita ao usuário que insira suas credenciais de administrador. Esse recurso, que é chamado de UAC (controle de conta de usuário), impede que os aplicativos façam alterações que possam afetar todo o sistema operacional sem a aprovação explícita de um usuário. Os aplicativos do Windows declaram que exigem essa elevação de permissão, especificando o `requestedExecutionLevel` atributo na `trustInfo` seção do manifesto do aplicativo.
 
-Devido ao risco de expor os aplicativos a ataques de elevação de segurança, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos não é possível solicitar a elevação de permissões se UAC estiver ativado para o cliente. Qualquer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que tenta definir seus `requestedExecutionLevel` atributo `requireAdministrator` ou `highestAvailable` não instalará em [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
+Devido ao risco de expor aplicativos a ataques de elevação de segurança, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos não poderão solicitar elevação de permissão se o UAC estiver habilitado para o cliente. Qualquer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que tente definir seu `requestedExecutionLevel` atributo como `requireAdministrator` ou `highestAvailable` não será instalado no [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] .
 
-Em alguns casos, sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo pode tentar executar com permissões de administrador, devido à lógica de detecção do instalador em [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Nesse caso, você pode definir as `requestedExecutionLevel` atributo no manifesto do aplicativo para `asInvoker`. Isso fará com que o aplicativo seja executado sem a elevação. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] adiciona automaticamente esse atributo para todos os manifestos de aplicativo.
+Em alguns casos, seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo pode tentar executar com permissões de administrador devido à lógica de detecção do instalador em [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] . Nesse caso, você pode definir o `requestedExecutionLevel` atributo no manifesto do aplicativo como `asInvoker` . Isso fará com que o próprio aplicativo seja executado sem elevação. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] adiciona automaticamente esse atributo a todos os manifestos do aplicativo.
 
-Se você estiver desenvolvendo um aplicativo que requer permissões de administrador para o tempo de vida inteiro do aplicativo, você deve considerar a implantação do aplicativo usando a tecnologia Windows Installer (MSI) em vez disso. Para obter mais informações, consulte [Noções básicas do Windows Installer](../extensibility/internals/windows-installer-basics.md).
+Se você estiver desenvolvendo um aplicativo que exige permissões de administrador para o tempo de vida inteiro do aplicativo, considere implantar o aplicativo usando a tecnologia Windows Installer (MSI) em vez disso. Para obter mais informações, consulte [noções básicas do Windows Installer](../extensibility/internals/windows-installer-basics.md).
 
-## <a name="online-application-quotas-and-partial-trust-applications"></a>Cotas do aplicativo online e aplicativos de confiança parcial
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Cotas de aplicativos online e aplicativos de confiança parcial
 
-Se seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é executada online, em vez de por meio de uma instalação, ele deve se ajustar dentro da cota definida separadamente para aplicativos online. Além disso, um aplicativo de rede que é executado em confiança parcial, como com um conjunto restrito de permissões de segurança, não pode ser maior do que a metade do tamanho da cota.
+Se seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo for executado online em vez de por meio de uma instalação, ele deverá se ajustar dentro da cota reservada para aplicativos online. Além disso, um aplicativo de rede que é executado em confiança parcial, como com um conjunto restrito de permissões de segurança, não pode ser maior que metade do tamanho da cota.
 
-Para obter mais informações e instruções sobre como alterar a cota de inscrição online, consulte [visão geral de cache do ClickOnce](../deployment/clickonce-cache-overview.md).
+Para obter mais informações e instruções sobre como alterar a cota do aplicativo online, consulte [visão geral do cache do ClickOnce](../deployment/clickonce-cache-overview.md).
 
 ## <a name="versioning-issues"></a>Problemas de controle de versão
 
-Você pode enfrentar problemas se você atribuir nomes fortes para seu assembly e incrementa o número de versão do assembly para refletir uma atualização de aplicativo. Qualquer assembly compilado com uma referência a um assembly de nome forte deve em si ser recompilado ou o assembly será tentar referenciar a versão mais antiga. O assembly será tentar isso porque o assembly está usando o valor antigo da versão em sua solicitação de associação.
+Você poderá ter problemas se atribuir nomes fortes ao assembly e incrementar o número de versão do assembly para refletir uma atualização do aplicativo. Qualquer assembly compilado com uma referência a um assembly de nome forte deve ser recompilado, ou o assembly tentará referenciar a versão mais antiga. O assembly tentará isso porque o assembly está usando o valor da versão antiga em sua solicitação de associação.
 
-Por exemplo, digamos que você tenha um assembly de nome forte em seu próprio projeto com a versão 1.0.0.0. Depois de compilar o assembly, adicioná-lo como uma referência para o projeto que contém o aplicativo principal. Se você atualiza o assembly, incrementa a versão para 1.0.0.1 e tenta implantá-lo sem também recompilar o aplicativo, o aplicativo não poderá carregar o assembly em tempo de execução.
+Por exemplo, digamos que você tenha um assembly de nome forte em seu próprio projeto com a versão 1.0.0.0. Depois de compilar o assembly, você o adiciona como uma referência ao projeto que contém seu aplicativo principal. Se você atualizar o assembly, incrementar a versão para 1.0.0.1 e tentar implantá-lo sem também recompilar o aplicativo, o aplicativo não será capaz de carregar o assembly em tempo de execução.
 
-Esse erro pode ocorrer somente se você estiver editando sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos manualmente; esse erro não deverá ocorrer se você gerar sua implantação usando o Visual Studio.
+Esse erro só poderá ocorrer se você estiver editando seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos manualmente; você não terá esse erro se você gerar a implantação usando o Visual Studio.
 
-## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Especifique os assemblies do .NET Framework individuais no manifesto do
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Especificar assemblies de .NET Framework individuais no manifesto
 
-O aplicativo falhará ao carregar se você tiver editado manualmente um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação para fazer referência a uma versão mais antiga de um assembly do .NET Framework. Por exemplo, se você adicionou uma referência ao assembly para uma versão do .NET Framework anteriores à versão especificada no manifesto do System.Net, seria ocorrer um erro. Em geral, você não deve tentar especificar referências aos assemblies do .NET Framework individuais, como a versão do .NET Framework em relação ao qual seu aplicativo é executado é especificada como uma dependência no manifesto do aplicativo.
+Seu aplicativo não será carregado se você tiver editado manualmente uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação para fazer referência a uma versão mais antiga de um assembly de .NET Framework. Por exemplo, se você adicionou uma referência ao assembly System.Net para uma versão do .NET Framework antes da versão especificada no manifesto, ocorrerá um erro. Em geral, você não deve tentar especificar referências a assemblies de .NET Framework individuais, pois a versão do .NET Framework em que seu aplicativo é executado é especificada como uma dependência no manifesto do aplicativo.
 
 ## <a name="manifest-parsing-issues"></a>Problemas de análise de manifesto
 
-Os arquivos de manifesto que são usados pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] são arquivos XML, e eles devem ser bem formado e é válido: eles devem obedecem às regras de sintaxe XML e usar apenas os elementos e atributos definidos no esquema XML relevante.
+Os arquivos de manifesto usados pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] são arquivos XML e devem ser bem formados e válidos: eles devem obedecer às regras de sintaxe XML e usar apenas elementos e atributos definidos no esquema XML relevante.
 
-Algo que pode causar problemas em um arquivo de manifesto é selecionar um nome para seu aplicativo que contém um caractere especial, como uma marca de aspas simples ou dupla. O nome do aplicativo faz parte do seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identidade. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Atualmente, não analisa as identidades que contenham caracteres especiais. Se seu aplicativo não conseguir ativar, certifique-se de que você estiver usando apenas alfabéticos e numéricos para o nome e tenta implantá-lo novamente.
+Algo que pode causar problemas em um arquivo de manifesto está selecionando um nome para seu aplicativo que contém um caractere especial, como uma aspa simples ou dupla. O nome do aplicativo faz parte de sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identidade. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Atualmente, o não analisa as identidades que contêm caracteres especiais. Se o aplicativo não for ativado, verifique se você está usando apenas caracteres alfabéticos e numéricos para o nome e tente implantá-lo novamente.
 
-Se você tiver editado manualmente seus manifestos de implantação ou de aplicativo, você pode ter acidentalmente corrompida-los. Manifesto corrompido impedirá que um correto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalação. Você pode depurar esses erros em tempo de execução clicando **detalhes** na **ClickOnce erro** caixa de diálogo e ler a mensagem de erro no log. O log listará uma das seguintes mensagens:
+Se você editou manualmente seus manifestos de implantação ou de aplicativo, você pode tê-los corrompidos involuntariamente. O manifesto corrompido impedirá uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalação correta. Você pode depurar esses erros em tempo de execução clicando em **detalhes** na caixa de diálogo **erro do ClickOnce** e lendo a mensagem de erro no log. O log listará uma das seguintes mensagens:
 
-- Uma descrição do erro de sintaxe e o número de linha e o caractere posição onde ocorreu o erro.
+- Uma descrição do erro de sintaxe e o número da linha e a posição do caractere em que o erro ocorreu.
 
-- O nome de um elemento ou atributo usado em violação do esquema do manifesto. Se você tiver adicionado o XML manualmente para seus manifestos, você precisará comparar suas adições para os esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).
+- O nome de um elemento ou atributo usado na violação do esquema do manifesto. Se você adicionou o XML manualmente aos seus manifestos, precisará comparar suas adições aos esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e manifesto do [aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).
 
-- Um conflito de ID. Referências de dependência nos manifestos de implantação e o aplicativo devem ser exclusivas em ambos os seus `name` e `publicKeyToken` atributos. Se corresponderem a ambos os atributos entre dois elementos dentro de um manifesto, análise de manifesto não terá êxito.
+- Um conflito de ID. Referências de dependência em manifestos de implantação e de aplicativo devem ser exclusivas em seus `name` `publicKeyToken` atributos e. Se ambos os atributos corresponderem entre dois elementos dentro de um manifesto, a análise do manifesto não terá sucesso.
 
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauções ao alterar manualmente os manifestos ou aplicativos
 
-Quando você atualiza um manifesto de aplicativo, você deve reassinar o manifesto do aplicativo e o manifesto de implantação. O manifesto de implantação contém uma referência ao manifesto do aplicativo que inclui o hash do arquivo e sua assinatura digital.
+Ao atualizar um manifesto de aplicativo, você deve assinar novamente o manifesto do aplicativo e o manifesto de implantação. O manifesto de implantação contém uma referência ao manifesto do aplicativo que inclui o hash do arquivo e sua assinatura digital.
 
 ### <a name="precautions-with-deployment-provider-usage"></a>Precauções com o uso do provedor de implantação
 
-O [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o manifesto de implantação tem um `deploymentProvider` propriedade que aponta para o caminho completo do local de onde o aplicativo deve ser instalado e atendido:
+O [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação tem uma `deploymentProvider` propriedade que aponta para o caminho completo do local de onde o aplicativo deve ser instalado e atendido:
 
 ```xml
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-Esse caminho é definido quando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cria o aplicativo e é obrigatório para aplicativos instalados. O caminho aponta para o local padrão onde o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalador instalará o aplicativo e procura por atualizações. Se você usar o **xcopy** comando para copiar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em um local diferente, mas não altere a `deploymentProvider` propriedade, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ainda farão referência volta para o local original quando ele tenta baixar o aplicativo.
+Esse caminho é definido quando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o cria o aplicativo e é obrigatório para aplicativos instalados. O caminho aponta para o local padrão onde o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalador instalará o aplicativo e procurará por atualizações. Se você usar o comando **xcopy** para copiar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo para um local diferente, mas não alterar a `deploymentProvider` propriedade, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ainda fará referência ao local original quando tentar baixar o aplicativo.
 
-Se você deseja mover ou copiar um aplicativo, você também deverá atualizar o `deploymentProvider` caminho, para que o cliente é instalado, na verdade, de um novo local. Atualizar esse caminho é principalmente uma preocupação, se você tiver instalado os aplicativos. Para aplicativos online sempre são iniciados por meio da URL original, definindo o `deploymentProvider` é opcional. Se `deploymentProvider` for definido, isso será respeitado; caso contrário, a URL usada para iniciar o aplicativo será usada como a URL base para baixar os arquivos de aplicativo.
+Se você quiser mover ou copiar um aplicativo, também deverá atualizar o `deploymentProvider` caminho, para que o cliente realmente instale a partir do novo local. A atualização desse caminho é principalmente uma preocupação se você tiver instalado aplicativos. Para aplicativos online que são sempre iniciados por meio da URL original, a definição de `deploymentProvider` é opcional. Se `deploymentProvider` for definido, ele será respeitado; caso contrário, a URL usada para iniciar o aplicativo será usada como a URL base para baixar os arquivos do aplicativo.
 
 > [!NOTE]
-> Sempre que você atualiza o manifesto você deve também assiná-lo novamente.
+> Sempre que atualizar o manifesto, você também deverá reconectá-lo novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-[Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-[aplicativos ClickOnce Secure](../deployment/securing-clickonce-applications.md)
-[escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Solucionar problemas de implantações](../deployment/troubleshooting-clickonce-deployments.md) 
+ do ClickOnce [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md) 
+ [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

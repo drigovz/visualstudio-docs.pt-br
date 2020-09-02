@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586971"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testando os aplicativos do SharePoint 2010 com testes de interface do usuário codificada
@@ -53,14 +53,14 @@ Incluir testes de IU codificados em um aplicativo do SharePoint permite verifica
 > [!WARNING]
 > Inserir texto em uma célula do Excel, seguida por uma ação de teclas de direção, não registrará corretamente. Use o mouse para selecionar células.
 
- Se você estiver gravando ações em uma célula vazia, você deverá modificar o código clicando duas vezes na célula e, em seguida, executando uma operação de definição de texto. Isso é necessário porque um clique na célula, seguido por qualquer ação de teclado, ativa o `textarea` dentro da célula. Registrar um `setvalue` na célula vazia pesquisaria o `editbox` que não está presente até que a célula tenha sido clicada. Por exemplo: 
+ Se você estiver gravando ações em uma célula vazia, você deverá modificar o código clicando duas vezes na célula e, em seguida, executando uma operação de definição de texto. Isso é necessário porque um clique na célula, seguido por qualquer ação de teclado, ativa o `textarea` dentro da célula. Registrar um `setvalue` na célula vazia pesquisaria o `editbox` que não está presente até que a célula tenha sido clicada. Por exemplo:
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Se você estiver gravando ações em uma célula não vazia, a gravação ficará um pouco mais complicada, porque, no momento em que você adicionar texto a uma célula, um novo controle \<div > é adicionado como um filho da célula. O novo controle \<div > contém o texto que você acabou de inserir. O gravador precisa registrar ações no novo controle \<div >; no entanto, ele não pode porque o novo controle \<div > não existe até depois que o teste for inserido. Você deve fazer as seguintes alterações de código manualmente para corrigir esse problema.
+ Se você estiver gravando ações em uma célula não vazia, a gravação será um pouco mais complicada, porque o momento em que você adiciona texto a uma célula, um novo \<div> controle é adicionado como um filho da célula. O novo \<div> controle contém o texto que você acabou de inserir. O gravador precisa registrar ações no novo \<div> controle; no entanto, ele não pode porque o novo \<div> controle não existe até que o teste seja inserido. Você deve fazer as seguintes alterações de código manualmente para corrigir esse problema.
 
 1. Vá para a inicialização de célula e realize as propriedades primárias `RowIndex` e `ColumnIndex`:
 
@@ -137,7 +137,7 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Índice de conteúdo para o teste de IU codificado](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Orientação
+### <a name="guidance"></a>Diretrizes
  [Teste de entrega contínua com o Visual Studio 2012 – Capítulo 5: Automatizando testes do sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Fórum

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254448"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Ações personalizadas nas regiões de formulário do Outlook
@@ -28,7 +28,7 @@ ms.locfileid: "71254448"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Adicionar ações personalizadas a uma região de formulário
- Para adicionar uma ação personalizada a uma região de formulário, use a caixa de diálogo **ações personalizadas** . Você pode abrir a caixa de diálogo **ações personalizadas** selecionando a região de formulário em **Gerenciador de soluções**, expandindo o nó **manifesto** na **janela Propriedades**, selecionando a propriedade **CustomActions** e clicando em botão de reticências (![ASP.NET Mobile Designer elipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
+ Para adicionar uma ação personalizada a uma região de formulário, use a caixa de diálogo **ações personalizadas** . Você pode abrir a caixa de diálogo **ações personalizadas** selecionando a região de formulário em **Gerenciador de soluções**, expandindo o nó **manifesto** na **janela Propriedades**, selecionando a propriedade **CustomActions** e clicando no botão de reticências (![elipse do designer móvel ASP.net](../sharepoint/media/mwellipsis.gif "Elipse do designer móvel ASP.NET")).
 
  Você pode usar a caixa de diálogo **ações personalizadas** para especificar um *formulário de destino*. Um formulário de destino é o formulário que aparece quando o usuário executa a ação personalizada.
 
@@ -40,7 +40,7 @@ ms.locfileid: "71254448"
 |--------------|-----------------|
 |**AddressLike**|Especifica como o formulário de destino será endereçado.|
 |**Corpo**|Especifica como o corpo do item original é acrescentado ao formulário de destino.|
-|**Habilitado**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
+|**Habilitada**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
 |**Método**|Especifica o tipo de resposta disponível quando a ação personalizada é executada. A ação personalizada pode enviar o formulário, abrir o formulário ou avisar o usuário se deseja enviar ou abrir o formulário.|
 |**Nome**|Especifica o nome interno que você pode usar para fazer referência a essa ação personalizada no código.|
 |**ShowOnRibbon**|Indica se a ação personalizada deve ser exibida na faixa de faixas do item original.|
@@ -51,7 +51,7 @@ ms.locfileid: "71254448"
 ## <a name="customize-a-custom-action-at-run-time"></a>Personalizar uma ação personalizada em tempo de execução
  Você também pode adicionar o comportamento à ação personalizada usando código. Por exemplo, você pode adicionar código que usa os nomes de destinatários de email e adiciona esses nomes como participantes em um novo item de compromisso. Para fazer isso, manipule o evento [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) do [objeto MailItem](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
-- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Associar uma região de formulário a uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

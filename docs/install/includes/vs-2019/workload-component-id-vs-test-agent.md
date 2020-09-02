@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 085a2015e0338581a0eb80cb38655ecb654f27d3
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805659"
 ---
 ## <a name="test-agent"></a>Test Agent
@@ -27,7 +27,7 @@ ms.locfileid: "87805659"
 
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Principais recursos do Test Agent | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Principais recursos do Test Agent | 16.0.28315.86 | Obrigatório
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 

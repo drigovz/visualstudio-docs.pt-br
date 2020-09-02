@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2:GetSize | Microsoft Docs
+title: 'IDebugDocumentText2:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731583"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
@@ -41,21 +41,21 @@ int GetSize( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pcNumLines`\
-[fora] Retorna o número de linhas de texto.
+fora Retorna o número de linhas de texto.
 
 `pcNumChars`\
-[fora] Retorna o número de caracteres do texto.
+fora Retorna o número de caracteres de texto.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
 
  [Somente C++] Se um valor específico não for desejado, passe um NULL para o parâmetro.
 
- [C# apenas] Ambos os parâmetros devem ser especificados.
+ [Somente C#] Ambos os parâmetros devem ser especificados.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

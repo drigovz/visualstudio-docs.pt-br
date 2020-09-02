@@ -1,5 +1,5 @@
 ---
-title: Elemento KeyBindings | Microsoft Docs
+title: Elemento keybindings | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180318"
 ---
 # <a name="keybindings-element"></a>Elemento KeyBindings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O elemento KeyBindings agrupa elementos de associação de teclas e os outros agrupamentos de associações de teclas.  
+O elemento keybindings agrupa elementos de KeyBinding e outros agrupamentos de keybindings.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <KeyBindings>  
@@ -41,14 +41,14 @@ O elemento KeyBindings agrupa elementos de associação de teclas e os outros ag
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica os atalhos de teclado para os comandos.|  
-|[Associações de teclas](../extensibility/keybindings-element.md)|Agrupa elementos de associação de teclas e os outros agrupamentos de associações de teclas.|  
+|[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica atalhos de teclado para os comandos.|  
+|[KeyBindings](../extensibility/keybindings-element.md)|Agrupa os elementos de keybindling e outros agrupamentos de keybindings.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -67,6 +67,6 @@ O elemento KeyBindings agrupa elementos de associação de teclas e os outros ag
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Elemento keybind](../extensibility/keybinding-element.md)   
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

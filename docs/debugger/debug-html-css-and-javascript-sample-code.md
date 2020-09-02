@@ -15,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745541"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar o código de exemplo HTML e CSS
 
 O código neste tópico é o arquivo de exemplo para [início rápido: debug HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.
 
-## <a name="sample-code"></a>Código de exemplo
-O código HTML a seguir é usado na tag \<body> no Início Rápido.
+## <a name="sample-code"></a>Exemplo de código
+O código HTML a seguir é usado na \<body> marca no guia de início rápido.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -101,5 +101,5 @@ O exemplo de código a seguir mostra o código JavaScript completo no default.js
 })();
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

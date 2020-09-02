@@ -13,45 +13,45 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccbe76d800be035bc39caa477955b91bf21c074e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195679"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Usado por um mecanismo de depuração (DE) para iniciar e encerrar programas.  
+Usado por um mecanismo DE depuração (DE) para iniciar e encerrar programas.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugEngineLaunch2 : IDebugEngine2  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Essa interface é implementada por uma personalizado DE se ele tiver requisitos especiais para iniciar um processo que não pode ser manipulado inteiramente por uma porta personalizada. Isso normalmente é o caso quando o DE faz parte de um interpretador e o processo que está sendo depurado é um script: o interpretador precisa ser iniciado pela primeira vez e, em seguida, o script é carregado e iniciado. Uma porta pode iniciar o interpretador, mas o script pode exigir tratamento especial (que é onde o DE tem uma função). Essa interface é implementada somente se houver requisitos exclusivos para iniciar um programa que uma porta personalizada não pode manipular.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Essa interface é implementada por um personalizado DE se tiver requisitos especiais para iniciar um processo que não pode ser manipulado inteiramente por uma porta personalizada. Normalmente, esse é o caso quando o DE faz parte de um intérprete e o processo que está sendo depurado é um script: o intérprete precisa ser iniciado primeiro e, em seguida, o script é carregado e iniciado. Uma porta pode iniciar o intérprete, mas o script pode exigir tratamento especial (que é onde o DE tem uma função). Essa interface é implementada somente se houver requisitos exclusivos para iniciar um programa que uma porta personalizada não possa manipular.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface é chamada pelo Gerenciador de depuração de sessão (SDM) se o SDM pode obter essa interface do [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (usando QueryInterface) de interface. Se essa interface pode ser obtida, o SDM sabe que o DE tem requisitos especiais e chama essa interface para iniciar o programa em vez de ter a porta iniciá-lo.  
+ Essa interface é chamada pelo SDM (Gerenciador de depuração de sessão) se o SDM puder obter essa interface da interface [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (usando QueryInterface). Se essa interface puder ser obtida, o SDM saberá que o DE tem requisitos especiais e chamará essa interface para iniciar o programa, em vez de fazer com que a porta o inicialize.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDebugEngineLaunch2`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDebugEngineLaunch2` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia um processo por meio DE.|  
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia um processo por meio do de.|  
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Retoma a execução do processo.|  
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Determina se um processo pode ser encerrado.|  
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Finaliza um processo.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Msdbg.h  
+ Cabeçalho: Msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

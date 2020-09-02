@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82167447"
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 
-A tarefa AL encapsula *al. exe*, uma ferramenta que é distribuída com o SDK (Software Development Kit) do Windows. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o *AL.exe*, confira [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
+A tarefa AL encapsula *AL.exe*, uma ferramenta que é distribuída com o SDK (Software Development Kit) do Windows. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o *AL.exe*, confira [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -95,5 +95,5 @@ A tarefa AL encapsula *al. exe*, uma ferramenta que é distribuída com o SDK (S
 
 ## <a name="see-also"></a>Confira também
 
-* [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+* [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 * [Tarefas](../msbuild/msbuild-tasks.md)

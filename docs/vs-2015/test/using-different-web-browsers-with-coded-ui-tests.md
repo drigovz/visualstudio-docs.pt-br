@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586339"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
@@ -109,7 +109,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
 - ![Prerequsite](../test/media/prereq.png "Pré-requisito") A automatização de ações de interface do usuário baseadas em navegador específicas, como maximizar, minimizar e restaurar, não é suportada.
 
-  **Dicas**
+  **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Você pode configurar a saída para incluir capturas de tela nos logs de interface do usuário codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:
 
@@ -138,7 +138,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Orientação
+### <a name="guidance"></a>Diretrizes
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
  [Teste para entrega contínua com o Visual Studio 2012 – capítulo 5: automatizando testes do sistema](https://msdn.microsoft.com/library/jj159335.aspx)

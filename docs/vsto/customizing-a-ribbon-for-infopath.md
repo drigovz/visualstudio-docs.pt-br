@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255514"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar uma faixa de faixas para o InfoPath
-  Ao personalizar a faixa de faixas no Microsoft Office InfoPath, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]pode exibir a faixa de opções nos três seguintes tipos de janelas de aplicativo do InfoPath:
+  Ao personalizar a faixa de faixas no Microsoft Office InfoPath, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções nos três seguintes tipos de janelas de aplicativo do InfoPath:
 
 - Janelas que exibem um modelo de formulário que é aberto no modo de design.
 
@@ -45,23 +45,23 @@ ms.locfileid: "71255514"
 
 |ID da faixa de Ribbon|Janela na qual a faixa de faixas será exibida quando você executar o projeto|
 |---------------|---------------------------------------------------------------------|
-|**Microsoft.InfoPath.Designer**|Janelas que exibem um modelo de formulário que é aberto no modo de design.|
-|**Microsoft.InfoPath.Editor**|Janelas que exibem um formulário baseado em um modelo de formulário.|
-|**Microsoft.InfoPath.PrintPreview**|A janela de visualização de impressão.|
+|**Microsoft. InfoPath. designer**|Janelas que exibem um modelo de formulário que é aberto no modo de design.|
+|**Microsoft. InfoPath. editor**|Janelas que exibem um formulário baseado em um modelo de formulário.|
+|**Microsoft. InfoPath. reversão prévia**|A janela de visualização de impressão.|
 
- Você pode adicionar mais de uma faixa de faixas a um projeto. Se mais de uma faixa de forma compartilhar uma ID da faixa `CreateRibbonExtensibilityObject` de uma, `ThisAddin` substitua o método na classe do seu projeto para especificar qual faixa de forma exibir em tempo de execução. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
+ Você pode adicionar mais de uma faixa de faixas a um projeto. Se mais de uma faixa de forma compartilhar uma ID da faixa de uma, substitua o `CreateRibbonExtensibilityObject` método na `ThisAddin` classe do seu projeto para especificar qual faixa de forma exibir em tempo de execução. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Especificar o tipo de faixa de tipos usando o XML da faixa de faixas
- Se você estiver usando o item da faixa de seleção **(XML)** , verifique o valor do <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> parâmetro *RibbonId* no método e retorne a faixa de forma apropriada.
+ Se você estiver usando o item da faixa de seleção **(XML)** , verifique o valor do parâmetro *RibbonId* no <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método e retorne a faixa de forma apropriada.
 
  O <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método é gerado automaticamente pelo Visual Studio no arquivo de código da faixa de Ribbon. O parâmetro *RibbonId* é uma cadeia de caracteres que identifica o tipo de janela do InfoPath que está sendo aberto.
 
- O exemplo de código a seguir demonstra como exibir uma faixa de opções personalizada somente em uma janela que exibe um modelo de formulário no modo de design. A faixa de visualização a ser exibida é `GetResourceText()` especificada no método, que é gerado na classe Ribbon. Para obter mais informações sobre a classe Ribbon, consulte [Ribbon XML](../vsto/ribbon-xml.md).
+ O exemplo de código a seguir demonstra como exibir uma faixa de opções personalizada somente em uma janela que exibe um modelo de formulário no modo de design. A faixa de visualização a ser exibida é especificada no `GetResourceText()` método, que é gerado na classe Ribbon. Para obter mais informações sobre a classe Ribbon, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer de faixa de das](../vsto/ribbon-designer.md)
