@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9bfa6c776e3a2137f751d4253feb0239811d95a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654698"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Como conectar a dados em um serviço
@@ -56,7 +56,7 @@ Conecte seu aplicativo aos dados retornados de um serviço executando o [Assiste
 
 5. Clique em **OK** para adicionar uma referência de serviço ao seu projeto.
 
-6. Clique em **Finalizar**.
+6. Clique em **Concluir**.
 
      A fonte de dados é adicionada à janela **fontes de dados** .
 
@@ -66,5 +66,5 @@ Conecte seu aplicativo aos dados retornados de um serviço executando o [Assiste
 
 - Selecione um item na janela **fontes de dados** e arraste-o para um formulário para criar controles vinculados. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles WPF a um WCF Data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Windows Communication Foundation Services e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

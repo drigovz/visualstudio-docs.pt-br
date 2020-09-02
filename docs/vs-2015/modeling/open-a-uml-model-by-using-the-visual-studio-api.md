@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668501"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Abrir um modelo UML usando a API do Visual Studio
@@ -29,12 +29,12 @@ Você também pode abrir modelos e diagramas na interface do usuário do Visual 
 
 - Você pode abrir um modelo no modo somente leitura. Para obter mais informações, consulte [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Abrindo modelos e diagramas no Visual Studio
- Para abrir um modelo na interface do usuário, use a API padrão do Visual Studio `EnvDTE.DTE`. Há duas conversões úteis que você pode executar na modelagem de itens de projeto:
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Abrindo modelos e diagramas no Visual Studio
+ Para abrir um modelo na interface do usuário, use a API padrão do Visual Studio `EnvDTE.DTE` . Há duas conversões úteis que você pode executar na modelagem de itens de projeto:
 
-- `EnvDTE.Project` pode ser convertido de e para `IModelingProject`, se o projeto for um projeto de modelagem, e se o projeto for carregado no AppDomain atual.
+- `EnvDTE.Project` pode ser convertido em e de `IModelingProject` , se o projeto for um projeto de modelagem, e se o projeto for carregado no AppDomain atual.
 
-- `EnvDTE.ProjectItem` pode ser convertida de e para `IDiagramContext`, se o item for um diagrama UML.
+- `EnvDTE.ProjectItem` pode ser convertido em e de `IDiagramContext` , se o item for um diagrama UML.
 
   Para o exemplo a seguir, o projeto deve importar estas referências:
 
@@ -115,5 +115,5 @@ foreach (ProjectItem item in project.ProjectItems)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

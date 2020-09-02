@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651832"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como gerenciar configurações de build com as configurações do Visual Basic Developer aplicadas
@@ -34,7 +34,7 @@ Por padrão, todas as opções avançadas de configuração de build ficam ocult
 
 #### <a name="to-enable-advanced-build-configurations"></a>Para habilitar configurações de build avançadas
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Expanda **Projetos e Soluções** e clique em **Geral**.
 
@@ -47,5 +47,5 @@ Por padrão, todas as opções avançadas de configuração de build ficam ocult
 
      No menu **Build**, **Configuration Manager** agora está disponível e as listas **Configuração** e **Plataforma** estão visíveis no Designer de Projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Compreendendo as configurações de compilação](../ide/understanding-build-configurations.md) [compilando e](../ide/compiling-and-building-in-visual-studio.md) compilando

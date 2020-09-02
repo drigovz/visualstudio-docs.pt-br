@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817067"
 ---
 # <a name="expected-"></a>'}' esperado
@@ -28,6 +28,6 @@ Você não incluiu a chave direita que marca o final do corpo da função, loop,
   
 - Adicione a chave direita que marca o final da função, loop, bloco ou inicializador de objeto.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de função](../../javascript/reference/function-object-javascript.md)   
  [Controlar o fluxo de programas](../../javascript/controlling-program-flow-javascript.md)

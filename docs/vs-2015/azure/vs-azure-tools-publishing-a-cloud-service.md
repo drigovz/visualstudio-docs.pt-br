@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302556"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315038"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicação de um serviço de nuvem usando o Visual Studio
 
@@ -73,7 +73,7 @@ Se a infraestrutura de back-end do aplicativo for estável, mas as funções Web
 
 - **Apenas funções web podem ser atualizadas:** funções de trabalho não podem ser atualizadas. Além disso, não é possível atualizar o `RoleEntryPoint` em `web role.cs`.
 
-- **Só pode suportar uma única instância de uma função web**: Você não pode ter várias instâncias de qualquer função web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
+- **O só pode dar suporte a uma única instância de uma função Web**: você não pode ter várias instâncias de nenhuma função Web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
 
 - **Habilitar conexões de área de trabalho remota:** esse requisito permite que a Implantação da Web use o usuário e a senha para se conectar à máquina virtual para implantar as alterações no servidor que executa o IIS (Serviços de Informações da Internet). Além disso, talvez seja necessário conectar-se à máquina virtual para adicionar um certificado confiável ao IIS nessa máquina virtual. (Esse certificado garante que a conexão remota ao IIS usada pela Implantação da Web é segura).
 
@@ -122,7 +122,7 @@ O seguinte procedimento assume que você está usando o assistente **Publicar o 
 
    a. Para se conectar à máquina virtual que está executando a função web, selecione a instância da função web em **Cloud Explorer** ou **Gerenciador de Servidores** e escolha o comando **Conectar-se usando a Área de Trabalho Remota**. Para obter etapas detalhadas de como se conectar à máquina virtual, consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). O navegador solicitará que você baixe um arquivo `.rdp`.
 
-   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar**e, em seguida, escolha HTTPS na lista de parada **Tipo.** Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
+   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar**e, em seguida, escolha HTTPS na lista suspensa **tipo** . Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
 
       > [!NOTE]
       > Se você adicionar um certificado SSL confiável, o triângulo amarelo de aviso não aparecerá mais no **Assistente de Publicação**.
@@ -138,7 +138,7 @@ Talvez seja necessário incluir arquivos específicos em seu pacote de serviço 
    c. Escolha a referência que você deseja adicionar e, em seguida, escolha o botão **OK**. A referência é adicionada à lista na pasta **Referências**.
    d. Abra o menu de atalho para o assembly que você adicionou e escolha **Propriedades**. A janela **Propriedades** é exibida.
 
-      Para incluir este conjunto no pacote de serviço, na **lista Copiar local** escolha **True**.
+      Para incluir esse assembly no pacote de serviço, na **lista Copiar local** , escolha **verdadeiro**.
 1. No **Gerenciador de soluções** abra o nó do projeto para o projeto que estiver faltando no assembly referenciado.
 
 1. Para adicionar um assembly ao projeto, abra o menu de atalho para a pasta **Referências** e escolha **Adicionar Referência**. A caixa de diálogo **Adicionar Referência** é exibida.

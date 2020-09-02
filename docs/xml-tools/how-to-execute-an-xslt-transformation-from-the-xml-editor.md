@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817184"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como executar uma transformação XSLT do editor de XML
@@ -29,9 +29,9 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
 
 2. Associar uma folha de estilos XSLT com o documento XML.
 
-    - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha ao prólogo do documento:`<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha ao prólogo do documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       -ou-
+       - ou -
 
     - Adicione a folha de estilos XSLT usando a janela **Propriedades** . Com o arquivo XML aberto no editor, clique com o botão direito do mouse em qualquer lugar no editor e escolha **Propriedades**. Na janela **Propriedades** , clique no campo **folha de estilos** e escolha o botão procurar (...). Selecione a folha de estilos XSLT e, em seguida, escolha **abrir**.
 
@@ -59,6 +59,6 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
 
 Você pode especificar um nome de arquivo de saída para arquivos XML e XSL. Abra a janela **Propriedades** e especifique um nome de arquivo no campo **saída** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823057303655da59494680ce9f591b252e28f792
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731218"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-Representa um campo dinâmico para um objeto [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
+Representa um campo dinâmico para um objeto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na interface [IDebugDynamicField,](../../../extensibility/debugger/reference/idebugdynamicfield.md) esta interface implementa os seguintes métodos:
+ Além dos métodos na interface [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) , essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
@@ -35,8 +35,8 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 |[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Recupera um tipo dado seu token.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

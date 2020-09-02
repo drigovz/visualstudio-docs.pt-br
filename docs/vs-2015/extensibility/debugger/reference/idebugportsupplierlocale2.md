@@ -11,41 +11,41 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 789d9f97958b9662db5f792f28a75c0f6b46a8c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188155"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Fornece suporte à localidade para um fornecedor de porta.  
+Fornece suporte de localidade para um fornecedor de porta.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortSupplierLocale2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um fornecedor de porta personalizada implementa essa interface para definir a localidade.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Um fornecedor de porta personalizado implementa essa interface para definir a localidade.  
   
 ## <a name="methods"></a>Métodos  
  A tabela a seguir mostra os métodos de **IDebugPortSupplierLocale2**.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Define a localidade para o fornecedor de porta.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Define a localidade para o fornecedor da porta.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Portpriv.h  
+ Cabeçalho: Portpriv. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

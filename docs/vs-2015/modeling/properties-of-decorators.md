@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cb837c9b3d465d229f64fac08dac02af8d50f5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652014"
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
@@ -27,11 +27,11 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 
 ## <a name="expandcollapse-decorator"></a>Expandir/recolher decorador
 
-|propriedade|Descrição|Padrão|
+|Propriedade|Descrição|Padrão|
 |--------------|-----------------|-------------|
 |DisplayName|O nome do decorador que será exibido no designer gerado.|Expandir recolher decorador|
 |Name|O nome do decorador.|ExpandCollapseDecorator|
-|Anotações|Observações informais que estão associadas a este decorador.|\<nenhum>|
+|Observações|Observações informais que estão associadas a este decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Somente em conectores.)|0|
@@ -40,12 +40,12 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 
 ## <a name="icon-decorator"></a>Decorador de ícone
 
-|propriedade|Descrição|Padrão|
+|Propriedade|Descrição|Padrão|
 |--------------|-----------------|-------------|
-|DefaultIcon|O caminho do arquivo de ícone ou de imagem a ser exibido.|\<nenhum>|
+|DefaultIcon|O caminho do arquivo de ícone ou de imagem a ser exibido.|\<none>|
 |DisplayName|O nome do decorador a ser exibido no designer gerado.|Decorador de ícone|
 |Name|O nome do decorador.|IconDecorator|
-|Anotações|Observações informais que estão associadas ao decorador.|\<nenhum>|
+|Observações|Observações informais que estão associadas ao decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Somente em conectores.)|0|
@@ -54,19 +54,19 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|propriedade|Descrição|Padrão|
+|Propriedade|Descrição|Padrão|
 |--------------|-----------------|-------------|
 |DefaultText|O texto padrão a ser exibido.|Rotular|
 |DisplayName|O nome do decorador a ser exibido no designer gerado.|Rotular|
 |FontSize|O tamanho da fonte para o texto que é exibido no decorador.|8|
-|FontStyle|O estilo da fonte para o texto que é exibido no decorador.|Normal|
+|FontStyle|O estilo da fonte para o texto que é exibido no decorador.|Regular|
 |Name|O nome do decorador.|Rotular|
-|Anotações|Observações informais que estão associadas ao decorador.|\<nenhum>|
+|Observações|Observações informais que estão associadas ao decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Somente em conectores.)|0|
 |OffsetFromShape|O deslocamento do decorador a partir da forma, em relação à sua posição padrão, em polegadas. (Somente em conectores.)|0|
 |Posição|A posição padrão do decorador.|TargetBottom|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406726"
 ---
-# <a name="xslt-profiler"></a>XSLT Profiler
+# <a name="xslt-profiler"></a>Perfil XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O profiler XSLT é uma ferramenta do visual profiler de análise de desempenho que ajuda a desenvolver e depurem documentos XSLT. O profiler XSLT permite que os desenvolvedores para se dimensionarem e avaliem problemas de desempenho relacionadas no código XSLT criando relatórios de desempenho detalhados XSLT. O profiler XSLT inclui as dicas úteis para XSL e as otimizações de folha de estilos XSLT, que são essenciais para aplicativos baseados XSLT- que exigem máximo desempenho.
@@ -30,5 +30,5 @@ O profiler XSLT é uma ferramenta do visual profiler de análise de desempenho q
 > [!NOTE]
 > Algumas telas podem aparecer diferente no Visual Studio 2010 do que acontece nesses documentos porque alguns elementos visuais foram modificados desde Visual Studio 2008.
 
-## <a name="see-also"></a>Veja também
- [Passo a passo: Criador de Perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Consulte Também
+ [Passo a passo: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

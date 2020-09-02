@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bcb5d395ac322b6fd1daed2bfd9da1fe76f57e3a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816664"
 ---
 # <a name="expected-"></a>':' esperado
@@ -28,6 +28,6 @@ Você tentou criar uma expressão usando o operador condicional Ternário, mas n
   
 - Insira dois-pontos entre o segundo e o terceiro operandos.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Operador condicional (Ternário) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Operadores](../../javascript/operators-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach | Microsoft Docs
+title: 'IDebugProcess2:: desanexar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd96442ad3639aa03fa894facbbc9e6dbe3bbd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188091"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se o Gerenciador de sessão de depuração (SDM) poderá desanexar o processo.  
+Determina se o SDM (Gerenciador de depuração de sessão) pode desanexar o processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,9 +36,9 @@ HRESULT CanDetach(
 int CanDetach();  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK.` retorna `S_FALSE` se o depurador não é possível desanexar do processo. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor retornado  
+ Se for bem-sucedido, `S_OK.` retornará `S_FALSE` um retorno se o depurador não puder ser desanexado do processo. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
- [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Deanexar](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

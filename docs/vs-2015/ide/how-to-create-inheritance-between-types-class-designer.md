@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar herança entre tipos (Designer de Classe) | Microsoft Docs'
+title: Como criar herança entre tipos (Designer de Classe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,13 +15,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668101"
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Como: Criar herança entre tipos (Designer de Classe)
+# <a name="how-to-create-inheritance-between-types-class-designer"></a>Como criar herança entre tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para criar uma relação de herança entre dois tipos em um diagrama de classes usando o Designer de Classe, conecte o tipo de base ao seu tipo ou tipos derivados. Você pode ter uma relação de herança entre duas classes, entre uma classe e uma interface ou entre duas interfaces.
@@ -30,7 +30,7 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classes 
 
 1. No seu projeto localizado no Gerenciador de Soluções, abra um arquivo de diagrama de classes (.cd).
 
-     Se você não possuir um diagrama de classes, crie um. Confira [Como Adicione diagramas de classe a projetos (Designer de Classe) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
+     Se você não possuir um diagrama de classes, crie um. Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
 
 2. Na **Caixa de Ferramentas**, no **Designer de Classe**, clique em **Herança**.
 
@@ -49,5 +49,5 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classes 
     >
     >  Embora você possa visualizar os tipos genéricos existentes, não é possível criar novos tipos genéricos. Você também não pode alterar os parâmetros de tipos genéricos existentes.
 
-## <a name="see-also"></a>Consulte também
- [Noções básicas de herança](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [de herança](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [How para: Exibir herança entre tipos (Designer de Classe) ](../ide/how-to-view-inheritance-between-types-class-designer.md) [classes C++ visuais no designer de classe](../ide/visual-cpp-classes-in-class-designer.md)
+## <a name="see-also"></a>Consulte Também
+ [Inheritance](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [Noções básicas de herança](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [de herança como exibir a herança entre tipos (Designer de Classe)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ classes no designer de classe](../ide/visual-cpp-classes-in-class-designer.md)

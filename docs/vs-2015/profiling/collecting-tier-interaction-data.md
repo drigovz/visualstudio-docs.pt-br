@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568041"
 ---
 # <a name="collecting-tier-interaction-data"></a>Coletando dados de interação entre camadas
@@ -36,7 +36,7 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
  Para coletar dados de interação de camada em aplicativos da área de trabalho do Windows 8 e os aplicativos do Windows Server 2012, é necessário usar o método de instrumentação. Não é possível coletar dados de interação de camada para aplicativos da Windows Store. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). É possível incluir dados de interação de camada em todos os métodos de criação de perfil em outra versão com suporte do Windows.  
   
- **Assistente de desempenho**  
+ **Assistente de Desempenho**  
   
  Por causa de um bug no Assistente de desempenho, é necessário adicionar a opção de coleta de dados de interação de camada para uma execução de criação de perfil do Gerenciador de Desempenho. Também é necessário adicionar o projeto, o executável ou o site ao nó de Destino do Gerenciador de Desempenho.  
   
@@ -48,5 +48,5 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 3. No Gerenciador de Desempenho, selecione o nó **Destinos** e, em seguida, especifique o projeto, o executável ou o site da Web para o qual você deseja criar o perfil.  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de interações da camada](../profiling/tier-interactions-view.md)

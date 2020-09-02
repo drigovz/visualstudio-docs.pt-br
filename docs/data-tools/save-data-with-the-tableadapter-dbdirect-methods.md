@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281603"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
@@ -89,7 +89,7 @@ Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar u
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         -ou-
+         - ou -
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
 
@@ -117,9 +117,9 @@ Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas 
 
 2. Defina as propriedades **Nome** e **Texto** a seguir em cada botão.
 
-    |Nome|Texto|
+    |Name|Texto|
     |----------|----------|
-    |`InsertButton`|**Inserir**|
+    |`InsertButton`|**Inserção**|
     |`UpdateButton`|**Atualização**|
     |`DeleteButton`|**Delete (excluir)**|
 
@@ -168,6 +168,6 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você pode quere
 
 - Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relações em conjuntos de](relationships-in-datasets.md)dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667970"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Como desabilitar o processo de hospedagem
@@ -28,13 +28,13 @@ Chamadas para determinadas APIs podem ser afetadas quando o processo de hospedag
 
 1. Abra um projeto executável em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projetos que não geram executáveis (por exemplo, projetos de serviço ou biblioteca de classes) não têm essa opção.
 
-2. No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto** , clique em **Propriedades**.
 
 3. Clique na guia **Depurar**.
 
 4. Desmarque a caixa de seleção **Habilitar o processo de hospedagem do Visual Studio**.
 
-   Quando o processo de hospedagem é desabilitado, vários recursos de depuração ficam não disponíveis ou apresentam um desempenho reduzido. Para obter mais informações, consulte [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md).
+   Quando o processo de hospedagem é desabilitado, vários recursos de depuração ficam não disponíveis ou apresentam um desempenho reduzido. Para obter mais informações, consulte [depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md).
 
    De modo geral, quando o processo de hospedagem está desabilitado:
 
@@ -44,5 +44,5 @@ Chamadas para determinadas APIs podem ser afetadas quando o processo de hospedag
 
 - A depuração de confiança parcial ficará não disponível.
 
-## <a name="see-also"></a>Veja também
- [Depurar e o processo de hospedagem do](../debugger/debugging-and-the-hosting-process.md) processo de hospedagem [(vshost. exe)](../ide/hosting-process-vshost-exe.md) [compila durante o desenvolvimento do aplicativo](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Consulte Também
+ [Depuração e o processo de hospedagem do processo de hospedagem](../debugger/debugging-and-the-hosting-process.md) [(vshost.exe)](../ide/hosting-process-vshost-exe.md) [compila durante o desenvolvimento do aplicativo](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

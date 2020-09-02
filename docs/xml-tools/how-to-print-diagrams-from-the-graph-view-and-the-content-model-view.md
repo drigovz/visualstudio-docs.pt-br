@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5aef4b2a7bc040a75a97bc66f26526053f4cada
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817119"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: imprimir diagramas da exibição de gráfico e do modo de exibição de modelo de conteúdo
@@ -29,7 +29,7 @@ Este tópico descreve como imprimir um diagrama da exibição de gráfico ou da 
 
 3. Imprimir a imagem salvo no arquivo XPS usando um visualizador XPS.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Exibição de gráfico](../xml-tools/graph-view.md)
 - [Exibição do modelo de conteúdo](../xml-tools/content-model-view.md)

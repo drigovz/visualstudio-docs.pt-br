@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b76142dfbc2dca860591bf3c3cb73c2971f56b22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655363"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diferentemente de uma linguagem de finalidade geral C# como o ou o UML, uma DSL (linguagem específica de domínio) foi projetada para expressar instruções em um determinado espaço de problema ou domínio.
+Diferentemente de uma linguagem de finalidade geral, como C# ou UML, uma DSL (linguagem específica de domínio) foi projetada para expressar instruções em um determinado espaço de problema ou domínio.
 
  As DSLs conhecidas incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas muito pior para descrever ideias que estão fora de seu próprio escopo. Os setores individuais também têm suas próprias DSLs. Por exemplo, no setor de telecomunicações, as linguagens de descrição da chamada são amplamente usadas para especificar a sequência de Estados em uma chamada telefônica e, no setor de viagens aéreas, uma DSL padrão é usada para descrever as reservas de voo.
 
@@ -48,9 +48,9 @@ Diferentemente de uma linguagem de finalidade geral C# como o ou o UML, uma DSL 
 
  Por exemplo, você poderia escrever modelos que usam um plano de aeroportos e gerar parte do software para manipulação de bagagem, bem como alguns documentos de usuário que descrevem o plano.
 
- Quando você tiver definido uma DSL, poderá distribuí-la a outros usuários que possam instalá-lo em seus próprios computadores. Os usuários de sua DSL podem criar e editar modelos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Quando você tiver definido uma DSL, poderá distribuí-la a outros usuários que possam instalá-lo em seus próprios computadores. Os usuários de sua DSL podem criar e editar modelos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- Você também pode definir comandos de menu e outras ferramentas que ajudam os usuários a editar a DSL, restrições de validação para ajudar a garantir que a DSL seja usada corretamente e os modelos de item que ajudam os usuários a criar novas instâncias. Você pode encapsular uma ou mais DSLs com suas ferramentas e outras extensões de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como um pacote integrado.
+ Você também pode definir comandos de menu e outras ferramentas que ajudam os usuários a editar a DSL, restrições de validação para ajudar a garantir que a DSL seja usada corretamente e os modelos de item que ajudam os usuários a criar novas instâncias. Você pode encapsular uma ou mais DSLs com suas ferramentas e outras [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões como um pacote integrado.
 
  Normalmente, uma linguagem específica de domínio é criada quando uma equipe de desenvolvimento precisa escrever código semelhante para vários produtos. Por exemplo, uma empresa especializada em sistemas de manuseio de bagagem pode definir uma DSL de bagagem Track da qual eles podem gerar algum código para cada instalação. Os benefícios da DSL são que ele pode ser compreendido por seus clientes, que o código gerado por ele é confiável e que o sistema pode ser atualizado rapidamente se os requisitos dos clientes mudarem.
 
@@ -73,7 +73,7 @@ Diferentemente de uma linguagem de finalidade geral C# como o ou o UML, uma DSL 
 - Integração com o Visual Studio
 
 ### <a name="notation"></a>Notation
- Uma linguagem específica de domínio deve ter um conjunto razoavelmente pequeno de elementos que podem ser facilmente definidos e estendidos para representar construções específicas de domínio. Uma notação consiste em formas, que representam os elementos e conectores, que representam as relações entre os elementos, em uma superfície de diagrama gráfico. No [!INCLUDE[dsl](../includes/dsl-md.md)], as formas podem ser estendidas e refinadas para representar os elementos de sua linguagem específica de domínio.
+ Uma linguagem específica de domínio deve ter um conjunto razoavelmente pequeno de elementos que podem ser facilmente definidos e estendidos para representar construções específicas de domínio. Uma notação consiste em formas, que representam os elementos e conectores, que representam as relações entre os elementos, em uma superfície de diagrama gráfico. No [!INCLUDE[dsl](../includes/dsl-md.md)] , as formas podem ser estendidas e refinadas para representar os elementos de sua linguagem específica de domínio.
 
 ### <a name="domain-model"></a>Modelo de domínio
  Uma linguagem específica de domínio deve combinar o conjunto de elementos e as relações entre eles em uma gramática coerente. Ele também deve definir se as combinações de elementos e relações são válidas. Por exemplo, as linguagens de programação normalmente impedem a herança circular, na qual uma classe é derivada de uma segunda classe e a segunda classe é derivada da primeira classe. As restrições também podem ser usadas para expressar a lógica de negócios, por exemplo, uma pessoa não pode ser dependente de si mesma. [!INCLUDE[dsl](../includes/dsl-md.md)] usa restrições para expressar os tipos de restrições que a maioria das linguagens específicas de domínio exigem.
@@ -82,10 +82,10 @@ Diferentemente de uma linguagem de finalidade geral C# como o ou o UML, uma DSL 
  Uma das principais finalidades de uma linguagem específica de domínio é gerar um artefato, por exemplo, código-fonte, um arquivo XML ou alguns outros dados utilizáveis. Normalmente, uma alteração no modelo significa uma alteração no artefato. Você pode usar [!INCLUDE[dsl](../includes/dsl-md.md)] para gerar artefatos e gerá-los novamente quando alterar o modelo.
 
 ### <a name="serialization"></a>Serialização
- Uma linguagem específica de domínio deve ser persistida em alguma forma que possa ser editada, salva, fechada e recarregada. o [!INCLUDE[dsl](../includes/dsl-md.md)] usa um formato XML que permite que você defina e personalize como sua linguagem específica de domínio é serializada ou persistente.
+ Uma linguagem específica de domínio deve ser persistida em alguma forma que possa ser editada, salva, fechada e recarregada. [!INCLUDE[dsl](../includes/dsl-md.md)] usa um formato XML que permite definir e personalizar como sua linguagem específica de domínio é serializada ou persistente.
 
 ### <a name="integration-with-visual-studio"></a>Integração com o Visual Studio
- Como o [!INCLUDE[dsl](../includes/dsl-md.md)] é hospedado em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ele estende muitas janelas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e controles. Ele também permite que você personalize o comportamento de comandos de menu, de itens da caixa de ferramentas e de outros elementos da interface do usuário.
+ Como o [!INCLUDE[dsl](../includes/dsl-md.md)] é hospedado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ele estende muitas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janelas e controles. Ele também permite que você personalize o comportamento de comandos de menu, de itens da caixa de ferramentas e de outros elementos da interface do usuário.
 
  Você também pode criar um adaptador de barramento de modelo para sua linguagem específica de domínio. Esse adaptador permite que você referencie um modelo e elementos dentro de um modelo e permite que você escreva um código que possa acessar e atualizar uma instância do DSL. Usando o poderoso mecanismo de barramento de modelo, você pode gravar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões que funcionam com vários modelos. Você também pode escrever aplicativos autônomos que funcionam com modelos. Para obter mais informações, consulte [integrando modelos usando o Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 

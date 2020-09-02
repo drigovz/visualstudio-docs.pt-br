@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f9df8d85c600cd383a9a9059e689e6cb9f232d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668037"
 ---
 # <a name="how-to-create-starter-kits"></a>Como criar kits de início
@@ -51,5 +51,5 @@ Um kit de início contém código para um aplicativo completo e a documentação
 
  [Como: atualizar modelos existentes](../ide/how-to-update-existing-templates.md) Descreve como editar um modelo exportado. Use este procedimento para modificar o arquivo .vstemplate para personalizar seu kit de início.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md) [Personalizando modelos](../ide/customizing-project-and-item-templates.md) [Visual Studio referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

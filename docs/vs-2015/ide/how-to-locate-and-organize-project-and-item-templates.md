@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651866"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar projeto e modelos de item
@@ -40,7 +40,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
   Por exemplo, o diretório a seguir contém o modelos de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para o inglês:
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Modelos personalizados
  Por padrão, modelos personalizados ficam localizados em:
@@ -82,7 +82,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
 6. Execute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-7. No menu **Arquivo**, clique em **Novo** e clique em **Projeto**.
+7. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 
 8. Verifique se a categoria Office aparece na caixa de diálogo **Novo Projeto**, no painel **Tipos de projeto**, em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
 
@@ -106,7 +106,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
 7. Crie um projeto ou abra um projeto existente.
 
-8. No menu **Projeto**, clique em **Adicionar Novo Item**.
+8. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
 9. Verifique se a categoria Web aparece na caixa de diálogo **Adicionar Novo Item**, no painel **Tipos de projeto**.
 
@@ -121,7 +121,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
 2. Coloque todos os modelos dessa categoria na nova pasta.
 
-3. No menu **Arquivo**, clique em **Novo** e clique em **Projeto**.
+3. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 
 4. Verifique se a categoria HelloWorld aparece na caixa de diálogo **Novo Projeto**, no painel **Tipos de projeto**, em [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
@@ -137,7 +137,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
 3. Crie um projeto ou abra um projeto existente.
 
-4. No menu **Projeto**, clique em **Adicionar Novo Item**.
+4. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
 5. Verifique se a categoria HelloWorld aparece na caixa de diálogo **Adicionar Novo Item**, no painel **Tipos de projeto**.
 
@@ -166,11 +166,11 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
 
 5. Salve e feche o arquivo .vstemplate.
 
-6. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)** . Os arquivos são compactados em um arquivo .zip.
+6. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)**. Os arquivos são compactados em um arquivo .zip.
 
 7. Exclua os arquivos de modelo extraídos e o arquivo .zip de modelo antigo.
 
 8. Coloque o novo arquivo .zip no diretório que tinha o arquivo .zip excluído.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando modelos de](../ide/customizing-project-and-item-templates.md) [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [como: criar modelos de projeto](../ide/how-to-create-project-templates.md) [como: criar modelos de item](../ide/how-to-create-item-templates.md)

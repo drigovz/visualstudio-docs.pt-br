@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 98d764bae48fb7deaa3f3cf917b0d4c8baab185b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651377"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gerenciando Assinatura de Assembly e Manifesto
@@ -33,7 +33,7 @@ A assinatura de nome forte fornece a um componente de software uma identidade gl
  Para obter informações sobre como assinar assemblies em projetos do Visual C++, consulte [Assemblies de nome forte (assinatura de assembly) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).
 
 ## <a name="asset-types-and-signing"></a>Tipos de ativos e assinatura
- É possível assinar manifestos de assemblies e do aplicativo do .NET. Eles incluem o seguinte:
+ É possível assinar manifestos de assemblies e do aplicativo do .NET. Entre elas estão as seguintes:
 
 - executáveis (.exe)
 
@@ -63,9 +63,9 @@ A assinatura de nome forte fornece a um componente de software uma identidade gl
 
  Você também pode apontar para uma chave já criada. Para obter mais informações sobre como criar chaves, consulte [Como criar um par de chaves pública-privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
 
- Se você tiver acesso somente a uma chave pública, é possível usar a assinatura com atraso para adiar a atribuição da chave. Habilite a assinatura com atraso selecionando a caixa de seleção **Somente sinal de atraso**. Um projeto com assinatura com atraso não será executado e não é possível depurá-lo. No entanto, é possível ignorar a verificação durante o desenvolvimento usando [Sn.exe (Ferramenta de Nome Forte)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) com a opção `-Vr`.
+ Se você tiver acesso somente a uma chave pública, é possível usar a assinatura com atraso para adiar a atribuição da chave. Habilite a assinatura com atraso selecionando a caixa de seleção **Somente sinal de atraso**. Um projeto com assinatura com atraso não será executado e não é possível depurá-lo. No entanto, você pode ignorar a verificação durante o desenvolvimento usando o [Sn.exe (ferramenta de nome forte)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) com a `-Vr` opção.
 
  Para obter informações sobre como assinar manifestos, consulte [Como assinar manifestos do aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Veja também
- Assemblies [com nomes fortes](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) assemblies [de nome forte (assinatura de assemblyC++) (/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+## <a name="see-also"></a>Consulte Também
+ Assemblies [com](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) [nomes fortes assemblies de nome forte (assinatura de assembly) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

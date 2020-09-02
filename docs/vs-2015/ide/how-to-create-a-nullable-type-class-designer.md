@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668154"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Como criar um tipo anulável (Designer de Classe)
@@ -24,7 +24,7 @@ ms.locfileid: "72668154"
 
 Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa é uma prática comum em bancos de dados, em que alguns campos podem não receber nenhum valor. Por exemplo, é possível atribuir um valor nulo a um campo de banco de dados para indicar que ele ainda não recebeu um valor.
 
- Um *tipo que permite valor nulo* é um tipo de valor que é estendido, para que ele use o intervalo de valores típico para esse tipo e também um valor nulo. Por exemplo, um tipo que permite valor nulo igual a `Int32`, também indicado como Nullable\<Int32>, pode receber qualquer valor de -2147483648 a 2147483647 ou receber um valor nulo. Um Nullable\<bool> pode receber os valores `True`, `False` ou nulo (nenhum valor).
+ Um *tipo que permite valor nulo* é um tipo de valor que é estendido, para que ele use o intervalo de valores típico para esse tipo e também um valor nulo. Por exemplo, uma anulável de `Int32` , também denotada como anulável \<Int32> , pode ser atribuído a qualquer valor de-2147483648 a 2147483647, ou pode ser atribuído um valor nulo. Um Nullable \<bool> pode receber os valores `True` , `False` ou NULL (nenhum valor).
 
  Os tipos que permitem valor nulo são instâncias da estrutura <xref:System.Nullable%601>. Cada instância de um tipo que permite valor nulo tem duas propriedades públicas somente leitura, `HasValue` e `Value`:
 
@@ -81,5 +81,5 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
 
 5. Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.
 
-## <a name="see-also"></a>Consulte também
- <xref:System.Nullable%601> [tipos anuláveis](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [usando tipos anuláveis](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [como identificar um tipo anulável de tipos de](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [valor anulável](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.Nullable%601>[Tipos anuláveis](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [usando tipos anuláveis](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [como identificar um tipo anulável de tipos de](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [valor anulável](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

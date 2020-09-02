@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817314"
 ---
 # <a name="cannot-assign-to-this"></a>Não é possível designar a "isso"
@@ -39,7 +39,7 @@ Dentro de um método, você pode usar **isso** para fazer referência ao objeto 
   > [!NOTE]
   > Você não pode nomear **uma variável criada**pelo usuário; é uma [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] palavra reservada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Esta instrução](../../javascript/reference/this-statement-javascript.md)
 - [Solucionar problemas com scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

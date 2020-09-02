@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Microsoft Docs
+title: 'IDebugMethodField:: GetThis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 786f3986875518470ed5756a0f7b57f4f93f5ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563605"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém o `this` (`Me` em [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) ponteiro do objeto que contém o método.  
+Obtém o `this` `Me` ponteiro (no [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] ) do objeto que contém o método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,14 +40,14 @@ int GetThis(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppClass`  
- [out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa o ponteiro "this".  
+ fora Retorna um objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o ponteiro "This".  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Em linguagens orientadas a objeto, normalmente há um ponteiro implícito para a instanciação atual de uma classe. Isso é conhecido como `this` em C#/C++ e como `Me` na [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
+ Em linguagens orientadas a objeto, normalmente há um ponteiro implícito para a instanciação atual de uma classe. Isso é conhecido como `this` em C#/c + + e como `Me` no [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

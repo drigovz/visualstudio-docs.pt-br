@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281637"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
@@ -79,7 +79,7 @@ Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usand
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         -ou-
+         - ou -
 
     - Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.
 
@@ -144,6 +144,6 @@ Você pode criar os controles associados a dados arrastando itens da janela **fo
 
 4. Confira os valores no banco de dados para verificar se as alterações foram salvas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

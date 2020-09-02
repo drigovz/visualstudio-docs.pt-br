@@ -11,33 +11,33 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad9ff38ae4533f7999b9966c1de32ac77105fcc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188120"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Representa um valor de enumeração de tipo primitivo de uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
+Representa um valor de enumeração de tipo primitivo de uma interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPrimitiveTypeField : IDebugField  
 ```  
   
 ## <a name="methods"></a>Métodos  
- Além dos métodos na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface, essa interface implementa o método a seguir:  
+ Além dos métodos na interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , essa interface implementa o seguinte método:  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Recupera o tipo primitivo associado a esse campo.|  
+|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Recupera o tipo primitivo associado a este campo.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Sh.h  
+ Cabeçalho: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

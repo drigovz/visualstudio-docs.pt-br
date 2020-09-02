@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs
+title: 'IDebugCustomAttribute:: getattributetypefield | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a56a148342eb659a4f57d68581159f64ee3b1226
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568919"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
@@ -40,14 +40,14 @@ int GetAttributeTypeField(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppCAType`  
- [out] Retorna o [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa a classe da qual o atributo personalizado é uma instância.  
+ fora Retorna o objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa a classe da qual o atributo personalizado é uma instância.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um atributo personalizado é sempre uma classe. Esse método fornece acesso a um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que descreve essa classe.  
+ Um atributo personalizado é sempre uma classe. Esse método fornece acesso a um objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que descreve essa classe.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

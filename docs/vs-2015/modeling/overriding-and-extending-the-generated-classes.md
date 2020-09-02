@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668484"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
@@ -29,7 +29,7 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto av
 ### <a name="overriding-methods-in-a-partial-class"></a>Substituindo métodos em uma classe parcial
  As definições de classe parcial permitem que uma classe seja definida em mais de um lugar. Isso permite que você separe o código gerado do código que você escreve por conta própria. No código escrito manualmente, você pode substituir classes herdadas pelo código gerado.
 
- Por exemplo, se, em sua definição de DSL, você definir uma classe de domínio denominada `Book`, poderá escrever um código personalizado que adiciona métodos de substituição:
+ Por exemplo, se em sua definição de DSL você definir uma classe de domínio chamada `Book` , poderá escrever um código personalizado que adiciona métodos de substituição:
 
  `public partial class Book`
 
@@ -55,13 +55,13 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto av
 
  No entanto, você pode substituir esses métodos definindo o sinalizador de **gerações derivadas duplas** para a classe de domínio. Isso faz com que duas classes sejam geradas, uma sendo uma classe base abstrata da outra. Todas as definições de método e Propriedade estão na classe base, e somente o Construtor está na classe derivada.
 
- Por exemplo, no exemplo de biblioteca. DSL, a classe de domínio `CirculationBook` tem a propriedade `Generates``Double Derived` definida como `true`. O código gerado para essa classe de domínio contém duas classes:
+ Por exemplo, no exemplo de biblioteca. DSL, a `CirculationBook` classe de domínio tem a `Generates``Double Derived` propriedade definida como `true` . O código gerado para essa classe de domínio contém duas classes:
 
 - `CirculationBookBase`, que é um abstrato e que contém todos os métodos e propriedades.
 
-- `CirculationBook`, que é derivado de `CirculationBookBase`. Ele está vazio, exceto para seus construtores.
+- `CirculationBook`, que é derivado de `CirculationBookBase` . Ele está vazio, exceto para seus construtores.
 
-  Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook`. Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.
+  Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook` . Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.
 
   Você pode usar esse método com todos os tipos de elemento, incluindo elementos de modelo, relações, formas, diagramas e conectores. Você também pode substituir métodos de outras classes geradas. Algumas classes geradas, como ToolboxHelper, são sempre derivadas de duas vezes.
 
@@ -73,7 +73,7 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto av
  Escreva uma definição de classe parcial em um arquivo separado dos arquivos gerados e forneça o construtor.
 
 ### <a name="flagged-extension-points"></a>Pontos de extensão sinalizados
- Um ponto de extensão sinalizado é um local na definição de DSL, onde você pode definir uma propriedade ou uma caixa de seleção para indicar que fornecerá um método personalizado. Os construtores personalizados são um exemplo. Outros exemplos incluem a definição da `Kind` de uma propriedade de domínio para o armazenamento calculado ou personalizado ou a definição do sinalizador **é personalizado** em um construtor de conexões.
+ Um ponto de extensão sinalizado é um local na definição de DSL, onde você pode definir uma propriedade ou uma caixa de seleção para indicar que fornecerá um método personalizado. Os construtores personalizados são um exemplo. Outros exemplos incluem a definição de `Kind` uma propriedade de domínio para armazenamento calculado ou personalizado ou a definição do sinalizador **é personalizado** em um construtor de conexões.
 
  Em cada caso, quando você define o sinalizador e gera novamente o código, ocorrerá um erro de compilação. Clique duas vezes no erro para ver um comentário que explica o que você precisa fornecer.
 

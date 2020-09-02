@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668136"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como criar e editar configurações de teste
@@ -121,7 +121,7 @@ ms.locfileid: "72668136"
 
 2. Na lista suspensa **Configuração da solução ativa**, selecione a configuração desejada.
 
-3. No painel **Contextos do projeto**, para cada projeto, selecione a **Configuração** e a **Plataforma** desejadas e selecione se deseja **Compilá-la** e se deseja **Implantá-la**.
+3. No painel **contextos do projeto** , para cada projeto, selecione a **configuração** e **a plataforma** desejadas e selecione se deseja **compilá** -la e se deseja **implantá** -la.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Compreendendo as configurações de compilação](../ide/understanding-build-configurations.md) [criando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [NIB como modificar as propriedades do projeto e as definições de configuração](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984762"
 ---
 # <a name="data-visualizations"></a>Visualizações de dados
@@ -43,7 +43,7 @@ As coordenadas são plotadas em um mapa, com o local fixado no centro:
 
 [Visualização de Coordenada](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Color
+## <a name="color"></a>Cor
 Isso exibirá as propriedades UIColor, CGColor e Color, ilustrando a visualização de cores, os componentes RGBA, os valores de matiz-saturação-luminosidade e o valor hexadecimal da cor:
 
 ![Visualização de Cor](media/data-visualizations-image14.png)
@@ -90,13 +90,13 @@ Alguns outros tipos que também têm seus próprios visualizadores embutidos est
 
 * **Primitivos**
   * Mostra o valor bruto do tipo primitivo.
-* **Enum**
+* **Enumeração**
   * Exibe o valor do campo sem o qualificador do Tipo enumeração.
-* **Tupla**
+* **Serem**
   * Exibido no formato (,)
-* **Null**
+* **Nulo**
   * Mostra o valor “null”.
-* **Url**
+* **URL**
   * Exite um hiperlink clicável.
 * **IntPtr**
   * Exibe uma representação hexadecimal de IntPtr.
