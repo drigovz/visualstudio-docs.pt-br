@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2317fafe410cacfca1c77b669a54669ea6e2224a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153540"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Especifica o tipo de erro de um ponto de interrupção.  
@@ -61,7 +61,7 @@ public enum enum_BP_ERROR_TYPE { 
   
 ## <a name="members"></a>Membros  
  BPET_NONE  
- Não especifica que nenhum erro de ponto de interrupção.  
+ Não especifica nenhum erro de ponto de interrupção.  
   
  BPET_TYPE_WARNING  
  Especifica um erro de ponto de interrupção de estilo de aviso.  
@@ -70,7 +70,7 @@ public enum enum_BP_ERROR_TYPE { 
  Especifica um erro de ponto de interrupção de estilo de erro.  
   
  BPET_SEV_HIGH  
- Especifica um erro de ponto de interrupção de alta gravidade.  
+ Especifica um erro de ponto de interrupção de alta severidade.  
   
  BPET_SEV_GENERAL  
  Especifica um erro de ponto de interrupção de severidade média.  
@@ -82,7 +82,7 @@ public enum enum_BP_ERROR_TYPE { 
  Especifica um erro de ponto de interrupção de estilo de máscara.  
   
  BPET_SEV_MASK  
- Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.  
+ Especifica um erro de ponto de interrupção de estilo de máscara de gravidade.  
   
  BPET_GENERAL_WARNING  
  Especifica um erro de ponto de interrupção de estilo de aviso geral.  
@@ -91,21 +91,21 @@ public enum enum_BP_ERROR_TYPE { 
  Especifica um erro de ponto de interrupção de estilo de erro geral.  
   
  BPET_ALL  
- Especifica todos os tipos de erros de ponto de interrupção.  
+ Especifica todos os tipos de erro de ponto de interrupção.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores podem ser combinados com um bit a bit `OR` e é usado para o `dwType` membro a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura. Passado como um parâmetro para o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.  
+ Esses valores podem ser combinados com uma e bit-a-bit `OR` e usados para o `dwType` membro da estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Passado como um parâmetro para o método [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .  
   
- Um tipo de erro de ponto de interrupção é composto de um tipo e severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR`,) ou uma severidade (por exemplo, `BPET_SEV_GENERAL`) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornecem valores predefinidos para pontos de interrupção de aviso e erro geral.  
+ Um tipo de erro de ponto de interrupção é composto por um tipo e uma severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR` ) ou uma severidade (por exemplo, `BPET_SEV_GENERAL` ) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` forneça valores predefinidos para avisos gerais e pontos de interrupção de erro.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154197"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Indica o tipo de informações de localização contidas em um símbolo.  
+Indica o tipo de informações de local contidas em um símbolo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum LocationType {   
@@ -46,51 +46,51 @@ enum LocationType { 
   
 ## <a name="elements"></a>Elementos  
  `LocIsNull`  
- Informações de localização não estão disponíveis.  
+ As informações de local não estão disponíveis.  
   
  `LocIsStatic`  
- Localização é estática.  
+ O local é estático.  
   
  `LocIsTLS`  
- Local está no armazenamento local de thread.  
+ O local está no armazenamento local de thread.  
   
  `LocIsRegRel`  
- Local é relativo ao registro.  
+ A localização é relativa ao registro.  
   
  `LocIsThisRel`  
- Local é `this`-relativo.  
+ O local é `this` relativo.  
   
  `LocIsEnregistered`  
- Localização é um registro.  
+ O local está em um registro.  
   
  `LocIsBitField`  
- Localização é um campo de bits.  
+ O local está em um campo de bits.  
   
  `LocIsSlot`  
- Local é um slot de Microsoft Intermediate Language (MSIL).  
+ O local é um slot MSIL (Microsoft Intermediate Language).  
   
  `LocIsIlRel`  
- Local é relativo ao MSIL.  
+ O local é MSIL-Relative.  
   
  `LocInMetaData`  
- Local é nos metadados.  
+ O local está nos metadados.  
   
  `LocIsConstant`  
- Localização é um valor constante.  
+ O local está em um valor constante.  
   
  `LocTypeMax`  
- O número de tipos de localização nesta enumeração.  
+ O número de tipos de local nesta enumeração.  
   
 ## <a name="remarks"></a>Comentários  
- As propriedades disponíveis para o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface dependem do local do símbolo no arquivo de imagem. Para obter mais informações, consulte [locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md).  
+ As propriedades disponíveis para a interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dependem do local do símbolo dentro do arquivo de imagem. Para obter mais informações, consulte [locais de símbolo](../../debugger/debug-interface-access/symbol-locations.md).  
   
- Os valores nesta enumeração são retornados por uma chamada para o [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) método.  
+ Os valores nessa enumeração são retornados por uma chamada para o método [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

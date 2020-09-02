@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199941"
 ---
 # <a name="overriding-toolsversion-settings"></a>Substituindo as configurações de ToolsVersion
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. A versão das ferramentas padrão no arquivo MSBuild.exe.config.  
   
-    3. A versão das ferramentas padrão no Registro. Para obter mais informações, consulte [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3. A versão das ferramentas padrão no Registro. Para obter mais informações, consulte [configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).  
   
 6. Se a variável de ambiente `MSBUILDLEGACYDEFAULTTOOLSVERSION` não estiver definida, as etapas a seguir serão usadas:  
   
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. Caso contrário, use a `ToolsVersion` atual.  
   
-## <a name="see-also"></a>Veja também  
- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
- [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
+ [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)

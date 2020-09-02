@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816729"
 ---
 # <a name="return-statement-outside-of-function"></a>Instrução 'return' fora de função
@@ -41,7 +41,7 @@ return [ expression ];
   
 - Remova a `return` instrução do corpo principal do seu código (o escopo global).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Instrução de retorno](../../javascript/reference/return-statement-javascript.md)   
  [Objeto de função](../../javascript/reference/function-object-javascript.md)   
  [Propriedade caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

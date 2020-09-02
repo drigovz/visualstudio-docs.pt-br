@@ -1,5 +1,5 @@
 ---
-title: Mapeamentos de versão do pacote Roslyn suportados
+title: Mapeamentos de versão do pacote Roslyn com suporte
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,22 +10,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701330"
 ---
-# <a name="net-compiler-platform-package-version-reference"></a>Referência da versão do pacote da plataforma .NET
+# <a name="net-compiler-platform-package-version-reference"></a>Referência de versão do pacote da plataforma de compilador .NET
 
-A tabela a seguir mostra quais versões [do pacote .NET compiler platform (Roslyn)](https://www.nuget.org/packages/Microsoft.Net.Compilers/) são suportadas para diferentes versões do Visual Studio.
+A tabela a seguir mostra quais versões de [pacote do Roslyn (plataforma de compilador .net)](https://www.nuget.org/packages/Microsoft.Net.Compilers/) têm suporte para versões diferentes do Visual Studio.
 
-Como exemplo, para garantir que seu analisador personalizado funcione em todas as versões do Visual Studio 2017, ele deve ter como alvo a versão 2.0 do Microsoft.Net.Compilers.
+Por exemplo, para garantir que o analisador personalizado funcione em todas as versões do Visual Studio 2017, ele deve ter como destino a versão 2,0 do Microsoft.Net. compilers.
 
-| Versão do pacote roslyn | Versão visual studio suportada mínima |
+| Versão do pacote Roslyn | Versão mínima do Visual Studio com suporte |
 | - | - |
 | 3.x | Visual Studio 2019 |
-| 2.10.0 | Visual Studio 2017 versão 15.9 |
+| 2.10.0 | Visual Studio 2017 versão 15,9 |
 | 2.9.0 | Visual Studio 2017 versão 15.8 |
 | 2.8.2 | Visual Studio 2017 versão 15.7 |
 | 2.7.0 | Visual Studio 2017 versão 15.6 |
@@ -35,15 +35,15 @@ Como exemplo, para garantir que seu analisador personalizado funcione em todas a
 | 2.2.0 | Visual Studio 2017 versão 15.2 |
 | 2.1.0 | Visual Studio 2017 versão 15.1 |
 | 2.0.0 | Visual Studio 2017 RTM |
-| 1.3.2 | Visual Studio 2015 atualização 3 |
-| 1.2.2 | Visual Studio 2015 atualização 2 |
+| 1.3.2 | Atualização 3 do Visual Studio 2015 |
+| 1.2.2 | Atualização 2 do Visual Studio 2015 |
 | 1.1.1 | Visual Studio 2015 atualização 1 |
 | 1.0.1 | Visual Studio 2015 RTM |
 
 > [!TIP]
-> Para os pacotes roslyn onde a versão visual studio suportada mínima é uma versão visual studio 2017, todas as versões do Visual Studio 2019 também são suportadas porque vieram mais tarde.
+> Para pacotes Roslyn em que a versão mínima com suporte do Visual Studio é uma versão do Visual Studio 2017, todas as versões do Visual Studio 2019 também têm suporte porque foram fornecidas mais tarde.
 
 ## <a name="see-also"></a>Confira também
 
 - [SDK da Plataforma do Compilador .NET](/dotnet/csharp/roslyn-sdk/)
-- [Comece com os analisadores roslyn](getting-started-with-roslyn-analyzers.md)
+- [Introdução aos analisadores do Roslyn](getting-started-with-roslyn-analyzers.md)

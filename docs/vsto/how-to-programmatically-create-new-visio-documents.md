@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541525"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Como criar programaticamente novos documentos do Visio
@@ -43,7 +43,7 @@ ms.locfileid: "85541525"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
 
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Criar estênceis copiados de estênceis existentes
- O [Microsoft.Office.Interop.Visio.Documents. ](/office/vba/api/Visio.Documents.Add)O método Add pode criar um novo estêncil que é uma cópia de um estêncil existente do Visio. Você deve fornecer o nome do arquivo e o caminho totalmente qualificado do estêncil.
+ O [Microsoft.Office.Interop.Visio.Documents. ](/office/vba/api/Visio.Documents.Add) O método Add pode criar um novo estêncil que é uma cópia de um estêncil existente do Visio. Você deve fornecer o nome do arquivo e o caminho totalmente qualificado do estêncil.
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Para criar um novo estêncil que é copiado de um estêncil existente
 

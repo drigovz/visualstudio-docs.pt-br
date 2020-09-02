@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineCreateEvent2::GetEngine | Microsoft Docs
+title: 'IDebugEngineCreateEvent2:: GetEngine | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e2eca3506bf965ca51b76c35d3e677ac21d80b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730608"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
-Recupera o objeto que representa o mecanismo de depuração recém-criado (DE).
+Recupera o objeto que representa o mecanismo DE depuração recém-criado (DE).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int GetEngine( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pEngine`\
-[fora] Retorna um objeto [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) que representa o DE recém-criado.
+fora Retorna um objeto [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) que representa o de recém-criado.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)

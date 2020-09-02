@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682100"
 ---
 # <a name="sgen-task"></a>Tarefa SGen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cria um assembly de serialização de XML para tipos no assembly especificado. A tarefa encapsula a Ferramenta Geradora de Serializador XML (Sgen.exe). Para obter mais informações, consulte [Ferramenta Geradora de Serializador XML (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+Cria um assembly de serialização de XML para tipos no assembly especificado. A tarefa encapsula a Ferramenta Geradora de Serializador XML (Sgen.exe). Para obter mais informações, consulte [XML Serializer Generator Tool (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `SGen`.  
@@ -55,7 +55,7 @@ Cria um assembly de serialização de XML para tipos no assembly especificado. A
 ## <a name="remarks"></a>Comentários  
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Tarefa](../msbuild/msbuild-tasks.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

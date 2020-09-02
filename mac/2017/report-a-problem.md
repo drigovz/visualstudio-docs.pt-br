@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66501002"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Como relatar um problema no Visual Studio para Mac
@@ -52,7 +52,7 @@ Para relatar um problema com o Visual Studio para Mac, selecione **Ajuda > Relat
 
    ![Relatar um problema novo](media/report-problem-image5.png)
 
-1. Selecione **A seguir** para mover-se para a guia **Incluir anexos.** Aqui, você pode capturar sua tela atual para enviá-la para a Microsoft. Para anexar arquivos de log, clique no ícone ![Anexar logs](media/report-problem-attach-logs.png) ou, para anexar capturas de tela e outros arquivos adicionais, clique no ícone ![Anexar arquivo](media/report-problem-attach-file.png).
+1. Selecione **Avançar** para ir para a guia **incluir anexos** . Aqui, você pode capturar a tela atual para enviá-la à Microsoft. Para anexar arquivos de log, clique no ícone ![Anexar logs](media/report-problem-attach-logs.png) ou, para anexar capturas de tela e outros arquivos adicionais, clique no ícone ![Anexar arquivo](media/report-problem-attach-file.png).
 
    ![Anexar uma captura de tela a um relatório de problema do Visual Studio para Mac](media/report-problem-image6.png)
 

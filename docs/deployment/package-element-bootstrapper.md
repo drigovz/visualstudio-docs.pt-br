@@ -1,5 +1,5 @@
 ---
-title: '&lt;Pacote&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: '&lt;&gt;Elemento Package (Bootstrapper) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745756"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (bootstrapper)
-O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;&gt;Elemento Package (Bootstrapper)
+O `Package` elemento é o elemento XML de nível superior dentro de um arquivo de pacote.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -141,16 +141,16 @@ O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos e atributos
- O `Package` elemento é necessário. Ele tem os seguintes atributos.
+ O `Package` elemento é obrigatório. Ele tem os atributos a seguir.
 
 | Atributo | Descrição |
 |--------------------| - |
-| `Culture` | Necessário. Define a cultura para esse pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação. |
-| `Name` | Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definidas para corresponder a `Name` e `Culture` propriedades de `Package`. |
-| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser qualquer texto sem formatação ( *. txt*) ou Rich Text Format. ( *.rtf*) |
+| `Culture` | Obrigatórios. Define a cultura para este pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista cadeias de caracteres específicas de cultura para nomes de produtos e mensagens de erro durante a instalação. |
+| `Name` | Obrigatórios. O nome do pacote exibido para o desenvolvedor em uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com as `Name` `Culture` Propriedades e definidas para corresponder às `Name` `Culture` Propriedades e de `Package` . |
+| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser de texto sem formatação (*. txt*) ou Rich Text. (*. rtf*) |
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuir o .NET Framework 2.0.
+ O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuição do .NET Framework 2,0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -187,5 +187,5 @@ O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
 </Package>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb6209882a7a71a68728299064edcc13afabff35
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704419"
 ---
 # <a name="security-issues"></a>Problemas de segurança
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Para depurar um programa usando o Visual Studio, as únicas permissões necessárias são as mesmas um desenvolvedor precisa para executar o programa. Isso inclui a depuração remota para a maioria das situações (algumas situações que envolvem a outros serviços, como o serviço de informações da Internet, podem exigir um nível mais alto de permissões).  
+Para depurar um programa usando o Visual Studio, as únicas permissões necessárias são as mesmas que um desenvolvedor precisa para executar o programa. Isso inclui a depuração remota para a maioria das situações (algumas situações que envolvem outros serviços, como o serviço de informações da Internet, podem exigir um nível mais alto de permissões).  
   
- Durante a execução do Visual Studio, o Gerenciador de depuração do processo (PDM) controla os processos de depuração no computador local. Remotamente, um programa chamado msvsmon.exe é iniciado pelo desenvolvedor para lidar com a depuração remota e disponibilize o PDM. (Observe que msvsmon.exe não é um serviço e deve ser iniciado manualmente para habilitar a depuração remota nesse computador). Quando o Visual Studio (ou msvsmon.exe) não está em execução, nenhum processo é rastreado para depuração.  
+ Enquanto o Visual Studio está em execução, o Gerenciador de depuração de processos (PDM) rastreia os processos de depuração no computador local. Remotamente, um programa chamado msvsmon.exe é iniciado pelo desenvolvedor para manipular a depuração remota e tornar o PDM disponível. (Observe que msvsmon.exe não é um serviço e deve ser iniciado manualmente para habilitar a depuração remota nesse computador.) Quando o Visual Studio (ou msvsmon.exe) não está em execução, nenhum processo é acompanhado para depuração.  
   
- Isso significa que um desenvolvedor pode depurar programas que ele ou ela iniciados com nenhuma permissão especial. O desenvolvedor pode até mesmo depurar processos iniciados por outra pessoa se outra pessoa que é um membro do mesmo grupo de segurança. E para habilitar a depuração remota, é necessário apenas a necessidade de copiar arquivos para o computador remoto de máquina em Iniciar msvsmon.exe (consulte [definir configurar as ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter mais detalhes).  
+ Isso significa que um desenvolvedor pode depurar programas iniciados sem permissões especiais. O desenvolvedor pode até mesmo depurar processos iniciados por outra pessoa se esse outro for membro do mesmo grupo de segurança. E para habilitar a depuração remota, é necessário apenas copiar os arquivos necessários para o computador remoto e iniciar o msvsmon.exe (consulte [Configurar o ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter mais detalhes).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)   
- [O Gerenciador de depuração do processo](../../extensibility/debugger/process-debug-manager.md)   
+ [Gerenciador de depuração de processo](../../extensibility/debugger/process-debug-manager.md)   
  [Configurar as ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

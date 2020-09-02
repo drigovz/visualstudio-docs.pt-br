@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595625"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Gerar uma classe ou um tipo no Visual Studio
@@ -48,19 +48,19 @@ Esta geração de código aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
       - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece.
-      - Clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
+      - Clique no ícone ![lâmpada de erro](media/error-bulb.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
       ![Gerar visualização de classe](media/class-preview-cs.png)
 
 3. Selecione uma das opções no menu suspenso:
 
    - Gerar a classe ‘*TypeName*' no novo arquivo &mdash;Cria uma classe chamada *TypeName* em um arquivo chamado *TypeName*.cs/.vb
-   - Gerar classe '&mdash;*TypeName*' Cria uma classe chamada *TypeName* no arquivo atual.
-   - Gerar classe aninhada&mdash;'*TypeName*' Cria uma classe chamada *TypeName* aninhada dentro da classe atual.
+   - A classe Generate '*TypeName*' &mdash; cria uma classe denominada *TypeName* no arquivo atual.
+   - A geração de classe aninhada '*TypeName*' &mdash; cria uma classe denominada *TypeName* aninhada dentro da classe atual.
    - Gerar novo tipo...&mdash;Cria uma nova classe ou um novo struct com todas as propriedades especificadas.
 
    > [!TIP]
@@ -74,8 +74,8 @@ Esta geração de código aplica-se a:
    --- | ---
    Acesso | Defina o tipo para ter acesso *Padrão*, *Interno* ou *Público*.
    Tipo | Isso pode ser definido como *classe* ou *struct*.
-   Nome | Isso não pode ser alterado e será o nome que você já digitou.
-   Project | Se houver vários projetos em sua solução, você poderá escolher onde deseja que a classe/struct viva.
+   Name | Isso não pode ser alterado e será o nome que você já digitou.
+   Projeto | Se houver vários projetos em sua solução, você poderá escolher onde deseja que a classe/struct viva.
    Nome do Arquivo | Você pode criar um novo arquivo ou pode adicionar o tipo a um arquivo existente.
 
 A classe ou o struct é criado. Para C#, um construtor também é criado.
@@ -90,5 +90,5 @@ A classe ou o struct é criado. Para C#, um construtor também é criado.
 
 ## <a name="see-also"></a>Confira também
 
-- [Geração de Código](../code-generation-in-visual-studio.md)
+- [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

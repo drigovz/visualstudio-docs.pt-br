@@ -14,10 +14,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681325"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelos do Visual Studio)
@@ -51,11 +51,11 @@ Especifica o caminho para o arquivo .vstemplate de um projeto em um modelo de v�
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`ProjectName`|Atributo opcional.<br /><br /> Especifica o nome de cada projeto individual em um modelo de vários projetos. O **novo projeto** caixa de diálogo não é possível atribuir nomes a projetos individuais.|  
-|`CopyParameters`|Permite que todas as variáveis no modelo de grupo principal sejam copiadas em cada um dos modelos vinculados.<br /><br /> Os parâmetros nos modelos vinculados têm um prefixo `"$ext_*$"`. Por exemplo, se no modelo de grupo pai o parâmetro `$projectname$` tem um valor **ExampleProject1**, quando o modelo vinculado obtém sua vez para ser executado, ele adquire um parâmetro `$ext_projectname$`, que é uma cópia do `$projectname$`parâmetro de modelo de grupo pai.<br /><br /> Isso permite que modelos vinculados compartilhem alguns parâmetros comuns, que podem ser convenientemente criados somente no modelo de grupo pai.<br /><br /> Esse atributo é opcional e padronizado automaticamente para `false` quando não é incluído.<br /><br /> Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta do produto, consulte [Referenciando Assemblies entregues no Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`ProjectName`|Atributo opcional.<br /><br /> Especifica o nome de cada projeto individual em um modelo de vários projetos. A caixa de diálogo **novo projeto** não pode atribuir nomes a projetos individuais.|  
+|`CopyParameters`|Permite que todas as variáveis no modelo de grupo principal sejam copiadas em cada um dos modelos vinculados.<br /><br /> Os parâmetros nos modelos vinculados têm um prefixo `"$ext_*$"`. Por exemplo, se no modelo de grupo pai, o parâmetro `$projectname$` tem um valor **ExampleProject1**, quando o modelo vinculado obtém sua vez de ser executado, ele adquire um parâmetro `$ext_projectname$` , que é uma cópia do `$projectname$` parâmetro do modelo de grupo pai.<br /><br /> Isso permite que modelos vinculados compartilhem alguns parâmetros comuns, que podem ser convenientemente criados somente no modelo de grupo pai.<br /><br /> Esse atributo é opcional e padronizado automaticamente para `false` quando não é incluído.<br /><br /> Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência à versão correta do produto, consulte [Referenciando assemblies entregues na atualização 2 do SDK do Visual Studio 2013](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -70,7 +70,7 @@ Especifica o caminho para o arquivo .vstemplate de um projeto em um modelo de v�
  Esse texto especifica o caminho para o arquivo .vstemplate do modelo.  
   
 ## <a name="remarks"></a>Comentários  
- Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O elemento `ProjectTemplateLink` é usado para especificar o local do arquivo .vstemplate para um dos projetos no modelo. O arquivo .vstemplate de um modelo de vários projetos contém um elemento `ProjectTemplateLink` para cada projeto no modelo. Para obter mais informações sobre modelos de vários projetos, consulte [como: Criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md).  
+ Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O elemento `ProjectTemplateLink` é usado para especificar o local do arquivo .vstemplate para um dos projetos no modelo. O arquivo .vstemplate de um modelo de vários projetos contém um elemento `ProjectTemplateLink` para cada projeto no modelo. Para obter mais informações sobre modelos de vários projetos, consulte [como: criar modelos de vários projetos](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemplo  
  Esse exemplo mostra um arquivo simples .vstemplate raiz de vários projetos. Neste exemplo, o modelo contém dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` define o nome do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para atribuir este projeto. Se o atributo `ProjectName` não existir, o nome do arquivo .vstemplate é usado como o nome do projeto.  
@@ -97,7 +97,7 @@ Especifica o caminho para o arquivo .vstemplate de um projeto em um modelo de v�
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como: Criar modelos de multiprojeto](../ide/how-to-create-multi-project-templates.md)
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
+ [Como criar modelos multiprojeto](../ide/how-to-create-multi-project-templates.md)

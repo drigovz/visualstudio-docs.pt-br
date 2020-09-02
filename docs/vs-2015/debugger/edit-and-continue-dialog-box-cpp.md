@@ -1,5 +1,5 @@
 ---
-title: Editar e continuar a caixa de diálogo (C++) | Microsoft Docs
+title: Caixa de diálogo Editar e continuar (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704154"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
@@ -32,7 +32,7 @@ ms.locfileid: "65704154"
 
 Editar e Continuar não poderiam aplicar as alterações feitas ao seu código nativo. Essa pode ser uma condição temporária. Às vezes, Editar e Continuar não pode aplicar alterações de código nativo imediatamente, mas pode aplicá-las posteriormente durante a sessão de depuração (por exemplo, após a conclusão da chamada atual ao procedimento que agora é executado). Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).  
   
- Você pode editar o código para corrigir o erro durante a depuração ainda, pare a depuração e corrigir o código, ou ignorar o erro e continuar a depuração. Se você continuar sem fazer a correção, suas alterações de código não serão aplicadas imediatamente.  
+ Você pode editar o código para corrigir o erro enquanto estiver Depurando, parar a depuração e corrigir o código, ou ignorar o erro e continuar a depuração. Se você continuar sem fazer a correção, suas alterações de código não serão aplicadas imediatamente.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion Element (modelos de estúdio visual) | Microsoft Docs
+title: Elemento RequiredFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701505"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion elemento (modelos do Visual Studio)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 
-Especifica a versão mínima do .NET Framework que é exigido pelo modelo. Isso faz com que a versão **de destino seja** exibida na caixa de diálogo Novo **projeto.** O `RequiredFrameworkVersion` elemento também determina o menor valor disponível no dropdown.
+Especifica a versão mínima do .NET Framework exigido pelo modelo. Ele faz com que a lista suspensa da **versão do Framework de destino** seja exibida na caixa de diálogo **novo projeto** . O `RequiredFrameworkVersion` elemento também determina o menor valor disponível na lista suspensa.
 
 > [!IMPORTANT]
-> A partir da versão 15.6 do Visual Studio 2017, a versão **target framework versão** não é mais um filtro para modelos exibidos na seção **Modelos** da caixa de diálogo **Novo Projeto.** Em vez disso, o dropdown funciona como um seletor de estruturas para o modelo selecionado.
+> A partir do Visual Studio 2017 versão 15,6, o menu suspenso **versão da estrutura de destino** não é mais um filtro para modelos exibidos na seção **modelos** da caixa de diálogo **novo projeto** . Em vez disso, as funções suspensas como um seletor de estrutura para o modelo selecionado.
 
- \<VSTemplate \<> TemplateData> \<RequiredFrameworkVersion>
+ \<VSTemplate> \<TemplateData>
+ \<RequiredFrameworkVersion>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <RequiredFrameworkVersion> .... </RequiredFrameworkVersion>
@@ -47,7 +48,7 @@ Especifica a versão mínima do .NET Framework que é exigido pelo modelo. Isso 
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
@@ -56,11 +57,11 @@ Especifica a versão mínima do .NET Framework que é exigido pelo modelo. Isso 
 
 ## <a name="remarks"></a>Comentários
 
-`RequiredFrameworkVersion` é um elemento opcional. Use este elemento somente se o modelo suportar uma versão mínima específica (e versões posteriores, se houver) do .NET Framework. Se você `RequiredFrameworkVersion` especificar o elemento e seu modelo não suportar uma versão mínima específica do .NET Framework, a versão **de destino será** exibida quando não for aplicável.
+`RequiredFrameworkVersion` é um elemento opcional. Use esse elemento somente se o modelo oferecer suporte a uma versão mínima específica (e versões posteriores, se houver) da .NET Framework. Se você especificar o `RequiredFrameworkVersion` elemento e o modelo não oferecer suporte a uma versão mínima específica do .NET Framework, a lista suspensa **versão do Framework de destino** será exibida quando não for aplicável.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir ilustra os [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadados de um modelo de classe padrão.
+O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo de classe padrão.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,7 +81,7 @@ O exemplo a seguir ilustra os [!INCLUDE[csprcs](../data-tools/includes/csprcs_md
 </VSTemplate>
 ```
 
-Neste exemplo, a versão mínima do .NET Framework que é `RequiredFrameworkVersion`exigido pelo modelo, representado por , é 3.0. Um projeto criado com este modelo pode segmentar versões .NET Framework a partir de 3.0.
+Neste exemplo, a versão mínima do .NET Framework exigido pelo modelo, representada por `RequiredFrameworkVersion` , é 3,0. Um projeto criado com este modelo pode se destinar a versões .NET Framework a partir de 3,0.
 
 ## <a name="see-also"></a>Confira também
 

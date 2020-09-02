@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9dc3436412fc75fc2879ad855a369f8207e0ae49
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816950"
 ---
 # <a name="illegal-assignment-javascript"></a>Atribuição ilegal (JavaScript)
@@ -28,5 +28,5 @@ Você tentou atribuir um valor a um identificador somente leitura. Você não po
   
 - Não atribua valores a identificadores somente leitura.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Operador de atribuição (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

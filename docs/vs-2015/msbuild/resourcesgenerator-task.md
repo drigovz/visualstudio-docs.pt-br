@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682133"
 ---
 # <a name="resourcesgenerator-task"></a>Tarefa ResourcesGenerator
@@ -34,9 +34,9 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> insere um ou ma
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`OutputPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho do diretório de saída. Se o caminho não for um caminho absoluto, ele será tratado como um caminho relativo ao diretório do projeto raiz.|  
+|`OutputPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho do diretório de saída. Se o caminho não for um caminho absoluto, ele será tratado como um caminho relativo ao diretório do projeto raiz.|  
 |`OutputResourcesFile`|Parâmetro de saída **ITaskItem[]** obrigatório.<br /><br /> Especifica o caminho e o nome dos arquivos .resource gerados. Se o caminho não for um caminho absoluto, o arquivo .resources será gerado em relação ao diretório raiz do projeto.|  
-|`ResourcesFiles`|Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica um ou mais recursos para ser inserido no arquivo .resources gerado.|  
+|`ResourcesFiles`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica um ou mais recursos para ser inserido no arquivo .resources gerado.|  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir gera um arquivo .resources com um único recurso .bmp. O recurso .bmp é gerado para um diretório relativo ao diretório raiz do projeto.  
@@ -55,9 +55,9 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> insere um ou ma
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Como compilar um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Criando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

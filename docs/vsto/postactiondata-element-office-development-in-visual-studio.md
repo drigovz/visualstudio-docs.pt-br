@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541863"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento postActionData (desenvolvimento do Office no Visual Studio)
   O `postActionData` elemento do `vstav3` namespace Especifica os dados associados a qualquer ação pós-implantação que é executada Depois que as soluções do Office são instaladas.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <postActionData>
@@ -36,7 +36,7 @@ ms.locfileid: "85541863"
 
  O `postActions` elemento não tem atributos.
 
- `postActions`Não tem nenhum elemento filho.
+ `postActions` Não tem nenhum elemento filho.
 
 ## <a name="post-deployment-action-example"></a>Exemplo de ação pós-implantação
 

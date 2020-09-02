@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348100"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar o JavaScript usando o console no Visual Studio
@@ -249,11 +249,11 @@ A ilustração a seguir mostra a lista de destino na janela Console do JavaScrip
 
 Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. A lista **Destino** fornece um acesso melhor a outros contextos de execução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Atalhos do teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Depurar um controle do WebView](../debugger/debug-a-webview-control.md)

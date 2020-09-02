@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701177"
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
-Esta função verifica arquivos previamente verificados no sistema de controle de origem, armazenando as alterações e criando uma nova versão. Esta função é chamada com uma contagem e uma matriz de nomes dos arquivos a serem verificados.
+Essa função faz check-out de arquivos extraídos anteriormente no sistema de controle do código-fonte, armazenando as alterações e criando uma nova versão. Essa função é chamada com uma contagem e uma matriz de nomes dos arquivos nos quais será feito o check-in.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,57 +36,57 @@ SCCRTN SccCheckin (
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pvContext
 
-[em] A estrutura de contexto plug-in de controle de origem.
+no A estrutura de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[em] Uma alça para a janela IDE que o plug-in SCC pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in SCC pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
- nArquivos
+ nFiles
 
-[em] Número de arquivos selecionados para serem verificados.
+no Número de arquivos selecionados para fazer check-in.
 
  lpFileNames
 
-[em] Matriz de nomes de caminhos locais totalmente qualificados de arquivos a serem verificados.
+no Matriz de nomes de caminho locais totalmente qualificados dos arquivos nos quais fazer check-in.
 
  lpComment
 
-[em] Comentário a ser aplicado a cada um dos arquivos selecionados que estão sendo verificados. Este parâmetro `NULL` é se o plug-in de controle de origem deve solicitar um comentário.
+no Comentário a ser aplicado a cada um dos arquivos selecionados que estão sendo verificados. Esse parâmetro é `NULL` se o plug-in de controle do código-fonte solicitar um comentário.
 
- fOpções
+ fOptions
 
-[em] Bandeiras de comando, 0 ou `SCC_KEEP_CHECKEDOUT`.
+no Sinalizadores de comando, 0 ou `SCC_KEEP_CHECKEDOUT` .
 
- pvOpções
+ pvOptions
 
-[em] Opções específicas de plug-in SCC.
+no Opções específicas de plug-in SCC.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|O arquivo foi verificado com sucesso.|
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle de código fonte.|
-|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção. Recomenda-se uma nova tentativa.|
-|SCC_E_NONSPECIFICERROR|Falha inespecífica. O arquivo não foi verificado.|
-|SCC_E_NOTCHECKEDOUT|O usuário não checou o arquivo, então não pode fazer o check-in.|
-|SCC_E_CHECKINCONFLICT|O check-in não pôde ser realizado porque:<br /><br /> - Outro usuário fez `bAutoReconcile` check-in na frente e foi falso.<br /><br /> -ou-<br /><br /> - A fusão automática não pode ser feita (por exemplo, quando os arquivos são binários).|
-|SCC_E_VERIFYMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado na verificação pendente do usuário.|
+|SCC_OK|O check-in do arquivo foi realizado com êxito.|
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|
+|SCC_E_NONSPECIFICERROR|Falha não específica. O check-in do arquivo não foi feito.|
+|SCC_E_NOTCHECKEDOUT|O usuário não fez o check-out do arquivo; portanto, não é possível verificá-lo.|
+|SCC_E_CHECKINCONFLICT|O check-in não pôde ser executado porque:<br /><br /> -Outro usuário fez o check-in antecipado e `bAutoReconcile` foi falso.<br /><br /> - ou -<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|
+|SCC_E_VERIFYMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado na verificação de usuário pendente.|
 |SCC_E_FIXMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado devido a um conflito de mesclagem que deve ser resolvido manualmente.|
-|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a realizar esta operação.|
+|SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|
 |SCC_E_FILENOTEXIST|O arquivo local não foi encontrado.|
 
 ## <a name="remarks"></a>Comentários
- O comentário se aplica a todos os arquivos que estão sendo verificados. O argumento de `null` comentário pode ser uma string, nesse caso o plug-in de controle de origem pode solicitar ao usuário uma seqüência de comentários para cada arquivo.
+ O comentário se aplica a todos os arquivos cujo check-in está sendo feito. O argumento comment pode ser uma `null` cadeia de caracteres; nesse caso, o plug-in de controle do código-fonte pode solicitar ao usuário uma cadeia de caracteres de comentário para cada arquivo.
 
- O `fOptions` argumento pode ser dado um valor do `SCC_KEEP_CHECKEDOUT` sinalizador para indicar a intenção do usuário de verificar o arquivo e verificar novamente.
+ O `fOptions` argumento pode receber um valor do `SCC_KEEP_CHECKEDOUT` sinalizador para indicar a intenção do usuário de verificar o arquivo e conferir novamente.
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

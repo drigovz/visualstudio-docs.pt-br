@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701282"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Função SccAddFilesFromSCC
-Esta função adiciona uma lista de arquivos do controle de origem ao projeto atualmente aberto.
+Essa função adiciona uma lista de arquivos do controle do código-fonte ao projeto atualmente aberto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,53 +38,53 @@ SCCRTN SccAddFilesFromSCC(
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pContext
 
-[em] O ponteiro de contexto plug-in de controle de origem.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
  lpUser
 
-[dentro, fora] O nome de usuário (até SCC_USER_SIZE, incluindo o exterminador nulo).
+[entrada, saída] O nome de usuário (até SCC_USER_SIZE, incluindo o terminador nulo).
 
  lpAuxProjPath
 
-[dentro, fora] Seqüência auxiliar identificando o `SCC_PRJPATH_`projeto (até TAMANHO, incluindo o exterminador nulo).
+[entrada, saída] Cadeia de caracteres auxiliar que identifica o projeto (até `SCC_PRJPATH_` o tamanho, incluindo o terminador nulo).
 
- cArquivos
+ recfiles
 
-[em] Número de arquivos `lpFilePaths`dados por .
+no Número de arquivos fornecidos pelo `lpFilePaths` .
 
  lpFilePaths
 
-[dentro, fora] Matriz de nomes de arquivos para adicionar ao projeto atual.
+[entrada, saída] Matriz de nomes de arquivos a serem adicionados ao projeto atual.
 
- lpDestino
+ lpDestination
 
-[em] O caminho de destino onde os arquivos devem ser escritos.
+no O caminho de destino onde os arquivos devem ser gravados.
 
  lpComment
 
-[em] O comentário a ser aplicado a cada um dos arquivos a serem adicionados.
+no O comentário a ser aplicado a cada um dos arquivos que estão sendo adicionados.
 
- pbResultados
+ pbResults
 
-[dentro, fora] Matriz de sinalizadores definidos para indicar sucesso (não zero ou TRUE) ou falha (zero ou `cFiles` FALSO) para cada arquivo (o tamanho da matriz deve ser pelo menos longo).
+[entrada, saída] Matriz de sinalizadores que são definidos para indicar êxito (diferente de zero ou verdadeiro) ou falha (zero ou falso) para cada arquivo (o tamanho da matriz deve ser pelo menos `cFiles` longo).
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|O projeto não está aberto.|
-|SCC_E_OPNOTPERFORMED|Conexão não é para o mesmo projeto especificado por`lpAuxProjPath.`|
+|SCC_E_OPNOTPERFORMED|A conexão não é do mesmo projeto especificado por `lpAuxProjPath.`|
 |SCC_E_NOTAUTHORIZED|O usuário não está autorizado a atualizar o banco de dados.|
 |SCC_E_NONSPECIFICERROR|Erro desconhecido.|
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

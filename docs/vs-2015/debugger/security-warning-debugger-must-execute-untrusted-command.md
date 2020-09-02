@@ -1,5 +1,5 @@
 ---
-title: 'Aviso de segurança: O depurador deve executar o comando não confiável | Microsoft Docs'
+title: 'Aviso de segurança: o depurador deve executar o comando não confiável | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,25 +17,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683293"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Aviso de segurança: O depurador deve executar o comando não confiável
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Aviso de segurança: o depurador deve executar o comando não confiável
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta caixa de diálogo de aviso aparece quando você estiver usando o servidor de origem. Indica que o comando que o depurador precisa executar para obter o código-fonte não está na lista de comandos confiáveis para o servidor de origem contido no arquivo srcsvr.ini. Se esse for um comando válido, você poderá adicioná-lo ao arquivo srcsvr.ini. Caso contrário, você não deverá executá-lo. Para obter mais informações, consulte [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Esta caixa de diálogo de aviso aparece quando você estiver usando o servidor de origem. Indica que o comando que o depurador precisa executar para obter o código-fonte não está na lista de comandos confiáveis para o servidor de origem contido no arquivo srcsvr.ini. Se esse for um comando válido, você poderá adicioná-lo ao arquivo srcsvr.ini. Caso contrário, você não deverá executá-lo. Para obter mais informações, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## <a name="message-text"></a>Mensagem de texto  
+## <a name="message-text"></a>Texto da mensagem  
  **O depurador deve executar o seguinte comando não confiável para obter o código-fonte do servidor de origem.**  
   
  **Se o arquivo de símbolo de depuração (\*.pdb) não for de uma origem conhecida e confiável, a execução deste comando pode ser inválida ou perigosa.**  
   
  **Você deseja executar este comando?**  
   
-## <a name="uielement-list"></a>Lista UIElement  
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário  
  Caixa de texto  
  Comando do arquivo de .pdb a ser executado.  
   
@@ -45,7 +45,7 @@ Esta caixa de diálogo de aviso aparece quando você estiver usando o servidor d
  Não execute  
  Interromper a execução de comando e fazer download do arquivo do servidor de origem.  
   
-## <a name="see-also"></a>Consulte também  
- [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Servidor de Origem](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Servidor de origem](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

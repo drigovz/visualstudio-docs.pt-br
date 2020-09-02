@@ -11,28 +11,28 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62b84bd77038c7a17b65f764bd303d6a6372a52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154157"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Estende o [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interface para ativar a recuperação das interfaces do módulo e o processo.  
+Estende a interface [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) para habilitar a recuperação de interfaces de módulo e de processo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCodeContext3 : IDebugCodeContext2  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
  Implementado por mecanismos de depuração e consumido pelo [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] pacote de depuração.  
   
 ## <a name="methods"></a>Métodos  
- Além dos métodos no `IDebugCodeContext2` interface, essa interface implementa os seguintes métodos:  
+ Além dos métodos na `IDebugCodeContext2` interface, essa interface implementa os seguintes métodos:  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -40,11 +40,11 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera uma referência à interface do processo de depuração.|  
   
 ## <a name="remarks"></a>Comentários  
- Esta é uma interface opcional que geralmente não precisa ser implementado.  
+ Essa é uma interface opcional que geralmente não precisa ser implementada.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Msdbg.h  
+ Cabeçalho: Msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

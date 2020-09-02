@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200080"
 ---
 # <a name="sccgetuseroption-function"></a>Função SccGetUserOption
@@ -36,30 +36,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>Parâmetros  
  pContext  
- [in] O ponteiro de contexto de plug-in de controle do código-fonte.  
+ no O ponteiro de contexto do plug-in de controle do código-fonte.  
   
  nOption  
- [in] Opção de recuperação (consulte comentários para obter possíveis opções).  
+ no Opção para recuperar (consulte comentários para as opções possíveis).  
   
  lpVal  
- [out] Valor associado com a opção.  
+ fora Valor associado à opção.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|SCC_OK|Opção foi recuperada com êxito.|  
+|SCC_OK|A opção foi recuperada com êxito.|  
 |SCC_E_OPNOTSUPPORTED|Não há suporte para a opção.|  
 |SCC_E_NONSPECIFICERROR|Ocorreu um erro não especificado.|  
   
 ## <a name="remarks"></a>Comentários  
- As opções a seguir têm suporte por este comando:  
+ As opções a seguir são suportadas por este comando:  
   
 |Opção de usuário|Descrição|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se o usuário deseja fazer check-out da versão local dos arquivos. `lpVal` é atribuída `SCC_USEROPT_COLV_YES` (o usuário deseja fazer check-out de arquivos locais) ou `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se o usuário deseja fazer check-out da versão local dos arquivos. `lpVal` é atribuído `SCC_USEROPT_COLV_YES` (o usuário deseja fazer check-out de arquivos locais) ou `SCC_USEROPT_COLV_NO` .|  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
- [Códigos de erro](../extensibility/error-codes.md)
+## <a name="see-also"></a>Consulte Também  
+ [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
+ [Códigos de Erro](../extensibility/error-codes.md)

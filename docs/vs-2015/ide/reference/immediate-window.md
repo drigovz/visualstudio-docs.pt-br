@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651281"
 ---
 # <a name="immediate-window"></a>Janela imediata
@@ -30,7 +30,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
  É possível usar essa janela para emitir comandos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuais. Os comandos disponíveis incluem `EvaluateStatement`, que pode ser usado para atribuir valores a variáveis. A janela **Imediato** também dá suporte ao IntelliSense.
 
 ## <a name="displaying-the-values-of-variables"></a>Exibindo os valores de variáveis
- Essa janela pode ser particularmente útil ao depurar um aplicativo. Por exemplo, para verificar o valor de uma variável `varA`, você pode usar o [Comando Imprimir](../../ide/reference/print-command.md):
+ Essa janela pode ser particularmente útil ao depurar um aplicativo. Por exemplo, para verificar o valor de uma variável `varA` , você pode usar o [comando Print](../../ide/reference/print-command.md):
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
  As duas versões desse comando retornarão o valor da variável `varA`.
 
 > [!NOTE]
-> Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.
+> Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, alterne para a janela de **comando** .
 
 ## <a name="design-time-expression-evaluation"></a>Avaliação de expressões em tempo de design
  Você pode usar a janela **Imediato** para executar uma função ou sub-rotina em tempo de design.
@@ -70,7 +70,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 
 2. No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.
 
-3. Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.
+3. Digite `?MyFunction(2)` a janela **imediata** e pressione Enter.
 
     A janela **Imediato** executará `MyFunction` e exibirá `4`.
 
@@ -122,5 +122,5 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 
 2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.
 
-## <a name="see-also"></a>Consulte também
- [Navegando pelo código com a](../../debugger/navigating-through-code-with-the-debugger.md) depuração da [janela de comando](../../ide/reference/command-window.md) do depurador [no Visual Studio](../../debugger/debugging-in-visual-studio.md) [conceitos básicos do depurador](../../debugger/debugger-basics.md) [: Depurando em tempo de design,](../../debugger/walkthrough-debugging-at-design-time.md) [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [usando regular Expressões no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Navegando pelo código com a](../../debugger/navigating-through-code-with-the-debugger.md) depuração da [janela de comando](../../ide/reference/command-window.md) do depurador [no Visual Studio](../../debugger/debugging-in-visual-studio.md) [Debugger Basics](../../debugger/debugger-basics.md) [Walkthrough: Depurando em tempo de design,](../../debugger/walkthrough-debugging-at-design-time.md) [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

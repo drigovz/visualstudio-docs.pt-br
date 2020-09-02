@@ -26,15 +26,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595612"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
-A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar esta caixa de diálogo clicando **Environment** > em **Opções de** > **ferramentas**e, em seguida, selecionando Fontes e**cores do**ambiente .
+A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar essa caixa de diálogo clicando em **ferramentas**  >  **Opções**e, em **Environment**seguida, selecionando  >  **fontes e cores**do ambiente.
 
 As alterações no esquema de cores não são implementadas durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 
@@ -42,7 +42,7 @@ As alterações no esquema de cores não são implementadas durante a sessão em
 
 Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Depois de selecionar um item dessa lista, você pode personalizar as configurações de cor do item selecionado em **Itens de exibição**.
 
-- **Editor de texto**
+- **Editor de Texto**
 
      Alterações nas configurações de vídeo de estilo, tamanho, e cor da fonte no Editor de Texto afetam a aparência do texto em seu editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.
 
@@ -63,7 +63,7 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
 
 - **Fonte do ambiente**
 
-     Altera o estilo e o tamanho da fonte para todos os elementos de interface de usuário do IDE que ainda não possuem uma opção separada nas **configurações show para**.
+     Altera o estilo e o tamanho da fonte para todos os elementos da interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações para**.
 
      ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.
 
     > [!NOTE]
-    > Alterações no texto de [Todos os itens **do Text Tool Windows]** não têm efeito durante a sessão em que você os faz. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
+    > As alterações no texto de itens **[janelas de ferramentas de texto]** não entram em vigor durante a sessão em que você os faz. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
 
 **Usar Padrões**
 
@@ -104,7 +104,7 @@ Alguns dos itens de exibição incluem:
 |**Texto sem formatação**|Texto no editor.|
 |**Texto Selecionado**|Texto incluído na seleção atual quando o editor está em foco.|
 |**Texto Selecionado Inativo**|Texto incluído na seleção atual quando o editor sai de foco.|
-|**Margem indicadora**|a margem à esquerda do Editor de Códigos em que os ícones dos pontos de interrupção e de indicador são exibidos.|
+|**Margem do indicador**|a margem à esquerda do Editor de Códigos em que os ícones dos pontos de interrupção e de indicador são exibidos.|
 |**Números de linha**|Números opcionais que aparecem ao lado de cada linha de código|
 |**Espaço em branco visível**|Espaços, tabulações e indicadores de quebra automática de linha|
 |**Indicador**|Linhas com indicadores. O **Indicador** só ficará visível se a margem de indicadores estiver desabilitada.|
@@ -126,13 +126,13 @@ Alguns dos itens de exibição incluem:
 |**Retorno de Chamada**|Especifica a cor de realce para instruções ou linhas de origem que indicam pontos de retorno de chamada quando o contexto é alternado para um registro de ativação não superior durante a depuração.|
 |**Campo dependente de snippet de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
 |**Campo de Snippet de Código**|Campo editável quando um snippet de código está ativo.|
-|**Texto dobrável**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
+|**Texto recolhível**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
 |**Comentário**|Comentários sobre o código.|
 |**Erro do Compilador**|Rabiscos azuis no editor que indicam um erro do compilador.|
 |**Área Sem Alcance de Cobertura**|Código que não foi coberto por um teste de unidade.|
 |**Área Com Alcance de Cobertura Parcial**|Código que foi coberto parcialmente por um teste de unidade.|
 |**Área de Cobertura Alcançada**|Código que foi coberto completamente por um teste de unidade.|
-|**Comentário CSS**|Um comentário em folhas de estilos em cascata. Por exemplo: <br /><br /> /* comentário \*/|
+|**Comentário CSS**|Um comentário em folhas de estilos em cascata. Por exemplo:<br /><br /> /* comentário \*/|
 |**Palavra-chave CSS**|Palavras-chave na folha de estilos em cascata.|
 |**Nome da Propriedade CSS**|O nome de uma propriedade, como Tela de Fundo.|
 |**Valor da Propriedade CSS**|O valor atribuído a uma propriedade, como azul.|
@@ -149,10 +149,10 @@ Alguns dos itens de exibição incluem:
 |**Texto de Desmontagem**|A cor do texto usado para exibir dados e códigos de operação dentro da janela **Desmontagem**.|
 |**Código Excluído**|Código que não deve ser compilado, de acordo com uma diretiva de pré-processador condicional como `#if`.|
 |**Identificador**|Identificadores no código, como nomes de classes, nomes de métodos e nomes de variáveis.|
-|**Palavra**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
+|**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória.**|
+|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela de **memória** .|
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|
 |**Número**|Um número no código que representa um valor numérico real.|
 |**Operador**|Operadores, como +, - e !=.|
@@ -164,11 +164,11 @@ Alguns dos itens de exibição incluem:
 |**Campo dependente de refatoração**|Cor das referências do elemento a ser refatorado na caixa de diálogo **Visualizar Alterações**.|
 |**Dados do Registro**|A cor do texto usado para exibir dados dentro da janela **Registros**.|
 |**NAT do Registro**|A cor do texto usado para exibir dados e objetos não reconhecidos dentro da janela **Registros**.|
-|**Tag inteligente**|Usado para indicar a estrutura de tópicos quando marcações inteligentes são invocadas.|
+|**Marca inteligente**|Usado para indicar a estrutura de tópicos quando marcações inteligentes são invocadas.|
 |**Marcador DML SQL**|Aplica-se ao editor de Transact-SQL. Por padrão, instruções DML neste editor são marcadas com uma caixa delimitadora azul.|
 |**Código Obsoleto**|Código obsoleto que aguarda atualização. Em alguns casos, Editar e Continuar não pode aplicar alterações de código imediatamente, mas os aplicará mais tarde enquanto você continua a depuração. Isso ocorre se você editar uma função que deve chamar a função que está em execução ou se você adicionar mais de 64 bytes de novas variáveis a uma função em espera na pilha de chamadas. Quando isso acontece, o depurador exibe uma caixa de diálogo "Aviso de Código Obsoleto", e o código obsoleto continua sendo executado até que a função em questão termine e seja chamada novamente. Editar e Continuar aplica as alterações de código nesse momento.|
 |**Cadeia de caracteres**|Literais de cadeia de caracteres.|
-|**Cadeia de caracteres (C# @ Textual)**|Literais de cadeia de caracteres em C# que são interpretadas de forma textual. Por exemplo: <br /><br /> @"x"|
+|**Cadeia de caracteres (C# @ Textual)**|Literais de cadeia de caracteres em C# que são interpretadas de forma textual. Por exemplo:<br /><br /> @"x"|
 |**Erro de sintaxe**|Erros de análise.|
 |**Atalho da Lista de Tarefas**|Se um atalho de **Lista de Tarefas** for adicionado a uma linha e a margem de indicadores for desabilitada, a linha será realçada.|
 |**Tracepoint (Desabilitado)**|Não usado.|
@@ -196,10 +196,10 @@ Alguns dos itens de exibição incluem:
 |**Atributo XML**|Nomes de atributo.|
 |**Aspas do Atributo XML**|Os caracteres de aspas para atributos XML.|
 |**Valor do Atributo XML**|Conteúdo de atributos XML.|
-|**Seção Cdata XML**|Conteúdo de \<![CDATA[...]]>.|
+|**Seção Cdata XML**|Conteúdo de \<![CDATA[...]]> .|
 |**Comentário XML**|O conteúdo de \<!-- -->.|
-|**Delimitador XML**|Delimitadores da sintaxe XML, incluindo <, <?, <!, \<!--, -->, ?\>, \<![, ]]> e [, ].|
-|**Atributo de Documento XML**|O valor de um atributo de documentação XML, como \<param name="I">, em que o "I" é colorido.|
+|**Delimitador XML**|Delimitadores de sintaxe XML, incluindo <, <?, <!, \<!--, --> ,? \> , \<![, ]]> e [,].|
+|**Atributo de Documento XML**|O valor de um atributo de documentação XML, como \<param name="I"> onde o "I" é colorido.|
 |**Comentário da documentação XML**|Os comentários incluídos nos comentários de documentação XML.|
 |**Marcação de Documento XML**|As marcações em comentários de documentos XML, como<br /><br /> /// \<summary>.|
 |**Palavra-Chave XML**|Palavras-chave DTD, como CDATA, IDREF e NDATA.|
@@ -212,11 +212,11 @@ Alguns dos itens de exibição incluem:
 
 Exibe as cores disponíveis que você pode escolher para o primeiro plano do item selecionado em **Itens de exibição**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor de primeiro plano do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
-**Automático**
+**Automática**
 
 Os itens podem herdar a cor de primeiro plano de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
 
-**Padrão**
+**Default**
 
 A cor exibida para o item na primeira vez que você abre o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
 
@@ -231,11 +231,11 @@ Exibe a caixa de diálogo Cor para permitir que você defina uma cor personaliza
 
 Fornece uma paleta de cores na qual você pode escolher uma cor da tela de fundo para o item selecionado em **Itens de exibição**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
-**Automático**
+**Automática**
 
 Os itens podem herdar a cor da tela de fundo de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
 
-**Padrão**
+**Default**
 
 A cor exibida para o item na primeira vez que você abre o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
 
@@ -253,5 +253,5 @@ Exibe uma amostra do esquema de cores, tamanho e estilo da fonte de **Mostrar co
 
 ## <a name="see-also"></a>Confira também
 
-- [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Caixa de diálogo opções](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

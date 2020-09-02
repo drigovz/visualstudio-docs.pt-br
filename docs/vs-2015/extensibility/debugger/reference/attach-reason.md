@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153583"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica o motivo para o mecanismo de depuração (DE) para anexar a um nó de programa.  
+Especifica o motivo pelo qual o mecanismo de depuração (DE) deve ser anexado a um nó de programa.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_ATTACH_REASON {   
@@ -45,25 +45,25 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>Membros  
  ATTACH_REASON_AUTO  
- Anexe porque o processo está atualmente no modo de depuração.  
+ Anexar porque o processo está atualmente em modo de depuração.  
   
  ATTACH_REASON_LAUNCH  
- Anexe porque o processo foi iniciado.  
+ Anexar porque o processo foi iniciado.  
   
  ATTACH_REASON_USER  
- Anexe devido a uma solicitação de usuário.  
+ Anexar devido a uma solicitação do usuário.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores são usados como um parâmetro para o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) métodos.  
+ Esses valores são usados como um parâmetro para os métodos [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Anexar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [Anexa](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
