@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5803b720ae1271d8319310820d1f0dc159db8bf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670269"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refatorando classes e tipos (Designer de Classe)
@@ -40,10 +40,10 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 |Tarefa|Conteúdo de suporte|
 |----------|------------------------|
 |**Classes de refatoração:** você pode usar as operações de refatoração para dividir uma classe em classes parciais ou para implementar uma classe base abstrata.|-   [Como dividir uma classe em classes parciais (Designer de Classe)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
-|**Trabalho com interfaces:** no Designer de Classe, você pode implementar uma interface no diagrama de classe se ela for conectada a uma classe que fornece o código para os métodos de interface.|-   [Como implementar uma interface (Designer de Classe)](../ide/how-to-implement-an-interface-class-designer.md)|
-|**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomeando tipos e membros de tipo](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Como mover membros de tipo de um tipo para o outro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Como criar um tipo que permite valor nulo (Designer de Classe)](../ide/how-to-create-a-nullable-type-class-designer.md)|
+|**Trabalho com interfaces:** no Designer de Classe, você pode implementar uma interface no diagrama de classe se ela for conectada a uma classe que fornece o código para os métodos de interface.|-   [Como: implementar uma interface (Designer de Classe)](../ide/how-to-implement-an-interface-class-designer.md)|
+|**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomeando tipos e membros de tipo](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Movendo membros de tipo de um tipo para outro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Como criar um tipo anulável (Designer de Classe)](../ide/how-to-create-a-nullable-type-class-designer.md)|
 
-### <a name="RenamingTypesAndMembers"></a> Renomeando tipos e membros de tipo
+### <a name="renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> Renomeando tipos e membros de tipo
  No Designer de Classe, você pode renomear um tipo ou um membro de um tipo no diagrama de classe ou na janela Propriedades. Na janela Detalhes da Classe, você pode alterar o nome de um membro, mas não um tipo. A renomeação de um tipo ou membro do tipo propaga para todas as janelas e locais de código onde o nome antigo é exibido.
 
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Para renomear um nome no Designer de Classe
@@ -77,7 +77,7 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 
      O novo nome propagada para todas as janelas e locais de código no projeto atual em que o nome antigo é exibido.
 
-### <a name="MovingTypeMembers"></a> Movendo membros de um tipo para o outro
+### <a name="moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> Movendo membros de um tipo para o outro
  Usando o **Designer de Classe**, você poderá mover um membro de tipo de um tipo para outro, se ambos estiverem visíveis no diagrama de classe atual.
 
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Para mover um membro de um tipo para o outro

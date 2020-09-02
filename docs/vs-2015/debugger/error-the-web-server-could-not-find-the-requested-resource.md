@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845126"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Erro: o servidor Web não conseguiu localizar o recurso solicitado
@@ -34,6 +34,6 @@ Devido aos critérios de segurança, o IIS retornou um erro genérico.
   
  Para obter mais informações sobre como solucionar problemas do IIS, confira [Gerenciamento e administração do IIS](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
-## <a name="see-also"></a>Veja também  
- [Ferramenta de segurança do UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
- [Erro: o servidor Web foi bloqueado e está bloqueando o verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+## <a name="see-also"></a>Consulte Também  
+ [Ferramenta de segurança UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+ [Erro: o servidor Web foi bloqueado e está bloqueando o verbo de depuração](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

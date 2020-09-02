@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4bac80ca02fb64a502bd42fdab1f1e70e453942
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149912"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um determinado endereço.  
+Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um determinado endereço.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,18 +35,18 @@ HRESULT findInlineFramesByAddr ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `isect`  
- [in] Especifica o componente de seção do endereço.  
+ no Especifica o componente da seção do endereço.  
   
  `offset`  
- [in] Especifica o componente de deslocamento do endereço.  
+ no Especifica o componente de deslocamento do endereço.  
   
  `ppResult`  
- [out] Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros que são recuperados.  
+ fora Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros recuperados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   

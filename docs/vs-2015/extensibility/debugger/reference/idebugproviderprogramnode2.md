@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692208"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface realiza marshaling de interfaces relacionadas ao programa nos limites do processo.  
+Essa interface empacota interfaces relacionadas a programas entre limites de processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,29 +30,29 @@ Essa interface realiza marshaling de interfaces relacionadas ao programa nos lim
 IDebugProviderProgramNode2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DES) implementa essa interface no mesmo objeto que implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para dar suporte a interfaces de marshaling entre limites de processo.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O mecanismo de depuração (DE) implementa essa interface no mesmo objeto que implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) para dar suporte a interfaces de marshaling entre limites de processo.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chame [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em um `IDebugProgramNode2` interface para obter essa interface. Se essa interface não pode ser obtida, o DE não suporta o marshaling de interfaces.  
+ Chame [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em uma `IDebugProgramNode2` interface para obter essa interface. Se essa interface não puder ser obtida, a DE não oferecerá suporte ao marshaling de interfaces.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- Essa interface implementa o método a seguir:  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ Essa interface implementa o seguinte método:  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtém uma interface especificada nos limites do processo.|  
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtém uma interface especificada entre limites de processo.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa interface é implementada quando a Alemanha é executado em um espaço de processo separado do programa que está sendo depurado: por exemplo, quando o DE está em execução no espaço de processo do Visual Studio em vez de espaço de processo do programa que está sendo depurado.  
+ Essa interface é implementada quando a DE é executada em um espaço de processo separado do programa que está sendo depurado: por exemplo, quando o DE está em execução no espaço de processo do Visual Studio, em vez do espaço de processo do programa que está sendo depurado.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

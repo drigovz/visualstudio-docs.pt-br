@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ac8b5d562f91949637c9129f752821734520d7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657006"
 ---
 # <a name="collection-activity-designers"></a>Designer de atividade de coleção
 Os designers de atividade de coleção são usados para criar e configurar as atividades usadas para gerenciar coleções os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar o designer de atividade e modelo de [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
 ## <a name="in-this-section"></a>Nesta seção
- [AddToCollection \<T >](../workflow-designer/addtocollection-t-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.AddToCollection%601>.
+ [AddToCollection \<T> ](../workflow-designer/addtocollection-t-activity-designer.md) Usado para criar e configurar uma <xref:System.Activities.Statements.AddToCollection%601> atividade.
 
- [Clearcollection \<T >](../workflow-designer/clearcollection-t-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.ClearCollection%601>.
+ [ \<T> ClearCollection](../workflow-designer/clearcollection-t-activity-designer.md) Usado para criar e configurar uma <xref:System.Activities.Statements.ClearCollection%601> atividade.
 
- [ExistsInCollection \<T >](../workflow-designer/existsincollection-t-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.ExistsInCollection%601>.
+ [ExistsInCollection \<T> ](../workflow-designer/existsincollection-t-activity-designer.md) Usado para criar e configurar uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade.
 
- [RemoveFromCollection \<T >](../workflow-designer/removefromcollection-t-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.RemoveFromCollection%601>.
+ [RemoveFromCollection \<T> ](../workflow-designer/removefromcollection-t-activity-designer.md) Usado para criar e configurar uma <xref:System.Activities.Statements.RemoveFromCollection%601> atividade.

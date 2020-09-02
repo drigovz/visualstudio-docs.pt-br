@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657132"
 ---
 # <a name="using-the-assert-classes"></a>Usando as classes Assert
@@ -59,5 +59,5 @@ Use as classes Assert do namespace UnitTestingFramework para verificar a funcion
 
  Decore um método de teste com o atributo ExpectedExceptionAttribute quando desejar que o método de teste verifique se uma exceção que você espera que seja lançada por um método em seu código de desenvolvimento, de fato, está sendo lançada nesse método.
 
-## <a name="see-also"></a>Consulte também
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [criar e executar testes de unidade para o código existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>Consulte Também
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [Criar e Executar Testes de Unidade para Código Existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

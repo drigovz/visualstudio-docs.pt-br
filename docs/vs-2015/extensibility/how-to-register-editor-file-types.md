@@ -1,5 +1,5 @@
 ---
-title: 'Como: Registrar os tipos de arquivo do Editor | Microsoft Docs'
+title: 'Como: registrar tipos de arquivo do editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204114"
 ---
-# <a name="how-to-register-editor-file-types"></a>Como: Registrar tipos de arquivos do Editor
+# <a name="how-to-register-editor-file-types"></a>Como registrar tipos de arquivo do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], você também pode escrever um script de registro que registra seu editor e aos ramais associados.  
+A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] classes do MPF (estrutura de pacote gerenciada). Se você estiver implementando seu pacote em nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] , também poderá escrever um script de registro que registra seu editor e as extensões associadas.  
   
-## <a name="registration-using-mpf-classes"></a>Usando Classes MPF de registro  
+## <a name="registration-using-mpf-classes"></a>Registro usando classes do MPF  
   
-#### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar tipos de arquivo do editor usando classes MPF  
+#### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar tipos de arquivo do editor usando classes do MPF  
   
-1. Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para seu editor na classe do VSPackage.  
+1. Forneça a <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para o seu editor na classe de seu VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -35,17 +35,17 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
          NameResourceID = 106)]  
     ```  
   
-     Onde ". Exemplo de"é a extensão que está registrada para este editor e"32"é o seu nível de prioridade.  
+     Em que ". Sample "é a extensão que é registrada para este editor e" 32 "é seu nível de prioridade.  
   
-     O `projectGuid` é o GUID para tipos de arquivo diverso, definidos em <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. O tipo de arquivo diverso for fornecido, para que o arquivo resultante não pretende ser uma parte do processo de compilação.  
+     O `projectGuid` é o GUID para diversos tipos de arquivo, definido em <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid> . O tipo de arquivo variado é fornecido, de modo que o arquivo resultante não fará parte do processo de compilação.  
   
-     `TemplateDir` representa a pasta que contém os arquivos de modelo são incluídos com o exemplo de editor básico gerenciado.  
+     `TemplateDir` representa a pasta que contém os arquivos de modelo incluídos com a amostra do editor básico gerenciado.  
   
-     `NameResourceID` é definido no arquivo do projeto BasicEditorUI Resources.h e identifica o editor como "Meu Editor".  
+     `NameResourceID` é definido no arquivo Resources. h do projeto BasicEditorUI e identifica o editor como "meu editor".  
   
-2. Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+2. Substitua o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
-     Em sua implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passar a instância de sua fábrica de editor, como demonstrada a seguir.  
+     Na implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passe a instância da fábrica do editor, conforme demonstrado abaixo.  
   
     ```  
     protected override void Initialize()  
@@ -59,18 +59,18 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
     }  
     ```  
   
-     Esta etapa registra a fábrica do editor e as extensões de arquivo do editor.  
+     Essa etapa registra a fábrica do editor e as extensões de arquivo do editor.  
   
-3. Cancelar o registro as fábricas de editor.  
+3. Cancele o registro das fábricas do editor.  
   
-     As fábricas de editor são canceladas automaticamente quando o VSPackage é descartado. Se o objeto de fábrica de editor implementa o <xref:System.IDisposable> interface, seu `Dispose` método é chamado depois que a fábrica tem sido cancelada com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     As fábricas de editor são desregistradas automaticamente quando o VSPackage é Descartado. Se o objeto de fábrica do editor implementar a <xref:System.IDisposable> interface, seu `Dispose` método será chamado após o cancelamento do registro da fábrica com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="registration-using-a-registry-script"></a>Usando um Script de registro do registro  
- Registrar fábricas e tipos de arquivo no formato nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] é feito usando um script de registro para gravar no registro do windows, conforme ilustrado a seguir.  
+## <a name="registration-using-a-registry-script"></a>Registro usando um script de registro  
+ Registrar fábricas de editor e tipos de arquivo em nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] é feito usando um script de registro para gravar no registro do Windows, conforme ilustrado a seguir.  
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Para registrar tipos de arquivo do editor usando um script de registro  
   
-1. No seu script de registro, definir a fábrica do editor e a cadeia de caracteres do GUID de fábrica do editor conforme mostra o `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
+1. No script do registro, defina a fábrica do editor e a cadeia de caracteres do GUID de fábrica do editor, conforme mostrado na `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
   
     ```  
   
@@ -90,13 +90,13 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
     }  
     ```  
   
-     A extensão de arquivo do editor neste exemplo é identificada como ". rtf" e a prioridade for "50". As cadeias de caracteres do GUID são definidas no arquivo Resource h do projeto de exemplo BscEdit.  
+     A extensão de arquivo do editor neste exemplo é identificada como ". rtf" e sua prioridade é "50". As cadeias de caracteres GUID são definidas no arquivo Resource. h do projeto de exemplo BscEdit.  
   
 2. Registre o VSPackage.  
   
-3. Registre-se a fábrica do editor.  
+3. Registre a fábrica do editor.  
   
-     A fábrica do editor é registrada no <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementação.  
+     A fábrica do editor está registrada na <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementação.  
   
     ```  
     // create editor factory.  
@@ -127,4 +127,4 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
     }  
     ```  
   
-     As cadeias de caracteres do GUID são definidas no arquivo Resource h do projeto BscEdit.
+     As cadeias de caracteres GUID são definidas no arquivo Resource. h do projeto BscEdit.

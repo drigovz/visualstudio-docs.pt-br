@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845999"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usando o computador de estado herdado Designer de Fluxo de Trabalho
-Ao criar um novo projeto de fluxo de trabalho de máquina de estado em [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode optar por usar o **aplicativo de console de fluxo de trabalho de máquina de estado** ou o modelo de projeto herdado da biblioteca de fluxo de trabalho de **máquina** de estado. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como criar estado aplicativos de console de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como criar uma biblioteca de fluxo de trabalho de estado (herdada)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+Ao criar um novo projeto de fluxo de trabalho de máquina de estado no [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , você pode optar por usar o **aplicativo de estado do console de fluxo** de trabalho de máquina ou o modelo de projeto herdado da biblioteca de fluxo de **trabalho** de máquina de estado. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como criar estado aplicativos de console de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como criar uma biblioteca de fluxo de trabalho de estado (herdada)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  Um fluxo de trabalho do computador de estado consiste em um conjunto de estados. Um estado denotado é como um estado inicial. Cada estado pode receber um determinado conjunto de eventos. Baseado em um evento, uma transição pode ser feita para outro estado. O fluxo de trabalho do computador de estado pode ter um estado final. Quando uma transição é feita ao estado final, o fluxo de trabalho completa.
 
@@ -42,7 +42,7 @@ Ao criar um novo projeto de fluxo de trabalho de máquina de estado em [!INCLUDE
 
 |Nome da caixa de ferramentas|Atividade|Descrição|
 |------------------|--------------|-----------------|
-|**Estado**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|Representa um estado em uma máquina de estado; pode conter atividades **StateActivity** adicionais. Para obter mais informações, consulte [usando a atividade StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx).|
+|**State**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|Representa um estado em uma máquina de estado; pode conter atividades **StateActivity** adicionais. Para obter mais informações, consulte [usando a atividade StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx).|
 |**SetState**|[SetStateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.setstateactivity.aspx)|Especifica uma transição para um novo estado. Para obter mais informações, consulte [usando a atividade SetStateActivity](https://msdn2.microsoft.com/library/bb628469.aspx).|
 |**StateInitialization**|[StateInitializationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateinitializationactivity.aspx)|Executa quando um estado estiver conectado; pode conter outras atividades. Para obter mais informações, consulte [usando a atividade StateInitialization](https://msdn2.microsoft.com/library/bb675253.aspx).|
 |**StateFinalization**|[StateFinalizationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statefinalizationactivity.aspx)|Executa atividades contidas ao sair de uma atividade [StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx) . Para obter mais informações, consulte [usando a atividade StateFinalizationActivity](https://msdn2.microsoft.com/library/bb675278.aspx).|
@@ -57,5 +57,5 @@ Ao criar um novo projeto de fluxo de trabalho de máquina de estado em [!INCLUDE
 >
 > Para abrir a janela **estrutura de tópicos do documento** , no menu **Exibir** , aponte para **outras janelas**e selecione **estrutura de tópicos do documento**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Como: criar aplicativos de estado do console de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) [como criar um](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [modelo](https://msdn2.microsoft.com/library/bb628601.aspx) de fluxo de trabalho de máquina de estado (Herdado) usando a atividade [StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx) usando a atividade [StateInitializationActivity](https://msdn2.microsoft.com/library/bb675253.aspx) [usando a atividade StateFinalizationActivity](https://msdn2.microsoft.com/library/bb675278.aspx) [usando a atividade SetStateActivity](https://msdn2.microsoft.com/library/bb628469.aspx) [usando a atividade EventDrivenActivity](https://msdn2.microsoft.com/library/bb628466.aspx)

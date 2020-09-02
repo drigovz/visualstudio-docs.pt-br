@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar a janela de Threads GPU | Microsoft Docs'
+title: 'Como: usar a janela threads GPU | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696170"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Como: Usar a janela Threads de GPU
+# <a name="how-to-use-the-gpu-threads-window"></a>Como usar a janela Threads de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos executados na GPU, consulte [C++ amp Visão geral](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  A janela de Threads da GPU contém uma tabela na qual cada linha representa um conjunto de threads de GPU que têm os mesmos valores em todas as colunas. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads da janela de Threads da GPU. As colunas a seguir são exibidas na janela Threads da GPU:  
   
@@ -55,13 +55,13 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
 ### <a name="to-display-the-gpu-threads-window"></a>Para exibir a janela Threads da GPU  
   
-1. No **Gerenciador de Soluções**, abra o menu de atalho para o projeto e escolha **Propriedades**.  
+1. No **Gerenciador de soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Propriedades**.  
   
 2. Na janela **Páginas de Propriedades** para o projeto, em **Propriedades de Configuração**, escolha **Depuração**.  
   
 3. Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.  
   
-4. Escolha o botão **OK**.  
+4. Clique no botão **OK**.  
   
 5. Defina um ponto de interrupção no código do GPU.  
   
@@ -71,7 +71,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
 ### <a name="to-change-to-a-different-active-thread"></a>Para alterar para um thread ativo diferente  
   
-- Clique duas vezes na coluna. (Teclado: Selecione a linha e escolha Enter.)  
+- Clique duas vezes na coluna. (Teclado: selecione a linha e escolha Enter.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Para exibir um determinado bloco e o thread  
   
@@ -105,7 +105,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
 - Escolha o botão de sinalizador na janela Threads da GPU.  
   
-## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Passo a passo: depurar um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+## <a name="see-also"></a>Consulte Também  
+ [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Como: usar a janela de inspeção paralela](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Walkthrough: Depurando um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

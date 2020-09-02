@@ -1,5 +1,5 @@
 ---
-title: 'Como: Gerenciar uma galeria privada usando configurações de registro | Microsoft Docs'
+title: 'Como: gerenciar uma galeria privada usando configurações do registro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204151"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Como: Gerenciar uma galeria privada usando as configurações do Registro
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Como gerenciar uma galeria privada usando as configurações do Registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se você for um administrador ou desenvolvedor de uma extensão de Shell isolado, você pode controlar o acesso para os controles, modelos e ferramentas na Galeria do Visual Studio, a Galeria de exemplos ou galerias privadas. Para tornar uma galeria disponíveis ou não disponíveis, crie um arquivo. pkgdef que descreve as chaves do registro modificado e seus valores.  
+Se você for um administrador ou o desenvolvedor de uma extensão de shell isolada, poderá controlar o acesso aos controles, modelos e ferramentas na galeria do Visual Studio, na Galeria de exemplos ou nas galerias particulares. Para tornar uma galeria disponível ou indisponível, crie um arquivo. pkgdef que descreva as chaves de registro modificadas e seus valores.  
   
-## <a name="managing-private-galleries"></a>Gerenciar galerias privadas  
+## <a name="managing-private-galleries"></a>Gerenciando galerias particulares  
  Você pode criar um arquivo. pkgdef para controlar o acesso a galerias em vários computadores. Esse arquivo deve ter o formato a seguir.  
   
 ```  
@@ -38,7 +38,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- O `Repositories` chave refere-se para a Galeria para ser habilitado ou desabilitado. Galeria do Visual Studio e a Galeria de exemplos usam GUIDs do repositório a seguir:  
+ A `Repositories` chave refere-se à galeria a ser habilitada ou desabilitada. A galeria do Visual Studio e a Galeria de exemplos usam os seguintes GUIDs de repositório:  
   
 - Galeria do Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
@@ -46,14 +46,14 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
   O `Disabled` valor é opcional. Por padrão, uma galeria está habilitada.  
   
-  O `Priority` valor determina a ordem na qual as galerias são listadas na caixa de diálogo Opções. Galeria do Visual Studio tem prioridade 10 e a Galeria de exemplos tem prioridade 20. Galerias privadas começam em prioridade 100. Se várias galerias têm o mesmo valor de prioridade, a ordem na qual eles aparecem é determinada pelos valores de suas localizada `DisplayName` atributos.  
+  O `Priority` valor determina a ordem na qual as galerias são listadas na caixa de diálogo opções. A galeria do Visual Studio tem a prioridade 10 e a Galeria de exemplos tem a prioridade 20. As galerias privadas começam com a prioridade 100. Se várias galerias tiverem o mesmo valor de prioridade, a ordem na qual eles aparecem será determinada pelos valores de seus `DisplayName` atributos localizados.  
   
-  O `Protocol` valor é necessário para galerias baseada no SharePoint ou Atom.  
+  O `Protocol` valor é necessário para galerias baseadas em Atom ou no SharePoint.  
   
-  Tanto `DisplayName`, ou ambos `DisplayNameResourceID` e `DisplayNamePackageGuid`, deve ser especificado. Se todos estiverem especificados, o `DisplayNameResourceID` e `DisplayNamePackageGuid` par é usado.  
+  `DisplayName`Ou ambos, `DisplayNameResourceID` e `DisplayNamePackageGuid` devem ser especificados. Se todos forem especificados, o `DisplayNameResourceID` par e `DisplayNamePackageGuid` será usado.  
   
-## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Desabilitando a Galeria do Visual Studio usando um arquivo. pkgdef  
- Você pode desabilitar uma galeria em um arquivo. pkgdef. A entrada a seguir desabilita a Galeria do Visual Studio:  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Desabilitando a galeria do Visual Studio usando um arquivo. pkgdef  
+ Você pode desabilitar uma galeria em um arquivo. pkgdef. A seguinte entrada desabilita a galeria do Visual Studio:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
@@ -61,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- A entrada a seguir desabilita a Galeria de exemplos:  
+ A seguinte entrada desabilita a Galeria de exemplos:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
@@ -69,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Galerias privadas](../extensibility/private-galleries.md)

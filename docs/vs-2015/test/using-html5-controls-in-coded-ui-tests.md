@@ -9,10 +9,10 @@ caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 029b547102863f4798ad261deb678c4d98596916
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657197"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
@@ -20,7 +20,7 @@ ms.locfileid: "72657197"
 
 Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -37,7 +37,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 - [Controle Video](#video-control)
 
-- [Slider](#slider)
+- [Controle deslizante](#slider)
 
 - [ProgressBar](#progressbar)
 
@@ -46,14 +46,14 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
  ![Controle do HTML5 áudio](../test/media/codedui-html5-audio.png)
 
-|Ação|Gravando|Código gerado|
+|Ação|Gravação|Código gerado|
 |------------|---------------|--------------------|
-|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
-|**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Audio|HtmlAudio.Mute()|
-|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Audio|HtmlAudio.Unmute()|
-|**Alterar volume de áudio**|Definir volume de \<name> Audio to 79%|HtmlAudio.SetVolume(float)|
+|**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Reproduzir \<name> áudio de 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Busca em uma hora específica no áudio**|Buscar \<name> áudio para 00:01:48|HtmlAudio.Seek(TimeSpan)|
+|**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pausar \<name> áudio em 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Desativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Áudio de mudo \<name>|HtmlAudio.Mute()|
+|**Ativar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Desativar mudo de \<name> áudio|HtmlAudio.Unmute()|
+|**Alterar volume de áudio**|Definir o volume de \<name> áudio para 79%|HtmlAudio.SetVolume(float)|
 
  As seguintes propriedades estão disponíveis para HtmlAudio e você pode adicionar uma declaração todos eles:
 
@@ -76,9 +76,9 @@ string Src
 string Volume
 ```
 
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
+ **Propriedades da pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id` , `Name` e `Title` .
 
- **Propriedades de filtro:** as propriedades de filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
+ **Propriedades do filtro:** As propriedades de filtro `HtmlAudio` para `Src` são `Class` , `ControlDefinition` e `TagInstance` .
 
 > [!NOTE]
 > O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.
@@ -88,14 +88,14 @@ string Volume
 
  ![Controle do HTML5 vídeo](../test/media/codedui-html5-video.png)
 
-|Ação|Gravando|Código gerado|
+|Ação|Gravação|Código gerado|
 |------------|---------------|--------------------|
-|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
-|**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Mute \<name> Video|HtmlVideo.Mute()|
-|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Unmute \<name> Video|HtmlVideo.Unmute()|
-|**Alterar volume de vídeo**|Definir volume de \<name> Video to 79%||
+|**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Reproduzir \<name> vídeo de 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Busca em uma hora específica no vídeo**|Buscar \<name> vídeo para 00:01:48|HtmlVideo.Seek(TimeSpan)|
+|**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pausar \<name> vídeo às 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Desativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Vídeo de mudo \<name>|HtmlVideo.Mute()|
+|**Ativar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Vídeo de mudo \<name>|HtmlVideo.Unmute()|
+|**Alterar volume de vídeo**|Definir o volume de \<name> vídeo para 79%||
 
  Todas as propriedades do HtmlAudio estão disponíveis para HtmlVideo. Além disso, as três propriedades a seguir também estão disponíveis. A asserção pode ser adicionada a todos eles.
 
@@ -106,9 +106,9 @@ string VideoWidth
 
 ```
 
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
+ **Propriedades da pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id` , `Name` e `Title` .
 
- **Propriedades de filtro:** as propriedades de filtro para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
+ **Propriedades do filtro:** As propriedades do filtro `HtmlVideo` para `Src` são `Poster` , `Class` , `ControlDefinition` e `TagInstance` .
 
 > [!NOTE]
 > Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.
@@ -118,9 +118,9 @@ string VideoWidth
 
  ![Controle deslizante do HTML5](../test/media/codedui-html5-slider.png)
 
-|Ação|Gravando|Código gerado|
+|Ação|Gravação|Código gerado|
 |------------|---------------|--------------------|
-|**Definir uma posição no controle deslizante**|Definir posição como \<x> in \<name> slider|HtmlSlider.ValueAsNumber=\<x>|
+|**Definir uma posição no controle deslizante**|Definir posição como \<x> no \<name> controle deslizante|HtmlSlider. ValueAsNumber =\<x>|
 
  As seguintes propriedades estão disponíveis para HtmlSlider e asserção pode ser adicionada em todos eles:
 
@@ -138,10 +138,10 @@ string ValueAsNumber
 
  ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Elementos HTML](https://www.w3schools.com/HTML/html_elements.asp)
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [Personalizando o teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)
-- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Personalização de seu teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)
+- [Configurações e plataformas com suporte para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

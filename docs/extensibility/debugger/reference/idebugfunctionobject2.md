@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728435"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Representa uma função e aprimora a interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Representa uma função e aprimora a interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFunctionObject2 : IUnknown
@@ -33,26 +33,26 @@ IDebugFunctionObject2 : IUnknown
  Um avaliador de expressão (EE) implementa essa interface para representar uma função.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Os métodos desta interface adiam os do **IDebugFunctionObject** das seguintes maneiras:
+ Os métodos dessa interface adiam os de **IDebugFunctionObject** das seguintes maneiras:
 
-- O método **IDebugEvaluate** leva sinalizadores.
+- O método **IDebugEvaluate** usa sinalizadores.
 
-- O método **CreateObject** leva sinalizadores e um tempo.
+- O método **CreateObject** usa sinalizadores e um tempo limite.
 
-- O método **CreateStringObjectWithLength** leva um comprimento.
+- O método **CreateStringObjectWithLength** usa um comprimento.
 
 ## <a name="methods"></a>Métodos
- Esta interface implementa os seguintes métodos:
+ Essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Cria um objeto que usa um construtor dado configurações de sinalizador de avaliação e um valor de tempo.|
-|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Cria um objeto de string que tem o comprimento especificado.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Cria um objeto que usa um construtor de acordo com as configurações de sinalizador de avaliação e um valor de tempo limite.|
+|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Cria um objeto de cadeia de caracteres que tem o comprimento especificado.|
 |[Avaliar](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chama a função e retorna o valor resultante como um objeto.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Ee.h
+ Cabeçalho: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

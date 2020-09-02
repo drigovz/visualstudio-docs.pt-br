@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 73d8e54938659920227b3614046b8a8f933023ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670223"
 ---
 # <a name="add-existing-project-command"></a>Comando Adicionar Projeto Existente
@@ -32,7 +32,7 @@ Adiciona um projeto existente à solução atual.
 File.AddExistingProject filename
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `filename` Opcional. O caminho completo e nome do projeto, com a extensão, do projeto a adicionar à solução.
 
  Se o argumento `filename` incluir espaços, ele deverá ficar entre aspas.
@@ -49,5 +49,5 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela](../../ide/reference/command-window.md) de comando [Localizar/comando caixa](../../ide/find-command-box.md) de comandos do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

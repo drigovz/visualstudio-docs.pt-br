@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Avaliar | Microsoft Docs
+title: 'IDebugFunctionObject2:: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d87d7d3531d198a1478b4aaa55b354c3ac101302
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728438"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
@@ -45,24 +45,24 @@ int Evaluate (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppParams`\
-[em] Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa os parâmetros de entrada. Cada um desses parâmetros foi criado usando um dos métodos Criar nesta interface.
+no Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa os parâmetros de entrada. Cada um desses parâmetros foi criado usando um dos métodos Create nesta interface.
 
 `dwParams`\
-[em] O número de `ppParams` parâmetros na matriz.
+no O número de parâmetros na `ppParams` matriz.
 
 `dwEvalFlags`\
-[em] Uma combinação de bandeiras da [enumeração EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifica como a avaliação deve ser realizada.
+no Uma combinação de sinalizadores da enumeração [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especificam como a avaliação deve ser executada.
 
 `dwTimeout`\
-[em] Especifica o tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use **INFINITE** para esperar indefinidamente.
+no Especifica o tempo máximo, em milissegundos, a aguardar antes de retornar desse método. Use **infinito** para aguardar indefinidamente.
 
 `ppResult`\
-[fora] Retorna um **IDebugObject** que representa o valor da função como um objeto.
+fora Retorna um **IDebugObject** que representa o valor da função como um objeto.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

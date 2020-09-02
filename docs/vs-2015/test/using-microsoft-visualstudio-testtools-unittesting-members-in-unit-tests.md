@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657193"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
@@ -41,7 +41,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos Usados para Estabelecer uma Ordem de Chamada
- Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Para Assemblies
  AssemblyInitialize e AssemblyCleanup são chamados logo após o assembly ser carregado e logo antes de seu assembly ser descarregado.
@@ -64,7 +64,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos Usados para Identificar Classes de Teste e Métodos
- Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -124,6 +124,6 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyeeside | Microsoft Docs
+title: IPropertyProxyEESide | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714853"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-Esta interface fornece métodos para visualizar dados sobre o objeto associado. Esta interface faz parte do suporte para visualizadores de tipo.
+Essa interface fornece métodos para exibir dados no objeto associado. Essa interface faz parte do suporte para visualizadores de tipo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IPropertyProxyEESide : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Um avaliador de expressão implementa essa interface para suportar visualizadores de tipo.
+ Um avaliador de expressão implementa essa interface para dar suporte a visualizadores de tipo.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Ligue para [getPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) para obter essa interface. Chamada [QueryInterface](/cpp/atl/queryinterface) em uma interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) para obter a interface [IPropertyProxyProvider.](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
+ Chame [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) para obter essa interface. Chame [QueryInterface](/cpp/atl/queryinterface) em uma interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) para obter a interface [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) .
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
- Os seguintes métodos são implementados por esta interface:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Os métodos a seguir são implementados por esta interface:
 
 |Método|Descrição|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Inicializa um provedor de origem de dados para que os dados do objeto possam ser acessados.|
-|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Recupera informações sobre a montagem do objeto.|
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Obtém os dados iniciais do objeto.|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Inicializa um provedor de fonte de dados para que os dados do objeto possam ser acessados.|
+|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Recupera informações sobre o assembly do objeto.|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Obtém os dados iniciais para o objeto.|
 |[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|Cria uma cópia de um armazenamento de dados existente.|
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Cria uma referência a um armazenamento de dados existente.|
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera informações sobre um conjunto específico no contexto da montagem que contém este objeto.|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera informações sobre um assembly específico no contexto do assembly que contém este objeto.|
 
 ## <a name="remarks"></a>Comentários
- Um visualizador de tipo usa essa interface para acessar os valores associados ao objeto do qual essa interface faz parte. Os dados são acessados através da interface [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) que fornece uma exibição somente de leitura dos dados.
+ Um visualizador de tipo usa essa interface para acessar os valores associados ao objeto do qual essa interface faz parte. Os dados são acessados por meio da interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , que fornece uma exibição somente leitura dos dados.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

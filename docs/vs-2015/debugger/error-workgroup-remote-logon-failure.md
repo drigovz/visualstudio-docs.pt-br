@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Falha no Logon remoto do grupo de trabalho | Microsoft Docs'
+title: 'Erro: falha de logon remoto do grupo de trabalho | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438343"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64798708"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Erro: Falha de logon remoto do grupo de trabalho
+# <a name="error-workgroup-remote-logon-failure"></a>Erro: falha no logon remoto do grupo de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este erro é:  
@@ -39,7 +39,7 @@ Este erro é:
   
  **Causa**  
   
- Esse erro pode ocorrer quando você está depurando de um computador em um grupo de trabalho e tentar se conectar ao computador remoto. Possíveis causas incluem:  
+ Esse erro pode ocorrer quando você está depurando de um computador em um grupo de trabalho e tentar se conectar ao computador remoto. As possíveis causas incluem:  
   
 - Não há nenhuma conta com o nome e a senha correspondentes no computador remoto.  
   
@@ -64,7 +64,7 @@ Este erro é:
   
 5. Na coluna **Política**, clique duas vezes em **Depurar programas** para exibir as atribuições locais atual da política de grupo na caixa de diálogo **Configuração de Política de Segurança Local**.  
   
-     ![Direitos de usuário de política de segurança local](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
+     ![Direitos de usuário da política de segurança local](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
 6. Para adicionar novos usuários, clique no botão **Adicionar Usuário ou Grupo**.  
   
@@ -76,12 +76,12 @@ Este erro é:
   
 3. Clique em **Opções de Segurança**.  
   
-4. No **diretiva** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.  
+4. Na coluna **Política**, clique duas vezes em **Acesso à rede: modelo de compartilhamento e segurança para contas locais**.  
   
-5. No **acesso à rede: Modelo de compartilhamento e segurança para contas locais** caixa de diálogo, altere o valor a ser **Clássico - os usuários locais são autenticados como eles próprios** e clique no **aplicar** botão.  
+5. Na caixa de diálogo **Acesso à rede: modelo de compartilhamento e segurança para contas locais**, altere o valor para **Clássico – os usuários locais são autenticados como eles próprios** e clique no botão **Aplicar**.  
   
      ![Opções de segurança da política de segurança local](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
-## <a name="see-also"></a>Consulte também  
- [Solução de problemas e erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Depuração remota](../debugger/remote-debugging.md)

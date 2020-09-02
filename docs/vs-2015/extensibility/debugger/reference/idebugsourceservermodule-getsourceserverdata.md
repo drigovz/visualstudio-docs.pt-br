@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
+title: 'IDebugSourceServerModule:: GetSourceServerData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e40c8542dad9ea64dda3041f8781d0d38b4e6bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164819"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
@@ -40,16 +40,16 @@ public int GetSourceServerData(
   
 #### <a name="parameters"></a>Parâmetros  
  `pDataByteCount`  
- [out] Número de bytes na matriz de dados.  
+ fora Número de bytes na matriz de dados.  
   
  `ppData`  
- [out] Referência para a matriz de dados.  
+ fora Referência à matriz de dados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CModule** objeto que expõe a [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um objeto **CModule** que expõe a interface [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) .  
   
 ```cpp#  
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
@@ -73,5 +73,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

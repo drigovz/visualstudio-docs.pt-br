@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846187"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Selecione a caixa de diálogo condição (o legados)
-Este tópico descreve como usar a caixa de diálogo **Selecionar condição** no [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **Selecionar condição** no herdado [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  A caixa de diálogo **Selecionar condição** é usada para selecionar uma condição de regra declarativa a ser atribuída à propriedade condição de uma atividade. Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
@@ -37,18 +37,18 @@ Este tópico descreve como usar a caixa de diálogo **Selecionar condição** no
 
   A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **Selecionar condição** .
 
-|Elemento da interface|Descrição|
+|Elemento da interface do usuário|Descrição|
 |----------------|-----------------|
 |**Novo...**|Clique para abrir a [caixa de diálogo Editor de condição de regra (herdada)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) para criar uma nova condição de regra.|
 |**Editar...**|Clique para abrir a [caixa de diálogo Editor de condição de regra (herdada)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) para editar a condição de regra selecionada.|
 |**Renomear...**|Clique para abrir uma caixa de diálogo usada para renomear a condição de regra selecionada.|
-|**Excluir**|Clique para excluir a condição de regra selecionada.|
-|**Visualização da condição**|Exibe a expressão de condição para a condição de regra selecionada.|
+|**Delete (excluir)**|Clique para excluir a condição de regra selecionada.|
+|**Visualização de Condição**|Exibe a expressão de condição para a condição de regra selecionada.|
 |**OK**|Clique para atribuir a condição regra selecionada da condição de atividade.|
 
  Para obter mais informações sobre como criar e editar condições de regra, consulte [caixa de diálogo Editor de condição de regra (Herdado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
  Para obter mais informações sobre condições, consulte [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Editor de condição de regra (herdada)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [como criar uma condição de regra declarativa (herdada)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx) [usando a atividade ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [usando a atividade IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) [usando a atividade ReplicatorActivity](https://msdn2.microsoft.com/library/bb628544.aspx) [usando o](https://msdn2.microsoft.com/library/bb628552.aspx) [Designer herdado de atividades WhileActivity para obter ajuda da interface do usuário do Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

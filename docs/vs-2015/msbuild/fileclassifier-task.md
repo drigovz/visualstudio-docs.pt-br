@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2077b1df6d6362c924527e296d36c041e7bd9929
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693792"
 ---
 # <a name="fileclassifier-task"></a>Tarefa FileClassifier
@@ -37,11 +37,11 @@ O <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica um conjunto de 
 |`CLREmbeddedResource`|Não utilizado.|  
 |`CLRResourceFiles`|Não utilizado.|  
 |`CLRSatelliteEmbeddedResource`|Não utilizado.|  
-|`Culture`|Parâmetro **String** opcional.<br /><br /> Especifica a cultura para o build. Esse valor pode ser **nulo** se o build não for localizável. Se for **nulo**, o valor padrão será o valor em letras minúsculas que **CultureInfo.InvariantCulture** retorna.|  
+|`Culture`|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica a cultura para o build. Esse valor pode ser **nulo** se o build não for localizável. Se for **nulo**, o valor padrão será o valor em letras minúsculas que **CultureInfo.InvariantCulture** retorna.|  
 |`MainEmbeddedFiles`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Especifica os recursos não localizáveis que são inseridos no assembly principal.|  
-|`OutputType`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o tipo de arquivo no qual inserir os arquivos de origem especificados. Os valores válidos são **exe**, **winexe** ou **library**.|  
+|`OutputType`|Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de arquivo no qual inserir os arquivos de origem especificados. Os valores válidos são **exe**, **winexe** ou **library**.|  
 |`SatelliteEmbeddedFiles`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Especifica os arquivos localizáveis que são inseridos no assembly satélite para a cultura especificada pelo parâmetro **Culture**.|  
-|`SourceFiles`|Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos a classificar.|  
+|`SourceFiles`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica a lista de arquivos a classificar.|  
   
 ## <a name="remarks"></a>Comentários  
  Se o parâmetro **Culture** não é definido, todos os recursos especificados usando o parâmetro **SourceFiles** não são localizáveis; caso contrário, eles são localizáveis, a menos que eles estejam associados com um atributo **Localizable** definido como **false**.  
@@ -66,9 +66,9 @@ O <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica um conjunto de 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Como compilar um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Criando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

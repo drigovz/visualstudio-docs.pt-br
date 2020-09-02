@@ -13,47 +13,47 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f663be5910b342a6adba5da0b84d7e0d80cacc10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695410"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface é usada para comunicar informações de depuração essenciais, como interromper um ponto de interrupção e informações não-críticas, como uma mensagem de depuração.  
+Essa interface é usada para comunicar informações de depuração críticas, como parar em um ponto de interrupção e informações não críticas, como uma mensagem de depuração.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DES) e o fornecedor de porta personalizada implementam essa interface no mesmo objeto, como todas as outras interfaces de evento.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O mecanismo de depuração (DE) e o fornecedor DE porta personalizada implementam essa interface no mesmo objeto que todas as outras interfaces de evento.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Usando a interface do argumento IID (ID) fornecido ao [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ou [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), o Gerenciador de sessão de depuração (SDM) chama [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) no `IDebugEvent2` interface para obter a interface de eventos apropriado.  
+ Usando o argumento IID (ID de interface) fornecido ao [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ou [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), o SDM (Session Debug Manager) chama [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugEvent2` interface para obter a interface de evento apropriada.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDebugEvent2`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDebugEvent2` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtém os atributos para este evento de depuração.|  
+|[Falha GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtém os atributos para este evento de depuração.|  
   
 ## <a name="remarks"></a>Comentários  
- Interfaces de evento mais específico, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), não derivam da interface IDebugEvent2, mas em vez disso, são implementados como uma interface separada no mesmo objeto como `IDebugEvent2`.  
+ As interfaces de evento mais específicas, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), não derivam da interface IDebugEvent2, mas, em vez disso, são implementadas como uma interface separada no mesmo objeto que `IDebugEvent2` .  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Circunstância](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

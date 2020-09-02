@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845574"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Instruções passo a passo: criando um snippet de código
@@ -126,7 +126,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
 
 ### <a name="to-add-references-and-imports"></a>Para adicionar referências e importações
 
-1. Com snippets do Visual Basic, você pode adicionar uma referência a um projeto usando o elemento Referências e adicionar uma declaração Importações usando o elemento Importações. (Trechos de código em outros idiomas não têm esse recurso.) Por exemplo, se você alterar `Console.WriteLine` no exemplo de código para `MessageBox.Show`, talvez seja necessário adicionar o assembly System. Windows. Forms. dll ao projeto.
+1. Com snippets do Visual Basic, você pode adicionar uma referência a um projeto usando o elemento Referências e adicionar uma declaração Importações usando o elemento Importações. (Trechos de código em outros idiomas não têm esse recurso.) Por exemplo, se você alterar `Console.WriteLine` no exemplo de código para `MessageBox.Show` , talvez seja necessário adicionar o assembly System.Windows.Forms.dll ao projeto.
 
 2. Abra seu snippet.
 
@@ -261,5 +261,5 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
 
     ```
 
-## <a name="see-also"></a>Veja também
- [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Consulte Também
+ [Referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md)

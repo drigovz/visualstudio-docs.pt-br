@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329267"
 ---
 # <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
@@ -90,7 +90,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 3. Clique em **Simultaneidade**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Configurar sessões](../profiling/configuring-performance-sessions.md) 
  de desempenho [Entender os valores](../profiling/understanding-sampling-data-values.md) 

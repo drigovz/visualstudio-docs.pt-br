@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219680"
 ---
 # <a name="globalization-warnings"></a>Avisos de globalização
@@ -36,8 +36,8 @@ Os avisos de globalização dão suporte a bibliotecas e aplicativos preparados 
 |[CA1304: Especificar CultureInfo](../code-quality/ca1304.md)|Um método ou um construtor chama um membro que tem uma sobrecarga que aceita um parâmetro System.Globalization.CultureInfo, e o método ou o construtor não chama a sobrecarga que utiliza o parâmetro CultureInfo. Quando um objeto CultureInfo ou System.IFormatProvider não for fornecido, o valor padrão fornecido pelo membro sobrecarregado poderá não ter o efeito desejado em todas as localidades.|
 |[CA1305: Especificar IFormatProvider](../code-quality/ca1305.md)|Um método ou um construtor chama um ou mais membros que têm sobrecargas que aceitam um parâmetro System.IFormatProvider, e o método ou o construtor não chama a sobrecarga que utiliza o parâmetro IFormatProvider. Quando um objeto System.Globalization.CultureInfo ou System.IFormatProvider não for fornecido, o valor padrão fornecido pelo membro sobrecarregado poderá não ter o efeito desejado em todas as localidades.|
 |[CA1306: Definir localidade para tipos de dados](../code-quality/ca1306.md)|A localidade determina os elementos de apresentação específicos da cultura para dados, como a formatação usada para valores numéricos, símbolos de moeda e ordem de classificação. Ao criar um DataTable ou um DataSet, você deve definir explicitamente a localidade.|
-|[CA1307: especificar StringComparison para fins de clareza](../code-quality/ca1307.md)|Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro StringComparison.|
+|[CA1307: Especificar StringComparison para garantir a clareza](../code-quality/ca1307.md)|Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro StringComparison.|
 |[CA1308: Normalizar cadeias de caracteres em maiúsculas](../code-quality/ca1308.md)|As cadeias de caracteres devem ser normalizadas em maiúsculas. Um pequeno grupo de caracteres não pode fazer uma viagem de ida e volta quando são convertidos em minúsculas.|
 |[CA1309: Usar StringComparison ordinal](../code-quality/ca1309.md)|Uma operação de comparação de cadeia de caracteres não linguística não define o parâmetro StringComparison como Ordinal ou OrdinalIgnoreCase. Definindo-se explicitamente o parâmetro como StringComparison.Ordinal ou StringComparison.OrdinalIgnoreCase, o código normalmente ganha velocidade, fica mais correto e se torna mais confiável.|
-|[CA1310: especifique StringComparison para exatidão](../code-quality/ca1310.md)|Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro StringComparison e usa a comparação de cadeia de caracteres específica de cultura por padrão.|
+|[CA1310: Especificar StringComparison para garantir a exatidão](../code-quality/ca1310.md)|Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro StringComparison e usa a comparação de cadeia de caracteres específica de cultura por padrão.|
 |[CA2101: especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101.md)|Um membro de invocação de plataforma permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não empacota explicitamente a cadeia de caracteres. Isso pode causar uma vulnerabilidade de segurança em potencial.|

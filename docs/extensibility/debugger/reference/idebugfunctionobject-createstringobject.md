@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
+title: 'IDebugFunctionObject:: createstringobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728524"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Cria um objeto de seqüência.
+Cria um objeto de cadeia de caracteres.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int CreateStringObject(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pcstrString`\
-[em] O valor da seqüência para o objeto de seqüência.
+no O valor da cadeia de caracteres para o objeto de cadeia de caracteres.
 
 `ppObject`\
-[fora] Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa o objeto de seqüência recém-criado.
+fora Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa o objeto de cadeia de caracteres recém-criado.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame este método para criar um objeto que represente uma string que é um parâmetro para a função que é representada pela interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Chame esse método para criar um objeto que representa uma cadeia de caracteres que é um parâmetro para a função que é representada pela interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
