@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146459"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
@@ -40,8 +40,8 @@ Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma explor
   
  Para atenuar essa vulnerabilidade, esteja atento às interfaces expostas pelo visualizador.  
   
-## <a name="see-also"></a>Consulte também  
- [Arquitetura do visualizador](../debugger/visualizer-architecture.md)   
- [Como: Escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
+ [Como escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 978270653e3c872be522551a6a515b42d0fb1282
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199790"
 ---
 # <a name="spanspan-destructor"></a>Destruidor span::~span
@@ -26,7 +26,7 @@ ms.locfileid: "68199790"
 
 Destrói o objeto `span` e libera seus recursos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 ~span();
@@ -38,6 +38,6 @@ Destrói o objeto `span` e libera seus recursos.
 
 **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 
 [Classe span](../profiling/span-class.md)

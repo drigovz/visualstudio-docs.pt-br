@@ -11,10 +11,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84a4da6bcd306e409582077f66fab1a40b7d7942
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199713"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
@@ -22,17 +22,17 @@ ms.locfileid: "68199713"
 
 Representa a capacidade de criar um campo que representa um tipo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugTypeFieldBuilder : IUnknown  
 ```  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface é obtida do provedor de símbolo.  
+ Essa interface é obtida do provedor de símbolos.  
   
 ## <a name="methods"></a>Métodos  
- Essa interface implementa os métodos a seguir:  
+ Essa interface implementa os seguintes métodos:  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -40,8 +40,8 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Cria um ponteiro para o tipo especificado.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Sh.h  
+ Cabeçalho: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

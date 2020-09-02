@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5271388a5b1ce4508db7aea0a28e2b5a70b51348
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646240"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
@@ -25,7 +25,7 @@ ms.locfileid: "72646240"
 Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opções** para definir como determinados elementos do IDE (ambiente de desenvolvimento integrado) são exibidos e se comportam. Na barra de menus, é possível acessar as páginas Ambiente escolhendo **Ferramentas**, **Opções** e selecionando **Ambiente**.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 |Para obter informações como|Consulte|
 |----------------------------------|---------|
@@ -38,7 +38,7 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 |Definir a fonte e a cor de determinados editores, caixas de diálogo, janelas de ferramentas e outros elementos da interface do usuário.|[Caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalize o local dos arquivos vssettings que armazenam informações de configurações do usuário.|[Caixa de diálogo Importar e Exportar Configurações, Ambiente, Opções](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Selecionar uma linguagem padrão para o Visual Studio.|[Caixa de diálogo Configurações Internacionais, Ambiente, Opções](../../ide/reference/international-settings-environment-options-dialog-box.md)|
-|Para definir opções de mapeamento de teclado.|[Caixa de diálogo Teclado, Ambiente, Opções](../../ide/reference/keyboard-environment-options-dialog-box.md)|
+|Para definir opções de mapeamento de teclado.|[Teclado, ambiente, caixa de diálogo opções](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Para especificar se as notificações estão habilitadas.|[Caixa de diálogo Notificações, Ambiente, Opções](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Para especificar opções para a janela Início Rápido.|[Caixa de diálogo Início Rápido, Ambiente, Opções](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Para especificar opções de página inicial.|[Caixa de diálogo Inicialização, Ambiente, Opções](../../ide/reference/startup-environment-options-dialog-box.md)|
@@ -46,5 +46,5 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 |Definir opções para tarefas e listas de tarefas|[Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Alterar sua home page e páginas de pesquisa padrão, alterando o editor de código-fonte do sistema e configurando as opções do Internet Explorer.|[Caixa de diálogo Navegador da Web, Ambiente, Opções](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
-## <a name="see-also"></a>Consulte também
- [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Caixa de diálogo opções](../../ide/reference/options-dialog-box-visual-studio.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592328"
 ---
 # <a name="xml-schemas-dialog-box"></a>Caixa de diálogo de esquemas XML
@@ -23,9 +23,9 @@ A caixa de diálogo **esquemas XML** é usada para selecionar quais esquemas XSD
 
 Você pode acessar a caixa de diálogo **esquemas XML** clicando no botão **esquemas** na janela Propriedades do documento ou selecionando **esquemas** no menu **XML** .
 
-## <a name="uielement-list"></a>Lista de UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
-**Usar**
+**Uso**
 
 Selecione como o esquema XML deve ser usada.
 
@@ -47,11 +47,11 @@ Exibe o nome do arquivo de esquema XML.
 
 Abre a caixa de diálogo **abrir esquema XSD** , que permite que você selecione esquemas adicionais para adicionar ao conjunto de esquema. Quando você adiciona um esquema ao conjunto de esquema, o valor de coluna de **uso** é definido para **usar esse esquema**.
 
-**Removerr**
+**Remover**
 
 Remove o esquema do dataset selecionado de esquema. Remove o esquema de cache de memória do esquema, mas não no sistema de arquivos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: selecionar os esquemas XML a serem usados](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache de esquema](../xml-tools/schema-cache.md)

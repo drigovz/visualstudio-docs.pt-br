@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199783"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Especificando o demarcador para ferramentas de linha de comando de ferramentas de criação de perfil
@@ -22,15 +22,15 @@ ms.locfileid: "68199783"
 O caminho das ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não é adicionado à variável de ambiente PATH. Em computadores de 32 bits, as ferramentas permanecem em um único diretório. Existem versões de 32 e 64 bits das ferramentas de criação de perfil em computadores de 64 bits.  
   
 ## <a name="32-bit-computers"></a>Computadores 32 bits  
- Em computadores de 32 bits, o diretório das ferramentas de criador de perfil padrão é *Unidade*Arquivos de Programas\Microsoft Visual Studio 11.0\Team Tools\Performance Tools.  
+ Em computadores de 32 bits, o diretório padrão das ferramentas do criador de perfil é *unidade*\Program Files\Microsoft Visual Studio 11.0 \ Team Tools\Performance Tools.  
   
 ## <a name="64-bit-computers"></a>Computadores de 64 bits  
  Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo cujo perfil foi criado.  
   
 - No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
-     *Unidade*Arquivos de Programas (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
+     *Unidade*\Program Files (x86) \Microsoft Visual Studio 11.0 \ Team Tools\Performance Tools  
   
 - No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
-     *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64
+     *Unidade*\Program Files (x86) \Microsoft Visual Studio 11.0 \ Team Tools\Performance Tools\x64

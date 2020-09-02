@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382179"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online
@@ -78,5 +78,5 @@ A *cadeia de caracteres de consulta* é a parte de uma URL que começa com um po
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
  Permita passar parâmetros de URL para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo somente se você planeja limpar a entrada de qualquer caractere mal-intencionado antes de usá-lo. Uma cadeia de caracteres inserida com aspas, barras ou pontos-e-vírgulas, por exemplo, pode executar operações de dados arbitrárias se usadas não filtradas em uma consulta SQL em um banco de dados. Para obter mais informações sobre a segurança de cadeia de caracteres de consulta, consulte [visão geral de explorações de script](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
