@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904021"
 ---
 # <a name="create-a-settings-category"></a>Criar uma categoria de configurações
@@ -37,7 +37,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
 2. Abra o arquivo *VSPackage. resx* e adicione estes três recursos de cadeia de caracteres:
 
-    |Nome|Valor|
+    |Name|Valor|
     |----------|-----------|
     |106|Minha categoria|
     |107|Minhas Configurações|
@@ -147,7 +147,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
      A página **escolher uma coleção de configurações a serem importadas** é exibida.
 
-15. Selecione o arquivo MySettings *. vssettings* no nó **minhas configurações** do modo de exibição de árvore. Se o arquivo não aparecer no modo de exibição de árvore, clique em **procurar** e localize-o. Clique em **Próximo**.
+15. Selecione o arquivo MySettings *. vssettings* no nó **minhas configurações** do modo de exibição de árvore. Se o arquivo não aparecer no modo de exibição de árvore, clique em **procurar** e localize-o. Clique em **Avançar**.
 
      A caixa de diálogo **escolher configurações para importar** é exibida.
 

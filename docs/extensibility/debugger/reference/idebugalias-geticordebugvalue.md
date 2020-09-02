@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Microsoft Docs
+title: 'IDebugAlias:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736485"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-Recupera uma interface de código gerenciada que representa o valor associado a este alias.
+Recupera uma interface de código gerenciado que representa o valor associado a esse alias.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetICorDebugValue(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppUnk`\
-[fora] `IUnknown` interface que representa o valor associado a este alias. Esta interface pode ser consultada para a `ICorDebugValue` interface.
+[fora] `IUnknown` interface que representa o valor associado a este alias. Essa interface pode ser consultada para a `ICorDebugValue` interface.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método se aplica apenas a `ICorDebugValue` valores gerenciados (a é uma interface disponível no .NET Framework e é definida no .NET Framework SDK no arquivo cordebug.idl).
+ Esse método se aplica somente a valores gerenciados (o `ICorDebugValue` é uma interface disponível no .NET Framework e é definido no SDK do .NET Framework no arquivo CorDebug. idl).
 
 ## <a name="see-also"></a>Confira também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

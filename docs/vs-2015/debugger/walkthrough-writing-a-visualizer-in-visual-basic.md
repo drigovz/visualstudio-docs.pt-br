@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Escrevendo um visualizador em Visual Basic | Microsoft Docs'
+title: 'Walkthrough: gravando um visualizador em Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 954bd976317f5b5ad577b1236c9d7421c2d50315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688214"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Passo a passo: Como escrever um visualizador em Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Instruções passo a passo: escrevendo um visualizador no Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.  
@@ -36,13 +36,13 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 ## <a name="create-and-prepare-a-class-library-project"></a>Criar e preparar um projeto da biblioteca de classes  
   
-#### <a name="to-create-a-class-library-project"></a>Para criar um projeto da biblioteca de classes  
+#### <a name="to-create-a-class-library-project"></a>Para criar um projeto de biblioteca de classe  
   
 1. No menu **Arquivo**, escolha **Novo** e clique em **Novo Projeto**.  
   
-2. No **novo projeto** caixa de diálogo **tipo de projeto**s, clique em **Visual Basic**.  
+2. Na caixa de diálogo **novo projeto** , em **tipo de projeto**s, clique em **Visual Basic**.  
   
-3. No **modelos** , clique em **biblioteca de classes**.  
+3. Na caixa **modelos** , clique em **biblioteca de classes**.  
   
 4. Na caixa **Nome**, digite um nome apropriado para a biblioteca de classes, por exemplo, **MyFirstVisualizer**.  
   
@@ -57,7 +57,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
 2. Altere o nome de Class1.vb para algo significativo, por exemplo, DebuggerSide.vb.  
   
     > [!NOTE]
-    > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] altera automaticamente a declaração de classe em DebuggerSide. vb para corresponder ao novo nome de arquivo.  
   
 3. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Meu Primeiro Visualizador** e, no menu de atalho, clique em **Adicionar Referência**.  
   
@@ -89,7 +89,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
    Inherits DialogDebuggerVisualizer  
    ```  
   
-   `DialogDebuggerVisualizer` tem um método abstrato `Show`, que você deve substituir.  
+   `DialogDebuggerVisualizer` tem um método abstrato, `Show` , que deve ser substituído.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Para substituir o método DialogDebuggerVisualizer.Show  
   
@@ -122,7 +122,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Para mostrar a saída do visualizador em uma caixa de diálogo  
   
-1. No método `Show`, adicione a seguinte linha de código:  
+1. No método `Show`, adicione a linha de código a seguir:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -167,7 +167,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 1. No menu **Arquivo**, clique em **Adicionar** e, em seguida, clique em **Novo Projeto**.  
   
-2. No **adicionar novo projeto** na caixa de **modelos** , clique em **aplicativo de Console**.  
+2. Na caixa de diálogo **Adicionar novo projeto** , na caixa **modelos** , clique em **aplicativo de console**.  
   
 3. Na caixa **Nome**, digite um nome significativo para o aplicativo de console, por exemplo, **MyTestConsole**.  
   
@@ -200,7 +200,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
     Observe que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em TestConsole.vb para corresponder ao novo nome do arquivo.  
   
-3. No TestConsole. VB, adicione o seguinte `Imports` instrução:  
+3. Em TestConsole. VB, adicione a seguinte `Imports` instrução:  
   
    ```  
    Imports MyFirstVisualizer  
@@ -219,15 +219,15 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Definir como Projeto de Inicialização**.  
   
-2. No menu **Depurar**, clique em **Iniciar**.  
+2. No menu **Depurar** , clique em **Iniciar**.  
   
     O aplicativo de console é iniciado. O visualizador aparece e exibe a cadeia de caracteres “Hello, World”.  
   
    Parabéns. Você acabou de criar e testar seu primeiro visualizador.  
   
-   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, confira [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
+   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Arquitetura do visualizador](../debugger/visualizer-architecture.md)   
- [Como: Instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
+ [Como instalar um visualizador](../debugger/how-to-install-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

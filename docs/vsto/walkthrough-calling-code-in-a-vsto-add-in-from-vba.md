@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650779"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Walkthrough: chamar o código em um suplemento do VSTO do VBA
@@ -32,7 +32,7 @@ ms.locfileid: "72650779"
 
  Embora este passo a passos use o Excel especificamente, os conceitos demonstrados por instruções são aplicáveis a qualquer modelo de projeto de suplemento do VSTO fornecido pelo Visual Studio.
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Definição de uma classe que pode ser exposta a outras soluções do Office.
 
@@ -42,8 +42,8 @@ ms.locfileid: "72650779"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,12 +56,12 @@ ms.locfileid: "72650779"
 
 1. Crie um projeto de suplemento do VSTO do Excel com o nome **ExcelImportData**, usando o modelo de projeto de suplemento do VSTO do Excel. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre o arquivo de código **ThisAddIn.cs** ou **ThisAddIn. vb** e adiciona o projeto **ExcelImportData** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo de código **ThisAddIn.cs** ou **ThisAddIn. vb** e adiciona o projeto **ExcelImportData** ao **Gerenciador de soluções**.
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definir uma classe que você pode expor a outras soluções do Office
- A finalidade deste passo a passos é chamar o método `ImportData` de uma classe chamada `AddInUtilities` no suplemento do VSTO do código VBA. Esse método grava uma cadeia de caracteres na célula a1 da planilha ativa.
+ A finalidade deste passo a passos é chamar o `ImportData` método de uma classe chamada `AddInUtilities` em seu suplemento do VSTO do código do VBA. Esse método grava uma cadeia de caracteres na célula a1 da planilha ativa.
 
- Para expor a classe de `AddInUtilities` a outras soluções do Office, você deve tornar a classe pública e visível para COM. Você também deve expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) na classe. O código no procedimento a seguir demonstra uma maneira de atender a esses requisitos. Para obter mais informações, consulte [chamando código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
+ Para expor a `AddInUtilities` classe a outras soluções do Office, você deve tornar a classe pública e visível para com. Você também deve expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) na classe. O código no procedimento a seguir demonstra uma maneira de atender a esses requisitos. Para obter mais informações, consulte [chamando código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Para definir uma classe que você pode expor a outras soluções do Office
 
@@ -76,15 +76,15 @@ ms.locfileid: "72650779"
      [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
      [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
 
-4. Substitua a classe `AddInUtilities` pelo código a seguir.
+4. Substitua a `AddInUtilities` classe pelo código a seguir.
 
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
 
-     Esse código torna a classe `AddInUtilities` visível para COM e adiciona o método `ImportData` à classe. Para expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , a classe `AddInUtilities` também tem o atributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> e implementa uma interface que é visível para com.
+     Esse código torna a `AddInUtilities` classe visível para com e adiciona o `ImportData` método à classe. Para expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , a `AddInUtilities` classe também tem o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo e implementa uma interface que é visível para com.
 
 ## <a name="expose-the-class-to-other-office-solutions"></a>Expor a classe a outras soluções do Office
- Para expor a classe de `AddInUtilities` a outras soluções do Office, substitua o método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> na classe `ThisAddIn`. Em sua substituição, retorne uma instância da classe `AddInUtilities`.
+ Para expor a `AddInUtilities` classe a outras soluções do Office, substitua o <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> método na `ThisAddIn` classe. Em sua substituição, retorne uma instância da `AddInUtilities` classe.
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Para expor a classe AddInUtilities a outras soluções do Office
 
@@ -92,7 +92,7 @@ ms.locfileid: "72650779"
 
 2. Clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb**e clique em **Exibir código**.
 
-3. Adicione o código a seguir à classe `ThisAddIn`.
+3. Adicione o código a seguir à classe `ThisAddIn` .
 
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
@@ -102,7 +102,7 @@ ms.locfileid: "72650779"
      Verifique se a solução é compilada sem erros.
 
 ## <a name="test-the-vsto-add-in"></a>Testar o suplemento do VSTO
- Você pode chamar a classe `AddInUtilities` de vários tipos diferentes de soluções do Office. Neste tutorial, você usará o código VBA em uma pasta de trabalho do Excel. Para obter mais informações sobre os outros tipos de soluções do Office que você também pode usar, consulte [chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
+ Você pode chamar a `AddInUtilities` classe de vários tipos diferentes de soluções do Office. Neste tutorial, você usará o código VBA em uma pasta de trabalho do Excel. Para obter mais informações sobre os outros tipos de soluções do Office que você também pode usar, consulte [chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 ### <a name="to-test-your-vsto-add-in"></a>Para testar o suplemento do VSTO
 
@@ -121,9 +121,9 @@ ms.locfileid: "72650779"
 
 5. Na janela do **projeto** , clique duas vezes em **ThisWorkbook**.
 
-     O arquivo de código para o objeto `ThisWorkbook` é aberto.
+     O arquivo de código para o `ThisWorkbook` objeto é aberto.
 
-6. Adicione o código VBA a seguir ao arquivo de código. Esse código obtém primeiro um objeto COMAddIn que representa o suplemento do VSTO **ExcelImportData** . Em seguida, o código usa a propriedade Object do objeto COMAddIn para chamar o método `ImportData`.
+6. Adicione o código VBA a seguir ao arquivo de código. Esse código obtém primeiro um objeto COMAddIn que representa o suplemento do VSTO **ExcelImportData** . Em seguida, o código usa a propriedade Object do objeto COMAddIn para chamar o `ImportData` método.
 
     ```vb
     Sub CallVSTOMethod()
@@ -144,13 +144,13 @@ ms.locfileid: "72650779"
 ## <a name="next-steps"></a>Próximas etapas
  Você pode aprender mais sobre a programação de suplementos do VSTO a partir destes tópicos:
 
-- Use a classe `ThisAddIn` para automatizar o aplicativo host e executar outras tarefas em projetos de suplemento do VSTO. Para obter mais informações, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
+- Use a `ThisAddIn` classe para automatizar o aplicativo host e executar outras tarefas em projetos de suplemento do VSTO. Para obter mais informações, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
 
 - Crie um painel de tarefas personalizado em um suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md) e [como adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 - Personalize a faixa de bits em um suplemento do VSTO. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md) de e [como: introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

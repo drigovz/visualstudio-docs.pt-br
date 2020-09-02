@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::Dispose | Microsoft Docs
+title: IDebugAlias::D ispose | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df3a2ecc50063df8f90645b9ccaa72754c3728c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736549"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-Marca este pseudônimo para remoção.
+Marca este alias para remoção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,14 +35,14 @@ HRESULT Dispose();
 int Dispose();
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
  Nenhum.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Uma vez que este método é chamado, o alias não está mais disponível.
+ Depois que esse método for chamado, o alias não estará mais disponível.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

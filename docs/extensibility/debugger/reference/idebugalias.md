@@ -13,49 +13,49 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2ceb87277460f65e52c35f02e7fbbd01da1101a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736519"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Representa um pseudônimo numérico para uma variável. Um pseudônimo é simplesmente um nome diferente para uma variável.
+ Representa um alias numérico para uma variável. Um alias é simplesmente um nome diferente para uma variável.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O avaliador de expressão (EE) implementa essa interface para suportar aliases numéricas para variáveis.
+ O avaliador de expressão (EE) implementa essa interface para dar suporte a aliases numéricos para variáveis.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) cria um alias para um determinado objeto. Para procurar pseudônimos, use [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) ou [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).
+- [Createalias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) cria um alias para um objeto específico. Para procurar aliases, use [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) ou [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- Os seguintes métodos `IDebugAlias` são definidos na interface.
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Os métodos a seguir são definidos na `IDebugAlias` interface.
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Obtém o objeto ao qual este pseudônimo se refere.|
-|[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Tem o nome do pseudônimo.|
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Recupera uma `ICorDebugValue` interface que fornece acesso a informações de código gerenciadas sobre este objeto (somente código gerenciado).|
-|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Marca este pseudônimo como não sendo mais usado.|
+|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Obtém o objeto ao qual este alias se refere.|
+|[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Obtém o nome do alias.|
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Recupera uma `ICorDebugValue` interface que fornece acesso a informações de código gerenciado sobre este objeto (somente código gerenciado).|
+|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Marca este alias como não sendo mais usado.|
 
 ## <a name="remarks"></a>Comentários
- Um alias é um número decimal em forma de string seguido pelo caractere #, por exemplo, 1001#.
+ Um alias é um número decimal na forma de cadeia de caracteres seguido pelo caractere #, por exemplo, 1001 #.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: ee.h
+ Cabeçalho: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Interfaces de avaliação de expressão](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

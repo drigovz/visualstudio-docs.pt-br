@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ae9e1af2cd68b3d3d2ff829fca1dbcab8d7098b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544710"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Taxas de paginação de memória ativa para o disco extremamente altas
@@ -27,7 +27,7 @@ ms.locfileid: "85544710"
 |-|-|
 |ID de regra|DA0014|
 |Categoria|Memória e paginação|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|Tudo|
 |Mensagem|Uma taxa extremamente alta de paginação de memória ativa em disco está ocorrendo. O aplicativo pode ser associado à memória.|
 |Tipo de regra|Aviso|
 

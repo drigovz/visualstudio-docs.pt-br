@@ -1,5 +1,5 @@
 ---
-title: 'Como: Analisar código JavaScript em páginas da Web | Microsoft Docs'
+title: Como analisar código JavaScript em páginas da Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688142"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Como: Analisar código JavaScript em páginas da Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Como analisar código JavaScript em páginas da Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podem coletar dados de desempenho para o código JavaScript que é executado em um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], em uma página da Web arbitrária ou em um aplicativo JavaScript usando o método de criação de perfil de instrumentação.  
@@ -32,9 +32,9 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
 - Internet Explorer 8 ou posterior.  
   
 > [!WARNING]
-> Para analisar JavaScript em aplicativos da Windows Store, consulte um dos seguintes tópicos:  
+> Para criar o perfil de JavaScript em aplicativos da Windows Store, consulte um dos seguintes tópicos:  
 > 
-> - [Temporização de função JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [temporização de função JavaScript em um dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - Tempo de função JavaScript de [temporização de função JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [em um dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Analisar os dados de Temporização de Função JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -58,7 +58,7 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 5. Na terceira página do assistente, selecione a caixa de seleção **Perfil JavaScript** e, em seguida, clique em **Avançar**.  
   
-6. Na quarta página do assistente, clique em **Concluir** para iniciar o aplicativo Web no navegador.  
+6. Na quarta página do assistente, clique em **concluir** para iniciar o aplicativo Web no navegador.  
   
 7. Execute a funcionalidade que você deseja analisar.  
   
@@ -66,7 +66,7 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Para analisar JavaScript em páginas da Web individuais ou em aplicativos JavaScript  
   
-1. Abra [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
+1. Abra o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
   
 2. No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.  
   
@@ -80,7 +80,7 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
     2. Selecione a caixa de seleção **Perfil JavaScript** e, em seguida, clique em **Avançar**.  
   
-6. Na quarta página do assistente, clique em **Concluir** para iniciar a página da Web no navegador.  
+6. Na quarta página do assistente, clique em **concluir** para iniciar a página da Web no navegador.  
   
 7. Execute a funcionalidade que você deseja analisar.  
   

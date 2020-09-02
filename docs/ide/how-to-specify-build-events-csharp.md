@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283990"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
@@ -174,9 +174,9 @@ Em seguida, invoque este comando em um evento de pós-build para modificar o man
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página de eventos de compilação, designer de projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Caixa de diálogo linha de comando de evento de pré-compilação/evento de pós-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Como especificar eventos de compilação (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)

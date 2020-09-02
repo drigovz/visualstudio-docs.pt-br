@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425388"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
@@ -37,11 +37,11 @@ Representa uma referência de assembly (gerenciado) no projeto.
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|
-|Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
+|Name|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
 |FusionName|Cadeia de caracteres opcional. Especifica o nome de fusão simples ou forte para o item.<br /><br /> Quando esse atributo estiver presente, é possível economizar tempo, pois o arquivo do assembly não precisa ser aberto para obter o nome de fusão.|
 |SpecificVersion|Booliano opcional. Especifica se apenas a versão no nome de fusão deve ser referenciada.|
 |Aliases|Cadeia de caracteres opcional. Quaisquer aliases da referência.|
-|Privado|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
+|Privados|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -49,13 +49,13 @@ Representa uma referência a um componente COM (não gerenciado) no projeto. Est
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|
+|Name|Cadeia de caracteres opcional. O nome de exibição do componente.|
 |Guid|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Cadeia de caracteres obrigatória. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
-|Isolada|Booliano opcional. Especifica se o componente é um componente sem registro.|
+|Isolado|Booliano opcional. Especifica se o componente é um componente sem registro.|
 
 ### <a name="comfilereference"></a>COMFileReference
 
@@ -71,17 +71,17 @@ Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
+|Name|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|
 
 ### <a name="projectreference"></a>ProjectReference
 
-Representa uma referência a outro projeto. `ProjectReference`os itens são transformados em itens de [referência](#reference) pelo `ResolveProjectReferences` destino, portanto, quaisquer metadados válidos em uma referência poderão ser válidos em `ProjectReference` , se o processo de transformação não o substituir.
+Representa uma referência a outro projeto. `ProjectReference` os itens são transformados em itens de [referência](#reference) pelo `ResolveProjectReferences` destino, portanto, quaisquer metadados válidos em uma referência poderão ser válidos em `ProjectReference` , se o processo de transformação não o substituir.
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|
-|Project|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
+|Name|Cadeia de caracteres opcional. O nome de exibição da referência.|
+|Projeto|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacote|Cadeia de caracteres opcional. O caminho do arquivo de projeto que está sendo referenciado.|
 |ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. O padrão é `true`.|
 
@@ -170,4 +170,4 @@ Representa assemblies cujos namespaces devem ser importados pelo compilador Visu
 
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propriedades do MSBuild para projetos SDK do .NET Core](/dotnet/core/project-sdk/msbuild-props)
-- [Metadados comuns de item do MSBuild](common-msbuild-item-metadata.md)
+- [Metadados de itens comuns do MSBuild](common-msbuild-item-metadata.md)

@@ -1,5 +1,5 @@
 ---
-title: Design de Comando | Microsoft Docs
+title: Design de comando | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,61 +12,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709656"
 ---
 # <a name="command-design"></a>Design de comando
-Quando você adiciona um comando a um VSPackage, você deve especificar onde ele deve aparecer, quando ele está disponível e como ele deve ser tratado.
+Quando você adiciona um comando a um VSPackage, é necessário especificar onde ele deve aparecer, quando ele está disponível e como ele deve ser manipulado.
 
 ## <a name="define-commands"></a>Definir comandos
- Para definir novos comandos, inclua um arquivo de tabela de comandos Visual Studio *(.vsct)* em seu projeto VSPackage. Se você criou um VSPackage usando o modelo de pacote do Visual Studio, o projeto inclui um desses arquivos. Para obter mais informações, consulte [arquivos da tabela de comando visual Studio (.vsct).](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ Para definir novos comandos, inclua um arquivo de tabela de comando (*. vsct*) do Visual Studio em seu projeto do VSPackage. Se você tiver criado um VSPackage usando o modelo de pacote do Visual Studio, o projeto incluirá um desses arquivos. Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
- O Visual Studio mescla todos os arquivos *.vsct* que encontra para que ele possa exibir os comandos. Como esses arquivos são diferentes do binário VSPackage, o Visual Studio não precisa carregar o pacote para encontrar os comandos. Para obter mais informações, consulte [Como os VSPackages adicionam elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
+ O Visual Studio mescla todos os arquivos *. vsct* encontrados para que ele possa exibir os comandos. Como esses arquivos são diferentes do binário VSPackage, o Visual Studio não precisa carregar o pacote para localizar os comandos. Para obter mais informações, consulte [como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
- O Visual <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Studio usa o atributo de registro para definir os recursos e comandos do menu. Para obter mais informações, consulte [implementação do Comando](../../extensibility/internals/command-implementation.md).
+ O Visual Studio usa o <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> atributo de registro para definir recursos de menu e comandos. Para obter mais informações, consulte [implementação de comando](../../extensibility/internals/command-implementation.md).
 
- Os comandos podem ser alterados em tempo de execução de várias maneiras diferentes. Eles podem ser exibidos ou escondidos, habilitados ou desativados. Eles podem exibir textos ou ícones diferentes ou conter valores diferentes. Uma grande quantidade de personalização pode ser realizada antes do Visual Studio carregar seu VSPackage. Para obter mais informações, consulte [Como os VSPackages adicionam elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
+ Os comandos podem ser alterados em tempo de execução de várias maneiras diferentes. Eles podem ser exibidos ou ocultos, habilitados ou desabilitados. Eles podem exibir textos ou ícones diferentes ou conter valores diferentes. Uma grande quantidade de personalização pode ser executada antes que o Visual Studio carregue seu VSPackage. Para obter mais informações, consulte [como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
-## <a name="command-handlers"></a>Manipuladores de comando
- Quando você cria um comando, você deve fornecer um manipulador de eventos para executar o comando. Se o usuário selecionar o comando, ele deve ser roteado adequadamente. Roteamento de um comando significa enviá-lo para o VSPackage correto para habilitá-lo ou desativá-lo, escondê-lo ou exibi-lo e executá-lo se o usuário optar por fazê-lo. Para obter mais informações, consulte [algoritmo de roteamento de comando](../../extensibility/internals/command-routing-algorithm.md).
+## <a name="command-handlers"></a>Manipuladores de comandos
+ Ao criar um comando, você deve fornecer um manipulador de eventos para executar o comando. Se o usuário selecionar o comando, ele deverá ser roteado adequadamente. O roteamento de um comando significa enviá-lo para o VSPackage correto para habilitá-lo ou desabilitá-lo, ocultá-lo ou exibi-lo, e executá-lo se o usuário optar por fazê-lo. Para obter mais informações, consulte [algoritmo de roteamento de comando](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="visual-studio-command-environment"></a>Ambiente de comando do Visual Studio
- O Visual Studio pode hospedar qualquer número de VSPackages, e cada um pode contribuir com seu próprio conjunto de comandos. O ambiente exibe apenas os comandos apropriados à tarefa atual. Para obter mais informações, consulte os objetos [de contexto de disponibilidade](../../extensibility/internals/command-availability.md) de comando e [seleção](../../extensibility/internals/selection-context-objects.md).
+ O Visual Studio pode hospedar qualquer número de VSPackages, e cada um pode contribuir com seu próprio conjunto de comandos. O ambiente exibe somente os comandos que são apropriados para a tarefa atual. Para obter mais informações, consulte [disponibilidade de comando](../../extensibility/internals/command-availability.md) e objetos de contexto de [seleção](../../extensibility/internals/selection-context-objects.md).
 
- Um VSPackage que define novos comandos, menus, barras de ferramentas ou menus de atalho fornece suas informações de comando ao Visual Studio no momento da instalação por meio de entradas de registro que fazem referência a recursos em conjuntos nativos ou gerenciados. Cada recurso então faz referência a um arquivo binário de recursos de dados *(.cto),* que é produzido quando você compila um arquivo de tabela de comando visual studio *(.vsct).* Isso permite que o Visual Studio forneça conjuntos de comandos, menus e barras de ferramentas mescladas sem ter que carregar todos os VSPackage instalados.
+ Um VSPackage que define novos comandos, menus, barras de ferramentas ou menus de atalho fornece suas informações de comando para o Visual Studio no momento da instalação por meio de entradas do registro que fazem referência a recursos em assemblies nativos ou gerenciados. Em seguida, cada recurso faz referência a um arquivo de recurso de dados binários (*. CTO*), que é produzido quando você compila um arquivo de tabela de comando (*. vsct*) do Visual Studio. Isso permite que o Visual Studio forneça conjuntos de comandos mesclados, menus e barras de ferramentas sem precisar carregar todos os VSPackage instalados.
 
 ### <a name="command-organization"></a>Organização de comando
- O ambiente posiciona comandos por grupo, prioridade e menu.
+ O ambiente posiciona os comandos por grupo, prioridade e menu.
 
-- Os grupos são coleções lógicas de comandos relacionados, por exemplo, o grupo de comando **Cortar,** **Copiar**e **Colar.** Grupos são os comandos que aparecem nos menus.
+- Os grupos são coleções lógicas de comandos relacionados, por exemplo, o grupo de comandos **recortar**, **copiar**e **colar** . Os grupos são os comandos que aparecem nos menus.
 
-- A prioridade determina a ordem em que os comandos individuais em um grupo aparecem no menu.
+- A prioridade determina a ordem na qual os comandos individuais em um grupo aparecem no menu.
 
-- Os menus atuam como recipientes para grupos.
+- Os menus atuam como contêineres para grupos.
 
-  O ambiente predefine alguns comandos, grupos e menus. Para obter mais informações, consulte [O comando Padrão, o grupo e a colocação da barra de ferramentas](../../extensibility/internals/default-command-group-and-toolbar-placement.md).
+  O ambiente predefine alguns comandos, grupos e menus. Para obter mais informações, consulte [comando padrão, grupo e posicionamento da barra de ferramentas](../../extensibility/internals/default-command-group-and-toolbar-placement.md).
 
-  Um comando pode ser atribuído a um grupo primário. O grupo principal controla a posição do comando na estrutura principal do menu e na caixa de diálogo **Personalizar.** Um comando pode aparecer em vários grupos; por exemplo, um comando pode estar no menu principal, em um menu de atalho e em uma barra de ferramentas. Para obter mais informações, consulte [Como os VSPackages adicionam elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
+  Um comando pode ser atribuído a um grupo primário. O grupo primário controla a posição do comando na estrutura do menu principal e na caixa de diálogo **Personalizar** . Um comando pode aparecer em vários grupos; por exemplo, um comando pode estar no menu principal, em um menu de atalho e em uma barra de ferramentas. Para obter mais informações, consulte [como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
 ### <a name="command-routing"></a>Roteamento de comando
- O processo de invocação e roteamento de comandos para VSPackages difere do processo de métodos de chamada em instâncias de objeto.
+ O processo de invocar e rotear comandos para VSPackages difere do processo de chamada de métodos em instâncias de objeto.
 
- As rotas ambientais comandam sequencialmente desde o contexto de comando mais interno (local), que se baseia na seleção atual, até o contexto mais externo (global). O primeiro contexto capaz de executar o comando é o que o manuseia. Para obter mais informações, consulte [algoritmo de roteamento de comando](../../extensibility/internals/command-routing-algorithm.md).
+ O ambiente roteia os comandos sequencialmente do contexto de comando mais interno (local), que é baseado na seleção atual, para o contexto mais externo (global). O primeiro contexto que é capaz de executar o comando é aquele que o manipula. Para obter mais informações, consulte [algoritmo de roteamento de comando](../../extensibility/internals/command-routing-algorithm.md).
 
- Na maioria dos casos, o ambiente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> lida com comandos usando a interface. Como o esquema de roteamento de comandos permite que muitos objetos diferentes lidem com comandos, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pode ser implementado por qualquer número de objetos; estes incluem controles Do Microsoft ActiveX, implementações de visualização de janelas, objetos de documento, hierarquias de projetos e objetos VSPackage (para comandos globais). Em alguns casos especializados, por exemplo, comandos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> de roteamento em uma hierarquia, a interface deve ser implementada.
+ Na maioria dos casos, o ambiente manipula os comandos usando a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Como o esquema de roteamento de comandos permite que muitos objetos diferentes manipulem comandos, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pode ser implementado por qualquer número de objetos; eles incluem controles Microsoft ActiveX, implementações de exibição de janela, objetos de documento, hierarquias de projeto e objetos VSPackage propriamente ditos (para comandos globais). Em alguns casos especializados, por exemplo, os comandos de roteamento em uma hierarquia, a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface deve ser implementada.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Implementação de comando](../../extensibility/internals/command-implementation.md)|Descreve como implementar comandos em um VSPackage.|
-|[Disponibilidade de comando](../../extensibility/internals/command-availability.md)|Descreve como o contexto do Visual Studio determina quais comandos estão disponíveis.|
+|[Disponibilidade do comando](../../extensibility/internals/command-availability.md)|Descreve como o contexto do Visual Studio determina quais comandos estão disponíveis.|
 |[Algoritmo de roteamento de comando](../../extensibility/internals/command-routing-algorithm.md)|Descreve como a arquitetura de roteamento de comandos do Visual Studio permite que os comandos sejam manipulados por diferentes VSPackages.|
 |[Diretrizes de posicionamento de comando](../../extensibility/internals/command-placement-guidelines.md)|Sugere como posicionar comandos no ambiente do Visual Studio.|
-|[Como o VSPackages adiciona elementos de interface de usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Descreve como o VSPackages pode utilizar melhor a arquitetura de comando do Visual Studio.|
-|[Colocação padrão de comando, grupo e barra de ferramentas](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Descreve como o VSPackages pode usar melhor os comandos incluídos no Visual Studio.|
-|[Gerenciar VSPackages](../../extensibility/managing-vspackages.md)|Descreve como o Visual Studio carrega VSPackages.|
-|[Arquivos da tabela de comando do Visual Studio (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Fornece informações sobre arquivos *.vsct* baseados em XML, que são usados para descrever o layout e a aparência dos comandos em VSPackages.|
+|[Como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Descreve como o VSPackages pode utilizar melhor a arquitetura de comando do Visual Studio.|
+|[Posicionamento do comando, grupo e barra de ferramentas padrão](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Descreve como o VSPackages pode usar melhor os comandos incluídos no Visual Studio.|
+|[Gerenciar VSPackages](../../extensibility/managing-vspackages.md)|Descreve como o Visual Studio carrega o VSPackages.|
+|[Arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Fornece informações sobre arquivos *. vsct* baseados em XML, que são usados para descrever o layout e a aparência de comandos no VSPackages.|

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar um Link para obter suporte técnico | Microsoft Docs'
+title: Como especificar um link para suporte técnico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,31 +22,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148096"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Como: Especificar um Link para o suporte técnico
+# <a name="how-to-specify-a-link-for-technical-support"></a>Como especificar um link para suporte técnico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, o **URL de suporte** propriedade identifica uma página da Web ou compartilhamento de arquivos em que os usuários podem ir para obter informações sobre o aplicativo. Essa propriedade é opcional. Se fornecido, a URL será exibida na entrada do aplicativo **adicionar ou remover programas** caixa de diálogo.  
+Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, a propriedade **URL de suporte** identifica uma página da Web ou um compartilhamento de arquivos, onde os usuários podem acessar obter informações sobre o aplicativo. Essa propriedade é opcional; se fornecido, a URL será exibida na caixa de diálogo **Adicionar ou remover programas** da entrada do aplicativo.  
   
- O **URL de suporte** propriedade pode ser definida na **publicar** página da **Project Designer**.  
+ A propriedade **URL de suporte** pode ser definida na página **publicar** do designer de **projeto**.  
   
 ### <a name="to-specify-a-support-url"></a>Para especificar uma URL de suporte  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
+3. Clique no botão **Opções** para abrir a caixa de diálogo **Opções de publicação** .  
   
-4. Clique em **descrição**.  
+4. Clique em **Descrição**.  
   
-5. No **URL de suporte** , insira um caminho totalmente qualificado para um compartilhamento UNC, página da Web ou site da Web.  
+5. No campo **URL de suporte** , insira um caminho totalmente qualificado para um site, uma página da Web ou um compartilhamento UNC.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Como publicar um Aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

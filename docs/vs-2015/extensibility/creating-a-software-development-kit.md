@@ -9,22 +9,22 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 791400746247d71c06e133d10469132f38544b21
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689985"
 ---
 # <a name="creating-a-software-development-kit"></a>Criar um Software Development Kit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um software development kit (SDK) é uma coleção de APIs que pode ser referenciado como um único item no Visual Studio. O **Gerenciador de referências** caixa de diálogo lista todos os SDKs que são relevantes para o projeto. Quando você adiciona um SDK a um projeto, as APIs estão disponíveis no Visual Studio.  
+Um Software Development Kit (SDK) é uma coleção de APIs que você pode referenciar como um único item no Visual Studio. A caixa de diálogo **Gerenciador de referências** lista todos os SDKs que são relevantes para o projeto. Quando você adiciona um SDK a um projeto, as APIs estão disponíveis no Visual Studio.  
   
  Há dois tipos de SDKs:  
   
-- SDKs de plataforma são componentes obrigatórios para o desenvolvimento de aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
+- Os SDKs de plataforma são componentes obrigatórios para o desenvolvimento de aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
-- SDKs de extensão são componentes opcionais que estendem uma plataforma, mas não são obrigatórios para o desenvolvimento de aplicativos para a plataforma.  
+- Os SDKs de extensão são componentes opcionais que estendem uma plataforma, mas que não são obrigatórios para o desenvolvimento de aplicativos para essa plataforma.  
   
   As seções a seguir descrevem a infraestrutura geral de SDKs e como criar um SDK de plataforma e um SDK de extensão.  
   
@@ -32,14 +32,14 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
 - [SDKs de extensão](#ExtensionSDKs)  
   
-## <a name="PlatformSDKs"></a> SDKs de plataforma  
- SDKs de plataforma são necessários para desenvolver aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver aplicativos para [!INCLUDE[win81](../includes/win81-md.md)].  
+## <a name="platform-sdks"></a><a name="PlatformSDKs"></a> SDKs de plataforma  
+ Os SDKs de plataforma são necessários para desenvolver aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver aplicativos para o [!INCLUDE[win81](../includes/win81-md.md)] .  
   
 ### <a name="installation"></a>Instalação  
- Todos os SDKs de plataforma serão instalado em HKLM\Software\Microsoft\Microsoft SDKs\\[TPI] \v [TPV]\\ @InstallationFolder = [raiz do SDK]. Da mesma forma, o [!INCLUDE[win81](../includes/win81-md.md)] SDK está instalado em HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1.  
+ Todos os SDKs de plataforma serão instalados em HKLM\Software\Microsoft\Microsoft SDKs \\ [TPI] \v [TPV] \\ @InstallationFolder = [raiz do SDK]. Da mesma forma, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é instalado em HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1.  
   
 ### <a name="layout"></a>Layout  
- SDKs de plataforma terá o seguinte layout:  
+ Os SDKs da plataforma terão o seguinte layout:  
   
 ```  
 \[InstallationFolder root]  
@@ -54,17 +54,17 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
 |Nó|Descrição|  
 |----------|-----------------|  
-|Pasta Referências|Contém os binários que contêm APIs que podem ser codificadas contra. Eles podem incluir arquivos de metadados do Windows (WinMD) ou assemblies.|  
-|Pasta de tempo de design|Contém arquivos que são necessários apenas em tempo de pré-execução/depuração. Eles podem incluir documentos XML, bibliotecas, cabeçalhos, binários de tempo de design de caixa de ferramentas, MSBuild artefatos e assim por diante<br /><br /> Documentos XML seriam, idealmente, ser colocados na pasta \DesignTime, mas documentos XML para referências continuarão a ser colocado juntamente com o arquivo de referência no Visual Studio. Por exemplo, o documento XML para uma referência \References\\[configuração]\\[arch]\sample.dll será \References\\[configuração]\\[arch]\sample.xml e a versão localizada desse documento será \References\\[configuração]\\[arch]\\[locale]\sample.xml.|  
-|Pasta de configuração|Pode haver apenas três pastas: debug, varejo e CommonConfiguration. Os autores do SDK podem colocar seus arquivos em CommonConfiguration se o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração que o consumidor do SDK têm como destino.|  
-|Pasta de arquitetura|Qualquer pasta de arquitetura com suporte pode existir. O Visual Studio suporta as seguintes arquiteturas: x86, x64, ARM e neutral. Observação: Win32 mapeia para x86 e AnyCPU mapeia para neutro.<br /><br /> MSBuild procura apenas sob \CommonConfiguration\neutral SDKs de plataforma.|  
-|SDKManifest.xml|Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** O valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** A existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** Este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** Esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** Esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
+|Pasta Referências|Contém binários que contêm APIs que podem ser codificadas. Eles podem incluir arquivos de metadados do Windows (WinMD) ou assemblies.|  
+|Pasta designtime|Contém arquivos que são necessários apenas em tempo de execução/depuração. Eles podem incluir documentos XML, bibliotecas, cabeçalhos, binários de tempo de design da caixa de ferramentas, artefatos do MSBuild e assim por diante<br /><br /> Os documentos XML seriam, de preferência, colocados na pasta \DesignTime, mas os documentos XML para referências continuarão a ser colocados junto com o arquivo de referência no Visual Studio. Por exemplo, o documento XML de uma referência \References \\ [config] \\ [arch] \sample.dll será \References \\ [config] \\ [Arch] \sample.xml e a versão localizada desse documento será \References \\ [config] \\ [Arch] \\ [localidade] \sample.xml.|  
+|Pasta de configuração|Pode haver apenas três pastas: debug, Retail e CommonConfiguration. Os autores do SDK podem posicionar seus arquivos em CommonConfiguration se o mesmo conjunto de arquivos do SDK for consumido, independentemente da configuração que o consumidor do SDK direcionará.|  
+|Pasta de arquitetura|Qualquer pasta de arquitetura com suporte pode existir. O Visual Studio dá suporte às seguintes arquiteturas: x86, x64, ARM e neutro. Observação: o Win32 mapeia para x86 e AnyCPU é mapeado para neutro.<br /><br /> O MSBuild só tem a aparência de \CommonConfiguration\neutral para SDKs de plataforma.|  
+|SDKManifest.xml|Este arquivo descreve como o Visual Studio deve consumir o SDK. Examine o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)] :<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** O valor que o pesquisador de objetos exibe na lista de procura.<br /><br /> **PlatformIdentity:** A existência desse atributo diz ao Visual Studio e ao MSBuild que o SDK é um SDK de plataforma e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** Esse atributo é usado pelo Visual Studio para garantir que apenas projetos direcionados às mesmas estruturas, conforme especificado no valor desse atributo, possam consumir o SDK.<br /><br /> **MinVSVersion:** Esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** Esse atributo deve ser especificado somente para as referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
   
-## <a name="ExtensionSDKs"></a> SDKs de extensão  
+## <a name="extension-sdks"></a><a name="ExtensionSDKs"></a> SDKs de extensão  
  As seções a seguir descrevem o que você precisa fazer para implantar um SDK de extensão.  
   
 ### <a name="installation"></a>Instalação  
- SDKs de extensão podem ser instalados para um usuário específico ou para todos os usuários sem especificar uma chave do registro. Para instalar um SDK para todos os usuários, use o seguinte caminho:  
+ Os SDKs de extensão podem ser instalados para um usuário específico ou para todos os usuários sem especificar uma chave do registro. Para instalar um SDK para todos os usuários, use o seguinte caminho:  
   
  `%Program Files%\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs`  
   
@@ -72,18 +72,18 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
  `%USERPROFILE%\AppData\Local\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs`  
   
- Se você quiser usar um local diferente, você deve fazer uma das duas coisas:  
+ Se você quiser usar um local diferente, deverá executar uma das duas ações a seguir:  
   
-1. Especifique-a uma chave do registro:  
+1. Especifique-o em uma chave do registro:  
   
      `HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>\`  
   
-     e adicione uma subchave (padrão) que tem um valor de `<path to SDK><SDKName><SDKVersion>`.  
+     e adicione uma subchave (padrão) que tenha um valor de `<path to SDK><SDKName><SDKVersion>` .  
   
-2. Adicione a propriedade MSBuild `SDKReferenceDirectoryRoot` ao arquivo de projeto. O valor dessa propriedade é uma lista de dois-pontos delimitados de semi dos diretórios nos quais residem os SDKs de extensão que você deseja referenciar.  
+2. Adicione a Propriedade MSBuild `SDKReferenceDirectoryRoot` ao seu arquivo de projeto. O valor dessa propriedade é uma lista delimitada por ponto-e-vírgula dos diretórios nos quais os SDKs de extensão que você deseja referenciar residem.  
   
-### <a name="installation-layout"></a>Layout de instalação  
- SDKs de extensão tem o seguinte layout de instalação:  
+### <a name="installation-layout"></a>Layout da instalação  
+ Os SDKs de extensão têm o seguinte layout de instalação:  
   
 ```  
 \<ExtensionSDKs root>  
@@ -102,13 +102,13 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
 ```  
   
-1. \\< SDKName\>\\< SDKVersion\>: o nome e a versão da extensão do SDK é derivado dos nomes de pastas correspondentes no caminho para a raiz do SDK. O MSBuild usa essa identidade para encontrar o SDK no disco, e o Visual Studio exibe essa identidade na **propriedades** janela e **Gerenciador de referências** caixa de diálogo.  
+1. \\<SDKName \> \\<SDKVersion \> : o nome e a versão do SDK da extensão são derivados dos nomes de pastas correspondentes no caminho para a raiz do SDK. O MSBuild usa essa identidade para localizar o SDK no disco e o Visual Studio exibe essa identidade na janela **Propriedades** e na caixa de diálogo **Gerenciador de referências** .  
   
-2. Pasta referências: os binários que contêm as APIs. Eles podem ser arquivos de metadados do Windows (WinMD) ou módulos (assemblies).  
+2. Pasta References: os binários que contêm as APIs. Eles podem ser arquivos de metadados do Windows (WinMD) ou assemblies.  
   
-3. Pasta Redist: os arquivos que são necessários para o tempo de execução/depuração e devem obter empacotados como parte do aplicativo do usuário. Todos os binários devem ser colocados sob \redist\\< config\>\\< arch\>, e os nomes de binários devem ter o seguinte formato para garantir a exclusividade:  **\<empresa >.\< produto >. \<finalidade >. \<extensão >** . Por exemplo, Microsoft.Cpp.Build.dll. Todos os arquivos com nomes que entrem em conflito com nomes de arquivo de outros SDKs (por exemplo, arquivos javascript, css, pri, xaml, png e jpg) devem ser colocados sob \redist\\< config\>\\< arch\> \\< sdkname\>\, exceto para os arquivos que estão associados com XAML controla. Esses arquivos devem ser colocados sob \redist\\< config\>\\< arch\>\\< componentname\>\\.  
+3. Pasta redist: os arquivos necessários para tempo de execução/depuração e devem ser empacotados como parte do aplicativo do usuário. Todos os binários devem ser colocados sob \redist \\<config \> \\<Arch \> e os nomes binários devem ter o seguinte formato para garantir a exclusividade: ** \<company> . \<product> . \<purpose> \<extension> **. Por exemplo, Microsoft.Cpp.Build.dll. Todos os arquivos com nomes que podem colidir com nomes de arquivos de outros SDKs (por exemplo, JavaScript, CSS, PRI, XAML, png e arquivos jpg) devem ser colocados sob \redist \\<config \> \\<Arch \> \\<\> sdkname \ Except para os arquivos associados aos controles XAML. Esses arquivos devem ser colocados sob \redist \\<config \> \\<Arch \> \\<ComponentName \> \\ .  
   
-4. A pasta DesignTime: os arquivos que são necessários no somente pré-execução/depuração de tempo e não deve ser empacotados como parte do aplicativo do usuário. Eles podem ser documentos XML, bibliotecas, cabeçalhos, binários de tempo de design de caixa de ferramentas, MSBuild artefatos e assim por diante. Qualquer SDK que se destina para consumo por um projeto nativo deve ter uma *SDKName*arquivo. Props. O exemplo a seguir mostra um exemplo desse tipo de arquivo.  
+4. Pasta designtime: os arquivos que são necessários somente em tempo de execução/depuração e não devem ser empacotados como parte do aplicativo do usuário. Eles podem ser documentos XML, bibliotecas, cabeçalhos, binários de tempo de design da caixa de ferramentas, artefatos do MSBuild e assim por diante. Qualquer SDK destinado ao consumo por um projeto nativo deve ter um arquivo *SDKName*. props. A seguir, é mostrado um exemplo desse tipo de arquivo.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -126,14 +126,14 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
     ```  
   
-     Documentos de referência do XML serão posicionados junto com o arquivo de referência. Por exemplo, o documento de referência XML para o **\References\\< config\>\\< arch\>\sample.dll** assembly é **\References\\ < config\>\\< arch\>\sample.xml**, e é a versão localizada do que doc **\References\\< config\>\\< arch\>\\< localidade\>\sample.xml**.  
+     Os documentos de referência XML são colocados junto com o arquivo de referência. Por exemplo, o documento de referência XML do **\References \\<config \> \\<Arch \>\sample.dll** assembly é **\References \\<config<\> \\ Arch \> **\sample.xmle a versão localizada desse documento é **\References \\<config \> \\<Arch \> \\<locale \>\sample.xml**.  
   
-5. Pasta de configuração: três subpastas: Depuração, varejo e CommonConfiguration. Os autores do SDK podem colocar seus arquivos em CommonConfiguration quando o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração direcionada pelo cliente do SDK.  
+5. Pasta de configuração: três subpastas: debug, Retail e CommonConfiguration. Os autores do SDK podem posicionar seus arquivos em CommonConfiguration quando o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração de destino do consumidor do SDK.  
   
-6. Pasta de arquitetura: arquiteturas a seguir são suportadas: x86, x64, ARM, neutro. Win32 mapeia para x86 e AnyCPU mapeia para neutro.  
+6. Pasta de arquitetura: há suporte para as seguintes arquiteturas: x86, x64, ARM, neutro. O Win32 mapeia para x86 e AnyCPU é mapeado para neutro.  
   
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml  
- Esse arquivo descreve como o Visual Studio deve consumir o SDK. Confira o exemplo abaixo.  
+ Este arquivo descreve como o Visual Studio deve consumir o SDK. A seguir, é mostrado um exemplo.  
   
 ```  
 <FileList>  
@@ -159,44 +159,44 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
   
  A lista a seguir fornece os elementos do arquivo.  
   
-1. DisplayName: o valor que aparece no Gerenciador de referências, Gerenciador de soluções, pesquisador de objetos e outros locais na interface do usuário para o Visual Studio.  
+1. DisplayName: o valor que aparece no Gerenciador de referências, Gerenciador de Soluções, pesquisador de objetos e outros locais na interface do usuário para o Visual Studio.  
   
-2. ProductFamilyName: O nome de produto geral do SDK. Por exemplo, o [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK é denominada "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", que pertencem à mesma família da família de produtos do SDK, "Microsoft". Esse atributo permite que o Visual Studio e o MSBuild fazer essa conexão. Se esse atributo não existir, o nome do SDK é usado como o nome da família de produtos.  
+2. ProductFamilyName: o nome geral do produto SDK. Por exemplo, o [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK é denominado "Microsoft. winjs. 1.0" e "Microsoft. winjs. 2.0", que pertence à mesma família de família de produtos SDK, "Microsoft. winjs". Esse atributo permite que o Visual Studio e o MSBuild façam essa conexão. Se esse atributo não existir, o nome do SDK será usado como o nome da família de produtos.  
   
-3. FrameworkIdentity: especifica uma dependência em uma ou mais bibliotecas de componentes de Windows que o valor desse atributo é colocado no manifesto do aplicativo de consumo. Esse atributo é aplicável somente às bibliotecas de componentes do Windows.  
+3. FrameworkIdentity: especifica uma dependência em uma ou mais bibliotecas de componentes do Windows. o valor desse atributo é colocado no manifesto do aplicativo de consumo. Esse atributo é aplicável somente a bibliotecas de componentes do Windows.  
   
-4. TargetFramework: especifica os SDKs que estão disponíveis no Gerenciador de referências e a caixa de ferramentas. Isso é uma lista delimitada por ponto e vírgula de monikers de estrutura de destino, por exemplo ".NET Framework, versão = v 2.0; .NET Framework, versão = v4.5.1". Se várias versões da mesma estrutura de destino for especificadas, o Gerenciador de referência usa a versão mais antiga especificada para fins de filtragem. Por exemplo, se ".NET Framework, versão = v 2.0; .NET Framework, versão = v4.5.1" for especificado, usará o Gerenciador de referências ".NET Framework, versão = v 2.0". Se um perfil de framework de destino específico for especificado, somente esse perfil será ser usado pelo Gerenciador de referências para fins de filtragem. Por exemplo, quando "Silverlight, versão = v 4.0, perfil = WindowsPhone" for especificado, Gerenciador de referências filtra somente o perfil do Windows Phone; um projeto direcionado ao Silverlight 4.0 Framework completo não vê o SDK no Gerenciador de referências.  
+4. TargetFramework: especifica os SDKs que estão disponíveis no Gerenciador de referências e na caixa de ferramentas. Esta é uma lista delimitada por ponto-e-vírgula dos monikers da estrutura de destino, por exemplo, ".NET Framework, Version = v 2.0; .NET Framework, Version = v 4.5.1". Se várias versões da mesma estrutura de destino forem especificadas, o Gerenciador de referências usará a versão mais baixa especificada para fins de filtragem. Por exemplo, se ".NET Framework, versão = v 2.0; .NET Framework, versão = v 4.5.1" for especificado, o Gerenciador de referências usará ".NET Framework, versão = v 2.0". Se um perfil específico da estrutura de destino for especificado, somente esse perfil será usado pelo Gerenciador de referências para fins de filtragem. Por exemplo, quando "Silverlight, Version = v 4.0, Profile = WindowsPhone" for especificado, o Gerenciador de referências filtrará apenas o perfil de Windows Phone; um projeto direcionado para a estrutura completa do Silverlight 4,0 não vê o SDK no Gerenciador de referências.  
   
-5. MinVSVersion: o Visual Studio versão mínima.  
+5. MinVSVersion: a versão mínima do Visual Studio.  
   
-6. MaxPlatformVerson: A versão da plataforma de destino máximo deve ser usada para especificar as versões de plataforma na qual o SDK de extensão não funcionará. Por exemplo, o Microsoft Visual C++ Runtime Package v11.0 deve ser referenciado somente por projetos do Windows 8. Assim, MaxPlatformVersion do projeto Windows 8 é 8.0. Isso significa que o Gerenciador de referências filtra pacote de tempo de execução do Microsoft Visual C++ para um projeto do Windows 8.1 e MSBuild gera um erro quando um [!INCLUDE[win81](../includes/win81-md.md)] projeto faz referência a ele. Observação: esse elemento tem suporte do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
+6. MaxPlatformVerson: a versão máxima da plataforma de destino deve ser usada para especificar as versões da plataforma nas quais o seu SDK de extensão não funcionará. Por exemplo, o pacote de tempo de execução do Microsoft Visual C++ v 11.0 deve ser referenciado somente por projetos do Windows 8. Portanto, o MaxPlatformVersion do projeto do Windows 8 é 8,0. Isso significa que o Gerenciador de referências filtra Microsoft Visual C++ pacote de tempo de execução para um projeto Windows 8.1 e o MSBuild gera um erro quando um [!INCLUDE[win81](../includes/win81-md.md)] projeto faz referência a ele. Observação: esse elemento tem suporte a partir do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] .  
   
-7. AppliesTo: especifica os SDKs que estão disponíveis no Gerenciador de referências, especificando os tipos de projeto do Visual Studio aplicáveis. Nove valores são reconhecidos: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, gerenciados e nativo. O autor do SDK pode usar e ("+'), ou ("&#124;"), e não ("! ") operadores para especificar exatamente o escopo dos tipos de projeto que se aplicam ao SDK.  
+7. Aplica-se a: especifica os SDKs que estão disponíveis no Gerenciador de referências especificando os tipos de projeto aplicáveis do Visual Studio. Nove valores são reconhecidos: WindowsAppContainer, Visual c++, VB, CSharp, WindowsXAML, JavaScript, Managed e Native. O autor do SDK pode usar and ("+") ou ("&#124;"), não ("!") operadores para especificar exatamente o escopo dos tipos de projeto que se aplicam ao SDK.  
   
      WindowsAppContainer identifica projetos para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
-8. SupportPrefer32Bit: Valores com suporte são "True" e "False". O padrão é "True". Se o valor é definido como "False", o MSBuild retornará um erro para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projetos (ou um aviso para projetos da área de trabalho) se o projeto que referencia o SDK tem Prefer32Bit habilitado. Para obter mais informações sobre Prefer32Bit, consulte [página de Build, Designer de projeto (c#)](../ide/reference/build-page-project-designer-csharp.md) ou [página de compilação, Designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
+8. SupportPrefer32Bit: os valores com suporte são "true" e "false". O padrão é "true". Se o valor for definido como "false", o MSBuild retornará um erro para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projetos (ou um aviso para projetos da área de trabalho) se o projeto que faz referência ao SDK tiver o Prefer32Bit habilitado. Para obter mais informações sobre Prefer32Bit, consulte página [de compilação, designer de projeto (C#)](../ide/reference/build-page-project-designer-csharp.md) ou [página de compilação, designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
   
-9. SupportedArchitectures: uma vírgula das arquiteturas que o SDK oferece suporte. MSBuild exibirá um aviso se não há suporte para a arquitetura do SDK do destino no projeto consumidor. Se esse atributo não for especificado, o MSBuild nunca exibe esse tipo de aviso.  
+9. SupportedArchitectures: uma lista delimitada por ponto e vírgula de arquiteturas que o SDK dá suporte. O MSBuild exibirá um aviso se a arquitetura do SDK de destino no projeto de consumo não tiver suporte. Se esse atributo não for especificado, o MSBuild nunca exibirá esse tipo de aviso.  
   
-10. SupportsMultipleVersions: se esse atributo for definido como **erro** ou **aviso**, MSBuild indica que o mesmo projeto não pode fazer referência a várias versões da mesma família de SDK. Se esse atributo não existe ou está definido como **permitir**, MSBuild não exibe este tipo de erro ou aviso.  
+10. SupportsMultipleVersions: se esse atributo for definido como **erro** ou **aviso**, o MSBuild indica que o mesmo projeto não pode fazer referência a várias versões da mesma família do SDK. Se esse atributo não existir ou estiver definido como **permitir**, o MSBuild não exibirá esse tipo de erro ou aviso.  
   
-11. AppX: Especifica o caminho para os pacotes de aplicativos para a biblioteca de componentes do Windows no disco. Esse valor é passado para o componente de registro da biblioteca de componente do Windows durante a depuração local. É a convenção de nomenclatura para o nome do arquivo  **\<empresa >.\< Produto >. \<Arquitetura >. \<Configuration >. \<Versão >. AppX**. Configuração e arquitetura são opcionais em nome do atributo e o valor do atributo se eles não se aplicam para a biblioteca de componentes do Windows. Esse valor é aplicável somente às bibliotecas de componentes do Windows.  
+11. AppX: especifica o caminho para os pacotes de aplicativos para a biblioteca de componentes do Windows no disco. Esse valor é passado para o componente de registro da biblioteca de componentes do Windows durante a depuração local. A Convenção de nomenclatura para o nome do arquivo é ** \<Company> . \<Product> . \<Architecture> . \<Configuration> \<Version> . Appx**. A configuração e a arquitetura são opcionais no nome do atributo e no valor do atributo se eles não se aplicam à biblioteca de componentes do Windows. Esse valor é aplicável somente a bibliotecas de componentes do Windows.  
   
-12. CopyRedistToSubDirectory: especifica onde os arquivos na pasta \redist devem ser copiados em relação à raiz do pacote de aplicativo (ou seja, o **local do pacote** escolhido no Assistente Criar pacote do aplicativo) e a raiz de layout de tempo de execução. O local padrão é a raiz do pacote de aplicativo e o layout de F5.  
+12. CopyRedistToSubDirectory: especifica onde os arquivos na pasta \redist devem ser copiados em relação à raiz do pacote do aplicativo (ou seja, o **local do pacote** escolhido no Assistente para criar pacote de aplicativo) e a raiz do layout do tempo de execução. O local padrão é a raiz do pacote do aplicativo e o layout F5.  
   
-13. DependsOn: Uma lista de identidades do SDK que definem os SDKs do qual esse SDK depende. Esse atributo é exibido no painel de detalhes do Gerenciador de referência.  
+13. Depende: uma lista de identidades do SDK que definem os SDKs dos quais esse SDK depende. Esse atributo aparece no painel de detalhes do Gerenciador de referências.  
   
-14. MoreInfo: a URL para a página da web que fornece ajuda e informações adicionais. Esse valor é usado no link mais informações no painel à direita do Gerenciador de referência.  
+14. MoreInfo: a URL para a página da Web que fornece ajuda e mais informações. Esse valor é usado no link mais informações no painel direito do Gerenciador de referências.  
   
-15. Tipo de registro: Especifica o registro WinMD no manifesto do aplicativo e é necessário para o WinMD nativo, que tem uma implementação de equivalente DLL.  
+15. Tipo de registro: especifica o registro de WinMD no manifesto do aplicativo e é necessário para o WinMD nativo, que tem uma DLL de implementação equivalente.  
   
-16. Referência de arquivo: especificado para apenas essas referências que contêm controles ou são WinMDs nativos. Para obter informações sobre como especificar se uma referência contém controles, consulte [especificando o local de itens de caixa de ferramentas](#ToolboxItems) abaixo.  
+16. Referência de arquivo: especificada somente para as referências que contêm controles ou são WinMDs nativas. Para obter informações sobre como especificar se uma referência contém controles, consulte [especificando o local dos itens da caixa de ferramentas](#ToolboxItems) abaixo.  
   
-## <a name="ToolboxItems"></a> Especificando o local dos itens de caixa de ferramentas  
- O elemento ToolBoxItems do esquema Sdkmanifest Especifica a categoria e o local dos itens de caixa de ferramentas na plataforma e SDKs de extensão. Os exemplos a seguir mostram como especificar locais diferentes. Isso é aplicável às referências WinMD ou DLL.  
+## <a name="specifying-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Especificando o local dos itens da caixa de ferramentas  
+ O elemento ToolBoxItems do esquema de SDKManifest.xml especifica a categoria e o local dos itens da caixa de ferramentas nos SDKs de plataforma e extensão. Os exemplos a seguir mostram como especificar locais diferentes. Isso é aplicável a referências WinMD ou DLL.  
   
-1. Coloque os controles na categoria da caixa de ferramentas padrão.  
+1. Coloque os controles na categoria padrão da caixa de ferramentas.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -204,7 +204,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-2. Coloque controles em um nome de categoria específico.  
+2. Coloque os controles sob um nome de categoria específico.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -212,7 +212,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-3. Coloque controles em nomes de categoria específica.  
+3. Coloque os controles sob nomes de categoria específicos.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -223,7 +223,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-4. Coloque controles em nomes de categoria diferentes no Blend e o Visual Studio.  
+4. Coloque controles sob diferentes nomes de categoria no Blend e no Visual Studio.  
   
     ```  
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.  
@@ -233,7 +233,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-5. Enumere controles específicos de modo diferente no Blend e o Visual Studio.  
+5. Enumere controles específicos de forma diferente no Blend e no Visual Studio.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -244,7 +244,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-6. Enumerar os controles específicos e colocá-los em um caminho comum do Visual Studio ou apenas no grupo todos os controles.  
+6. Enumere controles específicos e coloque-os no caminho comum do Visual Studio ou somente no grupo todos os controles.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -255,7 +255,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-7. Enumerar os controles específicos e mostrar apenas um conjunto específico em ChooseItems sem eles sendo na caixa de ferramentas.  
+7. Enumere controles específicos e mostre apenas um conjunto específico em ChooseItems sem que eles estejam na caixa de ferramentas.  
   
     ```  
     <File Reference = "sample.winmd">  
@@ -264,7 +264,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: Criar um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Passo a passo: Criar um SDK usando c# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Walkthrough: Criando um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Walkthrough: Criando um SDK usando C# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

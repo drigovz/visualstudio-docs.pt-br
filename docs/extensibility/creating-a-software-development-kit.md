@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904110"
 ---
 # <a name="create-a-software-development-kit"></a>Criar um Software Development Kit
@@ -135,7 +135,7 @@ Os SDKs de extensão têm o seguinte layout de instalação:
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-O arquivo *SDKManifest.xml* descreve como o Visual Studio deve consumir o SDK. Veja um exemplo a seguir:
+O arquivo *SDKManifest.xml* descreve como o Visual Studio deve consumir o SDK. A seguir, é mostrado um exemplo:
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ A lista a seguir fornece os elementos do arquivo:
 
 16. Referência de arquivo: especificada somente para as referências que contêm controles ou são WinMDs nativas. Para obter informações sobre como especificar se uma referência contém controles, consulte [especificar o local dos itens da caixa de ferramentas](#ToolboxItems) abaixo.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Especificar o local dos itens da caixa de ferramentas
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Especificar o local dos itens da caixa de ferramentas
 
 O elemento **ToolBoxItems** do esquema de *SDKManifest.xml* especifica a categoria e o local dos itens da caixa de ferramentas nos SDKs de plataforma e extensão. Os exemplos a seguir mostram como especificar locais diferentes. Isso é aplicável a referências WinMD ou DLL.
 

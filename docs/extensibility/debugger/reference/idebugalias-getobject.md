@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject | Microsoft Docs
+title: 'IDebugAlias:: GetObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c7e73a7c1ccb5840927f4292fe057cbb6670a89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736440"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-Obtém o objeto para o seu nome.
+Obtém o objeto para o qual este alias se destina.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int GetObject(
 )
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppObject`\
-[fora] O [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) representa este alias.
+fora O [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) que este alias representa.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
