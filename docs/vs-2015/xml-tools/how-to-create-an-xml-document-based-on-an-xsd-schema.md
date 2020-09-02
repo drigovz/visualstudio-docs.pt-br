@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e48c48d6711a1eb21157122d13790e22688855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670942"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como criar um documento XML baseado em um esquema XSD
@@ -37,7 +37,7 @@ O recurso **gerar XML de exemplo** gera um arquivo XML de exemplo baseado em seu
 
 - Enumerações do tipo `xs:QName`.
 
-- Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
+- `xs:ENTITY``xs:ENTITIES`tipos, e `xs:NOTATION` .
 
   Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se as enumerações ocorrerem no esquema para esse tipo.
 
@@ -45,7 +45,7 @@ O recurso **gerar XML de exemplo** gera um arquivo XML de exemplo baseado em seu
 
 1. Siga as etapas em [como criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com o botão direito do mouse no elemento global `PurchaseOrder`. Selecione **gerar XML de exemplo**.
+2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com o botão direito do mouse no `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.
 
      Quando você selecionar essa opção, o arquivo PurchaseOrder.xml com o conteúdo XML de exemplo a seguir será gerado e aberto no Editor de XML:
 
@@ -76,5 +76,5 @@ O recurso **gerar XML de exemplo** gera um arquivo XML de exemplo baseado em seu
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Trabalhando com os dados XML](../xml-tools/working-with-xml-data.md)

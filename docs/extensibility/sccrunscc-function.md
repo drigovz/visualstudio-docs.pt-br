@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700403"
 ---
 # <a name="sccrunscc-function"></a>Função SccRunScc
-Esta função invoca a ferramenta de administração de controle de origem.
+Essa função invoca a ferramenta de administração do controle do código-fonte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,42 +33,42 @@ SCCRTN SccRunScc(
 );
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  pvContext
 
-[em] A estrutura de contexto plug-in de controle de origem.
+no A estrutura de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[em] Uma alça para a janela IDE que o plug-in de controle de origem pode usar como pai para quaisquer caixas de diálogo que ele forneça.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
- nArquivos
+ nFiles
 
-[em] Número de arquivos especificados na `lpFileNames` matriz.
+no Número de arquivos especificados na `lpFileNames` matriz.
 
  lpFileNames
 
-[em] Matriz de nomes de arquivos selecionados.
+no Matriz de nomes de arquivo selecionados.
 
-## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+## <a name="return-value"></a>Valor Retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A ferramenta de administração de controle de origem foi invocada com sucesso.|
+|SCC_OK|A ferramenta de administração do controle do código-fonte foi invocada com êxito.|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada.|
-|SCC_E_INITIALIZEFAILED|Falhou em inicializar o sistema de controle de origem.|
-|SCC_E_ACCESSFAILURE|Houve um problema de acesso ao sistema de controle de origem, provavelmente devido a problemas de rede ou contenção.|
-|SCC_E_CONNECTIONFAILURE|Falha ao conectar-se ao sistema de controle de origem.|
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle de origem.|
-|SCC_E_NONSPECIFICERROR|Falha inespecífica.|
+|SCC_E_INITIALIZEFAILED|Falha ao inicializar o sistema de controle do código-fonte.|
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|
+|SCC_E_CONNECTIONFAILURE|Falha ao conectar ao sistema de controle do código-fonte.|
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|
+|SCC_E_NONSPECIFICERROR|Falha não específica.|
 
 ## <a name="remarks"></a>Comentários
- Esta função permite que o chamador acesse toda a gama de recursos do sistema de controle de origem através de uma ferramenta de administração externa. Se o sistema de controle de origem não tiver interface de usuário, o plug-in de controle de origem pode implementar uma interface para executar as funções de administração necessárias.
+ Essa função permite que o chamador acesse a gama completa de recursos do sistema de controle do código-fonte por meio de uma ferramenta de administração externa. Se o sistema de controle do código-fonte não tiver nenhuma interface do usuário, o plug-in de controle do código-fonte poderá implementar uma interface para executar as funções de administração necessárias.
 
- Esta função é chamada com uma contagem e uma matriz de nomes de arquivos para os arquivos selecionados no momento. Se a ferramenta de administração o suportar, a lista de arquivos pode ser usada para pré-selecionar arquivos na interface de administração; caso contrário, a lista pode ser ignorada.
+ Essa função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração oferecer suporte a ela, a lista de arquivos poderá ser usada para preselecionar arquivos na interface de administração; caso contrário, a lista poderá ser ignorada.
 
- Essa função é normalmente invocada quando o usuário seleciona o>do Servidor de Controle de Origem de **Origem \<** do menu Controle de**Origem** de **Arquivo.** ->  Esta opção de menu **Iniciar** pode ser sempre desativada ou até mesmo oculta definindo uma entrada de registro. [Veja como: Instale um plug-in de controle de origem](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Esta função é chamada apenas se `SCC_CAP_RUNSCC` [SccInitialize](../extensibility/sccinitialize-function.md) retornar o bit de capacidade (consulte [Sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre este e outros bits de capacidade).
+ Essa função é normalmente invocada quando o usuário seleciona **a \<Source Control Server> inicialização** no **File**  ->  menu**controle de origem** do arquivo. Essa opção de menu **Iniciar** pode ser sempre desabilitada ou até mesmo oculta com a definição de uma entrada de registro. Consulte [como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função será chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retornar o `SCC_CAP_RUNSCC` bit de recurso (consulte os [sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de funcionalidade).
 
 ## <a name="see-also"></a>Confira também
 - [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

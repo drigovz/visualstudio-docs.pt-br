@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850062"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
@@ -26,7 +26,7 @@ Este artigo explica como configurar um servidor remoto com SSL e um serviço do 
 
 ## <a name="install-an-ssl-certificate"></a>Instalar um certificado SSL
 
-As RTVS requerem que todas as comunicações com um servidor remoto ocorram por HTTP, o que requer um certificado SSL no servidor. Você pode usar um certificado assinado por uma autoridade de certificação confiável (recomendado) ou um certificado autoassinado. (Um certificado auto-assinado faz com que o RTVS emita avisos quando conectado.) Com qualquer um, você precisa instalá-lo no computador e permitir o acesso à sua chave privada.
+As RTVS requerem que todas as comunicações com um servidor remoto ocorram por HTTP, o que requer um certificado SSL no servidor. Você pode usar um certificado assinado por uma autoridade de certificação confiável (recomendado) ou um certificado autoassinado. (Um certificado autoassinado faz com que o RTVS emita avisos quando conectado.) Com um deles, você precisa instalá-lo no computador e permitir o acesso à sua chave privada.
 
 ### <a name="obtain-a-trusted-certificate"></a>Obter um certificado confiável
 
@@ -76,7 +76,7 @@ Para instalar o certificado no computador remoto, execute *certlm.msc* (o gerenc
 Depois que o certificado for importado, conceda à conta `NETWORK SERVICE` permissões para ler a chave privada conforme descrito nas instruções a seguir. `NETWORK_SERVICE` é a conta usada para executar o agente de serviços do R, que é o serviço que termina as conexões SSL de entrada para o computador servidor.
 
 1. Execute *certlm.msc* (o Gerenciador de Certificados) em um prompt de comando do administrador.
-1. Expandir**certificados** **pessoais,** > clicar com o botão direito do mouse no certificado e selecionar **Todas as tarefas** > **gerenciar chaves privadas**.
+1. Expanda **Personal**  >  **certificados**pessoais, clique com o botão direito do mouse no certificado e selecione **todas as tarefas**  >  **gerenciar chaves privadas**.
 1. Clique com o botão direito do mouse no certificado e selecione o comando **Gerenciar Chaves Privadas** em **Todas as Tarefas**.
 1. Na caixa de diálogo que aparece, selecione **Adicionar** e insira `NETWORK SERVICE` como o nome da conta:
 
@@ -199,11 +199,11 @@ Com os serviços do R em execução no computador remoto, você também precisa 
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-**P. O computador do servidor R não está respondendo, o que eu faço?**
+**Perguntas. O computador do R Server não está respondendo, o que eu faço?**
 
 Tente executar ping para o computador remoto na linha de comando: `ping remote-machine-name`. Se o ping falhar, verifique se o computador está em execução.
 
-**P. A janela interativa R diz que o computador remoto está ligado, mas por que o serviço não está funcionando?**
+**Perguntas. A janela interativa do R diz que o computador remoto está ligado, mas por que o serviço não está em execução?**
 
 Existem três motivos possíveis:
 
@@ -213,21 +213,21 @@ Existem três motivos possíveis:
 
 Reinicie o computador depois de fazer as alterações acima. Em seguida, verifique se `RHostBrokerService` e `RUserProfileService` estão em execução por meio do Gerenciador de Tarefas (guia serviços) ou de *services.msc*.
 
-**P. Por que a janela interativa R diz "401 Access negado" ao se conectar ao servidor R?**
+**Perguntas. Por que a janela interativa do R diz "acesso de 401 negado" ao se conectar ao servidor R?**
 
 Há dois motivos possíveis:
 
 - É muito provável que a conta `NETWORK SERVICE` não tenha acesso à chave privada do certificado SSL. Siga as instruções anteriores para conceder o acesso `NETWORK SERVICE` à chave privada.
 - Verifique se o serviço `seclogon` está em execução. Use *services.msc* para configurar `seclogon` para que ele seja iniciado automaticamente.
 
-**P. Por que a janela interativa R diz "404 Não encontrado" ao se conectar ao servidor R?**
+**Perguntas. Por que a janela interativa do R diz "404 não encontrado" ao se conectar ao servidor R?**
 
 Esse erro provavelmente ocorre devido à ausência de bibliotecas redistribuíveis do Visual C++. Verifique a janela do R Interativo para ver se há uma mensagem sobre a biblioteca (DLL) ausente. Verifique se o VS 2015 redistribuível está instalado e se o R está instalado também.
 
-**P. Eu não posso acessar internet/recurso a partir da janela interativa R, o que eu faço?**
+**Perguntas. Não consigo acessar a Internet/recurso da janela interativa do R, o que faço?**
 
 Verifique se as regras de firewall para `Microsoft.R.Host.Broker` e `Microsoft.R.Host` permitem acesso de saída na porta 5444. Reinicie o computador após a aplicação das alterações.
 
-**Q. Eu tentei todas essas soluções, e ainda não funciona. E agora?**
+**Perguntas. Tentei todas essas soluções e ainda não funciona. E agora?**
 
-Procure nos arquivos de log em *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Esta pasta contém arquivos de log separados para cada instância do R Broker Service que foi executado. Um novo arquivo de log é criado sempre que o serviço é reiniciado. Verifique o arquivo de log mais recente para encontrar pistas sobre o que pode estar errado.
+Examine os arquivos de log em *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Essa pasta contém arquivos de log separados para cada instância do serviço do agente do R que foi executado. Um novo arquivo de log é criado sempre que o serviço é reiniciado. Verifique o arquivo de log mais recente para encontrar pistas sobre o que pode estar errado.

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386297"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solução de problemas do Emulador do Visual Studio para Android
@@ -61,7 +61,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 - [Recursos de suporte](#Support)
 
-## <a name="before-you-start"></a><a name="BeforeYouStart"></a>Antes de começar
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a> Antes de começar
  Antes de iniciar a solução de problemas, pode ser útil examinar os tópicos a seguir:
 
 - [Requisitos do sistema para o emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -102,7 +102,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
   Se sua rede exigir definições configuradas manualmente, verifique com o administrador de TI como habilitar conectividade de rede para o emulador.
 
-## <a name="emulator-starts-slowly-fails-to-start-due-to-a-timeout-or-app-deployment-fails"></a><a name="SlowStart"></a>O emulador é iniciado lentamente, não é iniciado devido a um tempo limite ou a implantação do aplicativo falha
+## <a name="emulator-starts-slowly-fails-to-start-due-to-a-timeout-or-app-deployment-fails"></a><a name="SlowStart"></a> O emulador é iniciado lentamente, não é iniciado devido a um tempo limite ou a implantação do aplicativo falha
  Sob certas condições, o emulador leva vários minutos para iniciar ou não pode ser iniciado devido a um tempo limite. Quando o emulador falha ao iniciar, você vê a seguinte mensagem: `App deployment failed. Please try again`. As seguintes condições podem resultar neste erro.
 
 - Executando o emulador do Visual Studio para Android de um VHD inicializável. Não há suporte para essa configuração.
@@ -117,7 +117,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 - Em geral, qualquer fator que esteja contribuindo para o baixo desempenho do sistema. Inicie a solução de problemas com o componente que tem o menor subtotal no Índice de Experiência do Windows,e que pode ser encontrado na página de informações e ferramentas de desempenho do Painel de Controle.
 
-## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a>Falha ao iniciar o emulador
+## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a> Falha ao iniciar o emulador
  Se o emulador estava funcionando anteriormente, mas não funciona agora, execute as tarefas a seguir. Se você estiver usando o emulador pela primeira vez, consulte [O emulador falha ao iniciar (primeira utilização)](#NoStart) antes de tentar estas etapas.
 
 - Remova qualquer instância do Hyper-V do emulador.
@@ -269,7 +269,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
   Reinicie o emulador e agora você deve ver o emulador conectado ao ADB e às ferramentas do Android associadas.
 
-## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>O emulador para de responder porque não pôde configurar a porta UDP
+## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a> O emulador para de responder porque não pôde configurar a porta UDP
  Você pode enfrentar esse problema devido a incompatibilidade com Xamarin Player. Se o emulador parecer parar de responder ou se você vir essa mensagem de erro, "o emulador não poderá se conectar ao sistema operacional do dispositivo: não foi possível configurar a porta UDP.  Algumas funcionalidades podem estar desabilitadas", você poderá estar enfrentando esse problema. Use as etapas a seguir.
 
 1. Desinstale o Xamarin Player.
@@ -280,7 +280,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 4. Você pode tentar desinstalar/reinstalar o Hyper-V após a remoção de todos os adaptadores de rede não físicos.
 
-## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a>Não é possível anexar o depurador a um projeto do Xamarin
+## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a> Não é possível anexar o depurador a um projeto do Xamarin
  Se você estiver executando o Windows 10 com processadores Intel Skylake, os aplicativos do Xamarin poderão falhar ao serem executados no emulador ou o depurador do Visual Studio pode não ser anexado a eles. Isso ocorre devido a um problema com os processadores Hyper-V e Skylake. Execute as seguintes etapas como uma solução alternativa.
 
 1. Abra o Gerenciador do Hyper-V e selecione a VM para o perfil do emulador que você está usando.
@@ -295,22 +295,22 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 6. Reinicie o serviço (em **Ações**) e tente novamente.
 
-## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a>Falha do emulador ao executar o aplicativo que usa Google Play Services
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> Falha do emulador ao executar o aplicativo que usa Google Play Services
  O emulador não é fornecido com as bibliotecas do Google Play Services. No entanto, o emulador dá suporte a instalação do tipo "arrastar e soltar" de arquivos zip de memória flash.
 
-## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a>Arrastar e soltar de um arquivo, APK ou arquivo zip compactável não funciona
+## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> Arrastar e soltar de um arquivo, APK ou arquivo zip compactável não funciona
  O emulador usa ADB.exe para facilitar a transferência de arquivo quando você arrasta e solta um arquivo na tela. Se você encontrar um erro ao tentar arrastar e soltar um arquivo, isso provavelmente indica que o emulador não está conectado ao ADB.exe. Para resolver, siga as etapas em [O Visual Studio fica preso ao tentar implantar o aplicativo no emulador ou o emulador não aparece como um destino de depuração em outras IDEs](#ADB).
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> Resolução de tela incorreta
  Se você tirar uma captura de tela usando a guia Captura de tela na janela **Ferramentas Adicionais** e a imagem resultante for de tamanho inesperado, ajuste o nível de zoom da tela antes de escolher **Capturar**. O emulador usa capturas de tela com a resolução de tela no monitor do PC host.
 
-## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a>Falha do emulador ao renderizar conteúdo OpenGL
+## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> Falha do emulador ao renderizar conteúdo OpenGL
  O emulador renderiza conteúdo do OpenGL usando a GPU do computador host e usa o projeto ANGLE para converter essas chamadas para e do DirectX. Se seu aplicativo renderizar corretamente em um dispositivo, mas incorretamente no emulador, é provável que o dispositivo esteja reduzindo uma chamada OpenGL incorreta (por exemplo, usando variáveis de sombreador que não correspondem).
 
 ## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> O emulador não responde a gestos multitoque
  Em alguns casos, o emulador iniciará e não responderá a multitoque, nem por interação direta em sua tela sensível ao toque nem usando a ferramenta multitoque na barra de ferramentas do emulador. Se esse for o caso, escolha o botão **Girar** na barra de ferramentas do emulador e tente usar o multitoque novamente. Se o problema persistir, leia [O emulador falha ao renderizar o conteúdo do OpenGL](#OpenGL).
 
-## <a name="support-resources"></a><a name="Support"></a>Recursos de suporte
+## <a name="support-resources"></a><a name="Support"></a> Recursos de suporte
  Se o computador host atender aos requisitos do sistema e você encontrar um problema não abordado neste guia de solução de problemas:
 
 - Faça uma pergunta sobre o StackOverflow o [emulador do android](https://stackoverflow.com/questions/tagged/android-emulator) e marcações do visual studio.

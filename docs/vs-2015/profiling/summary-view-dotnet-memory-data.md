@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193325"
 ---
 # <a name="summary-view---net-memory-data"></a>Exibição Resumo – Dados de memória do .NET
@@ -29,7 +29,7 @@ A exibição Resumo exibe informações sobre as funções e os tipos do .NET qu
 ## <a name="functions-allocating-most-memory"></a>Funções que Alocam Mais Memória  
  Lista as funções que alocaram o maior número de bytes de memória na execução de criação de perfil.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|O nome da função.|  
 |**% de bytes**|O percentual de todos os bytes alocados na execução de criação de perfil que foram alocados por essa função ou por uma função filho chamada por essa função.|  
@@ -37,7 +37,7 @@ A exibição Resumo exibe informações sobre as funções e os tipos do .NET qu
 ## <a name="types-with-most-memory-allocated"></a>Tipos com mais memória alocada  
  Lista os tipos para os quais o maior número de bytes de memória foi alocado na execução de criação de perfil.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|O nome do tipo.|  
 |**% de bytes**|O percentual de todos os bytes alocados na execução de criação de perfil que foram alocados para esse tipo.|  
@@ -45,11 +45,11 @@ A exibição Resumo exibe informações sobre as funções e os tipos do .NET qu
 ## <a name="types-with-most-instances"></a>Tipos com mais instâncias  
  Lista os tipos que foram criados mais vezes durante a execução de criação de perfil. tinha  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|O nome do tipo.|  
 |**% de instâncias**|O percentual do número total de objetos do .NET que foram criados na execução de criação de perfil que eram instâncias desse tipo.|  
   
-## <a name="see-also"></a>Veja também  
- [Exibição Resumo](../profiling/summary-view-sampling-data.md)   
- [Exibição de Resumo](../profiling/summary-view-instrumentation-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de resumo](../profiling/summary-view-sampling-data.md)   
+ [Exibição do Resumo](../profiling/summary-view-instrumentation-data.md)

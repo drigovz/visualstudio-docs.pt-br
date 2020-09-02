@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 890d9c5b1673a9af4acabf8262a76e2840ede8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150885"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ignora um número especificado de fontes injetados em uma sequência de enumeração.  
+Ignora um número especificado de fontes injetadas em uma sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parâmetros  
  celt  
- [in] O número de fontes injetados na sequência de enumeração para ignorar.  
+ no O número de fontes injetadas na sequência de enumeração a serem ignoradas.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se há não mais injetados fontes para ignorar.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK` ; caso contrário, retornará se não houver `S_FALSE` mais fontes injetadas para ignorar.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

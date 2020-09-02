@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847817"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
@@ -27,9 +27,9 @@ ms.locfileid: "75847817"
   
 - Inicie a captura programaticamente quando seu aplicativo não renderizar, como quando ele usa DirectCompute para executar cálculos.  
   
-- Chame `CaptureCurrentFrame`quando um problema de renderização é difícil de prever e capturar em testes manuais, mas pode ser previsto programaticamente usando informações sobre o estado do aplicativo em tempo de execução.  
+- Chame `CaptureCurrentFrame` quando um problema de renderização é difícil de prever e capturar em testes manuais, mas pode ser previsto programaticamente usando informações sobre o estado do aplicativo em tempo de execução.  
   
-## <a name="CaptureDX11_2"></a>Captura programática no Windows 8.1  
+## <a name="programmatic-capture-in-windows-81"></a><a name="CaptureDX11_2"></a> Captura programática no Windows 8.1  
  Esta parte do passo a passos demonstra a captura programática em aplicativos que usam a API do DirectX 11,2 no Windows 8.1, que usa o método de captura robusto. Para obter informações sobre como usar a captura programática em aplicativos que usam versões anteriores do DirectX no Windows 8,0, consulte a [captura programática no windows 8,0 e versões anteriores](#CaptureDX11_1) , nesta explicação.  
   
  Esta seção mostra como fazer estas tarefas:  
@@ -61,10 +61,10 @@ ms.locfileid: "75847817"
     > Não inclua o arquivo de cabeçalho vsgcapture. h — que dá suporte à captura programática no Windows 8,0 e versões anteriores — para executar a captura programática em seus aplicativos Windows 8.1. Esse cabeçalho não é compatível com o DirectX 11.2. Se esse arquivo estiver incluído depois que o cabeçalho d3d11_2. h for incluído, o compilador emitirá um aviso. Se vsgcapture. h for incluído antes de d3d11_2. h, o aplicativo não será iniciado.  
   
     > [!NOTE]
-    > Se o SDK do DirectX de junho de 2010 estiver instalado em seu computador e o caminho de inclusão do seu projeto contiver `%DXSDK_DIR%includex86`, mova-o para o final do caminho de inclusão. Faça o mesmo com o caminho da biblioteca.  
+    > Se o SDK do DirectX de junho de 2010 estiver instalado em seu computador e o caminho de inclusão do seu projeto contiver `%DXSDK_DIR%includex86` , mova-o para o final do caminho de inclusão. Faça o mesmo com o caminho da biblioteca.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Como o SDK do Windows Phone 8,1 não inclui o cabeçalho DXProgrammableCapture. h, você precisará definir a interface `IDXGraphicsAnalysis` por conta própria para poder usar os métodos `BeginCapture()` e `EndCapture()`. Inclua os outros cabeçalhos, conforme descrito na seção anterior.  
+ Como o SDK do Windows Phone 8,1 não inclui o cabeçalho DXProgrammableCapture. h, você precisará definir a `IDXGraphicsAnalysis` interface por conta própria para poder usar os `BeginCapture()` `EndCapture()` métodos e. Inclua os outros cabeçalhos, conforme descrito na seção anterior.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Para definir a interface IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ ms.locfileid: "75847817"
  Antes de capturar informações de gráficos do DirectX 11,2, você precisa obter a interface de depuração DXGI.  
   
 > [!IMPORTANT]
-> Ao usar a captura programática, você ainda deve executar seu aplicativo em diagnóstico de gráficos (Alt + F5 no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) ou na [ferramenta de captura de linha de comando](../debugger/command-line-capture-tool.md).  
+> Ao usar a captura programática, você ainda deve executar seu aplicativo em diagnóstico de gráficos (Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ) ou na [ferramenta de captura de linha de comando](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Para obter a interface IDXGraphicsAnalysis  
   
@@ -106,7 +106,7 @@ ms.locfileid: "75847817"
     ```  
   
     > [!NOTE]
-    > Se `DXGIGetDebugInterface1` retornar `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), verifique se o aplicativo está sendo executado sob o diagnóstico de gráficos (Alt + F5 no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Se `DXGIGetDebugInterface1` retorna `E_NOINTERFACE` ( `error: E_NOINTERFACE No such interface supported` ), verifique se o aplicativo está sendo executado em diagnósticos de gráficos (Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ).  
   
 ### <a name="capturing-graphics-information"></a>Capturando informações de gráficos  
  Agora que você tem uma interface `IDXGraphicsAnalysis` válida, é possível usar `BeginCapture` e `EndCapture` para capturar informações gráficas.  
@@ -129,7 +129,7 @@ ms.locfileid: "75847817"
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a>Captura programática no Windows 8,0 e versões anteriores  
+## <a name="programmatic-capture-in-windows-80-and-earlier"></a><a name="CaptureDX11_1"></a> Captura programática no Windows 8,0 e versões anteriores  
  Esta parte do tutorial demonstra a captura programática em aplicativos para o Windows 8,0 e versões anteriores que usam a API do DirectX 11,1, que usa o método de captura herdado. Para obter informações sobre como usar a captura programática em aplicativos que usam o DirectX 11,2 em Windows 8.1, consulte [captura programática em Windows 8.1](#CaptureDX11_2) anteriormente neste passo a passos.  
   
  Esta parte mostra estas tarefas:  
@@ -143,7 +143,7 @@ ms.locfileid: "75847817"
 - Usando a API do `CaptureCurrentFrame`  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Preparando o computador para usar a captura programática  
- A API de captura programática usa as Ferramentas Remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para fornecer funcionalidade de captura. O computador em que o aplicativo será executado deve ter as ferramentas remotas instaladas, mesmo quando você esteja usando a captura programática no computador local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não precisa estar em execução quando você executa a captura programática em um computador local.  
+ A API de captura programática usa as Ferramentas Remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para fornecer funcionalidade de captura. O computador em que o aplicativo será executado deve ter as ferramentas remotas instaladas, mesmo quando você esteja usando a captura programática no computador local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Não precisa estar em execução quando você executa a captura programática em um computador local.  
   
  Para usar as APIs de captura remota em um aplicativo que esteja em execução em um computador, primeiro, você precisa instalar as Ferramentas Remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nesse computador. Diferentes versões das ferramentas remotas dão suporte a diferentes plataformas de hardware. Para obter informações sobre como instalar as ferramentas remotas, consulte a [página de download do ferramentas remotas](https://visualstudio.microsoft.com/downloads#remote-tools) no site de downloads da Microsoft.  
   
@@ -182,7 +182,7 @@ ms.locfileid: "75847817"
   
    Se você não realizar essa etapa, o nome do arquivo será default.vsglog. Se você não definiu `DONT_SAVE_VSGLOG_TO_TEMP`, o local do arquivo será relativo para o diretório temporário. Do contrário, ele será relativo para o diretório de trabalho ou em outro local, caso tenha sido especificado um nome de arquivo absoluto.  
   
-  Para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e aplicativo e normalmente é encontrado em um local como C:\Users\\*username*\AppData\Local\Packages\\*Package family Name*\TempState\\. Para aplicativos da área de trabalho, o local do diretório temporário é específico para cada usuário e normalmente é encontrado em um local como C:\Users\\*username*\AppData\Local\Temp\\.  
+  Para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e aplicativo e normalmente é encontrado em um local como C:\Users \\ *username*\AppData\Local\Packages \\ *Package Family Name*\TempState \\ . Para aplicativos da área de trabalho, o local do diretório temporário é específico para cada usuário e normalmente é encontrado em um local como C:\Users \\ *username*\AppData\Local\Temp \\ .  
   
 > [!NOTE]
 > Para gravar em um local específico, você deve ter permissões para gravar nesse local, ou ocorrerá um erro. Lembre-se de que os aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] são mais restritos do que os aplicativos da área de trabalho em relação ao local onde podem gravar dados e podem exigir configuração adicional para gravação em determinados locais.  
@@ -198,7 +198,7 @@ ms.locfileid: "75847817"
   
 - Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Consulte [visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Walkthrough: capturando informações de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
- [Como capturar informações de gráficos](../debugger/capturing-graphics-information.md)   
+ [Capturando informações de gráficos](../debugger/capturing-graphics-information.md)   
  [Ferramenta de captura de linha de comando](../debugger/command-line-capture-tool.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0615933715c0e78513f9ee33ee171cc764f5d743
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465429"
 ---
 # <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
@@ -41,6 +41,6 @@ fora Retorna um endereço virtual (VA) em que um arquivo. exe ou. dll é carrega
 ## <a name="remarks"></a>Comentários
  O endereço de carregamento retornado é sempre zero, a menos que especificamente definido usando o método [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)

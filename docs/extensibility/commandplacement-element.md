@@ -1,5 +1,5 @@
 ---
-title: Elemento de posicionamento de comando | Microsoft Docs
+title: Elemento CommandPlacement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739734"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
-O elemento CommandPlacement permite que botões, grupos e menus sejam incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, você não precisa redefinir completamente esses itens para modificar a aparência de uma interface de usuário.
+O elemento CommandPlacement permite que os botões, grupos e menus sejam incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, você não precisa redefinir completamente esses itens para modificar a aparência de uma interface do usuário.
 
- Para obter mais informações, consulte [Criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md).
+ Para obter mais informações, consulte [criar grupos de botões reutilizáveis](../extensibility/creating-reusable-groups-of-buttons.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >
@@ -38,10 +38,10 @@ O elemento CommandPlacement permite que botões, grupos e menus sejam incluídos
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|guid|Obrigatórios. A orientação do conjunto de comandos, conforme definido no [elemento Símbolos](../extensibility/symbols-element.md).|
-|id|Obrigatórios. O id do menu, grupo ou comando a ser `Symbols Element`colocado, conforme definido no .|
+|guid|Obrigatórios. O GUID do conjunto de comandos, conforme definido no [elemento Symbols](../extensibility/symbols-element.md).|
+|id|Obrigatórios. A ID do menu, do grupo ou do comando a ser colocado, conforme definido no `Symbols Element` .|
 |priority|Obrigatórios. Determina a posição visual do item em seu elemento pai.|
-|Condição|Opcional. Ver [Atributos Condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [Aattributes condicional](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -53,7 +53,7 @@ O elemento CommandPlacement permite que botões, grupos e menus sejam incluídos
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento ComandosDe posicionamento](../extensibility/commandplacements-element.md)|Especifica grupos de comandos e elementos de posicionamento de comando.|
+|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Especifica grupos de elementos CommandPlacements e CommandPlacement.|
 
 ## <a name="example"></a>Exemplo
 
@@ -67,5 +67,5 @@ O elemento CommandPlacement permite que botões, grupos e menus sejam incluídos
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Elemento ComandosDe posicionamento](../extensibility/commandplacements-element.md)
-- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

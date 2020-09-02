@@ -1,5 +1,5 @@
 ---
-title: 'Como: Exibir e ocultar grupos de registro | Microsoft Docs'
+title: Como exibir e ocultar grupos de registros | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702243"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Como: Exibir e ocultar grupos de registros
+# <a name="how-to-display-and-hide-register-groups"></a>Como exibir e ocultar grupos de registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A janela **Registros** estará disponível apenas se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**, categoria **Geral**.  
@@ -38,7 +38,7 @@ A janela **Registros** estará disponível apenas se a depuração do nível de 
  Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito do mouse na janela **Registros**, verá um menu de atalho contendo esses grupos, que você poderá exibir ou ocultar como achar melhor seguindo o procedimento abaixo.  
   
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-or-hide-register-groups"></a>Para exibir ou ocultar grupos de registro  
   
@@ -48,5 +48,5 @@ A janela **Registros** estará disponível apenas se a depuração do nível de 
   
      Os grupos de registro que não têm suporte pelo hardware no qual você está depurando estão desabilitados no menu de atalho, e não podem ser selecionados.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

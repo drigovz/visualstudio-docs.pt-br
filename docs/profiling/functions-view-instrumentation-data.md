@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779214"
 ---
 # <a name="functions-view---instrumentation-data"></a>Exibição funções – dados de instrumentação
@@ -27,10 +27,10 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 |Coluna|Descrição|
 |------------|-----------------|
 |**Nome da função**|O nome da função.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Número de Chamadas**|O número total de chamadas que são feitas à função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
@@ -83,7 +83,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|
 
 ## <a name="see-also"></a>Confira também
-- [Como: Personalizar colunas de exibição de relatórios](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição de funções](../profiling/functions-view-sampling-data.md)
-- [Exibição de funções - amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
-- [Exibição de funções - instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Exibição de funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Exibição de funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

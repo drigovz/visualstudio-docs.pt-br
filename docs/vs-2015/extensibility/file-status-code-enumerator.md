@@ -1,5 +1,5 @@
 ---
-title: Enumerador de código de Status do arquivo | Microsoft Docs
+title: Enumerador de código de status de arquivo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204371"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de status do arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e o `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
+O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle do código-fonte. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e pela `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 enum SccStatus {  
@@ -52,52 +52,52 @@ enum SccStatus {
   
 ## <a name="members"></a>Membros  
  SCC_STATUS_INVALID  
- Não foi possível obter o status; Não confie nele.  
+ Não foi possível obter o status; Não confie nela.  
   
  SCC_STATUS_NOTCONTROLLED  
- Arquivo não está sob controle do código-fonte.  
+ O arquivo não está no controle do código-fonte.  
   
  SCC_STATUS_CONTROLLED  
- Arquivo está sob controle do código-fonte.  
+ O arquivo está sob controle do código-fonte.  
   
  SCC_STATUS_CHECKEDOUT  
- Check-out pelo usuário atual no disco local.  
+ Check-out feito pelo usuário atual no disco local.  
   
  SCC_STATUS_OUTOTHER  
- Arquivo foi extraído por outro usuário.  
+ O check-out do arquivo foi feito por outro usuário.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Arquivo é check-out exclusivo.  
+ O check-out exclusivo do arquivo foi feito.  
   
  SCC_STATUS_OUTMULTIPLE  
- Arquivo foi extraído por mais de um usuário.  
+ O check-out do arquivo foi feito por mais de um usuário.  
   
  SCC_STATUS_OUTOFDATE  
- O arquivo não é mais recente.  
+ O arquivo não é o mais recente.  
   
  SCC_STATUS_DELETED  
- Arquivo foi excluído do projeto.  
+ O arquivo foi excluído do projeto.  
   
  SCC_STATUS_LOCKED  
- Arquivo está bloqueado; Não há versões mais permitidos.  
+ O arquivo está bloqueado; Não há mais nenhuma versão permitida.  
   
  SCC_STATUS_MERGED  
- Arquivo foi mesclado, mas ainda não foi corrigido/verificado.  
+ O arquivo foi mesclado, mas ainda não foi corrigido/verificado.  
   
  SCC_STATUS_SHARED  
- Arquivo é compartilhado entre projetos.  
+ O arquivo é compartilhado entre projetos.  
   
  SCC_STATUS_PINNED  
- Arquivo compartilhado para uma versão explícita.  
+ O arquivo é compartilhado para uma versão explícita.  
   
  SCC_STATUS_MODIFIED  
- Arquivo foi modificado/dividida/violada.  
+ O arquivo foi modificado/interrompido/violado.  
   
  SCC_STATUS_OUTBYUSER  
- Arquivo foi extraído por usuário atual.  
+ O check-out do arquivo foi feito pelo usuário atual.  
   
  SCC_STATUS_NOMERGE  
- Arquivo nunca pode ser mesclado com e não precisa ser salvo antes de um GET.  
+ O arquivo nunca pode ser mesclado com e não precisa ser salvo antes de um GET.  
   
  SCC_STATUS_RESERVED_1  
  Reservado para uso interno.  
@@ -105,7 +105,7 @@ enum SccStatus {
  SCC_STATUS_RESERVED_2  
  Reservado para uso interno.  
   
-## <a name="see-also"></a>Consulte também  
- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

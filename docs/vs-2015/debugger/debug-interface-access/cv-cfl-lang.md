@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699354"
 ---
-# <a name="cvcfllang"></a>CV_CFL_LANG
+# <a name="cv_cfl_lang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.  
+Especifica o idioma do código-fonte do aplicativo ou módulo vinculado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -51,62 +51,62 @@ typedef enum CV_CFL_LANG { 
   
 ## <a name="elements"></a>Elementos  
  CV_CFL_C  
- Idioma do aplicativo é C.  
+ O idioma do aplicativo é C.  
   
  CV_CFL_CXX  
- Idioma do aplicativo é C++.  
+ O idioma do aplicativo é C++.  
   
  CV_CFL_FORTRAN  
- Idioma do aplicativo é FORTRAN.  
+ O idioma do aplicativo é o FORTRAN.  
   
  CV_CFL_MASM  
- Idioma do aplicativo é Microsoft Macro Assembler.  
+ O idioma do aplicativo é o Microsoft Macro Assembler.  
   
  CV_CFL_PASCAL  
- Idioma do aplicativo é Pascal.  
+ O idioma do aplicativo é Pascal.  
   
  CV_CFL_BASIC  
- Idioma do aplicativo é BASIC.  
+ O idioma do aplicativo é básico.  
   
  CV_CFL_COBOL  
- Idioma do aplicativo é COBOL.  
+ O idioma do aplicativo é COBOL.  
   
  CV_CFL_LINK  
- Aplicativo é um módulo geradas pelo vinculador.  
+ O aplicativo é um módulo gerado pelo vinculador.  
   
  CV_CFL_CVTRES  
- Aplicativo é um módulo de recurso convertido com a ferramenta CVTRES.  
+ O aplicativo é um módulo de recurso convertido com a ferramenta CVTRES.  
   
  CV_CFL_CVTPGD  
- Aplicativo é um módulo POGO otimizado gerado com a ferramenta CVTPGD.  
+ Application é um módulo do POGO Optimized gerado com a ferramenta CVTPGD.  
   
  CV_CFL_CSHARP  
- Idioma do aplicativo é c#.  
+ O idioma do aplicativo é C#.  
   
  CV_CFL_VB  
- É o idioma do aplicativo Visual Basic.  
+ O idioma do aplicativo é Visual Basic.  
   
  CV_CFL_ILASM  
- Idioma do aplicativo é um assembly de linguagem intermediária (ou seja, o assembly do Common Language Runtime (CLR)).  
+ O idioma do aplicativo é um assembly de linguagem intermediária (ou seja, assembly CLR).  
   
  CV_CFL_JAVA  
- Idioma do aplicativo é Java.  
+ O idioma do aplicativo é Java.  
   
  CV_CFL_JSCRIPT  
- Idioma do aplicativo é Jscript.  
+ O idioma do aplicativo é JScript.  
   
  CV_CFL_MSIL  
- Idioma do aplicativo é um desconhecido MSIL Microsoft Intermediate Language (), possivelmente um resultado do uso de [/LTCG (geração de código Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) alternar.  
+ O idioma do aplicativo é uma MSIL (Microsoft Intermediate Language) desconhecida, possivelmente um resultado do uso da opção [/LTCG (geração de código de tempo de vinculação)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) .  
   
  CV_CFL_HLSL  
- Idioma do aplicativo é a linguagem de sombreador de nível alto.  
+ O idioma do aplicativo é uma linguagem de sombreamento de alto nível.  
   
 ## <a name="remarks"></a>Comentários  
- Os valores nesta enumeração são retornados por uma chamada para o [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) método.  
+ Os valores nessa enumeração são retornados por uma chamada para o método [IDiaSymbol:: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

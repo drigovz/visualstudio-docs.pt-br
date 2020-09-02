@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778564"
 ---
 # <a name="markprofile"></a>MarkProfile
@@ -27,7 +27,7 @@ O método `MarkProfile` insere uma marca de perfil no arquivo .*vsp*. A criaçã
 PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  `lMarker`
 
  O marcador a inserir. O marcador deve ser maior ou igual a 0 (zero).
@@ -48,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="remarks"></a>Comentários
  O valor de marca é inserido no arquivo .*vsp* sempre que o código é executado quando está sendo criado o perfil do thread que contém a função MarkProfile. Você pode chamar MarkProfile várias vezes.
 
- Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um segmento pode ser usada para marcar o início ou o fim de um segmento de dados em qualquer segmento no . *arquivo vsp.*
+ Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou o fim de um segmento de dados em qualquer thread no. arquivo *VSP* .
 
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ativo quando marcas e comentários são inseridos com o comando Mark ou com funções API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
 
@@ -99,4 +99,4 @@ void ExerciseMarkProfile()
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Referência de API do profiler do Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

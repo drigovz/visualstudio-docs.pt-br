@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778408"
 ---
 # <a name="pf"></a>PF
-A opção *VSPerfCmd.exe* **PF** define o evento de criação de perfil que é amostrado para falhas de página e altera opcionalmente o número de falhas de página em um intervalo de amostragem do padrão de 10.
+A opção *VSPerfCmd.exe* **PF** define o evento de criação de perfil que é amostrado para falhas de página e, opcionalmente, altera o número de falhas de página em um intervalo de amostragem a partir do padrão de 10.
 
 > [!NOTE]
 > A **PF** não pode ser usada em sistemas de 64 bits.
@@ -34,26 +34,26 @@ A **PF** só pode ser usada em uma linha de comando que também contém a opçã
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  `Events` Um valor inteiro que especifica o número de eventos de falha de página em um intervalo de amostragem. Caso `Events` não seja especificado, o intervalo é definido como 10.
 
 ## <a name="required-options"></a>Opções obrigatórias
  A **PF** só pode ser especificada em uma linha de comando que contenha uma das opções a seguir.
 
- **Lançamento:** `AppName` Inicia o profiler e o aplicativo especificado pelo AppName.
+ **Iniciar:** `AppName` Inicia o criador de perfil e o aplicativo especificado por AppName.
 
- **Anexa:** `PID` Anexa o profiler ao processo especificado pelo AppName.
+ **Anexar:** `PID` Anexa o criador de perfil ao processo especificado por AppName.
 
 ## <a name="invalid-options"></a>Opções inválidas
  As opções a seguir não podem ser especificadas na mesma linha de comando de **PF**.
 
- **Temporizador**[**:**`Cycles`] Define o evento de amostragem `Cycles`para ciclos de relógio do processador e define opcionalmente o intervalo de amostragem para . O intervalo do temporizador padrão é 10.000.000.
+ **Timer**[**:** `Cycles` ] define o evento de amostragem para ciclos de relógio do processador e, opcionalmente, define o intervalo de amostragem como `Cycles` . O intervalo do temporizador padrão é 10.000.000.
 
- **Sys**[**:**`Events`] Define o evento de amostragem para chamadas do aplicativo perfilado para o `Events`kernel do sistema operacional (syscalls) e define opcionalmente o intervalo de amostragem para . O intervalo de Sys padrão é 10.
+ **Sys**[**:** `Events` ] define o evento de amostragem para chamadas do aplicativo de perfil para o kernel do sistema operacional (syscalls) e, opcionalmente, define o intervalo de amostragem como `Events` . O intervalo de Sys padrão é 10.
 
- **Contador:** `Name``,Reload`[`,FriendlyName`] Define o evento de amostragem `Name` para o contador `Reload`de desempenho da CPU especificado e define o intervalo de amostragem para .
+ **Contador:** `Name` [ `,Reload` [ `,FriendlyName` ]] Define o evento de amostragem para o contador de desempenho de CPU especificado por `Name` e define o intervalo de amostragem como `Reload` .
 
- **GC**[**:**{**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão **(Alocação),** os dados são coletados em todos os eventos de alocação de memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
+ **GC**[**:**{**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão (**alocação**), os dados são coletados em cada evento de alocação de memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
 
 ## <a name="example"></a>Exemplo
  Este exemplo demonstra como definir o evento de amostragem de criação de perfil como falhas de página e definir o intervalo de amostragem para 20 falhas de página.
@@ -64,7 +64,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

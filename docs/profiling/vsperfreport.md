@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329954"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -52,7 +52,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |-------------|-----------------|
 |**U**|A saída de relatório e a saída redirecionada do console são gravadas como Unicode. Deve ser a primeira opção especificada.|
 |**Resumo:**[*types*]|Cria um ou mais tipos de relatórios.<br /><br /> -   `All` - todos os tipos de relatório gerados.<br />-   `CallerCallee` - relações pai/filho entre funções.<br />-   `Function` - funções chamadas.<br />-   `CallTree` - hierarquia de funções chamadas.<br />-   `Counter` - todas as marcações juntas com os valores de contador de desempenho do Windows.<br />-   `Ip` - instruções perfiladas.<br />-   `Life` - tempo de vida dos objetos alocados (disponíveis quando os dados de alocação foram coletados).<br />-   `Line` dados de perfil de linha de código-fonte.<br />-   `Header` - o relatório contém informações de cabeçalho do arquivo.<br />-   `Mark` todas as marcas.<br />-   `Module` - módulos perfilados.<br />-   `Process` - processos perfilados.<br />-   `Thread` - segmentos perfilados.<br />-   `Type` - tipos alocados.<br />-   `Contention` - contenções de recurso.<br />-   `RuleWarnings` - problemas de regra de desempenho<br />-   `ETW` - todos os eventos de Rastreamento de Eventos para Windows (ETW) coletados na execução da criação de perfil. O arquivo de dados .etl deve estar em seu local original ou no diretório que contém o arquivo .vsp ou .vsps.|
-|**XML**|Relatório de saída no formato XML.|
+|**Xml**|Relatório de saída no formato XML.|
 |**CallTrace**|Cria uma lista de entradas e saídas da função, eventos ETW e marcas.|
 |**ClearPackedSymbols**|Remove símbolos inseridos anteriormente de um arquivo de dados do criador de perfil. Execute esse comando antes de executar PackSymbols uma segunda vez.|
 |**SymbolPath:** `path`|Especifica um ou mais caminhos de pesquisa ou servidores de símbolo que contêm símbolos para o arquivo de dados do criador de perfil.|
@@ -84,11 +84,11 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opções|Descrição|
 |-------------|-----------------|
-|**Comparação**  `vspfile1 vspfile2`|Compara dois arquivos de relatório (.*vsp* ou .*vsps*). As opções de resumo serão ignoradas usando a opção diff.|
+|**Diff**  `vspfile1 vspfile2`|Compara dois arquivos de relatório (.*vsp* ou .*vsps*). As opções de resumo serão ignoradas usando a opção diff.|
 |**Diff:**[*value*]|A diferença entre dois valores será desconsiderada abaixo desse valor de limite. Além disso, os novos dados com valores sob esse limite não serão exibidos.|
 |**DiffTable:**[*tablename*]|Use essa tabela específica para comparar arquivos. O padrão é a tabela de funções.|
 |**DiffColumn:**[*columnname*]|Use estes valores de comparação de colunas específicos. O padrão é a coluna de porcentagem de amostras exclusivas.|
 |**QueryDiffTables**|Liste as tabelas e as colunas válidas para os dois arquivos de relatório fornecidos.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Exibições de relatório de desempenho](../profiling/performance-report-views.md)

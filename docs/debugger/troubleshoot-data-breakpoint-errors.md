@@ -16,10 +16,10 @@ manager: caslan
 ms.workload:
 - multiple
 ms.openlocfilehash: 20e3ea1cb0124e6bdfb93e023021673ca2e34602
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248741"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solucionando problemas de erros de ponto de interrupção de dados
@@ -83,7 +83,7 @@ A arquitetura (configuração de plataforma) em que seu programa é executado te
 
 Para quaisquer problemas ou sugestões sobre esse recurso, informe-nos por meio da ajuda > enviar comentários > [relatar um problema](../ide/how-to-report-a-problem-with-visual-studio.md) no IDE ou na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando "interromper quando o valor for alterado" no .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: quebra quando o valor é alterado: pontos de interrupção de dados para .NET Core no Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

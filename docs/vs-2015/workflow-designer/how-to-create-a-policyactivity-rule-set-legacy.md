@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849325"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (o legados)
@@ -36,13 +36,13 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
 
 2. Clique na propriedade **RuleSetReference** .
 
-3. Siga um destes procedimentos:
+3. Realize um dos seguintes procedimentos:
 
-    - Clique nas reticências RuleSetReference **[...]** e selecione um conjunto de regras existente na caixa de [diálogo Selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Então vá para a etapa 10.
+    - Clique nas **RuleSetReference** reticências RuleSetReference **[...]** e selecione um conjunto de regras existente na caixa de [diálogo Selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Então vá para a etapa 10.
 
          - ou -
 
-    - Digite um nome para um conjunto de regras. Clique nas reticências RuleSetReference **[...]** e, em seguida, selecione **Editar** na [caixa de diálogo Selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
+    - Digite um nome para um conjunto de regras. Clique nas **RuleSetReference** reticências RuleSetReference **[...]** e, em seguida, selecione **Editar** na [caixa de diálogo Selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
          - ou -
 
@@ -60,7 +60,7 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
 
 8. Clique em **Adicionar regra** novamente para adicionar outra regra.
 
-9. Ao terminar, clique em **OK**.
+9. Quando terminar, clique em **OK**.
 
-## <a name="see-also"></a>Veja também
- [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Caixa de diálogo selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [caixa de diálogo Editor de conjunto de regras (Herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [usando a atividade de política](https://msdn2.microsoft.com/library/bb675229.aspx) [atividades herdadas de fluxo de trabalho](../workflow-designer/legacy-workflow-activities.md)
+## <a name="see-also"></a>Consulte Também
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Caixa de diálogo PolicyActivity selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [caixa de diálogo Editor de conjunto de regras (Herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [usando a atividade de política](https://msdn2.microsoft.com/library/bb675229.aspx) [atividades herdadas de fluxo de trabalho](../workflow-designer/legacy-workflow-activities.md)

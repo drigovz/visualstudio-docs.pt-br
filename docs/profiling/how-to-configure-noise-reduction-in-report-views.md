@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330806"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Como configurar a redução de ruído em visualizações de relatório
@@ -77,7 +77,7 @@ Os relatórios de desempenho podem ser configurados para redução de ruído, li
 
 4. Clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Personalizar modos de exibição de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)
 - [Como: excluir ou incluir funções curtas da instrumentação](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Exibição de árvore de chamadas](../profiling/call-tree-view.md)

@@ -20,30 +20,30 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699002"
 ---
 # <a name="getwinfxpath-task"></a>Tarefa GetWinFXPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retorna o diretório do tempo de execução [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] atual.  
+A tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retorna o diretório do runtime [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] atual.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`WinFXPath`|Parâmetro de saída opcional **String**.<br /><br /> Especifica o caminho real para o tempo de execução de [!INCLUDE[TLA2#tla_winfx](../includes/tla2sharptla-winfx-md.md)].|  
-|`WinFXNativePath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho para o tempo de execução de [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)] nativo.|  
-|`WinFXWowPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho para os assemblies de [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] no módulo **Windows on Windows** de 32 bits em sistemas de 64 bits.|  
+|`WinFXPath`|Parâmetro de saída opcional **String**.<br /><br /> Especifica o caminho real para o runtime de [!INCLUDE[TLA2#tla_winfx](../includes/tla2sharptla-winfx-md.md)].|  
+|`WinFXNativePath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para o runtime de [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)] nativo.|  
+|`WinFXWowPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para os assemblies de [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] no módulo **Windows on Windows** de 32 bits em sistemas de 64 bits.|  
   
 ## <a name="remarks"></a>Comentários  
  Se a tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> está em execução em um processador de 64 bits, o parâmetro **WinFXPath** está definido como o caminho armazenado no parâmetro **WinFXWowPath**, caso contrário, o parâmetro **WinFXPath** é definido como o caminho armazenado no parâmetro **WinFXNativePath**.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como usar a tarefa **GetWinFXPath** para detectar o caminho nativo para o tempo de execução de [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)].  
+ O exemplo a seguir mostra como usar a tarefa **GetWinFXPath** para detectar o caminho nativo para o runtime de [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)].  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -59,9 +59,9 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retorna o diretório 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Como compilar um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Criando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

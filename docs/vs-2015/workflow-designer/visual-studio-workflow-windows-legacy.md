@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 870e317cb8cea1acc3b4b4f51102283e5f1b28c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657562"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Fluxo de trabalho do Windows legacy (Visual Studio)
@@ -31,5 +31,5 @@ ms.locfileid: "72657562"
 |Gerenciador de Soluções|Exibe projetos de fluxo de trabalho em um modo de exibição de árvore hierárquica e permite acesso aos recursos que ajudam a gerenciar projetos.|
 |Janelas de depuração|As janelas de depuração padrão do Visual Studio, como **threads**, **pilha de chamadas**, **ponto de interrupção**, **ferramenta de locais**e janelas de ferramentas de **inspeção** .|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depurando fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9285a72137e4c2f3bdf54ef9f6535dedaa2cd5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670772"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
@@ -58,5 +58,5 @@ ms.locfileid: "72670772"
 
 3. Siga as Etapas 2 e 3 do procedimento anterior.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Codificação e Windows Forms](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9) [globalização e localização de aplicativos](../ide/globalizing-and-localizing-applications.md)

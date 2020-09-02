@@ -1,5 +1,5 @@
 ---
-title: Estendendo os Menus e comandos | Microsoft Docs
+title: Estendendo menus e comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,52 +13,52 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83d9dc45863f1ed1b5e11c17b9e922b62b0186dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204530"
 ---
 # <a name="extending-menus-and-commands"></a>Estendendo comandos e menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Comandos são a maneira de adicionar ações e processos no Visual Studio. Na maioria dos casos, comandos são exibidos em menus ou barras de ferramentas. O modelo de projeto de VSPackage mostra como implementar um comando muito básico. Para uma implementação de um pouco maior, mas ainda básica, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+Os comandos são a maneira como você adiciona ações e processos ao Visual Studio. Na maioria dos casos, os comandos são exibidos em menus ou barras de ferramentas. O modelo de projeto VSPackage mostra como implementar um comando muito básico. Para uma implementação um pouco mais longa, mas ainda básica, consulte [criando uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
- Para obter mais informações sobre comandos, menus e barras de ferramentas do Visual Studio, consulte [comandos, Menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Para obter mais informações sobre comandos, menus e barras de ferramentas do Visual Studio, consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Comandos, menus e barras de ferramentas são definidas no arquivo. VSCT que faz parte dos projetos de VSPackage. Você pode encontrar informações sobre o IDE do Visual Studio e o arquivo. VSCT na [como os VSPackages adicionar elementos Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+ Os comandos, menus e barras de ferramentas são definidos no arquivo. vsct que faz parte de projetos VSPackage. Você pode encontrar informações sobre o IDE do Visual Studio e o arquivo. vsct em [como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
- Os tópicos a seguir explicam como adicionar tipos diferentes de comandos, menus e barras de ferramentas.  
+ Os tópicos a seguir explicam como adicionar diferentes tipos de comandos, menus e barras de ferramentas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Adicionar um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)  
- Explica como adicionar um menu na parte superior a barra de menus do Visual Studio.  
+ Explica como adicionar um menu à barra de menus superior do Visual Studio.  
   
  [Associar atalhos de teclado aos itens de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
- Explica como adicionar um atalho de teclado (por exemplo, CTRL + 3) a um item de menu.  
+ Explica como adicionar um atalho de teclado (como CTRL + 3) a um item de menu.  
   
  [Adicionar um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md)  
- Explica como adicionar um submenu no menu superior.  
+ Explica como adicionar um submenu ao menu superior.  
   
  [Adicionar uma lista de usados recentemente a um submenu](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md)  
- Explica como adicionar uma lista de usados recentemente.  
+ Explica como adicionar uma lista usada mais recentemente.  
   
  [Criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md)  
  Descreve como agrupar itens de comando para que eles possam ser incluídos em vários menus.  
   
  [Adicionar ícones a comandos de menu](../extensibility/adding-icons-to-menu-commands.md)  
- Descreve como adicionar um ícone para um comando em uma barra de ferramentas e um menu.  
+ Descreve como adicionar um ícone a um comando em uma barra de ferramentas e em um menu.  
   
  [Alterar o texto de um comando de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
- Descreve o uso do `TextChanges` sinalizador para ativar um item de menu a ser alterado dinamicamente.  
+ Descreve o uso do `TextChanges` sinalizador para permitir que um item de menu seja alterado dinamicamente.  
   
- [Alterar a aparência de um comando](../extensibility/changing-the-appearance-of-a-command.md)  
- Descreve como habilitar ou desabilitar um comando.  
+ [Alterando a aparência de um comando](../extensibility/changing-the-appearance-of-a-command.md)  
+ Descreve como habilitar ou desabilitar um comando dinamicamente.  
   
- [Atualizar a interface do usuário](../extensibility/updating-the-user-interface.md)  
+ [Atualizando a interface do usuário](../extensibility/updating-the-user-interface.md)  
  Descreve como forçar uma atualização da interface do usuário para refletir as alterações recentes.  
   
- [Localizar os comandos de menu](../extensibility/localizing-menu-commands.md)  
- Explica como localizar os comandos de menu.  
+ [Localizando comandos de menu](../extensibility/localizing-menu-commands.md)  
+ Explica como localizar comandos de menu.  
   
 ## <a name="related-sections"></a>Seções relacionadas

@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder Element (modelos de estúdio visual) | Microsoft Docs
+title: Elemento CreateNewFolder (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739675"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder (modelos do Visual Studio)
+# <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (modelos do Visual Studio)
 Determina se deve ser verificado se o diretório de destino onde o projeto será criado existe ou não. Se o diretório não existir, um novo diretório poderá ser criado para o projeto. Essa configuração é normalmente substituída pelo sinalizador de registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que todos os tipos de projetos comuns usam para determinar se um novo projeto deve ser criado ou não em um novo diretório.
 
- \<\<VSTemplate>Modelo>> \<CriarNova pasta>
+ \<VSTemplate> \<TemplateData>
+ \<CreateNewFolder>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <CreateNewFolder>
@@ -33,7 +34,7 @@ Determina se deve ser verificado se o diretório de destino onde o projeto será
 </CreateNewFolder>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
  `Boolean`
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
@@ -49,7 +50,7 @@ Determina se deve ser verificado se o diretório de destino onde o projeto será
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
@@ -91,4 +92,4 @@ Determina se deve ser verificado se o diretório de destino onde o projeto será
 
 ## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329967"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -43,11 +43,11 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**CORRENTE**|Inicia o monitor de desempenho para criação de perfil de contenção de recursos.|
 |**USER:** `[` *domínio* `\]` *nome do usuário*|Permite o acesso do cliente ao monitor de desempenho da conta especificada.|
 |**CROSSSESSION**|Habilitar criação de perfil de sessão cruzada.|
-|**Contador** de`:cfg`|Quando o método de criação de perfil (TRACE) de instrumentação é usado, especifica um contador de CPU a ser coletado em cada ponto de instrumentação. Você pode coletar dados do contador de vários especificando diversas opções de contador.<br /><br /> Use a sintaxe a seguir para especificar os dados do contador (*cfg*):<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** é o nome de um contador retornado pelo comando VSPerfCmd /QueryCounters.<br />-   **Reload** é o intervalo de amostragem de eventos do contador. Não use *Reload* com o método de instrumentação.<br />– Quando especificado, **FriendlyName** substitui **CounterName** em nomes de coluna de relatório em ferramentas de criação de perfil.|
+|**Contador** de `:cfg`|Quando o método de criação de perfil (TRACE) de instrumentação é usado, especifica um contador de CPU a ser coletado em cada ponto de instrumentação. Você pode coletar dados do contador de vários especificando diversas opções de contador.<br /><br /> Use a sintaxe a seguir para especificar os dados do contador (*cfg*):<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** é o nome de um contador retornado pelo comando VSPerfCmd /QueryCounters.<br />-   **Reload** é o intervalo de amostragem de eventos do contador. Não use *Reload* com o método de instrumentação.<br />– Quando especificado, **FriendlyName** substitui **CounterName** em nomes de coluna de relatório em ferramentas de criação de perfil.|
 |**WinCounter**`:path`|Especifica um contador de desempenho do Windows para incluir com os dados de marca. `path` é uma cadeia de caracteres do contador de desempenho do Windows no formato de caminho de contador PDH. Por exemplo:<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|
 |**Marcar AUTOmarca**`:n`|Especifica o intervalo de tempo (em milissegundos) entre as marcas automática quando você usa /WINCOUNTER. Arredondado para cima até a 500 ms mais próximos.<br /><br /> Use 0 para desabilitar marcas automáticas. (padrão=500 ms se não especificado)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

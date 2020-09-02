@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: aa90262081a693227b4594a4e5b7fe22c8fb1627
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778655"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Exibição de IPs (ponteiros de instrução) – dados de amostragem da memória do .NET
@@ -29,10 +29,10 @@ A exibição de IPs dos dados de criação de perfil de alocação de memória d
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a instrução.|
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|
-|**Arquivo de origem**|O arquivo de origem que contém a instrução.|
+|**Arquivo de Origem**|O arquivo de origem que contém a instrução.|
 |**Nome da função**|O nome da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço inicial da função.|
+|**Endereço da função**|O endereço inicial da função.|
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que a alocação ocorreu.|
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que a alocação ocorreu.|
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que a alocação ocorreu.|
@@ -44,4 +44,4 @@ A exibição de IPs dos dados de criação de perfil de alocação de memória d
 |**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na criação de perfil que foram alocados pela instrução.|
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Exibição de ponteiros de instrução (IPs)](../profiling/instruction-pointers-ips-view-sampling-data.md)

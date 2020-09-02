@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330253"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
@@ -32,14 +32,14 @@ namespace diagnostic;
 
 ### <a name="classes"></a>Classes
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |[Classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|
 |[Classe span](../profiling/span-class.md)|Define uma fase do aplicativo.|
 
 ### <a name="enumerations"></a>Enumerações
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |[Enumeração marker_importance](../profiling/marker-importance-enumeration.md)|Representa o nível de importância de um marcador da Visualização Simultânea.|
 
@@ -48,5 +48,5 @@ namespace diagnostic;
 
  **Namespace:** Simultaneidade
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Namespace de simultaneidade (Visualizador de simultaneidade)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d67a1806034d55147379626b6eb4f868532e4d77
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330737"
 ---
 # <a name="marker_importance-enumeration"></a>Enumeração marker_importance
@@ -32,7 +32,7 @@ enum marker_importance;
 
 ### <a name="values"></a>Valores
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |`critical_importance`|Especifica que o marcador tem importância crítica.|
 |`high_importance`|Especifica que o marcador tem alta importância.|
@@ -44,5 +44,5 @@ enum marker_importance;
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [namespace de diagnóstico](../profiling/diagnostic-namespace.md)
