@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Microsoft Docs
+title: 'IDebugCoreServer2:: GetPort | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e00f055d8e6a0fe1bea82061431410eb1e3b236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192927"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
@@ -42,14 +42,14 @@ int GetPort( 
   
 #### <a name="parameters"></a>Parâmetros  
  `guidPort`  
- [in] GUID da porta a ser recuperado.  
+ no GUID da porta a ser recuperada.  
   
  `ppPort`  
- [out] Retorna um [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa a porta desejada.  
+ fora Retorna um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa a porta desejada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_PORTSUPPLIER_NO_PORT` se não houver nenhuma porta com o identificador fornecido.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_PORTSUPPLIER_NO_PORT` se não houver nenhuma porta com o identificador fornecido.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

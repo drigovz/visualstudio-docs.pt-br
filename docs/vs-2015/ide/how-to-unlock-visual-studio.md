@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670589"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
@@ -38,7 +38,7 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
 
-1. Selecione **Arquivo > Configurações de Conta** para abrir a caixa de diálogo Configurações de Conta e clique no link "**Licenciar com uma Chave do Produto (Product Key)** ".
+1. Selecione **arquivo > configurações de conta** para abrir a caixa de diálogo Configurações de conta e clique no link "**licença com uma chave de produto**".
 
 2. Insira a chave do produto (Product Key) no espaço fornecido.
 
@@ -50,7 +50,7 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 ### <a name="updating-stale-licenses"></a>Como atualizar licenças obsoletas
  Talvez você tenha visto a mensagem abaixo indicando que sua licença ficará obsoleta no Visual Studio.
 
- ![Caixa de diálogo de informações do usuário do Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Caixa de diálogo de informações do usuário do Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:
 
@@ -72,5 +72,5 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 
 2. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista Todas as Contas no lado esquerdo da caixa de diálogo Arquivo > Configurações de Conta clicando no link “Adicionar uma conta...” .
 
-## <a name="see-also"></a>Veja também
- [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Entrando no Visual Studio)
+## <a name="see-also"></a>Consulte Também
+ [Entrando no Visual Studio](../ide/signing-in-to-visual-studio.md)

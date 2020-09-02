@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670344"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar ações rápidas com lâmpadas
@@ -31,7 +31,7 @@ As lâmpadas são um novo recurso de produtividade no Visual Studio 2015. Eles s
 
 2. Pressione **Ctrl + .** em qualquer lugar de uma linha para invocar a lâmpada e ir diretamente para a lista de possíveis correções.
 
-   ![Lâmpada com o cursor do mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+   ![Lâmpada com o mouse focalizando](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 ## <a name="to-see-potential-fixes"></a>Para ver as possíveis correções
  Clique na seta para baixo ou no link Mostrar possíveis correções para exibir uma lista de ações rápidas que a lâmpada pode executar para você.

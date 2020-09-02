@@ -1,5 +1,5 @@
 ---
-title: 'Como: Iniciar e parar a exibição do Log de mensagem | Microsoft Docs'
+title: 'Como: Iniciar e parar a exibição do log de mensagens | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176552"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Como: Iniciar e parar a exibição do log de mensagem
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Como iniciar e parar a exibição do log de mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando um [exibição de mensagens](../debugger/messages-view.md) janela está ativa, um **Iniciar registro em log** ou **parar log** opção é exibida sobre o Spy + + **mensagens** menu e o correspondente **Iniciar registro em log** ou **parar log** botão da barra de ferramentas se torna ativo.  
+Quando uma janela de [exibição de mensagens](../debugger/messages-view.md) está ativa, uma opção **Iniciar registro** em log ou **parar registro em log** aparece no menu **mensagens** do Spy + + e o botão de barra de ferramentas **Iniciar registro** em log ou **parar registro** em log se torna ativo.  
   
-### <a name="to-start-the-message-log-display"></a>Para iniciar a exibição do log de mensagem  
+### <a name="to-start-the-message-log-display"></a>Para iniciar a exibição do log de mensagens  
   
-1. Dos **mensagens** menu, escolha **Iniciar registro**.  
+1. No menu **mensagens** , escolha **Iniciar registro em log**.  
   
-### <a name="to-stop-the-message-log-display"></a>Para parar a exibição do log de mensagem  
+### <a name="to-stop-the-message-log-display"></a>Para interromper a exibição do log de mensagens  
   
-1. Dos **mensagens** menu, escolha **parar log**.
+1. No menu **mensagens** , escolha **parar registro em log**.

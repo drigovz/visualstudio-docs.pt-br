@@ -12,10 +12,10 @@ ms.workload:
 - dotnetcore
 - azure
 ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536780"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de depuração remota no IIS no Azure no Visual Studio
@@ -68,7 +68,7 @@ Não há suporte para a depuração entre dois computadores conectados por meio 
 
 1. Abra o arquivo About.cshtml.cs e defina um ponto de interrupção no `OnGet` método (em modelos mais antigos, abra HomeController.cs em vez disso e defina o ponto de interrupção no `About()` método).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a>ASP.NET Core de depuração remota em um serviço Azure App
+## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a> ASP.NET Core de depuração remota em um serviço Azure App
 
 No Visual Studio, você pode publicar e depurar rapidamente seu aplicativo para uma instância totalmente provisionada do IIS. No entanto, a configuração do IIS é predefinida e não é possível personalizá-la. Para obter instruções mais detalhadas, consulte [implantar um aplicativo web ASP.NET Core no Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se você precisar da capacidade de personalizar o IIS, tente Depurar em uma [VM do Azure](#remote_debug_azure_vm).)
 
@@ -96,9 +96,9 @@ No Visual Studio, você pode publicar e depurar rapidamente seu aplicativo para 
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-    É isso! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
+    Pronto! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
 
-## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>ASP.NET Core de depuração remota em uma VM do Azure
+## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core de depuração remota em uma VM do Azure
 
 Você pode criar uma VM do Azure para o Windows Server e, em seguida, instalar e configurar o IIS e os outros componentes de software necessários. Isso leva mais tempo do que a implantação em um serviço de Azure App e requer que você siga as etapas restantes neste tutorial.
 
@@ -191,7 +191,7 @@ Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado auto
 
 Você pode usar essa opção para implantar seu aplicativo se quiser copiar o aplicativo para o IIS usando o PowerShell, o RoboCopy ou desejar copiar manualmente os arquivos.
 
-### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurar o site do ASP.NET Core no computador do Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurar o site do ASP.NET Core no computador do Windows Server
 
 Se você estiver importando configurações de publicação, poderá ignorar esta seção.
 
@@ -211,20 +211,20 @@ Se você não estiver usando Implantação da Web, deverá publicar e implantar 
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Baixar e instalar as ferramentas remotas no Windows Server
+### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Baixar e instalar as ferramentas remotas no Windows Server
 
 Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurar o depurador remoto no Windows Server
+### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Se você precisar adicionar permissões para usuários adicionais, altere o modo de autenticação ou o número da porta para o depurador remoto, consulte [Configurar o depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Anexar ao aplicativo ASP.NET do computador do Visual Studio
+### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Anexar ao aplicativo ASP.NET do computador do Visual Studio
 
 1. No computador do Visual Studio, abra a solução que você está tentando depurar (**MyASPApp** se estiver seguindo as etapas neste artigo).
 2. No Visual Studio, clique em **depurar > anexar ao processo** (CTRL + ALT + P).
@@ -251,7 +251,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
     Se você quiser usar o botão **Localizar** , talvez seja necessário abrir a [porta UDP 3702](#bkmk_openports) no servidor.
 
-5. Marque **Mostrar processos de todos os usuários**.
+5. Marque  **Mostrar processos de todos os usuários**.
 
 6. Digite a primeira letra do nome do processo para localizar rapidamente seu aplicativo.
 

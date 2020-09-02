@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714712"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
-Especifica os sinalizadores de lançamento de depuração.
+Especifica os sinalizadores de inicialização de depuração.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_LAUNCH_FLAGS {
@@ -51,25 +51,25 @@ public enum enum_LAUNCH_FLAGS {
 Inicia o processo de depuração.
 
 `LAUNCH_NODEBUG`\
-Inicia o processo sem depura-lo.
+Inicia o processo sem depurá-lo.
 
 `LAUNCH_ENABLE_ENC`\
-DEPRECIADO, NÃO USE.
+PRETERIDO, NÃO USE.
 
 `LAUNCH_MERGE_ENV`\
-Lança o processo e mescla o ambiente com o host de lançamento.
+Inicia o processo e mescla o ambiente com o host de inicialização.
 
 ## <a name="remarks"></a>Comentários
-Esses valores são passados como um argumento para o método [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+Esses valores são passados como um argumento para o método [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .
 
-Essas bandeiras podem ser combinadas com um pouco `OR`.
+Esses sinalizadores podem ser combinados com uma operadora de bits `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

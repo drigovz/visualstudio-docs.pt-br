@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547440"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões de controle comuns para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Controles comuns
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controles comuns
 
 ### <a name="overview"></a>Visão geral
  Os controles comuns compõem a maior parte da interface do usuário no Visual Studio. Os controles mais comuns usados na interface do Visual Studio devem seguir as [diretrizes de interação do Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Este documento é específico do Visual Studio e cobre situações especiais ou detalhes que aumentam essas diretrizes do Windows.
@@ -50,10 +50,10 @@ ms.locfileid: "85547440"
 
 - **Janelas de ferramentas, editores de documentos, superfícies de design e caixas de diálogo com tema:** Use a aparência com tema especializada usando o serviço de cores.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>Rolagem
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> Rolagem
  As barras de rolagem devem seguir [padrões comuns de interação para barras de rolagem do Windows](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) , a menos que sejam aumentadas com informações de conteúdo, como no editor de códigos.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Campos de entrada
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Campos de entrada
  Para um comportamento de interação típico, siga as [diretrizes de área de trabalho do Windows para caixas de texto](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Estilo visual
@@ -76,7 +76,7 @@ ms.locfileid: "85547440"
 
      ![Correta largura de controle do campo de entrada](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") **tamanho correto do campo de entrada: o campo de entrada é uma largura razoável para o conteúdo esperado.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Caixas de combinação e listas suspensas
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Caixas de combinação e listas suspensas
  Para comportamento de interação típico, siga as [diretrizes de área de trabalho do Windows para listas suspensas e caixas de combinação](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Estilo visual
@@ -96,7 +96,7 @@ ms.locfileid: "85547440"
 
  **Corrigir o tamanho do campo para um controle suspenso**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Caixas de seleção
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Caixas de seleção
  Para comportamento de interação típico, siga as [diretrizes de área de trabalho do Windows para caixas de seleção](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Estilo visual
@@ -115,7 +115,7 @@ ms.locfileid: "85547440"
 
      Correção da caixa de seleção ![corrigir alinhamento](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") da caixa de seleção **: a caixa de seleção está alinhada com a linha de base da primeira linha de texto.**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Botões de opção
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Botões de opção
  Para um comportamento de interação típico, siga as [diretrizes de área de trabalho do Windows para botões de opção](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Estilo visual
@@ -124,7 +124,7 @@ ms.locfileid: "85547440"
 #### <a name="specialized-interactions"></a>Interações especializadas
  Não é necessário usar um quadro de grupo para incluir opções de rádio.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Agrupar quadros
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Agrupar quadros
  Para comportamento de interação típico, siga as [diretrizes de área de trabalho do Windows para quadros de grupo](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Estilo visual
@@ -138,7 +138,7 @@ ms.locfileid: "85547440"
 
 - Às vezes, é aceitável usar uma regra horizontal em vez de um contêiner de quadro de grupo.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Controles de texto
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Controles de texto
 
 ### <a name="labels"></a>Rótulos
 
@@ -227,7 +227,7 @@ ms.locfileid: "85547440"
 
   **Exemplos de texto de marca d' água no Visual Studio**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Botões e hiperlinks
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Botões e hiperlinks
 
 ### <a name="overview"></a>Visão geral
  Os botões e controles de link (hiperlinks) devem seguir as [diretrizes básicas da área de trabalho do Windows em hiperlinks](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) para uso, palavras, dimensionamento e espaçamento.
@@ -327,7 +327,7 @@ ms.locfileid: "85547440"
 > [!NOTE]
 > Os usuários precisam Tab para esses botões (não há chaves de acesso), portanto, coloque-os em uma ordem sensata. Mapeie a propriedade Name do botão para a ação que ele leva para que os leitores de tela interpretem corretamente a ação do botão.
 
-|Nome|Imagem|
+|Name|Image|
 |-|-|
 |Adicionar|![Botão "Adicionar" gráfico](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
 |Remover|![Botão "remover" gráfico](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
@@ -358,7 +358,7 @@ ms.locfileid: "85547440"
 
 - Sublinhados não devem aparecer em foco. Em vez disso, os comentários para o usuário em que o link está ativo é uma pequena alteração de cor e o cursor de link apropriado.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Exibições de árvore
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> Exibições de árvore
 
 ### <a name="overview"></a>Visão geral
  As exibições de árvore fornecem uma maneira de organizar listas complexas em grupos pai-filho. Um usuário pode expandir ou recolher grupos pai para revelar ou ocultar itens filho subjacentes. Cada item dentro de um modo de exibição de árvore pode ser selecionado para fornecer mais ações.
@@ -371,7 +371,7 @@ ms.locfileid: "85547440"
 
 - [Interações](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Estilo visual
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Estilo visual
 
 #### <a name="expanders"></a>Expansores
  Os controles de exibição de árvore devem estar em conformidade com o design do expansor usado pelo Windows e pelo Visual Studio. Cada nó usa um controle Expander para revelar ou ocultar itens subjacentes. O uso de um controle Expander fornece consistência para os usuários que podem encontrar exibições de árvore diferentes no Windows e no Visual Studio.
@@ -405,7 +405,7 @@ ms.locfileid: "85547440"
 
  **As barras de rolagem vertical e horizontal são exibidas porque o conteúdo excedeu os limites do controle de exibição de árvore.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>Ações
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> Ações
 
 #### <a name="context-menus"></a>Menus de contexto
  Um nó de exibição de árvore pode revelar as opções de submenu em um menu de contexto. Normalmente, isso ocorre quando um usuário clica com o botão direito do mouse em um item ou pressionou a tecla de menu em um teclado do Windows com o item selecionado. É importante que o nó tenha foco e esteja selecionado. Isso ajuda o usuário a identificar a qual item o submenu pertence.
@@ -414,7 +414,7 @@ ms.locfileid: "85547440"
 
  **O item que gerou o menu de contexto ganha foco para notificar o usuário qual item foi selecionado.**
 
-#### <a name="keyboard"></a>Teclado
+#### <a name="keyboard"></a>Keyboard
  O modo de exibição de árvore deve fornecer a capacidade de selecionar itens e expandir/recolher nós usando o teclado. Isso garante que a navegação atenda aos nossos requisitos de acessibilidade.
 
 ##### <a name="tree-view-control"></a>Controle de exibição de árvore

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c679352fb8db81379ab93e800efa9f631773c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149737"
 ---
 # <a name="findunderpath-task"></a>Tarefa FindUnderPath
@@ -34,7 +34,7 @@ Determina quais itens na coleção de itens especificados têm caminhos que est�
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `FindUnderPath`.  
   
-|Parâmetro|DESCRIÇÃO|  
+|Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`Files`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os arquivos cujos caminhos devem ser comparados com o caminho especificado pelo parâmetro `Path`.|  
 |`InPath`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os itens que foram encontrados no caminho especificado.|  
@@ -43,7 +43,7 @@ Determina quais itens na coleção de itens especificados têm caminhos que est�
 |`UpdateToAbsolutePaths`|Parâmetro `Boolean` opcional.<br /><br /> Se for verdadeiro, os caminhos dos itens de saída são atualizados para ser caminhos absolutos.|  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa a tarefa `FindUnderPath` para determinar se os arquivos contidos no item `MyFiles` têm caminhos existentes no caminho especificado pela propriedade `SearchPath`. Depois que a tarefa for concluída, o item `FilesNotFoundInPath` contém o arquivo `File1.txt` e o item `FilesFoundInPath` contém o arquivo `File2.txt`.  
@@ -75,7 +75,7 @@ Determina quais itens na coleção de itens especificados têm caminhos que est�
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Tarefa](../msbuild/msbuild-tasks.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

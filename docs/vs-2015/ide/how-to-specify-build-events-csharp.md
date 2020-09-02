@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670682"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
@@ -37,7 +37,7 @@ Use eventos de build para especificar comandos que são executados antes do iní
 
 1. No **Gerenciador de Soluções**, selecione o projeto para o qual deseja especificar o evento de build.
 
-2. No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto** , clique em **Propriedades**.
 
 3. Selecione a guia **Eventos de Build**.
 
@@ -49,12 +49,12 @@ Use eventos de build para especificar comandos que são executados antes do iní
 5. Na caixa **Linha de comando do evento de pós-build**, especifique a sintaxe do evento de build.
 
     > [!NOTE]
-    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Na caixa **Executar o evento de pós-build**, especifique em que condições o evento pós-build deve ser executado.
 
     > [!NOTE]
-    > Para adicionar uma sintaxe longa, ou para selecionar macros de build na [Caixa de diálogo de linha de comando do evento de pré-/pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), clique no botão de reticências ( **...** ) para exibir uma caixa de edição.
+    > Para adicionar uma sintaxe longa, ou para selecionar macros de build na [Caixa de diálogo de linha de comando do evento de pré-/pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), clique no botão de reticências (**...**) para exibir uma caixa de edição.
 
      A sintaxe do evento de build pode incluir qualquer comando que seja válido em um prompt de comando ou em um arquivo .bat. O nome de um arquivo em lote deve ser precedido por `call` para garantir que todos os comandos posteriores sejam executados.
 
@@ -75,7 +75,7 @@ Use eventos de build para especificar comandos que são executados antes do iní
 
 1. Crie um aplicativo de console para o comando. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#** , clique em **Windows** e, em seguida, clique no modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionCS`.
+2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo de Console**. Dê ao projeto o nome de `ChangeOSVersionCS`.
 
 3. Em Program.cs, adicione a seguinte linha às outras instruções `using` na parte superior do arquivo:
 
@@ -147,7 +147,7 @@ Use eventos de build para especificar comandos que são executados antes do iní
 
 1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#** , clique em **Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Nomeie o projeto `CSWinApp`.
+2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Dê ao projeto o nome de `CSWinApp`.
 
 3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
@@ -163,7 +163,7 @@ Use eventos de build para especificar comandos que são executados antes do iní
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. No Designer de Projeto, clique na guia **Eventos de Build** e clique no botão **Editar pós-build**.
+6. No designer de projeto, clique na guia **eventos de compilação** e clique no botão **Editar pós-compilação** .
 
 7. Na caixa **Linha de comando do evento de pós-build**, digite o seguinte comando:
 
@@ -183,5 +183,5 @@ Use eventos de build para especificar comandos que são executados antes do iní
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Consulte também
- [Página eventos de compilação, designer deC#projeto ()](../ide/reference/build-events-page-project-designer-csharp.md) [caixa de diálogo evento de pré-compilação evento/pós-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) como: especificar compilação [e construção](../ide/compiling-and-building-in-visual-studio.md) de [eventos de compilação (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+## <a name="see-also"></a>Consulte Também
+ [Página eventos de compilação, designer de projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md) [evento de pré-compilação eventos/pós-compilação caixa de diálogo linha de comando de evento](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) como: especificar compilação [e construção](../ide/compiling-and-building-in-visual-studio.md) de [eventos de compilação (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)

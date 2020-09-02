@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176615"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Coletando dados de tempo detalhados para um aplicativo autônomo usando a linha de comando do criador de perfil
@@ -28,17 +28,17 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Profile a .NET Framework application by using instrumentation (Criar o perfil de um aplicativo do .NET Framework usando a instrumentação)**|-   [Como: Instrumentar um componente do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profile a C/C++ application by using instrumentation (Criar o perfil de um aplicativo C/C++ usando a instrumentação)**|-   [Como: Instrumentar um componente nativo do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Profile a .NET Framework application by using instrumentation (Criar o perfil de um aplicativo do .NET Framework usando a instrumentação)**|-   [Como: instrumentar um componente .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profile a C/C++ application by using instrumentation (Criar o perfil de um aplicativo C/C++ usando a instrumentação)**|-   [Como instrumentar um componente nativo e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Adicionar dados de interação de camada**|-   [Coletando dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Tarefas relacionadas  
+## <a name="related-tasks"></a>Related Tasks  
   
 ### <a name="profiling-stand-alone-applications"></a>Criando perfil de aplicativos autônomos  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Profiling applications by using sampling (Criando perfis de aplicativos usando amostragem)**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Profiling applications by using sampling (Criando perfis de aplicativos usando amostragem)**|-   [Coletando estatísticas de aplicativo usando amostragem](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Profiling .NET memory allocation and garbage collection (Criando o perfil de alocação de memória e coleta de lixo do .NET)**|-   [Coletando dados de memória do .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Profiling resource contention and thread activity (Criando o perfil de contenção de recursos e de atividade do thread)**|-   [Coletando dados de simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
   
@@ -46,11 +46,11 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Aplicativos ASP.NET de criação de perfil**|-   [Coletando dados de tempo detalhados usando a instrumentação](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
+|**Criação de perfil de aplicativos ASP.NET**|-   [Coletando dados de tempo detalhados usando a instrumentação](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Serviços de criação de perfil**|-   [Coletando dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analisando modos de exibição e relatórios de dados de instrumentação  
  [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>Referência  
- [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)
+ [Referência de Ferramentas de Criação de Perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)

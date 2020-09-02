@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248291"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Aprenda a usar o editor de código com C\#
@@ -188,7 +188,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../../ide/code-snippets.md)
 - [Navegue pelos códigos](../../ide/navigating-code.md)

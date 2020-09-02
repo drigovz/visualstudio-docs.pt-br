@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5ad480a3b5d3ed892fc56fec2c882638f986810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165690"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera um sinalizador que indica que essas informações de linha descrevem o início de uma instrução, em vez de uma expressão, na origem do programa.  
@@ -35,13 +35,13 @@ HRESULT get_statement ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se essas informações de linha descrevem o início de uma instrução na origem do programa.  
+ fora Retorna `TRUE` se as informações da linha descrevem o início de uma instrução na origem do programa.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- As instruções podem abranger várias linhas. Este método indica se o número de linha associados marca o início do tipo de instrução de várias linha.  
+ As instruções podem abranger várias linhas. Esse método indica se o número de linha associado marca o início de uma instrução de várias linhas.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

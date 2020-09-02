@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad10050aa157b4481fa2041ec5f322451983149f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729043"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Amplia os tipos de campos disponíveis para suportar genéricos de código gerenciados.
+Estende os tipos de campos que estão disponíveis para dar suporte a genéricos de código gerenciado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExtendedField : IDebugField
 ```
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na interface [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) esta interface implementa os seguintes métodos:
+ Além dos métodos na interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
@@ -35,8 +35,8 @@ IDebugExtendedField : IDebugField
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Determina se o campo representa um tipo fechado.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

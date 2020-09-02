@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um Atom Feed para uma galeria privada | Microsoft Docs'
+title: 'Como: criar um Feed Atom para uma galeria privada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204206"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como: Criar um feed Atom para uma galeria privada
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como criar um Atom Feed para uma galeria privada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode criar um Atom (RSS) para um local de intranet que contém as extensões e adicione o feed para **extensões e atualizações** como uma galeria privada. Para obter mais informações, consulte [Galerias privadas](../extensibility/private-galleries.md).  
+Você pode criar um Feed Atom (RSS) para um local de intranet que contém extensões e adicionar o feed a **extensões e atualizações** como uma galeria privada. Para obter mais informações, consulte [galerias particulares](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Criar um Atom Feed  
- Para criar um Atom feed como uma galeria privada, você deve primeiro coletar suas extensões (arquivos. VSIX) em uma pasta. Você pode organizá-los em subpastas, se você quiser. Você precisará também os seguintes recursos:  
+## <a name="creating-an-atom-feed"></a>Criando um feed ATOM  
+ Para criar um Feed Atom como uma galeria privada, primeiro você coleta suas extensões (arquivos. VSIX) em uma pasta. Você pode organizá-los em subpastas, se desejar. Você também precisará dos seguintes recursos:  
   
-- Um arquivo atom.xml que faz com que as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar-se o arquivo atom.xml **extensões e atualizações**, consulte [galerias privadas](../extensibility/private-galleries.md).  
+- Um arquivo de atom.xml que torna as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar o arquivo de atom.xml a **extensões e atualizações**, consulte [galerias particulares](../extensibility/private-galleries.md).  
   
-- Uma pasta que contém os arquivos de imagem que foram extraídos de extensões (por exemplo, capturas de tela). O arquivo atom.xml contém links relativos para essas imagens para que eles estejam disponíveis no **extensões e atualizações**.  
+- Uma pasta que contém os arquivos de imagem que foram extraídos das extensões (por exemplo, capturas de tela). O arquivo de atom.xml contém links relativos a essas imagens para que elas estejam disponíveis em **extensões e atualizações**.  
   
-  Por exemplo, suponha que você coletou as duas extensões a seguir em uma pasta:  
+  Por exemplo, suponha que você reuniu as duas extensões a seguir em uma pasta:  
   
-- Template_Wizard_239.VSIX, que é um modelo de projeto do VSIX vazio.  
+- Template_Wizard_239. vsix, que é um modelo de projeto VSIX vazio.  
   
-- SelectionHighlight.vsix, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
+- SelectionHighlight. vsix, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
   
-  O conteúdo do arquivo atom.xml seria semelhante ao exemplo a seguir:  
+  O conteúdo do arquivo de atom.xml seria semelhante ao exemplo a seguir:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   
@@ -73,7 +73,7 @@ Você pode criar um Atom (RSS) para um local de intranet que contém as extensõ
   
 ```  
   
- Observe que as duas marcações de link Consulte capturas de tela na pasta de imagens gerada.  
+ Observe que as duas marcas de link se referem a capturas de tela na pasta gerada de imagens.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Galerias privadas](../extensibility/private-galleries.md)

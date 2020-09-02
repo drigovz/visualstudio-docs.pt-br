@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247378"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
@@ -105,7 +105,7 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Fechar workspace|**⌥ ⌘ W**|
 |Novo arquivo|**⌘ N**|
 |Nova solução|**⇧ ⌘ N**|
-|Abrir|**⌘ O**|
+|Aberto|**⌘ O**|
 |Impressão|**⌘ P**|
 |Encerrar|**⌘ Q**|
 |Reverter|**⌘ U**|
@@ -126,7 +126,7 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Implementar mensagens do Unity|**⇧ ⌘ M**|
 |Inspecionar|**⌥ ⌘ I**|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projeto
 
 |Comandos|Atalhos do teclado|
 |-|-|
@@ -275,8 +275,8 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |↖|**Início**|
 |↘|**Completo**|
 |␣|**Barra de espaço**|
-|⇥|**Tab**|
+|⇥|**Guia**|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Atalhos de teclado no Visual Studio (no Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

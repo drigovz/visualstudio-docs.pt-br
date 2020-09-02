@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54036b985c90be926eaa56f6ebe60d1f3903e0b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657320"
 ---
 # <a name="uml-model-element-types"></a>Tipos de elemento de modelo UML
@@ -26,9 +26,9 @@ Você pode ler e manipular um modelo UML por meio de uma interface de programaç
  Os detalhes de cada tipo são fornecidos na [referência de API para extensibilidade de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ## <a name="element-types"></a>Tipos de elemento
- Este é o conjunto de tipos definidos no assembly `Microsoft.VisualStudio.Uml.Interfaces.dll`.
+ Este é o conjunto de tipos definidos no assembly `Microsoft.VisualStudio.Uml.Interfaces.dll` .
 
- O nome totalmente qualificado de cada item é "`Microsoft.VisualStudio.Uml.`" seguido do nome listado.
+ O nome totalmente qualificado de cada item é " `Microsoft.VisualStudio.Uml.` " seguido do nome listado.
 
  Para sua conveniência, essa lista é definida como uma hierarquia de herança. Onde um tipo tem mais de um supertipo, supertipos adicionais são listados após dois-pontos (:).
 
@@ -194,5 +194,5 @@ Classes.IElement
              : Classes.IRedefinableElement
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definir um perfil para estender](../modeling/define-a-profile-to-extend-uml.md) as [restrições de validação de definição de UML para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [referência de API para extensibilidade de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51763dea01039ce084804bfa007fd8f0577cb9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192372"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o número da coluna em que a expressão ou instrução começa.  
+Recupera o número da coluna na qual a expressão ou instrução começa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,13 +36,13 @@ HRESULT get_columnNumber ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o número da coluna em que a expressão ou instrução começa. Se o valor for zero, informações de coluna não estão presentes.  
+ fora Retorna o número da coluna na qual a expressão ou instrução começa. Se o valor for zero, as informações de coluna não estão presentes.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O valor da coluna retornado por esse método é um deslocamento de bytes na linha na qual o primeiro caractere da instrução na linha.  
+ O valor da coluna retornado por esse método é um deslocamento de byte na linha para o primeiro caractere da instrução na linha.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

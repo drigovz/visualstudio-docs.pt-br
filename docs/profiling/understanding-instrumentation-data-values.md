@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778070"
 ---
 # <a name="understand-instrumentation-data-values"></a>Noções básicas sobre valores de dados de instrumentação
@@ -98,5 +98,5 @@ O percentual dos valores Inclusivos totais do aplicativo da sessão de criação
 
 ## <a name="see-also"></a>Confira também
 
-[Analise dados](../profiling/analyzing-performance-tools-data.md)
-de ferramentas[de desempenho Como: Escolha métodos de coleta](../profiling/how-to-choose-collection-methods.md)
+[Analisar dados](../profiling/analyzing-performance-tools-data.md) 
+ de ferramentas de desempenho [Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)

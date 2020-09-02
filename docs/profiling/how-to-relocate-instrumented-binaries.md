@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 92ec3bb107c5921c6ac0113e18f1dc35ec3dd07a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328812"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Como realocar binários instrumentados
@@ -36,7 +36,7 @@ Durante a instrumentação, as investigações são inseridas no binário para m
 
 4. Especifique o local para o binário instrumentado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Configurar sessões](../profiling/configuring-performance-sessions.md) 
  de desempenho [VSInstr](../profiling/vsinstr.md)

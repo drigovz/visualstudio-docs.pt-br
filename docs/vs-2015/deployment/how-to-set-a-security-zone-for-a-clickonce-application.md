@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir uma zona de segurança para um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: definir uma zona de segurança para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68171425"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Como: Definir uma zona de segurança para um aplicativo ClickOnce
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Como definir uma zona de segurança para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao definir permissões de segurança para um aplicativo ClickOnce de acesso do código, você precisa para começar com um conjunto básico de permissões na **segurança** página do **Designer de projeto**.  
+Ao definir permissões de segurança de acesso de código para um aplicativo ClickOnce, você precisa começar com um conjunto base de permissões na página **segurança** do **Designer de projeto**.  
   
- Na maioria dos casos, você também pode escolher o **Internet** zona que contém um conjunto limitado de permissões, ou o **Intranet Local** zona que contém um conjunto maior de permissões. Se seu aplicativo exigir permissões personalizadas, você pode fazer isso escolhendo os **personalizado** zona de segurança. Para obter mais informações sobre como definir permissões personalizadas, consulte [como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Na maioria dos casos, você também pode escolher a zona da **Internet** que contém um conjunto limitado de permissões ou a zona **da intranet local** que contém um conjunto maior de permissões. Se seu aplicativo exigir permissões personalizadas, você poderá fazer isso escolhendo a zona de segurança **personalizada** . Para obter mais informações sobre como definir permissões personalizadas, consulte [como: definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ### <a name="to-set-a-security-zone"></a>Para definir uma zona de segurança  
   
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2. Clique na guia **Segurança**.  
+2. Clique na guia **Segurança** .  
   
-3. Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
+3. Marque a caixa de seleção **Habilitar configurações de segurança do ClickOnce** .  
   
-4. Selecione o **este é um aplicativo de confiança parcial** botão de opção.  
+4. Selecione o botão de opção **este é um aplicativo de confiança parcial** .  
   
-     Os controles na **permissões de segurança do ClickOnce** seção estão habilitados.  
+     Os controles na seção de **permissões de segurança do ClickOnce** estão habilitados.  
   
-5. No **seu aplicativo será instalado a partir de zona** lista suspensa, selecione uma zona de segurança.  
+5. Na lista suspensa zona em que **seu aplicativo será instalado** , selecione uma zona de segurança.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -7,10 +7,10 @@ ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247983"
 ---
 # <a name="container-tools-launch-settings"></a>Configurações de inicialização das ferramentas de contêiner
@@ -87,6 +87,6 @@ A configuração commandName identifica que esta seção se aplica a ferramentas
 
 Configure seu projeto definindo as [ferramentas de contêiner Propriedades de compilação](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Docker Compose Propriedades de compilação](docker-compose-properties.md)

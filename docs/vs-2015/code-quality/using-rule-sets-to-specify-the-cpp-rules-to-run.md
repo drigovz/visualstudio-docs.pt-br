@@ -1,5 +1,5 @@
 ---
-title: Usando conjuntos de regras para especificar C++ as regras a serem executadas | Microsoft Docs
+title: Usando conjuntos de regras para especificar as regras de C++ a serem executadas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,16 +10,16 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277857"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usando conjuntos de regras para especificar as regras do C++ para execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], você pode criar e modificar um *conjunto de regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Para criar um conjunto C++ de regras personalizado, um CC++ /projeto deve estar aberto no IDE do Visual Studio. Em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e adicione ou remova regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra foi violada.  
+No [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e no [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , você pode criar e modificar um *conjunto de regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Para criar um conjunto personalizado de regras do C++, um projeto C/C++ deve estar aberto no IDE do Visual Studio. Em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e adicione ou remova regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra foi violada.  
   
  Para criar um novo conjunto de regras personalizadas, salve-o usando um novo nome de arquivo. O conjunto de regras personalizadas é atribuído automaticamente ao projeto.  
   
@@ -37,7 +37,7 @@ Em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
      \- ou –  
   
-   - Escolha **\<procurar... >** especificar um conjunto de regras existente que não esteja na lista.  
+   - Escolha **\<Browse...>** especificar um conjunto de regras existente que não esteja na lista.  
   
 4. Escolha **abrir** para exibir as regras no editor de conjunto de regras.  
   
@@ -63,7 +63,7 @@ Em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 - Para recolher as regras em todos os grupos, escolha **recolher tudo**.  
   
-- Para alterar o campo pelo qual as regras são agrupadas, escolha o campo na lista **Agrupar por** . Para exibir as regras desagrupadas, escolha **\<nenhum >** .  
+- Para alterar o campo pelo qual as regras são agrupadas, escolha o campo na lista **Agrupar por** . Para exibir as regras desagrupadas, escolha **\<None>** .  
   
 - Para adicionar ou remover campos em colunas de regra, escolha **Opções de coluna**.  
   

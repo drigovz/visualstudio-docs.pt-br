@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329183"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
@@ -103,7 +103,7 @@ Você pode usar [ações rápidas](../ide/quick-actions.md) para refatorar, gera
 
 Por exemplo, uma tarefa útil que você pode executar usando ações rápidas é remover o **uso desnecessário** do código C# na guia **MainWindow.XAML.cs** .
 
-Veja como:
+Este é o procedimento:
 
 1. Passe o mouse sobre uma instrução using, escolha o ícone de lâmpada e, em seguida, escolha **Remover usos desnecessários** na lista suspensa.
 
@@ -116,7 +116,7 @@ Você também pode acessar esse recurso na barra de menus. Para fazer isso, esco
 
 Para obter mais informações sobre como usar configurações, consulte a página [classificar usando](../ide/reference/sort-usings.md) . Para obter mais informações sobre o IntelliSense, consulte a página [IntelliSense no Visual Studio](../ide/using-intellisense.md) . E, para obter mais informações sobre algumas das maneiras típicas de os desenvolvedores usarem ações rápidas, consulte a página [ações rápidas comuns](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>controle de alterações
 
 A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. Veja como as cores se relacionam às ações tomadas:
 
@@ -173,7 +173,7 @@ Você também pode alterar a aparência da barra de rolagem e quais recursos adi
 
 Outros apreciam o uso do *modo de mapa*, que exibe linhas de código em miniatura na barra de rolagem. Os desenvolvedores que têm muitos códigos em um arquivo podem descobrir que o modo de mapa rastreia para linhas de código com mais eficiência do que a barra de rolagem padrão.
 
-Para obter mais informações sobre como alterar as configurações padrão da barra de rolagem, consulte a página [Personalizar a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
+Para obter mais informações sobre como alterar as configurações padrão da barra de rolagem, consulte a página  [Personalizar a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
 
 ## <a name="xaml-specific-features"></a>Recursos específicos do XAML
 
@@ -277,7 +277,7 @@ Você pode usar a caixa de diálogo [Opções](../ide/reference/options-dialog-b
 
 Na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-formatting.md) para XAML, os três primeiros itens a seguir são universais para todas as linguagens de programação às quais o IDE do Visual Studio dá suporte. Visite as informações vinculadas na tabela a seguir para saber mais sobre essas opções e como usá-las.
 
-|Nome  |Obter mais informações  |
+|Name  |Obter mais informações  |
 |---------|---------|
 |Geral  | [Caixa de diálogo opções: editor de texto > todos os idiomas](../ide/reference/options-text-editor-all-languages.md) |
 |Barras de rolagem | [Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
@@ -287,7 +287,7 @@ Na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-format
 
 A tabela a seguir lista as configurações na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-formatting.md) que podem aprimorar sua experiência de edição quando você desenvolve aplicativos baseados em XAML. Visite as informações vinculadas para saber mais sobre essas opções e como usá-las.
 
-|Nome  |Obter mais informações  |
+|Name  |Obter mais informações  |
 |---------|---------|
 |Formatação | [Opções, Editor de Texto, XAML, Formatação](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Diversos |  [Opções, Editor de texto, XAML, Diversos](../ide/reference/options-text-editor-xaml-miscellaneous.md) |
@@ -299,7 +299,7 @@ A tabela a seguir lista as configurações na caixa de diálogo [Opções](../id
 
 Para saber mais sobre como editar seu código em tempo real enquanto você estiver executando seu aplicativo no modo de depuração, consulte a página de [Hot recarregamento de XAML](xaml-hot-reload.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XAML em aplicativos UWP](/windows/uwp/xaml-platform/xaml-overview/)
