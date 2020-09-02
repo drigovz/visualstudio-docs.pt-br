@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160644"
 ---
 # <a name="execution-profile-report"></a>Relatório do perfil de execução
@@ -31,9 +31,9 @@ O relatório do perfil de execução é um perfil de amostragem tradicional. As 
   
   A tabela a seguir mostra as colunas no relatório.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
-|Nome|O nome da função para cada nível da pilha de chamadas.|  
+|Name|O nome da função para cada nível da pilha de chamadas.|  
 |Amostras inclusivas|O número total de amostras que são coletadas para todas as pilhas que rolam até esse nível da árvore de pilha de chamadas. O número inclusivo é a soma das amostras exclusivas para essa função e dos contadores inclusivos para todos os seus nós filho.|  
 |Amostras Exclusivas|O número total de amostras coletadas para o qual essa função é o nível mais baixo da pilha de chamadas.|  
 |% Inclusivo|O percentual do total de amostras que é mostrada na coluna de amostras inclusivas. As porcentagens são arredondadas para duas casas decimais.|  
@@ -42,5 +42,5 @@ O relatório do perfil de execução é um perfil de amostragem tradicional. As 
   
  Esta tabela de relatório pode ser vista na exibição [Tempo de execução (exibição de threads)](../profiling/execution-time-threads-view.md).  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte Também  
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

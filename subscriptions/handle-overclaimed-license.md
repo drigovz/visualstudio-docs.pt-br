@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver assinaturas Superalocadas
 ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453719"
 ---
 # <a name="over-allocated-subscriptions"></a>Assinaturas Superalocadas
@@ -41,7 +41,7 @@ Se sua organização tiver um EA (Contrato Enterprise), os administradores poder
 >
 > É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja uma assinatura correspondente do Visual Studio com o GitHub atribuída no portal de gerenciamento para permanecer em conformidade com os requisitos de licenciamento para este assinatura.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

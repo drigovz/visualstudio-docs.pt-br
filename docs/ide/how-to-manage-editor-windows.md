@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284185"
 ---
 # <a name="how-to-manage-editor-windows"></a>Como gerenciar janelas do editor
@@ -54,7 +54,7 @@ Também é possível criar várias instâncias de uma janela do editor. Esse rec
 
    Uma nova instância com guias do editor será adicionada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento de tarefa do UsingTask (MSBuild) | Microsoft Docs
+title: Elemento Task de UsingTask (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,19 +17,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263182"
 ---
-# <a name="task-element-of-usingtask-msbuild"></a>Elemento de tarefa do UsingTask (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Elemento Task de UsingTask (MSBuild)
 
-Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para obter mais informações, consulte [O elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para obter mais informações, consulte [elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Projeto \<>> \<de tarefa seleio de> tarefa
+ \<Project> \<UsingTask>
+ \<Task>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Task Evaluate="true/false" />

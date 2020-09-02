@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42a4c4b008b34a66a408cbb9a5615ae3fbbf8407
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188599"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Define ou altera a contagem de passagem associada com o ponto de interrupção pendente.  
+Define ou altera a contagem de aprovações associada ao ponto de interrupção pendente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -41,14 +41,14 @@ int SetPassCount( 
   
 #### <a name="parameters"></a>Parâmetros  
  `bpPassCount`  
- [in] Um [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que contém a contagem de passagem.  
+ no Uma estrutura de [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que contém a contagem de aprovações.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção foi excluído.  
   
 ## <a name="remarks"></a>Comentários  
- Qualquer conta de passagem que foi previamente associada com o ponto de interrupção pendente será perdida. Todos os pontos de interrupção associados deste pendente do ponto de interrupção são chamados para definir sua contagem de passagem para o `bpPassCount` parâmetro.  
+ Qualquer contagem de aprovação associada anteriormente ao ponto de interrupção pendente é perdida. Todos os pontos de interrupção associados a esse ponto de interrupção pendente são chamados para definir sua contagem de passagem para o `bpPassCount` parâmetro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b6717f524f6a2d3f9f09290ac9bfbd8f02fc23fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544541"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: conjunto de trabalho médio em bytes para o processo que está sendo analisado
@@ -26,7 +26,7 @@ ms.locfileid: "85544541"
 |-|-|
 |ID de regra|DA0503|
 |Categoria|Monitoramento de recursos|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|Tudo|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é a média calculada de todos os intervalos de medição.|
 |Tipo de regra|Informações|
 

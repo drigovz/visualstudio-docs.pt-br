@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382465"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Como personalizar a página da Web padrão para um aplicativo ClickOnce
@@ -47,7 +47,7 @@ Ao publicar um aplicativo ClickOnce na Web, uma página da Web é gerada automat
 
 4. Opcional. Para impedir que o Visual Studio substitua sua página da Web de publicação personalizada, desmarque a opção **gerar automaticamente implantação da Web após cada publicação** na caixa de diálogo **Opções de publicação** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

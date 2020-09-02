@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453643"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Como personalizar o dicionário de análise do código
@@ -74,7 +74,7 @@ Você pode modificar o comportamento do dicionário de análise de código adici
 
 - [Dicionário/acrônimos/CasingExceptions/acrônimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Dicionário/palavras/reconhecida/palavra
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> Dicionário/palavras/reconhecida/palavra
 
 Para incluir um termo na lista de termos que a análise de código identifica como grafada corretamente, adicione o termo como o texto interno de um elemento Dictionary/Words/reconhecidos/palavra-chave. Os termos em dicionário/palavras/reconhecidos/palavras do Word não diferenciam maiúsculas de minúsculas.
 
@@ -109,7 +109,7 @@ Os termos em dicionário/palavras/nós reconhecidos são aplicados às seguintes
 
 - [CA2204: Literais devem ser escritos corretamente](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dicionário/palavras/não reconhecido/palavra
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dicionário/palavras/não reconhecido/palavra
 
 Para excluir um termo da lista de termos que a análise de código identifica como escrita corretamente, adicione o termo a ser excluído como o texto interno de um elemento de dicionário/palavras/não reconhecido/palavra. Os termos em dicionário/palavras/elementos não reconhecidos/de palavras não diferenciam maiúsculas de minúsculas.
 
@@ -144,7 +144,7 @@ Os termos do nó dicionário/palavras/não reconhecido são aplicados às seguin
 
 - [CA2204: Literais devem ser escritos corretamente](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dicionário/palavras/preterido/termo [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dicionário/palavras/preterido/termo [ @PreferredAlternate ]
 
 Para incluir um termo na lista de termos que a análise de código identifica como preterida, adicione o termo como o texto interno de um elemento Dictionary/Words/preterited/Term. Um termo preterido é uma palavra que é digitada corretamente, mas não deve ser usada.
 
@@ -181,7 +181,7 @@ Os termos do nó dicionário/palavras/preterido são aplicados às seguintes reg
 
 - [CA1726: Usar termos preferenciais](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dicionário/palavras/composto/termo [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dicionário/palavras/composto/termo [ @CompoundAlternate ]
 
 O dicionário interno identifica alguns termos como termos únicos e discretos, em vez de um termo composto. Para incluir um termo na lista de termos que a análise de código identifica como uma palavra composta e especificar a capitalização correta do termo, adicione o termo como o texto interno de um elemento Dictionary/Words/composto/termo. No atributo CompoundAlternate do elemento Term, especifique as palavras individuais que compõem o termo composto, colocando em maiúscula a primeira letra das palavras individuais (caso Pascal). Observe que o termo especificado no texto interno é adicionado automaticamente à lista Dictionary/Words/DiscreteExceptions.
 
@@ -214,7 +214,7 @@ Os termos no nó dicionário/palavras/composto são aplicados às seguintes regr
 
 - [CA1704: Identificadores devem ser escritos corretamente](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dicionário/palavras/DiscreteExceptions/termo
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dicionário/palavras/DiscreteExceptions/termo
 
 Para excluir um termo na lista de termos que a análise de código identifica como uma única palavra discreta quando o termo é verificado pelas regras de maiúsculas e minúsculas para as palavras compostas, adicione o termo como o texto interno de um elemento Dictionary/Words/DiscreteExceptions/Term. O termo no elemento Dictionary/Words/DiscreteExceptions/Term não diferencia maiúsculas de minúsculas.
 
@@ -239,7 +239,7 @@ Os termos no nó Dictionary/Words/DiscreteExceptions são aplicados às seguinte
 
 - [CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dicionário/acrônimos/CasingExceptions/acrônimo
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dicionário/acrônimos/CasingExceptions/acrônimo
 
 Para incluir um acrônimo na lista de termos que a análise de código identifica como grafada corretamente e para indicar como o acrônimo quando o termo é verificado por regras de maiúsculas e minúsculas para as palavras compostas, adicione o termo como o texto interno de um elemento Dictionary/acrônimos/CasingExceptions/acrônimo. O acrônimo no elemento Dictionary/acrônimos/CasingExceptions/acrônimo diferencia maiúsculas de minúsculas.
 
@@ -262,7 +262,7 @@ Os termos no nó Dictionary/acrônimos/CasingExceptions são aplicados às segui
 
 - [CA1709: Identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Para aplicar um dicionário personalizado a um projeto
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Para aplicar um dicionário personalizado a um projeto
 
 1. No **Gerenciador de soluções**, use um dos seguintes procedimentos:
 

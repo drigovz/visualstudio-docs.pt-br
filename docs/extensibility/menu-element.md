@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453659"
 ---
 # <a name="menu-element"></a>Elemento de menu
 Define um item de menu. Esses são os seis tipos de menus: contexto, menu, MenuController, MenuControllerLatched, barra de ferramentas e ToolWindowToolbar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Menu guid="guidMyCommandSet" id="MyCommand" priority="0x100" type="button">
@@ -47,7 +47,7 @@ Define um item de menu. Esses são os seis tipos de menus: contexto, menu, MenuC
 
 ### <a name="child-elements"></a>Elementos filho
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |Pai|Opcional. O elemento pai do item de menu.|
 |CommandFlag|Obrigatórios. Consulte o [elemento flag de comando](../extensibility/command-flag-element.md). Os valores de CommandFlag válidos para um menu são os seguintes:<br /><br /> -   **AlwaysCreate**<br />-   **Defaultdocked**<br />-   **Defaultvisible** – esse sinalizador não afeta a exibição de barras de ferramentas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **IconAndText**<br />-   **Nocustomizate**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **Textchanges**<br />-   **TextIsAnchorCommand**|

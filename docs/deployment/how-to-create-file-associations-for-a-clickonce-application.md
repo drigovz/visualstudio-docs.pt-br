@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382491"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como criar associações de arquivo para um aplicativo ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os aplicativos podem ser associados a uma ou mais extensões de nome de arquivo, para que o aplicativo seja iniciado automaticamente quando o usuário abrir um arquivo desses tipos. Adicionar suporte à extensão de nome de arquivo a um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é simples.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos podem ser associados a uma ou mais extensões de nome de arquivo, para que o aplicativo seja iniciado automaticamente quando o usuário abrir um arquivo desses tipos. Adicionar suporte à extensão de nome de arquivo a um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é simples.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Para criar associações de arquivo para um aplicativo ClickOnce
 
@@ -53,7 +53,7 @@ ms.locfileid: "85382491"
 
     Para obter mais informações, consulte [Mage.exe (manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="see-also"></a>Veja também
-- [\<fileAssociation>elementos](../deployment/fileassociation-element-clickonce-application.md)
+## <a name="see-also"></a>Confira também
+- [\<fileAssociation> elementos](../deployment/fileassociation-element-clickonce-application.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

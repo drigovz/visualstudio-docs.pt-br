@@ -1,5 +1,5 @@
 ---
-title: 'Como: Escolher métodos de coleta | Microsoft Docs'
+title: Como escolher métodos de coleta | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199800"
 ---
-# <a name="how-to-choose-collection-methods"></a>Como: Escolher métodos de coleta
+# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.  
@@ -90,13 +90,13 @@ As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Para selecionar a coleta de dados de simultaneidade usando as propriedades da sessão de desempenho  
   
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+1. Em **Gerenciador de desempenho**, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
   
 2. Nas **Páginas de Propriedades**, clique em **Geral**.  
   
 3. Clique em **Simultaneidade**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
+ [Compreendendo os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)

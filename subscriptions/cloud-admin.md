@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: Configurando administradores para assinaturas mensais
 ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87434305"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
@@ -49,7 +49,7 @@ Para adicionar administradores:
 9. Na lista de usuários role para baixo até o usuário que você deseja tornar administrador e selecione-o. 
    > [!div class="mx-imgBorder"]
    > ![Escolher função, administrador de acesso do usuário](_img/cloud-admin/add-role-user-access-admin.png "Escolha função, selecione administrador de acesso do usuário e, em seguida, selecione o nome do usuário para torná-lo um administrador.")
-10. Clique em **Save** (Salvar).
+10. Clique em **Salvar**.
 11. Clique na guia **Atribuições de função** para verificar se o usuário selecionado é exibido como um Administrador de Acesso do Usuário.
 
 Agora, o novo administrador pode entrar no [portal de administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas mensais da lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
@@ -59,7 +59,7 @@ Agora, o novo administrador pode entrar no [portal de administração](https://m
 
 Para obter informações sobre assinaturas mensais do Visual Studio, consulte a [visão geral](vscloud-overview.md) em comprando assinaturas. Para comprar as assinaturas mensais do Visual Studio, visite a Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

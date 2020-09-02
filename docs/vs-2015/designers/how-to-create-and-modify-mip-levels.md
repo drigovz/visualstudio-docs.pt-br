@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664477"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Como criar e modificar níveis MIP
@@ -42,7 +42,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 2. Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).
 
 > [!NOTE]
-> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações sobre como gerar mipmaps no momento do build, consulte [Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações sobre como gerar mipmaps no momento da compilação, consulte [como exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
-## <a name="see-also"></a>Consulte também
- [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md)
+## <a name="see-also"></a>Consulte Também
+ [Como: criar uma textura básica](../designers/how-to-create-a-basic-texture.md)

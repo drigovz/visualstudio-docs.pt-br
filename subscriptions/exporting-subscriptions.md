@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como exportar uma lista de assinantes e os detalhes de suas atribuições de assinatura.
 ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453570"
 ---
 # <a name="export-subscription-information"></a>Exportar informações da assinatura
@@ -32,7 +32,7 @@ Para executar a exportação:
 > [!div class="mx-imgBorder"]
 > ![Exportar assinantes](_img/exporting-subscriptions/exporting-subscriptions.png "Clique em exportar para baixar uma lista completa de suas assinaturas atribuídas.")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592367"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Exibições de espaço de trabalho do designer de esquema XML
@@ -47,4 +47,4 @@ Para alternar modos de exibição, use um destes procedimentos:
 
 - Os marca de agua na página no modo de Início ou a marca de agua no modo em branco do modelo de conteúdo ou no modo de gráfico.
 
-- Teclas de pressionamento: **ctrl**+**1** para a exibição de início, **Ctrl**+**2** para a exibição de gráfico e **Ctrl**+**3** para a exibição de modelo de conteúdo.
+- Teclas de pressionamento: **Ctrl** + **1** para a exibição de início, **Ctrl** + **2** para o modo de exibição de gráfico e **Ctrl** + **3** para a exibição do modelo de conteúdo.

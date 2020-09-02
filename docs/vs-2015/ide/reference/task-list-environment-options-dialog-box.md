@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650973"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Caixa de diálogo Lista de Tarefas, Ambiente, Opções
@@ -65,5 +65,5 @@ Esta página Opções permite a você adicionar, excluir e alterar os tokens de 
 > [!NOTE]
 > Não é possível renomear nem excluir o token de comentário padrão, mas é possível alterar seu nível de prioridade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Usando o lista de tarefas](../../ide/using-the-task-list.md) [definir indicadores na caixa de](../../ide/setting-bookmarks-in-code.md) [diálogo opções de ambiente](../../ide/reference/environment-options-dialog-box.md) de código

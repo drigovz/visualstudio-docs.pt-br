@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382296"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como publicar um aplicativo ClickOnce usando o Assistente de Publicação
@@ -59,7 +59,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
    - Se você deseja executar o aplicativo diretamente da localização de publicação, clique em **Não, este aplicativo está disponível apenas online**. Não será criado um atalho para o aplicativo no menu **Iniciar**.
 
-     Clique em **Próximo** para continuar.
+     Clique em **Avançar** para continuar.
 
 6. Clique em **Concluir** para publicar o aplicativo.
 
@@ -88,7 +88,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
    - Se o aplicativo não for verificar atualizações, clique em **O aplicativo não verificará atualizações**.
 
-     Clique em **Próximo** para continuar.
+     Clique em **Avançar** para continuar.
 
 6. Clique em **Concluir** para publicar o aplicativo.
 
@@ -97,7 +97,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
    > [!NOTE]
    > Após a publicação estar concluída, será necessário utilizar um CD-Rewriter ou DVD-Rewriter para copiar os arquivos do local especificado na etapa 3 para a mídia de CD-ROM ou DVD-ROM.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

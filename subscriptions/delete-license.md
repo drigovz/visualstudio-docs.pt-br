@@ -8,10 +8,10 @@ ms.date: 06/16/2020
 ms.topic: how-to
 description: Saiba como os administradores podem excluir atribuições de assinatura
 ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87434263"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Excluir atribuições em assinaturas do Visual Studio
@@ -29,7 +29,7 @@ Quando um assinante não precisar mais de uma assinatura do Visual Studio, por e
    > [!NOTE]
    > A exclusão em massa usando um modelo não está disponível. Para organizações que gerenciam atribuições de assinatura por meio de Azure Active Directory grupos de segurança, consulte [nosso artigo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para obter mais informações sobre como as exclusões acontecem.  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

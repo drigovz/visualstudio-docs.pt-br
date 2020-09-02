@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: analisando oC++ C-Code para defeitos | Microsoft Docs'
+title: 'Walkthrough: analisando o código C-C + + para defeitos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272442"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de código usando a ferramenta de análise de código para CC++ /Code.  
+Este tutorial demonstra como analisar o código C/C++ para possíveis defeitos de código usando a ferramenta de análise de código para código C/C++.  
   
- Neste tutorial, você percorre o processo de usar a análise de código para analisar o C/C++ Code para possíveis defeitos de código.  
+ Neste tutorial, você percorre o processo de usar a análise de código para analisar seu código C/C++ para possíveis defeitos de código.  
   
  Você executará as seguintes etapas:  
   
@@ -38,7 +38,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 - Anote o código-fonte para melhorar a análise de defeitos de código.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Pré-requisitos  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
@@ -48,7 +48,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Para executar a análise de defeitos de código em código nativo  
   
-1. Abra a solução de demonstração no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Abra a solução de demonstração no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      A solução de demonstração agora preenche **Gerenciador de soluções**.  
   
@@ -64,7 +64,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 5. Clique em **Análise de código**.  
   
-6. Clique na caixa de seleção **Habilitar análise deC++ código para C/no Build** .  
+6. Clique na caixa de seleção **Habilitar análise de código para C/C++ na compilação** .  
   
 7. Reconstrua o projeto CodeDefects.  
   
@@ -74,13 +74,13 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 1. No menu **Exibir** , clique em **Lista de Erros**.  
   
-     Dependendo do perfil de desenvolvedor que você escolheu no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], talvez seja necessário apontar para **outras janelas** no menu **Exibir** e, em seguida, clicar em **lista de erros**.  
+     Dependendo do perfil de desenvolvedor que você escolheu no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , talvez seja necessário apontar para **outras janelas** no menu **Exibir** e, em seguida, clicar em **lista de erros**.  
   
 2. No **lista de erros**, clique duas vezes no seguinte aviso:  
   
      aviso C6230: conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booliano.  
   
-     O editor de código exibe a linha que causou o aviso na função `bool``ProcessDomain()`. Esse aviso indica que um HRESULT está sendo usado em uma instrução ' If ' onde um resultado booliano é esperado.  
+     O editor de código exibe a linha que causou o aviso na função `bool``ProcessDomain()` . Esse aviso indica que um HRESULT está sendo usado em uma instrução ' If ' onde um resultado booliano é esperado.  
   
 3. Corrija esse aviso usando a macro SUCCEEDed. Seu código deve ser semelhante ao seguinte código:  
   
@@ -100,7 +100,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 ### <a name="to-treat-warning-as-an-error"></a>Para tratar o aviso como um erro  
   
-1. No arquivo Bug. cpp, adicione a seguinte instrução `#pragma` ao início do arquivo para tratar o aviso C6001 como um erro:  
+1. No arquivo Bug. cpp, adicione a seguinte `#pragma` instrução ao início do arquivo para tratar o aviso C6001 como um erro:  
   
     ```  
     #pragma warning (error: 6001)  
@@ -126,7 +126,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
   
 3. Clique em **Análise de código**.  
   
-4. Marque a caixa de seleção **Habilitar análise deC++ código para C/no Build** .  
+4. Marque a caixa de seleção **Habilitar análise de código para C/C++ na compilação** .  
   
 5. Recrie o projeto de anotações.  
   
@@ -195,4 +195,4 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
      O projeto é compilado sem avisos ou erros.  
   
 ## <a name="see-also"></a>Consulte Também  
- [Passo a passo: analisando código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+ [Instruções passo a passo: analisando código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

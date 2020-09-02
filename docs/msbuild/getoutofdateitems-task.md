@@ -18,31 +18,31 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272400"
 ---
 # <a name="getoutofdateitems-task"></a>Tarefa GetOutOfDateItems
 
 Tarefa auxiliar que lê tlogs antigos, grava novos tlogs e retorna um conjunto de itens não atualizados.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **GetOutOfDateItems**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parâmetro opcional **bool**.|
-|**CommandMetadataName**|Parâmetro opcional **de string.**|
-|**DependenciesMetadataName**|Parâmetro opcional **de string.**|
+|**CommandMetadataName**|Parâmetro de **cadeia de caracteres** opcional.|
+|**DependenciesMetadataName**|Parâmetro de **cadeia de caracteres** opcional.|
 |**HasInterdependencies**|Parâmetro de saída **bool** opcional.|
 |**OutOfDateSources**|Parâmetro de saída opcional **ITaskItem[]**.|
-|**OutputsMetadataName**|Parâmetro de **corda** necessário.|
-|**Fontes**|Parâmetro **opcional ITaskItem[].**|
-|**TLogDirectory**|Parâmetro de **corda** necessário.|
-|**TLogNamePrefix**|Parâmetro de **corda** necessário.|
+|**OutputsMetadataName**|Parâmetro de **cadeia de caracteres** necessário.|
+|**Fontes**|Parâmetro opcional **ITaskItem []** .|
+|**TLogDirectory**|Parâmetro de **cadeia de caracteres** necessário.|
+|**TLogNamePrefix**|Parâmetro de **cadeia de caracteres** necessário.|
 
 ## <a name="see-also"></a>Confira também
 

@@ -12,34 +12,34 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160914"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Comentando o código em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Linguagens de programação normalmente fornecem um meio de anotações ou comentários de código. Um comentário é uma seção de texto que fornece informações adicionais sobre o código, mas é ignorada durante a compilação ou interpretação.  
+Linguagens de programação normalmente fornecem um meio de anotar ou comentar o código. Um comentário é uma seção de texto que fornece informações adicionais sobre o código, mas é ignorada durante a compilação ou interpretação.  
   
- As classes do framework (MPF) de pacote gerenciado dão 1&gt;{2&gt;suporte a inserção e texto selecionado.  
+ As classes do MPF (estrutura de pacote gerenciada) fornecem suporte para comentar e remover comentários do texto selecionado.  
   
 ## <a name="comment-styles"></a>Estilos de comentário  
  Há dois estilos gerais de comentário:  
   
-1. Comentários de linha, em que o comentário é em uma única linha.  
+1. Comentários de linha, onde o comentário está em uma única linha.  
   
-2. Comentários do bloco, em que o comentário pode incluir várias linhas.  
+2. Bloquear comentários, onde o comentário pode incluir várias linhas.  
   
-   Comentários de linha geralmente têm um caractere (ou caracteres iniciais), enquanto os comentários do bloco têm caracteres iniciais e finais. Por exemplo, no c#, um comentário de linha começa com / /, e um comentário de bloco começa com / * e termina com \*/.  
+   Os comentários de linha normalmente têm um caractere inicial (ou caracteres), enquanto os comentários de bloco têm caracteres de início e término. Por exemplo, em C#, um comentário de linha começa com//e um comentário de bloco começa com/* e termina com \* /.  
   
-   Quando o usuário seleciona o comando **seleção de comentário** da **editar** -> **avançado** menu, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe. Quando o usuário seleciona o comando **seleção Descomente**, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.  
+   Quando o usuário seleciona a **seleção de comentário** do comando no menu **Editar**  ->  **avançado** , o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe. Quando o usuário seleciona a **seleção Remover comentário**do comando, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.  
   
-## <a name="supporting-code-comments"></a>Suporte a comentários de código  
- Você pode ter seus comentários de código do idioma serviço suporte por meio do `EnableCommenting` chamado de parâmetro do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Isso define a <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propriedade do <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Para obter mais informações sobre como definir o idioma servicce recursos, consulte [registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
+## <a name="supporting-code-comments"></a>Comentários de código de suporte  
+ Você pode fazer com que o serviço de linguagem dê suporte a comentários de código por meio do `EnableCommenting` parâmetro nomeado do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Isso define a <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propriedade da <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Para obter mais informações sobre como definir recursos de servicce de idioma, consulte [registrando um serviço de idioma herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
- Você também deve substituir a <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método para retornar um <xref:Microsoft.VisualStudio.Package.CommentInfo> estrutura com os caracteres de comentário para o seu idioma. C#-caracteres de comentário de linha de estilo são o padrão.  
+ Você também deve substituir o <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método para retornar uma <xref:Microsoft.VisualStudio.Package.CommentInfo> estrutura com os caracteres de comentário para seu idioma. Os caracteres de comentário de linha de estilo C# são o padrão.  
   
 ### <a name="example"></a>Exemplo  
  Aqui está um exemplo de implementação do <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método.  
@@ -63,6 +63,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Recursos do serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)

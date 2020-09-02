@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284055"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
@@ -39,7 +39,7 @@ A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de
 
     **C#** &mdash; Próximo à lista de **ícones** , escolha o **\<Browse...>** botão e, em seguida, navegue até o local do arquivo de ícone desejado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página de aplicativo, designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Página de aplicativo, designer de projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)

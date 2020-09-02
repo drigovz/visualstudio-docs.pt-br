@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
+title: 'IDebugProcess2:: GetAttachedSessionName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b70fd48adacdbbf936c6997fc373ad4a8d7e696b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724077"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Obtém o nome da sessão que está depurando esse processo. Um IDE pode exibir essas informações para um usuário que está depurando um processo específico em uma determinada máquina.
+Obtém o nome da sessão que está depurando esse processo. Um IDE pode exibir essas informações para um usuário que está depurando um processo específico em um determinado computador.
 
 > [!NOTE]
-> Este método é preterido, e `E_NOTIMPL`sua implementação deve sempre retornar.
+> Esse método é preterido e sua implementação sempre deve retornar `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,11 +36,11 @@ HRESULT GetAttachedSessionName(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pbstrSessionName`\
 
-## <a name="return-value"></a>Valor retornado
- Este método deve `E_NOTIMPL`sempre retornar .
+## <a name="return-value"></a>Valor Retornado
+ Esse método sempre deve retornar `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
