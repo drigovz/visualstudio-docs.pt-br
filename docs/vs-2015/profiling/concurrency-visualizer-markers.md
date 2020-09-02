@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704360"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores do Visualizador de Simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e tempos de execução que o aplicativo usa.  
+Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e runtimes que o aplicativo usa.  
   
 ## <a name="kinds-of-markers"></a>Tipos de marcadores  
  A Visualização Simultânea usa três tipos de marcadores para representar eventos do aplicativo: sinalizadores, mensagens e intervalos.  
@@ -44,15 +44,15 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="known-sources-of-markers"></a>Fontes conhecidas de marcadores  
  Qualquer provedor ETW pode gerar marcadores, desde que os provedores obedeçam a determinadas restrições. É possível configurar a Visualização Simultânea para escutar outras fontes de evento para marcadores. Por padrão, ele escuta estas fontes de evento:  
   
-- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)  
+- [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)  
   
-- [TPL (Biblioteca de Paralelismo de Tarefas)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [Biblioteca de tarefas paralelas (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
-- [Fluxo de dados](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Flow](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
-- [PLINQ (LINQ paralelo)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [LINQ paralelo (PLINQ)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
-- [Tempo de Execução de Simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Runtime de Simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
 - [Suporte do Marcador de Cenário](https://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
@@ -63,8 +63,8 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
  A Visualização Simultânea também pode exibir eventos EventSource.  Para obter mais informações, consulte [Visualizando eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Marcadores de sinalizador](../profiling/flag-markers.md)   
  [Marcadores de mensagem](../profiling/message-markers.md)   
- [Marcadores de intervalo](../profiling/span-markers.md)   
+ [Marcadores de span](../profiling/span-markers.md)   
  [Visualizando eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md)

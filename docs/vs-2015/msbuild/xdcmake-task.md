@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c16c92b41aa0635ecb24d83e30e2c347620b2c75
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675534"
 ---
 # <a name="xdcmake-task"></a>Tarefa XDCMake
@@ -42,15 +42,15 @@ Encapsula a ferramenta de Documentação XML (xdcmake.exe), que mescla arquivos 
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|Parâmetro **String[]** opcional.<br /><br /> Especifica um ou mais arquivos .xdc adicionais para mesclagem.<br /><br /> Para obter mais informações, consulte a descrição **Arquivos Adicionais de Documento** nas [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0). Consulte também as opções de linha de comando **/old** e **/Fs** para o xdcmake.exe.|  
-|**AdditionalOptions**|Parâmetro **String** opcional.<br /><br /> Uma lista de opções, conforme especificado na linha de comando. Por exemplo, "*/option1 /option2 /option#*". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XDCMake**.<br /><br /> Para obter mais informações, consulte [Referência XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e a ajuda da linha de comando (**/?**) para o xdcmake.exe.|  
-|**DocumentLibraryDependencies**|Parâmetro **Boolean** opcional.<br /><br /> Se `true` e o projeto atual tiverem uma dependência em um projeto de biblioteca estática (.lib) na solução, os arquivos .xdc desse projeto de biblioteca serão incluídos no arquivo .xml de saída do projeto atual.<br /><br /> Para obter mais informações, consulte a descrição **Dependências de Biblioteca de Documentos** nas [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0).|  
-|**OutputFile**|Parâmetro **String** opcional.<br /><br /> Substitui o nome de arquivo de saída padrão. O nome padrão é derivado do nome do primeiro arquivo .xdc processado.<br /><br /> Para obter mais informações, consulte a opção **/out:**`filename` em [Referência XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac). Consulte também as opções de linha de comando **/old** e **/Fo** para o xdcmake.exe.|  
-|**ProjectName**|Parâmetro **String** opcional.<br /><br /> O nome do projeto atual.|  
-|**SlashOld**|Parâmetro **Boolean** opcional.<br /><br /> Se `true`, habilitará as opções adicionais do xdcmake.exe.<br /><br /> Para obter mais informações, consulte a opção de linha de comando **/old** para o xdcmake.exe.|  
-|**Sources**|Parâmetro `ITaskItem[]` obrigatório.<br /><br /> Define uma matriz de itens de arquivo de origem do MSBuild que pode ser consumida e emitida por tarefas.|  
-|**SuppressStartupBanner**|Parâmetro **Boolean** opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para obter mais informações, consulte a opção **/nologo** em [Referência XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac).|  
-|**TrackerLogDirectory**|Parâmetro **String** opcional.<br /><br /> Especifica o diretório do log de rastreamento.|  
+|**AdditionalDocumentFile**|Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica um ou mais arquivos .xdc adicionais para mesclagem.<br /><br /> Para obter mais informações, consulte a descrição **Arquivos Adicionais de Documento** nas [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0). Consulte também as opções de linha de comando **/old** e **/Fs** para o xdcmake.exe.|  
+|**AdditionalOptions**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Uma lista de opções, conforme especificado na linha de comando. Por exemplo, "*/option1 /option2 /option#*". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XDCMake**.<br /><br /> Para obter mais informações, consulte [Referência XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e a ajuda da linha de comando (**/?**) para o xdcmake.exe.|  
+|**DocumentLibraryDependencies**|Parâmetro **booliano** opcional.<br /><br /> Se `true` e o projeto atual tiverem uma dependência em um projeto de biblioteca estática (.lib) na solução, os arquivos .xdc desse projeto de biblioteca serão incluídos no arquivo .xml de saída do projeto atual.<br /><br /> Para obter mais informações, consulte a descrição **Dependências de Biblioteca de Documentos** nas [Páginas de Propriedade da Ferramenta Geradora de Documento XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0).|  
+|**OutputFile**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Substitui o nome de arquivo de saída padrão. O nome padrão é derivado do nome do primeiro arquivo .xdc processado.<br /><br /> Para obter mais informações, consulte a opção **/out:** `filename` na [referência de xdcmake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac). Consulte também as opções de linha de comando **/old** e **/Fo** para o xdcmake.exe.|  
+|**ProjectName**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> O nome do projeto atual.|  
+|**SlashOld**|Parâmetro **booliano** opcional.<br /><br /> Se `true`, habilitará as opções adicionais do xdcmake.exe.<br /><br /> Para obter mais informações, consulte a opção de linha de comando **/old** para o xdcmake.exe.|  
+|**Fontes**|Parâmetro `ITaskItem[]` obrigatório.<br /><br /> Define uma matriz de itens de arquivo de origem do MSBuild que pode ser consumida e emitida por tarefas.|  
+|**SuppressStartupBanner**|Parâmetro **booliano** opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para obter mais informações, consulte a opção **/nologo** em [Referência XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac).|  
+|**TrackerLogDirectory**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o diretório do log de rastreamento.|  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

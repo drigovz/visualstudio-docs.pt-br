@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595924"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
@@ -47,7 +47,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
      A caixa de diálogo **Adicionar testes** é exibida. Todos os testes de desempenho na Web, unidade, e de IU codificados na solução que ainda não estejam em seu cenário estão disponíveis para adição ao cenário.
 
-3. No painel **de testes disponível,** selecione os testes de desempenho da Web, unidade e iA codificados que você deseja adicionar. Escolha a seta para a direita para adicionar os testes ao painel **Testes selecionados**.
+3. No painel **testes disponíveis** , selecione o desempenho da Web, a unidade e os testes de interface do usuário codificados que você deseja adicionar. Escolha a seta para a direita para adicionar os testes ao painel **Testes selecionados**.
 
 4. Quando terminar de adicionar os testes, escolha **OK**.
 
@@ -64,7 +64,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
 2. No **Editor de Teste de Carga**, na árvore de teste de carga, clique com o botão direito do mouse no cenário do qual você deseja remover um teste e selecione **Editar combinação de testes**. A caixa de diálogo **Editar combinação de testes** é exibida.
 
-3. Selecione o teste de desempenho da Web, unidade ou iA codificado na grade e, em seguida, escolha **Remover**.
+3. Selecione o teste Web de desempenho, unidade ou interface do usuário codificado na grade e escolha **remover**.
 
     > [!NOTE]
     > Depois de remover o teste, ajuste a combinação de testes de acordo com sua distribuição preferencial.
@@ -81,10 +81,10 @@ O botão **Distribuir** é usado para alocar igualmente as porcentagens entre to
 > [!WARNING]
 > O botão **Distribuir** substitui todos os itens bloqueados.
 
-Também é possível digitar os valores **%** percentuais diretamente na coluna em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
+Também é possível digitar os valores percentuais diretamente na **%** coluna em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
 
 > [!NOTE]
-> Os controles deslizantes são desativados quando o total não soma 100%, **%** ou quando os valores percentuais inseridos na coluna são decimais.
+> Os controles deslizantes são desabilitados quando o total não soma até 100%, ou quando os valores de porcentagem inseridos na **%** coluna são decimais.
 
 Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 

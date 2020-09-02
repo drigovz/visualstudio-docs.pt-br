@@ -1,5 +1,5 @@
 ---
-title: Depuração usando o diagnóstico de gráficos de sombreador de cálculo
+title: Depuração do sombreador de computação usando o diagnóstico de gráficos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -9,101 +9,101 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262861"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
-Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráficos do Visual Studio para investigar um sombreador de cálculo que produz resultados incorretos.
+Este tutorial demonstra como usar as ferramentas de Diagnóstico de Gráficos do Visual Studio para investigar um sombreador de computação que gera resultados incorretos.
 
- Este passo a passo ilustra essas tarefas:
+ Este tutorial ilustra essas tarefas:
 
-- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.
+- Usando a **lista de eventos gráficos** para localizar possíveis fontes do problema.
 
-- Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.
+- Usando a **pilha de chamadas de evento de gráficos** para determinar qual sombreador de computação é executado por um `Dispatch` evento DirectCompute.
 
-- Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.
+- Usando a janela **estágios de pipeline de gráficos** e o depurador HLSL para examinar o sombreador de computação que é a origem do problema.
 
 ## <a name="scenario"></a>Cenário
- Nesse cenário, você escreveu uma simulação de dinâmica de fluidos que usa DirectCompute para executar as partes de computação mais intensa da atualização de simulação. Quando o aplicativo é executado, o processamento do conjunto de dados e da interface do usuário estiverem corretas, mas a simulação não se comportar conforme o esperado. Usando o diagnóstico de gráficos, você pode capturar o problema para um log de gráficos para que você possa depurar o aplicativo. O problema se parece com isso no aplicativo:
+ Nesse cenário, você escreveu uma simulação de fluidos que usa o DirectCompute para executar as partes mais computadas da atualização de simulação. Quando o aplicativo é executado, a renderização do conjunto de aplicativos e da interface do usuário parece correta, mas a simulação não se comporta conforme o esperado. Usando Diagnóstico de Gráficos, você pode capturar o problema para um log de gráficos para que você possa depurar o aplicativo. O problema tem esta aparência no aplicativo:
 
- ![O fluido simulado se comportar incorretamente. ](media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")
+ ![O fluido simulado se comporta incorretamente.](media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")
 
- Para obter informações sobre como capturar problemas de gráficos no log de gráficos, consulte [capturando informações de gráficos](capturing-graphics-information.md).
+ Para obter informações sobre como capturar problemas gráficos em um log de gráficos, consulte [capturando informações de gráficos](capturing-graphics-information.md).
 
 ## <a name="investigation"></a>Investigação
- Você pode usar as ferramentas de diagnóstico de gráficos para carregar o arquivo de log de gráficos para que você possa inspecionar os quadros capturados.
+ Você pode usar as ferramentas de Diagnóstico de Gráficos para carregar o arquivo de log de gráficos para que você possa inspecionar os quadros capturados.
 
-#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar um quadro no log de gráficos
+#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar um quadro em um log de gráficos
 
-1. No Visual Studio, carregue um log de gráficos que contém um quadro que exibe os resultados da simulação incorretos. Uma nova guia de diagnóstico de gráficos aparece no Visual Studio. Na parte superior dessa guia é a saída de destino de renderização do quadro selecionado. Na parte inferior é parte do **lista de quadros**, que exibe uma miniatura de cada quadro capturado.
+1. No Visual Studio, carregue um log de gráficos que contém um quadro que exibe os resultados de simulação incorretos. Uma nova guia Diagnóstico de Gráficos aparece no Visual Studio. Na parte superior dessa guia está a saída de destino de renderização do quadro selecionado. Na parte inferior está a **lista de quadros**, que exibe uma miniatura de cada quadro capturado.
 
-2. No **lista de quadros**, selecione um quadro que demonstra o comportamento de simulação incorretos. Mesmo que o erro parece estar em código de simulação e não o código de renderização, você precisa escolher um quadro porque os eventos de DirectCompute são capturados em uma base quadro a quadro, juntamente com eventos do Direct3D. Nesse cenário, os gráficos de log guia semelhante ao seguinte:
+2. Na **lista de quadros**, selecione um quadro que demonstre o comportamento de simulação incorreto. Embora o erro pareça estar no código de simulação e não no código de renderização, você ainda precisa escolher um quadro porque os eventos DirectCompute são capturados de quadro por quadro, juntamente com os eventos do Direct3D. Nesse cenário, a guia log de gráficos tem esta aparência:
 
-    ![Documento de log de gráficos no Visual Studio. ](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")
+    ![O documento de log de gráficos no Visual Studio.](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")
 
-   Depois de selecionar um quadro que demonstra o problema, você pode usar o **lista de eventos gráficos** para diagnosticá-lo. O **lista de eventos gráficos** contém um evento para cada chamada de DirectCompute e a chamada à API do Direct3D que foi feita durante o quadro ativo — por exemplo, chamadas de API para executar uma computação na GPU, ou para processar o conjunto de dados ou a interface do usuário. Nesse caso, estamos interessados em `Dispatch` eventos que representam partes da simulação que são executados na GPU.
+   Depois de selecionar um quadro que demonstre o problema, você pode usar a **lista de eventos de gráficos** para diagnosticar. A **lista de eventos de gráficos** contém um evento para cada chamada de DirectCompute e chamada de API de Direct3D que foi feita durante o quadro ativo — por exemplo, chamadas à API para executar uma computação na GPU ou para renderizar o conjunto de imagem ou a interface do usuário. Nesse caso, estamos interessados em `Dispatch` eventos que representam partes da simulação que são executadas na GPU.
 
-#### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Para localizar o evento de distribuição da atualização de simulação
+#### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Para localizar o evento de expedição para a atualização de simulação
 
-1. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **lista de eventos** para abrir o **lista de eventos gráficos** janela.
+1. Na barra de ferramentas **diagnóstico de gráficos** , escolha **lista de eventos** para abrir a janela lista de eventos de **gráficos** .
 
-2. Inspecione o **lista de eventos gráficos** para o evento de desenho que renderiza o conjunto de dados. Para facilitar essa tarefa, digite `Draw` no **pesquisa** caixa no canto superior direito dos **lista de eventos gráficos** janela. Isso filtra a lista para que ele contenha somente os eventos que possuam "Desenho" em seus títulos. Nesse cenário, você descobre que esses eventos de desenho ocorreram:
+2. Inspecione a **lista de eventos de gráficos** para o evento de desenho que renderiza o conjunto de recursos. Para facilitar isso, insira `Draw` na caixa de **pesquisa** no canto superior direito da janela da lista de **eventos de gráficos** . Isso filtra a lista para que ela contenha apenas eventos que tenham "empate" em seus títulos. Nesse cenário, você descobre que esses eventos de desenho ocorreram:
 
-    ![A lista de eventos &#40;EL&#41; mostra eventos de desenho. ](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
+    ![A lista de eventos &#40;EL&#41; mostra os eventos de desenho.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
 
-3. Percorrer cada evento de desenho enquanto assiste o destino de renderização na guia de documento de log de gráficos.
+3. Percorra cada evento de desenho enquanto observa o destino de renderização na guia documento de log de gráficos.
 
-4. Pare quando o destino de renderização exibe o dataset processado primeiro. Nesse cenário, o conjunto de dados é renderizado no primeiro evento de desenho. O erro na simulação é mostrado:
+4. Parar quando o destino de renderização exibir primeiro o conjunto de os renderizados. Nesse cenário, o conjunto de eventos é renderizado no primeiro evento de desenho. O erro na simulação é mostrado:
 
-    ![Isso desenhar evento processa o conjunto de dados de simulação. ](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
+    ![Esse evento de desenho renderiza o conjunto de dados de simulação.](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
 
-5. Inspecione agora a **lista de eventos gráficos** para o `Dispatch` eventos que atualiza a simulação. Porque é provável que a simulação é atualizada para que ele seja processado, você pode concentrar-se primeiro `Dispatch` eventos que ocorrem antes do evento de desenho que renderiza os resultados. Para facilitar essa tarefa, modifique a **pesquisa** caixa para ler `Draw;Dispatch;CSSetShader(`. Isso filtra a lista para que ele também contém `Dispatch` e `CSSetShader` eventos além dos eventos de desenho. Nesse cenário, você descobre que vários `Dispatch` eventos ocorridos antes do evento de desenho:
+5. Agora, inspecione a **lista de eventos de gráficos** para o `Dispatch` evento que atualiza a simulação. Como é provável que a simulação seja atualizada antes de ser renderizada, você pode se concentrar primeiro nos `Dispatch` eventos que ocorrem antes do evento de desenho que renderiza os resultados. Para facilitar, modifique a caixa de **pesquisa** para leitura `Draw;Dispatch;CSSetShader(` . Isso filtra a lista para que ela também contenha `Dispatch` eventos e, `CSSetShader` além de desenhar eventos. Nesse cenário, você descobre que vários `Dispatch` eventos ocorreram antes do evento de empate:
 
-    ![Mostra o EL eventos de desenho, expedição e CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
+    ![O EL mostra os eventos Draw, expedição e CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
 
-   Agora que você sabe que provavelmente alguns de muitos `Dispatch` eventos poderiam corresponder ao problema, você pode examiná-los mais detalhadamente.
+   Agora que você sabe quais poucos eventos possivelmente muitos `Dispatch` podem corresponder ao problema, você pode examiná-los mais detalhadamente.
 
-#### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Para determinar a qual uma chamada de expedição do sombreador de cálculo é executado.
+#### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Para determinar qual sombreador de computação é executado por uma chamada de expedição
 
-1. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **pilha de chamadas do evento** para abrir o **pilha de chamadas do evento de gráficos** janela.
+1. Na barra de ferramentas **diagnóstico de gráficos** , escolha **pilha de chamadas de evento** para abrir a janela de pilha de chamadas de evento de **gráficos** .
 
-2. A partir do evento de desenho que renderiza os resultados da simulação, retroceder cada anterior `CSSetShader` eventos. Em seguida, nos **pilha de chamadas do evento de gráficos** janela, escolha a função principal para navegar até o site de chamada. No site de chamada, você pode usar o primeiro parâmetro do [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) chamada de função para determinar qual computador sombreador é executado pelo próximo `Dispatch` eventos.
+2. A partir do evento de desenho que renderiza os resultados da simulação, mova-se para trás por cada `CSSetShader` evento anterior. Em seguida, na janela **pilha de chamadas de evento de gráficos** , escolha a função mais alta para navegar até o site de chamada. No site de chamada, você pode usar o primeiro parâmetro da chamada de função [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) para determinar qual sombreador de computação é executado pelo próximo `Dispatch` evento.
 
-   Nesse cenário, há três pares de `CSSetShader` e `Dispatch` eventos em cada quadro. Trabalhando com versões anteriores, a terceiro par representa a integração de etapa (onde as partículas fluidas são movidas realmente), o segundo par representa a etapa de cálculo por força (onde as forças que afetam cada partícula são calculadas) e o primeiro par representa o etapa de cálculo por densidade.
+   Nesse cenário, há três pares de `CSSetShader` `Dispatch` eventos e em cada quadro. Trabalhando retroativamente, o terceiro par representa a etapa de integração (onde as partículas de fluidos são realmente movidas), o segundo par representa a etapa de cálculo de força (em que as forças que afetam cada partícula são calculadas) e o primeiro par representa a etapa de cálculo de densidade.
 
-#### <a name="to-debug-the-compute-shader"></a>Para depurar o sombreador de cálculo
+#### <a name="to-debug-the-compute-shader"></a>Para depurar o sombreador de computação
 
-1. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **estágios de Pipeline** para abrir o **estágios de Pipeline gráficos** janela.
+1. Na barra de ferramentas **diagnóstico de gráficos** , escolha **estágios de pipeline** para abrir a janela estágios de pipeline de **gráficos** .
 
-2. Selecione o terceiro `Dispatch` evento (aquele que precede imediatamente o evento de desenho) e, em seguida, no **estágios de Pipeline gráficos** janela, sob o **sombreador de cálculo** estágio, escolha  **Iniciar a depuração**.
+2. Selecione o terceiro `Dispatch` evento (aquele que precede imediatamente o evento de desenho) e, na janela estágios de **pipeline de gráficos** , no estágio do **sombreador de computação** , escolha **Iniciar Depuração**.
 
     ![Selecionando o terceiro evento de expedição no EL.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")
 
-    O depurador de HLSL é iniciado no sombreador que executa a etapa de integração.
+    O depurador HLSL é iniciado no sombreador que executa a etapa de integração.
 
-3. Examine o código-fonte do sombreador de cálculo a etapa de integração pesquisar a origem do erro. Quando você usa o diagnóstico de gráficos para depurar o código de sombreador de cálculo do HLSL, você pode percorrer o código e usar outras ferramentas de depuração familiares, como janelas de inspeção. Nesse cenário, você determinar que não parece haver um erro no computador sombreador que executa a etapa de integração.
+3. Examine o código-fonte do sombreador de computação para a etapa de integração para pesquisar a origem do erro. Ao usar Diagnóstico de Gráficos para depurar o código do sombreador de computação HLSL, você pode percorrer o código e usar outras ferramentas de depuração conhecidas, como as janelas de inspeção. Nesse cenário, você determina que não parece haver um erro no sombreador de computação que executa a etapa de integração.
 
-    ![Depurar o sombreador de cálculo IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
+    ![Depurando o sombreador de computação IntegrateCS.](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift+F5).
+4. Para parar a depuração do sombreador de computação, na barra de ferramentas **depurar** , escolha **parar depuração** (teclado: Shift + F5).
 
-5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de cálculo, exatamente como você fez na etapa anterior.
+5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de computação da mesma forma que fazia na etapa anterior.
 
-    ![Selecionar o segundo evento de expedição no EL.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")
+    ![Selecionando o segundo evento de expedição no EL.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")
 
-    O depurador de HLSL é iniciado no sombreador que calcula os pontos que atuam em cada partícula fluida.
+    O depurador HLSL é iniciado no sombreador que calcula as forças que agem em cada partícula fluida.
 
-6. Examine o código de origem do sombreador de computação para a etapa de cálculo por força. Nesse cenário, você determinar que a origem do erro está aqui.
+6. Examine o código-fonte do sombreador de computação para a etapa de cálculo forçado. Nesse cenário, você determina que a origem do erro está aqui.
 
-    ![Depurando o ForceCS&#95;sombreador de cálculo simples. ](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
+    ![Depurando o ForceCS&#95;sombreador de computação simples.](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
 
-   Depois de determinar o local do erro, você pode parar a depuração e modificar o código de origem do sombreador de cálculo para calcular corretamente a distância entre as partículas em interação. Nesse cenário, você altera apenas a linha `float2 diff = N_position + P_position;` para `float2 diff = N_position - P_position;`:
+   Depois de determinar o local do erro, você pode parar a depuração e modificar o código-fonte do sombreador de computação para calcular corretamente a distância entre as partículas de interação. Nesse cenário, basta alterar a linha `float2 diff = N_position + P_position;` para `float2 diff = N_position - P_position;` :
 
-   ![A computação corrigida&#45;código de sombreador. ](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
+   ![A computação corrigida&#45;código do sombreador.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
 
-   Nesse cenário, porque os computadores sombreadores são compilados em tempo de execução, você pode simplesmente reiniciar o aplicativo depois de fazer as alterações para observar como eles afetam a simulação. Você não precisa recompilar o aplicativo. Quando você executa o aplicativo, você descobre que a simulação agora se comporta corretamente.
+   Nesse cenário, como os sombreadores de computação são compilados em tempo de execução, você pode apenas reiniciar o aplicativo depois de fazer as alterações para observar como eles afetam a simulação. Você não precisa recompilar o aplicativo. Ao executar o aplicativo, você descobre que a simulação agora se comporta corretamente.
 
-   ![O fluido simulado se comporta corretamente. ](media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
+   ![O fluido simulado comporta-se corretamente.](media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")

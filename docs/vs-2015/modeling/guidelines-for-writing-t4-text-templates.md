@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d1e15a8c00a0614d020defd2df7b06665289a8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666059"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essas diretrizes gerais podem ser úteis se você estiver gerando código de programa ou outros recursos de aplicativo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Elas não são regras fixas.
+Essas diretrizes gerais podem ser úteis se você estiver gerando código de programa ou outros recursos de aplicativo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Elas não são regras fixas.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Diretrizes para modelos T4 de tempo de design
  Modelos T4 de tempo de design são modelos que geram código em seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto em tempo de design. Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -28,7 +28,7 @@ Essas diretrizes gerais podem ser úteis se você estiver gerando código de pro
 A geração de código é mais útil para os aspectos do aplicativo que podem ser alterados durante o projeto ou que serão alterados entre versões diferentes do aplicativo. Separe esses aspectos variáveis dos aspectos mais invariáveis para que você possa determinar com mais facilidade o que precisa ser gerado. Por exemplo, se seu aplicativo fornecer um site da Web, separe a página padrão que atende às funções da lógica que define os caminhos de navegação de uma página para outra.
 
  Codifique os aspectos variáveis em um ou mais modelos de origem.
-Um modelo é um arquivo ou banco de dados que cada modelo lê para obter valores específicos para partes variáveis do código que deve ser gerado. Os modelos podem ser bancos de dados, arquivos XML de seu próprio design, diagramas ou linguagens específicas de domínio. Normalmente, um modelo é usado para gerar muitos arquivos em um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cada arquivo é gerado a partir de um modelo separado.
+Um modelo é um arquivo ou banco de dados que cada modelo lê para obter valores específicos para partes variáveis do código que deve ser gerado. Os modelos podem ser bancos de dados, arquivos XML de seu próprio design, diagramas ou linguagens específicas de domínio. Normalmente, um modelo é usado para gerar muitos arquivos em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. Cada arquivo é gerado a partir de um modelo separado.
 
  Você pode usar mais de um modelo em um projeto. Por exemplo, você pode definir um modelo para navegação entre páginas da Web e um modelo separado para o layout das páginas.
 
@@ -43,22 +43,22 @@ Use testes manuais ou automatizados para verificar se o código resultante funci
  Em alguns casos, os testes gerais podem ser executados diretamente no modelo. Por exemplo, você poderia escrever um teste que garanta que cada página no site pode ser acessada pela navegação de qualquer outro.
 
  Permitir código personalizado: gerar classes parciais.
-Permita o código que você escreve manualmente, além do código gerado. É incomum que um esquema de geração de código seja capaz de considerar todas as variações possíveis que possam surgir. Portanto, você deve esperar adicionar ou substituir parte do código gerado. Onde o material gerado está em uma linguagem .NET, como [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], duas estratégias são especialmente úteis:
+Permita o código que você escreve manualmente, além do código gerado. É incomum que um esquema de geração de código seja capaz de considerar todas as variações possíveis que possam surgir. Portanto, você deve esperar adicionar ou substituir parte do código gerado. Onde o material gerado está em uma linguagem .NET, como [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , duas estratégias são especialmente úteis:
 
 - As classes geradas devem ser parciais. Isso permite que você adicione conteúdo ao código gerado.
 
 - As classes devem ser geradas em pares, uma herdada da outra. A classe base deve conter todos os métodos e propriedades gerados, e a classe derivada deve conter apenas os construtores. Isso permite que o código escrito manualmente substitua qualquer um dos métodos gerados.
 
-  Em outras linguagens geradas como XML, use a diretiva `<#@include#>` para fazer combinações simples de conteúdo escrito manualmente e gerado. Em casos mais complexos, talvez seja necessário escrever uma etapa de pós-processamento que combine o arquivo gerado com arquivos escritos manualmente.
+  Em outras linguagens geradas, como XML, use a `<#@include#>` diretiva para fazer combinações simples de conteúdo escrito manualmente e gerado. Em casos mais complexos, talvez seja necessário escrever uma etapa de pós-processamento que combine o arquivo gerado com arquivos escritos manualmente.
 
-  Mova o material comum para arquivos de inclusão ou modelos de tempo de execução para evitar a repetição de blocos semelhantes de texto e código em vários modelos, use a diretiva `<#@ include #>`. Para obter mais informações, consulte [diretiva de inclusão T4](../modeling/t4-include-directive.md).
+  Mova o material comum para arquivos de inclusão ou modelos de tempo de execução para evitar a repetição de blocos semelhantes de texto e código em vários modelos, use a `<#@ include #>` diretiva. Para obter mais informações, consulte [diretiva de inclusão T4](../modeling/t4-include-directive.md).
 
-  Você também pode criar modelos de texto em tempo de execução em um projeto separado e, em seguida, chamá-los do modelo de tempo de design. Para fazer isso, use a diretiva `<#@ assembly #>` para acessar o projeto separado.
+  Você também pode criar modelos de texto em tempo de execução em um projeto separado e, em seguida, chamá-los do modelo de tempo de design. Para fazer isso, use a `<#@ assembly #>` diretiva para acessar o projeto separado.
 
   Considere mover grandes blocos de código para um assembly separado.
-  Se você tiver grandes blocos de código e blocos de recursos de classe, poderá ser útil mover alguns desses códigos para métodos que você compilar em um projeto separado. Você pode usar a diretiva `<#@ assembly #>` para acessar o código no modelo. Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
+  Se você tiver grandes blocos de código e blocos de recursos de classe, poderá ser útil mover alguns desses códigos para métodos que você compilar em um projeto separado. Você pode usar a `<#@ assembly #>` diretiva para acessar o código no modelo. Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
 
-  Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
+  Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
 
   Gerar código, não arquivos de configuração um método de escrever um aplicativo variável é escrever um código de programa genérico que aceite um arquivo de configuração. Um aplicativo escrito dessa maneira é muito flexível e pode ser reconfigurado quando os requisitos de negócios mudam, sem recompilar o aplicativo. No entanto, uma desvantagem dessa abordagem é que o aplicativo será executado menos bem do que um aplicativo mais específico. Além disso, o código do programa será mais difícil de ler e manter, parcialmente porque ele sempre lida com os tipos mais genéricos.
 
@@ -100,7 +100,7 @@ Cada modelo de tempo de execução gera uma definição de classe parcial que te
 
  `private string ComputeTotal() { ... }`
 
- Permitir código personalizado: fornecer pontos de extensão considere a geração de métodos virtuais em \< # + blocos de recursos de classe # >. Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
+ Permitir código personalizado: forneça pontos de extensão considere a possibilidade de gerar métodos virtuais no \<#+ class feature blocks #> . Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
 
  Por exemplo, em MyStandardRunTimeTemplate.tt:
 
@@ -122,9 +122,9 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Diretrizes para todos os modelos T4
- A coleta de dados separada da geração de texto tenta evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \< # Code Block # > para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \< # + classe do bloco de recursos # >, evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
+ A coleta de dados separada da geração de texto tenta evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \<# code block #> para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \<#+ class feature block #> , evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
 
- Não use `.tt` para arquivos de inclusão use uma extensão de nome de arquivo diferente, como `.ttinclude` para arquivos de inclusão. Use `.tt` apenas para arquivos que você deseja que sejam processados como modelos de texto em tempo de execução ou de design. Em alguns casos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reconhece `.tt` arquivos e define automaticamente suas propriedades para processamento.
+ Não use `.tt` para arquivos de inclusão use uma extensão de nome de arquivo diferente, como `.ttinclude` para arquivos de inclusão. Use `.tt` somente para arquivos que você deseja que sejam processados como modelos de texto de tempo de execução ou de tempo de design. Em alguns casos, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reconhece `.tt` arquivos e define automaticamente suas propriedades para processamento.
 
  Inicie cada modelo como um protótipo fixo.
 Escreva um exemplo do código ou do texto que você deseja gerar e verifique se ele está correto. Em seguida, altere sua extensão para. tt e insira incrementalmente o código que modifica o conteúdo lendo o modelo.
@@ -147,5 +147,5 @@ Muitos modelos são apresentados mais efetivamente e gerenciados simplesmente co
 
  A classe UML e os diagramas de atividade geralmente podem ser adaptados para essas finalidades. Você também pode criar seu próprio tipo de diagrama como uma DSL (linguagem específica de domínio). O código pode ser gerado de UML e DSLs. Para obter mais informações, consulte [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md) e [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Geração de código em tempo de design usando](../modeling/design-time-code-generation-by-using-t4-text-templates.md) a [geração de texto em tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md) de modelos de texto T4 com modelos de texto T4

@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816417"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visão geral das ferramentas XML no Visual Studio
@@ -72,7 +72,7 @@ O Visual Studio dá suporte à [depuração de folhas de estilo XSLT](../xml-too
 > [!NOTE]
 > O depurador XSLT só está disponível na edição Enterprise do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Xml?displayProperty=fullName>
 - [Transformações XSLT](/dotnet/standard/data/xml/xslt-transformations)

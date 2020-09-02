@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Não é possível iniciar a comunicação DCOM | Microsoft Docs'
+title: 'Erro: não é possível iniciar a comunicação DCOM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fff1c56915fe4a06d66bdb08ce60219642933b1b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682526"
 ---
-# <a name="error-unable-to-initiate-dcom-communication"></a>Erro: Não é possível iniciar a comunicação DCOM
+# <a name="error-unable-to-initiate-dcom-communication"></a>Erro: não é possível iniciar a comunicação DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um erro DCOM ocorreu quando o computador local tentou se comunicar com o computador remoto. Isso é causado por um firewall no servidor remoto ou por autenticação do Windows quebrada no computador remoto.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Se o computador remoto tiver o Firewall do Windows habilitado, consulte [definir configurar as ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
+- Se o computador remoto tiver o Firewall do Windows habilitado, consulte [Configurar o ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
   
 - Para restaurar a autenticação do Windows, tente reiniciar os dois computadores. Examine os logs de eventos nos computadores local e remoto para encontrar erros de Kerberos e entre em contato com os administradores de domínio para problemas conhecidos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Depuração remota](../debugger/remote-debugging.md)

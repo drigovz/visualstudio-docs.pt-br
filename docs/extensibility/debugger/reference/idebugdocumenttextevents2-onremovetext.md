@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2:onRemoveText | Microsoft Docs
+title: 'IDebugDocumentTextEvents2:: onRemoveText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731420"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
@@ -41,15 +41,15 @@ int onRemoveText( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pos`\
-[em] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica onde o texto foi removido.
+no Uma estrutura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica onde o texto foi removido.
 
 `dwNumToRemove`\
-[em] Especifica o número de caracteres do texto que foram removidos.
+no Especifica o número de caracteres de texto que foram removidos.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

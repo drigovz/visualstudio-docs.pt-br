@@ -1,5 +1,5 @@
 ---
-title: Não é possível criar um nome de associação &lt;association &gt; os tipos de propriedade não coincidem | Microsoft Docs
+title: Não é possível criar um &lt; nome &gt; de associação de associação-os tipos de propriedade não coincidem | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c93221710f8adc2421f902f27fdb96d957c9cd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651148"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Não é possível criar uma associação &lt;nome da associação&gt; – os tipos de propriedade não correspondem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Não é possível criar uma associação \<nome da associação> – os tipos de propriedade não correspondem. As propriedades não têm tipos compatíveis: \<nomes de propriedade>.
+Não é possível criar \<association name> tipos de propriedade de associação que não correspondem. As propriedades não têm tipos correspondentes: \<property names> .
 
  Associações são definidas pelas **Propriedades de Associação**, selecionadas na caixa de diálogo **Editor de Associação**. As propriedades em cada lado de associação devem ser do mesmo tipo de dados.
 
@@ -35,5 +35,5 @@ Não é possível criar uma associação \<nome da associação> – os tipos de
 
 4. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: criar uma associação (relação) entre as classes de LINQ to SQL (o/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) [Walkthrough: criando classes de LINQ to SQL (o-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

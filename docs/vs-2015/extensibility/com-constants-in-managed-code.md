@@ -1,5 +1,5 @@
 ---
-title: Constantes de COM em código gerenciado | Microsoft Docs
+title: Constantes COM em código gerenciado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184440"
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes COM no código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Framework de pacote gerenciado (MPF) faz com que algumas constantes COM padrão disponível para código gerenciado. Essas constantes são listadas abaixo para referência.  
+A MPF (estrutura de pacote gerenciada) torna algumas constantes COM padrão disponíveis para o código gerenciado. Essas constantes estão listadas abaixo para sua referência.  
   
-## <a name="boolean-hresult-values"></a>Valores HRESULT booliano  
+## <a name="boolean-hresult-values"></a>Valores de HRESULT boolianos  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -52,7 +52,7 @@ O Framework de pacote gerenciado (MPF) faz com que algumas constantes COM padrã
   
  <xref:Microsoft.VisualStudio.VSConstants.UNDO_E_CLIENTABORT>  
   
-## <a name="ole-errors"></a>Erros OLE  
+## <a name="ole-errors"></a>Erros de OLE  
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVF>  
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVISENOTSUPPORTED>  
@@ -91,7 +91,7 @@ O Framework de pacote gerenciado (MPF) faz com que algumas constantes COM padrã
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## <a name="ole-dispatch-errors"></a>Erros de expedição OLE  
+## <a name="ole-dispatch-errors"></a>Erros de expedição de OLE  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -128,5 +128,5 @@ O Framework de pacote gerenciado (MPF) faz com que algumas constantes COM padrã
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Tratamento de erros e valores de retorno](../extensibility/error-handling-and-return-values.md)

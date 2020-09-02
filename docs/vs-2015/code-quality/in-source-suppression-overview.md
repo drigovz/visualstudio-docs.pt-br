@@ -13,26 +13,26 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651568"
 ---
 # <a name="in-source-suppression-overview"></a>Visão geral de supressão na origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A supressão na origem é a capacidade de suprimir ou ignorar violações de análise de código em código gerenciado adicionando o atributo **SuppressMessage** aos segmentos de código que causam as violações. O atributo **SuppressMessage** é um atributo condicional que é incluído nos metadados de Il do assembly de código gerenciado somente se o símbolo de compilação CODE_ANALYSIS for definido no momento da compilação.
+A supressão na origem é a capacidade de suprimir ou ignorar violações de análise de código em código gerenciado adicionando o atributo **SuppressMessage** aos segmentos de código que causam as violações. O atributo **SuppressMessage** é um atributo condicional que é incluído nos metadados de Il do assembly de código gerenciado somente se o símbolo de compilação de CODE_ANALYSIS for definido no momento da compilação.
 
- Na C++/CLI, use as macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE no arquivo de cabeçalho para adicionar o atributo.
+ Em C++/CLI, use as macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE no arquivo de cabeçalho para adicionar o atributo.
 
  Você não deve usar supressões na origem em builds de versão para evitar o envio acidental dos metadados de supressão na origem. Devido ao custo de processamento da supressão na origem, o desempenho do seu aplicativo também pode ser degradado incluindo os metadados de supressão na origem.
 
 > [!NOTE]
-> Você não precisa codificar manualmente esses atributos. Para obter mais informações, consulte [como: suprimir avisos usando o item de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). O item de menu não está disponível C++ para o código.
+> Você não precisa codificar manualmente esses atributos. Para obter mais informações, consulte [como: suprimir avisos usando o item de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). O item de menu não está disponível para o código C++.
 
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage
- Quando você clica com o botão direito do mouse em um aviso de análise de código na **lista de erros** e clica em **suprimir mensagem (ns)** , um atributo **SuppressMessage** é adicionado no código ou no arquivo de supressões global do projeto.
+ Quando você clica com o botão direito do mouse em um aviso de análise de código na **lista de erros** e clica em **suprimir mensagem (ns)**, um atributo **SuppressMessage** é adicionado no código ou no arquivo de supressões global do projeto.
 
  O atributo **SuppressMessage** tem o seguinte formato:
 
@@ -66,11 +66,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - Módulo
 
-  - espaço de nome
+  - Namespace
 
   - Recurso
 
-  - Digite
+  - Tipo
 
   - Membro
 
@@ -123,5 +123,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>Arquivo de supressão global
  O arquivo de supressão global mantém supressões que são supressões de nível global ou supressões que não especificam um destino. Por exemplo, as supressões para violações de nível de assembly são armazenadas nesse arquivo. Além disso, algumas supressões ASP.NET são armazenadas nesse arquivo porque as configurações de nível de projeto não estão disponíveis para o código por trás de um formulário. Uma supressão global é criada e adicionada ao projeto na primeira vez que você seleciona a opção **no arquivo de supressão do projeto** do comando **suprimir mensagem (s)** na janela lista de erros. Para obter mais informações, consulte [como: suprimir avisos usando o item de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  <xref:System.Diagnostics.CodeAnalysis>

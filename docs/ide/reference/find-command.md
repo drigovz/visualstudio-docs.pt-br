@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595638"
 ---
 # <a name="find-command"></a>Comando Localizar
@@ -33,7 +33,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="arguments"></a>Argumentos
 `findwhat` Necessário. O texto a ser correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /case ou /c\
 Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
@@ -79,7 +79,7 @@ Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para
 
 ## <a name="see-also"></a>Confira também
 
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento combo | Microsoft Docs
+title: Elemento de combinação | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184407"
 ---
 # <a name="combo-element"></a>Elemento Combo
@@ -23,7 +23,7 @@ ms.locfileid: "68184407"
 
 Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos de caixas de combinação, da seguinte maneira: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">  
@@ -40,28 +40,28 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador de comando/ID de GUID.|  
-|id|Necessário. ID do identificador de comando/ID de GUID.|  
-|defaultWidth|Necessário. Um inteiro que especifica uma largura de pixel para a caixa de combinação.|  
-|idCommandList|Necessário. Uma ID que é enviada para o destino de comando do Active Directory para recuperar a lista de itens a serem exibidos na caixa de combinação. A ID será no mesmo escopo GUID como o controle.|  
+|guid|Obrigatórios. GUID do identificador de comando GUID/ID.|  
+|id|Obrigatórios. ID do identificador de comando de GUID/ID.|  
+|defaultwidth|Obrigatórios. Um inteiro que especifica uma largura de pixel para a caixa de combinação.|  
+|idCommandList|Obrigatórios. Uma ID que é enviada ao destino comando ativo para recuperar a lista de itens a serem exibidos na caixa de combinação. A ID estará no mesmo escopo do GUID que o controle.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
-|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não for especificado, usa o botão.<br /><br /> DropDownCombo<br /> O VSPackage é responsável por preencher o conteúdo desta caixa de combinação. O usuário não é possível digitar qualquer coisa na caixa de texto nesta lista suspensa.<br /><br /> DynamicCombo<br /> O VSPackage é responsável por preencher o conteúdo dessa caixa de combinação. O usuário pode editar essa combinação e também selecionar itens nele.<br /><br /> IndexCombo<br /> O mesmo que DynamicCombo, exceto que ele gera o índice do item em vez de seu texto.<br /><br /> MRUCombo<br /> Preenchido pelo ambiente de desenvolvimento integrado (IDE) em nome de VSPackage.  O usuário pode editar nessa caixa de combinação. O IDE relembra até as últimas 16 entradas por caixa de combinação.<br /><br /> Quando o usuário seleciona algo na caixa de combinação ou digita algo novo, o IDE notifica o VSPackage apropriado.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não for fornecido, o usará o botão.<br /><br /> DropDownCombo<br /> O VSPackage é responsável por preencher o conteúdo dessa caixa de combinação. O usuário não pode digitar nada na caixa de texto dessa lista suspensa.<br /><br /> DynamicCombo<br /> O VSPackage é responsável por preencher o conteúdo dessa caixa de combinação. O usuário pode editar essa combinação e também selecionar itens nela.<br /><br /> IndexCombo<br /> O mesmo que DynamicCombo, exceto pelo fato de que ele gera o índice do item em vez de seu texto.<br /><br /> MRUCombo<br /> Preenchido pelo IDE (ambiente de desenvolvimento integrado) em nome do VSPackage.  O usuário pode editar nessa caixa de combinação. O IDE se lembra das últimas 16 entradas por caixa de combinação.<br /><br /> Quando o usuário seleciona algo na caixa de combinação ou insere algo novo, o IDE notifica o VSPackage apropriado.|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |Pai|Opcional. O elemento pai do botão.|  
-|CommandFlag|Necessário. Ver [comando sinalizador elemento](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um botão serão o seguinte.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -As teclas de filtragem<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Cadeias de caracteres|Necessário. Ver [cadeias de caracteres de elemento](../extensibility/strings-element.md). Elemento ButtonText filho deve ser definido.|  
+|CommandFlag|Obrigatórios. Consulte o [elemento flag de comando](../extensibility/command-flag-element.md). Os valores de CommandFlag válidos para um botão são os seguintes.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -Defaultdesabilitoud<br /><br /> -Invisible<br /><br /> - DynamicVisibility<br /><br /> -Teclas de filtragem<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> -Nopersonalizar<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|  
+|Cadeias de caracteres|Obrigatórios. Consulte [elemento Strings](../extensibility/strings-element.md). O elemento ButtonText filho deve ser definido.|  
 |Anotação|Comentário opcional.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas do VSPackage.|  
+|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -85,5 +85,5 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
 </Combo>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

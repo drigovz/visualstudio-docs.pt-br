@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um manifesto de pacote | Microsoft Docs'
+title: 'Como: criar um manifesto de pacote | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,18 +20,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153830"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Como: Criar um manifesto de pacote
+# <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. Funcionalidade compartilhada entre diferentes versões localizadas deve ir para o manifesto do produto.  
+Para implantar os pré-requisitos para seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um único arquivo de manifesto de produto, mas um manifesto de pacote para cada localidade. A funcionalidade compartilhada entre diferentes versões localizadas deve entrar no manifesto do produto.  
   
- Para obter mais informações sobre manifestos de pacote, consulte [como: Criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obter mais informações sobre manifestos de pacote, consulte [como criar um manifesto do produto](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Criando o manifesto do pacote  
   
@@ -41,9 +41,9 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
   
 2. Crie um subdiretório com o nome da localidade, como en para inglês.  
   
-3. No Visual Studio, crie um arquivo XML que é denominado `package.xml`e salve-o para a pasta C:\package\en.  
+3. No Visual Studio, crie um arquivo XML chamado `package.xml` e salve-o na pasta C:\package\en  
   
-4. Adicione o XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture`, que é definido em um elemento posterior.  
+4. Adicione XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture` , que são definidas em um elemento posterior.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
         LicenseAgreement="eula.txt">  
     ```  
   
-5. Adicione o XML para listar todos os arquivos que estão no diretório específica de localidade. O XML a seguir usa um arquivo chamado EULA é aplicável para o **en** localidade.  
+5. Adicione XML para listar todos os arquivos que estão no diretório específico da localidade. O XML a seguir usa um arquivo chamado eula.txt que é aplicável para a localidade **en** .  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
     </PackageFiles>  
     ```  
   
-6. Adicione o XML para definir as cadeias de caracteres localizáveis para o pacote de bootstrapper. O XML a seguir adiciona cadeias de caracteres de erro para a localidade en.  
+6. Adicione XML para definir cadeias de caracteres localizáveis para o pacote de bootstrapper. O XML a seguir adiciona cadeias de caracteres de erro para a localidade en.  
   
     ```  
       <Strings>  
@@ -74,10 +74,10 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacot
     </Strings>  
     ```  
   
-7. Copie a pasta de C:\package para o diretório de bootstrapper do Visual Studio. Para Visual Studio 2010, isso é o diretório \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+7. Copie a pasta C:\package para o diretório do bootstrapper do Visual Studio. Para o Visual Studio 2010, esse é o diretório \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages  
   
 ## <a name="example"></a>Exemplo  
- O manifesto de pacote contém informações específicas de localidade, como mensagens de erro, termos de licença de software e pacotes de idiomas.  
+ O manifesto do pacote contém informações específicas de localidade, como mensagens de erro, termos de licença de software e pacotes de idiomas.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -101,5 +101,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

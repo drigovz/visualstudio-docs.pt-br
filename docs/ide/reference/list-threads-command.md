@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595482"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
@@ -46,9 +46,9 @@ Quando especificado, o argumento `index` marca o thread indicado como o thread a
 
 ## <a name="see-also"></a>Confira também
 
-- [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
-- [Comando Listar Desmontagem](../../ide/reference/list-disassembly-command.md)
+- [Comando listar pilha de chamadas](../../ide/reference/list-call-stack-command.md)
+- [Comando listar desmontagem](../../ide/reference/list-disassembly-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

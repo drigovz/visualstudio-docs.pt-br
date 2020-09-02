@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 000c3c4e2996869e96fd0d6097b5bab8576936a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651738"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Caixa de diálogo Configurações de Segurança Avançadas
@@ -30,9 +30,9 @@ ms.locfileid: "72651738"
 
 Essa caixa de diálogo permite especificar configurações de segurança relacionadas à depuração na zona.
 
- Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**. Na página **Segurança** página, selecione **Habilitar Configurações de Segurança do ClickOnce**, clique em **Este é um aplicativo de confiança parcial** e, em seguida, clique em **Avançado**.
+ Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de projeto** for exibido, clique na guia **segurança** . Na página **segurança** , selecione **Habilitar configurações de segurança do ClickOnce**, clique em **este é um aplicativo de confiança parcial**e, em seguida, clique em **avançado**.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Depurar esse aplicativo com o conjunto de permissões selecionado** Se você marcar essa caixa de seleção, o conjunto de permissões selecionado na página **Segurança** será usado durante a depuração. Por padrão, essa opção é selecionada.
 
  Para depurar em uma zona de segurança para trabalhar, essa opção deve ser habilitada; além disso, a opção **Habilitar o processo de hospedagem do Visual Studio** (disponível na página **Depurar** página do **Designer de Projeto**) deve ser habilitada.
@@ -43,5 +43,5 @@ Essa caixa de diálogo permite especificar configurações de segurança relacio
 
  **Depurar esse aplicativo como se ele tivesse sido baixado da URL a seguir** Se você precisar permitir que o aplicativo acesse o site ou o compartilhamento de servidor correspondente à **URL de instalação** especificada na página **Publicar**, digite essa URL aqui. Essa opção está disponível apenas quando **Conceder ao aplicativo acesso ao site de origem** está selecionado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Página Segurança, Designer de Projeto](../../ide/reference/security-page-project-designer.md)

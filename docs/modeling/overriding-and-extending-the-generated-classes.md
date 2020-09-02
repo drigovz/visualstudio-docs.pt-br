@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595885"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Substituir e estender as classes geradas
@@ -28,7 +28,7 @@ Vários mecanismos são fornecidos para permitir que você estenda o código ger
 
 As definições de classe parcial permitem que uma classe seja definida em mais de um lugar. Isso permite que você separe o código gerado do código que você escreve por conta própria. No código escrito manualmente, você pode substituir classes herdadas pelo código gerado.
 
-Por exemplo, se, em sua definição de DSL, você definir uma classe de domínio denominada `Book`, poderá escrever um código personalizado que adiciona métodos de substituição:
+Por exemplo, se em sua definição de DSL você definir uma classe de domínio chamada `Book` , poderá escrever um código personalizado que adiciona métodos de substituição:
 
 ```csharp
 public partial class Book
@@ -52,13 +52,13 @@ A maioria dos métodos em classes geradas é herdada de um conjunto fixo de clas
 
 No entanto, você pode substituir esses métodos definindo o sinalizador de **gerações derivadas duplas** para a classe de domínio. Isso faz com que duas classes sejam geradas, uma sendo uma classe base abstrata da outra. Todas as definições de método e Propriedade estão na classe base, e somente o Construtor está na classe derivada.
 
-Por exemplo, no exemplo de biblioteca. DSL, a classe de domínio `CirculationBook` tem a propriedade `Generates``Double Derived` definida como `true`. O código gerado para essa classe de domínio contém duas classes:
+Por exemplo, no exemplo de biblioteca. DSL, a `CirculationBook` classe de domínio tem a `Generates``Double Derived` propriedade definida como `true` . O código gerado para essa classe de domínio contém duas classes:
 
 - `CirculationBookBase`, que é um abstrato e que contém todos os métodos e propriedades.
 
-- `CirculationBook`, que é derivado de `CirculationBookBase`. Ele está vazio, exceto para seus construtores.
+- `CirculationBook`, que é derivado de `CirculationBookBase` . Ele está vazio, exceto para seus construtores.
 
-Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook`. Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.
+Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook` . Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.
 
 Você pode usar esse método com todos os tipos de elemento, incluindo elementos de modelo, relações, formas, diagramas e conectores. Você também pode substituir métodos de outras classes geradas. Algumas classes geradas, como ToolboxHelper, são sempre derivadas de duas vezes.
 
@@ -72,7 +72,7 @@ Escreva uma definição de classe parcial em um arquivo separado dos arquivos ge
 
 ### <a name="flagged-extension-points"></a>Pontos de extensão sinalizados
 
-Um ponto de extensão sinalizado é um local na definição de DSL, onde você pode definir uma propriedade ou uma caixa de seleção para indicar que fornecerá um método personalizado. Os construtores personalizados são um exemplo. Outros exemplos incluem a definição da `Kind` de uma propriedade de domínio para o armazenamento calculado ou personalizado ou a definição do sinalizador **é personalizado** em um construtor de conexões.
+Um ponto de extensão sinalizado é um local na definição de DSL, onde você pode definir uma propriedade ou uma caixa de seleção para indicar que fornecerá um método personalizado. Os construtores personalizados são um exemplo. Outros exemplos incluem a definição de `Kind` uma propriedade de domínio para armazenamento calculado ou personalizado ou a definição do sinalizador **é personalizado** em um construtor de conexões.
 
 Em cada caso, quando você define o sinalizador e gera novamente o código, ocorrerá um erro de compilação. Clique duas vezes no erro para ver um comentário que explica o que você precisa fornecer.
 
@@ -80,7 +80,7 @@ Em cada caso, quando você define o sinalizador e gera novamente o código, ocor
 
 O Gerenciador de transações permite que você defina regras que são executadas antes do final de uma transação na qual um evento designado ocorreu, como uma alteração em uma propriedade. Normalmente, as regras são usadas para manter sincronização entre elementos diferentes na loja. Por exemplo, as regras são usadas para garantir que o diagrama exiba o estado atual do modelo.
 
-As regras são definidas em uma base por classe, para que você não precise ter um código que registre a regra para cada objeto. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
+As regras são definidas em uma base por classe, para que você não precise ter um código que registre a regra para cada objeto. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Armazenar eventos
 

@@ -13,16 +13,16 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b036bd68aca126675f26b9823d2c786a0ae652
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675324"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface permite que a sessão de Gerenciador de depuração (SDM) notificar um processo que está anexando a ou desanexar do processo.  
+Essa interface permite que o SDM (Gerenciador de depuração de sessão) Notifique um processo que está sendo anexado ou desanexado do processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,38 +30,38 @@ Essa interface permite que a sessão de Gerenciador de depuração (SDM) notific
 IDebugProcessEx2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um fornecedor de porta personalizada implementa essa interface no mesmo objeto como o [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) de interface para:  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Um fornecedor de porta personalizado implementa essa interface no mesmo objeto que a interface [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) para:  
   
-- Suporte ao acompanhamento de sessões conectadas a um processo  
+- Controle de suporte de sessões conectadas a um processo  
   
-- Suporte a anexação automática entre vários mecanismos de depuração  
+- Suporte à anexação automática em vários mecanismos de depuração  
   
-  O fornecedor de porta personalizada pode implementar essa interface se optar por.  
+  O fornecedor da porta personalizada pode implementar essa interface se escolher.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
   
-- As chamadas SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em um `IDebugProcess2` interface para obter essa interface.  
+- O SDM chama [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) em uma `IDebugProcess2` interface para obter essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDebugProcessEx2`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDebugProcessEx2` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[Anexar](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa o processo que uma sessão agora está depurando o processo.|  
-|[Desanexar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa o processo que uma sessão não está depurando o processo.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Adiciona nós de programa para obter uma lista de mecanismos de depuração.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa ao processo que uma sessão está depurando o processo agora.|  
+|[Desanexar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa ao processo que uma sessão não está mais Depurando o processo.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Adiciona nós de programa para uma lista de mecanismos de depuração.|  
   
 ## <a name="remarks"></a>Comentários  
  Essa interface é privada entre o SDM e o processo.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Portpriv.h  
+ Cabeçalho: Portpriv. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

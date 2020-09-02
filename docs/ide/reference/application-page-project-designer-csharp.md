@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595820"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.
 
-Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha**Propriedades** **do projeto** > na barra de menu. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >  **Properties** na barra de menus. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ Consulte [namespace](/dotnet/csharp/language-reference/keywords/namespace) para 
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Quadro de destino**
+**Estrutura de destino**
 
 Especifica a versão do .NET direcionada pelo aplicativo. Essa opção pode ter valores diferentes dependendo de quais versões do .NET estão instaladas no computador.
 
@@ -99,7 +99,7 @@ As opções **Recursos** ajudam a definir as configurações de recursos para se
 
 Por padrão, este botão de opção é selecionado e as opções **Ícone** e **Manifesto** são habilitadas. Isso permite selecionar seu próprio ícone ou diferentes opções de geração de manifesto. Deixe esse botão de opção selecionado, a menos que você esteja fornecendo um arquivo de recurso para o projeto.
 
-**Ícone**
+**Cone**
 
 Define o arquivo *.ico* que você deseja usar como seu ícone do programa. Clique em **Procurar** para procurar um gráfico existente ou digite o nome do arquivo que você deseja. Consulte [-win32icon](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (Opções do compilador do C#) para obter mais informações.
 

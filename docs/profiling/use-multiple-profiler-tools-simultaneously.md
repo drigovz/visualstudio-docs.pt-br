@@ -10,13 +10,13 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332043"
 ---
-# <a name="using-multiple-profiler-tools-simultaneously"></a>Usando várias ferramentas de criador de perfil simultaneamente
+# <a name="using-multiple-profiler-tools-simultaneously"></a>Usar várias ferramentas de criador de perfil simultaneamente
 
 O criador de perfil de desempenho foi projetado com a ideia de que várias ferramentas podem ser usadas na mesma sessão para ajudar a entender os problemas de desempenho. A maioria das ferramentas no criador de perfil de desempenho tem suporte em execução simultânea, como o [uso da CPU](../profiling/cpu-usage.md), a [ferramenta Async do .net](../profiling/analyze-async.md)e a ferramenta de [banco de dados](../profiling/analyze-database.md) . Para executar ferramentas simultaneamente na mesma sessão de diagnóstico, clique na caixa de seleção ao lado delas e inicie a sessão de diagnóstico.
 
@@ -31,7 +31,7 @@ Durante a análise, as operações de filtragem de tempo são aplicadas em todas
 
 ![Filtragem de tempo do hub de diagnóstico](../profiling/media/diaghubtimefiltering.png "Filtragem de tempo do hub de diagnóstico")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Otimizando as configurações do criador de perfil](../profiling/optimize-profiler-settings.md)
 - [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)

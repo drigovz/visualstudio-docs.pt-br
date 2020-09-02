@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665832"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
@@ -39,7 +39,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 ## <a name="kinds-of-windows"></a>Tipos de janelas
 
 ### <a name="tool-and-document-windows"></a>Janelas de ferramentas e do documento
- O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem o Gerenciador de Soluções, Gerenciador de Servidores, Janela de Saída, Lista de Erros, os designers, as janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas de documentos podem ser arrastadas pela guia. Clique com o botão direito do mouse na guia ou na barra de título para definir outras opções na janela.
+ O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem o Gerenciador de Soluções, Gerenciador de Servidores, Janela de Saída, Lista de Erros, os designers, as janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas de documentos podem ser arrastadas por sua guia. Clique com o botão direito do mouse na guia ou na barra de título para definir outras opções na janela.
 
  O menu **Janela** mostra opções para encaixar, flutuar e ocultar janelas no IDE. Clique com o botão direito do mouse na guia de janela ou na barra de título para ver outras opções para essa janela específica. É possível exibir mais de uma instância de determinadas janelas de ferramentas por vez. Por exemplo, é possível exibir mais de uma janela do navegador da Web e é possível criar outras instâncias de algumas janelas de ferramentas escolhendo **Nova Janela** no menu **Janela**.
 
@@ -94,11 +94,11 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
  Losango do guia para janelas de ferramentas
 
- ![Ouros guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Losangos do guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  A ilustração a seguir mostra o Gerenciador de Soluções que está sendo encaixado em um novo local, mostrado pela área sombreada azul:
 
- ![Encaixando Gerenciador de Soluções em uma nova posição](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Encaixando o Gerenciador de Soluções em uma nova posição](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Janelas de ferramentas de fechamento e ocultação automática
  É possível fechar uma janela de ferramentas clicando no X na parte superior da barra de título; para reabrir a janela, use seu atalho de teclado ou o comando de menu. As janelas de ferramentas dão suporte a um recurso denominado Ocultar Automaticamente, o que faz com que uma janela saia da frente quando você usa uma janela diferente. Quando uma janela é ocultada automaticamente, o nome dela é exibido em uma guia na borda do IDE. Para usar a janela novamente, aponte para a guia para que a janela volte a ser exibida.
@@ -106,7 +106,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  ![Ocultar automaticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
-> Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
+> Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [geral, ambiente, caixa de diálogo opções](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
 > As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
@@ -157,7 +157,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 1. Para mudar entre layouts, use os atalhos de teclado ou, no menu principal, escolha **Janela > Aplicar Layout de Janela**.
 
-     ![Menu aplicar layout da janela](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
+     ![Aplicar menu de layout de janela](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
      Depois de aplicar o layout da interface do usuário, observe como ele é preservado tanto no modo de edição quanto no modo de depuração.
 
@@ -169,7 +169,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 1. É possível remover, renomear ou reordenar seu layout personalizado escolhendo **Janela > Gerenciar Layouts de Janela**. Se você mover um layout, a associação de teclas será ajustada automaticamente para refletir a nova posição na lista. Do contrário, as associações não poderão ser modificadas e, assim, será possível armazenar, no máximo, 10 layouts por vez.
 
-     ![Gerenciar layouts de janela](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+     ![Gerenciar layouts de janelas](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 
      Para se lembrar de qual atalho de teclado foi atribuído a qual layout, escolha **Janela > Aplicar Layout de Janela**.
 

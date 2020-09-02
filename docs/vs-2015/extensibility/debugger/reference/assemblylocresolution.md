@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153604"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
@@ -24,7 +24,7 @@ ms.locfileid: "68153604"
 
 Especifica onde um assembly está localizado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_ASSEMBLYLOCRESOLUTION {  
@@ -47,30 +47,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>Membros  
  ALR_NAME  
- Assembly está localizado no namespace atual.  
+ O assembly está localizado no namespace atual.  
   
  ALR_USERDIR  
- Assembly está localizado em um diretório de usuário.  
+ O assembly está localizado em um diretório de usuário.  
   
  ALR_SHAREDDIR  
- Assembly está localizado no diretório compartilhado.  
+ O assembly está localizado no diretório compartilhado.  
   
  ALR_REMOTEDIR  
- Assembly está localizado em um diretório remoto.  
+ O assembly está localizado em um diretório remoto.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores são retornados pela [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.  
+ Esses valores são retornados pelos métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .  
   
- Esses valores podem ser combinados com o `OR` operação.  
+ Esses valores podem ser combinados com a `OR` operação.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

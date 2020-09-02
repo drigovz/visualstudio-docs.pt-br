@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875482"
 ---
 # <a name="runtime-activity-designers"></a>Designer de atividade do runtime
 Os designers de atividade de runtime são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade de Designer de Fluxo de Trabalho.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)
+ [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
@@ -33,6 +33,6 @@ Os designers de atividade de runtime são usados para persistir e finalizar ativ
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usando os designers de atividade](control-flow-activity-designers.md)

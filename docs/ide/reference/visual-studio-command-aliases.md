@@ -44,7 +44,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Alternar Ponto de Interrupção|bp|Debug.ToggleBreakPoint|
 |janela de Pilha de Chamadas|CallStack|Debug.CallStack|
 |Limpar Indicadores|ClearBook|Edit.ClearBookmarks|
-|Fechar|Fechar|File.Close|
+|Feche|Feche|File.Close|
 |Fechar Todos os Documentos|CloseAll|Window.CloseAllDocuments|
 |Limpar Tudo|cls|Edit.ClearAll|
 |Modo de comando|cmd|View.CommandWindow|

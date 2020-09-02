@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1f2f3c26d89616f083c218c6b11610fe5e329a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651324"
 ---
 # <a name="managing-references-in-a-project"></a>Gerenciando referências em um projeto
@@ -37,7 +37,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 
  Para adicionar uma referência, clique com o botão direito do mouse no nó Referências no Gerenciador de Soluções e escolha **Adicionar Referência**. Para obter mais informações, consulte [Como adicionar ou remover referências usando o Gerenciador de Referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
- ![Adicionar uma referência no Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "|::ref1::|")
+ ![Adicionar uma referência no Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
 
  É possível fazer uma referência aos seguintes tipos de componentes/serviços:
 
@@ -71,7 +71,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
     > Uma maneira de descobrir se um SDK de Extensão tem dependências em outros SDKs de Extensão é reiniciar o Visual Studio, criar um novo projeto do C# da Windows Store, clicar com o botão direito do mouse no projeto e escolher **Adicionar Referência**, acessar a guia **Windows**, acessar a subguia **Extensões**, selecionar o SDK de Extensão e examinar o painel direito no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.
 
     > [!IMPORTANT]
-    > Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Tempo de Execução do Microsoft Visual C++, a versão do Pacote de Tempo de Execução do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio 2015.
+    > Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Runtime do Microsoft Visual C++, a versão do Pacote de Runtime do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio 2015.
 
 3. Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.
 
@@ -79,7 +79,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 
 5. Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**
 
-6. Clique na guia **Windows** e, em seguida, na subguia **Extensões**. Depois, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.
+6. Clique na guia **Windows** e na subguia **extensões** e desmarque as caixas de seleção dos SDKs de extensão antigos e marque as caixas de seleção para os novos SDKs de extensão. Clique em **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Adicionando uma referência em tempo de design
  Ao fazer uma referência a um assembly no projeto, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pesquisa o assembly nos seguintes locais:
@@ -94,7 +94,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 > Todos os projetos do Visual Studio contêm uma referência implícita a `System.Core`, mesmo se `System.Core` foi removido da lista de referências.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Referências a componentes compartilhados em tempo de execução
- Em tempo de execução, os componentes devem estar no caminho de saída do projeto ou no [GAC](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (Cache de Assembly Global). Se o projeto contiver uma referência a um objeto que não está em um desses locais, será necessário copiar a referência para o caminho de saída do projeto ao compilá-lo. A propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica se esta cópia precisa ser feita. Se o valor for **True**, a referência será copiada para o diretório do projeto durante o build do projeto. Se o valor for **False**, a referência não será copiada.
+ Em tempo de execução, os componentes devem estar no caminho de saída do projeto ou no GAC ( [cache de assembly global](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) ). Se o projeto contiver uma referência a um objeto que não está em um desses locais, será necessário copiar a referência para o caminho de saída do projeto ao compilá-lo. A propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica se esta cópia precisa ser feita. Se o valor for **True**, a referência será copiada para o diretório do projeto durante o build do projeto. Se o valor for **False**, a referência não será copiada.
 
  Se você implantar um aplicativo que contenha uma referência a um componente personalizado que esteja registrado no GAC, o componente não será implantado com o aplicativo, independentemente da configuração de <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>. Nas versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], era possível definir a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> em uma referência para garantir que o assembly fosse implantado. Agora, é necessário adicionar o assembly à pasta \Bin manualmente. Isso coloca todo o código personalizado sob análise, reduzindo o risco de publicar um código personalizado com o qual você não está familiarizado.
 
@@ -103,12 +103,12 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referenciando um projeto ou assembly que tem outra versão do .NET Framework como destino
  É possível criar aplicativos que referenciam projetos ou assemblies que têm outra versão do .NET Framework como destino. Por exemplo, é possível criar um aplicativo que tem como destino o [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] que referencia um assembly que tem como destino [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)]. Se você criar um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], não será possível definir uma referência no projeto a um projeto ou assembly que tem como destino o [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] ou o .NET Framework versão 4.
 
- Para obter mais informações, consulte [Definindo uma versão específica do .NET Framework como destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 ## <a name="project-to-project-references"></a>Referências projeto a projeto
- Referências projeto a projeto são referências a projetos que contêm assemblies; é possível criá-las usando a guia **Projeto**. O Visual Studio pode encontrar um assembly quando receber um caminho para o projeto.
+ Referências de projeto para projeto são referências a projetos que contêm assemblies; Você os cria usando a guia **projeto** . o Visual Studio pode encontrar um assembly ao receber um caminho para o projeto.
 
- Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode referenciar uma versão anteriormente compilada do projeto.) Isso pode resultar na exigência de várias versões de uma única DLL no diretório bin, o que não é possível. Quando houver esse conflito, você verá uma mensagem como [Aviso: o “arquivo” de dependência no projeto “projeto” não pode ser copiado para o diretório de execução, pois ele substituirá o “arquivo” de referência](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
+ Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode fazer referência a uma versão criada anteriormente do projeto.) Isso pode resultar na necessidade de várias versões de uma única DLL no diretório bin, o que não é possível. Quando houver esse conflito, você verá uma mensagem como [Aviso: o “arquivo” de dependência no projeto “projeto” não pode ser copiado para o diretório de execução, pois ele substituirá o “arquivo” de referência](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Uma referência de arquivo será criada em vez de uma referência projeto a projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 e a versão de destino do outro projeto for a versão 2, 3, 3.5 ou 4.0.
@@ -116,5 +116,5 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 ## <a name="file-references"></a>Referências de arquivo
  Referências de arquivo são referências diretas a assemblies fora do contexto de um projeto do Visual Studio; crie-as usando a guia **Procurar** do **Gerenciador de Referências**. Use uma referência de arquivo quando você tiver apenas um assembly ou um componente e não tiver o projeto que o cria como a saída.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  Solução de problemas de programação de [referências quebradas](../ide/troubleshooting-broken-references.md) [com assemblies](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6) [como: Adicionar ou remover referências usando o Gerenciador de referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

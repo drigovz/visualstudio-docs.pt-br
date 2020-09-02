@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651474"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
@@ -32,19 +32,19 @@ Especifica o local e o tipo do arquivo sidecar que fornece informações do Inte
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `filename` Opcional. O nome raiz do arquivo sidecar que contém informações de localização para a cultura neutra. Quando o Visual Studio pesquisa informações de localização, ele tenta encontrar uma versão específica da cultura desse arquivo. Por exemplo, se `filename` for jQuery. xml, o Visual Studio pesquisará a pasta específica da cultura correta (como JA) no mesmo local que o arquivo. js que contém o elemento `<loc>`. Se ele localizar a pasta específica da cultura, ele verificará se existe um arquivo jQuery. xml nela. Se não for possível localizar o arquivo correto, ele usará regras de local de recurso gerenciado. O valor padrão para `filename` é o nome do arquivo atual, mas com uma extensão. xml em vez de. js.
+ `filename` Opcional. O nome raiz do arquivo sidecar que contém informações de localização para a cultura neutra. Quando o Visual Studio pesquisa informações de localização, ele tenta encontrar uma versão específica da cultura desse arquivo. Por exemplo, se `filename` for jquery.xml, o Visual Studio pesquisará a pasta específica da cultura correta (como ja) no mesmo local que o arquivo. js que contém o `<loc>` elemento. Se ele localizar a pasta específica da cultura, ele verificará se existe um arquivo de jquery.xml. Se não for possível localizar o arquivo correto, ele usará regras de local de recurso gerenciado. O valor padrão para `filename` é o nome do arquivo atual, mas com uma extensão. xml em vez de. js.
 
  `format` Opcional. O tipo de arquivo sidecar usado para localização. Use `messagebundle` para especificar o uso de grupos de mensagens definidos por metadados abertos do Ajax. `messagebundle` é o formato recomendado. No entanto, esse formato não tem suporte no Microsoft Ajax ou em arquivos. winmd. Use `vsdoc` para especificar o formato de localização de .NET Framework padrão usado pelo Microsoft Ajax e Windows Runtime. Esse atributo é opcional. `vsdoc` é o formato padrão.
 
 ## <a name="remarks"></a>Comentários
- O elemento `<loc>` deve aparecer na parte superior do arquivo na mesma seção que o elemento `<reference>`. As regras de uso para o elemento `<loc>` são as mesmas que o elemento `<reference>`. Para obter mais informações, consulte a seção "referências de diretivas" no [JavaScript IntelliSense](../ide/javascript-intellisense.md).
+ O `<loc>` elemento deve aparecer na parte superior do arquivo na mesma seção que o `<reference>` elemento. As regras de uso para o `<loc>` elemento são as mesmas que o `<reference>` elemento. Para obter mais informações, consulte a seção "referências de diretivas" no [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 
- O Visual Studio processa um único elemento `<loc>` para cada arquivo. js. Se vários elementos de `<loc>` estiverem presentes, apenas um único elemento de `<loc>` será usado. Comportamento para determinar qual elemento de `<loc>` a ser usado não está definido.
+ O Visual Studio processa um único `<loc>` elemento para cada arquivo. js. Se vários `<loc>` elementos estiverem presentes, apenas um único `<loc>` elemento será usado. Comportamento para determinar qual `<loc>` elemento usar não está definido.
 
- Ao usar o formato de pacote de mensagens, use o atributo `locid` em comentários de documentação XML para especificar o valor do atributo `name`.
+ Ao usar o formato de pacote de mensagens, use o `locid` atributo em comentários de documentação XML para especificar o `name` valor do atributo.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra como usar o elemento `<loc>` com o formato messagebundle. Adicione o XML a seguir a um arquivo chamado messageFilename. xml e coloque o arquivo na pasta específica da cultura correta, conforme especificado na descrição do parâmetro `filename`.
+ O exemplo a seguir mostra como usar o `<loc>` elemento com o formato messagebundle. Adicione o XML a seguir a um arquivo chamado messageFilename.xml e coloque o arquivo na pasta específica da cultura correta, conforme especificado na descrição do `filename` parâmetro.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,7 +56,7 @@ Especifica o local e o tipo do arquivo sidecar que fornece informações do Inte
 
 ```
 
- Para o exemplo de messagebundle, adicione o código a seguir a um arquivo JavaScript em seu projeto. O elemento `<loc>` deve aparecer como a primeira linha no arquivo JavaScript. As descrições nesse código serão substituídas por descrições localizadas, se disponíveis.
+ Para o exemplo de messagebundle, adicione o código a seguir a um arquivo JavaScript em seu projeto. O `<loc>` elemento deve aparecer como a primeira linha no arquivo JavaScript. As descrições nesse código serão substituídas por descrições localizadas, se disponíveis.
 
 ```javascript
 /// <loc filename="messageFilename.xml" format="messagebundle"/>
@@ -70,7 +70,7 @@ function doSomething(a,b)
 
 ```
 
- O exemplo a seguir usa o formato VSDoc. Adicione o XML a seguir a um arquivo chamado scriptFilename. xml e coloque o arquivo na pasta específica da cultura correta.
+ O exemplo a seguir usa o formato VSDoc. Adicione o XML a seguir a um arquivo chamado scriptFilename.xml e coloque o arquivo na pasta específica da cultura correta.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -101,5 +101,5 @@ function illuminate(a)
 
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)

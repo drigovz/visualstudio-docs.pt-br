@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86869562"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
@@ -65,7 +65,7 @@ Esta refatoração aplica-se a:
    | ------ | ---
    | **Para cima/baixo** | Mova o parâmetro selecionado para cima e para baixo na lista
    | **Adicionar** | Adicionar um novo parâmetro à lista
-   | **Removerr** | Remova o parâmetro selecionado da lista
+   | **Remover** | Remova o parâmetro selecionado da lista
    | **Restaurar** | Restaurar o parâmetro selecionado e riscado na lista
 
    > [!TIP]
@@ -79,7 +79,7 @@ Esta refatoração aplica-se a:
 
     ![Caixa de diálogo Alterar Assinatura](media/change-signature.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

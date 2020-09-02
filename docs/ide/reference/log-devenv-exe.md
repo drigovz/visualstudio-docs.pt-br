@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595456"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra toda a atividade no arquivo de log para resolução de problemas. Este arquivo aparece depois de você chamar `devenv /log` pelo menos uma vez. Por padrão, o arquivo de log está localizado aqui:
 
-**%APPDATA%\\\\Microsoft\\VisualStudio**\<Versão\>**\\ActivityLog.xml**
+**% AppData% \\ActivityLog.xmldo Microsoft \\ VisualStudio \\ ** \<Version\> ** \\ **
 
-em que \<Versão\> é a versão do Visual Studio. No entanto, você pode especificar um caminho e um nome de arquivo diferentes.
+em que \<Version\> é a versão do Visual Studio. No entanto, você pode especificar um caminho e um nome de arquivo diferentes.
 
 ## <a name="syntax"></a>Sintaxe
 

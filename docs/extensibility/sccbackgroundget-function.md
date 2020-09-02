@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701237"
 ---
 # <a name="sccbackgroundget-function"></a>Função SccBackgroundGet
-Esta função recupera do controle de origem cada um dos arquivos especificados sem interação do usuário.
+Essa função recupera do controle do código-fonte cada um dos arquivos especificados sem interação do usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,44 +34,44 @@ SCCRTN SccBackgroundGet(
 );
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  pContext
 
-[em] O ponteiro de contexto plug-in de controle de origem.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
- nArquivos
+ nFiles
 
-[em] Número de arquivos especificados na `lpFileNames` matriz.
+no Número de arquivos especificados na `lpFileNames` matriz.
 
  lpFileNames
 
-[dentro, fora] Matriz de nomes de arquivos a serem recuperados.
+[entrada, saída] Matriz de nomes de arquivos a serem recuperados.
 
 > [!NOTE]
-> Os nomes devem ser nomes de arquivos locais totalmente qualificados.
+> Os nomes devem ser nomes de filelocais totalmente qualificados.
 
  dwFlags
 
-[em] Bandeiras`SCC_GET_ALL`de `SCC_GET_RECURSIVE`comando ( , ).
+no Sinalizadores de comando ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
  dwBackgroundOperationID
 
-[em] Um valor único associado a esta operação.
+no Um valor exclusivo associado a esta operação.
 
 ## <a name="return-value"></a>Valor retornado
- Espera-se que a implementação plug-in de controle de origem desta função retorne um dos seguintes valores:
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
 |SCC_OK|Operação concluída com sucesso.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Uma recuperação de fundo já está em andamento (o plug-in de controle de origem deve retornar isso somente se não suportar operações simultâneas em lote).|
+|SCC_E_BACKGROUNDGETINPROGRESS|Uma recuperação em segundo plano já está em andamento (o plug-in de controle do código-fonte deve retornar somente se não oferecer suporte a operações simultâneas em lote).|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada antes de ser concluída.|
 
 ## <a name="remarks"></a>Comentários
- Esta função é sempre chamada em um segmento diferente daquele que carregou o plug-in de controle de origem. Esta função não é esperada para retornar até que seja feita; no entanto, ele pode ser chamado várias vezes com várias listas de arquivos, tudo ao mesmo tempo.
+ Essa função é sempre chamada em um thread diferente daquele que carregou o plug-in de controle do código-fonte. Essa função não deve retornar até que seja concluída; no entanto, ele pode ser chamado várias vezes com várias listas de arquivos, tudo ao mesmo tempo.
 
- O uso `dwFlags` do argumento é o mesmo que o [SccGet](../extensibility/sccget-function.md).
+ O uso do `dwFlags` argumento é o mesmo que o [SccGet](../extensibility/sccget-function.md).
 
 ## <a name="see-also"></a>Confira também
-- [Funções de API plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

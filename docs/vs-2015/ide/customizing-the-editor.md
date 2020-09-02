@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87a27cdb6b278a01434662017e05e5dca38b8c9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665856"
 ---
 # <a name="customizing-the-editor"></a>Personalizando o editor
@@ -33,5 +33,5 @@ ms.locfileid: "72665856"
 
  [Como: gerenciar modos de editor](../ide/how-to-manage-editor-modes.md) Explica como usar os modos de tela inteira e espaços virtuais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Escrever](../ide/writing-code-in-the-code-and-text-editor.md) [indicadores de configuração de código em código](../ide/setting-bookmarks-in-code.md) [geral, ambiente, opções caixa de diálogo](../ide/reference/general-environment-options-dialog-box.md) [documentos, ambiente, opções caixa de diálogo](../ide/reference/documents-environment-options-dialog-box.md) [fontes e cores, ambiente, caixa de diálogo opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
