@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78b2e80611983e69f11465269dcf15dad7d6351e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329703"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>Construtor marker_series::marker_series
-Inicia uma nova instância da classe `marker_series`.
+Inicializa uma nova instância da classe `marker_series`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,5 +48,5 @@ marker_series(
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [classe marker_series](../profiling/marker-series-class.md)

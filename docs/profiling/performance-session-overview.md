@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778447"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
@@ -76,4 +76,4 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
 
 ## <a name="see-also"></a>Confira também
 - [Visões gerais](../profiling/overviews-performance-tools.md)
-- [Passo a passo: Identifique problemas de desempenho](beginners-guide-to-cpu-sampling.md)
+- [Walkthrough: identificar problemas de desempenho](beginners-guide-to-cpu-sampling.md)

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248775"
 ---
 # <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
@@ -59,6 +59,6 @@ Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo
 
 Para a maioria dos cenários, não há suporte para a anexação de vários depuradores na mesma sessão de depuração. Você pode fazer isso usando uma segunda instância do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Anexar aos processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

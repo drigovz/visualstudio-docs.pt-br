@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47e27dbfa221a9476488d563ae2a48235a08f769
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703494"
 ---
 # <a name="markupcompilepass2-task"></a>Tarefa MarkupCompilePass2
@@ -34,18 +34,18 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> executa a compi
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`AlwaysCompileMarkupFilesInSeparateDomain`|Parâmetro **Boolean** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retorna **false**, a tarefa é executada no mesmo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] e é executada mais rapidamente. Se o parâmetro retorna **true**, a tarefa é executada em um segundo <xref:System.AppDomain> que é isolado de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] e é executada de modo mais lento.|  
-|`AssembliesGeneratedDuringBuild`|Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada a **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build.|  
-|`AssemblyName`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto está gerando um executável [!INCLUDE[TLA#tla_win](../includes/tlasharptla-win-md.md)] cujo nome é **WinExeAssembly.exe**, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**.|  
+|`AlwaysCompileMarkupFilesInSeparateDomain`|Parâmetro **booliano** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retorna **false**, a tarefa é executada no mesmo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] e é executada mais rapidamente. Se o parâmetro retorna **true**, a tarefa é executada em um segundo <xref:System.AppDomain> que é isolado de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] e é executada de modo mais lento.|  
+|`AssembliesGeneratedDuringBuild`|Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada a **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build.|  
+|`AssemblyName`|Parâmetro obrigatório **String**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto está gerando um executável [!INCLUDE[TLA#tla_win](../includes/tlasharptla-win-md.md)] cujo nome é **WinExeAssembly.exe**, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**.|  
 |`GeneratedBaml`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Contém a lista de arquivos gerados no formato binário [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
-|`KnownReferencePaths`|Parâmetro **String[]** opcional.<br /><br /> Especifica as referências aos assemblies nunca alterados durante o processo de build. Inclui assemblies que estão localizados no [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)], em um diretório de instalação [!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] e assim por diante.|  
+|`KnownReferencePaths`|Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica as referências aos assemblies nunca alterados durante o processo de build. Inclui assemblies que estão localizados no [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)], em um diretório de instalação [!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] e assim por diante.|  
 |`Language`|Parâmetro obrigatório **String**.<br /><br /> Especifica a linguagem gerenciada à qual o compilador dá suporte. As opções válidas são **C#**, **VB**, **JScript** e **C++**.|  
-|`LocalizationDirectivesToLocFile`|Parâmetro **String** opcional.<br /><br /> Especifica como gerar informações de localização para cada arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origem. As opções válidas são **None**, **CommentsOnly** e **All**.|  
-|`OutputPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o diretório no qual ocorre a geração dos arquivos de formato binário [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] gerados.|  
-|`OutputType`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o tipo de assembly que é gerado por um projeto. As opções válidas são **winexe**, **exe**, **library** e **netmodule**.|  
-|`References`|Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica a lista de referências de arquivos para assemblies que contêm os tipos que são usados nos arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. Uma referência é ao assembly gerado pela tarefa <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>, que deve ser executada antes da tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>.|  
-|`RootNamespace`|Parâmetro **String** opcional.<br /><br /> Especifica o namespace raiz para as classes que estão dentro do projeto. **RootNamespace** também é usado como o namespace padrão de um arquivo de código gerenciado gerado quando o arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] correspondente não inclui o atributo `x:Class`.|  
-|`XAMLDebuggingInformation`|Parâmetro **Boolean** opcional.<br /><br /> Quando é **true**, informações de diagnóstico são geradas e incluídas no [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] compilado para auxiliar na depuração.|  
+|`LocalizationDirectivesToLocFile`|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica como gerar informações de localização para cada arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origem. As opções válidas são **None**, **CommentsOnly** e **All**.|  
+|`OutputPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o diretório no qual ocorre a geração dos arquivos de formato binário [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] gerados.|  
+|`OutputType`|Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de assembly que é gerado por um projeto. As opções válidas são **winexe**, **exe**, **library** e **netmodule**.|  
+|`References`|Parâmetro opcional **ITaskItem []** .<br /><br /> Especifica a lista de referências de arquivos para assemblies que contêm os tipos que são usados nos arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. Uma referência é ao assembly gerado pela tarefa <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>, que deve ser executada antes da tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>.|  
+|`RootNamespace`|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o namespace raiz para as classes que estão dentro do projeto. **RootNamespace** também é usado como o namespace padrão de um arquivo de código gerenciado gerado quando o arquivo [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] correspondente não inclui o atributo `x:Class`.|  
+|`XAMLDebuggingInformation`|Parâmetro **booliano** opcional.<br /><br /> Quando é **true**, informações de diagnóstico são geradas e incluídas no [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] compilado para auxiliar na depuração.|  
   
 ## <a name="remarks"></a>Comentários  
  Antes de executar **MarkupCompilePass2**, você deve gerar um assembly temporário que contém os tipos que são usados pelos arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)], cujas passagens de compilação de marcação foram adiadas. Gere o assembly temporário executando a tarefa **GenerateTemporaryTargetAssembly**.  
@@ -71,10 +71,10 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> executa a compi
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Referência de tarefa](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Compilando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Criando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Visão geral dos aplicativos de navegador XAML do WPF](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

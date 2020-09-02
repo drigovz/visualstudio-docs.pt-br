@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::AvaliaAsync | Microsoft Docs
+title: 'IDebugExpression2:: EvaluateAsync | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729758"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
-Este método avalia a expressão assíncronamente.
+Esse método avalia a expressão de forma assíncrona.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,25 +41,25 @@ int EvaluateAsync(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwFlags`\
-[em] Uma combinação de bandeiras da [enumeração EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlam a avaliação da expressão.
+no Uma combinação de sinalizadores da enumeração [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlam a avaliação da expressão.
 
 `pExprCallback`\
-[em] Este parâmetro é sempre um valor nulo.
+no Esse parâmetro é sempre um valor nulo.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Um código de erro típico é:
+## <a name="return-value"></a>Valor Retornado
+Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Um código de erro típico é:
 
 |Erro|Descrição|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|Outra expressão está sendo avaliada e a avaliação simultânea de expressão não é suportada.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|Outra expressão está sendo avaliada no momento e não há suporte para a avaliação de expressão simultânea.|
 
 ## <a name="remarks"></a>Comentários
-Este método deve retornar imediatamente após o início da avaliação da expressão. Quando a expressão for avaliada com sucesso, um [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) deve ser enviado para a chamada de chamada de evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) conforme fornecido através [de Anexar](../../../extensibility/debugger/reference/idebugprogram2-attach.md) ou [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md).
+Esse método deve retornar imediatamente depois de ter iniciado a avaliação da expressão. Quando a expressão é avaliada com êxito, um [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) deve ser enviado para o retorno de chamada do evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , conforme fornecido por meio de [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) ou [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como `CExpression` implementar esse método para um objeto simples que implementa a interface [IDebugExpression2.](../../../extensibility/debugger/reference/idebugexpression2.md)
+O exemplo a seguir mostra como implementar esse método para um `CExpression` objeto simples que implementa a interface [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .
 
 ```cpp
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,

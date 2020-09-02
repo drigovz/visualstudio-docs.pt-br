@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249873"
 ---
 # <a name="go-to-line-dialog-box"></a>Caixa de diálogo Ir para Linha
@@ -30,10 +30,10 @@ A caixa de diálogo **Ir Para Linha** permite que você vá para uma linha espec
 
 Na caixa **número de linha (1- \<n> )** , insira o número da linha no documento ativo para o qual você deseja mover. O número inserido deve estar entre 1 e o número da última linha no documento atual.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Localizar código usando comandos Ir Para](../../ide/go-to.md)
 - [Definir indicadores no código](../../ide/setting-bookmarks-in-code.md)
 - [Localizar e substituir texto](../../ide/finding-and-replacing-text.md)
 - [Recursos do editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Comando ir para](go-to-command.md)
+- [Comando Ir para](go-to-command.md)

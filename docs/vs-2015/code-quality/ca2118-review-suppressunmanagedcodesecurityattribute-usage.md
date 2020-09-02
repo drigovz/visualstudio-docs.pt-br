@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bc0e88265245d795697d32a9e6a95909c0415259
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538652"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
@@ -36,7 +36,7 @@ ms.locfileid: "85538652"
  Um tipo ou membro público ou protegido tem o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>altera o comportamento padrão do sistema de segurança para membros que executam código não gerenciado usando a interoperabilidade de COM ou a invocação de plataforma. Geralmente, o sistema cria [dados e modelando](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) a permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica a permissão de cada chamador na pilha de chamadas. Quando o atributo está presente, o sistema faz uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado em JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> altera o comportamento padrão do sistema de segurança para membros que executam código não gerenciado usando a interoperabilidade de COM ou a invocação de plataforma. Geralmente, o sistema cria [dados e modelando](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) a permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica a permissão de cada chamador na pilha de chamadas. Quando o atributo está presente, o sistema faz uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado em JIT.
 
  Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você posicionar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (além do chamador imediato) não precisarão de permissão de código não gerenciado para executar código não gerenciado. Dependendo das ações do membro público e da manipulação de entrada, ele pode permitir que chamadores não confiáveis acessem a funcionalidade normalmente restrita ao código confiável.
 

@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657076"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Escrevendo testes de unidade para .NET Framework com o Microsoft Unit Test Framework para código gerenciado
@@ -20,13 +20,13 @@ ms.locfileid: "72657076"
 
 Nesta seção [Walkthrough: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
- [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
+ [Início Rápido: desenvolvimento controlado por teste com o Gerenciador de testes](../test/quick-start-test-driven-development-with-test-explorer.md)
 
  [Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
  [Usando as classes Assert](../test/using-the-assert-classes.md)
 
- [Como criar um teste de unidade orientado a dados](../test/how-to-create-a-data-driven-unit-test.md)
+ [Como: criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)
 
  [Testes de unidade para métodos genéricos](../test/unit-tests-for-generic-methods.md)
 

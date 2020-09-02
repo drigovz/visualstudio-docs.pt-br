@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo Visualizador de conjunto de dados | Microsoft Docs
+title: Caixa de diálogo Visualizador de conjuntos de conjunto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697848"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
@@ -39,12 +39,12 @@ O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de Da
   
  Você pode fazer alterações nos objetos neste visualizador. As alterações serão salvas assim que você confirmar uma linha.  
   
-## <a name="uielement-list"></a>Lista UIElement  
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário  
  Tabela  
  Use essa caixa de listagem suspensa para selecionar uma tabela no conjunto de dados que você deseja visualizar.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Janelas variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Exibir valores de dados em dicas de dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8010bbbc38dee980ebe89dc60ccb513379103a26
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846321"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Caixa de diálogo do editor de regra (legados)
-Este tópico descreve como usar a caixa de diálogo **Editor de conjunto de regras** no [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **Editor de conjunto de regras** no herdado [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  A caixa de diálogo **Editor de conjunto de regras** é usada para criar e modificar conjuntos de regras [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) , que são serializados para um arquivo. Rules.
 
@@ -35,22 +35,22 @@ Este tópico descreve como usar a caixa de diálogo **Editor de conjunto de regr
 
  A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **Editor de conjunto de regras** .
 
-|Elemento da interface|Descrição|
+|Elemento da interface do usuário|Descrição|
 |----------------|-----------------|
 |**Adicionar regra**|Adicione uma nova definição de regra ao conjunto de regras.|
-|**Excluir**|Exclui a regra selecionada do conjunto de regras.|
-|**Encadeamento**|Especifica que tipo de encadeamento frente para usar com o conjunto de regras. As opções disponíveis são:<br /><br /> -   **encadeamento completo**, que especifica o uso de todos os mecanismos de encadeamento de encaminhamento: implícito, atribuição de método e explícito usando uma função de **atualização** .<br />-   **sequencial**, que especifica não usar nenhum encadeamento de encaminhamento.<br />-   **somente atualização explícita**, que especifica a execução somente do encadeamento de encaminhamento em ações de **atualização** .<br /><br /> Para obter mais informações sobre encadeamento de encaminhamento, consulte [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).|
+|**Delete (excluir)**|Exclui a regra selecionada do conjunto de regras.|
+|**Encadeamento**|Especifica que tipo de encadeamento frente para usar com o conjunto de regras. As opções disponíveis são:<br /><br /> -   **Encadeamento completo**, que especifica o uso de todos os mecanismos de encadeamento de encaminhamento: implícito, atribuição de método e explícito usando uma função de **atualização** .<br />-   **Sequencial**, que especifica não usar nenhum encadeamento de encaminhamento.<br />-   **Somente atualização explícita**, que especifica a execução somente do encadeamento de encaminhamento em ações de **atualização** .<br /><br /> Para obter mais informações sobre encadeamento de encaminhamento, consulte [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).|
 |**Nome**|Regra título da coluna da lista. Clique para classificar por nome a lista de regras.|
-|**Priority**|Regra título da coluna da lista. Clique para classificar a lista de regras por prioridade.|
+|**Prioridade**|Regra título da coluna da lista. Clique para classificar a lista de regras por prioridade.|
 |**Reavaliação**|Regra título da coluna da lista. Clique para classificar a lista de regras pelo tipo de reavaliação.|
-|**Visualização da regra**|Regra título da coluna da lista. Clique para classificar a lista de regras por visualização de condição e ações de uma regra.|
-|**Name:**|Digite o nome da regra.|
-|**Priority:**|Insira uma prioridade para a regra. A prioridade padrão é 0.|
-|**Reavaliação**|Especifica que tipo de reavaliação de regras para usar com a regra. As opções disponíveis são:<br /><br /> -   **sempre**, o que faz com que a regra seja reavaliada conforme necessário.<br />-   **nunca**, o que faz com que a regra nunca seja reavaliada. Neste caso uma regra executa somente uma vez.|
+|**Visualização de Regra**|Regra título da coluna da lista. Clique para classificar a lista de regras por visualização de condição e ações de uma regra.|
+|**Nome:**|Digite o nome da regra.|
+|**Prioridade**|Insira uma prioridade para a regra. A prioridade padrão é 0.|
+|**Reavaliação:**|Especifica que tipo de reavaliação de regras para usar com a regra. As opções disponíveis são:<br /><br /> -   **Sempre**, o que faz com que a regra seja reavaliada conforme necessário.<br />-   **Nunca**, o que faz com que a regra nunca seja reavaliada. Neste caso uma regra executa somente uma vez.|
 |**Ativo**|Verifique para fazer a regra ativo.|
 |**Problema**|Digite uma expressão para a condição de regra. Para obter informações sobre a sintaxe de expressão, consulte a seção “inserindo de expressões de condição e a ação” nessa página.|
-|**Ações then:**|Insira a expressão para ações. Para obter informações sobre a sintaxe de expressão, consulte a seção “inserindo de expressões de condição e a ação” nessa página.|
-|**Ações else:**|Insira a expressão para outras ações. Para obter informações sobre a sintaxe de expressão, consulte a seção “inserindo de expressões de condição e a ação” nessa página.|
+|**Ações:**|Insira a expressão para ações. Para obter informações sobre a sintaxe de expressão, consulte a seção “inserindo de expressões de condição e a ação” nessa página.|
+|**Outras ações:**|Insira a expressão para outras ações. Para obter informações sobre a sintaxe de expressão, consulte a seção “inserindo de expressões de condição e a ação” nessa página.|
 |**OK**|Clique para salvar a regra definida como um arquivo de .rules.|
 
  Para obter mais informações sobre conjuntos de regras, consulte [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).
@@ -58,7 +58,7 @@ Este tópico descreve como usar a caixa de diálogo **Editor de conjunto de regr
 ## <a name="entering-condition-and-action-expressions"></a>Inserindo expressões de condição e de ação
  Você insere expressões para a condição e as ações then e else como texto em suas respectivas caixas de texto na caixa de diálogo **Editor de conjunto de regras** . Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um tipo de menu IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode chamar métodos estáticos em tipos referenciados digitando o nome da classe seguida do nome do método.
 
- Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são = =, >, \<, > = e < =. Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.
+ Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são = =, >, \<, > = e <=. Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.
 
  Você pode especificar o tipo para a comparação e pode comparar com uma cadeia de caracteres **nula** ou vazia. Você pode aninhar chamadas aos membros em uma variável que contém um tipo complexo, por exemplo, `this.Address.State == "WA"`.
 
@@ -66,13 +66,13 @@ Este tópico descreve como usar a caixa de diálogo **Editor de conjunto de regr
 
 - Operadores relacionais: ==, =! =
 
-- Operadores de comparação: <, \<=, >, > =
+- Operadores de comparação: <, \<=, > , >=
 
 - Operadores aritméticos: +, -, *,/, MODIFICAÇÃO
 
-- Operadores lógicos: and, & &, ou &#124; &#124;,, não,!
+- Operadores lógicos: AND,  &&, ou,  &#124;&#124;, não,!
 
-- Operadores de bits-bit: &,&#124;
+- Operadores bits: &, &#124;
 
   Precedência de operadores de expressão segue regras de precedência de operador C#.
 
@@ -90,5 +90,5 @@ Update("this/Address/State")
 
  Para obter mais informações sobre como usar **Update** com encadeamento de encaminhamento, consulte [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).
 
-## <a name="see-also"></a>Veja também
- [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Caixa de diálogo selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx)
+## <a name="see-also"></a>Consulte Também
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Caixa de diálogo PolicyActivity selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [usando a atividade PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx)

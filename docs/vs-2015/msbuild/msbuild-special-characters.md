@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150760"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiais no MSBuild
@@ -25,9 +25,9 @@ ms.locfileid: "68150760"
 
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] reserva alguns caracteres para uso especial em contextos específicos. Você precisa apenas tais caracteres de escape se desejar usá-los literalmente no contexto no qual eles estão reservados. Por exemplo, um asterisco tem um significado especial somente nos atributos `Include` e `Exclude` de uma definição de item e, em chamadas para `CreateItem`. Se você quiser que um asterisco seja exibido como um asterisco em um desses contextos, você deve usar um caractere de escape. Nos outros contextos, basta digitar o asterisco onde você deseja que ele apareça.  
   
- Para escapar um caractere especial, use a sintaxe %*xx*, onde *xx* representa o valor hexadecimal de ASCII do caractere. Para obter mais informações, confira [Como: Escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
+ Para escapar de um caractere especial, use a sintaxe%*XX*, em que *XX* representa o valor hexadecimal ASCII do caractere. Para obter mais informações, consulte [como: escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
-## <a name="special-characters"></a>Caracteres especiais  
+## <a name="special-characters"></a>Caracteres Especiais  
  A tabela a seguir lista os caracteres especiais do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]:  
   
 |**Caractere**|**ASCII**|**Uso reservado**|  
@@ -40,6 +40,6 @@ ms.locfileid: "68150760"
 |?|%3F|Caractere curinga para nomes de arquivos em atributos `Include` e `Exclude`|  
 |*|%2A|Caractere curinga para uso em nomes de arquivos em atributos `Include` e `Exclude`|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)   
  [Itens](../msbuild/msbuild-items.md)

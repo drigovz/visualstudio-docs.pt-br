@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847821"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "75847821"
 
 O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gravar e analisar problemas de desempenho e renderização em aplicativos Direct3D. Diagnóstico de Gráficos pode ser usado em aplicativos que estão sendo executados localmente em seu computador Windows, em um emulador de dispositivo do Windows ou em um computador ou dispositivo remoto.  
   
- O fluxo de trabalho de Diagnóstico de Gráficos começa capturando um registro de como seu aplicativo usa o Direct3D — ao vivo, à medida que é executado — para que seu comportamento possa ser analisado imediatamente, compartilhado ou salvo para mais tarde. As sessões de captura podem ser iniciadas e controladas manualmente no Visual Studio ou com a ferramenta de captura de linha de comando **dxcap. exe**. As sessões de captura também podem ser iniciadas e controladas programaticamente usando as APIs de captura Diagnóstico de Gráficos.  
+ O fluxo de trabalho de Diagnóstico de Gráficos começa capturando um registro de como seu aplicativo usa o Direct3D — ao vivo, à medida que é executado — para que seu comportamento possa ser analisado imediatamente, compartilhado ou salvo para mais tarde. As sessões de captura podem ser iniciadas e controladas manualmente no Visual Studio ou com a ferramenta de captura de linha de comando **dxcap.exe**. As sessões de captura também podem ser iniciadas e controladas programaticamente usando as APIs de captura Diagnóstico de Gráficos.  
   
  Depois que uma sessão de captura tiver sido registrada, seu conteúdo poderá ser reproduzido pelo *analisador de gráficos* do Visual Studio a qualquer momento, recriando os quadros capturados usando exatamente os mesmos recursos e processando comandos usados pelo aplicativo. Em seguida, usando as ferramentas fornecidas na janela analisador de gráficos, qualquer um dos quadros capturados pode ser analisado em detalhes. Essas ferramentas podem ser usadas para examinar qualquer chamada à API do Direct3D, recurso, objeto de estado do pipeline, estágio do pipeline ou até mesmo o histórico completo de qualquer pixel em um quadro capturado. Ao usar essas ferramentas em conjunto, um problema de renderização pode ser explorado intuitivamente, começando de como ele aparece em um quadro capturado e fazendo uma busca detalhada em sua causa raiz no código-fonte, nos sombreadores ou nos ativos gráficos do aplicativo.  
   
@@ -34,7 +34,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  Continue na [visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md) para saber mais sobre o que o Visual Studio diagnóstico de gráficos oferece.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Visão Geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
+ [Visão geral](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Apresenta o fluxo de trabalho e as ferramentas de Diagnóstico de Gráficos.  
   
  [Introdução](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
@@ -46,16 +46,16 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  [Uso de GPU](../debugger/gpu-usage.md)  
  Para usar Diagnóstico de Gráficos para criar o perfil de seu aplicativo, use a ferramenta uso de GPU. O uso de GPU pode ser usado em conjunto com outras ferramentas de criação de perfil, como o uso da CPU, para correlacionar a atividade de CPU e GPU que podem contribuir para problemas de desempenho em seu aplicativo.  
   
- [Documento de log de gráficos](../debugger/graphics-log-document.md)  
+ [Documentos de log de gráfico](../debugger/graphics-log-document.md)  
  Para começar o exame de um log de gráficos registrado, use a janela do documento de Log de Gráficos para selecionar um quadro capturado (ou mesmo um pixel específico) para que seja possível examinar em detalhes os *eventos* (ou seja, as chamadas à API DirectX) que o afetam.  
   
- [Análise de quadros](../debugger/graphics-frame-analysis.md)  
+ [Análise de Quadros](../debugger/graphics-frame-analysis.md)  
  Depois de selecionar um quadro, use a Análise de Quadros de Gráficos para examinar e ajustar seu desempenho de renderização.  
   
  [Lista de Eventos](../debugger/graphics-event-list.md)  
  Depois de selecionar um quadro, use a **Lista de Eventos de Gráficos** para examinar os eventos e determinar se eles estão relacionados ao problema de renderização.  
   
- [Estado](../debugger/graphics-state.md)  
+ [State](../debugger/graphics-state.md)  
  A janela estado ajuda você a entender o estado de gráficos que está ativo no momento do evento atual.  
   
  [Estágios de Pipeline](../debugger/graphics-pipeline-stages.md)  
@@ -79,9 +79,9 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  [Exemplos](../debugger/graphics-diagnostics-examples.md)  
  Vários exemplos demonstram como usar as ferramentas de Diagnóstico de Gráficos juntas para diagnosticar diferentes tipos de problemas de renderização.  
   
-## <a name="related-sections"></a>Seções Relacionadas  
+## <a name="related-sections"></a>Seções relacionadas  
   
-|Cargo|Descrição|  
+|Título|Descrição|  
 |-----------|-----------------|  
 |[Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)|Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Elementos gráficos e jogos do DirectX](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Fornece artigos que discutem as tecnologias de gráficos do DirectX.|

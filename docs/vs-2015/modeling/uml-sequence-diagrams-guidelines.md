@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850130"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de sequência UML: diretrizes
@@ -39,7 +39,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>{1&gt;Neste tópico&lt;1}
+## <a name="in-this-topic"></a>Neste tópico
  [Usando diagramas de sequência UML](#Using)
 
  [Etapas básicas para desenhar diagramas de sequência](#BasicSteps)
@@ -54,7 +54,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
  [Descrevendo estruturas de controle com fragmentos](#Fragments)
 
-## <a name="Using"></a>Usando diagramas de sequência UML
+## <a name="using-uml-sequence-diagrams"></a><a name="Using"></a> Usando diagramas de sequência UML
  Você pode usar diagramas de sequência para uma variedade de finalidades em diferentes níveis de detalhes do programa. As ocasiões típicas para desenhar um diagrama de sequência são as seguintes:
 
 - Se você tiver um diagrama de caso de uso que resume os usuários do sistema e suas metas, você pode desenhar diagramas de sequência para descrever como os principais componentes do sistema interagem para atender à meta de cada caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).
@@ -79,7 +79,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 #### <a name="use-case-details"></a>Detalhes de caso de uso
  Um caso de uso representa a meta de um usuário, junto com uma sequência de etapas para atingir a meta. A sequência de etapas pode ser descrita de várias maneiras. Uma opção é desenhar um diagrama de sequência que mostre as interações entre os usuários e os principais componentes do sistema. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Etapas básicas para desenhar diagramas de sequência
+## <a name="basic-steps-for-drawing-sequence-diagrams"></a><a name="BasicSteps"></a> Etapas básicas para desenhar diagramas de sequência
  Para obter uma lista completa de elementos em diagramas de sequência, consulte [diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
@@ -115,7 +115,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 3. Para mostrar uma mensagem proveniente de uma origem de evento desconhecida (9) ou difusões para destinatários desconhecidos (10), desenhe uma mensagem assíncrona de ou para um espaço em branco no diagrama. Essas mensagens são chamadas de *mensagens encontradas* (9) e *mensagens perdidas* (10).
 
     > [!NOTE]
-    > Para mover um grupo de linhas de vida que perderam ou encontrou mensagens, siga estas etapas para selecionar as linhas de vida antes de movê-las: Desenhe um retângulo em volta dessas linhas de vida ou pressione e mantenha pressionada a tecla **Ctrl** enquanto clica em cada linha da vida. Se você usar **selecionar tudo** ou **Ctrl**+a para selecionar todas as **linhas de vida** e, em seguida, movê-las, todas as mensagens perdidas ou encontradas anexadas a essas linhas de vida não serão movidas. Se esse cenário ocorrer, será possível mover essas mensagens separadamente.
+    > Para mover um grupo de linhas de vida que perderam ou encontrou mensagens, siga estas etapas para selecionar as linhas de vida antes de movê-las: Desenhe um retângulo em volta dessas linhas de vida ou pressione e mantenha pressionada a tecla **Ctrl** enquanto clica em cada linha da vida. Se você usar **selecionar tudo** ou **Ctrl** + a para selecionar todas as**linhas de** vida e, em seguida, movê-las, todas as mensagens perdidas ou encontradas anexadas a essas linhas de vida não serão movidas. Se esse cenário ocorrer, será possível mover essas mensagens separadamente.
 
 4. Desenhe diagramas de sequência para cada mensagem principal para o mesmo componente ou sistema.
 
@@ -123,7 +123,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 - Arraste uma mensagem para cima ou para baixo em sua linha da vida. Você pode arrastá-lo sobre outras mensagens ou para dentro ou fora de um bloco de execução.
 
-     \- ou -
+     \- ou –
 
 - Clique na mensagem e use as teclas **seta para cima** e seta para **baixo** para ajustar as posições das mensagens. Use **Shift + seta para cima** e **Shift + seta para baixo** para alterar a ordem das mensagens.
 
@@ -165,11 +165,11 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 2. Arraste a interação para o pacote.
 
-     \- ou -
+     \- ou –
 
      Clique com o botão direito do mouse na interação e clique em **recortar**. Clique com o botão direito do mouse no pacote e clique em **colar**.
 
-## <a name="Simple"></a>Criando e usando diagramas de sequência simples
+## <a name="creating-and-using-simple-sequence-diagrams"></a><a name="Simple"></a> Criando e usando diagramas de sequência simples
  A forma mais simples e mais amplamente usada do diagrama de sequência contém apenas linhas de vida e mensagens. Um diagrama desse tipo permite mostrar claramente uma sequência típica de interações entre objetos no seu design ou entre o sistema e seus usuários. Isso é muitas vezes suficiente para ajudá-lo a discutir e comunicar seu design.
 
  Aqui estão algumas coisas a serem consideradas ao desenhar um diagrama de sequência simples.
@@ -179,7 +179,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 - Use a ferramenta **síncrona** para descrever uma interação na qual o remetente espera que o destinatário retorne uma resposta (3).
 
-     Um **<\<retornar > seta >** será mostrado no final da ocorrência de execução. Indica o retorno do controle para o remetente.
+     Uma **<\<return>>** seta será exibida no final da ocorrência de execução. Indica o retorno do controle para o remetente.
 
 - Use a ferramenta **assíncrona** para descrever uma interação na qual o remetente pode continuar imediatamente sem esperar o receptor (4).
 
@@ -256,13 +256,13 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 - Algumas linhas de vida parecem lidar com mais de um tipo de tarefa. É fácil encontrar uma frase sucinta que descreve as responsabilidades de cada linha de vida, resumindo o trabalho que ele faz em resposta a cada mensagem que recebe.
 
-## <a name="ClassesAndLifelines"></a>Classes e linhas de vida
+## <a name="classes-and-lifelines"></a><a name="ClassesAndLifelines"></a> Classes e linhas de vida
  As linhas de vida em seus diagramas de sequência mostram instâncias de classes ou interfaces de componente. Você pode nomear uma linha de vida de duas maneiras:
 
 |**Para essa finalidade**|**Usar este formato**|
 |--------------------------|-------------------------|
 |Instância anônima de um tipo.<br /><br /> Use-a se você tiver apenas uma linha da vida de cada tipo.|*typeName*|
-|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectName*:*typeName*|
+|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectname*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Criando linhas de vida de tipos
  Você pode criar novas linhas de vida de classes que você já definiu, por exemplo, em um diagrama de classe.
@@ -274,7 +274,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 - Arraste uma classe, componente ou interface do Gerenciador de modelos UML para um diagrama de sequência.
 
-   \- ou -
+   \- ou –
 
   1. Clique com o botão direito do mouse na classe, componente ou interface em seu respectivo diagrama e, em seguida, clique em **Criar linha de vida**.
 
@@ -323,7 +323,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
          A classe ou interface aparece no diagrama de classe.
 
-         \- ou -
+         \- ou –
 
     3. Arraste a nova interface do **Gerenciador de modelos UML** para um componente ou porta em um diagrama de componente.
 
@@ -332,7 +332,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 ### <a name="creating-classes-for-parameters"></a>Criando classes para parâmetros
  Você pode incluir parâmetros nas mensagens em um diagrama de sequência. Você pode usar um diagrama de classe UML para descrever os tipos de parâmetro.
 
-## <a name="Multiple"></a>Criando sequências de interação reutilizáveis
+## <a name="creating-reusable-interaction-sequences"></a><a name="Multiple"></a> Criando sequências de interação reutilizáveis
  Você pode usar um diagrama separado para descrever uma sequência que contém detalhes que você deseja separar, ou que seja comum entre vários diagramas.
 
  Você pode criar um retângulo de uso de interação (12) em um diagrama que aponta para os detalhes em outro diagrama.
@@ -349,7 +349,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 3. Clique duas vezes no nome no uso da interação e renomeie-o para descrever o efeito da sequência reutilizável neste diagrama.
 
-     \- ou -
+     \- ou –
 
      Escreva o nome como uma chamada de função, com parâmetros.
 
@@ -357,7 +357,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
      Clique em **criar nova sequência** para criar um novo diagrama de sequência
 
-     \- ou -
+     \- ou –
 
      Clique em **vincular à sequência** para vincular a um diagrama existente.
 
@@ -384,14 +384,14 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 - Clique duas vezes no uso da interação.
 
-     \- ou -
+     \- ou –
 
      Clique com o botão direito do mouse no uso da interação e clique em **ir para sequência**.
 
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Criando um espaço reservado com um uso de interação
  Você pode criar um uso de interação sem vinculá-lo a outro diagrama. Você pode usar isso como um espaço reservado para uma parte da sequência cujos detalhes ainda devem ser configurados. Use o nome do uso de interação para indicar o resultado desejado.
 
-## <a name="Collapse"></a>Recolhendo grupos de linhas de vida
+## <a name="collapsing-groups-of-lifelines"></a><a name="Collapse"></a> Recolhendo grupos de linhas de vida
  Você pode recolher um conjunto de linhas de vida, para que o grupo apareça como uma linha da vida. Isso ajuda a Visualizar um grupo de objetos como um único componente. As mensagens e as utilizações de interação entre as linhas de vida em um grupo recolhido são ocultas. As mensagens e as sequências de interação que incluem outras linhas de vida são mostradas.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>Para recolher um grupo de linhas de vida juntas
@@ -416,7 +416,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
     > [!NOTE]
     > O nome do grupo será perdido, junto com todos os links do grupo para comentários ou itens de trabalho.
 
-## <a name="Fragments"></a>Descrevendo estruturas de controle com fragmentos
+## <a name="describing-control-structures-with-fragments"></a><a name="Fragments"></a> Descrevendo estruturas de controle com fragmentos
  Você pode usar fragmentos combinados (13) para definir loops, ramificações e processamentos simultâneos em um diagrama de sequência. Como alternativa, considere usar um diagrama de atividade em vez disso. O diagrama de atividade não é tão útil na exibição de mensagens entre atores, mas, em alguns casos, é melhor na exibição de loops, ramificações e simultaneidade.
 
  Para obter uma lista completa dos tipos de fragmento, consulte [descrever o fluxo de controle com fragmentos em diagramas de sequência UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
@@ -442,5 +442,5 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 
 5. Para adicionar novas mensagens a um fragmento, use as ferramentas de mensagem ou copie e Cole.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classe UML: referenciar](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: o esboço de interações usando diagramas](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

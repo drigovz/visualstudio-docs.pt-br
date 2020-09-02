@@ -1,87 +1,84 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
-ms.date: 11/04/2016
+title: 'IDebugComPlusSymbolProvider:: LoadSymbolsFromStream | Microsoft Docs'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
 ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 50ff4d2ca585b243cf5b040e355a94ecb3a0576d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176765"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-O fluxo de dados de símbolos de depuração de cargas.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxe
-
-```cpp
-HRESULT LoadSymbolsFromStream(
-    ULONG32   ulAppDomainID,
-    GUID      guidModule,
-    ULONGLONG baseAddress,
-    IUnknown* pUnkMetadataImport,
-    IStream*  pStream
-);
-```
-
-```csharp
-int LoadSymbolsFromStream(
-    uint    ulAppDomainID,
-    Guid    guidModule,
-    ulong   baseAddress,
-    object  pUnkMetadataImport,
-    IStream pStream
-);
-```
-
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
-
- [in] Identificador do domínio do aplicativo.
-
-`guidModule`
-
- [in] Identificador exclusivo do módulo.
-
-`baseAddress`
-
- [in] Endereço de memória de base.
-
-`pUnkMetadataImport`
-
- [in] Objeto que contém os metadados de símbolo.
-
-`pStream`
-
- [in] Fluxo de dados que contém os símbolos.
-
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
-
-## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface. As chamadas de método as [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) método.
-
-```cpp
-HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
-    ULONG32 ulAppDomainID,
-    GUID guidModule,
-    ULONGLONG baseOffset,
-    IUnknown* pUnkMetadataImport,
-    IStream* pStream
-)
-{
-    return LoadSymbolsFromStreamWithCorModule (ulAppDomainID, guidModule, baseOffset, pUnkMetadataImport, NULL, pStream);
-}
-```
-
-## <a name="see-also"></a>Consulte também
-- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Carrega símbolos de depuração dado o fluxo de dados.  
+  
+## <a name="syntax"></a>Sintaxe  
+  
+```cpp#  
+HRESULT LoadSymbolsFromStream(  
+   ULONG32   ulAppDomainID,  
+   GUID      guidModule,  
+   ULONGLONG baseAddress,  
+   IUnknown* pUnkMetadataImport,  
+   IStream*  pStream  
+);  
+```  
+  
+```csharp  
+int LoadSymbolsFromStream(  
+   uint    ulAppDomainID,  
+   Guid    guidModule,  
+   ulong   baseAddress,  
+   object  pUnkMetadataImport,  
+   IStream pStream  
+);  
+```  
+  
+#### <a name="parameters"></a>Parâmetros  
+ `ulAppDomainID`  
+ no Identificador do domínio do aplicativo.  
+  
+ `guidModule`  
+ no Identificador exclusivo do módulo.  
+  
+ `baseAddress`  
+ no Endereço de memória base.  
+  
+ `pUnkMetadataImport`  
+ no Objeto que contém os metadados do símbolo.  
+  
+ `pStream`  
+ no Fluxo de dados que contém os símbolos.  
+  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
+  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) . O método chama o método [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) .  
+  
+```cpp#  
+HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(  
+    ULONG32 ulAppDomainID,  
+    GUID guidModule,  
+    ULONGLONG baseOffset,  
+    IUnknown* pUnkMetadataImport,  
+    IStream* pStream  
+)  
+{  
+    return LoadSymbolsFromStreamWithCorModule (ulAppDomainID, guidModule, baseOffset, pUnkMetadataImport, NULL, pStream);  
+}  
+```  
+  
+## <a name="see-also"></a>Consulte Também  
+ [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537898"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Como: pastas de trabalho abertas programaticamente
@@ -37,7 +37,7 @@ ms.locfileid: "85537898"
 
 - Uma pasta de trabalho chamada `YourWorkbook.xls` deve existir em um diretório chamado `Test` na unidade C.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Como: abrir arquivos de texto programaticamente como pastas de trabalho](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [Como criar programaticamente novas pastas de trabalho](../vsto/how-to-programmatically-create-new-workbooks.md)

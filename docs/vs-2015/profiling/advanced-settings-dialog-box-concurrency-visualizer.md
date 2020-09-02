@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849813"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
@@ -31,10 +31,10 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
   
  Os caminhos dos arquivos .exe e .dll são armazenados no arquivo de rastreamento quando o rastreamento é coletado.  A alteração dessa configuração não afeta nenhum rastreamento coletado anteriormente.  
   
-## <a name="buffering"></a>Buffer  
+## <a name="buffering"></a>de resposta  
  A Visualização Simultânea usa ETW (Rastreamento de Eventos para Windows) ao coletar um rastreamento.  O ETW usa diversos buffers conforme ele armazena eventos.  As configurações padrão de buffer ETW podem não ser ideais em todos os casos e, em alguns casos, podem causar problemas como eventos perdidos.  Você pode usar a guia armazenamento em buffer para definir as configurações de buffer ETW. Para obter mais informações, consulte [Rastreamento de eventos](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) e [Estrutura EVENT_TRACE_PROPERTIES](https://msdn.microsoft.com/library/aa363784(VS.85).aspx).  
   
-## <a name="filter"></a>Filtro  
+## <a name="filter"></a>Filtrar  
  Na guia Filtro, você pode selecionar o conjunto de eventos que a Visualização Simultânea coleta. Selecionar um subconjunto de eventos limita os tipos de dados que são exibidos nos relatórios, reduz o tamanho de cada rastreamento e reduz o tempo necessário para processar rastreamentos.  
   
 ### <a name="clr-events"></a>Eventos CLR  
@@ -44,7 +44,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
  Por padrão, os eventos do CLR são coletados apenas quando um processo gerenciado é atribuído, porque eles normalmente são desnecessários para processos nativos.  Em alguns casos (por exemplo, quando um processo nativo está hospedando o CLR), você terá que coletar eventos do CLR para um processo nativo.  Se esse é o caso, selecione a caixa de seleção **Coletar Para Processos Nativos**.  
   
 ### <a name="disable-rundown-events"></a>Desabilitar eventos de encerramento  
- O CLR gera eventos de dois provedores: runtime e encerramento.  Se você quiser coletar eventos de runtime do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para obter mais informações, consulte [Provedores ETW de CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ O CLR gera eventos de dois provedores: runtime e encerramento.  Se você quiser coletar eventos de runtime do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para obter mais informações, consulte [provedores de ETW do CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Eventos de amostragem  
  Você pode usar eventos de exemplo para coletar as pilhas de chamadas associadas à execução do thread. Esses eventos são coletados aproximadamente uma vez por milissegundo para threads em execução no processo atual. Se você desabilitar a coleta de eventos de exemplo, o tamanho do rastreamento coletado será reduzido, mas não será possível exibir nenhuma pilha de chamadas associada à execução do thread.  
@@ -84,8 +84,8 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
   
 - Um arquivo de rastreamento da Visualização Simultânea (*.CVTrace)  
   
-  Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Selecionar a caixa de seleção **Excluir arquivos de ETL (Log de Rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento que são armazenados no disco.  
+  Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Marcar a caixa de seleção **Excluir arquivos de log de rastreamento de eventos (ETL) após a análise** reduz a quantidade de dados de rastreamento armazenados em seu disco.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Apenas Meu Código](../profiling/just-my-code-threads-view.md)   
- [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
+ [Marcadores do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-markers.md)

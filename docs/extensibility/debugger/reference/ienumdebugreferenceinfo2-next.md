@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugReferenceInfo2::Próximo | Microsoft Docs
+title: 'IEnumDebugReferenceInfo2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4bb10504b2dbe02856364baa0670a7c825ef80cd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715321"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
@@ -43,18 +43,18 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `celt`\
-[em] O número de elementos para recuperar. Também especifica o tamanho `rgelt` máximo da matriz.
+no O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
 `rgelt`\
-[dentro, fora] Matriz de elementos [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) a serem preenchidos.
+[entrada, saída] Matriz de elementos [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) a ser preenchida.
 
 `pceltFetched`\
-[fora] Retorna o número de elementos realmente retornados em `rgelt`.
+fora Retorna o número de elementos realmente retornados em `rgelt` .
 
-## <a name="return-value"></a>Valor retornado
- Se for bem-sucedido, retornará `S_OK`. Retornos `S_FALSE` se menos do que o número solicitado de elementos pode ser devolvido; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos puder ser retornado; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193596"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
@@ -35,13 +35,13 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
  **Alocação**  
  Padrão. Coleta dados de alocação de memória do .NET Framework.  
   
- **Tempo de Vida**  
+ **Tempo de vida**  
  Coleta dados de alocação de memória do .NET Framework e dados de tempo de vida do objeto do .NET Framework.  
   
 ## <a name="required-options"></a>Opções obrigatórias  
  A opção **GC** pode ser usada somente com a opção **Inicializar**.  
   
- **Inicialize:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.  
   
 ## <a name="example"></a>Exemplo  
@@ -51,8 +51,8 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criação de perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

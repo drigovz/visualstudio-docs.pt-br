@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192859"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Usando vários processadores para compilar projetos
@@ -34,13 +34,13 @@ MSBuild pode tirar proveito dos sistemas com vários processadores ou vários n�
  Em compilações paralelas, erros e exceções podem ocorrer em momentos diferentes que fazem em uma compilação não paralelos e quando um projeto não será compilado, continuam as compilações do projeto. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não irá parar qualquer compilação do projeto que está criando em paralelo com aqueles que falharam. Outros projetos continuam a ser criados até que tenham êxito ou falha. No entanto, se <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> foi habilitado, então nenhum build será interrompido, mesmo que ocorra um erro.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Arquivos de Projeto do Visual C++ (.vcproj) e de Solução (.sln)  
- Ambos os arquivos de projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] (.vcproj) e de solução (.sln) que podem ser passados para a [Tarefa MSBuild](../msbuild/msbuild-task.md). Para projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], VCWrapperProject é chamado e então o projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno é criado. Para [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] soluções, um SolutionWrapperProject é criado e, em seguida, interno [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projeto é criado. Em ambos os casos, o projeto resultante será tratado o mesmo que qualquer outro projeto do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ Os [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] arquivos de projetos (. vcproj) e de solução (. sln) podem ser passados para a [tarefa do MSBuild](../msbuild/msbuild-task.md). Para projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], VCWrapperProject é chamado e então o projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] interno é criado. Para [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] soluções, um SolutionWrapperProject é criado e, em seguida, interno [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projeto é criado. Em ambos os casos, o projeto resultante será tratado o mesmo que qualquer outro projeto do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="multi-process-execution"></a>Execução Multiprocesso  
  Quase todas as atividades relacionadas à compilação exigem o diretório atual para permanecer constante ao longo do processo de compilação para evitar erros de caminho. Portanto, projetos não podem ser executado em threads diferentes em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] porque eles causaria vários diretórios a serem criados.  
   
  Para evitar esse problema, mas ainda permitir compilações para vários processadores, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usa "isolamento de processo." Usando o isolamento do processo, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode criar no máximo `n` processos, onde `n` é igual ao número de processadores disponíveis no sistema. Por exemplo, se [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compilações uma solução em um sistema com dois processadores, e somente dois processos de compilação são criados. Novamente, esses processos são usados para criar todos os projetos na solução.  
   
-## <a name="see-also"></a>Veja também  
- [Criação de vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Criando vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)
