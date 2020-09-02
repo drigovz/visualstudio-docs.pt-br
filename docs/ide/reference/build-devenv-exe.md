@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595755"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -33,7 +33,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="arguments"></a>Argumentos
 
-- *Solutionname*
+- *SolutionName*
 
   Obrigatórios. O caminho completo e o nome do arquivo de solução.
 
@@ -41,7 +41,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   Opcional. O nome da configuração da solução (por exemplo, `Debug` ou `Release`) que será usado para compilar a solução nomeada em *SolutionName*. Se várias plataformas de solução estiverem disponíveis, você também precisará especificar a plataforma (por exemplo, `Debug|Win32`). Se esse argumento não for especificado ou for uma cadeia de caracteres vazia (`""`), a ferramenta usará a configuração ativa da solução.
 
-- `/Project`*ProjName*
+- `/Project` *ProjName*
 
   Opcional. O caminho e o nome de um arquivo de projeto na solução. Insira um caminho relativo da pasta *SolutionName* para o arquivo de projeto, o nome de exibição do projeto ou o caminho completo e o nome do arquivo de projeto.
 
@@ -49,7 +49,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   Opcional. Nome de uma configuração de build do projeto (por exemplo, `Debug` ou `Release`) que será usado ao compilar o projeto nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se esta opção for especificada, ela substituirá o argumento *SolnConfigName*.
 
-- `/Out`*Nome de saída*
+- `/Out`*NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -75,8 +75,8 @@ devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharp
 
 ## <a name="see-also"></a>Confira também
 
-- [Criar e limpar projetos e soluções](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Compilar e limpar projetos e soluções](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/Reconstruir (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

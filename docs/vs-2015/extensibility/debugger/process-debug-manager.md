@@ -1,5 +1,5 @@
 ---
-title: Processar o Gerenciador de depuração | Microsoft Docs
+title: Gerenciador de depuração de processos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153674"
 ---
 # <a name="process-debug-manager"></a>Gerenciador de depuração do processo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O Gerenciador de depuração do processo (PDM) é um componente do Visual Studio que gerencia os programas e processos, tornando-os disponíveis para a sessão de depuração manager e os mecanismos de depuração.  
+O Gerenciador de depuração de processos (PDM) é um componente do Visual Studio que gerencia programas e processos, disponibilizando-os para o Gerenciador de depuração de sessão e os mecanismos de depuração.  
   
- O PDM gerencia todos os processos que podem ser depurados. Para ser depurado, um programa deve ser registrado com o PDM. Isso é feito no momento em que o programa é iniciado por uma porta ou um mecanismo de depuração.  
+ O PDM gerencia todos os processos que podem ser depurados. Para ser depurado, um programa deve ser registrado com o PDM. Isso é feito no momento em que o programa é iniciado, seja por uma porta ou um mecanismo de depuração.  
   
-## <a name="see-also"></a>Consulte também  
- [Processos](../../extensibility/debugger/processes.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Processar](../../extensibility/debugger/processes.md)   
  [Mecanismo de depuração](../../extensibility/debugger/debug-engine.md)   
- [Portas](../../extensibility/debugger/ports.md)   
- [Programas](../../extensibility/debugger/programs.md)   
+ [Porta](../../extensibility/debugger/ports.md)   
+ [Suplementa](../../extensibility/debugger/programs.md)   
  [Componentes do depurador](../../extensibility/debugger/debugger-components.md)

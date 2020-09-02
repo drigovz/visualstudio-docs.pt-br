@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar um executável não faça parte de uma solução do Visual Studio | Microsoft Docs'
+title: 'Como: Depurar um executável que não faz parte de uma solução do Visual Studio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e33233fd313cd6a73013ce55333a860663ddb601
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704519"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Como: Depurar um executável não faça parte de uma solução do Visual Studio
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Como depurar um executável que não faça parte de uma solução do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Às vezes, convém depurar um executável que não é parte de um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pode ser um executável criado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou um executável que você recebeu de outra pessoa.  
@@ -40,32 +40,32 @@ ms.locfileid: "65704519"
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Para criar um projeto EXE para um executável existente  
   
-1. Sobre o **arquivo** menu, clique em **abra** e selecione **projeto**.  
+1. No menu **arquivo** , clique em **abrir** e selecione **projeto**.  
   
-2. No **Abrir projeto** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
+2. Na caixa de diálogo **Abrir projeto** , clique na lista suspensa ao lado da caixa **nome do arquivo** e selecione **todos os arquivos de projeto**.  
   
-3. Localizar o executável e, em seguida, clique em **Okey**.  
+3. Localize o executável e clique em **OK**.  
   
      Isso cria uma solução temporária que contém o executável.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Para importar um executável em uma solução do Visual Studio  
   
-1. Sobre o **arquivo** , aponte para **Add Project**e, em seguida, clique em **projeto existente**.  
+1. No menu **arquivo** , aponte para **Adicionar projeto**e clique em **projeto existente**.  
   
-2. No **Adicionar projeto existente** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
+2. Na caixa de diálogo **Adicionar projeto existente** , clique na lista suspensa ao lado da caixa **nome do arquivo** e selecione **todos os arquivos de projeto**.  
   
 3. Localize e selecione o executável.  
   
 4. Clique em **OK**.  
   
-5. Iniciar o executável escolhendo um comando de execução, tais como **inicie**, da **depurar** menu.  
+5. Inicie o executável escolhendo um comando de execução, como **Iniciar**, no menu **depurar** .  
   
     > [!NOTE]
     > Nem todas as linguagens de programação oferecem suporte a projetos EXE. Instale o [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] se precisar usar esse recurso.  
   
      Quando você estiver depurando um executável sem código-fonte, os recursos de depuração disponíveis serão limitados, independente de você anexar a um executável em execução ou adicionar o executável a uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se o arquivo executável for compilado sem informações de depuração em um formato compatível, os recursos disponíveis serão mais limitados. Se você tiver o código-fonte, a melhor abordagem será importar o código-fonte para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e criar uma compilação de depuração do executável no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>Consulte também  
- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)   
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Arquivos DBG](https://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

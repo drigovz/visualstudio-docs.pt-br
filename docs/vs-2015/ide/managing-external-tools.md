@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651347"
 ---
 # <a name="managing-external-tools"></a>Gerenciando ferramentas externas
@@ -88,7 +88,7 @@ ms.locfileid: "72651347"
 > Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="adding-new-tools"></a>Adicionar novas ferramentas
- É possível adicionar uma ferramenta externa ao menu **Ferramentas**. Abra a caixa de diálogo **Ferramentas Externas**, clique em **Adicionar** e, em seguida, preencha as informações. Por exemplo, a seguinte entrada faz com que o Windows Explorer abra o diretório do arquivo atualmente aberto no Visual Studio:
+ É possível adicionar uma ferramenta externa ao menu **Ferramentas**. Abra a caixa de diálogo **Ferramentas externas** e clique em **Adicionar**e preencha as informações. Por exemplo, a seguinte entrada faz com que o Windows Explorer abra o diretório do arquivo atualmente aberto no Visual Studio:
 
 1. Título: Abrir local do arquivo
 
@@ -104,22 +104,22 @@ ms.locfileid: "72651347"
 
 |Name|Argumento|Descrição|
 |----------|--------------|-----------------|
-|Caminho do item|$(ItemPath)|O nome de arquivo completo do arquivo atual (unidade + caminho + nome de arquivo).|
+|Caminho de item|$(ItemPath)|O nome de arquivo completo do arquivo atual (unidade + caminho + nome de arquivo).|
 |Diretório do item|$(ItemDir)|O diretório do arquivo atual (unidade + caminho).|
-|Nome de Arquivo do Item|$(ItemFilename)|O nome de arquivo do arquivo atual (nome de arquivo).|
+|Nome de arquivo de item|$(ItemFilename)|O nome de arquivo do arquivo atual (nome de arquivo).|
 |Extensão de item|$(ItemExt)|A extensão de nome de arquivo do arquivo atual.|
 |Linha atual|$(CurLine)|A posição da linha atual do cursor na janela de código.|
 |Coluna atual|$(CurCol)|A posição da coluna atual do cursor na janela de código.|
 |Texto atual|$(CurText)|O texto selecionado.|
 |Caminho de destino|$(TargetPath)|O nome de arquivo completo do item a ser criado (unidade + caminho + nome de arquivo).|
-|Diretório de Destino|$(TargetDir)|O diretório do item a ser criado.|
-|Nome de Destino|$(TargetName)|O nome de arquivo do item a ser criado.|
-|Extensão de Destino|$(TargetExt)|A extensão de nome de arquivo do item a ser criada.|
-|Diretório binário|$(BinDir)|O local final do binário que está sendo criado (definido como unidade + caminho). Por exemplo: **\\...\My Documents\Visual Studio \<Versão>\\<ProjectName\>\bin\debug**|
-|Diretório do Projeto|$(ProjDir)|O diretório do projeto atual (unidade + caminho).|
+|Diretório de destino|$(TargetDir)|O diretório do item a ser criado.|
+|Nome de destino|$(TargetName)|O nome de arquivo do item a ser criado.|
+|Extensão de destino|$(TargetExt)|A extensão de nome de arquivo do item a ser criada.|
+|Diretório binário|$(BinDir)|O local final do binário que está sendo criado (definido como unidade + caminho). Por exemplo:** \\ . ..\My Documentos\Visual Studio \<Version> \\<ProjectName \> \bin\Debug**|
+|Diretório do projeto|$(ProjDir)|O diretório do projeto atual (unidade + caminho).|
 |Nome do arquivo de projeto|$(ProjFileName)|O nome de arquivo do projeto atual (unidade + caminho + nome de arquivo).|
 |Diretório da solução|$(SolutionDir)|O diretório da solução atual (unidade + caminho).|
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|
 
-## <a name="see-also"></a>Consulte também
- [Ferramentas de build de C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+## <a name="see-also"></a>Consulte Também
+ [Ferramentas de Build do C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

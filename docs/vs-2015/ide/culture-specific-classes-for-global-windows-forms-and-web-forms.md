@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c2d048387e4e81763a63b5bf010c36c87beeacf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665917"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Classes específicas de cultura para Windows Forms e Web Forms globais
@@ -70,10 +70,10 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
 
  `$100.00`
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName> <xref:System.Globalization.DateTimeFormatInfo>
  <xref:System.Globalization.NumberFormatInfo>
  <xref:System.Globalization.Calendar>
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>
  <xref:System.String.Format%2A?displayProperty=fullName>
- [Globalizando e localizando aplicativos](../ide/globalizing-and-localizing-applications.md)
+ [Globalizando e Localizando aplicativos](../ide/globalizing-and-localizing-applications.md)

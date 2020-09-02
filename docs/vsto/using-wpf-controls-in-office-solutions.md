@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189757"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF em soluções do Office
@@ -59,11 +59,11 @@ Você não pode adicionar controles WPF diretamente a elementos de interface do 
 
     - Para painéis de tarefas personalizados, adicione um item de **controle de usuário** ao projeto. Para obter mais informações, consulte [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6. Na guia **controles de usuário WPF** do ProjectName da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer do painel Ações, região de formulário ou painel de tarefas personalizado.
+6. Na guia *ProjectName* **controles de usuário WPF** do ProjectName da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer do painel Ações, região de formulário ou painel de tarefas personalizado.
 
-     O Visual Studio cria automaticamente um objeto de <xref:System.Windows.Forms.Integration.ElementHost> que hospeda o controle de usuário do WPF no elemento de interface do usuário.
+     O Visual Studio cria automaticamente um <xref:System.Windows.Forms.Integration.ElementHost> objeto que hospeda o controle de usuário do WPF no elemento da interface do usuário.
 
-7. Recompilar o projeto.
+7. Recompile o projeto.
 
 #### <a name="to-add-wpf-controls-to-a-document-or-worksheet-in-a-document-level-project"></a>Para adicionar controles do WPF a um documento ou planilha em um projeto de nível de documento
 
@@ -79,22 +79,22 @@ Você não pode adicionar controles WPF diretamente a elementos de interface do 
 
 6. Abra o designer para o controle de usuário Windows Forms.
 
-7. Na guia **controles de usuário WPF** do ProjectName da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer.
+7. Na guia *ProjectName* **controles de usuário WPF** do ProjectName da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer.
 
-     O Visual Studio cria automaticamente um objeto <xref:System.Windows.Forms.Integration.ElementHost> que hospeda o controle de usuário do WPF no controle de usuário Windows Forms.
+     O Visual Studio cria automaticamente um <xref:System.Windows.Forms.Integration.ElementHost> objeto que hospeda o controle de usuário do WPF no controle de usuário Windows Forms.
 
 8. Escreva o código que adiciona programaticamente o controle de usuário Windows Forms ao documento ou pasta de trabalho. Para obter mais informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
     > [!NOTE]
     > Não é possível arrastar o Windows Forms controle de usuário para o documento ou planilha no designer.
 
-9. Recompilar o projeto.
+9. Recompile o projeto.
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Hospedar controles WPF usando a classe ElementHost
 
 O Visual Studio fornece recursos que ajudam a usar controles de Windows Forms em suas soluções do Office, mas não fornece recursos semelhantes para controles WPF. Por exemplo, você pode adicionar Windows Forms controles a documentos e planilhas em tempo de design arrastando controles da **caixa de ferramentas**ou em tempo de execução usando métodos auxiliares. No entanto, essas ferramentas não estão disponíveis para controles WPF.
 
-Os controles do WPF usam a classe <xref:System.Windows.Forms.Integration.ElementHost> como uma camada de integração entre um controle Windows Forms ou formulário e os controles do WPF. Quando você adiciona controles WPF à sua solução em tempo de design, o Visual Studio gera automaticamente um objeto <xref:System.Windows.Forms.Integration.ElementHost> para você.
+Os controles do WPF usam a <xref:System.Windows.Forms.Integration.ElementHost> classe como uma camada de integração entre um controle de Windows Forms ou formulário e os controles do WPF. Quando você adiciona controles WPF à sua solução em tempo de design, o Visual Studio gera automaticamente um <xref:System.Windows.Forms.Integration.ElementHost> objeto para você.
 
 ## <a name="wpf-resources"></a>Recursos do WPF
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre problemas de arquitetura e design para hospe
 
 - [Interoperação do WPF e Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Controles dos Windows Forms e controles do WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Controles de Windows Forms e controles WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Para obter mais informações sobre como adicionar controles WPF a Windows Forms controles e formulários no Visual Studio em tempo de design, consulte os seguintes tópicos:
 
@@ -116,7 +116,7 @@ Para obter mais informações sobre como adicionar controles WPF a Windows Forms
 
 - [Walkthrough: estilo de conteúdo do WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
 - [Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

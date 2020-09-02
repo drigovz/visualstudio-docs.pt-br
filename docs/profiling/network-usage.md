@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541707"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analisar o uso de rede em aplicativos UWP
@@ -58,7 +58,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 |**Cabeçalhos**|Informações sobre os cabeçalhos de solicitação do evento.|
 |**Corpo**|A solicitação e os dados de carga de resposta.|
 |**Parâmetros**|Os valores e os nomes de parâmetro de cadeia de caracteres de consulta.|
-|**Cookies**|Dados de cookie de solicitação e resposta.|
+|**Arar**|Dados de cookie de solicitação e resposta.|
 |**Timings**|Um gráfico dos estágios de aquisição dos recursos selecionados.|
 
  A barra de **resumo** de rede mostra o número de operações de rede que são exibidos em qualquer ponto, a quantidade de dados que foi transferida, quanto tempo levou para baixar e o número de erros (solicitações com respostas 4xx ou 5xx) visível.
@@ -72,7 +72,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 
 3. O botão de impressão de resposta (dentro da guia Corpo) pode ajudá-lo a analisar as cargas de resposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando a legibilidade do conteúdo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Blog do Visual Studio: introdução ao inspetor de rede do Visual Studio](https://devblogs.microsoft.com/visualstudio/)

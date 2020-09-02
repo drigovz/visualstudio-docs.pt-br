@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189720"
 ---
 # <a name="design-and-create-office-solutions"></a>Projetar e criar soluções do Office
@@ -44,7 +44,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  A versão de .NET Framework que você escolhe para seu projeto é necessária nos computadores dos usuários finais para que sua solução seja executada. Por exemplo, se o projeto tiver como alvo a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] será necessário nos computadores dos usuários finais. Neste exemplo, sua solução não será executada se apenas o .NET Framework 3,5 estiver instalado nos computadores dos usuários finais.
+  A versão de .NET Framework que você escolhe para seu projeto é necessária nos computadores dos usuários finais para que sua solução seja executada. Por exemplo, se o seu projeto for direcionado para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] será necessário nos computadores dos usuários finais. Neste exemplo, sua solução não será executada se apenas o .NET Framework 3,5 estiver instalado nos computadores dos usuários finais.
 
   Se você migrar um projeto de suplemento do VSTO destinado ao .NET Framework 3,5, o Visual Studio alterará a estrutura de destino do seu projeto para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, dependendo da versão do Office instalada.
 
@@ -53,7 +53,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
   Se o Visual Studio alterar o .NET Framework de destino para seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de selecionar também a versão correspondente do .NET Framework na caixa de diálogo **pré-requisitos** . Essa seleção não é alterada automaticamente quando você altera a estrutura de destino do seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
-> Não é possível direcionar o .NET Framework 3,5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Os projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos pela primeira vez no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> Não é possível direcionar o .NET Framework 3,5 ou anterior em projetos do Office que você cria usando o [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] . Os projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos pela primeira vez no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Entenda quando os PIAs do Office são necessários nos computadores dos usuários finais
  Por padrão, os assemblies de interoperabilidade primária do Office (PIAs) não precisam ser instalados nos computadores dos usuários finais se a propriedade **inserir tipos de interoperabilidade** de cada referência do pia do Office no projeto estiver definida como **true**, que é o valor padrão. Nesse cenário, as informações de tipo para os tipos de PIA usados pela sua solução são inseridas no assembly da solução quando você cria o projeto. Em tempo de execução, as informações de tipo inserido são usadas em vez dos PIAs para chamar o modelo de objeto baseado em COM do aplicativo do Office. Para obter mais informações sobre como os tipos de PIAs são inseridos em sua solução, consulte [equivalência e tipos de interoperabilidade inseridos](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
@@ -63,7 +63,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 ### <a name="understand-the-client-profile"></a>Entender o perfil do cliente
  O perfil de cliente do .NET Framework é um subconjunto do .NET Framework completo. Você pode direcionar o perfil de cliente do .NET Framework se precisar usar apenas os recursos do cliente no .NET Framework e desejar fornecer a experiência de implantação mais rápida possível para sua solução do Office. Para obter mais informações, consulte [.NET Framework perfil do cliente](/dotnet/framework/deployment/client-profile).
 
- Quando você cria um projeto do Office que tem como alvo a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] é destinada por padrão. Se você quiser desenvolver para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]completo, deverá definir essa opção depois que o projeto for criado. Para obter mais informações, consulte [Como direcionar a uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Quando você cria um projeto do Office direcionado [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o, o [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] é direcionado por padrão. Se você quiser desenvolver para o completo [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , deverá definir essa opção depois que o projeto for criado. Para obter mais informações, consulte [Como direcionar a uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Criar soluções para a edição de 64 bits do Microsoft Office
  Microsoft Office está disponível em edições de 64 bits e 32 bits. Para criar soluções do Office que podem ser executadas em qualquer edição, a configuração de plataforma de destino para seu projeto deve ser definida como **qualquer CPU**. Esse é o valor padrão para projetos do Office. Para obter mais informações, consulte [criar soluções do Office](../vsto/building-office-solutions.md).
@@ -73,7 +73,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 ## <a name="assemblies-in-office-solutions"></a>Assemblies em soluções do Office
  Quando você cria um projeto do Office usando as ferramentas de desenvolvimento do Office no Visual Studio, o código que você escreve é eventualmente compilado em um assembly. O assembly é implantado em um servidor compartilhado ou em um diretório no computador cliente.
 
- Os assemblies nas soluções do Office são carregados por um aplicativo do Office. Depois que o assembly é carregado, o código no assembly pode responder a eventos que são gerados no aplicativo, por exemplo, quando um usuário clica em um item de menu. O código no assembly também pode chamar o modelo de objeto para automatizar e estender o aplicativo e pode usar qualquer uma das classes no [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]. Para obter mais informações, consulte [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md) e [arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md).
+ Os assemblies nas soluções do Office são carregados por um aplicativo do Office. Depois que o assembly é carregado, o código no assembly pode responder a eventos que são gerados no aplicativo, por exemplo, quando um usuário clica em um item de menu. O código no assembly também pode chamar o modelo de objeto para automatizar e estender o aplicativo e pode usar qualquer uma das classes no [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] . Para obter mais informações, consulte [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md) e [arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md).
 
  As soluções do Office usam manifestos de implantação e manifestos de aplicativo para identificar o assembly. Os manifestos contêm informações sobre o nome, a versão e o local do assembly, para que o aplicativo possa localizar, vincular e executar o assembly correto. Para obter mais informações, consulte [manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
@@ -91,7 +91,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 ## <a name="referenced-assemblies"></a>Assemblies referenciados
  O assembly pode fazer referência a outros assemblies, que são listados nas referências do projeto. No entanto, um assembly de projeto em nível de documento não pode fazer referência a outro assembly de projeto de nível de documento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)
 - [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)

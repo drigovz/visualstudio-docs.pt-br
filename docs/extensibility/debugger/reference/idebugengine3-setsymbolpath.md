@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Microsoft Docs
+title: 'IDebugEngine3:: SetSymbolPath | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730666"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Define os caminhos ou caminhos pesquisados para depurar símbolos.
+Define o caminho ou caminhos que são pesquisados para símbolos de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ int SetSymbolPath(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `szSymbolSearchPath`\
-[em] String contendo o caminho de pesquisa do símbolo ou caminhos. Consulte "Observações" para obter detalhes. Não pode ser nulo.
+no Cadeia de caracteres que contém o caminho de pesquisa de símbolo ou caminhos. Consulte "Comentários" para obter detalhes. Não pode ser nulo.
 
 `szSymbolCachePath`\
-[em] String contendo o caminho local onde os símbolos podem ser armazenados em cache. Não pode ser nulo.
+no Cadeia de caracteres que contém o caminho local onde os símbolos podem ser armazenados em cache. Não pode ser nulo.
 
 `Flags`\
-[em] Não utilizado; sempre definido para 0.
+no Não usado; sempre definido como 0.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A `szSymbolSearchPath` string é uma lista de um ou mais caminhos, separados por ponto e vírgula, para procurar símbolos. Esses caminhos podem ser um caminho local, um caminho no estilo UNC ou uma URL. Esses caminhos também podem ser uma mistura de diferentes tipos. Se o caminho for UNC \\(por exemplo, \Symserver\Symbols), então o mecanismo de depuração deve determinar se o caminho é para um `szSymbolCachePath`servidor de símbolos e deve ser capaz de carregar símbolos desse servidor, cacheando-os no caminho especificado por .
+ A cadeia `szSymbolSearchPath` de caracteres é uma lista de um ou mais caminhos, separados por ponto-e-vírgula, para procurar por símbolos. Esses caminhos podem ser um caminho local, um caminho de estilo UNC ou uma URL. Esses caminhos também podem ser uma combinação de tipos diferentes. Se o caminho for UNC (por exemplo, \\ \Symserver\Symbols), o mecanismo de depuração deverá determinar se o caminho é para um servidor de símbolos e deve ser capaz de carregar símbolos desse servidor, armazenando-os no caminho especificado por `szSymbolCachePath` .
 
- O caminho do símbolo também pode conter um ou mais locais de cache. Os caches são listados em ordem prioritária, com o cache de maior prioridade primeiro e separados por símbolos *. Por exemplo:
+ O caminho do símbolo também pode conter um ou mais locais de cache. Os caches são listados em ordem de prioridade, com o cache de prioridade mais alta primeiro e separados por símbolos *. Por exemplo:
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com

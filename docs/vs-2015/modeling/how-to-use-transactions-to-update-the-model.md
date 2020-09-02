@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd66c62d74bfe63d8376b5520b42cb20c8c0a3a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651606"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Como usar transações para atualizar o modelo
@@ -21,12 +21,12 @@ ms.locfileid: "72651606"
 
 As transações verificam se as alterações feitas no repositório são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.
 
- Sempre que o código do programa modificar, adicionar ou excluir qualquer elemento na loja no SDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de visualização e modelagem, ele deverá fazer isso dentro de uma transação. Deve haver uma instância ativa do <xref:Microsoft.VisualStudio.Modeling.Transaction> associada ao repositório quando a alteração acontece. Isso se aplica a todos os elementos de modelo, relações, formas, diagramas e suas propriedades.
+ Sempre que o código do programa modificar, adicionar ou excluir qualquer elemento na loja na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] visualização e no SDK de modelagem, ele deverá fazer isso dentro de uma transação. Deve haver uma instância ativa do <xref:Microsoft.VisualStudio.Modeling.Transaction> associada ao repositório quando a alteração acontece. Isso se aplica a todos os elementos de modelo, relações, formas, diagramas e suas propriedades.
 
  O mecanismo de transação ajuda a evitar Estados inconsistentes. Se ocorrer um erro durante uma transação, todas as alterações serão revertidas. Se o usuário executar um comando Undo, cada transação recente será tratada como uma única etapa. O usuário não pode desfazer partes de uma alteração recente, a menos que você as coloque explicitamente em transações separadas.
 
 ## <a name="opening-a-transaction"></a>Abrindo uma transação
- O método mais conveniente de gerenciar uma transação é com uma instrução `using` delimitada por uma instrução `try...catch`:
+ O método mais conveniente de gerenciar uma transação é com uma `using` instrução colocada em uma `try...catch` instrução:
 
 ```
 Store store; ...
@@ -52,13 +52,13 @@ catch (Exception ex)
 }
 ```
 
- Se uma exceção que impede o `Commit()` final ocorrer durante as alterações, o repositório será redefinido para seu estado anterior. Isso ajuda a garantir que os erros não deixem o modelo em um estado inconsistente.
+ Se uma exceção que impede o final `Commit()` ocorrer durante as alterações, o repositório será redefinido para seu estado anterior. Isso ajuda a garantir que os erros não deixem o modelo em um estado inconsistente.
 
- Você pode fazer qualquer número de alterações dentro de uma transação. Você pode abrir novas transações dentro de uma transação ativa. As transações aninhadas devem ser confirmadas ou revertidas antes do término da transação que a contém. Para obter mais informações, consulte o exemplo da propriedade <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ Você pode fazer qualquer número de alterações dentro de uma transação. Você pode abrir novas transações dentro de uma transação ativa. As transações aninhadas devem ser confirmadas ou revertidas antes do término da transação que a contém. Para obter mais informações, consulte o exemplo para a <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> propriedade.
 
- Para tornar as alterações permanentes, você deve `Commit` a transação antes que ela seja descartada. Se ocorrer uma exceção que não é detectada dentro da transação, o repositório será redefinido para seu estado antes das alterações.
+ Para tornar as alterações permanentes, você deve fazer `Commit` a transação antes que ela seja descartada. Se ocorrer uma exceção que não é detectada dentro da transação, o repositório será redefinido para seu estado antes das alterações.
 
-## <a name="rolling-back-a-transaction"></a>Reverter uma transação
+## <a name="rolling-back-a-transaction"></a>Revertendo uma transação
  Para garantir que o repositório permaneça ou seja revertido para seu estado antes da transação, você pode usar qualquer uma dessas táticas:
 
 1. Gerar uma exceção que não é detectada dentro do escopo da transação.
@@ -81,7 +81,7 @@ catch (Exception ex)
 
  As regras não são acionadas após um comando Undo, refazer ou reversão.
 
-## <a name="transaction-context"></a>Contexto da transação
+## <a name="transaction-context"></a>Contexto de transação
  Cada transação tem um dicionário no qual você pode armazenar as informações desejadas:
 
  `store.TransactionManager`
