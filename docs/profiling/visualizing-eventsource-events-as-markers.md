@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64811541"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
@@ -37,10 +37,10 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |win:LogAlways|Normal|
 |win:Critical|Crítico|
 |win:Error|Crítico|
-|win:Warning|Alta|
+|win:Warning|Alto|
 |win:Informational|Normal|
-|win:Verbose|Baixo|
-|Maior que win:verbose|Baixo|
+|win:Verbose|Baixa|
+|Maior que win:verbose|Baixa|
 
 ### <a name="series-name"></a>Nome da série
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.
@@ -72,11 +72,11 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |------------------------|---------------------------------------|
 |0|Normal|
 |1|Crítico|
-|2|Alta|
-|3|Alta|
+|2|Alto|
+|3|Alto|
 |4|Normal|
-|5|Baixo|
-|Todos os outros valores|Baixo|
+|5|Baixa|
+|Todos os outros valores|Baixa|
 
 ### <a name="series-name"></a>Nome da série
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.
@@ -94,4 +94,4 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 > O uso de SpanID para aninhar intervalos, permitir que eles parcialmente sobreponham o mesmo thread ou permitir que eles comecem em um thread e terminem em outro não tem suporte.
 
 ## <a name="see-also"></a>Confira também
-- [Marcadores de visualizadores de concorrência](../profiling/concurrency-visualizer-markers.md)
+- [Marcadores do Visualizador de simultaneidade](../profiling/concurrency-visualizer-markers.md)

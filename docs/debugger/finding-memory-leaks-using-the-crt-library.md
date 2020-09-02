@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350479"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Localizar vazamentos de memória com a biblioteca CRT
@@ -186,7 +186,7 @@ Você pode usar o número de alocação para definir um ponto de interrupção n
 
 1. Na janela **inspecionar** , digite `_crtBreakAlloc` a coluna **nome** .
 
-   Se você estiver usando a versão de DLL multi-threaded da biblioteca CRT (a opção/MD), adicione o operador de contexto:`{,,ucrtbased.dll}_crtBreakAlloc`
+   Se você estiver usando a versão de DLL multi-threaded da biblioteca CRT (a opção/MD), adicione o operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`
    
    Verifique se os símbolos de depuração estão carregados. Caso contrário, `_crtBreakAlloc` será relatado como não *identificado*.
 
@@ -229,7 +229,7 @@ Para gerar o conteúdo de uma `_CrtMemState` estrutura, passe a estrutura para a
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics`gera um despejo de estado de memória semelhante a:
+`_ CrtMemDumpStatistics` gera um despejo de estado de memória semelhante a:
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,15 +252,15 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference`compara os Estados de memória `s1` e `s2` retorna um resultado em ( `s3` ) que é a diferença entre `s1` e `s2` .
+`_CrtMemDifference` compara os Estados de memória `s1` e `s2` retorna um resultado em ( `s3` ) que é a diferença entre `s1` e `s2` .
 
 Uma técnica para localizar vazamentos de memória começa colocando `_CrtMemCheckpoint` chamadas no início e no final do seu aplicativo e, em seguida, usando `_CrtMemDifference` para comparar os resultados. Se `_CrtMemDifference` o mostrar um vazamento de memória, você poderá adicionar mais `_CrtMemCheckpoint` chamadas para dividir seu programa usando uma pesquisa binária, até isolar a origem do vazamento.
 
 ## <a name="false-positives"></a>Falsos positivos
 
- `_CrtDumpMemoryLeaks`pode fornecer indicações falsas de vazamentos de memória se uma biblioteca marcar alocações internas como blocos normais em vez de blocos CRT ou blocos de cliente. Nesse caso, `_CrtDumpMemoryLeaks` não é capaz de reconhecer a diferença entre alocações de usuário e alocações internas de biblioteca. Se os destruidores globais das alocações de biblioteca forem executados após o ponto onde você chama `_CrtDumpMemoryLeaks`, cada alocação interna da biblioteca será relatada como um vazamento de memória. As versões da biblioteca de modelos padrão anteriores ao Visual Studio .NET podem fazer com que o `_CrtDumpMemoryLeaks` relate esses falsos positivos.
+ `_CrtDumpMemoryLeaks` pode fornecer indicações falsas de vazamentos de memória se uma biblioteca marcar alocações internas como blocos normais em vez de blocos CRT ou blocos de cliente. Nesse caso, `_CrtDumpMemoryLeaks` não é capaz de reconhecer a diferença entre alocações de usuário e alocações internas de biblioteca. Se os destruidores globais das alocações de biblioteca forem executados após o ponto onde você chama `_CrtDumpMemoryLeaks`, cada alocação interna da biblioteca será relatada como um vazamento de memória. As versões da biblioteca de modelos padrão anteriores ao Visual Studio .NET podem fazer com que o `_CrtDumpMemoryLeaks` relate esses falsos positivos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Detalhes de heap de depuração CRT](../debugger/crt-debug-heap-details.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

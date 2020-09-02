@@ -7,10 +7,10 @@ ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
 ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249967"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Desabilitar o reconhecimento de DPI no Visual Studio
@@ -95,6 +95,6 @@ Se, posteriormente, você quiser reabilitar as notificações de dimensionamento
 
 Se a transição para o reconhecimento de DPI não estiver funcionando conforme o esperado no Visual Studio, verifique se você tem o valor `dpiAwareness` na subchave **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** do Editor do Registro. Exclua o valor se ele estiver presente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Dimensionamento automático no Windows Forms](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)

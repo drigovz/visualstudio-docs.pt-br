@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b67ccf926267e3475a43d7f09bf3ccb361dc8484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159300"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica quais informações devem ser recuperadas sobre um campo de desmontagem.  
+Especifica quais informações recuperar sobre um campo de desmontagem.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_DISASSEMBLY_STREAM_FIELDS {   
@@ -65,59 +65,59 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS { 
   
 ## <a name="members"></a>Membros  
  DSF_ADDRESS  
- Inicialização/usar o `bstrAddress` campo.  
+ Inicializar/usar o `bstrAddress` campo.  
   
  DSF_ADDRESSOFFSET  
- Inicialização/usar o `bstrAddressOffset` campo.  
+ Inicializar/usar o `bstrAddressOffset` campo.  
   
  DSF_CODEBYTES  
- Inicialização/usar o `bstrCodeBytes` campo.  
+ Inicializar/usar o `bstrCodeBytes` campo.  
   
  DSF_OPCODE  
- Inicialização/usar o `bstrOpCode` campo.  
+ Inicializar/usar o `bstrOpCode` campo.  
   
  DSF_OPERANDS  
- Inicialização/usar o `bstrOperands` campo.  
+ Inicializar/usar o `bstrOperands` campo.  
   
  DSF_SYMBOL  
- Inicialização/usar o `bstrSymbol` campo.  
+ Inicializar/usar o `bstrSymbol` campo.  
   
  DSF_CODELOCATIONID  
- Inicialização/usar o `uCodeLocationId` campo.  
+ Inicializar/usar o `uCodeLocationId` campo.  
   
  DSF_POSITION  
- Inicialização/usar o `posBeg` e `posEnd` campos.  
+ Inicializar/usar os `posBeg` `posEnd` campos e.  
   
  DSF_DOCUMENTURL  
- Inicialização/usar o `bstrDocumentUrl` campo.  
+ Inicializar/usar o `bstrDocumentUrl` campo.  
   
  DSF_BYTEOFFSET  
- Inicialização/usar o `dwByteOffset` campo.  
+ Inicializar/usar o `dwByteOffset` campo.  
   
  DSF_FLAGS  
- Inicialização/usar o `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.  
+ Inicializar/usar o `dwFlags` campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).  
   
  DSF_OPERANDS_SYMBOLS  
- Incluir nomes de símbolos no `bstrOperands` campo.  
+ Inclua nomes de símbolo no `bstrOperands` campo.  
   
  DSF_ALL  
  Especifica todos os campos para o fluxo de desmontagem.  
   
 ## <a name="remarks"></a>Comentários  
- Passado como um parâmetro para o [leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método para indicar quais campos da [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) são de estrutura a ser inicializado.  
+ Passado como um parâmetro para o método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar quais campos da estrutura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devem ser inicializados.  
   
- Usado para o `dwFields` membro o `DisassemblyData` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.  
+ Usado para o `dwFields` membro da `DisassemblyData` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.  
   
- Esses valores podem ser combinados com um bit a bit `OR`.  
+ Esses valores podem ser combinados com um bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [Leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   

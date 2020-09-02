@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546907"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Você pode definir propriedades em [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou em qualquer uma de suas classes derivadas, que incluem:
 
-- `ILayerModel`-o modelo
+- `ILayerModel` -o modelo
 
-- `ILayer`-cada camada
+- `ILayer` -cada camada
 
-- `ILayerDependencyLink`-os links entre camadas
+- `ILayerDependencyLink` -os links entre camadas
 
 - `ILayerComment`
 

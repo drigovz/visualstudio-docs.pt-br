@@ -9,10 +9,10 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249902"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Como configurar e usar Live Unit Testing
@@ -218,7 +218,7 @@ Use os seguintes atributos para excluir um assembly inteiro de testes de Live Un
 - Para NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
 - Para MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de teste de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog de Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)

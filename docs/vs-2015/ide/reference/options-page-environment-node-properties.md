@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595014"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
@@ -32,7 +32,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |ShowStatusBar|Get/Set (Booliano)|Determina se a barra de status está visível.|
 |WindowMenuContainsNItems|Get/Set (Curto)|Determina como as janelas de documento são contidas na parte inferior do menu do Windows.|
 |MRUListContainsNItems|Get/Set (Curto)|Determina quantos arquivos são exibidos no submenu "Usados Mais Recentemente".|
-|Animations|Get/Set (Booliano)|Determina se o IDE (ambiente de desenvolvimento integrado) usa animação na barra de status.|
+|Animações|Get/Set (Booliano)|Determina se o IDE (ambiente de desenvolvimento integrado) usa animação na barra de status.|
 |AnimationSpeed|Get/Set (Curto)||
 |AutoAdjustExperience|Get/Set (Booliano)|Ajusta automaticamente a experiência visual conforme o desempenho do cliente.|
 |RichClientExperienceOptions|Get/Set (Enum)|Habilita a experiência visual avançada do cliente com valores em <xref:EnvDTE100.vsRichClientExperienceOptions>.|
@@ -100,7 +100,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |------------------------|-----------|-----------------|
 |Idioma|Get/Set (Cadeia de Caracteres)|Valor LCID para o idioma atual do Visual Studio.|
 
-## <a name="keyboard"></a>Teclado
+## <a name="keyboard"></a>Keyboard
  `DTE.Properties("Environment", "Keyboard")`
 
 |Nome do item de propriedade|Valor|Descrição|
@@ -135,7 +135,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 
 |Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir página inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar página inicial|
+|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir Página Inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar Página Inicial|
 |StartPageRSSUrl|Get/Set (Cadeia de Caracteres)|URL para o RSS feed usado na inicialização.|
 |StartPageRefreshDownloadedContent|Get/Set (Booliano)|Atualiza a Página Inicial após cada passagem do intervalo especificado em StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Curto)|Intervalo em minutos para atualizar a Página Inicial.|
@@ -160,10 +160,10 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Origem, Design, Externo).|
 |ViewSourceExternalProgram|Get/Set (Cadeia de Caracteres)|O caminho do visualizador da fonte externa.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
 
-- [Controlando as configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controlando configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes de itens de propriedades em páginas de opções](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-- [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Página Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

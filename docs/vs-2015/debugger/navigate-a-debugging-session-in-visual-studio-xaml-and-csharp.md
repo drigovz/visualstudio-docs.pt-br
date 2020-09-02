@@ -1,5 +1,5 @@
 ---
-title: Navegar por uma sessão de depuração (Xaml e C#) | Microsoft Docs
+title: Navegar por uma sessão de depuração (XAML e C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,202 +15,202 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156726"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por uma sessão de depuração no Visual Studio (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este início rápido demonstra como navegar de sessões de depuração do Visual Studio e como exibir e alterar o estado do programa em uma sessão.
+Este guia de início rápido demonstra como navegar nas sessões de depuração do Visual Studio e como exibir e alterar o estado do programa em uma sessão.
 
- Este guia de início rápido é para desenvolvedores que são novos na depuração com o Visual Studio e a sessão de depuração para desenvolvedores que desejam saber mais sobre como navegar em um Visual Studio. Ele não ensina a arte de depurar a si próprio. Os métodos no código de exemplo destinam-se somente para demonstrar os procedimentos de depuração descritos neste tópico. Os métodos não utilizam as práticas recomendadas de design de aplicativo ou função. Na verdade, você rapidamente descobrirá que os métodos e o aplicativo em si, não fazem muita coisa alguma.
+ Este início rápido é para desenvolvedores que são novos na depuração com o Visual Studio e para desenvolvedores que desejam saber mais sobre como navegar em uma sessão de depuração do Visual Studio. Ele não ensina a arte de depurar a si próprio. Os métodos no código de exemplo são projetados apenas para demonstrar os procedimentos de depuração descritos neste tópico. Os métodos não empregam práticas recomendadas de design de aplicativo ou função. Na verdade, você descobrirá rapidamente que os métodos e o próprio aplicativo não fazem muito nada.
 
- As seções deste início rápido foram projetadas para serem o mais independentes possível, portanto, você pode ignorar qualquer seção que inclui informações que você já estiver familiarizado com. Você também não é necessárias para criar um aplicativo de exemplo; No entanto, nós recomendamos que faça isso e tornamos o processo mais fácil possível.
+ As seções desse início rápido foram projetadas para ser tão independentes quanto possível, para que você possa ignorar qualquer seção que inclua informações com as quais você já esteja familiarizado. Você também não precisa criar um aplicativo de exemplo; no entanto, recomendamos isso e tornamos o processo o mais fácil possível.
 
- **Atalhos de teclado do depurador.** A navegação pelo depurador Visual Studio é otimizada para o mouse e teclado. Muitas das etapas neste tópico incluem o acelerador de teclado ou a tecla de atalho em um comentário entre parênteses. Por exemplo, (teclado: F5) indica que pressionar a tecla F5 inicia ou continua a execução do depurador.
+ **Atalhos de teclado do depurador.** A navegação do depurador do Visual Studio é otimizada para o mouse e o teclado. Muitas das etapas neste tópico incluem o acelerador de teclado ou a tecla de atalho em um comentário entre parênteses. Por exemplo, (teclado: F5) indica que pressionar a tecla F5 inicia ou continua a execução do depurador.
 
 ## <a name="in-this-topic"></a>Neste tópico
  Você pode aprender como:
 
 - [Criar o aplicativo de exemplo](#BKMK_CreateTheApplication)
 
-- [Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa](#BKMK_StepInto)
+- [Definir e executar para um ponto de interrupção, entrar em um método e examinar os dados do programa](#BKMK_StepInto)
 
-- [Para failover e fora de métodos](#BKMK_StepIntoOverOut)
+- [Percorrer, acima e fora de métodos](#BKMK_StepIntoOverOut)
 
-- [Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável](#BKMK_ConditionCursorVisualize)
+- [Definir um ponto de interrupção condicional, executar até o cursor e visualizar uma variável](#BKMK_ConditionCursorVisualize)
 
-- [Editar e continuar, se recuperar de uma exceção](#BKMK_EditContinueRecoverExceptions)
+- [Editar e continuar, recuperar de uma exceção](#BKMK_EditContinueRecoverExceptions)
 
-## <a name="BKMK_CreateTheApplication"></a> Criar o aplicativo de exemplo
- Depuração é sobre código, portanto, o aplicativo de exemplo usa a estrutura do aplicativo Windows Store apenas para criar um arquivo de origem no qual você pode ver como funciona a navegar de uma sessão de depuração e como examinar e alterar o estado do programa. Todo o código que você vai invocar é chamado do construtor da página principal; Nenhum controle é adicionado e nenhum evento é tratado.
+## <a name="create-the-sample-app"></a><a name="BKMK_CreateTheApplication"></a> Criar o aplicativo de exemplo
+ A depuração é sobre o código, portanto, o aplicativo de exemplo usa a estrutura do aplicativo da Windows Store somente para criar um arquivo de origem no qual você pode ver como a navegação de uma sessão de depuração funciona e como examinar e alterar o estado do programa. Todo o código que você chamará será chamado do construtor da página principal; nenhum controle é adicionado e nenhum evento é manipulado.
 
- **Crie um aplicativo da Windows Store de c# padrão.** Abra o Visual Studio. Na home page, escolha o **novo projeto** link. Na caixa de diálogo Novo projeto, escolha **Visual c#** na **instalado** lista e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. Visual Studio cria uma nova solução e projeto e exibe o designer de MainPage. XAML e o editor de código XAML.
+ **Crie um aplicativo padrão da Windows Store em C#.** Abra o Visual Studio. Na home page, escolha o link **novo projeto** . Na caixa de diálogo novo projeto, escolha **Visual C#** na lista **instalado** e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. O Visual Studio cria uma nova solução e um novo projeto e exibe o designer MainPage. XAML e o editor de código XAML.
 
- **Abra o arquivo MainPage.xaml.cs.** Clique com botão direito em qualquer lugar no editor XAML e escolha **Exibir código**. O arquivo de code-behind MainPage.xaml.cs é exibido. Observe que apenas um método, o `MainPage()` construtor, está listado no arquivo.
+ **Abra o arquivo de origem MainPage.xaml.cs.** Clique com o botão direito do mouse em qualquer lugar no editor XAML e escolha **Exibir código**. O arquivo code-behind MainPage.xaml.cs é exibido. Observe que apenas um método, o `MainPage()` Construtor, está listado no arquivo.
 
- **Substitua o construtor MainPage com o código de exemplo.** Exclua o método MainPage(). Siga este link: [Código de exemplo de navegação (Xaml e c#) do depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção c# para a área de transferência. (Escolha **volta** no navegador ou Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
+ **Substitua o Construtor MainPage pelo código de exemplo.** Exclua o método MainPage (). Siga este link: [código de exemplo de navegação do depurador (XAML e C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção C# para a área de transferência. (Escolha **voltar** no navegador ou no Visualizador da ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, Cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
 
  {1&gt;Agora você pode acompanhar os exemplos neste tópico.&lt;1}
 
-## <a name="BKMK_StepInto"></a> Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa
- A maneira mais comum que você pode iniciar uma sessão de depuração é escolher **iniciar depuração** da **depurar** menus (teclado: F5). Execução começa e continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção ou o aplicativo seja encerrado.
+## <a name="set-and-run-to-a-breakpoint-step-into-a-method-and-examine-program-data"></a><a name="BKMK_StepInto"></a> Definir e executar para um ponto de interrupção, entrar em um método e examinar os dados do programa
+ A maneira mais comum de iniciar uma sessão de depuração é escolher **Iniciar Depuração** no menu **depurar** (teclado: F5). A execução começa e continua até que um ponto de interrupção seja atingido, você suspende a execução manualmente, uma exceção ocorre ou o aplicativo termina.
 
- Quando a execução é suspensa no depurador, você pode exibir o valor de uma variável ativa em uma dica de dados, passando o mouse sobre a variável. Você também pode abrir as janelas locais e Autos para ver listas de variáveis Active Directory e seus valores atuais. Adicionando uma ou mais variáveis para um permite a janela Inspeção você se concentrar no valor das variáveis como o aplicativo continua a execução.
+ Quando a execução é suspensa no depurador, você pode exibir o valor de uma variável ativa em uma dica de dados passando o mouse sobre a variável. Você também pode abrir as janelas locais e automáticas para ver as listas das variáveis ativas e seus valores atuais. A adição de uma ou mais variáveis a uma janela de inspeção permite que você se concentre no valor das variáveis à medida que o aplicativo continua a execução.
 
- Depois que você suspenda a execução do aplicativo (que também é chamado de invadir o depurador), você pode controlar a maneira como o restante do código do programa é executado. Você pode continuar a linha por linha, movendo-se de uma chamada de método para o método em si, ou você pode executar um método chamado em uma única etapa. Esses procedimentos são chamados percorrendo o aplicativo. Você também pode retomar a execução padrão do aplicativo, executando até o próximo ponto de interrupção definido ou até a linha em que você posicionou o cursor. Você pode parar a sessão de depuração a qualquer momento. O depurador foi projetado para executar as operações de limpeza necessárias e sair da execução.
+ Depois de suspender a execução do aplicativo (que também é chamado de quebra no depurador), você controla a maneira como o restante do código do programa é executado. Você pode continuar linha por linha, movendo de uma chamada de método para o próprio método ou pode executar um método chamado em uma única etapa. Esses procedimentos são chamados percorrendo o aplicativo. Você também pode retomar a execução padrão do aplicativo, executando até o próximo ponto de interrupção definido ou até a linha em que você posicionou o cursor. Você pode parar a sessão de depuração a qualquer momento. O depurador foi projetado para executar as operações de limpeza necessárias e sair da execução.
 
 ### <a name="example-1"></a>Exemplo 1
- Neste exemplo, você definir um ponto de interrupção no construtor MainPage do arquivo MainPage.xaml.cs, intervir o primeiro método, exibe valores de variáveis e, em seguida, parar a depuração.
+ Neste exemplo, você definirá um ponto de interrupção no Construtor MainPage do arquivo MainPage.xaml.cs, entrará no primeiro método, exibirá valores de variáveis e, em seguida, interromperá a depuração.
 
- **Defina um ponto de interrupção.** Defina um ponto de interrupção na instrução `methodTrack = "Main Page";` no construtor MainPage. Escolha a linha na medianiz sombreada do editor de código fonte (teclado: Posicione o cursor na linha e escolha a tecla F9).
+ **Definir um ponto de interrupção.** Defina um ponto de interrupção na instrução `methodTrack = "Main Page";` no Construtor MainPage. Escolha a linha na medianiz sombreada do editor de código-fonte (teclado: Posicione o cursor na linha e escolha a tecla F9).
 
  ![Intervir](../debugger/media/dbg-basics-stepinto.png "DBG_Basics_StepInto")
 
  O ícone de ponto de interrupção aparece na medianiz.
 
- **Execute o ponto de interrupção.** Iniciar a sessão de depuração, escolhendo **iniciar depuração** sobre o **depurar** menu (teclado: F5).
+ **{2&amp;gt;Execute até o ponto de interrupção.&amp;lt;2}** Inicie a sessão de depuração escolhendo **Iniciar Depuração** no menu **depurar** (teclado: F5).
 
- O aplicativo começa a ser executado e suspende a execução imediatamente antes da instrução em que você definir o ponto de interrupção. O ícone de linha atual na medianiz identifica o local e a instrução atual é realçada.
+ O aplicativo começa a ser executado e suspende a execução imediatamente antes da instrução na qual você define o ponto de interrupção. O ícone de linha atual na medianiz identifica seu local e a instrução atual é realçada.
 
- ![Defina um ponto de interrupção](../debugger/media/dbg-basics-setbreakpoint.png "DBG_Basics_SetBreakpoint")
+ ![Definir um ponto de interrupção](../debugger/media/dbg-basics-setbreakpoint.png "DBG_Basics_SetBreakpoint")
 
- Você agora está no controle da execução do aplicativo e pode examinar o estado do programa conforme você percorre as instruções do programa.
+ Agora você está no controle da execução do aplicativo e pode examinar o estado do programa ao percorrer as instruções do programa.
 
- **Passar para o método.** Sobre o **Debug** menu, escolha **intervir** (teclado: F11).
+ **Passe para o método.** No menu **depurar** , escolha **etapa em** (teclado: F11).
 
  ![Linha atual](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
 
- Observe que o depurador vai para a próxima linha, que é uma chamada para o método de exemplo 1. Escolha Step Into novamente. O depurador vai para o ponto de entrada do método Example1. Isso indica que o método foi carregado na pilha de chamadas e a memória para variáveis locais foram alocados.
+ Observe que o depurador passa para a próxima linha, que é uma chamada para o método example1. Escolha Entrar novamente. O depurador passa para o ponto de entrada do método example1. Isso indica que o método foi carregado na pilha de chamadas e que a memória para variáveis locais foi alocada.
 
  {1&gt;Quando você entra em uma linha de código, o depurador executa uma das seguintes ações:&lt;1}
 
 - {1&gt;Se a próxima instrução não for uma chamada para uma função em sua solução, o depurador executará a instrução, irá para a próxima instrução e suspenderá a execução.&lt;1}
 
-- Se a instrução for uma chamada para uma função em sua solução, o depurador se move para o ponto de entrada da função chamada e, em seguida, suspende a execução.
+- Se a instrução for uma chamada para uma função em sua solução, o depurador passará para o ponto de entrada da função chamada e, em seguida, suspenderá a execução.
 
-  Continue entrar nas instruções de exemplo 1, até atingir o ponto de saída. O depurador realça a chave de fechamento do método.
+  Continue a entrar nas instruções de example1 até atingir o ponto de saída. O depurador realça a chave de fechamento do método.
 
-  **Examine os valores de variáveis em dicas de dados.** Quando você passa o mouse sobre um nome de variável, o nome, o valor e o tipo da variável é exibida em uma dica de dados.
+  **Examine os valores de variáveis em dicas de dados.** Quando você passa o mouse sobre um nome de variável, o nome, o valor e o tipo da variável são exibidos em uma dica de dados.
 
   ![Dica de dados do depurador](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")
 
-  Passe o mouse sobre a variável `a`. Observe o nome, valor, tipo de dados. Passe o mouse sobre a variável `methodTrack`. Novamente, observe o nome, valor, tipo de dados.
+  Passe o mouse sobre a variável `a` . Observe o nome, o valor e o tipo de dados. Passe o mouse sobre a variável `methodTrack` . Novamente, observe o nome, o valor e o tipo de dados.
 
-  **Examine os valores de variáveis na janela locais.** Sobre o **Debug** , aponte para **Windows**e, em seguida, escolha **locais**. (Teclado: 4 ALT+).
+  **Examine os valores de variáveis na janela locais.** No menu **depurar** , aponte para **Windows**e escolha **locais**. (Teclado: Alt+4).
 
   ![Janela locais](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
-  As janelas de variáveis locais é uma exibição de árvore dos parâmetros e variáveis da função. As propriedades de uma variável de objeto são nós filho do próprio objeto. O `this` variável é um parâmetro oculto em todos os métodos do objeto que representa o objeto em si. Nesse caso, ele representa a classe MainPage. Porque `methodTrack` é um membro do tipo de classe, seu valor e os dados da MainPage são listados em uma linha embaixo `this`. Expanda o `this` nó para exibir o `methodTrack` informações.
+  O Windows local é uma exibição de árvore dos parâmetros e das variáveis da função. As propriedades de uma variável de objeto são nós filho do próprio objeto. A `this` variável é um parâmetro oculto em cada método de objeto que representa o próprio objeto. Nesse caso, representa a classe MainPage. Como `methodTrack` é um membro da classe MainPage, seu valor e o tipo de dados são listados em uma linha abaixo `this` . Expanda o `this` nó para exibir as `methodTrack` informações.
 
-  **Adicione uma inspeção para a variável methodTrack.** O `methodWatch` variável é usada em todo este guia de início rápido para mostrar os métodos chamados nos exemplos. Para tornar mais fácil de exibir o valor da variável, adicione-o para uma janela de observação. O nome da variável na janela locais com o botão direito e, em seguida, escolha **Adicionar inspeção**.
+  **Adicione uma inspeção para a variável methodTrack.** A `methodWatch` variável é usada em todo este início rápido para mostrar os métodos chamados nos exemplos. Para facilitar a exibição do valor da variável, adicione-o a uma janela de inspeção. Clique com o botão direito do mouse no nome da variável na janela locais e escolha **Adicionar inspeção**.
 
-  ![Janela de inspeção](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
+  ![janela Inspeção](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
 
-  Você pode inspecionar diversas variáveis em uma janela inspeção. Os valores de variáveis inspecionadas, como valores nas janelas de dica de dados e locais são atualizados sempre que a execução é suspensa. Você também pode adicionar variáveis à janela Inspeção do editor de códigos. Selecione a variável para assistir, direito do mouse e, em seguida, escolha **Adicionar inspeção**.
+  Você pode inspecionar diversas variáveis em uma janela Inspeção. Os valores das variáveis observadas, como valores nas janelas locais e de dica de dados, são atualizados sempre que a execução é suspensa. Você também pode adicionar variáveis à janela Watch a partir do editor de código. Selecione a variável a ser observada, clique com o botão direito do mouse e escolha **Adicionar inspeção**.
 
-## <a name="BKMK_StepIntoOverOut"></a> Para failover e fora de métodos
- Em contraste a entrar em um método chamado por um método pai, percorrendo um método executa o método filho e, em seguida, suspende a execução no método de chamada como o pai é retomada. Você pode entrar em um método quando você estiver familiarizado com a maneira como o método funciona e tiver certeza de que sua execução não afetará o problema que você está investigando.
+## <a name="step-into-over-and-out-of-methods"></a><a name="BKMK_StepIntoOverOut"></a> Percorrer, acima e fora de métodos
+ Em contraste com a depuração em um método chamado por um método pai, a depuração por um método executa o método filho e, em seguida, suspende a execução no método de chamada conforme o pai é retomado. Você pode passar por um método quando estiver familiarizado com a maneira como o método funciona e tem certeza de que sua execução não afetará o problema que você está investigando.
 
- Entrar em uma linha de código que não contém uma chamada de método executa a linha da mesma forma passo a passo para a linha.
+ A depuração em uma linha de código que não contém uma chamada de método executa a linha da mesma forma que a etapa na linha.
 
- Sair de um método filha continua a execução do método e, em seguida, suspende a execução após o método retornar para seu método de chamada. Você pode sair de uma função longa quando tiver determinado que o restante da função não é significativo.
+ A saída de um método filho continua a execução do método e, em seguida, suspende a execução depois que o método retorna ao seu método de chamada. Você pode sair de uma função longa quando tiver determinado que o restante da função não é significativo.
 
- Percorrendo tanto sair de uma função de executam a função.
+ {6&gt;Tanto passar sobre quanto sair de uma função executam a função.&lt;6}
 
- ![Etapa em, sobre e sair de métodos](../debugger/media/dbg-basics-stepintooverout.png "DBG_Basics_StepIntoOverOut")
+ ![Percorrer, acima e fora de métodos](../debugger/media/dbg-basics-stepintooverout.png "DBG_Basics_StepIntoOverOut")
 
 ### <a name="example-2"></a>Exemplo 2
- Neste exemplo, você entrar, failover e fora de métodos.
+ Neste exemplo, você passará para dentro e para fora dos métodos.
 
- **Chame o método Example2 no construtor MainPage.** Edite o construtor MainPage e substitua a linha após `methodTrack = String.Empty;` com `Example2();`.
+ **Chame o método example2 no Construtor MainPage.** Edite o Construtor MainPage e substitua a linha a seguir `methodTrack = String.Empty;` por `Example2();` .
 
- ![Chame o método de Example2 do método Demo](../debugger/media/dbg-basics-callexample2.png "DBG_Basics_CallExample2")
+ ![Chamar o método example2 do método demo](../debugger/media/dbg-basics-callexample2.png "DBG_Basics_CallExample2")
 
- **Execute o ponto de interrupção.** Iniciar a sessão de depuração, escolhendo **iniciar depuração** sobre o **depurar** menu (teclado: F5). O depurador suspende a execução no ponto de interrupção.
+ **{2&amp;gt;Execute até o ponto de interrupção.&amp;lt;2}** Inicie a sessão de depuração escolhendo **Iniciar Depuração** no menu **depurar** (teclado: F5). O depurador suspende a execução no ponto de interrupção.
 
- **Depurar a linha de código.** Sobre o **Debug** menu, escolha **Step Over** (teclado: F10). O depurador executa a `methodTrack = "MainPage";` instrução da mesma maneira como entrar na instrução.
+ **{2&amp;gt;Passe sobre a linha de código.&amp;lt;2}** No menu **depurar** , escolha **passar sobre** (teclado: F10). O depurador executa a `methodTrack = "MainPage";` instrução da mesma maneira que percorrendo a instrução.
 
- **Etapa em Example2 e Example2_A.** Escolha a tecla F11 para percorrer o método de exemplo 2. Continuar entrar nas instruções Example2 até que a linha `int x = Example2_A();`. Entrar novamente, essa linha para mover para o ponto de entrada de Example2_A. Continue a entrar em cada instrução de Example2_A até voltar à Example2.
+ **Entrar em example2 e Example2_A.** Escolha a tecla F11 para entrar no método de exemplo 2. Continue a entrar nas instruções example2 até chegar à linha `int x = Example2_A();` . Novamente, passe nessa linha para mudar para o ponto de entrada de Example2_A. Continue a entrar em cada instrução de Example2_A até retornar para example2.
 
  ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")
 
- **Passe por uma função.** Observe que na próxima linha em Example2, `int y = Example2_A();` é basicamente o mesmo que a linha anterior. Você pode passar sobre essa linha com segurança. Escolha a tecla F10 para mover a retomada de Example2 para essa segunda chamada para Example2_A. Escolha F10 para passar por esse método. Observe que o `methodTrack` cadeia de caracteres que indica o método Example2_A foi executado duas vezes. Você também observará que o depurador se move imediatamente para a próxima linha. Ele não suspender a execução em retoma o Example2 ponto.
+ **{2&amp;gt;Passar sobre uma função.&amp;lt;2}** Observe que a próxima linha em example2, `int y = Example2_A();` é basicamente a mesma que a linha anterior. Você pode passar sobre essa linha com segurança. Escolha a tecla F10 para mover da retomada de example2 para essa segunda chamada para Example2_A. Escolha F10 para passar por esse método. Observe que a `methodTrack` cadeia de caracteres indica que o método de Example2_A foi executado duas vezes. Você também observará que o depurador se move imediatamente para a próxima linha. Ele não suspende a execução no ponto em que o example2 é retomado.
 
- **Sair de uma função.** Escolha a tecla F11 para entrar no método Example2_B. Observe que não é muito diferente de Example2_A Example2_B. Para sair do método, escolha **depuração circular** sobre o **depurar** menus (teclado: SHIFT + F11). Observe que o `methodTrack` variável indica que Example2_B foi executado e que o depurador foi retornado para o ponto em que Example2 será retomada.
+ **{2&amp;gt;Sair de uma função.&amp;lt;2}** Escolha a tecla F11 para entrar em Example2_B método. Observe que Example2_B não é muito diferente da Example2_A. Para sair do método, escolha **sair** no menu **depurar** (teclado: Shift + F11). Observe que a `methodTrack` variável indica que Example2_B foi executado e que o depurador retornou ao ponto em que o example2 é retomado.
 
- **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** No menu Depurar, escolha Parar Depuração (atalho do teclado: Shift+F5). Isso encerra a sessão de depuração. 
 
-## <a name="BKMK_ConditionCursorVisualize"></a> Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável
- Um ponto de interrupção condicional Especifica uma condição que faz com que o depurador suspender a execução. A condição é especificada por uma expressão de código que pode ser avaliada como true ou false. Por exemplo, você pode usar um ponto de interrupção condicional para examinar o estado do programa em um método chamado com frequência apenas quando uma variável atinge um determinado valor.
+## <a name="set-a-conditional-breakpoint-run-to-the-cursor-and-visualize-a-variable"></a><a name="BKMK_ConditionCursorVisualize"></a> Definir um ponto de interrupção condicional, executar para o cursor e visualizar uma variável
+ Um ponto de interrupção condicional Especifica uma condição que faz o depurador suspender a execução. A condição é especificada por uma expressão de código que pode ser avaliada como true ou false. Por exemplo, você pode usar um ponto de interrupção condicional para examinar o estado do programa em um método chamado com frequência somente quando uma variável atingir um determinado valor.
 
- Executar até o cursor é como configurar um único ponto de interrupção. Quando a execução for suspensa, você poderá selecionar uma linha na origem e retomar a execução até que a linha selecionada seja atingida. Por exemplo, você pode percorrer um loop em um método e determinar o código no loop está sendo executado corretamente. Em vez de percorrer cada iteração do loop, você pode executar até o cursor que é posicionado após o loop é executado.
+ A execução do cursor é como definir um ponto de interrupção único. Quando a execução for suspensa, você poderá selecionar uma linha na origem e retomar a execução até que a linha selecionada seja atingida. Por exemplo, você pode estar percorrendo um loop em um método e determinar que o código no loop está sendo executado corretamente. Em vez de percorrer cada iteração do loop, você pode executar o cursor posicionado após a execução do loop.
 
- Às vezes, é difícil de ler um valor de variável na linha de dica de dados ou janela variável. O depurador pode exibir cadeias de caracteres, HTML e Xml em um visualizador de texto que apresente uma exibição formatada do valor em uma janela rolável.
+ Às vezes, é difícil exibir um valor de variável na linha de dica de dados ou janela variável. O depurador pode exibir cadeias de caracteres, HTML e Xml em um visualizador de texto que apresente uma exibição formatada do valor em uma janela rolável. 
 
 ### <a name="example-3"></a>Exemplo 3:
- Neste exemplo, você deve definir um ponto de interrupção condicional para parar em uma iteração específica de um loop e, em seguida, executar até o cursor posicionado após o loop. Você também pode exibir o valor de uma variável em um visualizador de texto.
+ Neste exemplo, você deve definir um ponto de interrupção condicional para parar em uma iteração específica de um loop e então executar até o cursor que está posicionado após o loop. Você também pode exibir o valor de uma variável em um visualizador de texto.
 
- **Chame o método Example3 no construtor MainPage.** Edite o construtor MainPage e substitua a linha após `methodTrack = String.Empty;` com a linha `Example3();`.
+ **Chame o método Example3 no Construtor MainPage.** Edite o Construtor MainPage e substitua a linha seguinte `methodTrack = String.Empty;` pela linha `Example3();` .
 
- ![Chamar Example3 do método Demo](../debugger/media/dbg-basics-callexample3.png "DBG_Basics_CallExample3")
+ ![Chamar Example3 a partir do método demo](../debugger/media/dbg-basics-callexample3.png "DBG_Basics_CallExample3")
 
- **Execute o ponto de interrupção.** Iniciar a sessão de depuração, escolhendo **iniciar depuração** sobre o **depurar** menu (teclado: F5). O depurador suspende a execução no ponto de interrupção no método MainPage.
+ **{2&amp;gt;Execute até o ponto de interrupção.&amp;lt;2}** Inicie a sessão de depuração escolhendo **Iniciar Depuração** no menu **depurar** (teclado: F5). O depurador suspende a execução no ponto de interrupção no método MainPage.
 
- **Etapa no método Example3.** Escolher **intervir** sobre o **depurar** menu (teclado: F11) para mover para o ponto de entrada do método Example3. Continue entrando no método até ter iterado um ou dois loops do `for` bloco. Observe que ele levaria muito tempo para percorrer todas as 1.000 iterações.
+ **Passe para o método Example3.** Escolha **entrar** no menu **depurar** (teclado: F11) para mover para o ponto de entrada do método Example3. Continue a depuração no método até que você tenha iterado um ou dois loops do `for` bloco. Observe que levaria muito tempo para percorrer todas as 1.000 iterações.
 
- **Defina um ponto de interrupção condicional.** Na medianiz esquerda da janela de código, clique na linha `x += i;` e, em seguida, escolha **condição**. Escolha o **condição** caixa de seleção e, em seguida, digite `i == 500;` na caixa de texto. Escolha o **vale** opção e escolha **Okey**. O ponto de interrupção permite verificar o valor à 500ª iteração do loop `for`.
+ **{2&amp;gt;Defina um ponto de interrupção condicional.&amp;lt;2}** Na medianiz à esquerda da janela de código, clique com o botão direito do mouse na linha `x += i;` e escolha **condição**. Escolha a caixa de seleção **condição** e digite `i == 500;` na caixa de texto. Escolha a opção **é verdadeiro** e escolha **OK**. O ponto de interrupção permite que você verifique o valor na iteração 500th do `for` loop.
 
- ![Caixa de diálogo de condição de ponto de interrupção](../debugger/media/dbg-basics-breakpointcondition.png "DBG_Basics_BreakpointCondition")
+ ![Caixa de diálogo condição do ponto de interrupção](../debugger/media/dbg-basics-breakpointcondition.png "DBG_Basics_BreakpointCondition")
 
  Você pode identificar um ícone de ponto de interrupção condicional pela sua cruz branca.
 
  ![Ponto de interrupção condicional](../debugger/media/dbg-basics-conditionalbreakpoint.png "DBG_Basics_ConditionalBreakpoint")
 
- **Execute o ponto de interrupção.** No menu Depurar, escolha continuar (teclado: F5). Na janela locais, confirme se o valor atual da `i` é 500. Observe que a variável `s` é representada como uma linha e é muito mais do que a janela.
+ **{2&amp;gt;Execute até o ponto de interrupção.&amp;lt;2}** No menu Depurar, escolha Continuar (teclado: F5). Na janela locais, confirme se o valor atual de `i` é 500. Observe que a variável `s` é representada como uma única linha e é muito maior do que a janela.
 
- **Visual de uma variável de cadeia de caracteres.** Clique no ícone de lupa na **valor** coluna o `s`.
+ **Visual uma variável de cadeia de caracteres.** Clique no ícone de lupa na coluna **valor** do `s` .
 
- A janela do Visualizador de texto é exibida e o valor da cadeia de caracteres é apresentado como uma cadeia de caracteres de várias linha.
+ A janela Visualizador de texto é exibida e o valor da cadeia de caracteres é apresentado como uma cadeia de caracteres de várias linhas.
 
- **Execute até o cursor.** Clique na linha `methodTrack += "->Example3";` e, em seguida, escolha **executar até o Cursor** (teclado: Mover o cursor para a linha; CTRL + F10). O depurador conclui as iterações do loop e então suspende a execução na linha.
+ **{2&amp;gt;Execute até o cursor.&amp;lt;2}** Clique com o botão direito do mouse na linha `methodTrack += "->Example3";` e escolha **executar até o cursor** (teclado: mover o cursor para a linha; Ctrl + F10). O depurador conclui as iterações do loop e então suspende a execução na linha.
 
- **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** No menu Depurar, escolha Parar Depuração (atalho do teclado: Shift+F5). Isso encerra a sessão de depuração. 
 
-## <a name="BKMK_EditContinueRecoverExceptions"></a> Editar e continuar, se recuperar de uma exceção
- Em algumas circunstâncias, quando você entrar no código no depurador do Visual Studio, você tem a oportunidade de alterar o valor de variáveis e até mesmo a lógica de instruções. Essa funcionalidade é chamada de editar e continuar.
+## <a name="edit-and-continue-recover-from-an-exception"></a><a name="BKMK_EditContinueRecoverExceptions"></a> Editar e continuar, recuperar de uma exceção
+ Em algumas circunstâncias, quando você divide o código no depurador do Visual Studio, você tem a oportunidade de alterar o valor de variáveis e até mesmo as lógicas de instruções. Essa funcionalidade é chamada editar e continuar.
 
- Editar e continuar pode ser especialmente útil quando você interromper uma exceção. Em vez de precisar parar e reiniciar a depuração de um procedimento longo e complicado para evitar a exceção, você pode "desenrolar" a exceção para mover a execução para o ponto imediatamente antes que a exceção ocorreu e, em seguida, altere a variável incorreto ou a instrução e Continue com a sessão de depuração atual no estado que não gera uma exceção.
+ Editar e continuar pode ser especialmente útil ao interromper uma exceção. Em vez de ter que parar e reiniciar a depuração de um procedimento longo e envolvido para evitar a exceção, você pode "desenrolar" a exceção para mover a execução até o ponto imediatamente antes que a exceção ocorra e, em seguida, alterar a variável ou a instrução incorreta e continuar com a sessão de depuração atual no estado que não gera uma exceção.
 
- Embora você possa usar Editar e continuar em uma ampla variedade de situações, as condições específicas que não dão suporte a editar e continuar são difíceis de especificar como as condições dependem da linguagem de programação, o estado atual da pilha do programa e o capacidade do depurador para alterar o estado sem corromper o processo. A melhor maneira de determinar se há suporte para uma alteração de edição é experimentá-la; o depurador informa imediatamente se não há suporte para a alteração.
+ Embora você possa usar editar e continuar em uma ampla variedade de situações, as condições específicas que não dão suporte a editar e continuar são difíceis de especificar, pois as condições dependem da linguagem de programação, do estado atual da pilha de programas e da capacidade do depurador de alterar o estado sem corromper o processo. A melhor maneira de determinar se uma alteração de edição tem suporte é apenas tentar; o depurador permite que você saiba imediatamente se não há suporte para a alteração.
 
 ### <a name="example-4"></a>Exemplo 4
- Neste exemplo, você executar o depurador a uma exceção, retroceder a exceção, corrija a lógica do método e, em seguida, altere o valor de uma variável para que você possa continuar a execução do método.
+ Neste exemplo, você executa o depurador para uma exceção, rebobina a exceção, corrige a lógica do método e, em seguida, altera o valor de uma variável para que você possa continuar executando o método.
 
- **Chame o método Example4 no construtor MainPage.** Edite o construtor MainPage() e substitua a linha após `methodTrack = String.Empty;` com a linha `Example4();`.
+ **Chame o método Example4 no Construtor MainPage.** Edite o Construtor MainPage () e substitua a linha a seguir `methodTrack = String.Empty;` pela linha `Example4();` .
 
- ![Chamar Example4 do método Demo](../debugger/media/dbg-basics-callexample4.png "DBG_Basics_CallExample4")
+ ![Chamar Example4 a partir do método demo](../debugger/media/dbg-basics-callexample4.png "DBG_Basics_CallExample4")
 
- **Execute a exceção.** Iniciar a sessão de depuração, escolhendo **iniciar depuração** sobre o **depurar** menu (teclado: F5). Pressione F5 novamente para retomar a execução. O depurador suspende a execução na exceção no método Example4 e exibe uma caixa de diálogo de exceção.
+ **Execute para a exceção.** Inicie a sessão de depuração escolhendo **Iniciar Depuração** no menu **depurar** (teclado: F5). Pressione F5 novamente para retomar a execução. O depurador suspende a execução na exceção no método Example4 e exibe uma caixa de diálogo de exceção.
 
  ![Caixa de diálogo de exceção](../debugger/media/dbg-basics-exceptiondlg.png "DBG_Basics_ExceptionDlg")
 
- **Altere a lógica do programa.** É óbvio que o erro está no `if` condição: o valor da `x` deve ser alterado quando `x` é igual a 0; quando não `x` não é igual a zero. Escolher **quebrar** para corrigir a lógica do método. Quando você tentar editar a linha, outra caixa de diálogo é exibida.
+ **Altere a lógica do programa.** É óbvio que o erro está na `if` condição: o valor de `x` deve ser alterado quando é `x` igual a 0; não quando `x` não é igual a zero. Escolha **interromper** para corrigir a lógica do método. Quando você tenta editar a linha, outra caixa de diálogo é exibida.
 
  ![Caixa de diálogo Editar e continuar](../debugger/media/dbg-basics-editandcontinuedlg.png "DBG_Basics_EditAndContinueDlg")
 
- Escolher **edite** e, em seguida, altere a linha `if (x != 0)` para `if (x == 0)`. O depurador mantém as alterações para a lógica do programa para o arquivo de origem.
+ Escolha **Editar** e, em seguida, altere a linha `if (x != 0)` para `if (x == 0)` . O depurador mantém as alterações na lógica do programa para o arquivo de origem.
 
- **Altere o valor da variável.** Examinar o valor de `x` em uma dica de dados ou na janela locais. Ainda é 0 (zero). Se você tentar executar a instrução que causou a exceção original, ele só gerará novamente. Você pode alterar o valor de `x`. Na janela locais, clique duas vezes o **valor** coluna o **x** linha. Altere o valor de 0 a 1.
+ **Altere o valor da variável.** Examine o valor de `x` em uma dica de dados ou na janela locais. Ele ainda é 0 (zero). Se você tentar executar a instrução que causou a exceção original, ela será novamente emitida novamente. Você pode alterar o valor de `x` . Na janela locais, clique duas vezes na coluna **valor** da linha **x** . Altere o valor de 0 para 1.
 
  ![Editar um valor na janela locais](../debugger/media/dbg-basics-editandcontinuefix.png "DBG_Basics_EditAndContinueFix")
 
- Escolha a tecla F11 para percorrer a instrução que anteriormente gerava uma exceção. Observe que a linha é executada sem erros. Escolha F11 novamente.
+ Escolha a tecla F11 para entrar na instrução que gerou uma exceção anteriormente. Observe que a linha é executada sem erro. Escolha F11 novamente.
 
- **Pare a depuração.** Sobre o **Debug** menu, escolha **parar depuração** (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** No menu **depurar** , escolha **parar depuração** (teclado: Shift + F5). Isso encerra a sessão de depuração. 
 
-## <a name="see-also"></a>Consulte também
- [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [gatilho de suspender, continuar e eventos para Windows Store em segundo plano)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [disparar eventos de suspensão, retomada e de segundo plano para a Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

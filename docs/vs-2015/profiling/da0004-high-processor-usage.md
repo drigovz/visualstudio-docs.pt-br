@@ -1,5 +1,5 @@
 ---
-title: 'DA0004: Alto uso de processador | Microsoft Docs'
+title: 'DA0004: alto uso de processador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158706"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Uso do processador elevado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0004 |  
-| Categoria | Uso das ferramentas de criação de perfil |  
+ID da regra | DA0004 |  
+| Categoria | Uso de Ferramentas de Criação de Perfil |  
 | Métodos de criação de perfil | Amostragem de instrumentação |  
-| Mensagem | O uso do processador está consistentemente acima de 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.|  
+| Mensagem | O uso do processador é consistentemente acima de 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.|  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

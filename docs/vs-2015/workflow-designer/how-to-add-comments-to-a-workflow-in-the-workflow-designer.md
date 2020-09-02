@@ -13,10 +13,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d775c79cc7abdf6a66b1174ae625ca468f0764fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663460"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho em Designer de Fluxo de Trabalho
@@ -57,7 +57,7 @@ Para facilitar a criação maior, os fluxos de trabalho mais complicados, [!INCL
 
 3. Para exibir a anotação fora do designer da atividade, passe o mouse sobre a área de anotação no designer da atividade e clique no ícone **Desafixar**
 
-     ![Anotação exibida fora do design de uma atividade](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+     ![Anotação exibida fora do designer de uma atividade](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
 ### <a name="showing-or-hiding-all-annotations"></a>Mostrar ou ocultar todas as anotações
 

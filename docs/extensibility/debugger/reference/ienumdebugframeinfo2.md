@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716611"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
-Esta interface enumera as estruturas [frameinfo.](../../../extensibility/debugger/reference/frameinfo.md)
+Essa interface enumera as estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugFrameInfo2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O mecanismo de depuração (DE) implementa essa interface para fornecer uma lista de estruturas que descrevem a pilha de chamadas atual.
+ O mecanismo de depuração (DE) implementa essa interface para fornecer uma lista de estruturas que descreve a pilha de chamadas atual.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O Visual Studio chama [o EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para obter essa interface sempre que um ponto de interrupção, exceção ou parada ocorrer em um programa que está sendo depurado.
+ O Visual Studio chama [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para obter essa interface sempre que um ponto de interrupção, uma exceção ou uma parada ocorre em um programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IEnumDebugFrameInfo2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IEnumDebugFrameInfo2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Avançar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Recupera um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma seqüência de enumeração.|
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Salta um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma seqüência de enumeração.|
-|[Redefinir](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Reinicia uma seqüência de enumeração para o início.|
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|
+|[Próximo](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Recupera um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma sequência de enumeração.|
+|[Ignorar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignora um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma sequência de enumeração.|
+|[Redefinir](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Redefine uma sequência de enumeração para o início.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Obtém o número de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em um enumerador.|
 
 ## <a name="remarks"></a>Comentários
- O Visual Studio obtém essa interface como o primeiro passo para lidar com um ponto de ruptura, exceção ou pausa gerada pelo usuário no programa que está sendo depurado. A lista de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) representa a pilha de chamadas atual, com a chamada de função atual no início da lista e a chamada de função mais antiga no final da lista. Cada `FRAMEINFO` um representa um quadro de pilha, um contexto no qual as expressões podem ser avaliadas e variáveis locais analisadas.
+ O Visual Studio obtém essa interface como a primeira etapa para manipular um ponto de interrupção, uma exceção ou uma pausa gerada pelo usuário no programa que está sendo depurado. A lista de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) representa a pilha de chamadas atual, com a chamada de função atual no início da lista e a chamada de função mais antiga no final da lista. Cada `FRAMEINFO` um representa um registro de ativação, um contexto no qual as expressões podem ser avaliadas e as variáveis locais são examinadas.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

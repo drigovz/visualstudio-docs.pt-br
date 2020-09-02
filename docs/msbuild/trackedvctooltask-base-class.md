@@ -12,17 +12,17 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594923"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe base TrackedVCToolTask
 
 Muitas tarefas são herdadas na classe <xref:Microsoft.Build.Utilities.Task> e na classe [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask). Essa classe adiciona vários parâmetros para as tarefas que derivam de [VCToolTask](../msbuild/vctooltask-base-class.md). Esses parâmetros são listados neste documento.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros das classes base **TrackedVCToolTask**.
 
@@ -30,23 +30,23 @@ A tabela a seguir descreve os parâmetros das classes base **TrackedVCToolTask**
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parâmetro opcional **bool**.|
 |**EnableExecuteTool**|Parâmetro opcional **bool**.|
-|**ExcludedInputPaths**|Parâmetro **opcional ITaskItem[].**|
+|**ExcludedInputPaths**|Parâmetro opcional **ITaskItem []** .|
 |**MinimalRebuildFromTracking**|Parâmetro opcional **bool**.|
-|**PathOverride**|Parâmetro opcional **de string.**|
+|**PathOverride**|Parâmetro de **cadeia de caracteres** opcional.|
 |**PostBuildTrackingCleanup**|Parâmetro opcional **bool**.|
-|**RootSource**|Parâmetro opcional **de string.**|
+|**RootSource**|Parâmetro de **cadeia de caracteres** opcional.|
 |**SkippedExecution**|Parâmetro de saída **bool** opcional.|
 |**SourcesCompiled**|Parâmetro de saída opcional **ITaskItem[]**.|
 |**TLogCommandFile**|Parâmetro opcional **ITaskItem**.|
-|**TLogReadFiles**|Parâmetro **opcional ITaskItem[].**|
-|**TLogWriteFiles**|Parâmetro **opcional ITaskItem[].**|
-|**ToolArchitecture**|Parâmetro opcional **de string.**|
+|**TLogReadFiles**|Parâmetro opcional **ITaskItem []** .|
+|**TLogWriteFiles**|Parâmetro opcional **ITaskItem []** .|
+|**ToolArchitecture**|Parâmetro de **cadeia de caracteres** opcional.|
 |**TrackCommandLines**|Parâmetro opcional **bool**.|
 |**TrackFileAccess**|Parâmetro opcional **bool**.|
-|**TrackedInputFilesToIgnore**|Parâmetro **opcional ITaskItem[].**|
-|**TrackedOutputFilesToIgnore**|Parâmetro **opcional ITaskItem[].**|
-|**TrackerFrameworkPath**|Parâmetro opcional **de string.**|
-|**TrackerSdkPath**|Parâmetro opcional **de string.**|
+|**TrackedInputFilesToIgnore**|Parâmetro opcional **ITaskItem []** .|
+|**TrackedOutputFilesToIgnore**|Parâmetro opcional **ITaskItem []** .|
+|**TrackerFrameworkPath**|Parâmetro de **cadeia de caracteres** opcional.|
+|**TrackerSdkPath**|Parâmetro de **cadeia de caracteres** opcional.|
 
 ## <a name="see-also"></a>Confira também
 

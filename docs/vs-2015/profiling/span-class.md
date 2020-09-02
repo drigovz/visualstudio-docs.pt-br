@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198357"
 ---
 # <a name="span-class"></a>Classe span
@@ -25,7 +25,7 @@ ms.locfileid: "68198357"
 
 Define uma fase do aplicativo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 class span;  
@@ -35,10 +35,10 @@ class span;
   
 ### <a name="public-constructors"></a>Construtores públicos  
   
-|Nome|DESCRIÇÃO|  
+|Name|Descrição|  
 |----------|-----------------|  
-|[span::Construtor de span](../profiling/span-span-constructor.md)|Inicializa uma nova instância da classe `span`.|  
-|[span::Destruidor ~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|  
+|[Construtor span::span](../profiling/span-span-constructor.md)|Inicializa uma nova instância da classe `span`.|  
+|[Destruidor span::~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|  
   
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança  
  `span`  
@@ -48,5 +48,5 @@ class span;
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Namespace de diagnóstico](../profiling/diagnostic-namespace.md)

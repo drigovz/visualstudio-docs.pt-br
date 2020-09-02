@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: adc2e71678e6892d12640a3153f24bfb90dfa429
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663407"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Como: Criar uma biblioteca sequencial de fluxo de trabalho (o legados)
@@ -28,14 +28,14 @@ Siga estas etapas para criar um projeto sequencial de biblioteca de fluxo de tra
 
 1. Inicie o Visual Studio.
 
-2. No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo**e selecione **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é aberta.
+     A caixa de diálogo **Novo Projeto** será aberta.
 
 3. Selecione a opção **.NET Framework 3,0** ou a opção **.NET Framework 3,5** na lista suspensa na parte superior da janela **novo projeto** para acessar o designer herdado.
 
     > [!NOTE]
-    > A opção padrão em [!INCLUDE[vs2010](../includes/vs2010-md.md)] é **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.
+    > A opção padrão no [!INCLUDE[vs2010](../includes/vs2010-md.md)] é **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.
 
 4. No painel **tipos de projeto** , selecione Visual C# ou Visual Basic (em **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.
 
@@ -49,5 +49,5 @@ Siga estas etapas para criar um projeto sequencial de biblioteca de fluxo de tra
 
 8. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando projetos de fluxo de trabalho herdados](../workflow-designer/creating-legacy-workflow-projects.md) [estilos de criação de fluxo](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739) de trabalho

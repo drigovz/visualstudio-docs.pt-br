@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985605"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de faixas
@@ -84,9 +84,9 @@ ms.locfileid: "72985605"
  Para obter mais informações sobre como exportar a faixa de faixas para o XML, consulte [como exportar uma faixa de forma do designer de faixa de das para XML da faixa de para](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
 ### <a name="update-the-code"></a>Atualizar o código
- Um novo arquivo de código da faixa de medida é adicionado ao **Gerenciador de soluções**. Esse arquivo contém a classe XML da faixa de faixas. Você deve criar métodos de retorno de chamada na região `Ribbon Callbacks` dessa classe para tratar as ações do usuário, como clicar em um botão. Mova seu código dos manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com o modelo de programação do RibbonX (extensibilidade de faixa de medida). Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
+ Um novo arquivo de código da faixa de medida é adicionado ao **Gerenciador de soluções**. Esse arquivo contém a classe XML da faixa de faixas. Você deve criar métodos de retorno de chamada na `Ribbon Callbacks` região dessa classe para tratar as ações do usuário, como clicar em um botão. Mova seu código dos manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com o modelo de programação do RibbonX (extensibilidade de faixa de medida). Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
- Você também deve adicionar código à classe `ThisAddIn`, `ThisWorkbook`ou `ThisDocument` que substitui o método `CreateRibbonExtensibilityObject` e retorna a classe XML da faixa de forma para o aplicativo do Office.
+ Você também deve adicionar o código à `ThisAddIn` `ThisWorkbook` classe, ou `ThisDocument` que substitui o `CreateRibbonExtensibilityObject` método e retorna a classe XML da faixa de forma para o aplicativo do Office.
 
  Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
@@ -103,12 +103,12 @@ ms.locfileid: "72985605"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Selecione quais faixas de opções exibir em tempo de execução
  Como um projeto pode conter mais de uma faixa de opções, você pode selecionar qual faixa de opções exibir em tempo de execução.
 
- Para selecionar uma faixa de opções a ser exibida em tempo de execução, substitua o método `CreateRibbonExtensibilityObject` na classe `ThisAddin`, `ThisWorkbook`ou `ThisDocument` do seu projeto e retorne a faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo chamado `myCondition` e retorna a faixa de opções apropriada.
+ Para selecionar uma faixa de opções a ser exibida em tempo de execução, substitua o `CreateRibbonExtensibilityObject` método na `ThisAddin` `ThisWorkbook` classe, ou `ThisDocument` do seu projeto e retorne a faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo chamado `myCondition` e retorna a faixa de opções apropriada.
 
 > [!NOTE]
 > A sintaxe usada neste exemplo retorna uma faixa de faixas que foi criada usando o item da **faixa de visualização (Visual Designer)** . A sintaxe para retornar uma faixa de forma que é criada usando um item **da faixa (XML)** é ligeiramente diferente. Para obter mais informações sobre como retornar um item **da faixa de forma (XML)** , consulte [XML da faixa](../vsto/ribbon-xml.md)de visualização.
 
- Adicione o seguinte código:
+ Adicione os códigos a seguir:
 
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]

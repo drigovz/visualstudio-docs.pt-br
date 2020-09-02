@@ -1,5 +1,5 @@
 ---
-title: SuportesMasterPage Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento SupportsMasterPage (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699449"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelos do Visual Studio)
-Especifica se a caixa de seleção **Selecionar página-mestre** está ativada na caixa de diálogo **Adicionar novo item.**
+Especifica se a caixa de seleção selecionar ou não a **página mestra** está habilitada no diálogo **Adicionar novo item** .
 
- \<VSTemplate \< \<>Template>Suporte de>demasterPage>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsMasterPage>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <SupportsMasterPage> true/false </SupportsMasterPage>
@@ -45,20 +46,20 @@ Especifica se a caixa de seleção **Selecionar página-mestre** está ativada n
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica dados que categorizam o modelo e define como ele é exibido na caixa de diálogo **Novo Projeto** ou **Novo Item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica os dados que categorizam o modelo e define como ele é exibido na caixa de diálogo **novo projeto** ou **novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve `true` `false`ser ou , indicando se a caixa de seleção **Selecionar página mestre** está ativada na caixa de diálogo Adicionar novo **item.**
+ O texto deve ser `true` ou `false` , indicando se a caixa de seleção **selecionar página mestra** está habilitada ou não no diálogo **Adicionar novo item** .
 
 ## <a name="remarks"></a>Comentários
  `SupportsMasterPage` é um elemento opcional. O valor padrão é `false`.
 
- O `SupportsMasterPage` elemento está disponível apenas para modelos de itens da Web.
+ O `SupportsMasterPage` elemento só está disponível para modelos de item da Web.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados de um projeto web que inclui suporte para uma página-mestre.
+ O exemplo a seguir ilustra os metadados de um projeto Web que inclui suporte para uma página mestra.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

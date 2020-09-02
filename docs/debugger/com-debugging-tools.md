@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71211282"
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
@@ -40,11 +40,11 @@ Exemplos de classe do Microsoft Foundation
 
 Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para testar com seus aplicativos. O código-fonte completo para esses exemplos está incluído.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 
 - [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Ferramentas de depuração COM](../debugger/com-debugging-tools.md)
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Exemplo de OCLIENT: Ilustra um aplicativo de contêiner de edição Visual](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Exemplo de SUPERPAD: Demonstra um servidor de edição visual que edita texto usando CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Exemplo de OCLIENT: ilustra um aplicativo de contêiner de edição Visual](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Exemplo de SUPERPAD: demonstra um servidor de edição visual que edita texto usando CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

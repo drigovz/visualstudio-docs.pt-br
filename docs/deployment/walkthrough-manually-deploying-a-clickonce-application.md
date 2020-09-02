@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249980"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: Implantar um aplicativo ClickOnce
@@ -192,7 +192,7 @@ Se você não puder usar o Visual Studio para implantar seu [!INCLUDE[ndptecclic
 ## <a name="next-steps"></a>Próximas etapas
  Quando você precisar implantar uma nova versão do aplicativo, crie um novo diretório chamado após a nova versão — por exemplo, 1.0.0.1 — e copie os novos arquivos de aplicativo para o novo diretório. Em seguida, você precisa seguir as etapas anteriores para criar e assinar um novo manifesto de aplicativo e atualizar e assinar o manifesto de implantação. Tenha cuidado para especificar a mesma versão mais alta no *Mage.exe* `-New` e nas `-Update` chamadas, pois [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apenas atualiza as versões superiores, com o inteiro mais significativo mais importante. Se você usou *MageUI.exe*, poderá atualizar o manifesto de implantação abrindo-o, selecionando a guia **referência do aplicativo** , acesse o botão **selecionar manifesto** e, em seguida, selecionando o manifesto do aplicativo atualizado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

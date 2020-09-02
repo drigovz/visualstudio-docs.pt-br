@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594650"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
@@ -29,13 +29,13 @@ Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto d
 - Gere alguns dos seus arquivos de código a partir de modelos de texto. Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) e [qual é a melhor maneira de começar a escrever um modelo?](#starting).
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Gerar arquivos em tempo de execução, passando dados para o modelo
- Em tempo de execução, meu aplicativo gera arquivos de texto, como relatórios, que contêm uma mistura de texto e dados padrão. Quero evitar escrever centenas de instruções de `write`.
+ Em tempo de execução, meu aplicativo gera arquivos de texto, como relatórios, que contêm uma mistura de texto e dados padrão. Quero evitar escrever centenas de `write` instruções.
 
 - Adicione um modelo de texto de tempo de execução ao seu projeto. Este modelo cria uma classe em seu código, que você pode instanciar e usar para gerar texto. Você pode passar dados para ele nos parâmetros do construtor. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 - Se você quiser gerar a partir de modelos que estão disponíveis somente em tempo de execução, você pode usar modelos de texto padrão. Se você estiver escrevendo uma extensão do Visual Studio, poderá invocar o serviço de modelagem de texto. Para obter mais informações, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). Em outros contextos, você pode usar o mecanismo de modelagem de texto. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Use a diretiva \<#@parameter# > para passar parâmetros para esses modelos. Para obter mais informações, consulte [diretiva de parâmetro T4](../modeling/t4-parameter-directive.md).
+     Use a \<#@parameter#> diretiva para passar parâmetros para esses modelos. Para obter mais informações, consulte [diretiva de parâmetro T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Ler outro arquivo de projeto de um modelo
  Para ler um arquivo do mesmo projeto do Visual Studio que o modelo:
@@ -48,7 +48,7 @@ Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto d
 
 Se os métodos já existirem, por exemplo, em classes .NET:
 
-- Use a diretiva \<#@assembly# > para carregar o assembly e use \<#@import# > para definir o contexto do namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
+- Use a \<#@assembly#> diretiva para carregar o assembly e use \<#@import#> para definir o contexto do namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
 
    Se você usar frequentemente o mesmo conjunto de diretivas de assembly e importação, considere escrever um processador de diretivas. Em cada modelo, você pode invocar o processador de diretiva, que pode carregar os assemblies e os arquivos de modelo e definir o contexto do namespace. Para obter mais informações, consulte [criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -56,13 +56,13 @@ Se você estiver escrevendo os métodos por conta própria:
 
 - Se você estiver escrevendo um modelo de texto de tempo de execução, escreva uma definição de classe parcial que tenha o mesmo nome que o seu modelo de texto de tempo de execução. Adicione os métodos adicionais nessa classe.
 
-- Escreva um bloco de controle de recurso de classe `<#+ ... #>` no qual você pode declarar métodos, propriedades e classes privadas. Quando o modelo de texto é compilado, ele é transformado em uma classe. O controle padrão bloqueia `<#...#>` e o texto são transformados em um único método, e os blocos de recursos de classe são inseridos como membros separados. Para obter mais informações, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).
+- Escreva um bloco de controle de recurso `<#+ ... #>` de classe no qual você possa declarar métodos, propriedades e classes privadas. Quando o modelo de texto é compilado, ele é transformado em uma classe. Os blocos de controle padrão `<#...#>` e o texto são transformados em um único método, e os blocos de recursos de classe são inseridos como membros separados. Para obter mais informações, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).
 
    Os métodos definidos como recursos de classe também podem incluir blocos de texto incorporados.
 
-   Considere colocar recursos de classe em um arquivo separado que você pode `<#@include#>` em um ou mais arquivos de modelo.
+   Considere colocar recursos de classe em um arquivo separado que você possa `<#@include#>` em um ou mais arquivos de modelo.
 
-- Escreva os métodos em um assembly separado (biblioteca de classes) e chame-os do seu modelo. Use a diretiva `<#@assembly#>` para carregar o assembly e `<#@import#>` para definir o contexto do namespace. Observe que, para recriar o assembly enquanto você estiver depurando-o, talvez seja necessário parar e reiniciar o Visual Studio. Para obter mais informações, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).
+- Escreva os métodos em um assembly separado (biblioteca de classes) e chame-os do seu modelo. Use a `<#@assembly#>` diretiva para carregar o assembly e `<#@import#>` para definir o contexto do namespace. Observe que, para recriar o assembly enquanto você estiver depurando-o, talvez seja necessário parar e reiniciar o Visual Studio. Para obter mais informações, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Gerar muitos arquivos de um esquema de modelo
  Se você geralmente gera arquivos de modelos que têm o mesmo esquema XML ou de banco de dados:
@@ -78,7 +78,7 @@ Se você estiver escrevendo os métodos por conta própria:
      Para obter mais informações, consulte [introdução com linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md) e [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Obter dados do Visual Studio
- Para usar os serviços fornecidos no Visual Studio, defina o atributo `hostSpecific` e carregue o assembly `EnvDTE`. Por exemplo:
+ Para usar os serviços fornecidos no Visual Studio, defina o `hostSpecific` atributo e carregue o `EnvDTE` assembly. Por exemplo:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -98,15 +98,15 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="more-general-questions"></a>Perguntas mais gerais
 
-### <a name="starting"></a>Qual é a melhor maneira de começar a escrever um modelo de texto?
+### <a name="what-is-the-best-way-to-start-writing-a-text-template"></a><a name="starting"></a> Qual é a melhor maneira de começar a escrever um modelo de texto?
 
 1. Escreva um exemplo específico do arquivo gerado.
 
-2. Transforme-o em um modelo de texto inserindo a diretiva `<#@template #>` e as diretivas e o código necessários para carregar o arquivo ou modelo de entrada.
+2. Transforme-o em um modelo de texto inserindo a `<#@template #>` diretiva e as diretivas e o código necessários para carregar o arquivo ou modelo de entrada.
 
 3. Substitua progressivamente partes do arquivo por blocos de expressão e de código.
 
-### <a name="what-is-a-model"></a>O que é um "modelo"?
+### <a name="what-is-a-model"></a>O que é um “modelo”?
 
 - A entrada lida por seu modelo. Ele pode estar em um arquivo ou em um banco de dados. Ele pode ser XML ou um desenho do Visio, ou uma DSL (linguagem específica de domínio) ou um modelo UML, ou pode ser texto sem formatação. Ele pode ser distribuído entre vários arquivos. Normalmente, mais de um modelo lê um modelo.
 

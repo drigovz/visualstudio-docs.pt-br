@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 460277670d76ddcc1001ba2d6060107ea405601e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350518"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Depurando um controle ActiveX com ligação de dados
@@ -34,6 +34,6 @@ Se você estiver desenvolvendo um controle ActiveX que será associado a um cont
 
  Se você precisar entrar no código do contêiner enquanto está depurando, use a versão de depuração do contêiner ou use a versão de depuração do contêiner de teste ActiveX. Para obter mais informações, consulte [TSTCON exemplo: Contêiner de teste de controle ActiveX](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Controles ActiveX](/cpp/mfc/activex-controls)

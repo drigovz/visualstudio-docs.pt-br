@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183753"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. pdb) e os arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F #)
@@ -81,7 +81,7 @@ O depurador também procura arquivos de símbolo nos seguintes locais:
 
    - Qualquer pasta de cache de símbolo local.
 
-   - Locais de rede, Internet ou local especificados, como os servidores de símbolo da Microsoft, se selecionados. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]pode baixar arquivos de símbolo de depuração de servidores de símbolos que implementam o `symsrv` protocolo. O [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) e as [ferramentas de depuração para Windows](/windows-hardware/drivers/debugger/index) são duas ferramentas que podem usar servidores de símbolo.
+   - Locais de rede, Internet ou local especificados, como os servidores de símbolo da Microsoft, se selecionados. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode baixar arquivos de símbolo de depuração de servidores de símbolos que implementam o `symsrv` protocolo. O [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) e as [ferramentas de depuração para Windows](/windows-hardware/drivers/debugger/index) são duas ferramentas que podem usar servidores de símbolo.
 
      Os servidores de símbolos que você pode usar incluem:
 
@@ -159,14 +159,14 @@ Você pode selecionar opções de símbolo adicionais em **ferramentas**  >  **O
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
 - **Habilitar suporte a servidor de origem**
 
-  Usa o servidor de origem para ajudar a depurar um aplicativo quando não há código-fonte no computador local ou o arquivo *. pdb* não corresponde ao código-fonte. O servidor de origem usa solicitações de arquivos e retorna os arquivos reais do controle do código-fonte. O servidor de origem é executado usando uma DLL chamada *srcsrv. dll* para ler o arquivo *. pdb* do aplicativo. O arquivo *. pdb* contém ponteiros para o repositório de código-fonte, bem como comandos usados para recuperar o código-fonte do repositório.
+  Usa o servidor de origem para ajudar a depurar um aplicativo quando não há código-fonte no computador local ou o arquivo *. pdb* não corresponde ao código-fonte. O servidor de origem usa solicitações de arquivos e retorna os arquivos reais do controle do código-fonte. O servidor de origem é executado usando uma DLL chamada *srcsrv.dll* para ler o arquivo *. pdb* do aplicativo. O arquivo *. pdb* contém ponteiros para o repositório de código-fonte, bem como comandos usados para recuperar o código-fonte do repositório.
 
-  Você pode limitar os comandos que o *srcsrv. dll* pode executar a partir do arquivo *. pdb* do aplicativo, listando os comandos permitidos em um arquivo chamado *srcsrv. ini*. Coloque o arquivo *srcsrv. ini* na mesma pasta que *srcsrv. dll* e *devenv. exe*.
+  Você pode limitar os comandos que *srcsrv.dll* podem executar no arquivo *. pdb* do aplicativo listando os comandos permitidos em um arquivo chamado *srcsrv.ini*. Coloque o arquivo de *srcsrv.ini* na mesma pasta que *srcsrv.dll* e *devenv.exe*.
 
   >[!IMPORTANT]
-  >Comandos arbitrários podem ser inseridos no arquivo *. pdb* de um aplicativo, portanto, certifique-se de colocar apenas os comandos que deseja executar em um arquivo *srcsrv. ini* . Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Comandos arbitrários podem ser inseridos no arquivo *. pdb* de um aplicativo, portanto, certifique-se de colocar apenas os comandos que deseja executar em um arquivo de *srcsrv.ini* . Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
-  >Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você tiver listado *cmd. exe* no *srcsrv. ini*, um usuário mal-intencionado poderá especificar parâmetros no *cmd. exe* que o tornaria perigoso.
+  >Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você listou *cmd.exe* em seu *srcsrv.ini*, um usuário mal-intencionado pode especificar parâmetros em *cmd.exe* que o tornaria perigoso.
 
   Selecione este item e os itens filho desejados. **Permitir que o servidor de origem para assemblies de confiança parcial (somente gerenciado)** e **sempre executar comandos de servidor de origem não confiáveis sem avisar** pode aumentar os riscos de segurança.
 
@@ -182,21 +182,21 @@ Crie com **/debug** para criar um arquivo *. pdb* . Você pode criar aplicativos
 
 ### <a name="cc-options"></a>Opções do C/C++
 
-- Arquivos do *vc \< x>. pdb* e do * \< Project>. pdb*
+- Arquivos *vc \<x> . pdb* e * \<project> . pdb*
 
-  Um arquivo *. pdb* para C/C++ é criado quando você cria com [/Zi ou/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , a opção [/FD](/cpp/build/reference/fd-program-database-file-name) nomeia o arquivo *. pdb* criado pelo compilador. Quando você cria um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando o IDE, a opção **/FD** é definida para criar um arquivo *. pdb* chamado * \< Project>. pdb*.
+  Um arquivo *. pdb* para C/C++ é criado quando você cria com [/Zi ou/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , a opção [/FD](/cpp/build/reference/fd-program-database-file-name) nomeia o arquivo *. pdb* criado pelo compilador. Quando você cria um projeto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando o IDE, a opção **/FD** é definida para criar um arquivo *. pdb* chamado * \<project> . pdb*.
 
   Se você criar seu aplicativo C/C++ usando um makefile e especificar **/Zi** ou **/Zi** sem usar **/fd**, o compilador criará dois arquivos *. pdb* :
 
-  - *Vc \< x>. pdb*, em que * \< x>* representa a versão do compilador do Microsoft C++, por exemplo *VC11. pdb*
+  - *Vc \<x> . pdb*, em que *\<x>* representa a versão do compilador do Microsoft C++, por exemplo *VC11. pdb*
 
-    O *arquivo \< . pdb do VC x>* armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador C/C++ mescla informações de depuração no *vc \< x>. pdb*. Portanto, mesmo que todos os arquivos de origem incluam arquivos de cabeçalho comuns, como * \< Windows. h>*, os TYPEDEFs desses cabeçalhos são armazenados apenas uma vez, e não em cada arquivo de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função.
+    O arquivo *vc \<x> . pdb* armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador C/C++ mescla informações de depuração em *vc \<x> . pdb*. Portanto, mesmo que cada arquivo de origem inclua arquivos de cabeçalho comuns, como *\<windows.h>* , os TYPEDEFs desses cabeçalhos são armazenados apenas uma vez, em vez de em cada arquivo de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função.
 
-  - *\<projeto>. pdb*
+  - *\<project>. pdb*
 
-    O arquivo * \< . pdb do projeto>* armazena todas as informações de depuração para o arquivo *. exe* do projeto e reside no subdiretório *\debug* . O arquivo * \< . pdb do projeto>* contém informações completas de depuração, incluindo protótipos de função, não apenas as informações de tipo encontradas no *vc \< x>. pdb*.
+    O arquivo * \<project> . pdb* armazena todas as informações de depuração para o arquivo *. exe* do projeto e reside no subdiretório *\debug* . O arquivo * \<project> . pdb* contém informações completas de depuração, incluindo protótipos de função, não apenas as informações de tipo encontradas em *vc \<x> . pdb*.
 
-  Os arquivos *vc \< x>. pdb* e * \< Project>. pdb* permitem atualizações incrementais. O vinculador também incorpora o caminho para os arquivos *. pdb* no arquivo *. exe* ou *. dll* que ele cria.
+  Os arquivos *vc \<x> . pdb* e * \<project> . pdb* permitem atualizações incrementais. O vinculador também incorpora o caminho para os arquivos *. pdb* no arquivo *. exe* ou *. dll* que ele cria.
 
 - <a name="use-dumpbin-exports"></a>Exportar tabelas de DLL
 
@@ -206,7 +206,7 @@ Crie com **/debug** para criar um arquivo *. pdb* . Você pode criar aplicativos
 
 ### <a name="web-applications"></a>Aplicativos Web
 
-Defina o arquivo *Web. config* do aplicativo ASP.net para o modo de depuração. O modo de depuração faz com que o ASP.NET gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo ASP.NET. O Visual Studio define isso automaticamente quando você começa a depurar, se você criou o projeto no modelo de projetos Web.
+Defina o arquivo de *web.config* do aplicativo ASP.net para o modo de depuração. O modo de depuração faz com que o ASP.NET gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo ASP.NET. O Visual Studio define isso automaticamente quando você começa a depurar, se você criou o projeto no modelo de projetos Web.
 
 ## <a name="manage-symbols-while-debugging"></a>Gerenciar símbolos durante a depuração
 
@@ -245,7 +245,7 @@ Quando isso acontece, o depurador exibe as páginas **nenhum símbolo carregado*
 **Para usar a página de documento sem símbolos carregados para ajudar a localizar e carregar símbolos ausentes:**
 
 - Para alterar o caminho de pesquisa, selecione um caminho não selecionado ou selecione **novo** caminho ou **novo caminho do VSTS** e insira ou selecione um novo caminho. Selecione **carregar** para pesquisar os caminhos novamente e carregar o arquivo de símbolo se ele for encontrado.
-- Para substituir as opções de símbolo e repetir os caminhos de pesquisa, selecione **procurar e localize o \< nome do executável>**. O arquivo de símbolo será carregado se for encontrado ou o **Explorador de arquivos** será aberto para que você possa selecionar manualmente o arquivo de símbolo.
+- Para substituir as opções de símbolo e repetir os caminhos de pesquisa, selecione **procurar \<executable-name> e localizar **. O arquivo de símbolo será carregado se for encontrado ou o **Explorador de arquivos** será aberto para que você possa selecionar manualmente o arquivo de símbolo.
 - Para abrir a página de símbolos de depuração de **Opções**  >  **Debugging**  >  **Symbols** , selecione **alterar configurações de símbolo**.
 - Para mostrar a desmontagem em uma nova janela uma vez, selecione **Exibir desmontagem**ou selecione a **caixa de diálogo opções** para definir a opção para sempre mostrar a desmontagem quando os arquivos de origem ou de símbolo não forem encontrados.
 - Para mostrar os locais pesquisados e o resultado, expanda **informações de carregamento de símbolo**.
@@ -269,7 +269,7 @@ Você pode especificar os locais em que o depurador pesquisa arquivos de origem 
 
 1. Selecione **OK** ou **aplicar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Entender os arquivos de símbolo e as configurações de símbolo do Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 - [Alterações de carregamento de símbolo remoto do .NET no Visual Studio 2012 e 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

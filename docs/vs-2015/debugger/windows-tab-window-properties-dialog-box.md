@@ -1,5 +1,5 @@
 ---
-title: Guia do Windows, a janela caixa de diálogo de propriedades | Microsoft Docs
+title: Guia Windows, caixa de diálogo Propriedades da janela | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,23 +12,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159689"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Guia Janelas, Caixa de diálogo Propriedades da Janela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use o **Windows** guia para exibir informações sobre windows relacionados a janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
+Use a guia **Windows** para mostrar informações sobre o Windows relacionadas à janela selecionada. Para exibir a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md), mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .  
   
- As seguintes configurações estão disponíveis sobre o **Windows** guia:  
+ As configurações a seguir estão disponíveis na guia **Windows** :  
   
 |Entrada|Descrição|  
 |-----------|-----------------|  
-|**Próxima janela**|O identificador da janela próximo irmão na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela próximo). Escolha essa entrada para exibir as propriedades da janela próximo.|  
-|**Janela anterior**|O identificador da janela de irmão anterior na mesma sequência (ordem Z) mostrada na exibição de árvore de janela ("none" se não houver nenhuma janela anterior). Escolha essa entrada para exibir as propriedades da janela anterior.|  
-|**Janela pai**|O identificador da janela de pai dessa janela ("none" se não houver nenhum pai). Escolha essa entrada para exibir as propriedades da janela pai.|  
-|**Primeiro filho**|O identificador da primeira janela filho dessa janela, na sequência (ordem Z) mostrado na exibição de árvore de janela ("none" se não houver nenhuma janela filho). Escolha esse valor para exibir as propriedades da primeira janela filho.|  
-|**Janela Proprietário**|O identificador da janela do proprietário dessa janela. Janela principal do aplicativo normalmente possui windows da caixa de diálogo modal do sistema, por exemplo ("none" se não houver nenhum proprietário). Escolha essa entrada para exibir as propriedades da janela do proprietário.|
+|**Próxima janela**|O identificador da próxima janela irmã na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("nenhum" se não houver nenhuma janela seguinte). Escolha esta entrada para exibir as propriedades da próxima janela.|  
+|**Janela anterior**|O identificador da janela irmã anterior na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("None" se não houver nenhuma janela anterior). Escolha esta entrada para exibir as propriedades da janela anterior.|  
+|**Janela pai**|O identificador da janela pai desta janela ("None" se não houver nenhum pai). Escolha esta entrada para exibir as propriedades da janela pai.|  
+|**First Child**|O identificador da primeira janela filho da janela, na sequência (ordem Z) mostrada no modo de exibição de árvore da janela ("nenhum" se não houver nenhuma janela filho). Escolha esse valor para exibir as propriedades da primeira janela filho.|  
+|**Janela Proprietário**|O identificador da janela do proprietário da janela. A janela principal de um aplicativo normalmente possui janelas de diálogo modais do sistema, por exemplo ("nenhum" se não houver nenhum proprietário). Escolha esta entrada para exibir as propriedades da janela do proprietário.|

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663428"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Como: Configurar propriedades de Projeto de fluxo de trabalho (o legados)
@@ -29,11 +29,11 @@ Siga estas etapas para exibir ou alterar as propriedades que são associadas com
 
 1. Se **Gerenciador de soluções** janela não estiver visível, selecione **Gerenciador de soluções** no menu **Exibir** .
 
-2. No **Gerenciador de Soluções**, selecione um projeto.
+2. Em **Gerenciador de soluções**, selecione um projeto.
 
 3. Se a janela **Propriedades** não estiver visível, selecione **janela Propriedades** no menu **Exibir** .
 
 4. Na janela **Propriedades** do projeto, exiba e modifique as propriedades que você deseja alterar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando projetos herdados de fluxo de trabalho](../workflow-designer/creating-legacy-workflow-projects.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350505"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução à depuração de aplicativos multithread (C#, Visual Basic, C++)
@@ -209,7 +209,7 @@ Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um ex
     End Class
     ```
 
-1. No menu **arquivo** , selecione **salvar tudo**.
+1. No menu **Arquivo**, selecione **Salvar Tudo**.
 
 1. (Somente Visual Basic) Em Gerenciador de Soluções (painel direito), clique com o botão direito do mouse no nó do projeto, escolha **Propriedades**. Na guia **aplicativo** , altere o **objeto de inicialização** para **simples**.
 
@@ -313,7 +313,7 @@ Você pode sinalizar threads para manter o controle de threads importantes e ign
 
 5. Para remover o sinalizador de threads, clique com o botão direito do mouse em um ou mais threads sinalizados na janela de **inspeção paralela** e selecione **remover sinalizador**.
 
-### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Congelar e descongelar a execução do thread
+### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Congelar e descongelar a execução do thread
 
 > [!TIP]
 > Você pode congelar e descongelar (suspender e retomar) threads para controlar a ordem em que os threads executam o trabalho. Isso pode ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
@@ -332,7 +332,7 @@ Você pode sinalizar threads para manter o controle de threads importantes e ign
 
     O aplicativo também pode instanciar alguns novos threads. Os novos threads não são sinalizados e não são congelados.
 
-### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a>Seguir um único thread com pontos de interrupção condicionais
+### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a> Seguir um único thread com pontos de interrupção condicionais
 
 Pode ser útil seguir a execução de um único thread no depurador. Uma maneira de fazer isso é congelar threads nos quais você não está interessado. Em alguns cenários, talvez seja necessário seguir um único thread sem congelar outros threads, por exemplo, para reproduzir um bug específico. Para seguir um thread sem congelar outros threads, você deve evitar dividir o código, exceto no thread no qual você está interessado. Você pode fazer isso definindo um [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
@@ -360,7 +360,7 @@ Você pode definir pontos de interrupção em condições diferentes, como o nom
     > [!NOTE]
     > Quando você avança o depurador, todos os threads serão executados. No entanto, o depurador não interromperá o código em outros threads, a menos que um dos outros threads atinja um ponto de interrupção.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)

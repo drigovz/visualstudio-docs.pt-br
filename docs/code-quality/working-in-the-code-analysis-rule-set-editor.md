@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893301"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
@@ -26,7 +26,7 @@ A tabela a seguir mostra as opções de gravidade:
 |Ação (severidade)|Descrição|
 |-|-|
 |Aviso|Gera um aviso no **lista de erros** e também no momento da compilação.|
-|Erro do|Gera um erro na **lista de erros** e também no momento da compilação.|
+|Erro|Gera um erro na **lista de erros** e também no momento da compilação.|
 |Informações|Gera uma mensagem no **lista de erros**.|
 |Hidden|A violação não é visível para o usuário. No entanto, o IDE é notificado sobre a violação.|
 |Nenhum|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
