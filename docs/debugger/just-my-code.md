@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536559"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar apenas o código de usuário com Apenas Meu Código
@@ -45,7 +45,7 @@ Na janela **pilha de chamadas** ou **tarefas** , apenas meu código recolhe o c�
 >[!TIP]
 >Para abrir os **módulos**, **pilha de chamadas**, **tarefas**ou a maioria das outras janelas de depuração, você deve estar em uma sessão de depuração. Durante a depuração, em **depurar**  >  **janelas**, selecione as janelas que você deseja abrir.
 
-<a name="BKMK_Override_call_stack_filtering"></a>Para exibir o código em um quadro de **[código externo]** recolhido, clique com o botão direito do mouse na **pilha de chamadas** ou na janela de **tarefas** e selecione **Mostrar código externo** no menu de contexto. As linhas de código externo expandidas substituem o quadro **[código externo**].
+<a name="BKMK_Override_call_stack_filtering"></a> Para exibir o código em um quadro de **[código externo]** recolhido, clique com o botão direito do mouse na **pilha de chamadas** ou na janela de **tarefas** e selecione **Mostrar código externo** no menu de contexto. As linhas de código externo expandidas substituem o quadro **[código externo**].
 
 ![Mostrar código externo na janela pilha de chamadas](../debugger/media/dbg_justmycode_showexternalcode.png "Mostrar Código Externo")
 
@@ -60,9 +60,9 @@ Em projetos do .NET, o Apenas Meu Código usa arquivos de símbolo (*. pdb*) e o
 
 Três atributos de compilador também afetam o que o depurador .NET considera como código de usuário:
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>informa ao depurador que o código ao qual ele é aplicado não é o código do usuário.
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> informa ao depurador que o código ao qual ele é aplicado não é o código do usuário.
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> oculta o código do depurador, mesmo que Apenas Meu Código esteja desativado.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute>instrui o depurador a percorrer o código em que ele é aplicado, em vez de entrar no código.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> instrui o depurador a percorrer o código em que ele é aplicado, em vez de entrar no código.
 
 O depurador .NET considera que todos os outros códigos sejam do código do usuário.
 
@@ -83,7 +83,7 @@ Se as exceções de primeira chance estiverem habilitadas para a exceção, a li
 
 A partir do Visual Studio 2017 versão 15,8, também há suporte para Apenas Meu Código para a depuração de código. Esse recurso também requer o uso da opção de compilador [/JMC (apenas meu código de depuração)](/cpp/build/reference/jmc) . A opção é habilitada por padrão em projetos C++. Para o suporte de janela de **pilha de chamadas** e pilha de chamadas no apenas meu código, a opção/JMC não é necessária.
 
-<a name="BKMK_CPP_User_and_non_user_code"></a>Para ser classificado como código de usuário, o PDB do binário que contém o código do usuário deve ser carregado pelo depurador (use a janela **módulos** para verificar isso).
+<a name="BKMK_CPP_User_and_non_user_code"></a> Para ser classificado como código de usuário, o PDB do binário que contém o código do usuário deve ser carregado pelo depurador (use a janela **módulos** para verificar isso).
 
 Para o comportamento da pilha de chamadas, como na janela **pilha de chamadas** , apenas meu código em C++ considera que apenas essas funções *não são código de usuário*:
 
@@ -99,7 +99,7 @@ Para o comportamento de depuração de código, Apenas Meu Código em C++ consid
 > [!NOTE]
 > Para o suporte de Stepping de código na Apenas Meu Código, o código C++ deve ser compilado usando os compiladores MSVC no Visual Studio 15,8 Preview 3 ou posterior, e a opção de compilador/JMC deve ser habilitada (habilitada por padrão). Para obter detalhes adicionais, consulte [Personalizar a pilha de chamadas C++ e o comportamento de depuração de código](#BKMK_CPP_Customize_call_stack_behavior)) e esta [postagem de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Para o código compilado usando um compilador mais antigo, os arquivos *. natstepfilter* são a única maneira de personalizar a depuração de código, que é independente do apenas meu código. Consulte [Personalizar o comportamento de depuração do C++](#BKMK_CPP_Customize_stepping_behavior).
 
-<a name="BKMK_CPP_Stepping_behavior"></a>Durante a depuração de C++:
+<a name="BKMK_CPP_Stepping_behavior"></a> Durante a depuração de C++:
 
 - **Depurar**  >  **Intervir** (ou **F11**) em etapas de código não-usuário sobre o código para a próxima linha de código de usuário.
 - **Depurar**  >  **Step Out** (ou **Shift** + **F11**) em código de não usuário é executado na próxima linha do código do usuário.
@@ -110,7 +110,7 @@ Se o depurador interromper o código que não é de usuário (por exemplo, você
 
 Se o depurador atingir uma exceção, ele parará na exceção, seja em código de usuário ou não de usuário. As opções não **tratadas do usuário** na caixa de diálogo **configurações de exceção** são ignoradas.
 
-### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizar a pilha de chamadas C++ e o comportamento de depuração de código
+### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar a pilha de chamadas C++ e o comportamento de depuração de código
 
 Para projetos C++, você pode especificar os módulos, os arquivos de origem e as funções que a janela **pilha de chamadas** trata como código que não é de usuário, especificando-os nos arquivos * \* . natjmc* . Essa personalização também se aplicará à depuração de código se você estiver usando o compilador mais recente (consulte [C++ apenas meu código](#BKMK_CPP_User_and_non_user_code)).
 
@@ -160,7 +160,7 @@ Um arquivo *. natjmc* é um arquivo XML com esta sintaxe:
 |`Module`|Opcional. O nome ou o caminho completo do módulo que contém a função. Você pode usar esse atributo para resolver a ambiguidade de funções com o mesmo nome.|
 |`ExceptionImplementation`|Quando definido como `true` , a pilha de chamadas exibe a função que gerou a exceção em vez dessa função.|
 
-### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a>Personalizar o comportamento de depuração do C++ independentemente das configurações de Apenas Meu Código
+### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar o comportamento de depuração do C++ independentemente das configurações de Apenas Meu Código
 
 Em projetos do C++, você pode especificar funções para percorrer, listando-as como código que não é de usuário em arquivos * \* . natstepfilter* . As funções listadas nos arquivos * \* . natstepfilter* não são dependentes das configurações de apenas meu código.
 
@@ -190,11 +190,11 @@ Um arquivo *. natstepfilter* é um arquivo XML com esta sintaxe:
 |`Function`|Obrigatórios. Especifica uma ou mais funções como funções de não usuário.|
 |`Name`|Obrigatórios. Uma expressão regular formatada como ECMA-262 que especifica o nome completo da função a ser correspondida. Por exemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informa ao depurador que todos os métodos em `MyNS::MyClass` devem ser considerados como código de não usuário. A correspondência diferencia maiúsculas e minúsculas.|
 |`Module`|Opcional. Uma expressão regular formatada como ECMA-262 que especifica o caminho completo do módulo que contém a função. A correspondência não diferencia maiúsculas de minúsculas.|
-|`Action`|Obrigatórios. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> `NoStepInto`-informa o depurador para percorrer a função.<br /> `StepInto`– informa ao depurador para entrar na função, substituindo qualquer outra `NoStepInto` para a função correspondente.|
+|`Action`|Obrigatórios. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> `NoStepInto`  -informa o depurador para percorrer a função.<br /> `StepInto`  – informa ao depurador para entrar na função, substituindo qualquer outra `NoStepInto` para a função correspondente.|
 
 ## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Apenas Meu Código do JavaScript
 
-<a name="BKMK_JS_User_and_non_user_code"></a>O JavaScript Apenas Meu Código controla a depuração e a exibição da pilha, categorizando o código em uma dessas classificações:
+<a name="BKMK_JS_User_and_non_user_code"></a> O JavaScript Apenas Meu Código controla a depuração e a exibição da pilha, categorizando o código em uma dessas classificações:
 
 |classificação|Descrição|
 |-|-|
@@ -220,7 +220,7 @@ Todos os demais códigos são classificados como **MyCode**.
 
 Você pode modificar as classificações padrão e classificar arquivos e URLs específicos como usuário ou código de não usuário, adicionando um arquivo *. JSON* chamado *mycode.jsna* pasta raiz de um projeto JavaScript. Consulte [personalizar apenas meu código de JavaScript](#BKMK_JS_Customize_Just_My_Code).
 
-<a name="BKMK_JS_Stepping_behavior"></a>Durante a depuração de JavaScript:
+<a name="BKMK_JS_Stepping_behavior"></a> Durante a depuração de JavaScript:
 
 - Se uma função for um código que não seja de usuário, **depurar**  >  **etapa em** (ou **F11**) se comportará da mesma forma que a **depuração**  >  **Step Over** (ou **F10**).
 - Se uma etapa começar no código que não é de usuário (**LibraryCode** ou **UnrelatedCode**), a depuração se comporta temporariamente como se apenas meu código não estiver habilitada. Quando você voltar ao código do usuário, Apenas Meu Código a depuração será reabilitada.
@@ -234,7 +234,7 @@ Os pontos de interrupção definidos no código sempre são atingidos, mas o có
 - Se a `debugger` palavra-chave ocorrer em **LibraryCode**, o depurador sempre interromperá.
 - Se a `debugger` palavra-chave ocorrer em **UnrelatedCode**, o depurador não é interrompido.
 
-<a name="BKMK_JS_Exception_behavior"></a>Se uma exceção sem tratamento ocorrer no código **MyCode** ou **LibraryCode** , o depurador sempre interromperá.
+<a name="BKMK_JS_Exception_behavior"></a> Se uma exceção sem tratamento ocorrer no código **MyCode** ou **LibraryCode** , o depurador sempre interromperá.
 
 Se uma exceção sem tratamento ocorrer em **UnrelatedCode**e **MyCode** ou **LibraryCode** estiver na pilha de chamadas, o depurador será interrompido.
 
@@ -243,7 +243,7 @@ Se as exceções de primeira chance estiverem habilitadas para a exceção, e a 
 - Se a exceção for tratada, o depurador não será interrompido.
 - Se a exceção não for tratada, o depurador será interrompido.
 
-### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a>Personalizar Apenas Meu Código JavaScript
+### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizar Apenas Meu Código JavaScript
 
 Para categorizar o usuário e o código de não usuário para um único projeto JavaScript, você pode adicionar um arquivo *. JSON* chamado *mycode.jsna* pasta raiz do projeto.
 
@@ -279,7 +279,7 @@ As especificações nesse arquivo substituem as classificações padrão e a *my
 
 Os pares chave-valor **Eval**, **Function** e **ScriptBlock** determinam como o código gerado dinamicamente é classificado:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Eval**|Script que é executado passando uma cadeia de caracteres à função `eval` fornecida pelo host. Por padrão, o script Eval é classificado como **MyCode**.|
 |**Função**|Script que é executado passando uma cadeia de caracteres para o construtor `Function`. Por padrão, o script Function é classificado como **LibraryCode**.|
@@ -295,10 +295,10 @@ Você pode alterar o valor para um destas palavras-chave:
 
 Os pares chave-valor **MyCode**, **Libraries** e **Unrelated** especificam as URLs ou os arquivos que você deseja incluir em uma classificação:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**MyCode**|Uma matriz de URLs ou arquivos classificados como **MyCode**.|
 |**Bibliotecas**|Uma matriz de URLs ou arquivos classificados como **LibraryCode**.|
 |**Unrelated**|Uma matriz de URLs ou arquivos classificados como **UnrelatedCode**.|
 
-A cadeia de caracteres da URL ou do arquivo pode ter um ou mais `*` caracteres, que correspondem a zero ou mais caracteres. `*`é o mesmo que a expressão regular `.*` .
+A cadeia de caracteres da URL ou do arquivo pode ter um ou mais `*` caracteres, que correspondem a zero ou mais caracteres. `*` é o mesmo que a expressão regular `.*` .

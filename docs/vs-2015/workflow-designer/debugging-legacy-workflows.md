@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656860"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurando fluxos de trabalho herdados
@@ -33,7 +33,7 @@ Se você estiver usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado no [!IN
 >
 >   Se qualquer um desses cenários ocorrer durante a depuração de fluxos de trabalho do .NET Framework 3.0 ou 3.5, execute um reparo da instalação do Visual Studio.
 
- O [!INCLUDE[wf2](../includes/wf2-md.md)] integra-se com as seguintes janelas de depuração padrão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ [!INCLUDE[wf2](../includes/wf2-md.md)] integra-se com as seguintes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janelas de depuração padrão:
 
 - **Ponto de interrupção**: funciona conforme o esperado, mas você especifica uma atividade para o nome da função.
 
@@ -58,16 +58,16 @@ Se você estiver usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado no [!IN
 - Depuração de modo misto.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Invocando o depurador do Visual Studio para Windows Workflow Foundation (herdado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Chamar o depurador do Visual Studio para Windows Workflow Foundation (legados)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
- [Desabilitando o depurador do Visual Studio para Windows Workflow Foundation (herdado)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Desativando o depurador do Visual Studio para Windows Workflow Foundation (legados)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
- [Como depurar fluxos de trabalho baseados em ASP.NET (herdado)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
+ [Como: Fluxos de trabalho de depuração ASP.NET-Based (legados)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
 
  [Como definir pontos de interrupção em fluxos de trabalho (herdado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)
 
- [Depurando fluxos de trabalho de um computador remoto (herdado)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
+ [Fluxos de trabalho de depuração de um computador remoto (legados)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
 
  [Opções de passo a passo em depuração (herdado)](../workflow-designer/debug-stepping-options-legacy.md)
 
- [Como alterar a opção de executar a depuração em etapas (herdado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Como: Altere a opção de avançar de depuração (o legados)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

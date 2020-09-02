@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 925220d583695e0116fb5901d92626bfcfa7450f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670538"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Como exibir tipos existentes (Designer de Classe)
@@ -65,5 +65,5 @@ Para ver um tipo existente e seus membros, adicione sua forma a um diagrama de c
 
      Um Diagrama de Classe populado automaticamente é criado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como exibir a herança entre tipos (Designer de classe)](../ide/how-to-view-inheritance-between-types-class-designer.md) [como personalizar diagramas de classe (Designer de classe)](../ide/how-to-customize-class-diagrams-class-designer.md) [exibindo tipos e relações (Designer de classe)](../ide/viewing-types-and-relationships-class-designer.md)

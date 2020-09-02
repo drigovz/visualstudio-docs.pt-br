@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670484"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificando e personalizando atalhos de teclado no Visual Studio
@@ -37,7 +37,7 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
 - Em que contexto você está quando escolhe o atalho. Por exemplo, o atalho F2 invocará o comando Edit.EditCell se você estiver usando o Designer de Configurações e o comando File.Rename se estiver usando o Team Explorer.
 
-  Independentemente das configurações, da personalização e do contexto, você sempre pode localizar e alterar um atalho de teclado na caixa de diálogo **Opções**. Também é possível procurar os atalhos de teclado padrão de várias dezenas de comandos em [Atalhos de teclado padrão para comandos frequentes](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), e pode encontrar uma lista completa de todos os atalhos padrão (com base nas Configurações Gerais de Desenvolvimento) em [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+  Independentemente das configurações, da personalização e do contexto, você sempre pode localizar e alterar um atalho de teclado na caixa de diálogo **Opções**. Você também pode pesquisar os atalhos de teclado padrão para várias dúzias de comandos em [atalhos de teclado padrão para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)e encontrar uma lista completa de todos os atalhos padrão (com base nas configurações de desenvolvimento gerais) em [atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
   **Neste tópico**
 
@@ -52,13 +52,13 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 > [!NOTE]
 > Suas configurações e a edição do Visual Studio podem alterar os nomes e os locais dos comandos de menu, bem como as opções que aparecem nas caixas de diálogo. Este tópico se baseia nas **Configurações Gerais de Desenvolvimento**.
 
-## <a name="bkmk_identify"></a> Identificando um atalho de teclado
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> Identificando um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **ferramentas**, **Opções**.
 
 2. Expanda **Ambiente** e escolha **Teclado**.
 
-     ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. Na caixa **Mostrar comandos que contenham**, digite todo ou parte do nome do comando sem espaços.
 
@@ -70,15 +70,15 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
 5. Se o comando tiver um atalho de teclado, ele será exibido na lista **Atalho(s) para o comando selecionado**.
 
-     ![Exibir um atalho para um comando especificado](../ide/media/viewshortcut.png "|::ref2::|")
+     ![Exibir um atalho para um comando especificado](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a> Personalizando um atalho de teclado
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> Personalizando um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **ferramentas**, **Opções**.
 
 2. Expanda a pasta **Ambiente** e escolha **Teclado**.
 
-     ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![Exibir atalhos de teclado na caixa de diálogo Opções](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. Na caixa **Mostrar comandos que contenham**, digite todo ou parte do nome do comando sem espaços.
 
@@ -100,14 +100,14 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
      Se um atalho já estiver atribuído a outro comando, ele aparecerá na caixa **Atalho usado atualmente por**. Nesse caso, escolha a tecla Backspace para excluir esse atalho antes de tentar outro.
 
-     ![Especificar um atalho diferente para um comando](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![Especificar um atalho diferente para um comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
 7. Escolha o botão **Atribuir**.
 
     > [!NOTE]
     > Se você especificar um atalho diferente para um comando, escolha o botão **Atribuir** e, em seguida, **Cancelar**; a caixa de diálogo é fechada, mas a alteração não é revertida.
 
-## <a name="bkmk_transfer"></a> Compartilhando atalhos de teclado personalizados
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> Compartilhando atalhos de teclado personalizados
  Você pode compartilhar os atalhos de teclado personalizados exportando-os para um arquivo e fornecendo o arquivo a outras pessoas para que elas importem os dados.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Para exportar apenas atalhos de teclado
@@ -116,13 +116,13 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
 2. Escolha **Exportar configurações de ambiente selecionadas** e escolha o botão **Avançar**.
 
-3. Em **Quais configurações você deseja exportar?** , desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
+3. Em **Quais configurações você deseja exportar?**, desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
 
 4. Marque a caixa de seleção **Teclado** e escolha o botão **Avançar**.
 
-     ![Exportar apenas atalhos de teclado personalizados](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![Exportar apenas atalhos de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5. Nas caixas **Que nome deseja dar a seu arquivo de configurações?** e **Armazenar meu arquivo de configurações neste diretório**, deixe os valores padrão ou especifique valores diferentes e escolha o botão **Finalizar**.
+5. Nas caixas **o que você deseja nomear o arquivo de configurações** e **armazenar meu arquivo de configurações neste diretório** , deixe os valores padrão ou especifique valores diferentes e, em seguida, escolha o botão **concluir** .
 
      Por padrão, seus atalhos são salvos em um arquivo na pasta %USERPROFILE%\Documents\Visual Studio 2013\Settings. O nome do arquivo reflete a data em que você exportou as configurações, e a extensão é .vssettings.
 
@@ -138,11 +138,11 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
 5. Escolha o botão **Avançar**.
 
-6. Em **Quais configurações você deseja importar?** , desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
+6. Em **Quais configurações você deseja importar?**, desmarque a caixa de seleção **Todas as Configurações**, expanda **Opções** e expanda **Ambiente**.
 
 7. Marque a caixa de seleção **Teclado** e escolha o botão **Finalizar**.
 
-     ![Importar apenas atalhos de teclado personalizados](../ide/media/importshortcuts.png "|::ref6::|")
+     ![Importar apenas atalhos de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Recursos de Acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee1aea023124fb8277fd13cf341a63fca92c37cd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149871"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidas nessa função stub em um endereço virtual relativo de especificado.  
+Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos nessa função de stub em um endereço virtual relativo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,20 +34,20 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Parâmetros  
  `tagValue`  
- [in] O valor de marca de ponteiro para o qual os registros de símbolo pointee são encontrados.  
+ no O valor da marca do ponteiro para o qual os registros de símbolo do ponto são encontrados.  
   
  `rva`  
- [in] O rva é usado para filtrar os símbolos que correspondem à variável pointee com o valor de marca especificados.  
+ no O RVA usado para filtrar os símbolos que correspondem à variável de ponto com o valor de marca especificado.  
   
  `ppResult`  
- [out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.  
+ fora Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Chame esse método somente em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador.  
+ Chame esse método somente em uma `IDiaSymbol` interface que corresponda a uma função de stub de acelerador.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

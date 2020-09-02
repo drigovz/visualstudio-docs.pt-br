@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2f636c2a0eb2cfdcebf383fdc7eea70f72cb90e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670229"
 ---
 # <a name="add-existing-item-command"></a>Comando Adicionar Item Existente
@@ -32,10 +32,10 @@ Adiciona um arquivo existente à solução atual e abre-o.
 File.AddExistingItem filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `filename` Necessário. O caminho completo e o nome do arquivo, com a extensão, do item a adicionar à solução atual. Se o caminho do arquivo ou o nome do arquivo contiver espaços, coloque todo o caminho entre aspas.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  /e: `editorname` Opcional. Nome do editor no qual o arquivo será aberto. Se o argumento for especificado, mas nenhum nome de editor for fornecido, a caixa de diálogo **Abrir com** será exibida.
 
  A sintaxe do argumento /e:`editorname` usa os nomes de editor como eles são exibidos na **Caixa de diálogo Abrir Com**, entre aspas. Por exemplo, para abrir uma folha de estilos no editor de código-fonte, insira o seguinte para o argumento /e:`editorname`.
@@ -54,5 +54,5 @@ File.AddExistingItem filename [/e:editorname]
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela](../../ide/reference/command-window.md) de comando [Localizar/comando caixa](../../ide/find-command-box.md) de comandos do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

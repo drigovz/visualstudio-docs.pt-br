@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845530"
 ---
 # <a name="creating-bootstrapper-packages"></a>Criando pacotes de bootstrapper
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  A tabela a seguir mostra as propriedades que são preenchidas automaticamente pelo bootstrapper.  
   
-|propriedade|Descrição|  
+|Propriedade|Descrição|  
 |--------------|-----------------|  
 |ApplicationName|O nome do aplicativo.|  
 |ProcessorArchitecture|O processador e bits por palavra da plataforma de destino de um executável. Os valores incluem o seguinte:<br /><br /> – Intel<br />– IA64<br />– AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *nome da empresa*. *Nome do componente*. RedistList. xml. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
+ A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *nome da empresa*. *Nome do componente*.RedistList.xml. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md)   
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)   
  [Use o bootstrapper do Visual Studio 2005 para iniciar sua instalação](https://msdn.microsoft.com/magazine/cc163899.aspx)

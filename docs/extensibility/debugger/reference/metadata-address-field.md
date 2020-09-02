@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714529"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
-Esta estrutura representa o endereço de um campo de classe ou estrutura.
+Essa estrutura representa o endereço de um campo de uma classe ou estrutura.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _tagMETADATA_ADDRESS_FIELD {
@@ -43,21 +43,21 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Membros
 
 `tokField`\
-A id do token de campo.
+A ID do token do campo.
 
-[C++] `_mdToken` é `typedef` um para um `int`de 32 bits .
+[C++] `_mdToken` é um `typedef` para um de 32 bits `int` .
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_FIELD` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+Essa estrutura faz parte da União na estrutura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido como `ADDRESS_KIND_FIELD` (um valor da enumeração [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
 
-Cabeçalho: sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 

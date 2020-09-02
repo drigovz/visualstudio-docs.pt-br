@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: ac59e0e08894ca143df6a68c49e5f5f8b24ebc50
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328707"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
@@ -115,7 +115,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Parar o serviço.
 
-         -ou-
+         - ou -
 
     - Digite **VSPerfCmd/Detach**
 
@@ -129,6 +129,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 4. Reinicie o computador.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

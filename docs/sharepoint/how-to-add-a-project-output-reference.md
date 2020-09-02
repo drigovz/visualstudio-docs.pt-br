@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016751"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Como: adicionar uma referência de saída de projeto
@@ -39,7 +40,7 @@ ms.locfileid: "86016751"
 
 6. Escolha a seta ao lado de **nome do projeto**, escolha o nome do item de projeto não SharePoint e, em seguida, escolha o botão **OK** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Como: marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

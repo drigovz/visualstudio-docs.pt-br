@@ -8,10 +8,10 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Suporte da Comunidade Azure incluído nas assinaturas do Visual Studio.
 ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238615"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Fórum do Suporte da Comunidade do Azure em assinaturas do Visual Studio
@@ -42,7 +42,7 @@ Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados 
         - [Banco de Dados SQL do Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack Hub](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Armazenamento do Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
-        - [Máquinas Virtuais do Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
+        - [Máquinas virtuais do Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
         - [Sites do Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Serviços de Nuvem (Funções de Trabalho e da Web)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
         - [Preços e cobrança](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)  
@@ -91,7 +91,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Precisa de assistência para vendas, assinaturas, contas e cobrança nas assinaturas do Visual Studio?  Contate o [Suporte de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

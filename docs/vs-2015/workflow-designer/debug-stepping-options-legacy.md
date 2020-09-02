@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656871"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opções de avançar de depuração (legados)
@@ -35,5 +35,5 @@ Este tópico descreve como depurar aplicativos de [!INCLUDE[wf](../includes/wf-m
 
   Você deve selecionar a opção de avançar da instância ao depurar fluxos de trabalho herdados do computador de estado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depurando fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md) [como: alterar a opção de depuração (herdada)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

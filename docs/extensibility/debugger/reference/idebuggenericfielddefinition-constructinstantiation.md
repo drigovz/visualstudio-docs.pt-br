@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs
+title: 'IDebugGenericFieldDefinition:: ConstructInstantiation | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728257"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Constrói uma instância de campo dada uma matriz de argumentos de tipo.
+Constrói uma instância de campo de acordo com uma matriz de argumentos de tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ int ConstructInstantiation(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `cArgs`\
-[em] Número de argumentos `ppArgs` na matriz.
+no Número de argumentos na `ppArgs` matriz.
 
 `ppArgs`\
-[em] Matriz que contém os argumentos do tipo. Os argumentos do tipo devem ser tipos fechados (genéricos não genéricos ou totalmente instanciados).
+no Matriz que contém os argumentos de tipo. Os argumentos de tipo devem ser tipos fechados (genéricos não genéricos ou totalmente instanciados).
 
 `ppConstructedField`\
-[fora] Retorna a interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o novo campo.
+fora Retorna a interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o novo campo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  As restrições não são verificadas.

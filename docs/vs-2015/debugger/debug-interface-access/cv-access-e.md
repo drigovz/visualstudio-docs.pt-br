@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164381"
 ---
-# <a name="cvaccesse"></a>CV_access_e
+# <a name="cv_access_e"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica o escopo de visibilidade (nível de acesso) de funções de membro e variáveis.  
+Especifica o escopo de visibilidade (nível de acesso) de funções e variáveis de membro.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef enum CV_access_e {   
@@ -37,21 +37,21 @@ typedef enum CV_access_e { 
   
 ## <a name="elements"></a>Elementos  
  CV_private  
- Membro tem acesso privado.  
+ O membro tem acesso privado.  
   
  CV_protected  
- Membro tenha acesso protegido.  
+ O membro tem acesso protegido.  
   
  CV_public  
- Membro tem o acesso público.  
+ O membro tem acesso público.  
   
 ## <a name="remarks"></a>Comentários  
- O `friend` especificador de acesso não é incluída aqui porque ele é normalmente usado por funções não membro que têm acesso a elementos particulares e protegidos da classe. Use o [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) método para localizar símbolos com `SymTagFriend` acesso.  
+ O `friend` especificador de acesso não está incluído aqui porque normalmente é usado por funções que não são membros que têm acesso a elementos privados e protegidos da classe. Use o método [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) para localizar símbolos com `SymTagFriend` acesso.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol:: get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

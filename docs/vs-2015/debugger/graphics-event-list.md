@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845043"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
@@ -56,8 +56,8 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
   
 - Na janela **lista de eventos de gráficos** , acima da lista de eventos, localize o menu suspenso **exibição** e escolha o modo de exibição de **linha do tempo** ou o modo de exibição **chamar chamadas** .  
   
-### <a name="filtering-events"></a>Filtrando eventos  
- É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas, como `Vertex`, conforme mostrado na ilustração anterior — ou várias palavras-chave usando uma lista delimitada por ponto-e-vírgula, como `Draw;Primitive`— que corresponde a eventos que têm `Draw` ou `Primitive` em seus nomes. As pesquisas são sensíveis ao espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.  
+### <a name="filtering-events"></a>Filtragem de eventos  
+ É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas, `Vertex` como mostrado na ilustração anterior, ou várias palavras-chave, usando uma lista delimitada por ponto-e-vírgula, como `Draw;Primitive` : que corresponde a eventos que têm `Draw` ou `Primitive` em seus nomes. As pesquisas são sensíveis ao espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.  
   
 ### <a name="moving-between-draw-calls"></a>Alternando entre chamadas de desenho  
  Como o exame de chamadas `Draw` é especialmente importante, é possível usar os botões **Ir para a próxima chamada de desenho** e **Ir para a chamada de desenho anterior**, localizados no canto superior esquerdo da janela **Lista de Eventos de Gráficos**, para encontrar e alternar rapidamente entre chamadas de desenho.  
@@ -68,12 +68,12 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 ## <a name="kinds-of-events-and-event-markers"></a>Tipos de eventos e marcadores de eventos  
  Os eventos exibidos na lista de eventos são organizados em quatro categorias: eventos gerais, eventos de desenho, grupos de eventos definidos pelo usuário e marcadores de evento definidos pelo usuário. Exceto no caso de eventos em geral, cada evento é exibido com um ícone que indica a categoria a que pertence.  
   
-|Ícone|Descrição do evento|  
+|ícone|Descrição do evento|  
 |----------|-----------------------|  
 |(sem ícone)|Evento em geral<br /> Qualquer evento que não seja um evento definido pelo usuário, um grupo de eventos definido pelo usuário ou um evento de desenho.|  
 |![O ícone de evento de desenho](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Evento de desenho<br /> Marca um evento de desenho ocorrido durante o quadro capturado.|  
-|![O ícone&#45;de marcador de evento definido pelo usuário](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupo de eventos definido pelo usuário<br /> Eventos relacionados a grupos, conforme definido pelo aplicativo.|  
-|![O ícone&#45;de marcador de evento definido pelo usuário](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcador de evento definido pelo usuário<br /> Marca um local específico, conforme definido pelo aplicativo.|  
+|![O usuário&#45;ícone de marcador de evento definido](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupo de eventos definido pelo usuário<br /> Eventos relacionados a grupos, conforme definido pelo aplicativo.|  
+|![O usuário&#45;ícone de marcador de evento definido](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcador de evento definido pelo usuário<br /> Marca um local específico, conforme definido pelo aplicativo.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marcando eventos definidos pelo usuário em seu aplicativo  
  Os eventos definidos pelo usuário são específicos do aplicativo. É possível usá-los para correlacionar eventos significativos ocorridos no aplicativo com eventos na Lista de Eventos de Gráficos. Por exemplo, é possível criar grupos de eventos definidos pelo usuário para organizar eventos relacionados, como os que renderizam a interface do usuário, em grupos ou em hierarquias de forma que você possa navegar na lista de eventos mais facilmente ou criar marcadores quando determinados tipos de objetos forem utilizados para encontrar de maneira fácil os eventos de gráficos na lista de eventos.  
@@ -101,5 +101,5 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
   
  É possível usar qualquer uma dessas APIs compatíveis com a versão do Direct3D. Por exemplo, se estiver segmentando a API Direct3D 11.1, você poderá usar `SetMarker` ou `D3DPerf_SetMarker` para criar um marcador de evento, mas não `SetMarkerInt`, porque ele só está disponível no Direct3D 11.2, e não é possível misturar aqueles compatíveis com versões diferentes do Direct3D no mesmo aplicativo.  
   
-## <a name="see-also"></a>Veja também  
- [Passo a passo: objetos ausentes devido ao estado do dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+## <a name="see-also"></a>Consulte Também  
+ [Passo a passo: Objetos ausentes devido ao estado do dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)

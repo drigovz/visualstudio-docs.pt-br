@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238602"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obter logs de build com o MSBuild
@@ -50,7 +50,7 @@ A tabela a seguir mostra como os detalhes do log (valores de coluna) afetam quai
 | Tipo de mensagem/detalhes              | Quiet | Minimal | Normal | Detalhado | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
-| Avisos                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Warnings                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de alta prioridade              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de prioridade normal           |       |         |    ✅   |     ✅    |      ✅     |
 | Mensagens de baixa prioridade              |       |         |        |     ✅    |      ✅     |
@@ -102,7 +102,7 @@ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-co
 
  Na linha de comando do MSBuild, você especifica o agente de log personalizado usando a opção **-logger** . Você também pode usar a opção **-noconsolelogger** para desabilitar o agente de log de console padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Agentes de build](../msbuild/build-loggers.md)

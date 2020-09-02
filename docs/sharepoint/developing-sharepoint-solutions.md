@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016793"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
@@ -100,13 +101,13 @@ ms.locfileid: "86016793"
 |Local da implantação|O caminho totalmente qualificado do arquivo no servidor do SharePoint. Esse caminho é composto pelas subpropriedades raiz de implantação e caminho de implantação.|
 |Caminho de implantação|O caminho relativo do arquivo no arquivo do SharePoint Server, como Workflow1 \\ . O caminho totalmente qualificado para o arquivo é criado concatenando o valor do *caminho de implantação* no final do valor *raiz da implantação* .<br /><br /> A seleção de um valor de *RootFile* para a propriedade de *tipo de implantação* altera a propriedade *raiz de implantação* para \<SharePointRoot> \\ , resultando em um caminho totalmente qualificado de \<SharePointRoot> \Workflow1 \\ . Para obter mais informações, consulte [empacotando e implantando soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Raiz da implantação|Cadeia de caracteres. A pasta raiz onde o arquivo é implantado no servidor do SharePoint. Por exemplo, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> O valor da propriedade *raiz da implantação* é determinado pela configuração do *tipo de implantação* .|
-|Tipo de implantação|O tipo de implantação do arquivo, que determina seu valor de *raiz de implantação* . Pode ser um dos seguintes valores:<br /><br /> NoDeployment:*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementofile: * \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ *<br /><br /> Modelo: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource:*\<ClassResourcePath>\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Tipo de implantação|O tipo de implantação do arquivo, que determina seu valor de *raiz de implantação* . Pode ser um dos seguintes valores:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementofile: * \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ *<br /><br /> Modelo: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nome do Arquivo|O nome do arquivo ou da pasta do arquivo de item.|
 |Caminho completo|O local do arquivo para o item. (Somente leitura.)|
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[SharePoint Modelos de projeto e de item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md)|Descreve o projeto do SharePoint e os modelos de item de projeto disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Como adicionar itens a um Projeto do SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Descreve como adicionar itens novos ou existentes a um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.|
@@ -127,7 +128,7 @@ ms.locfileid: "86016793"
 |[Segurança das soluções do SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Descreve as considerações de segurança para o desenvolvimento de soluções do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Caixa de diálogo Seletor de URL &#40;desenvolvimento do SharePoint no Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descreve uma caixa de diálogo que você pode usar para adicionar referências de caminho a recursos em seu projeto ou no servidor do SharePoint local.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Introdução &#40;desenvolvimento do SharePoint no Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Procurar conexões do SharePoint usando Gerenciador de Servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

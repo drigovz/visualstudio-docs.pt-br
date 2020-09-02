@@ -7,10 +7,10 @@ ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
 ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238550"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
@@ -149,7 +149,7 @@ Provavelmente você precisará trabalhar com um repositório do GitHub que exist
 > [!NOTE]
 > Poderão ocorrer problemas se o repositório tiver mais de 4 GB de tamanho.
 
-## <a name="troubleshooting"></a>Solução de Problemas
+## <a name="troubleshooting"></a>Solução de problemas
 
 Se houver problemas ao inicializar seu projeto com um repositório remoto vazio, você poderá tentar executar as seguintes etapas:
 
@@ -163,6 +163,6 @@ Se houver problemas ao inicializar seu projeto com um repositório remoto vazio,
 1. Navegue para o menu de Controle de versão e escolha **Publicar no controle de versão**.
 1. Siga as etapas do tutorial acima a partir da etapa 6.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Controle de versão no Visual Studio (no Windows)](/visualstudio/version-control/)

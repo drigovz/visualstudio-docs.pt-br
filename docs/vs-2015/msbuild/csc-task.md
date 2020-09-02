@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0dd27fe64982e77872e37ec01dbdb71a0a141ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694095"
 ---
 # <a name="csc-task"></a>Tarefa Csc
@@ -40,7 +40,7 @@ Encapsula CSC.exe e produz executáveis (arquivos .exe), bibliotecas de vínculo
 |`AddModules`|Parâmetro `String` opcional.<br /><br /> Especifica um ou mais módulos a fazerem parte do assembly. Para obter mais informações, consulte [/addmodule (opções do compilador C#)](https://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58).|  
 |`AllowUnsafeBlocks`|Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, compilará o código que usa a palavra-chave [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Para obter mais informações, consulte [/unsafe (opções do compilador C#)](https://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).|  
 |`ApplicationConfiguration`|Parâmetro `String` opcional.<br /><br /> Especifica um arquivo de configuração de aplicativo que contém configurações de associação de assembly.|  
-|`BaseAddress`|Parâmetro `String` opcional.<br /><br /> Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão para uma DLL é definido pelo Common Language Runtime de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Para obter mais informações, consulte [/baseaddress (opções do compilador C#)](https://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608).|  
+|`BaseAddress`|Parâmetro `String` opcional.<br /><br /> Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão para uma DLL é definido pelo Common Language Runtime de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Para obter mais informações, consulte [/BaseAddress (opções do compilador C#)](https://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608).|  
 |`CheckForOverflowUnderflow`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aritmético inteiro que estoura os limites do tipo de dados causa uma exceção em tempo de execução. Para obter mais informações, consulte [/checked (opções do compilador C#)](https://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).|  
 |`CodePage`|Parâmetro `Int32` opcional.<br /><br /> Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Para obter mais informações, consulte [/codepage (opções do compilador C#)](https://msdn.microsoft.com/library/75942989-b69a-4308-90a0-840c73d2c478).|  
 |`DebugType`|Parâmetro `String` opcional.<br /><br /> Especifica o tipo de depuração. `DebugType` pode ser `full` ou `pdbonly`. O padrão é `full`, o que permite que um depurador seja anexado a um programa em execução. Especificar `pdbonly` habilita a depuração de código-fonte quando o programa é iniciado no depurador, mas apenas exibe o assembler quando o programa em execução está anexado ao depurador.<br /><br /> Esse parâmetro substitui o parâmetro `EmitDebugInformation`.<br /><br /> Para obter mais informações, consulte [/debug (opções do compilador C#)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969).|  
@@ -66,7 +66,7 @@ Encapsula CSC.exe e produz executáveis (arquivos .exe), bibliotecas de vínculo
 |`OutputAssembly`|Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome do arquivo de saída. Para obter mais informações, consulte [/out (opções do compilador C#)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5).|  
 |`PdbFile`|Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo de informações de depuração. O nome padrão é o nome do arquivo de saída com uma extensão .pdb.|  
 |`Platform`|Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64` ou `anycpu`. O padrão é `anycpu`. Para obter mais informações, consulte [/platform (opções do compilador C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).|  
-|`References`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Para obter mais informações, consulte [/reference (opções do compilador C#)](https://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4).<br /><br /> Você pode especificar um alias de referência [!INCLUDE[csprcs](../includes/csprcs-md.md)] em um arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] adicionando os metadados `Aliases` ao item original da “Referência”. Por exemplo, para definir o alias “LS1” na seguinte linha de comando CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> você usará:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
+|`References`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Para obter mais informações, consulte [/Reference (opções do compilador C#)](https://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4).<br /><br /> Você pode especificar um alias de referência [!INCLUDE[csprcs](../includes/csprcs-md.md)] em um arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] adicionando os metadados `Aliases` ao item original da “Referência”. Por exemplo, para definir o alias “LS1” na seguinte linha de comando CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> você usará:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] no arquivo de saída.<br /><br /> Os itens passados para esse parâmetro podem ter entradas de metadados opcionais chamadas `LogicalName` e `Access`. `LogicalName` corresponde ao parâmetro `identifier` da opção `/resource` e `Access` corresponde ao parâmetro `accessibility-modifier`. Para obter mais informações, consulte [/resource (opções do compilador C#)](https://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f).|  
 |`ResponseFiles`|Parâmetro `String` opcional.<br /><br /> Especifica o arquivo de resposta que contém comandos para essa tarefa. Para obter mais informações, confira [@ (Especificar de arquivo de resposta)](https://msdn.microsoft.com/library/dda4fa9f-a02c-400f-8b6a-d58834e13d7f).|  
 |`Sources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um ou mais arquivos de origem [!INCLUDE[csprcs](../includes/csprcs-md.md)].|  
@@ -94,6 +94,6 @@ Encapsula CSC.exe e produz executáveis (arquivos .exe), bibliotecas de vínculo
     EmitDebugInformation="true" />  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)

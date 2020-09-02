@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714308"
 ---
 # <a name="module_info"></a>MODULE_INFO
-Descreve um módulo específico (DLL, EXE ou montagem).
+Descreve um módulo específico (DLL, EXE ou assembly).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Membros
  `dwValidFields`\
- Uma combinação de bandeiras da enumeração [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifica quais campos são preenchidos.
+ Uma combinação de sinalizadores da enumeração [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifica quais campos são preenchidos.
 
  `m_bstrName`\
  O nome do módulo.
@@ -75,40 +75,40 @@ public struct MODULE_INFO { 
  A versão do módulo.
 
  `m_bstrDebugMessage`\
- Uma mensagem opcional sobre o módulo, por exemplo, "Símbolos não podem ser carregados".
+ Uma mensagem opcional sobre o módulo, por exemplo, "símbolos não podem ser carregados".
 
  `m_addrLoadAddress`\
- O endereço de carga do módulo.
+ O endereço de carregamento do módulo.
 
  `m_addrPreferredLoadAddress`\
- O endereço de carga preferido do módulo.
+ O endereço de carregamento preferencial do módulo.
 
  `m_dwSize`\
  O tamanho do módulo.
 
  `m_dwLoadOrder`\
- A ordem de carga do módulo.
+ A ordem de carregamento do módulo.
 
  `m_TimeStamp`\
- A vez que o arquivo símbolo foi modificado pela última vez.
+ A hora em que o arquivo de símbolo foi modificado pela última vez.
 
  `m_bstrUrlSymbolLocation`\
- A localização do arquivo símbolo (por\\exemplo, ". ") especificada no módulo. Usado como local de partida para encontrar símbolos para um módulo.
+ O local do arquivo de símbolo (por exemplo, ". \\ ") especificado no módulo. Usado como um local inicial para localizar símbolos para um módulo.
 
  `m_dwModuleFlags`\
- Uma combinação de bandeiras da enumeração [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) que descreve o módulo.
+ Uma combinação de sinalizadores da enumeração [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) que descreve o módulo.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) onde é preenchida.
+ Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) onde está preenchida.
 
- Esta estrutura corresponde a cada módulo listado na janela **Módulos.**
+ Essa estrutura corresponde a cada módulo listado na janela **módulos** .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

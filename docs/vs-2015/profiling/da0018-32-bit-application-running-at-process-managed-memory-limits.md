@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844729"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID da regra | DA0018 |  
@@ -46,7 +46,7 @@ ID da regra | DA0018 |
  Como o tamanho total dos heaps gerenciados se aproxima do limite padrão, a sobrecarga de gerenciamento de memória normalmente aumenta até o ponto em que pode começar a afetar a capacidade de resposta e a escalabilidade do aplicativo.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
- Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição [Marcas](../profiling/marks-view.md). Encontre as colunas **Memória do .NET CLR\\Nº de bytes em todos os heaps** e **Nº total de bytes confirmados**. Determine se há fases específicas da execução do programa em que a alocação de memória gerenciada é mais pesada do que em outras fases. Compare os valores da coluna **Nº de bytes em todos os heaps** com a taxa de coleta de lixo relatada nas colunas **Memória do .NET CLR\\Nº de coletas da Ger 0**, **Memória do .NET CLR\\Nº de coletas da Ger 1** e **Memória do .NET CLR\\Nº de coletas da Ger 2** para determinar se o padrão de alocações de memória gerenciada está afetando a taxa de coleta de lixo.  
+ Clique duas vezes na mensagem na janela Lista de Erros para navegar até o modo de exibição de [marcas](../profiling/marks-view.md) . Encontre as colunas **Memória do .NET CLR\\Nº de bytes em todos os heaps** e **Nº total de bytes confirmados**. Determine se há fases específicas da execução do programa em que a alocação de memória gerenciada é mais pesada do que em outras fases. Compare os valores da coluna **Nº de bytes em todos os heaps** com a taxa de coleta de lixo relatada nas colunas **Memória do .NET CLR\\Nº de coletas da Ger 0**, **Memória do .NET CLR\\Nº de coletas da Ger 1** e **Memória do .NET CLR\\Nº de coletas da Ger 2** para determinar se o padrão de alocações de memória gerenciada está afetando a taxa de coleta de lixo.  
   
  Em um aplicativo .NET Framework, o Common Language Runtime limita o tamanho total dos heaps gerenciados a um pouco menos do que uma metade do tamanho máximo da parte de área privada do espaço de endereço de um processo. Para um processo de 32 bits em execução em um computador de 32 bits, 2 GB representa o limite superior da parte privada do espaço de endereço do processo. Como o tamanho total dos Heaps gerenciados começa a se aproximar do limite padrão, a sobrecarga de gerenciamento de memória pode aumentar e o desempenho do aplicativo pode diminuir.  
   

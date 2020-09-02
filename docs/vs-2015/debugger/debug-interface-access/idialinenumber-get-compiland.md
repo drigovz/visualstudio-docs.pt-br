@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2416a83de27a9fd5df7fe6399bdb27273d6b71e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192358"
 ---
-# <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
+# <a name="idialinenumberget_compiland"></a>IDiaLineNumber::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma referência ao símbolo para compiland que contribuíram os bytes do texto da imagem.  
+Recupera uma referência ao símbolo para o compiland que contribuiu com os bytes do texto da imagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_compiland ( 
   
 #### <a name="parameters"></a>Parâmetros  
  pRetVal  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto para compiland que contribuíram os bytes do texto da imagem.  
+ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) para o compiland que contribuiu com os bytes do texto da imagem.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

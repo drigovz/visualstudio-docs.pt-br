@@ -12,34 +12,34 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ece51450b8344ae4715a912399ec538171a26a5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695463"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Usando o Gerenciador de texto para monitorar as configurações globais
+# <a name="using-the-text-manager-to-monitor-global-settings"></a>Usar o gerenciador de texto para monitorar as configurações globais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se você implementar um editor de núcleo, você deve monitorar as alterações feitas às configurações globais, porque essas alterações podem afetar sua instância do editor. Você pode acompanhar as alterações através da escuta para eventos gerados pelo Gerenciador de texto. Por exemplo, quando você especifica uma preferência global para a aparência ou o comportamento de um componente no editor de núcleo, como seu objeto de dados de documento, o Gerenciador de texto armazena essas informações e comunica-se a todos os clientes afetados.  
+Se você implementar um editor principal, deverá monitorar as alterações feitas nas configurações globais, pois essas alterações podem afetar sua instância do editor. Você pode acompanhar as alterações ouvindo eventos gerados pelo Gerenciador de texto. Por exemplo, quando você especifica uma preferência global para a aparência ou comportamento de um componente no editor principal, como seu objeto de dados de documento, o Gerenciador de texto armazena essas informações e as comunica para todos os clientes afetados.  
   
 ## <a name="text-manager-functions"></a>Funções do Gerenciador de texto  
- O Gerenciador de texto aciona eventos para um número de configurações, incluindo o seguinte:  
+ O Gerenciador de texto gera eventos para várias configurações, incluindo o seguinte:  
   
 - Se um buffer está sob controle do código-fonte  
   
-- Como se registrar para notificações de alteração de arquivo  
+- Como registrar-se para notificações de alteração de arquivo  
   
-- Como manter o controle de quais modos de exibição estão associados com determinados buffers  
+- Como acompanhar quais modos de exibição estão associados a determinados buffers  
   
-- Preferências de colorização do texto  
+- Preferências de colorização de texto  
   
-- Guia versus preferências de espaço  
+- Preferências de tabulação versus espaço  
   
-  As preferências que são exclusivas para um determinado idioma não são gerenciadas pelo Gerenciador de texto. Essas configurações devem ser gerenciadas por cada serviço de linguagem.  
+  As preferências exclusivas de um determinado idioma não são gerenciadas pelo Gerenciador de texto. Essas configurações devem ser gerenciadas por cada serviço de idioma.  
   
-  Notificação de eventos para o Gerenciador de texto é fornecida pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implementar essa interface em seu cliente de objeto para manipular eventos gerou o Gerenciador de texto. Você pode registrar esses eventos usando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface no Gerenciador de texto.  
+  A notificação de eventos para o Gerenciador de texto é fornecida pela <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implemente essa interface no objeto de cliente para manipular eventos gerados pelo Gerenciador de texto. Registre-se nesses eventos usando a <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface no Gerenciador de texto.  
   
-## <a name="see-also"></a>Consulte também  
- [Dentro do Editor de núcleo](../extensibility/inside-the-core-editor.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Dentro do editor principal](../extensibility/inside-the-core-editor.md)   
  [Recursos do Editor](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

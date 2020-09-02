@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328948"
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
@@ -66,7 +66,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
      A caixa de diálogo ** \<folder name> Propriedades** é exibida.
 
-3. Clique na guia **Segurança**.
+3. Clique na guia **Segurança** .
 
 4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.
 
@@ -120,7 +120,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
    Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Configurar sessões](../profiling/configuring-performance-sessions.md) 
  de desempenho [VSPerfCmd](../profiling/vsperfcmd.md) 
