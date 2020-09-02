@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546946"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Como: atualizar o texto do indicador programaticamente
@@ -30,11 +30,11 @@ ms.locfileid: "85546946"
 
 - Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host.
 
-   <xref:Microsoft.Office.Tools.Word.Bookmark>os controles estendem <xref:Microsoft.Office.Interop.Word.Bookmark> objetos nativos habilitando a vinculação de dados e expondo eventos. Para obter mais informações sobre controles de host, consulte [visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md).
+   <xref:Microsoft.Office.Tools.Word.Bookmark> os controles estendem <xref:Microsoft.Office.Interop.Word.Bookmark> objetos nativos habilitando a vinculação de dados e expondo eventos. Para obter mais informações sobre controles de host, consulte [visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md).
 
 - Um objeto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo.
 
-   <xref:Microsoft.Office.Interop.Word.Bookmark>os objetos não têm recursos ou funcionalidades de associação de dados.
+   <xref:Microsoft.Office.Interop.Word.Bookmark> os objetos não têm recursos ou funcionalidades de associação de dados.
 
   Quando você atribui texto a um indicador, o comportamento difere entre a <xref:Microsoft.Office.Interop.Word.Bookmark> e a <xref:Microsoft.Office.Tools.Word.Bookmark> . Para obter mais informações, consulte [controle de indicadores](../vsto/bookmark-control.md).
 

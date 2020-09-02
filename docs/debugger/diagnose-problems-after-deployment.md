@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350583"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticar problemas após a implantação usando o IntelliTrace (C#, Visual Basic)
@@ -23,7 +23,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
  ![Código, compilação, versão, monitorar, diagnosticar, corrigir](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
- **Você precisará de:**
+ **Você precisará do seguinte:**
 
 - Visual Studio, Azure DevOps ou Team Foundation Server 2017, 2015, 2013, 2012 ou 2010 para configurar seu build
 
@@ -233,7 +233,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
 
      [O que são todos esses outros eventos e informações no log do IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
 
-### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a>O que mais posso fazer aqui?
+### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a> O que mais posso fazer aqui?
 
 - [Obtenha mais informações sobre esse código](../ide/find-code-changes-and-other-history-with-codelens.md). Para encontrar referências para esse código, seu histórico de alterações, bugs relacionados, itens de trabalho, análises do código ou testes de unidade – tudo isso sem sair do editor – use os indicadores do CodeLens no editor.
 
@@ -245,7 +245,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
 
      ![Mapear a pilha de chamadas durante a depuração](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
-### <a name="q--a"></a><a name="FAQ"></a>P & A
+### <a name="q--a"></a><a name="FAQ"></a> P & A
 
 #### <a name="q-why-include-information-about-my-project-source-control-build-and-symbols-with-my-release"></a><a name="WhyInclude"></a> P: Por que incluir informações sobre meu projeto, controle do código-fonte, build e símbolos com minha liberação?
  O Visual Studio usa essas informações para encontrar a solução e o código-fonte correspondentes para a versão que está tentando depurar. Após abrir o log do IntelliTrace e selecionar um evento para iniciar a depuração, o Visual Studio usa símbolos para encontrar e mostrar o código onde ocorreu o evento. Você pode então visualizar os valores que estão registrados e avançar ou retornar através da execução do seu código.
@@ -356,7 +356,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
     </Build>
     ```
 
-#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a>P: por que o Visual Studio diz que meu espaço de trabalho selecionado não é elegível?
+#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> P: por que o Visual Studio diz que meu espaço de trabalho selecionado não é elegível?
  **R:** O workspace selecionado não tem nenhum mapeamento entre a pasta do controle do código-fonte e uma pasta local. Para criar um mapeamento para esse workspace, escolha **Gerenciar**. Caso contrário, escolha um workspace já mapeado ou crie um novo workspace.
 
  ![Abrir do controle do código-fonte sem nenhum espaço de trabalho mapeado](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")

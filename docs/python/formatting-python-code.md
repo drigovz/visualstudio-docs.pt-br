@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957523"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
 O Visual Studio permite que você reformate rapidamente o código para que ele corresponda às opções de formatação pré-configuradas.
 
-- Para formatar uma seleção: selecione **Editar** > **seleção de formato** **avançado** > ou **pressione Ctrl**+**E** > **F**.
-- Para formatar todo o arquivo: selecione **Editar** > **documento de formato** **avançado** > ou **pressione Ctrl**+**E** > **D**.
+- Para formatar uma seleção: selecione **Editar**  >  **Advanced**  >  **seleção de formato** avançado ou pressione **Ctrl** + **E**  >  **F**.
+- Para formatar o arquivo inteiro: selecione **Editar**  >  **Advanced**  >  **documento de formato** avançado ou pressione **Ctrl** + **E**  >  **D**.
 
-As opções são definidas através do Editor de**opções de** > **Text Editor** >  **ferramentas** > **Python** > **Formatação** e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
+As opções são definidas por meio de **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **formatação** Python e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
 
 ![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
 
@@ -109,9 +109,9 @@ O **Encapsulamento** permite que você defina a **Largura máxima do comentário
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Preencher Parágrafo de Comentário
 
-**Editar** > **Parágrafo de comentário de preenchimento** **avançado** > **(Ctrl**+**E** > **P)** reflui e formata texto de comentário, combinando linhas curtas e quebrando longas.
+**Editar**  >  **Avançado**  >  O **parágrafo de comentário de preenchimento** (**Ctrl** + **E**  >  **P**) reflui e formata o texto do comentário, combinando linhas curtas e dividindo longas.
 
-Por exemplo: 
+Por exemplo:
 
 ```python
 # foo

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595352"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
@@ -29,7 +29,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
 
 ## <a name="create-a-test-project"></a>Criar um projeto de teste
 
-Este exemplo cria um teste de interface do usuário codificado que é executado no aplicativo Calculadora Windows. Ele adiciona dois números juntos e usa uma declaração para validar se a soma está correta. Em seguida, a afirmação e os valores de parâmetro para os dois números são codificados para se tornarem baseados em dados e armazenados em um arquivo de valor separado por comuma *(.csv).*
+Este exemplo cria um teste de interface do usuário codificado que é executado no aplicativo Calculadora Windows. Ele adiciona dois números juntos e usa uma declaração para validar se a soma está correta. Em seguida, os valores de asserção e de parâmetro para os dois números são codificados para se tornarem controlados por dados e armazenados em um arquivo de valores separados por vírgulas (*. csv*).
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Etapa 1 - Criar um teste de interface do usuário codificado
 
@@ -38,7 +38,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
     ![Criar um projeto de teste de IU codificado](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Se você não ver o modelo **coded UI Test Project,** você precisa [instalar o componente de teste de iu codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se você não vir o modelo de **projeto de teste de interface do usuário codificado** , será necessário [instalar o componente de teste de interface do usuário codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Escolha **registrar as ações**.
 
@@ -64,9 +64,9 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
    }
    ```
 
-5. Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho do teclado: **Ctrl**+**R**,**T**).
+5. Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho de teclado: **Ctrl** + **R**,**T**).
 
-    O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela Test Explorer, no menu **Teste,** escolha **Windows** e escolha **Test Explorer**.
+    O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela Gerenciador de testes, no menu **testar** , escolha **Windows** e, em seguida, escolha **Gerenciador de testes**.
 
 6. Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Gerar Código para Teste de Interface do Usuário Codificado** e, em seguida, **Usar o Construtor de Teste de Interface do Usuário Codificado**.
 
@@ -92,7 +92,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
    }
    ```
 
-9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho do teclado: **Ctrl**+**R**,**T**).
+9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu do clique com o botão direito e escolha **Executar Testes**. (Atalho de teclado: **Ctrl** + **R**,**T**).
 
      Neste ponto, todos os valores de parâmetro são definidos em seus métodos como constantes. Em seguida, vamos criar um conjunto de dados para fazer com que nosso teste seja controlado por dados.
 
@@ -102,7 +102,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
      ![Adicionar um arquivo de valores separados por vírgula ao projeto](../test/media/cuit_datadriven_addcsvfile.png)
 
-2. Preencha o arquivo *.csv* com os seguintes dados:
+2. Preencha o arquivo *. csv* com os seguintes dados:
 
     |Núm1|Núm2|SUM|
     |-|-|-|
@@ -114,7 +114,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
      ![Preencher o arquivo .csv usando dados](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. É importante salvar o arquivo *.csv* usando a codificação correta. No menu **Arquivo,** escolha **Opções avançadas de salvamento** e escolha **Unicode (UTF-8 sem assinatura) - Página de código 65001** como codificação.
+3. É importante salvar o arquivo *.csv* usando a codificação correta. No menu **arquivo** , escolha **Opções avançadas de salvamento** e escolha **Unicode (UTF-8 sem assinatura)-CodePage 65001** como a codificação.
 
 4. O arquivo *.csv* deverá ser copiado para o diretório de saída ou não será possível executar o teste. Use a janela **Propriedades** para copiá-lo.
 
@@ -148,7 +148,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Etapa 4 – Usar os dados no teste de IU codificado
 
-1. Adicione `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` à parte superior do arquivo *CodedUITest.cs:*
+1. Adicione `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` à parte superior do arquivo *CodedUITest.cs* :
 
     ```csharp
     using System;
@@ -197,13 +197,13 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 Execute o teste novamente para verificar se o teste agora é controlado por dados.
 
-Você deve ver o teste executado através das três iterações usando os valores no arquivo *.csv.* A validação deve funcionar bem e o teste deve ser exibido conforme passado no Gerenciador de Testes.
+Você deve ver a execução de teste por meio das três iterações usando os valores no arquivo *. csv* . A validação deve funcionar bem e o teste deve ser exibido conforme passado no Gerenciador de Testes.
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 ### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quais são os atributos de fonte de dados para outros tipos de fonte de dados, como SQL Express ou XML?
 
-**A:** Você pode usar as seqüências de origem de dados de amostra na tabela abaixo copiando-as para o seu código e fazendo as personalizações necessárias.
+**R:** Você pode usar as cadeias de caracteres de fonte de dados de exemplo na tabela a seguir, copiando-as para o código e fazendo as personalizações necessárias.
 
 **Tipos e atributos de fonte de dados**
 
@@ -229,9 +229,9 @@ Você deve ver o teste executado através das três iterações usando os valore
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?
 
-**A:** Quaisquer alterações de código que você fizer no arquivo *UIMapDesigner.cs* serão substituídos toda vez que você gerar código usando o UIMap - Coded UI Test Builder. Neste exemplo e na maioria dos casos, as alterações de código necessárias para habilitar um teste para usar uma fonte de dados podem ser feitas no arquivo de código-fonte do teste (ou seja, o *CodedUITest1.cs*).
+**R:** Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* serão substituídas sempre que você gerar código usando o construtor de teste de interface do usuário codificado pelo UIMap. Neste exemplo e na maioria dos casos, as alterações de código necessárias para habilitar um teste para usar uma fonte de dados podem ser feitas no arquivo de código-fonte do teste (ou seja, o *CodedUITest1.cs*).
 
-Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Você deve remover a referência ao método original no arquivo *coded UITest.cs* e substituí-la pelo nome do método renomeado.
+Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Você deve remover a referência ao método original no arquivo *UITest.cs* codificado e substituí-lo pelo nome do método renomeado.
 
 ## <a name="see-also"></a>Confira também
 

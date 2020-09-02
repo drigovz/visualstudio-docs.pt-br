@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546933"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;elemento de ação &gt; (desenvolvimento do Office no Visual Studio)
@@ -40,13 +40,13 @@ ms.locfileid: "85546933"
 
  O `postAction` elemento não tem atributos.
 
- `postAction`tem os elementos a seguir.
+ `postAction` tem os elementos a seguir.
 
 ### <a name="entrypoint"></a>entryPoint
- Opcional. A função do `entryPoint` elemento no `vstav3` namespace é definida no [elemento&#60;entrypoints&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Opcional. A função do `entryPoint` elemento no `vstav3` namespace é definida no [ elemento&#60;entrypoints&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Opcional. A função do `postActionData` elemento no `vstav3` namespace é definida no [elemento&#60;postActionData&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Opcional. A função do `postActionData` elemento no `vstav3` namespace é definida no [ elemento&#60;postActionData&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemplo de ação pós-implantação
 

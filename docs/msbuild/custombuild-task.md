@@ -18,25 +18,25 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595339"
 ---
 # <a name="custombuild-task"></a>Tarefa CustomBuild
 
-Envolve a ferramenta de compilador Microsoft C++, cmd.exe. Essa classe deriva [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), mas não usa o acompanhamento de arquivo para descobrir dependências de arquivo. Todas as dependências devem ser especificadas explicitamente como AdditionalDependencies para que o build incremental funcione corretamente.
+Encapsula a ferramenta de compilador do Microsoft C++, cmd.exe. Essa classe deriva [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), mas não usa o acompanhamento de arquivo para descobrir dependências de arquivo. Todas as dependências devem ser especificadas explicitamente como AdditionalDependencies para que o build incremental funcione corretamente.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **CustomBuild**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**BuildSuffix**|Parâmetro opcional **de string.**|
-|**Fontes**|Parâmetro **ITaskItem necessário[].**|
-|**TrackerLogDirectory**|Parâmetro opcional **de string.**|
+|**BuildSuffix**|Parâmetro de **cadeia de caracteres** opcional.|
+|**Fontes**|Parâmetro **ITaskItem []** necessário.|
+|**TrackerLogDirectory**|Parâmetro de **cadeia de caracteres** opcional.|
 
 ## <a name="see-also"></a>Confira também
 

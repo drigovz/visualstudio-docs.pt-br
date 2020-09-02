@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
+title: 'IDebugEngine2:: ContinueFromSynchronousEvent | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75c359f8d7f7c0c5e9d335de296fe252b30d1c3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198459"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo de depuração (DE) para o SDM, foi recebido e processado.  
+Chamado pelo SDM (Gerenciador de depuração de sessão) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo DE depuração (DE) para o SDM, foi recebido e processado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,16 +40,16 @@ HRESULT ContinueFromSynchronousEvent( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pEvent`  
- [in] Uma [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa o evento síncrono enviado anteriormente da qual o depurador agora deve prosseguir.  
+ no Um objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) que representa o evento síncrono enviado anteriormente do qual o depurador agora deve continuar.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O DE deve verificar que ele foi a origem do evento representado pelo `pEvent` parâmetro.  
+ O DE deve verificar se foi a origem do evento representado pelo `pEvent` parâmetro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CEngine` objeto que implementa o [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um `CEngine` objeto simples que implementa a interface [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .  
   
 ```cpp#  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
@@ -87,6 +87,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

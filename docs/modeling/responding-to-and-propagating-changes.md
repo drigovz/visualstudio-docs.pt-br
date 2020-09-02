@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595391"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Responder e propagar alterações
@@ -24,7 +24,7 @@ Quando um elemento é criado, excluído ou atualizado, você pode escrever um c�
 
 Como diretriz, considere estas técnicas na seguinte ordem:
 
-|técnica|Cenários|Para obter mais informações|
+|Técnica|Cenários|Para obter mais informações|
 |-|-|-|
 |Defina uma propriedade de domínio calculada.|Uma propriedade de domínio cujo valor é calculado de outras propriedades no modelo. Por exemplo, um preço que é a soma dos preços dos elementos relacionados.|[Propriedades calculadas e de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md)|
 |Defina uma propriedade de domínio de armazenamento personalizada.|Uma propriedade de domínio armazenada em outras partes do modelo ou externamente. Por exemplo, você pode analisar uma cadeia de caracteres de expressão em uma árvore no modelo.|[Propriedades calculadas e de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md)|
@@ -44,15 +44,15 @@ Normalmente, as regras são aplicadas na transação final em que a alteração 
 
 Use armazenar eventos para sincronizar o modelo com objetos fora da loja e regras para manter a consistência dentro da loja.
 
-- **Criando regras personalizadas** Você cria uma regra personalizada como uma classe derivada de uma regra abstrata. Você também deve notificar a estrutura sobre a regra personalizada. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
+- **Criando regras personalizadas** Você cria uma regra personalizada como uma classe derivada de uma regra abstrata. Você também deve notificar a estrutura sobre a regra personalizada. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Inscrevendo-se em eventos** Antes de poder assinar um evento, crie um manipulador de eventos e um delegado. Em seguida, use a propriedade <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>para assinar o evento. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Inscrevendo-se em eventos** Antes de poder assinar um evento, crie um manipulador de eventos e um delegado. Em seguida, use a <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> propriedade para assinar o evento. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Desfazendo alterações** Quando você desfaz uma transação, os eventos são gerados, mas as regras não são aplicadas. Se uma regra alterar um valor e você desfazer essa alteração, o valor será redefinido para o valor original durante a ação de desfazer. Quando um evento é gerado, você deve alterar manualmente o valor de volta para seu valor original. Para saber mais sobre transações e desfazer, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-- **Passando argumentos de evento para regras e eventos** Os eventos e as regras passam um parâmetro `EventArgs` que tem informações sobre como o modelo foi alterado.
+- **Passando argumentos de evento para regras e eventos** Os eventos e as regras passam um `EventArgs` parâmetro que tem informações sobre como o modelo foi alterado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

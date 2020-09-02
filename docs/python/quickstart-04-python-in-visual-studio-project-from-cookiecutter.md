@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62954476"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início Rápido: criar um projeto por meio de um modelo do Cookiecutter
@@ -25,7 +25,7 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
 1. Inicie o Visual Studio.
 
-1. Selecione **Arquivo** > **novo** > **do Cookiecutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos.
+1. Selecione **arquivo**  >  **novo**  >  **de CookieCutter**. Esse comando abre uma janela no Visual Studio, na qual você pode procurar modelos.
 
     ![Novo projeto de modelo do Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -35,9 +35,9 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
     ![Segunda etapa usando o Cookiecutter, configurando propriedades do projeto](media/projects-from-cookiecutter2.png)
 
-1. Quando o processo estiver concluído, você verá a mensagem **com sucesso criado arquivos usando modelo...**. O projeto é aberto no Solution Explorer automaticamente.
+1. Quando o processo for concluído, você verá a mensagem **arquivos criados com êxito usando o modelo...**. O projeto é aberto em Gerenciador de Soluções automaticamente.
 
-1. Pressione **Ctrl**+**F5** ou selecione **Debug** > **Start sem depuração** para executar o programa.
+1. Pressione **Ctrl** + **F5** ou selecione **depurar**  >  **Iniciar sem Depurar** para executar o programa.
 
     ![Saída do projeto do modelo python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
@@ -51,4 +51,4 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 - [Usar a extensão Cookiecutter](using-python-cookiecutter-templates.md)
 - [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalar o suporte para Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md)
-- [Instalar locais](installing-python-support-in-visual-studio.md#install-locations)
+- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations)

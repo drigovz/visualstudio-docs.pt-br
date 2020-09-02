@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595430"
 ---
 # <a name="set-bookmarks-in-code"></a>Definir indicadores no código
 
-Você pode usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente para um local específico ou alternar entre locais. Os comandos e ícones do marcador estão disponíveis em dois lugares: a **Janela de Marcação** de Livros **(Exibir** > **Janela de Marcador)** e a barra de ferramentas do editor de texto.
+Você pode usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente para um local específico ou alternar entre locais. Os comandos e ícones de indicador estão disponíveis em dois locais: a **janela de indicadores** (janela**Exibir**  >  **indicador**) e a barra de ferramentas do editor de texto.
 
 ![Barra de ferramentas de indicador](media/bookmark-toolbar.png)
 
@@ -34,7 +34,7 @@ Para saber rapidamente para que um indicador específico é, você pode renomeá
 > [!IMPORTANT]
 > O indicador é definido como o número de linha e não como o código. Se você modificar o código, o indicador será mantido no número de linha e não será movido com o código.
 
-Você pode navegar entre marcadores usando os botões **de marcador Next** e **marcadores anteriores** na janela do marcador.
+Você pode navegar entre indicadores usando os botões **próximo indicador** e **indicador anterior** na janela do indicador.
 
 Você pode organizar indicadores em pastas virtuais escolhendo **Nova Pasta** na janela de indicadores e arrastando os indicadores selecionados para a nova pasta.
 

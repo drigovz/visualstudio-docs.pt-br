@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547037"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Como: Pesquisar e substituir texto de forma programática em documentos
@@ -110,11 +110,11 @@ ms.locfileid: "85547037"
 
 2. Use o <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método do <xref:Microsoft.Office.Interop.Word.Find> objeto para substituir cada item encontrado. Para especificar quais itens substituir, use o parâmetro *replace* . Esse parâmetro pode ser um dos seguintes <xref:Microsoft.Office.Interop.Word.WdReplace> valores:
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>substitui todos os itens encontrados.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> substitui todos os itens encontrados.
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone>Substitui nenhum dos itens encontrados.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> Substitui nenhum dos itens encontrados.
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>Substitui o primeiro item encontrado.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> Substitui o primeiro item encontrado.
 
 ## <a name="see-also"></a>Confira também
 - [Como: definir opções de pesquisa de forma programática no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)

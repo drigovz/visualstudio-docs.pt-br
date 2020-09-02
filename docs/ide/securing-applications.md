@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595443"
 ---
 # <a name="secure-applications"></a>Aplicativos seguros
 
-Você deve considerar a segurança em todos os aspectos do desenvolvimento do aplicativo, do design à implantação. Comece executando o Visual Studio com a máxima segurança possível. Consulte [as permissões do usuário](../ide/user-permissions-and-visual-studio.md).
+Você deve considerar a segurança em todos os aspectos do desenvolvimento do aplicativo, do design à implantação. Comece executando o Visual Studio com a máxima segurança possível. Consulte [permissões de usuário](../ide/user-permissions-and-visual-studio.md).
 
 Para que você desenvolva aplicativos efetivamente seguros, é preciso ter um entendimento básico dos conceitos e dos recursos de segurança das plataformas para as quais você está desenvolvendo. Também é preciso entender as técnicas de codificação segura.
 
@@ -45,4 +45,4 @@ A segurança também é uma consideração importante no processo de compilaçã
 - [Guia de segurança do Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Recursos de segurança da plataforma Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
 - [Segurança do ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Segurança do Windows Forms](/dotnet/framework/winforms/windows-forms-security)
+- [Segurança de Windows Forms](/dotnet/framework/winforms/windows-forms-security)

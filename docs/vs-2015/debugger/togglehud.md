@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87c2571926b92e59ae03e5e988bbf535474dc6d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144572"
 ---
 # <a name="togglehud"></a>ToggleHUD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Alterna o diagnóstico de gráficos *HUD* de sobreposição (Head-Up Display) ativada ou desativada.  
+Alterna entre ativar ou desativar a sobreposição de *HUD* de diagnóstico de gráficos (exibição de cabeçalho).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -28,6 +28,6 @@ void ToggleHUD();
 ```  
   
 ## <a name="remarks"></a>Comentários  
- O HUD do diagnóstico de gráficos é exibida no canto superior esquerdo do aplicativo que está em execução no diagnóstico de gráficos. Ele exibe informações de tempo de execução sobre o aplicativo e captura de informações de gráficos e as mensagens que são adicionadas por meio da chamada a [AddMessage](../debugger/addmessage.md) função de membro.  
+ O HUD de diagnóstico de gráficos é exibido no canto superior esquerdo do aplicativo que está sendo executado em diagnóstico de gráficos. Ele exibe informações de tempo de execução sobre o aplicativo e sobre a captura de informações de gráficos e mensagens que são adicionadas chamando a função de membro [AddMessage](../debugger/addmessage.md) .  
   
- Para ativar ou desativar o HUD, você não precisa ser ativamente capturando informações de gráficos — ou seja, ele pode ser alternado por meio de uma instância das `VsgDbg` classe, mas o [Init](../debugger/init.md) função de membro não precisa ser chamado primeiro.
+ Para alternar o HUD, você não precisa estar ativamente capturando informações gráficas, ou seja, ela pode ser alternada por meio de uma instância da `VsgDbg` classe, mas a função de membro [init](../debugger/init.md) não precisa ser chamada primeiro.
