@@ -1,5 +1,5 @@
 ---
-title: Guia geral, caixa de diálogo Propriedades de processar | Microsoft Docs
+title: Guia geral, caixa de diálogo Propriedades do processo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,24 +11,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849821"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Guia Geral, Caixa de diálogo Propriedades do Processo
-Use o **geral** tab para obter mais informações sobre um processo específico. Para exibir o [caixa de diálogo de propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para um [exibição de processos](../debugger/processes-view.md) janela. Selecione qualquer nó de processo na árvore e escolha **propriedades** da **exibição** menu.
+Use a guia **geral** para saber mais sobre um processo específico. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .
 
- As seguintes configurações estão disponíveis sobre o **geral** guia:
+ As configurações a seguir estão disponíveis na guia **geral** :
 
 |Entrada|Descrição|
 |-----------|-----------------|
-|**Nome do Módulo**|O nome do módulo.|
-|**ID do Processo**|A ID exclusiva desse processo. Números de ID de processo são reutilizados, eles identificam um processo somente para o tempo de vida do processo. O tipo de objeto de processo é criado quando um programa é executado. Todos os threads em um processo compartilham o mesmo espaço de endereço e têm acesso aos mesmos dados.|
-|**Base de Prioridade**|A prioridade base atual desse processo. Threads dentro de um processo podem aumentar e diminuir sua própria prioridade básica em relação à prioridade de base do processo.|
+|**Nome do módulo**|O nome do módulo.|
+|**ID do Processo**|A ID exclusiva desse processo. Os números de ID de processo são reutilizados, portanto, eles identificam um processo somente durante o tempo de vida desse processo. O tipo de objeto de processo é criado quando um programa é executado. Todos os threads em um processo compartilham o mesmo espaço de endereço e têm acesso aos mesmos dados.|
+|**Base de Prioridade**|A prioridade base atual deste processo. Os threads em um processo podem aumentar e diminuir sua própria prioridade básica em relação à prioridade base do processo.|
 |**Threads**|O número de threads atualmente ativo neste processo.|
-|**Tempo de CPU**|Tempo total de CPU gasto sobre esse processo e seus threads. Igual ao tempo de usuário mais tempo privilegiado.|
-|**Tempo do Usuário**|O tempo decorrido cumulativo que os threads desse processador passaram executando código no modo de usuário em threads não ociosos. Aplicativos executam no modo de usuário, como fazem os subsistemas, como o Gerenciador de janelas e o mecanismo gráfico.|
-|**Tempo Privilegiado**|O tempo total decorrido esse processo tiver sido executado no modo privilegiado em threads não ociosos. A camada de serviço, as rotinas de executivo e o Kernel executar no modo privilegiado. Drivers de dispositivo para a maioria dos dispositivos que não seja de impressoras e adaptadores de gráficos também são executadas em modo privilegiado. Algum trabalho que faz do Windows para o seu aplicativo pode aparecer em outros processos além do tempo privilegiado do subsistema.|
-|**Tempo Decorrido**|O tempo total decorrido que esse processo de execução.|
+|**Tempo de CPU**|Tempo total de CPU gasto nesse processo e seus threads. Igual ao tempo de usuário mais privilegiado.|
+|**Tempo do Usuário**|O tempo acumulado que os threads do processo passaram executando código no modo de usuário em threads não ociosos. Os aplicativos são executados no modo de usuário, assim como os subsistemas, como o Gerenciador de janelas e o mecanismo de gráficos.|
+|**Tempo Privilegiado**|O tempo total decorrido em que esse processo esteve em execução no modo privilegiado em threads não ociosos. A camada de serviço, as rotinas executivas e o kernel são executados no modo privilegiado. Drivers de dispositivo para a maioria dos dispositivos que não sejam adaptadores gráficos e impressoras também são executados no modo privilegiado. Alguns trabalhos que o Windows faz para seu aplicativo podem aparecer em outros processos de subsistema, além do tempo privilegiado.|
+|**Tempo decorrido**|O tempo total decorrido em que esse processo esteve em execução.|

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62830818"
 ---
 # <a name="measure-mode-onoff"></a>Ativar/desativar modo de medida
@@ -27,4 +27,4 @@ Com essa ferramenta, é possível medir com precisão um período de tempo na li
 ## <a name="see-also"></a>Confira também
 - [Gerenciar canais](../profiling/manage-channels.md)
 - [Controle de zoom (exibição de threads)](../profiling/zoom-control-threads-view.md)
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

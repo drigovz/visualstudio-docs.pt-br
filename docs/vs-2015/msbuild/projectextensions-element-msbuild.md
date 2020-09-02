@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551242"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
@@ -34,7 +34,7 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild
  \<Project>  
  \<ProjectExtensions>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ProjectExtensions>  
@@ -75,6 +75,6 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

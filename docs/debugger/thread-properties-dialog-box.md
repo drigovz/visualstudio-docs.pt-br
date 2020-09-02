@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929708"
 ---
 # <a name="thread-properties-dialog-box"></a>Caixa de diálogo Propriedades do Thread
-Use essa caixa de diálogo caixa Saiba mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expandir uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** da **exibição** menu.
+Use essa caixa de diálogo para saber mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para uma janela de [exibição de threads](../debugger/threads-view.md) ou abra a [exibição mensagens](../debugger/messages-view.md) e expanda uma mensagem. Selecione qualquer nó de thread na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .
 
- O **geral** guia é a única guia exibida. Sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.
+ A guia **geral** é a única guia exibida. Em sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Guia geral, caixa de diálogo de propriedades do Thread](../debugger/general-tab-thread-properties-dialog-box.md) usar essa caixa de diálogo para obter mais informações sobre o thread selecionado.
+ [Guia geral, caixa de diálogo Propriedades do thread](../debugger/general-tab-thread-properties-dialog-box.md) Use essa caixa de diálogo para saber mais sobre o thread selecionado.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Caixa de diálogo de pesquisa de thread](../debugger/thread-search-dialog-box.md) usado para localizar o nó para um segmento específico na exibição de Threads.
+ [Caixa de diálogo pesquisa de thread](../debugger/thread-search-dialog-box.md) Usado para localizar o nó de um thread específico na exibição threads.
 
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.
 
- [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md) explica como localizar um segmento específico na exibição de Threads.
+ [Pesquisando um thread na exibição de threads](../debugger/how-to-search-for-a-thread-in-threads-view.md) Explica como localizar um thread específico na exibição threads.
 
- [Exibição de threads](../debugger/threads-view.md) exibe uma árvore de threads ativos.
+ [Exibição de threads](../debugger/threads-view.md) Exibe um modo de exibição de árvore de threads ativos.
 
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.

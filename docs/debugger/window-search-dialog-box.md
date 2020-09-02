@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de pesquisa de janela | Microsoft Docs
+title: Caixa de diálogo pesquisa de janela | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,42 +11,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900917"
 ---
 # <a name="window-search-dialog-box"></a>Caixa de diálogo Pesquisa de Janela
-Use essa caixa de diálogo para localizar e selecionar o nó para uma janela específica no [modo de exibição do Windows](../debugger/windows-view.md). Para exibir essa caixa de diálogo, mova o foco para a janela de exibição do Windows. Em seguida, escolha **localizar janela** da **pesquisa** menu.
+Use essa caixa de diálogo para localizar e selecionar o nó de uma janela específica no [modo de exibição do Windows](../debugger/windows-view.md). Para exibir essa caixa de diálogo, mova o foco para a janela exibição do Windows. Em seguida, escolha **localizar janela** no menu **Pesquisar** .
 
- Você pode usar o **ferramenta Descobridora** selecionar uma janela, ou você pode inserir o identificador de janela, ou identificar a janela, legenda e classe.
+ Você pode usar a **ferramenta Finder** para selecionar uma janela ou pode inserir o identificador de janela ou identificar a janela por legenda e classe.
 
- As configurações a seguir estão disponíveis:
+ As seguintes configurações estão disponíveis:
 
- **Ferramenta descobridora** a ferramenta de arrastar e soltar, usada para selecionar uma janela.
+ **Ferramenta de localizador** A ferramenta arrastar e soltar usada para selecionar uma janela.
 
- **Ocultar Spy + +** remove a janela principal do Spy + + e deixa o **WindowSearch** caixa de diálogo visível na parte superior de seus outros aplicativos.
+ **Ocultar Spy + +** Remove a janela principal do Spy + + e deixa a caixa de diálogo **WindowSearch** visível sobre seus outros aplicativos.
 
- **Lidar com** a ID exclusiva da janela a ser pesquisado.
+ **Identificador** do A ID exclusiva da janela a ser pesquisada.
 
- **Legenda** o texto na legenda da janela a ser pesquisado.
+ **Legenda** O texto na legenda da janela a ser pesquisada.
 
- **Classe** a classe da janela a ser pesquisado.
+ **Classe** do A classe da janela a ser pesquisada.
 
- **Direção de pesquisa para cima ou para baixo** a direção inicial da pesquisa.
+ **Pesquisar direção para cima ou para baixo** A direção inicial da pesquisa.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Procurando por uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explica como localizar uma janela específica no modo de exibição do Windows.
+ [Pesquisando uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) Explica como localizar uma janela específica no modo de exibição do Windows.
 
- [Modo de exibição do Windows](../debugger/windows-view.md) exibe uma exibição de árvore do windows disponível e controles.
+ [Exibição do Windows](../debugger/windows-view.md) Exibe um modo de exibição de árvore das janelas e dos controles disponíveis.
 
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.
 
- [Janela caixa de diálogo Localizar](../debugger/find-window-dialog-box.md) usado para exibir as propriedades ou mensagens de uma janela específica.
+ [Caixa de diálogo localizar janela](../debugger/find-window-dialog-box.md) Usado para exibir as propriedades ou mensagens de uma janela específica.
 
- [Caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.
+ [Caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md) Usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.
 
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

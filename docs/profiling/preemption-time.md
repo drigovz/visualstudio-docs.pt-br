@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62935887"
 ---
 # <a name="preemption-time"></a>Tempo de preempção
@@ -31,4 +31,4 @@ Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categ
   A dica de ferramenta para um segmento de preempção exibe o nome do processo ou do thread que causou a preempção. No entanto, isso não significa que o processo ou thread que assumiu o controle foi realmente executado durante o período de admitiu preempção.
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+- [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

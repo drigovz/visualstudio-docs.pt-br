@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558483"
 ---
 # <a name="warning-task"></a>Tarefa Warning
@@ -44,9 +44,9 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 ## <a name="remarks"></a>Comentários  
  A tarefa `Warning` permite que projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verifiquem a presença de uma configuração necessária ou propriedade antes de continuar com a próxima etapa de build.  
   
- Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se um parâmetro `Condition` não existir, o texto de aviso será registrado. Para obter mais informações sobre registro, consulte [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Se o parâmetro `Condition` da tarefa `Warning` for avaliada como `true`, o valor do parâmetro `Text` será registrado e o build continuará a ser executada. Se um parâmetro `Condition` não existir, o texto de aviso será registrado. Para obter mais informações sobre registro em log, consulte [obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir verifica as propriedades que são definidas na linha de comando. Se nenhuma propriedade estiver definida, o projeto gerará um evento de aviso e registrará o valor do parâmetro `Text` da tarefa `Warning`.  
@@ -65,6 +65,6 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

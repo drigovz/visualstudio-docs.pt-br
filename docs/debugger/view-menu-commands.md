@@ -1,5 +1,5 @@
 ---
-title: Exibir comandos de Menu | Microsoft Docs
+title: Comandos do menu Exibir | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929617"
 ---
 # <a name="view-menu-commands"></a>Comandos do menu Exibir
-O **exibição** menu fornece comandos para controlar o Spy + + interface do usuário.
+O menu **Exibir** fornece comandos para controlar a interface do usuário do Spy + +.
 
- **Fonte** abre o **fonte** caixa de diálogo, onde você pode selecionar uma fonte para o uso da exibição atual do Spy + +.
+ **Fonte** Abre a caixa de diálogo **fonte** , onde é possível selecionar uma fonte para uso na exibição atual do Spy + +.
 
- **Barra de ferramentas** oculta ou exibe a barra de ferramentas.
+ **Barra de ferramentas** Oculta ou exibe a barra de ferramentas.
 
- **Barra de status** oculta ou exibe a barra de Status.
+ **Barra de status** Oculta ou exibe a barra de status.
 
- **As propriedades** abre o **propriedades** caixa de diálogo para o modo ativo.
+ **Propriedades** do Abre a caixa de diálogo **Propriedades** do modo de exibição ativo.

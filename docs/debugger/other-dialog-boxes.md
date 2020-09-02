@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6eda65a49fce09dbbb085da7258a8536484af174
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905099"
 ---
 # <a name="other-dialog-boxes"></a>Outras caixas de diálogo
 Essas caixas de diálogo exibem informações sobre o programa Spy + +.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Sobre Microsoft Spy + +](../debugger/about-microsoft-spy-increment.md) informações sobre a propriedade do programa Spy + +.
+ [Sobre o Microsoft Spy + +](../debugger/about-microsoft-spy-increment.md) Informações sobre a propriedade do programa Spy + +.
 
- [Aviso de direitos autorais para Ajuda do Spy + +](../debugger/copyright-notice-for-spy-increment-help.md) aviso Legal de direitos autorais.
+ [Aviso de direitos autorais para ajuda do Spy + +](../debugger/copyright-notice-for-spy-increment-help.md) Aviso legal de direitos autorais.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.
 
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.

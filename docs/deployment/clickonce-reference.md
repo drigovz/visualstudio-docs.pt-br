@@ -1,5 +1,5 @@
 ---
-title: Referência de ClickOnce | Microsoft Docs
+title: Referência do ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,19 +16,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900320"
 ---
 # <a name="clickonce-reference"></a>Referência de ClickOnce
 As páginas a seguir descrevem a estrutura dos arquivos XML usados para representar aplicativos ClickOnce.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+ [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 
- Lista e descreve os elementos e atributos que compõem um manifesto de aplicativo.
+ Lista e descreve os elementos e atributos que compõem um manifesto do aplicativo.
 
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 
@@ -36,11 +36,11 @@ As páginas a seguir descrevem a estrutura dos arquivos XML usados para represen
 
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
 
- Lista os elementos de arquivo de produto e pacote.
+ Lista elementos de arquivo de produto e pacote.
 
  [Referência de API não gerenciada do ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)
 
- Listas de APIs públicas não gerenciadas de dfshim.dll.
+ Lista as APIs públicas não gerenciadas do dfshim.dll.
 
 ## <a name="reference"></a>Referência
 
@@ -51,8 +51,8 @@ As páginas a seguir descrevem a estrutura dos arquivos XML usados para represen
 
 <xref:System.Deployment.Application>
 
- Fornece links para consultar a documentação das classes públicas que dão suporte ao ClickOnce em código gerenciado.
+ Fornece links para a documentação de referência das classes públicas que dão suporte ao ClickOnce dentro do código gerenciado.
 
  [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 
- Fornece instruções passo a passo e como-do que realizar tarefas do ClickOnce.
+ Fornece orientações e instruções que executam tarefas do ClickOnce.

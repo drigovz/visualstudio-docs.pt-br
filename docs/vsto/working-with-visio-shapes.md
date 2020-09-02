@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 09109d59522fcd6ace69abcd3335e2dec2edd91b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815057"
 ---
 # <a name="work-with-visio-shapes"></a>Trabalhar com formas do Visio
@@ -25,10 +25,10 @@ ms.locfileid: "62815057"
 
 |Tarefa|Procedimento|
 |----------|---------------|
-|Adicione formas de um estêncil para um documento do Visio.|[Como: Adicionar formas a um documento do Visio programaticamente](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|
-|Copiar formas de uma página do Visio e colá-los em outra página.|[Como: Copiar e colar formas em um documento do Visio de forma programática](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|
+|Adicionar formas de um estêncil a um documento do Visio.|[Como: adicionar formas programaticamente a um documento do Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|
+|Copie formas de uma página do Visio e cole-as em outra página.|[Como: copiar e colar formas programaticamente em um documento do Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
-- [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

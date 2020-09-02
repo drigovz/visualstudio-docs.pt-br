@@ -1,5 +1,5 @@
 ---
-title: Mensagens de comandos de Menu | Microsoft Docs
+title: Comandos do menu mensagens | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845884"
 ---
 # <a name="messages-menu-commands"></a>Comandos do menu Mensagens
-O **mensagens** menu fornece comandos para controlar modos de exibição de mensagem.
+O menu **mensagens** fornece comandos para controlar as exibições de mensagens.
 
- **Iniciar/Parar registro em log** inicia ou para a mensagem de exibir.
+ **Iniciar/parar registro em log** Inicia ou para o modo de exibição de mensagem.
 
- **Opções de log** abre o **MessageOptions** caixa de diálogo, onde você pode especificar critérios de pesquisa da mensagem.
+ **Opções de log** Abre a caixa de diálogo **mensagens** , onde você pode especificar critérios de pesquisa de mensagens.
 
- **Limpar Log** limpa o conteúdo da exibição de mensagens ativa.
+ **Limpar log** Limpa o conteúdo da exibição de mensagens ativas.

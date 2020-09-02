@@ -1,5 +1,5 @@
 ---
-title: Modo de exibição do Windows | Microsoft Docs
+title: Exibição do Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,39 +13,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900847"
 ---
 # <a name="windows-view"></a>Exibição de janelas
-Quando você abre pela primeira vez Spy + +, o modo de exibição do Windows exibe uma árvore de todas as janelas e controles no sistema. O nome de classe e de identificador de janela são mostrados. A janela da área de trabalho atual está no topo da árvore. Todas as outras janelas são filhos da área de trabalho e são listadas de acordo com a hierarquia de janela padrão. Janelas irmãs aparecem nas listas expansible recuadas abaixo de seus pais.
+Quando você abre o Spy + + pela primeira vez, a exibição do Windows exibe uma árvore de todas as janelas e controles no sistema. O identificador da janela e o nome da classe são mostrados. A janela da área de trabalho atual está na parte superior da árvore. Todas as outras janelas são filhas da área de trabalho e são listadas de acordo com a hierarquia de janela padrão. As janelas irmãos aparecem em listas de expansible recuadas abaixo de seus pais.
 
- A figura a seguir mostra uma exibição típica do Spy + + Windows com o nó superior expandido.
+ A figura a seguir mostra uma exibição típica do Windows Spy + + com o nó superior expandido.
 
- ![Spy&#43; &#43; modo de exibição do Windows](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView") Spy + + Windows exibição
+ ![Exibição do Spy&#43;&#43; Windows](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView") Exibição do Spy + + Windows
 
- A janela da área de trabalho atual está no topo da árvore. Todas as outras janelas são filhos da área de trabalho e são listadas de acordo com a hierarquia de janela padrão, com janelas irmãs ordenadas pela ordem Z. Você pode expandir ou recolher a qualquer nó pai da árvore clicando o + ou - símbolo ao lado do nó.
+ A janela da área de trabalho atual está na parte superior da árvore. Todas as outras janelas são filhas da área de trabalho e são listadas de acordo com a hierarquia de janela padrão, com janelas irmãos ordenadas por ordem Z. Você pode expandir ou recolher qualquer nó pai da árvore clicando no símbolo + ou-ao lado do nó.
 
- Quando o modo de exibição do Windows tem o foco, você pode usar a ferramenta de localização na [caixa de diálogo de pesquisa de janela](../debugger/window-search-dialog-box.md) para exibir informações de qualquer janela aberta em seu sistema.
+ Quando a exibição do Windows tiver o foco, você poderá usar a ferramenta Finder na [caixa de diálogo pesquisa de janela](../debugger/window-search-dialog-box.md) para exibir informações de qualquer janela aberta no sistema.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: Usar a ferramenta localizador](../debugger/how-to-use-the-finder-tool.md) mostra como essa ferramenta examina o windows para as propriedades ou mensagens.
+ [Como: usar a ferramenta Finder](../debugger/how-to-use-the-finder-tool.md) Mostra como essa ferramenta verifica o Windows em busca de propriedades ou mensagens.
 
- [Como: Pesquisar por uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explica como localizar uma janela específica no modo de exibição do Windows.
+ [Como: procurar uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) Explica como localizar uma janela específica no modo de exibição do Windows.
 
- [Como: Exibir propriedades da janela](../debugger/how-to-display-window-properties.md) m procedimentos para abrir a caixa de diálogo Propriedades da janela.
+ [Como: exibir as propriedades da janela](../debugger/how-to-display-window-properties.md) m procedimentos para abrir a caixa de diálogo Propriedades da janela.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.
 
- [Janela caixa de diálogo Localizar](../debugger/find-window-dialog-box.md) usado para exibir as propriedades ou mensagens de uma janela específica.
+ [Caixa de diálogo localizar janela](../debugger/find-window-dialog-box.md) Usado para exibir as propriedades ou mensagens de uma janela específica.
 
- [Caixa de diálogo de pesquisa de janela](../debugger/window-search-dialog-box.md) usado para localizar o nó para uma janela específica no modo de exibição do Windows.
+ [Caixa de diálogo pesquisa de janela](../debugger/window-search-dialog-box.md) Usado para localizar o nó de uma janela específica no modo de exibição do Windows.
 
- [Caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.
+ [Caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md) Usado para exibir as propriedades de uma janela selecionada no modo de exibição do Windows.
 
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

@@ -1,5 +1,5 @@
 ---
-title: Comandos do Menu janela | Microsoft Docs
+title: Comandos do menu janela | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900960"
 ---
 # <a name="window-menu-commands"></a>Comandos do menu Janela
-O **janela** menu fornece comandos para gerenciar o windows Spy + +.
+O menu **janela** fornece comandos para gerenciar o Spy + + Windows.
 
- **CASCADE** reorganiza todas as janelas em um padrão em cascata.
+ **Em cascata** Reorganiza todas as janelas em um padrão em cascata.
 
- **Lado a lado horizontalmente** reorganizar todas as janelas em um padrão lado a lado horizontal.
+ **Enquadrado horizontalmente** REORGANIZE todas as janelas em um padrão de bloco horizontal.
 
- **Lado a lado verticalmente** reorganiza todas as janelas em um padrão lado a lado vertical.
+ **Enquadrado verticalmente** Reorganiza todas as janelas em um padrão de bloco vertical.
 
- **Organizar ícones** reorganiza os ícones de modo de exibição, se o windows tiveram sido minimizados.
+ **Organizar ícones** Reorganiza os ícones de exibição, se as janelas tiverem sido minimizadas.
 
- **Fechar / fechar tudo** fecha uma ou todas as janelas em Spy + +.
+ **Fechar/fechar tudo** Fecha uma ou todas as janelas no Spy + +.
 
- **Atualizar** atualiza a exibição selecionada no momento.
+ **Atualizar** Atualiza a exibição selecionada no momento.
 
- **Janela** permite a seleção de uma janela específica.
+ **Janela** do Permite a seleção de uma janela específica.

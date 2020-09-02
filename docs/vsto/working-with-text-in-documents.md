@@ -16,36 +16,36 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815080"
 ---
 # <a name="work-with-text-in-documents"></a>Trabalhar com texto em documentos
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com texto em projetos do Office.
 
- Em alguns casos, as maneiras que você execute essas tarefas nos suplementos do VSTO é diferente das maneiras que você executar personalizações no nível do documento.
+ Em alguns casos, as maneiras de executar essas tarefas nos suplementos do VSTO são diferentes das maneiras que você as executa em personalizações em nível de documento.
 
 |Tarefa|Procedimento|
 |----------|---------------|
-|Definir intervalos com base em vários critérios e selecioná-los.|[Como: Definir e selecionar intervalos em documentos programaticamente](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
-|Obtenha os caracteres que começam e terminam um intervalo.|[Como: Recuperar caracteres iniciais e finais em intervalos de forma programática](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|
-|Selecione um parágrafo sem incluir a marca de parágrafo e mover o texto.|[Como: Por meio de programação excluir marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|
-|Fazer um intervalo maior ou menor.|[Como: Por meio de programação estender intervalos em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|
-|Mova um intervalo em um local diferente e tamanho.|[Como: Por meio de programação redefinir intervalos em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|
-|Reduza um intervalo ou uma seção para consistir apenas o ponto de inserção.|[Como: Por meio de programação recolher intervalos ou seleções em documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|
-|Inseri texto em um documento.|[Como: Programaticamente, inserir texto em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|
-|Formate o texto em um intervalo.|[Como: Por meio de programação de formatar texto em documentos](../vsto/how-to-programmatically-format-text-in-documents.md)|
-|Adicionar ou substituir texto em um indicador.|[Como: Atualizar o texto do indicador de forma programática](../vsto/how-to-programmatically-update-bookmark-text.md)|
-|Localizar texto específico por meio de uma seleção ou um intervalo e substituí-lo.|[Como: Programaticamente, pesquisar e substituir texto em documentos](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|
-|Especifique como o Word pesquisa de texto.|[Como: Definir programaticamente as opções de pesquisa no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)|
-|Itere os resultados da pesquisa.|[Como: Executar um loop por meio de itens encontrados em documentos programaticamente](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|
-|Salvar a seleção atual e restaurá-lo após uma pesquisa.|[Como: Por meio de programação restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)|
-|Obtenha o número de caracteres em um documento, incluindo caracteres ocultos.|[Como: Por meio de programação contar caracteres em documentos](../vsto/how-to-programmatically-count-characters-in-documents.md)|
-|Oculte o texto em um indicador antes de imprimir um documento.|[Como: Ocultar texto em documentos de forma programática](../vsto/how-to-programmatically-hide-text-in-documents.md)|
-|Adicione um comentário ao texto.|[Como: Adicionar comentários ao texto em documentos de forma programática](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
+|Defina intervalos com base em vários critérios e selecione-os.|[Como: definir e selecionar intervalos de forma programática em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
+|Obter os caracteres que começam e terminam um intervalo.|[Como recuperar programaticamente caracteres de início e término em intervalos](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|
+|Selecione um parágrafo sem incluir a marca de parágrafo e mova o texto.|[Como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|
+|Aumentar ou diminuir o intervalo.|[Como: estender intervalos programaticamente em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|
+|Mova um intervalo para um local e tamanho diferentes.|[Como: redefinição de intervalos programaticamente em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|
+|Reduza um intervalo ou uma seção para consistir apenas do ponto de inserção.|[Como: reduzir programaticamente intervalos ou seleções em documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|
+|Inserir texto em um documento.|[Como: inserir texto de forma programática em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|
+|Formate o texto em um intervalo.|[Como: formatar texto de forma programática em documentos](../vsto/how-to-programmatically-format-text-in-documents.md)|
+|Adicionar ou substituir texto em um indicador.|[Como: atualizar o texto do indicador programaticamente](../vsto/how-to-programmatically-update-bookmark-text.md)|
+|Localizar um texto específico usando uma seleção ou um intervalo e substituí-lo.|[Como: Pesquisar e substituir texto de forma programática em documentos](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|
+|Especifique como o Word pesquisa o texto.|[Como: definir opções de pesquisa de forma programática no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)|
+|Iterar pelos resultados da pesquisa.|[Como fazer loops programaticamente por meio de itens encontrados em documentos](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|
+|Salve a seleção atual e restaure-a após uma pesquisa.|[Como: programaticamente restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)|
+|Obter o número de caracteres em um documento, incluindo caracteres ocultos.|[Como: contar caracteres programaticamente em documentos](../vsto/how-to-programmatically-count-characters-in-documents.md)|
+|Ocultar o texto em um indicador antes de imprimir um documento.|[Como: Ocultar texto de forma programática em documentos](../vsto/how-to-programmatically-hide-text-in-documents.md)|
+|Adicione um comentário ao texto.|[Como: adicionar comentários ao texto de forma programática em documentos](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
-- [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

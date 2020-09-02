@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de opções de mensagem | Microsoft Docs
+title: Caixa de diálogo opções de mensagem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931318"
 ---
 # <a name="message-options-dialog-box"></a>Caixa de diálogo Opções da Mensagem
-Use essa caixa de diálogo para selecionar quais mensagens são listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, escolha **mensagens de Log** da **Spy** menu.
+Use essa caixa de diálogo para selecionar quais mensagens estão listadas no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, escolha **mensagens de log** no menu do **Spy** .
 
 ## <a name="in-this-section"></a>Nesta seção
- [Guia do Windows, a caixa de diálogo de opções de mensagem](../debugger/windows-tab-message-options-dialog-box.md) usado para selecionar os tipos de mensagens para listar. Inclui a ferramenta de localização.
+ [Guia Windows, caixa de diálogo opções de mensagem](../debugger/windows-tab-message-options-dialog-box.md) Usado para selecionar os tipos de mensagens a serem listadas. Inclui a ferramenta Finder.
 
- [Guia, caixa de diálogo de opções de mensagem mensagens](../debugger/messages-tab-message-options-dialog-box.md) usado para selecionar os tipos de mensagem para a exibição.
+ [Guia mensagens, caixa de diálogo opções de mensagem](../debugger/messages-tab-message-options-dialog-box.md) Usado para selecionar tipos de mensagem para exibição.
 
- [Guia saída, caixa de diálogo de opções de mensagem](../debugger/output-tab-message-options-dialog-box.md) usado para especificar quais dados de mensagem para exibir.
+ [Guia saída, caixa de diálogo opções de mensagem](../debugger/output-tab-message-options-dialog-box.md) Usado para especificar quais dados de mensagem exibir.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Caixa de diálogo de pesquisa da mensagem](../debugger/message-search-dialog-box.md) usado para localizar o nó para uma mensagem específica no modo de exibição de mensagem.
+ [Caixa de diálogo pesquisa de mensagem](../debugger/message-search-dialog-box.md) Usado para localizar o nó de uma mensagem específica na exibição de mensagem.
 
- [Caixa de diálogo Propriedades da mensagem](../debugger/message-properties-dialog-box.md) usado para exibir as propriedades de uma mensagem selecionada no modo de exibição de mensagem.
+ [Caixa de diálogo Propriedades da mensagem](../debugger/message-properties-dialog-box.md) Usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagem.
 
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.
 
- [Procurando por uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md) explica como localizar uma mensagem específica na exibição de mensagens.
+ [Pesquisando uma mensagem no modo de exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md) Explica como localizar uma mensagem específica no modo de exibição de mensagens.
 
- [Abrindo o modo de exibição de mensagens da janela localizar](../debugger/how-to-open-messages-view-from-find-window.md) explica como abrir a exibição de mensagens da caixa de diálogo Localizar janela.
+ [Abrindo a exibição de mensagens na janela Localizar](../debugger/how-to-open-messages-view-from-find-window.md) Explica como abrir o modo de exibição mensagens na caixa de diálogo localizar janela.
 
- [A exibição de mensagens](../debugger/messages-view.md) exibe o fluxo de mensagem associado a uma janela, processo ou thread.
+ [Exibição de mensagens](../debugger/messages-view.md) Exibe o fluxo de mensagens associado a uma janela, processo ou thread.
 
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.

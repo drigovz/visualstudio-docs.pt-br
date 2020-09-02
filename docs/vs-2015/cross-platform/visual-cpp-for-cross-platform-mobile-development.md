@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573060"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para Desenvolvimento Móvel Multiplataforma
@@ -33,8 +33,8 @@ Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Window
   
 3. **Experiência de depuração unificada.** Use as ferramentas de depuração de altíssima qualidade no Visual Studio para observar e percorrer código C++ em todas as plataformas, incluindo dispositivos com Android e emuladores, simuladores e dispositivos iOS, Windows ou Windows Phone.  
   
-## <a name="get-the-tools"></a>Obtenha as ferramentas  
- Visual C++ para Desenvolvimento Móvel de Multiplataforma é uma opção instalável que vem com o Visual Studio 2015. Para obter instruções de instalação e pré-requisitos, consulte [Instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar código para iOS, você também precisa de um computador Mac e uma Conta de Desenvolvedor do Apple iOS. Para obter mais informações, consulte [Instalar e Configurar Ferramentas para Compilar usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+## <a name="get-the-tools"></a>Obter as ferramentas  
+ Visual C++ para Desenvolvimento Móvel de Multiplataforma é uma opção instalável que vem com o Visual Studio 2015. Para obter os pré-requisitos e as instruções de instalação, consulte [instalar Visual C++ para desenvolvimento móvel multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar código para iOS, você também precisa de um computador Mac e uma Conta de Desenvolvedor do Apple iOS. Para obter mais informações, consulte [instalar e configurar ferramentas para compilar usando o Ios](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Excelente operação  
  Se você estiver vindo do desenvolvimento Android ou iOS, temos materiais excelente sobre como começar. O Visual Studio é um ambiente de desenvolvimento completo expressivo e capaz. Para saber como usá-lo, tente o [Introdução para desenvolvedores do Android](https://msdn.microsoft.com/library/windows/apps/dn275875.aspx) ou [Introdução para desenvolvedores do iOS](https://msdn.microsoft.com/library/windows/apps/xaml/jj657966.aspx). Esses tópicos o apresentarão ao Visual Studio e os conceitos que você precisará para desenvolver aplicativos de plataforma cruzada para Windows e Windows Phone. Para começar a gravar seu primeiro aplicativo de plataforma cruzada para iOS e Android, consulte [Compilar um Aplicativo do OpenGL ES no Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
@@ -94,16 +94,16 @@ Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Window
      Cria um wrapper de projeto para seus próprios projetos de makefile Android.  
   
 ## <a name="try-out-sample-code"></a>Testar o código de exemplo  
- Baixe exemplos que mostram como criar bibliotecas de código compartilhado que você pode usar em aplicativos do iOS, Android e Windows e como criar aplicativos de Atividade Nativa completos para o Android. Para iniciar, consulte [Exemplos de Desenvolvimento Móvel de Multiplataforma](../cross-platform/cross-platform-mobile-development-examples.md).  
+ Baixe exemplos que mostram como criar bibliotecas de código compartilhado que você pode usar em aplicativos do iOS, Android e Windows e como criar aplicativos de Atividade Nativa completos para o Android. Para começar, consulte [exemplos de desenvolvimento móvel de plataforma cruzada](../cross-platform/cross-platform-mobile-development-examples.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
-1. [Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Instalar Visual C++ para Desenvolvimento Móvel Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2. [Instalar e configurar ferramentas para criação usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [Instalar e configurar ferramentas para compilar usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 3. [Criar um aplicativo de Atividade Nativa do Android](../cross-platform/create-an-android-native-activity-app.md)  
   
 4. [Criar um aplicativo OpenGL ES no Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5. [Exemplos de desenvolvimento móvel multiplataforma](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Exemplos de desenvolvimento móvel de plataforma cruzada](../cross-platform/cross-platform-mobile-development-examples.md)

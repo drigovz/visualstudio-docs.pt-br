@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+title: 'IDebugCustomAttribute:: GetAttributeBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7813e8e3131b04dc7174b5b666950dd68a6060a
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569062"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
@@ -42,18 +42,18 @@ int GetAttributeBytes(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppBlob`  
- [no, out] Uma matriz que é preenchida com os bytes de atributo.  
+ [entrada, saída] Uma matriz que é preenchida com os bytes de atributo.  
   
  `pdwLen`  
- [no, out] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes realmente gravados na matriz.  
+ [entrada, saída] Especifica o número máximo de bytes a serem retornados na `ppBlob` matriz e retorna o número de bytes gravados na matriz.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Defina o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz em para o `ppBlob` parâmetro.  
+ Defina o `ppBlob` parâmetro como um valor nulo para retornar o número de bytes de atributos disponíveis. Em seguida, aloque uma matriz e passe essa matriz no para o `ppBlob` parâmetro.  
   
  Os bytes de atributo representam os dados brutos do atributo personalizado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

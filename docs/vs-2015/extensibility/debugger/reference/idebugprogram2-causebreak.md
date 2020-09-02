@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Microsoft Docs
+title: 'IDebugProgram2:: CauseBreak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555703"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Solicitações que o programa parar a execução a próxima hora em que uma das suas tentativas de threads para executar.  
+Solicita que o programa pare a execução na próxima vez que um de seus threads tentar executar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,14 +36,14 @@ HRESULT CauseBreak( 
 int CauseBreak();  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Uma [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento é enviado quando o programa tenta executar código após esse método é chamado em seguida.  
+ Um evento [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) é enviado quando o programa em seguida tenta executar o código depois que esse método é chamado.  
   
- Esse método é assíncrono, em que o método retornará imediatamente sem esperar que o programa pare necessariamente.  
+ Esse método é assíncrono, pois o método retorna imediatamente sem aguardar a interrupção do programa.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

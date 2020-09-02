@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564698"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto no depurador do Visual Studio (C++)
-Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, nome de variável ou expressão. O operador de contexto é útil para especificar um nome de um escopo externo que está oculto por um nome local.
+Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, um nome de variável ou uma expressão. O operador de contexto é útil para especificar um nome de um escopo externo que, de outra forma, é oculto por um nome local.
 
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe
  Há duas maneiras de especificar o contexto:
 
 1. {,,[*module*] } *expression*
@@ -45,21 +45,21 @@ Você pode usar o operador de contexto em C++ para qualificar um local de ponto 
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2. *módulo*! *expressão*
+2. *módulo*! *expressão* de
 
     ```C++
     EXAMPLE.dll!SomeFunction
     ```
 
-- *módulo* é o nome de um módulo. Você pode usar um caminho completo para resolver a ambiguidade entre módulos com o mesmo nome.
+- *Module* é o nome de um módulo. Você pode usar um caminho completo para resolver a ambiguidade entre módulos com o mesmo nome.
 
-   Se o *módulo* caminho inclui uma vírgula, um espaço inserido ou uma chave, você deve usar aspas em torno do caminho para que o analisador de contexto possa reconhecer corretamente a cadeia de caracteres. As aspas simples são consideradas parte de um nome de arquivo do Windows, portanto, você deve usar aspas duplas. Por exemplo,
+   Se o caminho do *módulo* incluir uma vírgula, um espaço inserido ou uma chave, você deverá usar aspas em volta do caminho para que o analisador de contexto possa reconhecer corretamente a cadeia de caracteres. As aspas simples são consideradas parte de um nome de arquivo do Windows, portanto, você deve usar aspas duplas. Por exemplo,
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var
   ```
 
-- *expressão* é qualquer expressão C++ válida que resolve para um destino válido, como um nome de função, o nome de variável ou o endereço do ponteiro no *módulo*.
+- *expression* é qualquer expressão de C++ válida que seja resolvida para um destino válido, como um nome de função, um nome de variável ou um endereço de ponteiro no *módulo*.
 
   Quando o avaliador de expressão localiza um símbolo em uma expressão, procura pelo símbolo na seguinte ordem:
 

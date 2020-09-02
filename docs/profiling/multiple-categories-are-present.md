@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62794656"
 ---
 # <a name="multiple-categories-are-present"></a>Há várias categorias presentes
@@ -24,9 +24,9 @@ Uma seção que contém mais de um tipo de atividade em um intervalo de tempo de
 
 ## <a name="see-also"></a>Confira também
 - [Tempo de execução (exibição de threads)](../profiling/execution-time-threads-view.md)
-- [Tempo de I/O (Visualização de linhas)](../profiling/i-o-time-threads-view.md)
+- [Hora de e/s (exibição de threads)](../profiling/i-o-time-threads-view.md)
 - [Tempo de gerenciamento de memória](../profiling/memory-management-time.md)
-- [Tempo de prevenção](../profiling/preemption-time.md)
-- [Tempo de sono](../profiling/sleep-time.md)
+- [Tempo de preempção](../profiling/preemption-time.md)
+- [Tempo de suspensão](../profiling/sleep-time.md)
 - [Tempo de sincronização](../profiling/synchronization-time.md)
-- [Tempo de processamento de iu de ui](../profiling/ui-processing-time.md)
+- [Tempo de processamento da IU](../profiling/ui-processing-time.md)

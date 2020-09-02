@@ -1,5 +1,5 @@
 ---
-title: Página inicial para o depurador de instantâneo
+title: Página inicial do Depurador de Instantâneos
 ms.date: 07/14/2018
 robots: noindex, nofollow
 ms.topic: reference
@@ -9,66 +9,66 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905230"
 ---
-# <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
+# <a name="getting-started-with-the-snapshot-debugger"></a>Introdução com o Depurador de Instantâneos
 
-O depurador de instantâneo do Visual Studio agora está conectado ao seu serviço, e você pode iniciar a coleta de instantâneos para ajudar na depuração.
+O Depurador de Instantâneos do Visual Studio agora está conectado ao seu serviço e você pode começar a coletar instantâneos para ajudar na depuração.
 
-Para usar o depurador de instantâneo, defina algumas snappoints em seu código, clique no botão para começar a coletar instantâneos e, em seguida, execute seu cenário. Quando o código é executado no qual você definiu um snappoint, é tirado um instantâneo do seu aplicativo. Em seguida, abra o instantâneo clicando no Visual Studio na janela ferramentas de diagnóstico. Agora você pode depurar o instantâneo de seu serviço exatamente como se fosse local. Para obter instruções detalhadas, continue lendo.
+Para usar o Depurador de Instantâneos, defina alguns snappoints em seu código, clique no botão para começar a coletar instantâneos e, em seguida, execute seu cenário. Quando o código é executado no qual você definiu um snappoint, um instantâneo do seu aplicativo é obtido. Em seguida, abra o instantâneo clicando nele no Visual Studio na janela Ferramentas de Diagnóstico. Agora você pode depurar o instantâneo de seu serviço da mesma forma que era local. Para obter instruções detalhadas, continue lendo.
 
 ## <a name="collect-and-view-snapshots"></a>Coletar e exibir instantâneos
 
-O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneos são como as imagens do seu aplicativo em um ponto no tempo. Informar ao Visual Studio quando e onde coletar um instantâneo, definindo um snappoint no código. Snappoint, você define as condições que você precisa certificar-se de que você obter um instantâneo do problema que você está investigando.
+O Depurador de Instantâneos coleta instantâneos do seu aplicativo. Os instantâneos são como imagens de seu como em um ponto no tempo. Você informa ao Visual Studio quando e onde coletar um instantâneo definindo um snappoint no código. No snappoint, você define quaisquer condições necessárias para certificar-se de obter um instantâneo do problema que está investigando.
 
-### <a name="set-a-snappoint"></a>Defina um Snappoint
+### <a name="set-a-snappoint"></a>Definir um Snappoint
 
-1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código que você está interessado para definir um snappoint. Verifique se que ele é o código que você sabe que será executado.
+1. No editor de código, clique na medianiz à esquerda ao lado de uma linha de código em que você está interessado para definir um snappoint. Verifique se o código que você sabe que será executado.
 
-    ![Definindo um snappoint no Editor](../media/snapshot-startpage-set-snappoint.png)
+    ![Configurando um snappoint no editor](../media/snapshot-startpage-set-snappoint.png)
 
-    Um hexágono roxo aparece em que você clica no lado esquerdo.
+    Um hexágono roxo aparece onde você clica à esquerda.
 
 2. Clique em **Iniciar Coleção** para ativar o snappoint.
 
 ### <a name="open-a-snapshot"></a>Abrir um instantâneo
 
-1. Quando o snappoint for atingido, um instantâneo é exibida na janela de ferramentas de diagnóstico à direita. Se não abrir a janela, você pode abri-lo escolhendo **Debug** > **Windows** > **Mostrar ferramentas de diagnóstico**.
+1. Quando o snappoint é atingido, um instantâneo é exibido na janela de Ferramentas de Diagnóstico à direita. Se a janela não abrir, você poderá abri-la escolhendo **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico**.
 
-    ![Instantâneo na janela de ferramentas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
+    ![Instantâneo na janela de Ferramentas de Diagnóstico](../media/snapshot-startpage-diagsession-window.png)
 
-2. Clique duas vezes o instantâneo para abri-lo.
+2. Clique duas vezes no instantâneo para abri-lo.
 
-### <a name="inspect-snapshot-data"></a>Inspecione os dados de instantâneo
+### <a name="inspect-snapshot-data"></a>Inspecionar dados de instantâneo
 
-Nessa exibição, é possível focalizar variáveis exibir DataTips, use os locais, inspeções, e chamar empilhar windows e também avaliar expressões.
+Nessa exibição, você pode passar o mouse sobre as variáveis para exibir DataTips; use as janelas Locais, Inspeções e Pilha de Chamadas e também avalie expressões.
 
-O site em si ainda fica ativo, e os usuários finais não são afetados. Por padrão, apenas um instantâneo é capturado por snappoint. Ou seja, depois que um instantâneo é capturado, o snappoint seja desligada. Se você quiser capturar outro instantâneo no snappoint, poderá ativar o snappoint novamente clicando em **Atualizar Coleção**.
+O site em si ainda fica ativo, e os usuários finais não são afetados. Por padrão, apenas um instantâneo é capturado por snappoint. Ou seja, depois que um instantâneo é capturado, o snappoint desliga. Se você quiser capturar outro instantâneo no snappoint, poderá ativar o snappoint novamente clicando em **Atualizar Coleção**.
 
-### <a name="set-a-logpoint"></a>Defina um Logpoint
+### <a name="set-a-logpoint"></a>Definir um Logpoint
 
-1. Um ícone de snappoint (o hexágono roxo) com o botão direito e escolha **configurações**.
+1. Clique com o botão direito do mouse em um ícone de snappoint (o hexágono roxo) e escolha **configurações**.
 
-2. No **configurações de Snappoint** janela, selecione **ações**.
+2. Na janela **configurações do Snappoint** , selecione **ações**.
 
     ![Condições de Snappoint](../media/snapshot-startpage-logpoint.png)
 
-3. No **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log colocando-as entre chaves.
+3. No campo **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log colocando-as entre chaves.
 
-    Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido.
+    Se você escolher **Enviar para janela de saída**, a mensagem aparecerá na janela ferramentas de diagnóstico quando o logpoint for atingido.
 
-    Se você escolher **enviar para log de aplicativo**, a mensagem será exibida em qualquer lugar que você pode ver mensagens de `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como o App Insights, quando o logpoint for atingido.
+    Se você escolher **Enviar para o log do aplicativo**, a mensagem será exibida em qualquer lugar que você possa ver as mensagens do `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como o app insights, quando o logpoint for atingido.
 
 ## <a name="learn-more"></a>Saiba mais
 
-Você pode encontrar mais informações sobre o depurador de instantâneo na [página de documentos](../debug-live-azure-applications.md). Saiba mais sobre como configurar condições para torná-lo mais fácil de encontrar bugs.
+Você pode encontrar mais informações sobre o Depurador de Instantâneos na [página de documentos](../debug-live-azure-applications.md). Saiba mais sobre como definir condições para facilitar a localização de bugs.
 
 ## <a name="dont-show-me-this-again"></a>Não mostrar novamente
 
-Para nunca mostrar a página de início do depurador de instantâneo novamente quando você conectar o depurador de instantâneo, alterar o **Mostrar 'Getting Started' página no início da sessão** opção **ferramentas**  >   **As opções** > **depurador de instantâneo**.
+Para nunca mostrar a depurador de instantâneos página inicial novamente ao conectar o depurador de instantâneos, altere a **página Mostrar ' Introdução ' na** opção de início da sessão em **ferramentas**  >  **Opções**  >  **depurador de instantâneos**.
 
-![Página de opção de ferramenta de depurador de instantâneo](../media/snapshot-startpage-tools-options.png)
+![Página de opções da ferramenta de Depurador de Instantâneos](../media/snapshot-startpage-tools-options.png)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580219"
 ---
 # <a name="functions-view---instrumentation-data"></a>Exibição de Funções – Dados de Instrumentação
@@ -26,24 +26,24 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 ## <a name="general"></a>Geral  
  As colunas gerais identificam a função em uma linha de exibição.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
-|**Nome da Função**|O nome da função.|  
-|**Endereço da Função**|O endereço da função.|  
+|**Nome da função**|O nome da função.|  
+|**Endereço da função**|O endereço da função.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
 |**Número de Chamadas**|O número total de chamadas que são feitas à função.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
-|**Nome do Módulo**|O nome do módulo que contém a função.|  
+|**Nome do módulo**|O nome do módulo que contém a função.|  
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
+|**Nome do processo**|O nome do processo.|  
 |**Sobrecarga de Investigação Exclusiva de Tempo**|A sobrecarga de tempo para essa função que é causada pela instrumentação. Não inclui a sobrecarga nas funções que foram chamadas pela função. A sobrecarga de investigação foi subtraída de todos os tempos exclusivos.|  
 |**Sobrecarga de Investigação Inclusiva de Tempo**|A sobrecarga de tempo para essa função e as respectivas funções filho que é causada pela instrumentação. Inclui a sobrecarga nas funções que foram chamadas pela função. A sobrecarga de investigação foi subtraída de todos os tempos inclusivos.|  
   
 ## <a name="elapsed-inclusive-values"></a>Valores Inclusivos Decorridos  
  Os valores inclusivos decorridos indicam o tempo que uma função ficou na pilha de chamadas. Inclui o tempo que foi gasto em funções que foram chamadas pela função e o tempo foi gasto em chamadas para o sistema operacional, como operações de entrada/saída e de alternância de contexto.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Inclusivo Decorrido**|O tempo inclusivo decorrido total de todas as chamadas feitas a essa função.|  
 |**% de Tempo Inclusivo Decorrido**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo decorrido dessa função.|  
@@ -54,7 +54,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 ## <a name="elapsed-exclusive-values"></a>Valores Exclusivos Decorridos  
  Valores exclusivos decorridos indicam o tempo durante o qual uma função estava executando código no corpo da função, ou seja, quando a função estava no topo da pilha de chamadas. Inclui o tempo que foi gasto em chamadas para o sistema operacional, como operações de entrada/saída e de alternância de contexto, mas não inclui o tempo gasto em funções que foram chamadas pela função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Exclusivo Decorrido**|O tempo exclusivo decorrido total de todas as chamadas feitas a essa função.|  
 |**% de Tempo Exclusivo Decorrido**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo decorrido total dessa função.|  
@@ -65,7 +65,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 ## <a name="application-inclusive-values"></a>Valores Inclusivos do Aplicativo  
  Os valores inclusivos do aplicativo indicam o tempo que uma função ficou na pilha de chamadas. Não inclui o tempo que foi gasto em chamadas para o sistema operacional, como operações de entrada/saída e de alternância de contexto, mas inclui o tempo gasto em funções que foram chamadas pela função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Inclusivo do Aplicativo**|O tempo inclusivo do aplicativo total de todas as chamadas para essa função.|  
 |**% de Tempo Inclusivo do Aplicativo**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo do aplicativo total dessa função.|  
@@ -76,7 +76,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 ## <a name="application-exclusive-values"></a>Valores Exclusivos do Aplicativo  
  Valores exclusivos do aplicativo indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. Não inclui o tempo que foi gasto em chamadas para o sistema operacional, como operações de entrada/saída e de alternância de contexto e não inclui o tempo gasto em funções que foram chamadas pela função.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Tempo Exclusivo do Aplicativo**|O tempo exclusivo do aplicativo total de todas as chamadas para essa função.|  
 |**% de Tempo Exclusivo do Aplicativo**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo do aplicativo total dessa função.|  
@@ -84,8 +84,8 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 |**Tempo Exclusivo Máximo do Aplicativo**|O tempo exclusivo máximo do aplicativo de uma chamada para essa função.|  
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|  
   
-## <a name="see-also"></a>Consulte também  
- [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
- [Exibição de Funções](../profiling/functions-view-sampling-data.md)   
- [Exibição de Funções – Amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Exibição de Funções – Instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)   
+ [Exibição de funções](../profiling/functions-view-sampling-data.md)   
+ [Exibição de funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Exibição de funções – Instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

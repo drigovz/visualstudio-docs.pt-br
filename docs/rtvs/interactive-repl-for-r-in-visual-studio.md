@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62814838"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Trabalhar com a janela R Interativo
 
 As RTVS (Ferramentas do R para Visual Studio) fornecem a janela R Interativo, também conhecida como janela **REPL** (Read-Evaluate-Print-Loop), na qual você pode inserir código R e ver os resultados imediatamente. Todos os módulos, sintaxe e variáveis, bem como o IntelliSense, estão disponíveis na janela interativa.
 
-A janela interativa também está integrada às janelas regulares do editor R. Você pode selecionar código e **pressione Ctrl**+**Enter**, ou clique com o botão direito do mouse e selecione Execute **in Interactive**, e o código é executado linha por linha na janela interativa como se você digitasse diretamente. Quando o cursor está em uma única linha em uma janela de editor, **Ctrl**+**Enter** envia essa linha para a janela interativa e, em seguida, move o cursor para a próxima linha. Desta forma, basta pressionar **Ctrl**+**Enter** repetidamente para passar pelo código.
+A janela interativa também está integrada às janelas regulares do editor R. Você pode selecionar código e pressionar **Ctrl** + **Enter**, ou clicar com o botão direito do mouse e selecionar **executar em interativo**, e o código será executado linha por linha na janela interativa como se você o tivesse digitado diretamente. Quando o cursor está em uma única linha em uma janela do editor, **Ctrl** + **Enter** envia essa linha para a janela interativa e move o cursor para a próxima linha. Dessa forma, você pode simplesmente pressionar **Ctrl** + **Enter** repetidamente para percorrer o código.
 
 Para experimentar esses recursos, siga o passo a passo [Introdução ao R](getting-started-with-r.md), bem como as seções neste artigo. Os [Snippets de código](code-snippets-for-r.md) também funcionam na janela interativa como nas janelas do editor de R.
 
@@ -32,7 +32,7 @@ Digitar código R válido e pressionar **Enter** no final da linha executa o có
 [1] 6
 ```
 
-Pressionar **Entrar** em qualquer lugar em uma entrada de linha única também executa essa linha.
+Pressionar **Enter** em qualquer lugar em uma entrada de linha única também executa essa linha.
 
 Todas as entradas e saídas anteriores da REPL são somente leitura e não podem ser alteradas. No entanto, você pode selecionar e copiar o texto da janela a qualquer momento e também colá-lo. O código colado é executado como se fosse inserido linha por linha.
 
@@ -40,7 +40,7 @@ Ou seja, quando você começa a digitar uma instrução e pressiona **Enter**, a
 
 ![Entrada de instrução de várias linhas na janela interativa](media/repl-multiline-entry.png)
 
-Neste modo multi-linha, a tecla **Enter** executa o bloco de código somente quando posicionada no final do bloco, caso contrário, insere uma nova linha. No entanto, você pode pressionar **Ctrl**+**Enter** em qualquer posição para executar esse bloco de código imediatamente.
+Nesse modo de várias linhas, a tecla **Enter** executa o bloco de código somente quando posicionado no final do bloco, caso contrário insere uma nova linha. No entanto, você pode pressionar **Ctrl** + **Enter** em qualquer posição para executar esse bloco de código imediatamente.
 
 ### <a name="toolbar-commands"></a>Comandos da barra de ferramentas
 
@@ -48,22 +48,22 @@ Aqui está a janela interativa com sua barra de ferramentas:
 
 ![Janela interativa com barra de ferramentas](media/repl-window.png)
 
-Os comandos da barra de ferramentas são os seguintes, a maioria dos quais têm equivalentes de teclado e também estão disponíveis nos menus **R Tools** > **Session** e **R Tools** > **Working Directory** (ou conforme observado):
+Os comandos da barra de ferramentas são os seguintes, a maioria deles tem equivalentes de teclado e também estão disponíveis nos menus de diretório de trabalho **ferramentas**de r  >  **Session** e **ferramentas de r**  >  **Working Directory** (ou conforme observado):
 
 | Botão | Comando | Combinação de teclas | Descrição |
 | --- | --- | --- | --- |
-| ![Botão Reiniciar](media/repl-toolbar-01-reset.png) | Redefinir | **Ctrl**+**Shift**Mudança+ctrl**F10** | Redefine a sessão de janela interativa, limpando todas as variáveis e o histórico. |
-| ![Botão Limpar](media/repl-toolbar-02-clear.png) | Liberada | **Ctrl**+**L** | Limpa a saída mostrada na janela interativa. não afeta as variáveis de sessão nem o histórico. |
-| ![Botões Histórico](media/repl-toolbar-03-history.png) | Comando Histórico anterior<br/>Comando Próximo histórico | **Para cima**, **Para baixo**<br/>**Alt**+**Up**, **Alt**+**Down** | Percorre o histórico, com alguns comportamentos de blocos de código de várias linhas. Consulte [Histórico](#history). |
-| ![Botão Carregar workspace](media/repl-toolbar-04-load-workspace.png) | Carregar workspace | n/d | Carrega um workspace anterior salvo (consulte [Workspaces e sessões](#workspaces-and-sessions). |
-| ![Botão Salvar workspace como](media/repl-toolbar-05-save-workspace-as.png)| Salvar workspace | n/d | Salva o estado atual da sessão como um workspace (consulte [Workspaces e sessões](#workspaces-and-sessions). |
-| ![Botão Script R de origem](media/repl-toolbar-06-source-r-script.png) | Script R de origem | **Mudança ctrl**+**Shift**+**S** | Chama `source` com o script R atualmente ativo no editor do Visual Studio, que executa o código.  Esse botão só aparece quando um arquivo R é aberto no editor do Visual Studio. |
-| ![Botão Script R de origem com eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R de Origem com Eco | **Entrada de**+**turno**+**Enter** ctrl | Igual ao Script R de Origem, mas exibe o conteúdo do script na janela interativa. |
+| ![Botão Reiniciar](media/repl-toolbar-01-reset.png) | Redefinir | **Ctrl** + **Shift** + **F10** | Redefine a sessão de janela interativa, limpando todas as variáveis e o histórico. |
+| ![Botão Limpar](media/repl-toolbar-02-clear.png) | Liberada | **Ctrl** + **L** | Limpa a saída mostrada na janela interativa. não afeta as variáveis de sessão nem o histórico. |
+| ![Botões Histórico](media/repl-toolbar-03-history.png) | Comando Histórico anterior<br/>Comando Próximo histórico | **Para cima**, **Para baixo**<br/>**ALT** + Para **cima**, **ALT** + **para baixo** | Percorre o histórico, com alguns comportamentos de blocos de código de várias linhas. Consulte [Histórico](#history). |
+| ![Botão Carregar workspace](media/repl-toolbar-04-load-workspace.png) | Carregar workspace | N/D | Carrega um workspace anterior salvo (consulte [Workspaces e sessões](#workspaces-and-sessions). |
+| ![Botão Salvar workspace como](media/repl-toolbar-05-save-workspace-as.png)| Salvar workspace | N/D | Salva o estado atual da sessão como um workspace (consulte [Workspaces e sessões](#workspaces-and-sessions). |
+| ![Botão Script R de origem](media/repl-toolbar-06-source-r-script.png) | Script R de origem | **Ctrl** + **Shift** + **S** | Chama `source` com o script R atualmente ativo no editor do Visual Studio, que executa o código.  Esse botão só aparece quando um arquivo R é aberto no editor do Visual Studio. |
+| ![Botão Script R de origem com eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R de Origem com Eco | **Ctrl** + **Shift** + **Insira** | Igual ao Script R de Origem, mas exibe o conteúdo do script na janela interativa. |
 | ![Botão Interromper R](media/repl-toolbar-08-interrupt-r.png)| Interromper R | **Esc** | Interrompe qualquer código em execução na janela interativa, como o loop `while` na captura de tela mostra no início dessa seção. |
-| ![Botão Anexar depurador](media/repl-toolbar-09b-attach-debugger.png)| Anexar Depurador | n/d | Também disponível usando o comando **Debug** > **Attach to R Interactive.** |
-| ![Botão Definir diretório de trabalho para o local do arquivo de origem](media/repl-toolbar-10-set-working-directory-source.png)| Definir diretório de trabalho para o local do arquivo de origem | **Mudança ctrl**+**Shift**+**E** | Define o diretório de trabalho para o último arquivo de origem carregado na janela interativa (usando `source`). Consulte [Diretório de trabalho](#working-directory). |
-| ![Botão Definir diretório de trabalho para o local do projeto](media/repl-toolbar-11-set-working-directory-to-project.png) | Definir diretório de trabalho para o local do projeto | **Ctrl**+**Shift**Mudança+ctrl**P** | Define o diretório de trabalho para a raiz do projeto carregado atualmente no Visual Studio. Consulte [Diretório de trabalho](#working-directory). |
-| (Campo de texto) | Selecionar Diretório de Trabalho | n/d | Campo de entrada direta para o diretório de trabalho. Consulte [Diretório de trabalho](#working-directory). |
+| ![Botão Anexar depurador](media/repl-toolbar-09b-attach-debugger.png)| Anexar Depurador | N/D | Também disponível usando o comando **debug**  >  **Attach to R interativo** . |
+| ![Botão Definir diretório de trabalho para o local do arquivo de origem](media/repl-toolbar-10-set-working-directory-source.png)| Definir diretório de trabalho para o local do arquivo de origem | **Ctrl** + **Shift** + **E** | Define o diretório de trabalho para o último arquivo de origem carregado na janela interativa (usando `source`). Consulte [Diretório de trabalho](#working-directory). |
+| ![Botão Definir diretório de trabalho para o local do projeto](media/repl-toolbar-11-set-working-directory-to-project.png) | Definir diretório de trabalho para o local do projeto | **Ctrl** + **Shift** + **P** | Define o diretório de trabalho para a raiz do projeto carregado atualmente no Visual Studio. Consulte [Diretório de trabalho](#working-directory). |
+| (Campo de texto) | Selecionar Diretório de Trabalho | N/D | Campo de entrada direta para o diretório de trabalho. Consulte [Diretório de trabalho](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Workspaces e sessões
 
@@ -79,7 +79,7 @@ O botão **Redefinir** ou **Ferramentas do R** > **Sessão** > **Redefinir** lim
 
 ## <a name="working-directory"></a>Diretório de trabalho
 
-Normalmente, os desenvolvedores desejam alterar seu diretório de trabalho enquanto estão em uma sessão interativa. Vários comandos, disponíveis na barra de ferramentas, no menu do diretório **R Tools** > **Working** e no menu de contexto do projeto permitem definir facilmente um diretório de trabalho para a localização de um arquivo de origem, o local ou seu projeto ou qualquer outro local arbitrário. Isso ajuda a evitar a digitação de nomes de caminho completos ou de nomes de caminho relativos longos ao fazer referência a arquivos.
+Normalmente, os desenvolvedores desejam alterar seu diretório de trabalho enquanto estão em uma sessão interativa. Vários comandos, disponíveis na barra de ferramentas, o menu do diretório de trabalho das **Ferramentas do R**  >  **Working directory** e o menu de contexto do projeto permitem que você defina facilmente um diretório de trabalho para o local de um arquivo de origem, o local ou o projeto ou qualquer outro local arbitrário. Isso ajuda a evitar a digitação de nomes de caminho completos ou de nomes de caminho relativos longos ao fazer referência a arquivos.
 
 ## <a name="history"></a>Histórico
 
@@ -89,11 +89,11 @@ Uma diferença é que, se você começar a digitar na linha atual e pressionar P
 
 O histórico na janela interativa também funciona de forma inteligente com instruções de outro bloco de código que abrangem linhas. Ao percorrer o histórico com as teclas de seta Para Cima e Para Baixo, os blocos de código de várias linhas são recuperados como um todo e mostrados como a entrada atual. Neste ponto, as teclas de seta navegam por esse bloco de código linha por linha, até a parte superior ou inferior seja atingida. Na parte superior do bloco de código, a seta para cima recupera o item anterior no histórico; na linha inferior, a seta para baixo recupera o próximo item.
 
-Esse comportamento acomoda o caso típico de reexecutar o último item da história com uma combinação de seta para cima e **digite** teclas, permitindo naturalmente a edição de um bloco de código de várias linhas pressionando a seta Up para navegar nele.
+Esse comportamento acomoda o caso típico de executar novamente o último item no histórico com uma seta para cima e **digitar** a combinação de teclas, embora, naturalmente, permita a edição de um bloco de código de várias linhas pressionando a seta para cima para navegar até ele.
 
-Para evitar navegar em blocos de código multi-linha, use os botões da barra de ferramentas ou **Alt**+**Up** e **Alt**-**Down**, e todos esses blocos são tratados como uma única linha.
+Para evitar a navegação em blocos de código de várias linhas, use os botões da barra de ferramentas ou **ALT +** + **Up** **Alt** - **seta para baixo e ALT para baixo**, e todos esses blocos são tratados como uma única linha.
 
-A maneira mais fácil de experimentar os recursos de histórico é testá-los por contra própria na janela interativa. O código a seguir fornece várias instruções adequadas de linha única e de várias linhas. Use copiar e colar com cada instrução individualmente para criar o histórico apropriado. (Você também pode colar o código em um arquivo de código separado e, em seguida, enviar as linhas para a janela interativa com **Ctrl**+**Enter**.)
+A maneira mais fácil de experimentar os recursos de histórico é testá-los por contra própria na janela interativa. O código a seguir fornece várias instruções adequadas de linha única e de várias linhas. Use copiar e colar com cada instrução individualmente para criar o histórico apropriado. (Você também pode colar o código em um arquivo de código separado e, em seguida, enviar as linhas para a janela interativa com **Ctrl** + **Insira**.)
 
 ```R
 3 + 3

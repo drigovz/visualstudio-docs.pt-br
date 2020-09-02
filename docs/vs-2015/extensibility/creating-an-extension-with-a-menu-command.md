@@ -1,5 +1,5 @@
 ---
-title: Criar uma extensão com um comando de Menu | Microsoft Docs
+title: Criando uma extensão com um comando de menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,44 +14,44 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572881"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este passo a passo mostra como criar uma extensão com um comando de menu que inicia o bloco de notas.  
+Este tutorial mostra como criar uma extensão com um comando de menu que inicia o bloco de notas.  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-menu-command"></a>Criação de um comando de Menu  
+## <a name="creating-a-menu-command"></a>Criando um comando de menu  
   
-1. Crie um projeto do VSIX chamado **FirstMenuCommand**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Crie um projeto VSIX chamado **FirstMenuCommand**. Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** em **Visual C#/extensibilidade**.  
   
-2. Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **FirstCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **FirstCommand.cs**.  
+2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **FirstCommand**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar/novo item**. Na caixa de diálogo **Adicionar novo item** , vá para **Visual C#/extensibilidade** e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para **FirstCommand.cs**.  
   
 3. Compile o projeto e comece a depuração.  
   
-     A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância Experimental](../extensibility/the-experimental-instance.md).  
+     A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância experimental](../extensibility/the-experimental-instance.md).  
   
-4. Na instância experimental, abra o **ferramentas / extensões e atualizações** janela. Você deve ver a **FirstMenuCommand** extensão aqui. (Se você abrir **extensões e atualizações** em sua instância de trabalho do Visual Studio, você não verá **FirstMenuCommand**).  
+4. Na instância experimental, abra a janela  **ferramentas/extensões e atualizações** . Você deve ver a extensão **FirstMenuCommand** aqui. (Se você abrir **extensões e atualizações** em sua instância de trabalho do Visual Studio, não verá **FirstMenuCommand**).  
   
-     Agora vá para o **ferramentas** menu na instância experimental. Você deve ver **FirstCommand invocar** comando. Neste ponto ele apenas traz uma caixa de mensagem que diz "FirstCommandPackage dentro FirstMenuCommand.FirstCommand.MenuItemCallback()". Veremos como realmente começar o bloco de notas desse comando na próxima seção.  
+     Agora, vá para o menu **ferramentas** na instância experimental. Você deverá ver o comando **Invoke FirstCommand** . Neste ponto, ele simplesmente abre uma caixa de mensagem que diz "FirstCommandPackage Inside FirstMenuCommand. FirstCommand. MenuItemCallback ()". Veremos como iniciar o bloco de notas a partir desse comando na próxima seção.  
   
-## <a name="changing-the-menu-command-handler"></a>Alterando o manipulador de comandos de Menu  
- Agora vamos atualizar o manipulador de comandos para iniciar o bloco de notas.  
+## <a name="changing-the-menu-command-handler"></a>Alterando o manipulador de comando de menu  
+ Agora, vamos atualizar o manipulador de comandos para iniciar o bloco de notas.  
   
-1. Parar a depuração e voltar para sua instância de trabalho do Visual Studio. Abra o arquivo FirstCommand.cs e adicione a seguinte instrução using:  
+1. Pare a depuração e volte para sua instância de trabalho do Visual Studio. Abra o arquivo FirstCommand.cs e adicione a seguinte instrução Using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2. Localize o construtor FirstCommand particular. Isso é onde o comando é conectado ao serviço de comando e o manipulador de comando é especificado. Altere o nome do manipulador de comando para o StartNotepad, da seguinte maneira:  
+2. Localize o Construtor FirstCommand privado. É aí que o comando é conectado ao serviço de comando e o manipulador de comandos é especificado. Altere o nome do manipulador de comandos para StartNotepad, da seguinte maneira:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
     }  
     ```  
   
-3. Remova o método MenuItemCallback e adicione um método StartNotepad que apenas iniciará o bloco de notas:  
+3. Remova o método MenuItemCallback e adicione um método StartNotepad, que simplesmente iniciará o bloco de notas:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,16 +85,16 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
     }  
     ```  
   
-4. Agora tente. Quando você iniciar a depuração do projeto e clique em **ferramentas / invocar FirstCommand**, você deve ver uma instância do bloco de notas.  
+4. Agora experimente. Ao iniciar a depuração do projeto e clicar em **ferramentas/invocar FirstCommand**, você deverá ver uma instância do bloco de notas aparecer.  
   
-     Você pode usar uma instância da <xref:System.Diagnostics.Process> classe para executar qualquer executável, não apenas o bloco de notas. Tente com calc.exe, por exemplo.  
+     Você pode usar uma instância da <xref:System.Diagnostics.Process> classe para executar qualquer executável, não apenas o bloco de notas. Experimente-o com calc.exe, por exemplo.  
   
-## <a name="cleaning-up-the-experimental-environment"></a>Limpando ambiente Experimental  
- Se você estiver desenvolvendo várias extensões, ou apenas explorando os resultados com diferentes versões do seu código de extensão, o seu ambiente experimental pode parar de funcionar como deveria. Nesse caso, você deve executar o script de reinicialização. Ele é chamado **redefinir a instância Experimental do Visual Studio 2015**, e ele é fornecido como parte do SDK do Visual Studio. Esse script remove todas as referências a suas extensões do ambiente experimental, para que você possa começar do zero.  
+## <a name="cleaning-up-the-experimental-environment"></a>Limpando o ambiente experimental  
+ Se você estiver desenvolvendo várias extensões ou apenas explorando resultados com versões diferentes do seu código de extensão, seu ambiente experimental pode parar de funcionar da maneira que deveria. Nesse caso, você deve executar o script de redefinição. Ele é chamado **redefinir a instância experimental do visual studio 2015**e é fornecido como parte do SDK do Visual Studio. Esse script remove todas as referências às suas extensões do ambiente experimental, para que você possa começar do zero.  
   
- Você pode chegar a este script em uma das duas maneiras:  
+ Você pode acessar esse script de uma das duas maneiras:  
   
-1. Na área de trabalho, localize **redefinir a instância Experimental do Visual Studio 2015**.  
+1. Na área de trabalho, localize **redefinir a instância experimental do Visual Studio 2015**.  
   
 2. Na linha de comando, execute o seguinte:  
   
@@ -103,34 +103,34 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
   
     ```  
   
-## <a name="deploying-your-extension"></a>Implantar sua extensão  
- Agora que você tem a sua extensão da ferramenta em execução da maneira desejada, é hora de pensar em compartilhá-lo com seus amigos e colegas. Isso é fácil, desde que eles têm instalado o Visual Studio 2015. Tudo o que você precisa fazer é enviá-los o arquivo. VSIX que você criou. (Certifique-se de criá-lo no modo de versão.)  
+## <a name="deploying-your-extension"></a>Implantando sua extensão  
+ Agora que você tem sua extensão de ferramenta em execução da maneira desejada, é hora de pensar em compartilhá-la com seus amigos e colegas. Isso é fácil, desde que tenha o Visual Studio 2015 instalado. Tudo o que você precisa fazer é enviar a eles o arquivo. vsix que você criou. (Não se esqueça de compilá-lo no modo de liberação.)  
   
- Você pode encontrar o arquivo. VSIX para esta extensão no diretório bin FirstMenuCommand. Especificamente, supondo que você criou a configuração de versão, ele estará em:  
+ Você pode encontrar o arquivo. vsix para essa extensão no diretório bin do FirstMenuCommand. Especificamente, supondo que você criou a configuração de versão, ela estará em:  
   
- **\<diretório de código > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix**  
   
- Para instalar a extensão, seu amigo precisa fechar todas as instâncias abertas do Visual Studio e, em seguida, duas vezes no arquivo. VSIX, que abre o **instalador do VSIX**. Os arquivos são copiados para o **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions** directory.  
+ Para instalar a extensão, seu amigo precisa fechar todas as instâncias abertas do Visual Studio e clicar duas vezes no arquivo. vsix, que abre o instalador do **VSIX**. Os arquivos são copiados para o diretório **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions** .  
   
- Quando seu amigo traz o Visual Studio novamente, ele encontrará a extensão FirstMenuCommand na **ferramentas / extensões e atualizações**. Ele pode ir para **extensões e atualizações** para desinstalar ou desabilitar a extensão, muito.  
+ Quando o seu amigo abre o Visual Studio novamente, ele encontrará a extensão FirstMenuCommand em **ferramentas/extensões e atualizações**. Ele pode acessar **extensões e atualizações** para desinstalar ou desabilitar a extensão também.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Este passo a passo mostrou apenas uma pequena parte do que você pode fazer com uma extensão do Visual Studio. Aqui está uma lista curta de outras coisas (razoavelmente fácil), que você pode fazer com as extensões do Visual Studio:  
+ Este tutorial mostrou apenas uma pequena parte do que você pode fazer com uma extensão do Visual Studio. Aqui está uma lista curta de outras coisas (razoavelmente simples) que você pode fazer com as extensões do Visual Studio:  
   
-1. Você pode fazer muito mais coisas com um comando de menu simples:  
+1. Você pode fazer muitas coisas com um comando de menu simples:  
   
-   1. Adicione seu próprio ícone: [Adicionar ícones a comandos de menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Adicione seu próprio ícone: [adicionando ícones a comandos de menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2. Altere o texto do comando de menu: [Alterar o texto de um comando de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Alterar o texto do comando de menu: [alterando o texto de um comando de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3. Adicione um atalho de menu a um comando: [Associar atalhos de teclado aos itens de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Adicionar um atalho de menu a um comando: [associando atalhos de teclado a itens de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Adicione tipos diferentes de comandos, menus e barras de ferramentas: [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)  
+2. Adicionar diferentes tipos de comandos, menus e barras de ferramentas: [estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)  
   
-3. Adicionar janelas de ferramenta e estender as janelas de ferramentas internas do Visual Studio: [Ampliar e personalizar janelas de ferramentas](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Adicione janelas de ferramentas e amplie as janelas de ferramentas internas do Visual Studio: [estendendo e personalizando as janelas de ferramentas](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Adicione o IntelliSense, sugestões de código e outros recursos para os editores de código existente: [Estender o editor e os serviços de linguagem](../extensibility/extending-the-editor-and-language-services.md)  
+4. Adicionar IntelliSense, sugestões de código e outros recursos a editores de código existentes: [estendendo os serviços de editor e linguagem](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Adicione páginas de propriedade e as opções e configurações do usuário para sua extensão: [Estendendo propriedades e a janela de propriedade](../extensibility/extending-properties-and-the-property-window.md) e [estender opções e configurações do usuário](../extensibility/extending-user-settings-and-options.md)  
+5. Adicionar opções e páginas de propriedades e configurações de usuário à sua extensão: [estendendo propriedades e a janela de propriedades](../extensibility/extending-properties-and-the-property-window.md) e [estendendo configurações e opções de usuário](../extensibility/extending-user-settings-and-options.md)  
   
-   Outros tipos de extensões exigem um pouco mais de trabalho, como a criação de um novo tipo de projeto ([estendendo projetos](../extensibility/extending-projects.md)), criando um novo tipo de editor ([criação personalizada editores e Designers](../extensibility/creating-custom-editors-and-designers.md)), ou Implementando a sua extensão em um shell isolado: [Shell isolado do Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   Outros tipos de extensões exigem um pouco mais de trabalho, como a criação de um novo tipo de projeto ([estendendo projetos](../extensibility/extending-projects.md)), a criação de um novo tipo de editor ([criação de editores e designers personalizados](../extensibility/creating-custom-editors-and-designers.md)) ou a implementação de sua extensão em um shell isolado: [shell isolado do Visual Studio](../extensibility/visual-studio-isolated-shell.md)

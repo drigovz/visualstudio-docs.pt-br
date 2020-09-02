@@ -11,42 +11,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931293"
 ---
 # <a name="message-search-dialog-box"></a>Caixa de diálogo Pesquisa de Mensagens
-Use essa caixa de diálogo para localizar e selecionar o nó de uma mensagem específica no [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de mensagens. Em seguida, escolha **localizar mensagem** da **pesquisa** menu.
+Use essa caixa de diálogo para localizar e selecionar o nó de uma mensagem específica no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de mensagens. Em seguida, escolha **Localizar mensagem** no menu **Pesquisar** .
 
- As configurações a seguir estão disponíveis:
+ As seguintes configurações estão disponíveis:
 
- **Ferramenta descobridora** a ferramenta de arrastar e soltar, usada para selecionar uma janela.
+ **Ferramenta de localizador** A ferramenta arrastar e soltar usada para selecionar uma janela.
 
- **Ocultar Spy + +** remove a janela principal do Spy + + e deixa o **MessageSearch** caixa de diálogo visível na parte superior de seus outros aplicativos.
+ **Ocultar Spy + +** Remove a janela principal do Spy + + e deixa a caixa de diálogo **MessageSearch** visível sobre seus outros aplicativos.
 
- **Lidar com** a ID exclusiva da mensagem a ser pesquisado.
+ **Identificador** do A ID exclusiva da mensagem a ser pesquisada.
 
- **Tipo** o tipo de mensagem a ser pesquisado.
+ **Tipo** de O tipo de mensagem a ser pesquisada.
 
- **Mensagem** a ID da mensagem a ser pesquisado.
+ **Mensagem** de A ID da mensagem a ser pesquisada.
 
- **Direção de pesquisa para cima ou para baixo** a direção inicial da pesquisa.
+ **Pesquisar direção para cima ou para baixo** A direção inicial da pesquisa.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Procurando por uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md) explica como localizar uma mensagem específica na exibição de mensagens.
+ [Pesquisando uma mensagem no modo de exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md) Explica como localizar uma mensagem específica no modo de exibição de mensagens.
 
- [Abrindo o modo de exibição de mensagens da janela localizar](../debugger/how-to-open-messages-view-from-find-window.md) explica como abrir a exibição de mensagens da caixa de diálogo Localizar janela.
+ [Abrindo a exibição de mensagens na janela Localizar](../debugger/how-to-open-messages-view-from-find-window.md) Explica como abrir o modo de exibição mensagens na caixa de diálogo localizar janela.
 
- [A exibição de mensagens](../debugger/messages-view.md) exibe o fluxo de mensagem associado a uma janela, processo ou thread.
+ [Exibição de mensagens](../debugger/messages-view.md) Exibe o fluxo de mensagens associado a uma janela, processo ou thread.
 
- [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md) Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.
 
- [Usando Spy + +](../debugger/using-spy-increment.md) apresenta a ferramenta Spy + + e explica como ele pode ser usado.
+ [Usando o Spy + +](../debugger/using-spy-increment.md) Apresenta a ferramenta Spy + + e explica como ela pode ser usada.
 
- [Caixa de diálogo Opções da mensagem](../debugger/message-options-dialog-box.md) usado para selecionar quais mensagens são listadas na exibição de mensagens.
+ [Caixa de diálogo opções de mensagem](../debugger/message-options-dialog-box.md) Usado para selecionar quais mensagens estão listadas no modo de exibição de mensagens.
 
- [Caixa de diálogo Propriedades da mensagem](../debugger/message-properties-dialog-box.md) usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagens.
+ [Caixa de diálogo Propriedades da mensagem](../debugger/message-properties-dialog-box.md) Usado para exibir as propriedades de uma mensagem selecionada no modo de exibição de mensagens.
 
- [Referência de Spy + +](../debugger/spy-increment-reference.md) inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência do Spy + +](../debugger/spy-increment-reference.md) Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

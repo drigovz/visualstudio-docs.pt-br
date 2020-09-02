@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumThreads | Microsoft Docs
+title: 'IDebugProgram2:: EnumThreads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c91e5b743f10dcc9c5ffc45591db74dec6c9aa06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550091"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera uma lista dos threads que estão executando no programa.  
+Recupera uma lista dos threads que estão em execução no programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,12 +40,12 @@ int EnumThreads( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppEnum`  
- [out] Retorna um [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) objeto que contém uma lista dos threads.  
+ fora Retorna um objeto [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) que contém uma lista de threads.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

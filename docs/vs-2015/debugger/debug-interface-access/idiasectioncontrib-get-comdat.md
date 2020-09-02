@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddf479a2da74803916b7afc1945eb610d6b0e668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576627"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera um sinalizador que indica se a seção é um registro COMDAT.  
@@ -35,13 +35,13 @@ HRESULT get_comdat ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se a seção COMDAT registro; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se a seção é um registro COMDAT; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um registro COMDAT é um registro de comuns objeto COFF (File Format) que torna as funções empacotadas visíveis para o vinculador.  
+ Um registro COMDAT é um registro COFF (formato de arquivo de objeto comum) que torna as funções empacotadas visíveis para o vinculador.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

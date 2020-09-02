@@ -11,34 +11,34 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa9c87065130e0b539e49c314648fa5b3944089b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572329"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Representa uma consulta para os atributos personalizados em um método ou tipo.  
+Representa uma consulta de atributos personalizados em um método ou tipo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCustomAttributeQuery : IUnknown  
 ```  
   
 ## <a name="methods"></a>Métodos  
- Essa interface implementa os métodos a seguir:  
+ Essa interface implementa os seguintes métodos:  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Recupera um atributo personalizado, dado seu nome.|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina o especificado no atributo personalizado é definido.|  
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Recupera um atributo personalizado de acordo com seu nome.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina se o atributo personalizado especificado está definido.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Sh.h  
+ Cabeçalho: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

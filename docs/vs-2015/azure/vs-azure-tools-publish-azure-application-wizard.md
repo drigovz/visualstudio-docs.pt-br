@@ -1,5 +1,5 @@
 ---
-title: Usando o assistente Publicar aplicativo do Azure | Microsoft Docs
+title: Usando o assistente para publicar Aplicativo Azure | Microsoft Docs
 description: Saiba como definir as diversas configurações no Assistente Publicar Aplicativo do Azure do Visual Studio
 author: ghogen
 manager: jillfra
@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62831265"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso do Assistente Publicar Aplicativo do Azure do Visual Studio
@@ -83,7 +83,7 @@ A conta de armazenamento do Azure armazena o pacote para a implantação do apli
 
 **Atualização da implantação — configurações**: essa caixa de diálogo é usada para especificar ainda mais como que você quer que as funções sejam atualizadas. Se você escolher **Atualização incremental**, cada instância do aplicativo será atualizada uma após a outra, de modo que o aplicativo estará sempre disponível. Se você escolher **Atualização simultânea**, todas as instâncias do aplicativo serão atualizadas ao mesmo tempo. A atualização simultânea é mais rápida, mas o serviço pode não estar disponível durante o processo de atualização.
 
-![Configurações de implantação](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
+![Configurações da implantação](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
 **Habilitar o IntelliTrace**: especifique se deseja habilitar o IntelliTrace. Com o IntelliTrace, você pode registrar em log informações extensas de depuração sobre uma instância de função quando ela é executada no Azure. Se precisa encontrar a causa de um problema, você pode usar os logs do IntelliTrace para examinar seu código no Visual Studio como se ele estivesse em execução no Azure. Para saber mais sobre como usar o IntelliTrace, confira [Depuração de um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
@@ -116,10 +116,10 @@ Depois de definir todas as configurações da implantação do projeto, selecion
 
 - [Saiba como usar o Visual Studio para publicar um serviço de nuvem do Azure](./vs-azure-tools-publishing-a-cloud-service.md)
 
-- [Depuração de um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
+- [Depurando um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
 
 - [Testar o desempenho de um serviço de nuvem do Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configuração do Diagnóstico para os serviços de nuvem do Azure e máquinas virtuais](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configurando o diagnóstico para os serviços de nuvem do Azure e máquinas virtuais](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [O que é o Application Insights?](/azure/application-insights/app-insights-overview)

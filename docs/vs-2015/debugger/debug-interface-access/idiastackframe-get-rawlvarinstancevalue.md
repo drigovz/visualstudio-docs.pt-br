@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ff78c38ad077084b3dea9c96e3251ffddb2206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573008"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esse método recupera o valor da variável local especificada como bytes brutos.  
@@ -38,19 +38,19 @@ HRESULT get_rawLVarInstanceValue(
   
 #### <a name="parameters"></a>Parâmetros  
  `pInstance`  
- [in] Um `IDiaLVarInstance` que representa uma instância de variável local para obter o valor do objeto.  
+ no Um `IDiaLVarInstance` objeto que representa uma instância da variável local para o qual obter o valor.  
   
  `cbDataMax`  
- [in] Número máximo de bytes no buffer apontado por `pbData`. Isso pode ter um máximo de 8 bytes (`sizeof(ULONGLONG)`).  
+ no Número máximo de bytes no buffer apontado por `pbData` . Pode ser um máximo de 8 bytes ( `sizeof(ULONGLONG)` ).  
   
  `pcbData`  
- [out] Retorna o número real de bytes armazenados no buffer.  
+ fora Retorna o número real de bytes armazenados no buffer.  
   
  `pbData`  
- [out] Um buffer a ser preenchida com dados. Esse não pode ser `NULL`.  
+ fora Um buffer a ser preenchido com dados. Esse não pode ser `NULL`.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

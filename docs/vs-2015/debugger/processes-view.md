@@ -14,51 +14,51 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d8b9c04d1cabd44418c70725ef331c9c4b5ec67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580487"
 ---
 # <a name="processes-view"></a>Exibição de processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A tela processos exibe uma árvore de todos os processos ativos no sistema. O nome do módulo e a ID de processo são mostrados. Se você quiser examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo, ou eles são designados "processos do sistema".  
+A exibição processos exibe uma árvore de todos os processos ativos em seu sistema. A ID do processo e o nome do módulo são mostrados. Use a exibição processos se desejar examinar um processo de sistema específico, que geralmente corresponde a um programa em execução. Os processos são identificados por nomes de módulo ou são designados como "processos do sistema".  
   
- Microsoft Windows dá suporte a vários processos. Cada processo pode ter um ou mais threads e cada thread pode ter um ou mais associadas janelas de nível superior. Cada janela de nível superior pode possuir uma série de janelas. Um + símbolo indica que um nível é recolhido. Modo de exibição recolhido consiste em uma linha por processo. Clique o símbolo para expandir o nível +.  
+ O Microsoft Windows dá suporte a vários processos. Cada processo pode ter um ou mais threads, e cada thread pode ter uma ou mais janelas de nível superior associadas. Cada janela de nível superior pode possuir uma série de janelas. Um símbolo + indica que um nível está recolhido. A exibição recolhida consiste em uma linha por processo. Clique no símbolo + para expandir o nível.  
   
- Se você quiser examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo, ou eles são designados "processos do sistema". Para localizar um processo, recolher a árvore e a lista de pesquisa.  
+ Use a exibição processos se desejar examinar um processo de sistema específico, que geralmente corresponde a um programa em execução. Os processos são identificados por nomes de módulo ou são designados como "processos do sistema". Para localizar um processo, recolha a árvore e pesquise na lista.  
   
 ## <a name="procedures"></a>Procedimentos  
   
-#### <a name="to-open-the-processes-view"></a>Para abrir a exibição de processos  
+#### <a name="to-open-the-processes-view"></a>Para abrir o modo de exibição de processos  
   
-1. Dos **Spy** menu, escolha **processos**.  
+1. No menu do **Spy** , escolha **processos**.  
   
-   ![Spy&#43; &#43; exibição de processos](../debugger/media/spy-processes.png "Spy + + _Processes")  
+   ![Exibição de processos do Spy&#43;&#43; ](../debugger/media/spy-processes.png "Spy + + _Processes")  
    Exibição de processos do Spy + +  
   
-   A figura acima mostra a exibição de processos conosco de processo e thread expandidos.  
+   A figura acima mostra a exibição de processos com nós de processo e thread expandidos.  
   
 ### <a name="in-this-section"></a>Nesta seção  
- [Procurando por um processo na exibição de processos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explica como localizar um processo específico na exibição de processos.  
+ [Pesquisando um processo na exibição de processos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Explica como localizar um processo específico no modo de exibição de processos.  
   
- [Exibindo propriedades do processo](../debugger/how-to-display-process-properties.md)  
+ [Exibindo Propriedades do processo](../debugger/how-to-display-process-properties.md)  
  Explica como mostrar mais informações sobre uma mensagem.  
   
 ### <a name="related-sections"></a>Seções relacionadas  
  [Exibições do Spy++](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
+ Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.  
   
  [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
+ Apresenta a ferramenta Spy + + e explica como ela pode ser usada.  
   
- [Caixa de diálogo Pesquisa de Processos](../debugger/process-search-dialog-box.md)  
- Usado para localizar o nó para um determinado processo na exibição de processos.  
+ [Caixa de diálogo Pesquisa de Processo](../debugger/process-search-dialog-box.md)  
+ Usado para localizar o nó de um processo específico na exibição de processos.  
   
  [Caixa de diálogo Propriedades do Processo](../debugger/process-properties-dialog-box.md)  
- Exibe as propriedades de um processo selecionado na exibição de processos.  
+ Exibe as propriedades de um processo selecionado na exibição processos.  
   
- [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência de Spy++](../debugger/spy-increment-reference.md)  
+ Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

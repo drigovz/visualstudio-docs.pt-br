@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45362c9456b99d6cec0af01dcb29844d02363a27
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569754"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Permite que a anexação automática para os mecanismos de depuração especificada.  
+Habilita a anexação automática para os mecanismos de depuração especificados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,22 +46,22 @@ int EnableAutoAttach(
   
 #### <a name="parameters"></a>Parâmetros  
  `rgguidSpecificEngines`  
- [in] Matriz de GUIDs para cada mecanismo de depuração para marcar como anexação automática.  
+ no Matriz de GUIDs para cada mecanismo de depuração a ser marcado como anexação automática.  
   
  `celtSpecificEngines`  
- [in] O número de mecanismos especificado em `rgguidSpecificEngines`.  
+ no O número de mecanismos especificado em `rgguidSpecificEngines` .  
   
  `pszStartPageUrl`  
- [in] A URL inicial para usar ao anexar a automática.  
+ no A URL inicial a ser usada ao anexar automaticamente.  
   
  `pbstrSessionID`  
- [out] ID da sessão que foi anexado automaticamente.  
+ fora ID da sessão que foi anexada automaticamente.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica se a fábrica de classes auto-attach não foi registrada.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED` , que indica que a fábrica de classes de anexação automática não foi registrada.  
   
 ## <a name="remarks"></a>Comentários  
- Quando um programa associado com a URL especificada é iniciado, os mecanismos de depuração especificada são iniciados automaticamente e anexados.  
+ Quando um programa associado à URL especificada é iniciado, os mecanismos de depuração especificados são iniciados e anexados automaticamente.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;assembly&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento assembly (implantação do ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929072"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (implantação do ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;elemento assembly (implantação do ClickOnce)
 O elemento de nível superior para o manifesto de implantação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -36,16 +36,16 @@ O elemento de nível superior para o manifesto de implantação.
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos e atributos
- O `assembly` elemento é o elemento raiz e é necessário. O primeiro elemento independente deve ser um `assemblyIdentity` elemento. Os elementos do manifesto devem estar nos seguintes namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, e `http://www.w3.org/2000/09/xmldsig#`. Elementos filho do assembly também devem ser nesses namespaces, por herança ou marcação.
+ O `assembly` elemento é o elemento raiz e é necessário. Seu primeiro elemento contido deve ser um `assemblyIdentity` elemento. Os elementos do manifesto devem estar nos seguintes namespaces: `urn:schemas-microsoft-com:asm.v1` , `urn:schemas-microsoft-com:asm.v2` e `http://www.w3.org/2000/09/xmldsig#` . Os elementos filho do assembly também devem estar nesses namespaces, por herança ou por marcação.
 
- O `assembly` elemento tem o seguinte atributo.
+ O `assembly` elemento tem o atributo a seguir.
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`manifestVersion`|Necessário. Esse atributo deve ser definido como `1.0`.|
+|`manifestVersion`|Obrigatórios. Esse atributo deve ser definido como `1.0` .|
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir ilustra uma `assembly` elemento em um manifesto de implantação para um aplicativo implantado usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.
+ O exemplo de código a seguir ilustra um `assembly` elemento em um manifesto de implantação para um aplicativo implantado usando o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Este exemplo de código faz parte de um exemplo maior fornecido para o tópico [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
 ```xml
 <asmv1:assembly
@@ -62,6 +62,6 @@ O elemento de nível superior para o manifesto de implantação.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [Elemento \<assembly>](../deployment/assembly-element-clickonce-application.md)
+- [\<assembly> elementos](../deployment/assembly-element-clickonce-application.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815044"
 ---
 # <a name="work-with-visio-documents"></a>Trabalhar com documentos do Visio
@@ -26,13 +26,13 @@ ms.locfileid: "62815044"
 
 |Tarefa|Procedimento|
 |----------|---------------|
-|Crie um documento do Visio em branco ou um novo documento com base em um modelo existente de Visio, estêncil ou as documento.|[Como: Criar novos documentos do Visio programaticamente](../vsto/how-to-programmatically-create-new-visio-documents.md)|
-|Abrir um documento existente do Visio e especificar as opções de leitura/gravação, somente leitura e encaixada.|[Como: Abrir documentos do Visio de forma programática](../vsto/how-to-programmatically-open-visio-documents.md)|
-|Feche o documento ativo do Visio.|[Como: Fechar documentos do Visio programaticamente](../vsto/how-to-programmatically-close-visio-documents.md)|
-|Salve um documento com o mesmo nome ou um novo nome.|[Como: Salvar documentos do Visio programaticamente](../vsto/how-to-programmatically-save-visio-documents.md)|
-|Imprima um documento inteiro ou uma página especificada.|[Como: Imprimir documentos do Visio de forma programática](../vsto/how-to-programmatically-print-visio-documents.md)|
+|Crie um documento do Visio em branco ou um novo documento com base em um modelo, estêncil ou documento existente do Visio.|[Como criar programaticamente novos documentos do Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)|
+|Abra um documento existente do Visio e especifique as opções de leitura/gravação, somente leitura e encaixada.|[Como: abrir documentos do Visio programaticamente](../vsto/how-to-programmatically-open-visio-documents.md)|
+|Feche o documento ativo do Visio.|[Como: fechar documentos do Visio por meio de programação](../vsto/how-to-programmatically-close-visio-documents.md)|
+|Salve um documento com o mesmo nome ou com um novo nome.|[Como: salvar documentos do Visio programaticamente](../vsto/how-to-programmatically-save-visio-documents.md)|
+|Imprimir um documento inteiro ou uma página especificada.|[Como: imprimir documentos do Visio programaticamente](../vsto/how-to-programmatically-print-visio-documents.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
-- [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

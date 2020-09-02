@@ -1,5 +1,5 @@
 ---
-title: '&lt;ponto de entrada&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento EntryPoint (aplicativo ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,16 +19,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928620"
 ---
-# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;ponto de entrada&gt; elemento (aplicativo ClickOnce)
-Identifica o assembly que deve ser executado quando isso [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é executado em um computador cliente.
+# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt;elemento EntryPoint (aplicativo ClickOnce)
+Identifica o assembly que deve ser executado quando este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é executado em um computador cliente.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPoint
@@ -50,52 +50,52 @@ Identifica o assembly que deve ser executado quando isso [!INCLUDE[ndptecclick](
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos e atributos
- O `entryPoint` elemento é necessário e está no `urn:schemas-microsoft-com:asm.v2` namespace. Pode haver apenas um `entryPoint` elemento definido em um manifesto de aplicativo.
+ O `entryPoint` elemento é obrigatório e está no `urn:schemas-microsoft-com:asm.v2` namespace. Pode haver apenas um `entryPoint` elemento definido em um manifesto do aplicativo.
 
- O `entryPoint` elemento tem o seguinte atributo.
+ O `entryPoint` elemento tem o atributo a seguir.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`name`|Opcional. Esse valor não é usado pelo .NET Framework.|
 
- `entryPoint` tem os seguintes elementos.
+ `entryPoint` tem os elementos a seguir.
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Necessário. A função de `assemblyIdentity` e seus atributos é definida no [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).
+ Obrigatórios. A função de `assemblyIdentity` e seus atributos são definidos no [ \<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-application.md).
 
- O `processorArchitecture` atributo desse elemento e o `processorArchitecture` atributo definido no `assemblyIdentity` em outro lugar no aplicativo de manifesto deve corresponder.
+ O `processorArchitecture` atributo desse elemento e o `processorArchitecture` atributo definido em `assemblyIdentity` outro lugar no manifesto do aplicativo devem corresponder.
 
 ## <a name="commandline"></a>commandLine
- Necessário. Deve ser um filho de `entryPoint` elemento. Ele não tem elementos filho e tem os seguintes atributos.
+ Obrigatórios. Deve ser um filho do `entryPoint` elemento. Ele não tem nenhum elemento filho e tem os atributos a seguir.
 
 | Atributo | Descrição |
 |--------------| - |
-| `file` | Necessário. Uma referência local para o assembly de inicialização para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Esse valor não pode conter barra (/) ou barra invertida (\\) separadores de caminho. |
-| `parameters` | Necessário. Descreve a ação a ser tomada com o ponto de entrada. O único valor válido é `run`; se uma cadeia de caracteres em branco for fornecida, `run` será assumido. |
+| `file` | Obrigatórios. Uma referência local para o assembly de inicialização do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este valor não pode conter barra invertida (/) ou separadores de caminho de barra invertida ( \\ ). |
+| `parameters` | Obrigatórios. Descreve a ação a ser tomada com o ponto de entrada. O único valor válido é `run` ; se uma cadeia de caracteres em branco for fornecida, `run` será assumida. |
 
 ## <a name="customhostrequired"></a>customHostRequired
- Opcional. Se for incluído, especifica que essa implantação contém um componente que será implantado dentro de um host personalizado e não é um aplicativo autônomo.
+ Opcional. Se incluído, especifica que essa implantação contém um componente que será implantado dentro de um host personalizado e não é um aplicativo autônomo.
 
- Se esse elemento estiver presente, o `assemblyIdentity` e `commandLine` elementos não também devem estar presentes. Se elas forem, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] irá gerar um erro de validação durante a instalação.
+ Se esse elemento estiver presente, os `assemblyIdentity` `commandLine` elementos e também não deverão estar presentes. Se estiverem, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o gerará um erro de validação durante a instalação.
 
- Este elemento tem atributos não e nenhum filho.
+ Este elemento não tem atributos nem filhos.
 
 ## <a name="customux"></a>customUX
- Opcional. Especifica que o aplicativo está instalado e mantido por um instalador personalizado e não cria uma entrada de menu Iniciar, atalhos ou adicionar ou remover programas de entrada.
+ Opcional. Especifica que o aplicativo está instalado e mantido por um instalador personalizado e não cria uma entrada de menu Iniciar, atalho ou adicionar ou remover programas.
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
 ```
 
- Um aplicativo que inclui o elemento customUX deve fornecer um instalador personalizado que usa o <xref:System.Deployment.Application.InPlaceHostingManager> classe para executar operações de instalação. Um aplicativo com este elemento não pode ser instalado clicando duas vezes em seu manifesto ou setup.exe bootstrapper de pré-requisito. O instalador personalizado pode criar entradas do menu Iniciar, atalhos e entradas de adicionar ou remover programas. Se o instalador personalizado não cria uma entrada de adicionar ou remover programas, ele deve armazenar o identificador de assinatura fornecido pelo <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propriedade e habilite o usuário para desinstalar o aplicativo mais tarde, chamando o <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> método. Para obter mais informações, confira [Passo a passo: Como criar um instalador personalizado para um aplicativo ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
+ Um aplicativo que inclui o elemento customUX deve fornecer um instalador personalizado que usa a <xref:System.Deployment.Application.InPlaceHostingManager> classe para executar operações de instalação. Um aplicativo com este elemento não pode ser instalado clicando duas vezes em seu manifesto ou setup.exe bootstrapper de pré-requisito. O instalador personalizado pode criar entradas de menu Iniciar, atalhos e adicionar ou remover entradas de programas. Se o instalador personalizado não criar uma entrada adicionar ou remover programas, ele deverá armazenar o identificador de assinatura fornecido pela <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propriedade e permitir que o usuário desinstale o aplicativo mais tarde chamando o <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> método. Para obter mais informações, consulte [Walkthrough: Criando um instalador personalizado para um aplicativo ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
 
 ## <a name="remarks"></a>Comentários
- Este elemento identifica o assembly e ponto de entrada para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
+ Esse elemento identifica o assembly e o ponto de entrada para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
 
- Não é possível usar `commandLine` para passar parâmetros para seu aplicativo em tempo de execução. Você pode acessar parâmetros de cadeia de caracteres de consulta para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação a partir do aplicativo <xref:System.AppDomain>. Para obter mais informações, confira [Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
+ Você não pode usar `commandLine` o para passar parâmetros para o seu aplicativo em tempo de execução. Você pode acessar parâmetros de cadeia de caracteres de consulta para uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação a partir do aplicativo <xref:System.AppDomain> . Para obter mais informações, consulte [como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir ilustra uma `entryPoint` elemento em um manifesto de aplicativo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md) tópico.
+ O exemplo de código a seguir ilustra um `entryPoint` elemento em um manifesto de aplicativo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este exemplo de código é parte de um exemplo maior fornecido para o tópico [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md) .
 
 ```xml
 <!-- Identify the main code entrypoint. -->
@@ -110,5 +110,5 @@ Identifica o assembly que deve ser executado quando isso [!INCLUDE[ndptecclick](
   </entryPoint>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

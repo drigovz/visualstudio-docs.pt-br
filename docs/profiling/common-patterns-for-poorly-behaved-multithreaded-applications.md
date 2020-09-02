@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62788825"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
@@ -36,13 +36,13 @@ Para obter mais informações, veja a seção "Começar com o problema" no artig
 
 ## <a name="uneven-workload-distribution"></a>Distribuição de carga de trabalho não uniforme
 
-![Carga de trabalho desigual](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Carga de trabalho irregular](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
 
 Quando ocorre uma distribuição irregular de trabalho entre vários threads paralelos em um aplicativo, um padrão típico de serrilha é exibido à medida que cada thread conclui seu trabalho, conforme mostrado na ilustração anterior. O Visualizador de Simultaneidade geralmente mostra horários de início muito próximos para cada thread simultâneo. No entanto, esses threads normalmente terminam de maneira irregular em vez de terminar simultaneamente. Esse padrão indica uma distribuição irregular de trabalho entre um grupo de threads paralelos, o que pode levar à redução do desempenho. A melhor abordagem para esse problema é reavaliar o algoritmo pelo qual o trabalho foi dividido entre os threads paralelos.
 
 Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU como um uma etapa decrescente gradual na utilização da CPU.
 
-![Carga de trabalho desigual](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Carga de trabalho irregular](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
 ## <a name="oversubscription"></a>Excesso de assinatura
 
@@ -58,16 +58,16 @@ Você deve considerar o seguinte ao avaliar esse problema:
 
 ## <a name="inefficient-io"></a>E/S ineficiente
 
-![Ineficiente Eu&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
+![I&#47;O ineficiente](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 O uso excessivo ou incorreto de E/S é uma causa comum de ineficiências em aplicativos. Considere a ilustração anterior. O Perfil da Linha de Tempo Visível mostra que 44% do tempo de thread visível é consumido por E/S. A linha de tempo mostra grandes quantidades de E/S, que indica que o aplicativo analisado é frequentemente bloqueado por E/S. Para ver detalhes sobre os tipos de E/S e onde o seu programa está bloqueado, amplie as regiões problemáticas, examine o Perfil da Linha de Tempo Visível e, em seguida, clique em um bloco de E/S específico para ver as pilhas de chamadas atuais.
 
 ## <a name="lock-convoys"></a>Comboios de bloqueio
 
-![Comboios de bloqueio](../profiling/media/lock_convoys.png "Lock_Convoys")
+![Bloquear comboios](../profiling/media/lock_convoys.png "Lock_Convoys")
 
 Comboios de bloqueio ocorrem quando o aplicativo adquire bloqueios em ordem de chegada e quando a taxa de chegada no bloqueio é maior que a taxa de aquisição. A combinação dessas duas condições faz com que as solicitações do bloqueio comecem a fazer backup. Uma maneira de combater esse problema é usar bloqueios “desleais” ou bloqueios que dão acesso ao primeiro thread para localizá-los em estados desbloqueados. A ilustração anterior mostra o comportamento desse comboio. Para resolver o problema, experimente reduzir a contenção dos objetos de sincronização e usar bloqueios desleais.
 
 ## <a name="see-also"></a>Confira também
 
-[Exibição de linhas](../profiling/threads-view-parallel-performance.md)
+[Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

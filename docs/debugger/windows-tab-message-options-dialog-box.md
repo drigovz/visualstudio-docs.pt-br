@@ -1,5 +1,5 @@
 ---
-title: Guia do Windows, a caixa de diálogo de opções de mensagem | Microsoft Docs
+title: Guia Windows, caixa de diálogo opções de mensagem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929180"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Guia Janelas, Caixa de diálogo Opções da Mensagem
-Use o **Windows** guia para definir o escopo das mensagens listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.
+Use a guia **Windows** para definir o escopo das mensagens listadas no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir a [caixa de diálogo opções de mensagem](../debugger/message-options-dialog-box.md), escolha **registrar mensagens** no menu do **Spy** .
 
- As seguintes configurações estão disponíveis sobre o **Windows** guia:
+ As configurações a seguir estão disponíveis na guia **Windows** :
 
- **Ferramenta descobridora** a ferramenta de arrastar e soltar, usada para selecionar uma janela.
+ **Ferramenta de localizador** A ferramenta arrastar e soltar usada para selecionar uma janela.
 
- **Ocultar Spy + +** remove a janela principal do Spy + + e deixa o **MessageOptions** caixa de diálogo visível na parte superior de seus outros aplicativos.
+ **Ocultar Spy + +** Remove a janela principal do Spy + + e deixa a caixa de diálogo **mensagemoptions** visível sobre seus outros aplicativos.
 
- **Pai da janela** exibir mensagens para a janela selecionada e sua janela pai imediato.
+ **Janela pai** Exibir mensagens para a janela selecionada e sua janela pai imediata.
 
- **Janela filho** aninhados de exibir mensagens para a janela selecionada e todas as janelas filho, incluindo janelas filho.
+ **Janela filho** Exibir mensagens para a janela selecionada e todas as suas janelas filhas, incluindo janelas filho aninhadas.
 
- **Windows de mesmo Thread** exibir mensagens para a janela selecionada e todas as outras janelas de propriedade pelo mesmo thread.
+ **Janelas do mesmo thread** Exibe mensagens para a janela selecionada e todas as outras janelas pertencentes ao mesmo thread.
 
- **Windows do mesmo processo** exibir mensagens para a janela selecionada e todas as outras janelas de propriedade pelo mesmo processo.
+ **Janelas do mesmo processo** Exibe mensagens para a janela selecionada e todas as outras janelas pertencentes ao mesmo processo.
 
- **Todos os Windows no sistema** exibir mensagens para todas as janelas.
+ **Todas as janelas no sistema** Exibir mensagens para todas as janelas.
 
- **Salve as configurações padrões** salvar as configurações anteriores para novas janelas de fluxo de mensagem. Essas configurações também são salvas ao sair Spy + +.
+ **Salvar configurações como padrão** Salve as configurações anteriores para novas janelas de fluxo de mensagens. Essas configurações também são salvas ao sair do Spy + +.

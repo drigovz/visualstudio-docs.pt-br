@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823473"
 ---
 # <a name="utilization-navigator"></a>Navegador da utilização
 É possível usar o Navegador da Utilização na Visualização Simultânea para selecionar um intervalo de tempo em um rastreamento. A Visualização Simultânea mostra o uso dos núcleos da CPU pelo processe de destino ao longo do tempo. Assim, fica mais fácil examinar os padrões de uso da CPU e comparar os dados de uso e dados de outras exibições. O Navegador da Utilização aparece na parte superior de cada exibição da Visualização Simultânea. A ilustração a seguir mostra o Navegador da Utilização.
 
- ![Navegador de utilização mostrando o prazo selecionado](../profiling/media/cvutilizationnavigator.png "Navegador cvutilization") Navegador de utilização e um período de tempo selecionado
+ ![Navegador de utilização mostrando o período de tempo selecionado](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator") Navegador de utilização e um intervalo de tempo selecionado
 
  Na ilustração, o intervalo selecionado é definido por um retângulo vermelho, conhecido como *elevador*.
 

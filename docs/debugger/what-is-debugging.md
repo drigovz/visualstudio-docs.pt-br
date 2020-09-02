@@ -12,46 +12,46 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901208"
 ---
 # <a name="what-is-debugging"></a>O que é depuração?
 
-O depurador do Visual Studio é uma ferramenta poderosa. Antes de mostrarmos como usá-lo, queremos falar sobre alguns termos como *depurador*, *depuração*, e *modo de depuração*. Dessa forma, quando falamos posteriormente encontrando e corrigindo bugs, vamos falar sobre a mesma coisa.
+O depurador do Visual Studio é uma ferramenta poderosa. Antes de mostrarmos como usá-lo, queremos falar sobre alguns termos, como *depurador*, *depuração*e modo de *depuração*. Dessa forma, quando falarmos mais tarde sobre a localização e a correção de bugs, falaremos sobre a mesma coisa.
 
-## <a name="debugger-vs-debugging"></a>O depurador vs. a depuração
+## <a name="debugger-vs-debugging"></a>Depurador x depuração
 
-O termo *depuração* pode significar muitas coisas diferentes, mas mais literalmente, significa a remoção de bugs do seu código. Agora, há muitas maneiras de fazer isso. Por exemplo, você pode depurar examinando seu código procurando por erros de digitação ou usando um analisador de código. Você pode depurar o código usando um criador de perfil de desempenho. Ou, você pode depurar usando um *depurador*.
+O termo *depuração* pode significar muitas coisas diferentes, mas, na maioria das vezes, significa remover bugs do seu código. Agora, há muitas maneiras de fazer isso. Por exemplo, você pode depurar verificando seu código procurando erros de grafia ou usando um analisador de código. Você pode depurar o código usando um criador de perfil de desempenho. Ou você pode depurar usando um *depurador*.
 
-Um depurador é uma ferramenta de desenvolvedor muito especializados que anexa ao seu aplicativo em execução e permite que você inspecione o seu código. Na documentação de depuração para o Visual Studio, isso normalmente é o que queremos dizer quando dizemos "depuração".
+Um depurador é uma ferramenta de desenvolvedor muito especializada que é anexada ao seu aplicativo em execução e permite que você inspecione seu código. Na documentação de depuração do Visual Studio, isso normalmente é o que queremos dizer quando dizemos "Debugging".
 
-## <a name="debug-mode-vs-running-your-app"></a>Modo versus que executam seu aplicativo de depuração
+## <a name="debug-mode-vs-running-your-app"></a>Modo de depuração vs. executando seu aplicativo
 
-Quando você executa seu aplicativo no Visual Studio pela primeira vez, você pode iniciá-lo pressionando o botão de seta verde ![iniciar depuração](../debugger/media/dbg-tour-start-debugging.png "iniciar depuração") na barra de ferramentas (ou **F5**). Por padrão, o **depurar** valor aparece na lista suspensa à esquerda. Se você for novo no Visual Studio, isso pode deixar a impressão que depurar seu aplicativo tem algo a ver com a execução de seu aplicativo, que ele faz – mas eles são basicamente duas tarefas muito diferentes.
+Ao executar seu aplicativo no Visual Studio pela primeira vez, você pode iniciá-lo pressionando o botão de seta verde ![iniciar a depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas (ou **F5**). Por padrão, o valor de **depuração** é exibido na lista suspensa à esquerda. Se você for novo no Visual Studio, isso poderá deixar a impressão de que a depuração do seu aplicativo tem algo a ver com a execução do seu aplicativo – o que ele faz – mas essas são fundamentalmente duas tarefas muito diferentes.
 
-![Selecione uma compilação de depuração](../debugger/media/what-is-debugging-debug-build.png)
+![Selecionar uma compilação de depuração](../debugger/media/what-is-debugging-debug-build.png)
 
-Um **depurar** valor indica que uma configuração de depuração. Quando você inicia o aplicativo (pressione a seta verde ou **F5**) em uma configuração de depuração, você deve iniciar o aplicativo no *modo de depuração*, que significa que você estiver executando seu aplicativo com o depurador anexado. Isso permite que um conjunto completo de funcionalidades de depuração que você pode usar para ajudar a encontrar bugs em seu aplicativo.
+Um valor de **depuração** indica uma configuração de depuração. Ao iniciar o aplicativo (pressione a seta verde ou **F5**) em uma configuração de depuração, você inicia o aplicativo no *modo de depuração*, o que significa que você está executando seu aplicativo com um depurador anexado. Isso permite um conjunto completo de recursos de depuração que você pode usar para ajudar a encontrar bugs em seu aplicativo.
 
-Se você tiver um projeto aberto, escolha o seletor de lista suspensa onde diz **Debug** e escolha **versão** em vez disso.
+Se você tiver um projeto aberto, escolha o seletor suspenso onde ele diz **depurar** e escolha **liberar** , em vez disso.
 
-![Selecione uma compilação de versão](../debugger/media/what-is-debugging-release-build.png)
+![Selecionar uma compilação de versão](../debugger/media/what-is-debugging-release-build.png)
 
-Quando você alternar essa configuração, você alterar seu projeto de uma configuração de depuração para uma configuração de versão. Projetos do Visual Studio tem a versão separada e configurações para o seu programa de depuração. Você compila a versão de depuração para depuração e a versão de lançamento para a distribuição da versão final. Um build de versão é otimizado para desempenho, mas um build de depuração é melhor para depuração.
+Ao alternar essa configuração, você altera o projeto de uma configuração de depuração para uma configuração de versão. Os projetos do Visual Studio têm configurações separadas de versão e depuração para seu programa. Você cria a versão de depuração para depuração e a versão de lançamento para a distribuição de versão final. Uma compilação de versão é otimizada para desempenho, mas uma compilação de depuração é melhor para depuração.
 
 ## <a name="when-to-use-a-debugger"></a>Quando usar um depurador
 
-O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus aplicativos. No entanto, o contexto é king e é importante aproveitar todas as ferramentas em seu disposable para ajudar a eliminar rapidamente bugs ou erros. Às vezes, o direito de "tool" pode ser uma prática de codificação melhores. Aprendendo quando usar o depurador vs. de alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência.
+O depurador é uma ferramenta essencial para localizar e corrigir bugs em seus aplicativos. No entanto, o contexto é King, e é importante aproveitar todas as ferramentas à sua descartar para ajudá-lo a eliminar rapidamente bugs ou erros. Às vezes, a "ferramenta" certa pode ser uma prática de codificação melhor. Ao aprender quando usar o depurador versus alguma outra ferramenta, você também aprenderá a usar o depurador com mais eficiência.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. Mostrar os artigos a seguir C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
+Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender a depurar com o Visual Studio e a escrever código com menos bugs. Os artigos a seguir mostram exemplos de código em C#, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
+> [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
