@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667915"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um *modelo de texto T4* é uma mistura de blocos de texto e lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa em [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. No Visual Studio 2015 atualização 2 e posterior, você pode usar C# os recursos da versão 6,0 em diretivas de modelos T4. O arquivo gerado pode ser um texto de qualquer tipo, como uma página da Web, um arquivo de recurso ou um código-fonte do programa em qualquer idioma.
+No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um *modelo de texto T4* é uma mistura de blocos de texto e lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa no [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] . No Visual Studio 2015 atualização 2 e posterior, você pode usar os recursos da versão 6,0 do C# em diretivas de modelos T4. O arquivo gerado pode ser um texto de qualquer tipo, como uma página da Web, um arquivo de recurso ou um código-fonte do programa em qualquer idioma.
 
  Há dois tipos de modelos de texto T4:
 
@@ -51,14 +51,14 @@ string webResponseText = new MyTemplate().TransformText();
 
 ```
 
- Seu aplicativo pode ser executado em um computador que não tem o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado.
+ Seu aplicativo pode ser executado em um computador que não tenha o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado.
 
  Para criar um modelo de tempo de execução, adicione um arquivo de **modelo de texto pré-processado** ao seu projeto. Como alternativa, você pode adicionar um arquivo de texto sem formatação e definir sua propriedade de **ferramenta personalizada** como **TextTemplatingFilePreprocessor**.
 
  Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
- **Modelos de texto T4 de tempo de design** são executados em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir parte do código-fonte e outros recursos do seu aplicativo.
-Normalmente, você usaria vários modelos que lêem os dados em um único arquivo de entrada ou banco de dado, e geramos alguns dos seus `.cs`, `.vb` ou outros arquivos de origem. Cada modelo gera um arquivo. Eles são executados dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].
+ **Modelos de texto T4 de tempo de design** são executados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir parte do código-fonte e outros recursos do seu aplicativo.
+Normalmente, você usaria vários modelos que lêem os dados em um único arquivo de entrada ou banco de dado, além de gerar alguns dos seus `.cs` , `.vb` ou outros arquivos de origem. Cada modelo gera um arquivo. Eles são executados dentro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .
 
  Por exemplo, os dados de entrada podem ser um arquivo XML de dados de configuração. Sempre que você editar o arquivo XML durante o desenvolvimento, os modelos de texto regenerarão parte do código do aplicativo. Um dos modelos pode ser semelhante ao exemplo a seguir:
 
@@ -75,7 +75,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 
 ```
 
- Dependendo dos valores no arquivo XML, o arquivo `.cs` gerado seria semelhante ao seguinte:
+ Dependendo dos valores no arquivo XML, o `.cs` arquivo gerado seria semelhante ao seguinte:
 
 ```
 namespace Fabrikam.FirstJob
@@ -102,7 +102,7 @@ namespace Fabrikam.FirstJob
 
  [Geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Gerar código e outros recursos de um modelo permite que você atualize seu aplicativo atualizando o modelo.
 
- [Geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md) Se você instalou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] visualização e o SDK de modelagem, poderá garantir que o software gerado fique atualizado com as alterações no modelo.
+ [Geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md) Se você tiver instalado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o SDK de visualização e modelagem, poderá garantir que o software gerado fique atualizado com as alterações no modelo.
 
  [Escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md) A sintaxe de um arquivo de modelo de texto.
 
@@ -114,5 +114,5 @@ namespace Fabrikam.FirstJob
 
  [Personalizando a transformação de texto T4](../modeling/customizing-t4-text-transformation.md) Como escrever processadores de diretriz e hosts de modelagem personalizados para suas próprias fontes de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md) que [gera código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Você não tem permissão para inspecionar o processo de&#39;identidade de s | Microsoft Docs'
+title: 'Erro: você não tem permissão para inspecionar o processo&#39;s identidade | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157515"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: Você não tem permissão para inspecionar o processo de&#39;identidade de s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: você não tem permissão para inspecionar a identidade do processo&#39;s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você não tem permissão para inspecionar a identidade do processo. Isto pode ocorrer devido à configuração do sistema.  
@@ -44,7 +44,7 @@ Você não tem permissão para inspecionar a identidade do processo. Isto pode o
   
 6. Na lista **Serviços**, clique com o botão direito do mouse em **Serviços de Terminal** e escolha **Propriedades**.  
   
-7. No **propriedades de serviços de Terminal** janela, vá para o **gerais** guia e defina **tipo de inicialização** para **Manual**.  
+7. Na janela **Propriedades dos serviços de terminal** , vá para a guia **geral** e defina **tipo de inicialização** como **manual**.  
   
 8. Clique em **OK**.  
   
@@ -66,5 +66,5 @@ Você não tem permissão para inspecionar a identidade do processo. Isto pode o
   
 5. Clique em **OK**.  
   
-## <a name="see-also"></a>Consulte também  
- [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Consulte Também  
+ [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)

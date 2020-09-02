@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1542435d38f4b528c52ecc648ad6ef8f79378bd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552548"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o número de bytes de código do prólogo no bloco.  
+Recupera o número de bytes do código de prólogo no bloco.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_lengthProlog ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o número de bytes de código de prólogo.  
+ fora Retorna o número de bytes do código de prólogo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O código de prólogo é uma sequência de instruções que preserva os registros, define o estado da CPU e estabelece a pilha da função.  
+ O código de prólogo é uma sequência de instruções que preserva os registros, define o estado da CPU e estabelece a pilha para a função.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

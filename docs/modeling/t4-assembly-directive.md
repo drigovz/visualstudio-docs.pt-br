@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591886"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 
-Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly` carrega um assembly para que seu código de modelo possa usar seus tipos. O efeito é semelhante à adição de uma referência de assembly em um projeto do Visual Studio.
+Em um modelo de texto de tempo de design do Visual Studio, a `assembly` diretiva carrega um assembly para que seu código de modelo possa usar seus tipos. O efeito é semelhante à adição de uma referência de assembly em um projeto do Visual Studio.
 
  Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -36,7 +36,7 @@ Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly`
 
 - O caminho absoluto do assembly
 
-  Você pode usar a sintaxe `$(variableName)` para referenciar variáveis do Visual Studio, como `$(SolutionDir)`, e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
+  Você pode usar a `$(variableName)` sintaxe para referenciar variáveis do Visual Studio, como `$(SolutionDir)` e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly`
 
 - O assembly que contém seu DSL.
 
-## <a name="msbuild"></a>Usando propriedades de projeto no MSBuild e no Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Usando propriedades de projeto no MSBuild e no Visual Studio
  Macros do Visual Studio como $ (SolutionDir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
 
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:
@@ -88,6 +88,6 @@ Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly`
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Diretiva de inclusão T4](../modeling/t4-include-directive.md)

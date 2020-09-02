@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157585"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
@@ -25,7 +25,7 @@ ms.locfileid: "68157585"
 
 O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 namespace diagnostic;  
@@ -35,14 +35,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Classes  
   
-|Nome|DESCRIÇÃO|  
+|Name|Descrição|  
 |----------|-----------------|  
 |[Classe marker_series](../profiling/marker-series-class.md)|Representa um canal serial de eventos gerados por um único provedor.|  
 |[Classe span](../profiling/span-class.md)|Define uma fase do aplicativo.|  
   
 ### <a name="enumerations"></a>Enumerações  
   
-|Nome|DESCRIÇÃO|  
+|Name|Descrição|  
 |----------|-----------------|  
 |[Enumeração marker_importance](../profiling/marker-importance-enumeration.md)|Representa o nível de importância de um marcador da Visualização Simultânea.|  
   
@@ -51,5 +51,5 @@ namespace diagnostic;
   
  **Namespace:** Simultaneidade  
   
-## <a name="see-also"></a>Veja também  
- [Namespace de simultaneidade (Visualização Simultânea)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+## <a name="see-also"></a>Consulte Também  
+ [Namespace de simultaneidade (Visualizador de Simultaneidade)](../profiling/concurrency-namespace-concurrency-visualizer.md)

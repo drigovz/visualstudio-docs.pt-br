@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: 'IDebugStackFrame2:: GetPhysicalStackRange | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 99fc1e635691fa290d0a8e4506ef55d677e9ff78
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547644"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém uma representação depende do computador do intervalo de endereços físicos associados a um quadro de pilha.  
+Obtém uma representação dependente de computador do intervalo de endereços físicos associados a um quadro de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -42,18 +42,18 @@ int GetPhysicalStackRange ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `paddrMin`  
- [out] Retorna o endereço físico mais baixo associado deste quadro de pilhas.  
+ fora Retorna o endereço físico mais baixo associado a esse quadro de pilha.  
   
  `paddrMax`  
- [out] Retorna o endereço físico mais alto associado deste quadro de pilhas.  
+ fora Retorna o endereço físico mais alto associado a esse quadro de pilhas.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- As informações retornadas por esse método são usadas pelo Gerenciador de depuração de sessão (SDM) para classificar os registros de ativação.  
+ As informações retornadas por esse método são usadas pelo SDM (Gerenciador de depuração de sessão) para classificar os quadros de pilha.  
   
- Supõe-se que a pilha de chamadas cresce para baixo, ou seja, para que novos registros de ativação são adicionados a cada vez mais inferiores endereços de memória. Uma arquitetura de tempo de execução deve fornecer os intervalos de pilha física que correspondem a essa suposição.  
+ Supõe-se que a pilha de chamadas cresce, ou seja, que novos quadros de pilha são adicionados em endereços de memória cada vez mais baixos. Uma arquitetura de tempo de execução deve fornecer intervalos de pilha física que correspondam a essa suposição.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

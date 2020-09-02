@@ -1,5 +1,5 @@
 ---
-title: Extrair refatoração do métodoC#() | Microsoft Docs
+title: Extrair refatoração de método (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e6d5e7913a7433fd4b30da490f33dd614c3e2b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667541"
 ---
 # <a name="extract-method-refactoring-c"></a>Refatoração Extrair Método (C#)
@@ -82,7 +82,7 @@ O **método Extract** é uma operação de refatoração que fornece uma maneira
 
      Você também pode clicar com o botão direito do mouse no código selecionado, apontar para **refatorar**e clicar em **extrair método** para exibir a caixa de diálogo **extrair método** .
 
-4. Especifique um nome para o novo método, como `CircleArea`, na caixa **nome do novo método** .
+4. Especifique um nome para o novo método, como `CircleArea` , na caixa **nome do novo método** .
 
      Uma visualização da nova assinatura de método é exibida na **assinatura do método de visualização**.
 
@@ -95,7 +95,7 @@ O **método Extract** é uma operação de refatoração que fornece uma maneira
  Se a classe for um tipo parcial, o **método Extract** gerará o novo método imediatamente após o membro de origem. O **método Extract** determina a assinatura do novo método, criando um método estático quando nenhum dado de instância é referenciado pelo código no novo método.
 
 ## <a name="generic-type-parameters"></a>Parâmetros de tipo genérico
- Quando você extrai um método que tem um parâmetro de tipo genérico irrestrito, o código gerado não adiciona o modificador de `ref` a esse parâmetro, a menos que um valor seja atribuído a ele. Se o método extraído der suporte a tipos de referência como argumento de tipo genérico, você deverá adicionar manualmente o modificador de `ref` ao parâmetro na assinatura do método.
+ Quando você extrai um método que tem um parâmetro de tipo genérico irrestrito, o código gerado não adiciona o `ref` modificador a esse parâmetro, a menos que um valor seja atribuído a ele. Se o método extraído der suporte a tipos de referência como argumento de tipo genérico, você deverá adicionar manualmente o `ref` modificador ao parâmetro na assinatura do método.
 
 ## <a name="anonymous-methods"></a>Métodos anônimos
  Se você tentar extrair parte de um método anônimo que inclui uma referência a uma variável local que é declarada ou referenciada fora do método anônimo, o Visual Studio avisará sobre possíveis alterações de semântica.
@@ -124,5 +124,5 @@ class Program
 
  Para contornar essa situação, faça as variáveis locais que são usadas nos campos de método anônimo da classe.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)

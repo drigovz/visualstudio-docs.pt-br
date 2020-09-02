@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552925"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
@@ -61,7 +61,7 @@ Essa biblioteca pode ser usada no C e C++ com facilidade.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Adicione o decorador `__declspec(allocator)` a qualquer função no gerenciador de heap personalizado que retorna um ponteiro para a memória de heap recém-alocada.  Esse decorador permite que a ferramenta identifique corretamente o tipo da memória que está sendo retornado.  Por exemplo: 
+1. Adicione o decorador `__declspec(allocator)` a qualquer função no gerenciador de heap personalizado que retorna um ponteiro para a memória de heap recém-alocada.  Esse decorador permite que a ferramenta identifique corretamente o tipo da memória que está sendo retornado.  Por exemplo:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -156,5 +156,5 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
 ## <a name="see-also"></a>Confira também
-[Primeira olhada nas ferramentas](../profiling/profiling-feature-tour.md)
-de criação de perfil[Uso de memória](../profiling/memory-usage.md)
+[Primeiro, veja as ferramentas](../profiling/profiling-feature-tour.md) 
+ de criação de perfil [Uso de memória](../profiling/memory-usage.md)

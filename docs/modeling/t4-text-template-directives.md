@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591821"
 ---
 # <a name="t4-text-template-directives"></a>Diretivas de modelo de texto T4
@@ -47,7 +47,7 @@ As diretivas são normalmente os primeiros elementos de um arquivo de modelo ou 
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
-[Diretiva de saída T4](../modeling/t4-output-directive.md)
+[T4 Diretiva de saída](../modeling/t4-output-directive.md)
 
 ```
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>

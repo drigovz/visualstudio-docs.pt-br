@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646813"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
@@ -53,7 +53,7 @@ Usando parâmetros em seus modelos, você pode substituir os valores das princip
 > [!NOTE]
 > Parâmetros de modelo diferenciam maiúsculas de minúsculas.
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |`clrversion`|Versão atual do CLR (Common Language Runtime).|
 |`GUID [1-10]`|Um GUID usado para substituir o GUID do projeto em um arquivo de projeto. É possível especificar até 10 GUIDs exclusivos (por exemplo, `guid1)`.|
@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Veja também
- [Personalizando modelos](../ide/customizing-project-and-item-templates.md)
+## <a name="see-also"></a>Consulte Também
+ [Personalização de modelos](../ide/customizing-project-and-item-templates.md)

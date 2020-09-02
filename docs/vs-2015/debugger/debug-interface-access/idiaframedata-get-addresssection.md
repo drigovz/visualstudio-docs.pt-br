@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5e8f35961813ab39a114d3dd733f415056eb9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197523"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera a parte da seção do endereço de código para o quadro.  
+Recupera a parte da seção do endereço do código para o quadro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna a parte da seção do endereço de código para o quadro.  
+ fora Retorna a parte da seção do endereço do código do quadro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

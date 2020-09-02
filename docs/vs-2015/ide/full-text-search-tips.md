@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac683ff6e7079478d5b4e642918df4e281a53f0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645646"
 ---
 # <a name="full-text-search-tips"></a>Dicas de pesquisa de texto completo
@@ -32,9 +32,9 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
 ### <a name="general-guidelines"></a>Diretrizes gerais
  A tabela a seguir inclui algumas regras básicas e diretrizes para o desenvolvimento de consultas de pesquisa na Ajuda.
 
-|Sintaxe|DESCRIÇÃO|
+|Sintaxe|Descrição|
 |------------|-----------------|
-|Diferenciação de maiúsculas e minúsculas|As pesquisas não diferenciam maiúsculas de minúsculas. Desenvolva seus critérios de pesquisa usando caracteres em maiúsculas ou em minúsculas. Por exemplo, "OLE" e "ole" retornam os mesmos resultados.|
+|Diferenciar maiúsculas de minúsculas|As pesquisas não diferenciam maiúsculas de minúsculas. Desenvolva seus critérios de pesquisa usando caracteres em maiúsculas ou em minúsculas. Por exemplo, "OLE" e "ole" retornam os mesmos resultados.|
 |Combinações de caracteres|Não é possível pesquisar somente por letras individuais (a–z) ou números (0–9). Se você tentar pesquisar determinadas palavras reservadas, como "and", "from" e "with", elas serão ignoradas. Para obter mais informações, consulte "Palavras ignoradas em pesquisas (palavras irrelevantes)" posteriormente neste tópico.|
 |Ordem de avaliação|As consultas de pesquisa são avaliadas da esquerda para a direita.|
 
@@ -49,7 +49,7 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
  É possível restringir ainda mais os resultados da pesquisa usando operadores de pesquisa avançada. A Ajuda inclui três categorias que você pode usar para filtrar os resultados de uma pesquisa de texto completo: Título, Código e Palavra-chave. Para obter mais informações, consulte [Operadores de pesquisa avançada em expressões de pesquisa](../ide/advanced-search-operators-in-search-expressions.md).
 
 ### <a name="ranking-of-search-results"></a>Classificação de resultados da pesquisa
- O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a classificar resultados da pesquisa superiores ou inferiores na lista de resultados. No geral:
+ O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a classificar resultados da pesquisa superiores ou inferiores na lista de resultados. Em geral:
 
 1. O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.
 
@@ -60,5 +60,5 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
 ### <a name="words-ignored-in-searches-stop-words"></a>Palavras ignoradas em pesquisas (palavras irrelevantes)
  Palavras ou números que ocorrem com frequência, chamados de palavras irrelevantes, são automaticamente ignorados durante uma pesquisa de texto completo. Por exemplo, se você pesquisar a frase "passar por", os resultados da pesquisa exibirão tópicos que contêm a palavra "passar", mas não "por".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Localizar](../ide/locate-information.md) [operadores lógicos de informações em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md)

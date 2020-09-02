@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591808"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 
-Nos modelos de texto do Visual Studio, a diretiva `output` é usada para definir a extensão de nome de arquivo e a codificação do arquivo transformado.
+Nos modelos de texto do Visual Studio, a `output` diretiva é usada para definir a extensão de nome de arquivo e a codificação do arquivo transformado.
 
  Por exemplo, se o seu projeto do Visual Studio inclui um arquivo de modelo chamado **MyTemplate.tt** que contém a seguinte diretiva:
 
@@ -68,6 +68,6 @@ Nos modelos de texto do Visual Studio, a diretiva `output` é usada para definir
 
  `utf-32`
 
- `0` (padrão do sistema)
+ `0` (Padrão do sistema)
 
  Em geral, é possível usar a cadeia de caracteres do WebName ou o número da CodePage de qualquer uma das codificações retornadas por <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

@@ -1,5 +1,5 @@
 ---
-title: Extrair refatoração de interfaceC#() | Microsoft Docs
+title: Extrair refatoração de interface (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667561"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refatoração Extrair Interface (C#)
@@ -34,7 +34,7 @@ A interface de extração é uma operação de refatoração que fornece uma man
 
 ### <a name="to-use-extract-interface"></a>Para usar a interface de extração
 
-1. Crie um aplicativo de console chamado `ExtractInterface` e, em seguida, substitua `Program` pelo código a seguir
+1. Crie um aplicativo de console chamado `ExtractInterface` e substitua `Program` pelo código a seguir
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -75,5 +75,5 @@ A interface de extração é uma operação de refatoração que fornece uma man
 
  Quando você invoca a interface de extração em uma classe ou em uma estrutura, a lista bases e interfaces é modificada para incluir o novo nome da interface. Quando você invoca a interface de extração em uma interface, a lista bases e interfaces não é modificada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)

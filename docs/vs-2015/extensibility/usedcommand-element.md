@@ -12,18 +12,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186374"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Permite que um VSPackage acessar um comando que é definido em outro arquivo. VSCT. Por exemplo, se o VSPackage usa o padrão **cópia** comando, que é definido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell, você pode adicionar o comando a um menu ou barra de ferramentas sem ter que implementá-lo novamente.  
+Permite que um VSPackage acesse um comando que é definido em outro arquivo. vsct. Por exemplo, se o VSPackage usar o comando de **cópia** padrão, que é definido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell, você poderá adicionar o comando a um menu ou barra de ferramentas sem implementá-lo novamente.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <UsedCommand guid="guidMyCommandGroup" id="MyCommand" />  
@@ -36,9 +36,9 @@ Permite que um VSPackage acessar um comando que é definido em outro arquivo. VS
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. O GUID do par de ID de GUID que identifica o comando.|  
-|id|Necessário. A ID do par de ID de GUID que identifica o comando.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Obrigatórios. O GUID do par de IDs de GUID que identifica o comando.|  
+|id|Obrigatórios. A ID do par de IDs de GUID que identifica o comando.|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -50,10 +50,10 @@ Permite que um VSPackage acessar um comando que é definido em outro arquivo. VS
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Agrupa elementos de UsedCommand e outros agrupamentos UsedCommands.|  
+|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Agrupa elementos UsedCommand e outros agrupamentos do UsedCommands.|  
   
 ## <a name="remarks"></a>Comentários  
- Adicionando um comando para o `<UsedCommands>` informa a um VSPackage elemento, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente que o VSPackage exige que o comando. Você deve adicionar um `<UsedCommand>` elemento para qualquer comando que o pacote requer que não pode ser incluído em todas as versões e as configurações do Visual Studio. Por exemplo, se seu pacote chama um comando que é específico para o Visual C++, o comando não estará disponível para usuários do Visual Web Developer, a menos que você incluir um `<UsedCommand>` elemento para o comando.  
+ Ao adicionar um comando ao `<UsedCommands>` elemento, um VSPackage informa ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente que o VSPackage requer o comando. Você deve adicionar um `<UsedCommand>` elemento para qualquer comando que seu pacote exigir que talvez não seja incluído em todas as versões e configurações do Visual Studio. Por exemplo, se o pacote chamar um comando específico para Visual C++, o comando não estará disponível para os usuários do Visual Web Developer, a menos que você inclua um `<UsedCommand>` elemento para o comando.  
   
 ## <a name="example"></a>Exemplo  
   
@@ -65,6 +65,6 @@ Permite que um VSPackage acessar um comando que é definido em outro arquivo. VS
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Elemento UsedCommands](../extensibility/usedcommands-element.md)   
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

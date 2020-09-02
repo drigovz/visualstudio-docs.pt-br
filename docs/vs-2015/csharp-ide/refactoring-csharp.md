@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0415222645dce2f65e91b5b1c55a5a118cc26697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667508"
 ---
 # <a name="refactoring-c"></a>Refatoração (C#)
@@ -30,7 +30,7 @@ ms.locfileid: "72667508"
 
 A refatoração é o processo de aperfeiçoar seu código depois que ele é escrito alterando a estrutura interna do código sem alterar o comportamento externo do código.
 
- O C# Visual fornece os seguintes comandos de refatoração no menu **refatoração** :
+ O Visual C# fornece os seguintes comandos de refatoração no menu **refatoração** :
 
 - [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)
 
@@ -58,7 +58,7 @@ A refatoração é o processo de aperfeiçoar seu código depois que ele é escr
 
  Por padrão, se você executar uma operação de refatoração sem Visualizar as alterações de referência e um erro de compilação for detectado em seu programa, o ambiente de desenvolvimento exibirá essa caixa de diálogo de aviso.
 
- Se você executar uma operação de refatoração que tenha **as alterações de referência de visualização** habilitadas e um erro de compilação for detectado em seu programa, o ambiente de desenvolvimento exibirá a seguinte mensagem de aviso na parte inferior das alterações de **Visualização** , em vez de exibir a caixa de diálogo de **aviso de refatoração** :
+ Se você executar uma operação de refatoração que tenha **as alterações de referência de visualização** habilitadas e um erro de compilação for detectado em seu programa, o ambiente de desenvolvimento exibirá a seguinte mensagem de aviso na parte inferior da caixa de diálogo de alterações de **Visualização** , em vez de exibir a caixa de diálogo de **aviso de refatoração** :
 
  **Seu projeto ou uma de suas dependências não são compiladas no momento. As referências não podem ser atualizadas.**
 
@@ -67,9 +67,9 @@ A refatoração é o processo de aperfeiçoar seu código depois que ele é escr
 ## <a name="error-tolerant-refactoring-and-verification-results"></a>Refatoração e resultados de verificação tolerantes a erros
  A refatoração é tolerante a erros. Em outras palavras, você pode executar uma refatoração em um projeto que não pode ser compilado. No entanto, nesses casos, o processo de refatoração pode não atualizar as referências ambíguas corretamente.
 
- A caixa de diálogo **resultados da verificação** poderá notificá-lo se o mecanismo de refatoração detectar erros de compilação ou descobrir que uma operação de refatoração inadvertidamente faz com que uma referência de código se vincule a algo diferente do que estava originalmente ligado ( problema de revinculação).
+ A caixa de diálogo **resultados da verificação** poderá notificá-lo se o mecanismo de refatoração detectar erros de compilação ou descobrir que uma operação de refatoração inadvertidamente faz com que uma referência de código se vincule a algo diferente do que estava originalmente ligado (reassociando o problema).
 
- Para ativar o recurso de resultados de verificação, no menu **ferramentas** , clique em **Opções**. Na caixa de diálogo **Opções** , expanda **Editor de texto**e, **C#** em seguida, expanda. Clique em **avançado** e marque a caixa de seleção **verificar resultados de refatoração** .
+ Para ativar o recurso de resultados de verificação, no menu **ferramentas** , clique em **Opções**. Na caixa de diálogo **Opções** , expanda **Editor de texto**e expanda **C#**. Clique em **avançado** e marque a caixa de seleção **verificar resultados de refatoração** .
 
  A caixa de diálogo **resultados da verificação** distingue a diferença entre dois tipos de problemas de reassociação.
 
@@ -87,7 +87,7 @@ class Example
 }
 ```
 
- Se você usar refatoração para renomear `a` para `b`, essa caixa de diálogo será exibida. A referência à variável renomeada `a` agora é associada ao parâmetro que é passado para o Construtor em vez de associação ao campo.
+ Se você usar refatoração para renomear `a` `b` , essa caixa de diálogo será exibida. A referência à variável renomeada `a` agora é associada ao parâmetro que é passado para o Construtor em vez de associação ao campo.
 
 ### <a name="references-whose-definition-will-now-become-the-renamed-symbol"></a>Referências cuja definição agora se tornará o símbolo renomeado
  Esse tipo de problema de reassociação ocorre quando uma referência que anteriormente não fazia referência ao símbolo renomeado agora faz referência ao símbolo renomeado. Por exemplo, considere o seguinte código:
@@ -104,7 +104,7 @@ class Example
 }
 ```
 
- Se você usar refatoração para renomear `OtherMethod` para `Method`, essa caixa de diálogo será exibida. A referência em `Main` agora se refere ao método sobrecarregado que aceita um parâmetro `int` em vez do método sobrecarregado que aceita um parâmetro `object`.
+ Se você usar refatoração para renomear `OtherMethod` `Method` , essa caixa de diálogo será exibida. A referência em `Main` agora refere-se ao método sobrecarregado que aceita um `int` parâmetro em vez do método sobrecarregado que aceita um `object` parâmetro.
 
-## <a name="see-also"></a>Consulte também
- [Usando o ambiente de desenvolvimento do Visual C# Studio para](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) [saber como C# : restaurar trechos de refatoração](../ide/how-to-restore-csharp-refactoring-snippets.md)
+## <a name="see-also"></a>Consulte Também
+ [Usando o ambiente de desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) [como: restaurar trechos de refatoração de c#](../ide/how-to-restore-csharp-refactoring-snippets.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ded136da4d601fd7c11a10c21aac0c90864bc0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158126"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica o tipo de memória para acessar.  
+Especifica o tipo de memória a ser acessado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,23 +38,23 @@ enum MemoryTypeEnum {
   
 #### <a name="parameters"></a>Parâmetros  
  `MemTypeCode`  
- Acessos de memória somente código.  
+ Acessa apenas a memória de código.  
   
  `MemTypeData`  
- Memória de dados ou a pilha de acessos.  
+ Acessa dados ou pilha de memória.  
   
  `MemTypeStack`  
- Acessos apenas memória de pilha.  
+ Acessa apenas a memória de pilha.  
   
  `MemTypeAny`  
  Acessa qualquer tipo de memória.  
   
 ## <a name="remarks"></a>Comentários  
- Os valores nesta enumeração são passados para o [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) método para limitar o acesso a diferentes tipos de memória.  
+ Os valores nessa enumeração são passados para o método [IDiaStackWalkHelper:: readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) para limitar o acesso a diferentes tipos de memória.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145471"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Noções básicas sobre valores de dados de instrumentação
@@ -98,6 +98,6 @@ O método de criação de perfil de *instrumentação* dos [!INCLUDE[vsprvs](../
   
  100 * Função exclusiva do aplicativo / Sessão inclusiva do aplicativo  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
+ [Como escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592380"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
@@ -21,7 +21,7 @@ O editor de XML fornece recursos do IntelliSense completos comparáveis a outros
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense em um documento XSD
 
-Depois que um esquema estiver associado ao documento, você obterá uma lista suspensa dos elementos esperados sempre que digitar `"<"` ou clicar no botão **exibir uma lista de membros do objeto** na barra de ferramentas do editor de XML.
+Depois que um esquema é associado ao documento, você obtém uma lista suspensa de elementos esperados sempre que digitar `"<"` ou clicar no botão **exibir uma lista de membros de objetos** na barra de ferramentas do editor de XML.
 
 ![Botão exibir lista de membros do objeto](media/display-object-member-list-xml.png)
 
@@ -87,31 +87,31 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 ## <a name="brace-matching"></a>Correspondência de chaves
 
-O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl**+ **]** ) para saltar de uma chave para a chave correspondente.
+O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl** + **]**) para saltar de uma chave para a chave correspondente.
 
 O editor XML faz isso para os seguintes itens:
 
-- Início correspondente e marcas de fim.
+- Correspondência de marcas inicial e de fim.
 
-- Qualquer par de colchetes angulares "\<" ou ">".
+- Qualquer par de colchetes angulares "\<" or ">".
 
 - Início e fim de comentários.
 
-- Início e final de instrução de processamento.
+- Início e fim de instruções de processamento.
 
 - Início e fim de blocos CDATA.
 
-- Início e fim de declarações de DTD.
+- Início e fim de declarações DTD.
 
-- Abrindo e fechando aspas em atributos.
+- Aspas de abertura e fechamento em abributos.
 
 ## <a name="modify-the-intellisense-options"></a>Modificar as opções do IntelliSense
 
-Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas **ferramentas** > configurações de **Opções** .
+Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando as configurações de opções de **ferramentas**  >  **Options** .
 
 A seção **inserção automática** da página **diversos** controla o seguinte comportamento:
 
-|{1&gt;Nome&lt;1}|Descrição|
+|Name|Descrição|
 |-|-----------------|
 |Fechar marcas|Insere fechar marcas para novos elementos.|
 |Citações de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
@@ -125,7 +125,7 @@ A seção **inserção automática** da página **diversos** controla o seguinte
 
 3. Faça as alterações na seção **inserção automática** e clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Usando o IntelliSense](../ide/using-intellisense.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667821"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Criar elementos e relações em modelos UML
@@ -26,14 +26,14 @@ No código do programa para uma extensão do Visual Studio, você pode criar e e
 ## <a name="create-a-model-element"></a>Criar um elemento de modelo
 
 ### <a name="namespace-imports"></a>Importações de namespace
- Você deve incluir as instruções de `using` a seguir.
+ Você deve incluir as instruções a seguir `using` .
 
  Os métodos de criação são definidos como métodos de extensão neste namespace:
 
  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`
 
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Obter o proprietário do elemento que você deseja criar
- Um modelo forma uma única árvore, para que cada item tenha um proprietário, com exceção da raiz do modelo. A raiz do modelo é do tipo `IModel`, que é um tipo de `IPackage`.
+ Um modelo forma uma única árvore, para que cada item tenha um proprietário, com exceção da raiz do modelo. A raiz do modelo é do tipo `IModel` , que é um tipo de `IPackage` .
 
  Se você estiver criando um elemento que será exibido em um diagrama específico, por exemplo, o diagrama atual do usuário, você geralmente deverá criá-lo no pacote vinculado a esse diagrama. Por exemplo:
 
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>Invocar o método Create no proprietário
- O nome do método está no formato: `Create`*propriedade* `()`. Por exemplo:
+ O nome do método é do formato: de `Create` *Propriedade* `()` . Por exemplo:
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -60,7 +60,7 @@ IUseCase usecase1 = linkedPackage.CreateUseCase();
 
  Alguns tipos têm métodos de criação mais complexos, especialmente em diagramas de sequência. Consulte [Editar diagramas de sequência UML usando a API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
- Para alguns tipos de elemento, você pode alterar o proprietário de um elemento durante seu tempo de vida, usando `SetOwner(newOwner)`.
+ Para alguns tipos de elemento, você pode alterar o proprietário de um elemento durante seu tempo de vida, usando `SetOwner(newOwner)` .
 
 ### <a name="set-the-name-and-other-properties"></a>Definir o nome e outras propriedades
 
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";
     ```
 
-4. Defina as propriedades de cada extremidade da relação. Sempre há dois `MemberEnds`. Por exemplo:
+4. Defina as propriedades de cada extremidade da relação. Sempre há dois `MemberEnds` . Por exemplo:
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name
@@ -129,5 +129,5 @@ anElement.Delete();
 
 - Todas as formas que a representavam em um diagrama também são excluídas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md)

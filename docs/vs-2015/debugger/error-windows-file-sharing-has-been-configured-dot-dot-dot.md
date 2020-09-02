@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
+title: 'Erro: o compartilhamento de arquivos do Windows foi configurado... | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157510"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: O compartilhamento de arquivos do Windows foi configurado...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Erro: o compartilhamento de arquivos do Windows foi configurado...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O compartilhamento de arquivos do Windows foi configurado de forma que você se conectará ao computador remoto usando um nome do usuário diferente. Isso é incompatível com a depuração remota  
@@ -38,7 +38,7 @@ O compartilhamento de arquivos do Windows foi configurado de forma que você se 
   
 1. Faça logon em seu computador local, o computador do qual você está depurando, usando o outro nome da conta.  
   
-     —ou—  
+     — ou —  
   
      . Desconecte-se do computador remoto e reconfigure o compartilhamento de arquivos para se conectar ao outro computador usando seu nome de conta:  
   

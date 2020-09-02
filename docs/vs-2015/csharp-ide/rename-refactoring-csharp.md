@@ -1,5 +1,5 @@
 ---
-title: Renomear refatoração (C#) | Microsoft Docs
+title: Refatoração de renomeação (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0db7696268e5e3d24d005fbf35a08b330f2dc849
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667474"
 ---
 # <a name="rename-refactoring-c"></a>Refatoração Renomear (C#)
@@ -49,9 +49,9 @@ ms.locfileid: "72667474"
 |Campo|Altera a declaração e os usos do campo para o novo nome.|
 |Variável local|Altera a declaração e os usos da variável para o novo nome.|
 |Método|Altera o nome do método e todas as referências a esse método para o novo nome. **Observação:**  Quando você renomeia um método de extensão, a operação de renomeação é propagada para todas as instâncias do método que estão no escopo, independentemente de o método de extensão estar sendo usado como um método estático ou um método de instância. Para obter mais informações, consulte [Métodos de extensão](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|
-|espaço de nome|Altera o nome do namespace para o novo nome na declaração, todas as instruções `using` e nomes totalmente qualificados. **Observação:**  Ao renomear um namespace, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também atualiza a propriedade de **namespace padrão** na página do **aplicativo** do **Designer de projeto**. Essa propriedade não pode ser redefinida selecionando **desfazer** no menu **Editar** . Para redefinir o valor da propriedade de **namespace padrão** , você deve modificar a propriedade no **Designer de projeto**. Para obter mais informações, consulte [página do aplicativo](../ide/reference/application-page-project-designer-csharp.md).|
-|propriedade|Altera a declaração e os usos da propriedade para o novo nome.|
-|Digite|Altera todas as declarações e todos os usos do tipo para o novo nome, incluindo construtores e destruidores. Para tipos parciais, a operação de renomeação será propagada para todas as partes.|
+|Namespace|Altera o nome do namespace para o novo nome na declaração, em todas as `using` instruções e em nomes totalmente qualificados. **Observação:**  Ao renomear um namespace, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o também atualiza a propriedade de **namespace padrão** na página do **aplicativo** do **Designer de projeto**. Essa propriedade não pode ser redefinida selecionando **desfazer** no menu **Editar** . Para redefinir o valor da propriedade de **namespace padrão** , você deve modificar a propriedade no **Designer de projeto**. Para obter mais informações, consulte [página do aplicativo](../ide/reference/application-page-project-designer-csharp.md).|
+|Propriedade|Altera a declaração e os usos da propriedade para o novo nome.|
+|Tipo|Altera todas as declarações e todos os usos do tipo para o novo nome, incluindo construtores e destruidores. Para tipos parciais, a operação de renomeação será propagada para todas as partes.|
 
 #### <a name="to-rename-an-identifier"></a>Para renomear um identificador
 
@@ -76,13 +76,13 @@ ms.locfileid: "72667474"
     }
     ```
 
-2. Coloque o cursor em `MethodB`, na declaração do método ou na chamada do método.
+2. Coloque o cursor sobre `MethodB` , na declaração do método ou na chamada do método.
 
 3. No menu **refatorar** , selecione **renomear**. A caixa de diálogo **renomear** é exibida.
 
      Você também pode clicar com o botão direito do mouse no cursor, apontar para **refatorar** no menu de contexto e clicar em **renomear** para exibir a caixa de diálogo **renomear** .
 
-4. No campo **novo nome** , digite `MethodC`.
+4. No campo **novo nome** , digite `MethodC` .
 
 5. Marque a caixa de seleção **Pesquisar em comentários** .
 
@@ -113,35 +113,35 @@ ms.locfileid: "72667474"
     }
     ```
 
-2. Na declaração de `MethodB`, digite ou Backspace sobre o identificador do método. Um prompt de marca inteligente aparecerá abaixo desse identificador.
+2. Na declaração para `MethodB` , digite ou Backspace sobre o identificador do método. Um prompt de marca inteligente aparecerá abaixo desse identificador.
 
     > [!NOTE]
     > Você só pode invocar refatoração de renomeação usando marcas inteligentes na declaração de um identificador.
 
 3. Digite o atalho de teclado SHIFT + ALT + F10 e, em seguida, pressione a seta para baixo para exibir o menu de marca inteligente.
 
-     \- ou -
+     - ou -
 
      Mova o ponteiro do mouse sobre o prompt de marca inteligente para exibir a marca inteligente. Em seguida, mova o ponteiro do mouse sobre a marca inteligente e clique na seta para baixo para exibir o menu de marca inteligente.
 
-4. Selecione o item de menu **Renomear ' \<identifer1 > ' para ' \<identifier2 > '** para invocar a refatoração de renomeação sem uma visualização das alterações em seu código. Todas as referências a **\<identifer1 >** serão atualizadas automaticamente para **\<identifier2 >** .
+4. Selecione o item de menu **Renomear ' \<identifer1> ' para ' \<identifier2> '** para invocar refatoração de renomeação sem uma visualização das alterações em seu código. Todas as referências a **\<identifer1>** serão automaticamente atualizadas para o **\<identifier2>** .
 
-     \- ou -
+     - ou -
 
      Selecione o item de menu **renomear com visualização** para invocar a refatoração de renomeação com uma visualização das alterações em seu código. A caixa de diálogo **Visualizar alterações** será exibida.
 
 ## <a name="remarks"></a>Comentários
 
 ## <a name="renaming-implemented-or-overridden-members"></a>Renomeando Membros implementados ou substituídos
- Quando você **renomeia** um membro que implementa/substitui ou é implementado/substituído por membros em outros tipos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] exibe uma caixa de diálogo que diz que a operação de renomeação causará atualizações em cascata. Se você clicar em **continuar**, o mecanismo de refatoração localizará e renomeará recursivamente todos os membros em tipos base e derivados que têm implementa/substitui as relações com o membro que está sendo renomeado.
+ Quando você **renomeia** um membro que implementa/substitui ou é implementado/substituído por membros em outros tipos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o exibe uma caixa de diálogo que diz que a operação de renomeação causará atualizações em cascata. Se você clicar em **continuar**, o mecanismo de refatoração localizará e renomeará recursivamente todos os membros em tipos base e derivados que têm implementa/substitui as relações com o membro que está sendo renomeado.
 
  O exemplo de código a seguir contém membros com relações de implementações/substituições.
 
  [!code-csharp[CsUsingCsIDERefactor#1](../snippets/csharp/VS_Snippets_VBCSharp/CsUsingCsIDERefactor/CS/Class1.cs#1)]
 
- No exemplo anterior, renomear `C.Method()` também renomeará `Ibase.Method()` porque `C.Method()` implementa `Ibase.Method()`. Em seguida, o mecanismo de refatoração vê recursivamente que `Ibase.Method()` é implementada por `Derived.Method()` e renomeia `Derived.Method()`. O mecanismo de refatoração não renomeia `Base.Method()`, porque `Derived.Method()` não substitui `Base.Method()`. O mecanismo de refatoração é interrompido aqui, a menos que você tenha a opção renomear **sobrecargas** marcada na caixa de diálogo **renomear** .
+ No exemplo anterior, `C.Method()` renomear também renomeações `Ibase.Method()` porque `C.Method()` implementa `Ibase.Method()` . Em seguida, o mecanismo de refatoração vê recursivamente que `Ibase.Method()` é implementado pelo `Derived.Method()` e renomeia `Derived.Method()` . O mecanismo de refatoração não é renomeado `Base.Method()` porque não `Derived.Method()` substitui `Base.Method()` . O mecanismo de refatoração é interrompido aqui, a menos que você tenha a opção renomear **sobrecargas** marcada na caixa de diálogo **renomear** .
 
- Se a opção **Renomear sobrecargas** estiver marcada, o mecanismo de refatoração renomeará `Derived.Method(int i)` porque ele sobrecarrega `Derived.Method()`, `Base.Method(int i)` porque ele é substituído por `Derived.Method(int i)` e `Base.Method()` porque é uma sobrecarga de `Base.Method(int i)`.
+ Se a opção **Renomear sobrecargas** estiver marcada, o mecanismo de refatoração renomeará `Derived.Method(int i)` porque ele `Derived.Method()` é sobrecarregado, `Base.Method(int i)` pois é substituído por `Derived.Method(int i)` e `Base.Method()` porque é uma sobrecarga de `Base.Method(int i)` .
 
 > [!NOTE]
 > Quando você renomeia um membro que foi definido em um assembly referenciado, uma caixa de diálogo explica que a renomeação causará erros de compilação.
@@ -154,7 +154,7 @@ var a = new { ID = 1};
 var b = new { ID = 2};
 ```
 
- No código anterior, renomear `ID` mudará `ID` em ambas as instruções porque elas têm o mesmo tipo anônimo subjacente.
+ No código anterior, a renomeação `ID` será alterada `ID` em ambas as instruções porque elas têm o mesmo tipo anônimo subjacente.
 
 ```csharp
 var companyIDs =
@@ -166,7 +166,7 @@ var orderIDs =
     select new { ID = o.ID, Item = o.Name};
 ```
 
- No código anterior, renomear `ID` renomeará apenas uma instância de `ID` porque `companyIDs` e `orderIDs` não têm as mesmas propriedades.
+ No código anterior, renomear `ID` irá renomear apenas uma instância de `ID` porque `companyIDs` e `orderIDs` não terá as mesmas propriedades.
 
-## <a name="see-also"></a>Consulte também
- [Tipos anônimos](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b) [deC#refatoração ()](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>Consulte Também
+ [Tipos anônimos](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b) [de refatoração (C#)](../csharp-ide/refactoring-csharp.md)

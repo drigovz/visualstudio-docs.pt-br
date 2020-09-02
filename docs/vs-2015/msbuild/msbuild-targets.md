@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157609"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
@@ -60,7 +60,7 @@ Destinos agrupam tarefas em uma ordem específica e permitem que o processo de b
   
   Um destino nunca é executado duas vezes durante uma único build, mesmo se um destino posterior no build depender dele. Depois da execução de um destino, sua contribuição para o build será concluída.  
   
-  Para obter detalhes e mais informações sobre a ordem do build do destino, consulte [Ordem de Build de Destino](../msbuild/target-build-order.md).  
+  Para obter detalhes e obter mais informações sobre a ordem de compilação de destino, consulte [ordem de compilação de destino](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Lote de destino  
  Um elemento de destino pode ter um atributo `Outputs` que especifica os metadados na forma % (metadados). Nesse caso, o MSBuild executa o destino uma vez para cada valor exclusivo de metadados, agrupando ou colocando em "lote" os itens que têm esse valor de metadados. Por exemplo,  
@@ -98,6 +98,6 @@ Reference: 4.0
   
  Se todos os itens de saída estiverem atualizados, o MSBuild ignora o destino, o que melhora significativamente a velocidade de build. Isso é chamado de build incremental do destino. Se apenas alguns arquivos forem atualizados, o MSBuild executa o destino sem os itens atualizados. Isso é chamado de build incremental parcial do destino. Para obter mais informações, consulte [Compilações incrementais](../msbuild/incremental-builds.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Como: usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

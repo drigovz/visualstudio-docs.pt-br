@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551935"
 ---
 # <a name="zoom-control-threads-view"></a>Controle de zoom (exibição de threads)
@@ -31,8 +31,8 @@ O controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>Ampliando e reduzindo usando a roda do mouse  
  Clique em qualquer ponto na linha do tempo (para garantir que tenha o foco do mouse), pressione CTRL e mova a roda do mouse (para frente amplia; para trás reduz).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Gerenciar canais](../profiling/manage-channels.md)   
- [Ativar/desativar modo de medidas](../profiling/measure-mode-on-off.md)   
- [Exibição Threads](../profiling/threads-view-parallel-performance.md)   
- [Navegador de utilização](../profiling/utilization-navigator.md)
+ [Ativar/desativar modo de medida](../profiling/measure-mode-on-off.md)   
+ [Exibição de threads](../profiling/threads-view-parallel-performance.md)   
+ [Navegador da utilização](../profiling/utilization-navigator.md)

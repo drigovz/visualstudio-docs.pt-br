@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146102"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Como filtrar exibições de relatório das ferramentas de criação de perfil para exibir apenas meu código
@@ -23,7 +23,7 @@ O Visual Studio 2010 Premium fornece filtragem para relatórios de desempenho pa
   
 ### <a name="to-enable-just-my-code"></a>Para habilitar Apenas Meu Código  
   
-1. No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas** , clique em **Opções**.  
   
 2. Na caixa de diálogo **Opções**, expanda **Ferramentas de Desempenho** e, em seguida, selecione o nó **Geral**.  
   
@@ -31,11 +31,11 @@ O Visual Studio 2010 Premium fornece filtragem para relatórios de desempenho pa
   
 ### <a name="to-disable-just-my-code"></a>Para desabilitar Apenas Meu Código  
   
-1. No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas** , clique em **Opções**.  
   
 2. Na caixa de diálogo **Opções**, expanda **Ferramentas de Desempenho** e, em seguida, selecione o nó **Geral**.  
   
 3. Em **Configurações Gerais**, desmarque a caixa de seleção **Habilitar Apenas Meu Código**.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Personalizando exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)

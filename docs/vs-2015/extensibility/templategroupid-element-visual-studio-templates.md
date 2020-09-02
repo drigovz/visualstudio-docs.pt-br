@@ -14,22 +14,22 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186429"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false`. Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true`, em seguida, um modelo de item está disponível em todos os tipos de projeto.  
+Especifica que tipo de projeto um modelo de item será exibido. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false` . Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true` , um modelo de item está disponível em todos os tipos de projeto.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<TemplateGroupID>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <TemplateGroupID> ... </TemplateGroupID>  
@@ -39,39 +39,39 @@ Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto Especifica um identificador para uma categoria de modelos de item.  
+ O texto especifica um identificador para uma categoria de modelos de item.  
   
 ## <a name="remarks"></a>Comentários  
  `TemplateGroupID` é um elemento.  
   
- O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<número de versão >* \Projects\\) para modelos de filtro que aparecem na **Adicionar Novo Item** caixa de diálogo.  
+ O valor do `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects \\ ) para filtrar os modelos que aparecem na caixa de diálogo **Adicionar novo item** .  
   
-|Valor do Visual C++|Significado|  
+|Valor Visual C++|Significado|  
 |------------------------|-------------|  
-|VC nativo|Usado para projetos nativos. Também o padrão se um tipo de projeto não pode ser determinado.|  
-|VC gerenciados|Usado para gerenciados (/ clr) projetos|  
-|VC-Windows|Usado para todos os projetos que usam a plataforma do windows (nativo/gerenciado/store)|  
-|WinRT-Native-UAP|Usado para projetos de armazenamento do Windows 10|  
-|CodeSharing-Native|Usado para projetos de item compartilhado|  
-|WinRT-Native-6.3|Usado para projetos do Windows 8.1 Store|  
-|WinRT nativo-Phone 6.3|Usado para projetos do Windows Phone 8.1|  
-|Nativo de WinRT|Usado para projetos do Windows 8.0 Store|  
-|VC-Android|Usado para projetos do Android|  
+|VC-nativo|Usado para projetos nativos. Também o padrão se um tipo de projeto não puder ser determinado.|  
+|Gerenciado por VC|Usado para projetos gerenciados (/CLR)|  
+|VC-Windows|Usado para todos os projetos destinados à plataforma Windows (nativo/gerenciado/de armazenamento)|  
+|WinRT-Native-UAP|Usado para projetos da Windows 10 Store|  
+|CodeSharing-nativo|Usado para projetos de item compartilhado|  
+|WinRT-nativo-6,3|Usado para projetos de Windows 8.1 Store|  
+|WinRT-nativo-telefone-6,3|Usado para projetos Windows Phone 8,1|  
+|WinRT-nativo|Usado para projetos da Windows 8,0 Store|  
+|VC-Android|Usado para projetos Android|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

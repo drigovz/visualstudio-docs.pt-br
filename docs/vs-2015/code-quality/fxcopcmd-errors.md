@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667593"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erros da ferramenta FxCopCmd
@@ -28,7 +28,7 @@ A tabela a seguir descreve os códigos de erro retornados por FxCopCmd:
 |-----------|-------------------|
 |Nenhum erro|0x0|
 |Erro de análise|0x1|
-|Exceções de regra|0x2|
+|Exceções da regra|0x2|
 |Erro de carregamento do projeto|0x4|
 |Erro de carregamento do assembly|0x8|
 |Erro de carregamento da biblioteca de regras|0x10|
@@ -53,6 +53,6 @@ O **erro de análise** é retornado para erros fatais. Isso indica que a anális
 > [!NOTE]
 > O assembly de código de retorno FxCopCmd **referencia o erro** 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que há referências indiretas ausentes, mas que FxCopCmd foi capaz de tratá-las. O aviso significa que há uma possibilidade de que alguns resultados da análise possam ter sido comprometidos. Tratar **erro de referências de assembly** como um erro quando ele é combinado com qualquer outro código de retorno.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)
+- [Erros do aplicativo de análise do código](../code-quality/code-analysis-application-errors.md)

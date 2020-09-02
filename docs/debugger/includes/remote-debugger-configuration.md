@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149166"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312088"
 ---
 1. No computador remoto, localize e inicie o **depurador remoto** no menu **Iniciar** . 
    
@@ -28,7 +28,7 @@ ms.locfileid: "68149166"
    
 1. Na primeira vez que você iniciar o depurador remoto (ou antes de configurá-lo), a caixa de diálogo **configuração de depuração remota** será exibida.  
   
-    Configuração do depurador(../media/remotedebuggerconfwizardpage.png "remoto") de ![configuração do depurador]remoto  
+    ![Configuração do depurador remoto](../media/remotedebuggerconfwizardpage.png "Configuração do depurador remoto")  
   
 1. Se a API dos serviços Web do Windows não estiver instalada, o que acontece apenas no Windows Server 2008 R2, selecione o botão **instalar** .  
   
@@ -38,7 +38,7 @@ ms.locfileid: "68149166"
   
 1. Quando a configuração estiver concluída, a janela do **depurador remoto** será exibida.
   
-    Janela de depurador(../media/remotedebuggerwindow.png "remoto") da ![janela do depurador remoto]
+    ![Janela do depurador remoto](../media/remotedebuggerwindow.png "Janela do depurador remoto")
   
     O depurador remoto agora está aguardando uma conexão. Use o nome do servidor e o número da porta mostrada para definir a configuração de conexão remota no Visual Studio.  
   

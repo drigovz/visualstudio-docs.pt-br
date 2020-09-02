@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147237"
 ---
 # <a name="blocking-time-profile-report"></a>Bloqueando relatório de perfil de tempo
@@ -34,23 +34,23 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 ## <a name="blocking-time-report-columns"></a>Colunas do relatório de tempo de bloqueio  
  A tabela a seguir mostra as colunas para cada relatório de tempo de bloqueio.  
   
-|Nome da coluna|DESCRIÇÃO|  
+|Nome da coluna|Descrição|  
 |-----------------|-----------------|  
-|Nome|O nome da função para cada nível da pilha de chamadas.|  
+|Name|O nome da função para cada nível da pilha de chamadas.|  
 |Instâncias|O número de instâncias da chamada de bloqueio para o período de tempo visível.|  
 |Tempo de bloqueio inclusivo|O tempo total de bloqueio gasto para todas as pilhas acumuladas para esse nível de árvore de pilha de chamadas. O número inclusivo é a soma do tempo de bloqueio exclusivo para essa função e o tempo de bloqueio exclusivo para todos os nós filho.|  
 |Tempo de bloqueio exclusivo|O tempo total de bloqueio gasto durante o qual essa função é o nível mais baixo da pilha de chamadas. Uma entrada da pilha de chamadas exclusiva que tem um alto tempo de bloqueio exclusivo pode ser uma função de interesse.|  
 |Categoria de API/espera|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|  
 |Detalhes|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
   
-### <a name="synchronization"></a>Sincronização  
- O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md)  
+### <a name="synchronization"></a>Synchronization  
+ O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de sincronização](../profiling/synchronization-time.md)  
   
-### <a name="sleep"></a>Sleep  
+### <a name="sleep"></a>Modo de suspensão  
  O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de suspensão](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>E/S  
- O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de E/S (Exibição Threads)](../profiling/i-o-time-threads-view.md).  
+ O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [hora de e/s (exibição de threads)](../profiling/i-o-time-threads-view.md).  
   
 ### <a name="memory-management"></a>Gerenciamento de memória  
  O relatório de Gerenciamento de Memória mostra as chamadas responsáveis por segmentos que estão bloqueando operações de gerenciamento na memória e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).  
@@ -61,5 +61,5 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 ### <a name="ui-processing"></a>Processamento de interface do usuário  
  O relatório de Processamento de interface do usuário mostra as chamadas responsáveis por bloquear segmentos que estão bloqueando em blocos de processamento de interface do usuário e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte Também  
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

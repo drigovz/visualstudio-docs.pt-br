@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302843"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315298"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -50,19 +50,19 @@ No momento, não há suporte para o desenvolvimento do Python no Visual Studio p
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Etapa 1-1: Criar uma solução e um projeto do Visual Studio
 
-1. No Visual Studio, selecione **File** > **New** > **Project**, procure por "Flask" e selecione o modelo de Projeto Web do Frasco **em Branco.** (O modelo também é encontrado na**Web** **Python** > na lista à esquerda.)
+1. No Visual Studio, selecione **arquivo**  >  **novo**  >  **projeto**, pesquise por "Flask" e selecione o modelo de **projeto Web Flask em branco** . (O modelo também é encontrado em **Python**  >  **Web** na lista à esquerda.)
 
     ![Nova caixa de diálogo do projeto no Visual Studio para o Projeto Web em Branco do Flask](media/flask/step01-new-blank-project.png)
 
 1. Nos campos, na parte inferior da caixa de diálogo, insira as informações a seguir (conforme mostrado no gráfico anterior) e, em seguida, escolha **OK**:
 
-    - **Nome**: defina o nome do projeto Visual Studio como **BasicProject**. Esse nome também é usado para o projeto do Flask.
+    - **Nome**: defina o nome do projeto do Visual Studio como **BasicProject**. Esse nome também é usado para o projeto do Flask.
     - **Local**: especifique um local no qual criar o projeto e a solução do Visual Studio.
     - **Nome da solução**: definido como **LearningFlask**, apropriado para a solução como um contêiner para vários projetos neste tutorial.
     - **Criar diretório para a solução**: deixar definido (o padrão).
     - **Criar um novo repositório Git**: escolha essa opção (que é clara por padrão) para que o Visual Studio crie um repositório Git local quando criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
 
-1. Depois de um momento, o Visual Studio solicita-lhe uma caixa de diálogo dizendo **que este projeto requer pacotes externos** (mostrado abaixo). Essa caixa de diálogo é exibida porque o modelo inclui um arquivo *requirements.txt* que referencia o último pacote do Flask 1.x. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
+1. Após alguns instantes, o Visual Studio solicita a você uma caixa de diálogo informando que **este projeto requer pacotes externos** (mostrados abaixo). Essa caixa de diálogo é exibida porque o modelo inclui um arquivo *requirements.txt* que referencia o último pacote do Flask 1.x. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
 
     ![Solicitação dizendo que o projeto requer pacotes externos](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -85,7 +85,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 
     ![Janela do Team Explorer na página Alterações](media/flask/step01-team-explorer-changes.png)
 
-1. Na barra de status do Visual Studio, selecione o botão de confirmação não pressionado (a seta para cima com **2**) para abrir a página **Sincronização** no **Team Explorer**. Como você tem apenas um repositório local, a página oferece opções simples para publicar o repositório em diferentes repositórios remotos.
+1. Na barra de status do Visual Studio, selecione o botão confirmações não pushada (a seta para cima com **2**) para abrir a página de **sincronização** em **Team Explorer**. Como você tem apenas um repositório local, a página oferece opções simples para publicar o repositório em diferentes repositórios remotos.
 
     ![Janela do Team Explorer mostrando opções do repositório Git disponíveis para o controle do código-fonte](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 1. Ao trabalhar com este tutorial, adquira o hábito de usar periodicamente os controles no Visual Studio para confirmar e enviar alterações por push. Este tutorial envia-lhe lembretes nos pontos apropriados.
 
 > [!Tip]
-> Para navegar rapidamente no **Team Explorer,** selecione o cabeçalho (que lê **Alterações** ou **Empurre** nas imagens acima) para ver um menu pop-up das páginas disponíveis.
+> Para navegar rapidamente dentro de **Team Explorer**, selecione o cabeçalho (que lê **as alterações** ou **envie por push** nas imagens acima) para ver um menu pop-up das páginas disponíveis.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte a partir do início de um projeto?
 
@@ -120,7 +120,7 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
     ![Comando Adicionar Ambiente Virtual no Gerenciador de Soluções](media/flask/step01-add-virtual-environment-command.png)
 
-1. Uma caixa de diálogo **Adicionar ambiente virtual** é exibida, com uma mensagem dizendo que **encontramos um arquivo requirements.txt.** Esta mensagem indica que o Visual Studio usa esse arquivo para configurar o ambiente virtual.
+1. Uma caixa de diálogo **Adicionar ambiente virtual** é exibida, com uma mensagem dizendo **que encontramos um arquivo de requirements.txt.** Esta mensagem indica que o Visual Studio usa esse arquivo para configurar o ambiente virtual.
 
     ![Caixa de diálogo Adicionar Ambiente Virtual com a mensagem requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -228,7 +228,7 @@ Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direit
 
 ## <a name="step-1-5-run-the-project"></a>Etapa 1-5: Executar o projeto
 
-1. No Visual Studio, selecione **Debug** > **Start Debugging** **(F5)** ou use o botão **Do Servidor Web** na barra de ferramentas (o navegador que você vê pode variar):
+1. No Visual Studio, selecione **depurar**  >  **Iniciar Depuração** (**F5**) ou use o botão **servidor Web** na barra de ferramentas (o navegador que você vê pode variar):
 
     ![Executar o botão da barra de ferramentas do servidor Web no Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -238,11 +238,11 @@ Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direit
 
     ![Modo de exibição padrão do projeto do Flask](media/flask/step01-first-run-success.png)
 
-1. Quando terminar, pare o servidor fechando a janela do console ou usando o comando **Debug** > **Stop Debugging** no Visual Studio.
+1. Quando terminar, interrompa o servidor fechando a janela do console ou usando o comando **debug**  >  **Stop Debugging** no Visual Studio.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pergunta: Qual é a diferença entre usar os comandos do menu Depuração e os comandos do servidor no submenu do Python do projeto?
 
-Resposta: Além dos comandos do menu **Depurar** e dos botões da barra de ferramentas, você também pode iniciar o servidor usando os comandos **Python** > **Executar servidor** ou **Python** > **Executar o servidor de depuração** no menu de contexto do projeto. Os dois comandos abrem uma janela de console na qual você vê a URL local (localhost:port) do servidor em execução. Mesmo assim, abra manualmente um navegador usando essa URL já que a execução do servidor de depuração não inicia automaticamente o depurador do Visual Studio. Você pode anexar um depurador ao processo de execução mais tarde, se quiser, usando o comando **Debug** > **Attach to Process.**
+Resposta: Além dos comandos do menu **Depurar** e dos botões da barra de ferramentas, você também pode iniciar o servidor usando os comandos **Python** > **Executar servidor** ou **Python** > **Executar o servidor de depuração** no menu de contexto do projeto. Os dois comandos abrem uma janela de console na qual você vê a URL local (localhost:port) do servidor em execução. Mesmo assim, abra manualmente um navegador usando essa URL já que a execução do servidor de depuração não inicia automaticamente o depurador do Visual Studio. Você pode anexar um depurador ao processo em execução posteriormente, se desejar, usando o comando **debug**  >  **Attach to Process** .
 
 ## <a name="next-steps"></a>Próximas etapas
 

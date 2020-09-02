@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591834"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 
-Um modelo de texto T4 do Visual Studio geralmente começa com uma diretiva `template`, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
+Um modelo de texto T4 do Visual Studio geralmente começa com uma `template` diretiva, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
 
 Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -34,7 +34,7 @@ Exemplo:
 
 `compilerOptions="optimize+"`
 
-Valores válidos:
+Valores válidos: 
 
 Algumas opções válidas do compilador.
 
@@ -48,7 +48,7 @@ Exemplo:
 
 `culture="de-CH"`
 
-Valores válidos:
+Valores válidos: 
 
 "", a cultura invariável, que é o padrão.
 
@@ -64,7 +64,7 @@ Exemplo:
 debug="true"
 ```
 
-Valores válidos:
+Valores válidos: 
 
 `true`
 
@@ -84,7 +84,7 @@ Exemplo:
 hostspecific="true"
 ```
 
-Valores válidos:
+Valores válidos: 
 
 `true`
 
@@ -96,7 +96,7 @@ Se você definir o valor desse atributo como `true`, uma propriedade chamada `Ho
 
 Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. Ele é aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [a modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` é `true` e você está usando o Visual Studio, você pode converter `this.Host` para IServiceProvider para acessar recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
+Quando `hostspecific` é `true` e você está usando o Visual Studio, você pode converter `this.Host` em IServiceProvider para acessar os recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -126,13 +126,13 @@ Exemplo:
 
 `language="VB"`
 
-Valores válidos:
+Valores válidos: 
 
 `C#` (padrão)
 
 `VB`
 
-O atributo `language` especifica a linguagem ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) a ser usada para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
+O `language` atributo especifica o idioma ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) a ser usado para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
 
 Por exemplo:
 
@@ -243,7 +243,7 @@ Exemplo:
 
 `linePragmas="false"`
 
-Valores válidos:
+Valores válidos: 
 
 `true` (padrão)
 
@@ -259,7 +259,7 @@ Exemplo:
 
 `visibility="internal"`
 
-Valores válidos:
+Valores válidos: 
 
 `public` (padrão)
 

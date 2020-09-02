@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo | Microsoft Docs
+title: 'IDebugField:: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de21bc984a36db87f8ce1567f4ff7d97212c40e
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547553"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método obtém informações estendido sobre um campo.  
+Esse método obtém informações estendidas sobre um campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,7 +44,7 @@ int GetExtendedInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `guidExtendedInfo`  
- [in] Seleciona as informações a serem retornados. Os valores válidos são:  
+ no Seleciona as informações a serem retornadas. Os valores válidos são:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
@@ -52,16 +52,16 @@ int GetExtendedInfo(
 |`guidConstantType`|O tipo como uma assinatura de tipo.|  
   
  `prgBuffer`  
- [out] Retorna as informações estendidas.  
+ fora Retorna as informações estendidas.  
   
  `pdwLen`  
- [no, out] Retorna o tamanho das informações estendidas, em bytes.  
+ [entrada, saída] Retorna o tamanho das informações estendidas, em bytes.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Atualmente, esse método retorna apenas o tipo ou valor de uma constante. O chamador deve liberar o buffer retornado no `prgBuffer` chamando do COM `CoTaskMemFree` função (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).  
+ Atualmente, esse método retorna apenas o tipo ou o valor de uma constante. O chamador deve liberar o buffer retornado no `prgBuffer` chamando a função de com `CoTaskMemFree` (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

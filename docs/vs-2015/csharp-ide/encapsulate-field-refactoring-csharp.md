@@ -1,5 +1,5 @@
 ---
-title: Encapsular refatoração de campoC#() | Microsoft Docs
+title: Encapsular refatoração de campo (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b4f5ddbe7eab925b06584f00b04bed3c74e9811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667565"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refatoração Encapsular Campo (C#)
@@ -30,7 +30,7 @@ A operação de refatoração de **campo encapsular** permite que você crie rap
 
  Quando um [campo](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) é [público](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), outros objetos têm acesso direto a esse campo e podem modificá-lo, sem ser detectado pelo objeto que possui esse campo. Ao usar [Propriedades](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) para encapsular esse campo, você pode não permitir o acesso direto a campos.
 
- Para criar a nova propriedade, a operação de **campo Encapsulate** altera o modificador de acesso do campo que você deseja encapsular para [privado](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)e, em seguida, gera acessadores [Get](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71) e [set](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) para esse campo. Em alguns casos, apenas um acessador `get` é gerado, como quando o campo é declarado como somente leitura.
+ Para criar a nova propriedade, a operação de **campo Encapsulate** altera o modificador de acesso do campo que você deseja encapsular para [privado](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)e, em seguida, gera acessadores [Get](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71) e [set](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) para esse campo. Em alguns casos, apenas um `get` acessador é gerado, como quando o campo é declarado como somente leitura.
 
  O mecanismo de refatoração atualiza seu código com referências à nova propriedade nas áreas especificadas na seção **Atualizar referências** da caixa de diálogo **encapsular campo** .
 
@@ -58,7 +58,7 @@ A operação de refatoração de **campo encapsular** permite que você crie rap
     }
     ```
 
-2. No [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque o cursor na declaração, no nome do campo que você deseja encapsular. No exemplo a seguir, coloque o cursor na palavra `width`:
+2. No [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque o cursor na declaração, no nome do campo que você deseja encapsular. No exemplo abaixo, coloque o cursor na palavra `width` :
 
     ```csharp
     public int width, height;
@@ -76,9 +76,9 @@ A operação de refatoração de **campo encapsular** permite que você crie rap
 
 5. Pressione ENTER ou clique no botão **OK** .
 
-6. Se você tiver selecionado a opção **Visualizar alterações de referência** , a janela **Visualizar alterações de referência** será aberta. Clique no botão **aplicar** .
+6. Se você tiver selecionado a opção **Visualizar alterações de referência** , a janela **Visualizar alterações de referência** será aberta. Clique no botão **Aplicar**.
 
-     O seguinte `get` e `set` código do acessador é exibido no arquivo de origem:
+     O `get` código de `set` acessador e a seguir é exibido no arquivo de origem:
 
     ```csharp
     public int Width
@@ -88,7 +88,7 @@ A operação de refatoração de **campo encapsular** permite que você crie rap
     }
     ```
 
-     O código no método `Main` também é atualizado para o novo nome da propriedade `Width`.
+     O código no `Main` método também é atualizado para o novo `Width` nome da propriedade.
 
     ```csharp
     Square mySquare = new Square();
@@ -105,5 +105,5 @@ A operação de refatoração de **campo encapsular** permite que você crie rap
 
  O código gerado por essa operação de refatoração é modelado pelo recurso encapsular trechos de código de campo. Os snippets de código são modificáveis. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).
 
-## <a name="see-also"></a>Consulte também
- [Trechos de códigoC#Visual](../csharp-ide/refactoring-csharp.md) [ C# ](../ide/visual-csharp-code-snippets.md) de refatoração ()
+## <a name="see-also"></a>Consulte Também
+ Trechos [de código de refatoração (c#)](../csharp-ide/refactoring-csharp.md) [Visual C#](../ide/visual-csharp-code-snippets.md)

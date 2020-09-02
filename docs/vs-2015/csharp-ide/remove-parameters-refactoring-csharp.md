@@ -1,5 +1,5 @@
 ---
-title: Remover refatoração de parâmetrosC#() | Microsoft Docs
+title: Remover refatoração de parâmetros (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40c373c3575f007952143e29c8dfc2cfac3d080f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667489"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refatoração Remover Parâmetros (C#)
@@ -29,7 +29,7 @@ ms.locfileid: "72667489"
 
 `Remove Parameters` é uma operação de refatoração que fornece uma maneira fácil de remover parâmetros de métodos, indexadores ou delegados. Remover parâmetros altera a declaração; em qualquer local onde o membro é chamado, o parâmetro é removido para refletir a nova declaração.
 
- Você executa a operação remover parâmetros, posicionando primeiro o cursor em um método, indexador ou delegado. Enquanto o cursor estiver na posição, para invocar a operação remover `Parameters`, clique no menu **refatorar** , pressione o atalho do teclado ou selecione o comando no menu de atalho.
+ Você executa a operação remover parâmetros, posicionando primeiro o cursor em um método, indexador ou delegado. Enquanto o cursor estiver na posição, para invocar a `Parameters` operação de remoção, clique no menu **refatorar** , pressione o atalho de teclado ou selecione o comando no menu de atalho.
 
 > [!NOTE]
 > Não é possível remover o primeiro parâmetro em um método de extensão.
@@ -55,7 +55,7 @@ ms.locfileid: "72667489"
     }
     ```
 
-2. Coloque o cursor no método `A`, na declaração do método ou na chamada do método.
+2. Coloque o cursor no método `A` , na declaração do método ou na chamada do método.
 
 3. No menu **refatorar** , selecione **Remover parâmetros** para exibir a caixa de diálogo **Remover parâmetros** .
 
@@ -63,7 +63,7 @@ ms.locfileid: "72667489"
 
      Você também pode clicar com o botão direito do mouse no cursor, apontar para **refatorar**e, em seguida, clicar em **Remover parâmetros** para exibir a caixa de diálogo **Remover parâmetros** .
 
-4. Usando o campo **parâmetros** , posicione o cursor em `int i` e, em seguida, clique em **remover**.
+4. Usando o campo **parâmetros** , posicione o cursor sobre `int i` e clique em **remover**.
 
 5. Clique em **OK**.
 
@@ -81,7 +81,7 @@ ms.locfileid: "72667489"
 MyMethod(param1++, param2);
 ```
 
- para
+ como
 
 ```csharp
 MyMethod(param2);
@@ -89,5 +89,5 @@ MyMethod(param2);
 
  pela operação de refatoração, `param1` não será incrementada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)

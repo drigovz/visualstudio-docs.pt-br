@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546896"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
@@ -55,9 +55,9 @@ Esta página guia você pela desinstalação do Visual Studio 2015, uma versão 
 
 1. No computador onde o Visual Studio está instalado, abra o prompt de comando do Windows.
 
-2. Digite os seguintes parâmetros:
+2. Insira os parâmetros s seguir:
 
-     *DVDRoot* \\<Arquivo de Instalação\> \</quiet&#124;/passive> [/norestart]/uninstall
+     *DVDRoot* \\<arquivo de instalação \> \</quiet&#124;/passive> [/norestart]/Uninstall
 
 ## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Reverter para uma versão anterior do Visual Studio
 
@@ -74,6 +74,6 @@ Esta página guia você pela desinstalação do Visual Studio 2015, uma versão 
 
    Mesmo se você instalar uma versão anterior do Visual Studio, o programa de instalação pode ainda tentar usar uma versão mais recente, se houver uma disponível. Para obter informações detalhadas, confira o tópico [Como instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Instalar o Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
