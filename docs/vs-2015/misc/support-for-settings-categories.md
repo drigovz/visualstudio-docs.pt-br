@@ -11,57 +11,57 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689095"
 ---
 # <a name="support-for-settings-categories"></a>Suporte para categorias de configurações
-Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Sobre o **ferramentas** menu, clique em **Import and Export Settings** para iniciar o **Import and Export Settings Wizard**. O assistente oferece três opções: exportar, importar ou redefinir as configurações. Por exemplo, selecionando export, abre o **escolher configurações para exportar** página do assistente.  
+ No menu **ferramentas** , clique em **importar e exportar configurações** para iniciar o **Assistente de importação e exportação de configurações**. O assistente oferece três opções: exportar, importar ou redefinir suas configurações. A seleção de exportar, por exemplo, abre a página **escolher as configurações a serem exportadas** do assistente.  
   
- O controle de árvore no painel de navegação desta página lista as categorias. Uma categoria é um grupo de configurações relacionadas que aparecem como um "ponto de configurações personalizadas", ou seja, como uma caixa de seleção. Você pode usar essas caixas de seleção para selecionar as categorias para persistir em um arquivo .vsettings. O assistente permite que você nomeie o arquivo .vsettings e especifique seu caminho.  
+ O controle de árvore no painel de navegação desta página lista categorias. Uma categoria é um grupo de configurações relacionadas que aparecem como um "ponto de configurações personalizadas", ou seja, como uma caixa de seleção. Use essas caixas de seleção para selecionar as categorias para persistir em um arquivo. vsettings. O assistente permite que você nomeie o arquivo. vsettings e especifique seu caminho.  
   
 > [!NOTE]
-> As configurações são salvos ou restauradas como uma categoria e nomes de configuração individuais não são exibidos no assistente.  
+> As configurações são salvas ou restauradas como uma categoria, e os nomes de configuração individuais não são exibidos no assistente.  
   
- A estrutura de pacote gerenciado (MPF) dá suporte à criação de categorias de configurações com um mínimo de código adicional.  
+ A estrutura de pacote gerenciada (MPF) dá suporte à criação de categorias de configurações com um mínimo de código adicional.  
   
-- Criar um VSPackage para fornecer um contêiner para a categoria Subclassificando o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+- Você cria um VSPackage para fornecer um contêiner para a categoria por meio da subclasse da <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
-- Criar a categoria em si, derivando-lo partir o <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
+- Você cria a categoria em si, derivando-a da <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
   
-- Conectar-se os dois com o <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Conecte os dois com o <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .  
   
 ## <a name="support-for-settings-categories"></a>Suporte para categorias de configurações  
- O <xref:Microsoft.VisualStudio.Shell.Package> classe oferece suporte para a criação de categorias. O <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implementa uma categoria. A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage> oferece suas propriedades públicas para um usuário como uma categoria. Para obter mais informações, consulte [criar uma categoria de configurações](../extensibility/creating-a-settings-category.md).  
+ A <xref:Microsoft.VisualStudio.Shell.Package> classe fornece suporte para a criação de categorias. A <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implementa uma categoria. A implementação padrão do <xref:Microsoft.VisualStudio.Shell.DialogPage> oferece suas propriedades públicas para um usuário como uma categoria. Para obter mais informações, consulte [criando uma categoria de configurações](../extensibility/creating-a-settings-category.md).  
   
- O <xref:Microsoft.VisualStudio.Shell.DialogPage> implementos de classe <xref:Microsoft.VisualStudio.Shell.IProfileManager>, que fornece a persistência para páginas de opções e configurações do usuário. O <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> e <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> métodos persistirem as configurações em um. vssettings que do arquivo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece como um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>, respectivamente. O <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> método redefine as configurações para seus valores padrão.  
+ A <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implementa <xref:Microsoft.VisualStudio.Shell.IProfileManager> , que fornece persistência para ambas as páginas de opções e configurações de usuário. Os <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> métodos e persistem configurações em um arquivo. vssettings que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece como um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> , respectivamente. O <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> método redefine as configurações para seus valores padrão.  
   
- O <xref:Microsoft.VisualStudio.Shell.DialogPage> classe fornece uma implementação do <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromXml%2A> método que lê os pares nome-valor do xml do feed e usa a reflexão para descobrir as propriedades públicas no <xref:Microsoft.VisualStudio.Shell.DialogPage> classe derivada. As propriedades que têm nomes que coincidem com os pares nome-valor recebem os valores correspondentes.  
+ A <xref:Microsoft.VisualStudio.Shell.DialogPage> classe fornece uma implementação do <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromXml%2A> método que lê pares de nome-valor do feed XML e usa reflexão para descobrir propriedades públicas na <xref:Microsoft.VisualStudio.Shell.DialogPage> classe derivada. As propriedades que têm nomes que correspondem aos pares de nome-valor recebem os valores correspondentes.  
   
- A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage.SaveSettingsToXml%2A> usa a reflexão para descobrir as propriedades públicas no <xref:Microsoft.VisualStudio.Shell.DialogPage> classe derivada e grava os valores e nomes de propriedade no feed XML como pares nome-valor.  
+ A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage.SaveSettingsToXml%2A> usa a reflexão para descobrir propriedades públicas na <xref:Microsoft.VisualStudio.Shell.DialogPage> classe derivada e grava os nomes e valores de propriedade no feed XML como pares de nome-valor.  
   
-### <a name="settings-category-registry-path"></a>Caminho do registro de categoria de configurações  
- O caminho do registro da categoria de configurações é determinado pela combinação <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, o word, UserSettings, a categoria de configurações e o nome do ponto de configurações personalizadas. Os nomes da categoria de configurações e o ponto de configurações personalizadas são Unidos e separados por um caractere de sublinhado para formar o nome canônico não localizado, que aparece no registro. Por exemplo, se a categoria de configurações é "My Category", as configurações personalizadas do ponto de nome "My Settings" e o ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a categoria de configurações tem a chave do registro, HKEY_LOCAL Configurações de Category_My MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My.  
+### <a name="settings-category-registry-path"></a>Caminho do registro da categoria de configurações  
+ O caminho do registro da categoria de configurações é determinado pela combinação <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , palavra, UserSettings, categoria de configurações e o nome do ponto de configurações personalizado. Os nomes da categoria de configurações e do ponto de configurações personalizadas são Unidos e separados por um sublinhado para formar o nome canônico e não localizado que aparece no registro. Por exemplo, se a categoria de configurações for "minha categoria", o nome do ponto de configurações personalizado "minhas configurações" e o ApplicationRegistryRoot HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0Exp, então a categoria de configurações terá a chave do registro, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My configurações.  
   
 > [!NOTE]
-> O nome canônico não aparece em uma interface de usuário (IU). Ele é usado para associar um nome legível com a categoria de configurações, muito parecido com um identificador programático (ProgID).  
+> O nome canônico não aparece em uma interface do usuário. Ele é usado para associar um nome legível à categoria de configurações, muito parecida com um identificador programático (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atributo de categoria de configurações  
- O <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina o mapeamento das categorias de pontos de configurações personalizadas em de **Import and Export Settings Wizard** associando uma categoria com o VSPackage que fornece a ele. Considere o fragmento de código a seguir:  
+ O <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina o mapeamento de categorias para pontos de configurações personalizados no **Assistente de importação e exportação de configurações** , associando uma categoria ao VSPackage que a fornece. Considere o fragmento de código a seguir:  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
   
- ID do recurso 106 é mapeado para "My Category", 107 para "Minhas configurações" e 108 para "Várias opções". Isso declara que `MyPackage` fornece a categoria, minhas configurações Category_My. A categoria é fornecida pelos `OptionsPageGeneral` classe, que deve implementar <xref:Microsoft.VisualStudio.Shell.IProfileManager>. As configurações nesta categoria são as propriedades públicas do `OptionsPageGeneral` classe.  
+ A ID de recurso 106 é mapeada para "minha categoria", 107 para "minhas configurações" e 108 para "várias opções". Isso declara que `MyPackage` fornece a categoria, minhas configurações de Category_My. A categoria é fornecida pela `OptionsPageGeneral` classe, que deve implementar <xref:Microsoft.VisualStudio.Shell.IProfileManager> . As configurações nessa categoria são as propriedades públicas da `OptionsPageGeneral` classe.  
   
- No **Import and Export Settings Wizard**, o ponto de configurações com o nome, minhas configurações. Quando o ponto de configurações é selecionado, a descrição **várias opções**, será exibida. O nome do ponto de configurações e a descrição são retirados do recursos de cadeia de caracteres localizada.  
+ No **Assistente de importação e exportação de configurações**, o ponto de configurações tem o nome, minhas configurações. Quando o ponto de configurações é selecionado, a descrição, **várias opções**, é exibida. O nome e a descrição do ponto de configurações são obtidos de recursos de cadeia de caracteres localizados.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Criando uma página de opções](../extensibility/creating-an-options-page.md)   
  [Exemplos de VSSDK](../misc/vssdk-samples.md)   
- [Estado de VSPackage](../misc/vspackage-state.md)   
+ [Estado VSPackage](../misc/vspackage-state.md)   
  [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
+title: 'IDebugDocumentPosition2:: GetFileName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731684"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Obtém o nome do arquivo do arquivo de origem que contém a posição do documento.
+Obtém o nome do arquivo de origem que contém a posição do documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetFileName( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pbstrFileName`\
-[fora] Retorna o nome do arquivo do arquivo de origem.
+fora Retorna o nome de arquivo do arquivo de origem.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um arquivo de origem pode nem sempre ter um nome de arquivo (o arquivo de origem pode não existir no disco, por exemplo).
+ Um arquivo de origem nem sempre pode ter um nome de arquivo (o arquivo de origem pode não existir no disco, por exemplo).
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

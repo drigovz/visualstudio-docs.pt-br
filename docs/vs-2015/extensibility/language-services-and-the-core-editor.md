@@ -1,5 +1,5 @@
 ---
-title: Serviços de linguagem e o Editor de núcleo | Microsoft Docs
+title: Serviços de linguagem e o editor central | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180297"
 ---
 # <a name="language-services-and-the-core-editor"></a>Serviços de linguagem e o Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Editores do Visual Studio são frequentemente associados um serviço de linguagem. Entre outras coisas, um serviço de linguagem fornece coloração de sintaxe, preenchimento de declaração, IntelliSense e formatação de texto.  
+Os editores no Visual Studio são frequentemente associados a um serviço de linguagem. Entre outras coisas, um serviço de linguagem fornece coloração de sintaxe, conclusão de instrução, IntelliSense e formatação de texto.  
   
-## <a name="core-editors-and-document-data-objects"></a>Editores de núcleo e objetos de dados de documento  
- Quando você acessa o editor de núcleo, você não criar dados de documentos e objetos de exibição de documento. O IDE cria e controla esses dois objetos, e você obter identificadores para eles, fazendo as chamadas apropriadas em seu editor de implementação de fábrica.  
+## <a name="core-editors-and-document-data-objects"></a>Principais editores e objetos de dados de documento  
+ Ao acessar o editor de núcleo, você não cria dados de documento e objetos de exibição de documento. O IDE cria e controla esses dois objetos, e você obtém identificadores para eles fazendo as chamadas apropriadas em sua implementação de fábrica do editor.  
   
- Para obter mais informações, consulte [determinar qual Editor abre um arquivo em um projeto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Para obter mais informações, consulte [determinando qual editor abre um arquivo em um projeto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
 ## <a name="language-services-and-the-core-editor"></a>Serviços de linguagem e o Editor de núcleo  
- Implementando um serviço de linguagem, você pode controlar como os dados são exibidos no modo de exibição de documento. Um serviço de linguagem fornece informações e o comportamento é específico para um determinado idioma, como o Visual C++. Quando você cria um buffer de texto e determinar a extensão de nome de arquivo para o documento que você está abrindo, o buffer de texto determina o serviço de idioma associado a essa extensão de nome de uma chave do registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. O VSPackage padrão ao carregar o procedimento, em seguida, carrega o VSPackage e uma instância do seu serviço de linguagem é criada.  
+ Ao implementar um serviço de linguagem, você pode controlar como os dados são exibidos no modo de exibição de documento. Um serviço de linguagem fornece informações e comportamento específicos para um determinado idioma, como Visual C++. Quando você cria um buffer de texto e determina a extensão do nome de arquivo para o documento que está abrindo, o buffer de texto determina o serviço de idioma associado a essa extensão de nome de arquivos de uma chave do registro, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Editors \\ {YOURLANGUAGESERVICE GUID} \Extensions. Em seguida, o procedimento de carregamento VSPackage padrão carrega o VSPackage e uma instância do serviço de idioma é criada.  
   
  Um serviço de linguagem básico é mostrado na ilustração a seguir.  
   
- ![Gráfico de modelo de serviço de linguagem](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Principais objetos de serviço de editor e linguagem  
+ ![Gráfico de modelo do serviço de linguagem](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+Editor de núcleo e objetos de serviço de linguagem  
   
- O objeto de dados de documento para o editor de núcleo é chamado um buffer de texto e é representado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto. O objeto de exibição de documento é chamado de uma exibição de texto e é representado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> objeto. Esses dois objetos trabalham juntos por meio do serviço de linguagem para fornecer uma exibição unificada do editor de núcleo. Informações de buffer de texto e o modo de exibição do texto exibido em uma janela de documento chamado de uma janela de código. O documento da janela de código é gerenciado por um Gerenciador de janela de código.  
+ O objeto de dados de documento para o editor principal é chamado de buffer de texto e é representado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto. O objeto de exibição de documento é chamado de exibição de texto e é representado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> objeto. Esses dois objetos funcionam juntos por meio do serviço de linguagem para fornecer uma exibição unificada do editor principal. As informações do buffer de texto e da exibição de texto são exibidas em uma janela de documento chamada janela de código. O documento da janela de código é gerenciado por um Gerenciador de janelas de código.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- [Fornecer um contexto de serviço de linguagem, usando a API herdada](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
- [IntelliSense de hospedagem](../extensibility/intellisense-hosting.md)   
- [Idiomas independentes](../extensibility/contained-languages.md)   
- [Desenvolver um serviço de linguagem herdado](../extensibility/internals/developing-a-legacy-language-service.md)
+ [Fornecendo um contexto de serviço de linguagem usando a API herdada](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
+ [Hospedagem do IntelliSense](../extensibility/intellisense-hosting.md)   
+ [Idiomas contidos](../extensibility/contained-languages.md)   
+ [Desenvolvendo um serviço de linguagem herdado](../extensibility/internals/developing-a-legacy-language-service.md)

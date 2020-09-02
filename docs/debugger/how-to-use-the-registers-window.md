@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348568"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Exibir valores de registro na janela de registros (C#, C++, Visual Basic, F #)
@@ -55,7 +55,7 @@ Você pode editar valores do registro. Para obter mais informações, consulte [
 >[!NOTE]
 >Caixas de diálogo e comandos de menu podem diferir dependendo da edição ou das configurações do Visual Studio. Para alterar as configurações, selecione **importar e exportar configurações** no menu **ferramentas** do Visual Studio. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Confira também
 
 - [Noções básicas de depuração: janela de registros](../debugger/debugging-basics-registers-window.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

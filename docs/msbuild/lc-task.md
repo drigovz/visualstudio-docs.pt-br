@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82167391"
 ---
 # <a name="lc-task"></a>tarefa LC
 
-Encapsula o *LC. exe*, que gera um arquivo *. License* de um arquivo *. licx* . Para obter mais informações sobre o *LC. exe*, consulte [LC. exe (compilador de licença)](/dotnet/framework/tools/lc-exe-license-compiler).
+Encapsula *LC.exe*, que gera um arquivo *. License* de um arquivo *. licx* . Para obter mais informações sobre *LC.exe*, consulte [Lc.exe (compilador de licença)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -40,7 +40,7 @@ A tabela a seguir descreve os parâmetros da tarefa `LC`.
 |`OutputDirectory`|Parâmetro `String` opcional.<br /><br /> Especifica o diretório no qual posicionar os arquivos de saída *. licenses* .|
 |`OutputLicense`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o nome do arquivo *. licenses* . Se você não especificar um nome, o nome do arquivo *. licx* será usado e o arquivo *. licenses* será colocado no diretório que contém o arquivo *. licx* .|
 |`ReferencedAssemblies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os componentes referenciados a serem carregados ao gerar o arquivo *. License* .|
-|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas do SDK, como *Resgen. exe*.|
+|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas do SDK, como *resgen.exe*.|
 |`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens que contêm componentes licenciados para incluir no arquivo *. licenses* . Para obter mais informações, consulte a documentação da opção `/complist` em [Lc.exe (Compilador de Licença)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
@@ -72,4 +72,4 @@ O exemplo a seguir usa a tarefa `LC` para compilar licenças.
 ## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

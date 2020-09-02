@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149612"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Tarefa GenerateDeploymentManifest
@@ -42,7 +42,7 @@ Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../includes/ndptecc
 |`DeploymentUrl`|Parâmetro `String` opcional.<br /><br /> Especifica o local de atualização para o aplicativo. Se esse parâmetro não for especificado, nenhum local de atualização será definido para o aplicativo. No entanto, se o parâmetro `UpdateEnabled` for `true`, o local da atualização deverá ser especificado. O valor especificado deve ser um caminho de URL ou UNC totalmente qualificado.|  
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica uma descrição opcional para o aplicativo.|  
 |`DisallowUrlActivation`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo deve ser executado automaticamente quando ele é aberto por meio de uma URL. Se esse parâmetro for `true`, o aplicativo só poderá ser iniciado pelo menu Iniciar. O valor padrão desse parâmetro é `false`. Esta entrada só se aplica quando o valor do parâmetro `Install` é `true`.|  
-|`EntryPoint`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o ponto de entrada para o assembly do manifesto gerado. Para um manifesto de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], esta entrada especifica o manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> Em [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], a [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) exigiu um `EntryPoint` para gerar um manifesto do aplicativo. (Manifestos de assembly ou nativos não exigem um `EntryPoint`.) Esse requisito foi imposto com o erro de compilação: "MSB3185: EntryPoint não especificado para o manifesto."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não emite esse erro quando o parâmetro da tarefa `EntryPoint` não é especificado. Em vez disso, a marca \<customHostSpecified> é inserida como um filho da marca \<entryPoint>, por exemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Você pode adicionar dependências de DLL ao manifesto do aplicativo usando as seguintes etapas:<br /><br /> 1.  Resolver as referências de assembly com uma chamada para <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passar a saída da tarefa anterior e o próprio assembly para <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passar as dependências usando o parâmetro `Dependencies` para <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`EntryPoint`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o ponto de entrada para o assembly do manifesto gerado. Para um manifesto de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], esta entrada especifica o manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> Em [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], a [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) exigiu um `EntryPoint` para gerar um manifesto do aplicativo. (Assembly ou manifestos nativos não exigem um `EntryPoint` .) Esse requisito foi imposto com o erro de compilação: "MSB3185: EntryPoint não especificado para o manifesto".<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não emite esse erro quando o parâmetro da tarefa `EntryPoint` não é especificado. Em vez disso, a \<customHostSpecified> marca é inserida como um filho da \<entryPoint> marca, por exemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Você pode adicionar dependências de DLL ao manifesto do aplicativo usando as seguintes etapas:<br /><br /> 1. resolva as referências de assembly com uma chamada para <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> .<br />2. passe a saída da tarefa anterior e o próprio assembly para <xref:Microsoft.Build.Tasks.ResolveManifestFiles> .<br />3. passe as dependências usando o `Dependencies` parâmetro para <xref:Microsoft.Build.Tasks.GenerateApplicationManifest> .|  
 |`ErrorReportUrl`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]\() opcional.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante instalações ClickOnce.|  
 |`InputManifest`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML de entrada para servir como base para o gerador de manifesto. Isso permite que dados estruturados, tais como definições personalizadas de manifesto, sejam refletidos no manifesto de saída. O elemento raiz do documento XML deve ser um nó de assembly no namespace asmv1.|  
 |`Install`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo é um aplicativo instalado ou um aplicativo somente online. Se esse parâmetro for `true`, o aplicativo será instalado no menu Iniciar do usuário e poderá ser removido usando a caixa de diálogo Adicionar ou Remover Programas. Se esse parâmetro for `false`, o aplicativo será destinado ao uso online de uma página da Web. O valor padrão desse parâmetro é `true`.|  
@@ -63,10 +63,10 @@ Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../includes/ndptecc
 |`UpdateUnit`|Parâmetro `String` opcional.<br /><br /> Especifica as unidades para o parâmetro `UpdateInterval`. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Este parâmetro se aplica somente a quando os valores dos parâmetros `Install` e `UpdateEnabled` são ambos `true`.|  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, consulte [Classe base Task](../msbuild/task-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, consulte [Task base Class](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Tarefa](../msbuild/msbuild-tasks.md)   
  [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)   
  [Tarefa SignFile](../msbuild/signfile-task.md)   
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

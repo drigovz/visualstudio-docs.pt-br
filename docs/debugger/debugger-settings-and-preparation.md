@@ -19,16 +19,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738275"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.
 
- Para obter mais informações, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
+ Para obter mais informações, consulte [como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -46,7 +46,7 @@ Essa seção descreve as configurações de propriedade relacionadas ao depurado
 
  [Como especificar uma versão mais antiga de .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Descreve como definir uma chave do registro para indicar ao depurador qual versão usar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87471526"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
@@ -59,7 +59,7 @@ Lançado em 23 de junho de 2020
 
   - [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md)Diagnóstico adicionado. Usar `Invoke` , `InvokeRepeating` `StartCoroutine` ou `StopCoroutine` com um primeiro argumento sendo um literal de cadeia de caracteres não é de tipo seguro.
 
-  - [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md)Diagnóstico adicionado. `SetPixels`a invocação está lenta.
+  - [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md)Diagnóstico adicionado. `SetPixels` a invocação está lenta.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -71,7 +71,7 @@ Lançado em 23 de junho de 2020
 
   - Não redefina a seleção ao filtrar mensagens no assistente de mensagem do Unity.
   
-  - Corrigidos [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) e [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) supressers com as seguintes regras: suprimir `IDE0044` (ReadOnly), `IDE0051` (não usado), `CS0649` (nunca atribuído) para todos os campos decorados com o atributo serializefield. Suprimir `CS0649` (nunca atribuído) para campos públicos de todos os tipos que se estendem `Unity.Object` .
+  - Corrigidos [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) e [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) supressers com as seguintes regras: suprimir `IDE0044` (ReadOnly), `IDE0051` (não usado), `CS0649` (nunca atribuído) para todos os campos decorados com o atributo serializefield. Suprimir `CS0649` (nunca atribuído) para campos públicos de todos os tipos estendendo `Unity.Object`.
 
   - Correção de parâmetro de tipo genérico corrigido para [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) .
 
@@ -258,7 +258,7 @@ Lançado em 23 de setembro de 2019
 - **Integrar**
 
   - Foi adicionado um novo supressor para IDE0060, para impedir que o IDE mostre uma correção rápida para remover parâmetros não utilizados.
-    - `USP0005`para `IDE0060` : as mensagens do Unity são invocadas pelo tempo de execução do Unity.
+    - `USP0005` para `IDE0060` : as mensagens do Unity são invocadas pelo tempo de execução do Unity.
 
 ## <a name="2320"></a>2.3.2.0
 
@@ -280,10 +280,10 @@ Lançado em 16 de setembro de 2019
     - `UNT0009`: Ao aplicar o atributo InitializeOnLoad a uma classe, você precisa fornecer um construtor estático. O atributo InitializeOnLoad verifica se ele será chamado quando o editor for iniciado.
     - `UNT0010`: Monocomportamentos só devem ser criados usando addComponent (). O MonoBehaviour é um componente e precisa ser anexado a um GameObject.
     - `UNT0011`: ScriptableObject só deve ser criado usando CreateInstance (). ScriptableObject precisa ser criado pelo mecanismo do Unity para manipular métodos de mensagem do Unity.
-    - `USP0001`para `IDE0029` : objetos Unity não devem usar União nula.
-    - `USP0002`para `IDE0031` : objetos Unity não devem usar a propagação nula.
-    - `USP0003`para `IDE0051` : as mensagens do Unity são invocadas pelo tempo de execução do Unity.
-    - `USP0004`para `IDE0044` : campos com um atributo serializefield não devem ser criados somente leitura.
+    - `USP0001` para `IDE0029` : objetos Unity não devem usar União nula.
+    - `USP0002` para `IDE0031` : objetos Unity não devem usar a propagação nula.
+    - `USP0003` para `IDE0051` : as mensagens do Unity são invocadas pelo tempo de execução do Unity.
+    - `USP0004` para `IDE0044` : campos com um atributo serializefield não devem ser criados somente leitura.
 
 ## <a name="2310"></a>2.3.1.0
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348243"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
@@ -49,7 +49,7 @@ A maioria das janelas do depurador, como os **módulos** e as janelas de **inspe
 
 Os comandos de etapa do depurador ajudam a inspecionar o estado do aplicativo ou a saber mais sobre seu fluxo de execução.
 
-### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a>Passar para o código linha por linha
+### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Passar para o código linha por linha
 
 Para parar em cada instrução durante a depuração, use **depurar**  >  **etapa para**ou pressione **F11**.
 
@@ -74,16 +74,16 @@ Em uma chamada de função aninhada, a **Depuração Completa** intervém na fun
 >[!TIP]
 >Ao executar cada linha de código, você pode passar o mouse sobre variáveis para ver seus valores ou usar as janelas [locais](autos-and-locals-windows.md) e [assistir](watch-and-quickwatch-windows.md) para observar os valores alterados. Você também pode rastrear visualmente a [pilha de chamadas](how-to-use-the-call-stack-window.md) durante a depuração de funções. (Somente para Visual Studio Enterprise, consulte [métodos de mapa na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
-### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a>Percorrer o código e ignorar algumas funções
+### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a> Percorrer o código e ignorar algumas funções
 
 Talvez você não se preocupa com uma função durante a depuração, ou você sabe que ela funciona, como um código de biblioteca bem testado. Você pode usar os comandos a seguir para ignorar o código durante a depuração de código. As funções ainda são executadas, mas o depurador as ignora.
 
 |Comando de teclado|Comando do menu Depurar|Descrição|
 |----------------------|------------------|-----------------|
-|**F10**|**Depuração Parcial**|Se a linha atual contiver uma chamada de função, a **etapa** executará o código e suspenderá a execução na primeira linha de código depois que a função chamada retornar.|
+|**F10**|**Contornar**|Se a linha atual contiver uma chamada de função, a **etapa** executará o código e suspenderá a execução na primeira linha de código depois que a função chamada retornar.|
 |**Shift** + **F11**|**Sair**|O **Step Out** continua executando o código e suspende a execução quando a função atual retorna. O depurador ignora a função atual.|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Executar para uma função ou local específico
+## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Executar para uma função ou local específico
 
 Você pode preferir executar diretamente em um local ou uma função específica quando souber exatamente qual código você deseja inspecionar ou se você souber onde deseja iniciar a depuração.
 
@@ -138,7 +138,7 @@ Enquanto estiver em pausa no depurador, você pode focalizar uma instrução no 
 
 Para interromper a próxima linha de código disponível em um aplicativo em execução, selecione **depurar**  >  **quebra de tudo**ou pressione **Ctrl** + **ALT** + **Break**.
 
-## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a>Mover o ponteiro para alterar o fluxo de execução
+## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Mover o ponteiro para alterar o fluxo de execução
 
 Enquanto o depurador é pausado, uma ponta de seta amarela na margem da janela código-fonte ou **desmontagem** marca o local da próxima instrução a ser executada. Você pode alterar a próxima instrução a ser executada movendo essa ponta de seta. Você pode ignorar uma parte do código ou retornar a uma linha anterior. Mover o ponteiro é útil para situações como ignorar uma seção de código que contém um bug conhecido.
 
@@ -183,7 +183,7 @@ Para carregar os símbolos da Microsoft, consulte [Configurar locais de símbolo
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em Propriedades ou operadores, escolha opções de **depuração**  >  **Options**. Na página **depuração**  >  **geral** , desmarque a caixa de seleção **passar por propriedades e operadores (somente gerenciados)** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

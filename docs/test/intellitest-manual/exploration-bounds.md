@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302633"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315207"
 ---
 # <a name="exploration-bounds"></a>Limites de exploração
 
@@ -35,7 +35,7 @@ public partial class FooTest {...}
   * [MaxCalls](#maxcalls) – o número máximo de chamadas que podem ser feitas durante um único caminho de execução.
   * [MaxStack](#maxstack) – o tamanho máximo da pilha a qualquer momento durante um único caminho de execução, medido como o número de quadros de chamada ativa.
   * [MaxConditions](#maxconditions) – o número máximo de condições sobre as entradas que podem ser verificadas durante um único caminho de execução.
-* **Limites de Exploração**
+* **Limites de exploração**
   * [MaxRuns](#maxruns) – o número máximo de execuções que serão tentadas durante uma exploração.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) – o número máximo de execuções consecutivas sem um novo teste ser emitido.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) – o número máximo de execuções com caminhos de execução exclusivos que serão tentadas durante uma exploração.
@@ -57,7 +57,7 @@ Normalmente, o motivo para um tempo limite é que o IntelliTest está tentando e
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-O número de megabytes que o [solver de restrição](input-generation.md#constraint-solver) tem para calcular entradas que farão com que um caminho de execução novo e diferente seja seguido. Esta é uma opção do *PexSettingsAttributeBase** e seus tipos derivados.
+O número de megabytes que o [solver de restrição](input-generation.md#constraint-solver) tem para calcular entradas que farão com que um caminho de execução novo e diferente seja seguido. Essa é uma opção de *PexSettingsAttributeBase** e seus tipos derivados.
 
 Quanto mais o IntelliTest explora os caminhos de execução de um programa, mais complexos se tornam os sistemas de restrições que o IntelliTest cria do fluxo de controle e do fluxo de dados do programa. Dependendo da memória disponível do computador, você pode definir esse valor para permitir que o IntelliTest lide com sistemas de restrição mais complexos.
 
@@ -125,7 +125,7 @@ A motivação por trás desse limite de exploração é que qualquer código que
 
 As duas configurações **MaxRuns** e **MaxRunsWithUniquePaths** são relacionadas da seguinte maneira:
 
-* A IntelliTest chamará um método de teste parametrizado até os tempos **de MaxRuns** com diferentes entradas de teste.
+* IntelliTest chamará um método de teste com parâmetros até **MaxRuns** vezes com entradas de teste diferentes.
 * Se o código executado for determinístico, o IntelliTest seguirá um caminho de execução diferente cada vez. No entanto, em algumas condições o código executado pode seguir um caminho de execução que já usado antes, com entradas diferentes.
 * O IntelliTest conta quantos caminhos de execução exclusivos ele encontra, esse número é limitado pela opção **MaxRunsWithUniquePaths**.
 

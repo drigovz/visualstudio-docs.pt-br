@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Depuração em tempo de Design | Microsoft Docs'
+title: 'Walkthrough: Depurando em tempo de design | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149424"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Passo a passo: Depuração em tempo de design
+# <a name="walkthrough-debugging-at-design-time"></a>Instruções passo a passo: depurando na hora de design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina enquanto seu aplicativo não está em execução. Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de depuração em tempo de design.  
+Você pode usar a janela **imediata** do Visual Studio para executar uma função ou sub-rotina enquanto o aplicativo não está em execução. Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de depuração em tempo de design.  
   
  O procedimento a seguir exibe como usar esse recurso.  
   
@@ -65,22 +65,22 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
   
 2. Defina um ponto de interrupção na linha em que se lê `s="Add BreakPoint Here"`.  
   
-3. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+3. Digite o seguinte na janela **imediata** : `?MyFunction<enter>`  
   
 4. Certifique-se de que o ponto de interrupção foi alcançado, e que a pilha de chamadas está correta.  
   
-5. Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
+5. No menu **depurar** , clique em **continuar**e verifique se você ainda está no modo de design.  
   
-6. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+6. Digite o seguinte na janela **imediata** : `?MyFunction<enter>`  
   
-7. Digite o seguinte na **imediato** janela: `?MySub<enter>`  
+7. Digite o seguinte na janela **imediata** : `?MySub<enter>`  
   
-8. Verifique se o ponto de interrupção e examinar o valor da variável estática `i` no **Locals** janela. Deve ter o valor 3.  
+8. Verifique se você atingiu o ponto de interrupção e examine o valor de variável estática `i` na janela **locais** . Deve ter o valor 3.  
   
 9. Verifique se a pilha de chamadas está correta.  
   
-10. Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
+10. No menu **depurar** , clique em **continuar**e verifique se você ainda está no modo de design.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)

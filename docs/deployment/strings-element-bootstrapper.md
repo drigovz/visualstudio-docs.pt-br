@@ -1,5 +1,5 @@
 ---
-title: '&lt;Cadeias de caracteres&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: '&lt;&gt;Elemento Strings (Bootstrapper) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747408"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (bootstrapper)
-Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Elemento Strings (Bootstrapper)
+Define cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,19 +40,19 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos e atributos
- O `Strings` um filho do elemento é o `Package` elemento. Ele não tem atributos.
+ O `Strings` elemento é um filho do `Package` elemento. Ele não tem atributos.
 
-## <a name="string"></a>Cadeia de Caracteres
- O `String` um filho do elemento é o `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.
+## <a name="string"></a>String
+ O `String` elemento é um filho do `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.
 
  `String` tem o seguinte atributo.
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Name`|Necessário. O nome da cadeia de caracteres.|
+|`Name`|Obrigatórios. O nome da cadeia de caracteres.|
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir especifica que todas as cadeias de caracteres em inglês para o instalador do .NET Framework.
+ O exemplo de código a seguir especifica todas as cadeias de caracteres em inglês para o instalador do .NET Framework.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 </Strings>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [\<Pacote > elemento](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Confira também
+- [\<Package> elementos](../deployment/package-element-bootstrapper.md)

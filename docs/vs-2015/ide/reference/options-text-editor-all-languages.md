@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ebe2da1dec9917a792f3e4e02516a79cff605c80
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662397"
 ---
 # <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
@@ -38,14 +38,14 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Uma marca de seleção esmaecida é exibida quando uma opção tiver sido selecionada nas páginas de opções Geral para algumas linguagens de programação, mas não para outras.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="statement-completion"></a>Preenchimento de declaração
- Listar Membros automaticamente quando selecionada, listas pop-up de membros, propriedades, valores ou métodos disponíveis são exibidos pelo IntelliSense conforme você digita no editor. Escolha qualquer item da lista pop-up para inseri-lo no código. Selecionar essa opção habilita a opção **Ocultar membros avançados**.
+## <a name="statement-completion"></a>Conclusão de instrução
+ Listar Membros automaticamente quando selecionada, listas pop-up de membros, propriedades, valores ou métodos disponíveis são exibidos pelo IntelliSense conforme você digita no editor. Escolha qualquer item na lista pop-up para inserir o item em seu código. Selecionar essa opção habilita a opção **Ocultar membros avançados**.
 
- Ocultar membros avançados quando selecionado, reduz as listas de preenchimento de instrução pop-up exibindo somente os itens mais usados. Outros itens são filtrados da lista.
+ Ocultar membros avançados quando selecionado, reduz as listas de preenchimento de instrução pop-up exibindo somente os itens mais usados. Os outros itens são filtrados da lista.
 
- Informações de parâmetro quando selecionado, a sintaxe completa para a declaração ou procedimento atual é exibida sob o ponto de inserção no editor, com todos os seus parâmetros disponíveis. O parâmetro que a seguir você pode atribuir é exibido em negrito.
+ Informações de parâmetro quando selecionado, a sintaxe completa para a declaração ou procedimento atual é exibida sob o ponto de inserção no editor, com todos os seus parâmetros disponíveis. O próximo parâmetro que você pode atribuir é exibido em negrito.
 
 ## <a name="settings"></a>Configurações
  Habilitar espaço virtual quando essa opção é selecionada e a **quebra automática** de linha é desmarcada, você pode clicar em qualquer lugar além do final de uma linhas no editor de código e digitar. Esse recurso pode ser usado para posicionar comentários em um ponto consistente ao lado do seu código.
@@ -62,15 +62,15 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Desmarque esta opção se preferir não exibir esses indicadores.
 
 > [!NOTE]
-> Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. São somente para referência.
+> Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. Eles são somente para referência.
 
  Aplicar comandos Recortar ou copiar a linhas em branco quando não houver seleção essa opção define o comportamento do editor quando você coloca o ponto de inserção em uma linha em branco, não seleciona nada e, em seguida, copia ou recorta.
 
 - Quando essa opção está selecionada, a linha em branco é copiada ou cortada. Se você então Colar, uma nova linha em branco será inserida.
 
-- Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada é colado.
+- Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada será colado.
 
-  Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha não está em branco. Se nada é selecionado, a linha inteira é copiada ou recortar. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.
+  Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha não está em branco. Se nada for selecionado, a linha inteira será copiada ou recortada. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.
 
 > [!TIP]
 > Para exibir indicadores para espaços, tabulações e fins de linha, e assim distinguir linhas recuadas de linhas totalmente em branco, selecione **Avançado** no menu **Editar** e escolha **Exibir Espaço em Branco**.
@@ -79,11 +79,11 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Números de linha quando selecionado, um número de linha é exibido ao lado de cada linha de código.
 
 > [!NOTE]
-> Esses números de linha não são adicionados ao seu código e não são impressos. São somente para referência.
+> Esses números de linha não são adicionados ao seu código e não são impressos. Eles são somente para referência.
 
- Habilitar navegação de URL de clique único quando selecionado, o cursor do mouse muda para uma mão apontando para uma URL no editor. Você pode clicar no URL para exibir a página indicada no seu navegador da Web.
+ Habilitar navegação de URL de clique único quando selecionado, o cursor do mouse muda para uma mão apontando para uma URL no editor. Você pode clicar no URL para exibir a página indicada em seu navegador da Web.
 
  Barra de navegação quando selecionada, exibe a **barra de navegação** na parte superior do editor de código. Suas listas suspensas **Objetos** e **Membros** permitem escolher um objeto específico no código, selecionar entre seus membros e navegar para a declaração do membro selecionado no Editor de Códigos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Opções, editor de texto, todas as linguagens, guias](../../ide/reference/options-text-editor-all-languages-tabs.md) [geral, ambiente, caixa de diálogo opções](../../ide/reference/general-environment-options-dialog-box.md) [usando o IntelliSense](../../ide/using-intellisense.md)

@@ -31,7 +31,7 @@ ms.locfileid: "70887861"
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;&gt;elemento Deployment (implantação do ClickOnce)
 Identifica os atributos usados para a implantação de atualizações e a exposição ao sistema.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 

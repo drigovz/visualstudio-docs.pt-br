@@ -1,5 +1,5 @@
 ---
-title: 'Como: Excluir arquivos do build | Microsoft Docs'
+title: Como excluir arquivos do build | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821607"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Como: Excluir arquivos do build
+# <a name="how-to-exclude-files-from-the-build"></a>Como excluir arquivos do build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build. No entanto, pode haver um arquivo no diretório ou um diretório em um conjunto aninhado de diretórios que você não deseja incluir como entrada para um build. Você pode excluir explicitamente esse arquivo ou diretório da lista de entradas. Também pode haver um arquivo em um projeto que você deseja incluir somente em determinadas condições. Você pode declarar explicitamente as condições sob as quais um arquivo é incluído em um build.  
@@ -45,7 +45,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \- ou -  
+     \- ou –  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \- ou -  
+     \- ou –  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -125,6 +125,6 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Itens](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [como: selecionar os arquivos a ser compilados](../msbuild/how-to-select-the-files-to-build.md)
+## <a name="see-also"></a>Consulte Também  
+ [Los](../msbuild/msbuild-items.md)   
+ [MSBuild](msbuild.md) [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)

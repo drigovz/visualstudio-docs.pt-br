@@ -1,5 +1,5 @@
 ---
-title: Habilitando recursos de C++ depuração em projetos (-D_DEBUG) | Microsoft Docs
+title: Habilitando recursos de depuração em projetos C++ (-D_DEBUG) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737952"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitando recursos de C++ depuração em projetos (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitando recursos de depuração em projetos C++ (/D_DEBUG)
 No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], os recursos de depuração como asserções são habilitados quando você compila seu programa com o símbolo **_DEBUG** definido. Há duas maneiras de definir **_DEBUG**:
 
 - Especifique **#define _DEBUG** no código-fonte ou
@@ -42,6 +42,6 @@ No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], os recursos de dep
 
   A configuração Depuração de um programa MFC deve ser vinculada a uma versão de depuração da biblioteca MFC. Os arquivos de cabeçalho MFC determinam a versão correta da biblioteca MFC à qual vincular com base nos símbolos definidos, como **_DEBUG** e **_UNICODE**. Para obter detalhes, confira [Versões da biblioteca MFC](/cpp/mfc/mfc-library-versions).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
-- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

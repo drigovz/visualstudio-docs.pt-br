@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823605"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
@@ -57,7 +57,7 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
   
 - No gráfico de linha do tempo, clique em **Total**.  
   
-     A exibição Contenções aparece para o recurso. Para obter mais informações, consulte [Exibição de Contenções de Recursos](../profiling/resource-contentions-view-contention-data.md)  
+     A exibição Contenções aparece para o recurso. Para obter mais informações, consulte [exibição de contenções de recursos](../profiling/resource-contentions-view-contention-data.md)  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Para exibir todos os eventos de contenção de um thread  
   
