@@ -1,5 +1,5 @@
 ---
-title: SDKReference Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento SDKReference (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700171"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (Modelos do Visual Studio)
-Especifica que o modelo de item usa uma referência SDK.
+Especifica que o modelo de item usa uma referência de SDK.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <VSTemplate>
@@ -42,13 +42,13 @@ Especifica que o modelo de item usa uma referência SDK.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de montagem para adicionar quando o item é adicionado a um projeto.|
+|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
 ## <a name="remarks"></a>Comentários
- Este texto especifica a referência SDK para adicionar a um projeto quando o modelo de item é instanciado.
+ Esse texto especifica a referência do SDK a ser adicionada a um projeto quando o modelo de item é instanciado.
 
 ```xml
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">

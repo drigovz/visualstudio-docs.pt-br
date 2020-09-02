@@ -74,10 +74,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247941"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
@@ -180,7 +180,7 @@ O sinalizador **_crtDbgFlag** contém os seguintes campos de bits:
 
 |Campo de bits|Padrão<br /><br /> value|Descrição|
 |---------------|-----------------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|Por|Ativa a alocação de depuração. Quando esse bit está desativado, as alocações permanecem encadeadas juntas, mas seu tipo de bloco é **_IGNORE_BLOCK**.|
+|**_CRTDBG_ALLOC_MEM_DF**|Ativado|Ativa a alocação de depuração. Quando esse bit está desativado, as alocações permanecem encadeadas juntas, mas seu tipo de bloco é **_IGNORE_BLOCK**.|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Desativado|Impede que a memória seja liberada realmente para simular condições de memória baixa. Quando esse bit estiver ativado, os blocos liberados são mantidos na lista vinculada da heap de depuração, mas são marcados como **_FREE_BLOCK** e preenchidos com um valor especial de byte.|
 |**_CRTDBG_CHECK_ALWAYS_DF**|Desativado|Faz com que **_CrtCheckMemory** seja chamado em cada alocação e desalocação. Isso deixa a execução lenta, mas captura os erros rapidamente.|
 |**_CRTDBG_CHECK_CRT_DF**|Desativado|Faz com que blocos marcados como o tipo **_CRT_BLOCK** sejam inclusos em operações de detecção de escape e diferença de estado. Quando esse bit está desativado, a memória usada internamente pela biblioteca em tempo de execução é ignorada durante essas operações.|
@@ -353,5 +353,5 @@ Agora o nome do arquivo de origem e o número da linha onde `addNewRecord` foi c
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 [Depurando código nativo](../debugger/debugging-native-code.md)

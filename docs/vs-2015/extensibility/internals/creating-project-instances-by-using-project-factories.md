@@ -1,5 +1,5 @@
 ---
-title: Criar instâncias de projetos usando fábricas de projeto | Microsoft Docs
+title: Criando instâncias de projeto usando fábricas de projeto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,44 +12,44 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697211"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Criando instâncias de projeto por meio de fábricas de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tipos de projeto em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usar um *fábrica de projeto* para criar instâncias de objetos do projeto. Uma fábrica de projeto é semelhante a uma fábrica de classes padrão para objetos cocreatable do COM. No entanto, os objetos do projeto não são cocreatable: só pode ser criados usando uma fábrica de projeto.  
+Tipos de projeto em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usar uma *fábrica de projetos* para criar instâncias de objetos de projeto. Uma fábrica de projetos é semelhante a uma fábrica de classes padrão para objetos COM de Cocriação. No entanto, os objetos do projeto não são cocriáveis: eles só podem ser criados usando uma fábrica de projetos.  
   
- O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE chama a fábrica de projeto implementada no VSPackage quando um usuário carrega um projeto existente ou cria um novo projeto no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O novo objeto de projeto fornece o IDE com informações suficientes para popular o Gerenciador de soluções. O novo objeto de projeto também fornece as interfaces necessárias para dar suporte a todas as ações relevantes de interface do usuário iniciadas pelo IDE.  
+ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE chama a fábrica de projetos implementada em seu VSPackage quando um usuário carrega um projeto existente ou cria um novo projeto no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . O novo objeto de projeto fornece ao IDE informações suficientes para popular Gerenciador de Soluções. O novo objeto de projeto também fornece as interfaces necessárias para dar suporte a todas as ações de interface do usuário relevantes iniciadas pelo IDE.  
   
- Você pode implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface em uma classe em seu projeto. Normalmente, residem em seu próprio módulo.  
+ Você pode implementar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface em uma classe em seu projeto. Normalmente, ele reside em seu próprio módulo.  
   
- Para obter um exemplo de uma implementação do `IVsProjectFactory` interface, consulte PrjFac.cpp está contida na [projeto básico](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) diretório de exemplo.  
+ Para obter um exemplo de uma implementação da `IVsProjectFactory` interface, consulte PrjFac. cpp que está contido no diretório de exemplo do [projeto básico](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) .  
   
- Projetos que dão suporte ao que está sendo agregada por um proprietário devem manter uma chave de proprietário no seu arquivo de projeto. Quando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método é chamado em um projeto com uma chave de proprietário, o projeto de propriedade converte sua chave de proprietário para uma fábrica de projeto, GUID, em seguida, chama o `CreateProject` método nesta fábrica de projeto para fazer a criação real.  
+ Os projetos que dão suporte à agregação por um proprietário devem persistir uma chave de proprietário em seu arquivo de projeto. Quando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método é chamado em um projeto com uma chave de proprietário, o projeto de propriedade converte sua chave de proprietário em um GUID de fábrica do projeto, em seguida, chama o `CreateProject` método neste alocador de projeto para fazer a criação real.  
   
 ## <a name="creating-an-owned-project"></a>Criando um projeto de propriedade  
  Um proprietário cria um projeto de propriedade em duas fases:  
   
-1. Chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> método. Isso fornece o propriedade projeto uma oportunidade para criar um objeto de projeto agregado com base em como o controle de entrada `IUnknown`. O projeto de propriedade passa interno `IUnknown` e o objeto agregado para o projeto proprietário. Isso fornece a propriedade project a oportunidade de armazenar interno `IUnknown`.  
+1. Chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> método. Isso dá ao projeto de propriedade uma oportunidade de criar um objeto de projeto agregado com base no controle de entrada `IUnknown` . O projeto de propriedade passa o `IUnknown` objeto interno e agregado de volta para o projeto de proprietário. Isso dá ao projeto de propriedade uma chance de armazenar o interno `IUnknown` .  
   
-2. Chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> método. O projeto de propriedade faz todos os seu instanciação quando este método é chamado em vez de chamar `IVsProjectFactory::CreateProject` como seria o caso para projetos que não são de propriedade. A entrada `VSOWNEDPROJECTOBJECT` enumeração normalmente é o projeto de propriedade agregado. O projeto de propriedade pode usar essa variável para determinar se seu objeto de projeto já foi criado (cookie não é igual a NULL) ou deve ser criado (cookie igual a NULL).  
+2. Chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> método. O projeto de propriedade faz toda a sua instanciação quando esse método é chamado em vez de chamar `IVsProjectFactory::CreateProject` , como seria o caso de projetos que não são de propriedade. A enumeração de entrada `VSOWNEDPROJECTOBJECT` normalmente é o projeto de propriedade agregada. O projeto de propriedade pode usar essa variável para determinar se seu objeto de projeto já foi criado (cookie não é igual a NULL) ou deve ser criado (cookie é igual a NULL).  
   
-   Tipos de projeto são identificados por um GUID, semelhante ao CLSID de um objeto COM cocreatable exclusivo do projeto. Normalmente, um projeto factory manipula a criação de instâncias de um tipo de projeto único, embora seja possível ter uma fábrica de projeto lidar com mais de um GUID de tipo de projeto.  
+   Os tipos de projeto são identificados por um GUID de projeto exclusivo, semelhante ao CLSID de um objeto COM coformativo. Normalmente, uma fábrica de projetos lida com a criação de instâncias de um único tipo de projeto, embora seja possível ter uma fábrica de projetos com mais de um GUID de tipo de projeto.  
   
-   Tipos de projeto são associados com uma extensão de nome de arquivo específico. Quando um usuário tenta abrir um arquivo de projeto existente ou tenta criar um novo projeto por meio da clonagem de um modelo, o IDE usa a extensão no arquivo para determinar o GUID do projeto correspondente.  
+   Os tipos de projeto são associados a uma extensão de nome de arquivo específica. Quando um usuário tenta abrir um arquivo de projeto existente ou tenta criar um novo projeto clonando um modelo, o IDE usa a extensão no arquivo para determinar o GUID do projeto correspondente.  
   
-   Assim que o IDE determina que se ele deve criar um novo projeto ou abra um projeto existente de um tipo específico, o IDE usa as informações no registro do sistema em [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] para encontrar qual VSPackage implementa a fábrica de projeto necessários. O IDE carrega esse VSPackage. No <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, o VSPackage deverá registrar sua fábrica de projeto no IDE chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.  
+   Assim que o IDE determina se ele deve criar um novo projeto ou abrir um projeto existente de um tipo específico, o IDE usa as informações no registro do sistema em [HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio\8.0\Projects] para descobrir qual VSPackage implementa a fábrica de projetos necessária. O IDE carrega esse VSPackage. No <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, o VSPackage deve registrar sua fábrica de projetos com o IDE chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.  
   
-   O principal método o `IVsProjectFactory` interface é <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> que deve lidar com dois cenários: abrir um projeto existente e criar um novo projeto. A maioria dos projetos armazena seu estado de projeto em um arquivo de projeto. Normalmente, os novos projetos são criados por fazer uma cópia do arquivo de modelo passada para o `CreateProject` método e, em seguida, abrindo a cópia. Projetos existentes são instanciados por meio diretamente a abertura do arquivo de projeto passado para `CreateProject` método. O `CreateProject` método pode exibir os recursos adicionais da interface do usuário para o usuário conforme necessário.  
+   O método principal da `IVsProjectFactory` interface é <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> que deve lidar com dois cenários: abrir um projeto existente e criar um novo projeto. A maioria dos projetos armazena seu estado de projeto em um arquivo de projeto. Normalmente, novos projetos são criados fazendo uma cópia do arquivo de modelo passado para o `CreateProject` método e, em seguida, abrindo a cópia. Os projetos existentes são instanciados abrindo diretamente o arquivo de projeto passado para o `CreateProject` método. O `CreateProject` método pode exibir recursos adicionais da interface do usuário conforme necessário.  
   
-   Um projeto pode também não usar nenhum arquivo e, em vez disso, armazenar seu estado de projeto em um mecanismo de armazenamento que não seja o sistema de arquivos, como um servidor Web ou um banco de dados. Nesse caso, o parâmetro de nome do arquivo passado para o `CreateProject` método não é, na verdade, um caminho de sistema de arquivos, mas uma cadeia de caracteres exclusiva — uma URL — para identificar os dados do projeto. Você não precisa copiar os arquivos de modelo que são passados para `CreateProject` para disparar a sequência de construção apropriado a ser executado.  
+   Um projeto também pode usar nenhum arquivo e, em vez disso, armazenar o estado do projeto em um mecanismo de armazenamento diferente do sistema de arquivos, como um banco de dados ou servidor Web. Nesse caso, o parâmetro de nome de arquivo passado para o `CreateProject` método não é, na verdade, um caminho do sistema de arquivos, mas uma cadeia de caracteres exclusiva — uma URL — para identificar os dados do projeto. Você não precisa copiar os arquivos de modelo que são passados para `CreateProject` para disparar a sequência de construção apropriada a ser executada.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)

@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329254"
 ---
 # <a name="optimizing-profiler-settings"></a>Otimizando as configurações do criador de perfil
@@ -46,8 +46,8 @@ Determinadas ferramentas, como a ferramenta de [uso da CPU](../profiling/cpu-usa
 
 ![Página de propriedades do hub de diagnóstico](../profiling/media/diaghubpropertiespage.png "Página de propriedades do hub de diagnóstico")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Usando várias ferramentas de criador de perfil simultaneamente](../profiling/use-multiple-profiler-tools-simultaneously.md)
+- [Usar várias ferramentas de criador de perfil simultaneamente](../profiling/use-multiple-profiler-tools-simultaneously.md)
 - [Entendendo sobre os métodos de coleta de desempenho](../profiling/understanding-performance-collection-methods-perf-profiler.md)

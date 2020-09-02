@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695008"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Passo a passo: Identificando problemas de desempenho
@@ -38,7 +38,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 - Analise os resultados da criação de perfil instrumentada para localizar e corrigir um problema de desempenho.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Pré-requisitos  
   
 - Compreensão intermediária de C#.  
   
@@ -67,7 +67,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 5. Certifique-se de que a **Amostragem de CPU (recomendada)** está selecionada e clique em **Avançar**.  
   
-6. Em **Para qual aplicativo o perfil deve ser criado?** , selecione PeopleTrax e clique em **Avançar**.  
+6. Em **Para qual aplicativo o perfil deve ser criado?**, selecione PeopleTrax e clique em **Avançar**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] compila o projeto e inicia a criação de perfil do aplicativo. A janela do aplicativo **PeopleTrax** é exibida.  
   
@@ -128,7 +128,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
      O **bloco de notas** é iniciado e exibe um novo arquivo que contém uma lista de pessoas do PeopleTrax. A espera permite que você identifique mais facilmente o procedimento de exportação de dados para filtragem.  
   
-6. Feche o **bloco de notas** e, em seguida, feche o aplicativo **PeopleTrax**.  
+6. Feche o **bloco de notas**e feche o aplicativo **PeopleTrax** .  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] gera um relatório de sessão de desempenho (*.vsp).  
   
@@ -158,7 +158,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
    Quando você executar o aplicativo novamente, verá melhorias marcadas no desempenho. É recomendável que você execute a sessão de criação de perfil novamente, mesmo que haja melhorias visíveis no desempenho do usuário. É importante revisar os dados depois de corrigir um problema porque o primeiro problema pode obscurecer algum outro problema.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Formato de Informações de Depuração)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7,/Zi,/ZI (formato de informações de depuração)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

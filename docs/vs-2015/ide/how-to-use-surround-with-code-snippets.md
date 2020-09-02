@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdb635854d298b8a1eabc81019f7b18c2f50eecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670558"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Como usar snippets de código Surround-with
@@ -52,11 +52,11 @@ Os procedimentos a seguir descrevem como usar snippets de código surround-with.
 
 2. No Editor de Código, selecione o texto a cercar.
 
-3. Clique com o botão direito do mouse no texto selecionado e, em seguida, selecione o comando **Surround-With** no menu de contexto.
+3. Clique com o botão direito do mouse no texto selecionado e selecione o comando **surround with** no menu de contexto.
 
 4. Selecione o snippet de código no alimentador de snippet de código e, em seguida, pressione TAB ou ENTER.
 
      Como alternativa, digite o nome do snippet de código e, em seguida, pressione TAB ou ENTER.
 
-## <a name="see-also"></a>Consulte também
- [Seletor de trecho de código](../ide/reference/code-snippet-picker.md) de [trechos de código Visual C# ](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Consulte Também
+ [Seletor de trecho de código](../ide/reference/code-snippet-picker.md) de [trechos de código do Visual C#](../ide/visual-csharp-code-snippets.md)

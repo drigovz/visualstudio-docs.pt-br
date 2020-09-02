@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670651"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Como suprimir avisos do compilador
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode melhorar a organização de um log de build especificando um ou mais tipos de avisos do compilador que você não deseja que ele contenha. Por exemplo, você pode usar essa técnica para examinar algumas, mas não todas as informações que são geradas automaticamente ao definir o detalhamento do log de build como Normal, Detalhado ou Diagnóstico. Para obter mais informações sobre detalhamento, consulte [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md) (Como exibir, salvar e configurar arquivos de log de build).
+Você pode melhorar a organização de um log de build especificando um ou mais tipos de avisos do compilador que você não deseja que ele contenha. Por exemplo, você pode usar essa técnica para examinar algumas, mas não todas as informações que são geradas automaticamente ao definir o detalhamento do log de build como Normal, Detalhado ou Diagnóstico. Para obter mais informações sobre detalhes, consulte [como exibir, salvar e configurar arquivos de log de compilação](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir avisos específicos para C# Visual ou F \#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir avisos específicos para o Visual C# ou F\#
 
 1. No **Gerenciador de Soluções**, escolha o projeto no qual você deseja suprimir avisos.
 
@@ -58,7 +58,7 @@ Você pode ocultar avisos de compilador específicos para Visual Basic editando 
 
 2. Na barra de menus, escolha **Projeto**, **Descarregar Projeto**.
 
-3. No **Gerenciador de Soluções**, abra o menu de atalho do projeto Proxies e escolha **Editar**_ProjectName_ **.vbproj**.
+3. No **Gerenciador de Soluções**, abra o menu de atalho do projeto Proxies e escolha **Editar**_ProjectName_**.vbproj**.
 
     O arquivo de projeto é aberto no editor de códigos.
 
@@ -108,8 +108,8 @@ Você pode ocultar avisos de compilador específicos para Visual Basic editando 
 
    Para obter mais informações, consulte [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
 
 - [Passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Como exibir, salvar e configurar arquivos de log de compilação](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)

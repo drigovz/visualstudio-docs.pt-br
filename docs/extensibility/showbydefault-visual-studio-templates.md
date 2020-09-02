@@ -1,5 +1,5 @@
 ---
-title: Elemento ShowByDefault (Modelos do Estúdio Visual)
+title: Elemento ShowByDefault (modelos do Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700102"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (Modelos do Estúdio Visual)
-Se `false`, especificar que o modelo só será exibido sob o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado .
+# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelos do Visual Studio)
+Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
 
- \<VSTemplate \<> TemplateData> \<ShowByDefault>
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <ShowByDefault> true/false </ShowByDefault>
@@ -45,18 +46,18 @@ Se `false`, especificar que o modelo só será exibido sob o [TemplateGroupID](.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve `true` `false`ser ou . Se for verdade, especifica que o modelo será exibido para todos os tipos de projeto. Se for falso, o modelo só será `TemplateGroupID`exibido sob o especificado .
+ O texto deve ser `true` ou `false` . Se for true, especifica que o modelo será exibido para todos os tipos de projeto. Se for false, o modelo só será exibido sob o especificado `TemplateGroupID` .
 
 ## <a name="remarks"></a>Comentários
  `ShowByDefault` é um elemento opcional. O valor padrão é `true`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] os metadados de um modelo.
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2:CreateObject | Microsoft Docs
+title: 'IDebugFunctionObject2:: CreateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728484"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Cria um objeto que usa um construtor dado configurações de sinalizador de avaliação e um valor de tempo.
+Cria um objeto que usa um construtor de acordo com as configurações de sinalizador de avaliação e um valor de tempo limite.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,30 +48,30 @@ int CreateObject (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pConstructor`\
-[em] Um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que representa o construtor do objeto a ser criado.
+no Um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que representa o construtor do objeto a ser criado.
 
 `dwArgs`\
-[em] O número de `pArg` parâmetros na matriz. Representa o número de parâmetros passados para o construtor.
+no O número de parâmetros na `pArg` matriz. Representa o número de parâmetros passados para o construtor.
 
 `pArgs`\
-[em] Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa os parâmetros passados para o construtor.
+no Uma matriz de objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa os parâmetros passados para o construtor.
 
 `dwEvalFlags`\
-[em] Uma combinação de bandeiras da [enumeração EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifica como a avaliação deve ser realizada.
+no Uma combinação de sinalizadores da enumeração [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especificam como a avaliação deve ser executada.
 
 `dwTimeout`\
-[em] Tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use **INFINITE** para esperar indefinidamente.
+no Tempo máximo, em milissegundos, a aguardar antes de retornar deste método. Use **infinito** para aguardar indefinidamente.
 
 `ppObject`\
-[fora] Retorna um **IDebugObject** representando o objeto recém-criado.
+fora Retorna um **IDebugObject** que representa o objeto recém-criado.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame este método para criar um objeto que represente uma instância de uma classe, ou outro tipo complexo que exija um construtor, que é um parâmetro.
+ Chame esse método para criar um objeto que represente uma instância de uma classe ou outro tipo complexo que exija um construtor, que é um parâmetro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

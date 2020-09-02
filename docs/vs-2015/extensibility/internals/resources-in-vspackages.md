@@ -13,16 +13,16 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696085"
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Você pode incorporar recursos localizados em nativa da interface do usuário DLLs satélite, DLLs satélite gerenciadas, ou em um VSPackage gerenciado em si.  
+Você pode inserir recursos localizados em DLLs de interface do usuário satélite nativas, DLLs satélite gerenciadas ou em um VSPackage gerenciado.  
   
  Alguns recursos não podem ser inseridos em VSPackages. Os seguintes tipos gerenciados podem ser inseridos:  
   
@@ -30,24 +30,24 @@ Você pode incorporar recursos localizados em nativa da interface do usuário DL
   
 - Chaves de carregamento de pacote (que também são cadeias de caracteres)  
   
-- Ícones da janela de ferramenta  
+- Ícones da janela de ferramentas  
   
-- Arquivos de saída de tabela de comando (CTO) compilados  
+- Arquivos de saída de tabela de comando compilado (CTO)  
   
-- Bitmaps CTO  
+- Bitmaps do CTO  
   
-- Ajuda de linha de comando  
+- Ajuda da linha de comando  
   
-- Sobre dados de caixa de diálogo  
+- Sobre os dados da caixa de diálogo  
   
-  Recursos em um pacote gerenciado são selecionados por ID de recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos, como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.  
+  Os recursos em um pacote gerenciado são selecionados pela ID do recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos como um `byte[]` . Todos os outros itens de recurso são identificados por tipo.  
   
-  Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
+  Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
   
   [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
   [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
-  Definindo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar as DLLs de satélite não gerenciado ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontra dois ou mais recursos que têm a mesma ID de recurso, ele usa o primeiro recurso encontra.  
+  <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>A configuração dessa maneira indica que o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar DLLs satélite não gerenciadas ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Se o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontrar dois ou mais recursos que tenham a mesma ID de recurso, ele usará o primeiro recurso que encontrar.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir é uma representação gerenciada de um ícone de janela de ferramenta.  
@@ -66,7 +66,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- O exemplo a seguir demonstra como incorporar a matriz de bytes CTO, que deve ser nomeada CTMENU.  
+ O exemplo a seguir demonstra como inserir a matriz de bytes CTO, que deve ser nomeada CTMENU.  
   
 ```  
 <data name="CTMENU"  
@@ -82,13 +82,13 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
-## <a name="implementation-notes"></a>Notas de implementação  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carregamento de atrasos de VSPackages sempre que possível. Uma consequência de inserção de um arquivo CTO em um VSPackage é que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve carregar todos os tais VSPackages na memória durante a instalação, que é quando ele cria uma tabela de comandos mesclada. Recursos podem ser extraídos de um VSPackage, examinando os metadados sem executar código em um VSPackage. O VSPackage não foi inicializado neste momento, portanto, a perda de desempenho é mínima.  
+## <a name="implementation-notes"></a>Notas da implementação  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] atrasa o carregamento de VSPackages sempre que possível. Uma conseqüência de inserir um arquivo CTO em um VSPackage é que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o deve carregar todos esses VSPackages na memória durante a instalação, que é quando ele cria uma tabela de comando mesclada. Os recursos podem ser extraídos de um VSPackage examinando os metadados sem executar código no VSPackage. O VSPackage não é inicializado no momento, portanto, a perda de desempenho é mínima.  
   
- Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] solicitações de um recurso de um VSPackage após a instalação, esse pacote é provavelmente já carregado e inicializado, portanto, a perda de desempenho é mínima.  
+ Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o solicita um recurso de um VSPackage após a instalação, esse pacote provavelmente já estará carregado e inicializado, portanto, a perda de desempenho será mínima.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [VSPackages gerenciados](../../misc/managed-vspackages.md)   
- [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)   
- [Recursos localizados em aplicativos MFC: DLLs satélite](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Gerenciando VSPackages](../../extensibility/managing-vspackages.md)   
+ [Recursos localizados em aplicativos do MFC: DLLs satélite](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [VSPackages gerenciados](../../misc/managed-vspackages.md)

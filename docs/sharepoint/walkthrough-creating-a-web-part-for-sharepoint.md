@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247653"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Walkthrough: criar uma Web Part para o SharePoint
@@ -214,7 +214,7 @@ Mostre e oculte os funcionários que não são gerentes selecionando um item que
 
      Todos os funcionários aparecem na Web Part.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Criar Web Parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Como: criar uma Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

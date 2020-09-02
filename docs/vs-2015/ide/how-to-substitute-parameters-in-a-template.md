@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670655"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Como substituir parâmetros em um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode substituir parâmetros de modelo, como nomes de classes e namespaces, quando um arquivo baseado em um modelo for criado. Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).
+Você pode substituir parâmetros de modelo, como nomes de classes e namespaces, quando um arquivo baseado em um modelo for criado. Para obter uma lista completa de parâmetros de modelo, consulte [parâmetros de modelo](../ide/template-parameters.md).
 
 ## <a name="procedure"></a>Procedimento
  Você pode substituir parâmetros nos arquivos de um modelo sempre que um projeto baseado nesse modelo for criado. Este procedimento explica como criar um modelo que substitui o nome de um namespace pelo nome do projeto seguro quando um novo projeto for criado com o modelo.
@@ -46,5 +46,5 @@ Você pode substituir parâmetros de modelo, como nomes de classes e namespaces,
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando modelos de modelo de projeto e item](../ide/creating-project-and-item-templates.md) [parâmetros de template](../ide/template-parameters.md) [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [elemento ProjectItem (modelos de item do Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247643"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guia do Visual Studio para empresas
@@ -67,6 +67,6 @@ Saiba como atualizar o Visual Studio com êxito e corrigir problemas de atualiza
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também 
+## <a name="see-also"></a>Confira também 
 
 - [Guia de produtividade do Visual Studio](../ide/productivity-features.md)

@@ -1,5 +1,5 @@
 ---
-title: Registrar geradores de arquivo único | Microsoft Docs
+title: Registrando geradores de arquivo único | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696098"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você deve registrá-lo tão [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pode instanciá-la e a associa a um tipo de projeto específico.  
+Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , você deve registrá-la para que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] possa instanciá-la e o associe a um determinado tipo de projeto.  
   
 ### <a name="to-register-a-custom-tool"></a>Para registrar uma ferramenta personalizada  
   
-1. Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.  
+1. Registre a DLL de ferramenta personalizada no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registro local ou no registro do sistema, em HKEY_CLASSES_ROOT.  
   
-     Por exemplo, eis aqui as informações de registro gerenciado MSDataSetGenerator ferramenta personalizada, que vem com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
+     Por exemplo, aqui estão as informações de registro da ferramenta personalizada MSDataSetGenerator gerenciada, que vem com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] :  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]  
@@ -38,7 +38,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2. Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
+2. Crie uma chave do registro no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hive desejado em GUID de geradores, \\ *GUID* em que *GUID* é o GUID definido pelo serviço ou sistema de projeto do idioma específico. O nome da chave se torna o nome programático de sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
   
     - (Padrão)  
   
@@ -46,11 +46,11 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
   
     - CLSID  
   
-         Necessário. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Obrigatórios. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  
   
     - GeneratesDesignTimeSource  
   
-         Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.  
+         Obrigatórios. Indica se os tipos de arquivos produzidos por essa ferramenta personalizada são disponibilizados para designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis para designers visuais ou (um) 1 para tipos disponíveis para designers visuais.  
   
     > [!NOTE]
     > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.  
@@ -74,9 +74,9 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
     "GeneratesDesignTimeSource"=dword:00000001  
     ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
  [Implementando geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)   
- [Determinando o Namespace padrão de um projeto](../../misc/determining-the-default-namespace-of-a-project.md)   
- [Expor tipos aos Designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [Determinando o namespace padrão de um projeto](../../misc/determining-the-default-namespace-of-a-project.md)   
+ [Expondo tipos a designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)   
  [Introdução ao objeto BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

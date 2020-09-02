@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670470"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
@@ -52,7 +52,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
 
     - Insira o caminho de um arquivo .msha ou a URL de um ponto de extremidade de serviço.
 
-    - Escolha o botão Procurar ( **...** ) para navegar para um arquivo .msha.
+    - Escolha o botão procurar (**...**) para navegar para um arquivo. msha.
 
     - Na lista, escolha a entrada usada mais recentemente.
 
@@ -124,5 +124,5 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
 
 3. Escolha o botão **Fechar** quando o conteúdo tiver sido movido.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

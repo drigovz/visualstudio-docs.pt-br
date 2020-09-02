@@ -1,5 +1,5 @@
 ---
-title: 'Como: Desabilitar a ativação de aplicativos ClickOnce pela URL | Microsoft Docs'
+title: Como desabilitar a ativação de URL de aplicativos ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,32 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697221"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como: Desabilitar a ativação de URL de aplicativos ClickOnce
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como desabilitar a ativação de aplicativos ClickOnce pela URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Normalmente, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo será iniciado automaticamente, imediatamente após a instalação de um servidor Web. Por motivos de segurança, você pode optar por desabilitar esse comportamento e diga aos usuários para iniciar o aplicativo a partir de **iniciar** menu em vez disso. O procedimento a seguir descreve como desabilitar a ativação de URL.  
+Normalmente, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo será iniciado automaticamente imediatamente após ser instalado a partir de um servidor Web. Por motivos de segurança, você pode optar por desabilitar esse comportamento e informar os usuários para iniciar o aplicativo no menu **Iniciar** em vez disso. O procedimento a seguir descreve como desabilitar a ativação de URL.  
   
- Essa técnica pode ser usada somente para [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos instalados no computador do usuário de um servidor Web. Ele não pode ser usado para aplicativos somente online, que podem ser iniciados apenas por meio de sua URL. Para obter mais informações sobre a diferença entre os aplicativos instalados e somente online, consulte [escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+ Essa técnica pode ser usada somente para [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos instalados no computador do usuário a partir de um servidor Web. Ele não pode ser usado para aplicativos somente online, que só podem ser iniciados usando sua URL. Para obter mais informações sobre a diferença entre aplicativos instalados e somente online, consulte [escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Este procedimento usa o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] MageUI.exe de ferramentas. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Você também pode executar esse procedimento usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Este procedimento usa a [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ferramenta MageUI.exe. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (manifest Generation and Editing Tool, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Você também pode executar esse procedimento usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="procedure"></a>Procedimento  
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Para desabilitar a ativação de URL para seu aplicativo  
   
-1. Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Abra seu manifesto de implantação no MageUI.exe. Se você ainda não tiver criado uma, siga as etapas descritas em [Walkthrough: Implantando manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2. Selecione o **opções de implantação** guia.  
+2. Selecione a guia **Opções de implantação** .  
   
-3. Desmarque a **executar o aplicativo depois de instalar automaticamente** caixa de seleção.  
+3. Desmarque a caixa de seleção **Executar aplicativo automaticamente após a instalação** .  
   
-4. Salve e assinar o manifesto.  
+4. Salve e assine o manifesto.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
