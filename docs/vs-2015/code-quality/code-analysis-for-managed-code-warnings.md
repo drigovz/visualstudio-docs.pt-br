@@ -1,6 +1,6 @@
 ---
 title: Análise de código para avisos de código gerenciado | Microsoft Docs
-ms.date: 11/15/2016
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535727"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285743"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Avisos da análise de código para código gerenciado
+# <a name="net-code-analysis-rules"></a>Regras de análise de código .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A ferramenta de análise de código gerenciado fornece avisos que indicam violações de regra em bibliotecas de código gerenciado. Os avisos são organizados em áreas de regras, como design, localização, desempenho e segurança. Cada aviso significa uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos para cada aviso de análise de código gerenciado.
@@ -37,7 +37,7 @@ A ferramenta de análise de código gerenciado fornece avisos que indicam viola�
 |Categoria|A categoria do aviso.|
 |Alteração Significativa|Se a correção de uma violação da regra é uma alteração significativa. Alteração significativa significa que um assembly que tem uma dependência no destino que causou a violação não será recompilado com a nova versão fixa ou pode falhar em tempo de execução devido à alteração. Quando há várias correções disponíveis e pelo menos uma correção é uma alteração significativa e uma correção não é especificada, ' quebra ' e ' não separável ' são especificados.|
 |Causa|O código gerenciado específico que faz com que a regra gere um aviso.|
-|Descrição|Discute os problemas que estão por trás do aviso.|
+|Description|Discute os problemas que estão por trás do aviso.|
 |Como Corrigir Violações|Explica como alterar o código-fonte para satisfazer a regra e impedir que ela gere um aviso.|
 |Quando Suprimir Avisos|Descreve quando é seguro suprimir um aviso da regra.|
 |Código de exemplo|Exemplos que violam a regra e exemplos corrigidos que satisfazem a regra.|
