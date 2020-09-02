@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663933"
 ---
 # <a name="working-with-textures-and-images"></a>Trabalhando com texturas e imagens
@@ -45,5 +45,5 @@ Você pode usar o Editor de Imagens no [!INCLUDE[vsprvs](../includes/vsprvs-md.m
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens para trabalhar com texturas e imagens.|
-|[Exemplos do Editor de Imagens](../designers/image-editor-examples.md)|Fornece links para tópicos que demonstram como usar o Editor de Imagens para executar tarefas de processamento de imagens comuns.|
+|[Editor de imagem](../designers/image-editor.md)|Descreve como usar o Editor de Imagens para trabalhar com texturas e imagens.|
+|[Exemplos do editor de imagem](../designers/image-editor-examples.md)|Fornece links para tópicos que demonstram como usar o Editor de Imagens para executar tarefas de processamento de imagens comuns.|

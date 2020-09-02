@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816183"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Erro de sintaxe em expressão regular (JavaScript)
@@ -28,7 +28,7 @@ A estrutura da sua cadeia de caracteres de pesquisa viola uma ou mais das regras
   
 - Verifique se a estrutura da cadeia de caracteres de pesquisa de expressão regular adere à [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sintaxe de expressão regular.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Método compile (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

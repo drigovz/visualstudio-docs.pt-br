@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538379"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Como: adicionar controles de conteúdo a documentos do Word
@@ -48,7 +48,7 @@ ms.locfileid: "85538379"
 
   Para obter informações sobre controles de conteúdo, consulte [controles de conteúdo](../vsto/content-controls.md).
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Adicionar controles de conteúdo em tempo de design
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Adicionar controles de conteúdo em tempo de design
  Há várias maneiras de adicionar controles de conteúdo ao documento em um projeto de nível de documento em tempo de design:
 
 - Adicione um controle de conteúdo da guia **controles do Word** da **caixa de ferramentas**.
@@ -69,11 +69,11 @@ ms.locfileid: "85538379"
 
     - Clique duas vezes em um controle de conteúdo na **caixa de ferramentas**.
 
-         ou o
+         ou
 
     - Clique em um controle de conteúdo na **caixa de ferramentas** e pressione a tecla **Enter** .
 
-         ou o
+         ou
 
     - Arraste um controle de conteúdo da **caixa de ferramentas** para o documento. O controle de conteúdo é adicionado na seleção atual no documento, não no local do ponteiro do mouse.
 
@@ -94,7 +94,7 @@ ms.locfileid: "85538379"
 
 3. No grupo **controles** , clique no ícone do controle de conteúdo que você deseja adicionar.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Adicionar controles de conteúdo em tempo de execução em um projeto de nível de documento
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Adicionar controles de conteúdo em tempo de execução em um projeto de nível de documento
  Você pode adicionar controles de conteúdo programaticamente ao seu documento em tempo de execução usando métodos da <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade da `ThisDocument` classe em seu projeto. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:
 
 - Adicionar um controle na seleção atual.
@@ -135,7 +135,7 @@ ms.locfileid: "85538379"
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Adicionar controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Adicionar controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO
  Você pode adicionar controles de conteúdo programaticamente a qualquer documento aberto em tempo de execução usando um suplemento do VSTO. Para fazer isso, gere um <xref:Microsoft.Office.Tools.Word.Document> item de host baseado em um documento aberto e, em seguida, use os métodos da <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade desse item de host. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:
 
 - Adicionar um controle na seleção atual.
@@ -182,7 +182,7 @@ ms.locfileid: "85538379"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)

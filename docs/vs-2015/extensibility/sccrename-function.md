@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143715"
 ---
 # <a name="sccrename-function"></a>Função SccRename
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa função renomeia um arquivo no sistema de controle de origem.  
+Essa função renomeia um arquivo no sistema de controle do código-fonte.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,33 +37,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>Parâmetros  
  pvContext  
- [in] A estrutura de contexto de plug-in de controle de origem.  
+ no A estrutura de contexto do plug-in de controle do código-fonte.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
+ no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.  
   
  lpFileName  
- [in] O nome de arquivo totalmente qualificado do arquivo que está sendo renomeado.  
+ no O nome de arquivo totalmente qualificado do arquivo que está sendo renomeado.  
   
  lpNewName  
- [in] O novo nome totalmente qualificado. Se o caminho do diretório é diferente, o arquivo foi movido de um subdiretório para outro.  
+ no O novo nome totalmente qualificado. Se o caminho do diretório for diferente, o arquivo terá sido movido de um subdiretório para outro.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_OK|A operação de renomeação foi concluída com êxito.|  
-|SCC_E_PROJNOTOPEN|O projeto não está aberto no controle de origem.|  
-|SCC_E_FILENOTCONTROLLED|O arquivo não está sob controle de origem.|  
+|SCC_E_PROJNOTOPEN|O projeto não está aberto sob controle do código-fonte.|  
+|SCC_E_FILENOTCONTROLLED|O arquivo não está no controle do código-fonte.|  
 |SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|  
-|SCC_E_NOTAUTHORIZED|O usuário não está autorizado para concluir esta operação.|  
-|SCC_E_COULDNOTCREATEPROJECT|O projeto não pôde ser criado como parte do processo de renomeação.|  
+|SCC_E_NOTAUTHORIZED|O usuário não está autorizado a concluir esta operação.|  
+|SCC_E_COULDNOTCREATEPROJECT|Não foi possível criar o projeto como parte do processo de renomeação.|  
 |SCC_E_OPNOTPERFORMED|A operação não foi executada.|  
 |SCC_E_NONSPECIFICERROR|Ocorreu um erro não especificado ou geral.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa função pode ser usada para renomear um arquivo ou movê-lo de um local para outro no sistema de controle de origem. O plug-in de controle do código-fonte não deve tentar acessar o arquivo no disco. É responsabilidade do IDE para renomear o arquivo local.  
+ Essa função pode ser usada para renomear um arquivo ou movê-lo de um local para outro no sistema de controle do código-fonte. O plug-in de controle do código-fonte não deve tentar acessar o arquivo no disco. É responsabilidade do IDE renomear o arquivo local.  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulte Também  
+ [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

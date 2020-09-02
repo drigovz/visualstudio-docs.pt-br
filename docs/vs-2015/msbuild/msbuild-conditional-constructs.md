@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143754"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructos condicionais do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um mecanismo para processamento de um/ou outro com os elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) e [Otherwise](../msbuild/otherwise-element-msbuild.md).  
+[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um mecanismo para processamento ou/ou com os elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [otherwise](../msbuild/otherwise-element-msbuild.md) .  
   
 ## <a name="using-the-choose-element"></a>Usando o elemento Choose  
  O elemento `Choose` contém uma série de elementos de `When` com atributos `Condition` que são testados na ordem de cima para baixo até que um seja avaliado como `true`. Se mais de um elemento `When` for avaliado como `true`, somente o primeiro será usado. Um elemento `Otherwise`, se presente, será avaliado se nenhuma condição em um elemento `When` for avaliada como `true`.  
@@ -79,8 +79,8 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um mecanismo 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Escolher elemento (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538392"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Como: adicionar uma região de formulário a um projeto de suplemento do Outlook
@@ -60,7 +60,7 @@ ms.locfileid: "85538392"
 
      Todos os tipos de região de formulário podem aparecer nos inspetores, no modo de composição (para criar itens) e no modo de leitura (para exibir itens). Os tipos de região de formulário adjacente, substituição e substituição – também podem aparecer no painel de leitura.
 
-10. Clique em **Próximo**.
+10. Clique em **Avançar**.
 
 11. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , selecione as classes de mensagem padrão do Outlook ou digite os nomes de uma ou mais classes de mensagem personalizadas e clique em **concluir**. Para obter mais informações, consulte [associar uma região de formulário a uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 

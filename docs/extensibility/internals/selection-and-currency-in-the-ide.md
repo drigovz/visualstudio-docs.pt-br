@@ -1,5 +1,5 @@
 ---
-title: Seleção e Moeda no IDE | Microsoft Docs
+title: Seleção e moeda no IDE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,53 +14,53 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705578"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seleção e moeda no IDE
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) mantém informações sobre os objetos selecionados atualmente pelos usuários usando *o contexto*de seleção . Com o contexto de seleção, os VSPackages podem participar do rastreamento de moedas de duas maneiras:
+O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) mantém informações sobre os objetos selecionados no momento usando o *contexto*de seleção. Com o contexto de seleção, VSPackages pode participar do controle de moeda de duas maneiras:
 
-- Ao propagar informações de moeda sobre os VSPackages para o IDE.
+- Propagando informações de moeda sobre o VSPackages para o IDE.
 
-- Monitorando as seleções ativas atualmente dos usuários dentro do IDE.
+- Monitorando as seleções atualmente ativas do usuário no IDE.
 
 ## <a name="selection-context"></a>Contexto de seleção
- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE mantém globalmente o controle da moeda IDE em seu próprio objeto de contexto de seleção global. A tabela a seguir mostra os elementos que compõem o contexto de seleção.
+ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE mantém o controle global da moeda IDE em seu próprio objeto de contexto de seleção global. A tabela a seguir mostra os elementos que compõem o contexto de seleção.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|Hierarquia atual|Tipicamente o projeto atual; uma hierarquia de corrente NULL indica que a solução como um todo é atual.|
-|ItemID atual|O item selecionado na hierarquia atual; quando há várias seleções em uma janela de projeto, pode haver vários itens atuais.|
-|Atual`SelectionContainer`|Segura um ou mais objetos para os quais a janela Propriedades deve exibir propriedades.|
+|Hierarquia atual|Normalmente, o projeto atual; uma hierarquia atual nula indica que a solução como um todo é atual.|
+|ItemID atual|O item selecionado na hierarquia atual; Quando há várias seleções em uma janela de projeto, pode haver vários itens atuais.|
+|Atualizados `SelectionContainer`|Mantém um ou mais objetos para os quais o janela Propriedades deve exibir as propriedades.|
 
  Além disso, o ambiente mantém duas listas globais:
 
-- Uma lista de identificadores ativos de comando ui
+- Uma lista de identificadores de comando de interface do usuário ativas
 
-- Uma lista de tipos de elementos ativos atualmente.
+- Uma lista de tipos de elementos atualmente ativos.
 
-### <a name="window-types-and-selection"></a>Tipos de janelas e seleção
- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organiza janelas em dois tipos gerais:
+### <a name="window-types-and-selection"></a>Tipos de janela e seleção
+ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organiza as janelas em dois tipos gerais:
 
-- Janelas do tipo hierarquia
+- Janelas de tipo de hierarquia
 
-- Janelas de moldura, como janelas de ferramentas e documentos
+- Janelas de quadros, como janelas de ferramentas e documentos
 
-  O IDE rastreia a moeda de forma diferente para cada um desses tipos de janelas.
+  O IDE rastreia a moeda de forma diferente para cada um desses tipos de janela.
 
-  A janela mais comum do tipo de projeto é o explorador de soluções, que o IDE controla. Uma janela do tipo projeto rastreia a hierarquia global e o ItemID do contexto de seleção global, e a janela depende da seleção do usuário para determinar a hierarquia atual. Para janelas do tipo projeto, o <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>ambiente fornece o serviço global, através do qual o VSPackages pode monitorar os valores atuais para elementos abertos. A navegação de propriedade no ambiente é impulsionada por este serviço global.
+  A janela de tipo de projeto mais comum é o Gerenciador de soluções, que o IDE controla. Uma janela de tipo de projeto rastreia a hierarquia global e ItemID do contexto de seleção global, e a janela depende da seleção do usuário para determinar a hierarquia atual. Para janelas de tipo de projeto, o ambiente fornece o serviço global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> , por meio do qual VSPackages pode monitorar os valores atuais para elementos abertos. A navegação de propriedade no ambiente é orientada por esse serviço global.
 
-  As janelas de quadro, por outro lado, usam o DocObject dentro da janela do quadro para pressionar o valor SelectionContext (o trio hierarchy/ItemID/SelectionContainer). . Janelas de moldura <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usam o serviço para este fim. O DocObject pode empurrar apenas valores para o contêiner de seleção, deixando os valores locais para hierarquia e ItemID inalterados, como é típico para documentos de criança SMDI.
+  Janelas de quadros, por outro lado, usam o DocObject dentro da janela do quadro para enviar por push o valor de SelectionContext (a Hierarchy/ItemID/SelectionContainer trio). . Janelas de quadros usam o serviço <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para essa finalidade. O DocObject pode enviar somente valores para o contêiner de seleção, deixando os valores locais para Hierarchy e ItemID inalterados, como é típico para documentos filho MDI.
 
-### <a name="events-and-currency"></a>Eventos e Moeda
- Dois tipos de eventos podem ocorrer que afetam a noção de moeda do ambiente:
+### <a name="events-and-currency"></a>Eventos e moeda
+ Podem ocorrer dois tipos de eventos que afetam a noção de moeda do ambiente:
 
-- Eventos que são propagados para o nível global e alteram o contexto de seleção de quadros de janela. Exemplos desse tipo de evento incluem a abertura de uma janela MDI Child, a abertura de uma janela global de ferramentas ou a abertura de uma janela de ferramenta do tipo projeto.
+- Eventos que são propagados para o nível global e alteram o contexto de seleção do quadro da janela. Exemplos desse tipo de evento incluem uma janela filho MDI sendo aberta, uma janela de ferramenta global sendo aberta ou uma janela de ferramenta do tipo projeto que está sendo aberta.
 
-- Eventos que alteram os elementos traçados no contexto de seleção do quadro da janela. Exemplos incluem alterar a seleção dentro de um DocObject ou alterar a seleção em uma janela do tipo projeto.
+- Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro da janela. Os exemplos incluem alterar a seleção em um DocObject ou alterar a seleção em uma janela de tipo de projeto.
 
 ## <a name="see-also"></a>Confira também
 - [Objetos de contexto da seleção](../../extensibility/internals/selection-context-objects.md)
