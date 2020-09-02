@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686192"
 ---
 # <a name="profiling-tools"></a>Ferramentas de Criação de Perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o uso de memória e uso de CPU e outros problemas em nível de aplicativo. Com essas ferramentas, você pode acumular dados (como valores de variáveis, chamadas de função e eventos) ao longo do tempo em que você executar o aplicativo no depurador. Você pode exibir o estado do seu aplicativo em pontos diferentes durante a execução do seu código.  
+Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o uso de memória e de CPU, além de outros problemas no aplicativo. Com essas ferramentas, você pode acumular dados (como valores de variáveis, chamadas de função e eventos) ao longo do tempo em que você executar o aplicativo no depurador. Você pode exibir o estado do seu aplicativo em pontos diferentes durante a execução do seu código.  
   
  Confira o resumo na parte inferior para ver quais ferramentas estão disponíveis para o tipo de projeto (por exemplo, área de trabalho, UWP, ASP.NET).  
   
@@ -36,12 +36,12 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
 ## <a name="memory-usage"></a>Uso de Memória  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Localize vazamentos de memória e memória ineficiente enquanto você estiver depurando com a ferramenta **Uso da Memória**. A ferramenta permite que você tire instantâneos do heap de memória gerenciada e do heap de memória nativa. Você pode usar essa ferramenta com aplicativos ASP.NET, aplicativos universais do Windows e aplicativos da área de trabalho. A ferramenta **Uso da Memória** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Consulte [Uso da Memória](../profiling/memory-usage.md) e [Uso da Memória sem Depuração](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) para obter mais informações.  
+ Localize vazamentos de memória e memória ineficiente enquanto estiver Depurando com a ferramenta de **uso de memória** . A ferramenta permite que você tire instantâneos do heap de memória gerenciada e do heap de memória nativa. Você pode usar essa ferramenta com aplicativos ASP.NET, aplicativos universais do Windows e aplicativos da área de trabalho. A ferramenta de **uso de memória** pode ser executada na janela **ferramentas de diagnóstico** enquanto você estiver Depurando (**depurar/Windows/mostrar ferramentas de diagnóstico**) ou fora do depurador (**criador de perfil de depuração/desempenho...**). Consulte  [uso de memória](../profiling/memory-usage.md) e [uso de memória sem depuração](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) para obter mais informações.  
   
 ## <a name="cpu-usage"></a>Uso da CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código C++, C#/VB e JavaScript.  Você pode usar essa ferramenta com aplicativos de área de trabalho e universais do Windows, bem como aplicativos dos Serviços de Aplicativos do Azure. A ferramenta **Uso de CPU** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Para obter mais informações, consulte [Uso de CPU](../profiling/cpu-usage.md).  
+ A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código C++, C#/VB e JavaScript.  Você pode usar essa ferramenta com aplicativos de área de trabalho e universais do Windows, bem como aplicativos dos Serviços de Aplicativos do Azure. A ferramenta de **uso da CPU** pode ser executada na janela **ferramentas de diagnóstico** enquanto você estiver Depurando (**depurar/Windows/mostrar ferramentas de diagnóstico**) ou fora do depurador (**criador de perfil de depuração/desempenho...**). Consulte [uso da CPU](../profiling/cpu-usage.md) para obter mais informações.  
   
 ## <a name="performance-explorer"></a>Performance Explorer  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
@@ -84,17 +84,17 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
 ## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?  
  Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:  
   
-|Ferramenta de Desempenho|Área de Trabalho do Windows|Windows Universal/Store|ASP.NET|  
+|Ferramenta de Desempenho|Área de trabalho do Windows|Windows Universal/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|no|  
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|Serviço de Aplicativo do Azure (apenas)|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|  
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|  
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|no|  
-|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim|  
+|[Performance Explorer](../profiling/performance-explorer.md)|sim|no|sim|  
 |[IntelliTrace](../debugger/intellitrace.md)|Somente .NET Enterprise|Somente .NET Enterprise|Somente .NET Enterprise|  
-|[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|  
+|[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|  
 |[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

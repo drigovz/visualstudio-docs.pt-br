@@ -13,17 +13,17 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f8ec4c883078663d0e252d6a04ae7441f12f31d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686984"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Essa interface representa um objeto de matriz.  
   
@@ -33,14 +33,14 @@ ms.locfileid: "65686984"
 IDebugArrayObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
  O avaliador de expressão implementa essa interface para representar uma matriz.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface pode obter essa interface usando [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) se o objeto representa uma matriz.  
+ A interface [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) pode obter essa interface usando [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) se o objeto representar uma matriz.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- Além dos métodos na `IDebugObject` interface, os seguintes métodos são implementados no `IDebugArrayObject` interface.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ Além dos métodos na `IDebugObject` interface, os métodos a seguir são implementados na `IDebugArrayObject` interface.  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -54,11 +54,11 @@ IDebugArrayObject : IDebugObject
  Um avaliador de expressão usa essa interface para representar matrizes em uma árvore de análise.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: ee.h  
+ Cabeçalho: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

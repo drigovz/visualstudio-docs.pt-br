@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544437"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Walkthrough: associar controles de conteúdo a partes XML personalizadas
@@ -61,7 +61,7 @@ ms.locfileid: "85544437"
 
 1. Crie um projeto de documento do Word com o nome **EmployeeControls**. Crie um novo documento para a solução. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o novo documento do Word no designer e adiciona o projeto **EmployeeControls** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o novo documento do Word no designer e adiciona o projeto **EmployeeControls** ao **Gerenciador de soluções**.
 
 ## <a name="add-content-controls-to-the-document"></a>Adicionar controles de conteúdo ao documento
  Crie uma tabela que contenha três tipos diferentes de controles de conteúdo em que o usuário possa exibir ou editar informações sobre um funcionário.
@@ -148,7 +148,7 @@ ms.locfileid: "85544437"
 
      O designer de esquema é aberto.
 
-4. No **Gerenciador de soluções**, abra o menu de atalho para **Employees. xsd**e escolha **Exibir código**.
+4. No **Gerenciador de soluções**, abra o menu de atalho para  **Employees. xsd**e escolha  **Exibir código**.
 
 5. Substitua o conteúdo do arquivo **Employees. xsd** pelo esquema a seguir.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544437"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Para adicionar uma parte XML personalizada ao documento
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para **ThisDocument.cs** ou **ThisDocument. vb**e escolha **Exibir código**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para  **ThisDocument.cs** ou **ThisDocument. vb**e escolha **Exibir código**.
 
 2. Adicione as seguintes declarações à `ThisDocument` classe. Esse código declara vários objetos que serão usados para adicionar uma parte XML personalizada ao documento.
 
@@ -264,7 +264,7 @@ ms.locfileid: "85544437"
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
 
-## <a name="test-the-project"></a>Teste do projeto
+## <a name="test-the-project"></a>Testar o projeto
  Quando você abre o documento, os controles de conteúdo exibem dados dos elementos na parte XML personalizada. Você pode clicar em <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> para selecionar um dos três valores válidos para o `title` elemento, que são definidos no arquivo **Employees. xsd** . Se você editar os dados em qualquer um dos controles de conteúdo, os novos valores serão salvos na parte XML personalizada no documento.
 
 ### <a name="to-test-the-content-controls"></a>Para testar os controles de conteúdo

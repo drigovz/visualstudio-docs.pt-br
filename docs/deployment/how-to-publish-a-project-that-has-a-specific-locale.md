@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382218"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Como publicar um projeto que tem uma localidade específica
@@ -161,7 +161,7 @@ Não é incomum para um aplicativo conter componentes que possuem diversas local
 
 7. Procure em *C:\Inetpub\wwwroot\PublishLocales\en*. Você deve ver os arquivos instalados, como os manifestos, *setup.exe*e o arquivo de página da Web de publicação, além da DLL de recurso localizada. (Por padrão, o ClickOnce acrescenta uma extensão *. Deploy* em EXEs e DLLs; você pode remover essa extensão após a implantação.)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Ambiente de desenvolvimento de macros](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Janela Gerenciador de macros](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

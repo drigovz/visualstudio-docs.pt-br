@@ -9,18 +9,18 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6f1654c2497742231d12f19286f21a6395129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160453"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento é usado para especificar que um modelo de projeto é usado para criar [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
+Especifica a plataforma de destino do modelo de projeto. Esse elemento é usado para especificar que um modelo de projeto é usado para criar [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <VSTemplate>  
@@ -32,19 +32,19 @@ Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento �
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Especifica a versão do sistema operacional que os destinos de modelo de projeto.|  
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Especifica a versão do sistema operacional que o modelo de projeto tem como destino.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -53,7 +53,7 @@ Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento �
  O texto deve ser **Windows**.  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo especifica que os destinos de modelo de projeto [!INCLUDE[win8](../includes/win8-md.md)] ou posterior.  
+ Este exemplo especifica que o modelo de projeto tem como destino [!INCLUDE[win8](../includes/win8-md.md)] ou posterior.  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">   
@@ -65,6 +65,6 @@ Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento �
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985721"
 ---
 # <a name="office-development-samples"></a>Exemplos de desenvolvimento do Office
@@ -40,5 +40,5 @@ ms.locfileid: "72985721"
 |Exemplo do Gerenciador de interface do usuário|Demonstra como criar uma personalização da faixa de forma, um painel de tarefas personalizado e uma região de formulário personalizada para o Outlook implementando interfaces de extensibilidade em um suplemento do VSTO. Cada instância da faixa de tipos, do painel de tarefas e da região de formulário pode se comunicar corretamente entre si.|
 |Exemplo de interoperabilidade do VBA e do VSTO|Demonstra como chamar um método em uma personalização em nível de documento para o Excel a partir do código Visual Basic for Applications (VBA) na pasta de trabalho.<br /><br /> Este exemplo só está disponível online.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)

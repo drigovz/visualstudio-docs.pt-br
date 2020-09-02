@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544411"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento de ações (desenvolvimento do Office no Visual Studio)
@@ -42,10 +42,10 @@ ms.locfileid: "85544411"
 
  O `postActions` elemento não tem atributos.
 
- `postActions`tem o seguinte elemento.
+ `postActions` tem o seguinte elemento.
 
 ### <a name="postaction"></a>Ação
- Opcional. A função do `postAction` elemento no `vstav3` namespace é definida no [elemento&#60;ação&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ Opcional. A função do `postAction` elemento no `vstav3` namespace é definida no [ elemento&#60;ação&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemplo de ação pós-implantação
 
@@ -71,7 +71,7 @@ ms.locfileid: "85544411"
 </vstav3:postActions>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)

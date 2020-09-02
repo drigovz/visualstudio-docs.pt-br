@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985679"
 ---
 # <a name="outlook-solutions"></a>Soluções do Outlook
@@ -38,9 +38,9 @@ ms.locfileid: "72985679"
  Para obter mais informações sobre como criar um projeto de suplemento do VSTO, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Para obter mais informações sobre os modelos de projeto, consulte [visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md).
 
 ## <a name="outlook-vsto-add-in-programming-model"></a>Modelo de programação de suplemento do VSTO do Outlook
- Quando você cria um projeto de suplemento do VSTO do Outlook, o Visual Studio gera uma classe, chamada `ThisAddIn`, que é a base da sua solução. Essa classe fornece um ponto de partida para escrever seu código e também expõe o modelo de objeto do Outlook para seu suplemento do VSTO.
+ Quando você cria um projeto de suplemento do VSTO do Outlook, o Visual Studio gera uma classe, chamada `ThisAddIn` , que é a base da sua solução. Essa classe fornece um ponto de partida para escrever seu código e também expõe o modelo de objeto do Outlook para seu suplemento do VSTO.
 
- Para obter mais informações sobre a classe `ThisAddIn` e outros recursos que você pode usar em um suplemento do VSTO, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
+ Para obter mais informações sobre a `ThisAddIn` classe e outros recursos que você pode usar em um suplemento do VSTO, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatizar o Outlook usando o modelo de objeto do Outlook
  O modelo de objeto do Outlook expõe muitos tipos que você pode usar para automatizar o Outlook. Esses tipos permitem que você escreva código para realizar tarefas comuns:

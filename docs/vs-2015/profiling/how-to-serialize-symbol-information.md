@@ -1,5 +1,5 @@
 ---
-title: 'Como: Serializar informações de símbolo | Microsoft Docs'
+title: Como serializar informações de símbolo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,20 +15,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687008"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Como: Serializar informações de símbolo
+# <a name="how-to-serialize-symbol-information"></a>Como serializar informações de símbolo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode serializar os símbolos que são necessários para analisar seu aplicativo. A serialização de símbolos adiciona símbolos no arquivo .vsp. Ao adicionar informações de símbolo no arquivo .vsp, outras pessoas podem analisar um relatório de desempenho sem ter acesso aos símbolos originais. Se os símbolos não forem serializados, você deverá ter os arquivos originais instrumentados .exe e .pdb para analisar o arquivo .vsp.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar informações de símbolo automaticamente  
   
-1. No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas** , clique em **Opções**.  
   
      A caixa de diálogo **Opções** é exibida.  
   
@@ -36,7 +36,7 @@ Você pode serializar os símbolos que são necessários para analisar seu aplic
   
 3. Em **Configuração Geral**, selecione **Serializar informações de símbolo automaticamente**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Como: Informações de símbolo do Windows de referência](../profiling/how-to-reference-windows-symbol-information.md)   
- [Como: Salvar arquivos de relatório analisados](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Como: consultar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Como salvar arquivos de relatório analisados](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

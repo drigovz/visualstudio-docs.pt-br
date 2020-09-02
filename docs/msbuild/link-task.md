@@ -31,23 +31,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865342"
 ---
 # <a name="link-task"></a>tarefa de vinculação
 
-Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, consulte [as opções linker](/cpp/build/reference/linker-options) e [use o MSBuild a partir da linha de comando](/cpp/build/msbuild-visual-cpp) e use o conjunto de ferramentas Microsoft [C++ da linha de comando](/cpp/build/building-on-the-command-line).
+Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, consulte [Opções do vinculador](/cpp/build/reference/linker-options) e [usar o MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas do Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  Veja a seguir uma descrição dos parâmetros da tarefa **Link**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalDependencies**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Especifica uma lista de arquivos de entrada para adicionar ao comando.
 
@@ -55,7 +55,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **AdditionalLibraryDirectories**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Substitui o caminho da biblioteca de ambiente. Especifique um nome de diretório.
 
@@ -63,7 +63,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **AdditionalManifestDependencies**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Especifica atributos que serão colocados na seção `dependency` do arquivo de manifesto.
 
@@ -71,31 +71,31 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **AdditionalOptions**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
-  Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo, /\<option1> /\<option2> /\<option#>. Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link**.
+  Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link**.
 
   Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
 
 - **AddModuleNamesToAssembly**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Adiciona uma referência de módulo a um assembly.
 
   Para obter mais informações, confira [/ASSEMBLYMODULE (Adicionar um módulo MSIL ao assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
-- **Permitirisolamento**
+- **AllowIsolation**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, fará com que o sistema operacional realize pesquisas de manifesto e carregamentos. Se `false`, indicará que as DLLs serão carregadas como se não houvesse nenhum manifesto.
 
   Para obter mais informações, confira [/ALLOWISOLATION (Pesquisa de manifesto)](/cpp/build/reference/allowisolation-manifest-lookup).
 
-- **Bug de montagem**
+- **AssemblyDebug**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, emitirá o atributo **DebuggableAttribute** junto com o acompanhamento de informações de depuração e desabilitará otimizações JIT. Se `false`, emitirá o atributo **DebuggableAttribute**, mas desabilitará o acompanhamento de informações de depuração e as otimizações JIT.
 
@@ -103,7 +103,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **AssemblyLinkResource**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Cria um link para um recurso do .NET Framework no arquivo de saída; o arquivo de recurso não é colocado no arquivo de saída. Especifique o nome do recurso.
 
@@ -113,11 +113,11 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
   Parâmetro **Booliano** implícito.
 
-  Habilita um acompanhamento de arquivos mais profundo a fim de capturar o comportamento incremental do link. Retorna sempre `true`.
+  Habilita um acompanhamento de arquivos mais profundo a fim de capturar o comportamento incremental do link. Sempre retorna `true`.
 
-- **Baseaddress**
+- **BaseAddress**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Define um endereço básico para o programa ou DLL que está sendo criado. Especifique `{address[,size] | @filename,key}`.
 
@@ -125,7 +125,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **BuildingInIDE**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se for true, indica que o MSBuild é chamado do IDE. Caso contrário, indica que o MSBuild é chamado da linha de comando.
 
@@ -133,83 +133,83 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **CLRImageType**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Define o tipo de uma imagem CLR (Common Language Runtime).
 
   Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-  - **Não é padrão** - *\<>*
+  - **Os** - *\<none>*
 
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**
 
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+  - **ForcePureILImage**  -  **/CLRIMAGETYPE: puro**
 
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: seguro**
 
   Para obter mais informações, confira, [/CLRIMAGETYPE (Especificar tipo de imagem CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
 - **CLRSupportLastError**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Preserva o código de erro mais recente de funções chamadas por meio do mecanismo P/Invoke.
 
   Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-  - **Ativado****/CLRSupportLastError**  - 
+  - **Habilitado**  -  **/CLRSupportLastError**
 
-  - **Desabilitado** - **/CLRSupportLastError:NO**
+  - **Desabilitado**  -  **/CLRSupportLastError: não**
 
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+  - **SystemDlls**  -  **/CLRSupportLastError: SYSTEMDLL**
 
   Para obter mais informações, confira [/CLRSUPPORTLASTERROR (Preservar último código de erro para chamadas PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
 - **CLRThreadAttribute**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica explicitamente o atributo de thread para o ponto de entrada de seu programa CLR.
 
   Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-  - **Atribuirthreadde padrão** - **/CLRTHREADATTRIBUTE:NONE**
+  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: nenhum**
 
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**
 
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: STA**
 
   Para obter mais informações, confira [/CLRTHREADATTRIBUTE (Definir atributo de thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
 - **CLRUnmanagedCodeCheck**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Especifica se o vinculador aplicará o atributo **SuppressUnmanagedCodeSecurityAttribute** às chamadas P/Invoke geradas pelo vinculador do código gerenciado nas DLLs nativas.
 
   Para obter mais informações, confira [/CLRUNMANAGEDCODECHECK (Adicionar o SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
-- **CriarHotPatchableImage**
+- **CreateHotPatchableImage**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Prepara uma imagem para patch instantâneo.
 
   Especifique um dos valores a seguir, que corresponda a uma opção de vinculador.
 
-  - **Ativado****/FUNCTIONPADMIN**  - 
+  - **Habilitado**  -  **/FUNCTIONPADMIN**
 
-  - **X86Image** - **/FUNCTIONPADMIN:5**
+  - **X86Image**  -  **/FUNCTIONPADMIN: 5**
 
-  - **X64Image** - **/FUNCTIONPADMIN:6**
+  - **X64Image**  -  **/FUNCTIONPADMIN: 6**
 
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**
+  - **ItaniumImage**  -  **/FUNCTIONPADMIN: 16**
 
   Para obter mais informações, confira [/FUNCTIONPADMIN (Criar imagem para patch instantâneo)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
 - **DataExecutionPrevention**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, indicará que um executável foi testado e considerado compatível com o recurso de Prevenção de Execução de Dados do Windows.
 
@@ -217,15 +217,15 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **DelayLoadDLLs**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Esse parâmetro causa um *atraso no carregamento* de DLLs. Especifique o nome de uma DLL para atrasar o carregamento.
 
   Para obter mais informações, confira [/DELAYLOAD (Importação de carga com atraso)](/cpp/build/reference/delayload-delay-load-import).
 
-- **Delaysign**
+- **DelaySign**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, assinará parcialmente um assembly. Por padrão, o valor é `false`.
 
@@ -233,25 +233,25 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **Driver**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifique esse parâmetro para criar um driver de modo de kernel do Windows NT.
 
   Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-  - **NotSet nenhum** - >*\<*
+  - **NotSet** - *\<none>*
 
-  - **Motorista** - **/Motorista**
+  - Do **Driver**  -  **/Driver**
 
-  - **UpOnly** - **/DRIVER:UPONLY**
+  - **Somente**  -  **/Driver: somente**
 
-  - **WDM** - **/DRIVER:WDM**
+  - **WDM**  -  **/Driver: WDM**
 
   Para obter mais informações, confira [/DRIVER (Driver de modo kernel do Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
 - **EmbedManagedResourceFile**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Insere um arquivo de recurso em um assembly. Especifique o nome do arquivo de recurso necessário. Como opção, especifique o nome lógico, usado para carregar o recurso e a opção **PRIVADO**, que indica no manifesto do assembly que o arquivo de recurso é privado.
 
@@ -259,7 +259,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **EnableCOMDATFolding**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, habilitará a dobra COMDAT idêntica.
 
@@ -267,7 +267,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **EnableUAC**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, especificará que as informações do UAC (Controle de Conta de Usuário) estão inseridas no manifesto do programa.
 
@@ -275,7 +275,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **EntryPointSymbol**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica uma função de ponto de entrada como o endereço inicial para um arquivo *.exe* ou uma DLL. Especifique um nome de função como valor do parâmetro.
 
@@ -283,7 +283,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **FixedBaseAddress**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará um programa ou DLL que pode ser carregado somente em seu endereço básico preferido.
 
@@ -291,23 +291,23 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **ForceFileOutput**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Instrui o vinculador a criar uma DLL ou um arquivo *.exe* válido mesmo que um símbolo esteja referenciado, mas não definido, ou esteja definido várias vezes.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Ativado****/FORCE**  - 
+  - **Habilitado**  -  **/Force**
 
-  - **MultipliESímbolodefinidoApenas** - **/FORÇA:MÚLTIPLO**
+  - **MultiplyDefinedSymbolOnly**  -  **/Force: vários**
 
-  - **IndefinidoSímboloÚnico** - **/FORÇA:NÃO RESOLVIDO**
+  - **UndefinedSymbolOnly**  -  **/Force: não resolvido**
 
   Para obter mais informações, confira [/FORCE (Forçar saída de arquivo)](/cpp/build/reference/force-force-file-output).
 
 - **ForceSymbolReferences**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Esse parâmetro instrui o vinculador a adicionar um símbolo especificado à tabela de símbolos.
 
@@ -315,7 +315,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **FunctionOrder**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Esse parâmetro otimiza seu programa colocando as funções empacotadas (COMDATs) especificadas na imagem em uma ordem predeterminada.
 
@@ -323,7 +323,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **GenerateDebugInformation**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se ele for `true`, criará informações de depuração para o arquivo *.exe* ou a DLL.
 
@@ -331,7 +331,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **GenerateManifest**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará um arquivo de manifesto lado a lado.
 
@@ -339,7 +339,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **GenerateMapFile**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará um *arquivo de mapa*. A extensão de nome do arquivo de mapa é *.map*.
 
@@ -347,7 +347,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **HeapCommitSize**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica a quantidade de memória física no heap a se alocar por vez.
 
@@ -355,7 +355,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **HeapReserveSize**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica a alocação de heap total na memória virtual.
 
@@ -363,7 +363,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **IgnoreAllDefaultLibraries**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá o vinculador a remover uma ou mais bibliotecas padrão da lista de bibliotecas pesquisadas ao resolver referências externas.
 
@@ -371,7 +371,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **IgnoreEmbeddedIDL**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se ele for `true`, especificará que qualquer atributo IDL no código-fonte não deve ser processado em um arquivo *.idl*.
 
@@ -379,7 +379,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **IgnoreImportLibrary**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, especificará que a biblioteca de importações gerada por esta configuração não deve ser importada para os projetos dependentes.
 
@@ -387,7 +387,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **IgnoreSpecificDefaultLibraries**
 
-  Parâmetro opcional **string[].**
+  Parâmetro opcional de **cadeia de caracteres []** .
 
   Especifica um ou mais nomes de bibliotecas padrão a serem ignoradas. Separe várias bibliotecas usando ponto e vírgula.
 
@@ -395,7 +395,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **ImageHasSafeExceptionHandlers**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, o vinculador produzirá uma imagem somente se também puder produzir uma tabela de manipuladores de exceção segura da imagem.
 
@@ -407,17 +407,17 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
   Para obter mais informações, confira [/IMPLIB (Nomear biblioteca de importações)](/cpp/build/reference/implib-name-import-library).
 
-- **Keycontainer**
+- **KeyContainer**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Contêiner que contém a chave para um assembly assinado.
 
   Para obter mais informações, confira [/KEYCONTAINER (Especificar um contêiner de chave para assinar um assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Consulte também o parâmetro **KeyFile** nesta tabela.
 
-- **Keyfile**
+- **Chaves**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica um arquivo que contém a chave para um assembly assinado.
 
@@ -425,7 +425,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LargeAddressAware**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, o aplicativo poderá identificar endereços maiores do que 2 gigabytes.
 
@@ -433,7 +433,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkDLL**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará uma DLL como o arquivo de saída principal.
 
@@ -441,7 +441,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkErrorReporting**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Permite que você forneça informações de ICE (erro interno do compilador) diretamente à Microsoft.
 
@@ -459,7 +459,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkIncremental**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, habilitará a vinculação incremental.
 
@@ -467,7 +467,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkLibraryDependencies**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, especificará que as saídas de biblioteca das dependências do projeto serão vinculadas automaticamente.
 
@@ -475,7 +475,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkStatus**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, especificará que o vinculador deve exibir um indicador de progresso que mostrará o percentual concluído do link.
 
@@ -483,21 +483,21 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **LinkTimeCodeGeneration**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica opções para a otimização guiada por perfil.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Não é padrão** - *\<>*
+  - **Os** - *\<none>*
 
-  - **UseLinkTimeCodeGeneration** - **/LTCG**
+  - **UseLinkTimeCodeGeneration**  -  **/LTCG**
 
-  - **PGInstrument** - **/LTCG:PGInstrument**
+  - **PGInstrument**  -  **/LTCG: PGInstrument**
 
-  - **Otimização pg** - **/LTCG:PGOptimize**
+  - **PGOptimization**  -  **/LTCG: PGOptimize**
 
-  - **Pgupdate**
+  - **PGUpdate**
 
     \- **/LTCG:PGUpdate**
 
@@ -505,7 +505,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **ManifestFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Altera o nome do arquivo de manifesto padrão para o nome de arquivo especificado.
 
@@ -513,7 +513,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MapExports**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá o vinculador a incluir funções exportadas em um arquivo de mapa.
 
@@ -521,13 +521,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MapFileName**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Altera o nome do arquivo de mapa padrão para o nome de arquivo especificado.
 
 - **MergedIDLBaseFileName**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o nome e a extensão de nome do arquivo *.idl*.
 
@@ -535,7 +535,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MergeSections**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Combina seções em uma imagem. Especifique `from-section=to-section`.
 
@@ -543,7 +543,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MidlCommandFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifique o nome de um arquivo que contém opções de linha de comando MIDL.
 
@@ -551,13 +551,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MinimumRequiredVersion**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica a versão mínima necessária do subsistema. Os argumentos são números decimais no intervalo de 0 a 65535.
 
 - **ModuleDefinitionFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o nome de um [arquivo de definição de módulo](/cpp/build/reference/module-definition-dot-def-files).
 
@@ -565,7 +565,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **MSDOSStubFileName**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Anexa o programa stub MS-DOS especificado a um programa Win32.
 
@@ -573,7 +573,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **NoEntryPoint**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará uma DLL somente de recursos.
 
@@ -587,15 +587,15 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **OptimizeReferences**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, eliminará a funções e/ou dados que nunca são referenciados.
 
   Para obter mais informações, consulte o argumento `REF` em [/OPT (Otimizações)](/cpp/build/reference/opt-optimizations).
 
-- **Outputfile**
+- **OutputFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Substitui o nome padrão e o local do programa que o vinculador cria.
 
@@ -603,7 +603,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **PerUserRedirection**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true` e Registrar Saída estiverem habilitados, forçará as gravações de Registro para **HKEY_CLASSES_ROOT** a serem redirecionadas para **HKEY_CURRENT_USER**.
 
@@ -615,7 +615,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **PreventDllBinding**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se ele for `true`, indicará ao *Bind.exe* que a imagem vinculada não deve ser associada.
 
@@ -623,7 +623,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **Perfil**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, produzirá um arquivo de saída que pode ser usado com o criador de perfil de **Ferramentas de Desempenho**.
 
@@ -631,7 +631,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **ProfileGuidedDatabase**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o nome do arquivo *.pgd* que será usado para armazenar informações sobre o programa em execução
 
@@ -639,7 +639,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **ProgramDatabaseFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica um nome para o banco de dados do programa (PDB) que o vinculador cria.
 
@@ -647,7 +647,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **RandomizedBaseAddress**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, gerará uma imagem executável que pode trocar base aleatoriamente no momento do carregamento usando o recurso *ASLR* (Address Space Layout Randomization) do Windows.
 
@@ -655,7 +655,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **RegisterOutput**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, registrará a saída primária desse build.
 
@@ -669,33 +669,33 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SetChecksum**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se ele for `true`, definirá a soma de verificação no cabeçalho de um arquivo *.exe*.
 
   Para obter mais informações, confira [/RELEASE (Definir a soma de verificação)](/cpp/build/reference/release-set-the-checksum).
 
-- **ShowProgress**
+- **Progresso**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica detalhamento de relatórios de progresso da operação de vinculação.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **NotSet nenhum** - >*\<*
+  - **NotSet** - *\<none>*
 
-  - **LinkVerbose** - **/VERBOSE**
+  - **LinkVerbose**  -  **/Verbose**
 
-  - **LinkVerboseLib** - **/VERBOSE:Lib**
+  - **LinkVerboseLib**  -  **/Verbose: lib**
 
-  - **LinkVerboseICF** - **/VERBOSE:ICF**
+  - **LinkVerboseICF**  -  **/verbose: ICF**
 
-  - **LinkVerboseREF** - **/VERBOSE:REF**
+  - **LinkVerboseREF**  -  **/verbose: REF**
 
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**
 
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**
+  - **LinkVerboseCLR**  -  **/verbose: CLR**
 
   Para obter mais informações, confira [/VERBOSE (Imprimir mensagens de progresso)](/cpp/build/reference/verbose-print-progress-messages).
 
@@ -707,7 +707,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SpecifySectionAttributes**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica os atributos de uma seção. Isso substitui os atributos que foram definidos quando o arquivo *.obj* da seção foi compilado.
 
@@ -715,7 +715,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **StackCommitSize**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica a quantidade de memória física em cada alocação quando mais memória é alocada.
 
@@ -723,7 +723,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **StackReserveSize**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o tamanho de alocação de pilha total em memória virtual.
 
@@ -731,7 +731,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **StripPrivateSymbols**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Cria um segundo arquivo de banco de dados do programa (PDB) que omite os símbolos que você não deseja distribuir aos seus clientes. Especifique o nome do segundo arquivo PDB.
 
@@ -739,13 +739,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **Subsistema**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o ambiente para o executável.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **NotSet nenhum** - >*\<*
+  - **NotSet** - *\<none>*
 
   - **Console** - **/SUBSYSTEM:CONSOLE**
 
@@ -769,7 +769,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SupportNobindOfDelayLoadedDLL**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá o vinculador a não incluir uma IAT (Tabela de Endereços de Importação) associável na imagem final.
 
@@ -777,7 +777,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SupportUnloadOfDelayLoadedDLL**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá a função de ajuda de carregamento atrasado a dar suporte ao descarregamento explícito da DLL.
 
@@ -785,7 +785,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SuppressStartupBanner**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.
 
@@ -793,7 +793,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SwapRunFromCD**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá o sistema operacional a copiar a saída do vinculador para um arquivo de permuta e, em seguida, executará a imagem por meio dele.
 
@@ -801,7 +801,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **SwapRunFromNET**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, instruirá o sistema operacional a copiar a saída do vinculador para um arquivo de permuta e, em seguida, executará a imagem por meio dele.
 
@@ -809,13 +809,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **TargetMachine**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica a plataforma de destino para o programa ou DLL.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **NotSet nenhum** - >*\<*
+  - **NotSet** - *\<none>*
 
   - **MachineARM** - **/MACHINE:ARM**
 
@@ -843,7 +843,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **TerminalServerAware**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, definirá um sinalizador no campo IMAGE_OPTIONAL_HEADER DllCharacteristics no cabeçalho opcional da imagem do programa. Quando esse sinalizador estiver definido, o servidor Host da Sessão da Área de Trabalho Remota não fará certas alterações no aplicativo.
 
@@ -851,13 +851,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **TrackerLogDirectory**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o diretório de log de rastreamento.
 
 - **TreatLinkerWarningAsErrors**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, fará com que nenhum arquivo de saída seja gerado caso o vinculador gere um aviso.
 
@@ -865,7 +865,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **TurnOffAssemblyGeneration**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, criará uma imagem para o arquivo de saída atual sem um assembly do .NET Framework.
 
@@ -873,7 +873,7 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **TypeLibraryFile**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o nome e a extensão de nome do arquivo *.tlb*. Especifique um nome de arquivo ou um caminho e nome de arquivo.
 
@@ -889,23 +889,23 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **UACExecutionLevel**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Especifica o nível de execução solicitado para o aplicativo quando ele é executado com Controle de Conta de Usuário.
 
   Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-  - **Asinvoker** - `level='asInvoker'`
+  - **AsInvoker** - `level='asInvoker'`
 
-  - **Highestavailable** - `level='highestAvailable'`
+  - **HighestAvailable** - `level='highestAvailable'`
 
-  - **Requireadministrator** - `level='requireAdministrator'`
+  - **RequireAdministrator** - `level='requireAdministrator'`
 
   Para obter mais informações, consulte o argumento `level` de [/MANIFESTUAC (Insere informações UAC no manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
 - **UACUIAccess**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, o aplicativo ignorará os níveis de proteção da interface do usuário e direcionará a entrada para janelas de permissão superior na área de trabalho; caso contrário, `false`.
 
@@ -913,13 +913,13 @@ Envolve a ferramenta de linker Microsoft C++, *link.exe*. A ferramenta de vincul
 
 - **UseLibraryDependencyInputs**
 
-  Parâmetro **booleano** opcional.
+  Parâmetro **booliano** opcional.
 
   Se `true`, as entradas para a ferramenta de biblioteca serão usadas em vez do próprio arquivo de biblioteca ao vincular saídas de biblioteca de dependências do projeto.
 
 - **Versão**
 
-  Parâmetro opcional **string.**
+  Parâmetro de **cadeia de caracteres** opcional.
 
   Coloque um número de versão no cabeçalho do arquivo *.exe* ou *.dll*. Especifique “`major[.minor]`”. Os argumentos `major` e `minor` são números decimais de 0 a 65535.
 

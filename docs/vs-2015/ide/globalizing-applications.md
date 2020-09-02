@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645604"
 ---
 # <a name="globalizing-applications"></a>Globalizando aplicativos
@@ -33,6 +33,6 @@ Globalização é o processo de projetar e desenvolver um produto de software qu
 
  [Globalização e localização](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Fornece links para páginas de ajuda sobre a globalização de Web Forms páginas.
 
- [Introdução aos aplicativos internacionais com base no .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Discute os conceitos essenciais sobre o desenvolvimento de software para um mercado internacional usando o Visual Basic C#ou o Visual.
+ [Introdução aos aplicativos internacionais com base no .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Discute os conceitos essenciais sobre o desenvolvimento de software para um mercado internacional usando o Visual Basic ou o Visual C#.
 
- [Práticas recomendadas para o desenvolvimento de aplicativos prontos para o mundo](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Fornece informações sobre programação para uma audiência internacional, como problemas de design e terminologia.
+ [Práticas recomendadas para o desenvolvimento de aplicativos preparados para o mundo](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Fornece informações sobre a programação de um público internacional, como problemas de design e terminologia.

@@ -19,25 +19,25 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008710"
 ---
 # <a name="work-with-calendar-items"></a>Trabalhar com itens de calendário
-  O <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> classe contém os métodos e propriedades que você pode usar para executar tarefas com itens de calendário.
+  A <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> classe contém os métodos e as propriedades que você usa para executar tarefas com itens de calendário.
 
 |Tarefa|Procedimento|
 |----------|---------------|
-|Criar um compromisso e adicionar destinatários.|[Como: Criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)|
-|Exclua uma instância de um compromisso recorrente.|[Como: Excluir compromissos programaticamente](../vsto/how-to-programmatically-delete-appointments.md)|
-|Crie uma pasta de calendário e adicione um item de compromisso.|[Como: Criar um calendário personalizado de forma programática](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
-|Crie uma solicitação de reunião e enviá-lo.|[Como: Criar uma solicitação de reunião de forma programática](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+|Crie um compromisso e adicione destinatários.|[Como: criar compromissos programaticamente](../vsto/how-to-programmatically-create-appointments.md)|
+|Excluir uma instância de um compromisso recorrente.|[Como: excluir compromissos programaticamente](../vsto/how-to-programmatically-delete-appointments.md)|
+|Crie uma pasta de calendário e adicione um item de compromisso.|[Como: criar programaticamente um calendário personalizado](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Crie uma solicitação de reunião e envie-a.|[Como: criar programaticamente uma solicitação de reunião](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).
+ Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Trabalhar com itens de email](../vsto/working-with-mail-items.md)

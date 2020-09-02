@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: d2b3e2821e7697ad53b10a7148c22140aa1a07af
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283210"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Como configurar as ferramentas de contêiner do Visual Studio
@@ -40,7 +40,7 @@ Configurações de **Docker Compose** **projeto único** e ferramentas de contê
 A tabela a seguir pode ajudá-lo a decidir como definir essas opções.
 
 ::: moniker range="vs-2017"
-| Nome | Configuração padrão | Aplica-se A | Descrição |
+| Name | Configuração padrão | Aplica-se A | Descrição |
 | -----|:---------------:|:----------:| ----------- |
 | Extração automática das imagens necessárias do Docker no carregamento do projeto | Ativado | Docker Compose | Para desempenho aprimorado durante o carregamento de projetos, o Visual Studio iniciará uma operação de pull do Docker em segundo plano para que, quando você estiver pronto para executar seu código, a imagem já esteja baixada ou sendo baixada. Se você estiver apenas carregando projetos e procurando código, será possível desativar isso para evitar o download de imagens de contêiner que você não precisa. |
 | Início automático dos contêineres em segundo plano | Ativado | Docker Compose | Novamente, para melhorar o desempenho, o Visual Studio cria um contêiner com montagens de volume prontas para quando você compilar e executar seu contêiner. Se você desejar controlar quando o contêiner é criado, desative essa opção. |
@@ -52,18 +52,18 @@ A tabela a seguir pode ajudá-lo a decidir como definir essas opções.
 
 A tabela a seguir descreve as configurações **gerais** :
 
-| Nome | Configuração padrão | Aplica-se A | Descrição |
+| Name | Configuração padrão | Aplica-se A | Descrição |
 | -----|:---------------:|:----------:| ----------- |
 | Instalar o Docker desktop, se necessário | Avisar-me | Único projeto, Docker Compose | Escolha se deseja ser solicitado se o Docker desktop não estiver instalado. |
 | Confiar ASP.NET Core certificado SSL | Avisar-me | Projetos ASP.NET Core 2. x | Quando definido como **avisar**, se o certificado SSL do localhost não for confiável, o Visual Studio será notificado sempre que você executar o projeto. |
 
 A tabela a seguir descreve o **projeto único** e as configurações de **Docker Compose** :
 
-| Nome | Configuração padrão | Aplica-se A | Descrição |
+| Name | Configuração padrão | Aplica-se A | Descrição |
 | -----|:---------------:|:----------:| ----------- |
-| Efetuar pull de imagens do Docker necessárias no projeto aberto | True | Único projeto, Docker Compose | Para desempenho aprimorado durante o carregamento de projetos, o Visual Studio iniciará uma operação de pull do Docker em segundo plano para que, quando você estiver pronto para executar seu código, a imagem já esteja baixada ou sendo baixada. Se você estiver apenas carregando projetos e navegando em código, poderá definir como **false** para evitar o download de imagens de contêiner desnecessárias. |
-| Executar contêineres no projeto aberto | True | Único projeto, Docker Compose | Novamente para melhorar o desempenho, o Visual Studio cria um contêiner antecipadamente para que ele esteja pronto para quando você compilar e executar seu contêiner. Se você quiser controlar quando seu contêiner é criado, defina como **false**. |
-| Parar contêineres no fechamento do projeto | True | Único projeto e Docker Compose | Defina como **false** se desejar que os contêineres da solução continuem a ser executados depois de fechar a solução ou fechar o Visual Studio. |
+| Efetuar pull de imagens do Docker necessárias no projeto aberto | Verdadeiro | Único projeto, Docker Compose | Para desempenho aprimorado durante o carregamento de projetos, o Visual Studio iniciará uma operação de pull do Docker em segundo plano para que, quando você estiver pronto para executar seu código, a imagem já esteja baixada ou sendo baixada. Se você estiver apenas carregando projetos e navegando em código, poderá definir como **false** para evitar o download de imagens de contêiner desnecessárias. |
+| Executar contêineres no projeto aberto | Verdadeiro | Único projeto, Docker Compose | Novamente para melhorar o desempenho, o Visual Studio cria um contêiner antecipadamente para que ele esteja pronto para quando você compilar e executar seu contêiner. Se você quiser controlar quando seu contêiner é criado, defina como **false**. |
+| Parar contêineres no fechamento do projeto | Verdadeiro | Único projeto e Docker Compose | Defina como **false** se desejar que os contêineres da solução continuem a ser executados depois de fechar a solução ou fechar o Visual Studio. |
 
 ::: moniker-end
 > [!WARNING]

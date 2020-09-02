@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664420"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Como modelar terreno 3D
@@ -38,13 +38,13 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
 
  Ao terminar, o modelo deve ter esta aparência:
 
- ![cena&#45;3 D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Dígito-terreno-modelo")
+ ![3&#45;cena D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Dígito-terreno-modelo")
 
  Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
 #### <a name="to-create-a-3-d-terrain-model"></a>Para criar um modelo de terreno 3D
 
-1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).
+1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção Introdução no [Editor de modelos](../designers/model-editor.md).
 
 2. Adicione um plano para a cena. Na **Caixa de Ferramentas**, em **Formas**, selecione **Plano** e mova-o para a superfície de design.
 
@@ -66,9 +66,9 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
 
    O modelo de terreno está concluído. Aqui está o modelo final novamente, com sombreamento Phong aplicado:
 
-   ![cena&#45;3 D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Dígito-terreno-modelo")
+   ![3&#45;cena D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Dígito-terreno-modelo")
 
    Você pode usar esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente com base na geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Consulte também
- [Editor de modelo](../designers/model-editor.md)
+## <a name="see-also"></a>Consulte Também
+ [Editor de modelos](../designers/model-editor.md)

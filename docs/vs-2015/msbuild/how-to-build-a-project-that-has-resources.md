@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686524"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Como compilar um projeto que tem recursos
@@ -79,8 +79,8 @@ Se você estiver compilando versões localizadas de um projeto, todos os element
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
 [MSBuild](msbuild.md)  
  [Tarefa GenerateResource](../msbuild/generateresource-task.md)   
  [Tarefa Csc](../msbuild/csc-task.md)   
- [Resgen.exe (Gerador de Arquivo de Recurso)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (gerador de arquivo de recurso)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

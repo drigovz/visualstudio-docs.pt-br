@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46adab828eea0ffb821147ba9c711634e1899a85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664311"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Atalhos de teclado do Designer XAML
@@ -24,7 +24,7 @@ Atalhos de teclado no Designer XAML podem acelerar seu trabalho reduzindo em um 
 ## <a name="element-shortcuts"></a>Atalhos de elemento
  Esta tabela lista os atalhos que estão disponíveis para trabalhar com elementos na prancheta.
 
-|**Para realizar essa ação**|**Faça isso**|
+|**Para realizar essa ação**|**Fazer isso**|
 |--------------------------------|-----------------|
 |Criar um elemento|Pressione Ctrl+N|
 |Duplicar um elemento|Mantenha pressionada a tecla Alt e pressione uma tecla de direção.|
@@ -42,12 +42,12 @@ Atalhos de teclado no Designer XAML podem acelerar seu trabalho reduzindo em um 
 ## <a name="document-outline-window-shortcuts"></a>Atalhos da janela de Estrutura de Tópicos de Documento
  A tabela a seguir lista os atalhos disponíveis ao trabalhar com elementos na janela de Estrutura de Tópicos do Documento.
 
-|**Para realizar essa ação**|**Faça isso**|
+|**Para realizar essa ação**|**Fazer isso**|
 |--------------------------------|-----------------|
 |Oculte objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|CTRL + H|
 |Exiba objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|SHIFT + CTRL + H|
 |Bloqueie objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|CTRL + L|
 |Desbloqueie objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|SHIFT + CTRL + L|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

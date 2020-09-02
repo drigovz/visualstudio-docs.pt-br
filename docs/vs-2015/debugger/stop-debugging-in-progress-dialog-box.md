@@ -1,5 +1,5 @@
 ---
-title: Parar a depuração na caixa de diálogo de progresso | Microsoft Docs
+title: Caixa de diálogo parar depuração em andamento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684943"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Caixa de diálogo Parar Depuração em Andamento
@@ -38,8 +38,8 @@ Essa caixa de diálogo aparece quando o depurador está tentando interromper uma
  Você pode esperar os processos desanexarem e essa caixa de diálogo desaparecer ou usar o botão **Parar Agora** para forçar a terminação imediata.  
   
  **Parar Agora**  
- Clique neste botão para encerrar imediatamente a sessão de depuração. Usando o **parar agora**encerrará em vez de desanexar os processos que estão sendo depurados. Se você estiver depurando processos do sistema, encerrar os processos com **Parar Agora** poderá ter efeitos inesperados e indesejados.  
+ Clique neste botão para encerrar imediatamente a sessão de depuração. O uso de **Stop agora**será encerrado em vez de desanexar os processos que estão sendo depurados. Se você estiver depurando processos do sistema, encerrar os processos com **Parar Agora** poderá ter efeitos inesperados e indesejados.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Desanexação de programas](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Desanexando programas](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)
