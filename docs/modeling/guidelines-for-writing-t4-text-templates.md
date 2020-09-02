@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596535"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
@@ -46,25 +46,25 @@ Em alguns casos, os testes gerais podem ser executados diretamente no modelo. Po
 
 Permitir código personalizado: gerar classes parciais.
 
-Permita o código que você escreve manualmente, além do código gerado. É incomum que um esquema de geração de código seja capaz de considerar todas as variações possíveis que possam surgir. Portanto, você deve esperar adicionar ou substituir parte do código gerado. Onde o material gerado está em uma linguagem .NET como C# ou Visual Basic, duas estratégias são especialmente úteis:
+Permita o código que você escreve manualmente, além do código gerado. É incomum que um esquema de geração de código seja capaz de considerar todas as variações possíveis que possam surgir. Portanto, você deve esperar adicionar ou substituir parte do código gerado. Onde o material gerado está em uma linguagem .NET, como C# ou Visual Basic, duas estratégias são especialmente úteis:
 
 - As classes geradas devem ser parciais. Isso permite que você adicione conteúdo ao código gerado.
 
 - As classes devem ser geradas em pares, uma herdada da outra. A classe base deve conter todos os métodos e propriedades gerados, e a classe derivada deve conter apenas os construtores. Isso permite que o código escrito manualmente substitua qualquer um dos métodos gerados.
 
-Em outras linguagens geradas como XML, use a diretiva `<#@include#>` para fazer combinações simples de conteúdo escrito manualmente e gerado. Em casos mais complexos, talvez seja necessário escrever uma etapa de pós-processamento que combine o arquivo gerado com arquivos escritos manualmente.
+Em outras linguagens geradas, como XML, use a `<#@include#>` diretiva para fazer combinações simples de conteúdo escrito manualmente e gerado. Em casos mais complexos, talvez seja necessário escrever uma etapa de pós-processamento que combine o arquivo gerado com arquivos escritos manualmente.
 
 Mova o material comum para arquivos de inclusão ou modelos de tempo de execução.
 
-Para evitar a repetição de blocos semelhantes de texto e código em vários modelos, use a diretiva `<#@ include #>`. Para obter mais informações, consulte [diretiva de inclusão T4](../modeling/t4-include-directive.md).
+Para evitar a repetição de blocos semelhantes de texto e código em vários modelos, use a `<#@ include #>` diretiva. Para obter mais informações, consulte [diretiva de inclusão T4](../modeling/t4-include-directive.md).
 
-Você também pode criar modelos de texto em tempo de execução em um projeto separado e, em seguida, chamá-los do modelo de tempo de design. Para fazer isso, use a diretiva `<#@ assembly #>` para acessar o projeto separado.
+Você também pode criar modelos de texto em tempo de execução em um projeto separado e, em seguida, chamá-los do modelo de tempo de design. Para fazer isso, use a `<#@ assembly #>` diretiva para acessar o projeto separado.
 
 Considere mover grandes blocos de código para um assembly separado.
 
-Se você tiver grandes blocos de código e blocos de recursos de classe, poderá ser útil mover alguns desses códigos para métodos que você compilar em um projeto separado. Você pode usar a diretiva `<#@ assembly #>` para acessar o código no modelo. Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
+Se você tiver grandes blocos de código e blocos de recursos de classe, poderá ser útil mover alguns desses códigos para métodos que você compilar em um projeto separado. Você pode usar a `<#@ assembly #>` diretiva para acessar o código no modelo. Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
 
-Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
+Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
 
 Gerar código, não arquivos de configuração.
 
@@ -115,7 +115,7 @@ Em **MyReportText-Methods.cs**:
 
 Permitir código personalizado: forneça pontos de extensão.
 
-Considere a geração de métodos virtuais em \<# + blocos de recursos de classe # >. Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
+Considere a geração de métodos virtuais no \<#+ class feature blocks #> . Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
 
 Por exemplo, em MyStandardRunTimeTemplate.tt:
 
@@ -139,11 +139,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Separar a coleta de dados da geração de texto.
 
-Tente evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \<# Code Block # > para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \<# + classe do bloco de recursos # >, evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
+Tente evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \<# code block #> para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \<#+ class feature block #> , evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
 
 Não use `.tt` para arquivos de inclusão.
 
-Use uma extensão de nome de arquivo diferente, como `.ttinclude` para arquivos de inclusão. Use `.tt` apenas para arquivos que você deseja que sejam processados como modelos de texto em tempo de execução ou de design. Em alguns casos, o Visual Studio reconhece `.tt` arquivos e define automaticamente suas propriedades para processamento.
+Use uma extensão de nome de arquivo diferente, como `.ttinclude` para arquivos de inclusão. Use `.tt` somente para arquivos que você deseja que sejam processados como modelos de texto de tempo de execução ou de tempo de design. Em alguns casos, o Visual Studio reconhece `.tt` arquivos e define automaticamente suas propriedades para processamento.
 
 Inicie cada modelo como um protótipo fixo.
 
@@ -169,7 +169,7 @@ No entanto, para alguns tipos de requisitos de negócios, é importante esclarec
 
 Você também pode criar seu próprio tipo de diagrama como uma DSL (linguagem específica de domínio). O código pode ser gerado de UML e DSLs. Para obter mais informações, consulte [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

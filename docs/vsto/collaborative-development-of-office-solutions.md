@@ -16,33 +16,33 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62949481"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desenvolvimento colaborativo de soluções do Office
-  Vários desenvolvedores podem trabalhar em um projeto do Office da mesma forma que eles colaboram em outros projetos do Visual Studio. Visual Studio localiza corretamente a instalação do Microsoft Office em cada computador, mesmo se o Office é instalado em locais diferentes. No entanto, há algumas considerações importantes a serem consideradas.
+  Vários desenvolvedores podem trabalhar em um projeto do Office da mesma maneira que colaboram em outros projetos do Visual Studio. O Visual Studio localiza corretamente a instalação do Microsoft Office em cada computador, mesmo se o Office estiver instalado em locais diferentes. No entanto, há algumas considerações importantes a serem observadas.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="debug-properties-are-not-shared"></a>Depurar propriedades não são compartilhadas.
- Depurar propriedades não são compartilhadas entre vários usuários sob controle do código-fonte. Projetos Visual Basic e Visual c# armazenam propriedades de depuração em um arquivo específico do usuário (*NomeDoProjeto*. vbproj ou *ProjectName*. csproj), e esse arquivo não está sob controle do código-fonte. Se mais de uma pessoa está depurando, cada pessoa deve inserir manualmente as propriedades de depuração.
+## <a name="debug-properties-are-not-shared"></a>As propriedades de depuração não são compartilhadas
+ As propriedades de depuração não são compartilhadas entre vários usuários sob controle do código-fonte. Os projetos Visual Basic e Visual C# armazenam as propriedades de depuração em um arquivo específico do usuário (*ProjectName*. vbproj. User ou *ProjectName*. csproj. User) e esse arquivo não está no controle do código-fonte. Se mais de uma pessoa estiver Depurando, cada pessoa deverá inserir as propriedades de depuração manualmente.
 
- Se o projeto está hospedado em um compartilhamento de rede em vez de no controle de origem, algumas etapas adicionais devem ser executadas para ativar os desenvolvedores de colaboração abrir a solução e o assembly de teste.
+ Se o projeto estiver hospedado em um compartilhamento de rede em vez de no controle do código-fonte, algumas etapas adicionais deverão ser executadas para permitir que os desenvolvedores de colaboração Abram a solução e testem o assembly.
 
-## <a name="source-control-requires-checking-out-all-files"></a>Controle de origem requer o check-out de todos os arquivos
- Se você usar o controle do código-fonte para seus projetos, você deve conferir todos os arquivos em um arquivo de código em **Gerenciador de soluções** (como o *ThisDocument*, *ThisWorkbook*, ou *ThisAddIn* arquivos de código) sempre que você alterar o arquivo de código, até mesmo os arquivos que estão ocultos por padrão. Se você fazer check-out apenas o arquivo de código de nível superior, suas alterações poderão ser perdidas.
+## <a name="source-control-requires-checking-out-all-files"></a>O controle do código-fonte requer a verificação de todos os arquivos
+ Se você usar o controle do código-fonte para seus projetos, deverá fazer check-out de todos os arquivos em um arquivo de código em **Gerenciador de soluções** (como os arquivos de código *ThisDocument*, *ThisWorkbook*ou *ThisAddIn* ) sempre que alterar o arquivo de código, até mesmo os arquivos ocultos por padrão. Se você fizer check-out apenas do arquivo de código de nível superior, suas alterações poderão ser perdidas.
 
- Depois de fazer suas alterações, verifique todos os arquivos novamente. Para obter mais informações sobre arquivos de código oculto em projetos, consulte [projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
+ Depois de fazer as alterações, verifique todos os arquivos novamente. Para obter mais informações sobre arquivos de código ocultos em projetos, consulte [projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
-## <a name="security-for-informal-collaboration-on-a-network"></a>Segurança para a colaboração informal em uma rede
- Para todas as soluções de nível de documento que estão em um local de rede (como \\ \\ *Servername*\\*Sharename*), o local totalmente qualificado deve ser adicionado ao lista de pastas confiáveis no aplicativo do Microsoft Office que você está trabalhando. Selecione a opção para incluir subdiretórios na pasta principal, ou especificamente adicione debug e criar pastas à lista de pastas confiáveis. Para obter mais informações sobre como fazer isso, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
+## <a name="security-for-informal-collaboration-on-a-network"></a>Segurança para colaboração informal em uma rede
+ Para todas as soluções em nível de documento que estão em um local de rede (como \\ \\ *nomedoservidor* \\ *ShareName*), o local totalmente qualificado deve ser adicionado à lista de pastas confiáveis no aplicativo Microsoft Office com o qual você está trabalhando. Selecione a opção para incluir os subdiretórios na pasta principal ou especificamente Adicione depurar e criar pastas à lista de pastas confiáveis. Para obter mais informações sobre como fazer isso, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
 
- Os certificados temporários que são gerados automaticamente no momento do build não são protegidos por senhas. Os certificados contêm o nome de logon do desenvolvedor e outras informações pessoais. Se você implantar personalizações que são assinadas por certificados temporários, outras podem ser capazes de acessar essas informações.
+ Os certificados temporários gerados automaticamente no momento da compilação não são protegidos por senhas. Os certificados contêm o nome de logon do desenvolvedor e outras informações pessoais. Se você implantar personalizações que são assinadas por certificados temporários, outras pessoas poderão acessar essas informações.
 
-## <a name="see-also"></a>Consulte também
-- [Proteger as soluções do Office](../vsto/securing-office-solutions.md)
+## <a name="see-also"></a>Confira também
+- [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
-- [Compilar soluções do Office](../vsto/building-office-solutions.md)
+- [Criar soluções do Office](../vsto/building-office-solutions.md)

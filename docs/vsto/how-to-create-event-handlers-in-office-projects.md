@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538301"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Como: criar manipuladores de eventos em projetos do Office
@@ -50,7 +50,7 @@ ms.locfileid: "85538301"
 
      O Visual Studio conclui automaticamente a linha de código, cria o manipulador de eventos e move o ponto de inserção para o manipulador de eventos recém-criado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Walkthrough: programa em relação a eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Criar soluções do Office](../vsto/building-office-solutions.md)

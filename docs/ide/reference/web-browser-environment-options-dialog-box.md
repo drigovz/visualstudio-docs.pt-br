@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596496"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo \> opções: Environment Web Browser
+# <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo opções: \> navegador da Web do ambiente
 
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.
 
@@ -52,7 +52,7 @@ Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte**
 
 - **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor HTML** Selecione para visualizar a fonte no [designer HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+- **Editor de HTML** Selecione para exibir a origem no [Designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
 
 - **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 

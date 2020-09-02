@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893262"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
@@ -51,7 +51,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 
 > [!NOTE]
-> Se você tiver um projeto do .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativas](analyzer-rule-sets.md). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
+> Se você tiver um projeto .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . Siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativo](analyzer-rule-sets.md). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
 
 ## <a name="create-a-new-rule-set"></a>Criar um novo conjunto de regras
 

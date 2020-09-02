@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285603"
 ---
 # <a name="how-to-test-a-c-dll"></a>Como testar uma DLL do C++
@@ -22,7 +22,7 @@ Este tópico demonstra como usar teste de unidade como a primeira etapa do desen
 
 Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obter dicas sobre a estrutura a ser usada.
 
-## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>Criar a solução e o projeto de teste de unidade
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** >
 
          Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, confira [Usando o Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Verificar se os testes são executados no Gerenciador de testes
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se os testes são executados no Gerenciador de testes
 
 1. Insira algum código de teste:
 
@@ -77,7 +77,7 @@ Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** >
 
      ![Gerenciador de Testes](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>Adicionar o projeto DLL à solução
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Adicionar o projeto DLL à solução
 
 ::: moniker range="vs-2019"
 
@@ -196,7 +196,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
    Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Aumentar iterativamente os testes e fazer com que eles passem
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que eles passem
 
 1. Adicione um novo teste:
 
@@ -256,7 +256,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 > [!TIP]
 > Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.
 
-## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Depurar um teste com falha
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Depurar um teste com falha
 
 1. Adicionar outro teste a *unittest1.cpp*:
 
@@ -325,7 +325,7 @@ No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho
 
    ![Todos os testes serão aprovados](../test/media/ute_ult_alltestspass.png)
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Refatorar o código sem alterar os testes
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Refatorar o código sem alterar os testes
 
 1. Simplifique o cálculo central na função `SquareRoot`:
 

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89178163"
 ---
 # <a name="multi-container-apps"></a>Aplicativos com vários contêineres
@@ -136,7 +136,7 @@ Para descobrir, você usará o contêiner [nicolaka/netacertar](https://github.c
 
 ## <a name="run-your-app-with-mysql"></a>Executar seu aplicativo com o MySQL
 
-O aplicativo todo oferece suporte à configuração de algumas variáveis de ambiente para especificar as configurações de conexão do MySQL. Eles são:
+O aplicativo todo oferece suporte à configuração de algumas variáveis de ambiente para especificar as configurações de conexão do MySQL. Elas são:
 
 - `MYSQL_HOST` -o nome do host para o servidor MySQL em execução
 - `MYSQL_USER` -o nome de usuário a ser usado para a conexão

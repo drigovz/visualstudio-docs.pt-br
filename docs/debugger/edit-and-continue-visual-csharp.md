@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188197"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
  Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.
 
- Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [alterações de códigoC# com suporte (e Visual Basic)](../debugger/supported-code-changes-csharp.md).
+ Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [alterações de código com suporte (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
  Editar e continuar tem suporte no UWP no Windows 10 e aplicativos x86 e x64 direcionados para a área de trabalho .NET Framework 4,6 ou versões posteriores (o .NET Framework é apenas uma versão da área de trabalho).
 
@@ -38,7 +38,7 @@ ms.locfileid: "73188197"
 
  Para obter mais informações, consulte [como: usar editar e continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-- [Alterações de código comC# suporte (e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Alterações de código com suporte (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio](../xaml-tools/xaml-hot-reload.md)

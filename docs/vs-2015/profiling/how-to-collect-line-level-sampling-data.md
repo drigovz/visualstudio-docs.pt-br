@@ -1,5 +1,5 @@
 ---
-title: 'Como: Coletar dados de amostragem no nível de linha | Microsoft Docs'
+title: Como coletar dados de amostragem no nível de linha | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185951"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Como: Coletar dados de amostragem de nível de linha
+# <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível da linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.  
@@ -54,10 +54,10 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
   
 - Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.  
   
-     – ou —  
+     — ou —  
   
-- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>** .  
+- Ao iniciar um aplicativo, digite **VSPerfCmd/LineOff \<other arguments> **.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

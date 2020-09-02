@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143682"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Exibição de IPs (ponteiros de instrução) – Dados de Amostragem da Memória do .NET
@@ -25,16 +25,16 @@ A exibição de IPs dos dados de criação de perfil de alocação de memória d
   
  Apenas valores exclusivos são listados.  
   
-|Column|DESCRIÇÃO|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém a instrução.|  
+|**Nome do processo**|O nome do processo.|  
+|**Nome do módulo**|O nome do módulo que contém a instrução.|  
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a instrução.|  
-|**Nome da Função**|O nome da função.|  
+|**Nome da função**|O nome da função.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Endereço da Função**|O endereço inicial da função.|  
+|**Endereço da função**|O endereço inicial da função.|  
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que a alocação ocorreu.|  
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que a alocação ocorreu.|  
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que a alocação ocorreu.|  
@@ -45,5 +45,5 @@ A exibição de IPs dos dados de criação de perfil de alocação de memória d
 |**Bytes Exclusivos**|O número de bytes de memória que foram alocados na criação de perfil que foram alocados pela instrução.|  
 |**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na criação de perfil que foram alocados pela instrução.|  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de ponteiros de instrução (IPs)](../profiling/instruction-pointers-ips-view-sampling-data.md)

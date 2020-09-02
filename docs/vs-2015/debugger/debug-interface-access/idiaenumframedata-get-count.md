@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 29fcbf0dced646ec33c9ba8e54a9041f87bc01d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157956"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o número de elementos de dados do quadro.  
+Recupera o número de elementos de dados de quadro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,11 +35,11 @@ HRESULT get_Count ( 
   
 #### <a name="parameters"></a>Parâmetros  
  pRetVal  
- [out] Retorna o número de elementos de dados do quadro.  
+ fora Retorna o número de elementos de dados de quadro.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

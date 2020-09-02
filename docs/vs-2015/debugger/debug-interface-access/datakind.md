@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197631"
 ---
 # <a name="datakind"></a>DataKind
@@ -25,7 +25,7 @@ ms.locfileid: "68197631"
 
 Indica o escopo específico de um valor de dados.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum DataKind {   
@@ -44,41 +44,41 @@ enum DataKind { 
   
 ## <a name="elements"></a>Elementos  
  DataIsUnknown  
- Símbolo de dados não pode ser determinado.  
+ O símbolo de dados não pode ser determinado.  
   
  DataIsLocal  
- Item de dados é uma variável local.  
+ O item de dados é uma variável local.  
   
  DataIsStaticLocal  
- Item de dados é uma variável local estática.  
+ O item de dados é uma variável local estática.  
   
  DataIsParam  
- Item de dados é um parâmetro formal.  
+ O item de dados é um parâmetro formal.  
   
  DataIsObjectPtr  
- Item de dados é um ponteiro de objeto (`this`).  
+ O item de dados é um ponteiro de objeto ( `this` ).  
   
  DataIsFileStatic  
- Item de dados é uma variável no escopo do arquivo.  
+ O item de dados é uma variável com escopo de arquivo.  
   
  DataIsGlobal  
- Item de dados é uma variável global.  
+ O item de dados é uma variável global.  
   
  DataIsMember  
- Item de dados é uma variável de membro de objeto.  
+ O item de dados é uma variável de membro de objeto.  
   
  DataIsStaticMember  
- Item de dados é uma variável de classe estática.  
+ O item de dados é uma variável estática de classe.  
   
  DataIsConstant  
- Item de dados é um valor constante.  
+ O item de dados é um valor constante.  
   
 ## <a name="remarks"></a>Comentários  
- Os valores nesta enumeração são retornados pelo [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
+ Os valores nessa enumeração são retornados pelo método [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

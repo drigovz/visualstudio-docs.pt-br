@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188284"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
@@ -36,7 +36,7 @@ A implantação é automática quando você depura seu aplicativo do Visual Stud
 
 - Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.
 
-## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Como implantar um aplicativo UWP
+## <a name="how-to-deploy-a-uwp-app"></a><a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP
  Implantar manualmente um aplicativo é simples:
 
 1. Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
@@ -47,7 +47,7 @@ A implantação é automática quando você depura seu aplicativo do Visual Stud
 
 3. No menu **Compilar**, escolha **Implantar**
 
-## <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
+## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
 
 **Pré-requisitos**
 
@@ -76,9 +76,9 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
     A caixa de diálogo **conexão remota** exibe os dispositivos na sub-rede da rede local e qualquer dispositivo conectado diretamente ao computador do Visual Studio por um cabo Ethernet.
 
-   **Especificando o dispositivo remoto em uma C++ página de projeto**
+   **Especificando o dispositivo remoto em uma página de projeto C++**
 
-   ![Propriedades&#43; &#43; do projeto C para depuração remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![C&#43;&#43; Propriedades do projeto para depuração remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
 7. Escolha **Depurador Remoto** na lista **Depurador a ser iniciado**.
 
@@ -92,30 +92,30 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
 10. Insira o nome de rede do dispositivo remoto na caixa **Computador Remoto** ou clique em **Localizar** para escolher o dispositivo na caixa de diálogo **Selecionar conexão de depurador remoto**.
 
-## <a name="BKMK_Deployment_options"></a> Opções de implantação
+## <a name="deployment-options"></a><a name="BKMK_Deployment_options"></a> Opções de implantação
 
 Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.
 
 **Permitir loopback de rede**
 
-Por motivos de segurança, um aplicativo UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo no qual ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
+Por motivos de segurança, um UWP ou um [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativo que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo no qual ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
 
 Para remover a isenção de loopback de rede do aplicativo:
 
-- Na página C# de propriedades de depuração e Visual Basic, desmarque a caixa de seleção **permitir loopback de rede** .
+- Na página de propriedades depurar C# e Visual Basic, desmarque a caixa de seleção **permitir loopback de rede** .
 
-- Na página C++ de propriedades de depuração, defina o valor de **loopback permitir rede** como **não**.
+- Na página de propriedades de depuração C++, defina o valor de **loopback permitir rede** como **não**.
 
-**Não iniciar, mas depurar meu código quando ele iniciar (C# e Visual Basic)/iniciar aplicativo ()C++**
+**Não iniciar, mas depurar meu código quando ele for iniciado (C# e Visual Basic)/iniciar aplicativo (C++)**
 
 Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:
 
-- Na página C# de propriedades de depuração e Visual Basic, marque a caixa de seleção não **Iniciar, mas depurar meu código ao iniciar** .
+- Na página de propriedades depurar do C# e Visual Basic, marque a caixa de seleção não **Iniciar, mas depurar meu código ao iniciar** .
 
-- Na página C++ de propriedades de depuração, defina o valor do **aplicativo de inicialização** como **Sim**.
+- Na página de propriedades de depuração do C++, defina o valor do **aplicativo de inicialização** como **Sim**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Opções avançadas de implantação remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
-- [Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)
-- [Executar aplicativos usando o Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
+- [Depurar um pacote do aplicativo instalado](../debugger/debug-installed-app-package.md)
+- [Executar aplicativos do Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128416"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilação e criação no Visual Studio para Mac
@@ -19,7 +19,7 @@ O Visual Studio para Mac pode ser usado para compilar aplicativos e criar assemb
 
 Um build bem-sucedido significa que o código-fonte contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. O processo de compilação produz um executável de aplicativo. Então esse executável pode ser testado por depuração e passar por diferentes tipos de testes automatizados e manuais para validar a qualidade do código. Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes.
 
-No Mac, você pode usar qualquer um dos seguintes métodos para construir seu aplicativo: Visual Studio para Mac, ferramentas de linha de comando MSBuild ou Pipelines Azure.
+No Mac, você pode usar qualquer um dos seguintes métodos para criar seu aplicativo: Visual Studio para Mac, ferramentas de linha de comando do MSBuild ou Azure Pipelines.
 
 | Método de build | Benefícios |
 | --- |--- | --- |

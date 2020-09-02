@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject | Microsoft Docs
+title: 'IDebugBinder:: GetFunctionObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a2a55285684c5aa93cc5876fb06c69c809d8b01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157313"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método obtém uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto usado para criar parâmetros de função.  
+Esse método obtém um objeto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) usado para criar parâmetros de função.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,11 +40,11 @@ int GetFunctionObject(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppFunction`  
- [out] Retorna o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface que é usado para criar parâmetros de função.  
+ fora Retorna a interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) que é usada para criar parâmetros de função.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

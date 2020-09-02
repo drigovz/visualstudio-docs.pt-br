@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302703"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315077"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
 
-As configurações são acessadas através do menu **R Tools** > **Options,** ou através de**opções de** **ferramentas** > e rolagem para **Ferramentas R**:
+As configurações são acessadas por meio do menu de opções das **Ferramentas do r**  >  **Options** ou por meio das opções de **ferramentas**  >  **Options** e rolagem para **Ferramentas do r**:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
@@ -33,7 +33,7 @@ Opções e configurações específicas para o R são acessadas usando os métod
 - Opções avançadas do editor ([descritas neste artigo](#text-editor--r--advanced-options)): acesse o menu **Ferramentas** > **Opções** e, em seguida, selecione **Editor de Texto** > **R** > **Avançadas**
 - Opções comportamentais ([descritas neste artigo](#r-tools--advanced-options)): menu **Ferramentas do R** > **Opções** ou **Ferramentas** > **Opções** e, em seguida, role até **Ferramentas do R**.
 
-O comando **R Tools** > **Data Science Settings** afeta também uma série de configurações diferentes no Visual Studio em geral. Esse comando será descrito na próxima seção.
+O comando **Ferramentas do R**  >  **configurações da ciência de dados** afeta também várias configurações diferentes no Visual Studio em geral. Esse comando será descrito na próxima seção.
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +43,7 @@ O item de menu **Ferramentas do R > Configurações da Ciência de Dados** confi
 
 ![Layout da janela do cientista de dados no Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Para reverter para outras configurações do Visual Studio mais tarde, primeiro use o comando**Configurações de importação e exportação de** **ferramentas,** > selecione **Exportar configurações de ambiente selecionadas**e especifique um nome de arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
+Para reverter para outras configurações do Visual Studio mais tarde, primeiro use o comando **ferramentas**  >  **importar e exportar configurações** , selecione **exportar configurações de ambiente selecionadas**e especifique um nome de arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor de texto > R > Opções avançadas
 
@@ -57,7 +57,7 @@ Cada opção é definida como ativada ou desativada para controlar o comportamen
 
 ## <a name="r-tools--advanced-options"></a>Ferramentas do R > Opções avançadas
 
-O menu **R Tools** > **Options** abre a caixa de diálogo **Opções** para as opções R:
+O comando de menu opções das **Ferramentas do r**  >  **Options** abre a caixa de diálogo **Opções** para as opções do r:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
@@ -72,7 +72,7 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | Avaliar associações ativas | `True` | Quando é `True`, garante que você sempre veja o valor mais atualizado ao inspecionar variáveis e propriedades. O risco é que avaliar as expressões pode causar efeitos colaterais, dependendo de como elas foram implementados. |
 | Mostrar variáveis prefixadas com ponto | `False` | Especifica se as variáveis prefixadas com `.` são mostradas. |
 
-### <a name="grid-view"></a>Exibição de grade
+### <a name="grid-view"></a>Exibição em grade
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |
@@ -82,8 +82,8 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |
-| Navegador da Web F1 | `Internal` | Controla como a ajuda é exibida quando você está procurando um termo usando **Ctrl**+**F1**. Quando definido como `Internal`, a ajuda é renderizada dentro de uma janela de ferramentas no Visual Studio. Quando definido como `External`, a ajuda é exibida no navegador da Web padrão. |
-| Cadeia de pesquisa da Web F1 | `R site:stackoverflow.com` | Controla como os termos de pesquisa são passados para o seu mecanismo de pesquisa quando você **pressiona Ctrl**+**F1** em um termo no editor. Por padrão a cadeia de caracteres é `R site:stackoverflow.com`, que acrescenta `R` ao termo de pesquisa. O `site:stackoverflow.com` é uma diretiva que solicita ao mecanismo de pesquisa que as páginas no domínio `stackoverflow.com` sejam incluídas ao escopo da pesquisa. |
+| Navegador da Web F1 | `Internal` | Controla como a ajuda é exibida quando você está pesquisando um termo usando **Ctrl** + **F1**. Quando definido como `Internal`, a ajuda é renderizada dentro de uma janela de ferramentas no Visual Studio. Quando definido como `External`, a ajuda é exibida no navegador da Web padrão. |
+| Cadeia de pesquisa da Web F1 | `R site:stackoverflow.com` | Controla como os termos de pesquisa são passados para o mecanismo de pesquisa quando você pressiona **Ctrl** + **F1** em um termo no editor. Por padrão a cadeia de caracteres é `R site:stackoverflow.com`, que acrescenta `R` ao termo de pesquisa. O `site:stackoverflow.com` é uma diretiva que solicita ao mecanismo de pesquisa que as páginas no domínio `stackoverflow.com` sejam incluídas ao escopo da pesquisa. |
 | Navegador da Ajuda do R | `Automatic` | Controla como a Ajuda é exibida quando você procura na documentação do R usando **F1**, **?** ou **??**. Quando definido como `Automatic`, a ajuda é renderizada na janela apropriada. Por exemplo, a ajuda em HTML aparece em uma janela de ferramentas do Visual Studio, enquanto PDFs aparecem no programa de PDF padrão. Quando definido como `External`, a ajuda é renderizada no navegador da Web padrão. |
 
 ### <a name="history"></a>Histórico

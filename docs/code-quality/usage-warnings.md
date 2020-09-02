@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176072"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
@@ -77,4 +77,4 @@ Os avisos de uso dão suporte ao uso adequado do .NET.
 |[CA2246: Não designar um símbolo e o membro dele na mesma instrução](../code-quality/ca2246.md)|Não é recomendável atribuir um símbolo e seu membro, ou seja, um campo ou uma propriedade, na mesma instrução. Não fica claro se o acesso de membro foi projetado para usar o valor antigo do símbolo antes da atribuição ou o novo valor da atribuição nesta instrução.|
 |[CA2247: O argumento passado para o construtor TaskCompletionSource deve ser a enumeração TaskCreationOptions em vez da enumeração TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource tem construtores que usam TaskCreationOptions que controlam a tarefa subjacente e construtores que assumem o estado do objeto armazenado na tarefa.  Passar acidentalmente um TaskContinuationOptions em vez de um TaskCreationOptions resultará na chamada que trata as opções como estado.|
 |[CA2248: forneça o argumento ' Enum ' correto para ' Enum. HasFlag '](../code-quality/ca2248.md)|O tipo de enumeração passado como um argumento para a `HasFlag` chamada do método é diferente do tipo de enumeração de chamada.|
-|[CA2249: considere o uso de String. Contains em vez de String. IndexOf](../code-quality/ca2249.md)|Chamadas para `string.IndexOf` onde o resultado é usado para verificar a presença ou a ausência de uma subcadeia de caracteres podem ser substituídas por `string.Contains` .|
+|[CA2249: Considerar o uso de String.Contains em vez de String.IndexOf](../code-quality/ca2249.md)|Chamadas para `string.IndexOf` onde o resultado é usado para verificar a presença ou a ausência de uma subcadeia de caracteres podem ser substituídas por `string.Contains` .|

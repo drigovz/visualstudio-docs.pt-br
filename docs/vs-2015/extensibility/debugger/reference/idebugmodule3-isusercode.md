@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode | Microsoft Docs
+title: 'IDebugModule3:: IsUserCode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 338c292868cd22a93113cc22e51a5aca995a517d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157298"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera informações sobre se o módulo representa o código do usuário ou não.  
+Recupera informações sobre se o módulo representa ou não o código do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,10 +40,10 @@ int IsUserCode(
   
 #### <a name="parameters"></a>Parâmetros  
  `pfUser`  
- [out] Diferente de zero (`TRUE`) se o módulo representa o código do usuário, zero (`FALSE`) se não existir.  
+ fora Diferente de zero ( `TRUE` ) se o módulo representar o código de usuário, zero ( `FALSE` ) se não tiver.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

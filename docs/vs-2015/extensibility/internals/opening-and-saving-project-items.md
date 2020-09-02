@@ -1,5 +1,5 @@
 ---
-title: Abrir e salvar itens de projeto | Microsoft Docs
+title: Abrindo e salvando itens de projeto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,45 +13,45 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158057"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e salvar os seus arquivos de projetos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.  
+Ao adicionar um novo tipo de projeto, você deve gerenciar a abertura e o salvamento de seus arquivos de projetos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Exibir arquivos usando o comando Abrir Arquivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
- Fornece uma explicação passo a passo de como o IDE manipula a **abrir arquivo** comando e a função de projetos para responder a esse comando.  
+ [Exibindo arquivos usando o comando Abrir Arquivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
+ Fornece uma explicação passo a passo de como o IDE manipula o comando **Open File** e a função de projetos no respondendo a esse comando.  
   
- [Exibir arquivos usando o comando Abrir com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
- Fornece uma explicação detalhada, passo a passo de como o IDE manipula a **abrir com** comando, solicitando a abertura de um arquivo que tem algumas opções de editores padrão.  
+ [Exibindo arquivos usando o comando Abrir Com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
+ Fornece uma explicação detalhada e passo a passo de como o IDE trata o comando **Open with** , solicitando a abertura de um arquivo que tem alguma opção de editores padrão.  
   
- [Como: abrir editores específicos a um projeto](../../extensibility/how-to-open-project-specific-editors.md)  
- Fornece instruções passo a passo para especificar se os arquivos de um tipo específico em seu projeto devem ser abertos usando um editor específico do projeto.  
+ [Como abrir editores específicos a um projeto](../../extensibility/how-to-open-project-specific-editors.md)  
+ Apresenta instruções passo a passo para especificar que os arquivos de um tipo específico em seu projeto devem ser abertos usando um editor específico do projeto.  
   
- [Como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)  
- Fornece instruções passo a passo para especificar como habilitar o IDE abrir um editor padrão para arquivos em seu tipo de projeto.  
+ [Como abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)  
+ Fornece instruções passo a passo para especificar como habilitar o IDE para abrir um editor padrão para arquivos em seu tipo de projeto.  
   
- [Como: abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)  
- Fornece instruções passo a passo para abrir um editor específico do projeto para um arquivo aberto.  
+ [Como abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ Fornece instruções detalhadas para abrir um editor específico do projeto para um arquivo aberto.  
   
- [Salvar um documento padrão](../../extensibility/internals/saving-a-standard-document.md)  
- Fornece uma explicação detalhada de como o IDE manipula a **salve**, **Salvar como**, e **Salvar tudo** comandos para um documento aberto em um editor padrão.  
+ [Salvando um documento padrão](../../extensibility/internals/saving-a-standard-document.md)  
+ Fornece uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos** para um documento aberto em um editor padrão.  
   
- [alvar um documento personalizado](../../extensibility/internals/saving-a-custom-document.md)  
- Fornece um diagrama e uma explicação detalhada de como o IDE manipula a **salve**, **Salvar como**, e **Salvar tudo** comandos para documentos abertos em um editor personalizado.  
+ [Salvando um documento personalizado](../../extensibility/internals/saving-a-custom-document.md)  
+ Fornece um diagrama e uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos os** documentos abertos em um editor personalizado.  
   
- [Determinar qual Editor abre um arquivo em um projeto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
- Descreve o processo que o IDE segue para selecionar o editor apropriado ou o designer para um arquivo.  
+ [Determinando qual editor abre um arquivo em um projeto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
+ Discute o processo que o IDE segue para selecionar o editor ou designer apropriado para um arquivo.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Criar designers e editores personalizados](../../extensibility/creating-custom-editors-and-designers.md)  
  Lista os quatro tipos de editores que o IDE pode hospedar e fornece descrições de cada editor.  
   
- [Tipos de projeto](../../extensibility/internals/project-types.md)  
- Discute como projetos de controle da forma que o código é compilado e criado, como os editores são abertos e como os itens de projeto são formatados.
+ [Tipos de Projeto](../../extensibility/internals/project-types.md)  
+ Discute como os projetos controlam a maneira como o código é compilado e criado, como os editores são abertos e como os itens de projeto são formatados.

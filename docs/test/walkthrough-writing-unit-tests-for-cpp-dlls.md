@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816001"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Como gravar testes de unidade para DLLs em C++
@@ -82,7 +82,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
          ![Gerenciador de Testes de Unidade com um teste aprovado](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Criar um projeto de DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Criar um projeto de DLL
 
 ::: moniker range="vs-2019"
 
@@ -194,7 +194,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
    Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Aumentar iterativamente os testes e fazer com que eles passem
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentar iterativamente os testes e fazer com que eles passem
 
 1. Adicione um novo teste:
 
@@ -252,7 +252,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
     > [!TIP]
     > Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>Depurar um teste com falha
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Depurar um teste com falha
 
 1. Adicione outro teste:
 
@@ -337,7 +337,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refatorar o código sem alterar os testes
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refatorar o código sem alterar os testes
 
 1. Simplifique o cálculo central na função SquareRoot:
 
@@ -366,7 +366,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
    Você também pode exigir um nível mínimo de cobertura de código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar testes de unidade a aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Microsoft Docs
+title: 'IDebugPropertyField:: GetPropertySetter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 76834b3d4d61f0a58d7a0d2c36f8e30c444ddca2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720853"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
@@ -39,15 +39,15 @@ int GetPropertySetter(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppField`\
-[fora] Retorna um objeto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) representando o método que define a propriedade.
+fora Retorna um objeto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa o método que define a propriedade.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para obter o método que obtém a propriedade, ligue para o método [GetPropertyGetter.](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)
+ Para obter o método que obtém a propriedade, chame o método [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187919"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visão geral do diagnóstico de gráficos do Visual Studio
@@ -45,7 +45,7 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 ### <a name="diagnostics-capture-interface"></a>Interface de captura de diagnóstico
  Quando você executa seu aplicativo em Diagnóstico de Gráficos, o Visual Studio exibe uma interface de sessão de diagnóstico que você pode usar para capturar quadros e que também exibe a CPU atual e a carga de GPU. A carga de CPU e GPU é exibida para ajudá-lo a identificar quadros que talvez você queira capturar devido a suas características de desempenho, em vez de renderizar erros.
 
- No entanto, essa não é a única maneira de capturar quadros. Você também pode capturar quadros usando a interface de captura programática ou usando o programa de captura de linha de comando, dxcap. exe.
+ No entanto, essa não é a única maneira de capturar quadros. Você também pode capturar quadros usando a interface de captura programática ou usando o programa de captura de linha de comando, dxcap.exe.
 
  Consulte [capturando informações de gráficos](capturing-graphics-information.md) para obter mais informações.
 
@@ -55,7 +55,7 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
  Consulte [uso de GPU](../../profiling/gpu-usage.md) para obter mais informações.
 
 ### <a name="directx-control-panel"></a>Painel de controle do DirectX
- O painel de controle do DirectX é um componente do DirectX que você pode usar para alterar o comportamento do DirectX. Por exemplo, é possível habilitar a versão de depuração dos componentes de tempo de execução do DirectX, selecionar os tipos de mensagem de depuração que são relatados e impedir que determinados recursos de hardware gráfico sejam usados para emular um hardware menos capaz. Esse nível de controle sobre o DirectX pode ajudar você a depurar e testar seu aplicativo DirectX. É possível acessar o painel de controle do DirectX do Visual Studio.
+ O painel de controle do DirectX é um componente do DirectX que você pode usar para alterar o comportamento do DirectX. Por exemplo, é possível habilitar a versão de depuração dos componentes de runtime do DirectX, selecionar os tipos de mensagem de depuração que são relatados e impedir que determinados recursos de hardware gráfico sejam usados para emular um hardware menos capaz. Esse nível de controle sobre o DirectX pode ajudar você a depurar e testar seu aplicativo DirectX. É possível acessar o painel de controle do DirectX do Visual Studio.
 
 #### <a name="to-open-the-directx-control-panel"></a>Para abrir o painel de controle do DirectX
 
@@ -108,7 +108,7 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 ### <a name="object-table"></a>Tabela de objetos
  Cada quadro que seu aplicativo renderiza é provavelmente apoiado por centenas ou até milhares de objetos de recursos. Eles podem incluir buffers de fundo e renderizar destinos, texturas, buffers de vértice, buffers de índice, buffers gerais – quase tudo o que os membros do Direct3D é um objeto.
 
- A [tabela de objetos](graphics-object-table.md) exibe todos os objetos que existem no momento do evento de gráficos selecionado na lista de eventos. Como a maioria dos objetos em um aplicativo típico são texturas, a lista de eventos é otimizada para mostrar os detalhes relevantes às imagens rapidamente. A coluna tipo informa que tipo de objeto está em cada linha e a coluna de formato mostra ainda mais o subtipo ou a versão do objeto. Outros detalhes também são mostrados. Alguns objetos também têm hiperlinks que você pode seguir para exibir o objeto com um visualizador mais especializado, como texturas (você pode exibir a textura como uma imagem) ou buffers (você pode escolher como o Visualizador de buffer analisa e exibe os bytes brutos do buffer definindo o buffer formato).
+ A [tabela de objetos](graphics-object-table.md) exibe todos os objetos que existem no momento do evento de gráficos selecionado na lista de eventos. Como a maioria dos objetos em um aplicativo típico são texturas, a lista de eventos é otimizada para mostrar os detalhes relevantes às imagens rapidamente. A coluna tipo informa que tipo de objeto está em cada linha e a coluna de formato mostra ainda mais o subtipo ou a versão do objeto. Outros detalhes também são mostrados. Alguns objetos também têm hiperlinks que você pode seguir para exibir o objeto com um visualizador mais especializado, como texturas (você pode exibir a textura como uma imagem) ou buffers (você pode escolher como o Visualizador de buffer analisa e exibe os bytes brutos do buffer definindo o formato do buffer).
 
 ### <a name="frame-analysis"></a>Análise de quadro
  Os elementos gráficos do seu aplicativo não precisam apenas ser corretos. eles também precisam ser rápidos. Mesmo em dispositivos menos poderosos, como laptops, com gráficos integrados ou celulares. E eles ainda precisam ser ótimos.
@@ -117,6 +117,6 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 
  Mas a análise de quadros não está prestes a ficar rápido. é sobre obter a maior parte do desempenho que você pode, ao mesmo tempo, fornecer a menor quantidade de qualidade visual. Às vezes, um efeito caro que parece ótimo em uma exibição grande não faz o mesmo impacto quando exibido na tela pequena de um telefone, em que um efeito mais simples pode parecer muito bom sem descarregar a bateria. As alterações automáticas e os parâmetros de comparação que a análise gráfica fornece podem ajudá-lo a encontrar o equilíbrio certo para seu aplicativo em uma variedade de dispositivos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Ferramenta de captura de linha de comando](command-line-capture-tool.md)
 - [Depurador HLSL](hlsl-shader-debugger.md)

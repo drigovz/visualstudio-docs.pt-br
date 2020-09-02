@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bdbf58321426890bffd45a08818dc5341bdfc3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187396"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um número especificado de registros na sequência enumerado.  
+Recupera um número especificado de registros na sequência enumerada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,23 +39,23 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parâmetros  
  celt  
- [in] O número de registros a serem recuperados.  
+ no O número de registros a serem recuperados.  
   
  cbData  
- [in] Tamanho do buffer de dados, em bytes.  
+ no Tamanho do buffer de dados, em bytes.  
   
  pcbData  
- [out] Retorna o número de bytes retornados. Se `data` for NULL, em seguida, `pcbData` contém o número total de bytes de dados disponíveis para todos os registros de solicitado.  
+ fora Retorna o número de bytes retornados. Se `data` for NULL, `pcbData` conterá o número total de bytes de dados disponíveis para todos os registros solicitados.  
   
  data[]  
- [out] Um buffer que deve ser preenchido com os dados de registro de fluxo de depuração.  
+ fora Um buffer que deve ser preenchido com os dados de registro do fluxo de depuração.  
   
  pceltFetched  
- [no, out] Retorna o número de registros em `data`.  
+ [entrada, saída] Retorna o número de registros em `data` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há mais registros. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais registros. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

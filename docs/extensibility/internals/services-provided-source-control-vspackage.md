@@ -1,5 +1,5 @@
 ---
-title: Serviços fornecidos (Source Control VSPackage) | Microsoft Docs
+title: Serviços fornecidos (controle do código-fonte VSPackage) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f08ebe49756b442ef474ac2a032a72894f6bec15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705401"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Serviços fornecidos (VSPackage de controle do código-fonte)
-Os serviços são o principal mecanismo através do qual a funcionalidade é compartilhada entre vsPackages e entre o ambiente de desenvolvimento integrado (IDE) do Visual Studio e seus VSPackages instalados. Para obter uma descrição detalhada dos serviços e sua importância no Visual Studio IDE, consulte[Usando e Fornecendo Serviços](../../extensibility/using-and-providing-services.md).
+Os serviços são o mecanismo principal por meio do qual a funcionalidade é compartilhada entre VSPackages e entre o IDE (ambiente de desenvolvimento integrado) do Visual Studio e seu VSPackages instalado. Para obter uma descrição detalhada dos serviços e sua importância no IDE do Visual Studio, consulte[usando e fornecendo serviços](../../extensibility/using-and-providing-services.md).
 
-## <a name="the-source-control-service"></a>O Serviço de Controle de Origem
- O Visual Studio fornece duas camadas de serviços, serviços de nível IDE e serviços de nível de pacote. O Visual Studio IDE fornece nativamente serviços de nível IDE. O pacote de controle de origem consome alguns desses serviços. O pacote de controle de origem como um VSPackage compartilha sua funcionalidade de controle de origem, fornecendo um serviço de controle de origem privado próprio. O pacote de controle de origem encapsula o conjunto de interfaces relacionadas ao controle de fonte implementadas por ele na forma de um contrato que pode ser usado pelo Visual Studio IDE.
+## <a name="the-source-control-service"></a>O serviço de controle do código-fonte
+ O Visual Studio fornece duas camadas de serviços, serviços de nível IDE e serviços de nível de pacote. O IDE do Visual Studio fornece nativamente serviços de nível IDE. O pacote de controle do código-fonte consome alguns desses serviços. O pacote de controle do código-fonte como um VSPackage compartilha sua funcionalidade de controle do código-fonte fornecendo um serviço de controle do código-fonte privado próprio. O pacote de controle do código-fonte encapsula o conjunto de interfaces relacionadas ao controle do código-fonte implementado por ele na forma de um contrato que pode ser usado pelo IDE do Visual Studio.
 
 ## <a name="see-also"></a>Confira também
 - [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)

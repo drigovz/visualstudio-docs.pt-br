@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596431"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
-A guia **HTML** da Caixa de Ferramentas fornece componentes úteis em páginas da Web e formulários da Web. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.
+A guia **HTML** da caixa de ferramentas fornece componentes que são úteis em páginas da Web e Web Forms. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.
 
 Para criar uma instância de uma ferramenta na guia **HTML**, clique duas vezes na ferramenta para adicioná-la ao documento no ponto de inserção atual ou selecione a ferramenta e arraste-a para a posição desejada na superfície de edição.
 
@@ -87,7 +87,7 @@ Ao arrastar **Entrada (Texto)** para a superfície do modo de exibição de Desi
 > [!IMPORTANT]
 >É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).
 
-**Entrada (Arquivo)**
+**Entrada (arquivo)**
 
 ![Campo de arquivo de paginação HTML](../../ide/reference/media/vxfilefield.gif)
 
@@ -168,7 +168,7 @@ Ao arrastar **Área de texto** para a superfície do modo de exibição de Desig
 > [!IMPORTANT]
 > É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).
 
-**Tabela**
+**Table**
 
 ![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
@@ -206,7 +206,7 @@ Ao arrastar **Selecionar** para a superfície do modo de exibição de Design, u
 
 É possível criar um elemento `select` multilinha aumentando o valor da propriedade de tamanho.
 
-**Regra Horizontal**
+**Regra horizontal**
 
 ![Item de Régua Horizontal da página HTML](../../ide/reference/media/vxhorizontal.gif)
 
@@ -218,7 +218,7 @@ Ao arrastar **Régua Horizontal** para a superfície do modo de exibição de De
 <hr width="100%" size=1>
 ```
 
-**Div**
+**Marca**
 
 ![Rótulo da página HTML](../../ide/reference/media/vxlabel.gif)
 
@@ -232,4 +232,4 @@ Ao arrastar **Div** para a superfície do modo de exibição de Design, uma marc
 
 ## <a name="see-also"></a>Confira também
 
-- [Ferramentas](../../ide/reference/toolbox.md)
+- [Caixa de Ferramentas](../../ide/reference/toolbox.md)
