@@ -1,5 +1,5 @@
 ---
-title: Núcleo de ASP.NET Debug
+title: ASP.NET Core de depuração
 description: Depurar ASP.NET Core usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847883"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Quickstart: Debug ASP.NET Core com o depurador visual studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Início rápido: Depurar ASP.NET Core com o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
@@ -31,7 +31,7 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo Web ASP.NET Core**. Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**. Digite um nome como **MyDbgApp** e clique em **OK**.
+    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**. Digite um nome como **MyDbgApp** e clique em **OK**.
 
     Na caixa de diálogo exibida, escolha **Aplicativo Web** no painel central e clique em **OK**.
 
@@ -138,4 +138,4 @@ Para saber mais sobre como usar editar e continuar e sobre as limitações das f
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
 > [!div class="nextstepaction"]
-> [Primeiro olhe para o depurador](../debugger/debugger-feature-tour.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

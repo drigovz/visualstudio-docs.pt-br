@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017145"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluções do SharePoint
@@ -108,7 +109,7 @@ $Resources:String ID
 ### <a name="localize-code"></a>Código de localização
  Além de localizar cadeias de caracteres de recurso e [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] marcação, você também precisa localizar as cadeias de caracteres de mensagem e de erro que aparecem no código da solução. As mensagens informativas e de erro localizadas estão contidas em assemblies satélites. Os assemblies satélite contêm cadeias de caracteres que são visíveis para os usuários, como [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] mensagens de texto e de saída como exceções.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]usa o Hub de .NET Framework padrão e o modelo de spoke. O Hub ou o assembly do programa principal contém os recursos de idioma padrão. Os spokes, ou assemblies satélite, contêm os recursos específicos do idioma. Para obter mais informações, consulte [Empacotamento e implantação de recursos](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Os assemblies satélite são compilados a partir de arquivos de recurso (*. resx*). Quando você adiciona arquivos de recursos específicos a um idioma ao seu projeto e ao pacote de solução, o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila os arquivos de recurso em assemblies satélite chamados *{Project Name} .resources.dll*.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa o Hub de .NET Framework padrão e o modelo de spoke. O Hub ou o assembly do programa principal contém os recursos de idioma padrão. Os spokes, ou assemblies satélite, contêm os recursos específicos do idioma. Para obter mais informações, consulte [Empacotamento e implantação de recursos](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Os assemblies satélite são compilados a partir de arquivos de recurso (*. resx*). Quando você adiciona arquivos de recursos específicos a um idioma ao seu projeto e ao pacote de solução, o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila os arquivos de recurso em assemblies satélite chamados *{Project Name} .resources.dll*.
 
  Assim como acontece com a marcação ASPX, localize o código do aplicativo SharePoint adicionando itens de projeto de arquivo de recursos separados ao seu projeto; um para o idioma padrão e outro para cada idioma localizado. No entanto, como mencionado anteriormente, se você já tiver arquivos de recursos para localizar a marcação ASPX, poderá reutilizá-los para o código de localização. Se você precisar criar arquivos de recursos, dê ao arquivo de recurso de idioma padrão um nome de sua escolha anexado com uma extensão *. resx* . Nomeie os arquivos de recursos localizados com o mesmo nome anexado à cultura específica do idioma [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Defina a propriedade de ação de compilação de cada arquivo de recurso como recurso incorporado para habilitar a criação de assemblies de recursos de satélite.
 
@@ -127,7 +128,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
 
  Na classe derivada, referencie a ID da cadeia de caracteres do arquivo de recursos e o objeto ResourceManager para obter o valor localizado para a ID da cadeia de caracteres. Retornar esse valor para o atributo do editor de propriedades.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como localizar um recurso](../sharepoint/how-to-localize-a-feature.md)
 - [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)
 - [Como: Localizar código](../sharepoint/how-to-localize-code.md)

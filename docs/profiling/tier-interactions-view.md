@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778135"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
@@ -40,8 +40,8 @@ A Exibição Interações exibe os dados de interação de camada em dois painé
 |Coluna|Descrição|
 |------------|-----------------|
 |**Nome**|- Para uma linha de nível superior, o nome do processo com perfil ou a página da Web.<br />- Para uma linha de conexão de banco de dados, o nome do servidor que hospeda o banco de dados.|
-|**Database**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
-|**Contar**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|
+|**Banco de dados**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
+|**Count**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|
 |**Tempo total decorrido**|O tempo total gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
@@ -52,7 +52,7 @@ A Exibição Interações exibe os dados de interação de camada em dois painé
 |Coluna|Descrição|
 |------------|-----------------|
 |**Texto do comando**|A consulta SQL da solicitação.|
-|**Contagem de consulta**|O número de vezes que a consulta foi executada.|
+|**Contagem de consultas**|O número de vezes que a consulta foi executada.|
 |**Tempo total decorrido**|O tempo total gasto na execução das instâncias da consulta.|
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma instância da consulta.|
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma instância da consulta.|

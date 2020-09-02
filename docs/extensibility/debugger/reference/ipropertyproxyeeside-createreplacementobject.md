@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyEESide::Criarobjeto de substituição | Microsoft Docs
+title: 'IPropertyProxyEESide:: ReplaceObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715033"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-Cria uma cópia de um objeto de dados específico do avaliador de expressão (EE).
+Cria uma cópia de um objeto de dados específico para o avaliador de expressão (EE).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,20 +41,20 @@ int CreateReplacementObject(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dataIn`\
-[em] Um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que mantém os dados a serem copiados.
+no Um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contém os dados a serem copiados.
 
 `dataOut`\
-[fora] Retorna um `IEEDataStorage` novo objeto.
+fora Retorna um novo `IEEDataStorage` objeto.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método recebe um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) representando uma matriz de bytes. Este objeto de dados de entrada normalmente não é implementado pelo EE. No entanto, o objeto retornado por este método é sempre implementado `IEEDataStorage` pelo EE, que permite ao EE implementar a interface em qualquer classe desejada.
+ Esse método recebe um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que representa uma matriz de bytes. Esse objeto de dados de entrada normalmente não é implementado pelo EE. No entanto, o objeto retornado por esse método é sempre implementado pelo EE, o que permite que o EE implemente a `IEEDataStorage` interface em qualquer classe desejada.
 
- Observe que os dados fornecidos pelo objeto de entrada devem ser os mesmos `IEEDataStorage` dados no objeto de saída. `IEEDataStorage`
+ Observe que os dados fornecidos pelo objeto de entrada `IEEDataStorage` devem ser os mesmos dados no objeto de saída `IEEDataStorage` .
 
 ## <a name="see-also"></a>Confira também
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

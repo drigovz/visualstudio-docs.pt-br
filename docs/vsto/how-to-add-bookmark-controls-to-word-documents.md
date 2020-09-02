@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547245"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: adicionar controles de indicador a documentos do Word
@@ -38,7 +38,7 @@ ms.locfileid: "85547245"
 
   Para obter mais informações sobre <xref:Microsoft.Office.Tools.Word.Bookmark> controles, consulte [controle de indicadores](../vsto/bookmark-control.md).
 
-## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Adicionar controles de indicador em tempo de design
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Adicionar controles de indicador em tempo de design
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles ao documento em um projeto de nível de documento em tempo de design:
 
 - Na **caixa de ferramentas**do Visual Studio.
@@ -77,7 +77,7 @@ ms.locfileid: "85547245"
 
 3. Na caixa de diálogo **indicador** , digite o nome do novo indicador e clique em **Adicionar**.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Adicionar controles de indicador em tempo de execução em um projeto de nível de documento
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Adicionar controles de indicador em tempo de execução em um projeto de nível de documento
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente ao seu documento em tempo de execução usando métodos da <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade da `ThisDocument` classe em seu projeto. Há duas sobrecargas de método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:
 
 - Adicione um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.
@@ -96,7 +96,7 @@ ms.locfileid: "85547245"
     > [!NOTE]
     > Se você quiser criar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de um existente <xref:Microsoft.Office.Interop.Word.Bookmark> , use o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> método e passe o existente <xref:Microsoft.Office.Interop.Word.Bookmark> .
 
-## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Adicionar controles de indicador em tempo de execução em um projeto de suplemento do VSTO
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Adicionar controles de indicador em tempo de execução em um projeto de suplemento do VSTO
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente a qualquer documento aberto em tempo de execução usando um suplemento do VSTO. Para fazer isso, gere um <xref:Microsoft.Office.Tools.Word.Document> item de host baseado em um documento aberto e, em seguida, use os métodos da <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade desse item de host. Há duas sobrecargas de método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:
 
 - Adicione um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.

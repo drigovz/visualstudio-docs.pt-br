@@ -19,9 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017029"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site existente do SharePoint
@@ -31,9 +32,9 @@ ms.locfileid: "86017029"
 > Para importar fluxos de trabalho reutilizáveis, use o modelo de projeto importar fluxo de trabalho reutilizável. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Soluções do SharePoint com suporte
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]dá suporte total à importação de soluções criadas no [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e no [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] .
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] dá suporte total à importação de soluções criadas no [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e no [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] .
 
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]o não oferece suporte à importação de soluções criadas nos seguintes aplicativos:
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] o não oferece suporte à importação de soluções criadas nos seguintes aplicativos:
 
 - [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]
 
@@ -90,7 +91,7 @@ ms.locfileid: "86017029"
 
  Por exemplo, se você importar a definição de lista ExpenseForms, uma definição de lista com esse nome aparecerá na pasta de **definições de lista** em **Gerenciador de soluções** junto com seus *Elements.xml* e *Schema.xml* arquivos. No entanto, seus formulários ASPX e HTML associados podem ser colocados em uma pasta chamada **ExpenseForms** na pasta **outros arquivos importados** . Para concluir a importação, mova esses arquivos na definição de lista ExpenseForms em **Gerenciador de soluções** e altere a propriedade **DeploymentType** para cada arquivo de **NoDeployment** para **ElementFile**.
 
- Ao importar receptores de eventos, o arquivo de *Elements.xml* é copiado para o local correto, mas você deve incluir manualmente o assembly no pacote de solução para que ele seja implantado com a solução. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]como fazer isso, consulte [como: Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Ao importar receptores de eventos, o arquivo de *Elements.xml* é copiado para o local correto, mas você deve incluir manualmente o assembly no pacote de solução para que ele seja implantado com a solução. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] como fazer isso, consulte [como: Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Ao importar fluxos de trabalho, os formulários do InfoPath são copiados para a pasta **arquivos importados** . Se o arquivo *. wsp* contiver um modelo da Web, ele será definido como a página de inicialização no **Gerenciador de soluções**.
 
@@ -106,13 +107,13 @@ ms.locfileid: "86017029"
  Ao importar soluções, alguns atributos de recurso opcionais são omitidos do manifesto de recurso importado. Se você quiser restaurar esses atributos no novo arquivo de recurso, identifique os atributos ausentes comparando o arquivo de recurso original com o novo manifesto de recurso e siga as instruções no tópico [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>A detecção de conflito de implantação não é executada em instâncias de lista internas
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]não executa a detecção de conflito de implantação em instâncias de lista internas (ou seja, instâncias de lista padrão que acompanham o SharePoint). A detecção de conflitos não é feita para evitar a substituição das instâncias de lista internas no SharePoint. As instâncias de lista internas ainda são implantadas ou atualizadas, mas nunca são excluídas ou substituídas. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] não executa a detecção de conflito de implantação em instâncias de lista internas (ou seja, instâncias de lista padrão que acompanham o SharePoint). A detecção de conflitos não é feita para evitar a substituição das instâncias de lista internas no SharePoint. As instâncias de lista internas ainda são implantadas ou atualizadas, mas nunca são excluídas ou substituídas. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
 ## <a name="import-sharepoint-server-2010-workflows"></a>Importar fluxos de trabalho do SharePoint Server 2010
- Se você importar um fluxo de trabalho criado no [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] , ele não será executado corretamente depois que você implantá-lo. O fluxo de trabalho não é executado corretamente porque determinados assemblies estão ausentes e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] os fluxos de trabalho contêm formulários do InfoPath que não têm suporte no momento em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] soluções de fluxo de trabalho. No entanto, os fluxos de trabalho importados [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] podem ser feitos para funcionar corretamente após a correção de alguns itens, como a adição de referências aos [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] assemblies e a reconexão dos formulários do InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Importando fluxos de trabalho do SharePoint Server 2010](/sharepoint/dev/).
+ Se você importar um fluxo de trabalho criado no [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] , ele não será executado corretamente depois que você implantá-lo. O fluxo de trabalho não é executado corretamente porque determinados assemblies estão ausentes e  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] os fluxos de trabalho contêm formulários do InfoPath que não têm suporte no momento em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] soluções de fluxo de trabalho. No entanto, os fluxos de trabalho importados [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] podem ser feitos para funcionar corretamente após a correção de alguns itens, como a adição de referências aos [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] assemblies e a reconexão dos formulários do InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Importando fluxos de trabalho do SharePoint Server 2010](/sharepoint/dev/).
 
 ## <a name="item-name-character-limit"></a>Limite de caracteres do nome do item
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tem um limite de 260 caracteres no total para nomes de item de projeto e projeto, incluindo o caminho. Ao importar uma solução, se um nome de item exceder esse limite, você receberá o erro:
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tem um limite de 260 caracteres no total para nomes de item de projeto e projeto, incluindo o caminho. Ao importar uma solução, se um nome de item exceder esse limite, você receberá o erro:
 
  **O caminho especificado, o nome do arquivo ou ambos são muito longos. O nome de arquivo totalmente qualificado deve ter menos de 260 caracteres e o nome do diretório deve ter menos de 248 caracteres.**
 
@@ -132,7 +133,7 @@ ms.locfileid: "86017029"
 
  A ausência de um controle do Gerenciador de scripts pode ser um problema quando você importa um [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] projeto do ou do [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] no [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , porque o atributo SharePointProductVersion de todos os novos projetos está definido como 14,0. Se você implantar um projeto atualizado que tenha um formulário da Web sem um Gerenciador de scripts, o formulário não será exibido no SharePoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: importar itens de um site existente do SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
 - [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md)
 - [Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer para o Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

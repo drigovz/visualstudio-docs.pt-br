@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192418"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera os bytes de código de origem.  
+Recupera os bytes do código-fonte.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `cbData`  
- [in] O número de bytes que representa o tamanho do buffer de dados.  
+ no O número de bytes que representa o tamanho do buffer de dados.  
   
  `pcbData`  
- [out] Retorna o número de bytes que representa os bytes retornados. Se `data` está `NULL`, em seguida, `pcbData` é o número total de bytes de dados disponíveis.  
+ fora Retorna o número de bytes que representa os bytes retornados. Se `data` for `NULL` , `pcbData` será o número total de bytes de dados disponíveis.  
   
  `data[]`  
- [out] Um buffer que deve ser preenchida com os bytes de origem.  
+ fora Um buffer que deve ser preenchido com os bytes de origem.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

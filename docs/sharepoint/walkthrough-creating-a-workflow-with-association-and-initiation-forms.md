@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017128"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Walkthrough: criar um fluxo de trabalho com formulários de associação e de inicialização
@@ -167,7 +168,7 @@ ms.locfileid: "86017128"
 
 2. Na barra de menus, escolha **projeto**  >  **Adicionar novo item** exibir a caixa de diálogo **Adicionar novo item** .
 
-3. Na exibição de árvore da caixa de diálogo, expanda **Visual C#** ou **Visual Basic** (dependendo da linguagem do seu projeto), expanda o nó do **SharePoint** e escolha o nó **2010** .
+3. Na exibição de árvore da caixa de diálogo, expanda **Visual C#** ou **Visual Basic**  (dependendo da linguagem do seu projeto), expanda o nó do **SharePoint** e escolha o nó **2010** .
 
 4. Na lista de modelos, escolha o modelo **formulário de inicialização do fluxo de trabalho** .
 
@@ -444,6 +445,6 @@ ms.locfileid: "86017128"
 
 - Para saber mais sobre os fluxos de trabalho do SharePoint, consulte [fluxos de trabalho no Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Walkthrough: adicionar uma página de aplicativo a um fluxo de trabalho](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

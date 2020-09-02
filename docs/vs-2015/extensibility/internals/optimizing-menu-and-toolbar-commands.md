@@ -1,5 +1,5 @@
 ---
-title: Otimizando o Menu e comandos da barra de ferramentas | Microsoft Docs
+title: Otimizando os comandos de menu e barra de ferramentas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,24 +15,24 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25a721c77269837ad8d158db186274586ad638df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150822"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pode fazer com que uma interface do usuário cheia. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece maneiras para ajudar a minimizar a confusão de comando de interface do usuário.  
+A adição de VSPackages e seus comandos correspondentes a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podem causar uma interface do usuário lotada. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece maneiras de ajudar a minimizar a confusão do comando da interface do usuário.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Disponibilização de comandos](../../extensibility/internals/making-commands-available.md)  
- Fornece diretrizes gerais para minimizar acumularem do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário quando você adiciona os VSPackages.  
+ [Disponibilizando comandos](../../extensibility/internals/making-commands-available.md)  
+ Fornece diretrizes gerais para minimizar a expansão da interface do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usuário quando você adiciona o VSPackages.  
   
  [Diretrizes de posicionamento](../../extensibility/internals/command-placement-guidelines.md)  
  Fornece diretrizes específicas para implementar um VSPackage de acordo com o tamanho do conjunto de comandos.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comando.
+ Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comandos.

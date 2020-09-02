@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849156"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: diagnosticar atrasos de interface do usuário causados por extensões
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como diagnosticar atrasos na interface do usuário causados pelas extensões
 
 Quando a interface do usuário não responde, o Visual Studio examina a pilha de chamadas do thread da interface do usuário, começando pela folha e trabalhando em direção à base. Se o Visual Studio determinar que um quadro de pilha de chamadas pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostrará uma notificação.
 
@@ -43,7 +43,7 @@ Para diagnosticar um atraso na interface do usuário, primeiro você precisa ide
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Reiniciar VS com o log de atividades ativado
 
-O Visual Studio pode gerar um "log de atividades" que fornece informações úteis ao depurar um problema. Para ativar o log de atividades no Visual Studio, abra o Visual Studio com a opção de linha de comando `/log`. Depois que o Visual Studio é iniciado, o log de atividades é armazenado no seguinte local:
+O Visual Studio pode gerar um "log de atividades" que fornece informações úteis ao depurar um problema. Para ativar o log de atividades no Visual Studio, abra o Visual Studio com a `/log` opção de linha de comando. Depois que o Visual Studio é iniciado, o log de atividades é armazenado no seguinte local:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -71,7 +71,7 @@ Para interromper a coleta de rastreamento, basta usar o botão **parar coleção
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Examine o log de atividades para obter a ID de atraso
 
-Conforme mencionado anteriormente, você pode encontrar o log de atividades em *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.xml*. Toda vez que o Visual Studio detecta um atraso da interface do usuário da extensão, ele grava um nó no log de atividades com `UIDelayNotifications` como a origem. Esse nó contém quatro partes de informações sobre o atraso da interface do usuário:
+Conforme mencionado anteriormente, você pode encontrar o log de atividades em *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*. Toda vez que o Visual Studio detecta um atraso da interface do usuário da extensão, ele grava um nó no log de atividades com `UIDelayNotifications` como a origem. Esse nó contém quatro partes de informações sobre o atraso da interface do usuário:
 
 - A ID de atraso da interface do usuário, um número sequencial que identifica exclusivamente um atraso da interface do usuário em uma sessão do VS
 - A ID da sessão, que identifica exclusivamente sua sessão do Visual Studio do início ao fim
@@ -102,7 +102,7 @@ Em seguida, abra o arquivo de rastreamento. Você pode fazer isso usando a mesma
 Em seguida, selecione o arquivo de rastreamento no painel esquerdo e abra-o escolhendo **abrir** no menu de contexto ou clique com o botão direito do mouse.
 
 > [!NOTE]
-> Por padrão, o PerfView gera um arquivo zip. Quando você abre *trace. zip*, ele automaticamente descompacta o arquivo morto e abre o rastreamento. Você pode ignorar isso desmarcando a caixa **zip** durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em diferentes máquinas, é altamente recomendável desmarcar a caixa **zip** . Sem essa opção, o PDBs necessário para assemblies NGen não acompanhará o rastreamento e, portanto, os símbolos de assemblies NGen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies NGen.)
+> Por padrão, o PerfView gera um arquivo zip. Quando você abre o *trace.zip*, ele descompacta automaticamente o arquivo morto e abre o rastreamento. Você pode ignorar isso desmarcando a caixa **zip** durante a coleta de rastreamento. No entanto, se você estiver planejando transferir e usar rastreamentos em diferentes máquinas, é altamente recomendável desmarcar a caixa **zip** . Sem essa opção, o PDBs necessário para assemblies NGen não acompanhará o rastreamento e, portanto, os símbolos de assemblies NGen não serão resolvidos no computador de destino. (Consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obter mais informações sobre PDBs para assemblies NGen.)
 
 Pode levar vários minutos para que o PerfView processe e abra o rastreamento. Quando o rastreamento está aberto, uma lista de vários "modos de exibição" aparece sob ele.
 
@@ -111,10 +111,10 @@ Pode levar vários minutos para que o PerfView processe e abra o rastreamento. Q
 Primeiro, usaremos a exibição de **eventos** para obter o intervalo de tempo do atraso da interface do usuário:
 
 1. Abra o modo de exibição **eventos** selecionando `Events` nó sob o rastreamento e escolhendo **abrir** no menu de contexto ou clique com o botão direito do mouse.
-2. Selecione "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`" no painel esquerdo.
+2. Selecione " `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` " no painel esquerdo.
 3. Pressione Enter
 
-A seleção é aplicada e todos os eventos de `ExtensionUIUnresponsiveness` são exibidos no painel direito.
+A seleção é aplicada e todos os `ExtensionUIUnresponsiveness` eventos são exibidos no painel direito.
 
 ![Selecionando eventos na exibição de eventos](media/perfview-event-selection.png)
 
@@ -137,7 +137,7 @@ Ao abrir a exibição **pilhas de tempo de thread** , escolha o processo **deven
 Na exibição **pilhas de tempo de thread** , no canto superior esquerdo da página, você pode definir o intervalo de tempo para os valores que calculamos na etapa anterior e pressionar **Enter** para que as pilhas sejam ajustadas para esse intervalo de tempo.
 
 > [!NOTE]
-> Determinar qual thread é o thread da interface do usuário (inicialização) pode ser muito intuitivo se a coleta de rastreamento for iniciada depois que o Visual Studio já estiver aberto. No entanto, os primeiros elementos na pilha do thread da interface do usuário (inicialização) são sempre prováveis DLLs do sistema operacional (*ntdll. dll* e *Kernel32. dll*) seguido por `devenv!?` e, em seguida, `msenv!?`. Essa sequência pode ajudar a identificar o thread da interface do usuário.
+> Determinar qual thread é o thread da interface do usuário (inicialização) pode ser muito intuitivo se a coleta de rastreamento for iniciada depois que o Visual Studio já estiver aberto. No entanto, os primeiros elementos na pilha do thread da interface do usuário (inicialização) são sempre prováveis DLLs do sistema operacional (*ntdll.dll* e *kernel32.dll*) seguidos por `devenv!?` e depois `msenv!?` . Essa sequência pode ajudar a identificar o thread da interface do usuário.
 
  ![Identificando o thread de inicialização](media/ui-delay-startup-thread.png)
 

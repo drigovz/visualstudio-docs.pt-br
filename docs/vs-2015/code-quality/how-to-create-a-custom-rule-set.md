@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um conjunto de regras personalizado | Microsoft Docs'
+title: 'Como: criar um conjunto de regras personalizadas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657444"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Como: Criar um conjunto de regras personalizado
+# <a name="how-to-create-a-custom-rule-set"></a>Como criar um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode criar e modificar um conjunto de *regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Para criar um conjunto de regras personalizado, você abre um ou mais conjuntos de regras padrão no editor de conjunto de regras. Você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando a análise de código determina que uma regra foi violada.
+No [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)] , você pode criar e modificar um conjunto de *regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Para criar um conjunto de regras personalizado, você abre um ou mais conjuntos de regras padrão no editor de conjunto de regras. Você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando a análise de código determina que uma regra foi violada.
 
  Para criar um novo conjunto de regras personalizadas, salve-o usando um novo nome de arquivo. O conjunto de regras personalizadas é atribuído automaticamente ao projeto.
 
@@ -31,7 +31,7 @@ Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Para abrir um arquivo de conjunto de regras vazio no editor de conjunto de regras
 
-1. No menu **arquivo** do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], aponte para **novo** e clique em **arquivo**.
+1. No menu **arquivo** do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , aponte para **novo** e clique em **arquivo**.
 
 2. Na caixa de diálogo **novo arquivo** , clique em **geral** na lista **modelos instalados** e selecione conjunto de **regras de análise de código**.
 
@@ -47,9 +47,9 @@ Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
    - Selecione o conjunto de regras que você deseja personalizar.
 
-     \- ou -
+     \- ou –
 
-   - Selecionar **\<Browse... >** especificar um conjunto de regras existente que não esteja na lista.
+   - Selecione **\<Browse...>** para especificar um conjunto de regras existente que não esteja na lista.
 
 4. Clique em **abrir** para exibir as regras no editor de conjunto de regras.
 
@@ -59,7 +59,7 @@ Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 2. Na guia **Propriedades** , clique em **análise de código**.
 
-3. Selecione **\<Choose vários conjuntos de regras... >** **executar este conjunto de regras**.
+3. Selecione **\<Choose multiple rule sets...>** em **executar este conjunto de regras**.
 
 4. Na caixa de diálogo **Adicionar ou remover conjuntos de regras** , selecione os conjuntos de regras nos quais você deseja basear o novo conjunto de regras e clique em **OK**.
 
@@ -97,7 +97,7 @@ Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 - Para recolher as regras em todos os grupos, clique em **recolher tudo**.
 
-- Para alterar o campo pelo qual as regras são agrupadas, selecione o campo na lista **Agrupar por** . Para exibir as regras desagrupadas, selecione **\<None >** .
+- Para alterar o campo pelo qual as regras são agrupadas, selecione o campo na lista **Agrupar por** . Para exibir as regras desagrupadas, selecione **\<None>** .
 
 - Para adicionar ou remover campos em colunas de regra, clique em **Opções de coluna**.
 
@@ -111,5 +111,5 @@ Em [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 - Para adicionar ou remover conjuntos de regras padrão da Microsoft para o conjunto de regras atual, clique em **Adicionar ou remover conjuntos de regras filho**.
 
-## <a name="see-also"></a>Consulte também
- [Como: Configurar a análise de código para um projeto de código gerenciado ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [referência de conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Consulte Também
+ [Como configurar a análise de código para uma referência de conjunto de regras de análise de código de projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code analysis rule set reference](../code-quality/code-analysis-rule-set-reference.md)

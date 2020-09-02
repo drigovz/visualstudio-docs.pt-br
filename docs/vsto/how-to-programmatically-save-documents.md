@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537586"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Como: salvar documentos programaticamente
@@ -88,7 +88,7 @@ Este exemplo de código requer o seguinte:
 
 - Para salvar um documento com um novo nome, um diretório chamado *teste* deve existir na unidade C.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)

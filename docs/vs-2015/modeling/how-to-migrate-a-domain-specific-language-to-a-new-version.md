@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45f7b38f7dbb6ea470b2d9e186dc8e6bf4b33b1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657335"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode migrar projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../includes/vs2010-md.md)] da versão do [!INCLUDE[dsl](../includes/dsl-md.md)] que foi distribuída com o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
+Você pode migrar projetos que definem e usam a linguagem específica de domínio para a [!INCLUDE[vs2010](../includes/vs2010-md.md)] partir da versão do [!INCLUDE[dsl](../includes/dsl-md.md)] que foi distribuída com o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] .
 
- Uma ferramenta de migração é fornecida como parte do [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]. A ferramenta converte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projetos e soluções que usam ou definem ferramentas DSL.
+ Uma ferramenta de migração é fornecida como parte do [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] . A ferramenta converte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projetos e soluções que usam ou definem ferramentas DSL.
 
- Você deve executar a ferramenta de migração explicitamente: ela não é iniciada automaticamente quando você abre uma solução no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A ferramenta e o documento de orientação detalhada podem ser encontrados neste caminho:
+ Você deve executar a ferramenta de migração explicitamente: ela não é iniciada automaticamente quando você abre uma solução no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . A ferramenta e o documento de orientação detalhada podem ser encontrados neste caminho:
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar seus projetos de DSL
- A ferramenta de migração modifica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arquivos de projeto ( **. csproj**) e arquivos de solução ( **. sln**).
+ A ferramenta de migração modifica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arquivos de projeto (**. csproj**) e arquivos de solução (**. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Para preparar projetos para migração.
 
@@ -63,9 +63,9 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
 
    1. Clique em **converter**.
 
-        Antes de cada arquivo de projeto ser convertido, uma cópia de _Project_ **. csproj** é salva como _Project_ **. VS2008. csproj**
+        Antes de cada arquivo de projeto ser convertido, uma cópia de _Project_**. csproj** é salva como _Project_**. VS2008. csproj**
 
-        Uma cópia de cada _solução_ **. sln** é salva como _Solution_ **. VS2008. sln**
+        Uma cópia de cada _solução_**. sln** é salva como _Solution_**. VS2008. sln**
 
    2. Investigue todas as conversões com falha que são relatadas.
 
@@ -86,5 +86,5 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
 
    - Teste seu designer.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Novidades no SDK de Visualização e Modelagem](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

@@ -8,10 +8,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: Saiba mais sobre as responsabilidades dos administradores de assinaturas.
 ms.openlocfilehash: ff849bbaa1a301979228c558565dc3f2ed0125ad
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238823"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Visão geral das responsabilidades do administrador
@@ -36,7 +36,7 @@ As assinaturas do Visual Studio permitem aos membros da equipe de desenvolviment
 | Reatribuição de licença                     | Quando um usuário sair de uma equipe e não precisar mais de uma licença, você poderá reatribuir a licença depois de 90 dias. Quando você reatribuir uma licença, as chaves do produto (Product Keys) que já tiverem sido usadas ainda ficarão disponíveis, mas não serão substituídas. Para organizações que têm contratos EA (Contrato Enterprise), todos os benefícios que já tiverem sido usados pelo usuário original, como treinamentos do Pluralsight, serão redefinidos.                                                                                                                                                                                                                                                 |
 | Exceção para usuários finais                  | Ao final de um projeto de desenvolvimento de software, os usuários finais normalmente examinam um aplicativo e determinam se ele atende aos critérios necessários para o lançamento. Esse processo é chamado de UAT (teste de aceitação do usuário). Os membros da equipe, como um responsável pela empresa ou um gerente de produto, podem agir como proxies para os usuários finais. Os usuários finais que não tiverem uma assinatura do Visual Studio poderão acessar o software para realizar o UAT se o uso do software estiver em conformidade com todos os termos de licenciamento do Visual Studio. É raro que alguém cuja função principal esteja criando, desenvolvendo ou testando o software também seja qualificado como um "usuário final". |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

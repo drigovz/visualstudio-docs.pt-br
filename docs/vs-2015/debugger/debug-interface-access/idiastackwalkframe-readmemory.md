@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Readmemory | Microsoft Docs'
+title: 'IDiaStackWalkFrame:: readMemory | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97a868973d2a514150b8d728e685523e918f88f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150171"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
@@ -39,22 +39,22 @@ HRESULT readMemory ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `type`  
- [in] Um dos [enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) valores de enumeração que especifica o tipo de memória para acessar.  
+ no Um dos valores de enumeração de [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) que especifica o tipo de memória a ser acessado.  
   
  `va`  
- [in] Local de endereço virtual de imagem será iniciada a leitura.  
+ no Local de endereço virtual na imagem para começar a leitura.  
   
  `cbData`  
- [in] Tamanho do buffer de dados, em bytes.  
+ no Tamanho do buffer de dados, em bytes.  
   
  `pcbData`  
- [out] Retorna o número de bytes retornados. Se `data` está `NULL`, em seguida, `pcbData` contém o número total de bytes de dados disponíveis.  
+ fora Retorna o número de bytes retornados. Se `data` for `NULL` , `pcbData` conterá o número total de bytes de dados disponíveis.  
   
  `data`  
- [out] Um buffer que deve ser preenchido com dados do local especificado.  
+ fora Um buffer que deve ser preenchido com dados do local especificado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

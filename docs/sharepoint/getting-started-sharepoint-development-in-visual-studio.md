@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 999a23f8765a72feb22822120a11e1b38b9ac946
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017092"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introdução (desenvolvimento do SharePoint no Visual Studio)
@@ -25,7 +26,7 @@ ms.locfileid: "86017092"
 
  Para obter informações sobre os suplementos do SharePoint 2013 e do SharePoint, consulte [sharepoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) e [Compilar suplementos do SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
- O SharePoint oferece uma plataforma de colaboração baseada na Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fornece muitos modelos de projeto para a criação de sites e conteúdo do SharePoint, incluindo definições de lista, fluxos de trabalho, modelos de conectividade de dados corporativos e definições de site. Além disso, você pode criar extensões para os projetos e ferramentas do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+ O SharePoint oferece uma plataforma de colaboração baseada na Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece muitos modelos de projeto para a criação de sites e conteúdo do SharePoint, incluindo definições de lista, fluxos de trabalho, modelos de conectividade de dados corporativos e definições de site. Além disso, você pode criar extensões para os projetos e ferramentas do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -50,7 +51,7 @@ ms.locfileid: "86017092"
 |[Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Descreve como empacotar e implantar soluções do SharePoint.|
 |[Estenda as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Descreve como estender as ferramentas do SharePoint para criar os recursos de que você precisa.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Procurar conexões do SharePoint usando Gerenciador de Servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

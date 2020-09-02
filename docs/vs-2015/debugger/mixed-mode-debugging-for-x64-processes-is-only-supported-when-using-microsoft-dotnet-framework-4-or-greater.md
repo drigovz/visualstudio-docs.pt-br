@@ -1,5 +1,5 @@
 ---
-title: Modo misto de depuração para x64 processos tem suporte apenas ao usar o Microsoft.NET Framework 4 ou maior | Microsoft Docs
+title: Há suporte para a depuração de modo misto para processos x64 somente ao usar o Microsoft.NET Framework 4 ou superior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,26 +17,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697829"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>A depuração do modo misto para processos x64 só é suportada durante o uso do Microsoft.NET Framework 4 ou superior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Processa o NET Framework versões anteriores à 4 não oferecem suporte para depuração de modo misto de x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.  
+As versões do .NET Framework anteriores a 4 não oferecem suporte à depuração de modo misto de processos x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.  
   
-### <a name="workarounds"></a>Soluções alternativas  
+### <a name="workarounds"></a>Soluções Alternativas  
   
 - Atualize seu projeto para usar o Microsoft .NET Framework 4 ou posterior.  
   
-     – ou –  
+     –ou–  
   
      Depure seu código gerenciado e nativo em sessões separadas de depuração.  
   
-     – ou –  
+     –ou–  
   
      Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.  
   
@@ -54,11 +54,11 @@ Processa o NET Framework versões anteriores à 4 não oferecem suporte para dep
   
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.  
   
-2. Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.  
+2. Nas páginas de propriedades, clique em **plataforma** e selecione Win32 na lista de plataformas.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Ver [Configurando a depuração SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Consulte [Configurando a depuração do SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848158"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
@@ -25,7 +25,7 @@ ms.locfileid: "75848158"
 
 Um **Sessão de Desempenho** permite definir as configurações que determinam como o aplicativo é analisado. Ele também armazena relatórios que são gerados para a sessão de criação de perfil.  
   
- **Requirements**  
+ **Requisitos**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -38,20 +38,20 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="general"></a>Geral  
  Essas configurações permitem que você selecione o método de criação de perfil para adicionar dados de tempo de vida e de coleção de objetos .NET e para especificar o local do relatório padrão e das convenções de nomenclatura.  
   
- Para obter mais informações, consulte .  
+ Para obter mais informações, consulte:  
   
- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
+ [Como escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)  
   
  [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Como definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Inicie o  
+## <a name="launch"></a>Inicializar  
  Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.  
   
  Para obter mais informações, [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)  
   
-## <a name="sampling"></a>Amostragem  
+## <a name="sampling"></a>amostragem  
  Essas configurações permitem que você selecione o intervalo de amostragem e do evento quando a amostragem é usada como o método de criação de perfil. Um evento de amostragem é usado para coletar dados de criação de perfil no intervalo especificado. Por exemplo, se o evento de amostragem for ciclos do relógio e o intervalo de amostragem for definido como 10.000.000, então os dados de criação de perfil serão coletados a cada 10 milhões de ciclos do relógio. Os quatro tipos de eventos de amostragem a seguir estão disponíveis:  
   
 - Ciclos do relógio – para problemas ligados à CPU  
@@ -77,11 +77,11 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="instrumentation"></a>Instrumentação  
  Essas configurações permitem que coletar dados de desempenho de código JScript em páginas da Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e especificar qualquer evento de **Pré-instrumento** e **Pós-instrumento** que você deseja que ocorra antes ou depois do processo de instrumentação.  
   
- Para obter mais informações, consulte .  
+ Para obter mais informações, consulte:  
   
- [Como criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Como: criar um perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Como especificar comandos pré e pós-instrumentação](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Como especificar comandos pré e pós-instrumento](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>Contadores de CPU  
  Essas configurações permitem que você colete dados sobre contadores de desempenho da CPU quando estiver usando o método de criação de perfil de instrumentação. Contadores de desempenho portáteis estão disponíveis independentemente do design ou fabricante da CPU. Eventos de plataforma são específicos para o design e fabricante da CPU. Para obter mais informações sobre contadores de desempenho on-chip, consulte a documentação específica do processador.  
@@ -91,9 +91,9 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="windows-events"></a>Eventos do Windows  
  Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Para obter mais informações, consulte .  
+ Para obter mais informações, consulte:  
   
- [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Como coletar dados do ETW (rastreamento de eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -105,13 +105,13 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="advanced"></a>Avançado  
  Essas configurações permitem que você adicione opções ao processo de instrumentação especificando uma ou mais opções da ferramenta de criação de perfil da linha de comando [VSInstr](../profiling/vsinstr.md). Você também pode especificar a versão do Common Runtime para análise quando o aplicativo estiver usando mais de uma versão.  
   
- Para obter mais informações, consulte .  
+ Para obter mais informações, consulte:  
   
- [Como especificar o runtime do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Como especificar o tempo de execução de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)

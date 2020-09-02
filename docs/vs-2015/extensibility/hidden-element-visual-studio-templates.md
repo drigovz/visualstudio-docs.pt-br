@@ -1,5 +1,5 @@
 ---
-title: Oculta o elemento (modelos do Visual Studio) | Microsoft Docs
+title: Elemento Hidden (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,22 +13,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204249"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se o modelo é exibido em qualquer um de **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
+Especifica se o modelo aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Oculto >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Hidden>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Hidden> true/false </Hidden>  
@@ -38,29 +38,29 @@ Especifica se o modelo é exibido em qualquer um de **novo projeto** ou **Adicio
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se ou não o modelo aparecerá na **novo projeto** ou **Add New Item** caixas de diálogo.  
+ O texto deve ser `true` ou `false` , indicando se o modelo será exibido ou não nas caixas de diálogo **novo projeto** ou **Adicionar novo item** .  
   
 ## <a name="remarks"></a>Comentários  
  `Hidden` é um elemento opcional.  
   
- Não se especificado, nenhum outro elemento filho do `TemplateData` elemento são necessários.  
+ Se especificado, não serão necessários outros elementos filho do `TemplateData` elemento.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ Especifica se o modelo é exibido em qualquer um de **novo projeto** ou **Adicio
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

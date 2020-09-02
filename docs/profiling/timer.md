@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778109"
 ---
-# <a name="timer"></a>Timer
-A opção *VSPerfCmd.exe* **Timer** define o evento de criação de perfil que é amostrado aos ciclos do relógio do processador e altera opcionalmente o número de ciclos em um intervalo de amostragem do padrão de 10.000.000. Em um processador de 1 GHz (um gigahertz), 10.000.000 ciclos de relógio são aproximadamente 100 amostras por segundo. O número mínimo de ciclos que pode ser especificado é 50.000.
+# <a name="timer"></a>Temporizador
+A opção **timer** de *VSPerfCmd.exe* define o evento de criação de perfil que é amostrado para ciclos de relógio do processador e, opcionalmente, altera o número de ciclos em um intervalo de amostragem a partir do padrão de 10 milhões. Em um processador de 1 GHz (um gigahertz), 10.000.000 ciclos de relógio são aproximadamente 100 amostras por segundo. O número mínimo de ciclos que pode ser especificado é 50.000.
 
  O **Temporizador** só pode ser usado quando você utiliza o método de criação de perfil de amostragem e em uma linha de comando que também contenha a opção **Inicialização** ou **Anexar**.
 
@@ -31,26 +31,26 @@ A opção *VSPerfCmd.exe* **Timer** define o evento de criação de perfil que �
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  `Cycles` Um valor inteiro que especifica o número de ciclos do relógio do processador em um intervalo de amostragem. Caso `Cycles` não seja especificado, o intervalo é definido como 10.000.000. Especifique o valor sem vírgulas.
 
 ## <a name="required-options"></a>Opções obrigatórias
  O **Temporizador** só pode ser especificado em uma linha de comando que contenha uma das opções a seguir.
 
- **Inicialização:** `AppName` Inicia o profiler e `AppName`o aplicativo especificado por .
+ **Iniciar:** `AppName` Inicia o criador de perfil e o aplicativo especificado por `AppName` .
 
- **Anexa:** `PID` Anexa o profiler ao processo especificado pelo`PID`ID do processo ( ).
+ **Anexar:** `PID` Anexa o criador de perfil ao processo especificado pela ID do processo ( `PID` ).
 
 ## <a name="invalid-options"></a>Opções inválidas
  As opções a seguir não podem ser especificadas na mesma linha de comando do **Temporizador**.
 
- **PF****[ :**`Events`] Define o evento de amostragem como `Events`falhas de página e define opcionalmente o intervalo de amostragem para . O intervalo de PF padrão é 10.
+ O **PF**[**:** `Events` ] define o evento de amostragem para falhas de página e, opcionalmente, define o intervalo de amostragem como `Events` . O intervalo de PF padrão é 10.
 
- **Sys**[**:**`Events`] Define o evento de amostragem para `Events`chamadas do sistema operacional e define opcionalmente o intervalo de amostragem para . O intervalo de Sys padrão é 10.
+ **Sys**[**:** `Events` ] define o evento de amostragem para chamadas do sistema operacional e, opcionalmente, define o intervalo de amostragem como `Events` . O intervalo de Sys padrão é 10.
 
- **Contador**[**:**`Name,Reload,FriendlyName`] Define o evento de `Name` amostragem para o `Reload`contador de desempenho da CPU especificado e define o intervalo de amostragem para .
+ **Counter**[**:** `Name,Reload,FriendlyName` ] define o evento de amostragem para o contador de desempenho de CPU especificado por `Name` e define o intervalo de amostragem como `Reload` .
 
- **GC**[**:**{**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão **(Alocação),** os dados são coletados em todos os eventos de alocação de memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
+ **GC**[**:**{**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão (**alocação**), os dados são coletados em cada evento de alocação de memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
 
 ## <a name="example"></a>Exemplo
  Esse exemplo demonstra como definir o intervalo de amostragem da criação de perfil como 1.000.000 ciclos de processador.
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

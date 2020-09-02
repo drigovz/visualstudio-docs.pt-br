@@ -1,5 +1,5 @@
 ---
-title: 'Como: Publicar um projeto que tem uma localidade específica | Microsoft Docs'
+title: Como publicar um projeto que tem uma localidade específica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,19 +22,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697614"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Como: Publicar um projeto que tem uma localidade específica
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Como publicar um projeto que tem uma localidade específica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Não é incomum para um aplicativo conter componentes que possuem diversas localidades. Nesse cenário, seria criada uma solução que possui diversos projetos e publicados projetos separados para cada localização. Esse procedimento mostra como usar uma macro para publicar o primeiro projeto em uma solução usando a localização 'en'. Se desejar tentar esse procedimento com outra localidade além de 'en', certifique-se de definir `localeString` na macro para corresponder à localidade que estiver usando (por exemplo, 'de' ou 'de-DE').  
   
 > [!NOTE]
-> Ao usar essa macro, o Local de Publicação deve ser uma URL válida ou um compartilhamento Universal Naming Convention (UNC). Além disso, Serviços de Informações da Internet (IIS) deve estar instalado no computador. Para instalar o IIS, no menu **Iniciar**, clique em **Painel de Controle**. Clique duas vezes em **Adicionar ou remover Programas**. Em **Adicionar ou Remover Programas**, clique em **Adicionar/Remover Componentes do Windows**. No **Assistente de Componentes do Windows**, selecione a caixa de seleção **Serviços de Informações da Internet (IIS)** na lista **Componentes**. Clique em **Concluir** para fechar o assistente.  
+> Ao usar essa macro, o Local de Publicação deve ser uma URL válida ou um compartilhamento Universal Naming Convention (UNC). Além disso, Serviços de Informações da Internet (IIS) deve estar instalado no computador. Para instalar o IIS, no menu **Iniciar**, clique em **Painel de Controle**. Clique duas vezes em **Adicionar ou remover Programas**. Em **Adicionar ou Remover Programas**, clique em **Adicionar/Remover Componentes do Windows**. No **Assistente de Componentes do Windows**, selecione a caixa de seleção **Serviços de Informações da Internet (IIS)** na lista **Componentes**. Em seguida, clique em **Concluir** para fechar o assistente.  
   
 ### <a name="to-create-the-publishing-macro"></a>Criar a macro de publicação  
   
@@ -152,20 +152,20 @@ Não é incomum para um aplicativo conter componentes que possuem diversas local
   
 4. Publicar PublishLocales usando o Visual Studio IDE.  
   
-     Na **Gerenciador de soluções**, selecione PublishLocales. No menu **Projeto**, selecione **Propriedades**. No Designer de projeto, sobre o **Publish** , especifique um local de publicação de **http://localhost/PublishLocales**e, em seguida, clique em **publicar agora**.  
+     Em **Gerenciador de soluções**, selecione PublishLocales. No menu **Projeto**, selecione **Propriedades**. No designer de projeto, na página **publicar** , especifique um local de publicação de **http://localhost/PublishLocales** e clique em **Publicar agora**.  
   
      Quando a página Web publicar for exibida, feche-a. (Para esta etapa, é necessário apenas publicar o projeto; não é necessário instalar.)  
   
-5. Publique PublishLocales novamente invocando a macro na janela do Prompt de Comando do Visual Studio. Para exibir a janela de Prompt de comando, nos **modo de exibição** , aponte para **Other Windows** e, em seguida, clique em **janela comando**, ou pressione CTRL + ALT + A. Na janela do Prompt de comando, digite `macros`; auto-completar fornecerá uma lista de macros disponíveis. Selecione a seguinte macro e pressione ENTER:  
+5. Publique PublishLocales novamente invocando a macro na janela do Prompt de Comando do Visual Studio. Para exibir a janela de prompt de comando, no menu **Exibir** , aponte para **outras janelas** e clique em **janela de comando**ou pressione CTRL + ALT + A. Na janela do prompt de comando, digite `macros` ; preenchimento automático fornecerá uma lista de macros disponíveis. Selecione a seguinte macro e pressione ENTER:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6. Quando o processo de publicação for bem-sucedido, gerará uma mensagem que diz "Publicação bem-sucedida para PublishLocales\PublishLocales.vbproj. O idioma de publicação foi 'en'." Clique em **OK** na caixa de mensagem. Quando a página da Web publicar for exibida, clique em **Instalar**.  
+6. Quando o processo de publicação for bem-sucedido, gerará uma mensagem que diz "Publicação bem-sucedida para PublishLocales\PublishLocales.vbproj. A linguagem de publicação era ' en '. " Clique em **OK** na caixa de mensagem. Quando a página da Web publicar for exibida, clique em **Instalar**.  
   
 7. Procure em C:\Inetpub\wwwroot\PublishLocales\en. Deverá ser possível visualizar os arquivos instalados como os manifestos, setup.exe e o arquivo da página Web publicar, além da DLL do recurso localizado. (Por padrão, ClickOnce anexa uma extensão .deploy em EXEs e DLLs; é possível remover essa extensão após a implantação.)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Ambiente de desenvolvimento de macros](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Janela do Gerenciador de macro](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Como: Editar e criar Macros de forma programática](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Janela Gerenciador de macros](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Como: editar e criar macros programaticamente](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
