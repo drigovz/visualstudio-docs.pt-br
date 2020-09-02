@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714324"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
-Especifica as bandeiras para as informações do módulo de depuração.
+Especifica os sinalizadores para as informações do módulo de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -66,57 +66,57 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Campos
  `MIF_NONE`\
- Inicializar/usar nenhum dos campos da estrutura.
+ Inicializar/usar nenhum dos campos na estrutura.
 
  `MIF_NAME`\
- Inicializar/utilizar `m_bstrName` o campo na estrutura [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Inicializar/usar o `m_bstrName` campo na estrutura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
  `MIF_URL`\
- Inicializar/usar `m_bstrUrl` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_bstrUrl` campo na `MODULE_INFO` estrutura.
 
  `MIF_VERSION`\
- Inicializar/usar `m_bstrVersion` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_bstrVersion` campo na `MODULE_INFO` estrutura.
 
  `MIF_DEBUGMESSAGE`\
- Inicializar/usar `m_bstrDebugMessage` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_bstrDebugMessage` campo na `MODULE_INFO` estrutura.
 
  `MIF_LOADADDRESS`\
- Inicializar/usar `m_addrLoadAddress` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_addrLoadAddress` campo na `MODULE_INFO` estrutura.
 
  `MIF_PREFFEREDADDRESS`\
- Inicializar/usar `m_addrPreferredLoadAddress` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_addrPreferredLoadAddress` campo na `MODULE_INFO` estrutura.
 
  `MIF_SIZE`\
- Inicializar/usar `m_dwSize` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_dwSize` campo na `MODULE_INFO` estrutura.
 
  `MIF_LOADORDER`\
- Inicializar/usar `m_dwLoadOrder` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_dwLoadOrder` campo na `MODULE_INFO` estrutura.
 
  `MIF_TIMESTAMP`\
- Inicializar/usar `m_TimeStamp` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_TimeStamp` campo na `MODULE_INFO` estrutura.
 
  `MIF_URLSYMBOLLOCATION`\
- Inicializar/usar `m_bstrUrlSymbolLocation` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_bstrUrlSymbolLocation` campo na `MODULE_INFO` estrutura.
 
  `MIF_FLAGS`\
- Inicializar/usar `m_dwModuleFlags` o campo `MODULE_INFO` na estrutura.
+ Inicializar/usar o `m_dwModuleFlags` campo na `MODULE_INFO` estrutura.
 
  `MIF_ALLFIELDS`\
- Inicializar/utilizar todos os campos `MODULE_INFO` da estrutura.
+ Inicializar/usar todos os campos na `MODULE_INFO` estrutura.
 
 ## <a name="remarks"></a>Comentários
- Esses valores são passados como um argumento para o método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar quais campos da estrutura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devem ser inicializados.
+ Esses valores são passados como um argumento para o método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar quais campos da estrutura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devem ser inicializados.
 
- Esses valores também `MODULE_INFO` são utilizados na estrutura para indicar quais campos são usados e válidos.
+ Esses valores também são usados na `MODULE_INFO` estrutura para indicar quais campos são usados e válidos.
 
- Essas bandeiras podem ser combinadas com um pouco `OR`.
+ Esses sinalizadores podem ser combinados com uma operadora de bits `OR` .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238810"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Instruções passo a passo: atualizando um gráfico em uma planilha usando botões de opção
@@ -86,7 +86,7 @@ ms.locfileid: "88238810"
 
 9. Saia do Excel.
 
-## <a name="create-a-new-project"></a>Criar um projeto
+## <a name="create-a-new-project"></a>Criar um novo projeto
  Nesta etapa, você criará um projeto de pasta de trabalho do Excel com base na pasta de trabalho do **ExcelChart** .
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
@@ -135,28 +135,28 @@ ms.locfileid: "88238810"
    | Propriedade | Valor |
    |----------|------------------|
    | **Nome** | **columnChart** |
-   | **Texto** | **Gráfico de Coluna** |
+   | **Text** | **Gráfico de colunas** |
 
 3. Adicione um segundo botão de opção ao controle de usuário e altere as propriedades a seguir.
 
    | Propriedade | Valor |
    |----------|---------------|
    | **Nome** | **barChart** |
-   | **Texto** | **Gráfico de Barras** |
+   | **Text** | **Gráfico de barras** |
 
 4. Adicione um terceiro botão de opção ao controle de usuário e altere as propriedades a seguir.
 
    | Propriedade | Valor |
    |----------|----------------|
    | **Nome** | **lineChart** |
-   | **Texto** | **Gráfico de linhas** |
+   | **Text** | **Gráfico de linhas** |
 
 5. Adicione um quarto botão de opção ao controle de usuário e altere as propriedades a seguir.
 
    |Propriedade|Valor|
    |--------------|-----------|
    |**Nome**|**areaBlockChart**|
-   |**Texto**|**Gráfico de Blocos de Área**|
+   |**Text**|**Gráfico de Blocos de Área**|
 
    Em seguida, escreva o código para atualizar o gráfico quando um botão de opção é clicado.
 
@@ -249,5 +249,5 @@ ms.locfileid: "88238810"
 
 - Altere a formatação em uma planilha usando as caixas de seleção. Para obter mais informações, consulte [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)

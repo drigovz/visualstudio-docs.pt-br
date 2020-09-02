@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer | Microsoft Docs
+title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728914"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
-Este método obtém o recipiente de um campo.
+Esse método obtém o contêiner de um campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetContainer(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppContainerField`\
-[fora] Retorna o contêiner como representado pela interface [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+fora Retorna o contêiner conforme representado pela interface [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se este campo não tiver um `ppContainerField` contêiner, o devolvido será um valor nulo.
+ Se esse campo não tiver um contêiner, o retornado `ppContainerField` será um valor nulo.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329284"
 ---
 # <a name="how-to-choose-sampling-events"></a>Como escolher eventos de amostragem
@@ -59,7 +59,7 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-
 
 5. Ao selecionar um evento de amostra, um valor de intervalo de amostragem padrão é exibido na caixa de texto **Intervalo de Amostragem**. Se necessário, insira o valor desejado na caixa de texto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 - [Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)
 - [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)

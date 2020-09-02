@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
+title: 'IPropertyProxyEESide:: InitSourceDataProvider | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714903"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-Inicializa os dados de origem para este objeto e retorna um objeto contendo os dados iniciais.
+Inicializa os dados de origem para esse objeto e retorna um objeto que contém os dados iniciais.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int InitSourceDataProvider(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dataOut`\
-[fora] Retorna um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+fora Retorna um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método faz o que for necessário para inicializar um objeto para que ele possa retornar uma interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) nos dados do objeto. Isso permite que os dados do objeto sejam visualizados e, se permitido, alterados por um visualizador de tipo.
+ Esse método faz o que for necessário para inicializar um objeto para que ele possa retornar uma interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) nos dados do objeto. Isso permite que os dados do objeto sejam exibidos e, se permitido, alterados por um visualizador de tipo.
 
 ## <a name="see-also"></a>Confira também
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

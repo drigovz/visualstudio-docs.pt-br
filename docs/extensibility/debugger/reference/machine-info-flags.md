@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714510"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
-Usado para descrever uma máquina.
+Usado para descrever um computador.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_MACHINE_INFO_FLAGS { 
@@ -42,17 +42,17 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>Campos
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- Indica que os serviços do terminal estão disponíveis.
+ Indica que os serviços de terminal estão disponíveis.
 
 ## <a name="remarks"></a>Comentários
- Usado como `Flags` membro da estrutura [MACHINE_INFO.](../../../extensibility/debugger/reference/machine-info.md)
+ Usado como o `Flags` membro da estrutura de [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

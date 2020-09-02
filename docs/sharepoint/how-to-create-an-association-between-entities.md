@@ -22,9 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016933"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Como: criar uma associação entre entidades
@@ -60,7 +61,7 @@ ms.locfileid: "86016933"
 
      Para obter exemplos de métodos do navegador de associação, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md)
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Como adicionar um método localizador](../sharepoint/how-to-add-a-finder-method.md)

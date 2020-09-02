@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714449"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
-Esta estrutura representa o endereço de um método de uma classe.
+Essa estrutura representa o endereço de um método de uma classe.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _tagMETADATA_ADDRESS_METHOD {
@@ -45,25 +45,25 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>Membros
  `tokMethod`\
- A id do método.
+ A ID do método.
 
- [C++] `_mdToken` é `typedef` um para um `int`de 32 bits .
+ [C++] `_mdToken` é um `typedef` para um de 32 bits `int` .
 
  `dwOffset`\
- O deslocamento da classe começa para este método (pode representar o deslocamento para a tabela).
+ O deslocamento da classe inicia para esse método (pode representar o deslocamento em vtable).
 
  `dwVersion`\
- A versão do método (este valor é exclusivo do provedor símbolo).
+ A versão do método (esse valor é exclusivo para o provedor de símbolos).
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_METHOD` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+ Essa estrutura faz parte da União na estrutura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido como `ADDRESS_KIND_METHOD` (um valor da enumeração [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

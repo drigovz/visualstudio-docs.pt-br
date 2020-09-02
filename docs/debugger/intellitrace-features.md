@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536572"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
@@ -40,19 +40,19 @@ Para confirmar que o IntelliTrace está ativado, abra as **ferramentas > opçõe
 > [!NOTE]
 > O escopo de todas as configurações na página de opções do **IntelliTrace** é o Visual Studio como um todo, e não projetos individuais ou soluções. Uma alteração nessas configurações se aplica a todas as instâncias do Visual Studio, todas as sessões de depuração e todos os projetos ou soluções.
 
-## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a>Escolha os eventos que o IntelliTrace registra (C#, Visual Basic)
+## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a> Escolha os eventos que o IntelliTrace registra (C#, Visual Basic)
 
 Você pode ativar ou desativar a gravação de eventos específicos do IntelliTrace.
 
 Se você estiver depurando, pare a depuração. Vá para **ferramentas > opções > intellitrace > eventos do IntelliTrace**. Escolha os eventos que você deseja que o IntelliTrace registre.
 
-## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a>Coletar instantâneos (C#, Visual Basic, C++)
+## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> Coletar instantâneos (C#, Visual Basic, C++)
 
 Isso não é habilitado por padrão, mas o IntelliTrace pode capturar instantâneos do seu aplicativo em cada ponto de interrupção e evento de etapa do depurador, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, vá para **ferramentas > opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para saber mais, confira [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
 
 Os instantâneos estão disponíveis na versão 15,5 e superior do Visual Studio Enterprise 2017 e exigem atualização de aniversário do Windows 10 ou superior.  Para aplicativos .NET Core e ASP.NET Core, Visual Studio Enterprise 2017 versão 15,7 é necessária. Para aplicativos nativos direcionados para o Windows, Visual Studio Enterprise 2017 versão 15,9 Preview 2 é necessário.
 
-## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a>Coletar eventos do IntelliTrace e chamar informações (C#, Visual Basic)
+## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> Coletar eventos do IntelliTrace e chamar informações (C#, Visual Basic)
 
 Isso não é habilitado por padrão, mas o IntelliTrace pode registrar chamadas de método juntamente com eventos. Para habilitar a coleta de chamadas de método, acesse **ferramentas > opções > IntelliTrace > geral**e selecione **eventos do IntelliTrace e chame informações (somente gerenciado)**.
 
@@ -92,7 +92,7 @@ Para adicionar vários módulos, use o caractere curinga * no início ou no fina
 
 Tente manter o número mínimo de módulos. Você Obtém um melhor desempenho porque há menos dados a serem coletados. Você também obtém menos ruído na interface do usuário porque há menos dados para passar.
 
-## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a>Salvar dados do IntelliTrace em arquivo (C#, Visual Basic, C++)
+## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a> Salvar dados do IntelliTrace em arquivo (C#, Visual Basic, C++)
 
 Você pode salvar os dados que o IntelliTrace coletou para **depurar > o IntelliTrace > salvar a sessão do IntelliTrace** enquanto você está Depurando e o aplicativo está em um estado de interrupção. O item de menu está desabilitado e você não poderá salvar o IntelliTrace de dados coletado se o aplicativo ainda estiver em execução ou se você tiver interrompido a depuração.
 
@@ -125,7 +125,7 @@ Ao salvar dados do IntelliTrace no arquivo, você obtém um arquivo. itrace para
 
 [Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-## <a name="videos"></a>Vídeos
+## <a name="videos"></a>vídeos
 
 [Experiência do IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 

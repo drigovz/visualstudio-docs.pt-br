@@ -12,22 +12,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b63c3e2e0907bcaf13ada4cbb20ce5527a240fe3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656768"
 ---
 # <a name="dowhile-activity-designer"></a>Designer de atividade DoWhile
-A atividade de <xref:System.Activities.Statements.DoWhile> executa a atividade contida em seu <xref:System.Activities.Statements.DoWhile.Body%2A> pelo menos uma vez, até que uma condição especificada seja avaliada como **falsa**. Se você precisar a atividade contida em um corpo de loop para ser executado zero ou mais vezes, use a atividade de <xref:System.Activities.Statements.While> em vez disso.
+A <xref:System.Activities.Statements.DoWhile> atividade executa a atividade contida em <xref:System.Activities.Statements.DoWhile.Body%2A> pelo menos uma vez, até que uma condição especificada seja avaliada como **falsa**. Se você precisar a atividade contida em um corpo de loop para ser executado zero ou mais vezes, use a atividade de <xref:System.Activities.Statements.While> em vez disso.
 
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>Propriedades DoWhile em Designer de Fluxo de Trabalho
  A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.DoWhile> e descreve como usá-los no designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da propriedade|Obrigatório|Uso|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|A atividade a ser executada enquanto a condição é **verdadeira**. Para adicionar a atividade de <xref:System.Activities.Statements.DoWhile.Body%2A>, descarte uma atividade da caixa de ferramentas para o **corpo** de atividade no designer de atividades **DoWhile** com o texto de dica "soltar atividade aqui".|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|verdadeiro|A condição a ser avaliada após cada iteração do loop. Para definir o <xref:System.Activities.Statements.DoWhile.Condition%2A>, digite uma expressão de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] na caixa **condição** no designer de atividade **DoWhile** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|Falso|A atividade a ser executada enquanto a condição é **verdadeira**. Para adicionar a <xref:System.Activities.Statements.DoWhile.Body%2A> atividade, remova uma atividade da caixa de ferramentas para o **corpo** de atividade no designer de atividades **DoWhile** com o texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Verdadeiro|A condição a ser avaliada após cada iteração do loop. Para definir o <xref:System.Activities.Statements.DoWhile.Condition%2A> , digite uma [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] expressão na caixa **condição** no designer de atividade **DoWhile** ou na grade de propriedades.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Enquanto](../workflow-designer/while-activity-designer.md) o [fluxo de controle](../workflow-designer/control-flow-activity-designers.md)

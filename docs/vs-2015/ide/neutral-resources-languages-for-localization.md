@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85e0be0172f27732f8efeb882cbcde5b9c6aef3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670383"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Idiomas de recursos naturais para localização
@@ -41,5 +41,5 @@ A classe <xref:System.Resources.NeutralResourcesLanguageAttribute> especifica a 
 [assembly: NeutralResourcesLanguageAttribute("en")]
 ```
 
-## <a name="see-also"></a>Veja também
- <xref:System.Resources.ResourceManager> [introdução aos aplicativos internacionais com base na](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [organização .NET Framework hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md) de [aplicativos que localizam](../ide/localizing-applications.md) [globalização e localização de aplicativos](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.Resources.ResourceManager>[Introdução aos aplicativos internacionais com base no .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [organização hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md) de [localizações de aplicativos](../ide/localizing-applications.md) [Globalizando e Localizando aplicativos](../ide/globalizing-and-localizing-applications.md)

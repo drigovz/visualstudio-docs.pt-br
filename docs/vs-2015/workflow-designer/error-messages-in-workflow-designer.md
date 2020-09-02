@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656765"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensagens de erro em Designer de Fluxo de Trabalho
@@ -34,9 +34,9 @@ Este tópico descreve os tipos de mensagens de erro que podem ser encontrados ao
 
 4. Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.
 
-   As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. Compilar seu fluxo de trabalho é bem-sucedido, mas <xref:System.Activities.InvalidWorkflowException> é lançada pelo tempo de execução. Se há erros no arquivo XAML, a compilação falhará.
+   As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. Compilar seu fluxo de trabalho é bem-sucedido, mas <xref:System.Activities.InvalidWorkflowException> é lançada pelo runtime. Se há erros no arquivo XAML, a compilação falhará.
 
-   Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quando um fluxo de trabalho é carregado, seus erros são exibidos no **lista de erros**. Para navegar até a atividade que é a origem do erro, clique duas vezes no erro na **lista de erros**.
+   Dentro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do, quando um fluxo de trabalho é carregado, seus erros são exibidos no **lista de erros**. Para navegar até a atividade que é a origem do erro, clique duas vezes no erro na **lista de erros**.
 
 ### <a name="expression-errors"></a>Erros de expressão
  Uma expressão é inválido denotada por um círculo vermelho com um ponto de exclamação branco ao lado da expressão. Passa sobre este ícone exibe uma dica de ferramenta que descreve a fonte do erro. Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], clique na expressão para exibir a linha que enfatiza a fonte do erro. Passa sobre o texto alinhado exibe uma dica de ferramenta que descreve a fonte do erro.
